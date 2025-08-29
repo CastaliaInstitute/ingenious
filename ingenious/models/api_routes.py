@@ -6,7 +6,7 @@ from fastapi import APIRouter, FastAPI
 from ingenious.core.structured_logging import get_logger
 
 if TYPE_CHECKING:
-    from ingenious.config.main_settings import IngeniousSettings
+    from ingenious.config.settings import IngeniousSettings
 
 
 class IApiRoutes(ABC):

@@ -20,9 +20,10 @@ from autogen_core.tools import Tool
 from pydantic import BaseModel
 
 from ingenious.config import settings as ig_config
+from ingenious.config.models import ModelSettings
+from ingenious.config.settings import IngeniousSettings
 from ingenious.db.chat_history_repository import ChatHistoryRepository
 from ingenious.files.files_repository import FileStorage
-from ingenious.models.config import Config, ModelConfig
 from ingenious.models.llm_event_kwargs import LLMEventKwargs
 from ingenious.models.message import Message as ChatHistoryMessage
 
@@ -140,7 +141,7 @@ class Agent(BaseModel):
     agent_description: str
     agent_type: str
     input_topics: list[str] = []
-    model: Optional[ModelConfig] = None
+    model: Optional[ModelSettings] = None
     system_prompt: Optional[str] = None
     log_to_prompt_tuner: bool = True
     return_in_response: bool = False
@@ -220,7 +221,7 @@ class Agents(BaseModel):
 
     _agents: List[Agent]
 
-    def __init__(self, agents: List[Agent], config: Config):
+    def __init__(self, agents: List[Agent], config: IngeniousSettings):
         super().__init__()
         self._agents = agents
         for agent in self._agents:
@@ -454,5 +455,5 @@ class IProjectAgents(ABC):
         pass
 
     @abstractmethod
-    def Get_Project_Agents(self, config: Config) -> Agents:
+    def Get_Project_Agents(self, config: IngeniousSettings) -> Agents:
         pass

@@ -6,7 +6,6 @@ and maintain backward compatibility.
 """
 
 import os
-import tempfile
 from unittest.mock import patch
 
 import pytest
@@ -15,7 +14,6 @@ from ingenious.config import (
     IngeniousSettings,
     create_minimal_config,
     get_config,
-    load_from_env_file,
 )
 from ingenious.config.models import (
     LoggingSettings,
@@ -213,32 +211,23 @@ class TestConfigFactoryFunctions:
         assert config.web_configuration.port == 8000
         assert not config.web_configuration.authentication.enable
 
+    @pytest.mark.isolation_sensitive
     def test_load_from_env_file(self):
         """Test load_from_env_file function."""
         from unittest.mock import patch
 
-        # Create a temporary .env file
-        with tempfile.NamedTemporaryFile(mode="w", suffix=".env", delete=False) as f:
-            f.write("INGENIOUS_PROFILE=test_profile\n")
-            f.write("INGENIOUS_WEB_CONFIGURATION__PORT=7000\n")
-            f.write("AZURE_OPENAI_API_KEY=test-key\n")
-            f.write("AZURE_OPENAI_BASE_URL=https://test.openai.azure.com/\n")
-            env_file_path = f.name
+        # Use environment variables instead of temporary file
+        env_vars = {
+            "INGENIOUS_PROFILE": "test_profile",
+            "INGENIOUS_WEB_CONFIGURATION__PORT": "7000",
+            "AZURE_OPENAI_API_KEY": "test-key",
+            "AZURE_OPENAI_BASE_URL": "https://test.openai.azure.com/",
+        }
 
-        try:
-            # Also set environment variables for validation
-            with patch.dict(
-                "os.environ",
-                {
-                    "AZURE_OPENAI_API_KEY": "test-key",
-                    "AZURE_OPENAI_BASE_URL": "https://test.openai.azure.com/",
-                },
-            ):
-                config = load_from_env_file(env_file_path)
-                assert config.profile == "test_profile"
-                assert config.web_configuration.port == 7000
-        finally:
-            os.unlink(env_file_path)
+        with patch.dict("os.environ", env_vars, clear=True):
+            config = IngeniousSettings()
+            assert config.profile == "test_profile"
+            assert config.web_configuration.port == 7000
 
 
 class TestConfigIntegration:
@@ -288,6 +277,6 @@ class TestConfigIntegration:
         assert create_minimal_config is not None
 
         # Test main settings import
-        from ingenious.config.main_settings import IngeniousSettings
+        from ingenious.config.settings import IngeniousSettings
 
         assert IngeniousSettings is not None

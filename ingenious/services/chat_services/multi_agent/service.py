@@ -9,7 +9,7 @@ from openai.types.chat import ChatCompletionMessageParam
 import ingenious.config.config as ig_config
 
 if TYPE_CHECKING:
-    from ingenious.models.config import Config
+    from ingenious.config.settings import IngeniousSettings
 from ingenious.core.structured_logging import get_logger
 from ingenious.db.chat_history_repository import ChatHistoryRepository
 from ingenious.errors.content_filter_error import ContentFilterError
@@ -24,14 +24,14 @@ logger = get_logger(__name__)
 
 
 class multi_agent_chat_service:
-    config: "Config"
+    config: "IngeniousSettings"
     chat_history_repository: ChatHistoryRepository
     conversation_flow: str
     openai_service: Optional[ChatCompletionMessageParam]
 
     def __init__(
         self,
-        config: "Config",
+        config: "IngeniousSettings",
         chat_history_repository: ChatHistoryRepository,
         conversation_flow: str,
     ):
@@ -417,10 +417,10 @@ class multi_agent_chat_service:
 
                 if response.agent_response:
                     chunk_size = 100  # Default chunk size
-                    if hasattr(self.config, "web") and hasattr(
-                        self.config.web, "streaming_chunk_size"
+                    if hasattr(self.config, "web_configuration") and hasattr(
+                        self.config.web_configuration, "streaming_chunk_size"
                     ):
-                        chunk_size = self.config.web.streaming_chunk_size
+                        chunk_size = self.config.web_configuration.streaming_chunk_size
 
                     content = response.agent_response
 
@@ -485,7 +485,7 @@ class multi_agent_chat_service:
 
 
 class IConversationPattern(ABC):
-    _config: "Config"
+    _config: "IngeniousSettings"
     _memory_path: str
     _memory_file_path: str
     _memory_manager: Any
@@ -501,7 +501,7 @@ class IConversationPattern(ABC):
 
         self._memory_manager = get_memory_manager(self._config, self._memory_path)
 
-    def GetConfig(self) -> "Config":
+    def GetConfig(self) -> "IngeniousSettings":
         return self._config
 
     def Get_Models(self) -> Dict[str, Any]:
@@ -548,7 +548,7 @@ class IConversationPattern(ABC):
 
 
 class IConversationFlow(ABC):
-    _config: "Config"
+    _config: "IngeniousSettings"
     _memory_path: str
     _memory_file_path: str
     _logger: logging.Logger
@@ -571,7 +571,7 @@ class IConversationFlow(ABC):
 
         self._memory_manager = get_memory_manager(self._config, self._memory_path)
 
-    def GetConfig(self) -> "Config":
+    def GetConfig(self) -> "IngeniousSettings":
         return self._config
 
     async def Get_Template(
@@ -634,10 +634,10 @@ class IConversationFlow(ABC):
 
         if response.agent_response:
             chunk_size = 100  # Default chunk size
-            if hasattr(self._config, "web") and hasattr(
-                self._config.web, "streaming_chunk_size"
+            if hasattr(self._config, "web_configuration") and hasattr(
+                self._config.web_configuration, "streaming_chunk_size"
             ):
-                chunk_size = self._config.web.streaming_chunk_size
+                chunk_size = self._config.web_configuration.streaming_chunk_size
 
             content = response.agent_response
 

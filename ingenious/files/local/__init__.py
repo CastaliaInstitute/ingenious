@@ -2,12 +2,15 @@ from pathlib import Path
 
 import aiofiles  # type: ignore
 
+from ingenious.config.models import FileStorageContainerSettings
+from ingenious.config.settings import IngeniousSettings
 from ingenious.files.files_repository import IFileStorage
-from ingenious.models.config import Config, FileStorageContainer
 
 
 class local_FileStorageRepository(IFileStorage):
-    def __init__(self, config: Config, fs_config: FileStorageContainer):
+    def __init__(
+        self, config: IngeniousSettings, fs_config: FileStorageContainerSettings
+    ):
         self.config = config
         self.fs_config = fs_config
         self.base_path = Path(fs_config.path)

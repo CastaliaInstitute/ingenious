@@ -1,4 +1,4 @@
-from typing import Optional, Union
+from typing import Optional
 
 import pyodbc
 from azure.identity import get_bearer_token_provider
@@ -6,13 +6,12 @@ from azure.identity import get_bearer_token_provider
 from ingenious.client.azure.builder.base import AzureClientBuilder
 from ingenious.common.enums import AuthenticationMethod
 from ingenious.config.models import AzureSqlSettings
-from ingenious.models.config import AzureSqlConfig
 
 
 class AzureSqlClientBuilder(AzureClientBuilder):
     """Builder for Azure SQL clients with multiple authentication methods."""
 
-    def __init__(self, sql_config: Union[AzureSqlConfig, AzureSqlSettings]):
+    def __init__(self, sql_config: AzureSqlSettings):
         # Extract authentication parameters from config
         auth_config = self._create_auth_config_from_sql_config(sql_config)
         super().__init__(auth_config=auth_config)

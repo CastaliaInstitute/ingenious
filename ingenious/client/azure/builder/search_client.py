@@ -1,11 +1,10 @@
-from typing import Optional, Union
+from typing import Optional
 
 from azure.search.documents import SearchClient
 
 from ingenious.client.azure.builder.base import AzureClientBuilder
 from ingenious.config.auth_config import AzureAuthConfig
 from ingenious.config.models import AzureSearchSettings
-from ingenious.models.config import AzureSearchConfig
 
 
 class AzureSearchClientBuilder(AzureClientBuilder):
@@ -13,7 +12,7 @@ class AzureSearchClientBuilder(AzureClientBuilder):
 
     def __init__(
         self,
-        search_config: Union[AzureSearchConfig, AzureSearchSettings],
+        search_config: AzureSearchSettings,
         index_name: Optional[str] = None,
     ):
         # Extract authentication parameters from config

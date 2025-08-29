@@ -28,10 +28,10 @@ class TestOpenAIService:
         model = "gpt-4.1-nano"
 
         with patch(
-            "ingenious.external_services.openai_service.AzureOpenAI"
-        ) as mock_azure:
+            "ingenious.external_services.openai_service.AzureClientFactory.create_openai_client_from_params"
+        ) as mock_factory:
             mock_client = Mock()
-            mock_azure.return_value = mock_client
+            mock_factory.return_value = mock_client
 
             service = OpenAIService(
                 azure_endpoint,
@@ -43,11 +43,16 @@ class TestOpenAIService:
 
             assert service.client == mock_client
             assert service.model == "gpt-4.1-nano"
-            mock_azure.assert_called_once_with(
-                azure_endpoint=azure_endpoint,
-                api_key=api_key,
+            mock_factory.assert_called_once_with(
+                model=model,
+                base_url=azure_endpoint,
                 api_version=api_version,
-                azure_deployment=model,
+                deployment="",
+                api_key=api_key,
+                authentication_method=AuthenticationMethod.TOKEN,
+                client_id="",
+                client_secret="",
+                tenant_id="",
             )
 
     def test_init_with_openai_config(self):
@@ -58,10 +63,10 @@ class TestOpenAIService:
         model = "gpt-4.1-nano"
 
         with patch(
-            "ingenious.external_services.openai_service.AzureOpenAI"
-        ) as mock_azure:
+            "ingenious.external_services.openai_service.AzureClientFactory.create_openai_client_from_params"
+        ) as mock_factory:
             mock_client = Mock()
-            mock_azure.return_value = mock_client
+            mock_factory.return_value = mock_client
 
             service = OpenAIService(
                 azure_endpoint,
@@ -73,6 +78,17 @@ class TestOpenAIService:
 
             assert service.client == mock_client
             assert service.model == "gpt-4.1-nano"
+            mock_factory.assert_called_once_with(
+                model=model,
+                base_url=azure_endpoint,
+                api_version=api_version,
+                deployment="",
+                api_key=api_key,
+                authentication_method=AuthenticationMethod.TOKEN,
+                client_id="",
+                client_secret="",
+                tenant_id="",
+            )
 
     def test_init_missing_config(self):
         """Test OpenAI service initialization with missing configuration."""
@@ -101,11 +117,12 @@ class TestOpenAIService:
         )
 
         with patch(
-            "ingenious.external_services.openai_service.AzureOpenAI"
-        ) as mock_azure:
+            "ingenious.external_services.openai_service."
+            "AzureClientFactory.create_openai_client_from_params"
+        ) as mock_factory:
             mock_client = Mock()
             mock_client.chat.completions.create.return_value = mock_response
-            mock_azure.return_value = mock_client
+            mock_factory.return_value = mock_client
 
             service = OpenAIService(azure_endpoint, api_key, api_version, model)
             messages = [{"role": "user", "content": "Hello"}]
@@ -136,11 +153,11 @@ class TestOpenAIService:
         )
 
         with patch(
-            "ingenious.external_services.openai_service.AzureOpenAI"
-        ) as mock_azure:
+            "ingenious.external_services.openai_service.AzureClientFactory.create_openai_client_from_params"
+        ) as mock_factory:
             mock_client = Mock()
             mock_client.chat.completions.create.return_value = mock_response
-            mock_azure.return_value = mock_client
+            mock_factory.return_value = mock_client
 
             service = OpenAIService(azure_endpoint, api_key, api_version, model)
             messages = [{"role": "user", "content": "Hello"}]
@@ -159,8 +176,8 @@ class TestOpenAIService:
         model = "gpt-4.1-nano"
 
         with patch(
-            "ingenious.external_services.openai_service.AzureOpenAI"
-        ) as mock_azure:
+            "ingenious.external_services.openai_service.AzureClientFactory.create_openai_client_from_params"
+        ) as mock_factory:
             mock_client = Mock()
             from openai import BadRequestError
 
@@ -175,7 +192,7 @@ class TestOpenAIService:
             )
             mock_error.code = "content_filter"
             mock_client.chat.completions.create.side_effect = mock_error
-            mock_azure.return_value = mock_client
+            mock_factory.return_value = mock_client
 
             service = OpenAIService(azure_endpoint, api_key, api_version, model)
             messages = [{"role": "user", "content": "Inappropriate content"}]
@@ -192,8 +209,8 @@ class TestOpenAIService:
         model = "gpt-4.1-nano"
 
         with patch(
-            "ingenious.external_services.openai_service.AzureOpenAI"
-        ) as mock_azure:
+            "ingenious.external_services.openai_service.AzureClientFactory.create_openai_client_from_params"
+        ) as mock_factory:
             mock_client = Mock()
             from openai import BadRequestError
 
@@ -202,7 +219,7 @@ class TestOpenAIService:
                 token_error_msg, response=Mock(), body={"message": token_error_msg}
             )
             mock_client.chat.completions.create.side_effect = mock_error
-            mock_azure.return_value = mock_client
+            mock_factory.return_value = mock_client
 
             service = OpenAIService(azure_endpoint, api_key, api_version, model)
             messages = [{"role": "user", "content": "Very long message"}]
@@ -219,8 +236,8 @@ class TestOpenAIService:
         model = "gpt-4.1-nano"
 
         with patch(
-            "ingenious.external_services.openai_service.AzureOpenAI"
-        ) as mock_azure:
+            "ingenious.external_services.openai_service.AzureClientFactory.create_openai_client_from_params"
+        ) as mock_factory:
             mock_client = Mock()
             from openai import BadRequestError
 
@@ -230,7 +247,7 @@ class TestOpenAIService:
                 body={"message": "An unexpected error occurred"},
             )
             mock_client.chat.completions.create.side_effect = mock_error
-            mock_azure.return_value = mock_client
+            mock_factory.return_value = mock_client
 
             service = OpenAIService(azure_endpoint, api_key, api_version, model)
             messages = [{"role": "user", "content": "Hello"}]
@@ -259,11 +276,11 @@ class TestOpenAIService:
         )
 
         with patch(
-            "ingenious.external_services.openai_service.AzureOpenAI"
-        ) as mock_azure:
+            "ingenious.external_services.openai_service.AzureClientFactory.create_openai_client_from_params"
+        ) as mock_factory:
             mock_client = Mock()
             mock_client.chat.completions.create.return_value = mock_response
-            mock_azure.return_value = mock_client
+            mock_factory.return_value = mock_client
 
             service = OpenAIService(azure_endpoint, api_key, api_version, model)
             messages = [{"role": "user", "content": "Hello"}]
@@ -295,11 +312,11 @@ class TestOpenAIService:
         )
 
         with patch(
-            "ingenious.external_services.openai_service.AzureOpenAI"
-        ) as mock_azure:
+            "ingenious.external_services.openai_service.AzureClientFactory.create_openai_client_from_params"
+        ) as mock_factory:
             mock_client = Mock()
             mock_client.chat.completions.create.return_value = mock_response
-            mock_azure.return_value = mock_client
+            mock_factory.return_value = mock_client
 
             service = OpenAIService(azure_endpoint, api_key, api_version, model)
             messages = [{"role": "user", "content": "Hello"}]
@@ -327,11 +344,11 @@ class TestOpenAIService:
         )
 
         with patch(
-            "ingenious.external_services.openai_service.AzureOpenAI"
-        ) as mock_azure:
+            "ingenious.external_services.openai_service.AzureClientFactory.create_openai_client_from_params"
+        ) as mock_factory:
             mock_client = Mock()
             mock_client.chat.completions.create.return_value = mock_response
-            mock_azure.return_value = mock_client
+            mock_factory.return_value = mock_client
 
             service = OpenAIService(azure_endpoint, api_key, api_version, model)
             messages = [{"role": "user", "content": "Hello"}]
@@ -362,11 +379,11 @@ class TestOpenAIService:
         )
 
         with patch(
-            "ingenious.external_services.openai_service.AzureOpenAI"
-        ) as mock_azure:
+            "ingenious.external_services.openai_service.AzureClientFactory.create_openai_client_from_params"
+        ) as mock_factory:
             mock_client = Mock()
             mock_client.chat.completions.create.return_value = mock_response
-            mock_azure.return_value = mock_client
+            mock_factory.return_value = mock_client
 
             service = OpenAIService(azure_endpoint, api_key, api_version, model)
             messages = [{"role": "user", "content": "Return JSON"}]
@@ -407,11 +424,11 @@ class TestOpenAIService:
         )
 
         with patch(
-            "ingenious.external_services.openai_service.AzureOpenAI"
-        ) as mock_azure:
+            "ingenious.external_services.openai_service.AzureClientFactory.create_openai_client_from_params"
+        ) as mock_factory:
             mock_client = Mock()
             mock_client.chat.completions.create.return_value = mock_response
-            mock_azure.return_value = mock_client
+            mock_factory.return_value = mock_client
 
             service = OpenAIService(azure_endpoint, api_key, api_version, model)
             messages = [{"role": "user", "content": "Use the tool"}]

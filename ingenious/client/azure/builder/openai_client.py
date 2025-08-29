@@ -1,5 +1,3 @@
-from typing import Union
-
 from azure.identity import get_bearer_token_provider
 from openai import AzureOpenAI
 
@@ -7,13 +5,12 @@ from ingenious.client.azure.builder.base import AzureClientBuilder
 from ingenious.common.enums import AuthenticationMethod
 from ingenious.config.auth_config import AzureAuthConfig
 from ingenious.config.models import ModelSettings
-from ingenious.models.config import ModelConfig
 
 
 class AzureOpenAIClientBuilder(AzureClientBuilder):
     """Builder for Azure OpenAI clients with multiple authentication methods."""
 
-    def __init__(self, model_config: Union[ModelConfig, ModelSettings]):
+    def __init__(self, model_config: ModelSettings):
         # Extract authentication parameters from config
         auth_config = self._create_auth_config_from_model_config(model_config)
         super().__init__(auth_config=auth_config)

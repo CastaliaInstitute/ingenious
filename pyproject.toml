@@ -339,6 +339,7 @@ markers = [
   "requires_env: Tests that require specific environment variables",
   "e2e: live network integration test (requires external APIs)",
   "docs: tests that parse large documents or require extra dependencies",
+  "isolation_sensitive: Tests that may fail due to environment pollution",
 ]
 filterwarnings = [
   "ignore::DeprecationWarning",

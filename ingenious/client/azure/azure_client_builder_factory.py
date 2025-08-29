@@ -5,7 +5,7 @@ This module provides a centralized factory for creating Azure service clients
 with appropriate authentication methods based on configuration.
 """
 
-from typing import TYPE_CHECKING, Any, Optional, Union
+from typing import TYPE_CHECKING, Any, Optional
 
 import pyodbc
 from autogen_ext.models.openai import AzureOpenAIChatCompletionClient
@@ -39,7 +39,7 @@ if TYPE_CHECKING:
     else:
         SearchClient = Any
 
-# Support both old and new configuration systems
+# Support new configuration system
 from ingenious.common.enums import AuthenticationMethod
 from ingenious.config.models import (
     AzureSearchSettings,
@@ -47,13 +47,6 @@ from ingenious.config.models import (
     CosmosSettings,
     FileStorageContainerSettings,
     ModelSettings,
-)
-from ingenious.models.config import (
-    AzureSearchConfig,
-    AzureSqlConfig,
-    CosmosConfig,
-    FileStorageContainer,
-    ModelConfig,
 )
 
 from .builder.blob_client import BlobClientBuilder, BlobServiceClientBuilder
@@ -82,7 +75,7 @@ class AzureClientFactory:
 
     @staticmethod
     def create_openai_client(
-        model_config: Union[ModelConfig, ModelSettings],
+        model_config: ModelSettings,
     ) -> AzureOpenAI:
         """
         Create an Azure OpenAI client from model configuration.
@@ -148,7 +141,7 @@ class AzureClientFactory:
 
     @staticmethod
     def create_openai_chat_completion_client(
-        model_config: Union[ModelConfig, ModelSettings],
+        model_config: ModelSettings,
     ) -> AzureOpenAIChatCompletionClient:
         """
         Create an Azure OpenAI Chat Completion client from model configuration.
@@ -214,7 +207,7 @@ class AzureClientFactory:
 
     @staticmethod
     def create_blob_service_client(
-        file_storage_config: Union[FileStorageContainer, FileStorageContainerSettings],
+        file_storage_config: FileStorageContainerSettings,
     ) -> BlobServiceClient:
         """
         Create an Azure Blob Service client from file storage configuration.
@@ -263,9 +256,9 @@ class AzureClientFactory:
 
     @staticmethod
     def create_blob_client(
-        file_storage_config: Union[FileStorageContainer, FileStorageContainerSettings],
+        file_storage_config: FileStorageContainerSettings,
+        container_name: str,
         blob_name: str,
-        container_name: Optional[str] = None,
     ) -> BlobClient:
         """
         Create an Azure Blob client from file storage configuration.
@@ -320,7 +313,7 @@ class AzureClientFactory:
 
     @staticmethod
     def create_cosmos_client(
-        cosmos_config: Union[CosmosConfig, CosmosSettings],
+        cosmos_config: CosmosSettings,
     ) -> Any:
         """
         Create an Azure Cosmos DB client.
@@ -353,7 +346,7 @@ class AzureClientFactory:
 
     @staticmethod
     def create_search_client(
-        search_config: Union[AzureSearchConfig, AzureSearchSettings], index_name: str
+        search_config: AzureSearchSettings, index_name: str
     ) -> Any:
         """
         Create an Azure Search client from search configuration.
@@ -429,7 +422,7 @@ class AzureClientFactory:
 
     @staticmethod
     def create_sql_client(
-        sql_config: Union[AzureSqlConfig, AzureSqlSettings],
+        sql_config: AzureSqlSettings,
     ) -> pyodbc.Connection:
         """
         Create an Azure SQL client from SQL configuration.

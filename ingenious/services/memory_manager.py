@@ -7,9 +7,9 @@ import asyncio
 import os
 from typing import Any, Optional
 
+from ingenious.config.settings import IngeniousSettings
 from ingenious.core.structured_logging import get_logger
 from ingenious.files.files_repository import FileStorage
-from ingenious.models.config import Config
 
 logger = get_logger(__name__)
 
@@ -20,7 +20,7 @@ class MemoryManager:
     This allows memory operations to work with both local storage and Azure Blob Storage.
     """
 
-    def __init__(self, config: Config, memory_path: Optional[str] = None):
+    def __init__(self, config: IngeniousSettings, memory_path: Optional[str] = None):
         """
         Initialize MemoryManager with configuration.
 
@@ -323,7 +323,7 @@ class LegacyMemoryManager:
 
 
 def get_memory_manager(
-    config: Config, memory_path: Optional[str] = None
+    config: IngeniousSettings, memory_path: Optional[str] = None
 ) -> MemoryManager:
     """
     Get appropriate memory manager based on configuration.

@@ -10,7 +10,7 @@ import os
 from dependency_injector.wiring import Provide, inject
 from fastapi import Depends
 
-from ingenious.config.main_settings import IngeniousSettings
+from ingenious.config.settings import IngeniousSettings
 from ingenious.files.files_repository import FileStorage
 from ingenious.services.container import Container
 

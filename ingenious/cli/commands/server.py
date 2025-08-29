@@ -62,7 +62,7 @@ class ServeCommand(BaseCommand):
             # Import and start the server
             import uvicorn
 
-            from ingenious.config.main_settings import IngeniousSettings
+            from ingenious.config.settings import IngeniousSettings
             from ingenious.main import create_app
 
             # Load settings

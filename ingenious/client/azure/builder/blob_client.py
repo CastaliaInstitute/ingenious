@@ -1,4 +1,4 @@
-from typing import Optional, Union
+from typing import Optional
 
 from azure.storage.blob import BlobClient, BlobServiceClient
 
@@ -6,7 +6,6 @@ from ingenious.client.azure.builder.base import AzureClientBuilder
 from ingenious.common.enums import AuthenticationMethod
 from ingenious.config.auth_config import AzureAuthConfig
 from ingenious.config.models import FileStorageContainerSettings
-from ingenious.models.config import FileStorageContainer
 
 
 class BlobServiceClientBuilder(AzureClientBuilder):
@@ -14,7 +13,7 @@ class BlobServiceClientBuilder(AzureClientBuilder):
 
     def __init__(
         self,
-        file_storage_config: Union[FileStorageContainer, FileStorageContainerSettings],
+        file_storage_config: FileStorageContainerSettings,
     ):
         # Extract authentication parameters from config
         auth_config = self._create_auth_config_from_storage_config(file_storage_config)
@@ -73,7 +72,7 @@ class BlobClientBuilder(AzureClientBuilder):
 
     def __init__(
         self,
-        file_storage_config: Union[FileStorageContainer, FileStorageContainerSettings],
+        file_storage_config: FileStorageContainerSettings,
         container_name: Optional[str] = None,
         blob_name: Optional[str] = None,
     ):

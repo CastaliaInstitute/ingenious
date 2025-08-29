@@ -1,9 +1,9 @@
+from ingenious.config.settings import IngeniousSettings
 from ingenious.models.agent import Agent, Agents, IProjectAgents
-from ingenious.models.config import Config
 
 
 class ProjectAgents(IProjectAgents):
-    def Get_Project_Agents(self, config: Config) -> Agents:
+    def Get_Project_Agents(self, config: IngeniousSettings) -> Agents:
         local_agents = []
         local_agents.append(
             Agent(

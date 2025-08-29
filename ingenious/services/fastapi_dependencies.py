@@ -7,7 +7,7 @@ from fastapi import Depends, Request
 
 from ingenious.common.enums import AuthenticationMethod
 from ingenious.config.config import get_config as _get_config
-from ingenious.config.main_settings import IngeniousSettings
+from ingenious.config.settings import IngeniousSettings
 from ingenious.core.structured_logging import get_logger
 from ingenious.db.chat_history_repository import ChatHistoryRepository
 from ingenious.external_services.openai_service import OpenAIService

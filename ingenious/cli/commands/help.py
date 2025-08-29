@@ -350,7 +350,7 @@ class ValidateCommand(BaseCommand):
             # Check for .env file
             from pathlib import Path
 
-            from ingenious.config.main_settings import IngeniousSettings
+            from ingenious.config.settings import IngeniousSettings
 
             # Look for .env files
             env_files = [".env", ".env.local", ".env.dev", ".env.prod"]
@@ -498,7 +498,7 @@ class ValidateCommand(BaseCommand):
 
         try:
             # Import and validate pydantic-settings configuration
-            from ingenious.config.main_settings import IngeniousSettings
+            from ingenious.config.settings import IngeniousSettings
 
             # Attempt to load and validate the configuration
             settings = IngeniousSettings()
@@ -663,7 +663,7 @@ class ValidateCommand(BaseCommand):
         issues = []
 
         try:
-            from ingenious.config.main_settings import IngeniousSettings
+            from ingenious.config.settings import IngeniousSettings
 
             # Load settings and check for configured models
             settings = IngeniousSettings()

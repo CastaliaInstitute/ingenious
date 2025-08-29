@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
-from typing import Any, AsyncIterator, Union
+from typing import Any, AsyncIterator
 
-from ingenious.config.main_settings import IngeniousSettings
+from ingenious.config.settings import IngeniousSettings
 from ingenious.core.error_handling import operation_context
 from ingenious.core.structured_logging import get_logger
 from ingenious.db.chat_history_repository import ChatHistoryRepository
@@ -9,7 +9,6 @@ from ingenious.errors import (
     ChatServiceError,
 )
 from ingenious.models.chat import ChatRequest, ChatResponse, ChatResponseChunk
-from ingenious.models.config import Config
 from ingenious.utils.imports import import_class_with_fallback
 
 logger = get_logger(__name__)
@@ -37,7 +36,7 @@ class ChatService(IChatService):
         chat_service_type: str,
         chat_history_repository: ChatHistoryRepository,
         conversation_flow: str,
-        config: Union[Config, IngeniousSettings],
+        config: IngeniousSettings,
         revision: str = "dfe19b62-07f1-4cb5-ae9a-561a253e4b04",
     ):
         class_name = f"{chat_service_type.lower()}_chat_service"

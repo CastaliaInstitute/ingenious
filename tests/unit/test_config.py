@@ -3,7 +3,7 @@ from unittest.mock import patch
 
 import pytest
 
-from ingenious.config.profile import substitute_environment_variables
+from ingenious.utils.env_substitution import substitute_env_vars
 
 
 @pytest.mark.unit
@@ -16,9 +16,9 @@ class TestConfig:
 
         with patch.dict(os.environ, {"TEST_VAR": "substituted"}, clear=True):
             # First substitution
-            result1 = substitute_environment_variables(yaml_content)
+            result1 = substitute_env_vars(yaml_content)
             # Second substitution (should not change the result)
-            result2 = substitute_environment_variables(result1)
+            result2 = substitute_env_vars(result1)
 
             assert result1 == "value: substituted"
             assert result2 == "value: substituted"

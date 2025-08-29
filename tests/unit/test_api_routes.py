@@ -38,7 +38,7 @@ class TestDiagnosticRoutes:
         """Test successful health check."""
         # Mock dependencies
         with patch("ingenious.dependencies.get_config", return_value=Mock()):
-            with patch("ingenious.dependencies.get_profile", return_value=Mock()):
+            with patch("ingenious.dependencies.get_config", return_value=Mock()):
                 from ingenious.api.routes.diagnostic import health_check
 
                 response = await health_check()

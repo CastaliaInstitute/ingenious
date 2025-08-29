@@ -6,8 +6,8 @@ from autogen_agentchat.teams import RoundRobinGroupChat
 from ingenious.client.azure import AzureClientFactory
 from ingenious.common.enums import AuthenticationMethod
 from ingenious.config import get_config
+from ingenious.config.settings import IngeniousSettings
 from ingenious.core.structured_logging import get_logger
-from ingenious.models.config import Config
 
 logger = get_logger(__name__)
 
@@ -51,7 +51,7 @@ class ConversationPattern:
         )
 
         self.memory_manager = get_memory_manager(
-            cast(Config, get_config()), memory_path
+            cast(IngeniousSettings, get_config()), memory_path
         )
 
         # Initialize context file
