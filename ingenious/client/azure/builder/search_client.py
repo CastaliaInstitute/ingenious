@@ -21,7 +21,9 @@ class AzureSearchClientBuilder(AzureClientBuilder):
         self.search_config = search_config
         self.index_name = index_name
 
-    def _create_auth_config_from_search_config(self, search_config):
+    def _create_auth_config_from_search_config(
+        self, search_config: AzureSearchSettings
+    ) -> AzureAuthConfig:
         """Create AzureAuthConfig from search configuration."""
         return AzureAuthConfig.from_config(search_config)
 

@@ -1,6 +1,6 @@
 import os
 from datetime import datetime, timedelta
-from typing import Any, Dict, Optional
+from typing import Any, Dict, Optional, Tuple
 
 from fastapi import HTTPException, status
 from jose import JWTError, jwt
@@ -12,7 +12,7 @@ logger = get_logger(__name__)
 
 
 # Get configuration with fallbacks
-def _get_jwt_config():
+def _get_jwt_config() -> Tuple[str, str, int, int]:
     """Get JWT configuration from settings or environment variables."""
     try:
         from ingenious.config.config import get_config

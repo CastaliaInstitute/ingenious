@@ -14,7 +14,9 @@ class CosmosClientBuilder(AzureClientBuilder):
         super().__init__(auth_config=auth_config)
         self.uri = cosmos_config.uri
 
-    def _create_auth_config_from_chat_history_config(self, cosmos_config):
+    def _create_auth_config_from_chat_history_config(
+        self, cosmos_config: CosmosSettings
+    ) -> AzureAuthConfig:
         """Create AzureAuthConfig from chat history configuration."""
         return AzureAuthConfig.from_config(cosmos_config)
 

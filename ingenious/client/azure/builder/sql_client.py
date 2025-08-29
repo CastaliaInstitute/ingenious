@@ -5,6 +5,7 @@ from azure.identity import get_bearer_token_provider
 
 from ingenious.client.azure.builder.base import AzureClientBuilder
 from ingenious.common.enums import AuthenticationMethod
+from ingenious.config.auth_config import AzureAuthConfig
 from ingenious.config.models import AzureSqlSettings
 
 
@@ -17,10 +18,10 @@ class AzureSqlClientBuilder(AzureClientBuilder):
         super().__init__(auth_config=auth_config)
         self.sql_config = sql_config
 
-    def _create_auth_config_from_sql_config(self, sql_config):
+    def _create_auth_config_from_sql_config(
+        self, sql_config: AzureSqlSettings
+    ) -> AzureAuthConfig:
         """Create AzureAuthConfig from SQL configuration."""
-        from ingenious.config.auth_config import AzureAuthConfig
-
         return AzureAuthConfig.from_config(sql_config)
 
     def build(self) -> pyodbc.Connection:

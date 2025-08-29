@@ -20,7 +20,9 @@ class BlobServiceClientBuilder(AzureClientBuilder):
         super().__init__(auth_config=auth_config)
         self.file_storage_config = file_storage_config
 
-    def _create_auth_config_from_storage_config(self, file_storage_config):
+    def _create_auth_config_from_storage_config(
+        self, file_storage_config: FileStorageContainerSettings
+    ) -> AzureAuthConfig:
         """Create AzureAuthConfig from file storage configuration."""
         return AzureAuthConfig.from_config(file_storage_config)
 
@@ -85,7 +87,9 @@ class BlobClientBuilder(AzureClientBuilder):
         )
         self.blob_name = blob_name
 
-    def _create_auth_config_from_storage_config(self, file_storage_config):
+    def _create_auth_config_from_storage_config(
+        self, file_storage_config: FileStorageContainerSettings
+    ) -> AzureAuthConfig:
         """Create AzureAuthConfig from file storage configuration."""
         return AzureAuthConfig.from_config(file_storage_config)
 

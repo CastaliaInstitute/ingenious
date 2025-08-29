@@ -18,6 +18,7 @@ try:
 
     HAS_COSMOS = True
 except ImportError:
+    CosmosClient = Any  # type: ignore
     HAS_COSMOS = False
 
 try:
@@ -25,19 +26,12 @@ try:
 
     HAS_SEARCH = True
 except ImportError:
+    SearchClient = Any  # type: ignore
     HAS_SEARCH = False
 
 # Type imports for type checking
 if TYPE_CHECKING:
-    if HAS_COSMOS:
-        from azure.cosmos import CosmosClient
-    else:
-        CosmosClient = Any
-
-    if HAS_SEARCH:
-        from azure.search.documents import SearchClient
-    else:
-        SearchClient = Any
+    pass  # All types are already imported above
 
 # Support new configuration system
 from ingenious.common.enums import AuthenticationMethod
@@ -62,12 +56,12 @@ from .builder.sql_client import AzureSqlClientBuilder, AzureSqlClientBuilderWith
 try:
     from .builder.search_client import AzureSearchClientBuilder
 except ImportError:
-    AzureSearchClientBuilder = None
+    AzureSearchClientBuilder = None  # type: ignore
 
 try:
     from .builder.cosmos_client import CosmosClientBuilder
 except ImportError:
-    CosmosClientBuilder = None
+    CosmosClientBuilder = None  # type: ignore
 
 
 class AzureClientFactory:

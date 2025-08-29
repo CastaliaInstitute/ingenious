@@ -165,7 +165,7 @@ class SemanticOverlapChunker(TextSplitter):  # talk to mypy
         )
 
     # extra kwargs → leave the precise signature, but tell mypy to ignore
-    def split_text(  # type: ignore[override]
+    def split_text(
         self,
         text: str,
         *,

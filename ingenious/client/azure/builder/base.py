@@ -11,16 +11,20 @@ from azure.identity import (
 from ingenious.common.enums import AuthenticationMethod
 from ingenious.config.auth_config import AzureAuthConfig
 
+# Type alias for credentials
+CredentialType = Union[TokenCredential, AzureKeyCredential]
+
 
 class AzureClientBuilder(ABC):
     """Abstract base class for Azure client builders with authentication support."""
 
     def __init__(self, auth_config: Optional[AzureAuthConfig] = None):
         self.auth_config = auth_config or AzureAuthConfig.default_credential()
-        self._credential = None  # Lazy-loaded credential cache
+        # Lazy-loaded credential cache
+        self._credential: Optional[CredentialType] = None
 
     @classmethod
-    def from_config(cls, config: Any):
+    def from_config(cls, config: Any) -> "AzureClientBuilder":
         """
         Create builder instance from a configuration object.
 

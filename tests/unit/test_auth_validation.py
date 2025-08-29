@@ -7,10 +7,12 @@ for the Azure OpenAI client builder functions, ensuring that different
 authentication methods work correctly with proper credentials.
 """
 
+from typing import Any
+
 from ingenious.common.enums import AuthenticationMethod
 
 
-def test_authentication_requirements():
+def test_authentication_requirements() -> None:
     """Test the authentication requirements for different methods used by the client builder."""
 
     print("🔍 Testing Azure OpenAI Client Builder Authentication Methods\n")
@@ -45,7 +47,7 @@ def test_authentication_requirements():
         print()
 
 
-def test_validation_scenarios():
+def test_validation_scenarios() -> None:
     """
     Test validation scenarios for Azure OpenAI client builder authentication.
 
@@ -54,7 +56,7 @@ def test_validation_scenarios():
     """
     print("🧪 Client Builder Validation Scenarios:\n")
 
-    scenarios = [
+    scenarios: list[dict[str, Any]] = [
         {
             "name": "DEFAULT_CREDENTIAL - Valid",
             "auth_method": AuthenticationMethod.DEFAULT_CREDENTIAL,
@@ -207,7 +209,7 @@ def test_validation_scenarios():
                 if original_env[key] is None:
                     os.environ.pop(key, None)
                 else:
-                    os.environ[key] = original_env[key]
+                    os.environ[key] = str(original_env[key])
 
         if overall_valid == expected:
             print(

@@ -34,7 +34,7 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
         self._create_database(database_id)
         self._create_containers()
 
-    def _create_database(self, database_id):
+    def _create_database(self, database_id: str) -> None:
         authentication_method = getattr(
             self.config.cosmos_service, "authentication_method", None
         )
@@ -44,10 +44,12 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
         else:
             self.database = self.client.get_database_client(database_id)
 
-    def _create_containers(self):
+    def _create_containers(self) -> None:
         authentication_method = getattr(
             self.config.cosmos_service, "authentication_method", None
         )
+
+        # Initialize containers based on authentication method
         if authentication_method == AuthenticationMethod.TOKEN:
             self.chat_history: ContainerProxy = (
                 self.database.create_container_if_not_exists(
@@ -80,21 +82,15 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
                 )
             )
         else:
-            self.chat_history: ContainerProxy = self.database.get_container_client(
-                "chat_history"
+            self.chat_history = self.database.get_container_client("chat_history")
+            self.chat_history_summary = self.database.get_container_client(
+                "chat_history_summary"
             )
-            self.chat_history_summary: ContainerProxy = (
-                self.database.get_container_client("chat_history_summary")
-            )
-            self.users: ContainerProxy = self.database.get_container_client("users")
-            self.threads: ContainerProxy = self.database.get_container_client("threads")
-            self.steps: ContainerProxy = self.database.get_container_client("steps")
-            self.elements: ContainerProxy = self.database.get_container_client(
-                "elements"
-            )
-            self.feedbacks: ContainerProxy = self.database.get_container_client(
-                "feedbacks"
-            )
+            self.users = self.database.get_container_client("users")
+            self.threads = self.database.get_container_client("threads")
+            self.steps = self.database.get_container_client("steps")
+            self.elements = self.database.get_container_client("elements")
+            self.feedbacks = self.database.get_container_client("feedbacks")
 
     # Utility mappers
     def _message_to_doc(self, m: Message) -> Dict[str, Any]:
