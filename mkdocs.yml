@@ -86,6 +86,7 @@ nav:
       - Custom Workflows: guides/custom-workflows.md
       - Cosmos DB Integration: guides/cosmos-db-deployment.md
       - Azure AI Search: guides/azure-ai-search-deployment.md
+      - Azure Authentication: guides/azure-authentication.md
   - Developer Guides:
       - Authentication: auth.md
 exclude_docs: |
