@@ -1,7 +1,6 @@
 from typing import Any, Dict, List, Optional, Set
 
 from fastapi import APIRouter, Depends, HTTPException, Request
-from fastapi.security import HTTPBasicCredentials
 from pydantic import BaseModel
 from typing_extensions import Annotated
 
@@ -64,9 +63,7 @@ async def _get_existing_revision_ids(fs: FileStorage) -> Set[str]:
 @router.get("/revisions/list")
 async def list_revisions(
     request: Request,
-    credentials: Annotated[
-        HTTPBasicCredentials, Depends(ingen_deps.get_conditional_security)
-    ],
+    username: Annotated[str, Depends(ingen_deps.get_conditional_security)],
     fs: FileStorage = Depends(ingen_deps.get_file_storage_revisions),
 ) -> Dict[str, Any]:
     """
@@ -88,9 +85,7 @@ async def list_revisions(
 @router.get("/workflows/list")
 async def list_workflows_for_prompts(
     request: Request,
-    credentials: Annotated[
-        HTTPBasicCredentials, Depends(ingen_deps.get_conditional_security)
-    ],
+    username: Annotated[str, Depends(ingen_deps.get_conditional_security)],
     fs: FileStorage = Depends(ingen_deps.get_file_storage_revisions),
 ) -> Dict[str, Any]:
     """
@@ -166,9 +161,7 @@ async def list_workflows_for_prompts(
 async def list_prompts_enhanced(
     revision_id: str,
     request: Request,
-    credentials: Annotated[
-        HTTPBasicCredentials, Depends(ingen_deps.get_conditional_security)
-    ],
+    username: Annotated[str, Depends(ingen_deps.get_conditional_security)],
     fs: FileStorage = Depends(ingen_deps.get_file_storage_revisions),
 ) -> Dict[str, Any]:
     """
@@ -247,9 +240,7 @@ async def view(
     revision_id: str,
     filename: str,
     request: Request,
-    credentials: Annotated[
-        HTTPBasicCredentials, Depends(ingen_deps.get_conditional_security)
-    ],
+    username: Annotated[str, Depends(ingen_deps.get_conditional_security)],
     fs: FileStorage = Depends(ingen_deps.get_file_storage_revisions),
 ) -> str:
     prompt_template_folder = await fs.get_prompt_template_path(revision_id=revision_id)
@@ -263,9 +254,7 @@ async def update(
     filename: str,
     request: Request,
     update_request: UpdatePromptRequest,
-    credentials: Annotated[
-        HTTPBasicCredentials, Depends(ingen_deps.get_conditional_security)
-    ],
+    username: Annotated[str, Depends(ingen_deps.get_conditional_security)],
     fs: FileStorage = Depends(ingen_deps.get_file_storage_revisions),
 ) -> Dict[str, str]:
     prompt_template_folder = await fs.get_prompt_template_path(revision_id=revision_id)
@@ -291,9 +280,7 @@ async def update(
 async def create_revision(
     request: Request,
     create_request: CreateRevisionRequest,
-    credentials: Annotated[
-        HTTPBasicCredentials, Depends(ingen_deps.get_conditional_security)
-    ],
+    username: Annotated[str, Depends(ingen_deps.get_conditional_security)],
     fs: FileStorage = Depends(ingen_deps.get_file_storage_revisions),
 ) -> Dict[str, Any]:
     """

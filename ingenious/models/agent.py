@@ -19,7 +19,9 @@ from autogen_core.models import FunctionExecutionResult
 from autogen_core.tools import Tool
 from pydantic import BaseModel, Field, PrivateAttr
 
-from ingenious.config import settings as ig_config
+from ingenious.config import IngeniousSettings, get_config
+
+ig_config = get_config()
 from ingenious.db.chat_history_repository import ChatHistoryRepository
 from ingenious.files.files_repository import FileStorage
 from ingenious.models.config import Config, ModelConfig
@@ -278,7 +280,7 @@ class LLMUsageTracker(logging.Handler):
     def __init__(
         self,
         agents: Agents,
-        config: ig_config.IngeniousSettings,
+        config: IngeniousSettings,
         chat_history_repository: ChatHistoryRepository,
         revision_id: str,
         identifier: str,
