@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Repository Context
 
-This is the **ingenious** package - a core AI agent framework library (v0.2.6).
+This is the **ingenious** package - a core AI agent framework library (v0.2.7).
 
 ## Package Management
 
