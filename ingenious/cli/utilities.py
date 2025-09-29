@@ -18,7 +18,7 @@ from rich.table import Table
 
 import ingenious.utils.stage_executor as stage_executor_module
 from ingenious.core.structured_logging import get_logger
-from ingenious.utils.namespace_utils import import_class_with_fallback
+from ingenious.utils.imports import import_class_with_fallback
 
 logger = get_logger(__name__)
 

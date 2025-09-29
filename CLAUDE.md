@@ -57,7 +57,7 @@ uv build
 - **FastAPI Server** (`ingenious/main/app_factory.py`) - Main API application factory using dependency injection
 - **Multi-Agent System** (`ingenious/services/chat_services/multi_agent/`) - AutoGen-based agent orchestration
 - **Conversation Flows** (`services/chat_services/multi_agent/conversation_flows/`) - Pluggable workflow patterns
-- **Dependency Injection** (`ingenious/services/container.py`) - Uses dependency-injector for IoC container
+- **Dependency Injection** (`ingenious/services/fastapi_dependencies.py`) - FastAPI-native dependency wiring
 - **Configuration** - Pydantic-settings based (`ingenious/config/`) with `INGENIOUS_*` environment variables
 
 ### Built-in Conversation Flows

@@ -6,9 +6,10 @@ from typing import Any, Dict, List
 from fastapi import APIRouter, Depends, HTTPException, Request
 from typing_extensions import Annotated
 
-import ingenious.dependencies as ingen_deps
 from ingenious.core.structured_logging import get_logger
 from ingenious.models.http_error import HTTPError
+from ingenious.services import auth_dependencies
+from ingenious.services import fastapi_dependencies as ingen_deps
 from ingenious.utils.namespace_utils import (
     discover_workflows,
     get_workflow_metadata,
@@ -30,7 +31,7 @@ router = APIRouter()
 async def workflow_status(
     workflow_name: str,
     request: Request,
-    auth_user: Annotated[str, Depends(ingen_deps.get_auth_user)],
+    auth_user: Annotated[str, Depends(auth_dependencies.get_auth_user)],
 ) -> Dict[str, Any]:
     """
     Check the configuration status of a specific workflow.
@@ -162,7 +163,7 @@ async def workflow_status(
 )
 async def list_workflows(
     request: Request,
-    auth_user: Annotated[str, Depends(ingen_deps.get_auth_user)],
+    auth_user: Annotated[str, Depends(auth_dependencies.get_auth_user)],
 ) -> Dict[str, Any]:
     """
     List all available workflows and their configuration status.
@@ -230,7 +231,7 @@ async def list_workflows(
 )
 async def diagnostic(
     request: Request,
-    auth_user: Annotated[str, Depends(ingen_deps.get_auth_user)],
+    auth_user: Annotated[str, Depends(auth_dependencies.get_auth_user)],
 ) -> Dict[str, Any]:
     if request.method == "OPTIONS":
         return {"Allow": "GET, OPTIONS"}
@@ -238,23 +239,25 @@ async def diagnostic(
     try:
         diagnostic = {}
 
-        prompt_dir = Path(
-            await ingen_deps.get_file_storage_revisions().get_base_path()
-        ) / Path(
-            await ingen_deps.get_file_storage_revisions().get_prompt_template_path()
+        config = ingen_deps.get_config()
+        revisions_storage = ingen_deps.get_file_storage_revisions(config=config)
+        data_storage = ingen_deps.get_file_storage_data(config=config)
+
+        prompt_dir = Path(await revisions_storage.get_base_path()) / Path(
+            await revisions_storage.get_prompt_template_path()
         )
 
-        data_dir = Path(
-            await ingen_deps.get_file_storage_data().get_base_path()
-        ) / Path(await ingen_deps.get_file_storage_data().get_data_path())
+        data_dir = Path(await data_storage.get_base_path()) / Path(
+            await data_storage.get_data_path()
+        )
 
-        output_dir = Path(
-            await ingen_deps.get_file_storage_revisions().get_base_path()
-        ) / Path(await ingen_deps.get_file_storage_revisions().get_output_path())
+        output_dir = Path(await revisions_storage.get_base_path()) / Path(
+            await revisions_storage.get_output_path()
+        )
 
-        events_dir = Path(
-            await ingen_deps.get_file_storage_revisions().get_base_path()
-        ) / Path(await ingen_deps.get_file_storage_revisions().get_events_path())
+        events_dir = Path(await revisions_storage.get_base_path()) / Path(
+            await revisions_storage.get_events_path()
+        )
 
         diagnostic["Prompt Directory"] = prompt_dir
         diagnostic["Data Directory"] = data_dir

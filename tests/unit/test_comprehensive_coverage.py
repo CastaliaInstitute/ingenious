@@ -175,26 +175,6 @@ class TestUtilityCoverage:
 class TestServicesCoverage:
     """Tests to increase services module coverage"""
 
-    def test_container_coverage(self):
-        """Test container functionality"""
-        try:
-            from ingenious.services.container import get_container
-
-            # Test container instantiation
-            container = get_container()
-            assert container is not None
-
-            # Test that multiple calls return same instance
-            container2 = get_container()
-            assert container is container2
-
-            # Test container has expected providers
-            assert hasattr(container, "config")
-            assert hasattr(container, "logger")
-
-        except ImportError:
-            pytest.skip("Container not available")
-
     def test_message_feedback_service_coverage(self):
         """Test message feedback service"""
         try:
@@ -449,7 +429,6 @@ class TestComprehensiveImports:
             "ingenious.utils.conversation_builder",
             "ingenious.utils.load_sample_data",
             "ingenious.services.fastapi_dependencies",
-            "ingenious.services.file_dependencies",
             "ingenious.main.routing",
         ]
 
