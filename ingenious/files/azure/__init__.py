@@ -160,13 +160,13 @@ class azure_FileStorageRepository(IFileStorage):
             raise
         return str(path)
 
-    async def list_files(self, file_path: str) -> str:
+    async def list_files(self, file_path: str) -> List[str]:
         """
         List blobs in an Azure Blob container based on a path.
 
         :param file_path: Path within the storage container to list blobs from.
         """
-        blobs = []
+        blobs: List[str] = []
         try:
             path = Path(self.fs_config.path) / Path(file_path)
             prefix = str(path).replace(
@@ -181,7 +181,7 @@ class azure_FileStorageRepository(IFileStorage):
                 for blob in container_client.list_blobs(name_starts_with=prefix)
             ]
             # print(f"Blobs in container {self.container_name} with prefix {prefix}: {blobs}")
-            return "\n".join(blobs)
+            return blobs
         except Exception as e:
             logger.error(
                 f"Failed to list blobs in container {self.container_name} with prefix {prefix}: {e}"
