@@ -8,6 +8,25 @@ This guide provides step-by-step instructions for moving from local development 
 - Azure OpenAI resource (required)
 - Azure subscription with appropriate permissions
 
+## Quick Deploy with Bicep (Optional)
+
+If you want to recreate the core Azure resources from this guide in a single step, use the Bicep template located at `infra/main.bicep`. The defaults match the resource names used throughout the documentation; override parameters as needed to avoid name collisions.
+
+```bash
+# Deploy (or update) resources into your resource group
+az deployment group create \
+  --resource-group your-rg-name \
+  --template-file infra/main.bicep \
+  --parameters sqlAdministratorPassword='YourStrongPassword!' \
+               clientIpAddress=$(curl -s ipinfo.io/ip)
+
+# Preview changes without applying
+az deployment group what-if \
+  --resource-group your-rg-name \
+  --template-file infra/main.bicep \
+  --parameters sqlAdministratorPassword='YourStrongPassword!'
+```
+
 ## Minimal Azure Provisioning
 
 ### 1. Create Resource Group
