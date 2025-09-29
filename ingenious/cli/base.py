@@ -14,7 +14,6 @@ from typing import Any, Dict, Optional
 import typer
 from rich.console import Console
 from rich.progress import Progress, SpinnerColumn, TextColumn
-from rich.theme import Theme
 
 from ingenious.core.structured_logging import get_logger
 
@@ -213,56 +212,3 @@ class BaseCommand(ABC):
             )
 
         return {"config": str(resolved_config), "profile": str(resolved_profile)}
-
-    def check_environment_vars(self, required_vars: list[str]) -> Dict[str, str]:
-        """
-        Check for required environment variables.
-
-        Args:
-            required_vars: List of required environment variable names
-
-        Returns:
-            Dictionary mapping variable names to their values
-
-        Raises:
-            CommandError: If any required variables are missing
-        """
-        import os
-
-        missing_vars = []
-        env_values = {}
-
-        for var in required_vars:
-            value = os.getenv(var)
-            if not value:
-                missing_vars.append(var)
-            else:
-                env_values[var] = value
-
-        if missing_vars:
-            raise CommandError(
-                f"Missing required environment variables: {', '.join(missing_vars)}",
-                ExitCode.INVALID_CONFIG,
-            )
-
-        return env_values
-
-
-def create_console() -> Console:
-    """
-    Create a standardized console instance for CLI commands.
-
-    Returns:
-        Configured Console instance with custom theme
-    """
-    custom_theme = Theme(
-        {
-            "info": "dim cyan",
-            "warning": "dark_orange",
-            "danger": "bold red",
-            "error": "bold red",
-            "debug": "khaki1",
-        }
-    )
-
-    return Console(theme=custom_theme)
