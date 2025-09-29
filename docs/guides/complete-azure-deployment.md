@@ -21,6 +21,11 @@ az group create --name your-rg-name --location eastus
 ### 2. Provision Azure SQL (Basic - 5 DTUs)
 
 ```bash
+# Register the SQL resource provider if this subscription has never created SQL resources
+if [ "$(az provider show --namespace Microsoft.Sql --query "registrationState" -o tsv 2>/dev/null)" != "Registered" ]; then
+  az provider register --namespace Microsoft.Sql
+fi
+
 # Check if SQL Server exists first
 SQL_EXISTS=$(az sql server show --name your-sql-server --resource-group your-rg-name 2>/dev/null)
 if [ -z "$SQL_EXISTS" ]; then
@@ -99,7 +104,8 @@ INGENIOUS_CHAT_HISTORY__DATABASE_TYPE=sqlite
 INGENIOUS_CHAT_HISTORY__DATABASE_PATH=./.tmp/chat_history.db
 
 # Local file storage
-INGENIOUS_FILE_STORAGE__REVISIONS__ENABLE=false
+INGENIOUS_FILE_STORAGE__REVISIONS__ENABLE=true
+INGENIOUS_FILE_STORAGE__REVISIONS__STORAGE_TYPE=local
 ```
 
 #### Azure Production Configuration (Target)
@@ -134,6 +140,7 @@ INGENIOUS_CHAT_SERVICE__ENABLE_BUILTIN_WORKFLOWS=false
 | `INGENIOUS_FILE_STORAGE__REVISIONS__ENABLE` | `false` | `true` | Enable cloud file storage |
 | `INGENIOUS_FILE_STORAGE__REVISIONS__STORAGE_TYPE` | `local` | `azure` | Storage backend type |
 | `INGENIOUS_FILE_STORAGE__REVISIONS__CONTAINER_NAME` | (not needed) | `prompts` | Blob container name |
+| `INGENIOUS_FILE_STORAGE__REVISIONS__PATH` | `./` | `./` | Blob prefix (keeps templates under templates/) |
 | `INGENIOUS_FILE_STORAGE__REVISIONS__URL` | (not needed) | `https://...` | Storage account URL |
 | `INGENIOUS_FILE_STORAGE__REVISIONS__TOKEN` | (not needed) | `DefaultEndpoints...` | Storage connection string |
 | `INGENIOUS_CHAT_SERVICE__ENABLE_BUILTIN_WORKFLOWS` | `true` | `false` | Production security setting |
@@ -178,7 +185,57 @@ for file in templates/prompts/quickstart-1/*.jinja; do
     --auth-mode key \
     --overwrite
 done
+
+# Alternative: upload the entire templates tree in one command while preserving folder structure
+az storage blob upload-batch \
+  --account-name yourblobstorage \
+  --account-key "$(az storage account keys list --account-name yourblobstorage --resource-group your-rg-name --query '[0].value' -o tsv)" \
+  --destination prompts \
+  --destination-path templates \
+  --source templates
 ```
+
+## Azure Integration Verification
+
+Once configuration is in place, validate that Azure SQL and Blob Storage are wired up end-to-end.
+
+```bash
+# 1. Start the server with authentication enabled
+export PYTHONPATH=$(pwd):$PYTHONPATH
+KB_POLICY=prefer_azure uv run ingen serve --port 8000
+
+# 2. Health check (no auth required)
+curl http://localhost:8000/api/v1/health
+
+# 3. Exercise a workflow with Basic Auth (replace credentials with your own values)
+AUTH_HEADER=$(echo -n 'admin:SuperSecurePassword!' | base64)
+curl -X POST http://localhost:8000/api/v1/chat \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Basic $AUTH_HEADER" \
+  -d @test_bike_insights.json
+
+# 4. Confirm chat history rows landed in Azure SQL
+uv run python <<PY
+import pyodbc
+conn = pyodbc.connect(
+    "Driver={ODBC Driver 18 for SQL Server};"
+    "Server=tcp:your-sql-server.database.windows.net,1433;"
+    "Database=ingenious-db;Uid=adminuser;Pwd=YOUR_PASSWORD;"
+    "Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;"
+)
+cursor = conn.cursor()
+cursor.execute("SELECT COUNT(*) FROM chat_history")
+print("chat_history rows:", cursor.fetchone()[0])
+cursor.close()
+conn.close()
+PY
+
+# 5. Verify prompts are being served from Azure Blob Storage
+curl -H "Authorization: Basic $AUTH_HEADER" \
+  http://localhost:8000/api/v1/prompts/list/quickstart-1
+```
+
+If the workflow succeeds, the SQL row count increases, and the prompt listing returns template filenames, the Azure SQL and Blob integrations are working.
 
 ## Production Security Configuration
 
