@@ -213,6 +213,12 @@ INGENIOUS_LOGGING__LOG_LEVEL=info
 # INGENIOUS_AZURE_SQL_SERVICES__DATABASE_NAME=your_database_name
 # INGENIOUS_AZURE_SQL_SERVICES__TABLE_NAME=chat_history
 
+# Optional: Cosmos DB Configuration (if using Cosmos DB instead of SQL)
+# INGENIOUS_COSMOS_SERVICE__URI=https://your-cosmos-account.documents.azure.com:443/
+# INGENIOUS_COSMOS_SERVICE__DATABASE_NAME=your-database-name
+# INGENIOUS_COSMOS_SERVICE__AUTHENTICATION_METHOD=token
+# INGENIOUS_COSMOS_SERVICE__API_KEY=your-cosmos-primary-key
+
 # Knowledge base configuration - local ChromaDB for development
 KB_POLICY=local_only
 KB_TOPK_DIRECT=3
