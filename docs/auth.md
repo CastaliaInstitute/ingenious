@@ -13,6 +13,9 @@ INGENIOUS_WEB_CONFIGURATION__AUTHENTICATION__ENABLE=true
 # Set Basic Auth credentials
 INGENIOUS_WEB_CONFIGURATION__AUTHENTICATION__USERNAME=<username>
 INGENIOUS_WEB_CONFIGURATION__AUTHENTICATION__PASSWORD=<password>
+
+# Set a JWT signing secret (run `openssl rand -hex 32` to generate one)
+INGENIOUS_WEB_CONFIGURATION__AUTHENTICATION__JWT_SECRET_KEY=<long-random-string>
 ```
 
 ## Basic Authentication
@@ -31,7 +34,7 @@ curl -X POST http://localhost:<port>/api/v1/chat \
   -H "Authorization: Basic $(echo -n '<username>:<password>' | base64)" \
   -d '{
     "user_prompt": "Hello",
-    "conversation_flow": "classification_agent",
+    "conversation_flow": "classification-agent",
     "thread_id": "test123"
   }'
 
@@ -41,7 +44,7 @@ curl -X POST http://localhost:<port>/api/v1/chat \
   -H "Authorization: Basic $(echo -n 'wrong:wrong' | base64)" \
   -d '{
     "user_prompt": "Hello",
-    "conversation_flow": "classification_agent",
+    "conversation_flow": "classification-agent",
     "thread_id": "test123"
   }'
 ```
@@ -73,7 +76,7 @@ curl -X POST http://localhost:<port>/api/v1/chat \
   -H "Authorization: Bearer $TOKEN" \
   -d '{
     "user_prompt": "Hello with JWT",
-    "conversation_flow": "classification_agent",
+    "conversation_flow": "classification-agent",
     "thread_id": "test-jwt"
   }'
 
@@ -95,13 +98,13 @@ curl -X POST http://localhost:<port>/api/v1/auth/refresh \
 curl -X POST http://localhost:<port>/api/v1/chat \
   -H "Content-Type: application/json" \
   -H "Authorization: Basic $(echo -n '<username>:<password>' | base64)" \
-  -d '{"user_prompt": "Test", "conversation_flow": "classification_agent", "thread_id": "test"}'
+  -d '{"user_prompt": "Test", "conversation_flow": "classification-agent", "thread_id": "test"}'
 
 # Wrong credentials - should return 401
 curl -X POST http://localhost:<port>/api/v1/chat \
   -H "Content-Type: application/json" \
   -H "Authorization: Basic $(echo -n 'wrong:wrong' | base64)" \
-  -d '{"user_prompt": "Test", "conversation_flow": "classification_agent", "thread_id": "test"}'
+  -d '{"user_prompt": "Test", "conversation_flow": "classification-agent", "thread_id": "test"}'
 ```
 
 ### Test JWT Auth:
@@ -116,7 +119,7 @@ TOKEN=$(curl -s -X POST http://localhost:<port>/api/v1/auth/login \
 curl -X POST http://localhost:<port>/api/v1/chat \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $TOKEN" \
-  -d '{"user_prompt": "Test JWT", "conversation_flow": "classification_agent", "thread_id": "test-jwt"}'
+  -d '{"user_prompt": "Test JWT", "conversation_flow": "classification-agent", "thread_id": "test-jwt"}'
 
 # Verify token
 curl -X GET http://localhost:<port>/api/v1/auth/verify \
