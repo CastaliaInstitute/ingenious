@@ -99,6 +99,7 @@ resource embeddingDeployment 'Microsoft.CognitiveServices/accounts/deployments@2
 // Azure SQL Server
 resource sqlServer 'Microsoft.Sql/servers@2022-05-01-preview' = {
   name: sqlServerName
+  location: location
   properties: {
     administratorLogin: sqlAdministratorLogin
     administratorLoginPassword: sqlAdministratorPassword
@@ -132,6 +133,7 @@ resource allowClientIpFirewall 'Microsoft.Sql/servers/firewallRules@2022-05-01-p
 resource sqlDatabase 'Microsoft.Sql/servers/databases@2022-05-01-preview' = {
   name: sqlDatabaseName
   parent: sqlServer
+  location: location
   sku: {
     name: 'Basic'
     tier: 'Basic'
@@ -145,6 +147,7 @@ resource sqlDatabase 'Microsoft.Sql/servers/databases@2022-05-01-preview' = {
 // Storage account for prompts
 resource storageAccount 'Microsoft.Storage/storageAccounts@2022-09-01' = {
   name: storageAccountName
+  location: location
   sku: {
     name: 'Standard_LRS'
   }
@@ -227,6 +230,7 @@ resource cosmosSqlDatabase 'Microsoft.DocumentDB/databaseAccounts/sqlDatabases@2
 // Azure AI Search service
 resource searchService 'Microsoft.Search/searchServices@2023-11-01' = {
   name: searchServiceName
+  location: location
   sku: {
     name: 'basic'
   }
