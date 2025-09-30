@@ -6,6 +6,14 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This is the **ingenious** package - a core AI agent framework library (v0.2.7).
 
+## Communication Style
+
+**CRITICAL**: When working with this codebase:
+- **NEVER use emojis** in any communication, code, comments, or documentation
+- **Always maintain a concise, professional tone** in all interactions
+- Provide direct, clear technical communication without unnecessary elaboration
+- Focus on facts and technical accuracy over conversational language
+
 ## Package Management
 
 Uses **uv** for Python package and environment management. Python 3.13+ is required.
