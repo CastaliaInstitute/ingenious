@@ -149,7 +149,7 @@ INGENIOUS_LOCAL_SQL_DB__DATABASE_PATH=./.tmp/sample_sql.db
 - **KB_POLICY**: Essential for knowledge-base-agent functionality. Use `KB_POLICY=local_only` for development
 - **Port Conflicts**: Always use port 8000 to avoid conflicts with system port 80
 
-Legacy YAML migration: `uv run python scripts/migrate_config.py --yaml-file config.yml --output .env`
+Configuration now relies on environment variables (`INGENIOUS_*`). Ensure `.env` is populated instead of using legacy YAML files.
 
 ## Development Workflow
 

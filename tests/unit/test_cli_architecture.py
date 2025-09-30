@@ -93,35 +93,26 @@ class TestBaseCommand:
         self.command.stop_progress()
         assert self.command._progress is None
 
-    @patch.dict(
-        os.environ,
-        {
-            "INGENIOUS_PROJECT_PATH": "/test/config.yml",
-            "INGENIOUS_PROFILE_PATH": "/test/profiles.yml",
-        },
-    )
-    @patch("pathlib.Path.exists")
-    def test_validate_config_paths_success(self, mock_exists):
-        """Test successful config path validation."""
-        mock_exists.return_value = True
+    def test_load_env_file_with_path(self, tmp_path, monkeypatch):
+        """Test loading environment variables from a provided .env file."""
+        env_file = tmp_path / ".env.custom"
+        env_file.write_text("TEST_ENV_VALUE=123\n")
 
-        paths = self.command.validate_config_paths()
+        monkeypatch.delenv("TEST_ENV_VALUE", raising=False)
 
-        assert paths["config"] == "/test/config.yml"
-        assert paths["profile"] == "/test/profiles.yml"
+        resolved = self.command.load_env_file(str(env_file))
 
-    @patch.dict(os.environ, {}, clear=True)
-    @patch("pathlib.Path.exists")
-    def test_validate_config_paths_fallback(self, mock_exists):
-        """Test config path validation with fallback."""
-        mock_exists.return_value = True
+        assert resolved == str(env_file.resolve())
+        assert os.getenv("TEST_ENV_VALUE") == "123"
 
-        with patch("pathlib.Path.cwd") as mock_cwd:
-            mock_cwd.return_value = Path("/current")
-            paths = self.command.validate_config_paths()
+    def test_load_env_file_missing_path(self, tmp_path):
+        """Test that missing environment files raise a CommandError."""
+        missing = tmp_path / "does-not-exist.env"
 
-            assert paths["config"] == "/current/config.yml"
-            assert paths["profile"] == "/current/profiles.yml"
+        with pytest.raises(CommandError) as exc:
+            self.command.load_env_file(str(missing))
+
+        assert "Environment file not found" in str(exc.value)
 
 
 class TestCommandRegistry:
@@ -285,8 +276,9 @@ class TestStatusCommand:
     @patch.dict(
         os.environ,
         {
-            "INGENIOUS_PROJECT_PATH": "/test/config.yml",
-            "INGENIOUS_PROFILE_PATH": "/test/profiles.yml",
+            "INGENIOUS_MODELS__0__API_KEY": "test-key",
+            "INGENIOUS_MODELS__0__BASE_URL": "https://example.com",
+            "INGENIOUS_MODELS__0__MODEL": "gpt-4o-mini",
         },
     )
     @patch("pathlib.Path.exists")

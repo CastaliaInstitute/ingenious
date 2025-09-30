@@ -67,13 +67,17 @@ async def workflow_status(
             missing_config.append("models: No models configured")
             configured = False
         else:
-            # Check if model has required fields (these would be in profiles.yml)
+            # Check if model has required fields from environment configuration
             model = config.models[0]
             if not hasattr(model, "api_key") or not model.api_key:
-                missing_config.append("models.api_key: Missing in profiles.yml")
+                missing_config.append(
+                    "models.api_key: Missing environment configuration"
+                )
                 configured = False
             if not hasattr(model, "base_url") or not model.base_url:
-                missing_config.append("models.base_url: Missing in profiles.yml")
+                missing_config.append(
+                    "models.base_url: Missing environment configuration"
+                )
                 configured = False
 
         if not config.chat_service or config.chat_service.type != "multi_agent":
@@ -95,7 +99,7 @@ async def workflow_status(
                     configured = False
                 if not hasattr(search_service, "key") or not search_service.key:
                     missing_config.append(
-                        "azure_search_services.key: Missing in profiles.yml"
+                        "azure_search_services.key: Missing environment configuration"
                     )
                     configured = False
 
