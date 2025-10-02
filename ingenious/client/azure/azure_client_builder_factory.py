@@ -115,6 +115,14 @@ class AzureClientFactory:
     def create_openai_client(
         model_config: Union[ModelConfig, ModelSettings],
     ) -> Any:
+        """Create Azure OpenAI client from model configuration.
+
+        Args:
+            model_config: Model configuration with endpoint and authentication details.
+
+        Returns:
+            Configured Azure OpenAI client instance.
+        """
         builder_cls = _ensure_builder(
             "AzureOpenAIClientBuilder",
             f"{_PKG_BASE}.builder.openai_client",
@@ -136,6 +144,22 @@ class AzureClientFactory:
         client_secret: Optional[str] = None,
         tenant_id: Optional[str] = None,
     ) -> Any:
+        """Create Azure OpenAI client from individual parameters.
+
+        Args:
+            model: Model name identifier.
+            base_url: Azure OpenAI endpoint URL.
+            api_version: Azure OpenAI API version.
+            deployment: Deployment name, defaults to model name if not provided.
+            api_key: API key for authentication.
+            authentication_method: Authentication method to use.
+            client_id: Azure service principal client ID.
+            client_secret: Azure service principal client secret.
+            tenant_id: Azure tenant ID.
+
+        Returns:
+            Configured Azure OpenAI client instance.
+        """
         builder_cls = _ensure_builder(
             "AzureOpenAIClientBuilder",
             f"{_PKG_BASE}.builder.openai_client",
@@ -164,6 +188,14 @@ class AzureClientFactory:
     def create_openai_chat_completion_client(
         model_config: Union[ModelConfig, ModelSettings],
     ) -> Any:
+        """Create Azure OpenAI chat completion client from model configuration.
+
+        Args:
+            model_config: Model configuration with endpoint and authentication details.
+
+        Returns:
+            Configured Azure OpenAI chat completion client instance.
+        """
         builder_cls = _ensure_builder(
             "AzureOpenAIChatCompletionClientBuilder",
             f"{_PKG_BASE}.builder.openai_chat_completions_client",
@@ -185,6 +217,22 @@ class AzureClientFactory:
         client_secret: Optional[str] = None,
         tenant_id: Optional[str] = None,
     ) -> Any:
+        """Create Azure OpenAI chat completion client from individual parameters.
+
+        Args:
+            model: Model name identifier.
+            base_url: Azure OpenAI endpoint URL.
+            api_version: Azure OpenAI API version.
+            deployment: Deployment name, defaults to model name if not provided.
+            api_key: API key for authentication.
+            authentication_method: Authentication method to use.
+            client_id: Azure service principal client ID.
+            client_secret: Azure service principal client secret.
+            tenant_id: Azure tenant ID.
+
+        Returns:
+            Configured Azure OpenAI chat completion client instance.
+        """
         builder_cls = _ensure_builder(
             "AzureOpenAIChatCompletionClientBuilder",
             f"{_PKG_BASE}.builder.openai_chat_completions_client",
@@ -212,6 +260,14 @@ class AzureClientFactory:
     def create_blob_service_client(
         file_storage_config: Union[FileStorageContainer, FileStorageContainerSettings],
     ) -> Any:
+        """Create Azure Blob Storage service client from file storage configuration.
+
+        Args:
+            file_storage_config: File storage configuration with account URL and authentication details.
+
+        Returns:
+            Configured Azure BlobServiceClient instance.
+        """
         builder_cls = _ensure_builder(
             "BlobServiceClientBuilder",
             f"{_PKG_BASE}.builder.blob_client",
@@ -228,6 +284,17 @@ class AzureClientFactory:
         token: Optional[str] = None,
         client_id: Optional[str] = None,
     ) -> Any:
+        """Create Azure Blob Storage service client from individual parameters.
+
+        Args:
+            account_url: Azure Storage account URL.
+            authentication_method: Authentication method to use.
+            token: Authentication token.
+            client_id: Azure service principal client ID.
+
+        Returns:
+            Configured Azure BlobServiceClient instance.
+        """
         builder_cls = _ensure_builder(
             "BlobServiceClientBuilder",
             f"{_PKG_BASE}.builder.blob_client",
@@ -254,6 +321,16 @@ class AzureClientFactory:
         blob_name: str,
         container_name: Optional[str] = None,
     ) -> Any:
+        """Create Azure Blob client for specific blob from file storage configuration.
+
+        Args:
+            file_storage_config: File storage configuration with account URL and authentication details.
+            blob_name: Name of the blob to access.
+            container_name: Container name override, defaults to value in configuration.
+
+        Returns:
+            Configured Azure BlobClient instance.
+        """
         builder_cls = _ensure_builder(
             "BlobClientBuilder",
             f"{_PKG_BASE}.builder.blob_client",
@@ -272,6 +349,19 @@ class AzureClientFactory:
         token: Optional[str] = None,
         client_id: Optional[str] = None,
     ) -> Any:
+        """Create Azure Blob client for specific blob from individual parameters.
+
+        Args:
+            account_url: Azure Storage account URL.
+            blob_name: Name of the blob to access.
+            container_name: Container name containing the blob.
+            authentication_method: Authentication method to use.
+            token: Authentication token.
+            client_id: Azure service principal client ID.
+
+        Returns:
+            Configured Azure BlobClient instance.
+        """
         builder_cls = _ensure_builder(
             "BlobClientBuilder",
             f"{_PKG_BASE}.builder.blob_client",
@@ -330,6 +420,15 @@ class AzureClientFactory:
     def create_search_client(
         search_config: Union[AzureSearchConfig, AzureSearchSettings], index_name: str
     ) -> Any:
+        """Create Azure AI Search client from search configuration.
+
+        Args:
+            search_config: Azure Search configuration with endpoint and authentication details.
+            index_name: Name of the search index to access.
+
+        Returns:
+            Configured Azure SearchClient instance.
+        """
         if not HAS_SEARCH:
             raise ImportError("azure-search-documents is required")
         builder_cls = _ensure_builder(
@@ -352,6 +451,21 @@ class AzureClientFactory:
         client_secret: Optional[str] = None,
         tenant_id: Optional[str] = None,
     ) -> Any:
+        """Create Azure AI Search client from individual parameters.
+
+        Args:
+            endpoint: Azure Search service endpoint URL.
+            index_name: Name of the search index to access.
+            api_key: API key for authentication.
+            service: Azure Search service name.
+            authentication_method: Authentication method to use.
+            client_id: Azure service principal client ID.
+            client_secret: Azure service principal client secret.
+            tenant_id: Azure tenant ID.
+
+        Returns:
+            Configured Azure SearchClient instance.
+        """
         if not HAS_SEARCH:
             raise ImportError("azure-search-documents is required")
         builder_cls = _ensure_builder(
@@ -378,6 +492,14 @@ class AzureClientFactory:
     def create_sql_client(
         sql_config: Union[AzureSqlConfig, AzureSqlSettings],
     ) -> Any:
+        """Create Azure SQL client from SQL configuration.
+
+        Args:
+            sql_config: Azure SQL configuration with connection string and database details.
+
+        Returns:
+            Configured pyodbc connection instance.
+        """
         builder_cls = _ensure_builder(
             "AzureSqlClientBuilder",
             f"{_PKG_BASE}.builder.sql_client",
@@ -393,6 +515,16 @@ class AzureClientFactory:
         connection_string: str,
         table_name: Optional[str] = None,
     ) -> Any:
+        """Create Azure SQL client from individual parameters.
+
+        Args:
+            database_name: Name of the Azure SQL database.
+            connection_string: Database connection string.
+            table_name: Optional default table name.
+
+        Returns:
+            Configured pyodbc connection instance.
+        """
         builder_cls = _ensure_builder(
             "AzureSqlClientBuilder",
             f"{_PKG_BASE}.builder.sql_client",
@@ -418,6 +550,21 @@ class AzureClientFactory:
         client_secret: Optional[str] = None,
         tenant_id: Optional[str] = None,
     ) -> Any:
+        """Create Azure SQL client with authentication from individual parameters.
+
+        Args:
+            server: Azure SQL server hostname.
+            database: Name of the Azure SQL database.
+            authentication_method: Authentication method to use.
+            username: SQL authentication username.
+            password: SQL authentication password.
+            client_id: Azure service principal client ID.
+            client_secret: Azure service principal client secret.
+            tenant_id: Azure tenant ID.
+
+        Returns:
+            Configured pyodbc connection instance with authentication.
+        """
         builder_cls = _ensure_builder(
             "AzureSqlClientBuilderWithAuth",
             f"{_PKG_BASE}.builder.sql_client",
@@ -447,6 +594,21 @@ class AzureClientFactory:
         client_secret: Optional[str] = None,
         tenant_id: Optional[str] = None,
     ) -> Any:
+        """Create Azure SQL client with authentication from parameters (alias method).
+
+        Args:
+            server: Azure SQL server hostname.
+            database: Name of the Azure SQL database.
+            authentication_method: Authentication method to use.
+            username: SQL authentication username.
+            password: SQL authentication password.
+            client_id: Azure service principal client ID.
+            client_secret: Azure service principal client secret.
+            tenant_id: Azure tenant ID.
+
+        Returns:
+            Configured pyodbc connection instance with authentication.
+        """
         return AzureClientFactory.create_sql_client_with_auth(
             server=server,
             database=database,
@@ -466,6 +628,16 @@ class AzureClientFactory:
         config: Optional[Mapping[str, Any] | AzureSearchConfig | AzureSearchSettings] = None,
         **client_options: Any,
     ) -> Any:
+        """Create asynchronous Azure AI Search client from configuration.
+
+        Args:
+            index_name: Name of the search index to access.
+            config: Azure Search configuration mapping or settings object.
+            **client_options: Additional client options to pass to the builder.
+
+        Returns:
+            Configured Azure SearchClient instance for async operations.
+        """
         builder_cls = _ensure_builder(
             "AzureSearchAsyncClientBuilder",
             f"{_PKG_BASE}.builder.search_client_async",
@@ -483,6 +655,16 @@ class AzureClientFactory:
         api_version: Optional[str] = None,
         **client_options: Any,
     ) -> Any:
+        """Create asynchronous Azure OpenAI client from configuration.
+
+        Args:
+            config: Model configuration mapping or settings object.
+            api_version: Azure OpenAI API version override.
+            **client_options: Additional client options to pass to the builder.
+
+        Returns:
+            Configured Azure AsyncOpenAI client instance.
+        """
         builder_cls = _ensure_builder(
             "AsyncAzureOpenAIClientBuilder",
             f"{_PKG_BASE}.builder.openai_client_async",

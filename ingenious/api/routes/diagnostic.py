@@ -166,6 +166,7 @@ async def list_workflows(
     auth_user: Annotated[str, Depends(auth_dependencies.get_auth_user)],
 ) -> Dict[str, Any]:
     """List all available workflows and their configuration status.
+
     Supports both hyphenated (bike-insights) and underscored (bike_insights) naming formats.
     Dynamically discovers workflows from all namespaces.
     """

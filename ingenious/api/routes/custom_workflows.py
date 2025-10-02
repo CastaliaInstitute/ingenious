@@ -27,6 +27,7 @@ logger = get_logger(__name__)
 @router.get("/custom-workflows/agents/{custom_workflow_name}/", response_model=Dict[str, Any])
 async def get_custom_workflow_agents(custom_workflow_name: str) -> Dict[str, Any]:
     """Retrieves agent information by parsing the agent.py file of the specified custom workflow.
+
     This approach uses Abstract Syntax Tree (AST) parsing for robust and safe static analysis.
     """
     try:
@@ -133,6 +134,7 @@ async def get_custom_workflow_agents(custom_workflow_name: str) -> Dict[str, Any
 @router.get("/custom-workflows/schema/{custom_workflow_name}/", response_model=Dict[str, Any])
 async def get_custom_workflow_schema(custom_workflow_name: str, request: Request) -> Dict[str, Any]:
     """Retrieves Pydantic model schemas optimized for Alpine.js dynamic UI generation.
+
     Returns a structured schema with UI metadata and field ordering.
     """
     try:
