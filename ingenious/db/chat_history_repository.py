@@ -1,3 +1,9 @@
+"""Chat history repository interface and adapters.
+
+Defines the abstract interface for chat history storage and provides adapters
+for various backends (SQLite, Azure SQL, Cosmos DB). Includes data models for
+users, threads, messages, steps, and elements.
+"""
 import importlib
 from abc import ABC, abstractmethod
 from dataclasses import dataclass
@@ -22,6 +28,13 @@ logger = get_logger(__name__)
 
 
 class IChatHistoryRepository(ABC):
+    """Abstract interface for chat history storage operations.
+
+    Defines the contract for storing and retrieving chat history including
+    users, threads, messages, steps, elements, and feedback across various
+    database backends (SQLite, Azure SQL, Cosmos DB).
+    """
+
     TrueStepType = Literal["run", "tool", "llm", "embedding", "retrieval", "rerank", "undefined"]
 
     MessageStepType = Literal["user_message", "assistant_message", "system_message"]
@@ -301,6 +314,12 @@ class IChatHistoryRepository(ABC):
 
 
 class ChatHistoryRepository:
+    """Factory-based chat history repository with dynamic backend selection.
+
+    Instantiates the appropriate repository implementation based on database
+    type configuration (SQLite, Azure SQL, or Cosmos DB).
+    """
+
     def __init__(self, db_type: DatabaseClientType, config: IngeniousSettings) -> None:
         """Initialize the chat history repository with dynamic database backend.
 

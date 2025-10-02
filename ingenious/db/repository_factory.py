@@ -1,3 +1,8 @@
+"""Factory for creating chat history repository instances.
+
+Provides factory methods for instantiating the appropriate repository implementation
+based on configuration settings (SQLite, Azure SQL, Cosmos DB).
+"""
 from typing import Any, Dict, List, Optional
 
 from ingenious.config import IngeniousSettings

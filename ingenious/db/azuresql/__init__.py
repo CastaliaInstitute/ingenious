@@ -1,3 +1,9 @@
+"""Azure SQL database adapter for Ingenious chat history.
+
+Provides repository implementation for storing chat history, threads,
+messages, and metadata in Azure SQL Database using pyodbc.
+"""
+
 import json
 from typing import Any, Dict, List, Optional
 
@@ -23,6 +29,12 @@ logger = get_logger(__name__)
 
 
 class azuresql_ChatHistoryRepository(BaseSQLRepository):
+    """Azure SQL implementation of chat history repository.
+
+    Stores chat history, threads, messages, and metadata in Azure SQL Database
+    using pyodbc with MERGE operations for upsert functionality.
+    """
+
     def __init__(self, config: IngeniousSettings) -> None:
         # Try to get connection string from azure_sql_services first, then fallback to chat_history
         self.connection_string = None

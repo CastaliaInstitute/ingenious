@@ -1,3 +1,8 @@
+"""Azure Cosmos DB database adapter for Ingenious chat history.
+
+Provides repository implementation for storing chat history, threads, messages,
+steps, elements, and feedback in Azure Cosmos DB using the Azure SDK.
+"""
 import uuid
 from typing import Any, Dict, List, Optional, cast
 

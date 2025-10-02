@@ -1,3 +1,9 @@
+"""Agent models and multi-agent orchestration for Ingenious.
+
+Provides AutoGen-based agent implementations, message models, LLM usage tracking,
+and multi-agent conversation management. Includes base classes for project-specific
+agent configurations and conversation flows.
+"""
 import asyncio
 import json
 import logging
@@ -265,10 +271,17 @@ class Agents(BaseModel):
 
 
 class AgentMessage(BaseModel):
+    """Simple message model for agent communication."""
+
     content: str
 
 
 class LLMUsageTracker(logging.Handler):
+    """Logging handler for tracking LLM token usage and conversation history.
+
+    Captures LLM responses, tracks token consumption, and persists conversation
+    history to repository or file storage.
+    """
     def __init__(
         self,
         agents: Agents,
@@ -492,6 +505,11 @@ class LLMUsageTracker(logging.Handler):
 
 
 class IProjectAgents(ABC):
+    """Abstract interface for project-specific agent configurations.
+
+    Allows projects to define custom agent sets for domain-specific workflows.
+    """
+
     def __init__(self) -> None:
         pass
 

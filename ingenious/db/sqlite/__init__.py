@@ -1,3 +1,8 @@
+"""SQLite database adapter for Ingenious chat history.
+
+Provides lightweight local repository implementation for storing chat history,
+threads, messages, and metadata using SQLite database.
+"""
 import json
 import os
 import sqlite3
@@ -24,6 +29,12 @@ logger = get_logger(__name__)
 
 
 class sqlite_ChatHistoryRepository(BaseSQLRepository):
+    """SQLite implementation of chat history repository.
+
+    Provides lightweight local storage for chat history, threads, and messages
+    using SQLite database with INSERT OR REPLACE operations.
+    """
+
     def __init__(self, config: IngeniousSettings) -> None:
         self.db_path = config.chat_history.database_path
         # Check if the directory exists, if not, create it

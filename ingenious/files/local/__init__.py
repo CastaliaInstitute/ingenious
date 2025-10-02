@@ -1,3 +1,8 @@
+"""Local filesystem file operations for Ingenious.
+
+Provides file upload, download, and management operations using the local filesystem,
+including support for prompt templates and document storage.
+"""
 from pathlib import Path
 from typing import List
 
@@ -8,6 +13,12 @@ from ingenious.models.config import Config, FileStorageContainer
 
 
 class local_FileStorageRepository(IFileStorage):
+    """Local filesystem implementation of file storage repository.
+
+    Provides file upload, download, and management operations using the local
+    filesystem with async file I/O.
+    """
+
     def __init__(self, config: Config, fs_config: FileStorageContainer):
         self.config = config
         self.fs_config = fs_config

@@ -1,1 +1,1 @@
-# Bike insights workflow module
+"""Bike insights example conversation flow."""

@@ -1,3 +1,8 @@
+"""File storage repository interface and factory.
+
+Defines the abstract interface for file storage operations and provides factory
+methods for creating storage backends (Azure Blob Storage, Local Filesystem).
+"""
 import importlib
 from abc import ABC, abstractmethod
 from pathlib import Path

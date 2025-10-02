@@ -1,3 +1,8 @@
+"""Azure Blob Storage file operations for Ingenious.
+
+Provides file upload, download, and management operations using Azure Blob Storage,
+including support for prompt templates and document storage.
+"""
 from pathlib import Path
 from typing import List
 
@@ -19,6 +24,12 @@ logger = get_logger(__name__)
 
 
 class azure_FileStorageRepository(IFileStorage):
+    """Azure Blob Storage implementation of file storage repository.
+
+    Provides file upload, download, and management operations using Azure Blob Storage
+    with support for various authentication methods.
+    """
+
     def __init__(self, config: Config, fs_config: FileStorageContainer):
         self.config = config
         self.fs_config = fs_config
