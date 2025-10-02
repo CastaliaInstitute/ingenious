@@ -4,6 +4,7 @@ Defines the abstract interface for chat history storage and provides adapters
 for various backends (SQLite, Azure SQL, Cosmos DB). Includes data models for
 users, threads, messages, steps, and elements.
 """
+
 import importlib
 from abc import ABC, abstractmethod
 from dataclasses import dataclass

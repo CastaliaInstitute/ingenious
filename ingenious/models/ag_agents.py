@@ -188,6 +188,12 @@ class RelayAgent(RoutedAgent):
 
     @message_handler
     async def handle_user_message(self, message: AgentMessage, ctx: MessageContext) -> None:
+        """Handle user message and relay to next agent after collecting threshold messages.
+
+        Args:
+            message: Incoming agent message to process.
+            ctx: Message context containing sender and routing information.
+        """
         self._response_count += 1
         content = "## " + ctx.sender.type + "\n" + message.content
         self._agent_messages.append(content)

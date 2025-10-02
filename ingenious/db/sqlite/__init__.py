@@ -3,6 +3,7 @@
 Provides lightweight local repository implementation for storing chat history,
 threads, messages, and metadata using SQLite database.
 """
+
 import json
 import os
 import sqlite3
@@ -336,6 +337,14 @@ class sqlite_ChatHistoryRepository(BaseSQLRepository):
     async def add_step(
         self, step_dict: IChatHistoryRepository.StepDict
     ) -> IChatHistoryRepository.Step:
+        """Add a step to the SQLite database.
+
+        Args:
+            step_dict: Step dictionary containing step data and metadata.
+
+        Returns:
+            Step object with generated ID and metadata.
+        """
         logger.info(
             "Creating step in SQLite database",
             step_id=step_dict.get("id"),
@@ -401,6 +410,18 @@ class sqlite_ChatHistoryRepository(BaseSQLRepository):
         metadata: Optional[Dict[str, object]] = None,
         tags: Optional[List[str]] = None,
     ) -> str:
+        """Update or insert a thread using INSERT OR REPLACE.
+
+        Args:
+            thread_id: Unique identifier for the thread.
+            name: Optional name for the thread.
+            user_id: Optional user identifier owning the thread.
+            metadata: Optional metadata dictionary for the thread.
+            tags: Optional list of tags for the thread.
+
+        Returns:
+            Empty string on success.
+        """
         logger.info(
             "Updating thread in SQLite",
             thread_id=thread_id,
@@ -452,6 +473,11 @@ class sqlite_ChatHistoryRepository(BaseSQLRepository):
         return ""
 
     async def update_memory(self) -> None:
+        """Update chat history summary to keep only the latest record per thread.
+
+        Creates a temporary table with the latest record per thread, clears the
+        summary table, and re-inserts only the latest records.
+        """
         with self.pool.get_connection() as connection:
             cursor = connection.cursor()
 

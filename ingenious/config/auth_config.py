@@ -3,6 +3,7 @@
 Provides authentication helpers for validating credentials, managing auth methods,
 and integrating with various authentication providers (Azure, Basic Auth, JWT).
 """
+
 from __future__ import annotations
 
 import asyncio

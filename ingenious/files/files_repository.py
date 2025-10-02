@@ -3,6 +3,7 @@
 Defines the abstract interface for file storage operations and provides factory
 methods for creating storage backends (Azure Blob Storage, Local Filesystem).
 """
+
 import importlib
 from abc import ABC, abstractmethod
 from pathlib import Path
@@ -258,6 +259,14 @@ class FileStorage:
         return template_path
 
     async def get_data_path(self, revision_id: str | None = None) -> str:
+        """Get the path for functional test data storage.
+
+        Args:
+            revision_id: Optional revision identifier for subfolder organization.
+
+        Returns:
+            Path to functional test data directory or empty string if no subfolders.
+        """
         if self.add_sub_folders:
             if revision_id:
                 template_path = str(Path("functional_test_outputs") / Path(revision_id))
@@ -268,6 +277,14 @@ class FileStorage:
         return template_path
 
     async def get_output_path(self, revision_id: str | None = None) -> str:
+        """Get the path for functional test output storage.
+
+        Args:
+            revision_id: Optional revision identifier for subfolder organization.
+
+        Returns:
+            Path to functional test outputs directory.
+        """
         if revision_id:
             template_path = str(Path("functional_test_outputs") / Path(revision_id))
         else:
@@ -275,6 +292,14 @@ class FileStorage:
         return template_path
 
     async def get_events_path(self, revision_id: str | None = None) -> str:
+        """Get the path for functional test events storage.
+
+        Args:
+            revision_id: Optional revision identifier for subfolder organization.
+
+        Returns:
+            Path to functional test events directory.
+        """
         if revision_id:
             template_path = str(Path("functional_test_outputs") / Path(revision_id))
         else:

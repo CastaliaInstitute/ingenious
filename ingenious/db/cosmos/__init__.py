@@ -3,6 +3,7 @@
 Provides repository implementation for storing chat history, threads, messages,
 steps, elements, and feedback in Azure Cosmos DB using the Azure SDK.
 """
+
 import uuid
 from typing import Any, Dict, List, Optional, cast
 
@@ -139,6 +140,21 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
         metadata: Optional[Dict[str, object]] = None,
         tags: Optional[List[str]] = None,
     ) -> str:
+        """Update or create a thread with metadata and tags.
+
+        Args:
+            thread_id: Unique identifier for the thread.
+            name: Optional name for the thread.
+            user_id: Optional user identifier owning the thread.
+            metadata: Optional metadata dictionary for the thread.
+            tags: Optional list of tags for the thread.
+
+        Returns:
+            Empty string on success.
+
+        Raises:
+            DatabaseQueryError: If thread upsert fails in Cosmos DB.
+        """
         try:
             # Resolve user identifier if possible
             user_identifier = None
@@ -177,6 +193,17 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
             raise DatabaseQueryError("Failed to upsert thread in Cosmos", cause=e)
 
     async def add_message(self, message: Message) -> str:
+        """Add a message to the chat history container.
+
+        Args:
+            message: Message object to add to the chat history.
+
+        Returns:
+            Message ID of the created message.
+
+        Raises:
+            DatabaseQueryError: If message creation fails in Cosmos DB.
+        """
         try:
             if not message.message_id:
                 message.message_id = str(uuid.uuid4())
@@ -187,6 +214,17 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
             raise DatabaseQueryError("Failed to add message to Cosmos", cause=e)
 
     async def add_user(self, identifier: str) -> IChatHistoryRepository.User:
+        """Add a new user to the users container.
+
+        Args:
+            identifier: Unique identifier for the user.
+
+        Returns:
+            User object with generated ID and creation timestamp.
+
+        Raises:
+            DatabaseQueryError: If user creation fails in Cosmos DB.
+        """
         try:
             user_doc = {
                 "id": str(uuid.uuid4()),
@@ -207,6 +245,17 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
             raise DatabaseQueryError("Failed to add user in Cosmos", cause=e)
 
     async def get_user(self, identifier: str) -> IChatHistoryRepository.User | None:
+        """Retrieve a user by identifier or create if not exists.
+
+        Args:
+            identifier: Unique identifier for the user.
+
+        Returns:
+            User object if found or newly created.
+
+        Raises:
+            DatabaseQueryError: If user query fails in Cosmos DB.
+        """
         try:
             results = list(
                 self.users.query_items(
@@ -231,6 +280,18 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
             raise DatabaseQueryError("Failed to get user from Cosmos", cause=e)
 
     async def get_message(self, message_id: str, thread_id: str) -> Message | None:
+        """Retrieve a message by message ID and thread ID.
+
+        Args:
+            message_id: Unique identifier for the message.
+            thread_id: Thread identifier containing the message.
+
+        Returns:
+            Message object if found, None otherwise.
+
+        Raises:
+            DatabaseQueryError: If message query fails in Cosmos DB.
+        """
         try:
             results = list(
                 self.chat_history.query_items(
@@ -249,6 +310,17 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
             raise DatabaseQueryError("Failed to get message from Cosmos", cause=e)
 
     async def get_thread_messages(self, thread_id: str) -> List[Message]:
+        """Retrieve the last 5 messages for a thread in chronological order.
+
+        Args:
+            thread_id: Thread identifier to retrieve messages from.
+
+        Returns:
+            List of Message objects ordered by timestamp ascending.
+
+        Raises:
+            DatabaseQueryError: If message query fails in Cosmos DB.
+        """
         try:
             # Get last 5 by timestamp desc then reverse to asc
             docs = list(
@@ -433,6 +505,18 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
     async def get_threads_for_user(
         self, identifier: str, thread_id: Optional[str]
     ) -> Optional[List[IChatHistoryRepository.ThreadDict]]:
+        """Retrieve threads for a user with associated steps and elements.
+
+        Args:
+            identifier: User identifier to retrieve threads for.
+            thread_id: Optional specific thread ID to retrieve.
+
+        Returns:
+            List of ThreadDict objects with steps, elements, and feedback.
+
+        Raises:
+            DatabaseQueryError: If thread query fails in Cosmos DB.
+        """
         try:
             threads = self._query_threads(identifier, thread_id)
 
@@ -529,6 +613,16 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
     async def update_message_feedback(
         self, message_id: str, thread_id: str, positive_feedback: bool | None
     ) -> None:
+        """Update the feedback status for a chat history message.
+
+        Args:
+            message_id: Unique identifier for the message.
+            thread_id: Thread identifier containing the message.
+            positive_feedback: Feedback value (True, False, or None).
+
+        Raises:
+            DatabaseQueryError: If message feedback update fails in Cosmos DB.
+        """
         try:
             # Fetch doc, patch and replace
             items = list(
@@ -553,6 +647,16 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
     async def update_message_content_filter_results(
         self, message_id: str, thread_id: str, content_filter_results: dict[str, object]
     ) -> None:
+        """Update the content filter results for a chat history message.
+
+        Args:
+            message_id: Unique identifier for the message.
+            thread_id: Thread identifier containing the message.
+            content_filter_results: Content filter results dictionary.
+
+        Raises:
+            DatabaseQueryError: If content filter update fails in Cosmos DB.
+        """
         try:
             items = list(
                 self.chat_history.query_items(
@@ -576,6 +680,16 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
     async def update_memory_feedback(
         self, message_id: str, thread_id: str, positive_feedback: bool | None
     ) -> None:
+        """Update the feedback status for a memory summary message.
+
+        Args:
+            message_id: Unique identifier for the memory message.
+            thread_id: Thread identifier containing the memory.
+            positive_feedback: Feedback value (True, False, or None).
+
+        Raises:
+            DatabaseQueryError: If memory feedback update fails in Cosmos DB.
+        """
         try:
             items = list(
                 self.chat_history_summary.query_items(
@@ -599,6 +713,16 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
     async def update_memory_content_filter_results(
         self, message_id: str, thread_id: str, content_filter_results: dict[str, object]
     ) -> None:
+        """Update the content filter results for a memory summary message.
+
+        Args:
+            message_id: Unique identifier for the memory message.
+            thread_id: Thread identifier containing the memory.
+            content_filter_results: Content filter results dictionary.
+
+        Raises:
+            DatabaseQueryError: If memory content filter update fails in Cosmos DB.
+        """
         try:
             items = list(
                 self.chat_history_summary.query_items(
@@ -620,6 +744,17 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
             raise DatabaseQueryError("Failed to update memory CFR in Cosmos", cause=e)
 
     async def add_memory(self, message: Message) -> str:
+        """Add a memory summary message to the chat history summary container.
+
+        Args:
+            message: Message object to add as memory summary.
+
+        Returns:
+            Message ID of the created memory message.
+
+        Raises:
+            DatabaseQueryError: If memory creation fails in Cosmos DB.
+        """
         try:
             if not message.message_id:
                 message.message_id = str(uuid.uuid4())
@@ -630,6 +765,18 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
             raise DatabaseQueryError("Failed to add memory to Cosmos", cause=e)
 
     async def get_memory(self, message_id: str, thread_id: str) -> Message | None:
+        """Retrieve the most recent memory summary for a thread.
+
+        Args:
+            message_id: Message identifier (not used in query).
+            thread_id: Thread identifier to retrieve memory from.
+
+        Returns:
+            Most recent Message object if found, None otherwise.
+
+        Raises:
+            DatabaseQueryError: If memory query fails in Cosmos DB.
+        """
         try:
             docs = list(
                 self.chat_history_summary.query_items(
@@ -647,10 +794,25 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
             raise DatabaseQueryError("Failed to get memory from Cosmos", cause=e)
 
     async def update_memory(self) -> None:
+        """Update memory summary (no-op for Cosmos DB implementation).
+
+        Memory is stored directly in Cosmos DB, no aggregation needed.
+        """
         # For Cosmos, memory is already stored; no-op or could implement aggregation
         return None
 
     async def get_thread_memory(self, thread_id: str) -> List[Message]:
+        """Retrieve the most recent memory summary message for a thread.
+
+        Args:
+            thread_id: Thread identifier to retrieve memory from.
+
+        Returns:
+            List containing the most recent memory Message object.
+
+        Raises:
+            DatabaseQueryError: If memory query fails in Cosmos DB.
+        """
         try:
             docs = list(
                 self.chat_history_summary.query_items(
@@ -666,6 +828,16 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
             raise DatabaseQueryError("Failed to get thread memory from Cosmos", cause=e)
 
     async def delete_thread(self, thread_id: str) -> None:
+        """Delete a thread and all associated data.
+
+        Removes messages, memory, steps, elements, feedbacks, and thread metadata.
+
+        Args:
+            thread_id: Thread identifier to delete.
+
+        Raises:
+            DatabaseQueryError: If thread deletion fails in Cosmos DB.
+        """
         try:
             # Delete messages
             docs = list(
@@ -724,6 +896,14 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
             raise DatabaseQueryError("Failed to delete thread in Cosmos", cause=e)
 
     async def delete_thread_memory(self, thread_id: str) -> None:
+        """Delete all memory summary messages for a thread.
+
+        Args:
+            thread_id: Thread identifier to delete memory from.
+
+        Raises:
+            DatabaseQueryError: If memory deletion fails in Cosmos DB.
+        """
         try:
             docs = list(
                 self.chat_history_summary.query_items(
@@ -739,6 +919,14 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
             raise DatabaseQueryError("Failed to delete thread memory in Cosmos", cause=e)
 
     async def delete_user_memory(self, user_id: str) -> None:
+        """Delete all memory summary messages for a user across all threads.
+
+        Args:
+            user_id: User identifier to delete memory for.
+
+        Raises:
+            DatabaseQueryError: If user memory deletion fails in Cosmos DB.
+        """
         try:
             docs = list(
                 self.chat_history_summary.query_items(
@@ -758,6 +946,17 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
             raise DatabaseQueryError("Failed to delete user memory in Cosmos", cause=e)
 
     async def add_step(self, step_dict: IChatHistoryRepository.StepDict) -> str:
+        """Add a step to the steps container.
+
+        Args:
+            step_dict: Step dictionary containing step data and metadata.
+
+        Returns:
+            Step ID of the created step.
+
+        Raises:
+            DatabaseQueryError: If step creation fails in Cosmos DB.
+        """
         try:
             if "id" not in step_dict or not step_dict["id"]:
                 step_dict["id"] = str(uuid.uuid4())
