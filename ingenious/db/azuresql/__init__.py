@@ -36,6 +36,14 @@ class azuresql_ChatHistoryRepository(BaseSQLRepository):
     """
 
     def __init__(self, config: IngeniousSettings) -> None:
+        """Initialize Azure SQL chat history repository with connection configuration.
+
+        Args:
+            config: Ingenious settings containing Azure SQL connection configuration.
+
+        Raises:
+            ValueError: If neither azure_sql_services nor chat_history connection string is configured.
+        """
         # Try to get connection string from azure_sql_services first, then fallback to chat_history
         self.connection_string = None
         if config.azure_sql_services and config.azure_sql_services.database_connection_string:

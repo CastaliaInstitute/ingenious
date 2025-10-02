@@ -36,6 +36,11 @@ except Exception:  # pragma: no cover - fallback for environments w/o azure-core
         """Fallback credential class for environments without azure-core library."""
 
         def __init__(self, key: str) -> None:
+            """Initialize AzureKeyCredential with API key.
+
+            Args:
+                key: Azure API key credential string.
+            """
             self.key = key
 
 

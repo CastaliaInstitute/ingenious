@@ -92,6 +92,7 @@ class AgentChats(BaseModel):
     _agent_chats: List[AgentChat] = PrivateAttr(default_factory=list)
 
     def __init__(self) -> None:
+        """Initialize AgentChats with empty agent chat list."""
         super().__init__()
 
     def add_agent_chat(self, agent_chat: AgentChat) -> None:
@@ -221,6 +222,15 @@ class Agents(BaseModel):
     _agents: List[Agent]
 
     def __init__(self, agents: List[Agent], config: Config):
+        """Initialize Agents collection with agent list and configuration.
+
+        Args:
+            agents: List of Agent instances to manage.
+            config: Configuration containing model definitions.
+
+        Raises:
+            ValueError: If any agent references a model not found in configuration.
+        """
         super().__init__()
         self._agents = agents
         for agent in self._agents:
@@ -291,7 +301,16 @@ class LLMUsageTracker(logging.Handler):
         identifier: str,
         event_type: str,
     ) -> None:
-        """Logging handler that tracks the number of tokens used in the prompt and completion."""
+        """Initialize LLMUsageTracker for tracking token usage and conversation history.
+
+        Args:
+            agents: Agents collection for retrieving agent configurations.
+            config: Ingenious settings for file storage configuration.
+            chat_history_repository: Repository for persisting conversation history.
+            revision_id: Revision identifier for template and output organization.
+            identifier: Unique identifier for the current conversation session.
+            event_type: Type of event being tracked (e.g., 'chat', 'completion').
+        """
         super().__init__()
         self._prompt_tokens = 0
         self._agents = agents
@@ -511,6 +530,7 @@ class IProjectAgents(ABC):
     """
 
     def __init__(self) -> None:
+        """Initialize IProjectAgents interface."""
         pass
 
     @abstractmethod

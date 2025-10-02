@@ -73,6 +73,13 @@ class OperationContext:
     """Context for tracking operation state and metadata."""
 
     def __init__(self, operation: str, component: str = "", correlation_id: Optional[str] = None):
+        """Initialize OperationContext for tracking operation state and metadata.
+
+        Args:
+            operation: Name of the operation being tracked.
+            component: Component name performing the operation.
+            correlation_id: Unique identifier for correlating related operations. Auto-generated if not provided.
+        """
         self.operation = operation
         self.component = component
         self.correlation_id = correlation_id or str(uuid4())
@@ -640,6 +647,11 @@ class FallbackRecoveryStrategy(RecoveryStrategy):
     """Recovery strategy that tries fallback operations."""
 
     def __init__(self, fallback_functions: list[Callable[..., Any]]):
+        """Initialize FallbackRecoveryStrategy with fallback operations.
+
+        Args:
+            fallback_functions: List of fallback functions to try in order for error recovery.
+        """
         self.fallback_functions = fallback_functions
 
     def can_recover(self, error: IngeniousError) -> bool:
@@ -678,6 +690,13 @@ class CircuitBreakerRecoveryStrategy(RecoveryStrategy):
         recovery_timeout: float = 60.0,
         expected_exception: Type[Exception] = IngeniousError,
     ):
+        """Initialize CircuitBreakerRecoveryStrategy with circuit breaker parameters.
+
+        Args:
+            failure_threshold: Number of failures before opening the circuit.
+            recovery_timeout: Timeout in seconds before attempting recovery from open state.
+            expected_exception: Exception type that triggers circuit breaker logic.
+        """
         self.failure_threshold = failure_threshold
         self.recovery_timeout = recovery_timeout
         self.expected_exception = expected_exception

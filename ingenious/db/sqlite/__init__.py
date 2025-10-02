@@ -36,6 +36,11 @@ class sqlite_ChatHistoryRepository(BaseSQLRepository):
     """
 
     def __init__(self, config: IngeniousSettings) -> None:
+        """Initialize SQLite chat history repository with database path and connection pool.
+
+        Args:
+            config: Ingenious settings containing database path and configuration.
+        """
         self.db_path = config.chat_history.database_path
         # Check if the directory exists, if not, create it
         db_dir_check = os.path.dirname(self.db_path)

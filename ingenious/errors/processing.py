@@ -254,6 +254,16 @@ class ExtractionError(ProcessingError):
         recoverable: bool = True,
         recovery_suggestion: Optional[str] = None,
     ):
+        """Initialize ExtractionError with document extraction failure context.
+
+        Args:
+            message: Error description.
+            error_code: Specific extraction error code.
+            context: Additional error context information.
+            cause: Original exception that triggered this error.
+            recoverable: Whether the extraction can be retried with different parameters.
+            recovery_suggestion: Suggestion for how to resolve the extraction failure.
+        """
         if recovery_suggestion is None:
             recovery_suggestion = self._get_default_recovery_suggestion(error_code)
 
@@ -299,6 +309,16 @@ class ValidationError(ProcessingError):
         recoverable: bool = False,  # Validation errors usually require data fixes
         recovery_suggestion: Optional[str] = None,
     ):
+        """Initialize ValidationError with validation failure context.
+
+        Args:
+            message: Error description.
+            error_code: Specific validation error code.
+            context: Additional error context information.
+            cause: Original exception that triggered this error.
+            recoverable: Whether the validation can pass with corrected data (usually False).
+            recovery_suggestion: Suggestion for how to fix the validation failure.
+        """
         if recovery_suggestion is None:
             recovery_suggestion = "Review and correct the input data format"
 
@@ -329,6 +349,16 @@ class NetworkError(ProcessingError):
         recoverable: bool = True,  # Network errors are often transient
         recovery_suggestion: Optional[str] = None,
     ):
+        """Initialize NetworkError with network operation failure context.
+
+        Args:
+            message: Error description.
+            error_code: Specific network error code.
+            context: Additional error context including URL and status code.
+            cause: Original exception that triggered this error.
+            recoverable: Whether the operation can be retried (usually True for transient failures).
+            recovery_suggestion: Suggestion for how to resolve the network issue.
+        """
         if recovery_suggestion is None:
             recovery_suggestion = self._get_default_recovery_suggestion(error_code)
 
@@ -489,6 +519,11 @@ class FallbackEngineStrategy(RecoveryStrategy):
     """Recovery strategy that tries alternative extraction engines."""
 
     def __init__(self, fallback_engines: List[str]) -> None:
+        """Initialize FallbackEngineStrategy with alternative engines.
+
+        Args:
+            fallback_engines: List of fallback engine names to try in order.
+        """
         self.fallback_engines = fallback_engines
 
     def can_recover(self, error: ProcessingError) -> bool:
@@ -533,6 +568,12 @@ class RetryWithDelayStrategy(RecoveryStrategy):
     """Recovery strategy that retries after a delay."""
 
     def __init__(self, max_retries: int = 3, base_delay: float = 1.0) -> None:
+        """Initialize RetryWithDelayStrategy with retry parameters.
+
+        Args:
+            max_retries: Maximum number of retry attempts.
+            base_delay: Base delay in seconds between retries (doubles with each retry).
+        """
         self.max_retries = max_retries
         self.base_delay = base_delay
 
@@ -583,6 +624,7 @@ class ErrorReporter:
     """Utility for collecting and reporting processing errors."""
 
     def __init__(self) -> None:
+        """Initialize ErrorReporter with empty error collection."""
         self.errors: List[ProcessingError] = []
         self.error_counts: Dict[str, int] = {}
 

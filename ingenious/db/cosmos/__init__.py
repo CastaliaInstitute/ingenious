@@ -23,6 +23,15 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
     """Cosmos DB implementation of IChatHistoryRepository for managing chat history."""
 
     def __init__(self, config: IngeniousSettings) -> None:
+        """Initialize Cosmos DB chat history repository with configuration.
+
+        Args:
+            config: Ingenious settings containing Cosmos DB service configuration.
+
+        Raises:
+            ValueError: If cosmos_service configuration is missing.
+            DatabaseQueryError: If CosmosClient creation fails.
+        """
         self.config = config
 
         if config.cosmos_service is None:

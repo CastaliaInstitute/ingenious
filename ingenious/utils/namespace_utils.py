@@ -170,6 +170,7 @@ class WorkflowDiscovery:
     """Enhanced workflow discovery with validation and caching."""
 
     def __init__(self) -> None:
+        """Initialize WorkflowDiscovery with empty workflow and metadata caches."""
         self._workflow_cache: Optional[List[str]] = None
         self._metadata_cache: Dict[str, Dict[str, Any]] = {}
 

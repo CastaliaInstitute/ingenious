@@ -20,6 +20,12 @@ class local_FileStorageRepository(IFileStorage):
     """
 
     def __init__(self, config: Config, fs_config: FileStorageContainer):
+        """Initialize local filesystem file repository with storage path.
+
+        Args:
+            config: Ingenious configuration.
+            fs_config: File storage container configuration with local path.
+        """
         self.config = config
         self.fs_config = fs_config
         self.base_path = Path(fs_config.path)

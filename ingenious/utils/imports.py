@@ -33,6 +33,15 @@ class ImportError(Exception):
         attempted_paths: list[str] | None = None,
         original_error: Exception | None = None,
     ):
+        """Initialize ImportError with detailed import failure context.
+
+        Args:
+            message: Error description.
+            module_name: Name of module that failed to import.
+            class_name: Name of class that failed to import (if applicable).
+            attempted_paths: List of import paths that were tried.
+            original_error: Original exception that caused the import failure.
+        """
         super().__init__(message)
         self.module_name = module_name
         self.class_name = class_name
@@ -54,6 +63,7 @@ class SafeImporter:
     """
 
     def __init__(self) -> None:
+        """Initialize SafeImporter with empty caches and namespace configuration."""
         self._module_cache: Dict[str, Any] = {}
         self._class_cache: Dict[str, type] = {}
         self._failed_imports: Dict[str, Exception] = {}

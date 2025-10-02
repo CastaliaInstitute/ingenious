@@ -31,6 +31,15 @@ class azure_FileStorageRepository(IFileStorage):
     """
 
     def __init__(self, config: Config, fs_config: FileStorageContainer):
+        """Initialize Azure Blob Storage file repository with authentication configuration.
+
+        Args:
+            config: Ingenious configuration.
+            fs_config: File storage container configuration with authentication details.
+
+        Raises:
+            ValueError: If authentication configuration is invalid or incomplete.
+        """
         self.config = config
         self.fs_config = fs_config
         self.url = fs_config.url

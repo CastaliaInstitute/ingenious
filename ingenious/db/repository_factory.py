@@ -133,6 +133,13 @@ class SQLiteChatHistoryRepository(BaseSQLRepository):
         query_builder: QueryBuilder,
         connection_pool: ConnectionPool,
     ):
+        """Initialize SQLite chat history repository with connection pool.
+
+        Args:
+            config: Ingenious settings for repository configuration.
+            query_builder: Query builder configured with SQLite dialect.
+            connection_pool: Connection pool for managing SQLite connections.
+        """
         self.pool = connection_pool
         super().__init__(config, query_builder)
 
@@ -214,6 +221,13 @@ class AzureSQLChatHistoryRepository(BaseSQLRepository):
         query_builder: QueryBuilder,
         connection_pool: ConnectionPool,
     ):
+        """Initialize Azure SQL chat history repository with connection pool.
+
+        Args:
+            config: Ingenious settings for repository configuration.
+            query_builder: Query builder configured with Azure SQL dialect.
+            connection_pool: Connection pool for managing Azure SQL connections.
+        """
         self.pool = connection_pool
         super().__init__(config, query_builder)
 
