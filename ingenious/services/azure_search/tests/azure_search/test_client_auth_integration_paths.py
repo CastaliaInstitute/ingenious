@@ -107,6 +107,11 @@ class _Factory:
 
 @pytest.mark.asyncio
 async def test_provider_retrieve_instantiates_clients_via_pipeline_factories() -> None:
+    """Test that provider instantiates Azure clients via pipeline factory injection.
+
+    Verifies that the AzureSearchProvider correctly passes configuration to
+    pipeline factories which then instantiate Azure OpenAI and Search clients.
+    """
     settings = SimpleNamespace(
         models=[
             SimpleNamespace(

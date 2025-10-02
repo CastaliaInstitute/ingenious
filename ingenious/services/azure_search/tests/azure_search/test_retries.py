@@ -139,6 +139,11 @@ class _NoopSearch:
 
 @pytest.mark.asyncio
 async def test_vector_embed_429_fallback_or_retry(config):
+    """Test that vector embedding handles 429 rate limit errors with retries.
+
+    Verifies that when the embedding API returns 429 rate limit errors,
+    the retriever exhausts retries and raises a RuntimeError.
+    """
     # 👇 Make the client look like OpenAI: client.embeddings.create(...)
     emb_client = SimpleNamespace(embeddings=_FlakyEmbeddings())
     retr = AzureSearchRetriever(config, search_client=_NoopSearch(), embedding_client=emb_client)

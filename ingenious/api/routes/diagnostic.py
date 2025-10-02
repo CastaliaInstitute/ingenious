@@ -229,6 +229,21 @@ async def diagnostic(
     request: Request,
     auth_user: Annotated[str, Depends(auth_dependencies.get_auth_user)],
 ) -> Dict[str, Any]:
+    """Retrieve diagnostic information about file storage paths.
+
+    Returns directory paths for prompts, data, outputs, and events configured
+    in the system's file storage settings.
+
+    Args:
+        request: FastAPI request object for method checking.
+        auth_user: Authenticated username from dependency injection.
+
+    Returns:
+        Dictionary containing diagnostic information with storage directory paths.
+
+    Raises:
+        HTTPException: If diagnostic retrieval fails with status 500.
+    """
     if request.method == "OPTIONS":
         return {"Allow": "GET, OPTIONS"}
 

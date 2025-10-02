@@ -20,6 +20,11 @@ from ingenious.services.azure_search.config import SearchConfig
 async def test_l1_other_branch_cancelled_on_failure(
     failing_branch: str, config: SearchConfig
 ) -> None:
+    """Test that L1 search cancels the other branch when one branch fails.
+
+    Verifies that when either vector or lexical search fails, the concurrent
+    search branch is properly cancelled to avoid resource waste.
+    """
     cancelled: asyncio.Event = asyncio.Event()
 
     async def slow_sleeping_search(_q: str) -> NoReturn:

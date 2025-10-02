@@ -83,6 +83,11 @@ def _settings() -> IngeniousSettings:
 
 @pytest.mark.asyncio
 async def test_end_to_end_kb_direct_uses_factory_and_closes_pipeline() -> None:
+    """Test end-to-end knowledge base retrieval with proper pipeline closure.
+
+    Verifies that the provider uses the factory to build the pipeline, executes
+    retrieval successfully, and properly closes pipeline resources when done.
+    """
     p_stub = _CloseTrackedPipeline()
 
     with patch(

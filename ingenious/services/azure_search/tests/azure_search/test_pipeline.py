@@ -21,6 +21,11 @@ from ingenious.services.azure_search.config import SearchConfig
 def test_build_search_pipeline_success(
     config: SearchConfig, monkeypatch: pytest.MonkeyPatch
 ) -> None:
+    """Test that build_search_pipeline successfully constructs pipeline with all components.
+
+    Verifies that the factory creates an AdvancedSearchPipeline with properly
+    instantiated retriever, fuser, and generator components.
+    """
     MockR = MagicMock()
     MockF = MagicMock()
     MockG = MagicMock()
@@ -54,6 +59,11 @@ def test_build_search_pipeline_success(
 def test_build_search_pipeline_validation_error(
     config_no_semantic: SearchConfig,
 ) -> None:
+    """Test that build_search_pipeline raises ValueError for invalid semantic config.
+
+    Verifies that enabling semantic ranking without a semantic configuration
+    name properly raises a validation error.
+    """
     invalid = config_no_semantic.model_copy(
         update={"use_semantic_ranking": True, "semantic_configuration_name": None}
     )
@@ -62,6 +72,11 @@ def test_build_search_pipeline_validation_error(
 
 
 def test_pipeline_init_sets_rerank_client(config: SearchConfig) -> None:
+    """Test that pipeline initialization creates a rerank client.
+
+    Verifies that AdvancedSearchPipeline constructor properly initializes
+    the internal rerank client for semantic ranking operations.
+    """
     r, f, g = (
         MagicMock(spec=AzureSearchRetriever),
         MagicMock(spec=DynamicRankFuser),
@@ -73,6 +88,11 @@ def test_pipeline_init_sets_rerank_client(config: SearchConfig) -> None:
 
 @pytest.mark.asyncio
 async def test_apply_semantic_ranking_happy(config: SearchConfig) -> None:
+    """Test semantic ranking successfully reorders and enriches search results.
+
+    Verifies that semantic reranking properly orders documents by reranker
+    scores and merges metadata from the reranking API response.
+    """
     r, f, g = MagicMock(), MagicMock(), MagicMock()
     p = AdvancedSearchPipeline(config, r, f, g)
 
@@ -102,6 +122,11 @@ async def test_apply_semantic_ranking_happy(config: SearchConfig) -> None:
 
 @pytest.mark.asyncio
 async def test_apply_semantic_ranking_truncation(config: SearchConfig) -> None:
+    """Test semantic ranking truncates to 50 documents for reranking API.
+
+    Verifies that when fused results exceed 50 documents, only the top 50
+    are sent for reranking while remaining documents are preserved.
+    """
     r, f, g = MagicMock(), MagicMock(), MagicMock()
     p = AdvancedSearchPipeline(config, r, f, g)
     fused = [{"id": f"doc_{i}", "_fused_score": 1.0} for i in range(55)]
@@ -123,6 +148,11 @@ async def test_apply_semantic_ranking_truncation(config: SearchConfig) -> None:
 
 @pytest.mark.asyncio
 async def test_apply_semantic_ranking_edge_and_fallback(config: SearchConfig) -> None:
+    """Test semantic ranking edge cases and fallback behavior.
+
+    Verifies handling of empty inputs, missing ID fields, and API errors
+    by falling back to fused scores when reranking fails.
+    """
     r, f, g = MagicMock(), MagicMock(), MagicMock()
     p = AdvancedSearchPipeline(config, r, f, g)
 
@@ -147,6 +177,11 @@ async def test_apply_semantic_ranking_edge_and_fallback(config: SearchConfig) ->
 
 
 def test_clean_sources_removes_internal(config: SearchConfig) -> None:
+    """Test that clean_sources removes internal metadata fields from results.
+
+    Verifies that intermediate scoring fields and Azure-specific metadata
+    are removed while preserving final scores and retrieval types.
+    """
     r, f, g = MagicMock(), MagicMock(), MagicMock()
     p = AdvancedSearchPipeline(config, r, f, g)
     rows = [
@@ -182,6 +217,11 @@ def test_clean_sources_removes_internal(config: SearchConfig) -> None:
 
 @pytest.mark.asyncio
 async def test_get_answer_paths(config: SearchConfig) -> None:
+    """Test get_answer execution paths with and without semantic ranking.
+
+    Verifies answer generation works with semantic ranking enabled, handles
+    empty results gracefully, and processes non-semantic paths correctly.
+    """
     cfg = config.model_copy(update={"enable_answer_generation": True})
 
     r = MagicMock()
@@ -225,6 +265,11 @@ async def test_get_answer_paths(config: SearchConfig) -> None:
 
 @pytest.mark.asyncio
 async def test_pipeline_close(config: SearchConfig) -> None:
+    """Test that pipeline close properly closes all component resources.
+
+    Verifies that the pipeline's close method calls close on the rerank
+    client, retriever, fuser, and generator components.
+    """
     r, f, g = MagicMock(), MagicMock(), MagicMock()
     r.close = AsyncMock()
     f.close = AsyncMock()

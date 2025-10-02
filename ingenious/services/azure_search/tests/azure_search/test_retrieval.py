@@ -51,6 +51,11 @@ async def test_search_lexical(config: SearchConfig) -> None:
 
 @pytest.mark.asyncio
 async def test_search_vector(config: SearchConfig) -> None:
+    """Test vector search successfully executes with embedding client.
+
+    Verifies that search_vector method properly uses the embedding client
+    to generate embeddings and executes vector search against Azure Search.
+    """
     emb_client = SimpleNamespace(embeddings=_DummyEmbeddings())  # 👈 OpenAI shape
     retr = AzureSearchRetriever(
         config, search_client=_DummyLexClient(), embedding_client=emb_client
@@ -61,6 +66,11 @@ async def test_search_vector(config: SearchConfig) -> None:
 
 @pytest.mark.asyncio
 async def test_retriever_close(config: SearchConfig) -> None:
+    """Test retriever close method completes without errors.
+
+    Verifies that calling close() on the retriever properly cleans up
+    resources without raising exceptions.
+    """
     emb_client = SimpleNamespace(embeddings=_DummyEmbeddings())
     retr = AzureSearchRetriever(
         config, search_client=_DummyLexClient(), embedding_client=emb_client
