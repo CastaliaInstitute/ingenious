@@ -25,6 +25,7 @@ class HelpCommand(BaseCommand):
 
         Args:
             topic: Specific topic to show help for (setup, workflows, config, deployment)
+            **kwargs: Additional keyword arguments (unused)
         """
         if topic is None:
             self._show_general_help()

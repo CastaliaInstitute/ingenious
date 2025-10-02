@@ -34,6 +34,7 @@ class ServeCommand(BaseCommand):
             host: Host to bind the server
             port: Port to bind the server
             no_prompt_tuner: Whether to disable the prompt tuner interface
+            **kwargs: Additional keyword arguments (unused)
         """
         # Resolve port
         if port is None:

@@ -57,6 +57,8 @@ class IChatHistoryRepository(ABC):
     ElementSize = Literal["small", "medium", "large"]
 
     class ElementDict(TypedDict):
+        """Typed dictionary for element data transfer."""
+
         id: str
         threadId: Optional[str]
         type: "IChatHistoryRepository.ElementType"
@@ -75,6 +77,8 @@ class IChatHistoryRepository(ABC):
 
     @dataclass
     class ChatHistory:
+        """Dataclass representing a complete chat history record."""
+
         user_id: str
         thread_id: str
         message_id: str
@@ -89,6 +93,8 @@ class IChatHistoryRepository(ABC):
 
     @dataclass
     class User:
+        """Dataclass representing a user entity."""
+
         id: UUID
         identifier: str
         metadata: dict[str, object]
@@ -96,6 +102,8 @@ class IChatHistoryRepository(ABC):
 
     @dataclass
     class Thread:
+        """Dataclass representing a conversation thread."""
+
         id: UUID
         createdAt: Optional[str]
         name: Optional[str]
@@ -106,6 +114,8 @@ class IChatHistoryRepository(ABC):
 
     @dataclass
     class Step:
+        """Dataclass representing a conversation step or turn."""
+
         id: UUID
         name: str
         type: str
@@ -129,6 +139,8 @@ class IChatHistoryRepository(ABC):
 
     @dataclass
     class Element:
+        """Dataclass representing a UI element or attachment."""
+
         id: UUID
         threadId: Optional[UUID]
         type: Optional[str]
@@ -145,6 +157,8 @@ class IChatHistoryRepository(ABC):
 
     @dataclass
     class Feedback:
+        """Dataclass representing user feedback on a conversation step."""
+
         id: UUID
         forId: UUID
         threadId: UUID
@@ -152,12 +166,16 @@ class IChatHistoryRepository(ABC):
         comment: Optional[str]
 
     class FeedbackDict(TypedDict):
+        """Typed dictionary for feedback data transfer."""
+
         forId: str
         id: Optional[str]
         value: Literal[0, 1]
         comment: Optional[str]
 
     class StepDict(TypedDict, total=False):
+        """Typed dictionary for step data transfer with optional fields."""
+
         name: str
         type: "IChatHistoryRepository.StepType"
         id: str
@@ -181,6 +199,8 @@ class IChatHistoryRepository(ABC):
         feedback: Optional["IChatHistoryRepository.FeedbackDict"]
 
     class ThreadDict(TypedDict):
+        """Typed dictionary for thread data transfer with steps and elements."""
+
         id: str
         createdAt: str
         name: Optional[str]

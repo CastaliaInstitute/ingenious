@@ -243,11 +243,13 @@ class PerformanceLogger:
         self.start_time: Optional[float] = None
 
     def __enter__(self) -> Any:
+        """Enter the operation context and log start time."""
         self.start_time = time.time()
         self.logger.info("Operation started", operation=self.operation, **self.context)
         return self
 
     def __exit__(self, exc_type: Any, exc_val: Any, _exc_tb: Any) -> None:
+        """Exit the operation context and log completion or error."""
         if self.start_time:
             duration = time.time() - self.start_time
 

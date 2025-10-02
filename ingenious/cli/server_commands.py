@@ -82,7 +82,7 @@ def register_commands(app: typer.Typer, console: Console) -> None:
             typer.Option("--no-prompt-tuner", help="Disable the prompt tuner interface"),
         ] = False,
     ) -> None:
-        """Start the Insight Ingenious API server with web interface.
+        r"""Start the Insight Ingenious API server with web interface.
 
         Args:
             env_file: Path to a .env file (default: auto-discover .env)
@@ -142,7 +142,7 @@ def register_commands(app: typer.Typer, console: Console) -> None:
             typer.Argument(help="The port to run the server on. Default is 80."),
         ] = 80,
     ) -> None:
-        """Run a FastAPI server that presents your agent workflows via REST endpoints.
+        r"""Run a FastAPI server that presents your agent workflows via REST endpoints.
 
         AVAILABLE WORKFLOWS & CONFIGURATION REQUIREMENTS:
 
