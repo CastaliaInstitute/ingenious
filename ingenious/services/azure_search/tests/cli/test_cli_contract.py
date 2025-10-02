@@ -20,9 +20,7 @@ if TYPE_CHECKING:
     from pytest import MonkeyPatch
 
 
-def test_cli_semantic_enabled_without_name_exits_1(
-    config: Any, monkeypatch: MonkeyPatch
-) -> None:
+def test_cli_semantic_enabled_without_name_exits_1(config: Any, monkeypatch: MonkeyPatch) -> None:
     """Verify ValueError in pipeline build exits with code 1.
 
     This test ensures that when the pipeline factory `build_search_pipeline`
@@ -33,9 +31,7 @@ def test_cli_semantic_enabled_without_name_exits_1(
 
     def raise_value_error(*_a: Any, **_k: Any) -> NoReturn:
         """Raise a ValueError to simulate a configuration error during pipeline build."""
-        raise ValueError(
-            "semantic ranking is enabled but semantic config name is missing"
-        )
+        raise ValueError("semantic ranking is enabled but semantic config name is missing")
 
     # Make the factory blow up; no need to construct a special config since we force the error.
     monkeypatch.setattr(cli, "build_search_pipeline", raise_value_error, raising=False)

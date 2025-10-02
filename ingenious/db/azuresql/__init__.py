@@ -26,13 +26,8 @@ class azuresql_ChatHistoryRepository(BaseSQLRepository):
     def __init__(self, config: IngeniousSettings) -> None:
         # Try to get connection string from azure_sql_services first, then fallback to chat_history
         self.connection_string = None
-        if (
-            config.azure_sql_services
-            and config.azure_sql_services.database_connection_string
-        ):
-            self.connection_string = (
-                config.azure_sql_services.database_connection_string
-            )
+        if config.azure_sql_services and config.azure_sql_services.database_connection_string:
+            self.connection_string = config.azure_sql_services.database_connection_string
         elif config.chat_history.database_connection_string:
             self.connection_string = config.chat_history.database_connection_string
 
@@ -175,9 +170,7 @@ class azuresql_ChatHistoryRepository(BaseSQLRepository):
         step_dict["disableFeedback"] = step_dict.get("disableFeedback", False)
 
         step_dict["showInput"] = (
-            str(step_dict.get("showInput", "")).lower()
-            if "showInput" in step_dict
-            else None
+            str(step_dict.get("showInput", "")).lower() if "showInput" in step_dict else None
         )
         parameters = {
             key: value
@@ -194,9 +187,7 @@ class azuresql_ChatHistoryRepository(BaseSQLRepository):
             INSERT INTO steps ({columns})
             VALUES ({values});
         """
-        self.execute_sql(
-            sql=query, params=list(parameters.values()), expect_results=False
-        )
+        self.execute_sql(sql=query, params=list(parameters.values()), expect_results=False)
 
     async def update_thread(
         self,
@@ -270,9 +261,7 @@ class azuresql_ChatHistoryRepository(BaseSQLRepository):
         """
 
         # Prepare parameters for MERGE statement
-        merge_params = (
-            [thread_id] + list(parameters.values())[1:] + list(parameters.values())
-        )
+        merge_params = [thread_id] + list(parameters.values())[1:] + list(parameters.values())
 
         self.execute_sql(sql=query, params=merge_params, expect_results=False)
 

@@ -76,9 +76,7 @@ def test_project_init_default_creates_files(
         dst.mkdir(parents=True, exist_ok=True)
 
     monkeypatch.setattr(project_module.FileOperations, "copy_tree_safe", copy_tree_safe)
-    monkeypatch.setattr(
-        project_module.FileOperations, "ensure_directory", ensure_directory
-    )
+    monkeypatch.setattr(project_module.FileOperations, "ensure_directory", ensure_directory)
 
     # Use a basic console mock
     console: MagicMock = MagicMock()
@@ -133,15 +131,13 @@ def test_project_init_with_templates_copies_and_skips(
     base: Path = fake_root
     (base / "ingenious_extensions_template").mkdir(parents=True, exist_ok=True)
     (base / "ingenious_extensions_template" / "README.md").write_text("from-template")
-    (base / "ingenious_extensions_template" / "templates").mkdir(
-        parents=True, exist_ok=True
-    )
+    (base / "ingenious_extensions_template" / "templates").mkdir(parents=True, exist_ok=True)
     (base / "ingenious_extensions_template" / "templates" / "prompts").mkdir(
         parents=True, exist_ok=True
     )
-    (
-        base / "ingenious_extensions_template" / "templates" / "prompts" / "hello.jinja"
-    ).write_text("hi jinja")
+    (base / "ingenious_extensions_template" / "templates" / "prompts" / "hello.jinja").write_text(
+        "hi jinja"
+    )
 
     (base / "config_templates").mkdir(parents=True, exist_ok=True)
     (base / "config_templates" / ".env.example").write_text(
@@ -168,9 +164,7 @@ def test_project_init_with_templates_copies_and_skips(
         dst.mkdir(parents=True, exist_ok=True)
 
     monkeypatch.setattr(project_module.FileOperations, "copy_tree_safe", copy_tree_safe)
-    monkeypatch.setattr(
-        project_module.FileOperations, "ensure_directory", ensure_directory
-    )
+    monkeypatch.setattr(project_module.FileOperations, "ensure_directory", ensure_directory)
 
     console: MagicMock = MagicMock()
     app: typer.Typer = make_typer_app(console)
@@ -180,14 +174,10 @@ def test_project_init_with_templates_copies_and_skips(
     assert result.exit_code == 0
 
     # Check copied tree
-    assert (
-        tmp_path / "ingenious_extensions" / "README.md"
-    ).read_text() == "from-template"
+    assert (tmp_path / "ingenious_extensions" / "README.md").read_text() == "from-template"
 
     env_example: Path = tmp_path / ".env.example"
-    assert (
-        env_example.read_text().strip() == "INGENIOUS_MODELS__0__API_KEY=from-template"
-    )
+    assert env_example.read_text().strip() == "INGENIOUS_MODELS__0__API_KEY=from-template"
 
     dockerfile: Path = tmp_path / "Dockerfile"
     assert dockerfile.read_text().strip().startswith("FROM python:3.12-slim")
@@ -200,7 +190,5 @@ def test_project_init_with_templates_copies_and_skips(
     result2: Result = runner.invoke(app, ["init"])
     assert result2.exit_code == 0
     # Content unchanged
-    assert (
-        env_example.read_text().strip() == "INGENIOUS_MODELS__0__API_KEY=from-template"
-    )
+    assert env_example.read_text().strip() == "INGENIOUS_MODELS__0__API_KEY=from-template"
     assert dockerfile.read_text().strip().startswith("FROM python:3.12-slim")

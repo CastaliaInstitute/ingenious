@@ -92,9 +92,7 @@ def _install_async_stubs(monkeypatch: MonkeyPatch) -> dict[str, type]:
     class SearchClient:  # noqa: N801
         """A stub for azure.search.documents.aio.SearchClient."""
 
-        def __init__(
-            self, *, endpoint: str, index_name: str, credential: Any, **__: Any
-        ) -> None:
+        def __init__(self, *, endpoint: str, index_name: str, credential: Any, **__: Any) -> None:
             self.endpoint = endpoint
             self.index_name = index_name
             self.credential = credential

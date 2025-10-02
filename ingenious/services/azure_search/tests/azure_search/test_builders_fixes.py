@@ -46,9 +46,7 @@ def test_validate_endpoint_valid_formats(endpoint: str, expected_output: str) ->
         ("://missing.scheme/path", "must be a valid URL with scheme and host"),
     ],
 )
-def test_validate_endpoint_invalid_formats(
-    endpoint: str, error_message_substring: str
-) -> None:
+def test_validate_endpoint_invalid_formats(endpoint: str, error_message_substring: str) -> None:
     """Verify that invalid endpoint URL formats raise a `ConfigError`.
 
     This test ensures that malformed, empty, or schemeless URLs are rejected

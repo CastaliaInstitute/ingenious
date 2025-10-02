@@ -316,7 +316,8 @@ def install_fake_chromadb(
 
 @pytest.fixture
 def azure_sdk_compat(monkeypatch: pytest.MonkeyPatch) -> None:
-    """Provide a fully-compatible, in-process fake Azure SDK *and*
+    """Provide a fully-compatible, in-process fake Azure SDK *and*.
+
     ensure the KB module builds its SearchClient from that fake.
 
     Why we do this:
@@ -340,6 +341,7 @@ def azure_sdk_compat(monkeypatch: pytest.MonkeyPatch) -> None:
 
     class _FakeAzureKeyCredential:
         """Fake stand-in for azure.core.credentials.AzureKeyCredential.
+
         It simply stores the key; no real auth is performed.
         """
 
@@ -347,7 +349,8 @@ def azure_sdk_compat(monkeypatch: pytest.MonkeyPatch) -> None:
             self.key = key
 
     class _FakeAsyncSearchClient:
-        """Fake stand-in for azure.search.documents.aio.SearchClient that implements
+        """Fake stand-in for azure.search.documents.aio.SearchClient that implements.
+
         exactly the async methods our KB preflight uses:
           - get_document_count (async)
           - close (async)
@@ -361,13 +364,14 @@ def azure_sdk_compat(monkeypatch: pytest.MonkeyPatch) -> None:
 
         async def get_document_count(self) -> int:
             """Return a deterministic positive value so preflight "succeeds".
+
             If you need to simulate a failing preflight in some tests, modify
             this to raise an exception (e.g., RuntimeError("401 Unauthorized")).
             """
             return 1
 
         async def close(self) -> None:
-            """Simulate the async close() on the real client."""
+            """Simulate closing the client asynchronously."""
             self._closed = True
 
     # ---------------------------------------------------
@@ -399,7 +403,8 @@ def azure_sdk_compat(monkeypatch: pytest.MonkeyPatch) -> None:
     # import ingenious.services.chat_services.multi_agent.conversation_flows.knowledge_base_agent.knowledge_base_agent as kb
 
     def _build_fake_client_from_cfg(cfg: Any) -> _FakeAsyncSearchClient:
-        """The KB preflight passes a SimpleNamespace-like stub carrying:
+        """The KB preflight passes a SimpleNamespace-like stub carrying attributes.
+
           - search_endpoint
           - search_index_name
           - search_key (either a plain str or a SecretStr)

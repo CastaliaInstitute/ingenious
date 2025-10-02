@@ -127,9 +127,7 @@ async def test_prefer_azure_no_fallback_returns_no_info_when_empty(
     # Policy + availability setup.
     monkeypatch.setenv("KB_POLICY", "prefer_azure")
     monkeypatch.delenv("KB_FALLBACK_ON_EMPTY", raising=False)
-    monkeypatch.setattr(
-        kb_mod.ConversationFlow, "_is_azure_search_available", lambda _self: True
-    )
+    monkeypatch.setattr(kb_mod.ConversationFlow, "_is_azure_search_available", lambda _self: True)
     monkeypatch.setattr(
         kb_mod.ConversationFlow,
         "_preflight_azure_index_async",
@@ -178,9 +176,7 @@ async def test_coerced_mode_direct_ignores_env_but_honors_request_topk(
     monkeypatch.setenv("KB_TOPK_DIRECT", "99")
 
     # Ensure Azure path is taken and preflight passes.
-    monkeypatch.setattr(
-        kb_mod.ConversationFlow, "_is_azure_search_available", lambda _self: True
-    )
+    monkeypatch.setattr(kb_mod.ConversationFlow, "_is_azure_search_available", lambda _self: True)
     monkeypatch.setattr(
         kb_mod.ConversationFlow,
         "_preflight_azure_index_async",

@@ -1,4 +1,5 @@
 """Tests specific feature flags and behaviors for the Azure Search CLI.
+
 This module contains integration tests for the Azure Search command-line
 interface, focusing on validating specific command-line arguments and their
 effect on the application's configuration and behavior. It uses Typer's
@@ -49,6 +50,7 @@ def test_azure_search_cli_load_custom_dat_prompt_file_success(
     tmp_path: Path,
 ) -> None:
     """Verify the CLI correctly loads a custom DAT prompt from a specified file.
+
     This test ensures that when the `--dat-prompt-file` argument is used
     with a valid file path, the contents of that file are correctly read
     and passed into the application's configuration.
@@ -64,9 +66,7 @@ def test_azure_search_cli_load_custom_dat_prompt_file_success(
         "test query",
     ]
     mock_run_pipeline = MagicMock()
-    with patch(
-        "ingenious.services.azure_search.cli._run_search_pipeline", mock_run_pipeline
-    ):
+    with patch("ingenious.services.azure_search.cli._run_search_pipeline", mock_run_pipeline):
         # When invoking the app directly imported from the specific CLI module,
         # we don't need the top-level command prefix (e.g., 'azure-search').
         result: Result = runner.invoke(app, args)
@@ -80,6 +80,7 @@ def test_azure_search_cli_load_custom_dat_prompt_file_success(
 
 def test_azure_search_cli_load_custom_dat_prompt_file_not_found() -> None:
     """Verify the CLI exits gracefully if the DAT prompt file is not found.
+
     This test ensures that if the path provided to `--dat-prompt-file`
     does not exist, the CLI exits with a non-zero status code and prints
     an informative error message, without attempting to run the main pipeline.
@@ -92,9 +93,7 @@ def test_azure_search_cli_load_custom_dat_prompt_file_not_found() -> None:
         "test query",
     ]
     mock_run_pipeline = MagicMock()
-    with patch(
-        "ingenious.services.azure_search.cli._run_search_pipeline", mock_run_pipeline
-    ):
+    with patch("ingenious.services.azure_search.cli._run_search_pipeline", mock_run_pipeline):
         result: Result = runner.invoke(app, args)
 
     # Check stdout and stderr as CLI tools often print errors to stderr

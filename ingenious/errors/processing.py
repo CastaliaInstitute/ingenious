@@ -1,4 +1,5 @@
-"""Comprehensive error handling system for document processing module
+"""Comprehensive error handling system for document processing module.
+
 ================================================================
 
 This module provides a structured error handling framework for the document

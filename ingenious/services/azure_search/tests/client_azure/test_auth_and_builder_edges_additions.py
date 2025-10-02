@@ -73,9 +73,7 @@ def _install_async_search_stubs(monkeypatch: pytest.MonkeyPatch) -> dict[str, An
     az_aio = types.ModuleType("azure.search.documents.aio")
 
     class SearchClient:  # noqa: N801
-        def __init__(
-            self, *, endpoint: str, index_name: str, credential: Any, **_: Any
-        ) -> None:
+        def __init__(self, *, endpoint: str, index_name: str, credential: Any, **_: Any) -> None:
             self.endpoint = endpoint
             self.index_name = index_name
             self.credential = credential
@@ -88,9 +86,7 @@ def _install_async_search_stubs(monkeypatch: pytest.MonkeyPatch) -> dict[str, An
     az_sync = types.ModuleType("azure.search.documents")
 
     class SyncSearchClient:  # noqa: N801
-        def __init__(
-            self, *, endpoint: str, index_name: str, credential: Any, **_: Any
-        ) -> None:
+        def __init__(self, *, endpoint: str, index_name: str, credential: Any, **_: Any) -> None:
             self.endpoint = endpoint
             self.index_name = index_name
             self.credential = credential
@@ -208,11 +204,7 @@ def test_builder_base_identity_missing_error_message(
             return None
 
     builder = _Dummy(
-        auth_config=AzureAuthConfig(
-            authentication_method=AuthenticationMethod.DEFAULT_CREDENTIAL
-        )
+        auth_config=AzureAuthConfig(authentication_method=AuthenticationMethod.DEFAULT_CREDENTIAL)
     )
-    with pytest.raises(
-        ImportError, match="azure-identity is required for AAD authentication"
-    ):
+    with pytest.raises(ImportError, match="azure-identity is required for AAD authentication"):
         _ = builder.credential

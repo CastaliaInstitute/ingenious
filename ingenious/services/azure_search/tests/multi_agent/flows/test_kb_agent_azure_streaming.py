@@ -114,9 +114,7 @@ class _StubAssistantAgent:
         """API parity for completeness; not used in these tests."""
         return SimpleNamespace(chat_message=SimpleNamespace(content="unused"))
 
-    async def run_stream(
-        self, task: str, cancellation_token: Any
-    ) -> AsyncIterator[Any]:
+    async def run_stream(self, task: str, cancellation_token: Any) -> AsyncIterator[Any]:
         """Yield a sequence of tool/status/content/usage/final objects.
 
         Args:
@@ -139,9 +137,7 @@ class _StubAssistantAgent:
         yield SimpleNamespace(content=res)
 
         # 5) Token usage so the agent emits a token_count chunk.
-        yield SimpleNamespace(
-            usage=SimpleNamespace(total_tokens=123, completion_tokens=45)
-        )
+        yield SimpleNamespace(usage=SimpleNamespace(total_tokens=123, completion_tokens=45))
 
         # 6) Final task result → the agent attempts a final flush.
         class _TaskResult:
@@ -193,9 +189,7 @@ async def test_streaming_assist_calls_provider_and_honors_request_topk(
     monkeypatch.setenv("KB_POLICY", "prefer_azure")
 
     # Make Azure path available and skip real preflight.
-    monkeypatch.setattr(
-        kb_mod.ConversationFlow, "_is_azure_search_available", lambda _self: True
-    )
+    monkeypatch.setattr(kb_mod.ConversationFlow, "_is_azure_search_available", lambda _self: True)
     monkeypatch.setattr(
         kb_mod.ConversationFlow,
         "_preflight_azure_index_async",
@@ -238,8 +232,7 @@ async def test_streaming_assist_calls_provider_and_honors_request_topk(
     # Sanity: the stream included token_count and at least one content chunk.
     assert any(getattr(c, "chunk_type", "") == "token_count" for c in chunks)
     assert any(
-        getattr(c, "chunk_type", "") == "content" and getattr(c, "content", "")
-        for c in chunks
+        getattr(c, "chunk_type", "") == "content" and getattr(c, "content", "") for c in chunks
     )
 
 
@@ -256,9 +249,7 @@ async def test_streaming_filters_tool_chatter_and_surfaces_final_content(
     flow = _make_flow(tmp_path)
 
     # Make Azure path available and skip real preflight.
-    monkeypatch.setattr(
-        kb_mod.ConversationFlow, "_is_azure_search_available", lambda _self: True
-    )
+    monkeypatch.setattr(kb_mod.ConversationFlow, "_is_azure_search_available", lambda _self: True)
     monkeypatch.setattr(
         kb_mod.ConversationFlow,
         "_preflight_azure_index_async",
@@ -290,9 +281,7 @@ async def test_streaming_filters_tool_chatter_and_surfaces_final_content(
 
     # Join surfaced content.
     surfaced_texts: list[str] = [
-        getattr(c, "content", "")
-        for c in chunks
-        if getattr(c, "chunk_type", "") == "content"
+        getattr(c, "content", "") for c in chunks if getattr(c, "chunk_type", "") == "content"
     ]
     joined: str = " ".join(surfaced_texts)
 

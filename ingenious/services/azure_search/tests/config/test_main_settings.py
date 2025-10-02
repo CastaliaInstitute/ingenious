@@ -62,10 +62,7 @@ def test_models_and_azure_search_from_json_env(monkeypatch: MonkeyPatch) -> None
     settings = IngeniousSettings()
     assert len(settings.models) == 2
     assert settings.models[0].model == "gpt-4o"
-    assert (
-        settings.azure_search_services
-        and settings.azure_search_services[0].index_name == "idx"
-    )
+    assert settings.azure_search_services and settings.azure_search_services[0].index_name == "idx"
     assert settings.azure_search_services[0].top_k_retrieval == 15
 
 
@@ -87,9 +84,7 @@ def test_models_and_azure_search_from_nested_env(monkeypatch: MonkeyPatch) -> No
     monkeypatch.setenv("INGENIOUS_AZURE_SEARCH_SERVICES__0__ENDPOINT", "https://s.net")
     monkeypatch.setenv("INGENIOUS_AZURE_SEARCH_SERVICES__0__KEY", "sk")
     monkeypatch.setenv("INGENIOUS_AZURE_SEARCH_SERVICES__0__INDEX_NAME", "idx")
-    monkeypatch.setenv(
-        "INGENIOUS_AZURE_SEARCH_SERVICES__0__USE_SEMANTIC_RANKING", "true"
-    )
+    monkeypatch.setenv("INGENIOUS_AZURE_SEARCH_SERVICES__0__USE_SEMANTIC_RANKING", "true")
     monkeypatch.setenv("INGENIOUS_AZURE_SEARCH_SERVICES__0__TOP_K_RETRIEVAL", "25")
 
     settings = IngeniousSettings()
@@ -149,9 +144,7 @@ def test_model_auth_client_credentials_require_fields(
     monkeypatch.setenv("INGENIOUS_MODELS__0__MODEL", "gpt-4o")
     monkeypatch.setenv("INGENIOUS_MODELS__0__BASE_URL", "https://oai/")
     monkeypatch.setenv("INGENIOUS_MODELS__0__DEPLOYMENT", "chat")
-    monkeypatch.setenv(
-        "INGENIOUS_MODELS__0__AUTHENTICATION_METHOD", "client_id_and_secret"
-    )
+    monkeypatch.setenv("INGENIOUS_MODELS__0__AUTHENTICATION_METHOD", "client_id_and_secret")
     monkeypatch.setenv("INGENIOUS_MODELS__0__CLIENT_ID", "cid")
     monkeypatch.setenv("INGENIOUS_MODELS__0__CLIENT_SECRET", "csecret")
     # Provide tenant through AZURE_TENANT_ID env (allowed)
@@ -163,9 +156,7 @@ def test_model_auth_client_credentials_require_fields(
     monkeypatch.setenv("INGENIOUS_MODELS__0__MODEL", "gpt-4o")
     monkeypatch.setenv("INGENIOUS_MODELS__0__BASE_URL", "https://oai/")
     monkeypatch.setenv("INGENIOUS_MODELS__0__DEPLOYMENT", "chat")
-    monkeypatch.setenv(
-        "INGENIOUS_MODELS__0__AUTHENTICATION_METHOD", "client_id_and_secret"
-    )
+    monkeypatch.setenv("INGENIOUS_MODELS__0__AUTHENTICATION_METHOD", "client_id_and_secret")
     monkeypatch.setenv("INGENIOUS_MODELS__0__CLIENT_ID", "cid")
     monkeypatch.setenv("INGENIOUS_MODELS__0__CLIENT_SECRET", "csecret")
     monkeypatch.delenv("AZURE_TENANT_ID", raising=False)

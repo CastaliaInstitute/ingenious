@@ -161,9 +161,7 @@ class sqlite_ChatHistoryRepository(BaseSQLRepository):
                 LIMIT ?
             """
 
-            user_threads = self.execute_sql(
-                user_threads_query, [identifier, thread_id, 100]
-            )
+            user_threads = self.execute_sql(user_threads_query, [identifier, thread_id, 100])
 
         if not isinstance(user_threads, list):
             return None
@@ -274,8 +272,7 @@ class sqlite_ChatHistoryRepository(BaseSQLRepository):
                         tags=step_feedback.get("step_tags"),
                         input=(
                             step_feedback.get("step_input", "")
-                            if step_feedback.get("step_showinput")
-                            not in [None, "false"]
+                            if step_feedback.get("step_showinput") not in [None, "false"]
                             else ""
                         ),
                         output=step_feedback.get("step_output", ""),
@@ -335,9 +332,7 @@ class sqlite_ChatHistoryRepository(BaseSQLRepository):
         step_dict["disableFeedback"] = step_dict.get("disableFeedback", False)
 
         step_dict["showInput"] = (
-            str(step_dict.get("showInput", "")).lower()
-            if "showInput" in step_dict
-            else None
+            str(step_dict.get("showInput", "")).lower() if "showInput" in step_dict else None
         )
         parameters = {
             key: value
@@ -352,9 +347,7 @@ class sqlite_ChatHistoryRepository(BaseSQLRepository):
             INSERT INTO steps ({columns})
             VALUES ({values});
         """
-        self.execute_sql(
-            sql=query, params=list(parameters.values()), expect_results=False
-        )
+        self.execute_sql(sql=query, params=list(parameters.values()), expect_results=False)
 
         # Return the created step
         from uuid import UUID
@@ -363,12 +356,8 @@ class sqlite_ChatHistoryRepository(BaseSQLRepository):
             id=UUID(step_dict.get("id", "00000000-0000-0000-0000-000000000000")),
             name=step_dict.get("name", ""),
             type=step_dict.get("type", ""),
-            threadId=UUID(
-                step_dict.get("threadId", "00000000-0000-0000-0000-000000000000")
-            ),
-            parentId=UUID(step_dict.get("parentId"))
-            if step_dict.get("parentId")
-            else None,
+            threadId=UUID(step_dict.get("threadId", "00000000-0000-0000-0000-000000000000")),
+            parentId=UUID(step_dict.get("parentId")) if step_dict.get("parentId") else None,
             disableFeedback=step_dict.get("disableFeedback", False),
             streaming=step_dict.get("streaming", False),
             waitForAnswer=step_dict.get("waitForAnswer"),
@@ -442,9 +431,7 @@ class sqlite_ChatHistoryRepository(BaseSQLRepository):
             ON CONFLICT ("id") DO UPDATE
             SET {updates};
         """
-        self.execute_sql(
-            sql=query, params=list(parameters.values()), expect_results=False
-        )
+        self.execute_sql(sql=query, params=list(parameters.values()), expect_results=False)
 
         return ""
 

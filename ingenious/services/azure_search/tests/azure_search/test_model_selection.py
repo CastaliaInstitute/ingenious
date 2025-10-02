@@ -71,9 +71,7 @@ def _settings(**overrides: Any) -> SimpleNamespace:
         ],
     )
 
-    return SimpleNamespace(
-        models=models, azure_search_services=azure_search_services, **overrides
-    )
+    return SimpleNamespace(models=models, azure_search_services=azure_search_services, **overrides)
 
 
 def test_pick_models_requires_embedding_deployment() -> None:
@@ -84,9 +82,7 @@ def test_pick_models_requires_embedding_deployment() -> None:
     deployment name to be usable by the search service.
     """
     s: SimpleNamespace = _settings()
-    with pytest.raises(
-        ValueError
-    ):  # The builders typically raise ValueError for selection faults
+    with pytest.raises(ValueError):  # The builders typically raise ValueError for selection faults
         _pick_models(s)
 
 
@@ -139,6 +135,4 @@ def test_builder_rejects_same_deployments_for_embed_and_chat(
     else:
         cfg: Any = build_search_config_from_settings(s)
         # Sanity: the builder still returns a config object if deployments differ
-        assert hasattr(cfg, "openai"), (
-            "Expected a SearchConfig-like object with .openai fields"
-        )
+        assert hasattr(cfg, "openai"), "Expected a SearchConfig-like object with .openai fields"

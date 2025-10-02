@@ -45,9 +45,7 @@ def fuser(config: SearchConfig) -> DynamicRankFuser:
         (2, 1, 0.7),
     ],
 )
-def test_calculate_alpha_cases(
-    fuser: DynamicRankFuser, sv: int, sl: int, exp: float
-) -> None:
+def test_calculate_alpha_cases(fuser: DynamicRankFuser, sv: int, sl: int, exp: float) -> None:
     """Tests the alpha calculation logic across various score inputs.
 
     This ensures the formula correctly translates DAT scores into a fusion
@@ -66,9 +64,7 @@ def test_calculate_alpha_cases(
         ("3 4 5", (3, 4)),
     ],
 )
-def test_parse_scores_ok(
-    fuser: DynamicRankFuser, out: str, expected: tuple[int, int]
-) -> None:
+def test_parse_scores_ok(fuser: DynamicRankFuser, out: str, expected: tuple[int, int]) -> None:
     """Tests successful parsing of valid DAT score strings from the LLM.
 
     This verifies that the regex can robustly extract the two integer scores
@@ -189,9 +185,7 @@ async def test_perform_dat_error_fallback(
 
 
 @pytest.mark.asyncio
-async def test_fuse_e2e_and_fast_paths(
-    fuser: DynamicRankFuser, monkeypatch: MonkeyPatch
-) -> None:
+async def test_fuse_e2e_and_fast_paths(fuser: DynamicRankFuser, monkeypatch: MonkeyPatch) -> None:
     """Tests the end-to-end fusion logic and edge cases.
 
     This test verifies the complete fusion process, including DAT, normalization,

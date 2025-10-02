@@ -83,9 +83,7 @@ def _patch_basics(monkeypatch: MonkeyPatch) -> Iterator[None]:
     monkeypatch.setattr(
         kb,
         "AzureClientFactory",
-        SimpleNamespace(
-            create_openai_chat_completion_client=lambda _cfg: DummyLLMClient()
-        ),
+        SimpleNamespace(create_openai_chat_completion_client=lambda _cfg: DummyLLMClient()),
     )
     yield
 
@@ -144,15 +142,10 @@ async def test_stream_includes_taskresult_final_flush_content(
     from ingenious.models.chat import ChatRequest
 
     chunks: list[ChatResponseChunk] = [
-        c
-        async for c in flow.get_streaming_conversation_response(
-            ChatRequest(user_prompt="q")
-        )
+        c async for c in flow.get_streaming_conversation_response(ChatRequest(user_prompt="q"))
     ]
 
-    contents: list[str | None] = [
-        c.content for c in chunks if c.chunk_type == "content"
-    ]
+    contents: list[str | None] = [c.content for c in chunks if c.chunk_type == "content"]
     # "FINAL" should be appended via TaskResult flush restoration
     assert any(c == "FINAL" for c in contents)
     # A final chunk must be present
@@ -210,14 +203,9 @@ async def test_stream_emits_token_count_when_usage_missing_and_counter_errors(
     from ingenious.models.chat import ChatRequest
 
     chunks: list[ChatResponseChunk] = [
-        c
-        async for c in flow.get_streaming_conversation_response(
-            ChatRequest(user_prompt="hello")
-        )
+        c async for c in flow.get_streaming_conversation_response(ChatRequest(user_prompt="hello"))
     ]
     # There must be a token_count chunk with non-zero token_count, then a final
-    tc_chunks: list[ChatResponseChunk] = [
-        c for c in chunks if c.chunk_type == "token_count"
-    ]
+    tc_chunks: list[ChatResponseChunk] = [c for c in chunks if c.chunk_type == "token_count"]
     assert tc_chunks and tc_chunks[-1].token_count > 0
     assert chunks[-1].chunk_type == "final"

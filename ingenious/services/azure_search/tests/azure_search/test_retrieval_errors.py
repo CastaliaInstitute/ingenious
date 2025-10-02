@@ -127,9 +127,7 @@ async def test_retrieval_handles_azure_search_api_errors(
         (APIConnectionError(request=MagicMock()), APIConnectionError),
         # Simulating a token limit exceeded error (400 Bad Request)
         (
-            BadRequestError(
-                "Token limit exceeded", response=MagicMock(status_code=400), body={}
-            ),
+            BadRequestError("Token limit exceeded", response=MagicMock(status_code=400), body={}),
             BadRequestError,
         ),
     ],

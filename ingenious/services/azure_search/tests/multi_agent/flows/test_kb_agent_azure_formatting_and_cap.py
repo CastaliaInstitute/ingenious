@@ -27,7 +27,8 @@ import ingenious.services.chat_services.multi_agent.conversation_flows.knowledge
 
 
 def install_azure_sdk_ok(monkeypatch: pytest.MonkeyPatch) -> None:
-    """Install a minimal, in-process *fake* Azure SDK and ensure the KB module
+    """Install a minimal, in-process *fake* Azure SDK and ensure the KB module.
+
     builds its SearchClient from that fake.
 
     Why this exists:
@@ -74,6 +75,7 @@ def install_azure_sdk_ok(monkeypatch: pytest.MonkeyPatch) -> None:
 
         async def get_document_count(self) -> int:
             """Simulate a cheap health-check call that confirms connectivity and auth.
+
             We return a deterministic positive number so preflight "succeeds".
             If you need to simulate failures in other tests, you can extend this
             to raise exceptions conditionally (e.g., based on an env flag).
@@ -81,7 +83,7 @@ def install_azure_sdk_ok(monkeypatch: pytest.MonkeyPatch) -> None:
             return 1
 
         async def close(self) -> None:
-            """Simulate the real client's async close()."""
+            """Simulate closing the real client asynchronously."""
             self._closed = True
 
     # 3) Publish the fake modules to sys.modules so any import statements in the
@@ -108,7 +110,8 @@ def install_azure_sdk_ok(monkeypatch: pytest.MonkeyPatch) -> None:
     import ingenious.services.chat_services.multi_agent.conversation_flows.knowledge_base_agent.knowledge_base_agent as kb  # noqa: E501
 
     def _build_fake_client_from_cfg(cfg: Any) -> _FakeAsyncSearchClient:
-        """The KB preflight passes a SimpleNamespace stub with three attributes:
+        """The KB preflight passes a SimpleNamespace stub with three attributes.
+
           - search_endpoint
           - search_index_name
           - search_key (may be a plain str or a SecretStr)

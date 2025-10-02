@@ -219,22 +219,22 @@ class IChatHistoryRepository(ABC):
 
     @abstractmethod
     async def add_message(self, message: Message) -> str:
-        """Adds a message to the chat history"""
+        """Adds a message to the chat history."""
         pass
 
     @abstractmethod
     async def add_user(self, identifier: str) -> User:
-        """Adds a user to the chat history database"""
+        """Adds a user to the chat history database."""
         pass
 
     @abstractmethod
     async def get_user(self, identifier: str) -> User | None:
-        """Gets a user from the chat history database"""
+        """Gets a user from the chat history database."""
         pass
 
     @abstractmethod
     async def get_message(self, message_id: str, thread_id: str) -> Message | None:
-        """Gets a message from the chat history"""
+        """Gets a message from the chat history."""
         pass
 
     @abstractmethod

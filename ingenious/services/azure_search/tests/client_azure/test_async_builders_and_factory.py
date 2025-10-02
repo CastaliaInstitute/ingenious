@@ -43,9 +43,7 @@ def _reload(module_name: str) -> ModuleType:
 
 def test_async_search_builder_api_key_path() -> None:
     """Build async Search client via API key and assert core properties."""
-    builder_mod: ModuleType = _reload(
-        "ingenious.client.azure.builder.search_client_async"
-    )
+    builder_mod: ModuleType = _reload("ingenious.client.azure.builder.search_client_async")
     AzureSearchAsyncClientBuilder = builder_mod.AzureSearchAsyncClientBuilder
 
     cfg: dict[str, str] = {
@@ -66,9 +64,7 @@ def test_async_search_builder_api_key_path() -> None:
 
 def test_async_search_builder_prefers_token_over_key() -> None:
     """Prefer TokenCredential over API key when both are supplied."""
-    builder_mod: ModuleType = _reload(
-        "ingenious.client.azure.builder.search_client_async"
-    )
+    builder_mod: ModuleType = _reload("ingenious.client.azure.builder.search_client_async")
     AzureSearchAsyncClientBuilder = builder_mod.AzureSearchAsyncClientBuilder
 
     # Provide BOTH SP credentials and a key; must prefer TokenCredential (AAD)
@@ -94,9 +90,7 @@ def test_async_search_builder_prefers_token_over_key() -> None:
 
 def test_async_search_builder_service_fallback_builds_endpoint() -> None:
     """Construct endpoint from `service` when full endpoint not provided."""
-    builder_mod: ModuleType = _reload(
-        "ingenious.client.azure.builder.search_client_async"
-    )
+    builder_mod: ModuleType = _reload("ingenious.client.azure.builder.search_client_async")
     AzureSearchAsyncClientBuilder = builder_mod.AzureSearchAsyncClientBuilder
 
     cfg: dict[str, str] = {"service": "mysearchacct", "search_key": "S_KEY"}
@@ -109,9 +103,7 @@ def test_async_search_builder_service_fallback_builds_endpoint() -> None:
 
 def test_async_openai_builder_api_key_path() -> None:
     """Build Async Azure OpenAI client via API key and assert properties."""
-    builder_mod: ModuleType = _reload(
-        "ingenious.client.azure.builder.openai_client_async"
-    )
+    builder_mod: ModuleType = _reload("ingenious.client.azure.builder.openai_client_async")
     AsyncAzureOpenAIClientBuilder = builder_mod.AsyncAzureOpenAIClientBuilder
 
     cfg: dict[str, str] = {
@@ -130,9 +122,7 @@ def test_async_openai_builder_api_key_path() -> None:
 
 def test_async_openai_builder_aad_path() -> None:
     """Build Async Azure OpenAI client via AAD when no key is provided."""
-    builder_mod: ModuleType = _reload(
-        "ingenious.client.azure.builder.openai_client_async"
-    )
+    builder_mod: ModuleType = _reload("ingenious.client.azure.builder.openai_client_async")
     AsyncAzureOpenAIClientBuilder = builder_mod.AsyncAzureOpenAIClientBuilder
 
     cfg: dict[str, str] = {

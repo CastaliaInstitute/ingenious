@@ -113,9 +113,7 @@ async def test_generate_success(
     # Define a realistic, nested mock response from the LLM.
     mock_create_method = AsyncMock(
         return_value=SimpleNamespace(
-            choices=[
-                SimpleNamespace(message=SimpleNamespace(content="Answer [Source 1]"))
-            ]
+            choices=[SimpleNamespace(message=SimpleNamespace(content="Answer [Source 1]"))]
         )
     )
     monkeypatch.setattr(client.chat.completions, "create", mock_create_method)
@@ -153,9 +151,7 @@ async def test_generate_exception(
         raise RuntimeError("oops")
 
     # Ensure awaited call is awaitable
-    monkeypatch.setattr(
-        generator._llm_client.chat.completions, "create", boom, raising=True
-    )
+    monkeypatch.setattr(generator._llm_client.chat.completions, "create", boom, raising=True)
 
     with pytest.raises(RuntimeError):
         await generator.generate("q", [{config.content_field: "x"}])

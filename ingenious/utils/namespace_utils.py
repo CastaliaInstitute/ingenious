@@ -21,6 +21,7 @@ _importer = SafeImporter()
 
 def normalize_workflow_name(workflow_name: str) -> str:
     """Normalize workflow names to support both hyphenated and underscored formats.
+
     Converts hyphens to underscores for module path compatibility.
 
     Args:

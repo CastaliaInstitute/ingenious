@@ -106,9 +106,7 @@ class _DummyChatCompletions:
         Returns:
             A namespace object mimicking the OpenAI chat completion response.
         """
-        return SimpleNamespace(
-            choices=[SimpleNamespace(message=SimpleNamespace(content="3 3"))]
-        )
+        return SimpleNamespace(choices=[SimpleNamespace(message=SimpleNamespace(content="3 3"))])
 
 
 class _DummyChat:

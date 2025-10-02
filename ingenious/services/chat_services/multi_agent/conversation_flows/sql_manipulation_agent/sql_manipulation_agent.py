@@ -173,7 +173,7 @@ class ConversationFlow(IConversationFlow):
 
         # Create SQL tool as function
         async def execute_sql_tool(query: str) -> str:
-            """Execute SQL query on configured database (Azure SQL or SQLite)"""
+            """Execute SQL query on configured database (Azure SQL or SQLite)."""
             try:
                 if use_azure_sql:
                     # Execute on Azure SQL

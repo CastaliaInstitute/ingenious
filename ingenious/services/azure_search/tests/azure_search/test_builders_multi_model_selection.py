@@ -78,9 +78,7 @@ def test_pick_models_first_match_deterministic() -> None:
             api_version="2024-02-01",
         ),
     ]
-    azure = AzureSearchSettings(
-        service="svc", endpoint="https://s", key="sk", index_name="idx"
-    )
+    azure = AzureSearchSettings(service="svc", endpoint="https://s", key="sk", index_name="idx")
 
     picked: Any = _pick_models(_settings(models, azure))
 
@@ -114,8 +112,6 @@ def test_pick_models_requires_any_valid_candidates() -> None:
             api_version="2024-02-01",
         )
     ]
-    azure = AzureSearchSettings(
-        service="svc", endpoint="https://s", key="sk", index_name="idx"
-    )
+    azure = AzureSearchSettings(service="svc", endpoint="https://s", key="sk", index_name="idx")
     with pytest.raises(ConfigError):
         _pick_models(_settings(models, azure))

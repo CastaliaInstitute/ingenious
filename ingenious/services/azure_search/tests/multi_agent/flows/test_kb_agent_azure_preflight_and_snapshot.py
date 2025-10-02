@@ -115,9 +115,7 @@ def _base(monkeypatch: MonkeyPatch) -> Iterator[None]:
     monkeypatch.setattr(
         kb,
         "AzureClientFactory",
-        SimpleNamespace(
-            create_openai_chat_completion_client=lambda _cfg: DummyLLMClient()
-        ),
+        SimpleNamespace(create_openai_chat_completion_client=lambda _cfg: DummyLLMClient()),
     )
 
     for v in (
@@ -140,15 +138,11 @@ def make_cfg(
     """
     cfg = SimpleNamespace()
     cfg.models = [SimpleNamespace(model="gpt-4o")]
-    cfg.azure_search_services = [
-        SimpleNamespace(endpoint=endpoint, key=key, index_name=index)
-    ]
+    cfg.azure_search_services = [SimpleNamespace(endpoint=endpoint, key=key, index_name=index)]
     return cfg
 
 
-def install_azure_sdk(
-    monkeypatch: MonkeyPatch, *, raise_on_count: Exception | None = None
-) -> None:
+def install_azure_sdk(monkeypatch: MonkeyPatch, *, raise_on_count: Exception | None = None) -> None:
     """Simulate the presence of Azure SDK modules.
 
     This function patches `sys.modules` to include dummy versions of the Azure
@@ -166,9 +160,7 @@ def install_azure_sdk(
             self.key = key
 
     class _Client:
-        def __init__(
-            self: _Client, *, endpoint: str, index_name: str, credential: Any
-        ) -> None: ...
+        def __init__(self: _Client, *, endpoint: str, index_name: str, credential: Any) -> None: ...
         async def get_document_count(self: _Client) -> int:
             if raise_on_count:
                 raise raise_on_count
@@ -229,20 +221,15 @@ def test_snapshot_writes_yaml_or_plaintext_and_masks_by_default(
     assert path.exists()
 
     # masked by default
+    assert "***" in snap["kb_service_key_masked"] or "..." in snap["kb_service_key_masked"]
     assert (
-        "***" in snap["kb_service_key_masked"] or "..." in snap["kb_service_key_masked"]
-    )
-    assert (
-        "***" in snap["env_AZURE_SEARCH_KEY_masked"]
-        or "..." in snap["env_AZURE_SEARCH_KEY_masked"]
+        "***" in snap["env_AZURE_SEARCH_KEY_masked"] or "..." in snap["env_AZURE_SEARCH_KEY_masked"]
     )
     # log emitted (INFO in current implementation)
     assert any("[KB Azure Config]" in (r.getMessage() or "") for r in caplog.records)
 
 
-def test_snapshot_masks_secrets_by_default(
-    tmp_path: Path, monkeypatch: MonkeyPatch
-) -> None:
+def test_snapshot_masks_secrets_by_default(tmp_path: Path, monkeypatch: MonkeyPatch) -> None:
     """Verify that the configuration snapshot correctly masks secrets."""
     flow: kb.ConversationFlow = kb.ConversationFlow.__new__(kb.ConversationFlow)
     flow._config = make_cfg(key="abcd1234")
@@ -278,9 +265,7 @@ def test_require_valid_index_not_configured_incomplete_sdk_missing_preflight_fai
 
 
 @pytest.mark.asyncio
-async def test_require_valid_index_variants_async(
-    tmp_path: Path, monkeypatch: MonkeyPatch
-) -> None:
+async def test_require_valid_index_variants_async(tmp_path: Path, monkeypatch: MonkeyPatch) -> None:
     """Test various async failure modes of the Azure index preflight check.
 
     This test covers multiple scenarios where the preflight validation should
@@ -300,9 +285,7 @@ async def test_require_valid_index_variants_async(
         f._memory_path = str(tmp_path)
         f._config = SimpleNamespace(
             models=[SimpleNamespace(model="gpt-4o")],
-            azure_search_services=[
-                SimpleNamespace(endpoint=endpoint, key=key, index_name=index)
-            ],
+            azure_search_services=[SimpleNamespace(endpoint=endpoint, key=key, index_name=index)],
         )
         return f
 
@@ -310,9 +293,7 @@ async def test_require_valid_index_variants_async(
     f1: kb.ConversationFlow = kb.ConversationFlow.__new__(kb.ConversationFlow)
     f1._chat_service = None
     f1._memory_path = str(tmp_path)
-    f1._config = SimpleNamespace(
-        models=[SimpleNamespace(model="gpt-4o")], azure_search_services=[]
-    )
+    f1._config = SimpleNamespace(models=[SimpleNamespace(model="gpt-4o")], azure_search_services=[])
     with pytest.raises(PreflightError) as e1:
         await f1._require_valid_azure_index(logger)
     assert e1.value.reason == "not_configured"
@@ -380,16 +361,12 @@ async def test_azure_only_preflight_failed_bubbles_from_search(
             pass
 
     prov_mod.AzureSearchProvider = _Prov
-    monkeypatch.setitem(
-        sys.modules, "ingenious.services.azure_search.provider", prov_mod
-    )
+    monkeypatch.setitem(sys.modules, "ingenious.services.azure_search.provider", prov_mod)
 
     flow: kb.ConversationFlow = kb.ConversationFlow.__new__(kb.ConversationFlow)
     flow._config = SimpleNamespace(
         models=[SimpleNamespace(model="gpt-4o")],
-        azure_search_services=[
-            SimpleNamespace(endpoint="https://s", key="k", index_name="idx")
-        ],
+        azure_search_services=[SimpleNamespace(endpoint="https://s", key="k", index_name="idx")],
     )
     flow._chat_service = None
     flow._memory_path = str(tmp_path)

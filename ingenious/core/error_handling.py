@@ -1,4 +1,5 @@
-"""Error handling context managers and utilities
+"""Error handling context managers and utilities.
+
 ============================================
 
 This module provides context managers and utilities for consistent error

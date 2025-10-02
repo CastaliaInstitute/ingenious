@@ -69,9 +69,7 @@ def _install_sync_azure_stubs(monkeypatch: pytest.MonkeyPatch) -> None:
     class ClientSecretCredential:  # noqa: N801
         """A stub for the ClientSecretCredential class."""
 
-        def __init__(
-            self, *, tenant_id: str, client_id: str, client_secret: str
-        ) -> None:
+        def __init__(self, *, tenant_id: str, client_id: str, client_secret: str) -> None:
             """Initialize with service principal credentials."""
             self.tenant_id = tenant_id
             self.client_id = client_id
@@ -88,9 +86,7 @@ def _install_sync_azure_stubs(monkeypatch: pytest.MonkeyPatch) -> None:
     class SearchClient:  # noqa: N801
         """A stub for the synchronous SearchClient."""
 
-        def __init__(
-            self, *, endpoint: str, index_name: str, credential: Any, **_: Any
-        ) -> None:
+        def __init__(self, *, endpoint: str, index_name: str, credential: Any, **_: Any) -> None:
             """Initialize the mock search client."""
             self.endpoint = endpoint
             self.index_name = index_name

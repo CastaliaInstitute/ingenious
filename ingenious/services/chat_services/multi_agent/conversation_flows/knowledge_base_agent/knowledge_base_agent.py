@@ -725,6 +725,7 @@ class ConversationFlow(IConversationFlow):
     # -----------------------------
     def _is_azure_search_available(self) -> bool:
         """Best-effort check that the Azure Search provider/SDK is importable.
+
         Does not validate network/keys; runtime failures still fall back (if policy allows).
         """
         try:
@@ -746,6 +747,7 @@ class ConversationFlow(IConversationFlow):
 
     def _ensure_default_azure_index(self, logger: Optional[logging.Logger] = None) -> None:
         """Ensure an index_name is present for Azure service; prefer env default, otherwise a safe fallback.
+
         Emits INFO when env default is used; WARNING on fallback default.
         """
         service = self._azure_service()
@@ -776,6 +778,7 @@ class ConversationFlow(IConversationFlow):
 
     def _should_use_azure_search(self) -> bool:
         """Return True if Azure AI Search is configured (endpoint/key), not mocked, and SDK/provider is available.
+
         Missing index_name is tolerated by applying a default when needed.
         """
         service = self._azure_service()
@@ -813,6 +816,7 @@ class ConversationFlow(IConversationFlow):
 
     def _dump_kb_config_snapshot(self, logger: Optional[logging.Logger] = None) -> dict[str, Any]:
         """Build a masked snapshot of key Azure KB settings.
+
         When diagnostics are enabled, write it to a YAML/plaintext file and log an INFO line.
         """
         svc = self._azure_service()
@@ -950,6 +954,7 @@ class ConversationFlow(IConversationFlow):
         logger: Optional[logging.Logger] = None,
     ) -> None:
         """Asynchronous network preflight: imports SDK and verifies `get_document_count()`.
+
         Raises precise PreflightErrors for sdk_missing and preflight_failed.
         """
         # 1) Preserve precise reason when SDK is missing.
@@ -1016,6 +1021,7 @@ class ConversationFlow(IConversationFlow):
     # -----------------------------
     def _kb_policy(self) -> str:
         """Decide backend behavior.
+
         Allowed: azure_only | prefer_azure | prefer_local | local_only
         Default: azure_only (preserves strict Azure behavior).
         """
@@ -1036,6 +1042,7 @@ class ConversationFlow(IConversationFlow):
 
     def _azure_snippet_cap(self) -> int:
         """Optional cap for Azure snippet/content length.
+
         0 (default) keeps untrimmed behavior. Set KB_AZURE_SNIPPET_CAP=600 to trim.
         """
         v = os.getenv("KB_AZURE_SNIPPET_CAP", "")
@@ -1103,7 +1110,8 @@ class ConversationFlow(IConversationFlow):
         top_k: int,
         logger: Optional[logging.Logger] = None,
     ) -> str:
-        """Policy-aware unified search that chooses Azure or Chroma as needed,
+        """Policy-aware unified search that chooses Azure or Chroma as needed,.
+
         with optional fallbacks based on KB_POLICY and KB_FALLBACK_ON_EMPTY.
         """
         if logger:
@@ -1389,6 +1397,7 @@ class ConversationFlow(IConversationFlow):
         logger: Optional[logging.Logger] = None,
     ) -> str:
         """Local ChromaDB search (used directly or as a fallback).
+
         Returns short, user-friendly messages while logging details server-side.
         """
         knowledge_base_path = self._kb_path

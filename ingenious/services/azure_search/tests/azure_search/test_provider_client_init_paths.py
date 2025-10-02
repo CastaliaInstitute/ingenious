@@ -111,9 +111,7 @@ class _DummyChatCompletions:
 
     async def create(self, *args: Any, **kwargs: Any) -> Any:
         """Return a two-integer string suitable for DAT parsing."""
-        return SimpleNamespace(
-            choices=[SimpleNamespace(message=SimpleNamespace(content="3 3"))]
-        )
+        return SimpleNamespace(choices=[SimpleNamespace(message=SimpleNamespace(content="3 3"))])
 
 
 class _DummyChat:
@@ -183,9 +181,7 @@ def _settings() -> IngeniousSettings:
 
 
 @pytest.mark.asyncio
-async def test_provider_retrieve_instantiates_search_client_via_client_init_with_aad() -> (
-    None
-):
+async def test_provider_retrieve_instantiates_search_client_via_client_init_with_aad() -> None:
     """Verify provider.retrieve builds clients via factory and completes.
 
     What:
@@ -244,9 +240,7 @@ async def test_provider_retrieve_instantiates_search_client_via_client_init_with
         "This placeholder remains until token-based Search credential support is added."
     )
 )
-def test_provider_prefers_token_credential_when_both_key_and_client_credentials_provided() -> (
-    None
-):
+def test_provider_prefers_token_credential_when_both_key_and_client_credentials_provided() -> None:
     """Placeholder: would assert token credential preferred when both are present.
 
     Why:

@@ -30,7 +30,7 @@ from ingenious.models.message import Message as ChatHistoryMessage
 
 
 class AgentChat(BaseModel):
-    """A class used to represent a chat between an agent and a user or between agents
+    """A class used to represent a chat between an agent and a user or between agents.
 
     Attributes:
     ----------

@@ -1,4 +1,5 @@
-"""Comprehensive exception hierarchy for Insight Ingenious
+"""Comprehensive exception hierarchy for Insight Ingenious.
+
 ======================================================
 
 This module provides a standardized exception hierarchy for all components

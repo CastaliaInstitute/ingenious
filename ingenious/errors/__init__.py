@@ -1,4 +1,5 @@
-"""Error handling modules for Insight Ingenious
+"""Error handling modules for Insight Ingenious.
+
 ===========================================
 
 This package provides structured error handling across all Ingenious components

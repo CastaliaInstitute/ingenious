@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
-"""Unit tests for the async Azure client initialization helpers in
+"""Unit tests for the async Azure client initialization helpers in.
+
 `ingenious.services.azure_search.client_init`.
 
 This module validates the following contract:
@@ -150,7 +151,8 @@ def _install_dummy_sdk_modules(
 def _reload_client_init_with_dummies(
     monkeypatch: pytest.MonkeyPatch,
 ) -> tuple[types.ModuleType, dict[str, type[Any]]]:
-    """Install dummy SDKs and then ensure that the factory/builders and client_init
+    """Install dummy SDKs and then ensure that the factory/builders and client_init.
+
     bind to those dummy modules, even if they were imported earlier.
 
     Implementation detail:

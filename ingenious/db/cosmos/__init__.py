@@ -35,9 +35,7 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
         self._create_containers()
 
     def _create_database(self, database_id):
-        authentication_method = getattr(
-            self.config.cosmos_service, "authentication_method", None
-        )
+        authentication_method = getattr(self.config.cosmos_service, "authentication_method", None)
 
         if authentication_method == AuthenticationMethod.TOKEN:
             self.database = self.client.create_database_if_not_exists(id=database_id)
@@ -45,14 +43,10 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
             self.database = self.client.get_database_client(database_id)
 
     def _create_containers(self):
-        authentication_method = getattr(
-            self.config.cosmos_service, "authentication_method", None
-        )
+        authentication_method = getattr(self.config.cosmos_service, "authentication_method", None)
         if authentication_method == AuthenticationMethod.TOKEN:
-            self.chat_history: ContainerProxy = (
-                self.database.create_container_if_not_exists(
-                    id="chat_history", partition_key=PartitionKey(path="/thread_id")
-                )
+            self.chat_history: ContainerProxy = self.database.create_container_if_not_exists(
+                id="chat_history", partition_key=PartitionKey(path="/thread_id")
             )
             self.chat_history_summary: ContainerProxy = (
                 self.database.create_container_if_not_exists(
@@ -69,32 +63,22 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
             self.steps: ContainerProxy = self.database.create_container_if_not_exists(
                 id="steps", partition_key=PartitionKey(path="/threadId")
             )
-            self.elements: ContainerProxy = (
-                self.database.create_container_if_not_exists(
-                    id="elements", partition_key=PartitionKey(path="/threadId")
-                )
+            self.elements: ContainerProxy = self.database.create_container_if_not_exists(
+                id="elements", partition_key=PartitionKey(path="/threadId")
             )
-            self.feedbacks: ContainerProxy = (
-                self.database.create_container_if_not_exists(
-                    id="feedbacks", partition_key=PartitionKey(path="/threadId")
-                )
+            self.feedbacks: ContainerProxy = self.database.create_container_if_not_exists(
+                id="feedbacks", partition_key=PartitionKey(path="/threadId")
             )
         else:
-            self.chat_history: ContainerProxy = self.database.get_container_client(
-                "chat_history"
-            )
-            self.chat_history_summary: ContainerProxy = (
-                self.database.get_container_client("chat_history_summary")
+            self.chat_history: ContainerProxy = self.database.get_container_client("chat_history")
+            self.chat_history_summary: ContainerProxy = self.database.get_container_client(
+                "chat_history_summary"
             )
             self.users: ContainerProxy = self.database.get_container_client("users")
             self.threads: ContainerProxy = self.database.get_container_client("threads")
             self.steps: ContainerProxy = self.database.get_container_client("steps")
-            self.elements: ContainerProxy = self.database.get_container_client(
-                "elements"
-            )
-            self.feedbacks: ContainerProxy = self.database.get_container_client(
-                "feedbacks"
-            )
+            self.elements: ContainerProxy = self.database.get_container_client("elements")
+            self.feedbacks: ContainerProxy = self.database.get_container_client("feedbacks")
 
     # Utility mappers
     def _message_to_doc(self, m: Message) -> Dict[str, Any]:
@@ -165,9 +149,7 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
                 "createdAt": None if metadata is not None else None,
                 "name": name
                 if name is not None
-                else (
-                    metadata.get("name") if metadata and "name" in metadata else None
-                ),
+                else (metadata.get("name") if metadata and "name" in metadata else None),
                 "userId": user_id,
                 "userIdentifier": user_identifier,
                 "tags": tags,
@@ -224,9 +206,7 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
                 from uuid import UUID as _UUID
 
                 return IChatHistoryRepository.User(
-                    id=_UUID(
-                        str(d.get("id") or "00000000-0000-0000-0000-000000000000")
-                    ),
+                    id=_UUID(str(d.get("id") or "00000000-0000-0000-0000-000000000000")),
                     identifier=str(d.get("identifier", "")),
                     metadata=dict(d.get("metadata", {})),
                     createdAt=str(d.get("createdAt")) if d.get("createdAt") else None,
@@ -271,13 +251,9 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
             messages = [self._doc_to_message(d) for d in reversed(docs)]
             return messages
         except Exception as e:
-            raise DatabaseQueryError(
-                "Failed to get thread messages from Cosmos", cause=e
-            )
+            raise DatabaseQueryError("Failed to get thread messages from Cosmos", cause=e)
 
-    def _query_threads(
-        self, identifier: str, thread_id: Optional[str]
-    ) -> List[Dict[str, Any]]:
+    def _query_threads(self, identifier: str, thread_id: Optional[str]) -> List[Dict[str, Any]]:
         """Query threads for a user, optionally filtered by thread ID."""
         if thread_id:
             return list(
@@ -298,13 +274,9 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
             )
         )
 
-    def _query_steps_for_threads(
-        self, thread_ids: List[str]
-    ) -> Dict[str, List[Dict[str, Any]]]:
+    def _query_steps_for_threads(self, thread_ids: List[str]) -> Dict[str, List[Dict[str, Any]]]:
         """Query all steps for given thread IDs."""
-        steps_by_thread: Dict[str, List[Dict[str, Any]]] = {
-            tid: [] for tid in thread_ids
-        }
+        steps_by_thread: Dict[str, List[Dict[str, Any]]] = {tid: [] for tid in thread_ids}
         for tid in thread_ids:
             docs = list(
                 self.steps.query_items(
@@ -316,13 +288,9 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
             steps_by_thread[tid] = docs
         return steps_by_thread
 
-    def _query_elements_for_threads(
-        self, thread_ids: List[str]
-    ) -> Dict[str, List[Dict[str, Any]]]:
+    def _query_elements_for_threads(self, thread_ids: List[str]) -> Dict[str, List[Dict[str, Any]]]:
         """Query all elements for given thread IDs."""
-        elements_by_thread: Dict[str, List[Dict[str, Any]]] = {
-            tid: [] for tid in thread_ids
-        }
+        elements_by_thread: Dict[str, List[Dict[str, Any]]] = {tid: [] for tid in thread_ids}
         for tid in thread_ids:
             docs = list(
                 self.elements.query_items(
@@ -510,9 +478,7 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
                         raw_display = "inline"
                     raw_size = el.get("size")
                     allowed_sizes = {"small", "medium", "large"}
-                    size_val: Optional[str] = (
-                        str(raw_size) if raw_size in allowed_sizes else None
-                    )
+                    size_val: Optional[str] = str(raw_size) if raw_size in allowed_sizes else None
                     page_val: Optional[int] = None
                     _page = el.get("page")
                     if isinstance(_page, (int, str)):
@@ -523,20 +489,14 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
 
                     el_dict: IChatHistoryRepository.ElementDict = {
                         "id": str(el.get("id", "")),
-                        "threadId": str(el.get("threadId"))
-                        if el.get("threadId")
-                        else None,
+                        "threadId": str(el.get("threadId")) if el.get("threadId") else None,
                         "type": cast(IChatHistoryRepository.ElementType, raw_el_type),
                         "chainlitKey": el.get("chainlitKey"),
                         "url": el.get("url"),
                         "objectKey": el.get("objectKey"),
                         "name": str(el.get("name", "")),
-                        "display": cast(
-                            IChatHistoryRepository.ElementDisplay, raw_display
-                        ),
-                        "size": cast(
-                            Optional[IChatHistoryRepository.ElementSize], size_val
-                        ),
+                        "display": cast(IChatHistoryRepository.ElementDisplay, raw_display),
+                        "size": cast(Optional[IChatHistoryRepository.ElementSize], size_val),
                         "language": el.get("language"),
                         "page": page_val,
                         "autoPlay": el.get("autoPlay"),
@@ -550,9 +510,7 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
 
             return result
         except Exception as e:
-            raise DatabaseQueryError(
-                "Failed to get threads for user from Cosmos", cause=e
-            )
+            raise DatabaseQueryError("Failed to get threads for user from Cosmos", cause=e)
 
     async def update_message_feedback(
         self, message_id: str, thread_id: str, positive_feedback: bool | None
@@ -576,9 +534,7 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
             self.chat_history.replace_item(item=doc, body=doc)
             return None
         except Exception as e:
-            raise DatabaseQueryError(
-                "Failed to update message feedback in Cosmos", cause=e
-            )
+            raise DatabaseQueryError("Failed to update message feedback in Cosmos", cause=e)
 
     async def update_message_content_filter_results(
         self, message_id: str, thread_id: str, content_filter_results: dict[str, object]
@@ -624,9 +580,7 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
             self.chat_history_summary.replace_item(item=doc, body=doc)
             return None
         except Exception as e:
-            raise DatabaseQueryError(
-                "Failed to update memory feedback in Cosmos", cause=e
-            )
+            raise DatabaseQueryError("Failed to update memory feedback in Cosmos", cause=e)
 
     async def update_memory_content_filter_results(
         self, message_id: str, thread_id: str, content_filter_results: dict[str, object]
@@ -719,9 +673,7 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
                 )
             )
             for d in docs:
-                self.chat_history_summary.delete_item(
-                    item=d["id"], partition_key=thread_id
-                )
+                self.chat_history_summary.delete_item(item=d["id"], partition_key=thread_id)
 
             # Delete steps, elements, feedbacks
             for container in (self.steps, self.elements, self.feedbacks):
@@ -767,14 +719,10 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
                 )
             )
             for d in docs:
-                self.chat_history_summary.delete_item(
-                    item=d["id"], partition_key=thread_id
-                )
+                self.chat_history_summary.delete_item(item=d["id"], partition_key=thread_id)
             return None
         except Exception as e:
-            raise DatabaseQueryError(
-                "Failed to delete thread memory in Cosmos", cause=e
-            )
+            raise DatabaseQueryError("Failed to delete thread memory in Cosmos", cause=e)
 
     async def delete_user_memory(self, user_id: str) -> None:
         try:
@@ -790,9 +738,7 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
                 thread_pk = d.get("thread_id")
                 if thread_pk is None:
                     continue
-                self.chat_history_summary.delete_item(
-                    item=d["id"], partition_key=thread_pk
-                )
+                self.chat_history_summary.delete_item(item=d["id"], partition_key=thread_pk)
             return None
         except Exception as e:
             raise DatabaseQueryError("Failed to delete user memory in Cosmos", cause=e)

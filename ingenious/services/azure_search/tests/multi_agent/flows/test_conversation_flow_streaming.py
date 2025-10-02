@@ -48,9 +48,7 @@ def msg_text(text: str) -> SimpleNamespace:
 
 def msg_usage(total: int, completion: int) -> SimpleNamespace:
     """Create a message object carrying token usage."""
-    return SimpleNamespace(
-        usage=_Usage(total_tokens=total, completion_tokens=completion)
-    )
+    return SimpleNamespace(usage=_Usage(total_tokens=total, completion_tokens=completion))
 
 
 class ToolCallDelta:
@@ -171,9 +169,7 @@ def flow_fixture(
     monkeypatch.setattr(
         kba,
         "AzureClientFactory",
-        SimpleNamespace(
-            create_openai_chat_completion_client=MagicMock(side_effect=_mk_client)
-        ),
+        SimpleNamespace(create_openai_chat_completion_client=MagicMock(side_effect=_mk_client)),
     )
 
     # --- Mock AssistantAgent.run_stream ---------------------------------------
@@ -201,9 +197,7 @@ def flow_fixture(
             # Not used in these streaming tests
             return SimpleNamespace(chat_message=SimpleNamespace(content=""))
 
-        def run_stream(
-            self, task: Any, cancellation_token: Any
-        ) -> AsyncGenerator[Any, None]:
+        def run_stream(self, task: Any, cancellation_token: Any) -> AsyncGenerator[Any, None]:
             """Yield a sequence of items defined by the test controls."""
 
             async def _gen() -> AsyncGenerator[Any, None]:
@@ -285,14 +279,10 @@ class TestGetStreamingConversationResponse:
         req = SimpleNamespace(thread_id="thread-1", user_prompt="How does it work?")
 
         # Act
-        chunks: list[Any] = await _collect_chunks(
-            flow.get_streaming_conversation_response(req)
-        )
+        chunks: list[Any] = await _collect_chunks(flow.get_streaming_conversation_response(req))
 
         # Assert sequence and types
-        assert (
-            len(chunks) >= 6
-        )  # status, status, content, content, token_count, token_count, final
+        assert len(chunks) >= 6  # status, status, content, content, token_count, token_count, final
         assert chunks[0].chunk_type == "status" and "Searching" in chunks[0].content
         assert chunks[1].chunk_type == "status" and "Generating" in chunks[1].content
         assert chunks[2].chunk_type == "content" and chunks[2].content == "Hello "
@@ -339,14 +329,10 @@ class TestGetStreamingConversationResponse:
         ]
 
         # Fallback token calc
-        monkeypatch.setattr(
-            flow, "_safe_count_tokens", AsyncMock(return_value=(40, 10))
-        )
+        monkeypatch.setattr(flow, "_safe_count_tokens", AsyncMock(return_value=(40, 10)))
 
         req = SimpleNamespace(thread_id="tid-tools", user_prompt="Q?")
-        chunks: list[Any] = await _collect_chunks(
-            flow.get_streaming_conversation_response(req)
-        )
+        chunks: list[Any] = await _collect_chunks(flow.get_streaming_conversation_response(req))
 
         # Expect 3 status entries: initial searching, generating, tool event status
         status_chunks = [c for c in chunks if c.chunk_type == "status"]
@@ -385,9 +371,7 @@ class TestGetStreamingConversationResponse:
         monkeypatch.setattr(flow, "_safe_count_tokens", AsyncMock(return_value=(20, 5)))
 
         req = SimpleNamespace(thread_id="tid-plain", user_prompt="Q?")
-        chunks: list[Any] = await _collect_chunks(
-            flow.get_streaming_conversation_response(req)
-        )
+        chunks: list[Any] = await _collect_chunks(flow.get_streaming_conversation_response(req))
 
         content_chunks = [c for c in chunks if c.chunk_type == "content"]
         assert len(content_chunks) == 1
@@ -416,9 +400,7 @@ class TestGetStreamingConversationResponse:
         monkeypatch.setattr(flow, "_safe_count_tokens", AsyncMock(return_value=(10, 2)))
 
         req = SimpleNamespace(thread_id="tid-flush", user_prompt="Q?")
-        chunks: list[Any] = await _collect_chunks(
-            flow.get_streaming_conversation_response(req)
-        )
+        chunks: list[Any] = await _collect_chunks(flow.get_streaming_conversation_response(req))
 
         contents: list[str] = [c.content for c in chunks if c.chunk_type == "content"]
         assert contents == ["partial ", "tail"]
@@ -448,15 +430,11 @@ class TestGetStreamingConversationResponse:
         monkeypatch.setattr(flow, "_safe_count_tokens", AsyncMock(return_value=(60, 6)))
 
         req = SimpleNamespace(thread_id="tid-inner", user_prompt="Q?")
-        chunks: list[Any] = await _collect_chunks(
-            flow.get_streaming_conversation_response(req)
-        )
+        chunks: list[Any] = await _collect_chunks(flow.get_streaming_conversation_response(req))
 
         # Should have a content chunk echoing the error
         err_chunks = [
-            c
-            for c in chunks
-            if c.chunk_type == "content" and "Error during streaming" in c.content
+            c for c in chunks if c.chunk_type == "content" and "Error during streaming" in c.content
         ]
         assert len(err_chunks) == 1
         assert "boom" in err_chunks[0].content
@@ -491,9 +469,7 @@ class TestGetStreamingConversationResponse:
         )
 
         req = SimpleNamespace(thread_id="tid-outer", user_prompt="Q?")
-        chunks: list[Any] = await _collect_chunks(
-            flow.get_streaming_conversation_response(req)
-        )
+        chunks: list[Any] = await _collect_chunks(flow.get_streaming_conversation_response(req))
 
         assert len(chunks) == 2
         assert chunks[0].chunk_type == "status"
@@ -519,9 +495,7 @@ class TestGetStreamingConversationResponse:
         monkeypatch.setattr(flow, "_safe_count_tokens", AsyncMock(return_value=(8, 2)))
 
         req = SimpleNamespace(thread_id="tid-cleanup", user_prompt="Q?")
-        chunks: list[Any] = await _collect_chunks(
-            flow.get_streaming_conversation_response(req)
-        )
+        chunks: list[Any] = await _collect_chunks(flow.get_streaming_conversation_response(req))
 
         assert chunks[-1].chunk_type == "final"
         # We still expect token accounting and graceful termination.
@@ -542,9 +516,7 @@ class TestGetStreamingConversationResponse:
         controls.stream_items = [msg_usage(120, 20)]
 
         req = SimpleNamespace(thread_id="tid-usage", user_prompt="Q?")
-        chunks: list[Any] = await _collect_chunks(
-            flow.get_streaming_conversation_response(req)
-        )
+        chunks: list[Any] = await _collect_chunks(flow.get_streaming_conversation_response(req))
 
         token_chunks = [c for c in chunks if c.chunk_type == "token_count"]
         assert [t.token_count for t in token_chunks] == [120, 120]
@@ -554,9 +526,7 @@ class TestGetStreamingConversationResponse:
         assert final.token_count == 120
         assert final.max_token_count == 20
         # No content produced in this scenario
-        assert all(
-            c.chunk_type != "content" for c in chunks[2:-2]
-        )  # after 2 initial statuses
+        assert all(c.chunk_type != "content" for c in chunks[2:-2])  # after 2 initial statuses
 
     @pytest.mark.asyncio
     async def test_first_fallback_calls_safe_count_tokens_when_no_usage(
@@ -579,9 +549,7 @@ class TestGetStreamingConversationResponse:
         monkeypatch.setattr(flow, "_safe_count_tokens", mock_counter)
 
         req = SimpleNamespace(thread_id="tid-fallback1", user_prompt="Where?")
-        chunks: list[Any] = await _collect_chunks(
-            flow.get_streaming_conversation_response(req)
-        )
+        chunks: list[Any] = await _collect_chunks(flow.get_streaming_conversation_response(req))
 
         # Final carries fallback values
         assert chunks[-1].chunk_type == "final"
@@ -615,13 +583,9 @@ class TestGetStreamingConversationResponse:
         """
         flow, controls = flow_fixture
         # Make memory context non-empty to ensure system_message changes
-        monkeypatch.setattr(
-            flow, "_build_memory_context", AsyncMock(return_value="CTX ")
-        )
+        monkeypatch.setattr(flow, "_build_memory_context", AsyncMock(return_value="CTX "))
         # Ensure safe counter raises to force heuristic
-        monkeypatch.setattr(
-            flow, "_safe_count_tokens", AsyncMock(side_effect=RuntimeError("boom"))
-        )
+        monkeypatch.setattr(flow, "_safe_count_tokens", AsyncMock(side_effect=RuntimeError("boom")))
 
         content = "ABCDEFGHIJKL"  # 12 chars
         controls.stream_items = [msg_text(content)]
@@ -633,9 +597,7 @@ class TestGetStreamingConversationResponse:
         expected_total: int = (len(system_message) + len(user_msg) + len(content)) // 4
         expected_completion: int = len(content) // 4
 
-        chunks: list[Any] = await _collect_chunks(
-            flow.get_streaming_conversation_response(req)
-        )
+        chunks: list[Any] = await _collect_chunks(flow.get_streaming_conversation_response(req))
 
         final: Any = chunks[-1]
         assert final.chunk_type == "final"
@@ -662,17 +624,13 @@ class TestGetStreamingConversationResponse:
 
         # With thread_id
         req1 = SimpleNamespace(thread_id="T1", user_prompt="Q")
-        chunks1: list[Any] = await _collect_chunks(
-            flow.get_streaming_conversation_response(req1)
-        )
+        chunks1: list[Any] = await _collect_chunks(flow.get_streaming_conversation_response(req1))
         assert {c.thread_id for c in chunks1} == {"T1"}
 
         # Without thread_id
         req2 = SimpleNamespace(thread_id=None, user_prompt="Q")
         controls.stream_items = [msg_text("b")]  # reset small stream for second call
-        chunks2: list[Any] = await _collect_chunks(
-            flow.get_streaming_conversation_response(req2)
-        )
+        chunks2: list[Any] = await _collect_chunks(flow.get_streaming_conversation_response(req2))
         assert {c.thread_id for c in chunks2} == {""}
 
     @pytest.mark.asyncio
@@ -741,9 +699,7 @@ class TestGetStreamingConversationResponse:
         monkeypatch.setattr(flow, "_safe_count_tokens", AsyncMock(return_value=(12, 3)))
 
         req = SimpleNamespace(thread_id="tid-long", user_prompt="Q?")
-        chunks: list[Any] = await _collect_chunks(
-            flow.get_streaming_conversation_response(req)
-        )
+        chunks: list[Any] = await _collect_chunks(flow.get_streaming_conversation_response(req))
 
         final: Any = chunks[-1]
         assert final.chunk_type == "final"

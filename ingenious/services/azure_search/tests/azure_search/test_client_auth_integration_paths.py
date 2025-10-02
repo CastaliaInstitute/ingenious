@@ -112,9 +112,7 @@ async def test_provider_retrieve_instantiates_clients_via_pipeline_factories() -
             SimpleNamespace(
                 role="embedding", deployment="emb", endpoint="https://aoai", api_key="k"
             ),
-            SimpleNamespace(
-                role="chat", deployment="gen", endpoint="https://aoai", api_key="k"
-            ),
+            SimpleNamespace(role="chat", deployment="gen", endpoint="https://aoai", api_key="k"),
         ],
         azure_search_services=[
             SimpleNamespace(
@@ -127,14 +125,10 @@ async def test_provider_retrieve_instantiates_clients_via_pipeline_factories() -
     )
 
     # 👇 Patch the correct seam
-    with patch(
-        "ingenious.services.azure_search.client_init.AzureClientFactory", _Factory
-    ):
+    with patch("ingenious.services.azure_search.client_init.AzureClientFactory", _Factory):
         from ingenious.services.azure_search.provider import AzureSearchProvider
 
-        provider = AzureSearchProvider(
-            settings_or_config=settings, enable_answer_generation=False
-        )
+        provider = AzureSearchProvider(settings_or_config=settings, enable_answer_generation=False)
         try:
             rows = await provider.retrieve("q", top_k=1)
             assert rows and rows[0]["id"] == "1"

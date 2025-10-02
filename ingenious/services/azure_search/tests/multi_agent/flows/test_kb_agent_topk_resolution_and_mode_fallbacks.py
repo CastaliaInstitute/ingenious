@@ -94,7 +94,8 @@ def test_non_numeric_and_non_positive_topk_values_are_ignored(
 
 @pytest.mark.asyncio
 async def test_invalid_kb_mode_coerces_to_direct(tmp_path: Path, monkeypatch: MonkeyPatch) -> None:
-    """Ensure an invalid KB_MODE coerces to 'direct' (top_k=3) AND that the Azure path
+    """Ensure an invalid KB_MODE coerces to 'direct' (top_k=3) AND that the Azure path.
+
     is actually taken (preflight succeeds) so the final response contains the
     'Azure AI Search' prefix.
 
@@ -150,7 +151,9 @@ async def test_invalid_kb_mode_coerces_to_direct(tmp_path: Path, monkeypatch: Mo
             self.k = k
 
     class _Client:
-        """Fake async SearchClient; implements the two async methods the KB preflight needs:
+        """Fake async SearchClient; implements the two async methods the KB preflight needs.
+
+        Methods implemented:
         - get_document_count()
         - close()
         """
@@ -187,6 +190,7 @@ async def test_invalid_kb_mode_coerces_to_direct(tmp_path: Path, monkeypatch: Mo
     #    module is NOT sufficient because the KB file imported the function by value.
     def _make_fake_client_from_cfg(cfg: Any) -> _Client:
         """Build our fake async client using the stub config the KB preflight passes.
+
         The stub exposes:
           - search_endpoint
           - search_index_name

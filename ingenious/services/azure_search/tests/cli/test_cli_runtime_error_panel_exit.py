@@ -1,4 +1,5 @@
 """Test the CLI's runtime error handling and user-facing output.
+
 This module verifies that when the command-line interface encounters an unhandled
 exception during its execution, it catches the error and presents a
 user-friendly message to the console. It specifically checks that different
@@ -21,6 +22,7 @@ if TYPE_CHECKING:
 
 class DummyHTTPError(Exception):
     """Simulate an HTTP-like error with a status code for testing.
+
     This exception helps create predictable failure scenarios that mimic
     real-world API or network problems, allowing tests to verify how the
     application handles specific error status codes.
@@ -49,6 +51,7 @@ class DummyHTTPError(Exception):
 )
 def test_cli_runtime_error_shows_panel_and_exit_1(exc: Exception) -> None:
     """Verify runtime errors display a friendly panel and exit gracefully.
+
     This test ensures that non-verbose runtime errors, whether they are
     custom HTTP-like errors or generic exceptions, surface a helpful error
     panel to the user. It also confirms the output includes a hint to use

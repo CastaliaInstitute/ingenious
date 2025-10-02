@@ -146,7 +146,8 @@ def make_config(
 
 
 def install_azure_sdk_ok(monkeypatch: pytest.MonkeyPatch) -> None:
-    """Install a minimal, in-process *fake* Azure SDK and ensure the KB module
+    """Install a minimal, in-process *fake* Azure SDK and ensure the KB module.
+
     builds its SearchClient from that fake.
 
     Why:
@@ -171,6 +172,7 @@ def install_azure_sdk_ok(monkeypatch: pytest.MonkeyPatch) -> None:
 
     class _FakeAzureKeyCredential:
         """Fake replacement for azure.core.credentials.AzureKeyCredential.
+
         We only store the key for realism; no real auth happens in tests.
         """
 
@@ -178,7 +180,8 @@ def install_azure_sdk_ok(monkeypatch: pytest.MonkeyPatch) -> None:
             self.key = key
 
     class _FakeAsyncSearchClient:
-        """Fake replacement for azure.search.documents.aio.SearchClient with the
+        """Fake replacement for azure.search.documents.aio.SearchClient with the.
+
         two async methods our KB preflight actually calls.
         """
 
@@ -189,13 +192,14 @@ def install_azure_sdk_ok(monkeypatch: pytest.MonkeyPatch) -> None:
             self._closed = False
 
         async def get_document_count(self) -> int:
-            """Simulate a successful health check. If you need to simulate failures
+            """Simulate a successful health check. If you need to simulate failures.
+
             (e.g., 401/timeout) in other tests, you can modify this to raise.
             """
             return 1
 
         async def close(self) -> None:
-            """Simulate the real client's async close()."""
+            """Simulate closing the real client asynchronously."""
             self._closed = True
 
     # ---------------------------------------------------
@@ -222,7 +226,8 @@ def install_azure_sdk_ok(monkeypatch: pytest.MonkeyPatch) -> None:
     import ingenious.services.chat_services.multi_agent.conversation_flows.knowledge_base_agent.knowledge_base_agent as kb
 
     def _build_fake_client_from_cfg(cfg: Any) -> _FakeAsyncSearchClient:
-        """KB preflight passes a SimpleNamespace with:
+        """KB preflight passes a SimpleNamespace with attributes.
+
           - search_endpoint
           - search_index_name
           - search_key (string or SecretStr)

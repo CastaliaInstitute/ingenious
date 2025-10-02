@@ -249,9 +249,7 @@ def test_get_config_logs_and_reraises_on_validation_error(
             """Raise an exception to simulate a Pydantic validation failure."""
             raise RuntimeError("boom-config")
 
-    monkeypatch.setattr(
-        "ingenious.config.IngeniousSettings", BoomSettings, raising=True
-    )
+    monkeypatch.setattr("ingenious.config.IngeniousSettings", BoomSettings, raising=True)
 
     with caplog.at_level(logging.ERROR, logger="ing-config-test"):
         with pytest.raises(RuntimeError, match="boom-config"):

@@ -53,8 +53,9 @@ class _AsyncResults:
 
 
 class FlakySearchClient:
-    """Simulates an Azure Search client with internal retry policy:
-    two 429 "failures" then success — all inside a single .search() call.
+    """Simulates an Azure Search client with internal retry policy.
+
+    Two 429 "failures" then success — all inside a single .search() call.
     """
 
     calls: int
@@ -96,7 +97,8 @@ class DummyEmbeddingsClient:
 
 @pytest.mark.asyncio
 async def test_retry_on_429_then_success() -> None:
-    """Validates we succeed through the normal call path when the underlying
+    """Validates we succeed through the normal call path when the underlying.
+
     client handles transient 429s via its own retry policy.
     """
     cfg = SimpleNamespace(

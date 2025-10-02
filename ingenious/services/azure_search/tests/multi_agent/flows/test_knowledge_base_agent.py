@@ -116,6 +116,7 @@ class MockAssistantAgent:
 @pytest.fixture(autouse=True)
 def patch_tool_and_agent(monkeypatch: pytest.MonkeyPatch) -> None:
     """Patches FunctionTool, AssistantAgent, and installs a minimal fake Azure SDK.
+
     ALSO patches the KB module's `make_async_search_client` so strict preflight
     (`await client.get_document_count()`) *always* succeeds in tests.
 
@@ -175,13 +176,14 @@ def patch_tool_and_agent(monkeypatch: pytest.MonkeyPatch) -> None:
 
         async def get_document_count(self) -> int:
             """Return a deterministic positive value so preflight "passes".
+
             If you need a failing preflight in a specific test, you can monkeypatch
             this method there to raise (e.g., RuntimeError("401")).
             """
             return 1
 
         async def close(self) -> None:
-            """Fake async close() to match real client surface."""
+            """Simulate closing the fake async client."""
             pass
 
     aio.SearchClient = _Client
@@ -206,7 +208,8 @@ def patch_tool_and_agent(monkeypatch: pytest.MonkeyPatch) -> None:
     #    not the factory module, because the KB file imported the function by value.
     # ------------------------------------------------------------------
     def _build_fake_client_from_cfg(cfg: Any) -> _Client:
-        """The KB preflight passes a SimpleNamespace-like object with:
+        """The KB preflight passes a SimpleNamespace-like object with attributes.
+
           - search_endpoint
           - search_index_name
           - search_key (either a plain str or a SecretStr)

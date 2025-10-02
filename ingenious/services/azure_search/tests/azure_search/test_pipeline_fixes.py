@@ -54,9 +54,7 @@ async def test_pipeline_semantic_rerank_id_escaping_or_clause(
 
     # Assert: Check the arguments passed to the rerank client's search method
     rerank_client.search.assert_awaited_once()
-    assert (
-        rerank_client.search.call_args is not None
-    )  # Ensures call_args is not None for mypy
+    assert rerank_client.search.call_args is not None  # Ensures call_args is not None for mypy
     call_kwargs: dict[str, Any] = rerank_client.search.call_args.kwargs
     filter_query: str | None = call_kwargs.get("filter")
 

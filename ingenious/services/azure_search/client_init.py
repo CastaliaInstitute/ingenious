@@ -125,9 +125,7 @@ def _normalize_openai_options(client_options: dict[str, Any]) -> dict[str, Any]:
     return out
 
 
-def make_async_search_client(
-    cfg: "SearchConfig", **client_options: Any
-) -> "SearchClient":
+def make_async_search_client(cfg: "SearchConfig", **client_options: Any) -> "SearchClient":
     """Create the async Azure Search client via the selected factory.
 
     Any keyword args in `client_options` are forwarded verbatim to the underlying
@@ -156,9 +154,7 @@ def make_async_search_client(
     )
 
 
-def make_async_openai_client(
-    cfg: "SearchConfig", **client_options: Any
-) -> "AsyncAzureOpenAI":
+def make_async_openai_client(cfg: "SearchConfig", **client_options: Any) -> "AsyncAzureOpenAI":
     """Create the async Azure OpenAI client via the selected factory.
 
     Behavior:

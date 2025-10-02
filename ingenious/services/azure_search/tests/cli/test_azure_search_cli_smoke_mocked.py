@@ -1,4 +1,5 @@
 """Smoke tests for the Azure Search CLI end-to-end functionality.
+
 This module verifies that the `azure-search run` command-line interface
 can be invoked successfully with the required environment variables and
 arguments. It uses mocks to avoid actual network calls to Azure services,
@@ -18,6 +19,7 @@ if TYPE_CHECKING:
 
 def test_azure_search_run_smoke_success() -> None:
     """Test that the 'azure-search run' command executes successfully.
+
     This smoke test ensures the CLI command can be invoked with all necessary
     options and environment variables, triggering the underlying search
     pipeline logic without errors.
