@@ -179,9 +179,19 @@ class IChatHistoryRepository(ABC):
         elements: Optional[List["IChatHistoryRepository.ElementDict"]]
 
     def get_now(self) -> datetime:
+        """Get the current UTC datetime.
+
+        Returns:
+            Current datetime object in UTC timezone.
+        """
         return datetime.now(timezone.utc)
 
     def get_now_as_string(self) -> str:
+        """Get the current UTC datetime as a formatted string.
+
+        Returns:
+            ISO-formatted datetime string with microseconds and timezone.
+        """
         return self.get_now().strftime("%Y-%m-%d %H:%M:%S.%f%z")
 
     @abstractmethod
@@ -193,6 +203,18 @@ class IChatHistoryRepository(ABC):
         metadata: Optional[Dict[str, object]] = None,
         tags: Optional[List[str]] = None,
     ) -> str:
+        """Update thread metadata and properties.
+
+        Args:
+            thread_id: Unique identifier for the thread.
+            name: Optional display name for the thread.
+            user_id: Optional user identifier associated with the thread.
+            metadata: Optional key-value metadata dictionary.
+            tags: Optional list of tags for categorization.
+
+        Returns:
+            The thread ID after successful update.
+        """
         pass
 
     @abstractmethod
@@ -217,33 +239,78 @@ class IChatHistoryRepository(ABC):
 
     @abstractmethod
     async def get_thread_messages(self, thread_id: str) -> list[Message]:
+        """Retrieve all messages for a specific thread.
+
+        Args:
+            thread_id: Unique identifier for the thread.
+
+        Returns:
+            List of Message objects belonging to the thread.
+        """
         pass
 
     @abstractmethod
     async def get_threads_for_user(
         self, identifier: str, thread_id: Optional[str]
     ) -> Optional[List["IChatHistoryRepository.ThreadDict"]]:
+        """Retrieve all threads for a user, optionally filtered by thread ID.
+
+        Args:
+            identifier: User identifier to filter threads by.
+            thread_id: Optional specific thread ID to retrieve.
+
+        Returns:
+            List of ThreadDict objects for the user, or None if no threads exist.
+        """
         pass
 
     @abstractmethod
     async def update_message_feedback(
         self, message_id: str, thread_id: str, positive_feedback: bool | None
     ) -> None:
+        """Update the feedback status for a specific message.
+
+        Args:
+            message_id: Unique identifier for the message.
+            thread_id: Thread containing the message.
+            positive_feedback: True for positive, False for negative, None to clear feedback.
+        """
         pass
 
     @abstractmethod
     async def update_message_content_filter_results(
         self, message_id: str, thread_id: str, content_filter_results: dict[str, object]
     ) -> None:
+        """Update content filter results for a specific message.
+
+        Args:
+            message_id: Unique identifier for the message.
+            thread_id: Thread containing the message.
+            content_filter_results: Dictionary containing content moderation results.
+        """
         pass
 
     @abstractmethod
     async def delete_thread(self, thread_id: str) -> None:
+        """Delete a thread and all associated messages.
+
+        Args:
+            thread_id: Unique identifier for the thread to delete.
+        """
         pass
 
 
 class ChatHistoryRepository:
     def __init__(self, db_type: DatabaseClientType, config: IngeniousSettings) -> None:
+        """Initialize the chat history repository with dynamic database backend.
+
+        Args:
+            db_type: Type of database client to use (SQLite, AzureSQL, Cosmos, etc.).
+            config: Application configuration settings.
+
+        Raises:
+            ValueError: If the specified database client type is not supported.
+        """
         module_name = f"ingenious.db.{db_type.value.lower()}"
         class_name = f"{db_type.value.lower()}_ChatHistoryRepository"
 
@@ -263,6 +330,18 @@ class ChatHistoryRepository:
         metadata: Optional[Dict[str, object]] = None,
         tags: Optional[List[str]] = None,
     ) -> str:
+        """Update thread metadata and properties through the repository adapter.
+
+        Args:
+            thread_id: Unique identifier for the thread.
+            name: Optional display name for the thread.
+            user_id: Optional user identifier associated with the thread.
+            metadata: Optional key-value metadata dictionary.
+            tags: Optional list of tags for categorization.
+
+        Returns:
+            The thread ID after successful update.
+        """
         return str(
             await self.repository.update_thread(
                 thread_id=thread_id,
@@ -273,45 +352,132 @@ class ChatHistoryRepository:
         )
 
     async def add_user(self, identifier: str) -> IChatHistoryRepository.User:
+        """Add a new user to the chat history database.
+
+        Args:
+            identifier: Unique user identifier string.
+
+        Returns:
+            User object containing the created user information.
+        """
         return cast(IChatHistoryRepository.User, await self.repository.add_user(identifier))
 
     async def add_step(self, step_dict: IChatHistoryRepository.StepDict) -> str:
+        """Add a conversation step to the chat history.
+
+        Args:
+            step_dict: Dictionary containing step data including type, content, and metadata.
+
+        Returns:
+            Step ID as a string after successful creation.
+        """
         return str(await self.repository.add_step(step_dict))
 
     async def get_user(self, identifier: str) -> IChatHistoryRepository.User | None:
+        """Retrieve a user by their identifier.
+
+        Args:
+            identifier: Unique user identifier string.
+
+        Returns:
+            User object if found, None otherwise.
+        """
         return cast(
             IChatHistoryRepository.User | None,
             await self.repository.get_user(identifier),
         )
 
     async def add_message(self, message: Message) -> str:
+        """Add a message to the chat history.
+
+        Args:
+            message: Message object containing role, content, and metadata.
+
+        Returns:
+            Message ID as a string after successful creation.
+        """
         return str(await self.repository.add_message(message))
 
     async def add_memory(self, memory: Message) -> str:
+        """Add a memory entry to the chat history.
+
+        Args:
+            memory: Message object representing a memory to store.
+
+        Returns:
+            Memory ID as a string after successful creation.
+        """
         return str(await self.repository.add_memory(memory))
 
     async def get_message(self, message_id: str, thread_id: str) -> Message | None:
+        """Retrieve a specific message by ID and thread.
+
+        Args:
+            message_id: Unique identifier for the message.
+            thread_id: Thread containing the message.
+
+        Returns:
+            Message object if found, None otherwise.
+        """
         return cast(Message | None, await self.repository.get_message(message_id, thread_id))
 
     async def get_memory(self, message_id: str, thread_id: str) -> Message | None:
+        """Retrieve a specific memory entry by ID and thread.
+
+        Args:
+            message_id: Unique identifier for the memory entry.
+            thread_id: Thread containing the memory.
+
+        Returns:
+            Message object representing the memory if found, None otherwise.
+        """
         return cast(Message | None, await self.repository.get_memory(message_id, thread_id))
 
     async def update_memory(self) -> None:
+        """Update memory entries in the chat history.
+
+        This method performs batch updates or maintenance on memory entries.
+        """
         await self.repository.update_memory()
         return None
 
     async def get_thread_messages(self, thread_id: str) -> Optional[List[Message]]:
+        """Retrieve all messages for a specific thread.
+
+        Args:
+            thread_id: Unique identifier for the thread.
+
+        Returns:
+            List of Message objects belonging to the thread, or None if thread not found.
+        """
         return cast(
             Optional[List[Message]],
             await self.repository.get_thread_messages(thread_id),
         )
 
     async def get_thread_memory(self, thread_id: str) -> Optional[List[Message]]:
+        """Retrieve all memory entries for a specific thread.
+
+        Args:
+            thread_id: Unique identifier for the thread.
+
+        Returns:
+            List of Message objects representing memories for the thread, or None if thread not found.
+        """
         return cast(Optional[List[Message]], await self.repository.get_thread_memory(thread_id))
 
     async def get_threads_for_user(
         self, identifier: str, thread_id: Optional[str]
     ) -> Optional[List[IChatHistoryRepository.ThreadDict]]:
+        """Retrieve all threads for a user, optionally filtered by thread ID.
+
+        Args:
+            identifier: User identifier to filter threads by.
+            thread_id: Optional specific thread ID to retrieve.
+
+        Returns:
+            List of ThreadDict objects for the user, or None if no threads exist.
+        """
         return cast(
             Optional[List[IChatHistoryRepository.ThreadDict]],
             await self.repository.get_threads_for_user(identifier, thread_id),
@@ -320,18 +486,39 @@ class ChatHistoryRepository:
     async def update_message_feedback(
         self, message_id: str, thread_id: str, positive_feedback: bool | None
     ) -> None:
+        """Update the feedback status for a specific message.
+
+        Args:
+            message_id: Unique identifier for the message.
+            thread_id: Thread containing the message.
+            positive_feedback: True for positive, False for negative, None to clear feedback.
+        """
         await self.repository.update_message_feedback(message_id, thread_id, positive_feedback)
         return None
 
     async def update_memory_feedback(
         self, message_id: str, thread_id: str, positive_feedback: bool | None
     ) -> None:
+        """Update the feedback status for a specific memory entry.
+
+        Args:
+            message_id: Unique identifier for the memory entry.
+            thread_id: Thread containing the memory.
+            positive_feedback: True for positive, False for negative, None to clear feedback.
+        """
         await self.repository.update_memory_feedback(message_id, thread_id, positive_feedback)
         return None
 
     async def update_message_content_filter_results(
         self, message_id: str, thread_id: str, content_filter_results: dict[str, object]
     ) -> None:
+        """Update content filter results for a specific message.
+
+        Args:
+            message_id: Unique identifier for the message.
+            thread_id: Thread containing the message.
+            content_filter_results: Dictionary containing content moderation results.
+        """
         await self.repository.update_message_content_filter_results(
             message_id, thread_id, content_filter_results
         )
@@ -340,18 +527,40 @@ class ChatHistoryRepository:
     async def update_memory_content_filter_results(
         self, message_id: str, thread_id: str, content_filter_results: dict[str, object]
     ) -> None:
+        """Update content filter results for a specific memory entry.
+
+        Args:
+            message_id: Unique identifier for the memory entry.
+            thread_id: Thread containing the memory.
+            content_filter_results: Dictionary containing content moderation results.
+        """
         await self.repository.update_memory_content_filter_results(
             message_id, thread_id, content_filter_results
         )
         return None
 
     async def delete_thread(self, thread_id: str) -> None:
+        """Delete a thread and all associated messages.
+
+        Args:
+            thread_id: Unique identifier for the thread to delete.
+        """
         await self.repository.delete_thread(thread_id)
         return None
 
     async def delete_thread_memory(self, thread_id: str) -> None:
+        """Delete all memory entries for a specific thread.
+
+        Args:
+            thread_id: Unique identifier for the thread whose memory to delete.
+        """
         await self.repository.delete_thread_memory(thread_id)
         return None
 
     async def delete_user_memory(self, user_id: str) -> None:
+        """Delete all memory entries for a specific user.
+
+        Args:
+            user_id: Unique identifier for the user whose memory to delete.
+        """
         await self.repository.delete_user_memory(user_id)
