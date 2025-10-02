@@ -1,6 +1,4 @@
-"""
-Tests for ingenious.utils.conversation_builder module
-"""
+"""Tests for ingenious.utils.conversation_builder module"""
 
 from unittest.mock import AsyncMock, Mock, mock_open, patch
 
@@ -104,17 +102,13 @@ class TestBuildAssistantMessage:
 
     def test_build_assistant_message_with_tool_calls_only(self):
         """Test building assistant message with tool calls only"""
-        tool_calls = [
-            {"id": "call_1", "type": "function", "function": {"name": "test_func"}}
-        ]
+        tool_calls = [{"id": "call_1", "type": "function", "function": {"name": "test_func"}}]
 
         result = build_assistant_message(None, tool_calls)
 
         expected = {
             "role": "assistant",
-            "tool_calls": [
-                {"id": "call_1", "type": "function", "function": {"name": "test_func"}}
-            ],
+            "tool_calls": [{"id": "call_1", "type": "function", "function": {"name": "test_func"}}],
         }
         assert result == expected
         assert "content" not in result
@@ -122,9 +116,7 @@ class TestBuildAssistantMessage:
     def test_build_assistant_message_with_both_content_and_tool_calls(self):
         """Test building assistant message with both content and tool calls"""
         content = "Let me help you with that."
-        tool_calls = [
-            {"id": "call_2", "type": "function", "function": {"name": "helper_func"}}
-        ]
+        tool_calls = [{"id": "call_2", "type": "function", "function": {"name": "helper_func"}}]
 
         result = build_assistant_message(content, tool_calls)
 
@@ -233,9 +225,7 @@ class TestSyncPromptTemplates:
         mock_fs = Mock()
         mock_fs.list_files = AsyncMock(return_value=[])
 
-        with patch(
-            "ingenious.utils.conversation_builder.FileStorage", return_value=mock_fs
-        ):
+        with patch("ingenious.utils.conversation_builder.FileStorage", return_value=mock_fs):
             with patch("ingenious.utils.conversation_builder.logger") as mock_logger:
                 await Sync_Prompt_Templates(mock_config, "v1.0")
 
@@ -243,8 +233,7 @@ class TestSyncPromptTemplates:
                 mock_fs.list_files.assert_called_once_with(file_path="prompts/v1.0")
                 # No files to download, so no debug messages for downloading
                 assert not any(
-                    "Downloading template" in str(call)
-                    for call in mock_logger.debug.call_args_list
+                    "Downloading template" in str(call) for call in mock_logger.debug.call_args_list
                 )
 
     @pytest.mark.asyncio
@@ -261,13 +250,9 @@ class TestSyncPromptTemplates:
                 "prompts/v1.0/readme.txt",  # Should be filtered out
             ]
         )
-        mock_fs.read_file = AsyncMock(
-            side_effect=["Template 1 content", "Template 2 content"]
-        )
+        mock_fs.read_file = AsyncMock(side_effect=["Template 1 content", "Template 2 content"])
 
-        with patch(
-            "ingenious.utils.conversation_builder.FileStorage", return_value=mock_fs
-        ):
+        with patch("ingenious.utils.conversation_builder.FileStorage", return_value=mock_fs):
             with patch("ingenious.utils.conversation_builder.logger") as mock_logger:
                 with patch("pathlib.Path.mkdir") as mock_mkdir:
                     with patch("builtins.open", mock_open()) as mock_file_open:
@@ -281,29 +266,21 @@ class TestSyncPromptTemplates:
 
         # Should have read 2 jinja files (filtered out the .txt file)
         assert mock_fs.read_file.call_count == 2
-        mock_fs.read_file.assert_any_call(
-            file_name="template1.jinja", file_path="prompts/v1.0"
-        )
-        mock_fs.read_file.assert_any_call(
-            file_name="template2.jinja", file_path="prompts/v1.0"
-        )
+        mock_fs.read_file.assert_any_call(file_name="template1.jinja", file_path="prompts/v1.0")
+        mock_fs.read_file.assert_any_call(file_name="template2.jinja", file_path="prompts/v1.0")
 
         # Should have opened 2 files for writing
         assert mock_file_open.call_count == 2
 
         # Should have logged download activities
         download_calls = [
-            call
-            for call in mock_logger.debug.call_args_list
-            if "Downloading template" in str(call)
+            call for call in mock_logger.debug.call_args_list if "Downloading template" in str(call)
         ]
         assert len(download_calls) == 2
 
         # Should have logged save activities
         save_calls = [
-            call
-            for call in mock_logger.debug.call_args_list
-            if "Template saved" in str(call)
+            call for call in mock_logger.debug.call_args_list if "Template saved" in str(call)
         ]
         assert len(save_calls) == 2
 
@@ -322,13 +299,9 @@ class TestSyncPromptTemplates:
                 "prompts/v1.0/image.png",
             ]
         )
-        mock_fs.read_file = AsyncMock(
-            side_effect=["Template content", "Another template content"]
-        )
+        mock_fs.read_file = AsyncMock(side_effect=["Template content", "Another template content"])
 
-        with patch(
-            "ingenious.utils.conversation_builder.FileStorage", return_value=mock_fs
-        ):
+        with patch("ingenious.utils.conversation_builder.FileStorage", return_value=mock_fs):
             with patch("ingenious.utils.conversation_builder.logger"):
                 with patch("pathlib.Path.mkdir"):
                     with patch("builtins.open", mock_open()):
@@ -336,12 +309,8 @@ class TestSyncPromptTemplates:
 
         # Should only have read 2 .jinja files
         assert mock_fs.read_file.call_count == 2
-        mock_fs.read_file.assert_any_call(
-            file_name="template.jinja", file_path="prompts/v2.0"
-        )
-        mock_fs.read_file.assert_any_call(
-            file_name="another.jinja", file_path="prompts/v2.0"
-        )
+        mock_fs.read_file.assert_any_call(file_name="template.jinja", file_path="prompts/v2.0")
+        mock_fs.read_file.assert_any_call(file_name="another.jinja", file_path="prompts/v2.0")
 
     @pytest.mark.asyncio
     async def test_sync_prompt_templates_file_path_extraction(self):
@@ -353,9 +322,7 @@ class TestSyncPromptTemplates:
         mock_fs.list_files = AsyncMock(return_value=["deep/nested/path/template.jinja"])
         mock_fs.read_file = AsyncMock(return_value="Template content")
 
-        with patch(
-            "ingenious.utils.conversation_builder.FileStorage", return_value=mock_fs
-        ):
+        with patch("ingenious.utils.conversation_builder.FileStorage", return_value=mock_fs):
             with patch("ingenious.utils.conversation_builder.logger"):
                 with patch("pathlib.Path.mkdir"):
                     with patch("builtins.open", mock_open()):

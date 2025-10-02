@@ -1,7 +1,11 @@
-# N.B.
-# This will add to the package’s __path__ all subdirectories of directories on sys.path named after
-# the package which effectively combines both modules into a single namespace (dbt.adapters)
-# The matching statement is in plugins/postgres/dbt/__init__.py
+"""File storage abstractions and implementations.
+
+This package provides file storage interfaces and implementations for local
+and Azure Blob Storage backends, supporting template management and data persistence.
+
+Note:
+    This module uses namespace packages to allow extension via plugins.
+"""
 
 from pkgutil import extend_path
 

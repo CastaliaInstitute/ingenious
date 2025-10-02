@@ -1,5 +1,4 @@
-"""
-Azure Client Factory for building various Azure service clients.
+"""Azure Client Factory for building various Azure service clients.
 
 Production goals:
 - Keep optional Azure SDKs truly optional (lazy, memoized imports).
@@ -300,8 +299,7 @@ class AzureClientFactory:
         cosmos_config: Union[CosmosConfig, CosmosSettings, None] = None,
         **_: Any,
     ) -> Any:
-        """
-        Create Azure Cosmos DB client based on configuration.
+        """Create Azure Cosmos DB client based on configuration.
 
         Args:
             cosmos_config: Cosmos DB configuration
@@ -465,9 +463,7 @@ class AzureClientFactory:
     @staticmethod
     def create_async_search_client(
         index_name: str,
-        config: Optional[
-            Mapping[str, Any] | AzureSearchConfig | AzureSearchSettings
-        ] = None,
+        config: Optional[Mapping[str, Any] | AzureSearchConfig | AzureSearchSettings] = None,
         **client_options: Any,
     ) -> Any:
         builder_cls = _ensure_builder(

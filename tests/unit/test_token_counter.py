@@ -1,3 +1,9 @@
+"""Test token counting utilities.
+
+This module tests the token counting functions for various language models,
+including max token limits and message token calculations.
+"""
+
 from unittest.mock import Mock, patch
 
 import pytest
@@ -7,10 +13,10 @@ from ingenious.utils.token_counter import get_max_tokens, num_tokens_from_messag
 
 @pytest.mark.unit
 class TestTokenCounter:
-    """Test token counting functionality"""
+    """Test token counting functionality."""
 
     def test_get_max_tokens_known_models(self):
-        """Test max tokens for known models"""
+        """Test max tokens for known models."""
         assert get_max_tokens("gpt-3.5-turbo") == 4096
         assert get_max_tokens("gpt-3.5-turbo-0613") == 4096
         assert get_max_tokens("gpt-3.5-turbo-16k") == 16384
@@ -23,16 +29,16 @@ class TestTokenCounter:
         assert get_max_tokens("gpt-4-32k-0613") == 32768
 
     def test_get_max_tokens_unknown_model(self):
-        """Test max tokens for unknown model returns default"""
+        """Test max tokens for unknown model returns default."""
         assert get_max_tokens("unknown-model") == 4096
 
     def test_get_max_tokens_default_model(self):
-        """Test max tokens with default model parameter"""
+        """Test max tokens with default model parameter."""
         assert get_max_tokens() == 16384  # default is gpt-3.5-turbo-0125
 
     @patch("ingenious.utils.token_counter.tiktoken")
     def test_num_tokens_from_messages_basic(self, mock_tiktoken):
-        """Test basic token counting for messages"""
+        """Test basic token counting for messages."""
         mock_encoding = Mock()
         mock_encoding.encode.return_value = [1, 2, 3]  # 3 tokens
         mock_tiktoken.encoding_for_model.return_value = mock_encoding
@@ -50,7 +56,7 @@ class TestTokenCounter:
 
     @patch("ingenious.utils.token_counter.tiktoken")
     def test_num_tokens_from_messages_with_name(self, mock_tiktoken):
-        """Test token counting with name field"""
+        """Test token counting with name field."""
         mock_encoding = Mock()
         mock_encoding.encode.return_value = [1, 2, 3]
         mock_tiktoken.encoding_for_model.return_value = mock_encoding
@@ -65,7 +71,7 @@ class TestTokenCounter:
 
     @patch("ingenious.utils.token_counter.tiktoken")
     def test_num_tokens_from_messages_unknown_model(self, mock_tiktoken):
-        """Test token counting with unknown model raises NotImplementedError"""
+        """Test token counting with unknown model raises NotImplementedError."""
         mock_encoding = Mock()
         mock_encoding.encode.return_value = [1, 2, 3]
         mock_tiktoken.encoding_for_model.side_effect = KeyError("Model not found")
@@ -81,7 +87,7 @@ class TestTokenCounter:
 
     @patch("ingenious.utils.token_counter.tiktoken")
     def test_num_tokens_from_messages_gpt35_turbo_fallback(self, mock_tiktoken):
-        """Test GPT-3.5-turbo models fall back to specific version"""
+        """Test GPT-3.5-turbo models fall back to specific version."""
         mock_encoding = Mock()
         mock_encoding.encode.return_value = [1, 2, 3]
         mock_tiktoken.encoding_for_model.return_value = mock_encoding
@@ -95,7 +101,7 @@ class TestTokenCounter:
 
     @patch("ingenious.utils.token_counter.tiktoken")
     def test_num_tokens_from_messages_gpt4_fallback(self, mock_tiktoken):
-        """Test GPT-4 models fall back to specific version"""
+        """Test GPT-4 models fall back to specific version."""
         mock_encoding = Mock()
         mock_encoding.encode.return_value = [1, 2, 3]
         mock_tiktoken.encoding_for_model.return_value = mock_encoding
@@ -109,7 +115,7 @@ class TestTokenCounter:
 
     @patch("ingenious.utils.token_counter.tiktoken")
     def test_num_tokens_from_messages_unsupported_model(self, mock_tiktoken):
-        """Test unsupported model raises NotImplementedError"""
+        """Test unsupported model raises NotImplementedError."""
         mock_tiktoken.encoding_for_model.return_value = Mock()
 
         messages = [{"role": "user", "content": "Hello"}]
@@ -119,7 +125,7 @@ class TestTokenCounter:
 
     @patch("ingenious.utils.token_counter.tiktoken")
     def test_num_tokens_from_messages_empty_messages(self, mock_tiktoken):
-        """Test token counting with empty messages list"""
+        """Test token counting with empty messages list."""
         mock_encoding = Mock()
         mock_encoding.encode.return_value = []
         mock_tiktoken.encoding_for_model.return_value = mock_encoding
@@ -133,7 +139,7 @@ class TestTokenCounter:
 
     @patch("ingenious.utils.token_counter.tiktoken")
     def test_num_tokens_from_messages_non_string_values(self, mock_tiktoken):
-        """Test token counting skips non-string values"""
+        """Test token counting skips non-string values."""
         mock_encoding = Mock()
         mock_encoding.encode.return_value = [1, 2, 3]
         mock_tiktoken.encoding_for_model.return_value = mock_encoding
@@ -148,7 +154,7 @@ class TestTokenCounter:
 
     @patch("ingenious.utils.token_counter.tiktoken")
     def test_num_tokens_from_messages_model_variants(self, mock_tiktoken):
-        """Test token counting for different model variants"""
+        """Test token counting for different model variants."""
         mock_encoding = Mock()
         mock_encoding.encode.return_value = [1, 2, 3]
         mock_tiktoken.encoding_for_model.return_value = mock_encoding
@@ -166,10 +172,8 @@ class TestTokenCounter:
 
     @patch("ingenious.utils.token_counter.tiktoken")
     @patch("ingenious.utils.token_counter.logger")
-    def test_num_tokens_from_messages_keyerror_fallback(
-        self, mock_logger, mock_tiktoken
-    ):
-        """Test fallback when model encoding not found"""
+    def test_num_tokens_from_messages_keyerror_fallback(self, mock_logger, mock_tiktoken):
+        """Test fallback when model encoding not found."""
         mock_encoding = Mock()
         mock_encoding.encode.return_value = [1, 2, 3]
         mock_tiktoken.encoding_for_model.side_effect = KeyError("Model not found")
@@ -187,10 +191,8 @@ class TestTokenCounter:
 
     @patch("ingenious.utils.token_counter.tiktoken")
     @patch("ingenious.utils.token_counter.logger")
-    def test_num_tokens_from_messages_gpt35_turbo_warning(
-        self, mock_logger, mock_tiktoken
-    ):
-        """Test warning is logged for generic gpt-3.5-turbo model"""
+    def test_num_tokens_from_messages_gpt35_turbo_warning(self, mock_logger, mock_tiktoken):
+        """Test warning is logged for generic gpt-3.5-turbo model."""
         mock_encoding = Mock()
         mock_encoding.encode.return_value = [1, 2, 3]
         mock_tiktoken.encoding_for_model.return_value = mock_encoding
@@ -206,7 +208,7 @@ class TestTokenCounter:
     @patch("ingenious.utils.token_counter.tiktoken")
     @patch("ingenious.utils.token_counter.logger")
     def test_num_tokens_from_messages_gpt4_warning(self, mock_logger, mock_tiktoken):
-        """Test warning is logged for generic gpt-4 model"""
+        """Test warning is logged for generic gpt-4 model."""
         mock_encoding = Mock()
         mock_encoding.encode.return_value = [1, 2, 3]
         mock_tiktoken.encoding_for_model.return_value = mock_encoding
@@ -221,7 +223,7 @@ class TestTokenCounter:
 
     @patch("ingenious.utils.token_counter.tiktoken")
     def test_num_tokens_from_messages_all_supported_models(self, mock_tiktoken):
-        """Test token counting works for all explicitly supported models"""
+        """Test token counting works for all explicitly supported models."""
         mock_encoding = Mock()
         mock_encoding.encode.return_value = [1, 2, 3]
         mock_tiktoken.encoding_for_model.return_value = mock_encoding
@@ -242,10 +244,8 @@ class TestTokenCounter:
             assert result > 0
 
     @patch("ingenious.utils.token_counter.tiktoken")
-    def test_num_tokens_from_messages_gpt35_turbo_0301_special_case(
-        self, mock_tiktoken
-    ):
-        """Test special case for gpt-3.5-turbo-0301 with different token calculations"""
+    def test_num_tokens_from_messages_gpt35_turbo_0301_special_case(self, mock_tiktoken):
+        """Test special case for gpt-3.5-turbo-0301 with different token calculations."""
         mock_encoding = Mock()
         mock_encoding.encode.return_value = [1, 2, 3]  # 3 tokens per string
         mock_tiktoken.encoding_for_model.return_value = mock_encoding

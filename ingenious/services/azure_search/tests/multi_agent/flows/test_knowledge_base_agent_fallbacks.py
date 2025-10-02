@@ -24,9 +24,7 @@ from ingenious.services.chat_services.multi_agent.conversation_flows.knowledge_b
 async def test_kb_agent_azure_runtime_failure_falls_back_to_chroma(
     mock_ingenious_settings: MagicMock,
 ) -> None:
-    """
-    P0: Verify _search_knowledge_base falls back to ChromaDB when AzureSearchProvider raises a runtime exception.
-    """
+    """P0: Verify _search_knowledge_base falls back to ChromaDB when AzureSearchProvider raises a runtime exception."""
 
     # Minimal parent service required by IConversationFlow.__init__
     class _ParentSvc:
@@ -48,15 +46,11 @@ async def test_kb_agent_azure_runtime_failure_falls_back_to_chroma(
         web=NS(streaming_chunk_size=100),
     )
     # Provide minimal Azure service so preflight runs and the provider is attempted
-    cfg.azure_search_services = [
-        NS(endpoint="https://s.net", key="sk", index_name="idx")
-    ]
+    cfg.azure_search_services = [NS(endpoint="https://s.net", key="sk", index_name="idx")]
 
     # Avoid real memory manager initialization in IConversationFlow.__init__
     flow: ConversationFlow
-    with patch(
-        "ingenious.services.memory_manager.get_memory_manager", return_value=MagicMock()
-    ):
+    with patch("ingenious.services.memory_manager.get_memory_manager", return_value=MagicMock()):
         flow = ConversationFlow(parent_multi_agent_chat_service=_ParentSvc(cfg))
 
     # Ensure a simple local path used by the Chroma fallback
@@ -64,17 +58,13 @@ async def test_kb_agent_azure_runtime_failure_falls_back_to_chroma(
 
     # Mock the AzureSearchProvider to fail
     mock_provider_instance: AsyncMock = AsyncMock()
-    mock_provider_instance.retrieve.side_effect = RuntimeError(
-        "Azure Connection Failed"
-    )
+    mock_provider_instance.retrieve.side_effect = RuntimeError("Azure Connection Failed")
     mock_provider_instance.close = AsyncMock()
 
     # Mock ChromaDB to succeed (the fallback)
     mock_chroma_client: MagicMock = MagicMock()
     mock_chroma_collection: MagicMock = MagicMock()
-    mock_chroma_collection.query.return_value = {
-        "documents": [["Fallback result from ChromaDB"]]
-    }
+    mock_chroma_collection.query.return_value = {"documents": [["Fallback result from ChromaDB"]]}
     mock_chroma_client.get_collection.return_value = mock_chroma_collection
 
     # Minimal Azure SDK surface
@@ -88,9 +78,7 @@ async def test_kb_agent_azure_runtime_failure_falls_back_to_chroma(
     class _Client:
         """A minimal mock for SearchClient."""
 
-        def __init__(
-            self, *, endpoint: str, index_name: str, credential: _Cred
-        ) -> None:
+        def __init__(self, *, endpoint: str, index_name: str, credential: _Cred) -> None:
             """Initialize the mock search client."""
             pass
 

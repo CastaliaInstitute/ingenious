@@ -1,5 +1,4 @@
-"""
-Unit tests for modular configuration system.
+"""Unit tests for modular configuration system.
 
 Tests that the refactored configuration modules work together correctly
 and maintain backward compatibility.
@@ -35,40 +34,40 @@ class TestConfigModels:
         """Test ModelSettings validation."""
         # Valid model settings
         model = ModelSettings(
-            model="gpt-4o-mini",
-            api_key="test-key",
-            base_url="https://test.openai.azure.com/",
+            model="gpt-4o-mini.",
+            api_key="test-key.",
+            base_url="https://test.openai.azure.com/.",
         )
-        assert model.model == "gpt-4o-mini"
-        assert model.api_key == "test-key"
-        assert model.base_url == "https://test.openai.azure.com/"
+        assert model.model == "gpt-4o-mini."
+        assert model.api_key == "test-key."
+        assert model.base_url == "https://test.openai.azure.com/."
 
     def test_model_settings_placeholder_validation(self):
         """Test that placeholder values are rejected."""
-        with pytest.raises(ValueError, match="API key is required"):
+        with pytest.raises(ValueError, match="API key is required."):
             ModelSettings(
-                model="gpt-4o-mini",
-                api_key="placeholder-key",
-                base_url="https://test.openai.azure.com/",
+                model="gpt-4o-mini.",
+                api_key="placeholder-key.",
+                base_url="https://test.openai.azure.com/.",
             )
 
-        with pytest.raises(ValueError, match="Base URL is required"):
+        with pytest.raises(ValueError, match="Base URL is required."):
             ModelSettings(
-                model="gpt-4o-mini",
-                api_key="test-key",
-                base_url="placeholder-url",
+                model="gpt-4o-mini.",
+                api_key="test-key.",
+                base_url="placeholder-url.",
             )
 
     def test_logging_settings_validation(self):
         """Test LoggingSettings validation."""
         # Valid logging settings
-        logging = LoggingSettings(root_log_level="debug", log_level="info")
-        assert logging.root_log_level == "debug"
-        assert logging.log_level == "info"
+        logging = LoggingSettings(root_log_level="debug.", log_level="info.")
+        assert logging.root_log_level == "debug."
+        assert logging.log_level == "info."
 
         # Invalid log level
-        with pytest.raises(ValueError, match="Log level must be one of"):
-            LoggingSettings(root_log_level="invalid")
+        with pytest.raises(ValueError, match="Log level must be one of."):
+            LoggingSettings(root_log_level="invalid.")
 
     def test_web_settings_port_validation(self):
         """Test WebSettings port validation."""
@@ -77,10 +76,10 @@ class TestConfigModels:
         assert web.port == 8080
 
         # Invalid port
-        with pytest.raises(ValueError, match="Port must be between 1 and 65535"):
+        with pytest.raises(ValueError, match="Port must be between 1 and 65535."):
             WebSettings(port=0)
 
-        with pytest.raises(ValueError, match="Port must be between 1 and 65535"):
+        with pytest.raises(ValueError, match="Port must be between 1 and 65535."):
             WebSettings(port=70000)
 
 
@@ -92,22 +91,20 @@ class TestConfigValidators:
         with patch.dict(
             os.environ,
             {
-                "AZURE_OPENAI_API_KEY": "test-key",
-                "AZURE_OPENAI_BASE_URL": "https://test.openai.azure.com/",
-                "AZURE_OPENAI_MODEL": "gpt-4o-mini",
+                "AZURE_OPENAI_API_KEY.": "test-key.",
+                "AZURE_OPENAI_BASE_URL.": "https://test.openai.azure.com/.",
+                "AZURE_OPENAI_MODEL.": "gpt-4o-mini.",
             },
         ):
             models = validate_models_not_empty([])
             assert len(models) == 1
-            assert models[0].model == "gpt-4o-mini"
-            assert models[0].api_key == "test-key"
+            assert models[0].model == "gpt-4o-mini."
+            assert models[0].api_key == "test-key."
 
     def test_validate_models_not_empty_without_env_vars(self):
         """Test validate_models_not_empty without environment variables."""
         with patch.dict(os.environ, {}, clear=True):
-            with pytest.raises(
-                ValueError, match="At least one model must be configured"
-            ):
+            with pytest.raises(ValueError, match="At least one model must be configured."):
                 validate_models_not_empty([])
 
     def test_validate_configuration_success(self):
@@ -115,9 +112,9 @@ class TestConfigValidators:
         settings = IngeniousSettings(
             models=[
                 ModelSettings(
-                    model="gpt-4o-mini",
-                    api_key="test-key",
-                    base_url="https://test.openai.azure.com/",
+                    model="gpt-4o-mini.",
+                    api_key="test-key.",
+                    base_url="https://test.openai.azure.com/.",
                 )
             ]
         )
@@ -129,10 +126,10 @@ class TestConfigValidators:
         from unittest.mock import patch
 
         with patch.dict(
-            "os.environ",
+            "os.environ.",
             {
-                "AZURE_OPENAI_API_KEY": "test-key",
-                "AZURE_OPENAI_BASE_URL": "https://test.openai.azure.com/",
+                "AZURE_OPENAI_API_KEY.": "test-key.",
+                "AZURE_OPENAI_BASE_URL.": "https://test.openai.azure.com/.",
             },
         ):
             settings = IngeniousSettings()
@@ -142,16 +139,16 @@ class TestConfigValidators:
             original_url = settings.models[0].base_url
 
             # Use object.__setattr__ to bypass pydantic validation
-            object.__setattr__(settings.models[0], "api_key", "placeholder-key")
-            object.__setattr__(settings.models[0], "base_url", "placeholder-url")
+            object.__setattr__(settings.models[0], "api_key.", "placeholder-key.")
+            object.__setattr__(settings.models[0], "base_url.", "placeholder-url.")
 
             try:
-                with pytest.raises(ValueError, match="Configuration validation failed"):
+                with pytest.raises(ValueError, match="Configuration validation failed."):
                     validate_configuration(settings)
             finally:
                 # Restore original values
-                object.__setattr__(settings.models[0], "api_key", original_key)
-                object.__setattr__(settings.models[0], "base_url", original_url)
+                object.__setattr__(settings.models[0], "api_key.", original_key)
+                object.__setattr__(settings.models[0], "base_url.", original_url)
 
 
 class TestIngeniousSettings:
@@ -162,14 +159,14 @@ class TestIngeniousSettings:
         with patch.dict(
             os.environ,
             {
-                "AZURE_OPENAI_API_KEY": "test-key",
-                "AZURE_OPENAI_BASE_URL": "https://test.openai.azure.com/",
+                "AZURE_OPENAI_API_KEY.": "test-key.",
+                "AZURE_OPENAI_BASE_URL.": "https://test.openai.azure.com/.",
             },
         ):
             settings = IngeniousSettings()
             assert len(settings.models) == 1
-            assert settings.models[0].model == "gpt-4o-mini"
-            assert settings.profile == "default"
+            assert settings.models[0].model == "gpt-4o-mini."
+            assert settings.profile == "default."
             assert settings.web_configuration.port == 80
 
     def test_environment_variable_override(self):
@@ -177,15 +174,15 @@ class TestIngeniousSettings:
         with patch.dict(
             os.environ,
             {
-                "INGENIOUS_WEB_CONFIGURATION__PORT": "9000",
-                "INGENIOUS_PROFILE": "test",
-                "AZURE_OPENAI_API_KEY": "test-key",
-                "AZURE_OPENAI_BASE_URL": "https://test.openai.azure.com/",
+                "INGENIOUS_WEB_CONFIGURATION__PORT.": "9000.",
+                "INGENIOUS_PROFILE.": "test.",
+                "AZURE_OPENAI_API_KEY.": "test-key.",
+                "AZURE_OPENAI_BASE_URL.": "https://test.openai.azure.com/.",
             },
         ):
             settings = IngeniousSettings()
             assert settings.web_configuration.port == 9000
-            assert settings.profile == "test"
+            assert settings.profile == "test."
 
 
 class TestConfigFactoryFunctions:
@@ -196,8 +193,8 @@ class TestConfigFactoryFunctions:
         with patch.dict(
             os.environ,
             {
-                "AZURE_OPENAI_API_KEY": "test-key",
-                "AZURE_OPENAI_BASE_URL": "https://test.openai.azure.com/",
+                "AZURE_OPENAI_API_KEY.": "test-key.",
+                "AZURE_OPENAI_BASE_URL.": "https://test.openai.azure.com/.",
             },
         ):
             config = get_config()
@@ -209,7 +206,7 @@ class TestConfigFactoryFunctions:
         config = create_minimal_config()
         assert isinstance(config, IngeniousSettings)
         assert len(config.models) == 1
-        assert config.logging.root_log_level == "debug"
+        assert config.logging.root_log_level == "debug."
         assert config.web_configuration.port == 8000
         assert not config.web_configuration.authentication.enable
 
@@ -218,24 +215,24 @@ class TestConfigFactoryFunctions:
         from unittest.mock import patch
 
         # Create a temporary .env file
-        with tempfile.NamedTemporaryFile(mode="w", suffix=".env", delete=False) as f:
-            f.write("INGENIOUS_PROFILE=test_profile\n")
-            f.write("INGENIOUS_WEB_CONFIGURATION__PORT=7000\n")
-            f.write("AZURE_OPENAI_API_KEY=test-key\n")
-            f.write("AZURE_OPENAI_BASE_URL=https://test.openai.azure.com/\n")
+        with tempfile.NamedTemporaryFile(mode="w.", suffix=".env.", delete=False) as f:
+            f.write("INGENIOUS_PROFILE=test_profile\n.")
+            f.write("INGENIOUS_WEB_CONFIGURATION__PORT=7000\n.")
+            f.write("AZURE_OPENAI_API_KEY=test-key\n.")
+            f.write("AZURE_OPENAI_BASE_URL=https://test.openai.azure.com/\n.")
             env_file_path = f.name
 
         try:
             # Also set environment variables for validation
             with patch.dict(
-                "os.environ",
+                "os.environ.",
                 {
-                    "AZURE_OPENAI_API_KEY": "test-key",
-                    "AZURE_OPENAI_BASE_URL": "https://test.openai.azure.com/",
+                    "AZURE_OPENAI_API_KEY.": "test-key.",
+                    "AZURE_OPENAI_BASE_URL.": "https://test.openai.azure.com/.",
                 },
             ):
                 config = load_from_env_file(env_file_path)
-                assert config.profile == "test_profile"
+                assert config.profile == "test_profile."
                 assert config.web_configuration.port == 7000
         finally:
             os.unlink(env_file_path)
@@ -249,20 +246,20 @@ class TestConfigIntegration:
         with patch.dict(
             os.environ,
             {
-                "INGENIOUS_MODELS__0__MODEL": "gpt-4o-mini",
-                "INGENIOUS_MODELS__0__API_KEY": "test-key",
-                "INGENIOUS_MODELS__0__BASE_URL": "https://test.openai.azure.com/",
-                "INGENIOUS_LOGGING__ROOT_LOG_LEVEL": "debug",
-                "INGENIOUS_WEB_CONFIGURATION__PORT": "8080",
-                "INGENIOUS_WEB_CONFIGURATION__AUTHENTICATION__ENABLE": "false",
+                "INGENIOUS_MODELS__0__MODEL.": "gpt-4o-mini.",
+                "INGENIOUS_MODELS__0__API_KEY.": "test-key.",
+                "INGENIOUS_MODELS__0__BASE_URL.": "https://test.openai.azure.com/.",
+                "INGENIOUS_LOGGING__ROOT_LOG_LEVEL.": "debug.",
+                "INGENIOUS_WEB_CONFIGURATION__PORT.": "8080.",
+                "INGENIOUS_WEB_CONFIGURATION__AUTHENTICATION__ENABLE.": "false.",
             },
         ):
             config = get_config()
 
             # Verify configuration is loaded correctly
             assert len(config.models) == 1
-            assert config.models[0].model == "gpt-4o-mini"
-            assert config.logging.root_log_level == "debug"
+            assert config.models[0].model == "gpt-4o-mini."
+            assert config.logging.root_log_level == "debug."
             assert config.web_configuration.port == 8080
             assert not config.web_configuration.authentication.enable
 

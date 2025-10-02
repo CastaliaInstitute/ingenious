@@ -1,5 +1,4 @@
-"""
-Test-related CLI commands for Insight Ingenious.
+"""Test-related CLI commands for Insight Ingenious.
 
 This module contains commands for running tests and test batches.
 """
@@ -19,7 +18,12 @@ from ingenious.utils.log_levels import LogLevel
 
 
 def register_commands(app: typer.Typer, console: Console) -> None:
-    """Register test-related commands with the typer app."""
+    """Register test-related commands with the typer app.
+
+    Args:
+        app: Typer application instance to register commands with
+        console: Console instance for output formatting
+    """
 
     @app.command(name="test", help="Run agent workflow tests")
     def test(
@@ -39,11 +43,14 @@ def register_commands(app: typer.Typer, console: Console) -> None:
             ),
         ] = "",
     ) -> None:
-        """
-        🧪 Run all agent workflow tests in the project.
+        """Run all agent workflow tests in the project.
 
         This command executes the test suite to validate your agent configurations,
         prompts, and workflow logic.
+
+        Args:
+            log_level: Logging verbosity level (DEBUG, INFO, WARNING, ERROR)
+            test_args: Additional test arguments as key-value pairs
 
         Examples:
           ingen test                                    # Run all tests
@@ -68,12 +75,13 @@ def register_commands(app: typer.Typer, console: Console) -> None:
             ),
         ] = "",
     ) -> None:
+        """Run all tests in the project (deprecated).
+
+        Args:
+            log_level: Log level controlling output verbosity
+            run_args: Key-value pairs for the test runner
         """
-        This command will run all the tests in the project
-        """
-        _log_level: int = (
-            LogLevel.from_string(log_level or "WARNING") or LogLevel.WARNING
-        )
+        _log_level: int = LogLevel.from_string(log_level or "WARNING") or LogLevel.WARNING
 
         se: stage_executor_module.stage_executor = stage_executor_module.stage_executor(
             log_level=_log_level, console=console

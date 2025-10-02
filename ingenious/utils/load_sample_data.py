@@ -1,3 +1,9 @@
+"""Sample SQLite database loader for testing and development.
+
+Provides utilities for loading CSV data into SQLite databases with automatic
+schema inference and table creation.
+"""
+
 import os
 import sqlite3
 from typing import Any, Dict, List, Optional
@@ -8,22 +14,46 @@ from ingenious.config.config import get_config
 
 
 class sqlite_sample_db:
+    """SQLite sample database manager for loading and querying CSV data.
+
+    Automatically creates tables and loads data from configured CSV files
+    with schema inference using pandas.
+
+    Attributes:
+        db_path: Path to the SQLite database file.
+        connection: SQLite database connection.
+    """
+
     def __init__(self) -> None:
+        """Initialize the sample database.
+
+        Creates the database directory if needed, establishes connection,
+        and loads sample data from configured CSV files.
+        """
         self._config = get_config()
 
         self.db_path: str = self._config.local_sql_db.database_path
         db_dir_check: str = os.path.dirname(self.db_path)
         if not os.path.exists(db_dir_check):
             os.makedirs(db_dir_check, exist_ok=True)
-        self.connection: sqlite3.Connection = sqlite3.connect(
-            self.db_path, check_same_thread=False
-        )
+        self.connection: sqlite3.Connection = sqlite3.connect(self.db_path, check_same_thread=False)
         self._create_table()
         self._load_csv_data()
 
     def execute_sql(
         self, sql: str, params: List[Any] = [], expect_results: bool = True
     ) -> Optional[List[Dict[str, Any]]]:
+        """Execute SQL query and optionally return results.
+
+        Args:
+            sql: The SQL query to execute.
+            params: List of parameters for the SQL query.
+            expect_results: Whether to fetch and return query results.
+
+        Returns:
+            List of dictionaries representing rows if expect_results is True,
+            None otherwise or on error.
+        """
         connection: Optional[sqlite3.Connection] = None
         try:
             connection = sqlite3.connect(self.db_path)
@@ -50,6 +80,11 @@ class sqlite_sample_db:
                 connection.close()
 
     def _create_table(self) -> None:
+        """Create database tables based on CSV structure.
+
+        Dynamically infers schema from CSV file or falls back to a hardcoded
+        students_performance table for backwards compatibility.
+        """
         # Dynamic table creation based on CSV structure
         csv_path: str = self._config.local_sql_db.sample_csv_path
         if os.path.exists(csv_path):
@@ -74,9 +109,7 @@ class sqlite_sample_db:
 
             with self.connection:
                 self.connection.execute(create_sql)
-                print(
-                    f"Created table {table_name} with columns: {', '.join(column_definitions)}"
-                )
+                print(f"Created table {table_name} with columns: {', '.join(column_definitions)}")
         else:
             # Fallback to hardcoded students_performance table for backwards compatibility
             with self.connection:
@@ -94,6 +127,11 @@ class sqlite_sample_db:
                 """)
 
     def _load_csv_data(self) -> None:
+        """Load CSV data into the database.
+
+        Reads the configured CSV file and populates the database table,
+        replacing existing data.
+        """
         # Load CSV file into a DataFrame
         csv_path: str = self._config.local_sql_db.sample_csv_path
         if os.path.exists(csv_path):

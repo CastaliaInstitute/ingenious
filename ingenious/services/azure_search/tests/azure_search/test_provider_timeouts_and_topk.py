@@ -1,6 +1,4 @@
-"""
-Timeout propagation and top_k=0 short-circuit — provider delegates to pipeline.
-"""
+"""Timeout propagation and top_k=0 short-circuit — provider delegates to pipeline."""
 
 from __future__ import annotations
 
@@ -23,9 +21,7 @@ def _settings(use_semantic: bool = True) -> IngeniousSettings:
             api_key="K",
             base_url="https://oai",
         ),
-        ModelSettings(
-            model="gpt-4o", deployment="chat", api_key="K", base_url="https://oai"
-        ),
+        ModelSettings(model="gpt-4o", deployment="chat", api_key="K", base_url="https://oai"),
     ]
     s.azure_search_services = [
         AzureSearchSettings(

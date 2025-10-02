@@ -59,15 +59,33 @@ class SearchConfig(BaseModel):
     for Azure services and behavior parameters for the search pipeline. It
     serves as a single source of truth to ensure the system is correctly
     configured before use.
+
+    Attributes:
+        search_endpoint: The endpoint URL for the Azure AI Search service.
+        search_key: The API key for the Azure AI Search service.
+        search_index_name: The name of the target index in Azure AI Search.
+        semantic_configuration_name: The name of the semantic configuration
+            required if use_semantic_ranking is True.
+        openai_endpoint: The endpoint URL for the Azure OpenAI service.
+        openai_key: The API key for the Azure OpenAI service.
+        openai_version: The API version for the Azure OpenAI service.
+        embedding_deployment_name: The deployment name for the embeddings model.
+        generation_deployment_name: The deployment name for the generation model.
+        top_k_retrieval: The number of initial results to fetch from searches.
+        use_semantic_ranking: Flag to enable or disable Azure Semantic Ranking.
+        top_n_final: The number of re-ranked chunks for generation.
+        dat_prompt: The prompt template for Dynamic Alpha Tuning scoring.
+        id_field: The unique identifier field in the search index.
+        content_field: The primary text content field in the search index.
+        vector_field: The vector embedding field in the search index.
+        enable_answer_generation: If True, the pipeline synthesizes final answers.
     """
 
     # Azure AI Search Configuration
     search_endpoint: str = Field(
         ..., description="The endpoint URL for the Azure AI Search service."
     )
-    search_key: SecretStr = Field(
-        ..., description="The API key for the Azure AI Search service."
-    )
+    search_key: SecretStr = Field(..., description="The API key for the Azure AI Search service.")
     search_index_name: str = Field(
         ..., description="The name of the target index in Azure AI Search."
     )
@@ -77,12 +95,8 @@ class SearchConfig(BaseModel):
     )
 
     # Azure OpenAI Configuration
-    openai_endpoint: str = Field(
-        ..., description="The endpoint URL for the Azure OpenAI service."
-    )
-    openai_key: SecretStr = Field(
-        ..., description="The API key for the Azure OpenAI service."
-    )
+    openai_endpoint: str = Field(..., description="The endpoint URL for the Azure OpenAI service.")
+    openai_key: SecretStr = Field(..., description="The API key for the Azure OpenAI service.")
     openai_version: str = Field(
         "2024-02-01", description="The API version for the Azure OpenAI service."
     )
@@ -114,9 +128,7 @@ class SearchConfig(BaseModel):
     )
 
     # Index Schema Field Mappings (Defaults provided, adjust if necessary)
-    id_field: str = Field(
-        "id", description="The unique identifier field in the search index."
-    )
+    id_field: str = Field("id", description="The unique identifier field in the search index.")
     content_field: str = Field(
         "content", description="The primary text content field in the search index."
     )
@@ -132,7 +144,11 @@ class SearchConfig(BaseModel):
     # Back-compat convenience accessor expected by some call sites/tests.
     @property
     def openai(self) -> SimpleNamespace:
-        """Compatibility shim exposing OpenAI settings as a namespace."""
+        """Provide backward-compatible OpenAI settings namespace.
+
+        Returns:
+            A SimpleNamespace containing OpenAI configuration settings.
+        """
         key_val = self.openai_key.get_secret_value()
         return SimpleNamespace(
             endpoint=self.openai_endpoint,

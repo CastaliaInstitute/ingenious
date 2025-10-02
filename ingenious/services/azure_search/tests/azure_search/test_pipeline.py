@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-Pipeline tests: factory wiring, semantic rerank, cleaning, get_answer paths.
-"""
+"""Pipeline tests: factory wiring, semantic rerank, cleaning, get_answer paths."""
 
 from __future__ import annotations
 
@@ -93,9 +91,7 @@ async def test_apply_semantic_ranking_happy(config: SearchConfig) -> None:
         ]
     )
 
-    with patch.object(
-        p._rerank_client, "search", AsyncMock(return_value=async_iter_mock)
-    ):
+    with patch.object(p._rerank_client, "search", AsyncMock(return_value=async_iter_mock)):
         out = await p._apply_semantic_ranking("q", fused)
 
     assert [d["id"] for d in out] == ["B", "A"]
@@ -116,9 +112,7 @@ async def test_apply_semantic_ranking_truncation(config: SearchConfig) -> None:
     async_iter_mock = conftest_module.AsyncIter(
         [{"id": f"doc_{i}", "@search.reranker_score": 3.0} for i in range(50)]
     )
-    with patch.object(
-        p._rerank_client, "search", AsyncMock(return_value=async_iter_mock)
-    ):
+    with patch.object(p._rerank_client, "search", AsyncMock(return_value=async_iter_mock)):
         out = await p._apply_semantic_ranking("q", fused)
 
     assert len(out) == 55
@@ -199,17 +193,13 @@ async def test_get_answer_paths(config: SearchConfig) -> None:
     # happy path with semantic
     r.search_lexical = AsyncMock(return_value=[{"id": "L1"}])
     r.search_vector = AsyncMock(return_value=[{"id": "V1"}])
-    f.fuse = AsyncMock(
-        return_value=[{"id": "S1", "_fused_score": 0.4, "vector": [0.1]}]
-    )
+    f.fuse = AsyncMock(return_value=[{"id": "S1", "_fused_score": 0.4, "vector": [0.1]}])
     g.generate = AsyncMock(return_value="final")
     with patch.object(
         p,
         "_apply_semantic_ranking",
         new=AsyncMock(
-            return_value=[
-                {"id": "S1", "_final_score": 3.0, "content": "C", "vector": [0.1]}
-            ]
+            return_value=[{"id": "S1", "_final_score": 3.0, "content": "C", "vector": [0.1]}]
         ),
     ):
         out = await p.get_answer("q")

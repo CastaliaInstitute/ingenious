@@ -1,5 +1,4 @@
-"""
-Pydantic models for configuration settings.
+"""Pydantic models for configuration settings.
 
 This module contains all the BaseModel classes that define
 the structure and validation for different configuration sections.
@@ -28,12 +27,8 @@ class ChatHistorySettings(BaseModel):
     database_connection_string: str = Field(
         "", description="Connection string for Azure SQL (leave empty for SQLite)"
     )
-    database_name: str = Field(
-        "", description="Database name for Azure SQL (ignored for SQLite)"
-    )
-    memory_path: str = Field(
-        "./tmp", description="Path for memory storage and temporary files"
-    )
+    database_name: str = Field("", description="Database name for Azure SQL (ignored for SQLite)")
+    memory_path: str = Field("./tmp", description="Path for memory storage and temporary files")
 
 
 class ModelSettings(BaseModel):
@@ -43,19 +38,13 @@ class ModelSettings(BaseModel):
     Supports Azure OpenAI, OpenAI, and other compatible endpoints.
     """
 
-    model: str = Field(
-        ..., description="Model name (e.g., 'gpt-4o-mini', 'gpt-3.5-turbo')"
-    )
+    model: str = Field(..., description="Model name (e.g., 'gpt-4o-mini', 'gpt-3.5-turbo')")
     api_type: str = Field("rest", description="API type: 'rest' for HTTP APIs")
-    api_version: str = Field(
-        "2023-03-15-preview", description="API version for Azure OpenAI"
-    )
+    api_version: str = Field("2023-03-15-preview", description="API version for Azure OpenAI")
     deployment: str = Field("", description="Azure OpenAI deployment name (optional)")
     api_key: str = Field("", description="API key for the model service")
     base_url: str = Field("", description="Base URL for the API endpoint")
-    client_id: str = Field(
-        "", description="Azure client ID for MSI authentication (optional)"
-    )
+    client_id: str = Field("", description="Azure client ID for MSI authentication (optional)")
     client_secret: str = Field(
         "",
         description="Azure client secret for CLIENT_ID_AND_SECRET authentication (optional)",
@@ -74,9 +63,7 @@ class ModelSettings(BaseModel):
     def validate_api_key(cls, v: str, info: ValidationInfo) -> str:
         """Validate that API key is provided when using token authentication."""
         # Get authentication_method from the values being validated
-        auth_mode = info.data.get(
-            "authentication_method", AuthenticationMethod.DEFAULT_CREDENTIAL
-        )
+        auth_mode = info.data.get("authentication_method", AuthenticationMethod.DEFAULT_CREDENTIAL)
 
         # Check for placeholder values
         if v and "placeholder" in v.lower():
@@ -206,18 +193,14 @@ class AzureSearchSettings(BaseModel):
         "default", description="Semantic configuration name for L2 re-ranking"
     )
     # Optional knobs
-    use_semantic_ranking: bool = Field(
-        True, description="Enable L2 semantic re-ranking"
-    )
+    use_semantic_ranking: bool = Field(True, description="Enable L2 semantic re-ranking")
     top_k_retrieval: int = Field(20, description="K for lexical/vector retrieval")
     top_n_final: int = Field(5, description="N final chunks for RAG")
     id_field: str = Field("id", description="Index id field")
     content_field: str = Field("content", description="Index content field")
     vector_field: str = Field("vector", description="Index vector field")
 
-    client_id: str = Field(
-        "", description="Azure client ID for MSI authentication (optional)"
-    )
+    client_id: str = Field("", description="Azure client ID for MSI authentication (optional)")
     client_secret: str = Field(
         "",
         description="Azure client secret for CLIENT_ID_AND_SECRET authentication (optional)",
@@ -241,9 +224,7 @@ class AzureSqlSettings(BaseModel):
 
     database_name: str = Field("", description="Azure SQL database name")
     table_name: str = Field("", description="Default table name for operations")
-    database_connection_string: str = Field(
-        "", description="Azure SQL connection string"
-    )
+    database_connection_string: str = Field("", description="Azure SQL connection string")
 
 
 class WebAuthenticationSettings(BaseModel):
@@ -252,9 +233,7 @@ class WebAuthenticationSettings(BaseModel):
     enable: bool = Field(False, description="Enable web authentication")
     username: str = Field("admin", description="Username for basic authentication")
     password: str = Field("", description="Password for basic authentication")
-    type: str = Field(
-        "basic", description="Authentication type: 'basic' for HTTP basic auth"
-    )
+    type: str = Field("basic", description="Authentication type: 'basic' for HTTP basic auth")
     enable_global_middleware: bool = Field(
         False,
         description="Enable global authentication middleware to protect all endpoints",
@@ -286,15 +265,9 @@ class WebSettings(BaseModel):
         description="IP address to bind the web server (0.0.0.0 for all interfaces)",
     )
     port: int = Field(80, description="Port number for the web server")
-    type: str = Field(
-        "fastapi", description="Web framework type: 'fastapi' for FastAPI"
-    )
-    asynchronous: bool = Field(
-        False, description="Enable asynchronous response handling"
-    )
-    streaming_chunk_size: int = Field(
-        100, description="Maximum characters per streaming chunk"
-    )
+    type: str = Field("fastapi", description="Web framework type: 'fastapi' for FastAPI")
+    asynchronous: bool = Field(False, description="Enable asynchronous response handling")
+    streaming_chunk_size: int = Field(100, description="Maximum characters per streaming chunk")
     authentication: WebAuthenticationSettings = WebAuthenticationSettings()
 
     @field_validator("port")
@@ -316,12 +289,8 @@ class LocalSqlSettings(BaseModel):
     database_path: str = Field(
         "./.tmp/sample_sql_db", description="Path to local SQLite database file"
     )
-    sample_csv_path: str = Field(
-        "", description="Path to sample CSV files for data loading"
-    )
-    sample_database_name: str = Field(
-        "sample_sql_db", description="Name for the sample database"
-    )
+    sample_csv_path: str = Field("", description="Path to sample CSV files for data loading")
+    sample_database_name: str = Field("sample_sql_db", description="Name for the sample database")
 
 
 class FileStorageContainerSettings(BaseModel):
@@ -338,15 +307,9 @@ class FileStorageContainerSettings(BaseModel):
     container_name: str = Field(
         "", description="Container name for Azure storage (ignored for local)"
     )
-    path: str = Field(
-        "./", description="Storage path (local directory or Azure blob prefix)"
-    )
-    add_sub_folders: bool = Field(
-        True, description="Create subdirectories for organization"
-    )
-    url: str = Field(
-        "", description="Azure storage account URL (for Azure storage only)"
-    )
+    path: str = Field("./", description="Storage path (local directory or Azure blob prefix)")
+    add_sub_folders: bool = Field(True, description="Create subdirectories for organization")
+    url: str = Field("", description="Azure storage account URL (for Azure storage only)")
     client_id: str = Field(
         "", description="Azure client ID for authentication (for Azure storage only)"
     )
@@ -405,9 +368,7 @@ class ReceiverSettings(BaseModel):
 
     enable: bool = Field(False, description="Enable external event receiver")
     api_url: str = Field("", description="URL for receiving external events")
-    api_key: str = Field(
-        "DevApiKey", description="API key for authenticating external events"
-    )
+    api_key: str = Field("DevApiKey", description="API key for authenticating external events")
 
 
 class CosmosSettings(BaseModel):

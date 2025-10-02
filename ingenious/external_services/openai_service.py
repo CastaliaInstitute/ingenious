@@ -1,4 +1,9 @@
-# ingenious/external_services/openai_service.py
+"""OpenAI service integration for Azure OpenAI.
+
+This module provides a service class for interacting with Azure OpenAI
+with support for both streaming and non-streaming completions.
+"""
+
 from __future__ import annotations
 
 import re
@@ -22,6 +27,14 @@ logger = get_logger(__name__)
 
 
 class OpenAIService:
+    """Service for interacting with Azure OpenAI.
+
+    Attributes:
+        model: Base OpenAI model name
+        client: OpenAI client instance
+        _deployment: Azure deployment name
+    """
+
     def __init__(
         self,
         azure_endpoint: str,
@@ -36,13 +49,23 @@ class OpenAIService:
         *,
         client: Optional[Any] = None,
     ):
-        """
-        Initialize the service.
+        """Initialize the OpenAI service.
 
-        Notes:
-        - For Azure OpenAI, `deployment` is the identifier you pass as `model=...`
-          to the Chat Completions API. If not provided, we default it to `open_ai_model`.
-        - You may inject a prebuilt `client` (useful in tests).
+        Args:
+            azure_endpoint: Azure OpenAI endpoint URL
+            api_key: API key for authentication
+            api_version: Azure OpenAI API version
+            open_ai_model: Base OpenAI model name
+            deployment: Azure deployment name (defaults to model name)
+            authentication_method: Method for authentication
+            client_id: Azure AD client ID (for AAD auth)
+            client_secret: Azure AD client secret (for AAD auth)
+            tenant_id: Azure AD tenant ID (for AAD auth)
+            client: Pre-configured client (for testing)
+
+        Note:
+            For Azure OpenAI, deployment is the identifier passed as model
+            to the Chat Completions API. If not provided, defaults to open_ai_model.
         """
         # Keep both for clarity: base model (for logs) and deployment (for API).
         self.model = open_ai_model
@@ -73,8 +96,21 @@ class OpenAIService:
         tool_choice: ChatCompletionToolChoiceOptionParam | None = None,
         json_mode: bool = False,
     ) -> ChatCompletionMessage:
-        """
-        Generate a non-streaming response using Chat Completions.
+        """Generate a non-streaming response using Chat Completions.
+
+        Args:
+            messages: List of chat messages
+            tools: Optional list of tools/functions available to the model
+            tool_choice: Strategy for tool selection
+            json_mode: Whether to enable JSON response format
+
+        Returns:
+            ChatCompletionMessage with the model's response
+
+        Raises:
+            ContentFilterError: If content filtering is triggered
+            TokenLimitExceededError: If token limit is exceeded
+            RuntimeError: If response is missing choices
         """
         logger.debug(
             "Generating OpenAI response",
@@ -86,9 +122,7 @@ class OpenAIService:
         )
         try:
             effective_tool_choice: Any = (
-                tool_choice
-                if tool_choice is not None
-                else ("auto" if tools else NOT_GIVEN)
+                tool_choice if tool_choice is not None else ("auto" if tools else NOT_GIVEN)
             )
 
             response = self.client.chat.completions.create(
@@ -123,10 +157,7 @@ class OpenAIService:
                 message = error.body.get("message", message)
 
                 # Content filter path
-                if (
-                    getattr(error, "code", None) == "content_filter"
-                    and "innererror" in error.body
-                ):
+                if getattr(error, "code", None) == "content_filter" and "innererror" in error.body:
                     content_filter_results = error.body["innererror"].get(
                         "content_filter_result", {}
                     )
@@ -168,9 +199,20 @@ class OpenAIService:
         tool_choice: ChatCompletionToolChoiceOptionParam | None = None,
         json_mode: bool = False,
     ) -> AsyncIterator[str]:
-        """
-        Generate a streaming response using Chat Completions.
-        Yields content chunks as they arrive.
+        """Generate a streaming response using Chat Completions.
+
+        Args:
+            messages: List of chat messages
+            tools: Optional list of tools/functions available to the model
+            tool_choice: Strategy for tool selection
+            json_mode: Whether to enable JSON response format
+
+        Yields:
+            Content chunks as they arrive from the model
+
+        Raises:
+            ContentFilterError: If content filtering is triggered
+            TokenLimitExceededError: If token limit is exceeded
         """
         logger.debug(
             "Generating streaming OpenAI response",
@@ -182,9 +224,7 @@ class OpenAIService:
         )
         try:
             effective_tool_choice: Any = (
-                tool_choice
-                if tool_choice is not None
-                else ("auto" if tools else NOT_GIVEN)
+                tool_choice if tool_choice is not None else ("auto" if tools else NOT_GIVEN)
             )
 
             stream = self.client.chat.completions.create(
@@ -230,10 +270,7 @@ class OpenAIService:
             if isinstance(error.body, dict):
                 message = error.body.get("message", message)
 
-                if (
-                    getattr(error, "code", None) == "content_filter"
-                    and "innererror" in error.body
-                ):
+                if getattr(error, "code", None) == "content_filter" and "innererror" in error.body:
                     content_filter_results = error.body["innererror"].get(
                         "content_filter_result", {}
                     )

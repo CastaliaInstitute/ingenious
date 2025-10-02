@@ -1,3 +1,9 @@
+"""Chat service abstraction and implementation.
+
+This module provides the IChatService interface and ChatService implementation
+for handling chat requests and responses through various backend services.
+"""
+
 from abc import ABC, abstractmethod
 from collections.abc import Mapping
 from typing import Any, AsyncIterator, Optional, Union
@@ -17,23 +23,63 @@ logger = get_logger(__name__)
 
 
 class IChatService(ABC):
+    """Abstract interface for chat service implementations.
+
+    Attributes:
+        service_class: The underlying service class instance.
+    """
+
     service_class: Any = None
 
     @abstractmethod
     async def get_chat_response(self, chat_request: ChatRequest) -> ChatResponse:
+        """Get a complete chat response.
+
+        Args:
+            chat_request: The chat request containing user message and context.
+
+        Returns:
+            Complete chat response with agent's reply.
+        """
         pass
 
     @abstractmethod
     def get_streaming_chat_response(
         self, chat_request: ChatRequest
     ) -> AsyncIterator[ChatResponseChunk]:
+        """Get a streaming chat response.
+
+        Args:
+            chat_request: The chat request containing user message and context.
+
+        Yields:
+            Chat response chunks as they become available.
+        """
         pass
 
 
 def _resolve_streaming_chunk_size(config: Any, default: int = 100) -> int:
-    """Best-effort lookup for streaming chunk size across config variants."""
+    """Resolve streaming chunk size from configuration.
+
+    Best-effort lookup for streaming chunk size across config variants.
+
+    Args:
+        config: Configuration object to extract chunk size from.
+        default: Default chunk size if not found in config.
+
+    Returns:
+        Streaming chunk size as integer.
+    """
 
     def _extract(candidate: Any) -> Optional[int]:
+        """Extract streaming chunk size from a config object.
+
+        Args:
+            candidate: Configuration object to extract from.
+
+        Returns:
+            Chunk size if found and valid, None otherwise.
+        """
         size = getattr(candidate, "streaming_chunk_size", None)
         return size if isinstance(size, int) and size > 0 else None
 
@@ -55,6 +101,17 @@ def _resolve_streaming_chunk_size(config: Any, default: int = 100) -> int:
 
 
 class ChatService(IChatService):
+    """Chat service implementation with dynamic service loading.
+
+    Dynamically loads and initializes chat service implementations based on
+    the specified service type.
+
+    Attributes:
+        service_class: The instantiated service class instance.
+        config: Application configuration.
+        revision: Revision ID for service versioning.
+    """
+
     service_class: Any  # Will be set to instantiated service class
 
     def __init__(
@@ -65,6 +122,18 @@ class ChatService(IChatService):
         config: Union[Config, IngeniousSettings],
         revision: str = "dfe19b62-07f1-4cb5-ae9a-561a253e4b04",
     ):
+        """Initialize chat service with specified type and configuration.
+
+        Args:
+            chat_service_type: Type of chat service to load (e.g., 'multi_agent').
+            chat_history_repository: Repository for storing chat history.
+            conversation_flow: Name of conversation flow to use.
+            config: Application configuration object.
+            revision: Revision ID for service versioning.
+
+        Raises:
+            ChatServiceError: If service module cannot be imported or initialized.
+        """
         class_name = f"{chat_service_type.lower()}_chat_service"
         self.config = config
         self.revision = revision
@@ -77,16 +146,12 @@ class ChatService(IChatService):
             conversation_flow=conversation_flow,
         ) as ctx:
             try:
-                module_name = (
-                    f"services.chat_services.{chat_service_type.lower()}.service"
-                )
+                module_name = f"services.chat_services.{chat_service_type.lower()}.service"
                 service_class = import_class_with_fallback(
                     module_name, class_name, expected_methods=["get_chat_response"]
                 )
 
-                ctx.add_metadata(
-                    module_name=module_name, class_name=class_name, successful=True
-                )
+                ctx.add_metadata(module_name=module_name, class_name=class_name, successful=True)
 
                 logger.info(
                     "Chat service class loaded successfully",
@@ -143,6 +208,17 @@ class ChatService(IChatService):
         )
 
     async def get_chat_response(self, chat_request: ChatRequest) -> ChatResponse:
+        """Get a complete chat response from the underlying service.
+
+        Args:
+            chat_request: The chat request containing user message and context.
+
+        Returns:
+            Complete chat response with agent's reply.
+
+        Raises:
+            ValueError: If conversation_flow is not set in the request.
+        """
         if not chat_request.conversation_flow:
             raise ValueError(f"conversation_flow not set {chat_request}")
         return await self.service_class.get_chat_response(chat_request)  # type: ignore
@@ -150,14 +226,25 @@ class ChatService(IChatService):
     async def get_streaming_chat_response(
         self, chat_request: ChatRequest
     ) -> AsyncIterator[ChatResponseChunk]:
+        """Get a streaming chat response from the underlying service.
+
+        Falls back to chunked non-streaming response if service doesn't support streaming.
+
+        Args:
+            chat_request: The chat request containing user message and context.
+
+        Yields:
+            Chat response chunks as they become available.
+
+        Raises:
+            ValueError: If conversation_flow is not set in the request.
+        """
         if not chat_request.conversation_flow:
             raise ValueError(f"conversation_flow not set {chat_request}")
 
         # Check if the service class supports streaming
         if hasattr(self.service_class, "get_streaming_chat_response"):
-            async for chunk in self.service_class.get_streaming_chat_response(
-                chat_request
-            ):
+            async for chunk in self.service_class.get_streaming_chat_response(chat_request):
                 yield chunk
         else:
             # Fallback: convert regular response to streaming chunks

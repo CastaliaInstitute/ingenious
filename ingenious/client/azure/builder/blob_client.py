@@ -1,3 +1,9 @@
+"""Azure Blob Storage client builders with multiple authentication methods.
+
+This module provides builder classes for creating Azure Blob Storage service and blob clients
+with support for connection strings, SAS tokens, and Azure AD token-based authentication.
+"""
+
 from typing import Optional, Union
 
 from azure.storage.blob import BlobClient, BlobServiceClient
@@ -10,29 +16,46 @@ from ingenious.models.config import FileStorageContainer
 
 
 class BlobServiceClientBuilder(AzureClientBuilder):
-    """Builder for Azure Blob Storage service clients with multiple authentication methods."""
+    """Builder for Azure Blob Storage service clients with multiple authentication methods.
+
+    Attributes:
+        file_storage_config: File storage configuration containing account and authentication info.
+    """
 
     def __init__(
         self,
         file_storage_config: Union[FileStorageContainer, FileStorageContainerSettings],
     ):
+        """Initialize the Blob Service client builder.
+
+        Args:
+            file_storage_config: File storage configuration object.
+        """
         # Extract authentication parameters from config
         auth_config = self._create_auth_config_from_storage_config(file_storage_config)
         super().__init__(auth_config=auth_config)
         self.file_storage_config = file_storage_config
 
     def _create_auth_config_from_storage_config(self, file_storage_config):
-        """Create AzureAuthConfig from file storage configuration."""
+        """Create AzureAuthConfig from file storage configuration.
+
+        Args:
+            file_storage_config: File storage configuration object.
+
+        Returns:
+            AzureAuthConfig instance extracted from the storage configuration.
+        """
         return AzureAuthConfig.from_config(file_storage_config)
 
     def build(self) -> BlobServiceClient:
-        """
-        Build Azure Blob Service client based on file storage configuration.
+        """Build Azure Blob Service client based on file storage configuration.
 
         Returns:
-            BlobServiceClient: Configured Azure Blob Service client
-        """
+            Configured Azure Blob Service client.
 
+        Raises:
+            ValueError: If account URL is required but not provided.
+        """
         # Get credential based on authentication method
         if self.auth_config.authentication_method == AuthenticationMethod.TOKEN:
             # Use SAS token or connection string - need raw string value
@@ -48,28 +71,26 @@ class BlobServiceClientBuilder(AzureClientBuilder):
                     self.file_storage_config, "account_url", None
                 )
                 if not account_url:
-                    raise ValueError(
-                        "Account URL is required for blob storage authentication"
-                    )
-                return BlobServiceClient(
-                    account_url=account_url, credential=credential_str
-                )
+                    raise ValueError("Account URL is required for blob storage authentication")
+                return BlobServiceClient(account_url=account_url, credential=credential_str)
         else:
             # Use Azure AD authentication - use token_credential property
             account_url = getattr(self.file_storage_config, "url", None) or getattr(
                 self.file_storage_config, "account_url", None
             )
             if not account_url:
-                raise ValueError(
-                    "Account URL is required for blob storage authentication"
-                )
-            return BlobServiceClient(
-                account_url=account_url, credential=self.token_credential
-            )
+                raise ValueError("Account URL is required for blob storage authentication")
+            return BlobServiceClient(account_url=account_url, credential=self.token_credential)
 
 
 class BlobClientBuilder(AzureClientBuilder):
-    """Builder for Azure Blob File clients."""
+    """Builder for Azure Blob File clients.
+
+    Attributes:
+        file_storage_config: File storage configuration object.
+        container_name: Name of the blob container.
+        blob_name: Name of the specific blob.
+    """
 
     def __init__(
         self,
@@ -77,25 +98,39 @@ class BlobClientBuilder(AzureClientBuilder):
         container_name: Optional[str] = None,
         blob_name: Optional[str] = None,
     ):
+        """Initialize the Blob client builder.
+
+        Args:
+            file_storage_config: File storage configuration object.
+            container_name: Optional container name, falls back to config value.
+            blob_name: Optional blob name.
+        """
         # Extract authentication parameters from config
         auth_config = self._create_auth_config_from_storage_config(file_storage_config)
         super().__init__(auth_config=auth_config)
         self.file_storage_config = file_storage_config
-        self.container_name = container_name or getattr(
-            file_storage_config, "container_name", None
-        )
+        self.container_name = container_name or getattr(file_storage_config, "container_name", None)
         self.blob_name = blob_name
 
     def _create_auth_config_from_storage_config(self, file_storage_config):
-        """Create AzureAuthConfig from file storage configuration."""
+        """Create AzureAuthConfig from file storage configuration.
+
+        Args:
+            file_storage_config: File storage configuration object.
+
+        Returns:
+            AzureAuthConfig instance extracted from the storage configuration.
+        """
         return AzureAuthConfig.from_config(file_storage_config)
 
     def build(self) -> BlobClient:
-        """
-        Build Azure Blob client for specific blob.
+        """Build Azure Blob client for specific blob.
 
         Returns:
-            BlobClient: Configured Azure Blob client
+            Configured Azure Blob client.
+
+        Raises:
+            ValueError: If container_name or blob_name is not provided.
         """
         # Build the service client first
         service_builder = BlobServiceClientBuilder(self.file_storage_config)

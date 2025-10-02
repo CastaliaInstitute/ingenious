@@ -20,7 +20,6 @@ class RepositoryFactory:
         db_type: DatabaseClientType, config: IngeniousSettings
     ) -> IChatHistoryRepository:
         """Create a chat history repository based on database type."""
-
         if db_type == DatabaseClientType.SQLITE:
             return RepositoryFactory._create_sqlite_repository(config)
         elif db_type == DatabaseClientType.AZURESQL:
@@ -60,7 +59,6 @@ class ModernRepositoryFactory:
         db_type: DatabaseClientType, config: IngeniousSettings
     ) -> IChatHistoryRepository:
         """Create a repository using composition pattern."""
-
         if db_type == DatabaseClientType.SQLITE:
             return ModernRepositoryFactory._create_sqlite_repository(config)
         elif db_type == DatabaseClientType.AZURESQL:
@@ -182,9 +180,7 @@ class SQLiteChatHistoryRepository(BaseSQLRepository):
                 cause=e,
             ) from e
 
-    async def get_threads_for_user(
-        self, identifier: str, thread_id: Optional[str] = None
-    ) -> Any:
+    async def get_threads_for_user(self, identifier: str, thread_id: Optional[str] = None) -> Any:
         """Get threads for user - delegates to existing SQLite implementation."""
         # This would be implemented by copying the existing implementation
         # from the SQLite repository class
@@ -257,9 +253,7 @@ class AzureSQLChatHistoryRepository(BaseSQLRepository):
                 cause=e,
             ) from e
 
-    async def get_threads_for_user(
-        self, identifier: str, thread_id: Optional[str] = None
-    ) -> Any:
+    async def get_threads_for_user(self, identifier: str, thread_id: Optional[str] = None) -> Any:
         """Get threads for user - delegates to existing Azure SQL implementation."""
         # This would be implemented by copying the existing implementation
         # from the Azure SQL repository class

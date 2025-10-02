@@ -1,5 +1,4 @@
-"""
-AzureSearchProvider — a thin façade over the AdvancedSearchPipeline.
+"""AzureSearchProvider — a thin façade over the AdvancedSearchPipeline.
 
 Production shape:
 - Provider owns config construction and (optionally) a pipeline instance.
@@ -44,11 +43,15 @@ logger = logging.getLogger("ingenious.services.azure_search.provider")
 
 
 class AzureSearchProvider:
-    """
-    Thin façade: builds config/pipeline, then delegates.
+    """Thin facade for Azure Search pipeline operations.
 
-    Constructor accepts either a settings object (usual path) or an already-built
-    SearchConfig. `enable_answer_generation` can override the config.
+    This class builds configuration and pipeline, then delegates retrieval and
+    generation operations to the underlying pipeline. It provides fallback
+    mechanisms for retrieval failures.
+
+    Attributes:
+        _cfg: The validated search configuration.
+        _pipeline: The underlying advanced search pipeline.
     """
 
     _cfg: "SearchConfig"
@@ -60,7 +63,13 @@ class AzureSearchProvider:
         enable_answer_generation: Optional[bool] = None,
         pipeline: Optional["AdvancedSearchPipeline"] = None,
     ) -> None:
-        """Initialize the provider, building a config and pipeline if needed."""
+        """Initialize the provider, building a config and pipeline if needed.
+
+        Args:
+            settings_or_config: Either an IngeniousSettings or SearchConfig object.
+            enable_answer_generation: Optional flag to override generation setting.
+            pipeline: Optional pre-built pipeline instance.
+        """
         # Resolve config
         from ingenious.services.azure_search.config import SearchConfig  # local import
 
@@ -70,9 +79,7 @@ class AzureSearchProvider:
             cfg = build_search_config_from_settings(settings_or_config)
 
         if enable_answer_generation is not None:
-            cfg = cfg.copy(
-                update={"enable_answer_generation": bool(enable_answer_generation)}
-            )
+            cfg = cfg.copy(update={"enable_answer_generation": bool(enable_answer_generation)})
 
         self._cfg = cfg
         self._pipeline = pipeline or build_search_pipeline(cfg)
@@ -80,7 +87,15 @@ class AzureSearchProvider:
     # ----------------------------- Public API ------------------------------
 
     def _prepare_search_params(self, query: str, limit: int) -> Dict[str, Any]:
-        """Prepare common search parameters for raw client searches."""
+        """Prepare common search parameters for raw client searches.
+
+        Args:
+            query: The search query string.
+            limit: Maximum number of results to return.
+
+        Returns:
+            A dictionary of search parameters.
+        """
         params: Dict[str, Any] = {"search_text": query, "top": limit}
         try:
             from azure.search.documents.models import QueryType as _QT
@@ -91,22 +106,31 @@ class AzureSearchProvider:
         return params
 
     def _apply_cleaner(self, results: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
-        """Apply the pipeline's cleaner function if available."""
+        """Apply the pipeline's cleaner function if available.
+
+        Args:
+            results: List of raw search results.
+
+        Returns:
+            Cleaned search results.
+        """
         cleaner = getattr(self._pipeline, "_clean_sources", None)
         return cleaner(results) if callable(cleaner) else results
 
-    async def _try_lexical_fallback(
-        self, query: str, limit: int
-    ) -> List[Dict[str, Any]]:
-        """Try lexical-only fallback via the pipeline's retriever."""
+    async def _try_lexical_fallback(self, query: str, limit: int) -> List[Dict[str, Any]]:
+        """Try lexical-only fallback via the pipeline's retriever.
+
+        Args:
+            query: The search query string.
+            limit: Maximum number of results to return.
+
+        Returns:
+            List of lexical search results, or empty list on failure.
+        """
         try:
-            logger.debug(
-                "Provider.retrieve – calling retriever.search_lexical(%r)", query
-            )
+            logger.debug("Provider.retrieve – calling retriever.search_lexical(%r)", query)
             lex = await self._pipeline.retriever.search_lexical(query)
-            logger.debug(
-                "Provider.retrieve – lexical fallback returned %d rows", len(lex)
-            )
+            logger.debug("Provider.retrieve – lexical fallback returned %d rows", len(lex))
             if lex:
                 head = lex[:limit]
                 return self._apply_cleaner(head)
@@ -120,7 +144,15 @@ class AzureSearchProvider:
     async def _try_raw_client_search(
         self, params: Dict[str, Any], limit: int
     ) -> List[Dict[str, Any]]:
-        """Try search using the retriever's raw client."""
+        """Try search using the retriever's raw client.
+
+        Args:
+            params: Search parameters dictionary.
+            limit: Maximum number of results to return.
+
+        Returns:
+            List of search results, or empty list on failure.
+        """
         if limit <= 0:
             return []
 
@@ -142,22 +174,20 @@ class AzureSearchProvider:
                 if raw:
                     return self._apply_cleaner(raw)
             except Exception as exc:
-                logger.debug(
-                    "Provider.retrieve – last‑mile client search failed.", exc_info=exc
-                )
+                logger.debug("Provider.retrieve – last‑mile client search failed.", exc_info=exc)
         return []
 
     def _check_factory_seam(self) -> tuple[Any, bool]:
-        """Check if factory seam is patched (test mode)."""
+        """Check if factory seam is patched (test mode).
+
+        Returns:
+            Tuple of (factory instance, is_patched_flag).
+        """
         try:
             from . import client_init as _ci
 
             factory = getattr(_ci, "_get_factory", None)
-            factory = (
-                factory()
-                if callable(factory)
-                else getattr(_ci, "AzureClientFactory", None)
-            )
+            factory = factory() if callable(factory) else getattr(_ci, "AzureClientFactory", None)
             factory_mod = getattr(factory, "__module__", "")
             seam_is_patched = ".tests." in factory_mod or factory_mod.endswith(".tests")
             logger.debug(
@@ -172,7 +202,15 @@ class AzureSearchProvider:
     async def _try_factory_client_search(
         self, params: Dict[str, Any], limit: int
     ) -> List[Dict[str, Any]]:
-        """Try search using factory-created one-shot client (only in test mode)."""
+        """Try search using factory-created one-shot client (only in test mode).
+
+        Args:
+            params: Search parameters dictionary.
+            limit: Maximum number of results to return.
+
+        Returns:
+            List of search results, or empty list on failure.
+        """
         if limit <= 0:
             return []
 
@@ -225,15 +263,22 @@ class AzureSearchProvider:
         return []
 
     async def retrieve(self, query: str, top_k: int = 10) -> List[Dict[str, Any]]:
-        """Delegate to the pipeline's retrieval/ranking path, with safe fallbacks.
+        """Delegate to the pipeline's retrieval/ranking path with safe fallbacks.
 
         Behavior:
             1) Call pipeline.retrieve(query, top_k).
-            2) If it returns non-empty → pass-through.
+            2) If it returns non-empty, pass through.
             3) If it returns empty for a non-blank query:
                3a) Attempt lexical-only fallback via the pipeline's retriever.
                3b) If still empty, try the retriever's raw SearchClient directly.
-               3c) Factory one‑shot client ONLY when the factory seam is patched in tests.
+               3c) Factory one-shot client ONLY when the factory seam is patched.
+
+        Args:
+            query: The search query string.
+            top_k: Maximum number of results to return.
+
+        Returns:
+            List of retrieved and ranked search results.
         """
         logger.debug("Provider.retrieve(query=%r, top_k=%s) – start", query, top_k)
 
@@ -272,14 +317,13 @@ class AzureSearchProvider:
     def _robust_discover_service_triplet(
         self,
     ) -> Tuple[Optional[str], Optional[str], Optional[str]]:
-        """
-        Best-effort, production-safe discovery of (endpoint, key, index_name).
+        """Discover Azure Search service configuration triplet.
 
-        We look across a few *known* holders that appear in this codebase and tests:
-        - Provider config object (self._cfg)
-        - Pipeline config/settings objects (self._pipeline.{config,_config,settings,_settings})
-        - Retriever instance (self._pipeline.retriever and its known attrs)
-        We do not trawl arbitrary globals; this remains deterministic for production.
+        Best-effort, production-safe discovery of (endpoint, key, index_name)
+        from known configuration holders in provider, pipeline, and retriever.
+
+        Returns:
+            Tuple of (endpoint, key, index_name) with discovered values or None.
         """
 
         def _dig_service_from(
@@ -373,8 +417,19 @@ class AzureSearchProvider:
         return ep, sk, idx
 
     async def answer(self, query: str) -> Dict[str, Any]:
-        """
-        Friendly preflights, then delegate full RAG to the pipeline.
+        """Execute full RAG pipeline to generate an answer.
+
+        Performs preflight checks, then delegates to the pipeline for
+        retrieval and answer generation.
+
+        Args:
+            query: The user's question.
+
+        Returns:
+            Dictionary containing 'answer' and 'source_chunks' keys.
+
+        Raises:
+            GenerationDisabledError: If answer generation is not enabled.
         """
         if not self._cfg.enable_answer_generation:
             # Provide a helpful error + snapshot for diagnostics
@@ -401,8 +456,10 @@ class AzureSearchProvider:
         return await self._pipeline.answer(query)
 
     async def close(self) -> None:
-        """
-        Close the underlying pipeline gracefully. Tolerate sync/async close().
+        """Close the underlying pipeline gracefully.
+
+        Tolerates both synchronous and asynchronous close() methods on the
+        pipeline instance.
         """
         closer = getattr(self._pipeline, "close", None)
         if not closer:

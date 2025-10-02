@@ -67,12 +67,8 @@ def test_serve_env_port_precedence(tmp_path: Path, monkeypatch: MonkeyPatch) -> 
 
     # Patch get_config, make_app seam, uvicorn.run
     with (
-        patch(
-            "ingenious.cli.server_commands.get_config", return_value=stub_config()
-        ) as get_cfg,
-        patch(
-            "ingenious.cli.server_commands.make_app", return_value=MagicMock()
-        ) as make_app_mock,
+        patch("ingenious.cli.server_commands.get_config", return_value=stub_config()) as get_cfg,
+        patch("ingenious.cli.server_commands.make_app", return_value=MagicMock()) as make_app_mock,
         patch("ingenious.cli.server_commands.uvicorn.run") as uv_run,
     ):
         result: Result = runner.invoke(app, ["serve"])
@@ -106,17 +102,11 @@ def test_serve_cli_port_overrides_env(tmp_path: Path, monkeypatch: MonkeyPatch) 
     app: typer.Typer = make_app_and_register()
 
     with (
-        patch(
-            "ingenious.cli.server_commands.get_config", return_value=stub_config()
-        ) as get_cfg,
-        patch(
-            "ingenious.cli.server_commands.make_app", return_value=MagicMock()
-        ) as make_app_mock,
+        patch("ingenious.cli.server_commands.get_config", return_value=stub_config()) as get_cfg,
+        patch("ingenious.cli.server_commands.make_app", return_value=MagicMock()) as make_app_mock,
         patch("ingenious.cli.server_commands.uvicorn.run") as uv_run,
     ):
-        result: Result = runner.invoke(
-            app, ["serve", "--port", "9999", "--host", "127.0.0.1"]
-        )
+        result: Result = runner.invoke(app, ["serve", "--port", "9999", "--host", "127.0.0.1"])
         assert result.exit_code == 0
 
         # app constructed via seam
@@ -134,7 +124,6 @@ def test_serve_cli_port_overrides_env(tmp_path: Path, monkeypatch: MonkeyPatch) 
 
 def test_serve_env_file_loading(tmp_path: Path, monkeypatch: MonkeyPatch) -> None:
     """Test that providing --env-file triggers dotenv loading with the given path."""
-
     env_file: Path = tmp_path / ".env.runtime"
     env_file.write_text("CUSTOM_ENV=from-file\n")
 
@@ -144,12 +133,8 @@ def test_serve_env_file_loading(tmp_path: Path, monkeypatch: MonkeyPatch) -> Non
 
     with (
         patch("ingenious.cli.server_commands.load_dotenv") as mock_load_dotenv,
-        patch(
-            "ingenious.cli.server_commands.get_config", return_value=stub_config()
-        ) as get_cfg,
-        patch(
-            "ingenious.cli.server_commands.make_app", return_value=MagicMock()
-        ) as make_app_mock,
+        patch("ingenious.cli.server_commands.get_config", return_value=stub_config()) as get_cfg,
+        patch("ingenious.cli.server_commands.make_app", return_value=MagicMock()) as make_app_mock,
         patch("ingenious.cli.server_commands.uvicorn.run") as uv_run,
     ):
 
@@ -163,13 +148,9 @@ def test_serve_env_file_loading(tmp_path: Path, monkeypatch: MonkeyPatch) -> Non
         assert result.exit_code == 0
 
         # ensure dotenv called with resolved path
-        called_paths = [
-            str(call.args[0]) for call in mock_load_dotenv.call_args_list if call.args
-        ]
+        called_paths = [str(call.args[0]) for call in mock_load_dotenv.call_args_list if call.args]
         assert str(env_file.resolve()) in called_paths
-        assert any(
-            call.kwargs.get("override") for call in mock_load_dotenv.call_args_list
-        )
+        assert any(call.kwargs.get("override") for call in mock_load_dotenv.call_args_list)
 
         # ensure environment variable was set via fake loader
         assert os.environ.get("CUSTOM_ENV") == "loaded"

@@ -1,5 +1,4 @@
-"""
-CLI command modules for Insight Ingenious.
+"""CLI command modules for Insight Ingenious.
 
 This package contains the modular command implementations using the new BaseCommand architecture.
 """

@@ -1,17 +1,19 @@
-"""
-Tests for ingenious.dataprep.__init__ module
-NOTE: dataprep module has been moved to ingenious-aux/document-preprocessing
+"""Test dataprep module initialization.
+
+NOTE: dataprep module has been moved to ingenious-aux/document-preprocessing.
+This module contains placeholder tests for the migrated functionality.
 """
 
 import pytest
 
 
 class TestDataprepInit:
-    """Test cases for dataprep __init__ module - MOVED TO ingenious-aux"""
+    """Test cases for dataprep init module.
 
-    @pytest.mark.skip(
-        reason="dataprep module moved to ingenious-aux/document-preprocessing"
-    )
+    NOTE: Module has been moved to ingenious-aux/document-preprocessing.
+    """
+
+    @pytest.mark.skip(reason="dataprep module moved to ingenious-aux/document-preprocessing")
     def test_module_moved(self):
-        """Test placeholder - module has been moved"""
+        """Test placeholder indicating module has been moved."""
         pass

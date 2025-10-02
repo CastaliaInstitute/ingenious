@@ -1,3 +1,9 @@
+"""Prompt template management API routes.
+
+This module provides endpoints for managing Jinja2 prompt templates,
+revisions, and workflow prompt discovery.
+"""
+
 from typing import Any, Dict, List, Optional, Set
 
 from fastapi import APIRouter, Depends, HTTPException, Request
@@ -15,25 +21,40 @@ router = APIRouter()
 
 
 class UpdatePromptRequest(BaseModel):
+    """Request model for updating prompt template content.
+
+    Attributes:
+        content (str): New prompt template content.
+    """
+
     content: str
 
 
 class CreateRevisionRequest(BaseModel):
+    """Request model for creating a new revision.
+
+    Attributes:
+        revision_id (Optional[str]): Optional revision ID, auto-generated if not provided.
+    """
+
     revision_id: Optional[str] = None
 
 
 async def _get_existing_revision_ids(fs: FileStorage) -> Set[str]:
-    """
-    Helper function to get existing revision IDs from the templates directory.
+    """Get existing revision IDs from the templates directory.
+
+    Args:
+        fs (FileStorage): File storage instance.
+
+    Returns:
+        Set[str]: Set of existing revision IDs.
     """
     try:
         # Get the base templates/prompts path
         base_template_path = await fs.get_prompt_template_path()
 
         # List all directories in the templates/prompts folder
-        revision_dirs: List[str] = await fs.list_directories(
-            file_path=base_template_path
-        )
+        revision_dirs: List[str] = await fs.list_directories(file_path=base_template_path)
 
         # Convert list to set
         revision_ids = set(revision_dirs) if revision_dirs else set()
@@ -66,9 +87,7 @@ async def list_revisions(
     username: Annotated[str, Depends(ingen_deps.get_conditional_security)],
     fs: FileStorage = Depends(ingen_deps.get_file_storage_revisions),
 ) -> Dict[str, Any]:
-    """
-    List all available revisions (workflow directories) in the prompt templates.
-    """
+    """List all available revisions (workflow directories) in the prompt templates."""
     try:
         revision_ids = await _get_existing_revision_ids(fs)
 
@@ -88,14 +107,10 @@ async def list_workflows_for_prompts(
     username: Annotated[str, Depends(ingen_deps.get_conditional_security)],
     fs: FileStorage = Depends(ingen_deps.get_file_storage_revisions),
 ) -> Dict[str, Any]:
-    """
-    List all available workflows that have prompt templates.
-    """
+    """List all available workflows that have prompt templates."""
     try:
         config = ingen_deps.get_config()
-        workflows = discover_workflows(
-            include_builtin=config.chat_service.enable_builtin_workflows
-        )
+        workflows = discover_workflows(include_builtin=config.chat_service.enable_builtin_workflows)
         workflows_with_prompts = []
 
         for workflow in workflows:
@@ -113,9 +128,7 @@ async def list_workflows_for_prompts(
                     workflow_path = await fs.get_prompt_template_path(variant)
                     workflow_files = await fs.list_files(file_path=workflow_path)
                     if workflow_files:
-                        prompt_files = [
-                            f for f in workflow_files if f.endswith((".md", ".jinja"))
-                        ]
+                        prompt_files = [f for f in workflow_files if f.endswith((".md", ".jinja"))]
                         if prompt_files:
                             workflows_with_prompts.append(
                                 {
@@ -164,9 +177,7 @@ async def list_prompts_enhanced(
     username: Annotated[str, Depends(ingen_deps.get_conditional_security)],
     fs: FileStorage = Depends(ingen_deps.get_file_storage_revisions),
 ) -> Dict[str, Any]:
-    """
-    Enhanced prompt listing with better metadata and error handling.
-    """
+    """Enhanced prompt listing with better metadata and error handling."""
     try:
         # Normalize the revision_id to handle both hyphenated and underscored formats
         normalized_revision_id = normalize_workflow_name(revision_id)
@@ -181,9 +192,7 @@ async def list_prompts_enhanced(
 
         for rid in revision_ids_to_try:
             try:
-                prompt_template_folder = await fs.get_prompt_template_path(
-                    revision_id=rid
-                )
+                prompt_template_folder = await fs.get_prompt_template_path(revision_id=rid)
                 file_list = await fs.list_files(file_path=prompt_template_folder)
 
                 # Filter to get only template files
@@ -200,9 +209,7 @@ async def list_prompts_enhanced(
                     break
 
             except Exception as e:
-                logger.debug(
-                    "Failed to list prompts for revision", revision_id=rid, error=str(e)
-                )
+                logger.debug("Failed to list prompts for revision", revision_id=rid, error=str(e))
                 continue
 
         if not files and not successful_revision_id:
@@ -243,6 +250,18 @@ async def view(
     username: Annotated[str, Depends(ingen_deps.get_conditional_security)],
     fs: FileStorage = Depends(ingen_deps.get_file_storage_revisions),
 ) -> str:
+    """View prompt template content.
+
+    Args:
+        revision_id (str): Revision identifier.
+        filename (str): Template filename.
+        request (Request): HTTP request object.
+        username (str): Authenticated username.
+        fs (FileStorage): Injected file storage.
+
+    Returns:
+        str: Template file content.
+    """
     prompt_template_folder = await fs.get_prompt_template_path(revision_id=revision_id)
     content = await fs.read_file(file_name=filename, file_path=prompt_template_folder)
     return content
@@ -257,6 +276,22 @@ async def update(
     username: Annotated[str, Depends(ingen_deps.get_conditional_security)],
     fs: FileStorage = Depends(ingen_deps.get_file_storage_revisions),
 ) -> Dict[str, str]:
+    """Update prompt template content.
+
+    Args:
+        revision_id (str): Revision identifier.
+        filename (str): Template filename.
+        request (Request): HTTP request object.
+        update_request (UpdatePromptRequest): New template content.
+        username (str): Authenticated username.
+        fs (FileStorage): Injected file storage.
+
+    Returns:
+        Dict[str, str]: Success message.
+
+    Raises:
+        HTTPException: 500 if update fails.
+    """
     prompt_template_folder = await fs.get_prompt_template_path(revision_id=revision_id)
     try:
         await fs.write_file(
@@ -283,8 +318,7 @@ async def create_revision(
     username: Annotated[str, Depends(ingen_deps.get_conditional_security)],
     fs: FileStorage = Depends(ingen_deps.get_file_storage_revisions),
 ) -> Dict[str, Any]:
-    """
-    Create a new revision with templates copied from the configured original templates.
+    """Create a new revision with templates copied from the configured original templates.
 
     If no revision_id is provided, generates a funny name like 'cosmic-ninja-a1b2c3d4'.
     If revision_id is provided but conflicts, appends incremental numbers like 'my-workflow-1'.
@@ -301,9 +335,7 @@ async def create_revision(
                     revision_id=create_request.revision_id,
                     error=str(e),
                 )
-                raise HTTPException(
-                    status_code=400, detail=f"Invalid revision_id format: {str(e)}"
-                )
+                raise HTTPException(status_code=400, detail=f"Invalid revision_id format: {str(e)}")
 
         # Only proceed with file operations after basic validation passes
         existing_revision_ids = await _get_existing_revision_ids(fs)
@@ -381,9 +413,7 @@ async def create_revision(
 
         # Check if any files were successfully copied
         if not copied_files:
-            raise HTTPException(
-                status_code=500, detail="Failed to copy any template files"
-            )
+            raise HTTPException(status_code=500, detail="Failed to copy any template files")
 
         logger.debug(
             "Successfully created revision",
@@ -402,9 +432,7 @@ async def create_revision(
         if failed_files:
             response_data["partial_success"] = True
             response_data["failed_files"] = failed_files
-            response_data["warning"] = (
-                f"Failed to copy {len(failed_files)} template files"
-            )
+            response_data["warning"] = f"Failed to copy {len(failed_files)} template files"
 
         return response_data
 
@@ -418,6 +446,4 @@ async def create_revision(
             error=str(e),
             exc_info=True,
         )
-        raise HTTPException(
-            status_code=500, detail="Internal server error while creating revision"
-        )
+        raise HTTPException(status_code=500, detail="Internal server error while creating revision")

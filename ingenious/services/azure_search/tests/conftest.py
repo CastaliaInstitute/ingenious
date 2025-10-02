@@ -276,9 +276,7 @@ def stub_external_modules(
 
     # azure.search.documents.aio.SearchClient
     sys.modules.setdefault("azure.search", types.ModuleType("azure.search"))
-    sys.modules.setdefault(
-        "azure.search.documents", types.ModuleType("azure.search.documents")
-    )
+    sys.modules.setdefault("azure.search.documents", types.ModuleType("azure.search.documents"))
     aio_mod = types.ModuleType("azure.search.documents.aio")
     aio_mod.SearchClient = _DummySearchClient
     sys.modules["azure.search.documents.aio"] = aio_mod
@@ -501,7 +499,6 @@ def _install_azure_stubs() -> None:
     the existence of key classes before creating stubs. It's a safe way to make
     the codebase runnable for tests without the full `azure-sdk` installed.
     """
-
     # ----- azure.core.credentials ------------------------------------------------------
     try:
         from azure.core.credentials import AzureKeyCredential  # noqa: F401
@@ -574,9 +571,7 @@ def _install_azure_stubs() -> None:
             class AzureError(Exception):
                 """A stub for the base AzureError."""
 
-                def __init__(
-                    self, message: Optional[str] = None, **kwargs: Any
-                ) -> None:
+                def __init__(self, message: Optional[str] = None, **kwargs: Any) -> None:
                     """Initialize the error."""
                     super().__init__(message or "")
                     self.message = message or ""
@@ -656,9 +651,7 @@ def _install_azure_stubs() -> None:
                     """Accept any arguments during initialization."""
                     pass
 
-                def get_token(
-                    self, *scopes: str, **kwargs: Any
-                ) -> types.SimpleNamespace:
+                def get_token(self, *scopes: str, **kwargs: Any) -> types.SimpleNamespace:
                     """Return a fake token."""
                     return types.SimpleNamespace(token="fake-token", expires_on=0)
 
@@ -730,21 +723,15 @@ def _install_azure_stubs() -> None:
                     """Initialize with a sequence of credentials."""
                     self._creds = credentials
 
-                def get_token(
-                    self, *scopes: str, **kwargs: Any
-                ) -> types.SimpleNamespace:
+                def get_token(self, *scopes: str, **kwargs: Any) -> types.SimpleNamespace:
                     """Attempt to get a token from each credential in the chain."""
                     for c in self._creds:
-                        tok = getattr(c, "get_token", lambda *a, **k: None)(
-                            *scopes, **kwargs
-                        )
+                        tok = getattr(c, "get_token", lambda *a, **k: None)(*scopes, **kwargs)
                         if tok:
                             return tok
                     return super().get_token(*scopes, **kwargs)
 
-            def get_bearer_token_provider(
-                credential: Any, scope: Any
-            ) -> Callable[..., str]:
+            def get_bearer_token_provider(credential: Any, scope: Any) -> Callable[..., str]:
                 """Return a fake bearer token provider function."""
 
                 def _provider(*a: Any, **k: Any) -> str:
@@ -810,9 +797,7 @@ def _install_azure_stubs() -> None:
             class SecretClient:  # minimal KV Secrets client
                 """A stub for the synchronous Key Vault SecretClient."""
 
-                def __init__(
-                    self, vault_url: str, credential: Any, **kwargs: Any
-                ) -> None:
+                def __init__(self, vault_url: str, credential: Any, **kwargs: Any) -> None:
                     """Initialize the client with a vault URL and credential."""
                     self.vault_url = vault_url
                     self.credential = credential
@@ -826,9 +811,7 @@ def _install_azure_stubs() -> None:
                         return self._store[name]
                     raise ResourceNotFoundError(f"Secret '{name}' not found")
 
-                def set_secret(
-                    self, name: str, value: str, **kwargs: Any
-                ) -> _KeyVaultSecret:
+                def set_secret(self, name: str, value: str, **kwargs: Any) -> _KeyVaultSecret:
                     """Set a secret in the in-memory store."""
                     s = _KeyVaultSecret(name, value)
                     self._store[name] = s
@@ -850,13 +833,9 @@ def _install_azure_stubs() -> None:
             class _AioSecretClient:
                 """A stub for the asynchronous Key Vault SecretClient."""
 
-                def __init__(
-                    self, vault_url: str, credential: Any, **kwargs: Any
-                ) -> None:
+                def __init__(self, vault_url: str, credential: Any, **kwargs: Any) -> None:
                     """Initialize the async client, wrapping a sync version."""
-                    self._sync: Any = secrets_mod.SecretClient(
-                        vault_url, credential, **kwargs
-                    )
+                    self._sync: Any = secrets_mod.SecretClient(vault_url, credential, **kwargs)
 
                 async def get_secret(self, name: str, **kwargs: Any) -> Any:
                     """Asynchronously retrieve a secret."""

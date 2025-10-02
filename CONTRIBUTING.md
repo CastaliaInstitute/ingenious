@@ -77,6 +77,67 @@ uv run mypy .
 
 Refer to the mypy prompt in .github/prompts for a better understanding of expected type safety in a PR.
 
+### Docstring Standard
+
+All Python code must use **Google-style docstrings**. This ensures consistency and enables automated documentation generation.
+
+#### Format Requirements
+
+- Use triple double quotes (`"""`)
+- First line: one-sentence imperative summary (e.g., "Create user account.")
+- Blank line before detailed description
+- Include `Args`, `Returns`, `Raises`, `Yields`, and `Attributes` sections as applicable
+
+#### Examples
+
+**Module docstring:**
+```python
+"""User authentication and authorization utilities.
+
+This module provides functions for validating credentials, managing sessions,
+and enforcing access control policies.
+"""
+```
+
+**Class docstring:**
+```python
+class UserManager:
+    """Manage user accounts and permissions.
+
+    Attributes:
+        database: Database connection for user storage.
+        auth_provider: External authentication provider.
+    """
+```
+
+**Function docstring:**
+```python
+def create_user(username: str, email: str) -> User:
+    """Create a new user account.
+
+    Args:
+        username: Unique username for the account.
+        email: User's email address for notifications.
+
+    Returns:
+        User: Newly created user instance.
+
+    Raises:
+        ValueError: If username is already taken.
+    """
+```
+
+#### Enforcement
+
+Docstring compliance is enforced via:
+- `ruff` with pydocstyle rules (configured in `pyproject.toml`)
+- pre-commit hooks that run on every commit
+
+Run checks manually:
+```bash
+uv run ruff check --select D .
+```
+
 ### Built-in Prompts
 Please refer to the folder .github/prompts for pre-written prompts that will be helpful in developing Ingenious.
 

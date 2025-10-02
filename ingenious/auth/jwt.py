@@ -1,3 +1,9 @@
+"""JWT token management utilities.
+
+This module provides functions for creating and verifying JWT access and refresh
+tokens, with configuration loaded from settings or environment variables.
+"""
+
 import os
 from datetime import datetime, timedelta
 from typing import Any, Dict, Optional
@@ -10,9 +16,12 @@ from ingenious.core.structured_logging import get_logger
 logger = get_logger(__name__)
 
 
-# Get configuration with fallbacks
 def _get_jwt_config():
-    """Get JWT configuration from settings or environment variables."""
+    """Get JWT configuration from settings or environment variables.
+
+    Returns:
+        tuple: (secret_key, algorithm, access_token_expire_minutes, refresh_token_expire_days)
+    """
     try:
         from ingenious.config.config import get_config
 
@@ -26,9 +35,7 @@ def _get_jwt_config():
             or "your-secret-key-change-this-in-production"
         )
 
-        algorithm = (
-            auth_config.jwt_algorithm or os.getenv("INGENIOUS_JWT_ALGORITHM") or "HS256"
-        )
+        algorithm = auth_config.jwt_algorithm or os.getenv("INGENIOUS_JWT_ALGORITHM") or "HS256"
 
         access_token_expire = (
             auth_config.jwt_access_token_expire_minutes
@@ -57,15 +64,19 @@ def _get_jwt_config():
         )
 
 
-SECRET_KEY, ALGORITHM, ACCESS_TOKEN_EXPIRE_MINUTES, REFRESH_TOKEN_EXPIRE_DAYS = (
-    _get_jwt_config()
-)
+SECRET_KEY, ALGORITHM, ACCESS_TOKEN_EXPIRE_MINUTES, REFRESH_TOKEN_EXPIRE_DAYS = _get_jwt_config()
 
 
-def create_access_token(
-    data: Dict[str, Any], expires_delta: Optional[timedelta] = None
-) -> str:
-    """Create a JWT access token"""
+def create_access_token(data: Dict[str, Any], expires_delta: Optional[timedelta] = None) -> str:
+    """Create a JWT access token.
+
+    Args:
+        data (Dict[str, Any]): Token payload data (e.g., {"sub": username}).
+        expires_delta (Optional[timedelta]): Custom expiration time, defaults to configured value.
+
+    Returns:
+        str: Encoded JWT access token.
+    """
     to_encode = data.copy()
     if expires_delta:
         expire = datetime.utcnow() + expires_delta
@@ -78,7 +89,14 @@ def create_access_token(
 
 
 def create_refresh_token(data: Dict[str, Any]) -> str:
-    """Create a JWT refresh token"""
+    """Create a JWT refresh token.
+
+    Args:
+        data (Dict[str, Any]): Token payload data (e.g., {"sub": username}).
+
+    Returns:
+        str: Encoded JWT refresh token.
+    """
     to_encode = data.copy()
     expire = datetime.utcnow() + timedelta(days=REFRESH_TOKEN_EXPIRE_DAYS)
     to_encode.update({"exp": expire, "type": "refresh"})
@@ -87,7 +105,18 @@ def create_refresh_token(data: Dict[str, Any]) -> str:
 
 
 def verify_token(token: str, token_type: str = "access") -> Dict[str, Any]:
-    """Verify and decode a JWT token"""
+    """Verify and decode a JWT token.
+
+    Args:
+        token (str): JWT token string.
+        token_type (str): Expected token type ("access" or "refresh").
+
+    Returns:
+        Dict[str, Any]: Decoded token payload.
+
+    Raises:
+        HTTPException: 401 if token is invalid, expired, or wrong type.
+    """
     try:
         payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
 
@@ -127,7 +156,17 @@ def verify_token(token: str, token_type: str = "access") -> Dict[str, Any]:
 
 
 def get_username_from_token(token: str) -> str:
-    """Extract username from a valid JWT token"""
+    """Extract username from a valid JWT token.
+
+    Args:
+        token (str): JWT token string.
+
+    Returns:
+        str: Username from token payload.
+
+    Raises:
+        HTTPException: 401 if token is invalid or missing username.
+    """
     payload = verify_token(token)
     username = payload.get("sub")
     if username is None:

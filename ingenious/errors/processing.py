@@ -1,5 +1,4 @@
-"""
-Comprehensive error handling system for document processing module
+"""Comprehensive error handling system for document processing module
 ================================================================
 
 This module provides a structured error handling framework for the document
@@ -179,9 +178,7 @@ class ProcessingError(Exception):
         super().__init__(message)
 
         self.message = message
-        self.error_code = (
-            error_code if isinstance(error_code, ErrorCode) else ErrorCode(error_code)
-        )
+        self.error_code = error_code if isinstance(error_code, ErrorCode) else ErrorCode(error_code)
         self.cause = cause
         self.recoverable = recoverable
         self.recovery_suggestion = recovery_suggestion
@@ -268,9 +265,7 @@ class ExtractionError(ProcessingError):
             recovery_suggestion=recovery_suggestion,
         )
 
-    def _get_default_recovery_suggestion(
-        self, error_code: Union[ErrorCode, str]
-    ) -> str:
+    def _get_default_recovery_suggestion(self, error_code: Union[ErrorCode, str]) -> str:
         """Get default recovery suggestion based on error code."""
         suggestions = {
             ErrorCode.DOCUMENT_NOT_FOUND: "Verify the file path exists and is accessible",
@@ -345,9 +340,7 @@ class NetworkError(ProcessingError):
             recovery_suggestion=recovery_suggestion,
         )
 
-    def _get_default_recovery_suggestion(
-        self, error_code: Union[ErrorCode, str]
-    ) -> str:
+    def _get_default_recovery_suggestion(self, error_code: Union[ErrorCode, str]) -> str:
         """Get default recovery suggestion based on error code."""
         suggestions = {
             ErrorCode.NETWORK_TIMEOUT: "Increase timeout or retry the operation",
@@ -395,12 +388,12 @@ def retry_with_backoff(
     only_recoverable : bool, default=True
         Only retry recoverable ProcessingError instances
 
-    Returns
+    Returns:
     -------
     Callable
         Decorated function with retry logic
 
-    Examples
+    Examples:
     --------
     >>> @retry_with_backoff(max_retries=3, base_delay=1.0)
     >>> def fetch_document(url):
@@ -431,9 +424,7 @@ def retry_with_backoff(
                     if attempt >= max_retries or not should_retry:
                         # Update context with retry information
                         if isinstance(exc, ProcessingError):
-                            exc.with_context(
-                                retry_count=attempt, max_retries=max_retries
-                            )
+                            exc.with_context(retry_count=attempt, max_retries=max_retries)
                             exc.context.metadata["final_attempt"] = True
                         raise exc
 
@@ -469,9 +460,7 @@ def retry_with_backoff(
             if last_exception:
                 raise last_exception
             else:
-                raise ProcessingError(
-                    "Retry loop completed without success or exception"
-                )
+                raise ProcessingError("Retry loop completed without success or exception")
 
         return wrapper  # type: ignore
 

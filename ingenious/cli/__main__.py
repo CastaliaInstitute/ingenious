@@ -1,5 +1,4 @@
-"""
-CLI entry point for direct module execution.
+"""CLI entry point for direct module execution.
 
 Allows running the CLI with: python -m ingenious.cli
 """

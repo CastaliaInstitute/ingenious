@@ -1,9 +1,8 @@
-"""
-Azure OpenAI (sync) client builder.
+"""Azure OpenAI synchronous client builder.
 
-Why:
-- Keep import-time light and preserve lazy identity imports.
-- Support both API key and AAD token provider authentication paths.
+This module provides a builder class for creating synchronous Azure OpenAI clients
+with support for API key and Azure AD token-based authentication. It preserves
+lazy identity imports and minimizes import-time overhead.
 
 Usage:
     builder = AzureOpenAIClientBuilder(model_config)
@@ -22,10 +21,18 @@ from ingenious.models.config import ModelConfig
 
 
 class AzureOpenAIClientBuilder(AzureClientBuilder):
-    """Builder for Azure OpenAI clients with multiple authentication methods."""
+    """Builder for Azure OpenAI clients with multiple authentication methods.
+
+    Attributes:
+        model_config: Model configuration containing endpoint and authentication parameters.
+    """
 
     def __init__(self, model_config: Union[ModelConfig, ModelSettings]) -> None:
-        """Extract authentication parameters and store the model config."""
+        """Extract authentication parameters and store the model config.
+
+        Args:
+            model_config: Model configuration object.
+        """
         # Extract authentication parameters from config
         auth_config = self._create_auth_config_from_model_config(model_config)
         super().__init__(auth_config=auth_config)
@@ -34,15 +41,21 @@ class AzureOpenAIClientBuilder(AzureClientBuilder):
     def _create_auth_config_from_model_config(
         self, model_config: Union[ModelConfig, ModelSettings]
     ) -> AzureAuthConfig:
-        """Create AzureAuthConfig from model configuration."""
+        """Create AzureAuthConfig from model configuration.
+
+        Args:
+            model_config: Model configuration object.
+
+        Returns:
+            AzureAuthConfig instance extracted from the model configuration.
+        """
         return AzureAuthConfig.from_config(model_config)
 
     def build(self) -> AzureOpenAI:
-        """
-        Build Azure OpenAI client based on model configuration.
+        """Build Azure OpenAI client based on model configuration.
 
         Returns:
-            AzureOpenAI: Configured Azure OpenAI client.
+            Configured Azure OpenAI client.
         """
         # Get credential based on authentication method
         if self.auth_config.authentication_method == AuthenticationMethod.TOKEN:

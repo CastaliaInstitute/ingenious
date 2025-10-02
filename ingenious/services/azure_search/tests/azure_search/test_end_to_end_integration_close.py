@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-End-to-end (direct) path: provider builds pipeline via factory and closes it.
+"""End-to-end (direct) path: provider builds pipeline via factory and closes it.
 
 We assert:
 - The pipeline is obtained via the provider constructor.

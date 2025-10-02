@@ -53,8 +53,7 @@ class _AsyncResults:
 
 
 class FlakySearchClient:
-    """
-    Simulates an Azure Search client with internal retry policy:
+    """Simulates an Azure Search client with internal retry policy:
     two 429 "failures" then success — all inside a single .search() call.
     """
 
@@ -97,8 +96,7 @@ class DummyEmbeddingsClient:
 
 @pytest.mark.asyncio
 async def test_retry_on_429_then_success() -> None:
-    """
-    Validates we succeed through the normal call path when the underlying
+    """Validates we succeed through the normal call path when the underlying
     client handles transient 429s via its own retry policy.
     """
     cfg = SimpleNamespace(
@@ -141,8 +139,6 @@ class _NoopSearch:
 async def test_vector_embed_429_fallback_or_retry(config):
     # 👇 Make the client look like OpenAI: client.embeddings.create(...)
     emb_client = SimpleNamespace(embeddings=_FlakyEmbeddings())
-    retr = AzureSearchRetriever(
-        config, search_client=_NoopSearch(), embedding_client=emb_client
-    )
+    retr = AzureSearchRetriever(config, search_client=_NoopSearch(), embedding_client=emb_client)
     with pytest.raises(RuntimeError):
         await retr.search_vector("q")

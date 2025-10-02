@@ -1,5 +1,4 @@
-"""
-Safe dynamic import utilities for Ingenious.
+"""Safe dynamic import utilities for Ingenious.
 
 This module provides standardized, safe dynamic import functionality with:
 - Comprehensive error handling and logging
@@ -48,8 +47,7 @@ class ImportValidationError(Exception):
 
 
 class SafeImporter:
-    """
-    Thread-safe importer with caching, fallback support, and comprehensive error handling.
+    """Thread-safe importer with caching, fallback support, and comprehensive error handling.
 
     Provides standardized dynamic import functionality across the Ingenious codebase
     with support for namespace extensions and proper error reporting.
@@ -90,17 +88,13 @@ class SafeImporter:
         if path_str not in sys.path:
             sys.path.insert(0, path_str)
 
-    def _validate_module(
-        self, module: Any, expected_attrs: Optional[List[str]] = None
-    ) -> None:
+    def _validate_module(self, module: Any, expected_attrs: Optional[List[str]] = None) -> None:
         """Validate that a module meets expected requirements."""
         if module is None:
             raise ImportValidationError("Module is None")
 
         if expected_attrs:
-            missing_attrs = [
-                attr for attr in expected_attrs if not hasattr(module, attr)
-            ]
+            missing_attrs = [attr for attr in expected_attrs if not hasattr(module, attr)]
             if missing_attrs:
                 raise ImportValidationError(
                     f"Module {getattr(module, '__name__', 'unknown')} missing required attributes: {missing_attrs}"
@@ -126,9 +120,7 @@ class SafeImporter:
                 )
 
     @lru_cache(maxsize=128)
-    def _find_module_spec(
-        self, module_name: str
-    ) -> Optional[importlib.machinery.ModuleSpec]:
+    def _find_module_spec(self, module_name: str) -> Optional[importlib.machinery.ModuleSpec]:
         """Find module spec with caching."""
         try:
             return importlib.util.find_spec(module_name)
@@ -142,8 +134,7 @@ class SafeImporter:
         expected_attrs: Optional[List[str]] = None,
         use_cache: bool = True,
     ) -> Any:
-        """
-        Import a module with comprehensive error handling.
+        """Import a module with comprehensive error handling.
 
         Args:
             module_name: Name of the module to import
@@ -224,8 +215,7 @@ class SafeImporter:
         expected_attrs: Optional[List[str]] = None,
         use_cache: bool = True,
     ) -> Any:
-        """
-        Import a module with namespace fallback support.
+        """Import a module with namespace fallback support.
 
         Tries to import from extension namespaces first, then falls back to core ingenious.
 
@@ -305,8 +295,7 @@ class SafeImporter:
         expected_methods: Optional[List[str]] = None,
         use_cache: bool = True,
     ) -> type:
-        """
-        Import a class from a module with validation.
+        """Import a class from a module with validation.
 
         Args:
             module_name: Name of the module containing the class
@@ -373,8 +362,7 @@ class SafeImporter:
         expected_methods: Optional[List[str]] = None,
         use_cache: bool = True,
     ) -> type:
-        """
-        Import a class with namespace fallback support.
+        """Import a class with namespace fallback support.
 
         Args:
             module_name: Name of the module (without namespace prefix)
@@ -421,9 +409,7 @@ class SafeImporter:
             if use_cache:
                 self._class_cache[cache_key] = cls
 
-            logger.info(
-                f"Successfully imported class with fallback: {module_name}.{class_name}"
-            )
+            logger.info(f"Successfully imported class with fallback: {module_name}.{class_name}")
             return cls
 
         except ImportError:
@@ -437,8 +423,7 @@ class SafeImporter:
             )
 
     def validate_dependencies(self, dependencies: List[str]) -> Dict[str, bool]:
-        """
-        Validate that required dependencies are available.
+        """Validate that required dependencies are available.
 
         Args:
             dependencies: List of module names to check
@@ -463,17 +448,14 @@ class SafeImporter:
         return results
 
     def clear_cache(self, pattern: Optional[str] = None) -> None:
-        """
-        Clear import caches.
+        """Clear import caches.
 
         Args:
             pattern: Optional pattern to match cache keys to clear
         """
         if pattern:
             # Clear specific pattern
-            keys_to_remove = [
-                key for key in self._module_cache.keys() if pattern in key
-            ]
+            keys_to_remove = [key for key in self._module_cache.keys() if pattern in key]
             for key in keys_to_remove:
                 del self._module_cache[key]
 
@@ -481,9 +463,7 @@ class SafeImporter:
             for key in keys_to_remove:
                 del self._class_cache[key]
 
-            keys_to_remove = [
-                key for key in self._failed_imports.keys() if pattern in key
-            ]
+            keys_to_remove = [key for key in self._failed_imports.keys() if pattern in key]
             for key in keys_to_remove:
                 del self._failed_imports[key]
         else:
@@ -495,10 +475,7 @@ class SafeImporter:
         # Also clear the lru_cache
         self._find_module_spec.cache_clear()
 
-        logger.debug(
-            "Cleared import caches"
-            + (f" matching pattern: {pattern}" if pattern else "")
-        )
+        logger.debug("Cleared import caches" + (f" matching pattern: {pattern}" if pattern else ""))
 
     def get_cache_stats(self) -> Dict[str, Any]:
         """Get statistics about the import caches."""
@@ -515,9 +492,7 @@ _global_importer = SafeImporter()
 
 
 # Convenience functions for backward compatibility
-def import_module_safely(
-    module_name: str, expected_attrs: Optional[List[str]] = None
-) -> Any:
+def import_module_safely(module_name: str, expected_attrs: Optional[List[str]] = None) -> Any:
     """Import a module safely with error handling."""
     return _global_importer.import_module(module_name, expected_attrs=expected_attrs)
 
@@ -526,18 +501,14 @@ def import_class_safely(
     module_name: str, class_name: str, expected_methods: Optional[List[str]] = None
 ) -> type:
     """Import a class safely with error handling."""
-    return _global_importer.import_class(
-        module_name, class_name, expected_methods=expected_methods
-    )
+    return _global_importer.import_class(module_name, class_name, expected_methods=expected_methods)
 
 
 def import_module_with_fallback(
     module_name: str, expected_attrs: Optional[List[str]] = None
 ) -> Any:
     """Import a module with namespace fallback support."""
-    return _global_importer.import_module_with_fallback(
-        module_name, expected_attrs=expected_attrs
-    )
+    return _global_importer.import_module_with_fallback(module_name, expected_attrs=expected_attrs)
 
 
 def import_class_with_fallback(

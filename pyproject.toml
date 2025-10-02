@@ -234,9 +234,15 @@ packages = ["ingenious"]
 [project.scripts]
 ingen = "ingenious.cli:app"
 
+[tool.ruff]
+line-length = 100
+
 [tool.ruff.lint]
-extend-select = ["I"]
+extend-select = ["I", "D"]
 ignore = ["E402"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
 
 [tool.mypy]
 # Global mypy configuration

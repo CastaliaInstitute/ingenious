@@ -1,5 +1,4 @@
-"""
-Workflow-related CLI commands for Insight Ingenious.
+"""Workflow-related CLI commands for Insight Ingenious.
 
 This module contains commands for managing and viewing workflow requirements.
 """
@@ -14,21 +13,24 @@ from typing_extensions import Annotated
 
 
 def register_commands(app: typer.Typer, console: Console) -> None:
-    """Register workflow-related commands with the typer app."""
+    """Register workflow-related commands with the typer app.
 
-    @app.command(
-        name="workflows", help="Show available workflows and their requirements"
-    )
+    Args:
+        app: Typer application instance to register commands with
+        console: Console instance for output formatting
+    """
+
+    @app.command(name="workflows", help="Show available workflows and their requirements")
     def workflows(
         workflow: Annotated[
             str,
-            typer.Argument(
-                help="Specific workflow to check, or 'all' to list everything"
-            ),
+            typer.Argument(help="Specific workflow to check, or 'all' to list everything"),
         ] = "all",
     ) -> None:
-        """
-        📋 Display available conversation workflows and their configuration requirements.
+        """Display available conversation workflows and their configuration requirements.
+
+        Args:
+            workflow: Specific workflow name to check, or 'all' to list everything
 
         Use this command to understand what external services and configuration
         are needed for each workflow before attempting to use them.
@@ -50,8 +52,10 @@ def register_commands(app: typer.Typer, console: Console) -> None:
             ),
         ] = "all",
     ) -> None:
-        """
-        Show configuration requirements for conversation workflows.
+        """Show configuration requirements for conversation workflows (deprecated).
+
+        Args:
+            workflow: Workflow name to check, or 'all' to list all workflows
 
         Use this command to understand what external services and configuration
         are needed for each workflow before attempting to use them.
@@ -157,9 +161,7 @@ def register_commands(app: typer.Typer, console: Console) -> None:
         }
 
         if workflow == "all":
-            console.print(
-                "\n[bold blue]📋 INSIGHT INGENIOUS WORKFLOW REQUIREMENTS[/bold blue]\n"
-            )
+            console.print("\n[bold blue]📋 INSIGHT INGENIOUS WORKFLOW REQUIREMENTS[/bold blue]\n")
 
             # Group by category, prioritizing new hyphenated names
             categories: dict[str, list[tuple[str, dict[str, Any]]]] = {}
@@ -191,9 +193,7 @@ def register_commands(app: typer.Typer, console: Console) -> None:
 
         elif workflow in workflows:
             info = workflows[workflow]
-            console.print(
-                f"\n[bold blue]📋 {workflow.upper()} REQUIREMENTS[/bold blue]\n"
-            )
+            console.print(f"\n[bold blue]📋 {workflow.upper()} REQUIREMENTS[/bold blue]\n")
             console.print(f"[bold]Description:[/bold] {info['description']}")
             console.print(f"[bold]Category:[/bold] {info['category']}")
             console.print("[bold]External Services Needed:[/bold]")
@@ -228,6 +228,4 @@ def register_commands(app: typer.Typer, console: Console) -> None:
             for name, info in workflows.items():
                 if "DEPRECATED" not in info["description"]:
                     console.print(f"  • {name}")
-            console.print(
-                "\nUse 'ingen workflows' to see all workflows with descriptions"
-            )
+            console.print("\nUse 'ingen workflows' to see all workflows with descriptions")

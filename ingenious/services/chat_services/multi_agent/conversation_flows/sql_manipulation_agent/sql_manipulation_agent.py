@@ -1,3 +1,9 @@
+"""SQL manipulation agent conversation flow implementation.
+
+This module provides a conversation flow for natural language SQL query generation
+using an AutoGen agent with SQL execution tools for both SQLite and Azure SQL databases.
+"""
+
 import logging
 import os
 import sqlite3
@@ -21,9 +27,26 @@ except ImportError:
 
 
 class ConversationFlow(IConversationFlow):
-    async def get_conversation_response(
-        self, chat_request: ChatRequest
-    ) -> ChatResponse:
+    """Conversation flow for natural language to SQL query generation and execution.
+
+    Provides SQL query generation and execution capabilities using an AutoGen assistant
+    agent with function tools for querying SQLite or Azure SQL databases.
+
+    Inherits from IConversationFlow to integrate with the multi-agent chat service.
+    """
+
+    async def get_conversation_response(self, chat_request: ChatRequest) -> ChatResponse:
+        """Get a conversation response by generating and executing SQL queries.
+
+        Creates an SQL expert assistant agent with database query tools and processes
+        the user's natural language question to generate and execute SQL queries.
+
+        Args:
+            chat_request: ChatRequest containing the user's question and configuration.
+
+        Returns:
+            ChatResponse with the SQL query results and conversation metadata.
+        """
         # Get configuration from the parent service
         model_config = self._config.models[0]
 
@@ -48,29 +71,25 @@ class ConversationFlow(IConversationFlow):
         memory_context = ""
         if chat_request.thread_id and self._chat_service:
             try:
-                thread_messages = await self._chat_service.chat_history_repository.get_thread_messages(
-                    chat_request.thread_id
+                thread_messages = (
+                    await self._chat_service.chat_history_repository.get_thread_messages(
+                        chat_request.thread_id
+                    )
                 )
                 if thread_messages:
                     # Build conversation context from recent messages (last 10)
                     recent_messages = (
-                        thread_messages[-10:]
-                        if len(thread_messages) > 10
-                        else thread_messages
+                        thread_messages[-10:] if len(thread_messages) > 10 else thread_messages
                     )
                     memory_parts = []
                     for msg in recent_messages:
                         memory_parts.append(f"{msg.role}: {msg.content[:100]}...")
-                    memory_context = (
-                        "Previous conversation:\n" + "\n".join(memory_parts) + "\n\n"
-                    )
+                    memory_context = "Previous conversation:\n" + "\n".join(memory_parts) + "\n\n"
             except Exception as e:
                 logger.warning(f"Failed to retrieve thread memory: {e}")
 
         # Create the model client
-        model_client = AzureClientFactory.create_openai_chat_completion_client(
-            model_config
-        )
+        model_client = AzureClientFactory.create_openai_chat_completion_client(model_config)
 
         # Set up context for conversation
         context = "SQL Expert Assistant for analyzing data."
@@ -87,9 +106,7 @@ class ConversationFlow(IConversationFlow):
 
         if use_azure_sql:
             # Use Azure SQL configuration
-            connection_string = (
-                self._config.azure_sql_services.database_connection_string
-            )
+            connection_string = self._config.azure_sql_services.database_connection_string
             table_name = self._config.azure_sql_services.table_name or "sample_table"
 
             # Get table schema from Azure SQL
@@ -142,9 +159,7 @@ class ConversationFlow(IConversationFlow):
                     writing_score INTEGER
                 )""")
                 # Insert some sample data if table is empty
-                count = conn.execute(
-                    "SELECT COUNT(*) FROM students_performance"
-                ).fetchone()[0]
+                count = conn.execute("SELECT COUNT(*) FROM students_performance").fetchone()[0]
                 if count == 0:
                     conn.execute("""INSERT INTO students_performance VALUES
                         ('bachelor''s degree', 'standard', 'none', 72, 72, 74),
@@ -255,9 +270,7 @@ Example queries:
 
         # Extract the response content
         final_message = (
-            response.chat_message.content
-            if response.chat_message
-            else "No response generated"
+            response.chat_message.content if response.chat_message else "No response generated"
         )
 
         # Calculate token usage manually since LLMUsageTracker doesn't work with simple flows
@@ -270,12 +283,8 @@ Example queries:
                 {"role": "user", "content": user_msg},
                 {"role": "assistant", "content": final_message},
             ]
-            total_tokens = num_tokens_from_messages(
-                messages_for_counting, model_config.model
-            )
-            prompt_tokens = num_tokens_from_messages(
-                messages_for_counting[:-1], model_config.model
-            )
+            total_tokens = num_tokens_from_messages(messages_for_counting, model_config.model)
+            prompt_tokens = num_tokens_from_messages(messages_for_counting[:-1], model_config.model)
             completion_tokens = total_tokens - prompt_tokens
         except Exception as e:
             logger.warning(f"Token counting failed: {e}")

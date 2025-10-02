@@ -1,5 +1,4 @@
-"""
-Project management CLI commands for Insight Ingenious.
+"""Project management CLI commands for Insight Ingenious.
 
 This module contains commands for initializing projects and managing project structure.
 """
@@ -18,8 +17,7 @@ class InitCommand(BaseCommand):
     """Initialize a new Insight Ingenious project."""
 
     def execute(self, **kwargs: Any) -> None:
-        """
-        Initialize a new Insight Ingenious project in the current directory.
+        """Initialize a new Insight Ingenious project in the current directory.
 
         Creates a complete project structure with:
         • .env.example - Example environment variables for pydantic-settings configuration
@@ -42,9 +40,7 @@ class InitCommand(BaseCommand):
 
         except Exception as e:
             self.stop_progress()
-            raise CommandError(
-                f"Project initialization failed: {e}", ExitCode.GENERAL_ERROR
-            )
+            raise CommandError(f"Project initialization failed: {e}", ExitCode.GENERAL_ERROR)
 
     def _create_project_structure(self) -> None:
         """Create the project directory structure."""
@@ -60,16 +56,12 @@ class InitCommand(BaseCommand):
 
             # Skip if the destination folder already exists
             if destination.exists():
-                self.print_warning(
-                    f"Folder '{folder_name}' already exists. Skipping..."
-                )
+                self.print_warning(f"Folder '{folder_name}' already exists. Skipping...")
                 continue
 
             # Check if a template path exists (if applicable)
             if template_path and not template_path.exists():
-                self.print_warning(
-                    f"Template directory '{template_path}' not found. Skipping..."
-                )
+                self.print_warning(f"Template directory '{template_path}' not found. Skipping...")
                 continue
 
             try:
@@ -84,9 +76,7 @@ class InitCommand(BaseCommand):
                     self.print_success(f"Created '{folder_name}/' directory")
 
             except Exception as e:
-                raise CommandError(
-                    f"Failed to create {folder_name}: {e}", ExitCode.GENERAL_ERROR
-                )
+                raise CommandError(f"Failed to create {folder_name}: {e}", ExitCode.GENERAL_ERROR)
 
         # Create environment configuration files
         self._create_env_files(base_path)
@@ -338,9 +328,7 @@ tmp/
             templates_dir.mkdir(parents=True, exist_ok=True)
 
             # Copy prompt template files from ingenious_extensions_template
-            source_templates = (
-                base_path / "ingenious_extensions_template" / "templates" / "prompts"
-            )
+            source_templates = base_path / "ingenious_extensions_template" / "templates" / "prompts"
 
             if source_templates.exists():
                 for template_file in source_templates.glob("*.jinja"):
@@ -352,9 +340,7 @@ tmp/
                 )
             else:
                 # Create the directory but warn about missing templates
-                self.print_warning(
-                    "Source templates not found, created empty templates directory"
-                )
+                self.print_warning("Source templates not found, created empty templates directory")
 
         except Exception as e:
             self.logger.error(f"Failed to create templates directory: {e}")
@@ -382,14 +368,10 @@ tmp/
             "   docker run --env-file .env -p 8080:80 ingenious-app",
         ]
 
-        panel = OutputFormatters.create_info_panel(
-            "\n".join(next_steps), "🚀 Next Steps", "green"
-        )
+        panel = OutputFormatters.create_info_panel("\n".join(next_steps), "🚀 Next Steps", "green")
         self.console.print(panel)
 
-        self.console.print(
-            "\n[bold yellow]💡 For detailed configuration help:[/bold yellow]"
-        )
+        self.console.print("\n[bold yellow]💡 For detailed configuration help:[/bold yellow]")
         self.console.print("   ingen workflows --help")
 
 
@@ -399,8 +381,7 @@ def register_commands(app: Any, console: Any) -> None:
 
     @app.command(name="init", help="Initialize a new Insight Ingenious project")  # type: ignore[misc]
     def init() -> None:
-        """
-        🏗️  Initialize a new Insight Ingenious project in the current directory.
+        """🏗️  Initialize a new Insight Ingenious project in the current directory.
 
         Creates a complete project structure with:
         • .env.example - Example environment variables for pydantic-settings configuration

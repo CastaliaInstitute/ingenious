@@ -33,17 +33,12 @@ class azure_FileStorageRepository(IFileStorage):
         # Check if token is actually a connection string
         if self.token and "DefaultEndpointsProtocol" in self.token:
             # Use connection string authentication
-            self.blob_service_client = BlobServiceClient.from_connection_string(
-                self.token
-            )
+            self.blob_service_client = BlobServiceClient.from_connection_string(self.token)
         elif self.authentication_method == file_storage_AuthenticationMethod.TOKEN:
             self.blob_service_client = BlobServiceClient(
                 account_url=self.url, credential=self.token
             )
-        elif (
-            self.authentication_method
-            == file_storage_AuthenticationMethod.CLIENT_ID_AND_SECRET
-        ):
+        elif self.authentication_method == file_storage_AuthenticationMethod.CLIENT_ID_AND_SECRET:
             tenant_id = self.tenant_id or ""
             client_secret = self.client_secret or self.token or ""
             if not (tenant_id and self.client_id and client_secret):
@@ -55,9 +50,7 @@ class azure_FileStorageRepository(IFileStorage):
                 client_id=self.client_id,
                 client_secret=client_secret,
             )
-            self.blob_service_client = BlobServiceClient(
-                account_url=self.url, credential=cred
-            )
+            self.blob_service_client = BlobServiceClient(account_url=self.url, credential=cred)
         elif self.authentication_method == file_storage_AuthenticationMethod.MSI:
             self.blob_service_client = BlobServiceClient(
                 account_url=self.url,
@@ -65,10 +58,7 @@ class azure_FileStorageRepository(IFileStorage):
             )
             print("======")
             print(self.client_id, self.url)
-        elif (
-            self.authentication_method
-            == file_storage_AuthenticationMethod.DEFAULT_CREDENTIAL
-        ):
+        elif self.authentication_method == file_storage_AuthenticationMethod.DEFAULT_CREDENTIAL:
             self.blob_service_client = BlobServiceClient(
                 account_url=self.url, credential=DefaultAzureCredential()
             )
@@ -80,23 +70,23 @@ class azure_FileStorageRepository(IFileStorage):
             )
 
     async def write_file(self, contents: str, file_name: str, file_path: str) -> str:
-        """
-        Asynchronously writes the given contents to a file in Azure Blob Storage.
+        """Asynchronously writes the given contents to a file in Azure Blob Storage.
+
         Args:
             contents (str): The contents to write to the file.
             file_name (str): The name of the file to write.
             file_path (str): The path within the storage container where the file will be written.
+
         Raises:
             Exception: If there is an error during the upload process.
+
         Example:
             await write_file("Hello, World!", "example.txt", "path/to/directory")
         """
         try:
             path = Path(self.fs_config.path) / Path(file_path) / Path(file_name)
             # Create the container if it does not exist
-            container_client = self.blob_service_client.get_container_client(
-                self.container_name
-            )
+            container_client = self.blob_service_client.get_container_client(self.container_name)
             if not container_client.container_name:
                 container_client.create_container()
 
@@ -109,20 +99,16 @@ class azure_FileStorageRepository(IFileStorage):
             blob_client.upload_blob(contents, overwrite=True)
             # print(f"Successfully uploaded {path} to container {self.container_name}.")
         except Exception as e:
-            logger.error(
-                f"Failed to upload {path} to container {self.container_name}: {e}"
-            )
+            logger.error(f"Failed to upload {path} to container {self.container_name}: {e}")
             raise
         return str(path)
 
     async def read_file(self, file_name: str, file_path: str) -> str:
-        """
-        Download data from Azure Blob Storage.
+        """Download data from Azure Blob Storage.
 
         :param file_name: Name of the blob (file) to read.
         :param file_path: Path of the blob (file) to read.
         """
-
         try:
             path = Path(self.fs_config.path) / Path(file_path) / Path(file_name)
             print(path)
@@ -138,19 +124,15 @@ class azure_FileStorageRepository(IFileStorage):
             # print(f"Successfully downloaded {path} from container {self.container_name}.")
             return data
         except Exception as e:
-            logger.error(
-                f"Failed to download {path} from container {self.container_name}: {e}"
-            )
+            logger.error(f"Failed to download {path} from container {self.container_name}: {e}")
             raise
 
     async def delete_file(self, file_name: str, file_path: str) -> str:
-        """
-        Delete a blob from Azure Blob Storage.
+        """Delete a blob from Azure Blob Storage.
 
         :param file_name: Name of the blob (file) to delete.
         :param file_path: Path of the blob (file) to delete.
         """
-
         try:
             path = Path(self.fs_config.path) / Path(file_path) / Path(file_name)
             # Create a blob client
@@ -162,15 +144,12 @@ class azure_FileStorageRepository(IFileStorage):
             blob_client.delete_blob()
             # print(f"Successfully deleted {path} from container {self.container_name}.")
         except Exception as e:
-            logger.error(
-                f"Failed to delete {path} from container {self.container_name}: {e}"
-            )
+            logger.error(f"Failed to delete {path} from container {self.container_name}: {e}")
             raise
         return str(path)
 
     async def list_files(self, file_path: str) -> List[str]:
-        """
-        List blobs in an Azure Blob container based on a path.
+        """List blobs in an Azure Blob container based on a path.
 
         :param file_path: Path within the storage container to list blobs from.
         """
@@ -181,13 +160,8 @@ class azure_FileStorageRepository(IFileStorage):
                 "\\", "/"
             )  # Ensure the path is in the correct format for Azure
             # List blobs in the container with the specified prefix
-            container_client = self.blob_service_client.get_container_client(
-                self.container_name
-            )
-            blobs = [
-                blob.name
-                for blob in container_client.list_blobs(name_starts_with=prefix)
-            ]
+            container_client = self.blob_service_client.get_container_client(self.container_name)
+            blobs = [blob.name for blob in container_client.list_blobs(name_starts_with=prefix)]
             # print(f"Blobs in container {self.container_name} with prefix {prefix}: {blobs}")
             return blobs
         except Exception as e:
@@ -197,8 +171,7 @@ class azure_FileStorageRepository(IFileStorage):
             raise
 
     async def list_directories(self, file_path: str) -> List[str]:
-        """
-        List directories (blob prefixes) in an Azure Blob container based on a path.
+        """List directories (blob prefixes) in an Azure Blob container based on a path.
 
         :param file_path: Path within the storage container to list directories from.
         """
@@ -213,14 +186,11 @@ class azure_FileStorageRepository(IFileStorage):
                 prefix += "/"
 
             # List blobs in the container with the specified prefix
-            container_client = self.blob_service_client.get_container_client(
-                self.container_name
-            )
+            container_client = self.blob_service_client.get_container_client(self.container_name)
 
             # Get all blob names with the prefix
             blob_names = [
-                blob.name
-                for blob in container_client.list_blobs(name_starts_with=prefix)
+                blob.name for blob in container_client.list_blobs(name_starts_with=prefix)
             ]
 
             # Extract unique directory names from blob paths
@@ -245,15 +215,13 @@ class azure_FileStorageRepository(IFileStorage):
             return []
 
     async def check_if_file_exists(self, file_path: str, file_name: str) -> bool:
-        """
-        Check if a blob exists in an Azure Blob container.
+        """Check if a blob exists in an Azure Blob container.
 
         :param container_name: Name of the Azure Blob container.
         :param blob_name: Name of the blob (file) to check.
         :param connection_string: Connection string to Azure Storage account.
         :return: True if the blob exists, False otherwise.
         """
-
         try:
             path = Path(self.fs_config.path) / Path(file_path) / Path(file_name)
             # Create a blob client
@@ -270,8 +238,7 @@ class azure_FileStorageRepository(IFileStorage):
             raise
 
     async def get_base_path(self) -> str:
-        """
-        Get the base path of the Azure Blob container.
+        """Get the base path of the Azure Blob container.
 
         :return: Base path of the Azure Blob container.
         """

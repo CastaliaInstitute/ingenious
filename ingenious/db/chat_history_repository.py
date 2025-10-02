@@ -22,9 +22,7 @@ logger = get_logger(__name__)
 
 
 class IChatHistoryRepository(ABC):
-    TrueStepType = Literal[
-        "run", "tool", "llm", "embedding", "retrieval", "rerank", "undefined"
-    ]
+    TrueStepType = Literal["run", "tool", "llm", "embedding", "retrieval", "rerank", "undefined"]
 
     MessageStepType = Literal["user_message", "assistant_message", "system_message"]
 
@@ -199,22 +197,22 @@ class IChatHistoryRepository(ABC):
 
     @abstractmethod
     async def add_message(self, message: Message) -> str:
-        """adds a message to the chat history"""
+        """Adds a message to the chat history"""
         pass
 
     @abstractmethod
     async def add_user(self, identifier: str) -> User:
-        """adds a user to the chat history database"""
+        """Adds a user to the chat history database"""
         pass
 
     @abstractmethod
     async def get_user(self, identifier: str) -> User | None:
-        """gets a user from the chat history database"""
+        """Gets a user from the chat history database"""
         pass
 
     @abstractmethod
     async def get_message(self, message_id: str, thread_id: str) -> Message | None:
-        """gets a message from the chat history"""
+        """Gets a message from the chat history"""
         pass
 
     @abstractmethod
@@ -253,9 +251,7 @@ class ChatHistoryRepository:
             module = importlib.import_module(module_name)
             repository_class = getattr(module, class_name)
         except (ImportError, AttributeError) as e:
-            raise ValueError(
-                f"Unsupported database client type: {module_name}.{class_name}"
-            ) from e
+            raise ValueError(f"Unsupported database client type: {module_name}.{class_name}") from e
 
         self.repository = repository_class(config=config)
 
@@ -277,9 +273,7 @@ class ChatHistoryRepository:
         )
 
     async def add_user(self, identifier: str) -> IChatHistoryRepository.User:
-        return cast(
-            IChatHistoryRepository.User, await self.repository.add_user(identifier)
-        )
+        return cast(IChatHistoryRepository.User, await self.repository.add_user(identifier))
 
     async def add_step(self, step_dict: IChatHistoryRepository.StepDict) -> str:
         return str(await self.repository.add_step(step_dict))
@@ -297,14 +291,10 @@ class ChatHistoryRepository:
         return str(await self.repository.add_memory(memory))
 
     async def get_message(self, message_id: str, thread_id: str) -> Message | None:
-        return cast(
-            Message | None, await self.repository.get_message(message_id, thread_id)
-        )
+        return cast(Message | None, await self.repository.get_message(message_id, thread_id))
 
     async def get_memory(self, message_id: str, thread_id: str) -> Message | None:
-        return cast(
-            Message | None, await self.repository.get_memory(message_id, thread_id)
-        )
+        return cast(Message | None, await self.repository.get_memory(message_id, thread_id))
 
     async def update_memory(self) -> None:
         await self.repository.update_memory()
@@ -317,9 +307,7 @@ class ChatHistoryRepository:
         )
 
     async def get_thread_memory(self, thread_id: str) -> Optional[List[Message]]:
-        return cast(
-            Optional[List[Message]], await self.repository.get_thread_memory(thread_id)
-        )
+        return cast(Optional[List[Message]], await self.repository.get_thread_memory(thread_id))
 
     async def get_threads_for_user(
         self, identifier: str, thread_id: Optional[str]
@@ -332,17 +320,13 @@ class ChatHistoryRepository:
     async def update_message_feedback(
         self, message_id: str, thread_id: str, positive_feedback: bool | None
     ) -> None:
-        await self.repository.update_message_feedback(
-            message_id, thread_id, positive_feedback
-        )
+        await self.repository.update_message_feedback(message_id, thread_id, positive_feedback)
         return None
 
     async def update_memory_feedback(
         self, message_id: str, thread_id: str, positive_feedback: bool | None
     ) -> None:
-        await self.repository.update_memory_feedback(
-            message_id, thread_id, positive_feedback
-        )
+        await self.repository.update_memory_feedback(message_id, thread_id, positive_feedback)
         return None
 
     async def update_message_content_filter_results(

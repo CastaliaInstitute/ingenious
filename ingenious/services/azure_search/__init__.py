@@ -1,4 +1,9 @@
-# ingenious/services/azure_search/__init__.py
+"""Azure AI Search service module.
+
+This module provides the main interface for Azure AI Search integration with
+the ingenious framework. It exports key components and factories for building
+search pipelines with lazy SDK loading.
+"""
 
 from typing import TYPE_CHECKING, Any
 
@@ -8,11 +13,18 @@ from ingenious.services.retrieval.errors import GenerationDisabledError  # noqa:
 from .config import SearchConfig  # noqa: F401
 
 
-# Add type hints to the function signature
 def build_search_pipeline(*args: Any, **kwargs: Any) -> "AdvancedSearchPipeline":
-    """
-    Lazy proxy so importing this package does NOT pull Azure SDKs.
-    The real import happens only when the function is actually called.
+    """Build a search pipeline with lazy Azure SDK imports.
+
+    This function acts as a lazy proxy to delay importing Azure SDKs until
+    the pipeline is actually constructed and called.
+
+    Args:
+        *args: Positional arguments forwarded to the pipeline factory.
+        **kwargs: Keyword arguments forwarded to the pipeline factory.
+
+    Returns:
+        An initialized AdvancedSearchPipeline instance.
     """
     from .components.pipeline import build_search_pipeline as _impl
 

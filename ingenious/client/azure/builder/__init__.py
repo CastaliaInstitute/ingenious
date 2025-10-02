@@ -1,3 +1,10 @@
+"""Azure service client builders with lazy loading.
+
+This module provides builder classes for creating Azure service clients
+including OpenAI, Blob Storage, Search, Cosmos DB, and SQL clients.
+All builders are lazy-loaded to minimize import overhead.
+"""
+
 from __future__ import annotations
 
 from typing import Any
@@ -19,6 +26,17 @@ __all__ = (
 
 
 def __getattr__(name: str) -> Any:
+    """Lazy import Azure service client builders.
+
+    Args:
+        name: Builder class name to import.
+
+    Returns:
+        The requested builder class.
+
+    Raises:
+        AttributeError: If the requested builder is not available.
+    """
     # Import on first access; keeps import-time side effects minimal.
     if name in ("BlobClientBuilder", "BlobServiceClientBuilder"):
         from .blob_client import BlobClientBuilder, BlobServiceClientBuilder

@@ -51,19 +51,17 @@ DEFAULT_RAG_PROMPT: str = (
 
 
 class AnswerGenerator:
-    """Synthesize a final answer from top‑N retrieved chunks with an LLM.
+    """Synthesize a final answer from top-N retrieved chunks with an LLM.
 
-    Why:
-        In a RAG pipeline, retrieved text chunks must be coherently presented
-        to a generation model. This class encapsulates that formatting and the
-        call to the LLM, while remaining easy to unit test.
+    In a RAG pipeline, retrieved text chunks must be coherently presented
+    to a generation model. This class encapsulates that formatting and the
+    call to the LLM, while remaining easy to unit test.
 
-    Notes:
-        - If `llm_client` is not provided, we construct a stub client exposing
-          `.chat.completions.create(...)` and `.close()` as async callables so
-          tests can patch/await them without a real network.
-        - The prompt renderer supports both `{context}` and `{sources}` keys to
-          avoid brittle coupling between templates and code.
+    Attributes:
+        _cfg: The search configuration instance.
+        _llm_client: The asynchronous LLM client for generation.
+        _owns_llm: Flag indicating if this instance owns the client.
+        rag_prompt_template: The prompt template for RAG generation.
     """
 
     def __init__(self, config: SearchConfig, llm_client: Optional[Any] = None) -> None:

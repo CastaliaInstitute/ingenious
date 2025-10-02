@@ -1,11 +1,15 @@
-"""
-Azure client builder base class with lazy AAD imports.
+"""Azure client builder base class with lazy AAD imports.
 
-Why:
-- Keep import-time light by avoiding hard dependencies on `azure-identity`
-  unless a caller actually selects an AAD-based authentication method.
-- Centralize credential resolution (AAD token vs API key) for all concrete
-  builders and provide helper properties for common needs.
+This module provides the abstract base class for all Azure service client builders
+with centralized authentication handling. It keeps import-time overhead minimal by
+avoiding hard dependencies on azure-identity unless AAD-based authentication is
+actually selected.
+
+Key features:
+- Lazy loading of Azure identity credentials
+- Centralized credential resolution (AAD token vs API key)
+- Helper properties for common authentication scenarios
+- Support for multiple authentication methods
 
 Usage:
     builder = SomeConcreteBuilder.from_config(cfg)
@@ -53,17 +57,25 @@ from ingenious.config.auth_config import AzureAuthConfig
 
 
 class AzureClientBuilder(ABC):
-    """Abstract base class for Azure client builders with authentication support."""
+    """Abstract base class for Azure client builders with authentication support.
+
+    Attributes:
+        auth_config: Azure authentication configuration.
+        _credential: Cached credential object (lazy-loaded).
+    """
 
     def __init__(self, auth_config: Optional[AzureAuthConfig] = None) -> None:
-        """Initialize builder with optional pre-parsed auth configuration."""
+        """Initialize builder with optional pre-parsed auth configuration.
+
+        Args:
+            auth_config: Optional authentication configuration. Defaults to DEFAULT_CREDENTIAL.
+        """
         self.auth_config = auth_config or AzureAuthConfig.default_credential()
         self._credential: Any | None = None  # Lazy-loaded credential cache
 
     @classmethod
     def from_config(cls, config: Any) -> "AzureClientBuilder":
-        """
-        Create builder instance from a configuration object.
+        """Create builder instance from a configuration object.
 
         Args:
             config: Configuration object (either legacy or new format)
@@ -76,14 +88,17 @@ class AzureClientBuilder(ABC):
 
     @property
     def credential(self) -> Union[TokenCredential, AzureKeyCredential]:
-        """
-        Get the appropriate credential based on authentication method.
+        """Get the appropriate credential based on authentication method.
+
         Cached after first access for efficiency.
 
         Returns:
-            TokenCredential: For Azure AD authentication
-                (DEFAULT_CREDENTIAL, MSI, CLIENT_ID_AND_SECRET).
-            AzureKeyCredential: For API key authentication (TOKEN).
+            TokenCredential for Azure AD authentication (DEFAULT_CREDENTIAL, MSI, CLIENT_ID_AND_SECRET),
+            or AzureKeyCredential for API key authentication (TOKEN).
+
+        Raises:
+            ValueError: If the authentication method is unsupported.
+            ImportError: If azure-identity is required but not installed.
         """
         if self._credential is None:
             # Validate authentication configuration
@@ -109,10 +124,7 @@ class AzureClientBuilder(ABC):
                         "Install with: pip install azure-identity"
                     ) from e
 
-            if (
-                self.auth_config.authentication_method
-                == AuthenticationMethod.DEFAULT_CREDENTIAL
-            ):
+            if self.auth_config.authentication_method == AuthenticationMethod.DEFAULT_CREDENTIAL:
                 (
                     DefaultAzureCredential,
                     ManagedIdentityCredential,
@@ -136,8 +148,7 @@ class AzureClientBuilder(ABC):
                     )
 
             elif (
-                self.auth_config.authentication_method
-                == AuthenticationMethod.CLIENT_ID_AND_SECRET
+                self.auth_config.authentication_method == AuthenticationMethod.CLIENT_ID_AND_SECRET
             ):
                 (
                     DefaultAzureCredential,
@@ -168,11 +179,10 @@ class AzureClientBuilder(ABC):
 
     @property
     def api_key(self) -> str:
-        """
-        Get the raw API key string for special cases (like connection strings).
+        """Get the raw API key string for special cases like connection strings.
 
         Returns:
-            str: Raw API key/token value.
+            Raw API key/token value.
 
         Raises:
             ValueError: If authentication method is not TOKEN or api_key is missing.
@@ -192,15 +202,14 @@ class AzureClientBuilder(ABC):
 
     @property
     def token_credential(self) -> TokenCredential:
-        """
-        Get TokenCredential specifically for services that only accept TokenCredential.
+        """Get TokenCredential specifically for services that only accept TokenCredential.
 
         Returns:
-            TokenCredential: Credential object for Azure AD authentication.
+            Credential object for Azure AD authentication.
 
         Raises:
             ValueError: If authentication method is TOKEN (use api_key property instead),
-                or the resolved object doesn't look like a TokenCredential.
+                or if the resolved object doesn't look like a TokenCredential.
         """
         if self.auth_config.authentication_method == AuthenticationMethod.TOKEN:
             raise ValueError(
@@ -218,5 +227,12 @@ class AzureClientBuilder(ABC):
 
     @abstractmethod
     def build(self) -> Any:
-        """Build and return the Azure client."""
+        """Build and return the Azure client.
+
+        Returns:
+            Configured Azure service client instance.
+
+        Raises:
+            NotImplementedError: Must be implemented by concrete builder classes.
+        """
         raise NotImplementedError

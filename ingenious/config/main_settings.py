@@ -1,5 +1,4 @@
-"""
-Main settings class for Ingenious application.
+"""Main settings class for Ingenious application.
 
 This module contains the primary IngeniousSettings class that combines
 all configuration models and provides the main configuration interface.
@@ -32,19 +31,23 @@ from .validators import validate_configuration, validate_models_not_empty
 class IngeniousSettings(BaseSettings):
     """Main settings class for Ingenious application.
 
-    This class automatically loads configuration from:
-    1. Environment variables (with INGENIOUS_ prefix)
-    2. .env files (.env, .env.local, .env.dev, .env.prod)
-    3. Default values defined in the model
+    This class automatically loads configuration from environment variables with
+    INGENIOUS_ prefix, .env files, and default values defined in the model.
 
-    Example usage:
-        settings = IngeniousSettings()
-        print(f"Web server will run on port {settings.web_configuration.port}")
-
-    Environment variable examples:
-        INGENIOUS_WEB_CONFIGURATION__PORT=8080
-        INGENIOUS_MODELS__0__API_KEY=your-api-key
-        INGENIOUS_LOGGING__ROOT_LOG_LEVEL=debug
+    Attributes:
+        profile: Profile name for environment-specific settings.
+        chat_history: Chat history storage configuration.
+        models: AI model configurations list.
+        logging: Application logging configuration.
+        tool_service: External tool service configuration.
+        chat_service: Chat service backend configuration.
+        web_configuration: Web server and API configuration.
+        receiver_configuration: External event receiver configuration.
+        local_sql_db: Local SQLite database configuration.
+        file_storage: File storage system configuration.
+        azure_search_services: Azure Cognitive Search service configurations.
+        azure_sql_services: Azure SQL service configuration.
+        cosmos_service: Azure Cosmos DB service configuration.
     """
 
     model_config = get_settings_config()
@@ -58,9 +61,7 @@ class IngeniousSettings(BaseSettings):
         description="Chat history storage configuration",
     )
 
-    models: List[ModelSettings] = Field(
-        default_factory=list, description="AI model configurations"
-    )
+    models: List[ModelSettings] = Field(default_factory=list, description="AI model configurations")
 
     logging: LoggingSettings = Field(
         default_factory=lambda: LoggingSettings(),
@@ -113,7 +114,14 @@ class IngeniousSettings(BaseSettings):
     @field_validator("models", mode="before")
     @classmethod
     def parse_models_field(cls, v: Any) -> Any:
-        """Parse models from JSON string or nested environment variables."""
+        """Parse models from JSON string or nested environment variables.
+
+        Args:
+            v: The raw value from environment variables.
+
+        Returns:
+            Parsed list of model configurations.
+        """
         # Handle JSON string format (e.g., INGENIOUS_MODELS='[{...}]')
         if isinstance(v, str):
             try:
@@ -136,7 +144,14 @@ class IngeniousSettings(BaseSettings):
     @field_validator("azure_search_services", mode="before")
     @classmethod
     def parse_azure_search_services_field(cls, v: Any) -> Any:
-        """Parse azure_search_services from JSON string or nested environment variables."""
+        """Parse azure_search_services from JSON string or nested environment variables.
+
+        Args:
+            v: The raw value from environment variables.
+
+        Returns:
+            Parsed list of Azure Search service configurations.
+        """
         # Handle JSON string format (e.g., INGENIOUS_AZURE_SEARCH_SERVICES='[{...}]')
         if isinstance(v, str):
             try:
@@ -158,10 +173,15 @@ class IngeniousSettings(BaseSettings):
 
     @field_validator("models")
     @classmethod
-    def validate_models_not_empty_field(
-        cls, v: List[ModelSettings]
-    ) -> List[ModelSettings]:
-        """Ensure at least one model is configured."""
+    def validate_models_not_empty_field(cls, v: List[ModelSettings]) -> List[ModelSettings]:
+        """Ensure at least one model is configured.
+
+        Args:
+            v: The list of models to validate.
+
+        Returns:
+            The validated list of models.
+        """
         return validate_models_not_empty(v)
 
     def validate_configuration(self) -> None:
@@ -170,12 +190,23 @@ class IngeniousSettings(BaseSettings):
 
     @classmethod
     def load_from_env_file(cls, env_file: str = ".env") -> "IngeniousSettings":
-        """Load settings from a specific .env file."""
+        """Load settings from a specific .env file.
+
+        Args:
+            env_file: Path to the environment file.
+
+        Returns:
+            Loaded IngeniousSettings instance.
+        """
         return cls(_env_file=env_file)
 
     @classmethod
     def create_minimal_config(cls) -> "IngeniousSettings":
-        """Create a minimal configuration for development."""
+        """Create a minimal configuration for development.
+
+        Returns:
+            IngeniousSettings instance with minimal defaults.
+        """
         from .environment import create_minimal_config
 
         return create_minimal_config()

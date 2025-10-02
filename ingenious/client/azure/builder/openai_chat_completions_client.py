@@ -1,9 +1,7 @@
-"""
-Azure OpenAI Chat Completions client builder (AutoGen).
+"""Azure OpenAI Chat Completions client builder for AutoGen.
 
-Why:
-- Preserve lazy identity import behavior.
-- Support API key and AAD token provider authentication paths.
+This module provides a builder class for creating Azure OpenAI Chat Completion clients
+using the AutoGen framework with support for API key and Azure AD token-based authentication.
 
 Usage:
     builder = AzureOpenAIChatCompletionClientBuilder(model_config)
@@ -22,10 +20,18 @@ from ingenious.models.config import ModelConfig
 
 
 class AzureOpenAIChatCompletionClientBuilder(AzureClientBuilder):
-    """Builder for Azure OpenAI Chat Completion clients using AutoGen."""
+    """Builder for Azure OpenAI Chat Completion clients using AutoGen.
+
+    Attributes:
+        model_config: Model configuration containing deployment and authentication parameters.
+    """
 
     def __init__(self, model_config: Union[ModelConfig, ModelSettings]) -> None:
-        """Initialize builder and capture the model configuration."""
+        """Initialize builder and capture the model configuration.
+
+        Args:
+            model_config: Model configuration object.
+        """
         # Extract authentication parameters from config
         auth_config = self._create_auth_config_from_model_config(model_config)
         super().__init__(auth_config=auth_config)
@@ -34,23 +40,28 @@ class AzureOpenAIChatCompletionClientBuilder(AzureClientBuilder):
     def _create_auth_config_from_model_config(
         self, model_config: Union[ModelConfig, ModelSettings]
     ) -> AzureAuthConfig:
-        """Create AzureAuthConfig from model configuration."""
+        """Create AzureAuthConfig from model configuration.
+
+        Args:
+            model_config: Model configuration object.
+
+        Returns:
+            AzureAuthConfig instance extracted from the model configuration.
+        """
         return AzureAuthConfig.from_config(model_config)
 
     def build(self) -> AzureOpenAIChatCompletionClient:
-        """
-        Build Azure OpenAI Chat Completion client based on model configuration.
+        """Build Azure OpenAI Chat Completion client based on model configuration.
 
         Returns:
-            AzureOpenAIChatCompletionClient: Configured AutoGen Azure OpenAI client.
+            Configured AutoGen Azure OpenAI chat completion client.
         """
         # Get credential based on authentication method
         if self.auth_config.authentication_method == AuthenticationMethod.TOKEN:
             # Use API key authentication - need raw string value
             return AzureOpenAIChatCompletionClient(
                 model=self.model_config.model or self.model_config.deployment,
-                azure_deployment=self.model_config.deployment
-                or self.model_config.model,
+                azure_deployment=self.model_config.deployment or self.model_config.model,
                 api_version=self.model_config.api_version,
                 azure_endpoint=self.model_config.base_url,
                 api_key=self.api_key,

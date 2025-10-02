@@ -1,3 +1,10 @@
+"""Structured logging configuration and utilities for correlation tracking.
+
+This module provides structured logging functionality using structlog with
+context variables for request correlation tracking, performance metrics, and
+consistent log formatting across the application.
+"""
+
 import logging
 import sys
 import time
@@ -14,10 +21,17 @@ user_id_ctx: ContextVar[Optional[str]] = ContextVar("user_id", default=None)
 session_id_ctx: ContextVar[Optional[str]] = ContextVar("session_id", default=None)
 
 
-def add_correlation_id(
-    logger: Any, method_name: str, event_dict: EventDict
-) -> EventDict:
-    """Add correlation IDs to log entries."""
+def add_correlation_id(logger: Any, method_name: str, event_dict: EventDict) -> EventDict:
+    """Add correlation IDs to log entries.
+
+    Args:
+        logger: The logger instance.
+        method_name: The logging method name being called.
+        event_dict: The event dictionary to be logged.
+
+    Returns:
+        The event dictionary with correlation IDs added.
+    """
     request_id = request_id_ctx.get()
     user_id = user_id_ctx.get()
     session_id = session_id_ctx.get()
@@ -33,13 +47,31 @@ def add_correlation_id(
 
 
 def add_timestamp(logger: Any, method_name: str, event_dict: EventDict) -> EventDict:
-    """Add ISO timestamp to log entries."""
+    """Add ISO timestamp to log entries.
+
+    Args:
+        logger: The logger instance.
+        method_name: The logging method name being called.
+        event_dict: The event dictionary to be logged.
+
+    Returns:
+        The event dictionary with timestamp added.
+    """
     event_dict["timestamp"] = time.strftime("%Y-%m-%dT%H:%M:%S.%fZ", time.gmtime())
     return event_dict
 
 
 def add_logger_name(logger: Any, method_name: str, event_dict: EventDict) -> EventDict:
-    """Add logger name to log entries."""
+    """Add logger name to log entries.
+
+    Args:
+        logger: The logger instance.
+        method_name: The logging method name being called.
+        event_dict: The event dictionary to be logged.
+
+    Returns:
+        The event dictionary with logger name added.
+    """
     if hasattr(logger, "name"):
         event_dict["logger"] = logger.name
     elif hasattr(logger, "_name"):
@@ -47,10 +79,17 @@ def add_logger_name(logger: Any, method_name: str, event_dict: EventDict) -> Eve
     return event_dict
 
 
-def add_performance_metrics(
-    logger: Any, method_name: str, event_dict: EventDict
-) -> EventDict:
-    """Add basic performance metrics if available."""
+def add_performance_metrics(logger: Any, method_name: str, event_dict: EventDict) -> EventDict:
+    """Add basic performance metrics if available.
+
+    Args:
+        logger: The logger instance.
+        method_name: The logging method name being called.
+        event_dict: The event dictionary to be logged.
+
+    Returns:
+        The event dictionary with performance metrics added if psutil is available.
+    """
     # Add memory usage if psutil is available
     try:
         import psutil
@@ -68,8 +107,7 @@ def add_performance_metrics(
 def setup_structured_logging(
     log_level: str = "INFO", json_output: bool = True, include_stdlib: bool = True
 ) -> None:
-    """
-    Configure structured logging with structlog.
+    """Configure structured logging with structlog.
 
     Args:
         log_level: Logging level (DEBUG, INFO, WARNING, ERROR, CRITICAL)
@@ -114,9 +152,7 @@ def setup_structured_logging(
             handler.setFormatter(logging.Formatter("%(message)s"))
         else:
             handler.setFormatter(
-                logging.Formatter(
-                    "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-                )
+                logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
             )
 
         root_logger = logging.getLogger()
@@ -126,7 +162,14 @@ def setup_structured_logging(
 
 
 def get_logger(name: str) -> structlog.BoundLogger:
-    """Get a structured logger instance."""
+    """Get a structured logger instance.
+
+    Args:
+        name: The logger name, typically __name__ of the calling module.
+
+    Returns:
+        A bound structlog logger instance.
+    """
     return structlog.get_logger(name)  # type: ignore
 
 
@@ -135,8 +178,7 @@ def set_request_context(
     user_id: Optional[str] = None,
     session_id: Optional[str] = None,
 ) -> str:
-    """
-    Set request context for correlation tracking.
+    """Set request context for correlation tracking.
 
     Args:
         request_id: Optional request ID, generates one if not provided
@@ -159,23 +201,42 @@ def set_request_context(
 
 
 def clear_request_context() -> None:
-    """Clear all request context variables."""
+    """Clear all request context variables.
+
+    Resets all correlation tracking context variables to None.
+    """
     request_id_ctx.set(None)
     user_id_ctx.set(None)
     session_id_ctx.set(None)
 
 
 def get_request_id() -> Optional[str]:
-    """Get the current request ID from context."""
+    """Get the current request ID from context.
+
+    Returns:
+        The current request ID or None if not set.
+    """
     return request_id_ctx.get()
 
 
 class PerformanceLogger:
-    """Context manager for logging performance metrics."""
+    """Context manager for logging performance metrics.
 
-    def __init__(
-        self, logger: structlog.BoundLogger, operation: str, **context: Any
-    ) -> None:
+    Attributes:
+        logger: The structlog logger instance.
+        operation: The name of the operation being timed.
+        context: Additional context to include in log messages.
+        start_time: The timestamp when the operation started.
+    """
+
+    def __init__(self, logger: structlog.BoundLogger, operation: str, **context: Any) -> None:
+        """Initialize the performance logger.
+
+        Args:
+            logger: The structlog logger instance.
+            operation: The name of the operation being timed.
+            **context: Additional context to include in log messages.
+        """
         self.logger = logger
         self.operation = operation
         self.context = context
@@ -216,7 +277,16 @@ def log_api_call(
     duration: Optional[float] = None,
     **kwargs: Any,
 ) -> None:
-    """Helper function to log API calls with consistent structure."""
+    """Log API calls with consistent structure.
+
+    Args:
+        logger: The structlog logger instance.
+        method: The HTTP method used.
+        url: The API endpoint URL.
+        status_code: The HTTP status code returned.
+        duration: The duration of the API call in seconds.
+        **kwargs: Additional metadata to include in the log.
+    """
     log_data = {"event_type": "api_call", "method": method, "url": url, **kwargs}
 
     if status_code:
@@ -238,7 +308,16 @@ def log_database_operation(
     affected_rows: Optional[int] = None,
     **kwargs: Any,
 ) -> None:
-    """Helper function to log database operations with consistent structure."""
+    """Log database operations with consistent structure.
+
+    Args:
+        logger: The structlog logger instance.
+        operation: The database operation performed.
+        table: The database table being accessed.
+        duration: The duration of the operation in seconds.
+        affected_rows: The number of rows affected by the operation.
+        **kwargs: Additional metadata to include in the log.
+    """
     log_data = {"event_type": "database_operation", "operation": operation, **kwargs}
 
     if table:
@@ -259,7 +338,16 @@ def log_agent_action(
     duration: Optional[float] = None,
     **kwargs: Any,
 ) -> None:
-    """Helper function to log agent actions with consistent structure."""
+    """Log agent actions with consistent structure.
+
+    Args:
+        logger: The structlog logger instance.
+        agent_name: The name of the agent performing the action.
+        action: The action being performed.
+        success: Whether the action succeeded.
+        duration: The duration of the action in seconds.
+        **kwargs: Additional metadata to include in the log.
+    """
     log_data = {
         "event_type": "agent_action",
         "agent_name": agent_name,

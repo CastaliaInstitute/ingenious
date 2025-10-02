@@ -1,5 +1,4 @@
-"""
-Help and status CLI commands for Insight Ingenious.
+"""Help and status CLI commands for Insight Ingenious.
 
 This module contains commands for getting help, checking status, and validating configuration.
 """
@@ -22,8 +21,7 @@ class HelpCommand(BaseCommand):
     """Show detailed help and getting started guide."""
 
     def execute(self, topic: Optional[str] = None, **kwargs: Any) -> None:
-        """
-        Show comprehensive help for getting started with Insight Ingenious.
+        """Show comprehensive help for getting started with Insight Ingenious.
 
         Args:
             topic: Specific topic to show help for (setup, workflows, config, deployment)
@@ -40,19 +38,13 @@ class HelpCommand(BaseCommand):
             self._show_deployment_help()
         else:
             self.print_error(f"Unknown help topic: {topic}")
-            self.console.print(
-                "\nAvailable topics: setup, workflows, config, deployment"
-            )
+            self.console.print("\nAvailable topics: setup, workflows, config, deployment")
             self.console.print("Use 'ingen help' for general help.")
-            raise CommandError(
-                f"Invalid help topic: {topic}", ExitCode.VALIDATION_ERROR
-            )
+            raise CommandError(f"Invalid help topic: {topic}", ExitCode.VALIDATION_ERROR)
 
     def _show_general_help(self) -> None:
         """Show general help information."""
-        self.console.print(
-            "[bold blue]🚀 Insight Ingenious - Quick Start Guide[/bold blue]\n"
-        )
+        self.console.print("[bold blue]🚀 Insight Ingenious - Quick Start Guide[/bold blue]\n")
 
         sections = [
             ("1. Initialize a new project:", "ingen init"),
@@ -146,8 +138,7 @@ class StatusCommand(BaseCommand):
     """Check system status and configuration."""
 
     def execute(self, **kwargs: Any) -> None:
-        """
-        Check the status of Insight Ingenious configuration.
+        """Check the status of Insight Ingenious configuration.
 
         Validates:
         • Configuration files existence and validity
@@ -155,9 +146,7 @@ class StatusCommand(BaseCommand):
         • Required dependencies
         • Available workflows
         """
-        self.console.print(
-            "[bold blue]🔍 Insight Ingenious System Status[/bold blue]\n"
-        )
+        self.console.print("[bold blue]🔍 Insight Ingenious System Status[/bold blue]\n")
 
         status_items: dict[str, Any] = {}
 
@@ -260,22 +249,17 @@ class VersionCommand(BaseCommand):
                 f"[bold blue]Insight Ingenious[/bold blue] version [bold]{version_str}[/bold]"
             )
         except Exception:
-            self.console.print(
-                "[bold blue]Insight Ingenious[/bold blue] - Development Version"
-            )
+            self.console.print("[bold blue]Insight Ingenious[/bold blue] - Development Version")
 
         self.console.print("🚀 GenAI Accelerator Framework")
-        self.console.print(
-            "📖 Documentation: https://github.com/Insight-Services-APAC/ingenious"
-        )
+        self.console.print("📖 Documentation: https://github.com/Insight-Services-APAC/ingenious")
 
 
 class ValidateCommand(BaseCommand):
     """Validate system configuration and requirements."""
 
     def execute(self, **kwargs: Any) -> None:
-        """
-        Comprehensive validation of Insight Ingenious setup.
+        """Comprehensive validation of Insight Ingenious setup.
 
         Performs deep validation of:
         • Environment variables and configuration
@@ -284,9 +268,7 @@ class ValidateCommand(BaseCommand):
         • Dependencies and imports
         • Workflow requirements and availability
         """
-        self.console.print(
-            "[bold blue]✅ Insight Ingenious Configuration Validation[/bold blue]\n"
-        )
+        self.console.print("[bold blue]✅ Insight Ingenious Configuration Validation[/bold blue]\n")
 
         validation_passed = True
         issues_found = []
@@ -343,9 +325,7 @@ class ValidateCommand(BaseCommand):
         if env_file_found:
             self.print_success("Environment file (.env) found")
         else:
-            self.print_warning(
-                "No .env file found - using system environment variables"
-            )
+            self.print_warning("No .env file found - using system environment variables")
         return env_file_found
 
     def _validate_auth_method(
@@ -427,13 +407,9 @@ class ValidateCommand(BaseCommand):
         """Check client secret authentication fields."""
         missing = []
         if not model.client_id:
-            missing.append(
-                "client_id (required for CLIENT_ID_AND_SECRET authentication)"
-            )
+            missing.append("client_id (required for CLIENT_ID_AND_SECRET authentication)")
         if not model.client_secret:
-            missing.append(
-                "client_secret (required for CLIENT_ID_AND_SECRET authentication)"
-            )
+            missing.append("client_secret (required for CLIENT_ID_AND_SECRET authentication)")
         if not model.tenant_id and not os.getenv("AZURE_TENANT_ID"):
             missing.append(
                 "tenant_id (required for CLIENT_ID_AND_SECRET authentication, can use AZURE_TENANT_ID env var)"
@@ -478,14 +454,10 @@ class ValidateCommand(BaseCommand):
                 base_valid = bool(first_model.base_url and first_model.model)
 
                 # Check auth-specific requirements
-                auth_valid, auth_message = self._validate_auth_method(
-                    first_model, auth_method
-                )
+                auth_valid, auth_message = self._validate_auth_method(first_model, auth_method)
 
                 if base_valid and auth_valid:
-                    self.print_success(
-                        "Primary model environment configuration is complete"
-                    )
+                    self.print_success("Primary model environment configuration is complete")
                     self.console.print(f"    📋 Using {auth_message}")
                     return True, issues
 
@@ -494,9 +466,7 @@ class ValidateCommand(BaseCommand):
                 self.print_error(
                     f"Model missing required configuration: {', '.join(missing_fields)}"
                 )
-                issues.append(
-                    f"Missing model configuration: {', '.join(missing_fields)}"
-                )
+                issues.append(f"Missing model configuration: {', '.join(missing_fields)}")
                 self._show_env_fix_commands()
                 return False, issues
 
@@ -563,12 +533,8 @@ class ValidateCommand(BaseCommand):
                 return True, issues
 
             # Handle validation failure
-            self.print_error(
-                f"Primary model missing required fields: {', '.join(missing_fields)}"
-            )
-            issues.append(
-                f"Model configuration incomplete: missing {', '.join(missing_fields)}"
-            )
+            self.print_error(f"Primary model missing required fields: {', '.join(missing_fields)}")
+            issues.append(f"Model configuration incomplete: missing {', '.join(missing_fields)}")
             return False, issues
 
         except Exception as e:
@@ -619,18 +585,14 @@ class ValidateCommand(BaseCommand):
             self.console.print(
                 f"    💡 Optional dependencies missing: {', '.join(missing_optional)}"
             )
-            self.console.print(
-                "    Install with: uv add ingenious[azure,full] for all features"
-            )
+            self.console.print("    Install with: uv add ingenious[azure,full] for all features")
 
         if success:
             self.print_success("Core dependencies available")
 
         return success, issues
 
-    def _validate_auth_credentials(
-        self, model: ModelSettings
-    ) -> tuple[bool, list[str]]:
+    def _validate_auth_credentials(self, model: ModelSettings) -> tuple[bool, list[str]]:
         """Validate authentication credentials for connectivity."""
         issues = []
         auth_method = model.authentication_method
@@ -663,18 +625,14 @@ class ValidateCommand(BaseCommand):
                 self.print_success("Azure OpenAI service is reachable")
                 return True, ""
 
-            self.print_warning(
-                f"Azure OpenAI service returned status {response.status_code}"
-            )
+            self.print_warning(f"Azure OpenAI service returned status {response.status_code}")
             return (
                 True,
                 f"Azure service returned unexpected status: {response.status_code}",
             )
 
         except ImportError:
-            self.print_info(
-                "Skipping connectivity test - requests library not available"
-            )
+            self.print_info("Skipping connectivity test - requests library not available")
             return True, ""
         except Exception as conn_e:
             error_type = str(type(conn_e))
@@ -799,18 +757,14 @@ class ValidateCommand(BaseCommand):
                                 self.console.print(
                                     f"    ❌ {workflow.replace('_', '-')}: Not found"
                                 )
-                                issues.append(
-                                    f"{workflow.replace('_', '-')} workflow not found"
-                                )
+                                issues.append(f"{workflow.replace('_', '-')} workflow not found")
                             workflows_checked += 1
                         except ImportError as e:
                             self.console.print(
                                 f"    ❌ {workflow.replace('_', '-')}: Import failed"
                             )
                             workflows_checked += 1
-                            issues.append(
-                                f"{workflow.replace('_', '-')} import failed: {e}"
-                            )
+                            issues.append(f"{workflow.replace('_', '-')} import failed: {e}")
 
                     self.console.print(
                         f"    📊 Workflows status: {workflows_working}/{workflows_checked} working"
@@ -849,9 +803,7 @@ class ValidateCommand(BaseCommand):
                 if result == 0:
                     # Port is in use
                     self.print_warning(f"Port {port} is already in use")
-                    issues.append(
-                        f"Port {port} is already in use - server may fail to start"
-                    )
+                    issues.append(f"Port {port} is already in use - server may fail to start")
 
                     # Try to identify what's using the port
                     try:
@@ -906,9 +858,7 @@ class ValidateCommand(BaseCommand):
         )
         self.console.print(panel)
 
-    def _show_validation_summary(
-        self, validation_passed: bool, issues_found: list[str]
-    ) -> None:
+    def _show_validation_summary(self, validation_passed: bool, issues_found: list[str]) -> None:
         """Show validation summary and next steps."""
         if validation_passed:
             success_panel = Panel(
@@ -980,7 +930,6 @@ class ValidateCommand(BaseCommand):
 # Command registration functions for backward compatibility
 def register_commands(app: Any, console: Any) -> None:
     """Register help commands with the typer app."""
-
     import typer
     from typing_extensions import Annotated
 

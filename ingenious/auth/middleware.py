@@ -1,5 +1,4 @@
-"""
-Authentication middleware for FastAPI applications.
+"""Authentication middleware for FastAPI applications.
 
 This module provides global authentication middleware that can be
 optionally enabled to protect all API endpoints.
@@ -20,8 +19,7 @@ logger = get_logger(__name__)
 
 
 class AuthenticationMiddleware(BaseHTTPMiddleware):
-    """
-    Global authentication middleware that protects all endpoints.
+    """Global authentication middleware that protects all endpoints.
 
     This middleware ensures that all API endpoints require authentication
     when authentication is enabled in the configuration.
@@ -33,6 +31,13 @@ class AuthenticationMiddleware(BaseHTTPMiddleware):
         config: IngeniousSettings,
         exempt_paths: Optional[List[str]] = None,
     ):
+        """Initialize authentication middleware.
+
+        Args:
+            app (ASGIApp): ASGI application to wrap.
+            config (IngeniousSettings): Application settings.
+            exempt_paths (Optional[List[str]]): Paths to exempt from authentication.
+        """
         super().__init__(app)
         self.config = config
         # Endpoints that should be exempt from authentication
@@ -47,6 +52,15 @@ class AuthenticationMiddleware(BaseHTTPMiddleware):
         ]
 
     async def dispatch(self, request: Request, call_next):
+        """Process request through authentication middleware.
+
+        Args:
+            request (Request): Incoming HTTP request.
+            call_next: Next middleware or route handler.
+
+        Returns:
+            Response: HTTP response or error response if authentication fails.
+        """
         # Skip authentication for exempt paths
         if request.url.path in self.exempt_paths:
             return await call_next(request)
@@ -58,9 +72,7 @@ class AuthenticationMiddleware(BaseHTTPMiddleware):
         try:
             # Validate authentication
             username = get_auth_user(request, self.config)
-            logger.debug(
-                f"Authenticated user: {username}", extra={"username": username}
-            )
+            logger.debug(f"Authenticated user: {username}", extra={"username": username})
 
             # Add username to request state for downstream use
             request.state.username = username
@@ -93,20 +105,15 @@ class AuthenticationMiddleware(BaseHTTPMiddleware):
 def setup_auth_middleware(
     app: FastAPI, config: IngeniousSettings, exempt_paths: Optional[List[str]] = None
 ) -> None:
-    """
-    Setup authentication middleware on the FastAPI app.
+    """Setup authentication middleware on the FastAPI app.
 
     Args:
-        app: FastAPI application instance
-        config: Ingenious configuration settings
-        exempt_paths: Optional list of paths to exempt from authentication
+        app (FastAPI): FastAPI application instance.
+        config (IngeniousSettings): Ingenious configuration settings.
+        exempt_paths (Optional[List[str]]): Optional list of paths to exempt from authentication.
     """
     if config.web_configuration.authentication.enable_global_middleware:
-        app.add_middleware(
-            AuthenticationMiddleware, config=config, exempt_paths=exempt_paths
-        )
+        app.add_middleware(AuthenticationMiddleware, config=config, exempt_paths=exempt_paths)
         logger.info("Global authentication middleware enabled")
     else:
-        logger.info(
-            "Global authentication middleware disabled - using per-route authentication"
-        )
+        logger.info("Global authentication middleware disabled - using per-route authentication")

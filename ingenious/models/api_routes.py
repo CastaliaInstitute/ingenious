@@ -1,3 +1,5 @@
+"""Interface for custom API route handlers."""
+
 from abc import ABC, abstractmethod
 from typing import TYPE_CHECKING
 
@@ -10,7 +12,21 @@ if TYPE_CHECKING:
 
 
 class IApiRoutes(ABC):
+    """Interface for adding custom API routes to FastAPI applications.
+
+    Attributes:
+        config: The IngeniousSettings configuration instance.
+        logger: The structured logger instance.
+        app: The FastAPI application instance.
+    """
+
     def __init__(self, config: "IngeniousSettings", app: FastAPI):
+        """Initialize the API routes handler.
+
+        Args:
+            config: The IngeniousSettings configuration instance.
+            app: The FastAPI application instance.
+        """
         self.config = config
         self.logger = get_logger(__name__)
         self.app = app
@@ -18,7 +34,9 @@ class IApiRoutes(ABC):
 
     @abstractmethod
     def add_custom_routes(self) -> APIRouter:
-        """
-        Adds custom routes to the FastAPI app instance. Always returns the router instance.
+        """Add custom routes to the FastAPI app instance.
+
+        Returns:
+            The router instance with custom routes added.
         """
         pass

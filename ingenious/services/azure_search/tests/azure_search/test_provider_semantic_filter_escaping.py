@@ -1,6 +1,4 @@
-"""
-Validate OData OR filter construction in pipeline._apply_semantic_ranking.
-"""
+"""Validate OData OR filter construction in pipeline._apply_semantic_ranking."""
 
 from __future__ import annotations
 

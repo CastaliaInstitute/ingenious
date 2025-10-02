@@ -1,6 +1,4 @@
-"""
-Unit tests for utility functions.
-"""
+"""Unit tests for utility functions."""
 
 from ingenious.utils.conversation_builder import (
     build_assistant_message,

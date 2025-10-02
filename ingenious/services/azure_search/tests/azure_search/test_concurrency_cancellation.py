@@ -1,5 +1,4 @@
-"""
-Concurrency cancellation now tested at the pipeline (single-source) level.
+"""Concurrency cancellation now tested at the pipeline (single-source) level.
 
 If one L1 branch fails, the sibling branch must be cancelled promptly.
 """

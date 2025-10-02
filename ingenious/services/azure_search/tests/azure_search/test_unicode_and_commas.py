@@ -35,9 +35,7 @@ class _CloseableAioSearchClient:
         """Initializes the client with a default search mock that returns nothing."""
         # This default ensures that if a test forgets to override `search`, it
         # doesn't fail unexpectedly but instead returns an empty async iterator.
-        self.search: AsyncMock = AsyncMock(
-            side_effect=lambda *a, **k: _AsyncEmptyResults()
-        )
+        self.search: AsyncMock = AsyncMock(side_effect=lambda *a, **k: _AsyncEmptyResults())
 
     async def close(self) -> None:
         """Simulates closing the async client connection."""
@@ -63,8 +61,7 @@ class _EmbeddingClientWithVector:
         """Inner class to mimic the client.embeddings.create() API structure."""
 
         def __init__(self, vector: list[float]) -> None:
-            """
-            Initializes the embedding generator.
+            """Initializes the embedding generator.
 
             Args:
                 vector: The fixed vector to return from the `create` method.
@@ -72,23 +69,19 @@ class _EmbeddingClientWithVector:
             self._vector = list(vector)
 
         async def create(self, *args: Any, **kwargs: Any) -> SimpleNamespace:
-            """
-            Generates a mock embedding response containing the pre-defined vector.
+            """Generates a mock embedding response containing the pre-defined vector.
 
             This method mimics the OpenAI embedding client's response structure.
             """
             return SimpleNamespace(data=[SimpleNamespace(embedding=self._vector)])
 
     def __init__(self, vector: list[float]) -> None:
-        """
-        Initializes the client with a fixed vector for embeddings.
+        """Initializes the client with a fixed vector for embeddings.
 
         Args:
             vector: The vector to be returned by the mock embedding service.
         """
-        self.embeddings: _EmbeddingClientWithVector._Embeddings = self._Embeddings(
-            vector
-        )
+        self.embeddings: _EmbeddingClientWithVector._Embeddings = self._Embeddings(vector)
 
     async def close(self) -> None:
         """Simulates closing the async client connection."""
@@ -98,9 +91,7 @@ class _EmbeddingClientWithVector:
 @pytest.mark.asyncio
 async def test_retriever_unicode_query_ok(
     config: SearchConfig,
-    async_iter: Callable[
-        [Iterable[dict[str, Any]]], AsyncGenerator[dict[str, Any], None]
-    ],
+    async_iter: Callable[[Iterable[dict[str, Any]]], AsyncGenerator[dict[str, Any], None]],
 ) -> None:
     """Ensures Unicode/special chars in a query do not break search paths."""
     search_client = _CloseableAioSearchClient()
@@ -125,9 +116,7 @@ async def test_retriever_unicode_query_ok(
             ]
         )
     )
-    out_lex: list[dict[str, Any]] = await retriever.search_lexical(
-        "naïve café ☕️ – 東京"
-    )
+    out_lex: list[dict[str, Any]] = await retriever.search_lexical("naïve café ☕️ – 東京")
     assert [d["id"] for d in out_lex] == ["α", "β"]
 
     # Vector path: mock the search client again for the vector search results.
@@ -140,9 +129,7 @@ async def test_retriever_unicode_query_ok(
             ]
         )
     )
-    out_vec: list[dict[str, Any]] = await retriever.search_vector(
-        "naïve café ☕️ – 東京"
-    )
+    out_vec: list[dict[str, Any]] = await retriever.search_vector("naïve café ☕️ – 東京")
     assert [d["id"] for d in out_vec] == ["γ", "δ"]
 
     # Ensure the retriever's close() method correctly calls the clients' close methods.
@@ -156,12 +143,9 @@ async def test_retriever_unicode_query_ok(
 @pytest.mark.asyncio
 async def test_apply_semantic_ranking_ids_with_commas_xfail(
     config: SearchConfig,
-    async_iter: Callable[
-        [Iterable[dict[str, Any]]], AsyncGenerator[dict[str, Any], None]
-    ],
+    async_iter: Callable[[Iterable[dict[str, Any]]], AsyncGenerator[dict[str, Any], None]],
 ) -> None:
-    """
-    Tests that documents with commas in their IDs are handled gracefully.
+    """Tests that documents with commas in their IDs are handled gracefully.
 
     If a fused result ID contains a comma, the `search.in()` filter used for
     reranking can become ambiguous and fail. This test confirms the desired
@@ -173,18 +157,14 @@ async def test_apply_semantic_ranking_ids_with_commas_xfail(
 
     # If the private helper being tested doesn't exist, skip this xfail test.
     if not hasattr(pipeline, "_apply_semantic_ranking"):
-        pytest.skip(
-            "AdvancedSearchPipeline._apply_semantic_ranking() not present; API changed."
-        )
+        pytest.skip("AdvancedSearchPipeline._apply_semantic_ranking() not present; API changed.")
 
     # Simulate the reranker client returning nothing, as would happen with a
     # malformed filter string caused by the comma in the ID.
     pipeline._rerank_client = MagicMock()
     pipeline._rerank_client.search = AsyncMock(return_value=async_iter([]))
 
-    fused: list[dict[str, Any]] = [
-        {"id": "A,1", "_fused_score": 0.7, config.content_field: "C"}
-    ]
+    fused: list[dict[str, Any]] = [{"id": "A,1", "_fused_score": 0.7, config.content_field: "C"}]
 
     # The method may or may not be async, depending on implementation details.
     maybe: Coroutine[Any, Any, list[dict[str, Any]]] | list[dict[str, Any]] = (

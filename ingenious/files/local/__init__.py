@@ -14,8 +14,7 @@ class local_FileStorageRepository(IFileStorage):
         self.base_path = Path(fs_config.path)
 
     async def write_file(self, contents: str, file_name: str, file_path: str) -> str:
-        """
-        Write data to a local file.
+        """Write data to a local file.
 
         :param contents: Data to write to the file.
         :param file_name: Name of the file to create.
@@ -34,8 +33,7 @@ class local_FileStorageRepository(IFileStorage):
             return error_msg
 
     async def read_file(self, file_name: str, file_path: str) -> str:
-        """
-        Read data from a local file.
+        """Read data from a local file.
 
         :param file_name: Name of the file to read.
         :param file_path: Path to the file.
@@ -53,8 +51,7 @@ class local_FileStorageRepository(IFileStorage):
             return ""
 
     async def delete_file(self, file_name: str, file_path: str) -> str:
-        """
-        Delete a local file.
+        """Delete a local file.
 
         :param file_name: Name of the file to delete.
         :param file_path: Path to the file.
@@ -70,8 +67,7 @@ class local_FileStorageRepository(IFileStorage):
             return error_msg
 
     async def list_files(self, file_path: str) -> List[str]:
-        """
-        List files in a local directory.
+        """List files in a local directory.
 
         :param file_path: Path to the directory.
         """
@@ -85,8 +81,7 @@ class local_FileStorageRepository(IFileStorage):
             return []
 
     async def list_directories(self, file_path: str) -> List[str]:
-        """
-        List directories in a local directory.
+        """List directories in a local directory.
 
         :param file_path: Path to the directory.
         """
@@ -103,8 +98,7 @@ class local_FileStorageRepository(IFileStorage):
             return []
 
     async def check_if_file_exists(self, file_path: str, file_name: str) -> bool:
-        """
-        Check if a local file exists.
+        """Check if a local file exists.
 
         :param file_path: Path to the file.
         :param file_name: Name of the file.
@@ -120,8 +114,7 @@ class local_FileStorageRepository(IFileStorage):
             return False
 
     async def get_base_path(self) -> str:
-        """
-        Get the base path of the local file storage.
+        """Get the base path of the local file storage.
 
         :return: Base path of the local file storage.
         """

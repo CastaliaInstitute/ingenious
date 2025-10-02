@@ -30,10 +30,9 @@ from ingenious.models.message import Message as ChatHistoryMessage
 
 
 class AgentChat(BaseModel):
-    """
-    A class used to represent a chat between an agent and a user or between agents
+    """A class used to represent a chat between an agent and a user or between agents
 
-    Attributes
+    Attributes:
     ----------
     agent_name : str
         The name of the agent.
@@ -71,17 +70,14 @@ class AgentChat(BaseModel):
             return "00:00:00"
         return datetime.fromtimestamp(self.start_time).strftime("%H:%M:%S")
 
-    def get_associated_agent_response_file_name(
-        self, identifier: str, event_type: str
-    ) -> str:
+    def get_associated_agent_response_file_name(self, identifier: str, event_type: str) -> str:
         return f"agent_response_{event_type}_{self.source_agent_name}_{self.target_agent_name}_{identifier.strip()}.md"
 
 
 class AgentChats(BaseModel):
-    """
-    A class used to represent a list of AgentChats.
+    """A class used to represent a list of AgentChats.
 
-    Attributes
+    Attributes:
     ----------
     agent_chats : List[AgentChat]
         A list of AgentChat objects.
@@ -119,10 +115,9 @@ class AgentChats(BaseModel):
 
 
 class Agent(BaseModel):
-    """
-    A class used to represent an Agent.
+    """A class used to represent an Agent.
 
-    Attributes
+    Attributes:
     ----------
     agent_name : str
         The name of the agent.
@@ -165,9 +160,7 @@ class Agent(BaseModel):
             user_message=content,
             system_prompt=self.system_prompt,
             identifier=identifier,
-            chat_response=Response(
-                chat_message=TextMessage(content=content, source=source)
-            ),
+            chat_response=Response(chat_message=TextMessage(content=content, source=source)),
             start_time=datetime.now().timestamp(),
             end_time=datetime.now().timestamp() + 36000,
         )
@@ -211,10 +204,9 @@ class Agent(BaseModel):
 
 
 class Agents(BaseModel):
-    """
-    A class used to represent a list of Agents.
+    """A class used to represent a list of Agents.
 
-    Attributes
+    Attributes:
     ----------
     agents : List[Agent]
         A list of Agent objects.
@@ -327,9 +319,7 @@ class LLMUsageTracker(logging.Handler):
                 temp_file_prefixes.append(agent_chat.source_agent_name)
                 temp_file_prefixes.append(agent_chat.target_agent_name)
                 temp_file_prefixes.append(self._identifier)
-                await fs.write_file(
-                    content, f"{'_'.join(temp_file_prefixes)}.md", output_path
-                )
+                await fs.write_file(content, f"{'_'.join(temp_file_prefixes)}.md", output_path)
 
     # TODO: Implement this function
     async def write_llm_responses_to_repository(
@@ -367,9 +357,7 @@ class LLMUsageTracker(logging.Handler):
             agent = self._agents.get_agent_by_name(agent_chat.target_agent_name)
             await agent.log(agent_chat, target_queue)
 
-    def _extract_agent_identifiers(
-        self, agent_id: Optional[str]
-    ) -> Optional[tuple[str, str]]:
+    def _extract_agent_identifiers(self, agent_id: Optional[str]) -> Optional[tuple[str, str]]:
         """Extract agent name and source name from agent_id."""
         if not agent_id:
             return None
@@ -387,9 +375,7 @@ class LLMUsageTracker(logging.Handler):
                 pass
         return None
 
-    def _extract_response_content(
-        self, choices: Optional[List[Any]]
-    ) -> tuple[str, bool]:
+    def _extract_response_content(self, choices: Optional[List[Any]]) -> tuple[str, bool]:
         """Extract response content and determine if chat should be added."""
         response = ""
         add_chat = True
@@ -410,21 +396,15 @@ class LLMUsageTracker(logging.Handler):
         """Extract and join system messages."""
         if not messages:
             return ""
-        return "\n\n".join(
-            r.content for r in messages if r and r.role == "system" and r.content
-        )
+        return "\n\n".join(r.content for r in messages if r and r.role == "system" and r.content)
 
     def _extract_user_messages(self, messages: Optional[List[Any]]) -> str:
         """Extract and join user messages."""
         if not messages:
             return ""
-        return "\n\n".join(
-            r.content for r in messages if r and r.role == "user" and r.content
-        )
+        return "\n\n".join(r.content for r in messages if r and r.role == "user" and r.content)
 
-    def _append_tool_messages(
-        self, user_input: str, messages: Optional[List[Any]]
-    ) -> str:
+    def _append_tool_messages(self, user_input: str, messages: Optional[List[Any]]) -> str:
         """Append tool messages to user input."""
         if not messages:
             return user_input

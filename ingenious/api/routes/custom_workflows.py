@@ -1,3 +1,9 @@
+"""Custom workflow introspection API routes.
+
+This module provides endpoints for discovering and inspecting custom workflows,
+their agents, and their Pydantic schemas for dynamic UI generation.
+"""
+
 import ast
 import inspect
 import pkgutil
@@ -18,12 +24,9 @@ router = APIRouter()
 logger = get_logger(__name__)
 
 
-@router.get(
-    "/custom-workflows/agents/{custom_workflow_name}/", response_model=Dict[str, Any]
-)
+@router.get("/custom-workflows/agents/{custom_workflow_name}/", response_model=Dict[str, Any])
 async def get_custom_workflow_agents(custom_workflow_name: str) -> Dict[str, Any]:
-    """
-    Retrieves agent information by parsing the agent.py file of the specified custom workflow.
+    """Retrieves agent information by parsing the agent.py file of the specified custom workflow.
     This approach uses Abstract Syntax Tree (AST) parsing for robust and safe static analysis.
     """
     try:
@@ -49,9 +52,18 @@ async def get_custom_workflow_agents(custom_workflow_name: str) -> Dict[str, Any
         extracted_agents = []
 
         class AgentVisitor(ast.NodeVisitor):
-            """A dedicated AST visitor to find Agent calls within a specific method."""
+            """AST visitor to find Agent calls within a specific method.
+
+            Attributes:
+                None (uses outer scope extracted_agents list).
+            """
 
             def visit_Call(self, node: ast.Call) -> None:
+                """Visit Call nodes to extract Agent instantiations.
+
+                Args:
+                    node (ast.Call): AST Call node to inspect.
+                """
                 if isinstance(node.func, ast.Name) and node.func.id == "Agent":
                     agent_data = {}
                     for keyword in node.keywords:
@@ -64,10 +76,7 @@ async def get_custom_workflow_agents(custom_workflow_name: str) -> Dict[str, Any
         for node in ast.walk(tree):
             if isinstance(node, ast.ClassDef) and node.name == "ProjectAgents":
                 for method in node.body:
-                    if (
-                        isinstance(method, ast.FunctionDef)
-                        and method.name == "Get_Project_Agents"
-                    ):
+                    if isinstance(method, ast.FunctionDef) and method.name == "Get_Project_Agents":
                         AgentVisitor().visit(method)
                         break
                 break
@@ -91,8 +100,7 @@ async def get_custom_workflow_agents(custom_workflow_name: str) -> Dict[str, Any
                 "agent_type",
             }
             agents_list = [
-                {key: data.get(key) or "" for key in required_fields}
-                for data in extracted_agents
+                {key: data.get(key) or "" for key in required_fields} for data in extracted_agents
             ]
 
         return {
@@ -122,14 +130,9 @@ async def get_custom_workflow_agents(custom_workflow_name: str) -> Dict[str, Any
         )
 
 
-@router.get(
-    "/custom-workflows/schema/{custom_workflow_name}/", response_model=Dict[str, Any]
-)
-async def get_custom_workflow_schema(
-    custom_workflow_name: str, request: Request
-) -> Dict[str, Any]:
-    """
-    Retrieves Pydantic model schemas optimized for Alpine.js dynamic UI generation.
+@router.get("/custom-workflows/schema/{custom_workflow_name}/", response_model=Dict[str, Any])
+async def get_custom_workflow_schema(custom_workflow_name: str, request: Request) -> Dict[str, Any]:
+    """Retrieves Pydantic model schemas optimized for Alpine.js dynamic UI generation.
     Returns a structured schema with UI metadata and field ordering.
     """
     try:
@@ -171,9 +174,7 @@ async def get_custom_workflow_schema(
                             pydantic_models[name] = schema
                             model_classes[name] = obj
             except (ImportError, AttributeError) as e:
-                logger.error(
-                    f"Error processing schema module {module_import_path}: {e}"
-                )
+                logger.error(f"Error processing schema module {module_import_path}: {e}")
                 continue
 
         if not pydantic_models:
@@ -221,8 +222,14 @@ async def get_custom_workflow_schema(
 def transform_schemas_for_alpine(
     schemas: Dict[str, Any], model_classes: Dict[str, type[BaseModel]]
 ) -> Dict[str, Any]:
-    """
-    Transform Pydantic JSON schemas into Alpine.js-friendly format with UI metadata.
+    """Transform Pydantic JSON schemas into Alpine.js-friendly format.
+
+    Args:
+        schemas (Dict[str, Any]): Pydantic JSON schemas.
+        model_classes (Dict[str, type[BaseModel]]): Pydantic model classes.
+
+    Returns:
+        Dict[str, Any]: Alpine.js-compatible schemas with UI metadata.
     """
     alpine_schemas = {}
 
@@ -247,9 +254,7 @@ def transform_schemas_for_alpine(
         # Process properties with Alpine.js enhancements
         if "properties" in schema:
             for field_name, field_schema in schema["properties"].items():
-                alpine_field = transform_field_for_alpine(
-                    field_name, field_schema, model_class
-                )
+                alpine_field = transform_field_for_alpine(field_name, field_schema, model_class)
                 alpine_schema["properties"][field_name] = alpine_field
                 alpine_schema["ui_metadata"]["display_order"].append(field_name)
 
@@ -257,8 +262,8 @@ def transform_schemas_for_alpine(
         if "$defs" in schema:
             alpine_schema["definitions"] = {}
             for def_name, def_schema in schema["$defs"].items():
-                alpine_schema["definitions"][def_name] = (
-                    transform_definition_for_alpine(def_name, def_schema)
+                alpine_schema["definitions"][def_name] = transform_definition_for_alpine(
+                    def_name, def_schema
                 )
 
         # Add form initialization data
@@ -274,8 +279,15 @@ def transform_field_for_alpine(
     field_schema: Dict[str, Any],
     model_class: type[BaseModel] | None = None,
 ) -> Dict[str, Any]:
-    """
-    Transform individual field schema for Alpine.js with UI hints.
+    """Transform individual field schema for Alpine.js.
+
+    Args:
+        field_name (str): Field name.
+        field_schema (Dict[str, Any]): Pydantic field schema.
+        model_class (type[BaseModel] | None): Optional model class reference.
+
+    Returns:
+        Dict[str, Any]: Alpine.js-compatible field schema with UI hints.
     """
     alpine_field = {
         **field_schema,
@@ -338,7 +350,14 @@ def transform_field_for_alpine(
 
 
 def determine_ui_component(field_schema: Dict[str, Any]) -> str:
-    """Determine the appropriate UI component for Alpine.js rendering."""
+    """Determine the appropriate UI component for Alpine.js rendering.
+
+    Args:
+        field_schema (Dict[str, Any]): Pydantic field schema.
+
+    Returns:
+        str: UI component type (e.g., "text_input", "select", "checkbox").
+    """
     field_type = field_schema.get("type")
     field_format = field_schema.get("format")
 
@@ -367,7 +386,14 @@ def determine_ui_component(field_schema: Dict[str, Any]) -> str:
 
 
 def extract_validation_rules(field_schema: Dict[str, Any]) -> Dict[str, Any]:
-    """Extract validation rules for Alpine.js client-side validation."""
+    """Extract validation rules for Alpine.js client-side validation.
+
+    Args:
+        field_schema (Dict[str, Any]): Pydantic field schema.
+
+    Returns:
+        Dict[str, Any]: Validation rules for client-side validation.
+    """
     rules = {}
 
     if field_schema.get("minLength"):
@@ -387,7 +413,14 @@ def extract_validation_rules(field_schema: Dict[str, Any]) -> Dict[str, Any]:
 
 
 def extract_union_options(field_schema: Dict[str, Any]) -> List[Dict[str, Any]]:
-    """Extract union type options for discriminated unions."""
+    """Extract union type options for discriminated unions.
+
+    Args:
+        field_schema (Dict[str, Any]): Pydantic field schema.
+
+    Returns:
+        List[Dict[str, Any]]: Union type options with discriminator information.
+    """
     options = []
 
     union_types = field_schema.get("anyOf", field_schema.get("oneOf", []))
@@ -407,15 +440,20 @@ def extract_union_options(field_schema: Dict[str, Any]) -> List[Dict[str, Any]]:
         else:
             # Handle inline types
             title = union_type.get("title", f"Option {i + 1}")
-            options.append(
-                {"value": title.lower(), "label": title, "schema": union_type}
-            )
+            options.append({"value": title.lower(), "label": title, "schema": union_type})
 
     return options
 
 
 def generate_default_values(schema: Dict[str, Any]) -> Dict[str, Any]:
-    """Generate default form values for Alpine.js initialization."""
+    """Generate default form values for Alpine.js initialization.
+
+    Args:
+        schema (Dict[str, Any]): Pydantic schema.
+
+    Returns:
+        Dict[str, Any]: Default values for form fields.
+    """
     defaults = {}
 
     for field_name, field_schema in schema.get("properties", {}).items():
@@ -440,10 +478,16 @@ def generate_default_values(schema: Dict[str, Any]) -> Dict[str, Any]:
     return defaults
 
 
-def transform_definition_for_alpine(
-    def_name: str, def_schema: Dict[str, Any]
-) -> Dict[str, Any]:
-    """Transform schema definitions for Alpine.js discriminated unions."""
+def transform_definition_for_alpine(def_name: str, def_schema: Dict[str, Any]) -> Dict[str, Any]:
+    """Transform schema definitions for Alpine.js discriminated unions.
+
+    Args:
+        def_name (str): Definition name.
+        def_schema (Dict[str, Any]): Definition schema.
+
+    Returns:
+        Dict[str, Any]: Alpine.js-compatible definition.
+    """
     return {
         "name": def_name,
         "title": def_schema.get("title", def_name),
@@ -455,7 +499,14 @@ def transform_definition_for_alpine(
 
 
 def extract_discriminator_info(schema: Dict[str, Any]) -> Dict[str, Any] | None:
-    """Extract discriminator information for union types."""
+    """Extract discriminator information for union types.
+
+    Args:
+        schema (Dict[str, Any]): Schema to extract discriminator from.
+
+    Returns:
+        Dict[str, Any] | None: Discriminator information or None.
+    """
     if "discriminator" in schema:
         disc = schema["discriminator"]
         if isinstance(disc, dict):

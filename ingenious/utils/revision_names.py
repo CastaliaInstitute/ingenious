@@ -1,5 +1,4 @@
-"""
-Revision ID generation utilities.
+"""Revision ID generation utilities.
 
 This module provides utilities for generating revision IDs, including:
 - GitHub Codespaces-style funny names with UUIDs
@@ -82,8 +81,7 @@ NOUNS: Final[tuple[str, ...]] = [
 
 
 def generate_funny_revision_id() -> str:
-    """
-    Generate a funny revision ID in GitHub Codespaces style.
+    """Generate a funny revision ID in GitHub Codespaces style.
 
     Format: <adjective>-<noun>-<short-uuid>
     Example: "cosmic-ninja-a1b2c3d4"
@@ -100,8 +98,7 @@ def generate_funny_revision_id() -> str:
 
 
 def resolve_user_revision_id(revision_id: str, existing_revision_ids: list[str]) -> str:
-    """
-    Resolve user-supplied revision ID conflicts by adding incremental numbers.
+    """Resolve user-supplied revision ID conflicts by adding incremental numbers.
 
     If the revision_id already exists, appends -1, -2, -3, etc. until finding
     an available ID.
@@ -154,8 +151,7 @@ def resolve_user_revision_id(revision_id: str, existing_revision_ids: list[str])
 
 
 def normalize_revision_id(name: str) -> str:
-    """
-    Normalize a revision ID to follow consistent naming conventions.
+    """Normalize a revision ID to follow consistent naming conventions.
 
     Rules:
     - Convert to lowercase
@@ -204,11 +200,8 @@ def normalize_revision_id(name: str) -> str:
     return normalized
 
 
-def generate_revision_id(
-    revision_id: str | None, existing_revision_ids: list[str]
-) -> str:
-    """
-    Generate a revision ID based on user input or create a funny name.
+def generate_revision_id(revision_id: str | None, existing_revision_ids: list[str]) -> str:
+    """Generate a revision ID based on user input or create a funny name.
 
     Args:
         revision_id: Optional user-supplied revision ID

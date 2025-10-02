@@ -1,5 +1,4 @@
-"""
-Server-related CLI commands for Insight Ingenious.
+"""Server-related CLI commands for Insight Ingenious.
 
 This module contains commands for starting and managing the API server.
 """
@@ -37,6 +36,14 @@ logger = get_logger(__name__)
 
 
 def make_app(config: "IngeniousSettings") -> "FastAPI":
+    """Create a FastAPI application with the given configuration.
+
+    Args:
+        config: Ingenious settings configuration
+
+    Returns:
+        Configured FastAPI application instance
+    """
     # keep the import late so your env var ordering still works
 
     from ingenious.main import create_app
@@ -45,7 +52,12 @@ def make_app(config: "IngeniousSettings") -> "FastAPI":
 
 
 def register_commands(app: typer.Typer, console: Console) -> None:
-    """Register server-related commands with the typer app."""
+    """Register server-related commands with the typer app.
+
+    Args:
+        app: Typer application instance to register commands with
+        console: Console instance for output formatting
+    """
 
     @app.command(name="serve", help="Start the API server with web interface")
     def serve(
@@ -59,44 +71,43 @@ def register_commands(app: typer.Typer, console: Console) -> None:
         ] = None,
         host: Annotated[
             str,
-            typer.Option(
-                "--host", "-h", help="Host to bind the server (default: 0.0.0.0)"
-            ),
+            typer.Option("--host", "-h", help="Host to bind the server (default: 0.0.0.0)"),
         ] = "127.0.0.1",
         port: Annotated[
             int,
-            typer.Option(
-                "--port", help="Port to bind the server (default: 80 or $WEB_PORT)"
-            ),
+            typer.Option("--port", help="Port to bind the server (default: 80 or $WEB_PORT)"),
         ] = int(os.getenv("WEB_PORT", "80")),
         no_prompt_tuner: Annotated[
             bool,
-            typer.Option(
-                "--no-prompt-tuner", help="Disable the prompt tuner interface"
-            ),
+            typer.Option("--no-prompt-tuner", help="Disable the prompt tuner interface"),
         ] = False,
     ) -> None:
-        """
-        🚀 Start the Insight Ingenious API server with web interface.
+        """Start the Insight Ingenious API server with web interface.
+
+        Args:
+            env_file: Path to a .env file (default: auto-discover .env)
+            host: Host to bind the server (default: 127.0.0.1)
+            port: Port to bind the server (default: 80 or $WEB_PORT)
+            no_prompt_tuner: Disable the prompt tuner interface
 
         The server provides:
-        • REST API endpoints for agent workflows
-        • Prompt tuning interface at /prompt-tuner (unless disabled)
+        - REST API endpoints for agent workflows
+        - Prompt tuning interface at /prompt-tuner (unless disabled)
 
         AVAILABLE WORKFLOWS & CONFIGURATION REQUIREMENTS:
 
-        ✅ Minimal Configuration (Azure OpenAI only):
-          • classification-agent - Route input to specialized agents
-          • bike-insights - Sample domain-specific workflow
+        Minimal Configuration (Azure OpenAI only):
+          - classification-agent - Route input to specialized agents
+          - bike-insights - Sample domain-specific workflow
 
-        🔍 Requires Azure Search Services:
-          • knowledge-base-agent - Search knowledge bases
+        Requires Azure Search Services:
+          - knowledge-base-agent - Search knowledge bases
 
-        📊 Requires Database Configuration:
-          • sql-manipulation-agent - Execute SQL queries
+        Requires Database Configuration:
+          - sql-manipulation-agent - Execute SQL queries
 
-        📄 Optional Azure Document Intelligence:
-          • document-processing - Extract text from PDFs/images
+        Optional Azure Document Intelligence:
+          - document-processing - Extract text from PDFs/images
 
         QUICK TEST:
           curl -X POST http://localhost:{port}/api/v1/chat \\
@@ -131,8 +142,7 @@ def register_commands(app: typer.Typer, console: Console) -> None:
             typer.Argument(help="The port to run the server on. Default is 80."),
         ] = 80,
     ) -> None:
-        """
-        Run a FastAPI server that presents your agent workflows via REST endpoints.
+        """Run a FastAPI server that presents your agent workflows via REST endpoints.
 
         AVAILABLE WORKFLOWS & CONFIGURATION REQUIREMENTS:
 
@@ -225,12 +235,16 @@ def register_commands(app: typer.Typer, console: Console) -> None:
         )
 
         def log_namespace_modules(namespace: str) -> None:
+            """Log modules discovered in a namespace package.
+
+            Args:
+                namespace: Namespace package name to inspect
+            """
             try:
                 package = importlib.import_module(namespace)
                 if hasattr(package, "__path__"):
                     modules = [
-                        module_info.name
-                        for module_info in pkgutil.iter_modules(package.__path__)
+                        module_info.name for module_info in pkgutil.iter_modules(package.__path__)
                     ]
                     logger.debug(
                         "Namespace modules discovered",
@@ -241,15 +255,11 @@ def register_commands(app: typer.Typer, console: Console) -> None:
                 else:
                     logger.debug("Namespace is not a package", namespace=namespace)
             except ImportError as e:
-                logger.warning(
-                    "Failed to import namespace", namespace=namespace, error=str(e)
-                )
+                logger.warning("Failed to import namespace", namespace=namespace, error=str(e))
 
         os.environ["INGENIOUS_WORKING_DIR"] = str(Path(os.getcwd()))
         os.chdir(str(Path(os.getcwd())))
-        log_namespace_modules(
-            "ingenious.services.chat_services.multi_agent.conversation_flows"
-        )
+        log_namespace_modules("ingenious.services.chat_services.multi_agent.conversation_flows")
 
         app = make_app(config)
         uvicorn.run(
@@ -262,9 +272,7 @@ def register_commands(app: typer.Typer, console: Console) -> None:
     def prompt_tuner(
         port: Annotated[
             int,
-            typer.Option(
-                "--port", "-p", help="Port for the prompt tuner (default: 5000)"
-            ),
+            typer.Option("--port", "-p", help="Port for the prompt tuner (default: 5000)"),
         ] = 5000,
         host: Annotated[
             str,
@@ -275,14 +283,17 @@ def register_commands(app: typer.Typer, console: Console) -> None:
             ),
         ] = "127.0.0.1",
     ) -> None:
-        """
-        🎯 Start the standalone prompt tuning web interface.
+        """Start the standalone prompt tuning web interface.
+
+        Args:
+            port: Port for the prompt tuner (default: 5000)
+            host: Host to bind the prompt tuner (default: 127.0.0.1)
 
         The prompt tuner allows you to:
-        • Edit and test agent prompts
-        • Run batch tests with sample data
-        • Compare different prompt versions
-        • Download test results
+        - Edit and test agent prompts
+        - Run batch tests with sample data
+        - Compare different prompt versions
+        - Download test results
 
         Access the interface at: http://{host}:{port}
 
@@ -297,9 +308,7 @@ def register_commands(app: typer.Typer, console: Console) -> None:
             operation="prompt_tuner_startup",
         )
         console.print(f"🎯 Starting prompt tuner at http://{host}:{port}")
-        console.print(
-            "💡 Tip: Use 'ingen serve' to start the full server with all interfaces"
-        )
+        console.print("💡 Tip: Use 'ingen serve' to start the full server with all interfaces")
 
         console.print("[red]❌ Prompt tuner has been removed from this version[/red]")
         console.print("Use the main API server instead: ingen serve")

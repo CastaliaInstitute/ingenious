@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-When semantic ranking is OFF, provider delegates to pipeline which uses fused scores.
-"""
+"""When semantic ranking is OFF, provider delegates to pipeline which uses fused scores."""
 
 from __future__ import annotations
 

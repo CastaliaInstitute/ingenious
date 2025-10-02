@@ -1,3 +1,9 @@
+"""Knowledge base agent conversation pattern implementation.
+
+This module provides a conversation pattern for knowledge base search and retrieval
+using AutoGen group chat with researcher, planner, and search agents.
+"""
+
 import autogen
 import autogen.retrieve_utils
 import autogen.runtime_logging
@@ -10,6 +16,24 @@ logger = get_logger(__name__)
 
 
 class ConversationPattern:
+    """Conversation pattern for knowledge base search and question answering.
+
+    Orchestrates a group chat between planner, researcher, and search agents
+    to answer user queries using document retrieval and AI search.
+
+    Attributes:
+        default_llm_config: LLM configuration for agents.
+        topics: List of available topic categories.
+        memory_record_switch: Whether to record conversation in memory.
+        memory_path: Path to memory storage.
+        thread_memory: Existing conversation memory context.
+        search_agent: Agent for performing knowledge base searches.
+        memory_manager: Memory manager for cloud storage support.
+        user_proxy: User proxy agent for initiating conversations.
+        researcher: Researcher agent for composing responses.
+        planner: Planner agent for orchestrating the conversation.
+    """
+
     def __init__(
         self,
         default_llm_config: dict[str, object],
@@ -18,6 +42,15 @@ class ConversationPattern:
         memory_path: str,
         thread_memory: str,
     ):
+        """Initialize the knowledge base conversation pattern.
+
+        Args:
+            default_llm_config: Configuration for the language model.
+            topics: List of topic names for categorization.
+            memory_record_switch: Whether to enable memory recording and retrieval.
+            memory_path: File system path for memory storage.
+            thread_memory: Previous conversation memory.
+        """
         self.default_llm_config = default_llm_config
         self.topics = topics
         self.memory_record_switch = memory_record_switch
@@ -46,9 +79,7 @@ class ConversationPattern:
                 thread_memory_length=len(self.thread_memory),
                 note="Requires ChatHistorySummariser for optional dependency",
             )
-            run_async_memory_operation(
-                self.memory_manager.write_memory(self.thread_memory)
-            )
+            run_async_memory_operation(self.memory_manager.write_memory(self.thread_memory))
 
         self.termination_msg = lambda x: "TERMINATE" in x.get("content", "").upper()
 
@@ -111,10 +142,18 @@ class ConversationPattern:
         )
 
     async def get_conversation_response(self, input_message: str) -> list[str]:
-        """
-        This function is the main entry point for the conversation pattern. It takes a message as input and returns a
-        response. Make sure that you have added the necessary topic agents and agent topic chats before
-        calling this function.
+        """Get a conversation response using knowledge base search.
+
+        Orchestrates a group chat where planner routes to researcher, researcher
+        queries search_agent, and results are composed into a final response.
+        Ensure search_agent has been set before calling this method.
+
+        Args:
+            input_message: User's question to answer using knowledge base.
+
+        Returns:
+            List containing [response_summary, context] where response_summary
+            is the final answer and context is the conversation context.
         """
         graph_dict = {}
         graph_dict[self.user_proxy] = [self.planner]

@@ -1,9 +1,29 @@
+"""Project agents configuration for bike insights workflow.
+
+This module defines the agent configuration for the bike insights
+multi-agent conversation flow.
+"""
+
 from ingenious.models.agent import Agent, Agents, IProjectAgents
 from ingenious.models.config import Config
 
 
 class ProjectAgents(IProjectAgents):
+    """Project agents configuration for bike insights.
+
+    This class defines and configures all agents used in the bike insights
+    workflow, including sentiment analysis, fiscal analysis, and summary agents.
+    """
+
     def Get_Project_Agents(self, config: Config) -> Agents:
+        """Get the configured project agents for bike insights workflow.
+
+        Args:
+            config: The application configuration object.
+
+        Returns:
+            An Agents collection containing all configured agents.
+        """
         local_agents = []
         local_agents.append(
             Agent(

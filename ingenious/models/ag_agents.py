@@ -1,3 +1,5 @@
+"""AutoGen-based routed agent implementations for multi-agent workflows."""
+
 import asyncio
 from abc import ABC
 from typing import List
@@ -23,15 +25,33 @@ from ingenious.models.agent import (
 
 
 class RoutedAssistantAgent(RoutedAgent, ABC):
+    """Routed agent that delegates to an AutoGen AssistantAgent.
+
+    Attributes:
+        _model_client: The Azure OpenAI model client.
+        _delegate: The AutoGen AssistantAgent delegate.
+        _agent: The Agent configuration.
+        _data_identifier: Identifier for the data payload.
+        _next_agent_topic: Topic for routing to the next agent.
+        _tools: List of tools available to the agent.
+        _system_messages: System messages for the agent.
+    """
+
     def __init__(
         self, agent: Agent, data_identifier: str, next_agent_topic: str = None, tools=[]
     ) -> None:
+        """Initialize the routed assistant agent.
+
+        Args:
+            agent: The Agent configuration.
+            data_identifier: Identifier for the data payload.
+            next_agent_topic: Optional topic for routing to the next agent.
+            tools: List of tools available to the agent.
+        """
         super().__init__(agent.agent_name)
 
         # Create the Azure OpenAI client using the provided model configuration
-        self._model_client = AzureClientFactory.create_openai_chat_completion_client(
-            agent.model
-        )
+        self._model_client = AzureClientFactory.create_openai_chat_completion_client(agent.model)
 
         assistant_agent = AssistantAgent(
             name=agent.agent_name,
@@ -47,11 +67,12 @@ class RoutedAssistantAgent(RoutedAgent, ABC):
         self._system_messages = [SystemMessage(content=agent.system_prompt)]
 
     @message_handler
-    async def handle_my_message_type(
-        self, message: AgentMessage, ctx: MessageContext
-    ) -> None:
-        """
-        Receives the message and sends it to the assistant agent to make a llm call. It then calls publish message to send the response to the next agent.
+    async def handle_my_message_type(self, message: AgentMessage, ctx: MessageContext) -> None:
+        """Handle incoming messages and process with LLM.
+
+        Args:
+            message: The incoming agent message.
+            ctx: The message context.
         """
         print(self._agent.agent_name)
         agent_chat = self._agent.add_agent_chat(
@@ -87,16 +108,12 @@ class RoutedAssistantAgent(RoutedAgent, ABC):
 
         if execute_tool_calls:
             # Add the first model create result to the session.
-            session.append(
-                AssistantMessage(content=create_result.content, source="assistant")
-            )
+            session.append(AssistantMessage(content=create_result.content, source="assistant"))
 
             # Execute the tool calls.
             results = await asyncio.gather(
                 *[
-                    self._agent.execute_tool_call(
-                        call, ctx.cancellation_token, tools=self._tools
-                    )
+                    self._agent.execute_tool_call(call, ctx.cancellation_token, tools=self._tools)
                     for call in create_result.content
                 ]
             )
@@ -120,8 +137,10 @@ class RoutedAssistantAgent(RoutedAgent, ABC):
             await self.publish_my_message(agent_chat)
 
     async def publish_my_message(self, agent_chat: AgentChat) -> None:
-        """
-        Publishes the response to the next agent.
+        """Publish the response to the next agent.
+
+        Args:
+            agent_chat: The agent chat containing the response.
         """
         # Publish the outgoing message to the next agent
         await self.publish_message(
@@ -131,6 +150,15 @@ class RoutedAssistantAgent(RoutedAgent, ABC):
 
 
 class RelayAgent(RoutedAgent):
+    """Relay agent that forwards messages between agents.
+
+    Attributes:
+        _response_count: Count of responses received.
+        _agent: The Agent configuration.
+        _agent_message: The current agent message.
+        _data_identifier: Identifier for the data payload.
+    """
+
     _response_count: int = 0
     _agent: Agent
     _agent_message: AgentMessage
@@ -143,25 +171,27 @@ class RelayAgent(RoutedAgent):
         next_agent_topic: str,
         number_of_messages_before_next_agent: int,
     ) -> None:
+        """Initialize the relay agent.
+
+        Args:
+            agent: The Agent configuration.
+            data_identifier: Identifier for the data payload.
+            next_agent_topic: Topic for routing to the next agent.
+            number_of_messages_before_next_agent: Number of messages to collect before forwarding.
+        """
         super().__init__("UserProxyAgent")
         self._agent = agent
         self._agent_messages: List[str] = []
         self._data_identifier = data_identifier
         self._next_agent_topic = next_agent_topic
-        self._number_of_messages_before_next_agent = (
-            number_of_messages_before_next_agent
-        )
+        self._number_of_messages_before_next_agent = number_of_messages_before_next_agent
 
     @message_handler
-    async def handle_user_message(
-        self, message: AgentMessage, ctx: MessageContext
-    ) -> None:
+    async def handle_user_message(self, message: AgentMessage, ctx: MessageContext) -> None:
         self._response_count += 1
         content = "## " + ctx.sender.type + "\n" + message.content
         self._agent_messages.append(content)
-        self._agent.add_agent_chat(
-            content=content, identifier=self._data_identifier, ctx=ctx
-        )
+        self._agent.add_agent_chat(content=content, identifier=self._data_identifier, ctx=ctx)
         # await self._agent.log(agent_chat=agent_chat, queue=queue)
 
         if self._response_count >= self._number_of_messages_before_next_agent:
@@ -172,6 +202,16 @@ class RelayAgent(RoutedAgent):
 
 
 class RoutedResponseOutputAgent(RoutedAgent, ABC):
+    """Routed agent that generates final response output.
+
+    Attributes:
+        _next_agent_topic: Topic for routing to the next agent.
+        _delegate: The AutoGen AssistantAgent delegate.
+        _agent: The Agent configuration.
+        _data_identifier: Identifier for the data payload.
+        _additional_data: Additional data to append to messages.
+    """
+
     def __init__(
         self,
         agent: Agent,
@@ -179,12 +219,18 @@ class RoutedResponseOutputAgent(RoutedAgent, ABC):
         next_agent_topic: str = None,
         additional_data: str = "",
     ) -> None:
+        """Initialize the routed response output agent.
+
+        Args:
+            agent: The Agent configuration.
+            data_identifier: Identifier for the data payload.
+            next_agent_topic: Optional topic for routing to the next agent.
+            additional_data: Additional data to append to messages.
+        """
         super().__init__(agent.agent_name)
         self._next_agent_topic = next_agent_topic
 
-        model_client = AzureClientFactory.create_openai_chat_completion_client(
-            agent.model
-        )
+        model_client = AzureClientFactory.create_openai_chat_completion_client(agent.model)
         assistant_agent = AssistantAgent(
             name=agent.agent_name,
             system_message=agent.system_prompt,
@@ -197,11 +243,12 @@ class RoutedResponseOutputAgent(RoutedAgent, ABC):
         self._additional_data = additional_data
 
     @message_handler
-    async def handle_my_message_type(
-        self, message: AgentMessage, ctx: MessageContext
-    ) -> None:
-        """
-        Receives the message and sends it to the assistant agent to make a llm call. It then calls publish message to send the response to the next agent.
+    async def handle_my_message_type(self, message: AgentMessage, ctx: MessageContext) -> None:
+        """Handle incoming messages and generate final response.
+
+        Args:
+            message: The incoming agent message.
+            ctx: The message context.
         """
         content = message.content + "\n\n" + self._additional_data
         agent_chat = self._agent.add_agent_chat(
@@ -216,9 +263,7 @@ class RoutedResponseOutputAgent(RoutedAgent, ABC):
             await self.publish_my_message(agent_chat)
 
     async def publish_my_message(self, agent_chat: AgentChat) -> None:
-        """
-        Publishes the response to the next agent.
-        """
+        """Publishes the response to the next agent."""
         # Publish the outgoing message to the next agent
         await self.publish_message(
             AgentMessage(content=agent_chat.chat_response.chat_message.content),

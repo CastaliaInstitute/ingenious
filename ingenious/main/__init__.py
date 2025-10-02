@@ -1,5 +1,4 @@
-"""
-Main application factory and components.
+"""Main application factory and components.
 
 This module provides the main FastAPI application factory and related components
 for creating and configuring the Ingenious application.

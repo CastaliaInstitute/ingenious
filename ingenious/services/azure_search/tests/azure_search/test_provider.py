@@ -1,6 +1,4 @@
-"""
-Provider unit tests — focus on delegation and preflight checks.
-"""
+"""Provider unit tests — focus on delegation and preflight checks."""
 
 from __future__ import annotations
 

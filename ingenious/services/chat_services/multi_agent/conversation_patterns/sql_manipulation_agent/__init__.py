@@ -1,6 +1,8 @@
-# N.B.
-# This will add to the package’s __path__ all subdirectories of directories on sys.path named after the package which effectively combines both modules into a single namespace (dbt.adapters)
-# The matching statement is in plugins/postgres/dbt/__init__.py
+"""SQL manipulation agent pattern for natural language SQL queries.
+
+This pattern provides conversation capabilities for generating and executing
+SQL queries from natural language using AutoGen-based agents.
+"""
 
 from pkgutil import extend_path
 

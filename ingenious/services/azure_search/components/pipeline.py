@@ -1,5 +1,4 @@
-"""
-Advanced Azure AI Search pipeline orchestration.
+"""Advanced Azure AI Search pipeline orchestration.
 
 This module implements the multi‑stage search flow used by the Knowledge Base
 agent: L1 retrieval (BM25 + vector) → DAT fusion → (optional) Semantic
@@ -60,7 +59,15 @@ class _NullAsyncSearchClient:
     """
 
     async def search(self, *args: Any, **kwargs: Any) -> Any:
-        """Return an async-iterable that yields no rows."""
+        """Return an async-iterable that yields no rows.
+
+        Args:
+            *args: Ignored positional arguments.
+            **kwargs: Ignored keyword arguments.
+
+        Returns:
+            An async iterable that yields no results.
+        """
 
         class _Empty:
             def __aiter__(self) -> "_Empty":
@@ -77,19 +84,17 @@ class _NullAsyncSearchClient:
 
 
 class AdvancedSearchPipeline:
-    """
-    Orchestrates: L1 → DAT → (optional) L2 → (optional) RAG.
+    """Orchestrate multi-stage search with DAT fusion and optional semantic ranking.
 
-    The pipeline owns the retriever, fuser, and (optionally) the answer
-    generator. The semantic rerank step reuses the search client unless a
-    dedicated client is injected.
+    This pipeline coordinates L1 retrieval (BM25 + vector), DAT fusion,
+    optional L2 semantic ranking, and optional RAG answer generation.
 
-    Args:
-        config: Valid `SearchConfig` describing services and behavior.
-        retriever: The BM25 + vector retriever.
-        fuser: The DAT fuser (LLM-backed alpha estimator).
-        answer_generator: Optional RAG answer generator.
-        rerank_client: Optional client used for Azure Semantic Ranker.
+    Attributes:
+        _config: The search configuration instance.
+        retriever: The BM25 and vector retriever component.
+        fuser: The Dynamic Alpha Tuning fuser component.
+        answer_generator: Optional answer generation component.
+        _rerank_client: Client used for semantic ranking operations.
     """
 
     _config: SearchConfig
@@ -106,7 +111,15 @@ class AdvancedSearchPipeline:
         answer_generator: AnswerGenerator | None = None,
         rerank_client: Any | None = None,
     ) -> None:
-        """Initialize the pipeline with required components."""
+        """Initialize the pipeline with required components.
+
+        Args:
+            config: Validated search configuration.
+            retriever: The BM25 and vector retriever instance.
+            fuser: The DAT fusion instance.
+            answer_generator: Optional answer generator instance.
+            rerank_client: Optional semantic reranking client.
+        """
         self._config = config
         self.retriever = retriever
         self.fuser = fuser
@@ -118,19 +131,18 @@ class AdvancedSearchPipeline:
     async def _apply_semantic_ranking(
         self, query: str, fused_results: list[dict[str, Any]]
     ) -> list[dict[str, Any]]:
-        """
-        Apply Azure Semantic Ranker (L2) to the head of the results.
+        """Apply Azure Semantic Ranker (L2) to the head of the results.
 
         The method forms an OR filter over ID equality clauses for the top-N
         results (bounded by `SEMANTIC_RERANK_HEAD_MAX`). It preserves unmatched
-        docs and falls back to fused scores on any error.
+        documents and falls back to fused scores on any error.
 
         Args:
             query: The user query string.
             fused_results: The list of fused results from DAT.
 
         Returns:
-            The reranked list with `_final_score` set for all items.
+            The reranked list with _final_score set for all items.
         """
         head = fused_results[:SEMANTIC_RERANK_HEAD_MAX]
         tail = fused_results[SEMANTIC_RERANK_HEAD_MAX:]
@@ -183,9 +195,7 @@ class AdvancedSearchPipeline:
 
             return reranked + tail
         except Exception as exc:  # pragma: no cover - exercised in tests
-            logger.error(
-                "Semantic Ranking failed (%s). Falling back to fused scores.", exc
-            )
+            logger.error("Semantic Ranking failed (%s). Falling back to fused scores.", exc)
             for r in fused_results:
                 r["_final_score"] = r.get("_fused_score", 0.0)
             return fused_results
@@ -193,15 +203,14 @@ class AdvancedSearchPipeline:
     # ----------------------------- Public API -------------------------------
 
     async def retrieve(self, query: str, top_k: int) -> list[dict[str, Any]]:
-        """
-        Run L1 retrieval → DAT fusion → optional L2; then clean & return top_k.
+        """Run L1 retrieval, DAT fusion, optional L2 ranking, then clean and return.
 
         Args:
             query: The user query string.
-            top_k: The number of items to return after ranking/cleanup.
+            top_k: The number of items to return after ranking and cleanup.
 
         Returns:
-            A list of cleaned rows (at most `top_k`).
+            A list of cleaned result rows (at most top_k).
         """
         logger.debug("retrieve(query=%r, top_k=%s) start", query, top_k)
         if top_k <= 0:
@@ -245,16 +254,15 @@ class AdvancedSearchPipeline:
         return self._clean_sources(head)
 
     async def answer(self, query: str) -> dict[str, Any]:
-        """
-        Full RAG: retrieve/rank then generate an answer.
+        """Execute full RAG pipeline to retrieve, rank, and generate an answer.
 
-        Requires `enable_answer_generation=True` in `SearchConfig`.
+        Requires enable_answer_generation=True in SearchConfig.
 
         Args:
             query: The user's question.
 
         Returns:
-            A dict with "answer" and "source_chunks" keys.
+            A dictionary with 'answer' and 'source_chunks' keys.
 
         Raises:
             GenerationDisabledError: If generation is disabled or misconfigured.
@@ -287,24 +295,30 @@ class AdvancedSearchPipeline:
         return {"answer": ans, "source_chunks": top}
 
     async def get_answer(self, query: str) -> dict[str, Any]:
-        """Back-compat alias for `answer()`."""
+        """Provide backward-compatible alias for answer().
+
+        Args:
+            query: The user's question.
+
+        Returns:
+            A dictionary with 'answer' and 'source_chunks' keys.
+        """
         return await self.answer(query)
 
     # ------------------------------- Lifecycle -------------------------------
 
     def _extract_snippet(self, row: dict[str, Any]) -> str:
-        """
-        Extract a short, plain-text snippet from Azure captions if present.
+        """Extract a short plain-text snippet from Azure captions if present.
 
-        Azure Search may return `@search.captions` as a list or dict. This
+        Azure Search may return @search.captions as a list or dict. This
         helper normalizes that to a simple string so downstream consumers can
-        rely on a stable `snippet` field.
+        rely on a stable snippet field.
 
         Args:
             row: A single result row as returned by the SDK.
 
         Returns:
-            A best-effort plain-text snippet, or an empty string when unavailable.
+            A best-effort plain-text snippet, or empty string if unavailable.
         """
         cap = row.get("@search.captions")
         if not cap:
@@ -325,18 +339,14 @@ class AdvancedSearchPipeline:
             return ""
 
     def _clean_sources(self, chunks: list[dict[str, Any]]) -> list[dict[str, Any]]:
-        """
-        Normalize and trim fields on the final chunks.
+        """Normalize and trim fields on the final chunks.
 
-        Behavior:
-        - Preserve the configured content field and also **alias** it to a stable
-          `"content"` key if different and not already present.
-        - Preserve a stable `"snippet"` by extracting from `@search.captions`
-          when a snippet is not already present.
-        - Remove verbose/transient fields (scores, captions, vector field).
+        Preserves the configured content field and aliases it to a stable
+        'content' key if different. Extracts stable 'snippet' from Azure
+        captions. Removes verbose/transient fields.
 
         Args:
-            chunks: Raw rows emitted by retrieval/ranking.
+            chunks: Raw rows emitted by retrieval and ranking.
 
         Returns:
             Cleaned rows suitable for downstream formatting.
@@ -379,11 +389,10 @@ class AdvancedSearchPipeline:
         return out
 
     async def close(self) -> None:
-        """
-        Close underlying clients gracefully (best effort).
+        """Close underlying clients gracefully with best effort.
 
         Ensures that retriever, fuser, generator, and rerank client are closed
-        if they expose a `close()` method (sync or async).
+        if they expose a close() method (synchronous or asynchronous).
         """
 
         async def _aclose(x: Any) -> None:
@@ -412,17 +421,17 @@ class AdvancedSearchPipeline:
 
 
 def build_search_pipeline(config: SearchConfig) -> AdvancedSearchPipeline:
-    """
-    Compose the pipeline with clients produced via client_init factories.
+    """Compose the pipeline with clients produced via client_init factories.
 
     Validates semantic ranking configuration and constructs shared clients
-    (Search + AOAI) used by retriever, DAT fuser, and (optionally) generator.
+    (Search and Azure OpenAI) used by retriever, DAT fuser, and optionally
+    the generator.
 
     Args:
-        config: Validated `SearchConfig`.
+        config: Validated SearchConfig instance.
 
     Returns:
-        An initialized `AdvancedSearchPipeline`.
+        An initialized AdvancedSearchPipeline instance.
 
     Raises:
         ValueError: If semantic ranking is enabled without a configuration name.

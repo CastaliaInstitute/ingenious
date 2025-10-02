@@ -1,6 +1,7 @@
-"""
-Memory Manager for handling conversation context files through FileStorage abstraction.
-This ensures that memory operations work with both local and Azure Blob Storage.
+"""Memory Manager for handling conversation context files.
+
+This module provides memory management functionality through FileStorage abstraction,
+ensuring that memory operations work with both local and Azure Blob Storage.
 """
 
 import asyncio
@@ -15,14 +16,18 @@ logger = get_logger(__name__)
 
 
 class MemoryManager:
-    """
-    Manages conversation memory/context files using the FileStorage abstraction.
-    This allows memory operations to work with both local storage and Azure Blob Storage.
+    """Manage conversation memory and context files.
+
+    Uses FileStorage abstraction to support both local storage and Azure Blob Storage.
+
+    Attributes:
+        config: Application configuration.
+        memory_path: Base path for memory files.
+        file_storage: File storage instance for memory operations.
     """
 
     def __init__(self, config: Config, memory_path: Optional[str] = None):
-        """
-        Initialize MemoryManager with configuration.
+        """Initialize MemoryManager with configuration.
 
         Args:
             config: Application configuration
@@ -33,14 +38,13 @@ class MemoryManager:
         self.file_storage = FileStorage(config, Category="data")
 
     def _get_memory_file_path(self, thread_id: Optional[str] = None) -> tuple[str, str]:
-        """
-        Get the file path and name for a memory file.
+        """Get the file path and name for a memory file.
 
         Args:
-            thread_id: Optional thread ID for thread-specific memory
+            thread_id: Optional thread ID for thread-specific memory.
 
         Returns:
-            Tuple of (file_path, file_name)
+            Tuple of (file_path, file_name).
         """
         if thread_id:
             file_path = f"memory/{thread_id}"
@@ -51,18 +55,15 @@ class MemoryManager:
 
         return file_path, file_name
 
-    async def read_memory(
-        self, thread_id: Optional[str] = None, default_content: str = ""
-    ) -> str:
-        """
-        Read memory content from storage.
+    async def read_memory(self, thread_id: Optional[str] = None, default_content: str = "") -> str:
+        """Read memory content from storage.
 
         Args:
-            thread_id: Optional thread ID for thread-specific memory
-            default_content: Default content if memory file doesn't exist
+            thread_id: Optional thread ID for thread-specific memory.
+            default_content: Default content if memory file doesn't exist.
 
         Returns:
-            Memory content as string
+            Memory content as string.
         """
         try:
             file_path, file_name = self._get_memory_file_path(thread_id)
@@ -90,15 +91,14 @@ class MemoryManager:
             return default_content
 
     async def write_memory(self, content: str, thread_id: Optional[str] = None) -> bool:
-        """
-        Write memory content to storage.
+        """Write memory content to storage.
 
         Args:
-            content: Content to write
-            thread_id: Optional thread ID for thread-specific memory
+            content: Content to write.
+            thread_id: Optional thread ID for thread-specific memory.
 
         Returns:
-            True if successful, False otherwise
+            True if successful, False otherwise.
         """
         try:
             file_path, file_name = self._get_memory_file_path(thread_id)
@@ -120,16 +120,15 @@ class MemoryManager:
     async def maintain_memory(
         self, new_content: str, max_words: int = 150, thread_id: Optional[str] = None
     ) -> bool:
-        """
-        Maintain memory by appending new content and keeping only recent words.
+        """Maintain memory by appending new content and keeping only recent words.
 
         Args:
-            new_content: New content to add
-            max_words: Maximum number of words to keep
-            thread_id: Optional thread ID for thread-specific memory
+            new_content: New content to add.
+            max_words: Maximum number of words to keep.
+            thread_id: Optional thread ID for thread-specific memory.
 
         Returns:
-            True if successful, False otherwise
+            True if successful, False otherwise.
         """
         try:
             # Read current content
@@ -157,14 +156,13 @@ class MemoryManager:
             return False
 
     async def delete_memory(self, thread_id: Optional[str] = None) -> bool:
-        """
-        Delete memory content from storage.
+        """Delete memory content from storage.
 
         Args:
-            thread_id: Optional thread ID for thread-specific memory
+            thread_id: Optional thread ID for thread-specific memory.
 
         Returns:
-            True if successful, False otherwise
+            True if successful, False otherwise.
         """
         try:
             file_path, file_name = self._get_memory_file_path(thread_id)
@@ -184,47 +182,46 @@ class MemoryManager:
 
 
 class LegacyMemoryManager:
-    """
-    Legacy memory manager that provides backward compatibility for local file operations.
-    This is used when the storage type is local or for fallback scenarios.
+    """Legacy memory manager for backward compatibility.
+
+    Provides backward compatibility for local file operations.
+    Used when storage type is local or for fallback scenarios.
+
+    Attributes:
+        memory_path: Base path for memory files.
     """
 
     def __init__(self, memory_path: str):
-        """
-        Initialize LegacyMemoryManager with memory path.
+        """Initialize LegacyMemoryManager with memory path.
 
         Args:
-            memory_path: Base path for memory files
+            memory_path: Base path for memory files.
         """
         self.memory_path = memory_path
 
     def _get_memory_file_path(self, thread_id: Optional[str] = None) -> str:
-        """
-        Get the full file path for a memory file.
+        """Get the full file path for a memory file.
 
         Args:
-            thread_id: Optional thread ID for thread-specific memory
+            thread_id: Optional thread ID for thread-specific memory.
 
         Returns:
-            Full file path
+            Full file path.
         """
         if thread_id:
             return os.path.join(self.memory_path, thread_id, "context.md")
         else:
             return os.path.join(self.memory_path, "context.md")
 
-    def read_memory(
-        self, thread_id: Optional[str] = None, default_content: str = ""
-    ) -> str:
-        """
-        Read memory content from local file.
+    def read_memory(self, thread_id: Optional[str] = None, default_content: str = "") -> str:
+        """Read memory content from local file.
 
         Args:
-            thread_id: Optional thread ID for thread-specific memory
-            default_content: Default content if memory file doesn't exist
+            thread_id: Optional thread ID for thread-specific memory.
+            default_content: Default content if memory file doesn't exist.
 
         Returns:
-            Memory content as string
+            Memory content as string.
         """
         try:
             file_path = self._get_memory_file_path(thread_id)
@@ -246,15 +243,14 @@ class LegacyMemoryManager:
             return default_content
 
     def write_memory(self, content: str, thread_id: Optional[str] = None) -> bool:
-        """
-        Write memory content to local file.
+        """Write memory content to local file.
 
         Args:
-            content: Content to write
-            thread_id: Optional thread ID for thread-specific memory
+            content: Content to write.
+            thread_id: Optional thread ID for thread-specific memory.
 
         Returns:
-            True if successful, False otherwise
+            True if successful, False otherwise.
         """
         try:
             file_path = self._get_memory_file_path(thread_id)
@@ -279,16 +275,15 @@ class LegacyMemoryManager:
     def maintain_memory(
         self, new_content: str, max_words: int = 150, thread_id: Optional[str] = None
     ) -> bool:
-        """
-        Maintain memory by appending new content and keeping only recent words.
+        """Maintain memory by appending new content and keeping only recent words.
 
         Args:
-            new_content: New content to add
-            max_words: Maximum number of words to keep
-            thread_id: Optional thread ID for thread-specific memory
+            new_content: New content to add.
+            max_words: Maximum number of words to keep.
+            thread_id: Optional thread ID for thread-specific memory.
 
         Returns:
-            True if successful, False otherwise
+            True if successful, False otherwise.
         """
         try:
             file_path = self._get_memory_file_path(thread_id)
@@ -322,31 +317,29 @@ class LegacyMemoryManager:
             return False
 
 
-def get_memory_manager(
-    config: Config, memory_path: Optional[str] = None
-) -> MemoryManager:
-    """
-    Get appropriate memory manager based on configuration.
+def get_memory_manager(config: Config, memory_path: Optional[str] = None) -> MemoryManager:
+    """Get appropriate memory manager based on configuration.
 
     Args:
-        config: Application configuration
-        memory_path: Base path for memory files
+        config: Application configuration.
+        memory_path: Base path for memory files.
 
     Returns:
-        MemoryManager instance
+        MemoryManager instance.
     """
     return MemoryManager(config, memory_path)
 
 
 def run_async_memory_operation(coro: Any) -> Any:
-    """
-    Helper function to run async memory operations in sync contexts.
+    """Run async memory operations in sync contexts.
+
+    Helper function to bridge async and sync code.
 
     Args:
-        coro: Coroutine to run
+        coro: Coroutine to run.
 
     Returns:
-        Result of the coroutine
+        Result of the coroutine.
     """
     try:
         loop = asyncio.get_event_loop()

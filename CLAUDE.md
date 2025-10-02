@@ -2,6 +2,9 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+# Important Note on Your Context Window
+Your context window will be automatically compacted as it approaches its limit, allowing you to continue working indefinitely from where you left off. Therefore, do not stop tasks early due to token budget concerns. As you approach your token budget limit, save your current progress and state to memory before the context window refreshes. Always be as persistent and autonomous as possible and complete tasks fully, even if the end of your budget is approaching. Never artificially stop any task early regardless of the context remaining.
+
 ## Repository Context
 
 This is the **ingenious** package - a core AI agent framework library (v0.2.7).
@@ -13,6 +16,64 @@ This is the **ingenious** package - a core AI agent framework library (v0.2.7).
 - **Always maintain a concise, professional tone** in all interactions
 - Provide direct, clear technical communication without unnecessary elaboration
 - Focus on facts and technical accuracy over conversational language
+
+## Docstring Standard
+
+**CRITICAL**: All Python code MUST use **Google-style docstrings**. When adding new code or modifying existing code:
+
+### Requirements
+- Use triple double quotes (`"""`)
+- First line: one-sentence imperative summary (e.g., "Create database connection.")
+- Blank line before detailed description
+- Include `Args`, `Returns`, `Raises`, `Yields`, and `Attributes` sections where applicable
+- Match parameter names and types to actual code signatures
+- Be accurate and truthful - do not fabricate behavior
+
+### Quick Reference
+
+**Module:**
+```python
+"""Module purpose in one sentence.
+
+Detailed explanation of module functionality and usage patterns.
+"""
+```
+
+**Class:**
+```python
+class ServiceManager:
+    """Manage service lifecycle and dependencies.
+
+    Attributes:
+        config: Service configuration object.
+        state: Current service state.
+    """
+```
+
+**Function/Method:**
+```python
+def process_request(data: dict, timeout: int = 30) -> Response:
+    """Process incoming request with specified timeout.
+
+    Args:
+        data: Request payload dictionary.
+        timeout: Maximum processing time in seconds.
+
+    Returns:
+        Response object with processing results.
+
+    Raises:
+        ValueError: If data validation fails.
+        TimeoutError: If processing exceeds timeout.
+    """
+```
+
+### Enforcement
+- Verified by ruff with pydocstyle rules
+- Pre-commit hooks enforce on every commit
+- Run manually: `uv run ruff check --select D .`
+
+**When editing code**: Always update or add Google-style docstrings. Fix any legacy docstrings you encounter to match this standard.
 
 ## Package Management
 

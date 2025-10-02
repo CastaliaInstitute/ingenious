@@ -59,8 +59,7 @@ class PreflightReason(str, Enum):
 
 
 class GenerationDisabledError(PreflightError):
-    """
-    Raised when a caller invokes `answer()` while `enable_answer_generation` is False.
+    """Raised when a caller invokes `answer()` while `enable_answer_generation` is False.
     Subclasses PreflightError so existing `except PreflightError` code continues to work.
     """
 

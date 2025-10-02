@@ -1,3 +1,9 @@
+"""Classification agent conversation flow v2 implementation.
+
+This module provides a conversation flow for text classification using
+the v2 ConversationPattern with match data parsing capabilities.
+"""
+
 import os
 import uuid
 from datetime import datetime
@@ -14,8 +20,25 @@ from ingenious.services.chat_services.multi_agent.conversation_patterns.classifi
 
 
 class ConversationFlow:
+    """Conversation flow for classification with match data parsing.
+
+    Provides static method for classifying messages with special handling
+    for match event data parsing using Jinja2 templates.
+    """
+
     @staticmethod
     async def get_conversation_response(chatrequest: ChatRequest) -> tuple[str, str]:
+        """Get a classification response with match data parsing.
+
+        Parses match event data if available and classifies the message using
+        the v2 ConversationPattern with topic agents configured from templates.
+
+        Args:
+            chatrequest: ChatRequest containing user prompt and configuration.
+
+        Returns:
+            Tuple of (classification_response, context) from the conversation pattern.
+        """
         message = chatrequest.user_prompt
         topics = chatrequest.topic
         thread_memory = chatrequest.thread_memory
@@ -43,9 +66,7 @@ class ConversationFlow:
 
         try:
             match = mp.MatchDataParser(payload=message, event_type=event_type)
-            message, overBall, timestamp, match_id, feed_id = (
-                match.create_detailed_summary()
-            )
+            message, overBall, timestamp, match_id, feed_id = match.create_detailed_summary()
         except Exception:
             message = "payload undefined"
             timestamp = str(datetime.now())

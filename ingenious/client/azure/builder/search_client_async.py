@@ -1,4 +1,11 @@
 # ingenious/client/azure/builder/search_client_async.py
+"""Async Azure Search client builder with authentication support.
+
+This module provides a builder class for creating async Azure Cognitive Search clients
+with support for API key and Azure AD token-based authentication. It handles credential
+resolution and configuration normalization for the async SDK.
+"""
+
 from __future__ import annotations
 
 import inspect
@@ -18,7 +25,15 @@ except Exception:  # pragma: no cover - typing fallback if azure-core version di
 
 
 def _get(obj: Any, *names: str) -> Any:
-    """Return first non-empty attribute / mapping value by any of the given names."""
+    """Return first non-empty attribute or mapping value by any of the given names.
+
+    Args:
+        obj: Object or mapping to search for attributes/keys.
+        *names: Attribute or key names to search for in order.
+
+    Returns:
+        First non-empty value found, or None if none found.
+    """
     for n in names:
         if isinstance(obj, Mapping):
             if n in obj and obj[n] not in (None, ""):
@@ -31,7 +46,14 @@ def _get(obj: Any, *names: str) -> Any:
 
 
 def _to_plain_secret(value: Any) -> Optional[str]:
-    """Unwrap pydantic SecretStr or return the string directly."""
+    """Unwrap pydantic SecretStr or return the string directly.
+
+    Args:
+        value: Value to unwrap (string, SecretStr, or None).
+
+    Returns:
+        Plain string value or None if the value is None or cannot be unwrapped.
+    """
     if value is None:
         return None
     if isinstance(value, str):
@@ -46,11 +68,17 @@ def _to_plain_secret(value: Any) -> Optional[str]:
 
 
 def _filter_kwargs_for_ctor(cls: type, kwargs: dict[str, Any]) -> dict[str, Any]:
-    """
-    Only pass kwargs the constructor actually accepts.
+    """Only pass kwargs the constructor actually accepts.
 
     - If the __init__ has **kwargs, keep everything.
     - Otherwise, drop unknown keys to avoid TypeError with strict fakes or SDK changes.
+
+    Args:
+        cls: Class whose constructor signature to inspect.
+        kwargs: Keyword arguments to filter.
+
+    Returns:
+        Filtered dictionary containing only accepted parameters.
     """
     try:
         sig = inspect.signature(cls.__init__)
@@ -65,25 +93,27 @@ def _filter_kwargs_for_ctor(cls: type, kwargs: dict[str, Any]) -> dict[str, Any]
     allowed = {
         p.name
         for p in params
-        if p.kind
-        in (inspect.Parameter.POSITIONAL_OR_KEYWORD, inspect.Parameter.KEYWORD_ONLY)
+        if p.kind in (inspect.Parameter.POSITIONAL_OR_KEYWORD, inspect.Parameter.KEYWORD_ONLY)
     }
     # 'self' will never be in kwargs; no need to remove it explicitly
     return {k: v for k, v in kwargs.items() if k in allowed}
 
 
 class AzureSearchAsyncClientBuilder:
-    """
-    Builder for `azure.search.documents.aio.SearchClient`.
+    """Builder for azure.search.documents.aio.SearchClient.
 
-    Prefers async AAD token credentials (from `azure.identity.aio`) when available.
-    Falls back to `AzureKeyCredential` when only a key is provided, and finally to
-    `DefaultAzureCredential` if neither explicit token nor key is provided.
+    Prefers async AAD token credentials from azure.identity.aio when available.
+    Falls back to AzureKeyCredential when only a key is provided, and finally to
+    DefaultAzureCredential if neither explicit token nor key is provided.
 
-    Any additional keyword arguments provided via `client_options` are forwarded
-    to the underlying SDK constructor. This builder does not attempt to normalize
-    or alias option names; callers should use azure-core/azure-search supported
-    kwargs (e.g., retry or transport settings).
+    Any additional keyword arguments provided via client_options are forwarded
+    to the underlying SDK constructor without normalization.
+
+    Attributes:
+        _endpoint: Azure Search service endpoint URL.
+        _index_name: Name of the search index.
+        _credential: Authentication credential (token or key).
+        _client_options: Additional client configuration options.
     """
 
     def __init__(
@@ -94,6 +124,14 @@ class AzureSearchAsyncClientBuilder:
         credential: Union[AsyncTokenCredential, AzureKeyCredential],
         **client_options: Any,
     ) -> None:
+        """Initialize the async Azure Search client builder.
+
+        Args:
+            endpoint: Azure Search service endpoint URL.
+            index_name: Name of the search index.
+            credential: Authentication credential (AsyncTokenCredential or AzureKeyCredential).
+            **client_options: Additional client configuration options.
+        """
         self._endpoint = endpoint
         self._index_name = index_name
         self._credential = credential
@@ -107,8 +145,7 @@ class AzureSearchAsyncClientBuilder:
         index_name: str,
         client_options: Optional[Mapping[str, Any]] = None,
     ) -> "AzureSearchAsyncClientBuilder":
-        """
-        Resolve endpoint and credentials from a flexible config mapping/object.
+        """Resolve endpoint and credentials from a flexible config mapping or object.
 
         Recognized fields:
         - endpoint (preferred), search_endpoint, base_url, or service -> service URL
@@ -117,6 +154,18 @@ class AzureSearchAsyncClientBuilder:
             * managed_identity_client_id              (ManagedIdentityCredential)
             * explicit preference via prefer_token / use_token truthy flag
         - Key aliases: search_key, key, api_key      -> AzureKeyCredential
+
+        Args:
+            config: Configuration object or mapping with endpoint and authentication details.
+            index_name: Name of the search index to connect to.
+            client_options: Optional additional client configuration options.
+
+        Returns:
+            Configured AzureSearchAsyncClientBuilder instance.
+
+        Raises:
+            ValueError: If endpoint cannot be determined from configuration.
+            ImportError: If azure-identity is required but not installed.
         """
         cfg = config or {}
 
@@ -163,9 +212,7 @@ class AzureSearchAsyncClientBuilder:
                         "azure-identity is required for token auth or provide 'search_key'."
                     ) from e
             else:
-                cred = DefaultAzureCredential(
-                    exclude_interactive_browser_credential=True
-                )
+                cred = DefaultAzureCredential(exclude_interactive_browser_credential=True)
 
         if cred is None and key:
             cred = AzureKeyCredential(str(key))
@@ -183,6 +230,11 @@ class AzureSearchAsyncClientBuilder:
         )
 
     def build(self) -> AsyncSearchClient:
+        """Build the async Azure Search client.
+
+        Returns:
+            Configured AsyncSearchClient instance.
+        """
         # Defensive: drop unknown kwargs if constructor doesn't accept **kwargs.
         filtered_opts = _filter_kwargs_for_ctor(AsyncSearchClient, self._client_options)
         return AsyncSearchClient(

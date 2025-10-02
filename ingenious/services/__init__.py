@@ -1,6 +1,5 @@
 # services/__init__.py
-"""
-Ingenious Services Package.
+"""Ingenious Services Package.
 
 This package contains all service implementations including chat services,
 dependency injection, and various business logic components.
@@ -20,7 +19,17 @@ _LAZY_MODULES = {
 
 
 def __getattr__(name: str) -> Any:
-    """Lazily expose selected service modules to maintain backward compatibility."""
+    """Lazily expose selected service modules to maintain backward compatibility.
+
+    Args:
+        name: The attribute name being accessed.
+
+    Returns:
+        The imported module if found in lazy modules.
+
+    Raises:
+        AttributeError: If the attribute is not found in lazy modules.
+    """
     if name in _LAZY_MODULES:
         module = importlib.import_module(f".{name}", __name__)
         setattr(sys.modules[__name__], name, module)
@@ -29,7 +38,11 @@ def __getattr__(name: str) -> Any:
 
 
 def __dir__() -> list[str]:
-    """Include lazy modules in dir() output for better discoverability."""
+    """Include lazy modules in dir() output for better discoverability.
+
+    Returns:
+        Sorted list of all available module attributes including lazy modules.
+    """
     return sorted(list(globals().keys()) + list(_LAZY_MODULES))
 
 

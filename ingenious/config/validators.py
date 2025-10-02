@@ -1,5 +1,4 @@
-"""
-Configuration validation logic.
+"""Configuration validation logic.
 
 This module contains validation functions and methods
 for ensuring configuration integrity.
@@ -15,7 +14,19 @@ if TYPE_CHECKING:
 
 
 def validate_models_not_empty(models: List[ModelSettings]) -> List[ModelSettings]:
-    """Ensure at least one model is configured."""
+    """Ensure at least one model is configured.
+
+    Args:
+        models: List of model settings to validate.
+
+    Returns:
+        The validated list of models, or a default model if the list was empty
+        and environment variables are available.
+
+    Raises:
+        ValueError: If no models are configured and required environment variables
+            are not set.
+    """
     if not models:
         api_key = os.getenv("AZURE_OPENAI_API_KEY", "")
         base_url = os.getenv("AZURE_OPENAI_BASE_URL", "")
@@ -41,13 +52,19 @@ def validate_models_not_empty(models: List[ModelSettings]) -> List[ModelSettings
 
 
 def validate_configuration(settings: "IngeniousSettings") -> None:
-    """Validate the complete configuration and provide helpful feedback."""
+    """Validate the complete configuration and provide helpful feedback.
+
+    Args:
+        settings: The IngeniousSettings instance to validate.
+
+    Raises:
+        ValueError: If validation fails with detailed error messages about what
+            needs to be configured.
+    """
     errors = []
 
     if not settings.models:
-        errors.append(
-            "No models configured. Set AZURE_OPENAI_API_KEY and AZURE_OPENAI_BASE_URL."
-        )
+        errors.append("No models configured. Set AZURE_OPENAI_API_KEY and AZURE_OPENAI_BASE_URL.")
 
     for i, model in enumerate(settings.models):
         if model.api_key and "placeholder" in model.api_key.lower():

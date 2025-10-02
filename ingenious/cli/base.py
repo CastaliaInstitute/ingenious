@@ -1,5 +1,4 @@
-"""
-Base command architecture for Insight Ingenious CLI.
+"""Base command architecture for Insight Ingenious CLI.
 
 This module provides the abstract base class and common patterns for all CLI commands,
 ensuring consistent error handling, output formatting, and user feedback.
@@ -19,7 +18,15 @@ from ingenious.core.structured_logging import get_logger
 
 
 class ExitCode(Enum):
-    """Standard exit codes for CLI commands."""
+    """Standard exit codes for CLI commands.
+
+    Attributes:
+        SUCCESS: Command completed successfully (0)
+        GENERAL_ERROR: General command error (1)
+        INVALID_CONFIG: Invalid configuration (2)
+        MISSING_DEPENDENCY: Missing required dependency (3)
+        VALIDATION_ERROR: Validation failed (4)
+    """
 
     SUCCESS = 0
     GENERAL_ERROR = 1
@@ -29,16 +36,25 @@ class ExitCode(Enum):
 
 
 class CommandError(Exception):
-    """Base exception for CLI command errors."""
+    """Base exception for CLI command errors.
+
+    Attributes:
+        exit_code: Exit code to use when this error is raised
+    """
 
     def __init__(self, message: str, exit_code: ExitCode = ExitCode.GENERAL_ERROR):
+        """Initialize a CommandError.
+
+        Args:
+            message: Error message
+            exit_code: Exit code to use when this error is raised
+        """
         super().__init__(message)
         self.exit_code = exit_code
 
 
 class BaseCommand(ABC):
-    """
-    Abstract base class for all CLI commands.
+    """Abstract base class for all CLI commands.
 
     Provides consistent patterns for:
     - Error handling and reporting
@@ -46,18 +62,26 @@ class BaseCommand(ABC):
     - Output formatting
     - Logging
     - Exit codes
+
+    Attributes:
+        console: Rich console instance for formatted output
+        logger: Structured logger for the command
+        _progress: Current progress indicator if active
     """
 
     def __init__(self, console: Console):
-        """Initialize the base command with a console instance."""
+        """Initialize the base command with a console instance.
+
+        Args:
+            console: Rich console instance for formatted output
+        """
         self.console = console
         self.logger = get_logger(self.__class__.__name__)
         self._progress: Optional[Progress] = None
 
     @abstractmethod
     def execute(self, **kwargs: Any) -> Any:
-        """
-        Execute the command logic.
+        """Execute the command logic.
 
         This method should be implemented by all command subclasses
         and contain the main command logic.
@@ -74,8 +98,7 @@ class BaseCommand(ABC):
         pass
 
     def run(self, **kwargs: Any) -> Any:
-        """
-        Run the command with error handling and progress tracking.
+        """Run the command with error handling and progress tracking.
 
         This method wraps the execute() method with consistent error handling,
         logging, and progress indication.
@@ -89,9 +112,7 @@ class BaseCommand(ABC):
         try:
             self.logger.debug(f"Starting command: {self.__class__.__name__}")
             result = self.execute(**kwargs)
-            self.logger.debug(
-                f"Command completed successfully: {self.__class__.__name__}"
-            )
+            self.logger.debug(f"Command completed successfully: {self.__class__.__name__}")
             return result
 
         except CommandError as e:
@@ -100,11 +121,8 @@ class BaseCommand(ABC):
         except Exception as e:
             self.handle_error(f"Unexpected error: {str(e)}", ExitCode.GENERAL_ERROR)
 
-    def handle_error(
-        self, message: str, exit_code: ExitCode = ExitCode.GENERAL_ERROR
-    ) -> None:
-        """
-        Handle errors with consistent formatting and logging.
+    def handle_error(self, message: str, exit_code: ExitCode = ExitCode.GENERAL_ERROR) -> None:
+        """Handle errors with consistent formatting and logging.
 
         Args:
             message: Error message to display
@@ -117,24 +135,39 @@ class BaseCommand(ABC):
             raise typer.Exit(exit_code.value)
 
     def print_success(self, message: str) -> None:
-        """Print a success message with consistent formatting."""
+        """Print a success message with consistent formatting.
+
+        Args:
+            message: Success message to display
+        """
         self.console.print(f"✅ {message}", style="green")
 
     def print_info(self, message: str) -> None:
-        """Print an info message with consistent formatting."""
+        """Print an info message with consistent formatting.
+
+        Args:
+            message: Info message to display
+        """
         self.console.print(f"ℹ️  {message}", style="info")
 
     def print_warning(self, message: str) -> None:
-        """Print a warning message with consistent formatting."""
+        """Print a warning message with consistent formatting.
+
+        Args:
+            message: Warning message to display
+        """
         self.console.print(f"⚠️  {message}", style="warning")
 
     def print_error(self, message: str) -> None:
-        """Print an error message with consistent formatting."""
+        """Print an error message with consistent formatting.
+
+        Args:
+            message: Error message to display
+        """
         self.console.print(f"❌ {message}", style="error")
 
     def start_progress(self, description: str = "Processing...") -> Progress:
-        """
-        Start a progress indicator.
+        """Start a progress indicator.
 
         Args:
             description: Description text for the progress indicator
@@ -161,8 +194,7 @@ class BaseCommand(ABC):
     def load_env_file(
         self, env_file: Optional[str] = None, *, override: bool = True
     ) -> Optional[str]:
-        """
-        Load environment variables from a .env file.
+        """Load environment variables from a .env file.
 
         Args:
             env_file: Optional path to the .env file. If omitted, the default

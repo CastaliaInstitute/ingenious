@@ -1,3 +1,5 @@
+"""Legacy configuration utilities for Azure Key Vault integration."""
+
 import os
 
 from azure.identity import DefaultAzureCredential
@@ -10,6 +12,17 @@ logger = get_logger(__name__)
 
 
 def get_kv_secret(secretName: str) -> str:
+    """Retrieve a secret from Azure Key Vault.
+
+    Args:
+        secretName: The name of the secret to retrieve.
+
+    Returns:
+        The secret value as a string.
+
+    Raises:
+        ValueError: If KEY_VAULT_NAME environment variable is not set.
+    """
     # check if the key vault name is set in the environment variables
     if "KEY_VAULT_NAME" in os.environ:
         keyVaultName = os.environ["KEY_VAULT_NAME"]
@@ -23,8 +36,7 @@ def get_kv_secret(secretName: str) -> str:
 
 
 def get_config(project_path: str = "") -> IngeniousSettings:
-    """
-    Get configuration using pydantic-settings system.
+    """Get configuration using pydantic-settings system.
 
     This function provides configuration management that:
     - Automatically loads environment variables

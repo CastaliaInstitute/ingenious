@@ -1,5 +1,4 @@
-"""
-Request middleware for the FastAPI application.
+"""Request middleware for the FastAPI application.
 
 This module contains middleware classes and configurations for handling
 request context, logging, and other cross-cutting concerns.
@@ -27,6 +26,18 @@ class RequestContextMiddleware(BaseHTTPMiddleware):
     async def dispatch(
         self, request: Request, call_next: Callable[[Request], Awaitable[Response]]
     ) -> Response:
+        """Process each request with logging and context management.
+
+        Args:
+            request: Incoming FastAPI request
+            call_next: Next middleware or route handler in the chain
+
+        Returns:
+            Response from the route handler with added tracing headers
+
+        Raises:
+            Exception: Re-raises any exception after logging it
+        """
         start_time = time.time()
 
         # Extract user info from request if available
@@ -40,9 +51,7 @@ class RequestContextMiddleware(BaseHTTPMiddleware):
         user_agent = request.headers.get("User-Agent")
 
         # Extract session ID from custom header or cookies
-        session_id = request.headers.get("X-Session-ID") or request.cookies.get(
-            "session_id"
-        )
+        session_id = request.headers.get("X-Session-ID") or request.cookies.get("session_id")
 
         # Try to get user info from Authorization header
         auth_header = request.headers.get("Authorization")
@@ -115,10 +124,15 @@ class RequestContextMiddleware(BaseHTTPMiddleware):
             # Clear context after request
             clear_request_context()
 
-    def _extract_user_from_auth_header(
-        self, auth_header: Optional[str]
-    ) -> Optional[str]:
-        """Extract user ID from Authorization header."""
+    def _extract_user_from_auth_header(self, auth_header: Optional[str]) -> Optional[str]:
+        """Extract user ID from Authorization header.
+
+        Args:
+            auth_header: Authorization header value (Bearer or Basic)
+
+        Returns:
+            User ID string or None if extraction fails
+        """
         if auth_header and auth_header.startswith("Bearer "):
             try:
                 from ingenious.auth.jwt import get_username_from_token

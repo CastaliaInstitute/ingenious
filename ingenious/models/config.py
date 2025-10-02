@@ -1,5 +1,4 @@
-"""
-Compatibility layer for configuration imports.
+"""Compatibility layer for configuration imports.
 
 The legacy YAML configuration system exposed several models from
 ``ingenious.models.config``.  The project now uses Pydantic Settings for

@@ -30,6 +30,7 @@ class DummyHTTPError(Exception):
 
     def __init__(self, status_code: int = 500, message: str | None = None) -> None:
         """Initialize the dummy error with a status code and message.
+
         Args:
             status_code: The HTTP-like status code to simulate.
             message: An optional error message. If None, a default is generated.
@@ -104,9 +105,7 @@ def test_cli_runtime_error_shows_panel_and_exit_1(exc: Exception) -> None:
     )
     # Output should be a friendly error with a hint about --verbose
     out: str = result.stdout.lower()
-    assert "error" in out or "failed" in out, (
-        f"No error indication in output:\n{result.stdout}"
-    )
+    assert "error" in out or "failed" in out, f"No error indication in output:\n{result.stdout}"
     assert "--verbose" in out, f"No --verbose hint in output:\n{result.stdout}"
     # Check that the error message is displayed
     if isinstance(exc, DummyHTTPError):
