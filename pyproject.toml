@@ -315,8 +315,6 @@ module = [
   "colorlog.*",
 ]
 ignore_missing_imports = true
-allow_untyped_calls = true
-allow_untyped_defs = true
 
 # Allow some flexibility during initial migration
 [[tool.mypy.overrides]]
