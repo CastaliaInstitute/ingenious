@@ -1,32 +1,24 @@
-"""Memory Manager for handling conversation context files.
-
-This module provides memory management functionality through FileStorage abstraction,
-ensuring that memory operations work with both local and Azure Blob Storage.
+"""Memory Manager for handling conversation context files through FileStorage abstraction.
+This ensures that memory operations work with both local and Azure Blob Storage.
 """
 
 import asyncio
 import os
 from typing import Any, Optional
 
+from ingenious.config.settings import IngeniousSettings
 from ingenious.core.structured_logging import get_logger
 from ingenious.files.files_repository import FileStorage
-from ingenious.models.config import Config
 
 logger = get_logger(__name__)
 
 
 class MemoryManager:
-    """Manage conversation memory and context files.
-
-    Uses FileStorage abstraction to support both local storage and Azure Blob Storage.
-
-    Attributes:
-        config: Application configuration.
-        memory_path: Base path for memory files.
-        file_storage: File storage instance for memory operations.
+    """Manages conversation memory/context files using the FileStorage abstraction.
+    This allows memory operations to work with both local storage and Azure Blob Storage.
     """
 
-    def __init__(self, config: Config, memory_path: Optional[str] = None):
+    def __init__(self, config: IngeniousSettings, memory_path: Optional[str] = None):
         """Initialize MemoryManager with configuration.
 
         Args:
@@ -41,10 +33,10 @@ class MemoryManager:
         """Get the file path and name for a memory file.
 
         Args:
-            thread_id: Optional thread ID for thread-specific memory.
+            thread_id: Optional thread ID for thread-specific memory
 
         Returns:
-            Tuple of (file_path, file_name).
+            Tuple of (file_path, file_name)
         """
         if thread_id:
             file_path = f"memory/{thread_id}"
@@ -59,11 +51,11 @@ class MemoryManager:
         """Read memory content from storage.
 
         Args:
-            thread_id: Optional thread ID for thread-specific memory.
-            default_content: Default content if memory file doesn't exist.
+            thread_id: Optional thread ID for thread-specific memory
+            default_content: Default content if memory file doesn't exist
 
         Returns:
-            Memory content as string.
+            Memory content as string
         """
         try:
             file_path, file_name = self._get_memory_file_path(thread_id)
@@ -94,11 +86,11 @@ class MemoryManager:
         """Write memory content to storage.
 
         Args:
-            content: Content to write.
-            thread_id: Optional thread ID for thread-specific memory.
+            content: Content to write
+            thread_id: Optional thread ID for thread-specific memory
 
         Returns:
-            True if successful, False otherwise.
+            True if successful, False otherwise
         """
         try:
             file_path, file_name = self._get_memory_file_path(thread_id)
@@ -123,12 +115,12 @@ class MemoryManager:
         """Maintain memory by appending new content and keeping only recent words.
 
         Args:
-            new_content: New content to add.
-            max_words: Maximum number of words to keep.
-            thread_id: Optional thread ID for thread-specific memory.
+            new_content: New content to add
+            max_words: Maximum number of words to keep
+            thread_id: Optional thread ID for thread-specific memory
 
         Returns:
-            True if successful, False otherwise.
+            True if successful, False otherwise
         """
         try:
             # Read current content
@@ -159,10 +151,10 @@ class MemoryManager:
         """Delete memory content from storage.
 
         Args:
-            thread_id: Optional thread ID for thread-specific memory.
+            thread_id: Optional thread ID for thread-specific memory
 
         Returns:
-            True if successful, False otherwise.
+            True if successful, False otherwise
         """
         try:
             file_path, file_name = self._get_memory_file_path(thread_id)
@@ -182,20 +174,15 @@ class MemoryManager:
 
 
 class LegacyMemoryManager:
-    """Legacy memory manager for backward compatibility.
-
-    Provides backward compatibility for local file operations.
-    Used when storage type is local or for fallback scenarios.
-
-    Attributes:
-        memory_path: Base path for memory files.
+    """Legacy memory manager that provides backward compatibility for local file operations.
+    This is used when the storage type is local or for fallback scenarios.
     """
 
     def __init__(self, memory_path: str):
         """Initialize LegacyMemoryManager with memory path.
 
         Args:
-            memory_path: Base path for memory files.
+            memory_path: Base path for memory files
         """
         self.memory_path = memory_path
 
@@ -203,10 +190,10 @@ class LegacyMemoryManager:
         """Get the full file path for a memory file.
 
         Args:
-            thread_id: Optional thread ID for thread-specific memory.
+            thread_id: Optional thread ID for thread-specific memory
 
         Returns:
-            Full file path.
+            Full file path
         """
         if thread_id:
             return os.path.join(self.memory_path, thread_id, "context.md")
@@ -217,11 +204,11 @@ class LegacyMemoryManager:
         """Read memory content from local file.
 
         Args:
-            thread_id: Optional thread ID for thread-specific memory.
-            default_content: Default content if memory file doesn't exist.
+            thread_id: Optional thread ID for thread-specific memory
+            default_content: Default content if memory file doesn't exist
 
         Returns:
-            Memory content as string.
+            Memory content as string
         """
         try:
             file_path = self._get_memory_file_path(thread_id)
@@ -246,11 +233,11 @@ class LegacyMemoryManager:
         """Write memory content to local file.
 
         Args:
-            content: Content to write.
-            thread_id: Optional thread ID for thread-specific memory.
+            content: Content to write
+            thread_id: Optional thread ID for thread-specific memory
 
         Returns:
-            True if successful, False otherwise.
+            True if successful, False otherwise
         """
         try:
             file_path = self._get_memory_file_path(thread_id)
@@ -278,12 +265,12 @@ class LegacyMemoryManager:
         """Maintain memory by appending new content and keeping only recent words.
 
         Args:
-            new_content: New content to add.
-            max_words: Maximum number of words to keep.
-            thread_id: Optional thread ID for thread-specific memory.
+            new_content: New content to add
+            max_words: Maximum number of words to keep
+            thread_id: Optional thread ID for thread-specific memory
 
         Returns:
-            True if successful, False otherwise.
+            True if successful, False otherwise
         """
         try:
             file_path = self._get_memory_file_path(thread_id)
@@ -317,29 +304,29 @@ class LegacyMemoryManager:
             return False
 
 
-def get_memory_manager(config: Config, memory_path: Optional[str] = None) -> MemoryManager:
+def get_memory_manager(
+    config: IngeniousSettings, memory_path: Optional[str] = None
+) -> MemoryManager:
     """Get appropriate memory manager based on configuration.
 
     Args:
-        config: Application configuration.
-        memory_path: Base path for memory files.
+        config: Application configuration
+        memory_path: Base path for memory files
 
     Returns:
-        MemoryManager instance.
+        MemoryManager instance
     """
     return MemoryManager(config, memory_path)
 
 
 def run_async_memory_operation(coro: Any) -> Any:
-    """Run async memory operations in sync contexts.
-
-    Helper function to bridge async and sync code.
+    """Helper function to run async memory operations in sync contexts.
 
     Args:
-        coro: Coroutine to run.
+        coro: Coroutine to run
 
     Returns:
-        Result of the coroutine.
+        Result of the coroutine
     """
     try:
         loop = asyncio.get_event_loop()

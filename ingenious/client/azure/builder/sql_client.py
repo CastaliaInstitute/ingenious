@@ -1,62 +1,32 @@
-"""Azure SQL client builders with multiple authentication methods.
-
-This module provides builder classes for creating Azure SQL database connections
-with support for connection strings and various authentication methods including
-managed identity, service principal, and SQL authentication.
-"""
-
-from __future__ import annotations
-
-from typing import Optional, Union
+from typing import Optional
 
 import pyodbc
 from azure.identity import get_bearer_token_provider
 
 from ingenious.client.azure.builder.base import AzureClientBuilder
 from ingenious.common.enums import AuthenticationMethod
+from ingenious.config.auth_config import AzureAuthConfig
 from ingenious.config.models import AzureSqlSettings
-from ingenious.models.config import AzureSqlConfig
 
 
 class AzureSqlClientBuilder(AzureClientBuilder):
-    """Builder for Azure SQL clients with multiple authentication methods.
+    """Builder for Azure SQL clients with multiple authentication methods."""
 
-    Attributes:
-        sql_config: Azure SQL configuration object containing connection parameters.
-    """
-
-    def __init__(self, sql_config: Union[AzureSqlConfig, AzureSqlSettings]):
-        """Initialize the Azure SQL client builder.
-
-        Args:
-            sql_config: Azure SQL configuration containing connection parameters.
-        """
+    def __init__(self, sql_config: AzureSqlSettings):
         # Extract authentication parameters from config
         auth_config = self._create_auth_config_from_sql_config(sql_config)
         super().__init__(auth_config=auth_config)
         self.sql_config = sql_config
 
-    def _create_auth_config_from_sql_config(self, sql_config):
-        """Create AzureAuthConfig from SQL configuration.
-
-        Args:
-            sql_config: Azure SQL configuration object.
-
-        Returns:
-            AzureAuthConfig instance extracted from the SQL configuration.
-        """
-        from ingenious.config.auth_config import AzureAuthConfig
-
+    def _create_auth_config_from_sql_config(self, sql_config: AzureSqlSettings) -> AzureAuthConfig:
+        """Create AzureAuthConfig from SQL configuration."""
         return AzureAuthConfig.from_config(sql_config)
 
-    def build(self) -> "pyodbc.Connection":
+    def build(self) -> pyodbc.Connection:
         """Build Azure SQL client based on SQL configuration.
 
         Returns:
-            Configured Azure SQL connection.
-
-        Raises:
-            ValueError: If connection string is not provided in configuration.
+            pyodbc.Connection: Configured Azure SQL connection
         """
         # Check if connection string is provided
         connection_string = getattr(self.sql_config, "database_connection_string", None)
@@ -74,18 +44,7 @@ class AzureSqlClientBuilder(AzureClientBuilder):
 
 
 class AzureSqlClientBuilderWithAuth(AzureClientBuilder):
-    """Builder for Azure SQL clients with explicit authentication configuration.
-
-    Attributes:
-        server: Azure SQL server name.
-        database: Database name.
-        authentication_method: Authentication method to use.
-        username: SQL authentication username (for TOKEN method).
-        password: SQL authentication password (for TOKEN method).
-        client_id: Service principal or managed identity client ID.
-        client_secret: Service principal client secret.
-        tenant_id: Azure AD tenant ID.
-    """
+    """Builder for Azure SQL clients with explicit authentication configuration."""
 
     def __init__(
         self,
@@ -98,18 +57,6 @@ class AzureSqlClientBuilderWithAuth(AzureClientBuilder):
         client_secret: Optional[str] = None,
         tenant_id: Optional[str] = None,
     ):
-        """Initialize the Azure SQL client builder with explicit authentication.
-
-        Args:
-            server: Azure SQL server name.
-            database: Database name.
-            authentication_method: Authentication method to use. Defaults to DEFAULT_CREDENTIAL.
-            username: SQL authentication username (required for TOKEN method).
-            password: SQL authentication password (required for TOKEN method).
-            client_id: Service principal or managed identity client ID.
-            client_secret: Service principal client secret.
-            tenant_id: Azure AD tenant ID.
-        """
         super().__init__()
         self.server = server
         self.database = database
@@ -120,15 +67,11 @@ class AzureSqlClientBuilderWithAuth(AzureClientBuilder):
         self.client_secret = client_secret
         self.tenant_id = tenant_id
 
-    def build(self) -> "pyodbc.Connection":
+    def build(self) -> pyodbc.Connection:
         """Build Azure SQL client based on configuration with authentication.
 
         Returns:
-            Configured Azure SQL connection.
-
-        Raises:
-            ValueError: If required authentication parameters are missing for the selected method
-                or if the authentication method is unsupported.
+            pyodbc.Connection: Configured Azure SQL connection
         """
         # Base connection string components
         connection_parts = [

@@ -1,19 +1,19 @@
-"""Test Auth Validation functionality."""
-
 #!/usr/bin/env python3
-"""
-Test script to verify authentication validation logic for Azure OpenAI client builder.
+"""Test script to verify authentication validation logic for Azure OpenAI client builder.
 
 This module tests the authentication requirements and validation scenarios
 for the Azure OpenAI client builder functions, ensuring that different
-authentication methods work correctly with proper credentials."""
+authentication methods work correctly with proper credentials.
+"""
+
+from typing import Any
 
 from ingenious.common.enums import AuthenticationMethod
 
 
-def test_authentication_requirements():
+def test_authentication_requirements() -> None:
     """Test the authentication requirements for different methods used by the client builder."""
-    print("🔍 Testing Azure OpenAI Client Builder Authentication Methods\n.")
+    print("🔍 Testing Azure OpenAI Client Builder Authentication Methods\n")
 
     auth_methods = [
         AuthenticationMethod.DEFAULT_CREDENTIAL,
@@ -23,43 +23,43 @@ def test_authentication_requirements():
     ]
 
     for auth_method in auth_methods:
-        print(f"Authentication Method: {auth_method.value}.")
+        print(f"Authentication Method: {auth_method.value}")
 
         if auth_method == AuthenticationMethod.DEFAULT_CREDENTIAL:
-            print("  ✅ No additional credentials required.")
-            print("  📋 Uses Azure Default Credential chain.")
+            print("  ✅ No additional credentials required")
+            print("  📋 Uses Azure Default Credential chain")
 
         elif auth_method == AuthenticationMethod.MSI:
-            print("  🔑 Required: client_id.")
-            print("  📋 Uses Managed Identity with specified client_id.")
+            print("  🔑 Required: client_id")
+            print("  📋 Uses Managed Identity with specified client_id")
 
         elif auth_method == AuthenticationMethod.TOKEN:
-            print("  🔑 Required: api_key.")
-            print("  📋 Uses API key authentication.")
+            print("  🔑 Required: api_key")
+            print("  📋 Uses API key authentication")
 
         elif auth_method == AuthenticationMethod.CLIENT_ID_AND_SECRET:
-            print("  🔑 Required: client_id AND client_secret AND tenant_id.")
-            print("  📋 Uses Service Principal authentication.")
+            print("  🔑 Required: client_id AND client_secret AND tenant_id")
+            print("  📋 Uses Service Principal authentication")
             print("  💡 tenant_id can come from config or AZURE_TENANT_ID env var")
 
         print()
 
 
-def test_validation_scenarios():
+def test_validation_scenarios() -> None:
     """Test validation scenarios for Azure OpenAI client builder authentication.
 
     These scenarios validate that the client builder functions properly handle
     different authentication configurations and reject invalid combinations.
     """
-    print("🧪 Client Builder Validation Scenarios:\n.")
+    print("🧪 Client Builder Validation Scenarios:\n")
 
-    scenarios = [
+    scenarios: list[dict[str, Any]] = [
         {
-            "name.": "DEFAULT_CREDENTIAL - Valid.",
-            "auth_method.": AuthenticationMethod.DEFAULT_CREDENTIAL,
-            "base_url.": "https://test.openai.azure.com/ ",
-            "model.": "gpt-4.",
-            "api_key.": "",
+            "name": "DEFAULT_CREDENTIAL - Valid",
+            "auth_method": AuthenticationMethod.DEFAULT_CREDENTIAL,
+            "base_url": "https://test.openai.azure.com/",
+            "model": "gpt-4",
+            "api_key": "",
             "client_id": "",
             "client_secret": "",
             "tenant_id": "",
@@ -128,7 +128,9 @@ def test_validation_scenarios():
             "api_key": "",
             "client_id": "12345678-1234-1234-1234-123456789012",
             "client_secret": "test-secret",
-            "tenant_id": "",  # Should fallback to AZURE_TENANT_ID env var"should_pass": True, "env_vars": {"AZURE_TENANT_ID": "87654321-4321-4321-4321-210987654321"},
+            "tenant_id": "",  # Should fallback to AZURE_TENANT_ID env var
+            "should_pass": True,
+            "env_vars": {"AZURE_TENANT_ID": "87654321-4321-4321-4321-210987654321"},
         },
         {
             "name": "CLIENT_ID_AND_SECRET - Invalid without client_id",
@@ -202,7 +204,7 @@ def test_validation_scenarios():
                 if original_env[key] is None:
                     os.environ.pop(key, None)
                 else:
-                    os.environ[key] = original_env[key]
+                    os.environ[key] = str(original_env[key])
 
         if overall_valid == expected:
             print(f"  ✅ PASS - Validation result matches expectation ({overall_valid})")
@@ -213,5 +215,5 @@ def test_validation_scenarios():
 
 
 if __name__ == "__main__":
-    test_authentication_requirements()  # type: ignore[no-untyped-call]
-    test_validation_scenarios()  # type: ignore[no-untyped-call]
+    test_authentication_requirements()
+    test_validation_scenarios()

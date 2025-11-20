@@ -17,7 +17,7 @@ from fastapi.security import (
 from typing_extensions import Annotated
 
 from ingenious.auth.jwt import get_username_from_token
-from ingenious.config.main_settings import IngeniousSettings
+from ingenious.config.settings import IngeniousSettings
 from ingenious.core.structured_logging import get_logger
 from ingenious.services.fastapi_dependencies import get_config as _get_config
 

@@ -1,9 +1,3 @@
-"""Azure Cosmos DB database adapter for Ingenious chat history.
-
-Provides repository implementation for storing chat history, threads, messages,
-steps, elements, and feedback in Azure Cosmos DB using the Azure SDK.
-"""
-
 import uuid
 from typing import Any, Dict, List, Optional, cast
 
@@ -11,7 +5,7 @@ from azure.cosmos import ContainerProxy, CosmosClient, PartitionKey
 
 from ingenious.client.azure import AzureClientFactory
 from ingenious.common.enums import AuthenticationMethod
-from ingenious.config import IngeniousSettings
+from ingenious.config.settings import IngeniousSettings
 from ingenious.core.structured_logging import get_logger
 from ingenious.db.chat_history_repository import IChatHistoryRepository
 from ingenious.errors import DatabaseQueryError
@@ -24,15 +18,6 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
     """Cosmos DB implementation of IChatHistoryRepository for managing chat history."""
 
     def __init__(self, config: IngeniousSettings) -> None:
-        """Initialize Cosmos DB chat history repository with configuration.
-
-        Args:
-            config: Ingenious settings containing Cosmos DB service configuration.
-
-        Raises:
-            ValueError: If cosmos_service configuration is missing.
-            DatabaseQueryError: If CosmosClient creation fails.
-        """
         self.config = config
 
         if config.cosmos_service is None:
@@ -49,7 +34,7 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
         self._create_database(database_id)
         self._create_containers()
 
-    def _create_database(self, database_id):
+    def _create_database(self, database_id: str) -> None:
         authentication_method = getattr(self.config.cosmos_service, "authentication_method", None)
 
         if authentication_method == AuthenticationMethod.TOKEN:
@@ -57,8 +42,10 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
         else:
             self.database = self.client.get_database_client(database_id)
 
-    def _create_containers(self):
+    def _create_containers(self) -> None:
         authentication_method = getattr(self.config.cosmos_service, "authentication_method", None)
+
+        # Initialize containers based on authentication method
         if authentication_method == AuthenticationMethod.TOKEN:
             self.chat_history: ContainerProxy = self.database.create_container_if_not_exists(
                 id="chat_history", partition_key=PartitionKey(path="/thread_id")
@@ -85,15 +72,13 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
                 id="feedbacks", partition_key=PartitionKey(path="/threadId")
             )
         else:
-            self.chat_history: ContainerProxy = self.database.get_container_client("chat_history")
-            self.chat_history_summary: ContainerProxy = self.database.get_container_client(
-                "chat_history_summary"
-            )
-            self.users: ContainerProxy = self.database.get_container_client("users")
-            self.threads: ContainerProxy = self.database.get_container_client("threads")
-            self.steps: ContainerProxy = self.database.get_container_client("steps")
-            self.elements: ContainerProxy = self.database.get_container_client("elements")
-            self.feedbacks: ContainerProxy = self.database.get_container_client("feedbacks")
+            self.chat_history = self.database.get_container_client("chat_history")
+            self.chat_history_summary = self.database.get_container_client("chat_history_summary")
+            self.users = self.database.get_container_client("users")
+            self.threads = self.database.get_container_client("threads")
+            self.steps = self.database.get_container_client("steps")
+            self.elements = self.database.get_container_client("elements")
+            self.feedbacks = self.database.get_container_client("feedbacks")
 
     # Utility mappers
     def _message_to_doc(self, m: Message) -> Dict[str, Any]:
@@ -140,21 +125,6 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
         metadata: Optional[Dict[str, object]] = None,
         tags: Optional[List[str]] = None,
     ) -> str:
-        """Update or create a thread with metadata and tags.
-
-        Args:
-            thread_id: Unique identifier for the thread.
-            name: Optional name for the thread.
-            user_id: Optional user identifier owning the thread.
-            metadata: Optional metadata dictionary for the thread.
-            tags: Optional list of tags for the thread.
-
-        Returns:
-            Empty string on success.
-
-        Raises:
-            DatabaseQueryError: If thread upsert fails in Cosmos DB.
-        """
         try:
             # Resolve user identifier if possible
             user_identifier = None
@@ -193,17 +163,6 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
             raise DatabaseQueryError("Failed to upsert thread in Cosmos", cause=e)
 
     async def add_message(self, message: Message) -> str:
-        """Add a message to the chat history container.
-
-        Args:
-            message: Message object to add to the chat history.
-
-        Returns:
-            Message ID of the created message.
-
-        Raises:
-            DatabaseQueryError: If message creation fails in Cosmos DB.
-        """
         try:
             if not message.message_id:
                 message.message_id = str(uuid.uuid4())
@@ -214,17 +173,6 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
             raise DatabaseQueryError("Failed to add message to Cosmos", cause=e)
 
     async def add_user(self, identifier: str) -> IChatHistoryRepository.User:
-        """Add a new user to the users container.
-
-        Args:
-            identifier: Unique identifier for the user.
-
-        Returns:
-            User object with generated ID and creation timestamp.
-
-        Raises:
-            DatabaseQueryError: If user creation fails in Cosmos DB.
-        """
         try:
             user_doc = {
                 "id": str(uuid.uuid4()),
@@ -245,17 +193,6 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
             raise DatabaseQueryError("Failed to add user in Cosmos", cause=e)
 
     async def get_user(self, identifier: str) -> IChatHistoryRepository.User | None:
-        """Retrieve a user by identifier or create if not exists.
-
-        Args:
-            identifier: Unique identifier for the user.
-
-        Returns:
-            User object if found or newly created.
-
-        Raises:
-            DatabaseQueryError: If user query fails in Cosmos DB.
-        """
         try:
             results = list(
                 self.users.query_items(
@@ -280,18 +217,6 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
             raise DatabaseQueryError("Failed to get user from Cosmos", cause=e)
 
     async def get_message(self, message_id: str, thread_id: str) -> Message | None:
-        """Retrieve a message by message ID and thread ID.
-
-        Args:
-            message_id: Unique identifier for the message.
-            thread_id: Thread identifier containing the message.
-
-        Returns:
-            Message object if found, None otherwise.
-
-        Raises:
-            DatabaseQueryError: If message query fails in Cosmos DB.
-        """
         try:
             results = list(
                 self.chat_history.query_items(
@@ -310,17 +235,6 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
             raise DatabaseQueryError("Failed to get message from Cosmos", cause=e)
 
     async def get_thread_messages(self, thread_id: str) -> List[Message]:
-        """Retrieve the last 5 messages for a thread in chronological order.
-
-        Args:
-            thread_id: Thread identifier to retrieve messages from.
-
-        Returns:
-            List of Message objects ordered by timestamp ascending.
-
-        Raises:
-            DatabaseQueryError: If message query fails in Cosmos DB.
-        """
         try:
             # Get last 5 by timestamp desc then reverse to asc
             docs = list(
@@ -339,193 +253,58 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
         except Exception as e:
             raise DatabaseQueryError("Failed to get thread messages from Cosmos", cause=e)
 
-    def _query_threads(self, identifier: str, thread_id: Optional[str]) -> List[Dict[str, Any]]:
-        """Query threads for a user, optionally filtered by thread ID."""
-        if thread_id:
-            return list(
-                self.threads.query_items(
-                    query="SELECT * FROM c WHERE c.userIdentifier = @uid AND c.id = @tid",
-                    parameters=[
-                        {"name": "@uid", "value": identifier},
-                        {"name": "@tid", "value": thread_id},
-                    ],
-                    enable_cross_partition_query=True,
-                )
-            )
-        return list(
-            self.threads.query_items(
-                query="SELECT TOP 100 * FROM c WHERE c.userIdentifier = @uid ORDER BY c.createdAt DESC",
-                parameters=[{"name": "@uid", "value": identifier}],
-                enable_cross_partition_query=True,
-            )
-        )
-
-    def _query_steps_for_threads(self, thread_ids: List[str]) -> Dict[str, List[Dict[str, Any]]]:
-        """Query all steps for given thread IDs."""
-        steps_by_thread: Dict[str, List[Dict[str, Any]]] = {tid: [] for tid in thread_ids}
-        for tid in thread_ids:
-            docs = list(
-                self.steps.query_items(
-                    query="SELECT * FROM c WHERE c.threadId = @tid ORDER BY c.createdAt ASC",
-                    parameters=[{"name": "@tid", "value": tid}],
-                    enable_cross_partition_query=True,
-                )
-            )
-            steps_by_thread[tid] = docs
-        return steps_by_thread
-
-    def _query_elements_for_threads(self, thread_ids: List[str]) -> Dict[str, List[Dict[str, Any]]]:
-        """Query all elements for given thread IDs."""
-        elements_by_thread: Dict[str, List[Dict[str, Any]]] = {tid: [] for tid in thread_ids}
-        for tid in thread_ids:
-            docs = list(
-                self.elements.query_items(
-                    query="SELECT * FROM c WHERE c.threadId = @tid",
-                    parameters=[{"name": "@tid", "value": tid}],
-                    enable_cross_partition_query=True,
-                )
-            )
-            elements_by_thread[tid] = docs
-        return elements_by_thread
-
-    def _get_feedback_for_step(
-        self, step_id: str, thread_id: str
-    ) -> Optional[IChatHistoryRepository.FeedbackDict]:
-        """Query and parse feedback for a specific step."""
-        feedback_docs = list(
-            self.feedbacks.query_items(
-                query="SELECT * FROM c WHERE c.forId = @fid AND c.threadId = @tid",
-                parameters=[
-                    {"name": "@fid", "value": step_id},
-                    {"name": "@tid", "value": thread_id},
-                ],
-                enable_cross_partition_query=True,
-            )
-        )
-        if not feedback_docs:
-            return None
-
-        fb = feedback_docs[0]
-        return IChatHistoryRepository.FeedbackDict(
-            forId=str(step_id),
-            id=str(fb.get("id")) if fb.get("id") else None,
-            value=1 if int(fb.get("value", 0) or 0) == 1 else 0,
-            comment=fb.get("comment"),
-        )
-
-    def _normalize_step_type(self, raw_type: str) -> str:
-        """Normalize step type to allowed values."""
-        allowed_step_types = {
-            "run",
-            "tool",
-            "llm",
-            "embedding",
-            "retrieval",
-            "rerank",
-            "undefined",
-            "user_message",
-            "assistant_message",
-            "system_message",
-        }
-        return raw_type if raw_type in allowed_step_types else "undefined"
-
-    def _build_step_dict(
-        self,
-        sd: Dict[str, Any],
-        tid: str,
-        feedback: Optional[IChatHistoryRepository.FeedbackDict],
-    ) -> IChatHistoryRepository.StepDict:
-        """Build a StepDict from raw step data."""
-        raw_step_type = str(sd.get("type", "undefined"))
-        step_type = self._normalize_step_type(raw_step_type)
-
-        step_dict: IChatHistoryRepository.StepDict = {
-            "id": str(sd.get("id", "")),
-            "name": str(sd.get("name", "")),
-            "type": cast(IChatHistoryRepository.StepType, step_type),
-            "threadId": str(sd.get("threadId", tid)),
-            "disableFeedback": bool(sd.get("disableFeedback", False)),
-            "streaming": bool(sd.get("streaming", False)),
-        }
-
-        # Add optional string fields
-        for field in [
-            "parentId",
-            "input",
-            "output",
-            "createdAt",
-            "start",
-            "end",
-            "language",
-        ]:
-            if sd.get(field) is not None:
-                step_dict[field] = str(sd.get(field))
-
-        # Add optional boolean fields
-        for field in ["waitForAnswer", "isError"]:
-            if sd.get(field) is not None:
-                step_dict[field] = bool(sd.get(field))
-
-        # Add metadata if it's a dict
-        if sd.get("metadata") is not None:
-            meta = sd.get("metadata")
-            if isinstance(meta, dict):
-                step_dict["metadata"] = meta
-
-        # Add tags
-        if sd.get("tags") is not None:
-            step_dict["tags"] = sd.get("tags")
-
-        # Add generation if it's a dict
-        if sd.get("generation") is not None:
-            gen = sd.get("generation")
-            if isinstance(gen, dict):
-                step_dict["generation"] = gen
-
-        # Add showInput (bool or str)
-        if sd.get("showInput") is not None:
-            show_input = sd.get("showInput")
-            if isinstance(show_input, (bool, str)):
-                step_dict["showInput"] = show_input
-
-        # Add indent (int)
-        if sd.get("indent") is not None:
-            _indent = sd.get("indent")
-            if isinstance(_indent, (int, str)):
-                try:
-                    step_dict["indent"] = int(_indent)
-                except Exception:
-                    pass
-
-        if feedback is not None:
-            step_dict["feedback"] = feedback
-
-        return step_dict
-
     async def get_threads_for_user(
         self, identifier: str, thread_id: Optional[str]
     ) -> Optional[List[IChatHistoryRepository.ThreadDict]]:
-        """Retrieve threads for a user with associated steps and elements.
-
-        Args:
-            identifier: User identifier to retrieve threads for.
-            thread_id: Optional specific thread ID to retrieve.
-
-        Returns:
-            List of ThreadDict objects with steps, elements, and feedback.
-
-        Raises:
-            DatabaseQueryError: If thread query fails in Cosmos DB.
-        """
         try:
-            threads = self._query_threads(identifier, thread_id)
+            if thread_id:
+                threads = list(
+                    self.threads.query_items(
+                        query="SELECT * FROM c WHERE c.userIdentifier = @uid AND c.id = @tid",
+                        parameters=[
+                            {"name": "@uid", "value": identifier},
+                            {"name": "@tid", "value": thread_id},
+                        ],
+                        enable_cross_partition_query=True,
+                    )
+                )
+            else:
+                threads = list(
+                    self.threads.query_items(
+                        query="SELECT TOP 100 * FROM c WHERE c.userIdentifier = @uid ORDER BY c.createdAt DESC",
+                        parameters=[{"name": "@uid", "value": identifier}],
+                        enable_cross_partition_query=True,
+                    )
+                )
 
             if not threads:
                 return []
 
             thread_ids = [t["id"] for t in threads]
-            steps_by_thread = self._query_steps_for_threads(thread_ids)
-            elements_by_thread = self._query_elements_for_threads(thread_ids)
+
+            # Steps
+            steps_by_thread: Dict[str, List[Dict[str, Any]]] = {tid: [] for tid in thread_ids}
+            for tid in thread_ids:
+                docs = list(
+                    self.steps.query_items(
+                        query="SELECT * FROM c WHERE c.threadId = @tid ORDER BY c.createdAt ASC",
+                        parameters=[{"name": "@tid", "value": tid}],
+                        enable_cross_partition_query=True,
+                    )
+                )
+                steps_by_thread[tid] = docs
+
+            # Elements
+            elements_by_thread: Dict[str, List[Dict[str, Any]]] = {tid: [] for tid in thread_ids}
+            for tid in thread_ids:
+                docs = list(
+                    self.elements.query_items(
+                        query="SELECT * FROM c WHERE c.threadId = @tid",
+                        parameters=[{"name": "@tid", "value": tid}],
+                        enable_cross_partition_query=True,
+                    )
+                )
+                elements_by_thread[tid] = docs
 
             result: List[IChatHistoryRepository.ThreadDict] = []
             for t in threads:
@@ -548,8 +327,93 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
                 # Steps with feedback join (do per step)
                 steps_docs = steps_by_thread.get(tid, [])
                 for sd in steps_docs:
-                    feedback = self._get_feedback_for_step(sd.get("id"), tid)
-                    step_dict = self._build_step_dict(sd, tid, feedback)
+                    feedback_docs = list(
+                        self.feedbacks.query_items(
+                            query="SELECT * FROM c WHERE c.forId = @fid AND c.threadId = @tid",
+                            parameters=[
+                                {"name": "@fid", "value": sd.get("id")},
+                                {"name": "@tid", "value": tid},
+                            ],
+                            enable_cross_partition_query=True,
+                        )
+                    )
+                    feedback = None
+                    if feedback_docs:
+                        fb = feedback_docs[0]
+                        feedback = IChatHistoryRepository.FeedbackDict(
+                            forId=str(sd.get("id", "")),
+                            id=str(fb.get("id")) if fb.get("id") else None,
+                            value=1 if int(fb.get("value", 0) or 0) == 1 else 0,
+                            comment=fb.get("comment"),
+                        )
+
+                    # Coerce type to allowed StepType values
+                    raw_step_type = str(sd.get("type", "undefined"))
+                    allowed_step_types = {
+                        "run",
+                        "tool",
+                        "llm",
+                        "embedding",
+                        "retrieval",
+                        "rerank",
+                        "undefined",
+                        "user_message",
+                        "assistant_message",
+                        "system_message",
+                    }
+                    if raw_step_type not in allowed_step_types:
+                        raw_step_type = "undefined"
+                    step_dict: IChatHistoryRepository.StepDict = {
+                        "id": str(sd.get("id", "")),
+                        "name": str(sd.get("name", "")),
+                        "type": cast(IChatHistoryRepository.StepType, raw_step_type),
+                        "threadId": str(sd.get("threadId", tid)),
+                        "disableFeedback": bool(sd.get("disableFeedback", False)),
+                        "streaming": bool(sd.get("streaming", False)),
+                    }
+                    # Optional fields only when present
+                    if sd.get("parentId") is not None:
+                        step_dict["parentId"] = str(sd.get("parentId"))
+                    if sd.get("waitForAnswer") is not None:
+                        step_dict["waitForAnswer"] = bool(sd.get("waitForAnswer"))
+                    if sd.get("isError") is not None:
+                        step_dict["isError"] = bool(sd.get("isError"))
+                    if sd.get("metadata") is not None:
+                        meta = sd.get("metadata")
+                        if isinstance(meta, dict):
+                            step_dict["metadata"] = meta
+                    if sd.get("tags") is not None:
+                        step_dict["tags"] = sd.get("tags")
+                    if sd.get("input") is not None:
+                        step_dict["input"] = str(sd.get("input"))
+                    if sd.get("output") is not None:
+                        step_dict["output"] = str(sd.get("output"))
+                    if sd.get("createdAt") is not None:
+                        step_dict["createdAt"] = str(sd.get("createdAt"))
+                    if sd.get("start") is not None:
+                        step_dict["start"] = str(sd.get("start"))
+                    if sd.get("end") is not None:
+                        step_dict["end"] = str(sd.get("end"))
+                    if sd.get("generation") is not None:
+                        gen = sd.get("generation")
+                        if isinstance(gen, dict):
+                            step_dict["generation"] = gen
+                    if sd.get("showInput") is not None:
+                        show_input = sd.get("showInput")
+                        if isinstance(show_input, (bool, str)):
+                            step_dict["showInput"] = show_input
+                    if sd.get("language") is not None:
+                        step_dict["language"] = str(sd.get("language"))
+                    if sd.get("indent") is not None:
+                        _indent = sd.get("indent")
+                        if isinstance(_indent, (int, str)):
+                            try:
+                                step_dict["indent"] = int(_indent)
+                            except Exception:
+                                pass
+                    if feedback is not None:
+                        step_dict["feedback"] = feedback
+
                     steps_list.append(step_dict)
 
                 # Elements
@@ -613,16 +477,6 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
     async def update_message_feedback(
         self, message_id: str, thread_id: str, positive_feedback: bool | None
     ) -> None:
-        """Update the feedback status for a chat history message.
-
-        Args:
-            message_id: Unique identifier for the message.
-            thread_id: Thread identifier containing the message.
-            positive_feedback: Feedback value (True, False, or None).
-
-        Raises:
-            DatabaseQueryError: If message feedback update fails in Cosmos DB.
-        """
         try:
             # Fetch doc, patch and replace
             items = list(
@@ -647,16 +501,6 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
     async def update_message_content_filter_results(
         self, message_id: str, thread_id: str, content_filter_results: dict[str, object]
     ) -> None:
-        """Update the content filter results for a chat history message.
-
-        Args:
-            message_id: Unique identifier for the message.
-            thread_id: Thread identifier containing the message.
-            content_filter_results: Content filter results dictionary.
-
-        Raises:
-            DatabaseQueryError: If content filter update fails in Cosmos DB.
-        """
         try:
             items = list(
                 self.chat_history.query_items(
@@ -680,16 +524,6 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
     async def update_memory_feedback(
         self, message_id: str, thread_id: str, positive_feedback: bool | None
     ) -> None:
-        """Update the feedback status for a memory summary message.
-
-        Args:
-            message_id: Unique identifier for the memory message.
-            thread_id: Thread identifier containing the memory.
-            positive_feedback: Feedback value (True, False, or None).
-
-        Raises:
-            DatabaseQueryError: If memory feedback update fails in Cosmos DB.
-        """
         try:
             items = list(
                 self.chat_history_summary.query_items(
@@ -713,16 +547,6 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
     async def update_memory_content_filter_results(
         self, message_id: str, thread_id: str, content_filter_results: dict[str, object]
     ) -> None:
-        """Update the content filter results for a memory summary message.
-
-        Args:
-            message_id: Unique identifier for the memory message.
-            thread_id: Thread identifier containing the memory.
-            content_filter_results: Content filter results dictionary.
-
-        Raises:
-            DatabaseQueryError: If memory content filter update fails in Cosmos DB.
-        """
         try:
             items = list(
                 self.chat_history_summary.query_items(
@@ -744,17 +568,6 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
             raise DatabaseQueryError("Failed to update memory CFR in Cosmos", cause=e)
 
     async def add_memory(self, message: Message) -> str:
-        """Add a memory summary message to the chat history summary container.
-
-        Args:
-            message: Message object to add as memory summary.
-
-        Returns:
-            Message ID of the created memory message.
-
-        Raises:
-            DatabaseQueryError: If memory creation fails in Cosmos DB.
-        """
         try:
             if not message.message_id:
                 message.message_id = str(uuid.uuid4())
@@ -765,18 +578,6 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
             raise DatabaseQueryError("Failed to add memory to Cosmos", cause=e)
 
     async def get_memory(self, message_id: str, thread_id: str) -> Message | None:
-        """Retrieve the most recent memory summary for a thread.
-
-        Args:
-            message_id: Message identifier (not used in query).
-            thread_id: Thread identifier to retrieve memory from.
-
-        Returns:
-            Most recent Message object if found, None otherwise.
-
-        Raises:
-            DatabaseQueryError: If memory query fails in Cosmos DB.
-        """
         try:
             docs = list(
                 self.chat_history_summary.query_items(
@@ -794,25 +595,10 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
             raise DatabaseQueryError("Failed to get memory from Cosmos", cause=e)
 
     async def update_memory(self) -> None:
-        """Update memory summary (no-op for Cosmos DB implementation).
-
-        Memory is stored directly in Cosmos DB, no aggregation needed.
-        """
         # For Cosmos, memory is already stored; no-op or could implement aggregation
         return None
 
     async def get_thread_memory(self, thread_id: str) -> List[Message]:
-        """Retrieve the most recent memory summary message for a thread.
-
-        Args:
-            thread_id: Thread identifier to retrieve memory from.
-
-        Returns:
-            List containing the most recent memory Message object.
-
-        Raises:
-            DatabaseQueryError: If memory query fails in Cosmos DB.
-        """
         try:
             docs = list(
                 self.chat_history_summary.query_items(
@@ -828,16 +614,6 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
             raise DatabaseQueryError("Failed to get thread memory from Cosmos", cause=e)
 
     async def delete_thread(self, thread_id: str) -> None:
-        """Delete a thread and all associated data.
-
-        Removes messages, memory, steps, elements, feedbacks, and thread metadata.
-
-        Args:
-            thread_id: Thread identifier to delete.
-
-        Raises:
-            DatabaseQueryError: If thread deletion fails in Cosmos DB.
-        """
         try:
             # Delete messages
             docs = list(
@@ -896,14 +672,6 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
             raise DatabaseQueryError("Failed to delete thread in Cosmos", cause=e)
 
     async def delete_thread_memory(self, thread_id: str) -> None:
-        """Delete all memory summary messages for a thread.
-
-        Args:
-            thread_id: Thread identifier to delete memory from.
-
-        Raises:
-            DatabaseQueryError: If memory deletion fails in Cosmos DB.
-        """
         try:
             docs = list(
                 self.chat_history_summary.query_items(
@@ -919,14 +687,6 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
             raise DatabaseQueryError("Failed to delete thread memory in Cosmos", cause=e)
 
     async def delete_user_memory(self, user_id: str) -> None:
-        """Delete all memory summary messages for a user across all threads.
-
-        Args:
-            user_id: User identifier to delete memory for.
-
-        Raises:
-            DatabaseQueryError: If user memory deletion fails in Cosmos DB.
-        """
         try:
             docs = list(
                 self.chat_history_summary.query_items(
@@ -946,17 +706,6 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
             raise DatabaseQueryError("Failed to delete user memory in Cosmos", cause=e)
 
     async def add_step(self, step_dict: IChatHistoryRepository.StepDict) -> str:
-        """Add a step to the steps container.
-
-        Args:
-            step_dict: Step dictionary containing step data and metadata.
-
-        Returns:
-            Step ID of the created step.
-
-        Raises:
-            DatabaseQueryError: If step creation fails in Cosmos DB.
-        """
         try:
             if "id" not in step_dict or not step_dict["id"]:
                 step_dict["id"] = str(uuid.uuid4())
@@ -966,3 +715,32 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
             return str(step_dict["id"])
         except Exception as e:
             raise DatabaseQueryError("Failed to add step in Cosmos", cause=e)
+
+    async def get_thread(self, thread_id: str) -> List[IChatHistoryRepository.Thread]:
+        """Get thread metadata by thread ID."""
+        try:
+            threads = list(
+                self.threads.query_items(
+                    query="SELECT * FROM c WHERE c.id = @tid",
+                    parameters=[{"name": "@tid", "value": thread_id}],
+                    enable_cross_partition_query=True,
+                )
+            )
+            result = []
+            for t in threads:
+                from uuid import UUID as _UUID
+
+                result.append(
+                    IChatHistoryRepository.Thread(
+                        id=_UUID(t.get("id", "00000000-0000-0000-0000-000000000000")),
+                        createdAt=t.get("createdAt"),
+                        name=t.get("name"),
+                        userId=_UUID(t.get("userId", "00000000-0000-0000-0000-000000000000")),
+                        userIdentifier=t.get("userIdentifier"),
+                        tags=t.get("tags"),
+                        metadata=t.get("metadata"),
+                    )
+                )
+            return result
+        except Exception as e:
+            raise DatabaseQueryError("Failed to get thread in Cosmos", cause=e)

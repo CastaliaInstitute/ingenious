@@ -35,15 +35,16 @@ class TestDiagnosticRoutes:
     async def test_health_check_success(self):
         """Test successful health check."""
         # Mock dependencies
-        with patch("ingenious.services.fastapi_dependencies.get_config.", return_value=Mock()):
-            from ingenious.api.routes.diagnostic import health_check
+        with patch("ingenious.dependencies.get_config", return_value=Mock()):
+            with patch("ingenious.dependencies.get_config", return_value=Mock()):
+                from ingenious.api.routes.diagnostic import health_check
 
-            response = await health_check()
-            assert response["status."] == "healthy."
-            assert "timestamp." in response
-            assert "response_time_ms." in response
-            assert response["components."]["configuration."] == "ok."
-            assert response["components."]["profile."] == "ok."
+                response = await health_check()
+                assert response["status"] == "healthy"
+                assert "timestamp" in response
+                assert "response_time_ms" in response
+                assert response["components"]["configuration"] == "ok"
+                assert response["components"]["profile"] == "ok"
 
     def test_diagnostic_route_exists(self):
         """Test that diagnostic route module can be imported."""
@@ -54,7 +55,7 @@ class TestDiagnosticRoutes:
             _ = ingenious.api.routes.diagnostic
             assert True
         except ImportError:
-            pytest.fail("Diagnostic route module does not exist.")
+            pytest.fail("Diagnostic route module does not exist")
 
 
 class TestEventsRoutes:
@@ -69,7 +70,7 @@ class TestEventsRoutes:
             _ = ingenious.api.routes.events
             assert True
         except ImportError:
-            pytest.fail("Events module does not exist.")
+            pytest.fail("Events module does not exist")
 
     def test_events_router_exists(self):
         """Test that events router is defined."""
@@ -82,8 +83,8 @@ class TestEventsRoutes:
         import ingenious.api.routes.events as events_module
 
         # Check if basic attributes exist
-        assert hasattr(events_module, "router.")
-        assert hasattr(events_module, "__name__.")
+        assert hasattr(events_module, "router")
+        assert hasattr(events_module, "__name__")
 
 
 class TestPromptsRoutes:
@@ -98,7 +99,7 @@ class TestPromptsRoutes:
             _ = ingenious.api.routes.prompts
             assert True
         except ImportError:
-            pytest.fail("Prompts module does not exist.")
+            pytest.fail("Prompts module does not exist")
 
     def test_view_function_exists(self):
         """Test that view function exists in prompts module."""

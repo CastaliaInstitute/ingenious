@@ -1,9 +1,3 @@
-"""Classification agent conversation pattern v2 implementation.
-
-This module provides a simplified classification pattern using AutoGen agentchat
-with a single classifier agent and round-robin team.
-"""
-
 from typing import Tuple, cast
 
 from autogen_agentchat.agents import AssistantAgent, UserProxyAgent
@@ -12,31 +6,13 @@ from autogen_agentchat.teams import RoundRobinGroupChat
 from ingenious.client.azure import AzureClientFactory
 from ingenious.common.enums import AuthenticationMethod
 from ingenious.config import get_config
+from ingenious.config.settings import IngeniousSettings
 from ingenious.core.structured_logging import get_logger
-from ingenious.models.config import Config
 
 logger = get_logger(__name__)
 
 
 class ConversationPattern:
-    """Simplified conversation pattern for classification with single classifier agent.
-
-    Uses AutoGen agentchat with a round-robin team consisting of a user proxy
-    and a classifier agent that both classifies and responds to user messages.
-
-    Attributes:
-        default_llm_config: LLM configuration for agents.
-        topics: List of available topic categories.
-        memory_record_switch: Whether to record conversation in memory.
-        memory_path: Path to memory storage.
-        thread_memory: Existing conversation memory context.
-        context: Current conversation context.
-        model_client: Azure OpenAI model client.
-        memory_manager: Memory manager for cloud storage support.
-        classifier: Assistant agent for classification and response.
-        user_proxy: User proxy agent for initiating conversations.
-    """
-
     def __init__(
         self,
         default_llm_config: dict[str, object],
@@ -45,15 +21,6 @@ class ConversationPattern:
         memory_path: str,
         thread_memory: str,
     ):
-        """Initialize the classification conversation pattern v2.
-
-        Args:
-            default_llm_config: Configuration for the language model.
-            topics: List of topic names for classification.
-            memory_record_switch: Whether to enable memory recording.
-            memory_path: File system path for memory storage.
-            thread_memory: Previous conversation memory.
-        """
         self.default_llm_config = default_llm_config
         self.topics = topics
         self.memory_record_switch = memory_record_switch
@@ -81,7 +48,7 @@ class ConversationPattern:
             run_async_memory_operation,
         )
 
-        self.memory_manager = get_memory_manager(cast(Config, get_config()), memory_path)
+        self.memory_manager = get_memory_manager(cast(IngeniousSettings, get_config()), memory_path)
 
         # Initialize context file
         if not self.thread_memory:
@@ -126,29 +93,11 @@ class ConversationPattern:
         self.user_proxy = UserProxyAgent(name="user_proxy")
 
     def add_topic_agent(self, agent_name: str, system_message: str) -> None:
-        """Add a topic agent.
-
-        No-op in this implementation since v2 uses a single classifier agent.
-
-        Args:
-            agent_name: Name of the topic agent (unused).
-            system_message: System message for the agent (unused).
-        """
+        """Add a topic agent - simplified to do nothing since we use single classifier"""
         pass
 
     async def get_conversation_response(self, input_message: str) -> Tuple[str, str]:
-        """Get a conversation response using classifier agent in round-robin chat.
-
-        Creates a round-robin team with classifier and user proxy for simplified
-        classification and response generation.
-
-        Args:
-            input_message: User's input message to classify and respond to.
-
-        Returns:
-            Tuple of (response_message, context) where response_message is the
-            classifier's response and context is the updated conversation context.
-        """
+        """Simplified conversation with just classifier + user proxy in round-robin (max 2 turns)"""
         try:
             # Create a simple round-robin team with just 2 agents
             team = RoundRobinGroupChat(participants=[self.user_proxy, self.classifier])
@@ -183,8 +132,5 @@ class ConversationPattern:
             return str(error_response), str(e)
 
     async def close(self) -> None:
-        """Close the model client connection.
-
-        Cleans up the Azure OpenAI model client connection.
-        """
+        """Close the model client connection"""
         await self.model_client.close()

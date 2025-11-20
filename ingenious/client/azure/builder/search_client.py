@@ -1,63 +1,37 @@
-"""Azure Search client builder with multiple authentication methods.
-
-This module provides a builder class for creating Azure Cognitive Search clients
-with support for API key authentication and Azure AD token-based authentication.
-"""
-
-from typing import Optional, Union
+from typing import Optional
 
 from azure.search.documents import SearchClient
 
 from ingenious.client.azure.builder.base import AzureClientBuilder
 from ingenious.config.auth_config import AzureAuthConfig
 from ingenious.config.models import AzureSearchSettings
-from ingenious.models.config import AzureSearchConfig
 
 
 class AzureSearchClientBuilder(AzureClientBuilder):
-    """Builder for Azure Search clients with multiple authentication methods.
-
-    Attributes:
-        search_config: Azure Search configuration object.
-        index_name: Name of the search index to connect to.
-    """
+    """Builder for Azure Search clients with multiple authentication methods."""
 
     def __init__(
         self,
-        search_config: Union[AzureSearchConfig, AzureSearchSettings],
+        search_config: AzureSearchSettings,
         index_name: Optional[str] = None,
     ):
-        """Initialize the Azure Search client builder.
-
-        Args:
-            search_config: Azure Search configuration containing endpoint and authentication.
-            index_name: Optional name of the search index.
-        """
         # Extract authentication parameters from config
         auth_config = self._create_auth_config_from_search_config(search_config)
         super().__init__(auth_config=auth_config)
         self.search_config = search_config
         self.index_name = index_name
 
-    def _create_auth_config_from_search_config(self, search_config):
-        """Create AzureAuthConfig from search configuration.
-
-        Args:
-            search_config: Azure Search configuration object.
-
-        Returns:
-            AzureAuthConfig instance extracted from the search configuration.
-        """
+    def _create_auth_config_from_search_config(
+        self, search_config: AzureSearchSettings
+    ) -> AzureAuthConfig:
+        """Create AzureAuthConfig from search configuration."""
         return AzureAuthConfig.from_config(search_config)
 
     def build(self) -> SearchClient:
         """Build Azure Search client based on search configuration.
 
         Returns:
-            Configured Azure Search client.
-
-        Raises:
-            ValueError: If index_name is not provided or endpoint cannot be determined.
+            SearchClient: Configured Azure Search client
         """
         if not self.index_name:
             raise ValueError("Index name is required for SearchClient")

@@ -1,14 +1,7 @@
-"""Chat service abstraction and implementation.
-
-This module provides the IChatService interface and ChatService implementation
-for handling chat requests and responses through various backend services.
-"""
-
 from abc import ABC, abstractmethod
-from collections.abc import Mapping
-from typing import Any, AsyncIterator, Optional, Union
+from typing import Any, AsyncIterator
 
-from ingenious.config.main_settings import IngeniousSettings
+from ingenious.config.settings import IngeniousSettings
 from ingenious.core.error_handling import operation_context
 from ingenious.core.structured_logging import get_logger
 from ingenious.db.chat_history_repository import ChatHistoryRepository
@@ -16,102 +9,26 @@ from ingenious.errors import (
     ChatServiceError,
 )
 from ingenious.models.chat import ChatRequest, ChatResponse, ChatResponseChunk
-from ingenious.models.config import Config
 from ingenious.utils.imports import import_class_with_fallback
 
 logger = get_logger(__name__)
 
 
 class IChatService(ABC):
-    """Abstract interface for chat service implementations.
-
-    Attributes:
-        service_class: The underlying service class instance.
-    """
-
     service_class: Any = None
 
     @abstractmethod
     async def get_chat_response(self, chat_request: ChatRequest) -> ChatResponse:
-        """Get a complete chat response.
-
-        Args:
-            chat_request: The chat request containing user message and context.
-
-        Returns:
-            Complete chat response with agent's reply.
-        """
         pass
 
     @abstractmethod
     def get_streaming_chat_response(
         self, chat_request: ChatRequest
     ) -> AsyncIterator[ChatResponseChunk]:
-        """Get a streaming chat response.
-
-        Args:
-            chat_request: The chat request containing user message and context.
-
-        Yields:
-            Chat response chunks as they become available.
-        """
         pass
 
 
-def _resolve_streaming_chunk_size(config: Any, default: int = 100) -> int:
-    """Resolve streaming chunk size from configuration.
-
-    Best-effort lookup for streaming chunk size across config variants.
-
-    Args:
-        config: Configuration object to extract chunk size from.
-        default: Default chunk size if not found in config.
-
-    Returns:
-        Streaming chunk size as integer.
-    """
-
-    def _extract(candidate: Any) -> Optional[int]:
-        """Extract streaming chunk size from a config object.
-
-        Args:
-            candidate: Configuration object to extract from.
-
-        Returns:
-            Chunk size if found and valid, None otherwise.
-        """
-        size = getattr(candidate, "streaming_chunk_size", None)
-        return size if isinstance(size, int) and size > 0 else None
-
-    for attr in ("web_configuration", "web"):
-        candidate = getattr(config, attr, None)
-        if candidate is not None:
-            value = _extract(candidate)
-            if value is not None:
-                return value
-
-    if isinstance(config, Mapping):
-        for key in ("web_configuration", "web"):
-            if key in config and config[key] is not None:
-                value = _extract(config[key])
-                if value is not None:
-                    return value
-
-    return default
-
-
 class ChatService(IChatService):
-    """Chat service implementation with dynamic service loading.
-
-    Dynamically loads and initializes chat service implementations based on
-    the specified service type.
-
-    Attributes:
-        service_class: The instantiated service class instance.
-        config: Application configuration.
-        revision: Revision ID for service versioning.
-    """
-
     service_class: Any  # Will be set to instantiated service class
 
     def __init__(
@@ -119,21 +36,9 @@ class ChatService(IChatService):
         chat_service_type: str,
         chat_history_repository: ChatHistoryRepository,
         conversation_flow: str,
-        config: Union[Config, IngeniousSettings],
+        config: IngeniousSettings,
         revision: str = "dfe19b62-07f1-4cb5-ae9a-561a253e4b04",
     ):
-        """Initialize chat service with specified type and configuration.
-
-        Args:
-            chat_service_type: Type of chat service to load (e.g., 'multi_agent').
-            chat_history_repository: Repository for storing chat history.
-            conversation_flow: Name of conversation flow to use.
-            config: Application configuration object.
-            revision: Revision ID for service versioning.
-
-        Raises:
-            ChatServiceError: If service module cannot be imported or initialized.
-        """
         class_name = f"{chat_service_type.lower()}_chat_service"
         self.config = config
         self.revision = revision
@@ -208,17 +113,6 @@ class ChatService(IChatService):
         )
 
     async def get_chat_response(self, chat_request: ChatRequest) -> ChatResponse:
-        """Get a complete chat response from the underlying service.
-
-        Args:
-            chat_request: The chat request containing user message and context.
-
-        Returns:
-            Complete chat response with agent's reply.
-
-        Raises:
-            ValueError: If conversation_flow is not set in the request.
-        """
         if not chat_request.conversation_flow:
             raise ValueError(f"conversation_flow not set {chat_request}")
         return await self.service_class.get_chat_response(chat_request)  # type: ignore
@@ -226,19 +120,6 @@ class ChatService(IChatService):
     async def get_streaming_chat_response(
         self, chat_request: ChatRequest
     ) -> AsyncIterator[ChatResponseChunk]:
-        """Get a streaming chat response from the underlying service.
-
-        Falls back to chunked non-streaming response if service doesn't support streaming.
-
-        Args:
-            chat_request: The chat request containing user message and context.
-
-        Yields:
-            Chat response chunks as they become available.
-
-        Raises:
-            ValueError: If conversation_flow is not set in the request.
-        """
         if not chat_request.conversation_flow:
             raise ValueError(f"conversation_flow not set {chat_request}")
 
@@ -256,7 +137,7 @@ class ChatService(IChatService):
 
             # Convert response to chunks
             if response.agent_response:
-                chunk_size = _resolve_streaming_chunk_size(self.config)
+                chunk_size = getattr(self.config, "web", {}).get("streaming_chunk_size", 100)
                 content = response.agent_response
 
                 for i in range(0, len(content), chunk_size):
