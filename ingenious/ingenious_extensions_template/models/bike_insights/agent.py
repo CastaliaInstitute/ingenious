@@ -9,7 +9,7 @@ class ProjectAgents(IProjectAgents):
         local_agents.append(
             Agent(
                 agent_name="customer_sentiment_agent",
-                agent_model_name="gpt-4.1-nano",
+                agent_model_name="gpt-4o-mini",
                 agent_display_name="Customer Sentiment",
                 agent_description="A sample agent.",
                 agent_type="researcher",
@@ -22,7 +22,7 @@ class ProjectAgents(IProjectAgents):
         local_agents.append(
             Agent(
                 agent_name="fiscal_analysis_agent",
-                agent_model_name="gpt-4.1-nano",
+                agent_model_name="gpt-4o-mini",
                 agent_display_name="Fiscal Analysis",
                 agent_description="A sample agent.",
                 agent_type="researcher",
@@ -35,7 +35,7 @@ class ProjectAgents(IProjectAgents):
         local_agents.append(
             Agent(
                 agent_name="summary",
-                agent_model_name="gpt-4.1-nano",
+                agent_model_name="gpt-4o-mini",
                 agent_display_name="Summarizer",
                 agent_description="A sample agent.",
                 agent_type="summary",
@@ -48,7 +48,7 @@ class ProjectAgents(IProjectAgents):
         local_agents.append(
             Agent(
                 agent_name="user_proxy",
-                agent_model_name="gpt-4.1-nano",
+                agent_model_name="gpt-4o-mini",
                 agent_display_name="user_proxy_agent",
                 agent_description="A sample agent.",
                 agent_type="user_proxy",
@@ -61,7 +61,7 @@ class ProjectAgents(IProjectAgents):
         local_agents.append(
             Agent(
                 agent_name="bike_lookup_agent",
-                agent_model_name="gpt-4.1-nano",
+                agent_model_name="gpt-4o-mini",
                 agent_display_name="bike_lookup_agent",
                 agent_description="A sample agent.",
                 agent_type="user_proxy",
