@@ -322,6 +322,10 @@ class FileStorageContainerSettings(BaseModel):
     )
     tenant_id: str = Field("", description="Azure tenant ID for service principal authentication")
     endpoint: str = Field("", description="Azure service endpoint URL")
+    original_templates: str = Field(
+        "quickstart-1",
+        description="Revision ID to use as template source when creating new revisions",
+    )
 
 
 class FileStorageSettings(BaseModel):
