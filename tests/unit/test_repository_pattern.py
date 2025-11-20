@@ -23,6 +23,7 @@ class TestConnectionPool:
     """Test the database-agnostic connection pool."""
 
     def test_sqlite_connection_factory(self):
+        """Test SQLite connection factory creates connections with proper PRAGMA settings."""
         factory = SQLiteConnectionFactory(":memory:.")
 
         # Test connection creation
@@ -38,6 +39,7 @@ class TestConnectionPool:
             mock_conn.execute.assert_any_call("PRAGMA synchronous=NORMAL.")
 
     def test_azuresql_connection_factory(self):
+        """Test Azure SQL connection factory creates connections with autocommit enabled."""
         factory = AzureSQLConnectionFactory("test_connection_string.")
 
         with patch("pyodbc.connect.") as mock_connect:
@@ -51,6 +53,7 @@ class TestConnectionPool:
             assert mock_conn.autocommit is True
 
     def test_connection_pool_initialization(self):
+        """Test connection pool initializes with specified pool size and validates connections."""
         mock_factory = Mock()
         mock_conn = Mock()
         mock_factory.create_connection.return_value = mock_conn
@@ -63,6 +66,7 @@ class TestConnectionPool:
         assert mock_factory.is_connection_healthy.call_count == 2
 
     def test_connection_pool_get_connection(self):
+        """Test connection pool provides connections via context manager."""
         mock_factory = Mock()
         mock_conn = Mock()
         mock_factory.create_connection.return_value = mock_conn
@@ -78,6 +82,7 @@ class TestRepositoryFactory:
     """Test repository factory functionality."""
 
     def test_repository_factory_sqlite(self):
+        """Test repository factory creates SQLite repository with correct configuration."""
         mock_config = Mock()
         mock_config.chat_history.database_path = "/test/path/db.sqlite."
 
@@ -93,6 +98,7 @@ class TestRepositoryFactory:
             mock_repo_class.assert_called_once_with(mock_config)
 
     def test_repository_factory_azuresql(self):
+        """Test repository factory creates Azure SQL repository with correct configuration."""
         mock_config = Mock()
         mock_config.chat_history.database_connection_string = "test_connection_string."
 
@@ -108,6 +114,7 @@ class TestRepositoryFactory:
             mock_repo_class.assert_called_once_with(mock_config)
 
     def test_repository_factory_unsupported_type(self):
+        """Test repository factory raises ValueError for unsupported database types."""
         mock_config = Mock()
 
         with pytest.raises(ValueError, match="Unsupported database type."):
@@ -128,6 +135,7 @@ class TestModernRepositoryFactory:
         pass
 
     def test_modern_factory_azuresql_missing_connection_string(self):
+        """Test modern factory raises ValueError when Azure SQL connection string is missing."""
         mock_config = Mock()
         mock_config.chat_history.database_connection_string = None
 
@@ -141,6 +149,7 @@ class TestSQLiteChatHistoryRepository:
     """Test SQLite repository with composition."""
 
     def test_initialization(self):
+        """Test SQLite repository initializes with config, query builder, and connection pool."""
         mock_config = Mock()
         mock_builder = Mock()
         mock_pool = Mock()
@@ -153,6 +162,7 @@ class TestSQLiteChatHistoryRepository:
             assert repo.pool == mock_pool
 
     def test_execute_sql_with_results(self):
+        """Test SQLite repository executes SELECT queries and returns results as dictionaries."""
         mock_config = Mock()
         mock_builder = Mock()
         mock_pool = Mock()
@@ -178,6 +188,7 @@ class TestSQLiteChatHistoryRepository:
                 assert isinstance(result, list)
 
     def test_execute_sql_without_results(self):
+        """Test SQLite repository executes INSERT/UPDATE queries and commits changes."""
         mock_config = Mock()
         mock_builder = Mock()
         mock_pool = Mock()
@@ -195,6 +206,7 @@ class TestSQLiteChatHistoryRepository:
             mock_conn.commit.assert_called_once()
 
     def test_close(self):
+        """Test SQLite repository close method properly closes all pooled connections."""
         mock_config = Mock()
         mock_builder = Mock()
         mock_pool = Mock()
@@ -210,6 +222,7 @@ class TestAzureSQLChatHistoryRepository:
     """Test Azure SQL repository with composition."""
 
     def test_initialization(self):
+        """Test Azure SQL repository initializes with config, query builder, and connection pool."""
         mock_config = Mock()
         mock_builder = Mock()
         mock_pool = Mock()
@@ -222,6 +235,7 @@ class TestAzureSQLChatHistoryRepository:
             assert repo.pool == mock_pool
 
     def test_execute_sql_with_results(self):
+        """Test Azure SQL repository executes SELECT queries and returns results as dictionaries."""
         mock_config = Mock()
         mock_builder = Mock()
         mock_pool = Mock()
@@ -245,6 +259,7 @@ class TestAzureSQLChatHistoryRepository:
             assert result == [{"col1.": "value1.", "col2.": "value2."}]
 
     def test_execute_sql_without_results(self):
+        """Test Azure SQL repository executes INSERT/UPDATE queries and commits changes."""
         mock_config = Mock()
         mock_builder = Mock()
         mock_pool = Mock()
@@ -269,6 +284,7 @@ class TestRepositoryIntegration:
     """Test integration between components."""
 
     def test_sqlite_repository_uses_query_builder(self):
+        """Test SQLite repository uses query builder to generate SQLite-specific SQL statements."""
         mock_config = Mock()
         mock_pool = Mock()
         mock_conn = Mock()
@@ -286,6 +302,7 @@ class TestRepositoryIntegration:
             assert query.count("?.") == 11  # Should have 11 parameters
 
     def test_azuresql_repository_uses_query_builder(self):
+        """Test Azure SQL repository uses query builder to generate Azure SQL-specific syntax."""
         mock_config = Mock()
         mock_pool = Mock()
         mock_conn = Mock()
@@ -339,6 +356,7 @@ class TestErrorHandling:
     """Test error handling in repository pattern."""
 
     def test_sqlite_repository_database_error(self):
+        """Test SQLite repository raises exception when database connection fails."""
         mock_config = Mock()
         mock_builder = Mock()
         mock_pool = Mock()
@@ -353,6 +371,7 @@ class TestErrorHandling:
                 repo._execute_sql("SELECT * FROM test.")
 
     def test_azuresql_repository_database_error(self):
+        """Test Azure SQL repository raises exception when database connection fails."""
         mock_config = Mock()
         mock_builder = Mock()
         mock_pool = Mock()
