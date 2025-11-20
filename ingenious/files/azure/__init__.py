@@ -158,19 +158,36 @@ class azure_FileStorageRepository(IFileStorage):
     async def list_files(self, file_path: str) -> str:
         """List blobs in an Azure Blob container based on a path.
 
+        Returns only filenames (not full paths) for files directly in the specified path,
+        matching the behavior of the local filesystem implementation.
+
         :param file_path: Path within the storage container to list blobs from.
         """
-        blobs = []
         try:
             path = Path(self.fs_config.path) / Path(file_path)
             prefix = str(path).replace(
                 "\\", "/"
             )  # Ensure the path is in the correct format for Azure
+
+            # Ensure prefix ends with / for proper directory listing
+            if prefix and not prefix.endswith("/"):
+                prefix += "/"
+
             # List blobs in the container with the specified prefix
             container_client = self.blob_service_client.get_container_client(self.container_name)
-            blobs = [blob.name for blob in container_client.list_blobs(name_starts_with=prefix)]
-            # print(f"Blobs in container {self.container_name} with prefix {prefix}: {blobs}")
-            return "\n".join(blobs)
+
+            # Extract filenames from blob paths (only direct children, not subdirectories)
+            filenames = []
+            for blob in container_client.list_blobs(name_starts_with=prefix):
+                # Get the relative path after the prefix
+                relative_path = blob.name[len(prefix):]
+
+                # Only include files directly in this directory (no slashes = not in subdirectory)
+                if "/" not in relative_path and relative_path:
+                    filenames.append(relative_path)
+
+            # print(f"Files in container {self.container_name} with prefix {prefix}: {filenames}")
+            return "\n".join(filenames)
         except Exception as e:
             logger.error(
                 f"Failed to list blobs in container {self.container_name} with prefix {prefix}: {e}"
