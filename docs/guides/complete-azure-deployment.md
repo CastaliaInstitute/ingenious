@@ -1,12 +1,21 @@
 # Complete Azure Deployment Guide
 
-This guide provides step-by-step instructions for moving from local development to production Azure deployment with **Azure SQL** and **Azure Blob Storage**.
+This guide provides step-by-step instructions for moving from local development to production Azure deployment with **Cosmos DB** and **Azure Blob Storage**.
 
 ## Prerequisites
 
 - Azure CLI installed and authenticated
 - Azure OpenAI resource (required)
 - Azure subscription with appropriate permissions
+
+## Architecture Overview
+
+This guide uses the recommended Azure architecture for Ingenious:
+- **Azure Cosmos DB** (Serverless) - Chat history persistence with automatic scaling
+- **Azure Blob Storage** - Prompt template storage
+- **Azure OpenAI** - AI model hosting
+
+> **Note**: For relational database requirements, see the [Azure SQL Deployment Guide](azure-sql-deployment.md) as an alternative to Cosmos DB.
 
 ## Quick Deploy with Bicep (Optional)
 
@@ -17,14 +26,12 @@ If you want to recreate the core Azure resources from this guide in a single ste
 az deployment group create \
   --resource-group your-rg-name \
   --template-file infra/main.bicep \
-  --parameters sqlAdministratorPassword='YourStrongPassword!' \
-               clientIpAddress=$(curl -s ipinfo.io/ip)
+  --parameters clientIpAddress=$(curl -s ipinfo.io/ip)
 
 # Preview changes without applying
 az deployment group what-if \
   --resource-group your-rg-name \
-  --template-file infra/main.bicep \
-  --parameters sqlAdministratorPassword='YourStrongPassword!'
+  --template-file infra/main.bicep
 ```
 
 ## Minimal Azure Provisioning
@@ -37,53 +44,30 @@ az group show --name your-rg-name 2>/dev/null ||
 az group create --name your-rg-name --location eastus
 ```
 
-### 2. Provision Azure SQL (Basic - 5 DTUs)
+### 2. Provision Cosmos DB (Serverless - Free Tier)
 
 ```bash
-# Register the SQL resource provider if this subscription has never created SQL resources
-if [ "$(az provider show --namespace Microsoft.Sql --query "registrationState" -o tsv 2>/dev/null)" != "Registered" ]; then
-  az provider register --namespace Microsoft.Sql
-fi
-
-# Check if SQL Server exists first
-SQL_EXISTS=$(az sql server show --name your-sql-server --resource-group your-rg-name 2>/dev/null)
-if [ -z "$SQL_EXISTS" ]; then
-  # Create SQL Server only if it doesn't exist
-  SQL_PASSWORD=$(openssl rand -base64 32)
-  az sql server create \
-    --name your-sql-server \
+# Check if Cosmos DB account exists first
+COSMOS_EXISTS=$(az cosmosdb show --name your-cosmos-account --resource-group your-rg-name 2>/dev/null)
+if [ -z "$COSMOS_EXISTS" ]; then
+  # Create Cosmos DB account with serverless and free tier (cheapest option)
+  az cosmosdb create \
+    --name your-cosmos-account \
     --resource-group your-rg-name \
-    --location eastus2 \
-    --admin-user adminuser \
-    --admin-password "$SQL_PASSWORD"
-  echo "SQL Password: $SQL_PASSWORD"
+    --default-consistency-level Session \
+    --locations regionName=eastus2 failoverPriority=0 isZoneRedundant=false \
+    --kind GlobalDocumentDB \
+    --capabilities EnableServerless \
+    --enable-free-tier true
 else
-  echo "SQL Server already exists, skipping creation"
+  echo "Cosmos DB account already exists, skipping creation"
 fi
 
-# Create Database (Basic SKU - cheapest option)
-az sql db create \
+# Create SQL API database
+az cosmosdb sql database create \
+  --account-name your-cosmos-account \
   --resource-group your-rg-name \
-  --server your-sql-server \
-  --name ingenious-db \
-  --service-objective Basic
-
-# Allow Azure services access
-az sql server firewall-rule create \
-  --resource-group your-rg-name \
-  --server your-sql-server \
-  --name AllowAzureServices \
-  --start-ip-address 0.0.0.0 \
-  --end-ip-address 0.0.0.0
-
-# Allow your IP (replace with your actual IP)
-MY_IP=$(curl -s ipinfo.io/ip)
-az sql server firewall-rule create \
-  --resource-group your-rg-name \
-  --server your-sql-server \
-  --name AllowMyIP \
-  --start-ip-address "$MY_IP" \
-  --end-ip-address "$MY_IP"
+  --name ingenious-db
 ```
 
 ### 3. Provision Azure Blob Storage
@@ -129,10 +113,14 @@ INGENIOUS_FILE_STORAGE__REVISIONS__STORAGE_TYPE=local
 
 #### Azure Production Configuration (Target)
 ```bash
-# Azure SQL Database for Chat History
-INGENIOUS_CHAT_HISTORY__DATABASE_TYPE=azuresql
-INGENIOUS_CHAT_HISTORY__DATABASE_CONNECTION_STRING=Driver={ODBC Driver 18 for SQL Server};Server=tcp:your-sql-server.database.windows.net,1433;Database=ingenious-db;Uid=adminuser;Pwd=YOUR_PASSWORD;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;
-INGENIOUS_CHAT_HISTORY__DATABASE_NAME=ingenious-db
+# Cosmos DB for Chat History
+INGENIOUS_CHAT_HISTORY__DATABASE_TYPE=cosmos
+
+# Cosmos DB Configuration
+INGENIOUS_COSMOS_SERVICE__URI=https://your-cosmos-account.documents.azure.com:443/
+INGENIOUS_COSMOS_SERVICE__DATABASE_NAME=ingenious-db
+INGENIOUS_COSMOS_SERVICE__API_KEY=your-primary-master-key-here
+INGENIOUS_COSMOS_SERVICE__AUTHENTICATION_METHOD=token
 
 # Azure Blob Storage for prompt templates
 INGENIOUS_FILE_STORAGE__REVISIONS__ENABLE=true
@@ -150,10 +138,12 @@ INGENIOUS_CHAT_SERVICE__ENABLE_BUILTIN_WORKFLOWS=false
 
 | Variable | Local Value | Azure Value | Description |
 |----------|-------------|-------------|-------------|
-| `INGENIOUS_CHAT_HISTORY__DATABASE_TYPE` | `sqlite` | `azuresql` | Database backend type |
+| `INGENIOUS_CHAT_HISTORY__DATABASE_TYPE` | `sqlite` | `cosmos` | Database backend type |
 | `INGENIOUS_CHAT_HISTORY__DATABASE_PATH` | `./.tmp/chat_history.db` | (remove) | Local SQLite path |
-| `INGENIOUS_CHAT_HISTORY__DATABASE_CONNECTION_STRING` | (not needed) | `Driver={ODBC...}` | Azure SQL connection for chat history |
-| `INGENIOUS_CHAT_HISTORY__DATABASE_NAME` | (not needed) | `ingenious-db` | Azure SQL database name for chat history |
+| `INGENIOUS_COSMOS_SERVICE__URI` | (not needed) | `https://...documents.azure.com:443/` | Cosmos DB endpoint |
+| `INGENIOUS_COSMOS_SERVICE__DATABASE_NAME` | (not needed) | `ingenious-db` | Cosmos DB database name |
+| `INGENIOUS_COSMOS_SERVICE__API_KEY` | (not needed) | `your-key` | Cosmos DB primary master key |
+| `INGENIOUS_COSMOS_SERVICE__AUTHENTICATION_METHOD` | (not needed) | `token` | Authentication method |
 | `INGENIOUS_FILE_STORAGE__REVISIONS__ENABLE` | `false` | `true` | Enable cloud file storage |
 | `INGENIOUS_FILE_STORAGE__REVISIONS__STORAGE_TYPE` | `local` | `azure` | Storage backend type |
 | `INGENIOUS_FILE_STORAGE__REVISIONS__CONTAINER_NAME` | (not needed) | `prompts` | Blob container name |
@@ -165,24 +155,25 @@ INGENIOUS_CHAT_SERVICE__ENABLE_BUILTIN_WORKFLOWS=false
 ### Get Azure Resource Information
 
 ```bash
+# Get Cosmos DB keys
+az cosmosdb keys list \
+  --name your-cosmos-account \
+  --resource-group your-rg-name \
+  --type keys \
+  --query "primaryMasterKey" -o tsv
+
+# Get Cosmos DB endpoint URL
+az cosmosdb show \
+  --name your-cosmos-account \
+  --resource-group your-rg-name \
+  --query "documentEndpoint" \
+  --output tsv
+
 # Get storage account key
 az storage account keys list \
   --account-name yourblobstorage \
   --resource-group your-rg-name \
-  --output table
-
-# Verify SQL server admin username (should match connection string)
-az sql server show \
-  --name your-sql-server \
-  --resource-group your-rg-name \
-  --query 'administratorLogin' \
-  --output tsv
-
-# Get SQL server FQDN for connection string
-az sql server show \
-  --name your-sql-server \
-  --resource-group your-rg-name \
-  --query 'fullyQualifiedDomainName' \
+  --query "[0].value" \
   --output tsv
 ```
 
@@ -214,7 +205,7 @@ az storage blob upload-batch \
 
 ## Azure Integration Verification
 
-Once configuration is in place, validate that Azure SQL and Blob Storage are wired up end-to-end.
+Once configuration is in place, validate that Cosmos DB and Blob Storage are wired up end-to-end.
 
 ```bash
 # 1. Start the server with authentication enabled
@@ -231,28 +222,26 @@ curl -X POST http://localhost:8000/api/v1/chat \
   -H "Authorization: Basic $AUTH_HEADER" \
   -d @test_bike_insights.json
 
-# 4. Confirm chat history rows landed in Azure SQL
-uv run python <<PY
-import pyodbc
-conn = pyodbc.connect(
-    "Driver={ODBC Driver 18 for SQL Server};"
-    "Server=tcp:your-sql-server.database.windows.net,1433;"
-    "Database=ingenious-db;Uid=adminuser;Pwd=YOUR_PASSWORD;"
-    "Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;"
-)
-cursor = conn.cursor()
-cursor.execute("SELECT COUNT(*) FROM chat_history")
-print("chat_history rows:", cursor.fetchone()[0])
-cursor.close()
-conn.close()
-PY
-
-# 5. Verify prompts are being served from Azure Blob Storage
+# 4. Verify prompts are being served from Azure Blob Storage
 curl -H "Authorization: Basic $AUTH_HEADER" \
   http://localhost:8000/api/v1/prompts/list/quickstart-1
 ```
 
-If the workflow succeeds, the SQL row count increases, and the prompt listing returns template filenames, the Azure SQL and Blob integrations are working.
+If the workflow succeeds and the prompt listing returns template filenames, the Cosmos DB and Blob integrations are working.
+
+## Automatic Container Creation
+
+Ingenious automatically creates the following containers in Cosmos DB:
+
+- `chat_history` - Main chat messages
+- `chat_history_summary` - Memory summaries
+- `users` - User information
+- `threads` - Thread metadata
+- `steps` - Workflow steps
+- `elements` - UI elements
+- `feedbacks` - User feedback
+
+No manual container creation is required.
 
 ## Production Security Configuration
 
@@ -336,31 +325,66 @@ curl -X POST http://localhost:8000/api/v1/chat \
 ```
 
 Successful response indicates:
-- Azure SQL connection for chat history persistence
+- Cosmos DB connection for chat history persistence
 - Azure Blob prompt template loading
 - Multi-agent workflow execution
 
 ## Troubleshooting
 
-### SQL Connection Issues
-- Verify firewall rules allow your IP
-- Check connection string format
-- Ensure database exists
+### Cosmos DB Connection Issues
+- Verify Cosmos DB account is provisioned and accessible
+- Check API key is correct (primary master key)
+- Ensure endpoint URL format is correct: `https://account.documents.azure.com:443/`
+- Verify network connectivity to Azure
+- Confirm `AUTHENTICATION_METHOD=token` for API key auth
 
 ### Blob Storage Issues
 - Verify storage account key is correct
 - Ensure prompt templates uploaded to correct path: `templates/prompts/{revision_id}/`
 - Check container permissions
+- Verify connection string format
+
+### Container Creation Issues
+- Ensure Cosmos DB account has sufficient permissions
+- Verify free tier limits are not exceeded
+- Check that database exists before running workflows
+
+### Performance Considerations
+- Cosmos DB serverless mode: Pay only for what you use
+- Cosmos DB free tier includes 1000 RU/s and 25GB storage
+- Monitor RU consumption in Azure portal
+- For high-throughput workloads, consider provisioned throughput mode
 
 ### Rate Limiting
 Azure OpenAI free tier (S0) has token limits. Consider upgrading to Pay-as-you-go for production use.
 
 ## Cost Optimization
 
-- **Azure SQL Basic (5 DTUs)**: ~$5/month
+- **Cosmos DB Free Tier**: First 1000 RU/s and 25GB free per month
+- **Cosmos DB Serverless (beyond free tier)**: ~$0.25 per million RUs + $0.25/GB storage/month
 - **Storage Account (Standard_LRS)**: ~$0.02/GB/month
 - **Azure OpenAI**: Pay per token usage
 
-Total minimal cost: ~$5-10/month for light usage.
+**Total minimal cost: $0-5/month for light usage** (often free with Cosmos DB free tier)
+
+**Cost Comparison**:
+- Cosmos DB Serverless: $0-5/month (recommended)
+- Azure SQL Basic: ~$5/month (see [Azure SQL Deployment Guide](azure-sql-deployment.md))
 
 For detailed local setup, see the [Getting Started Guide](../getting-started.md).
+
+## Alternative Deployment Options
+
+### Using Azure SQL Instead of Cosmos DB
+
+If you require relational database features or have existing SQL infrastructure, see the [Azure SQL Deployment Guide](azure-sql-deployment.md) for instructions on using Azure SQL Database instead of Cosmos DB.
+
+Key differences:
+- **Cosmos DB** (recommended): Serverless pricing, automatic scaling, NoSQL flexibility, free tier available
+- **Azure SQL**: Fixed monthly cost (~$5), relational features, T-SQL support, better for complex queries
+
+## Next Steps
+
+- [Configure Azure AI Search](azure-ai-search-deployment.md) for knowledge base workflows
+- [Set up Authentication](azure-authentication.md) for production security
+- [Create Custom Workflows](custom-workflows.md) for your specific use cases
