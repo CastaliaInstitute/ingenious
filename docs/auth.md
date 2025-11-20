@@ -32,9 +32,21 @@ Use HTTP Basic Authentication with your configured username and password.
 curl http://localhost:<port>/api/v1/health
 
 # Chat endpoint with Basic Auth
+# Note: For reliable shell substitution, use a variable or hardcode base64
+AUTH_HEADER="Basic $(echo -n '<username>:<password>' | base64)"
 curl -X POST http://localhost:<port>/api/v1/chat \
   -H "Content-Type: application/json" \
-  -H "Authorization: Basic $(echo -n '<username>:<password>' | base64)" \
+  -H "Authorization: $AUTH_HEADER" \
+  -d '{
+    "user_prompt": "Hello",
+    "conversation_flow": "classification-agent",
+    "thread_id": "test123"
+  }'
+
+# Alternative: Use hardcoded base64 value with single quotes
+curl -X POST http://localhost:<port>/api/v1/chat \
+  -H "Content-Type: application/json" \
+  -H 'Authorization: Basic YWRtaW46cGFzc3dvcmQ=' \
   -d '{
     "user_prompt": "Hello",
     "conversation_flow": "classification-agent",

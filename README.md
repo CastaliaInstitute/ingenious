@@ -81,16 +81,21 @@ Set up ingenious locally first and then migrate to Azure services as shown in th
     **Required configuration (add to .env file)**:
     ```bash
     # Core AI Model Configuration (REQUIRED)
-    INGENIOUS_MODELS__0__MODEL=gpt-4o-mini
+    INGENIOUS_MODELS__0__MODEL=gpt-4o-mini  # Must match OpenAI model name exactly
     INGENIOUS_MODELS__0__API_TYPE=rest
     INGENIOUS_MODELS__0__API_VERSION=2024-12-01-preview
-    INGENIOUS_MODELS__0__DEPLOYMENT=gpt-4o-mini-deployment
+    INGENIOUS_MODELS__0__DEPLOYMENT=gpt-4o-mini-deployment  # Your custom deployment name from Azure
     INGENIOUS_MODELS__0__API_KEY=your-actual-api-key-here
     INGENIOUS_MODELS__0__BASE_URL=https://eastus.api.cognitive.microsoft.com/
 
-    # For Azure OpenAI: Use the Cognitive Services endpoint format (not OpenAI endpoint)
-    # CORRECT: https://eastus.api.cognitive.microsoft.com/
-    # INCORRECT: https://your-resource.openai.azure.com/
+    # For Azure OpenAI endpoints - both formats work:
+    # Regional endpoint: https://eastus.api.cognitive.microsoft.com/
+    # Resource-specific: https://your-resource.cognitiveservices.azure.com/
+
+    # IMPORTANT: DEPLOYMENT vs MODEL
+    # - DEPLOYMENT: Your custom name in Azure Portal (can be anything)
+    # - MODEL: Official OpenAI model name (must be exact: gpt-4o-mini, gpt-4, etc.)
+
     # For OpenAI (not Azure), use:
     # INGENIOUS_MODELS__0__BASE_URL=https://api.openai.com/v1
     # INGENIOUS_MODELS__0__API_VERSION=2024-02-01
@@ -153,10 +158,14 @@ Set up ingenious locally first and then migrate to Azure services as shown in th
 
 4. **Start the Server**:
     ```bash
-    # REQUIRED: Use KB_POLICY=local_only for knowledge-base-agent to work with ChromaDB
+    # CRITICAL: KB_POLICY environment variable is REQUIRED for knowledge-base-agent
+    # Without it, knowledge-base-agent may fail or return empty results
     KB_POLICY=local_only uv run ingen serve --port 8000
 
-    # Alternative: Start server without KB prefix (but knowledge-base-agent may not work)
+    # For Azure AI Search (production):
+    # KB_POLICY=azure_only uv run ingen serve --port 8000
+
+    # Alternative: Start server without KB prefix (other agents work, but NOT knowledge-base-agent)
     uv run ingen serve --port 8000
 
     # Note: Default port is 80, but port 8000 is recommended to avoid conflicts
