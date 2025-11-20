@@ -1,3 +1,9 @@
+"""Classification agent conversation pattern implementation.
+
+This module provides a conversation pattern for text classification tasks
+using AutoGen group chat with topic-specific agents.
+"""
+
 from typing import Any, Callable, Dict, List, Tuple
 
 import autogen
@@ -10,6 +16,24 @@ logger = get_logger(__name__)
 
 
 class ConversationPattern:
+    """Conversation pattern for multi-topic classification.
+
+    Orchestrates a group chat between a planner agent and multiple topic-specific
+    agents to classify and extract insights from user input.
+
+    Attributes:
+        default_llm_config: LLM configuration for agents.
+        topics: List of available topic categories.
+        memory_record_switch: Whether to record conversation in memory.
+        memory_path: Path to memory storage.
+        thread_memory: Existing conversation memory context.
+        topic_agents: List of topic-specific assistant agents.
+        termination_msg: Function to detect termination message.
+        context: Additional context for the conversation.
+        user_proxy: User proxy agent for initiating conversations.
+        planner: Planner agent for routing to topic agents.
+    """
+
     def __init__(
         self,
         default_llm_config: Dict[str, Any],
@@ -18,6 +42,15 @@ class ConversationPattern:
         memory_path: str,
         thread_memory: str,
     ) -> None:
+        """Initialize the classification conversation pattern.
+
+        Args:
+            default_llm_config: Configuration for the language model.
+            topics: List of topic names for classification.
+            memory_record_switch: Whether to enable memory recording.
+            memory_path: File system path for memory storage.
+            thread_memory: Previous conversation memory.
+        """
         self.default_llm_config = default_llm_config
         self.topics = topics
         self.memory_record_switch = memory_record_switch
@@ -72,15 +105,26 @@ class ConversationPattern:
         )
 
     def add_topic_agent(self, agent: autogen.AssistantAgent) -> None:
+        """Add a topic-specific agent to the conversation pattern.
+
+        Args:
+            agent: AutoGen assistant agent for handling a specific topic.
+        """
         self.topic_agents.append(agent)
 
     async def get_conversation_response(self, input_message: str) -> Tuple[str, str]:
-        """
-        This function is the main entry point for the conversation pattern. It takes a message as input and returns a
-        response. Make sure that you have added the necessary topic agents and agent topic chats before
-        calling this function.
-        """
+        """Get a conversation response by routing input to appropriate topic agents.
 
+        This is the main entry point for the conversation pattern. Ensure topic agents
+        have been added via add_topic_agent before calling this method.
+
+        Args:
+            input_message: User's input message to classify and process.
+
+        Returns:
+            Tuple of (response_summary, context) where response_summary is the agent's
+            final response and context is additional conversation context.
+        """
         graph_dict = {}
         graph_dict[self.user_proxy] = [self.planner]
         # graph_dict[self.planner] = [self.researcher]

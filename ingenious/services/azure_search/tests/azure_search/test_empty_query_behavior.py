@@ -1,6 +1,5 @@
 # ingenious/services/azure_search/tests/azure_search/test_empty_query_behavior.py
-"""
-Tests graceful handling of empty queries in the Azure Search service.
+"""Tests graceful handling of empty queries in the Azure Search service.
 
 This module verifies that the core components, specifically the AzureSearchRetriever
 and the AdvancedSearchPipeline, behave correctly and efficiently when given an
@@ -46,9 +45,7 @@ class _NoEmbedOpenAI:
 
     class _Embeddings:
         async def create(self, *args: Any, **kwargs: Any) -> NoReturn:
-            raise AssertionError(
-                "embeddings.create should not be called for empty query"
-            )
+            raise AssertionError("embeddings.create should not be called for empty query")
 
     def __init__(self) -> None:
         self.embeddings: _NoEmbedOpenAI._Embeddings = self._Embeddings()

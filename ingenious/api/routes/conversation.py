@@ -1,3 +1,8 @@
+"""Conversation history API routes.
+
+This module provides endpoints for retrieving conversation thread history.
+"""
+
 from typing import List
 
 from fastapi import APIRouter, Depends, HTTPException
@@ -19,10 +24,20 @@ router = APIRouter()
 )
 async def get_conversation(
     thread_id: str,
-    chat_history_repository: Annotated[
-        ChatHistoryRepository, Depends(get_chat_history_repository)
-    ],
+    chat_history_repository: Annotated[ChatHistoryRepository, Depends(get_chat_history_repository)],
 ) -> List[Message]:
+    """Retrieve conversation history for a given thread.
+
+    Args:
+        thread_id (str): Unique identifier for the conversation thread.
+        chat_history_repository (ChatHistoryRepository): Injected repository instance.
+
+    Returns:
+        List[Message]: List of messages in the conversation thread.
+
+    Raises:
+        HTTPException: 400 if retrieval fails.
+    """
     try:
         messages = await chat_history_repository.get_thread_messages(thread_id)
         return messages or []

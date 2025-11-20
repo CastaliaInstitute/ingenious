@@ -1,8 +1,7 @@
 from abc import ABC, abstractmethod
-from collections.abc import Mapping
-from typing import Any, AsyncIterator, Optional, Union
+from typing import Any, AsyncIterator
 
-from ingenious.config.main_settings import IngeniousSettings
+from ingenious.config.settings import IngeniousSettings
 from ingenious.core.error_handling import operation_context
 from ingenious.core.structured_logging import get_logger
 from ingenious.db.chat_history_repository import ChatHistoryRepository
@@ -10,7 +9,6 @@ from ingenious.errors import (
     ChatServiceError,
 )
 from ingenious.models.chat import ChatRequest, ChatResponse, ChatResponseChunk
-from ingenious.models.config import Config
 from ingenious.utils.imports import import_class_with_fallback
 
 logger = get_logger(__name__)
@@ -30,30 +28,6 @@ class IChatService(ABC):
         pass
 
 
-def _resolve_streaming_chunk_size(config: Any, default: int = 100) -> int:
-    """Best-effort lookup for streaming chunk size across config variants."""
-
-    def _extract(candidate: Any) -> Optional[int]:
-        size = getattr(candidate, "streaming_chunk_size", None)
-        return size if isinstance(size, int) and size > 0 else None
-
-    for attr in ("web_configuration", "web"):
-        candidate = getattr(config, attr, None)
-        if candidate is not None:
-            value = _extract(candidate)
-            if value is not None:
-                return value
-
-    if isinstance(config, Mapping):
-        for key in ("web_configuration", "web"):
-            if key in config and config[key] is not None:
-                value = _extract(config[key])
-                if value is not None:
-                    return value
-
-    return default
-
-
 class ChatService(IChatService):
     service_class: Any  # Will be set to instantiated service class
 
@@ -62,7 +36,7 @@ class ChatService(IChatService):
         chat_service_type: str,
         chat_history_repository: ChatHistoryRepository,
         conversation_flow: str,
-        config: Union[Config, IngeniousSettings],
+        config: IngeniousSettings,
         revision: str = "dfe19b62-07f1-4cb5-ae9a-561a253e4b04",
     ):
         class_name = f"{chat_service_type.lower()}_chat_service"
@@ -77,16 +51,12 @@ class ChatService(IChatService):
             conversation_flow=conversation_flow,
         ) as ctx:
             try:
-                module_name = (
-                    f"services.chat_services.{chat_service_type.lower()}.service"
-                )
+                module_name = f"services.chat_services.{chat_service_type.lower()}.service"
                 service_class = import_class_with_fallback(
                     module_name, class_name, expected_methods=["get_chat_response"]
                 )
 
-                ctx.add_metadata(
-                    module_name=module_name, class_name=class_name, successful=True
-                )
+                ctx.add_metadata(module_name=module_name, class_name=class_name, successful=True)
 
                 logger.info(
                     "Chat service class loaded successfully",
@@ -155,9 +125,7 @@ class ChatService(IChatService):
 
         # Check if the service class supports streaming
         if hasattr(self.service_class, "get_streaming_chat_response"):
-            async for chunk in self.service_class.get_streaming_chat_response(
-                chat_request
-            ):
+            async for chunk in self.service_class.get_streaming_chat_response(chat_request):
                 yield chunk
         else:
             # Fallback: convert regular response to streaming chunks
@@ -169,7 +137,7 @@ class ChatService(IChatService):
 
             # Convert response to chunks
             if response.agent_response:
-                chunk_size = _resolve_streaming_chunk_size(self.config)
+                chunk_size = getattr(self.config, "web", {}).get("streaming_chunk_size", 100)
                 content = response.agent_response
 
                 for i in range(0, len(content), chunk_size):

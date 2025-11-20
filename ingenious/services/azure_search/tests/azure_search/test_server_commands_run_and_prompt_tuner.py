@@ -67,12 +67,8 @@ def test_serve_uses_WEB_PORT_env_when_set(monkeypatch: MonkeyPatch) -> None:
     app: typer.Typer = make_app_and_register()
 
     with (
-        patch(
-            "ingenious.cli.server_commands.get_config", return_value=stub_config()
-        ) as get_cfg,
-        patch(
-            "ingenious.cli.server_commands.make_app", return_value=MagicMock()
-        ) as make_app_mock,
+        patch("ingenious.cli.server_commands.get_config", return_value=stub_config()) as get_cfg,
+        patch("ingenious.cli.server_commands.make_app", return_value=MagicMock()) as make_app_mock,
         patch("ingenious.cli.server_commands.uvicorn.run") as uv_run,
     ):
         result: Result = runner.invoke(app, ["serve"])
@@ -97,17 +93,11 @@ def test_serve_cli_port_overrides_env(monkeypatch: MonkeyPatch) -> None:
     app: typer.Typer = make_app_and_register()
 
     with (
-        patch(
-            "ingenious.cli.server_commands.get_config", return_value=stub_config()
-        ) as get_cfg,
-        patch(
-            "ingenious.cli.server_commands.make_app", return_value=MagicMock()
-        ) as make_app_mock,
+        patch("ingenious.cli.server_commands.get_config", return_value=stub_config()) as get_cfg,
+        patch("ingenious.cli.server_commands.make_app", return_value=MagicMock()) as make_app_mock,
         patch("ingenious.cli.server_commands.uvicorn.run") as uv_run,
     ):
-        result: Result = runner.invoke(
-            app, ["serve", "--port", "9999", "--host", "127.0.0.1"]
-        )
+        result: Result = runner.invoke(app, ["serve", "--port", "9999", "--host", "127.0.0.1"])
         assert result.exit_code == 0
 
         make_app_mock.assert_called_once_with(get_cfg.return_value)
@@ -117,18 +107,13 @@ def test_serve_cli_port_overrides_env(monkeypatch: MonkeyPatch) -> None:
         assert kwargs["port"] == 9999
 
 
-def test_run_rest_api_server_loads_env_files(
-    monkeypatch: MonkeyPatch, tmp_path: Path
-) -> None:
+def test_run_rest_api_server_loads_env_files(monkeypatch: MonkeyPatch, tmp_path: Path) -> None:
     """Ensure 'run-rest-api-server' triggers dotenv loading with and without --env-file."""
-
     monkeypatch.chdir(tmp_path)
     app: typer.Typer = make_app_and_register()
 
     fake_logger: MagicMock = MagicMock()
-    monkeypatch.setattr(
-        "ingenious.cli.server_commands.logger", fake_logger, raising=False
-    )
+    monkeypatch.setattr("ingenious.cli.server_commands.logger", fake_logger, raising=False)
 
     monkeypatch.setattr(
         "ingenious.cli.server_commands.CliFunctions.PureLibIncludeDirExists",
@@ -137,16 +122,12 @@ def test_run_rest_api_server_loads_env_files(
     )
 
     env_file = tmp_path / ".env.runtime"
-    env_file.write_text("INGENIOUS_MODELS__0__MODEL=gpt-4o-mini\n")
+    env_file.write_text("INGENIOUS_MODELS__0__MODEL=gpt-5-mini\n")
 
     with (
         patch("ingenious.cli.server_commands.load_dotenv") as mock_load_dotenv,
-        patch(
-            "ingenious.cli.server_commands.get_config", return_value=stub_config()
-        ) as get_cfg,
-        patch(
-            "ingenious.cli.server_commands.make_app", return_value=MagicMock()
-        ) as make_app_mock,
+        patch("ingenious.cli.server_commands.get_config", return_value=stub_config()) as get_cfg,
+        patch("ingenious.cli.server_commands.make_app", return_value=MagicMock()) as make_app_mock,
         patch("ingenious.cli.server_commands.uvicorn.run") as uv_run,
     ):
         # A) No args → default dotenv discovery (no positional args)
@@ -162,9 +143,7 @@ def test_run_rest_api_server_loads_env_files(
         # B) Provide explicit env file → should load resolved path
         res2: Result = runner.invoke(app, ["run-rest-api-server", str(env_file)])
         assert res2.exit_code == 0
-        called_paths = [
-            str(call.args[0]) for call in mock_load_dotenv.call_args_list if call.args
-        ]
+        called_paths = [str(call.args[0]) for call in mock_load_dotenv.call_args_list if call.args]
         assert str(env_file.resolve()) in called_paths
 
         # App seam still used

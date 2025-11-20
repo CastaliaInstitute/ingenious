@@ -1,9 +1,29 @@
+"""Chat request and response models for API interactions."""
+
 from typing import Any, Dict, Optional
 
 from pydantic import BaseModel, Field
 
 
 class IChatRequest(BaseModel):
+    """Interface for chat request models.
+
+    Attributes:
+        thread_id: Optional conversation thread identifier.
+        user_prompt: The user's input prompt.
+        event_type: Optional event type classification.
+        user_id: Optional user identifier.
+        user_name: Optional user name.
+        topic: Optional conversation topic.
+        memory_record: Whether to record this interaction in memory.
+        conversation_flow: Optional conversation flow identifier.
+        thread_chat_history: Optional chat history for the thread.
+        thread_memory: Optional thread memory summary.
+        stream: Whether to stream the response.
+        kb_top_k: Number of knowledge base results to retrieve.
+        parameters: Optional additional parameters.
+    """
+
     thread_id: Optional[str] = None
     user_prompt: str
     event_type: Optional[str] = None
@@ -20,6 +40,20 @@ class IChatRequest(BaseModel):
 
 
 class IChatResponse(BaseModel):
+    """Interface for chat response models.
+
+    Attributes:
+        thread_id: The conversation thread identifier.
+        message_id: The message identifier.
+        agent_response: The agent's response text.
+        followup_questions: Optional suggested followup questions.
+        token_count: Number of tokens used in the response.
+        max_token_count: Maximum token count allowed.
+        topic: Optional conversation topic.
+        memory_summary: Optional memory summary.
+        event_type: Optional event type.
+    """
+
     thread_id: Optional[str]
     message_id: Optional[str]
     agent_response: Optional[str]
@@ -32,36 +66,77 @@ class IChatResponse(BaseModel):
 
 
 class ChatRequest(IChatRequest):
+    """Concrete chat request model."""
+
     pass
 
 
 class ChatResponse(IChatResponse):
+    """Concrete chat response model."""
+
     pass
 
 
 class Action(BaseModel):
+    """Action model for suggested user actions.
+
+    Attributes:
+        name: The action name.
+        description: Optional action description.
+    """
+
     name: str
     description: Optional[str] = None
 
 
 class KnowledgeBaseLink(BaseModel):
+    """Knowledge base link reference.
+
+    Attributes:
+        title: The link title.
+        url: The link URL.
+        description: Optional link description.
+    """
+
     title: str
     url: str
     description: Optional[str] = None
 
 
 class Product(BaseModel):
+    """Product information model.
+
+    Attributes:
+        name: The product name.
+        description: Optional product description.
+        price: Optional product price.
+    """
+
     name: str
     description: Optional[str] = None
     price: Optional[float] = None
 
 
 class ChatResponseChunk(BaseModel):
+    """Chunk of a streaming chat response.
+
+    Attributes:
+        thread_id: The conversation thread identifier.
+        message_id: The message identifier.
+        chunk_type: Type of chunk (content, token_count, memory_summary, followup_questions, final).
+        content: Optional content text.
+        token_count: Optional token count.
+        max_token_count: Optional maximum token count.
+        topic: Optional conversation topic.
+        memory_summary: Optional memory summary.
+        followup_questions: Optional suggested followup questions.
+        event_type: Optional event type.
+        is_final: Whether this is the final chunk.
+    """
+
     thread_id: Optional[str]
     message_id: Optional[str]
-    chunk_type: (
-        str  # "content", "token_count", "memory_summary", "followup_questions", "final"
-    )
+    chunk_type: str  # "content", "token_count", "memory_summary", "followup_questions", "final"
     content: Optional[str] = None
     token_count: Optional[int] = None
     max_token_count: Optional[int] = None
@@ -73,7 +148,13 @@ class ChatResponseChunk(BaseModel):
 
 
 class StreamingChatResponse(BaseModel):
-    """Response model for streaming chat endpoints"""
+    """Response model for streaming chat endpoints.
+
+    Attributes:
+        event: Event type (data, error, done).
+        data: Optional chat response chunk data.
+        error: Optional error message.
+    """
 
     event: str  # "data", "error", "done"
     data: Optional[ChatResponseChunk] = None

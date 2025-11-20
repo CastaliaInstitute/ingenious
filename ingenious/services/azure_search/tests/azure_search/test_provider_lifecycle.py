@@ -27,6 +27,11 @@ class _DummyPipeline:
 async def test_provider_close_calls_all_underlying_clients(
     config: SearchConfig,
 ) -> None:
+    """Test that provider close method closes all underlying pipeline resources.
+
+    Verifies that calling provider.close() properly invokes the pipeline's
+    close method to release all underlying Azure SDK clients.
+    """
     p = _DummyPipeline()
     provider = AzureSearchProvider(settings_or_config=config, pipeline=p)
     await provider.close()

@@ -1,5 +1,4 @@
-"""
-Authentication method enumeration for Azure services.
+"""Authentication method enumeration for Azure services.
 
 This enum is used across Ingenious to choose how SDK clients
 authenticate to Azure services (Azure OpenAI, Azure AI Search,
@@ -14,7 +13,8 @@ Supported values (case-insensitive):
 
 - TOKEN ("token"):
     Uses a raw key/token string for services that support it.
-        Examples:
+
+Examples:
             - Azure OpenAI API key (env: INGENIOUS_MODELS__N__API_KEY)
             - Azure AI Search admin/query key
                 (env: INGENIOUS_AZURE_SEARCH_SERVICES__N__KEY)
@@ -44,7 +44,14 @@ from typing import Any, Optional
 
 
 class AuthenticationMethod(str, Enum):
-    """Authentication methods for Azure services."""
+    """Authentication methods for Azure services.
+
+    Attributes:
+        MSI (str): Managed Identity authentication.
+        CLIENT_ID_AND_SECRET (str): Service principal with client secret.
+        DEFAULT_CREDENTIAL (str): DefaultAzureCredential chain.
+        TOKEN (str): Direct key/token authentication.
+    """
 
     MSI = "msi"
     CLIENT_ID_AND_SECRET = "client_id_and_secret"
@@ -53,7 +60,14 @@ class AuthenticationMethod(str, Enum):
 
     @classmethod
     def _missing_(cls, value: Any) -> Optional["AuthenticationMethod"]:
-        """Handle case-insensitive enum lookups."""
+        """Handle case-insensitive enum lookups.
+
+        Args:
+            value (Any): Value to lookup.
+
+        Returns:
+            Optional[AuthenticationMethod]: Matched enum member or None.
+        """
         if isinstance(value, str):
             # Try to find a match with case-insensitive comparison
             for member in cls:

@@ -187,8 +187,7 @@ def _run_search_pipeline(config: SearchConfig, query: str, verbose: bool) -> Non
             # Execute the pipeline
             result: dict[str, Any]
             status_text = (
-                "[bold green]Executing Advanced Search Pipeline "
-                "(L1 -> DAT -> L2 -> RAG)..."
+                "[bold green]Executing Advanced Search Pipeline (L1 -> DAT -> L2 -> RAG)..."
             )
             with console.status(status_text, spinner=STATUS_SPINNER_NAME):
                 result = await pipeline.get_answer(query)
@@ -212,14 +211,10 @@ def _run_search_pipeline(config: SearchConfig, query: str, verbose: bool) -> Non
                 content_field = config.content_field
                 content_text: str = source.get(content_field, "")
                 content_sample = (
-                    content_text[:CONTENT_SAMPLE_PREVIEW_LEN] + "..."
-                    if content_text
-                    else ""
+                    content_text[:CONTENT_SAMPLE_PREVIEW_LEN] + "..." if content_text else ""
                 )
 
-                score_display = (
-                    f"{score:.4f}" if isinstance(score, float) else str(score)
-                )
+                score_display = f"{score:.4f}" if isinstance(score, float) else str(score)
 
                 console.print(
                     Panel(
@@ -250,10 +245,7 @@ def _run_search_pipeline(config: SearchConfig, query: str, verbose: bool) -> Non
                 console.print_exception(show_locals=True)
             console.print(
                 Panel(
-                    (
-                        f"Pipeline execution failed: {e}\n"
-                        "[dim]Run with --verbose for details.[/dim]"
-                    ),
+                    (f"Pipeline execution failed: {e}\n[dim]Run with --verbose for details.[/dim]"),
                     title="[bold red]Error[/bold red]",
                     border_style="red",
                 )

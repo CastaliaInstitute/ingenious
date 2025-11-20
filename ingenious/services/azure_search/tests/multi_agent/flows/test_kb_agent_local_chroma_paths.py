@@ -47,7 +47,7 @@ async def test_chromadb_import_error_returns_install_hint(
     monkeypatch.setattr(builtins, "__import__", bad_import)
 
     flow: kb.ConversationFlow = kb.ConversationFlow.__new__(kb.ConversationFlow)
-    flow._config = SimpleNamespace(models=[SimpleNamespace(model="gpt-4o")])
+    flow._config = SimpleNamespace(models=[SimpleNamespace(model="gpt-5")])
     flow._chat_service: Any = None
     flow._memory_path = str(tmp_path)
     flow._kb_path = str(kb_dir)
@@ -81,9 +81,7 @@ async def test_local_ingest_chunking_and_ids_and_query_success(
             added_payload["documents"] = documents
             added_payload["ids"] = ids
 
-        def query(
-            self, query_texts: list[str], n_results: int
-        ) -> dict[str, list[list[str]]]:
+        def query(self, query_texts: list[str], n_results: int) -> dict[str, list[list[str]]]:
             """Return a canned query result."""
             return {"documents": [["Match1", "Match2"]]}
 
@@ -106,7 +104,7 @@ async def test_local_ingest_chunking_and_ids_and_query_success(
     monkeypatch.setitem(sys.modules, "chromadb", chroma)
 
     flow: kb.ConversationFlow = kb.ConversationFlow.__new__(kb.ConversationFlow)
-    flow._config = SimpleNamespace(models=[SimpleNamespace(model="gpt-4o")])
+    flow._config = SimpleNamespace(models=[SimpleNamespace(model="gpt-5")])
     flow._chat_service: Any = None
     flow._memory_path = str(tmp_path)
     flow._kb_path = str(kb_path)
@@ -170,7 +168,7 @@ async def test_local_query_failure_returns_search_error(
     monkeypatch.setitem(sys.modules, "chromadb", chroma)
 
     flow: kb.ConversationFlow = kb.ConversationFlow.__new__(kb.ConversationFlow)
-    flow._config = SimpleNamespace(models=[SimpleNamespace(model="gpt-4o")])
+    flow._config = SimpleNamespace(models=[SimpleNamespace(model="gpt-5")])
     flow._chat_service: Any = None
     flow._memory_path = str(tmp_path)
     flow._kb_path = str(kb_path)

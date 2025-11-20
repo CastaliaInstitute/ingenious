@@ -1,7 +1,11 @@
-# N.B.
-# This will add to the package’s __path__ all subdirectories of directories on sys.path named after the package which
-# combines both modules into a single namespace (dbt.adapters)
-# The matching statement is in plugins/postgres/dbt/__init__.py
+"""External service integrations for Ingenious.
+
+This package provides integrations with external services including OpenAI
+and Azure services, with support for various authentication methods.
+
+Note:
+    This module uses namespace packages to allow extension via plugins.
+"""
 
 from pkgutil import extend_path
 

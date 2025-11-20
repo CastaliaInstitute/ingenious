@@ -1,5 +1,5 @@
-"""
-Comprehensive tests for the document processing error handling system
+"""Comprehensive tests for the document processing error handling system.
+
 ===================================================================
 
 This module tests all aspects of the new error handling framework including:
@@ -8,7 +8,7 @@ This module tests all aspects of the new error handling framework including:
 - Retry decorators with exponential backoff
 - Recovery strategies
 - Error reporting utilities
-- Integration with logging
+- Integration with logging.
 """
 
 import json
@@ -187,9 +187,7 @@ class TestSpecificErrorTypes:
 
     def test_extraction_error_recovery_suggestions(self):
         """Test extraction error recovery suggestions."""
-        error = ExtractionError(
-            "File not found", error_code=ErrorCode.DOCUMENT_NOT_FOUND
-        )
+        error = ExtractionError("File not found", error_code=ErrorCode.DOCUMENT_NOT_FOUND)
 
         assert "Verify the file path exists" in error.recovery_suggestion
 
@@ -302,9 +300,7 @@ class TestRetryDecorator:
         """Test retry with custom exception types."""
         call_count = 0
 
-        @retry_with_backoff(
-            max_retries=2, base_delay=0.01, exceptions=(ValueError, RuntimeError)
-        )
+        @retry_with_backoff(max_retries=2, base_delay=0.01, exceptions=(ValueError, RuntimeError))
         def custom_failing():
             nonlocal call_count
             call_count += 1
@@ -493,9 +489,7 @@ class TestConvenienceFunctions:
         )
 
         assert isinstance(error, NetworkError)
-        assert (
-            error.message == "Network download failed for https://example.com/doc.pdf"
-        )
+        assert error.message == "Network download failed for https://example.com/doc.pdf"
         assert error.context.operation == "download"
         assert error.context.component == "document_processing.network"
         assert error.context.url == "https://example.com/doc.pdf"
@@ -579,9 +573,7 @@ class TestIntegrationScenarios:
         # Simulate various errors during processing
         errors = [
             ExtractionError("Doc 1 failed", context={"file_path": "/doc1.pdf"}),
-            NetworkError(
-                "Download failed", context={"url": "https://example.com/doc2.pdf"}
-            ),
+            NetworkError("Download failed", context={"url": "https://example.com/doc2.pdf"}),
             ExtractionError("Doc 3 failed", context={"file_path": "/doc3.pdf"}),
             ValidationError("Schema error"),
         ]

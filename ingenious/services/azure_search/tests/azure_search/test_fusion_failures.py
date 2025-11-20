@@ -30,9 +30,7 @@ from ingenious.services.azure_search.components.fusion import DynamicRankFuser
         # This is the correct signature: APIError(message, response, body=...)
         APIError(
             "LLM Failed",
-            httpx.Response(
-                status_code=500, request=MagicMock()
-            ),  # 2nd POSITIONAL argument
+            httpx.Response(status_code=500, request=MagicMock()),  # 2nd POSITIONAL argument
             body=None,  # KEYWORD argument
         ),
         asyncio.TimeoutError("LLM Timeout"),
@@ -54,9 +52,7 @@ async def test_dat_fusion_llm_failure_falls_back_to_alpha_0_5(
     # Configure the mock LLM client to raise the specified exception
     mock_async_openai_client.chat.completions.create.side_effect = exception_to_raise
 
-    fuser = DynamicRankFuser(
-        config=mock_search_config, llm_client=mock_async_openai_client
-    )
+    fuser = DynamicRankFuser(config=mock_search_config, llm_client=mock_async_openai_client)
 
     # Prepare dummy inputs
     query: str = "test query"

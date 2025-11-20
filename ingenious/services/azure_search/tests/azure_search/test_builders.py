@@ -60,7 +60,7 @@ def test_build_search_config_maps_and_validates(monkeypatch: MonkeyPatch) -> Non
             api_version="2024-02-01",
         ),
         ModelSettings(
-            model="gpt-4o",
+            model="gpt-5",
             deployment="chat",
             api_key="K2",
             base_url="https://oai",
@@ -93,9 +93,7 @@ def test_build_search_config_errors() -> None:
     or if critical fields like endpoint, key, or index name are empty.
     """
     models: list[ModelSettings] = [
-        ModelSettings(
-            model="gpt-4o", deployment="chat", api_key="k", base_url="https://o"
-        )
+        ModelSettings(model="gpt-5", deployment="chat", api_key="k", base_url="https://o")
     ]
     with pytest.raises(ConfigError):
         build_search_config_from_settings(_settings(models, None))
@@ -104,9 +102,7 @@ def test_build_search_config_errors() -> None:
     with pytest.raises(ConfigError):
         build_search_config_from_settings(_settings(models, azure))
 
-    azure2 = AzureSearchSettings(
-        service="svc", endpoint="https://s", key="k", index_name=""
-    )
+    azure2 = AzureSearchSettings(service="svc", endpoint="https://s", key="k", index_name="")
     with pytest.raises(ConfigError):
         build_search_config_from_settings(_settings(models, azure2))
 
@@ -134,14 +130,8 @@ def test_pick_models_selection_and_require_deployments(
     with pytest.raises(ConfigError):
         _pick_models(
             _settings(
-                [
-                    ModelSettings(
-                        model="gpt-4o", deployment="", api_key="k", base_url="https://o"
-                    )
-                ],
-                AzureSearchSettings(
-                    service="s", endpoint="https://e", key="k", index_name="i"
-                ),
+                [ModelSettings(model="gpt-5", deployment="", api_key="k", base_url="https://o")],
+                AzureSearchSettings(service="s", endpoint="https://e", key="k", index_name="i"),
             )
         )
     # Single model with a deployment name should be selected for both roles,
@@ -149,9 +139,7 @@ def test_pick_models_selection_and_require_deployments(
     _ = _pick_models(
         _settings(
             models,
-            AzureSearchSettings(
-                service="s", endpoint="https://e", key="k", index_name="i"
-            ),
+            AzureSearchSettings(service="s", endpoint="https://e", key="k", index_name="i"),
         )
     )
     assert any("Single ModelSettings provided" in rec.message for rec in caplog.records)

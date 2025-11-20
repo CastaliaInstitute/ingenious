@@ -1,5 +1,4 @@
-"""
-Utility functions and classes for the CLI.
+"""Utility functions and classes for the CLI.
 
 This module contains helper functions and classes used by various CLI commands,
 providing common operations, file handling, validation, and formatting utilities.
@@ -30,15 +29,21 @@ class CliFunctions:
         """Action callable for running test batches."""
 
         async def __call__(self, progress: Any, task_id: Any, **kwargs: Any) -> None:
+            """Execute the test batch run.
+
+            Args:
+                progress: Progress tracker instance
+                task_id: Task identifier
+                **kwargs: Additional keyword arguments
+
+            Raises:
+                ValueError: If test batch run fails
+            """
             module_name = "tests.run_tests"
             class_name = "RunBatches"
             try:
-                repository_class_import = import_class_with_fallback(
-                    module_name, class_name
-                )
-                repository_class = repository_class_import(
-                    progress=progress, task_id=task_id
-                )
+                repository_class_import = import_class_with_fallback(module_name, class_name)
+                repository_class = repository_class_import(progress=progress, task_id=task_id)
 
                 await repository_class.run()
 
@@ -47,13 +52,22 @@ class CliFunctions:
 
     @staticmethod
     def PureLibIncludeDirExists() -> bool:
-        """Check if the ingenious package exists in site-packages."""
+        """Check if the ingenious package exists in site-packages.
+
+        Returns:
+            True if ingenious package exists in site-packages, False otherwise
+        """
         ChkPath = Path(get_paths()["purelib"]) / Path("ingenious/")
         return os.path.exists(ChkPath)
 
     @staticmethod
     def copy_ingenious_folder(src: Union[str, Path], dst: Union[str, Path]) -> None:
-        """Copy the ingenious folder from source to destination."""
+        """Copy the ingenious folder from source to destination.
+
+        Args:
+            src: Source directory path
+            dst: Destination directory path
+        """
         if not os.path.exists(dst):
             os.makedirs(dst)  # Create the destination directory if it doesn't exist
 
@@ -66,9 +80,9 @@ class CliFunctions:
                 CliFunctions.copy_ingenious_folder(src_path, dst_path)
             else:
                 # Copy files
-                if not os.path.exists(dst_path) or os.path.getmtime(
-                    src_path
-                ) > os.path.getmtime(dst_path):
+                if not os.path.exists(dst_path) or os.path.getmtime(src_path) > os.path.getmtime(
+                    dst_path
+                ):
                     shutil.copy2(src_path, dst_path)  # Copy file with metadata
 
 
@@ -76,11 +90,8 @@ class FileOperations:
     """File and directory operations utilities."""
 
     @staticmethod
-    def ensure_directory(
-        path: Union[str, Path], description: str = "Directory"
-    ) -> Path:
-        """
-        Ensure a directory exists, creating it if necessary.
+    def ensure_directory(path: Union[str, Path], description: str = "Directory") -> Path:
+        """Ensure a directory exists, creating it if necessary.
 
         Args:
             path: Directory path
@@ -97,16 +108,13 @@ class FileOperations:
             path_obj.mkdir(parents=True, exist_ok=True)
             return path_obj
         except OSError as e:
-            raise OSError(
-                f"Failed to create {description.lower()} '{path}': {e}"
-            ) from e
+            raise OSError(f"Failed to create {description.lower()} '{path}': {e}") from e
 
     @staticmethod
     def copy_tree_safe(
         src: Union[str, Path], dst: Union[str, Path], overwrite: bool = False
     ) -> bool:
-        """
-        Safely copy a directory tree.
+        """Safely copy a directory tree.
 
         Args:
             src: Source directory
@@ -143,8 +151,7 @@ class ValidationUtils:
 
     @staticmethod
     def validate_port(port: Union[str, int]) -> tuple[bool, Optional[str]]:
-        """
-        Validate that a port number is valid.
+        """Validate that a port number is valid.
 
         Args:
             port: Port number to validate
@@ -163,8 +170,7 @@ class ValidationUtils:
 
     @staticmethod
     def validate_url(url: str) -> tuple[bool, Optional[str]]:
-        """
-        Validate that a URL is properly formatted.
+        """Validate that a URL is properly formatted.
 
         Args:
             url: URL to validate
@@ -189,8 +195,7 @@ class OutputFormatters:
 
     @staticmethod
     def create_status_table(items: Dict[str, Any], title: str = "Status") -> Table:
-        """
-        Create a formatted table for status information.
+        """Create a formatted table for status information.
 
         Args:
             items: Dictionary of status items
@@ -209,9 +214,7 @@ class OutputFormatters:
                 status = value.get("status", "Unknown")
                 details = value.get("details", "")
                 status_style = OutputFormatters._get_status_style(status)
-                table.add_row(
-                    key, f"[{status_style}]{status}[/{status_style}]", details
-                )
+                table.add_row(key, f"[{status_style}]{status}[/{status_style}]", details)
             else:
                 table.add_row(key, str(value), "")
 
@@ -219,7 +222,14 @@ class OutputFormatters:
 
     @staticmethod
     def _get_status_style(status: str) -> str:
-        """Get Rich style for status values."""
+        """Get Rich style for status values.
+
+        Args:
+            status: Status string to determine style for
+
+        Returns:
+            Rich style color name (green, red, yellow, or blue)
+        """
         status_lower = status.lower()
         if status_lower in ["ok", "success", "passed", "valid"]:
             return "green"
@@ -232,8 +242,7 @@ class OutputFormatters:
 
     @staticmethod
     def create_info_panel(content: str, title: str, style: str = "blue") -> Panel:
-        """
-        Create an informational panel.
+        """Create an informational panel.
 
         Args:
             content: Panel content

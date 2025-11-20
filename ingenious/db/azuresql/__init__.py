@@ -1,3 +1,9 @@
+"""Azure SQL database adapter for Ingenious chat history.
+
+Provides repository implementation for storing chat history, threads,
+messages, and metadata in Azure SQL Database using pyodbc.
+"""
+
 import json
 from typing import Any, Dict, List, Optional
 
@@ -23,16 +29,25 @@ logger = get_logger(__name__)
 
 
 class azuresql_ChatHistoryRepository(BaseSQLRepository):
+    """Azure SQL implementation of chat history repository.
+
+    Stores chat history, threads, messages, and metadata in Azure SQL Database
+    using pyodbc with MERGE operations for upsert functionality.
+    """
+
     def __init__(self, config: IngeniousSettings) -> None:
+        """Initialize Azure SQL chat history repository with connection configuration.
+
+        Args:
+            config: Ingenious settings containing Azure SQL connection configuration.
+
+        Raises:
+            ValueError: If neither azure_sql_services nor chat_history connection string is configured.
+        """
         # Try to get connection string from azure_sql_services first, then fallback to chat_history
         self.connection_string = None
-        if (
-            config.azure_sql_services
-            and config.azure_sql_services.database_connection_string
-        ):
-            self.connection_string = (
-                config.azure_sql_services.database_connection_string
-            )
+        if config.azure_sql_services and config.azure_sql_services.database_connection_string:
+            self.connection_string = config.azure_sql_services.database_connection_string
         elif config.chat_history.database_connection_string:
             self.connection_string = config.chat_history.database_connection_string
 
@@ -144,11 +159,25 @@ class azuresql_ChatHistoryRepository(BaseSQLRepository):
     async def get_threads_for_user(
         self, identifier: str, thread_id: Optional[str]
     ) -> Optional[List[IChatHistoryRepository.ThreadDict]]:
+        """Retrieve threads associated with a user identifier.
+
+        Args:
+            identifier: User identifier to query threads for.
+            thread_id: Optional thread ID to filter results.
+
+        Returns:
+            List of thread dictionaries for the user, or empty list. Returns None if user not found.
+        """
         # This is a simplified implementation
         # In a full implementation, you'd join with threads table and return proper thread data
         return []
 
     async def add_step(self, step_dict: IChatHistoryRepository.StepDict) -> None:
+        """Add a step record to the Azure SQL steps table.
+
+        Args:
+            step_dict: Dictionary containing step data including id, type, threadId, metadata, and generation fields.
+        """
         logger.info(
             "Creating step in database",
             step_id=step_dict.get("id"),
@@ -161,9 +190,7 @@ class azuresql_ChatHistoryRepository(BaseSQLRepository):
         step_dict["disableFeedback"] = step_dict.get("disableFeedback", False)
 
         step_dict["showInput"] = (
-            str(step_dict.get("showInput", "")).lower()
-            if "showInput" in step_dict
-            else None
+            str(step_dict.get("showInput", "")).lower() if "showInput" in step_dict else None
         )
         parameters = {
             key: value
@@ -180,9 +207,7 @@ class azuresql_ChatHistoryRepository(BaseSQLRepository):
             INSERT INTO steps ({columns})
             VALUES ({values});
         """
-        self.execute_sql(
-            sql=query, params=list(parameters.values()), expect_results=False
-        )
+        self.execute_sql(sql=query, params=list(parameters.values()), expect_results=False)
 
     async def update_thread(
         self,
@@ -192,6 +217,18 @@ class azuresql_ChatHistoryRepository(BaseSQLRepository):
         metadata: Optional[Dict[str, object]] = None,
         tags: Optional[List[str]] = None,
     ) -> str:
+        """Update an existing thread or create a new one using MERGE (upsert) operation.
+
+        Args:
+            thread_id: Unique identifier for the thread.
+            name: Optional name for the thread.
+            user_id: Optional user ID to associate with the thread.
+            metadata: Optional metadata dictionary to store with the thread.
+            tags: Optional list of tags to categorize the thread.
+
+        Returns:
+            Empty string on successful update or insert.
+        """
         logger.info(
             "Updating thread",
             thread_id=thread_id,
@@ -244,15 +281,18 @@ class azuresql_ChatHistoryRepository(BaseSQLRepository):
         """
 
         # Prepare parameters for MERGE statement
-        merge_params = (
-            [thread_id] + list(parameters.values())[1:] + list(parameters.values())
-        )
+        merge_params = [thread_id] + list(parameters.values())[1:] + list(parameters.values())
 
         self.execute_sql(sql=query, params=merge_params, expect_results=False)
 
         return ""
 
     async def update_memory(self) -> None:
+        """Update the chat history summary table to retain only the latest record per thread.
+
+        Uses a temporary table to identify the most recent record for each thread by timestamp,
+        then clears and repopulates the chat_history_summary table with only these latest records.
+        """
         cursor = self.connection.cursor()
 
         # Create a temporary table for the latest records

@@ -84,7 +84,7 @@ nav:
       - guides/index.md
       - Complete Azure Deployment: guides/complete-azure-deployment.md
       - Custom Workflows: guides/custom-workflows.md
-      - Cosmos DB Integration: guides/cosmos-db-deployment.md
+      - Azure SQL Integration: guides/azure-sql-deployment.md
       - Azure AI Search: guides/azure-ai-search-deployment.md
       - Azure Authentication: guides/azure-authentication.md
   - Developer Guides:

@@ -1,3 +1,9 @@
+"""Database connection pooling with support for SQLite and Azure SQL.
+
+This module provides database-agnostic connection pooling with health checks,
+retry logic, and automatic connection lifecycle management.
+"""
+
 import sqlite3
 import threading
 import time
@@ -14,47 +20,99 @@ logger = get_logger(__name__)
 
 
 class DatabaseConnection(Protocol):
-    """Protocol for database connections."""
+    """Protocol defining the interface for database connections.
+
+    This protocol ensures all database connection types provide a consistent
+    interface for query execution, transaction management, and resource cleanup.
+    """
 
     def execute(self, sql: str, params: Any = None) -> Any:
-        """Execute SQL query."""
+        """Execute a SQL query.
+
+        Args:
+            sql: SQL query string to execute.
+            params: Optional query parameters.
+
+        Returns:
+            Query execution result.
+        """
         ...
 
     def commit(self) -> None:
-        """Commit transaction."""
+        """Commit the current transaction."""
         ...
 
     def close(self) -> None:
-        """Close connection."""
+        """Close the database connection."""
         ...
 
     def cursor(self) -> Any:
-        """Get cursor for executing queries."""
+        """Get a cursor for executing queries.
+
+        Returns:
+            Database cursor object.
+        """
         ...
 
 
 class ConnectionFactory(ABC):
-    """Abstract factory for creating database connections."""
+    """Abstract factory for creating database connections.
+
+    Subclasses implement database-specific connection creation and health checks.
+    """
 
     @abstractmethod
     def create_connection(self) -> DatabaseConnection:
-        """Create a new database connection."""
+        """Create a new database connection.
+
+        Returns:
+            A new database connection instance.
+        """
         pass
 
     @abstractmethod
     def is_connection_healthy(self, conn: DatabaseConnection) -> bool:
-        """Check if connection is healthy."""
+        """Check if a connection is healthy and usable.
+
+        Args:
+            conn: Database connection to check.
+
+        Returns:
+            True if the connection is healthy, False otherwise.
+        """
         pass
 
 
 class SQLiteConnectionFactory(ConnectionFactory):
-    """Factory for creating SQLite connections."""
+    """Factory for creating SQLite connections.
+
+    Configures SQLite connections with WAL mode, optimized cache settings,
+    and row factory for dict-like row access.
+
+    Attributes:
+        db_path: Path to the SQLite database file.
+    """
 
     def __init__(self, db_path: str) -> None:
+        """Initialize the SQLite connection factory.
+
+        Args:
+            db_path: Path to the SQLite database file.
+        """
         self.db_path = db_path
 
     def create_connection(self) -> sqlite3.Connection:
-        """Create a new SQLite connection with proper configuration."""
+        """Create a new SQLite connection with optimized configuration.
+
+        Configures the connection with:
+        - WAL journal mode for better concurrency
+        - Normal synchronous mode for performance
+        - 10000 page cache size
+        - Memory-based temp storage
+
+        Returns:
+            Configured SQLite connection with Row factory.
+        """
         conn = sqlite3.connect(
             self.db_path,
             check_same_thread=False,
@@ -70,7 +128,14 @@ class SQLiteConnectionFactory(ConnectionFactory):
         return conn
 
     def is_connection_healthy(self, conn: DatabaseConnection) -> bool:
-        """Check if a SQLite connection is healthy."""
+        """Check if a SQLite connection is healthy.
+
+        Args:
+            conn: SQLite connection to check.
+
+        Returns:
+            True if the connection can execute a simple query, False otherwise.
+        """
         try:
             conn.execute("SELECT 1").fetchone()
             return True
@@ -79,19 +144,42 @@ class SQLiteConnectionFactory(ConnectionFactory):
 
 
 class AzureSQLConnectionFactory(ConnectionFactory):
-    """Factory for creating Azure SQL connections."""
+    """Factory for creating Azure SQL connections.
+
+    Creates connections using pyodbc with autocommit enabled for
+    compatibility with the connection pool pattern.
+
+    Attributes:
+        connection_string: ODBC connection string for Azure SQL.
+    """
 
     def __init__(self, connection_string: str) -> None:
+        """Initialize the Azure SQL connection factory.
+
+        Args:
+            connection_string: ODBC connection string for Azure SQL database.
+        """
         self.connection_string = connection_string
 
     def create_connection(self) -> pyodbc.Connection:
-        """Create a new Azure SQL connection."""
+        """Create a new Azure SQL connection with autocommit enabled.
+
+        Returns:
+            Configured pyodbc connection to Azure SQL.
+        """
         conn = pyodbc.connect(self.connection_string)
         conn.autocommit = True
         return conn
 
     def is_connection_healthy(self, conn: pyodbc.Connection) -> bool:
-        """Check if an Azure SQL connection is healthy."""
+        """Check if an Azure SQL connection is healthy.
+
+        Args:
+            conn: Azure SQL connection to check.
+
+        Returns:
+            True if the connection can execute a simple query, False otherwise.
+        """
         try:
             cursor = conn.cursor()
             cursor.execute("SELECT 1")
@@ -103,7 +191,18 @@ class AzureSQLConnectionFactory(ConnectionFactory):
 
 
 class ConnectionPool:
-    """Database-agnostic connection pool with health checks and retry logic."""
+    """Database-agnostic connection pool with health checks and retry logic.
+
+    Manages a pool of database connections with automatic health checking,
+    retry logic for transient failures, and overflow capacity. Connections
+    are pre-created and validated before use.
+
+    Attributes:
+        connection_factory: Factory for creating database connections.
+        pool_size: Maximum number of connections to maintain in the pool.
+        max_retries: Maximum number of retry attempts for connection operations.
+        retry_delay: Initial delay in seconds between retry attempts (exponential backoff).
+    """
 
     def __init__(
         self,
@@ -112,6 +211,14 @@ class ConnectionPool:
         max_retries: int = 3,
         retry_delay: float = 0.1,
     ) -> None:
+        """Initialize the connection pool.
+
+        Args:
+            connection_factory: Factory for creating database connections.
+            pool_size: Maximum number of connections in the pool. Defaults to 8.
+            max_retries: Maximum retry attempts for connection operations. Defaults to 3.
+            retry_delay: Initial retry delay in seconds with exponential backoff. Defaults to 0.1.
+        """
         self.connection_factory = connection_factory
         self.pool_size = pool_size
         self.max_retries = max_retries
@@ -124,7 +231,11 @@ class ConnectionPool:
         self._initialize_pool()
 
     def _initialize_pool(self) -> None:
-        """Initialize the connection pool with healthy connections."""
+        """Initialize the connection pool with healthy connections.
+
+        Creates and validates connections up to pool_size. If connection
+        creation fails, connections will be created on-demand later.
+        """
         for _ in range(self.pool_size):
             try:
                 conn = self.connection_factory.create_connection()
@@ -139,7 +250,18 @@ class ConnectionPool:
 
     @contextmanager
     def get_connection(self) -> Iterator[DatabaseConnection]:
-        """Context manager to get a connection from the pool."""
+        """Get a connection from the pool as a context manager.
+
+        Retrieves a healthy connection from the pool, with automatic retry
+        on failure. Returns the connection to the pool after use if still healthy,
+        otherwise closes it. Supports overflow connections beyond pool_size.
+
+        Yields:
+            A healthy database connection.
+
+        Raises:
+            RuntimeError: If unable to get a connection after max_retries attempts.
+        """
         conn = None
         retry_count = 0
 
@@ -151,9 +273,7 @@ class ConnectionPool:
                 except Empty:
                     # Pool is empty, create a new connection
                     with self._lock:
-                        if (
-                            self._created_connections < self.pool_size * 2
-                        ):  # Allow some overflow
+                        if self._created_connections < self.pool_size * 2:  # Allow some overflow
                             conn = self.connection_factory.create_connection()
                             self._created_connections += 1
                         else:
@@ -196,9 +316,7 @@ class ConnectionPool:
 
                     retry_count += 1
                     if retry_count <= self.max_retries:
-                        time.sleep(
-                            self.retry_delay * retry_count
-                        )  # Exponential backoff
+                        time.sleep(self.retry_delay * retry_count)  # Exponential backoff
 
             except Exception as e:
                 if conn:
@@ -217,12 +335,14 @@ class ConnectionPool:
                         f"Failed to get database connection after {self.max_retries} retries: {e}"
                     )
 
-        raise RuntimeError(
-            f"Failed to get database connection after {self.max_retries} retries"
-        )
+        raise RuntimeError(f"Failed to get database connection after {self.max_retries} retries")
 
     def close_all(self) -> None:
-        """Close all connections in the pool."""
+        """Close all connections in the pool.
+
+        Drains the pool and closes all connections. Resets the connection
+        counter to zero. Safe to call multiple times.
+        """
         while not self._pool.empty():
             try:
                 conn = self._pool.get_nowait()

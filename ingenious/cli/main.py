@@ -1,5 +1,4 @@
-"""
-Main CLI application setup for Insight Ingenious.
+"""Main CLI application setup for Insight Ingenious.
 
 This module contains the core CLI application configuration and imports
 all command modules to register them with the typer app.
@@ -45,6 +44,11 @@ Get help for any command with: ingen <command> --help
 # Ensure bare invocation / --help always exit 0 and show subcommands
 @app.callback(invoke_without_command=True)
 def _root(ctx: typer.Context) -> None:
+    """Handle root command invocation.
+
+    Args:
+        ctx: Typer context containing invocation details
+    """
     if ctx.invoked_subcommand is None and (
         not ctx.args or any(h in ctx.args for h in ("-h", "--help"))
     ):

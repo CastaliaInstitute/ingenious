@@ -39,9 +39,7 @@ async def test_semantic_rerank_preserves_docs_when_id_has_comma(
     un-reranked document in such cases, preventing data loss.
     """
     # Make a pipeline instance without running its __init__ to isolate the method.
-    pipeline: AdvancedSearchPipeline = AdvancedSearchPipeline.__new__(
-        AdvancedSearchPipeline
-    )
+    pipeline: AdvancedSearchPipeline = AdvancedSearchPipeline.__new__(AdvancedSearchPipeline)
 
     # Force the internal semantic rerank call to yield no results, simulating
     # a scenario where the filter excluded the comma-containing ID.

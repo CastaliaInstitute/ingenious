@@ -1,3 +1,9 @@
+"""Chat API routes for conversation endpoints.
+
+This module provides REST endpoints for chat interactions, supporting both
+standard request-response and streaming (SSE) modes.
+"""
+
 from typing import AsyncIterator
 
 from fastapi import APIRouter, Depends, HTTPException
@@ -32,6 +38,20 @@ async def chat(
     chat_service: Annotated[ChatService, Depends(get_chat_service)],
     username: Annotated[str, Depends(get_conditional_security)],
 ) -> ChatResponse:
+    """Process chat request and return response.
+
+    Args:
+        chat_request (ChatRequest): Chat request with message and metadata.
+        chat_service (ChatService): Injected chat service instance.
+        username (str): Authenticated username.
+
+    Returns:
+        ChatResponse: Chat response with assistant message.
+
+    Raises:
+        HTTPException: 400 for validation errors, 406 for content filter,
+            413 for token limit, 500 for other errors.
+    """
     try:
         # Set user_id to "unspecified_user" if not provided
         if not chat_request.user_id:
@@ -63,9 +83,7 @@ async def chat(
             error=str(tle),
             exc_info=True,
         )
-        raise HTTPException(
-            status_code=413, detail=TokenLimitExceededError.DEFAULT_MESSAGE
-        )
+        raise HTTPException(status_code=413, detail=TokenLimitExceededError.DEFAULT_MESSAGE)
     except Exception as e:
         logger.error(
             "Chat request failed",
@@ -89,9 +107,23 @@ async def chat_stream(
     chat_service: Annotated[ChatService, Depends(get_chat_service)],
     username: Annotated[str, Depends(get_conditional_security)],
 ) -> StreamingResponse:
-    """Stream chat responses in real-time using Server-Sent Events (SSE)."""
+    """Stream chat responses in real-time using Server-Sent Events.
+
+    Args:
+        chat_request (ChatRequest): Chat request with message and metadata.
+        chat_service (ChatService): Injected chat service instance.
+        username (str): Authenticated username.
+
+    Returns:
+        StreamingResponse: SSE stream with chat response chunks.
+    """
 
     async def generate_stream() -> AsyncIterator[str]:
+        """Generate SSE stream of chat response chunks.
+
+        Yields:
+            str: SSE-formatted data events with chat chunks or errors.
+        """
         try:
             # Set user_id to "unspecified_user" if not provided
             if not chat_request.user_id:
@@ -149,9 +181,7 @@ async def chat_stream(
         except Exception as e:
             logger.error(
                 "Chat streaming request failed",
-                conversation_flow=chat_request.conversation_flow
-                if chat_request
-                else None,
+                conversation_flow=chat_request.conversation_flow if chat_request else None,
                 error=str(e),
                 exc_info=True,
             )

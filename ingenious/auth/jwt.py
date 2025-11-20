@@ -1,9 +1,10 @@
 import os
 from datetime import datetime, timedelta
-from typing import Any, Dict, Optional
+from typing import Any, Dict, Optional, Tuple
 
 from fastapi import HTTPException, status
 from jose import JWTError, jwt
+from passlib.context import CryptContext
 
 from ingenious.core.structured_logging import get_logger
 
@@ -11,7 +12,7 @@ logger = get_logger(__name__)
 
 
 # Get configuration with fallbacks
-def _get_jwt_config():
+def _get_jwt_config() -> Tuple[str, str, int, int]:
     """Get JWT configuration from settings or environment variables."""
     try:
         from ingenious.config.config import get_config
@@ -26,9 +27,7 @@ def _get_jwt_config():
             or "your-secret-key-change-this-in-production"
         )
 
-        algorithm = (
-            auth_config.jwt_algorithm or os.getenv("INGENIOUS_JWT_ALGORITHM") or "HS256"
-        )
+        algorithm = auth_config.jwt_algorithm or os.getenv("INGENIOUS_JWT_ALGORITHM") or "HS256"
 
         access_token_expire = (
             auth_config.jwt_access_token_expire_minutes
@@ -57,14 +56,12 @@ def _get_jwt_config():
         )
 
 
-SECRET_KEY, ALGORITHM, ACCESS_TOKEN_EXPIRE_MINUTES, REFRESH_TOKEN_EXPIRE_DAYS = (
-    _get_jwt_config()
-)
+SECRET_KEY, ALGORITHM, ACCESS_TOKEN_EXPIRE_MINUTES, REFRESH_TOKEN_EXPIRE_DAYS = _get_jwt_config()
+
+pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
 
-def create_access_token(
-    data: Dict[str, Any], expires_delta: Optional[timedelta] = None
-) -> str:
+def create_access_token(data: Dict[str, Any], expires_delta: Optional[timedelta] = None) -> str:
     """Create a JWT access token"""
     to_encode = data.copy()
     if expires_delta:
@@ -137,3 +134,13 @@ def get_username_from_token(token: str) -> str:
             headers={"WWW-Authenticate": "Bearer"},
         )
     return str(username)
+
+
+def verify_password(plain_password: str, hashed_password: str) -> bool:
+    """Verify a password against its hash"""
+    return bool(pwd_context.verify(plain_password, hashed_password))
+
+
+def get_password_hash(password: str) -> str:
+    """Hash a password"""
+    return str(pwd_context.hash(password))

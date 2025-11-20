@@ -1,3 +1,9 @@
+"""Token counting utilities for OpenAI chat completion messages.
+
+Provides functions to count tokens in chat messages and retrieve maximum token
+limits for different models using tiktoken.
+"""
+
 from typing import Dict, List, Set
 
 import tiktoken
@@ -9,8 +15,17 @@ logger = get_logger(__name__)
 
 
 def get_max_tokens(model: str = "gpt-3.5-turbo-0125") -> int:
-    # Return the maximum number of tokens for a given model
-    ## TODO: Move this to a configuration file
+    """Return the maximum number of tokens for a given model.
+
+    Args:
+        model: The model identifier.
+
+    Returns:
+        The maximum number of tokens supported by the model.
+
+    Note:
+        TODO: Move this to a configuration file.
+    """
     max_tokens: Dict[str, int] = {
         "gpt-3.5-turbo": 4096,
         "gpt-3.5-turbo-0613": 4096,
@@ -29,7 +44,21 @@ def get_max_tokens(model: str = "gpt-3.5-turbo-0125") -> int:
 def num_tokens_from_messages(
     messages: List[ChatCompletionMessageParam], model: str = "gpt-3.5-turbo-0613"
 ) -> int:
-    # Return the number of tokens used by a list of messages
+    """Return the number of tokens used by a list of messages.
+
+    Args:
+        messages: List of chat completion message parameters.
+        model: The model identifier for token encoding.
+
+    Returns:
+        The total number of tokens used by the messages.
+
+    Raises:
+        NotImplementedError: If the model is not supported.
+
+    Note:
+        TODO: Move supported model configurations to a configuration file.
+    """
     try:
         encoding: tiktoken.Encoding = tiktoken.encoding_for_model(model)
     except KeyError:

@@ -190,9 +190,7 @@ class LazyGroup(TyperGroup):
         except (ModuleNotFoundError, ImportError):
             # If in a real Click Context (help/introspection) OR resilient parsing, do NOT raise here.
             # Return a placeholder so help and other introspection can render without crashing.
-            if _is_real_click_context(ctx) or (
-                getattr(ctx, "resilient_parsing", False) is True
-            ):
+            if _is_real_click_context(ctx) or (getattr(ctx, "resilient_parsing", False) is True):
                 return self._missing_extra_placeholder(name, extra)
             # Unit-test / non-Click path: behave as the test expects (echo + Exit).
             typer.echo(
@@ -206,9 +204,7 @@ class LazyGroup(TyperGroup):
                 f"Could not find attribute '{attr_name}' in '{module_path}'. "
                 "Please reinstall or report a bug."
             )
-            if _is_real_click_context(ctx) or (
-                getattr(ctx, "resilient_parsing", False) is True
-            ):
+            if _is_real_click_context(ctx) or (getattr(ctx, "resilient_parsing", False) is True):
 
                 @click.command(name=name, help=msg)
                 def _cmd() -> None:

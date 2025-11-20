@@ -1,3 +1,9 @@
+"""Test custom workflow API endpoints.
+
+This module tests the functionality for retrieving custom workflow agents
+and schemas via the API routes.
+"""
+
 from unittest.mock import Mock, patch
 
 import pytest
@@ -14,7 +20,11 @@ class TestGetCustomWorkflowAgents:
 
     @pytest.fixture
     def mock_agent_file_content(self):
-        """Sample agent.py file content for testing."""
+        """Provide sample agent.py file content for testing.
+
+        Returns:
+            str: Mock agent file content with two test agents.
+        """
         return """
 class ProjectAgents:
     def Get_Project_Agents(self):
@@ -39,9 +49,7 @@ class ProjectAgents:
 
     @pytest.mark.asyncio
     @patch("ingenious.api.routes.custom_workflows.normalize_workflow_name")
-    @patch(
-        "ingenious.api.routes.custom_workflows.get_path_from_namespace_with_fallback"
-    )
+    @patch("ingenious.api.routes.custom_workflows.get_path_from_namespace_with_fallback")
     async def test_get_custom_workflow_agents_success(
         self, mock_get_path, mock_normalize, mock_agent_file_content
     ):
@@ -86,7 +94,11 @@ class TestGetCustomWorkflowSchema:
 
     @pytest.fixture
     def mock_pydantic_model(self) -> type[BaseModel]:
-        """Create a mock Pydantic model for testing."""
+        """Create a mock Pydantic model for testing.
+
+        Returns:
+            type[BaseModel]: A test Pydantic model class with basic fields.
+        """
 
         class TestModel(BaseModel):
             name: str
@@ -101,16 +113,18 @@ class TestGetCustomWorkflowSchema:
 
     @pytest.fixture
     def mock_request(self) -> Mock:
-        """Create a mock FastAPI request object."""
+        """Create a mock FastAPI request object.
+
+        Returns:
+            Mock: A mock FastAPI Request object.
+        """
         from fastapi import Request
 
         return Mock(spec=Request)
 
     @pytest.mark.asyncio
     @patch("ingenious.api.routes.custom_workflows.normalize_workflow_name")
-    @patch(
-        "ingenious.api.routes.custom_workflows.get_path_from_namespace_with_fallback"
-    )
+    @patch("ingenious.api.routes.custom_workflows.get_path_from_namespace_with_fallback")
     @patch("ingenious.api.routes.custom_workflows.pkgutil.iter_modules")
     @patch("ingenious.api.routes.custom_workflows.import_module_with_fallback")
     @patch("ingenious.api.routes.custom_workflows.inspect.getmembers")
@@ -150,9 +164,7 @@ class TestGetCustomWorkflowSchema:
 
     @pytest.mark.asyncio
     @patch("ingenious.api.routes.custom_workflows.normalize_workflow_name")
-    @patch(
-        "ingenious.api.routes.custom_workflows.get_path_from_namespace_with_fallback"
-    )
+    @patch("ingenious.api.routes.custom_workflows.get_path_from_namespace_with_fallback")
     @patch("ingenious.api.routes.custom_workflows.pkgutil.iter_modules")
     @patch("ingenious.api.routes.custom_workflows.import_module_with_fallback")
     @patch("ingenious.api.routes.custom_workflows.inspect.getmembers")

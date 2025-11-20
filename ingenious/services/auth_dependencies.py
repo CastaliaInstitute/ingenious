@@ -1,5 +1,4 @@
-"""
-Authentication-related dependency injection.
+"""Authentication-related dependency injection.
 
 This module provides FastAPI dependency injection functions
 for authentication and authorization services.
@@ -18,7 +17,7 @@ from fastapi.security import (
 from typing_extensions import Annotated
 
 from ingenious.auth.jwt import get_username_from_token
-from ingenious.config.main_settings import IngeniousSettings
+from ingenious.config.settings import IngeniousSettings
 from ingenious.core.structured_logging import get_logger
 from ingenious.services.fastapi_dependencies import get_config as _get_config
 
@@ -28,16 +27,25 @@ bearer_security = HTTPBearer()
 
 
 def get_security_service(
-    token: Annotated[HTTPAuthorizationCredentials, Depends(bearer_security)]
-    | None = None,
+    token: Annotated[HTTPAuthorizationCredentials, Depends(bearer_security)] | None = None,
     credentials: Annotated[HTTPBasicCredentials, Depends(security)] | None = None,
     config: IngeniousSettings = Depends(_get_config),
 ) -> str:
-    """Security service with JWT and Basic Auth support."""
+    """Authenticate user with JWT or Basic Auth.
+
+    Args:
+        token: JWT bearer token credentials if provided.
+        credentials: Basic auth credentials if provided.
+        config: Application settings instance.
+
+    Returns:
+        Username of authenticated user, or 'anonymous' if auth is disabled.
+
+    Raises:
+        HTTPException: If authentication fails or no credentials are provided.
+    """
     if not config.web_configuration.authentication.enable:
-        logger.warning(
-            "Authentication is disabled. This is not recommended for production use."
-        )
+        logger.warning("Authentication is disabled. This is not recommended for production use.")
         return "anonymous"
 
     # Try JWT token first
@@ -63,11 +71,20 @@ def get_security_service_optional(
     credentials: Optional[HTTPBasicCredentials] = None,
     config: IngeniousSettings = Depends(_get_config),
 ) -> Optional[str]:
-    """Optional security service that doesn't require credentials when auth is disabled."""
+    """Authenticate user optionally with Basic Auth.
+
+    Args:
+        credentials: Basic auth credentials if provided.
+        config: Application settings instance.
+
+    Returns:
+        Username of authenticated user, or None if auth is disabled.
+
+    Raises:
+        HTTPException: If authentication is enabled but credentials are invalid.
+    """
     if not config.web_configuration.authentication.enable:
-        logger.warning(
-            "Authentication is disabled. This is not recommended for production use."
-        )
+        logger.warning("Authentication is disabled. This is not recommended for production use.")
         return None
 
     if credentials is None:
@@ -80,14 +97,23 @@ def get_security_service_optional(
     return _validate_basic_auth_credentials(credentials, config)
 
 
-def get_auth_user(
-    request: Request, config: IngeniousSettings = Depends(_get_config)
-) -> str:
-    """Get authenticated user - supports both JWT and Basic Auth."""
+def get_auth_user(request: Request, config: IngeniousSettings = Depends(_get_config)) -> str:
+    """Get authenticated user from request headers.
+
+    Supports both JWT Bearer tokens and Basic Auth credentials.
+
+    Args:
+        request: FastAPI request object containing authorization headers.
+        config: Application settings instance.
+
+    Returns:
+        Username of authenticated user, or 'anonymous' if auth is disabled.
+
+    Raises:
+        HTTPException: If authentication fails or no valid credentials are provided.
+    """
     if not config.web_configuration.authentication.enable:
-        logger.warning(
-            "Authentication is disabled. This is not recommended for production use."
-        )
+        logger.warning("Authentication is disabled. This is not recommended for production use.")
         return "anonymous"
 
     auth_header = request.headers.get("Authorization", "")
@@ -114,28 +140,43 @@ def get_auth_user(
 
 
 def get_conditional_security(request: Request) -> str:
-    """Get authenticated user - wrapper around get_auth_user for compatibility."""
+    """Get authenticated user from request.
+
+    Wrapper around get_auth_user for backward compatibility.
+
+    Args:
+        request: FastAPI request object containing authorization headers.
+
+    Returns:
+        Username of authenticated user, or 'anonymous' if auth is disabled.
+
+    Raises:
+        HTTPException: If authentication fails or no valid credentials are provided.
+    """
     return get_auth_user(request)
 
 
 def _validate_basic_auth_credentials(
     credentials: HTTPBasicCredentials, config: IngeniousSettings
 ) -> str:
-    """Validate basic auth credentials against configuration."""
+    """Validate basic auth credentials against configuration.
+
+    Args:
+        credentials: Basic auth credentials to validate.
+        config: Application settings containing expected credentials.
+
+    Returns:
+        Username if credentials are valid.
+
+    Raises:
+        HTTPException: If credentials do not match configuration.
+    """
     current_username_bytes = credentials.username.encode("utf8")
-    correct_username_bytes = config.web_configuration.authentication.username.encode(
-        "utf-8"
-    )
-    is_correct_username = secrets.compare_digest(
-        current_username_bytes, correct_username_bytes
-    )
+    correct_username_bytes = config.web_configuration.authentication.username.encode("utf-8")
+    is_correct_username = secrets.compare_digest(current_username_bytes, correct_username_bytes)
     current_password_bytes = credentials.password.encode("utf8")
-    correct_password_bytes = config.web_configuration.authentication.password.encode(
-        "utf-8"
-    )
-    is_correct_password = secrets.compare_digest(
-        current_password_bytes, correct_password_bytes
-    )
+    correct_password_bytes = config.web_configuration.authentication.password.encode("utf-8")
+    is_correct_password = secrets.compare_digest(current_password_bytes, correct_password_bytes)
     if not (is_correct_username and is_correct_password):
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
@@ -146,7 +187,18 @@ def _validate_basic_auth_credentials(
 
 
 def _handle_basic_auth_header(auth_header: str, config: IngeniousSettings) -> str:
-    """Handle Basic Auth header parsing and validation."""
+    """Handle Basic Auth header parsing and validation.
+
+    Args:
+        auth_header: Authorization header value starting with 'Basic '.
+        config: Application settings containing expected credentials.
+
+    Returns:
+        Username if credentials are valid.
+
+    Raises:
+        HTTPException: If header format is invalid or credentials do not match.
+    """
     import base64
 
     try:
@@ -161,20 +213,12 @@ def _handle_basic_auth_header(auth_header: str, config: IngeniousSettings) -> st
 
     # Validate credentials
     current_username_bytes = username.encode("utf8")
-    correct_username_bytes = config.web_configuration.authentication.username.encode(
-        "utf-8"
-    )
-    is_correct_username = secrets.compare_digest(
-        current_username_bytes, correct_username_bytes
-    )
+    correct_username_bytes = config.web_configuration.authentication.username.encode("utf-8")
+    is_correct_username = secrets.compare_digest(current_username_bytes, correct_username_bytes)
 
     current_password_bytes = password.encode("utf8")
-    correct_password_bytes = config.web_configuration.authentication.password.encode(
-        "utf-8"
-    )
-    is_correct_password = secrets.compare_digest(
-        current_password_bytes, correct_password_bytes
-    )
+    correct_password_bytes = config.web_configuration.authentication.password.encode("utf-8")
+    is_correct_password = secrets.compare_digest(current_password_bytes, correct_password_bytes)
 
     if not (is_correct_username and is_correct_password):
         raise HTTPException(

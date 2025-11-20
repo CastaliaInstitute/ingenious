@@ -1,5 +1,5 @@
-"""
-Comprehensive error handling system for document processing module
+"""Comprehensive error handling system for document processing module.
+
 ================================================================
 
 This module provides a structured error handling framework for the document
@@ -179,9 +179,7 @@ class ProcessingError(Exception):
         super().__init__(message)
 
         self.message = message
-        self.error_code = (
-            error_code if isinstance(error_code, ErrorCode) else ErrorCode(error_code)
-        )
+        self.error_code = error_code if isinstance(error_code, ErrorCode) else ErrorCode(error_code)
         self.cause = cause
         self.recoverable = recoverable
         self.recovery_suggestion = recovery_suggestion
@@ -256,6 +254,16 @@ class ExtractionError(ProcessingError):
         recoverable: bool = True,
         recovery_suggestion: Optional[str] = None,
     ):
+        """Initialize ExtractionError with document extraction failure context.
+
+        Args:
+            message: Error description.
+            error_code: Specific extraction error code.
+            context: Additional error context information.
+            cause: Original exception that triggered this error.
+            recoverable: Whether the extraction can be retried with different parameters.
+            recovery_suggestion: Suggestion for how to resolve the extraction failure.
+        """
         if recovery_suggestion is None:
             recovery_suggestion = self._get_default_recovery_suggestion(error_code)
 
@@ -268,9 +276,7 @@ class ExtractionError(ProcessingError):
             recovery_suggestion=recovery_suggestion,
         )
 
-    def _get_default_recovery_suggestion(
-        self, error_code: Union[ErrorCode, str]
-    ) -> str:
+    def _get_default_recovery_suggestion(self, error_code: Union[ErrorCode, str]) -> str:
         """Get default recovery suggestion based on error code."""
         suggestions = {
             ErrorCode.DOCUMENT_NOT_FOUND: "Verify the file path exists and is accessible",
@@ -303,6 +309,16 @@ class ValidationError(ProcessingError):
         recoverable: bool = False,  # Validation errors usually require data fixes
         recovery_suggestion: Optional[str] = None,
     ):
+        """Initialize ValidationError with validation failure context.
+
+        Args:
+            message: Error description.
+            error_code: Specific validation error code.
+            context: Additional error context information.
+            cause: Original exception that triggered this error.
+            recoverable: Whether the validation can pass with corrected data (usually False).
+            recovery_suggestion: Suggestion for how to fix the validation failure.
+        """
         if recovery_suggestion is None:
             recovery_suggestion = "Review and correct the input data format"
 
@@ -333,6 +349,16 @@ class NetworkError(ProcessingError):
         recoverable: bool = True,  # Network errors are often transient
         recovery_suggestion: Optional[str] = None,
     ):
+        """Initialize NetworkError with network operation failure context.
+
+        Args:
+            message: Error description.
+            error_code: Specific network error code.
+            context: Additional error context including URL and status code.
+            cause: Original exception that triggered this error.
+            recoverable: Whether the operation can be retried (usually True for transient failures).
+            recovery_suggestion: Suggestion for how to resolve the network issue.
+        """
         if recovery_suggestion is None:
             recovery_suggestion = self._get_default_recovery_suggestion(error_code)
 
@@ -345,9 +371,7 @@ class NetworkError(ProcessingError):
             recovery_suggestion=recovery_suggestion,
         )
 
-    def _get_default_recovery_suggestion(
-        self, error_code: Union[ErrorCode, str]
-    ) -> str:
+    def _get_default_recovery_suggestion(self, error_code: Union[ErrorCode, str]) -> str:
         """Get default recovery suggestion based on error code."""
         suggestions = {
             ErrorCode.NETWORK_TIMEOUT: "Increase timeout or retry the operation",
@@ -395,12 +419,12 @@ def retry_with_backoff(
     only_recoverable : bool, default=True
         Only retry recoverable ProcessingError instances
 
-    Returns
+    Returns:
     -------
     Callable
         Decorated function with retry logic
 
-    Examples
+    Examples:
     --------
     >>> @retry_with_backoff(max_retries=3, base_delay=1.0)
     >>> def fetch_document(url):
@@ -431,9 +455,7 @@ def retry_with_backoff(
                     if attempt >= max_retries or not should_retry:
                         # Update context with retry information
                         if isinstance(exc, ProcessingError):
-                            exc.with_context(
-                                retry_count=attempt, max_retries=max_retries
-                            )
+                            exc.with_context(retry_count=attempt, max_retries=max_retries)
                             exc.context.metadata["final_attempt"] = True
                         raise exc
 
@@ -469,9 +491,7 @@ def retry_with_backoff(
             if last_exception:
                 raise last_exception
             else:
-                raise ProcessingError(
-                    "Retry loop completed without success or exception"
-                )
+                raise ProcessingError("Retry loop completed without success or exception")
 
         return wrapper  # type: ignore
 
@@ -499,6 +519,11 @@ class FallbackEngineStrategy(RecoveryStrategy):
     """Recovery strategy that tries alternative extraction engines."""
 
     def __init__(self, fallback_engines: List[str]) -> None:
+        """Initialize FallbackEngineStrategy with alternative engines.
+
+        Args:
+            fallback_engines: List of fallback engine names to try in order.
+        """
         self.fallback_engines = fallback_engines
 
     def can_recover(self, error: ProcessingError) -> bool:
@@ -543,6 +568,12 @@ class RetryWithDelayStrategy(RecoveryStrategy):
     """Recovery strategy that retries after a delay."""
 
     def __init__(self, max_retries: int = 3, base_delay: float = 1.0) -> None:
+        """Initialize RetryWithDelayStrategy with retry parameters.
+
+        Args:
+            max_retries: Maximum number of retry attempts.
+            base_delay: Base delay in seconds between retries (doubles with each retry).
+        """
         self.max_retries = max_retries
         self.base_delay = base_delay
 
@@ -593,6 +624,7 @@ class ErrorReporter:
     """Utility for collecting and reporting processing errors."""
 
     def __init__(self) -> None:
+        """Initialize ErrorReporter with empty error collection."""
         self.errors: List[ProcessingError] = []
         self.error_counts: Dict[str, int] = {}
 

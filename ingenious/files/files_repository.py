@@ -1,63 +1,51 @@
 import importlib
 from abc import ABC, abstractmethod
 from pathlib import Path
-from typing import List, Union
 
-from ingenious.config.main_settings import IngeniousSettings
-from ingenious.models.config import Config, FileStorageContainer
+from ingenious.config.models import FileStorageContainerSettings
+from ingenious.config.settings import IngeniousSettings
 
 
 class IFileStorage(ABC):
-    def __init__(
-        self, config: Union[Config, IngeniousSettings], fs_config: FileStorageContainer
-    ):
-        self.config: Union[Config, IngeniousSettings] = config
-        self.fs_config: FileStorageContainer = fs_config
+    def __init__(self, config: IngeniousSettings, fs_config: FileStorageContainerSettings):
+        self.config: IngeniousSettings = config
+        self.fs_config: FileStorageContainerSettings = fs_config
 
     @abstractmethod
     async def write_file(self, contents: str, file_name: str, file_path: str) -> str:
-        """writes a file to the file storage"""
+        """Writes a file to the file storage"""
         pass
 
     @abstractmethod
     async def read_file(self, file_name: str, file_path: str) -> str:
-        """reads a file to the file storage"""
+        """Reads a file to the file storage"""
         pass
 
     @abstractmethod
     async def delete_file(self, file_name: str, file_path: str) -> str:
-        """deletes a file to the file storage"""
+        """Deletes a file to the file storage"""
         pass
 
     @abstractmethod
-    async def list_files(self, file_path: str) -> List[str]:
-        """lists files in the file storage"""
-        pass
-
-    @abstractmethod
-    async def list_directories(self, file_path: str) -> List[str]:
-        """lists directories in the file storage"""
+    async def list_files(self, file_path: str) -> str:
+        """Lists files in the file storage"""
         pass
 
     @abstractmethod
     async def check_if_file_exists(self, file_path: str, file_name: str) -> bool:
-        """checks if a file exists in the file storage"""
+        """Checks if a file exists in the file storage"""
         pass
 
     @abstractmethod
     async def get_base_path(self) -> str:
-        """returns the base path of the file storage"""
+        """Returns the base path of the file storage"""
         pass
 
 
 class FileStorage:
-    def __init__(
-        self, config: Union[Config, IngeniousSettings], Category: str = "revisions"
-    ):
+    def __init__(self, config: IngeniousSettings, Category: str = "revisions"):
         self.config = config
-        self.add_sub_folders = getattr(
-            self.config.file_storage, Category
-        ).add_sub_folders
+        self.add_sub_folders = getattr(self.config.file_storage, Category).add_sub_folders
 
         # Get the file storage config for the specified category
         fs_config = getattr(self.config.file_storage, Category)
@@ -95,11 +83,8 @@ class FileStorage:
     async def delete_file(self, file_name: str, file_path: str) -> str:
         return await self.repository.delete_file(file_name, file_path)
 
-    async def list_files(self, file_path: str) -> List[str]:
+    async def list_files(self, file_path: str) -> str:
         return await self.repository.list_files(file_path)
-
-    async def list_directories(self, file_path: str) -> List[str]:
-        return await self.repository.list_directories(file_path)
 
     async def check_if_file_exists(self, file_path: str, file_name: str) -> bool:
         return await self.repository.check_if_file_exists(file_path, file_name)

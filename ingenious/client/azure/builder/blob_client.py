@@ -1,4 +1,4 @@
-from typing import Optional, Union
+from typing import Optional
 
 from azure.storage.blob import BlobClient, BlobServiceClient
 
@@ -6,7 +6,6 @@ from ingenious.client.azure.builder.base import AzureClientBuilder
 from ingenious.common.enums import AuthenticationMethod
 from ingenious.config.auth_config import AzureAuthConfig
 from ingenious.config.models import FileStorageContainerSettings
-from ingenious.models.config import FileStorageContainer
 
 
 class BlobServiceClientBuilder(AzureClientBuilder):
@@ -14,25 +13,25 @@ class BlobServiceClientBuilder(AzureClientBuilder):
 
     def __init__(
         self,
-        file_storage_config: Union[FileStorageContainer, FileStorageContainerSettings],
+        file_storage_config: FileStorageContainerSettings,
     ):
         # Extract authentication parameters from config
         auth_config = self._create_auth_config_from_storage_config(file_storage_config)
         super().__init__(auth_config=auth_config)
         self.file_storage_config = file_storage_config
 
-    def _create_auth_config_from_storage_config(self, file_storage_config):
+    def _create_auth_config_from_storage_config(
+        self, file_storage_config: FileStorageContainerSettings
+    ) -> AzureAuthConfig:
         """Create AzureAuthConfig from file storage configuration."""
         return AzureAuthConfig.from_config(file_storage_config)
 
     def build(self) -> BlobServiceClient:
-        """
-        Build Azure Blob Service client based on file storage configuration.
+        """Build Azure Blob Service client based on file storage configuration.
 
         Returns:
             BlobServiceClient: Configured Azure Blob Service client
         """
-
         # Get credential based on authentication method
         if self.auth_config.authentication_method == AuthenticationMethod.TOKEN:
             # Use SAS token or connection string - need raw string value
@@ -48,24 +47,16 @@ class BlobServiceClientBuilder(AzureClientBuilder):
                     self.file_storage_config, "account_url", None
                 )
                 if not account_url:
-                    raise ValueError(
-                        "Account URL is required for blob storage authentication"
-                    )
-                return BlobServiceClient(
-                    account_url=account_url, credential=credential_str
-                )
+                    raise ValueError("Account URL is required for blob storage authentication")
+                return BlobServiceClient(account_url=account_url, credential=credential_str)
         else:
             # Use Azure AD authentication - use token_credential property
             account_url = getattr(self.file_storage_config, "url", None) or getattr(
                 self.file_storage_config, "account_url", None
             )
             if not account_url:
-                raise ValueError(
-                    "Account URL is required for blob storage authentication"
-                )
-            return BlobServiceClient(
-                account_url=account_url, credential=self.token_credential
-            )
+                raise ValueError("Account URL is required for blob storage authentication")
+            return BlobServiceClient(account_url=account_url, credential=self.token_credential)
 
 
 class BlobClientBuilder(AzureClientBuilder):
@@ -73,7 +64,7 @@ class BlobClientBuilder(AzureClientBuilder):
 
     def __init__(
         self,
-        file_storage_config: Union[FileStorageContainer, FileStorageContainerSettings],
+        file_storage_config: FileStorageContainerSettings,
         container_name: Optional[str] = None,
         blob_name: Optional[str] = None,
     ):
@@ -81,18 +72,17 @@ class BlobClientBuilder(AzureClientBuilder):
         auth_config = self._create_auth_config_from_storage_config(file_storage_config)
         super().__init__(auth_config=auth_config)
         self.file_storage_config = file_storage_config
-        self.container_name = container_name or getattr(
-            file_storage_config, "container_name", None
-        )
+        self.container_name = container_name or getattr(file_storage_config, "container_name", None)
         self.blob_name = blob_name
 
-    def _create_auth_config_from_storage_config(self, file_storage_config):
+    def _create_auth_config_from_storage_config(
+        self, file_storage_config: FileStorageContainerSettings
+    ) -> AzureAuthConfig:
         """Create AzureAuthConfig from file storage configuration."""
         return AzureAuthConfig.from_config(file_storage_config)
 
     def build(self) -> BlobClient:
-        """
-        Build Azure Blob client for specific blob.
+        """Build Azure Blob client for specific blob.
 
         Returns:
             BlobClient: Configured Azure Blob client

@@ -1,5 +1,4 @@
-"""
-Server-related CLI commands for Insight Ingenious.
+"""Server-related CLI commands for Insight Ingenious.
 
 This module contains commands for starting and managing the API server.
 """
@@ -28,14 +27,14 @@ class ServeCommand(BaseCommand):
         no_prompt_tuner: bool = False,
         **kwargs: object,
     ) -> None:
-        """
-        Start the Insight Ingenious API server with web interface.
+        """Start the Insight Ingenious API server with web interface.
 
         Args:
             env_file: Optional path to a .env file to load before starting
             host: Host to bind the server
             port: Port to bind the server
             no_prompt_tuner: Whether to disable the prompt tuner interface
+            **kwargs: Additional keyword arguments (unused)
         """
         # Resolve port
         if port is None:
@@ -60,7 +59,7 @@ class ServeCommand(BaseCommand):
             # Import and start the server
             import uvicorn
 
-            from ingenious.config.main_settings import IngeniousSettings
+            from ingenious.config.settings import IngeniousSettings
             from ingenious.main import create_app
 
             # Load settings
@@ -85,19 +84,13 @@ class ServeCommand(BaseCommand):
 
     def _show_config_help(self) -> None:
         """Show configuration help for server startup."""
-        self.console.print(
-            "\n[bold yellow]💡 Configuration Requirements:[/bold yellow]"
-        )
+        self.console.print("\n[bold yellow]💡 Configuration Requirements:[/bold yellow]")
         self.console.print("1. Copy .env.example to .env and fill in required values")
         self.console.print("   cp .env.example .env")
         self.console.print("2. Set required INGENIOUS_* environment variables, e.g.")
         self.console.print("   export INGENIOUS_MODELS__0__API_KEY=your-key")
-        self.console.print(
-            "   export INGENIOUS_MODELS__0__BASE_URL=https://your-endpoint"
-        )
-        self.console.print(
-            "3. Optionally use --env-file to load a specific .env configuration"
-        )
+        self.console.print("   export INGENIOUS_MODELS__0__BASE_URL=https://your-endpoint")
+        self.console.print("3. Optionally use --env-file to load a specific .env configuration")
 
 
 # Backward compatibility
@@ -116,21 +109,15 @@ def register_commands(app: typer.Typer, console: Console) -> None:
         ] = None,
         host: Annotated[
             str,
-            typer.Option(
-                "--host", "-h", help="Host to bind the server (default: 0.0.0.0)"
-            ),
+            typer.Option("--host", "-h", help="Host to bind the server (default: 0.0.0.0)"),
         ] = "127.0.0.1",
         port: Annotated[
             int,
-            typer.Option(
-                "--port", help="Port to bind the server (default: 80 or $WEB_PORT)"
-            ),
+            typer.Option("--port", help="Port to bind the server (default: 80 or $WEB_PORT)"),
         ] = int(os.getenv("WEB_PORT", "80")),
         no_prompt_tuner: Annotated[
             bool,
-            typer.Option(
-                "--no-prompt-tuner", help="Disable the prompt tuner interface"
-            ),
+            typer.Option("--no-prompt-tuner", help="Disable the prompt tuner interface"),
         ] = False,
     ) -> None:
         """Start the Insight Ingenious API server with web interface."""

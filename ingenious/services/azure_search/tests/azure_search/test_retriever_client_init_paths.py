@@ -106,9 +106,7 @@ class _DummyChatCompletions:
         Returns:
             A namespace object mimicking the OpenAI chat completion response.
         """
-        return SimpleNamespace(
-            choices=[SimpleNamespace(message=SimpleNamespace(content="3 3"))]
-        )
+        return SimpleNamespace(choices=[SimpleNamespace(message=SimpleNamespace(content="3 3"))])
 
 
 class _DummyChat:
@@ -151,7 +149,7 @@ def _settings() -> IngeniousSettings:
             api_version="2024-02-01",
         ),
         ModelSettings(
-            model="gpt-4o",
+            model="gpt-5",
             deployment="chat",
             api_key="ok",
             base_url="https://aoai.example.com",

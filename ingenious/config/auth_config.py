@@ -1,3 +1,9 @@
+"""Authentication configuration utilities for Ingenious.
+
+Provides authentication helpers for validating credentials, managing auth methods,
+and integrating with various authentication providers (Azure, Basic Auth, JWT).
+"""
+
 from __future__ import annotations
 
 import asyncio
@@ -11,6 +17,15 @@ if TYPE_CHECKING:
 
 
 def _get(obj: Any, *names: str) -> Optional[Any]:
+    """Get a value from an object or mapping by trying multiple attribute names.
+
+    Args:
+        obj: The object or mapping to search.
+        *names: Attribute or key names to try in order.
+
+    Returns:
+        The first non-None value found, or None if all are None or not present.
+    """
     if obj is None:
         return None
     if isinstance(obj, Mapping):
@@ -26,16 +41,18 @@ def _get(obj: Any, *names: str) -> Optional[Any]:
 
 
 class AzureAuthConfig:
-    """
-    Centralized auth configuration for Azure client builders.
+    """Centralized authentication configuration for Azure client builders.
 
-    Fields (logically):
-      - authentication_method: AuthenticationMethod
-      - api_key: Optional[str]
-      - client_id, client_secret, tenant_id: Optional[str]
-      - endpoint: Optional[str]
-      - openai_key / openai_endpoint aliases
-      - api_version: Optional[str]
+    Attributes:
+        authentication_method: The authentication method to use.
+        api_key: API key for token-based authentication.
+        client_id: Azure client ID for service principal or MSI.
+        client_secret: Azure client secret for service principal authentication.
+        tenant_id: Azure tenant ID for service principal authentication.
+        endpoint: Azure service endpoint URL.
+        openai_key: Alias for api_key (for Azure OpenAI compatibility).
+        openai_endpoint: Alias for endpoint (for Azure OpenAI compatibility).
+        api_version: Optional API version string.
     """
 
     # Declare instance attributes for mypy
@@ -58,6 +75,16 @@ class AzureAuthConfig:
         tenant_id: Optional[str] = None,
         endpoint: Optional[str] = None,
     ) -> None:
+        """Initialize Azure authentication configuration.
+
+        Args:
+            authentication_method: The authentication method to use.
+            api_key: API key for token-based authentication.
+            client_id: Azure client ID for service principal or MSI.
+            client_secret: Azure client secret for service principal.
+            tenant_id: Azure tenant ID for service principal.
+            endpoint: Azure service endpoint URL.
+        """
         # Use object.__setattr__ to avoid Pydantic attribute guards when this
         # initializer is (intentionally) called with a Pydantic model instance.
         object.__setattr__(self, "authentication_method", authentication_method)
@@ -76,10 +103,23 @@ class AzureAuthConfig:
 
     @classmethod
     def default_credential(cls) -> "AzureAuthConfig":
+        """Create authentication config using default Azure credential.
+
+        Returns:
+            AzureAuthConfig instance configured for default credential authentication.
+        """
         return cls(authentication_method=AuthenticationMethod.DEFAULT_CREDENTIAL)
 
     @classmethod
     def from_config(cls, config: Any) -> "AzureAuthConfig":
+        """Create authentication config from a configuration object or mapping.
+
+        Args:
+            config: Configuration object or mapping containing authentication settings.
+
+        Returns:
+            AzureAuthConfig instance inferred from the configuration.
+        """
         # Aliases for API key
         api_key = _get(config, "api_key", "key", "search_key", "openai_key", "token")
         if api_key is not None:
@@ -130,12 +170,15 @@ class AzureAuthConfig:
         # Set optional fields via object.__setattr__ to be safe on all instances
         object.__setattr__(inst, "openai_key", api_key)
         object.__setattr__(inst, "openai_endpoint", endpoint)
-        object.__setattr__(
-            inst, "api_version", str(api_version) if api_version else None
-        )
+        object.__setattr__(inst, "api_version", str(api_version) if api_version else None)
         return inst
 
     def validate_for_method(self) -> None:
+        """Validate that required fields are present for the selected authentication method.
+
+        Raises:
+            ValueError: If required fields are missing for the authentication method.
+        """
         if self.authentication_method == AuthenticationMethod.TOKEN:
             if not self.api_key:
                 raise ValueError("API key is required for TOKEN authentication.")
@@ -152,10 +195,15 @@ class AzureAuthConfig:
         self,
         scope: str,
     ) -> Optional[Callable[[], str]]:
-        """
-        Return a **synchronous** callable that yields a bearer token string
-        suitable for passing as `azure_ad_token_provider` to
-        `openai.AsyncAzureOpenAI`. Returns None iff key-based auth should be used.
+        """Return a synchronous callable that yields a bearer token string.
+
+        Args:
+            scope: The OAuth2 scope for the token request.
+
+        Returns:
+            A synchronous callable that returns a bearer token string for passing as
+            azure_ad_token_provider to openai.AsyncAzureOpenAI, or None if key-based
+            authentication should be used instead.
         """
         # If explicit key path, don't build a provider.
         if self.authentication_method == AuthenticationMethod.TOKEN and self.api_key:
@@ -192,15 +240,10 @@ class AzureAuthConfig:
                     client_id=str(self.client_id),
                     client_secret=str(self.client_secret),
                 )
-            elif (
-                self.authentication_method == AuthenticationMethod.MSI
-                and self.client_id
-            ):
+            elif self.authentication_method == AuthenticationMethod.MSI and self.client_id:
                 cred = SyncManagedIdentityCredential(client_id=str(self.client_id))
             else:
-                cred = SyncDefaultAzureCredential(
-                    exclude_interactive_browser_credential=True
-                )
+                cred = SyncDefaultAzureCredential(exclude_interactive_browser_credential=True)
             return get_sync_bearer_token_provider(cred, scope)
         except Exception:
             pass
@@ -236,15 +279,10 @@ class AzureAuthConfig:
                     client_id=str(self.client_id),
                     client_secret=str(self.client_secret),
                 )
-            elif (
-                self.authentication_method == AuthenticationMethod.MSI
-                and self.client_id
-            ):
+            elif self.authentication_method == AuthenticationMethod.MSI and self.client_id:
                 aio_cred = AioManagedIdentityCredential(client_id=str(self.client_id))
             else:
-                aio_cred = AioDefaultAzureCredential(
-                    exclude_interactive_browser_credential=True
-                )
+                aio_cred = AioDefaultAzureCredential(exclude_interactive_browser_credential=True)
             aio_provider = get_aio_bearer_token_provider(aio_cred, scope)
         except Exception as e:  # pragma: no cover
             raise ImportError(

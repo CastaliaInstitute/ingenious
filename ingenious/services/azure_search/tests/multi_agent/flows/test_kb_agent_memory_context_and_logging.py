@@ -49,13 +49,11 @@ async def test_memory_context_truncates_last_10_and_100_chars(
     svc: SimpleNamespace = SimpleNamespace(chat_history_repository=repo)
 
     flow: kb.ConversationFlow = kb.ConversationFlow.__new__(kb.ConversationFlow)
-    flow._config = SimpleNamespace(models=[SimpleNamespace(model="gpt-4o")])
+    flow._config = SimpleNamespace(models=[SimpleNamespace(model="gpt-5")])
     flow._chat_service = svc
     flow._memory_path = str(tmp_path)
 
-    ctx: str = await flow._build_memory_context(
-        ChatRequest(user_prompt="q", thread_id="t1")
-    )
+    ctx: str = await flow._build_memory_context(ChatRequest(user_prompt="q", thread_id="t1"))
 
     # Only last 10 messages (drop msg0 and msg1); avoid 'msg1' vs 'msg10' collision
     assert "user: msg0..." not in ctx
@@ -82,7 +80,7 @@ async def test_memory_warning_throttled_to_once_within_60s(
     svc: SimpleNamespace = SimpleNamespace(chat_history_repository=repo)
 
     flow: kb.ConversationFlow = kb.ConversationFlow.__new__(kb.ConversationFlow)
-    flow._config = SimpleNamespace(models=[SimpleNamespace(model="gpt-4o")])
+    flow._config = SimpleNamespace(models=[SimpleNamespace(model="gpt-5")])
     flow._chat_service = svc
     flow._memory_path = str(tmp_path)
 
@@ -103,14 +101,10 @@ async def test_memory_warning_throttled_to_once_within_60s(
         _ = await flow._build_memory_context(req)  # second call -> DEBUG "(suppressed)"
 
     warns: list[LogRecord] = [
-        r
-        for r in caplog.records
-        if r.levelno >= logging.WARNING and r.name == kb_logger_name
+        r for r in caplog.records if r.levelno >= logging.WARNING and r.name == kb_logger_name
     ]
     debugs: list[LogRecord] = [
-        r
-        for r in caplog.records
-        if r.levelno == logging.DEBUG and r.name == kb_logger_name
+        r for r in caplog.records if r.levelno == logging.DEBUG and r.name == kb_logger_name
     ]
 
     assert any("Failed to retrieve thread memory:" in r.getMessage() for r in warns)

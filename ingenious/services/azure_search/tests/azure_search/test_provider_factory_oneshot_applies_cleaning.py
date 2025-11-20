@@ -1,5 +1,4 @@
-"""
-Provider factory one-shot fallback: ensure _clean_sources is applied.
+"""Provider factory one-shot fallback: ensure _clean_sources is applied.
 
 Why:
 - The final link in the provider fallback chain should pass results through

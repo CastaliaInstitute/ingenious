@@ -1,6 +1,4 @@
-"""
-Unit tests for the services module.
-"""
+"""Unit tests for the services module."""
 
 import os
 from unittest.mock import AsyncMock, Mock, mock_open, patch
@@ -25,48 +23,38 @@ class TestChatService:
 
     def test_init_with_valid_workflow(self):
         """Test ChatService initialization with valid workflow."""
-        with patch(
-            "ingenious.services.chat_service.import_class_with_fallback"
-        ) as mock_import:
+        with patch("ingenious.services.chat_service.import_class_with_fallback.") as mock_import:
             mock_service_class = Mock()
             mock_import.return_value = mock_service_class
 
             mock_config = Mock()
             mock_repository = Mock()
-            service = ChatService(
-                "test_workflow", mock_repository, "test_flow", mock_config
-            )
+            service = ChatService("test_workflow.", mock_repository, "test_flow.", mock_config)
             assert service.service_class is not None
 
     def test_init_with_invalid_workflow(self):
         """Test ChatService initialization with invalid workflow."""
-        with patch(
-            "ingenious.services.chat_service.import_class_with_fallback"
-        ) as mock_import:
-            mock_import.side_effect = ValueError("Module not found")
+        with patch("ingenious.services.chat_service.import_class_with_fallback.") as mock_import:
+            mock_import.side_effect = ValueError("Module not found.")
 
             mock_config = Mock()
             mock_repository = Mock()
             with pytest.raises(
-                Exception, match="Unexpected error during chat service initialization"
+                Exception, match="Unexpected error during chat service initialization."
             ):
-                ChatService(
-                    "invalid_workflow", mock_repository, "test_flow", mock_config
-                )
+                ChatService("invalid_workflow.", mock_repository, "test_flow.", mock_config)
 
     @pytest.mark.asyncio
     async def test_get_chat_response_success(self):
         """Test successful chat response generation."""
-        with patch(
-            "ingenious.services.chat_service.import_class_with_fallback"
-        ) as mock_import:
+        with patch("ingenious.services.chat_service.import_class_with_fallback.") as mock_import:
             mock_service_class = Mock()
             mock_service_instance = Mock()
             mock_service_instance.get_chat_response = AsyncMock(
                 return_value=ChatResponse(
-                    thread_id="test_thread",
-                    message_id="test_message_id",
-                    agent_response="Test response",
+                    thread_id="test_thread.",
+                    message_id="test_message_id.",
+                    agent_response="Test response.",
                     token_count=100,
                     max_token_count=1000,
                 )
@@ -76,16 +64,12 @@ class TestChatService:
 
             mock_config = Mock()
             mock_repository = Mock()
-            service = ChatService(
-                "test_workflow", mock_repository, "test_flow", mock_config
-            )
-            request = ChatRequest(
-                user_prompt="Test message", conversation_flow="test_flow"
-            )
+            service = ChatService("test_workflow.", mock_repository, "test_flow.", mock_config)
+            request = ChatRequest(user_prompt="Test message.", conversation_flow="test_flow.")
 
             response = await service.get_chat_response(request)
-            assert response.agent_response == "Test response"
-            assert response.thread_id == "test_thread"
+            assert response.agent_response == "Test response."
+            assert response.thread_id == "test_thread."
             mock_service_instance.get_chat_response.assert_called_once_with(request)
 
 
@@ -95,13 +79,13 @@ class TestMemoryManager:
     def test_get_memory_file_path(self):
         """Test memory file path generation."""
         mock_config = Mock()
-        mock_config.chat_history.memory_path = "memory"
+        mock_config.chat_history.memory_path = "memory."
 
-        with patch("ingenious.services.memory_manager.FileStorage"):
+        with patch("ingenious.services.memory_manager.FileStorage."):
             manager = MemoryManager(mock_config)
-            path, name = manager._get_memory_file_path("test_thread")
-            expected_path = "memory/test_thread"
-            expected_name = "context.md"
+            path, name = manager._get_memory_file_path("test_thread.")
+            expected_path = "memory/test_thread."
+            expected_name = "context.md."
             assert path == expected_path
             assert name == expected_name
 
@@ -109,18 +93,16 @@ class TestMemoryManager:
     async def test_read_memory_file_exists(self):
         """Test reading memory when file exists."""
         mock_config = Mock()
-        mock_config.chat_history.memory_path = "memory"
-        test_content = "Test memory content"
+        mock_config.chat_history.memory_path = "memory."
+        test_content = "Test memory content."
 
-        with patch(
-            "ingenious.services.memory_manager.FileStorage"
-        ) as mock_storage_class:
+        with patch("ingenious.services.memory_manager.FileStorage.") as mock_storage_class:
             mock_storage = AsyncMock()
             mock_storage.read_file = AsyncMock(return_value=test_content)
             mock_storage_class.return_value = mock_storage
 
             manager = MemoryManager(mock_config)
-            result = await manager.read_memory("test_thread")
+            result = await manager.read_memory("test_thread.")
             assert result == test_content
 
     @pytest.mark.asyncio
@@ -129,9 +111,7 @@ class TestMemoryManager:
         mock_config = Mock()
         mock_config.chat_history.memory_path = "memory"
 
-        with patch(
-            "ingenious.services.memory_manager.FileStorage"
-        ) as mock_storage_class:
+        with patch("ingenious.services.memory_manager.FileStorage") as mock_storage_class:
             mock_storage = Mock()
             mock_storage.read_file = AsyncMock(return_value="")
             mock_storage_class.return_value = mock_storage
@@ -147,9 +127,7 @@ class TestMemoryManager:
         mock_config.chat_history.memory_path = "memory"
         test_content = "Test memory content"
 
-        with patch(
-            "ingenious.services.memory_manager.FileStorage"
-        ) as mock_storage_class:
+        with patch("ingenious.services.memory_manager.FileStorage") as mock_storage_class:
             mock_storage = Mock()
             mock_storage.write_file = AsyncMock(return_value=True)
             mock_storage_class.return_value = mock_storage
@@ -165,9 +143,7 @@ class TestMemoryManager:
         mock_config.chat_history.memory_path = "memory"
         test_content = "Short content"
 
-        with patch(
-            "ingenious.services.memory_manager.FileStorage"
-        ) as mock_storage_class:
+        with patch("ingenious.services.memory_manager.FileStorage") as mock_storage_class:
             mock_storage = Mock()
             mock_storage_class.return_value = mock_storage
 
@@ -186,9 +162,7 @@ class TestMemoryManager:
         mock_config.chat_history.memory_path = "memory"
         test_content = "This is a very long content that exceeds the word limit"
 
-        with patch(
-            "ingenious.services.memory_manager.FileStorage"
-        ) as mock_storage_class:
+        with patch("ingenious.services.memory_manager.FileStorage") as mock_storage_class:
             mock_storage = Mock()
             mock_storage_class.return_value = mock_storage
 
@@ -209,9 +183,7 @@ class TestMemoryManager:
         mock_config = Mock()
         mock_config.chat_history.memory_path = "memory"
 
-        with patch(
-            "ingenious.services.memory_manager.FileStorage"
-        ) as mock_storage_class:
+        with patch("ingenious.services.memory_manager.FileStorage") as mock_storage_class:
             mock_storage = Mock()
             mock_storage.delete_file = AsyncMock(return_value=True)
             mock_storage_class.return_value = mock_storage
@@ -226,9 +198,7 @@ class TestMemoryManager:
         mock_config = Mock()
         mock_config.chat_history.memory_path = "memory"
 
-        with patch(
-            "ingenious.services.memory_manager.FileStorage"
-        ) as mock_storage_class:
+        with patch("ingenious.services.memory_manager.FileStorage") as mock_storage_class:
             mock_storage = Mock()
             mock_storage.delete_file = AsyncMock(return_value=True)
             mock_storage_class.return_value = mock_storage

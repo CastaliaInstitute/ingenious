@@ -1,4 +1,5 @@
 """Provide targeted CLI tests for azure-search command edge cases.
+
 This module contains tests for the `ingenious azure-search` CLI commands, focusing
 on specific scenarios not covered by broader functional or integration tests.
 It exists to verify argument parsing, error handling, and resource management
@@ -18,6 +19,7 @@ from typer.testing import CliRunner, Result
 
 def _base_env() -> dict[str, str]:
     """Create a minimal environment dictionary for CLI tests.
+
     This helper provides just enough configuration for the SearchConfig model to
     validate, allowing tests to focus on CLI command logic rather than
     configuration errors.
@@ -34,6 +36,7 @@ def _base_env() -> dict[str, str]:
 
 def test_run_without_query_exits_2() -> None:
     """Verify CLI exits with code 2 if 'run' is missing the QUERY argument.
+
     The positional QUERY argument is required; omitting it should be a Typer
     parse error (exit 2). This test confirms that argument validation at the
     CLI boundary works as expected, providing clear usage feedback to the user.
@@ -47,9 +50,7 @@ def test_run_without_query_exits_2() -> None:
     output: str = res.stdout + res.stderr
     assert "Usage:" in output or "usage:" in output
     assert (
-        "Missing argument" in output
-        or "missing argument" in output
-        or "required" in output.lower()
+        "Missing argument" in output or "missing argument" in output or "required" in output.lower()
     )
     # Typer usually names the arg in the error/help
     assert "QUERY" in output or "query" in output
@@ -57,6 +58,7 @@ def test_run_without_query_exits_2() -> None:
 
 def test_cli_prints_sources_with_special_ids_and_closes_pipeline() -> None:
     """Verify the CLI correctly prints source IDs and closes the pipeline.
+
     This end-to-end test ensures two critical behaviors: 1) Source document
     identifiers containing special characters (e.g., commas, quotes) are
     displayed without corruption. 2) The search pipeline's `close` method is
@@ -73,6 +75,7 @@ def test_cli_prints_sources_with_special_ids_and_closes_pipeline() -> None:
 
         async def get_answer(self, *_a: Any, **_k: Any) -> dict[str, Any]:
             """Simulate retrieving an answer and source documents.
+
             This provides a canned response for the CLI command to process,
             allowing the test to focus on how the CLI formats and presents this
             data without needing a real Azure Search connection.
@@ -97,6 +100,7 @@ def test_cli_prints_sources_with_special_ids_and_closes_pipeline() -> None:
 
         async def close(self) -> None:
             """Simulate closing the pipeline and record that it was called.
+
             This mock method acts as a sentinel, setting a flag that the test
             can assert on to confirm that the CLI command properly manages the
             pipeline's lifecycle.
@@ -131,8 +135,6 @@ def test_cli_prints_sources_with_special_ids_and_closes_pipeline() -> None:
     assert "ok" in out or "Answer" in out or "answer" in out
     # The output should show some indication of sources or documents
     # This could be "Source", "source", "Document", "document", or the actual count
-    assert any(
-        word in out.lower() for word in ["source", "document", "retrieved", "found"]
-    )
+    assert any(word in out.lower() for word in ["source", "document", "retrieved", "found"])
     # Ensure the pipeline lifecycle was respected at CLI level
     assert closed["value"] is True

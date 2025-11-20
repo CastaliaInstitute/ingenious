@@ -1,5 +1,5 @@
-"""
-Error handling context managers and utilities
+"""Error handling context managers and utilities.
+
 ============================================
 
 This module provides context managers and utilities for consistent error
@@ -72,9 +72,14 @@ F = TypeVar("F", bound=Callable[..., Any])
 class OperationContext:
     """Context for tracking operation state and metadata."""
 
-    def __init__(
-        self, operation: str, component: str = "", correlation_id: Optional[str] = None
-    ):
+    def __init__(self, operation: str, component: str = "", correlation_id: Optional[str] = None):
+        """Initialize OperationContext for tracking operation state and metadata.
+
+        Args:
+            operation: Name of the operation being tracked.
+            component: Component name performing the operation.
+            correlation_id: Unique identifier for correlating related operations. Auto-generated if not provided.
+        """
         self.operation = operation
         self.component = component
         self.correlation_id = correlation_id or str(uuid4())
@@ -122,12 +127,12 @@ def operation_context(
     **context_kwargs
         Additional context to include in errors
 
-    Yields
+    Yields:
     ------
     OperationContext
         Context object for the operation
 
-    Examples
+    Examples:
     --------
     >>> with operation_context("user_lookup", "auth_service") as ctx:
     ...     user = find_user(user_id)
@@ -208,7 +213,7 @@ def database_operation(
     retry_delay : float
         Delay between retries in seconds
 
-    Examples
+    Examples:
     --------
     >>> with database_operation("user_create", "users", max_retries=3):
     ...     user = db.create_user(user_data)
@@ -265,7 +270,7 @@ def api_operation(
     method : str, optional
         HTTP method being used
 
-    Examples
+    Examples:
     --------
     >>> with api_operation("chat_request", "/api/v1/chat", "POST") as ctx:
     ...     response = process_chat_request(request)
@@ -298,7 +303,7 @@ def file_operation(
     required : bool
         Whether the file is required to exist
 
-    Examples
+    Examples:
     --------
     >>> with file_operation("env_load", "/path/to/.env"):
     ...     load_environment()
@@ -360,7 +365,7 @@ def workflow_operation(
     step : str, optional
         Current step in the workflow
 
-    Examples
+    Examples:
     --------
     >>> with workflow_operation("chat_flow", "process_message", "validation"):
     ...     validate_message(message)
@@ -477,7 +482,7 @@ def retry_on_error(
     only_recoverable : bool
         Only retry recoverable IngeniousError instances
 
-    Examples
+    Examples:
     --------
     >>> @retry_on_error(max_retries=3, base_delay=1.0)
     >>> def fetch_external_data():
@@ -544,9 +549,7 @@ def retry_on_error(
             if last_exception:
                 raise last_exception
             else:
-                raise IngeniousError(
-                    "Retry loop completed without success or exception"
-                )
+                raise IngeniousError("Retry loop completed without success or exception")
 
         return wrapper  # type: ignore
 
@@ -616,9 +619,7 @@ def async_retry_on_error(
             if last_exception:
                 raise last_exception
             else:
-                raise IngeniousError(
-                    "Async retry loop completed without success or exception"
-                )
+                raise IngeniousError("Async retry loop completed without success or exception")
 
         return wrapper  # type: ignore
 
@@ -646,6 +647,11 @@ class FallbackRecoveryStrategy(RecoveryStrategy):
     """Recovery strategy that tries fallback operations."""
 
     def __init__(self, fallback_functions: list[Callable[..., Any]]):
+        """Initialize FallbackRecoveryStrategy with fallback operations.
+
+        Args:
+            fallback_functions: List of fallback functions to try in order for error recovery.
+        """
         self.fallback_functions = fallback_functions
 
     def can_recover(self, error: IngeniousError) -> bool:
@@ -684,6 +690,13 @@ class CircuitBreakerRecoveryStrategy(RecoveryStrategy):
         recovery_timeout: float = 60.0,
         expected_exception: Type[Exception] = IngeniousError,
     ):
+        """Initialize CircuitBreakerRecoveryStrategy with circuit breaker parameters.
+
+        Args:
+            failure_threshold: Number of failures before opening the circuit.
+            recovery_timeout: Timeout in seconds before attempting recovery from open state.
+            expected_exception: Exception type that triggers circuit breaker logic.
+        """
         self.failure_threshold = failure_threshold
         self.recovery_timeout = recovery_timeout
         self.expected_exception = expected_exception
@@ -751,7 +764,7 @@ def with_correlation_id(correlation_id: Optional[str] = None) -> Callable[[F], F
     correlation_id : str, optional
         Correlation ID to use. If None, generates a new one.
 
-    Examples
+    Examples:
     --------
     >>> @with_correlation_id()
     >>> def process_request(data):
@@ -774,9 +787,7 @@ def with_correlation_id(correlation_id: Optional[str] = None) -> Callable[[F], F
                 raise
             except Exception as exc:
                 # Convert to IngeniousError with correlation ID
-                error = handle_exception(
-                    exc, operation=func.__name__, component=func.__module__
-                )
+                error = handle_exception(exc, operation=func.__name__, component=func.__module__)
                 error.with_correlation_id(cid)
                 raise error from exc
 

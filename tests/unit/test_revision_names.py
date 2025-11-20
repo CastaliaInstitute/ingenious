@@ -1,3 +1,5 @@
+"""Test Revision Names functionality."""
+
 import re
 from unittest.mock import patch
 
@@ -21,10 +23,8 @@ class TestGenerateFunnyRevisionId:
         revision_id = generate_funny_revision_id()
 
         # Should match pattern: adjective-noun-8charhex
-        pattern = r"^[a-z]+-[a-z]+-[a-f0-9]{8}$"
-        assert re.match(pattern, revision_id), (
-            f"ID '{revision_id}' doesn't match expected pattern"
-        )
+        pattern = r"^[a-z]+-[a-z]+-[a-f0-9]{8}$."
+        assert re.match(pattern, revision_id), f"ID '{revision_id}' doesn't match expected pattern"
 
     def test_generate_funny_revision_id_parts(self):
         """Test that generated ID contains valid adjective and noun."""
@@ -124,28 +124,30 @@ class TestNormalizeRevisionId:
             normalize_revision_id(too_long)
 
         # Test even longer input
-        much_too_long = "my-very-very-very-very-very-very-very-long-project-name-that-exceeds-limits"
+        much_too_long = (
+            "my-very-very-very-very-very-very-very-long-project-name-that-exceeds-limits"
+        )
         with pytest.raises(ValueError, match="exceeds maximum length of 50 characters"):
             normalize_revision_id(much_too_long)
 
     def test_normalize_revision_id_length_validation_after_normalization(self):
         """Test that length is checked after normalization, not before."""
         # Input that's long but becomes shorter after normalization
-        input_with_invalid_chars = "a" * 60 + "@#$%!" + "b" * 10  # 75 chars total
+        input_with_invalid_chars = "a." * 60 + "@#$%!." + "b" * 10  # 75 chars total
 
-        with pytest.raises(ValueError, match="exceeds maximum length of 50 characters"):
+        with pytest.raises(ValueError, match="exceeds maximum length of 50 characters."):
             normalize_revision_id(input_with_invalid_chars)
 
     @patch("ingenious.utils.revision_names.logger")
     def test_normalize_revision_id_logging(self, mock_logger):
         """Test that function logs the normalization properly."""
-        result = normalize_revision_id("Test_Project")
+        result = normalize_revision_id("Test_Project.")
 
         mock_logger.debug.assert_called_once()
         call_args = mock_logger.debug.call_args
-        assert "Normalized revision ID" in call_args[0][0]
-        assert call_args[1]["original_name"] == "Test_Project"
-        assert call_args[1]["normalized_id"] == result
+        assert "Normalized revision ID." in call_args[0][0]
+        assert call_args[1]["original_name."] == "Test_Project."
+        assert call_args[1]["normalized_id."] == result
 
 
 class TestResolveUserRevisionId:
@@ -195,10 +197,7 @@ class TestResolveUserRevisionId:
     def test_resolve_user_revision_id_pattern_matching(self):
         """Test that only exact pattern matches are considered."""
         existing_ids = [
-            "myproject",  # Should not match
-            "myproject-1",
-            "myproject-test-2",  # Should not match
-            "other-myproject-3",  # Should not match
+            "myproject",  # Should not match."myproject-1", "myproject-test-2",  # Should not match."other-myproject-3",  # Should not match
         ]
         result = resolve_user_revision_id("myproject", existing_ids)
         assert result == "myproject-2"  # Only myproject-1 should match
@@ -214,9 +213,7 @@ class TestResolveUserRevisionId:
             "Expected availability log message not found"
         )
         # Last call should be the availability message.
-        assert (
-            "User revision ID available" in mock_logger.debug.call_args_list[-1].args[0]
-        )
+        assert "User revision ID available" in mock_logger.debug.call_args_list[-1].args[0]
 
     @patch("ingenious.utils.revision_names.logger")
     def test_resolve_user_revision_id_logging_with_conflict(self, mock_logger):
@@ -229,10 +226,7 @@ class TestResolveUserRevisionId:
             "Expected conflict resolution log message not found"
         )
         # Last call should be the conflict resolution message.
-        assert (
-            "Resolved user revision ID conflict"
-            in mock_logger.debug.call_args_list[-1].args[0]
-        )
+        assert "Resolved user revision ID conflict" in mock_logger.debug.call_args_list[-1].args[0]
 
 
 class TestGenerateRevisionId:
@@ -332,9 +326,7 @@ class TestWordLists:
     def test_adjectives_no_special_characters(self):
         """Test that adjectives contain only letters."""
         for adjective in ADJECTIVES:
-            assert adjective.isalpha(), (
-                f"Adjective '{adjective}' should contain only letters"
-            )
+            assert adjective.isalpha(), f"Adjective '{adjective}' should contain only letters"
 
     def test_nouns_no_special_characters(self):
         """Test that nouns contain only letters."""

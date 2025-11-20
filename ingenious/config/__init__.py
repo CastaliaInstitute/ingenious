@@ -1,5 +1,4 @@
-"""
-Configuration module for Ingenious.
+"""Configuration module for Ingenious.
 
 This module provides the public API for configuration management,
 maintaining backward compatibility while exposing a clean interface.
@@ -55,8 +54,7 @@ __all__ = [
 
 
 def get_config(project_path: str = "") -> IngeniousSettings:
-    """
-    Get configuration using pydantic-settings system.
+    """Get configuration using pydantic-settings system.
 
     This function provides configuration management that:
     - Automatically loads environment variables

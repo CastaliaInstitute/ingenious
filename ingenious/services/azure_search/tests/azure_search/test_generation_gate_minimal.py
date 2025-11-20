@@ -281,9 +281,7 @@ async def test_get_answer_generation_enabled_calls_generator(
     generation is enabled, the pipeline passes the fused chunks to the
     generator and includes its output in the final response.
     """
-    cfg = config_no_semantic.copy(
-        update={"enable_answer_generation": True, "top_n_final": 2}
-    )
+    cfg = config_no_semantic.copy(update={"enable_answer_generation": True, "top_n_final": 2})
     gen = SpyAnswerGen(cfg)
 
     pipe = AdvancedSearchPipeline(
@@ -310,9 +308,7 @@ async def test_get_answer_generation_disabled_raises_and_performs_no_io(
     calling `get_answer` when generation is disabled immediately raises a
     specific error without making costly network calls.
     """
-    cfg = config_no_semantic.copy(
-        update={"enable_answer_generation": False, "top_n_final": 3}
-    )
+    cfg = config_no_semantic.copy(update={"enable_answer_generation": False, "top_n_final": 3})
 
     retriever = StubRetriever(cfg)
     fuser = StubFuser(cfg)

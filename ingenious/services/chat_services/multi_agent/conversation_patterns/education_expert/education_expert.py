@@ -1,3 +1,9 @@
+"""Education expert conversation pattern implementation.
+
+This module provides a conversation pattern for educational assistance
+using an educator agent loaded from markdown configuration files.
+"""
+
 import autogen
 import autogen.retrieve_utils
 import autogen.runtime_logging
@@ -6,20 +12,44 @@ import ingenious.services.chat_services.multi_agent.agents.agents as agents
 
 
 class ConversationPattern:
+    """Conversation pattern for educational assistance.
+
+    Uses an educator agent configured from markdown files to provide
+    educational content and tutoring assistance.
+
+    Attributes:
+        default_llm_config: LLM configuration for agents.
+    """
+
     class Request:
+        """Request placeholder class for pattern compatibility."""
+
         def __init__(self):
+            """Initialize an empty request."""
             pass
 
     def __init__(self, default_llm_config: dict[str, object]):
+        """Initialize the education expert conversation pattern.
+
+        Args:
+            default_llm_config: Configuration for the language model.
+        """
         self.default_llm_config = default_llm_config
 
     async def get_conversation_response(
         self, input_message: str, thread_chat_history: list[object] = []
     ) -> str:
-        """
-        This function is the main entry point for the conversation pattern. It takes a message as input and returns a
-        response. Make sure that you have added the necessary topic agents and agent topic chats before
-        calling this function.
+        """Get an educational conversation response.
+
+        Loads the education expert agent from configuration and initiates
+        a chat to provide educational assistance.
+
+        Args:
+            input_message: User's input message (currently unused).
+            thread_chat_history: Previous conversation history. Defaults to empty list.
+
+        Returns:
+            Response string from the educator agent.
         """
         # chat_history_json = json.dumps(thread_chat_history)
         _educator = agents.GetAgent("education_expert")

@@ -29,7 +29,7 @@ log = logging.getLogger("ingenious.services.azure_search.builders")
 EMBEDDING_ROLES = frozenset(["embedding"])
 EMBEDDING_NAME_PATTERNS = frozenset(["embedding", "embed"])
 CHAT_ROLES = frozenset(["chat", "completion", "generation"])
-CHAT_NAME_PATTERNS = frozenset(["gpt", "4o"])
+CHAT_NAME_PATTERNS = frozenset(["gpt", "5"])
 DEFAULT_API_VERSION = "2024-02-15-preview"
 DEFAULT_SEMANTIC_CONFIG = "default"
 DEFAULT_TOP_K_RETRIEVAL = 20
@@ -40,7 +40,11 @@ DEFAULT_VECTOR_FIELD = "vector"
 
 
 class ConfigError(ValueError):
-    """User-actionable configuration error."""
+    """User-actionable configuration error.
+
+    This exception is raised when configuration validation fails, providing
+    clear error messages to help users correct their settings.
+    """
 
     pass
 
@@ -52,6 +56,16 @@ class ModelConfig(Protocol):
     This defines the expected shape of a configuration object for a single
     Azure OpenAI model (either embedding or chat), allowing for static analysis
     without requiring a specific class implementation.
+
+    Attributes:
+        role: The model's role (e.g., 'embedding', 'chat', 'completion').
+        model: The model name or identifier.
+        deployment: The Azure deployment name for the model.
+        endpoint: The API endpoint URL.
+        base_url: Alternative attribute for the API endpoint URL.
+        key: The API key (can be str or SecretStr).
+        api_key: Alternative attribute for the API key.
+        api_version: The API version to use.
     """
 
     role: Optional[str]
@@ -71,6 +85,21 @@ class AzureSearchService(Protocol):
     This defines the expected shape of the Azure Search service configuration,
     allowing for flexible, duck-typed configuration sources while ensuring
     all necessary attributes are checkable.
+
+    Attributes:
+        endpoint: The Azure Search service endpoint URL.
+        key: The API key for Azure Search (can be str or SecretStr).
+        api_key: Alternative attribute for the API key.
+        index_name: The name of the search index.
+        use_semantic_ranking: Whether to use semantic ranking.
+        semantic_ranking: Alternative attribute for semantic ranking flag.
+        semantic_configuration: The semantic configuration name.
+        semantic_configuration_name: Alternative attribute for semantic config.
+        top_k_retrieval: Number of initial results to retrieve.
+        top_n_final: Number of final results after ranking.
+        id_field: The document ID field name.
+        content_field: The content field name.
+        vector_field: The vector embedding field name.
     """
 
     endpoint: Optional[str]
@@ -129,6 +158,12 @@ def _first_non_empty(*vals: Optional[str]) -> Optional[str]:
     This is a utility for gracefully handling configuration aliases, allowing
     the system to check multiple potential sources for a value and picking the
     first one that is validly provided.
+
+    Args:
+        *vals: Variable number of optional string values to check.
+
+    Returns:
+        The first non-empty string found, or None if all are empty.
     """
     for v in vals:
         if isinstance(v, str) and v.strip():
@@ -142,6 +177,13 @@ def _get(obj: Any, *names: str) -> Optional[Any]:
     This function provides a safe way to access an attribute using multiple
     possible names (aliases), returning the first one found. This is useful for
     making configuration more flexible (e.g., accepting `key` or `api_key`).
+
+    Args:
+        obj: The object to inspect for attributes.
+        *names: Variable number of attribute names to try.
+
+    Returns:
+        The value of the first found attribute, or None if none exist.
     """
     for n in names:
         val: Optional[Any] = getattr(obj, n, None)
@@ -155,6 +197,16 @@ def _ensure_nonempty(value: Optional[str], field_name: str) -> str:
 
     This helper enforces that a required configuration field has been provided
     with a non-whitespace value, improving configuration robustness.
+
+    Args:
+        value: The string value to check.
+        field_name: The name of the field for error messages.
+
+    Returns:
+        The validated non-empty string.
+
+    Raises:
+        ConfigError: If the value is None, empty, or whitespace-only.
     """
     s = _first_non_empty(value)
     if not s:
@@ -168,6 +220,12 @@ def _extract_secret_value(value: Optional[str | SecretStr]) -> Optional[str]:
     This function centralizes the logic for handling values that might be
     wrapped in Pydantic's `SecretStr` for security. It safely unwraps the
     secret or returns the original value if it's already a string.
+
+    Args:
+        value: A string or SecretStr instance, or None.
+
+    Returns:
+        The unwrapped string value, or None if input is None.
     """
     if value is None:
         return None
@@ -188,10 +246,14 @@ def _model_endpoint(model: ModelConfig) -> Optional[str]:
     This exists to provide user flexibility, as different libraries and
     conventions use different attribute names for the same concept (an API base
     URL).
+
+    Args:
+        model: A model configuration object.
+
+    Returns:
+        The endpoint/base_url value, or None if not found.
     """
-    return _first_non_empty(
-        getattr(model, "endpoint", None), getattr(model, "base_url", None)
-    )
+    return _first_non_empty(getattr(model, "endpoint", None), getattr(model, "base_url", None))
 
 
 def _model_key(model: ModelConfig) -> Optional[str]:
@@ -200,6 +262,12 @@ def _model_key(model: ModelConfig) -> Optional[str]:
     This function allows users to specify an API key using common aliases and
     ensures that if a Pydantic `SecretStr` is provided (e.g., from settings),
     its underlying string value is correctly extracted.
+
+    Args:
+        model: A model configuration object.
+
+    Returns:
+        The extracted API key string, or None if not found.
     """
     key: Optional[str | SecretStr] = _get(model, "key", "api_key")
     return _extract_secret_value(key)
@@ -211,6 +279,12 @@ def _is_embedding_model(model: ModelConfig) -> bool:
     This function identifies an embedding model by checking its assigned 'role'
     or by looking for common embedding-related patterns in its name. This is
     critical for selecting the correct deployment for embedding tasks.
+
+    Args:
+        model: A model configuration object.
+
+    Returns:
+        True if the model is an embedding model, False otherwise.
     """
     role: str = (getattr(model, "role", "") or "").lower()
     if role in EMBEDDING_ROLES:
@@ -223,8 +297,14 @@ def _is_chat_model(model: ModelConfig) -> bool:
     """Determine if a model is intended for chat/completion.
 
     This function identifies a chat/generation model by checking its 'role'
-    or by looking for common patterns in its name (e.g., 'gpt', '4o'). This is
+    or by looking for common patterns in its name (e.g., 'gpt', '5'). This is
     critical for selecting the correct deployment for generation tasks.
+
+    Args:
+        model: A model configuration object.
+
+    Returns:
+        True if the model is a chat/generation model, False otherwise.
     """
     role: str = (getattr(model, "role", "") or "").lower()
     if role in CHAT_ROLES:
@@ -251,12 +331,8 @@ def _select_models(models: list[ModelConfig]) -> tuple[ModelConfig, ModelConfig]
         ConfigError: If the models cannot be properly identified or if one of
             the required roles is missing from the configuration.
     """
-    emb_cfg: Optional[ModelConfig] = next(
-        (m for m in models if _is_embedding_model(m)), None
-    )
-    chat_cfg: Optional[ModelConfig] = next(
-        (m for m in models if _is_chat_model(m)), None
-    )
+    emb_cfg: Optional[ModelConfig] = next((m for m in models if _is_embedding_model(m)), None)
+    chat_cfg: Optional[ModelConfig] = next((m for m in models if _is_chat_model(m)), None)
 
     if emb_cfg and chat_cfg:
         return emb_cfg, chat_cfg
@@ -286,7 +362,7 @@ def _select_models(models: list[ModelConfig]) -> tuple[ModelConfig, ModelConfig]
     if not chat_cfg:
         raise ConfigError(
             "No chat/generation model configured (expected role 'chat' or model "
-            "containing 'gpt'/'4o')."
+            "containing 'gpt'/'5')."
         )
     # This should never be reached, but satisfies mypy
     raise ConfigError("Unexpected error in model selection")
@@ -314,17 +390,11 @@ def _pick_models(settings: IngeniousSettings) -> tuple[str, str, str, str, str]:
     emb_cfg, chat_cfg = _select_models(models)
 
     # Extract deployment names (required for Azure)
-    emb_dep = _ensure_nonempty(
-        getattr(emb_cfg, "deployment", None), "Embedding deployment"
-    )
-    gen_dep = _ensure_nonempty(
-        getattr(chat_cfg, "deployment", None), "Generation deployment"
-    )
+    emb_dep = _ensure_nonempty(getattr(emb_cfg, "deployment", None), "Embedding deployment")
+    gen_dep = _ensure_nonempty(getattr(chat_cfg, "deployment", None), "Generation deployment")
 
     # Extract and validate endpoint
-    endpoint_candidate = _first_non_empty(
-        _model_endpoint(chat_cfg), _model_endpoint(emb_cfg)
-    )
+    endpoint_candidate = _first_non_empty(_model_endpoint(chat_cfg), _model_endpoint(emb_cfg))
     endpoint = _ensure_nonempty(endpoint_candidate, "OpenAI endpoint")
     endpoint = _validate_endpoint(endpoint, "OpenAI endpoint")
 
@@ -351,12 +421,19 @@ def _extract_search_config(svc: AzureSearchService) -> dict[str, Any]:
     This function gathers all Azure Search-specific settings, applies defaults
     for optional parameters, validates their values, and returns them in a
     dictionary ready to be passed to the `SearchConfig` constructor.
+
+    Args:
+        svc: An Azure Search service configuration object.
+
+    Returns:
+        A dictionary containing validated Azure Search configuration.
+
+    Raises:
+        ConfigError: If required settings are missing or invalid.
     """
     # Extract and validate endpoint
     search_endpoint_candidate: Optional[str] = _get(svc, "endpoint")
-    search_endpoint = _ensure_nonempty(
-        search_endpoint_candidate, "Azure Search endpoint"
-    )
+    search_endpoint = _ensure_nonempty(search_endpoint_candidate, "Azure Search endpoint")
     search_endpoint = _validate_endpoint(search_endpoint, "Azure Search endpoint")
 
     # Extract API key
@@ -413,6 +490,9 @@ def _ensure_openai_property_on_config_class() -> None:
     older code that expects to access OpenAI settings via a nested `cfg.openai`
     object, preventing breaking changes for consumers of the configuration
     object.
+
+    Returns:
+        None. Modifies SearchConfig class in place.
     """
     if hasattr(SearchConfig, "openai"):
         return
@@ -423,6 +503,9 @@ def _ensure_openai_property_on_config_class() -> None:
         This property emulates the old nested structure `config.openai` by
         dynamically creating a namespace from the flattened attributes on the
         main `SearchConfig` object.
+
+        Returns:
+            A SimpleNamespace containing OpenAI configuration settings.
         """
         # First, figure out the correct value for key_val
         if isinstance(self.openai_key, SecretStr):
@@ -445,9 +528,7 @@ def _ensure_openai_property_on_config_class() -> None:
     except (AttributeError, TypeError):
         # If SearchConfig is immutable or doesn't allow attribute injection,
         # log a warning but continue.
-        log.warning(
-            "Unable to add 'openai' property to SearchConfig for backward compatibility"
-        )
+        log.warning("Unable to add 'openai' property to SearchConfig for backward compatibility")
 
 
 # -------------------- Main builder function --------------------
@@ -474,21 +555,15 @@ def build_search_config_from_settings(settings: IngeniousSettings) -> SearchConf
             a key constraint (like using the same deployment for two roles).
     """
     # Validate Azure Search services configuration
-    services: list[AzureSearchService] = (
-        getattr(settings, "azure_search_services", None) or []
-    )
+    services: list[AzureSearchService] = getattr(settings, "azure_search_services", None) or []
     if not services or not services[0]:
-        raise ConfigError(
-            "Azure Search is not configured (azure_search_services[0] missing)."
-        )
+        raise ConfigError("Azure Search is not configured (azure_search_services[0] missing).")
 
     # Extract Azure Search configuration
     search_config: dict[str, Any] = _extract_search_config(services[0])
 
     # Extract and validate model configurations
-    openai_endpoint, openai_key, openai_version, emb_dep, gen_dep = _pick_models(
-        settings
-    )
+    openai_endpoint, openai_key, openai_version, emb_dep, gen_dep = _pick_models(settings)
 
     # Enforce distinct deployments for embedding and chat
     if emb_dep == gen_dep:

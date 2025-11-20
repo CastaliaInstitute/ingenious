@@ -1,5 +1,4 @@
-"""
-Command registry for dynamic CLI command discovery and registration.
+"""Command registry for dynamic CLI command discovery and registration.
 
 This module provides a registry system for automatically discovering and registering
 CLI commands, supporting both built-in and plugin commands.
@@ -21,7 +20,15 @@ logger = get_logger(__name__)
 
 
 class CommandInfo:
-    """Information about a registered command."""
+    """Information about a registered command.
+
+    Attributes:
+        name: Command name
+        command_class: Command class that inherits from BaseCommand
+        description: Command description
+        module_name: Module where the command is defined
+        hidden: Whether the command should be hidden from help
+    """
 
     def __init__(
         self,
@@ -31,6 +38,15 @@ class CommandInfo:
         module_name: str,
         hidden: bool = False,
     ):
+        """Initialize a CommandInfo instance.
+
+        Args:
+            name: Command name
+            command_class: Command class that inherits from BaseCommand
+            description: Command description
+            module_name: Module where the command is defined
+            hidden: Whether the command should be hidden from help
+        """
         self.name = name
         self.command_class = command_class
         self.description = description
@@ -38,23 +54,31 @@ class CommandInfo:
         self.hidden = hidden
 
     def __repr__(self) -> str:
+        """Return string representation of the CommandInfo.
+
+        Returns:
+            String representation with name and module
+        """
         return f"CommandInfo(name='{self.name}', module='{self.module_name}')"
 
 
 class CommandRegistry:
-    """
-    Registry for CLI commands with automatic discovery capabilities.
+    """Registry for CLI commands with automatic discovery capabilities.
 
     This registry manages command registration and discovery, supporting:
     - Manual command registration
     - Automatic discovery from command modules
     - Plugin command loading
     - Command validation and conflict resolution
+
+    Attributes:
+        console: Console instance for output formatting
+        _commands: Dictionary mapping command names to CommandInfo objects
+        _registered_modules: Set of registered module names
     """
 
     def __init__(self, console: Console):
-        """
-        Initialize the command registry.
+        """Initialize the command registry.
 
         Args:
             console: Console instance for output formatting
@@ -72,8 +96,7 @@ class CommandRegistry:
         hidden: bool = False,
         force: bool = False,
     ) -> None:
-        """
-        Register a command with the registry.
+        """Register a command with the registry.
 
         Args:
             name: Command name
@@ -89,9 +112,7 @@ class CommandRegistry:
         """
         # Validate command class
         if not issubclass(command_class, BaseCommand):
-            raise TypeError(
-                f"Command class {command_class.__name__} must inherit from BaseCommand"
-            )
+            raise TypeError(f"Command class {command_class.__name__} must inherit from BaseCommand")
 
         # Check for conflicts
         if name in self._commands and not force:
@@ -114,8 +135,7 @@ class CommandRegistry:
         logger.debug(f"Registered command '{name}' from module '{module_name}'")
 
     def register_from_module(self, module_name: str, force: bool = False) -> None:
-        """
-        Register commands from a module using its register_commands function.
+        """Register commands from a module using its register_commands function.
 
         Args:
             module_name: Module name to import and register commands from
@@ -133,9 +153,7 @@ class CommandRegistry:
             module = importlib.import_module(module_name)
 
             if not hasattr(module, "register_commands"):
-                raise AttributeError(
-                    f"Module '{module_name}' missing register_commands function"
-                )
+                raise AttributeError(f"Module '{module_name}' missing register_commands function")
 
             # Create a mock app to capture command registrations
             # For now, we'll note that the module is registered
@@ -147,14 +165,11 @@ class CommandRegistry:
             logger.error(f"Failed to import command module '{module_name}': {e}")
             raise
         except Exception as e:
-            logger.error(
-                f"Failed to register commands from module '{module_name}': {e}"
-            )
+            logger.error(f"Failed to register commands from module '{module_name}': {e}")
             raise
 
     def discover_commands(self, search_paths: List[str]) -> None:
-        """
-        Discover and register commands from specified search paths.
+        """Discover and register commands from specified search paths.
 
         Args:
             search_paths: List of module paths to search for commands
@@ -166,8 +181,7 @@ class CommandRegistry:
                 logger.warning(f"Failed to register commands from '{module_path}': {e}")
 
     def get_command(self, name: str) -> Optional[CommandInfo]:
-        """
-        Get command information by name.
+        """Get command information by name.
 
         Args:
             name: Command name
@@ -178,8 +192,7 @@ class CommandRegistry:
         return self._commands.get(name)
 
     def list_commands(self, include_hidden: bool = False) -> List[CommandInfo]:
-        """
-        List all registered commands.
+        """List all registered commands.
 
         Args:
             include_hidden: Whether to include hidden commands
@@ -193,8 +206,7 @@ class CommandRegistry:
         return sorted(commands, key=lambda x: x.name)
 
     def create_command_instance(self, name: str) -> Optional[BaseCommand]:
-        """
-        Create an instance of a registered command.
+        """Create an instance of a registered command.
 
         Args:
             name: Command name
@@ -213,8 +225,7 @@ class CommandRegistry:
             return None
 
     def register_typer_commands(self, app: typer.Typer) -> None:
-        """
-        Register all commands with a Typer application.
+        """Register all commands with a Typer application.
 
         This method bridges the new command architecture with the existing
         Typer-based CLI structure.
@@ -227,8 +238,7 @@ class CommandRegistry:
         logger.debug(f"Registry aware of {len(self._commands)} commands")
 
     def validate_commands(self) -> List[str]:
-        """
-        Validate all registered commands.
+        """Validate all registered commands.
 
         Returns:
             List of validation error messages (empty if all valid)
@@ -257,8 +267,7 @@ _registry: Optional[CommandRegistry] = None
 
 
 def get_registry(console: Optional[Console] = None) -> CommandRegistry:
-    """
-    Get the global command registry instance.
+    """Get the global command registry instance.
 
     Args:
         console: Console instance (required for first call)
@@ -287,8 +296,7 @@ def register_command(
     hidden: bool = False,
     console: Optional[Console] = None,
 ) -> None:
-    """
-    Register a command with the global registry.
+    """Register a command with the global registry.
 
     Args:
         name: Command name

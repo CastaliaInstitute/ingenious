@@ -65,9 +65,7 @@ def _patch_build_pipeline(mock_instance: MagicMock) -> AbstractContextManager[An
     return patch(f"{CLI_MOD}.build_search_pipeline", mock_instance)
 
 
-def test_run_search_pipeline_success(
-    config: SearchConfig, capsys: CaptureFixture[str]
-) -> None:
+def test_run_search_pipeline_success(config: SearchConfig, capsys: CaptureFixture[str]) -> None:
     """Test the successful execution of the search pipeline.
 
     This test verifies that when the pipeline runs without errors, it prints the
@@ -228,9 +226,7 @@ def test_cli_custom_dat_prompt_missing() -> None:
     code without attempting to run the search pipeline.
     """
     with patch(f"{CLI_MOD}._run_search_pipeline") as rp:
-        res: Result = runner.invoke(
-            app, ["q", "--dat-prompt-file", "missing.txt"], env=ENV
-        )
+        res: Result = runner.invoke(app, ["q", "--dat-prompt-file", "missing.txt"], env=ENV)
         assert res.exit_code == 1
         assert "DAT prompt file not found" in res.stdout
         rp.assert_not_called()

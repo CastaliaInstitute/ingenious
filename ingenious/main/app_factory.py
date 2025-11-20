@@ -1,5 +1,4 @@
-"""
-FastAPI application factory.
+"""FastAPI application factory.
 
 This module contains the factory function for creating and configuring
 the FastAPI application with all necessary middleware, routes, and services.
@@ -21,15 +20,29 @@ if TYPE_CHECKING:
 
 
 class FastAgentAPI:
-    """FastAPI application wrapper with initialization and configuration."""
+    """FastAPI application wrapper with initialization and configuration.
+
+    Attributes:
+        config: Ingenious configuration settings
+        app: FastAPI application instance
+    """
 
     def __init__(self, config: "IngeniousSettings"):
+        """Initialize FastAgentAPI with configuration.
+
+        Args:
+            config: Ingenious configuration settings
+        """
         self.config = config
         self.app = self._create_app()
         self._configure_app()
 
     def _create_app(self) -> FastAPI:
-        """Create the FastAPI application instance."""
+        """Create the FastAPI application instance.
+
+        Returns:
+            FastAPI application instance
+        """
         return FastAPI(title="FastAgent API", version="1.0.0")
 
     def _configure_app(self) -> None:
@@ -48,11 +61,11 @@ class FastAgentAPI:
         pass
 
     def _setup_working_directory(self) -> None:
-        """Set the working directory."""
+        """Set the working directory from environment variable."""
         os.chdir(os.environ["INGENIOUS_WORKING_DIR"])
 
     def _setup_middleware(self) -> None:
-        """Configure middleware stack."""
+        """Configure middleware stack including CORS and authentication."""
         # Add request context middleware first
         self.app.add_middleware(RequestContextMiddleware)
 
@@ -72,9 +85,7 @@ class FastAgentAPI:
         )
 
         # Add authentication middleware if configured
-        if hasattr(
-            self.config.web_configuration.authentication, "enable_global_middleware"
-        ):
+        if hasattr(self.config.web_configuration.authentication, "enable_global_middleware"):
             from ingenious.auth.middleware import setup_auth_middleware
 
             setup_auth_middleware(self.app, self.config)
@@ -96,13 +107,16 @@ class FastAgentAPI:
         self.app.get("/", tags=["Root"])(self.redirect_to_docs)
 
     async def redirect_to_docs(self) -> RedirectResponse:
-        """Redirect the root endpoint to /docs."""
+        """Redirect the root endpoint to /docs.
+
+        Returns:
+            RedirectResponse to /docs endpoint
+        """
         return RedirectResponse(url="/docs")
 
 
 def create_app(config: "IngeniousSettings") -> FastAPI:
-    """
-    Factory function to create a configured FastAPI application.
+    """Factory function to create a configured FastAPI application.
 
     Args:
         config: Ingenious configuration settings

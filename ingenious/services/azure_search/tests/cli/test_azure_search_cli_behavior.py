@@ -1,4 +1,5 @@
 """Tests the behavior of the Azure Search CLI command.
+
 This module contains integration-style tests for the command-line interface
 of the Azure Search service. It focuses on validating the CLI's direct
 responsibilities, such as argument parsing, error handling, and environment
@@ -32,9 +33,7 @@ def _base_env() -> dict[str, str]:
 
 
 # FIX: Update _base_args to use the correct argument name --semantic-config.
-def _base_args(
-    verbose: bool = False, include_semantic_config: bool = True
-) -> list[str]:
+def _base_args(verbose: bool = False, include_semantic_config: bool = True) -> list[str]:
     """Create a base list of command-line arguments for the 'run' command."""
     # This helper provides a consistent set of arguments for invoking the CLI,
     # making tests easier to read and maintain.
@@ -78,9 +77,7 @@ def test_cli_missing_semantic_name_exits_1() -> None:
         "Error: Semantic ranking is enabled but no semantic configuration name was provided."
         in result.stdout
     )
-    assert (
-        "Supply --semantic-config or set AZURE_SEARCH_SEMANTIC_CONFIG." in result.stdout
-    )
+    assert "Supply --semantic-config or set AZURE_SEARCH_SEMANTIC_CONFIG." in result.stdout
 
 
 def test_cli_verbose_sets_component_loggers() -> None:
@@ -110,12 +107,8 @@ def test_cli_verbose_sets_component_loggers() -> None:
     logging.getLogger().setLevel(logging.WARNING)
     # Avoid running the real pipeline; we only want logging setup from CLI
     # Use _base_args(verbose=True), which now includes the correct semantic config argument by default.
-    with patch(
-        "ingenious.services.azure_search.cli._run_search_pipeline", return_value=None
-    ):
-        result: Result = CliRunner().invoke(
-            app, _base_args(verbose=True), env=_base_env()
-        )
+    with patch("ingenious.services.azure_search.cli._run_search_pipeline", return_value=None):
+        result: Result = CliRunner().invoke(app, _base_args(verbose=True), env=_base_env())
     assert result.exit_code == 0
     # All component loggers should now be DEBUG
     for name in logger_names:

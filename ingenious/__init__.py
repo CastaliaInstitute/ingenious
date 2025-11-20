@@ -1,6 +1,5 @@
 # ingenious/__init__.py
-"""
-Ingenious - AI-powered conversation and workflow engine.
+"""Ingenious - AI-powered conversation and workflow engine.
 
 This package provides a modular system for building AI-powered applications
 with support for dynamic workflows, chat services, and extensible architectures.

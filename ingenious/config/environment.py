@@ -1,5 +1,4 @@
-"""
-Environment variable handling and configuration loading.
+"""Environment variable handling and configuration loading.
 
 This module handles environment variable processing and
 provides utilities for loading configuration from different sources.
@@ -15,7 +14,12 @@ if TYPE_CHECKING:
 
 
 def get_settings_config() -> SettingsConfigDict:
-    """Get the standard settings configuration for pydantic-settings."""
+    """Get the standard settings configuration for pydantic-settings.
+
+    Returns:
+        Configuration dictionary for pydantic-settings with INGENIOUS_ prefix,
+        nested delimiter, and .env file support.
+    """
     return SettingsConfigDict(
         env_prefix="INGENIOUS_",
         env_nested_delimiter="__",
@@ -28,14 +32,26 @@ def get_settings_config() -> SettingsConfigDict:
 
 
 def load_from_env_file(env_file: str = ".env") -> "IngeniousSettings":
-    """Load settings from a specific .env file."""
+    """Load settings from a specific .env file.
+
+    Args:
+        env_file: Path to the environment file to load.
+
+    Returns:
+        Loaded and validated IngeniousSettings instance.
+    """
     from .main_settings import IngeniousSettings
 
     return IngeniousSettings(_env_file=env_file)
 
 
 def create_minimal_config() -> "IngeniousSettings":
-    """Create a minimal configuration for development."""
+    """Create a minimal configuration for development.
+
+    Returns:
+        IngeniousSettings instance configured with minimal defaults suitable
+        for local development and testing.
+    """
     from .main_settings import IngeniousSettings
     from .models import (
         LoggingSettings,
@@ -47,14 +63,12 @@ def create_minimal_config() -> "IngeniousSettings":
     return IngeniousSettings(
         models=[
             ModelSettings(
-                model="gpt-4o-mini",
+                model="gpt-5-mini",
                 api_type="rest",
                 api_version="2023-03-15-preview",
                 api_key=os.getenv("AZURE_OPENAI_API_KEY", "test-api-key"),
-                base_url=os.getenv(
-                    "AZURE_OPENAI_BASE_URL", "https://test.openai.azure.com/"
-                ),
-                deployment=os.getenv("AZURE_OPENAI_DEPLOYMENT", "gpt-4o-mini"),
+                base_url=os.getenv("AZURE_OPENAI_BASE_URL", "https://test.openai.azure.com/"),
+                deployment=os.getenv("AZURE_OPENAI_DEPLOYMENT", "gpt-5-mini"),
             )
         ],
         logging=LoggingSettings(root_log_level="debug", log_level="debug"),

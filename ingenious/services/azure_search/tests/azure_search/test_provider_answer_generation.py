@@ -47,16 +47,13 @@ async def test_answer_raises_when_generation_disabled(
     # Reason & snapshot available
     assert (
         getattr(excinfo.value, "reason", "") == "generation_disabled"
-        or getattr(getattr(excinfo.value, "reason", ""), "value", "")
-        == "generation_disabled"
+        or getattr(getattr(excinfo.value, "reason", ""), "value", "") == "generation_disabled"
     )
     snap: dict[str, Any] = getattr(excinfo.value, "snapshot", {})
     assert "use_semantic_ranking" in snap and "top_n_final" in snap
 
     # Ensure fail-fast: pipeline.get_answer was NOT called
-    dummy_pipeline = provider_mod.build_search_pipeline(
-        None
-    )  # returns the shared dummy
+    dummy_pipeline = provider_mod.build_search_pipeline(None)  # returns the shared dummy
     assert dummy_pipeline.get_answer_called == 0
 
 
@@ -160,8 +157,6 @@ async def test_retrieve_unaffected_when_generation_disabled(
     """Ensure provider.retrieve delegates to pipeline.retrieve without touching generation flags."""
     provider_mod = import_provider_with_stubs
     p = _DummyPipeline()
-    prov = provider_mod.AzureSearchProvider(
-        settings_or_config=settings_disabled, pipeline=p
-    )
+    prov = provider_mod.AzureSearchProvider(settings_or_config=settings_disabled, pipeline=p)
     rows = await prov.retrieve("q")
     assert rows and rows[0]["id"] == "1"

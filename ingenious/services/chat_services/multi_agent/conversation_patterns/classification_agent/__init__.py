@@ -1,6 +1,8 @@
-# N.B.
-# This will add to the package’s __path__ all subdirectories of directories on sys.path named after the package which effectively combines both modules into a single namespace (dbt.adapters)
-# The matching statement is in plugins/postgres/dbt/__init__.py
+"""Classification agent pattern for text classification and sentiment analysis.
+
+This pattern provides conversation capabilities for classifying text and
+analyzing sentiment using AutoGen-based agents.
+"""
 
 from pkgutil import extend_path
 

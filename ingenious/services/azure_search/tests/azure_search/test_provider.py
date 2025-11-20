@@ -1,6 +1,4 @@
-"""
-Provider unit tests — focus on delegation and preflight checks.
-"""
+"""Provider unit tests — focus on delegation and preflight checks."""
 
 from __future__ import annotations
 
@@ -27,7 +25,7 @@ def _make_settings() -> IngeniousSettings:
             api_version="2024-02-01",
         ),
         ModelSettings(
-            model="gpt-4o",
+            model="gpt-5",
             deployment="chat",
             api_key="K",
             base_url="https://oai.example.com",
@@ -47,6 +45,11 @@ def _make_settings() -> IngeniousSettings:
 
 @pytest.mark.asyncio
 async def test_provider_retrieve_delegates(monkeypatch: pytest.MonkeyPatch) -> None:
+    """Test that provider retrieve method delegates to pipeline.
+
+    Verifies that AzureSearchProvider.retrieve properly delegates search
+    queries to the underlying pipeline's retrieve method.
+    """
     settings = _make_settings()
     pipeline = MagicMock()
     pipeline.retrieve = AsyncMock(return_value=[{"id": "A", "content": "Alpha"}])
@@ -67,6 +70,11 @@ async def test_provider_retrieve_delegates(monkeypatch: pytest.MonkeyPatch) -> N
 async def test_provider_close_tolerates_sync_or_async(
     monkeypatch: pytest.MonkeyPatch, async_close: bool
 ) -> None:
+    """Test that provider close handles both sync and async pipeline close methods.
+
+    Verifies that the provider's close method can handle pipelines with either
+    synchronous or asynchronous close implementations.
+    """
     settings = _make_settings()
     pipeline = MagicMock()
     if async_close:
@@ -92,6 +100,11 @@ async def test_provider_close_tolerates_sync_or_async(
 async def test_provider_answer_blank_query_short_circuits(
     monkeypatch: pytest.MonkeyPatch, caplog: pytest.LogCaptureFixture
 ) -> None:
+    """Test that provider answer method short-circuits on blank queries.
+
+    Verifies that blank or whitespace-only queries return a helpful message
+    without calling the pipeline's get_answer method.
+    """
     settings = _make_settings()
     pipeline = MagicMock()
     pipeline.get_answer = AsyncMock()
@@ -120,6 +133,11 @@ async def test_provider_answer_blank_query_short_circuits(
 async def test_provider_answer_raises_when_generation_disabled(
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
+    """Test that provider answer raises error when generation is disabled.
+
+    Verifies that calling answer() when enable_answer_generation is False
+    raises a GenerationDisabledError.
+    """
     settings = _make_settings()
     pipeline = MagicMock()
     pipeline.get_answer = AsyncMock()
@@ -141,6 +159,11 @@ async def test_provider_answer_raises_when_generation_disabled(
 async def test_provider_answer_passes_query_unmodified(
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
+    """Test that provider passes queries to pipeline without modification.
+
+    Verifies that queries including whitespace are passed to the pipeline's
+    get_answer method exactly as received without trimming or normalization.
+    """
     settings = _make_settings()
 
     captured: dict[str, str] = {}

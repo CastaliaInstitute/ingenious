@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-"""
-Unit tests for the async Azure client initialization helpers in
+"""Unit tests for the async Azure client initialization helpers in.
+
 `ingenious.services.azure_search.client_init`.
 
 This module validates the following contract:
@@ -54,8 +54,7 @@ from ingenious.services.azure_search.config import SearchConfig
 def _install_dummy_sdk_modules(
     monkeypatch: pytest.MonkeyPatch,
 ) -> dict[str, type[Any]]:
-    """
-    Install minimal dummy SDK modules into sys.modules for testing.
+    """Install minimal dummy SDK modules into sys.modules for testing.
 
     We emulate only the small subset of SDK surface needed by the code under test:
       - azure.core.credentials.AzureKeyCredential
@@ -79,8 +78,7 @@ def _install_dummy_sdk_modules(
 
     # --- azure.search.documents.aio.SearchClient -----------------------------
     class DummySearchClient:
-        """
-        A dummy async SearchClient that captures constructor arguments and any extra kwargs.
+        """A dummy async SearchClient that captures constructor arguments and any extra kwargs.
 
         It accepts **kwargs to mirror the real SDK's permissive constructor surface,
         allowing tests to verify pass-through of client_options.
@@ -101,8 +99,7 @@ def _install_dummy_sdk_modules(
 
     # --- openai.AsyncAzureOpenAI --------------------------------------------
     class DummyAsyncAzureOpenAI:
-        """
-        A strict dummy of AsyncAzureOpenAI that matches the expected constructor.
+        """A strict dummy of AsyncAzureOpenAI that matches the expected constructor.
 
         NOTE: No **kwargs on purpose, so passing unknown options would raise TypeError
         unless the builder filters them out.
@@ -154,8 +151,8 @@ def _install_dummy_sdk_modules(
 def _reload_client_init_with_dummies(
     monkeypatch: pytest.MonkeyPatch,
 ) -> tuple[types.ModuleType, dict[str, type[Any]]]:
-    """
-    Install dummy SDKs and then ensure that the factory/builders and client_init
+    """Install dummy SDKs and then ensure that the factory/builders and client_init.
+
     bind to those dummy modules, even if they were imported earlier.
 
     Implementation detail:
@@ -192,8 +189,7 @@ def _reload_client_init_with_dummies(
 
 
 def _make_cfg(**overrides: Any) -> SearchConfig:
-    """
-    Create a valid SearchConfig with reasonable defaults for tests.
+    """Create a valid SearchConfig with reasonable defaults for tests.
 
     The defaults include both Search and OpenAI endpoints/keys so we can exercise
     both `make_async_search_client` and `make_async_openai_client` in one place.
@@ -221,8 +217,7 @@ def _make_cfg(**overrides: Any) -> SearchConfig:
 def test_make_async_search_client_uses_secretstr(
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
-    """
-    Ensure `make_async_search_client` unwraps SecretStr for the AzureKeyCredential and maps fields.
+    """Ensure `make_async_search_client` unwraps SecretStr for the AzureKeyCredential and maps fields.
 
     Assertions:
       - The returned object is the dummy SearchClient.
@@ -246,8 +241,7 @@ def test_make_async_search_client_uses_secretstr(
 def test_make_async_openai_client_maps_version_and_max_retries(
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
-    """
-    Verify `make_async_openai_client` + builder map values and ensure default max_retries.
+    """Verify `make_async_openai_client` + builder map values and ensure default max_retries.
 
     This test validates:
       - Mapping: `openai_endpoint` -> azure_endpoint, `openai_key` -> api_key,
@@ -270,9 +264,7 @@ def test_make_async_openai_client_maps_version_and_max_retries(
 def test_make_async_openai_client_respects_explicit_max_retries(
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
-    """
-    If the caller passes `max_retries`, the builder should honor that value verbatim.
-    """
+    """If the caller passes `max_retries`, the builder should honor that value verbatim."""
     client_init, d = _reload_client_init_with_dummies(monkeypatch)
     cfg = _make_cfg(openai_version="2025-01-01")
 
@@ -285,8 +277,7 @@ def test_make_async_openai_client_respects_explicit_max_retries(
 def test_make_async_openai_client_normalizes_retries_alias(
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
-    """
-    If the caller passes the alias `retries`, normalize it to `max_retries`.
+    """If the caller passes the alias `retries`, normalize it to `max_retries`.
 
     The builder is responsible for translating aliases; the wrapper simply forwards.
     """
@@ -302,8 +293,7 @@ def test_make_async_openai_client_normalizes_retries_alias(
 def test_make_async_openai_client_drops_unknown_kwargs_without_error(
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
-    """
-    Unknown kwargs must not reach the SDK constructor.
+    """Unknown kwargs must not reach the SDK constructor.
 
     Our strict dummy for AsyncAzureOpenAI does not accept **kwargs; the builder must
     filter out unrecognized options to avoid TypeError and still create the client.
@@ -322,8 +312,7 @@ def test_make_async_openai_client_drops_unknown_kwargs_without_error(
 def test_make_async_search_client_forwards_client_options(
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
-    """
-    The Search builder/wrapper should forward client_options to the SDK constructor.
+    """The Search builder/wrapper should forward client_options to the SDK constructor.
 
     The dummy SearchClient stores unrecognized kwargs in `extra_kwargs`; verifying
     those values confirms pass-through behavior on the Search path.
@@ -336,9 +325,7 @@ def test_make_async_search_client_forwards_client_options(
     client_init, d = _reload_client_init_with_dummies(monkeypatch)
     cfg = _make_cfg()
 
-    sc: Any = client_init.make_async_search_client(
-        cfg, http_logging_policy=True, my_opt=123
-    )
+    sc: Any = client_init.make_async_search_client(cfg, http_logging_policy=True, my_opt=123)
 
     assert isinstance(sc, d["SearchClient"])
     assert sc.extra_kwargs.get("http_logging_policy") is True
@@ -348,8 +335,7 @@ def test_make_async_search_client_forwards_client_options(
 def test_make_async_openai_client_rejects_negative_max_retries(
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
-    """
-    Validation guard: negative values for `max_retries` must raise ValueError.
+    """Validation guard: negative values for `max_retries` must raise ValueError.
 
     This ensures the builder enforces sane bounds on retry settings.
     """

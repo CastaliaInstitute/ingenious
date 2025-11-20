@@ -1,6 +1,5 @@
 # ingenious_extensions_template/__init__.py
-"""
-Ingenious Extensions Template.
+"""Ingenious Extensions Template.
 
 This package provides template modules and examples for extending Ingenious
 with custom workflows, chat services, and other components.

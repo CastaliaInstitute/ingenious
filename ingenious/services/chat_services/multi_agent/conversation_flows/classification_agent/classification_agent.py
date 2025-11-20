@@ -1,3 +1,9 @@
+"""Classification agent conversation flow implementation.
+
+This module provides a conversation flow for text classification using
+AutoGen agentchat with a classification agent.
+"""
+
 import logging
 import uuid
 
@@ -12,6 +18,12 @@ from ingenious.models.chat import ChatRequest
 
 
 class ConversationFlow:
+    """Conversation flow for text classification and sentiment analysis.
+
+    Provides a static method for classifying user messages into predefined
+    categories using an AutoGen classification agent with conversation history context.
+    """
+
     @staticmethod
     async def get_conversation_response(
         message: str,
@@ -21,6 +33,24 @@ class ConversationFlow:
         thread_chat_history=None,
         chatrequest: ChatRequest = None,  # For backward compatibility
     ) -> tuple[str, str]:
+        """Get a classification response for the user message.
+
+        Classifies the user message into predefined categories (product inquiries,
+        purchase questions, support issues, or undefined) and provides a helpful response.
+
+        Args:
+            message: User's message to classify.
+            topics: List of topics for classification. Defaults to None.
+            thread_memory: Previous conversation memory as string. Defaults to empty string.
+            memory_record_switch: Whether memory recording is enabled. Defaults to True.
+            thread_chat_history: Previous conversation history as list. Defaults to None.
+            chatrequest: ChatRequest object for backward compatibility. Defaults to None.
+
+        Returns:
+            Tuple of (classification_result, memory_summary) where classification_result
+            contains the category, explanation, and response, and memory_summary is a
+            brief summary for memory storage.
+        """
         # Use provided message or extract from chatrequest
         if chatrequest:
             message = chatrequest.user_prompt
@@ -62,14 +92,10 @@ class ConversationFlow:
                     f"{hist.get('role', 'unknown')}: {hist.get('content', '')[:100]}..."
                 )
             if memory_parts:
-                memory_context = (
-                    "Previous conversation:\n" + "\n".join(memory_parts) + "\n\n"
-                )
+                memory_context = "Previous conversation:\n" + "\n".join(memory_parts) + "\n\n"
 
         # Create the Azure OpenAI client using the provided model configuration
-        model_client = AzureClientFactory.create_openai_chat_completion_client(
-            model_config
-        )
+        model_client = AzureClientFactory.create_openai_chat_completion_client(model_config)
 
         # Create classification system prompt with memory context
         classification_system_prompt = f"""

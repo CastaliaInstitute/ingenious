@@ -1,3 +1,9 @@
+"""SQL manipulation agent conversation pattern implementation.
+
+This module provides a conversation pattern for natural language SQL query generation
+and execution using AutoGen group chat with planner, researcher, and SQL writer agents.
+"""
+
 import autogen
 import autogen.retrieve_utils
 import autogen.runtime_logging
@@ -9,6 +15,26 @@ logger = get_logger(__name__)
 
 
 class ConversationPattern:
+    """Conversation pattern for natural language to SQL query generation.
+
+    Orchestrates a group chat between planner, researcher, and SQL writer agents
+    to translate natural language questions into SQL queries and execute them.
+
+    Attributes:
+        default_llm_config: LLM configuration for agents.
+        topics: List of available topic categories.
+        memory_record_switch: Whether to record conversation in memory.
+        memory_path: Path to memory storage.
+        thread_memory: Existing conversation memory context.
+        context: Current conversation context.
+        sql_writer: Agent for writing SQL queries.
+        analyst_agent: Agent for analyzing query results (optional).
+        memory_manager: Memory manager for cloud storage support.
+        user_proxy: User proxy agent for initiating conversations.
+        planner: Planner agent for orchestrating the conversation.
+        researcher: Researcher agent for composing responses.
+    """
+
     def __init__(
         self,
         default_llm_config: dict[str, object],
@@ -17,6 +43,15 @@ class ConversationPattern:
         memory_path: str,
         thread_memory: str,
     ):
+        """Initialize the SQL manipulation conversation pattern.
+
+        Args:
+            default_llm_config: Configuration for the language model.
+            topics: List of topic names for categorization.
+            memory_record_switch: Whether to enable memory recording.
+            memory_path: File system path for memory storage.
+            thread_memory: Previous conversation memory.
+        """
         self.default_llm_config = default_llm_config
         self.topics = topics
         self.memory_record_switch = memory_record_switch
@@ -44,9 +79,7 @@ class ConversationPattern:
                 thread_memory_length=len(self.thread_memory),
                 note="Requires ChatHistorySummariser for optional dependency",
             )
-            run_async_memory_operation(
-                self.memory_manager.write_memory(self.thread_memory)
-            )
+            run_async_memory_operation(self.memory_manager.write_memory(self.thread_memory))
 
         # Read current context
         self.context = run_async_memory_operation(
@@ -122,10 +155,18 @@ class ConversationPattern:
         )
 
     async def get_conversation_response(self, input_message: str) -> list[str]:
-        """
-        This function is the main entry point for the conversation pattern. It takes a message as input and returns a
-        response. Make sure that you have added the necessary topic agents and agent topic chats before
-        calling this function.
+        """Get a conversation response by converting natural language to SQL.
+
+        Orchestrates a group chat where planner routes to researcher, researcher
+        requests SQL from sql_writer, and results are composed into a final response.
+        Ensure sql_writer has been set before calling this method.
+
+        Args:
+            input_message: User's natural language question to convert to SQL.
+
+        Returns:
+            List containing [response_summary, context] where response_summary
+            is the final answer and context is the conversation context.
         """
         graph_dict = {}
         graph_dict[self.user_proxy] = [self.planner]
@@ -170,10 +211,7 @@ class ConversationPattern:
                 message=(
                     "Use group chat to solve user question. Keep the final answer concise."
                     "The last speaker should be `planner`."
-                    "Conversation context:"
-                    + self.context
-                    + "\nUser question: "
-                    + input_message
+                    "Conversation context:" + self.context + "\nUser question: " + input_message
                 ),
                 # problem=input_message,
                 summary_method="last_msg",

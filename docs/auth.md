@@ -10,6 +10,9 @@ Enable authentication by setting these environment variables:
 # Enable authentication
 INGENIOUS_WEB_CONFIGURATION__AUTHENTICATION__ENABLE=true
 
+# CRITICAL: Enable global authentication middleware to protect all endpoints
+INGENIOUS_WEB_CONFIGURATION__AUTHENTICATION__ENABLE_GLOBAL_MIDDLEWARE=true
+
 # Set Basic Auth credentials
 INGENIOUS_WEB_CONFIGURATION__AUTHENTICATION__USERNAME=<username>
 INGENIOUS_WEB_CONFIGURATION__AUTHENTICATION__PASSWORD=<password>

@@ -1,5 +1,4 @@
-"""
-Tests for the Knowledge Base (KB) agent conversation flow.
+"""Tests for the Knowledge Base (KB) agent conversation flow.
 
 This module contains unit and integration tests for the ConversationFlow
 implemented in `ingenious.services.chat_services.multi_agent.conversation_flows.knowledge_base_agent.knowledge_base_agent`.
@@ -60,8 +59,7 @@ class DummyFunctionTool:
     def __init__(
         self, func: Callable[..., Coroutine[Any, Any, Any]], description: str = ""
     ) -> None:
-        """
-        Initialize the tool with a function to execute.
+        """Initialize the tool with a function to execute.
 
         Args:
             func: The asynchronous callable that this tool will wrap.
@@ -91,8 +89,7 @@ class DummyAssistantAgent:
         tools: list[DummyFunctionTool],
         reflect_on_tool_use: bool = True,
     ) -> None:
-        """
-        Initialize the dummy agent.
+        """Initialize the dummy agent.
 
         Args:
             name: The name of the agent.
@@ -106,11 +103,8 @@ class DummyAssistantAgent:
         self._client = model_client
         self._tools = tools
 
-    async def on_messages(
-        self, messages: list[Any], cancellation_token: Any | None = None
-    ) -> Any:
-        """
-        Simulate processing messages by calling the first available tool.
+    async def on_messages(self, messages: list[Any], cancellation_token: Any | None = None) -> Any:
+        """Simulate processing messages by calling the first available tool.
 
         It parses the user question from the message content and passes it
         as the primary argument to the first tool's function.
@@ -131,9 +125,7 @@ class DummyAssistantAgent:
             q = content.strip()
 
         # Use the first tool with the parsed query
-        data = await self._tools[0].function(
-            q
-        )  # our DummyFunctionTool keeps the original callable
+        data = await self._tools[0].function(q)  # our DummyFunctionTool keeps the original callable
 
         class _Msg:
             def __init__(self, c: Any) -> None:
@@ -162,8 +154,7 @@ class DummyAssistantAgent:
 
 
 def install_minimal_autogen(monkeypatch: pytest.MonkeyPatch) -> None:
-    """
-    Provide tiny autogen_core, autogen_core.tools, autogen_agentchat.messages modules.
+    """Provide tiny autogen_core, autogen_core.tools, autogen_agentchat.messages modules.
 
     This function patches `sys.modules` to inject fake `autogen` modules,
     avoiding the need for a full installation while satisfying the module's imports.
@@ -205,8 +196,7 @@ def install_minimal_autogen(monkeypatch: pytest.MonkeyPatch) -> None:
 
 
 def install_dummy_token_counter(monkeypatch: pytest.MonkeyPatch) -> None:
-    """
-    Install a dummy token counter that always returns zero.
+    """Install a dummy token counter that always returns zero.
 
     This patches `sys.modules` to replace the real token counter utility,
     preventing it from running and simplifying test setup.
@@ -221,8 +211,7 @@ def install_dummy_token_counter(monkeypatch: pytest.MonkeyPatch) -> None:
 
 
 def install_memory_manager(monkeypatch: pytest.MonkeyPatch) -> None:
-    """
-    Install a stub memory manager with no-op methods.
+    """Install a stub memory manager with no-op methods.
 
     This patches `sys.modules` to replace the real memory manager, isolating
     tests from chat history and memory side effects.
@@ -252,8 +241,7 @@ def install_fake_provider(
     results: list[dict[str, Any]] | None = None,
     raise_exc: Exception | None = None,
 ) -> list[dict[str, Any]]:
-    """
-    Install a fake AzureSearchProvider that records calls and optionally raises.
+    """Install a fake AzureSearchProvider that records calls and optionally raises.
 
     This function patches `sys.modules` to replace the real Azure Search provider
     with a test double. This allows tests to inspect calls made to the provider,
@@ -271,9 +259,7 @@ def install_fake_provider(
     calls: List[Dict[str, Any]] = []
 
     class AzureSearchProvider:
-        def __init__(
-            self, settings: Any, enable_answer_generation: bool | None = None
-        ) -> None:
+        def __init__(self, settings: Any, enable_answer_generation: bool | None = None) -> None:
             pass
 
         async def retrieve(
@@ -291,17 +277,14 @@ def install_fake_provider(
             pass
 
     prov_mod.AzureSearchProvider = AzureSearchProvider
-    monkeypatch.setitem(
-        sys.modules, "ingenious.services.azure_search.provider", prov_mod
-    )
+    monkeypatch.setitem(sys.modules, "ingenious.services.azure_search.provider", prov_mod)
     return calls
 
 
 def install_fake_chromadb(
     monkeypatch: pytest.MonkeyPatch, documents: Optional[List[str]] = None
 ) -> None:
-    """
-    Stub chromadb to return canned documents (so fallback path is deterministic).
+    """Stub chromadb to return canned documents (so fallback path is deterministic).
 
     This patches `sys.modules` to replace the `chromadb` library with a minimal
     fake implementation, allowing tests to verify the fallback logic without a
@@ -313,9 +296,7 @@ def install_fake_chromadb(
         def add(self, documents: list[str], ids: list[str]) -> None:
             pass
 
-        def query(
-            self, query_texts: list[str], n_results: int
-        ) -> dict[str, list[list[str]]]:
+        def query(self, query_texts: list[str], n_results: int) -> dict[str, list[list[str]]]:
             docs = documents or ["Chroma Fallback Doc"]
             return {"documents": [docs[:n_results]]}
 
@@ -335,8 +316,8 @@ def install_fake_chromadb(
 
 @pytest.fixture
 def azure_sdk_compat(monkeypatch: pytest.MonkeyPatch) -> None:
-    """
-    Provide a fully-compatible, in-process fake Azure SDK *and*
+    """Provide a fully-compatible, in-process fake Azure SDK *and*.
+
     ensure the KB module builds its SearchClient from that fake.
 
     Why we do this:
@@ -351,7 +332,6 @@ def azure_sdk_compat(monkeypatch: pytest.MonkeyPatch) -> None:
     Without step (2), some other fake (lacking `get_document_count`) can still be
     returned by previous patches in the suite, causing the observed AttributeError.
     """
-
     import sys
     import types
 
@@ -360,8 +340,8 @@ def azure_sdk_compat(monkeypatch: pytest.MonkeyPatch) -> None:
     # -----------------------------
 
     class _FakeAzureKeyCredential:
-        """
-        Fake stand-in for azure.core.credentials.AzureKeyCredential.
+        """Fake stand-in for azure.core.credentials.AzureKeyCredential.
+
         It simply stores the key; no real auth is performed.
         """
 
@@ -369,8 +349,8 @@ def azure_sdk_compat(monkeypatch: pytest.MonkeyPatch) -> None:
             self.key = key
 
     class _FakeAsyncSearchClient:
-        """
-        Fake stand-in for azure.search.documents.aio.SearchClient that implements
+        """Fake stand-in for azure.search.documents.aio.SearchClient that implements.
+
         exactly the async methods our KB preflight uses:
           - get_document_count (async)
           - close (async)
@@ -383,15 +363,15 @@ def azure_sdk_compat(monkeypatch: pytest.MonkeyPatch) -> None:
             self._closed = False
 
         async def get_document_count(self) -> int:
-            """
-            Return a deterministic positive value so preflight "succeeds".
+            """Return a deterministic positive value so preflight "succeeds".
+
             If you need to simulate a failing preflight in some tests, modify
             this to raise an exception (e.g., RuntimeError("401 Unauthorized")).
             """
             return 1
 
         async def close(self) -> None:
-            """Simulate the async close() on the real client."""
+            """Simulate closing the client asynchronously."""
             self._closed = True
 
     # ---------------------------------------------------
@@ -423,8 +403,8 @@ def azure_sdk_compat(monkeypatch: pytest.MonkeyPatch) -> None:
     # import ingenious.services.chat_services.multi_agent.conversation_flows.knowledge_base_agent.knowledge_base_agent as kb
 
     def _build_fake_client_from_cfg(cfg: Any) -> _FakeAsyncSearchClient:
-        """
-        The KB preflight passes a SimpleNamespace-like stub carrying:
+        """The KB preflight passes a SimpleNamespace-like stub carrying attributes.
+
           - search_endpoint
           - search_index_name
           - search_key (either a plain str or a SecretStr)
@@ -450,9 +430,7 @@ def azure_sdk_compat(monkeypatch: pytest.MonkeyPatch) -> None:
         )
 
     # Patch the KB module's symbol so preflight always gets our fake with the right surface.
-    monkeypatch.setattr(
-        kb, "make_async_search_client", _build_fake_client_from_cfg, raising=True
-    )
+    monkeypatch.setattr(kb, "make_async_search_client", _build_fake_client_from_cfg, raising=True)
 
     # -----------------------------------------------------------------
     # 4) (Optional) Reset any cached factory singleton to avoid stale
@@ -476,8 +454,7 @@ def make_config(
     key: str = "real-key",
     index_name: str = "idx",
 ) -> SimpleNamespace:
-    """
-    Create a very small config object with just the fields the KB flow reads.
+    """Create a very small config object with just the fields the KB flow reads.
 
     This helper simplifies test setup by constructing a `SimpleNamespace` object
     that mimics the structure of the application's main configuration, but
@@ -485,7 +462,7 @@ def make_config(
     """
     chat_history = SimpleNamespace(memory_path=memory_path)
     # Only 'model' field is read by token counter
-    models = [SimpleNamespace(model="gpt-4o")]
+    models = [SimpleNamespace(model="gpt-5")]
     azure_service = SimpleNamespace(
         endpoint=endpoint,
         key=key,
@@ -514,9 +491,7 @@ class DummyChatHistoryRepo:
     """A test double for the chat history repository."""
 
     async def get_thread_messages(self, thread_id: str) -> list[Any]:
-        """
-        Return an empty list of messages to prevent memory context from affecting tests.
-        """
+        """Return an empty list of messages to prevent memory context from affecting tests."""
         # Return empty list so memory context is blank and doesn't affect assertions
         return []
 
@@ -537,8 +512,7 @@ class DummyParentService:
 
 @pytest.fixture(autouse=True)
 def _common_patches(monkeypatch: pytest.MonkeyPatch) -> Iterator[None]:
-    """
-    Run automatically for every test in this module.
+    """Run automatically for every test in this module.
 
     This fixture provides minimal stubs for external dependencies like autogen,
     the token counter, and the memory manager. It also patches symbols within
@@ -553,9 +527,7 @@ def _common_patches(monkeypatch: pytest.MonkeyPatch) -> Iterator[None]:
     monkeypatch.setattr(
         kb,
         "AzureClientFactory",
-        SimpleNamespace(
-            create_openai_chat_completion_client=lambda _cfg: DummyLLMClient()
-        ),
+        SimpleNamespace(create_openai_chat_completion_client=lambda _cfg: DummyLLMClient()),
     )
     monkeypatch.setattr(kb, "LLMUsageTracker", AcceptingLogHandler, raising=False)
     monkeypatch.setattr(kb, "FunctionTool", DummyFunctionTool)
@@ -652,9 +624,7 @@ async def test_kb_agent_default_index_from_env_when_missing(
     assert len(calls) == 1  # provider was used (no fallback)
     # No WARNING about empty KB directory or missing index (INFO is acceptable)
     warnings = [r for r in caplog.records if r.levelno >= logging.WARNING]
-    assert not any(
-        "Knowledge base directory is empty" in (r.getMessage() or "") for r in warnings
-    )
+    assert not any("Knowledge base directory is empty" in (r.getMessage() or "") for r in warnings)
     assert not any("using fallback default" in (r.getMessage() or "") for r in warnings)
 
 
@@ -664,9 +634,7 @@ async def test_kb_agent_azure_failure_falls_back_to_chroma_with_message(
 ) -> None:
     """Verify that Azure Search failures trigger a fallback to ChromaDB when policy allows."""
     # Azure provider is importable but fails at runtime
-    calls = install_fake_provider(
-        monkeypatch, raise_exc=RuntimeError("503 Service Unavailable")
-    )
+    calls = install_fake_provider(monkeypatch, raise_exc=RuntimeError("503 Service Unavailable"))
     install_fake_chromadb(monkeypatch, documents=["C1", "C2"])
 
     cfg = make_config(str(tmp_path))

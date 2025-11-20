@@ -6,7 +6,8 @@ from typing import Any
 from fastapi import Depends, Request
 
 from ingenious.common.enums import AuthenticationMethod
-from ingenious.config.main_settings import IngeniousSettings
+from ingenious.config.config import get_config as _get_config
+from ingenious.config.settings import IngeniousSettings
 from ingenious.core.structured_logging import get_logger
 from ingenious.db.chat_history_repository import ChatHistoryRepository
 from ingenious.external_services.openai_service import OpenAIService
@@ -21,9 +22,7 @@ logger = get_logger(__name__)
 # Cache the config to avoid reloading
 @lru_cache
 def get_config() -> IngeniousSettings:
-    """Get the application configuration lazily to avoid heavy imports at module load."""
-    from ingenious.config.config import get_config as _get_config
-
+    """Get the application configuration."""
     return _get_config()
 
 
@@ -37,9 +36,7 @@ def get_openai_service(
         api_version=str(config.models[0].api_version),
         open_ai_model=str(config.models[0].model),
         deployment=str(config.models[0].deployment),
-        authentication_method=AuthenticationMethod(
-            config.models[0].authentication_method
-        ),
+        authentication_method=AuthenticationMethod(config.models[0].authentication_method),
         client_id=str(config.models[0].client_id),
         client_secret=str(config.models[0].client_secret),
         tenant_id=str(config.models[0].tenant_id),
@@ -67,9 +64,7 @@ def get_chat_history_repository(
 
 def get_chat_service(
     config: IngeniousSettings = Depends(get_config),
-    chat_history_repository: ChatHistoryRepository = Depends(
-        get_chat_history_repository
-    ),
+    chat_history_repository: ChatHistoryRepository = Depends(get_chat_history_repository),
     openai_service: OpenAIService = Depends(get_openai_service),
 ) -> ChatService:
     """Get chat service instance."""
@@ -95,9 +90,7 @@ def get_chat_service(
 
 
 def get_message_feedback_service(
-    chat_history_repository: ChatHistoryRepository = Depends(
-        get_chat_history_repository
-    ),
+    chat_history_repository: ChatHistoryRepository = Depends(get_chat_history_repository),
 ) -> MessageFeedbackService:
     """Get message feedback service."""
     return MessageFeedbackService(chat_history_repository=chat_history_repository)

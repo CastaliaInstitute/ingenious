@@ -1,3 +1,10 @@
+"""Bike insights conversation flow implementation.
+
+This module provides a sample multi-agent conversation flow for analyzing
+bike sales data using AutoGen agents. It demonstrates how to create custom
+workflows with multiple specialized agents working together.
+"""
+
 import asyncio
 import json
 import logging
@@ -34,10 +41,32 @@ from ingenious.services.chat_services.multi_agent.service import IConversationFl
 
 
 class ConversationFlow(IConversationFlow):
+    """Bike insights multi-agent conversation flow.
+
+    This class implements a conversation flow that analyzes bike sales data
+    using multiple specialized agents including customer sentiment analysis,
+    fiscal analysis, and bike lookup functionality.
+    """
+
     async def get_conversation_response(
         self,
-        chat_request: ChatRequest,  # This needs to be an object that implements the IChatRequest model so you can extend this by creating a new model in the models folder
+        chat_request: ChatRequest,
     ) -> ChatResponse:
+        """Process a chat request through the bike insights workflow.
+
+        This method orchestrates multiple AutoGen agents to analyze bike sales
+        data, including customer sentiment analysis, fiscal analysis, and bike
+        price lookups.
+
+        Args:
+            chat_request: The incoming chat request with user prompt and metadata.
+
+        Returns:
+            A ChatResponse containing the analysis results and agent interactions.
+
+        Raises:
+            ValueError: If the input JSON is malformed or missing required fields.
+        """
         try:
             message = json.loads(chat_request.user_prompt)
         except json.JSONDecodeError as e:
@@ -109,21 +138,34 @@ class ConversationFlow(IConversationFlow):
         # In this sample I'll first define my topic agents
         runtime = SingleThreadedAgentRuntime()
 
-        async def get_bike_price(
-            ticker: str, date: Annotated[str, "Date in YYYY/MM/DD"]
-        ) -> float:
-            # Returns a random stock price for demonstration purposes.
+        async def get_bike_price(ticker: str, date: Annotated[str, "Date in YYYY/MM/DD"]) -> float:
+            """Get the bike price for a given ticker and date.
+
+            This is a demonstration function that returns a random price.
+
+            Args:
+                ticker: The bike ticker symbol.
+                date: The date in YYYY/MM/DD format.
+
+            Returns:
+                A random float between 10 and 200 representing the price.
+            """
             return random.uniform(10, 200)
 
-        bike_price_tool = FunctionTool(
-            get_bike_price, description="Get the bike price."
-        )
+        bike_price_tool = FunctionTool(get_bike_price, description="Get the bike price.")
 
         async def register_research_agent(
             agent_name: str,
             tools: List[FunctionTool] = [],
             next_agent_topic: str = None,
         ):
+            """Register a research agent in the runtime.
+
+            Args:
+                agent_name: The name of the agent to register.
+                tools: List of function tools available to the agent.
+                next_agent_topic: The topic of the next agent in the workflow.
+            """
             agent = agents.get_agent_by_name(agent_name=agent_name)
             reg_agent = await RoutedAssistantAgent.register(
                 runtime=runtime,
@@ -176,6 +218,12 @@ class ConversationFlow(IConversationFlow):
         hist_str = "# Chat History \n\n" + '``` json\n\n " ' + json.dumps(hist_join)
 
         async def register_output_agent(agent_name: str, next_agent_topic: str = None):
+            """Register an output agent in the runtime.
+
+            Args:
+                agent_name: The name of the output agent to register.
+                next_agent_topic: The topic of the next agent in the workflow.
+            """
             agent = agents.get_agent_by_name(agent_name=agent_name)
             summary = await RoutedResponseOutputAgent.register(
                 runtime,
@@ -191,9 +239,7 @@ class ConversationFlow(IConversationFlow):
                 TypeSubscription(topic_type=agent_name, agent_type=summary.type)
             )
 
-        await register_output_agent(
-            agent_name="summary", next_agent_topic="bike_lookup_agent"
-        )
+        await register_output_agent(agent_name="summary", next_agent_topic="bike_lookup_agent")
 
         # results = []
         # tasks = []
@@ -219,17 +265,13 @@ class ConversationFlow(IConversationFlow):
         await runtime.stop_when_idle()
 
         # If you want to use the prompt tuner you need to write the responses to a file with the method provided in the logger
-        await llm_logger.write_llm_responses_to_file(
-            file_prefixes=[str(chat_request.user_id)]
-        )
+        await llm_logger.write_llm_responses_to_file(file_prefixes=[str(chat_request.user_id)])
 
         # Lastly return your chat response object
         chat_response = ChatResponse(
             thread_id=chat_request.thread_id,
             message_id=identifier,
-            agent_response=jsonpickle.encode(
-                unpicklable=False, value=llm_logger._queue
-            ),
+            agent_response=jsonpickle.encode(unpicklable=False, value=llm_logger._queue),
             token_count=llm_logger.prompt_tokens,
             max_token_count=0,
             memory_summary="",
@@ -252,8 +294,6 @@ class ConversationFlow(IConversationFlow):
             tool_call_function=None,
         )
 
-        _ = await self._chat_service.chat_history_repository.add_message(
-            message=message
-        )
+        _ = await self._chat_service.chat_history_repository.add_message(message=message)
 
         return chat_response

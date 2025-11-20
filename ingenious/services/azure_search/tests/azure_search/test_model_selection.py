@@ -41,8 +41,8 @@ def _settings(**overrides: Any) -> SimpleNamespace:
                 endpoint="https://aoai.example.com",
                 key="x",
                 api_version="2024-02-15-preview",
-                deployment="gpt-4o",
-                model="gpt-4o",
+                deployment="gpt-5",
+                model="gpt-5",
             ),
             # Embedding model WITHOUT deployment (this is the case we want to fail)
             SimpleNamespace(
@@ -71,9 +71,7 @@ def _settings(**overrides: Any) -> SimpleNamespace:
         ],
     )
 
-    return SimpleNamespace(
-        models=models, azure_search_services=azure_search_services, **overrides
-    )
+    return SimpleNamespace(models=models, azure_search_services=azure_search_services, **overrides)
 
 
 def test_pick_models_requires_embedding_deployment() -> None:
@@ -84,16 +82,14 @@ def test_pick_models_requires_embedding_deployment() -> None:
     deployment name to be usable by the search service.
     """
     s: SimpleNamespace = _settings()
-    with pytest.raises(
-        ValueError
-    ):  # The builders typically raise ValueError for selection faults
+    with pytest.raises(ValueError):  # The builders typically raise ValueError for selection faults
         _pick_models(s)
 
 
 @pytest.mark.parametrize(
     "embed_dep, chat_dep, should_raise",
     [
-        ("emb-001", "gpt-4o", False),  # different deployments — OK
+        ("emb-001", "gpt-5", False),  # different deployments — OK
         (
             "shared-dep",
             "shared-dep",
@@ -128,7 +124,7 @@ def test_builder_rejects_same_deployments_for_embed_and_chat(
                 key="x",
                 api_version="2024-02-15-preview",
                 deployment=chat_dep,
-                model="gpt-4o",
+                model="gpt-5",
             ),
         ]
     )
@@ -139,6 +135,4 @@ def test_builder_rejects_same_deployments_for_embed_and_chat(
     else:
         cfg: Any = build_search_config_from_settings(s)
         # Sanity: the builder still returns a config object if deployments differ
-        assert hasattr(cfg, "openai"), (
-            "Expected a SearchConfig-like object with .openai fields"
-        )
+        assert hasattr(cfg, "openai"), "Expected a SearchConfig-like object with .openai fields"

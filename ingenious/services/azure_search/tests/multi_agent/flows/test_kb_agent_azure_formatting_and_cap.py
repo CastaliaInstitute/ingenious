@@ -27,8 +27,8 @@ import ingenious.services.chat_services.multi_agent.conversation_flows.knowledge
 
 
 def install_azure_sdk_ok(monkeypatch: pytest.MonkeyPatch) -> None:
-    """
-    Install a minimal, in-process *fake* Azure SDK and ensure the KB module
+    """Install a minimal, in-process *fake* Azure SDK and ensure the KB module.
+
     builds its SearchClient from that fake.
 
     Why this exists:
@@ -74,8 +74,8 @@ def install_azure_sdk_ok(monkeypatch: pytest.MonkeyPatch) -> None:
             self._closed = False
 
         async def get_document_count(self) -> int:
-            """
-            Simulate a cheap health-check call that confirms connectivity and auth.
+            """Simulate a cheap health-check call that confirms connectivity and auth.
+
             We return a deterministic positive number so preflight "succeeds".
             If you need to simulate failures in other tests, you can extend this
             to raise exceptions conditionally (e.g., based on an env flag).
@@ -83,7 +83,7 @@ def install_azure_sdk_ok(monkeypatch: pytest.MonkeyPatch) -> None:
             return 1
 
         async def close(self) -> None:
-            """Simulate the real client's async close()."""
+            """Simulate closing the real client asynchronously."""
             self._closed = True
 
     # 3) Publish the fake modules to sys.modules so any import statements in the
@@ -110,8 +110,8 @@ def install_azure_sdk_ok(monkeypatch: pytest.MonkeyPatch) -> None:
     import ingenious.services.chat_services.multi_agent.conversation_flows.knowledge_base_agent.knowledge_base_agent as kb  # noqa: E501
 
     def _build_fake_client_from_cfg(cfg: Any) -> _FakeAsyncSearchClient:
-        """
-        The KB preflight passes a SimpleNamespace stub with three attributes:
+        """The KB preflight passes a SimpleNamespace stub with three attributes.
+
           - search_endpoint
           - search_index_name
           - search_key (may be a plain str or a SecretStr)
@@ -140,9 +140,7 @@ def install_azure_sdk_ok(monkeypatch: pytest.MonkeyPatch) -> None:
         )
 
     # Patch the symbol *used by the KB module*.
-    monkeypatch.setattr(
-        kb, "make_async_search_client", _build_fake_client_from_cfg, raising=True
-    )
+    monkeypatch.setattr(kb, "make_async_search_client", _build_fake_client_from_cfg, raising=True)
 
     # 5) (Optional) If some earlier test cached a factory singleton, clear it.
     #    This avoids surprising interactions when tests run in a different order.
@@ -158,9 +156,7 @@ def install_azure_sdk_ok(monkeypatch: pytest.MonkeyPatch) -> None:
         pass
 
 
-def provider_with(
-    results: List[Dict[str, str]], monkeypatch: pytest.MonkeyPatch
-) -> None:
+def provider_with(results: List[Dict[str, str]], monkeypatch: pytest.MonkeyPatch) -> None:
     """Mocks the internal AzureSearchProvider to return a fixed set of results.
 
     This allows tests to provide controlled, predictable search results to the
@@ -170,9 +166,7 @@ def provider_with(
     prov_mod = types.ModuleType("ingenious.services.azure_search.provider")
 
     class AzureSearchProvider:
-        def __init__(
-            self, *_args: Any, **_kwargs: Any
-        ) -> None:  # accept config or nothing
+        def __init__(self, *_args: Any, **_kwargs: Any) -> None:  # accept config or nothing
             pass
 
         async def retrieve(self, *a: Any, **k: Any) -> List[Dict[str, str]]:
@@ -182,9 +176,7 @@ def provider_with(
             pass
 
     prov_mod.AzureSearchProvider = AzureSearchProvider  # type: ignore[attr-defined]
-    monkeypatch.setitem(
-        sys.modules, "ingenious.services.azure_search.provider", prov_mod
-    )
+    monkeypatch.setitem(sys.modules, "ingenious.services.azure_search.provider", prov_mod)
 
 
 @pytest.mark.asyncio
@@ -212,17 +204,13 @@ async def test_azure_snippet_cap_truncates_snippet_and_content(
 
     flow: kb.ConversationFlow = kb.ConversationFlow.__new__(kb.ConversationFlow)
     flow._config = SimpleNamespace(
-        models=[SimpleNamespace(model="gpt-4o")],
-        azure_search_services=[
-            SimpleNamespace(endpoint="https://s", key="k", index_name="idx")
-        ],
+        models=[SimpleNamespace(model="gpt-5")],
+        azure_search_services=[SimpleNamespace(endpoint="https://s", key="k", index_name="idx")],
     )
     flow._chat_service = None
     flow._memory_path = str(tmp_path)
 
-    out: str = await flow._search_knowledge_base(
-        "q", use_azure_search=True, top_k=3, logger=None
-    )
+    out: str = await flow._search_knowledge_base("q", use_azure_search=True, top_k=3, logger=None)
     # capped to 10 chars each
     assert "ABCDEFGHIJ" in out
     assert "abcdefghij" in out
@@ -249,17 +237,13 @@ async def test_multiple_results_include_separators(
     )
     flow: kb.ConversationFlow = kb.ConversationFlow.__new__(kb.ConversationFlow)
     flow._config = SimpleNamespace(
-        models=[SimpleNamespace(model="gpt-4o")],
-        azure_search_services=[
-            SimpleNamespace(endpoint="https://s", key="k", index_name="idx")
-        ],
+        models=[SimpleNamespace(model="gpt-5")],
+        azure_search_services=[SimpleNamespace(endpoint="https://s", key="k", index_name="idx")],
     )
     flow._chat_service = None
     flow._memory_path = str(tmp_path)
 
-    out: str = await flow._search_knowledge_base(
-        "q", use_azure_search=True, top_k=2, logger=None
-    )
+    out: str = await flow._search_knowledge_base("q", use_azure_search=True, top_k=2, logger=None)
     assert "\n\n---\n\n" in out  # separator present
 
 
@@ -275,29 +259,22 @@ async def test_env_default_index_logs_info_when_used(
     crucial for transparency and debugging configuration issues.
     """
     install_azure_sdk_ok(monkeypatch)
-    provider_with(
-        [{"id": "1", "title": "T", "snippet": "S", "content": "C"}], monkeypatch
-    )
+    provider_with([{"id": "1", "title": "T", "snippet": "S", "content": "C"}], monkeypatch)
 
     # index missing -> use env default and log INFO
     os.environ["AZURE_SEARCH_DEFAULT_INDEX"] = "docs"
 
     flow: kb.ConversationFlow = kb.ConversationFlow.__new__(kb.ConversationFlow)
     flow._config = SimpleNamespace(
-        models=[SimpleNamespace(model="gpt-4o")],
-        azure_search_services=[
-            SimpleNamespace(endpoint="https://s", key="k", index_name="")
-        ],
+        models=[SimpleNamespace(model="gpt-5")],
+        azure_search_services=[SimpleNamespace(endpoint="https://s", key="k", index_name="")],
     )
     flow._chat_service = None
     flow._memory_path = str(tmp_path)
 
     caplog.set_level("INFO")
     logger: logging.Logger = logging.getLogger("kb-test")
-    _: str = await flow._search_knowledge_base(
-        "q", use_azure_search=True, top_k=1, logger=logger
-    )
+    _: str = await flow._search_knowledge_base("q", use_azure_search=True, top_k=1, logger=logger)
     assert any(
-        "using env AZURE_SEARCH_DEFAULT_INDEX" in (r.getMessage() or "")
-        for r in caplog.records
+        "using env AZURE_SEARCH_DEFAULT_INDEX" in (r.getMessage() or "") for r in caplog.records
     )

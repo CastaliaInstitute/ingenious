@@ -1,3 +1,9 @@
+"""Test database query builder and SQL dialects.
+
+This module tests the query builder functionality and SQL dialect implementations
+for SQLite and Azure SQL databases.
+"""
+
 from ingenious.db.query_builder import (
     AzureSQLDialect,
     QueryBuilder,
@@ -9,20 +15,22 @@ class TestSQLiteDialect:
     """Test SQLite dialect implementation."""
 
     def setup_method(self):
+        """Set up test fixtures."""
         self.dialect = SQLiteDialect()
 
     def test_create_table_if_not_exists_prefix(self):
+        """Test CREATE TABLE IF NOT EXISTS prefix for SQLite."""
         result = self.dialect.get_create_table_if_not_exists_prefix()
         assert result == "CREATE TABLE IF NOT EXISTS"
 
     def test_limit_clause(self):
+        """Test LIMIT clause syntax for SQLite."""
         result = self.dialect.get_limit_clause(5)
         assert result == "LIMIT 5"
 
     def test_upsert_query(self):
-        result = self.dialect.get_upsert_query(
-            "test_table", ["id", "name", "value"], "id"
-        )
+        """Test UPSERT query syntax for SQLite."""
+        result = self.dialect.get_upsert_query("test_table", ["id", "name", "value"], "id")
         assert "INSERT INTO test_table" in result
         assert "ON CONFLICT" in result
         assert "DO UPDATE" in result
@@ -32,16 +40,19 @@ class TestSQLiteDialect:
         assert '"value"' in result
 
     def test_temp_table_syntax(self):
+        """Test temporary table creation syntax for SQLite."""
         select_query = "SELECT * FROM source_table"
         result = self.dialect.get_temp_table_syntax("temp_table", select_query)
         assert "CREATE TEMP TABLE temp_table AS" in result
         assert select_query in result
 
     def test_drop_temp_table_syntax(self):
+        """Test DROP TABLE syntax for SQLite temporary tables."""
         result = self.dialect.get_drop_temp_table_syntax("temp_table")
         assert result == "DROP TABLE temp_table"
 
     def test_data_types(self):
+        """Test SQLite data type mappings."""
         data_types = self.dialect.get_data_types()
         assert data_types["uuid"] == "UUID"
         assert data_types["varchar"] == "TEXT"
@@ -54,22 +65,24 @@ class TestAzureSQLDialect:
     """Test Azure SQL dialect implementation."""
 
     def setup_method(self):
+        """Set up test fixtures."""
         self.dialect = AzureSQLDialect()
 
     def test_create_table_if_not_exists_prefix(self):
+        """Test CREATE TABLE IF NOT EXISTS prefix for Azure SQL."""
         result = self.dialect.get_create_table_if_not_exists_prefix()
         assert "IF NOT EXISTS" in result
         assert "sysobjects" in result
         assert "CREATE TABLE" in result
 
     def test_limit_clause(self):
+        """Test TOP clause syntax for Azure SQL."""
         result = self.dialect.get_limit_clause(5)
         assert result == "TOP 5"
 
     def test_upsert_query(self):
-        result = self.dialect.get_upsert_query(
-            "test_table", ["id", "name", "value"], "id"
-        )
+        """Test MERGE (upsert) query syntax for Azure SQL."""
+        result = self.dialect.get_upsert_query("test_table", ["id", "name", "value"], "id")
         assert "MERGE test_table AS target" in result
         assert "WHEN MATCHED THEN" in result
         assert "WHEN NOT MATCHED THEN" in result
@@ -78,16 +91,19 @@ class TestAzureSQLDialect:
         assert "[value]" in result
 
     def test_temp_table_syntax(self):
+        """Test temporary table creation syntax for Azure SQL."""
         select_query = "SELECT * FROM source_table"
         result = self.dialect.get_temp_table_syntax("temp_table", select_query)
         assert select_query in result
         assert "INTO #temp_table" in result
 
     def test_drop_temp_table_syntax(self):
+        """Test DROP TABLE syntax for Azure SQL temporary tables."""
         result = self.dialect.get_drop_temp_table_syntax("temp_table")
         assert result == "DROP TABLE #temp_table"
 
     def test_data_types(self):
+        """Test Azure SQL data type mappings."""
         data_types = self.dialect.get_data_types()
         assert data_types["uuid"] == "UNIQUEIDENTIFIER"
         assert data_types["varchar"] == "NVARCHAR(255)"
@@ -100,12 +116,14 @@ class TestQueryBuilder:
     """Test QueryBuilder with different dialects."""
 
     def test_sqlite_query_builder_initialization(self):
+        """Test QueryBuilder initialization with SQLite dialect."""
         dialect = SQLiteDialect()
         builder = QueryBuilder(dialect)
         assert builder.dialect == dialect
         assert builder._data_types == dialect.get_data_types()
 
     def test_azuresql_query_builder_initialization(self):
+        """Test QueryBuilder initialization with Azure SQL dialect."""
         dialect = AzureSQLDialect()
         builder = QueryBuilder(dialect)
         assert builder.dialect == dialect
@@ -116,9 +134,11 @@ class TestSQLiteQueryBuilder:
     """Test QueryBuilder with SQLite dialect."""
 
     def setup_method(self):
+        """Set up test fixtures."""
         self.builder = QueryBuilder(SQLiteDialect())
 
     def test_create_chat_history_table(self):
+        """Test chat history table creation with SQLite syntax."""
         query = self.builder.create_chat_history_table()
         assert "CREATE TABLE IF NOT EXISTS chat_history" in query
         assert "user_id TEXT" in query
@@ -130,6 +150,7 @@ class TestSQLiteQueryBuilder:
         assert "content TEXT" in query
 
     def test_create_users_table(self):
+        """Test users table creation with SQLite syntax."""
         query = self.builder.create_users_table()
         assert "CREATE TABLE IF NOT EXISTS users" in query
         assert "id UUID PRIMARY KEY" in query
@@ -138,6 +159,7 @@ class TestSQLiteQueryBuilder:
         assert "createdAt TEXT" in query
 
     def test_create_threads_table(self):
+        """Test threads table creation with SQLite syntax."""
         query = self.builder.create_threads_table()
         assert "CREATE TABLE IF NOT EXISTS threads" in query
         assert "id UUID PRIMARY KEY" in query
@@ -147,6 +169,7 @@ class TestSQLiteQueryBuilder:
         assert "FOREIGN KEY" in query
 
     def test_create_steps_table(self):
+        """Test steps table creation with SQLite syntax."""
         query = self.builder.create_steps_table()
         assert "CREATE TABLE IF NOT EXISTS steps" in query
         assert "id UUID PRIMARY KEY" in query
@@ -157,18 +180,21 @@ class TestSQLiteQueryBuilder:
         assert "end DATETIME2" in query or "end TEXT" in query
 
     def test_insert_message(self):
+        """Test message insertion query with SQLite syntax."""
         query = self.builder.insert_message()
         assert "INSERT INTO chat_history" in query
         assert "user_id, thread_id, message_id" in query
         assert "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)" in query
 
     def test_select_message(self):
+        """Test message selection query with SQLite syntax."""
         query = self.builder.select_message()
         assert "SELECT user_id, thread_id, message_id" in query
         assert "FROM chat_history" in query
         assert "WHERE message_id = ? AND thread_id = ?" in query
 
     def test_select_latest_memory(self):
+        """Test latest memory selection query with SQLite LIMIT syntax."""
         query = self.builder.select_latest_memory()
         assert "FROM chat_history_summary" in query
         assert "WHERE thread_id = ?" in query
@@ -176,6 +202,7 @@ class TestSQLiteQueryBuilder:
         assert "LIMIT 1" in query
 
     def test_select_thread_messages(self):
+        """Test thread messages selection query with SQLite LIMIT syntax."""
         query = self.builder.select_thread_messages()
         assert "FROM chat_history" in query
         assert "WHERE thread_id = ?" in query
@@ -183,17 +210,20 @@ class TestSQLiteQueryBuilder:
         assert "LIMIT 5" in query
 
     def test_update_message_feedback(self):
+        """Test message feedback update query with SQLite syntax."""
         query = self.builder.update_message_feedback()
         assert "UPDATE chat_history" in query
         assert "SET positive_feedback = ?" in query
         assert "WHERE message_id = ? AND thread_id = ?" in query
 
     def test_delete_thread(self):
+        """Test thread deletion query with SQLite syntax."""
         query = self.builder.delete_thread()
         assert "DELETE FROM chat_history" in query
         assert "WHERE thread_id = ?" in query
 
     def test_get_query_method(self):
+        """Test generic get_query method with different parameters."""
         # Test the generic get_query method
         query = self.builder.get_query("insert_message")
         assert "INSERT INTO chat_history" in query
@@ -211,9 +241,11 @@ class TestAzureSQLQueryBuilder:
     """Test QueryBuilder with Azure SQL dialect."""
 
     def setup_method(self):
+        """Set up test fixtures."""
         self.builder = QueryBuilder(AzureSQLDialect())
 
     def test_create_chat_history_table(self):
+        """Test chat history table creation with Azure SQL syntax."""
         query = self.builder.create_chat_history_table()
         assert "IF NOT EXISTS" in query
         assert "sysobjects" in query
@@ -224,6 +256,7 @@ class TestAzureSQLQueryBuilder:
         assert "content NVARCHAR(MAX)" in query
 
     def test_create_users_table(self):
+        """Test users table creation with Azure SQL syntax."""
         query = self.builder.create_users_table()
         assert "IF NOT EXISTS" in query
         assert "users" in query
@@ -232,6 +265,7 @@ class TestAzureSQLQueryBuilder:
         assert "metadata NVARCHAR(MAX) NOT NULL" in query
 
     def test_create_threads_table(self):
+        """Test threads table creation with Azure SQL syntax."""
         query = self.builder.create_threads_table()
         assert "IF NOT EXISTS" in query
         assert "threads" in query
@@ -240,6 +274,7 @@ class TestAzureSQLQueryBuilder:
         assert "FOREIGN KEY (userId) REFERENCES users(id)" in query
 
     def test_create_steps_table(self):
+        """Test steps table creation with Azure SQL syntax."""
         query = self.builder.create_steps_table()
         assert "IF NOT EXISTS" in query
         assert "steps" in query
@@ -249,6 +284,7 @@ class TestAzureSQLQueryBuilder:
         assert "[end] DATETIME2" in query
 
     def test_select_latest_memory(self):
+        """Test latest memory selection query with Azure SQL TOP syntax."""
         query = self.builder.select_latest_memory()
         assert "SELECT TOP 1" in query
         assert "FROM chat_history_summary" in query
@@ -256,6 +292,7 @@ class TestAzureSQLQueryBuilder:
         assert "ORDER BY timestamp DESC" in query
 
     def test_select_thread_messages(self):
+        """Test thread messages selection query with Azure SQL TOP and ROW_NUMBER syntax."""
         query = self.builder.select_thread_messages()
         assert "SELECT TOP 5" in query
         assert "FROM (" in query
@@ -267,6 +304,7 @@ class TestQueryBuilderCompatibility:
     """Test that both dialects produce working queries for the same operations."""
 
     def setup_method(self):
+        """Set up test fixtures."""
         self.sqlite_builder = QueryBuilder(SQLiteDialect())
         self.azuresql_builder = QueryBuilder(AzureSQLDialect())
 
@@ -342,18 +380,15 @@ class TestQueryBuilderCompatibility:
             sqlite_query = getattr(self.sqlite_builder, method_name)()
             azuresql_query = getattr(self.azuresql_builder, method_name)()
 
-            assert len(sqlite_query.strip()) > 0, (
-                f"SQLite {method_name} returned empty query"
-            )
-            assert len(azuresql_query.strip()) > 0, (
-                f"Azure SQL {method_name} returned empty query"
-            )
+            assert len(sqlite_query.strip()) > 0, f"SQLite {method_name} returned empty query"
+            assert len(azuresql_query.strip()) > 0, f"Azure SQL {method_name} returned empty query"
 
 
 class TestDataTypeMapping:
     """Test data type mapping between dialects."""
 
     def test_sqlite_data_types(self):
+        """Test SQLite data type mappings for all common types."""
         dialect = SQLiteDialect()
         data_types = dialect.get_data_types()
 
@@ -368,6 +403,7 @@ class TestDataTypeMapping:
         assert data_types["array"] == "TEXT[]"
 
     def test_azuresql_data_types(self):
+        """Test Azure SQL data type mappings for all common types."""
         dialect = AzureSQLDialect()
         data_types = dialect.get_data_types()
 

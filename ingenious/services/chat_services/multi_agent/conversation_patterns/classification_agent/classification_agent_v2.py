@@ -6,8 +6,8 @@ from autogen_agentchat.teams import RoundRobinGroupChat
 from ingenious.client.azure import AzureClientFactory
 from ingenious.common.enums import AuthenticationMethod
 from ingenious.config import get_config
+from ingenious.config.settings import IngeniousSettings
 from ingenious.core.structured_logging import get_logger
-from ingenious.models.config import Config
 
 logger = get_logger(__name__)
 
@@ -29,19 +29,17 @@ class ConversationPattern:
         self.context = ""
 
         # Create Azure OpenAI model client from config
-        self.model_client = (
-            AzureClientFactory.create_openai_chat_completion_client_from_params(
-                model=str(self.default_llm_config["model"]),
-                base_url=str(self.default_llm_config["base_url"]),
-                api_version=str(self.default_llm_config["api_version"]),
-                deployment=str(self.default_llm_config.get("deployment")),
-                authentication_method=AuthenticationMethod(
-                    self.default_llm_config.get(
-                        "authentication_method", AuthenticationMethod.DEFAULT_CREDENTIAL
-                    )
-                ),
-                api_key=str(self.default_llm_config.get("api_key", "")),
-            )
+        self.model_client = AzureClientFactory.create_openai_chat_completion_client_from_params(
+            model=str(self.default_llm_config["model"]),
+            base_url=str(self.default_llm_config["base_url"]),
+            api_version=str(self.default_llm_config["api_version"]),
+            deployment=str(self.default_llm_config.get("deployment")),
+            authentication_method=AuthenticationMethod(
+                self.default_llm_config.get(
+                    "authentication_method", AuthenticationMethod.DEFAULT_CREDENTIAL
+                )
+            ),
+            api_key=str(self.default_llm_config.get("api_key", "")),
         )
 
         # Initialize memory manager for cloud storage support
@@ -50,9 +48,7 @@ class ConversationPattern:
             run_async_memory_operation,
         )
 
-        self.memory_manager = get_memory_manager(
-            cast(Config, get_config()), memory_path
-        )
+        self.memory_manager = get_memory_manager(cast(IngeniousSettings, get_config()), memory_path)
 
         # Initialize context file
         if not self.thread_memory:
@@ -68,9 +64,7 @@ class ConversationPattern:
                 thread_memory_length=len(self.thread_memory),
                 note="Requires ChatHistorySummariser for optional dependency",
             )
-            run_async_memory_operation(
-                self.memory_manager.write_memory(self.thread_memory)
-            )
+            run_async_memory_operation(self.memory_manager.write_memory(self.thread_memory))
 
         # Read current context
         self.context = run_async_memory_operation(
@@ -103,17 +97,13 @@ class ConversationPattern:
         pass
 
     async def get_conversation_response(self, input_message: str) -> Tuple[str, str]:
-        """
-        Simplified conversation with just classifier + user proxy in round-robin (max 2 turns)
-        """
+        """Simplified conversation with just classifier + user proxy in round-robin (max 2 turns)"""
         try:
             # Create a simple round-robin team with just 2 agents
             team = RoundRobinGroupChat(participants=[self.user_proxy, self.classifier])
 
             # Run with a much simpler task
-            result = await team.run(
-                task=f"Classify and respond to this message: {input_message}"
-            )
+            result = await team.run(task=f"Classify and respond to this message: {input_message}")
 
             # Get the final message content
             final_message = "No response"

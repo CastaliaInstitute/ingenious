@@ -1,6 +1,4 @@
-"""
-Validate OData OR filter construction in pipeline._apply_semantic_ranking.
-"""
+"""Validate OData OR filter construction in pipeline._apply_semantic_ranking."""
 
 from __future__ import annotations
 
@@ -20,6 +18,11 @@ async def test_pipeline_semantic_filter_escaping_or_clause(
     async_iter: Callable[[list[dict[str, Any]]], AsyncIterator[dict[str, Any]]],
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
+    """Test semantic ranking constructs proper OData OR filter with escaping.
+
+    Verifies that document IDs containing special characters (commas, quotes)
+    are properly escaped in the OData filter clause for semantic reranking.
+    """
     # Build pipeline with dummy components
     p = AdvancedSearchPipeline(config, MagicMock(), MagicMock(), MagicMock())
 

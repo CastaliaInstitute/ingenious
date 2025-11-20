@@ -94,8 +94,7 @@ except Exception:
 
 
 class ConversationFlow(IConversationFlow):
-    """
-    Knowledge base conversation flow.
+    """Knowledge base conversation flow.
 
     - Non-streaming: direct KB search by default (deterministic "direct" mode).
        Optional "assist" mode uses AssistantAgent.on_messages for LLM summarization.
@@ -120,8 +119,7 @@ class ConversationFlow(IConversationFlow):
         chroma_persist_path: Optional[str] = None,
         **kwargs: Any,
     ) -> None:
-        """
-        Construct a ConversationFlow.
+        """Construct a ConversationFlow.
 
         File-system locations are application-level concerns but default to previous behavior:
         - knowledge_base_path: <self._memory_path>/knowledge_base
@@ -245,9 +243,7 @@ class ConversationFlow(IConversationFlow):
     # -----------------------------
     # Public API (non-streaming)
     # -----------------------------
-    async def get_conversation_response(
-        self, chat_request: ChatRequest
-    ) -> ChatResponse:
+    async def get_conversation_response(self, chat_request: ChatRequest) -> ChatResponse:
         """Entry point for one-shot, non-streaming KB responses."""
         model_config = self._config.models[0]
 
@@ -290,9 +286,7 @@ class ConversationFlow(IConversationFlow):
                 # When mode is coerced, we **ignore env overrides** but still **honor per-request** overrides.
                 if coerced:
                     override = (
-                        self._resolve_topk_from_request(chat_request)
-                        if chat_request
-                        else None
+                        self._resolve_topk_from_request(chat_request) if chat_request else None
                     )
                     top_k = override or _TOPK_DIRECT_DEFAULT
                 else:
@@ -310,14 +304,10 @@ class ConversationFlow(IConversationFlow):
                 backend_from_result = (
                     "Azure AI Search"
                     if isinstance(search_text, str)
-                    and search_text.startswith(
-                        "Found relevant information from Azure AI Search"
-                    )
+                    and search_text.startswith("Found relevant information from Azure AI Search")
                     else "local ChromaDB"
                     if isinstance(search_text, str)
-                    and search_text.startswith(
-                        "Found relevant information from ChromaDB"
-                    )
+                    and search_text.startswith("Found relevant information from ChromaDB")
                     else ("Azure AI Search" if use_azure_search else "local ChromaDB")
                 )
                 context = (
@@ -354,14 +344,11 @@ class ConversationFlow(IConversationFlow):
             # Use an agent to summarize/format based on tool results.
             # We need a chat client only in assist mode.
             if model_client is None:
-                model_client = AzureClientFactory.create_openai_chat_completion_client(
-                    model_config
-                )
+                model_client = AzureClientFactory.create_openai_chat_completion_client(model_config)
             use_azure_search = self._should_use_azure_search()
             search_backend = "Azure AI Search" if use_azure_search else "local ChromaDB"
             context = (
-                "Knowledge base search assistant using "
-                f"{search_backend} for finding information."
+                f"Knowledge base search assistant using {search_backend} for finding information."
             )
 
             async def search_tool(search_query: str, topic: str = "general") -> str:
@@ -462,9 +449,7 @@ class ConversationFlow(IConversationFlow):
             base_logger, "knowledge_base"
         )
 
-        model_client = AzureClientFactory.create_openai_chat_completion_client(
-            model_config
-        )
+        model_client = AzureClientFactory.create_openai_chat_completion_client(model_config)
 
         try:
             # Initial status: "searching"
@@ -546,9 +531,7 @@ class ConversationFlow(IConversationFlow):
 
                     # Some streaming objects have an 'event' or 'delta' shape
                     ev = getattr(obj, "event", None)
-                    if isinstance(ev, str) and any(
-                        k in ev.lower() for k in ("tool", "function")
-                    ):
+                    if isinstance(ev, str) and any(k in ev.lower() for k in ("tool", "function")):
                         return True
 
                     # If the object exposes a dict-like view, check common keys
@@ -610,9 +593,7 @@ class ConversationFlow(IConversationFlow):
                         )
 
                     # 4) Final flush restoration: surface terminal TaskResult content (if any).
-                    if hasattr(message, "__class__") and "TaskResult" in str(
-                        message.__class__
-                    ):
+                    if hasattr(message, "__class__") and "TaskResult" in str(message.__class__):
                         try:
                             final_msgs = getattr(message, "messages", None)
                             if final_msgs:
@@ -717,19 +698,15 @@ class ConversationFlow(IConversationFlow):
         memory_context = ""
         if chat_request.thread_id and self._chat_service:
             try:
-                thread_messages = await self._chat_service.chat_history_repository.get_thread_messages(
-                    chat_request.thread_id
+                thread_messages = (
+                    await self._chat_service.chat_history_repository.get_thread_messages(
+                        chat_request.thread_id
+                    )
                 )
                 if thread_messages:
-                    recent = (
-                        thread_messages[-10:]
-                        if len(thread_messages) > 10
-                        else thread_messages
-                    )
+                    recent = thread_messages[-10:] if len(thread_messages) > 10 else thread_messages
                     preview = [f"{m.role}: {m.content[:100]}..." for m in recent]
-                    memory_context = (
-                        "Previous conversation:\n" + "\n".join(preview) + "\n\n"
-                    )
+                    memory_context = "Previous conversation:\n" + "\n".join(preview) + "\n\n"
             except Exception as e:
                 # Throttled warn + debug to maintain observability without noise.
                 logger = logging.getLogger(f"{EVENT_LOGGER_NAME}.kb")
@@ -747,8 +724,8 @@ class ConversationFlow(IConversationFlow):
     # Internal helpers: Azure availability + service lookup
     # -----------------------------
     def _is_azure_search_available(self) -> bool:
-        """
-        Best-effort check that the Azure Search provider/SDK is importable.
+        """Best-effort check that the Azure Search provider/SDK is importable.
+
         Does not validate network/keys; runtime failures still fall back (if policy allows).
         """
         try:
@@ -768,11 +745,9 @@ class ConversationFlow(IConversationFlow):
             return None
         return cfg[0]
 
-    def _ensure_default_azure_index(
-        self, logger: Optional[logging.Logger] = None
-    ) -> None:
-        """
-        Ensure an index_name is present for Azure service; prefer env default, otherwise a safe fallback.
+    def _ensure_default_azure_index(self, logger: Optional[logging.Logger] = None) -> None:
+        """Ensure an index_name is present for Azure service; prefer env default, otherwise a safe fallback.
+
         Emits INFO when env default is used; WARNING on fallback default.
         """
         service = self._azure_service()
@@ -802,8 +777,8 @@ class ConversationFlow(IConversationFlow):
             )
 
     def _should_use_azure_search(self) -> bool:
-        """
-        Return True if Azure AI Search is configured (endpoint/key), not mocked, and SDK/provider is available.
+        """Return True if Azure AI Search is configured (endpoint/key), not mocked, and SDK/provider is available.
+
         Missing index_name is tolerated by applying a default when needed.
         """
         service = self._azure_service()
@@ -839,22 +814,16 @@ class ConversationFlow(IConversationFlow):
             return (s[:1] + "***" + s[-1:]) if s else "<empty>"
         return f"{s[:4]}...{s[-4:]} (len={len(s)})"
 
-    def _dump_kb_config_snapshot(
-        self, logger: Optional[logging.Logger] = None
-    ) -> dict[str, Any]:
-        """
-        Build a masked snapshot of key Azure KB settings.
+    def _dump_kb_config_snapshot(self, logger: Optional[logging.Logger] = None) -> dict[str, Any]:
+        """Build a masked snapshot of key Azure KB settings.
+
         When diagnostics are enabled, write it to a YAML/plaintext file and log an INFO line.
         """
         svc = self._azure_service()
         snap: Dict[str, Any] = {}
         try:
             endpoint = (getattr(svc, "endpoint", "") or "") if svc else ""
-            key_obj = (
-                (getattr(svc, "key", None) or getattr(svc, "api_key", None))
-                if svc
-                else None
-            )
+            key_obj = (getattr(svc, "key", None) or getattr(svc, "api_key", None)) if svc else None
             key_val = self._unwrap_secret_or_str(key_obj)
             index_name = (getattr(svc, "index_name", "") or "") if svc else ""
 
@@ -916,8 +885,7 @@ class ConversationFlow(IConversationFlow):
     def _require_valid_azure_index(
         self, logger: Optional[logging.Logger] = None
     ) -> Awaitable[None]:
-        """
-        Public entry point used by callers/tests.
+        """Public entry point used by callers/tests.
 
         - Performs **synchronous** configuration validation immediately, raising:
           * PreflightError('not_configured') or
@@ -934,8 +902,7 @@ class ConversationFlow(IConversationFlow):
     def _validate_azure_index_config(
         self, logger: Optional[logging.Logger] = None
     ) -> Tuple[str, str, str]:
-        """
-        Synchronous, fail-fast validation of Azure KB config.
+        """Synchronous, fail-fast validation of Azure KB config.
 
         Returns:
             (endpoint, index_name, key_val) if validation passes.
@@ -986,8 +953,8 @@ class ConversationFlow(IConversationFlow):
         key_val: str,
         logger: Optional[logging.Logger] = None,
     ) -> None:
-        """
-        Asynchronous network preflight: imports SDK and verifies `get_document_count()`.
+        """Asynchronous network preflight: imports SDK and verifies `get_document_count()`.
+
         Raises precise PreflightErrors for sdk_missing and preflight_failed.
         """
         # 1) Preserve precise reason when SDK is missing.
@@ -1053,8 +1020,8 @@ class ConversationFlow(IConversationFlow):
     # Policy helpers (backend selection & behavior)
     # -----------------------------
     def _kb_policy(self) -> str:
-        """
-        Decide backend behavior.
+        """Decide backend behavior.
+
         Allowed: azure_only | prefer_azure | prefer_local | local_only
         Default: azure_only (preserves strict Azure behavior).
         """
@@ -1074,8 +1041,8 @@ class ConversationFlow(IConversationFlow):
         return v.strip().lower() in {"1", "true", "yes"}
 
     def _azure_snippet_cap(self) -> int:
-        """
-        Optional cap for Azure snippet/content length.
+        """Optional cap for Azure snippet/content length.
+
         0 (default) keeps untrimmed behavior. Set KB_AZURE_SNIPPET_CAP=600 to trim.
         """
         v = os.getenv("KB_AZURE_SNIPPET_CAP", "")
@@ -1143,8 +1110,8 @@ class ConversationFlow(IConversationFlow):
         top_k: int,
         logger: Optional[logging.Logger] = None,
     ) -> str:
-        """
-        Policy-aware unified search that chooses Azure or Chroma as needed,
+        """Policy-aware unified search that chooses Azure or Chroma as needed,.
+
         with optional fallbacks based on KB_POLICY and KB_FALLBACK_ON_EMPTY.
         """
         if logger:
@@ -1198,10 +1165,7 @@ class ConversationFlow(IConversationFlow):
     ) -> Optional[str]:
         """Handle prefer_local policy: try Chroma first, optionally fall back to Azure."""
         local_result = await self._search_local_chroma(search_query, top_k, logger)
-        if not (
-            self._fallback_on_empty()
-            and local_result.startswith("No relevant information")
-        ):
+        if not (self._fallback_on_empty() and local_result.startswith("No relevant information")):
             return local_result
         # Returns None to indicate Azure fallback should be attempted
         return None
@@ -1279,9 +1243,7 @@ class ConversationFlow(IConversationFlow):
         top_k: int,
     ) -> str:
         """Execute Azure search using provided provider and format results."""
-        chunks: List[Dict[str, Any]] = await provider.retrieve(
-            search_query, top_k=top_k
-        )
+        chunks: List[Dict[str, Any]] = await provider.retrieve(search_query, top_k=top_k)
 
         if not chunks:
             return f"No relevant information found in Azure AI Search for query: {search_query}"
@@ -1297,10 +1259,7 @@ class ConversationFlow(IConversationFlow):
             formatted_chunk = self._format_single_chunk(i, c, cap)
             parts.append(formatted_chunk)
 
-        return (
-            "Found relevant information from Azure AI Search:\n\n"
-            + "\n\n---\n\n".join(parts)
-        )
+        return "Found relevant information from Azure AI Search:\n\n" + "\n\n---\n\n".join(parts)
 
     def _format_single_chunk(self, index: int, chunk: Dict[str, Any], cap: int) -> str:
         """Format a single search result chunk."""
@@ -1345,9 +1304,7 @@ class ConversationFlow(IConversationFlow):
                 snapshot=self._dump_kb_config_snapshot(logger),
             )
         if logger:
-            logger.warning(
-                "Azure SDK/provider not available; falling back to ChromaDB."
-            )
+            logger.warning("Azure SDK/provider not available; falling back to ChromaDB.")
 
     def _handle_azure_preflight_error(
         self,
@@ -1359,9 +1316,7 @@ class ConversationFlow(IConversationFlow):
         if policy == "azure_only":
             raise error
         if logger:
-            logger.warning(
-                "Azure validation failed (%s); falling back to ChromaDB.", error
-            )
+            logger.warning("Azure validation failed (%s); falling back to ChromaDB.", error)
 
     def _handle_azure_general_error(
         self,
@@ -1378,9 +1333,7 @@ class ConversationFlow(IConversationFlow):
                 snapshot=self._dump_kb_config_snapshot(logger),
             )
         if logger:
-            logger.warning(
-                "Azure provider failed (%s); falling back to ChromaDB.", error
-            )
+            logger.warning("Azure provider failed (%s); falling back to ChromaDB.", error)
 
     async def _close_azure_provider(self, provider: Optional[Any]) -> None:
         """Safely close Azure provider if it exists."""
@@ -1443,8 +1396,8 @@ class ConversationFlow(IConversationFlow):
         top_k: int,
         logger: Optional[logging.Logger] = None,
     ) -> str:
-        """
-        Local ChromaDB search (used directly or as a fallback).
+        """Local ChromaDB search (used directly or as a fallback).
+
         Returns short, user-friendly messages while logging details server-side.
         """
         knowledge_base_path = self._kb_path
@@ -1453,9 +1406,7 @@ class ConversationFlow(IConversationFlow):
         # If the knowledge base folder doesn't exist, log the path and return a concise user-facing message.
         if not os.path.exists(knowledge_base_path):
             if logger:
-                logger.warning(
-                    "Knowledge base directory missing/empty: %s", knowledge_base_path
-                )
+                logger.warning("Knowledge base directory missing/empty: %s", knowledge_base_path)
             # Actionable guidance with dynamic, trailing-slash path.
             kb_display = knowledge_base_path
             if not kb_display.endswith(os.sep):
@@ -1498,18 +1449,14 @@ class ConversationFlow(IConversationFlow):
         # Format results if any; otherwise report "No relevant information".
         docs = results.get("documents") or []
         if docs and docs[0]:
-            return "Found relevant information from ChromaDB:\n\n" + "\n\n".join(
-                docs[0]
-            )
+            return "Found relevant information from ChromaDB:\n\n" + "\n\n".join(docs[0])
 
         return f"No relevant information found in ChromaDB for query: {search_query}"
 
     # -----------------------------
     # File I/O helpers (off-thread)
     # -----------------------------
-    async def _read_kb_documents_offthread(
-        self, kb_path: str
-    ) -> Tuple[List[str], List[str]]:
+    async def _read_kb_documents_offthread(self, kb_path: str) -> Tuple[List[str], List[str]]:
         """Read .md/.txt documents from disk off-thread to avoid blocking the event loop."""
 
         def _read() -> Tuple[List[str], List[str]]:
@@ -1609,9 +1556,7 @@ class ConversationFlow(IConversationFlow):
         return "".join(parts)
 
     def _streaming_system_message(self, memory_context: str) -> str:
-        """
-        Streaming prompt with guidance, topics, and citation directive.
-        """
+        """Streaming prompt with guidance, topics, and citation directive."""
         parts: List[str] = [
             "You are a knowledge base search assistant that can use both Azure AI Search and local ChromaDB storage.\n\n"
         ]

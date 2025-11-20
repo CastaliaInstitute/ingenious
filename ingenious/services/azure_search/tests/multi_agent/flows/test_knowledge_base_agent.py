@@ -57,8 +57,7 @@ class MockAssistantAgent:
         tools: list[Any] | None = None,
         **_: Any,
     ) -> None:
-        """
-        Initializes the mock agent.
+        """Initializes the mock agent.
 
         Stores configuration and tools to simulate agent behavior without
         making real API calls.
@@ -71,8 +70,7 @@ class MockAssistantAgent:
     async def on_messages(
         self, messages: list[Any], cancellation_token: Any | None = None
     ) -> MockAssistantResponse:
-        """
-        Simulates the agent receiving messages and executing a tool.
+        """Simulates the agent receiving messages and executing a tool.
 
         It parses the user question and, if a tool is present, calls its
         function with the question to generate a response.
@@ -97,8 +95,7 @@ class MockAssistantAgent:
     def run_stream(
         self, task: Any, cancellation_token: Any | None = None
     ) -> AsyncGenerator[SimpleNamespace, None]:
-        """
-        Simulates the streaming response generation process.
+        """Simulates the streaming response generation process.
 
         Yields a fake content chunk and a fake token usage update to mimic
         the behavior of a real streaming agent.
@@ -118,8 +115,8 @@ class MockAssistantAgent:
 
 @pytest.fixture(autouse=True)
 def patch_tool_and_agent(monkeypatch: pytest.MonkeyPatch) -> None:
-    """
-    Patches FunctionTool, AssistantAgent, and installs a minimal fake Azure SDK.
+    """Patches FunctionTool, AssistantAgent, and installs a minimal fake Azure SDK.
+
     ALSO patches the KB module's `make_async_search_client` so strict preflight
     (`await client.get_document_count()`) *always* succeeds in tests.
 
@@ -178,15 +175,15 @@ def patch_tool_and_agent(monkeypatch: pytest.MonkeyPatch) -> None:
             self.credential = credential
 
         async def get_document_count(self) -> int:
-            """
-            Return a deterministic positive value so preflight "passes".
+            """Return a deterministic positive value so preflight "passes".
+
             If you need a failing preflight in a specific test, you can monkeypatch
             this method there to raise (e.g., RuntimeError("401")).
             """
             return 1
 
         async def close(self) -> None:
-            """Fake async close() to match real client surface."""
+            """Simulate closing the fake async client."""
             pass
 
     aio.SearchClient = _Client
@@ -211,8 +208,8 @@ def patch_tool_and_agent(monkeypatch: pytest.MonkeyPatch) -> None:
     #    not the factory module, because the KB file imported the function by value.
     # ------------------------------------------------------------------
     def _build_fake_client_from_cfg(cfg: Any) -> _Client:
-        """
-        The KB preflight passes a SimpleNamespace-like object with:
+        """The KB preflight passes a SimpleNamespace-like object with attributes.
+
           - search_endpoint
           - search_index_name
           - search_key (either a plain str or a SecretStr)
@@ -256,8 +253,7 @@ def patch_tool_and_agent(monkeypatch: pytest.MonkeyPatch) -> None:
 
 @pytest.fixture
 def mock_model_client(monkeypatch: pytest.MonkeyPatch) -> SimpleNamespace:
-    """
-    Mocks the AOAI client creation to inject a fake client.
+    """Mocks the AOAI client creation to inject a fake client.
 
     This allows tests to verify interactions with the model client, such as
     checking if its `close` method was called, without creating a real client.
@@ -273,14 +269,13 @@ def mock_model_client(monkeypatch: pytest.MonkeyPatch) -> SimpleNamespace:
 
 
 def make_config(azure: bool = True) -> SimpleNamespace:
-    """
-    Creates a minimal configuration object for tests.
+    """Creates a minimal configuration object for tests.
 
     This helper generates a SimpleNamespace object that mimics the application's
     configuration, including model settings and optional Azure Search services.
     """
     # Minimal config with models[0] and optional azure_search_services
-    model0 = SimpleNamespace(model="gpt-4o")
+    model0 = SimpleNamespace(model="gpt-5")
     cfg = SimpleNamespace(models=[model0])
     if azure:
         svc = SimpleNamespace(endpoint="https://s.net", key="key", index_name="idx")
@@ -415,8 +410,7 @@ async def test_kb_agent_chroma_fallback_empty_dir_message(
 async def test_streaming_sequence_and_error_handling(
     monkeypatch: pytest.MonkeyPatch, mock_model_client: Any
 ) -> None:
-    """
-    Tests the sequence of streamed chunks and verifies error handling.
+    """Tests the sequence of streamed chunks and verifies error handling.
 
     This test checks two scenarios:
     1. The normal streaming flow produces the expected sequence of chunk types
@@ -486,8 +480,7 @@ async def test_streaming_sequence_and_error_handling(
 async def test_azure_provider_retrieve_cleans_and_reranks(
     monkeypatch: pytest.MonkeyPatch, async_iter: Any
 ) -> None:
-    """
-    Tests AzureSearchProvider's retrieve method, focusing on data cleaning.
+    """Tests AzureSearchProvider's retrieve method, focusing on data cleaning.
 
     This test verifies that after retrieving and reranking documents, the provider
     cleans the results by removing internal fields (like vectors and intermediate
@@ -506,14 +499,10 @@ async def test_azure_provider_retrieve_cleans_and_reranks(
             api_key="k",
             base_url="https://oai",
         ),
-        ModelSettings(
-            model="gpt-4o", deployment="chat", api_key="k", base_url="https://oai"
-        ),
+        ModelSettings(model="gpt-5", deployment="chat", api_key="k", base_url="https://oai"),
     ]
     settings.azure_search_services = [
-        AzureSearchSettings(
-            service="svc", endpoint="https://s.net", key="sk", index_name="idx"
-        )
+        AzureSearchSettings(service="svc", endpoint="https://s.net", key="sk", index_name="idx")
     ]
 
     # Mock pipeline pieces and reranker client
@@ -596,9 +585,7 @@ async def test_azure_provider_rerank_fallback_when_ids_missing(
     from ingenious.services.azure_search.provider import AzureSearchProvider
 
     prov = object.__new__(AzureSearchProvider)
-    monkeypatch.setattr(
-        prov, "retrieve", AsyncMock(return_value=[{"content": "x"}]), raising=True
-    )
+    monkeypatch.setattr(prov, "retrieve", AsyncMock(return_value=[{"content": "x"}]), raising=True)
     res = await prov.retrieve("q")
     assert res and "content" in res[0]
 
@@ -607,8 +594,7 @@ async def test_azure_provider_rerank_fallback_when_ids_missing(
 async def test_azure_provider_answer_delegates_to_pipeline(
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
-    """
-    Tests that the provider's answer method delegates to the search pipeline.
+    """Tests that the provider's answer method delegates to the search pipeline.
 
     This ensures that the `answer` method, when enabled, correctly calls the
     underlying pipeline's `get_answer` method to generate a synthesized answer
@@ -626,20 +612,14 @@ async def test_azure_provider_answer_delegates_to_pipeline(
             api_key="k",
             base_url="https://oai",
         ),
-        ModelSettings(
-            model="gpt-4o", deployment="chat", api_key="k", base_url="https://oai"
-        ),
+        ModelSettings(model="gpt-5", deployment="chat", api_key="k", base_url="https://oai"),
     ]
     settings.azure_search_services = [
-        AzureSearchSettings(
-            service="svc", endpoint="https://s.net", key="sk", index_name="idx"
-        )
+        AzureSearchSettings(service="svc", endpoint="https://s.net", key="sk", index_name="idx")
     ]
 
     mock_pipeline = MagicMock()
-    mock_pipeline.get_answer = AsyncMock(
-        return_value={"answer": "A", "source_chunks": []}
-    )
+    mock_pipeline.get_answer = AsyncMock(return_value={"answer": "A", "source_chunks": []})
     mock_pipeline.close = AsyncMock()
 
     monkeypatch.setattr(

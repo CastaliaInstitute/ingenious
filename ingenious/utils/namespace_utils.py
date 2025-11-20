@@ -1,5 +1,4 @@
-"""
-Namespace utilities for dynamic imports and workflow discovery.
+"""Namespace utilities for dynamic imports and workflow discovery.
 
 This module provides utilities for working with namespaces, discovering workflows,
 and handling dynamic imports across the Ingenious ecosystem with proper fallback support.
@@ -21,8 +20,8 @@ _importer = SafeImporter()
 
 
 def normalize_workflow_name(workflow_name: str) -> str:
-    """
-    Normalize workflow names to support both hyphenated and underscored formats.
+    """Normalize workflow names to support both hyphenated and underscored formats.
+
     Converts hyphens to underscores for module path compatibility.
 
     Args:
@@ -37,8 +36,7 @@ def normalize_workflow_name(workflow_name: str) -> str:
 
 
 def print_namespace_modules(namespace: str) -> None:
-    """
-    Print all modules found in a namespace.
+    """Print all modules found in a namespace.
 
     Args:
         namespace: The namespace to explore
@@ -55,8 +53,7 @@ def print_namespace_modules(namespace: str) -> None:
 
 
 def get_dir_roots() -> List[Path]:
-    """
-    Retrieve a list of directory paths that are considered as root directories for the project.
+    """Retrieve a list of directory paths that are considered as root directories for the project.
 
     The function checks potential locations for the root directories:
     1. The 'ingenious_extensions' folder in the current working directory.
@@ -72,9 +69,7 @@ def get_dir_roots() -> List[Path]:
     extensions_dir = working_dir / "ingenious_extensions"
 
     # next try the extensions template folder.. this will only exist if in development version
-    extensions_template_dir = (
-        working_dir / "ingenious" / "ingenious_extensions_template"
-    )
+    extensions_template_dir = working_dir / "ingenious" / "ingenious_extensions_template"
 
     # finally try the ingenious folder in pip install location
     try:
@@ -87,8 +82,7 @@ def get_dir_roots() -> List[Path]:
 
 
 def get_namespaces(include_builtin: bool = True) -> List[str]:
-    """
-    Get ordered list of namespaces to search for modules.
+    """Get ordered list of namespaces to search for modules.
 
     Args:
         include_builtin: Whether to include built-in workflows from 'ingenious' namespace
@@ -107,11 +101,8 @@ def get_namespaces(include_builtin: bool = True) -> List[str]:
     return namespaces
 
 
-def get_file_from_namespace_with_fallback(
-    module_name: str, file_name: str
-) -> Optional[str]:
-    """
-    Try to read a file from the Ingenious Extensions package and fall back to the Ingenious package if not found.
+def get_file_from_namespace_with_fallback(module_name: str, file_name: str) -> Optional[str]:
+    """Try to read a file from the Ingenious Extensions package and fall back to the Ingenious package if not found.
 
     Args:
         module_name (str): The name of the module to import (excluding the top level of ingenious or ingenious_extensions).
@@ -136,8 +127,7 @@ def get_file_from_namespace_with_fallback(
 
 
 def get_path_from_namespace_with_fallback(path: str) -> Optional[Path]:
-    """
-    Try to get a path from the Ingenious Extensions package and fall back to the Ingenious package if not found.
+    """Try to get a path from the Ingenious Extensions package and fall back to the Ingenious package if not found.
 
     Args:
         path (str): The relative path to search for
@@ -156,8 +146,7 @@ def get_path_from_namespace_with_fallback(path: str) -> Optional[Path]:
 
 
 def get_inbuilt_api_routes() -> Optional[Path]:
-    """
-    Retrieve the path to in-built API routes from the Ingenious package.
+    """Retrieve the path to in-built API routes from the Ingenious package.
 
     Returns:
         Path object to the API routes directory, or None if not found
@@ -181,14 +170,14 @@ class WorkflowDiscovery:
     """Enhanced workflow discovery with validation and caching."""
 
     def __init__(self) -> None:
+        """Initialize WorkflowDiscovery with empty workflow and metadata caches."""
         self._workflow_cache: Optional[List[str]] = None
         self._metadata_cache: Dict[str, Dict[str, Any]] = {}
 
     def discover_workflows(
         self, force_refresh: bool = False, include_builtin: bool = True
     ) -> List[str]:
-        """
-        Dynamically discover all available workflows from all namespaces.
+        """Dynamically discover all available workflows from all namespaces.
 
         This function searches through core Ingenious and extension namespaces
         to find available workflow modules with proper validation.
@@ -229,9 +218,7 @@ class WorkflowDiscovery:
                             logger.debug(f"Found potential workflow: {workflow_name}")
 
                             # Try to import and validate the workflow module
-                            if self._validate_workflow(
-                                flows_module_name, workflow_name
-                            ):
+                            if self._validate_workflow(flows_module_name, workflow_name):
                                 workflows.add(workflow_name)
                                 logger.debug(f"Confirmed workflow: {workflow_name}")
 
@@ -254,8 +241,7 @@ class WorkflowDiscovery:
         return result
 
     def _validate_workflow(self, flows_module_name: str, workflow_name: str) -> bool:
-        """
-        Validate that a workflow module contains a proper ConversationFlow class.
+        """Validate that a workflow module contains a proper ConversationFlow class.
 
         Args:
             flows_module_name: Base module name for flows
@@ -265,9 +251,7 @@ class WorkflowDiscovery:
             True if workflow is valid
         """
         try:
-            workflow_module_name = (
-                f"{flows_module_name}.{workflow_name}.{workflow_name}"
-            )
+            workflow_module_name = f"{flows_module_name}.{workflow_name}.{workflow_name}"
             workflow_module = _importer.import_module(workflow_module_name)
 
             # Check if it has a ConversationFlow class
@@ -308,8 +292,7 @@ class WorkflowDiscovery:
             return False
 
     def get_workflow_metadata(self, workflow_name: str) -> Dict[str, Any]:
-        """
-        Get metadata for a specific workflow.
+        """Get metadata for a specific workflow.
 
         Args:
             workflow_name (str): The workflow name
@@ -386,9 +369,7 @@ _workflow_discovery = WorkflowDiscovery()
 
 
 # Public API functions
-def discover_workflows(
-    force_refresh: bool = False, include_builtin: bool = True
-) -> List[str]:
+def discover_workflows(force_refresh: bool = False, include_builtin: bool = True) -> List[str]:
     """Discover all available workflows.
 
     Args:

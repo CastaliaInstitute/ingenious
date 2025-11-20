@@ -1,5 +1,4 @@
-"""
-Tests for AzureClientFactory.
+"""Tests for AzureClientFactory.
 
 This module tests the Azure client factory functionality, including:
 - OpenAI client creation with various authentication methods
@@ -23,6 +22,7 @@ from ingenious.common.enums import AuthenticationMethod
 from ingenious.config.models import (
     AzureSearchSettings,
     AzureSqlSettings,
+    CosmosSettings,
     FileStorageContainerSettings,
     ModelSettings,
 )
@@ -32,31 +32,24 @@ class TestAzureClientFactory:
     """Test cases for Azure Client Factory."""
 
     # OpenAI Client Tests
-    @patch(
-        "ingenious.client.azure.azure_client_builder_factory.AzureOpenAIClientBuilder"
-    )
+    @patch("ingenious.client.azure.azure_client_builder_factory.AzureOpenAIClientBuilder")
     def test_create_openai_client_with_model_config(self, mock_builder_class):
-        """Test creating OpenAI client with ModelConfig."""
+        """Test creating OpenAI client with ModelSettings."""
         # Arrange
         mock_builder = Mock()
         mock_client = Mock()
         mock_builder.build.return_value = mock_client
         mock_builder_class.return_value = mock_builder
 
-        # Create ModelSettings instead of ModelConfig to avoid complex initialization
+        # Build a proper ModelSettings with test data
         from ingenious.config.models import ModelSettings
 
         model_config = ModelSettings(
             model="gpt-4",
-            base_url="https://test.openai.azure.com/",
+            api_type="rest",
             api_version="2023-03-15-preview",
             deployment="test-deployment",
-            api_type="rest",
-            authentication_method=AuthenticationMethod.DEFAULT_CREDENTIAL,
-            client_id="",
-            client_secret="",
-            tenant_id="",
-            api_key="",
+            base_url="https://test.openai.azure.com/",
         )
 
         # Act
@@ -67,9 +60,7 @@ class TestAzureClientFactory:
         mock_builder.build.assert_called_once()
         assert result == mock_client
 
-    @patch(
-        "ingenious.client.azure.azure_client_builder_factory.AzureOpenAIClientBuilder"
-    )
+    @patch("ingenious.client.azure.azure_client_builder_factory.AzureOpenAIClientBuilder")
     def test_create_openai_client_with_model_settings(self, mock_builder_class):
         """Test creating OpenAI client with ModelSettings."""
         # Arrange
@@ -99,12 +90,8 @@ class TestAzureClientFactory:
         mock_builder.build.assert_called_once()
         assert result == mock_client
 
-    @patch(
-        "ingenious.client.azure.azure_client_builder_factory.AzureOpenAIClientBuilder"
-    )
-    def test_create_openai_client_from_params_default_credential(
-        self, mock_builder_class
-    ):
+    @patch("ingenious.client.azure.azure_client_builder_factory.AzureOpenAIClientBuilder")
+    def test_create_openai_client_from_params_default_credential(self, mock_builder_class):
         """Test creating OpenAI client from parameters with default credential."""
         # Arrange
         mock_builder = Mock()
@@ -130,13 +117,9 @@ class TestAzureClientFactory:
         assert call_args.model == "gpt-4"
         assert call_args.base_url == "https://test.openai.azure.com/"
         assert call_args.api_version == "2023-05-15"
-        assert (
-            call_args.authentication_method == AuthenticationMethod.DEFAULT_CREDENTIAL
-        )
+        assert call_args.authentication_method == AuthenticationMethod.DEFAULT_CREDENTIAL
 
-    @patch(
-        "ingenious.client.azure.azure_client_builder_factory.AzureOpenAIClientBuilder"
-    )
+    @patch("ingenious.client.azure.azure_client_builder_factory.AzureOpenAIClientBuilder")
     def test_create_openai_client_from_params_with_api_key(self, mock_builder_class):
         """Test creating OpenAI client from parameters with API key."""
         # Arrange
@@ -175,20 +158,37 @@ class TestAzureClientFactory:
         mock_builder.build.return_value = mock_client
         mock_builder_class.return_value = mock_builder
 
-        # Create ModelSettings instead of ModelConfig to avoid complex initialization
+        # Build a proper ModelConfig with mocked config and profile
+        mock_config_ns = Mock()
+        mock_config_ns.model = "gpt-4"
+        mock_config_ns.api_type = "rest"
+        mock_config_ns.api_version = "2023-05-15"
+        mock_config_ns.deployment = "gpt-4"
+
+        mock_profile = Mock()
+        mock_profile.deployment = "gpt-4"
+        mock_profile.api_version = "2023-05-15"
+        mock_profile.authentication_method = AuthenticationMethod.TOKEN
+        mock_profile.client_id = "test-client-id"
+        mock_profile.client_secret = "test-client-secret"
+        mock_profile.tenant_id = "test-tenant-id"
+        mock_profile.api_key = "test-key"
+        mock_profile.base_url = "https://test.openai.azure.com/"
+
+        # Build a proper ModelSettings with test data
         from ingenious.config.models import ModelSettings
 
         model_config = ModelSettings(
             model="gpt-4",
-            base_url="https://test.openai.azure.com/",
-            api_version="2023-05-15",
-            deployment="gpt-4",
             api_type="rest",
+            deployment="gpt-4",
+            api_version="2023-05-15",
             authentication_method=AuthenticationMethod.TOKEN,
             client_id="test-client-id",
             client_secret="test-client-secret",
             tenant_id="test-tenant-id",
             api_key="test-key",
+            base_url="https://test.openai.azure.com/",
         )
 
         # Act
@@ -226,9 +226,7 @@ class TestAzureClientFactory:
         assert result == mock_client
 
     # Blob Storage Client Tests
-    @patch(
-        "ingenious.client.azure.azure_client_builder_factory.BlobServiceClientBuilder"
-    )
+    @patch("ingenious.client.azure.azure_client_builder_factory.BlobServiceClientBuilder")
     def test_create_blob_service_client(self, mock_builder_class):
         """Test creating blob service client."""
         # Arrange
@@ -257,9 +255,7 @@ class TestAzureClientFactory:
         mock_builder.build.assert_called_once()
         assert result == mock_client
 
-    @patch(
-        "ingenious.client.azure.azure_client_builder_factory.BlobServiceClientBuilder"
-    )
+    @patch("ingenious.client.azure.azure_client_builder_factory.BlobServiceClientBuilder")
     def test_create_blob_service_client_from_params(self, mock_builder_class):
         """Test creating blob service client from parameters."""
         # Arrange
@@ -343,27 +339,40 @@ class TestAzureClientFactory:
         """Test creating Cosmos client when package is not available."""
         # This test will pass if HAS_COSMOS is False
         if not HAS_COSMOS:
+            cosmos_config = CosmosSettings(
+                uri="https://test-cosmos.documents.azure.com:443/",
+                authentication_method=AuthenticationMethod.DEFAULT_CREDENTIAL,
+                database_name="test-db",
+            )
             with pytest.raises(ImportError, match="azure-cosmos is required"):
-                AzureClientFactory.create_cosmos_client(
-                    endpoint="https://test-cosmos.documents.azure.com:443/",
-                    authentication_method=AuthenticationMethod.DEFAULT_CREDENTIAL,
-                )
+                AzureClientFactory.create_cosmos_client(cosmos_config)
 
-    def test_create_cosmos_client_requires_config(self):
-        """Test that Cosmos client creation requires config parameter."""
-        # This test will check that cosmos_config parameter is required
-        if HAS_COSMOS:
-            with pytest.raises(ValueError, match="Cosmos config is required"):
-                AzureClientFactory.create_cosmos_client(
-                    endpoint="https://test-cosmos.documents.azure.com:443/",
-                    authentication_method=AuthenticationMethod.DEFAULT_CREDENTIAL,
-                )
+    @pytest.mark.skipif(not HAS_COSMOS, reason="azure-cosmos not available")
+    @patch("ingenious.client.azure.azure_client_builder_factory.CosmosClientBuilder")
+    def test_create_cosmos_client_not_implemented(self, mock_builder_class):
+        """Test that Cosmos client creation works with mocked builder."""
+        from ingenious.config.models import CosmosSettings
+
+        # Mock the builder and client
+        mock_builder = Mock()
+        mock_client = Mock()
+        mock_builder.build.return_value = mock_client
+        mock_builder_class.return_value = mock_builder
+
+        cosmos_config = CosmosSettings(
+            uri="https://test-cosmos.documents.azure.com:443/",
+            database_name="test-db",
+        )
+        result = AzureClientFactory.create_cosmos_client(cosmos_config)
+
+        # Verify the client was created through the builder
+        mock_builder_class.assert_called_once_with(cosmos_config)
+        mock_builder.build.assert_called_once()
+        assert result == mock_client
 
     # Search Client Tests
     @pytest.mark.skipif(not HAS_SEARCH, reason="azure-search-documents not available")
-    @patch(
-        "ingenious.client.azure.azure_client_builder_factory.AzureSearchClientBuilder"
-    )
+    @patch("ingenious.client.azure.azure_client_builder_factory.AzureSearchClientBuilder")
     def test_create_search_client_with_search_package(self, mock_builder_class):
         """Test creating search client when package is available."""
         # Arrange
@@ -406,12 +415,8 @@ class TestAzureClientFactory:
                 AzureClientFactory.create_search_client(search_config, "test-index")
 
     @pytest.mark.skipif(not HAS_SEARCH, reason="azure-search-documents not available")
-    @patch(
-        "ingenious.client.azure.azure_client_builder_factory.AzureSearchClientBuilder"
-    )
-    def test_create_search_client_from_params_with_search_package(
-        self, mock_builder_class
-    ):
+    @patch("ingenious.client.azure.azure_client_builder_factory.AzureSearchClientBuilder")
+    def test_create_search_client_from_params_with_search_package(self, mock_builder_class):
         """Test creating search client from parameters when package is available."""
         # Arrange
         mock_builder = Mock()
@@ -489,9 +494,7 @@ class TestAzureClientFactory:
         mock_builder.build.assert_called_once()
         assert result == mock_connection
 
-    @patch(
-        "ingenious.client.azure.azure_client_builder_factory.AzureSqlClientBuilderWithAuth"
-    )
+    @patch("ingenious.client.azure.azure_client_builder_factory.AzureSqlClientBuilderWithAuth")
     def test_create_sql_client_with_auth(self, mock_builder_class):
         """Test creating SQL client with authentication."""
         # Arrange
@@ -526,9 +529,7 @@ class TestAzureClientFactory:
 
     def test_create_sql_client_with_auth_from_params_is_alias(self):
         """Test that create_sql_client_with_auth_from_params is an alias."""
-        with patch.object(
-            AzureClientFactory, "create_sql_client_with_auth"
-        ) as mock_method:
+        with patch.object(AzureClientFactory, "create_sql_client_with_auth") as mock_method:
             mock_connection = Mock()
             mock_method.return_value = mock_connection
 
@@ -562,9 +563,7 @@ class TestAzureClientFactory:
     def test_factory_is_static_class(self):
         """Test that factory methods are static and class doesn't need instantiation."""
         # Should be able to call methods without instantiating
-        with patch(
-            "ingenious.client.azure.azure_client_builder_factory.AzureOpenAIClientBuilder"
-        ):
+        with patch("ingenious.client.azure.azure_client_builder_factory.AzureOpenAIClientBuilder"):
             # This should work without creating an instance
             AzureClientFactory.create_openai_client_from_params(
                 model="gpt-4",
@@ -575,23 +574,49 @@ class TestAzureClientFactory:
     def test_authentication_method_enum_usage(self):
         """Test that authentication methods are properly used."""
         # Test that we can use all authentication methods
-        methods = [
-            AuthenticationMethod.DEFAULT_CREDENTIAL,
-            AuthenticationMethod.TOKEN,
-            AuthenticationMethod.MSI,
-            AuthenticationMethod.CLIENT_ID_AND_SECRET,
+        test_cases = [
+            {
+                "method": AuthenticationMethod.DEFAULT_CREDENTIAL,
+                "api_key": "",
+            },
+            {
+                "method": AuthenticationMethod.TOKEN,
+                "api_key": "test-api-key",  # Required for TOKEN auth
+            },
+            {
+                "method": AuthenticationMethod.MSI,
+                "api_key": "",
+            },
+            {
+                "method": AuthenticationMethod.CLIENT_ID_AND_SECRET,
+                "api_key": "",
+                "client_id": "test-client-id",
+                "client_secret": "test-secret",
+                "tenant_id": "test-tenant-id",
+            },
         ]
 
-        for method in methods:
+        for test_case in test_cases:
             with patch(
                 "ingenious.client.azure.azure_client_builder_factory.AzureOpenAIClientBuilder"
             ):
-                AzureClientFactory.create_openai_client_from_params(
-                    model="gpt-4",
-                    base_url="https://test.openai.azure.com/",
-                    api_version="2023-05-15",
-                    authentication_method=method,
-                )
+                kwargs = {
+                    "model": "gpt-4",
+                    "base_url": "https://test.openai.azure.com/",
+                    "api_version": "2023-05-15",
+                    "authentication_method": test_case["method"],
+                    "api_key": test_case["api_key"],
+                }
+                # Add additional parameters for CLIENT_ID_AND_SECRET
+                if test_case["method"] == AuthenticationMethod.CLIENT_ID_AND_SECRET:
+                    kwargs.update(
+                        {
+                            "client_id": test_case["client_id"],
+                            "client_secret": test_case["client_secret"],
+                            "tenant_id": test_case["tenant_id"],
+                        }
+                    )
+                AzureClientFactory.create_openai_client_from_params(**kwargs)
 
 
 class TestAzureClientFactoryIntegration:
@@ -617,10 +642,7 @@ class TestAzureClientFactoryIntegration:
             assert call_args.model == "gpt-4"
             assert call_args.deployment == "gpt-4"  # Should default to model name
             assert call_args.api_key == ""  # Should default to empty string
-            assert (
-                call_args.authentication_method
-                == AuthenticationMethod.DEFAULT_CREDENTIAL
-            )
+            assert call_args.authentication_method == AuthenticationMethod.DEFAULT_CREDENTIAL
 
     def test_file_storage_settings_creation(self):
         """Test that FileStorageContainerSettings are created correctly."""

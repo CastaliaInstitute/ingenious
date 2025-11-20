@@ -1,3 +1,9 @@
+"""SQLite database adapter for Ingenious chat history.
+
+Provides lightweight local repository implementation for storing chat history,
+threads, messages, and metadata using SQLite database.
+"""
+
 import json
 import os
 import sqlite3
@@ -24,7 +30,18 @@ logger = get_logger(__name__)
 
 
 class sqlite_ChatHistoryRepository(BaseSQLRepository):
+    """SQLite implementation of chat history repository.
+
+    Provides lightweight local storage for chat history, threads, and messages
+    using SQLite database with INSERT OR REPLACE operations.
+    """
+
     def __init__(self, config: IngeniousSettings) -> None:
+        """Initialize SQLite chat history repository with database path and connection pool.
+
+        Args:
+            config: Ingenious settings containing database path and configuration.
+        """
         self.db_path = config.chat_history.database_path
         # Check if the directory exists, if not, create it
         db_dir_check = os.path.dirname(self.db_path)
@@ -161,9 +178,7 @@ class sqlite_ChatHistoryRepository(BaseSQLRepository):
                 LIMIT ?
             """
 
-            user_threads = self.execute_sql(
-                user_threads_query, [identifier, thread_id, 100]
-            )
+            user_threads = self.execute_sql(user_threads_query, [identifier, thread_id, 100])
 
         if not isinstance(user_threads, list):
             return None
@@ -274,8 +289,7 @@ class sqlite_ChatHistoryRepository(BaseSQLRepository):
                         tags=step_feedback.get("step_tags"),
                         input=(
                             step_feedback.get("step_input", "")
-                            if step_feedback.get("step_showinput")
-                            not in [None, "false"]
+                            if step_feedback.get("step_showinput") not in [None, "false"]
                             else ""
                         ),
                         output=step_feedback.get("step_output", ""),
@@ -323,6 +337,14 @@ class sqlite_ChatHistoryRepository(BaseSQLRepository):
     async def add_step(
         self, step_dict: IChatHistoryRepository.StepDict
     ) -> IChatHistoryRepository.Step:
+        """Add a step to the SQLite database.
+
+        Args:
+            step_dict: Step dictionary containing step data and metadata.
+
+        Returns:
+            Step object with generated ID and metadata.
+        """
         logger.info(
             "Creating step in SQLite database",
             step_id=step_dict.get("id"),
@@ -335,9 +357,7 @@ class sqlite_ChatHistoryRepository(BaseSQLRepository):
         step_dict["disableFeedback"] = step_dict.get("disableFeedback", False)
 
         step_dict["showInput"] = (
-            str(step_dict.get("showInput", "")).lower()
-            if "showInput" in step_dict
-            else None
+            str(step_dict.get("showInput", "")).lower() if "showInput" in step_dict else None
         )
         parameters = {
             key: value
@@ -352,9 +372,7 @@ class sqlite_ChatHistoryRepository(BaseSQLRepository):
             INSERT INTO steps ({columns})
             VALUES ({values});
         """
-        self.execute_sql(
-            sql=query, params=list(parameters.values()), expect_results=False
-        )
+        self.execute_sql(sql=query, params=list(parameters.values()), expect_results=False)
 
         # Return the created step
         from uuid import UUID
@@ -363,12 +381,8 @@ class sqlite_ChatHistoryRepository(BaseSQLRepository):
             id=UUID(step_dict.get("id", "00000000-0000-0000-0000-000000000000")),
             name=step_dict.get("name", ""),
             type=step_dict.get("type", ""),
-            threadId=UUID(
-                step_dict.get("threadId", "00000000-0000-0000-0000-000000000000")
-            ),
-            parentId=UUID(step_dict.get("parentId"))
-            if step_dict.get("parentId")
-            else None,
+            threadId=UUID(step_dict.get("threadId", "00000000-0000-0000-0000-000000000000")),
+            parentId=UUID(step_dict.get("parentId")) if step_dict.get("parentId") else None,
             disableFeedback=step_dict.get("disableFeedback", False),
             streaming=step_dict.get("streaming", False),
             waitForAnswer=step_dict.get("waitForAnswer"),
@@ -396,6 +410,18 @@ class sqlite_ChatHistoryRepository(BaseSQLRepository):
         metadata: Optional[Dict[str, object]] = None,
         tags: Optional[List[str]] = None,
     ) -> str:
+        """Update or insert a thread using INSERT OR REPLACE.
+
+        Args:
+            thread_id: Unique identifier for the thread.
+            name: Optional name for the thread.
+            user_id: Optional user identifier owning the thread.
+            metadata: Optional metadata dictionary for the thread.
+            tags: Optional list of tags for the thread.
+
+        Returns:
+            Empty string on success.
+        """
         logger.info(
             "Updating thread in SQLite",
             thread_id=thread_id,
@@ -442,13 +468,16 @@ class sqlite_ChatHistoryRepository(BaseSQLRepository):
             ON CONFLICT ("id") DO UPDATE
             SET {updates};
         """
-        self.execute_sql(
-            sql=query, params=list(parameters.values()), expect_results=False
-        )
+        self.execute_sql(sql=query, params=list(parameters.values()), expect_results=False)
 
         return ""
 
     async def update_memory(self) -> None:
+        """Update chat history summary to keep only the latest record per thread.
+
+        Creates a temporary table with the latest record per thread, clears the
+        summary table, and re-inserts only the latest records.
+        """
         with self.pool.get_connection() as connection:
             cursor = connection.cursor()
 

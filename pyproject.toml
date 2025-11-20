@@ -234,9 +234,15 @@ packages = ["ingenious"]
 [project.scripts]
 ingen = "ingenious.cli:app"
 
+[tool.ruff]
+line-length = 100
+
 [tool.ruff.lint]
-extend-select = ["I"]
+extend-select = ["I", "D"]
 ignore = ["E402"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
 
 [tool.mypy]
 # Global mypy configuration
@@ -398,6 +404,7 @@ markers = [
   "requires_env: Tests that require specific environment variables",
   "e2e: live network integration test (requires external APIs)",
   "docs: tests that parse large documents or require extra dependencies",
+  "isolation_sensitive: Tests that may fail due to environment pollution",
 ]
 filterwarnings = [
   "ignore::DeprecationWarning",

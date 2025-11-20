@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-End-to-end (direct) path: provider builds pipeline via factory and closes it.
+"""End-to-end (direct) path: provider builds pipeline via factory and closes it.
 
 We assert:
 - The pipeline is obtained via the provider constructor.
@@ -63,7 +62,7 @@ def _settings() -> IngeniousSettings:
             api_version="2024-02-01",
         ),
         ModelSettings(
-            model="gpt-4o",
+            model="gpt-5",
             deployment="chat",
             api_key="ok",
             base_url="https://aoai.example.com",
@@ -84,6 +83,11 @@ def _settings() -> IngeniousSettings:
 
 @pytest.mark.asyncio
 async def test_end_to_end_kb_direct_uses_factory_and_closes_pipeline() -> None:
+    """Test end-to-end knowledge base retrieval with proper pipeline closure.
+
+    Verifies that the provider uses the factory to build the pipeline, executes
+    retrieval successfully, and properly closes pipeline resources when done.
+    """
     p_stub = _CloseTrackedPipeline()
 
     with patch(

@@ -1,3 +1,9 @@
+"""Diagnostic and monitoring API routes.
+
+This module provides endpoints for health checks, workflow discovery,
+workflow status validation, and system diagnostics.
+"""
+
 import time
 from datetime import datetime
 from pathlib import Path
@@ -33,8 +39,7 @@ async def workflow_status(
     request: Request,
     auth_user: Annotated[str, Depends(auth_dependencies.get_auth_user)],
 ) -> Dict[str, Any]:
-    """
-    Check the configuration status of a specific workflow.
+    """Check the configuration status of a specific workflow.
 
     Returns information about whether the workflow is properly configured
     and what external services or configuration might be missing.
@@ -70,14 +75,10 @@ async def workflow_status(
             # Check if model has required fields from environment configuration
             model = config.models[0]
             if not hasattr(model, "api_key") or not model.api_key:
-                missing_config.append(
-                    "models.api_key: Missing environment configuration"
-                )
+                missing_config.append("models.api_key: Missing environment configuration")
                 configured = False
             if not hasattr(model, "base_url") or not model.base_url:
-                missing_config.append(
-                    "models.base_url: Missing environment configuration"
-                )
+                missing_config.append("models.base_url: Missing environment configuration")
                 configured = False
 
         if not config.chat_service or config.chat_service.type != "multi_agent":
@@ -86,10 +87,7 @@ async def workflow_status(
 
         # Check workflow-specific requirements
         if "azure_search_services" in requirements["required_config"]:
-            if (
-                not config.azure_search_services
-                or len(config.azure_search_services) == 0
-            ):
+            if not config.azure_search_services or len(config.azure_search_services) == 0:
                 missing_config.append("azure_search_services: Not configured")
                 configured = False
             else:
@@ -130,9 +128,7 @@ async def workflow_status(
             )
 
             if not has_azure_sql and not has_local_sql:
-                missing_config.append(
-                    "database: Neither Azure SQL nor local SQLite configured"
-                )
+                missing_config.append("database: Neither Azure SQL nor local SQLite configured")
                 configured = False
 
         return {
@@ -169,8 +165,8 @@ async def list_workflows(
     request: Request,
     auth_user: Annotated[str, Depends(auth_dependencies.get_auth_user)],
 ) -> Dict[str, Any]:
-    """
-    List all available workflows and their configuration status.
+    """List all available workflows and their configuration status.
+
     Supports both hyphenated (bike-insights) and underscored (bike_insights) naming formats.
     Dynamically discovers workflows from all namespaces.
     """
@@ -190,9 +186,7 @@ async def list_workflows(
             # Add supported naming formats to the status
             hyphenated_name = workflow.replace("_", "-")
             status["supported_names"] = (
-                [workflow, hyphenated_name]
-                if workflow != hyphenated_name
-                else [workflow]
+                [workflow, hyphenated_name] if workflow != hyphenated_name else [workflow]
             )
 
             workflow_statuses.append(status)
@@ -211,9 +205,7 @@ async def list_workflows(
             "summary": {
                 "total": len(discovered_workflows),
                 "configured": len([w for w in workflow_statuses if w["configured"]]),
-                "unconfigured": len(
-                    [w for w in workflow_statuses if not w["configured"]]
-                ),
+                "unconfigured": len([w for w in workflow_statuses if not w["configured"]]),
             },
             "naming_note": "Workflows support both hyphenated (bike-insights) and underscored (bike_insights) naming formats",
         }
@@ -237,6 +229,21 @@ async def diagnostic(
     request: Request,
     auth_user: Annotated[str, Depends(auth_dependencies.get_auth_user)],
 ) -> Dict[str, Any]:
+    """Retrieve diagnostic information about file storage paths.
+
+    Returns directory paths for prompts, data, outputs, and events configured
+    in the system's file storage settings.
+
+    Args:
+        request: FastAPI request object for method checking.
+        auth_user: Authenticated username from dependency injection.
+
+    Returns:
+        Dictionary containing diagnostic information with storage directory paths.
+
+    Raises:
+        HTTPException: If diagnostic retrieval fails with status 500.
+    """
     if request.method == "OPTIONS":
         return {"Allow": "GET, OPTIONS"}
 
@@ -283,8 +290,7 @@ async def diagnostic(
     },
 )
 async def health_check() -> Dict[str, Any]:
-    """
-    Health check endpoint for monitoring system status.
+    """Health check endpoint for monitoring system status.
 
     Returns basic system information and configuration status.
     Useful for load balancers, monitoring systems, and quick validation.
@@ -307,9 +313,7 @@ async def health_check() -> Dict[str, Any]:
 
         # Determine overall status
         overall_status = (
-            "healthy"
-            if config_status == "ok" and profile_status == "ok"
-            else "degraded"
+            "healthy" if config_status == "ok" and profile_status == "ok" else "degraded"
         )
 
         health_data = {

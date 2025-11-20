@@ -2,6 +2,9 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+# Important Note on Your Context Window
+Your context window will be automatically compacted as it approaches its limit, allowing you to continue working indefinitely from where you left off. Therefore, do not stop tasks early due to token budget concerns. As you approach your token budget limit, save your current progress and state to memory before the context window refreshes. Always be as persistent and autonomous as possible and complete tasks fully, even if the end of your budget is approaching. Never artificially stop any task early regardless of the context remaining.
+
 ## Repository Context
 
 This is the **ingenious** package - a core AI agent framework library (v0.2.7).
@@ -112,9 +115,9 @@ Environment variables with `INGENIOUS_` prefix (using pydantic-settings):
 # Required Azure OpenAI - use Cognitive Services endpoint format (CRITICAL)
 INGENIOUS_MODELS__0__API_KEY=your-key
 INGENIOUS_MODELS__0__BASE_URL=https://eastus.api.cognitive.microsoft.com/
-INGENIOUS_MODELS__0__MODEL=gpt-4o-mini
+INGENIOUS_MODELS__0__MODEL=gpt-5-mini
 INGENIOUS_MODELS__0__API_VERSION=2024-12-01-preview
-INGENIOUS_MODELS__0__DEPLOYMENT=gpt-4o-mini-deployment
+INGENIOUS_MODELS__0__DEPLOYMENT=gpt-5-mini-deployment
 INGENIOUS_MODELS__0__API_TYPE=rest
 INGENIOUS_MODELS__0__ROLE=chat
 

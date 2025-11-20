@@ -1,18 +1,38 @@
-"""
-Azure Client Factory for building various Azure service clients.
+"""Azure Client Factory for building various Azure service clients.
 
-Production goals:
-- Keep optional Azure SDKs truly optional (lazy, memoized imports).
-- Preserve testability by exposing patchable builder symbols at module scope.
-- Provide deterministic error messages for missing optional dependencies.
+This module provides a centralized factory for creating Azure service clients
+with appropriate authentication methods based on configuration.
 """
 
-from __future__ import annotations
+from typing import TYPE_CHECKING, Any, Optional
 
-import importlib
-import importlib.util
-from typing import Any, Mapping, Optional, Union
+import pyodbc
+from autogen_ext.models.openai import AzureOpenAIChatCompletionClient
+from azure.storage.blob import BlobClient, BlobServiceClient
+from openai import AzureOpenAI
 
+# Optional imports with fallbacks
+try:
+    from azure.cosmos import CosmosClient
+
+    HAS_COSMOS = True
+except ImportError:
+    CosmosClient = Any  # type: ignore
+    HAS_COSMOS = False
+
+try:
+    from azure.search.documents import SearchClient
+
+    HAS_SEARCH = True
+except ImportError:
+    SearchClient = Any  # type: ignore
+    HAS_SEARCH = False
+
+# Type imports for type checking
+if TYPE_CHECKING:
+    pass  # All types are already imported above
+
+# Support new configuration system
 from ingenious.common.enums import AuthenticationMethod
 from ingenious.config.models import (
     AzureSearchSettings,
@@ -21,108 +41,44 @@ from ingenious.config.models import (
     FileStorageContainerSettings,
     ModelSettings,
 )
-from ingenious.models.config import (
-    AzureSearchConfig,
-    AzureSqlConfig,
-    CosmosConfig,
-    FileStorageContainer,
-    ModelConfig,
+
+from .builder.blob_client import BlobClientBuilder, BlobServiceClientBuilder
+from .builder.openai_chat_completions_client import (
+    AzureOpenAIChatCompletionClientBuilder,
 )
 
-# --------------------------------------------------------------------------------------
-# Optional dependency flags (evaluated once at import)
-# --------------------------------------------------------------------------------------
+# Import all the builders
+from .builder.openai_client import AzureOpenAIClientBuilder
+from .builder.sql_client import AzureSqlClientBuilder, AzureSqlClientBuilderWithAuth
 
+# Optional builder imports
+try:
+    from .builder.search_client import AzureSearchClientBuilder
+except ImportError:
+    AzureSearchClientBuilder = None  # type: ignore
 
-def _has_module(modname: str) -> bool:
-    try:
-        return importlib.util.find_spec(modname) is not None
-    except Exception:
-        return False
-
-
-HAS_SEARCH: bool = _has_module("azure.search.documents")
-HAS_COSMOS: bool = _has_module("azure.cosmos")
-
-# --------------------------------------------------------------------------------------
-# Patchable builder symbols (initialized to None; tests can patch these directly).
-# --------------------------------------------------------------------------------------
-
-AzureOpenAIClientBuilder = None
-AzureOpenAIChatCompletionClientBuilder = None
-BlobServiceClientBuilder = None
-BlobClientBuilder = None
-AzureSearchClientBuilder = None
-AzureSqlClientBuilder = None
-AzureSqlClientBuilderWithAuth = None
-AzureSearchAsyncClientBuilder = None
-AsyncAzureOpenAIClientBuilder = None
-CosmosClientBuilder = None
-__all__ = [
-    "AzureClientFactory",
-    "HAS_COSMOS",
-    "HAS_SEARCH",
-    "AzureOpenAIClientBuilder",
-    "AzureOpenAIChatCompletionClientBuilder",
-    "BlobServiceClientBuilder",
-    "BlobClientBuilder",
-    "AzureSearchClientBuilder",
-    "AzureSqlClientBuilder",
-    "AzureSqlClientBuilderWithAuth",
-    "AzureSearchAsyncClientBuilder",
-    "AsyncAzureOpenAIClientBuilder",
-    "CosmosClientBuilder",
-]
-
-_PKG_BASE = __package__  # e.g., "ingenious.client.azure"
-
-
-# --------------------------------------------------------------------------------------
-# Internal helpers
-# --------------------------------------------------------------------------------------
-
-
-def _ensure_builder(
-    global_name: str,
-    import_path: str,
-    attr_name: str,
-    missing_msg: str,
-) -> Any:
-    existing = globals().get(global_name)
-    if existing is not None:
-        return existing
-
-    try:
-        mod = importlib.import_module(import_path)
-        builder = getattr(mod, attr_name)
-    except Exception as e:
-        raise ImportError(missing_msg) from e
-
-    globals()[global_name] = builder
-    return builder
-
-
-# --------------------------------------------------------------------------------------
-# Factory
-# --------------------------------------------------------------------------------------
+try:
+    from .builder.cosmos_client import CosmosClientBuilder
+except ImportError:
+    CosmosClientBuilder = None  # type: ignore
 
 
 class AzureClientFactory:
     """Factory class for creating Azure service clients with proper authentication."""
 
-    # --------------------------- OpenAI (sync) ---------------------------
-
     @staticmethod
     def create_openai_client(
-        model_config: Union[ModelConfig, ModelSettings],
-    ) -> Any:
-        builder_cls = _ensure_builder(
-            "AzureOpenAIClientBuilder",
-            f"{_PKG_BASE}.builder.openai_client",
-            "AzureOpenAIClientBuilder",
-            "openai is required to create an Azure OpenAI client",
-        )
-        builder = builder_cls(model_config)
+        model_config: ModelSettings,
+    ) -> AzureOpenAI:
+        """Create an Azure OpenAI client from model configuration.
+
+        Args:
+            model_config: Model configuration containing authentication details
+
+        Returns:
+            AzureOpenAI: Configured Azure OpenAI client
+        """
+        builder = AzureOpenAIClientBuilder(model_config)
         return builder.build()
 
     @staticmethod
@@ -136,42 +92,57 @@ class AzureClientFactory:
         client_id: Optional[str] = None,
         client_secret: Optional[str] = None,
         tenant_id: Optional[str] = None,
-    ) -> Any:
-        builder_cls = _ensure_builder(
-            "AzureOpenAIClientBuilder",
-            f"{_PKG_BASE}.builder.openai_client",
-            "AzureOpenAIClientBuilder",
-            "openai is required to create an Azure OpenAI client",
-        )
-        # Use model_construct to avoid strict credential validation in enum-usage tests.
-        model_settings = ModelSettings.model_construct(
+    ) -> AzureOpenAI:
+        """Create an Azure OpenAI client with direct parameters.
+
+        This method is useful when you don't have a ModelConfig object but want to
+        create a client with specific parameters.
+
+        Args:
+            model: Model name (e.g., "gpt-4", "gpt-3.5-turbo")
+            base_url: Azure OpenAI endpoint URL
+            api_version: Azure OpenAI API version
+            deployment: Azure deployment name. If None, uses model name
+            api_key: API key for authentication. Required if not using default credential
+            authentication_method: Authentication method
+            client_id: Client ID for MSI or CLIENT_ID_AND_SECRET authentication
+            client_secret: Client secret for CLIENT_ID_AND_SECRET authentication
+            tenant_id: Tenant ID for CLIENT_ID_AND_SECRET authentication
+
+        Returns:
+            AzureOpenAI: Configured Azure OpenAI client
+
+        Raises:
+            ValueError: If required parameters are missing
+        """
+        model_settings = ModelSettings(
             model=model,
             api_type="rest",
             base_url=base_url,
             api_version=api_version,
-            deployment=(deployment or model),
-            api_key=(api_key or ""),
+            deployment=deployment or model,
+            api_key=api_key or "",
             authentication_method=authentication_method,
-            client_id=(client_id or ""),
-            client_secret=(client_secret or ""),
-            tenant_id=(tenant_id or ""),
+            client_id=client_id or "",
+            client_secret=client_secret or "",
+            tenant_id=tenant_id or "",
         )
-        builder = builder_cls(model_settings)
+        builder = AzureOpenAIClientBuilder(model_settings)
         return builder.build()
-
-    # ----------- OpenAI Chat Completions client (sync, optional) -----------
 
     @staticmethod
     def create_openai_chat_completion_client(
-        model_config: Union[ModelConfig, ModelSettings],
-    ) -> Any:
-        builder_cls = _ensure_builder(
-            "AzureOpenAIChatCompletionClientBuilder",
-            f"{_PKG_BASE}.builder.openai_chat_completions_client",
-            "AzureOpenAIChatCompletionClientBuilder",
-            "autogen-ext is required to create the chat client",
-        )
-        builder = builder_cls(model_config)
+        model_config: ModelSettings,
+    ) -> AzureOpenAIChatCompletionClient:
+        """Create an Azure OpenAI Chat Completion client from model configuration.
+
+        Args:
+            model_config: Model configuration containing authentication details
+
+        Returns:
+            AzureOpenAIChatCompletionClient: Configured Azure OpenAI Chat Completion client
+        """
+        builder = AzureOpenAIChatCompletionClientBuilder(model_config)
         return builder.build()
 
     @staticmethod
@@ -185,41 +156,57 @@ class AzureClientFactory:
         client_id: Optional[str] = None,
         client_secret: Optional[str] = None,
         tenant_id: Optional[str] = None,
-    ) -> Any:
-        builder_cls = _ensure_builder(
-            "AzureOpenAIChatCompletionClientBuilder",
-            f"{_PKG_BASE}.builder.openai_chat_completions_client",
-            "AzureOpenAIChatCompletionClientBuilder",
-            "autogen-ext is required to create the chat client",
-        )
-        model_settings = ModelSettings.model_construct(
+    ) -> AzureOpenAIChatCompletionClient:
+        """Create an Azure OpenAI Chat Completion client with direct parameters.
+
+        This method is useful when you don't have a ModelConfig object but want to
+        create a client with specific parameters.
+
+        Args:
+            model: Model name (e.g., "gpt-4", "gpt-3.5-turbo")
+            base_url: Azure OpenAI endpoint URL
+            api_version: Azure OpenAI API version
+            deployment: Azure deployment name. If None, uses model name
+            api_key: API key for authentication. Required if not using default credential
+            authentication_method: Authentication method
+            client_id: Client ID for MSI or CLIENT_ID_AND_SECRET authentication
+            client_secret: Client secret for CLIENT_ID_AND_SECRET authentication
+            tenant_id: Tenant ID for CLIENT_ID_AND_SECRET authentication
+
+        Returns:
+            AzureOpenAIChatCompletionClient: Configured Azure OpenAI Chat Completion client
+
+        Raises:
+            ValueError: If required parameters are missing
+        """
+        model_settings = ModelSettings(
             model=model,
             api_type="rest",
             base_url=base_url,
             api_version=api_version,
-            deployment=(deployment or model),
-            api_key=(api_key or ""),
+            deployment=deployment or model,
+            api_key=api_key or "",
             authentication_method=authentication_method,
-            client_id=(client_id or ""),
-            client_secret=(client_secret or ""),
-            tenant_id=(tenant_id or ""),
+            client_id=client_id or "",
+            client_secret=client_secret or "",
+            tenant_id=tenant_id or "",
         )
-        builder = builder_cls(model_settings)
+        builder = AzureOpenAIChatCompletionClientBuilder(model_settings)
         return builder.build()
-
-    # --------------------------- Blob (sync) ---------------------------
 
     @staticmethod
     def create_blob_service_client(
-        file_storage_config: Union[FileStorageContainer, FileStorageContainerSettings],
-    ) -> Any:
-        builder_cls = _ensure_builder(
-            "BlobServiceClientBuilder",
-            f"{_PKG_BASE}.builder.blob_client",
-            "BlobServiceClientBuilder",
-            "azure-storage-blob is required to create blob clients",
-        )
-        builder = builder_cls(file_storage_config)
+        file_storage_config: FileStorageContainerSettings,
+    ) -> BlobServiceClient:
+        """Create an Azure Blob Service client from file storage configuration.
+
+        Args:
+            file_storage_config: File storage configuration containing authentication details
+
+        Returns:
+            BlobServiceClient: Configured Azure Blob Service client
+        """
+        builder = BlobServiceClientBuilder(file_storage_config)
         return builder.build()
 
     @staticmethod
@@ -228,40 +215,49 @@ class AzureClientFactory:
         authentication_method: AuthenticationMethod = AuthenticationMethod.DEFAULT_CREDENTIAL,
         token: Optional[str] = None,
         client_id: Optional[str] = None,
-    ) -> Any:
-        builder_cls = _ensure_builder(
-            "BlobServiceClientBuilder",
-            f"{_PKG_BASE}.builder.blob_client",
-            "BlobServiceClientBuilder",
-            "azure-storage-blob is required to create blob clients",
-        )
+    ) -> BlobServiceClient:
+        """Create an Azure Blob Service client with direct parameters.
+
+        Args:
+            account_url: Storage account URL
+            authentication_method: Authentication method
+            token: API key/SAS token/connection string for TOKEN authentication
+            client_id: Client ID for MSI authentication
+
+        Returns:
+            BlobServiceClient: Configured Azure Blob Service client
+        """
         file_storage_settings = FileStorageContainerSettings(
             enable=True,
             storage_type="azure",
-            container_name="",
+            container_name="",  # Not required for service client
             path="./",
             add_sub_folders=True,
             url=account_url,
-            client_id=(client_id or ""),
-            token=(token or ""),
+            client_id=client_id or "",
+            token=token or "",
             authentication_method=authentication_method,
         )
-        builder = builder_cls(file_storage_settings)
+        builder = BlobServiceClientBuilder(file_storage_settings)
         return builder.build()
 
     @staticmethod
     def create_blob_client(
-        file_storage_config: Union[FileStorageContainer, FileStorageContainerSettings],
+        file_storage_config: FileStorageContainerSettings,
+        container_name: str,
         blob_name: str,
-        container_name: Optional[str] = None,
-    ) -> Any:
-        builder_cls = _ensure_builder(
-            "BlobClientBuilder",
-            f"{_PKG_BASE}.builder.blob_client",
-            "BlobClientBuilder",
-            "azure-storage-blob is required to create blob clients",
-        )
-        builder = builder_cls(file_storage_config, container_name, blob_name)
+    ) -> BlobClient:
+        """Create an Azure Blob client from file storage configuration.
+
+        Args:
+            file_storage_config: File storage configuration containing authentication details
+            blob_name: Name of the blob
+            container_name: Container name (optional, will use config if not provided)
+
+        Returns:
+            BlobClient: Configured Azure Blob client
+        """
+        builder = BlobClientBuilder(file_storage_config, container_name, blob_name)
         return builder.build()
 
     @staticmethod
@@ -272,13 +268,20 @@ class AzureClientFactory:
         authentication_method: AuthenticationMethod = AuthenticationMethod.DEFAULT_CREDENTIAL,
         token: Optional[str] = None,
         client_id: Optional[str] = None,
-    ) -> Any:
-        builder_cls = _ensure_builder(
-            "BlobClientBuilder",
-            f"{_PKG_BASE}.builder.blob_client",
-            "BlobClientBuilder",
-            "azure-storage-blob is required to create blob clients",
-        )
+    ) -> BlobClient:
+        """Create an Azure Blob client with direct parameters.
+
+        Args:
+            account_url: Storage account URL
+            blob_name: Name of the blob
+            container_name: Name of the container
+            authentication_method: Authentication method
+            token: API key/SAS token/connection string for TOKEN authentication
+            client_id: Client ID for MSI authentication
+
+        Returns:
+            BlobClient: Configured Azure Blob client
+        """
         file_storage_settings = FileStorageContainerSettings(
             enable=True,
             storage_type="azure",
@@ -286,61 +289,68 @@ class AzureClientFactory:
             path="./",
             add_sub_folders=True,
             url=account_url,
-            client_id=(client_id or ""),
-            token=(token or ""),
+            client_id=client_id or "",
+            token=token or "",
             authentication_method=authentication_method,
         )
-        builder = builder_cls(file_storage_settings, container_name, blob_name)
+        builder = BlobClientBuilder(file_storage_settings, container_name, blob_name)
         return builder.build()
-
-    # --------------------------- Cosmos (sync, optional) ---------------------------
 
     @staticmethod
     def create_cosmos_client(
-        cosmos_config: Union[CosmosConfig, CosmosSettings, None] = None,
-        **_: Any,
+        cosmos_config: CosmosSettings,
     ) -> Any:
-        """
-        Create Azure Cosmos DB client based on configuration.
+        """Create an Azure Cosmos DB client.
 
         Args:
-            cosmos_config: Cosmos DB configuration
+            endpoint: Cosmos DB endpoint URL
+            authentication_method: Authentication method to use
+            api_key: API key for TOKEN authentication
+            client_id: Client ID for MSI or CLIENT_ID_AND_SECRET authentication
+            client_secret: Client secret for CLIENT_ID_AND_SECRET authentication
+            tenant_id: Tenant ID for CLIENT_ID_AND_SECRET authentication
 
         Returns:
             CosmosClient: Configured Azure Cosmos DB client
-
-        Raises:
-            ImportError: If azure-cosmos package is not available
-            ValueError: If cosmos_config is None
         """
         if not HAS_COSMOS:
-            raise ImportError("azure-cosmos is required")
-        if cosmos_config is None:
-            raise ValueError("Cosmos config is required")
-        builder_cls = _ensure_builder(
-            "CosmosClientBuilder",
-            f"{_PKG_BASE}.builder.cosmos_client",
-            "CosmosClientBuilder",
-            "azure-cosmos is required to create Cosmos client",
-        )
-        builder = builder_cls(cosmos_config)
+            raise ImportError(
+                "azure-cosmos is required for Cosmos DB functionality. "
+                "Install with: pip install azure-cosmos"
+            )
+
+        if CosmosClientBuilder is None:
+            raise ImportError(
+                "CosmosClientBuilder is not available. azure-cosmos package is required."
+            )
+
+        builder = CosmosClientBuilder(cosmos_config)
         return builder.build()
 
-    # --------------------------- Search (sync) ---------------------------
-
     @staticmethod
-    def create_search_client(
-        search_config: Union[AzureSearchConfig, AzureSearchSettings], index_name: str
-    ) -> Any:
+    def create_search_client(search_config: AzureSearchSettings, index_name: str) -> Any:
+        """Create an Azure Search client from search configuration.
+
+        Args:
+            search_config: Search configuration containing authentication details
+            index_name: Name of the search index
+
+        Returns:
+            SearchClient: Configured Azure Search client
+        """
         if not HAS_SEARCH:
-            raise ImportError("azure-search-documents is required")
-        builder_cls = _ensure_builder(
-            "AzureSearchClientBuilder",
-            f"{_PKG_BASE}.builder.search_client",
-            "AzureSearchClientBuilder",
-            "azure-search-documents is required",
-        )
-        builder = builder_cls(search_config, index_name)
+            raise ImportError(
+                "azure-search-documents is required for Azure Search functionality. "
+                "Install with: pip install azure-search-documents"
+            )
+
+        if AzureSearchClientBuilder is None:
+            raise ImportError(
+                "AzureSearchClientBuilder is not available. "
+                "azure-search-documents package is required."
+            )
+
+        builder = AzureSearchClientBuilder(search_config, index_name)
         return builder.build()
 
     @staticmethod
@@ -354,39 +364,54 @@ class AzureClientFactory:
         client_secret: Optional[str] = None,
         tenant_id: Optional[str] = None,
     ) -> Any:
+        """Create an Azure Search client with direct parameters.
+
+        Args:
+            endpoint: Azure Search service endpoint URL
+            index_name: Name of the search index
+            api_key: Azure Search service API key
+            service: Azure Search service name (optional)
+
+        Returns:
+            SearchClient: Configured Azure Search client
+        """
         if not HAS_SEARCH:
-            raise ImportError("azure-search-documents is required")
-        builder_cls = _ensure_builder(
-            "AzureSearchClientBuilder",
-            f"{_PKG_BASE}.builder.search_client",
-            "AzureSearchClientBuilder",
-            "azure-search-documents is required",
-        )
+            raise ImportError(
+                "azure-search-documents is required for Azure Search functionality. "
+                "Install with: pip install azure-search-documents"
+            )
+
+        if AzureSearchClientBuilder is None:
+            raise ImportError(
+                "AzureSearchClientBuilder is not available. "
+                "azure-search-documents package is required."
+            )
+
         search_settings = AzureSearchSettings(
-            service=(service or ""),
+            service=service or "",
             endpoint=endpoint,
             key=api_key,
-            client_id=(client_id or ""),
-            client_secret=(client_secret or ""),
-            tenant_id=(tenant_id or ""),
+            client_id=client_id or "",
+            client_secret=client_secret or "",
+            tenant_id=tenant_id or "",
             authentication_method=authentication_method,
         )
-        builder = builder_cls(search_settings, index_name)
+        builder = AzureSearchClientBuilder(search_settings, index_name)
         return builder.build()
-
-    # --------------------------- SQL (sync) ---------------------------
 
     @staticmethod
     def create_sql_client(
-        sql_config: Union[AzureSqlConfig, AzureSqlSettings],
-    ) -> Any:
-        builder_cls = _ensure_builder(
-            "AzureSqlClientBuilder",
-            f"{_PKG_BASE}.builder.sql_client",
-            "AzureSqlClientBuilder",
-            "pyodbc is required to create Azure SQL client",
-        )
-        builder = builder_cls(sql_config)
+        sql_config: AzureSqlSettings,
+    ) -> pyodbc.Connection:
+        """Create an Azure SQL client from SQL configuration.
+
+        Args:
+            sql_config: SQL configuration containing connection details
+
+        Returns:
+            pyodbc.Connection: Configured Azure SQL connection
+        """
+        builder = AzureSqlClientBuilder(sql_config)
         return builder.build()
 
     @staticmethod
@@ -394,19 +419,23 @@ class AzureClientFactory:
         database_name: str,
         connection_string: str,
         table_name: Optional[str] = None,
-    ) -> Any:
-        builder_cls = _ensure_builder(
-            "AzureSqlClientBuilder",
-            f"{_PKG_BASE}.builder.sql_client",
-            "AzureSqlClientBuilder",
-            "pyodbc is required to create Azure SQL client",
-        )
+    ) -> pyodbc.Connection:
+        """Create an Azure SQL client with direct parameters.
+
+        Args:
+            database_name: Azure SQL database name
+            connection_string: Azure SQL connection string
+            table_name: Default table name for operations (optional)
+
+        Returns:
+            pyodbc.Connection: Configured Azure SQL connection
+        """
         sql_settings = AzureSqlSettings(
             database_name=database_name,
-            table_name=(table_name or ""),
+            table_name=table_name or "",
             database_connection_string=connection_string,
         )
-        builder = builder_cls(sql_settings)
+        builder = AzureSqlClientBuilder(sql_settings)
         return builder.build()
 
     @staticmethod
@@ -419,14 +448,23 @@ class AzureClientFactory:
         client_id: Optional[str] = None,
         client_secret: Optional[str] = None,
         tenant_id: Optional[str] = None,
-    ) -> Any:
-        builder_cls = _ensure_builder(
-            "AzureSqlClientBuilderWithAuth",
-            f"{_PKG_BASE}.builder.sql_client",
-            "AzureSqlClientBuilderWithAuth",
-            "pyodbc is required to create Azure SQL client",
-        )
-        builder = builder_cls(
+    ) -> pyodbc.Connection:
+        """Create an Azure SQL client with explicit authentication configuration.
+
+        Args:
+            server: SQL Server name
+            database: Database name
+            authentication_method: Authentication method to use
+            username: Username for SQL authentication
+            password: Password for SQL authentication
+            client_id: Client ID for MSI or CLIENT_ID_AND_SECRET authentication
+            client_secret: Client secret for CLIENT_ID_AND_SECRET authentication
+            tenant_id: Tenant ID for CLIENT_ID_AND_SECRET authentication
+
+        Returns:
+            pyodbc.Connection: Configured Azure SQL connection
+        """
+        builder = AzureSqlClientBuilderWithAuth(
             server=server,
             database=database,
             authentication_method=authentication_method,
@@ -448,7 +486,24 @@ class AzureClientFactory:
         client_id: Optional[str] = None,
         client_secret: Optional[str] = None,
         tenant_id: Optional[str] = None,
-    ) -> Any:
+    ) -> pyodbc.Connection:
+        """Create an Azure SQL client with explicit authentication configuration from direct parameters.
+
+        This is an alias for create_sql_client_with_auth since it already accepts direct parameters.
+
+        Args:
+            server: SQL Server name
+            database: Database name
+            authentication_method: Authentication method to use
+            username: Username for SQL authentication
+            password: Password for SQL authentication
+            client_id: Client ID for MSI or CLIENT_ID_AND_SECRET authentication
+            client_secret: Client secret for CLIENT_ID_AND_SECRET authentication
+            tenant_id: Tenant ID for CLIENT_ID_AND_SECRET authentication
+
+        Returns:
+            pyodbc.Connection: Configured Azure SQL connection
+        """
         return AzureClientFactory.create_sql_client_with_auth(
             server=server,
             database=database,
@@ -459,41 +514,3 @@ class AzureClientFactory:
             client_secret=client_secret,
             tenant_id=tenant_id,
         )
-
-    # --------------------------- Async builders (optional) ---------------------------
-
-    @staticmethod
-    def create_async_search_client(
-        index_name: str,
-        config: Optional[
-            Mapping[str, Any] | AzureSearchConfig | AzureSearchSettings
-        ] = None,
-        **client_options: Any,
-    ) -> Any:
-        builder_cls = _ensure_builder(
-            "AzureSearchAsyncClientBuilder",
-            f"{_PKG_BASE}.builder.search_client_async",
-            "AzureSearchAsyncClientBuilder",
-            "azure-search-documents is required to create async search client",
-        )
-        builder = builder_cls.from_config(
-            config, index_name=index_name, client_options=client_options
-        )
-        return builder.build()
-
-    @staticmethod
-    def create_async_openai_client(
-        config: Optional[Mapping[str, Any] | ModelConfig | ModelSettings] = None,
-        api_version: Optional[str] = None,
-        **client_options: Any,
-    ) -> Any:
-        builder_cls = _ensure_builder(
-            "AsyncAzureOpenAIClientBuilder",
-            f"{_PKG_BASE}.builder.openai_client_async",
-            "AsyncAzureOpenAIClientBuilder",
-            "openai is required to create an async Azure OpenAI client",
-        )
-        builder = builder_cls.from_config(
-            config, api_version=api_version, client_options=client_options
-        )
-        return builder.build()

@@ -1,5 +1,4 @@
-"""
-Memory Manager for handling conversation context files through FileStorage abstraction.
+"""Memory Manager for handling conversation context files through FileStorage abstraction.
 This ensures that memory operations work with both local and Azure Blob Storage.
 """
 
@@ -7,22 +6,20 @@ import asyncio
 import os
 from typing import Any, Optional
 
+from ingenious.config.settings import IngeniousSettings
 from ingenious.core.structured_logging import get_logger
 from ingenious.files.files_repository import FileStorage
-from ingenious.models.config import Config
 
 logger = get_logger(__name__)
 
 
 class MemoryManager:
-    """
-    Manages conversation memory/context files using the FileStorage abstraction.
+    """Manages conversation memory/context files using the FileStorage abstraction.
     This allows memory operations to work with both local storage and Azure Blob Storage.
     """
 
-    def __init__(self, config: Config, memory_path: Optional[str] = None):
-        """
-        Initialize MemoryManager with configuration.
+    def __init__(self, config: IngeniousSettings, memory_path: Optional[str] = None):
+        """Initialize MemoryManager with configuration.
 
         Args:
             config: Application configuration
@@ -33,8 +30,7 @@ class MemoryManager:
         self.file_storage = FileStorage(config, Category="data")
 
     def _get_memory_file_path(self, thread_id: Optional[str] = None) -> tuple[str, str]:
-        """
-        Get the file path and name for a memory file.
+        """Get the file path and name for a memory file.
 
         Args:
             thread_id: Optional thread ID for thread-specific memory
@@ -51,11 +47,8 @@ class MemoryManager:
 
         return file_path, file_name
 
-    async def read_memory(
-        self, thread_id: Optional[str] = None, default_content: str = ""
-    ) -> str:
-        """
-        Read memory content from storage.
+    async def read_memory(self, thread_id: Optional[str] = None, default_content: str = "") -> str:
+        """Read memory content from storage.
 
         Args:
             thread_id: Optional thread ID for thread-specific memory
@@ -90,8 +83,7 @@ class MemoryManager:
             return default_content
 
     async def write_memory(self, content: str, thread_id: Optional[str] = None) -> bool:
-        """
-        Write memory content to storage.
+        """Write memory content to storage.
 
         Args:
             content: Content to write
@@ -120,8 +112,7 @@ class MemoryManager:
     async def maintain_memory(
         self, new_content: str, max_words: int = 150, thread_id: Optional[str] = None
     ) -> bool:
-        """
-        Maintain memory by appending new content and keeping only recent words.
+        """Maintain memory by appending new content and keeping only recent words.
 
         Args:
             new_content: New content to add
@@ -157,8 +148,7 @@ class MemoryManager:
             return False
 
     async def delete_memory(self, thread_id: Optional[str] = None) -> bool:
-        """
-        Delete memory content from storage.
+        """Delete memory content from storage.
 
         Args:
             thread_id: Optional thread ID for thread-specific memory
@@ -184,14 +174,12 @@ class MemoryManager:
 
 
 class LegacyMemoryManager:
-    """
-    Legacy memory manager that provides backward compatibility for local file operations.
+    """Legacy memory manager that provides backward compatibility for local file operations.
     This is used when the storage type is local or for fallback scenarios.
     """
 
     def __init__(self, memory_path: str):
-        """
-        Initialize LegacyMemoryManager with memory path.
+        """Initialize LegacyMemoryManager with memory path.
 
         Args:
             memory_path: Base path for memory files
@@ -199,8 +187,7 @@ class LegacyMemoryManager:
         self.memory_path = memory_path
 
     def _get_memory_file_path(self, thread_id: Optional[str] = None) -> str:
-        """
-        Get the full file path for a memory file.
+        """Get the full file path for a memory file.
 
         Args:
             thread_id: Optional thread ID for thread-specific memory
@@ -213,11 +200,8 @@ class LegacyMemoryManager:
         else:
             return os.path.join(self.memory_path, "context.md")
 
-    def read_memory(
-        self, thread_id: Optional[str] = None, default_content: str = ""
-    ) -> str:
-        """
-        Read memory content from local file.
+    def read_memory(self, thread_id: Optional[str] = None, default_content: str = "") -> str:
+        """Read memory content from local file.
 
         Args:
             thread_id: Optional thread ID for thread-specific memory
@@ -246,8 +230,7 @@ class LegacyMemoryManager:
             return default_content
 
     def write_memory(self, content: str, thread_id: Optional[str] = None) -> bool:
-        """
-        Write memory content to local file.
+        """Write memory content to local file.
 
         Args:
             content: Content to write
@@ -279,8 +262,7 @@ class LegacyMemoryManager:
     def maintain_memory(
         self, new_content: str, max_words: int = 150, thread_id: Optional[str] = None
     ) -> bool:
-        """
-        Maintain memory by appending new content and keeping only recent words.
+        """Maintain memory by appending new content and keeping only recent words.
 
         Args:
             new_content: New content to add
@@ -323,10 +305,9 @@ class LegacyMemoryManager:
 
 
 def get_memory_manager(
-    config: Config, memory_path: Optional[str] = None
+    config: IngeniousSettings, memory_path: Optional[str] = None
 ) -> MemoryManager:
-    """
-    Get appropriate memory manager based on configuration.
+    """Get appropriate memory manager based on configuration.
 
     Args:
         config: Application configuration
@@ -339,8 +320,7 @@ def get_memory_manager(
 
 
 def run_async_memory_operation(coro: Any) -> Any:
-    """
-    Helper function to run async memory operations in sync contexts.
+    """Helper function to run async memory operations in sync contexts.
 
     Args:
         coro: Coroutine to run

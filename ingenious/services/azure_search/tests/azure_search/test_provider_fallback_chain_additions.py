@@ -54,7 +54,6 @@ async def test_provider_fallback_raw_client_path(
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
     """Provider should use retriever's search client if the pipeline is empty."""
-
     # This test ensures that if the main `retrieve` method of the search pipeline
     # returns no results, the provider correctly falls back to using the raw
     # `_search_client` attached to the pipeline's retriever component.
@@ -116,7 +115,6 @@ async def test_provider_fallback_factory_one_shot(
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
     """Provider should use a factory one-shot client as a second fallback."""
-
     # This test verifies the second level of fallback. If the pipeline returns
     # empty and the retriever's `_search_client` is also absent, the provider
     # should attempt to create a new, one-shot search client via a factory.
@@ -189,7 +187,6 @@ async def test_pipeline_dat_fusion_fatal_raises_runtime_error(
     monkeypatch: pytest.MonkeyPatch,  # noqa: ARG001 - Required by pytest
 ) -> None:
     """A fuser exception should be re-raised as a DAT Fusion RuntimeError."""
-
     # This test ensures that if the `fuse` method within the pipeline's fuser
     # component raises an exception, the pipeline catches it and re-raises it
     # as a specific RuntimeError, indicating a fatal data-at-rest (DAT) error.
@@ -231,9 +228,7 @@ async def test_pipeline_dat_fusion_fatal_raises_runtime_error(
         embedding_deployment_name="emb",
         generation_deployment_name="gen",
     )
-    pipe = pl.AdvancedSearchPipeline(
-        config=cfg, retriever=_StubRetriever(), fuser=_BoomFuser()
-    )
+    pipe = pl.AdvancedSearchPipeline(config=cfg, retriever=_StubRetriever(), fuser=_BoomFuser())
     with pytest.raises(RuntimeError, match="DAT Fusion failed"):
         await pipe.retrieve("q", top_k=5)
     await pipe.close()

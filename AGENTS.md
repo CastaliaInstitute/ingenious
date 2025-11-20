@@ -13,6 +13,33 @@ Use `uv lock` after modifying dependencies to refresh the lockfile.
 ## Coding Style & Naming Conventions
 Python code uses 4-space indentation, type hints where practical, and descriptive snake_case for functions, variables, and filenames (`chat_service.py`, `get_chat_response`). Public classes use PascalCase. Ruff handles linting and formatting; avoid manual stylistic tweaks that conflict with its defaults. Keep modules small and focused—new FastAPI routes belong under `ingenious/api/routes/`, and shared helpers go in `ingenious/utils/`.
 
+### Docstring Standard
+All Python code MUST use **Google-style docstrings**:
+- Triple double quotes (`"""`)
+- First line: one-sentence imperative summary
+- `Args`, `Returns`, `Raises`, `Yields`, `Attributes` sections as applicable
+- Match actual code signatures and behavior
+- Enforced by ruff pydocstyle rules in pre-commit hooks
+
+Example:
+```python
+def create_user(username: str, email: str) -> User:
+    """Create a new user account.
+
+    Args:
+        username: Unique username for the account.
+        email: User's email address.
+
+    Returns:
+        User: Newly created user instance.
+
+    Raises:
+        ValueError: If username is already taken.
+    """
+```
+
+Verify compliance: `uv run ruff check --select D .`
+
 ## Testing Guidelines
 Pytest is the standard framework, with discovery configured for `test_*.py` files inside `tests/`. Coverage must stay above the `--cov-fail-under=20` threshold defined in `pyproject.toml`. Targeted checks (e.g., `uv run python -m pytest tests/unit/test_api_routes.py`) are encouraged before pushing. Write fixtures in `tests/conftest.py` when multiple test modules share setup.
 

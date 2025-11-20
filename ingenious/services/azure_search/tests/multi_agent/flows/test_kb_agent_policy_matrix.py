@@ -126,7 +126,7 @@ def make_config(
     real application configuration, providing necessary details for Azure Search.
     """
     cfg = SimpleNamespace()
-    cfg.models = [SimpleNamespace(model="gpt-4o")]
+    cfg.models = [SimpleNamespace(model="gpt-5")]
     cfg.azure_search_services = [
         SimpleNamespace(
             endpoint=endpoint,
@@ -146,8 +146,8 @@ def make_config(
 
 
 def install_azure_sdk_ok(monkeypatch: pytest.MonkeyPatch) -> None:
-    """
-    Install a minimal, in-process *fake* Azure SDK and ensure the KB module
+    """Install a minimal, in-process *fake* Azure SDK and ensure the KB module.
+
     builds its SearchClient from that fake.
 
     Why:
@@ -163,7 +163,6 @@ def install_azure_sdk_ok(monkeypatch: pytest.MonkeyPatch) -> None:
     Finally, we patch the *KB module's* 'make_async_search_client' symbol to return our
     fake client, guaranteeing preflight sees a client with the expected methods.
     """
-
     import sys
     import types
 
@@ -172,8 +171,8 @@ def install_azure_sdk_ok(monkeypatch: pytest.MonkeyPatch) -> None:
     # -----------------------------
 
     class _FakeAzureKeyCredential:
-        """
-        Fake replacement for azure.core.credentials.AzureKeyCredential.
+        """Fake replacement for azure.core.credentials.AzureKeyCredential.
+
         We only store the key for realism; no real auth happens in tests.
         """
 
@@ -181,8 +180,8 @@ def install_azure_sdk_ok(monkeypatch: pytest.MonkeyPatch) -> None:
             self.key = key
 
     class _FakeAsyncSearchClient:
-        """
-        Fake replacement for azure.search.documents.aio.SearchClient with the
+        """Fake replacement for azure.search.documents.aio.SearchClient with the.
+
         two async methods our KB preflight actually calls.
         """
 
@@ -193,14 +192,14 @@ def install_azure_sdk_ok(monkeypatch: pytest.MonkeyPatch) -> None:
             self._closed = False
 
         async def get_document_count(self) -> int:
-            """
-            Simulate a successful health check. If you need to simulate failures
+            """Simulate a successful health check. If you need to simulate failures.
+
             (e.g., 401/timeout) in other tests, you can modify this to raise.
             """
             return 1
 
         async def close(self) -> None:
-            """Simulate the real client's async close()."""
+            """Simulate closing the real client asynchronously."""
             self._closed = True
 
     # ---------------------------------------------------
@@ -227,8 +226,8 @@ def install_azure_sdk_ok(monkeypatch: pytest.MonkeyPatch) -> None:
     import ingenious.services.chat_services.multi_agent.conversation_flows.knowledge_base_agent.knowledge_base_agent as kb
 
     def _build_fake_client_from_cfg(cfg: Any) -> _FakeAsyncSearchClient:
-        """
-        KB preflight passes a SimpleNamespace with:
+        """KB preflight passes a SimpleNamespace with attributes.
+
           - search_endpoint
           - search_index_name
           - search_key (string or SecretStr)
@@ -253,9 +252,7 @@ def install_azure_sdk_ok(monkeypatch: pytest.MonkeyPatch) -> None:
         )
 
     # This ensures preflight builds a client with async get_document_count() + close().
-    monkeypatch.setattr(
-        kb, "make_async_search_client", _build_fake_client_from_cfg, raising=True
-    )
+    monkeypatch.setattr(kb, "make_async_search_client", _build_fake_client_from_cfg, raising=True)
 
     # -----------------------------------------------------------------
     # 4) (Optional) Reset any cached factory singleton to avoid stale
@@ -284,9 +281,7 @@ def install_fake_provider(
         def __init__(self, *_: Any) -> None:
             AzureSearchProvider.created += 1
 
-        async def retrieve(
-            self, query: str, top_k: int = 10, **_: Any
-        ) -> list[dict[str, Any]]:
+        async def retrieve(self, query: str, top_k: int = 10, **_: Any) -> list[dict[str, Any]]:
             calls.append({"query": query, "top_k": top_k})
             return list(results or [])
 
@@ -294,9 +289,7 @@ def install_fake_provider(
             pass
 
     prov_mod.AzureSearchProvider = AzureSearchProvider
-    monkeypatch.setitem(
-        sys.modules, "ingenious.services.azure_search.provider", prov_mod
-    )
+    monkeypatch.setitem(sys.modules, "ingenious.services.azure_search.provider", prov_mod)
     return calls, AzureSearchProvider
 
 
@@ -356,9 +349,7 @@ def _common(monkeypatch: MonkeyPatch) -> Generator[None, None, None]:
     monkeypatch.setattr(
         kb,
         "AzureClientFactory",
-        SimpleNamespace(
-            create_openai_chat_completion_client=lambda _cfg: DummyLLMClient()
-        ),
+        SimpleNamespace(create_openai_chat_completion_client=lambda _cfg: DummyLLMClient()),
     )
     for var in (
         "KB_POLICY",
@@ -433,9 +424,7 @@ async def test_prefer_azure_fallback_on_empty_switches_to_chroma(
         "alpha", use_azure_search=True, top_k=3, logger=logging.getLogger("t")
     )
     # Warning and local fallback
-    assert any(
-        "falling back to ChromaDB" in (r.getMessage() or "") for r in caplog.records
-    )
+    assert any("falling back to ChromaDB" in (r.getMessage() or "") for r in caplog.records)
     assert "Found relevant information from ChromaDB:" in out
     assert len(calls) == 1  # Azure was attempted once
 
@@ -463,9 +452,7 @@ async def test_prefer_local_uses_local_without_azure_instantiation(
     flow._kb_path = kb_dir
     flow._chroma_path = os.path.join(str(tmp_path), "chroma_db")
 
-    out: str = await flow._search_knowledge_base(
-        "q", use_azure_search=True, top_k=3, logger=None
-    )
+    out: str = await flow._search_knowledge_base("q", use_azure_search=True, top_k=3, logger=None)
     assert "Found relevant information from ChromaDB:" in out
     assert ProviderClass.created == 0  # no instantiation
     assert calls == []
@@ -513,20 +500,14 @@ def test_should_use_azure_search_rejects_mock_key_and_missing_sdk(
     flow._memory_path = "."
 
     # Provider importable reported as True; but mock key blocks
-    monkeypatch.setattr(
-        kb.ConversationFlow, "_is_azure_search_available", lambda self: True
-    )
+    monkeypatch.setattr(kb.ConversationFlow, "_is_azure_search_available", lambda self: True)
     assert flow._should_use_azure_search() is False
 
     # Real key but provider unavailable -> False
     flow._config = make_config(key="real", index_name="idx")
-    monkeypatch.setattr(
-        kb.ConversationFlow, "_is_azure_search_available", lambda self: False
-    )
+    monkeypatch.setattr(kb.ConversationFlow, "_is_azure_search_available", lambda self: False)
     assert flow._should_use_azure_search() is False
 
     # Real key + provider importable -> True
-    monkeypatch.setattr(
-        kb.ConversationFlow, "_is_azure_search_available", lambda self: True
-    )
+    monkeypatch.setattr(kb.ConversationFlow, "_is_azure_search_available", lambda self: True)
     assert flow._should_use_azure_search() is True

@@ -1,3 +1,9 @@
+"""Factory for creating chat history repository instances.
+
+Provides factory methods for instantiating the appropriate repository implementation
+based on configuration settings (SQLite, Azure SQL, Cosmos DB).
+"""
+
 from typing import Any, Dict, List, Optional
 
 from ingenious.config import IngeniousSettings
@@ -20,7 +26,6 @@ class RepositoryFactory:
         db_type: DatabaseClientType, config: IngeniousSettings
     ) -> IChatHistoryRepository:
         """Create a chat history repository based on database type."""
-
         if db_type == DatabaseClientType.SQLITE:
             return RepositoryFactory._create_sqlite_repository(config)
         elif db_type == DatabaseClientType.AZURESQL:
@@ -60,7 +65,6 @@ class ModernRepositoryFactory:
         db_type: DatabaseClientType, config: IngeniousSettings
     ) -> IChatHistoryRepository:
         """Create a repository using composition pattern."""
-
         if db_type == DatabaseClientType.SQLITE:
             return ModernRepositoryFactory._create_sqlite_repository(config)
         elif db_type == DatabaseClientType.AZURESQL:
@@ -130,6 +134,13 @@ class SQLiteChatHistoryRepository(BaseSQLRepository):
         query_builder: QueryBuilder,
         connection_pool: ConnectionPool,
     ):
+        """Initialize SQLite chat history repository with connection pool.
+
+        Args:
+            config: Ingenious settings for repository configuration.
+            query_builder: Query builder configured with SQLite dialect.
+            connection_pool: Connection pool for managing SQLite connections.
+        """
         self.pool = connection_pool
         super().__init__(config, query_builder)
 
@@ -182,9 +193,7 @@ class SQLiteChatHistoryRepository(BaseSQLRepository):
                 cause=e,
             ) from e
 
-    async def get_threads_for_user(
-        self, identifier: str, thread_id: Optional[str] = None
-    ) -> Any:
+    async def get_threads_for_user(self, identifier: str, thread_id: Optional[str] = None) -> Any:
         """Get threads for user - delegates to existing SQLite implementation."""
         # This would be implemented by copying the existing implementation
         # from the SQLite repository class
@@ -213,6 +222,13 @@ class AzureSQLChatHistoryRepository(BaseSQLRepository):
         query_builder: QueryBuilder,
         connection_pool: ConnectionPool,
     ):
+        """Initialize Azure SQL chat history repository with connection pool.
+
+        Args:
+            config: Ingenious settings for repository configuration.
+            query_builder: Query builder configured with Azure SQL dialect.
+            connection_pool: Connection pool for managing Azure SQL connections.
+        """
         self.pool = connection_pool
         super().__init__(config, query_builder)
 
@@ -257,9 +273,7 @@ class AzureSQLChatHistoryRepository(BaseSQLRepository):
                 cause=e,
             ) from e
 
-    async def get_threads_for_user(
-        self, identifier: str, thread_id: Optional[str] = None
-    ) -> Any:
+    async def get_threads_for_user(self, identifier: str, thread_id: Optional[str] = None) -> Any:
         """Get threads for user - delegates to existing Azure SQL implementation."""
         # This would be implemented by copying the existing implementation
         # from the Azure SQL repository class

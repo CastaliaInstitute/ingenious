@@ -17,23 +17,21 @@ from autogen_core import (
 from autogen_core.logging import LLMCallEvent
 from autogen_core.models import FunctionExecutionResult
 from autogen_core.tools import Tool
-from pydantic import BaseModel, Field, PrivateAttr
+from pydantic import BaseModel
 
-from ingenious.config import IngeniousSettings, get_config
-
-ig_config = get_config()
+from ingenious.config import settings as ig_config
+from ingenious.config.models import ModelSettings
+from ingenious.config.settings import IngeniousSettings
 from ingenious.db.chat_history_repository import ChatHistoryRepository
 from ingenious.files.files_repository import FileStorage
-from ingenious.models.config import Config, ModelConfig
 from ingenious.models.llm_event_kwargs import LLMEventKwargs
 from ingenious.models.message import Message as ChatHistoryMessage
 
 
 class AgentChat(BaseModel):
-    """
-    A class used to represent a chat between an agent and a user or between agents
+    """A class used to represent a chat between an agent and a user or between agents
 
-    Attributes
+    Attributes:
     ----------
     agent_name : str
         The name of the agent.
@@ -71,23 +69,20 @@ class AgentChat(BaseModel):
             return "00:00:00"
         return datetime.fromtimestamp(self.start_time).strftime("%H:%M:%S")
 
-    def get_associated_agent_response_file_name(
-        self, identifier: str, event_type: str
-    ) -> str:
+    def get_associated_agent_response_file_name(self, identifier: str, event_type: str) -> str:
         return f"agent_response_{event_type}_{self.source_agent_name}_{self.target_agent_name}_{identifier.strip()}.md"
 
 
 class AgentChats(BaseModel):
-    """
-    A class used to represent a list of AgentChats.
+    """A class used to represent a list of AgentChats.
 
-    Attributes
+    Attributes:
     ----------
     agent_chats : List[AgentChat]
         A list of AgentChat objects.
     """
 
-    _agent_chats: List[AgentChat] = PrivateAttr(default_factory=list)
+    _agent_chats: List[AgentChat] = []
 
     def __init__(self) -> None:
         super().__init__()
@@ -119,15 +114,14 @@ class AgentChats(BaseModel):
 
 
 class Agent(BaseModel):
-    """
-    A class used to represent an Agent.
+    """A class used to represent an Agent.
 
-    Attributes
+    Attributes:
     ----------
     agent_name : str
         The name of the agent.
     agent_model_name : str
-        The name of the model associated with the agent. This should match the name defined in the environment configuration.
+        The name of the model associated with the agent. This should match the name of the associated model in config.yml
     agent_display_name : str
         The display name of the agent.
     agent_description : str
@@ -141,12 +135,12 @@ class Agent(BaseModel):
     agent_display_name: str
     agent_description: str
     agent_type: str
-    input_topics: list[str] = Field(default_factory=list)
-    model: Optional[ModelConfig] = None
+    input_topics: list[str] = []
+    model: Optional[ModelSettings] = None
     system_prompt: Optional[str] = None
     log_to_prompt_tuner: bool = True
     return_in_response: bool = False
-    agent_chats: list[AgentChat] = Field(default_factory=list)
+    agent_chats: list[AgentChat] = []
 
     def add_agent_chat(
         self,
@@ -165,9 +159,7 @@ class Agent(BaseModel):
             user_message=content,
             system_prompt=self.system_prompt,
             identifier=identifier,
-            chat_response=Response(
-                chat_message=TextMessage(content=content, source=source)
-            ),
+            chat_response=Response(chat_message=TextMessage(content=content, source=source)),
             start_time=datetime.now().timestamp(),
             end_time=datetime.now().timestamp() + 36000,
         )
@@ -211,10 +203,9 @@ class Agent(BaseModel):
 
 
 class Agents(BaseModel):
-    """
-    A class used to represent a list of Agents.
+    """A class used to represent a list of Agents.
 
-    Attributes
+    Attributes:
     ----------
     agents : List[Agent]
         A list of Agent objects.
@@ -222,7 +213,7 @@ class Agents(BaseModel):
 
     _agents: List[Agent]
 
-    def __init__(self, agents: List[Agent], config: Config):
+    def __init__(self, agents: List[Agent], config: IngeniousSettings):
         super().__init__()
         self._agents = agents
         for agent in self._agents:
@@ -231,9 +222,7 @@ class Agents(BaseModel):
                     agent.model = model
                     break
             if not agent.model:
-                raise ValueError(
-                    f"Model {agent.agent_model_name} not found in environment configuration"
-                )
+                raise ValueError(f"Model {agent.agent_model_name} not found in config.yml")
 
     def get_agents(self) -> List[Agent]:
         return self._agents
@@ -280,7 +269,7 @@ class LLMUsageTracker(logging.Handler):
     def __init__(
         self,
         agents: Agents,
-        config: IngeniousSettings,
+        config: ig_config.IngeniousSettings,
         chat_history_repository: ChatHistoryRepository,
         revision_id: str,
         identifier: str,
@@ -327,9 +316,7 @@ class LLMUsageTracker(logging.Handler):
                 temp_file_prefixes.append(agent_chat.source_agent_name)
                 temp_file_prefixes.append(agent_chat.target_agent_name)
                 temp_file_prefixes.append(self._identifier)
-                await fs.write_file(
-                    content, f"{'_'.join(temp_file_prefixes)}.md", output_path
-                )
+                await fs.write_file(content, f"{'_'.join(temp_file_prefixes)}.md", output_path)
 
     # TODO: Implement this function
     async def write_llm_responses_to_repository(
@@ -367,144 +354,83 @@ class LLMUsageTracker(logging.Handler):
             agent = self._agents.get_agent_by_name(agent_chat.target_agent_name)
             await agent.log(agent_chat, target_queue)
 
-    def _extract_agent_identifiers(
-        self, agent_id: Optional[str]
-    ) -> Optional[tuple[str, str]]:
-        """Extract agent name and source name from agent_id."""
-        if not agent_id:
-            return None
-        parts = agent_id.split("/")
-        if len(parts) >= 2:
-            return parts[0], parts[1]
-        return None
-
-    def _find_agent(self, agent_name: str) -> Optional[Any]:
-        """Find agent by name, handling both Agents object and list."""
-        if hasattr(self._agents, "get_agent_by_name"):
-            try:
-                return self._agents.get_agent_by_name(agent_name)
-            except ValueError:
-                pass
-        return None
-
-    def _extract_response_content(
-        self, choices: Optional[List[Any]]
-    ) -> tuple[str, bool]:
-        """Extract response content and determine if chat should be added."""
-        response = ""
-        add_chat = True
-
-        if not choices:
-            return response, add_chat
-
-        for choice in choices:
-            if choice.message:
-                if choice.message.content:
-                    response += choice.message.content + "\n\n"
-                if choice.message.tool_calls:
-                    add_chat = False
-
-        return response, add_chat
-
-    def _extract_system_messages(self, messages: Optional[List[Any]]) -> str:
-        """Extract and join system messages."""
-        if not messages:
-            return ""
-        return "\n\n".join(
-            r.content for r in messages if r and r.role == "system" and r.content
-        )
-
-    def _extract_user_messages(self, messages: Optional[List[Any]]) -> str:
-        """Extract and join user messages."""
-        if not messages:
-            return ""
-        return "\n\n".join(
-            r.content for r in messages if r and r.role == "user" and r.content
-        )
-
-    def _append_tool_messages(
-        self, user_input: str, messages: Optional[List[Any]]
-    ) -> str:
-        """Append tool messages to user input."""
-        if not messages:
-            return user_input
-
-        tool_messages = [m for m in messages if m and m.role == "tool"]
-        if not tool_messages:
-            return user_input
-
-        result = user_input + "\n\n---\n\n# Tool Messages\n\n"
-        for msg in tool_messages:
-            if msg.content:
-                result += f"{msg.content}\n\n"
-        return result
-
-    def _update_agent_chat(
-        self,
-        agent: Any,
-        source_name: str,
-        response: str,
-        system_input: str,
-        user_input: str,
-        event: LLMCallEvent,
-        add_chat: bool,
-    ) -> None:
-        """Update agent-specific chat data."""
-        chat = agent.get_agent_chat_by_source(source=source_name)
-        chat.chat_response = Response(
-            chat_message=TextMessage(content=response, source=source_name)
-        )
-        chat.prompt_tokens = event.prompt_tokens
-        chat.completion_tokens = event.completion_tokens
-        chat.system_prompt = system_input
-        chat.user_message = user_input
-        chat.end_time = datetime.now().timestamp()
-        if add_chat:
-            self._queue.append(chat)
-
     def emit(self, record: logging.LogRecord) -> None:
         """Emit the log record."""
         try:
-            if not isinstance(record.msg, LLMCallEvent):
-                return
+            add_chat = True
+            if isinstance(record.msg, LLMCallEvent):
+                event: LLMCallEvent = record.msg
+                kwargs: LLMEventKwargs = LLMEventKwargs.model_validate(event.kwargs)
 
-            event: LLMCallEvent = record.msg
-            kwargs: LLMEventKwargs = LLMEventKwargs.model_validate(event.kwargs)
+                if kwargs.agent_id:
+                    agent_name = kwargs.agent_id.split("/")[0]
+                    source_name = kwargs.agent_id.split("/")[1]
+                else:
+                    return
 
-            # Extract agent identifiers
-            identifiers = self._extract_agent_identifiers(kwargs.agent_id)
-            if not identifiers:
-                return
-            agent_name, source_name = identifiers
+                # Handle both Agents object and list
+                agent = None
+                if hasattr(self._agents, "get_agent_by_name"):
+                    try:
+                        agent = self._agents.get_agent_by_name(agent_name)
+                    except ValueError:
+                        # Agent not found in the list
+                        pass
+                response = ""
+                system_input = ""
+                user_input = ""
+                if kwargs.response and kwargs.response.choices:
+                    for r in kwargs.response.choices:
+                        content = r.message.content if r.message else None
+                        if content:
+                            response += content + "\n\n"
+                        if r.message and r.message.tool_calls:
+                            for tool_call in r.message.tool_calls:
+                                add_chat = False
 
-            # Find agent
-            agent = self._find_agent(agent_name)
+                        system_input = "\n\n".join(
+                            [
+                                r.content
+                                for r in (kwargs.messages or [])
+                                if r and r.role == "system" and r.content
+                            ]
+                        )
+                        user_input = "\n\n".join(
+                            [
+                                r.content
+                                for r in (kwargs.messages or [])
+                                if r and r.role == "user" and r.content
+                            ]
+                        )
 
-            # Extract response and check if chat should be added
-            response, add_chat = self._extract_response_content(
-                kwargs.response.choices if kwargs.response else None
-            )
+                        # Get all messages with role 'tool'
+                        tool_messages = [
+                            m for m in (kwargs.messages or []) if m and m.role == "tool"
+                        ]
+                        if tool_messages:
+                            user_input += "\n\n---\n\n"
+                            user_input += "# Tool Messages\n\n"
+                            for m in tool_messages:
+                                if m.content:
+                                    user_input += f"{m.content}\n\n"
 
-            # Extract message inputs
-            system_input = self._extract_system_messages(kwargs.messages)
-            user_input = self._extract_user_messages(kwargs.messages)
-            user_input = self._append_tool_messages(user_input, kwargs.messages)
+                # Update token counts regardless of agent availability
+                self._prompt_tokens += event.prompt_tokens
+                self._completion_tokens += event.completion_tokens
 
-            # Update token counts
-            self._prompt_tokens += event.prompt_tokens
-            self._completion_tokens += event.completion_tokens
-
-            # Update agent-specific data if available
-            if agent:
-                self._update_agent_chat(
-                    agent,
-                    source_name,
-                    response,
-                    system_input,
-                    user_input,
-                    event,
-                    add_chat,
-                )
+                # Only update agent-specific data if agent is available
+                if agent:
+                    chat = agent.get_agent_chat_by_source(source=source_name)
+                    chat.chat_response = Response(
+                        chat_message=TextMessage(content=response, source=source_name)
+                    )
+                    chat.prompt_tokens = event.prompt_tokens
+                    chat.completion_tokens = event.completion_tokens
+                    chat.system_prompt = system_input
+                    chat.user_message = user_input
+                    chat.end_time = datetime.now().timestamp()
+                    if add_chat:
+                        self._queue.append(chat)
 
         except Exception as e:
             print(f"Failed to emit log record :{e}")
@@ -516,5 +442,5 @@ class IProjectAgents(ABC):
         pass
 
     @abstractmethod
-    def Get_Project_Agents(self, config: Config) -> Agents:
+    def Get_Project_Agents(self, config: IngeniousSettings) -> Agents:
         pass

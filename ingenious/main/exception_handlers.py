@@ -1,5 +1,4 @@
-"""
-Exception handlers for the FastAPI application.
+"""Exception handlers for the FastAPI application.
 
 This module contains exception handlers for proper error responses
 and logging of exceptions across the application.
@@ -40,10 +39,16 @@ class ExceptionHandlers:
     """Collection of exception handlers for FastAPI application."""
 
     @staticmethod
-    async def generic_exception_handler(
-        request: Request, exc: Exception
-    ) -> JSONResponse:
-        """Handle generic exceptions with proper error responses."""
+    async def generic_exception_handler(request: Request, exc: Exception) -> JSONResponse:
+        """Handle generic exceptions with proper error responses.
+
+        Args:
+            request: FastAPI request object
+            exc: Exception that was raised
+
+        Returns:
+            JSONResponse with error details and appropriate status code
+        """
         if os.environ.get("LOADENV") == "True":
             load_dotenv()
 
@@ -80,9 +85,7 @@ class ExceptionHandlers:
             # Add rate limiting headers if applicable
             if hasattr(exc, "retry_after") and exc.retry_after:
                 response.headers["Retry-After"] = str(exc.retry_after)
-                response.headers["X-RateLimit-Reset"] = str(
-                    int(time.time()) + exc.retry_after
-                )
+                response.headers["X-RateLimit-Reset"] = str(int(time.time()) + exc.retry_after)
 
             return response
 
@@ -122,12 +125,18 @@ class ExceptionHandlers:
     async def validation_exception_handler(
         request: Request, exc: FastAPIValidationError
     ) -> JSONResponse:
-        """Handle FastAPI validation errors with structured format."""
+        """Handle FastAPI validation errors with structured format.
+
+        Args:
+            request: FastAPI request object
+            exc: FastAPI validation error that was raised
+
+        Returns:
+            JSONResponse with validation error details and 422 status code
+        """
         # Generate user-friendly error message based on the specific error
         user_message, recovery_suggestion = (
-            ExceptionHandlers._generate_user_friendly_validation_message(
-                exc, str(request.url.path)
-            )
+            ExceptionHandlers._generate_user_friendly_validation_message(exc, str(request.url.path))
         )
 
         # Create structured validation error
@@ -171,7 +180,15 @@ class ExceptionHandlers:
     def _generate_user_friendly_validation_message(
         exc: FastAPIValidationError, request_path: str
     ) -> tuple[str, str]:
-        """Generate user-friendly error messages for validation errors."""
+        """Generate user-friendly error messages for validation errors.
+
+        Args:
+            exc: FastAPI validation error
+            request_path: Request path where the error occurred
+
+        Returns:
+            Tuple of (user_message, recovery_suggestion)
+        """
         errors = exc.errors() if hasattr(exc, "errors") else []
 
         # Handle bike-insights specific JSON validation errors
@@ -240,7 +257,14 @@ class ExceptionHandlers:
 
     @staticmethod
     def _get_status_code_for_error(error: IngeniousError) -> int:
-        """Map Ingenious errors to appropriate HTTP status codes."""
+        """Map Ingenious errors to appropriate HTTP status codes.
+
+        Args:
+            error: Ingenious error instance
+
+        Returns:
+            HTTP status code (400-599)
+        """
         # Authentication and authorization errors
         if isinstance(error, AuthenticationError):
             return 401
@@ -277,7 +301,11 @@ class ExceptionHandlers:
 
     @classmethod
     def register_handlers(cls, app: "FastAPI") -> None:
-        """Register all exception handlers with the FastAPI app."""
+        """Register all exception handlers with the FastAPI app.
+
+        Args:
+            app: FastAPI application instance
+        """
         app.add_exception_handler(Exception, cls.generic_exception_handler)
         app.add_exception_handler(
             FastAPIValidationError,

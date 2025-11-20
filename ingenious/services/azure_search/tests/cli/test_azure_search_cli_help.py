@@ -56,16 +56,12 @@ def _collect_cli_debug() -> str:
         reg_cmds: list[Any] | None = getattr(app, "registered_commands", None)
         reg_grps: list[Any] | None = getattr(app, "registered_groups", None)
         if reg_cmds is not None:
-            lines.append(
-                f"root.registered_commands={[getattr(c, 'name', '?') for c in reg_cmds]}"
-            )
+            lines.append(f"root.registered_commands={[getattr(c, 'name', '?') for c in reg_cmds]}")
         else:
             lines.append("root.registered_commands not present on app")
 
         if reg_grps is not None:
-            lines.append(
-                f"root.registered_groups={[getattr(g, 'name', '?') for g in reg_grps]}"
-            )
+            lines.append(f"root.registered_groups={[getattr(g, 'name', '?') for g in reg_grps]}")
         else:
             lines.append("root.registered_groups not present on app")
     except Exception as e:
@@ -103,9 +99,7 @@ def _collect_cli_debug() -> str:
 
         reg_file: str = inspect.getsourcefile(reg_mod) or inspect.getfile(reg_mod)
         lines.append(f"registry module file={reg_file}")
-        reg_obj: Any = getattr(reg_mod, "registry", None) or getattr(
-            reg_mod, "REGISTRY", None
-        )
+        reg_obj: Any = getattr(reg_mod, "registry", None) or getattr(reg_mod, "REGISTRY", None)
         if reg_obj:
             try:
                 lines.append(f"registry attrs={list(vars(reg_obj).keys())}")
@@ -118,9 +112,7 @@ def _collect_cli_debug() -> str:
                             length = len(val)  # list/dict/set
                         except Exception:
                             length = "n/a"
-                        lines.append(
-                            f"registry.{key} type={type(val).__name__} len={length}"
-                        )
+                        lines.append(f"registry.{key} type={type(val).__name__} len={length}")
             except Exception as e:
                 lines.append(f"registry vars() error: {e!r}")
         else:

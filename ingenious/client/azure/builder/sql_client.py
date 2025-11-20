@@ -1,34 +1,29 @@
-from __future__ import annotations
-
-from typing import Optional, Union
+from typing import Optional
 
 import pyodbc
 from azure.identity import get_bearer_token_provider
 
 from ingenious.client.azure.builder.base import AzureClientBuilder
 from ingenious.common.enums import AuthenticationMethod
+from ingenious.config.auth_config import AzureAuthConfig
 from ingenious.config.models import AzureSqlSettings
-from ingenious.models.config import AzureSqlConfig
 
 
 class AzureSqlClientBuilder(AzureClientBuilder):
     """Builder for Azure SQL clients with multiple authentication methods."""
 
-    def __init__(self, sql_config: Union[AzureSqlConfig, AzureSqlSettings]):
+    def __init__(self, sql_config: AzureSqlSettings):
         # Extract authentication parameters from config
         auth_config = self._create_auth_config_from_sql_config(sql_config)
         super().__init__(auth_config=auth_config)
         self.sql_config = sql_config
 
-    def _create_auth_config_from_sql_config(self, sql_config):
+    def _create_auth_config_from_sql_config(self, sql_config: AzureSqlSettings) -> AzureAuthConfig:
         """Create AzureAuthConfig from SQL configuration."""
-        from ingenious.config.auth_config import AzureAuthConfig
-
         return AzureAuthConfig.from_config(sql_config)
 
-    def build(self) -> "pyodbc.Connection":
-        """
-        Build Azure SQL client based on SQL configuration.
+    def build(self) -> pyodbc.Connection:
+        """Build Azure SQL client based on SQL configuration.
 
         Returns:
             pyodbc.Connection: Configured Azure SQL connection
@@ -72,9 +67,8 @@ class AzureSqlClientBuilderWithAuth(AzureClientBuilder):
         self.client_secret = client_secret
         self.tenant_id = tenant_id
 
-    def build(self) -> "pyodbc.Connection":
-        """
-        Build Azure SQL client based on configuration with authentication.
+    def build(self) -> pyodbc.Connection:
+        """Build Azure SQL client based on configuration with authentication.
 
         Returns:
             pyodbc.Connection: Configured Azure SQL connection
@@ -92,9 +86,7 @@ class AzureSqlClientBuilderWithAuth(AzureClientBuilder):
         if self.authentication_method == AuthenticationMethod.TOKEN:
             # SQL authentication with username/password
             if not self.username or not self.password:
-                raise ValueError(
-                    "Username and password are required for TOKEN authentication"
-                )
+                raise ValueError("Username and password are required for TOKEN authentication")
 
             connection_parts.extend([f"UID={self.username}", f"PWD={self.password}"])
 
@@ -105,9 +97,7 @@ class AzureSqlClientBuilderWithAuth(AzureClientBuilder):
         elif self.authentication_method == AuthenticationMethod.MSI:
             # Managed Identity authentication
             if self.client_id:
-                connection_parts.append(
-                    f"Authentication=ActiveDirectoryMsi;UID={self.client_id}"
-                )
+                connection_parts.append(f"Authentication=ActiveDirectoryMsi;UID={self.client_id}")
             else:
                 connection_parts.append("Authentication=ActiveDirectoryMsi")
 
@@ -129,9 +119,7 @@ class AzureSqlClientBuilderWithAuth(AzureClientBuilder):
             connection_parts.append(f"AccessToken={access_token}")
 
         else:
-            raise ValueError(
-                f"Unsupported authentication method: {self.authentication_method}"
-            )
+            raise ValueError(f"Unsupported authentication method: {self.authentication_method}")
 
         connection_string = ";".join(connection_parts)
         return pyodbc.connect(connection_string)

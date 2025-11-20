@@ -1,1 +1,1 @@
-# Multi-agent conversation system for ingenious_extensions
+"""Multi-agent conversation system extensions."""

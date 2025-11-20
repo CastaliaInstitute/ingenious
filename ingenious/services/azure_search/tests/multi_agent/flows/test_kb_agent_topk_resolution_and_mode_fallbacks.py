@@ -36,7 +36,7 @@ async def test_request_parameters_string_topk_overrides_env_and_defaults(
     environment variables or the hardcoded default.
     """
     flow: kb.ConversationFlow = kb.ConversationFlow.__new__(kb.ConversationFlow)
-    flow._config = SimpleNamespace(models=[SimpleNamespace(model="gpt-4o")])
+    flow._config = SimpleNamespace(models=[SimpleNamespace(model="gpt-5")])
     flow._chat_service = None
     flow._memory_path = str(tmp_path)
     # Provide default paths in case of any local fallback path execution
@@ -64,7 +64,7 @@ def test_non_numeric_and_non_positive_topk_values_are_ignored(
     variable (`KB_TOPK_DIRECT`) or, if that is not set, the default value.
     """
     flow: kb.ConversationFlow = kb.ConversationFlow.__new__(kb.ConversationFlow)
-    flow._config = SimpleNamespace(models=[SimpleNamespace(model="gpt-4o")])
+    flow._config = SimpleNamespace(models=[SimpleNamespace(model="gpt-5")])
     flow._chat_service = None
     flow._memory_path = str(tmp_path)
     # Provide default paths in case of any local fallback path execution
@@ -93,11 +93,9 @@ def test_non_numeric_and_non_positive_topk_values_are_ignored(
 
 
 @pytest.mark.asyncio
-async def test_invalid_kb_mode_coerces_to_direct(
-    tmp_path: Path, monkeypatch: MonkeyPatch
-) -> None:
-    """
-    Ensure an invalid KB_MODE coerces to 'direct' (top_k=3) AND that the Azure path
+async def test_invalid_kb_mode_coerces_to_direct(tmp_path: Path, monkeypatch: MonkeyPatch) -> None:
+    """Ensure an invalid KB_MODE coerces to 'direct' (top_k=3) AND that the Azure path.
+
     is actually taken (preflight succeeds) so the final response contains the
     'Azure AI Search' prefix.
 
@@ -117,7 +115,6 @@ async def test_invalid_kb_mode_coerces_to_direct(
       to build our fake async SearchClient type that implements `get_document_count()`.
     - Clear policy env vars so nothing forces a local/non-Azure path.
     """
-
     # 1) Invalid KB_MODE so the flow must coerce to 'direct' (default top_k=3).
     os.environ["KB_MODE"] = "wEiRd"
 
@@ -154,10 +151,11 @@ async def test_invalid_kb_mode_coerces_to_direct(
             self.k = k
 
     class _Client:
-        """
-        Fake async SearchClient; implements the two async methods the KB preflight needs:
-          - get_document_count()
-          - close()
+        """Fake async SearchClient; implements the two async methods the KB preflight needs.
+
+        Methods implemented:
+        - get_document_count()
+        - close()
         """
 
         def __init__(self, *, endpoint: str, index_name: str, credential: Any) -> None:
@@ -191,8 +189,8 @@ async def test_invalid_kb_mode_coerces_to_direct(
     #    the KB flow actually constructs OUR fake async client above. Patching the factory
     #    module is NOT sufficient because the KB file imported the function by value.
     def _make_fake_client_from_cfg(cfg: Any) -> _Client:
-        """
-        Build our fake async client using the stub config the KB preflight passes.
+        """Build our fake async client using the stub config the KB preflight passes.
+
         The stub exposes:
           - search_endpoint
           - search_index_name
@@ -215,15 +213,11 @@ async def test_invalid_kb_mode_coerces_to_direct(
         )
 
     # Patch the symbol where it is used by the flow.
-    monkeypatch.setattr(
-        kb, "make_async_search_client", _make_fake_client_from_cfg, raising=True
-    )
+    monkeypatch.setattr(kb, "make_async_search_client", _make_fake_client_from_cfg, raising=True)
 
     # 5) Make sure the Azure provider import is “available” to the flow so
     #    `_is_azure_search_available()` returns True.
-    monkeypatch.setitem(
-        sys.modules, "ingenious.services.azure_search.provider", prov_mod
-    )
+    monkeypatch.setitem(sys.modules, "ingenious.services.azure_search.provider", prov_mod)
 
     # 6) Minimal autogen + LLM factories to satisfy unrelated imports/usage.
     core = _t.ModuleType("autogen_core")
@@ -253,9 +247,7 @@ async def test_invalid_kb_mode_coerces_to_direct(
     monkeypatch.setattr(
         kb,
         "AzureClientFactory",
-        SimpleNamespace(
-            create_openai_chat_completion_client=lambda _cfg: DummyLLMClient()
-        ),
+        SimpleNamespace(create_openai_chat_completion_client=lambda _cfg: DummyLLMClient()),
         raising=False,
     )
 
@@ -267,10 +259,8 @@ async def test_invalid_kb_mode_coerces_to_direct(
     # 8) Build a flow instance with a minimal, valid Azure service configuration.
     flow: kb.ConversationFlow = kb.ConversationFlow.__new__(kb.ConversationFlow)
     flow._config = SimpleNamespace(
-        models=[SimpleNamespace(model="gpt-4o")],
-        azure_search_services=[
-            SimpleNamespace(endpoint="https://s", key="k", index_name="idx")
-        ],
+        models=[SimpleNamespace(model="gpt-5")],
+        azure_search_services=[SimpleNamespace(endpoint="https://s", key="k", index_name="idx")],
     )
     flow._chat_service = None
     flow._memory_path = str(tmp_path)

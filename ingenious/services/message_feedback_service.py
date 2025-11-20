@@ -1,3 +1,9 @@
+"""Message feedback service for handling user feedback on chat messages.
+
+This module provides functionality for updating and managing user feedback
+on chat messages in the conversation history.
+"""
+
 from ingenious.db.chat_history_repository import ChatHistoryRepository
 from ingenious.models.message_feedback import (
     MessageFeedbackRequest,
@@ -6,12 +12,35 @@ from ingenious.models.message_feedback import (
 
 
 class MessageFeedbackService:
+    """Handle message feedback operations.
+
+    Attributes:
+        chat_history_repository: Repository for accessing chat history and messages.
+    """
+
     def __init__(self, chat_history_repository: ChatHistoryRepository):
+        """Initialize message feedback service.
+
+        Args:
+            chat_history_repository: Repository for accessing chat history data.
+        """
         self.chat_history_repository = chat_history_repository
 
     async def update_message_feedback(
         self, message_id: str, message_feedback_request: MessageFeedbackRequest
     ) -> MessageFeedbackResponse:
+        """Update feedback for a specific message.
+
+        Args:
+            message_id: ID of the message to update feedback for.
+            message_feedback_request: Feedback request containing user feedback data.
+
+        Returns:
+            Response confirming feedback submission.
+
+        Raises:
+            ValueError: If message_id doesn't match request, message not found, or user_id mismatch.
+        """
         # Validate message ID
         if message_id != message_feedback_request.message_id:
             raise ValueError("Message ID does not match message feedback request.")
@@ -34,6 +63,4 @@ class MessageFeedbackService:
             message_feedback_request.positive_feedback,
         )
 
-        return MessageFeedbackResponse(
-            message=f"Feedback submitted for message {message_id}."
-        )
+        return MessageFeedbackResponse(message=f"Feedback submitted for message {message_id}.")

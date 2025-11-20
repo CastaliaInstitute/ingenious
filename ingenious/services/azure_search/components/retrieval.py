@@ -43,17 +43,16 @@ logger = logging.getLogger(LOG_NAME)
 
 
 class AzureSearchRetriever:
-    """Hybrid BM25 + vector retriever.
+    """Hybrid BM25 and vector retriever for Azure AI Search.
 
     The retriever issues two parallel queries:
-    1) A lexical (BM25) search via `SearchClient.search`.
+    1) A lexical (BM25) search via SearchClient.search.
     2) A vector search using an embeddings call followed by a vectorized query.
 
-    Notes on compatibility:
-    Some test stubs (and SDK shims) expose the OpenAI client with `embeddings`
-    as a *method* returning an object that has `.create(...)`, while others
-    expose it as an *attribute* with `.create(...)` directly. The vector path
-    supports both shapes to keep tests and integrations compatible.
+    Attributes:
+        _cfg: The search configuration instance.
+        _search_client: The async Azure Search client.
+        _embedding_client: The async OpenAI/Azure OpenAI client for embeddings.
     """
 
     def __init__(
@@ -65,9 +64,9 @@ class AzureSearchRetriever:
         """Initialize the retriever with config and dependency clients.
 
         Args:
-            config: Validated `SearchConfig` object.
-            search_client: Async Azure Search client (aio). May be None in tests.
-            embedding_client: Async OpenAI/Azure OpenAI client, used for embeddings.
+            config: Validated SearchConfig object.
+            search_client: Async Azure Search client (aio), may be None in tests.
+            embedding_client: Async OpenAI/Azure OpenAI client for embeddings.
         """
         self._cfg = config
         self._search_client = search_client
@@ -79,15 +78,14 @@ class AzureSearchRetriever:
     def _is_rate_limit_error(exc: Exception) -> bool:
         """Heuristically detect a 429 rate-limit error from various SDKs.
 
-        Why:
-            Some tests simulate a 429 on embeddings and expect a `RuntimeError`
-            to be raised (distinct from other OpenAI errors that should bubble).
+        Some tests simulate a 429 on embeddings and expect a RuntimeError
+        to be raised, distinct from other OpenAI errors that should bubble.
 
         Args:
             exc: The exception raised by the embeddings call.
 
         Returns:
-            True if the exception appears to be a 429/rate limit, else False.
+            True if the exception appears to be a 429 rate limit, False otherwise.
         """
         code = getattr(exc, "status_code", None) or getattr(exc, "status", None)
         if isinstance(code, int) and code == STATUS_TOO_MANY_REQUESTS:
@@ -100,14 +98,14 @@ class AzureSearchRetriever:
         return "429" in text or "rate limit" in text or "ratelimit" in text
 
     async def _resolve_embeddings_client(self) -> Any | None:
-        """Resolve an embeddings client that has an async `.create(...)` method.
+        """Resolve an embeddings client that has an async create() method.
 
-        Supports both attribute-style (`client.embeddings.create`) and
-        method-style (`client.embeddings().create`) access patterns. Avoids
+        Supports both attribute-style (client.embeddings.create) and
+        method-style (client.embeddings().create) access patterns. Avoids
         misclassifying AsyncMock instances as callables that must be invoked.
 
         Returns:
-            An object with a `.create(...)` coroutine method, or None if not found.
+            An object with a create() coroutine method, or None if not found.
         """
         if self._embedding_client is None:
             return None
@@ -143,12 +141,10 @@ class AzureSearchRetriever:
             query: The user query string.
 
         Returns:
-            A list of result dicts. Each row includes `_retrieval_type` and
-            `_retrieval_score` derived from `@search.score`.
+            A list of result dictionaries with _retrieval_type and
+            _retrieval_score fields derived from @search.score.
         """
-        logger.debug(
-            f"search_lexical({query!r}) with top_k={self._cfg.top_k_retrieval}"
-        )
+        logger.debug(f"search_lexical({query!r}) with top_k={self._cfg.top_k_retrieval}")
         if not query or not query.strip():
             return []
 
@@ -179,21 +175,19 @@ class AzureSearchRetriever:
     # ------------------------------- Vector ----------------------------------
 
     async def search_vector(self, query: str) -> list[dict[str, Any]]:
-        """Run a vector search (embed → vectorized query).
+        """Run a vector search using embeddings and vectorized query.
 
         Error policy:
-            * If the embeddings step raises a *rate-limit* (429), raise
-              `RuntimeError` so higher layers can retry.
-            * For other embedding errors, re-raise the original exception type.
-            * If the embeddings facility is entirely unavailable, return `[]`
-              so the pipeline can still proceed with lexical results.
+            - If embeddings raise a rate-limit (429), raise RuntimeError for retry.
+            - For other embedding errors, re-raise the original exception type.
+            - If embeddings are unavailable, return [] to allow lexical-only search.
 
         Args:
             query: The user query string.
 
         Returns:
-            A list of result dicts with `_retrieval_type` and `_retrieval_score`.
-            Returns `[]` on blank input or when embeddings are unavailable.
+            A list of result dictionaries with _retrieval_type and _retrieval_score.
+            Returns [] on blank input or when embeddings are unavailable.
         """
         logger.debug(f"search_vector({query!r}) with top_k={self._cfg.top_k_retrieval}")
         if not query or not query.strip():
@@ -271,17 +265,14 @@ class AzureSearchRetriever:
         """Close underlying clients, tolerating both sync and async close methods.
 
         This ensures both the search and embedding clients release any resources,
-        independent of whether they expose an async or sync `close()` API.
+        independent of whether they expose an async or sync close() API.
         """
 
         async def _aclose(x: Any) -> None:
-            """Close a client that may expose sync/async `close()`.
+            """Close a client that may expose sync or async close().
 
             Args:
-                x: The client instance (or None).
-
-            Returns:
-                None. Errors are intentionally not raised here.
+                x: The client instance or None.
             """
             if not x:
                 return

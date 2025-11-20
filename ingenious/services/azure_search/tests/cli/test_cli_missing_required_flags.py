@@ -17,9 +17,7 @@ if TYPE_CHECKING:
     from typer.testing import Result
 
 
-@pytest.mark.skip(
-    reason="CLI currently allows missing index name with default/fallback behavior"
-)
+@pytest.mark.skip(reason="CLI currently allows missing index name with default/fallback behavior")
 def test_cli_missing_search_index_name_exits_nonzero() -> None:
     """Verify the CLI exits with a non-zero code if the index name is missing.
 
@@ -49,6 +47,5 @@ def test_cli_missing_search_index_name_exits_nonzero() -> None:
     combined: str = (res.stderr or "") + (res.stdout or "")
     # Be tolerant to phrasing differences between Pydantic/our wrapper
     assert any(
-        s in combined
-        for s in ("search_index_name", "AZURE_SEARCH_INDEX_NAME", "index name")
+        s in combined for s in ("search_index_name", "AZURE_SEARCH_INDEX_NAME", "index name")
     ), combined
