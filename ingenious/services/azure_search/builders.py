@@ -29,7 +29,7 @@ log = logging.getLogger("ingenious.services.azure_search.builders")
 EMBEDDING_ROLES = frozenset(["embedding"])
 EMBEDDING_NAME_PATTERNS = frozenset(["embedding", "embed"])
 CHAT_ROLES = frozenset(["chat", "completion", "generation"])
-CHAT_NAME_PATTERNS = frozenset(["gpt", "4o"])
+CHAT_NAME_PATTERNS = frozenset(["gpt", "5"])
 DEFAULT_API_VERSION = "2024-02-15-preview"
 DEFAULT_SEMANTIC_CONFIG = "default"
 DEFAULT_TOP_K_RETRIEVAL = 20
@@ -297,7 +297,7 @@ def _is_chat_model(model: ModelConfig) -> bool:
     """Determine if a model is intended for chat/completion.
 
     This function identifies a chat/generation model by checking its 'role'
-    or by looking for common patterns in its name (e.g., 'gpt', '4o'). This is
+    or by looking for common patterns in its name (e.g., 'gpt', '5'). This is
     critical for selecting the correct deployment for generation tasks.
 
     Args:
@@ -362,7 +362,7 @@ def _select_models(models: list[ModelConfig]) -> tuple[ModelConfig, ModelConfig]
     if not chat_cfg:
         raise ConfigError(
             "No chat/generation model configured (expected role 'chat' or model "
-            "containing 'gpt'/'4o')."
+            "containing 'gpt'/'5')."
         )
     # This should never be reached, but satisfies mypy
     raise ConfigError("Unexpected error in model selection")

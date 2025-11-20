@@ -106,7 +106,7 @@ class SearchConfig(BaseModel):
     )
     generation_deployment_name: str = Field(
         ...,
-        description="The deployment name for the generation model (e.g., gpt-4o). Used for DAT and final answer.",
+        description="The deployment name for the generation model (e.g., gpt-5). Used for DAT and final answer.",
     )
 
     # Pipeline Behavior Configuration
