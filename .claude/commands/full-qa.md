@@ -79,7 +79,7 @@ Within `test_dir`, add and test:
 
 ### Step 6 — Transition Local → Azure Docs
 
-- Check if `docs/guides/complete-azure-deployment.md` explains moving from local to Azure SQL + Blob.
+- Check if `docs/guides/complete-azure-deployment.md` explains moving from local to Cosmos DB + Blob.
 - If not, add/update with:
   - Env var table
   - `az cli` one-liners (with check-before-provision guidance)
