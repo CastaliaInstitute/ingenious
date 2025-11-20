@@ -17,6 +17,17 @@ This is the **ingenious** package - a core AI agent framework library (v0.2.7).
 - Provide direct, clear technical communication without unnecessary elaboration
 - Focus on facts and technical accuracy over conversational language
 
+## Testing and Development Files
+
+**CRITICAL**: All testing artifacts, temporary files, and development scripts must be placed in the `/tmp` folder to maintain repository cleanliness:
+
+- Development scripts and experiments
+- Temporary output files
+- Test artifacts and logs
+- Mock data generators
+
+This prevents clutter in the working directory and ensures consistent cleanup across development environments.
+
 ## Package Management
 
 Uses **uv** for Python package and environment management. Python 3.13+ is required.
