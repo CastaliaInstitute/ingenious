@@ -26,7 +26,7 @@ class TestCLIModule:
         # Check if it has Typer-like interface
         assert hasattr(cli_module.app, "command")
 
-    def test_module_can be_imported(self):
+    def test_module_can_be_imported(self):
         """Test that module can be imported without errors."""
         import ingenious.cli
 

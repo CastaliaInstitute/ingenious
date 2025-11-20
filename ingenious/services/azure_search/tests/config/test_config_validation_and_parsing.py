@@ -52,7 +52,7 @@ def test_modelsettings_client_id_and_secret_require_all_fields_or_env(
     monkeypatch.setenv("AZURE_TENANT_ID", "tenant-123")
 
     ms = ModelSettings(
-        model="gpt-4o",
+        model="gpt-5",
         base_url="https://oai.example.com",
         deployment="chat",
         authentication_method=AuthenticationMethod.CLIENT_ID_AND_SECRET,
@@ -84,7 +84,7 @@ def test_modelsettings_base_url_validation(base_url: str, should_raise: bool) ->
     is permitted to allow for cases where it's not needed.
     """
     kwargs: dict[str, str] = dict(
-        model="gpt-4o",
+        model="gpt-5",
         deployment="chat",
         api_key="",  # not using TOKEN auth here
     )
@@ -158,7 +158,7 @@ def test_ingenioussettings_parse_models_from_nested_env_dict() -> None:
     # Provide 'models' as a dict that mimics nested env-structure keys
     models_dict: dict[str, dict[str, str]] = {
         "1": {
-            "model": "gpt-4o",
+            "model": "gpt-5",
             "api_type": "rest",
             "api_version": "2024-02-01",
             "deployment": "chat",
@@ -176,7 +176,7 @@ def test_ingenioussettings_parse_models_from_nested_env_dict() -> None:
     assert len(s.models) == 2
     # Keys are sorted; "0" should come before "1"
     assert s.models[0].model == "text-embedding-3-small"
-    assert s.models[1].model == "gpt-4o"
+    assert s.models[1].model == "gpt-5"
 
 
 def test_ingenioussettings_parse_azure_search_from_nested_env_dict() -> None:
@@ -188,7 +188,7 @@ def test_ingenioussettings_parse_azure_search_from_nested_env_dict() -> None:
     """
     models_dict: dict[str, dict[str, str]] = {
         "0": {
-            "model": "gpt-4o",
+            "model": "gpt-5",
             "api_type": "rest",
             "api_version": "2024-02-01",
             "deployment": "chat",

@@ -32,7 +32,7 @@ def test_parse_models_json_and_nested_mix(monkeypatch: MonkeyPatch) -> None:
     models_json: str = json.dumps(
         [
             {
-                "model": "gpt-4o",
+                "model": "gpt-5",
                 "api_key": "k",
                 "base_url": "https://oai/",
                 "deployment": "chat",
@@ -61,7 +61,7 @@ def test_web_settings_port_range(monkeypatch: MonkeyPatch) -> None:
     out-of-bounds conditions, as well as a valid port.
     """
     # minimal valid model
-    monkeypatch.setenv("INGENIOUS_MODELS__0__MODEL", "gpt-4o")
+    monkeypatch.setenv("INGENIOUS_MODELS__0__MODEL", "gpt-5")
     monkeypatch.setenv("INGENIOUS_MODELS__0__API_KEY", "k")
     monkeypatch.setenv("INGENIOUS_MODELS__0__BASE_URL", "https://oai/")
     monkeypatch.setenv("INGENIOUS_MODELS__0__DEPLOYMENT", "chat")

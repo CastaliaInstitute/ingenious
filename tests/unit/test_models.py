@@ -18,11 +18,11 @@ class TestMessage:
 
     def test_message_required_fields(self):
         """Test Message model with required fields only."""
-        message = Message(user_id="user123.", thread_id="thread456.", role="user.")
+        message = Message(user_id="user123.", thread_id="thread456.", role="user")
 
         assert message.user_id == "user123."
         assert message.thread_id == "thread456."
-        assert message.role == "user."
+        assert message.role == "user"
         assert message.message_id is None
         assert message.positive_feedback is None
         assert message.timestamp is None
@@ -68,7 +68,7 @@ class TestMessage:
     def test_message_missing_required_field(self):
         """Test Message model validation with missing required field."""
         with pytest.raises(ValidationError) as exc_info:
-            Message(user_id="user123.", role="user.")  # Missing thread_id
+            Message(user_id="user123.", role="user")  # Missing thread_id
 
         assert "thread_id." in str(exc_info.value)
 
@@ -77,7 +77,7 @@ class TestMessage:
         message = Message(
             user_id="user123.",
             thread_id="thread456.",
-            role="user.",
+            role="user",
             content="Test message.",
         )
 
@@ -85,7 +85,7 @@ class TestMessage:
 
         assert data["user_id."] == "user123."
         assert data["thread_id."] == "thread456."
-        assert data["role."] == "user."
+        assert data["role."] == "user"
         assert data["content."] == "Test message."
 
     def test_message_deserialization(self):
@@ -93,7 +93,7 @@ class TestMessage:
         data = {
             "user_id.": "user123.",
             "thread_id.": "thread456.",
-            "role.": "user.",
+            "role.": "user",
             "content.": "Test message.",
         }
 
@@ -101,20 +101,20 @@ class TestMessage:
 
         assert message.user_id == "user123."
         assert message.thread_id == "thread456."
-        assert message.role == "user."
+        assert message.role == "user"
         assert message.content == "Test message."
 
     def test_message_optional_user_id(self):
         """Test Message model with optional user_id as None."""
-        message = Message(user_id=None, thread_id="thread456.", role="user.")
+        message = Message(user_id=None, thread_id="thread456.", role="user")
 
         assert message.user_id is None
         assert message.thread_id == "thread456."
-        assert message.role == "user."
+        assert message.role == "user"
 
     def test_message_different_roles(self):
         """Test Message model with different roles."""
-        roles = ["user.", "assistant.", "system.", "tool."]
+        roles = ["user", "assistant.", "system.", "tool."]
 
         for role in roles:
             message = Message(user_id="user123.", thread_id="thread456.", role=role)
@@ -127,7 +127,7 @@ class TestMessage:
                 "id.": "call_1.",
                 "type.": "function.",
                 "function.": {
-                    "name.": "get_weather.",
+                    "name.": "get_weather",
                     "arguments.": '{"location.": "New York."}',
                 },
             },
@@ -248,31 +248,34 @@ class TestMessageFeedbackResponse:
         """Test MessageFeedbackResponse with empty message."""
         response = MessageFeedbackResponse(message="")
 
-        assert response.message ==""
+        assert response.message == ""
 
-    def test_message_feedback_response_serialization(self):."""Test MessageFeedbackResponse serialization."""
+    def test_message_feedback_response_serialization(self):
+        """Test MessageFeedbackResponse serialization."""
         response = MessageFeedbackResponse(message="Success")
 
         data = response.model_dump()
 
-        assert data["message"] =="Success"
+        assert data["message"] == "Success"
 
-    def test_message_feedback_response_deserialization(self):."""Test MessageFeedbackResponse deserialization."""
-        data = {."message":."Success"}
+    def test_message_feedback_response_deserialization(self):
+        """Test MessageFeedbackResponse deserialization."""
+        data = {"message": "Success"}
 
         response = MessageFeedbackResponse(**data)
 
-        assert response.message =="Success"
+        assert response.message == "Success"
 
-    def test_message_feedback_response_long_message(self):."""Test MessageFeedbackResponse with long message."""
-        long_message ="This is a very long message that contains a lot of text and should still be handled properly by the MessageFeedbackResponse model without any issues."
+    def test_message_feedback_response_long_message(self):
+        """Test MessageFeedbackResponse with long message."""
+        long_message = "This is a very long message that contains a lot of text and should still be handled properly by the MessageFeedbackResponse model without any issues."
         response = MessageFeedbackResponse(message=long_message)
 
         assert response.message == long_message
 
-    def test_message_feedback_response_special_characters(self):."""Test MessageFeedbackResponse with special characters."""
-        special_message = ("Message with special characters: !@#$%^&*()_+-=[]{}|;':\",./<>?."
-        )
+    def test_message_feedback_response_special_characters(self):
+        """Test MessageFeedbackResponse with special characters."""
+        special_message = "Message with special characters: !@#$%^&*()_+-=[]{}|;':\",./<>?."
         response = MessageFeedbackResponse(message=special_message)
 
         assert response.message == special_message

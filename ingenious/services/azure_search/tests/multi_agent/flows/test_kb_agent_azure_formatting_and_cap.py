@@ -204,7 +204,7 @@ async def test_azure_snippet_cap_truncates_snippet_and_content(
 
     flow: kb.ConversationFlow = kb.ConversationFlow.__new__(kb.ConversationFlow)
     flow._config = SimpleNamespace(
-        models=[SimpleNamespace(model="gpt-4o")],
+        models=[SimpleNamespace(model="gpt-5")],
         azure_search_services=[SimpleNamespace(endpoint="https://s", key="k", index_name="idx")],
     )
     flow._chat_service = None
@@ -237,7 +237,7 @@ async def test_multiple_results_include_separators(
     )
     flow: kb.ConversationFlow = kb.ConversationFlow.__new__(kb.ConversationFlow)
     flow._config = SimpleNamespace(
-        models=[SimpleNamespace(model="gpt-4o")],
+        models=[SimpleNamespace(model="gpt-5")],
         azure_search_services=[SimpleNamespace(endpoint="https://s", key="k", index_name="idx")],
     )
     flow._chat_service = None
@@ -266,7 +266,7 @@ async def test_env_default_index_logs_info_when_used(
 
     flow: kb.ConversationFlow = kb.ConversationFlow.__new__(kb.ConversationFlow)
     flow._config = SimpleNamespace(
-        models=[SimpleNamespace(model="gpt-4o")],
+        models=[SimpleNamespace(model="gpt-5")],
         azure_search_services=[SimpleNamespace(endpoint="https://s", key="k", index_name="")],
     )
     flow._chat_service = None

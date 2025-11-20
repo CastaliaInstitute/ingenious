@@ -149,7 +149,7 @@ def _settings() -> IngeniousSettings:
             api_version="2024-02-01",
         ),
         ModelSettings(
-            model="gpt-4o",
+            model="gpt-5",
             deployment="chat",
             api_key="ok",
             base_url="https://aoai.example.com",

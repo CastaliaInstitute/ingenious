@@ -64,7 +64,7 @@ def test_pick_models_first_match_deterministic() -> None:
             api_version="2024-02-01",
         ),
         ModelSettings(
-            model="gpt-4o",
+            model="gpt-5",
             deployment="chat-1",
             api_key="K",
             base_url="https://oai",
@@ -93,7 +93,7 @@ def test_pick_models_first_match_deterministic() -> None:
         gen_dep = getattr(picked, "generation_deployment", None)
 
     assert emb_dep == "emb-1"  # first embedding wins
-    assert gen_dep == "chat-1"  # first GPT/4o-ish wins
+    assert gen_dep == "chat-1"  # first GPT/5-ish wins
 
 
 def test_pick_models_requires_any_valid_candidates() -> None:

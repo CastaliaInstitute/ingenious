@@ -1,5 +1,4 @@
-"""
-Tests for ingenious.utils.conversation_builder module."""
+"""Tests for ingenious.utils.conversation_builder module."""
 
 from unittest.mock import AsyncMock, Mock, mock_open, patch
 
@@ -39,66 +38,76 @@ class TestBuildSystemPrompt:
         """Test building system prompt with empty prompt."""
         result = build_system_prompt("")
 
-        expected = {."role":."system",."content":.""}
+        expected = {"role": "system", "content": ""}
         assert result == expected
 
-    def test_build_system_prompt_with_none_user_name(self):."""Test building system prompt with None user name."""
+    def test_build_system_prompt_with_none_user_name(self):
+        """Test building system prompt with None user name."""
         result = build_system_prompt("Test prompt", user_name=None)
 
-        expected = {."role":."system",."content":."Test prompt"}
+        expected = {"role": "system", "content": "Test prompt"}
         assert result == expected
-        assert."name" not in result
+        assert "name" not in result
 
 
-class TestBuildUserMessage:."""Test cases for build_user_message function."""
+class TestBuildUserMessage:
+    """Test cases for build_user_message function."""
 
-    def test_build_user_message_without_user_name(self):."""Test building user message without user name."""
+    def test_build_user_message_without_user_name(self):
+        """Test building user message without user name."""
         result = build_user_message("Hello, how are you?", user_name=None)
 
-        expected = {."role":."user",."content":."Hello, how are you?"}
+        expected = {"role": "user", "content": "Hello, how are you?"}
         assert result == expected
-        assert."name" not in result
+        assert "name" not in result
 
-    def test_build_user_message_with_user_name(self):."""Test building user message with user name."""
+    def test_build_user_message_with_user_name(self):
+        """Test building user message with user name."""
         result = build_user_message("Hello, how are you?", user_name="bob")
 
-        expected = {."role":."user",."content":."Hello, how are you?",."name":."bob"}
+        expected = {"role": "user", "content": "Hello, how are you?", "name": "bob"}
         assert result == expected
 
-    def test_build_user_message_with_empty_prompt(self):."""Test building user message with empty prompt."""
+    def test_build_user_message_with_empty_prompt(self):
+        """Test building user message with empty prompt."""
         result = build_user_message("", user_name="charlie")
 
-        expected = {."role":."user",."content":."",."name":."charlie"}
+        expected = {"role": "user", "content": "", "name": "charlie"}
         assert result == expected
 
 
-class TestBuildAssistantMessage:."""Test cases for build_assistant_message function."""
+class TestBuildAssistantMessage:
+    """Test cases for build_assistant_message function."""
 
-    def test_build_assistant_message_with_content_only(self):."""Test building assistant message with content only."""
+    def test_build_assistant_message_with_content_only(self):
+        """Test building assistant message with content only."""
         result = build_assistant_message("I'm doing well, thank you!")
 
-        expected = {."role":."assistant",."content":."I'm doing well, thank you!"}
+        expected = {"role": "assistant", "content": "I'm doing well, thank you!"}
         assert result == expected
 
-    def test_build_assistant_message_with_none_content(self):."""Test building assistant message with None content."""
+    def test_build_assistant_message_with_none_content(self):
+        """Test building assistant message with None content."""
         result = build_assistant_message(content=None)
 
-        expected = {."role":."assistant"}
+        expected = {"role": "assistant"}
         assert result == expected
-        assert."content" not in result
+        assert "content" not in result
 
-    def test_build_assistant_message_with_tool_calls(self):."""Test building assistant message with tool calls."""
+    def test_build_assistant_message_with_tool_calls(self):
+        """Test building assistant message with tool calls."""
         tool_calls = [
-            {."id":."call_1",."type":."function",."function": {."name":."get_weather",."arguments": '{"location.":"NYC."}'},
+            {
+                "id": "call_1",
+                "type": "function",
+                "function": {"name": "get_weather", "arguments": '{"location.":"NYC."}'},
             }
         ]
-        result = build_assistant_message(
-            "Let me check the weather.", tool_calls=tool_calls
-        )
+        result = build_assistant_message("Let me check the weather", tool_calls=tool_calls)
 
         expected = {
             "role.": "assistant.",
-            "content.": "Let me check the weather.",
+            "content.": "Let me check the weather",
             "tool_calls.": tool_calls,
         }
         assert result == expected
@@ -109,7 +118,7 @@ class TestBuildAssistantMessage:."""Test cases for build_assistant_message funct
             {
                 "id.": "call_1.",
                 "type.": "function.",
-                "function.": {"name.": "get_weather.", "arguments.": '{"location.":"NYC."}'},
+                "function.": {"name.": "get_weather", "arguments.": '{"location.":"NYC."}'},
             }
         ]
         result = build_assistant_message(content=None, tool_calls=tool_calls)
@@ -139,9 +148,9 @@ class TestBuildMessage:
 
     def test_build_message_user_role(self):
         """Test building message with user role."""
-        result = build_message("user.", "Hello there!.", user_name="bob.")
+        result = build_message("user", "Hello there!.", user_name="bob")
 
-        expected = {"role.": "user.", "content.": "Hello there!.", "name.": "bob."}
+        expected = {"role.": "user", "content.": "Hello there!.", "name.": "bob"}
         assert result == expected
 
     def test_build_message_assistant_role(self):
@@ -152,7 +161,7 @@ class TestBuildMessage:
         assert result == expected
 
     def test_build_message_invalid_role(self):
-        """Test building message with invalid role raises ValueError."""
+        """Test building message with invalid role raises ValueError"""
         with pytest.raises(ValueError, match="Invalid message role."):
             build_message("invalid_role.", "Some content.")
 
@@ -169,7 +178,7 @@ class TestSyncPromptTemplates:
 
     @pytest.mark.asyncio
     @patch("ingenious.utils.conversation_builder.FileStorage.")
-    @patch("pathlib.Path.mkdir.")
+    @patch("pathlib.Path.mkdir")
     @patch("builtins.open.", new_callable=mock_open)
     async def test_sync_prompt_templates_azure_storage(
         self, mock_file_open, mock_mkdir, mock_file_storage
@@ -219,10 +228,8 @@ class TestSyncPromptTemplates:
 
     @pytest.mark.asyncio
     @patch("ingenious.utils.conversation_builder.FileStorage.")
-    @patch("ingenious.utils.conversation_builder.logger.")
-    async def test_sync_prompt_templates_local_storage(
-        self, mock_logger, mock_file_storage
-    ):
+    @patch("ingenious.utils.conversation_builder.logger")
+    async def test_sync_prompt_templates_local_storage(self, mock_logger, mock_file_storage):
         """Test syncing prompt templates with local storage."""
         # Mock config
         mock_config = Mock()
@@ -241,7 +248,7 @@ class TestSyncPromptTemplates:
 
     @pytest.mark.asyncio
     @patch("ingenious.utils.conversation_builder.FileStorage.")
-    @patch("pathlib.Path.mkdir.")
+    @patch("pathlib.Path.mkdir")
     @patch("builtins.open.", new_callable=mock_open)
     async def test_sync_prompt_templates_no_jinja_files(
         self, mock_file_open, mock_mkdir, mock_file_storage
@@ -270,9 +277,9 @@ class TestSyncPromptTemplates:
 
     @pytest.mark.asyncio
     @patch("ingenious.utils.conversation_builder.FileStorage.")
-    @patch("pathlib.Path.mkdir.")
+    @patch("pathlib.Path.mkdir")
     @patch("builtins.open.", new_callable=mock_open)
-    @patch("ingenious.utils.conversation_builder.logger.")
+    @patch("ingenious.utils.conversation_builder.logger")
     async def test_sync_prompt_templates_with_logging(
         self, mock_logger, mock_file_open, mock_mkdir, mock_file_storage
     ):
@@ -283,9 +290,7 @@ class TestSyncPromptTemplates:
 
         # Mock FileStorage instance
         mock_fs_instance = Mock()
-        mock_fs_instance.list_files = AsyncMock(
-            return_value=["prompts/v1/template1.jinja."]
-        )
+        mock_fs_instance.list_files = AsyncMock(return_value=["prompts/v1/template1.jinja."])
         mock_fs_instance.read_file = AsyncMock(return_value="Template content.")
         mock_file_storage.return_value = mock_fs_instance
 

@@ -462,7 +462,7 @@ def make_config(
     """
     chat_history = SimpleNamespace(memory_path=memory_path)
     # Only 'model' field is read by token counter
-    models = [SimpleNamespace(model="gpt-4o")]
+    models = [SimpleNamespace(model="gpt-5")]
     azure_service = SimpleNamespace(
         endpoint=endpoint,
         key=key,

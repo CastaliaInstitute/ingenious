@@ -21,7 +21,7 @@ def _settings(use_semantic: bool = True) -> IngeniousSettings:
             api_key="K",
             base_url="https://oai",
         ),
-        ModelSettings(model="gpt-4o", deployment="chat", api_key="K", base_url="https://oai"),
+        ModelSettings(model="gpt-5", deployment="chat", api_key="K", base_url="https://oai"),
     ]
     s.azure_search_services = [
         AzureSearchSettings(

@@ -1,5 +1,4 @@
-"""
-Tests for ingenious.models.http_error module."""
+"""Tests for ingenious.models.http_error module."""
 
 import pytest
 from pydantic import ValidationError
@@ -28,34 +27,39 @@ class TestHTTPError:
     def test_detail_can_be_empty_string(self):
         """Test that detail can be an empty string."""
         error = HTTPError(detail="")
-        assert error.detail ==""
+        assert error.detail == ""
 
-    def test_model_serialization(self):."""Test HTTPError can be serialized to dict."""
+    def test_model_serialization(self):
+        """Test HTTPError can be serialized to dict."""
         error = HTTPError(detail="Internal server error")
         data = error.model_dump()
-        assert data == {."detail":."Internal server error"}
+        assert data == {"detail": "Internal server error"}
 
-    def test_model_validation_from_dict(self):."""Test HTTPError can be created from dict."""
-        data = {."detail":."Bad request"}
+    def test_model_validation_from_dict(self):
+        """Test HTTPError can be created from dict."""
+        data = {"detail": "Bad request"}
         error = HTTPError(**data)
-        assert error.detail =="Bad request"
+        assert error.detail == "Bad request"
 
-    def test_inherits_from_base_model(self):."""Test that HTTPError inherits from BaseModel."""
+    def test_inherits_from_base_model(self):
+        """Test that HTTPError inherits from BaseModel."""
         from pydantic import BaseModel
 
         error = HTTPError(detail="Test error")
         assert isinstance(error, BaseModel)
 
-    def test_model_fields(self):."""Test that the model has the expected fields."""
+    def test_model_fields(self):
+        """Test that the model has the expected fields."""
         error = HTTPError(detail="Test error")
         fields = error.model_fields
-        assert."detail" in fields
+        assert "detail" in fields
         assert len(fields) == 1
 
-    def test_model_json_serialization(self):."""Test HTTPError can be serialized to JSON."""
+    def test_model_json_serialization(self):
+        """Test HTTPError can be serialized to JSON."""
         error = HTTPError(detail="Test error")
         json_str = error.model_dump_json()
-        assert '"detail.":"Test error."' in json_str
+        assert '"detail.":"Test error"' in json_str
 
     def test_model_validation_error_message(self):
         """Test validation error provides helpful message."""
@@ -87,9 +91,9 @@ class TestHTTPError:
 
     def test_model_equality(self):
         """Test HTTPError model equality."""
-        error1 = HTTPError(detail="Same error.")
-        error2 = HTTPError(detail="Same error.")
-        error3 = HTTPError(detail="Different error.")
+        error1 = HTTPError(detail="Same error")
+        error2 = HTTPError(detail="Same error")
+        error3 = HTTPError(detail="Different error")
 
         assert error1 == error2
         assert error1 != error3

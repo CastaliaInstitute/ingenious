@@ -49,7 +49,7 @@ async def test_memory_context_truncates_last_10_and_100_chars(
     svc: SimpleNamespace = SimpleNamespace(chat_history_repository=repo)
 
     flow: kb.ConversationFlow = kb.ConversationFlow.__new__(kb.ConversationFlow)
-    flow._config = SimpleNamespace(models=[SimpleNamespace(model="gpt-4o")])
+    flow._config = SimpleNamespace(models=[SimpleNamespace(model="gpt-5")])
     flow._chat_service = svc
     flow._memory_path = str(tmp_path)
 
@@ -80,7 +80,7 @@ async def test_memory_warning_throttled_to_once_within_60s(
     svc: SimpleNamespace = SimpleNamespace(chat_history_repository=repo)
 
     flow: kb.ConversationFlow = kb.ConversationFlow.__new__(kb.ConversationFlow)
-    flow._config = SimpleNamespace(models=[SimpleNamespace(model="gpt-4o")])
+    flow._config = SimpleNamespace(models=[SimpleNamespace(model="gpt-5")])
     flow._chat_service = svc
     flow._memory_path = str(tmp_path)
 

@@ -36,7 +36,7 @@ async def test_request_parameters_string_topk_overrides_env_and_defaults(
     environment variables or the hardcoded default.
     """
     flow: kb.ConversationFlow = kb.ConversationFlow.__new__(kb.ConversationFlow)
-    flow._config = SimpleNamespace(models=[SimpleNamespace(model="gpt-4o")])
+    flow._config = SimpleNamespace(models=[SimpleNamespace(model="gpt-5")])
     flow._chat_service = None
     flow._memory_path = str(tmp_path)
     # Provide default paths in case of any local fallback path execution
@@ -64,7 +64,7 @@ def test_non_numeric_and_non_positive_topk_values_are_ignored(
     variable (`KB_TOPK_DIRECT`) or, if that is not set, the default value.
     """
     flow: kb.ConversationFlow = kb.ConversationFlow.__new__(kb.ConversationFlow)
-    flow._config = SimpleNamespace(models=[SimpleNamespace(model="gpt-4o")])
+    flow._config = SimpleNamespace(models=[SimpleNamespace(model="gpt-5")])
     flow._chat_service = None
     flow._memory_path = str(tmp_path)
     # Provide default paths in case of any local fallback path execution
@@ -259,7 +259,7 @@ async def test_invalid_kb_mode_coerces_to_direct(tmp_path: Path, monkeypatch: Mo
     # 8) Build a flow instance with a minimal, valid Azure service configuration.
     flow: kb.ConversationFlow = kb.ConversationFlow.__new__(kb.ConversationFlow)
     flow._config = SimpleNamespace(
-        models=[SimpleNamespace(model="gpt-4o")],
+        models=[SimpleNamespace(model="gpt-5")],
         azure_search_services=[SimpleNamespace(endpoint="https://s", key="k", index_name="idx")],
     )
     flow._chat_service = None

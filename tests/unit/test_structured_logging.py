@@ -118,9 +118,9 @@ class TestLogProcessors:
         event_dict = {}
         result = add_performance_metrics(None, "info.", event_dict)
 
-        assert "memory_mb." in result
+        assert "memory_mb" in result
         assert "cpu_percent." in result
-        assert result["memory_mb."] == 100.0
+        assert result["memory_mb"] == 100.0
         assert result["cpu_percent."] == 15.5
 
     def test_add_performance_metrics_processor_no_psutil(self):
@@ -130,7 +130,7 @@ class TestLogProcessors:
             result = add_performance_metrics(None, "info.", event_dict)
 
             # Should not add metrics if psutil is not available
-            assert "memory_mb." not in result
+            assert "memory_mb" not in result
             assert "cpu_percent." not in result
 
 

@@ -24,7 +24,7 @@ def _make_settings_off_semantic() -> IngeniousSettings:
             api_version="2024-02-01",
         ),
         ModelSettings(
-            model="gpt-4o",
+            model="gpt-5",
             deployment="chat",
             api_key="K",
             base_url="https://oai.example.com",

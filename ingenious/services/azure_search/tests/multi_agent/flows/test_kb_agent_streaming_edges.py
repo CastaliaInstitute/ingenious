@@ -135,7 +135,7 @@ async def test_stream_includes_taskresult_final_flush_content(
     monkeypatch.setattr(kb, "AssistantAgent", FakeAgent)
 
     flow: kb.ConversationFlow = kb.ConversationFlow.__new__(kb.ConversationFlow)
-    flow._config = SimpleNamespace(models=[SimpleNamespace(model="gpt-4o")])
+    flow._config = SimpleNamespace(models=[SimpleNamespace(model="gpt-5")])
     flow._chat_service = None
     flow._memory_path = str(tmp_path)
 
@@ -196,7 +196,7 @@ async def test_stream_emits_token_count_when_usage_missing_and_counter_errors(
     monkeypatch.setitem(sys.modules, "ingenious.utils.token_counter", tc)
 
     flow: kb.ConversationFlow = kb.ConversationFlow.__new__(kb.ConversationFlow)
-    flow._config = SimpleNamespace(models=[SimpleNamespace(model="gpt-4o")])
+    flow._config = SimpleNamespace(models=[SimpleNamespace(model="gpt-5")])
     flow._chat_service = None
     flow._memory_path = str(tmp_path)
 

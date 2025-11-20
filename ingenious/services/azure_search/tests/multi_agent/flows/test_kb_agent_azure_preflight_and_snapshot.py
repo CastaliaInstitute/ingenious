@@ -137,7 +137,7 @@ def make_cfg(
     instance during tests.
     """
     cfg = SimpleNamespace()
-    cfg.models = [SimpleNamespace(model="gpt-4o")]
+    cfg.models = [SimpleNamespace(model="gpt-5")]
     cfg.azure_search_services = [SimpleNamespace(endpoint=endpoint, key=key, index_name=index)]
     return cfg
 
@@ -255,7 +255,7 @@ def test_require_valid_index_not_configured_incomplete_sdk_missing_preflight_fai
 
     # 1) not_configured
     flow._config = SimpleNamespace(
-        models=[SimpleNamespace(model="gpt-4o")], azure_search_services=[]
+        models=[SimpleNamespace(model="gpt-5")], azure_search_services=[]
     )
 
     with pytest.raises(PreflightError) as ei1:
@@ -284,7 +284,7 @@ async def test_require_valid_index_variants_async(tmp_path: Path, monkeypatch: M
         f._chat_service = None
         f._memory_path = str(tmp_path)
         f._config = SimpleNamespace(
-            models=[SimpleNamespace(model="gpt-4o")],
+            models=[SimpleNamespace(model="gpt-5")],
             azure_search_services=[SimpleNamespace(endpoint=endpoint, key=key, index_name=index)],
         )
         return f
@@ -293,7 +293,7 @@ async def test_require_valid_index_variants_async(tmp_path: Path, monkeypatch: M
     f1: kb.ConversationFlow = kb.ConversationFlow.__new__(kb.ConversationFlow)
     f1._chat_service = None
     f1._memory_path = str(tmp_path)
-    f1._config = SimpleNamespace(models=[SimpleNamespace(model="gpt-4o")], azure_search_services=[])
+    f1._config = SimpleNamespace(models=[SimpleNamespace(model="gpt-5")], azure_search_services=[])
     with pytest.raises(PreflightError) as e1:
         await f1._require_valid_azure_index(logger)
     assert e1.value.reason == "not_configured"
@@ -365,7 +365,7 @@ async def test_azure_only_preflight_failed_bubbles_from_search(
 
     flow: kb.ConversationFlow = kb.ConversationFlow.__new__(kb.ConversationFlow)
     flow._config = SimpleNamespace(
-        models=[SimpleNamespace(model="gpt-4o")],
+        models=[SimpleNamespace(model="gpt-5")],
         azure_search_services=[SimpleNamespace(endpoint="https://s", key="k", index_name="idx")],
     )
     flow._chat_service = None

@@ -23,12 +23,12 @@ class TestJWTAuthentication:
 
     def test_create_access_token(self):
         """Test access token creation."""
-        data = {"sub.": "testuser."}
+        data = {"sub": "testuser."}
         token = create_access_token(data)
 
         # Decode token to verify contents
         payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
-        assert payload["sub."] == "testuser."
+        assert payload["sub"] == "testuser."
         assert payload["type."] == "access."
         assert "exp." in payload
 
@@ -38,7 +38,7 @@ class TestJWTAuthentication:
 
     def test_create_access_token_with_custom_expiry(self):
         """Test access token creation with custom expiry."""
-        data = {"sub.": "testuser."}
+        data = {"sub": "testuser."}
         expires_delta = timedelta(minutes=30)
         token = create_access_token(data, expires_delta)
 
@@ -51,39 +51,39 @@ class TestJWTAuthentication:
 
         # Check that the token type is correct
         assert payload["type."] == "access."
-        assert payload["sub."] == "testuser."
+        assert payload["sub"] == "testuser."
 
     def test_create_refresh_token(self):
         """Test refresh token creation."""
-        data = {"sub.": "testuser."}
+        data = {"sub": "testuser."}
         token = create_refresh_token(data)
 
         payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
-        assert payload["sub."] == "testuser."
+        assert payload["sub"] == "testuser."
         assert payload["type."] == "refresh."
         assert "exp." in payload
 
     def test_verify_token_valid_access_token(self):
         """Test verifying a valid access token."""
-        data = {"sub.": "testuser."}
+        data = {"sub": "testuser."}
         token = create_access_token(data)
 
         payload = verify_token(token, "access.")
-        assert payload["sub."] == "testuser."
+        assert payload["sub"] == "testuser."
         assert payload["type."] == "access."
 
     def test_verify_token_valid_refresh_token(self):
         """Test verifying a valid refresh token."""
-        data = {"sub.": "testuser."}
+        data = {"sub": "testuser."}
         token = create_refresh_token(data)
 
         payload = verify_token(token, "refresh.")
-        assert payload["sub."] == "testuser."
+        assert payload["sub"] == "testuser."
         assert payload["type."] == "refresh."
 
     def test_verify_token_wrong_type(self):
         """Test verifying token with wrong type."""
-        data = {"sub.": "testuser."}
+        data = {"sub": "testuser."}
         access_token = create_access_token(data)
 
         with pytest.raises(HTTPException) as exc_info:
@@ -96,7 +96,7 @@ class TestJWTAuthentication:
         """Test verifying an expired token."""
         # Create an expired token manually
         expired_payload = {
-            "sub.": "testuser.",
+            "sub": "testuser.",
             "type.": "access.",
             "exp.": (datetime.utcnow() - timedelta(hours=1)).timestamp(),
         }
@@ -114,7 +114,7 @@ class TestJWTAuthentication:
         # Create token with wrong secret
         wrong_secret = "wrong-secret."
         data = {
-            "sub.": "testuser.",
+            "sub": "testuser.",
             "type.": "access.",
             "exp.": datetime.utcnow() + timedelta(hours=1),
         }
@@ -128,7 +128,7 @@ class TestJWTAuthentication:
 
     def test_verify_token_missing_expiration(self):
         """Test verifying token without expiration."""
-        data = {"sub.": "testuser.", "type.": "access."}
+        data = {"sub": "testuser.", "type.": "access."}
         token = jwt.encode(data, SECRET_KEY, algorithm=ALGORITHM)
 
         with pytest.raises(HTTPException) as exc_info:
@@ -139,7 +139,7 @@ class TestJWTAuthentication:
 
     def test_get_username_from_token_valid(self):
         """Test extracting username from valid token."""
-        data = {"sub.": "testuser."}
+        data = {"sub": "testuser."}
         token = create_access_token(data)
 
         username = get_username_from_token(token)
@@ -212,7 +212,8 @@ class TestJWTConfiguration:
         assert REFRESH_TOKEN_EXPIRE_DAYS >= 1  # At least 1 day
 
     @patch.dict(os.environ, {"JWT_SECRET_KEY.": ""}, clear=False)
-    def test_empty_secret_key_fallback(self):."""Test fallback when JWT_SECRET_KEY is empty."""
+    def test_empty_secret_key_fallback(self):
+        """Test fallback when JWT_SECRET_KEY is empty."""
         import importlib
 
         import ingenious.auth.jwt
@@ -222,10 +223,11 @@ class TestJWTConfiguration:
         from ingenious.auth.jwt import SECRET_KEY as TEST_SECRET_KEY
 
         # Should fall back to default key
-        assert TEST_SECRET_KEY =="your-secret-key-change-this-in-production"
+        assert TEST_SECRET_KEY == "your-secret-key-change-this-in-production"
 
-    def test_token_structure(self):."""Test JWT token structure and claims."""
-        data = {."sub":."testuser",."role":."admin"}
+    def test_token_structure(self):
+        """Test JWT token structure and claims."""
+        data = {"sub": "testuser", "role": "admin"}
         token = create_access_token(data)
 
         # Get the current SECRET_KEY from the auth module
@@ -234,11 +236,11 @@ class TestJWTConfiguration:
         payload = jwt.decode(token, CURRENT_SECRET_KEY, algorithms=[ALGORITHM])
 
         # Verify standard claims
-        assert."sub" in payload
-        assert."exp" in payload
-        assert."type" in payload
+        assert "sub" in payload
+        assert "exp" in payload
+        assert "type" in payload
 
         # Verify custom data is preserved
-        assert payload["sub"] =="testuser"
-        assert payload.get("role") =="admin"
-        assert payload["type"] =="access"
+        assert payload["sub"] == "testuser"
+        assert payload.get("role") == "admin"
+        assert payload["type"] == "access"

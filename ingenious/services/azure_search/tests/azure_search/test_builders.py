@@ -60,7 +60,7 @@ def test_build_search_config_maps_and_validates(monkeypatch: MonkeyPatch) -> Non
             api_version="2024-02-01",
         ),
         ModelSettings(
-            model="gpt-4o",
+            model="gpt-5",
             deployment="chat",
             api_key="K2",
             base_url="https://oai",
@@ -93,7 +93,7 @@ def test_build_search_config_errors() -> None:
     or if critical fields like endpoint, key, or index name are empty.
     """
     models: list[ModelSettings] = [
-        ModelSettings(model="gpt-4o", deployment="chat", api_key="k", base_url="https://o")
+        ModelSettings(model="gpt-5", deployment="chat", api_key="k", base_url="https://o")
     ]
     with pytest.raises(ConfigError):
         build_search_config_from_settings(_settings(models, None))
@@ -130,7 +130,7 @@ def test_pick_models_selection_and_require_deployments(
     with pytest.raises(ConfigError):
         _pick_models(
             _settings(
-                [ModelSettings(model="gpt-4o", deployment="", api_key="k", base_url="https://o")],
+                [ModelSettings(model="gpt-5", deployment="", api_key="k", base_url="https://o")],
                 AzureSearchSettings(service="s", endpoint="https://e", key="k", index_name="i"),
             )
         )

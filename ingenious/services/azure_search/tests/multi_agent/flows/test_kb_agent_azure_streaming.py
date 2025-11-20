@@ -51,7 +51,7 @@ def _make_flow(tmp_path: Any) -> Any:
 
     # Minimal config expected by ConversationFlow.
     config = SimpleNamespace(
-        models=[SimpleNamespace(model="gpt-4o")],
+        models=[SimpleNamespace(model="gpt-5")],
         azure_search_services=[
             SimpleNamespace(
                 endpoint="https://search.example.net",

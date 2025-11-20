@@ -41,8 +41,8 @@ def _settings(**overrides: Any) -> SimpleNamespace:
                 endpoint="https://aoai.example.com",
                 key="x",
                 api_version="2024-02-15-preview",
-                deployment="gpt-4o",
-                model="gpt-4o",
+                deployment="gpt-5",
+                model="gpt-5",
             ),
             # Embedding model WITHOUT deployment (this is the case we want to fail)
             SimpleNamespace(
@@ -89,7 +89,7 @@ def test_pick_models_requires_embedding_deployment() -> None:
 @pytest.mark.parametrize(
     "embed_dep, chat_dep, should_raise",
     [
-        ("emb-001", "gpt-4o", False),  # different deployments — OK
+        ("emb-001", "gpt-5", False),  # different deployments — OK
         (
             "shared-dep",
             "shared-dep",
@@ -124,7 +124,7 @@ def test_builder_rejects_same_deployments_for_embed_and_chat(
                 key="x",
                 api_version="2024-02-15-preview",
                 deployment=chat_dep,
-                model="gpt-4o",
+                model="gpt-5",
             ),
         ]
     )

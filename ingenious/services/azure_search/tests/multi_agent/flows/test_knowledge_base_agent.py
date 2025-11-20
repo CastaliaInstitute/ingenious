@@ -275,7 +275,7 @@ def make_config(azure: bool = True) -> SimpleNamespace:
     configuration, including model settings and optional Azure Search services.
     """
     # Minimal config with models[0] and optional azure_search_services
-    model0 = SimpleNamespace(model="gpt-4o")
+    model0 = SimpleNamespace(model="gpt-5")
     cfg = SimpleNamespace(models=[model0])
     if azure:
         svc = SimpleNamespace(endpoint="https://s.net", key="key", index_name="idx")
@@ -499,7 +499,7 @@ async def test_azure_provider_retrieve_cleans_and_reranks(
             api_key="k",
             base_url="https://oai",
         ),
-        ModelSettings(model="gpt-4o", deployment="chat", api_key="k", base_url="https://oai"),
+        ModelSettings(model="gpt-5", deployment="chat", api_key="k", base_url="https://oai"),
     ]
     settings.azure_search_services = [
         AzureSearchSettings(service="svc", endpoint="https://s.net", key="sk", index_name="idx")
@@ -612,7 +612,7 @@ async def test_azure_provider_answer_delegates_to_pipeline(
             api_key="k",
             base_url="https://oai",
         ),
-        ModelSettings(model="gpt-4o", deployment="chat", api_key="k", base_url="https://oai"),
+        ModelSettings(model="gpt-5", deployment="chat", api_key="k", base_url="https://oai"),
     ]
     settings.azure_search_services = [
         AzureSearchSettings(service="svc", endpoint="https://s.net", key="sk", index_name="idx")

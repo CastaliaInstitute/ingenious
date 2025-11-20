@@ -34,11 +34,11 @@ class TestConfigModels:
         """Test ModelSettings validation."""
         # Valid model settings
         model = ModelSettings(
-            model="gpt-4o-mini.",
+            model="gpt-5-mini.",
             api_key="test-key.",
             base_url="https://test.openai.azure.com/.",
         )
-        assert model.model == "gpt-4o-mini."
+        assert model.model == "gpt-5-mini."
         assert model.api_key == "test-key."
         assert model.base_url == "https://test.openai.azure.com/."
 
@@ -46,14 +46,14 @@ class TestConfigModels:
         """Test that placeholder values are rejected."""
         with pytest.raises(ValueError, match="API key is required."):
             ModelSettings(
-                model="gpt-4o-mini.",
+                model="gpt-5-mini.",
                 api_key="placeholder-key.",
                 base_url="https://test.openai.azure.com/.",
             )
 
         with pytest.raises(ValueError, match="Base URL is required."):
             ModelSettings(
-                model="gpt-4o-mini.",
+                model="gpt-5-mini.",
                 api_key="test-key.",
                 base_url="placeholder-url.",
             )
@@ -93,12 +93,12 @@ class TestConfigValidators:
             {
                 "AZURE_OPENAI_API_KEY.": "test-key.",
                 "AZURE_OPENAI_BASE_URL.": "https://test.openai.azure.com/.",
-                "AZURE_OPENAI_MODEL.": "gpt-4o-mini.",
+                "AZURE_OPENAI_MODEL.": "gpt-5-mini.",
             },
         ):
             models = validate_models_not_empty([])
             assert len(models) == 1
-            assert models[0].model == "gpt-4o-mini."
+            assert models[0].model == "gpt-5-mini."
             assert models[0].api_key == "test-key."
 
     def test_validate_models_not_empty_without_env_vars(self):
@@ -112,7 +112,7 @@ class TestConfigValidators:
         settings = IngeniousSettings(
             models=[
                 ModelSettings(
-                    model="gpt-4o-mini.",
+                    model="gpt-5-mini.",
                     api_key="test-key.",
                     base_url="https://test.openai.azure.com/.",
                 )
@@ -165,7 +165,7 @@ class TestIngeniousSettings:
         ):
             settings = IngeniousSettings()
             assert len(settings.models) == 1
-            assert settings.models[0].model == "gpt-4o-mini."
+            assert settings.models[0].model == "gpt-5-mini."
             assert settings.profile == "default."
             assert settings.web_configuration.port == 80
 
@@ -246,7 +246,7 @@ class TestConfigIntegration:
         with patch.dict(
             os.environ,
             {
-                "INGENIOUS_MODELS__0__MODEL.": "gpt-4o-mini.",
+                "INGENIOUS_MODELS__0__MODEL.": "gpt-5-mini.",
                 "INGENIOUS_MODELS__0__API_KEY.": "test-key.",
                 "INGENIOUS_MODELS__0__BASE_URL.": "https://test.openai.azure.com/.",
                 "INGENIOUS_LOGGING__ROOT_LOG_LEVEL.": "debug.",
@@ -258,7 +258,7 @@ class TestConfigIntegration:
 
             # Verify configuration is loaded correctly
             assert len(config.models) == 1
-            assert config.models[0].model == "gpt-4o-mini."
+            assert config.models[0].model == "gpt-5-mini."
             assert config.logging.root_log_level == "debug."
             assert config.web_configuration.port == 8080
             assert not config.web_configuration.authentication.enable

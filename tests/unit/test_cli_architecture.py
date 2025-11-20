@@ -1,8 +1,8 @@
-"""
-Tests for the CLI architecture components.
+"""Tests for the CLI architecture components.
 
 This module tests the BaseCommand class, CommandRegistry, and shared utilities
-to ensure the refactored CLI architecture works correctly."""
+to ensure the refactored CLI architecture works correctly.
+"""
 
 import os
 import tempfile
@@ -33,7 +33,7 @@ class FailingCommand(BaseCommand):
     def execute(self, should_fail: bool = True, **kwargs: Any) -> None:
         """Test execute method that fails."""
         if should_fail:
-            raise CommandError("Test error.", ExitCode.VALIDATION_ERROR)
+            raise CommandError("Test error", ExitCode.VALIDATION_ERROR)
 
 
 class TestBaseCommand:
@@ -52,7 +52,7 @@ class TestBaseCommand:
     def test_command_initialization(self):
         """Test that BaseCommand initializes correctly."""
         assert self.command.console == self.console
-        assert hasattr(self.command, "logger.")
+        assert hasattr(self.command, "logger")
         assert self.command._progress is None
 
     def test_successful_execution(self):
@@ -105,7 +105,7 @@ class TestBaseCommand:
         assert os.getenv("TEST_ENV_VALUE.") == "123."
 
     def test_load_env_file_missing_path(self, tmp_path):
-        """Test that missing environment files raise a CommandError."""
+        """Test that missing environment files raise a CommandError"""
         missing = tmp_path / "does-not-exist.env."
 
         with pytest.raises(CommandError) as exc:
@@ -130,9 +130,7 @@ class TestCommandRegistry:
 
     def test_register_command(self):
         """Test command registration."""
-        self.registry.register_command(
-            "test.", TestCommand, "Test command.", "test_module."
-        )
+        self.registry.register_command("test.", TestCommand, "Test command.", "test_module.")
 
         assert "test." in self.registry._commands
         command_info = self.registry.get_command("test.")
@@ -155,9 +153,7 @@ class TestCommandRegistry:
         self.registry.register_command("test.", TestCommand, "First command.")
 
         # Force override
-        self.registry.register_command(
-            "test.", FailingCommand, "Second command.", force=True
-        )
+        self.registry.register_command("test.", FailingCommand, "Second command.", force=True)
 
         command_info = self.registry.get_command("test.")
         assert command_info.command_class == FailingCommand
@@ -183,7 +179,7 @@ class TestFileOperations:
     def test_ensure_directory(self):
         """Test directory creation."""
         with tempfile.TemporaryDirectory() as temp_dir:
-            test_dir = Path(temp_dir) / "test_subdir."
+            test_dir = Path(temp_dir) / "test_subdir"
 
             result = FileOperations.ensure_directory(test_dir)
 
@@ -221,7 +217,7 @@ class TestValidationUtils:
         # Invalid ports
         assert ValidationUtils.validate_port(0)[0] is False
         assert ValidationUtils.validate_port(65536)[0] is False
-        assert ValidationUtils.validate_port("not_a_number.")[0] is False
+        assert ValidationUtils.validate_port("not_a_number")[0] is False
 
     def test_validate_url(self):
         """Test URL validation."""
@@ -234,44 +230,55 @@ class TestValidationUtils:
         assert ValidationUtils.validate_url("")[0] is False
 
 
-class TestHelpCommand:."""Test cases for HelpCommand."""
+class TestHelpCommand:
+    """Test cases for HelpCommand."""
 
-    def setup_method(self):."""Set up test fixtures."""
+    def setup_method(self):
+        """Set up test fixtures."""
         self.console = Mock(spec=Console)
         self.command = HelpCommand(self.console)
 
-    def test_general_help(self):."""Test general help display."""
+    def test_general_help(self):
+        """Test general help display."""
         self.command.execute()
 
         # Verify console.print was called multiple times
         assert self.console.print.call_count > 0
 
-    def test_specific_help_topics(self):."""Test specific help topics."""
-        topics = ["setup",."workflows",."config",."deployment"]
+    def test_specific_help_topics(self):
+        """Test specific help topics."""
+        topics = ["setup", "workflows", "config", "deployment"]
 
         for topic in topics:
             self.console.reset_mock()
             self.command.execute(topic=topic)
             assert self.console.print.call_count > 0
 
-    def test_invalid_help_topic(self):."""Test invalid help topic handling."""
+    def test_invalid_help_topic(self):
+        """Test invalid help topic handling."""
         with pytest.raises(CommandError):
             self.command.execute(topic="invalid_topic")
 
 
-class TestStatusCommand:."""Test cases for StatusCommand."""
+class TestStatusCommand:
+    """Test cases for StatusCommand."""
 
-    def setup_method(self):."""Set up test fixtures."""
+    def setup_method(self):
+        """Set up test fixtures."""
         self.console = Mock(spec=Console)
         self.command = StatusCommand(self.console)
 
     @patch.dict(
         os.environ,
-        {."INGENIOUS_MODELS__0__API_KEY":."test-key",."INGENIOUS_MODELS__0__BASE_URL":."https://example.com",."INGENIOUS_MODELS__0__MODEL":."gpt-4o-mini",
+        {
+            "INGENIOUS_MODELS__0__API_KEY": "test-key",
+            "INGENIOUS_MODELS__0__BASE_URL": "https://example.com",
+            "INGENIOUS_MODELS__0__MODEL": "gpt-5-mini",
         },
     )
     @patch("pathlib.Path.exists")
-    def test_status_check(self, mock_exists):."""Test status checking."""
+    def test_status_check(self, mock_exists):
+        """Test status checking."""
         mock_exists.return_value = True
 
         self.command.execute()
@@ -281,5 +288,5 @@ class TestStatusCommand:."""Test cases for StatusCommand."""
 
 
 # Run tests if script is executed directly
-if __name__ =="__main__":
+if __name__ == "__main__":
     pytest.main([__file__])

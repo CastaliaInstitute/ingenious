@@ -126,7 +126,7 @@ def make_config(
     real application configuration, providing necessary details for Azure Search.
     """
     cfg = SimpleNamespace()
-    cfg.models = [SimpleNamespace(model="gpt-4o")]
+    cfg.models = [SimpleNamespace(model="gpt-5")]
     cfg.azure_search_services = [
         SimpleNamespace(
             endpoint=endpoint,

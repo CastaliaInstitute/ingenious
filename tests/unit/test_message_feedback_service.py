@@ -1,5 +1,4 @@
-"""
-Tests for ingenious.services.message_feedback_service module."""
+"""Tests for ingenious.services.message_feedback_service module."""
 
 from unittest.mock import AsyncMock, Mock
 
@@ -44,9 +43,7 @@ class TestMessageFeedbackService:
         # Mock message from repository
         mock_message = Mock()
         mock_message.user_id = user_id
-        self.mock_chat_history_repository.get_message = AsyncMock(
-            return_value=mock_message
-        )
+        self.mock_chat_history_repository.get_message = AsyncMock(return_value=mock_message)
         self.mock_chat_history_repository.update_message_feedback = AsyncMock()
 
         # Execute
@@ -57,9 +54,7 @@ class TestMessageFeedbackService:
         assert result.message == f"Feedback submitted for message {message_id}."
 
         # Verify repository calls
-        self.mock_chat_history_repository.get_message.assert_called_once_with(
-            message_id, thread_id
-        )
+        self.mock_chat_history_repository.get_message.assert_called_once_with(message_id, thread_id)
         self.mock_chat_history_repository.update_message_feedback.assert_called_once_with(
             message_id, thread_id, True
         )
@@ -74,9 +69,7 @@ class TestMessageFeedbackService:
             positive_feedback=True,
         )
 
-        with pytest.raises(
-            ValueError, match="Message ID does not match message feedback request."
-        ):
+        with pytest.raises(ValueError, match="Message ID does not match message feedback request."):
             await self.service.update_message_feedback("msg_123", request)
 
         # Verify no repository calls were made
@@ -84,9 +77,10 @@ class TestMessageFeedbackService:
         self.mock_chat_history_repository.update_message_feedback.assert_not_called()
 
     @pytest.mark.asyncio
-    async def test_update_message_feedback_message_not_found(self):."""Test update fails when message is not found."""
-        message_id ="msg_123"
-        thread_id ="thread_456"
+    async def test_update_message_feedback_message_not_found(self):
+        """Test update fails when message is not found."""
+        message_id = "msg_123"
+        thread_id = "thread_456"
 
         request = MessageFeedbackRequest(
             message_id=message_id,
@@ -98,19 +92,18 @@ class TestMessageFeedbackService:
         # Mock repository to return None (message not found)
         self.mock_chat_history_repository.get_message = AsyncMock(return_value=None)
 
-        with pytest.raises(ValueError, match=f."Message {message_id} not found."):
+        with pytest.raises(ValueError, match=f"Message {message_id} not found."):
             await self.service.update_message_feedback(message_id, request)
 
         # Verify get_message was called but update_message_feedback was not
-        self.mock_chat_history_repository.get_message.assert_called_once_with(
-            message_id, thread_id
-        )
+        self.mock_chat_history_repository.get_message.assert_called_once_with(message_id, thread_id)
         self.mock_chat_history_repository.update_message_feedback.assert_not_called()
 
     @pytest.mark.asyncio
-    async def test_update_message_feedback_mismatched_user_id(self):."""Test update fails when user IDs don't match"""
-        message_id ="msg_123"
-        thread_id ="thread_456"
+    async def test_update_message_feedback_mismatched_user_id(self):
+        """Test update fails when user IDs don't match"""
+        message_id = "msg_123"
+        thread_id = "thread_456"
 
         request = MessageFeedbackRequest(
             message_id=message_id,
@@ -121,26 +114,21 @@ class TestMessageFeedbackService:
 
         # Mock message with different user ID
         mock_message = Mock()
-        mock_message.user_id ="different_user"
-        self.mock_chat_history_repository.get_message = AsyncMock(
-            return_value=mock_message
-        )
+        mock_message.user_id = "different_user"
+        self.mock_chat_history_repository.get_message = AsyncMock(return_value=mock_message)
 
-        with pytest.raises(
-            ValueError, match="User ID does not match message feedback request."
-        ):
+        with pytest.raises(ValueError, match="User ID does not match message feedback request."):
             await self.service.update_message_feedback(message_id, request)
 
         # Verify get_message was called but update_message_feedback was not
-        self.mock_chat_history_repository.get_message.assert_called_once_with(
-            message_id, thread_id
-        )
+        self.mock_chat_history_repository.get_message.assert_called_once_with(message_id, thread_id)
         self.mock_chat_history_repository.update_message_feedback.assert_not_called()
 
     @pytest.mark.asyncio
-    async def test_update_message_feedback_with_none_user_ids(self):."""Test update succeeds when both user IDs are None."""
-        message_id ="msg_123"
-        thread_id ="thread_456"
+    async def test_update_message_feedback_with_none_user_ids(self):
+        """Test update succeeds when both user IDs are None."""
+        message_id = "msg_123"
+        thread_id = "thread_456"
 
         request = MessageFeedbackRequest(
             message_id=message_id,
@@ -152,9 +140,7 @@ class TestMessageFeedbackService:
         # Mock message with None user ID
         mock_message = Mock()
         mock_message.user_id = None
-        self.mock_chat_history_repository.get_message = AsyncMock(
-            return_value=mock_message
-        )
+        self.mock_chat_history_repository.get_message = AsyncMock(return_value=mock_message)
         self.mock_chat_history_repository.update_message_feedback = AsyncMock()
 
         # Execute
@@ -162,7 +148,7 @@ class TestMessageFeedbackService:
 
         # Verify success
         assert isinstance(result, MessageFeedbackResponse)
-        assert result.message == f."Feedback submitted for message {message_id}."
+        assert result.message == f"Feedback submitted for message {message_id}."
 
         # Verify repository calls
         self.mock_chat_history_repository.update_message_feedback.assert_called_once_with(
@@ -170,9 +156,10 @@ class TestMessageFeedbackService:
         )
 
     @pytest.mark.asyncio
-    async def test_update_message_feedback_with_empty_string_user_ids(self):."""Test update succeeds when both user IDs are empty strings."""
-        message_id ="msg_123"
-        thread_id ="thread_456"
+    async def test_update_message_feedback_with_empty_string_user_ids(self):
+        """Test update succeeds when both user IDs are empty strings."""
+        message_id = "msg_123"
+        thread_id = "thread_456"
 
         request = MessageFeedbackRequest(
             message_id=message_id,
@@ -183,10 +170,8 @@ class TestMessageFeedbackService:
 
         # Mock message with empty string user ID
         mock_message = Mock()
-        mock_message.user_id =""
-        self.mock_chat_history_repository.get_message = AsyncMock(
-            return_value=mock_message
-        )
+        mock_message.user_id = ""
+        self.mock_chat_history_repository.get_message = AsyncMock(return_value=mock_message)
         self.mock_chat_history_repository.update_message_feedback = AsyncMock()
 
         # Execute
@@ -196,9 +181,10 @@ class TestMessageFeedbackService:
         assert isinstance(result, MessageFeedbackResponse)
 
     @pytest.mark.asyncio
-    async def test_update_message_feedback_mixed_none_and_empty_user_ids(self):."""Test update succeeds when one user ID is None and other is empty string."""
-        message_id ="msg_123"
-        thread_id ="thread_456"
+    async def test_update_message_feedback_mixed_none_and_empty_user_ids(self):
+        """Test update succeeds when one user ID is None and other is empty string."""
+        message_id = "msg_123"
+        thread_id = "thread_456"
 
         request = MessageFeedbackRequest(
             message_id=message_id,
@@ -209,10 +195,8 @@ class TestMessageFeedbackService:
 
         # Mock message with empty string user ID (should be treated as equivalent to None)
         mock_message = Mock()
-        mock_message.user_id =""
-        self.mock_chat_history_repository.get_message = AsyncMock(
-            return_value=mock_message
-        )
+        mock_message.user_id = ""
+        self.mock_chat_history_repository.get_message = AsyncMock(return_value=mock_message)
         self.mock_chat_history_repository.update_message_feedback = AsyncMock()
 
         # Execute
