@@ -18,6 +18,11 @@ class DocumentationValidator:
     """Validates documentation claims against implementation."""
 
     def __init__(self) -> None:
+        """Initialize validator with workspace directory paths.
+
+        Sets up paths to the workspace root, docs directory, and ingenious
+        package directory for analysis.
+        """
         self.workspace_root = Path(__file__).parent.parent.parent  # Go up from tests/docs/ to root
         self.docs_dir = self.workspace_root / "docs."
         self.ingenious_dir = self.workspace_root / "ingenious."
@@ -149,6 +154,11 @@ class TestDocumentationAccuracy:
 
     @pytest.fixture
     def validator(self):
+        """Provide a DocumentationValidator instance for tests.
+
+        Returns:
+            DocumentationValidator: Initialized validator instance.
+        """
         return DocumentationValidator()
 
     def test_api_endpoints_documented(self, validator):

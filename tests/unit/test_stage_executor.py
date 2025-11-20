@@ -20,12 +20,28 @@ class MockActionCallable(IActionCallable):
     """Mock implementation of IActionCallable for testing."""
 
     def __init__(self, delay: float = 0.0, should_fail: bool = False):
+        """Initialize MockActionCallable with delay and failure settings.
+
+        Args:
+            delay: Simulated delay in seconds before action completion.
+            should_fail: Whether the action should raise an exception.
+        """
         self.delay = delay
         self.should_fail = should_fail
         self.call_count = 0
         self.last_kwargs: dict[str, Any] = {}
 
     async def __call__(self, progress: ProgressConsoleWrapper, task_id: TaskID, **kwargs) -> None:
+        """Execute the mock action with optional delay and failure simulation.
+
+        Args:
+            progress: Progress wrapper for status updates.
+            task_id: Unique identifier for the task in progress.
+            **kwargs: Additional keyword arguments to store for inspection.
+
+        Raises:
+            Exception: If should_fail is True, raises a mock failure exception.
+        """
         self.call_count += 1
         self.last_kwargs = kwargs
         if self.delay > 0:
