@@ -1,3 +1,5 @@
+"""Azure SQL Database client builder with connection management."""
+
 from typing import Optional
 
 import pyodbc
@@ -13,6 +15,11 @@ class AzureSqlClientBuilder(AzureClientBuilder):
     """Builder for Azure SQL clients with multiple authentication methods."""
 
     def __init__(self, sql_config: AzureSqlSettings):
+        """Initialize Azure SQL client builder.
+
+        Args:
+            sql_config: Azure SQL configuration settings
+        """
         # Extract authentication parameters from config
         auth_config = self._create_auth_config_from_sql_config(sql_config)
         super().__init__(auth_config=auth_config)
@@ -57,6 +64,18 @@ class AzureSqlClientBuilderWithAuth(AzureClientBuilder):
         client_secret: Optional[str] = None,
         tenant_id: Optional[str] = None,
     ):
+        """Initialize Azure SQL client builder with explicit authentication.
+
+        Args:
+            server: Azure SQL server name
+            database: Database name
+            authentication_method: Authentication method to use
+            username: Username for authentication
+            password: Password for authentication
+            client_id: Client ID for authentication
+            client_secret: Client secret for authentication
+            tenant_id: Tenant ID for authentication
+        """
         super().__init__()
         self.server = server
         self.database = database

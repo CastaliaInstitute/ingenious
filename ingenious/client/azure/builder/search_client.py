@@ -1,3 +1,5 @@
+"""Azure AI Search client builder with authentication support."""
+
 from typing import Optional
 
 from azure.search.documents import SearchClient
@@ -15,6 +17,12 @@ class AzureSearchClientBuilder(AzureClientBuilder):
         search_config: AzureSearchSettings,
         index_name: Optional[str] = None,
     ):
+        """Initialize Azure Search client builder.
+
+        Args:
+            search_config: Azure Search configuration settings
+            index_name: Name of the search index
+        """
         # Extract authentication parameters from config
         auth_config = self._create_auth_config_from_search_config(search_config)
         super().__init__(auth_config=auth_config)

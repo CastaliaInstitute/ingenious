@@ -1,3 +1,5 @@
+"""Azure Cosmos DB client builder with authentication."""
+
 from azure.cosmos import CosmosClient
 
 from ingenious.client.azure.builder.base import AzureClientBuilder
@@ -10,6 +12,11 @@ class CosmosClientBuilder(AzureClientBuilder):
     """Builder for Azure Cosmos DB clients with multiple authentication methods."""
 
     def __init__(self, cosmos_config: CosmosSettings):
+        """Initialize Cosmos DB client builder.
+
+        Args:
+            cosmos_config: Cosmos DB configuration settings
+        """
         auth_config = self._create_auth_config_from_chat_history_config(cosmos_config)
         super().__init__(auth_config=auth_config)
         self.uri = cosmos_config.uri

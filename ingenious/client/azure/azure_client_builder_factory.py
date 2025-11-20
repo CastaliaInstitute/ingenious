@@ -303,6 +303,7 @@ class AzureClientFactory:
         """Create an Azure Cosmos DB client.
 
         Args:
+            cosmos_config: Cosmos DB configuration settings
             endpoint: Cosmos DB endpoint URL
             authentication_method: Authentication method to use
             api_key: API key for TOKEN authentication
@@ -371,6 +372,10 @@ class AzureClientFactory:
             index_name: Name of the search index
             api_key: Azure Search service API key
             service: Azure Search service name (optional)
+            authentication_method: Authentication method to use
+            client_id: Client ID for authentication
+            client_secret: Client secret for authentication
+            tenant_id: Tenant ID for authentication
 
         Returns:
             SearchClient: Configured Azure Search client
