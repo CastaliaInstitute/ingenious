@@ -154,3 +154,4 @@ test_dir/
 azure_integration_test/
 server_log.txt
 test_*.json
+prompts/
