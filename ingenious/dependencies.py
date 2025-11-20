@@ -51,6 +51,11 @@ def get_config() -> IngeniousSettings:
 
 
 def get_openai_service() -> OpenAIService:
+    """Get OpenAI service instance configured with the first model from settings.
+
+    Returns:
+        OpenAIService: Configured OpenAI service instance.
+    """
     config = get_config()
     model = config.models[0]
     return OpenAIService(
@@ -67,6 +72,14 @@ def get_openai_service() -> OpenAIService:
 
 
 def get_chat_history_repository() -> ChatHistoryRepository:
+    """Get chat history repository instance configured with the database type from settings.
+
+    Returns:
+        ChatHistoryRepository: Configured chat history repository.
+
+    Raises:
+        ConfigurationError: If the configured database type is invalid.
+    """
     config = get_config()
     db_type_val = config.chat_history.database_type.lower()
     try:
@@ -92,6 +105,21 @@ def get_security_service(
     token: Annotated[str, Depends(bearer_security)] | None = None,
     credentials: Annotated[HTTPBasicCredentials, Depends(security)] | None = None,
 ) -> str:
+    """Authenticate user via JWT token or basic auth credentials.
+
+    Tries JWT token first, then falls back to basic auth for backward compatibility.
+    Returns anonymous user if authentication is disabled.
+
+    Args:
+        token: JWT bearer token from Authorization header.
+        credentials: HTTP basic auth credentials.
+
+    Returns:
+        str: Username of authenticated user or "anonymous" if auth is disabled.
+
+    Raises:
+        HTTPException: If authentication fails or no credentials provided when required.
+    """
     config = get_config()
     if not config.web_configuration.authentication.enable:
         # Authentication is disabled, allow access without checking credentials
@@ -167,6 +195,15 @@ def get_chat_service(
     chat_history_repository: Annotated[ChatHistoryRepository, Depends(get_chat_history_repository)],
     conversation_flow: str = "",
 ) -> ChatService:
+    """Get chat service instance configured with the specified conversation flow.
+
+    Args:
+        chat_history_repository: Repository for chat history persistence.
+        conversation_flow: Optional conversation flow pattern to use.
+
+    Returns:
+        ChatService: Configured chat service instance.
+    """
     config = get_config()
     cs_type = config.chat_service.type
     return ChatService(
@@ -180,10 +217,23 @@ def get_chat_service(
 def get_message_feedback_service(
     chat_history_repository: Annotated[ChatHistoryRepository, Depends(get_chat_history_repository)],
 ) -> MessageFeedbackService:
+    """Get message feedback service instance.
+
+    Args:
+        chat_history_repository: Repository for chat history persistence.
+
+    Returns:
+        MessageFeedbackService: Message feedback service instance.
+    """
     return MessageFeedbackService(chat_history_repository)
 
 
 async def sync_templates() -> None:
+    """Synchronize template files from remote storage to local filesystem.
+
+    Downloads template files from remote file storage and writes them to the local
+    templates directory. Skips synchronization if storage type is already local.
+    """
     config = get_config()
     if config.file_storage.revisions.storage_type == "local":
         return
@@ -201,16 +251,31 @@ async def sync_templates() -> None:
 
 
 def get_file_storage_data() -> FileStorage:
+    """Get file storage instance for data category.
+
+    Returns:
+        FileStorage: File storage instance configured for data files.
+    """
     config = get_config()
     return FileStorage(config, Category="data")
 
 
 def get_file_storage_revisions() -> FileStorage:
+    """Get file storage instance for revisions category.
+
+    Returns:
+        FileStorage: File storage instance configured for revision files.
+    """
     config = get_config()
     return FileStorage(config, Category="revisions")
 
 
 def get_project_config() -> IngeniousSettings:
+    """Get project configuration settings.
+
+    Returns:
+        IngeniousSettings: Current project configuration.
+    """
     return get_config()
 
 

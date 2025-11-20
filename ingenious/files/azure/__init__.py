@@ -1,3 +1,5 @@
+"""Azure Blob Storage file repository implementation."""
+
 from pathlib import Path
 
 from azure.identity import (
@@ -19,7 +21,20 @@ logger = get_logger(__name__)
 
 
 class azure_FileStorageRepository(IFileStorage):
+    """Azure Blob Storage implementation of the file storage interface.
+
+    Provides file operations (read, write, delete, list) using Azure Blob Storage
+    with support for multiple authentication methods including tokens, client secrets,
+    managed identity, and default credentials.
+    """
+
     def __init__(self, config: IngeniousSettings, fs_config: FileStorageContainerSettings):
+        """Initialize Azure file storage repository with authentication.
+
+        Args:
+            config: The ingenious settings configuration.
+            fs_config: File storage container configuration including authentication details.
+        """
         self.config = config
         self.fs_config = fs_config
         self.url = fs_config.url

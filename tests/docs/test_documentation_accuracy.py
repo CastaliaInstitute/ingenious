@@ -15,7 +15,7 @@ import pytest
 
 
 class DocumentationValidator:
-    """Validates documentation claims against implementation"""
+    """Validates documentation claims against implementation."""
 
     def __init__(self) -> None:
         """Initialize validator with workspace directory paths.
@@ -28,7 +28,7 @@ class DocumentationValidator:
         self.ingenious_dir = self.workspace_root / "ingenious"
 
     def extract_api_endpoints_from_code(self) -> Dict[str, List[Tuple[str, str]]]:
-        """Extract API endpoints from route files"""
+        """Extract API endpoints from route files."""
         endpoints = {}
         routes_dir = self.ingenious_dir / "api" / "routes"
 
@@ -49,7 +49,7 @@ class DocumentationValidator:
         return endpoints
 
     def extract_cli_commands_from_code(self) -> Set[str]:
-        """Extract CLI commands from the CLI module"""
+        """Extract CLI commands from the CLI module."""
         commands = set()
         cli_dir = self.ingenious_dir / "cli"
 
@@ -73,7 +73,7 @@ class DocumentationValidator:
         return commands
 
     def extract_environment_variables_from_code(self) -> Set[str]:
-        """Extract environment variable names from settings classes"""
+        """Extract environment variable names from settings classes."""
         env_vars = set()
         config_dir = self.ingenious_dir / "config"
 
@@ -90,7 +90,7 @@ class DocumentationValidator:
         return env_vars
 
     def extract_workflow_names_from_code(self) -> Set[str]:
-        """Extract workflow names from the codebase"""
+        """Extract workflow names from the codebase."""
         workflows = set()
 
         # Check conversation flows directory
@@ -120,7 +120,7 @@ class DocumentationValidator:
         return workflows
 
     def validate_pyproject_toml(self) -> Dict[str, Any]:
-        """Extract key information from pyproject.toml"""
+        """Extract key information from pyproject.toml."""
         pyproject_path = self.workspace_root / "pyproject.toml"
         info = {}
 
@@ -146,7 +146,7 @@ class DocumentationValidator:
 
 
 class TestDocumentationAccuracy:
-    """Test suite for documentation accuracy validation"""
+    """Test suite for documentation accuracy validation."""
 
     @pytest.fixture
     def validator(self):
@@ -158,7 +158,7 @@ class TestDocumentationAccuracy:
         return DocumentationValidator()
 
     def test_api_endpoints_documented(self, validator):
-        """Verify all API endpoints are correctly documented"""
+        """Verify all API endpoints are correctly documented."""
         code_endpoints = validator.extract_api_endpoints_from_code()
 
         # Expected endpoints based on documentation analysis
@@ -191,7 +191,7 @@ class TestDocumentationAccuracy:
                 )
 
     def test_cli_commands_documented(self, validator):
-        """Verify all CLI commands are correctly documented"""
+        """Verify all CLI commands are correctly documented."""
         code_commands = validator.extract_cli_commands_from_code()
 
         # Expected commands based on documentation and actual CLI output
@@ -227,7 +227,7 @@ class TestDocumentationAccuracy:
             )
 
     def test_environment_variables_documented(self, validator):
-        """Verify environment variable prefixes are correct"""
+        """Verify environment variable prefixes are correct."""
         code_env_vars = validator.extract_environment_variables_from_code()
 
         # All environment variables should have INGENIOUS_ prefix
@@ -237,7 +237,7 @@ class TestDocumentationAccuracy:
             )
 
     def test_workflow_names_documented(self, validator):
-        """Verify workflow names are correctly documented"""
+        """Verify workflow names are correctly documented."""
         code_workflows = validator.extract_workflow_names_from_code()
 
         # Documented core workflows
@@ -254,7 +254,7 @@ class TestDocumentationAccuracy:
             )
 
     def test_python_version_requirement(self, validator):
-        """Verify Python version requirement is correctly documented"""
+        """Verify Python version requirement is correctly documented."""
         pyproject_info = validator.validate_pyproject_toml()
 
         # Documentation states Python 3.13+
@@ -264,7 +264,7 @@ class TestDocumentationAccuracy:
         )
 
     def test_project_structure_matches_docs(self, validator):
-        """Verify key project directories exist as documented"""
+        """Verify key project directories exist as documented."""
         expected_dirs = [
             "ingenious",
             "docs",
@@ -281,7 +281,7 @@ class TestDocumentationAccuracy:
             assert full_path.exists(), f"Expected directory not found: {dir_path}"
 
     def test_api_base_path(self, validator):
-        """Verify API base path is /api/v1 as documented"""
+        """Verify API base path is /api/v1 as documented."""
         # Check routing configuration
         routing_file = validator.ingenious_dir / "main" / "routing.py"
         assert routing_file.exists()
@@ -293,7 +293,7 @@ class TestDocumentationAccuracy:
         assert 'prefix= "/api/v1"' in content, "API base path /api/v1 not found in routing"
 
     def test_configuration_system(self, validator):
-        """Verify configuration uses pydantic-settings as documented"""
+        """Verify configuration uses pydantic-settings as documented."""
         settings_file = validator.ingenious_dir / "config" / "main_settings.py"
         assert settings_file.exists()
 
@@ -305,7 +305,7 @@ class TestDocumentationAccuracy:
         assert "class IngeniousSettings(BaseSettings)" in content
 
     def test_required_dependencies_match_docs(self, validator):
-        """Verify key dependencies mentioned in docs are in pyproject.toml"""
+        """Verify key dependencies mentioned in docs are in pyproject.toml."""
         pyproject_path = validator.workspace_root / "pyproject.toml"
 
         with open(pyproject_path, "r") as f:

@@ -1,3 +1,5 @@
+"""Local filesystem file repository implementation."""
+
 from pathlib import Path
 
 import aiofiles  # type: ignore
@@ -8,7 +10,19 @@ from ingenious.files.files_repository import IFileStorage
 
 
 class local_FileStorageRepository(IFileStorage):
+    """Local filesystem implementation of the file storage interface.
+
+    Provides file operations (read, write, delete, list) using the local filesystem
+    with async I/O support via aiofiles.
+    """
+
     def __init__(self, config: IngeniousSettings, fs_config: FileStorageContainerSettings):
+        """Initialize local file storage repository.
+
+        Args:
+            config: The ingenious settings configuration.
+            fs_config: File storage container configuration including base path.
+        """
         self.config = config
         self.fs_config = fs_config
         self.base_path = Path(fs_config.path)

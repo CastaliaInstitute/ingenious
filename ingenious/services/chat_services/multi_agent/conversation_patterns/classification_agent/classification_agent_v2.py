@@ -15,6 +15,13 @@ logger = get_logger(__name__)
 
 
 class ConversationPattern:
+    """Classification-based conversation pattern using AutoGen agents.
+
+    This pattern implements a simplified classification and response system using
+    a single classifier agent that categorizes user messages and provides appropriate
+    responses. Supports memory management and Azure OpenAI integration.
+    """
+
     def __init__(
         self,
         default_llm_config: dict[str, object],
@@ -23,6 +30,16 @@ class ConversationPattern:
         memory_path: str,
         thread_memory: str,
     ):
+        """Initialize the classification conversation pattern.
+
+        Args:
+            default_llm_config: Configuration dictionary for the LLM including model, base_url,
+                api_version, deployment, authentication_method, and api_key.
+            topics: List of topic strings for classification (currently unused in simplified version).
+            memory_record_switch: Whether to enable memory recording for conversation context.
+            memory_path: File system path where conversation memory will be stored.
+            thread_memory: Existing conversation memory/history to initialize context.
+        """
         self.default_llm_config = default_llm_config
         self.topics = topics
         self.memory_record_switch = memory_record_switch

@@ -24,6 +24,13 @@ logger = get_logger(__name__)
 
 
 class multi_agent_chat_service:
+    """Multi-agent chat service implementation using AutoGen framework.
+
+    This service orchestrates conversations using multiple AI agents through
+    the AutoGen framework. It supports dynamic loading of conversation flows,
+    chat history management, and both regular and streaming responses.
+    """
+
     config: "IngeniousSettings"
     chat_history_repository: ChatHistoryRepository
     conversation_flow: str
@@ -35,6 +42,16 @@ class multi_agent_chat_service:
         chat_history_repository: ChatHistoryRepository,
         conversation_flow: str,
     ):
+        """Initialize the multi-agent chat service.
+
+        Args:
+            config: The Ingenious settings configuration containing model and service settings.
+            chat_history_repository: Repository for managing persistent chat history.
+            conversation_flow: The name of the conversation flow pattern to use.
+
+        Raises:
+            RuntimeError: If OpenAI service is not properly configured in the config.
+        """
         self.config = config
         self.chat_history_repository = chat_history_repository
         self.conversation_flow = conversation_flow
@@ -48,6 +65,18 @@ class multi_agent_chat_service:
             )
 
     async def get_chat_response(self, chat_request: IChatRequest) -> IChatResponse:
+        """Process a chat request and return the agent's response.
+
+        Args:
+            chat_request: The chat request containing user prompt, conversation flow, and context.
+
+        Returns:
+            IChatResponse: The agent's response including message content and metadata.
+
+        Raises:
+            ValueError: If conversation_flow is not set in the request.
+            ContentFilterError: If content filter violations are detected in thread messages.
+        """
         if not chat_request.conversation_flow:
             raise ValueError(f"conversation_flow not set {chat_request}")
 
@@ -449,12 +478,24 @@ class multi_agent_chat_service:
 
 
 class IConversationPattern(ABC):
+    """Abstract base class for conversation pattern implementations.
+
+    This class provides the foundation for implementing custom conversation patterns
+    with built-in memory management, configuration access, and template handling.
+    Legacy pattern - prefer IConversationFlow for new implementations.
+    """
+
     _config: "IngeniousSettings"
     _memory_path: str
     _memory_file_path: str
     _memory_manager: Any
 
     def __init__(self) -> None:
+        """Initialize the conversation pattern with configuration and memory management.
+
+        Sets up the configuration, memory paths, and memory manager for handling
+        conversation context across sessions.
+        """
         super().__init__()
         self._config = ig_config.get_config()
         self._memory_path = self.GetConfig().chat_history.memory_path
@@ -531,10 +572,26 @@ class IConversationPattern(ABC):
 
     @abstractmethod
     async def get_conversation_response(self, message: str, thread_memory: str) -> IChatResponse:
+        """Generate a conversation response based on the message and memory context.
+
+        Args:
+            message: The user's input message.
+            thread_memory: The conversation memory/history for context.
+
+        Returns:
+            IChatResponse: The generated response from the conversation pattern.
+        """
         pass
 
 
 class IConversationFlow(ABC):
+    """Abstract base class for conversation flow implementations.
+
+    This class provides the foundation for implementing pluggable conversation flows
+    with access to the parent chat service, configuration, memory management,
+    and template rendering capabilities. Preferred pattern for new implementations.
+    """
+
     _config: "IngeniousSettings"
     _memory_path: str
     _memory_file_path: str
@@ -543,6 +600,12 @@ class IConversationFlow(ABC):
     _memory_manager: Any
 
     def __init__(self, parent_multi_agent_chat_service: multi_agent_chat_service) -> None:
+        """Initialize the conversation flow with parent service context.
+
+        Args:
+            parent_multi_agent_chat_service: The parent multi-agent chat service instance
+                providing configuration and chat history access.
+        """
         super().__init__()
         # Use configuration from parent service instead of loading separately
         self._config = parent_multi_agent_chat_service.config
@@ -567,6 +630,15 @@ class IConversationFlow(ABC):
     async def Get_Template(
         self, revision_id: Optional[str] = None, file_name: str = "user_prompt.md"
     ) -> str:
+        """Retrieve and render a Jinja2 template from the prompt template storage.
+
+        Args:
+            revision_id: Optional revision identifier to load a specific template version.
+            file_name: The name of the template file to load (default: "user_prompt.md").
+
+        Returns:
+            str: The rendered template content, or empty string if template not found.
+        """
         fs = FileStorage(self._config)
         template_path = await fs.get_prompt_template_path(revision_id or "")
         content = await fs.read_file(file_name=file_name, file_path=template_path)
@@ -583,12 +655,27 @@ class IConversationFlow(ABC):
         return template.render()  # type: ignore
 
     def Get_Models(self) -> Any:
+        """Get the configured language models.
+
+        Returns:
+            Any: The models configuration object.
+        """
         return self._config.models
 
     def Get_Memory_Path(self) -> str:
+        """Get the path to the memory storage directory.
+
+        Returns:
+            str: The memory storage directory path.
+        """
         return self._memory_path
 
     def Get_Memory_File(self) -> str:
+        """Get the full path to the memory context file.
+
+        Returns:
+            str: The full path to the memory file (context.md).
+        """
         return self._memory_file_path
 
     def Maintain_Memory(self, new_content: str, max_words: int = 150) -> Any:
@@ -601,6 +688,14 @@ class IConversationFlow(ABC):
 
     @abstractmethod
     async def get_conversation_response(self, chat_request: IChatRequest) -> IChatResponse:
+        """Generate a conversation response based on the chat request.
+
+        Args:
+            chat_request: The chat request containing user prompt, conversation flow, and context.
+
+        Returns:
+            IChatResponse: The generated response from the conversation flow.
+        """
         pass
 
     async def get_streaming_conversation_response(

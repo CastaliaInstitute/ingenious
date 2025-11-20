@@ -111,6 +111,7 @@ class AgentChats(BaseModel):
     _agent_chats: List[AgentChat] = []
 
     def __init__(self) -> None:
+        """Initialize an empty AgentChats collection."""
         super().__init__()
 
     def add_agent_chat(self, agent_chat: AgentChat) -> None:
@@ -204,6 +205,17 @@ class Agent(BaseModel):
         ctx: Optional[MessageContext] = None,
         source: Optional[str] = None,
     ) -> AgentChat:
+        """Add a new agent chat to this agent's chat history.
+
+        Args:
+            content: The message content.
+            identifier: The unique identifier for the chat session.
+            ctx: Optional message context containing topic information.
+            source: Optional source agent name (overridden by ctx if provided).
+
+        Returns:
+            AgentChat: The newly created AgentChat object.
+        """
         if ctx and ctx.topic_id:
             source = ctx.topic_id.source
 
@@ -222,12 +234,29 @@ class Agent(BaseModel):
         return agent_chat
 
     def get_agent_chat_by_source(self, source: str) -> AgentChat:
+        """Get the agent chat from a specific source agent.
+
+        Args:
+            source: The source agent name to search for.
+
+        Returns:
+            AgentChat: The matching AgentChat object.
+
+        Raises:
+            ValueError: If no AgentChat with the given source is found.
+        """
         for agent_chat in self.agent_chats:
             if agent_chat.source_agent_name == source:
                 return agent_chat
         raise ValueError(f"AgentChat with source {source} not found")
 
     async def log(self, agent_chat: AgentChat, queue: asyncio.Queue[AgentChat]) -> None:
+        """Log an agent chat to the queue if logging is enabled.
+
+        Args:
+            agent_chat: The AgentChat object to log.
+            queue: The asyncio queue to add the chat to.
+        """
         if self.log_to_prompt_tuner or self.return_in_response:
             await queue.put(agent_chat)
 
@@ -237,6 +266,16 @@ class Agent(BaseModel):
         cancellation_token: CancellationToken,
         tools: List[Tool] = [],
     ) -> FunctionExecutionResult:
+        """Execute a tool call from a function call request.
+
+        Args:
+            call: The function call to execute.
+            cancellation_token: Token to cancel the operation.
+            tools: List of available tools to execute.
+
+        Returns:
+            FunctionExecutionResult: The result of the tool execution.
+        """
         # Find the tool by name.
         tool = next((tool for tool in tools if tool.name == call.name), None)
         assert tool is not None
@@ -269,6 +308,15 @@ class Agents(BaseModel):
     _agents: List[Agent]
 
     def __init__(self, agents: List[Agent], config: IngeniousSettings):
+        """Initialize the Agents collection with validation.
+
+        Args:
+            agents: List of Agent objects to manage.
+            config: IngeniousSettings instance containing model configurations.
+
+        Raises:
+            ValueError: If an agent's model is not found in the config.
+        """
         super().__init__()
         self._agents = agents
         for agent in self._agents:
@@ -280,12 +328,33 @@ class Agents(BaseModel):
                 raise ValueError(f"Model {agent.agent_model_name} not found in config.yml")
 
     def get_agents(self) -> List[Agent]:
+        """Get all agents in the collection.
+
+        Returns:
+            List[Agent]: A list of all Agent objects.
+        """
         return self._agents
 
     def get_agents_for_prompt_tuner(self) -> List[Agent]:
+        """Get all agents that have logging to prompt tuner enabled.
+
+        Returns:
+            List[Agent]: A list of agents with log_to_prompt_tuner set to True.
+        """
         return [agent for agent in self._agents if agent.log_to_prompt_tuner]
 
     def get_agent_by_name(self, agent_name: str) -> Agent:
+        """Get an agent by its name.
+
+        Args:
+            agent_name: The name of the agent to retrieve.
+
+        Returns:
+            Agent: The matching Agent object.
+
+        Raises:
+            ValueError: If no agent with the given name is found.
+        """
         for agent in self._agents:
             if agent.agent_name == agent_name:
                 return agent
@@ -300,6 +369,16 @@ class Agents(BaseModel):
         next_agent_topic: str,
         tools: List[Tool] = [],
     ) -> None:
+        """Register an agent with the runtime and subscribe it to its topic.
+
+        Args:
+            ag_class: The agent class to instantiate.
+            runtime: The agent runtime to register with.
+            agent_name: The name of the agent to register.
+            data_identifier: Identifier for the data payload.
+            next_agent_topic: The topic for the next agent in the chain.
+            tools: List of tools available to the agent.
+        """
         agent = self.get_agent_by_name(agent_name=agent_name)
         reg_agent = await ag_class.register(
             runtime=runtime,
@@ -317,10 +396,22 @@ class Agents(BaseModel):
 
 
 class AgentMessage(BaseModel):
+    """A simple message container for agent communication.
+
+    Attributes:
+        content: The message content string.
+    """
+
     content: str
 
 
 class LLMUsageTracker(logging.Handler):
+    """Logging handler that tracks LLM token usage and agent chat interactions.
+
+    This handler intercepts LLM call events, tracks token counts, and manages
+    a queue of agent chats for logging and analysis purposes.
+    """
+
     def __init__(
         self,
         agents: Agents,
@@ -330,7 +421,16 @@ class LLMUsageTracker(logging.Handler):
         identifier: str,
         event_type: str,
     ) -> None:
-        """Logging handler that tracks the number of tokens used in the prompt and completion."""
+        """Initialize the LLM usage tracker.
+
+        Args:
+            agents: Agents collection to track interactions for.
+            config: IngeniousSettings instance for configuration.
+            chat_history_repository: Repository for storing chat history.
+            revision_id: Identifier for the current revision.
+            identifier: Unique identifier for the session.
+            event_type: Type of event being tracked.
+        """
         super().__init__()
         self._prompt_tokens = 0
         self._agents = agents
@@ -344,21 +444,42 @@ class LLMUsageTracker(logging.Handler):
 
     @property
     def tokens(self) -> int:
+        """Get the total number of tokens used (prompt + completion).
+
+        Returns:
+            int: The sum of prompt and completion tokens.
+        """
         return self._prompt_tokens + self._completion_tokens
 
     @property
     def prompt_tokens(self) -> int:
+        """Get the number of prompt tokens used.
+
+        Returns:
+            int: The number of prompt tokens.
+        """
         return self._prompt_tokens
 
     @property
     def completion_tokens(self) -> int:
+        """Get the number of completion tokens used.
+
+        Returns:
+            int: The number of completion tokens.
+        """
         return self._completion_tokens
 
     def reset(self) -> None:
+        """Reset the token counters to zero."""
         self._prompt_tokens = 0
         self._completion_tokens = 0
 
     async def write_llm_responses_to_file(self, file_prefixes: List[str] = []) -> None:
+        """Write LLM responses from the queue to files.
+
+        Args:
+            file_prefixes: List of prefix strings to prepend to the filename.
+        """
         for agent_chat in self._queue:
             agent = self._agents.get_agent_by_name(agent_chat.target_agent_name)
             if agent.log_to_prompt_tuner:
@@ -377,6 +498,13 @@ class LLMUsageTracker(logging.Handler):
     async def write_llm_responses_to_repository(
         self, user_id: str, thread_id: str, message_id: str
     ) -> None:
+        """Write LLM responses from the queue to the chat history repository.
+
+        Args:
+            user_id: The ID of the user.
+            thread_id: The ID of the conversation thread.
+            message_id: The ID of the message.
+        """
         for agent_chat in self._queue:
             agent = self._agents.get_agent_by_name(agent_chat.target_agent_name)
             if agent.log_to_prompt_tuner:
@@ -405,6 +533,11 @@ class LLMUsageTracker(logging.Handler):
                 await self._chat_history_database.add_message(message=message)
 
     async def post_chats_to_queue(self, target_queue: asyncio.Queue[AgentChat]) -> None:
+        """Post agent chats from the internal queue to a target queue.
+
+        Args:
+            target_queue: The asyncio queue to post chats to.
+        """
         for agent_chat in self._queue:
             agent = self._agents.get_agent_by_name(agent_chat.target_agent_name)
             await agent.log(agent_chat, target_queue)
@@ -493,9 +626,25 @@ class LLMUsageTracker(logging.Handler):
 
 
 class IProjectAgents(ABC):
+    """Abstract base class for project-specific agent configurations.
+
+    This interface defines the contract for retrieving project-specific
+    agent configurations. Implementations should provide the agents
+    appropriate for their project context.
+    """
+
     def __init__(self) -> None:
+        """Initialize the project agents interface."""
         pass
 
     @abstractmethod
     def Get_Project_Agents(self, config: IngeniousSettings) -> Agents:
+        """Get the project-specific agents configuration.
+
+        Args:
+            config: The Ingenious settings configuration.
+
+        Returns:
+            Agents: The configured Agents collection for the project.
+        """
         pass

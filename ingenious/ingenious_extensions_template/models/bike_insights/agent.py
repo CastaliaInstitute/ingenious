@@ -5,6 +5,13 @@ from ingenious.models.agent import Agent, Agents, IProjectAgents
 
 
 class ProjectAgents(IProjectAgents):
+    """Bike insights project agent configuration.
+
+    Defines the set of agents used in the bike insights multi-agent workflow,
+    including sentiment analysis, fiscal analysis, summarization, and specialized
+    bike lookup capabilities.
+    """
+
     def Get_Project_Agents(self, config: IngeniousSettings) -> Agents:
         """Get the project agents configuration for bike insights.
 
