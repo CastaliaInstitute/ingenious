@@ -1,4 +1,5 @@
 """Memory Manager for handling conversation context files through FileStorage abstraction.
+
 This ensures that memory operations work with both local and Azure Blob Storage.
 """
 
@@ -15,7 +16,8 @@ logger = get_logger(__name__)
 
 class MemoryManager:
     """Manages conversation memory/context files using the FileStorage abstraction.
-    This allows memory operations to work with both local storage and Azure Blob Storage.
+
+    This allows memory operations to work with both local and Azure Blob Storage.
     """
 
     def __init__(self, config: IngeniousSettings, memory_path: Optional[str] = None):
@@ -175,6 +177,7 @@ class MemoryManager:
 
 class LegacyMemoryManager:
     """Legacy memory manager that provides backward compatibility for local file operations.
+
     This is used when the storage type is local or for fallback scenarios.
     """
 

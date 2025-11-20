@@ -1,3 +1,5 @@
+"""Classification agent pattern version 2 implementation."""
+
 from typing import Tuple, cast
 
 from autogen_agentchat.agents import AssistantAgent, UserProxyAgent
@@ -93,11 +95,11 @@ class ConversationPattern:
         self.user_proxy = UserProxyAgent(name="user_proxy")
 
     def add_topic_agent(self, agent_name: str, system_message: str) -> None:
-        """Add a topic agent - simplified to do nothing since we use single classifier"""
+        """Add a topic agent - simplified to do nothing since we use single classifier."""
         pass
 
     async def get_conversation_response(self, input_message: str) -> Tuple[str, str]:
-        """Simplified conversation with just classifier + user proxy in round-robin (max 2 turns)"""
+        """Simplified conversation with just classifier + user proxy in round-robin (max 2 turns)."""
         try:
             # Create a simple round-robin team with just 2 agents
             team = RoundRobinGroupChat(participants=[self.user_proxy, self.classifier])
@@ -132,5 +134,5 @@ class ConversationPattern:
             return str(error_response), str(e)
 
     async def close(self) -> None:
-        """Close the model client connection"""
+        """Close the model client connection."""
         await self.model_client.close()

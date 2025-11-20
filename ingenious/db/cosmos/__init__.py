@@ -1,3 +1,5 @@
+"""Cosmos DB repository implementation for chat history management."""
+
 import uuid
 from typing import Any, Dict, List, Optional
 
@@ -18,6 +20,11 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
     """Cosmos DB implementation of IChatHistoryRepository for managing chat history."""
 
     def __init__(self, config: IngeniousSettings) -> None:
+        """Initialize Cosmos DB chat history repository.
+
+        Args:
+            config: Application configuration settings
+        """
         self.config = config
 
         if config.cosmos_service is None:

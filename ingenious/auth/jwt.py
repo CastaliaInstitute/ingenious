@@ -1,3 +1,9 @@
+"""JWT token creation, validation, and password hashing utilities.
+
+This module provides JWT authentication functionality including token generation,
+verification, and password hashing using bcrypt.
+"""
+
 import os
 from datetime import datetime, timedelta
 from typing import Any, Dict, Optional, Tuple
@@ -62,7 +68,7 @@ pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
 
 def create_access_token(data: Dict[str, Any], expires_delta: Optional[timedelta] = None) -> str:
-    """Create a JWT access token"""
+    """Create a JWT access token with expiration."""
     to_encode = data.copy()
     if expires_delta:
         expire = datetime.utcnow() + expires_delta
@@ -75,7 +81,7 @@ def create_access_token(data: Dict[str, Any], expires_delta: Optional[timedelta]
 
 
 def create_refresh_token(data: Dict[str, Any]) -> str:
-    """Create a JWT refresh token"""
+    """Create a JWT refresh token with extended expiration."""
     to_encode = data.copy()
     expire = datetime.utcnow() + timedelta(days=REFRESH_TOKEN_EXPIRE_DAYS)
     to_encode.update({"exp": expire, "type": "refresh"})
@@ -84,7 +90,7 @@ def create_refresh_token(data: Dict[str, Any]) -> str:
 
 
 def verify_token(token: str, token_type: str = "access") -> Dict[str, Any]:
-    """Verify and decode a JWT token"""
+    """Verify and decode a JWT token, checking type and expiration."""
     try:
         payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
 
@@ -124,7 +130,7 @@ def verify_token(token: str, token_type: str = "access") -> Dict[str, Any]:
 
 
 def get_username_from_token(token: str) -> str:
-    """Extract username from a valid JWT token"""
+    """Extract username from a valid JWT token after verification."""
     payload = verify_token(token)
     username = payload.get("sub")
     if username is None:
@@ -137,10 +143,10 @@ def get_username_from_token(token: str) -> str:
 
 
 def verify_password(plain_password: str, hashed_password: str) -> bool:
-    """Verify a password against its hash"""
+    """Verify a password against its bcrypt hash."""
     return bool(pwd_context.verify(plain_password, hashed_password))
 
 
 def get_password_hash(password: str) -> str:
-    """Hash a password"""
+    """Hash a password using bcrypt."""
     return str(pwd_context.hash(password))

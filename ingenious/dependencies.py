@@ -46,7 +46,7 @@ bearer_security = HTTPBearer()
 
 
 def get_config() -> IngeniousSettings:
-    """Get config dynamically to ensure environment variables are loaded"""
+    """Get config dynamically to ensure environment variables are loaded."""
     return _get_config()
 
 
@@ -133,7 +133,7 @@ def get_security_service(
 def get_security_service_optional(
     credentials: Optional[HTTPBasicCredentials] = None,
 ) -> Optional[str]:
-    """Optional security service that doesn't require credentials when auth is disabled"""
+    """Optional security service that doesn't require credentials when auth is disabled."""
     config = get_config()
     if not config.web_configuration.authentication.enable:
         # Authentication is disabled, don't require credentials
@@ -215,7 +215,7 @@ def get_project_config() -> IngeniousSettings:
 
 
 def get_auth_user(request: Request) -> str:
-    """Get authenticated user - supports both JWT and Basic Auth"""
+    """Get authenticated user - supports both JWT and Basic Auth."""
     config = get_config()
 
     if not config.web_configuration.authentication.enable:
@@ -277,5 +277,5 @@ def get_auth_user(request: Request) -> str:
 
 
 def get_conditional_security(request: Request) -> str:
-    """Get authenticated user - wrapper around get_auth_user for compatibility"""
+    """Get authenticated user - wrapper around get_auth_user for compatibility."""
     return get_auth_user(request)

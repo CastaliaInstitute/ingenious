@@ -1,3 +1,5 @@
+"""Multi-agent chat service core implementation."""
+
 import logging
 import uuid as uuid_module
 from abc import ABC, abstractmethod
@@ -464,15 +466,35 @@ class IConversationPattern(ABC):
         self._memory_manager = get_memory_manager(self._config, self._memory_path)
 
     def GetConfig(self) -> "IngeniousSettings":
+        """Get the current configuration settings.
+
+        Returns:
+            IngeniousSettings: The current configuration instance.
+        """
         return self._config
 
     def Get_Models(self) -> Dict[str, Any]:
+        """Get the configured language models as a dictionary.
+
+        Returns:
+            Dict[str, Any]: Dictionary containing model configurations.
+        """
         return self._config.models.__dict__
 
     def Get_Memory_Path(self) -> str:
+        """Get the path to the memory storage directory.
+
+        Returns:
+            str: The memory storage directory path.
+        """
         return self._memory_path
 
     def Get_Memory_File(self) -> str:
+        """Get the full path to the memory context file.
+
+        Returns:
+            str: The full path to the memory file (context.md).
+        """
         return self._memory_file_path
 
     def Maintain_Memory(self, new_content: str, max_words: int = 150) -> Any:
@@ -486,6 +508,13 @@ class IConversationPattern(ABC):
     async def write_llm_responses_to_file(
         self, response_array: List[Dict[str, Any]], event_type: str, output_path: str
     ) -> None:
+        """Write LLM responses to files for a given event type.
+
+        Args:
+            response_array: List of response dictionaries containing chat_response and chat_title.
+            event_type: The type of event being processed.
+            output_path: The directory path where response files will be written.
+        """
         fs = FileStorage(self._config)
         for res in response_array:
             make_llm_calls = True
@@ -528,6 +557,11 @@ class IConversationFlow(ABC):
         self._memory_manager = get_memory_manager(self._config, self._memory_path)
 
     def GetConfig(self) -> "IngeniousSettings":
+        """Get the current configuration settings.
+
+        Returns:
+            IngeniousSettings: The current configuration instance.
+        """
         return self._config
 
     async def Get_Template(
