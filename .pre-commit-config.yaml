@@ -4,7 +4,12 @@ repos:
   - repo: https://github.com/djlint/djLint
     rev: v1.36.4
     hooks:
+      # Reformat Flask/Jinja templates
       - id: djlint-reformat-jinja
+        files: "\\.(html|jinja)$"
+        types_or: ["html", "jinja"]
+      # Lint Flask/Jinja templates
+      - id: djlint-jinja
         files: "\\.(html|jinja)$"
         types_or: ["html", "jinja"]
   - repo: https://github.com/google/yamlfmt
@@ -25,3 +30,29 @@ repos:
       - id: check-yaml
       - id: check-merge-conflict
       - id: debug-statements
+  # Dead code detection with vulture
+  - repo: https://github.com/jendrikseipp/vulture
+    rev: v2.14
+    hooks:
+      - id: vulture
+  # Static type checking with mypy
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.18.2
+    hooks:
+      - id: mypy
+        args: [--ignore-missing-imports]
+        # Add any type stub packages your project needs:
+        # additional_dependencies: [types-requests, pydantic]
+  # Code complexity monitoring with xenon (wraps radon)
+  - repo: https://github.com/rubik/xenon
+    rev: v0.9.3
+    hooks:
+      - id: xenon
+        args: ['--max-absolute=B', '--max-modules=B', '--max-average=A']
+  # Security issue detection with bandit
+  - repo: https://github.com/PyCQA/bandit
+    rev: '1.8.6'
+    hooks:
+      - id: bandit
+        args: ['-c', 'pyproject.toml']
+        additional_dependencies: ['bandit[toml]']
