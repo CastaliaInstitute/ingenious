@@ -105,11 +105,10 @@ class local_FileStorageRepository(IFileStorage):
             path = Path(self.fs_config.path) / Path(file_path)
             if not path.exists():
                 return []
-            dirs = [d.name for d in path.iterdir() if d.is_dir()]
-            return dirs
+            directories = [f.name for f in path.iterdir() if f.is_dir()]
+            return directories
         except Exception as e:
-            error_msg = f"Failed to list directories in {file_path}: {e}"
-            print(error_msg)
+            print(f"Failed to list directories in {path}: {e}")
             return []
 
     async def check_if_file_exists(self, file_path: str, file_name: str) -> bool:

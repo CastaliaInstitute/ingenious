@@ -178,35 +178,42 @@ class azure_FileStorageRepository(IFileStorage):
             raise
 
     async def list_directories(self, file_path: str) -> list[str]:
-        """List virtual directories in an Azure Blob container based on a path.
+        """List directories (blob prefixes) in an Azure Blob container.
 
-        Azure Blob Storage uses virtual directories based on blob name prefixes.
+        In blob storage, directories are virtual - they don't exist as actual objects.
+        This method extracts unique directory names from blob paths.
 
         :param file_path: Path within the storage container to list directories from.
         :return: List of directory names.
         """
-        directories: set[str] = set()
+        prefix = ""
         try:
             path = Path(self.fs_config.path) / Path(file_path)
             prefix = str(path).replace("\\", "/")
-            if not prefix.endswith("/"):
+
+            # Ensure prefix ends with / for proper directory listing
+            if prefix and not prefix.endswith("/"):
                 prefix += "/"
 
+            # List blobs in the container with the specified prefix
             container_client = self.blob_service_client.get_container_client(self.container_name)
 
-            # List blobs and extract unique directory names
+            # Extract unique directory names from blob paths
+            directories: set[str] = set()
             for blob in container_client.list_blobs(name_starts_with=prefix):
-                # Remove the prefix and get the first path component
-                relative_path = blob.name[len(prefix) :]
+                # Get the relative path after the prefix
+                relative_path = blob.name[len(prefix):]
+
+                # If there's a slash, it means there's a subdirectory
                 if "/" in relative_path:
+                    # Get the first directory name
                     dir_name = relative_path.split("/")[0]
                     directories.add(dir_name)
 
-            return list(directories)
+            return sorted(list(directories))
         except Exception as e:
             logger.error(
-                f"Failed to list directories in container {self.container_name} "
-                f"with prefix {prefix}: {e}"
+                f"Failed to list directories in container {self.container_name} with prefix {prefix}: {e}"
             )
             return []
 
