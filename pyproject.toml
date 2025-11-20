@@ -416,4 +416,5 @@ filterwarnings = [
 members = [
     "test_dir",
     ".",
+    ".",
 ]

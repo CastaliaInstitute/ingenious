@@ -255,11 +255,11 @@ class LocalSqlSettings(BaseModel):
     sample_database_name: str = Field("sample_sql_db", description="Name for the sample database")
 
 
-class FileStorageContainerSettings(AzureAuthConfig):
+class FileStorageContainerSettings(BaseModel):
     """Configuration for file storage containers.
 
     Supports both local file system and Azure Blob Storage.
-    Inherits Azure authentication configuration from AzureAuthConfig.
+    Contains Azure authentication configuration fields.
     """
 
     enable: bool = Field(True, description="Enable this storage container")
@@ -274,6 +274,19 @@ class FileStorageContainerSettings(AzureAuthConfig):
     add_sub_folders: bool = Field(True, description="Create subdirectories for organization")
     url: str = Field("", description="Azure storage account URL (for Azure storage only)")
     token: str = Field("", description="Azure access token (for Azure storage only)")
+
+    # Azure authentication fields
+    authentication_method: AuthenticationMethod = Field(
+        default=AuthenticationMethod.DEFAULT_CREDENTIAL,
+        description="Authentication method for Azure services",
+    )
+    api_key: str = Field("", description="API key for token-based authentication")
+    client_id: str = Field("", description="Azure client ID for service principal or MSI")
+    client_secret: str = Field(
+        "", description="Azure client secret for service principal authentication"
+    )
+    tenant_id: str = Field("", description="Azure tenant ID for service principal authentication")
+    endpoint: str = Field("", description="Azure service endpoint URL")
 
 
 class FileStorageSettings(BaseModel):

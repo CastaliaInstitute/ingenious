@@ -9,8 +9,8 @@ resolution-markers = [
 
 [manifest]
 members = [
-    "ingen-test",
     "ingenious",
+    "test-dir",
 ]
 
 [[package]]
@@ -1442,17 +1442,6 @@ sdist = { url = "https://files.pythonhosted.org/packages/cf/8c/f834fbf984f691b4f
 wheels = [
     { url = "https://files.pythonhosted.org/packages/a4/ed/1f1afb2e9e7f38a545d628f864d562a5ae64fe6f7a10e28ffb9b185b4e89/importlib_resources-6.5.2-py3-none-any.whl", hash = "sha256:789cfdc3ed28c78b67a06acb8126751ced69a3d5f79c095a98298cd8a760ccec", size = 37461, upload-time = "2025-01-03T18:51:54.306Z" },
 ]
-
-[[package]]
-name = "ingen-test"
-version = "0.1.0"
-source = { virtual = "test_dir" }
-dependencies = [
-    { name = "ingenious", extra = ["azure-full"] },
-]
-
-[package.metadata]
-requires-dist = [{ name = "ingenious", extras = ["azure-full"], editable = "." }]
 
 [[package]]
 name = "ingenious"
@@ -4968,6 +4957,17 @@ sdist = { url = "https://files.pythonhosted.org/packages/0a/d4/2b0cd0fe285e14b36
 wheels = [
     { url = "https://files.pythonhosted.org/packages/e5/30/643397144bfbfec6f6ef821f36f33e57d35946c44a2352d3c9f0ae847619/tenacity-9.1.2-py3-none-any.whl", hash = "sha256:f77bf36710d8b73a50b2dd155c97b870017ad21afe6ab300326b0371b3b05138", size = 28248, upload-time = "2025-04-02T08:25:07.678Z" },
 ]
+
+[[package]]
+name = "test-dir"
+version = "0.1.0"
+source = { virtual = "test_dir" }
+dependencies = [
+    { name = "ingenious", extra = ["full"] },
+]
+
+[package.metadata]
+requires-dist = [{ name = "ingenious", extras = ["full"], editable = "." }]
 
 [[package]]
 name = "threadpoolctl"
