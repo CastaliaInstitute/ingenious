@@ -35,14 +35,14 @@ repos:
     rev: v2.14
     hooks:
       - id: vulture
+        args: ['ingenious/', '--min-confidence=80']
   # Static type checking with mypy
   - repo: https://github.com/pre-commit/mirrors-mypy
     rev: v1.18.2
     hooks:
       - id: mypy
         args: [--ignore-missing-imports]
-        # Add any type stub packages your project needs:
-        # additional_dependencies: [types-requests, pydantic]
+        additional_dependencies: [pydantic, pydantic-settings]
   # Code complexity monitoring with xenon (wraps radon)
   - repo: https://github.com/rubik/xenon
     rev: v0.9.3
