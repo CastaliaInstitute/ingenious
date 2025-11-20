@@ -1,5 +1,5 @@
 import uuid
-from typing import Any, Dict, List, Optional, cast
+from typing import Any, Dict, List, Optional
 
 from azure.cosmos import ContainerProxy, CosmosClient, PartitionKey
 
@@ -59,26 +59,10 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
             self.users: ContainerProxy = self.database.create_container_if_not_exists(
                 id="users", partition_key=PartitionKey(path="/identifier")
             )
-            self.threads: ContainerProxy = self.database.create_container_if_not_exists(
-                id="threads", partition_key=PartitionKey(path="/id")
-            )
-            self.steps: ContainerProxy = self.database.create_container_if_not_exists(
-                id="steps", partition_key=PartitionKey(path="/threadId")
-            )
-            self.elements: ContainerProxy = self.database.create_container_if_not_exists(
-                id="elements", partition_key=PartitionKey(path="/threadId")
-            )
-            self.feedbacks: ContainerProxy = self.database.create_container_if_not_exists(
-                id="feedbacks", partition_key=PartitionKey(path="/threadId")
-            )
         else:
             self.chat_history = self.database.get_container_client("chat_history")
             self.chat_history_summary = self.database.get_container_client("chat_history_summary")
             self.users = self.database.get_container_client("users")
-            self.threads = self.database.get_container_client("threads")
-            self.steps = self.database.get_container_client("steps")
-            self.elements = self.database.get_container_client("elements")
-            self.feedbacks = self.database.get_container_client("feedbacks")
 
     # Utility mappers
     def _message_to_doc(self, m: Message) -> Dict[str, Any]:
@@ -125,42 +109,8 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
         metadata: Optional[Dict[str, object]] = None,
         tags: Optional[List[str]] = None,
     ) -> str:
-        try:
-            # Resolve user identifier if possible
-            user_identifier = None
-            if user_id:
-                try:
-                    # Users are stored by identifier; different model than SQL (id is UUID)
-                    # We will store user by id as identifier as a fallback
-                    user = list(
-                        self.users.query_items(
-                            query="SELECT * FROM c WHERE c.id = @id",
-                            parameters=[{"name": "@id", "value": user_id}],
-                            enable_cross_partition_query=True,
-                        )
-                    )
-                    if user:
-                        user_identifier = user[0].get("identifier") or user_id
-                except Exception:
-                    user_identifier = user_id
-
-            doc = {
-                "id": thread_id,
-                "createdAt": None if metadata is not None else None,
-                "name": name
-                if name is not None
-                else (metadata.get("name") if metadata and "name" in metadata else None),
-                "userId": user_id,
-                "userIdentifier": user_identifier,
-                "tags": tags,
-                "metadata": metadata,
-            }
-            # Remove None values for upsert cleanliness
-            doc = {k: v for k, v in doc.items() if v is not None} | {"id": thread_id}
-            self.threads.upsert_item(doc)
-            return ""
-        except Exception as e:
-            raise DatabaseQueryError("Failed to upsert thread in Cosmos", cause=e)
+        # Thread metadata storage is not used by Ingenious
+        return ""
 
     async def add_message(self, message: Message) -> str:
         try:
@@ -256,223 +206,8 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
     async def get_threads_for_user(
         self, identifier: str, thread_id: Optional[str]
     ) -> Optional[List[IChatHistoryRepository.ThreadDict]]:
-        try:
-            if thread_id:
-                threads = list(
-                    self.threads.query_items(
-                        query="SELECT * FROM c WHERE c.userIdentifier = @uid AND c.id = @tid",
-                        parameters=[
-                            {"name": "@uid", "value": identifier},
-                            {"name": "@tid", "value": thread_id},
-                        ],
-                        enable_cross_partition_query=True,
-                    )
-                )
-            else:
-                threads = list(
-                    self.threads.query_items(
-                        query="SELECT TOP 100 * FROM c WHERE c.userIdentifier = @uid ORDER BY c.createdAt DESC",
-                        parameters=[{"name": "@uid", "value": identifier}],
-                        enable_cross_partition_query=True,
-                    )
-                )
-
-            if not threads:
-                return []
-
-            thread_ids = [t["id"] for t in threads]
-
-            # Steps
-            steps_by_thread: Dict[str, List[Dict[str, Any]]] = {tid: [] for tid in thread_ids}
-            for tid in thread_ids:
-                docs = list(
-                    self.steps.query_items(
-                        query="SELECT * FROM c WHERE c.threadId = @tid ORDER BY c.createdAt ASC",
-                        parameters=[{"name": "@tid", "value": tid}],
-                        enable_cross_partition_query=True,
-                    )
-                )
-                steps_by_thread[tid] = docs
-
-            # Elements
-            elements_by_thread: Dict[str, List[Dict[str, Any]]] = {tid: [] for tid in thread_ids}
-            for tid in thread_ids:
-                docs = list(
-                    self.elements.query_items(
-                        query="SELECT * FROM c WHERE c.threadId = @tid",
-                        parameters=[{"name": "@tid", "value": tid}],
-                        enable_cross_partition_query=True,
-                    )
-                )
-                elements_by_thread[tid] = docs
-
-            result: List[IChatHistoryRepository.ThreadDict] = []
-            for t in threads:
-                tid = t["id"]
-                # Prepare containers locally to satisfy typing (elements is Optional)
-                steps_list: List[IChatHistoryRepository.StepDict] = []
-                elements_list: List[IChatHistoryRepository.ElementDict] = []
-                thread_dict: IChatHistoryRepository.ThreadDict = {
-                    "id": str(tid),
-                    "createdAt": t.get("createdAt") or self.get_now_as_string(),
-                    "name": t.get("name"),
-                    "userId": t.get("userId"),
-                    "userIdentifier": t.get("userIdentifier"),
-                    "tags": t.get("tags"),
-                    "metadata": t.get("metadata"),
-                    "steps": steps_list,
-                    "elements": elements_list,
-                }
-
-                # Steps with feedback join (do per step)
-                steps_docs = steps_by_thread.get(tid, [])
-                for sd in steps_docs:
-                    feedback_docs = list(
-                        self.feedbacks.query_items(
-                            query="SELECT * FROM c WHERE c.forId = @fid AND c.threadId = @tid",
-                            parameters=[
-                                {"name": "@fid", "value": sd.get("id")},
-                                {"name": "@tid", "value": tid},
-                            ],
-                            enable_cross_partition_query=True,
-                        )
-                    )
-                    feedback = None
-                    if feedback_docs:
-                        fb = feedback_docs[0]
-                        feedback = IChatHistoryRepository.FeedbackDict(
-                            forId=str(sd.get("id", "")),
-                            id=str(fb.get("id")) if fb.get("id") else None,
-                            value=1 if int(fb.get("value", 0) or 0) == 1 else 0,
-                            comment=fb.get("comment"),
-                        )
-
-                    # Coerce type to allowed StepType values
-                    raw_step_type = str(sd.get("type", "undefined"))
-                    allowed_step_types = {
-                        "run",
-                        "tool",
-                        "llm",
-                        "embedding",
-                        "retrieval",
-                        "rerank",
-                        "undefined",
-                        "user_message",
-                        "assistant_message",
-                        "system_message",
-                    }
-                    if raw_step_type not in allowed_step_types:
-                        raw_step_type = "undefined"
-                    step_dict: IChatHistoryRepository.StepDict = {
-                        "id": str(sd.get("id", "")),
-                        "name": str(sd.get("name", "")),
-                        "type": cast(IChatHistoryRepository.StepType, raw_step_type),
-                        "threadId": str(sd.get("threadId", tid)),
-                        "disableFeedback": bool(sd.get("disableFeedback", False)),
-                        "streaming": bool(sd.get("streaming", False)),
-                    }
-                    # Optional fields only when present
-                    if sd.get("parentId") is not None:
-                        step_dict["parentId"] = str(sd.get("parentId"))
-                    if sd.get("waitForAnswer") is not None:
-                        step_dict["waitForAnswer"] = bool(sd.get("waitForAnswer"))
-                    if sd.get("isError") is not None:
-                        step_dict["isError"] = bool(sd.get("isError"))
-                    if sd.get("metadata") is not None:
-                        meta = sd.get("metadata")
-                        if isinstance(meta, dict):
-                            step_dict["metadata"] = meta
-                    if sd.get("tags") is not None:
-                        step_dict["tags"] = sd.get("tags")
-                    if sd.get("input") is not None:
-                        step_dict["input"] = str(sd.get("input"))
-                    if sd.get("output") is not None:
-                        step_dict["output"] = str(sd.get("output"))
-                    if sd.get("createdAt") is not None:
-                        step_dict["createdAt"] = str(sd.get("createdAt"))
-                    if sd.get("start") is not None:
-                        step_dict["start"] = str(sd.get("start"))
-                    if sd.get("end") is not None:
-                        step_dict["end"] = str(sd.get("end"))
-                    if sd.get("generation") is not None:
-                        gen = sd.get("generation")
-                        if isinstance(gen, dict):
-                            step_dict["generation"] = gen
-                    if sd.get("showInput") is not None:
-                        show_input = sd.get("showInput")
-                        if isinstance(show_input, (bool, str)):
-                            step_dict["showInput"] = show_input
-                    if sd.get("language") is not None:
-                        step_dict["language"] = str(sd.get("language"))
-                    if sd.get("indent") is not None:
-                        _indent = sd.get("indent")
-                        if isinstance(_indent, (int, str)):
-                            try:
-                                step_dict["indent"] = int(_indent)
-                            except Exception:
-                                pass
-                    if feedback is not None:
-                        step_dict["feedback"] = feedback
-
-                    steps_list.append(step_dict)
-
-                # Elements
-                for el in elements_by_thread.get(tid, []):
-                    # Build ElementDict safely with defaults for required fields
-                    # Validate element enums
-                    raw_el_type = str(el.get("type", "text"))
-                    allowed_el_types = {
-                        "image",
-                        "text",
-                        "pdf",
-                        "tasklist",
-                        "audio",
-                        "video",
-                        "file",
-                        "plotly",
-                        "component",
-                    }
-                    if raw_el_type not in allowed_el_types:
-                        raw_el_type = "text"
-                    raw_display = str(el.get("display", "inline"))
-                    allowed_displays = {"inline", "side", "page"}
-                    if raw_display not in allowed_displays:
-                        raw_display = "inline"
-                    raw_size = el.get("size")
-                    allowed_sizes = {"small", "medium", "large"}
-                    size_val: Optional[str] = str(raw_size) if raw_size in allowed_sizes else None
-                    page_val: Optional[int] = None
-                    _page = el.get("page")
-                    if isinstance(_page, (int, str)):
-                        try:
-                            page_val = int(_page)
-                        except Exception:
-                            page_val = None
-
-                    el_dict: IChatHistoryRepository.ElementDict = {
-                        "id": str(el.get("id", "")),
-                        "threadId": str(el.get("threadId")) if el.get("threadId") else None,
-                        "type": cast(IChatHistoryRepository.ElementType, raw_el_type),
-                        "chainlitKey": el.get("chainlitKey"),
-                        "url": el.get("url"),
-                        "objectKey": el.get("objectKey"),
-                        "name": str(el.get("name", "")),
-                        "display": cast(IChatHistoryRepository.ElementDisplay, raw_display),
-                        "size": cast(Optional[IChatHistoryRepository.ElementSize], size_val),
-                        "language": el.get("language"),
-                        "page": page_val,
-                        "autoPlay": el.get("autoPlay"),
-                        "playerConfig": el.get("playerConfig"),
-                        "forId": str(el.get("forId")) if el.get("forId") else None,
-                        "mime": el.get("mime"),
-                    }
-                    elements_list.append(el_dict)
-
-                result.append(thread_dict)
-
-            return result
-        except Exception as e:
-            raise DatabaseQueryError("Failed to get threads for user from Cosmos", cause=e)
+        # Thread metadata storage with steps/elements/feedbacks is not used by Ingenious
+        return []
 
     async def update_message_feedback(
         self, message_id: str, thread_id: str, positive_feedback: bool | None
@@ -637,36 +372,6 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
             for d in docs:
                 self.chat_history_summary.delete_item(item=d["id"], partition_key=thread_id)
 
-            # Delete steps, elements, feedbacks
-            for container in (self.steps, self.elements, self.feedbacks):
-                docs = list(
-                    container.query_items(
-                        query="SELECT c.id FROM c WHERE c.threadId = @tid",
-                        parameters=[{"name": "@tid", "value": thread_id}],
-                        enable_cross_partition_query=True,
-                    )
-                )
-                for d in docs:
-                    container.delete_item(item=d["id"], partition_key=thread_id)
-
-            # Delete thread metadata
-            try:
-                self.threads.delete_item(item=thread_id, partition_key=thread_id)
-            except Exception:
-                # If the item id differs, try to look it up by id
-                tdocs = list(
-                    self.threads.query_items(
-                        query="SELECT c.id FROM c WHERE c.id = @tid",
-                        parameters=[{"name": "@tid", "value": thread_id}],
-                        enable_cross_partition_query=True,
-                    )
-                )
-                for td in tdocs:
-                    try:
-                        self.threads.delete_item(item=td["id"], partition_key=thread_id)
-                    except Exception:
-                        pass
-
             return None
         except Exception as e:
             raise DatabaseQueryError("Failed to delete thread in Cosmos", cause=e)
@@ -706,41 +411,9 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
             raise DatabaseQueryError("Failed to delete user memory in Cosmos", cause=e)
 
     async def add_step(self, step_dict: IChatHistoryRepository.StepDict) -> str:
-        try:
-            if "id" not in step_dict or not step_dict["id"]:
-                step_dict["id"] = str(uuid.uuid4())
-            # Store as-is (JSON) with threadId partition
-            body = {k: v for k, v in step_dict.items() if v is not None}
-            self.steps.upsert_item(body)
-            return str(step_dict["id"])
-        except Exception as e:
-            raise DatabaseQueryError("Failed to add step in Cosmos", cause=e)
+        # Step storage is not used by Ingenious
+        return str(step_dict.get("id", ""))
 
     async def get_thread(self, thread_id: str) -> List[IChatHistoryRepository.Thread]:
-        """Get thread metadata by thread ID."""
-        try:
-            threads = list(
-                self.threads.query_items(
-                    query="SELECT * FROM c WHERE c.id = @tid",
-                    parameters=[{"name": "@tid", "value": thread_id}],
-                    enable_cross_partition_query=True,
-                )
-            )
-            result = []
-            for t in threads:
-                from uuid import UUID as _UUID
-
-                result.append(
-                    IChatHistoryRepository.Thread(
-                        id=_UUID(t.get("id", "00000000-0000-0000-0000-000000000000")),
-                        createdAt=t.get("createdAt"),
-                        name=t.get("name"),
-                        userId=_UUID(t.get("userId", "00000000-0000-0000-0000-000000000000")),
-                        userIdentifier=t.get("userIdentifier"),
-                        tags=t.get("tags"),
-                        metadata=t.get("metadata"),
-                    )
-                )
-            return result
-        except Exception as e:
-            raise DatabaseQueryError("Failed to get thread in Cosmos", cause=e)
+        # Thread metadata storage is not used by Ingenious
+        return []

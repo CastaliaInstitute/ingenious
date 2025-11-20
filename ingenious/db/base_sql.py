@@ -64,16 +64,12 @@ class BaseSQLRepository(IChatHistoryRepository, ABC):
         """Create all required database tables.
 
         Uses QueryBuilder to generate database-specific CREATE TABLE statements
-        for chat_history, users, threads, steps, elements, and feedbacks.
+        for chat_history, chat_history_summary, and users.
         """
         table_queries = [
             self.query_builder.create_chat_history_table(),
             self.query_builder.create_chat_history_summary_table(),
             self.query_builder.create_users_table(),
-            self.query_builder.create_threads_table(),
-            self.query_builder.create_steps_table(),
-            self.query_builder.create_elements_table(),
-            self.query_builder.create_feedbacks_table(),
         ]
 
         for query in table_queries:

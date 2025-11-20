@@ -208,44 +208,6 @@ class TestQueryBuilderWithSQLite:
         assert "identifier TEXT NOT NULL UNIQUE" in query
         assert "metadata JSONB NOT NULL" in query
 
-    def test_create_threads_table(self):
-        """Test threads table creation query."""
-        query = self.builder.create_threads_table()
-
-        assert "CREATE TABLE IF NOT EXISTS threads" in query
-        assert "id UUID PRIMARY KEY" in query
-        assert "userId UUID" in query
-        assert "FOREIGN KEY" in query
-        assert "ON DELETE CASCADE" in query
-
-    def test_create_steps_table(self):
-        """Test steps table creation query."""
-        query = self.builder.create_steps_table()
-
-        assert "CREATE TABLE IF NOT EXISTS steps" in query
-        assert "id UUID PRIMARY KEY" in query
-        assert "name TEXT NOT NULL" in query
-        assert "type TEXT NOT NULL" in query
-        assert "end TEXT" in query  # SQLite doesn't need brackets
-
-    def test_create_elements_table(self):
-        """Test elements table creation query."""
-        query = self.builder.create_elements_table()
-
-        assert "CREATE TABLE IF NOT EXISTS elements." in query
-        assert "id UUID PRIMARY KEY." in query
-        assert "threadId UUID." in query
-        assert "type TEXT." in query
-
-    def test_create_feedbacks_table(self):
-        """Test feedbacks table creation query."""
-        query = self.builder.create_feedbacks_table()
-
-        assert "CREATE TABLE IF NOT EXISTS feedbacks." in query
-        assert "id UUID PRIMARY KEY." in query
-        assert "forId UUID NOT NULL." in query
-        assert "value INT NOT NULL." in query
-
     def test_insert_message(self):
         """Test message insertion query."""
         query = self.builder.insert_message()
@@ -386,19 +348,6 @@ class TestQueryBuilderWithAzureSQL:
         assert "user_id NVARCHAR(255)." in query
         assert "positive_feedback BIT." in query
         assert "timestamp DATETIME2." in query
-
-    def test_create_threads_table_azure(self):
-        """Test threads table creation query for Azure SQL."""
-        query = self.builder.create_threads_table()
-
-        assert "userId UNIQUEIDENTIFIER." in query
-        assert "FOREIGN KEY (userId) REFERENCES users(id)." in query  # No quotes in Azure SQL
-
-    def test_create_steps_table_azure(self):
-        """Test steps table creation query for Azure SQL."""
-        query = self.builder.create_steps_table()
-
-        assert "[end] DATETIME2." in query  # Azure SQL uses brackets for reserved words
 
     def test_select_latest_memory_azure(self):
         """Test latest memory selection query for Azure SQL."""
