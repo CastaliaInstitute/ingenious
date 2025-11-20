@@ -23,6 +23,7 @@ from ingenious.services.chat_services.multi_agent.conversation_flows.knowledge_b
 @pytest.mark.asyncio
 async def test_kb_agent_azure_runtime_failure_falls_back_to_chroma(
     mock_ingenious_settings: MagicMock,
+    tmp_path,
 ) -> None:
     """P0: Verify _search_knowledge_base falls back to ChromaDB when AzureSearchProvider raises a runtime exception."""
 
@@ -40,7 +41,7 @@ async def test_kb_agent_azure_runtime_failure_falls_back_to_chroma(
 
     # Build a minimal config that has chat_history.memory_path
     cfg: NS = NS(
-        chat_history=NS(memory_path="/tmp"),
+        chat_history=NS(memory_path=str(tmp_path)),
         # Optional fields that might be read later:
         models=NS(),
         web=NS(streaming_chunk_size=100),
@@ -54,7 +55,7 @@ async def test_kb_agent_azure_runtime_failure_falls_back_to_chroma(
         flow = ConversationFlow(parent_multi_agent_chat_service=_ParentSvc(cfg))
 
     # Ensure a simple local path used by the Chroma fallback
-    flow._memory_path = "/tmp"
+    flow._memory_path = str(tmp_path)
 
     # Mock the AzureSearchProvider to fail
     mock_provider_instance: AsyncMock = AsyncMock()
