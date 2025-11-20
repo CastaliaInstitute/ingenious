@@ -9,6 +9,9 @@ import tempfile
 from unittest.mock import patch
 
 import pytest
+from pydantic import ValidationError
+
+from ingenious.config.config import get_config
 from ingenious.config.settings import (
     ChatHistorySettings,
     IngeniousSettings,
@@ -16,9 +19,6 @@ from ingenious.config.settings import (
     ModelSettings,
     WebSettings,
 )
-from pydantic import ValidationError
-
-from ingenious.config.config import get_config
 
 
 class TestIngeniousSettings:

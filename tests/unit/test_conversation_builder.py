@@ -18,24 +18,24 @@ class TestBuildSystemPrompt:
 
     def test_build_system_prompt_without_user_name(self):
         """Test building system prompt without user name."""
-        system_prompt = "You are a helpful assistant."
+        system_prompt = "You are a helpful assistant"
 
         result = build_system_prompt(system_prompt)
 
-        expected = {"role": "system", "content": "You are a helpful assistant."}
+        expected = {"role": "system", "content": "You are a helpful assistant"}
         assert result == expected
         assert "name" not in result
 
     def test_build_system_prompt_with_user_name(self):
         """Test building system prompt with user name."""
-        system_prompt = "You are a helpful assistant."
+        system_prompt = "You are a helpful assistant"
         user_name = "alice"
 
         result = build_system_prompt(system_prompt, user_name)
 
         expected = {
             "role": "system",
-            "content": "You are a helpful assistant.",
+            "content": "You are a helpful assistant",
             "name": "alice",
         }
         assert result == expected
@@ -115,14 +115,14 @@ class TestBuildAssistantMessage:
 
     def test_build_assistant_message_with_both_content_and_tool_calls(self):
         """Test building assistant message with both content and tool calls."""
-        content = "Let me help you with that."
+        content = "Let me help you with that"
         tool_calls = [{"id": "call_2", "type": "function", "function": {"name": "helper_func"}}]
 
         result = build_assistant_message(content, tool_calls)
 
         expected = {
             "role": "assistant",
-            "content": "Let me help you with that.",
+            "content": "Let me help you with that",
             "tool_calls": [
                 {
                     "id": "call_2",
@@ -144,11 +144,11 @@ class TestBuildAssistantMessage:
 
     def test_build_assistant_message_with_empty_tool_calls(self):
         """Test building assistant message with empty tool calls list."""
-        content = "No tools needed."
+        content = "No tools needed"
 
         result = build_assistant_message(content, [])
 
-        expected = {"role": "assistant", "content": "No tools needed."}
+        expected = {"role": "assistant", "content": "No tools needed"}
         assert result == expected
         assert "tool_calls" not in result
 
@@ -158,9 +158,9 @@ class TestBuildMessage:
 
     def test_build_message_system_role(self):
         """Test building message with system role."""
-        result = build_message("system", "You are helpful.", "user1")
+        result = build_message("system", "You are helpful", "user1")
 
-        expected = {"role": "system", "content": "You are helpful."}
+        expected = {"role": "system", "content": "You are helpful"}
         assert result == expected
 
     def test_build_message_user_role(self):
@@ -179,7 +179,7 @@ class TestBuildMessage:
 
     def test_build_message_invalid_role(self):
         """Test building message with invalid role."""
-        with pytest.raises(ValueError, match="Invalid message role."):
+        with pytest.raises(ValueError, match="Invalid message role"):
             build_message("invalid", "content", "user1")
 
     def test_build_message_none_content(self):

@@ -29,9 +29,9 @@ class TestMessageFeedbackService:
     async def test_update_message_feedback_success(self):
         """Test successful message feedback update."""
         # Setup test data
-        message_id = "msg_123."
-        thread_id = "thread_456."
-        user_id = "user_789."
+        message_id = "msg_123"
+        thread_id = "thread_456"
+        user_id = "user_789"
 
         request = MessageFeedbackRequest(
             message_id=message_id,
@@ -51,7 +51,7 @@ class TestMessageFeedbackService:
 
         # Verify
         assert isinstance(result, MessageFeedbackResponse)
-        assert result.message == f"Feedback submitted for message {message_id}."
+        assert result.message == f"Feedback submitted for message {message_id}"
 
         # Verify repository calls
         self.mock_chat_history_repository.get_message.assert_called_once_with(message_id, thread_id)
@@ -69,7 +69,7 @@ class TestMessageFeedbackService:
             positive_feedback=True,
         )
 
-        with pytest.raises(ValueError, match="Message ID does not match message feedback request."):
+        with pytest.raises(ValueError, match="Message ID does not match message feedback request"):
             await self.service.update_message_feedback("msg_123", request)
 
         # Verify no repository calls were made
@@ -92,7 +92,7 @@ class TestMessageFeedbackService:
         # Mock repository to return None (message not found)
         self.mock_chat_history_repository.get_message = AsyncMock(return_value=None)
 
-        with pytest.raises(ValueError, match=f"Message {message_id} not found."):
+        with pytest.raises(ValueError, match=f"Message {message_id} not found"):
             await self.service.update_message_feedback(message_id, request)
 
         # Verify get_message was called but update_message_feedback was not
@@ -117,7 +117,7 @@ class TestMessageFeedbackService:
         mock_message.user_id = "different_user"
         self.mock_chat_history_repository.get_message = AsyncMock(return_value=mock_message)
 
-        with pytest.raises(ValueError, match="User ID does not match message feedback request."):
+        with pytest.raises(ValueError, match="User ID does not match message feedback request"):
             await self.service.update_message_feedback(message_id, request)
 
         # Verify get_message was called but update_message_feedback was not
@@ -148,7 +148,7 @@ class TestMessageFeedbackService:
 
         # Verify success
         assert isinstance(result, MessageFeedbackResponse)
-        assert result.message == f"Feedback submitted for message {message_id}."
+        assert result.message == f"Feedback submitted for message {message_id}"
 
         # Verify repository calls
         self.mock_chat_history_repository.update_message_feedback.assert_called_once_with(

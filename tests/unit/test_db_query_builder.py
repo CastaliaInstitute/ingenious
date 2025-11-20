@@ -24,66 +24,66 @@ class TestSQLiteDialect:
     def test_get_create_table_if_not_exists_prefix(self):
         """Test CREATE TABLE IF NOT EXISTS prefix for SQLite."""
         result = self.dialect.get_create_table_if_not_exists_prefix()
-        assert result == "CREATE TABLE IF NOT EXISTS."
+        assert result == "CREATE TABLE IF NOT EXISTS"
 
     def test_get_limit_clause(self):
         """Test LIMIT clause generation for SQLite."""
         result = self.dialect.get_limit_clause(10)
-        assert result == "LIMIT 10."
+        assert result == "LIMIT 10"
 
         result = self.dialect.get_limit_clause(1)
-        assert result == "LIMIT 1."
+        assert result == "LIMIT 1"
 
     def test_get_upsert_query(self):
         """Test UPSERT query generation for SQLite."""
-        table = "test_table."
-        columns = ["id.", "name.", "value."]
-        conflict_column = "id."
+        table = "test_table"
+        columns = ["id", "name", "value"]
+        conflict_column = "id"
 
         result = self.dialect.get_upsert_query(table, columns, conflict_column)
 
-        assert "INSERT INTO test_table." in result
-        assert '"id.", "name.", "value."' in result
-        assert "?, ?, ?." in result
-        assert "ON CONFLICT." in result
-        assert 'EXCLUDED."name."' in result
-        assert 'EXCLUDED."value."' in result
+        assert "INSERT INTO test_table" in result
+        assert '"id", "name", "value"' in result
+        assert "?, ?, ?" in result
+        assert "ON CONFLICT" in result
+        assert 'EXCLUDED."name"' in result
+        assert 'EXCLUDED."value"' in result
         # Should not update the conflict column
-        assert 'EXCLUDED."id."' not in result
+        assert 'EXCLUDED."id"' not in result
 
     def test_get_upsert_query_single_column(self):
         """Test UPSERT query with single non-conflict column."""
-        result = self.dialect.get_upsert_query("test.", ["id.", "name."], "id.")
-        assert 'SET "name." = EXCLUDED."name."' in result
+        result = self.dialect.get_upsert_query("test", ["id", "name"], "id")
+        assert 'SET "name" = EXCLUDED."name"' in result
 
     def test_get_temp_table_syntax(self):
         """Test temporary table creation syntax for SQLite."""
-        table_name = "temp_test."
-        select_query = "SELECT * FROM source_table."
+        table_name = "temp_test"
+        select_query = "SELECT * FROM source_table"
 
         result = self.dialect.get_temp_table_syntax(table_name, select_query)
 
-        assert "CREATE TEMP TABLE temp_test AS." in result
-        assert "SELECT * FROM source_table." in result
+        assert "CREATE TEMP TABLE temp_test AS" in result
+        assert "SELECT * FROM source_table" in result
 
     def test_get_drop_temp_table_syntax(self):
         """Test temporary table drop syntax for SQLite."""
-        result = self.dialect.get_drop_temp_table_syntax("temp_test.")
-        assert result == "DROP TABLE temp_test."
+        result = self.dialect.get_drop_temp_table_syntax("temp_test")
+        assert result == "DROP TABLE temp_test"
 
     def test_get_data_types(self):
         """Test SQLite data type mappings."""
         data_types = self.dialect.get_data_types()
 
         expected_types = {
-            "uuid.": "UUID.",
-            "varchar": "TEXT.",
-            "text.": "TEXT.",
-            "boolean.": "BOOLEAN.",
-            "datetime.": "TEXT.",
-            "int.": "INT.",
-            "json.": "JSONB.",
-            "array.": "TEXT[].",
+            "uuid": "UUID",
+            "varchar": "TEXT",
+            "text": "TEXT",
+            "boolean": "BOOLEAN",
+            "datetime": "TEXT",
+            "int": "INT",
+            "json": "JSONB",
+            "array": "TEXT[]",
         }
 
         assert data_types == expected_types
@@ -212,124 +212,124 @@ class TestQueryBuilderWithSQLite:
         """Test message insertion query."""
         query = self.builder.insert_message()
 
-        assert "INSERT INTO chat_history." in query
-        assert "user_id, thread_id, message_id." in query
-        assert "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)." in query
+        assert "INSERT INTO chat_history" in query
+        assert "user_id, thread_id, message_id" in query
+        assert "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)" in query
 
     def test_insert_memory(self):
         """Test memory insertion query."""
         query = self.builder.insert_memory()
 
-        assert "INSERT INTO chat_history_summary." in query
-        assert "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)." in query
+        assert "INSERT INTO chat_history_summary" in query
+        assert "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)" in query
 
     def test_select_message(self):
         """Test message selection query."""
         query = self.builder.select_message()
 
-        assert "SELECT user_id, thread_id, message_id." in query
-        assert "FROM chat_history." in query
-        assert "WHERE message_id = ? AND thread_id = ?." in query
+        assert "SELECT user_id, thread_id, message_id" in query
+        assert "FROM chat_history" in query
+        assert "WHERE message_id = ? AND thread_id = ?" in query
 
     def test_select_latest_memory(self):
         """Test latest memory selection query."""
         query = self.builder.select_latest_memory()
 
-        assert "SELECT user_id, thread_id, message_id." in query
-        assert "FROM chat_history_summary." in query
-        assert "WHERE thread_id = ?." in query
-        assert "ORDER BY timestamp DESC." in query
-        assert "LIMIT 1." in query
+        assert "SELECT user_id, thread_id, message_id" in query
+        assert "FROM chat_history_summary" in query
+        assert "WHERE thread_id = ?" in query
+        assert "ORDER BY timestamp DESC" in query
+        assert "LIMIT 1" in query
 
     def test_update_message_feedback(self):
         """Test message feedback update query."""
         query = self.builder.update_message_feedback()
 
-        assert "UPDATE chat_history." in query
-        assert "SET positive_feedback = ?." in query
-        assert "WHERE message_id = ? AND thread_id = ?." in query
+        assert "UPDATE chat_history" in query
+        assert "SET positive_feedback = ?" in query
+        assert "WHERE message_id = ? AND thread_id = ?" in query
 
     def test_update_memory_feedback(self):
         """Test memory feedback update query."""
         query = self.builder.update_memory_feedback()
 
-        assert "UPDATE chat_history_summary." in query
-        assert "SET positive_feedback = ?." in query
+        assert "UPDATE chat_history_summary" in query
+        assert "SET positive_feedback = ?" in query
 
     def test_update_message_content_filter(self):
         """Test message content filter update query."""
         query = self.builder.update_message_content_filter()
 
-        assert "UPDATE chat_history." in query
-        assert "SET content_filter_results = ?." in query
+        assert "UPDATE chat_history" in query
+        assert "SET content_filter_results = ?" in query
 
     def test_update_memory_content_filter(self):
         """Test memory content filter update query."""
         query = self.builder.update_memory_content_filter()
 
-        assert "UPDATE chat_history_summary." in query
-        assert "SET content_filter_results = ?." in query
+        assert "UPDATE chat_history_summary" in query
+        assert "SET content_filter_results = ?" in query
 
     def test_insert_user(self):
         """Test user insertion query."""
         query = self.builder.insert_user()
 
-        assert "INSERT INTO users." in query
-        assert "VALUES (?, ?, ?, ?)." in query
+        assert "INSERT INTO users" in query
+        assert "VALUES (?, ?, ?, ?)" in query
 
     def test_select_user(self):
         """Test user selection query."""
         query = self.builder.select_user()
 
-        assert "SELECT id, identifier, metadata, createdAt." in query
-        assert "FROM users." in query
-        assert "WHERE identifier = ?." in query
+        assert "SELECT id, identifier, metadata, createdAt" in query
+        assert "FROM users" in query
+        assert "WHERE identifier = ?" in query
 
     def test_select_thread_messages_default_limit(self):
         """Test thread messages selection with default limit."""
         query = self.builder.select_thread_messages()
 
-        assert "SELECT *." in query
-        assert "FROM chat_history." in query
-        assert "WHERE thread_id = ?." in query
-        assert "LIMIT 5." in query
-        assert "ORDER BY timestamp." in query
+        assert "SELECT *" in query
+        assert "FROM chat_history" in query
+        assert "WHERE thread_id = ?" in query
+        assert "LIMIT 5" in query
+        assert "ORDER BY timestamp" in query
 
     def test_select_thread_messages_custom_limit(self):
         """Test thread messages selection with custom limit."""
         query = self.builder.select_thread_messages(limit=10)
 
-        assert "LIMIT 10." in query
+        assert "LIMIT 10" in query
 
     def test_select_thread_memory(self):
         """Test thread memory selection query."""
         query = self.builder.select_thread_memory()
 
-        assert "SELECT user_id, thread_id, message_id." in query
-        assert "FROM chat_history_summary." in query
-        assert "WHERE thread_id = ?." in query
-        assert "LIMIT 1." in query
+        assert "SELECT user_id, thread_id, message_id" in query
+        assert "FROM chat_history_summary" in query
+        assert "WHERE thread_id = ?" in query
+        assert "LIMIT 1" in query
 
     def test_delete_thread(self):
         """Test thread deletion query."""
         query = self.builder.delete_thread()
 
-        assert "DELETE FROM chat_history." in query
-        assert "WHERE thread_id = ?." in query
+        assert "DELETE FROM chat_history" in query
+        assert "WHERE thread_id = ?" in query
 
     def test_delete_thread_memory(self):
         """Test thread memory deletion query."""
         query = self.builder.delete_thread_memory()
 
-        assert "DELETE FROM chat_history_summary." in query
-        assert "WHERE thread_id = ?." in query
+        assert "DELETE FROM chat_history_summary" in query
+        assert "WHERE thread_id = ?" in query
 
     def test_delete_user_memory(self):
         """Test user memory deletion query."""
         query = self.builder.delete_user_memory()
 
-        assert "DELETE FROM chat_history_summary." in query
-        assert "WHERE user_id = ?." in query
+        assert "DELETE FROM chat_history_summary" in query
+        assert "WHERE user_id = ?" in query
 
 
 class TestQueryBuilderWithAzureSQL:
@@ -343,33 +343,33 @@ class TestQueryBuilderWithAzureSQL:
         """Test chat history table creation query for Azure SQL."""
         query = self.builder.create_chat_history_table()
 
-        assert "IF NOT EXISTS." in query
-        assert "sysobjects." in query
-        assert "user_id NVARCHAR(255)." in query
-        assert "positive_feedback BIT." in query
-        assert "timestamp DATETIME2." in query
+        assert "IF NOT EXISTS" in query
+        assert "sysobjects" in query
+        assert "user_id NVARCHAR(255)" in query
+        assert "positive_feedback BIT" in query
+        assert "timestamp DATETIME2" in query
 
     def test_select_latest_memory_azure(self):
         """Test latest memory selection query for Azure SQL."""
         query = self.builder.select_latest_memory()
 
-        assert "SELECT TOP 1." in query  # Azure SQL uses TOP instead of LIMIT
-        assert "ORDER BY timestamp DESC." in query
+        assert "SELECT TOP 1" in query  # Azure SQL uses TOP instead of LIMIT
+        assert "ORDER BY timestamp DESC" in query
 
     def test_select_thread_messages_azure(self):
         """Test thread messages selection query for Azure SQL."""
         query = self.builder.select_thread_messages(limit=3)
 
-        assert "SELECT TOP 3." in query
-        assert "ROW_NUMBER() OVER." in query
-        assert "WHERE rn <= 3." in query
+        assert "SELECT TOP 3" in query
+        assert "ROW_NUMBER() OVER" in query
+        assert "WHERE rn <= 3" in query
 
     def test_select_thread_memory_azure(self):
         """Test thread memory selection query for Azure SQL."""
         query = self.builder.select_thread_memory()
 
-        assert "SELECT TOP 1." in query
-        assert "ORDER BY timestamp DESC." in query
+        assert "SELECT TOP 1" in query
+        assert "ORDER BY timestamp DESC" in query
 
 
 class TestQueryBuilderGeneral:
@@ -381,17 +381,17 @@ class TestQueryBuilderGeneral:
 
     def test_get_query_with_existing_method(self):
         """Test get_query with existing method."""
-        result = self.builder.get_query("insert_message.")
-        assert "INSERT INTO chat_history." in result
+        result = self.builder.get_query("insert_message")
+        assert "INSERT INTO chat_history" in result
 
     def test_get_query_with_parameters(self):
         """Test get_query with method parameters."""
-        result = self.builder.get_query("select_thread_messages.", limit=10)
-        assert "LIMIT 10." in result
+        result = self.builder.get_query("select_thread_messages", limit=10)
+        assert "LIMIT 10" in result
 
     def test_get_query_with_nonexistent_method(self):
         """Test get_query with non-existent method."""
-        result = self.builder.get_query("nonexistent_method.")
+        result = self.builder.get_query("nonexistent_method")
         assert result == ""
 
     def test_get_query_with_non_callable_attribute(self):

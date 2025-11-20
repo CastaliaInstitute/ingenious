@@ -126,7 +126,7 @@ class TestTokenLimitExceededError:
     def test_token_limit_exceeded_error_realistic_scenario(self):
         """Test TokenLimitExceededError with realistic token counts."""
         error = TokenLimitExceededError(
-            message="This model's maximum context length is 4096 tokens, however you requested 4500 tokens (4000 in your prompt; 500 for the completion). Please reduce your prompt; or completion length.",
+            message="This model's maximum context length is 4096 tokens, however you requested 4500 tokens (4000 in your prompt; 500 for the completion). Please reduce your prompt; or completion length",
             max_context_length=4096,
             requested_tokens=4500,
             prompt_tokens=4000,

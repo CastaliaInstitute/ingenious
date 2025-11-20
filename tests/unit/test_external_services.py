@@ -116,7 +116,7 @@ class TestOpenAIService:
         )
 
         with patch(
-            "ingenious.external_services.openai_service."
+            "ingenious.external_services.openai_service"
             "AzureClientFactory.create_openai_client_from_params"
         ) as mock_factory:
             mock_client = Mock()
@@ -213,7 +213,7 @@ class TestOpenAIService:
             mock_client = Mock()
             from openai import BadRequestError
 
-            token_error_msg = "This model's maximum context length is 4096 tokens, however you requested 5000 tokens (4500 in your prompt; 500 for the completion). Please reduce your prompt; or completion length."
+            token_error_msg = "This model's maximum context length is 4096 tokens, however you requested 5000 tokens (4500 in your prompt; 500 for the completion). Please reduce your prompt; or completion length"
             mock_error = BadRequestError(
                 token_error_msg, response=Mock(), body={"message": token_error_msg}
             )

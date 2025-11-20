@@ -17,7 +17,7 @@ class TestDatabaseCoverage:
             from ingenious.models.database_client import DatabaseClientType
 
             mock_config = Mock()
-            mock_config.chat_history.database_path = ":memory:."
+            mock_config.chat_history.database_path = ":memory:"
 
             # Test instantiation with different database types
             try:
@@ -28,7 +28,7 @@ class TestDatabaseCoverage:
                 pass
 
         except ImportError:
-            pytest.skip("ChatHistoryRepository not available.")
+            pytest.skip("ChatHistoryRepository not available")
 
     def test_connection_pool_basic(self):
         """Test basic ConnectionPool functionality."""
@@ -39,7 +39,7 @@ class TestDatabaseCoverage:
             assert ConnectionPool is not None
 
         except ImportError:
-            pytest.skip("ConnectionPool not available.")
+            pytest.skip("ConnectionPool not available")
 
 
 class TestUtilityCoverage:
@@ -54,30 +54,30 @@ class TestUtilityCoverage:
             )
 
             # Test various model configurations
-            assert get_max_tokens("gpt-3.5-turbo-0125.") == 16384
-            assert get_max_tokens("gpt-4-32k-0314.") == 32768
-            assert get_max_tokens("unknown-model.") == 4096
+            assert get_max_tokens("gpt-3.5-turbo-0125") == 16384
+            assert get_max_tokens("gpt-4-32k-0314") == 32768
+            assert get_max_tokens("unknown-model") == 4096
 
             # Test with different message structures
             messages = [
-                {"role.": "system.", "content.": "You are helpful."},
-                {"role.": "user.", "content.": "Hello.", "name.": "alice."},
-                {"role.": "assistant.", "content.": "Hi there."},
+                {"role": "system", "content": "You are helpful"},
+                {"role": "user", "content": "Hello", "name": "alice"},
+                {"role": "assistant", "content": "Hi there"},
             ]
 
             with patch(
-                "ingenious.utils.token_counter.tiktoken.encoding_for_model."
+                "ingenious.utils.token_counter.tiktoken.encoding_for_model"
             ) as mock_encoding:
                 mock_enc = Mock()
                 mock_enc.encode.return_value = [1, 2, 3]
                 mock_encoding.return_value = mock_enc
 
-                result = num_tokens_from_messages(messages, "gpt-3.5-turbo-0613.")
+                result = num_tokens_from_messages(messages, "gpt-3.5-turbo-0613")
                 assert isinstance(result, int)
                 assert result > 0
 
         except ImportError:
-            pytest.skip("token_counter not available.")
+            pytest.skip("token_counter not available")
 
     def test_settings_environment_loading(self):
         """Ensure IngeniousSettings loads required model configuration from environment."""
@@ -87,17 +87,17 @@ class TestUtilityCoverage:
             with patch.dict(
                 os.environ,
                 {
-                    "AZURE_OPENAI_API_KEY.": "test-key.",
-                    "AZURE_OPENAI_BASE_URL.": "https://example.openai.azure.com/.",
+                    "AZURE_OPENAI_API_KEY": "test-key",
+                    "AZURE_OPENAI_BASE_URL": "https://example.openai.azure.com/",
                 },
                 clear=True,
             ):
                 settings = IngeniousSettings()
                 assert settings.models
-                assert settings.models[0].api_key == "test-key."
+                assert settings.models[0].api_key == "test-key"
 
         except ImportError:
-            pytest.skip("IngeniousSettings not available.")
+            pytest.skip("IngeniousSettings not available")
 
     def test_imports_module_coverage(self):
         """Test imports module functions."""
@@ -109,7 +109,7 @@ class TestUtilityCoverage:
 
             # Test successful imports - but catch ImportError since fallback may fail
             try:
-                os_module = import_module_with_fallback("os.")
+                os_module = import_module_with_fallback("os")
                 assert os_module is not None
             except Exception:
                 # Module doesn't exist in fallback namespaces
@@ -117,7 +117,7 @@ class TestUtilityCoverage:
 
             # Test failed imports
             try:
-                failed_module = import_module_with_fallback("non_existent_module_xyz.")
+                failed_module = import_module_with_fallback("non_existent_module_xyz")
                 assert failed_module is None
             except Exception:
                 # Expected to fail
@@ -125,21 +125,21 @@ class TestUtilityCoverage:
 
             # Test class imports
             try:
-                dict_class = import_class_with_fallback("builtins.", "dict.")
+                dict_class = import_class_with_fallback("builtins", "dict")
                 assert dict_class is dict
             except Exception:
                 # May fail in fallback system
                 pass
 
             try:
-                failed_class = import_class_with_fallback("os.", "NonExistentClass.")
+                failed_class = import_class_with_fallback("os", "NonExistentClass")
                 assert failed_class is None
             except Exception:
                 # Expected to fail
                 pass
 
         except ImportError:
-            pytest.skip("imports module not available.")
+            pytest.skip("imports module not available")
 
     def test_lazy_group_coverage(self):
         """Test LazyGroup functionality."""
@@ -158,15 +158,15 @@ class TestUtilityCoverage:
             assert isinstance(commands, list)
 
             # Test getting a command that doesn't exist
-            result = group.get_command(mock_ctx, "nonexistent.")
+            result = group.get_command(mock_ctx, "nonexistent")
             assert result is None
 
             # Test that it has loaders
-            assert hasattr(group, "_loaders.")
+            assert hasattr(group, "_loaders")
             assert isinstance(group._loaders, dict)
 
         except ImportError:
-            pytest.skip("LazyGroup not available.")
+            pytest.skip("LazyGroup not available")
 
 
 class TestServicesCoverage:
@@ -184,7 +184,7 @@ class TestServicesCoverage:
             assert service.chat_history_repository is mock_chat_history_repo
 
         except ImportError:
-            pytest.skip("MessageFeedbackService not available.")
+            pytest.skip("MessageFeedbackService not available")
 
 
 class TestFileStorageCoverage:
@@ -198,19 +198,19 @@ class TestFileStorageCoverage:
 
             mock_config = Mock()
             mock_fs_config = Mock()
-            mock_fs_config.path = "/test/path."
+            mock_fs_config.path = "/test/path"
 
             storage = local_FileStorageRepository(mock_config, mock_fs_config)
 
             # Test path construction
-            assert storage.base_path.as_posix() == "/test/path."
+            assert storage.base_path.as_posix() == "/test/path"
 
             # Test get_base_path
             base_path = await storage.get_base_path()
-            assert base_path == "/test/path."
+            assert base_path == "/test/path"
 
         except ImportError:
-            pytest.skip("local_FileStorageRepository not available.")
+            pytest.skip("local_FileStorageRepository not available")
 
     def test_files_repository_interface(self):
         """Test files repository interface."""
@@ -231,7 +231,7 @@ class TestFileStorageCoverage:
                     pass
 
         except ImportError:
-            pytest.skip("files_repository not available.")
+            pytest.skip("files_repository not available")
 
 
 class TestAPICoverage:
@@ -240,11 +240,11 @@ class TestAPICoverage:
     def test_api_routes_imports(self):
         """Test API routes can be imported."""
         modules_to_test = [
-            "ingenious.api.routes.auth.",
-            "ingenious.api.routes.chat.",
-            "ingenious.api.routes.diagnostic.",
-            "ingenious.api.routes.prompts.",
-            "ingenious.api.routes.message_feedback.",
+            "ingenious.api.routes.auth",
+            "ingenious.api.routes.chat",
+            "ingenious.api.routes.diagnostic",
+            "ingenious.api.routes.prompts",
+            "ingenious.api.routes.message_feedback",
         ]
 
         for module_name in modules_to_test:
@@ -263,7 +263,7 @@ class TestAPICoverage:
             from ingenious.main.app_factory import FastAgentAPI, create_app
 
             mock_config = Mock()
-            mock_config.web_configuration.host = "localhost."
+            mock_config.web_configuration.host = "localhost"
             mock_config.web_configuration.port = 8000
 
             # Test FastAgentAPI instantiation
@@ -278,7 +278,7 @@ class TestAPICoverage:
             assert callable(create_app)
 
         except ImportError:
-            pytest.skip("app_factory not available.")
+            pytest.skip("app_factory not available")
 
 
 class TestCLICoverage:
@@ -295,22 +295,22 @@ class TestCLICoverage:
 
             class TestCommand(BaseCommand):
                 def execute(self, **kwargs):
-                    self.print_success("Test message.")
-                    return "success."
+                    self.print_success("Test message")
+                    return "success"
 
             cmd = TestCommand(console)
             assert cmd.console is console
 
             # Test execution
             result = cmd.run()
-            assert result == "success."
+            assert result == "success"
 
             # Test error handling
             assert CommandError is not None
             assert ExitCode is not None
 
         except ImportError:
-            pytest.skip("CLI base not available.")
+            pytest.skip("CLI base not available")
 
     def test_cli_utilities_coverage(self):
         """Test CLI utilities."""
@@ -327,7 +327,7 @@ class TestCLICoverage:
             assert error is not None
 
             # Test URL validation
-            is_valid, error = ValidationUtils.validate_url("http://localhost:8080.")
+            is_valid, error = ValidationUtils.validate_url("http://localhost:8080")
             assert is_valid is True
 
             # Test file operations
@@ -336,7 +336,7 @@ class TestCLICoverage:
                 assert os.path.exists(temp_dir)
 
         except ImportError:
-            pytest.skip("CLI utilities not available.")
+            pytest.skip("CLI utilities not available")
 
 
 class TestConfigurationCoverage:
@@ -350,8 +350,8 @@ class TestConfigurationCoverage:
             with patch.dict(
                 os.environ,
                 {
-                    "AZURE_OPENAI_API_KEY.": "test-key.",
-                    "AZURE_OPENAI_BASE_URL.": "https://example.openai.azure.com/.",
+                    "AZURE_OPENAI_API_KEY": "test-key",
+                    "AZURE_OPENAI_BASE_URL": "https://example.openai.azure.com/",
                 },
                 clear=True,
             ):
@@ -360,7 +360,7 @@ class TestConfigurationCoverage:
                 cfg.validate_configuration()
 
         except ImportError:
-            pytest.skip("Configuration modules not available.")
+            pytest.skip("Configuration modules not available")
 
     def test_main_middleware_coverage(self):
         """Test middleware functionality."""
@@ -376,7 +376,7 @@ class TestConfigurationCoverage:
             assert mock_app.add_middleware.call_count >= 1
 
         except ImportError:
-            pytest.skip("Middleware not available.")
+            pytest.skip("Middleware not available")
 
 
 class TestExternalServicesCoverage:
@@ -393,10 +393,10 @@ class TestExternalServicesCoverage:
             # Try basic instantiation
             try:
                 service = OpenAIService(
-                    azure_endpoint="https://test.openai.azure.com/.",
-                    api_key="test-key.",
-                    api_version="2023-05-15.",
-                    open_ai_model="gpt-3.5-turbo.",
+                    azure_endpoint="https://test.openai.azure.com/",
+                    api_key="test-key",
+                    api_version="2023-05-15",
+                    open_ai_model="gpt-3.5-turbo",
                 )
                 assert service is not None
             except Exception:
@@ -404,7 +404,7 @@ class TestExternalServicesCoverage:
                 pass
 
         except ImportError:
-            pytest.skip("OpenAIService not available.")
+            pytest.skip("OpenAIService not available")
 
 
 class TestComprehensiveImports:
@@ -413,17 +413,17 @@ class TestComprehensiveImports:
     def test_comprehensive_module_imports(self):
         """Test importing various modules to increase coverage."""
         modules_to_import = [
-            "ingenious.core.structured_logging.",
-            "ingenious.models.message.",
-            "ingenious.models.config.",
-            "ingenious.utils.stage_executor.",
-            "ingenious.utils.log_levels.",
-            "ingenious.utils.model_utils.",
-            "ingenious.utils.match_parser.",
-            "ingenious.utils.conversation_builder.",
-            "ingenious.utils.load_sample_data.",
-            "ingenious.services.fastapi_dependencies.",
-            "ingenious.main.routing.",
+            "ingenious.core.structured_logging",
+            "ingenious.models.message",
+            "ingenious.models.config",
+            "ingenious.utils.stage_executor",
+            "ingenious.utils.log_levels",
+            "ingenious.utils.model_utils",
+            "ingenious.utils.match_parser",
+            "ingenious.utils.conversation_builder",
+            "ingenious.utils.load_sample_data",
+            "ingenious.services.fastapi_dependencies",
+            "ingenious.main.routing",
         ]
 
         successfully_imported = 0

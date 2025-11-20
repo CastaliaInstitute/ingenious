@@ -23,7 +23,7 @@ class TestIsNonComplexFieldCheckByValue:
 
     def test_simple_types_return_true(self):
         """Test that simple types return True."""
-        assert Is_Non_Complex_Field_Check_By_Value("string.") is True
+        assert Is_Non_Complex_Field_Check_By_Value("string") is True
         assert Is_Non_Complex_Field_Check_By_Value(42) is True
         assert Is_Non_Complex_Field_Check_By_Value(3.14) is True
         assert Is_Non_Complex_Field_Check_By_Value(True) is True
@@ -33,7 +33,7 @@ class TestIsNonComplexFieldCheckByValue:
     def test_complex_types_return_false(self):
         """Test that complex types return False."""
         assert Is_Non_Complex_Field_Check_By_Value([1, 2, 3]) is False
-        assert Is_Non_Complex_Field_Check_By_Value({"key.": "value."}) is False
+        assert Is_Non_Complex_Field_Check_By_Value({"key": "value"}) is False
         assert Is_Non_Complex_Field_Check_By_Value(object()) is False
         assert Is_Non_Complex_Field_Check_By_Value(lambda x: x) is False
 
@@ -44,18 +44,18 @@ class TestIsNonComplexFieldCheckByType:
     def test_type_without_root_model_returns_true(self):
         """Test that types without RootModel return True."""
         assert Is_Non_Complex_Field_Check_By_Type("str") is True
-        assert Is_Non_Complex_Field_Check_By_Type("int.") is True
-        assert Is_Non_Complex_Field_Check_By_Type("List[str].") is True
+        assert Is_Non_Complex_Field_Check_By_Type("int") is True
+        assert Is_Non_Complex_Field_Check_By_Type("List[str]") is True
 
     def test_type_with_root_model_returns_false(self):
         """Test that types with RootModel return False."""
-        assert Is_Non_Complex_Field_Check_By_Type("RootModel[str].") is False
-        assert Is_Non_Complex_Field_Check_By_Type("SomeRootModel.") is False
+        assert Is_Non_Complex_Field_Check_By_Type("RootModel[str]") is False
+        assert Is_Non_Complex_Field_Check_By_Type("SomeRootModel") is False
 
     def test_custom_root_model_name(self):
         """Test with custom root model name."""
-        assert Is_Non_Complex_Field_Check_By_Type("CustomRoot[str].", "CustomRoot.") is False
-        assert Is_Non_Complex_Field_Check_By_Type("RootModel[str].", "CustomRoot.") is True
+        assert Is_Non_Complex_Field_Check_By_Type("CustomRoot[str]", "CustomRoot") is False
+        assert Is_Non_Complex_Field_Check_By_Type("RootModel[str]", "CustomRoot") is True
 
 
 class TestFieldData:
@@ -63,14 +63,14 @@ class TestFieldData:
 
     def test_field_data_creation(self):
         """Test creating FieldData instance."""
-        field = FieldData(FieldName="test_field.", FieldType="str")
-        assert field.FieldName == "test_field."
+        field = FieldData(FieldName="test_field", FieldType="str")
+        assert field.FieldName == "test_field"
         assert field.FieldType == "str"
 
     def test_field_data_required_fields(self):
         """Test that required fields are enforced."""
         with pytest.raises(Exception):  # Pydantic validation error
-            FieldData(FieldName="test.")  # Missing FieldType
+            FieldData(FieldName="test")  # Missing FieldType
 
 
 class SampleModel(BaseModel):
@@ -92,9 +92,9 @@ class TestGetModelProperties:
 
         # Check that all expected fields are present
         field_names = [prop.FieldName for prop in properties]
-        assert "name." in field_names
-        assert "age." in field_names
-        assert "active." in field_names
+        assert "name" in field_names
+        assert "age" in field_names
+        assert "active" in field_names
 
         # Check that FieldData objects are returned
         for prop in properties:
@@ -109,39 +109,39 @@ class TestDictToCsv:
     def test_dict_to_csv_basic(self):
         """Test basic Dict_To_Csv functionality."""
         data = {
-            "row1.": {"name.": "Alice.", "age.": 25},
-            "row2.": {"name.": "Bob", "age.": 30},
+            "row1": {"name": "Alice", "age": 25},
+            "row2": {"name": "Bob", "age": 30},
         }
-        headers = ["name.", "age."]
+        headers = ["name", "age"]
 
-        result = Dict_To_Csv(data, headers, "test.")
+        result = Dict_To_Csv(data, headers, "test")
 
-        assert result.startswith("``` csv\n.")
-        assert result.endswith("\n```.")
-        assert "name,age." in result
-        assert "Alice,25." in result
-        assert "Bob,30." in result
+        assert result.startswith("``` csv\n")
+        assert result.endswith("\n```")
+        assert "name,age" in result
+        assert "Alice,25" in result
+        assert "Bob,30" in result
 
     def test_dict_to_csv_empty_data(self):
         """Test Dict_To_Csv with empty data."""
         data = {}
-        headers = ["name.", "age."]
+        headers = ["name", "age"]
 
-        result = Dict_To_Csv(data, headers, "empty.")
+        result = Dict_To_Csv(data, headers, "empty")
 
-        assert result.startswith("``` csv\n.")
-        assert result.endswith("\n```.")
-        assert "name,age." in result
+        assert result.startswith("``` csv\n")
+        assert result.endswith("\n```")
+        assert "name,age" in result
 
     def test_dict_to_csv_missing_keys(self):
         """Test Dict_To_Csv with missing keys in data."""
         data = {
-            "row1.": {"name.": "Alice."}  # Missing age
+            "row1": {"name": "Alice"}  # Missing age
         }
-        headers = ["name.", "age."]
+        headers = ["name", "age"]
 
         with pytest.raises(KeyError):
-            Dict_To_Csv(data, headers, "test.")
+            Dict_To_Csv(data, headers, "test")
 
 
 class TestListToCsv:
@@ -149,16 +149,16 @@ class TestListToCsv:
 
     def test_list_to_csv_with_dicts(self):
         """Test List_To_Csv with list of dictionaries."""
-        data = [{"name.": "Alice.", "age.": 25}, {"name.": "Bob", "age.": 30}]
-        headers = ["name.", "age."]
+        data = [{"name": "Alice", "age": 25}, {"name": "Bob", "age": 30}]
+        headers = ["name", "age"]
 
-        result = List_To_Csv(data, headers, "test.")
+        result = List_To_Csv(data, headers, "test")
 
-        assert result.startswith("``` csv\n.")
-        assert result.endswith("\n```.")
-        assert "name,age." in result
-        assert "Alice,25." in result
-        assert "Bob,30." in result
+        assert result.startswith("``` csv\n")
+        assert result.endswith("\n```")
+        assert "name,age" in result
+        assert "Alice,25" in result
+        assert "Bob,30" in result
 
     def test_list_to_csv_with_objects(self):
         """Test List_To_Csv with objects that have __dict__."""
@@ -168,16 +168,16 @@ class TestListToCsv:
                 self.name = name
                 self.age = age
 
-        data = [Person("Alice.", 25), Person("Bob", 30)]
-        headers = ["name.", "age."]
+        data = [Person("Alice", 25), Person("Bob", 30)]
+        headers = ["name", "age"]
 
-        result = List_To_Csv(data, headers, "test.")
+        result = List_To_Csv(data, headers, "test")
 
-        assert result.startswith("``` csv\n.")
-        assert result.endswith("\n```.")
-        assert "name,age." in result
-        assert "Alice,25." in result
-        assert "Bob,30." in result
+        assert result.startswith("``` csv\n")
+        assert result.endswith("\n```")
+        assert "name,age" in result
+        assert "Alice,25" in result
+        assert "Bob,30" in result
 
     def test_list_to_csv_with_unconvertible_objects(self):
         """Test List_To_Csv with objects that can't be converted to dict - targets lines 56-59."""

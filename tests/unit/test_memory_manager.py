@@ -19,67 +19,67 @@ class TestMemoryManager:
     def setup_method(self):
         """Set up test fixtures."""
         self.mock_config = Mock()
-        self.mock_config.chat_history.memory_path = "/test/memory."
+        self.mock_config.chat_history.memory_path = "/test/memory"
         self.mock_file_storage = Mock()
 
     def test_init_with_default_memory_path(self):
         """Test MemoryManager initialization with default memory path."""
-        with patch("ingenious.services.memory_manager.FileStorage.") as mock_fs:
+        with patch("ingenious.services.memory_manager.FileStorage") as mock_fs:
             mock_fs.return_value = self.mock_file_storage
 
             manager = MemoryManager(self.mock_config)
 
             assert manager.config is self.mock_config
-            assert manager.memory_path == "/test/memory."
-            mock_fs.assert_called_once_with(self.mock_config, Category="data.")
+            assert manager.memory_path == "/test/memory"
+            mock_fs.assert_called_once_with(self.mock_config, Category="data")
 
     def test_init_with_custom_memory_path(self):
         """Test MemoryManager initialization with custom memory path."""
-        with patch("ingenious.services.memory_manager.FileStorage.") as mock_fs:
+        with patch("ingenious.services.memory_manager.FileStorage") as mock_fs:
             mock_fs.return_value = self.mock_file_storage
 
-            custom_path = "/custom/memory."
+            custom_path = "/custom/memory"
             manager = MemoryManager(self.mock_config, custom_path)
 
             assert manager.memory_path == custom_path
 
     def test_get_memory_file_path_without_thread_id(self):
         """Test _get_memory_file_path without thread ID."""
-        with patch("ingenious.services.memory_manager.FileStorage."):
+        with patch("ingenious.services.memory_manager.FileStorage"):
             manager = MemoryManager(self.mock_config)
 
             file_path, file_name = manager._get_memory_file_path()
 
-            assert file_path == "memory."
-            assert file_name == "context.md."
+            assert file_path == "memory"
+            assert file_name == "context.md"
 
     def test_get_memory_file_path_with_thread_id(self):
         """Test _get_memory_file_path with thread ID."""
-        with patch("ingenious.services.memory_manager.FileStorage."):
+        with patch("ingenious.services.memory_manager.FileStorage"):
             manager = MemoryManager(self.mock_config)
 
-            file_path, file_name = manager._get_memory_file_path("thread_123.")
+            file_path, file_name = manager._get_memory_file_path("thread_123")
 
-            assert file_path == "memory/thread_123."
-            assert file_name == "context.md."
+            assert file_path == "memory/thread_123"
+            assert file_name == "context.md"
 
     @pytest.mark.asyncio
     async def test_read_memory_file_exists(self):
         """Test read_memory when file exists."""
-        with patch("ingenious.services.memory_manager.FileStorage.") as mock_fs:
+        with patch("ingenious.services.memory_manager.FileStorage") as mock_fs:
             mock_fs.return_value = self.mock_file_storage
             self.mock_file_storage.check_if_file_exists = AsyncMock(return_value=True)
-            self.mock_file_storage.read_file = AsyncMock(return_value="existing content.")
+            self.mock_file_storage.read_file = AsyncMock(return_value="existing content")
 
             manager = MemoryManager(self.mock_config)
-            result = await manager.read_memory("thread_123.")
+            result = await manager.read_memory("thread_123")
 
-            assert result == "existing content."
+            assert result == "existing content"
             self.mock_file_storage.check_if_file_exists.assert_called_once_with(
-                "memory/thread_123.", "context.md."
+                "memory/thread_123", "context.md"
             )
             self.mock_file_storage.read_file.assert_called_once_with(
-                "context.md.", "memory/thread_123."
+                "context.md", "memory/thread_123"
             )
 
     @pytest.mark.asyncio
