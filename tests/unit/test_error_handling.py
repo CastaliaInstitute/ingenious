@@ -1,4 +1,5 @@
-"""Comprehensive tests for the document processing error handling system
+"""Comprehensive tests for the document processing error handling system.
+
 ===================================================================
 
 This module tests all aspects of the new error handling framework including:
@@ -214,7 +215,7 @@ class TestSpecificErrorTypes:
 
 
 class TestRetryDecorator:
-    """Test the retry_with_backoff decorator"""
+    """Test the retry_with_backoff decorator."""
 
     def test_successful_execution(self):
         """Test decorator with successful function."""
@@ -403,7 +404,7 @@ class TestErrorReporter:
     """Test the ErrorReporter utility."""
 
     def test_add_error(self):
-        """Test adding errors to reporter"""
+        """Test adding errors to reporter."""
         reporter = ErrorReporter()
 
         error1 = ExtractionError("Error 1")
@@ -638,7 +639,7 @@ class TestExternalIntegration:
         reason="document_processing module moved to ingenious-aux/document-preprocessing"
     )
     def test_requests_exception_mapping(self):
-        """Test mapping of requests exceptions to NetworkError"""
+        """Test mapping of requests exceptions to NetworkError."""
         # NOTE: This test has been disabled as the document_processing module
         # has been moved to ingenious-aux/document-preprocessing
         pass

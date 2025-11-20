@@ -180,7 +180,7 @@ class TestListToCsv:
         assert "Bob,30." in result
 
     def test_list_to_csv_with_unconvertible_objects(self):
-        """Test List_To_Csv with objects that can't be converted to dict - targets lines 56-59"""
+        """Test List_To_Csv with objects that can't be converted to dict - targets lines 56-59."""
 
         class BadObject:
             def __init__(self):
@@ -348,7 +348,7 @@ class TestObjectToMarkdown:
         assert "test" in result
 
     def test_object_to_markdown_name_parameter_unused(self):
-        """Test that the name parameter doesn't affect the output"""
+        """Test that the name parameter doesn't affect the output."""
         obj = {"test": "value"}
 
         result1 = Object_To_Markdown(obj, "name1")

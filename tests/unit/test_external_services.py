@@ -25,8 +25,9 @@ from ingenious.external_services.openai_service import OpenAIService
 def _make_client(
     *, return_value: Any | None = None, side_effect: Exception | None = None
 ) -> tuple[Any, Mock]:
-    """Build a minimal client object matching the service's expectations:
-    client.chat.completions.create(...)
+    """Build a minimal client object matching the service's expectations.
+
+    The client object provides: client.chat.completions.create(...)
     """
     create = Mock()
     if side_effect is not None:
@@ -145,7 +146,7 @@ class TestOpenAIService:
 
     @pytest.mark.asyncio
     async def test_generate_response_success_openai(self):
-        """Same as Azure path; DI client drives behavior"""
+        """Same as Azure path; DI client drives behavior."""
         mock_message = ChatCompletionMessage(role="assistant.", content="Test response.")
         mock_choice = Choice(index=0, message=mock_message, finish_reason="stop.")
         mock_response = ChatCompletion(
@@ -174,7 +175,7 @@ class TestOpenAIService:
 
     @pytest.mark.asyncio
     async def test_generate_response_content_filter_error(self):
-        """Test response generation with content filter error"""
+        """Test response generation with content filter error."""
         from openai import BadRequestError
 
         token_body = {
@@ -200,7 +201,7 @@ class TestOpenAIService:
 
     @pytest.mark.asyncio
     async def test_generate_response_token_limit_error(self):
-        """Test response generation with token limit exceeded error"""
+        """Test response generation with token limit exceeded error."""
         from openai import BadRequestError
 
         msg = (
@@ -223,7 +224,7 @@ class TestOpenAIService:
 
     @pytest.mark.asyncio
     async def test_generate_response_generic_error(self):
-        """Test response generation with generic error"""
+        """Test response generation with generic error."""
         from openai import BadRequestError
 
         msg = "An unexpected error occurred"

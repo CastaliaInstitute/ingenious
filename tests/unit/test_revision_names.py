@@ -166,7 +166,7 @@ class TestResolveUserRevisionId:
         assert result == "myproject-1"
 
     def test_resolve_user_revision_id_multiple_conflicts(self):
-        """Test resolving multiple conflicts by finding next available number"""
+        """Test resolving multiple conflicts by finding next available number."""
         existing_ids = ["myproject", "myproject-1", "myproject-2", "myproject-5"]
         result = resolve_user_revision_id("myproject", existing_ids)
         assert result == "myproject-3"  # Should find first available number (3)

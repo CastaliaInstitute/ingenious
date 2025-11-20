@@ -12,7 +12,7 @@ from ingenious.common.enums import AuthenticationMethod
 
 
 def test_authentication_requirements():
-    """Test the authentication requirements for different methods used by the client builder"""
+    """Test the authentication requirements for different methods used by the client builder."""
     print("🔍 Testing Azure OpenAI Client Builder Authentication Methods\n.")
 
     auth_methods = [

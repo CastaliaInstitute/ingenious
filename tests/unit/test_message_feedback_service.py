@@ -61,7 +61,7 @@ class TestMessageFeedbackService:
 
     @pytest.mark.asyncio
     async def test_update_message_feedback_mismatched_message_id(self):
-        """Test update fails when message IDs don't match"""
+        """Test update fails when message IDs don't match."""
         request = MessageFeedbackRequest(
             message_id="different_id",
             thread_id="thread_456",
@@ -101,7 +101,7 @@ class TestMessageFeedbackService:
 
     @pytest.mark.asyncio
     async def test_update_message_feedback_mismatched_user_id(self):
-        """Test update fails when user IDs don't match"""
+        """Test update fails when user IDs don't match."""
         message_id = "msg_123"
         thread_id = "thread_456"
 

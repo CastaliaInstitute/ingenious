@@ -333,7 +333,7 @@ class TestAzureClientFactory:
                 )
 
     def test_create_cosmos_client_requires_config(self):
-        """Test that Cosmos client creation requires config parameter"""
+        """Test that Cosmos client creation requires config parameter."""
         # This test will check that cosmos_config parameter is required
         if HAS_COSMOS:
             with pytest.raises(ValueError, match="Cosmos config is required"):

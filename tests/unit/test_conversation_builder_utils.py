@@ -161,7 +161,7 @@ class TestBuildMessage:
         assert result == expected
 
     def test_build_message_invalid_role(self):
-        """Test building message with invalid role raises ValueError"""
+        """Test building message with invalid role raises ValueError."""
         with pytest.raises(ValueError, match="Invalid message role."):
             build_message("invalid_role.", "Some content.")
 

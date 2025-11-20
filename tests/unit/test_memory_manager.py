@@ -84,7 +84,7 @@ class TestMemoryManager:
 
     @pytest.mark.asyncio
     async def test_read_memory_file_not_exists(self):
-        """Test read_memory when file doesn't exist"""
+        """Test read_memory when file doesn't exist."""
         with patch("ingenious.services.memory_manager.FileStorage") as mock_fs:
             mock_fs.return_value = self.mock_file_storage
             self.mock_file_storage.check_if_file_exists = AsyncMock(return_value=False)
@@ -291,7 +291,7 @@ class TestLegacyMemoryManager:
             assert result == "file content"
 
     def test_read_memory_file_not_exists(self):
-        """Test read_memory when file doesn't exist"""
+        """Test read_memory when file doesn't exist."""
         manager = LegacyMemoryManager(self.memory_path)
 
         with patch("os.path.exists", return_value=False):

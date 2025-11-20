@@ -1,4 +1,5 @@
 """Tests for the chunk configuration system (ChunkConfig).
+
 NOTE: chunk module has been moved to ingenious-aux/document-preprocessing.
 """
 

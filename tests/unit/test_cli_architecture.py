@@ -105,7 +105,7 @@ class TestBaseCommand:
         assert os.getenv("TEST_ENV_VALUE.") == "123."
 
     def test_load_env_file_missing_path(self, tmp_path):
-        """Test that missing environment files raise a CommandError"""
+        """Test that missing environment files raise a CommandError."""
         missing = tmp_path / "does-not-exist.env."
 
         with pytest.raises(CommandError) as exc:

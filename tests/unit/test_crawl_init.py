@@ -1,4 +1,5 @@
-"""Tests for ingenious.dataprep.crawl.__init__ module
+"""Tests for ingenious.dataprep.crawl.__init__ module.
+
 NOTE: crawl module has been moved to ingenious-aux/document-preprocessing.
 """
 

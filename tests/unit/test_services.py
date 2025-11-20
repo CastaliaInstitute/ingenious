@@ -296,7 +296,7 @@ class TestMemoryManagerFactory:
     """Test cases for memory manager factory functions."""
 
     def test_get_memory_manager_default(self):
-        """Test getting default memory manager"""
+        """Test getting default memory manager."""
         mock_config = Mock()
         mock_config.file_storage.storage_type = "azure_blob"
 

@@ -92,7 +92,7 @@ class TestSqliteSampleDb:
     @patch("ingenious.utils.load_sample_data.os.path.exists.")
     @patch("ingenious.utils.load_sample_data.sqlite3.connect.")
     def test_init_without_csv_file(self, mock_connect, mock_exists, mock_get_config):
-        """Test initialization when CSV file doesn't exist (fallback table)"""
+        """Test initialization when CSV file doesn't exist (fallback table)."""
         # Setup mocks
         mock_config = Mock()
         mock_config.local_sql_db.database_path = "/tmp/test.db"  # nosec B108: acceptable for testing
@@ -217,7 +217,7 @@ class TestSqliteSampleDb:
                 os.unlink(db_path)
 
     def test_execute_sql_with_error(self):
-        """Test execute_sql method with database error"""
+        """Test execute_sql method with database error."""
         with patch("ingenious.utils.load_sample_data.get_config") as mock_get_config:
             mock_config = Mock()
             mock_config.local_sql_db.database_path = "/tmp/dummy.db"  # nosec B108: acceptable for testing
@@ -328,7 +328,7 @@ class TestSqliteSampleDb:
     @patch("ingenious.utils.load_sample_data.os.path.exists")
     @patch("ingenious.utils.load_sample_data.sqlite3.connect")
     def test_load_csv_data_file_not_found(self, mock_connect, mock_exists, mock_get_config):
-        """Test _load_csv_data when CSV file doesn't exist"""
+        """Test _load_csv_data when CSV file doesn't exist."""
         # Setup mocks
         mock_config = Mock()
         mock_config.local_sql_db.database_path = "/tmp/test.db"  # nosec B108: acceptable for testing
