@@ -128,7 +128,7 @@ class ChatServiceSettings(BaseModel):
     )
     enable_builtin_workflows: bool = Field(
         True,
-        description="Enable built-in workflows (classification-agent, knowledge-base-agent, etc.)",
+        description="Enable built-in workflows (set to False in production for security)",
     )
 
 
