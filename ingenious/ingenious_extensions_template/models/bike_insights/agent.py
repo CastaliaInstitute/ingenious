@@ -1,10 +1,19 @@
-from ingenious.config.settings import IngeniousSettings
+"""Bike insights agent template for custom extensions."""
 
+from ingenious.config.settings import IngeniousSettings
 from ingenious.models.agent import Agent, Agents, IProjectAgents
 
 
 class ProjectAgents(IProjectAgents):
     def Get_Project_Agents(self, config: IngeniousSettings) -> Agents:
+        """Get the project agents configuration for bike insights.
+
+        Args:
+            config: The Ingenious settings configuration object.
+
+        Returns:
+            An Agents object containing the configured agents for the bike insights project.
+        """
         local_agents = []
         local_agents.append(
             Agent(
