@@ -13,7 +13,6 @@ from pydantic import (
 )
 
 from ingenious.common.enums import AuthenticationMethod
-from ingenious.config.auth_config import AzureAuthConfig
 
 
 class ChatHistorySettings(BaseModel):
@@ -39,12 +38,12 @@ class ChatHistorySettings(BaseModel):
     memory_path: str = Field("./tmp", description="Path for memory storage and temporary files")
 
 
-class ModelSettings(AzureAuthConfig):
+class ModelSettings(BaseModel):
     """Configuration for AI models.
 
     Defines which AI models to use and how to connect to them.
     Supports Azure OpenAI, OpenAI, and other compatible endpoints.
-    Inherits Azure authentication configuration from AzureAuthConfig.
+    Contains Azure authentication configuration fields.
     """
 
     model: str = Field(..., description="Model name (e.g., 'gpt-4.1-nano', 'gpt-3.5-turbo')")
@@ -52,6 +51,21 @@ class ModelSettings(AzureAuthConfig):
     api_version: str = Field("2023-03-15-preview", description="API version for Azure OpenAI")
     deployment: str = Field("", description="Azure OpenAI deployment name (optional)")
     base_url: str = Field("", description="Base URL for the API endpoint")
+
+    # Azure authentication fields
+    authentication_method: AuthenticationMethod = Field(
+        default=AuthenticationMethod.TOKEN, description="Authentication method for Azure services"
+    )
+    api_key: str = Field("", description="API key for token-based authentication")
+    client_id: str = Field("", description="Azure client ID for service principal or MSI")
+    client_secret: str = Field(
+        "", description="Azure client secret for service principal authentication"
+    )
+    tenant_id: str = Field("", description="Azure tenant ID for service principal authentication")
+    endpoint: str = Field("", description="Azure service endpoint URL")
+    role: str = Field(
+        "chat", description="Model role: 'chat' for generation, 'embedding' for vectors"
+    )
 
     @field_validator("api_key")
     @classmethod
@@ -93,9 +107,11 @@ class ModelSettings(AzureAuthConfig):
                     "'token'. Set the appropriate environment variable "
                     "(e.g., AZURE_OPENAI_API_KEY) or provide a valid key."
                 )
-
-        # Since we inherit from AzureAuthConfig, we can call validate_for_method
-        self.validate_for_method()
+        elif self.authentication_method == AuthenticationMethod.CLIENT_ID_AND_SECRET:
+            if not (self.client_id and self.client_secret and self.tenant_id):
+                raise ValueError(
+                    "CLIENT_ID_AND_SECRET requires client_id, client_secret, and tenant_id."
+                )
         return self
 
 
@@ -147,17 +163,28 @@ class LoggingSettings(BaseModel):
         return v.lower()
 
 
-class AzureSearchSettings(AzureAuthConfig):
+class AzureSearchSettings(BaseModel):
     """Configuration for Azure Cognitive Search integration.
 
     Enables document search and retrieval capabilities.
     Optional - leave empty if not using Azure Search.
-    Inherits Azure authentication configuration from AzureAuthConfig.
+    Contains Azure authentication configuration fields.
     """
 
     service: str = Field("", description="Azure Search service name")
     endpoint: str = Field("", description="Azure Search service endpoint URL")
     key: str = Field("", description="Azure Search service API key")
+
+    # Azure authentication fields
+    authentication_method: AuthenticationMethod = Field(
+        default=AuthenticationMethod.TOKEN, description="Authentication method for Azure services"
+    )
+    api_key: str = Field("", description="API key for token-based authentication")
+    client_id: str = Field("", description="Azure client ID for service principal or MSI")
+    client_secret: str = Field(
+        "", description="Azure client secret for service principal authentication"
+    )
+    tenant_id: str = Field("", description="Azure tenant ID for service principal authentication")
 
 
 class AzureSqlSettings(BaseModel):
@@ -332,11 +359,23 @@ class ReceiverSettings(BaseModel):
     api_key: str = Field("DevApiKey", description="API key for authenticating external events")
 
 
-class CosmosSettings(AzureAuthConfig):
+class CosmosSettings(BaseModel):
     """Configuration for Azure Cosmos DB service.
 
-    Inherits Azure authentication configuration from AzureAuthConfig.
+    Contains Azure authentication configuration fields.
     """
 
     uri: str = Field(..., description="Azure Cosmos DB account endpoint URL")
     database_name: str = Field(..., description="Azure Cosmos DB database name")
+
+    # Azure authentication fields
+    authentication_method: AuthenticationMethod = Field(
+        default=AuthenticationMethod.TOKEN, description="Authentication method for Azure services"
+    )
+    api_key: str = Field("", description="API key for token-based authentication")
+    client_id: str = Field("", description="Azure client ID for service principal or MSI")
+    client_secret: str = Field(
+        "", description="Azure client secret for service principal authentication"
+    )
+    tenant_id: str = Field("", description="Azure tenant ID for service principal authentication")
+    endpoint: str = Field("", description="Azure service endpoint URL")

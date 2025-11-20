@@ -81,10 +81,10 @@ Set up ingenious locally first and then migrate to Azure services as shown in th
     **Required configuration (add to .env file)**:
     ```bash
     # Core AI Model Configuration (REQUIRED)
-    INGENIOUS_MODELS__0__MODEL=gpt-5-mini
+    INGENIOUS_MODELS__0__MODEL=gpt-4o-mini
     INGENIOUS_MODELS__0__API_TYPE=rest
     INGENIOUS_MODELS__0__API_VERSION=2024-12-01-preview
-    INGENIOUS_MODELS__0__DEPLOYMENT=gpt-5-mini-deployment
+    INGENIOUS_MODELS__0__DEPLOYMENT=gpt-4o-mini-deployment
     INGENIOUS_MODELS__0__API_KEY=your-actual-api-key-here
     INGENIOUS_MODELS__0__BASE_URL=https://eastus.api.cognitive.microsoft.com/
 
