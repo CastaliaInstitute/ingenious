@@ -1,3 +1,5 @@
+"""File storage abstraction supporting both local and Azure Blob Storage."""
+
 import importlib
 from abc import ABC, abstractmethod
 from pathlib import Path
@@ -13,37 +15,43 @@ class IFileStorage(ABC):
 
     @abstractmethod
     async def write_file(self, contents: str, file_name: str, file_path: str) -> str:
-        """Writes a file to the file storage"""
+        """Writes a file to the file storage."""
         pass
 
     @abstractmethod
     async def read_file(self, file_name: str, file_path: str) -> str:
-        """Reads a file to the file storage"""
+        """Reads a file to the file storage."""
         pass
 
     @abstractmethod
     async def delete_file(self, file_name: str, file_path: str) -> str:
-        """Deletes a file to the file storage"""
+        """Deletes a file to the file storage."""
         pass
 
     @abstractmethod
     async def list_files(self, file_path: str) -> str:
-        """Lists files in the file storage"""
+        """Lists files in the file storage."""
         pass
 
     @abstractmethod
     async def check_if_file_exists(self, file_path: str, file_name: str) -> bool:
-        """Checks if a file exists in the file storage"""
+        """Checks if a file exists in the file storage."""
         pass
 
     @abstractmethod
     async def get_base_path(self) -> str:
-        """Returns the base path of the file storage"""
+        """Returns the base path of the file storage."""
         pass
 
 
 class FileStorage:
     def __init__(self, config: IngeniousSettings, Category: str = "revisions"):
+        """Initialize the FileStorage with configuration and category.
+
+        Args:
+            config: The ingenious settings configuration.
+            Category: The file storage category (e.g., 'revisions'). Defaults to 'revisions'.
+        """
         self.config = config
         self.add_sub_folders = getattr(self.config.file_storage, Category).add_sub_folders
 
@@ -70,17 +78,50 @@ class FileStorage:
             ) from e
 
     async def write_file(self, contents: str, file_name: str, file_path: str) -> str:
+        """Write a file to the file storage.
+
+        Args:
+            contents: The content to write to the file.
+            file_name: The name of the file.
+            file_path: The path where the file should be written.
+
+        Returns:
+            A string indicating the result of the write operation.
+        """
         return await self.repository.write_file(
             contents=contents, file_name=file_name, file_path=file_path
         )
 
     async def get_base_path(self) -> str:
+        """Get the base path of the file storage.
+
+        Returns:
+            The base path string.
+        """
         return await self.repository.get_base_path()
 
     async def read_file(self, file_name: str, file_path: str) -> str:
+        """Read a file from the file storage.
+
+        Args:
+            file_name: The name of the file to read.
+            file_path: The path where the file is located.
+
+        Returns:
+            The contents of the file as a string.
+        """
         return await self.repository.read_file(file_name, file_path)
 
     async def delete_file(self, file_name: str, file_path: str) -> str:
+        """Delete a file from the file storage.
+
+        Args:
+            file_name: The name of the file to delete.
+            file_path: The path where the file is located.
+
+        Returns:
+            A string indicating the result of the delete operation.
+        """
         return await self.repository.delete_file(file_name, file_path)
 
     async def list_files(self, file_path: str) -> str:
