@@ -126,8 +126,12 @@ async def list_workflows_for_prompts(
                 try:
                     # Check if this workflow has prompts
                     workflow_path = await fs.get_prompt_template_path(variant)
-                    workflow_files = await fs.list_files(file_path=workflow_path)
-                    if workflow_files:
+                    workflow_files_str = await fs.list_files(file_path=workflow_path)
+                    if workflow_files_str:
+                        # Split the newline-delimited string into a list of filenames
+                        workflow_files = [
+                            f.strip() for f in workflow_files_str.split("\n") if f.strip()
+                        ]
                         prompt_files = [f for f in workflow_files if f.endswith((".md", ".jinja"))]
                         if prompt_files:
                             workflows_with_prompts.append(
@@ -193,7 +197,10 @@ async def list_prompts_enhanced(
         for rid in revision_ids_to_try:
             try:
                 prompt_template_folder = await fs.get_prompt_template_path(revision_id=rid)
-                file_list = await fs.list_files(file_path=prompt_template_folder)
+                file_list_str = await fs.list_files(file_path=prompt_template_folder)
+
+                # Split the newline-delimited string into a list of filenames
+                file_list = [f.strip() for f in file_list_str.split("\n") if f.strip()]
 
                 # Filter to get only template files
                 potential_files = []
@@ -350,7 +357,7 @@ async def create_revision(
         original_templates_revision = config.file_storage.revisions.original_templates
         source_path = await fs.get_prompt_template_path(original_templates_revision)
         try:
-            raw_source_files = await fs.list_files(file_path=source_path)
+            raw_source_files_str = await fs.list_files(file_path=source_path)
         except Exception as e:
             logger.error(
                 "Failed to access original templates directory",
@@ -364,7 +371,10 @@ async def create_revision(
                 detail="Original template directory not found or inaccessible",
             )
 
-        # Parse source files - handle both newline-separated and Python list string formats
+        # Split the newline-delimited string into a list of filenames
+        raw_source_files = [f.strip() for f in raw_source_files_str.split("\n") if f.strip()]
+
+        # Filter to get only template files
         source_files: List[str] = []
         for f in raw_source_files:
             if f and f.endswith((".md", ".jinja")):
