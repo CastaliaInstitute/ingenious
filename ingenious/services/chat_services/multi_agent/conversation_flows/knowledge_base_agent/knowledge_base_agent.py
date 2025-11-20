@@ -25,7 +25,6 @@ Azure services and local file storage for ChromaDB persistence.
 from __future__ import annotations
 
 import asyncio
-import json
 import logging
 import os
 import time
@@ -154,19 +153,9 @@ class ConversationFlow(IConversationFlow):
         Returns:
             A string representation of the input.
         """
-        if x is None:
-            return ""
-        if isinstance(x, str):
-            return x
-        if isinstance(x, bytes):
-            try:
-                return x.decode("utf-8", "replace")
-            except Exception:
-                return str(x)
-        try:
-            return json.dumps(x, ensure_ascii=False)
-        except Exception:
-            return str(x)
+        from ._helpers import as_text
+
+        return as_text(x)
 
     def _to_text(self, x: Any) -> str:
         """Prefer joining lists of strings; otherwise fall back to JSON/str via _as_text.
@@ -181,20 +170,18 @@ class ConversationFlow(IConversationFlow):
         Returns:
             A string representation of the input, with special handling for lists.
         """
-        if isinstance(x, list):
-            parts: list[str] = []
-            for p in x:
-                parts.append(p if isinstance(p, str) else self._as_text(p))
-            return "".join(parts)
-        return self._as_text(x)
+        from ._helpers import to_text
+
+        return to_text(x)
 
     # -----------------------------
     # Diagnostics toggle
     # -----------------------------
     def _diagnostics_enabled(self) -> bool:
         """Global opt-in switch for diagnostics that may expose configuration (never full secrets)."""
-        v = os.getenv("INGENIOUS_DIAGNOSTICS_ENABLED", "")
-        return v.strip().lower() in {"1", "true", "yes", "on"}
+        from ._helpers import diagnostics_enabled
+
+        return diagnostics_enabled()
 
     # -----------------------------
     # Instrumentation: LLM usage tracker
@@ -728,15 +715,9 @@ class ConversationFlow(IConversationFlow):
 
         Does not validate network/keys; runtime failures still fall back (if policy allows).
         """
-        try:
-            from ingenious.services.azure_search.provider import (
-                AzureSearchProvider,  # type: ignore
-            )
+        from ._helpers import is_azure_search_available
 
-            _ = AzureSearchProvider  # silence linter
-            return True
-        except Exception:
-            return False
+        return is_azure_search_available()
 
     def _azure_service(self) -> Any | None:
         """Return first azure_search_services entry or None."""
@@ -800,19 +781,15 @@ class ConversationFlow(IConversationFlow):
     # -----------------------------
     def _unwrap_secret_or_str(self, val: Any) -> str:
         """Return the raw secret value if `val` is a secret object; else str(val)."""
-        if hasattr(val, "get_secret_value"):
-            try:
-                return val.get_secret_value()
-            except Exception:
-                return ""
-        return str(val) if val is not None else ""
+        from ._helpers import unwrap_secret_or_str
+
+        return unwrap_secret_or_str(val)
 
     def _mask_secret(self, s: str | None) -> str:
         """Mask a secret: short → 'a***d'; long → 'abcd...wxyz (len=NN)'."""
-        s = s or ""
-        if len(s) <= 8:
-            return (s[:1] + "***" + s[-1:]) if s else "<empty>"
-        return f"{s[:4]}...{s[-4:]} (len={len(s)})"
+        from ._helpers import mask_secret
+
+        return mask_secret(s)
 
     def _dump_kb_config_snapshot(self, logger: Optional[logging.Logger] = None) -> dict[str, Any]:
         """Build a masked snapshot of key Azure KB settings.
@@ -1494,89 +1471,29 @@ class ConversationFlow(IConversationFlow):
         logger: Optional[logging.Logger] = None,
     ) -> Tuple[int, int]:
         """Compute token counts defensively; never fail the request."""
-        try:
-            from ingenious.utils.token_counter import num_tokens_from_messages
+        from ._helpers import safe_count_tokens
 
-            msgs: list[dict[str, Any]] = [
-                {"role": "system", "content": system_message},
-                {"role": "user", "content": user_message},
-                {"role": "assistant", "content": assistant_message},
-            ]
-            total = num_tokens_from_messages(msgs, model)
-            prompt = num_tokens_from_messages(msgs[:-1], model)
-            completion = total - prompt
-            return total, completion
-        except Exception as e:
-            if logger:
-                logger.warning(f"Token counting failed: {e}")
-            return 0, 0
+        return await safe_count_tokens(
+            system_message, user_message, assistant_message, model, logger
+        )
 
     # -----------------------------
     # System prompts (static text)
     # -----------------------------
     def _static_system_message(self, memory_context: str) -> str:
         """Deterministic system prompt for direct mode."""
-        prefix = "You are a knowledge base search assistant that uses Azure AI Search or local ChromaDB.\n\n"
-        if memory_context:
-            prefix += memory_context
-        prefix += (
-            "Always base your responses on knowledge base search results. "
-            "If nothing is found, clearly state that and suggest rephrasing the query. "
-            "TERMINATE your response when the task is complete."
-        )
-        return prefix
+        from ._helpers import static_system_message
+
+        return static_system_message(memory_context)
 
     def _assist_system_message(self, memory_context: str) -> str:
         """Richer prompt for assist mode (summarization + guidelines + citation hint)."""
-        parts = [
-            "You are a knowledge base search assistant that can use both Azure AI Search and local ChromaDB storage.\n",
-        ]
-        if memory_context:
-            parts.append(memory_context)
+        from ._helpers import assist_system_message
 
-        parts.append(
-            "IMPORTANT: If there is previous conversation context above, you MUST:\n"
-            "- Reference it when answering follow-up questions\n"
-            "- Use information from previous searches to inform new searches\n"
-            "- Maintain context about what information has already been discussed\n"
-            '- Answer questions that refer to "it", "that", "those" etc. based on previous context\n\n'
-            "Tasks:\n"
-            "- Help users find information by searching the knowledge base\n"
-            "- Use the search_tool to look up information\n"
-            "- Always base your responses on search results from the knowledge base\n"
-            "- Always consider and reference previous conversation when relevant\n"
-            "- If no information is found, clearly state that and suggest rephrasing the query\n\n"
-            "Guidelines for search queries:\n"
-            "- Use specific, relevant keywords\n"
-            "- Try different phrasings if initial search doesn't return results\n"
-            "- Focus on topics that are relevant to the knowledge base content\n\n"
-            "Format your responses clearly and cite the knowledge base when providing information.\n"
-            "TERMINATE your response when the task is complete."
-        )
-        return "".join(parts)
+        return assist_system_message(memory_context)
 
     def _streaming_system_message(self, memory_context: str) -> str:
         """Streaming prompt with guidance, topics, and citation directive."""
-        parts: List[str] = [
-            "You are a knowledge base search assistant that can use both Azure AI Search and local ChromaDB storage.\n\n"
-        ]
-        if memory_context:
-            parts.append(memory_context)
+        from ._helpers import streaming_system_message
 
-        parts.append(
-            "IMPORTANT: Maintain context and base your responses on search results.\n\n"
-            "Guidelines for search queries:\n"
-            "- Use specific, relevant keywords\n"
-            "- Try different phrasings if initial search doesn't return results\n"
-            "- Focus on topics that are relevant to the knowledge base content\n\n"
-            "Knowledge base contains documents about:\n"
-            "- Azure configuration and setup\n"
-            "- Workplace safety guidelines\n"
-            "- Health information and nutrition\n"
-            "- Emergency procedures\n"
-            "- Mental health and wellbeing\n"
-            "- First aid basics\n"
-            "- General informational content\n\n"
-            "Format your responses clearly and cite the knowledge base when providing information."
-        )
-        return "".join(parts)
+        return streaming_system_message(memory_context)
