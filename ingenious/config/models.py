@@ -126,6 +126,10 @@ class ChatServiceSettings(BaseModel):
         "multi_agent",
         description="Chat service type: 'multi_agent' for agent workflows",
     )
+    enable_builtin_workflows: bool = Field(
+        True,
+        description="Enable built-in workflows (classification-agent, knowledge-base-agent, etc.)",
+    )
 
 
 class ToolServiceSettings(BaseModel):
@@ -302,6 +306,9 @@ class FileStorageContainerSettings(BaseModel):
     add_sub_folders: bool = Field(True, description="Create subdirectories for organization")
     url: str = Field("", description="Azure storage account URL (for Azure storage only)")
     token: str = Field("", description="Azure access token (for Azure storage only)")
+    original_templates: str = Field(
+        "original", description="Directory name for original prompt templates"
+    )
 
     # Azure authentication fields
     authentication_method: AuthenticationMethod = Field(

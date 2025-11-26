@@ -95,6 +95,23 @@ class local_FileStorageRepository(IFileStorage):
             print(error_msg)
             return error_msg
 
+    async def list_directories(self, file_path: str) -> list[str]:
+        """List directories in a local directory.
+
+        :param file_path: Path to the directory.
+        :return: List of directory names.
+        """
+        try:
+            path = Path(self.fs_config.path) / Path(file_path)
+            if not path.exists():
+                return []
+            dirs = [d.name for d in path.iterdir() if d.is_dir()]
+            return dirs
+        except Exception as e:
+            error_msg = f"Failed to list directories in {file_path}: {e}"
+            print(error_msg)
+            return []
+
     async def check_if_file_exists(self, file_path: str, file_name: str) -> bool:
         """Check if a local file exists.
 

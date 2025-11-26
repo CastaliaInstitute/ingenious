@@ -177,6 +177,39 @@ class azure_FileStorageRepository(IFileStorage):
             )
             raise
 
+    async def list_directories(self, file_path: str) -> list[str]:
+        """List virtual directories in an Azure Blob container based on a path.
+
+        Azure Blob Storage uses virtual directories based on blob name prefixes.
+
+        :param file_path: Path within the storage container to list directories from.
+        :return: List of directory names.
+        """
+        directories: set[str] = set()
+        try:
+            path = Path(self.fs_config.path) / Path(file_path)
+            prefix = str(path).replace("\\", "/")
+            if not prefix.endswith("/"):
+                prefix += "/"
+
+            container_client = self.blob_service_client.get_container_client(self.container_name)
+
+            # List blobs and extract unique directory names
+            for blob in container_client.list_blobs(name_starts_with=prefix):
+                # Remove the prefix and get the first path component
+                relative_path = blob.name[len(prefix) :]
+                if "/" in relative_path:
+                    dir_name = relative_path.split("/")[0]
+                    directories.add(dir_name)
+
+            return list(directories)
+        except Exception as e:
+            logger.error(
+                f"Failed to list directories in container {self.container_name} "
+                f"with prefix {prefix}: {e}"
+            )
+            return []
+
     async def check_if_file_exists(self, file_path: str, file_name: str) -> bool:
         """Check if a blob exists in an Azure Blob container.
 

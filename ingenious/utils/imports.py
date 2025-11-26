@@ -68,6 +68,8 @@ class SafeImporter:
         self._class_cache: Dict[str, type] = {}
         self._failed_imports: Dict[str, Exception] = {}
         self._namespaces = self._get_namespaces()
+        # Ensure working directory is in sys.path for discovering ingenious_extensions
+        self._ensure_path_in_sys_path(Path(os.getcwd()))
 
     def _get_namespaces(self) -> List[str]:
         """Get ordered list of namespaces to search for modules."""

@@ -46,6 +46,11 @@ class IFileStorage(ABC):
         pass
 
     @abstractmethod
+    async def list_directories(self, file_path: str) -> list[str]:
+        """Lists directories in the file storage."""
+        pass
+
+    @abstractmethod
     async def check_if_file_exists(self, file_path: str, file_name: str) -> bool:
         """Checks if a file exists in the file storage."""
         pass
@@ -153,6 +158,17 @@ class FileStorage:
             A string representation of the files in the path.
         """
         return await self.repository.list_files(file_path)
+
+    async def list_directories(self, file_path: str) -> list[str]:
+        """List all directories in the specified path.
+
+        Args:
+            file_path: The path to list directories from.
+
+        Returns:
+            A list of directory names in the path.
+        """
+        return await self.repository.list_directories(file_path)
 
     async def check_if_file_exists(self, file_path: str, file_name: str) -> bool:
         """Check if a file exists in the file storage.
