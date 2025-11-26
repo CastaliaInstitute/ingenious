@@ -81,12 +81,23 @@ Set up ingenious locally first and then migrate to Azure services as shown in th
     **Required configuration (add to .env file)**:
     ```bash
     # Core AI Model Configuration (REQUIRED)
+    # Model 0: Chat model
     INGENIOUS_MODELS__0__MODEL=gpt-4o-mini  # Must match OpenAI model name exactly
     INGENIOUS_MODELS__0__API_TYPE=rest
     INGENIOUS_MODELS__0__API_VERSION=2024-12-01-preview
     INGENIOUS_MODELS__0__DEPLOYMENT=gpt-4o-mini-deployment  # Your custom deployment name from Azure
     INGENIOUS_MODELS__0__API_KEY=your-actual-api-key-here
     INGENIOUS_MODELS__0__BASE_URL=https://eastus.api.cognitive.microsoft.com/
+    INGENIOUS_MODELS__0__ROLE=chat
+
+    # Model 1: Embedding model (REQUIRED for Azure AI Search)
+    INGENIOUS_MODELS__1__MODEL=text-embedding-3-small
+    INGENIOUS_MODELS__1__API_TYPE=rest
+    INGENIOUS_MODELS__1__API_VERSION=2024-12-01-preview
+    INGENIOUS_MODELS__1__DEPLOYMENT=text-embedding-3-small-deployment
+    INGENIOUS_MODELS__1__API_KEY=your-actual-api-key-here
+    INGENIOUS_MODELS__1__BASE_URL=https://eastus.api.cognitive.microsoft.com/
+    INGENIOUS_MODELS__1__ROLE=embedding
 
     # For Azure OpenAI endpoints - both formats work:
     # Regional endpoint: https://eastus.api.cognitive.microsoft.com/
