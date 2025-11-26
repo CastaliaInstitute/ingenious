@@ -122,13 +122,17 @@ INGENIOUS_COSMOS_SERVICE__DATABASE_NAME=ingenious-db
 INGENIOUS_COSMOS_SERVICE__API_KEY=your-primary-master-key-here
 INGENIOUS_COSMOS_SERVICE__AUTHENTICATION_METHOD=token
 
-# Azure Blob Storage for prompt templates
-INGENIOUS_FILE_STORAGE__REVISIONS__ENABLE=true
-INGENIOUS_FILE_STORAGE__REVISIONS__STORAGE_TYPE=azure
-INGENIOUS_FILE_STORAGE__REVISIONS__CONTAINER_NAME=prompts
-INGENIOUS_FILE_STORAGE__REVISIONS__PATH=./
-INGENIOUS_FILE_STORAGE__REVISIONS__URL=https://yourblobstorage.blob.core.windows.net
-INGENIOUS_FILE_STORAGE__REVISIONS__TOKEN=DefaultEndpointsProtocol=https;AccountName=yourblobstorage;AccountKey=YOUR_KEY;EndpointSuffix=core.windows.net
+# Azure Blob Storage for prompt templates (Method 1: Simplified)
+INGENIOUS_PROMPT_TEMPLATE_PATH=azure://yourblobstorage/prompts
+AZURE_STORAGE_CONNECTION_STRING=DefaultEndpointsProtocol=https;EndpointSuffix=core.windows.net;AccountName=yourblobstorage;AccountKey=YOUR_KEY;BlobEndpoint=https://yourblobstorage.blob.core.windows.net/;...
+
+# Alternative Method 2: Detailed file storage configuration
+# INGENIOUS_FILE_STORAGE__REVISIONS__ENABLE=true
+# INGENIOUS_FILE_STORAGE__REVISIONS__STORAGE_TYPE=azure
+# INGENIOUS_FILE_STORAGE__REVISIONS__CONTAINER_NAME=prompts
+# INGENIOUS_FILE_STORAGE__REVISIONS__PATH=./
+# INGENIOUS_FILE_STORAGE__REVISIONS__URL=https://yourblobstorage.blob.core.windows.net
+# INGENIOUS_FILE_STORAGE__REVISIONS__TOKEN=DefaultEndpointsProtocol=https;AccountName=yourblobstorage;AccountKey=YOUR_KEY;EndpointSuffix=core.windows.net
 
 # Production Security: Disable built-in workflows
 INGENIOUS_CHAT_SERVICE__ENABLE_BUILTIN_WORKFLOWS=false
