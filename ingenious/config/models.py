@@ -174,6 +174,7 @@ class AzureSearchSettings(BaseModel):
     service: str = Field("", description="Azure Search service name")
     endpoint: str = Field("", description="Azure Search service endpoint URL")
     key: str = Field("", description="Azure Search service API key")
+    index_name: str = Field("", description="Azure Search index name")
 
     # Azure authentication fields
     authentication_method: AuthenticationMethod = Field(
