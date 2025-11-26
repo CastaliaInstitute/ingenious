@@ -413,6 +413,4 @@ filterwarnings = [
 [tool.uv.workspace]
 members = [
     "test_dir",
-    ".",
-    ".",
-]
+    ".",]
