@@ -52,6 +52,7 @@ from .builder.openai_chat_completions_client import (
 
 # Import all the builders
 from .builder.openai_client import AzureOpenAIClientBuilder
+from .builder.openai_client_async import AsyncAzureOpenAIClientBuilder
 from .builder.sql_client import AzureSqlClientBuilder, AzureSqlClientBuilderWithAuth
 
 # Optional builder imports
@@ -196,6 +197,31 @@ class AzureClientFactory:
         )
         builder = AzureOpenAIChatCompletionClientBuilder(model_settings)
         return builder.build()
+
+    @staticmethod
+    def create_async_openai_client(
+        config: dict[str, Any],
+        api_version: Optional[str] = None,
+        **client_options: Any,
+    ) -> Any:
+        """Create an async Azure OpenAI client with direct parameters.
+
+        This method is used by the Azure Search service for embedding and generation.
+
+        Args:
+            config: Dictionary containing 'openai_endpoint' and 'openai_key'
+            api_version: Azure OpenAI API version
+            **client_options: Additional client options (e.g., max_retries)
+
+        Returns:
+            AsyncAzureOpenAI: Configured async Azure OpenAI client
+        """
+        builder = AsyncAzureOpenAIClientBuilder.from_config(
+            config=config,
+            api_version=api_version,
+            client_options=client_options,
+        )
+        return builder.build()  # type: ignore[no-untyped-call]
 
     @staticmethod
     def create_blob_service_client(
@@ -356,6 +382,38 @@ class AzureClientFactory:
 
         builder = AzureSearchClientBuilder(search_config, index_name)
         return builder.build()
+
+    @staticmethod
+    def create_async_search_client(index_name: str, config: dict, **client_options: Any) -> Any:
+        """Create an async Azure Search client with direct parameters.
+
+        Args:
+            index_name: Name of the search index
+            config: Dictionary containing 'endpoint' and 'search_key'
+            **client_options: Additional client options (e.g., retry settings)
+
+        Returns:
+            SearchClient: Configured async Azure Search client from azure.search.documents.aio
+        """
+        if not HAS_SEARCH:
+            raise ImportError(
+                "azure-search-documents is required for Azure Search functionality. "
+                "Install with: pip install azure-search-documents"
+            )
+
+        from azure.core.credentials import AzureKeyCredential
+        from azure.search.documents.aio import SearchClient
+
+        endpoint = config.get("endpoint")
+        search_key = config.get("search_key")
+
+        if not endpoint or not search_key:
+            raise ValueError("Both 'endpoint' and 'search_key' must be provided in config")
+
+        credential = AzureKeyCredential(search_key)
+        return SearchClient(
+            endpoint=endpoint, index_name=index_name, credential=credential, **client_options
+        )
 
     @staticmethod
     def create_search_client_from_params(
