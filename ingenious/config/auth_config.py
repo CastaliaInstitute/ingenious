@@ -244,9 +244,10 @@ class AzureAuthConfig:
                 cred = SyncManagedIdentityCredential(client_id=str(self.client_id))
             else:
                 cred = SyncDefaultAzureCredential(exclude_interactive_browser_credential=True)
-            return get_sync_bearer_token_provider(cred, scope)
+            provider: Callable[[], str] | None = get_sync_bearer_token_provider(cred, scope)
+            return provider
         except Exception:
-            pass
+            pass  # nosec B110 - intentional fallback to async path
 
         # Fall back to aio path and wrap in a sync callable
         try:
@@ -298,12 +299,15 @@ class AzureAuthConfig:
                     if loop.is_running():
                         new_loop = asyncio.new_event_loop()
                         try:
-                            return new_loop.run_until_complete(token_or_coro)
+                            result: str = new_loop.run_until_complete(token_or_coro)
+                            return result
                         finally:
                             new_loop.close()
-                    return loop.run_until_complete(token_or_coro)
+                    result = loop.run_until_complete(token_or_coro)
+                    return result
                 except RuntimeError:
-                    return asyncio.run(token_or_coro)
-            return token_or_coro  # type: ignore[unreachable]
+                    result = asyncio.run(token_or_coro)  # type: ignore[arg-type]
+                    return result
+            return str(token_or_coro)
 
         return _sync_provider

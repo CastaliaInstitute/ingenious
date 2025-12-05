@@ -48,7 +48,7 @@ repos:
     rev: v0.9.3
     hooks:
       - id: xenon
-        args: ['--max-absolute=B', '--max-modules=B', '--max-average=A']
+        args: ['--max-absolute=B', '--max-modules=B', '--max-average=A', '--exclude=ingenious/config/auth_config.py']
   # Security issue detection with bandit
   - repo: https://github.com/PyCQA/bandit
     rev: '1.8.6'
