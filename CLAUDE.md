@@ -17,6 +17,14 @@ This is the **ingenious** package - a core AI agent framework library (v0.2.7).
 - Provide direct, clear technical communication without unnecessary elaboration
 - Focus on facts and technical accuracy over conversational language
 
+## Pre-commit Checks
+
+**CRITICAL**: Do NOT circumvent pre-commit checks. When commits fail due to pre-commit hooks:
+- Fix the underlying issue properly rather than using `# type: ignore`, `# noqa`, or `# nosec` comments to suppress errors
+- Exception: `# nosec B110` is acceptable for intentional try/except/pass patterns in cleanup code
+- If a check is genuinely problematic for the codebase, discuss removing it from `.pre-commit-config.yaml` rather than bypassing it
+- All pre-commit hooks must pass before committing
+
 ## Testing and Development Files
 
 **CRITICAL**: All testing artifacts, temporary files, and development scripts must be placed in the `/tmp` folder to maintain repository cleanliness:
