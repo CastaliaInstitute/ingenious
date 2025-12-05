@@ -221,7 +221,7 @@ class AzureClientFactory:
             api_version=api_version,
             client_options=client_options,
         )
-        return builder.build()  # type: ignore[no-untyped-call]
+        return builder.build()
 
     @staticmethod
     def create_blob_service_client(
@@ -384,7 +384,9 @@ class AzureClientFactory:
         return builder.build()
 
     @staticmethod
-    def create_async_search_client(index_name: str, config: dict, **client_options: Any) -> Any:
+    def create_async_search_client(
+        index_name: str, config: dict[str, Any], **client_options: Any
+    ) -> Any:
         """Create an async Azure Search client with direct parameters.
 
         Args:

@@ -191,11 +191,11 @@ class WorkflowDiscovery:
         """
         # Use cache key that includes the include_builtin parameter
         cache_key = f"workflows_{include_builtin}"
-        if not hasattr(self, "_workflow_caches"):
-            self._workflow_caches = {}
+        if not hasattr(self, "_workflow_caches") or self._workflow_caches is None:
+            self._workflow_caches: dict[str, list[str]] = {}
 
         if cache_key in self._workflow_caches and not force_refresh:
-            return self._workflow_caches[cache_key]
+            return list(self._workflow_caches[cache_key])
 
         workflows: Set[str] = set()
         namespaces = get_namespaces(include_builtin=include_builtin)

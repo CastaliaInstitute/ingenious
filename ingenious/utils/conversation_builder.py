@@ -5,7 +5,7 @@ prompt templates from Azure Blob Storage to local filesystem.
 """
 
 from pathlib import Path
-from typing import List, Optional
+from typing import Any, List, Optional
 
 from openai.types.chat import (
     ChatCompletionAssistantMessageParam,
@@ -64,7 +64,7 @@ def build_user_message(
 
 
 def build_assistant_message(
-    content: Optional[str], tool_calls: Optional[List[dict[str, object]]] = None
+    content: Optional[str], tool_calls: Optional[List[Any]] = None
 ) -> ChatCompletionAssistantMessageParam:
     """Build an assistant message parameter for chat completion.
 

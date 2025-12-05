@@ -7,7 +7,7 @@ with support for both streaming and non-streaming completions.
 from __future__ import annotations
 
 import re
-from typing import Any, AsyncIterator, Optional
+from typing import Any, AsyncIterator, Optional, cast
 
 from openai import NOT_GIVEN, BadRequestError
 from openai.types.chat import (
@@ -139,7 +139,10 @@ class OpenAIService:
                 raise RuntimeError(
                     "OpenAI chat.completions.create returned a response missing 'choices' or it was empty"
                 )
-            return response.choices[0].message
+            raw_message = response.choices[0].message
+            if raw_message is None:
+                raise RuntimeError("OpenAI response message is None")
+            return cast(ChatCompletionMessage, raw_message)
 
         except BadRequestError as error:
             logger.error(
@@ -239,7 +242,7 @@ class OpenAIService:
 
             # Support both sync and async iterables to be future-proof
             if hasattr(stream, "__aiter__"):
-                async for chunk in stream:  # type: ignore[unreachable]
+                async for chunk in stream:
                     if (
                         getattr(chunk, "choices", None)
                         and chunk.choices[0].delta

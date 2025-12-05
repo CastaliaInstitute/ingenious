@@ -313,34 +313,25 @@ module = [
   "scripts.*",
   "pyodbc.*",
   "colorlog.*",
+  "langchain_core.*",
+  "langchain_experimental.*",
+  "langchain_openai.*",
+  "langchain_text_splitters.*",
+  "yaml.*",
 ]
 ignore_missing_imports = true
 
-# Allow some flexibility during initial migration
+# Relaxed checking for complex multi-agent conversation flow modules
+# These modules have architectural constraints that cause LSP violations
 [[tool.mypy.overrides]]
 module = [
-  "ingenious.external_services.*",
-  "ingenious.dataprep.*",
-  "ingenious.document_processing.*",
-  "ingenious.ingenious_extensions_template.*",
   "ingenious.services.chat_services.multi_agent.conversation_flows.*",
   "ingenious.services.chat_services.multi_agent.conversation_patterns.*",
-  "ingenious.models.ag_agents.*",
-  "ingenious.services.knowledge_base.*",
-  "ingenious.services.file_summarization.*",
-  "ingenious.services.chat_services.llm.*",
-  "ingenious.services.chat_services.multi_agent.*",
-  "ingenious.services.sql_agent.*",
-  "ingenious.utils.*",
-  "ingenious.db.cosmos.*",
-  "ingenious.client.azure.builder.*",
-  "ingenious.auth.*",
-  "ingenious.files.azure.*",
+  "ingenious.services.chat_services.multi_agent.service",
+  "ingenious.models.ag_agents",
+  "ingenious.ingenious_extensions_template.services.chat_services.multi_agent.conversation_flows.*",
+  "ingenious.ingenious_extensions_template.api.routes.*",
 ]
-disallow_untyped_defs = false
-disallow_incomplete_defs = false
-warn_return_any = false
-no_implicit_optional = false
 ignore_errors = true
 
 # Allow flexibility in tests
@@ -354,11 +345,11 @@ no_implicit_optional = false
 warn_return_any = false
 
 [[tool.mypy.overrides]]
-# Relax mypy only for the *library-internal* test package
-module = ["ingenious.chunk.tests.*"]
+# Relax mypy for the incomplete chunk module (missing dependencies)
+module = ["ingenious.chunk.*"]
 ignore_errors = true
-disallow_untyped_defs = false        # don't require -> None, param hints, etc.
-ignore_missing_imports = true        # silence missing stubs (e.g. `regex`)
+disallow_untyped_defs = false
+ignore_missing_imports = true
 check_untyped_defs = false
 disallow_untyped_decorators = false
 
@@ -413,4 +404,5 @@ filterwarnings = [
 [tool.uv.workspace]
 members = [
     "test_dir",
-    ".",]
+    ".",
+]

@@ -1,7 +1,7 @@
 """FastAPI dependency injection using the DI container."""
 
 import secrets
-from typing import Any, Optional
+from typing import Any, Optional, cast
 
 from fastapi import Depends, HTTPException, Request, status
 from fastapi.security import (
@@ -34,7 +34,7 @@ def get_di_container() -> Container:
 
 def get_config(container: Container = Depends(get_di_container)) -> IngeniousSettings:
     """Get config from container using FastAPI dependency injection."""
-    return container.config()
+    return cast(IngeniousSettings, container.config())
 
 
 # Legacy profile system removed - all configuration now in the main config object
@@ -49,42 +49,42 @@ def get_chat_history_repository(
     container: Container = Depends(get_di_container),
 ) -> ChatHistoryRepository:
     """Get chat history repository from container."""
-    return container.chat_history_repository()
+    return cast(ChatHistoryRepository, container.chat_history_repository())
 
 
 def get_chat_service(container: Container = Depends(get_di_container)) -> ChatService:
     """Get chat service from container with conversation flow."""
     # The chat_service_factory is already a factory function
     # We need to call it with the conversation_flow parameter
-    return container.chat_service_factory(conversation_flow="")
+    return cast(ChatService, container.chat_service_factory(conversation_flow=""))
 
 
 def get_message_feedback_service(
     container: Container = Depends(get_di_container),
 ) -> MessageFeedbackService:
     """Get message feedback service from container."""
-    return container.message_feedback_service()
+    return cast(MessageFeedbackService, container.message_feedback_service())
 
 
 def get_file_storage_data(
     container: Container = Depends(get_di_container),
 ) -> FileStorage:
     """Get file storage for data from container."""
-    return container.file_storage_data()
+    return cast(FileStorage, container.file_storage_data())
 
 
 def get_file_storage_revisions(
     container: Container = Depends(get_di_container),
 ) -> FileStorage:
     """Get file storage for revisions from container."""
-    return container.file_storage_revisions()
+    return cast(FileStorage, container.file_storage_revisions())
 
 
 def get_project_config(
     container: Container = Depends(get_di_container),
 ) -> IngeniousSettings:
     """Get project config from container."""
-    return container.config()
+    return cast(IngeniousSettings, container.config())
 
 
 def get_security_service(

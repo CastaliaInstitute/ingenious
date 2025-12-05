@@ -165,20 +165,22 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
             DatabaseQueryError: If the user cannot be added to Cosmos DB
         """
         try:
+            user_id = str(uuid.uuid4())
+            created_at = self.get_now_as_string()
             user_doc = {
-                "id": str(uuid.uuid4()),
+                "id": user_id,
                 "identifier": identifier,
                 "metadata": {},
-                "createdAt": self.get_now_as_string(),
+                "createdAt": created_at,
             }
             self.users.upsert_item(user_doc)
             from uuid import UUID as _UUID
 
             return IChatHistoryRepository.User(
-                id=_UUID(user_doc["id"]),
+                id=_UUID(user_id),
                 identifier=identifier,
                 metadata={},
-                createdAt=user_doc["createdAt"],
+                createdAt=created_at,
             )
         except Exception as e:
             raise DatabaseQueryError("Failed to add user in Cosmos", cause=e)

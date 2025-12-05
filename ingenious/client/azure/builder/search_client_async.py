@@ -71,7 +71,10 @@ def _to_plain_secret(value: Any) -> Optional[str]:
     getter = getattr(value, "get_secret_value", None)
     if callable(getter):
         try:
-            return getter()
+            result = getter()
+            if isinstance(result, str):
+                return result
+            return None
         except Exception:
             return None
     return None
@@ -91,7 +94,7 @@ def _filter_kwargs_for_ctor(cls: type, kwargs: dict[str, Any]) -> dict[str, Any]
         Filtered dictionary containing only accepted parameters.
     """
     try:
-        sig = inspect.signature(cls.__init__)
+        sig = inspect.signature(cls)
     except (ValueError, TypeError):
         # If signature introspection fails, pass as-is (best effort).
         return kwargs

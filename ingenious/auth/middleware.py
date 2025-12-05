@@ -4,10 +4,10 @@ This module provides global authentication middleware that can be
 optionally enabled to protect all API endpoints.
 """
 
-from typing import List, Optional
+from typing import Any, List, Optional, cast
 
 from fastapi import FastAPI, HTTPException, Request
-from fastapi.responses import JSONResponse
+from fastapi.responses import JSONResponse, Response
 from starlette.middleware.base import BaseHTTPMiddleware
 from starlette.types import ASGIApp
 
@@ -51,7 +51,7 @@ class AuthenticationMiddleware(BaseHTTPMiddleware):
             "/api/v1/health",  # Allow health check
         ]
 
-    async def dispatch(self, request: Request, call_next):
+    async def dispatch(self, request: Request, call_next: Any) -> Response:
         """Process request through authentication middleware.
 
         Args:
@@ -63,11 +63,11 @@ class AuthenticationMiddleware(BaseHTTPMiddleware):
         """
         # Skip authentication for exempt paths
         if request.url.path in self.exempt_paths:
-            return await call_next(request)
+            return cast(Response, await call_next(request))
 
         # Skip authentication if it's disabled
         if not self.config.web_configuration.authentication.enable:
-            return await call_next(request)
+            return cast(Response, await call_next(request))
 
         try:
             # Validate authentication
@@ -78,7 +78,7 @@ class AuthenticationMiddleware(BaseHTTPMiddleware):
             request.state.username = username
 
             response = await call_next(request)
-            return response
+            return cast(Response, response)
         except HTTPException as e:
             # Return authentication error
             logger.warning(
