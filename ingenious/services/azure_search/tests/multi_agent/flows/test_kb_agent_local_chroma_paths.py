@@ -81,7 +81,7 @@ async def test_local_ingest_chunking_and_ids_and_query_success(
             added_payload["documents"] = documents
             added_payload["ids"] = ids
 
-        def query(self, query_texts: list[str], n_results: int) -> dict[str, list[list[str]]]:
+        def query(self, _query_texts: list[str], n_results: int) -> dict[str, list[list[str]]]:
             """Return a canned query result."""
             return {"documents": [["Match1", "Match2"]]}
 

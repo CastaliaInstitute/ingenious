@@ -41,7 +41,7 @@ async def test_memory_context_truncates_last_10_and_100_chars(
         content: str = (f"msg{i}-" + "X" * 120) if i == 11 else f"msg{i}"
         msgs.append(SimpleNamespace(role="user", content=content))
 
-    async def _get_thread_messages(tid: str) -> list[SimpleNamespace]:
+    async def _get_thread_messages(_tid: str) -> list[SimpleNamespace]:
         """Mock message retrieval to return the predefined list."""
         return msgs
 

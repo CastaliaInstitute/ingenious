@@ -180,7 +180,7 @@ class azure_FileStorageRepository(IFileStorage):
             filenames = []
             for blob in container_client.list_blobs(name_starts_with=prefix):
                 # Get the relative path after the prefix
-                relative_path = blob.name[len(prefix):]
+                relative_path = blob.name[len(prefix) :]
 
                 # Only include files directly in this directory (no slashes = not in subdirectory)
                 if "/" not in relative_path and relative_path:
@@ -219,7 +219,7 @@ class azure_FileStorageRepository(IFileStorage):
             directories: set[str] = set()
             for blob in container_client.list_blobs(name_starts_with=prefix):
                 # Get the relative path after the prefix
-                relative_path = blob.name[len(prefix):]
+                relative_path = blob.name[len(prefix) :]
 
                 # If there's a slash, it means there's a subdirectory
                 if "/" in relative_path:

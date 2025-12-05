@@ -296,7 +296,7 @@ def install_fake_chromadb(
         def add(self, documents: list[str], ids: list[str]) -> None:
             pass
 
-        def query(self, query_texts: list[str], n_results: int) -> dict[str, list[list[str]]]:
+        def query(self, _query_texts: list[str], n_results: int) -> dict[str, list[list[str]]]:
             docs = documents or ["Chroma Fallback Doc"]
             return {"documents": [docs[:n_results]]}
 

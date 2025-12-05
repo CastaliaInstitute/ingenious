@@ -22,7 +22,7 @@ except Exception:  # pragma: no cover - typing fallback if azure-core version di
     class AsyncTokenCredential:  # type: ignore[no-redef]
         """Fallback async token credential type for typing when azure-core unavailable."""
 
-        async def get_token(self, *scopes: str) -> Any:  # pragma: no cover - typing aid
+        async def get_token(self, *_scopes: str) -> Any:  # pragma: no cover - typing aid
             """Acquire an access token for the specified scopes.
 
             Args:

@@ -307,7 +307,7 @@ def install_fake_chromadb(
         def add(self, documents: Any, ids: Any) -> None:
             pass
 
-        def query(self, query_texts: Any, n_results: Any) -> dict[str, list[list[str]]]:
+        def query(self, _query_texts: Any, n_results: Any) -> dict[str, list[list[str]]]:
             if query_empty:
                 return {"documents": [[]]}
             return {"documents": [[(docs or ["C1", "C2"])[0]]]}

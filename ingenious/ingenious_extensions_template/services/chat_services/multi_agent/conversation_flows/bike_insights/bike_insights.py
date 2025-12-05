@@ -138,14 +138,16 @@ class ConversationFlow(IConversationFlow):
         # In this sample I'll first define my topic agents
         runtime = SingleThreadedAgentRuntime()
 
-        async def get_bike_price(ticker: str, date: Annotated[str, "Date in YYYY/MM/DD"]) -> float:
+        async def get_bike_price(
+            _ticker: str, _date: Annotated[str, "Date in YYYY/MM/DD"]
+        ) -> float:
             """Get the bike price for a given ticker and date.
 
             This is a demonstration function that returns a random price.
 
             Args:
-                ticker: The bike ticker symbol.
-                date: The date in YYYY/MM/DD format.
+                _ticker: The bike ticker symbol.
+                _date: The date in YYYY/MM/DD format.
 
             Returns:
                 A random float between 10 and 200 representing the price.

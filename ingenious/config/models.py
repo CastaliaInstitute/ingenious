@@ -306,9 +306,6 @@ class FileStorageContainerSettings(BaseModel):
     add_sub_folders: bool = Field(True, description="Create subdirectories for organization")
     url: str = Field("", description="Azure storage account URL (for Azure storage only)")
     token: str = Field("", description="Azure access token (for Azure storage only)")
-    original_templates: str = Field(
-        "original", description="Directory name for original prompt templates"
-    )
 
     # Azure authentication fields
     authentication_method: AuthenticationMethod = Field(

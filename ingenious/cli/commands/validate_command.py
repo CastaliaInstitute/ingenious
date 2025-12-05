@@ -5,14 +5,89 @@ This module contains the validate command for comprehensive system validation.
 
 from __future__ import annotations
 
+import os
+from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Any
+from typing import Any, List, Tuple
 
 from rich.panel import Panel
 
 from ingenious.cli.base import BaseCommand, CommandError, ExitCode
 from ingenious.cli.utilities import ValidationUtils
 from ingenious.common.enums import AuthenticationMethod
+
+
+@dataclass
+class AuthValidationResult:
+    """Result of authentication validation."""
+
+    passed: bool = True
+    message: str = ""
+    missing_fields: List[str] = field(default_factory=list)
+
+
+def _validate_auth_credentials(model: Any) -> AuthValidationResult:
+    """Validate model credentials based on authentication method."""
+    result = AuthValidationResult()
+    auth_method = model.authentication_method
+
+    if auth_method == AuthenticationMethod.DEFAULT_CREDENTIAL:
+        result.message = "default_credential authentication (no additional credentials required)"
+    elif auth_method == AuthenticationMethod.MSI:
+        if not model.client_id:
+            result.passed = False
+            result.missing_fields.append("client_id (required for MSI authentication)")
+        else:
+            result.message = "MSI authentication with client_id"
+    elif auth_method == AuthenticationMethod.TOKEN:
+        if not model.api_key:
+            result.passed = False
+            result.missing_fields.append("api_key (required for TOKEN authentication)")
+        else:
+            result.message = "token authentication with API key"
+    elif auth_method == AuthenticationMethod.CLIENT_ID_AND_SECRET:
+        if not model.client_id:
+            result.missing_fields.append(
+                "client_id (required for CLIENT_ID_AND_SECRET authentication)"
+            )
+        if not model.client_secret:
+            result.missing_fields.append(
+                "client_secret (required for CLIENT_ID_AND_SECRET authentication)"
+            )
+        if not model.tenant_id and not os.getenv("AZURE_TENANT_ID"):
+            result.missing_fields.append(
+                "tenant_id (required for CLIENT_ID_AND_SECRET authentication, can use AZURE_TENANT_ID env var)"
+            )
+        if result.missing_fields:
+            result.passed = False
+        else:
+            result.message = "client_id_and_secret authentication"
+
+    return result
+
+
+def _get_base_model_missing_fields(model: Any) -> List[str]:
+    """Get list of missing base model fields."""
+    missing = []
+    if not model.base_url:
+        missing.append("base_url")
+    if not model.model:
+        missing.append("model")
+    return missing
+
+
+def _validate_model_config(model: Any) -> Tuple[bool, str, List[str]]:
+    """Validate model configuration completely.
+
+    Returns: (passed, auth_message, missing_fields)
+    """
+    base_missing = _get_base_model_missing_fields(model)
+    auth_result = _validate_auth_credentials(model)
+
+    all_missing = base_missing + auth_result.missing_fields
+    passed = not all_missing and auth_result.passed
+
+    return passed, auth_result.message, all_missing
 
 
 class ValidateCommand(BaseCommand):
@@ -79,112 +154,38 @@ class ValidateCommand(BaseCommand):
         """Validate environment variables for pydantic-settings configuration."""
         issues: list[str] = []
         try:
-            # Check for .env file
-            from pathlib import Path
-
             from ingenious.config.settings import IngeniousSettings
 
-            # Look for .env files
             env_files = [".env", ".env.local", ".env.dev", ".env.prod"]
-            env_file_found = any(Path(f).exists() for f in env_files)
-
-            if env_file_found:
+            if any(Path(f).exists() for f in env_files):
                 self.print_success("Environment file (.env) found")
             else:
                 self.print_warning("No .env file found - using system environment variables")
 
-            # Load settings and check if models are configured
             try:
                 settings = IngeniousSettings()
 
-                if settings.models and len(settings.models) > 0:
-                    self.print_success("Configuration loaded successfully from environment")
-
-                    # Check if first model has required fields based on authentication method
-                    first_model = settings.models[0]
-
-                    # Check required fields based on authentication method
-                    auth_method = first_model.authentication_method
-
-                    # Base fields required for all authentication methods
-                    required_fields_check = bool(first_model.base_url and first_model.model)
-
-                    # Additional validation based on authentication method
-                    auth_validation_passed = True
-                    auth_validation_message = ""
-
-                    if auth_method == AuthenticationMethod.DEFAULT_CREDENTIAL:
-                        # No additional fields required for default credential
-                        auth_validation_message = (
-                            "default_credential authentication (no additional credentials required)"
-                        )
-                    elif auth_method == AuthenticationMethod.MSI:
-                        # MSI requires client_id
-                        if not first_model.client_id:
-                            auth_validation_passed = False
-                        else:
-                            auth_validation_message = "MSI authentication with client_id"
-                    elif auth_method == AuthenticationMethod.TOKEN:
-                        # TOKEN requires api_key
-                        if not first_model.api_key:
-                            auth_validation_passed = False
-                        else:
-                            auth_validation_message = "token authentication with API key"
-                    elif auth_method == AuthenticationMethod.CLIENT_ID_AND_SECRET:
-                        # CLIENT_ID_AND_SECRET requires both client_id and client_secret
-                        if not first_model.client_id or not first_model.client_secret:
-                            auth_validation_passed = False
-                        else:
-                            auth_validation_message = "client_id_and_secret authentication"
-
-                    # Overall validation check
-                    required_fields_check = required_fields_check and auth_validation_passed
-
-                    if required_fields_check:
-                        self.print_success("Primary model environment configuration is complete")
-                        self.console.print(f"    📋 Using {auth_validation_message}")
-                        return True, issues
-                    else:
-                        missing_fields = []
-                        if not first_model.base_url:
-                            missing_fields.append("base_url")
-                        if not first_model.model:
-                            missing_fields.append("model")
-
-                        # Check authentication-specific required fields
-                        if auth_method == AuthenticationMethod.MSI and not first_model.client_id:
-                            missing_fields.append("client_id (required for MSI authentication)")
-                        elif auth_method == AuthenticationMethod.TOKEN and not first_model.api_key:
-                            missing_fields.append("api_key (required for TOKEN authentication)")
-                        elif auth_method == AuthenticationMethod.CLIENT_ID_AND_SECRET:
-                            if not first_model.client_id:
-                                missing_fields.append(
-                                    "client_id (required for CLIENT_ID_AND_SECRET authentication)"
-                                )
-                            if not first_model.client_secret:
-                                missing_fields.append(
-                                    "client_secret (required for CLIENT_ID_AND_SECRET authentication)"
-                                )
-                            # Check tenant_id - allow empty if AZURE_TENANT_ID env var exists
-                            if not first_model.tenant_id:
-                                import os
-
-                                if not os.getenv("AZURE_TENANT_ID"):
-                                    missing_fields.append(
-                                        "tenant_id (required for CLIENT_ID_AND_SECRET authentication, can use AZURE_TENANT_ID env var)"
-                                    )
-
-                        self.print_error(
-                            f"Model missing required configuration: {', '.join(missing_fields)}"
-                        )
-                        issues.append(f"Missing model configuration: {', '.join(missing_fields)}")
-                        self._show_env_fix_commands()
-                        return False, issues
-                else:
+                if not settings.models or len(settings.models) == 0:
                     self.print_error("No models configured in environment")
                     issues.append("No models configured")
                     self._show_env_fix_commands()
                     return False, issues
+
+                self.print_success("Configuration loaded successfully from environment")
+                first_model = settings.models[0]
+                passed, auth_message, missing_fields = _validate_model_config(first_model)
+
+                if passed:
+                    self.print_success("Primary model environment configuration is complete")
+                    self.console.print(f"    Using {auth_message}")
+                    return True, issues
+
+                self.print_error(
+                    f"Model missing required configuration: {', '.join(missing_fields)}"
+                )
+                issues.append(f"Missing model configuration: {', '.join(missing_fields)}")
+                self._show_env_fix_commands()
+                return False, issues
 
             except Exception as e:
                 self.print_error(f"Failed to load configuration: {e}")
@@ -199,106 +200,43 @@ class ValidateCommand(BaseCommand):
 
     def _validate_configuration_files(self) -> tuple[bool, list[str]]:
         """Validate pydantic-settings configuration."""
-        success = True
-        issues = []
+        issues: list[str] = []
 
         try:
-            # Import and validate pydantic-settings configuration
             from ingenious.config.settings import IngeniousSettings
 
-            # Attempt to load and validate the configuration
             settings = IngeniousSettings()
 
-            # Call the validation method if it exists
             if hasattr(settings, "validate_configuration"):
                 settings.validate_configuration()
 
             self.print_success("Pydantic-settings configuration validation passed")
 
-            # Validate that required models are configured
-            if settings.models and len(settings.models) > 0:
-                self.print_success(f"Found {len(settings.models)} configured model(s)")
-
-                # Validate first model has required fields based on authentication method
-                first_model = settings.models[0]
-                auth_method = first_model.authentication_method
-
-                # Base fields required for all authentication methods
-                required_fields_check = bool(first_model.base_url and first_model.model)
-
-                # Additional validation based on authentication method
-                auth_validation_passed = True
-
-                if auth_method == AuthenticationMethod.DEFAULT_CREDENTIAL:
-                    # No additional fields required for default credential
-                    pass
-                elif auth_method == AuthenticationMethod.MSI:
-                    # MSI requires client_id
-                    if not first_model.client_id:
-                        auth_validation_passed = False
-                elif auth_method == AuthenticationMethod.TOKEN:
-                    # TOKEN requires api_key
-                    if not first_model.api_key:
-                        auth_validation_passed = False
-                elif auth_method == AuthenticationMethod.CLIENT_ID_AND_SECRET:
-                    # CLIENT_ID_AND_SECRET requires both client_id and client_secret
-                    if not first_model.client_id or not first_model.client_secret:
-                        auth_validation_passed = False
-
-                # Overall validation check
-                required_fields_check = required_fields_check and auth_validation_passed
-
-                if required_fields_check:
-                    self.print_success("Primary model configuration is complete")
-                    self.console.print(f"    📋 Using {auth_method.value} authentication")
-                else:
-                    missing_fields = []
-                    if not first_model.base_url:
-                        missing_fields.append("base_url")
-                    if not first_model.model:
-                        missing_fields.append("model")
-
-                    # Check authentication-specific required fields
-                    if auth_method == AuthenticationMethod.MSI and not first_model.client_id:
-                        missing_fields.append("client_id (required for MSI authentication)")
-                    elif auth_method == AuthenticationMethod.TOKEN and not first_model.api_key:
-                        missing_fields.append("api_key (required for TOKEN authentication)")
-                    elif auth_method == AuthenticationMethod.CLIENT_ID_AND_SECRET:
-                        if not first_model.client_id:
-                            missing_fields.append(
-                                "client_id (required for CLIENT_ID_AND_SECRET authentication)"
-                            )
-                        if not first_model.client_secret:
-                            missing_fields.append(
-                                "client_secret (required for CLIENT_ID_AND_SECRET authentication)"
-                            )
-                        # Check tenant_id - allow empty if AZURE_TENANT_ID env var exists
-                        if not first_model.tenant_id:
-                            import os
-
-                            if not os.getenv("AZURE_TENANT_ID"):
-                                missing_fields.append(
-                                    "tenant_id (required for CLIENT_ID_AND_SECRET authentication, can use AZURE_TENANT_ID env var)"
-                                )
-
-                    self.print_error(
-                        f"Primary model missing required fields: {', '.join(missing_fields)}"
-                    )
-                    issues.append(
-                        f"Model configuration incomplete: missing {', '.join(missing_fields)}"
-                    )
-                    success = False
-            else:
+            if not settings.models or len(settings.models) == 0:
                 self.print_error("No models configured in settings")
                 issues.append("No models configured")
-                success = False
+                return False, issues
+
+            self.print_success(f"Found {len(settings.models)} configured model(s)")
+
+            first_model = settings.models[0]
+            passed, auth_message, missing_fields = _validate_model_config(first_model)
+
+            if passed:
+                self.print_success("Primary model configuration is complete")
+                self.console.print(
+                    f"    Using {first_model.authentication_method.value} authentication"
+                )
+                return True, issues
+
+            self.print_error(f"Primary model missing required fields: {', '.join(missing_fields)}")
+            issues.append(f"Model configuration incomplete: missing {', '.join(missing_fields)}")
+            return False, issues
 
         except Exception as e:
             self.print_error(f"Configuration validation failed: {e}")
             issues.append(f"Configuration: {e}")
-            success = False
-
-        return success, issues
+            return False, issues
 
     def _validate_dependencies(self) -> tuple[bool, list[str]]:
         """Validate required dependencies are available."""
@@ -350,14 +288,67 @@ class ValidateCommand(BaseCommand):
 
         return success, issues
 
+    def _print_auth_status(self, model: Any, auth_result: AuthValidationResult) -> None:
+        """Print authentication status messages."""
+        auth_method = model.authentication_method
+
+        if auth_result.passed:
+            if auth_method == AuthenticationMethod.DEFAULT_CREDENTIAL:
+                self.print_success("Using default_credential authentication (no API key required)")
+            elif auth_method == AuthenticationMethod.MSI:
+                self.print_success(f"Using MSI authentication with client_id: {model.client_id}")
+            elif auth_method == AuthenticationMethod.TOKEN:
+                self.print_success("Using TOKEN authentication with API key")
+            elif auth_method == AuthenticationMethod.CLIENT_ID_AND_SECRET:
+                self.print_success("Using CLIENT_ID_AND_SECRET authentication")
+        else:
+            if auth_result.missing_fields:
+                self.print_error(
+                    f"{auth_method.value} authentication requires {', '.join(auth_result.missing_fields)}"
+                )
+
+    def _test_azure_connectivity(self, base_url: str, issues: list[str]) -> None:
+        """Test actual connectivity to Azure OpenAI service."""
+        try:
+            import urllib.parse
+
+            import requests
+
+            parsed_url = urllib.parse.urlparse(base_url)
+            test_url = f"{parsed_url.scheme}://{parsed_url.netloc}"
+
+            response = requests.get(test_url, timeout=10)
+            reachable_codes = {200, 401, 403, 404}
+            if response.status_code in reachable_codes:
+                self.print_success("Azure OpenAI service is reachable")
+            else:
+                self.print_warning(f"Azure OpenAI service returned status {response.status_code}")
+                issues.append(f"Azure service returned unexpected status: {response.status_code}")
+
+        except ImportError:
+            self.print_info("Skipping connectivity test - requests library not available")
+        except Exception as conn_e:
+            error_type = str(type(conn_e))
+            if "ConnectTimeout" in error_type:
+                self.print_warning(
+                    "Azure OpenAI service connection timeout - check network connectivity"
+                )
+                issues.append("Azure OpenAI service connection timeout")
+            elif "ConnectionError" in error_type:
+                self.print_warning(
+                    "Cannot connect to Azure OpenAI service - check endpoint URL and network"
+                )
+                issues.append("Cannot connect to Azure OpenAI service")
+            else:
+                self.print_warning(f"Azure connectivity test failed: {conn_e}")
+
     def _validate_azure_connectivity(self) -> tuple[bool, list[str]]:
         """Validate Azure OpenAI connectivity using pydantic-settings."""
-        issues = []
+        issues: list[str] = []
 
         try:
             from ingenious.config.settings import IngeniousSettings
 
-            # Load settings and check for configured models
             settings = IngeniousSettings()
 
             if not settings.models or len(settings.models) == 0:
@@ -365,61 +356,12 @@ class ValidateCommand(BaseCommand):
                 issues.append("No Azure OpenAI models configured")
                 return False, issues
 
-            # Check first model configuration based on authentication method
             first_model = settings.models[0]
-            auth_method = first_model.authentication_method
+            auth_result = _validate_auth_credentials(first_model)
+            self._print_auth_status(first_model, auth_result)
 
-            # Validate credentials based on authentication method
-            auth_validation_passed = True
-
-            if auth_method == AuthenticationMethod.DEFAULT_CREDENTIAL:
-                # No additional credentials required
-                self.print_success("Using default_credential authentication (no API key required)")
-            elif auth_method == AuthenticationMethod.MSI:
-                if not first_model.client_id:
-                    self.print_error(
-                        "MSI authentication requires client_id but it's not configured"
-                    )
-                    issues.append("MSI authentication client_id not configured")
-                    auth_validation_passed = False
-                else:
-                    self.print_success(
-                        f"Using MSI authentication with client_id: {first_model.client_id}"
-                    )
-            elif auth_method == AuthenticationMethod.TOKEN:
-                if not first_model.api_key:
-                    self.print_error(
-                        "TOKEN authentication requires api_key but it's not configured"
-                    )
-                    issues.append("TOKEN authentication API key not configured")
-                    auth_validation_passed = False
-                else:
-                    self.print_success("Using TOKEN authentication with API key")
-            elif auth_method == AuthenticationMethod.CLIENT_ID_AND_SECRET:
-                missing_creds = []
-                if not first_model.client_id:
-                    missing_creds.append("client_id")
-                if not first_model.client_secret:
-                    missing_creds.append("client_secret")
-                # Check tenant_id - allow empty if AZURE_TENANT_ID env var exists
-                if not first_model.tenant_id:
-                    import os
-
-                    if not os.getenv("AZURE_TENANT_ID"):
-                        missing_creds.append("tenant_id (or AZURE_TENANT_ID env var)")
-
-                if missing_creds:
-                    self.print_error(
-                        f"CLIENT_ID_AND_SECRET authentication requires {', '.join(missing_creds)} but they're not configured"
-                    )
-                    issues.append(
-                        f"CLIENT_ID_AND_SECRET authentication missing: {', '.join(missing_creds)}"
-                    )
-                    auth_validation_passed = False
-                else:
-                    self.print_success("Using CLIENT_ID_AND_SECRET authentication")
-
-            if not auth_validation_passed:
+            if not auth_result.passed:
+                issues.extend(auth_result.missing_fields)
                 return False, issues
 
             if not first_model.base_url:
@@ -427,58 +369,13 @@ class ValidateCommand(BaseCommand):
                 issues.append("Azure OpenAI endpoint not configured")
                 return False, issues
 
-            # Validate URL format
             is_valid_url, error = ValidationUtils.validate_url(first_model.base_url)
             if not is_valid_url:
                 self.print_error(f"Invalid Azure endpoint URL: {error}")
                 issues.append(f"Invalid Azure endpoint URL: {error}")
                 return False, issues
 
-            # Test actual connectivity to Azure OpenAI service
-            try:
-                import urllib.parse
-
-                import requests
-
-                # Create a test URL to check connectivity
-                parsed_url = urllib.parse.urlparse(first_model.base_url)
-                test_url = f"{parsed_url.scheme}://{parsed_url.netloc}"
-
-                # Simple connectivity test with timeout
-                response = requests.get(test_url, timeout=10)
-                if response.status_code in [
-                    200,
-                    401,
-                    403,
-                    404,
-                ]:  # Service is responding
-                    self.print_success("Azure OpenAI service is reachable")
-                else:
-                    self.print_warning(
-                        f"Azure OpenAI service returned status {response.status_code}"
-                    )
-                    issues.append(
-                        f"Azure service returned unexpected status: {response.status_code}"
-                    )
-
-            except ImportError:
-                self.print_info("Skipping connectivity test - requests library not available")
-            except Exception as conn_e:
-                # Handle all other connectivity errors (timeout, connection error, etc.)
-                if "ConnectTimeout" in str(type(conn_e)):
-                    self.print_warning(
-                        "Azure OpenAI service connection timeout - check network connectivity"
-                    )
-                    issues.append("Azure OpenAI service connection timeout")
-                elif "ConnectionError" in str(type(conn_e)):
-                    self.print_warning(
-                        "Cannot connect to Azure OpenAI service - check endpoint URL and network"
-                    )
-                    issues.append("Cannot connect to Azure OpenAI service")
-                else:
-                    self.print_warning(f"Azure connectivity test failed: {conn_e}")
-                # Don't treat connectivity test failures as critical errors
-
+            self._test_azure_connectivity(first_model.base_url, issues)
             self.print_success("Azure OpenAI configuration found")
             return True, issues
 
@@ -644,70 +541,63 @@ class ValidateCommand(BaseCommand):
         )
         self.console.print(panel)
 
+    def _get_fix_suggestions(self, issues_found: list[str]) -> list[str]:
+        """Get fix suggestions based on issues found."""
+        fix_commands: list[str] = []
+        issues_lower = [issue.lower() for issue in issues_found]
+
+        fix_mapping = {
+            "missing": [
+                "Missing files: ingen init",
+                "Set environment variables:",
+                "  export INGENIOUS_PROJECT_PATH=$(pwd)/config.yml",
+                "  export INGENIOUS_PROFILE_PATH=$(pwd)/profiles.yml",
+            ],
+            "azure": [
+                "Create .env file with Azure OpenAI credentials:",
+                "  echo 'AZURE_OPENAI_API_KEY=your-key' > .env",
+                "  echo 'AZURE_OPENAI_BASE_URL=https://your-resource.openai.azure.com/' >> .env",
+            ],
+            "dependency": [
+                "Install missing dependencies:",
+                "  uv add ingenious[standard]  # For SQL agent support",
+                "  uv add ingenious[azure-full]  # For full Azure integration",
+            ],
+            "workflow": [
+                "Fix workflow issues:",
+                "  Check that ingenious_extensions directory exists",
+                "  Verify workflow files are properly configured",
+            ],
+        }
+
+        for keyword, suggestions in fix_mapping.items():
+            if any(keyword in issue for issue in issues_lower):
+                fix_commands.extend(suggestions)
+
+        return fix_commands or ["Run 'ingen init' to set up missing components"]
+
     def _show_validation_summary(self, validation_passed: bool, issues_found: list[str]) -> None:
         """Show validation summary and next steps."""
         if validation_passed:
             success_panel = Panel(
-                "🎉 All validations passed! Your Ingenious setup is ready.\n"
-                "🚀 You can now run: ingen serve",
-                title="✅ Validation Summary",
+                "All validations passed! Your Ingenious setup is ready.\n"
+                "You can now run: ingen serve",
+                title="Validation Summary",
                 border_style="green",
             )
             self.console.print(success_panel)
-        else:
-            # Show specific issues found
-            if issues_found:
-                self.console.print("\n[bold red]Issues Found:[/bold red]")
-                for issue in issues_found:
-                    self.console.print(f"  ❌ {issue}")
-                self.console.print("")
+            return
 
-            # Show fix suggestions based on issues
-            fix_commands = []
+        if issues_found:
+            self.console.print("\n[bold red]Issues Found:[/bold red]")
+            for issue in issues_found:
+                self.console.print(f"  {issue}")
+            self.console.print("")
 
-            if any("missing" in issue.lower() for issue in issues_found):
-                fix_commands.extend(
-                    [
-                        "• Missing files: ingen init",
-                        "• Set environment variables:",
-                        "  export INGENIOUS_PROJECT_PATH=$(pwd)/config.yml",
-                        "  export INGENIOUS_PROFILE_PATH=$(pwd)/profiles.yml",
-                    ]
-                )
-
-            if any("azure" in issue.lower() for issue in issues_found):
-                fix_commands.extend(
-                    [
-                        "• Create .env file with Azure OpenAI credentials:",
-                        "  echo 'AZURE_OPENAI_API_KEY=your-key' > .env",
-                        "  echo 'AZURE_OPENAI_BASE_URL=https://your-resource.openai.azure.com/' >> .env",
-                    ]
-                )
-
-            if any("dependency" in issue.lower() for issue in issues_found):
-                fix_commands.extend(
-                    [
-                        "• Install missing dependencies:",
-                        "  uv add ingenious[standard]  # For SQL agent support",
-                        "  uv add ingenious[azure-full]  # For full Azure integration",
-                    ]
-                )
-
-            if any("workflow" in issue.lower() for issue in issues_found):
-                fix_commands.extend(
-                    [
-                        "• Fix workflow issues:",
-                        "  Check that ingenious_extensions directory exists",
-                        "  Verify workflow files are properly configured",
-                    ]
-                )
-
-            if not fix_commands:
-                fix_commands = ["• Run 'ingen init' to set up missing components"]
-
-            error_panel = Panel(
-                "\n".join(fix_commands),
-                title="❌ Validation Issues - Suggested Fixes",
-                border_style="red",
-            )
-            self.console.print(error_panel)
+        fix_commands = self._get_fix_suggestions(issues_found)
+        error_panel = Panel(
+            "\n".join(fix_commands),
+            title="Validation Issues - Suggested Fixes",
+            border_style="red",
+        )
+        self.console.print(error_panel)

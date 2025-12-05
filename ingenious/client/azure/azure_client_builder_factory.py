@@ -10,7 +10,7 @@ import pyodbc
 from autogen_ext.models.openai import AzureOpenAIChatCompletionClient
 from azure.core.credentials import AzureKeyCredential
 from azure.storage.blob import BlobClient, BlobServiceClient
-from openai import AsyncAzureOpenAI, AzureOpenAI
+from openai import AzureOpenAI
 
 # Optional imports with fallbacks
 try:
@@ -403,7 +403,6 @@ class AzureClientFactory:
                 "Install with: pip install azure-search-documents"
             )
 
-        from azure.core.credentials import AzureKeyCredential
         from azure.search.documents.aio import SearchClient
 
         endpoint = config.get("endpoint")
@@ -581,69 +580,4 @@ class AzureClientFactory:
             client_id=client_id,
             client_secret=client_secret,
             tenant_id=tenant_id,
-        )
-
-    @staticmethod
-    def create_async_search_client(
-        index_name: str,
-        config: dict[str, str],
-        **client_options: Any,
-    ) -> Any:
-        """Create an async Azure Search client for the azure_search service.
-
-        This method is called by the azure_search service components to create
-        async search clients with a simplified config dict interface.
-
-        Args:
-            index_name: Name of the search index
-            config: Dictionary containing 'endpoint' and 'search_key'
-            **client_options: Additional options passed to the SDK
-
-        Returns:
-            AsyncSearchClient: Configured async Azure Search client
-        """
-        if not HAS_SEARCH:
-            raise ImportError(
-                "azure-search-documents is required for Azure Search functionality. "
-                "Install with: pip install azure-search-documents"
-            )
-
-        endpoint = config.get("endpoint", "")
-        search_key = config.get("search_key", "")
-
-        credential = AzureKeyCredential(search_key)
-        return AsyncSearchClient(
-            endpoint=endpoint,
-            index_name=index_name,
-            credential=credential,
-            **client_options,
-        )
-
-    @staticmethod
-    def create_async_openai_client(
-        config: dict[str, str],
-        api_version: str,
-        **client_options: Any,
-    ) -> AsyncAzureOpenAI:
-        """Create an async Azure OpenAI client for the azure_search service.
-
-        This method is called by the azure_search service components to create
-        async OpenAI clients with a simplified config dict interface.
-
-        Args:
-            config: Dictionary containing 'openai_endpoint' and 'openai_key'
-            api_version: Azure OpenAI API version
-            **client_options: Additional options like max_retries, timeout
-
-        Returns:
-            AsyncAzureOpenAI: Configured async Azure OpenAI client
-        """
-        endpoint = config.get("openai_endpoint", "")
-        api_key = config.get("openai_key", "")
-
-        return AsyncAzureOpenAI(
-            azure_endpoint=endpoint,
-            api_key=api_key,
-            api_version=api_version,
-            **client_options,
         )

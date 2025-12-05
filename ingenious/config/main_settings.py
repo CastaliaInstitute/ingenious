@@ -183,7 +183,7 @@ class IngeniousSettings(BaseSettings):
 
         return validate_models_not_empty(v)
 
-    def model_post_init(self, __context: Any) -> None:
+    def model_post_init(self, _context: Any) -> None:
         """Initialize default model if none provided but env vars are available."""
         import os
 
