@@ -30,7 +30,7 @@ from ingenious.services.retrieval.errors import GenerationDisabledError
 try:  # Some tests patch this symbol on the provider module
     from azure.search.documents.models import QueryType  # noqa: F401
 except Exception:  # pragma: no cover - tests may stub this anyway
-    QueryType = object()  # type: ignore[assignment,misc]
+    QueryType = object()
 
 if TYPE_CHECKING:
     from ingenious.config import IngeniousSettings
@@ -100,7 +100,7 @@ class AzureSearchProvider:
         try:
             from azure.search.documents.models import QueryType as _QT
         except Exception:
-            _QT = None  # type: ignore[assignment,misc]
+            _QT = None
         if _QT is not None and getattr(_QT, "SIMPLE", None) is not None:
             params["query_type"] = getattr(_QT, "SIMPLE")
         return params
@@ -259,7 +259,7 @@ class AzureSearchProvider:
                 try:
                     await close()
                 except Exception:
-                    pass
+                    pass  # nosec B110 - intentionally ignoring cleanup errors
         return []
 
     async def retrieve(self, query: str, top_k: int = 10) -> List[Dict[str, Any]]:
