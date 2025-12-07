@@ -150,30 +150,12 @@ class ConversationFlow(IConversationFlow):
             "chroma_db",  # Invariant: default or _memory_path is str.
         )
 
-    def _as_text(self, x: Any) -> str:
-        """Safely coerce any object (list/dict/bytes/etc.) to text.
-
-        This method provides a robust fallback for converting arbitrary data to a
-        string. It handles None, bytes, and attempts to serialize other types as
-        JSON before resorting to the standard `str()` representation, preventing
-        conversion errors from propagating.
-
-        Args:
-            x: The object to convert.
-
-        Returns:
-            A string representation of the input.
-        """
-        from ._helpers import as_text
-
-        return as_text(x)
-
     def _to_text(self, x: Any) -> str:
-        """Prefer joining lists of strings; otherwise fall back to JSON/str via _as_text.
+        """Prefer joining lists of strings; otherwise fall back to JSON/str.
 
         This method is designed to provide a more natural string representation for
         lists by joining their elements. For all non-list types, it delegates the
-        conversion to the `_as_text` method for safe, generic handling.
+        conversion to the `to_text` helper for safe, generic handling.
 
         Args:
             x: The object to convert.
@@ -444,7 +426,7 @@ class ConversationFlow(IConversationFlow):
         if model_client is not None:
             try:
                 await model_client.close()
-            except Exception:
+            except Exception:  # nosec B110
                 pass
 
     def _detach_logger_handler(
@@ -454,7 +436,7 @@ class ConversationFlow(IConversationFlow):
         try:
             if handler:
                 logger.removeHandler(handler)
-        except Exception:
+        except Exception:  # nosec B110
             pass
 
     # -----------------------------
@@ -656,7 +638,7 @@ class ConversationFlow(IConversationFlow):
                             content=final_text,
                             is_final=False,
                         )
-        except Exception:
+        except Exception:  # nosec B110
             pass
 
     def _looks_like_tool_chatter(self, text: str) -> bool:
@@ -1095,7 +1077,7 @@ class ConversationFlow(IConversationFlow):
             try:
                 if client:
                     await client.close()
-            except Exception:
+            except Exception:  # nosec B110
                 pass
 
     # -----------------------------
@@ -1146,7 +1128,7 @@ class ConversationFlow(IConversationFlow):
                 stripped = val.strip()
                 if stripped.isdigit() and int(stripped) > 0:
                     return int(stripped)
-        except Exception:
+        except Exception:  # nosec B110
             pass
         return None
 
@@ -1429,14 +1411,14 @@ class ConversationFlow(IConversationFlow):
         if provider:
             try:
                 await provider.close()
-            except Exception:
+            except Exception:  # nosec B110
                 pass
 
     def _ensure_kb_directory(self) -> None:
         """Ensure the KB directory exists for local retrieval."""
         try:
             os.makedirs(self._kb_path, exist_ok=True)
-        except Exception:
+        except Exception:  # nosec B110
             pass
 
     async def _handle_search_fallback(
@@ -1568,7 +1550,7 @@ class ConversationFlow(IConversationFlow):
                     try:
                         with open(filepath, "r", encoding="utf-8") as f:
                             content = f.read()
-                    except Exception:
+                    except Exception:  # nosec B112
                         continue
                     # Simple blank-line chunking; preserves predictable chunk IDs.
                     chunks = content.split("\n\n")
