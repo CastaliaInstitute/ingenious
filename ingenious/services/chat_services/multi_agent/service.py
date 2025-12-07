@@ -3,12 +3,10 @@
 import logging
 import uuid as uuid_module
 from abc import ABC, abstractmethod
-from typing import TYPE_CHECKING, Any, AsyncIterator, Dict, List, Optional
+from typing import TYPE_CHECKING, Any, AsyncIterator, Optional
 
 from jinja2 import Environment
 from openai.types.chat import ChatCompletionMessageParam
-
-import ingenious.config.config as ig_config
 
 if TYPE_CHECKING:
     from ingenious.config.settings import IngeniousSettings
@@ -477,113 +475,6 @@ class multi_agent_chat_service:
             yield error_chunk
 
 
-class IConversationPattern(ABC):
-    """Abstract base class for conversation pattern implementations.
-
-    This class provides the foundation for implementing custom conversation patterns
-    with built-in memory management, configuration access, and template handling.
-    Legacy pattern - prefer IConversationFlow for new implementations.
-    """
-
-    _config: "IngeniousSettings"
-    _memory_path: str
-    _memory_file_path: str
-    _memory_manager: Any
-
-    def __init__(self) -> None:
-        """Initialize the conversation pattern with configuration and memory management.
-
-        Sets up the configuration, memory paths, and memory manager for handling
-        conversation context across sessions.
-        """
-        super().__init__()
-        self._config = ig_config.get_config()
-        self._memory_path = self.GetConfig().chat_history.memory_path
-        self._memory_file_path = f"{self._memory_path}/context.md"
-
-        # Initialize memory manager for cloud storage support
-        from ingenious.services.memory_manager import get_memory_manager
-
-        self._memory_manager = get_memory_manager(self._config, self._memory_path)
-
-    def GetConfig(self) -> "IngeniousSettings":
-        """Get the current configuration settings.
-
-        Returns:
-            IngeniousSettings: The current configuration instance.
-        """
-        return self._config
-
-    def Get_Models(self) -> Dict[str, Any]:
-        """Get the configured language models as a dictionary.
-
-        Returns:
-            Dict[str, Any]: Dictionary containing model configurations.
-        """
-        return self._config.models.__dict__
-
-    def Get_Memory_Path(self) -> str:
-        """Get the path to the memory storage directory.
-
-        Returns:
-            str: The memory storage directory path.
-        """
-        return self._memory_path
-
-    def Get_Memory_File(self) -> str:
-        """Get the full path to the memory context file.
-
-        Returns:
-            str: The full path to the memory file (context.md).
-        """
-        return self._memory_file_path
-
-    def Maintain_Memory(self, new_content: str, max_words: int = 150) -> Any:
-        """Maintain memory using the MemoryManager for cloud storage support."""
-        from ingenious.services.memory_manager import run_async_memory_operation
-
-        return run_async_memory_operation(  # type: ignore
-            self._memory_manager.maintain_memory(new_content, max_words)
-        )
-
-    async def write_llm_responses_to_file(
-        self, response_array: List[Dict[str, Any]], event_type: str, output_path: str
-    ) -> None:
-        """Write LLM responses to files for a given event type.
-
-        Args:
-            response_array: List of response dictionaries containing chat_response and chat_title.
-            event_type: The type of event being processed.
-            output_path: The directory path where response files will be written.
-        """
-        fs = FileStorage(self._config)
-        for res in response_array:
-            make_llm_calls = True
-            if make_llm_calls:
-                this_response = res["chat_response"]
-            else:
-                this_response = "Insight not yet generated"
-
-            await fs.write_file(
-                this_response,
-                f"agent_response_{event_type}_{res['chat_title']}.md",
-                output_path,
-            )
-
-    @abstractmethod
-    async def get_conversation_response(self, message: str, thread_memory: str) -> IChatResponse:
-        """Generate a conversation response based on the message and memory context.
-
-        Args:
-            message: The user's input message.
-            thread_memory: The conversation memory/history for context.
-
-        Returns:
-            IChatResponse: The generated response from the conversation pattern.
-        """
-        pass
-
-
 class IConversationFlow(ABC):
     """Abstract base class for conversation flow implementations.
 
@@ -650,7 +541,7 @@ class IConversationFlow(ABC):
                 operation="template_file_lookup",
             )
             return ""
-        env = Environment()
+        env = Environment(autoescape=True)
         template = env.from_string(content)
         return template.render()  # type: ignore
 
