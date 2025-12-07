@@ -4,10 +4,13 @@ Provides functions to count tokens in chat messages and retrieve maximum token
 limits for different models using tiktoken.
 """
 
-from typing import Dict, List, Set
+from typing import Any, Dict, Sequence, Set, Union
 
 import tiktoken
 from openai.types.chat import ChatCompletionMessageParam
+
+# Accept either typed OpenAI message params or plain dicts
+MessageLike = Union[ChatCompletionMessageParam, Dict[str, Any]]
 
 from ingenious.core.structured_logging import get_logger
 
@@ -42,12 +45,12 @@ def get_max_tokens(model: str = "gpt-3.5-turbo-0125") -> int:
 
 
 def num_tokens_from_messages(
-    messages: List[ChatCompletionMessageParam], model: str = "gpt-3.5-turbo-0613"
+    messages: Sequence[MessageLike], model: str = "gpt-3.5-turbo-0613"
 ) -> int:
     """Return the number of tokens used by a list of messages.
 
     Args:
-        messages: List of chat completion message parameters.
+        messages: List of chat completion message parameters or dict-like messages.
         model: The model identifier for token encoding.
 
     Returns:

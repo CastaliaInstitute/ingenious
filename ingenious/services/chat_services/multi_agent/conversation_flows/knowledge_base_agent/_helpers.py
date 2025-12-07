@@ -14,7 +14,7 @@ from typing import Any, List, Optional, Tuple
 
 # Try YAML; fall back to JSON/plaintext if PyYAML isn't installed
 try:
-    import yaml  # type: ignore[import-untyped]
+    import yaml
 except Exception:
     yaml = None  # sentinel to denote "no YAML available"
 
@@ -115,7 +115,7 @@ def is_azure_search_available() -> bool:
     """
     try:
         from ingenious.services.azure_search.provider import (
-            AzureSearchProvider,  # type: ignore
+            AzureSearchProvider,
         )
 
         _ = AzureSearchProvider  # silence linter

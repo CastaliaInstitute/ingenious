@@ -2,7 +2,7 @@
 
 import asyncio
 from abc import ABC
-from typing import List
+from typing import Any, List
 
 from autogen_agentchat.agents import AssistantAgent
 from autogen_agentchat.base import Response
@@ -38,7 +38,11 @@ class RoutedAssistantAgent(RoutedAgent, ABC):
     """
 
     def __init__(
-        self, agent: Agent, data_identifier: str, next_agent_topic: str = None, tools=[]
+        self,
+        agent: Agent,
+        data_identifier: str,
+        next_agent_topic: str | None = None,
+        tools: List[Any] | None = None,
     ) -> None:
         """Initialize the routed assistant agent.
 
@@ -63,8 +67,8 @@ class RoutedAssistantAgent(RoutedAgent, ABC):
         self._agent: Agent = agent
         self._data_identifier = data_identifier
         self._next_agent_topic = next_agent_topic
-        self._tools = tools
-        self._system_messages = [SystemMessage(content=agent.system_prompt)]
+        self._tools = tools or []
+        self._system_messages: List[LLMMessage] = [SystemMessage(content=agent.system_prompt)]
 
     @message_handler
     async def handle_my_message_type(self, message: AgentMessage, ctx: MessageContext) -> None:
@@ -87,7 +91,7 @@ class RoutedAssistantAgent(RoutedAgent, ABC):
         #     await self.publish_my_message(agent_chat)
 
         # Create a session of messages.
-        session: List[LLMMessage] = self._system_messages + [
+        session: List[LLMMessage] = list(self._system_messages) + [
             UserMessage(content=message.content, source="user")
         ]
         execute_tool_calls = True
@@ -143,9 +147,14 @@ class RoutedAssistantAgent(RoutedAgent, ABC):
             agent_chat: The agent chat containing the response.
         """
         # Publish the outgoing message to the next agent
+        response = agent_chat.chat_response
+        if response is None:
+            return
+        chat_msg = response.chat_message
+        content = getattr(chat_msg, "content", "") if chat_msg else ""
         await self.publish_message(
-            AgentMessage(content=agent_chat.chat_response.chat_message.content),
-            topic_id=TopicId(type=self._next_agent_topic, source=self.id.key),
+            AgentMessage(content=content),
+            topic_id=TopicId(type=self._next_agent_topic or "", source=self.id.key),
         )
 
 
@@ -195,7 +204,8 @@ class RelayAgent(RoutedAgent):
             ctx: Message context containing sender and routing information.
         """
         self._response_count += 1
-        content = "## " + ctx.sender.type + "\n" + message.content
+        sender_type = ctx.sender.type if ctx.sender else "unknown"
+        content = "## " + sender_type + "\n" + message.content
         self._agent_messages.append(content)
         self._agent.add_agent_chat(content=content, identifier=self._data_identifier, ctx=ctx)
         # await self._agent.log(agent_chat=agent_chat, queue=queue)
@@ -222,7 +232,7 @@ class RoutedResponseOutputAgent(RoutedAgent, ABC):
         self,
         agent: Agent,
         data_identifier: str,
-        next_agent_topic: str = None,
+        next_agent_topic: str | None = None,
         additional_data: str = "",
     ) -> None:
         """Initialize the routed response output agent.
@@ -234,7 +244,7 @@ class RoutedResponseOutputAgent(RoutedAgent, ABC):
             additional_data: Additional data to append to messages.
         """
         super().__init__(agent.agent_name)
-        self._next_agent_topic = next_agent_topic
+        self._next_agent_topic: str | None = next_agent_topic
 
         model_client = AzureClientFactory.create_openai_chat_completion_client(agent.model)
         assistant_agent = AssistantAgent(
@@ -260,8 +270,9 @@ class RoutedResponseOutputAgent(RoutedAgent, ABC):
         agent_chat = self._agent.add_agent_chat(
             content=content, identifier=self._data_identifier, ctx=ctx
         )
+        topic_source = ctx.topic_id.source if ctx.topic_id else "unknown"
         agent_chat.chat_response = await self._delegate.on_messages(
-            messages=[TextMessage(content=content, source=ctx.topic_id.source)],
+            messages=[TextMessage(content=content, source=topic_source)],
             cancellation_token=ctx.cancellation_token,
         )
 
@@ -271,7 +282,12 @@ class RoutedResponseOutputAgent(RoutedAgent, ABC):
     async def publish_my_message(self, agent_chat: AgentChat) -> None:
         """Publishes the response to the next agent."""
         # Publish the outgoing message to the next agent
+        response = agent_chat.chat_response
+        if response is None:
+            return
+        chat_msg = response.chat_message
+        msg_content = getattr(chat_msg, "content", "") if chat_msg else ""
         await self.publish_message(
-            AgentMessage(content=agent_chat.chat_response.chat_message.content),
-            topic_id=TopicId(type=self._next_agent_topic, source=self.id.key),
+            AgentMessage(content=msg_content),
+            topic_id=TopicId(type=self._next_agent_topic or "", source=self.id.key),
         )

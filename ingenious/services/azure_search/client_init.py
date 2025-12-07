@@ -32,13 +32,29 @@ from __future__ import annotations
 
 import logging
 from importlib import import_module
-from typing import TYPE_CHECKING, Any, cast
+from typing import TYPE_CHECKING, Any, Protocol, cast
+
+from pydantic import SecretStr
 
 if TYPE_CHECKING:
     from azure.search.documents.aio import SearchClient
     from openai import AsyncAzureOpenAI
 
     from .config import SearchConfig
+
+
+class SearchConfigProtocol(Protocol):
+    """Minimal interface for search configuration objects."""
+
+    @property
+    def search_index_name(self) -> str: ...
+
+    @property
+    def search_endpoint(self) -> str: ...
+
+    @property
+    def search_key(self) -> SecretStr: ...
+
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Patch seam: tests set this to a dummy factory class with the same API.
@@ -125,7 +141,7 @@ def _normalize_openai_options(client_options: dict[str, Any]) -> dict[str, Any]:
     return out
 
 
-def make_async_search_client(cfg: "SearchConfig", **client_options: Any) -> "SearchClient":
+def make_async_search_client(cfg: SearchConfigProtocol, **client_options: Any) -> "SearchClient":
     """Create the async Azure Search client via the selected factory.
 
     Any keyword args in `client_options` are forwarded verbatim to the underlying

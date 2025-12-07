@@ -280,6 +280,9 @@ plugins = ["pydantic.mypy"]
 [[tool.mypy.overrides]]
 module = [
   "autogen.*",
+  "autogen_core.*",
+  "autogen_agentchat.*",
+  "autogen_ext.*",
   "structlog.*",
   "scrapfly.*",
   "pymupdf.*",
@@ -321,18 +324,29 @@ module = [
 ]
 ignore_missing_imports = true
 
-# Relaxed checking for complex multi-agent conversation flow modules
-# These modules have architectural constraints that cause LSP violations
+# Multi-agent conversation modules - strict typing enabled
+# Third-party dependencies (autogen, etc.) have ignore_missing_imports = true above
 [[tool.mypy.overrides]]
 module = [
   "ingenious.services.chat_services.multi_agent.conversation_flows.*",
   "ingenious.services.chat_services.multi_agent.conversation_patterns.*",
   "ingenious.services.chat_services.multi_agent.service",
-  "ingenious.models.ag_agents",
   "ingenious.ingenious_extensions_template.services.chat_services.multi_agent.conversation_flows.*",
   "ingenious.ingenious_extensions_template.api.routes.*",
 ]
-ignore_errors = true
+# Strict typing enabled - was ignore_errors = true
+disallow_untyped_defs = false
+disallow_incomplete_defs = false
+warn_return_any = false
+
+# AutoGen agent models - require relaxed checks due to untyped third-party decorators
+[[tool.mypy.overrides]]
+module = ["ingenious.models.ag_agents"]
+disallow_untyped_defs = false
+disallow_incomplete_defs = false
+disallow_untyped_decorators = false
+disallow_subclassing_any = false
+warn_return_any = false
 
 # Allow flexibility in tests
 [[tool.mypy.overrides]]
@@ -406,6 +420,8 @@ filterwarnings = [
 # The SQL queries use parameterized queries (?) for values
 # Dynamic parts are only column/table names from controlled dict keys
 skips = ["B608"]
+# Exclude test files from security checks (they use asserts intentionally)
+exclude_dirs = ["tests", "test_dir", "ingenious/services/azure_search/tests"]
 
 [tool.uv.workspace]
 members = [

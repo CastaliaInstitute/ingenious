@@ -6,6 +6,7 @@ AutoGen agentchat with a classification agent.
 
 import logging
 import uuid
+from typing import Optional
 
 from autogen_agentchat.agents import AssistantAgent
 from autogen_agentchat.messages import TextMessage
@@ -31,7 +32,7 @@ class ConversationFlow:
         thread_memory: str = "",
         memory_record_switch: bool = True,
         thread_chat_history=None,
-        chatrequest: ChatRequest = None,  # For backward compatibility
+        chatrequest: Optional[ChatRequest] = None,  # For backward compatibility
     ) -> tuple[str, str]:
         """Get a classification response for the user message.
 
@@ -128,7 +129,9 @@ Response: [helpful response to the user's message, considering conversation hist
                 cancellation_token=cancellation_token,
             )
 
-            result = response.chat_message.content
+            # chat_message may be TextMessage or other BaseChatMessage subclass
+            chat_msg = response.chat_message
+            result = str(chat_msg.content) if hasattr(chat_msg, "content") else "No response"
             memory_summary = f"Classified message: {message[:50]}..."
 
         except Exception as e:

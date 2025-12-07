@@ -53,7 +53,7 @@ from autogen_core.tools import FunctionTool as _FunctionTool
 from pydantic import SecretStr
 
 from ingenious.client.azure import AzureClientFactory
-from ingenious.models.chat import ChatRequest, ChatResponse, ChatResponseChunk
+from ingenious.models.chat import ChatResponse, ChatResponseChunk, IChatRequest
 from ingenious.services.azure_search.client_init import make_async_search_client
 from ingenious.services.chat_services.multi_agent.service import IConversationFlow
 from ingenious.services.retrieval.errors import PreflightError
@@ -72,13 +72,8 @@ AssistantAgent = _AssistantAgent
 __all__ = ["ConversationFlow", "FunctionTool", "AssistantAgent"]
 
 if TYPE_CHECKING:
-    # Imports for ConversationFlow attributes (assuming Service inheritance)
-    # Imports used in methods
-
-    from ingenious.config.config import Config
-
-    # Imports used dynamically or optionally
-    from ingenious.services.chat_services.service import ChatService
+    # Imports for ConversationFlow attributes
+    from ingenious.config.settings import IngeniousSettings
 
 
 # Safe, conservative defaults for k-values in each mode.
@@ -87,7 +82,7 @@ _TOPK_ASSIST_DEFAULT: int = 5
 
 # Try YAML; fall back to JSON/plaintext if PyYAML isn't installed
 try:
-    import yaml  # type: ignore[import-untyped]
+    import yaml
 except Exception:
     yaml = None  # sentinel to denote "no YAML available"
 
@@ -115,8 +110,7 @@ class ConversationFlow(IConversationFlow):
 
     if TYPE_CHECKING:
         # Attributes initialized by IConversationFlow/Service parent class
-        _config: Config
-        _chat_service: ChatService | None
+        _config: "IngeniousSettings"
         # Attributes used internally
         _last_mem_warn_ts: float
         _kb_path: str
@@ -200,7 +194,7 @@ class ConversationFlow(IConversationFlow):
         """
         try:
             # The 'ingenious' package is an optional dependency for usage telemetry.
-            from ingenious.models.agent import (  # type: ignore[import-untyped]
+            from ingenious.models.agent import (
                 LLMUsageTracker as _LLMUsageTracker,
             )
 
@@ -223,7 +217,7 @@ class ConversationFlow(IConversationFlow):
     # -----------------------------
     # Public API (non-streaming)
     # -----------------------------
-    async def get_conversation_response(self, chat_request: ChatRequest) -> ChatResponse:
+    async def get_conversation_response(self, chat_request: IChatRequest) -> ChatResponse:
         """Entry point for one-shot, non-streaming KB responses."""
         model_config = self._config.models[0]
         base_logger = logging.getLogger(f"{EVENT_LOGGER_NAME}.kb")
@@ -280,7 +274,7 @@ class ConversationFlow(IConversationFlow):
 
     async def _handle_direct_mode(
         self,
-        chat_request: ChatRequest,
+        chat_request: IChatRequest,
         memory_context: str,
         use_azure_search: bool,
         coerced: bool,
@@ -319,7 +313,7 @@ class ConversationFlow(IConversationFlow):
             memory_summary=final_message,
         )
 
-    def _get_direct_mode_topk(self, chat_request: ChatRequest, coerced: bool) -> int:
+    def _get_direct_mode_topk(self, chat_request: IChatRequest, coerced: bool) -> int:
         """Get top_k for direct mode, handling coercion logic."""
         if coerced:
             override = self._resolve_topk_from_request(chat_request) if chat_request else None
@@ -348,7 +342,7 @@ class ConversationFlow(IConversationFlow):
 
     async def _handle_assist_mode(
         self,
-        chat_request: ChatRequest,
+        chat_request: IChatRequest,
         memory_context: str,
         use_azure_search: bool,
         model_client: Any,
@@ -398,11 +392,11 @@ class ConversationFlow(IConversationFlow):
             cancellation_token=cancellation_token,
         )
 
-        assistant_text = (
-            self._to_text(response.chat_message.content)
-            if getattr(response, "chat_message", None)
-            else "No response generated"
-        )
+        # chat_message may be TextMessage or other BaseChatMessage subclass
+        assistant_text = "No response generated"
+        chat_msg = getattr(response, "chat_message", None)
+        if chat_msg is not None and hasattr(chat_msg, "content"):
+            assistant_text = self._to_text(chat_msg.content)
 
         total_tokens, completion_tokens = await self._safe_count_tokens(
             system_message=system_message,
@@ -443,7 +437,7 @@ class ConversationFlow(IConversationFlow):
     # Public API (streaming)
     # -----------------------------
     async def get_streaming_conversation_response(
-        self, chat_request: ChatRequest
+        self, chat_request: IChatRequest
     ) -> AsyncIterator[ChatResponseChunk]:
         """Streaming version of the knowledge base response pipeline."""
         message_id = str(uuid.uuid4())
@@ -504,7 +498,7 @@ class ConversationFlow(IConversationFlow):
 
     def _create_streaming_assistant(
         self,
-        chat_request: ChatRequest,
+        chat_request: IChatRequest,
         memory_context: str,
         use_azure_search: bool,
         model_client: Any,
@@ -765,7 +759,7 @@ class ConversationFlow(IConversationFlow):
     # -----------------------------
     # Internal helpers: memory context
     # -----------------------------
-    async def _build_memory_context(self, chat_request: ChatRequest) -> str:
+    async def _build_memory_context(self, chat_request: IChatRequest) -> str:
         """Build a compact memory context from the last 10 thread messages (non-fatal)."""
         memory_context = ""
         if chat_request.thread_id and self._chat_service:
@@ -777,7 +771,7 @@ class ConversationFlow(IConversationFlow):
                 )
                 if thread_messages:
                     recent = thread_messages[-10:] if len(thread_messages) > 10 else thread_messages
-                    preview = [f"{m.role}: {m.content[:100]}..." for m in recent]
+                    preview = [f"{m.role}: {(m.content or '')[:100]}..." for m in recent]
                     memory_context = "Previous conversation:\n" + "\n".join(preview) + "\n\n"
             except Exception as e:
                 # Throttled warn + debug to maintain observability without noise.
@@ -1024,7 +1018,7 @@ class ConversationFlow(IConversationFlow):
         # 1) Preserve precise reason when SDK is missing.
         try:
             from azure.search.documents.aio import (
-                SearchClient as _SDKCheck,  # type: ignore[import-untyped]
+                SearchClient as _SDKCheck,
             )
 
             _ = _SDKCheck  # silence linter
@@ -1132,7 +1126,7 @@ class ConversationFlow(IConversationFlow):
             pass
         return None
 
-    def _resolve_topk_from_request(self, chat_request: ChatRequest) -> Optional[int]:
+    def _resolve_topk_from_request(self, chat_request: IChatRequest) -> Optional[int]:
         """Return a positive int if the request carries an override."""
         topk_keys = ("kb_top_k", "top_k", "search_top_k")
 
@@ -1152,7 +1146,7 @@ class ConversationFlow(IConversationFlow):
 
         return None
 
-    def _get_top_k(self, mode: str, chat_request: Optional[ChatRequest]) -> int:
+    def _get_top_k(self, mode: str, chat_request: Optional[IChatRequest]) -> int:
         """Priority: request override → env override → safe defaults."""
         # 1) per-request (always highest priority)
         if chat_request is not None:
@@ -1271,7 +1265,7 @@ class ConversationFlow(IConversationFlow):
             # Create provider and execute search
             from ingenious.services.azure_search.provider import (
                 AzureSearchProvider,
-            )  # type: ignore
+            )
 
             provider = AzureSearchProvider(self._config)
 
@@ -1510,7 +1504,7 @@ class ConversationFlow(IConversationFlow):
             return dir_error
 
         try:
-            import chromadb  # type: ignore[import-untyped]
+            import chromadb
         except ImportError:
             return "Error: ChromaDB not installed. Please install with: uv add chromadb"
 

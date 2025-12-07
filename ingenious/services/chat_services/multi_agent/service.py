@@ -1,10 +1,10 @@
 """Multi-agent chat service core implementation."""
 
-import logging
 import uuid as uuid_module
 from abc import ABC, abstractmethod
-from typing import TYPE_CHECKING, Any, AsyncIterator, Optional
+from typing import TYPE_CHECKING, Any, AsyncIterator, Optional, cast
 
+import structlog
 from jinja2 import Environment
 from openai.types.chat import ChatCompletionMessageParam
 
@@ -100,7 +100,7 @@ class MultiAgentChatService:
         self.conversation_flow = conversation_flow
         # Get openai_service from config if available
         if hasattr(config, "openai_service_instance"):
-            self.openai_service = config.openai_service_instance  # type: ignore
+            self.openai_service = config.openai_service_instance
         else:
             # OpenAI service should be injected via config
             raise RuntimeError(
@@ -124,10 +124,10 @@ class MultiAgentChatService:
             raise ValueError(f"conversation_flow not set {chat_request}")
 
         if isinstance(chat_request.topic, str):
-            chat_request.topic = [topic.strip() for topic in chat_request.topic.split(",")]  # type: ignore
+            chat_request.topic = [topic.strip() for topic in chat_request.topic.split(",")]
 
         # Initialize additional response fields - to be populated later
-        chat_request.thread_chat_history = [{"role": "user", "content": ""}]  # type: ignore
+        chat_request.thread_chat_history = [{"role": "user", "content": ""}]
         # thread_memory = ""
 
         # Check if thread exists
@@ -142,7 +142,8 @@ class MultiAgentChatService:
         if thread_messages:
             memory_parts = []
             for msg in thread_messages[-10:]:  # Use last 10 messages
-                memory_parts.append(f"{msg.role}: {msg.content[:200]}...")
+                content = msg.content or ""
+                memory_parts.append(f"{msg.role}: {content[:200]}...")
             chat_request.thread_memory = "\n".join(memory_parts)
         else:
             chat_request.thread_memory = "no existing context."
@@ -170,8 +171,8 @@ class MultiAgentChatService:
                 )
 
             if hasattr(chat_request, "thread_chat_history") and chat_request.thread_chat_history:
-                chat_request.thread_chat_history.append(  # type: ignore
-                    {"role": thread_message.role, "content": thread_message.content}
+                chat_request.thread_chat_history.append(
+                    {"role": thread_message.role, "content": thread_message.content or ""}
                 )
 
         try:
@@ -232,7 +233,9 @@ class MultiAgentChatService:
                 # Try different static method signatures
                 import inspect
 
-                sig = inspect.signature(conversation_flow_service_class.get_conversation_response)
+                # Dynamic method access - cast to Any for inspect
+                flow_class: Any = cast(Any, conversation_flow_service_class)
+                sig = inspect.signature(flow_class.get_conversation_response)
                 params = list(sig.parameters.keys())
                 logger.debug(
                     "Analyzing method signature",
@@ -247,13 +250,11 @@ class MultiAgentChatService:
                         "Using single ChatRequest parameter",
                         operation="single_param_call",
                     )
-                    response_task = conversation_flow_service_class.get_conversation_response(
-                        chat_request
-                    )
+                    response_task = flow_class.get_conversation_response(chat_request)
                 else:
                     # Multiple parameters - individual arguments
                     logger.debug("Using individual parameters", operation="multi_param_call")
-                    response_task = conversation_flow_service_class.get_conversation_response(
+                    response_task = flow_class.get_conversation_response(
                         message=chat_request.user_prompt,
                         topics=chat_request.topic
                         if isinstance(chat_request.topic, list)
@@ -390,7 +391,7 @@ class MultiAgentChatService:
                 # Continue execution even if database save fails
                 # This ensures the chat response is still returned to the user
 
-        return agent_response  # type: ignore
+        return agent_response
 
     async def get_streaming_chat_response(
         self, chat_request: IChatRequest
@@ -417,9 +418,11 @@ class MultiAgentChatService:
             # Check if the conversation flow supports streaming
             if hasattr(conversation_flow_service_class, "get_streaming_conversation_response"):
                 # New streaming pattern - instantiate and call streaming method
+                # Cast to Any for dynamic __init__ introspection
+                flow_cls: Any = cast(Any, conversation_flow_service_class)
                 if (
-                    hasattr(conversation_flow_service_class, "__init__")
-                    and len(conversation_flow_service_class.__init__.__code__.co_varnames) > 1
+                    hasattr(flow_cls, "__init__")
+                    and len(flow_cls.__init__.__code__.co_varnames) > 1
                 ):
                     conversation_flow_service_class_instance = conversation_flow_service_class(
                         parent_multi_agent_chat_service=self
@@ -504,7 +507,7 @@ class IConversationFlow(ABC):
     _config: "IngeniousSettings"
     _memory_path: str
     _memory_file_path: str
-    _logger: logging.Logger
+    _logger: structlog.BoundLogger
     _chat_service: MultiAgentChatService
     _memory_manager: Any
 
@@ -520,7 +523,7 @@ class IConversationFlow(ABC):
         self._config = parent_multi_agent_chat_service.config
         self._memory_path = self.get_config().chat_history.memory_path
         self._memory_file_path = f"{self._memory_path}/context.md"
-        self._logger = get_logger(__name__)  # type: ignore
+        self._logger = get_logger(__name__)
         self._chat_service = parent_multi_agent_chat_service
 
         # Initialize memory manager for cloud storage support
@@ -551,9 +554,9 @@ class IConversationFlow(ABC):
         fs = FileStorage(self._config)
         template_path = await fs.get_prompt_template_path(revision_id or "")
         content = await fs.read_file(file_name=file_name, file_path=template_path)
-        if content is None:
+        if not content:
             logger.warning(
-                "Prompt template file not found",
+                "Prompt template file not found or empty",
                 file_name=file_name,
                 template_path=template_path,
                 operation="template_file_lookup",
@@ -561,7 +564,7 @@ class IConversationFlow(ABC):
             return ""
         env = Environment(autoescape=True)
         template = env.from_string(content)
-        return template.render()  # type: ignore
+        return template.render()
 
     def get_models(self) -> Any:
         """Get the configured language models.
@@ -591,7 +594,7 @@ class IConversationFlow(ABC):
         """Maintain memory using the MemoryManager for cloud storage support."""
         from ingenious.services.memory_manager import run_async_memory_operation
 
-        return run_async_memory_operation(  # type: ignore
+        return run_async_memory_operation(
             self._memory_manager.maintain_memory(new_content, max_words)
         )
 

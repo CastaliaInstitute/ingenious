@@ -74,8 +74,13 @@ class ConversationFlow:
             feed_id = "-"
             overBall = "-"
 
-        # Convert topic string to list for ConversationPattern
-        topics_list: list[str] = [topics] if topics else []
+        # Convert topic to list for ConversationPattern
+        if not topics:
+            topics_list: list[str] = []
+        elif isinstance(topics, list):
+            topics_list = topics
+        else:
+            topics_list = [topics]
 
         # Initialize the new conversation pattern
         _classification_agent_pattern = ConversationPattern(

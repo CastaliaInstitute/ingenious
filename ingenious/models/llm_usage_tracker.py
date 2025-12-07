@@ -7,7 +7,7 @@ manages agent chat interactions for logging and analysis purposes.
 import asyncio
 import logging
 from datetime import datetime
-from typing import TYPE_CHECKING, Any, List, Optional
+from typing import TYPE_CHECKING, Any, List, Optional, Union
 
 from autogen_agentchat.base import Response
 from autogen_agentchat.messages import TextMessage
@@ -34,9 +34,9 @@ class LLMUsageTracker(logging.Handler):
 
     def __init__(
         self,
-        agents: "Agents",
+        agents: Union["Agents", List[Any], None],
         config: ig_config.IngeniousSettings,
-        chat_history_repository: ChatHistoryRepository,
+        chat_history_repository: Optional[ChatHistoryRepository],
         revision_id: str,
         identifier: str,
         event_type: str,
@@ -44,9 +44,9 @@ class LLMUsageTracker(logging.Handler):
         """Initialize the LLM usage tracker.
 
         Args:
-            agents: Agents collection to track interactions for.
+            agents: Agents collection to track interactions for, or empty list/None.
             config: IngeniousSettings instance for configuration.
-            chat_history_repository: Repository for storing chat history.
+            chat_history_repository: Repository for storing chat history, or None.
             revision_id: Identifier for the current revision.
             identifier: Unique identifier for the session.
             event_type: Type of event being tracked.
@@ -57,7 +57,7 @@ class LLMUsageTracker(logging.Handler):
         self._completion_tokens = 0
         self._queue: List[AgentChat] = []
         self._config = config
-        self._chat_history_database: ChatHistoryRepository = chat_history_repository
+        self._chat_history_database: Optional[ChatHistoryRepository] = chat_history_repository
         self._revision_id: str = revision_id
         self._identifier: str = identifier
         self._event_type: str = event_type
@@ -101,8 +101,8 @@ class LLMUsageTracker(logging.Handler):
             file_prefixes: List of prefix strings to prepend to the filename.
         """
         for agent_chat in self._queue:
-            agent = self._agents.get_agent_by_name(agent_chat.target_agent_name)
-            if agent.log_to_prompt_tuner:
+            agent = self._get_agent(agent_chat.target_agent_name)
+            if agent is not None and agent.log_to_prompt_tuner:
                 fs = FileStorage(self._config)
                 output_path = await fs.get_output_path(self._revision_id)
                 content = agent_chat.model_dump_json()
@@ -125,8 +125,8 @@ class LLMUsageTracker(logging.Handler):
             message_id: The ID of the message.
         """
         for agent_chat in self._queue:
-            agent = self._agents.get_agent_by_name(agent_chat.target_agent_name)
-            if agent.log_to_prompt_tuner:
+            agent = self._get_agent(agent_chat.target_agent_name)
+            if agent is not None and agent.log_to_prompt_tuner:
                 fs = FileStorage(self._config)
                 output_path = await fs.get_output_path(self._revision_id)
                 content = agent_chat.model_dump_json()
@@ -149,7 +149,8 @@ class LLMUsageTracker(logging.Handler):
                     tool_call_function=None,
                 )
 
-                await self._chat_history_database.add_message(message=message)
+                if self._chat_history_database:
+                    await self._chat_history_database.add_message(message=message)
 
     async def post_chats_to_queue(self, target_queue: asyncio.Queue[AgentChat]) -> None:
         """Post agent chats from the internal queue to a target queue.
@@ -158,8 +159,9 @@ class LLMUsageTracker(logging.Handler):
             target_queue: The asyncio queue to post chats to.
         """
         for agent_chat in self._queue:
-            agent = self._agents.get_agent_by_name(agent_chat.target_agent_name)
-            await agent.log(agent_chat, target_queue)
+            agent = self._get_agent(agent_chat.target_agent_name)
+            if agent is not None:
+                await agent.log(agent_chat, target_queue)
 
     def _parse_agent_id(self, agent_id: Optional[str]) -> Optional[tuple[str, str]]:
         """Parse agent ID into agent name and source name."""
@@ -172,10 +174,17 @@ class LLMUsageTracker(logging.Handler):
 
     def _get_agent(self, agent_name: str) -> Optional["Agent"]:
         """Get agent by name, returning None if not found."""
+        if self._agents is None:
+            return None
         if not hasattr(self._agents, "get_agent_by_name"):
             return None
         try:
-            return self._agents.get_agent_by_name(agent_name)
+            # Use cast since hasattr check doesn't narrow Union type for mypy
+            from typing import cast
+
+            agents_obj = cast(Any, self._agents)
+            result = agents_obj.get_agent_by_name(agent_name)
+            return cast(Optional["Agent"], result)
         except ValueError:
             return None
 

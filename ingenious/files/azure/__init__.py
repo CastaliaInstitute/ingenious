@@ -126,7 +126,7 @@ class azure_FileStorageRepository(IFileStorage):
 
             # encoding param is necessary for readall() to return str, otherwise it returns bytes
             downloader = blob_client.download_blob(max_concurrency=1, encoding="UTF-8")
-            data = downloader.readall()
+            data: str = downloader.readall()
 
             # print(f"Successfully downloaded {path} from container {self.container_name}.")
             return data
@@ -248,7 +248,7 @@ class azure_FileStorageRepository(IFileStorage):
             blob_client = self.blob_service_client.get_blob_client(
                 container=self.container_name, blob=str(path)
             )
-            exists = blob_client.exists()
+            exists: bool = blob_client.exists()
             # print(f"Blob {path} exists in container {self.container_name}: {exists}")
             return exists
         except Exception as e:

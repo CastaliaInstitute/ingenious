@@ -1,6 +1,6 @@
 """Classification agent pattern version 2 implementation."""
 
-from typing import Tuple, cast
+from typing import Tuple
 
 from autogen_agentchat.agents import AssistantAgent, UserProxyAgent
 from autogen_agentchat.teams import RoundRobinGroupChat
@@ -8,7 +8,6 @@ from autogen_agentchat.teams import RoundRobinGroupChat
 from ingenious.client.azure import AzureClientFactory
 from ingenious.common.enums import AuthenticationMethod
 from ingenious.config import get_config
-from ingenious.config.settings import IngeniousSettings
 from ingenious.core.structured_logging import get_logger
 
 logger = get_logger(__name__)
@@ -67,7 +66,7 @@ class ConversationPattern:
             run_async_memory_operation,
         )
 
-        self.memory_manager = get_memory_manager(cast(IngeniousSettings, get_config()), memory_path)
+        self.memory_manager = get_memory_manager(get_config(), memory_path)
 
         # Initialize context file
         if not self.thread_memory:

@@ -81,7 +81,7 @@ class ChromaKBBackend(KBBackend):
 
         # Import ChromaDB
         try:
-            import chromadb  # type: ignore[import-untyped]
+            import chromadb
         except ImportError:
             return KBSearchResult(
                 content="Error: ChromaDB not installed. Please install with: uv add chromadb",
@@ -177,6 +177,10 @@ class ChromaKBBackend(KBBackend):
         """
         if self._collection is not None:
             return self._collection, None
+
+        # _client is initialized before this method is called
+        if self._client is None:
+            return None, "Error: ChromaDB client not initialized"
 
         try:
             self._collection = self._client.get_collection(name=self._collection_name)
