@@ -6,7 +6,7 @@ import asyncio
 import functools
 import random
 import time
-from typing import Any, Callable, Type, TypeVar
+from typing import Callable, ParamSpec, TypeVar
 
 from ingenious.core.structured_logging import get_logger
 from ingenious.errors.base import IngeniousError
@@ -14,7 +14,8 @@ from ingenious.errors.base import IngeniousError
 logger = get_logger(__name__)
 
 # Type variables for generic decorators
-F = TypeVar("F", bound=Callable[..., Any])
+P = ParamSpec("P")
+T = TypeVar("T")
 
 
 class _RetryHandler:
@@ -34,7 +35,7 @@ class _RetryHandler:
         max_delay: float,
         exponential_base: float,
         jitter: bool,
-        exceptions: tuple[Type[Exception], ...],
+        exceptions: tuple[type[Exception], ...],
         only_recoverable: bool,
         func_name: str,
     ) -> None:
@@ -139,9 +140,9 @@ def retry_on_error(
     max_delay: float = 60.0,
     exponential_base: float = 2.0,
     jitter: bool = True,
-    exceptions: tuple[Type[Exception], ...] = (IngeniousError,),
+    exceptions: tuple[type[Exception], ...] = (IngeniousError,),
     only_recoverable: bool = True,
-) -> Callable[[F], F]:
+) -> Callable[[Callable[P, T]], Callable[P, T]]:
     """Decorator for retrying operations on error.
 
     Parameters
@@ -169,7 +170,7 @@ def retry_on_error(
     ...     return api_client.get_data()
     """
 
-    def decorator(func: F) -> F:
+    def decorator(func: Callable[P, T]) -> Callable[P, T]:
         handler = _RetryHandler(
             max_retries=max_retries,
             base_delay=base_delay,
@@ -182,7 +183,7 @@ def retry_on_error(
         )
 
         @functools.wraps(func)
-        def wrapper(*args: Any, **kwargs: Any) -> Any:
+        def wrapper(*args: P.args, **kwargs: P.kwargs) -> T:
             last_exception: Exception | None = None
 
             for attempt in range(max_retries + 1):
@@ -204,10 +205,9 @@ def retry_on_error(
             # This should never be reached, but just in case
             if last_exception:
                 raise last_exception
-            else:
-                raise IngeniousError("Retry loop completed without success or exception")
+            raise IngeniousError("Retry loop completed without success or exception")
 
-        return wrapper  # type: ignore[return-value]
+        return wrapper
 
     return decorator
 
@@ -218,9 +218,9 @@ def async_retry_on_error(
     max_delay: float = 60.0,
     exponential_base: float = 2.0,
     jitter: bool = True,
-    exceptions: tuple[Type[Exception], ...] = (IngeniousError,),
+    exceptions: tuple[type[Exception], ...] = (IngeniousError,),
     only_recoverable: bool = True,
-) -> Callable[[F], F]:
+) -> Callable[[Callable[P, T]], Callable[P, T]]:
     """Async decorator for retrying operations on error.
 
     Parameters
@@ -248,7 +248,7 @@ def async_retry_on_error(
     ...     return await api_client.get_data()
     """
 
-    def decorator(func: F) -> F:
+    def decorator(func: Callable[P, T]) -> Callable[P, T]:
         handler = _RetryHandler(
             max_retries=max_retries,
             base_delay=base_delay,
@@ -261,12 +261,12 @@ def async_retry_on_error(
         )
 
         @functools.wraps(func)
-        async def wrapper(*args: Any, **kwargs: Any) -> Any:
+        async def wrapper(*args: P.args, **kwargs: P.kwargs) -> T:
             last_exception: Exception | None = None
 
             for attempt in range(max_retries + 1):
                 try:
-                    return await func(*args, **kwargs)
+                    return await func(*args, **kwargs)  # type: ignore[misc, no-any-return]
 
                 except exceptions as exc:
                     last_exception = exc
@@ -283,8 +283,7 @@ def async_retry_on_error(
             # This should never be reached, but just in case
             if last_exception:
                 raise last_exception
-            else:
-                raise IngeniousError("Async retry loop completed without success or exception")
+            raise IngeniousError("Async retry loop completed without success or exception")
 
         return wrapper  # type: ignore[return-value]
 

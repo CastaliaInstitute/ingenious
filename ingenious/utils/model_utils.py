@@ -13,7 +13,7 @@ import yaml
 from pydantic import BaseModel
 
 
-def Is_Non_Complex_Field_Check_By_Value(value: Any) -> bool:
+def Is_Non_Complex_Field_Check_By_Value(value: object) -> bool:
     """Check if a field is a non-complex field using its value.
 
     Args:
@@ -25,7 +25,9 @@ def Is_Non_Complex_Field_Check_By_Value(value: Any) -> bool:
     return isinstance(value, (str, int, float, bool, type(None)))
 
 
-def Is_Non_Complex_Field_Check_By_Type(field_type: Any, root_model_name: str = "RootModel") -> bool:
+def Is_Non_Complex_Field_Check_By_Type(
+    field_type: object, root_model_name: str = "RootModel"
+) -> bool:
     """Check if a field is a non-complex field using its type.
 
     Note: This is not a foolproof method and is based on the assumption that
@@ -56,7 +58,7 @@ class FieldData(BaseModel):
     FieldType: str
 
 
-def Get_Model_Properties(model: Any) -> List[FieldData]:
+def Get_Model_Properties(model: type[BaseModel]) -> List[FieldData]:
     """Extract field properties from a Pydantic model.
 
     Args:
@@ -72,7 +74,7 @@ def Get_Model_Properties(model: Any) -> List[FieldData]:
     return properties
 
 
-def Dict_To_Csv(obj: Dict[str, Any], row_header_columns: List[str], name: str) -> str:
+def Dict_To_Csv(obj: Dict[str, dict[str, object]], row_header_columns: List[str], name: str) -> str:
     """Convert a dictionary to CSV format with markdown code fences.
 
     Args:
@@ -119,7 +121,7 @@ def List_To_Csv(obj: List[Any], row_header_columns: List[str], name: str) -> str
     return output
 
 
-def Listable_Object_To_Csv(obj: List[Any], row_type: Any) -> str:
+def Listable_Object_To_Csv(obj: List[object], row_type: type[BaseModel]) -> str:
     """Convert a list of typed objects to CSV format with automatic header inference.
 
     Args:
@@ -144,7 +146,7 @@ def Listable_Object_To_Csv(obj: List[Any], row_type: Any) -> str:
     return output
 
 
-def Object_To_Yaml(obj: Any, strip_complex_fields: bool = False) -> str:
+def Object_To_Yaml(obj: object, strip_complex_fields: bool = False) -> str:
     """Convert an object to YAML format with markdown code fences.
 
     Args:
@@ -162,7 +164,7 @@ def Object_To_Yaml(obj: Any, strip_complex_fields: bool = False) -> str:
     return output + yaml_output + "\n```"
 
 
-def Object_To_Markdown(obj: Any, name: str) -> str:
+def Object_To_Markdown(obj: object, name: str) -> str:
     """Convert an object to Markdown format using JSON serialization.
 
     Args:

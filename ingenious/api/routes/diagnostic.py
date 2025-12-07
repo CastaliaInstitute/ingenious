@@ -13,6 +13,7 @@ from typing import Any, Dict, List
 from fastapi import APIRouter, Depends, HTTPException, Request
 from typing_extensions import Annotated
 
+from ingenious.config.settings import IngeniousSettings
 from ingenious.core.structured_logging import get_logger
 from ingenious.models.http_error import HTTPError
 from ingenious.services import auth_dependencies
@@ -40,7 +41,7 @@ class ConfigValidationResult:
         self.configured = False
 
 
-def _validate_models_config(config: Any, result: ConfigValidationResult) -> None:
+def _validate_models_config(config: IngeniousSettings, result: ConfigValidationResult) -> None:
     """Validate model configuration."""
     if not config.models or len(config.models) == 0:
         result.add_error("models: No models configured")
@@ -53,13 +54,17 @@ def _validate_models_config(config: Any, result: ConfigValidationResult) -> None
         result.add_error("models.base_url: Missing environment configuration")
 
 
-def _validate_chat_service_config(config: Any, result: ConfigValidationResult) -> None:
+def _validate_chat_service_config(
+    config: IngeniousSettings, result: ConfigValidationResult
+) -> None:
     """Validate chat service configuration."""
     if not config.chat_service or config.chat_service.type != "multi_agent":
         result.add_error("chat_service.type: Must be 'multi_agent'")
 
 
-def _validate_azure_search_config(config: Any, result: ConfigValidationResult) -> None:
+def _validate_azure_search_config(
+    config: IngeniousSettings, result: ConfigValidationResult
+) -> None:
     """Validate Azure Search configuration."""
     if not config.azure_search_services or len(config.azure_search_services) == 0:
         result.add_error("azure_search_services: Not configured")
@@ -72,7 +77,7 @@ def _validate_azure_search_config(config: Any, result: ConfigValidationResult) -
         result.add_error("azure_search_services.key: Missing environment configuration")
 
 
-def _validate_local_sql_config(config: Any, result: ConfigValidationResult) -> None:
+def _validate_local_sql_config(config: IngeniousSettings, result: ConfigValidationResult) -> None:
     """Validate local SQL configuration."""
     if not getattr(config, "local_sql_db", None):
         result.add_error("local_sql_db: Not configured")
@@ -84,7 +89,9 @@ def _validate_local_sql_config(config: Any, result: ConfigValidationResult) -> N
         result.add_error("local_sql_db.sample_csv_path: Missing")
 
 
-def _validate_sql_manipulation_config(config: Any, result: ConfigValidationResult) -> None:
+def _validate_sql_manipulation_config(
+    config: IngeniousSettings, result: ConfigValidationResult
+) -> None:
     """Validate SQL manipulation agent configuration."""
     has_azure_sql = getattr(config, "azure_sql_services", None) and getattr(
         config.azure_sql_services, "database_connection_string", None
@@ -98,7 +105,7 @@ def _validate_sql_manipulation_config(config: Any, result: ConfigValidationResul
 
 
 def _validate_workflow_requirements(
-    config: Any,
+    config: IngeniousSettings,
     workflow_name: str,
     requirements: Dict[str, Any],
     result: ConfigValidationResult,

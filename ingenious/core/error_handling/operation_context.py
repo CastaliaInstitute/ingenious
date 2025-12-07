@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import time
-from typing import Any, Dict, Optional
+from typing import Optional
 from uuid import uuid4
 
 from ingenious.core.structured_logging import get_request_id
@@ -25,7 +25,7 @@ class OperationContext:
         self.component = component
         self.correlation_id = correlation_id or str(uuid4())
         self.start_time = time.time()
-        self.metadata: Dict[str, Any] = {}
+        self.metadata: dict[str, object] = {}
         self.errors: list[IngeniousError] = []
 
         # Get request context if available
@@ -33,7 +33,7 @@ class OperationContext:
         if request_id:
             self.correlation_id = request_id
 
-    def add_metadata(self, **kwargs: Any) -> OperationContext:
+    def add_metadata(self, **kwargs: object) -> "OperationContext":
         """Add metadata to the operation context."""
         self.metadata.update(kwargs)
         return self

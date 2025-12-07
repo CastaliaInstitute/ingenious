@@ -330,7 +330,7 @@ class AzureSearchProvider:
         """
 
         def _dig_service_from(
-            obj: Any,
+            obj: object,
         ) -> Tuple[Optional[str], Optional[str], Optional[str]]:
             if obj is None:
                 return (None, None, None)

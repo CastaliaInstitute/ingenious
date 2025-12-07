@@ -7,7 +7,7 @@ and integrating with various authentication providers (Azure, Basic Auth, JWT).
 from __future__ import annotations
 
 import asyncio
-from typing import TYPE_CHECKING, Any, Callable, Mapping, Optional, Union
+from typing import TYPE_CHECKING, Callable, Mapping, Optional, Union
 
 from ingenious.common.enums import AuthenticationMethod
 
@@ -15,7 +15,7 @@ if TYPE_CHECKING:
     pass
 
 
-def _get(obj: Any, *names: str) -> Optional[Any]:
+def _get(obj: object, *names: str) -> str | None:
     """Get a value from an object or mapping by trying multiple attribute names.
 
     Args:
@@ -23,19 +23,20 @@ def _get(obj: Any, *names: str) -> Optional[Any]:
         *names: Attribute or key names to try in order.
 
     Returns:
-        The first non-None value found, or None if all are None or not present.
+        The first non-None value found as string, or None if all are None or not present.
     """
     if obj is None:
         return None
     if isinstance(obj, Mapping):
         for n in names:
             if n in obj and obj[n] is not None:
-                return obj[n]
+                val = obj[n]
+                return str(val) if val is not None else None
         return None
     for n in names:
         val = getattr(obj, n, None)
         if val is not None:
-            return val
+            return str(val)
     return None
 
 
@@ -137,7 +138,7 @@ class AzureAuthConfig:
         return method
 
     @classmethod
-    def _parse_explicit_method(cls, value: Any) -> Optional[AuthenticationMethod]:
+    def _parse_explicit_method(cls, value: object) -> Optional[AuthenticationMethod]:
         """Parse explicit authentication method from config value."""
         if isinstance(value, str):
             try:
@@ -147,7 +148,7 @@ class AzureAuthConfig:
         return value if isinstance(value, AuthenticationMethod) else None
 
     @classmethod
-    def from_config(cls, config: Any) -> "AzureAuthConfig":
+    def from_config(cls, config: object) -> "AzureAuthConfig":
         """Create authentication config from a configuration object or mapping.
 
         Args:
@@ -252,7 +253,7 @@ class AzureAuthConfig:
         except Exception:
             return None  # nosec B110 - intentional fallback to async path
 
-    def _create_aio_token_provider(self, scope: str) -> Callable[[], Any]:
+    def _create_aio_token_provider(self, scope: str) -> Callable[[], str]:
         """Create an async token provider using azure.identity.aio."""
         from azure.identity.aio import ClientSecretCredential as AioClientSecretCredential
         from azure.identity.aio import DefaultAzureCredential as AioDefaultAzureCredential
@@ -278,7 +279,7 @@ class AzureAuthConfig:
             aio_cred = AioManagedIdentityCredential(client_id=str(self.client_id))
         else:
             aio_cred = AioDefaultAzureCredential(exclude_interactive_browser_credential=True)
-        result: Callable[[], Any] = get_aio_bearer_token_provider(aio_cred, scope)
+        result: Callable[[], str] = get_aio_bearer_token_provider(aio_cred, scope)
         return result
 
     def to_openai_async_token_provider_or_none(
@@ -320,14 +321,14 @@ class AzureAuthConfig:
                 if loop.is_running():
                     new_loop = asyncio.new_event_loop()
                     try:
-                        result: str = new_loop.run_until_complete(coro)
+                        result: str = new_loop.run_until_complete(coro)  # type: ignore[arg-type]
                         return result
                     finally:
                         new_loop.close()
-                result = loop.run_until_complete(coro)
+                result = loop.run_until_complete(coro)  # type: ignore[arg-type]
                 return result
             except RuntimeError:
-                result = asyncio.run(coro)
+                result = asyncio.run(coro)  # type: ignore[arg-type]
                 return result
 
         return _sync_provider

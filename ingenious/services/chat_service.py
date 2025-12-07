@@ -1,7 +1,7 @@
 """Chat service interface and base implementations."""
 
 from abc import ABC, abstractmethod
-from typing import Any, AsyncIterator
+from typing import AsyncIterator
 
 from ingenious.config.settings import IngeniousSettings
 from ingenious.core.error_handling import operation_context
@@ -23,7 +23,7 @@ class IChatService(ABC):
     including both regular and streaming response methods.
     """
 
-    service_class: Any = None
+    service_class: "IChatService | None" = None
 
     @abstractmethod
     async def get_chat_response(self, chat_request: ChatRequest) -> ChatResponse:
@@ -59,7 +59,7 @@ class ChatService(IChatService):
     based on the specified service type and delegates all operations to it.
     """
 
-    service_class: Any  # Will be set to instantiated service class
+    service_class: IChatService  # Will be set to instantiated service class
 
     def __init__(
         self,
@@ -165,7 +165,7 @@ class ChatService(IChatService):
         """
         if not chat_request.conversation_flow:
             raise ValueError(f"conversation_flow not set {chat_request}")
-        return await self.service_class.get_chat_response(chat_request)  # type: ignore
+        return await self.service_class.get_chat_response(chat_request)
 
     async def get_streaming_chat_response(
         self, chat_request: ChatRequest

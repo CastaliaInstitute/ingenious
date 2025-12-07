@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 from contextlib import asynccontextmanager
-from typing import Any, AsyncGenerator, Type
+from typing import Any, AsyncGenerator
 
 from ingenious.core.structured_logging import get_logger
 from ingenious.errors.base import ErrorContext, IngeniousError
@@ -17,7 +17,7 @@ logger = get_logger(__name__)
 async def async_operation_context(
     operation: str,
     component: str = "",
-    error_class: Type[IngeniousError] = IngeniousError,
+    error_class: type[IngeniousError] = IngeniousError,
     **context_kwargs: Any,
 ) -> AsyncGenerator[OperationContext, None]:
     """Async version of operation_context."""

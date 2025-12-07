@@ -10,10 +10,10 @@ import sys
 import time
 import uuid
 from contextvars import ContextVar
-from typing import Any, Optional
+from typing import Optional
 
 import structlog
-from structlog.types import EventDict, Processor
+from structlog.types import EventDict, Processor, WrappedLogger
 
 # Context variables for request tracking
 request_id_ctx: ContextVar[Optional[str]] = ContextVar("request_id", default=None)
@@ -21,7 +21,7 @@ user_id_ctx: ContextVar[Optional[str]] = ContextVar("user_id", default=None)
 session_id_ctx: ContextVar[Optional[str]] = ContextVar("session_id", default=None)
 
 
-def add_correlation_id(logger: Any, method_name: str, event_dict: EventDict) -> EventDict:
+def add_correlation_id(logger: WrappedLogger, method_name: str, event_dict: EventDict) -> EventDict:
     """Add correlation IDs to log entries.
 
     Args:
@@ -46,7 +46,7 @@ def add_correlation_id(logger: Any, method_name: str, event_dict: EventDict) -> 
     return event_dict
 
 
-def add_timestamp(logger: Any, method_name: str, event_dict: EventDict) -> EventDict:
+def add_timestamp(logger: WrappedLogger, method_name: str, event_dict: EventDict) -> EventDict:
     """Add ISO timestamp to log entries.
 
     Args:
@@ -61,7 +61,7 @@ def add_timestamp(logger: Any, method_name: str, event_dict: EventDict) -> Event
     return event_dict
 
 
-def add_logger_name(logger: Any, method_name: str, event_dict: EventDict) -> EventDict:
+def add_logger_name(logger: WrappedLogger, method_name: str, event_dict: EventDict) -> EventDict:
     """Add logger name to log entries.
 
     Args:
@@ -79,7 +79,9 @@ def add_logger_name(logger: Any, method_name: str, event_dict: EventDict) -> Eve
     return event_dict
 
 
-def add_performance_metrics(logger: Any, method_name: str, event_dict: EventDict) -> EventDict:
+def add_performance_metrics(
+    logger: WrappedLogger, method_name: str, event_dict: EventDict
+) -> EventDict:
     """Add basic performance metrics if available.
 
     Args:
@@ -230,7 +232,7 @@ class PerformanceLogger:
         start_time: The timestamp when the operation started.
     """
 
-    def __init__(self, logger: structlog.BoundLogger, operation: str, **context: Any) -> None:
+    def __init__(self, logger: structlog.BoundLogger, operation: str, **context: object) -> None:
         """Initialize the performance logger.
 
         Args:
@@ -243,13 +245,18 @@ class PerformanceLogger:
         self.context = context
         self.start_time: Optional[float] = None
 
-    def __enter__(self) -> Any:
+    def __enter__(self) -> "PerformanceLogger":
         """Enter the operation context and log start time."""
         self.start_time = time.time()
         self.logger.info("Operation started", operation=self.operation, **self.context)
         return self
 
-    def __exit__(self, exc_type: Any, exc_val: Any, _exc_tb: Any) -> None:
+    def __exit__(
+        self,
+        exc_type: type[BaseException] | None,
+        exc_val: BaseException | None,
+        _exc_tb: object,
+    ) -> None:
         """Exit the operation context and log completion or error."""
         if self.start_time:
             duration = time.time() - self.start_time
@@ -278,7 +285,7 @@ def log_api_call(
     url: str,
     status_code: Optional[int] = None,
     duration: Optional[float] = None,
-    **kwargs: Any,
+    **kwargs: object,
 ) -> None:
     """Log API calls with consistent structure.
 
@@ -309,7 +316,7 @@ def log_database_operation(
     table: Optional[str] = None,
     duration: Optional[float] = None,
     affected_rows: Optional[int] = None,
-    **kwargs: Any,
+    **kwargs: object,
 ) -> None:
     """Log database operations with consistent structure.
 
@@ -339,7 +346,7 @@ def log_agent_action(
     action: str,
     success: bool = True,
     duration: Optional[float] = None,
-    **kwargs: Any,
+    **kwargs: object,
 ) -> None:
     """Log agent actions with consistent structure.
 

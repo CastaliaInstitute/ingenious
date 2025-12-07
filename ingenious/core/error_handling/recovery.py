@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import time
-from typing import Any, Callable, Type
+from typing import Any, Callable
 
 from ingenious.core.structured_logging import get_logger
 from ingenious.errors.base import IngeniousError
@@ -68,7 +68,7 @@ class CircuitBreakerRecoveryStrategy(RecoveryStrategy):
         self,
         failure_threshold: int = 5,
         recovery_timeout: float = 60.0,
-        expected_exception: Type[Exception] = IngeniousError,
+        expected_exception: type[Exception] = IngeniousError,
     ):
         """Initialize CircuitBreakerRecoveryStrategy with circuit breaker parameters.
 

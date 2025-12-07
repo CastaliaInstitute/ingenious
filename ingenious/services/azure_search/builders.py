@@ -171,7 +171,7 @@ def _first_non_empty(*vals: Optional[str]) -> Optional[str]:
     return None
 
 
-def _get(obj: Any, *names: str) -> Optional[Any]:
+def _get(obj: Any, *names: str) -> Any:
     """Return the first existing attribute value by name from an object.
 
     This function provides a safe way to access an attribute using multiple
@@ -186,7 +186,7 @@ def _get(obj: Any, *names: str) -> Optional[Any]:
         The value of the first found attribute, or None if none exist.
     """
     for n in names:
-        val: Optional[Any] = getattr(obj, n, None)
+        val: Any = getattr(obj, n, None)
         if val is not None:
             return val
     return None

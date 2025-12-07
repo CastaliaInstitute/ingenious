@@ -189,7 +189,7 @@ class IngeniousSettings(BaseSettings):
             )
         return v
 
-    def model_post_init(self, _context: Any) -> None:
+    def model_post_init(self, _context: object) -> None:
         """Run post-initialization validation.
 
         Validation always runs to ensure configuration integrity.

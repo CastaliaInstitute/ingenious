@@ -5,7 +5,7 @@ from __future__ import annotations
 import time
 import traceback
 from dataclasses import dataclass, field
-from typing import Any, Dict, Optional
+from typing import Dict, Optional
 from uuid import uuid4
 
 
@@ -30,9 +30,9 @@ class ErrorContext:
     stack_trace: Optional[str] = None
 
     # Additional metadata
-    metadata: Dict[str, Any] = field(default_factory=dict)
+    metadata: Dict[str, object] = field(default_factory=dict)
 
-    def to_dict(self) -> Dict[str, Any]:
+    def to_dict(self) -> Dict[str, object]:
         """Convert context to dictionary for logging and serialization."""
         result = {}
         for key, value in self.__dict__.items():
@@ -40,7 +40,7 @@ class ErrorContext:
                 result[key] = value
         return result
 
-    def add_metadata(self, **kwargs: Any) -> ErrorContext:
+    def add_metadata(self, **kwargs: object) -> ErrorContext:
         """Add metadata to the context."""
         self.metadata.update(kwargs)
         return self

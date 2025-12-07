@@ -48,7 +48,7 @@ class BaseSQLRepository(IChatHistoryRepository, ABC):
     @abstractmethod
     def _execute_sql(
         self, sql: str, params: List[Any] | None = None, expect_results: bool = True
-    ) -> Any:
+    ) -> list[Any] | None:
         """Execute SQL with database-specific connection handling.
 
         Args:

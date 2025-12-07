@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import time
 from contextlib import contextmanager
-from typing import Any, Generator, Optional, Type
+from typing import Any, Generator, Optional
 
 from ingenious.core.structured_logging import get_logger
 from ingenious.errors.base import (
@@ -26,7 +26,7 @@ logger = get_logger(__name__)
 def operation_context(
     operation: str,
     component: str = "",
-    error_class: Type[IngeniousError] = IngeniousError,
+    error_class: type[IngeniousError] = IngeniousError,
     **context_kwargs: Any,
 ) -> Generator[OperationContext, None, None]:
     """Generic operation context manager with error handling.

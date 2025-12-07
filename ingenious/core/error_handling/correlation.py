@@ -3,16 +3,19 @@
 from __future__ import annotations
 
 import functools
-from typing import Any, Callable, Optional, TypeVar
+from typing import Callable, Optional, ParamSpec, TypeVar
 from uuid import uuid4
 
 from ingenious.errors.base import IngeniousError, handle_exception
 
 # Type variables for generic decorators
-F = TypeVar("F", bound=Callable[..., Any])
+P = ParamSpec("P")
+T = TypeVar("T")
 
 
-def with_correlation_id(correlation_id: Optional[str] = None) -> Callable[[F], F]:
+def with_correlation_id(
+    correlation_id: Optional[str] = None,
+) -> Callable[[Callable[P, T]], Callable[P, T]]:
     """Decorator to set correlation ID for an operation.
 
     Parameters
@@ -28,9 +31,9 @@ def with_correlation_id(correlation_id: Optional[str] = None) -> Callable[[F], F
     ...     return process_data(data)
     """
 
-    def decorator(func: F) -> F:
+    def decorator(func: Callable[P, T]) -> Callable[P, T]:
         @functools.wraps(func)
-        def wrapper(*args: Any, **kwargs: Any) -> Any:
+        def wrapper(*args: P.args, **kwargs: P.kwargs) -> T:
             cid = correlation_id or str(uuid4())
 
             # Store correlation ID in thread-local storage or similar
@@ -47,6 +50,6 @@ def with_correlation_id(correlation_id: Optional[str] = None) -> Callable[[F], F
                 error.with_correlation_id(cid)
                 raise error from exc
 
-        return wrapper  # type: ignore
+        return wrapper
 
     return decorator

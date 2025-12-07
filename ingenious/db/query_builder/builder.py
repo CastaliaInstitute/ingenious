@@ -1,7 +1,5 @@
 """Centralized query builder that generates database-specific SQL queries."""
 
-from typing import Any
-
 from .azuresql import AzureSQLDialect
 from .base import Dialect
 
@@ -411,7 +409,7 @@ class QueryBuilder:
 
         return indexes
 
-    def get_query(self, query_type: str, **kwargs: Any) -> str:
+    def get_query(self, query_type: str, **kwargs: object) -> str:
         """Get a query by type name with optional parameters.
 
         Dynamically invokes a query method by name, allowing runtime
