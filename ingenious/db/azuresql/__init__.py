@@ -166,9 +166,217 @@ class azuresql_ChatHistoryRepository(BaseSQLRepository):
         Returns:
             List of thread dictionaries for the user, or empty list. Returns None if user not found.
         """
-        # This is a simplified implementation
-        # In a full implementation, you'd join with threads table and return proper thread data
-        return []
+        # Query threads for user
+        if thread_id is None:
+            user_threads_query = """
+                SELECT TOP 100
+                    [id] AS thread_id,
+                    [createdAt] AS thread_createdat,
+                    [name] AS thread_name,
+                    [userId] AS user_id,
+                    [userIdentifier] AS user_identifier,
+                    [tags] AS thread_tags,
+                    [metadata] AS thread_metadata
+                FROM threads
+                WHERE [userIdentifier] = ?
+                ORDER BY [createdAt] DESC
+            """
+            user_threads = self.execute_sql(user_threads_query, [identifier])
+        else:
+            user_threads_query = """
+                SELECT TOP 100
+                    [id] AS thread_id,
+                    [createdAt] AS thread_createdat,
+                    [name] AS thread_name,
+                    [userId] AS user_id,
+                    [userIdentifier] AS user_identifier,
+                    [tags] AS thread_tags,
+                    [metadata] AS thread_metadata
+                FROM threads
+                WHERE [userIdentifier] = ? AND [id] = ?
+                ORDER BY [createdAt] DESC
+            """
+            user_threads = self.execute_sql(user_threads_query, [identifier, thread_id])
+
+        if not isinstance(user_threads, list):
+            return None
+        if not user_threads:
+            return []
+
+        # Get thread IDs for subsequent queries
+        thread_ids_list = [str(thread["thread_id"]) for thread in user_threads]
+        thread_ids_placeholders = ",".join("?" * len(thread_ids_list))
+
+        # Query steps and feedbacks
+        steps_feedbacks_query = f"""
+            SELECT
+                s.[id] AS step_id,
+                s.[name] AS step_name,
+                s.[type] AS step_type,
+                s.[threadId] AS step_threadid,
+                s.[parentId] AS step_parentid,
+                s.[streaming] AS step_streaming,
+                s.[waitForAnswer] AS step_waitforanswer,
+                s.[isError] AS step_iserror,
+                s.[metadata] AS step_metadata,
+                s.[tags] AS step_tags,
+                s.[input] AS step_input,
+                s.[output] AS step_output,
+                s.[createdAt] AS step_createdat,
+                s.[start] AS step_start,
+                s.[end] AS step_end,
+                s.[generation] AS step_generation,
+                s.[showInput] AS step_showinput,
+                s.[language] AS step_language,
+                s.[indent] AS step_indent,
+                f.[value] AS feedback_value,
+                f.[comment] AS feedback_comment,
+                f.[id] AS feedback_id
+            FROM steps s LEFT JOIN feedbacks f ON s.[id] = f.[forId]
+            WHERE s.[threadId] IN ({thread_ids_placeholders})
+            ORDER BY s.[createdAt] ASC
+        """
+        try:
+            steps_feedbacks = self.execute_sql(steps_feedbacks_query, thread_ids_list)
+        except Exception as e:
+            logger.warning(f"Failed to fetch steps/feedbacks: {e}")
+            steps_feedbacks = []
+
+        # Query elements
+        elements_query = f"""
+            SELECT
+                e.[id] AS element_id,
+                e.[threadId] as element_threadid,
+                e.[type] AS element_type,
+                e.[chainlitKey] AS element_chainlitkey,
+                e.[url] AS element_url,
+                e.[objectKey] as element_objectkey,
+                e.[name] AS element_name,
+                e.[display] AS element_display,
+                e.[size] AS element_size,
+                e.[language] AS element_language,
+                e.[page] AS element_page,
+                e.[forId] AS element_forid,
+                e.[mime] AS element_mime
+            FROM elements e
+            WHERE e.[threadId] IN ({thread_ids_placeholders})
+        """
+        try:
+            elements = self.execute_sql(elements_query, thread_ids_list)
+        except Exception as e:
+            logger.warning(f"Failed to fetch elements: {e}")
+            elements = []
+
+        # Build thread dictionaries
+        thread_dicts: Dict[str, ThreadDict] = {}
+        for thread in user_threads:
+            tid = thread["thread_id"]
+            if tid is not None:
+                # Parse metadata if it's a string
+                metadata = thread.get("thread_metadata")
+                if isinstance(metadata, str):
+                    try:
+                        metadata = json.loads(metadata)
+                    except (json.JSONDecodeError, TypeError):
+                        metadata = {}
+
+                thread_dicts[tid] = ThreadDict(
+                    id=tid,
+                    createdAt=thread["thread_createdat"],
+                    name=thread["thread_name"],
+                    userId=thread["user_id"],
+                    userIdentifier=thread["user_identifier"],
+                    tags=thread["thread_tags"],
+                    metadata=metadata,
+                    steps=[],
+                    elements=[],
+                )
+
+        # Process steps and feedbacks
+        if isinstance(steps_feedbacks, list):
+            from ingenious.db.chat_history_models import FeedbackDict
+            from ingenious.db.chat_history_models import StepDict as StepDictModel
+
+            for step_feedback in steps_feedbacks:
+                tid = step_feedback.get("step_threadid")
+                if tid is not None and tid in thread_dicts:
+                    feedback = None
+                    if step_feedback.get("feedback_value") is not None:
+                        feedback = FeedbackDict(
+                            forId=step_feedback["step_id"],
+                            id=step_feedback.get("feedback_id"),
+                            value=step_feedback["feedback_value"],
+                            comment=step_feedback.get("feedback_comment"),
+                        )
+
+                    # Parse metadata and generation if they're strings
+                    step_metadata = step_feedback.get("step_metadata")
+                    if isinstance(step_metadata, str):
+                        try:
+                            step_metadata = json.loads(step_metadata)
+                        except (json.JSONDecodeError, TypeError):
+                            step_metadata = {}
+
+                    step_generation = step_feedback.get("step_generation")
+                    if isinstance(step_generation, str):
+                        try:
+                            step_generation = json.loads(step_generation)
+                        except (json.JSONDecodeError, TypeError):
+                            step_generation = {}
+
+                    step_dict = StepDictModel(
+                        id=step_feedback["step_id"],
+                        name=step_feedback["step_name"],
+                        type=step_feedback["step_type"],
+                        threadId=tid,
+                        parentId=step_feedback.get("step_parentid"),
+                        streaming=step_feedback.get("step_streaming", False),
+                        waitForAnswer=step_feedback.get("step_waitforanswer"),
+                        isError=step_feedback.get("step_iserror"),
+                        metadata=step_metadata,
+                        tags=step_feedback.get("step_tags"),
+                        input=step_feedback.get("step_input"),
+                        output=step_feedback.get("step_output"),
+                        createdAt=step_feedback.get("step_createdat"),
+                        start=step_feedback.get("step_start"),
+                        end=step_feedback.get("step_end"),
+                        generation=step_generation,
+                        showInput=step_feedback.get("step_showinput"),
+                        language=step_feedback.get("step_language"),
+                        indent=step_feedback.get("step_indent"),
+                        feedback=feedback,
+                    )
+                    thread_dicts[tid]["steps"].append(step_dict)
+
+        # Process elements
+        if isinstance(elements, list):
+            from ingenious.db.chat_history_models import ElementDict
+
+            for element in elements:
+                tid = element.get("element_threadid")
+                if tid is not None and tid in thread_dicts:
+                    element_dict: ElementDict = {
+                        "id": element["element_id"],
+                        "threadId": tid,
+                        "type": element.get("element_type"),
+                        "chainlitKey": element.get("element_chainlitkey"),
+                        "url": element.get("element_url"),
+                        "objectKey": element.get("element_objectkey"),
+                        "name": element.get("element_name"),
+                        "display": element.get("element_display"),
+                        "size": element.get("element_size"),
+                        "language": element.get("element_language"),
+                        "page": element.get("element_page"),
+                        "forId": element.get("element_forid"),
+                        "mime": element.get("element_mime"),
+                        "autoPlay": element.get("element_autoplay"),
+                        "playerConfig": element.get("element_playerconfig"),
+                    }
+                    elements_list = thread_dicts[tid].get("elements")
+                    if elements_list is not None:
+                        elements_list.append(element_dict)
+
+        return list(thread_dicts.values())
 
     async def add_step(self, step_dict: StepDict) -> None:
         """Add a step record to the Azure SQL steps table.

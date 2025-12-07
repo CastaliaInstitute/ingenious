@@ -358,6 +358,59 @@ class QueryBuilder:
             WHERE user_id = ?
         """
 
+    def create_indexes(self) -> list[str]:
+        """Generate CREATE INDEX queries for performance optimization.
+
+        Creates indexes on commonly queried columns:
+        - chat_history: thread_id, user_id, (thread_id, timestamp)
+        - chat_history_summary: thread_id, user_id
+        - users: identifier
+
+        Returns:
+            List of database-specific CREATE INDEX SQL statements.
+        """
+        indexes = []
+
+        if isinstance(self.dialect, AzureSQLDialect):
+            # Azure SQL syntax for conditional index creation
+            indexes.extend(
+                [
+                    """
+                IF NOT EXISTS (SELECT * FROM sys.indexes WHERE name = 'idx_chat_history_thread_id' AND object_id = OBJECT_ID('chat_history'))
+                CREATE INDEX idx_chat_history_thread_id ON chat_history (thread_id);
+                """,
+                    """
+                IF NOT EXISTS (SELECT * FROM sys.indexes WHERE name = 'idx_chat_history_user_id' AND object_id = OBJECT_ID('chat_history'))
+                CREATE INDEX idx_chat_history_user_id ON chat_history (user_id);
+                """,
+                    """
+                IF NOT EXISTS (SELECT * FROM sys.indexes WHERE name = 'idx_chat_history_thread_timestamp' AND object_id = OBJECT_ID('chat_history'))
+                CREATE INDEX idx_chat_history_thread_timestamp ON chat_history (thread_id, timestamp DESC);
+                """,
+                    """
+                IF NOT EXISTS (SELECT * FROM sys.indexes WHERE name = 'idx_chat_history_summary_thread_id' AND object_id = OBJECT_ID('chat_history_summary'))
+                CREATE INDEX idx_chat_history_summary_thread_id ON chat_history_summary (thread_id);
+                """,
+                    """
+                IF NOT EXISTS (SELECT * FROM sys.indexes WHERE name = 'idx_chat_history_summary_user_id' AND object_id = OBJECT_ID('chat_history_summary'))
+                CREATE INDEX idx_chat_history_summary_user_id ON chat_history_summary (user_id);
+                """,
+                ]
+            )
+        else:
+            # SQLite syntax for conditional index creation
+            indexes.extend(
+                [
+                    "CREATE INDEX IF NOT EXISTS idx_chat_history_thread_id ON chat_history (thread_id);",
+                    "CREATE INDEX IF NOT EXISTS idx_chat_history_user_id ON chat_history (user_id);",
+                    "CREATE INDEX IF NOT EXISTS idx_chat_history_thread_timestamp ON chat_history (thread_id, timestamp DESC);",
+                    "CREATE INDEX IF NOT EXISTS idx_chat_history_summary_thread_id ON chat_history_summary (thread_id);",
+                    "CREATE INDEX IF NOT EXISTS idx_chat_history_summary_user_id ON chat_history_summary (user_id);",
+                ]
+            )
+
+        return indexes
+
     def get_query(self, query_type: str, **kwargs: Any) -> str:
         """Get a query by type name with optional parameters.
 
