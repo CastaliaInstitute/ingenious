@@ -1,16 +1,8 @@
 """Azure Client Factory for building various Azure service clients.
 
 This module provides a centralized factory for creating Azure service clients
-with appropriate authentication methods based on configuration.
-
-The implementation has been split into separate modules for better organization:
-- openai_factory: OpenAI and chat completion clients
-- blob_factory: Blob storage clients
-- cosmos_factory: Cosmos DB clients
-- search_factory: Azure Search clients
-- sql_factory: SQL database clients
-
-This module re-exports all factory methods for backward compatibility.
+with appropriate authentication methods based on configuration. It uses
+builder classes from the builder subpackage to construct clients.
 """
 
 from typing import Any, Optional
