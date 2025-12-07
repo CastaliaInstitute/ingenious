@@ -74,8 +74,8 @@ class ModelSettings(BaseModel):
         # Check for placeholder values
         if v and "placeholder" in v.lower():
             raise ValueError(
-                "API key is required. Set the appropriate environment variable "
-                "(e.g., AZURE_OPENAI_API_KEY) or provide a valid key."
+                "API key is required. Set INGENIOUS_MODELS__N__API_KEY "
+                "environment variable (where N is the model index)."
             )
 
         # The authentication_method validation will be handled in model_validator
@@ -89,8 +89,8 @@ class ModelSettings(BaseModel):
         """Validate that base URL is provided and properly formatted."""
         if v and "placeholder" in v.lower():
             raise ValueError(
-                "Base URL is required. Set the appropriate environment variable "
-                "(e.g., AZURE_OPENAI_BASE_URL) or provide a valid URL."
+                "Base URL is required. Set INGENIOUS_MODELS__N__BASE_URL "
+                "environment variable (where N is the model index)."
             )
         if v and not v.startswith(("http://", "https://")):
             raise ValueError("Base URL must start with 'http://' or 'https://'")
@@ -103,9 +103,8 @@ class ModelSettings(BaseModel):
         if self.authentication_method == AuthenticationMethod.TOKEN:
             if not self.api_key:
                 raise ValueError(
-                    "API key is required when authentication_method is "
-                    "'token'. Set the appropriate environment variable "
-                    "(e.g., AZURE_OPENAI_API_KEY) or provide a valid key."
+                    "API key is required when authentication_method is 'token'. "
+                    "Set INGENIOUS_MODELS__N__API_KEY environment variable."
                 )
         elif self.authentication_method == AuthenticationMethod.CLIENT_ID_AND_SECRET:
             if not (self.client_id and self.client_secret and self.tenant_id):
@@ -204,10 +203,41 @@ class AzureSqlSettings(BaseModel):
     database_connection_string: str = Field("", description="Azure SQL connection string")
 
 
+class CorsSettings(BaseModel):
+    """CORS (Cross-Origin Resource Sharing) configuration.
+
+    Controls which origins are allowed to make requests to the API.
+    For production, always specify explicit origins rather than using wildcards.
+    """
+
+    allowed_origins: list[str] = Field(
+        default_factory=lambda: [
+            "http://localhost",
+            "http://localhost:5173",
+            "http://localhost:4173",
+        ],
+        description="List of allowed origins. Use explicit origins in production, not '*'",
+    )
+    allow_credentials: bool = Field(
+        True,
+        description="Allow credentials (cookies, authorization headers) in CORS requests",
+    )
+    allow_methods: list[str] = Field(
+        default_factory=lambda: ["GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"],
+        description="Allowed HTTP methods. Default includes common methods.",
+    )
+    allow_headers: list[str] = Field(
+        default_factory=lambda: ["*"],
+        description="Allowed headers. Use '*' for development, explicit list for production.",
+    )
+
+
 class WebAuthenticationSettings(BaseModel):
     """Authentication settings for web interfaces."""
 
-    enable: bool = Field(False, description="Enable web authentication")
+    enable: bool = Field(
+        True, description="Enable web authentication (strongly recommended for production)"
+    )
     username: str = Field("admin", description="Username for basic authentication")
     password: str = Field("", description="Password for basic authentication")
     type: str = Field("basic", description="Authentication type: 'basic' for HTTP basic auth")
@@ -237,10 +267,13 @@ class WebSettings(BaseModel):
     """
 
     ip_address: str = Field(
-        "0.0.0.0",
+        "0.0.0.0",  # nosec B104: intentional binding to all interfaces for container deployments
         description="IP address to bind the web server (0.0.0.0 for all interfaces)",
     )
-    port: int = Field(80, description="Port number for the web server")
+    port: int = Field(
+        8000,
+        description="Port number for the web server (default 8000 to avoid privileged port 80)",
+    )
     type: str = Field("fastapi", description="Web framework type: 'fastapi' for FastAPI")
     asynchronous: bool = Field(False, description="Enable asynchronous response handling")
     enable_streaming: bool = Field(
@@ -250,24 +283,19 @@ class WebSettings(BaseModel):
     streaming_delay_ms: int = Field(
         50, description="Delay between streaming chunks in milliseconds"
     )
+    cors: CorsSettings = Field(
+        default_factory=CorsSettings,
+        description="CORS configuration for cross-origin requests",
+    )
     authentication: WebAuthenticationSettings = Field(
-        default_factory=lambda: WebAuthenticationSettings(
-            enable=False,
-            username="admin",
-            password="",
-            type="basic",
-            enable_global_middleware=False,
-            jwt_secret_key="",
-            jwt_algorithm="HS256",
-            jwt_access_token_expire_minutes=1440,
-            jwt_refresh_token_expire_days=7,
-        )
+        default_factory=WebAuthenticationSettings,  # nosec B106: empty password is a default requiring env config
+        description="Authentication configuration for web endpoints",
     )
 
     @field_validator("port")
     @classmethod
     def validate_port(cls, v: int) -> int:
-        """Validate port number range."""
+        """Validate port number range and warn about privileged ports."""
         if not 1 <= v <= 65535:
             raise ValueError("Port must be between 1 and 65535")
         return v
@@ -281,7 +309,8 @@ class LocalSqlSettings(BaseModel):
     """
 
     database_path: str = Field(
-        "/tmp/sample_sql_db", description="Path to local SQLite database file"
+        "/tmp/sample_sql_db",  # nosec B108: intentional use of /tmp for sample data
+        description="Path to local SQLite database file",
     )
     sample_csv_path: str = Field("", description="Path to sample CSV files for data loading")
     sample_database_name: str = Field("sample_sql_db", description="Name for the sample database")
@@ -332,27 +361,14 @@ class FileStorageSettings(BaseModel):
     Supports local and cloud storage options.
     """
 
+    # nosec B106: empty token is a default requiring env config
     revisions: FileStorageContainerSettings = Field(
-        default_factory=lambda: FileStorageContainerSettings(
-            enable=True,
-            storage_type="local",
-            container_name="",
-            path="./",
-            add_sub_folders=True,
-            url="",
-            token="",
-        )
+        default_factory=FileStorageContainerSettings,
+        description="Storage configuration for document revisions",
     )
     data: FileStorageContainerSettings = Field(
-        default_factory=lambda: FileStorageContainerSettings(
-            enable=True,
-            storage_type="local",
-            container_name="",
-            path="./",
-            add_sub_folders=True,
-            url="",
-            token="",
-        )
+        default_factory=FileStorageContainerSettings,
+        description="Storage configuration for data files",
     )
 
 

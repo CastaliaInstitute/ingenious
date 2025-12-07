@@ -12,7 +12,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import RedirectResponse
 
 from .exception_handlers import ExceptionHandlers
-from .middleware import RequestContextMiddleware
+from .middleware import RequestContextMiddleware, SecurityHeadersMiddleware
 from .routing import RouteManager
 
 if TYPE_CHECKING:
@@ -65,23 +65,21 @@ class FastAgentAPI:
         os.chdir(os.environ["INGENIOUS_WORKING_DIR"])
 
     def _setup_middleware(self) -> None:
-        """Configure middleware stack including CORS and authentication."""
+        """Configure middleware stack including CORS, security headers, and authentication."""
         # Add request context middleware first
         self.app.add_middleware(RequestContextMiddleware)
 
-        # Add CORS middleware
-        origins = [
-            "http://localhost",
-            "http://localhost:5173",
-            "http://localhost:4173",
-        ]
+        # Add security headers middleware
+        self.app.add_middleware(SecurityHeadersMiddleware)
 
+        # Add CORS middleware using configuration
+        cors_config = self.config.web_configuration.cors
         self.app.add_middleware(
             CORSMiddleware,
-            allow_origins=origins,
-            allow_credentials=True,
-            allow_methods=["*"],
-            allow_headers=["*"],
+            allow_origins=cors_config.allowed_origins,
+            allow_credentials=cors_config.allow_credentials,
+            allow_methods=cors_config.allow_methods,
+            allow_headers=cors_config.allow_headers,
         )
 
         # Add authentication middleware if configured

@@ -1,7 +1,7 @@
 """Request middleware for the FastAPI application.
 
 This module contains middleware classes and configurations for handling
-request context, logging, and other cross-cutting concerns.
+request context, logging, security headers, and other cross-cutting concerns.
 """
 
 import time
@@ -18,6 +18,69 @@ from ingenious.core.structured_logging import (
 )
 
 logger = get_logger(__name__)
+
+
+class SecurityHeadersMiddleware(BaseHTTPMiddleware):
+    """Middleware to add security headers to all responses.
+
+    Implements recommended security headers:
+    - Strict-Transport-Security (HSTS): Enforces HTTPS
+    - X-Content-Type-Options: Prevents MIME type sniffing
+    - X-Frame-Options: Prevents clickjacking
+    - X-XSS-Protection: Enables browser XSS filtering
+    - Content-Security-Policy: Controls resource loading
+    - Referrer-Policy: Controls referrer information
+    - Permissions-Policy: Controls browser features
+    """
+
+    async def dispatch(
+        self, request: Request, call_next: Callable[[Request], Awaitable[Response]]
+    ) -> Response:
+        """Add security headers to the response.
+
+        Args:
+            request: Incoming FastAPI request
+            call_next: Next middleware or route handler in the chain
+
+        Returns:
+            Response with security headers added
+        """
+        response = await call_next(request)
+
+        # Strict-Transport-Security: Enforce HTTPS for 1 year, include subdomains
+        response.headers["Strict-Transport-Security"] = "max-age=31536000; includeSubDomains"
+
+        # X-Content-Type-Options: Prevent MIME type sniffing
+        response.headers["X-Content-Type-Options"] = "nosniff"
+
+        # X-Frame-Options: Prevent clickjacking (DENY = no framing allowed)
+        response.headers["X-Frame-Options"] = "DENY"
+
+        # X-XSS-Protection: Enable XSS filtering (legacy but still useful)
+        response.headers["X-XSS-Protection"] = "1; mode=block"
+
+        # Content-Security-Policy: Restrictive default policy
+        # Allows self-origin and inline scripts for Swagger UI compatibility
+        response.headers["Content-Security-Policy"] = (
+            "default-src 'self'; "
+            "script-src 'self' 'unsafe-inline' 'unsafe-eval'; "
+            "style-src 'self' 'unsafe-inline'; "
+            "img-src 'self' data: https:; "
+            "font-src 'self' data:; "
+            "connect-src 'self'; "
+            "frame-ancestors 'none'"
+        )
+
+        # Referrer-Policy: Control referrer information
+        response.headers["Referrer-Policy"] = "strict-origin-when-cross-origin"
+
+        # Permissions-Policy: Disable unnecessary browser features
+        response.headers["Permissions-Policy"] = (
+            "accelerometer=(), camera=(), geolocation=(), gyroscope=(), "
+            "magnetometer=(), microphone=(), payment=(), usb=()"
+        )
+
+        return response
 
 
 class RequestContextMiddleware(BaseHTTPMiddleware):
