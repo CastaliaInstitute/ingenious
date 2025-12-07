@@ -19,7 +19,14 @@ from ingenious.config import IngeniousSettings
 # )
 from ingenious.core.structured_logging import get_logger
 from ingenious.db.base_sql import BaseSQLRepository
-from ingenious.db.chat_history_repository import IChatHistoryRepository
+from ingenious.db.chat_history_models import (
+    ElementDict,
+    FeedbackDict,
+    Step,
+    StepDict,
+    ThreadDict,
+    User,
+)
 from ingenious.db.connection_pool import ConnectionPool, SQLiteConnectionFactory
 from ingenious.db.query_builder import QueryBuilder, SQLiteDialect
 from ingenious.errors import (
@@ -64,7 +71,7 @@ class sqlite_ChatHistoryRepository(BaseSQLRepository):
         try:
             self.close()
         except Exception:
-            pass
+            pass  # nosec B110 - intentional cleanup, ignoring errors in destructor
 
     def close(self) -> None:
         """Close all connections in the pool."""
@@ -127,7 +134,7 @@ class sqlite_ChatHistoryRepository(BaseSQLRepository):
         """Legacy method for backward compatibility. Tables are now created via base class."""
         pass
 
-    async def _get_user_by_id(self, user_id: str) -> IChatHistoryRepository.User | None:
+    async def _get_user_by_id(self, user_id: str) -> User | None:
         with self.pool.get_connection() as connection:
             cursor = connection.cursor()
             cursor.execute(
@@ -136,14 +143,12 @@ class sqlite_ChatHistoryRepository(BaseSQLRepository):
             )
             row = cursor.fetchone()
             if row:
-                return IChatHistoryRepository.User(
-                    id=row[0], identifier=row[1], metadata=row[2], createdAt=row[3]
-                )
+                return User(id=row[0], identifier=row[1], metadata=row[2], createdAt=row[3])
             return None
 
     async def get_threads_for_user(
         self, identifier: str, thread_id: Optional[str]
-    ) -> Optional[List[IChatHistoryRepository.ThreadDict]]:
+    ) -> Optional[List[ThreadDict]]:
         """Fetch all user threads up to self.user_thread_limit, or one thread by id if thread_id is provided."""
         if thread_id is None:
             user_threads_query = """
@@ -192,7 +197,7 @@ class sqlite_ChatHistoryRepository(BaseSQLRepository):
             # Create parameterized placeholders for IN clause
             thread_ids_placeholders = ",".join("?" * len(thread_ids_list))
 
-        steps_feedbacks_query = f"""  # nosec B608: table name 'steps' is hardcoded constant, parameters use ? placeholders
+        steps_feedbacks_query = f"""
             SELECT
                 s."id" AS step_id,
                 s."name" AS step_name,
@@ -222,7 +227,7 @@ class sqlite_ChatHistoryRepository(BaseSQLRepository):
         """
         steps_feedbacks = self.execute_sql(steps_feedbacks_query, thread_ids_list)
 
-        elements_query = f"""  # nosec B608: table name 'elements' is hardcoded constant, parameters use ? placeholders
+        elements_query = f"""
             SELECT
                 e."id" AS element_id,
                 e."threadId" as element_threadid,
@@ -246,7 +251,7 @@ class sqlite_ChatHistoryRepository(BaseSQLRepository):
         for thread in user_threads:
             thread_id = thread["thread_id"]
             if thread_id is not None:
-                thread_dicts[thread_id] = IChatHistoryRepository.ThreadDict(
+                thread_dicts[thread_id] = ThreadDict(
                     id=thread_id,
                     createdAt=thread["thread_createdat"],
                     name=thread["thread_name"],
@@ -266,13 +271,13 @@ class sqlite_ChatHistoryRepository(BaseSQLRepository):
                 if thread_id is not None:
                     feedback = None
                     if step_feedback["feedback_value"] is not None:
-                        feedback = IChatHistoryRepository.FeedbackDict(
+                        feedback = FeedbackDict(
                             forId=step_feedback["step_id"],
                             id=step_feedback.get("feedback_id"),
                             value=step_feedback["feedback_value"],
                             comment=step_feedback.get("feedback_comment"),
                         )
-                    step_dict = IChatHistoryRepository.StepDict(
+                    step_dict = StepDict(
                         id=step_feedback["step_id"],
                         name=step_feedback["step_name"],
                         type=step_feedback["step_type"],
@@ -309,7 +314,7 @@ class sqlite_ChatHistoryRepository(BaseSQLRepository):
             for element in elements:
                 thread_id = element["element_threadid"]
                 if thread_id is not None:
-                    element_dict = IChatHistoryRepository.ElementDict(
+                    element_dict = ElementDict(
                         id=element["element_id"],
                         threadId=thread_id,
                         type=element["element_type"],
@@ -326,7 +331,9 @@ class sqlite_ChatHistoryRepository(BaseSQLRepository):
                         forId=element.get("element_forid"),
                         mime=element.get("element_mime"),
                     )
-                    thread_dicts[thread_id]["elements"].append(element_dict)  # type: ignore
+                    elements_list = thread_dicts[thread_id]["elements"]
+                    if elements_list is not None:
+                        elements_list.append(element_dict)
         logger.debug(
             "Retrieved thread dictionaries",
             thread_count=len(thread_dicts),
@@ -334,9 +341,7 @@ class sqlite_ChatHistoryRepository(BaseSQLRepository):
         )
         return list(thread_dicts.values())
 
-    async def add_step(
-        self, step_dict: IChatHistoryRepository.StepDict
-    ) -> IChatHistoryRepository.Step:
+    async def add_step(self, step_dict: StepDict) -> Step:
         """Add a step to the SQLite database.
 
         Args:
@@ -368,7 +373,7 @@ class sqlite_ChatHistoryRepository(BaseSQLRepository):
         parameters["generation"] = json.dumps(step_dict.get("generation", {}))
         columns = ", ".join(f'"{key}"' for key in parameters.keys())
         values = ", ".join("?" for key in parameters.keys())
-        query = f"""  # nosec B608: table name 'steps' is hardcoded constant, parameters use ? placeholders
+        query = f"""
             INSERT INTO steps ({columns})
             VALUES ({values});
         """
@@ -377,7 +382,7 @@ class sqlite_ChatHistoryRepository(BaseSQLRepository):
         # Return the created step
         from uuid import UUID
 
-        return IChatHistoryRepository.Step(
+        return Step(
             id=UUID(step_dict.get("id", "00000000-0000-0000-0000-000000000000")),
             name=step_dict.get("name", ""),
             type=step_dict.get("type", ""),
@@ -462,7 +467,7 @@ class sqlite_ChatHistoryRepository(BaseSQLRepository):
         updates = ", ".join(
             f'"{key}" = EXCLUDED."{key}"' for key in parameters.keys() if key != "id"
         )
-        query = f"""  # nosec B608: table name 'threads' is hardcoded constant, parameters use ? placeholders
+        query = f"""
             INSERT INTO threads ({columns})
             VALUES ({values})
             ON CONFLICT ("id") DO UPDATE

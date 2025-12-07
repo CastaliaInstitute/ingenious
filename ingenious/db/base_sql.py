@@ -12,7 +12,8 @@ from typing import Any, List
 from uuid import UUID
 
 from ingenious.config import IngeniousSettings
-from ingenious.db.chat_history_repository import IChatHistoryRepository
+from ingenious.db.chat_history_interface import IChatHistoryRepository
+from ingenious.db.chat_history_models import User
 from ingenious.db.query_builder import QueryBuilder
 from ingenious.models.message import Message
 
@@ -229,9 +230,7 @@ class BaseSQLRepository(IChatHistoryRepository, ABC):
         params = [str(content_filter_results), message_id, thread_id]
         self._execute_sql(query, params, expect_results=False)
 
-    async def add_user(
-        self, identifier: str, metadata: dict[str, object] | None = None
-    ) -> IChatHistoryRepository.User:
+    async def add_user(self, identifier: str, metadata: dict[str, object] | None = None) -> User:
         """Add a new user to the database.
 
         Args:
@@ -250,14 +249,14 @@ class BaseSQLRepository(IChatHistoryRepository, ABC):
         params = [new_id, identifier, json.dumps(metadata), now]
         self._execute_sql(query, params, expect_results=False)
 
-        return IChatHistoryRepository.User(
+        return User(
             id=uuid.UUID(new_id),
             identifier=identifier,
             metadata=metadata,
             createdAt=self.get_now_as_string(),
         )
 
-    async def get_user(self, identifier: str) -> IChatHistoryRepository.User | None:
+    async def get_user(self, identifier: str) -> User | None:
         """Get user by identifier, creating if not found.
 
         Args:
@@ -379,7 +378,7 @@ class BaseSQLRepository(IChatHistoryRepository, ABC):
                 tool_call_function=row[10],
             )
 
-    def _row_to_user(self, row: Any) -> IChatHistoryRepository.User:
+    def _row_to_user(self, row: Any) -> User:
         """Convert database row to User object.
 
         Args:
@@ -389,7 +388,7 @@ class BaseSQLRepository(IChatHistoryRepository, ABC):
             User object populated from row data.
         """
         if isinstance(row, dict):
-            return IChatHistoryRepository.User(
+            return User(
                 id=UUID(row.get("id", "")),
                 identifier=str(row.get("identifier", "")),
                 metadata=dict(row.get("metadata", {})),
@@ -397,7 +396,7 @@ class BaseSQLRepository(IChatHistoryRepository, ABC):
             )
         else:
             # Assume row is tuple/list with positional values
-            return IChatHistoryRepository.User(
+            return User(
                 id=UUID(row[0]) if row[0] else UUID("00000000-0000-0000-0000-000000000000"),
                 identifier=str(row[1]) if row[1] else "",
                 metadata=dict(row[2]) if row[2] else {},

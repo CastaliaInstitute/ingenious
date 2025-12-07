@@ -170,7 +170,8 @@ def get_logger(name: str) -> structlog.BoundLogger:
     Returns:
         A bound structlog logger instance.
     """
-    return structlog.get_logger(name)
+    logger: structlog.BoundLogger = structlog.get_logger(name)
+    return logger
 
 
 def set_request_context(

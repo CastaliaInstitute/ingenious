@@ -401,6 +401,12 @@ filterwarnings = [
   "ignore:.*(SwigPy|swigvarlink).* has no __module__ attribute:DeprecationWarning",
 ]
 
+[tool.bandit]
+# Skip B608 (hardcoded_sql_expressions) - these are false positives
+# The SQL queries use parameterized queries (?) for values
+# Dynamic parts are only column/table names from controlled dict keys
+skips = ["B608"]
+
 [tool.uv.workspace]
 members = [
     "test_dir",

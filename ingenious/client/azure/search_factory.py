@@ -18,8 +18,8 @@ try:
 
     HAS_SEARCH = True
 except ImportError:
-    SearchClient = Any
-    AsyncSearchClient = Any
+    SearchClient = None
+    AsyncSearchClient = None
     HAS_SEARCH = False
 
 # Export HAS_SEARCH for backward compatibility

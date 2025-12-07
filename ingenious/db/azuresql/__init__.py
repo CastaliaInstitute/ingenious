@@ -19,7 +19,7 @@ from ingenious.config import IngeniousSettings
 # )
 from ingenious.core.structured_logging import get_logger
 from ingenious.db.base_sql import BaseSQLRepository
-from ingenious.db.chat_history_repository import IChatHistoryRepository
+from ingenious.db.chat_history_models import StepDict, ThreadDict, User
 from ingenious.db.query_builder import AzureSQLDialect, QueryBuilder
 from ingenious.errors import (
     DatabaseQueryError,
@@ -141,7 +141,7 @@ class azuresql_ChatHistoryRepository(BaseSQLRepository):
 
     # Removed empty _create_tables override - using base class implementation
 
-    async def _get_user_by_id(self, user_id: str) -> IChatHistoryRepository.User | None:
+    async def _get_user_by_id(self, user_id: str) -> User | None:
         cursor = self.connection.cursor()
         cursor.execute(
             """SELECT id, identifier, metadata, createdAt FROM users WHERE id = ?""",
@@ -151,14 +151,12 @@ class azuresql_ChatHistoryRepository(BaseSQLRepository):
         cursor.close()
 
         if row:
-            return IChatHistoryRepository.User(
-                id=row[0], identifier=row[1], metadata=row[2], createdAt=row[3]
-            )
+            return User(id=row[0], identifier=row[1], metadata=row[2], createdAt=row[3])
         return None
 
     async def get_threads_for_user(
         self, identifier: str, thread_id: Optional[str]
-    ) -> Optional[List[IChatHistoryRepository.ThreadDict]]:
+    ) -> Optional[List[ThreadDict]]:
         """Retrieve threads associated with a user identifier.
 
         Args:
@@ -172,7 +170,7 @@ class azuresql_ChatHistoryRepository(BaseSQLRepository):
         # In a full implementation, you'd join with threads table and return proper thread data
         return []
 
-    async def add_step(self, step_dict: IChatHistoryRepository.StepDict) -> None:
+    async def add_step(self, step_dict: StepDict) -> None:
         """Add a step record to the Azure SQL steps table.
 
         Args:

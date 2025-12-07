@@ -14,7 +14,7 @@ try:
 
     HAS_COSMOS = True
 except ImportError:
-    CosmosClient = Any
+    CosmosClient = None
     HAS_COSMOS = False
 
 # Export HAS_COSMOS for backward compatibility

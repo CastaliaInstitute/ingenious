@@ -28,9 +28,11 @@ from ingenious.services.azure_search.client_init import (  # noqa: F401
 from ingenious.services.retrieval.errors import GenerationDisabledError
 
 try:  # Some tests patch this symbol on the provider module
-    from azure.search.documents.models import QueryType  # noqa: F401
+    from azure.search.documents.models import QueryType as _QueryType
+
+    QueryType: type = _QueryType  # noqa: F401
 except Exception:  # pragma: no cover - tests may stub this anyway
-    QueryType = object()
+    QueryType = type("QueryType", (), {})
 
 if TYPE_CHECKING:
     from ingenious.config import IngeniousSettings
@@ -99,10 +101,11 @@ class AzureSearchProvider:
         params: Dict[str, Any] = {"search_text": query, "top": limit}
         try:
             from azure.search.documents.models import QueryType as _QT
+
+            if getattr(_QT, "SIMPLE", None) is not None:
+                params["query_type"] = getattr(_QT, "SIMPLE")
         except Exception:
-            _QT = None
-        if _QT is not None and getattr(_QT, "SIMPLE", None) is not None:
-            params["query_type"] = getattr(_QT, "SIMPLE")
+            pass  # nosec B110 - intentionally ignoring import failures
         return params
 
     def _apply_cleaner(self, results: List[Dict[str, Any]]) -> List[Dict[str, Any]]:

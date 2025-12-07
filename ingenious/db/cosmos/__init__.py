@@ -9,7 +9,8 @@ from ingenious.client.azure import AzureClientFactory
 from ingenious.common.enums import AuthenticationMethod
 from ingenious.config.settings import IngeniousSettings
 from ingenious.core.structured_logging import get_logger
-from ingenious.db.chat_history_repository import IChatHistoryRepository
+from ingenious.db.chat_history_interface import IChatHistoryRepository
+from ingenious.db.chat_history_models import StepDict, Thread, ThreadDict, User
 from ingenious.errors import DatabaseQueryError
 from ingenious.models.message import Message
 
@@ -152,7 +153,7 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
         except Exception as e:
             raise DatabaseQueryError("Failed to add message to Cosmos", cause=e)
 
-    async def add_user(self, identifier: str) -> IChatHistoryRepository.User:
+    async def add_user(self, identifier: str) -> User:
         """Add a new user to the repository in Cosmos DB.
 
         Args:
@@ -176,7 +177,7 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
             self.users.upsert_item(user_doc)
             from uuid import UUID as _UUID
 
-            return IChatHistoryRepository.User(
+            return User(
                 id=_UUID(user_id),
                 identifier=identifier,
                 metadata={},
@@ -185,7 +186,7 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
         except Exception as e:
             raise DatabaseQueryError("Failed to add user in Cosmos", cause=e)
 
-    async def get_user(self, identifier: str) -> IChatHistoryRepository.User | None:
+    async def get_user(self, identifier: str) -> User | None:
         """Retrieve a user from the repository by identifier.
 
         Args:
@@ -209,7 +210,7 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
                 d = results[0]
                 from uuid import UUID as _UUID
 
-                return IChatHistoryRepository.User(
+                return User(
                     id=_UUID(str(d.get("id") or "00000000-0000-0000-0000-000000000000")),
                     identifier=str(d.get("identifier", "")),
                     metadata=dict(d.get("metadata", {})),
@@ -282,7 +283,7 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
 
     async def get_threads_for_user(
         self, identifier: str, thread_id: Optional[str]
-    ) -> Optional[List[IChatHistoryRepository.ThreadDict]]:
+    ) -> Optional[List[ThreadDict]]:
         """Retrieve thread metadata for a user.
 
         Args:
@@ -599,7 +600,7 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
         except Exception as e:
             raise DatabaseQueryError("Failed to delete user memory in Cosmos", cause=e)
 
-    async def add_step(self, step_dict: IChatHistoryRepository.StepDict) -> str:
+    async def add_step(self, step_dict: StepDict) -> str:
         """Add a step to the repository.
 
         Args:
@@ -611,7 +612,7 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
         # Step storage is not used by Ingenious
         return str(step_dict.get("id", ""))
 
-    async def get_thread(self, thread_id: str) -> List[IChatHistoryRepository.Thread]:
+    async def get_thread(self, thread_id: str) -> List[Thread]:
         """Retrieve thread metadata from the repository.
 
         Args:

@@ -7,7 +7,6 @@ and integrating with various authentication providers (Azure, Basic Auth, JWT).
 from __future__ import annotations
 
 import asyncio
-import inspect
 from typing import TYPE_CHECKING, Any, Callable, Mapping, Optional, Union
 
 from ingenious.common.enums import AuthenticationMethod
@@ -292,22 +291,20 @@ class AzureAuthConfig:
             ) from e
 
         def _sync_provider() -> str:
-            token_or_coro = aio_provider()
-            if inspect.isawaitable(token_or_coro):
-                try:
-                    loop = asyncio.get_event_loop()
-                    if loop.is_running():
-                        new_loop = asyncio.new_event_loop()
-                        try:
-                            result: str = new_loop.run_until_complete(token_or_coro)
-                            return result
-                        finally:
-                            new_loop.close()
-                    result = loop.run_until_complete(token_or_coro)
-                    return result
-                except RuntimeError:
-                    result = asyncio.run(token_or_coro)  # type: ignore[arg-type]
-                    return result
-            return str(token_or_coro)
+            coro = aio_provider()
+            try:
+                loop = asyncio.get_event_loop()
+                if loop.is_running():
+                    new_loop = asyncio.new_event_loop()
+                    try:
+                        result: str = new_loop.run_until_complete(coro)
+                        return result
+                    finally:
+                        new_loop.close()
+                result = loop.run_until_complete(coro)
+                return result
+            except RuntimeError:
+                result = asyncio.run(coro)
+                return result
 
         return _sync_provider
