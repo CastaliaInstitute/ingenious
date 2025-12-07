@@ -554,9 +554,11 @@ class ValidateCommand(BaseCommand):
                 "  export INGENIOUS_PROFILE_PATH=$(pwd)/profiles.yml",
             ],
             "azure": [
-                "Create .env file with Azure OpenAI credentials:",
-                "  echo 'AZURE_OPENAI_API_KEY=your-key' > .env",
-                "  echo 'AZURE_OPENAI_BASE_URL=https://your-resource.openai.azure.com/' >> .env",
+                "Create .env file with model configuration:",
+                "  echo 'INGENIOUS_MODELS__0__API_KEY=your-key' > .env",
+                "  echo 'INGENIOUS_MODELS__0__BASE_URL=https://your-resource.openai.azure.com/' >> .env",
+                "  echo 'INGENIOUS_MODELS__0__MODEL=gpt-4o-mini' >> .env",
+                "  echo 'INGENIOUS_MODELS__0__API_TYPE=rest' >> .env",
             ],
             "dependency": [
                 "Install missing dependencies:",

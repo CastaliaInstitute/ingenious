@@ -25,7 +25,7 @@ from .models import (
     ToolServiceSettings,
     WebSettings,
 )
-from .validators import validate_configuration, validate_models_not_empty
+from .validators import validate_configuration
 
 
 class IngeniousSettings(BaseSettings):
@@ -110,7 +110,10 @@ class IngeniousSettings(BaseSettings):
     @field_validator("models", mode="before")
     @classmethod
     def parse_models_field(cls, v: Any) -> Any:
-        """Parse models from JSON string or nested environment variables."""
+        """Parse models from JSON string or nested environment variables.
+
+        Validates that model indices are contiguous (0, 1, 2) not sparse (0, 3).
+        """
         # Handle JSON string format (e.g., INGENIOUS_MODELS='[{...}]')
         if isinstance(v, str):
             try:
@@ -121,6 +124,20 @@ class IngeniousSettings(BaseSettings):
 
         # Handle dictionary format from nested env vars (e.g., INGENIOUS_MODELS__0__*)
         if isinstance(v, dict):
+            # Get numeric keys and validate contiguity
+            numeric_keys = sorted([int(k) for k in v.keys() if k.isdigit()])
+
+            if numeric_keys:
+                # Validate that indices are contiguous starting from 0
+                expected = list(range(len(numeric_keys)))
+                if numeric_keys != expected:
+                    missing = set(expected) - set(numeric_keys)
+                    raise ValueError(
+                        f"Model indices must be contiguous starting from 0. "
+                        f"Found indices {numeric_keys}, missing indices: {sorted(missing)}. "
+                        f"Example: Use INGENIOUS_MODELS__0__*, INGENIOUS_MODELS__1__*, etc."
+                    )
+
             # Convert {'0': {...}, '1': {...}} to [{...}, {...}]
             result = []
             for key in sorted(v.keys()):
@@ -156,72 +173,29 @@ class IngeniousSettings(BaseSettings):
     @field_validator("models")
     @classmethod
     def validate_models_not_empty_field(cls, v: List[ModelSettings]) -> List[ModelSettings]:
-        """Ensure at least one model is configured and handle legacy environment variables."""
-        import os
+        """Ensure at least one model is configured.
 
-        # Handle legacy environment variables before validation
-        legacy_api_key = os.getenv("AZURE_OPENAI_API_KEY")
-        legacy_base_url = os.getenv("AZURE_OPENAI_BASE_URL")
-        legacy_model = os.getenv("AZURE_OPENAI_MODEL")
-        legacy_version = os.getenv("AZURE_OPENAI_VERSION", "2024-06-01")
-
-        # If legacy variables exist and models were created, update them
-        if legacy_api_key and legacy_base_url and v:
-            # Update the first model with legacy values
-            if len(v) > 0:
-                model = v[0]
-                # Update the model with legacy values
-                v[0] = ModelSettings(
-                    model=legacy_model or model.model,
-                    api_key=legacy_api_key,
-                    base_url=legacy_base_url,
-                    api_version=legacy_version,
-                    api_type=model.api_type,
-                    deployment=legacy_model or model.deployment,
-                    database_type="test" if os.getenv("PYTEST_CURRENT_TEST") else "default",
-                )
-
-        return validate_models_not_empty(v)
+        Models must be configured via INGENIOUS_MODELS__*__ environment variables.
+        """
+        if not v:
+            raise ValueError(
+                "At least one model must be configured. "
+                "Set INGENIOUS_MODELS__0__API_KEY and INGENIOUS_MODELS__0__BASE_URL "
+                "environment variables. Example:\n"
+                "  INGENIOUS_MODELS__0__API_KEY=your-key\n"
+                "  INGENIOUS_MODELS__0__BASE_URL=https://your-endpoint.openai.azure.com/\n"
+                "  INGENIOUS_MODELS__0__MODEL=gpt-4o-mini\n"
+                "  INGENIOUS_MODELS__0__API_TYPE=rest"
+            )
+        return v
 
     def model_post_init(self, _context: Any) -> None:
-        """Initialize default model if none provided but env vars are available."""
+        """Run post-initialization validation."""
         import os
 
-        # Get legacy Azure OpenAI environment variables
-        legacy_api_key = os.getenv("AZURE_OPENAI_API_KEY")
-        legacy_base_url = os.getenv("AZURE_OPENAI_BASE_URL")
-        legacy_model = os.getenv("AZURE_OPENAI_MODEL", "gpt-4.1-nano")
-
-        # If legacy Azure OpenAI env vars are present, set up basic defaults
-        if legacy_api_key and legacy_base_url:
-            # If no models are configured, create a default model
-            if not self.models:
-                from .models import ModelSettings
-
-                default_model = ModelSettings(
-                    model=legacy_model,
-                    api_type="rest",
-                    api_version="2023-03-15-preview",
-                    api_key=legacy_api_key,
-                    base_url=legacy_base_url,
-                    deployment=os.getenv("AZURE_OPENAI_DEPLOYMENT", legacy_model),
-                )
-                self.models = [default_model]
-            else:
-                # If models exist, apply legacy env vars as overrides
-                for model in self.models:
-                    if legacy_api_key:
-                        model.api_key = legacy_api_key
-                    if legacy_base_url:
-                        model.base_url = legacy_base_url
-                    # Also update the model name if specified
-                    if os.getenv("AZURE_OPENAI_MODEL"):
-                        model.model = legacy_model
-
-            # Set basic defaults for testing scenarios
-            if self.chat_history.database_type == "cosmos":
-                # When using legacy env vars, default to sqlite for simplicity
-                self.chat_history.database_type = "sqlite"
+        # Auto-validate configuration unless explicitly disabled
+        if os.getenv("INGENIOUS_SKIP_VALIDATION", "").lower() not in ("true", "1", "yes"):
+            self.validate_configuration()
 
     def validate_configuration(self) -> None:
         """Validate the complete configuration and provide helpful feedback."""
