@@ -190,12 +190,12 @@ class IngeniousSettings(BaseSettings):
         return v
 
     def model_post_init(self, _context: Any) -> None:
-        """Run post-initialization validation."""
-        import os
+        """Run post-initialization validation.
 
-        # Auto-validate configuration unless explicitly disabled
-        if os.getenv("INGENIOUS_SKIP_VALIDATION", "").lower() not in ("true", "1", "yes"):
-            self.validate_configuration()
+        Validation always runs to ensure configuration integrity.
+        Use create_minimal_config() for testing scenarios.
+        """
+        self.validate_configuration()
 
     def validate_configuration(self) -> None:
         """Validate the complete configuration and provide helpful feedback."""

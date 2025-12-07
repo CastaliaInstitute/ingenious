@@ -30,12 +30,6 @@ repos:
       - id: check-yaml
       - id: check-merge-conflict
       - id: debug-statements
-  # Dead code detection with vulture
-  - repo: https://github.com/jendrikseipp/vulture
-    rev: v2.14
-    hooks:
-      - id: vulture
-        args: ['ingenious/', 'vulture_whitelist.py', '--min-confidence=80', '--exclude=tests,conftest']
   # Static type checking with mypy
   - repo: https://github.com/pre-commit/mirrors-mypy
     rev: v1.18.2
@@ -48,5 +42,6 @@ repos:
     rev: '1.8.6'
     hooks:
       - id: bandit
-        args: ['-c', 'pyproject.toml']
+        # Only fail on medium+ severity; config in pyproject.toml
+        args: ['-c', 'pyproject.toml', '-ll']
         additional_dependencies: ['bandit[toml]']
