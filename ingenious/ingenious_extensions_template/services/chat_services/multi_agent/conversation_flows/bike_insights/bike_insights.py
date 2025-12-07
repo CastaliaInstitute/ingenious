@@ -122,7 +122,7 @@ class ConversationFlow(IConversationFlow):
         logger.handlers = [llm_logger]
 
         # Note you can access llm models from the configuration array
-        # llm_config = self.Get_Models()[0]
+        # llm_config = self.get_models()[0]
         # Note the base IConversationFlow gives you a logger for logging purposes
         self._logger.debug("Starting Flow")
 
@@ -130,7 +130,7 @@ class ConversationFlow(IConversationFlow):
         # Modify this if you want to modify the pattern used to correlate the agent name to the prompt template
         for agent in agents.get_agents():
             template_name = f"{agent.agent_name}_prompt.jinja"
-            agent.system_prompt = await self.Get_Template(
+            agent.system_prompt = await self.get_template(
                 file_name=template_name, revision_id=revision_id
             )
 
@@ -152,7 +152,7 @@ class ConversationFlow(IConversationFlow):
             Returns:
                 A random float between 10 and 200 representing the price.
             """
-            return random.uniform(10, 200)
+            return random.uniform(10, 200)  # nosec B311: demo code, not crypto
 
         bike_price_tool = FunctionTool(get_bike_price, description="Get the bike price.")
 

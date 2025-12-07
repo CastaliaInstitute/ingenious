@@ -21,7 +21,52 @@ from ingenious.utils.namespace_utils import normalize_workflow_name
 logger = get_logger(__name__)
 
 
-class multi_agent_chat_service:
+async def stream_response_as_chunks(
+    response: IChatResponse, chunk_size: int = 100
+) -> AsyncIterator[ChatResponseChunk]:
+    """Convert a complete response into streaming chunks.
+
+    This utility function takes a complete chat response and yields it
+    as a series of ChatResponseChunk objects for streaming delivery.
+
+    Args:
+        response: The complete chat response to stream.
+        chunk_size: Maximum characters per content chunk. Defaults to 100.
+
+    Yields:
+        ChatResponseChunk objects containing content and final metadata.
+    """
+    if response.agent_response:
+        content = response.agent_response
+
+        # Stream content in chunks
+        for i in range(0, len(content), chunk_size):
+            chunk_content = content[i : i + chunk_size]
+            yield ChatResponseChunk(
+                thread_id=response.thread_id,
+                message_id=response.message_id,
+                chunk_type="content",
+                content=chunk_content,
+                event_type=response.event_type,
+                is_final=False,
+            )
+
+    # Send final chunk with metadata
+    yield ChatResponseChunk(
+        thread_id=response.thread_id,
+        message_id=response.message_id,
+        chunk_type="final",
+        token_count=response.token_count,
+        max_token_count=response.max_token_count,
+        topic=response.topic,
+        memory_summary=response.memory_summary,
+        followup_questions=response.followup_questions,
+        event_type=response.event_type,
+        is_final=True,
+    )
+
+
+class MultiAgentChatService:
     """Multi-agent chat service implementation using AutoGen framework.
 
     This service orchestrates conversations using multiple AI agents through
@@ -403,43 +448,16 @@ class multi_agent_chat_service:
                     conversation_flow=chat_request.conversation_flow,
                 )
 
-                # Get regular response and convert to chunks
+                # Get regular response and convert to chunks using utility function
                 response = await self.get_chat_response(chat_request)
+                chunk_size = 100  # Default chunk size
+                if hasattr(self.config, "web_configuration") and hasattr(
+                    self.config.web_configuration, "streaming_chunk_size"
+                ):
+                    chunk_size = self.config.web_configuration.streaming_chunk_size
 
-                if response.agent_response:
-                    chunk_size = 100  # Default chunk size
-                    if hasattr(self.config, "web_configuration") and hasattr(
-                        self.config.web_configuration, "streaming_chunk_size"
-                    ):
-                        chunk_size = self.config.web_configuration.streaming_chunk_size
-
-                    content = response.agent_response
-
-                    # Stream content in chunks
-                    for i in range(0, len(content), chunk_size):
-                        chunk_content = content[i : i + chunk_size]
-                        yield ChatResponseChunk(
-                            thread_id=response.thread_id,
-                            message_id=response.message_id,
-                            chunk_type="content",
-                            content=chunk_content,
-                            event_type=response.event_type,
-                            is_final=False,
-                        )
-
-                # Send final chunk with metadata
-                yield ChatResponseChunk(
-                    thread_id=response.thread_id,
-                    message_id=response.message_id,
-                    chunk_type="final",
-                    token_count=response.token_count,
-                    max_token_count=response.max_token_count,
-                    topic=response.topic,
-                    memory_summary=response.memory_summary,
-                    followup_questions=response.followup_questions,
-                    event_type=response.event_type,
-                    is_final=True,
-                )
+                async for chunk in stream_response_as_chunks(response, chunk_size):
+                    yield chunk
 
         except ImportError as e:
             logger.error(
@@ -487,10 +505,10 @@ class IConversationFlow(ABC):
     _memory_path: str
     _memory_file_path: str
     _logger: logging.Logger
-    _chat_service: multi_agent_chat_service
+    _chat_service: MultiAgentChatService
     _memory_manager: Any
 
-    def __init__(self, parent_multi_agent_chat_service: multi_agent_chat_service) -> None:
+    def __init__(self, parent_multi_agent_chat_service: "MultiAgentChatService") -> None:
         """Initialize the conversation flow with parent service context.
 
         Args:
@@ -500,7 +518,7 @@ class IConversationFlow(ABC):
         super().__init__()
         # Use configuration from parent service instead of loading separately
         self._config = parent_multi_agent_chat_service.config
-        self._memory_path = self.GetConfig().chat_history.memory_path
+        self._memory_path = self.get_config().chat_history.memory_path
         self._memory_file_path = f"{self._memory_path}/context.md"
         self._logger = get_logger(__name__)  # type: ignore
         self._chat_service = parent_multi_agent_chat_service
@@ -510,7 +528,7 @@ class IConversationFlow(ABC):
 
         self._memory_manager = get_memory_manager(self._config, self._memory_path)
 
-    def GetConfig(self) -> "IngeniousSettings":
+    def get_config(self) -> "IngeniousSettings":
         """Get the current configuration settings.
 
         Returns:
@@ -518,7 +536,7 @@ class IConversationFlow(ABC):
         """
         return self._config
 
-    async def Get_Template(
+    async def get_template(
         self, revision_id: Optional[str] = None, file_name: str = "user_prompt.md"
     ) -> str:
         """Retrieve and render a Jinja2 template from the prompt template storage.
@@ -545,7 +563,7 @@ class IConversationFlow(ABC):
         template = env.from_string(content)
         return template.render()  # type: ignore
 
-    def Get_Models(self) -> Any:
+    def get_models(self) -> Any:
         """Get the configured language models.
 
         Returns:
@@ -553,7 +571,7 @@ class IConversationFlow(ABC):
         """
         return self._config.models
 
-    def Get_Memory_Path(self) -> str:
+    def get_memory_path(self) -> str:
         """Get the path to the memory storage directory.
 
         Returns:
@@ -561,7 +579,7 @@ class IConversationFlow(ABC):
         """
         return self._memory_path
 
-    def Get_Memory_File(self) -> str:
+    def get_memory_file(self) -> str:
         """Get the full path to the memory context file.
 
         Returns:
@@ -569,7 +587,7 @@ class IConversationFlow(ABC):
         """
         return self._memory_file_path
 
-    def Maintain_Memory(self, new_content: str, max_words: int = 150) -> Any:
+    def maintain_memory(self, new_content: str, max_words: int = 150) -> Any:
         """Maintain memory using the MemoryManager for cloud storage support."""
         from ingenious.services.memory_manager import run_async_memory_operation
 
@@ -601,60 +619,13 @@ class IConversationFlow(ABC):
             conversation_flow=self.__class__.__name__,
         )
 
-        # Get regular response and convert to chunks
+        # Get regular response and convert to chunks using utility function
         response = await self.get_conversation_response(chat_request)
+        chunk_size = 100  # Default chunk size
+        if hasattr(self._config, "web_configuration") and hasattr(
+            self._config.web_configuration, "streaming_chunk_size"
+        ):
+            chunk_size = self._config.web_configuration.streaming_chunk_size
 
-        if response.agent_response:
-            chunk_size = 100  # Default chunk size
-            if hasattr(self._config, "web_configuration") and hasattr(
-                self._config.web_configuration, "streaming_chunk_size"
-            ):
-                chunk_size = self._config.web_configuration.streaming_chunk_size
-
-            content = response.agent_response
-
-            # Stream content in chunks
-            for i in range(0, len(content), chunk_size):
-                chunk_content = content[i : i + chunk_size]
-                yield ChatResponseChunk(
-                    thread_id=response.thread_id,
-                    message_id=response.message_id,
-                    chunk_type="content",
-                    content=chunk_content,
-                    event_type=response.event_type,
-                    is_final=False,
-                )
-
-        # Send final chunk with metadata
-        yield ChatResponseChunk(
-            thread_id=response.thread_id,
-            message_id=response.message_id,
-            chunk_type="final",
-            token_count=response.token_count,
-            max_token_count=response.max_token_count,
-            topic=response.topic,
-            memory_summary=response.memory_summary,
-            followup_questions=response.followup_questions,
-            event_type=response.event_type,
-            is_final=True,
-        )
-        pass
-
-
-# Save agent response
-# agent_message_id = await self.chat_history_repository.add_message(
-#     Message(
-#         user_id=chat_request.user_id,
-#         thread_id=chat_request.thread_id,
-#         role="assistant",
-#         content=agent_response[0])
-# )
-
-# logger.debug("Agent response received", response_preview=str(agent_response)[:100])
-# _ = await self.chat_history_repository.add_memory(
-#     Message(
-#         user_id=chat_request.user_id,
-#         thread_id=chat_request.thread_id,
-#         role="memory_assistant",
-#         content=agent_response[1]),
-# )
+        async for chunk in stream_response_as_chunks(response, chunk_size):
+            yield chunk
