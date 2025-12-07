@@ -2,7 +2,7 @@
 
 ## Objective
 
-Increment the patch version (vx.x.x to vx.x.(x+1)), create a pull request, merge it, and publish a new release to GitHub and PyPI.
+Increment the patch version (vX.Y.Z to vX.Y.(Z+1)), create a pull request, merge it, and publish a new release.
 
 ## Workflow Steps
 
@@ -10,11 +10,11 @@ Increment the patch version (vx.x.x to vx.x.(x+1)), create a pull request, merge
 
 1. **Find current version**: Search for version references in:
    - `pyproject.toml` (version field)
-   - `ingenious/__init__.py` (__version__ attribute)
-   - `CLAUDE.md` (version documentation)
+   - `package.json` (version field)
+   - `src/__init__.py` or `<package>/__init__.py` (__version__ attribute)
    - Any other files containing version strings
 
-2. **Calculate new version**: Increment the patch number (e.g., v0.2.7 → v0.2.8)
+2. **Calculate new version**: Increment the patch number (e.g., v0.2.7 to v0.2.8)
 
 3. **Update all version references**: Replace all occurrences of the old version with the new version across all identified files
 
@@ -23,23 +23,20 @@ Increment the patch version (vx.x.x to vx.x.(x+1)), create a pull request, merge
 ### 2. Pull Request Creation
 
 Run the `/pr-create` command to create a pull request with:
-- **Title format**: "Bump version to vx.x.x"
-- **Description**: "Update version from vx.x.x to vx.x.x across all files"
-- Target branch: `to-stable`
+- **Title format**: "Bump version to vX.Y.Z"
+- **Description**: "Update version from vX.Y.Z to vX.Y.Z across all files"
 
 ### 3. Pull Request Merge
 
 Run the `/pr-merge` command to:
-- Merge the version bump PR to `to-stable`
-- Run complete quality assurance pipeline (pytest, pre-commit, mypy)
-- Merge `to-stable` to `main`
-- Use `--admin` flag
+- Merge the version bump PR
+- Run complete quality assurance pipeline (tests, linting, type checking)
+- Use `--admin` flag if needed
 - Preserve all commits (no squash)
-- Keep branches intact (no deletion)
 
-### 4. GitHub Release Creation
+### 4. Release Creation
 
-After successful merge to `main`:
+After successful merge:
 
 **Prepare comprehensive release notes:**
 1. Run `git log <previous-version>..HEAD --oneline` to see all commits since last release
@@ -54,9 +51,9 @@ After successful merge to `main`:
 5. Note any breaking changes or migration requirements
 
 **Create release:**
-```sh
-gh release create vx.x.x \
-  --title "Release vx.x.x" \
+```bash
+gh release create vX.Y.Z \
+  --title "Release vX.Y.Z" \
   --notes "$(cat <<'EOF'
 ## Summary
 Brief overview of release
@@ -65,7 +62,6 @@ Brief overview of release
 
 ### Features
 - Feature 1
-- Feature 2
 
 ### Improvements
 - Improvement 1
@@ -79,9 +75,6 @@ Brief overview of release
 ### Internal
 - Internal change 1
 
-## Files Modified
-List of key files changed
-
 ## Breaking Changes
 Note any breaking changes or none
 EOF
@@ -89,21 +82,21 @@ EOF
   --target main
 ```
 
-### 5. PyPI Release Verification
+### 5. Package Registry Release (if applicable)
 
-1. **Check GitHub Actions**: Verify the PyPI release workflow has been triggered
+1. **Check CI/CD**: Verify the release workflow has been triggered
 
-```sh
-gh run list --workflow=pypi-release.yml --limit 1
+```bash
+gh run list --limit 1
 ```
 
 2. **Monitor release progress**: Check the workflow status
 
-```sh
+```bash
 gh run watch
 ```
 
-3. **Verify completion**: Ensure the PyPI release action completes successfully
+3. **Verify completion**: Ensure the release action completes successfully
 
 ## Guidelines
 
@@ -114,19 +107,17 @@ gh run watch
 - Update ALL version references consistently across the codebase
 - Ensure version format consistency (with or without 'v' prefix as per existing convention)
 - Verify quality checks pass before proceeding to release
-- Confirm PyPI workflow triggers automatically after release creation
 
 ## Error Handling
 
 - If version detection fails, report the issue and request manual version specification
 - If quality checks fail during merge, resolve issues before proceeding to release
-- If PyPI workflow does not trigger, investigate GitHub Actions configuration
-- If PyPI release fails, check authentication credentials and workflow logs
+- If release workflow does not trigger, investigate CI/CD configuration
 
 ## Communication
 
 - Report current version detected
 - Confirm new version to be used
-- Show status of each step (PR creation, merge, quality checks, release, PyPI)
+- Show status of each step (PR creation, merge, quality checks, release)
 - Provide links to created PR, merged commits, and release page
 - Confirm successful completion of entire workflow
