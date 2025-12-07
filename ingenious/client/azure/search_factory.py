@@ -13,14 +13,16 @@ from ingenious.config.models import AzureSearchSettings
 
 # Optional imports with fallbacks
 try:
-    from azure.search.documents import SearchClient
-    from azure.search.documents.aio import SearchClient as AsyncSearchClient
+    from azure.search.documents import SearchClient as _SearchClient
+    from azure.search.documents.aio import SearchClient as _AsyncSearchClient
 
     HAS_SEARCH = True
+    SearchClient: Optional[type[Any]] = _SearchClient
+    AsyncSearchClient: Optional[type[Any]] = _AsyncSearchClient
 except ImportError:
+    HAS_SEARCH = False
     SearchClient = None
     AsyncSearchClient = None
-    HAS_SEARCH = False
 
 # Export HAS_SEARCH for backward compatibility
 __all__ = ["SearchClientFactory", "HAS_SEARCH"]

@@ -4,18 +4,19 @@ This module provides factory methods for creating Azure Cosmos DB clients
 with appropriate authentication methods based on configuration.
 """
 
-from typing import Any
+from typing import Any, Optional
 
 from ingenious.config.models import CosmosSettings
 
 # Optional imports with fallbacks
 try:
-    from azure.cosmos import CosmosClient
+    from azure.cosmos import CosmosClient as _CosmosClient
 
     HAS_COSMOS = True
+    CosmosClient: Optional[type[Any]] = _CosmosClient
 except ImportError:
-    CosmosClient = None
     HAS_COSMOS = False
+    CosmosClient = None
 
 # Export HAS_COSMOS for backward compatibility
 __all__ = ["CosmosDBClientFactory", "HAS_COSMOS"]
