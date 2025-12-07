@@ -171,7 +171,6 @@ class WorkflowDiscovery:
 
     def __init__(self) -> None:
         """Initialize WorkflowDiscovery with empty workflow and metadata caches."""
-        self._workflow_cache: Optional[List[str]] = None
         self._metadata_cache: Dict[str, Dict[str, Any]] = {}
 
     def discover_workflows(
@@ -233,10 +232,6 @@ class WorkflowDiscovery:
         # Convert to sorted list and cache
         result = sorted(list(workflows))
         self._workflow_caches[cache_key] = result
-
-        # Also update the old cache for backward compatibility
-        if include_builtin:
-            self._workflow_cache = result
 
         return result
 
@@ -360,7 +355,8 @@ class WorkflowDiscovery:
 
     def clear_cache(self) -> None:
         """Clear workflow discovery caches."""
-        self._workflow_cache = None
+        if hasattr(self, "_workflow_caches"):
+            self._workflow_caches.clear()
         self._metadata_cache.clear()
 
 
