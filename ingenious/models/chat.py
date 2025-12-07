@@ -77,46 +77,6 @@ class ChatResponse(IChatResponse):
     pass
 
 
-class Action(BaseModel):
-    """Action model for suggested user actions.
-
-    Attributes:
-        name: The action name.
-        description: Optional action description.
-    """
-
-    name: str
-    description: Optional[str] = None
-
-
-class KnowledgeBaseLink(BaseModel):
-    """Knowledge base link reference.
-
-    Attributes:
-        title: The link title.
-        url: The link URL.
-        description: Optional link description.
-    """
-
-    title: str
-    url: str
-    description: Optional[str] = None
-
-
-class Product(BaseModel):
-    """Product information model.
-
-    Attributes:
-        name: The product name.
-        description: Optional product description.
-        price: Optional product price.
-    """
-
-    name: str
-    description: Optional[str] = None
-    price: Optional[float] = None
-
-
 class ChatResponseChunk(BaseModel):
     """Chunk of a streaming chat response.
 
