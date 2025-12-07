@@ -12,7 +12,6 @@ import importlib
 import importlib.util
 import os
 import sys
-import warnings
 from functools import lru_cache
 from pathlib import Path
 from typing import Any, Dict, List, Optional
@@ -545,13 +544,3 @@ def clear_import_cache(pattern: Optional[str] = None) -> None:
 def get_import_stats() -> Dict[str, Any]:
     """Get import cache statistics."""
     return _global_importer.get_cache_stats()
-
-
-# Deprecation warnings for old functions
-def _deprecated_import_warning(old_func: str, new_func: str) -> None:
-    """Issue deprecation warning for old import functions."""
-    warnings.warn(
-        f"{old_func} is deprecated. Use {new_func} from ingenious.utils.imports instead.",
-        DeprecationWarning,
-        stacklevel=3,
-    )
