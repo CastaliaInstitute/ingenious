@@ -78,21 +78,6 @@ class SafeImporter:
             "ingenious",
         ]
 
-    def _get_namespace_roots(self) -> List[Path]:
-        """Get root directories for namespace searching."""
-        working_dir = Path(os.getcwd())
-        roots = [
-            working_dir / "ingenious_extensions",
-            working_dir / "ingenious" / "ingenious_extensions_template",
-        ]
-
-        # Add ingenious package root if available
-        spec = importlib.util.find_spec("ingenious")
-        if spec and spec.origin:
-            roots.append(Path(spec.origin).parent)
-
-        return roots
-
     def _ensure_path_in_sys_path(self, path: Path) -> None:
         """Ensure a path is in sys.path for importing."""
         path_str = str(path)
