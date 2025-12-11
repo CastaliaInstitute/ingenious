@@ -78,7 +78,9 @@ class ChatService(IChatService):
             config: The ingenious settings configuration.
             revision: The revision ID. Defaults to "dfe19b62-07f1-4cb5-ae9a-561a253e4b04".
         """
-        class_name = f"{chat_service_type.lower()}_chat_service"
+        class_name = (
+            "".join(word.capitalize() for word in chat_service_type.split("_")) + "ChatService"
+        )
         self.config = config
         self.revision = revision
 
