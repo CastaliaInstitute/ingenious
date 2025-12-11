@@ -1,7 +1,7 @@
 """Cosmos DB repository implementation for chat history management."""
 
 import uuid
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List
 
 from azure.cosmos import ContainerProxy, CosmosClient, PartitionKey
 
@@ -10,7 +10,7 @@ from ingenious.common.enums import AuthenticationMethod
 from ingenious.config.settings import IngeniousSettings
 from ingenious.core.structured_logging import get_logger
 from ingenious.db.chat_history_interface import IChatHistoryRepository
-from ingenious.db.chat_history_models import StepDict, Thread, ThreadDict, User
+from ingenious.db.chat_history_models import Thread, User
 from ingenious.errors import DatabaseQueryError
 from ingenious.models.message import Message
 
@@ -109,29 +109,6 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
         )
 
     # IChatHistoryRepository implementations
-    async def update_thread(
-        self,
-        thread_id: str,
-        name: Optional[str] = None,
-        user_id: Optional[str] = None,
-        metadata: Optional[Dict[str, object]] = None,
-        tags: Optional[List[str]] = None,
-    ) -> str:
-        """Update thread metadata in the repository.
-
-        Args:
-            thread_id: Unique identifier for the thread
-            name: Optional thread name
-            user_id: Optional user identifier
-            metadata: Optional metadata dictionary
-            tags: Optional list of tags
-
-        Returns:
-            Empty string (thread metadata storage is not used by Ingenious)
-        """
-        # Thread metadata storage is not used by Ingenious
-        return ""
-
     async def add_message(self, message: Message) -> str:
         """Add a message to the chat history in Cosmos DB.
 
@@ -280,21 +257,6 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
             return messages
         except Exception as e:
             raise DatabaseQueryError("Failed to get thread messages from Cosmos", cause=e)
-
-    async def get_threads_for_user(
-        self, identifier: str, thread_id: Optional[str]
-    ) -> Optional[List[ThreadDict]]:
-        """Retrieve thread metadata for a user.
-
-        Args:
-            identifier: User identifier
-            thread_id: Optional specific thread ID filter
-
-        Returns:
-            Empty list (thread metadata storage is not used by Ingenious)
-        """
-        # Thread metadata storage with steps/elements/feedbacks is not used by Ingenious
-        return []
 
     async def update_message_feedback(
         self, message_id: str, thread_id: str, positive_feedback: bool | None
@@ -599,18 +561,6 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
             return None
         except Exception as e:
             raise DatabaseQueryError("Failed to delete user memory in Cosmos", cause=e)
-
-    async def add_step(self, step_dict: StepDict) -> str:
-        """Add a step to the repository.
-
-        Args:
-            step_dict: Dictionary containing step information
-
-        Returns:
-            Step ID from the provided dictionary (step storage is not used by Ingenious)
-        """
-        # Step storage is not used by Ingenious
-        return str(step_dict.get("id", ""))
 
     async def get_thread(self, thread_id: str) -> List[Thread]:
         """Retrieve thread metadata from the repository.

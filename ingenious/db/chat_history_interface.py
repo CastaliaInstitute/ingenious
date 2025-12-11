@@ -6,26 +6,11 @@ across various database backends (SQLite, Azure SQL, Cosmos DB).
 
 from abc import ABC, abstractmethod
 from datetime import datetime, timezone
-from typing import Dict, List, Optional
 
 from ingenious.models.message import Message
 
 from .chat_history_models import (
     ChatHistory,
-    Element,
-    ElementDict,
-    ElementDisplay,
-    ElementSize,
-    ElementType,
-    Feedback,
-    FeedbackDict,
-    MessageStepType,
-    Step,
-    StepDict,
-    StepType,
-    Thread,
-    ThreadDict,
-    TrueStepType,
     User,
 )
 
@@ -33,20 +18,6 @@ from .chat_history_models import (
 __all__ = [
     "IChatHistoryRepository",
     "ChatHistory",
-    "Element",
-    "ElementDict",
-    "ElementDisplay",
-    "ElementSize",
-    "ElementType",
-    "Feedback",
-    "FeedbackDict",
-    "MessageStepType",
-    "Step",
-    "StepDict",
-    "StepType",
-    "Thread",
-    "ThreadDict",
-    "TrueStepType",
     "User",
 ]
 
@@ -74,29 +45,6 @@ class IChatHistoryRepository(ABC):
             ISO-formatted datetime string with microseconds and timezone.
         """
         return self.get_now().strftime("%Y-%m-%d %H:%M:%S.%f%z")
-
-    @abstractmethod
-    async def update_thread(
-        self,
-        thread_id: str,
-        name: Optional[str] = None,
-        user_id: Optional[str] = None,
-        metadata: Optional[Dict[str, object]] = None,
-        tags: Optional[List[str]] = None,
-    ) -> str:
-        """Update thread metadata and properties.
-
-        Args:
-            thread_id: Unique identifier for the thread.
-            name: Optional display name for the thread.
-            user_id: Optional user identifier associated with the thread.
-            metadata: Optional key-value metadata dictionary.
-            tags: Optional list of tags for categorization.
-
-        Returns:
-            The thread ID after successful update.
-        """
-        pass
 
     @abstractmethod
     async def add_message(self, message: Message) -> str:
@@ -127,21 +75,6 @@ class IChatHistoryRepository(ABC):
 
         Returns:
             List of Message objects belonging to the thread.
-        """
-        pass
-
-    @abstractmethod
-    async def get_threads_for_user(
-        self, identifier: str, thread_id: Optional[str]
-    ) -> Optional[List[ThreadDict]]:
-        """Retrieve all threads for a user, optionally filtered by thread ID.
-
-        Args:
-            identifier: User identifier to filter threads by.
-            thread_id: Optional specific thread ID to retrieve.
-
-        Returns:
-            List of ThreadDict objects for the user, or None if no threads exist.
         """
         pass
 

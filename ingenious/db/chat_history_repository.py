@@ -10,7 +10,7 @@ The implementation has been split into:
 """
 
 import importlib
-from typing import Dict, List, Optional, cast
+from typing import List, Optional, cast
 
 from ingenious.config import IngeniousSettings
 from ingenious.core.structured_logging import get_logger
@@ -21,20 +21,6 @@ from ingenious.models.message import Message
 from .chat_history_interface import IChatHistoryRepository
 from .chat_history_models import (
     ChatHistory,
-    Element,
-    ElementDict,
-    ElementDisplay,
-    ElementSize,
-    ElementType,
-    Feedback,
-    FeedbackDict,
-    MessageStepType,
-    Step,
-    StepDict,
-    StepType,
-    Thread,
-    ThreadDict,
-    TrueStepType,
     User,
     get_now,
     get_now_as_string,
@@ -48,20 +34,6 @@ __all__ = [
     "ChatHistoryRepository",
     "ChatHistory",
     "User",
-    "Thread",
-    "Step",
-    "Element",
-    "Feedback",
-    "FeedbackDict",
-    "StepDict",
-    "ThreadDict",
-    "ElementDict",
-    "TrueStepType",
-    "MessageStepType",
-    "StepType",
-    "ElementType",
-    "ElementDisplay",
-    "ElementSize",
     "get_now",
     "get_now_as_string",
 ]
@@ -95,35 +67,6 @@ class ChatHistoryRepository:
 
         self.repository = repository_class(config=config)
 
-    async def update_thread(
-        self,
-        thread_id: str,
-        name: Optional[str] = None,
-        user_id: Optional[str] = None,
-        metadata: Optional[Dict[str, object]] = None,
-        tags: Optional[List[str]] = None,
-    ) -> str:
-        """Update thread metadata and properties through the repository adapter.
-
-        Args:
-            thread_id: Unique identifier for the thread.
-            name: Optional display name for the thread.
-            user_id: Optional user identifier associated with the thread.
-            metadata: Optional key-value metadata dictionary.
-            tags: Optional list of tags for categorization.
-
-        Returns:
-            The thread ID after successful update.
-        """
-        return str(
-            await self.repository.update_thread(
-                thread_id=thread_id,
-                name=name,
-                user_id=user_id,
-                metadata=metadata,
-            )
-        )
-
     async def add_user(self, identifier: str) -> User:
         """Add a new user to the chat history database.
 
@@ -134,17 +77,6 @@ class ChatHistoryRepository:
             User object containing the created user information.
         """
         return cast(User, await self.repository.add_user(identifier))
-
-    async def add_step(self, step_dict: StepDict) -> str:
-        """Add a conversation step to the chat history.
-
-        Args:
-            step_dict: Dictionary containing step data including type, content, and metadata.
-
-        Returns:
-            Step ID as a string after successful creation.
-        """
-        return str(await self.repository.add_step(step_dict))
 
     async def get_user(self, identifier: str) -> User | None:
         """Retrieve a user by their identifier.
@@ -235,23 +167,6 @@ class ChatHistoryRepository:
             List of Message objects representing memories for the thread, or None if thread not found.
         """
         return cast(Optional[List[Message]], await self.repository.get_thread_memory(thread_id))
-
-    async def get_threads_for_user(
-        self, identifier: str, thread_id: Optional[str]
-    ) -> Optional[List[ThreadDict]]:
-        """Retrieve all threads for a user, optionally filtered by thread ID.
-
-        Args:
-            identifier: User identifier to filter threads by.
-            thread_id: Optional specific thread ID to retrieve.
-
-        Returns:
-            List of ThreadDict objects for the user, or None if no threads exist.
-        """
-        return cast(
-            Optional[List[ThreadDict]],
-            await self.repository.get_threads_for_user(identifier, thread_id),
-        )
 
     async def update_message_feedback(
         self, message_id: str, thread_id: str, positive_feedback: bool | None
