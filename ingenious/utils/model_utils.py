@@ -6,7 +6,7 @@ formats including CSV, YAML, and Markdown representations.
 
 import csv
 import io
-from typing import Any, Dict, List
+from typing import Any, Dict, List, Sequence
 
 import jsonpickle
 import yaml
@@ -121,11 +121,11 @@ def List_To_Csv(obj: List[Any], row_header_columns: List[str], name: str) -> str
     return output
 
 
-def Listable_Object_To_Csv(obj: List[object], row_type: type[BaseModel]) -> str:
+def Listable_Object_To_Csv(obj: Sequence[object], row_type: type[BaseModel]) -> str:
     """Convert a list of typed objects to CSV format with automatic header inference.
 
     Args:
-        obj: List of objects to convert.
+        obj: Sequence of objects to convert.
         row_type: The type/model of the objects in the list.
 
     Returns:

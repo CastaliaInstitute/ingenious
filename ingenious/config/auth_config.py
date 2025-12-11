@@ -7,7 +7,7 @@ and integrating with various authentication providers (Azure, Basic Auth, JWT).
 from __future__ import annotations
 
 import asyncio
-from typing import TYPE_CHECKING, Callable, Mapping, Optional, Union
+from typing import TYPE_CHECKING, Any, Callable, Coroutine, Mapping, Optional, Union
 
 from ingenious.common.enums import AuthenticationMethod
 
@@ -253,7 +253,7 @@ class AzureAuthConfig:
         except Exception:
             return None  # nosec B110 - intentional fallback to async path
 
-    def _create_aio_token_provider(self, scope: str) -> Callable[[], str]:
+    def _create_aio_token_provider(self, scope: str) -> Callable[[], Coroutine[Any, Any, str]]:
         """Create an async token provider using azure.identity.aio."""
         from azure.identity.aio import ClientSecretCredential as AioClientSecretCredential
         from azure.identity.aio import DefaultAzureCredential as AioDefaultAzureCredential
@@ -279,7 +279,9 @@ class AzureAuthConfig:
             aio_cred = AioManagedIdentityCredential(client_id=str(self.client_id))
         else:
             aio_cred = AioDefaultAzureCredential(exclude_interactive_browser_credential=True)
-        result: Callable[[], str] = get_aio_bearer_token_provider(aio_cred, scope)
+        result: Callable[[], Coroutine[Any, Any, str]] = get_aio_bearer_token_provider(
+            aio_cred, scope
+        )
         return result
 
     def to_openai_async_token_provider_or_none(
@@ -321,14 +323,14 @@ class AzureAuthConfig:
                 if loop.is_running():
                     new_loop = asyncio.new_event_loop()
                     try:
-                        result: str = new_loop.run_until_complete(coro)  # type: ignore[arg-type]
+                        result: str = new_loop.run_until_complete(coro)
                         return result
                     finally:
                         new_loop.close()
-                result = loop.run_until_complete(coro)  # type: ignore[arg-type]
+                result = loop.run_until_complete(coro)
                 return result
             except RuntimeError:
-                result = asyncio.run(coro)  # type: ignore[arg-type]
+                result = asyncio.run(coro)
                 return result
 
         return _sync_provider
