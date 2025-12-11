@@ -154,61 +154,71 @@ class azuresql_ChatHistoryRepository(BaseSQLRepository):
             return User(id=row[0], identifier=row[1], metadata=row[2], createdAt=row[3])
         return None
 
-    async def get_threads_for_user(
+    def _parse_json_field(self, value: Any, default: Any = None) -> Any:
+        """Parse a JSON field, returning default if parsing fails.
+
+        Args:
+            value: Value to parse (may be string or already parsed).
+            default: Default value to return on parse failure.
+
+        Returns:
+            Parsed value or default.
+        """
+        if not isinstance(value, str):
+            return value if value is not None else default
+        try:
+            return json.loads(value)
+        except (json.JSONDecodeError, TypeError):
+            return default if default is not None else {}
+
+    def _query_user_threads(
         self, identifier: str, thread_id: Optional[str]
-    ) -> Optional[List[ThreadDict]]:
-        """Retrieve threads associated with a user identifier.
+    ) -> list[Dict[str, Any]] | None:
+        """Query threads for a user from the database.
 
         Args:
             identifier: User identifier to query threads for.
             thread_id: Optional thread ID to filter results.
 
         Returns:
-            List of thread dictionaries for the user, or empty list. Returns None if user not found.
+            List of thread rows or None if query failed.
         """
-        # Query threads for user
+        base_query = """
+            SELECT TOP 100
+                [id] AS thread_id,
+                [createdAt] AS thread_createdat,
+                [name] AS thread_name,
+                [userId] AS user_id,
+                [userIdentifier] AS user_identifier,
+                [tags] AS thread_tags,
+                [metadata] AS thread_metadata
+            FROM threads
+            WHERE [userIdentifier] = ?{filter}
+            ORDER BY [createdAt] DESC
+        """
         if thread_id is None:
-            user_threads_query = """
-                SELECT TOP 100
-                    [id] AS thread_id,
-                    [createdAt] AS thread_createdat,
-                    [name] AS thread_name,
-                    [userId] AS user_id,
-                    [userIdentifier] AS user_identifier,
-                    [tags] AS thread_tags,
-                    [metadata] AS thread_metadata
-                FROM threads
-                WHERE [userIdentifier] = ?
-                ORDER BY [createdAt] DESC
-            """
-            user_threads = self.execute_sql(user_threads_query, [identifier])
+            query = base_query.format(filter="")
+            params = [identifier]
         else:
-            user_threads_query = """
-                SELECT TOP 100
-                    [id] AS thread_id,
-                    [createdAt] AS thread_createdat,
-                    [name] AS thread_name,
-                    [userId] AS user_id,
-                    [userIdentifier] AS user_identifier,
-                    [tags] AS thread_tags,
-                    [metadata] AS thread_metadata
-                FROM threads
-                WHERE [userIdentifier] = ? AND [id] = ?
-                ORDER BY [createdAt] DESC
-            """
-            user_threads = self.execute_sql(user_threads_query, [identifier, thread_id])
+            query = base_query.format(filter=" AND [id] = ?")
+            params = [identifier, thread_id]
 
-        if not isinstance(user_threads, list):
-            return None
-        if not user_threads:
-            return []
+        result: list[Dict[str, Any]] | None = self.execute_sql(query, params)
+        return result
 
-        # Get thread IDs for subsequent queries
-        thread_ids_list = [str(thread["thread_id"]) for thread in user_threads]
-        thread_ids_placeholders = ",".join("?" * len(thread_ids_list))
+    def _query_steps_feedbacks(
+        self, thread_ids_list: list[str], placeholders: str
+    ) -> list[Dict[str, Any]]:
+        """Query steps and feedbacks for given thread IDs.
 
-        # Query steps and feedbacks
-        steps_feedbacks_query = f"""
+        Args:
+            thread_ids_list: List of thread IDs to query.
+            placeholders: SQL placeholder string for IN clause.
+
+        Returns:
+            List of step/feedback rows.
+        """
+        query = f"""
             SELECT
                 s.[id] AS step_id,
                 s.[name] AS step_name,
@@ -233,17 +243,28 @@ class azuresql_ChatHistoryRepository(BaseSQLRepository):
                 f.[comment] AS feedback_comment,
                 f.[id] AS feedback_id
             FROM steps s LEFT JOIN feedbacks f ON s.[id] = f.[forId]
-            WHERE s.[threadId] IN ({thread_ids_placeholders})
+            WHERE s.[threadId] IN ({placeholders})
             ORDER BY s.[createdAt] ASC
         """
         try:
-            steps_feedbacks = self.execute_sql(steps_feedbacks_query, thread_ids_list)
+            return self.execute_sql(query, thread_ids_list) or []
         except Exception as e:
             logger.warning(f"Failed to fetch steps/feedbacks: {e}")
-            steps_feedbacks = []
+            return []
 
-        # Query elements
-        elements_query = f"""
+    def _query_elements(
+        self, thread_ids_list: list[str], placeholders: str
+    ) -> list[Dict[str, Any]]:
+        """Query elements for given thread IDs.
+
+        Args:
+            thread_ids_list: List of thread IDs to query.
+            placeholders: SQL placeholder string for IN clause.
+
+        Returns:
+            List of element rows.
+        """
+        query = f"""
             SELECT
                 e.[id] AS element_id,
                 e.[threadId] as element_threadid,
@@ -259,27 +280,28 @@ class azuresql_ChatHistoryRepository(BaseSQLRepository):
                 e.[forId] AS element_forid,
                 e.[mime] AS element_mime
             FROM elements e
-            WHERE e.[threadId] IN ({thread_ids_placeholders})
+            WHERE e.[threadId] IN ({placeholders})
         """
         try:
-            elements = self.execute_sql(elements_query, thread_ids_list)
+            return self.execute_sql(query, thread_ids_list) or []
         except Exception as e:
             logger.warning(f"Failed to fetch elements: {e}")
-            elements = []
+            return []
 
-        # Build thread dictionaries
+    def _build_thread_dicts(self, user_threads: list[Dict[str, Any]]) -> Dict[str, ThreadDict]:
+        """Build initial thread dictionaries from user threads.
+
+        Args:
+            user_threads: List of thread rows from database.
+
+        Returns:
+            Dictionary mapping thread IDs to ThreadDict objects.
+        """
         thread_dicts: Dict[str, ThreadDict] = {}
         for thread in user_threads:
             tid = thread["thread_id"]
             if tid is not None:
-                # Parse metadata if it's a string
-                metadata = thread.get("thread_metadata")
-                if isinstance(metadata, str):
-                    try:
-                        metadata = json.loads(metadata)
-                    except (json.JSONDecodeError, TypeError):
-                        metadata = {}
-
+                metadata = self._parse_json_field(thread.get("thread_metadata"), {})
                 thread_dicts[tid] = ThreadDict(
                     id=tid,
                     createdAt=thread["thread_createdat"],
@@ -291,90 +313,125 @@ class azuresql_ChatHistoryRepository(BaseSQLRepository):
                     steps=[],
                     elements=[],
                 )
+        return thread_dicts
 
-        # Process steps and feedbacks
-        if isinstance(steps_feedbacks, list):
-            from ingenious.db.chat_history_models import FeedbackDict
-            from ingenious.db.chat_history_models import StepDict as StepDictModel
+    def _process_steps_feedbacks(
+        self,
+        steps_feedbacks: list[Dict[str, Any]],
+        thread_dicts: Dict[str, ThreadDict],
+    ) -> None:
+        """Process steps and feedbacks into thread dictionaries.
 
-            for step_feedback in steps_feedbacks:
-                tid = step_feedback.get("step_threadid")
-                if tid is not None and tid in thread_dicts:
-                    feedback = None
-                    if step_feedback.get("feedback_value") is not None:
-                        feedback = FeedbackDict(
-                            forId=step_feedback["step_id"],
-                            id=step_feedback.get("feedback_id"),
-                            value=step_feedback["feedback_value"],
-                            comment=step_feedback.get("feedback_comment"),
-                        )
+        Args:
+            steps_feedbacks: List of step/feedback rows.
+            thread_dicts: Dictionary of thread dictionaries to populate.
+        """
+        from ingenious.db.chat_history_models import FeedbackDict
+        from ingenious.db.chat_history_models import StepDict as StepDictModel
 
-                    # Parse metadata and generation if they're strings
-                    step_metadata = step_feedback.get("step_metadata")
-                    if isinstance(step_metadata, str):
-                        try:
-                            step_metadata = json.loads(step_metadata)
-                        except (json.JSONDecodeError, TypeError):
-                            step_metadata = {}
+        for step_feedback in steps_feedbacks:
+            tid = step_feedback.get("step_threadid")
+            if tid is None or tid not in thread_dicts:
+                continue
 
-                    step_generation = step_feedback.get("step_generation")
-                    if isinstance(step_generation, str):
-                        try:
-                            step_generation = json.loads(step_generation)
-                        except (json.JSONDecodeError, TypeError):
-                            step_generation = {}
+            feedback = None
+            if step_feedback.get("feedback_value") is not None:
+                feedback = FeedbackDict(
+                    forId=step_feedback["step_id"],
+                    id=step_feedback.get("feedback_id"),
+                    value=step_feedback["feedback_value"],
+                    comment=step_feedback.get("feedback_comment"),
+                )
 
-                    step_dict = StepDictModel(
-                        id=step_feedback["step_id"],
-                        name=step_feedback["step_name"],
-                        type=step_feedback["step_type"],
-                        threadId=tid,
-                        parentId=step_feedback.get("step_parentid"),
-                        streaming=step_feedback.get("step_streaming", False),
-                        waitForAnswer=step_feedback.get("step_waitforanswer"),
-                        isError=step_feedback.get("step_iserror"),
-                        metadata=step_metadata,
-                        tags=step_feedback.get("step_tags"),
-                        input=step_feedback.get("step_input"),
-                        output=step_feedback.get("step_output"),
-                        createdAt=step_feedback.get("step_createdat"),
-                        start=step_feedback.get("step_start"),
-                        end=step_feedback.get("step_end"),
-                        generation=step_generation,
-                        showInput=step_feedback.get("step_showinput"),
-                        language=step_feedback.get("step_language"),
-                        indent=step_feedback.get("step_indent"),
-                        feedback=feedback,
-                    )
-                    thread_dicts[tid]["steps"].append(step_dict)
+            step_dict = StepDictModel(
+                id=step_feedback["step_id"],
+                name=step_feedback["step_name"],
+                type=step_feedback["step_type"],
+                threadId=tid,
+                parentId=step_feedback.get("step_parentid"),
+                streaming=step_feedback.get("step_streaming", False),
+                waitForAnswer=step_feedback.get("step_waitforanswer"),
+                isError=step_feedback.get("step_iserror"),
+                metadata=self._parse_json_field(step_feedback.get("step_metadata"), {}),
+                tags=step_feedback.get("step_tags"),
+                input=step_feedback.get("step_input", ""),
+                output=step_feedback.get("step_output", ""),
+                createdAt=step_feedback.get("step_createdat"),
+                start=step_feedback.get("step_start"),
+                end=step_feedback.get("step_end"),
+                generation=self._parse_json_field(step_feedback.get("step_generation"), {}),
+                showInput=step_feedback.get("step_showinput"),
+                language=step_feedback.get("step_language"),
+                indent=step_feedback.get("step_indent"),
+                feedback=feedback,
+            )
+            thread_dicts[tid]["steps"].append(step_dict)
 
-        # Process elements
-        if isinstance(elements, list):
-            from ingenious.db.chat_history_models import ElementDict
+    def _process_elements(
+        self, elements: list[Dict[str, Any]], thread_dicts: Dict[str, ThreadDict]
+    ) -> None:
+        """Process elements into thread dictionaries.
 
-            for element in elements:
-                tid = element.get("element_threadid")
-                if tid is not None and tid in thread_dicts:
-                    element_dict: ElementDict = {
-                        "id": element["element_id"],
-                        "threadId": tid,
-                        "type": element.get("element_type"),
-                        "chainlitKey": element.get("element_chainlitkey"),
-                        "url": element.get("element_url"),
-                        "objectKey": element.get("element_objectkey"),
-                        "name": element.get("element_name"),
-                        "display": element.get("element_display"),
-                        "size": element.get("element_size"),
-                        "language": element.get("element_language"),
-                        "page": element.get("element_page"),
-                        "forId": element.get("element_forid"),
-                        "mime": element.get("element_mime"),
-                        "autoPlay": element.get("element_autoplay"),
-                        "playerConfig": element.get("element_playerconfig"),
-                    }
-                    elements_list = thread_dicts[tid].get("elements")
-                    if elements_list is not None:
-                        elements_list.append(element_dict)
+        Args:
+            elements: List of element rows.
+            thread_dicts: Dictionary of thread dictionaries to populate.
+        """
+        from ingenious.db.chat_history_models import ElementDict
+
+        for element in elements:
+            tid = element.get("element_threadid")
+            if tid is None or tid not in thread_dicts:
+                continue
+
+            element_dict: ElementDict = {
+                "id": element["element_id"],
+                "threadId": tid,
+                "type": element.get("element_type", "file"),
+                "chainlitKey": element.get("element_chainlitkey"),
+                "url": element.get("element_url"),
+                "objectKey": element.get("element_objectkey"),
+                "name": element.get("element_name", ""),
+                "display": element.get("element_display", "inline"),
+                "size": element.get("element_size"),
+                "language": element.get("element_language"),
+                "page": element.get("element_page"),
+                "forId": element.get("element_forid"),
+                "mime": element.get("element_mime"),
+                "autoPlay": element.get("element_autoplay"),
+                "playerConfig": element.get("element_playerconfig"),
+            }
+            elements_list = thread_dicts[tid].get("elements")
+            if elements_list is not None:
+                elements_list.append(element_dict)
+
+    async def get_threads_for_user(
+        self, identifier: str, thread_id: Optional[str]
+    ) -> Optional[List[ThreadDict]]:
+        """Retrieve threads associated with a user identifier.
+
+        Args:
+            identifier: User identifier to query threads for.
+            thread_id: Optional thread ID to filter results.
+
+        Returns:
+            List of thread dictionaries for the user, or empty list. Returns None if user not found.
+        """
+        user_threads = self._query_user_threads(identifier, thread_id)
+
+        if not isinstance(user_threads, list):
+            return None
+        if not user_threads:
+            return []
+
+        thread_ids_list = [str(thread["thread_id"]) for thread in user_threads]
+        placeholders = ",".join("?" * len(thread_ids_list))
+
+        steps_feedbacks = self._query_steps_feedbacks(thread_ids_list, placeholders)
+        elements = self._query_elements(thread_ids_list, placeholders)
+
+        thread_dicts = self._build_thread_dicts(user_threads)
+        self._process_steps_feedbacks(steps_feedbacks, thread_dicts)
+        self._process_elements(elements, thread_dicts)
 
         return list(thread_dicts.values())
 

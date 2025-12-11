@@ -1,5 +1,6 @@
 """Multi-agent chat service core implementation."""
 
+import inspect
 import uuid as uuid_module
 from abc import ABC, abstractmethod
 from typing import TYPE_CHECKING, Any, AsyncIterator, Optional, cast
@@ -14,7 +15,8 @@ from ingenious.core.structured_logging import get_logger
 from ingenious.db.chat_history_repository import ChatHistoryRepository
 from ingenious.errors.content_filter_error import ContentFilterError
 from ingenious.files.files_repository import FileStorage
-from ingenious.models.chat import ChatResponseChunk, IChatRequest, IChatResponse
+from ingenious.models.chat import ChatResponse, ChatResponseChunk, IChatRequest, IChatResponse
+from ingenious.models.message import Message
 from ingenious.utils.imports import import_class_with_fallback
 from ingenious.utils.namespace_utils import normalize_workflow_name
 
@@ -107,6 +109,240 @@ class MultiAgentChatService:
                 "OpenAI service not properly configured. Please ensure the service is initialized with proper dependencies."
             )
 
+    def _build_thread_memory(
+        self, thread_messages: list[Any] | None, max_messages: int = 10
+    ) -> str:
+        """Build thread memory from recent messages.
+
+        Args:
+            thread_messages: List of message objects from thread history.
+            max_messages: Maximum number of recent messages to include.
+
+        Returns:
+            Formatted memory string or default message if no history.
+        """
+        if not thread_messages:
+            return "no existing context."
+
+        memory_parts = []
+        for msg in thread_messages[-max_messages:]:
+            content = msg.content or ""
+            memory_parts.append(f"{msg.role}: {content[:200]}...")
+        return "\n".join(memory_parts)
+
+    def _validate_thread_messages(self, thread_messages: list[Any] | None) -> None:
+        """Validate thread messages for content filter violations.
+
+        Args:
+            thread_messages: List of message objects to validate.
+
+        Raises:
+            ContentFilterError: If any message contains content filter results.
+        """
+        for thread_message in thread_messages or []:
+            if thread_message.content_filter_results:
+                raise ContentFilterError(
+                    content_filter_results=thread_message.content_filter_results
+                )
+
+    def _append_thread_history(
+        self, chat_request: IChatRequest, thread_messages: list[Any] | None
+    ) -> None:
+        """Append thread messages to chat request history.
+
+        Args:
+            chat_request: The chat request to update.
+            thread_messages: List of message objects to append.
+        """
+        if not hasattr(chat_request, "thread_chat_history") or not chat_request.thread_chat_history:
+            return
+
+        for thread_message in thread_messages or []:
+            chat_request.thread_chat_history.append(
+                {"role": thread_message.role, "content": thread_message.content or ""}
+            )
+
+    def _load_conversation_flow_class(self, flow_name: str) -> type:
+        """Load conversation flow class dynamically.
+
+        Args:
+            flow_name: The conversation flow name.
+
+        Returns:
+            The loaded conversation flow class.
+        """
+        normalized_flow = normalize_workflow_name(flow_name)
+        module_name = f"services.chat_services.multi_agent.conversation_flows.{normalized_flow}.{normalized_flow}"
+        class_name = "ConversationFlow"
+
+        logger.debug(
+            "Loading conversation flow module",
+            module_name=module_name,
+            class_name=class_name,
+            original_workflow=flow_name,
+            normalized_workflow=normalized_flow,
+            operation="module_loading",
+        )
+
+        return import_class_with_fallback(module_name, class_name)
+
+    async def _invoke_new_pattern(
+        self, flow_class: type, chat_request: IChatRequest
+    ) -> IChatResponse:
+        """Invoke conversation flow using new IConversationFlow pattern.
+
+        Args:
+            flow_class: The conversation flow class.
+            chat_request: The chat request.
+
+        Returns:
+            The conversation response.
+        """
+        instance = flow_class(parent_multi_agent_chat_service=self)
+        return await instance.get_conversation_response(chat_request=chat_request)
+
+    async def _invoke_static_pattern(
+        self, flow_class: type, chat_request: IChatRequest
+    ) -> IChatResponse:
+        """Invoke conversation flow using legacy static method pattern.
+
+        Args:
+            flow_class: The conversation flow class.
+            chat_request: The chat request.
+
+        Returns:
+            Normalized IChatResponse from various response formats.
+        """
+        logger.info(
+            "Using static method pattern for conversation flow",
+            conversation_flow=self.conversation_flow,
+            operation="fallback_static_method",
+        )
+
+        flow_cls: Any = cast(Any, flow_class)
+        sig = inspect.signature(flow_cls.get_conversation_response)
+        params = list(sig.parameters.keys())
+
+        logger.debug(
+            "Analyzing method signature",
+            parameters=params,
+            param_count=len(params),
+            operation="method_signature_analysis",
+        )
+
+        if len(params) == 1 and params[0] not in ["self", "cls"]:
+            response_task = flow_cls.get_conversation_response(chat_request)
+        else:
+            response_task = flow_cls.get_conversation_response(
+                message=chat_request.user_prompt,
+                topics=chat_request.topic
+                if isinstance(chat_request.topic, list)
+                else ([chat_request.topic] if chat_request.topic else []),
+                thread_memory=getattr(chat_request, "thread_memory", ""),
+                memory_record_switch=getattr(chat_request, "memory_record", True),
+                thread_chat_history=getattr(chat_request, "thread_chat_history", []),
+            )
+
+        agent_response_tuple = await response_task
+        return self._normalize_response(agent_response_tuple, chat_request)
+
+    def _normalize_response(self, response: Any, chat_request: IChatRequest) -> IChatResponse:
+        """Normalize various response formats to IChatResponse.
+
+        Args:
+            response: The raw response (ChatResponse, tuple, or other).
+            chat_request: The original chat request.
+
+        Returns:
+            Normalized IChatResponse object.
+        """
+        if isinstance(response, ChatResponse):
+            return response
+
+        if isinstance(response, tuple) and len(response) == 2:
+            response_text, memory_summary = response
+            return ChatResponse(
+                thread_id=chat_request.thread_id,
+                message_id=str(uuid_module.uuid4()),
+                agent_response=response_text,
+                token_count=0,
+                max_token_count=0,
+                memory_summary=memory_summary,
+            )
+
+        return ChatResponse(
+            thread_id=chat_request.thread_id,
+            message_id=str(uuid_module.uuid4()),
+            agent_response=str(response),
+            token_count=0,
+            max_token_count=0,
+            memory_summary="",
+        )
+
+    async def _save_chat_history(
+        self, chat_request: IChatRequest, agent_response: IChatResponse
+    ) -> None:
+        """Save chat history including user message, agent response, and memory.
+
+        Args:
+            chat_request: The original chat request.
+            agent_response: The agent's response to save.
+        """
+        if not chat_request.user_id or not chat_request.thread_id:
+            return
+
+        try:
+            user_message_id = await self.chat_history_repository.add_message(
+                Message(
+                    user_id=chat_request.user_id,
+                    thread_id=chat_request.thread_id,
+                    role="user",
+                    content=chat_request.user_prompt,
+                )
+            )
+            logger.info(
+                "Saved user message",
+                message_id=user_message_id,
+                thread_id=chat_request.thread_id,
+            )
+
+            agent_message_id = await self.chat_history_repository.add_message(
+                Message(
+                    user_id=chat_request.user_id,
+                    thread_id=chat_request.thread_id,
+                    role="assistant",
+                    content=agent_response.agent_response,
+                )
+            )
+            logger.info(
+                "Saved agent message",
+                message_id=agent_message_id,
+                thread_id=chat_request.thread_id,
+            )
+
+            if hasattr(agent_response, "memory_summary") and agent_response.memory_summary:
+                memory_id = await self.chat_history_repository.add_memory(
+                    Message(
+                        user_id=chat_request.user_id,
+                        thread_id=chat_request.thread_id,
+                        role="memory_assistant",
+                        content=agent_response.memory_summary,
+                    )
+                )
+                logger.info(
+                    "Saved memory",
+                    memory_id=memory_id,
+                    thread_id=chat_request.thread_id,
+                )
+        except Exception as e:
+            logger.error(
+                "Failed to save chat history",
+                thread_id=chat_request.thread_id,
+                user_id=chat_request.user_id,
+                error=str(e),
+                exc_info=True,
+            )
+
     async def get_chat_response(self, chat_request: IChatRequest) -> IChatResponse:
         """Process a chat request and return the agent's response.
 
@@ -126,27 +362,16 @@ class MultiAgentChatService:
         if isinstance(chat_request.topic, str):
             chat_request.topic = [topic.strip() for topic in chat_request.topic.split(",")]
 
-        # Initialize additional response fields - to be populated later
         chat_request.thread_chat_history = [{"role": "user", "content": ""}]
-        # thread_memory = ""
 
-        # Check if thread exists
         if not chat_request.thread_id:
             chat_request.thread_id = str(uuid_module.uuid4())
 
-        # Get thread messages & add to messages list
+        # Process thread history
         thread_messages = await self.chat_history_repository.get_thread_messages(
             chat_request.thread_id
         )
-        # Build thread memory from messages
-        if thread_messages:
-            memory_parts = []
-            for msg in thread_messages[-10:]:  # Use last 10 messages
-                content = msg.content or ""
-                memory_parts.append(f"{msg.role}: {content[:200]}...")
-            chat_request.thread_memory = "\n".join(memory_parts)
-        else:
-            chat_request.thread_memory = "no existing context."
+        chat_request.thread_memory = self._build_thread_memory(thread_messages)
 
         logger.info(
             "Current memory state",
@@ -159,165 +384,55 @@ class MultiAgentChatService:
             operation="process_thread_context",
         )
 
-        for thread_message in thread_messages or []:
-            # Validate user_id
-            # if thread_message.user_id != chat_request.user_id:
-            #     raise ValueError("User ID does not match thread messages.")
+        self._validate_thread_messages(thread_messages)
+        self._append_thread_history(chat_request, thread_messages)
 
-            # Validate content_filter_results not present
-            if thread_message.content_filter_results:
-                raise ContentFilterError(
-                    content_filter_results=thread_message.content_filter_results
-                )
+        # Execute conversation flow
+        agent_response = await self._execute_conversation_flow(chat_request)
 
-            if hasattr(chat_request, "thread_chat_history") and chat_request.thread_chat_history:
-                chat_request.thread_chat_history.append(
-                    {"role": thread_message.role, "content": thread_message.content or ""}
-                )
+        # Save chat history if memory_record is enabled
+        if getattr(chat_request, "memory_record", True):
+            await self._save_chat_history(chat_request, agent_response)
+
+        return agent_response
+
+    async def _execute_conversation_flow(self, chat_request: IChatRequest) -> IChatResponse:
+        """Execute the conversation flow and return the response.
+
+        Args:
+            chat_request: The chat request to process.
+
+        Returns:
+            The agent's response.
+
+        Raises:
+            ValueError: If conversation flow is not set.
+        """
+        logger.info(
+            "Starting conversation flow execution",
+            conversation_flow=self.conversation_flow,
+            operation="conversation_flow_start",
+        )
+
+        if not self.conversation_flow:
+            self.conversation_flow = chat_request.conversation_flow or ""
+        if not self.conversation_flow:
+            raise ValueError(f"conversation_flow4 not set {chat_request}")
 
         try:
-            # call specific agent flow here and get final response
-            logger.info(
-                "Starting conversation flow execution",
-                conversation_flow=self.conversation_flow,
-                operation="conversation_flow_start",
-            )
-            if not self.conversation_flow:
-                self.conversation_flow = chat_request.conversation_flow
-            if not self.conversation_flow:
-                raise ValueError(f"conversation_flow4 not set {chat_request}")
-
-            # Normalize workflow name to support both hyphenated and underscored formats
-            normalized_flow = normalize_workflow_name(self.conversation_flow)
-            module_name = f"services.chat_services.multi_agent.conversation_flows.{normalized_flow}.{normalized_flow}"
-            class_name = "ConversationFlow"
-            logger.debug(
-                "Loading conversation flow module",
-                module_name=module_name,
-                class_name=class_name,
-                original_workflow=self.conversation_flow,
-                normalized_workflow=normalized_flow,
-                operation="module_loading",
-            )
-
-            conversation_flow_service_class = import_class_with_fallback(module_name, class_name)
+            conversation_flow_class = self._load_conversation_flow_class(self.conversation_flow)
             logger.info(
                 "Successfully loaded conversation flow class",
-                class_type=str(type(conversation_flow_service_class)),
+                class_type=str(type(conversation_flow_class)),
                 conversation_flow=self.conversation_flow,
                 operation="class_loading_success",
             )
 
-            # Try to instantiate with new pattern first (IConversationFlow)
+            # Try new pattern first, fall back to static pattern
             try:
-                # Check if it's the new pattern by trying to instantiate with parent service
-                conversation_flow_service_class_instance = conversation_flow_service_class(
-                    parent_multi_agent_chat_service=self
-                )
-
-                response_task = conversation_flow_service_class_instance.get_conversation_response(
-                    chat_request=chat_request
-                )
-
-                agent_response = await response_task
-
-            except TypeError as te:
-                # Fall back to old pattern (static methods)
-                logger.info(
-                    "Using static method pattern for conversation flow",
-                    conversation_flow=self.conversation_flow,
-                    type_error=str(te),
-                    operation="fallback_static_method",
-                )
-
-                # Try different static method signatures
-                import inspect
-
-                # Dynamic method access - cast to Any for inspect
-                flow_class: Any = cast(Any, conversation_flow_service_class)
-                sig = inspect.signature(flow_class.get_conversation_response)
-                params = list(sig.parameters.keys())
-                logger.debug(
-                    "Analyzing method signature",
-                    parameters=params,
-                    param_count=len(params),
-                    operation="method_signature_analysis",
-                )
-
-                if len(params) == 1 and params[0] not in ["self", "cls"]:
-                    # Single parameter - likely ChatRequest
-                    logger.debug(
-                        "Using single ChatRequest parameter",
-                        operation="single_param_call",
-                    )
-                    response_task = flow_class.get_conversation_response(chat_request)
-                else:
-                    # Multiple parameters - individual arguments
-                    logger.debug("Using individual parameters", operation="multi_param_call")
-                    response_task = flow_class.get_conversation_response(
-                        message=chat_request.user_prompt,
-                        topics=chat_request.topic
-                        if isinstance(chat_request.topic, list)
-                        else ([chat_request.topic] if chat_request.topic else []),
-                        thread_memory=getattr(chat_request, "thread_memory", ""),
-                        memory_record_switch=getattr(chat_request, "memory_record", True),
-                        thread_chat_history=getattr(chat_request, "thread_chat_history", []),
-                    )
-
-                logger.debug("Awaiting conversation flow response", operation="response_await")
-                agent_response_tuple = await response_task
-                logger.debug(
-                    "Received conversation flow response",
-                    response_type=str(type(agent_response_tuple)),
-                    operation="response_received",
-                )
-
-                # Convert old response format to new format
-                from ingenious.models.chat import ChatResponse
-
-                logger.debug(
-                    "Creating ChatResponse object",
-                    uuid_module_available=uuid_module is not None,
-                    operation="chat_response_creation",
-                )
-
-                # Handle different response types
-                if isinstance(agent_response_tuple, ChatResponse):
-                    # Already a ChatResponse object
-                    logger.debug(
-                        "Response is already ChatResponse format",
-                        operation="response_format_check",
-                    )
-                    agent_response = agent_response_tuple
-                elif isinstance(agent_response_tuple, tuple) and len(agent_response_tuple) == 2:
-                    # Tuple response (response_text, memory_summary)
-                    logger.debug(
-                        "Converting tuple response to ChatResponse",
-                        operation="tuple_conversion",
-                    )
-                    response_text, memory_summary = agent_response_tuple
-                    agent_response = ChatResponse(
-                        thread_id=chat_request.thread_id,
-                        message_id=str(uuid_module.uuid4()),
-                        agent_response=response_text,
-                        token_count=0,
-                        max_token_count=0,
-                        memory_summary=memory_summary,
-                    )
-                else:
-                    # Handle single response case
-                    logger.debug(
-                        "Converting single response to ChatResponse",
-                        operation="single_response_conversion",
-                    )
-                    agent_response = ChatResponse(
-                        thread_id=chat_request.thread_id,
-                        message_id=str(uuid_module.uuid4()),
-                        agent_response=str(agent_response_tuple),
-                        token_count=0,
-                        max_token_count=0,
-                        memory_summary="",
-                    )
+                return await self._invoke_new_pattern(conversation_flow_class, chat_request)
+            except TypeError:
+                return await self._invoke_static_pattern(conversation_flow_class, chat_request)
 
         except Exception as e:
             logger.error(
@@ -326,72 +441,7 @@ class MultiAgentChatService:
                 error=str(e),
                 exc_info=True,
             )
-            raise e
-
-        # Save chat history if memory_record is enabled
-        if getattr(chat_request, "memory_record", True):
-            try:
-                # Save user message
-                if chat_request.user_id and chat_request.thread_id:
-                    from ingenious.models.message import Message
-
-                    user_message_id = await self.chat_history_repository.add_message(
-                        Message(
-                            user_id=chat_request.user_id,
-                            thread_id=chat_request.thread_id,
-                            role="user",
-                            content=chat_request.user_prompt,
-                        )
-                    )
-                    logger.info(
-                        "Saved user message",
-                        message_id=user_message_id,
-                        thread_id=chat_request.thread_id,
-                    )
-
-                    # Save agent response
-                    agent_message_id = await self.chat_history_repository.add_message(
-                        Message(
-                            user_id=chat_request.user_id,
-                            thread_id=chat_request.thread_id,
-                            role="assistant",
-                            content=agent_response.agent_response,
-                        )
-                    )
-                    logger.info(
-                        "Saved agent message",
-                        message_id=agent_message_id,
-                        thread_id=chat_request.thread_id,
-                    )
-
-                    # Save memory summary if available
-                    if hasattr(agent_response, "memory_summary") and agent_response.memory_summary:
-                        memory_id = await self.chat_history_repository.add_memory(
-                            Message(
-                                user_id=chat_request.user_id,
-                                thread_id=chat_request.thread_id,
-                                role="memory_assistant",
-                                content=agent_response.memory_summary,
-                            )
-                        )
-                        logger.info(
-                            "Saved memory",
-                            memory_id=memory_id,
-                            thread_id=chat_request.thread_id,
-                        )
-
-            except Exception as e:
-                logger.error(
-                    "Failed to save chat history",
-                    thread_id=chat_request.thread_id,
-                    user_id=chat_request.user_id,
-                    error=str(e),
-                    exc_info=True,
-                )
-                # Continue execution even if database save fails
-                # This ensures the chat response is still returned to the user
-
-        return agent_response
+            raise
 
     async def get_streaming_chat_response(
         self, chat_request: IChatRequest
