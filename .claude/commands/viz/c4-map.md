@@ -206,14 +206,51 @@ Parameters:
 
 ## After All Subagents Complete
 
-Create the `codemap/` folder and write each level to a separate file.
+Create the `codemap/` folder structure organized by C4 level and write PlantUML diagrams to separate .puml files.
 
-### Step 1: Create folder
+### Step 1: Create folder structure
 ```bash
-mkdir -p codemap
+mkdir -p codemap/level1-context codemap/level2-containers codemap/level3-components codemap/level4-code
 ```
 
-### Step 2: Write files
+### Step 2: Write PlantUML files
+
+Extract the PlantUML diagram code from each subagent and write to .puml files in the appropriate level folder:
+
+**Level 1 - System Context:**
+- `codemap/level1-context/context.puml` - Write the @startuml...@enduml block from Subagent 1
+
+**Level 2 - Containers:**
+- `codemap/level2-containers/containers.puml` - Write the @startuml...@enduml block from Subagent 2
+
+**Level 3 - Components:**
+- `codemap/level3-components/components-api.puml` - Write API component diagram from Subagent 3
+- `codemap/level3-components/components-services.puml` - Write services component diagram from Subagent 3
+- `codemap/level3-components/components-data.puml` - Write data layer component diagram from Subagent 3
+- `codemap/level3-components/components-infrastructure.puml` - Write infrastructure component diagram from Subagent 3
+- `codemap/level3-components/components-external.puml` - Write external clients component diagram from Subagent 3
+
+**Level 4 - Code:**
+- `codemap/level4-code/code-*.puml` - Write class diagrams from Subagent 4 (one per major component)
+
+### Step 3: Generate PNG exports
+
+Generate PNG images from all PlantUML files using the PlantUML CLI:
+
+```bash
+# Generate PNGs for all levels (outputs to same directory as .puml files)
+plantuml -tpng codemap/level1-context/*.puml
+plantuml -tpng codemap/level2-containers/*.puml
+plantuml -tpng codemap/level3-components/*.puml
+plantuml -tpng codemap/level4-code/*.puml
+```
+
+If PlantUML CLI is not available, note this in the output and provide instructions:
+- Install via: `brew install plantuml` (macOS) or `apt install plantuml` (Linux)
+- Or use VS Code PlantUML extension to export PNGs manually
+- Or use online renderer: https://www.plantuml.com/plantuml/uml/
+
+### Step 4: Write markdown documentation files
 
 **codemap/README.md**
 ```markdown
@@ -223,30 +260,62 @@ mkdir -p codemap
 
 Overview of [Project Name] architecture using the C4 model.
 
+## Folder Structure
+
+```
+codemap/
+├── README.md
+├── level1-context/
+│   ├── context.puml
+│   ├── context.png
+│   └── context.md
+├── level2-containers/
+│   ├── containers.puml
+│   ├── containers.png
+│   └── containers.md
+├── level3-components/
+│   ├── components-*.puml
+│   ├── components-*.png
+│   └── components.md
+└── level4-code/
+    ├── code-*.puml
+    ├── code-*.png
+    └── code.md
+```
+
 ## Contents
 
-- [context.md](./context.md) - System context and external integrations
-- [containers.md](./containers.md) - Deployable units and technology stack
-- [components.md](./components.md) - Internal modules and dependencies
-- [code.md](./code.md) - Key classes and design patterns
-
-## Quick Navigation
-
-| Level | Scope | File |
-|-------|-------|------|
-| 1 | System Context | context.md |
-| 2 | Containers | containers.md |
-| 3 | Components | components.md |
-| 4 | Code | code.md |
+| Level | Scope | Documentation | Diagram | Image |
+|-------|-------|---------------|---------|-------|
+| 1 | System Context | [context.md](./level1-context/context.md) | [context.puml](./level1-context/context.puml) | [context.png](./level1-context/context.png) |
+| 2 | Containers | [containers.md](./level2-containers/containers.md) | [containers.puml](./level2-containers/containers.puml) | [containers.png](./level2-containers/containers.png) |
+| 3 | Components | [components.md](./level3-components/components.md) | level3-components/*.puml | level3-components/*.png |
+| 4 | Code | [code.md](./level4-code/code.md) | level4-code/*.puml | level4-code/*.png |
 
 ## Technology Stack
 [Summary from Subagent 2]
 
 ## Key Files
 [Combined file path list from all subagents]
+
+## Rendering Diagrams
+
+PlantUML diagrams can be rendered using:
+- VS Code PlantUML extension
+- Online: https://www.plantuml.com/plantuml/uml/
+- CLI: `plantuml -tpng codemap/**/*.puml`
+
+## Regenerating PNG Exports
+
+```bash
+plantuml -tpng codemap/level1-context/*.puml
+plantuml -tpng codemap/level2-containers/*.puml
+plantuml -tpng codemap/level3-components/*.puml
+plantuml -tpng codemap/level4-code/*.puml
+```
 ```
 
-**codemap/context.md**
+**codemap/level1-context/context.md**
 ```markdown
 # Level 1: System Context
 
@@ -256,7 +325,9 @@ Overview of [Project Name] architecture using the C4 model.
 
 ## Diagram
 
-[Subagent 1 C4-PlantUML Context diagram]
+![System Context](./context.png)
+
+Source: [context.puml](./context.puml)
 
 ## External Systems
 
@@ -269,7 +340,7 @@ Overview of [Project Name] architecture using the C4 model.
 [Description of data entering/leaving the system]
 ```
 
-**codemap/containers.md**
+**codemap/level2-containers/containers.md**
 ```markdown
 # Level 2: Containers
 
@@ -279,7 +350,9 @@ Overview of [Project Name] architecture using the C4 model.
 
 ## Diagram
 
-[Subagent 2 C4-PlantUML Container diagram]
+![Containers](./containers.png)
+
+Source: [containers.puml](./containers.puml)
 
 ## Container Details
 
@@ -292,7 +365,7 @@ Overview of [Project Name] architecture using the C4 model.
 [Inter-container protocols and patterns]
 ```
 
-**codemap/components.md**
+**codemap/level3-components/components.md**
 ```markdown
 # Level 3: Components
 
@@ -302,7 +375,27 @@ Overview of [Project Name] architecture using the C4 model.
 
 ## Diagrams
 
-[Subagent 3 C4-PlantUML Component diagrams - one per container]
+Component diagrams are split by area:
+
+### API Layer
+![API Components](./components-api.png)
+Source: [components-api.puml](./components-api.puml)
+
+### Services Layer
+![Services Components](./components-services.png)
+Source: [components-services.puml](./components-services.puml)
+
+### Data Layer
+![Data Components](./components-data.png)
+Source: [components-data.puml](./components-data.puml)
+
+### Infrastructure
+![Infrastructure Components](./components-infrastructure.png)
+Source: [components-infrastructure.puml](./components-infrastructure.puml)
+
+### External Clients
+![External Components](./components-external.png)
+Source: [components-external.puml](./components-external.puml)
 
 ## Component Responsibilities
 
@@ -315,7 +408,7 @@ Overview of [Project Name] architecture using the C4 model.
 [Internal dependency map]
 ```
 
-**codemap/code.md**
+**codemap/level4-code/code.md**
 ```markdown
 # Level 4: Code
 
@@ -325,7 +418,7 @@ Overview of [Project Name] architecture using the C4 model.
 
 ## Class Diagrams
 
-[Subagent 4 PlantUML class diagrams]
+Class diagrams are split by component area. See code-*.puml and code-*.png files in this folder.
 
 ## Design Patterns
 
@@ -340,11 +433,14 @@ Overview of [Project Name] architecture using the C4 model.
 | ... | ... | ... |
 ```
 
-### Step 3: Confirm output
+### Step 5: Confirm output
 
-After writing all files, list the codemap folder:
+After writing all files, list the codemap folder structure:
 ```bash
-ls -la codemap/
+find codemap -type f | sort
 ```
 
-Output confirmation message with file locations.
+Output confirmation message with:
+- File locations organized by level
+- Instructions for rendering diagrams
+- Note if PNG generation succeeded or needs manual action

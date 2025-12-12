@@ -14,11 +14,11 @@ Run these commands to identify what changed:
 
 ```bash
 # Get last modified date of C4 model
-ls -la codemap/
+find codemap -type f -name "*.puml" -o -name "*.md" | head -20
 
 # Find files changed since C4 model was created
 # Use the oldest codemap file's date as reference
-find . -type f \( -name "*.ts" -o -name "*.js" -o -name "*.py" -o -name "*.go" \) -newer codemap/context.md 2>/dev/null | grep -v node_modules | grep -v __pycache__
+find . -type f \( -name "*.ts" -o -name "*.js" -o -name "*.py" -o -name "*.go" \) -newer codemap/level1-context/context.md 2>/dev/null | grep -v node_modules | grep -v __pycache__
 ```
 
 Also check git history:
@@ -34,24 +34,24 @@ git diff --name-status <commit_hash>..HEAD -- . ':!codemap'
 
 Group the changed files by impact level:
 
-**Context-level changes** (affects `codemap/context.md`):
+**Context-level changes** (affects `codemap/level1-context/`):
 - New external integrations added
 - External services removed
 - New user types or actors
 
-**Container-level changes** (affects `codemap/containers.md`):
+**Container-level changes** (affects `codemap/level2-containers/`):
 - New services/applications added
 - Services removed or merged
 - Technology stack changes (new frameworks, databases)
 - New inter-service communication
 
-**Component-level changes** (affects `codemap/components.md`):
+**Component-level changes** (affects `codemap/level3-components/`):
 - New modules/packages added
 - Modules removed or renamed
 - Component responsibility changes
 - New dependencies between components
 
-**Code-level changes** (affects `codemap/code.md`):
+**Code-level changes** (affects `codemap/level4-code/`):
 - New key classes added
 - Class hierarchy changes
 - New design patterns introduced
@@ -73,7 +73,7 @@ Parameters:
     CHANGED FILES: [insert list from Step 1]
 
     EXPLORATION GOALS:
-    1. Read the current codemap/context.md to understand existing state
+    1. Read the current codemap/level1-context/context.md to understand existing state
     2. Analyze the changed files for:
        - New external service integrations (HTTP clients, SDKs)
        - Removed external dependencies
@@ -105,7 +105,7 @@ Parameters:
     CHANGED FILES: [insert list from Step 1]
 
     EXPLORATION GOALS:
-    1. Read the current codemap/containers.md to understand existing state
+    1. Read the current codemap/level2-containers/containers.md to understand existing state
     2. Analyze the changed files for:
        - New services or applications added
        - Services removed or consolidated
@@ -138,7 +138,7 @@ Parameters:
     CHANGED FILES: [insert list from Step 1]
 
     EXPLORATION GOALS:
-    1. Read the current codemap/components.md to understand existing state
+    1. Read the current codemap/level3-components/components.md to understand existing state
     2. Analyze the changed files for:
        - New modules or packages created
        - Modules removed or renamed
@@ -171,7 +171,7 @@ Parameters:
     CHANGED FILES: [insert list from Step 1]
 
     EXPLORATION GOALS:
-    1. Read the current codemap/code.md to understand existing state
+    1. Read the current codemap/level4-code/code.md to understand existing state
     2. Analyze the changed files for:
        - New key classes or interfaces
        - Changed class hierarchies
@@ -196,22 +196,48 @@ Parameters:
 
 For each subagent that returns updates:
 
-1. Read the current file from `codemap/`
-2. Apply the changes
-3. Add update timestamp to the file header
+1. Update the .puml diagram files with new PlantUML code
+2. Update the corresponding .md documentation file
+3. Add update timestamp to file headers
 
-Update format for each file:
+**PlantUML files to update:**
+- `codemap/level1-context/context.puml` - Context level diagram
+- `codemap/level2-containers/containers.puml` - Container level diagram
+- `codemap/level3-components/components-*.puml` - Component level diagrams
+- `codemap/level4-code/code-*.puml` - Code level class diagrams
+
+**Markdown files to update:**
+- `codemap/level1-context/context.md` - Context documentation
+- `codemap/level2-containers/containers.md` - Container documentation
+- `codemap/level3-components/components.md` - Component documentation
+- `codemap/level4-code/code.md` - Code documentation
+
+Update format for markdown files:
 ```markdown
 <!-- Last updated: YYYY-MM-DD -->
 <!-- Changes: brief summary of what changed -->
 ```
 
-### Step 5: Update Index
+### Step 5: Regenerate PNG Exports
+
+After updating .puml files, regenerate the PNG exports:
+
+```bash
+# Regenerate PNGs for updated levels
+plantuml -tpng codemap/level1-context/*.puml
+plantuml -tpng codemap/level2-containers/*.puml
+plantuml -tpng codemap/level3-components/*.puml
+plantuml -tpng codemap/level4-code/*.puml
+```
+
+If PlantUML CLI is not available, note this in the output and provide instructions for manual PNG generation.
+
+### Step 6: Update Index
 
 Update `codemap/README.md` with:
 - New last-updated timestamp
 - Summary of changes made
-- List of files modified
+- List of files modified (both .puml, .png, and .md)
 
 ## Output
 
@@ -221,10 +247,18 @@ After updates are applied, output:
 # C4 Update Summary
 
 ## Files Modified
-- [ ] codemap/context.md - [changes or "no changes"]
-- [ ] codemap/containers.md - [changes or "no changes"]
-- [ ] codemap/components.md - [changes or "no changes"]
-- [ ] codemap/code.md - [changes or "no changes"]
+- [ ] codemap/level1-context/context.puml - [changes or "no changes"]
+- [ ] codemap/level1-context/context.png - [regenerated or "no changes"]
+- [ ] codemap/level1-context/context.md - [changes or "no changes"]
+- [ ] codemap/level2-containers/containers.puml - [changes or "no changes"]
+- [ ] codemap/level2-containers/containers.png - [regenerated or "no changes"]
+- [ ] codemap/level2-containers/containers.md - [changes or "no changes"]
+- [ ] codemap/level3-components/components-*.puml - [changes or "no changes"]
+- [ ] codemap/level3-components/components-*.png - [regenerated or "no changes"]
+- [ ] codemap/level3-components/components.md - [changes or "no changes"]
+- [ ] codemap/level4-code/code-*.puml - [changes or "no changes"]
+- [ ] codemap/level4-code/code-*.png - [regenerated or "no changes"]
+- [ ] codemap/level4-code/code.md - [changes or "no changes"]
 
 ## Changes Applied
 [Summary of architectural changes detected and applied]
@@ -234,4 +268,13 @@ After updates are applied, output:
 
 ## Recommendation
 [Any manual review needed or follow-up actions]
+
+## Rendering Updated Diagrams
+Run the following to regenerate all PNGs:
+```bash
+plantuml -tpng codemap/level1-context/*.puml
+plantuml -tpng codemap/level2-containers/*.puml
+plantuml -tpng codemap/level3-components/*.puml
+plantuml -tpng codemap/level4-code/*.puml
+```
 ```

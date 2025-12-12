@@ -7,7 +7,7 @@ Your context window will be automatically compacted as it approaches its limit, 
 
 ## Repository Context
 
-This is the **ingenious** package - a core AI agent framework library (v0.2.7).
+This is the **ingenious** package - a core AI agent framework library (v0.2.8).
 
 ## Communication Style
 
