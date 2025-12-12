@@ -1,0 +1,43 @@
+@startuml
+title Azure Client Builder Hierarchy
+
+skinparam classAttributeIconSize 0
+
+abstract class AzureClientBuilder {
+    #auth_config: AzureAuthConfig
+    #_credential: CredentialType
+    --
+    +credential: Union[TokenCredential, AzureKeyCredential]
+    +from_config(config)
+    {abstract} +build()
+}
+
+class AzureSearchClientBuilder extends AzureClientBuilder {
+    +build(): SearchClient
+}
+
+class AzureSqlClientBuilder extends AzureClientBuilder {
+    +build(): Connection
+}
+
+class AzureOpenAIClientBuilder extends AzureClientBuilder {
+    +build(): AzureOpenAI
+}
+
+class BlobServiceClientBuilder extends AzureClientBuilder {
+    +build(): BlobServiceClient
+}
+
+class AzureClientFactory {
+    {static} +create_search_client()
+    {static} +create_sql_client()
+    {static} +create_openai_client()
+    {static} +create_blob_client()
+}
+
+AzureClientFactory --> AzureSearchClientBuilder : creates
+AzureClientFactory --> AzureSqlClientBuilder : creates
+AzureClientFactory --> AzureOpenAIClientBuilder : creates
+AzureClientFactory --> BlobServiceClientBuilder : creates
+
+@enduml

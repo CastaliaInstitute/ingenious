@@ -1,0 +1,27 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+title Component diagram for FastAPI API Application
+
+Container_Boundary(api, "FastAPI API Layer") {
+    Component(routing, "Route Manager", "Main routing", "FastAPI route registration and dispatching")
+    Component(auth_routes, "Auth Routes", "HTTP handlers", "JWT and authentication endpoints")
+    Component(chat_routes, "Chat Routes", "HTTP handlers", "Chat and conversation endpoints")
+    Component(conversation_routes, "Conversation Routes", "HTTP handlers", "Conversation history management")
+    Component(diagnostic_routes, "Diagnostic Routes", "HTTP handlers", "System diagnostics and health checks")
+    Component(prompts_routes, "Prompts Routes", "HTTP handlers", "Prompt management endpoints")
+    Component(custom_routes, "Custom Routes", "HTTP handlers", "Extensible custom route implementations")
+    Component(feedback_routes, "Feedback Routes", "HTTP handlers", "Message feedback collection")
+    Component(workflows_routes, "Workflows Routes", "HTTP handlers", "Custom workflow execution")
+}
+
+Rel(routing, auth_routes, "Registers")
+Rel(routing, chat_routes, "Registers")
+Rel(routing, conversation_routes, "Registers")
+Rel(routing, diagnostic_routes, "Registers")
+Rel(routing, prompts_routes, "Registers")
+Rel(routing, custom_routes, "Registers")
+Rel(routing, feedback_routes, "Registers")
+Rel(routing, workflows_routes, "Registers")
+
+@enduml

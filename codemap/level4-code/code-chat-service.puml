@@ -1,0 +1,44 @@
+@startuml
+title Chat Service Class Hierarchy
+
+skinparam classAttributeIconSize 0
+
+abstract class IChatService {
+    {abstract} +get_chat_response(ChatRequest): ChatResponse
+    {abstract} +get_streaming_chat_response(ChatRequest): AsyncIterator
+}
+
+class ChatService implements IChatService {
+    -service_class: IChatService
+    -config: IngeniousSettings
+    -revision: str
+    --
+    +__init__(chat_service_type, chat_history_repository, conversation_flow, config)
+    +get_chat_response(ChatRequest): ChatResponse
+    +get_streaming_chat_response(ChatRequest): AsyncIterator
+}
+
+class MultiAgentChatService implements IChatService {
+    -config: IngeniousSettings
+    -chat_history_repository: ChatHistoryRepository
+    -conversation_flow: str
+    -openai_service: OpenAIService
+    --
+    +_build_thread_memory()
+    +_validate_thread_messages()
+    +_append_thread_history()
+    +get_chat_response(ChatRequest): ChatResponse
+    +get_streaming_chat_response(ChatRequest): AsyncIterator
+}
+
+class OpenAIService {
+    -model: str
+    -client: OpenAI
+    --
+    +create_chat_completion()
+}
+
+ChatService --> IChatService : delegates to
+MultiAgentChatService --> OpenAIService : uses
+
+@enduml
