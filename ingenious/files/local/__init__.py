@@ -1,3 +1,5 @@
+"""Local filesystem file repository implementation."""
+
 from pathlib import Path
 
 import aiofiles  # type: ignore
@@ -8,7 +10,19 @@ from ingenious.files.files_repository import IFileStorage
 
 
 class local_FileStorageRepository(IFileStorage):
+    """Local filesystem implementation of the file storage interface.
+
+    Provides file operations (read, write, delete, list) using the local filesystem
+    with async I/O support via aiofiles.
+    """
+
     def __init__(self, config: IngeniousSettings, fs_config: FileStorageContainerSettings):
+        """Initialize local file storage repository.
+
+        Args:
+            config: The ingenious settings configuration.
+            fs_config: File storage container configuration including base path.
+        """
         self.config = config
         self.fs_config = fs_config
         self.base_path = Path(fs_config.path)
@@ -69,17 +83,35 @@ class local_FileStorageRepository(IFileStorage):
     async def list_files(self, file_path: str) -> str:
         """List files in a local directory.
 
+        Returns filenames as newline-delimited string, matching Azure blob storage format.
+
         :param file_path: Path to the directory.
+        :return: Newline-delimited string of filenames.
         """
         try:
             path = Path(self.fs_config.path) / Path(file_path)
             files = [f.name for f in path.iterdir() if f.is_file()]
-            # print(f"Files in {path}: {files}")
-            return str(files)
+            return "\n".join(files)
         except Exception as e:
             error_msg = f"Failed to list files in {path}: {e}"
             print(error_msg)
-            return error_msg
+            return ""
+
+    async def list_directories(self, file_path: str) -> list[str]:
+        """List directories in a local directory.
+
+        :param file_path: Path to the directory.
+        :return: List of directory names.
+        """
+        try:
+            path = Path(self.fs_config.path) / Path(file_path)
+            if not path.exists():
+                return []
+            directories = [f.name for f in path.iterdir() if f.is_dir()]
+            return directories
+        except Exception as e:
+            print(f"Failed to list directories in {path}: {e}")
+            return []
 
     async def check_if_file_exists(self, file_path: str, file_name: str) -> bool:
         """Check if a local file exists.

@@ -5,7 +5,7 @@ messages, and metadata in Azure SQL Database using pyodbc.
 """
 
 import json
-from typing import Any, Dict, List, Optional
+from typing import Any
 
 import pyodbc
 
@@ -19,7 +19,7 @@ from ingenious.config import IngeniousSettings
 # )
 from ingenious.core.structured_logging import get_logger
 from ingenious.db.base_sql import BaseSQLRepository
-from ingenious.db.chat_history_repository import IChatHistoryRepository
+from ingenious.db.chat_history_models import User
 from ingenious.db.query_builder import AzureSQLDialect, QueryBuilder
 from ingenious.errors import (
     DatabaseQueryError,
@@ -141,7 +141,7 @@ class azuresql_ChatHistoryRepository(BaseSQLRepository):
 
     # Removed empty _create_tables override - using base class implementation
 
-    async def _get_user_by_id(self, user_id: str) -> IChatHistoryRepository.User | None:
+    async def _get_user_by_id(self, user_id: str) -> User | None:
         cursor = self.connection.cursor()
         cursor.execute(
             """SELECT id, identifier, metadata, createdAt FROM users WHERE id = ?""",
@@ -151,141 +151,25 @@ class azuresql_ChatHistoryRepository(BaseSQLRepository):
         cursor.close()
 
         if row:
-            return IChatHistoryRepository.User(
-                id=row[0], identifier=row[1], metadata=row[2], createdAt=row[3]
-            )
+            return User(id=row[0], identifier=row[1], metadata=row[2], createdAt=row[3])
         return None
 
-    async def get_threads_for_user(
-        self, identifier: str, thread_id: Optional[str]
-    ) -> Optional[List[IChatHistoryRepository.ThreadDict]]:
-        """Retrieve threads associated with a user identifier.
+    def _parse_json_field(self, value: Any, default: Any = None) -> Any:
+        """Parse a JSON field, returning default if parsing fails.
 
         Args:
-            identifier: User identifier to query threads for.
-            thread_id: Optional thread ID to filter results.
+            value: Value to parse (may be string or already parsed).
+            default: Default value to return on parse failure.
 
         Returns:
-            List of thread dictionaries for the user, or empty list. Returns None if user not found.
+            Parsed value or default.
         """
-        # This is a simplified implementation
-        # In a full implementation, you'd join with threads table and return proper thread data
-        return []
-
-    async def add_step(self, step_dict: IChatHistoryRepository.StepDict) -> None:
-        """Add a step record to the Azure SQL steps table.
-
-        Args:
-            step_dict: Dictionary containing step data including id, type, threadId, metadata, and generation fields.
-        """
-        logger.info(
-            "Creating step in database",
-            step_id=step_dict.get("id"),
-            step_type=step_dict.get("type"),
-            thread_id=step_dict.get("threadId"),
-            operation="create_step",
-        )
-
-        # If disableFeedback is not provided, default to False
-        step_dict["disableFeedback"] = step_dict.get("disableFeedback", False)
-
-        step_dict["showInput"] = (
-            str(step_dict.get("showInput", "")).lower() if "showInput" in step_dict else None
-        )
-        parameters = {
-            key: value
-            for key, value in step_dict.items()
-            if value is not None and not (isinstance(value, dict) and not value)
-        }
-        parameters["metadata"] = json.dumps(step_dict.get("metadata", {}))
-        parameters["generation"] = json.dumps(step_dict.get("generation", {}))
-
-        columns = ", ".join(f"[{key}]" for key in parameters.keys())
-        values = ", ".join("?" for key in parameters.keys())
-        # nosec B608: table name 'steps' is hardcoded constant, parameters use ? placeholders
-        query = f"""
-            INSERT INTO steps ({columns})
-            VALUES ({values});
-        """
-        self.execute_sql(sql=query, params=list(parameters.values()), expect_results=False)
-
-    async def update_thread(
-        self,
-        thread_id: str,
-        name: Optional[str] = None,
-        user_id: Optional[str] = None,
-        metadata: Optional[Dict[str, object]] = None,
-        tags: Optional[List[str]] = None,
-    ) -> str:
-        """Update an existing thread or create a new one using MERGE (upsert) operation.
-
-        Args:
-            thread_id: Unique identifier for the thread.
-            name: Optional name for the thread.
-            user_id: Optional user ID to associate with the thread.
-            metadata: Optional metadata dictionary to store with the thread.
-            tags: Optional list of tags to categorize the thread.
-
-        Returns:
-            Empty string on successful update or insert.
-        """
-        logger.info(
-            "Updating thread",
-            thread_id=thread_id,
-            user_id=user_id,
-            has_name=name is not None,
-            has_metadata=metadata is not None,
-            operation="update_thread",
-        )
-        user_identifier = None
-        if user_id:
-            logger.debug(
-                "Retrieving user identifier",
-                user_id=user_id,
-                operation="get_user_identifier",
-            )
-            user = await self._get_user_by_id(user_id)
-            if user:
-                user_identifier = user.identifier
-
-        data = {
-            "id": thread_id,
-            "createdAt": (self.get_now() if metadata is None else None),
-            "name": (
-                name
-                if name is not None
-                else (metadata.get("name") if metadata and "name" in metadata else None)
-            ),
-            "userId": user_id,
-            "userIdentifier": user_identifier,
-            "tags": json.dumps(tags) if tags else None,
-            "metadata": json.dumps(metadata) if metadata else None,
-        }
-
-        parameters = {key: value for key, value in data.items() if value is not None}
-
-        columns = ", ".join(f"[{key}]" for key in parameters.keys())
-        values = ", ".join("?" for key in parameters.keys())
-        updates = ", ".join(f"[{key}] = ?" for key in parameters.keys() if key != "id")
-
-        # Use MERGE for upsert in SQL Server
-        # nosec B608: table name 'threads' is hardcoded constant, parameters use ? placeholders
-        query = f"""
-            MERGE threads AS target
-            USING (SELECT ? as id) AS source ON target.id = source.id
-            WHEN MATCHED THEN
-                UPDATE SET {updates}
-            WHEN NOT MATCHED THEN
-                INSERT ({columns})
-                VALUES ({values});
-        """
-
-        # Prepare parameters for MERGE statement
-        merge_params = [thread_id] + list(parameters.values())[1:] + list(parameters.values())
-
-        self.execute_sql(sql=query, params=merge_params, expect_results=False)
-
-        return ""
+        if not isinstance(value, str):
+            return value if value is not None else default
+        try:
+            return json.loads(value)
+        except (json.JSONDecodeError, TypeError):
+            return default if default is not None else {}
 
     async def update_memory(self) -> None:
         """Update the chat history summary table to retain only the latest record per thread.

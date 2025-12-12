@@ -1,6 +1,6 @@
 # Insight Ingenious
 
-[![Version](https://img.shields.io/badge/version-0.2.6-blue.svg)](https://github.com/Insight-Services-APAC/ingenious)
+[![Version](https://img.shields.io/badge/version-0.2.8-blue.svg)](https://github.com/Insight-Services-APAC/ingenious)
 [![Python](https://img.shields.io/badge/python-3.13+-green.svg)](https://www.python.org/downloads/)
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Insight-Services-APAC/ingenious)
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
@@ -81,16 +81,32 @@ Set up ingenious locally first and then migrate to Azure services as shown in th
     **Required configuration (add to .env file)**:
     ```bash
     # Core AI Model Configuration (REQUIRED)
-    INGENIOUS_MODELS__0__MODEL=gpt-5-mini
+    # Model 0: Chat model
+    INGENIOUS_MODELS__0__MODEL=gpt-4o-mini  # Must match OpenAI model name exactly
     INGENIOUS_MODELS__0__API_TYPE=rest
     INGENIOUS_MODELS__0__API_VERSION=2024-12-01-preview
-    INGENIOUS_MODELS__0__DEPLOYMENT=gpt-5-mini-deployment
+    INGENIOUS_MODELS__0__DEPLOYMENT=gpt-4o-mini-deployment  # Your custom deployment name from Azure
     INGENIOUS_MODELS__0__API_KEY=your-actual-api-key-here
     INGENIOUS_MODELS__0__BASE_URL=https://eastus.api.cognitive.microsoft.com/
+    INGENIOUS_MODELS__0__ROLE=chat
 
-    # For Azure OpenAI: Use the Cognitive Services endpoint format (not OpenAI endpoint)
-    # CORRECT: https://eastus.api.cognitive.microsoft.com/
-    # INCORRECT: https://your-resource.openai.azure.com/
+    # Model 1: Embedding model (REQUIRED for Azure AI Search)
+    INGENIOUS_MODELS__1__MODEL=text-embedding-3-small
+    INGENIOUS_MODELS__1__API_TYPE=rest
+    INGENIOUS_MODELS__1__API_VERSION=2024-12-01-preview
+    INGENIOUS_MODELS__1__DEPLOYMENT=text-embedding-3-small-deployment
+    INGENIOUS_MODELS__1__API_KEY=your-actual-api-key-here
+    INGENIOUS_MODELS__1__BASE_URL=https://eastus.api.cognitive.microsoft.com/
+    INGENIOUS_MODELS__1__ROLE=embedding
+
+    # For Azure OpenAI endpoints - both formats work:
+    # Regional endpoint: https://eastus.api.cognitive.microsoft.com/
+    # Resource-specific: https://your-resource.cognitiveservices.azure.com/
+
+    # IMPORTANT: DEPLOYMENT vs MODEL
+    # - DEPLOYMENT: Your custom name in Azure Portal (can be anything)
+    # - MODEL: Official OpenAI model name (must be exact: gpt-4o-mini, gpt-4, etc.)
+
     # For OpenAI (not Azure), use:
     # INGENIOUS_MODELS__0__BASE_URL=https://api.openai.com/v1
     # INGENIOUS_MODELS__0__API_VERSION=2024-02-01
@@ -153,10 +169,14 @@ Set up ingenious locally first and then migrate to Azure services as shown in th
 
 4. **Start the Server**:
     ```bash
-    # REQUIRED: Use KB_POLICY=local_only for knowledge-base-agent to work with ChromaDB
+    # CRITICAL: KB_POLICY environment variable is REQUIRED for knowledge-base-agent
+    # Without it, knowledge-base-agent may fail or return empty results
     KB_POLICY=local_only uv run ingen serve --port 8000
 
-    # Alternative: Start server without KB prefix (but knowledge-base-agent may not work)
+    # For Azure AI Search (production):
+    # KB_POLICY=azure_only uv run ingen serve --port 8000
+
+    # Alternative: Start server without KB prefix (other agents work, but NOT knowledge-base-agent)
     uv run ingen serve --port 8000
 
     # Note: Default port is 80, but port 8000 is recommended to avoid conflicts

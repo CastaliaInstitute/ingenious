@@ -451,8 +451,10 @@ async def test_streaming_sequence_and_error_handling(
             """Simulates a failure during the streaming process."""
 
             async def _bad() -> AsyncGenerator[None, None]:
+                # Make this a generator that raises immediately
+                for _ in []:
+                    yield None
                 raise RuntimeError("boom")
-                yield  # pragma: no cover
 
             return _bad()
 

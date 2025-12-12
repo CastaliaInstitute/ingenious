@@ -1,3 +1,5 @@
+"""Base builder class for Azure client construction with authentication support."""
+
 from abc import ABC, abstractmethod
 from typing import Any, Optional, Union
 
@@ -19,6 +21,11 @@ class AzureClientBuilder(ABC):
     """Abstract base class for Azure client builders with authentication support."""
 
     def __init__(self, auth_config: Optional[AzureAuthConfig] = None):
+        """Initialize Azure client builder with authentication configuration.
+
+        Args:
+            auth_config: Azure authentication configuration, defaults to DefaultAzureCredential
+        """
         self.auth_config = auth_config or AzureAuthConfig.default_credential()
         # Lazy-loaded credential cache
         self._credential: Optional[CredentialType] = None
@@ -39,6 +46,7 @@ class AzureClientBuilder(ABC):
     @property
     def credential(self) -> Union[TokenCredential, AzureKeyCredential]:
         """Get the appropriate credential based on authentication method.
+
         Cached after first access for efficiency.
 
         Returns:

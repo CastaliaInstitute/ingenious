@@ -15,27 +15,27 @@ class TestLogLevel:
 
     def test_from_string_valid_levels(self):
         """Test from_string method with valid level strings."""
-        assert LogLevel.from_string("DEBUG.") == LogLevel.DEBUG
-        assert LogLevel.from_string("INFO.") == LogLevel.INFO
-        assert LogLevel.from_string("WARNING.") == LogLevel.WARNING
-        assert LogLevel.from_string("ERROR.") == LogLevel.ERROR
+        assert LogLevel.from_string("DEBUG") == LogLevel.DEBUG
+        assert LogLevel.from_string("INFO") == LogLevel.INFO
+        assert LogLevel.from_string("WARNING") == LogLevel.WARNING
+        assert LogLevel.from_string("ERROR") == LogLevel.ERROR
 
     def test_from_string_case_insensitive(self):
         """Test from_string method is case insensitive."""
-        assert LogLevel.from_string("debug.") == LogLevel.DEBUG
-        assert LogLevel.from_string("info.") == LogLevel.INFO
-        assert LogLevel.from_string("warning.") == LogLevel.WARNING
+        assert LogLevel.from_string("debug") == LogLevel.DEBUG
+        assert LogLevel.from_string("info") == LogLevel.INFO
+        assert LogLevel.from_string("warning") == LogLevel.WARNING
         assert LogLevel.from_string("error") == LogLevel.ERROR
-        assert LogLevel.from_string("Debug.") == LogLevel.DEBUG
-        assert LogLevel.from_string("InFo.") == LogLevel.INFO
-        assert LogLevel.from_string("WaRnInG.") == LogLevel.WARNING
-        assert LogLevel.from_string("ErRoR.") == LogLevel.ERROR
+        assert LogLevel.from_string("Debug") == LogLevel.DEBUG
+        assert LogLevel.from_string("InFo") == LogLevel.INFO
+        assert LogLevel.from_string("WaRnInG") == LogLevel.WARNING
+        assert LogLevel.from_string("ErRoR") == LogLevel.ERROR
 
     def test_from_string_invalid_level(self):
         """Test from_string method with invalid level strings."""
-        assert LogLevel.from_string("INVALID.") is None
-        assert LogLevel.from_string("TRACE.") is None
-        assert LogLevel.from_string("FATAL.") is None
+        assert LogLevel.from_string("INVALID") is None
+        assert LogLevel.from_string("TRACE") is None
+        assert LogLevel.from_string("FATAL") is None
         assert LogLevel.from_string("") is None
         assert LogLevel.from_string("123") is None
 

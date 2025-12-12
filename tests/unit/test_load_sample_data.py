@@ -13,11 +13,11 @@ from ingenious.utils.load_sample_data import sqlite_sample_db
 class TestSqliteSampleDb:
     """Test cases for sqlite_sample_db class."""
 
-    @patch("ingenious.utils.load_sample_data.get_config.")
-    @patch("ingenious.utils.load_sample_data.os.path.exists.")
-    @patch("ingenious.utils.load_sample_data.os.makedirs.")
-    @patch("ingenious.utils.load_sample_data.sqlite3.connect.")
-    @patch("ingenious.utils.load_sample_data.pd.read_csv.")
+    @patch("ingenious.utils.load_sample_data.get_config")
+    @patch("ingenious.utils.load_sample_data.os.path.exists")
+    @patch("ingenious.utils.load_sample_data.os.makedirs")
+    @patch("ingenious.utils.load_sample_data.sqlite3.connect")
+    @patch("ingenious.utils.load_sample_data.pd.read_csv")
     def test_init_with_csv_file_exists(
         self, mock_read_csv, mock_connect, mock_makedirs, mock_exists, mock_get_config
     ):
@@ -25,11 +25,11 @@ class TestSqliteSampleDb:
         # Setup mocks
         mock_config = Mock()
         mock_config.local_sql_db.database_path = "/tmp/test.db"  # nosec B108: acceptable for testing
-        mock_config.local_sql_db.sample_csv_path = "/tmp/test.csv."  # nosec B108: acceptable for testing
-        mock_config.local_sql_db.sample_database_name = "test_table."
+        mock_config.local_sql_db.sample_csv_path = "/tmp/test.csv"  # nosec B108: acceptable for testing
+        mock_config.local_sql_db.sample_database_name = "test_table"
         mock_get_config.return_value = mock_config
 
-        mock_exists.side_effect = lambda path: path in ["/tmp.", "/tmp/test.csv."]  # nosec B108: acceptable for testing
+        mock_exists.side_effect = lambda path: path in ["/tmp", "/tmp/test.csv"]  # nosec B108: acceptable for testing
 
         mock_connection = MagicMock()
         mock_connection.__enter__.return_value = mock_connection
@@ -39,7 +39,7 @@ class TestSqliteSampleDb:
         # Mock DataFrame with to_sql method
         mock_df = Mock(spec=pd.DataFrame)
         mock_df.to_sql = Mock()
-        mock_df.dtypes = pd.Series({"name.": "object.", "age.": "int64.", "score.": "float64."})
+        mock_df.dtypes = pd.Series({"name": "object", "age": "int64", "score": "float64"})
         mock_read_csv.return_value = mock_df
 
         # Initialize
@@ -51,11 +51,11 @@ class TestSqliteSampleDb:
         mock_makedirs.assert_not_called()  # Directory exists
         mock_connect.assert_called_with("/tmp/test.db", check_same_thread=False)  # nosec B108: acceptable for testing
 
-    @patch("ingenious.utils.load_sample_data.get_config.")
-    @patch("ingenious.utils.load_sample_data.os.path.exists.")
-    @patch("ingenious.utils.load_sample_data.os.makedirs.")
-    @patch("ingenious.utils.load_sample_data.sqlite3.connect.")
-    @patch("ingenious.utils.load_sample_data.pd.read_csv.")
+    @patch("ingenious.utils.load_sample_data.get_config")
+    @patch("ingenious.utils.load_sample_data.os.path.exists")
+    @patch("ingenious.utils.load_sample_data.os.makedirs")
+    @patch("ingenious.utils.load_sample_data.sqlite3.connect")
+    @patch("ingenious.utils.load_sample_data.pd.read_csv")
     def test_init_with_directory_creation(
         self, mock_read_csv, mock_connect, mock_makedirs, mock_exists, mock_get_config
     ):
@@ -63,12 +63,12 @@ class TestSqliteSampleDb:
         # Setup mocks
         mock_config = Mock()
         mock_config.local_sql_db.database_path = "/tmp/new_dir/test.db"  # nosec B108: acceptable for testing
-        mock_config.local_sql_db.sample_csv_path = "/tmp/test.csv."  # nosec B108: acceptable for testing
-        mock_config.local_sql_db.sample_database_name = "test_table."
+        mock_config.local_sql_db.sample_csv_path = "/tmp/test.csv"  # nosec B108: acceptable for testing
+        mock_config.local_sql_db.sample_database_name = "test_table"
         mock_get_config.return_value = mock_config
 
         mock_exists.side_effect = (
-            lambda path: path == "/tmp/test.csv."  # nosec B108: acceptable for testing
+            lambda path: path == "/tmp/test.csv"  # nosec B108: acceptable for testing
         )  # Only CSV exists
 
         mock_connection = MagicMock()
@@ -79,7 +79,7 @@ class TestSqliteSampleDb:
         # Mock DataFrame with to_sql method
         mock_df = Mock(spec=pd.DataFrame)
         mock_df.to_sql = Mock()
-        mock_df.dtypes = pd.Series({"name.": "object.", "age.": "int64."})
+        mock_df.dtypes = pd.Series({"name": "object", "age": "int64"})
         mock_read_csv.return_value = mock_df
 
         # Initialize
@@ -88,9 +88,9 @@ class TestSqliteSampleDb:
         # Verify directory creation
         mock_makedirs.assert_called_once_with("/tmp/new_dir", exist_ok=True)  # nosec B108: acceptable for testing
 
-    @patch("ingenious.utils.load_sample_data.get_config.")
-    @patch("ingenious.utils.load_sample_data.os.path.exists.")
-    @patch("ingenious.utils.load_sample_data.sqlite3.connect.")
+    @patch("ingenious.utils.load_sample_data.get_config")
+    @patch("ingenious.utils.load_sample_data.os.path.exists")
+    @patch("ingenious.utils.load_sample_data.sqlite3.connect")
     def test_init_without_csv_file(self, mock_connect, mock_exists, mock_get_config):
         """Test initialization when CSV file doesn't exist (fallback table)."""
         # Setup mocks
@@ -322,7 +322,7 @@ class TestSqliteSampleDb:
             mock_df.to_sql.assert_called_with(
                 "test_table", mock_connection, if_exists="replace", index=False
             )
-            mock_print.assert_any_call("CSV data loaded into test_table table.")
+            mock_print.assert_any_call("CSV data loaded into test_table table")
 
     @patch("ingenious.utils.load_sample_data.get_config")
     @patch("ingenious.utils.load_sample_data.os.path.exists")
@@ -349,7 +349,7 @@ class TestSqliteSampleDb:
             sqlite_sample_db()
 
             # Verify error message
-            mock_print.assert_any_call("CSV file not found at /tmp/nonexistent.csv.")  # nosec B108: acceptable for testing
+            mock_print.assert_any_call("CSV file not found at /tmp/nonexistent.csv")  # nosec B108: acceptable for testing
 
     def test_execute_sql_with_parameters(self):
         """Test execute_sql method with parameters."""

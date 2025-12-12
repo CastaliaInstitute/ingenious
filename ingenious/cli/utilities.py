@@ -10,9 +10,10 @@ import os
 import shutil
 from pathlib import Path
 from sysconfig import get_paths
-from typing import Any, Dict, Optional, Union
+from typing import Dict, Optional, Union
 
 from rich.panel import Panel
+from rich.progress import TaskID
 from rich.table import Table
 
 import ingenious.utils.stage_executor as stage_executor_module
@@ -28,7 +29,12 @@ class CliFunctions:
     class RunTestBatch(stage_executor_module.IActionCallable):
         """Action callable for running test batches."""
 
-        async def __call__(self, progress: Any, task_id: Any, **kwargs: Any) -> None:
+        async def __call__(
+            self,
+            progress: stage_executor_module.ProgressConsoleWrapper,
+            task_id: TaskID,
+            **kwargs: object,
+        ) -> None:
             """Execute the test batch run.
 
             Args:
@@ -194,7 +200,7 @@ class OutputFormatters:
     """Utilities for formatting CLI output."""
 
     @staticmethod
-    def create_status_table(items: Dict[str, Any], title: str = "Status") -> Table:
+    def create_status_table(items: Dict[str, object], title: str = "Status") -> Table:
         """Create a formatted table for status information.
 
         Args:

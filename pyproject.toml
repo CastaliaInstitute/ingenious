@@ -1,6 +1,6 @@
 [project]
 name = "ingenious"
-version = "0.2.7"
+version = "0.2.8"
 description = "An enterprise-grade Python library for quickly setting up APIs to interact with AI Agents"
 readme = "README.md"
 license = { text = "MIT" }
@@ -280,6 +280,9 @@ plugins = ["pydantic.mypy"]
 [[tool.mypy.overrides]]
 module = [
   "autogen.*",
+  "autogen_core.*",
+  "autogen_agentchat.*",
+  "autogen_ext.*",
   "structlog.*",
   "scrapfly.*",
   "pymupdf.*",
@@ -313,37 +316,37 @@ module = [
   "scripts.*",
   "pyodbc.*",
   "colorlog.*",
+  "langchain_core.*",
+  "langchain_experimental.*",
+  "langchain_openai.*",
+  "langchain_text_splitters.*",
+  "yaml.*",
 ]
 ignore_missing_imports = true
-allow_untyped_calls = true
-allow_untyped_defs = true
 
-# Allow some flexibility during initial migration
+# Multi-agent conversation modules - strict typing enabled
+# Third-party dependencies (autogen, etc.) have ignore_missing_imports = true above
 [[tool.mypy.overrides]]
 module = [
-  "ingenious.external_services.*",
-  "ingenious.dataprep.*",
-  "ingenious.document_processing.*",
-  "ingenious.ingenious_extensions_template.*",
   "ingenious.services.chat_services.multi_agent.conversation_flows.*",
   "ingenious.services.chat_services.multi_agent.conversation_patterns.*",
-  "ingenious.models.ag_agents.*",
-  "ingenious.services.knowledge_base.*",
-  "ingenious.services.file_summarization.*",
-  "ingenious.services.chat_services.llm.*",
-  "ingenious.services.chat_services.multi_agent.*",
-  "ingenious.services.sql_agent.*",
-  "ingenious.utils.*",
-  "ingenious.db.cosmos.*",
-  "ingenious.client.azure.builder.*",
-  "ingenious.auth.*",
-  "ingenious.files.azure.*",
+  "ingenious.services.chat_services.multi_agent.service",
+  "ingenious.ingenious_extensions_template.services.chat_services.multi_agent.conversation_flows.*",
+  "ingenious.ingenious_extensions_template.api.routes.*",
 ]
+# Strict typing enabled - was ignore_errors = true
 disallow_untyped_defs = false
 disallow_incomplete_defs = false
 warn_return_any = false
-no_implicit_optional = false
-ignore_errors = true
+
+# AutoGen agent models - require relaxed checks due to untyped third-party decorators
+[[tool.mypy.overrides]]
+module = ["ingenious.models.ag_agents"]
+disallow_untyped_defs = false
+disallow_incomplete_defs = false
+disallow_untyped_decorators = false
+disallow_subclassing_any = false
+warn_return_any = false
 
 # Allow flexibility in tests
 [[tool.mypy.overrides]]
@@ -356,11 +359,11 @@ no_implicit_optional = false
 warn_return_any = false
 
 [[tool.mypy.overrides]]
-# Relax mypy only for the *library-internal* test package
-module = ["ingenious.chunk.tests.*"]
+# Relax mypy for the incomplete chunk module (missing dependencies)
+module = ["ingenious.chunk.*"]
 ignore_errors = true
-disallow_untyped_defs = false        # don't require -> None, param hints, etc.
-ignore_missing_imports = true        # silence missing stubs (e.g. `regex`)
+disallow_untyped_defs = false
+ignore_missing_imports = true
 check_untyped_defs = false
 disallow_untyped_decorators = false
 
@@ -411,6 +414,14 @@ filterwarnings = [
   "ignore::PendingDeprecationWarning",
   "ignore:.*(SwigPy|swigvarlink).* has no __module__ attribute:DeprecationWarning",
 ]
+
+[tool.bandit]
+# Skip B608 (hardcoded_sql_expressions) - these are false positives
+# The SQL queries use parameterized queries (?) for values
+# Dynamic parts are only column/table names from controlled dict keys
+skips = ["B608"]
+# Exclude test files from security checks (they use asserts intentionally)
+exclude_dirs = ["tests", "test_dir", "ingenious/services/azure_search/tests"]
 
 [tool.uv.workspace]
 members = [

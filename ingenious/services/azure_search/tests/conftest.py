@@ -174,7 +174,7 @@ def stub_sdks():
 
     class BlobServiceClient:
         @staticmethod
-        def from_connection_string(cs):
+        def from_connection_string(_cs):
             return BlobServiceClient()
 
     mod_blob_blob.BlobClient = BlobClient
@@ -188,7 +188,7 @@ def stub_sdks():
 class _DummyAsyncAzureOpenAI:
     """A minimal, offline stub for `openai.AsyncAzureOpenAI`."""
 
-    def __init__(self, *a: Any, **kw: Any) -> None:
+    def __init__(self, *_a: Any, **_kw: Any) -> None:
         """Initialize the dummy client, accepting any arguments."""
         pass
 
@@ -199,7 +199,7 @@ class _DummyAsyncAzureOpenAI:
     class _Embeddings:
         """A dummy for the `embeddings` attribute."""
 
-        async def create(self, *a: Any, **kw: Any) -> SimpleNamespace:
+        async def create(self, *_a: Any, **_kw: Any) -> SimpleNamespace:
             """Simulate the creation of embeddings, returning a fixed vector."""
 
             class _D:  # minimal shape
@@ -218,7 +218,7 @@ class _DummyAsyncAzureOpenAI:
         class _Completions:
             """A dummy for the `completions` attribute."""
 
-            async def create(self, *a: Any, **kw: Any) -> SimpleNamespace:
+            async def create(self, *_a: Any, **_kw: Any) -> SimpleNamespace:
                 """Simulate creating a chat completion, returning a fixed response."""
                 return SimpleNamespace(
                     choices=[SimpleNamespace(message=SimpleNamespace(content="3 4"))]
@@ -238,15 +238,16 @@ class _DummyAsyncAzureOpenAI:
 class _DummySearchClient:
     """A minimal, offline stub for `azure.search.documents.aio.SearchClient`."""
 
-    def __init__(self, *a: Any, **kw: Any) -> None:
+    def __init__(self, *_a: Any, **_kw: Any) -> None:
         """Initialize the dummy search client, accepting any arguments."""
         pass
 
-    async def search(self, *a: Any, **kw: Any) -> AsyncGenerator[None, None]:
+    async def search(self, *_a: Any, **_kw: Any) -> AsyncGenerator[None, None]:
         """Simulate a search query, returning an empty async iterator."""
 
         async def _aiter() -> AsyncGenerator[None, None]:  # empty iterator
-            if False:
+            # Use typing.cast or empty loop pattern for empty async generator
+            for _ in []:
                 yield None
 
         return _aiter()
@@ -289,7 +290,7 @@ def stub_external_modules(
         SEMANTIC = "semantic"
 
     class _VectorizedQuery:
-        def __init__(self, *a: Any, **kw: Any) -> None:
+        def __init__(self, *_a: Any, **_kw: Any) -> None:
             pass
 
     models_mod.QueryType = _QueryType
@@ -425,7 +426,7 @@ def import_provider_with_stubs(
     import ingenious.services.azure_search as azroot
 
     monkeypatch.setattr(
-        azroot, "build_search_pipeline", lambda *a, **kw: dummy_pipeline, raising=True
+        azroot, "build_search_pipeline", lambda *_a, **_kw: dummy_pipeline, raising=True
     )
 
     # Also stub provider's make_async_search_client (to avoid building real clients)
@@ -434,7 +435,7 @@ def import_provider_with_stubs(
     monkeypatch.setattr(
         provider_mod,
         "build_search_pipeline",
-        lambda *a, **kw: dummy_pipeline,
+        lambda *_a, **_kw: dummy_pipeline,
         raising=True,
     )
 
@@ -821,9 +822,11 @@ def _install_azure_stubs() -> None:
             secrets_mod.KeyVaultSecret = _KeyVaultSecret
 
     try:
-        from azure.keyvault.secrets.aio import (
-            SecretClient as _AioKVSecretClient,  # noqa: F401
+        from azure.keyvault.secrets.aio import (  # noqa: F401
+            SecretClient as _AioKVSecretClient,
         )
+
+        del _AioKVSecretClient  # Mark as intentionally unused for vulture
     except Exception:
         secrets_mod = _ensure_mod("azure.keyvault.secrets")
         secrets_aio = _ensure_mod("azure.keyvault.secrets.aio")
@@ -918,12 +921,12 @@ def _install_azure_stubs() -> None:
                     self.credential = credential
 
                 async def search(
-                    self, *args: Any, **kwargs: Any
+                    self, *_args: Any, **_kwargs: Any
                 ) -> AsyncGenerator[Dict[str, Any], None]:
                     """Simulate a search, returning an empty async iterator."""
 
                     async def _aiter() -> AsyncGenerator[Dict[str, Any], None]:
-                        if False:  # pragma: no cover
+                        for _ in []:
                             yield {}
 
                     return _aiter()

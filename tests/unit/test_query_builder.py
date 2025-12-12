@@ -158,27 +158,6 @@ class TestSQLiteQueryBuilder:
         assert "metadata JSONB NOT NULL" in query
         assert "createdAt TEXT" in query
 
-    def test_create_threads_table(self):
-        """Test threads table creation with SQLite syntax."""
-        query = self.builder.create_threads_table()
-        assert "CREATE TABLE IF NOT EXISTS threads" in query
-        assert "id UUID PRIMARY KEY" in query
-        assert "userId UUID" in query
-        assert "tags TEXT[]" in query
-        assert "metadata JSONB" in query
-        assert "FOREIGN KEY" in query
-
-    def test_create_steps_table(self):
-        """Test steps table creation with SQLite syntax."""
-        query = self.builder.create_steps_table()
-        assert "CREATE TABLE IF NOT EXISTS steps" in query
-        assert "id UUID PRIMARY KEY" in query
-        assert "disableFeedback BOOLEAN NOT NULL" in query
-        assert "streaming BOOLEAN NOT NULL" in query
-        assert "generation JSONB" in query
-        # Check that 'end' column is not bracketed in SQLite
-        assert "end DATETIME2" in query or "end TEXT" in query
-
     def test_insert_message(self):
         """Test message insertion query with SQLite syntax."""
         query = self.builder.insert_message()
@@ -264,25 +243,6 @@ class TestAzureSQLQueryBuilder:
         assert "identifier NVARCHAR(255) NOT NULL UNIQUE" in query
         assert "metadata NVARCHAR(MAX) NOT NULL" in query
 
-    def test_create_threads_table(self):
-        """Test threads table creation with Azure SQL syntax."""
-        query = self.builder.create_threads_table()
-        assert "IF NOT EXISTS" in query
-        assert "threads" in query
-        assert "userId UNIQUEIDENTIFIER" in query
-        assert "tags NVARCHAR(MAX)" in query
-        assert "FOREIGN KEY (userId) REFERENCES users(id)" in query
-
-    def test_create_steps_table(self):
-        """Test steps table creation with Azure SQL syntax."""
-        query = self.builder.create_steps_table()
-        assert "IF NOT EXISTS" in query
-        assert "steps" in query
-        assert "disableFeedback BIT NOT NULL" in query
-        assert "streaming BIT NOT NULL" in query
-        # Check that 'end' column is bracketed in SQL Server
-        assert "[end] DATETIME2" in query
-
     def test_select_latest_memory(self):
         """Test latest memory selection query with Azure SQL TOP syntax."""
         query = self.builder.select_latest_memory()
@@ -355,10 +315,6 @@ class TestQueryBuilderCompatibility:
             "create_chat_history_table",
             "create_chat_history_summary_table",
             "create_users_table",
-            "create_threads_table",
-            "create_steps_table",
-            "create_elements_table",
-            "create_feedbacks_table",
             "insert_message",
             "insert_memory",
             "select_message",

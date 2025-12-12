@@ -7,7 +7,7 @@ with support for both streaming and non-streaming completions.
 from __future__ import annotations
 
 import re
-from typing import Any, AsyncIterator, Optional
+from typing import Any, AsyncIterator, NoReturn, Optional, cast
 
 from openai import NOT_GIVEN, BadRequestError
 from openai.types.chat import (
@@ -25,6 +25,53 @@ from ingenious.errors.token_limit_exceeded_error import TokenLimitExceededError
 
 logger = get_logger(__name__)
 
+# Pattern for parsing Azure OpenAI token limit error messages
+_TOKEN_ERROR_PATTERN = re.compile(
+    r"This model's maximum context length is (\d+) tokens, "
+    r"however you requested (\d+) tokens \((\d+) in your prompt; "
+    r"(\d+) for the completion\)\. Please reduce your prompt; or "
+    r"completion length\."
+)
+
+
+def _handle_bad_request_error(error: BadRequestError) -> NoReturn:
+    """Handle BadRequestError and raise appropriate custom exceptions.
+
+    Args:
+        error: The BadRequestError from OpenAI API
+
+    Raises:
+        ContentFilterError: If content filtering is triggered
+        TokenLimitExceededError: If token limit is exceeded
+        Exception: For other bad request errors
+    """
+    message = error.message
+    if not isinstance(error.body, dict):
+        raise Exception(message)
+
+    message = error.body.get("message", message)
+
+    # Content filter path
+    if getattr(error, "code", None) == "content_filter" and "innererror" in error.body:
+        content_filter_results = error.body["innererror"].get("content_filter_result", {})
+        raise ContentFilterError(message, content_filter_results)
+
+    # Token limit (AOAI-style) pattern
+    token_error_match = _TOKEN_ERROR_PATTERN.match(message)
+    if token_error_match:
+        max_context_length, requested_tokens, prompt_tokens, completion_tokens = (
+            token_error_match.groups()
+        )
+        raise TokenLimitExceededError(
+            message=message,
+            max_context_length=int(max_context_length),
+            requested_tokens=int(requested_tokens),
+            prompt_tokens=int(prompt_tokens),
+            completion_tokens=int(completion_tokens),
+        )
+
+    raise Exception(message)
+
 
 class OpenAIService:
     """Service for interacting with Azure OpenAI.
@@ -35,7 +82,7 @@ class OpenAIService:
         _deployment: Azure deployment name
     """
 
-    def __init__(
+    def __init__(  # nosec B107 - empty defaults are not hardcoded passwords
         self,
         azure_endpoint: str,
         api_key: str,
@@ -139,7 +186,10 @@ class OpenAIService:
                 raise RuntimeError(
                     "OpenAI chat.completions.create returned a response missing 'choices' or it was empty"
                 )
-            return response.choices[0].message
+            raw_message = response.choices[0].message
+            if raw_message is None:
+                raise RuntimeError("OpenAI response message is None")
+            return cast(ChatCompletionMessage, raw_message)
 
         except BadRequestError as error:
             logger.error(
@@ -151,42 +201,7 @@ class OpenAIService:
                 deployment=self._deployment,
                 exc_info=True,
             )
-
-            message = error.message
-            if isinstance(error.body, dict):
-                message = error.body.get("message", message)
-
-                # Content filter path
-                if getattr(error, "code", None) == "content_filter" and "innererror" in error.body:
-                    content_filter_results = error.body["innererror"].get(
-                        "content_filter_result", {}
-                    )
-                    raise ContentFilterError(message, content_filter_results)
-
-                # Token limit (AOAI-style) pattern
-                token_error_pattern = (
-                    r"This model's maximum context length is (\d+) tokens, "
-                    r"however you requested (\d+) tokens \((\d+) in your prompt; "
-                    r"(\d+) for the completion\)\. Please reduce your prompt; or "
-                    r"completion length\."
-                )
-                token_error_match = re.match(token_error_pattern, message)
-                if token_error_match:
-                    (
-                        max_context_length,
-                        requested_tokens,
-                        prompt_tokens,
-                        completion_tokens,
-                    ) = token_error_match.groups()
-                    raise TokenLimitExceededError(
-                        message=message,
-                        max_context_length=int(max_context_length),
-                        requested_tokens=int(requested_tokens),
-                        prompt_tokens=int(prompt_tokens),
-                        completion_tokens=int(completion_tokens),
-                    )
-
-            raise Exception(message)
+            _handle_bad_request_error(error)
 
         except Exception as e:
             logger.exception(e)
@@ -239,7 +254,7 @@ class OpenAIService:
 
             # Support both sync and async iterables to be future-proof
             if hasattr(stream, "__aiter__"):
-                async for chunk in stream:  # type: ignore[unreachable]
+                async for chunk in stream:
                     if (
                         getattr(chunk, "choices", None)
                         and chunk.choices[0].delta
@@ -265,40 +280,7 @@ class OpenAIService:
                 deployment=self._deployment,
                 exc_info=True,
             )
-
-            message = error.message
-            if isinstance(error.body, dict):
-                message = error.body.get("message", message)
-
-                if getattr(error, "code", None) == "content_filter" and "innererror" in error.body:
-                    content_filter_results = error.body["innererror"].get(
-                        "content_filter_result", {}
-                    )
-                    raise ContentFilterError(message, content_filter_results)
-
-                token_error_pattern = (
-                    r"This model's maximum context length is (\d+) tokens, "
-                    r"however you requested (\d+) tokens \((\d+) in your prompt; "
-                    r"(\d+) for the completion\)\. Please reduce your prompt; or "
-                    r"completion length\."
-                )
-                token_error_match = re.match(token_error_pattern, message)
-                if token_error_match:
-                    (
-                        max_context_length,
-                        requested_tokens,
-                        prompt_tokens,
-                        completion_tokens,
-                    ) = token_error_match.groups()
-                    raise TokenLimitExceededError(
-                        message=message,
-                        max_context_length=int(max_context_length),
-                        requested_tokens=int(requested_tokens),
-                        prompt_tokens=int(prompt_tokens),
-                        completion_tokens=int(completion_tokens),
-                    )
-
-            raise Exception(message)
+            _handle_bad_request_error(error)
 
         except Exception as e:
             logger.exception(e)

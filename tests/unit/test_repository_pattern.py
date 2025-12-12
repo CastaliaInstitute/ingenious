@@ -24,10 +24,10 @@ class TestConnectionPool:
 
     def test_sqlite_connection_factory(self):
         """Test SQLite connection factory creates connections with proper PRAGMA settings."""
-        factory = SQLiteConnectionFactory(":memory:.")
+        factory = SQLiteConnectionFactory(":memory:")
 
         # Test connection creation
-        with patch("sqlite3.connect.") as mock_connect:
+        with patch("sqlite3.connect") as mock_connect:
             mock_conn = Mock()
             mock_connect.return_value = mock_conn
 
@@ -35,14 +35,14 @@ class TestConnectionPool:
             assert conn == mock_conn
 
             # Verify SQLite-specific settings were applied
-            mock_conn.execute.assert_any_call("PRAGMA journal_mode=WAL.")
-            mock_conn.execute.assert_any_call("PRAGMA synchronous=NORMAL.")
+            mock_conn.execute.assert_any_call("PRAGMA journal_mode=WAL")
+            mock_conn.execute.assert_any_call("PRAGMA synchronous=NORMAL")
 
     def test_azuresql_connection_factory(self):
         """Test Azure SQL connection factory creates connections with autocommit enabled."""
-        factory = AzureSQLConnectionFactory("test_connection_string.")
+        factory = AzureSQLConnectionFactory("test_connection_string")
 
-        with patch("pyodbc.connect.") as mock_connect:
+        with patch("pyodbc.connect") as mock_connect:
             mock_conn = Mock()
             mock_connect.return_value = mock_conn
 
@@ -84,9 +84,9 @@ class TestRepositoryFactory:
     def test_repository_factory_sqlite(self):
         """Test repository factory creates SQLite repository with correct configuration."""
         mock_config = Mock()
-        mock_config.chat_history.database_path = "/test/path/db.sqlite."
+        mock_config.chat_history.database_path = "/test/path/db.sqlite"
 
-        with patch("ingenious.db.sqlite.sqlite_ChatHistoryRepository.") as mock_repo_class:
+        with patch("ingenious.db.sqlite.sqlite_ChatHistoryRepository") as mock_repo_class:
             mock_repo = Mock()
             mock_repo_class.return_value = mock_repo
 
@@ -100,9 +100,9 @@ class TestRepositoryFactory:
     def test_repository_factory_azuresql(self):
         """Test repository factory creates Azure SQL repository with correct configuration."""
         mock_config = Mock()
-        mock_config.chat_history.database_connection_string = "test_connection_string."
+        mock_config.chat_history.database_connection_string = "test_connection_string"
 
-        with patch("ingenious.db.azuresql.azuresql_ChatHistoryRepository.") as mock_repo_class:
+        with patch("ingenious.db.azuresql.azuresql_ChatHistoryRepository") as mock_repo_class:
             mock_repo = Mock()
             mock_repo_class.return_value = mock_repo
 
@@ -117,19 +117,19 @@ class TestRepositoryFactory:
         """Test repository factory raises ValueError for unsupported database types."""
         mock_config = Mock()
 
-        with pytest.raises(ValueError, match="Unsupported database type."):
-            RepositoryFactory.create_chat_history_repository("INVALID.", mock_config)
+        with pytest.raises(ValueError, match="Unsupported database type"):
+            RepositoryFactory.create_chat_history_repository("INVALID", mock_config)
 
 
 class TestModernRepositoryFactory:
     """Test modern repository factory with composition."""
 
-    @pytest.mark.skip("Complex mocking needed - functionality tested in integration tests.")
+    @pytest.mark.skip("Complex mocking needed - functionality tested in integration tests")
     def test_modern_factory_sqlite(self):
         """Test would require complex mocking - functionality verified in integration tests."""
         pass
 
-    @pytest.mark.skip("Complex mocking needed - functionality tested in integration tests.")
+    @pytest.mark.skip("Complex mocking needed - functionality tested in integration tests")
     def test_modern_factory_azuresql(self):
         """Test would require complex mocking - functionality verified in integration tests."""
         pass
@@ -139,7 +139,7 @@ class TestModernRepositoryFactory:
         mock_config = Mock()
         mock_config.chat_history.database_connection_string = None
 
-        with pytest.raises(ValueError, match="Azure SQL connection string is required."):
+        with pytest.raises(ValueError, match="Azure SQL connection string is required"):
             ModernRepositoryFactory.create_chat_history_repository(
                 DatabaseClientType.AZURESQL, mock_config
             )
@@ -154,7 +154,7 @@ class TestSQLiteChatHistoryRepository:
         mock_builder = Mock()
         mock_pool = Mock()
 
-        with patch.object(SQLiteChatHistoryRepository, "_create_tables."):
+        with patch.object(SQLiteChatHistoryRepository, "_create_tables"):
             repo = SQLiteChatHistoryRepository(mock_config, mock_builder, mock_pool)
 
             assert repo.config == mock_config
@@ -171,20 +171,20 @@ class TestSQLiteChatHistoryRepository:
         mock_conn = Mock()
         mock_cursor = Mock()
         mock_row = Mock()
-        mock_row.__iter__ = Mock(return_value=iter([("value1.", "value2.")]))
+        mock_row.__iter__ = Mock(return_value=iter([("value1", "value2")]))
         mock_cursor.execute.return_value.fetchall.return_value = [mock_row]
         mock_conn.cursor.return_value = mock_cursor
         mock_pool.get_connection.return_value.__enter__ = Mock(return_value=mock_conn)
         mock_pool.get_connection.return_value.__exit__ = Mock(return_value=False)
 
-        with patch.object(SQLiteChatHistoryRepository, "_create_tables."):
+        with patch.object(SQLiteChatHistoryRepository, "_create_tables"):
             repo = SQLiteChatHistoryRepository(mock_config, mock_builder, mock_pool)
 
             # Mock the dict conversion behavior
-            with patch("builtins.dict.", return_value={"col1.": "value1.", "col2.": "value2."}):
-                result = repo._execute_sql("SELECT * FROM test.", expect_results=True)
+            with patch("builtins.dict", return_value={"col1": "value1", "col2": "value2"}):
+                result = repo._execute_sql("SELECT * FROM test", expect_results=True)
 
-                mock_cursor.execute.assert_called_once_with("SELECT * FROM test.", [])
+                mock_cursor.execute.assert_called_once_with("SELECT * FROM test", [])
                 assert isinstance(result, list)
 
     def test_execute_sql_without_results(self):
@@ -197,12 +197,12 @@ class TestSQLiteChatHistoryRepository:
         mock_pool.get_connection.return_value.__enter__ = Mock(return_value=mock_conn)
         mock_pool.get_connection.return_value.__exit__ = Mock(return_value=False)
 
-        with patch.object(SQLiteChatHistoryRepository, "_create_tables."):
+        with patch.object(SQLiteChatHistoryRepository, "_create_tables"):
             repo = SQLiteChatHistoryRepository(mock_config, mock_builder, mock_pool)
 
-            repo._execute_sql("INSERT INTO test VALUES (?).", ["value."], expect_results=False)
+            repo._execute_sql("INSERT INTO test VALUES (?)", ["value"], expect_results=False)
 
-            mock_conn.execute.assert_called_once_with("INSERT INTO test VALUES (?).", ["value."])
+            mock_conn.execute.assert_called_once_with("INSERT INTO test VALUES (?)", ["value"])
             mock_conn.commit.assert_called_once()
 
     def test_close(self):
@@ -211,7 +211,7 @@ class TestSQLiteChatHistoryRepository:
         mock_builder = Mock()
         mock_pool = Mock()
 
-        with patch.object(SQLiteChatHistoryRepository, "_create_tables."):
+        with patch.object(SQLiteChatHistoryRepository, "_create_tables"):
             repo = SQLiteChatHistoryRepository(mock_config, mock_builder, mock_pool)
 
             repo.close()
@@ -227,7 +227,7 @@ class TestAzureSQLChatHistoryRepository:
         mock_builder = Mock()
         mock_pool = Mock()
 
-        with patch.object(AzureSQLChatHistoryRepository, "_create_tables."):
+        with patch.object(AzureSQLChatHistoryRepository, "_create_tables"):
             repo = AzureSQLChatHistoryRepository(mock_config, mock_builder, mock_pool)
 
             assert repo.config == mock_config
@@ -243,20 +243,20 @@ class TestAzureSQLChatHistoryRepository:
         # Mock connection and cursor
         mock_conn = Mock()
         mock_cursor = Mock()
-        mock_cursor.description = [("col1.",), ("col2.",)]
-        mock_cursor.fetchall.return_value = [("value1.", "value2.")]
+        mock_cursor.description = [("col1",), ("col2",)]
+        mock_cursor.fetchall.return_value = [("value1", "value2")]
         mock_conn.cursor.return_value = mock_cursor
         mock_pool.get_connection.return_value.__enter__ = Mock(return_value=mock_conn)
         mock_pool.get_connection.return_value.__exit__ = Mock(return_value=False)
 
-        with patch.object(AzureSQLChatHistoryRepository, "_create_tables."):
+        with patch.object(AzureSQLChatHistoryRepository, "_create_tables"):
             repo = AzureSQLChatHistoryRepository(mock_config, mock_builder, mock_pool)
 
-            result = repo._execute_sql("SELECT * FROM test.", expect_results=True)
+            result = repo._execute_sql("SELECT * FROM test", expect_results=True)
 
-            mock_cursor.execute.assert_called_once_with("SELECT * FROM test.", [])
+            mock_cursor.execute.assert_called_once_with("SELECT * FROM test", [])
             mock_cursor.close.assert_called_once()
-            assert result == [{"col1.": "value1.", "col2.": "value2."}]
+            assert result == [{"col1": "value1", "col2": "value2"}]
 
     def test_execute_sql_without_results(self):
         """Test Azure SQL repository executes INSERT/UPDATE queries and commits changes."""
@@ -270,12 +270,12 @@ class TestAzureSQLChatHistoryRepository:
         mock_pool.get_connection.return_value.__enter__ = Mock(return_value=mock_conn)
         mock_pool.get_connection.return_value.__exit__ = Mock(return_value=False)
 
-        with patch.object(AzureSQLChatHistoryRepository, "_create_tables."):
+        with patch.object(AzureSQLChatHistoryRepository, "_create_tables"):
             repo = AzureSQLChatHistoryRepository(mock_config, mock_builder, mock_pool)
 
-            repo._execute_sql("INSERT INTO test VALUES (?).", ["value."], expect_results=False)
+            repo._execute_sql("INSERT INTO test VALUES (?)", ["value"], expect_results=False)
 
-            mock_cursor.execute.assert_called_once_with("INSERT INTO test VALUES (?).", ["value."])
+            mock_cursor.execute.assert_called_once_with("INSERT INTO test VALUES (?)", ["value"])
             mock_conn.commit.assert_called_once()
             mock_cursor.close.assert_called_once()
 
@@ -293,13 +293,13 @@ class TestRepositoryIntegration:
 
         builder = QueryBuilder(SQLiteDialect())
 
-        with patch.object(SQLiteChatHistoryRepository, "_create_tables."):
+        with patch.object(SQLiteChatHistoryRepository, "_create_tables"):
             repo = SQLiteChatHistoryRepository(mock_config, builder, mock_pool)
 
             # Test that repository uses query builder for SQL generation
             query = repo.query_builder.insert_message()
-            assert "INSERT INTO chat_history." in query
-            assert query.count("?.") == 11  # Should have 11 parameters
+            assert "INSERT INTO chat_history" in query
+            assert query.count("?") == 11  # Should have 11 parameters
 
     def test_azuresql_repository_uses_query_builder(self):
         """Test Azure SQL repository uses query builder to generate Azure SQL-specific syntax."""
@@ -315,12 +315,12 @@ class TestRepositoryIntegration:
 
         builder = QueryBuilder(AzureSQLDialect())
 
-        with patch.object(AzureSQLChatHistoryRepository, "_create_tables."):
+        with patch.object(AzureSQLChatHistoryRepository, "_create_tables"):
             repo = AzureSQLChatHistoryRepository(mock_config, builder, mock_pool)
 
             # Test that repository uses query builder for SQL generation
             query = repo.query_builder.select_latest_memory()
-            assert "SELECT TOP 1." in query  # Azure SQL specific syntax
+            assert "SELECT TOP 1" in query  # Azure SQL specific syntax
 
     def test_different_dialects_same_interface(self):
         """Test that repositories with different dialects have the same interface."""
@@ -331,25 +331,25 @@ class TestRepositoryIntegration:
         azuresql_builder = QueryBuilder(AzureSQLDialect())
 
         with (
-            patch.object(SQLiteChatHistoryRepository, "_create_tables."),
-            patch.object(AzureSQLChatHistoryRepository, "_create_tables."),
+            patch.object(SQLiteChatHistoryRepository, "_create_tables"),
+            patch.object(AzureSQLChatHistoryRepository, "_create_tables"),
         ):
             sqlite_repo = SQLiteChatHistoryRepository(mock_config, sqlite_builder, mock_pool)
             azuresql_repo = AzureSQLChatHistoryRepository(mock_config, azuresql_builder, mock_pool)
 
             # Both should have the same interface methods
-            assert hasattr(sqlite_repo, "_execute_sql.")
-            assert hasattr(azuresql_repo, "_execute_sql.")
+            assert hasattr(sqlite_repo, "_execute_sql")
+            assert hasattr(azuresql_repo, "_execute_sql")
 
-            assert hasattr(sqlite_repo, "query_builder.")
-            assert hasattr(azuresql_repo, "query_builder.")
+            assert hasattr(sqlite_repo, "query_builder")
+            assert hasattr(azuresql_repo, "query_builder")
 
             # Both should be able to generate queries
             sqlite_query = sqlite_repo.query_builder.insert_message()
             azuresql_query = azuresql_repo.query_builder.insert_message()
 
             # Different syntax but same parameter count
-            assert sqlite_query.count("?.") == azuresql_query.count("?.")
+            assert sqlite_query.count("?") == azuresql_query.count("?")
 
 
 class TestErrorHandling:
@@ -362,13 +362,13 @@ class TestErrorHandling:
         mock_pool = Mock()
 
         # Simulate database error
-        mock_pool.get_connection.side_effect = Exception("Database connection failed.")
+        mock_pool.get_connection.side_effect = Exception("Database connection failed")
 
-        with patch.object(SQLiteChatHistoryRepository, "_create_tables."):
+        with patch.object(SQLiteChatHistoryRepository, "_create_tables"):
             repo = SQLiteChatHistoryRepository(mock_config, mock_builder, mock_pool)
 
             with pytest.raises(Exception):
-                repo._execute_sql("SELECT * FROM test.")
+                repo._execute_sql("SELECT * FROM test")
 
     def test_azuresql_repository_database_error(self):
         """Test Azure SQL repository raises exception when database connection fails."""
@@ -377,10 +377,10 @@ class TestErrorHandling:
         mock_pool = Mock()
 
         # Simulate database error
-        mock_pool.get_connection.side_effect = Exception("Database connection failed.")
+        mock_pool.get_connection.side_effect = Exception("Database connection failed")
 
-        with patch.object(AzureSQLChatHistoryRepository, "_create_tables."):
+        with patch.object(AzureSQLChatHistoryRepository, "_create_tables"):
             repo = AzureSQLChatHistoryRepository(mock_config, mock_builder, mock_pool)
 
             with pytest.raises(Exception):
-                repo._execute_sql("SELECT * FROM test.")
+                repo._execute_sql("SELECT * FROM test")

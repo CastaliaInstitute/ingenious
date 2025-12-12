@@ -2,15 +2,18 @@
 
 This module provides database-agnostic connection pooling with health checks,
 retry logic, and automatic connection lifecycle management.
+
+Supports both synchronous and asynchronous usage patterns.
 """
 
+import asyncio
 import sqlite3
 import threading
 import time
 from abc import ABC, abstractmethod
-from contextlib import contextmanager
+from contextlib import asynccontextmanager, contextmanager
 from queue import Empty, Queue
-from typing import Any, Iterator, Protocol
+from typing import Any, AsyncIterator, Iterator, Protocol
 
 import pyodbc
 
@@ -139,7 +142,7 @@ class SQLiteConnectionFactory(ConnectionFactory):
         try:
             conn.execute("SELECT 1").fetchone()
             return True
-        except Exception:
+        except Exception:  # nosec B110: connection cleanup
             return False
 
 
@@ -186,7 +189,7 @@ class AzureSQLConnectionFactory(ConnectionFactory):
             cursor.fetchone()
             cursor.close()
             return True
-        except Exception:
+        except Exception:  # nosec B110: connection cleanup
             return False
 
 
@@ -244,7 +247,7 @@ class ConnectionPool:
                     self._created_connections += 1
                 else:
                     conn.close()
-            except Exception:
+            except Exception:  # nosec B110: connection cleanup
                 # If we can't create initial connections, we'll create them on demand
                 break
 
@@ -299,7 +302,7 @@ class ConnectionPool:
                         if conn:
                             try:
                                 conn.close()
-                            except Exception:
+                            except Exception:  # nosec B110: connection cleanup
                                 pass
                             with self._lock:
                                 self._created_connections -= 1
@@ -309,7 +312,7 @@ class ConnectionPool:
                     if conn:
                         try:
                             conn.close()
-                        except Exception:
+                        except Exception:  # nosec B110: connection cleanup
                             pass
                         with self._lock:
                             self._created_connections -= 1
@@ -322,7 +325,7 @@ class ConnectionPool:
                 if conn:
                     try:
                         conn.close()
-                    except Exception:
+                    except Exception:  # nosec B110: connection cleanup
                         pass
                     with self._lock:
                         self._created_connections -= 1
@@ -352,3 +355,118 @@ class ConnectionPool:
 
         with self._lock:
             self._created_connections = 0
+
+    @asynccontextmanager
+    async def get_connection_async(self) -> AsyncIterator[DatabaseConnection]:
+        """Get a connection from the pool as an async context manager.
+
+        This method wraps the synchronous get_connection() in asyncio.to_thread()
+        to avoid blocking the event loop during connection acquisition and health checks.
+
+        Use this method when calling from async code to prevent blocking.
+
+        Yields:
+            A healthy database connection.
+
+        Raises:
+            RuntimeError: If unable to get a connection after max_retries attempts.
+
+        Example:
+            async with pool.get_connection_async() as conn:
+                # Use connection
+                pass
+        """
+        conn = None
+        try:
+            # Acquire connection in a thread to avoid blocking the event loop
+            conn = await asyncio.to_thread(self._acquire_connection)
+            yield conn
+        finally:
+            if conn:
+                # Return connection to pool in a thread
+                await asyncio.to_thread(self._release_connection, conn)
+
+    def _acquire_connection(self) -> DatabaseConnection:
+        """Acquire a connection from the pool (internal synchronous method).
+
+        Returns:
+            A healthy database connection.
+
+        Raises:
+            RuntimeError: If unable to get a connection after max_retries attempts.
+        """
+        retry_count = 0
+        conn = None
+
+        while retry_count <= self.max_retries:
+            try:
+                # Try to get a connection from the pool
+                try:
+                    conn = self._pool.get(timeout=5.0)
+                except Empty:
+                    # Pool is empty, create a new connection
+                    with self._lock:
+                        if self._created_connections < self.pool_size * 2:
+                            conn = self.connection_factory.create_connection()
+                            self._created_connections += 1
+                        else:
+                            time.sleep(self.retry_delay)
+                            retry_count += 1
+                            continue
+
+                # Check if connection is healthy
+                if conn and self.connection_factory.is_connection_healthy(conn):
+                    return conn
+                else:
+                    # Connection is unhealthy, close it and retry
+                    if conn:
+                        try:
+                            conn.close()
+                        except Exception:  # nosec B110: connection cleanup
+                            pass
+                        with self._lock:
+                            self._created_connections -= 1
+
+                    retry_count += 1
+                    if retry_count <= self.max_retries:
+                        time.sleep(self.retry_delay * retry_count)
+
+            except Exception as e:
+                if conn:
+                    try:
+                        conn.close()
+                    except Exception:  # nosec B110: connection cleanup
+                        pass
+                    with self._lock:
+                        self._created_connections -= 1
+
+                retry_count += 1
+                if retry_count <= self.max_retries:
+                    time.sleep(self.retry_delay * retry_count)
+                else:
+                    raise RuntimeError(
+                        f"Failed to get database connection after {self.max_retries} retries: {e}"
+                    )
+
+        raise RuntimeError(f"Failed to get database connection after {self.max_retries} retries")
+
+    def _release_connection(self, conn: DatabaseConnection) -> None:
+        """Release a connection back to the pool (internal synchronous method).
+
+        Args:
+            conn: The database connection to release.
+        """
+        try:
+            if self.connection_factory.is_connection_healthy(conn):
+                self._pool.put_nowait(conn)
+            else:
+                conn.close()
+                with self._lock:
+                    self._created_connections -= 1
+        except Exception:  # nosec B110: connection cleanup
+            try:
+                conn.close()
+            except Exception:  # nosec B110: connection cleanup
+                pass
+            with self._lock:
+                self._created_connections -= 1

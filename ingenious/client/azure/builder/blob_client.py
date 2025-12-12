@@ -1,3 +1,5 @@
+"""Azure Blob Storage client builders for file operations."""
+
 from typing import Optional
 
 from azure.storage.blob import BlobClient, BlobServiceClient
@@ -15,6 +17,11 @@ class BlobServiceClientBuilder(AzureClientBuilder):
         self,
         file_storage_config: FileStorageContainerSettings,
     ):
+        """Initialize blob service client builder.
+
+        Args:
+            file_storage_config: File storage container configuration settings
+        """
         # Extract authentication parameters from config
         auth_config = self._create_auth_config_from_storage_config(file_storage_config)
         super().__init__(auth_config=auth_config)
@@ -68,6 +75,13 @@ class BlobClientBuilder(AzureClientBuilder):
         container_name: Optional[str] = None,
         blob_name: Optional[str] = None,
     ):
+        """Initialize blob client builder.
+
+        Args:
+            file_storage_config: File storage container configuration settings
+            container_name: Azure Blob Storage container name
+            blob_name: Name of the blob file
+        """
         # Extract authentication parameters from config
         auth_config = self._create_auth_config_from_storage_config(file_storage_config)
         super().__init__(auth_config=auth_config)

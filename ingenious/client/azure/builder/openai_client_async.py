@@ -9,9 +9,12 @@ configuration options and handles credential resolution with proper precedence.
 from __future__ import annotations
 
 import inspect
-from typing import Any, Mapping, Optional
+from typing import TYPE_CHECKING, Any, Mapping, Optional
 
 from ingenious.config.auth_config import AzureAuthConfig
+
+if TYPE_CHECKING:
+    from openai import AsyncAzureOpenAI
 
 DEFAULT_OPENAI_MAX_RETRIES = 3
 _COGS_SCOPE = "https://cognitiveservices.azure.com/.default"
@@ -55,7 +58,10 @@ def _to_plain_secret(value: Any) -> Optional[str]:
     getter = getattr(value, "get_secret_value", None)
     if callable(getter):
         try:
-            return getter()
+            result = getter()
+            if isinstance(result, str):
+                return result
+            return None
         except Exception:
             return None
     return None
@@ -122,7 +128,7 @@ def _filter_kwargs_for_ctor(cls: type, kwargs: dict[str, Any]) -> dict[str, Any]
         Filtered dictionary containing only accepted parameters.
     """
     try:
-        sig = inspect.signature(cls.__init__)
+        sig = inspect.signature(cls)
     except (ValueError, TypeError):
         return kwargs
 
@@ -186,7 +192,7 @@ class AsyncAzureOpenAIClientBuilder:
         norm_opts = _normalize_openai_client_options(client_options, config)
         return cls(config, api_version=api_version, client_options=norm_opts)
 
-    def build(self):
+    def build(self) -> "AsyncAzureOpenAI":
         """Build the async Azure OpenAI client.
 
         Returns:

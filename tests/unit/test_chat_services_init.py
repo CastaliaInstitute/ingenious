@@ -11,7 +11,7 @@ class TestChatServicesInit:
     def test_path_extension(self):
         """Test that __path__ is extended using extend_path."""
         # The module should have a __path__ attribute after import
-        assert hasattr(ingenious.services.chat_services, "__path__.")
+        assert hasattr(ingenious.services.chat_services, "__path__")
         assert ingenious.services.chat_services.__path__ is not None
 
     def test_extend_path_import(self):
@@ -28,14 +28,14 @@ class TestChatServicesInit:
     def test_module_structure(self):
         """Test the overall module structure."""
         # Verify the module has the expected structure
-        assert hasattr(ingenious.services.chat_services, "__name__.")
-        assert hasattr(ingenious.services.chat_services, "__path__.")
+        assert hasattr(ingenious.services.chat_services, "__name__")
+        assert hasattr(ingenious.services.chat_services, "__path__")
 
     def test_namespace_package_comment(self):
         """Test that the module has namespace package documentation."""
         # The module should have comments explaining the namespace package behavior
         # We can't directly test comments, but we can verify the module loads properly
-        assert ingenious.services.chat_services.__name__ == "ingenious.services.chat_services."
+        assert ingenious.services.chat_services.__name__ == "ingenious.services.chat_services"
 
     def test_can_import_without_error(self):
         """Test that the module can be imported without errors."""
@@ -44,11 +44,11 @@ class TestChatServicesInit:
 
         assert chat_services is not None
 
-    @patch("ingenious.services.chat_services.extend_path.")
+    @patch("ingenious.services.chat_services.extend_path")
     def test_extend_path_called_with_correct_params(self, mock_extend_path):
         """Test that extend_path would be called with correct parameters."""
         # Mock the extend_path return value
-        mock_extend_path.return_value = ["/mocked/path."]
+        mock_extend_path.return_value = ["/mocked/path"]
 
         # The extend_path should be called with __path__ and __name__
         # We can't easily test the exact call without reimporting, but we can
@@ -65,6 +65,6 @@ class TestChatServicesInit:
     def test_module_name_matches_package_structure(self):
         """Test that module name matches the expected package structure."""
         module_name = ingenious.services.chat_services.__name__
-        assert module_name == "ingenious.services.chat_services."
-        assert "services." in module_name
-        assert "chat_services." in module_name
+        assert module_name == "ingenious.services.chat_services"
+        assert "services" in module_name
+        assert "chat_services" in module_name

@@ -1,4 +1,4 @@
-"""Provides a semantic chunking strategy using ML embedding models.
+r"""Provides a semantic chunking strategy using ML embedding models.
 
 Purpose & Context
 -----------------

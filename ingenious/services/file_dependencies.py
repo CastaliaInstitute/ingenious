@@ -14,7 +14,7 @@ from ingenious.files.files_repository import FileStorage
 from ingenious.services.container import Container
 
 
-@inject
+@inject  # type: ignore[misc]
 def get_config(
     config: IngeniousSettings = Provide[Container.config],
 ) -> IngeniousSettings:
@@ -22,7 +22,7 @@ def get_config(
     return config
 
 
-@inject
+@inject  # type: ignore[misc]
 def get_file_storage_data(
     file_storage: FileStorage = Provide[Container.file_storage_data],
 ) -> FileStorage:
@@ -30,7 +30,7 @@ def get_file_storage_data(
     return file_storage
 
 
-@inject
+@inject  # type: ignore[misc]
 def get_file_storage_revisions(
     file_storage: FileStorage = Provide[Container.file_storage_revisions],
 ) -> FileStorage:

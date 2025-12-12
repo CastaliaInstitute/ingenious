@@ -11,8 +11,8 @@ class TestHTTPError:
 
     def test_init_with_detail(self):
         """Test HTTPError initialization with detail."""
-        error = HTTPError(detail="Not found.")
-        assert error.detail == "Not found."
+        error = HTTPError(detail="Not found")
+        assert error.detail == "Not found"
 
     def test_init_with_missing_detail(self):
         """Test HTTPError initialization fails without detail."""
@@ -59,7 +59,7 @@ class TestHTTPError:
         """Test HTTPError can be serialized to JSON."""
         error = HTTPError(detail="Test error")
         json_str = error.model_dump_json()
-        assert '"detail.":"Test error"' in json_str
+        assert '"detail":"Test error"' in json_str
 
     def test_model_validation_error_message(self):
         """Test validation error provides helpful message."""
@@ -68,24 +68,24 @@ class TestHTTPError:
         except ValidationError as e:
             error_details = e.errors()
             assert len(error_details) > 0
-            assert "detail." in str(error_details[0])
+            assert "detail" in str(error_details[0])
 
     def test_different_detail_types_converted_to_string(self):
         """Test that numeric detail gets converted to string if possible."""
         # Pydantic should handle type coercion for simple types
-        error = HTTPError(detail="404.")
-        assert error.detail == "404."
+        error = HTTPError(detail="404")
+        assert error.detail == "404"
         assert isinstance(error.detail, str)
 
     def test_long_detail_message(self):
         """Test HTTPError with long detail message."""
-        long_message = "This is a very long error message that could contain detailed information about what went wrong in the application."
+        long_message = "This is a very long error message that could contain detailed information about what went wrong in the application"
         error = HTTPError(detail=long_message)
         assert error.detail == long_message
 
     def test_detail_with_special_characters(self):
         """Test HTTPError with special characters in detail."""
-        special_detail = "Error: Something went wrong! @#$%^&*()."
+        special_detail = "Error: Something went wrong! @#$%^&*()"
         error = HTTPError(detail=special_detail)
         assert error.detail == special_detail
 

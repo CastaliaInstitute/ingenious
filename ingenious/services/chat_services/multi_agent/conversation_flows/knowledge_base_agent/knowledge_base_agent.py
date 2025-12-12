@@ -25,7 +25,6 @@ Azure services and local file storage for ChromaDB persistence.
 from __future__ import annotations
 
 import asyncio
-import json
 import logging
 import os
 import time
@@ -54,7 +53,7 @@ from autogen_core.tools import FunctionTool as _FunctionTool
 from pydantic import SecretStr
 
 from ingenious.client.azure import AzureClientFactory
-from ingenious.models.chat import ChatRequest, ChatResponse, ChatResponseChunk
+from ingenious.models.chat import ChatResponse, ChatResponseChunk, IChatRequest
 from ingenious.services.azure_search.client_init import make_async_search_client
 from ingenious.services.chat_services.multi_agent.service import IConversationFlow
 from ingenious.services.retrieval.errors import PreflightError
@@ -73,13 +72,8 @@ AssistantAgent = _AssistantAgent
 __all__ = ["ConversationFlow", "FunctionTool", "AssistantAgent"]
 
 if TYPE_CHECKING:
-    # Imports for ConversationFlow attributes (assuming Service inheritance)
-    # Imports used in methods
-
-    from ingenious.config.config import Config
-
-    # Imports used dynamically or optionally
-    from ingenious.services.chat_services.service import ChatService
+    # Imports for ConversationFlow attributes
+    from ingenious.config.settings import IngeniousSettings
 
 
 # Safe, conservative defaults for k-values in each mode.
@@ -88,9 +82,20 @@ _TOPK_ASSIST_DEFAULT: int = 5
 
 # Try YAML; fall back to JSON/plaintext if PyYAML isn't installed
 try:
-    import yaml  # type: ignore[import-untyped]
+    import yaml
 except Exception:
     yaml = None  # sentinel to denote "no YAML available"
+
+
+class _StreamingState:
+    """Mutable state container for streaming response processing."""
+
+    __slots__ = ("accumulated_content", "total_tokens", "completion_tokens")
+
+    def __init__(self) -> None:
+        self.accumulated_content: str = ""
+        self.total_tokens: int = 0
+        self.completion_tokens: int = 0
 
 
 class ConversationFlow(IConversationFlow):
@@ -105,8 +110,7 @@ class ConversationFlow(IConversationFlow):
 
     if TYPE_CHECKING:
         # Attributes initialized by IConversationFlow/Service parent class
-        _config: Config
-        _chat_service: ChatService | None
+        _config: "IngeniousSettings"
         # Attributes used internally
         _last_mem_warn_ts: float
         _kb_path: str
@@ -140,40 +144,12 @@ class ConversationFlow(IConversationFlow):
             "chroma_db",  # Invariant: default or _memory_path is str.
         )
 
-    def _as_text(self, x: Any) -> str:
-        """Safely coerce any object (list/dict/bytes/etc.) to text.
-
-        This method provides a robust fallback for converting arbitrary data to a
-        string. It handles None, bytes, and attempts to serialize other types as
-        JSON before resorting to the standard `str()` representation, preventing
-        conversion errors from propagating.
-
-        Args:
-            x: The object to convert.
-
-        Returns:
-            A string representation of the input.
-        """
-        if x is None:
-            return ""
-        if isinstance(x, str):
-            return x
-        if isinstance(x, bytes):
-            try:
-                return x.decode("utf-8", "replace")
-            except Exception:
-                return str(x)
-        try:
-            return json.dumps(x, ensure_ascii=False)
-        except Exception:
-            return str(x)
-
     def _to_text(self, x: Any) -> str:
-        """Prefer joining lists of strings; otherwise fall back to JSON/str via _as_text.
+        """Prefer joining lists of strings; otherwise fall back to JSON/str.
 
         This method is designed to provide a more natural string representation for
         lists by joining their elements. For all non-list types, it delegates the
-        conversion to the `_as_text` method for safe, generic handling.
+        conversion to the `to_text` helper for safe, generic handling.
 
         Args:
             x: The object to convert.
@@ -181,20 +157,18 @@ class ConversationFlow(IConversationFlow):
         Returns:
             A string representation of the input, with special handling for lists.
         """
-        if isinstance(x, list):
-            parts: list[str] = []
-            for p in x:
-                parts.append(p if isinstance(p, str) else self._as_text(p))
-            return "".join(parts)
-        return self._as_text(x)
+        from ._helpers import to_text
+
+        return to_text(x)
 
     # -----------------------------
     # Diagnostics toggle
     # -----------------------------
     def _diagnostics_enabled(self) -> bool:
         """Global opt-in switch for diagnostics that may expose configuration (never full secrets)."""
-        v = os.getenv("INGENIOUS_DIAGNOSTICS_ENABLED", "")
-        return v.strip().lower() in {"1", "true", "yes", "on"}
+        from ._helpers import diagnostics_enabled
+
+        return diagnostics_enabled()
 
     # -----------------------------
     # Instrumentation: LLM usage tracker
@@ -220,7 +194,7 @@ class ConversationFlow(IConversationFlow):
         """
         try:
             # The 'ingenious' package is an optional dependency for usage telemetry.
-            from ingenious.models.agent import (  # type: ignore[import-untyped]
+            from ingenious.models.agent import (
                 LLMUsageTracker as _LLMUsageTracker,
             )
 
@@ -243,23 +217,49 @@ class ConversationFlow(IConversationFlow):
     # -----------------------------
     # Public API (non-streaming)
     # -----------------------------
-    async def get_conversation_response(self, chat_request: ChatRequest) -> ChatResponse:
+    async def get_conversation_response(self, chat_request: IChatRequest) -> ChatResponse:
         """Entry point for one-shot, non-streaming KB responses."""
         model_config = self._config.models[0]
-
-        # Dedicated logger; applications should attach handlers to this named logger.
         base_logger = logging.getLogger(f"{EVENT_LOGGER_NAME}.kb")
         base_logger.setLevel(logging.INFO)
 
-        # Best-effort usage telemetry
         llm_logger: Optional[logging.Handler] = self._maybe_attach_llm_usage_logger(
             base_logger, "knowledge_base"
         )
-
-        # Build memory context (non-fatal, throttled warnings on failure).
         memory_context = await self._build_memory_context(chat_request)
+        mode, coerced = self._resolve_kb_mode()
+        model_client: Any | None = None
 
-        # ── Mode selection with coercion tracking ─────────────────────────────
+        try:
+            use_azure_search = self._should_use_azure_search()
+
+            if mode == "direct":
+                return await self._handle_direct_mode(
+                    chat_request,
+                    memory_context,
+                    use_azure_search,
+                    coerced,
+                    model_config,
+                    base_logger,
+                )
+
+            # ASSIST MODE
+            model_client = AzureClientFactory.create_openai_chat_completion_client(model_config)
+            return await self._handle_assist_mode(
+                chat_request,
+                memory_context,
+                use_azure_search,
+                model_client,
+                model_config,
+                base_logger,
+            )
+
+        finally:
+            await self._cleanup_model_client(model_client)
+            self._detach_logger_handler(llm_logger, base_logger)
+
+    def _resolve_kb_mode(self) -> Tuple[str, bool]:
+        """Resolve KB mode from config/env with coercion tracking."""
         raw_mode_val = getattr(self._config, "knowledge_base_mode", None) or os.getenv(
             "KB_MODE", "direct"
         )
@@ -268,408 +268,222 @@ class ConversationFlow(IConversationFlow):
         except Exception:
             raw_mode = "direct"
 
-        coerced = False
         if raw_mode in ("direct", "assist"):
-            mode = raw_mode
-        else:
-            # Invalid mode → coerce to "direct" with a safety-first behavior.
-            mode = "direct"
-            coerced = True
+            return raw_mode, False
+        return "direct", True
 
-        # Lazily create chat client only when needed (assist mode). Direct mode doesn't need one.
-        model_client: Any | None = None
+    async def _handle_direct_mode(
+        self,
+        chat_request: IChatRequest,
+        memory_context: str,
+        use_azure_search: bool,
+        coerced: bool,
+        model_config: Any,
+        base_logger: logging.Logger,
+    ) -> ChatResponse:
+        """Handle direct mode KB search."""
+        top_k = self._get_direct_mode_topk(chat_request, coerced)
 
-        try:
-            use_azure_search = self._should_use_azure_search()
+        search_text = await self._search_knowledge_base(
+            search_query=chat_request.user_prompt,
+            use_azure_search=use_azure_search,
+            top_k=top_k,
+            logger=base_logger,
+        )
 
-            if mode == "direct":
-                # When mode is coerced, we **ignore env overrides** but still **honor per-request** overrides.
-                if coerced:
-                    override = (
-                        self._resolve_topk_from_request(chat_request) if chat_request else None
-                    )
-                    top_k = override or _TOPK_DIRECT_DEFAULT
-                else:
-                    top_k = self._get_top_k("direct", chat_request)
+        backend_label = self._detect_backend_from_result(search_text, use_azure_search)
+        final_message = self._build_direct_response(
+            chat_request.user_prompt, memory_context, backend_label, search_text
+        )
 
-                # Perform the policy-aware KB search.
-                search_text = await self._search_knowledge_base(
-                    search_query=chat_request.user_prompt,
-                    use_azure_search=use_azure_search,
-                    top_k=top_k,
-                    logger=base_logger,
-                )
+        total_tokens, completion_tokens = await self._safe_count_tokens(
+            system_message=self._static_system_message(memory_context),
+            user_message=chat_request.user_prompt,
+            assistant_message=final_message,
+            model=model_config.model,
+            logger=base_logger,
+        )
 
-                # Align header backend label to the actual result (handles Azure/Chroma).
-                backend_from_result = (
-                    "Azure AI Search"
-                    if isinstance(search_text, str)
-                    and search_text.startswith("Found relevant information from Azure AI Search")
-                    else "local ChromaDB"
-                    if isinstance(search_text, str)
-                    and search_text.startswith("Found relevant information from ChromaDB")
-                    else ("Azure AI Search" if use_azure_search else "local ChromaDB")
-                )
-                context = (
-                    "Knowledge base search assistant using "
-                    f"{backend_from_result} for finding information."
-                )
+        return ChatResponse(
+            thread_id=chat_request.thread_id or "",
+            message_id=str(uuid.uuid4()),
+            agent_response=final_message,
+            token_count=total_tokens,
+            max_token_count=completion_tokens,
+            memory_summary=final_message,
+        )
 
-                # Deterministic final message, with explicit "User question:" line.
-                header = f"Context: {context}\n\n"
-                if memory_context:
-                    header += memory_context
-                header += f"User question: {chat_request.user_prompt}\n\n"
-                final_message = header + (search_text or "No response generated")
+    def _get_direct_mode_topk(self, chat_request: IChatRequest, coerced: bool) -> int:
+        """Get top_k for direct mode, handling coercion logic."""
+        if coerced:
+            override = self._resolve_topk_from_request(chat_request) if chat_request else None
+            return override or _TOPK_DIRECT_DEFAULT
+        return self._get_top_k("direct", chat_request)
 
-                # Token accounting (non-fatal; warns but never raises).
-                total_tokens, completion_tokens = await self._safe_count_tokens(
-                    system_message=self._static_system_message(memory_context),
-                    user_message=chat_request.user_prompt,
-                    assistant_message=final_message,
-                    model=model_config.model,
-                    logger=base_logger,
-                )
+    def _detect_backend_from_result(self, search_text: str, use_azure_search: bool) -> str:
+        """Detect which backend was used from the search result text."""
+        if isinstance(search_text, str):
+            if search_text.startswith("Found relevant information from Azure AI Search"):
+                return "Azure AI Search"
+            if search_text.startswith("Found relevant information from ChromaDB"):
+                return "local ChromaDB"
+        return "Azure AI Search" if use_azure_search else "local ChromaDB"
 
-                return ChatResponse(
-                    thread_id=chat_request.thread_id or "",
-                    message_id=str(uuid.uuid4()),
-                    agent_response=final_message,
-                    token_count=total_tokens,
-                    max_token_count=completion_tokens,
-                    memory_summary=final_message,
-                )
+    def _build_direct_response(
+        self, user_prompt: str, memory_context: str, backend_label: str, search_text: str
+    ) -> str:
+        """Build the final response message for direct mode."""
+        context = f"Knowledge base search assistant using {backend_label} for finding information."
+        header = f"Context: {context}\n\n"
+        if memory_context:
+            header += memory_context
+        header += f"User question: {user_prompt}\n\n"
+        return header + (search_text or "No response generated")
 
-            # --------- ASSIST MODE (optional) ---------
-            # Use an agent to summarize/format based on tool results.
-            # We need a chat client only in assist mode.
-            if model_client is None:
-                model_client = AzureClientFactory.create_openai_chat_completion_client(model_config)
-            use_azure_search = self._should_use_azure_search()
-            search_backend = "Azure AI Search" if use_azure_search else "local ChromaDB"
-            context = (
-                f"Knowledge base search assistant using {search_backend} for finding information."
-            )
+    async def _handle_assist_mode(
+        self,
+        chat_request: IChatRequest,
+        memory_context: str,
+        use_azure_search: bool,
+        model_client: Any,
+        model_config: Any,
+        base_logger: logging.Logger,
+    ) -> ChatResponse:
+        """Handle assist mode with LLM agent."""
+        search_backend = "Azure AI Search" if use_azure_search else "local ChromaDB"
+        context = f"Knowledge base search assistant using {search_backend} for finding information."
 
-            async def search_tool(search_query: str, topic: str = "general") -> str:
-                """Tool function: Search KB using Azure or local Chroma based on policy."""
-                top_k = self._get_top_k("assist", chat_request)
-                return await self._search_knowledge_base(
-                    search_query=search_query,
-                    use_azure_search=use_azure_search,
-                    top_k=top_k,
-                    logger=base_logger,
-                )
-
-            search_function_tool = FunctionTool(
-                search_tool,
-                description=f"Search for information using {search_backend}. "
-                "Use relevant keywords to find relevant information.",
-            )
-
-            system_message = self._assist_system_message(memory_context)
-            search_assistant = AssistantAgent(
-                name="search_assistant",
-                system_message=system_message,
-                model_client=model_client,
-                tools=[search_function_tool],
-                reflect_on_tool_use=True,
-            )
-
-            from autogen_agentchat.messages import TextMessage
-
-            user_msg = (
-                f"Context: {context}\n\nUser question: {chat_request.user_prompt}"
-                if context
-                else chat_request.user_prompt
-            )
-
-            cancellation_token = CancellationToken()
-            response = await search_assistant.on_messages(
-                messages=[TextMessage(content=user_msg, source="user")],
-                cancellation_token=cancellation_token,
-            )
-
-            assistant_text = (
-                self._to_text(response.chat_message.content)
-                if getattr(response, "chat_message", None)
-                else "No response generated"
-            )
-
-            # In assist mode we return the assistant's content verbatim.
-            final_message = assistant_text
-
-            total_tokens, completion_tokens = await self._safe_count_tokens(
-                system_message=system_message,
-                user_message=user_msg,
-                assistant_message=final_message,
-                model=model_config.model,
+        async def search_tool(search_query: str, _topic: str = "general") -> str:
+            """Tool function: Search KB using Azure or local Chroma based on policy."""
+            top_k = self._get_top_k("assist", chat_request)
+            return await self._search_knowledge_base(
+                search_query=search_query,
+                use_azure_search=use_azure_search,
+                top_k=top_k,
                 logger=base_logger,
             )
 
-            return ChatResponse(
-                thread_id=chat_request.thread_id or "",
-                message_id=str(uuid.uuid4()),
-                agent_response=final_message,
-                token_count=total_tokens,
-                max_token_count=completion_tokens,
-                memory_summary=final_message,
-            )
+        search_function_tool = FunctionTool(
+            search_tool,
+            description=f"Search for information using {search_backend}. "
+            "Use relevant keywords to find relevant information.",
+        )
 
-        finally:
-            # Always close the model client (best-effort).
-            if model_client is not None:
-                try:
-                    await model_client.close()
-                except Exception:
-                    pass
-            # Detach telemetry handler (best-effort).
+        system_message = self._assist_system_message(memory_context)
+        search_assistant = AssistantAgent(
+            name="search_assistant",
+            system_message=system_message,
+            model_client=model_client,
+            tools=[search_function_tool],
+            reflect_on_tool_use=True,
+        )
+
+        from autogen_agentchat.messages import TextMessage
+
+        user_msg = (
+            f"Context: {context}\n\nUser question: {chat_request.user_prompt}"
+            if context
+            else chat_request.user_prompt
+        )
+
+        cancellation_token = CancellationToken()
+        response = await search_assistant.on_messages(
+            messages=[TextMessage(content=user_msg, source="user")],
+            cancellation_token=cancellation_token,
+        )
+
+        # chat_message may be TextMessage or other BaseChatMessage subclass
+        assistant_text = "No response generated"
+        chat_msg = getattr(response, "chat_message", None)
+        if chat_msg is not None and hasattr(chat_msg, "content"):
+            assistant_text = self._to_text(chat_msg.content)
+
+        total_tokens, completion_tokens = await self._safe_count_tokens(
+            system_message=system_message,
+            user_message=user_msg,
+            assistant_message=assistant_text,
+            model=model_config.model,
+            logger=base_logger,
+        )
+
+        return ChatResponse(
+            thread_id=chat_request.thread_id or "",
+            message_id=str(uuid.uuid4()),
+            agent_response=assistant_text,
+            token_count=total_tokens,
+            max_token_count=completion_tokens,
+            memory_summary=assistant_text,
+        )
+
+    async def _cleanup_model_client(self, model_client: Optional[Any]) -> None:
+        """Safely close model client."""
+        if model_client is not None:
             try:
-                if llm_logger:
-                    base_logger.removeHandler(llm_logger)
-            except Exception:
+                await model_client.close()
+            except Exception:  # nosec B110
                 pass
+
+    def _detach_logger_handler(
+        self, handler: Optional[logging.Handler], logger: logging.Logger
+    ) -> None:
+        """Safely detach a handler from logger."""
+        try:
+            if handler:
+                logger.removeHandler(handler)
+        except Exception:  # nosec B110
+            pass
 
     # -----------------------------
     # Public API (streaming)
     # -----------------------------
     async def get_streaming_conversation_response(
-        self, chat_request: ChatRequest
+        self, chat_request: IChatRequest
     ) -> AsyncIterator[ChatResponseChunk]:
         """Streaming version of the knowledge base response pipeline."""
         message_id = str(uuid.uuid4())
         thread_id = chat_request.thread_id or ""
-
         model_config = self._config.models[0]
         base_logger = logging.getLogger(f"{EVENT_LOGGER_NAME}.kb")
         base_logger.setLevel(logging.INFO)
 
-        # Best-effort usage telemetry
         llm_logger: Optional[logging.Handler] = self._maybe_attach_llm_usage_logger(
             base_logger, "knowledge_base"
         )
-
         model_client = AzureClientFactory.create_openai_chat_completion_client(model_config)
 
         try:
-            # Initial status: "searching"
-            yield ChatResponseChunk(
-                thread_id=thread_id,
-                message_id=message_id,
-                chunk_type="status",
-                content="Searching knowledge base...",
-                is_final=False,
-            )
+            yield self._make_status_chunk(thread_id, message_id, "Searching knowledge base...")
 
             memory_context = await self._build_memory_context(chat_request)
             use_azure_search = self._should_use_azure_search()
-            search_backend = "Azure AI Search" if use_azure_search else "local ChromaDB"
-
-            # Define a tool the agent can call during streaming.
-            async def search_tool(search_query: str, topic: str = "general") -> str:
-                """Tool function: Search KB using Azure or local Chroma based on policy."""
-                top_k = self._get_top_k("assist", chat_request)
-                return await self._search_knowledge_base(
-                    search_query=search_query,
-                    use_azure_search=use_azure_search,
-                    top_k=top_k,
-                    logger=base_logger,
-                )
-
-            search_function_tool = FunctionTool(
-                search_tool,
-                description=f"Search for information using {search_backend}. Use relevant keywords to find relevant information.",
-            )
-
-            system_message = self._streaming_system_message(memory_context)
-            search_assistant = AssistantAgent(
-                name="search_assistant",
-                system_message=system_message,
-                model_client=model_client,
-                tools=[search_function_tool],
-                reflect_on_tool_use=False,  # suppress 'thinking about tools'
+            search_assistant, system_message = self._create_streaming_assistant(
+                chat_request, memory_context, use_azure_search, model_client, base_logger
             )
 
             user_msg = f"User query: {chat_request.user_prompt}"
+            yield self._make_status_chunk(thread_id, message_id, "Generating response...")
 
-            # Second status: "generating"
-            yield ChatResponseChunk(
-                thread_id=thread_id,
-                message_id=message_id,
-                chunk_type="status",
-                content="Generating response...",
-                is_final=False,
+            stream_state = _StreamingState()
+            async for chunk in self._process_stream(
+                search_assistant, user_msg, thread_id, message_id, stream_state, base_logger
+            ):
+                yield chunk
+
+            # Finalize token counts
+            total_tokens, completion_tokens = await self._finalize_token_counts(
+                stream_state, system_message, user_msg, model_config, base_logger
             )
 
-            accumulated_content = ""
-            total_tokens = 0
-            completion_tokens = 0
-
-            cancellation_token = CancellationToken()
-
-            try:
-
-                def _looks_like_tool_chatter(text: str) -> bool:
-                    # Heuristic for tool JSON or narration the model sometimes emits as plain text
-                    if not text:
-                        return False
-                    bad_markers = (
-                        '"tool_calls"',
-                        '"function":{"name"',
-                        '"function_call"',  # OpenAI-style
-                        "Calling tool",
-                        "Tool result",
-                        "search_tool(",  # narrated calls
-                    )
-                    return any(m in text for m in bad_markers)
-
-                def _is_tool_event(obj) -> bool:
-                    # Try class name first (e.g., ToolCall*, ToolResult*)
-                    cls = obj.__class__.__name__.lower()
-                    if any(k in cls for k in ("tool", "functioncall", "function")):
-                        return True
-
-                    # Some streaming objects have an 'event' or 'delta' shape
-                    ev = getattr(obj, "event", None)
-                    if isinstance(ev, str) and any(k in ev.lower() for k in ("tool", "function")):
-                        return True
-
-                    # If the object exposes a dict-like view, check common keys
-                    for attr in ("tool_calls", "function_call", "tool_call_delta"):
-                        if hasattr(obj, attr):
-                            return True
-                        d = getattr(obj, "dict", None)
-                        if callable(d) and attr in (d() or {}):
-                            return True
-                    return False
-
-                # Forward messages yielded by the agent's stream.
-                stream = search_assistant.run_stream(
-                    task=user_msg, cancellation_token=cancellation_token
-                )
-
-                async for message in stream:
-                    # 1) Tool events: optionally surface a status, but don't forward noisy content
-                    if _is_tool_event(message):
-                        # Optional UX: show that we’re working with tools
-                        yield ChatResponseChunk(
-                            thread_id=thread_id,
-                            message_id=message_id,
-                            chunk_type="status",
-                            content="Searching knowledge base...",  # or "Using tools…"
-                            is_final=False,
-                        )
-                        continue
-
-                    # 2) Plain text chunks
-                    if hasattr(message, "content") and message.content:
-                        text = str(message.content)
-                        if _looks_like_tool_chatter(text):
-                            # Drop narrated tool JSON/spans that sneak in as text
-                            continue
-
-                        accumulated_content += text
-                        yield ChatResponseChunk(
-                            thread_id=thread_id,
-                            message_id=message_id,
-                            chunk_type="content",
-                            content=text,
-                            is_final=False,
-                        )
-
-                    # 3) Token usage
-                    if hasattr(message, "usage"):
-                        usage = message.usage
-                        if hasattr(usage, "total_tokens"):
-                            total_tokens = usage.total_tokens
-                        if hasattr(usage, "completion_tokens"):
-                            completion_tokens = usage.completion_tokens
-                        yield ChatResponseChunk(
-                            thread_id=thread_id,
-                            message_id=message_id,
-                            chunk_type="token_count",
-                            token_count=total_tokens,
-                            is_final=False,
-                        )
-
-                    # 4) Final flush restoration: surface terminal TaskResult content (if any).
-                    if hasattr(message, "__class__") and "TaskResult" in str(message.__class__):
-                        try:
-                            final_msgs = getattr(message, "messages", None)
-                            if final_msgs:
-                                final_msg = final_msgs[-1]
-                                final_text = getattr(final_msg, "content", None)
-                                if final_text and final_text not in accumulated_content:
-                                    if not _looks_like_tool_chatter(final_text):
-                                        accumulated_content += final_text
-                                        yield ChatResponseChunk(
-                                            thread_id=thread_id,
-                                            message_id=message_id,
-                                            chunk_type="content",
-                                            content=final_text,
-                                            is_final=False,
-                                        )
-                        except Exception:
-                            pass
-
-            except Exception as e:
-                # Surface a content chunk with the error (instead of failing the stream).
-                base_logger.error(f"Streaming error: {e}")
-                error_text = f"[Error during streaming: {str(e)}]"
-                accumulated_content += error_text
-                yield ChatResponseChunk(
-                    thread_id=thread_id,
-                    message_id=message_id,
-                    chunk_type="content",
-                    content=error_text,
-                    is_final=False,
-                )
-
-            # Safe token-count fallback if usage wasn't reported.
-            if total_tokens == 0:
-                try:
-                    total_tokens, completion_tokens = await self._safe_count_tokens(
-                        system_message=system_message,
-                        user_message=user_msg,
-                        assistant_message=accumulated_content,
-                        model=model_config.model,
-                        logger=base_logger,
-                    )
-                except Exception:
-                    total_tokens, completion_tokens = 0, 0
-
-                # Rough heuristic if counter still unavailable.
-                if total_tokens == 0:
-                    total_tokens = (
-                        len(system_message) + len(user_msg) + len(accumulated_content)
-                    ) // 4
-                    completion_tokens = len(accumulated_content) // 4
-
-            # Emit the best-effort token_count update before the final chunk.
-            yield ChatResponseChunk(
-                thread_id=thread_id,
-                message_id=message_id,
-                chunk_type="token_count",
-                token_count=total_tokens,
-                is_final=False,
-            )
-
-            # Finalize stream with a deterministic memory summary.
-            yield ChatResponseChunk(
-                thread_id=thread_id,
-                message_id=message_id,
-                chunk_type="final",
-                token_count=total_tokens,
-                max_token_count=completion_tokens,
-                memory_summary=(accumulated_content[:200] + "...")
-                if len(accumulated_content) > 200
-                else accumulated_content,
-                event_type="knowledge_base_streaming",
-                is_final=True,
+            yield self._make_token_count_chunk(thread_id, message_id, total_tokens)
+            yield self._make_final_chunk(
+                thread_id,
+                message_id,
+                total_tokens,
+                completion_tokens,
+                stream_state.accumulated_content,
             )
 
         except Exception as outer:
-            # "last resort" error; still emit a terminal chunk.
             base_logger.error(f"Error in streaming knowledge base response: {outer}")
             yield ChatResponseChunk(
                 thread_id=thread_id,
@@ -679,21 +493,273 @@ class ConversationFlow(IConversationFlow):
                 is_final=True,
             )
         finally:
+            await self._cleanup_model_client(model_client)
+            self._detach_logger_handler(llm_logger, base_logger)
+
+    def _create_streaming_assistant(
+        self,
+        chat_request: IChatRequest,
+        memory_context: str,
+        use_azure_search: bool,
+        model_client: Any,
+        base_logger: logging.Logger,
+    ) -> Tuple[Any, str]:
+        """Create the streaming search assistant and return (assistant, system_message)."""
+        search_backend = "Azure AI Search" if use_azure_search else "local ChromaDB"
+
+        async def search_tool(search_query: str, _topic: str = "general") -> str:
+            """Tool function: Search KB using Azure or local Chroma based on policy."""
+            top_k = self._get_top_k("assist", chat_request)
+            return await self._search_knowledge_base(
+                search_query=search_query,
+                use_azure_search=use_azure_search,
+                top_k=top_k,
+                logger=base_logger,
+            )
+
+        search_function_tool = FunctionTool(
+            search_tool,
+            description=f"Search for information using {search_backend}. Use relevant keywords to find relevant information.",
+        )
+
+        system_message = self._streaming_system_message(memory_context)
+        search_assistant = AssistantAgent(
+            name="search_assistant",
+            system_message=system_message,
+            model_client=model_client,
+            tools=[search_function_tool],
+            reflect_on_tool_use=False,
+        )
+        return search_assistant, system_message
+
+    async def _process_stream(
+        self,
+        search_assistant: Any,
+        user_msg: str,
+        thread_id: str,
+        message_id: str,
+        state: "_StreamingState",
+        base_logger: logging.Logger,
+    ) -> AsyncIterator[ChatResponseChunk]:
+        """Process the agent stream and yield chunks."""
+        cancellation_token = CancellationToken()
+
+        try:
+            stream = search_assistant.run_stream(
+                task=user_msg, cancellation_token=cancellation_token
+            )
+
+            async for message in stream:
+                async for chunk in self._handle_stream_message(
+                    message, thread_id, message_id, state
+                ):
+                    yield chunk
+
+        except Exception as e:
+            base_logger.error(f"Streaming error: {e}")
+            error_text = f"[Error during streaming: {str(e)}]"
+            state.accumulated_content += error_text
+            yield ChatResponseChunk(
+                thread_id=thread_id,
+                message_id=message_id,
+                chunk_type="content",
+                content=error_text,
+                is_final=False,
+            )
+
+    async def _handle_stream_message(
+        self,
+        message: Any,
+        thread_id: str,
+        message_id: str,
+        state: "_StreamingState",
+    ) -> AsyncIterator[ChatResponseChunk]:
+        """Handle a single stream message and yield appropriate chunks."""
+        # Tool events: show status
+        if self._is_tool_event(message):
+            yield self._make_status_chunk(thread_id, message_id, "Searching knowledge base...")
+            return
+
+        # Plain text chunks
+        if hasattr(message, "content") and message.content:
+            text = str(message.content)
+            if not self._looks_like_tool_chatter(text):
+                state.accumulated_content += text
+                yield ChatResponseChunk(
+                    thread_id=thread_id,
+                    message_id=message_id,
+                    chunk_type="content",
+                    content=text,
+                    is_final=False,
+                )
+
+        # Token usage
+        if hasattr(message, "usage"):
+            usage = message.usage
+            if hasattr(usage, "total_tokens"):
+                state.total_tokens = usage.total_tokens
+            if hasattr(usage, "completion_tokens"):
+                state.completion_tokens = usage.completion_tokens
+            yield self._make_token_count_chunk(thread_id, message_id, state.total_tokens)
+
+        # TaskResult final flush
+        async for chunk in self._handle_task_result(message, thread_id, message_id, state):
+            yield chunk
+
+    async def _handle_task_result(
+        self,
+        message: Any,
+        thread_id: str,
+        message_id: str,
+        state: "_StreamingState",
+    ) -> AsyncIterator[ChatResponseChunk]:
+        """Handle TaskResult messages for final content flush."""
+        if not (hasattr(message, "__class__") and "TaskResult" in str(message.__class__)):
+            return
+
+        try:
+            final_msgs = getattr(message, "messages", None)
+            if final_msgs:
+                final_msg = final_msgs[-1]
+                final_text = getattr(final_msg, "content", None)
+                if final_text and final_text not in state.accumulated_content:
+                    if not self._looks_like_tool_chatter(final_text):
+                        state.accumulated_content += final_text
+                        yield ChatResponseChunk(
+                            thread_id=thread_id,
+                            message_id=message_id,
+                            chunk_type="content",
+                            content=final_text,
+                            is_final=False,
+                        )
+        except Exception:  # nosec B110
+            pass
+
+    def _looks_like_tool_chatter(self, text: str) -> bool:
+        """Check if text looks like tool JSON or narration."""
+        if not text:
+            return False
+        bad_markers = (
+            '"tool_calls"',
+            '"function":{"name"',
+            '"function_call"',
+            "Calling tool",
+            "Tool result",
+            "search_tool(",
+        )
+        return any(m in text for m in bad_markers)
+
+    def _is_tool_event(self, obj: Any) -> bool:
+        """Check if message is a tool-related event."""
+        return (
+            self._class_name_indicates_tool(obj)
+            or self._event_attr_indicates_tool(obj)
+            or self._has_tool_attributes(obj)
+        )
+
+    def _class_name_indicates_tool(self, obj: Any) -> bool:
+        """Check if class name indicates a tool event."""
+        cls = obj.__class__.__name__.lower()
+        return any(k in cls for k in ("tool", "functioncall", "function"))
+
+    def _event_attr_indicates_tool(self, obj: Any) -> bool:
+        """Check if event attribute indicates a tool event."""
+        ev = getattr(obj, "event", None)
+        return isinstance(ev, str) and any(k in ev.lower() for k in ("tool", "function"))
+
+    def _has_tool_attributes(self, obj: Any) -> bool:
+        """Check if object has tool-related attributes."""
+        tool_attrs = ("tool_calls", "function_call", "tool_call_delta")
+        for attr in tool_attrs:
+            if hasattr(obj, attr):
+                return True
+            d = getattr(obj, "dict", None)
+            if callable(d) and attr in (d() or {}):
+                return True
+        return False
+
+    async def _finalize_token_counts(
+        self,
+        state: "_StreamingState",
+        system_message: str,
+        user_msg: str,
+        model_config: Any,
+        base_logger: logging.Logger,
+    ) -> Tuple[int, int]:
+        """Finalize token counts with fallback heuristics."""
+        total_tokens = state.total_tokens
+        completion_tokens = state.completion_tokens
+
+        if total_tokens == 0:
             try:
-                await model_client.close()
+                total_tokens, completion_tokens = await self._safe_count_tokens(
+                    system_message=system_message,
+                    user_message=user_msg,
+                    assistant_message=state.accumulated_content,
+                    model=model_config.model,
+                    logger=base_logger,
+                )
             except Exception:
-                pass
-            # Detach telemetry handler (best-effort).
-            try:
-                if llm_logger:
-                    base_logger.removeHandler(llm_logger)
-            except Exception:
-                pass
+                total_tokens, completion_tokens = 0, 0
+
+            if total_tokens == 0:
+                total_tokens = (
+                    len(system_message) + len(user_msg) + len(state.accumulated_content)
+                ) // 4
+                completion_tokens = len(state.accumulated_content) // 4
+
+        return total_tokens, completion_tokens
+
+    def _make_status_chunk(
+        self, thread_id: str, message_id: str, content: str
+    ) -> ChatResponseChunk:
+        """Create a status chunk."""
+        return ChatResponseChunk(
+            thread_id=thread_id,
+            message_id=message_id,
+            chunk_type="status",
+            content=content,
+            is_final=False,
+        )
+
+    def _make_token_count_chunk(
+        self, thread_id: str, message_id: str, token_count: int
+    ) -> ChatResponseChunk:
+        """Create a token count chunk."""
+        return ChatResponseChunk(
+            thread_id=thread_id,
+            message_id=message_id,
+            chunk_type="token_count",
+            token_count=token_count,
+            is_final=False,
+        )
+
+    def _make_final_chunk(
+        self,
+        thread_id: str,
+        message_id: str,
+        total_tokens: int,
+        completion_tokens: int,
+        accumulated_content: str,
+    ) -> ChatResponseChunk:
+        """Create the final stream chunk."""
+        return ChatResponseChunk(
+            thread_id=thread_id,
+            message_id=message_id,
+            chunk_type="final",
+            token_count=total_tokens,
+            max_token_count=completion_tokens,
+            memory_summary=(accumulated_content[:200] + "...")
+            if len(accumulated_content) > 200
+            else accumulated_content,
+            event_type="knowledge_base_streaming",
+            is_final=True,
+        )
 
     # -----------------------------
     # Internal helpers: memory context
     # -----------------------------
-    async def _build_memory_context(self, chat_request: ChatRequest) -> str:
+    async def _build_memory_context(self, chat_request: IChatRequest) -> str:
         """Build a compact memory context from the last 10 thread messages (non-fatal)."""
         memory_context = ""
         if chat_request.thread_id and self._chat_service:
@@ -705,7 +771,7 @@ class ConversationFlow(IConversationFlow):
                 )
                 if thread_messages:
                     recent = thread_messages[-10:] if len(thread_messages) > 10 else thread_messages
-                    preview = [f"{m.role}: {m.content[:100]}..." for m in recent]
+                    preview = [f"{m.role}: {(m.content or '')[:100]}..." for m in recent]
                     memory_context = "Previous conversation:\n" + "\n".join(preview) + "\n\n"
             except Exception as e:
                 # Throttled warn + debug to maintain observability without noise.
@@ -728,15 +794,9 @@ class ConversationFlow(IConversationFlow):
 
         Does not validate network/keys; runtime failures still fall back (if policy allows).
         """
-        try:
-            from ingenious.services.azure_search.provider import (
-                AzureSearchProvider,  # type: ignore
-            )
+        from ._helpers import is_azure_search_available
 
-            _ = AzureSearchProvider  # silence linter
-            return True
-        except Exception:
-            return False
+        return is_azure_search_available()
 
     def _azure_service(self) -> Any | None:
         """Return first azure_search_services entry or None."""
@@ -800,84 +860,82 @@ class ConversationFlow(IConversationFlow):
     # -----------------------------
     def _unwrap_secret_or_str(self, val: Any) -> str:
         """Return the raw secret value if `val` is a secret object; else str(val)."""
-        if hasattr(val, "get_secret_value"):
-            try:
-                return val.get_secret_value()
-            except Exception:
-                return ""
-        return str(val) if val is not None else ""
+        from ._helpers import unwrap_secret_or_str
+
+        return unwrap_secret_or_str(val)
 
     def _mask_secret(self, s: str | None) -> str:
         """Mask a secret: short → 'a***d'; long → 'abcd...wxyz (len=NN)'."""
-        s = s or ""
-        if len(s) <= 8:
-            return (s[:1] + "***" + s[-1:]) if s else "<empty>"
-        return f"{s[:4]}...{s[-4:]} (len={len(s)})"
+        from ._helpers import mask_secret
+
+        return mask_secret(s)
 
     def _dump_kb_config_snapshot(self, logger: Optional[logging.Logger] = None) -> dict[str, Any]:
         """Build a masked snapshot of key Azure KB settings.
 
         When diagnostics are enabled, write it to a YAML/plaintext file and log an INFO line.
         """
-        svc = self._azure_service()
-        snap: Dict[str, Any] = {}
         try:
-            endpoint = (getattr(svc, "endpoint", "") or "") if svc else ""
-            key_obj = (getattr(svc, "key", None) or getattr(svc, "api_key", None)) if svc else None
-            key_val = self._unwrap_secret_or_str(key_obj)
-            index_name = (getattr(svc, "index_name", "") or "") if svc else ""
-
-            env_endpoint = os.getenv("AZURE_SEARCH_ENDPOINT", "")
-            env_key = os.getenv("AZURE_SEARCH_KEY", "")
-            env_index = os.getenv("AZURE_SEARCH_INDEX_NAME", "")
-
-            snap = {
-                "kb_service_endpoint": endpoint,
-                "kb_service_index_name": index_name,
-                "kb_service_key_masked": self._mask_secret(key_val),
-                "kb_service_key_is_mock": (key_val == "mock-search-key-12345"),
-                "env_AZURE_SEARCH_ENDPOINT": env_endpoint,
-                "env_AZURE_SEARCH_INDEX_NAME": env_index,
-                "env_AZURE_SEARCH_KEY_masked": self._mask_secret(env_key),
-                "env_key_equals_service_key": (env_key == key_val)
-                if env_key and key_val
-                else False,
-            }
-
-            # Diagnostics are strictly opt-in; do not write files or emit config by default.
+            snap = self._build_snapshot_dict()
             if self._diagnostics_enabled():
-                try:
-                    if yaml is not None:
-                        with open(
-                            "Config_Values_knowldgebaseagent.yaml",
-                            "w",
-                            encoding="utf-8",
-                        ) as f:
-                            yaml.safe_dump(snap, f, sort_keys=False)
-                    else:
-                        with open(
-                            "Config_Values_knowldgebaseagent.yaml",
-                            "w",
-                            encoding="utf-8",
-                        ) as f:
-                            for k, v in snap.items():
-                                f.write(f"{k}: {v}\n")
-                except Exception as write_err:
-                    if logger:
-                        logger.debug("Diagnostics write failed: %s", write_err)
-                if logger:
-                    logger.info(
-                        "[KB Azure Config] endpoint=%s index=%s key=%s env_key=%s mock_key=%s",
-                        endpoint,
-                        index_name,
-                        snap["kb_service_key_masked"],
-                        snap["env_AZURE_SEARCH_KEY_masked"],
-                        snap["kb_service_key_is_mock"],
-                    )
+                self._write_diagnostics_file(snap, logger)
+                self._log_diagnostics(snap, logger)
         except Exception as e:
             if logger and self._diagnostics_enabled():
                 logger.debug("Failed to build KB config snapshot: %s", e)
+            snap = {}
         return snap
+
+    def _build_snapshot_dict(self) -> Dict[str, Any]:
+        """Build the snapshot dictionary from service and environment config."""
+        svc = self._azure_service()
+        endpoint = (getattr(svc, "endpoint", "") or "") if svc else ""
+        key_obj = (getattr(svc, "key", None) or getattr(svc, "api_key", None)) if svc else None
+        key_val = self._unwrap_secret_or_str(key_obj)
+        index_name = (getattr(svc, "index_name", "") or "") if svc else ""
+
+        env_endpoint = os.getenv("AZURE_SEARCH_ENDPOINT", "")
+        env_key = os.getenv("AZURE_SEARCH_KEY", "")
+        env_index = os.getenv("AZURE_SEARCH_INDEX_NAME", "")
+
+        return {
+            "kb_service_endpoint": endpoint,
+            "kb_service_index_name": index_name,
+            "kb_service_key_masked": self._mask_secret(key_val),
+            "kb_service_key_is_mock": (key_val == "mock-search-key-12345"),
+            "env_AZURE_SEARCH_ENDPOINT": env_endpoint,
+            "env_AZURE_SEARCH_INDEX_NAME": env_index,
+            "env_AZURE_SEARCH_KEY_masked": self._mask_secret(env_key),
+            "env_key_equals_service_key": bool(env_key and key_val and env_key == key_val),
+        }
+
+    def _write_diagnostics_file(
+        self, snap: Dict[str, Any], logger: Optional[logging.Logger]
+    ) -> None:
+        """Write diagnostics snapshot to file."""
+        try:
+            filename = "Config_Values_knowldgebaseagent.yaml"
+            with open(filename, "w", encoding="utf-8") as f:
+                if yaml is not None:
+                    yaml.safe_dump(snap, f, sort_keys=False)
+                else:
+                    for k, v in snap.items():
+                        f.write(f"{k}: {v}\n")
+        except Exception as write_err:
+            if logger:
+                logger.debug("Diagnostics write failed: %s", write_err)
+
+    def _log_diagnostics(self, snap: Dict[str, Any], logger: Optional[logging.Logger]) -> None:
+        """Log diagnostics information."""
+        if logger:
+            logger.info(
+                "[KB Azure Config] endpoint=%s index=%s key=%s env_key=%s mock_key=%s",
+                snap.get("kb_service_endpoint", ""),
+                snap.get("kb_service_index_name", ""),
+                snap.get("kb_service_key_masked", ""),
+                snap.get("env_AZURE_SEARCH_KEY_masked", ""),
+                snap.get("kb_service_key_is_mock", False),
+            )
 
     # -----------------------------
     # Azure preflight: split sync validation and async network check
@@ -960,7 +1018,7 @@ class ConversationFlow(IConversationFlow):
         # 1) Preserve precise reason when SDK is missing.
         try:
             from azure.search.documents.aio import (
-                SearchClient as _SDKCheck,  # type: ignore[import-untyped]
+                SearchClient as _SDKCheck,
             )
 
             _ = _SDKCheck  # silence linter
@@ -1013,7 +1071,7 @@ class ConversationFlow(IConversationFlow):
             try:
                 if client:
                     await client.close()
-            except Exception:
+            except Exception:  # nosec B110
                 pass
 
     # -----------------------------
@@ -1055,33 +1113,40 @@ class ConversationFlow(IConversationFlow):
     # -----------------------------
     # top-k resolution helpers
     # -----------------------------
-    def _resolve_topk_from_request(self, chat_request: ChatRequest) -> Optional[int]:
-        """Return a positive int if the request carries an override."""
-        # 1) direct attributes (kb_top_k, top_k, search_top_k)
-        for attr in ("kb_top_k", "top_k", "search_top_k"):
-            val = getattr(chat_request, attr, None)
-            try:
-                if isinstance(val, int) and val > 0:
-                    return int(val)
-                if isinstance(val, str) and val.strip().isdigit() and int(val) > 0:
-                    return int(val)
-            except Exception:
-                pass
-        # 2) nested parameters dict (kb_top_k, top_k, search_top_k)
-        params = getattr(chat_request, "parameters", None)
-        if isinstance(params, dict):
-            for key in ("kb_top_k", "top_k", "search_top_k"):
-                val = params.get(key)
-                try:
-                    if isinstance(val, int) and val > 0:
-                        return int(val)
-                    if isinstance(val, str) and val.strip().isdigit() and int(val) > 0:
-                        return int(val)
-                except Exception:
-                    pass
+    def _parse_positive_int(self, val: Any) -> Optional[int]:
+        """Parse a value as a positive integer, returning None if invalid."""
+        try:
+            if isinstance(val, int) and val > 0:
+                return val
+            if isinstance(val, str):
+                stripped = val.strip()
+                if stripped.isdigit() and int(stripped) > 0:
+                    return int(stripped)
+        except Exception:  # nosec B110
+            pass
         return None
 
-    def _get_top_k(self, mode: str, chat_request: Optional[ChatRequest]) -> int:
+    def _resolve_topk_from_request(self, chat_request: IChatRequest) -> Optional[int]:
+        """Return a positive int if the request carries an override."""
+        topk_keys = ("kb_top_k", "top_k", "search_top_k")
+
+        # Check direct attributes
+        for attr in topk_keys:
+            result = self._parse_positive_int(getattr(chat_request, attr, None))
+            if result:
+                return result
+
+        # Check nested parameters dict
+        params = getattr(chat_request, "parameters", None)
+        if isinstance(params, dict):
+            for key in topk_keys:
+                result = self._parse_positive_int(params.get(key))
+                if result:
+                    return result
+
+        return None
+
+    def _get_top_k(self, mode: str, chat_request: Optional[IChatRequest]) -> int:
         """Priority: request override → env override → safe defaults."""
         # 1) per-request (always highest priority)
         if chat_request is not None:
@@ -1200,7 +1265,7 @@ class ConversationFlow(IConversationFlow):
             # Create provider and execute search
             from ingenious.services.azure_search.provider import (
                 AzureSearchProvider,
-            )  # type: ignore
+            )
 
             provider = AzureSearchProvider(self._config)
 
@@ -1340,14 +1405,14 @@ class ConversationFlow(IConversationFlow):
         if provider:
             try:
                 await provider.close()
-            except Exception:
+            except Exception:  # nosec B110
                 pass
 
     def _ensure_kb_directory(self) -> None:
         """Ensure the KB directory exists for local retrieval."""
         try:
             os.makedirs(self._kb_path, exist_ok=True)
-        except Exception:
+        except Exception:  # nosec B110
             pass
 
     async def _handle_search_fallback(
@@ -1390,55 +1455,66 @@ class ConversationFlow(IConversationFlow):
     # -----------------------------
     # Local Chroma path
     # -----------------------------
+    def _check_kb_directory(
+        self, knowledge_base_path: str, logger: Optional[logging.Logger]
+    ) -> Optional[str]:
+        """Check if KB directory exists, return error message if not."""
+        if os.path.exists(knowledge_base_path):
+            return None
+        if logger:
+            logger.warning("Knowledge base directory missing/empty: %s", knowledge_base_path)
+        kb_display = knowledge_base_path
+        if not kb_display.endswith(os.sep):
+            kb_display = kb_display + os.sep
+        return f"Error: Knowledge base directory is empty. Please add documents to {kb_display}"
+
+    async def _get_or_create_collection(
+        self,
+        client: Any,
+        collection_name: str,
+        knowledge_base_path: str,
+        logger: Optional[logging.Logger],
+    ) -> Tuple[Any, Optional[str]]:
+        """Get or create ChromaDB collection, return (collection, error_msg)."""
+        try:
+            return client.get_collection(name=collection_name), None
+        except Exception:
+            collection = client.create_collection(name=collection_name)
+            docs, ids = await self._read_kb_documents_offthread(knowledge_base_path)
+            if not docs:
+                return collection, "Error: No documents found in knowledge base directory"
+            try:
+                collection.add(documents=docs, ids=ids)
+            except Exception as e:
+                if logger:
+                    logger.warning(f"ChromaDB add() failed: {e}")
+            return collection, None
+
     async def _search_local_chroma(
         self,
         search_query: str,
         top_k: int,
         logger: Optional[logging.Logger] = None,
     ) -> str:
-        """Local ChromaDB search (used directly or as a fallback).
-
-        Returns short, user-friendly messages while logging details server-side.
-        """
+        """Local ChromaDB search (used directly or as a fallback)."""
         knowledge_base_path = self._kb_path
-        chroma_path = self._chroma_path
 
-        # If the knowledge base folder doesn't exist, log the path and return a concise user-facing message.
-        if not os.path.exists(knowledge_base_path):
-            if logger:
-                logger.warning("Knowledge base directory missing/empty: %s", knowledge_base_path)
-            # Actionable guidance with dynamic, trailing-slash path.
-            kb_display = knowledge_base_path
-            if not kb_display.endswith(os.sep):
-                kb_display = kb_display + os.sep
-            return f"Error: Knowledge base directory is empty. Please add documents to {kb_display}"
+        dir_error = self._check_kb_directory(knowledge_base_path, logger)
+        if dir_error:
+            return dir_error
 
-        # Try to import ChromaDB; provide an explicit install hint on failure.
         try:
-            import chromadb  # type: ignore[import-untyped]
+            import chromadb
         except ImportError:
             return "Error: ChromaDB not installed. Please install with: uv add chromadb"
 
-        client = chromadb.PersistentClient(path=chroma_path)
-        collection_name = "knowledge_base"
+        client = chromadb.PersistentClient(path=self._chroma_path)
+        collection, create_error = await self._get_or_create_collection(
+            client, "knowledge_base", knowledge_base_path, logger
+        )
+        if create_error:
+            return create_error
 
-        # Open/create the collection; on first creation, ingest docs from disk.
-        try:
-            collection = client.get_collection(name=collection_name)
-        except Exception:
-            collection = client.create_collection(name=collection_name)
-            docs, ids = await self._read_kb_documents_offthread(knowledge_base_path)
-            if docs:
-                try:
-                    collection.add(documents=docs, ids=ids)
-                except Exception as e:
-                    if logger:
-                        logger.warning(f"ChromaDB add() failed: {e}")
-            else:
-                # Explicit, concise message when the directory has no usable documents.
-                return "Error: No documents found in knowledge base directory"
-
-        # Execute the query; surface a short "Search error" message on failure.
         try:
             results = collection.query(query_texts=[search_query], n_results=top_k)
         except Exception as e:
@@ -1446,7 +1522,6 @@ class ConversationFlow(IConversationFlow):
                 logger.error(f"ChromaDB query failed: {e}")
             return f"Search error: {str(e)}"
 
-        # Format results if any; otherwise report "No relevant information".
         docs = results.get("documents") or []
         if docs and docs[0]:
             return "Found relevant information from ChromaDB:\n\n" + "\n\n".join(docs[0])
@@ -1469,7 +1544,7 @@ class ConversationFlow(IConversationFlow):
                     try:
                         with open(filepath, "r", encoding="utf-8") as f:
                             content = f.read()
-                    except Exception:
+                    except Exception:  # nosec B112
                         continue
                     # Simple blank-line chunking; preserves predictable chunk IDs.
                     chunks = content.split("\n\n")
@@ -1494,89 +1569,29 @@ class ConversationFlow(IConversationFlow):
         logger: Optional[logging.Logger] = None,
     ) -> Tuple[int, int]:
         """Compute token counts defensively; never fail the request."""
-        try:
-            from ingenious.utils.token_counter import num_tokens_from_messages
+        from ._helpers import safe_count_tokens
 
-            msgs: list[dict[str, Any]] = [
-                {"role": "system", "content": system_message},
-                {"role": "user", "content": user_message},
-                {"role": "assistant", "content": assistant_message},
-            ]
-            total = num_tokens_from_messages(msgs, model)
-            prompt = num_tokens_from_messages(msgs[:-1], model)
-            completion = total - prompt
-            return total, completion
-        except Exception as e:
-            if logger:
-                logger.warning(f"Token counting failed: {e}")
-            return 0, 0
+        return await safe_count_tokens(
+            system_message, user_message, assistant_message, model, logger
+        )
 
     # -----------------------------
     # System prompts (static text)
     # -----------------------------
     def _static_system_message(self, memory_context: str) -> str:
         """Deterministic system prompt for direct mode."""
-        prefix = "You are a knowledge base search assistant that uses Azure AI Search or local ChromaDB.\n\n"
-        if memory_context:
-            prefix += memory_context
-        prefix += (
-            "Always base your responses on knowledge base search results. "
-            "If nothing is found, clearly state that and suggest rephrasing the query. "
-            "TERMINATE your response when the task is complete."
-        )
-        return prefix
+        from ._helpers import static_system_message
+
+        return static_system_message(memory_context)
 
     def _assist_system_message(self, memory_context: str) -> str:
         """Richer prompt for assist mode (summarization + guidelines + citation hint)."""
-        parts = [
-            "You are a knowledge base search assistant that can use both Azure AI Search and local ChromaDB storage.\n",
-        ]
-        if memory_context:
-            parts.append(memory_context)
+        from ._helpers import assist_system_message
 
-        parts.append(
-            "IMPORTANT: If there is previous conversation context above, you MUST:\n"
-            "- Reference it when answering follow-up questions\n"
-            "- Use information from previous searches to inform new searches\n"
-            "- Maintain context about what information has already been discussed\n"
-            '- Answer questions that refer to "it", "that", "those" etc. based on previous context\n\n'
-            "Tasks:\n"
-            "- Help users find information by searching the knowledge base\n"
-            "- Use the search_tool to look up information\n"
-            "- Always base your responses on search results from the knowledge base\n"
-            "- Always consider and reference previous conversation when relevant\n"
-            "- If no information is found, clearly state that and suggest rephrasing the query\n\n"
-            "Guidelines for search queries:\n"
-            "- Use specific, relevant keywords\n"
-            "- Try different phrasings if initial search doesn't return results\n"
-            "- Focus on topics that are relevant to the knowledge base content\n\n"
-            "Format your responses clearly and cite the knowledge base when providing information.\n"
-            "TERMINATE your response when the task is complete."
-        )
-        return "".join(parts)
+        return assist_system_message(memory_context)
 
     def _streaming_system_message(self, memory_context: str) -> str:
         """Streaming prompt with guidance, topics, and citation directive."""
-        parts: List[str] = [
-            "You are a knowledge base search assistant that can use both Azure AI Search and local ChromaDB storage.\n\n"
-        ]
-        if memory_context:
-            parts.append(memory_context)
+        from ._helpers import streaming_system_message
 
-        parts.append(
-            "IMPORTANT: Maintain context and base your responses on search results.\n\n"
-            "Guidelines for search queries:\n"
-            "- Use specific, relevant keywords\n"
-            "- Try different phrasings if initial search doesn't return results\n"
-            "- Focus on topics that are relevant to the knowledge base content\n\n"
-            "Knowledge base contains documents about:\n"
-            "- Azure configuration and setup\n"
-            "- Workplace safety guidelines\n"
-            "- Health information and nutrition\n"
-            "- Emergency procedures\n"
-            "- Mental health and wellbeing\n"
-            "- First aid basics\n"
-            "- General informational content\n\n"
-            "Format your responses clearly and cite the knowledge base when providing information."
-        )
-        return "".join(parts)
+        return streaming_system_message(memory_context)

@@ -1,4 +1,6 @@
-from typing import Tuple, cast
+"""Classification agent pattern version 2 implementation."""
+
+from typing import Tuple
 
 from autogen_agentchat.agents import AssistantAgent, UserProxyAgent
 from autogen_agentchat.teams import RoundRobinGroupChat
@@ -6,13 +8,19 @@ from autogen_agentchat.teams import RoundRobinGroupChat
 from ingenious.client.azure import AzureClientFactory
 from ingenious.common.enums import AuthenticationMethod
 from ingenious.config import get_config
-from ingenious.config.settings import IngeniousSettings
 from ingenious.core.structured_logging import get_logger
 
 logger = get_logger(__name__)
 
 
 class ConversationPattern:
+    """Classification-based conversation pattern using AutoGen agents.
+
+    This pattern implements a simplified classification and response system using
+    a single classifier agent that categorizes user messages and provides appropriate
+    responses. Supports memory management and Azure OpenAI integration.
+    """
+
     def __init__(
         self,
         default_llm_config: dict[str, object],
@@ -21,6 +29,16 @@ class ConversationPattern:
         memory_path: str,
         thread_memory: str,
     ):
+        """Initialize the classification conversation pattern.
+
+        Args:
+            default_llm_config: Configuration dictionary for the LLM including model, base_url,
+                api_version, deployment, authentication_method, and api_key.
+            topics: List of topic strings for classification (currently unused in simplified version).
+            memory_record_switch: Whether to enable memory recording for conversation context.
+            memory_path: File system path where conversation memory will be stored.
+            thread_memory: Existing conversation memory/history to initialize context.
+        """
         self.default_llm_config = default_llm_config
         self.topics = topics
         self.memory_record_switch = memory_record_switch
@@ -48,7 +66,7 @@ class ConversationPattern:
             run_async_memory_operation,
         )
 
-        self.memory_manager = get_memory_manager(cast(IngeniousSettings, get_config()), memory_path)
+        self.memory_manager = get_memory_manager(get_config(), memory_path)
 
         # Initialize context file
         if not self.thread_memory:
@@ -93,11 +111,11 @@ class ConversationPattern:
         self.user_proxy = UserProxyAgent(name="user_proxy")
 
     def add_topic_agent(self, agent_name: str, system_message: str) -> None:
-        """Add a topic agent - simplified to do nothing since we use single classifier"""
+        """Add a topic agent - simplified to do nothing since we use single classifier."""
         pass
 
     async def get_conversation_response(self, input_message: str) -> Tuple[str, str]:
-        """Simplified conversation with just classifier + user proxy in round-robin (max 2 turns)"""
+        """Simplified conversation with just classifier + user proxy in round-robin (max 2 turns)."""
         try:
             # Create a simple round-robin team with just 2 agents
             team = RoundRobinGroupChat(participants=[self.user_proxy, self.classifier])
@@ -132,5 +150,5 @@ class ConversationPattern:
             return str(error_response), str(e)
 
     async def close(self) -> None:
-        """Close the model client connection"""
+        """Close the model client connection."""
         await self.model_client.close()

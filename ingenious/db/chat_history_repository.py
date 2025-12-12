@@ -3,335 +3,40 @@
 Defines the abstract interface for chat history storage and provides adapters
 for various backends (SQLite, Azure SQL, Cosmos DB). Includes data models for
 users, threads, messages, steps, and elements.
+
+The implementation has been split into:
+- chat_history_models: Dataclasses and TypedDicts for data transfer
+- chat_history_interface: Abstract base class for repository operations
 """
 
 import importlib
-from abc import ABC, abstractmethod
-from dataclasses import dataclass
-from datetime import datetime, timezone
-from typing import (
-    Dict,
-    List,
-    Literal,
-    Optional,
-    TypedDict,
-    Union,
-    cast,
-)
-from uuid import UUID
+from typing import List, Optional, cast
 
 from ingenious.config import IngeniousSettings
 from ingenious.core.structured_logging import get_logger
 from ingenious.models.database_client import DatabaseClientType
 from ingenious.models.message import Message
 
+# Re-export from split modules for backward compatibility
+from .chat_history_interface import IChatHistoryRepository
+from .chat_history_models import (
+    ChatHistory,
+    User,
+    get_now,
+    get_now_as_string,
+)
+
 logger = get_logger(__name__)
 
-
-class IChatHistoryRepository(ABC):
-    """Abstract interface for chat history storage operations.
-
-    Defines the contract for storing and retrieving chat history including
-    users, threads, messages, steps, elements, and feedback across various
-    database backends (SQLite, Azure SQL, Cosmos DB).
-    """
-
-    TrueStepType = Literal["run", "tool", "llm", "embedding", "retrieval", "rerank", "undefined"]
-
-    MessageStepType = Literal["user_message", "assistant_message", "system_message"]
-
-    # Alias for compatibility
-    StepType = Union[TrueStepType, MessageStepType]
-
-    ElementType = Literal[
-        "image",
-        "text",
-        "pdf",
-        "tasklist",
-        "audio",
-        "video",
-        "file",
-        "plotly",
-        "component",
-    ]
-    ElementDisplay = Literal["inline", "side", "page"]
-    ElementSize = Literal["small", "medium", "large"]
-
-    class ElementDict(TypedDict):
-        """Typed dictionary for element data transfer."""
-
-        id: str
-        threadId: Optional[str]
-        type: "IChatHistoryRepository.ElementType"
-        chainlitKey: Optional[str]
-        url: Optional[str]
-        objectKey: Optional[str]
-        name: str
-        display: "IChatHistoryRepository.ElementDisplay"
-        size: Optional["IChatHistoryRepository.ElementSize"]
-        language: Optional[str]
-        page: Optional[int]
-        autoPlay: Optional[bool]
-        playerConfig: Optional[dict[str, object]]
-        forId: Optional[str]
-        mime: Optional[str]
-
-    @dataclass
-    class ChatHistory:
-        """Dataclass representing a complete chat history record."""
-
-        user_id: str
-        thread_id: str
-        message_id: str
-        positive_feedback: Optional[bool]
-        timestamp: str
-        role: str
-        content: str
-        content_filter_results: Optional[str]
-        tool_calls: Optional[str]
-        tool_call_id: Optional[str]
-        tool_call_function: Optional[str]
-
-    @dataclass
-    class User:
-        """Dataclass representing a user entity."""
-
-        id: UUID
-        identifier: str
-        metadata: dict[str, object]
-        createdAt: Optional[str]
-
-    @dataclass
-    class Thread:
-        """Dataclass representing a conversation thread."""
-
-        id: UUID
-        createdAt: Optional[str]
-        name: Optional[str]
-        userId: UUID
-        userIdentifier: Optional[str]
-        tags: Optional[List[str]]
-        metadata: Optional[dict[str, object]]
-
-    @dataclass
-    class Step:
-        """Dataclass representing a conversation step or turn."""
-
-        id: UUID
-        name: str
-        type: str
-        threadId: UUID
-        parentId: Optional[UUID]
-        disableFeedback: bool
-        streaming: bool
-        waitForAnswer: Optional[bool]
-        isError: Optional[bool]
-        metadata: Optional[dict[str, object]]
-        tags: Optional[List[str]]
-        input: Optional[str]
-        output: Optional[str]
-        createdAt: Optional[str]
-        start: Optional[str]
-        end: Optional[str]
-        generation: Optional[dict[str, object]]
-        showInput: Optional[str]
-        language: Optional[str]
-        indent: Optional[int]
-
-    @dataclass
-    class Element:
-        """Dataclass representing a UI element or attachment."""
-
-        id: UUID
-        threadId: Optional[UUID]
-        type: Optional[str]
-        url: Optional[str]
-        chainlitKey: Optional[str]
-        name: str
-        display: Optional[str]
-        objectKey: Optional[str]
-        size: Optional[str]
-        page: Optional[int]
-        language: Optional[str]
-        forId: Optional[UUID]
-        mime: Optional[str]
-
-    @dataclass
-    class Feedback:
-        """Dataclass representing user feedback on a conversation step."""
-
-        id: UUID
-        forId: UUID
-        threadId: UUID
-        value: int
-        comment: Optional[str]
-
-    class FeedbackDict(TypedDict):
-        """Typed dictionary for feedback data transfer."""
-
-        forId: str
-        id: Optional[str]
-        value: Literal[0, 1]
-        comment: Optional[str]
-
-    class StepDict(TypedDict, total=False):
-        """Typed dictionary for step data transfer with optional fields."""
-
-        name: str
-        type: "IChatHistoryRepository.StepType"
-        id: str
-        threadId: str
-        parentId: Optional[str]
-        disableFeedback: bool
-        streaming: bool
-        waitForAnswer: Optional[bool]
-        isError: Optional[bool]
-        metadata: Dict[str, object]
-        tags: Optional[List[str]]
-        input: str
-        output: str
-        createdAt: Optional[str]
-        start: Optional[str]
-        end: Optional[str]
-        generation: Optional[Dict[str, object]]
-        showInput: Optional[Union[bool, str]]
-        language: Optional[str]
-        indent: Optional[int]
-        feedback: Optional["IChatHistoryRepository.FeedbackDict"]
-
-    class ThreadDict(TypedDict):
-        """Typed dictionary for thread data transfer with steps and elements."""
-
-        id: str
-        createdAt: str
-        name: Optional[str]
-        userId: Optional[str]
-        userIdentifier: Optional[str]
-        tags: Optional[List[str]]
-        metadata: Optional[Dict[str, object]]
-        steps: List["IChatHistoryRepository.StepDict"]
-        elements: Optional[List["IChatHistoryRepository.ElementDict"]]
-
-    def get_now(self) -> datetime:
-        """Get the current UTC datetime.
-
-        Returns:
-            Current datetime object in UTC timezone.
-        """
-        return datetime.now(timezone.utc)
-
-    def get_now_as_string(self) -> str:
-        """Get the current UTC datetime as a formatted string.
-
-        Returns:
-            ISO-formatted datetime string with microseconds and timezone.
-        """
-        return self.get_now().strftime("%Y-%m-%d %H:%M:%S.%f%z")
-
-    @abstractmethod
-    async def update_thread(
-        self,
-        thread_id: str,
-        name: Optional[str] = None,
-        user_id: Optional[str] = None,
-        metadata: Optional[Dict[str, object]] = None,
-        tags: Optional[List[str]] = None,
-    ) -> str:
-        """Update thread metadata and properties.
-
-        Args:
-            thread_id: Unique identifier for the thread.
-            name: Optional display name for the thread.
-            user_id: Optional user identifier associated with the thread.
-            metadata: Optional key-value metadata dictionary.
-            tags: Optional list of tags for categorization.
-
-        Returns:
-            The thread ID after successful update.
-        """
-        pass
-
-    @abstractmethod
-    async def add_message(self, message: Message) -> str:
-        """Adds a message to the chat history."""
-        pass
-
-    @abstractmethod
-    async def add_user(self, identifier: str) -> User:
-        """Adds a user to the chat history database."""
-        pass
-
-    @abstractmethod
-    async def get_user(self, identifier: str) -> User | None:
-        """Gets a user from the chat history database."""
-        pass
-
-    @abstractmethod
-    async def get_message(self, message_id: str, thread_id: str) -> Message | None:
-        """Gets a message from the chat history."""
-        pass
-
-    @abstractmethod
-    async def get_thread_messages(self, thread_id: str) -> list[Message]:
-        """Retrieve all messages for a specific thread.
-
-        Args:
-            thread_id: Unique identifier for the thread.
-
-        Returns:
-            List of Message objects belonging to the thread.
-        """
-        pass
-
-    @abstractmethod
-    async def get_threads_for_user(
-        self, identifier: str, thread_id: Optional[str]
-    ) -> Optional[List["IChatHistoryRepository.ThreadDict"]]:
-        """Retrieve all threads for a user, optionally filtered by thread ID.
-
-        Args:
-            identifier: User identifier to filter threads by.
-            thread_id: Optional specific thread ID to retrieve.
-
-        Returns:
-            List of ThreadDict objects for the user, or None if no threads exist.
-        """
-        pass
-
-    @abstractmethod
-    async def update_message_feedback(
-        self, message_id: str, thread_id: str, positive_feedback: bool | None
-    ) -> None:
-        """Update the feedback status for a specific message.
-
-        Args:
-            message_id: Unique identifier for the message.
-            thread_id: Thread containing the message.
-            positive_feedback: True for positive, False for negative, None to clear feedback.
-        """
-        pass
-
-    @abstractmethod
-    async def update_message_content_filter_results(
-        self, message_id: str, thread_id: str, content_filter_results: dict[str, object]
-    ) -> None:
-        """Update content filter results for a specific message.
-
-        Args:
-            message_id: Unique identifier for the message.
-            thread_id: Thread containing the message.
-            content_filter_results: Dictionary containing content moderation results.
-        """
-        pass
-
-    @abstractmethod
-    async def delete_thread(self, thread_id: str) -> None:
-        """Delete a thread and all associated messages.
-
-        Args:
-            thread_id: Unique identifier for the thread to delete.
-        """
-        pass
+# Re-export all for backward compatibility
+__all__ = [
+    "IChatHistoryRepository",
+    "ChatHistoryRepository",
+    "ChatHistory",
+    "User",
+    "get_now",
+    "get_now_as_string",
+]
 
 
 class ChatHistoryRepository:
@@ -362,36 +67,7 @@ class ChatHistoryRepository:
 
         self.repository = repository_class(config=config)
 
-    async def update_thread(
-        self,
-        thread_id: str,
-        name: Optional[str] = None,
-        user_id: Optional[str] = None,
-        metadata: Optional[Dict[str, object]] = None,
-        tags: Optional[List[str]] = None,
-    ) -> str:
-        """Update thread metadata and properties through the repository adapter.
-
-        Args:
-            thread_id: Unique identifier for the thread.
-            name: Optional display name for the thread.
-            user_id: Optional user identifier associated with the thread.
-            metadata: Optional key-value metadata dictionary.
-            tags: Optional list of tags for categorization.
-
-        Returns:
-            The thread ID after successful update.
-        """
-        return str(
-            await self.repository.update_thread(
-                thread_id=thread_id,
-                name=name,
-                user_id=user_id,
-                metadata=metadata,
-            )
-        )
-
-    async def add_user(self, identifier: str) -> IChatHistoryRepository.User:
+    async def add_user(self, identifier: str) -> User:
         """Add a new user to the chat history database.
 
         Args:
@@ -400,20 +76,9 @@ class ChatHistoryRepository:
         Returns:
             User object containing the created user information.
         """
-        return cast(IChatHistoryRepository.User, await self.repository.add_user(identifier))
+        return cast(User, await self.repository.add_user(identifier))
 
-    async def add_step(self, step_dict: IChatHistoryRepository.StepDict) -> str:
-        """Add a conversation step to the chat history.
-
-        Args:
-            step_dict: Dictionary containing step data including type, content, and metadata.
-
-        Returns:
-            Step ID as a string after successful creation.
-        """
-        return str(await self.repository.add_step(step_dict))
-
-    async def get_user(self, identifier: str) -> IChatHistoryRepository.User | None:
+    async def get_user(self, identifier: str) -> User | None:
         """Retrieve a user by their identifier.
 
         Args:
@@ -422,10 +87,7 @@ class ChatHistoryRepository:
         Returns:
             User object if found, None otherwise.
         """
-        return cast(
-            IChatHistoryRepository.User | None,
-            await self.repository.get_user(identifier),
-        )
+        return cast(User | None, await self.repository.get_user(identifier))
 
     async def add_message(self, message: Message) -> str:
         """Add a message to the chat history.
@@ -505,23 +167,6 @@ class ChatHistoryRepository:
             List of Message objects representing memories for the thread, or None if thread not found.
         """
         return cast(Optional[List[Message]], await self.repository.get_thread_memory(thread_id))
-
-    async def get_threads_for_user(
-        self, identifier: str, thread_id: Optional[str]
-    ) -> Optional[List[IChatHistoryRepository.ThreadDict]]:
-        """Retrieve all threads for a user, optionally filtered by thread ID.
-
-        Args:
-            identifier: User identifier to filter threads by.
-            thread_id: Optional specific thread ID to retrieve.
-
-        Returns:
-            List of ThreadDict objects for the user, or None if no threads exist.
-        """
-        return cast(
-            Optional[List[IChatHistoryRepository.ThreadDict]],
-            await self.repository.get_threads_for_user(identifier, thread_id),
-        )
 
     async def update_message_feedback(
         self, message_id: str, thread_id: str, positive_feedback: bool | None

@@ -1,3 +1,5 @@
+"""Azure OpenAI Chat Completions client builder for AutoGen integration."""
+
 from autogen_ext.models.openai import AzureOpenAIChatCompletionClient
 from azure.identity import get_bearer_token_provider
 
@@ -11,6 +13,11 @@ class AzureOpenAIChatCompletionClientBuilder(AzureClientBuilder):
     """Builder for Azure OpenAI Chat Completion clients using AutoGen."""
 
     def __init__(self, model_config: ModelSettings):
+        """Initialize Azure OpenAI Chat Completion client builder.
+
+        Args:
+            model_config: Model configuration settings
+        """
         # Extract authentication parameters from config
         auth_config = self._create_auth_config_from_model_config(model_config)
         super().__init__(auth_config=auth_config)

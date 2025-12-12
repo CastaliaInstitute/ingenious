@@ -69,16 +69,32 @@ Follow all steps in [this guide](https://blog.insight-services-apac.dev/ingeniou
     **Required configuration (add to .env file)**:
     ```bash
     # Core AI Model Configuration (REQUIRED)
-    INGENIOUS_MODELS__0__MODEL=gpt-5-mini
+    # Model 0: Chat model
+    INGENIOUS_MODELS__0__MODEL=gpt-4o-mini  # Must match OpenAI model name exactly
     INGENIOUS_MODELS__0__API_TYPE=rest
     INGENIOUS_MODELS__0__API_VERSION=2024-12-01-preview
-    INGENIOUS_MODELS__0__DEPLOYMENT=gpt-5-mini-deployment
+    INGENIOUS_MODELS__0__DEPLOYMENT=gpt-4o-mini-deployment  # Your custom deployment name from Azure
     INGENIOUS_MODELS__0__API_KEY=your-actual-api-key-here
     INGENIOUS_MODELS__0__BASE_URL=https://eastus.api.cognitive.microsoft.com/
+    INGENIOUS_MODELS__0__ROLE=chat
 
-    # For Azure OpenAI: Use the Cognitive Services endpoint format (not OpenAI endpoint)
-    # CORRECT: https://eastus.api.cognitive.microsoft.com/
-    # INCORRECT: https://your-resource.openai.azure.com/
+    # Model 1: Embedding model (REQUIRED for Azure AI Search)
+    INGENIOUS_MODELS__1__MODEL=text-embedding-3-small
+    INGENIOUS_MODELS__1__API_TYPE=rest
+    INGENIOUS_MODELS__1__API_VERSION=2024-12-01-preview
+    INGENIOUS_MODELS__1__DEPLOYMENT=text-embedding-3-small-deployment
+    INGENIOUS_MODELS__1__API_KEY=your-actual-api-key-here
+    INGENIOUS_MODELS__1__BASE_URL=https://eastus.api.cognitive.microsoft.com/
+    INGENIOUS_MODELS__1__ROLE=embedding
+
+    # For Azure OpenAI endpoints - both formats work:
+    # Regional endpoint: https://eastus.api.cognitive.microsoft.com/
+    # Resource-specific: https://your-resource.cognitiveservices.azure.com/
+
+    # IMPORTANT: DEPLOYMENT vs MODEL
+    # - DEPLOYMENT: Your custom name in Azure Portal (can be anything)
+    # - MODEL: Official OpenAI model name (must be exact: gpt-4o-mini, gpt-4, etc.)
+
     # For OpenAI (not Azure), use:
     # INGENIOUS_MODELS__0__BASE_URL=https://api.openai.com/v1
     # INGENIOUS_MODELS__0__API_VERSION=2024-02-01

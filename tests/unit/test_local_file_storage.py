@@ -15,7 +15,7 @@ class TestLocalFileStorage:
         """Set up test fixtures."""
         self.mock_config = Mock()
         self.mock_fs_config = Mock()
-        self.mock_fs_config.path = "/test/path."
+        self.mock_fs_config.path = "/test/path"
 
     def test_init_with_config(self):
         """Test local_FileStorageRepository initialization."""
@@ -23,10 +23,10 @@ class TestLocalFileStorage:
 
         assert storage.config is self.mock_config
         assert storage.fs_config is self.mock_fs_config
-        assert storage.base_path == Path("/test/path.")
+        assert storage.base_path == Path("/test/path")
 
     @pytest.mark.asyncio
-    @patch("aiofiles.open.")
+    @patch("aiofiles.open")
     @patch("pathlib.Path.mkdir")
     async def test_write_file_success(self, mock_mkdir, mock_aiofiles_open):
         """Test successful file writing."""
@@ -38,38 +38,38 @@ class TestLocalFileStorage:
         mock_aiofiles_open.return_value.__aenter__ = AsyncMock(return_value=mock_file)
         mock_aiofiles_open.return_value.__aexit__ = AsyncMock(return_value=None)
 
-        result = await storage.write_file("test content.", "file.txt.", "subdir")
+        result = await storage.write_file("test content", "file.txt", "subdir")
 
-        assert "Successfully wrote." in result
+        assert "Successfully wrote" in result
         mock_mkdir.assert_called_once_with(parents=True, exist_ok=True)
-        mock_file.write.assert_called_once_with("test content.")
+        mock_file.write.assert_called_once_with("test content")
 
     @pytest.mark.asyncio
-    @patch("aiofiles.open.")
+    @patch("aiofiles.open")
     async def test_read_file_success(self, mock_aiofiles_open):
         """Test successful file reading."""
         storage = local_FileStorageRepository(self.mock_config, self.mock_fs_config)
 
         # Mock the async file context manager
         mock_file = Mock()
-        mock_file.read = AsyncMock(return_value="file content.")
+        mock_file.read = AsyncMock(return_value="file content")
         mock_aiofiles_open.return_value.__aenter__ = AsyncMock(return_value=mock_file)
         mock_aiofiles_open.return_value.__aexit__ = AsyncMock(return_value=None)
 
-        result = await storage.read_file("file.txt.", "subdir")
+        result = await storage.read_file("file.txt", "subdir")
 
-        assert result == "file content."
+        assert result == "file content"
         mock_file.read.assert_called_once()
 
     @pytest.mark.asyncio
-    @patch("aiofiles.open.")
+    @patch("aiofiles.open")
     async def test_read_file_exception(self, mock_aiofiles_open):
         """Test file reading with exception."""
         storage = local_FileStorageRepository(self.mock_config, self.mock_fs_config)
 
-        mock_aiofiles_open.side_effect = Exception("File not found.")
+        mock_aiofiles_open.side_effect = Exception("File not found")
 
-        result = await storage.read_file("missing.txt.", "subdir")
+        result = await storage.read_file("missing.txt", "subdir")
 
         assert result == ""
 

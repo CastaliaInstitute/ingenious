@@ -5,7 +5,7 @@ from unittest.mock import Mock, patch
 import pytest
 
 # class TestChatRoutes:
-#     """Test cases for chat API routes."""
+#     """Test cases for chat API routes"""
 #
 #     # These tests are commented out due to complex dependency injection issues
 #     # They would need a full container wiring setup to work properly
@@ -13,7 +13,7 @@ import pytest
 
 
 # class TestMessageFeedbackRoutes:
-#     """Test cases for message feedback API routes."""
+#     """Test cases for message feedback API routes"""
 #
 #     # These tests are commented out due to complex dependency injection issues
 #     # They would need a full container wiring setup to work properly
@@ -21,7 +21,7 @@ import pytest
 
 
 # class TestConversationRoutes:
-#     """Test cases for conversation API routes."""
+#     """Test cases for conversation API routes"""
 #
 #     # These tests are commented out due to complex dependency injection issues
 #     # They would need a full container wiring setup to work properly

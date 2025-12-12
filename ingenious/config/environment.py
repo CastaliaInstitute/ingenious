@@ -51,6 +51,10 @@ def create_minimal_config() -> "IngeniousSettings":
     Returns:
         IngeniousSettings instance configured with minimal defaults suitable
         for local development and testing.
+
+    Note:
+        This function requires INGENIOUS_MODELS__0__API_KEY and
+        INGENIOUS_MODELS__0__BASE_URL environment variables to be set.
     """
     from .main_settings import IngeniousSettings
     from .models import (
@@ -60,25 +64,35 @@ def create_minimal_config() -> "IngeniousSettings":
         WebSettings,
     )
 
+    api_key = os.getenv("INGENIOUS_MODELS__0__API_KEY", "")
+    base_url = os.getenv("INGENIOUS_MODELS__0__BASE_URL", "")
+    model_name = os.getenv("INGENIOUS_MODELS__0__MODEL", "gpt-4o-mini")
+    deployment = os.getenv("INGENIOUS_MODELS__0__DEPLOYMENT", model_name)
+
+    if not api_key or not base_url:
+        raise ValueError(
+            "Minimal config requires INGENIOUS_MODELS__0__API_KEY and "
+            "INGENIOUS_MODELS__0__BASE_URL environment variables."
+        )
+
     return IngeniousSettings(
         models=[
             ModelSettings(
-                model="gpt-5-mini",
+                model=model_name,
                 api_type="rest",
-                api_version="2023-03-15-preview",
-                api_key=os.getenv("AZURE_OPENAI_API_KEY", "test-api-key"),
-                base_url=os.getenv("AZURE_OPENAI_BASE_URL", "https://test.openai.azure.com/"),
-                deployment=os.getenv("AZURE_OPENAI_DEPLOYMENT", "gpt-5-mini"),
+                api_version="2024-12-01-preview",
+                api_key=api_key,
+                base_url=base_url,
+                deployment=deployment,
             )
         ],
         logging=LoggingSettings(root_log_level="debug", log_level="debug"),
         web_configuration=WebSettings(
-            # nosec B104: binding to all interfaces needed for containerized deployment
-            ip_address="0.0.0.0",
+            ip_address="0.0.0.0",  # nosec B104: intentional for container deployments
             port=8000,
             type="fastapi",
             asynchronous=False,
-            authentication=WebAuthenticationSettings(
+            authentication=WebAuthenticationSettings(  # nosec B106: dev config, auth disabled
                 enable=False, username="admin", password="", type="basic"
             ),
         ),

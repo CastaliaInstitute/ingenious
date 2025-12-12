@@ -1,50 +1,127 @@
-# Repository Guidelines
+# AGENTS.md
 
-## Project Structure & Module Organization
-Core library code lives in `ingenious/`, grouped by domain (for example, `ingenious/services/` for runtime services and `ingenious/api/routes/` for HTTP endpoints). Configuration models sit in `ingenious/config/`, while reusable utilities are in `ingenious/utils/`. Unit and integration tests reside under `tests/`, mirroring the package layout (`tests/unit/test_api_routes.py`, `tests/services/...`). Documentation assets and site configuration live in `docs/` and `mkdocs.yml`.
+This file provides guidance to coding agents when working with code in this repository.
 
-## Build, Test, and Development Commands
-- `uv run python -m pytest`: run the full test suite with coverage rules from `pyproject.toml`.
-- `uv run ruff check`: lint the codebase using the enforced Ruff ruleset.
-- `uv run ruff format`: apply repository formatting standards.
-- `uv build`: create a distributable package for release validation.
-Use `uv lock` after modifying dependencies to refresh the lockfile.
+# Important Note on Your Context Window
+Your context window will be automatically compacted as it approaches its limit, allowing you to continue working indefinitely from where you left off. Therefore, do not stop tasks early due to token budget concerns. As you approach your token budget limit, save your current progress and state to memory before the context window refreshes. Always be as persistent and autonomous as possible and complete tasks fully, even if the end of your budget is approaching. Never artificially stop any task early regardless of the context remaining.
 
-## Coding Style & Naming Conventions
-Python code uses 4-space indentation, type hints where practical, and descriptive snake_case for functions, variables, and filenames (`chat_service.py`, `get_chat_response`). Public classes use PascalCase. Ruff handles linting and formatting; avoid manual stylistic tweaks that conflict with its defaults. Keep modules small and focused—new FastAPI routes belong under `ingenious/api/routes/`, and shared helpers go in `ingenious/utils/`.
+## Repository Context
 
-### Docstring Standard
-All Python code MUST use **Google-style docstrings**:
-- Triple double quotes (`"""`)
-- First line: one-sentence imperative summary
-- `Args`, `Returns`, `Raises`, `Yields`, `Attributes` sections as applicable
-- Match actual code signatures and behavior
-- Enforced by ruff pydocstyle rules in pre-commit hooks
+This is the **ingenious** package - a core AI agent framework library (v0.2.8).
 
-Example:
-```python
-def create_user(username: str, email: str) -> User:
-    """Create a new user account.
+## Communication Style
 
-    Args:
-        username: Unique username for the account.
-        email: User's email address.
+**CRITICAL**: When working with this codebase:
+- **NEVER use emojis** in any communication, code, comments, or documentation
+- **Always maintain a concise, professional tone** in all interactions
+- Provide direct, clear technical communication without unnecessary elaboration
+- Focus on facts and technical accuracy over conversational language
 
-    Returns:
-        User: Newly created user instance.
+## Testing and Development Files
 
-    Raises:
-        ValueError: If username is already taken.
-    """
+**CRITICAL**: All testing artifacts, temporary files, and development scripts must be placed in the `/tmp` folder to maintain repository cleanliness:
+
+- Development scripts and experiments
+- Temporary output files
+- Test artifacts and logs
+- Mock data generators
+
+This prevents clutter in the working directory and ensures consistent cleanup across development environments.
+
+## Package Management
+
+Uses **uv** for Python package and environment management. Python 3.13+ is required.
+
+## High-Level Architecture
+
+### Core Components
+
+- **FastAPI Server** (`ingenious/main/app_factory.py`) - Main API application factory using dependency injection
+- **Multi-Agent System** (`ingenious/services/chat_services/multi_agent/`) - AutoGen-based agent orchestration
+- **Conversation Flows** (`services/chat_services/multi_agent/conversation_flows/`) - Pluggable workflow patterns
+- **Dependency Injection** (`ingenious/services/fastapi_dependencies.py`) - FastAPI-native dependency wiring
+- **Configuration** - Pydantic-settings based (`ingenious/config/`) with `INGENIOUS_*` environment variables
+
+### Key Architectural Patterns
+
+- Repository pattern for data access (`ingenious/db/`)
+- Service layer for business logic (`ingenious/services/`)
+- Structured logging with correlation IDs (`ingenious/core/structured_logging.py`)
+- JWT/Basic auth middleware (`ingenious/auth/`)
+- Azure service builders with authentication (`ingenious/client/azure/`)
+
+## CLI Commands
+
+The `ingen` CLI (`ingenious/cli/`) provides:
+- `ingen init` - Initialize a new project with templates
+- `ingen validate` - Validate configuration
+- `ingen serve` - Start API server (default port 80, use --port 8000 to avoid conflicts)
+- `ingen run-rest-api-server` - Start with custom host/port
+- `ingen test` - Run tests
+
+### Server Startup
+```bash
+# Recommended for development (avoids port 80 conflicts)
+uv run ingen serve --port 8000
+
+# With knowledge base policy for ChromaDB integration
+KB_POLICY=local_only uv run ingen serve --port 8000
+
+# For Azure AI Search integration
+KB_POLICY=azure uv run ingen serve --port 8000
 ```
 
-Verify compliance: `uv run ruff check --select D .`
+## Configuration
 
-## Testing Guidelines
-Pytest is the standard framework, with discovery configured for `test_*.py` files inside `tests/`. Coverage must stay above the `--cov-fail-under=20` threshold defined in `pyproject.toml`. Targeted checks (e.g., `uv run python -m pytest tests/unit/test_api_routes.py`) are encouraged before pushing. Write fixtures in `tests/conftest.py` when multiple test modules share setup.
+Environment variables with `INGENIOUS_` prefix (using pydantic-settings):
 
-## Commit & Pull Request Guidelines
-Commit messages follow conventional prefixes seen in history (`feat:`, `fix:`, `chore:`, `refactor:`) and describe the change succinctly. Group unrelated work into separate commits. Pull requests should include: a clear summary of the change, any relevant issue links, test evidence (`uv run python -m pytest` output), and screenshots or logs when touching user-facing behavior. Keep PRs focused and request review from maintainers owning the affected package paths.
+```bash
+# Required Azure OpenAI - use Cognitive Services endpoint format (CRITICAL)
+INGENIOUS_MODELS__0__API_KEY=your-key
+INGENIOUS_MODELS__0__BASE_URL=https://eastus.api.cognitive.microsoft.com/
+INGENIOUS_MODELS__0__MODEL=gpt-4o-mini
+INGENIOUS_MODELS__0__API_VERSION=2024-12-01-preview
+INGENIOUS_MODELS__0__DEPLOYMENT=gpt-4o-mini-deployment
+INGENIOUS_MODELS__0__API_TYPE=rest
+INGENIOUS_MODELS__0__ROLE=chat
 
-## Configuration Tips
-Local development expects at least one model configured via environment variables such as `INGENIOUS_MODELS__0__API_KEY` and `INGENIOUS_MODELS__0__BASE_URL`. Store secrets in `.env` (ignored by Git) and duplicate `.env.example` when setting up a fresh workspace.
+# Model 1: Embedding model (REQUIRED for Azure AI Search)
+INGENIOUS_MODELS__1__API_KEY=your-key
+INGENIOUS_MODELS__1__BASE_URL=https://eastus.api.cognitive.microsoft.com/
+INGENIOUS_MODELS__1__MODEL=text-embedding-3-small
+INGENIOUS_MODELS__1__API_VERSION=2024-12-01-preview
+INGENIOUS_MODELS__1__DEPLOYMENT=text-embedding-3-small-deployment
+INGENIOUS_MODELS__1__API_TYPE=rest
+INGENIOUS_MODELS__1__ROLE=embedding
+
+# Chat service
+INGENIOUS_CHAT_SERVICE__TYPE=multi_agent
+INGENIOUS_CHAT_HISTORY__DATABASE_TYPE=sqlite  # or azuresql or cosmos
+INGENIOUS_CHAT_HISTORY__DATABASE_PATH=./.tmp/chat_history.db
+
+# Web server (use port 8000 to avoid conflicts)
+INGENIOUS_WEB_CONFIGURATION__PORT=8000
+INGENIOUS_WEB_CONFIGURATION__IP_ADDRESS=0.0.0.0
+
+# Authentication (optional)
+INGENIOUS_WEB_CONFIGURATION__AUTHENTICATION__ENABLE=true
+INGENIOUS_WEB_CONFIGURATION__AUTHENTICATION__USERNAME=admin
+INGENIOUS_WEB_CONFIGURATION__AUTHENTICATION__PASSWORD=secure_password
+
+# Knowledge base configuration (CRITICAL for knowledge-base-agent)
+KB_POLICY=local_only  # or azure_only, prefer_azure, prefer_local
+KB_TOPK_DIRECT=3
+KB_TOPK_ASSIST=5
+KB_MODE=direct
+
+# Local SQL database for sql-manipulation workflows
+INGENIOUS_LOCAL_SQL_DB__DATABASE_PATH=./.tmp/sample_sql.db
+```
+
+**CRITICAL Configuration Notes**:
+- **Azure OpenAI Endpoint**: Must use Cognitive Services format (`https://eastus.api.cognitive.microsoft.com/`) not deprecated OpenAI format (`https://your-resource.openai.azure.com/`)
+- **Dual Model Setup**: Azure AI Search requires TWO separate models with different ROLE values (chat + embedding)
+- **KB_POLICY**: Essential for knowledge-base-agent functionality. Use `KB_POLICY=local_only` for development
+- **Port Conflicts**: Always use port 8000 to avoid conflicts with system port 80
+
+Configuration now relies on environment variables (`INGENIOUS_*`). Ensure `.env` is populated instead of using legacy YAML files.

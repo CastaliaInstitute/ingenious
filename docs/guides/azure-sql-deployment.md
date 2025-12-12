@@ -34,13 +34,20 @@ fi
 SQL_EXISTS=$(az sql server show --name your-sql-server --resource-group your-rg-name 2>/dev/null)
 if [ -z "$SQL_EXISTS" ]; then
   # Create SQL Server only if it doesn't exist
-  # Note: Use simple alphanumeric passwords (no special characters) to avoid ODBC connection issues
+
+  # CRITICAL: Password Guidelines for Azure SQL
+  # - AVOID special characters that require escaping: ! @ # $ % ^ & * ( ) { } [ ] | ; : ' " < > ? / \
+  # - USE only: Letters (A-Z, a-z), Numbers (0-9), and basic symbols (- _)
+  # - This prevents ODBC connection string issues and UID/Pwd parsing problems
+  # - Good example: SecurePass123-Test
+  # - Bad example: P@ssw0rd!#123
+
   az sql server create \
     --name your-sql-server \
     --resource-group your-rg-name \
     --location eastus2 \
     --admin-user adminuser \
-    --admin-password YourPassword123
+    --admin-password SecurePass123
 else
   echo "SQL Server already exists, skipping creation"
 fi

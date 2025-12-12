@@ -1,283 +1,7 @@
-"""Database-agnostic SQL query builder with dialect support.
+"""Centralized query builder that generates database-specific SQL queries."""
 
-This module provides SQL query generation for multiple database backends
-through a dialect pattern, supporting SQLite and Azure SQL.
-"""
-
-from abc import ABC, abstractmethod
-from typing import Any, Dict, List
-
-
-class Dialect(ABC):
-    """Abstract base class for database-specific SQL dialects.
-
-    Subclasses implement database-specific SQL syntax for common operations
-    including table creation, UPSERT, LIMIT clauses, and data types.
-    """
-
-    @abstractmethod
-    def get_create_table_if_not_exists_prefix(self) -> str:
-        """Get the CREATE TABLE IF NOT EXISTS prefix for this database.
-
-        Returns:
-            Database-specific SQL prefix for conditional table creation.
-        """
-        pass
-
-    @abstractmethod
-    def get_limit_clause(self, limit: int) -> str:
-        """Get the LIMIT clause syntax for this database.
-
-        Args:
-            limit: Maximum number of rows to return.
-
-        Returns:
-            Database-specific LIMIT clause.
-        """
-        pass
-
-    @abstractmethod
-    def get_upsert_query(self, table: str, columns: List[str], conflict_column: str) -> str:
-        """Generate database-specific UPSERT query.
-
-        Args:
-            table: Table name for the UPSERT operation.
-            columns: List of column names to insert/update.
-            conflict_column: Column name to check for conflicts.
-
-        Returns:
-            Database-specific UPSERT SQL query.
-        """
-        pass
-
-    @abstractmethod
-    def get_temp_table_syntax(self, table_name: str, select_query: str) -> str:
-        """Get temporary table creation syntax for this database.
-
-        Args:
-            table_name: Name for the temporary table.
-            select_query: SELECT query to populate the temp table.
-
-        Returns:
-            Database-specific temporary table creation SQL.
-        """
-        pass
-
-    @abstractmethod
-    def get_drop_temp_table_syntax(self, table_name: str) -> str:
-        """Get temporary table drop syntax for this database.
-
-        Args:
-            table_name: Name of the temporary table to drop.
-
-        Returns:
-            Database-specific temporary table drop SQL.
-        """
-        pass
-
-    @abstractmethod
-    def get_data_types(self) -> Dict[str, str]:
-        """Get mapping of generic to database-specific data types.
-
-        Returns:
-            Dictionary mapping generic type names to database-specific types.
-        """
-        pass
-
-
-class SQLiteDialect(Dialect):
-    """SQLite-specific SQL dialect implementation.
-
-    Implements SQLite syntax for table creation, UPSERT with ON CONFLICT,
-    temporary tables, and data type mappings.
-    """
-
-    def get_create_table_if_not_exists_prefix(self) -> str:
-        """Get SQLite's CREATE TABLE IF NOT EXISTS prefix.
-
-        Returns:
-            The string 'CREATE TABLE IF NOT EXISTS'.
-        """
-        return "CREATE TABLE IF NOT EXISTS"
-
-    def get_limit_clause(self, limit: int) -> str:
-        """Get SQLite's LIMIT clause.
-
-        Args:
-            limit: Maximum number of rows to return.
-
-        Returns:
-            LIMIT clause in SQLite format.
-        """
-        return f"LIMIT {limit}"
-
-    def get_upsert_query(self, table: str, columns: List[str], conflict_column: str) -> str:
-        """Generate SQLite UPSERT query using ON CONFLICT.
-
-        Args:
-            table: Table name for the UPSERT operation.
-            columns: List of column names to insert/update.
-            conflict_column: Column name to check for conflicts.
-
-        Returns:
-            SQLite UPSERT query using ON CONFLICT DO UPDATE syntax.
-        """
-        columns_str = ", ".join(f'"{col}"' for col in columns)
-        values_str = ", ".join("?" for _ in columns)
-        updates_str = ", ".join(
-            f'"{col}" = EXCLUDED."{col}"' for col in columns if col != conflict_column
-        )
-
-        # nosec B608: table name validated by caller, parameters use ? placeholders
-        return f"""
-            INSERT INTO {table} ({columns_str})
-            VALUES ({values_str})
-            ON CONFLICT ("{conflict_column}") DO UPDATE
-            SET {updates_str}
-        """
-
-    def get_temp_table_syntax(self, table_name: str, select_query: str) -> str:
-        """Generate SQLite temporary table creation syntax.
-
-        Args:
-            table_name: Name for the temporary table.
-            select_query: SELECT query to populate the temp table.
-
-        Returns:
-            SQLite CREATE TEMP TABLE AS query.
-        """
-        # nosec B608: table_name validated by caller, select_query constructed internally
-        return f"""
-            CREATE TEMP TABLE {table_name} AS
-            {select_query}
-        """
-
-    def get_drop_temp_table_syntax(self, table_name: str) -> str:
-        """Generate SQLite temporary table drop syntax.
-
-        Args:
-            table_name: Name of the temporary table to drop.
-
-        Returns:
-            SQLite DROP TABLE query.
-        """
-        # nosec B608: table_name validated by caller
-        return f"DROP TABLE {table_name}"
-
-    def get_data_types(self) -> Dict[str, str]:
-        """Get SQLite data type mappings.
-
-        Returns:
-            Dictionary mapping generic types to SQLite types.
-        """
-        return {
-            "uuid": "UUID",
-            "varchar": "TEXT",
-            "text": "TEXT",
-            "boolean": "BOOLEAN",
-            "datetime": "TEXT",
-            "int": "INT",
-            "json": "JSONB",
-            "array": "TEXT[]",
-        }
-
-
-class AzureSQLDialect(Dialect):
-    """Azure SQL (SQL Server) specific dialect implementation.
-
-    Implements SQL Server syntax including MERGE for UPSERT, TOP for LIMIT,
-    conditional table creation with sysobjects, and T-SQL data types.
-    """
-
-    def get_create_table_if_not_exists_prefix(self) -> str:
-        """Get Azure SQL's conditional table creation prefix.
-
-        Returns:
-            SQL Server IF NOT EXISTS check using sysobjects with placeholder for table_name.
-        """
-        return "IF NOT EXISTS (SELECT * FROM sysobjects WHERE name='{table_name}' AND xtype='U')\nCREATE TABLE"
-
-    def get_limit_clause(self, limit: int) -> str:
-        """Get Azure SQL's TOP clause for limiting results.
-
-        Args:
-            limit: Maximum number of rows to return.
-
-        Returns:
-            TOP clause in SQL Server format.
-        """
-        return f"TOP {limit}"
-
-    def get_upsert_query(self, table: str, columns: List[str], conflict_column: str) -> str:
-        """Generate Azure SQL MERGE statement for UPSERT.
-
-        Args:
-            table: Table name for the UPSERT operation.
-            columns: List of column names to insert/update.
-            conflict_column: Column name to check for conflicts.
-
-        Returns:
-            SQL Server MERGE statement for UPSERT operation.
-        """
-        columns_str = ", ".join(f"[{col}]" for col in columns)
-        values_str = ", ".join("?" for _ in columns)
-        updates_str = ", ".join(f"[{col}] = ?" for col in columns if col != conflict_column)
-
-        # nosec B608: table name validated by caller, parameters use ? placeholders
-        return f"""
-            MERGE {table} AS target
-            USING (SELECT ? as {conflict_column}) AS source ON target.[{conflict_column}] = source.{conflict_column}
-            WHEN MATCHED THEN
-                UPDATE SET {updates_str}
-            WHEN NOT MATCHED THEN
-                INSERT ({columns_str})
-                VALUES ({values_str})
-        """
-
-    def get_temp_table_syntax(self, table_name: str, select_query: str) -> str:
-        """Generate Azure SQL temporary table creation syntax.
-
-        Args:
-            table_name: Name for the temporary table (without # prefix).
-            select_query: SELECT query to populate the temp table.
-
-        Returns:
-            SQL Server SELECT INTO #temp_table syntax.
-        """
-        # nosec B608: table name validated by caller, select_query is constructed internally
-        return f"""
-            {select_query}
-            INTO #{table_name}
-        """
-
-    def get_drop_temp_table_syntax(self, table_name: str) -> str:
-        """Generate Azure SQL temporary table drop syntax.
-
-        Args:
-            table_name: Name of the temporary table to drop (without # prefix).
-
-        Returns:
-            SQL Server DROP TABLE #temp_table query.
-        """
-        # nosec B608: table_name validated by caller
-        return f"DROP TABLE #{table_name}"
-
-    def get_data_types(self) -> Dict[str, str]:
-        """Get Azure SQL data type mappings.
-
-        Returns:
-            Dictionary mapping generic types to SQL Server types.
-        """
-        return {
-            "uuid": "UNIQUEIDENTIFIER",
-            "varchar": "NVARCHAR(255)",
-            "text": "NVARCHAR(MAX)",
-            "boolean": "BIT",
-            "datetime": "DATETIME2",
-            "int": "INT",
-            "json": "NVARCHAR(MAX)",
-            "array": "NVARCHAR(MAX)",
-        }
+from .azuresql import AzureSQLDialect
+from .base import Dialect
 
 
 class QueryBuilder:
@@ -388,133 +112,6 @@ class QueryBuilder:
                 identifier {self._get_data_type("varchar")} NOT NULL UNIQUE,
                 metadata {self._get_data_type("json")} NOT NULL,
                 createdAt {self._get_data_type("datetime")}
-            );
-        """
-
-    def create_threads_table(self) -> str:
-        """Generate CREATE TABLE query for threads table.
-
-        Returns:
-            Database-specific SQL to create the threads table with foreign key
-            to users table and columns for thread metadata, tags, and timestamps.
-        """
-        table_name = "threads"
-        prefix = self.dialect.get_create_table_if_not_exists_prefix()
-        if "{table_name}" in prefix:
-            prefix = prefix.format(table_name=table_name)
-
-        foreign_key = ""
-        if isinstance(self.dialect, AzureSQLDialect):
-            foreign_key = "FOREIGN KEY (userId) REFERENCES users(id) ON DELETE CASCADE"
-        else:
-            foreign_key = 'FOREIGN KEY ("userId") REFERENCES users("id") ON DELETE CASCADE'
-
-        # nosec B608: table name 'threads' is hardcoded constant, parameters use ? placeholders
-        return f"""
-            {prefix} {table_name} (
-                id {self._get_data_type("uuid")} PRIMARY KEY,
-                createdAt {self._get_data_type("datetime")},
-                name {self._get_data_type("varchar")},
-                userId {self._get_data_type("uuid")},
-                userIdentifier {self._get_data_type("varchar")},
-                tags {self._get_data_type("array")},
-                metadata {self._get_data_type("json")},
-                {foreign_key}
-            );
-        """
-
-    def create_steps_table(self) -> str:
-        """Generate CREATE TABLE query for steps table.
-
-        Returns:
-            Database-specific SQL to create the steps table for storing conversation
-            steps with input, output, generation metadata, and timing information.
-        """
-        table_name = "steps"
-        prefix = self.dialect.get_create_table_if_not_exists_prefix()
-        if "{table_name}" in prefix:
-            prefix = prefix.format(table_name=table_name)
-
-        # Handle 'end' column name conflict in SQL Server
-        end_column = "[end]" if isinstance(self.dialect, AzureSQLDialect) else "end"
-
-        # nosec B608: table name 'steps' is hardcoded constant, parameters use ? placeholders
-        return f"""
-            {prefix} {table_name} (
-                id {self._get_data_type("uuid")} PRIMARY KEY,
-                name {self._get_data_type("varchar")} NOT NULL,
-                type {self._get_data_type("varchar")} NOT NULL,
-                threadId {self._get_data_type("uuid")} NOT NULL,
-                parentId {self._get_data_type("uuid")},
-                disableFeedback {self._get_data_type("boolean")} NOT NULL,
-                streaming {self._get_data_type("boolean")} NOT NULL,
-                waitForAnswer {self._get_data_type("boolean")},
-                isError {self._get_data_type("boolean")},
-                metadata {self._get_data_type("json")},
-                tags {self._get_data_type("array")},
-                input {self._get_data_type("text")},
-                output {self._get_data_type("text")},
-                createdAt {self._get_data_type("datetime")},
-                start {self._get_data_type("datetime")},
-                {end_column} {self._get_data_type("datetime")},
-                generation {self._get_data_type("json")},
-                showInput {self._get_data_type("varchar")},
-                language {self._get_data_type("varchar")},
-                indent {self._get_data_type("int")}
-            );
-        """
-
-    def create_elements_table(self) -> str:
-        """Generate CREATE TABLE query for elements table.
-
-        Returns:
-            Database-specific SQL to create the elements table for storing
-            file attachments, images, and other elements associated with threads.
-        """
-        table_name = "elements"
-        prefix = self.dialect.get_create_table_if_not_exists_prefix()
-        if "{table_name}" in prefix:
-            prefix = prefix.format(table_name=table_name)
-
-        # nosec B608: table name 'elements' is hardcoded constant, parameters use ? placeholders
-        return f"""
-            {prefix} {table_name} (
-                id {self._get_data_type("uuid")} PRIMARY KEY,
-                threadId {self._get_data_type("uuid")},
-                type {self._get_data_type("varchar")},
-                url {self._get_data_type("text")},
-                chainlitKey {self._get_data_type("varchar")},
-                name {self._get_data_type("varchar")} NOT NULL,
-                display {self._get_data_type("varchar")},
-                objectKey {self._get_data_type("varchar")},
-                size {self._get_data_type("varchar")},
-                page {self._get_data_type("int")},
-                language {self._get_data_type("varchar")},
-                forId {self._get_data_type("uuid")},
-                mime {self._get_data_type("varchar")}
-            );
-        """
-
-    def create_feedbacks_table(self) -> str:
-        """Generate CREATE TABLE query for feedbacks table.
-
-        Returns:
-            Database-specific SQL to create the feedbacks table for storing
-            user feedback (value and comment) associated with steps.
-        """
-        table_name = "feedbacks"
-        prefix = self.dialect.get_create_table_if_not_exists_prefix()
-        if "{table_name}" in prefix:
-            prefix = prefix.format(table_name=table_name)
-
-        # nosec B608: table name 'feedbacks' is hardcoded constant, parameters use ? placeholders
-        return f"""
-            {prefix} {table_name} (
-                id {self._get_data_type("uuid")} PRIMARY KEY,
-                forId {self._get_data_type("uuid")} NOT NULL,
-                threadId {self._get_data_type("uuid")} NOT NULL,
-                value {self._get_data_type("int")} NOT NULL,
-                comment {self._get_data_type("text")}
             );
         """
 
@@ -759,7 +356,60 @@ class QueryBuilder:
             WHERE user_id = ?
         """
 
-    def get_query(self, query_type: str, **kwargs: Any) -> str:
+    def create_indexes(self) -> list[str]:
+        """Generate CREATE INDEX queries for performance optimization.
+
+        Creates indexes on commonly queried columns:
+        - chat_history: thread_id, user_id, (thread_id, timestamp)
+        - chat_history_summary: thread_id, user_id
+        - users: identifier
+
+        Returns:
+            List of database-specific CREATE INDEX SQL statements.
+        """
+        indexes = []
+
+        if isinstance(self.dialect, AzureSQLDialect):
+            # Azure SQL syntax for conditional index creation
+            indexes.extend(
+                [
+                    """
+                IF NOT EXISTS (SELECT * FROM sys.indexes WHERE name = 'idx_chat_history_thread_id' AND object_id = OBJECT_ID('chat_history'))
+                CREATE INDEX idx_chat_history_thread_id ON chat_history (thread_id);
+                """,
+                    """
+                IF NOT EXISTS (SELECT * FROM sys.indexes WHERE name = 'idx_chat_history_user_id' AND object_id = OBJECT_ID('chat_history'))
+                CREATE INDEX idx_chat_history_user_id ON chat_history (user_id);
+                """,
+                    """
+                IF NOT EXISTS (SELECT * FROM sys.indexes WHERE name = 'idx_chat_history_thread_timestamp' AND object_id = OBJECT_ID('chat_history'))
+                CREATE INDEX idx_chat_history_thread_timestamp ON chat_history (thread_id, timestamp DESC);
+                """,
+                    """
+                IF NOT EXISTS (SELECT * FROM sys.indexes WHERE name = 'idx_chat_history_summary_thread_id' AND object_id = OBJECT_ID('chat_history_summary'))
+                CREATE INDEX idx_chat_history_summary_thread_id ON chat_history_summary (thread_id);
+                """,
+                    """
+                IF NOT EXISTS (SELECT * FROM sys.indexes WHERE name = 'idx_chat_history_summary_user_id' AND object_id = OBJECT_ID('chat_history_summary'))
+                CREATE INDEX idx_chat_history_summary_user_id ON chat_history_summary (user_id);
+                """,
+                ]
+            )
+        else:
+            # SQLite syntax for conditional index creation
+            indexes.extend(
+                [
+                    "CREATE INDEX IF NOT EXISTS idx_chat_history_thread_id ON chat_history (thread_id);",
+                    "CREATE INDEX IF NOT EXISTS idx_chat_history_user_id ON chat_history (user_id);",
+                    "CREATE INDEX IF NOT EXISTS idx_chat_history_thread_timestamp ON chat_history (thread_id, timestamp DESC);",
+                    "CREATE INDEX IF NOT EXISTS idx_chat_history_summary_thread_id ON chat_history_summary (thread_id);",
+                    "CREATE INDEX IF NOT EXISTS idx_chat_history_summary_user_id ON chat_history_summary (user_id);",
+                ]
+            )
+
+        return indexes
+
+    def get_query(self, query_type: str, **kwargs: object) -> str:
         """Get a query by type name with optional parameters.
 
         Dynamically invokes a query method by name, allowing runtime

@@ -7,8 +7,8 @@ optionally enabled to protect all API endpoints.
 from typing import List, Optional
 
 from fastapi import FastAPI, HTTPException, Request
-from fastapi.responses import JSONResponse
-from starlette.middleware.base import BaseHTTPMiddleware
+from fastapi.responses import JSONResponse, Response
+from starlette.middleware.base import BaseHTTPMiddleware, RequestResponseEndpoint
 from starlette.types import ASGIApp
 
 from ingenious.config.settings import IngeniousSettings
@@ -51,7 +51,7 @@ class AuthenticationMiddleware(BaseHTTPMiddleware):
             "/api/v1/health",  # Allow health check
         ]
 
-    async def dispatch(self, request: Request, call_next):
+    async def dispatch(self, request: Request, call_next: RequestResponseEndpoint) -> Response:
         """Process request through authentication middleware.
 
         Args:

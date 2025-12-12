@@ -3,7 +3,7 @@
 import os
 import sys
 
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", ".."))
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".", "."))
 import ingenious.main as main_module
 
 
@@ -14,13 +14,13 @@ class TestMainModule:
         """Test that the module has appropriate documentation."""
         docstring = main_module.__doc__
         assert docstring is not None
-        assert "Main application factory." in docstring or "components." in docstring
+        assert "Main application factory" in docstring or "components" in docstring
 
     def test_imports_exist(self):
         """Test that all required imports are available."""
         # Test that imports work without error
-        assert hasattr(main_module, "create_app.")
-        assert hasattr(main_module, "FastAgentAPI.")
+        assert hasattr(main_module, "create_app")
+        assert hasattr(main_module, "FastAgentAPI")
 
     def test_backward_compatibility_imports(self):
         """Test that backward compatibility imports work."""
@@ -64,10 +64,10 @@ class TestMainModule:
 
     def test_fast_agent_api_available(self):
         """Test that FastAgentAPI is available."""
-        assert hasattr(main_module, "FastAgentAPI.")
+        assert hasattr(main_module, "FastAgentAPI")
         assert main_module.FastAgentAPI is not None
 
     def test_create_app_available(self):
         """Test that create_app is available."""
-        assert hasattr(main_module, "create_app.")
+        assert hasattr(main_module, "create_app")
         assert callable(main_module.create_app)

@@ -23,18 +23,18 @@ class TestNamespaceUtils:
 
     def test_normalize_workflow_name_with_hyphens(self):
         """Test normalizing workflow name with hyphens."""
-        result = normalize_workflow_name("bike-insights.")
-        assert result == "bike_insights."
+        result = normalize_workflow_name("bike-insights")
+        assert result == "bike_insights"
 
     def test_normalize_workflow_name_with_underscores(self):
         """Test normalizing workflow name with underscores."""
-        result = normalize_workflow_name("bike_insights.")
-        assert result == "bike_insights."
+        result = normalize_workflow_name("bike_insights")
+        assert result == "bike_insights"
 
     def test_normalize_workflow_name_mixed_case(self):
         """Test normalizing workflow name with mixed case."""
-        result = normalize_workflow_name("Bike-Insights.")
-        assert result == "bike_insights."
+        result = normalize_workflow_name("Bike-Insights")
+        assert result == "bike_insights"
 
     def test_normalize_workflow_name_empty(self):
         """Test normalizing empty workflow name."""

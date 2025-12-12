@@ -34,7 +34,7 @@ class IApiRoutes(ABC):
 
     @abstractmethod
     def add_custom_routes(self) -> APIRouter:
-        """Add custom routes to the FastAPI app instance.
+        """Adds custom routes to the FastAPI app instance.
 
         Returns:
             The router instance with custom routes added.

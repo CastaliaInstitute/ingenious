@@ -65,7 +65,7 @@ def _create_security_service(config: IngeniousSettings) -> dict[str, Any]:
     }
 
 
-class Container(containers.DeclarativeContainer):
+class Container(containers.DeclarativeContainer):  # type: ignore[misc]
     """Dependency injection container for Ingenious application."""
 
     # Wiring config no longer needed since we're using FastAPI's dependency injection

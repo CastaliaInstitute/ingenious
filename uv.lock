@@ -7,12 +7,6 @@ resolution-markers = [
     "(platform_machine != 'aarch64' and sys_platform == 'linux') or (sys_platform != 'darwin' and sys_platform != 'linux')",
 ]
 
-[manifest]
-members = [
-    "ingen-test",
-    "ingenious",
-]
-
 [[package]]
 name = "accelerate"
 version = "1.10.1"
@@ -1444,19 +1438,8 @@ wheels = [
 ]
 
 [[package]]
-name = "ingen-test"
-version = "0.1.0"
-source = { virtual = "test_dir" }
-dependencies = [
-    { name = "ingenious", extra = ["azure-full"] },
-]
-
-[package.metadata]
-requires-dist = [{ name = "ingenious", extras = ["azure-full"], editable = "." }]
-
-[[package]]
 name = "ingenious"
-version = "0.2.7"
+version = "0.2.8"
 source = { editable = "." }
 dependencies = [
     { name = "aiofiles" },

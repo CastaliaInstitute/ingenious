@@ -15,7 +15,7 @@ from autogen_core.tools import FunctionTool
 
 from ingenious.client.azure import AzureClientFactory
 from ingenious.models.agent import LLMUsageTracker
-from ingenious.models.chat import ChatRequest, ChatResponse
+from ingenious.models.chat import ChatResponse, IChatRequest
 from ingenious.services.chat_services.multi_agent.service import IConversationFlow
 
 try:
@@ -35,7 +35,7 @@ class ConversationFlow(IConversationFlow):
     Inherits from IConversationFlow to integrate with the multi-agent chat service.
     """
 
-    async def get_conversation_response(self, chat_request: ChatRequest) -> ChatResponse:
+    async def get_conversation_response(self, chat_request: IChatRequest) -> ChatResponse:
         """Get a conversation response by generating and executing SQL queries.
 
         Creates an SQL expert assistant agent with database query tools and processes
@@ -83,7 +83,8 @@ class ConversationFlow(IConversationFlow):
                     )
                     memory_parts = []
                     for msg in recent_messages:
-                        memory_parts.append(f"{msg.role}: {msg.content[:100]}...")
+                        content = msg.content or ""
+                        memory_parts.append(f"{msg.role}: {content[:100]}...")
                     memory_context = "Previous conversation:\n" + "\n".join(memory_parts) + "\n\n"
             except Exception as e:
                 logger.warning(f"Failed to retrieve thread memory: {e}")
@@ -106,8 +107,11 @@ class ConversationFlow(IConversationFlow):
 
         if use_azure_sql:
             # Use Azure SQL configuration
-            connection_string = self._config.azure_sql_services.database_connection_string
-            table_name = self._config.azure_sql_services.table_name or "sample_table"
+            # azure_sql_services is guaranteed non-None when use_azure_sql is True
+            azure_sql = self._config.azure_sql_services
+            assert azure_sql is not None
+            connection_string = azure_sql.database_connection_string
+            table_name = azure_sql.table_name or "sample_table"
 
             # Get table schema from Azure SQL
             try:
@@ -269,9 +273,12 @@ Example queries:
         )
 
         # Extract the response content
-        final_message = (
-            response.chat_message.content if response.chat_message else "No response generated"
-        )
+        # chat_message may be TextMessage or other BaseChatMessage subclass
+        final_message = "No response generated"
+        if response.chat_message:
+            chat_msg = response.chat_message
+            if hasattr(chat_msg, "content"):
+                final_message = str(chat_msg.content)
 
         # Calculate token usage manually since LLMUsageTracker doesn't work with simple flows
         from ingenious.utils.token_counter import num_tokens_from_messages

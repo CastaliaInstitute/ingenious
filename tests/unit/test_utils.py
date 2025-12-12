@@ -25,7 +25,7 @@ class TestConversationBuilder:
 
     def test_build_system_prompt(self):
         """Test building system prompt message."""
-        content = "You are a helpful assistant."
+        content = "You are a helpful assistant"
         message = build_system_prompt(content)
 
         assert message["role"] == "system"
@@ -59,7 +59,7 @@ class TestConversationBuilder:
 
     def test_build_assistant_message_with_tool_calls(self):
         """Test building assistant message with tool calls."""
-        content = "I'll help you with that."
+        content = "I'll help you with that"
         tool_calls = [{"id": "1", "function": {"name": "test_function"}}]
         message = build_assistant_message(content, tool_calls)
 

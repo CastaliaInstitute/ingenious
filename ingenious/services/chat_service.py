@@ -1,5 +1,7 @@
+"""Chat service interface and base implementations."""
+
 from abc import ABC, abstractmethod
-from typing import Any, AsyncIterator
+from typing import AsyncIterator
 
 from ingenious.config.settings import IngeniousSettings
 from ingenious.core.error_handling import operation_context
@@ -15,21 +17,49 @@ logger = get_logger(__name__)
 
 
 class IChatService(ABC):
-    service_class: Any = None
+    """Abstract base class defining the interface for chat services.
+
+    This interface defines the contract for chat service implementations,
+    including both regular and streaming response methods.
+    """
+
+    service_class: "IChatService | None" = None
 
     @abstractmethod
     async def get_chat_response(self, chat_request: ChatRequest) -> ChatResponse:
+        """Get a chat response from the chat service.
+
+        Args:
+            chat_request: The chat request containing the user message and context.
+
+        Returns:
+            ChatResponse object containing the agent's response.
+        """
         pass
 
     @abstractmethod
     def get_streaming_chat_response(
         self, chat_request: ChatRequest
     ) -> AsyncIterator[ChatResponseChunk]:
+        """Get a streaming chat response from the chat service.
+
+        Args:
+            chat_request: The chat request containing the user message and context.
+
+        Yields:
+            ChatResponseChunk objects as the response is generated.
+        """
         pass
 
 
 class ChatService(IChatService):
-    service_class: Any  # Will be set to instantiated service class
+    """Chat service implementation that dynamically loads and delegates to specific service types.
+
+    This class acts as a facade that loads the appropriate chat service implementation
+    based on the specified service type and delegates all operations to it.
+    """
+
+    service_class: IChatService  # Will be set to instantiated service class
 
     def __init__(
         self,
@@ -39,7 +69,18 @@ class ChatService(IChatService):
         config: IngeniousSettings,
         revision: str = "dfe19b62-07f1-4cb5-ae9a-561a253e4b04",
     ):
-        class_name = f"{chat_service_type.lower()}_chat_service"
+        """Initialize the ChatService with the specified service type and configuration.
+
+        Args:
+            chat_service_type: The type of chat service to use.
+            chat_history_repository: Repository for managing chat history.
+            conversation_flow: The conversation flow pattern to use.
+            config: The ingenious settings configuration.
+            revision: The revision ID. Defaults to "dfe19b62-07f1-4cb5-ae9a-561a253e4b04".
+        """
+        class_name = (
+            "".join(word.capitalize() for word in chat_service_type.split("_")) + "ChatService"
+        )
         self.config = config
         self.revision = revision
 
@@ -113,13 +154,35 @@ class ChatService(IChatService):
         )
 
     async def get_chat_response(self, chat_request: ChatRequest) -> ChatResponse:
+        """Get a chat response from the underlying service.
+
+        Args:
+            chat_request: The chat request containing the user's message and context.
+
+        Returns:
+            A ChatResponse object with the agent's response.
+
+        Raises:
+            ValueError: If conversation_flow is not set in the chat request.
+        """
         if not chat_request.conversation_flow:
             raise ValueError(f"conversation_flow not set {chat_request}")
-        return await self.service_class.get_chat_response(chat_request)  # type: ignore
+        return await self.service_class.get_chat_response(chat_request)
 
     async def get_streaming_chat_response(
         self, chat_request: ChatRequest
     ) -> AsyncIterator[ChatResponseChunk]:
+        """Get a streaming chat response from the underlying service.
+
+        Args:
+            chat_request: The chat request containing the user's message and context.
+
+        Yields:
+            ChatResponseChunk objects containing parts of the response.
+
+        Raises:
+            ValueError: If conversation_flow is not set in the chat request.
+        """
         if not chat_request.conversation_flow:
             raise ValueError(f"conversation_flow not set {chat_request}")
 

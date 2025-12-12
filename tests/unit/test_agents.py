@@ -62,7 +62,7 @@ class TestAgents:
         """Test initialization with a configuration."""
         from ingenious.config.settings import IngeniousSettings
 
-        # Create a mock config
+        # Create a mock config with authentication disabled
         mock_config = IngeniousSettings.model_validate(
             {
                 "models": [
@@ -71,7 +71,8 @@ class TestAgents:
                         "api_key": "test-key",
                         "base_url": "https://api.openai.com/v1",
                     }
-                ]
+                ],
+                "web_configuration": {"authentication": {"enable": False}},
             }
         )
 
@@ -83,7 +84,7 @@ class TestAgents:
         """Test getting an agent by name."""
         from ingenious.config.settings import IngeniousSettings
 
-        # Create a mock config
+        # Create a mock config with authentication disabled
         mock_config = IngeniousSettings.model_validate(
             {
                 "models": [
@@ -92,7 +93,8 @@ class TestAgents:
                         "api_key": "test-key",
                         "base_url": "https://api.openai.com/v1",
                     }
-                ]
+                ],
+                "web_configuration": {"authentication": {"enable": False}},
             }
         )
 

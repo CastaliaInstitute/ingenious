@@ -5,6 +5,7 @@ workflow status validation, and system diagnostics.
 """
 
 import time
+from dataclasses import dataclass, field
 from datetime import datetime
 from pathlib import Path
 from typing import Any, Dict, List
@@ -12,6 +13,7 @@ from typing import Any, Dict, List
 from fastapi import APIRouter, Depends, HTTPException, Request
 from typing_extensions import Annotated
 
+from ingenious.config.settings import IngeniousSettings
 from ingenious.core.structured_logging import get_logger
 from ingenious.models.http_error import HTTPError
 from ingenious.services import auth_dependencies
@@ -24,6 +26,101 @@ from ingenious.utils.namespace_utils import (
 
 logger = get_logger(__name__)
 router = APIRouter()
+
+
+@dataclass
+class ConfigValidationResult:
+    """Result of configuration validation."""
+
+    configured: bool = True
+    missing_config: List[str] = field(default_factory=list)
+
+    def add_error(self, message: str) -> None:
+        """Add a configuration error."""
+        self.missing_config.append(message)
+        self.configured = False
+
+
+def _validate_models_config(config: IngeniousSettings, result: ConfigValidationResult) -> None:
+    """Validate model configuration."""
+    if not config.models or len(config.models) == 0:
+        result.add_error("models: No models configured")
+        return
+
+    model = config.models[0]
+    if not getattr(model, "api_key", None):
+        result.add_error("models.api_key: Missing environment configuration")
+    if not getattr(model, "base_url", None):
+        result.add_error("models.base_url: Missing environment configuration")
+
+
+def _validate_chat_service_config(
+    config: IngeniousSettings, result: ConfigValidationResult
+) -> None:
+    """Validate chat service configuration."""
+    if not config.chat_service or config.chat_service.type != "multi_agent":
+        result.add_error("chat_service.type: Must be 'multi_agent'")
+
+
+def _validate_azure_search_config(
+    config: IngeniousSettings, result: ConfigValidationResult
+) -> None:
+    """Validate Azure Search configuration."""
+    if not config.azure_search_services or len(config.azure_search_services) == 0:
+        result.add_error("azure_search_services: Not configured")
+        return
+
+    search_service = config.azure_search_services[0]
+    if not search_service.endpoint:
+        result.add_error("azure_search_services.endpoint: Missing")
+    if not getattr(search_service, "key", None):
+        result.add_error("azure_search_services.key: Missing environment configuration")
+
+
+def _validate_local_sql_config(config: IngeniousSettings, result: ConfigValidationResult) -> None:
+    """Validate local SQL configuration."""
+    if not getattr(config, "local_sql_db", None):
+        result.add_error("local_sql_db: Not configured")
+        return
+
+    if not config.local_sql_db.database_path:
+        result.add_error("local_sql_db.database_path: Missing")
+    if not config.local_sql_db.sample_csv_path:
+        result.add_error("local_sql_db.sample_csv_path: Missing")
+
+
+def _validate_sql_manipulation_config(
+    config: IngeniousSettings, result: ConfigValidationResult
+) -> None:
+    """Validate SQL manipulation agent configuration."""
+    has_azure_sql = getattr(config, "azure_sql_services", None) and getattr(
+        config.azure_sql_services, "database_connection_string", None
+    )
+    has_local_sql = getattr(config, "local_sql_db", None) and getattr(
+        config.local_sql_db, "database_path", None
+    )
+
+    if not has_azure_sql and not has_local_sql:
+        result.add_error("database: Neither Azure SQL nor local SQLite configured")
+
+
+def _validate_workflow_requirements(
+    config: IngeniousSettings,
+    workflow_name: str,
+    requirements: Dict[str, Any],
+    result: ConfigValidationResult,
+) -> None:
+    """Validate workflow-specific requirements."""
+    required_config = requirements.get("required_config", [])
+
+    if "azure_search_services" in required_config:
+        _validate_azure_search_config(config, result)
+
+    if "local_sql_db" in required_config:
+        _validate_local_sql_config(config, result)
+
+    if workflow_name == "sql_manipulation_agent":
+        _validate_sql_manipulation_config(config, result)
 
 
 @router.get(
@@ -46,104 +143,40 @@ async def workflow_status(
     """
     try:
         config = ingen_deps.get_config()
-
-        # Normalize workflow name to handle both hyphenated and underscored formats
         normalized_workflow_name = normalize_workflow_name(workflow_name)
 
-        # Discover available workflows dynamically
         available_workflows = discover_workflows(
             include_builtin=config.chat_service.enable_builtin_workflows
         )
 
-        # Check against normalized name
         if normalized_workflow_name not in available_workflows:
             raise HTTPException(
                 status_code=404,
                 detail=f"Unknown workflow: {workflow_name} (normalized: {normalized_workflow_name}). Available: {available_workflows}",
             )
 
-        # Get workflow metadata
         requirements = get_workflow_metadata(normalized_workflow_name)
-        missing_config = []
-        configured = True
+        result = ConfigValidationResult()
 
-        # Check basic configuration
-        if not config.models or len(config.models) == 0:
-            missing_config.append("models: No models configured")
-            configured = False
-        else:
-            # Check if model has required fields from environment configuration
-            model = config.models[0]
-            if not hasattr(model, "api_key") or not model.api_key:
-                missing_config.append("models.api_key: Missing environment configuration")
-                configured = False
-            if not hasattr(model, "base_url") or not model.base_url:
-                missing_config.append("models.base_url: Missing environment configuration")
-                configured = False
-
-        if not config.chat_service or config.chat_service.type != "multi_agent":
-            missing_config.append("chat_service.type: Must be 'multi_agent'")
-            configured = False
-
-        # Check workflow-specific requirements
-        if "azure_search_services" in requirements["required_config"]:
-            if not config.azure_search_services or len(config.azure_search_services) == 0:
-                missing_config.append("azure_search_services: Not configured")
-                configured = False
-            else:
-                search_service = config.azure_search_services[0]
-                if not search_service.endpoint:
-                    missing_config.append("azure_search_services.endpoint: Missing")
-                    configured = False
-                if not hasattr(search_service, "key") or not search_service.key:
-                    missing_config.append(
-                        "azure_search_services.key: Missing environment configuration"
-                    )
-                    configured = False
-
-        if "local_sql_db" in requirements["required_config"]:
-            if not hasattr(config, "local_sql_db") or not config.local_sql_db:
-                missing_config.append("local_sql_db: Not configured")
-                configured = False
-            else:
-                if not config.local_sql_db.database_path:
-                    missing_config.append("local_sql_db.database_path: Missing")
-                    configured = False
-                if not config.local_sql_db.sample_csv_path:
-                    missing_config.append("local_sql_db.sample_csv_path: Missing")
-                    configured = False
-
-        # For SQL manipulation agent, check either Azure SQL or local is configured
-        if workflow_name == "sql_manipulation_agent":
-            has_azure_sql = (
-                hasattr(config, "azure_sql_services")
-                and config.azure_sql_services
-                and hasattr(config.azure_sql_services, "database_connection_string")
-                and config.azure_sql_services.database_connection_string
-            )
-            has_local_sql = (
-                hasattr(config, "local_sql_db")
-                and config.local_sql_db
-                and config.local_sql_db.database_path
-            )
-
-            if not has_azure_sql and not has_local_sql:
-                missing_config.append("database: Neither Azure SQL nor local SQLite configured")
-                configured = False
+        _validate_models_config(config, result)
+        _validate_chat_service_config(config, result)
+        _validate_workflow_requirements(config, workflow_name, requirements, result)
 
         return {
             "workflow": workflow_name,
             "description": requirements["description"],
             "category": requirements["category"],
-            "configured": configured,
-            "missing_config": missing_config,
+            "configured": result.configured,
+            "missing_config": result.missing_config,
             "required_config": requirements["required_config"],
             "external_services": requirements["external_services"],
-            "ready": configured,
+            "ready": result.configured,
             "test_command": f'curl -X POST http://localhost:{config.web_configuration.port}/api/v1/chat -H "Content-Type: application/json" -d \'{{"user_prompt": "Hello", "conversation_flow": "{workflow_name}"}}\'',
             "documentation": "See docs/workflows/README.md for detailed setup instructions",
         }
 
+    except HTTPException:
+        raise
     except Exception as e:
         logger.error(
             "Error in workflow status check",

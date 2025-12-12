@@ -19,10 +19,7 @@ from ingenious.config.models import (
     ModelSettings,
     WebSettings,
 )
-from ingenious.config.validators import (
-    validate_configuration,
-    validate_models_not_empty,
-)
+from ingenious.config.validators import validate_configuration
 
 
 class TestConfigModels:
@@ -84,27 +81,6 @@ class TestConfigModels:
 class TestConfigValidators:
     """Test configuration validator functions."""
 
-    def test_validate_models_not_empty_with_env_vars(self):
-        """Test validate_models_not_empty with environment variables."""
-        with patch.dict(
-            os.environ,
-            {
-                "AZURE_OPENAI_API_KEY": "test-key",
-                "AZURE_OPENAI_BASE_URL": "https://test.openai.azure.com/",
-                "AZURE_OPENAI_MODEL": "gpt-4.1-nano",
-            },
-        ):
-            models = validate_models_not_empty([])
-            assert len(models) == 1
-            assert models[0].model == "gpt-4.1-nano"
-            assert models[0].api_key == "test-key"
-
-    def test_validate_models_not_empty_without_env_vars(self):
-        """Test validate_models_not_empty without environment variables."""
-        with patch.dict(os.environ, {}, clear=True):
-            with pytest.raises(ValueError, match="At least one model must be configured"):
-                validate_models_not_empty([])
-
     def test_validate_configuration_success(self):
         """Test successful configuration validation."""
         settings = IngeniousSettings(
@@ -121,51 +97,43 @@ class TestConfigValidators:
 
     def test_validate_configuration_with_placeholders(self):
         """Test configuration validation with placeholder values."""
-        from unittest.mock import patch
+        # Create settings with valid models, then manually set placeholder values
+        settings = IngeniousSettings(
+            models=[
+                ModelSettings(
+                    model="gpt-4.1-nano",
+                    api_key="test-key",
+                    base_url="https://test.openai.azure.com/",
+                )
+            ]
+        )
 
-        with patch.dict(
-            "os.environ",
-            {
-                "AZURE_OPENAI_API_KEY": "test-key",
-                "AZURE_OPENAI_BASE_URL": "https://test.openai.azure.com/",
-            },
-        ):
-            settings = IngeniousSettings()
+        # Use object.__setattr__ to bypass pydantic validation
+        object.__setattr__(settings.models[0], "api_key", "placeholder-key")
+        object.__setattr__(settings.models[0], "base_url", "placeholder-url")
 
-            # Temporarily modify model to have placeholder values
-            original_key = settings.models[0].api_key
-            original_url = settings.models[0].base_url
-
-            # Use object.__setattr__ to bypass pydantic validation
-            object.__setattr__(settings.models[0], "api_key", "placeholder-key")
-            object.__setattr__(settings.models[0], "base_url", "placeholder-url")
-
-            try:
-                with pytest.raises(ValueError, match="Configuration validation failed"):
-                    validate_configuration(settings)
-            finally:
-                # Restore original values
-                object.__setattr__(settings.models[0], "api_key", original_key)
-                object.__setattr__(settings.models[0], "base_url", original_url)
+        with pytest.raises(ValueError, match="Configuration validation failed"):
+            validate_configuration(settings)
 
 
 class TestIngeniousSettings:
     """Test the main IngeniousSettings class."""
 
     def test_default_settings(self):
-        """Test default settings creation."""
-        with patch.dict(
-            os.environ,
-            {
-                "AZURE_OPENAI_API_KEY": "test-key",
-                "AZURE_OPENAI_BASE_URL": "https://test.openai.azure.com/",
-            },
-        ):
-            settings = IngeniousSettings()
-            assert len(settings.models) == 1
-            assert settings.models[0].model == "gpt-4.1-nano"
-            assert settings.profile == "default"
-            assert settings.web_configuration.port == 80
+        """Test default settings creation with explicit models."""
+        settings = IngeniousSettings(
+            models=[
+                ModelSettings(
+                    model="gpt-4.1-nano",
+                    api_key="test-key",
+                    base_url="https://test.openai.azure.com/",
+                )
+            ]
+        )
+        assert len(settings.models) == 1
+        assert settings.models[0].model == "gpt-4.1-nano"
+        assert settings.profile == "default"
+        assert settings.web_configuration.port == 80
 
     def test_environment_variable_override(self):
         """Test environment variable overrides."""
@@ -174,8 +142,9 @@ class TestIngeniousSettings:
             {
                 "INGENIOUS_WEB_CONFIGURATION__PORT": "9000",
                 "INGENIOUS_PROFILE": "test",
-                "AZURE_OPENAI_API_KEY": "test-key",
-                "AZURE_OPENAI_BASE_URL": "https://test.openai.azure.com/",
+                "INGENIOUS_MODELS__0__API_KEY": "test-key",
+                "INGENIOUS_MODELS__0__BASE_URL": "https://test.openai.azure.com/",
+                "INGENIOUS_MODELS__0__MODEL": "gpt-4.1-nano",
             },
         ):
             settings = IngeniousSettings()
@@ -191,8 +160,9 @@ class TestConfigFactoryFunctions:
         with patch.dict(
             os.environ,
             {
-                "AZURE_OPENAI_API_KEY": "test-key",
-                "AZURE_OPENAI_BASE_URL": "https://test.openai.azure.com/",
+                "INGENIOUS_MODELS__0__API_KEY": "test-key",
+                "INGENIOUS_MODELS__0__BASE_URL": "https://test.openai.azure.com/",
+                "INGENIOUS_MODELS__0__MODEL": "gpt-4.1-nano",
             },
         ):
             config = get_config()
@@ -210,18 +180,17 @@ class TestConfigFactoryFunctions:
 
     @pytest.mark.isolation_sensitive
     def test_load_from_env_file(self):
-        """Test load_from_env_file function."""
-        from unittest.mock import patch
-
-        # Use environment variables instead of temporary file
+        """Test settings loading from environment variables."""
+        # Use environment variables
         env_vars = {
             "INGENIOUS_PROFILE": "test_profile",
             "INGENIOUS_WEB_CONFIGURATION__PORT": "7000",
-            "AZURE_OPENAI_API_KEY": "test-key",
-            "AZURE_OPENAI_BASE_URL": "https://test.openai.azure.com/",
+            "INGENIOUS_MODELS__0__API_KEY": "test-key",
+            "INGENIOUS_MODELS__0__BASE_URL": "https://test.openai.azure.com/",
+            "INGENIOUS_MODELS__0__MODEL": "gpt-4.1-nano",
         }
 
-        with patch.dict("os.environ", env_vars, clear=True):
+        with patch.dict(os.environ, env_vars):
             config = IngeniousSettings()
             assert config.profile == "test_profile"
             assert config.web_configuration.port == 7000

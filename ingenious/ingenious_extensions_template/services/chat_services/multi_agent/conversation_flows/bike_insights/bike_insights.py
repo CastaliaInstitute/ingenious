@@ -9,7 +9,7 @@ import asyncio
 import json
 import logging
 import random
-from typing import Annotated, List
+from typing import Annotated, List, Optional
 
 import jsonpickle
 from autogen_core import (
@@ -35,7 +35,7 @@ from ingenious.models.agent import (
     AgentMessage,
     LLMUsageTracker,
 )
-from ingenious.models.chat import ChatRequest, ChatResponse
+from ingenious.models.chat import ChatResponse, IChatRequest
 from ingenious.models.message import Message as ChatHistoryMessage
 from ingenious.services.chat_services.multi_agent.service import IConversationFlow
 
@@ -50,7 +50,7 @@ class ConversationFlow(IConversationFlow):
 
     async def get_conversation_response(
         self,
-        chat_request: ChatRequest,
+        chat_request: IChatRequest,
     ) -> ChatResponse:
         """Process a chat request through the bike insights workflow.
 
@@ -122,7 +122,7 @@ class ConversationFlow(IConversationFlow):
         logger.handlers = [llm_logger]
 
         # Note you can access llm models from the configuration array
-        # llm_config = self.Get_Models()[0]
+        # llm_config = self.get_models()[0]
         # Note the base IConversationFlow gives you a logger for logging purposes
         self._logger.debug("Starting Flow")
 
@@ -130,7 +130,7 @@ class ConversationFlow(IConversationFlow):
         # Modify this if you want to modify the pattern used to correlate the agent name to the prompt template
         for agent in agents.get_agents():
             template_name = f"{agent.agent_name}_prompt.jinja"
-            agent.system_prompt = await self.Get_Template(
+            agent.system_prompt = await self.get_template(
                 file_name=template_name, revision_id=revision_id
             )
 
@@ -150,14 +150,14 @@ class ConversationFlow(IConversationFlow):
             Returns:
                 A random float between 10 and 200 representing the price.
             """
-            return random.uniform(10, 200)
+            return random.uniform(10, 200)  # nosec B311: demo code, not crypto
 
         bike_price_tool = FunctionTool(get_bike_price, description="Get the bike price.")
 
         async def register_research_agent(
             agent_name: str,
-            tools: List[FunctionTool] = [],
-            next_agent_topic: str = None,
+            tools: Optional[List[FunctionTool]] = None,
+            next_agent_topic: Optional[str] = None,
         ):
             """Register a research agent in the runtime.
 
@@ -167,6 +167,7 @@ class ConversationFlow(IConversationFlow):
                 next_agent_topic: The topic of the next agent in the workflow.
             """
             agent = agents.get_agent_by_name(agent_name=agent_name)
+            agent_tools = tools if tools is not None else []
             reg_agent = await RoutedAssistantAgent.register(
                 runtime=runtime,
                 type=agent.agent_name,
@@ -174,7 +175,7 @@ class ConversationFlow(IConversationFlow):
                     agent=agent,
                     data_identifier=identifier,
                     next_agent_topic=next_agent_topic,
-                    tools=tools,
+                    tools=agent_tools,
                 ),
             )
             await runtime.add_subscription(
@@ -208,16 +209,18 @@ class ConversationFlow(IConversationFlow):
         )
 
         # Optionally inject the chat history into the conversation flow so that you can avoid duplicate responses
-        hist_itr = await self._chat_service.chat_history_repository.get_thread_messages(
-            thread_id=chat_request.thread_id
-        )
-        hist_join = [""]
-        for h in hist_itr:
-            if h.role == "output":
-                hist_join.append(h.content)
+        hist_join: List[str] = [""]
+        if chat_request.thread_id:
+            hist_itr = await self._chat_service.chat_history_repository.get_thread_messages(
+                thread_id=chat_request.thread_id
+            )
+            if hist_itr:
+                for h in hist_itr:
+                    if h.role == "output" and h.content:
+                        hist_join.append(h.content)
         hist_str = "# Chat History \n\n" + '``` json\n\n " ' + json.dumps(hist_join)
 
-        async def register_output_agent(agent_name: str, next_agent_topic: str = None):
+        async def register_output_agent(agent_name: str, next_agent_topic: Optional[str] = None):
             """Register an output agent in the runtime.
 
             Args:
@@ -281,19 +284,27 @@ class ConversationFlow(IConversationFlow):
             chat for chat in llm_logger._queue if chat.chat_name == "summary"
         )
 
-        message: ChatHistoryMessage = ChatHistoryMessage(
+        # Extract content from chat_response, handling None cases
+        summary_content = ""
+        if (
+            summary_response.chat_response is not None
+            and summary_response.chat_response.chat_message is not None
+            and hasattr(summary_response.chat_response.chat_message, "content")
+        ):
+            summary_content = str(summary_response.chat_response.chat_message.content or "")
+
+        chat_history_msg: ChatHistoryMessage = ChatHistoryMessage(
             user_id=chat_request.user_id,
             thread_id=chat_request.thread_id,
             message_id=identifier,
             role="output",
-            # Get the item from the queue where chat_name = "summary"
-            content=summary_response.chat_response.chat_message.content,
+            content=summary_content,
             content_filter_results=None,
             tool_calls=None,
             tool_call_id=None,
             tool_call_function=None,
         )
 
-        _ = await self._chat_service.chat_history_repository.add_message(message=message)
+        _ = await self._chat_service.chat_history_repository.add_message(message=chat_history_msg)
 
         return chat_response

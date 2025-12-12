@@ -1,6 +1,6 @@
 """Chat request and response models for API interactions."""
 
-from typing import Any, Dict, Optional
+from typing import Any, Dict, List, Optional, Union
 
 from pydantic import BaseModel, Field
 
@@ -14,10 +14,10 @@ class IChatRequest(BaseModel):
         event_type: Optional event type classification.
         user_id: Optional user identifier.
         user_name: Optional user name.
-        topic: Optional conversation topic.
+        topic: Optional conversation topic (string or list of strings).
         memory_record: Whether to record this interaction in memory.
         conversation_flow: Optional conversation flow identifier.
-        thread_chat_history: Optional chat history for the thread.
+        thread_chat_history: Optional chat history for the thread (list of message dicts).
         thread_memory: Optional thread memory summary.
         stream: Whether to stream the response.
         kb_top_k: Number of knowledge base results to retrieve.
@@ -29,10 +29,10 @@ class IChatRequest(BaseModel):
     event_type: Optional[str] = None
     user_id: Optional[str] = None
     user_name: Optional[str] = None
-    topic: Optional[str] = None
+    topic: Optional[Union[str, List[str]]] = None
     memory_record: Optional[bool] = True
     conversation_flow: Optional[str] = None
-    thread_chat_history: Optional[dict[str, str]] = Field(default_factory=dict)
+    thread_chat_history: Optional[List[Dict[str, str]]] = Field(default_factory=list)
     thread_memory: Optional[str] = None
     stream: Optional[bool] = False
     kb_top_k: Optional[int] = None
@@ -49,7 +49,7 @@ class IChatResponse(BaseModel):
         followup_questions: Optional suggested followup questions.
         token_count: Number of tokens used in the response.
         max_token_count: Maximum token count allowed.
-        topic: Optional conversation topic.
+        topic: Optional conversation topic (string or list of strings).
         memory_summary: Optional memory summary.
         event_type: Optional event type.
     """
@@ -57,10 +57,10 @@ class IChatResponse(BaseModel):
     thread_id: Optional[str]
     message_id: Optional[str]
     agent_response: Optional[str]
-    followup_questions: Optional[dict[str, str]] = Field(default_factory=dict)
+    followup_questions: Optional[Dict[str, str]] = Field(default_factory=dict)
     token_count: Optional[int]
     max_token_count: Optional[int]
-    topic: Optional[str] = None
+    topic: Optional[Union[str, List[str]]] = None
     memory_summary: Optional[str] = None
     event_type: Optional[str] = None
 
@@ -77,46 +77,6 @@ class ChatResponse(IChatResponse):
     pass
 
 
-class Action(BaseModel):
-    """Action model for suggested user actions.
-
-    Attributes:
-        name: The action name.
-        description: Optional action description.
-    """
-
-    name: str
-    description: Optional[str] = None
-
-
-class KnowledgeBaseLink(BaseModel):
-    """Knowledge base link reference.
-
-    Attributes:
-        title: The link title.
-        url: The link URL.
-        description: Optional link description.
-    """
-
-    title: str
-    url: str
-    description: Optional[str] = None
-
-
-class Product(BaseModel):
-    """Product information model.
-
-    Attributes:
-        name: The product name.
-        description: Optional product description.
-        price: Optional product price.
-    """
-
-    name: str
-    description: Optional[str] = None
-    price: Optional[float] = None
-
-
 class ChatResponseChunk(BaseModel):
     """Chunk of a streaming chat response.
 
@@ -127,7 +87,7 @@ class ChatResponseChunk(BaseModel):
         content: Optional content text.
         token_count: Optional token count.
         max_token_count: Optional maximum token count.
-        topic: Optional conversation topic.
+        topic: Optional conversation topic (string or list of strings).
         memory_summary: Optional memory summary.
         followup_questions: Optional suggested followup questions.
         event_type: Optional event type.
@@ -140,9 +100,9 @@ class ChatResponseChunk(BaseModel):
     content: Optional[str] = None
     token_count: Optional[int] = None
     max_token_count: Optional[int] = None
-    topic: Optional[str] = None
+    topic: Optional[Union[str, List[str]]] = None
     memory_summary: Optional[str] = None
-    followup_questions: Optional[dict[str, str]] = None
+    followup_questions: Optional[Dict[str, str]] = None
     event_type: Optional[str] = None
     is_final: bool = False
 

@@ -1,10 +1,11 @@
 """Memory Manager for handling conversation context files through FileStorage abstraction.
+
 This ensures that memory operations work with both local and Azure Blob Storage.
 """
 
 import asyncio
 import os
-from typing import Any, Optional
+from typing import Coroutine, Optional, TypeVar
 
 from ingenious.config.settings import IngeniousSettings
 from ingenious.core.structured_logging import get_logger
@@ -12,10 +13,13 @@ from ingenious.files.files_repository import FileStorage
 
 logger = get_logger(__name__)
 
+T = TypeVar("T")
+
 
 class MemoryManager:
     """Manages conversation memory/context files using the FileStorage abstraction.
-    This allows memory operations to work with both local storage and Azure Blob Storage.
+
+    This allows memory operations to work with both local and Azure Blob Storage.
     """
 
     def __init__(self, config: IngeniousSettings, memory_path: Optional[str] = None):
@@ -175,6 +179,7 @@ class MemoryManager:
 
 class LegacyMemoryManager:
     """Legacy memory manager that provides backward compatibility for local file operations.
+
     This is used when the storage type is local or for fallback scenarios.
     """
 
@@ -319,7 +324,7 @@ def get_memory_manager(
     return MemoryManager(config, memory_path)
 
 
-def run_async_memory_operation(coro: Any) -> Any:
+def run_async_memory_operation(coro: Coroutine[object, object, T]) -> T:
     """Helper function to run async memory operations in sync contexts.
 
     Args:

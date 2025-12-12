@@ -12,7 +12,8 @@ from typing import Any, List
 from uuid import UUID
 
 from ingenious.config import IngeniousSettings
-from ingenious.db.chat_history_repository import IChatHistoryRepository
+from ingenious.db.chat_history_interface import IChatHistoryRepository
+from ingenious.db.chat_history_models import User
 from ingenious.db.query_builder import QueryBuilder
 from ingenious.models.message import Message
 
@@ -47,7 +48,7 @@ class BaseSQLRepository(IChatHistoryRepository, ABC):
     @abstractmethod
     def _execute_sql(
         self, sql: str, params: List[Any] | None = None, expect_results: bool = True
-    ) -> Any:
+    ) -> list[Any] | None:
         """Execute SQL with database-specific connection handling.
 
         Args:
@@ -61,23 +62,29 @@ class BaseSQLRepository(IChatHistoryRepository, ABC):
         pass
 
     def _create_tables(self) -> None:
-        """Create all required database tables.
+        """Create all required database tables and indexes.
 
         Uses QueryBuilder to generate database-specific CREATE TABLE statements
-        for chat_history, users, threads, steps, elements, and feedbacks.
+        for chat_history, chat_history_summary, and users. Also creates indexes
+        for optimized query performance on commonly searched columns.
         """
         table_queries = [
             self.query_builder.create_chat_history_table(),
             self.query_builder.create_chat_history_summary_table(),
             self.query_builder.create_users_table(),
-            self.query_builder.create_threads_table(),
-            self.query_builder.create_steps_table(),
-            self.query_builder.create_elements_table(),
-            self.query_builder.create_feedbacks_table(),
         ]
 
         for query in table_queries:
             self._execute_sql(query, expect_results=False)
+
+        # Create indexes for performance optimization
+        for index_query in self.query_builder.create_indexes():
+            try:
+                self._execute_sql(index_query, expect_results=False)
+            except Exception:  # nosec B110: intentional pass for idempotent index creation
+                # Index creation may fail if index already exists (non-IF NOT EXISTS DBs)
+                # or other transient issues - continue with other indexes
+                pass
 
     async def add_message(self, message: Message) -> str:
         """Add a message to the chat history.
@@ -233,9 +240,7 @@ class BaseSQLRepository(IChatHistoryRepository, ABC):
         params = [str(content_filter_results), message_id, thread_id]
         self._execute_sql(query, params, expect_results=False)
 
-    async def add_user(
-        self, identifier: str, metadata: dict[str, object] | None = None
-    ) -> IChatHistoryRepository.User:
+    async def add_user(self, identifier: str, metadata: dict[str, object] | None = None) -> User:
         """Add a new user to the database.
 
         Args:
@@ -254,14 +259,14 @@ class BaseSQLRepository(IChatHistoryRepository, ABC):
         params = [new_id, identifier, json.dumps(metadata), now]
         self._execute_sql(query, params, expect_results=False)
 
-        return IChatHistoryRepository.User(
+        return User(
             id=uuid.UUID(new_id),
             identifier=identifier,
             metadata=metadata,
             createdAt=self.get_now_as_string(),
         )
 
-    async def get_user(self, identifier: str) -> IChatHistoryRepository.User | None:
+    async def get_user(self, identifier: str) -> User | None:
         """Get user by identifier, creating if not found.
 
         Args:
@@ -383,7 +388,7 @@ class BaseSQLRepository(IChatHistoryRepository, ABC):
                 tool_call_function=row[10],
             )
 
-    def _row_to_user(self, row: Any) -> IChatHistoryRepository.User:
+    def _row_to_user(self, row: Any) -> User:
         """Convert database row to User object.
 
         Args:
@@ -393,7 +398,7 @@ class BaseSQLRepository(IChatHistoryRepository, ABC):
             User object populated from row data.
         """
         if isinstance(row, dict):
-            return IChatHistoryRepository.User(
+            return User(
                 id=UUID(row.get("id", "")),
                 identifier=str(row.get("identifier", "")),
                 metadata=dict(row.get("metadata", {})),
@@ -401,7 +406,7 @@ class BaseSQLRepository(IChatHistoryRepository, ABC):
             )
         else:
             # Assume row is tuple/list with positional values
-            return IChatHistoryRepository.User(
+            return User(
                 id=UUID(row[0]) if row[0] else UUID("00000000-0000-0000-0000-000000000000"),
                 identifier=str(row[1]) if row[1] else "",
                 metadata=dict(row[2]) if row[2] else {},

@@ -50,6 +50,8 @@ class TestAzureClientFactory:
             api_version="2023-03-15-preview",
             deployment="test-deployment",
             base_url="https://test.openai.azure.com/",
+            api_key="test-api-key",
+            authentication_method=AuthenticationMethod.TOKEN,
         )
 
         # Act

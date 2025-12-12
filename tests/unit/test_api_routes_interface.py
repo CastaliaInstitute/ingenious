@@ -5,8 +5,8 @@ from unittest.mock import Mock, patch
 
 import pytest
 from fastapi import APIRouter, FastAPI
-from ingenious.config.settings import IngeniousSettings
 
+from ingenious.config.settings import IngeniousSettings
 from ingenious.models.api_routes import IApiRoutes
 
 
@@ -25,7 +25,7 @@ class TestIApiRoutes:
         with pytest.raises(TypeError):
             IApiRoutes(config, app)
 
-    @patch("ingenious.models.api_routes.get_logger.")
+    @patch("ingenious.models.api_routes.get_logger")
     def test_concrete_implementation_initialization(self, mock_get_logger):
         """Test that a concrete implementation can be initialized properly."""
 
@@ -51,9 +51,9 @@ class TestIApiRoutes:
         assert concrete_routes.logger is mock_logger
 
         # Verify function calls
-        mock_get_logger.assert_called_once_with("ingenious.models.api_routes.")
+        mock_get_logger.assert_called_once_with("ingenious.models.api_routes")
 
-    @patch("ingenious.models.api_routes.get_logger.")
+    @patch("ingenious.models.api_routes.get_logger")
     def test_abstract_method_must_be_implemented(self, mock_get_logger):
         """Test that abstract method add_custom_routes must be implemented."""
 
@@ -79,14 +79,14 @@ class TestIApiRoutes:
         with pytest.raises(TypeError):
             ConcreteApiRoutesWithoutMethod(config, app)
 
-    @patch("ingenious.models.api_routes.get_logger.")
+    @patch("ingenious.models.api_routes.get_logger")
     def test_add_custom_routes_return_type(self, mock_get_logger):
         """Test that add_custom_routes returns APIRouter."""
 
         class ConcreteApiRoutes(IApiRoutes):
             def add_custom_routes(self) -> APIRouter:
                 router = APIRouter()
-                router.get("/test.")(lambda: {"message.": "test."})
+                router.get("/test")(lambda: {"message": "test"})
                 return router
 
         config = Mock(spec=IngeniousSettings)
@@ -99,20 +99,20 @@ class TestIApiRoutes:
         # Verify that routes can be added to the router
         assert len(router.routes) > 0
 
-    @patch("ingenious.models.api_routes.get_logger.")
+    @patch("ingenious.models.api_routes.get_logger")
     def test_multiple_implementations(self, mock_get_logger):
         """Test that multiple concrete implementations can be created."""
 
         class ApiRoutesV1(IApiRoutes):
             def add_custom_routes(self) -> APIRouter:
                 router = APIRouter()
-                router.get("/v1/test.")(lambda: {"version.": "v1."})
+                router.get("/v1/test")(lambda: {"version": "v1"})
                 return router
 
         class ApiRoutesV2(IApiRoutes):
             def add_custom_routes(self) -> APIRouter:
                 router = APIRouter()
-                router.get("/v2/test.")(lambda: {"version.": "v2."})
+                router.get("/v2/test")(lambda: {"version": "v2"})
                 return router
 
         config = Mock(spec=IngeniousSettings)
@@ -128,18 +128,17 @@ class TestIApiRoutes:
         assert isinstance(router_v2, APIRouter)
         assert router_v1 is not router_v2
 
-    @patch("ingenious.models.api_routes.get_logger.")
+    @patch("ingenious.models.api_routes.get_logger")
     def test_docstring_exists(self, mock_get_logger):
         """Test that the abstract method has proper documentation."""
         # Check that the abstract method has a docstring
         assert IApiRoutes.add_custom_routes.__doc__ is not None
         assert (
-            "Adds custom routes to the FastAPI app instance."
-            in IApiRoutes.add_custom_routes.__doc__
+            "Adds custom routes to the FastAPI app instance" in IApiRoutes.add_custom_routes.__doc__
         )
-        assert "returns the router instance." in IApiRoutes.add_custom_routes.__doc__
+        assert "returns the router instance" in IApiRoutes.add_custom_routes.__doc__
 
-    @patch("ingenious.models.api_routes.get_logger.")
+    @patch("ingenious.models.api_routes.get_logger")
     def test_inheritance_chain(self, mock_get_logger):
         """Test the inheritance chain and method resolution."""
 
@@ -157,5 +156,5 @@ class TestIApiRoutes:
         assert isinstance(concrete_routes, ABC)
 
         # Test method resolution order
-        assert hasattr(concrete_routes, "add_custom_routes.")
+        assert hasattr(concrete_routes, "add_custom_routes")
         assert callable(concrete_routes.add_custom_routes)

@@ -4,7 +4,12 @@ repos:
   - repo: https://github.com/djlint/djLint
     rev: v1.36.4
     hooks:
+      # Reformat Flask/Jinja templates
       - id: djlint-reformat-jinja
+        files: "\\.(html|jinja)$"
+        types_or: ["html", "jinja"]
+      # Lint Flask/Jinja templates
+      - id: djlint-jinja
         files: "\\.(html|jinja)$"
         types_or: ["html", "jinja"]
   - repo: https://github.com/google/yamlfmt
@@ -25,3 +30,18 @@ repos:
       - id: check-yaml
       - id: check-merge-conflict
       - id: debug-statements
+  # Static type checking with mypy
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.18.2
+    hooks:
+      - id: mypy
+        args: [--ignore-missing-imports]
+        additional_dependencies: [pydantic, pydantic-settings, fastapi, typer, click]
+  # Security issue detection with bandit
+  - repo: https://github.com/PyCQA/bandit
+    rev: '1.8.6'
+    hooks:
+      - id: bandit
+        # Only fail on medium+ severity; config in pyproject.toml
+        args: ['-c', 'pyproject.toml', '-ll']
+        additional_dependencies: ['bandit[toml]']

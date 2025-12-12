@@ -1,11 +1,11 @@
-"""Tests for ValidateCommand in cli/commands/help.py."""
+"""Tests for ValidateCommand in cli/commands/validate_command.py."""
 
 import os
 from unittest.mock import MagicMock, patch
 
 import pytest
 
-from ingenious.cli.commands.help import ValidateCommand
+from ingenious.cli.commands.validate_command import ValidateCommand
 from ingenious.common.enums import AuthenticationMethod
 from ingenious.config.models import ModelSettings
 
@@ -23,7 +23,7 @@ class TestValidateCommand:
     @pytest.fixture
     def mock_console(self):
         """Mock console for testing output."""
-        with patch("rich.console.Console.") as mock:
+        with patch("rich.console.Console") as mock:
             yield mock.return_value
 
     def test_validate_environment_variables_with_required_vars_set(
@@ -33,10 +33,10 @@ class TestValidateCommand:
         with patch.dict(
             os.environ,
             {
-                "INGENIOUS_MODELS__0__API_KEY.": "test-key.",
-                "INGENIOUS_MODELS__0__BASE_URL.": "https://test.openai.azure.com/.",
-                "INGENIOUS_MODELS__0__MODEL.": "gpt-4.",
-                "INGENIOUS_MODELS__0__API_VERSION.": "2024-02-01.",
+                "INGENIOUS_MODELS__0__API_KEY": "test-key",
+                "INGENIOUS_MODELS__0__BASE_URL": "https://test.openai.azure.com/",
+                "INGENIOUS_MODELS__0__MODEL": "gpt-4",
+                "INGENIOUS_MODELS__0__API_VERSION": "2024-02-01",
             },
         ):
             success, issues = validate_command._validate_environment_variables()
@@ -50,14 +50,14 @@ class TestValidateCommand:
         with patch.dict(os.environ, {}, clear=True):
             success, issues = validate_command._validate_environment_variables()
             assert not success
-            assert any("API_KEY." in error for error in issues)
+            assert any("API_KEY" in error for error in issues)
 
     def test_validate_configuration_files_with_valid_files(self, validate_command, mock_console):
         """Test configuration file validation with valid files."""
         fake_model = ModelSettings(
-            model="gpt-5-mini.",
-            api_key="test-key.",
-            base_url="https://example.openai.azure.com/.",
+            model="gpt-4o-mini",
+            api_key="test-key",
+            base_url="https://example.openai.azure.com/",
             authentication_method=AuthenticationMethod.TOKEN,
         )
 
@@ -66,7 +66,7 @@ class TestValidateCommand:
         mock_settings.validate_configuration.return_value = None
 
         with patch(
-            "ingenious.config.main_settings.IngeniousSettings.",
+            "ingenious.config.main_settings.IngeniousSettings",
             return_value=mock_settings,
         ):
             success, issues = validate_command._validate_configuration_files()
@@ -77,23 +77,23 @@ class TestValidateCommand:
         """Test Azure connectivity validation with successful connection."""
         # Mock the settings loading to return a valid model configuration
         mock_model = MagicMock()
-        mock_model.base_url = "https://test.openai.azure.com/."
-        mock_model.api_key = "test-key."
+        mock_model.base_url = "https://test.openai.azure.com/"
+        mock_model.api_key = "test-key"
         mock_model.authentication_method = MagicMock()
-        mock_model.authentication_method.value = "TOKEN."
+        mock_model.authentication_method.value = "TOKEN"
 
         mock_settings = MagicMock()
         mock_settings.models = [mock_model]
 
         with patch(
-            "ingenious.config.main_settings.IngeniousSettings.",
+            "ingenious.config.main_settings.IngeniousSettings",
             return_value=mock_settings,
         ):
             with patch.object(
-                validate_command, "_validate_auth_credentials.", return_value=(True, [])
+                validate_command, "_validate_auth_credentials", return_value=(True, [])
             ):
                 with patch(
-                    "ingenious.cli.utilities.ValidationUtils.validate_url.",
+                    "ingenious.cli.utilities.ValidationUtils.validate_url",
                     return_value=(True, ""),
                 ):
                     with patch.object(

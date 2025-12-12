@@ -7,8 +7,7 @@ and integrating with various authentication providers (Azure, Basic Auth, JWT).
 from __future__ import annotations
 
 import asyncio
-import inspect
-from typing import TYPE_CHECKING, Any, Callable, Mapping, Optional, Union
+from typing import TYPE_CHECKING, Any, Callable, Coroutine, Mapping, Optional, Union
 
 from ingenious.common.enums import AuthenticationMethod
 
@@ -16,7 +15,7 @@ if TYPE_CHECKING:
     pass
 
 
-def _get(obj: Any, *names: str) -> Optional[Any]:
+def _get(obj: object, *names: str) -> str | None:
     """Get a value from an object or mapping by trying multiple attribute names.
 
     Args:
@@ -24,19 +23,20 @@ def _get(obj: Any, *names: str) -> Optional[Any]:
         *names: Attribute or key names to try in order.
 
     Returns:
-        The first non-None value found, or None if all are None or not present.
+        The first non-None value found as string, or None if all are None or not present.
     """
     if obj is None:
         return None
     if isinstance(obj, Mapping):
         for n in names:
             if n in obj and obj[n] is not None:
-                return obj[n]
+                val = obj[n]
+                return str(val) if val is not None else None
         return None
     for n in names:
         val = getattr(obj, n, None)
         if val is not None:
-            return val
+            return str(val)
     return None
 
 
@@ -111,7 +111,44 @@ class AzureAuthConfig:
         return cls(authentication_method=AuthenticationMethod.DEFAULT_CREDENTIAL)
 
     @classmethod
-    def from_config(cls, config: Any) -> "AzureAuthConfig":
+    def _infer_auth_method(
+        cls,
+        client_id: Optional[str],
+        client_secret: Optional[str],
+        tenant_id: Optional[str],
+        api_key: Optional[str],
+        explicit: Optional[AuthenticationMethod],
+    ) -> AuthenticationMethod:
+        """Infer authentication method from available credentials.
+
+        Precedence: SPN > MSI (with client_id) > API key > Default
+        """
+        if client_id and client_secret and tenant_id:
+            return AuthenticationMethod.CLIENT_ID_AND_SECRET
+        if client_id and not client_secret and not tenant_id:
+            return AuthenticationMethod.MSI
+        if api_key:
+            method = AuthenticationMethod.TOKEN
+        else:
+            method = AuthenticationMethod.DEFAULT_CREDENTIAL
+
+        # Respect explicit method unless it would demote SPN
+        if isinstance(explicit, AuthenticationMethod):
+            return explicit
+        return method
+
+    @classmethod
+    def _parse_explicit_method(cls, value: object) -> Optional[AuthenticationMethod]:
+        """Parse explicit authentication method from config value."""
+        if isinstance(value, str):
+            try:
+                return AuthenticationMethod[value]
+            except Exception:
+                return None
+        return value if isinstance(value, AuthenticationMethod) else None
+
+    @classmethod
+    def from_config(cls, config: object) -> "AzureAuthConfig":
         """Create authentication config from a configuration object or mapping.
 
         Args:
@@ -128,36 +165,16 @@ class AzureAuthConfig:
         # Endpoint aliases
         endpoint = _get(config, "endpoint", "base_url", "url", "openai_endpoint")
 
-        # AAD/SPN/MSI
+        # AAD/SPN/MSI credentials
         client_id = _get(config, "client_id")
         client_secret = _get(config, "client_secret")
         tenant_id = _get(config, "tenant_id")
 
-        # Optional explicit method
-        explicit = _get(config, "authentication_method")
-        if isinstance(explicit, str):
-            try:
-                explicit = AuthenticationMethod[explicit]
-            except Exception:
-                explicit = None
-
-        # Optional API version (useful for AOAI)
+        # Optional explicit method and API version
+        explicit = cls._parse_explicit_method(_get(config, "authentication_method"))
         api_version = _get(config, "openai_version", "api_version")
 
-        # Precedence: SPN > MSI (with client_id) > API key > Default
-        if client_id and client_secret and tenant_id:
-            method = AuthenticationMethod.CLIENT_ID_AND_SECRET
-        elif client_id and not client_secret and not tenant_id:
-            method = AuthenticationMethod.MSI
-        elif api_key:
-            method = AuthenticationMethod.TOKEN
-        else:
-            method = AuthenticationMethod.DEFAULT_CREDENTIAL
-
-        # Respect explicit method unless it would demote SPN
-        if isinstance(explicit, AuthenticationMethod):
-            if method != AuthenticationMethod.CLIENT_ID_AND_SECRET:
-                method = explicit
+        method = cls._infer_auth_method(client_id, client_secret, tenant_id, api_key, explicit)
 
         inst = cls(
             authentication_method=method,
@@ -191,6 +208,82 @@ class AzureAuthConfig:
 
     # -------------------------- Async helpers --------------------------
 
+    def _is_spn_auth(self) -> bool:
+        """Check if using service principal authentication with all required fields."""
+        return (
+            self.authentication_method == AuthenticationMethod.CLIENT_ID_AND_SECRET
+            and bool(self.tenant_id)
+            and bool(self.client_id)
+            and bool(self.client_secret)
+        )
+
+    def _is_msi_auth(self) -> bool:
+        """Check if using managed identity authentication."""
+        return self.authentication_method == AuthenticationMethod.MSI and bool(self.client_id)
+
+    def _try_sync_token_provider(self, scope: str) -> Optional[Callable[[], str]]:
+        """Try to create a sync token provider using azure.identity."""
+        try:
+            from azure.identity import ClientSecretCredential as SyncClientSecretCredential
+            from azure.identity import DefaultAzureCredential as SyncDefaultAzureCredential
+            from azure.identity import (
+                ManagedIdentityCredential as SyncManagedIdentityCredential,
+            )
+            from azure.identity import (
+                get_bearer_token_provider as get_sync_bearer_token_provider,
+            )
+
+            cred: Union[
+                SyncClientSecretCredential,
+                SyncManagedIdentityCredential,
+                SyncDefaultAzureCredential,
+            ]
+            if self._is_spn_auth():
+                cred = SyncClientSecretCredential(
+                    tenant_id=str(self.tenant_id),
+                    client_id=str(self.client_id),
+                    client_secret=str(self.client_secret),
+                )
+            elif self._is_msi_auth():
+                cred = SyncManagedIdentityCredential(client_id=str(self.client_id))
+            else:
+                cred = SyncDefaultAzureCredential(exclude_interactive_browser_credential=True)
+            provider: Callable[[], str] | None = get_sync_bearer_token_provider(cred, scope)
+            return provider
+        except Exception:
+            return None  # nosec B110 - intentional fallback to async path
+
+    def _create_aio_token_provider(self, scope: str) -> Callable[[], Coroutine[Any, Any, str]]:
+        """Create an async token provider using azure.identity.aio."""
+        from azure.identity.aio import ClientSecretCredential as AioClientSecretCredential
+        from azure.identity.aio import DefaultAzureCredential as AioDefaultAzureCredential
+        from azure.identity.aio import (
+            ManagedIdentityCredential as AioManagedIdentityCredential,
+        )
+        from azure.identity.aio import (
+            get_bearer_token_provider as get_aio_bearer_token_provider,
+        )
+
+        aio_cred: Union[
+            AioClientSecretCredential,
+            AioManagedIdentityCredential,
+            AioDefaultAzureCredential,
+        ]
+        if self._is_spn_auth():
+            aio_cred = AioClientSecretCredential(
+                tenant_id=str(self.tenant_id),
+                client_id=str(self.client_id),
+                client_secret=str(self.client_secret),
+            )
+        elif self._is_msi_auth():
+            aio_cred = AioManagedIdentityCredential(client_id=str(self.client_id))
+        else:
+            aio_cred = AioDefaultAzureCredential(exclude_interactive_browser_credential=True)
+        result: Callable[[], Coroutine[Any, Any, str]] = get_aio_bearer_token_provider(
+            aio_cred, scope
+        )
+        return result
+
     def to_openai_async_token_provider_or_none(
         self,
         scope: str,
@@ -210,80 +303,13 @@ class AzureAuthConfig:
             return None
 
         # Try sync azure.identity first
-        try:
-            from azure.identity import (
-                ClientSecretCredential as SyncClientSecretCredential,
-            )
-            from azure.identity import (
-                DefaultAzureCredential as SyncDefaultAzureCredential,
-            )
-            from azure.identity import (
-                ManagedIdentityCredential as SyncManagedIdentityCredential,
-            )
-            from azure.identity import (
-                get_bearer_token_provider as get_sync_bearer_token_provider,
-            )
-
-            cred: Union[
-                SyncClientSecretCredential,
-                SyncManagedIdentityCredential,
-                SyncDefaultAzureCredential,
-            ]
-            if (
-                self.authentication_method == AuthenticationMethod.CLIENT_ID_AND_SECRET
-                and self.tenant_id
-                and self.client_id
-                and self.client_secret
-            ):
-                cred = SyncClientSecretCredential(
-                    tenant_id=str(self.tenant_id),
-                    client_id=str(self.client_id),
-                    client_secret=str(self.client_secret),
-                )
-            elif self.authentication_method == AuthenticationMethod.MSI and self.client_id:
-                cred = SyncManagedIdentityCredential(client_id=str(self.client_id))
-            else:
-                cred = SyncDefaultAzureCredential(exclude_interactive_browser_credential=True)
-            return get_sync_bearer_token_provider(cred, scope)
-        except Exception:
-            pass
+        sync_provider = self._try_sync_token_provider(scope)
+        if sync_provider is not None:
+            return sync_provider
 
         # Fall back to aio path and wrap in a sync callable
         try:
-            from azure.identity.aio import (
-                ClientSecretCredential as AioClientSecretCredential,
-            )
-            from azure.identity.aio import (
-                DefaultAzureCredential as AioDefaultAzureCredential,
-            )
-            from azure.identity.aio import (
-                ManagedIdentityCredential as AioManagedIdentityCredential,
-            )
-            from azure.identity.aio import (
-                get_bearer_token_provider as get_aio_bearer_token_provider,
-            )
-
-            aio_cred: Union[
-                AioClientSecretCredential,
-                AioManagedIdentityCredential,
-                AioDefaultAzureCredential,
-            ]
-            if (
-                self.authentication_method == AuthenticationMethod.CLIENT_ID_AND_SECRET
-                and self.tenant_id
-                and self.client_id
-                and self.client_secret
-            ):
-                aio_cred = AioClientSecretCredential(
-                    tenant_id=str(self.tenant_id),
-                    client_id=str(self.client_id),
-                    client_secret=str(self.client_secret),
-                )
-            elif self.authentication_method == AuthenticationMethod.MSI and self.client_id:
-                aio_cred = AioManagedIdentityCredential(client_id=str(self.client_id))
-            else:
-                aio_cred = AioDefaultAzureCredential(exclude_interactive_browser_credential=True)
-            aio_provider = get_aio_bearer_token_provider(aio_cred, scope)
+            aio_provider = self._create_aio_token_provider(scope)
         except Exception as e:  # pragma: no cover
             raise ImportError(
                 "Async Azure OpenAI with AAD requires 'azure-identity'. "
@@ -291,19 +317,20 @@ class AzureAuthConfig:
             ) from e
 
         def _sync_provider() -> str:
-            token_or_coro = aio_provider()
-            if inspect.isawaitable(token_or_coro):
-                try:
-                    loop = asyncio.get_event_loop()
-                    if loop.is_running():
-                        new_loop = asyncio.new_event_loop()
-                        try:
-                            return new_loop.run_until_complete(token_or_coro)
-                        finally:
-                            new_loop.close()
-                    return loop.run_until_complete(token_or_coro)
-                except RuntimeError:
-                    return asyncio.run(token_or_coro)
-            return token_or_coro  # type: ignore[unreachable]
+            coro = aio_provider()
+            try:
+                loop = asyncio.get_event_loop()
+                if loop.is_running():
+                    new_loop = asyncio.new_event_loop()
+                    try:
+                        result: str = new_loop.run_until_complete(coro)
+                        return result
+                    finally:
+                        new_loop.close()
+                result = loop.run_until_complete(coro)
+                return result
+            except RuntimeError:
+                result = asyncio.run(coro)
+                return result
 
         return _sync_provider

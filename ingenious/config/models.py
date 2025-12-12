@@ -13,7 +13,6 @@ from pydantic import (
 )
 
 from ingenious.common.enums import AuthenticationMethod
-from ingenious.config.auth_config import AzureAuthConfig
 
 
 class ChatHistorySettings(BaseModel):
@@ -39,12 +38,12 @@ class ChatHistorySettings(BaseModel):
     memory_path: str = Field("./tmp", description="Path for memory storage and temporary files")
 
 
-class ModelSettings(AzureAuthConfig):
+class ModelSettings(BaseModel):
     """Configuration for AI models.
 
     Defines which AI models to use and how to connect to them.
     Supports Azure OpenAI, OpenAI, and other compatible endpoints.
-    Inherits Azure authentication configuration from AzureAuthConfig.
+    Contains Azure authentication configuration fields.
     """
 
     model: str = Field(..., description="Model name (e.g., 'gpt-4.1-nano', 'gpt-3.5-turbo')")
@@ -53,6 +52,21 @@ class ModelSettings(AzureAuthConfig):
     deployment: str = Field("", description="Azure OpenAI deployment name (optional)")
     base_url: str = Field("", description="Base URL for the API endpoint")
 
+    # Azure authentication fields
+    authentication_method: AuthenticationMethod = Field(
+        default=AuthenticationMethod.TOKEN, description="Authentication method for Azure services"
+    )
+    api_key: str = Field("", description="API key for token-based authentication")
+    client_id: str = Field("", description="Azure client ID for service principal or MSI")
+    client_secret: str = Field(
+        "", description="Azure client secret for service principal authentication"
+    )
+    tenant_id: str = Field("", description="Azure tenant ID for service principal authentication")
+    endpoint: str = Field("", description="Azure service endpoint URL")
+    role: str = Field(
+        "chat", description="Model role: 'chat' for generation, 'embedding' for vectors"
+    )
+
     @field_validator("api_key")
     @classmethod
     def validate_api_key(cls, v: str, info: ValidationInfo) -> str:
@@ -60,8 +74,8 @@ class ModelSettings(AzureAuthConfig):
         # Check for placeholder values
         if v and "placeholder" in v.lower():
             raise ValueError(
-                "API key is required. Set the appropriate environment variable "
-                "(e.g., AZURE_OPENAI_API_KEY) or provide a valid key."
+                "API key is required. Set INGENIOUS_MODELS__N__API_KEY "
+                "environment variable (where N is the model index)."
             )
 
         # The authentication_method validation will be handled in model_validator
@@ -75,8 +89,8 @@ class ModelSettings(AzureAuthConfig):
         """Validate that base URL is provided and properly formatted."""
         if v and "placeholder" in v.lower():
             raise ValueError(
-                "Base URL is required. Set the appropriate environment variable "
-                "(e.g., AZURE_OPENAI_BASE_URL) or provide a valid URL."
+                "Base URL is required. Set INGENIOUS_MODELS__N__BASE_URL "
+                "environment variable (where N is the model index)."
             )
         if v and not v.startswith(("http://", "https://")):
             raise ValueError("Base URL must start with 'http://' or 'https://'")
@@ -89,13 +103,14 @@ class ModelSettings(AzureAuthConfig):
         if self.authentication_method == AuthenticationMethod.TOKEN:
             if not self.api_key:
                 raise ValueError(
-                    "API key is required when authentication_method is "
-                    "'token'. Set the appropriate environment variable "
-                    "(e.g., AZURE_OPENAI_API_KEY) or provide a valid key."
+                    "API key is required when authentication_method is 'token'. "
+                    "Set INGENIOUS_MODELS__N__API_KEY environment variable."
                 )
-
-        # Since we inherit from AzureAuthConfig, we can call validate_for_method
-        self.validate_for_method()
+        elif self.authentication_method == AuthenticationMethod.CLIENT_ID_AND_SECRET:
+            if not (self.client_id and self.client_secret and self.tenant_id):
+                raise ValueError(
+                    "CLIENT_ID_AND_SECRET requires client_id, client_secret, and tenant_id."
+                )
         return self
 
 
@@ -109,6 +124,10 @@ class ChatServiceSettings(BaseModel):
     type: str = Field(
         "multi_agent",
         description="Chat service type: 'multi_agent' for agent workflows",
+    )
+    enable_builtin_workflows: bool = Field(
+        True,
+        description="Enable built-in workflows (set to False in production for security)",
     )
 
 
@@ -147,17 +166,29 @@ class LoggingSettings(BaseModel):
         return v.lower()
 
 
-class AzureSearchSettings(AzureAuthConfig):
+class AzureSearchSettings(BaseModel):
     """Configuration for Azure Cognitive Search integration.
 
     Enables document search and retrieval capabilities.
     Optional - leave empty if not using Azure Search.
-    Inherits Azure authentication configuration from AzureAuthConfig.
+    Contains Azure authentication configuration fields.
     """
 
     service: str = Field("", description="Azure Search service name")
     endpoint: str = Field("", description="Azure Search service endpoint URL")
     key: str = Field("", description="Azure Search service API key")
+    index_name: str = Field("", description="Azure Search index name")
+
+    # Azure authentication fields
+    authentication_method: AuthenticationMethod = Field(
+        default=AuthenticationMethod.TOKEN, description="Authentication method for Azure services"
+    )
+    api_key: str = Field("", description="API key for token-based authentication")
+    client_id: str = Field("", description="Azure client ID for service principal or MSI")
+    client_secret: str = Field(
+        "", description="Azure client secret for service principal authentication"
+    )
+    tenant_id: str = Field("", description="Azure tenant ID for service principal authentication")
 
 
 class AzureSqlSettings(BaseModel):
@@ -172,10 +203,41 @@ class AzureSqlSettings(BaseModel):
     database_connection_string: str = Field("", description="Azure SQL connection string")
 
 
+class CorsSettings(BaseModel):
+    """CORS (Cross-Origin Resource Sharing) configuration.
+
+    Controls which origins are allowed to make requests to the API.
+    For production, always specify explicit origins rather than using wildcards.
+    """
+
+    allowed_origins: list[str] = Field(
+        default_factory=lambda: [
+            "http://localhost",
+            "http://localhost:5173",
+            "http://localhost:4173",
+        ],
+        description="List of allowed origins. Use explicit origins in production, not '*'",
+    )
+    allow_credentials: bool = Field(
+        True,
+        description="Allow credentials (cookies, authorization headers) in CORS requests",
+    )
+    allow_methods: list[str] = Field(
+        default_factory=lambda: ["GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"],
+        description="Allowed HTTP methods. Default includes common methods.",
+    )
+    allow_headers: list[str] = Field(
+        default_factory=lambda: ["*"],
+        description="Allowed headers. Use '*' for development, explicit list for production.",
+    )
+
+
 class WebAuthenticationSettings(BaseModel):
     """Authentication settings for web interfaces."""
 
-    enable: bool = Field(False, description="Enable web authentication")
+    enable: bool = Field(
+        True, description="Enable web authentication (strongly recommended for production)"
+    )
     username: str = Field("admin", description="Username for basic authentication")
     password: str = Field("", description="Password for basic authentication")
     type: str = Field("basic", description="Authentication type: 'basic' for HTTP basic auth")
@@ -205,10 +267,13 @@ class WebSettings(BaseModel):
     """
 
     ip_address: str = Field(
-        "0.0.0.0",
+        "0.0.0.0",  # nosec B104: intentional binding to all interfaces for container deployments
         description="IP address to bind the web server (0.0.0.0 for all interfaces)",
     )
-    port: int = Field(80, description="Port number for the web server")
+    port: int = Field(
+        8000,
+        description="Port number for the web server (default 8000 to avoid privileged port 80)",
+    )
     type: str = Field("fastapi", description="Web framework type: 'fastapi' for FastAPI")
     asynchronous: bool = Field(False, description="Enable asynchronous response handling")
     enable_streaming: bool = Field(
@@ -218,24 +283,19 @@ class WebSettings(BaseModel):
     streaming_delay_ms: int = Field(
         50, description="Delay between streaming chunks in milliseconds"
     )
+    cors: CorsSettings = Field(
+        default_factory=CorsSettings,
+        description="CORS configuration for cross-origin requests",
+    )
     authentication: WebAuthenticationSettings = Field(
-        default_factory=lambda: WebAuthenticationSettings(
-            enable=False,
-            username="admin",
-            password="",
-            type="basic",
-            enable_global_middleware=False,
-            jwt_secret_key="",
-            jwt_algorithm="HS256",
-            jwt_access_token_expire_minutes=1440,
-            jwt_refresh_token_expire_days=7,
-        )
+        default_factory=WebAuthenticationSettings,  # nosec B106: empty password is a default requiring env config
+        description="Authentication configuration for web endpoints",
     )
 
     @field_validator("port")
     @classmethod
     def validate_port(cls, v: int) -> int:
-        """Validate port number range."""
+        """Validate port number range and warn about privileged ports."""
         if not 1 <= v <= 65535:
             raise ValueError("Port must be between 1 and 65535")
         return v
@@ -249,17 +309,18 @@ class LocalSqlSettings(BaseModel):
     """
 
     database_path: str = Field(
-        "/tmp/sample_sql_db", description="Path to local SQLite database file"
+        "/tmp/sample_sql_db",  # nosec B108: intentional use of /tmp for sample data
+        description="Path to local SQLite database file",
     )
     sample_csv_path: str = Field("", description="Path to sample CSV files for data loading")
     sample_database_name: str = Field("sample_sql_db", description="Name for the sample database")
 
 
-class FileStorageContainerSettings(AzureAuthConfig):
+class FileStorageContainerSettings(BaseModel):
     """Configuration for file storage containers.
 
     Supports both local file system and Azure Blob Storage.
-    Inherits Azure authentication configuration from AzureAuthConfig.
+    Contains Azure authentication configuration fields.
     """
 
     enable: bool = Field(True, description="Enable this storage container")
@@ -275,6 +336,23 @@ class FileStorageContainerSettings(AzureAuthConfig):
     url: str = Field("", description="Azure storage account URL (for Azure storage only)")
     token: str = Field("", description="Azure access token (for Azure storage only)")
 
+    # Azure authentication fields
+    authentication_method: AuthenticationMethod = Field(
+        default=AuthenticationMethod.DEFAULT_CREDENTIAL,
+        description="Authentication method for Azure services",
+    )
+    api_key: str = Field("", description="API key for token-based authentication")
+    client_id: str = Field("", description="Azure client ID for service principal or MSI")
+    client_secret: str = Field(
+        "", description="Azure client secret for service principal authentication"
+    )
+    tenant_id: str = Field("", description="Azure tenant ID for service principal authentication")
+    endpoint: str = Field("", description="Azure service endpoint URL")
+    original_templates: str = Field(
+        "quickstart-1",
+        description="Revision ID to use as template source when creating new revisions",
+    )
+
 
 class FileStorageSettings(BaseModel):
     """Configuration for file storage system.
@@ -283,27 +361,14 @@ class FileStorageSettings(BaseModel):
     Supports local and cloud storage options.
     """
 
+    # nosec B106: empty token is a default requiring env config
     revisions: FileStorageContainerSettings = Field(
-        default_factory=lambda: FileStorageContainerSettings(
-            enable=True,
-            storage_type="local",
-            container_name="",
-            path="./",
-            add_sub_folders=True,
-            url="",
-            token="",
-        )
+        default_factory=FileStorageContainerSettings,
+        description="Storage configuration for document revisions",
     )
     data: FileStorageContainerSettings = Field(
-        default_factory=lambda: FileStorageContainerSettings(
-            enable=True,
-            storage_type="local",
-            container_name="",
-            path="./",
-            add_sub_folders=True,
-            url="",
-            token="",
-        )
+        default_factory=FileStorageContainerSettings,
+        description="Storage configuration for data files",
     )
 
 
@@ -319,11 +384,23 @@ class ReceiverSettings(BaseModel):
     api_key: str = Field("DevApiKey", description="API key for authenticating external events")
 
 
-class CosmosSettings(AzureAuthConfig):
+class CosmosSettings(BaseModel):
     """Configuration for Azure Cosmos DB service.
 
-    Inherits Azure authentication configuration from AzureAuthConfig.
+    Contains Azure authentication configuration fields.
     """
 
     uri: str = Field(..., description="Azure Cosmos DB account endpoint URL")
     database_name: str = Field(..., description="Azure Cosmos DB database name")
+
+    # Azure authentication fields
+    authentication_method: AuthenticationMethod = Field(
+        default=AuthenticationMethod.TOKEN, description="Authentication method for Azure services"
+    )
+    api_key: str = Field("", description="API key for token-based authentication")
+    client_id: str = Field("", description="Azure client ID for service principal or MSI")
+    client_secret: str = Field(
+        "", description="Azure client secret for service principal authentication"
+    )
+    tenant_id: str = Field("", description="Azure tenant ID for service principal authentication")
+    endpoint: str = Field("", description="Azure service endpoint URL")

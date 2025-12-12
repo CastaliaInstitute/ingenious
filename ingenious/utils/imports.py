@@ -12,10 +12,10 @@ import importlib
 import importlib.util
 import os
 import sys
-import warnings
 from functools import lru_cache
 from pathlib import Path
-from typing import Any, Dict, List, Optional
+from types import ModuleType
+from typing import Dict, List, Optional
 
 from ingenious.core.structured_logging import get_logger
 
@@ -64,10 +64,12 @@ class SafeImporter:
 
     def __init__(self) -> None:
         """Initialize SafeImporter with empty caches and namespace configuration."""
-        self._module_cache: Dict[str, Any] = {}
+        self._module_cache: Dict[str, ModuleType] = {}
         self._class_cache: Dict[str, type] = {}
         self._failed_imports: Dict[str, Exception] = {}
         self._namespaces = self._get_namespaces()
+        # Ensure working directory is in sys.path for discovering ingenious_extensions
+        self._ensure_path_in_sys_path(Path(os.getcwd()))
 
     def _get_namespaces(self) -> List[str]:
         """Get ordered list of namespaces to search for modules."""
@@ -77,28 +79,15 @@ class SafeImporter:
             "ingenious",
         ]
 
-    def _get_namespace_roots(self) -> List[Path]:
-        """Get root directories for namespace searching."""
-        working_dir = Path(os.getcwd())
-        roots = [
-            working_dir / "ingenious_extensions",
-            working_dir / "ingenious" / "ingenious_extensions_template",
-        ]
-
-        # Add ingenious package root if available
-        spec = importlib.util.find_spec("ingenious")
-        if spec and spec.origin:
-            roots.append(Path(spec.origin).parent)
-
-        return roots
-
     def _ensure_path_in_sys_path(self, path: Path) -> None:
         """Ensure a path is in sys.path for importing."""
         path_str = str(path)
         if path_str not in sys.path:
             sys.path.insert(0, path_str)
 
-    def _validate_module(self, module: Any, expected_attrs: Optional[List[str]] = None) -> None:
+    def _validate_module(
+        self, module: ModuleType | None, expected_attrs: Optional[List[str]] = None
+    ) -> None:
         """Validate that a module meets expected requirements."""
         if module is None:
             raise ImportValidationError("Module is None")
@@ -143,7 +132,7 @@ class SafeImporter:
         package: Optional[str] = None,
         expected_attrs: Optional[List[str]] = None,
         use_cache: bool = True,
-    ) -> Any:
+    ) -> ModuleType:
         """Import a module with comprehensive error handling.
 
         Args:
@@ -224,7 +213,7 @@ class SafeImporter:
         module_name: str,
         expected_attrs: Optional[List[str]] = None,
         use_cache: bool = True,
-    ) -> Any:
+    ) -> ModuleType:
         """Import a module with namespace fallback support.
 
         Tries to import from extension namespaces first, then falls back to core ingenious.
@@ -487,7 +476,7 @@ class SafeImporter:
 
         logger.debug("Cleared import caches" + (f" matching pattern: {pattern}" if pattern else ""))
 
-    def get_cache_stats(self) -> Dict[str, Any]:
+    def get_cache_stats(self) -> Dict[str, object]:
         """Get statistics about the import caches."""
         return {
             "modules_cached": len(self._module_cache),
@@ -502,7 +491,9 @@ _global_importer = SafeImporter()
 
 
 # Convenience functions for backward compatibility
-def import_module_safely(module_name: str, expected_attrs: Optional[List[str]] = None) -> Any:
+def import_module_safely(
+    module_name: str, expected_attrs: Optional[List[str]] = None
+) -> ModuleType:
     """Import a module safely with error handling."""
     return _global_importer.import_module(module_name, expected_attrs=expected_attrs)
 
@@ -516,7 +507,7 @@ def import_class_safely(
 
 def import_module_with_fallback(
     module_name: str, expected_attrs: Optional[List[str]] = None
-) -> Any:
+) -> ModuleType:
     """Import a module with namespace fallback support."""
     return _global_importer.import_module_with_fallback(module_name, expected_attrs=expected_attrs)
 
@@ -540,16 +531,6 @@ def clear_import_cache(pattern: Optional[str] = None) -> None:
     _global_importer.clear_cache(pattern)
 
 
-def get_import_stats() -> Dict[str, Any]:
+def get_import_stats() -> Dict[str, object]:
     """Get import cache statistics."""
     return _global_importer.get_cache_stats()
-
-
-# Deprecation warnings for old functions
-def _deprecated_import_warning(old_func: str, new_func: str) -> None:
-    """Issue deprecation warning for old import functions."""
-    warnings.warn(
-        f"{old_func} is deprecated. Use {new_func} from ingenious.utils.imports instead.",
-        DeprecationWarning,
-        stacklevel=3,
-    )

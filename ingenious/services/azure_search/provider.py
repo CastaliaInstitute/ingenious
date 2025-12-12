@@ -28,9 +28,11 @@ from ingenious.services.azure_search.client_init import (  # noqa: F401
 from ingenious.services.retrieval.errors import GenerationDisabledError
 
 try:  # Some tests patch this symbol on the provider module
-    from azure.search.documents.models import QueryType  # noqa: F401
+    from azure.search.documents.models import QueryType as _QueryType
+
+    QueryType: type = _QueryType  # noqa: F401
 except Exception:  # pragma: no cover - tests may stub this anyway
-    QueryType = object()  # type: ignore[assignment,misc]
+    QueryType = type("QueryType", (), {})
 
 if TYPE_CHECKING:
     from ingenious.config import IngeniousSettings
@@ -99,10 +101,11 @@ class AzureSearchProvider:
         params: Dict[str, Any] = {"search_text": query, "top": limit}
         try:
             from azure.search.documents.models import QueryType as _QT
+
+            if getattr(_QT, "SIMPLE", None) is not None:
+                params["query_type"] = getattr(_QT, "SIMPLE")
         except Exception:
-            _QT = None  # type: ignore[assignment,misc]
-        if _QT is not None and getattr(_QT, "SIMPLE", None) is not None:
-            params["query_type"] = getattr(_QT, "SIMPLE")
+            pass  # nosec B110 - intentionally ignoring import failures
         return params
 
     def _apply_cleaner(self, results: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
@@ -259,7 +262,7 @@ class AzureSearchProvider:
                 try:
                     await close()
                 except Exception:
-                    pass
+                    pass  # nosec B110 - intentionally ignoring cleanup errors
         return []
 
     async def retrieve(self, query: str, top_k: int = 10) -> List[Dict[str, Any]]:
@@ -314,6 +317,87 @@ class AzureSearchProvider:
 
     # ----------------------------- Helpers --------------------------------------
 
+    def _extract_endpoint(self, obj: object) -> Optional[str]:
+        """Extract endpoint from an object by checking common attribute names."""
+        for attr in ("endpoint", "search_endpoint", "url", "_endpoint"):
+            value = getattr(obj, attr, None)
+            if value:
+                return str(value)
+        return None
+
+    def _extract_key(self, obj: object) -> Optional[str]:
+        """Extract key from an object by checking common attribute names."""
+        for attr in ("key", "search_key", "api_key", "credential", "_key"):
+            value = getattr(obj, attr, None)
+            if value:
+                return str(value)
+        return None
+
+    def _extract_index_name(self, obj: object) -> Optional[str]:
+        """Extract index name from an object by checking common attribute names."""
+        for attr in ("index_name", "index", "indexName", "_index_name"):
+            value = getattr(obj, attr, None)
+            if value:
+                return str(value)
+        return None
+
+    def _dig_service_from(self, obj: object) -> Tuple[Optional[str], Optional[str], Optional[str]]:
+        """Extract service triplet from an object.
+
+        Checks both service list attributes and direct object attributes.
+
+        Args:
+            obj: Object to extract configuration from.
+
+        Returns:
+            Tuple of (endpoint, key, index_name) with discovered values or None.
+        """
+        if obj is None:
+            return (None, None, None)
+
+        # Check service list attributes first
+        for attr in ("azure_search_services", "search_services", "azure_search", "services"):
+            svcs = getattr(obj, attr, None)
+            if isinstance(svcs, (list, tuple)) and svcs:
+                svc = svcs[0]
+                ep = self._extract_endpoint(svc)
+                sk = self._extract_key(svc)
+                idx = self._extract_index_name(svc)
+                if ep or sk or idx:
+                    return (ep, sk, idx)
+
+        # Fall back to direct attributes on the object
+        return (
+            self._extract_endpoint(obj),
+            self._extract_key(obj),
+            self._extract_index_name(obj),
+        )
+
+    def _discover_from_retriever(
+        self, retr: object
+    ) -> Tuple[Optional[str], Optional[str], Optional[str]]:
+        """Extract service triplet from a retriever instance.
+
+        Args:
+            retr: Retriever object to extract configuration from.
+
+        Returns:
+            Tuple of (endpoint, key, index_name).
+        """
+        ep = self._extract_endpoint(retr)
+        sk = self._extract_key(retr)
+        idx = self._extract_index_name(retr)
+
+        # Also check nested settings/config on retriever
+        for attr in ("settings", "_settings", "config", "_config"):
+            obj = getattr(retr, attr, None)
+            e, k, i = self._dig_service_from(obj)
+            ep = ep or e
+            sk = sk or k
+            idx = idx or i
+
+        return ep, sk, idx
+
     def _robust_discover_service_triplet(
         self,
     ) -> Tuple[Optional[str], Optional[str], Optional[str]]:
@@ -325,65 +409,15 @@ class AzureSearchProvider:
         Returns:
             Tuple of (endpoint, key, index_name) with discovered values or None.
         """
-
-        def _dig_service_from(
-            obj: Any,
-        ) -> Tuple[Optional[str], Optional[str], Optional[str]]:
-            if obj is None:
-                return (None, None, None)
-
-            # Prefer service lists on well-known attributes
-            for attr in (
-                "azure_search_services",
-                "search_services",
-                "azure_search",
-                "services",
-            ):
-                svcs = getattr(obj, attr, None)
-                if isinstance(svcs, (list, tuple)) and svcs:
-                    svc = svcs[0]
-                    ep = (
-                        getattr(svc, "endpoint", None)
-                        or getattr(svc, "search_endpoint", None)
-                        or getattr(svc, "url", None)
-                    )
-                    sk = (
-                        getattr(svc, "key", None)
-                        or getattr(svc, "search_key", None)
-                        or getattr(svc, "api_key", None)
-                        or getattr(svc, "credential", None)
-                    )
-                    idx = (
-                        getattr(svc, "index_name", None)
-                        or getattr(svc, "index", None)
-                        or getattr(svc, "indexName", None)
-                    )
-                    if ep or sk or idx:
-                        return (ep, sk, idx)
-
-            # Or direct fields on the object itself
-            ep = getattr(obj, "endpoint", None)
-            sk = (
-                getattr(obj, "key", None)
-                or getattr(obj, "search_key", None)
-                or getattr(obj, "api_key", None)
-            )
-            idx = (
-                getattr(obj, "index_name", None)
-                or getattr(obj, "index", None)
-                or getattr(obj, "indexName", None)
-            )
-            return (ep, sk, idx)
-
         # 1) Config on the provider
-        ep, sk, idx = _dig_service_from(self._cfg)
-        if ep or sk or idx:
+        ep, sk, idx = self._dig_service_from(self._cfg)
+        if ep and sk and idx:
             return ep, sk, idx
 
         # 2) Pipeline-level holders
         for attr in ("config", "_config", "settings", "_settings"):
             obj = getattr(self._pipeline, attr, None)
-            e, k, i = _dig_service_from(obj)
+            e, k, i = self._dig_service_from(obj)
             ep = ep or e
             sk = sk or k
             idx = idx or i
@@ -393,26 +427,10 @@ class AzureSearchProvider:
         # 3) Retriever instance
         retr = getattr(self._pipeline, "retriever", None)
         if retr:
-            # Known private fields used by our retriever
-            e = getattr(retr, "_endpoint", None) or getattr(retr, "endpoint", None)
-            k = (
-                getattr(retr, "_key", None)
-                or getattr(retr, "key", None)
-                or getattr(retr, "search_key", None)
-                or getattr(retr, "api_key", None)
-            )
-            i = getattr(retr, "_index_name", None) or getattr(retr, "index_name", None)
+            e, k, i = self._discover_from_retriever(retr)
             ep = ep or e
             sk = sk or k
             idx = idx or i
-
-            # Also allow a nested settings/config on retriever
-            for attr in ("settings", "_settings", "config", "_config"):
-                obj = getattr(retr, attr, None)
-                e2, k2, i2 = _dig_service_from(obj)
-                ep = ep or e2
-                sk = sk or k2
-                idx = idx or i2
 
         return ep, sk, idx
 

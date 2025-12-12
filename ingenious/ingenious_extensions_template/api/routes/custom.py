@@ -4,7 +4,7 @@ This module provides a template for adding custom API routes to the
 Ingenious application using FastAPI.
 """
 
-from fastapi import APIRouter, FastAPI
+from fastapi import APIRouter
 
 from ingenious.models.api_routes import IApiRoutes
 
@@ -16,11 +16,11 @@ class Api_Routes(IApiRoutes):
     to the Ingenious application.
     """
 
-    def add_custom_routes(self) -> FastAPI:
+    def add_custom_routes(self) -> APIRouter:
         """Add custom routes to the FastAPI application.
 
         Returns:
-            The FastAPI router with custom routes added.
+            The APIRouter with custom routes added.
         """
         router = APIRouter()
 

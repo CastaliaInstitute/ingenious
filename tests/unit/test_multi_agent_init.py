@@ -9,7 +9,7 @@ class TestMultiAgentInit:
     def test_path_extension(self):
         """Test that __path__ is extended using extend_path."""
         # The module should have a __path__ attribute after import
-        assert hasattr(ingenious.services.chat_services.multi_agent, "__path__.")
+        assert hasattr(ingenious.services.chat_services.multi_agent, "__path__")
         assert ingenious.services.chat_services.multi_agent.__path__ is not None
 
     def test_extend_path_import(self):
@@ -26,15 +26,15 @@ class TestMultiAgentInit:
     def test_module_structure(self):
         """Test the overall module structure."""
         # Verify the module has the expected structure
-        assert hasattr(ingenious.services.chat_services.multi_agent, "__name__.")
-        assert hasattr(ingenious.services.chat_services.multi_agent, "__path__.")
+        assert hasattr(ingenious.services.chat_services.multi_agent, "__name__")
+        assert hasattr(ingenious.services.chat_services.multi_agent, "__path__")
 
     def test_namespace_package_comment(self):
         """Test that the module has namespace package documentation."""
         # The module should extend path to allow partial namespaces
         assert (
             ingenious.services.chat_services.multi_agent.__name__
-            == "ingenious.services.chat_services.multi_agent."
+            == "ingenious.services.chat_services.multi_agent"
         )
 
     def test_can_import_without_error(self):
@@ -52,14 +52,14 @@ class TestMultiAgentInit:
     def test_module_name_matches_package_structure(self):
         """Test that module name matches the expected package structure."""
         module_name = ingenious.services.chat_services.multi_agent.__name__
-        assert module_name == "ingenious.services.chat_services.multi_agent."
-        assert "services." in module_name
-        assert "chat_services." in module_name
-        assert "multi_agent." in module_name
+        assert module_name == "ingenious.services.chat_services.multi_agent"
+        assert "services" in module_name
+        assert "chat_services" in module_name
+        assert "multi_agent" in module_name
 
     def test_is_namespace_package(self):
         """Test that this behaves as a namespace package."""
         # Namespace packages allow for distributed packages
         # The __path__ should be extensible
         path = ingenious.services.chat_services.multi_agent.__path__
-        assert hasattr(path, "append.")  # Should be a list-like object
+        assert hasattr(path, "append")  # Should be a list-like object
