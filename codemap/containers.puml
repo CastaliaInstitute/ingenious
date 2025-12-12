@@ -1,0 +1,66 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+title Container diagram for Ingenious - AI Agent Framework
+
+Person(user, "End User", "Interacts with API or CLI")
+
+Container(cli_tool, "CLI Tool", "Python/Typer", "Command-line interface for project initialization, validation, and server management")
+
+Container(web_api, "FastAPI Server", "Python/FastAPI", "REST API for chat interactions, conversation management, and custom workflows")
+
+Container(ui_interface, "Documentation", "HTML/CSS", "Swagger UI and interactive API documentation")
+
+Container(chat_service, "Chat Service", "Python/AutoGen", "Multi-agent orchestration using AutoGen framework with configurable conversation flows")
+
+Container(conversation_flows, "Conversation Flows", "Python", "Pluggable workflow patterns: Classification Agent, Knowledge Base Agent, SQL Manipulation Agent, Bike Insights")
+
+Container(auth_layer, "Authentication & Auth", "Python/PyJWT", "JWT and Basic authentication with role-based access control")
+
+Container(config_system, "Configuration System", "Python/Pydantic", "Environment-based configuration management with INGENIOUS_* prefix variables")
+
+Container(chat_history_db, "Chat History Database", "SQLite/Azure SQL/Cosmos DB", "Persistent storage for conversation history and message feedback")
+
+Container(file_storage, "File Storage", "Local/Azure Blob Storage", "Document and file management system")
+
+Container(azure_search, "Azure AI Search", "Azure Cognitive Search", "Vector search and semantic ranking for knowledge base retrieval")
+
+Container(azure_openai, "Azure OpenAI API", "REST API", "LLM service for chat completions and embeddings")
+
+Container(azure_sql, "Azure SQL Database", "SQL Server", "Operational database for SQL manipulation workflows")
+
+Container(chromadb, "ChromaDB", "Vector Database", "Local vector embeddings storage for knowledge base")
+
+Container(document_processor, "Document Processor", "Python/Azure Doc Intel", "PDF and document text extraction and processing")
+
+Container(chunking_service, "Document Chunking", "Python/LangChain", "Semantic chunking and text splitting for document ingestion")
+
+Rel(user, cli_tool, "Uses", "Command-line")
+Rel(user, web_api, "Calls", "HTTP REST")
+
+Rel(cli_tool, config_system, "Loads")
+Rel(cli_tool, web_api, "Starts")
+
+Rel(web_api, auth_layer, "Validates")
+Rel(web_api, chat_service, "Delegates to")
+Rel(web_api, ui_interface, "Serves", "Swagger UI")
+
+Rel(chat_service, conversation_flows, "Uses")
+Rel(conversation_flows, azure_openai, "Calls", "HTTP REST")
+Rel(conversation_flows, chat_history_db, "Reads/Writes")
+Rel(conversation_flows, azure_search, "Queries", "Vector + semantic")
+Rel(conversation_flows, azure_sql, "Executes SQL")
+Rel(conversation_flows, chromadb, "Queries", "Vector search")
+
+Rel(config_system, azure_openai, "Configures")
+Rel(config_system, azure_search, "Configures")
+Rel(config_system, azure_sql, "Configures")
+Rel(config_system, chat_history_db, "Configures")
+Rel(config_system, file_storage, "Configures")
+
+Rel(file_storage, document_processor, "Provides files")
+Rel(document_processor, chunking_service, "Processes")
+Rel(chunking_service, azure_search, "Indexes")
+Rel(chunking_service, chromadb, "Indexes")
+
+@enduml

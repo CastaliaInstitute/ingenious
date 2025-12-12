@@ -1,0 +1,27 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+title Component Diagram for Services Container
+
+Component(chat_service, "ChatService", "Facade for dynamic chat service loading")
+Component(multi_agent_service, "MultiAgentChatService", "AutoGen-based multi-agent orchestration")
+Component(kb_flow, "Knowledge Base Agent", "RAG conversation flow")
+Component(sql_flow, "SQL Manipulation Agent", "SQL query generation flow")
+Component(classification_flow, "Classification Agent", "Intent classification flow")
+Component(memory_mgr, "Memory Manager", "Conversation memory handling")
+Component(fastapi_deps, "FastAPI Dependencies", "Dependency injection container")
+Component(auth_deps, "Auth Dependencies", "Authentication context providers")
+Component(feedback_service, "Message Feedback Service", "Feedback recording and retrieval")
+Component(azure_search, "Azure Search Provider", "Retrieval-augmented generation")
+
+Rel(chat_service, multi_agent_service, "Delegates to")
+Rel(multi_agent_service, kb_flow, "Routes to")
+Rel(multi_agent_service, sql_flow, "Routes to")
+Rel(multi_agent_service, classification_flow, "Routes to")
+Rel(multi_agent_service, memory_mgr, "Uses")
+Rel(multi_agent_service, azure_search, "Uses for retrieval")
+Rel(fastapi_deps, chat_service, "Provides")
+Rel(fastapi_deps, feedback_service, "Provides")
+Rel(auth_deps, fastapi_deps, "Supports")
+
+@enduml

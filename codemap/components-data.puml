@@ -1,0 +1,26 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+title Component Diagram for Database Container
+
+Component(chat_repo, "ChatHistoryRepository", "Factory for dynamic backend selection")
+Component(sqlite_repo, "SQLite Repository", "SQLite chat history implementation")
+Component(azuresql_repo, "Azure SQL Repository", "Azure SQL implementation")
+Component(cosmos_repo, "Cosmos Repository", "Cosmos DB implementation")
+Component(repo_interface, "IChatHistoryRepository", "Abstract repository interface")
+Component(query_builder, "Query Builder", "Abstraction for DB-specific queries")
+Component(connection_pool, "Connection Pool", "Connection management and pooling")
+Component(chat_models, "Chat History Models", "Data structures (User, Message, etc)")
+
+Rel(chat_repo, repo_interface, "Implements")
+Rel(sqlite_repo, repo_interface, "Implements")
+Rel(azuresql_repo, repo_interface, "Implements")
+Rel(cosmos_repo, repo_interface, "Implements")
+Rel(sqlite_repo, query_builder, "Uses")
+Rel(azuresql_repo, query_builder, "Uses")
+Rel(sqlite_repo, connection_pool, "Uses")
+Rel(azuresql_repo, connection_pool, "Uses")
+Rel(cosmos_repo, chat_models, "Uses")
+Rel(repo_interface, chat_models, "Uses")
+
+@enduml
