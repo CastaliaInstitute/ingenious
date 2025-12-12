@@ -1,0 +1,62 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+
+title System Context Diagram - Ingenious AI Agent Framework
+
+Person(api_consumer, "API Consumer", "Uses chat endpoints to interact with AI agents via REST API")
+Person(admin, "System Administrator", "Configures models, authentication, and deployment settings")
+Person(kb_manager, "Knowledge Base Manager", "Manages vector embeddings and search indexes")
+Person(workflow_dev, "Workflow Developer", "Creates custom multi-agent conversation flows")
+
+System(ingenious, "Ingenious", "FastAPI-based multi-agent AI framework with AutoGen orchestration, chat history, and modular conversation flows")
+
+System_Ext(azure_openai, "Azure OpenAI", "LLM service for chat completions and embeddings (gpt-4o-mini, text-embedding-3-small)")
+System_Ext(azure_search, "Azure AI Search", "Vector database for RAG-based knowledge retrieval and hybrid search")
+System_Ext(azure_sql, "Azure SQL Database", "Structured data persistence for chat history and conversations")
+System_Ext(azure_cosmos, "Azure Cosmos DB", "NoSQL alternative for chat history in globally distributed deployments")
+System_Ext(azure_blob, "Azure Blob Storage", "File storage for prompt revisions and document artifacts")
+System_Ext(chromadb, "ChromaDB", "Local vector database for development and testing")
+System_Ext(sqlite, "SQLite", "Local file-based database for development and testing")
+System_Ext(scrapfly, "Scrapfly API", "Web scraping service for knowledge base data preparation")
+System_Ext(autogen, "Microsoft AutoGen", "Multi-agent orchestration framework for complex conversation flows")
+
+Rel(api_consumer, ingenious, "POST /chat, GET /chat/stream [ChatRequest/ChatResponse]")
+Rel(admin, ingenious, "Configures via INGENIOUS_* environment variables and .env files")
+Rel(kb_manager, ingenious, "Manages KB_POLICY and search index configuration")
+Rel(workflow_dev, ingenious, "POST /custom-workflows, GET /custom-workflows/schema")
+
+Rel(ingenious, azure_openai, "HTTPS: OpenAI SDK - Chat completions, embeddings [API key or MSI auth]")
+Rel(ingenious, azure_search, "HTTPS: SearchClient - Vector retrieval for RAG [API key or MSI auth]")
+Rel(ingenious, azure_sql, "ODBC: SQL queries for chat history [Connection string]")
+Rel(ingenious, azure_cosmos, "HTTPS: REST API for NoSQL persistence [Primary key auth]")
+Rel(ingenious, azure_blob, "HTTPS: Blob client for file storage [SAS token or connection string]")
+Rel(ingenious, chromadb, "In-process or HTTP - Local vector embeddings [KB_POLICY=local_only]")
+Rel(ingenious, sqlite, "File I/O - Local chat history [DATABASE_PATH]")
+Rel(ingenious, scrapfly, "HTTPS REST - Optional web scraping for KB data [API key]")
+Rel(ingenious, autogen, "In-process library - Multi-agent conversation orchestration")
+
+note right of ingenious
+  Core capabilities:
+  - REST API (FastAPI + Uvicorn)
+  - JWT/Basic authentication
+  - Multi-agent conversations (AutoGen)
+  - Chat history persistence
+  - Custom workflow registration
+  - Prompt management
+  - RAG (Retrieval Augmented Generation)
+  - Streaming responses (SSE)
+end note
+
+note bottom of azure_openai
+  Requires:
+  - INGENIOUS_MODELS__0__API_KEY
+  - INGENIOUS_MODELS__0__BASE_URL
+  - INGENIOUS_MODELS__0__API_VERSION
+end note
+
+note bottom of chromadb
+  Development alternative to
+  Azure AI Search for local RAG
+end note
+
+@enduml

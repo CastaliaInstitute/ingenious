@@ -1,0 +1,42 @@
+@startuml
+title Chat Service Class Diagram
+
+interface IChatService {
+  {abstract} +get_chat_response(request)
+  {abstract} +get_streaming_chat_response(request)
+}
+
+class ChatService {
+  -service_class: IChatService
+  -config: IngeniousSettings
+  -revision: str
+  +__init__(chat_service_type, chat_history_repository, conversation_flow, config)
+  +get_chat_response(request)
+  +get_streaming_chat_response(request)
+}
+
+class MultiAgentChatService {
+  -config: IngeniousSettings
+  -chat_history_repository: ChatHistoryRepository
+  -conversation_flow: str
+  -openai_service: OpenAIService
+  +__init__(config, chat_history_repository, conversation_flow)
+  -_load_conversation_flow_class(flow_name)
+  -_invoke_new_pattern(flow_class, chat_request)
+  -_build_thread_memory(thread_messages)
+  -_validate_thread_messages(thread_messages)
+}
+
+interface IConversationFlow {
+  #_config: IngeniousSettings
+  #_chat_service: MultiAgentChatService
+  #_memory_manager: MemoryManager
+  +get_config()
+  +get_template(revision_id, file_name)
+}
+
+ChatService --|> IChatService
+ChatService --> MultiAgentChatService
+MultiAgentChatService --> IConversationFlow
+
+@enduml

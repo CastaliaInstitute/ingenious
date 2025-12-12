@@ -1,0 +1,22 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+title Component Diagram for Infrastructure Container
+
+Component(main_settings, "IngeniousSettings", "Pydantic-based config root")
+Component(config_parser, "Config Parser", "Environment variable parsing")
+Component(auth_config, "AuthConfig", "Authentication settings")
+Component(validators, "Validators", "Configuration validation rules")
+Component(env_mgr, "Environment Manager", "Env variable access")
+Component(config_models, "Configuration Models", "Pydantic model definitions")
+Component(structured_logging, "Structured Logging", "Correlation ID tracking, log formatting")
+Component(error_handler, "Error Handling", "Operation context manager")
+
+Rel(main_settings, config_parser, "Uses")
+Rel(main_settings, auth_config, "Includes")
+Rel(main_settings, config_models, "Uses")
+Rel(config_parser, env_mgr, "Uses")
+Rel(validators, main_settings, "Validates")
+Rel(auth_config, validators, "Subject to")
+
+@enduml

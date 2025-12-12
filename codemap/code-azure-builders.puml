@@ -1,0 +1,50 @@
+@startuml
+title Azure Client Builder Pattern Class Diagram
+
+class AzureClientBuilder {
+  #auth_config: AzureAuthConfig
+  #_credential: CredentialType
+  +__init__(auth_config)
+  +from_config(config)
+  +credential: CredentialType
+  +api_key: str
+  +key_credential: AzureKeyCredential
+  +token_credential: TokenCredential
+  {abstract} +build()
+}
+
+class AzureSearchClientBuilder {
+  +build()
+}
+
+class AzureOpenAIChatCompletionClientBuilder {
+  +build()
+}
+
+class AzureSqlClientBuilder {
+  +build()
+}
+
+class BlobServiceClientBuilder {
+  +build()
+}
+
+class CosmosClientBuilder {
+  +build()
+}
+
+class AzureClientFactory {
+  +create_search_client(config)
+  +create_openai_client(config)
+  +create_cosmos_client(config)
+  +create_sql_client(config)
+}
+
+AzureClientBuilder <|-- AzureSearchClientBuilder
+AzureClientBuilder <|-- AzureOpenAIChatCompletionClientBuilder
+AzureClientBuilder <|-- AzureSqlClientBuilder
+AzureClientBuilder <|-- BlobServiceClientBuilder
+AzureClientBuilder <|-- CosmosClientBuilder
+AzureClientFactory --> AzureClientBuilder
+
+@enduml

@@ -1,0 +1,51 @@
+@startuml
+title Error Handling Class Hierarchy
+
+class IngeniousError {
+  -message: str
+  -error_code: str
+  -category: ErrorCategory
+  -severity: ErrorSeverity
+  -context: ErrorContext
+  -cause: Exception
+  -recoverable: bool
+  -recovery_suggestion: str
+  +__init__(message, error_code, category, severity, context, cause)
+  -_log_error()
+  +with_context(**kwargs)
+  +to_dict()
+  +to_json()
+}
+
+class ServiceError {
+  +__init__(message, context, cause)
+}
+
+class ChatServiceError {
+  +__init__(message, context, cause)
+}
+
+class DatabaseError {
+  +__init__(message, context, cause)
+}
+
+class ConfigurationError {
+  +__init__(message, context, cause)
+}
+
+class ContentFilterError {
+  +DEFAULT_MESSAGE: str
+}
+
+class TokenLimitExceededError {
+  +DEFAULT_MESSAGE: str
+}
+
+IngeniousError <|-- ServiceError
+IngeniousError <|-- DatabaseError
+IngeniousError <|-- ConfigurationError
+ServiceError <|-- ChatServiceError
+IngeniousError <|-- ContentFilterError
+IngeniousError <|-- TokenLimitExceededError
+
+@enduml

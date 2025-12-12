@@ -1,0 +1,65 @@
+@startuml
+title Database Layer Class Diagram
+
+protocol DatabaseConnection {
+  +execute(sql, params)
+  +commit()
+  +close()
+  +cursor()
+}
+
+class ConnectionFactory {
+  {abstract} +create_connection()
+  {abstract} +is_connection_healthy(conn)
+}
+
+class SQLiteConnectionFactory {
+  -db_path: str
+  +create_connection()
+  +is_connection_healthy(conn)
+}
+
+class AzureSQLConnectionFactory {
+  -connection_string: str
+  +create_connection()
+  +is_connection_healthy(conn)
+}
+
+class ConnectionPool {
+  -connection_factory: ConnectionFactory
+  -pool_size: int
+  -max_retries: int
+  -_pool: Queue
+  +__init__(factory, pool_size, max_retries)
+  +get_connection()
+  +get_connection_async()
+  -_acquire_connection()
+  -_release_connection(conn)
+  +close_all()
+}
+
+interface IChatHistoryRepository {
+  {abstract} +add_user(identifier)
+  {abstract} +get_user(identifier)
+  {abstract} +add_message(message)
+  {abstract} +get_message(message_id, thread_id)
+  {abstract} +update_message_feedback(message_id, thread_id, feedback)
+}
+
+class ChatHistoryRepository {
+  -repository: IChatHistoryRepository
+  +__init__(db_type, config)
+  +add_user(identifier)
+  +get_user(identifier)
+  +add_message(message)
+  +get_message(message_id, thread_id)
+  +update_message_feedback(message_id, thread_id, feedback)
+}
+
+ConnectionFactory <|-- SQLiteConnectionFactory
+ConnectionFactory <|-- AzureSQLConnectionFactory
+ConnectionPool --> ConnectionFactory
+ConnectionPool --> DatabaseConnection
+ChatHistoryRepository --> IChatHistoryRepository
+
+@enduml
