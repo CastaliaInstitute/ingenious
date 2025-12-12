@@ -1,0 +1,65 @@
+@startuml
+title Error Class Hierarchy
+
+skinparam classAttributeIconSize 0
+
+abstract class IngeniousError extends Exception {
+    -message: str
+    -error_code: str
+    -category: ErrorCategory
+    -severity: ErrorSeverity
+    -context: ErrorContext
+    -cause: Exception
+    -recoverable: bool
+    --
+    +with_context()
+    +with_correlation_id()
+    +to_dict()
+    +to_json()
+}
+
+class ChatServiceError extends IngeniousError
+
+class DatabaseError extends IngeniousError
+
+class DatabaseQueryError extends DatabaseError
+
+class ConfigurationError extends IngeniousError
+
+class ContentFilterError extends IngeniousError {
+    -content_filter_results: dict
+}
+
+class TokenLimitExceededError extends IngeniousError {
+    -max_context_length: int
+    -requested_tokens: int
+}
+
+class PreflightError extends IngeniousError
+
+class GenerationDisabledError extends PreflightError
+
+class ValidationError extends IngeniousError
+
+class AuthenticationError extends IngeniousError
+
+enum ErrorCategory {
+    CONFIGURATION
+    DATABASE
+    SERVICE
+    WORKFLOW
+    CONTENT_FILTER
+    AUTHENTICATION
+}
+
+enum ErrorSeverity {
+    LOW
+    MEDIUM
+    HIGH
+    CRITICAL
+}
+
+IngeniousError --> ErrorCategory
+IngeniousError --> ErrorSeverity
+
+@enduml

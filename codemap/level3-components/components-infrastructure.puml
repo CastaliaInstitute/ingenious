@@ -1,0 +1,30 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+title Component diagram for Configuration & Infrastructure Layer
+
+Container_Boundary(infra, "Configuration & Infrastructure Layer") {
+    Component(config_loader, "Config Loader", "Configuration", "Environment-based configuration loading")
+    Component(models_cfg, "Models Config", "LLM configuration", "AI model settings (Azure OpenAI, embeddings)")
+    Component(auth_cfg, "Auth Config", "Security config", "Authentication and authorization settings")
+    Component(main_settings, "Main Settings", "Root config", "Application-wide settings (Pydantic-based)")
+    Component(validators, "Validators", "Input validation", "Configuration validators and transformers")
+    Component(environment, "Environment Resolver", "Env vars", "Environment variable parsing and resolution")
+    Component(logger, "Structured Logger", "Logging", "Correlation ID and structured logging")
+    Component(app_factory, "App Factory", "Bootstrap", "Creates and configures FastAPI application")
+    Component(exception_handlers, "Exception Handlers", "Error handling", "Global exception to HTTP response conversion")
+    Component(cors_middleware, "CORS Middleware", "Cross-origin", "Cross-Origin Resource Sharing configuration")
+    Component(context_middleware, "Request Context", "Request tracking", "Injects correlation IDs into requests")
+}
+
+Rel(config_loader, main_settings, "Builds")
+Rel(main_settings, models_cfg, "Contains")
+Rel(main_settings, auth_cfg, "Contains")
+Rel(validators, config_loader, "Validates via")
+Rel(environment, config_loader, "Provides vars to")
+Rel(logger, config_loader, "Configured by")
+Rel(app_factory, exception_handlers, "Registers")
+Rel(app_factory, cors_middleware, "Adds")
+Rel(app_factory, context_middleware, "Adds")
+
+@enduml

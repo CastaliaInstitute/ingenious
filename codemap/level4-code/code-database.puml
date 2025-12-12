@@ -1,0 +1,82 @@
+@startuml
+title Database Repository Class Hierarchy
+
+skinparam classAttributeIconSize 0
+
+abstract class IChatHistoryRepository {
+    {abstract} +add_user(identifier): User
+    {abstract} +get_user(identifier): User
+    {abstract} +add_message(message): str
+    {abstract} +get_thread_messages(thread_id): List[Message]
+    {abstract} +update_message_feedback()
+    {abstract} +delete_thread()
+}
+
+class ChatHistoryRepository {
+    -repository: IChatHistoryRepository
+    --
+    +__init__(db_type, config)
+}
+
+abstract class BaseSQLRepository implements IChatHistoryRepository {
+    -config: IngeniousSettings
+    -query_builder: QueryBuilder
+    --
+    +_init_connection()
+    +_execute_sql()
+}
+
+class SQLiteChatHistoryRepository extends BaseSQLRepository {
+    -pool: ConnectionPool
+    --
+    +_init_connection()
+    +_execute_sql()
+}
+
+class AzureSQLChatHistoryRepository extends BaseSQLRepository {
+    -pool: ConnectionPool
+    --
+    +_init_connection()
+    +_execute_sql()
+}
+
+class CosmosChatHistoryRepository implements IChatHistoryRepository {
+    -client: CosmosClient
+    -database: Database
+    -container: Container
+    --
+    +add_message()
+    +get_thread_messages()
+}
+
+class QueryBuilder {
+    -dialect: Dialect
+    --
+    +build_select()
+    +build_insert()
+    +build_update()
+}
+
+abstract class Dialect {
+    {abstract} +get_create_table_prefix()
+    {abstract} +get_upsert_query()
+    {abstract} +get_limit_clause()
+}
+
+class SQLiteDialect extends Dialect
+class AzureSQLDialect extends Dialect
+
+class ConnectionPool {
+    -factory: ConnectionFactory
+    -pool_size: int
+    --
+    +get_connection()
+    +close_all()
+}
+
+ChatHistoryRepository --> IChatHistoryRepository
+BaseSQLRepository --> QueryBuilder
+QueryBuilder --> Dialect
+BaseSQLRepository --> ConnectionPool
+
+@enduml
