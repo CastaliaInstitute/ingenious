@@ -83,17 +83,19 @@ class local_FileStorageRepository(IFileStorage):
     async def list_files(self, file_path: str) -> str:
         """List files in a local directory.
 
+        Returns filenames as newline-delimited string, matching Azure blob storage format.
+
         :param file_path: Path to the directory.
+        :return: Newline-delimited string of filenames.
         """
         try:
             path = Path(self.fs_config.path) / Path(file_path)
             files = [f.name for f in path.iterdir() if f.is_file()]
-            # print(f"Files in {path}: {files}")
-            return str(files)
+            return "\n".join(files)
         except Exception as e:
             error_msg = f"Failed to list files in {path}: {e}"
             print(error_msg)
-            return error_msg
+            return ""
 
     async def list_directories(self, file_path: str) -> list[str]:
         """List directories in a local directory.
