@@ -57,69 +57,144 @@ Group the changed files by impact level:
 - New design patterns introduced
 - Interface changes
 
-### Step 3: Spawn Update Agents
+### Step 3: Spawn Update Subagents
 
-Based on the categorized changes, spawn parallel agents ONLY for affected levels.
+Based on the categorized changes, spawn parallel Explore subagents ONLY for affected levels.
 
-If context-level changes detected:
+**If context-level changes detected:**
 ```
-Review changes affecting the SYSTEM CONTEXT level:
+Tool: Task
+Parameters:
+  subagent_type: "Explore"
+  description: "Update C4 context level"
+  prompt: |
+    TASK: Update the SYSTEM CONTEXT level based on recent code changes.
 
-Changed files: [list from Step 1]
+    CHANGED FILES: [insert list from Step 1]
 
-1. Read the current codemap/context.md
-2. Analyze the changed files for new/removed external integrations
-3. Update the C4Context diagram accordingly
-4. Preserve unchanged elements
+    EXPLORATION GOALS:
+    1. Read the current codemap/context.md to understand existing state
+    2. Analyze the changed files for:
+       - New external service integrations (HTTP clients, SDKs)
+       - Removed external dependencies
+       - New user types or authentication methods
+    3. Identify what needs to be added/removed/modified in the diagram
 
-Return: Updated context.md content with change summary
-```
+    SEARCH STRATEGY:
+    - Read each changed file to understand the change
+    - Grep for new import statements related to external services
+    - Check for new environment variable references
+    - Compare against existing external systems in context.md
 
-If container-level changes detected:
-```
-Review changes affecting the CONTAINER level:
-
-Changed files: [list from Step 1]
-
-1. Read the current codemap/containers.md
-2. Analyze the changed files for new/removed services
-3. Check for technology stack updates (package.json, requirements.txt changes)
-4. Update the C4Container diagram accordingly
-
-Return: Updated containers.md content with change summary
-```
-
-If component-level changes detected:
-```
-Review changes affecting the COMPONENT level:
-
-Changed files: [list from Step 1]
-
-1. Read the current codemap/components.md
-2. Analyze new/removed/renamed modules
-3. Check for dependency changes (import statements)
-4. Update the C4Component diagrams accordingly
-
-Return: Updated components.md content with change summary
+    OUTPUT FORMAT:
+    Return:
+    - Updated C4-PlantUML Context diagram (full replacement)
+    - Change summary: what was added/removed/modified
+    - List of files that triggered each change
 ```
 
-If code-level changes detected:
+**If container-level changes detected:**
 ```
-Review changes affecting the CODE level:
+Tool: Task
+Parameters:
+  subagent_type: "Explore"
+  description: "Update C4 container level"
+  prompt: |
+    TASK: Update the CONTAINER level based on recent code changes.
 
-Changed files: [list from Step 1]
+    CHANGED FILES: [insert list from Step 1]
 
-1. Read the current codemap/code.md
-2. Analyze new/changed classes and interfaces
-3. Check for pattern changes
-4. Update class diagrams accordingly
+    EXPLORATION GOALS:
+    1. Read the current codemap/containers.md to understand existing state
+    2. Analyze the changed files for:
+       - New services or applications added
+       - Services removed or consolidated
+       - Technology stack updates (new dependencies in package files)
+       - New inter-service communication patterns
+    3. Identify what needs to be added/removed/modified in the diagram
 
-Return: Updated code.md content with change summary
+    SEARCH STRATEGY:
+    - Check if any new Dockerfile or docker-compose entries exist
+    - Read changed package.json/requirements.txt for new major dependencies
+    - Look for new main entry points or server configurations
+    - Find new API routes or queue consumers
+
+    OUTPUT FORMAT:
+    Return:
+    - Updated C4-PlantUML Container diagram (full replacement)
+    - Change summary: what was added/removed/modified
+    - Updated technology stack table
+```
+
+**If component-level changes detected:**
+```
+Tool: Task
+Parameters:
+  subagent_type: "Explore"
+  description: "Update C4 component level"
+  prompt: |
+    TASK: Update the COMPONENT level based on recent code changes.
+
+    CHANGED FILES: [insert list from Step 1]
+
+    EXPLORATION GOALS:
+    1. Read the current codemap/components.md to understand existing state
+    2. Analyze the changed files for:
+       - New modules or packages created
+       - Modules removed or renamed
+       - Changed responsibilities (significant refactoring)
+       - New inter-component dependencies
+    3. Identify what needs to be added/removed/modified in the diagrams
+
+    SEARCH STRATEGY:
+    - Check for new top-level directories
+    - Analyze import statement changes
+    - Look for new __init__.py or index.ts files
+    - Identify moved or renamed modules
+
+    OUTPUT FORMAT:
+    Return:
+    - Updated C4-PlantUML Component diagrams (full replacement for affected containers)
+    - Change summary: what was added/removed/modified
+    - Updated dependency matrix
+```
+
+**If code-level changes detected:**
+```
+Tool: Task
+Parameters:
+  subagent_type: "Explore"
+  description: "Update C4 code level"
+  prompt: |
+    TASK: Update the CODE level based on recent code changes.
+
+    CHANGED FILES: [insert list from Step 1]
+
+    EXPLORATION GOALS:
+    1. Read the current codemap/code.md to understand existing state
+    2. Analyze the changed files for:
+       - New key classes or interfaces
+       - Changed class hierarchies
+       - New design patterns introduced
+       - Significant method signature changes
+    3. Identify what needs to be added/removed/modified in the diagrams
+
+    SEARCH STRATEGY:
+    - Read the changed class definitions
+    - Check for new inheritance relationships
+    - Identify new pattern implementations
+    - Look for new abstract base classes
+
+    OUTPUT FORMAT:
+    Return:
+    - Updated PlantUML class diagrams (full replacement for affected components)
+    - Change summary: what was added/removed/modified
+    - Updated design patterns table
 ```
 
 ### Step 4: Apply Updates
 
-For each agent that returns updates:
+For each subagent that returns updates:
 
 1. Read the current file from `codemap/`
 2. Apply the changes

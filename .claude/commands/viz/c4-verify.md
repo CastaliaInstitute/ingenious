@@ -15,108 +15,137 @@ Read all codemap files first:
 
 ## Instructions
 
-Use the Task tool to spawn 3 parallel Explore agents. Each agent verifies a different aspect.
+Use the Task tool to spawn 3 parallel Explore subagents in a single message. Each subagent verifies a different aspect.
 
-### Agent 1: Completeness Check
+### Subagent Invocations
 
+**Subagent 1: Completeness Check**
 ```
-Read codemap/context.md, codemap/containers.md, codemap/components.md, codemap/code.md.
+Tool: Task
+Parameters:
+  subagent_type: "Explore"
+  description: "Verify C4 completeness"
+  prompt: |
+    TASK: Verify COMPLETENESS of the C4 map against the actual codebase.
 
-Verify COMPLETENESS of the C4 map against the actual codebase:
+    PREREQUISITE: The codemap/ folder contents have been read. Use that context.
 
-1. Container completeness:
-   - Scan for all package.json, requirements.txt, Dockerfile, docker-compose files
-   - Check for any deployable units not in the map
-   - Verify all databases and services are listed
+    VERIFICATION GOALS:
+    1. Container completeness:
+       - Find all deployable units not documented in the map
+       - Verify all databases and services are listed
+    2. Component completeness:
+       - Find all modules not mapped to any component
+       - Check for undocumented major directories
+    3. Entry point completeness:
+       - Find all API routes, CLI commands not documented
+    4. External system completeness:
+       - Find all external integrations not in context diagram
 
-2. Component completeness:
-   - List all top-level directories under src/ (or equivalent)
-   - Compare against components in the map
-   - Identify orphan modules not mapped to any component
+    SEARCH STRATEGY:
+    - Glob for: **/package.json, **/requirements.txt, **/Dockerfile, **/docker-compose.yml
+    - List all top-level directories under src/ or equivalent
+    - Grep for route definitions: "@app.route", "@router", "app.get(", "app.post("
+    - Grep for HTTP clients: "requests.", "httpx.", "axios", "fetch("
+    - Grep for SDK imports: "import.*azure", "import.*aws", "from stripe"
 
-3. Entry point completeness:
-   - Find all route definitions, API endpoints, CLI commands
-   - Verify all entry points are documented
-
-4. External system completeness:
-   - Grep for HTTP clients, SDK imports, API keys
-   - Verify all integrations are in the context diagram
-
-Return:
-- List of missing containers (if any)
-- List of unmapped components (if any)
-- List of undocumented entry points (if any)
-- List of missing external systems (if any)
-```
-
-### Agent 2: Accuracy Check
-
-```
-Read codemap/context.md, codemap/containers.md, codemap/components.md, codemap/code.md.
-
-Verify ACCURACY of the C4 map against the actual codebase:
-
-1. Relationship accuracy:
-   - For each documented relationship, verify it exists in code
-   - Check import statements match component dependencies
-   - Verify API calls match container relationships
-
-2. Technology labels:
-   - Verify framework versions in package.json/requirements.txt
-   - Check database types match actual connections
-   - Validate protocol labels (REST, gRPC, etc.)
-
-3. Component boundaries:
-   - Verify module boundaries match actual code organization
-   - Check for undocumented cross-component dependencies
-   - Identify circular dependencies not shown
-
-4. Naming consistency:
-   - Compare diagram names with actual file/folder names
-   - Flag any mismatches or outdated names
-
-Return:
-- List of incorrect relationships (with corrections)
-- List of wrong technology labels (with corrections)
-- List of boundary violations found
-- List of naming inconsistencies
+    OUTPUT FORMAT:
+    Return a completeness report:
+    - Missing containers: [list with evidence file paths]
+    - Unmapped components: [list with directory paths]
+    - Undocumented entry points: [list with file:line references]
+    - Missing external systems: [list with import locations]
+    - Overall completeness score: X/4 categories complete
 ```
 
-### Agent 3: Diagram Validation
-
+**Subagent 2: Accuracy Check**
 ```
-Read codemap/context.md, codemap/containers.md, codemap/components.md, codemap/code.md.
+Tool: Task
+Parameters:
+  subagent_type: "Explore"
+  description: "Verify C4 accuracy"
+  prompt: |
+    TASK: Verify ACCURACY of the C4 map against the actual codebase.
 
-Verify DIAGRAM QUALITY of the C4 map:
+    PREREQUISITE: The codemap/ folder contents have been read. Use that context.
 
-1. Mermaid syntax:
-   - Check all diagram blocks for valid Mermaid syntax
-   - Verify C4 diagram types are used correctly
-   - Test that diagrams would render
+    VERIFICATION GOALS:
+    1. Relationship accuracy:
+       - For each documented relationship, verify it exists in code
+       - Check import statements match component dependencies
+       - Verify API calls match container relationships
+    2. Technology labels:
+       - Verify framework versions match package files
+       - Check database types match connection code
+       - Validate protocol labels (REST, gRPC, WebSocket)
+    3. Component boundaries:
+       - Verify module boundaries match code organization
+       - Find undocumented cross-component dependencies
+       - Identify circular dependencies not shown
+    4. Naming consistency:
+       - Compare diagram names with actual file/folder names
+       - Flag outdated or incorrect names
 
-2. Cross-level consistency:
-   - Containers in Level 2 should appear in Level 1 system
-   - Components in Level 3 should map to Level 2 containers
-   - Classes in Level 4 should map to Level 3 components
+    SEARCH STRATEGY:
+    - Read import statements in key files to verify relationships
+    - Check package.json/requirements.txt for version numbers
+    - Grep for cross-module imports to verify boundaries
+    - Compare diagram element names against directory listing
 
-3. Naming conventions:
-   - IDs should be consistent across diagrams
-   - Labels should be descriptive and concise
-   - Relationship labels should describe the interaction
-
-4. Coverage balance:
-   - No single diagram should be overloaded (>15 elements)
-   - Important components should have code-level detail
-   - Trivial utilities don't need code-level diagrams
-
-Return:
-- List of syntax errors (with fixes)
-- List of cross-level inconsistencies
-- List of naming issues
-- Recommendations for diagram balance
+    OUTPUT FORMAT:
+    Return an accuracy report:
+    - Incorrect relationships: [list with corrections and evidence]
+    - Wrong technology labels: [list with correct values]
+    - Boundary violations: [list with import evidence]
+    - Naming inconsistencies: [list with correct names]
+    - Overall accuracy score: X% relationships verified
 ```
 
-## After All Agents Complete
+**Subagent 3: Diagram Validation**
+```
+Tool: Task
+Parameters:
+  subagent_type: "Explore"
+  description: "Validate C4 diagrams"
+  prompt: |
+    TASK: Verify DIAGRAM QUALITY of the C4 map.
+
+    PREREQUISITE: The codemap/ folder contents have been read. Use that context.
+
+    VERIFICATION GOALS:
+    1. PlantUML syntax:
+       - Check all diagram blocks for valid PlantUML syntax
+       - Verify C4-PlantUML include statements are correct
+       - Ensure proper @startuml/@enduml blocks
+    2. Cross-level consistency:
+       - Containers in Level 2 should appear in Level 1 system
+       - Components in Level 3 should map to Level 2 containers
+       - Classes in Level 4 should map to Level 3 components
+    3. Naming conventions:
+       - IDs should be consistent across diagrams
+       - Labels should be descriptive and concise
+       - Relationship labels should describe the interaction
+    4. Coverage balance:
+       - No single diagram should be overloaded (>15 elements)
+       - Important components should have code-level detail
+       - Trivial utilities should not have code-level diagrams
+
+    VALIDATION STRATEGY:
+    - Parse each diagram block for syntax correctness
+    - Extract element IDs and cross-reference across levels
+    - Count elements per diagram
+    - Check for orphaned references
+
+    OUTPUT FORMAT:
+    Return a diagram quality report:
+    - Syntax errors: [list with line numbers and fixes]
+    - Cross-level inconsistencies: [list with missing/orphaned refs]
+    - Naming issues: [list with recommendations]
+    - Balance recommendations: [diagrams to split or combine]
+    - Overall diagram quality score: X/4 criteria met
+```
+
+## After All Subagents Complete
 
 Consolidate into a verification report and write to `codemap/VERIFICATION.md`:
 
@@ -132,7 +161,7 @@ Consolidate into a verification report and write to `codemap/VERIFICATION.md`:
 - [ ] All external systems listed
 
 ### Gaps Found
-[Agent 1 findings]
+[Subagent 1 findings]
 
 ## Accuracy
 - [ ] Relationships verified against code
@@ -141,16 +170,16 @@ Consolidate into a verification report and write to `codemap/VERIFICATION.md`:
 - [ ] Names match codebase
 
 ### Corrections Needed
-[Agent 2 findings]
+[Subagent 2 findings]
 
 ## Diagram Quality
-- [ ] Mermaid syntax valid
+- [ ] PlantUML syntax valid
 - [ ] Cross-level references aligned
 - [ ] Naming consistent
 - [ ] Coverage balanced
 
 ### Fixes Needed
-[Agent 3 findings]
+[Subagent 3 findings]
 
 ## Summary
 [PASS/FAIL with key issues]
