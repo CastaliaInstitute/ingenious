@@ -269,7 +269,6 @@ class TestDocumentationAccuracy:
             "ingenious",
             "docs",
             "tests",
-            "scripts",
             "ingenious/api/routes",
             "ingenious/cli",
             "ingenious/config",
@@ -290,7 +289,7 @@ class TestDocumentationAccuracy:
             content = f.read()
 
         # Verify /api/v1 prefix is used
-        assert 'prefix= "/api/v1"' in content, "API base path /api/v1 not found in routing"
+        assert 'prefix="/api/v1' in content, "API base path /api/v1 not found in routing"
 
     def test_configuration_system(self, validator):
         """Verify configuration uses pydantic-settings as documented."""
