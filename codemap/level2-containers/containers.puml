@@ -1,0 +1,65 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+title Container Diagram for Ingenious AI Agent Framework (v0.2.8)
+
+Person(user, "End User", "Calls REST APIs or uses web interface")
+Person(admin, "Administrator", "Configures workflows and models")
+
+System_Boundary(ingenious, "Ingenious System") {
+    Container(api, "FastAPI REST API", "Python FastAPI", "REST API server\nUvicorn\nHTTP/HTTPS\nPort 8000-8081")
+
+    Container(cli, "CLI Application", "Python Typer", "Command-line interface\nWorkflow management\nServer startup")
+
+    Container(multiagent, "Multi-Agent Service", "Python AutoGen", "Agent orchestration\nConversation flows\nAgent task execution")
+
+    Container(chatservice, "Chat Service", "Python", "Chat request/response handler\nStreaming support\nMessage validation")
+
+    Container(auth, "Auth Middleware", "Python JWT/Basic Auth", "Authentication\nAuthorization\nSecurity headers")
+
+    Container(kb, "Knowledge Base", "ChromaDB (optional)", "Vector embeddings\nDocument retrieval\nLocal or cloud storage")
+
+    Container(cache, "Memory Manager", "Python In-Memory", "Conversation history\nContext management\nToken counting")
+}
+
+System_Boundary(databases, "Data Layer") {
+    ContainerDb(sqlite, "SQLite", "SQLite 3", "Chat history\nLocal development\nFile-based (.db)")
+
+    ContainerDb(azuresql, "Azure SQL", "SQL Server", "Production chat history\nUser management\nThread metadata")
+
+    ContainerDb(cosmos, "Azure Cosmos DB", "NoSQL", "Distributed chat history\nHigh availability\nMulti-region")
+}
+
+System_Boundary(external, "External Services") {
+    Container(aoai, "Azure OpenAI", "REST API", "GPT-4/GPT-3.5\nEmbedding models\nChat completions")
+
+    Container(azsearch, "Azure AI Search", "REST API", "Semantic search\nVector search\nDocument indexing")
+
+    Container(azureblob, "Azure Blob Storage", "REST API", "Document storage\nFile uploads\nArchival")
+
+    Container(sql_service, "Azure SQL Service", "ODBC/SQL", "External SQL queries\nDatabase operations")
+
+    Container(cosmos_service, "Azure Cosmos DB", "REST/SDK", "Distributed data\nGlobal scale")
+
+    Container(docint, "Document Intelligence", "REST API", "PDF extraction\nOCR processing\nDocument parsing")
+}
+
+Rel(user, api, "REST calls", "JSON/HTTP")
+Rel(admin, cli, "commands", "CLI")
+Rel(api, auth, "validate", "middleware")
+Rel(api, chatservice, "route", "sync/async")
+Rel(chatservice, multiagent, "delegate", "Python")
+Rel(multiagent, aoai, "generate", "REST/OpenAI SDK")
+Rel(multiagent, azsearch, "retrieve", "REST")
+Rel(multiagent, kb, "search", "vector")
+Rel(chatservice, cache, "store/load", "in-memory")
+Rel(cache, sqlite, "persist", "SQL")
+Rel(cache, azuresql, "persist", "SQL/ODBC")
+Rel(cache, cosmos, "persist", "SQL")
+Rel(azsearch, azureblob, "indexes", "blob ref")
+Rel(multiagent, sql_service, "query", "ODBC/SQL")
+Rel(multiagent, docint, "extract", "REST")
+Rel(kb, aoai, "embed", "REST")
+Rel(api, azureblob, "upload", "blob SDK")
+
+@enduml

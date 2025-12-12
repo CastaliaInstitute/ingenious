@@ -1,0 +1,28 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+title Component diagram for Data & Persistence Layer
+
+Container_Boundary(data, "Data & Persistence Layer") {
+    Component(chat_repo, "Chat History Repository", "Data access", "Multi-backend chat history persistence (SQLite/Azure SQL/Cosmos)")
+    Component(files_repo, "Files Repository", "File storage", "File storage abstraction (local/Azure Blob)")
+    Component(base_sql, "Base SQL", "ORM layer", "Common SQL query building and execution")
+    Component(conn_pool, "Connection Pool", "Connection mgmt", "Database connection pooling and lifecycle")
+    Component(query_builder, "Query Builder", "SQL generation", "Dialect-aware SQL query construction")
+    Component(sqlite, "SQLite Backend", "Local DB", "SQLite-specific implementation")
+    Component(azuresql, "Azure SQL Backend", "Cloud DB", "Azure SQL Database implementation")
+    Component(cosmos, "Cosmos Backend", "NoSQL DB", "Azure Cosmos DB implementation")
+    Component(repo_factory, "Repository Factory", "Factory pattern", "Creates appropriate repository implementations")
+}
+
+Rel(chat_repo, base_sql, "Uses")
+Rel(chat_repo, repo_factory, "Uses")
+Rel(base_sql, conn_pool, "Uses")
+Rel(base_sql, query_builder, "Uses")
+Rel(repo_factory, sqlite, "Creates")
+Rel(repo_factory, azuresql, "Creates")
+Rel(repo_factory, cosmos, "Creates")
+Rel(sqlite, conn_pool, "Uses")
+Rel(azuresql, conn_pool, "Uses")
+
+@enduml

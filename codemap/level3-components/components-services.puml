@@ -1,0 +1,25 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+title Component diagram for Services Layer
+
+Container_Boundary(services, "Services Layer") {
+    Component(chat_service, "Chat Service", "Service facade", "Abstracts and delegates to specific chat service types")
+    Component(multi_agent, "Multi-Agent Service", "Agent orchestration", "AutoGen-based multi-agent conversation flows")
+    Component(msg_feedback, "Message Feedback Service", "Data persistence", "Collects and stores user feedback on responses")
+    Component(memory_mgr, "Memory Manager", "State management", "Manages conversation memory and context")
+    Component(fastapi_di, "FastAPI DI", "Dependency injection", "FastAPI-native dependency resolution")
+    Component(auth_deps, "Auth Dependencies", "Security", "JWT and basic auth dependency provision")
+    Component(container, "DI Container", "Dependency injection", "Legacy dependency-injector container integration")
+    Component(openai_svc, "OpenAI Service", "LLM client", "Azure OpenAI API client wrapper")
+}
+
+Rel(chat_service, multi_agent, "Delegates to")
+Rel(fastapi_di, auth_deps, "Uses")
+Rel(fastapi_di, chat_service, "Provides")
+Rel(fastapi_di, msg_feedback, "Provides")
+Rel(chat_service, memory_mgr, "Manages through")
+Rel(container, auth_deps, "Manages")
+Rel(multi_agent, openai_svc, "Uses")
+
+@enduml

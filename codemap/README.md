@@ -1,87 +1,103 @@
 # C4 Architecture Map
 
 <!-- Last updated: 2025-12-12 -->
+<!-- Last verified: 2025-12-12 (see VERIFICATION.md) -->
 
-Overview of Ingenious AI Agent Framework architecture using the C4 model.
+Overview of Ingenious Multi-Agent AI Framework architecture using the C4 model.
+
+## Folder Structure
+
+```
+codemap/
+├── README.md
+├── level1-context/
+│   ├── context.puml
+│   ├── context.png
+│   └── context.md
+├── level2-containers/
+│   ├── containers.puml
+│   ├── containers.png
+│   └── containers.md
+├── level3-components/
+│   ├── components-api.puml
+│   ├── components-services.puml
+│   ├── components-data.puml
+│   ├── components-infrastructure.puml
+│   ├── components-external.puml
+│   └── components.md
+└── level4-code/
+    ├── code-chat-service.puml
+    ├── code-database.puml
+    ├── code-azure-builders.puml
+    ├── code-errors.puml
+    ├── code-models.puml
+    └── code.md
+```
 
 ## Contents
 
-| Level | Scope | Documentation | Diagram |
-|-------|-------|---------------|---------|
-| 1 | System Context | [context.md](./context.md) | [context.puml](./context.puml) |
-| 2 | Containers | [containers.md](./containers.md) | [containers.puml](./containers.puml) |
-| 3 | Components | [components.md](./components.md) | components-*.puml |
-| 4 | Code | [code.md](./code.md) | code-*.puml |
+| Level | Scope | Documentation | Diagrams |
+|-------|-------|---------------|----------|
+| 1 | System Context | [context.md](./level1-context/context.md) | [context.puml](./level1-context/context.puml) |
+| 2 | Containers | [containers.md](./level2-containers/containers.md) | [containers.puml](./level2-containers/containers.puml) |
+| 3 | Components | [components.md](./level3-components/components.md) | level3-components/*.puml |
+| 4 | Code | [code.md](./level4-code/code.md) | level4-code/*.puml |
+| - | Verification | [VERIFICATION.md](./VERIFICATION.md) | - |
 
 ## Technology Stack
 
-| Container | Technology | Language | Purpose |
-|-----------|-----------|----------|---------|
-| CLI Tool | Typer, Rich, Python-dotenv | Python 3.13+ | Command-line interface and project scaffolding |
-| FastAPI Server | FastAPI, Uvicorn, Pydantic | Python 3.13+ | REST API server and request routing |
-| Chat Service | AutoGen, AutoGen-ext, OpenAI SDK | Python 3.13+ | Multi-agent orchestration and LLM coordination |
-| Conversation Flows | AutoGen, Python | Python 3.13+ | Task-specific agent workflows |
-| Authentication | PyJWT, PassLib, BCrypt, python-jose | Python 3.13+ | Token-based and credential authentication |
-| Configuration | Pydantic-settings, Python-dotenv | Python 3.13+ | Environment-driven settings management |
-| Chat History DB | aiosqlite, pyodbc, Azure SDK | Python/SQLite/SQL | Conversation and message persistence |
-| File Storage | aiofiles, Azure Storage SDK | Python | Local/cloud file management |
-| Azure OpenAI | OpenAI SDK, tiktoken | Python/REST API | LLM inference and embeddings |
-| Azure AI Search | Azure Search SDK | Python/REST API | Vector and semantic search |
-| ChromaDB | chromadb SDK | Python | Local vector embeddings |
+| Layer | Technology | Purpose |
+|-------|------------|---------|
+| Web Framework | FastAPI 0.115.9 + Uvicorn 0.35.0 | REST API server |
+| CLI | Typer 0.16.0 + Rich 13.7.1 | Command-line interface |
+| Agent Orchestration | AutoGen 0.5.7 | Multi-agent conversation flows |
+| Authentication | python-jose 3.5.0 + passlib 1.7.4 | JWT/Basic auth |
+| Configuration | Pydantic Settings | Environment-based config |
+| Local DB | SQLite + aiosqlite 0.21.0 | Development database |
+| Cloud DB | Azure SQL (pyodbc 5.2.0) | Production database |
+| NoSQL | Azure Cosmos DB 4.9.0 | Distributed storage |
+| LLM | Azure OpenAI (openai 1.82.0) | Chat completions |
+| Vector Search | Azure AI Search 11.5.2 | Knowledge base retrieval |
+| Local Vector DB | ChromaDB 1.0.11 | Local embeddings |
+| Blob Storage | Azure Blob Storage 12.25.1 | Document storage |
+| Logging | structlog 25.4.0 | Structured logging |
 
 ## Key Files
 
-| Category | File Path | Purpose |
-|----------|-----------|---------|
-| App Factory | `ingenious/main/app_factory.py` | FastAPI application factory with DI setup |
-| Routing | `ingenious/main/routing.py` | API route registration and management |
-| Chat Service | `ingenious/services/chat_service.py` | Chat service interface and facade |
-| Multi-Agent | `ingenious/services/chat_services/multi_agent/service.py` | AutoGen multi-agent orchestration |
-| Database | `ingenious/db/chat_history_repository.py` | Chat history repository factory |
-| Connection Pool | `ingenious/db/connection_pool.py` | Database connection pooling |
-| Configuration | `ingenious/config/main_settings.py` | Main settings class |
-| Auth Config | `ingenious/config/auth_config.py` | Azure authentication configuration |
-| Azure Builders | `ingenious/client/azure/builder/` | Azure client builder pattern |
-| File Storage | `ingenious/files/files_repository.py` | File storage abstraction |
-| Errors | `ingenious/errors/base_error.py` | Base error class hierarchy |
-| API Routes | `ingenious/api/routes/` | REST API endpoint definitions |
-| CLI | `ingenious/cli/main.py` | CLI application entry point |
+| Path | Purpose |
+|------|---------|
+| `ingenious/main/app_factory.py` | FastAPI application factory |
+| `ingenious/main/routing.py` | Route registration |
+| `ingenious/services/chat_service.py` | Chat service facade |
+| `ingenious/services/chat_services/multi_agent/service.py` | Multi-agent orchestration |
+| `ingenious/db/chat_history_repository.py` | Repository factory |
+| `ingenious/config/main_settings.py` | Configuration loader |
+| `ingenious/client/azure/builder/` | Azure client builders |
+| `ingenious/api/routes/` | API route handlers |
+| `ingenious/errors/` | Error class hierarchy |
 
 ## Rendering Diagrams
 
 PlantUML diagrams can be rendered using:
 
-### VS Code Extension
-Install the PlantUML extension and open any `.puml` file, then use `Alt+D` to preview.
+- **VS Code PlantUML extension** - Preview diagrams directly in editor
+- **Online**: https://www.plantuml.com/plantuml/uml/
+- **CLI**: `plantuml -tpng codemap/**/*.puml`
 
-### Online Editor
-Visit https://www.plantuml.com/plantuml/uml/ and paste diagram contents.
+## Regenerating PNG Exports
 
-### Command Line
 ```bash
-# Install PlantUML (macOS)
-brew install plantuml
-
-# Render all diagrams to PNG
-plantuml codemap/*.puml
-
-# Render to SVG
-plantuml -tsvg codemap/*.puml
+# Generate PNGs for all levels
+plantuml -tpng codemap/level1-context/*.puml
+plantuml -tpng codemap/level2-containers/*.puml
+plantuml -tpng codemap/level3-components/*.puml
+plantuml -tpng codemap/level4-code/*.puml
 ```
 
-### Docker
-```bash
-docker run -v $(pwd)/codemap:/data plantuml/plantuml -tpng /data/*.puml
-```
+## Installation
 
-## External Integrations
+If PlantUML CLI is not available:
 
-| System | Purpose | Configuration |
-|--------|---------|---------------|
-| Azure OpenAI | LLM chat completions and embeddings | `INGENIOUS_MODELS__N__*` |
-| Azure AI Search | Vector search and RAG retrieval | `INGENIOUS_AZURE_SEARCH_SERVICES__N__*` |
-| Azure SQL | Chat history (cloud) | `INGENIOUS_AZURE_SQL_SERVICES__*` |
-| Azure Cosmos DB | Chat history (NoSQL) | `INGENIOUS_COSMOS_SERVICE__*` |
-| Azure Blob Storage | File/prompt revisions | `INGENIOUS_FILE_STORAGE__REVISIONS__*` |
-| ChromaDB | Local vector embeddings | `KB_POLICY=local_only` |
-| SQLite | Local chat history | `INGENIOUS_CHAT_HISTORY__DATABASE_PATH` |
+- **macOS**: `brew install plantuml`
+- **Linux**: `apt install plantuml`
+- **Manual**: Download from https://plantuml.com/download
