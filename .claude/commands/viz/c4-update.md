@@ -1,24 +1,42 @@
 # C4 Architecture Update
 
-Update the existing C4 model based on code changes since it was last generated.
+Update the existing hierarchical C4 model based on code changes since it was last generated.
 
 ## Prerequisites
 
-C4 model must exist in `codemap/` folder. If not, run `/viz/c4-map` first.
+Hierarchical C4 model must exist in `codemap/<system-id>/` folder. If not, run `/viz/c4-map` first.
+
+The expected structure is:
+```
+codemap/
+└── <system-id>/
+    ├── context.puml/md
+    └── containers/
+        └── <container-id>/
+            ├── container.puml/md
+            └── components/
+                └── <component-id>/
+                    ├── component.puml/md
+                    └── code/
+                        └── classes.puml/md
+```
 
 ## Instructions
 
-### Step 1: Identify Changes
+### Step 1: Identify the System and Changes
 
-Run these commands to identify what changed:
+First, identify the system ID and what changed:
 
 ```bash
-# Get last modified date of C4 model
-find codemap -type f -name "*.puml" -o -name "*.md" | head -20
+# Find the system folder
+ls codemap/
 
-# Find files changed since C4 model was created
-# Use the oldest codemap file's date as reference
-find . -type f \( -name "*.ts" -o -name "*.js" -o -name "*.py" -o -name "*.go" \) -newer codemap/level1-context/context.md 2>/dev/null | grep -v node_modules | grep -v __pycache__
+# Get last modified date of C4 model
+find codemap -type f \( -name "*.puml" -o -name "*.md" \) | head -20
+
+# Find files changed since C4 model was created (use context.md as reference)
+SYSTEM_ID=$(ls codemap/ | head -1)
+find . -type f \( -name "*.ts" -o -name "*.js" -o -name "*.py" -o -name "*.go" \) -newer codemap/$SYSTEM_ID/context.md 2>/dev/null | grep -v node_modules | grep -v __pycache__
 ```
 
 Also check git history:
@@ -30,28 +48,31 @@ git log -1 --format="%H" -- codemap/
 git diff --name-status <commit_hash>..HEAD -- . ':!codemap'
 ```
 
-### Step 2: Categorize Changes
+### Step 2: Categorize Changes by Hierarchy Level
 
-Group the changed files by impact level:
+Group the changed files by their impact on the C4 hierarchy:
 
-**Context-level changes** (affects `codemap/level1-context/`):
+**Context-level changes** (affects `codemap/<system-id>/context.*`):
 - New external integrations added
 - External services removed
 - New user types or actors
+- New containers added to the system
 
-**Container-level changes** (affects `codemap/level2-containers/`):
-- New services/applications added
-- Services removed or merged
-- Technology stack changes (new frameworks, databases)
-- New inter-service communication
+**Container-level changes** (affects `codemap/<system-id>/containers/<container-id>/`):
+- New services/applications added -> create new container folder
+- Services removed -> remove container folder
+- Technology stack changes
+- New inter-container communication
+- New components added to container
 
-**Component-level changes** (affects `codemap/level3-components/`):
-- New modules/packages added
-- Modules removed or renamed
+**Component-level changes** (affects `.../components/<component-id>/`):
+- New modules/packages added -> create new component folder
+- Modules removed -> remove component folder
 - Component responsibility changes
 - New dependencies between components
+- New key classes added to component
 
-**Code-level changes** (affects `codemap/level4-code/`):
+**Code-level changes** (affects `.../components/<component-id>/code/`):
 - New key classes added
 - Class hierarchy changes
 - New design patterns introduced
@@ -70,27 +91,28 @@ Parameters:
   prompt: |
     TASK: Update the SYSTEM CONTEXT level based on recent code changes.
 
+    SYSTEM_ID: <system-id>
     CHANGED FILES: [insert list from Step 1]
 
     EXPLORATION GOALS:
-    1. Read the current codemap/level1-context/context.md to understand existing state
-    2. Analyze the changed files for:
-       - New external service integrations (HTTP clients, SDKs)
+    1. Read codemap/<system-id>/context.md to understand existing state
+    2. Analyze changed files for:
+       - New external service integrations
        - Removed external dependencies
        - New user types or authentication methods
-    3. Identify what needs to be added/removed/modified in the diagram
+       - New containers that need to be added
+    3. Identify what needs to be added/removed/modified
 
-    SEARCH STRATEGY:
-    - Read each changed file to understand the change
-    - Grep for new import statements related to external services
-    - Check for new environment variable references
-    - Compare against existing external systems in context.md
+    HIERARCHICAL UPDATES:
+    - If new containers detected, list them with IDs for folder creation
+    - Update the "Drill Down - Containers" navigation table
 
     OUTPUT FORMAT:
     Return:
     - Updated C4-PlantUML Context diagram (full replacement)
+    - NEW_CONTAINERS: Array of new container IDs to create folders for
+    - REMOVED_CONTAINERS: Array of container IDs to remove
     - Change summary: what was added/removed/modified
-    - List of files that triggered each change
 ```
 
 **If container-level changes detected:**
@@ -102,28 +124,31 @@ Parameters:
   prompt: |
     TASK: Update the CONTAINER level based on recent code changes.
 
+    SYSTEM_ID: <system-id>
+    CONTAINER_ID: <container-id>  # If specific container, otherwise "all"
     CHANGED FILES: [insert list from Step 1]
 
     EXPLORATION GOALS:
-    1. Read the current codemap/level2-containers/containers.md to understand existing state
-    2. Analyze the changed files for:
-       - New services or applications added
-       - Services removed or consolidated
-       - Technology stack updates (new dependencies in package files)
-       - New inter-service communication patterns
-    3. Identify what needs to be added/removed/modified in the diagram
+    1. Read codemap/<system-id>/containers/<container-id>/container.md
+    2. Analyze changed files for:
+       - Technology stack updates
+       - New inter-container communication
+       - New components within this container
+       - Removed components
+    3. Identify what needs to be added/removed/modified
 
-    SEARCH STRATEGY:
-    - Check if any new Dockerfile or docker-compose entries exist
-    - Read changed package.json/requirements.txt for new major dependencies
-    - Look for new main entry points or server configurations
-    - Find new API routes or queue consumers
+    HIERARCHICAL UPDATES:
+    - If new components detected, list them with IDs for folder creation
+    - Update the "Drill Down - Components" navigation table
+    - Update parent link if container moved
 
     OUTPUT FORMAT:
     Return:
     - Updated C4-PlantUML Container diagram (full replacement)
-    - Change summary: what was added/removed/modified
+    - NEW_COMPONENTS: Array of {container_id, component_id} for folder creation
+    - REMOVED_COMPONENTS: Array of {container_id, component_id} to remove
     - Updated technology stack table
+    - Change summary
 ```
 
 **If component-level changes detected:**
@@ -135,28 +160,31 @@ Parameters:
   prompt: |
     TASK: Update the COMPONENT level based on recent code changes.
 
+    SYSTEM_ID: <system-id>
+    CONTAINER_ID: <container-id>
+    COMPONENT_ID: <component-id>  # If specific component, otherwise "all"
     CHANGED FILES: [insert list from Step 1]
 
     EXPLORATION GOALS:
-    1. Read the current codemap/level3-components/components.md to understand existing state
-    2. Analyze the changed files for:
-       - New modules or packages created
-       - Modules removed or renamed
-       - Changed responsibilities (significant refactoring)
+    1. Read codemap/<system-id>/containers/<container-id>/components/<component-id>/component.md
+    2. Analyze changed files for:
+       - Changed responsibilities
        - New inter-component dependencies
-    3. Identify what needs to be added/removed/modified in the diagrams
+       - New key classes for code level
+       - Removed classes
+    3. Identify what needs to be added/removed/modified
 
-    SEARCH STRATEGY:
-    - Check for new top-level directories
-    - Analyze import statement changes
-    - Look for new __init__.py or index.ts files
-    - Identify moved or renamed modules
+    HIERARCHICAL UPDATES:
+    - Update the "Drill Down - Code" navigation table
+    - Update parent/sibling navigation links
+    - If new classes, they go in ./code/ folder
 
     OUTPUT FORMAT:
     Return:
-    - Updated C4-PlantUML Component diagrams (full replacement for affected containers)
-    - Change summary: what was added/removed/modified
+    - Updated C4-PlantUML Component diagram (full replacement)
+    - CLASSES_CHANGED: true/false (whether code level needs update)
     - Updated dependency matrix
+    - Change summary
 ```
 
 **If code-level changes detected:**
@@ -168,49 +196,75 @@ Parameters:
   prompt: |
     TASK: Update the CODE level based on recent code changes.
 
+    SYSTEM_ID: <system-id>
+    CONTAINER_ID: <container-id>
+    COMPONENT_ID: <component-id>
     CHANGED FILES: [insert list from Step 1]
 
     EXPLORATION GOALS:
-    1. Read the current codemap/level4-code/code.md to understand existing state
-    2. Analyze the changed files for:
+    1. Read codemap/<system-id>/containers/<container-id>/components/<component-id>/code/classes.md
+    2. Analyze changed files for:
        - New key classes or interfaces
        - Changed class hierarchies
-       - New design patterns introduced
-       - Significant method signature changes
-    3. Identify what needs to be added/removed/modified in the diagrams
+       - New design patterns
+       - Significant method changes
+    3. Identify what needs to be added/removed/modified
 
-    SEARCH STRATEGY:
-    - Read the changed class definitions
-    - Check for new inheritance relationships
-    - Identify new pattern implementations
-    - Look for new abstract base classes
+    HIERARCHICAL UPDATES:
+    - Update navigation links to parent component
 
     OUTPUT FORMAT:
     Return:
-    - Updated PlantUML class diagrams (full replacement for affected components)
-    - Change summary: what was added/removed/modified
+    - Updated PlantUML class diagram (full replacement)
     - Updated design patterns table
+    - Change summary
 ```
 
 ### Step 4: Apply Updates
 
 For each subagent that returns updates:
 
-1. Update the .puml diagram files with new PlantUML code
-2. Update the corresponding .md documentation file
-3. Add update timestamp to file headers
+**Create new folders if needed:**
+```bash
+SYSTEM_ID="<system-id>"
 
-**PlantUML files to update:**
-- `codemap/level1-context/context.puml` - Context level diagram
-- `codemap/level2-containers/containers.puml` - Container level diagram
-- `codemap/level3-components/components-*.puml` - Component level diagrams
-- `codemap/level4-code/code-*.puml` - Code level class diagrams
+# For new containers
+for CONTAINER_ID in <new-container-ids>; do
+  mkdir -p codemap/$SYSTEM_ID/containers/$CONTAINER_ID/components
+done
 
-**Markdown files to update:**
-- `codemap/level1-context/context.md` - Context documentation
-- `codemap/level2-containers/containers.md` - Container documentation
-- `codemap/level3-components/components.md` - Component documentation
-- `codemap/level4-code/code.md` - Code documentation
+# For new components
+for path in <new-component-paths>; do
+  mkdir -p codemap/$SYSTEM_ID/containers/$CONTAINER_ID/components/$COMPONENT_ID/code
+done
+```
+
+**Remove folders if containers/components were removed:**
+```bash
+# Remove entire container subtree
+rm -rf codemap/$SYSTEM_ID/containers/<removed-container-id>
+
+# Remove component subtree
+rm -rf codemap/$SYSTEM_ID/containers/<container-id>/components/<removed-component-id>
+```
+
+**Update files in hierarchical locations:**
+
+Context level:
+- `codemap/<system-id>/context.puml` - Context diagram
+- `codemap/<system-id>/context.md` - Documentation with updated navigation
+
+Container level:
+- `codemap/<system-id>/containers/<container-id>/container.puml` - Container diagram
+- `codemap/<system-id>/containers/<container-id>/container.md` - Documentation
+
+Component level:
+- `codemap/<system-id>/containers/<container-id>/components/<component-id>/component.puml`
+- `codemap/<system-id>/containers/<container-id>/components/<component-id>/component.md`
+
+Code level:
+- `codemap/<system-id>/containers/<container-id>/components/<component-id>/code/classes.puml`
+- `codemap/<system-id>/containers/<container-id>/components/<component-id>/code/classes.md`
 
 Update format for markdown files:
 ```markdown
@@ -218,26 +272,49 @@ Update format for markdown files:
 <!-- Changes: brief summary of what changed -->
 ```
 
-### Step 5: Regenerate PNG Exports
+### Step 5: Update Navigation Links
+
+After structural changes, ensure all navigation links are correct:
+
+1. **Parent links** - Each level links UP to its parent
+2. **Child links** - Each level has a "Drill Down" section linking to children
+3. **Sibling links** - Optional, list other items at same level
+
+Example navigation check:
+```bash
+# Find all markdown files and verify links
+find codemap -name "*.md" -exec grep -l "Parent:" {} \;
+```
+
+### Step 6: Regenerate PNG Exports
 
 After updating .puml files, regenerate the PNG exports:
 
 ```bash
-# Regenerate PNGs for updated levels
-plantuml -tpng codemap/level1-context/*.puml
-plantuml -tpng codemap/level2-containers/*.puml
-plantuml -tpng codemap/level3-components/*.puml
-plantuml -tpng codemap/level4-code/*.puml
+SYSTEM_ID="<system-id>"
+
+# Regenerate context PNG
+plantuml -tpng codemap/$SYSTEM_ID/context.puml
+
+# Regenerate affected container PNGs
+plantuml -tpng codemap/$SYSTEM_ID/containers/<container-id>/container.puml
+
+# Regenerate affected component PNGs
+plantuml -tpng codemap/$SYSTEM_ID/containers/<container-id>/components/<component-id>/component.puml
+
+# Regenerate affected code PNGs
+plantuml -tpng codemap/$SYSTEM_ID/containers/<container-id>/components/<component-id>/code/classes.puml
+
+# Or regenerate all
+find codemap -name "*.puml" -exec plantuml -tpng {} \;
 ```
 
-If PlantUML CLI is not available, note this in the output and provide instructions for manual PNG generation.
-
-### Step 6: Update Index
+### Step 7: Update README
 
 Update `codemap/README.md` with:
 - New last-updated timestamp
 - Summary of changes made
-- List of files modified (both .puml, .png, and .md)
+- Updated entry point link if system ID changed
 
 ## Output
 
@@ -246,35 +323,47 @@ After updates are applied, output:
 ```markdown
 # C4 Update Summary
 
+## Structural Changes
+- [ ] New containers created: [list]
+- [ ] Containers removed: [list]
+- [ ] New components created: [list]
+- [ ] Components removed: [list]
+
 ## Files Modified
-- [ ] codemap/level1-context/context.puml - [changes or "no changes"]
-- [ ] codemap/level1-context/context.png - [regenerated or "no changes"]
-- [ ] codemap/level1-context/context.md - [changes or "no changes"]
-- [ ] codemap/level2-containers/containers.puml - [changes or "no changes"]
-- [ ] codemap/level2-containers/containers.png - [regenerated or "no changes"]
-- [ ] codemap/level2-containers/containers.md - [changes or "no changes"]
-- [ ] codemap/level3-components/components-*.puml - [changes or "no changes"]
-- [ ] codemap/level3-components/components-*.png - [regenerated or "no changes"]
-- [ ] codemap/level3-components/components.md - [changes or "no changes"]
-- [ ] codemap/level4-code/code-*.puml - [changes or "no changes"]
-- [ ] codemap/level4-code/code-*.png - [regenerated or "no changes"]
-- [ ] codemap/level4-code/code.md - [changes or "no changes"]
+
+### Context Level
+- [ ] codemap/<system-id>/context.puml - [changes or "no changes"]
+- [ ] codemap/<system-id>/context.png - [regenerated or "no changes"]
+- [ ] codemap/<system-id>/context.md - [changes or "no changes"]
+
+### Container Level
+- [ ] codemap/<system-id>/containers/<container-id>/container.puml - [changes]
+- [ ] codemap/<system-id>/containers/<container-id>/container.png - [regenerated]
+- [ ] codemap/<system-id>/containers/<container-id>/container.md - [changes]
+
+### Component Level
+- [ ] .../components/<component-id>/component.puml - [changes]
+- [ ] .../components/<component-id>/component.png - [regenerated]
+- [ ] .../components/<component-id>/component.md - [changes]
+
+### Code Level
+- [ ] .../components/<component-id>/code/classes.puml - [changes]
+- [ ] .../components/<component-id>/code/classes.png - [regenerated]
+- [ ] .../components/<component-id>/code/classes.md - [changes]
 
 ## Changes Applied
 [Summary of architectural changes detected and applied]
 
+## Navigation Verified
+- [ ] All parent links valid
+- [ ] All child links valid
+- [ ] Entry point in README.md updated
+
 ## Files Analyzed
 [List of source files that triggered updates]
 
-## Recommendation
-[Any manual review needed or follow-up actions]
-
-## Rendering Updated Diagrams
-Run the following to regenerate all PNGs:
+## Render Diagrams
 ```bash
-plantuml -tpng codemap/level1-context/*.puml
-plantuml -tpng codemap/level2-containers/*.puml
-plantuml -tpng codemap/level3-components/*.puml
-plantuml -tpng codemap/level4-code/*.puml
+find codemap -name "*.puml" -exec plantuml -tpng {} \;
 ```
 ```

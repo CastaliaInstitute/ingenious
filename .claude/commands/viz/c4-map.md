@@ -1,10 +1,36 @@
 # C4 Architecture Mapping
 
-Map the codebase architecture using the C4 model (Context, Container, Component, Code).
+Map the codebase architecture using a hierarchical C4 model (Context -> Containers -> Components -> Code).
+
+## Hierarchical Structure
+
+The C4 model is built as a navigable tree where each level drills down into more detail:
+
+```
+codemap/
+└── <system-name>/                    # Level 1: System Context
+    ├── context.puml                  # Context diagram
+    ├── context.md                    # Context documentation
+    └── containers/                   # Level 2: Containers
+        ├── <container-1>/
+        │   ├── container.puml        # Container details
+        │   ├── container.md          # Container documentation
+        │   └── components/           # Level 3: Components
+        │       ├── <component-a>/
+        │       │   ├── component.puml
+        │       │   ├── component.md
+        │       │   └── code/         # Level 4: Code
+        │       │       ├── classes.puml
+        │       │       └── classes.md
+        │       └── <component-b>/
+        │           └── ...
+        └── <container-2>/
+            └── ...
+```
 
 ## Instructions
 
-Use the Task tool to spawn 4 parallel Explore subagents in a single message. Each subagent analyzes one C4 level.
+Use the Task tool to spawn 4 parallel Explore subagents in a single message. Each subagent analyzes one C4 level and produces output that references its parent level.
 
 ### Subagent Invocations
 
@@ -19,45 +45,57 @@ Parameters:
   prompt: |
     TASK: Map the SYSTEM CONTEXT level (C4 Level 1) of this codebase.
 
+    This is the ROOT of the C4 hierarchy. All other levels will be nested under this system.
+
     EXPLORATION GOALS:
-    1. Identify the system boundary - determine what this software system is and does
-    2. Find all users/actors by searching for:
+    1. Identify the system name and create a kebab-case identifier (e.g., "ingenious-agent-framework")
+    2. Define the system boundary - what this software system is and does
+    3. Find all users/actors by searching for:
        - Authentication/authorization code
        - User role definitions
        - API consumers
-    3. Map external systems by searching for:
+    4. Map external systems by searching for:
        - HTTP client configurations (requests, httpx, axios, fetch)
        - SDK imports (azure, aws, stripe, twilio, etc.)
        - Environment variables referencing external URLs/keys
        - Database connection strings for external DBs
-    4. Document data flows in and out of the system
+    5. Document data flows in and out of the system
+    6. List the CONTAINERS this system contains (for cross-referencing)
 
     SEARCH STRATEGY:
     - Glob for config files: **/*.env*, **/config.*, **/settings.*
     - Grep for HTTP clients: "requests\.", "httpx\.", "axios", "fetch("
     - Grep for SDK patterns: "import.*azure", "import.*aws", "from stripe"
     - Check docker-compose.yml for external service dependencies
+    - Read pyproject.toml or package.json for project name
 
     OUTPUT FORMAT:
-    Return a C4-PlantUML Context diagram:
-    ```plantuml
-    @startuml
-    !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+    Return:
+    1. SYSTEM_ID: kebab-case identifier for folder naming (e.g., "ingenious-framework")
+    2. SYSTEM_NAME: Human-readable name for diagram titles
+    3. CONTAINERS_LIST: Array of container IDs that will be created under this system:
+       [
+         { "id": "api-server", "name": "API Server", "technology": "FastAPI" },
+         { "id": "database", "name": "Database", "technology": "SQLite/PostgreSQL" },
+         ...
+       ]
+    4. C4-PlantUML Context diagram:
+       ```plantuml
+       @startuml
+       !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
 
-    title System Context diagram for [System Name]
+       title System Context diagram for [System Name]
 
-    Person(user, "User", "Description")
-    System(system, "System Name", "Description")
-    System_Ext(ext, "External System", "Description")
+       Person(user, "User", "Description")
+       System(system, "System Name", "Description")
+       System_Ext(ext, "External System", "Description")
 
-    Rel(user, system, "Uses")
-    Rel(system, ext, "Calls")
-    @enduml
-    ```
-
-    Also return:
-    - List of external integrations found with file paths
-    - List of user types/actors identified
+       Rel(user, system, "Uses")
+       Rel(system, ext, "Calls")
+       @enduml
+       ```
+    5. List of external integrations found with file paths
+    6. List of user types/actors identified
 ```
 
 **Subagent 2: Container Level**
@@ -69,15 +107,23 @@ Parameters:
   prompt: |
     TASK: Map the CONTAINER level (C4 Level 2) of this codebase.
 
+    Containers are deployable units WITHIN the system. Each container will become a subfolder
+    that houses its own components.
+
     EXPLORATION GOALS:
-    1. Identify all deployable units:
+    1. Identify all deployable units with unique IDs:
        - Frontend applications (web, mobile)
        - Backend services/APIs
        - Background workers/jobs
        - Databases (type and purpose)
        - Message queues
        - Cache layers
-    2. Document technology stack per container
+    2. For EACH container, document:
+       - container_id: kebab-case identifier (e.g., "api-server", "chat-database")
+       - container_name: Human-readable name
+       - technology: Primary technology/framework
+       - responsibility: One-sentence description
+       - components: List of component IDs it contains
     3. Map inter-container communication patterns
     4. Identify entry points and protocols
 
@@ -89,26 +135,45 @@ Parameters:
     - Grep for queue consumers: "celery", "bull", "rabbitmq", "kafka"
 
     OUTPUT FORMAT:
-    Return a C4-PlantUML Container diagram:
-    ```plantuml
-    @startuml
-    !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+    Return:
+    1. CONTAINERS: Array of container definitions with nested components:
+       [
+         {
+           "id": "api-server",
+           "name": "API Server",
+           "technology": "FastAPI",
+           "responsibility": "Handles HTTP requests and orchestrates business logic",
+           "components": [
+             { "id": "auth", "name": "Authentication", "path": "ingenious/auth" },
+             { "id": "chat-services", "name": "Chat Services", "path": "ingenious/services/chat_services" },
+             ...
+           ]
+         },
+         {
+           "id": "chat-database",
+           "name": "Chat Database",
+           "technology": "SQLite/Azure SQL",
+           "responsibility": "Stores conversation history",
+           "components": []
+         },
+         ...
+       ]
+    2. C4-PlantUML Container diagram showing ALL containers:
+       ```plantuml
+       @startuml
+       !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
 
-    title Container diagram for [System Name]
+       title Container diagram for [System Name]
 
-    Container(web, "Web App", "React", "User interface")
-    Container(api, "API", "Node.js", "Business logic")
-    ContainerDb(db, "Database", "PostgreSQL", "Data storage")
+       Container(api_server, "API Server", "FastAPI", "Handles HTTP requests")
+       ContainerDb(db, "Database", "PostgreSQL", "Data storage")
 
-    Rel(web, api, "REST/JSON")
-    Rel(api, db, "SQL")
-    @enduml
-    ```
-
-    Also return:
-    - Technology stack summary table
-    - Key configuration files found with paths
-    - Inter-container communication protocols
+       Rel(api_server, db, "Reads/Writes", "SQL")
+       @enduml
+       ```
+    3. INDIVIDUAL container diagrams (one per container) showing that container's relationship to others
+    4. Technology stack summary table
+    5. Inter-container communication protocols
 ```
 
 **Subagent 3: Component Level**
@@ -120,13 +185,21 @@ Parameters:
   prompt: |
     TASK: Map the COMPONENT level (C4 Level 3) of this codebase.
 
+    Components are modules WITHIN containers. Each component will become a subfolder
+    under its parent container.
+
     EXPLORATION GOALS:
     For each container, analyze:
-    1. Major modules/packages (top-level directories)
-    2. Component responsibilities (one sentence each)
-    3. Internal dependencies between components
+    1. Major modules/packages with unique IDs:
+       - component_id: kebab-case identifier (e.g., "auth-module", "chat-service")
+       - component_name: Human-readable name
+       - parent_container_id: Which container this belongs to
+       - source_path: Actual path in codebase
+       - responsibility: One-sentence description
+       - key_classes: List of important classes for Level 4
+    2. Internal dependencies between components (WITHIN same container)
+    3. Cross-container dependencies (which external containers this component calls)
     4. Key interfaces/contracts between components
-    5. Shared utilities and their consumers
 
     SEARCH STRATEGY:
     - List top-level directories under src/ or equivalent
@@ -136,26 +209,42 @@ Parameters:
     - Identify shared utility modules
 
     OUTPUT FORMAT:
-    Return C4-PlantUML Component diagrams (one per container):
-    ```plantuml
-    @startuml
-    !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+    Return:
+    1. COMPONENTS: Array grouped by parent container:
+       {
+         "api-server": [
+           {
+             "id": "auth-module",
+             "name": "Authentication",
+             "source_path": "ingenious/auth",
+             "responsibility": "JWT and Basic auth handling",
+             "key_classes": ["JWTHandler", "BasicAuthMiddleware"],
+             "internal_deps": ["config", "logging"],
+             "external_deps": ["chat-database"]
+           },
+           ...
+         ],
+         "chat-database": [
+           ...
+         ]
+       }
+    2. C4-PlantUML Component diagrams (one per container):
+       ```plantuml
+       @startuml
+       !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
 
-    title Component diagram for [Container Name]
+       title Component diagram for API Server
 
-    Component(auth, "Auth Module", "Handles authentication")
-    Component(users, "Users Module", "User management")
-    Component(api, "API Layer", "Route handlers")
+       Component(auth, "Auth Module", "JWT/Basic Auth handling")
+       Component(chat, "Chat Services", "Multi-agent orchestration")
+       Component(db_repo, "Database Repository", "Data access layer")
 
-    Rel(api, auth, "Uses")
-    Rel(api, users, "Uses")
-    @enduml
-    ```
-
-    Also return:
-    - Module dependency matrix
-    - Interface files found with paths
-    - Shared utility consumers list
+       Rel(chat, auth, "Authenticates via")
+       Rel(chat, db_repo, "Persists to")
+       @enduml
+       ```
+    3. Module dependency matrix
+    4. Interface files found with paths
 ```
 
 **Subagent 4: Code Level**
@@ -167,13 +256,21 @@ Parameters:
   prompt: |
     TASK: Map the CODE level (C4 Level 4) of this codebase.
 
+    Code diagrams show classes WITHIN components. Each code diagram will be nested
+    under its parent component folder.
+
     EXPLORATION GOALS:
     For key components, analyze:
-    1. Key classes/modules and their purposes
+    1. Key classes/modules with mapping to parent:
+       - class_name: Name of the class
+       - parent_component_id: Which component this belongs to
+       - parent_container_id: Which container (grandparent)
+       - file_path: Location in codebase
+       - purpose: One-sentence description
+       - key_methods: Important public methods
     2. Design patterns in use (Repository, Factory, Observer, etc.)
     3. Class relationships and hierarchies
     4. Critical code paths (request handling, data processing)
-    5. Shared base classes or interfaces
 
     SEARCH STRATEGY:
     - Grep for class definitions: "class \w+", "interface \w+"
@@ -183,74 +280,238 @@ Parameters:
     - Find abstract methods and implementations
 
     OUTPUT FORMAT:
-    Return PlantUML class diagrams for key components:
-    ```plantuml
-    @startuml
-    class UserService {
-      +getUser(id)
-      +createUser(data)
-    }
-    class UserRepository {
-      +findById(id)
-      +save(user)
-    }
-    UserService --> UserRepository
-    @enduml
-    ```
+    Return:
+    1. CODE_DIAGRAMS: Array grouped by component and container:
+       {
+         "api-server": {
+           "auth-module": {
+             "classes": [
+               {
+                 "name": "JWTHandler",
+                 "file": "ingenious/auth/jwt.py:15",
+                 "purpose": "Validates and creates JWT tokens",
+                 "methods": ["validate_token", "create_token", "decode_token"]
+               },
+               ...
+             ],
+             "patterns": ["Factory"],
+             "diagram": "```plantuml\n@startuml\nclass JWTHandler {...}\n@enduml\n```"
+           },
+           "chat-services": {
+             ...
+           }
+         }
+       }
+    2. PlantUML class diagrams for each component:
+       ```plantuml
+       @startuml
+       title Classes in Auth Module
 
-    Also return:
-    - List of key classes with file paths
-    - Design patterns identified with locations
-    - Class hierarchy summary
+       class JWTHandler {
+         +validate_token(token)
+         +create_token(payload)
+       }
+       class BasicAuthMiddleware {
+         +authenticate(request)
+       }
+       JWTHandler <.. BasicAuthMiddleware : uses
+       @enduml
+       ```
+    3. Design patterns identified with locations
+    4. Class hierarchy summary
 ```
 
 ## After All Subagents Complete
 
-Create the `codemap/` folder structure organized by C4 level and write PlantUML diagrams to separate .puml files.
+Create the hierarchical `codemap/` folder structure and write PlantUML diagrams.
 
-### Step 1: Create folder structure
+### Step 1: Create hierarchical folder structure
+
+Using the SYSTEM_ID from Subagent 1 and CONTAINERS from Subagent 2:
+
 ```bash
-mkdir -p codemap/level1-context codemap/level2-containers codemap/level3-components codemap/level4-code
+# Create root system folder
+SYSTEM_ID="<system-id-from-subagent-1>"
+mkdir -p codemap/$SYSTEM_ID/containers
+
+# For each container, create nested structure
+for CONTAINER_ID in <container-ids-from-subagent-2>; do
+  mkdir -p codemap/$SYSTEM_ID/containers/$CONTAINER_ID/components
+
+  # For each component in this container
+  for COMPONENT_ID in <component-ids-for-this-container>; do
+    mkdir -p codemap/$SYSTEM_ID/containers/$CONTAINER_ID/components/$COMPONENT_ID/code
+  done
+done
 ```
 
-### Step 2: Write PlantUML files
+Example structure:
+```bash
+mkdir -p codemap/ingenious-framework/containers
+mkdir -p codemap/ingenious-framework/containers/api-server/components/auth-module/code
+mkdir -p codemap/ingenious-framework/containers/api-server/components/chat-services/code
+mkdir -p codemap/ingenious-framework/containers/api-server/components/data-layer/code
+mkdir -p codemap/ingenious-framework/containers/chat-database/components
+mkdir -p codemap/ingenious-framework/containers/knowledge-base/components
+```
 
-Extract the PlantUML diagram code from each subagent and write to .puml files in the appropriate level folder:
+### Step 2: Write PlantUML files in hierarchical locations
 
 **Level 1 - System Context:**
-- `codemap/level1-context/context.puml` - Write the @startuml...@enduml block from Subagent 1
+- `codemap/<system-id>/context.puml` - System context diagram
+- `codemap/<system-id>/context.md` - Context documentation
 
-**Level 2 - Containers:**
-- `codemap/level2-containers/containers.puml` - Write the @startuml...@enduml block from Subagent 2
+**Level 2 - Containers (one folder per container):**
+- `codemap/<system-id>/containers/<container-id>/container.puml` - This container's diagram
+- `codemap/<system-id>/containers/<container-id>/container.md` - Container documentation
 
-**Level 3 - Components:**
-- `codemap/level3-components/components-api.puml` - Write API component diagram from Subagent 3
-- `codemap/level3-components/components-services.puml` - Write services component diagram from Subagent 3
-- `codemap/level3-components/components-data.puml` - Write data layer component diagram from Subagent 3
-- `codemap/level3-components/components-infrastructure.puml` - Write infrastructure component diagram from Subagent 3
-- `codemap/level3-components/components-external.puml` - Write external clients component diagram from Subagent 3
+**Level 3 - Components (nested under containers):**
+- `codemap/<system-id>/containers/<container-id>/components/<component-id>/component.puml`
+- `codemap/<system-id>/containers/<container-id>/components/<component-id>/component.md`
 
-**Level 4 - Code:**
-- `codemap/level4-code/code-*.puml` - Write class diagrams from Subagent 4 (one per major component)
+**Level 4 - Code (nested under components):**
+- `codemap/<system-id>/containers/<container-id>/components/<component-id>/code/classes.puml`
+- `codemap/<system-id>/containers/<container-id>/components/<component-id>/code/classes.md`
 
-### Step 3: Generate PNG exports
+### Step 3: Write navigation links in each level
 
-Generate PNG images from all PlantUML files using the PlantUML CLI:
+Each markdown file should include navigation links to:
+- Parent level (go up the hierarchy)
+- Child levels (drill down into detail)
+- Sibling levels (other items at same level)
 
-```bash
-# Generate PNGs for all levels (outputs to same directory as .puml files)
-plantuml -tpng codemap/level1-context/*.puml
-plantuml -tpng codemap/level2-containers/*.puml
-plantuml -tpng codemap/level3-components/*.puml
-plantuml -tpng codemap/level4-code/*.puml
+**Example context.md:**
+```markdown
+# System Context: [System Name]
+
+<!-- Last updated: YYYY-MM-DD -->
+
+[Description]
+
+## Diagram
+
+![System Context](./context.png)
+
+## Drill Down - Containers
+
+Navigate to containers within this system:
+
+| Container | Technology | Description | Details |
+|-----------|------------|-------------|---------|
+| API Server | FastAPI | Handles HTTP requests | [View](./containers/api-server/container.md) |
+| Chat Database | SQLite | Stores conversations | [View](./containers/chat-database/container.md) |
+
+## External Systems
+
+[External system details]
 ```
 
-If PlantUML CLI is not available, note this in the output and provide instructions:
-- Install via: `brew install plantuml` (macOS) or `apt install plantuml` (Linux)
-- Or use VS Code PlantUML extension to export PNGs manually
-- Or use online renderer: https://www.plantuml.com/plantuml/uml/
+**Example container.md:**
+```markdown
+# Container: API Server
 
-### Step 4: Write markdown documentation files
+<!-- Last updated: YYYY-MM-DD -->
+
+**Parent:** [System Context](../../context.md)
+
+[Description]
+
+## Diagram
+
+![Container](./container.png)
+
+## Drill Down - Components
+
+Navigate to components within this container:
+
+| Component | Responsibility | Details |
+|-----------|----------------|---------|
+| Auth Module | JWT/Basic auth | [View](./components/auth-module/component.md) |
+| Chat Services | Multi-agent chat | [View](./components/chat-services/component.md) |
+
+## Communication
+
+[Inter-container protocols]
+```
+
+**Example component.md:**
+```markdown
+# Component: Auth Module
+
+<!-- Last updated: YYYY-MM-DD -->
+
+**Parent:** [API Server Container](../../container.md)
+**System:** [System Context](../../../../context.md)
+
+[Description]
+
+## Diagram
+
+![Component](./component.png)
+
+## Drill Down - Code
+
+View class diagrams for this component:
+
+| Class | Purpose | Details |
+|-------|---------|---------|
+| JWTHandler | Token validation | [View](./code/classes.md) |
+
+## Dependencies
+
+[Internal and external dependencies]
+```
+
+**Example code/classes.md:**
+```markdown
+# Code: Auth Module Classes
+
+<!-- Last updated: YYYY-MM-DD -->
+
+**Parent:** [Auth Module Component](../component.md)
+**Container:** [API Server](../../../container.md)
+**System:** [System Context](../../../../../context.md)
+
+## Class Diagram
+
+![Classes](./classes.png)
+
+## Classes
+
+| Class | File | Purpose |
+|-------|------|---------|
+| JWTHandler | ingenious/auth/jwt.py:15 | Token validation |
+
+## Design Patterns
+
+[Patterns identified]
+```
+
+### Step 4: Generate PNG exports
+
+Generate PNG images from all PlantUML files:
+
+```bash
+SYSTEM_ID="<system-id>"
+
+# Generate context PNG
+plantuml -tpng codemap/$SYSTEM_ID/context.puml
+
+# Generate container PNGs
+for dir in codemap/$SYSTEM_ID/containers/*/; do
+  plantuml -tpng "${dir}container.puml"
+done
+
+# Generate component PNGs
+find codemap/$SYSTEM_ID/containers -name "component.puml" -exec plantuml -tpng {} \;
+
+# Generate code PNGs
+find codemap/$SYSTEM_ID/containers -path "*/code/classes.puml" -exec plantuml -tpng {} \;
+```
+
+If PlantUML CLI is not available, note this in the output.
+
+### Step 5: Write README.md
 
 **codemap/README.md**
 ```markdown
@@ -258,189 +519,53 @@ If PlantUML CLI is not available, note this in the output and provide instructio
 
 <!-- Last updated: YYYY-MM-DD -->
 
-Overview of [Project Name] architecture using the C4 model.
+Hierarchical C4 model for [Project Name].
 
-## Folder Structure
+## Structure
+
+This C4 map is organized as a navigable tree:
 
 ```
 codemap/
-├── README.md
-├── level1-context/
-│   ├── context.puml
-│   ├── context.png
-│   └── context.md
-├── level2-containers/
-│   ├── containers.puml
-│   ├── containers.png
-│   └── containers.md
-├── level3-components/
-│   ├── components-*.puml
-│   ├── components-*.png
-│   └── components.md
-└── level4-code/
-    ├── code-*.puml
-    ├── code-*.png
-    └── code.md
+└── <system-name>/              <- Start here
+    ├── context.puml/md/png     <- Level 1: System Context
+    └── containers/
+        └── <container>/
+            ├── container.puml/md/png  <- Level 2: Container
+            └── components/
+                └── <component>/
+                    ├── component.puml/md/png  <- Level 3: Component
+                    └── code/
+                        └── classes.puml/md/png  <- Level 4: Code
 ```
 
-## Contents
+## Entry Point
 
-| Level | Scope | Documentation | Diagram | Image |
-|-------|-------|---------------|---------|-------|
-| 1 | System Context | [context.md](./level1-context/context.md) | [context.puml](./level1-context/context.puml) | [context.png](./level1-context/context.png) |
-| 2 | Containers | [containers.md](./level2-containers/containers.md) | [containers.puml](./level2-containers/containers.puml) | [containers.png](./level2-containers/containers.png) |
-| 3 | Components | [components.md](./level3-components/components.md) | level3-components/*.puml | level3-components/*.png |
-| 4 | Code | [code.md](./level4-code/code.md) | level4-code/*.puml | level4-code/*.png |
+Start exploring from the system context:
+- [System Context](./<system-id>/context.md)
 
-## Technology Stack
-[Summary from Subagent 2]
+## Navigation
 
-## Key Files
-[Combined file path list from all subagents]
+- Each level links DOWN to its children (drill into detail)
+- Each level links UP to its parent (zoom out for context)
+- Use the navigation links in each .md file to explore
 
 ## Rendering Diagrams
 
-PlantUML diagrams can be rendered using:
-- VS Code PlantUML extension
-- Online: https://www.plantuml.com/plantuml/uml/
-- CLI: `plantuml -tpng codemap/**/*.puml`
-
-## Regenerating PNG Exports
-
 ```bash
-plantuml -tpng codemap/level1-context/*.puml
-plantuml -tpng codemap/level2-containers/*.puml
-plantuml -tpng codemap/level3-components/*.puml
-plantuml -tpng codemap/level4-code/*.puml
+# Render all diagrams
+find codemap -name "*.puml" -exec plantuml -tpng {} \;
 ```
 ```
 
-**codemap/level1-context/context.md**
-```markdown
-# Level 1: System Context
+### Step 6: Confirm output
 
-<!-- Last updated: YYYY-MM-DD -->
-
-[Subagent 1 output: description]
-
-## Diagram
-
-![System Context](./context.png)
-
-Source: [context.puml](./context.puml)
-
-## External Systems
-
-| System | Type | Integration Point |
-|--------|------|-------------------|
-| ... | ... | ... |
-
-## Data Flows
-
-[Description of data entering/leaving the system]
-```
-
-**codemap/level2-containers/containers.md**
-```markdown
-# Level 2: Containers
-
-<!-- Last updated: YYYY-MM-DD -->
-
-[Subagent 2 output: description]
-
-## Diagram
-
-![Containers](./containers.png)
-
-Source: [containers.puml](./containers.puml)
-
-## Container Details
-
-| Container | Technology | Purpose |
-|-----------|------------|---------|
-| ... | ... | ... |
-
-## Communication
-
-[Inter-container protocols and patterns]
-```
-
-**codemap/level3-components/components.md**
-```markdown
-# Level 3: Components
-
-<!-- Last updated: YYYY-MM-DD -->
-
-[Subagent 3 output: description]
-
-## Diagrams
-
-Component diagrams are split by area:
-
-### API Layer
-![API Components](./components-api.png)
-Source: [components-api.puml](./components-api.puml)
-
-### Services Layer
-![Services Components](./components-services.png)
-Source: [components-services.puml](./components-services.puml)
-
-### Data Layer
-![Data Components](./components-data.png)
-Source: [components-data.puml](./components-data.puml)
-
-### Infrastructure
-![Infrastructure Components](./components-infrastructure.png)
-Source: [components-infrastructure.puml](./components-infrastructure.puml)
-
-### External Clients
-![External Components](./components-external.png)
-Source: [components-external.puml](./components-external.puml)
-
-## Component Responsibilities
-
-| Component | Responsibility |
-|-----------|----------------|
-| ... | ... |
-
-## Dependencies
-
-[Internal dependency map]
-```
-
-**codemap/level4-code/code.md**
-```markdown
-# Level 4: Code
-
-<!-- Last updated: YYYY-MM-DD -->
-
-[Subagent 4 output: description]
-
-## Class Diagrams
-
-Class diagrams are split by component area. See code-*.puml and code-*.png files in this folder.
-
-## Design Patterns
-
-| Pattern | Location | Purpose |
-|---------|----------|---------|
-| ... | ... | ... |
-
-## Key Classes
-
-| Class | File | Purpose |
-|-------|------|---------|
-| ... | ... | ... |
-```
-
-### Step 5: Confirm output
-
-After writing all files, list the codemap folder structure:
+List the hierarchical structure:
 ```bash
 find codemap -type f | sort
 ```
 
-Output confirmation message with:
-- File locations organized by level
+Output confirmation with:
+- Hierarchical file locations
+- Navigation entry point
 - Instructions for rendering diagrams
-- Note if PNG generation succeeded or needs manual action
