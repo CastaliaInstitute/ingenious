@@ -2,24 +2,44 @@
 
 Map the codebase architecture using a hierarchical C4 model (Context -> Containers -> Components -> Code).
 
-## Hierarchical Structure
+## Orchestration Strategy
 
-The C4 model is built as a navigable tree where each level drills down into more detail:
+This command uses **multi-phase sequential orchestration** because each C4 level depends on outputs from the previous level:
+
+```
+Phase 1: Context (foundation) ─────────────────────────────────────────────┐
+                                                                           │
+Phase 2: Containers (receives SYSTEM_ID, external systems from Phase 1) ───┤
+                                                                           │
+Phase 3: Components (receives container IDs, boundaries from Phase 2) ─────┤
+                                                                           │
+Phase 4: Code (receives component IDs, key classes from Phase 3) ──────────┤
+                                                                           │
+Phase 5: Synthesis (receives ALL outputs, checks cross-level consistency) ─┘
+```
+
+**Why sequential?** Each level requires context from previous levels:
+- Containers need SYSTEM_ID for folder naming and external system boundaries
+- Components need container IDs to know where they belong
+- Code needs component IDs and key class hints from component analysis
+- Synthesis needs all outputs to find inconsistencies
+
+## Hierarchical Output Structure
 
 ```
 codemap/
-└── <system-name>/                    # Level 1: System Context
-    ├── context.puml                  # Context diagram
-    ├── context.md                    # Context documentation
-    └── containers/                   # Level 2: Containers
+└── <system-id>/                    # Level 1: System Context
+    ├── context.puml                # Context diagram
+    ├── context.md                  # Context documentation
+    └── containers/                 # Level 2: Containers
         ├── <container-1>/
-        │   ├── container.puml        # Container details
-        │   ├── container.md          # Container documentation
-        │   └── components/           # Level 3: Components
+        │   ├── container.puml
+        │   ├── container.md
+        │   └── components/         # Level 3: Components
         │       ├── <component-a>/
         │       │   ├── component.puml
         │       │   ├── component.md
-        │       │   └── code/         # Level 4: Code
+        │       │   └── code/       # Level 4: Code
         │       │       ├── classes.puml
         │       │       └── classes.md
         │       └── <component-b>/
@@ -30,13 +50,14 @@ codemap/
 
 ## Instructions
 
-Use the Task tool to spawn 4 parallel Explore subagents in a single message. Each subagent analyzes one C4 level and produces output that references its parent level.
+Execute phases sequentially, passing outputs forward to dependent phases.
 
-### Subagent Invocations
+---
 
-Invoke all 4 subagents in parallel using the Task tool:
+## PHASE 1: System Context (Foundation)
 
-**Subagent 1: System Context**
+This phase establishes the foundation. All subsequent phases depend on its output.
+
 ```
 Tool: Task
 Parameters:
@@ -45,60 +66,70 @@ Parameters:
   prompt: |
     TASK: Map the SYSTEM CONTEXT level (C4 Level 1) of this codebase.
 
-    This is the ROOT of the C4 hierarchy. All other levels will be nested under this system.
+    This is the ROOT of the C4 hierarchy. Your output will be passed to subsequent
+    phases, so be precise with identifiers.
 
     EXPLORATION GOALS:
-    1. Identify the system name and create a kebab-case identifier (e.g., "ingenious-agent-framework")
-    2. Define the system boundary - what this software system is and does
-    3. Find all users/actors by searching for:
-       - Authentication/authorization code
+    1. Identify the system name and create a kebab-case identifier
+       - Read pyproject.toml, package.json, or README for project name
+       - Example: "ingenious-agent-framework" -> SYSTEM_ID
+    2. Define the system boundary - what this software system does
+    3. Find all users/actors:
+       - Authentication/authorization code patterns
+       - API consumer documentation
        - User role definitions
-       - API consumers
-    4. Map external systems by searching for:
-       - HTTP client configurations (requests, httpx, axios, fetch)
-       - SDK imports (azure, aws, stripe, twilio, etc.)
-       - Environment variables referencing external URLs/keys
-       - Database connection strings for external DBs
-    5. Document data flows in and out of the system
-    6. List the CONTAINERS this system contains (for cross-referencing)
+    4. Map external systems:
+       - HTTP clients (requests, httpx, axios, fetch)
+       - SDK imports (azure, aws, stripe, etc.)
+       - Environment variables for external URLs/keys
+       - Database connections to external DBs
+    5. Identify HIGH-LEVEL containers (deployable units):
+       - You're not analyzing containers in depth yet
+       - Just identify what will become container folders
 
     SEARCH STRATEGY:
-    - Glob for config files: **/*.env*, **/config.*, **/settings.*
-    - Grep for HTTP clients: "requests\.", "httpx\.", "axios", "fetch("
-    - Grep for SDK patterns: "import.*azure", "import.*aws", "from stripe"
+    - Glob: **/*.env*, **/config.*, **/settings.*, **/pyproject.toml
+    - Grep: "requests\.", "httpx\.", "import.*azure", "import.*aws"
     - Check docker-compose.yml for external service dependencies
-    - Read pyproject.toml or package.json for project name
+    - Look for main entry points to understand deployment units
 
-    OUTPUT FORMAT:
-    Return:
-    1. SYSTEM_ID: kebab-case identifier for folder naming (e.g., "ingenious-framework")
-    2. SYSTEM_NAME: Human-readable name for diagram titles
-    3. CONTAINERS_LIST: Array of container IDs that will be created under this system:
-       [
-         { "id": "api-server", "name": "API Server", "technology": "FastAPI" },
-         { "id": "database", "name": "Database", "technology": "SQLite/PostgreSQL" },
-         ...
-       ]
-    4. C4-PlantUML Context diagram:
-       ```plantuml
-       @startuml
-       !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+    OUTPUT FORMAT (CRITICAL - this format is consumed by Phase 2):
+    ```json
+    {
+      "SYSTEM_ID": "kebab-case-identifier",
+      "SYSTEM_NAME": "Human Readable Name",
+      "SYSTEM_DESCRIPTION": "One paragraph description",
+      "EXTERNAL_SYSTEMS": [
+        {"id": "azure-openai", "name": "Azure OpenAI", "type": "AI Service", "evidence": "file:line"}
+      ],
+      "ACTORS": [
+        {"id": "api-user", "name": "API User", "description": "External system consuming API"}
+      ],
+      "PRELIMINARY_CONTAINERS": [
+        {"id": "api-server", "name": "API Server", "type": "Application"},
+        {"id": "database", "name": "Database", "type": "Database"}
+      ]
+    }
+    ```
 
-       title System Context diagram for [System Name]
-
-       Person(user, "User", "Description")
-       System(system, "System Name", "Description")
-       System_Ext(ext, "External System", "Description")
-
-       Rel(user, system, "Uses")
-       Rel(system, ext, "Calls")
-       @enduml
-       ```
-    5. List of external integrations found with file paths
-    6. List of user types/actors identified
+    Also provide:
+    - C4-PlantUML Context diagram
+    - List of evidence files examined
 ```
 
-**Subagent 2: Container Level**
+**WAIT for Phase 1 to complete before proceeding to Phase 2.**
+
+Store Phase 1 output in memory. Extract:
+- `SYSTEM_ID` - used for folder creation
+- `EXTERNAL_SYSTEMS` - passed to container phase for boundary validation
+- `PRELIMINARY_CONTAINERS` - passed to container phase for detailed analysis
+
+---
+
+## PHASE 2: Containers (Depends on Phase 1)
+
+This phase drills into deployable units. Receives context from Phase 1.
+
 ```
 Tool: Task
 Parameters:
@@ -107,76 +138,76 @@ Parameters:
   prompt: |
     TASK: Map the CONTAINER level (C4 Level 2) of this codebase.
 
-    Containers are deployable units WITHIN the system. Each container will become a subfolder
-    that houses its own components.
+    CONTEXT FROM PHASE 1 (use these values):
+    - SYSTEM_ID: <insert from Phase 1>
+    - SYSTEM_NAME: <insert from Phase 1>
+    - EXTERNAL_SYSTEMS: <insert array from Phase 1>
+    - PRELIMINARY_CONTAINERS: <insert array from Phase 1>
+
+    Your job is to analyze each preliminary container in detail and identify
+    what components they contain.
 
     EXPLORATION GOALS:
-    1. Identify all deployable units with unique IDs:
-       - Frontend applications (web, mobile)
-       - Backend services/APIs
-       - Background workers/jobs
-       - Databases (type and purpose)
-       - Message queues
-       - Cache layers
-    2. For EACH container, document:
-       - container_id: kebab-case identifier (e.g., "api-server", "chat-database")
-       - container_name: Human-readable name
-       - technology: Primary technology/framework
-       - responsibility: One-sentence description
-       - components: List of component IDs it contains
-    3. Map inter-container communication patterns
-    4. Identify entry points and protocols
+    For each container in PRELIMINARY_CONTAINERS:
+    1. Validate it's actually a distinct deployable unit
+    2. Identify its technology stack (framework, runtime)
+    3. Map inter-container communication:
+       - Which containers talk to which?
+       - What protocols? (HTTP, SQL, gRPC, message queue)
+    4. Identify PRELIMINARY COMPONENTS within each container:
+       - Major modules/packages
+       - Don't analyze component internals yet
+    5. Validate boundaries with EXTERNAL_SYSTEMS:
+       - Which containers call which external systems?
 
     SEARCH STRATEGY:
-    - Glob for package manifests: **/package.json, **/requirements.txt, **/pyproject.toml, **/go.mod
-    - Glob for deployment configs: **/Dockerfile, **/docker-compose.yml, **/k8s/**
-    - Find main entry points: main.py, app.py, index.ts, server.ts
-    - Grep for server setup: "FastAPI", "Express", "Flask", "createServer"
-    - Grep for queue consumers: "celery", "bull", "rabbitmq", "kafka"
+    - Glob: **/Dockerfile, **/docker-compose.yml, **/main.py, **/app.py
+    - For each preliminary container, analyze its directory structure
+    - Grep for server setup: "FastAPI", "Express", "Flask"
+    - Find inter-service communication: queue consumers, HTTP clients
 
-    OUTPUT FORMAT:
-    Return:
-    1. CONTAINERS: Array of container definitions with nested components:
-       [
-         {
-           "id": "api-server",
-           "name": "API Server",
-           "technology": "FastAPI",
-           "responsibility": "Handles HTTP requests and orchestrates business logic",
-           "components": [
-             { "id": "auth", "name": "Authentication", "path": "ingenious/auth" },
-             { "id": "chat-services", "name": "Chat Services", "path": "ingenious/services/chat_services" },
-             ...
-           ]
-         },
-         {
-           "id": "chat-database",
-           "name": "Chat Database",
-           "technology": "SQLite/Azure SQL",
-           "responsibility": "Stores conversation history",
-           "components": []
-         },
-         ...
-       ]
-    2. C4-PlantUML Container diagram showing ALL containers:
-       ```plantuml
-       @startuml
-       !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+    OUTPUT FORMAT (CRITICAL - consumed by Phase 3):
+    ```json
+    {
+      "SYSTEM_ID": "<from Phase 1>",
+      "CONTAINERS": [
+        {
+          "id": "api-server",
+          "name": "API Server",
+          "technology": "FastAPI",
+          "description": "Handles HTTP requests",
+          "source_path": "ingenious/",
+          "external_deps": ["azure-openai", "azure-search"],
+          "container_deps": ["chat-database"],
+          "PRELIMINARY_COMPONENTS": [
+            {"id": "auth", "name": "Authentication", "path": "ingenious/auth"},
+            {"id": "chat-services", "name": "Chat Services", "path": "ingenious/services/chat_services"}
+          ]
+        }
+      ],
+      "CONTAINER_RELATIONSHIPS": [
+        {"from": "api-server", "to": "chat-database", "protocol": "SQL", "description": "Persists data"}
+      ]
+    }
+    ```
 
-       title Container diagram for [System Name]
-
-       Container(api_server, "API Server", "FastAPI", "Handles HTTP requests")
-       ContainerDb(db, "Database", "PostgreSQL", "Data storage")
-
-       Rel(api_server, db, "Reads/Writes", "SQL")
-       @enduml
-       ```
-    3. INDIVIDUAL container diagrams (one per container) showing that container's relationship to others
-    4. Technology stack summary table
-    5. Inter-container communication protocols
+    Also provide:
+    - C4-PlantUML Container diagram (showing all containers)
+    - Individual container diagrams showing relationships
 ```
 
-**Subagent 3: Component Level**
+**WAIT for Phase 2 to complete before proceeding to Phase 3.**
+
+Store Phase 2 output. Extract:
+- `CONTAINERS` array with nested `PRELIMINARY_COMPONENTS`
+- `CONTAINER_RELATIONSHIPS` for cross-referencing
+
+---
+
+## PHASE 3: Components (Depends on Phase 2)
+
+This phase analyzes module structure within containers. Receives container context.
+
 ```
 Tool: Task
 Parameters:
@@ -185,69 +216,75 @@ Parameters:
   prompt: |
     TASK: Map the COMPONENT level (C4 Level 3) of this codebase.
 
-    Components are modules WITHIN containers. Each component will become a subfolder
-    under its parent container.
+    CONTEXT FROM PHASE 2 (use these values):
+    - SYSTEM_ID: <insert from Phase 2>
+    - CONTAINERS: <insert full array from Phase 2>
+
+    For each container, analyze its PRELIMINARY_COMPONENTS in detail.
 
     EXPLORATION GOALS:
-    For each container, analyze:
-    1. Major modules/packages with unique IDs:
-       - component_id: kebab-case identifier (e.g., "auth-module", "chat-service")
-       - component_name: Human-readable name
-       - parent_container_id: Which container this belongs to
-       - source_path: Actual path in codebase
-       - responsibility: One-sentence description
-       - key_classes: List of important classes for Level 4
-    2. Internal dependencies between components (WITHIN same container)
-    3. Cross-container dependencies (which external containers this component calls)
-    4. Key interfaces/contracts between components
+    For each component in each container:
+    1. Validate it's a coherent module with clear responsibility
+    2. Identify internal dependencies (within same container)
+    3. Identify cross-container dependencies
+    4. List KEY CLASSES that deserve Level 4 documentation:
+       - Core business logic classes
+       - Important patterns (Repository, Factory, Service)
+       - NOT every utility class
+    5. Map component interfaces/contracts
 
     SEARCH STRATEGY:
-    - List top-level directories under src/ or equivalent
-    - Read __init__.py or index.ts files for module exports
-    - Grep for import patterns to map dependencies
+    For each component path:
+    - Read __init__.py or index.ts for exports
+    - Grep for class definitions: "class \w+"
+    - Analyze import statements for dependencies
     - Find interface/protocol definitions
-    - Identify shared utility modules
 
-    OUTPUT FORMAT:
-    Return:
-    1. COMPONENTS: Array grouped by parent container:
-       {
-         "api-server": [
-           {
-             "id": "auth-module",
-             "name": "Authentication",
-             "source_path": "ingenious/auth",
-             "responsibility": "JWT and Basic auth handling",
-             "key_classes": ["JWTHandler", "BasicAuthMiddleware"],
-             "internal_deps": ["config", "logging"],
-             "external_deps": ["chat-database"]
-           },
-           ...
-         ],
-         "chat-database": [
-           ...
-         ]
-       }
-    2. C4-PlantUML Component diagrams (one per container):
-       ```plantuml
-       @startuml
-       !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+    OUTPUT FORMAT (CRITICAL - consumed by Phase 4):
+    ```json
+    {
+      "SYSTEM_ID": "<from context>",
+      "COMPONENTS_BY_CONTAINER": {
+        "api-server": [
+          {
+            "id": "auth",
+            "name": "Authentication Module",
+            "parent_container": "api-server",
+            "source_path": "ingenious/auth",
+            "responsibility": "JWT and Basic auth handling",
+            "internal_deps": ["config", "logging"],
+            "cross_container_deps": [],
+            "KEY_CLASSES": [
+              {"name": "JWTHandler", "file": "ingenious/auth/jwt.py", "importance": "core"},
+              {"name": "BasicAuthMiddleware", "file": "ingenious/auth/middleware.py", "importance": "core"}
+            ]
+          }
+        ]
+      },
+      "COMPONENT_RELATIONSHIPS": [
+        {"from": "auth", "to": "config", "type": "internal", "container": "api-server"},
+        {"from": "chat-services", "to": "chat-database", "type": "cross-container"}
+      ]
+    }
+    ```
 
-       title Component diagram for API Server
-
-       Component(auth, "Auth Module", "JWT/Basic Auth handling")
-       Component(chat, "Chat Services", "Multi-agent orchestration")
-       Component(db_repo, "Database Repository", "Data access layer")
-
-       Rel(chat, auth, "Authenticates via")
-       Rel(chat, db_repo, "Persists to")
-       @enduml
-       ```
-    3. Module dependency matrix
-    4. Interface files found with paths
+    Also provide:
+    - C4-PlantUML Component diagrams (one per container)
+    - Module dependency matrix
 ```
 
-**Subagent 4: Code Level**
+**WAIT for Phase 3 to complete before proceeding to Phase 4.**
+
+Store Phase 3 output. Extract:
+- `COMPONENTS_BY_CONTAINER` with nested `KEY_CLASSES`
+- `COMPONENT_RELATIONSHIPS`
+
+---
+
+## PHASE 4: Code (Depends on Phase 3)
+
+This phase analyzes key classes. Receives component context with class hints.
+
 ```
 Tool: Task
 Parameters:
@@ -256,220 +293,342 @@ Parameters:
   prompt: |
     TASK: Map the CODE level (C4 Level 4) of this codebase.
 
-    Code diagrams show classes WITHIN components. Each code diagram will be nested
-    under its parent component folder.
+    CONTEXT FROM PHASE 3 (use these values):
+    - SYSTEM_ID: <insert from context>
+    - COMPONENTS_BY_CONTAINER: <insert full structure from Phase 3>
+
+    For each component, analyze its KEY_CLASSES in detail.
+    Do NOT document every class - only those marked in KEY_CLASSES.
 
     EXPLORATION GOALS:
-    For key components, analyze:
-    1. Key classes/modules with mapping to parent:
-       - class_name: Name of the class
-       - parent_component_id: Which component this belongs to
-       - parent_container_id: Which container (grandparent)
-       - file_path: Location in codebase
-       - purpose: One-sentence description
-       - key_methods: Important public methods
-    2. Design patterns in use (Repository, Factory, Observer, etc.)
-    3. Class relationships and hierarchies
-    4. Critical code paths (request handling, data processing)
+    For each KEY_CLASS in each component:
+    1. Read the actual class implementation
+    2. Document:
+       - Public methods and their purposes
+       - Key attributes/properties
+       - Class relationships (inheritance, composition)
+    3. Identify design patterns:
+       - Repository, Factory, Strategy, Observer, etc.
+    4. Map class hierarchies within component
 
     SEARCH STRATEGY:
-    - Grep for class definitions: "class \w+", "interface \w+"
-    - Find base classes: "class.*ABC", "class.*Base", "extends"
-    - Identify patterns: "Repository", "Factory", "Service", "Handler"
-    - Trace request flow from routes to data layer
-    - Find abstract methods and implementations
+    For each KEY_CLASS:
+    - Read the file at the specified path
+    - Grep for method definitions
+    - Analyze inheritance: "class X(Base)", "extends"
+    - Find pattern implementations
 
     OUTPUT FORMAT:
-    Return:
-    1. CODE_DIAGRAMS: Array grouped by component and container:
-       {
-         "api-server": {
-           "auth-module": {
-             "classes": [
-               {
-                 "name": "JWTHandler",
-                 "file": "ingenious/auth/jwt.py:15",
-                 "purpose": "Validates and creates JWT tokens",
-                 "methods": ["validate_token", "create_token", "decode_token"]
-               },
-               ...
-             ],
-             "patterns": ["Factory"],
-             "diagram": "```plantuml\n@startuml\nclass JWTHandler {...}\n@enduml\n```"
-           },
-           "chat-services": {
-             ...
-           }
-         }
-       }
-    2. PlantUML class diagrams for each component:
-       ```plantuml
-       @startuml
-       title Classes in Auth Module
+    ```json
+    {
+      "SYSTEM_ID": "<from context>",
+      "CODE_BY_COMPONENT": {
+        "api-server": {
+          "auth": {
+            "component_id": "auth",
+            "container_id": "api-server",
+            "classes": [
+              {
+                "name": "JWTHandler",
+                "file": "ingenious/auth/jwt.py:15",
+                "purpose": "Creates and validates JWT tokens",
+                "methods": ["validate_token", "create_token", "decode_payload"],
+                "inherits": null,
+                "pattern": "Factory"
+              }
+            ],
+            "patterns_found": ["Factory", "Middleware"],
+            "class_relationships": [
+              {"from": "BasicAuthMiddleware", "to": "JWTHandler", "type": "uses"}
+            ]
+          }
+        }
+      }
+    }
+    ```
 
-       class JWTHandler {
-         +validate_token(token)
-         +create_token(payload)
-       }
-       class BasicAuthMiddleware {
-         +authenticate(request)
-       }
-       JWTHandler <.. BasicAuthMiddleware : uses
-       @enduml
-       ```
-    3. Design patterns identified with locations
-    4. Class hierarchy summary
+    Also provide:
+    - PlantUML class diagrams for each component (only for components with KEY_CLASSES)
+    - Design pattern summary
 ```
 
-## After All Subagents Complete
+**WAIT for Phase 4 to complete before proceeding to Phase 5.**
 
-Create the hierarchical `codemap/` folder structure and write PlantUML diagrams.
+---
 
-### Step 1: Create hierarchical folder structure
+## PHASE 5: Synthesis and Cross-Validation
 
-Using the SYSTEM_ID from Subagent 1 and CONTAINERS from Subagent 2:
+This phase receives ALL outputs and checks for consistency across levels.
+
+```
+Tool: Task
+Parameters:
+  subagent_type: "Explore"
+  description: "Synthesize C4 model"
+  prompt: |
+    TASK: Validate cross-level consistency of the C4 model.
+
+    You have outputs from all 4 phases. Your job is to find inconsistencies,
+    gaps, and issues BEFORE writing files.
+
+    PHASE OUTPUTS TO VALIDATE:
+    - Phase 1 (Context): <insert full output>
+    - Phase 2 (Containers): <insert full output>
+    - Phase 3 (Components): <insert full output>
+    - Phase 4 (Code): <insert full output>
+
+    VALIDATION CHECKS:
+
+    1. ID CONSISTENCY:
+       - Every container in Phase 2 should trace to Phase 1 PRELIMINARY_CONTAINERS
+       - Every component in Phase 3 should trace to Phase 2 PRELIMINARY_COMPONENTS
+       - Every class in Phase 4 should trace to Phase 3 KEY_CLASSES
+       - Flag orphans that don't trace back
+
+    2. RELATIONSHIP CONSISTENCY:
+       - Container relationships in Phase 2 should align with external_deps
+       - Component cross-container deps should have corresponding container relationships
+       - Class relationships should be within same component
+
+    3. COVERAGE GAPS:
+       - Containers mentioned but not analyzed
+       - Components with no KEY_CLASSES (is this intentional?)
+       - External systems not referenced by any container
+
+    4. NAMING CONFLICTS:
+       - Duplicate IDs across levels
+       - IDs that would create invalid folder names
+       - Inconsistent naming (same thing called different names)
+
+    5. STRUCTURAL ISSUES:
+       - Empty containers (no components)
+       - Single-component containers (should merge?)
+       - Overly deep nesting
+
+    OUTPUT FORMAT:
+    ```json
+    {
+      "VALIDATION_PASSED": true/false,
+      "ISSUES": [
+        {
+          "severity": "error|warning|info",
+          "category": "id_consistency|relationship|coverage|naming|structure",
+          "description": "Detailed description",
+          "affected_elements": ["container:api-server", "component:auth"],
+          "suggested_fix": "How to resolve"
+        }
+      ],
+      "CORRECTIONS": {
+        "id_renames": [{"from": "old-id", "to": "new-id", "level": "container"}],
+        "orphans_to_remove": ["element-id"],
+        "missing_relationships": [{"from": "a", "to": "b", "type": "..."}]
+      },
+      "FINAL_STRUCTURE": {
+        "SYSTEM_ID": "validated-id",
+        "CONTAINERS": [...validated and corrected...],
+        "COMPONENTS_BY_CONTAINER": {...validated...},
+        "CODE_BY_COMPONENT": {...validated...}
+      }
+    }
+    ```
+
+    If VALIDATION_PASSED is false and there are error-severity issues,
+    list them clearly so they can be addressed before file generation.
+```
+
+**Review Phase 5 output:**
+- If `VALIDATION_PASSED: false` with errors, report issues to user before proceeding
+- If `VALIDATION_PASSED: true` or only warnings, proceed to file generation
+
+---
+
+## PHASE 6: File Generation
+
+Using the `FINAL_STRUCTURE` from Phase 5, create the hierarchical folder structure.
+
+### Step 1: Create folder structure
 
 ```bash
-# Create root system folder
-SYSTEM_ID="<system-id-from-subagent-1>"
+SYSTEM_ID="<from FINAL_STRUCTURE>"
+
+# Create root
 mkdir -p codemap/$SYSTEM_ID/containers
 
-# For each container, create nested structure
-for CONTAINER_ID in <container-ids-from-subagent-2>; do
+# For each container
+for CONTAINER_ID in <container IDs from FINAL_STRUCTURE>; do
   mkdir -p codemap/$SYSTEM_ID/containers/$CONTAINER_ID/components
 
   # For each component in this container
-  for COMPONENT_ID in <component-ids-for-this-container>; do
-    mkdir -p codemap/$SYSTEM_ID/containers/$CONTAINER_ID/components/$COMPONENT_ID/code
+  for COMPONENT_ID in <component IDs for this container>; do
+    # Only create code folder if component has KEY_CLASSES
+    if <component has classes>; then
+      mkdir -p codemap/$SYSTEM_ID/containers/$CONTAINER_ID/components/$COMPONENT_ID/code
+    else
+      mkdir -p codemap/$SYSTEM_ID/containers/$CONTAINER_ID/components/$COMPONENT_ID
+    fi
   done
 done
 ```
 
-Example structure:
-```bash
-mkdir -p codemap/ingenious-framework/containers
-mkdir -p codemap/ingenious-framework/containers/api-server/components/auth-module/code
-mkdir -p codemap/ingenious-framework/containers/api-server/components/chat-services/code
-mkdir -p codemap/ingenious-framework/containers/api-server/components/data-layer/code
-mkdir -p codemap/ingenious-framework/containers/chat-database/components
-mkdir -p codemap/ingenious-framework/containers/knowledge-base/components
-```
-
-### Step 2: Write PlantUML files in hierarchical locations
+### Step 2: Write files at each level
 
 **Level 1 - System Context:**
-- `codemap/<system-id>/context.puml` - System context diagram
-- `codemap/<system-id>/context.md` - Context documentation
+- `codemap/<system-id>/context.puml` - From Phase 1 diagram
+- `codemap/<system-id>/context.md` - Include navigation to containers
 
-**Level 2 - Containers (one folder per container):**
-- `codemap/<system-id>/containers/<container-id>/container.puml` - This container's diagram
-- `codemap/<system-id>/containers/<container-id>/container.md` - Container documentation
+**Level 2 - Containers:**
+For each container:
+- `codemap/<system-id>/containers/<container-id>/container.puml`
+- `codemap/<system-id>/containers/<container-id>/container.md` - Include parent link and component navigation
 
-**Level 3 - Components (nested under containers):**
+**Level 3 - Components:**
+For each component:
 - `codemap/<system-id>/containers/<container-id>/components/<component-id>/component.puml`
 - `codemap/<system-id>/containers/<container-id>/components/<component-id>/component.md`
 
-**Level 4 - Code (nested under components):**
+**Level 4 - Code (only if KEY_CLASSES exist):**
 - `codemap/<system-id>/containers/<container-id>/components/<component-id>/code/classes.puml`
 - `codemap/<system-id>/containers/<container-id>/components/<component-id>/code/classes.md`
 
-### Step 3: Write navigation links in each level
+### Step 3: Write navigation in each markdown file
 
-Each markdown file should include navigation links to:
-- Parent level (go up the hierarchy)
-- Child levels (drill down into detail)
-- Sibling levels (other items at same level)
+Each file must include:
+- **Parent link**: Link UP the hierarchy
+- **Drill Down section**: Links DOWN to children
+- **Last updated timestamp**
 
-**Example context.md:**
+Example patterns provided in the file templates section below.
+
+### Step 4: Generate PNG exports
+
+```bash
+find codemap -name "*.puml" -exec plantuml -tpng {} \;
+```
+
+### Step 5: Write README
+
+Create `codemap/README.md` with entry point link to `<system-id>/context.md`.
+
+### Step 6: Confirm output
+
+```bash
+find codemap -type f | sort
+```
+
+---
+
+## File Templates
+
+### context.md template
 ```markdown
 # System Context: [System Name]
 
 <!-- Last updated: YYYY-MM-DD -->
+<!-- Generated by: c4-map Phase 1 -->
 
-[Description]
+[System description]
 
 ## Diagram
 
 ![System Context](./context.png)
 
-## Drill Down - Containers
+## Actors
 
-Navigate to containers within this system:
-
-| Container | Technology | Description | Details |
-|-----------|------------|-------------|---------|
-| API Server | FastAPI | Handles HTTP requests | [View](./containers/api-server/container.md) |
-| Chat Database | SQLite | Stores conversations | [View](./containers/chat-database/container.md) |
+| Actor | Description |
+|-------|-------------|
+| [Name] | [Description] |
 
 ## External Systems
 
-[External system details]
+| System | Type | Description |
+|--------|------|-------------|
+| [Name] | [Type] | [Description] |
+
+## Drill Down - Containers
+
+| Container | Technology | Description | Details |
+|-----------|------------|-------------|---------|
+| API Server | FastAPI | Handles HTTP | [View](./containers/api-server/container.md) |
 ```
 
-**Example container.md:**
+### container.md template
 ```markdown
-# Container: API Server
+# Container: [Container Name]
 
 <!-- Last updated: YYYY-MM-DD -->
 
 **Parent:** [System Context](../../context.md)
 
-[Description]
+[Container description]
 
 ## Diagram
 
 ![Container](./container.png)
 
-## Drill Down - Components
+## Technology
 
-Navigate to components within this container:
+| Aspect | Value |
+|--------|-------|
+| Framework | [Framework] |
+| Runtime | [Runtime] |
+
+## Drill Down - Components
 
 | Component | Responsibility | Details |
 |-----------|----------------|---------|
-| Auth Module | JWT/Basic auth | [View](./components/auth-module/component.md) |
-| Chat Services | Multi-agent chat | [View](./components/chat-services/component.md) |
+| Auth | Authentication | [View](./components/auth/component.md) |
 
-## Communication
+## Dependencies
 
-[Inter-container protocols]
+### External Systems
+- [List external systems this container uses]
+
+### Other Containers
+- [List container dependencies]
 ```
 
-**Example component.md:**
+### component.md template
 ```markdown
-# Component: Auth Module
+# Component: [Component Name]
 
 <!-- Last updated: YYYY-MM-DD -->
 
-**Parent:** [API Server Container](../../container.md)
+**Parent:** [Container Name](../../container.md)
 **System:** [System Context](../../../../context.md)
 
-[Description]
+[Component description]
 
 ## Diagram
 
 ![Component](./component.png)
 
-## Drill Down - Code
+## Responsibility
 
-View class diagrams for this component:
+[Detailed responsibility description]
+
+## Drill Down - Code
 
 | Class | Purpose | Details |
 |-------|---------|---------|
-| JWTHandler | Token validation | [View](./code/classes.md) |
+| JWTHandler | Token handling | [View](./code/classes.md) |
 
 ## Dependencies
 
-[Internal and external dependencies]
+### Internal (same container)
+- [List internal dependencies]
+
+### Cross-Container
+- [List cross-container dependencies]
 ```
 
-**Example code/classes.md:**
+### classes.md template
 ```markdown
-# Code: Auth Module Classes
+# Code: [Component Name] Classes
 
 <!-- Last updated: YYYY-MM-DD -->
 
-**Parent:** [Auth Module Component](../component.md)
-**Container:** [API Server](../../../container.md)
+**Parent:** [Component Name](../component.md)
+**Container:** [Container Name](../../../container.md)
 **System:** [System Context](../../../../../context.md)
 
 ## Class Diagram
@@ -478,94 +637,32 @@ View class diagrams for this component:
 
 ## Classes
 
-| Class | File | Purpose |
-|-------|------|---------|
-| JWTHandler | ingenious/auth/jwt.py:15 | Token validation |
+| Class | File | Purpose | Pattern |
+|-------|------|---------|---------|
+| JWTHandler | auth/jwt.py:15 | Token validation | Factory |
 
 ## Design Patterns
 
-[Patterns identified]
+| Pattern | Implementation | Description |
+|---------|----------------|-------------|
+| Factory | JWTHandler | Creates token instances |
+
+## Key Methods
+
+### JWTHandler
+- `validate_token(token)` - Validates JWT signature and claims
+- `create_token(payload)` - Creates new JWT token
 ```
 
-### Step 4: Generate PNG exports
+---
 
-Generate PNG images from all PlantUML files:
+## Error Handling
 
-```bash
-SYSTEM_ID="<system-id>"
+If any phase fails:
+1. Report which phase failed and why
+2. Do NOT proceed to subsequent phases
+3. Suggest how to address the issue
 
-# Generate context PNG
-plantuml -tpng codemap/$SYSTEM_ID/context.puml
-
-# Generate container PNGs
-for dir in codemap/$SYSTEM_ID/containers/*/; do
-  plantuml -tpng "${dir}container.puml"
-done
-
-# Generate component PNGs
-find codemap/$SYSTEM_ID/containers -name "component.puml" -exec plantuml -tpng {} \;
-
-# Generate code PNGs
-find codemap/$SYSTEM_ID/containers -path "*/code/classes.puml" -exec plantuml -tpng {} \;
-```
-
-If PlantUML CLI is not available, note this in the output.
-
-### Step 5: Write README.md
-
-**codemap/README.md**
-```markdown
-# C4 Architecture Map
-
-<!-- Last updated: YYYY-MM-DD -->
-
-Hierarchical C4 model for [Project Name].
-
-## Structure
-
-This C4 map is organized as a navigable tree:
-
-```
-codemap/
-└── <system-name>/              <- Start here
-    ├── context.puml/md/png     <- Level 1: System Context
-    └── containers/
-        └── <container>/
-            ├── container.puml/md/png  <- Level 2: Container
-            └── components/
-                └── <component>/
-                    ├── component.puml/md/png  <- Level 3: Component
-                    └── code/
-                        └── classes.puml/md/png  <- Level 4: Code
-```
-
-## Entry Point
-
-Start exploring from the system context:
-- [System Context](./<system-id>/context.md)
-
-## Navigation
-
-- Each level links DOWN to its children (drill into detail)
-- Each level links UP to its parent (zoom out for context)
-- Use the navigation links in each .md file to explore
-
-## Rendering Diagrams
-
-```bash
-# Render all diagrams
-find codemap -name "*.puml" -exec plantuml -tpng {} \;
-```
-```
-
-### Step 6: Confirm output
-
-List the hierarchical structure:
-```bash
-find codemap -type f | sort
-```
-
-Output confirmation with:
-- Hierarchical file locations
-- Navigation entry point
-- Instructions for rendering diagrams
+If Phase 5 validation finds errors:
+1. List all error-severity issues
+2. Ask user whether to proceed with warnings or fix issues first
