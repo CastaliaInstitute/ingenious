@@ -1,0 +1,34 @@
+@startuml FastAPIServer
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+LAYOUT_WITH_LEGEND()
+
+title FastAPI REST API Server - Component View (C4 Level 3)
+
+Person(api_consumer, "API Consumer", "External client")
+
+Container_Boundary(fastapi, "FastAPI REST API Server") {
+    Component(app_factory, "App Factory", "FastAPI", "FastAgentAPI class - bootstraps application")
+    Component(routing, "Route Manager", "FastAPI Router", "Registers API routes")
+    Component(middleware, "Middleware Stack", "Starlette", "Security headers, context, auth")
+    Component(exception_handlers, "Exception Handlers", "FastAPI", "Error response formatting")
+    Component(dependencies, "DI Container", "FastAPI Depends", "Service instantiation")
+}
+
+System_Ext(chat_service, "Chat Service", "Multi-agent orchestration")
+System_Ext(chat_db, "Chat History DB", "Conversation persistence")
+System_Ext(auth, "Auth System", "Token management")
+System_Ext(config, "Configuration", "Settings management")
+System_Ext(logging, "Logging", "Structured logging")
+
+Rel(api_consumer, app_factory, "HTTP requests", "REST/JSON")
+Rel(app_factory, routing, "Delegates route registration")
+Rel(app_factory, middleware, "Configures middleware")
+Rel(app_factory, exception_handlers, "Registers handlers")
+Rel(dependencies, chat_service, "Injects")
+Rel(dependencies, chat_db, "Injects")
+Rel(middleware, auth, "Validates tokens")
+Rel(app_factory, config, "Loads settings")
+Rel(middleware, logging, "Logs requests")
+
+@enduml

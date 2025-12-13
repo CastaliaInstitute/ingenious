@@ -1,0 +1,37 @@
+@startuml ChatHistoryDB
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+LAYOUT_WITH_LEGEND()
+
+title Chat History Database - Component View (C4 Level 3)
+
+System_Ext(chat_svc, "Chat Service", "Orchestration")
+System_Ext(api, "FastAPI Server", "HTTP API")
+
+Container_Boundary(db, "Chat History Database") {
+    Component(interface, "Repository Interface", "Python ABC", "IChatHistoryRepository")
+    Component(factory, "Repository Factory", "Python", "Dynamic backend selection")
+    Component(base_sql, "Base SQL Repository", "Python", "Template method")
+    Component(conn_pool, "Connection Pool", "Python", "Thread-safe pooling")
+    Component(query, "Query Builders", "Python", "SQL dialect abstraction")
+    Component(sqlite, "SQLite Impl", "sqlite3", "Local development")
+    Component(azuresql, "Azure SQL Impl", "pyodbc", "Cloud production")
+    Component(cosmos, "Cosmos DB Impl", "azure-cosmos", "NoSQL option")
+}
+
+System_Ext(azure_sql_ext, "Azure SQL Database", "Cloud database")
+System_Ext(cosmos_ext, "Azure Cosmos DB", "NoSQL database")
+
+Rel(api, factory, "Creates repository")
+Rel(chat_svc, interface, "Reads/writes messages")
+Rel(factory, sqlite, "Instantiates", "db_type=sqlite")
+Rel(factory, azuresql, "Instantiates", "db_type=azuresql")
+Rel(factory, cosmos, "Instantiates", "db_type=cosmos")
+Rel(sqlite, base_sql, "Extends")
+Rel(azuresql, base_sql, "Extends")
+Rel(base_sql, query, "Uses")
+Rel(base_sql, conn_pool, "Uses")
+Rel(azuresql, azure_sql_ext, "SQL queries")
+Rel(cosmos, cosmos_ext, "NoSQL queries")
+
+@enduml

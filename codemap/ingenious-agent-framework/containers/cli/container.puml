@@ -1,0 +1,23 @@
+@startuml CLI
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+LAYOUT_WITH_LEGEND()
+
+title CLI Application - Component View (C4 Level 3)
+
+Person(admin, "System Administrator", "Runs CLI commands")
+
+Container_Boundary(cli, "CLI Application") {
+    Component(cli_main, "CLI Main", "Typer", "Application entry point with command routing")
+    Component(command_modules, "Command Modules", "Python", "Init, Serve, Validate, Test commands")
+}
+
+System_Ext(config, "Configuration", "Settings")
+System_Ext(fastapi, "FastAPI Server", "HTTP API")
+
+Rel(admin, cli_main, "ingen commands", "Terminal")
+Rel(cli_main, command_modules, "Routes commands")
+Rel(command_modules, fastapi, "Starts server")
+Rel(command_modules, config, "Validates/creates settings")
+
+@enduml

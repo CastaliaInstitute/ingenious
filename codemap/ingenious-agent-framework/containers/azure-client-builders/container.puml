@@ -1,0 +1,49 @@
+@startuml AzureClientBuilders
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+LAYOUT_WITH_LEGEND()
+
+title Azure Service Client Factory - Component View (C4 Level 3)
+
+System_Ext(chat_svc, "Chat Service", "Uses OpenAI")
+System_Ext(chat_db, "Chat History DB", "Uses SQL/Cosmos")
+System_Ext(vector, "Vector Search", "Uses Search")
+System_Ext(files, "File Storage", "Uses Blob")
+
+Container_Boundary(builders, "Azure Service Client Factory") {
+    Component(factory, "Factory", "Python", "Unified factory facade")
+    Component(builder_base, "Builder Base", "Python ABC", "Base with auth logic")
+    Component(openai_builders, "OpenAI Builders", "Python", "Sync/Async OpenAI clients")
+    Component(search_builder, "Search Builder", "Python", "SearchClient builder")
+    Component(database_builders, "Database Builders", "Python", "SQL/Cosmos clients")
+    Component(blob_builders, "Blob Builders", "Python", "BlobServiceClient builder")
+}
+
+System_Ext(azure_openai, "Azure OpenAI", "LLM service")
+System_Ext(azure_search, "Azure Cognitive Search", "Search service")
+System_Ext(azure_sql, "Azure SQL Database", "Database")
+System_Ext(azure_cosmos, "Azure Cosmos DB", "NoSQL")
+System_Ext(azure_blob, "Azure Blob Storage", "Files")
+
+Rel(chat_svc, factory, "Creates OpenAI client")
+Rel(chat_db, factory, "Creates SQL/Cosmos client")
+Rel(vector, factory, "Creates Search client")
+Rel(files, factory, "Creates Blob client")
+
+Rel(factory, openai_builders, "Delegates")
+Rel(factory, search_builder, "Delegates")
+Rel(factory, database_builders, "Delegates")
+Rel(factory, blob_builders, "Delegates")
+
+Rel(openai_builders, builder_base, "Extends")
+Rel(search_builder, builder_base, "Extends")
+Rel(database_builders, builder_base, "Extends")
+Rel(blob_builders, builder_base, "Extends")
+
+Rel(openai_builders, azure_openai, "Creates client")
+Rel(search_builder, azure_search, "Creates client")
+Rel(database_builders, azure_sql, "Creates connection")
+Rel(database_builders, azure_cosmos, "Creates client")
+Rel(blob_builders, azure_blob, "Creates client")
+
+@enduml

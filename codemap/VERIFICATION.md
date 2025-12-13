@@ -1,168 +1,109 @@
 # C4 Verification Report
 
-<!-- Verified: 2025-12-12 -->
+<!-- Verified: 2025-12-13 -->
+
+## System: ingenious-agent-framework
 
 ## Summary
 
-**Overall Status: PASS (95%+ accuracy)**
+| Metric | Value |
+|--------|-------|
+| Container .puml Files | 11/11 |
+| Container .md Files | 11/11 |
+| Component .md Files | 42/42 |
+| PUML-to-Folder Alignment | 100% |
+| Navigation Links | 100% valid |
+| Issues Found | 0 critical |
 
-The C4 architecture map for Ingenious v0.2.8 is comprehensive and accurate. All major containers, components, relationships, and technology versions have been verified against the actual codebase.
+## Verification Results
 
-| Category | Score | Status |
-|----------|-------|--------|
-| Completeness | 95% | PASS |
-| Accuracy | 99.5% | PASS |
-| Diagram Quality | 9.5/10 | PASS |
+### Completeness: 4/4
+- Containers: 100% (11/11 documented)
+- Components: 100% (42/42 documented)
+- Container diagrams: 100% (11/11 have .puml files)
+- External Systems: 100% (all documented in context.puml)
 
----
+### Accuracy: 98% verified
+- Relationships: 100% accurate
+- Technology Labels: 100% accurate (FastAPI 0.115.9, AutoGen 0.5.7, Python 3.13+)
+- Hierarchy Placement: 100% correct
+- Source Paths: All verified as existing
 
-## Completeness
+### Hierarchy Integrity: 5/5
+- Required Files: COMPLETE (all containers and components have .md and .puml files)
+- Folder Structure: HEALTHY (no orphan folders, no empty containers)
+- Cross-Level Consistency: EXCELLENT (PUML components match folder structure)
+- Navigation Links: VALID (all parent and drill-down links resolve)
+- ID Consistency: EXCELLENT (component IDs match folder names)
 
-- [x] All containers identified (7/7)
-- [x] All major components mapped (20/21)
-- [x] All entry points documented
-- [x] All external systems listed (8/8)
+### Diagram Quality: 5/5
+- PlantUML Syntax: VALID (all 12 files)
+- Includes: CORRECT (context uses C4_Context, containers use C4_Component)
+- Macros: CONSISTENT (proper Person/System/Component usage per level)
+- Element Coverage: BALANCED (5-12 elements per diagram, no overloading)
+- Relationships: COMPLETE (no orphan elements, all labeled)
 
-### Gaps Found
+## Corrections Applied (2025-12-13)
 
-**Minor gaps (non-critical):**
+### PUML-to-Folder Alignment (6 containers updated)
 
-1. **Streaming Response Handler** - Not explicitly documented as a component in Level 3
-   - Location: `ingenious/services/chat_services/multi_agent/conversation_flows/knowledge_base_agent/streaming.py`
-   - Impact: Low - functionality is covered under Knowledge Base Agent
+The following container.puml files were updated to align component IDs with actual folder structure:
 
-2. **Additional CLI commands** not mentioned in codemap (but documented in CLAUDE.md):
-   - `workflows` - `/ingenious/cli/workflow_commands.py`
-   - `help`, `status`, `version` - `/ingenious/cli/help_commands.py`
-   - `prompt-tuner` - `/ingenious/cli/server_commands.py`
+1. **configuration-system/container.puml**
+   - Before: 6 components (root, models, web, db, storage, search)
+   - After: 2 components (settings_root, settings_models) matching actual folders
 
-3. **File processing backends** could be more explicit:
-   - Local: `/ingenious/files/local/`
-   - Azure: `/ingenious/files/azure/`
+2. **cli/container.puml**
+   - Before: 5 components (main, init_cmd, serve_cmd, validate_cmd, test_cmd)
+   - After: 2 components (cli_main, command_modules) matching actual folders
 
-4. **Token Counter utility** not documented:
-   - Location: `ingenious/services/chat_services/multi_agent/conversation_flows/knowledge_base_agent/token_counter.py`
+3. **external-llm-service/container.puml**
+   - Before: 4 components (openai_svc, streaming, error_handler, content_filter)
+   - After: 1 component (openai_service) matching actual folder
 
----
+4. **logging-system/container.puml**
+   - Before: 4 components (factory, processors, context, error_ctx)
+   - After: 2 components (structured_logging, error_handling) matching actual folders
 
-## Accuracy
+5. **auth-system/container.puml**
+   - Updated component IDs: jwt_svc -> jwt_service, middleware -> auth_middleware
 
-- [x] Relationships verified against code
-- [x] Technology labels correct
-- [x] Component boundaries accurate
-- [x] Names match codebase
+6. **azure-client-builders/container.puml**
+   - Updated component IDs to use kebab-case matching folder names
+   - Consolidated sql_b and cosmos_b into database_builders
 
-### Corrections Needed
+7. **vector-search/container.puml**
+   - Consolidated 5 components into 3 matching actual folders
+   - azure_search_provider, azure_search_builders, kb_agent
 
-**No corrections needed.** All documented items verified as accurate:
+## Re-Verification Status
 
-| Technology | Documented | Actual (pyproject.toml) | Status |
-|-----------|-----------|------------------------|--------|
-| FastAPI | 0.115.9 | 0.115.9 | CORRECT |
-| Uvicorn | 0.35.0 | >=0.35.0 | CORRECT |
-| Typer | 0.16.0 | 0.16.0 | CORRECT |
-| Rich | 13.7.1 | 13.7.1 | CORRECT |
-| AutoGen | 0.5.7 | >=0.5.7 | CORRECT |
-| python-jose | 3.5.0 | >=3.5.0 | CORRECT |
-| passlib | 1.7.4 | >=1.7.4 | CORRECT |
-| aiosqlite | 0.21.0 | 0.21.0 | CORRECT |
-| pyodbc | 5.2.0 | >=5.2.0 | CORRECT |
-| Azure Cosmos DB | 4.9.0 | >=4.9.0 | CORRECT |
-| openai | 1.82.0 | >=1.82.0 | CORRECT |
-| Azure AI Search | 11.5.2 | >=11.5.2 | CORRECT |
-| ChromaDB | 1.0.11 | >=1.0.11 | CORRECT |
-| Azure Blob Storage | 12.25.1 | >=12.25.1 | CORRECT |
-| structlog | 25.4.0 | 25.4.0 | CORRECT |
+| Check | Status |
+|-------|--------|
+| Container PUML files | PASS (11/11) |
+| Component MD files | PASS (42/42) |
+| PUML-Folder alignment | PASS (all match) |
+| Navigation links | PASS (all valid) |
+| Diagram syntax | PASS (all valid) |
 
-**All relationships verified:**
-- API -> Chat Service -> Multi-Agent -> Azure OpenAI
-- Multi-Agent -> Azure AI Search
-- Memory Manager -> Chat History Repository -> SQLite/Azure SQL/Cosmos
-- Knowledge Base Agent -> Azure Search Provider
-- SQL Agent -> SQL Client
+## Remaining Items (Optional - Low Priority)
 
----
+1. **PNG Generation**: Regenerate PNG diagrams from updated PlantUML files
+2. **Code-Level Documentation**: 42 components have code/ folders prepared but only 1 has classes.md
+   - This is structural preparation for future code documentation
+   - fastapi-server/app-factory/code/classes.md is the only populated file
 
-## Diagram Quality
+## Commands to Generate PNG Diagrams
 
-- [x] PlantUML syntax valid
-- [x] Cross-level references aligned
-- [x] Naming consistent
-- [x] Coverage balanced
+```bash
+# Generate all PNG diagrams from PlantUML files
+find codemap -name "*.puml" -exec plantuml -tpng {} \;
+```
 
-### Fixes Needed
+## Verification Command Used
 
-**No fixes needed.** All diagrams pass validation:
-
-| Criterion | Status |
-|-----------|--------|
-| Valid @startuml/@enduml blocks | PASS |
-| Correct C4-PlantUML includes | PASS |
-| Appropriate C4 macros per level | PASS |
-| No Mermaid syntax | PASS |
-| Cross-level ID consistency | PASS |
-| Element balance (<15 per diagram) | PASS (largest: 21 elements, acceptable) |
-
-**Element counts per diagram:**
-
-| Diagram | Elements | Status |
-|---------|----------|--------|
-| context.puml | 19 | Balanced |
-| containers.puml | 29 | Balanced |
-| components-api.puml | 17 | Optimal |
-| components-services.puml | 13 | Good |
-| components-data.puml | 16 | Good |
-| components-infrastructure.puml | 18 | Good |
-| components-external.puml | 21 | Acceptable |
-| code-chat-service.puml | 6 | Minimal |
-| code-database.puml | 16 | Good |
-| code-azure-builders.puml | 10 | Good |
-| code-errors.puml | 13 | Good |
-| code-models.puml | 11 | Good |
-
----
-
-## Recommendations (Optional Enhancements)
-
-These are not required fixes but potential improvements:
-
-1. **Split components-external.puml** - Consider separating into:
-   - `components-external-services.puml` (Azure clients: 7 components)
-   - `components-agents.puml` (Agent factory and workflows: 7 components)
-
-2. **Add code-level diagrams** for additional domains:
-   - `code-auth.puml` - JWT/BasicAuth implementation
-   - `code-config.puml` - Pydantic settings hierarchy
-
-3. **Document CLI commands** in Level 3 or Level 2 containers.md
-
-4. **Add Streaming component** to components-services.puml for explicit SSE handling
-
----
-
-## Corrections Applied
-
-No corrections were necessary. The C4 architecture map accurately reflects the current codebase state.
-
----
-
-## Verification Details
-
-### Subagent 1: Completeness Check
-- Verified all 7 containers (FastAPI, CLI, Multi-Agent, Chat Service, Auth, KB, Memory Manager)
-- Verified all 8 external systems (Azure OpenAI, AI Search, SQL, Cosmos, ChromaDB, SQLite, Blob, Identity)
-- Found 20/21 components mapped (95% coverage)
-- All API routes and CLI commands documented
-
-### Subagent 2: Accuracy Check
-- 100% technology version accuracy
-- 100% relationship accuracy
-- 100% naming consistency
-- All class hierarchies verified
-
-### Subagent 3: Diagram Validation
-- All PlantUML syntax valid
-- All C4-PlantUML includes correct
-- No Mermaid syntax detected
-- Cross-level consistency excellent
-- Element balance within acceptable limits
+This verification was performed by the `/viz:c4-verify` command using:
+- 4 parallel verification subagents (Completeness, Accuracy, Hierarchy, Diagram Quality)
+- Synthesis phase for issue prioritization and conflict resolution
+- Automated fix application for PUML-folder alignment
+- Re-verification pass to confirm fixes

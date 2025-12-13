@@ -1,0 +1,29 @@
+@startuml VectorSearch
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+LAYOUT_WITH_LEGEND()
+
+title Vector Search / Knowledge Base - Component View (C4 Level 3)
+
+System_Ext(chat, "Chat Service", "Knowledge retrieval")
+
+Container_Boundary(vector, "Vector Search / Knowledge Base") {
+    Component(azure_search_provider, "Azure Search Provider", "Python", "Search pipeline facade with backend routing")
+    Component(azure_search_builders, "Azure Search Builders", "Python", "Index/query configuration")
+    Component(kb_agent, "KB Agent", "Python", "Knowledge base retrieval flow")
+}
+
+System_Ext(azure_search, "Azure Cognitive Search", "Cloud search")
+System_Ext(chromadb_ext, "ChromaDB", "Local database")
+System_Ext(config, "Configuration", "KB_POLICY settings")
+System_Ext(client_builders, "Azure Client Builders", "Client creation")
+
+Rel(chat, kb_agent, "Queries knowledge base")
+Rel(kb_agent, azure_search_provider, "Searches documents")
+Rel(azure_search_provider, azure_search_builders, "Configures search")
+Rel(azure_search_provider, azure_search, "Vector search", "HTTPS")
+Rel(azure_search_provider, chromadb_ext, "Vector search", "In-process")
+Rel(azure_search_provider, config, "Gets KB_POLICY")
+Rel(azure_search_provider, client_builders, "Gets client")
+
+@enduml

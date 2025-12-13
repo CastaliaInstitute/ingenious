@@ -1,0 +1,37 @@
+@startuml ChatService
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+LAYOUT_WITH_LEGEND()
+
+title Chat Service / Multi-Agent Orchestrator - Component View (C4 Level 3)
+
+System_Ext(api, "FastAPI Server", "HTTP API")
+
+Container_Boundary(chat, "Chat Service / Multi-Agent Orchestrator") {
+    Component(facade, "Chat Service Facade", "Python", "IChatService interface and dynamic loading")
+    Component(multi_agent, "MultiAgent Service", "AutoGen", "Agent orchestration engine")
+    Component(flows, "Conversation Flows", "Python", "Classification, KB, SQL manipulation")
+    Component(agents, "Agent Definitions", "AutoGen", "Agent configurations")
+    Component(kb_backends, "KB Backends", "Python", "Azure/Chroma search")
+}
+
+System_Ext(chat_db, "Chat History DB", "Persistence")
+System_Ext(vector, "Vector Search", "Semantic search")
+System_Ext(llm, "External LLM", "Completions")
+System_Ext(files, "File Storage", "File operations")
+System_Ext(autogen, "AutoGen Framework", "Agent orchestration")
+System_Ext(azure_openai, "Azure OpenAI", "LLM service")
+
+Rel(api, facade, "Delegates chat requests")
+Rel(facade, multi_agent, "Routes to implementation")
+Rel(multi_agent, flows, "Executes conversation flows")
+Rel(flows, agents, "Uses agent definitions")
+Rel(flows, kb_backends, "Queries knowledge base")
+Rel(multi_agent, chat_db, "Persists messages")
+Rel(multi_agent, files, "Stores artifacts")
+Rel(kb_backends, vector, "Vector search")
+Rel(agents, llm, "LLM calls")
+Rel(multi_agent, autogen, "Orchestrates")
+Rel(llm, azure_openai, "API calls")
+
+@enduml

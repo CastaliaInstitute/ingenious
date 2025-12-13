@@ -1,0 +1,25 @@
+@startuml ExternalLLMService
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+LAYOUT_WITH_LEGEND()
+
+title External LLM Services Adapter - Component View (C4 Level 3)
+
+System_Ext(chat, "Chat Service", "Agent orchestration")
+
+Container_Boundary(llm, "External LLM Services Adapter") {
+    Component(openai_service, "OpenAI Service", "Python", "LLM API wrapper with streaming, error handling, content filtering")
+}
+
+System_Ext(azure_openai, "Azure OpenAI", "LLM service")
+System_Ext(openai_api, "OpenAI API", "Alternative LLM")
+System_Ext(builders, "Azure Client Builders", "Client creation")
+System_Ext(logging, "Logging", "API call logging")
+
+Rel(chat, openai_service, "Requests completions")
+Rel(openai_service, builders, "Gets client")
+Rel(openai_service, azure_openai, "API calls", "HTTPS")
+Rel(openai_service, openai_api, "API calls", "HTTPS")
+Rel(openai_service, logging, "Logs calls")
+
+@enduml

@@ -1,0 +1,24 @@
+@startuml LoggingSystem
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+LAYOUT_WITH_LEGEND()
+
+title Structured Logging - Component View (C4 Level 3)
+
+System_Ext(api, "FastAPI Server", "Request logging")
+System_Ext(chat, "Chat Service", "Event logging")
+System_Ext(auth, "Auth System", "Auth logging")
+
+Container_Boundary(logging, "Structured Logging") {
+    Component(structured_logging, "Structured Logging", "structlog", "Logger factory, processors, correlation IDs")
+    Component(error_handling, "Error Handling", "Python", "Error context managers and logging")
+}
+
+Rel(api, structured_logging, "Gets logger")
+Rel(chat, structured_logging, "Gets logger")
+Rel(auth, structured_logging, "Gets logger")
+Rel(api, error_handling, "Wraps operations")
+Rel(chat, error_handling, "Wraps operations")
+Rel(error_handling, structured_logging, "Logs errors")
+
+@enduml
