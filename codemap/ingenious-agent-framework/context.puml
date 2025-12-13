@@ -1,0 +1,34 @@
+@startuml SystemContext
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+
+LAYOUT_WITH_LEGEND()
+
+title Ingenious Agent Framework - System Context (C4 Level 1)
+
+Person(api_consumer, "API Consumer", "External systems or clients consuming the REST API for chat interactions")
+Person(auth_user, "Authenticated User", "User accessing the API with JWT or basic auth credentials")
+Person(admin, "System Administrator", "Configures system via environment variables and CLI commands")
+
+System(ingenious, "Ingenious Agent Framework", "Enterprise-grade Python library and REST API for multi-agent AI conversation systems using AutoGen")
+
+System_Ext(azure_openai, "Azure OpenAI", "AI language model service for completions")
+System_Ext(azure_search, "Azure Cognitive Search", "Enterprise vector search service")
+System_Ext(azure_sql, "Azure SQL Database", "Cloud relational database")
+System_Ext(azure_cosmos, "Azure Cosmos DB", "Cloud NoSQL document database")
+System_Ext(azure_blob, "Azure Blob Storage", "Cloud file storage")
+System_Ext(chromadb, "ChromaDB", "Local vector database for development")
+System_Ext(autogen, "Microsoft AutoGen", "Multi-agent orchestration framework")
+
+Rel(api_consumer, ingenious, "Consumes API", "HTTP/REST")
+Rel(auth_user, ingenious, "Authenticates and uses", "JWT/Basic Auth")
+Rel(admin, ingenious, "Configures and manages", "CLI/Env Vars")
+
+Rel(ingenious, azure_openai, "Generates completions", "HTTPS")
+Rel(ingenious, azure_search, "Queries documents", "HTTPS")
+Rel(ingenious, azure_sql, "Persists chat history", "TDS")
+Rel(ingenious, azure_cosmos, "Persists chat history", "HTTPS")
+Rel(ingenious, azure_blob, "Stores files", "HTTPS")
+Rel(ingenious, chromadb, "Queries vectors", "In-process")
+Rel(ingenious, autogen, "Orchestrates agents", "In-process")
+
+@enduml

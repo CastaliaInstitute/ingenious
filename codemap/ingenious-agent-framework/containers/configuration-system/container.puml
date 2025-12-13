@@ -1,0 +1,22 @@
+@startuml ConfigurationSystem
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+LAYOUT_WITH_LEGEND()
+
+title Configuration Management - Component View (C4 Level 3)
+
+System_Ext(api, "FastAPI Server", "Consumes settings")
+System_Ext(cli, "CLI", "Validates settings")
+System_Ext(chat, "Chat Service", "Model settings")
+
+Container_Boundary(config, "Configuration Management") {
+    Component(settings_root, "Settings Root", "Pydantic Settings", "Root IngeniousSettings class with environment loading")
+    Component(settings_models, "Settings Models", "Pydantic", "Individual configuration models (Model, Web, Database, Storage, Search)")
+}
+
+Rel(api, settings_root, "Loads settings")
+Rel(cli, settings_root, "Validates settings")
+Rel(chat, settings_models, "Gets model config")
+Rel(settings_root, settings_models, "Composes")
+
+@enduml

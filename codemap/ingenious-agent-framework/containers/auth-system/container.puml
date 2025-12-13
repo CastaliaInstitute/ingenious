@@ -1,0 +1,23 @@
+@startuml AuthSystem
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+LAYOUT_WITH_LEGEND()
+
+title Authentication & Authorization - Component View (C4 Level 3)
+
+System_Ext(api, "FastAPI Server", "HTTP API")
+
+Container_Boundary(auth, "Authentication & Authorization") {
+    Component(jwt_service, "JWT Service", "PyJWT", "Token creation and verification")
+    Component(auth_middleware, "Auth Middleware", "Starlette", "Global authentication with JWT and Basic Auth")
+}
+
+System_Ext(config, "Configuration", "Settings")
+System_Ext(logging, "Logging", "Structured logging")
+
+Rel(api, auth_middleware, "All requests pass through")
+Rel(auth_middleware, jwt_service, "Validates JWT tokens")
+Rel(jwt_service, config, "JWT secret, expiration")
+Rel(auth_middleware, logging, "Auth events")
+
+@enduml

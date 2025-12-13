@@ -1,0 +1,31 @@
+@startuml FileStorage
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+LAYOUT_WITH_LEGEND()
+
+title File Storage Service - Component View (C4 Level 3)
+
+System_Ext(chat, "Chat Service", "Stores artifacts")
+
+Container_Boundary(files, "File Storage Service") {
+    Component(interface, "IFileStorage", "Python ABC", "Abstract interface")
+    Component(facade, "FileStorageFacade", "Python", "Dynamic backend selection")
+    Component(azure, "AzureBlobStorage", "azure-storage-blob", "Azure Blob implementation")
+    Component(local, "LocalFileStorage", "Python", "Local filesystem implementation")
+}
+
+System_Ext(azure_blob, "Azure Blob Storage", "Cloud storage")
+System_Ext(config, "Configuration", "Storage settings")
+System_Ext(builders, "Azure Client Builders", "Blob client")
+
+Rel(chat, facade, "File operations")
+Rel(facade, interface, "Implements")
+Rel(facade, azure, "Delegates", "cloud mode")
+Rel(facade, local, "Delegates", "local mode")
+Rel(azure, interface, "Implements")
+Rel(local, interface, "Implements")
+Rel(azure, builders, "Gets client")
+Rel(azure, azure_blob, "Stores files", "HTTPS")
+Rel(facade, config, "Gets settings")
+
+@enduml
