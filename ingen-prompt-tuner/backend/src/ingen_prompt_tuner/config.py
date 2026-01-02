@@ -15,8 +15,15 @@ Ingenious Configuration:
 """
 
 import os
+from pathlib import Path
 
+from dotenv import load_dotenv
 from pydantic_settings import BaseSettings
+
+# Load .env file from the backend directory before any os.getenv() calls
+# This must happen before other modules (like traces) are imported
+_backend_dir = Path(__file__).parent.parent.parent
+load_dotenv(_backend_dir / ".env")
 
 
 class Settings(BaseSettings):
