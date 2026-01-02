@@ -22,6 +22,6 @@ export const useUIStore = defineStore('ui', () => {
     activeTab,
     expandedAgent,
     setActiveTab,
-    toggleAgent
+    toggleAgent,
   }
 })

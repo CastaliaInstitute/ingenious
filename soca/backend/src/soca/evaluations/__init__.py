@@ -38,7 +38,7 @@ async def evaluate_submission(
 SUBMISSION:
 Title: {submission.name}
 Content:
-{submission.extracted_text[:8000] if submission.extracted_text else 'No content available'}
+{submission.extracted_text[:8000] if submission.extracted_text else "No content available"}
 
 CRITERIA (format: criterionId: Name (weight%, max score): Description):
 {criteria_text}
@@ -74,7 +74,7 @@ For each criterion, provide a score and narrative. Use the exact criterionId val
                     for cr in evaluation_data.get("criterionResults", []):
                         criterion_results.append(
                             CriterionResult(
-                                criterionId=cr.get("criterionId", ""),
+                                criterion_id=cr.get("criterionId", ""),
                                 score=float(cr.get("score", 0)),
                                 narrative=cr.get("narrative", ""),
                             )
@@ -85,7 +85,7 @@ For each criterion, provide a score and narrative. Use the exact criterionId val
                         for criterion in criteria_set.criteria:
                             criterion_results.append(
                                 CriterionResult(
-                                    criterionId=criterion.id,
+                                    criterion_id=criterion.id,
                                     score=criterion.max_score / 2,
                                     narrative="Evaluation pending - AI response incomplete.",
                                 )
@@ -94,11 +94,11 @@ For each criterion, provide a score and narrative. Use the exact criterionId val
                     logger.info(f"AI evaluation successful for submission {submission.id}")
 
                     return EvaluationResult(
-                        submissionId=submission.id,
-                        submissionName=submission.name,
-                        submissionAuthor=None,
-                        overallScore=float(evaluation_data.get("overallScore", 0)),
-                        criterionResults=criterion_results,
+                        submission_id=submission.id,
+                        submission_name=submission.name,
+                        submission_author=None,
+                        overall_score=float(evaluation_data.get("overallScore", 0)),
+                        criterion_results=criterion_results,
                         summary=evaluation_data.get("summary", "Evaluation completed."),
                     )
 
@@ -119,18 +119,18 @@ For each criterion, provide a score and narrative. Use the exact criterionId val
     for criterion in criteria_set.criteria:
         criterion_results.append(
             CriterionResult(
-                criterionId=criterion.id,
+                criterion_id=criterion.id,
                 score=0,
                 narrative="AI evaluation unavailable - please check Prompt Tuner configuration.",
             )
         )
 
     return EvaluationResult(
-        submissionId=submission.id,
-        submissionName=submission.name,
-        submissionAuthor=None,
-        overallScore=0,
-        criterionResults=criterion_results,
+        submission_id=submission.id,
+        submission_name=submission.name,
+        submission_author=None,
+        overall_score=0,
+        criterion_results=criterion_results,
         summary="AI evaluation failed. Please ensure Prompt Tuner backend is running and Azure OpenAI is configured.",
     )
 

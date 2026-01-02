@@ -1,9 +1,9 @@
 <script setup lang="ts">
-defineProps<{
-  variant?: 'primary' | 'secondary'
-  size?: 'sm' | 'md' | 'lg'
-  disabled?: boolean
-}>()
+  defineProps<{
+    variant?: 'primary' | 'secondary'
+    size?: 'sm' | 'md' | 'lg'
+    disabled?: boolean
+  }>()
 </script>
 
 <template>
@@ -17,8 +17,8 @@ defineProps<{
         'px-2 py-1 text-xs': size === 'sm',
         'px-4 py-2 text-sm': size === 'md' || !size,
         'px-6 py-3 text-base': size === 'lg',
-        'opacity-50 cursor-not-allowed': disabled
-      }
+        'opacity-50 cursor-not-allowed': disabled,
+      },
     ]"
   >
     <slot />

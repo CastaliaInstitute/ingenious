@@ -5,9 +5,24 @@ import { promptsService } from '@/services/prompts.service'
 
 export const useRevisionsStore = defineStore('revisions', () => {
   const revisions = ref<Revision[]>([
-    { id: 'quickstart-1', name: 'quickstart-1', createdAt: new Date().toISOString(), promptCount: 4 },
-    { id: 'magical-crystal-51211a8b', name: 'magical-crystal-51211a8b', createdAt: new Date().toISOString(), promptCount: 4 },
-    { id: 'production-v2', name: 'production-v2', createdAt: new Date().toISOString(), promptCount: 4 },
+    {
+      id: 'quickstart-1',
+      name: 'quickstart-1',
+      createdAt: new Date().toISOString(),
+      promptCount: 4,
+    },
+    {
+      id: 'magical-crystal-51211a8b',
+      name: 'magical-crystal-51211a8b',
+      createdAt: new Date().toISOString(),
+      promptCount: 4,
+    },
+    {
+      id: 'production-v2',
+      name: 'production-v2',
+      createdAt: new Date().toISOString(),
+      promptCount: 4,
+    },
   ])
   const activeRevision = ref<string>('quickstart-1')
   const prompts = ref<Prompt[]>([])
@@ -36,7 +51,7 @@ export const useRevisionsStore = defineStore('revisions', () => {
       id: name,
       name,
       createdAt: new Date().toISOString(),
-      promptCount: prompts.value.length
+      promptCount: prompts.value.length,
     }
     revisions.value.unshift(revision)
     return revision
@@ -50,6 +65,6 @@ export const useRevisionsStore = defineStore('revisions', () => {
     fetchRevisions,
     fetchPrompts,
     setActiveRevision,
-    createRevision
+    createRevision,
   }
 })

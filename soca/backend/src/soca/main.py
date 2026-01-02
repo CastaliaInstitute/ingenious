@@ -61,7 +61,8 @@ async def get_me(current_user: User = Depends(get_current_user)) -> dict[str, An
 @app.get("/api/submissions", response_model=list[Submission])
 async def list_submissions(current_user: User = Depends(get_current_user)) -> list[Submission]:
     """List all submissions."""
-    return await db.list_submissions()
+    submissions: list[Submission] = await db.list_submissions()
+    return submissions
 
 
 @app.post("/api/submissions", response_model=Submission)
@@ -90,12 +91,12 @@ async def create_submission(
         id=str(uuid.uuid4()),
         name=name or file.filename or "Untitled",
         description=description,
-        fileUrl=file_url,
-        fileName=file.filename or "file",
-        fileType=file.content_type or "application/octet-stream",
-        fileSize=file_size,
-        extractedText=extracted_text[:10000],  # Limit text size
-        uploadedAt=datetime.utcnow().isoformat() + "Z",
+        file_url=file_url,
+        file_name=file.filename or "file",
+        file_type=file.content_type or "application/octet-stream",
+        file_size=file_size,
+        extracted_text=extracted_text[:10000],  # Limit text size
+        uploaded_at=datetime.utcnow().isoformat() + "Z",
     )
 
     return await db.create_submission(submission)
@@ -128,13 +129,15 @@ async def update_submission(
     updated = Submission(
         id=existing.id,
         name=request.name if request.name is not None else existing.name,
-        description=request.description if request.description is not None else existing.description,
-        fileUrl=existing.file_url,
-        fileName=existing.file_name,
-        fileType=existing.file_type,
-        fileSize=existing.file_size,
-        extractedText=existing.extracted_text,
-        uploadedAt=existing.uploaded_at,
+        description=request.description
+        if request.description is not None
+        else existing.description,
+        file_url=existing.file_url,
+        file_name=existing.file_name,
+        file_type=existing.file_type,
+        file_size=existing.file_size,
+        extracted_text=existing.extracted_text,
+        uploaded_at=existing.uploaded_at,
     )
     return await db.update_submission(updated)
 
@@ -143,7 +146,8 @@ async def update_submission(
 @app.get("/api/criteria-sets", response_model=list[CriteriaSet])
 async def list_criteria_sets(current_user: User = Depends(get_current_user)) -> list[CriteriaSet]:
     """List all criteria sets."""
-    return await db.list_criteria_sets()
+    criteria_sets: list[CriteriaSet] = await db.list_criteria_sets()
+    return criteria_sets
 
 
 @app.get("/api/criteria-templates", response_model=list[CriteriaSet])
@@ -151,7 +155,8 @@ async def list_criteria_templates(
     current_user: User = Depends(get_current_user),
 ) -> list[CriteriaSet]:
     """List available criteria templates."""
-    return get_templates()
+    templates: list[CriteriaSet] = get_templates()
+    return templates
 
 
 @app.post("/api/criteria-sets", response_model=CriteriaSet)
@@ -165,7 +170,7 @@ async def create_criteria_set(
         name=request.name,
         description=request.description,
         criteria=request.criteria,
-        createdAt=datetime.utcnow().isoformat() + "Z",
+        created_at=datetime.utcnow().isoformat() + "Z",
     )
     return await db.create_criteria_set(criteria_set)
 
@@ -186,7 +191,7 @@ async def update_criteria_set(
         name=request.name,
         description=request.description,
         criteria=request.criteria,
-        createdAt=existing.createdAt,
+        created_at=existing.created_at,
     )
     return await db.update_criteria_set(updated)
 
@@ -207,7 +212,8 @@ async def delete_criteria_set(
 @app.get("/api/evaluations", response_model=list[Evaluation])
 async def list_evaluations(current_user: User = Depends(get_current_user)) -> list[Evaluation]:
     """List all evaluations."""
-    return await db.list_evaluations()
+    evaluations: list[Evaluation] = await db.list_evaluations()
+    return evaluations
 
 
 @app.get("/api/evaluations/{evaluation_id}", response_model=Evaluation)
@@ -236,11 +242,11 @@ async def create_evaluation(
         id=str(uuid.uuid4()),
         name=request.name,
         status=EvaluationStatus.DRAFT,
-        submissionIds=request.submission_ids,
-        criteriaSetId=request.criteria_set_id,
-        criteriaSetName=criteria_set_name,
+        submission_ids=request.submission_ids,
+        criteria_set_id=request.criteria_set_id,
+        criteria_set_name=criteria_set_name,
         results=[],
-        createdAt=datetime.utcnow().isoformat() + "Z",
+        created_at=datetime.utcnow().isoformat() + "Z",
     )
     return await db.create_evaluation(evaluation)
 
@@ -291,7 +297,28 @@ async def export_evaluation(
 
     if format == "json":
         # JSON export
-        export_data = {
+        results_list: list[dict[str, Any]] = []
+        for result in evaluation.results:
+            sub = submissions_map.get(result.submission_id)
+            criteria_scores: list[dict[str, Any]] = []
+            for cr in result.criterion_results:
+                crit = criteria_map.get(cr.criterion_id)
+                criteria_scores.append(
+                    {
+                        "criterion": crit.name if crit else cr.criterion_id,
+                        "score": cr.score,
+                        "narrative": cr.narrative,
+                    }
+                )
+            result_data: dict[str, Any] = {
+                "submission": sub.name if sub else result.submission_id,
+                "overallScore": result.overall_score,
+                "summary": result.summary,
+                "criteriaScores": criteria_scores,
+            }
+            results_list.append(result_data)
+
+        export_data: dict[str, Any] = {
             "evaluation": {
                 "id": evaluation.id,
                 "name": evaluation.name,
@@ -300,24 +327,8 @@ async def export_evaluation(
                 "createdAt": evaluation.created_at,
                 "completedAt": evaluation.completed_at,
             },
-            "results": [],
+            "results": results_list,
         }
-        for result in evaluation.results:
-            sub = submissions_map.get(result.submission_id)
-            result_data = {
-                "submission": sub.name if sub else result.submission_id,
-                "overallScore": result.overall_score,
-                "summary": result.summary,
-                "criteriaScores": [],
-            }
-            for cr in result.criterion_results:
-                crit = criteria_map.get(cr.criterion_id)
-                result_data["criteriaScores"].append({
-                    "criterion": crit.name if crit else cr.criterion_id,
-                    "score": cr.score,
-                    "narrative": cr.narrative,
-                })
-            export_data["results"].append(result_data)
 
         content = json.dumps(export_data, indent=2)
         return StreamingResponse(
@@ -372,4 +383,4 @@ async def health() -> dict[str, str]:
 if __name__ == "__main__":
     import uvicorn
 
-    uvicorn.run(app, host=settings.host, port=settings.port)  # type: ignore[arg-type]
+    uvicorn.run(app, host=settings.host, port=settings.port)

@@ -12,7 +12,7 @@ export const useAuthStore = defineStore('auth', () => {
   async function login(email: string, password: string) {
     const response = await api.post<{ token: string; user: User }>('/auth/login', {
       email,
-      password
+      password,
     })
     token.value = response.data.token
     user.value = response.data.user
@@ -42,6 +42,6 @@ export const useAuthStore = defineStore('auth', () => {
     isAuthenticated,
     login,
     logout,
-    checkAuth
+    checkAuth,
   }
 })

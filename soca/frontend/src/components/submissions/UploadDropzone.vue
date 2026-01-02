@@ -1,68 +1,66 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+  import { ref } from 'vue'
 
-const props = defineProps<{
-  progress: number | null
-}>()
+  const props = defineProps<{
+    progress: number | null
+  }>()
 
-const emit = defineEmits<{
-  'files-selected': [files: File[]]
-}>()
+  const emit = defineEmits<{
+    'files-selected': [files: File[]]
+  }>()
 
-const isDragging = ref(false)
-const fileInput = ref<HTMLInputElement>()
+  const isDragging = ref(false)
+  const fileInput = ref<HTMLInputElement>()
 
-const acceptedTypes = '.pdf,.txt,.md,.docx,.rtf'
+  const acceptedTypes = '.pdf,.txt,.md,.docx,.rtf'
 
-function handleDragOver(e: DragEvent) {
-  e.preventDefault()
-  isDragging.value = true
-}
-
-function handleDragLeave() {
-  isDragging.value = false
-}
-
-function handleDrop(e: DragEvent) {
-  e.preventDefault()
-  isDragging.value = false
-
-  if (e.dataTransfer?.files) {
-    emit('files-selected', Array.from(e.dataTransfer.files))
+  function handleDragOver(e: DragEvent) {
+    e.preventDefault()
+    isDragging.value = true
   }
-}
 
-function handleClick() {
-  fileInput.value?.click()
-}
-
-function handleFileChange(e: Event) {
-  const input = e.target as HTMLInputElement
-  if (input.files?.length) {
-    emit('files-selected', Array.from(input.files))
-    input.value = ''
+  function handleDragLeave() {
+    isDragging.value = false
   }
-}
 
-function formatFileSize(bytes: number): string {
-  if (bytes < 1024) return `${bytes} B`
-  if (bytes < 1024 * 1024) return `${(bytes / 1024).toFixed(1)} KB`
-  return `${(bytes / (1024 * 1024)).toFixed(1)} MB`
-}
+  function handleDrop(e: DragEvent) {
+    e.preventDefault()
+    isDragging.value = false
+
+    if (e.dataTransfer?.files) {
+      emit('files-selected', Array.from(e.dataTransfer.files))
+    }
+  }
+
+  function handleClick() {
+    fileInput.value?.click()
+  }
+
+  function handleFileChange(e: Event) {
+    const input = e.target as HTMLInputElement
+    if (input.files?.length) {
+      emit('files-selected', Array.from(input.files))
+      input.value = ''
+    }
+  }
+
+  function formatFileSize(bytes: number): string {
+    if (bytes < 1024) return `${bytes} B`
+    if (bytes < 1024 * 1024) return `${(bytes / 1024).toFixed(1)} KB`
+    return `${(bytes / (1024 * 1024)).toFixed(1)} MB`
+  }
 </script>
 
 <template>
   <div
+    :class="[
+      'border-2 border-dashed rounded-lg p-8 text-center cursor-pointer transition-colors',
+      isDragging ? 'border-shiraz bg-shiraz/5' : 'border-gray-300 hover:border-shiraz/50',
+    ]"
     @dragover="handleDragOver"
     @dragleave="handleDragLeave"
     @drop="handleDrop"
     @click="handleClick"
-    :class="[
-      'border-2 border-dashed rounded-lg p-8 text-center cursor-pointer transition-colors',
-      isDragging
-        ? 'border-shiraz bg-shiraz/5'
-        : 'border-gray-300 hover:border-shiraz/50'
-    ]"
   >
     <input
       ref="fileInput"
@@ -75,32 +73,45 @@ function formatFileSize(bytes: number): string {
 
     <template v-if="progress !== null">
       <div class="mb-2">
-        <svg class="w-10 h-10 mx-auto text-shiraz animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+        <svg
+          class="w-10 h-10 mx-auto text-shiraz animate-pulse"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"
+          />
         </svg>
       </div>
       <p class="text-sm font-medium text-mine mb-1">Uploading...</p>
       <div class="w-48 mx-auto bg-gray-200 rounded-full h-2">
-        <div
-          class="bg-shiraz h-2 rounded-full transition-all"
-          :style="{ width: `${progress}%` }"
-        ></div>
+        <div class="bg-shiraz h-2 rounded-full transition-all" :style="{ width: `${progress}%` }" />
       </div>
       <p class="text-xs text-taupe mt-2">{{ progress }}%</p>
     </template>
 
     <template v-else>
       <div class="mb-2">
-        <svg class="w-10 h-10 mx-auto text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+        <svg
+          class="w-10 h-10 mx-auto text-gray-400"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"
+          />
         </svg>
       </div>
-      <p class="text-sm font-medium text-mine mb-1">
-        Drop files here or click to upload
-      </p>
-      <p class="text-xs text-taupe">
-        PDF, TXT, MD, DOCX, RTF supported
-      </p>
+      <p class="text-sm font-medium text-mine mb-1">Drop files here or click to upload</p>
+      <p class="text-xs text-taupe">PDF, TXT, MD, DOCX, RTF supported</p>
     </template>
   </div>
 </template>

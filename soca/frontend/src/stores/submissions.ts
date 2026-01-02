@@ -36,12 +36,12 @@ export const useSubmissionsStore = defineStore('submissions', () => {
 
   async function deleteSubmission(id: string) {
     await submissionsService.delete(id)
-    submissions.value = submissions.value.filter(s => s.id !== id)
+    submissions.value = submissions.value.filter((s) => s.id !== id)
   }
 
   async function updateSubmission(id: string, data: { name?: string; description?: string }) {
     const updated = await submissionsService.update(id, data)
-    const index = submissions.value.findIndex(s => s.id === id)
+    const index = submissions.value.findIndex((s) => s.id === id)
     if (index !== -1) {
       submissions.value[index] = updated
     }
@@ -49,7 +49,7 @@ export const useSubmissionsStore = defineStore('submissions', () => {
   }
 
   function getSubmission(id: string) {
-    return submissions.value.find(s => s.id === id)
+    return submissions.value.find((s) => s.id === id)
   }
 
   return {
@@ -61,6 +61,6 @@ export const useSubmissionsStore = defineStore('submissions', () => {
     uploadSubmission,
     deleteSubmission,
     updateSubmission,
-    getSubmission
+    getSubmission,
   }
 })

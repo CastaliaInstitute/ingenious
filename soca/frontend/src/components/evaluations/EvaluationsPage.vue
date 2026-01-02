@@ -1,51 +1,42 @@
 <script setup lang="ts">
-import { onMounted, ref } from 'vue'
-import { useEvaluationsStore } from '@/stores/evaluations'
-import { useUIStore } from '@/stores/ui'
-import StatCard from '@/components/common/StatCard.vue'
-import Button from '@/components/common/Button.vue'
-import Spinner from '@/components/common/Spinner.vue'
-import EvaluationCard from './EvaluationCard.vue'
-import NewEvaluationModal from './NewEvaluationModal.vue'
-import type { Evaluation } from '@/types'
+  import { onMounted, ref } from 'vue'
+  import { useEvaluationsStore } from '@/stores/evaluations'
+  import { useUIStore } from '@/stores/ui'
+  import StatCard from '@/components/common/StatCard.vue'
+  import Button from '@/components/common/Button.vue'
+  import Spinner from '@/components/common/Spinner.vue'
+  import EvaluationCard from './EvaluationCard.vue'
+  import NewEvaluationModal from './NewEvaluationModal.vue'
+  import type { Evaluation } from '@/types'
 
-const evaluationsStore = useEvaluationsStore()
-const uiStore = useUIStore()
-const showNewModal = ref(false)
+  const evaluationsStore = useEvaluationsStore()
+  const uiStore = useUIStore()
+  const showNewModal = ref(false)
 
-onMounted(() => {
-  evaluationsStore.fetchEvaluations()
-})
+  onMounted(() => {
+    evaluationsStore.fetchEvaluations()
+  })
 
-function handleEvaluationClick(evaluation: Evaluation) {
-  uiStore.viewEvaluationResults(evaluation.id)
-}
+  function handleEvaluationClick(evaluation: Evaluation) {
+    uiStore.viewEvaluationResults(evaluation.id)
+  }
 
-function handleNewEvaluation() {
-  showNewModal.value = true
-}
+  function handleNewEvaluation() {
+    showNewModal.value = true
+  }
 </script>
 
 <template>
   <div>
     <div class="flex items-center justify-between mb-8">
       <h1 class="text-xl font-semibold text-mine">Evaluations</h1>
-      <Button @click="handleNewEvaluation">New Evaluation</Button>
+      <Button @click="handleNewEvaluation"> New Evaluation </Button>
     </div>
 
     <div class="grid grid-cols-3 gap-4 mb-8">
-      <StatCard
-        :value="evaluationsStore.completedCount"
-        label="Completed"
-      />
-      <StatCard
-        :value="evaluationsStore.inProgressCount"
-        label="In Progress"
-      />
-      <StatCard
-        :value="evaluationsStore.totalSubmissions"
-        label="Total Submissions"
-      />
+      <StatCard :value="evaluationsStore.completedCount" label="Completed" />
+      <StatCard :value="evaluationsStore.inProgressCount" label="In Progress" />
+      <StatCard :value="evaluationsStore.totalSubmissions" label="Total Submissions" />
     </div>
 
     <div v-if="evaluationsStore.loading" class="flex justify-center py-8">
@@ -69,9 +60,6 @@ function handleNewEvaluation() {
       </div>
     </div>
 
-    <NewEvaluationModal
-      v-if="showNewModal"
-      @close="showNewModal = false"
-    />
+    <NewEvaluationModal v-if="showNewModal" @close="showNewModal = false" />
   </div>
 </template>

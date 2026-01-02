@@ -1,78 +1,78 @@
 <script setup lang="ts">
-import { onMounted, ref, computed } from 'vue'
-import { useSubmissionsStore } from '@/stores/submissions'
-import Card from '@/components/common/Card.vue'
-import Spinner from '@/components/common/Spinner.vue'
-import UploadDropzone from './UploadDropzone.vue'
-import SubmissionItem from './SubmissionItem.vue'
-import type { Submission } from '@/types'
+  import { onMounted, ref, computed } from 'vue'
+  import { useSubmissionsStore } from '@/stores/submissions'
+  import Card from '@/components/common/Card.vue'
+  import Spinner from '@/components/common/Spinner.vue'
+  import UploadDropzone from './UploadDropzone.vue'
+  import SubmissionItem from './SubmissionItem.vue'
+  import type { Submission } from '@/types'
 
-const submissionsStore = useSubmissionsStore()
-const isDragging = ref(false)
-const selectedSubmission = ref<Submission | null>(null)
-const isEditing = ref(false)
-const editName = ref('')
-const editDescription = ref('')
+  const submissionsStore = useSubmissionsStore()
+  const isDragging = ref(false)
+  const selectedSubmission = ref<Submission | null>(null)
+  const isEditing = ref(false)
+  const editName = ref('')
+  const editDescription = ref('')
 
-onMounted(() => {
-  submissionsStore.fetchSubmissions()
-})
-
-async function handleFilesSelected(files: File[]) {
-  for (const file of files) {
-    await submissionsStore.uploadSubmission(file, file.name)
-  }
-}
-
-function selectSubmission(submission: Submission) {
-  if (selectedSubmission.value?.id === submission.id) {
-    selectedSubmission.value = null
-  } else {
-    selectedSubmission.value = submission
-    isEditing.value = false
-  }
-}
-
-function startEdit() {
-  if (selectedSubmission.value) {
-    editName.value = selectedSubmission.value.name
-    editDescription.value = selectedSubmission.value.description || ''
-    isEditing.value = true
-  }
-}
-
-function cancelEdit() {
-  isEditing.value = false
-}
-
-async function saveEdit() {
-  if (selectedSubmission.value && editName.value.trim()) {
-    await submissionsStore.updateSubmission(selectedSubmission.value.id, {
-      name: editName.value.trim(),
-      description: editDescription.value.trim()
-    })
-    selectedSubmission.value = {
-      ...selectedSubmission.value,
-      name: editName.value.trim(),
-      description: editDescription.value.trim()
-    }
-    isEditing.value = false
-  }
-}
-
-function formatFileSize(bytes: number): string {
-  if (bytes < 1024) return `${bytes} B`
-  if (bytes < 1024 * 1024) return `${(bytes / 1024).toFixed(1)} KB`
-  return `${(bytes / (1024 * 1024)).toFixed(1)} MB`
-}
-
-function formatDate(dateString: string): string {
-  return new Date(dateString).toLocaleDateString('en-US', {
-    month: 'short',
-    day: 'numeric',
-    year: 'numeric'
+  onMounted(() => {
+    submissionsStore.fetchSubmissions()
   })
-}
+
+  async function handleFilesSelected(files: File[]) {
+    for (const file of files) {
+      await submissionsStore.uploadSubmission(file, file.name)
+    }
+  }
+
+  function selectSubmission(submission: Submission) {
+    if (selectedSubmission.value?.id === submission.id) {
+      selectedSubmission.value = null
+    } else {
+      selectedSubmission.value = submission
+      isEditing.value = false
+    }
+  }
+
+  function startEdit() {
+    if (selectedSubmission.value) {
+      editName.value = selectedSubmission.value.name
+      editDescription.value = selectedSubmission.value.description || ''
+      isEditing.value = true
+    }
+  }
+
+  function cancelEdit() {
+    isEditing.value = false
+  }
+
+  async function saveEdit() {
+    if (selectedSubmission.value && editName.value.trim()) {
+      await submissionsStore.updateSubmission(selectedSubmission.value.id, {
+        name: editName.value.trim(),
+        description: editDescription.value.trim(),
+      })
+      selectedSubmission.value = {
+        ...selectedSubmission.value,
+        name: editName.value.trim(),
+        description: editDescription.value.trim(),
+      }
+      isEditing.value = false
+    }
+  }
+
+  function formatFileSize(bytes: number): string {
+    if (bytes < 1024) return `${bytes} B`
+    if (bytes < 1024 * 1024) return `${(bytes / 1024).toFixed(1)} KB`
+    return `${(bytes / (1024 * 1024)).toFixed(1)} MB`
+  }
+
+  function formatDate(dateString: string): string {
+    return new Date(dateString).toLocaleDateString('en-US', {
+      month: 'short',
+      day: 'numeric',
+      year: 'numeric',
+    })
+  }
 </script>
 
 <template>
@@ -84,8 +84,8 @@ function formatDate(dateString: string): string {
 
     <UploadDropzone
       class="mb-8"
-      @files-selected="handleFilesSelected"
       :progress="submissionsStore.uploadProgress"
+      @files-selected="handleFilesSelected"
     />
 
     <div v-if="submissionsStore.loading" class="flex justify-center py-8">
@@ -118,14 +118,14 @@ function formatDate(dateString: string): string {
         <div class="flex gap-2">
           <button
             v-if="!isEditing"
-            @click="startEdit"
             class="px-3 py-1 text-sm bg-desert text-mine rounded hover:bg-opacity-80"
+            @click="startEdit"
           >
             Edit
           </button>
           <button
-            @click="selectedSubmission = null"
             class="px-3 py-1 text-sm text-taupe hover:text-mine"
+            @click="selectedSubmission = null"
           >
             Close
           </button>
@@ -136,30 +136,43 @@ function formatDate(dateString: string): string {
       <div v-if="!isEditing" class="space-y-4">
         <div>
           <p class="text-xs text-taupe uppercase tracking-wide">Name</p>
-          <p class="text-sm text-mine">{{ selectedSubmission.name }}</p>
+          <p class="text-sm text-mine">
+            {{ selectedSubmission.name }}
+          </p>
         </div>
         <div>
           <p class="text-xs text-taupe uppercase tracking-wide">Description</p>
-          <p class="text-sm text-mine">{{ selectedSubmission.description || 'No description' }}</p>
+          <p class="text-sm text-mine">
+            {{ selectedSubmission.description || 'No description' }}
+          </p>
         </div>
         <div class="grid grid-cols-3 gap-4">
           <div>
             <p class="text-xs text-taupe uppercase tracking-wide">File Name</p>
-            <p class="text-sm text-mine">{{ selectedSubmission.fileName }}</p>
+            <p class="text-sm text-mine">
+              {{ selectedSubmission.fileName }}
+            </p>
           </div>
           <div>
             <p class="text-xs text-taupe uppercase tracking-wide">Size</p>
-            <p class="text-sm text-mine">{{ formatFileSize(selectedSubmission.fileSize) }}</p>
+            <p class="text-sm text-mine">
+              {{ formatFileSize(selectedSubmission.fileSize) }}
+            </p>
           </div>
           <div>
             <p class="text-xs text-taupe uppercase tracking-wide">Uploaded</p>
-            <p class="text-sm text-mine">{{ formatDate(selectedSubmission.uploadedAt) }}</p>
+            <p class="text-sm text-mine">
+              {{ formatDate(selectedSubmission.uploadedAt) }}
+            </p>
           </div>
         </div>
         <div v-if="selectedSubmission.extractedText">
           <p class="text-xs text-taupe uppercase tracking-wide mb-2">Content Preview</p>
-          <p class="text-sm text-mine bg-desert p-3 rounded max-h-32 overflow-y-auto whitespace-pre-wrap">
-            {{ selectedSubmission.extractedText.substring(0, 500) }}{{ selectedSubmission.extractedText.length > 500 ? '...' : '' }}
+          <p
+            class="text-sm text-mine bg-desert p-3 rounded max-h-32 overflow-y-auto whitespace-pre-wrap"
+          >
+            {{ selectedSubmission.extractedText.substring(0, 500)
+            }}{{ selectedSubmission.extractedText.length > 500 ? '...' : '' }}
           </p>
         </div>
       </div>
@@ -182,19 +195,16 @@ function formatDate(dateString: string): string {
             rows="3"
             class="w-full px-3 py-2 border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-shiraz"
             placeholder="Optional description"
-          ></textarea>
+          />
         </div>
         <div class="flex gap-2 justify-end">
-          <button
-            @click="cancelEdit"
-            class="px-4 py-2 text-sm text-taupe hover:text-mine"
-          >
+          <button class="px-4 py-2 text-sm text-taupe hover:text-mine" @click="cancelEdit">
             Cancel
           </button>
           <button
-            @click="saveEdit"
             :disabled="!editName.trim()"
             class="px-4 py-2 text-sm bg-shiraz text-white rounded hover:bg-opacity-90 disabled:opacity-50"
+            @click="saveEdit"
           >
             Save
           </button>

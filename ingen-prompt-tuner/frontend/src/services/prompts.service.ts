@@ -17,7 +17,7 @@ User query: {{ user_query }}
 Analyze the query and respond with the agent name that should handle it.`,
     size: 2100,
     tags: ['system', 'routing'],
-    variables: ['available_agents', 'user_query']
+    variables: ['available_agents', 'user_query'],
   },
   {
     filename: 'sql_agent_prompt.jinja',
@@ -32,7 +32,7 @@ User request: {{ user_request }}
 Generate a valid SQL query that answers the request. Only output the SQL, no explanations.`,
     size: 3400,
     tags: ['agent', 'sql'],
-    variables: ['schema', 'user_request']
+    variables: ['schema', 'user_request'],
   },
   {
     filename: 'analyst_prompt.jinja',
@@ -56,7 +56,7 @@ Data to analyze:
 {{ data }}`,
     size: 1800,
     tags: ['agent', 'analysis'],
-    variables: ['domain', 'data', 'include_recommendations']
+    variables: ['domain', 'data', 'include_recommendations'],
   },
   {
     filename: 'summary_prompt.jinja',
@@ -69,8 +69,8 @@ Analysis results:
 Keep the summary concise (2-3 paragraphs) and focus on key takeaways.`,
     size: 1200,
     tags: ['agent', 'output'],
-    variables: ['results']
-  }
+    variables: ['results'],
+  },
 ]
 
 export const promptsService = {
@@ -80,10 +80,10 @@ export const promptsService = {
   },
 
   async get(revision: string, filename: string): Promise<Prompt | null> {
-    return mockPrompts.find(p => p.filename === filename) || null
+    return mockPrompts.find((p) => p.filename === filename) || null
   },
 
   async update(revision: string, filename: string, content: string): Promise<void> {
     // In production, save to API
-  }
+  },
 }

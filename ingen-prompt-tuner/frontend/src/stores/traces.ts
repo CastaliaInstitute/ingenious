@@ -19,6 +19,6 @@ export const useTracesStore = defineStore('traces', () => {
   return {
     traces,
     loading,
-    fetchTraces
+    fetchTraces,
   }
 })

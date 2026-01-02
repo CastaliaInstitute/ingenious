@@ -1,30 +1,33 @@
 <script setup lang="ts">
-import { useEditorStore } from '@/stores/editor'
-import { useRevisionsStore } from '@/stores/revisions'
-import { promptsService } from '@/services/prompts.service'
-import Button from '@/components/common/Button.vue'
-import CodeEditor from './CodeEditor.vue'
+  import { useEditorStore } from '@/stores/editor'
+  import { useRevisionsStore } from '@/stores/revisions'
+  import { promptsService } from '@/services/prompts.service'
+  import Button from '@/components/common/Button.vue'
+  import CodeEditor from './CodeEditor.vue'
 
-const editorStore = useEditorStore()
-const revisionsStore = useRevisionsStore()
+  const editorStore = useEditorStore()
+  const revisionsStore = useRevisionsStore()
 
-async function handleSave() {
-  if (editorStore.selectedPrompt && editorStore.modifiedContent) {
-    await promptsService.update(
-      revisionsStore.activeRevision,
-      editorStore.selectedPrompt.filename,
-      editorStore.modifiedContent
-    )
+  async function handleSave() {
+    if (editorStore.selectedPrompt && editorStore.modifiedContent) {
+      await promptsService.update(
+        revisionsStore.activeRevision,
+        editorStore.selectedPrompt.filename,
+        editorStore.modifiedContent
+      )
+    }
   }
-}
 
-function handleEditorChange(value: string) {
-  editorStore.updateContent(value)
-}
+  function handleEditorChange(value: string) {
+    editorStore.updateContent(value)
+  }
 </script>
 
 <template>
-  <div v-if="editorStore.selectedPrompt" class="bg-white rounded-lg border border-gray-200 overflow-hidden">
+  <div
+    v-if="editorStore.selectedPrompt"
+    class="bg-white rounded-lg border border-gray-200 overflow-hidden"
+  >
     <div class="flex items-center justify-between px-5 py-3 border-b border-gray-200">
       <div class="flex items-center gap-3">
         <span class="text-sm font-medium text-mine">{{ editorStore.selectedPrompt.filename }}</span>
@@ -39,13 +42,7 @@ function handleEditorChange(value: string) {
         >
           Discard
         </Button>
-        <Button
-          size="sm"
-          :disabled="!editorStore.hasChanges"
-          @click="handleSave"
-        >
-          Save
-        </Button>
+        <Button size="sm" :disabled="!editorStore.hasChanges" @click="handleSave"> Save </Button>
       </div>
     </div>
 

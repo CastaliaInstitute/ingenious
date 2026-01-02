@@ -24,5 +24,5 @@ export const criteriaService = {
 
   async delete(id: string): Promise<void> {
     await api.delete(`/criteria-sets/${id}`)
-  }
+  },
 }

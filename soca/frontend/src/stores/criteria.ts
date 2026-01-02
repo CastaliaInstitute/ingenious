@@ -36,18 +36,18 @@ export const useCriteriaStore = defineStore('criteria', () => {
   }
 
   async function useTemplate(templateId: string, name: string) {
-    const template = templates.value.find(t => t.id === templateId)
+    const template = templates.value.find((t) => t.id === templateId)
     if (!template) throw new Error('Template not found')
     return createCriteriaSet({
       name,
       description: template.description,
-      criteria: template.criteria
+      criteria: template.criteria,
     })
   }
 
   async function updateCriteriaSet(id: string, data: Omit<CriteriaSet, 'id' | 'createdAt'>) {
     const updated = await criteriaService.update(id, data)
-    const index = criteriaSets.value.findIndex(c => c.id === id)
+    const index = criteriaSets.value.findIndex((c) => c.id === id)
     if (index !== -1) {
       criteriaSets.value[index] = updated
     }
@@ -56,11 +56,11 @@ export const useCriteriaStore = defineStore('criteria', () => {
 
   async function deleteCriteriaSet(id: string) {
     await criteriaService.delete(id)
-    criteriaSets.value = criteriaSets.value.filter(c => c.id !== id)
+    criteriaSets.value = criteriaSets.value.filter((c) => c.id !== id)
   }
 
   function getCriteriaSet(id: string) {
-    return criteriaSets.value.find(c => c.id === id)
+    return criteriaSets.value.find((c) => c.id === id)
   }
 
   return {
@@ -74,6 +74,6 @@ export const useCriteriaStore = defineStore('criteria', () => {
     useTemplate,
     updateCriteriaSet,
     deleteCriteriaSet,
-    getCriteriaSet
+    getCriteriaSet,
   }
 })

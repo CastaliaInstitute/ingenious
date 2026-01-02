@@ -1,26 +1,26 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-import { useAuthStore } from '@/stores/auth'
+  import { ref } from 'vue'
+  import { useAuthStore } from '@/stores/auth'
 
-const authStore = useAuthStore()
+  const authStore = useAuthStore()
 
-const email = ref('')
-const password = ref('')
-const error = ref('')
-const loading = ref(false)
+  const email = ref('')
+  const password = ref('')
+  const error = ref('')
+  const loading = ref(false)
 
-async function handleLogin() {
-  error.value = ''
-  loading.value = true
+  async function handleLogin() {
+    error.value = ''
+    loading.value = true
 
-  try {
-    await authStore.login(email.value, password.value)
-  } catch (e) {
-    error.value = 'Invalid email or password'
-  } finally {
-    loading.value = false
+    try {
+      await authStore.login(email.value, password.value)
+    } catch (e) {
+      error.value = 'Invalid email or password'
+    } finally {
+      loading.value = false
+    }
   }
-}
 </script>
 
 <template>
@@ -30,18 +30,18 @@ async function handleLogin() {
         <div class="text-center mb-8">
           <div class="flex items-center justify-center gap-2 mb-2">
             <svg class="w-8 h-8 text-shiraz" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/>
+              <path
+                d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"
+              />
             </svg>
             <span class="text-2xl font-semibold text-mine">Prompt Tuner</span>
           </div>
           <p class="text-taupe">Sign in to your account</p>
         </div>
 
-        <form @submit.prevent="handleLogin" class="space-y-4">
+        <form class="space-y-4" @submit.prevent="handleLogin">
           <div>
-            <label for="email" class="block text-sm font-medium text-mine mb-1">
-              Email
-            </label>
+            <label for="email" class="block text-sm font-medium text-mine mb-1"> Email </label>
             <input
               id="email"
               v-model="email"
@@ -81,7 +81,6 @@ async function handleLogin() {
             <span v-else>Sign In</span>
           </button>
         </form>
-
       </div>
     </div>
   </div>

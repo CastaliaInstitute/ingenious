@@ -8,12 +8,12 @@ export const useEvaluationsStore = defineStore('evaluations', () => {
   const loading = ref(false)
   const error = ref<string | null>(null)
 
-  const completedCount = computed(() =>
-    evaluations.value.filter(e => e.status === 'completed').length
+  const completedCount = computed(
+    () => evaluations.value.filter((e) => e.status === 'completed').length
   )
 
-  const inProgressCount = computed(() =>
-    evaluations.value.filter(e => e.status === 'running').length
+  const inProgressCount = computed(
+    () => evaluations.value.filter((e) => e.status === 'running').length
   )
 
   const totalSubmissions = computed(() =>
@@ -32,19 +32,23 @@ export const useEvaluationsStore = defineStore('evaluations', () => {
     }
   }
 
-  async function createEvaluation(data: { name: string; submissionIds: string[]; criteriaSetId: string }) {
+  async function createEvaluation(data: {
+    name: string
+    submissionIds: string[]
+    criteriaSetId: string
+  }) {
     const evaluation = await evaluationsService.create(data)
     evaluations.value.unshift(evaluation)
     return evaluation
   }
 
   async function runEvaluation(id: string) {
-    const evaluation = evaluations.value.find(e => e.id === id)
+    const evaluation = evaluations.value.find((e) => e.id === id)
     if (evaluation) {
       evaluation.status = 'running'
     }
     const updated = await evaluationsService.run(id)
-    const index = evaluations.value.findIndex(e => e.id === id)
+    const index = evaluations.value.findIndex((e) => e.id === id)
     if (index !== -1) {
       evaluations.value[index] = updated
     }
@@ -52,7 +56,7 @@ export const useEvaluationsStore = defineStore('evaluations', () => {
   }
 
   function getEvaluation(id: string) {
-    return evaluations.value.find(e => e.id === id)
+    return evaluations.value.find((e) => e.id === id)
   }
 
   return {
@@ -65,6 +69,6 @@ export const useEvaluationsStore = defineStore('evaluations', () => {
     fetchEvaluations,
     createEvaluation,
     runEvaluation,
-    getEvaluation
+    getEvaluation,
   }
 })

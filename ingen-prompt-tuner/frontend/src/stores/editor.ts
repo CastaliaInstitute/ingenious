@@ -16,7 +16,8 @@ export const useEditorStore = defineStore('editor', () => {
     if (!modifiedContent.value) return []
 
     // Match {{ variable }}, {{ variable.property }}, and similar patterns
-    const variablePattern = /\{\{\s*([a-zA-Z_][a-zA-Z0-9_]*(?:\.[a-zA-Z_][a-zA-Z0-9_]*)*)\s*(?:\|[^}]*)?\}\}/g
+    const variablePattern =
+      /\{\{\s*([a-zA-Z_][a-zA-Z0-9_]*(?:\.[a-zA-Z_][a-zA-Z0-9_]*)*)\s*(?:\|[^}]*)?\}\}/g
     const matches = modifiedContent.value.matchAll(variablePattern)
 
     const variables = new Set<string>()
@@ -64,6 +65,6 @@ export const useEditorStore = defineStore('editor', () => {
     selectPrompt,
     updateContent,
     discardChanges,
-    clearSelection
+    clearSelection,
   }
 })

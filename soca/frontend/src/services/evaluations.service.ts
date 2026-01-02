@@ -12,7 +12,11 @@ export const evaluationsService = {
     return response.data
   },
 
-  async create(data: { name: string; submissionIds: string[]; criteriaSetId: string }): Promise<Evaluation> {
+  async create(data: {
+    name: string
+    submissionIds: string[]
+    criteriaSetId: string
+  }): Promise<Evaluation> {
     const response = await api.post<Evaluation>('/evaluations', data)
     return response.data
   },
@@ -24,8 +28,8 @@ export const evaluationsService = {
 
   async exportData(id: string, format: 'pdf' | 'csv' | 'json'): Promise<Blob> {
     const response = await api.get(`/evaluations/${id}/export/${format}`, {
-      responseType: 'blob'
+      responseType: 'blob',
     })
     return response.data
-  }
+  },
 }

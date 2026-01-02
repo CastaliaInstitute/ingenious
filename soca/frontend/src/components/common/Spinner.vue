@@ -1,8 +1,8 @@
 <script setup lang="ts">
-defineProps<{
-  size?: 'sm' | 'md' | 'lg'
-  text?: string
-}>()
+  defineProps<{
+    size?: 'sm' | 'md' | 'lg'
+    text?: string
+  }>()
 </script>
 
 <template>
@@ -12,21 +12,23 @@ defineProps<{
         'animate-spin rounded-full border-2 border-gray-200',
         size === 'sm' ? 'w-5 h-5 border-t-shiraz' : '',
         size === 'lg' ? 'w-12 h-12 border-t-shiraz border-2' : '',
-        (!size || size === 'md') ? 'w-8 h-8 border-t-shiraz' : ''
+        !size || size === 'md' ? 'w-8 h-8 border-t-shiraz' : '',
       ]"
-      style="border-top-color: var(--color-shiraz, #a91d4b);"
-    ></div>
-    <p v-if="text" class="text-sm text-taupe">{{ text }}</p>
+      style="border-top-color: var(--color-shiraz, #a91d4b)"
+    />
+    <p v-if="text" class="text-sm text-taupe">
+      {{ text }}
+    </p>
   </div>
 </template>
 
 <style scoped>
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
   }
-}
-.animate-spin {
-  animation: spin 1s linear infinite;
-}
+  .animate-spin {
+    animation: spin 1s linear infinite;
+  }
 </style>

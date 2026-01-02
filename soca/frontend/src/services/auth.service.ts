@@ -19,5 +19,5 @@ export const authService = {
   async me(): Promise<MeResponse> {
     const response = await api.get<MeResponse>('/auth/me')
     return response.data
-  }
+  },
 }

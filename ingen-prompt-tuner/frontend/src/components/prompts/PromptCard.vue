@@ -1,35 +1,37 @@
 <script setup lang="ts">
-import type { Prompt } from '@/types'
+  import type { Prompt } from '@/types'
 
-defineProps<{
-  prompt: Prompt
-  selected: boolean
-}>()
+  defineProps<{
+    prompt: Prompt
+    selected: boolean
+  }>()
 
-defineEmits<{
-  click: []
-}>()
+  defineEmits<{
+    click: []
+  }>()
 
-function formatSize(bytes: number): string {
-  if (bytes < 1024) return `${bytes} B`
-  return `${(bytes / 1024).toFixed(1)} KB`
-}
+  function formatSize(bytes: number): string {
+    if (bytes < 1024) return `${bytes} B`
+    return `${(bytes / 1024).toFixed(1)} KB`
+  }
 </script>
 
 <template>
   <div
-    @click="$emit('click')"
     :class="[
       'bg-white rounded-lg p-5 cursor-pointer transition-colors',
-      selected
-        ? 'border-2 border-shiraz'
-        : 'border border-gray-200 hover:border-shiraz/30'
+      selected ? 'border-2 border-shiraz' : 'border border-gray-200 hover:border-shiraz/30',
     ]"
+    @click="$emit('click')"
   >
     <div class="flex items-start justify-between mb-3">
       <div>
-        <p class="text-sm font-medium text-mine">{{ prompt.filename }}</p>
-        <p v-if="prompt.description" class="text-xs text-taupe mt-1">{{ prompt.description }}</p>
+        <p class="text-sm font-medium text-mine">
+          {{ prompt.filename }}
+        </p>
+        <p v-if="prompt.description" class="text-xs text-taupe mt-1">
+          {{ prompt.description }}
+        </p>
       </div>
       <span class="text-xs text-taupe">{{ formatSize(prompt.size) }}</span>
     </div>

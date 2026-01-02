@@ -20,13 +20,13 @@ export const submissionsService = {
 
     const response = await api.post<Submission>('/submissions', formData, {
       headers: {
-        'Content-Type': 'multipart/form-data'
+        'Content-Type': 'multipart/form-data',
       },
       onUploadProgress: (event) => {
         if (event.total && onProgress) {
           onProgress(Math.round((event.loaded * 100) / event.total))
         }
-      }
+      },
     })
     return response.data
   },
@@ -38,5 +38,5 @@ export const submissionsService = {
   async update(id: string, data: { name?: string; description?: string }): Promise<Submission> {
     const response = await api.patch<Submission>(`/submissions/${id}`, data)
     return response.data
-  }
+  },
 }

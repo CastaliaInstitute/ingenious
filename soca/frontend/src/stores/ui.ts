@@ -36,6 +36,6 @@ export const useUIStore = defineStore('ui', () => {
     setActiveTab,
     viewEvaluationResults,
     backToEvaluations,
-    toggleResultExpanded
+    toggleResultExpanded,
   }
 })
