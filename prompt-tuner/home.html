@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Prompt Tuner</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            shiraz: '#AE0A46',
+            mine: '#222222',
+            taupe: '#3E332D',
+            desert: '#F7F6F5',
+          }
+        }
+      }
+    }
+        </script>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+              rel="stylesheet">
+        <style>body { font-family: 'Inter', system-ui, sans-serif; }</style>
+    </head>
+    <body class="bg-desert text-mine min-h-screen">
+        <!-- Header -->
+        <header class="bg-white border-b border-gray-200">
+            <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+                <div class="flex items-center gap-8">
+                    <!-- Logo -->
+                    <div class="flex items-center gap-2">
+                        <svg class="w-6 h-6 text-shiraz" viewBox="0 0 24 24" fill="currentColor">
+                            <rect x="2" y="2" width="9" height="9" rx="1" />
+                            <rect x="13" y="2" width="9" height="9" rx="1" />
+                            <rect x="2" y="13" width="9" height="9" rx="1" />
+                            <rect x="13" y="13" width="9" height="9" rx="1" opacity="0.5" />
+                        </svg>
+                        <span class="text-lg font-semibold text-mine">Prompt Tuner</span>
+                    </div>
+                    <!-- Tabs -->
+                    <nav class="flex items-center gap-1">
+                        <a href="#"
+                           class="px-4 py-2 text-sm font-medium text-shiraz bg-shiraz/10 rounded-md">Home</a>
+                        <a href="prompt-editor.html"
+                           class="px-4 py-2 text-sm font-medium text-taupe hover:text-mine rounded-md hover:bg-desert">Prompts</a>
+                        <a href="main-dashboard.html"
+                           class="px-4 py-2 text-sm font-medium text-taupe hover:text-mine rounded-md hover:bg-desert">Test</a>
+                    </nav>
+                </div>
+                <div class="flex items-center gap-4 text-sm text-taupe">
+                    <span>admin@insight.com</span>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content -->
+        <main class="max-w-6xl mx-auto px-6 py-8">
+            <!-- Welcome -->
+            <div class="mb-8">
+                <h1 class="text-xl font-semibold text-mine mb-2">Prompt Tuner</h1>
+                <p class="text-sm text-taupe">Inspect, edit, and test prompts for your Ingenious workflows.</p>
+            </div>
+            <!-- Stats -->
+            <div class="grid grid-cols-4 gap-4 mb-8">
+                <div class="bg-white rounded-lg border border-gray-200 p-5">
+                    <p class="text-2xl font-semibold text-mine">3</p>
+                    <p class="text-sm text-taupe">Revisions</p>
+                </div>
+                <div class="bg-white rounded-lg border border-gray-200 p-5">
+                    <p class="text-2xl font-semibold text-mine">12</p>
+                    <p class="text-sm text-taupe">Prompt Files</p>
+                </div>
+                <div class="bg-white rounded-lg border border-gray-200 p-5">
+                    <p class="text-2xl font-semibold text-mine">47</p>
+                    <p class="text-sm text-taupe">Test Runs</p>
+                </div>
+                <div class="bg-white rounded-lg border border-gray-200 p-5">
+                    <p class="text-2xl font-semibold text-mine">4</p>
+                    <p class="text-sm text-taupe">Workflows</p>
+                </div>
+            </div>
+            <!-- Quick Actions -->
+            <div class="grid grid-cols-2 gap-4 mb-8">
+                <a href="prompt-editor.html"
+                   class="bg-white rounded-lg border border-gray-200 p-5 hover:border-shiraz/30 transition-colors">
+                    <p class="text-sm font-medium text-mine mb-1">Edit Prompts</p>
+                    <p class="text-xs text-taupe">View and modify prompt templates for each revision</p>
+                </a>
+                <a href="main-dashboard.html"
+                   class="bg-white rounded-lg border border-gray-200 p-5 hover:border-shiraz/30 transition-colors">
+                    <p class="text-sm font-medium text-mine mb-1">View Test Runs</p>
+                    <p class="text-xs text-taupe">Inspect agent inputs and outputs from past runs</p>
+                </a>
+            </div>
+            <!-- Recent Activity -->
+            <div class="bg-white rounded-lg border border-gray-200">
+                <div class="px-5 py-4 border-b border-gray-100">
+                    <p class="text-sm font-medium text-mine">Recent Activity</p>
+                </div>
+                <div class="divide-y divide-gray-100">
+                    <div class="px-5 py-4 flex items-center justify-between">
+                        <div>
+                            <p class="text-sm text-mine">Prompt edited: analyst_prompt.jinja</p>
+                            <p class="text-xs text-taupe">quickstart-1</p>
+                        </div>
+                        <span class="text-xs text-taupe">2 hours ago</span>
+                    </div>
+                    <div class="px-5 py-4 flex items-center justify-between">
+                        <div>
+                            <p class="text-sm text-mine">New revision created: magical-crystal-51211a8b</p>
+                            <p class="text-xs text-taupe">From quickstart-1</p>
+                        </div>
+                        <span class="text-xs text-taupe">Yesterday</span>
+                    </div>
+                    <div class="px-5 py-4 flex items-center justify-between">
+                        <div>
+                            <p class="text-sm text-mine">Test run completed: bike-insights</p>
+                            <p class="text-xs text-taupe">1,234 tokens</p>
+                        </div>
+                        <span class="text-xs text-taupe">2 days ago</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

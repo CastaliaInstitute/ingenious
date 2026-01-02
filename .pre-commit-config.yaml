@@ -7,10 +7,12 @@ repos:
       # Reformat Flask/Jinja templates
       - id: djlint-reformat-jinja
         files: "\\.(html|jinja)$"
+        exclude: "^(soca|prompt-tuner)/"
         types_or: ["html", "jinja"]
       # Lint Flask/Jinja templates
       - id: djlint-jinja
         files: "\\.(html|jinja)$"
+        exclude: "^(soca|prompt-tuner)/"
         types_or: ["html", "jinja"]
   - repo: https://github.com/google/yamlfmt
     rev: v0.20.0
