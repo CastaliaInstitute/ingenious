@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  import { ref } from 'vue'
+  import { ref, computed } from 'vue'
   import { useAuthStore } from '@/stores/auth'
 
   const authStore = useAuthStore()
@@ -8,6 +8,8 @@
   const password = ref('')
   const error = ref('')
   const loading = ref(false)
+
+  const isFormValid = computed(() => email.value.trim() !== '' && password.value !== '')
 
   async function handleLogin() {
     error.value = ''
@@ -74,7 +76,7 @@
 
           <button
             type="submit"
-            :disabled="loading"
+            :disabled="loading || !isFormValid"
             class="w-full bg-shiraz text-white py-2 px-4 rounded-md hover:bg-opacity-90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
           >
             <span v-if="loading">Signing in...</span>
