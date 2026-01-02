@@ -20,7 +20,8 @@ api.interceptors.response.use(
   (error) => {
     if (error.response?.status === 401) {
       localStorage.removeItem('soca_token')
-      window.location.href = '/login'
+      // App.vue will show login page when token is removed
+      window.location.reload()
     }
     return Promise.reject(error)
   }

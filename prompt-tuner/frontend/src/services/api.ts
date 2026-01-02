@@ -15,4 +15,16 @@ api.interceptors.request.use((config) => {
   return config
 })
 
+api.interceptors.response.use(
+  (response) => response,
+  (error) => {
+    if (error.response?.status === 401) {
+      localStorage.removeItem('pt_token')
+      // App.vue will show login page when token is removed
+      window.location.reload()
+    }
+    return Promise.reject(error)
+  }
+)
+
 export default api

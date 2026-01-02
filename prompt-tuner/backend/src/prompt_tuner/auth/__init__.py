@@ -8,8 +8,8 @@ from fastapi import Depends, HTTPException, status
 from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
 from jose import JWTError, jwt
 
-from soca.config import settings
-from soca.models import User
+from prompt_tuner.config import settings
+from prompt_tuner.models import User
 
 security = HTTPBearer()
 
@@ -53,7 +53,7 @@ async def get_current_user(
 ) -> User:
     """Get the current authenticated user."""
     if not settings.auth_enabled:
-        return User(id="demo", email="demo@soca.local")
+        return User(id="demo", email="demo@prompttuner.local")
 
     payload = decode_token(credentials.credentials)
     user_id = payload.get("sub")

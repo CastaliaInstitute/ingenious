@@ -1,7 +1,8 @@
 <script setup lang="ts">
-import { onMounted } from 'vue'
+import { onMounted, ref } from 'vue'
 import { useAuthStore } from '@/stores/auth'
 import { useUIStore } from '@/stores/ui'
+import LoginPage from '@/components/auth/LoginPage.vue'
 import MainLayout from '@/components/layout/MainLayout.vue'
 import EvaluationsPage from '@/components/evaluations/EvaluationsPage.vue'
 import EvaluationResultsPage from '@/components/evaluations/EvaluationResultsPage.vue'
@@ -10,14 +11,22 @@ import CriteriaPage from '@/components/criteria/CriteriaPage.vue'
 
 const authStore = useAuthStore()
 const uiStore = useUIStore()
+const initializing = ref(true)
 
-onMounted(() => {
-  authStore.checkAuth()
+onMounted(async () => {
+  await authStore.checkAuth()
+  initializing.value = false
 })
 </script>
 
 <template>
-  <MainLayout>
+  <div v-if="initializing" class="min-h-screen bg-desert flex items-center justify-center">
+    <div class="text-taupe">Loading...</div>
+  </div>
+
+  <LoginPage v-else-if="!authStore.isAuthenticated" />
+
+  <MainLayout v-else>
     <template v-if="uiStore.selectedEvaluationId">
       <EvaluationResultsPage />
     </template>
