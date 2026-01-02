@@ -1,11 +1,15 @@
 """SoCa FastAPI application."""
 
+import csv
+import io
+import json
 import uuid
 from datetime import datetime
 from typing import Any, Optional
 
 from fastapi import BackgroundTasks, Depends, FastAPI, File, HTTPException, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import StreamingResponse
 
 from soca.auth import authenticate_user, create_access_token, get_current_user
 from soca.config import settings
@@ -198,6 +202,104 @@ async def run_evaluation_endpoint(
         raise HTTPException(status_code=500, detail="Evaluation failed")
 
     return result
+
+
+@app.get("/api/evaluations/{evaluation_id}/export/{format}")
+async def export_evaluation(
+    evaluation_id: str,
+    format: str,
+    current_user: User = Depends(get_current_user),
+) -> StreamingResponse:
+    """Export evaluation results in specified format."""
+    evaluation = await db.get_evaluation(evaluation_id)
+    if not evaluation:
+        raise HTTPException(status_code=404, detail="Evaluation not found")
+
+    # Get submissions for names
+    submissions_map = {}
+    for sid in evaluation.submissionIds:
+        sub = await db.get_submission(sid)
+        if sub:
+            submissions_map[sid] = sub
+
+    # Get criteria set for criterion names
+    criteria_set = await db.get_criteria_set(evaluation.criteriaSetId)
+    criteria_map = {}
+    if criteria_set:
+        for c in criteria_set.criteria:
+            criteria_map[c.id] = c
+
+    if format == "json":
+        # JSON export
+        export_data = {
+            "evaluation": {
+                "id": evaluation.id,
+                "name": evaluation.name,
+                "status": evaluation.status.value,
+                "criteriaSet": evaluation.criteriaSetName,
+                "createdAt": evaluation.createdAt,
+                "completedAt": evaluation.completedAt,
+            },
+            "results": [],
+        }
+        for result in evaluation.results:
+            sub = submissions_map.get(result.submissionId)
+            result_data = {
+                "submission": sub.name if sub else result.submissionId,
+                "overallScore": result.overallScore,
+                "summary": result.summary,
+                "criteriaScores": [],
+            }
+            for cr in result.criterionResults:
+                crit = criteria_map.get(cr.criterionId)
+                result_data["criteriaScores"].append({
+                    "criterion": crit.name if crit else cr.criterionId,
+                    "score": cr.score,
+                    "narrative": cr.narrative,
+                })
+            export_data["results"].append(result_data)
+
+        content = json.dumps(export_data, indent=2)
+        return StreamingResponse(
+            io.BytesIO(content.encode()),
+            media_type="application/json",
+            headers={"Content-Disposition": f'attachment; filename="{evaluation.name}.json"'},
+        )
+
+    elif format == "csv":
+        # CSV export
+        output = io.StringIO()
+        writer = csv.writer(output)
+
+        # Build header with all criteria
+        criteria_names = [c.name for c in criteria_set.criteria] if criteria_set else []
+        header = ["Rank", "Submission", "Overall Score"] + criteria_names + ["Summary"]
+        writer.writerow(header)
+
+        # Sort results by score descending
+        sorted_results = sorted(evaluation.results, key=lambda r: r.overallScore, reverse=True)
+
+        for rank, result in enumerate(sorted_results, 1):
+            sub = submissions_map.get(result.submissionId)
+            row = [rank, sub.name if sub else result.submissionId, result.overallScore]
+
+            # Add criterion scores in order
+            score_map = {cr.criterionId: cr.score for cr in result.criterionResults}
+            if criteria_set:
+                for c in criteria_set.criteria:
+                    row.append(score_map.get(c.id, ""))
+            row.append(result.summary)
+            writer.writerow(row)
+
+        content = output.getvalue()
+        return StreamingResponse(
+            io.BytesIO(content.encode()),
+            media_type="text/csv",
+            headers={"Content-Disposition": f'attachment; filename="{evaluation.name}.csv"'},
+        )
+
+    else:
+        raise HTTPException(status_code=400, detail=f"Unsupported format: {format}")
 
 
 # Health check

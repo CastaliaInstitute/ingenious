@@ -1,8 +1,9 @@
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, ref } from 'vue'
 import { useEvaluationsStore } from '@/stores/evaluations'
 import { useUIStore } from '@/stores/ui'
 import { useCriteriaStore } from '@/stores/criteria'
+import api from '@/services/api'
 import StatCard from '@/components/common/StatCard.vue'
 import Button from '@/components/common/Button.vue'
 import ResultCard from './ResultCard.vue'
@@ -10,6 +11,9 @@ import ResultCard from './ResultCard.vue'
 const evaluationsStore = useEvaluationsStore()
 const criteriaStore = useCriteriaStore()
 const uiStore = useUIStore()
+
+const showExportMenu = ref(false)
+const exporting = ref(false)
 
 const evaluation = computed(() => {
   if (!uiStore.selectedEvaluationId) return null
@@ -49,6 +53,36 @@ function getRankBadge(rank: number): { bg: string; text: string } {
   if (rank === 3) return { bg: 'bg-amber-100', text: 'text-amber-700' }
   return { bg: 'bg-gray-100', text: 'text-gray-600' }
 }
+
+async function exportResults(format: 'json' | 'csv') {
+  if (!evaluation.value) return
+
+  exporting.value = true
+  showExportMenu.value = false
+
+  try {
+    const response = await api.get(`/evaluations/${evaluation.value.id}/export/${format}`, {
+      responseType: 'blob'
+    })
+
+    // Create download link
+    const blob = new Blob([response.data], {
+      type: format === 'json' ? 'application/json' : 'text/csv'
+    })
+    const url = window.URL.createObjectURL(blob)
+    const link = document.createElement('a')
+    link.href = url
+    link.download = `${evaluation.value.name}.${format}`
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+    window.URL.revokeObjectURL(url)
+  } catch (error) {
+    console.error('Export failed:', error)
+  } finally {
+    exporting.value = false
+  }
+}
 </script>
 
 <template>
@@ -72,7 +106,37 @@ function getRankBadge(rank: number): { bg: string; text: string } {
           </p>
         </div>
       </div>
-      <Button variant="secondary" size="sm">Export</Button>
+      <div class="relative">
+        <Button
+          variant="secondary"
+          size="sm"
+          :disabled="exporting"
+          @click="showExportMenu = !showExportMenu"
+        >
+          <span v-if="exporting">Exporting...</span>
+          <span v-else>Export</span>
+          <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </Button>
+        <div
+          v-if="showExportMenu"
+          class="absolute right-0 mt-1 w-40 bg-white rounded-md shadow-lg border border-gray-200 py-1 z-10"
+        >
+          <button
+            @click="exportResults('json')"
+            class="w-full px-4 py-2 text-left text-sm text-mine hover:bg-gray-50"
+          >
+            Export as JSON
+          </button>
+          <button
+            @click="exportResults('csv')"
+            class="w-full px-4 py-2 text-left text-sm text-mine hover:bg-gray-50"
+          >
+            Export as CSV
+          </button>
+        </div>
+      </div>
     </div>
 
     <div class="grid grid-cols-3 gap-4 mb-8">
