@@ -156,3 +156,4 @@ server_log.txt
 test_*.json
 /prompts/
 CREDENTIALS.md
+.playwright-mcp/

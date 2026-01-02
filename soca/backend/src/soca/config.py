@@ -33,7 +33,7 @@ class Settings(BaseSettings):
     ingenious_api_url: str = "http://localhost:8002"
     ingenious_api_key: str = ""
 
-    model_config = {"env_prefix": "SOCA_"}
+    model_config = {"env_prefix": "SOCA_", "env_file": ".env", "env_file_encoding": "utf-8"}
 
 
 settings = Settings()
