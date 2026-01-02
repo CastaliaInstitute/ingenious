@@ -2,23 +2,23 @@
 
 This backend hosts the Ingenious agent flow and serves as the central AI orchestration hub.
 Other applications (e.g., SoCa) call the /api/v1/chat endpoint for AI agent responses.
+
+Uses the Ingenious framework for agent definition and orchestration.
 """
 
-import json
 import logging
 import uuid
 from typing import Any
 
 from fastapi import Depends, FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from openai import AzureOpenAI
 
 from ingen_prompt_tuner.auth import authenticate_user, create_access_token, get_current_user
 from ingen_prompt_tuner.config import settings
+from ingen_prompt_tuner.conversation_flows.soca_evaluator import ConversationFlow
 from ingen_prompt_tuner.models import (
     ChatRequest,
     ChatResponseModel,
-    EvaluationResponseSchema,
     LoginRequest,
     LoginResponse,
     Prompt,
@@ -27,7 +27,6 @@ from ingen_prompt_tuner.models import (
     User,
 )
 from ingen_prompt_tuner.prompts import (
-    get_evaluation_system_prompt,
     get_prompt,
     get_prompts,
     get_revisions,
@@ -168,62 +167,25 @@ async def health() -> dict[str, str]:
 # AI Chat endpoint - used by SoCa for evaluations
 @app.post("/api/v1/chat", response_model=ChatResponseModel)
 async def chat(request: ChatRequest) -> ChatResponseModel:
-    """Process AI chat requests using Azure OpenAI with structured outputs.
+    """Process AI chat requests using Ingenious framework agents.
 
-    This endpoint uses OpenAI's structured outputs feature to guarantee
-    valid JSON responses that conform to the EvaluationResponseSchema.
+    This endpoint uses the Ingenious framework's ConversationFlow pattern
+    to evaluate submissions against criteria using AutoGen agents.
     SoCa calls this endpoint to evaluate submissions against criteria.
     """
-    if not settings.azure_openai_endpoint or not settings.azure_openai_key:
-        raise HTTPException(
-            status_code=503,
-            detail="Azure OpenAI not configured. Set PT_AZURE_OPENAI_ENDPOINT and PT_AZURE_OPENAI_KEY.",
-        )
-
     message_id = str(uuid.uuid4())
 
-    # Get the configurable system prompt from the prompts module
-    # This can be edited via the Prompt Tuner UI
-    system_prompt = get_evaluation_system_prompt("active")
-
     try:
-        client = AzureOpenAI(
-            azure_endpoint=settings.azure_openai_endpoint,
-            api_key=settings.azure_openai_key,
-            api_version=settings.azure_openai_api_version,
+        # Use the Ingenious-based conversation flow for evaluation
+        result, memory_summary, token_count = await ConversationFlow.get_conversation_response(
+            message=request.user_prompt,
+            topics=request.topic,
+            revision="active",
         )
 
-        # Use structured outputs with Pydantic model for guaranteed schema compliance
-        response = client.beta.chat.completions.parse(
-            model=settings.azure_openai_deployment,
-            messages=[
-                {"role": "system", "content": system_prompt},
-                {"role": "user", "content": request.user_prompt},
-            ],
-            response_format=EvaluationResponseSchema,
-            temperature=0.3,
-            max_tokens=2000,
+        logger.info(
+            f"Chat request processed with Ingenious agent: {message_id}, tokens: {token_count}"
         )
-
-        # Extract the parsed response (guaranteed to match schema)
-        parsed_response = response.choices[0].message.parsed
-        token_count = response.usage.total_tokens if response.usage else 0
-
-        if parsed_response:
-            result = parsed_response.model_dump_json()
-            logger.info(
-                f"Chat request processed with structured output: {message_id}, tokens: {token_count}"
-            )
-        else:
-            # Fallback if parsing failed (should be rare with structured outputs)
-            result = json.dumps(
-                {
-                    "criterionResults": [],
-                    "overallScore": 0,
-                    "summary": "Evaluation error: Structured output parsing failed",
-                }
-            )
-            logger.warning(f"Structured output parsing failed: {message_id}")
 
         # Log trace for this AI call
         workflow = request.conversation_flow or "soca-evaluator"
@@ -242,11 +204,13 @@ async def chat(request: ChatRequest) -> ChatResponseModel:
             message_id=message_id,
             agent_response=result,
             token_count=token_count,
-            memory_summary="Evaluation completed with structured output",
+            memory_summary=memory_summary,
         )
 
     except Exception as e:
         logger.error(f"Chat request failed: {e}")
+        import json
+
         error_response = json.dumps(
             {
                 "criterionResults": [],
