@@ -21,13 +21,9 @@
   <header class="bg-white border-b border-gray-200">
     <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
       <div class="flex items-center gap-8">
-        <div class="flex items-center gap-2">
-          <svg class="w-6 h-6 text-shiraz" viewBox="0 0 24 24" fill="currentColor">
-            <rect x="2" y="2" width="9" height="9" rx="1" />
-            <rect x="13" y="2" width="9" height="9" rx="1" />
-            <rect x="2" y="13" width="9" height="9" rx="1" />
-            <rect x="13" y="13" width="9" height="9" rx="1" opacity="0.5" />
-          </svg>
+        <div class="flex items-center gap-3">
+          <img src="/insight-logo.svg" alt="Insight" class="h-6" />
+          <span class="text-gray-300">|</span>
           <span class="text-lg font-semibold text-mine">Prompt Tuner</span>
         </div>
         <nav class="flex items-center gap-1">
