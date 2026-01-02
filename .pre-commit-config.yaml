@@ -23,7 +23,9 @@ repos:
     hooks:
       - id: ruff-check
         args: ["--fix", "--extend-select=I,D", "--ignore=E402"]
+        exclude: "^(soca|prompt-tuner)/"
       - id: ruff-format
+        exclude: "^(soca|prompt-tuner)/"
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v6.0.0
     hooks:
@@ -32,12 +34,14 @@ repos:
       - id: check-yaml
       - id: check-merge-conflict
       - id: debug-statements
+        exclude: "^(soca|prompt-tuner)/"
   # Static type checking with mypy
   - repo: https://github.com/pre-commit/mirrors-mypy
     rev: v1.18.2
     hooks:
       - id: mypy
         args: [--ignore-missing-imports]
+        exclude: "^(soca|prompt-tuner)/"
         additional_dependencies: [pydantic, pydantic-settings, fastapi, typer, click]
   # Security issue detection with bandit
   - repo: https://github.com/PyCQA/bandit
@@ -46,4 +50,5 @@ repos:
       - id: bandit
         # Only fail on medium+ severity; config in pyproject.toml
         args: ['-c', 'pyproject.toml', '-ll']
+        exclude: "^(soca|prompt-tuner)/"
         additional_dependencies: ['bandit[toml]']

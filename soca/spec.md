@@ -550,10 +550,3 @@ To view the mocks, open any HTML file in a browser:
 ```bash
 open soca/dashboard.html
 ```
-
-## Future Enhancements
-
-1. **Comparative mode**: Head-to-head submission comparison
-2. **Batch scheduling**: Schedule evaluations for later
-3. **Webhook notifications**: Notify on evaluation completion
-4. **Multi-language**: Support for non-English submissions

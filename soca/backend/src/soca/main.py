@@ -1,0 +1,213 @@
+"""SoCa FastAPI application."""
+
+import uuid
+from datetime import datetime
+from typing import Any, Optional
+
+from fastapi import BackgroundTasks, Depends, FastAPI, File, HTTPException, UploadFile
+from fastapi.middleware.cors import CORSMiddleware
+
+from soca.auth import authenticate_user, create_access_token, get_current_user
+from soca.config import settings
+from soca.db import db, get_templates
+from soca.evaluations import run_evaluation
+from soca.models import (
+    CreateCriteriaSetRequest,
+    CreateEvaluationRequest,
+    CriteriaSet,
+    Evaluation,
+    EvaluationStatus,
+    LoginRequest,
+    LoginResponse,
+    Submission,
+    User,
+)
+
+app = FastAPI(title="SoCa API", version="0.1.0")
+
+# CORS middleware
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+
+# Auth endpoints
+@app.post("/api/auth/login", response_model=LoginResponse)
+async def login(request: LoginRequest) -> LoginResponse:
+    """Login with email and password."""
+    user = authenticate_user(request.email, request.password)
+    if not user:
+        raise HTTPException(status_code=401, detail="Invalid credentials")
+    token = create_access_token({"sub": user.id, "email": user.email})
+    return LoginResponse(token=token, user=user)
+
+
+@app.get("/api/auth/me")
+async def get_me(current_user: User = Depends(get_current_user)) -> dict[str, Any]:
+    """Get current user info."""
+    return {"user": current_user}
+
+
+# Submissions endpoints
+@app.get("/api/submissions", response_model=list[Submission])
+async def list_submissions(current_user: User = Depends(get_current_user)) -> list[Submission]:
+    """List all submissions."""
+    return await db.list_submissions()
+
+
+@app.post("/api/submissions", response_model=Submission)
+async def create_submission(
+    file: UploadFile = File(...),
+    name: Optional[str] = None,
+    description: Optional[str] = None,
+    current_user: User = Depends(get_current_user),
+) -> Submission:
+    """Upload a new submission."""
+    content = await file.read()
+    file_size = len(content)
+
+    # Extract text (simplified - in production, use PDF parser, etc.)
+    extracted_text = ""
+    if file.content_type == "text/plain":
+        extracted_text = content.decode("utf-8", errors="ignore")
+    elif file.content_type == "text/markdown":
+        extracted_text = content.decode("utf-8", errors="ignore")
+
+    # For demo, store file URL as placeholder
+    # In production, upload to Azure Blob Storage
+    file_url = f"/files/{uuid.uuid4()}/{file.filename}"
+
+    submission = Submission(
+        id=str(uuid.uuid4()),
+        name=name or file.filename or "Untitled",
+        description=description,
+        fileUrl=file_url,
+        fileName=file.filename or "file",
+        fileType=file.content_type or "application/octet-stream",
+        fileSize=file_size,
+        extractedText=extracted_text[:10000],  # Limit text size
+        uploadedAt=datetime.utcnow().isoformat() + "Z",
+    )
+
+    return await db.create_submission(submission)
+
+
+@app.delete("/api/submissions/{submission_id}")
+async def delete_submission(
+    submission_id: str,
+    current_user: User = Depends(get_current_user),
+) -> dict[str, str]:
+    """Delete a submission."""
+    success = await db.delete_submission(submission_id)
+    if not success:
+        raise HTTPException(status_code=404, detail="Submission not found")
+    return {"status": "deleted"}
+
+
+# Criteria endpoints
+@app.get("/api/criteria-sets", response_model=list[CriteriaSet])
+async def list_criteria_sets(current_user: User = Depends(get_current_user)) -> list[CriteriaSet]:
+    """List all criteria sets."""
+    return await db.list_criteria_sets()
+
+
+@app.get("/api/criteria-templates", response_model=list[CriteriaSet])
+async def list_criteria_templates(
+    current_user: User = Depends(get_current_user),
+) -> list[CriteriaSet]:
+    """List available criteria templates."""
+    return get_templates()
+
+
+@app.post("/api/criteria-sets", response_model=CriteriaSet)
+async def create_criteria_set(
+    request: CreateCriteriaSetRequest,
+    current_user: User = Depends(get_current_user),
+) -> CriteriaSet:
+    """Create a new criteria set."""
+    criteria_set = CriteriaSet(
+        id=str(uuid.uuid4()),
+        name=request.name,
+        description=request.description,
+        criteria=request.criteria,
+        createdAt=datetime.utcnow().isoformat() + "Z",
+    )
+    return await db.create_criteria_set(criteria_set)
+
+
+# Evaluations endpoints
+@app.get("/api/evaluations", response_model=list[Evaluation])
+async def list_evaluations(current_user: User = Depends(get_current_user)) -> list[Evaluation]:
+    """List all evaluations."""
+    return await db.list_evaluations()
+
+
+@app.get("/api/evaluations/{evaluation_id}", response_model=Evaluation)
+async def get_evaluation(
+    evaluation_id: str,
+    current_user: User = Depends(get_current_user),
+) -> Evaluation:
+    """Get a specific evaluation."""
+    evaluation = await db.get_evaluation(evaluation_id)
+    if not evaluation:
+        raise HTTPException(status_code=404, detail="Evaluation not found")
+    return evaluation
+
+
+@app.post("/api/evaluations", response_model=Evaluation)
+async def create_evaluation(
+    request: CreateEvaluationRequest,
+    current_user: User = Depends(get_current_user),
+) -> Evaluation:
+    """Create a new evaluation."""
+    # Get criteria set name
+    criteria_set = await db.get_criteria_set(request.criteria_set_id)
+    criteria_set_name = criteria_set.name if criteria_set else None
+
+    evaluation = Evaluation(
+        id=str(uuid.uuid4()),
+        name=request.name,
+        status=EvaluationStatus.DRAFT,
+        submissionIds=request.submission_ids,
+        criteriaSetId=request.criteria_set_id,
+        criteriaSetName=criteria_set_name,
+        results=[],
+        createdAt=datetime.utcnow().isoformat() + "Z",
+    )
+    return await db.create_evaluation(evaluation)
+
+
+@app.post("/api/evaluations/{evaluation_id}/run", response_model=Evaluation)
+async def run_evaluation_endpoint(
+    evaluation_id: str,
+    background_tasks: BackgroundTasks,
+    current_user: User = Depends(get_current_user),
+) -> Evaluation:
+    """Run an evaluation."""
+    evaluation = await db.get_evaluation(evaluation_id)
+    if not evaluation:
+        raise HTTPException(status_code=404, detail="Evaluation not found")
+
+    # Run evaluation (in demo mode, run synchronously for simplicity)
+    result = await run_evaluation(evaluation_id)
+    if not result:
+        raise HTTPException(status_code=500, detail="Evaluation failed")
+
+    return result
+
+
+# Health check
+@app.get("/health")
+async def health() -> dict[str, str]:
+    """Health check endpoint."""
+    return {"status": "healthy"}
+
+
+if __name__ == "__main__":
+    import uvicorn
+
+    uvicorn.run(app, host=settings.host, port=settings.port)  # type: ignore[arg-type]
