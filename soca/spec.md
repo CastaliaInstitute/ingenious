@@ -1,282 +1,32 @@
-# SoCa (Submission over Criteria) - Technical Specification
+# SoCa (Submission over Criteria) - User Stories Specification
 
 ## Overview
 
-SoCa is a standalone application for evaluating submissions against weighted criteria using AI-powered analysis. Users upload documents (PDF, text, or other formats), define evaluation criteria with weights and scoring scales, and receive detailed scores with narrative justifications for each submission.
+SoCa is a document evaluation application that uses AI to score submissions against weighted criteria. This specification defines all user stories required for a complete implementation.
 
-## Architecture
+---
 
-### System Overview
+## CRITICAL: Ingenious Library Integration
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│                     SoCa Frontend                           │
-│                   (Vue 3 + Tailwind)                        │
-└─────────────────────────┬───────────────────────────────────┘
-                          │ REST API
-┌─────────────────────────▼───────────────────────────────────┐
-│                     SoCa Backend                            │
-│                   (FastAPI + Python)                        │
-│  ┌─────────────┐  ┌─────────────┐  ┌─────────────────────┐  │
-│  │ Auth Service│  │ Eval Service│  │ Storage Service     │  │
-│  └─────────────┘  └──────┬──────┘  └─────────────────────┘  │
-└──────────────────────────┼──────────────────────────────────┘
-                           │ Chat API
-┌──────────────────────────▼──────────────────────────────────┐
-│                   Ingenious Backend                          │
-│              (Agent Orchestration via API)                   │
-└─────────────────────────────────────────────────────────────┘
-                           │
-         ┌─────────────────┼─────────────────┐
-         ▼                 ▼                 ▼
-┌─────────────────┐ ┌─────────────┐ ┌─────────────────┐
-│  Azure Blob     │ │ Cosmos DB   │ │ Azure OpenAI    │
-│  (Submissions)  │ │ (SoCa Data) │ │ (LLM)           │
-└─────────────────┘ └─────────────┘ └─────────────────┘
-```
+**SoCa MUST integrate with the Ingenious library for all AI-powered evaluation functionality.**
 
-### Deployment Model
+The Ingenious library (`/ingenious/`) provides:
+- Multi-agent orchestration for complex evaluation workflows
+- Azure OpenAI integration for LLM-based analysis
+- Conversation flow management for structured evaluation processes
+- Token tracking and usage monitoring
 
-- **Frontend**: Vue 3 SPA served on separate port (e.g., 3000)
-- **Backend**: FastAPI application on dedicated port (e.g., 8001)
-- **Agent Processing**: Delegates to Ingenious API for AI evaluation
-- **Data Storage**: Separate Cosmos DB database from Ingenious
-- **File Storage**: Azure Blob Storage (dedicated container)
-- **Deployment**: Local development + Azure Container Apps ready
+### Integration Requirements
 
-### Tech Stack
+1. **API Communication**: SoCa backend calls Ingenious API (`/api/v1/chat`) for all AI evaluations
+2. **Conversation Flow**: Use `soca-evaluator` conversation flow for structured evaluation
+3. **Environment Variables**: Configure `INGENIOUS_API_URL` and `INGENIOUS_API_KEY`
+4. **Error Handling**: Gracefully handle Ingenious API failures with user-friendly messages
 
-| Component | Technology |
-|-----------|------------|
-| Frontend Framework | Vue 3 + Composition API |
-| Language | TypeScript (strict mode) |
-| Styling | Tailwind CSS |
-| State Management | Pinia |
-| Backend Framework | FastAPI (Python) |
-| Database | Azure Cosmos DB (separate from Ingenious) |
-| File Storage | Azure Blob Storage |
-| Agent Backend | Ingenious API |
-| Build Tool | Vite (frontend), uv (backend) |
-
-## Navigation Structure
-
-The application uses a simple 3-tab navigation:
-
-| Tab | Purpose |
-|-----|---------|
-| **Evaluations** | List and manage evaluation sessions |
-| **Submissions** | Upload and manage documents |
-| **Criteria** | Define and manage evaluation criteria |
-
-## Core Features
-
-### 1. Evaluations Tab (Main View)
-
-List and manage evaluation sessions.
-
-**Content**:
-- Stats cards: Completed, In Progress, Total Submissions
-- List of evaluations with status badges
-- Click to view evaluation results
-- "New Evaluation" button
-
-**Evaluation List Item**:
-- Evaluation name
-- Submission count and criteria set name
-- Status badge (Completed/In Progress)
-- Timestamp
-
-### 2. Evaluation Results View
-
-Display ranked results with expandable details.
-
-**Layout**:
-```
-+--------------------------------------------------+
-|  [Back] Evaluation Name                  [Export] |
-|  5 submissions · Grant Proposal Criteria          |
-+--------------------------------------------------+
-|  +------------------+  +------------------+       |
-|  | 78.4 Avg Score   |  | 92.5 Highest    |       |
-|  +------------------+  +------------------+       |
-+--------------------------------------------------+
-|  Results List                                     |
-|  +----------------------------------------------+|
-|  | [1] Quantum Computing for Drug Discovery     ||
-|  |     Dr. Sarah Chen et al.           92.5/100 ||
-|  |                                          [v] ||
-|  +----------------------------------------------+|
-|  | Criteria Breakdown (expanded)                ||
-|  | Scientific: 4.8  Innovation: 4.7  Method: 4.5||
-|  | Summary: Exceptional proposal...             ||
-|  +----------------------------------------------+|
-+--------------------------------------------------+
-```
-
-**Features**:
-- Click row to expand/collapse criteria breakdown
-- Scores per criterion with labels
-- AI-generated summary narrative
-- Export button (PDF, CSV, JSON)
-
-### 3. Submissions Tab
-
-Upload and manage documents for evaluation.
-
-**Supported Formats**:
-- PDF, TXT, MD, DOCX, RTF
-
-**Features**:
-- Drag-and-drop upload
-- Batch upload (multiple files)
-- List of submissions with metadata
-- Delete submissions
-
-### 4. Criteria Tab
-
-Define evaluation criteria sets.
-
-**Features**:
-- List of saved criteria sets
-- Pre-built templates gallery
-- Criteria builder with:
-  - Criterion name and description
-  - Weight slider (0-100%)
-  - Scoring scale (1-5 or 1-10)
-
-## Data Models
-
-### Submission
-
-```typescript
-interface Submission {
-  id: string;
-  name: string;
-  description?: string;
-  fileUrl: string;
-  fileName: string;
-  fileType: string;
-  fileSize: number;
-  extractedText: string;
-  uploadedAt: string;
-}
-```
-
-### Criteria Set
-
-```typescript
-interface CriteriaSet {
-  id: string;
-  name: string;
-  description?: string;
-  criteria: Criterion[];
-  createdAt: string;
-}
-
-interface Criterion {
-  id: string;
-  name: string;
-  description: string;
-  weight: number;        // 0-100, all should sum to 100
-  maxScore: number;      // e.g., 5 or 10
-}
-```
-
-### Evaluation
-
-```typescript
-interface Evaluation {
-  id: string;
-  name: string;
-  status: 'draft' | 'running' | 'completed' | 'failed';
-  submissionIds: string[];
-  criteriaSetId: string;
-  results: EvaluationResult[];
-  createdAt: string;
-  completedAt?: string;
-}
-
-interface EvaluationResult {
-  submissionId: string;
-  overallScore: number;
-  criterionResults: CriterionResult[];
-  summary: string;
-}
-
-interface CriterionResult {
-  criterionId: string;
-  score: number;
-  narrative: string;
-}
-```
-
-## Pre-built Criteria Templates
-
-1. **Grant Proposal Evaluation**
-   - Scientific Merit (25%)
-   - Innovation (20%)
-   - Methodology (20%)
-   - Team Qualifications (15%)
-   - Budget Justification (10%)
-   - Broader Impact (10%)
-
-2. **RFP Response Evaluation**
-   - Technical Approach (30%)
-   - Relevant Experience (25%)
-   - Cost Effectiveness (20%)
-   - Timeline Feasibility (15%)
-   - Risk Mitigation (10%)
-
-3. **Code Review Criteria**
-   - Correctness (30%)
-   - Code Quality (25%)
-   - Performance (20%)
-   - Documentation (15%)
-   - Test Coverage (10%)
-
-4. **Academic Paper Review**
-   - Originality (25%)
-   - Significance (20%)
-   - Technical Quality (25%)
-   - Clarity (15%)
-   - References (15%)
-
-## API Design
-
-### SoCa Backend API
-
-```
-# Authentication
-POST /api/auth/login
-GET  /api/auth/me
-
-# Submissions
-GET    /api/submissions
-POST   /api/submissions
-DELETE /api/submissions/{id}
-
-# Criteria
-GET    /api/criteria-sets
-POST   /api/criteria-sets
-GET    /api/criteria-templates
-
-# Evaluations
-GET    /api/evaluations
-POST   /api/evaluations
-GET    /api/evaluations/{id}
-POST   /api/evaluations/{id}/run
-GET    /api/evaluations/{id}/export/{format}
-```
-
-### Integration with Ingenious
-
-SoCa backend calls Ingenious API for AI-powered evaluation:
+### Example Integration Pattern
 
 ```python
-async def evaluate_submission(
-    submission: Submission,
-    criteria: CriteriaSet
-) -> EvaluationResult:
+async def evaluate_with_ingenious(submission: Submission, criteria: CriteriaSet) -> EvaluationResult:
     response = await ingenious_client.post(
         "/api/v1/chat",
         json={
@@ -286,267 +36,440 @@ async def evaluate_submission(
         },
         headers={"Authorization": f"Bearer {ingenious_token}"}
     )
-    return parse_evaluation_response(response.json())
+    return parse_structured_response(response.json())
 ```
 
-## Authentication
+---
 
-SoCa has its own authentication, independent from Ingenious.
+## Epic 1: Authentication & Authorization
 
-**Configuration**:
-```env
-SOCA_AUTH_ENABLED=true
-SOCA_JWT_SECRET=<secret>
-SOCA_ADMIN_USER=admin
-SOCA_ADMIN_PASSWORD=<hashed>
-```
+### US-1.1: User Login
+**As a** user
+**I want to** log in with my email and password
+**So that** I can access the application securely
 
-## UI/UX Design
+**Acceptance Criteria:**
+- [ ] Login page displays email and password fields
+- [ ] Submit button is disabled when fields are empty
+- [ ] Invalid credentials show error message "Invalid email or password"
+- [ ] Successful login redirects to Evaluations tab
+- [ ] JWT token is stored in localStorage
+- [ ] Token expires after configured duration (default: 24 hours)
 
-### Design Principles
+### US-1.2: User Logout
+**As a** logged-in user
+**I want to** log out of the application
+**So that** I can secure my session
 
-- **Minimalist**: Clean, uncluttered interface with focus on content
-- **White-label**: Neutral branding, easily customizable
-- **Responsive**: Support for desktop, tablet, and mobile
+**Acceptance Criteria:**
+- [ ] Logout button visible in header when authenticated
+- [ ] Clicking logout clears localStorage token
+- [ ] User is redirected to login page
+- [ ] All protected API calls fail after logout
 
-### Brand Colors (Insight)
+### US-1.3: Session Persistence
+**As a** user
+**I want to** remain logged in when I refresh the page
+**So that** I don't have to re-authenticate constantly
 
-```css
---shiraz: #AE0A46;      /* Accent/primary actions */
---mine-shaft: #222222;  /* Primary text */
---taupe: #3E332D;       /* Secondary text */
---desert-storm: #F7F6F5; /* Background */
---white: #FFFFFF;       /* Cards/panels */
-```
+**Acceptance Criteria:**
+- [ ] Valid token in localStorage auto-authenticates on page load
+- [ ] Expired tokens redirect to login page
+- [ ] Invalid tokens are cleared and user sees login page
 
-### Typography
+### US-1.4: Protected Routes
+**As a** system
+**I want to** protect all application routes
+**So that** unauthenticated users cannot access functionality
 
-- **Font**: Inter (Google Fonts)
-- **Weights**: 400 (regular), 500 (medium), 600 (semibold)
+**Acceptance Criteria:**
+- [ ] All tabs require authentication
+- [ ] Direct URL access without token redirects to login
+- [ ] API calls without valid token return 401
 
-### Layout Structure
+---
 
-```
-+--------------------------------------------------+
-|  [Logo] SoCa   [Evaluations] [Submissions] [Criteria]
-|                                    user@email    |
-+--------------------------------------------------+
-|                                                  |
-|  Main Content Area                               |
-|  (Tab-specific content)                          |
-|                                                  |
-+--------------------------------------------------+
-```
+## Epic 2: Submissions Management
 
-### Component Styling
+### US-2.1: View Submissions List
+**As a** user
+**I want to** see all my uploaded submissions
+**So that** I can manage my documents
 
-- **Cards**: White background, 1px gray-200 border, rounded-lg
-- **Buttons**:
-  - Primary: Shiraz background, white text
-  - Secondary: Desert-storm background, taupe text
-- **Status Badges**:
-  - Completed: Green background
-  - In Progress: Amber background
-- **Score Colors**:
-  - High (80+): Green
-  - Medium (60-79): Amber
-  - Low (<60): Orange
+**Acceptance Criteria:**
+- [ ] Submissions tab shows list of all uploaded documents
+- [ ] Each submission displays: name, file type icon, file size, upload date
+- [ ] List is sorted by upload date (newest first)
+- [ ] Empty state shows "No submissions yet" with upload prompt
 
-## Component Hierarchy
+### US-2.2: Upload Single Submission
+**As a** user
+**I want to** upload a document for evaluation
+**So that** it can be scored against criteria
 
-```
-App
-├── AuthGuard
-│   └── MainLayout
-│       ├── AppHeader
-│       │   ├── Logo
-│       │   ├── TabNavigation (Evaluations, Submissions, Criteria)
-│       │   └── UserEmail
-│       └── TabContent
-│           ├── EvaluationsPage
-│           │   ├── StatsGrid
-│           │   ├── EvaluationList
-│           │   │   └── EvaluationCard
-│           │   └── NewEvaluationButton
-│           ├── EvaluationResultsPage
-│           │   ├── SummaryStats
-│           │   ├── ResultsList
-│           │   │   └── ResultCard (expandable)
-│           │   └── ExportButton
-│           ├── SubmissionsPage
-│           │   ├── UploadDropzone
-│           │   └── SubmissionList
-│           └── CriteriaPage
-│               ├── CriteriaSetList
-│               ├── TemplateGallery
-│               └── CriteriaBuilder
-└── LoginPage
-```
+**Acceptance Criteria:**
+- [ ] Drag-and-drop zone accepts files
+- [ ] Click to browse files works
+- [ ] Supported formats: PDF, TXT, MD, DOCX, RTF
+- [ ] Unsupported formats show error message
+- [ ] Upload progress indicator displays
+- [ ] Success message confirms upload completion
+- [ ] New submission appears in list immediately
 
-## State Management (Pinia)
+### US-2.3: Batch Upload Submissions
+**As a** user
+**I want to** upload multiple documents at once
+**So that** I can efficiently add many submissions
 
-```typescript
-// stores/auth.ts
-interface AuthState {
-  user: User | null;
-  token: string | null;
-}
+**Acceptance Criteria:**
+- [ ] Multiple files can be selected or dropped
+- [ ] Each file shows individual progress
+- [ ] Failed uploads don't block successful ones
+- [ ] Summary shows success/failure count after batch completes
 
-// stores/evaluations.ts
-interface EvaluationsState {
-  evaluations: Evaluation[];
-  activeEvaluation: Evaluation | null;
-  loading: boolean;
-}
+### US-2.4: Delete Submission
+**As a** user
+**I want to** delete a submission
+**So that** I can remove unwanted documents
 
-// stores/submissions.ts
-interface SubmissionsState {
-  submissions: Submission[];
-  uploadProgress: number | null;
-}
+**Acceptance Criteria:**
+- [ ] Delete button visible on each submission item
+- [ ] Confirmation dialog asks "Delete [filename]?"
+- [ ] Successful deletion removes item from list
+- [ ] Cannot delete submissions used in running evaluations
 
-// stores/criteria.ts
-interface CriteriaState {
-  criteriaSets: CriteriaSet[];
-  templates: CriteriaSet[];
-}
+### US-2.5: View Submission Details
+**As a** user
+**I want to** view details of a submission
+**So that** I can verify its content
 
-// stores/ui.ts
-interface UIState {
-  activeTab: 'evaluations' | 'submissions' | 'criteria';
-  expandedResultId: string | null;
-}
-```
+**Acceptance Criteria:**
+- [ ] Click submission to see detail panel
+- [ ] Shows: filename, description, file type, size, upload date
+- [ ] Displays extracted text preview (first 500 characters)
+- [ ] Download original file button works
 
-## File Structure
+### US-2.6: Edit Submission Metadata
+**As a** user
+**I want to** edit the name and description of a submission
+**So that** I can organize my documents better
 
-### Frontend
+**Acceptance Criteria:**
+- [ ] Edit button opens inline edit mode
+- [ ] Can modify name and description fields
+- [ ] Save commits changes
+- [ ] Cancel discards changes
+- [ ] Validation prevents empty name
 
-```
-soca/
-├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   │   ├── common/
-│   │   │   ├── layout/
-│   │   │   ├── evaluations/
-│   │   │   ├── submissions/
-│   │   │   └── criteria/
-│   │   ├── stores/
-│   │   ├── services/
-│   │   ├── types/
-│   │   ├── App.vue
-│   │   └── main.ts
-│   ├── package.json
-│   ├── tailwind.config.js
-│   └── Dockerfile
-└── backend/
-    ├── src/
-    │   └── soca/
-    │       ├── main.py
-    │       ├── auth/
-    │       ├── submissions/
-    │       ├── criteria/
-    │       ├── evaluations/
-    │       └── db/
-    ├── pyproject.toml
-    └── Dockerfile
-```
+---
 
-## Tailwind Configuration
+## Epic 3: Criteria Management
 
-```javascript
-module.exports = {
-  content: ['./index.html', './src/**/*.{vue,js,ts}'],
-  theme: {
-    extend: {
-      colors: {
-        shiraz: '#AE0A46',
-        mine: '#222222',
-        taupe: '#3E332D',
-        desert: '#F7F6F5',
-      },
-      fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
-      },
-    },
-  },
-  plugins: [],
-}
-```
+### US-3.1: View Criteria Sets
+**As a** user
+**I want to** see my saved criteria sets
+**So that** I can reuse evaluation criteria
 
-## Docker Configuration
+**Acceptance Criteria:**
+- [ ] Criteria tab shows list of saved criteria sets
+- [ ] Each set displays: name, description, number of criteria, created date
+- [ ] Empty state shows templates gallery prominently
 
-### Frontend
-```dockerfile
-FROM node:20-alpine as build
-WORKDIR /app
-COPY package*.json ./
-RUN npm ci
-COPY . .
-RUN npm run build
+### US-3.2: View Criteria Templates
+**As a** user
+**I want to** browse pre-built criteria templates
+**So that** I can quickly start evaluating
 
-FROM nginx:alpine
-COPY --from=build /app/dist /usr/share/nginx/html
-EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
-```
+**Acceptance Criteria:**
+- [ ] Templates section shows 4 pre-built templates:
+  - Grant Proposal Evaluation
+  - RFP Response Evaluation
+  - Code Review Criteria
+  - Academic Paper Review
+- [ ] Each template shows name and brief description
+- [ ] Clicking template shows full criteria breakdown
 
-### Backend
-```dockerfile
-FROM python:3.13-slim
-WORKDIR /app
-RUN pip install uv
-COPY pyproject.toml .
-RUN uv sync --frozen
-COPY src/ src/
-EXPOSE 8001
-CMD ["uv", "run", "uvicorn", "soca.main:app", "--host", "0.0.0.0", "--port", "8001"]
-```
+### US-3.3: Use Template as Starting Point
+**As a** user
+**I want to** create a criteria set from a template
+**So that** I can customize it for my needs
 
-## Environment Configuration
+**Acceptance Criteria:**
+- [ ] "Use Template" button on each template
+- [ ] Opens criteria builder pre-filled with template values
+- [ ] User can modify before saving
+- [ ] Saved as new criteria set (template unchanged)
 
-### Frontend
-```env
-VITE_API_BASE_URL=http://localhost:8001
-VITE_AUTH_ENABLED=true
-```
+### US-3.4: Create Custom Criteria Set
+**As a** user
+**I want to** create my own criteria set from scratch
+**So that** I can define custom evaluation criteria
 
-### Backend
-```env
-SOCA_PORT=8001
-SOCA_AUTH_ENABLED=true
-SOCA_JWT_SECRET=<secret>
-SOCA_COSMOS_URI=https://soca-cosmos.documents.azure.com:443/
-SOCA_COSMOS_KEY=<key>
-SOCA_COSMOS_DATABASE=soca
-AZURE_STORAGE_CONNECTION_STRING=<connection-string>
-INGENIOUS_API_URL=http://localhost:8000
-INGENIOUS_API_KEY=<key>
-```
+**Acceptance Criteria:**
+- [ ] "New Criteria Set" button opens builder modal
+- [ ] Name field (required)
+- [ ] Description field (optional)
+- [ ] Add criterion button creates new criterion row
+- [ ] Each criterion has: name, description, weight (0-100%), max score (1-5 or 1-10)
+- [ ] Weight sliders show real-time percentage
+- [ ] Total weight must equal 100% to save
+- [ ] Validation error if weights don't sum to 100%
 
-## Export Formats
+### US-3.5: Edit Criteria Set
+**As a** user
+**I want to** modify an existing criteria set
+**So that** I can refine my evaluation criteria
 
-- **PDF Report**: Formatted document with rankings and narratives
-- **CSV/Excel**: Spreadsheet with all scores
-- **JSON**: Machine-readable complete export
+**Acceptance Criteria:**
+- [ ] Edit button opens builder with existing values
+- [ ] All fields editable
+- [ ] Can add/remove criteria
+- [ ] Changes saved on submit
+- [ ] Cannot edit criteria sets used in running evaluations
 
-## Testing Strategy
+### US-3.6: Delete Criteria Set
+**As a** user
+**I want to** delete a criteria set
+**So that** I can remove unused criteria
 
-- **Unit Tests**: Vitest (frontend), pytest (backend)
-- **E2E Tests**: Playwright
-- **Coverage Target**: 80%
+**Acceptance Criteria:**
+- [ ] Delete button with confirmation dialog
+- [ ] Cannot delete criteria sets used in any evaluation
+- [ ] Error message explains if deletion blocked
 
-## Mock UI Files
+### US-3.7: Reorder Criteria
+**As a** user
+**I want to** reorder criteria within a set
+**So that** I can control display priority
 
-The following HTML mockups demonstrate the UI design:
+**Acceptance Criteria:**
+- [ ] Drag handles on each criterion row
+- [ ] Drag-and-drop reorders criteria
+- [ ] Order persists on save
 
-| File | Description |
-|------|-------------|
-| `dashboard.html` | Evaluations tab with stats and evaluation list |
-| `evaluation-results.html` | Results view with ranked submissions and expandable details |
+---
 
-To view the mocks, open any HTML file in a browser:
-```bash
-open soca/dashboard.html
-```
+## Epic 4: Evaluation Workflow
+
+### US-4.1: View Evaluations Dashboard
+**As a** user
+**I want to** see an overview of all my evaluations
+**So that** I can track their status
+
+**Acceptance Criteria:**
+- [ ] Evaluations tab is the default landing page
+- [ ] Stats cards show: Completed count, In Progress count, Total Submissions
+- [ ] List shows all evaluations with: name, submission count, criteria set name, status badge, timestamp
+- [ ] Status badges: Draft (gray), Running (amber), Completed (green), Failed (red)
+- [ ] Sorted by created date (newest first)
+
+### US-4.2: Create New Evaluation
+**As a** user
+**I want to** create a new evaluation
+**So that** I can score submissions against criteria
+
+**Acceptance Criteria:**
+- [ ] "New Evaluation" button opens modal
+- [ ] Name field (required)
+- [ ] Submission multi-select (at least 1 required)
+- [ ] Criteria set dropdown (required)
+- [ ] Create button saves evaluation in Draft status
+- [ ] Cancel closes modal without saving
+
+### US-4.3: Run Evaluation
+**As a** user
+**I want to** run an evaluation
+**So that** the AI can score my submissions
+
+**Acceptance Criteria:**
+- [ ] "Run" button visible on Draft evaluations
+- [ ] Clicking Run changes status to "Running"
+- [ ] Progress indicator shows during processing
+- [ ] **CRITICAL**: Backend calls Ingenious API for each submission
+- [ ] Each submission evaluated against all criteria
+- [ ] AI generates score (1-5 or 1-10) per criterion
+- [ ] AI generates narrative justification per criterion
+- [ ] AI generates overall summary per submission
+- [ ] Overall score calculated as weighted average
+- [ ] Status changes to "Completed" when done
+- [ ] Status changes to "Failed" if Ingenious API errors
+
+### US-4.4: View Evaluation Results
+**As a** user
+**I want to** view the results of a completed evaluation
+**So that** I can see how submissions ranked
+
+**Acceptance Criteria:**
+- [ ] Click completed evaluation to view results
+- [ ] Header shows: evaluation name, submission count, criteria set name
+- [ ] Stats cards show: Average Score, Highest Score
+- [ ] Results list shows submissions ranked by overall score
+- [ ] Each result displays: rank badge, submission name, overall score
+- [ ] Color coding: 80+ green, 60-79 amber, <60 orange
+
+### US-4.5: Expand Result Details
+**As a** user
+**I want to** see detailed breakdown for each result
+**So that** I can understand the scoring
+
+**Acceptance Criteria:**
+- [ ] Click result row to expand/collapse details
+- [ ] Expanded view shows score per criterion
+- [ ] Each criterion displays: name, score, narrative justification
+- [ ] Overall AI-generated summary at bottom
+- [ ] Only one result expanded at a time
+
+### US-4.6: Delete Evaluation
+**As a** user
+**I want to** delete an evaluation
+**So that** I can remove unwanted evaluations
+
+**Acceptance Criteria:**
+- [ ] Delete button on evaluation list items
+- [ ] Confirmation dialog required
+- [ ] Cannot delete running evaluations
+- [ ] Successful deletion removes from list
+
+---
+
+## Epic 5: Export & Reporting
+
+### US-5.1: Export to JSON
+**As a** user
+**I want to** export evaluation results to JSON
+**So that** I can integrate with other systems
+
+**Acceptance Criteria:**
+- [ ] Export dropdown on results page
+- [ ] "Export as JSON" option
+- [ ] Downloads file named `[evaluation-name].json`
+- [ ] JSON contains: evaluation metadata, all results with scores and narratives
+
+### US-5.2: Export to CSV
+**As a** user
+**I want to** export evaluation results to CSV
+**So that** I can analyze in spreadsheet software
+
+**Acceptance Criteria:**
+- [ ] "Export as CSV" option in dropdown
+- [ ] Downloads file named `[evaluation-name].csv`
+- [ ] Columns: Rank, Submission, Overall Score, [each criterion], Summary
+- [ ] One row per submission
+
+### US-5.3: Export to PDF (Future)
+**As a** user
+**I want to** export evaluation results to PDF
+**So that** I can share formatted reports
+
+**Acceptance Criteria:**
+- [ ] "Export as PDF" option in dropdown
+- [ ] Generates formatted PDF with:
+  - Header with evaluation name and date
+  - Summary statistics
+  - Ranked results with full narratives
+  - Page breaks between submissions
+
+---
+
+## Epic 6: Error Handling & Edge Cases
+
+### US-6.1: Handle Ingenious API Unavailable
+**As a** user
+**I want to** see a clear error when AI service is unavailable
+**So that** I understand why evaluation failed
+
+**Acceptance Criteria:**
+- [ ] If Ingenious API unreachable, evaluation status = "Failed"
+- [ ] Error message: "AI evaluation service unavailable. Please try again later."
+- [ ] User can retry evaluation
+
+### US-6.2: Handle Large Documents
+**As a** user
+**I want to** upload large documents without issues
+**So that** I can evaluate comprehensive submissions
+
+**Acceptance Criteria:**
+- [ ] Maximum file size: 10MB
+- [ ] Documents over limit show clear error
+- [ ] Text extraction truncates at 50,000 characters with warning
+
+### US-6.3: Handle Empty Submissions
+**As a** user
+**I want to** receive feedback if document has no extractable text
+**So that** I know evaluation may be limited
+
+**Acceptance Criteria:**
+- [ ] Warning shown if extracted text is empty
+- [ ] AI evaluation still runs with filename/metadata
+- [ ] Results may be lower quality (noted in summary)
+
+### US-6.4: Handle Concurrent Access
+**As a** system
+**I want to** prevent conflicts when same evaluation accessed concurrently
+**So that** data integrity is maintained
+
+**Acceptance Criteria:**
+- [ ] Running evaluation cannot be modified
+- [ ] Stale data detected and user prompted to refresh
+
+---
+
+## Epic 7: Performance & Optimization
+
+### US-7.1: Paginated Lists
+**As a** user
+**I want to** efficiently browse large lists
+**So that** the application remains responsive
+
+**Acceptance Criteria:**
+- [ ] Submissions list paginated (20 per page)
+- [ ] Evaluations list paginated (20 per page)
+- [ ] Load more / pagination controls visible
+
+### US-7.2: Optimistic UI Updates
+**As a** user
+**I want to** see immediate feedback on actions
+**So that** the app feels responsive
+
+**Acceptance Criteria:**
+- [ ] Uploads show in list immediately (with loading state)
+- [ ] Deletes remove from list immediately
+- [ ] Errors revert optimistic changes
+
+---
+
+## Non-Functional Requirements
+
+### Security
+- All API endpoints require JWT authentication
+- Passwords hashed with bcrypt
+- CORS configured for frontend origin only
+- HTTPS required in production
+
+### Performance
+- API response time < 500ms (excluding AI calls)
+- Frontend bundle < 500KB gzipped
+- Lighthouse score > 90
+
+### Accessibility
+- WCAG 2.1 AA compliance
+- Keyboard navigation support
+- Screen reader compatible
+
+### Browser Support
+- Chrome (last 2 versions)
+- Firefox (last 2 versions)
+- Safari (last 2 versions)
+- Edge (last 2 versions)
+
+---
+
+## Glossary
+
+| Term | Definition |
+|------|------------|
+| **Submission** | A document uploaded for evaluation |
+| **Criteria Set** | A collection of weighted evaluation criteria |
+| **Criterion** | A single evaluation dimension with weight and max score |
+| **Evaluation** | A scoring session matching submissions to a criteria set |
+| **Ingenious** | The AI agent orchestration library powering evaluations |
