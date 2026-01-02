@@ -112,7 +112,7 @@ SOCA_INGENIOUS_API_URL=http://localhost:8002
 SOCA_INGENIOUS_API_KEY=<api-key>
 ```
 
-Default admin credentials: `admin@soca.local` / `admin`
+Admin credentials are stored in the gitignored `CREDENTIALS.md` file at the repository root.
 
 ## Data Models
 

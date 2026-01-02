@@ -118,7 +118,7 @@ cd backend && uv run uvicorn ingen_prompt_tuner.main:app --host 0.0.0.0 --port 8
 cd frontend && npm run dev
 
 # Access: http://localhost:5174
-# Login: admin@prompttuner.local / admin
+# Login credentials: see CREDENTIALS.md at repository root
 ```
 
 ## Backend API Endpoints
