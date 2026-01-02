@@ -1,0 +1,165 @@
+"""Prompts module for managing AI agent prompts."""
+
+from ingen_prompt_tuner.models import Prompt, Revision
+
+# Default system prompt for SoCa evaluations (configurable via UI)
+DEFAULT_EVALUATION_SYSTEM_PROMPT = """You are an expert document evaluator. You evaluate submissions against specific criteria.
+
+Rules:
+1. Each criterion score must be between 1 and the max score specified
+2. Overall score must be the weighted average (0-100)
+3. Narratives should be 1-2 sentences each
+4. Be objective and fair in your assessment
+5. Use the exact criterionId values provided in the request"""
+
+
+def get_revisions() -> list[Revision]:
+    """Get all revisions."""
+    return [
+        Revision(
+            id="active",
+            name="active",
+            created_at="2024-01-15T10:00:00Z",
+            prompt_count=5,
+        ),
+        Revision(
+            id="production-v2",
+            name="production-v2",
+            created_at="2024-01-10T09:00:00Z",
+            prompt_count=5,
+        ),
+    ]
+
+
+def _get_base_prompts() -> list[Prompt]:
+    """Get base prompt templates."""
+    return [
+        Prompt(
+            filename="soca_evaluator_system.md",
+            description="System prompt for SoCa document evaluation agent",
+            content=DEFAULT_EVALUATION_SYSTEM_PROMPT,
+            size=len(DEFAULT_EVALUATION_SYSTEM_PROMPT),
+            tags=["system", "soca", "evaluation"],
+            variables=[],
+        ),
+        Prompt(
+            filename="router_prompt.jinja",
+            description="Routes user queries to appropriate agents",
+            content="""You are a routing agent for the {{ workflow }} workflow.
+Your job is to analyze the user's query and determine which agent should handle it.
+
+Available agents:
+{% for agent in agents %}
+- {{ agent.name }}: {{ agent.description }}
+{% endfor %}
+
+User query: {{ user_query }}
+
+Respond with the name of the agent that should handle this query.""",
+            size=2150,
+            tags=["system", "routing"],
+            variables=["workflow", "agents", "user_query"],
+        ),
+        Prompt(
+            filename="sql_agent_prompt.jinja",
+            description="Generates SQL queries from natural language",
+            content="""You are a SQL generation agent.
+Given the user's natural language query, generate a SQL query for the {{ database }} database.
+
+Schema:
+{{ schema }}
+
+User query: {{ user_query }}
+
+Generate a valid SQL query that answers the user's question.""",
+            size=3300,
+            tags=["agent", "sql"],
+            variables=["database", "schema", "user_query"],
+        ),
+        Prompt(
+            filename="analyst_prompt.jinja",
+            description="Analyzes data and provides insights",
+            content="""You are a data analyst agent.
+Analyze the following data and provide insights.
+
+Data:
+{{ data }}
+
+User question: {{ user_query }}
+
+Provide a clear, concise analysis with key insights.""",
+            size=1800,
+            tags=["agent", "analysis"],
+            variables=["data", "user_query"],
+        ),
+        Prompt(
+            filename="summary_prompt.jinja",
+            description="Summarizes findings for user consumption",
+            content="""You are a summary agent.
+Summarize the following findings in a user-friendly format.
+
+Findings:
+{{ findings }}
+
+Original question: {{ user_query }}
+
+Provide a clear, helpful summary.""",
+            size=1200,
+            tags=["agent", "output"],
+            variables=["findings", "user_query"],
+        ),
+    ]
+
+
+# In-memory storage for edited prompts
+_edited_prompts: dict[str, dict[str, str]] = {}
+
+
+def get_prompts(revision: str) -> list[Prompt]:
+    """Get prompts for a revision, with any edits applied."""
+    prompts = []
+    for base_prompt in _get_base_prompts():
+        # Check if there's an edited version
+        if revision in _edited_prompts and base_prompt.filename in _edited_prompts[revision]:
+            edited_content = _edited_prompts[revision][base_prompt.filename]
+            prompts.append(
+                Prompt(
+                    filename=base_prompt.filename,
+                    description=base_prompt.description,
+                    content=edited_content,
+                    size=len(edited_content),
+                    tags=base_prompt.tags,
+                    variables=base_prompt.variables,
+                )
+            )
+        else:
+            prompts.append(base_prompt)
+    return prompts
+
+
+def get_prompt(revision: str, filename: str) -> Prompt | None:
+    """Get a specific prompt with any edits applied."""
+    prompts = get_prompts(revision)
+    for prompt in prompts:
+        if prompt.filename == filename:
+            return prompt
+    return None
+
+
+def update_prompt(revision: str, filename: str, content: str) -> bool:
+    """Update a prompt's content."""
+    if revision not in _edited_prompts:
+        _edited_prompts[revision] = {}
+    _edited_prompts[revision][filename] = content
+    return True
+
+
+def get_evaluation_system_prompt(revision: str = "active") -> str:
+    """Get the current evaluation system prompt for SoCa.
+
+    This is used by the chat endpoint to get the configurable system prompt.
+    """
+    prompt = get_prompt(revision, "soca_evaluator_system.md")
+    if prompt:
+        return prompt.content
+    return DEFAULT_EVALUATION_SYSTEM_PROMPT

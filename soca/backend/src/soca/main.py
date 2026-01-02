@@ -24,6 +24,7 @@ from soca.models import (
     LoginRequest,
     LoginResponse,
     Submission,
+    UpdateSubmissionRequest,
     User,
 )
 
@@ -112,6 +113,32 @@ async def delete_submission(
     return {"status": "deleted"}
 
 
+@app.patch("/api/submissions/{submission_id}", response_model=Submission)
+async def update_submission(
+    submission_id: str,
+    request: UpdateSubmissionRequest,
+    current_user: User = Depends(get_current_user),
+) -> Submission:
+    """Update a submission's metadata."""
+    existing = await db.get_submission(submission_id)
+    if not existing:
+        raise HTTPException(status_code=404, detail="Submission not found")
+
+    # Update only provided fields
+    updated = Submission(
+        id=existing.id,
+        name=request.name if request.name is not None else existing.name,
+        description=request.description if request.description is not None else existing.description,
+        fileUrl=existing.file_url,
+        fileName=existing.file_name,
+        fileType=existing.file_type,
+        fileSize=existing.file_size,
+        extractedText=existing.extracted_text,
+        uploadedAt=existing.uploaded_at,
+    )
+    return await db.update_submission(updated)
+
+
 # Criteria endpoints
 @app.get("/api/criteria-sets", response_model=list[CriteriaSet])
 async def list_criteria_sets(current_user: User = Depends(get_current_user)) -> list[CriteriaSet]:
@@ -141,6 +168,39 @@ async def create_criteria_set(
         createdAt=datetime.utcnow().isoformat() + "Z",
     )
     return await db.create_criteria_set(criteria_set)
+
+
+@app.patch("/api/criteria-sets/{criteria_set_id}", response_model=CriteriaSet)
+async def update_criteria_set(
+    criteria_set_id: str,
+    request: CreateCriteriaSetRequest,
+    current_user: User = Depends(get_current_user),
+) -> CriteriaSet:
+    """Update a criteria set."""
+    existing = await db.get_criteria_set(criteria_set_id)
+    if not existing:
+        raise HTTPException(status_code=404, detail="Criteria set not found")
+
+    updated = CriteriaSet(
+        id=criteria_set_id,
+        name=request.name,
+        description=request.description,
+        criteria=request.criteria,
+        createdAt=existing.createdAt,
+    )
+    return await db.update_criteria_set(updated)
+
+
+@app.delete("/api/criteria-sets/{criteria_set_id}")
+async def delete_criteria_set(
+    criteria_set_id: str,
+    current_user: User = Depends(get_current_user),
+) -> dict[str, str]:
+    """Delete a criteria set."""
+    success = await db.delete_criteria_set(criteria_set_id)
+    if not success:
+        raise HTTPException(status_code=404, detail="Criteria set not found")
+    return {"status": "deleted"}
 
 
 # Evaluations endpoints
@@ -217,13 +277,13 @@ async def export_evaluation(
 
     # Get submissions for names
     submissions_map = {}
-    for sid in evaluation.submissionIds:
+    for sid in evaluation.submission_ids:
         sub = await db.get_submission(sid)
         if sub:
             submissions_map[sid] = sub
 
     # Get criteria set for criterion names
-    criteria_set = await db.get_criteria_set(evaluation.criteriaSetId)
+    criteria_set = await db.get_criteria_set(evaluation.criteria_set_id)
     criteria_map = {}
     if criteria_set:
         for c in criteria_set.criteria:
@@ -236,24 +296,24 @@ async def export_evaluation(
                 "id": evaluation.id,
                 "name": evaluation.name,
                 "status": evaluation.status.value,
-                "criteriaSet": evaluation.criteriaSetName,
-                "createdAt": evaluation.createdAt,
-                "completedAt": evaluation.completedAt,
+                "criteriaSet": evaluation.criteria_set_name,
+                "createdAt": evaluation.created_at,
+                "completedAt": evaluation.completed_at,
             },
             "results": [],
         }
         for result in evaluation.results:
-            sub = submissions_map.get(result.submissionId)
+            sub = submissions_map.get(result.submission_id)
             result_data = {
-                "submission": sub.name if sub else result.submissionId,
-                "overallScore": result.overallScore,
+                "submission": sub.name if sub else result.submission_id,
+                "overallScore": result.overall_score,
                 "summary": result.summary,
                 "criteriaScores": [],
             }
-            for cr in result.criterionResults:
-                crit = criteria_map.get(cr.criterionId)
+            for cr in result.criterion_results:
+                crit = criteria_map.get(cr.criterion_id)
                 result_data["criteriaScores"].append({
-                    "criterion": crit.name if crit else cr.criterionId,
+                    "criterion": crit.name if crit else cr.criterion_id,
                     "score": cr.score,
                     "narrative": cr.narrative,
                 })
@@ -277,14 +337,14 @@ async def export_evaluation(
         writer.writerow(header)
 
         # Sort results by score descending
-        sorted_results = sorted(evaluation.results, key=lambda r: r.overallScore, reverse=True)
+        sorted_results = sorted(evaluation.results, key=lambda r: r.overall_score, reverse=True)
 
         for rank, result in enumerate(sorted_results, 1):
-            sub = submissions_map.get(result.submissionId)
-            row = [rank, sub.name if sub else result.submissionId, result.overallScore]
+            sub = submissions_map.get(result.submission_id)
+            row = [rank, sub.name if sub else result.submission_id, result.overall_score]
 
             # Add criterion scores in order
-            score_map = {cr.criterionId: cr.score for cr in result.criterionResults}
+            score_map = {cr.criterion_id: cr.score for cr in result.criterion_results}
             if criteria_set:
                 for c in criteria_set.criteria:
                     row.append(score_map.get(c.id, ""))

@@ -33,5 +33,10 @@ export const submissionsService = {
 
   async delete(id: string): Promise<void> {
     await api.delete(`/submissions/${id}`)
+  },
+
+  async update(id: string, data: { name?: string; description?: string }): Promise<Submission> {
+    const response = await api.patch<Submission>(`/submissions/${id}`, data)
+    return response.data
   }
 }

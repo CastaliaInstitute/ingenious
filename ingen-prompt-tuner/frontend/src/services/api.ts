@@ -8,7 +8,7 @@ const api = axios.create({
 })
 
 api.interceptors.request.use((config) => {
-  const token = localStorage.getItem('soca_token')
+  const token = localStorage.getItem('pt_token')
   if (token) {
     config.headers.Authorization = `Bearer ${token}`
   }
@@ -19,10 +19,10 @@ api.interceptors.response.use(
   (response) => response,
   (error) => {
     if (error.response?.status === 401) {
-      const hadToken = localStorage.getItem('soca_token')
-      localStorage.removeItem('soca_token')
-      // Only reload if user was authenticated (not during login)
-      if (hadToken) {
+      // Only clear token and reload for authenticated requests (not login)
+      const isLoginRequest = error.config?.url?.includes('/auth/login')
+      if (!isLoginRequest && localStorage.getItem('pt_token')) {
+        localStorage.removeItem('pt_token')
         window.location.reload()
       }
     }

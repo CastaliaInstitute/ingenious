@@ -12,19 +12,29 @@ SoCa is a standalone application for evaluating submissions against weighted cri
 ┌─────────────────────────────────────────────────────────────┐
 │                     SoCa Frontend                           │
 │                   (Vue 3 + Tailwind)                        │
+│                     Port: 5173                              │
 └─────────────────────────┬───────────────────────────────────┘
                           │ REST API
 ┌─────────────────────────▼───────────────────────────────────┐
 │                     SoCa Backend                            │
 │                   (FastAPI + Python)                        │
+│                     Port: 8001                              │
 │  ┌─────────────┐  ┌─────────────┐  ┌─────────────────────┐  │
 │  │ Auth Service│  │ Eval Service│  │ Storage Service     │  │
 │  └─────────────┘  └──────┬──────┘  └─────────────────────┘  │
 └──────────────────────────┼──────────────────────────────────┘
-                           │ Chat API
+                           │ REST API Call
+                           │ /api/v1/chat
 ┌──────────────────────────▼──────────────────────────────────┐
-│                   Ingenious Backend                          │
-│              (Agent Orchestration via API)                   │
+│              Ingen Prompt Tuner Backend                      │
+│           (Hosts Ingenious Agent Orchestration)              │
+│                     Port: 8002                              │
+│  ┌─────────────────────────────────────────────────────────┐│
+│  │  INGENIOUS LIBRARY (from PyPI)                          ││
+│  │  - Multi-agent orchestration                            ││
+│  │  - Conversation flows (e.g., soca-evaluator)            ││
+│  │  - Prompt template management                           ││
+│  └─────────────────────────────────────────────────────────┘│
 └─────────────────────────────────────────────────────────────┘
                            │
          ┌─────────────────┼─────────────────┐
@@ -37,12 +47,21 @@ SoCa is a standalone application for evaluating submissions against weighted cri
 
 ### Deployment Model
 
-- **Frontend**: Vue 3 SPA served on separate port (e.g., 3000)
-- **Backend**: FastAPI application on dedicated port (e.g., 8001)
-- **Agent Processing**: Delegates to Ingenious API for AI evaluation
-- **Data Storage**: Separate Cosmos DB database from Ingenious
+- **Frontend**: Vue 3 SPA served on port 5173
+- **Backend**: FastAPI application on port 8001
+- **AI Orchestration**: Calls Ingen Prompt Tuner backend (port 8002) for AI evaluation
+- **Data Storage**: Cosmos DB (separate database from Ingen Prompt Tuner)
 - **File Storage**: Azure Blob Storage (dedicated container)
 - **Deployment**: Local development + Azure Container Apps ready
+
+### Why SoCa Does NOT Use Ingenious Directly
+
+SoCa delegates all AI operations to Ingen Prompt Tuner because:
+
+1. **Centralized Prompt Management**: Prompts are managed in Ingen Prompt Tuner, so agent flows should execute there
+2. **Trace Visibility**: All traces appear in Ingen Prompt Tuner UI for debugging
+3. **Single AI Configuration**: Azure OpenAI credentials only configured once
+4. **Separation of Concerns**: SoCa focuses on document/criteria management
 
 ### Tech Stack
 
@@ -268,25 +287,31 @@ POST   /api/evaluations/{id}/run
 GET    /api/evaluations/{id}/export/{format}
 ```
 
-### Integration with Ingenious
+### Integration with Ingen Prompt Tuner
 
-SoCa backend calls Ingenious API for AI-powered evaluation:
+SoCa backend calls **Ingen Prompt Tuner API** for AI-powered evaluation (NOT the Ingenious library directly):
 
 ```python
+import httpx
+from uuid import uuid4
+
+INGEN_PROMPT_TUNER_API_URL = os.getenv("INGEN_PROMPT_TUNER_API_URL", "http://localhost:8002")
+
 async def evaluate_submission(
     submission: Submission,
     criteria: CriteriaSet
 ) -> EvaluationResult:
-    response = await ingenious_client.post(
-        "/api/v1/chat",
-        json={
-            "user_prompt": build_evaluation_prompt(submission, criteria),
-            "conversation_flow": "soca-evaluator",
-            "thread_id": str(uuid4()),
-        },
-        headers={"Authorization": f"Bearer {ingenious_token}"}
-    )
-    return parse_evaluation_response(response.json())
+    async with httpx.AsyncClient() as client:
+        response = await client.post(
+            f"{INGEN_PROMPT_TUNER_API_URL}/api/v1/chat",
+            json={
+                "user_prompt": build_evaluation_prompt(submission, criteria),
+                "conversation_flow": "soca-evaluator",
+                "thread_id": str(uuid4()),
+            },
+            headers={"Authorization": f"Bearer {ingen_prompt_tuner_token}"}
+        )
+        return parse_evaluation_response(response.json())
 ```
 
 ## Authentication
@@ -514,15 +539,22 @@ VITE_AUTH_ENABLED=true
 
 ### Backend
 ```env
+# SoCa Server Configuration
 SOCA_PORT=8001
 SOCA_AUTH_ENABLED=true
 SOCA_JWT_SECRET=<secret>
+
+# Database (Cosmos DB)
 SOCA_COSMOS_URI=https://soca-cosmos.documents.azure.com:443/
 SOCA_COSMOS_KEY=<key>
 SOCA_COSMOS_DATABASE=soca
+
+# File Storage (Azure Blob)
 AZURE_STORAGE_CONNECTION_STRING=<connection-string>
-INGENIOUS_API_URL=http://localhost:8000
-INGENIOUS_API_KEY=<key>
+
+# Ingen Prompt Tuner Integration (REQUIRED for AI evaluation)
+INGEN_PROMPT_TUNER_API_URL=http://localhost:8002
+INGEN_PROMPT_TUNER_API_KEY=<shared-api-key>
 ```
 
 ## Export Formats

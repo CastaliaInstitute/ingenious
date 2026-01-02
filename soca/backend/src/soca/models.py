@@ -132,3 +132,10 @@ class CreateCriteriaSetRequest(BaseModel):
     name: str
     description: Optional[str] = None
     criteria: list[Criterion]
+
+
+class UpdateSubmissionRequest(BaseModel):
+    """Update submission request."""
+
+    name: Optional[str] = None
+    description: Optional[str] = None

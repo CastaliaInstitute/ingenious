@@ -103,6 +103,16 @@ class Database:
         except CosmosResourceNotFoundError:
             return False
 
+    async def update_submission(self, submission: Submission) -> Submission:
+        """Update a submission."""
+        data = submission.model_dump(by_alias=True)
+        if self._use_memory:
+            self._memory_submissions[submission.id] = data
+        else:
+            self._init_cosmos()
+            self._submissions_container.upsert_item(data)
+        return submission
+
     # Criteria Sets
     async def list_criteria_sets(self) -> list[CriteriaSet]:
         """List all criteria sets."""
@@ -142,6 +152,30 @@ class Database:
             return CriteriaSet(**item)
         except CosmosResourceNotFoundError:
             return None
+
+    async def update_criteria_set(self, criteria_set: CriteriaSet) -> CriteriaSet:
+        """Update a criteria set."""
+        data = criteria_set.model_dump(by_alias=True)
+        if self._use_memory:
+            self._memory_criteria[criteria_set.id] = data
+        else:
+            self._init_cosmos()
+            self._criteria_container.upsert_item(data)
+        return criteria_set
+
+    async def delete_criteria_set(self, criteria_set_id: str) -> bool:
+        """Delete a criteria set."""
+        if self._use_memory:
+            if criteria_set_id in self._memory_criteria:
+                del self._memory_criteria[criteria_set_id]
+                return True
+            return False
+        self._init_cosmos()
+        try:
+            self._criteria_container.delete_item(criteria_set_id, partition_key=criteria_set_id)
+            return True
+        except CosmosResourceNotFoundError:
+            return False
 
     # Evaluations
     async def list_evaluations(self) -> list[Evaluation]:

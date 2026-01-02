@@ -4,6 +4,7 @@ import { useEvaluationsStore } from '@/stores/evaluations'
 import { useUIStore } from '@/stores/ui'
 import StatCard from '@/components/common/StatCard.vue'
 import Button from '@/components/common/Button.vue'
+import Spinner from '@/components/common/Spinner.vue'
 import EvaluationCard from './EvaluationCard.vue'
 import NewEvaluationModal from './NewEvaluationModal.vue'
 import type { Evaluation } from '@/types'
@@ -47,8 +48,8 @@ function handleNewEvaluation() {
       />
     </div>
 
-    <div v-if="evaluationsStore.loading" class="text-center py-8 text-taupe">
-      Loading evaluations...
+    <div v-if="evaluationsStore.loading" class="flex justify-center py-8">
+      <Spinner text="Loading evaluations..." />
     </div>
 
     <div v-else-if="evaluationsStore.error" class="text-center py-8 text-red-600">

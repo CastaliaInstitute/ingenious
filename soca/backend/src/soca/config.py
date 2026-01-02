@@ -29,8 +29,8 @@ class Settings(BaseSettings):
     storage_connection_string: str = ""
     storage_container: str = "soca-submissions"
 
-    # Ingenious API
-    ingenious_api_url: str = "http://localhost:8000"
+    # Prompt Tuner API (hosts AI evaluation via Ingenious)
+    ingenious_api_url: str = "http://localhost:8002"
     ingenious_api_key: str = ""
 
     model_config = {"env_prefix": "SOCA_"}

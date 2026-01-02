@@ -1,6 +1,7 @@
 """Evaluations module with AI-powered evaluation logic."""
 
-import random
+import json
+import logging
 import uuid
 from datetime import datetime
 from typing import Optional
@@ -18,80 +19,109 @@ from soca.models import (
     Submission,
 )
 
+logger = logging.getLogger(__name__)
+
 
 async def evaluate_submission(
     submission: Submission,
     criteria_set: CriteriaSet,
 ) -> EvaluationResult:
-    """Evaluate a single submission against criteria using AI."""
-    # Build evaluation prompt
+    """Evaluate a single submission against criteria using AI via Prompt Tuner."""
+    # Build evaluation prompt with criteria IDs for proper mapping
     criteria_text = "\n".join(
-        f"- {c.name} (weight: {c.weight}%, max score: {c.max_score}): {c.description}"
+        f"- {c.id}: {c.name} (weight: {c.weight}%, max score: {c.max_score}): {c.description}"
         for c in criteria_set.criteria
     )
 
-    prompt = f"""You are an expert evaluator. Evaluate the following submission against the given criteria.
+    prompt = f"""Evaluate the following submission against the given criteria.
 
 SUBMISSION:
 Title: {submission.name}
 Content:
-{submission.extracted_text[:8000]}
+{submission.extracted_text[:8000] if submission.extracted_text else 'No content available'}
 
-CRITERIA:
+CRITERIA (format: criterionId: Name (weight%, max score): Description):
 {criteria_text}
 
-For each criterion, provide:
-1. A score from 1 to the max score
-2. A brief narrative justification (1-2 sentences)
+For each criterion, provide a score and narrative. Use the exact criterionId values provided above."""
 
-Then provide:
-- An overall weighted score (0-100)
-- A summary paragraph (2-3 sentences)
+    # Call Prompt Tuner API for AI evaluation
+    prompt_tuner_url = settings.ingenious_api_url or "http://localhost:8002"
 
-Format your response as JSON:
-{{
-  "criterionResults": [
-    {{"criterionId": "...", "score": X.X, "narrative": "..."}},
-    ...
-  ],
-  "overallScore": XX.X,
-  "summary": "..."
-}}
-"""
+    try:
+        async with httpx.AsyncClient() as client:
+            logger.info(f"Calling Prompt Tuner API at {prompt_tuner_url}/api/v1/chat")
+            response = await client.post(
+                f"{prompt_tuner_url}/api/v1/chat",
+                json={
+                    "user_prompt": prompt,
+                    "thread_id": str(uuid.uuid4()),
+                    "conversation_flow": "soca-evaluator",
+                },
+                timeout=120.0,
+            )
 
-    # Call Ingenious API for AI evaluation
-    if settings.ingenious_api_url and settings.ingenious_api_key:
-        try:
-            async with httpx.AsyncClient() as client:
-                response = await client.post(
-                    f"{settings.ingenious_api_url}/api/v1/chat",
-                    json={
-                        "user_prompt": prompt,
-                        "conversation_flow": "echo-agent",
-                        "thread_id": str(uuid.uuid4()),
-                    },
-                    headers={"Authorization": f"Bearer {settings.ingenious_api_key}"},
-                    timeout=120.0,
-                )
-                if response.status_code == 200:
-                    # Parse response and extract evaluation
-                    # For now, use mock data
-                    pass
-        except Exception:
-            pass
+            if response.status_code == 200:
+                data = response.json()
+                agent_response = data.get("agent_response", "{}")
 
-    # Mock evaluation results for demo
+                # Parse the AI response
+                try:
+                    evaluation_data = json.loads(agent_response)
+
+                    # Map criterion results
+                    criterion_results = []
+                    for cr in evaluation_data.get("criterionResults", []):
+                        criterion_results.append(
+                            CriterionResult(
+                                criterionId=cr.get("criterionId", ""),
+                                score=float(cr.get("score", 0)),
+                                narrative=cr.get("narrative", ""),
+                            )
+                        )
+
+                    # If no criterion results from AI, create default ones
+                    if not criterion_results:
+                        for criterion in criteria_set.criteria:
+                            criterion_results.append(
+                                CriterionResult(
+                                    criterionId=criterion.id,
+                                    score=criterion.max_score / 2,
+                                    narrative="Evaluation pending - AI response incomplete.",
+                                )
+                            )
+
+                    logger.info(f"AI evaluation successful for submission {submission.id}")
+
+                    return EvaluationResult(
+                        submissionId=submission.id,
+                        submissionName=submission.name,
+                        submissionAuthor=None,
+                        overallScore=float(evaluation_data.get("overallScore", 0)),
+                        criterionResults=criterion_results,
+                        summary=evaluation_data.get("summary", "Evaluation completed."),
+                    )
+
+                except json.JSONDecodeError as e:
+                    logger.error(f"Failed to parse AI response: {e}")
+            else:
+                logger.error(f"Prompt Tuner API returned status {response.status_code}")
+
+    except httpx.TimeoutException:
+        logger.error("Prompt Tuner API request timed out")
+    except httpx.ConnectError:
+        logger.error(f"Could not connect to Prompt Tuner API at {prompt_tuner_url}")
+    except Exception as e:
+        logger.error(f"Error calling Prompt Tuner API: {e}")
+
+    # Fallback: return error result if AI evaluation fails
     criterion_results = []
-    total_weighted = 0.0
     for criterion in criteria_set.criteria:
-        score = round(random.uniform(3.0, criterion.max_score), 1)
-        normalized = score / criterion.max_score * 100
-        total_weighted += normalized * (criterion.weight / 100)
         criterion_results.append(
             CriterionResult(
                 criterionId=criterion.id,
-                score=score,
-                narrative=f"The submission demonstrates {'strong' if score > 4 else 'adequate'} performance in {criterion.name.lower()}.",
+                score=0,
+                narrative="AI evaluation unavailable - please check Prompt Tuner configuration.",
             )
         )
 
@@ -99,9 +129,9 @@ Format your response as JSON:
         submissionId=submission.id,
         submissionName=submission.name,
         submissionAuthor=None,
-        overallScore=round(total_weighted, 1),
+        overallScore=0,
         criterionResults=criterion_results,
-        summary=f"Overall, this submission shows {'excellent' if total_weighted > 80 else 'good' if total_weighted > 60 else 'moderate'} quality across the evaluation criteria.",
+        summary="AI evaluation failed. Please ensure Prompt Tuner backend is running and Azure OpenAI is configured.",
     )
 
 

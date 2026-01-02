@@ -3,10 +3,12 @@ import type { Submission } from '@/types'
 
 defineProps<{
   submission: Submission
+  selected?: boolean
 }>()
 
 defineEmits<{
   delete: []
+  click: []
 }>()
 
 function formatFileSize(bytes: number): string {
@@ -31,7 +33,13 @@ function getFileIcon(fileType: string): string {
 </script>
 
 <template>
-  <div class="bg-white rounded-lg border border-gray-200 p-4 flex items-center justify-between">
+  <div
+    @click="$emit('click')"
+    :class="[
+      'bg-white rounded-lg border p-4 flex items-center justify-between cursor-pointer transition-colors',
+      selected ? 'border-shiraz bg-desert' : 'border-gray-200 hover:border-gray-300'
+    ]"
+  >
     <div class="flex items-center gap-4">
       <div class="w-10 h-10 bg-desert rounded flex items-center justify-center">
         <svg class="w-5 h-5 text-taupe" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -46,7 +54,7 @@ function getFileIcon(fileType: string): string {
       </div>
     </div>
     <button
-      @click="$emit('delete')"
+      @click.stop="$emit('delete')"
       class="p-2 text-taupe hover:text-red-600 transition-colors"
       title="Delete submission"
     >

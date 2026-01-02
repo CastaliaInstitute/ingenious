@@ -45,6 +45,20 @@ export const useCriteriaStore = defineStore('criteria', () => {
     })
   }
 
+  async function updateCriteriaSet(id: string, data: Omit<CriteriaSet, 'id' | 'createdAt'>) {
+    const updated = await criteriaService.update(id, data)
+    const index = criteriaSets.value.findIndex(c => c.id === id)
+    if (index !== -1) {
+      criteriaSets.value[index] = updated
+    }
+    return updated
+  }
+
+  async function deleteCriteriaSet(id: string) {
+    await criteriaService.delete(id)
+    criteriaSets.value = criteriaSets.value.filter(c => c.id !== id)
+  }
+
   function getCriteriaSet(id: string) {
     return criteriaSets.value.find(c => c.id === id)
   }
@@ -58,6 +72,8 @@ export const useCriteriaStore = defineStore('criteria', () => {
     fetchTemplates,
     createCriteriaSet,
     useTemplate,
+    updateCriteriaSet,
+    deleteCriteriaSet,
     getCriteriaSet
   }
 })

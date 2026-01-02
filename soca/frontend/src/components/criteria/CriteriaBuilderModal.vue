@@ -1,8 +1,12 @@
 <script setup lang="ts">
-import { ref, computed } from 'vue'
+import { ref, computed, onMounted } from 'vue'
 import { useCriteriaStore } from '@/stores/criteria'
 import Button from '@/components/common/Button.vue'
-import type { Criterion } from '@/types'
+import type { Criterion, CriteriaSet } from '@/types'
+
+const props = defineProps<{
+  editingCriteriaSet?: CriteriaSet | null
+}>()
 
 const emit = defineEmits<{
   close: []
@@ -10,13 +14,27 @@ const emit = defineEmits<{
 
 const criteriaStore = useCriteriaStore()
 
+const isEditing = computed(() => !!props.editingCriteriaSet)
 const name = ref('')
 const description = ref('')
 const criteria = ref<Omit<Criterion, 'id'>[]>([
   { name: '', description: '', weight: 25, maxScore: 5 }
 ])
-const creating = ref(false)
+const saving = ref(false)
 const error = ref<string | null>(null)
+
+onMounted(() => {
+  if (props.editingCriteriaSet) {
+    name.value = props.editingCriteriaSet.name
+    description.value = props.editingCriteriaSet.description || ''
+    criteria.value = props.editingCriteriaSet.criteria.map(c => ({
+      name: c.name,
+      description: c.description || '',
+      weight: c.weight,
+      maxScore: c.maxScore
+    }))
+  }
+})
 
 const totalWeight = computed(() =>
   criteria.value.reduce((sum, c) => sum + c.weight, 0)
@@ -32,7 +50,7 @@ function removeCriterion(index: number) {
   }
 }
 
-async function handleCreate() {
+async function handleSave() {
   if (!name.value) {
     error.value = 'Please enter a name'
     return
@@ -48,23 +66,29 @@ async function handleCreate() {
     return
   }
 
-  creating.value = true
+  saving.value = true
   error.value = null
 
   try {
-    await criteriaStore.createCriteriaSet({
+    const criteriaData = {
       name: name.value,
       description: description.value || undefined,
       criteria: criteria.value.map((c, i) => ({
         ...c,
         id: `criterion-${i}`
       }))
-    })
+    }
+
+    if (isEditing.value && props.editingCriteriaSet) {
+      await criteriaStore.updateCriteriaSet(props.editingCriteriaSet.id, criteriaData)
+    } else {
+      await criteriaStore.createCriteriaSet(criteriaData)
+    }
     emit('close')
   } catch (e) {
-    error.value = e instanceof Error ? e.message : 'Failed to create criteria set'
+    error.value = e instanceof Error ? e.message : `Failed to ${isEditing.value ? 'update' : 'create'} criteria set`
   } finally {
-    creating.value = false
+    saving.value = false
   }
 }
 </script>
@@ -73,7 +97,7 @@ async function handleCreate() {
   <div class="fixed inset-0 bg-black/50 flex items-center justify-center z-50 overflow-y-auto py-8">
     <div class="bg-white rounded-lg shadow-xl w-full max-w-2xl mx-4">
       <div class="px-6 py-4 border-b border-gray-200 flex items-center justify-between">
-        <h2 class="text-lg font-semibold text-mine">New Criteria Set</h2>
+        <h2 class="text-lg font-semibold text-mine">{{ isEditing ? 'Edit Criteria Set' : 'New Criteria Set' }}</h2>
         <button @click="emit('close')" class="text-taupe hover:text-mine">
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
@@ -187,8 +211,8 @@ async function handleCreate() {
 
       <div class="px-6 py-4 border-t border-gray-200 flex justify-end gap-2">
         <Button variant="secondary" @click="emit('close')">Cancel</Button>
-        <Button @click="handleCreate" :disabled="creating">
-          {{ creating ? 'Creating...' : 'Create' }}
+        <Button @click="handleSave" :disabled="saving">
+          {{ saving ? (isEditing ? 'Saving...' : 'Creating...') : (isEditing ? 'Save' : 'Create') }}
         </Button>
       </div>
     </div>

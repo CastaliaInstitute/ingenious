@@ -74,7 +74,7 @@ async function handleLogin() {
 
           <button
             type="submit"
-            :disabled="loading"
+            :disabled="loading || !email || !password"
             class="w-full bg-shiraz text-white py-2 px-4 rounded-md hover:bg-opacity-90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
           >
             <span v-if="loading">Signing in...</span>

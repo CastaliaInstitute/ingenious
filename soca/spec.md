@@ -6,37 +6,74 @@ SoCa is a document evaluation application that uses AI to score submissions agai
 
 ---
 
-## CRITICAL: Ingenious Library Integration
+## CRITICAL: Ingen Prompt Tuner Integration
 
-**SoCa MUST integrate with the Ingenious library for all AI-powered evaluation functionality.**
+**SoCa MUST call the Ingen Prompt Tuner backend for all AI-powered evaluation functionality.**
 
-The Ingenious library (`/ingenious/`) provides:
-- Multi-agent orchestration for complex evaluation workflows
-- Azure OpenAI integration for LLM-based analysis
-- Conversation flow management for structured evaluation processes
-- Token tracking and usage monitoring
+### Architecture Overview
+
+SoCa does NOT directly use the Ingenious library. Instead, it calls the **Ingen Prompt Tuner backend**, which hosts the Ingenious agent flow.
+
+```
+┌─────────────────────┐       ┌──────────────────────────────┐
+│   SoCa Frontend     │       │  Ingen Prompt Tuner Backend  │
+│   (Vue 3)           │       │  (Hosts Ingenious Agent Flow)│
+└─────────┬───────────┘       │  Port: 8002                  │
+          │                   └──────────────┬───────────────┘
+          ▼                                  │
+┌─────────────────────┐                      ▼
+│   SoCa Backend      │  ─────────────►  Azure OpenAI
+│   (FastAPI)         │  REST API Call   (via Ingenious)
+│   Port: 8001        │  /api/v1/chat
+└─────────────────────┘
+```
+
+### Why SoCa Calls Ingen Prompt Tuner
+
+- **Centralized AI Orchestration**: All AI logic lives in one service
+- **Prompt Management**: Ingen Prompt Tuner manages prompts used for evaluation
+- **Trace Visibility**: All evaluation traces visible in Ingen Prompt Tuner UI
+- **Separation of Concerns**: SoCa focuses on submission/criteria management, not AI
 
 ### Integration Requirements
 
-1. **API Communication**: SoCa backend calls Ingenious API (`/api/v1/chat`) for all AI evaluations
+1. **API Communication**: SoCa backend calls Ingen Prompt Tuner API (`/api/v1/chat`)
 2. **Conversation Flow**: Use `soca-evaluator` conversation flow for structured evaluation
-3. **Environment Variables**: Configure `INGENIOUS_API_URL` and `INGENIOUS_API_KEY`
-4. **Error Handling**: Gracefully handle Ingenious API failures with user-friendly messages
+3. **Environment Variables**: Configure `INGEN_PROMPT_TUNER_API_URL`
+4. **Error Handling**: Gracefully handle API failures with user-friendly messages
 
 ### Example Integration Pattern
 
 ```python
-async def evaluate_with_ingenious(submission: Submission, criteria: CriteriaSet) -> EvaluationResult:
-    response = await ingenious_client.post(
-        "/api/v1/chat",
-        json={
-            "user_prompt": build_evaluation_prompt(submission, criteria),
-            "conversation_flow": "soca-evaluator",
-            "thread_id": str(uuid4()),
-        },
-        headers={"Authorization": f"Bearer {ingenious_token}"}
-    )
-    return parse_structured_response(response.json())
+# SoCa backend calling Ingen Prompt Tuner for AI evaluation
+import httpx
+from uuid import uuid4
+
+INGEN_PROMPT_TUNER_API_URL = "http://localhost:8002"
+
+async def evaluate_with_ai(submission: Submission, criteria: CriteriaSet) -> EvaluationResult:
+    async with httpx.AsyncClient() as client:
+        response = await client.post(
+            f"{INGEN_PROMPT_TUNER_API_URL}/api/v1/chat",
+            json={
+                "user_prompt": build_evaluation_prompt(submission, criteria),
+                "conversation_flow": "soca-evaluator",
+                "thread_id": str(uuid4()),
+            },
+            headers={"Authorization": f"Bearer {ingen_prompt_tuner_token}"}
+        )
+        return parse_structured_response(response.json())
+```
+
+### Required Configuration
+
+```env
+# SoCa Backend
+SOCA_PORT=8001
+
+# Ingen Prompt Tuner API (where SoCa sends AI requests)
+INGEN_PROMPT_TUNER_API_URL=http://localhost:8002
+INGEN_PROMPT_TUNER_API_KEY=<shared-api-key>
 ```
 
 ---

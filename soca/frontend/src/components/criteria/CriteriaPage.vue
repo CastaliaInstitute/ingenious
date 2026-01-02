@@ -5,9 +5,11 @@ import Button from '@/components/common/Button.vue'
 import CriteriaSetCard from './CriteriaSetCard.vue'
 import TemplateCard from './TemplateCard.vue'
 import CriteriaBuilderModal from './CriteriaBuilderModal.vue'
+import type { CriteriaSet } from '@/types'
 
 const criteriaStore = useCriteriaStore()
 const showBuilder = ref(false)
+const editingCriteriaSet = ref<CriteriaSet | null>(null)
 
 onMounted(() => {
   criteriaStore.fetchCriteriaSets()
@@ -19,6 +21,22 @@ function handleUseTemplate(templateId: string) {
   if (name) {
     criteriaStore.useTemplate(templateId, name)
   }
+}
+
+function handleEdit(criteriaSet: CriteriaSet) {
+  editingCriteriaSet.value = criteriaSet
+  showBuilder.value = true
+}
+
+function handleDelete(id: string) {
+  if (confirm('Are you sure you want to delete this criteria set?')) {
+    criteriaStore.deleteCriteriaSet(id)
+  }
+}
+
+function handleCloseBuilder() {
+  showBuilder.value = false
+  editingCriteriaSet.value = null
 }
 </script>
 
@@ -39,6 +57,8 @@ function handleUseTemplate(templateId: string) {
           v-for="criteriaSet in criteriaStore.criteriaSets"
           :key="criteriaSet.id"
           :criteria-set="criteriaSet"
+          @edit="handleEdit"
+          @delete="handleDelete"
         />
       </div>
     </div>
@@ -57,7 +77,8 @@ function handleUseTemplate(templateId: string) {
 
     <CriteriaBuilderModal
       v-if="showBuilder"
-      @close="showBuilder = false"
+      :editing-criteria-set="editingCriteriaSet"
+      @close="handleCloseBuilder"
     />
   </div>
 </template>

@@ -10,6 +10,38 @@ Master Prompt
     <def id="compush_cmd">/compush</def>
   </definitions>
 
+  <!-- ========== LOCAL DEVELOPMENT WITH AZURE RESOURCES ========== -->
+  <local_development type="REQUIRED">
+    <mandate>Run all applications LOCALLY for development and testing, but connect to Azure resources.</mandate>
+
+    <apps>
+      <app name="SoCa">
+        <backend>Port 8001 - uvicorn soca.main:app --port 8001</backend>
+        <frontend>Port 5173 - npm run dev --port 5173</frontend>
+      </app>
+      <app name="Prompt Tuner">
+        <backend>Port 8002 - uvicorn prompt_tuner.main:app --port 8002</backend>
+        <frontend>Port 5174 - npm run dev --port 5174</frontend>
+      </app>
+    </apps>
+
+    <azure_resources>
+      <resource_group>ingen-test</resource_group>
+      <cosmos_db>ingen-test-cosmos</cosmos_db>
+      <storage>ingentestblob</storage>
+      <tagging>Tag resources with "soca" or "prompt-tuner" as appropriate</tagging>
+      <cost>Only provision the CHEAPEST possible resources needed</cost>
+    </azure_resources>
+
+    <workflow>
+      <step>1. Start backend servers locally with Azure connection strings</step>
+      <step>2. Start frontend dev servers locally</step>
+      <step>3. Test using Playwright MCP against localhost URLs</step>
+      <step>4. After code changes, restart local servers (no Azure deployment needed for testing)</step>
+      <step>5. Run /compush only for final commit after validation passes</step>
+    </workflow>
+  </local_development>
+
   <!-- Primary Goal -->
   <goal>
     Work autonomously to validate the application end-to-end per all User Stories.

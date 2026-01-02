@@ -107,32 +107,40 @@ async function exportResults(format: 'json' | 'csv') {
         </div>
       </div>
       <div class="relative">
-        <Button
-          variant="secondary"
-          size="sm"
+        <button
           :disabled="exporting"
           @click="showExportMenu = !showExportMenu"
+          class="inline-flex items-center gap-2 px-4 py-2 bg-white border border-gray-200 rounded-lg text-sm font-medium text-mine hover:bg-gray-50 hover:border-gray-300 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
         >
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+          </svg>
           <span v-if="exporting">Exporting...</span>
           <span v-else>Export</span>
-          <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg class="w-3 h-3 text-taupe" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
           </svg>
-        </Button>
+        </button>
         <div
           v-if="showExportMenu"
-          class="absolute right-0 mt-1 w-40 bg-white rounded-md shadow-lg border border-gray-200 py-1 z-10"
+          class="absolute right-0 mt-2 w-44 bg-white rounded-lg shadow-lg border border-gray-200 py-1 z-10 overflow-hidden"
         >
           <button
             @click="exportResults('json')"
-            class="w-full px-4 py-2 text-left text-sm text-mine hover:bg-gray-50"
+            class="w-full px-4 py-2.5 text-left text-sm text-mine hover:bg-desert flex items-center gap-2 transition-colors"
           >
+            <svg class="w-4 h-4 text-taupe" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            </svg>
             Export as JSON
           </button>
           <button
             @click="exportResults('csv')"
-            class="w-full px-4 py-2 text-left text-sm text-mine hover:bg-gray-50"
+            class="w-full px-4 py-2.5 text-left text-sm text-mine hover:bg-desert flex items-center gap-2 transition-colors"
           >
+            <svg class="w-4 h-4 text-taupe" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+            </svg>
             Export as CSV
           </button>
         </div>
