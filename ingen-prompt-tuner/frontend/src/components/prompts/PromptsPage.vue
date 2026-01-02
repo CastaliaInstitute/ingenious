@@ -9,8 +9,11 @@
   const revisionsStore = useRevisionsStore()
   const editorStore = useEditorStore()
 
-  onMounted(() => {
-    revisionsStore.fetchPrompts()
+  onMounted(async () => {
+    await revisionsStore.fetchRevisions()
+    if (revisionsStore.activeRevision) {
+      await revisionsStore.fetchPrompts()
+    }
   })
 
   function handleRevisionChange(event: Event) {

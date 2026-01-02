@@ -33,7 +33,7 @@ from ingen_prompt_tuner.prompts import (
     get_revisions,
     update_prompt,
 )
-from ingen_prompt_tuner.traces import get_trace, get_traces
+from ingen_prompt_tuner.traces import create_trace_from_chat, get_trace, get_traces
 
 logger = logging.getLogger(__name__)
 
@@ -144,12 +144,17 @@ async def view_trace(
 async def get_stats(
     current_user: User = Depends(get_current_user),
 ) -> dict[str, int]:
-    """Get dashboard stats."""
+    """Get dashboard stats from real data."""
+    revisions = get_revisions()
+    prompts = get_prompts(revisions[0].name) if revisions else []
+    traces = get_traces(limit=1000)  # Get all traces for counting
+    workflows = set(t.workflow for t in traces)
+
     return {
-        "revisions": len(get_revisions()),
-        "promptFiles": 12,
-        "testRuns": 47,
-        "workflows": 4,
+        "revisions": len(revisions),
+        "promptFiles": len(prompts),
+        "testRuns": len(traces),
+        "workflows": len(workflows),
     }
 
 
@@ -219,6 +224,18 @@ async def chat(request: ChatRequest) -> ChatResponseModel:
                 }
             )
             logger.warning(f"Structured output parsing failed: {message_id}")
+
+        # Log trace for this AI call
+        workflow = request.conversation_flow or "soca-evaluator"
+        create_trace_from_chat(
+            trace_id=message_id,
+            thread_id=request.thread_id,
+            user_query=request.user_prompt,
+            agent_response=result,
+            token_count=token_count,
+            revision="active",
+            workflow=workflow,
+        )
 
         return ChatResponseModel(
             thread_id=request.thread_id,

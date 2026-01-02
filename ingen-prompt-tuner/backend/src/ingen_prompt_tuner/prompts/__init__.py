@@ -13,22 +13,20 @@ Rules:
 5. Use the exact criterionId values provided in the request"""
 
 
+# In-memory revision storage
+_revisions: dict[str, Revision] = {
+    "active": Revision(
+        id="active",
+        name="active",
+        created_at="2024-01-15T10:00:00Z",
+        prompt_count=5,
+    ),
+}
+
+
 def get_revisions() -> list[Revision]:
     """Get all revisions."""
-    return [
-        Revision(
-            id="active",
-            name="active",
-            created_at="2024-01-15T10:00:00Z",
-            prompt_count=5,
-        ),
-        Revision(
-            id="production-v2",
-            name="production-v2",
-            created_at="2024-01-10T09:00:00Z",
-            prompt_count=5,
-        ),
-    ]
+    return list(_revisions.values())
 
 
 def _get_base_prompts() -> list[Prompt]:

@@ -8,8 +8,11 @@
   const revisionsStore = useRevisionsStore()
   const tracesStore = useTracesStore()
 
-  onMounted(() => {
-    tracesStore.fetchTraces(revisionsStore.activeRevision)
+  onMounted(async () => {
+    await revisionsStore.fetchRevisions()
+    if (revisionsStore.activeRevision) {
+      tracesStore.fetchTraces(revisionsStore.activeRevision)
+    }
   })
 
   watch(

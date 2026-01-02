@@ -1,38 +1,32 @@
 import { defineStore } from 'pinia'
-import { ref, computed } from 'vue'
+import { ref } from 'vue'
 import type { Revision, Prompt } from '@/types'
 import { promptsService } from '@/services/prompts.service'
+import api from '@/services/api'
 
 export const useRevisionsStore = defineStore('revisions', () => {
-  const revisions = ref<Revision[]>([
-    {
-      id: 'quickstart-1',
-      name: 'quickstart-1',
-      createdAt: new Date().toISOString(),
-      promptCount: 4,
-    },
-    {
-      id: 'magical-crystal-51211a8b',
-      name: 'magical-crystal-51211a8b',
-      createdAt: new Date().toISOString(),
-      promptCount: 4,
-    },
-    {
-      id: 'production-v2',
-      name: 'production-v2',
-      createdAt: new Date().toISOString(),
-      promptCount: 4,
-    },
-  ])
-  const activeRevision = ref<string>('quickstart-1')
+  const revisions = ref<Revision[]>([])
+  const activeRevision = ref<string>('')
   const prompts = ref<Prompt[]>([])
   const loading = ref(false)
 
   async function fetchRevisions() {
-    // In production, fetch from API
+    try {
+      const response = await api.get('/revisions')
+      revisions.value = response.data
+      // Set active revision to first one if not already set
+      if (!activeRevision.value && revisions.value.length > 0) {
+        activeRevision.value = revisions.value[0].name
+        await fetchPrompts()
+      }
+    } catch (error) {
+      console.error('Failed to fetch revisions:', error)
+    }
   }
 
   async function fetchPrompts() {
+    if (!activeRevision.value) return
+
     loading.value = true
     try {
       prompts.value = await promptsService.list(activeRevision.value)

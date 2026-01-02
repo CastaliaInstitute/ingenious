@@ -28,3 +28,8 @@ build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/ingen_prompt_tuner"]
+
+[dependency-groups]
+dev = [
+    "mypy>=1.19.1",
+]
