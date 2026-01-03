@@ -7,7 +7,7 @@ export const tracesService = {
     if (revision) {
       params.append('revision', revision)
     }
-    params.append('limit', '50')
+    params.append('limit', '100')
 
     const response = await api.get(`/traces?${params.toString()}`)
     return response.data

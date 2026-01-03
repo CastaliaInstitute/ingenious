@@ -81,6 +81,8 @@ def add_trace(trace: ConversationTrace) -> None:
                     "input": agent.input,
                     "output": agent.output,
                     "token_usage": agent.token_usage,
+                    "system_prompt": agent.system_prompt,
+                    "user_prompt": agent.user_prompt,
                 }
                 for agent in trace.agents
             ],
@@ -176,6 +178,8 @@ def _item_to_trace(item: dict[str, Any]) -> ConversationTrace:
                 input=agent["input"],
                 output=agent["output"],
                 token_usage=agent["token_usage"],
+                system_prompt=agent.get("system_prompt", ""),
+                user_prompt=agent.get("user_prompt", ""),
             )
             for agent in item.get("agents", [])
         ],
@@ -190,9 +194,16 @@ def create_trace_from_chat(
     token_count: int,
     revision: str = "active",
     workflow: str = "soca-evaluator",
+    system_prompt: str = "",
+    user_prompt: str = "",
+    agent_name: str = "SoCa Evaluator",
 ) -> ConversationTrace:
     """Create and store a trace from a chat API call."""
     timestamp = datetime.now(timezone.utc).isoformat()
+
+    # Truncate prompts to reasonable sizes for storage
+    truncated_system = system_prompt[:5000] + "..." if len(system_prompt) > 5000 else system_prompt
+    truncated_user = user_prompt[:5000] + "..." if len(user_prompt) > 5000 else user_prompt
 
     trace = ConversationTrace(
         trace_id=trace_id,
@@ -204,13 +215,15 @@ def create_trace_from_chat(
         total_tokens=token_count,
         agents=[
             AgentTrace(
-                agent_name="SoCa Evaluator",
+                agent_name=agent_name,
                 order=1,
                 input=user_query[:1000] + "..." if len(user_query) > 1000 else user_query,
                 output=agent_response[:2000] + "..."
                 if len(agent_response) > 2000
                 else agent_response,
                 token_usage=token_count,
+                system_prompt=truncated_system,
+                user_prompt=truncated_user,
             )
         ],
     )

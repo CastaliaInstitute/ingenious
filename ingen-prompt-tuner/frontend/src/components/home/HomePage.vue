@@ -5,6 +5,7 @@
   import { tracesService } from '@/services/traces.service'
   import api from '@/services/api'
   import StatCard from '@/components/common/StatCard.vue'
+  import WorkflowDag from './WorkflowDag.vue'
   import type { ConversationTrace } from '@/types'
 
   const uiStore = useUIStore()
@@ -73,6 +74,10 @@
       <StatCard :value="stats.promptFiles" label="Prompt Files" />
       <StatCard :value="stats.testRuns" label="Test Runs" />
       <StatCard :value="stats.workflows" label="Workflows" />
+    </div>
+
+    <div class="mb-8">
+      <WorkflowDag />
     </div>
 
     <div class="grid grid-cols-2 gap-4 mb-8">

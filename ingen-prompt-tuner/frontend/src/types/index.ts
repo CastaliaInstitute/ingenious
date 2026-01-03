@@ -25,6 +25,8 @@ export interface AgentTrace {
   input: string
   output: string
   tokenUsage: number
+  systemPrompt: string
+  userPrompt: string
 }
 
 export interface ConversationTrace {

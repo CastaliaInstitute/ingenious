@@ -51,7 +51,7 @@ class ConversationFlowProtocol(Protocol):
         topics: Optional[list[str]] = None,
         revision: str = "active",
         **kwargs: Any,
-    ) -> tuple[str, str, int]:
+    ) -> tuple[str, str, int, str]:
         """Process a conversation message and return AI response.
 
         Args:
@@ -61,7 +61,7 @@ class ConversationFlowProtocol(Protocol):
             **kwargs: Additional flow-specific arguments.
 
         Returns:
-            Tuple of (result_json, memory_summary, token_count).
+            Tuple of (result_json, memory_summary, token_count, system_prompt).
         """
         ...
 
@@ -222,9 +222,21 @@ async def chat(request: ChatRequest) -> ChatResponseModel:
             f"Supported flows: {list(CONVERSATION_FLOWS.keys())}",
         )
 
+    # Determine agent name based on workflow
+    agent_names = {
+        "soca-evaluator": "SoCa Evaluator",
+        "criteria-generator": "Criteria Generator",
+    }
+    agent_name = agent_names.get(workflow, workflow)
+
     try:
         # Use the selected conversation flow
-        result, memory_summary, token_count = await flow_class.get_conversation_response(
+        (
+            result,
+            memory_summary,
+            token_count,
+            system_prompt,
+        ) = await flow_class.get_conversation_response(
             message=request.user_prompt,
             topics=request.topic,
             revision="active",
@@ -232,7 +244,7 @@ async def chat(request: ChatRequest) -> ChatResponseModel:
 
         logger.info(f"Chat request processed with {workflow}: {message_id}, tokens: {token_count}")
 
-        # Log trace for this AI call
+        # Log trace for this AI call with prompts
         create_trace_from_chat(
             trace_id=message_id,
             thread_id=request.thread_id,
@@ -241,6 +253,9 @@ async def chat(request: ChatRequest) -> ChatResponseModel:
             token_count=token_count,
             revision="active",
             workflow=workflow,
+            system_prompt=system_prompt,
+            user_prompt=request.user_prompt,
+            agent_name=agent_name,
         )
 
         return ChatResponseModel(

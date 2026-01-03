@@ -42,6 +42,8 @@ class AgentTrace(BaseModel):
     input: str
     output: str
     token_usage: int = Field(alias="tokenUsage")
+    system_prompt: str = Field(default="", alias="systemPrompt")
+    user_prompt: str = Field(default="", alias="userPrompt")
 
     model_config = {"populate_by_name": True}
 

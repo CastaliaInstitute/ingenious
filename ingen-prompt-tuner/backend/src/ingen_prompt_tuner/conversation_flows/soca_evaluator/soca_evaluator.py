@@ -39,7 +39,7 @@ class ConversationFlow:
         thread_chat_history: Optional[list[dict[str, Any]]] = None,
         chatrequest: Optional[ChatRequest] = None,
         revision: str = "active",
-    ) -> tuple[str, str, int]:
+    ) -> tuple[str, str, int, str]:
         """Get an evaluation response for the submission.
 
         Evaluates the submission against the provided criteria and returns
@@ -55,7 +55,7 @@ class ConversationFlow:
             revision: Prompt revision to use. Defaults to "active".
 
         Returns:
-            Tuple of (evaluation_result_json, memory_summary, token_count).
+            Tuple of (evaluation_result_json, memory_summary, token_count, system_prompt).
         """
         # Use provided message or extract from chatrequest
         if chatrequest:
@@ -168,4 +168,4 @@ Respond ONLY with valid JSON, no markdown formatting or additional text."""
             # Close the model client connection
             await model_client.close()
 
-        return result, memory_summary, token_count
+        return result, memory_summary, token_count, evaluation_system_prompt

@@ -1,7 +1,9 @@
 <script setup lang="ts">
   import { computed } from 'vue'
   import { useUIStore } from '@/stores/ui'
-  import type { ConversationTrace, AgentTrace } from '@/types'
+  import type { ConversationTrace } from '@/types'
+  import JsonViewer from './JsonViewer.vue'
+  import CollapsibleSection from './CollapsibleSection.vue'
 
   const props = defineProps<{
     trace: ConversationTrace
@@ -20,8 +22,11 @@
     const diff = now.getTime() - date.getTime()
     const minutes = Math.floor(diff / (1000 * 60))
     const hours = Math.floor(minutes / 60)
+    const days = Math.floor(hours / 24)
 
-    if (hours > 0) {
+    if (days > 0) {
+      return `${days} day${days > 1 ? 's' : ''} ago`
+    } else if (hours > 0) {
       return `${hours} hour${hours > 1 ? 's' : ''} ago`
     } else if (minutes > 0) {
       return `${minutes} minute${minutes > 1 ? 's' : ''} ago`
@@ -50,46 +55,63 @@
 
 <template>
   <div class="bg-white rounded-lg border border-gray-200 p-5">
-    <div class="flex items-start justify-between">
-      <div>
-        <p class="text-sm font-medium text-mine mb-1">
-          {{ trace.userQuery }}
-        </p>
-        <p class="text-xs text-taupe">
-          {{ trace.workflow }} &middot; {{ formatTime(trace.timestamp) }} &middot;
-          {{ formatTokens(trace.totalTokens) }}
-        </p>
-      </div>
-      <div class="flex items-center gap-2">
-        <button
-          v-for="agent in trace.agents"
-          :key="agent.agentName"
-          :class="[
-            'px-3 py-1.5 text-xs font-medium rounded transition-colors',
-            isAgentActive(agent.agentName)
-              ? 'bg-shiraz text-white'
-              : 'bg-desert text-taupe hover:bg-gray-200',
-          ]"
-          @click="toggleAgent(agent.agentName)"
-        >
-          {{ agent.agentName }}
-        </button>
-      </div>
+    <!-- Header: Query and metadata -->
+    <div class="mb-3">
+      <p class="text-sm font-medium text-mine mb-1 line-clamp-2">
+        {{ trace.userQuery }}
+      </p>
+      <p class="text-xs text-taupe">
+        {{ trace.workflow }} &middot; {{ formatTime(trace.timestamp) }} &middot;
+        {{ formatTokens(trace.totalTokens) }}
+      </p>
     </div>
 
-    <div v-if="expandedAgent" class="mt-4 pt-4 border-t border-gray-100">
-      <div class="grid grid-cols-2 gap-4">
+    <!-- Agent buttons row -->
+    <div class="flex flex-wrap gap-2 pb-3 border-b border-gray-100">
+      <button
+        v-for="agent in trace.agents"
+        :key="agent.agentName"
+        :class="[
+          'px-3 py-1.5 text-xs font-medium rounded transition-colors',
+          isAgentActive(agent.agentName)
+            ? 'bg-shiraz text-white'
+            : 'bg-desert text-taupe hover:bg-gray-200',
+        ]"
+        @click="toggleAgent(agent.agentName)"
+      >
+        {{ agent.agentName }}
+      </button>
+    </div>
+
+    <!-- Expanded agent details -->
+    <div v-if="expandedAgent" class="mt-3">
+      <!-- Collapsible System Prompt -->
+      <CollapsibleSection v-if="expandedAgent.systemPrompt" title="System Prompt">
+        <div
+          class="bg-desert rounded p-3 text-xs text-mine font-mono whitespace-pre-wrap max-h-64 overflow-auto"
+        >
+          {{ expandedAgent.systemPrompt }}
+        </div>
+      </CollapsibleSection>
+
+      <!-- Collapsible User Prompt -->
+      <CollapsibleSection v-if="expandedAgent.userPrompt" title="User Prompt">
+        <div
+          class="bg-desert rounded p-3 text-xs text-mine font-mono whitespace-pre-wrap max-h-64 overflow-auto"
+        >
+          {{ expandedAgent.userPrompt }}
+        </div>
+      </CollapsibleSection>
+
+      <!-- Input/Output grid -->
+      <div class="grid grid-cols-2 gap-4 mt-3">
         <div>
           <p class="text-xs font-medium text-taupe uppercase mb-2">Input</p>
-          <div class="bg-desert rounded p-3 text-xs text-mine font-mono whitespace-pre-wrap">
-            {{ expandedAgent.input }}
-          </div>
+          <JsonViewer :content="expandedAgent.input" max-height="300px" />
         </div>
         <div>
           <p class="text-xs font-medium text-taupe uppercase mb-2">Output</p>
-          <div class="bg-desert rounded p-3 text-xs text-mine font-mono whitespace-pre-wrap">
-            {{ expandedAgent.output }}
-          </div>
+          <JsonViewer :content="expandedAgent.output" max-height="300px" />
         </div>
       </div>
     </div>
