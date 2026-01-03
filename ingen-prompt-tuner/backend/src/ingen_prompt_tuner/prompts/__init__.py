@@ -43,7 +43,7 @@ _revisions: dict[str, Revision] = {
         id="active",
         name="active",
         created_at="2024-01-15T10:00:00Z",
-        prompt_count=6,
+        prompt_count=2,
     ),
 }
 
@@ -54,7 +54,7 @@ def get_revisions() -> list[Revision]:
 
 
 def _get_base_prompts() -> list[Prompt]:
-    """Get base prompt templates."""
+    """Get base prompt templates for SoCa."""
     return [
         Prompt(
             filename="soca_evaluator_system.md",
@@ -71,72 +71,6 @@ def _get_base_prompts() -> list[Prompt]:
             size=len(DEFAULT_CRITERIA_GENERATOR_SYSTEM_PROMPT),
             tags=["system", "criteria", "generator"],
             variables=[],
-        ),
-        Prompt(
-            filename="router_prompt.jinja",
-            description="Routes user queries to appropriate agents",
-            content="""You are a routing agent for the {{ workflow }} workflow.
-Your job is to analyze the user's query and determine which agent should handle it.
-
-Available agents:
-{% for agent in agents %}
-- {{ agent.name }}: {{ agent.description }}
-{% endfor %}
-
-User query: {{ user_query }}
-
-Respond with the name of the agent that should handle this query.""",
-            size=2150,
-            tags=["system", "routing"],
-            variables=["workflow", "agents", "user_query"],
-        ),
-        Prompt(
-            filename="sql_agent_prompt.jinja",
-            description="Generates SQL queries from natural language",
-            content="""You are a SQL generation agent.
-Given the user's natural language query, generate a SQL query for the {{ database }} database.
-
-Schema:
-{{ schema }}
-
-User query: {{ user_query }}
-
-Generate a valid SQL query that answers the user's question.""",
-            size=3300,
-            tags=["agent", "sql"],
-            variables=["database", "schema", "user_query"],
-        ),
-        Prompt(
-            filename="analyst_prompt.jinja",
-            description="Analyzes data and provides insights",
-            content="""You are a data analyst agent.
-Analyze the following data and provide insights.
-
-Data:
-{{ data }}
-
-User question: {{ user_query }}
-
-Provide a clear, concise analysis with key insights.""",
-            size=1800,
-            tags=["agent", "analysis"],
-            variables=["data", "user_query"],
-        ),
-        Prompt(
-            filename="summary_prompt.jinja",
-            description="Summarizes findings for user consumption",
-            content="""You are a summary agent.
-Summarize the following findings in a user-friendly format.
-
-Findings:
-{{ findings }}
-
-Original question: {{ user_query }}
-
-Provide a clear, helpful summary.""",
-            size=1200,
-            tags=["agent", "output"],
-            variables=["findings", "user_query"],
         ),
     ]
 
