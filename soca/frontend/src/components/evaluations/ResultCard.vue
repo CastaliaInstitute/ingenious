@@ -58,7 +58,7 @@
           <p :class="['text-lg font-semibold', getScoreColor(result.overallScore)]">
             {{ result.overallScore.toFixed(1) }}
           </p>
-          <p class="text-xs text-taupe">/100</p>
+          <p class="text-xs text-taupe">/ 100</p>
         </div>
         <svg
           :class="['w-5 h-5 text-taupe transition-transform', { 'rotate-180': expanded }]"

@@ -41,6 +41,23 @@
     return sortedResults.value[0].overallScore.toFixed(1)
   })
 
+  const evaluationTime = computed(() => {
+    if (!evaluation.value) return '--'
+    if (!evaluation.value.createdAt || !evaluation.value.completedAt) return '--'
+
+    const start = new Date(evaluation.value.createdAt).getTime()
+    const end = new Date(evaluation.value.completedAt).getTime()
+    const durationMs = end - start
+
+    if (durationMs < 0) return '--'
+
+    const seconds = Math.floor(durationMs / 1000)
+    if (seconds < 60) return `${seconds}s`
+    const minutes = Math.floor(seconds / 60)
+    const remainingSeconds = seconds % 60
+    return `${minutes}m ${remainingSeconds}s`
+  })
+
   function getScoreColor(score: number): string {
     if (score >= 80) return 'text-green-600'
     if (score >= 60) return 'text-amber-600'
@@ -177,7 +194,7 @@
     <div class="grid grid-cols-3 gap-4 mb-8">
       <StatCard :value="averageScore" label="Average Score" />
       <StatCard :value="highestScore" label="Highest Score" value-class="text-green-600" />
-      <StatCard value="--" label="Evaluation Time" />
+      <StatCard :value="evaluationTime" label="Evaluation Time" />
     </div>
 
     <div class="space-y-3">

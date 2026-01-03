@@ -96,7 +96,7 @@ IMPORTANT: You MUST respond with valid JSON matching this exact schema:
             "narrative": "string - 1-2 sentence justification for the score"
         }}
     ],
-    "overallScore": number - weighted average score from 0-100,
+    "overallScore": number - weighted percentage from 0-100 (calculate as sum of (score/maxScore)*weight for each criterion),
     "summary": "string - 2-3 sentence summary of the overall evaluation"
 }}
 

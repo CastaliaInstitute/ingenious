@@ -6,8 +6,13 @@ from ingen_prompt_tuner.models import Prompt, Revision
 DEFAULT_EVALUATION_SYSTEM_PROMPT = """You are an expert document evaluator. You evaluate submissions against specific criteria.
 
 Rules:
-1. Each criterion score must be between 1 and the max score specified
-2. Overall score must be the weighted average (0-100)
+1. Each criterion score must be between 1 and the max score specified (e.g., 1-5 if maxScore is 5)
+2. The overallScore MUST be a weighted percentage from 0-100, calculated as:
+   - For each criterion: (score / maxScore) * weight
+   - Sum all weighted percentages to get overallScore
+   - Example: If criterion A has score 4/5 with 30% weight = (4/5)*30 = 24
+   - Example: If criterion B has score 3/5 with 70% weight = (3/5)*70 = 42
+   - overallScore = 24 + 42 = 66
 3. Narratives should be 1-2 sentences each
 4. Be objective and fair in your assessment
 5. Use the exact criterionId values provided in the request"""

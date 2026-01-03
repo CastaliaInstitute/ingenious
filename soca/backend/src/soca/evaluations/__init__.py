@@ -95,13 +95,25 @@ async def evaluate_submission(
                                 )
                             )
 
+                    # Calculate overall score as weighted percentage (0-100)
+                    # Formula: sum of (score / maxScore) * weight for each criterion
+                    overall_score = 0.0
+                    criteria_lookup = {c.id: c for c in criteria_set.criteria}
+                    for cr in criterion_results:
+                        if cr.criterion_id in criteria_lookup:
+                            criterion = criteria_lookup[cr.criterion_id]
+                            if criterion.max_score > 0:
+                                # (score / maxScore) * weight
+                                weighted_pct = (cr.score / criterion.max_score) * criterion.weight
+                                overall_score += weighted_pct
+
                     logger.info(f"AI evaluation successful for submission {submission.id}")
 
                     return EvaluationResult(
                         submission_id=submission.id,
                         submission_name=submission.name,
                         submission_author=None,
-                        overall_score=float(evaluation_data.get("overallScore", 0)),
+                        overall_score=round(overall_score, 2),
                         criterion_results=criterion_results,
                         summary=evaluation_data.get("summary", "Evaluation completed."),
                     )

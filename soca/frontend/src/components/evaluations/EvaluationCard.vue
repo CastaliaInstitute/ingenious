@@ -46,9 +46,9 @@
           </template>
         </p>
       </div>
-      <div class="text-right">
+      <div class="flex flex-col items-end gap-1.5">
         <StatusBadge :status="evaluation.status" />
-        <p class="text-xs text-taupe mt-1">
+        <p class="text-xs text-taupe">
           <template v-if="evaluation.status === 'running'">
             {{ evaluation.results.length }}/{{ evaluation.submissionIds.length }} evaluated
           </template>
