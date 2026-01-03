@@ -48,8 +48,10 @@ class ProjectAgents:
 """
 
     @pytest.mark.asyncio
-    @patch("ingenious.api.routes.custom_workflows.normalize_workflow_name")
-    @patch("ingenious.api.routes.custom_workflows.get_path_from_namespace_with_fallback")
+    @patch("ingenious.api.routes.custom_workflows_introspection.normalize_workflow_name")
+    @patch(
+        "ingenious.api.routes.custom_workflows_introspection.get_path_from_namespace_with_fallback"
+    )
     async def test_get_custom_workflow_agents_success(
         self, mock_get_path, mock_normalize, mock_agent_file_content
     ):

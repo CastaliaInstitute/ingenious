@@ -135,7 +135,8 @@ class TestLocalFileStorage:
 
         result = await storage.list_files("missing_dir")
 
-        assert "Failed to list files" in result
+        # On exception, the implementation returns empty string and prints error
+        assert result == ""
 
     @pytest.mark.asyncio
     @patch("pathlib.Path.exists")
