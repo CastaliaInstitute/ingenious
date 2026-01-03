@@ -18,6 +18,7 @@ from soca.models import (
     EvaluationStatus,
     Submission,
 )
+from soca.templates import get_user_prompt_template, render_template
 
 logger = logging.getLogger(__name__)
 
@@ -27,23 +28,26 @@ async def evaluate_submission(
     criteria_set: CriteriaSet,
 ) -> EvaluationResult:
     """Evaluate a single submission against criteria using AI via Prompt Tuner."""
-    # Build evaluation prompt with criteria IDs for proper mapping
+    # Build criteria text for template
     criteria_text = "\n".join(
         f"- {c.id}: {c.name} (weight: {c.weight}%, max score: {c.max_score}): {c.description}"
         for c in criteria_set.criteria
     )
 
-    prompt = f"""Evaluate the following submission against the given criteria.
-
-SUBMISSION:
-Title: {submission.name}
-Content:
-{submission.extracted_text[:8000] if submission.extracted_text else "No content available"}
-
-CRITERIA (format: criterionId: Name (weight%, max score): Description):
-{criteria_text}
-
-For each criterion, provide a score and narrative. Use the exact criterionId values provided above."""
+    # Fetch and render user prompt template from Prompt Tuner
+    template_content = await get_user_prompt_template("soca_evaluator_user.md")
+    prompt = render_template(
+        template_content,
+        {
+            "submission_name": submission.name,
+            "submission_content": (
+                submission.extracted_text[:8000]
+                if submission.extracted_text
+                else "No content available"
+            ),
+            "criteria_text": criteria_text,
+        },
+    )
 
     # Call Prompt Tuner API for AI evaluation
     prompt_tuner_url = settings.ingenious_api_url or "http://localhost:8002"

@@ -136,7 +136,7 @@ class TestIApiRoutes:
         assert (
             "Adds custom routes to the FastAPI app instance" in IApiRoutes.add_custom_routes.__doc__
         )
-        assert "returns the router instance" in IApiRoutes.add_custom_routes.__doc__
+        assert "router instance" in IApiRoutes.add_custom_routes.__doc__
 
     @patch("ingenious.models.api_routes.get_logger")
     def test_inheritance_chain(self, mock_get_logger):

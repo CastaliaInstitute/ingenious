@@ -11,6 +11,7 @@ import httpx
 
 from soca.config import settings
 from soca.models import CriteriaSet, Criterion
+from soca.templates import get_user_prompt_template, render_template
 
 logger = logging.getLogger(__name__)
 
@@ -94,23 +95,12 @@ async def generate_criteria_from_text(
     """
     prompt_tuner_url = settings.ingenious_api_url or "http://localhost:8002"
 
-    # Build the prompt for criteria generation
-    prompt = f"""Analyze the following document and generate evaluation criteria.
-
-DOCUMENT:
-{document_text[:10000]}
-
-Generate a comprehensive set of evaluation criteria based on this document.
-The criteria should be:
-- Specific to the document type and content
-- Measurable with clear scoring guidelines
-- Weighted appropriately (weights should sum to 100)
-- Include 4-8 criteria for comprehensive coverage
-
-Respond with a JSON object containing:
-- name: A short descriptive name for this criteria set
-- description: A 1-2 sentence description of what this criteria set evaluates
-- criteria: Array of criterion objects with id, name, description, weight, maxScore"""
+    # Fetch and render user prompt template from Prompt Tuner
+    template_content = await get_user_prompt_template("criteria_generator_user.md")
+    prompt = render_template(
+        template_content,
+        {"document_text": document_text[:10000]},
+    )
 
     try:
         async with httpx.AsyncClient() as client:

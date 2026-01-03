@@ -36,6 +36,37 @@ Focus on extracting:
 - Performance metrics or objectives
 - Domain-specific evaluation points"""
 
+# Default user prompt for SoCa evaluations (Jinja2 template)
+DEFAULT_EVALUATION_USER_PROMPT = """Evaluate the following submission against the given criteria.
+
+SUBMISSION:
+Title: {{ submission_name }}
+Content:
+{{ submission_content }}
+
+CRITERIA (format: criterionId: Name (weight%, max score): Description):
+{{ criteria_text }}
+
+For each criterion, provide a score and narrative. Use the exact criterionId values provided above."""
+
+# Default user prompt for criteria generation from documents (Jinja2 template)
+DEFAULT_CRITERIA_GENERATOR_USER_PROMPT = """Analyze the following document and generate evaluation criteria.
+
+DOCUMENT:
+{{ document_text }}
+
+Generate a comprehensive set of evaluation criteria based on this document.
+The criteria should be:
+- Specific to the document type and content
+- Measurable with clear scoring guidelines
+- Weighted appropriately (weights should sum to 100)
+- Include 4-8 criteria for comprehensive coverage
+
+Respond with a JSON object containing:
+- name: A short descriptive name for this criteria set
+- description: A 1-2 sentence description of what this criteria set evaluates
+- criteria: Array of criterion objects with id, name, description, weight, maxScore"""
+
 
 # In-memory revision storage
 _revisions: dict[str, Revision] = {
@@ -43,7 +74,7 @@ _revisions: dict[str, Revision] = {
         id="active",
         name="active",
         created_at="2024-01-15T10:00:00Z",
-        prompt_count=2,
+        prompt_count=4,
     ),
 }
 
@@ -65,12 +96,28 @@ def _get_base_prompts() -> list[Prompt]:
             variables=[],
         ),
         Prompt(
+            filename="soca_evaluator_user.md",
+            description="User prompt template for SoCa document evaluation",
+            content=DEFAULT_EVALUATION_USER_PROMPT,
+            size=len(DEFAULT_EVALUATION_USER_PROMPT),
+            tags=["user", "soca", "evaluation"],
+            variables=["submission_name", "submission_content", "criteria_text"],
+        ),
+        Prompt(
             filename="criteria_generator_system.md",
             description="System prompt for extracting evaluation criteria from documents",
             content=DEFAULT_CRITERIA_GENERATOR_SYSTEM_PROMPT,
             size=len(DEFAULT_CRITERIA_GENERATOR_SYSTEM_PROMPT),
             tags=["system", "criteria", "generator"],
             variables=[],
+        ),
+        Prompt(
+            filename="criteria_generator_user.md",
+            description="User prompt template for criteria generation from documents",
+            content=DEFAULT_CRITERIA_GENERATOR_USER_PROMPT,
+            size=len(DEFAULT_CRITERIA_GENERATOR_USER_PROMPT),
+            tags=["user", "criteria", "generator"],
+            variables=["document_text"],
         ),
     ]
 
@@ -139,3 +186,27 @@ def get_criteria_generator_system_prompt(revision: str = "active") -> str:
     if prompt:
         return prompt.content
     return DEFAULT_CRITERIA_GENERATOR_SYSTEM_PROMPT
+
+
+def get_evaluation_user_prompt(revision: str = "active") -> str:
+    """Get the current evaluation user prompt template.
+
+    This is a Jinja2 template that SoCa fetches and renders locally.
+    Variables: submission_name, submission_content, criteria_text
+    """
+    prompt = get_prompt(revision, "soca_evaluator_user.md")
+    if prompt:
+        return prompt.content
+    return DEFAULT_EVALUATION_USER_PROMPT
+
+
+def get_criteria_generator_user_prompt(revision: str = "active") -> str:
+    """Get the current criteria generator user prompt template.
+
+    This is a Jinja2 template that SoCa fetches and renders locally.
+    Variables: document_text
+    """
+    prompt = get_prompt(revision, "criteria_generator_user.md")
+    if prompt:
+        return prompt.content
+    return DEFAULT_CRITERIA_GENERATOR_USER_PROMPT

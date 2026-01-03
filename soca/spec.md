@@ -300,6 +300,18 @@ INGEN_PROMPT_TUNER_API_KEY=<shared-api-key>
 - [ ] User can edit generated criteria via normal edit flow
 - [ ] Error message shown if generation fails
 
+### US-3.9: Configurable Criteria Generation Prompts
+**As a** administrator
+**I want to** customize the AI criteria generation prompt via Prompt Tuner
+**So that** I can fine-tune how criteria are extracted from documents
+
+**Acceptance Criteria:**
+- [ ] SoCa fetches criteria generator template from Prompt Tuner API
+- [ ] Template uses Jinja2 variable: `document_text`
+- [ ] Template can be edited in Prompt Tuner UI
+- [ ] Falls back to default template if Prompt Tuner unavailable
+- [ ] Template changes take effect on next generation request
+
 ---
 
 ## Epic 4: Evaluation Workflow
@@ -346,6 +358,18 @@ INGEN_PROMPT_TUNER_API_KEY=<shared-api-key>
 - [ ] Overall score calculated as weighted average
 - [ ] Status changes to "Completed" when done
 - [ ] Status changes to "Failed" if Ingenious API errors
+
+### US-4.3.1: Configurable Evaluation Prompts
+**As a** administrator
+**I want to** customize the AI evaluation prompt via Prompt Tuner
+**So that** I can fine-tune how submissions are evaluated without code changes
+
+**Acceptance Criteria:**
+- [ ] SoCa fetches user prompt template from Prompt Tuner API
+- [ ] Template uses Jinja2 variables: `submission_name`, `submission_content`, `criteria_text`
+- [ ] Template can be edited in Prompt Tuner UI
+- [ ] Falls back to default template if Prompt Tuner unavailable
+- [ ] Template changes take effect on next evaluation run
 
 ### US-4.4: View Evaluation Results
 **As a** user

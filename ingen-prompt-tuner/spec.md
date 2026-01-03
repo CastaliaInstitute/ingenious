@@ -414,6 +414,19 @@ interface ConversationTrace {
 - [ ] Trace recorded for criteria generation calls
 - [ ] Error handling returns structured error response
 
+### US-5.6: User Prompt Templates
+**As a** administrator
+**I want to** view and edit user prompt templates for SoCa
+**So that** I can customize AI behavior without modifying code
+
+**Acceptance Criteria:**
+- [ ] User prompt templates appear in Prompts grid with "user" tag
+- [ ] `soca_evaluator_user.md` template is editable
+- [ ] `criteria_generator_user.md` template is editable
+- [ ] Templates display required Jinja2 variables
+- [ ] Changes are saved and take effect immediately for SoCa
+- [ ] Visual distinction between system and user prompts
+
 ---
 
 ## Epic 6: Revision Management
