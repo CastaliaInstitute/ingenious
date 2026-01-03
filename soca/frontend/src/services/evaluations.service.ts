@@ -32,4 +32,8 @@ export const evaluationsService = {
     })
     return response.data
   },
+
+  async delete(id: string): Promise<void> {
+    await api.delete(`/evaluations/${id}`)
+  },
 }

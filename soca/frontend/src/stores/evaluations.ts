@@ -59,6 +59,11 @@ export const useEvaluationsStore = defineStore('evaluations', () => {
     return evaluations.value.find((e) => e.id === id)
   }
 
+  async function deleteEvaluation(id: string) {
+    await evaluationsService.delete(id)
+    evaluations.value = evaluations.value.filter((e) => e.id !== id)
+  }
+
   return {
     evaluations,
     loading,
@@ -70,5 +75,6 @@ export const useEvaluationsStore = defineStore('evaluations', () => {
     createEvaluation,
     runEvaluation,
     getEvaluation,
+    deleteEvaluation,
   }
 })

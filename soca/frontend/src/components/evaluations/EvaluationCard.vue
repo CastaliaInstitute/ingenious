@@ -8,6 +8,7 @@
 
   defineEmits<{
     click: [evaluation: Evaluation]
+    delete: [evaluation: Evaluation]
   }>()
 
   function formatTime(dateString: string): string {
@@ -46,16 +47,32 @@
           </template>
         </p>
       </div>
-      <div class="flex flex-col items-end gap-1.5">
-        <StatusBadge :status="evaluation.status" />
-        <p class="text-xs text-taupe">
-          <template v-if="evaluation.status === 'running'">
-            {{ evaluation.results.length }}/{{ evaluation.submissionIds.length }} evaluated
-          </template>
-          <template v-else>
-            {{ formatTime(evaluation.completedAt || evaluation.createdAt) }}
-          </template>
-        </p>
+      <div class="flex items-center gap-3">
+        <div class="flex flex-col items-end gap-1.5">
+          <StatusBadge :status="evaluation.status" />
+          <p class="text-xs text-taupe">
+            <template v-if="evaluation.status === 'running'">
+              {{ evaluation.results.length }}/{{ evaluation.submissionIds.length }} evaluated
+            </template>
+            <template v-else>
+              {{ formatTime(evaluation.completedAt || evaluation.createdAt) }}
+            </template>
+          </p>
+        </div>
+        <button
+          class="p-2 text-taupe hover:text-red-600 transition-colors"
+          title="Delete evaluation"
+          @click.stop="$emit('delete', evaluation)"
+        >
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"
+            />
+          </svg>
+        </button>
       </div>
     </div>
   </div>

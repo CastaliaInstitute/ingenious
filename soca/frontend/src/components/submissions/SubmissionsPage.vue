@@ -1,18 +1,30 @@
 <script setup lang="ts">
   import { onMounted, ref, computed } from 'vue'
   import { useSubmissionsStore } from '@/stores/submissions'
-  import Card from '@/components/common/Card.vue'
   import Spinner from '@/components/common/Spinner.vue'
+  import Pagination from '@/components/common/Pagination.vue'
+  import ConfirmDialog from '@/components/common/ConfirmDialog.vue'
   import UploadDropzone from './UploadDropzone.vue'
   import SubmissionItem from './SubmissionItem.vue'
   import type { Submission } from '@/types'
 
   const submissionsStore = useSubmissionsStore()
-  const isDragging = ref(false)
   const selectedSubmission = ref<Submission | null>(null)
   const isEditing = ref(false)
   const editName = ref('')
   const editDescription = ref('')
+
+  const currentPage = ref(1)
+  const pageSize = ref(10)
+
+  const deleteDialogOpen = ref(false)
+  const submissionToDelete = ref<Submission | null>(null)
+
+  const paginatedSubmissions = computed(() => {
+    const start = (currentPage.value - 1) * pageSize.value
+    const end = start + pageSize.value
+    return submissionsStore.submissions.slice(start, end)
+  })
 
   onMounted(() => {
     submissionsStore.fetchSubmissions()
@@ -73,6 +85,31 @@
       year: 'numeric',
     })
   }
+
+  function handleDeleteClick(submission: Submission) {
+    submissionToDelete.value = submission
+    deleteDialogOpen.value = true
+  }
+
+  async function confirmDelete() {
+    if (submissionToDelete.value) {
+      if (selectedSubmission.value?.id === submissionToDelete.value.id) {
+        selectedSubmission.value = null
+      }
+      await submissionsStore.deleteSubmission(submissionToDelete.value.id)
+      const totalPages = Math.ceil(submissionsStore.submissions.length / pageSize.value)
+      if (currentPage.value > totalPages && totalPages > 0) {
+        currentPage.value = totalPages
+      }
+    }
+    deleteDialogOpen.value = false
+    submissionToDelete.value = null
+  }
+
+  function cancelDelete() {
+    deleteDialogOpen.value = false
+    submissionToDelete.value = null
+  }
 </script>
 
 <template>
@@ -96,19 +133,28 @@
       {{ submissionsStore.error }}
     </div>
 
-    <div v-else class="space-y-3">
-      <SubmissionItem
-        v-for="submission in submissionsStore.submissions"
-        :key="submission.id"
-        :submission="submission"
-        :selected="selectedSubmission?.id === submission.id"
-        @click="selectSubmission(submission)"
-        @delete="submissionsStore.deleteSubmission(submission.id)"
-      />
+    <div v-else>
+      <div class="space-y-3">
+        <SubmissionItem
+          v-for="submission in paginatedSubmissions"
+          :key="submission.id"
+          :submission="submission"
+          :selected="selectedSubmission?.id === submission.id"
+          @click="selectSubmission(submission)"
+          @delete="handleDeleteClick(submission)"
+        />
 
-      <div v-if="submissionsStore.submissions.length === 0" class="text-center py-8 text-taupe">
-        No submissions yet. Upload your first document to get started.
+        <div v-if="submissionsStore.submissions.length === 0" class="text-center py-8 text-taupe">
+          No submissions yet. Upload your first document to get started.
+        </div>
       </div>
+
+      <Pagination
+        v-if="submissionsStore.submissions.length > 0"
+        v-model:current-page="currentPage"
+        v-model:page-size="pageSize"
+        :total-items="submissionsStore.submissions.length"
+      />
     </div>
 
     <!-- Details Panel -->
@@ -211,5 +257,14 @@
         </div>
       </div>
     </div>
+
+    <ConfirmDialog
+      :is-open="deleteDialogOpen"
+      title="Delete Submission"
+      :message="`Are you sure you want to delete '${submissionToDelete?.name}'? This action cannot be undone.`"
+      confirm-label="Delete"
+      @confirm="confirmDelete"
+      @cancel="cancelDelete"
+    />
   </div>
 </template>

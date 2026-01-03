@@ -428,6 +428,18 @@ async def export_evaluation(
         raise HTTPException(status_code=400, detail=f"Unsupported format: {format}")
 
 
+@app.delete("/api/evaluations/{evaluation_id}")
+async def delete_evaluation(
+    evaluation_id: str,
+    current_user: User = Depends(get_current_user),
+) -> dict[str, str]:
+    """Delete an evaluation."""
+    success = await db.delete_evaluation(evaluation_id)
+    if not success:
+        raise HTTPException(status_code=404, detail="Evaluation not found")
+    return {"status": "deleted"}
+
+
 # Health check
 @app.get("/health")
 async def health() -> dict[str, str]:

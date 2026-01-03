@@ -15,17 +15,24 @@
   function handleTabClick(tab: TabName) {
     uiStore.setActiveTab(tab)
   }
+
+  function handleBrandingClick() {
+    uiStore.setActiveTab('evaluations')
+  }
 </script>
 
 <template>
   <header class="bg-white border-b border-gray-200">
     <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
       <div class="flex items-center gap-8">
-        <div class="flex items-center gap-3">
+        <button
+          class="flex items-center gap-3 cursor-pointer hover:opacity-80 transition-opacity"
+          @click="handleBrandingClick"
+        >
           <img src="/insight-logo.svg" alt="Insight" class="h-6" />
           <span class="text-gray-300">|</span>
           <span class="text-lg font-semibold text-mine">SoCa</span>
-        </div>
+        </button>
         <nav class="flex items-center gap-1">
           <button
             v-for="tab in tabs"

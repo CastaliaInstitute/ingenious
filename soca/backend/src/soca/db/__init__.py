@@ -225,6 +225,20 @@ class Database:
             self._evaluations_container.upsert_item(data)
         return evaluation
 
+    async def delete_evaluation(self, evaluation_id: str) -> bool:
+        """Delete an evaluation."""
+        if self._use_memory:
+            if evaluation_id in self._memory_evaluations:
+                del self._memory_evaluations[evaluation_id]
+                return True
+            return False
+        self._init_cosmos()
+        try:
+            self._evaluations_container.delete_item(evaluation_id, partition_key=evaluation_id)
+            return True
+        except CosmosResourceNotFoundError:
+            return False
+
 
 # Global database instance
 db = Database()
