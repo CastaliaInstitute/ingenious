@@ -284,6 +284,22 @@ INGEN_PROMPT_TUNER_API_KEY=<shared-api-key>
 - [ ] Drag-and-drop reorders criteria
 - [ ] Order persists on save
 
+### US-3.8: Generate Criteria from Document
+**As a** user
+**I want to** generate evaluation criteria from an unstructured document
+**So that** I can quickly create relevant criteria without manual definition
+
+**Acceptance Criteria:**
+- [ ] "Generate from Document" button visible on Criteria page
+- [ ] Modal supports file upload (PDF, DOCX, TXT)
+- [ ] Modal supports text paste as alternative input
+- [ ] Name field required before generation
+- [ ] Loading state shown during AI processing
+- [ ] Generated criteria saved directly to criteria sets
+- [ ] New criteria set appears in list after generation
+- [ ] User can edit generated criteria via normal edit flow
+- [ ] Error message shown if generation fails
+
 ---
 
 ## Epic 4: Evaluation Workflow

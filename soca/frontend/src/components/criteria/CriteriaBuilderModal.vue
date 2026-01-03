@@ -118,7 +118,7 @@
           {{ error }}
         </div>
 
-        <div class="grid grid-cols-2 gap-4">
+        <div class="space-y-4">
           <div>
             <label class="block text-sm font-medium text-taupe mb-2">Name</label>
             <input
@@ -130,11 +130,11 @@
           </div>
           <div>
             <label class="block text-sm font-medium text-taupe mb-2">Description (optional)</label>
-            <input
+            <textarea
               v-model="description"
-              type="text"
-              placeholder="Brief description"
-              class="w-full px-3 py-2 border border-gray-200 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-shiraz/20 focus:border-shiraz"
+              rows="3"
+              placeholder="Describe the purpose and scope of this criteria set"
+              class="w-full px-3 py-2 border border-gray-200 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-shiraz/20 focus:border-shiraz resize-y min-h-[80px]"
             />
           </div>
         </div>
@@ -155,7 +155,7 @@
             >
               <div class="flex items-start gap-4">
                 <div class="flex-1 grid grid-cols-2 gap-4">
-                  <div>
+                  <div class="col-span-2">
                     <label class="block text-xs text-taupe mb-1">Name</label>
                     <input
                       v-model="criterion.name"
@@ -164,13 +164,13 @@
                       class="w-full px-3 py-2 border border-gray-200 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-shiraz/20 focus:border-shiraz"
                     />
                   </div>
-                  <div>
+                  <div class="col-span-2">
                     <label class="block text-xs text-taupe mb-1">Description</label>
-                    <input
+                    <textarea
                       v-model="criterion.description"
-                      type="text"
-                      placeholder="What to evaluate"
-                      class="w-full px-3 py-2 border border-gray-200 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-shiraz/20 focus:border-shiraz"
+                      rows="3"
+                      placeholder="What to evaluate - describe the criteria in detail"
+                      class="w-full px-3 py-2 border border-gray-200 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-shiraz/20 focus:border-shiraz resize-y min-h-[80px]"
                     />
                   </div>
                   <div>

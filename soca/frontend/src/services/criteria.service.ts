@@ -25,4 +25,30 @@ export const criteriaService = {
   async delete(id: string): Promise<void> {
     await api.delete(`/criteria-sets/${id}`)
   },
+
+  async generateFromDocument(file: File, name: string): Promise<CriteriaSet> {
+    const formData = new FormData()
+    formData.append('file', file)
+    formData.append('name', name)
+
+    const response = await api.post<CriteriaSet>('/criteria-sets/generate', formData, {
+      headers: {
+        'Content-Type': 'multipart/form-data',
+      },
+    })
+    return response.data
+  },
+
+  async generateFromText(text: string, name: string): Promise<CriteriaSet> {
+    const formData = new FormData()
+    formData.append('document_text', text)
+    formData.append('name', name)
+
+    const response = await api.post<CriteriaSet>('/criteria-sets/generate', formData, {
+      headers: {
+        'Content-Type': 'multipart/form-data',
+      },
+    })
+    return response.data
+  },
 }

@@ -8,14 +8,19 @@ Uses the Ingenious framework for agent definition and orchestration.
 
 import logging
 import uuid
-from typing import Any
+from typing import Any, Optional, Protocol
 
 from fastapi import Depends, FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 
 from ingen_prompt_tuner.auth import authenticate_user, create_access_token, get_current_user
 from ingen_prompt_tuner.config import settings
-from ingen_prompt_tuner.conversation_flows.soca_evaluator import ConversationFlow
+from ingen_prompt_tuner.conversation_flows.criteria_generator import (
+    ConversationFlow as CriteriaGeneratorFlow,
+)
+from ingen_prompt_tuner.conversation_flows.soca_evaluator import (
+    ConversationFlow as SocaEvaluatorFlow,
+)
 from ingen_prompt_tuner.models import (
     ChatRequest,
     ChatResponseModel,
@@ -35,6 +40,38 @@ from ingen_prompt_tuner.prompts import (
 from ingen_prompt_tuner.traces import create_trace_from_chat, get_trace, get_traces
 
 logger = logging.getLogger(__name__)
+
+
+class ConversationFlowProtocol(Protocol):
+    """Protocol defining the interface for conversation flows."""
+
+    @staticmethod
+    async def get_conversation_response(
+        message: str,
+        topics: Optional[list[str]] = None,
+        revision: str = "active",
+        **kwargs: Any,
+    ) -> tuple[str, str, int]:
+        """Process a conversation message and return AI response.
+
+        Args:
+            message: The user's input message to process.
+            topics: Optional list of topic tags for the conversation.
+            revision: Prompt revision to use (default: "active").
+            **kwargs: Additional flow-specific arguments.
+
+        Returns:
+            Tuple of (result_json, memory_summary, token_count).
+        """
+        ...
+
+
+# Map conversation flow names to their implementations
+# Using Any for values since the flow classes use static methods which don't match Protocol typing perfectly
+CONVERSATION_FLOWS: dict[str, Any] = {
+    "soca-evaluator": SocaEvaluatorFlow,
+    "criteria-generator": CriteriaGeneratorFlow,
+}
 
 app = FastAPI(title="Ingen Prompt Tuner API", version="0.1.0")
 
@@ -164,31 +201,38 @@ async def health() -> dict[str, str]:
     return {"status": "healthy"}
 
 
-# AI Chat endpoint - used by SoCa for evaluations
+# AI Chat endpoint - used by SoCa for evaluations and criteria generation
 @app.post("/api/v1/chat", response_model=ChatResponseModel)
 async def chat(request: ChatRequest) -> ChatResponseModel:
     """Process AI chat requests using Ingenious framework agents.
 
-    This endpoint uses the Ingenious framework's ConversationFlow pattern
-    to evaluate submissions against criteria using AutoGen agents.
-    SoCa calls this endpoint to evaluate submissions against criteria.
+    Supports multiple conversation flows:
+    - soca-evaluator: Evaluate submissions against criteria
+    - criteria-generator: Extract criteria from document text
     """
     message_id = str(uuid.uuid4())
+    workflow = request.conversation_flow or "soca-evaluator"
+
+    # Get the appropriate conversation flow
+    flow_class = CONVERSATION_FLOWS.get(workflow)
+    if not flow_class:
+        raise HTTPException(
+            status_code=400,
+            detail=f"Unknown conversation_flow: {workflow}. "
+            f"Supported flows: {list(CONVERSATION_FLOWS.keys())}",
+        )
 
     try:
-        # Use the Ingenious-based conversation flow for evaluation
-        result, memory_summary, token_count = await ConversationFlow.get_conversation_response(
+        # Use the selected conversation flow
+        result, memory_summary, token_count = await flow_class.get_conversation_response(
             message=request.user_prompt,
             topics=request.topic,
             revision="active",
         )
 
-        logger.info(
-            f"Chat request processed with Ingenious agent: {message_id}, tokens: {token_count}"
-        )
+        logger.info(f"Chat request processed with {workflow}: {message_id}, tokens: {token_count}")
 
         # Log trace for this AI call
-        workflow = request.conversation_flow or "soca-evaluator"
         create_trace_from_chat(
             trace_id=message_id,
             thread_id=request.thread_id,
@@ -208,16 +252,27 @@ async def chat(request: ChatRequest) -> ChatResponseModel:
         )
 
     except Exception as e:
-        logger.error(f"Chat request failed: {e}")
+        logger.error(f"Chat request failed for {workflow}: {e}")
         import json
 
-        error_response = json.dumps(
-            {
-                "criterionResults": [],
-                "overallScore": 0,
-                "summary": f"Evaluation failed: {str(e)}",
-            }
-        )
+        # Return error response appropriate to the flow type
+        if workflow == "criteria-generator":
+            error_response = json.dumps(
+                {
+                    "name": "Error",
+                    "description": f"Generation failed: {str(e)}",
+                    "criteria": [],
+                }
+            )
+        else:
+            error_response = json.dumps(
+                {
+                    "criterionResults": [],
+                    "overallScore": 0,
+                    "summary": f"Evaluation failed: {str(e)}",
+                }
+            )
+
         return ChatResponseModel(
             thread_id=request.thread_id,
             message_id=message_id,

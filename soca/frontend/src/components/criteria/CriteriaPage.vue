@@ -5,10 +5,12 @@
   import CriteriaSetCard from './CriteriaSetCard.vue'
   import TemplateCard from './TemplateCard.vue'
   import CriteriaBuilderModal from './CriteriaBuilderModal.vue'
+  import CriteriaGeneratorModal from './CriteriaGeneratorModal.vue'
   import type { CriteriaSet } from '@/types'
 
   const criteriaStore = useCriteriaStore()
   const showBuilder = ref(false)
+  const showGenerator = ref(false)
   const editingCriteriaSet = ref<CriteriaSet | null>(null)
 
   onMounted(() => {
@@ -38,6 +40,19 @@
     showBuilder.value = false
     editingCriteriaSet.value = null
   }
+
+  function handleGeneratorClose() {
+    showGenerator.value = false
+  }
+
+  function handleGenerated(criteriaSetId: string) {
+    showGenerator.value = false
+    // Optionally open the criteria set for editing
+    const criteriaSet = criteriaStore.getCriteriaSet(criteriaSetId)
+    if (criteriaSet) {
+      handleEdit(criteriaSet)
+    }
+  }
 </script>
 
 <template>
@@ -47,7 +62,10 @@
         <h1 class="text-xl font-semibold text-mine">Criteria</h1>
         <p class="text-sm text-taupe mt-1">Define evaluation criteria sets</p>
       </div>
-      <Button @click="showBuilder = true"> New Criteria Set </Button>
+      <div class="flex gap-2">
+        <Button variant="secondary" @click="showGenerator = true"> Generate from Document </Button>
+        <Button @click="showBuilder = true">New Criteria Set</Button>
+      </div>
     </div>
 
     <div v-if="criteriaStore.criteriaSets.length > 0" class="mb-8">
@@ -81,6 +99,12 @@
       v-if="showBuilder"
       :editing-criteria-set="editingCriteriaSet"
       @close="handleCloseBuilder"
+    />
+
+    <CriteriaGeneratorModal
+      v-if="showGenerator"
+      @close="handleGeneratorClose"
+      @generated="handleGenerated"
     />
   </div>
 </template>

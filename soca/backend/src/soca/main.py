@@ -7,12 +7,13 @@ import uuid
 from datetime import datetime
 from typing import Any, Optional
 
-from fastapi import BackgroundTasks, Depends, FastAPI, File, HTTPException, UploadFile
+from fastapi import BackgroundTasks, Depends, FastAPI, File, Form, HTTPException, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse
 
 from soca.auth import authenticate_user, create_access_token, get_current_user
 from soca.config import settings
+from soca.criteria import extract_text_from_file, generate_criteria_from_text
 from soca.db import db, get_templates
 from soca.evaluations import run_evaluation
 from soca.models import (
@@ -206,6 +207,60 @@ async def delete_criteria_set(
     if not success:
         raise HTTPException(status_code=404, detail="Criteria set not found")
     return {"status": "deleted"}
+
+
+@app.post("/api/criteria-sets/generate", response_model=CriteriaSet)
+async def generate_criteria_set(
+    file: Optional[UploadFile] = File(default=None),
+    document_text: Optional[str] = Form(default=None),
+    name: Optional[str] = Form(default=None),
+    current_user: User = Depends(get_current_user),
+) -> CriteriaSet:
+    """Generate a criteria set from document text or uploaded file using AI.
+
+    Supports two input methods:
+    1. Direct text: Pass document_text as form field
+    2. File upload: Upload PDF, DOCX, or TXT file
+
+    The AI will analyze the document and generate appropriate evaluation criteria.
+    """
+    # Validate that at least one input method is provided
+    if not file and not document_text:
+        raise HTTPException(status_code=400, detail="Either file or document_text must be provided")
+
+    # Extract text from file if provided
+    if file:
+        content = await file.read()
+        if len(content) == 0:
+            raise HTTPException(status_code=400, detail="Uploaded file is empty")
+
+        try:
+            document_text = await extract_text_from_file(
+                content=content,
+                content_type=file.content_type or "application/octet-stream",
+                filename=file.filename or "file",
+            )
+        except ValueError as e:
+            raise HTTPException(status_code=400, detail=str(e))
+
+    # Validate extracted/provided text
+    if not document_text or len(document_text.strip()) < 50:
+        raise HTTPException(
+            status_code=400,
+            detail="Document text is too short to generate meaningful criteria",
+        )
+
+    # Call AI to generate criteria
+    try:
+        criteria_set = await generate_criteria_from_text(
+            document_text=document_text,
+            name_override=name,
+        )
+    except ValueError as e:
+        raise HTTPException(status_code=422, detail=str(e))
+
+    # Save to database
+    return await db.create_criteria_set(criteria_set)
 
 
 # Evaluations endpoints

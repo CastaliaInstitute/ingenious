@@ -118,3 +118,27 @@ class EvaluationResponseSchema(BaseModel):
     )
     overallScore: float = Field(description="Weighted average score from 0-100")
     summary: str = Field(description="A 2-3 sentence summary of the overall evaluation")
+
+
+# Structured output models for criteria generation
+class GeneratedCriterionSchema(BaseModel):
+    """Individual criterion generated from document analysis."""
+
+    id: str = Field(description="Unique identifier in format 'criterion-N'")
+    name: str = Field(description="Short name for the criterion (2-5 words)")
+    description: str = Field(description="Evaluation guidance (1-2 sentences)")
+    weight: int = Field(ge=0, le=100, description="Weight as percentage (0-100)")
+    maxScore: int = Field(description="Maximum score for this criterion (5 or 10)")
+
+
+class CriteriaGenerationResponseSchema(BaseModel):
+    """Response schema for criteria generation from document analysis."""
+
+    name: str = Field(description="Descriptive name for the criteria set")
+    description: str = Field(
+        default="Auto-generated criteria based on document analysis",
+        description="Brief description of the criteria set",
+    )
+    criteria: list[GeneratedCriterionSchema] = Field(
+        description="List of extracted evaluation criteria (3-7 items)"
+    )

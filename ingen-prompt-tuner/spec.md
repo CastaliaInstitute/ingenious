@@ -399,6 +399,21 @@ interface ConversationTrace {
 - [ ] AI responses guaranteed to match schema
 - [ ] Error handling for edge cases
 
+### US-5.5: Criteria Generation Flow
+**As a** client application
+**I want to** call a criteria-generator conversation flow
+**So that** I can extract evaluation criteria from documents
+
+**Acceptance Criteria:**
+- [ ] `/api/v1/chat` accepts `conversation_flow: "criteria-generator"`
+- [ ] Flow analyzes document text and extracts 3-7 criteria
+- [ ] Response includes: name, description, criteria array
+- [ ] Each criterion has: id, name, description, weight, maxScore
+- [ ] Weights automatically sum to 100%
+- [ ] Response matches CriteriaGenerationResponseSchema
+- [ ] Trace recorded for criteria generation calls
+- [ ] Error handling returns structured error response
+
 ---
 
 ## Epic 6: Revision Management

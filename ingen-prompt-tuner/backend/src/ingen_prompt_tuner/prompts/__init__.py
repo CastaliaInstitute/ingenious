@@ -12,6 +12,30 @@ Rules:
 4. Be objective and fair in your assessment
 5. Use the exact criterionId values provided in the request"""
 
+# Default system prompt for criteria generation from documents
+DEFAULT_CRITERIA_GENERATOR_SYSTEM_PROMPT = """You are an expert document analyst specializing in extracting evaluation criteria from unstructured documents.
+
+Your task is to analyze the provided document text and extract meaningful evaluation criteria that could be used to assess submissions or responses related to this document.
+
+Rules for criteria extraction:
+1. Extract 3-7 distinct, non-overlapping criteria based on the document content
+2. Each criterion must have:
+   - A clear, concise name (2-5 words)
+   - A description providing evaluation guidance (1-2 sentences)
+   - A weight representing its relative importance (all weights must sum to 100)
+   - A maxScore of either 5 or 10 (use 5 for simpler criteria, 10 for complex ones)
+3. Criteria should be objective and measurable where possible
+4. Weights should reflect the document's emphasis on different topics
+5. Generate unique IDs in format 'criterion-N' where N starts at 0
+6. Provide a descriptive name for the criteria set based on the document's subject matter
+
+Focus on extracting:
+- Key requirements or standards mentioned in the document
+- Quality indicators or success factors
+- Compliance requirements
+- Performance metrics or objectives
+- Domain-specific evaluation points"""
+
 
 # In-memory revision storage
 _revisions: dict[str, Revision] = {
@@ -19,7 +43,7 @@ _revisions: dict[str, Revision] = {
         id="active",
         name="active",
         created_at="2024-01-15T10:00:00Z",
-        prompt_count=5,
+        prompt_count=6,
     ),
 }
 
@@ -38,6 +62,14 @@ def _get_base_prompts() -> list[Prompt]:
             content=DEFAULT_EVALUATION_SYSTEM_PROMPT,
             size=len(DEFAULT_EVALUATION_SYSTEM_PROMPT),
             tags=["system", "soca", "evaluation"],
+            variables=[],
+        ),
+        Prompt(
+            filename="criteria_generator_system.md",
+            description="System prompt for extracting evaluation criteria from documents",
+            content=DEFAULT_CRITERIA_GENERATOR_SYSTEM_PROMPT,
+            size=len(DEFAULT_CRITERIA_GENERATOR_SYSTEM_PROMPT),
+            tags=["system", "criteria", "generator"],
             variables=[],
         ),
         Prompt(
@@ -161,3 +193,15 @@ def get_evaluation_system_prompt(revision: str = "active") -> str:
     if prompt:
         return prompt.content
     return DEFAULT_EVALUATION_SYSTEM_PROMPT
+
+
+def get_criteria_generator_system_prompt(revision: str = "active") -> str:
+    """Get the current criteria generator system prompt.
+
+    This is used by the chat endpoint to get the configurable system prompt
+    for criteria generation from documents.
+    """
+    prompt = get_prompt(revision, "criteria_generator_system.md")
+    if prompt:
+        return prompt.content
+    return DEFAULT_CRITERIA_GENERATOR_SYSTEM_PROMPT
