@@ -618,21 +618,6 @@ POST /api/v1/chat   # Main entry point for AI agent requests
 - **E2E Tests**: Playwright for key flows
 - **Coverage Target**: 80%
 
-## Mock UI Files
-
-The following HTML mockups demonstrate the UI design:
-
-| File | Description |
-|------|-------------|
-| `home.html` | Home tab with stats and recent activity |
-| `prompt-editor.html` | Prompts tab with file grid and code editor |
-| `main-dashboard.html` | Test tab with revision selector and run list with agent buttons |
-
-To view the mocks, open any HTML file in a browser:
-```bash
-open prompt-tuner/home.html
-```
-
 ## Future Enhancements
 
 1. **Regenerate testing**: Test modified prompts against historical inputs
