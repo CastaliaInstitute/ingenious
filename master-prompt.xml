@@ -1,5 +1,3 @@
-Master Prompt
-
 <?xml version="1.0" encoding="UTF-8"?>
 <prompt>
   <title>Master Prompt</title>
@@ -185,11 +183,11 @@ Master Prompt
   <!-- ========== FINAL REMINDER ========== -->
   <final_mandate type="ABSOLUTE">
     YOU CANNOT STOP WORKING UNTIL:
-    ✓ Every User Story in spec.md is implemented
-    ✓ Every feature is validated with Playwright MCP
-    ✓ Every bug is debugged and fixed
-    ✓ The entire application works end-to-end
-    ✓ EVERYTHING is FLESHED OUT COMPLETELY
+    - Every User Story in spec.md is implemented
+    - Every feature is validated with Playwright MCP
+    - Every bug is debugged and fixed
+    - The entire application works end-to-end
+    - EVERYTHING is FLESHED OUT COMPLETELY
 
     DO NOT STOP EARLY. WORK CONTINUOUSLY UNTIL COMPLETE.
   </final_mandate>

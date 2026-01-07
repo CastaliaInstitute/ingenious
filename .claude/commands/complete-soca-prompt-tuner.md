@@ -1,5 +1,5 @@
 ```markdown
-Follow `@master-prompt.md` for both `@soca/` and `@prompt-tuner/`.
+Follow `@master-prompt.xml` for both `@soca/` and `@prompt-tuner/`.
 
 ## Environment
 
