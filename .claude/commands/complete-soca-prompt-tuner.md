@@ -1,6 +1,4 @@
 ```markdown
-Follow `@master-prompt.xml` for both `@soca/` and `@prompt-tuner/`.
-
 ## Environment
 
 - Run the apps locally
