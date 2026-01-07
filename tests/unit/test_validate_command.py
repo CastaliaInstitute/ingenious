@@ -37,6 +37,7 @@ class TestValidateCommand:
                 "INGENIOUS_MODELS__0__BASE_URL": "https://test.openai.azure.com/",
                 "INGENIOUS_MODELS__0__MODEL": "gpt-4",
                 "INGENIOUS_MODELS__0__API_VERSION": "2024-02-01",
+                "INGENIOUS_WEB_CONFIGURATION__AUTHENTICATION__ENABLE": "false",
             },
         ):
             success, issues = validate_command._validate_environment_variables()
@@ -66,7 +67,7 @@ class TestValidateCommand:
         mock_settings.validate_configuration.return_value = None
 
         with patch(
-            "ingenious.config.main_settings.IngeniousSettings",
+            "ingenious.config.settings.IngeniousSettings",
             return_value=mock_settings,
         ):
             success, issues = validate_command._validate_configuration_files()
@@ -75,34 +76,31 @@ class TestValidateCommand:
 
     def test_validate_azure_connectivity_success(self, validate_command, mock_console):
         """Test Azure connectivity validation with successful connection."""
-        # Mock the settings loading to return a valid model configuration
-        mock_model = MagicMock()
-        mock_model.base_url = "https://test.openai.azure.com/"
-        mock_model.api_key = "test-key"
-        mock_model.authentication_method = MagicMock()
-        mock_model.authentication_method.value = "TOKEN"
+        fake_model = ModelSettings(
+            model="gpt-4o-mini",
+            api_key="test-key",
+            base_url="https://test.openai.azure.com/",
+            authentication_method=AuthenticationMethod.TOKEN,
+        )
 
         mock_settings = MagicMock()
-        mock_settings.models = [mock_model]
+        mock_settings.models = [fake_model]
 
         with patch(
-            "ingenious.config.main_settings.IngeniousSettings",
+            "ingenious.config.settings.IngeniousSettings",
             return_value=mock_settings,
         ):
-            with patch.object(
-                validate_command, "_validate_auth_credentials", return_value=(True, [])
+            with patch(
+                "ingenious.cli.utilities.ValidationUtils.validate_url",
+                return_value=(True, None),
             ):
-                with patch(
-                    "ingenious.cli.utilities.ValidationUtils.validate_url",
-                    return_value=(True, ""),
+                with patch.object(
+                    validate_command,
+                    "_test_azure_connectivity",
+                    return_value=None,
                 ):
-                    with patch.object(
-                        validate_command,
-                        "_test_azure_connection",
-                        return_value=(True, ""),
-                    ):
-                        success, issues = validate_command._validate_azure_connectivity()
-                        assert success
+                    success, issues = validate_command._validate_azure_connectivity()
+                    assert success
 
     def test_validate_azure_connectivity_failure(self, validate_command, mock_console):
         """Test Azure connectivity validation with connection failure."""
@@ -111,7 +109,7 @@ class TestValidateCommand:
         mock_settings.models = []
 
         with patch(
-            "ingenious.config.main_settings.IngeniousSettings",
+            "ingenious.config.settings.IngeniousSettings",
             return_value=mock_settings,
         ):
             success, issues = validate_command._validate_azure_connectivity()
@@ -136,10 +134,15 @@ class TestValidateCommand:
 
     def test_validate_port_availability_open(self, validate_command, mock_console):
         """Test port availability when port is open."""
-        with patch("socket.socket") as mock_socket:
-            mock_socket.return_value.__enter__.return_value.bind.return_value = None
-            success, issues = validate_command._validate_port_availability()
-            assert success
+        mock_config = MagicMock()
+        mock_config.web_configuration.port = 8080
+
+        with patch("ingenious.config.config.get_config", return_value=mock_config):
+            with patch("socket.socket") as mock_socket:
+                # Simulate port not in use (connect_ex returns non-zero)
+                mock_socket.return_value.__enter__.return_value.connect_ex.return_value = 111
+                success, issues = validate_command._validate_port_availability()
+                assert success
 
     def test_validate_port_availability_in_use(self, validate_command, mock_console):
         """Test port availability when port is in use."""

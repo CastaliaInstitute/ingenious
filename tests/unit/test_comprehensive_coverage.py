@@ -87,8 +87,11 @@ class TestUtilityCoverage:
             with patch.dict(
                 os.environ,
                 {
-                    "AZURE_OPENAI_API_KEY": "test-key",
-                    "AZURE_OPENAI_BASE_URL": "https://example.openai.azure.com/",
+                    "INGENIOUS_MODELS__0__API_KEY": "test-key",
+                    "INGENIOUS_MODELS__0__BASE_URL": "https://example.openai.azure.com/",
+                    "INGENIOUS_MODELS__0__MODEL": "gpt-4o-mini",
+                    "INGENIOUS_MODELS__0__API_TYPE": "rest",
+                    "INGENIOUS_WEB_CONFIGURATION__AUTHENTICATION__ENABLE": "false",
                 },
                 clear=True,
             ):
@@ -350,8 +353,11 @@ class TestConfigurationCoverage:
             with patch.dict(
                 os.environ,
                 {
-                    "AZURE_OPENAI_API_KEY": "test-key",
-                    "AZURE_OPENAI_BASE_URL": "https://example.openai.azure.com/",
+                    "INGENIOUS_MODELS__0__API_KEY": "test-key",
+                    "INGENIOUS_MODELS__0__BASE_URL": "https://example.openai.azure.com/",
+                    "INGENIOUS_MODELS__0__MODEL": "gpt-4o-mini",
+                    "INGENIOUS_MODELS__0__API_TYPE": "rest",
+                    "INGENIOUS_WEB_CONFIGURATION__AUTHENTICATION__ENABLE": "false",
                 },
                 clear=True,
             ):

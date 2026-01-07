@@ -30,8 +30,12 @@ class TestIngeniousSettings:
         with patch.dict(
             os.environ,
             {
-                "AZURE_OPENAI_API_KEY": "test-key",
-                "AZURE_OPENAI_BASE_URL": "https://test.openai.azure.com/",
+                "INGENIOUS_MODELS__0__API_KEY": "test-key",
+                "INGENIOUS_MODELS__0__BASE_URL": "https://test.openai.azure.com/",
+                "INGENIOUS_MODELS__0__MODEL": "gpt-4o-mini",
+                "INGENIOUS_MODELS__0__API_TYPE": "rest",
+                # Disable authentication for tests (default is now enabled)
+                "INGENIOUS_WEB_CONFIGURATION__AUTHENTICATION__ENABLE": "false",
             },
         ):
             settings = IngeniousSettings()
@@ -53,8 +57,11 @@ class TestIngeniousSettings:
         with tempfile.NamedTemporaryFile(mode="w", suffix=".env", delete=False) as f:
             f.write("INGENIOUS_LOGGING__ROOT_LOG_LEVEL=debug\n")
             f.write("INGENIOUS_WEB_CONFIGURATION__PORT=8888\n")
-            f.write("AZURE_OPENAI_API_KEY=test-key\n")
-            f.write("AZURE_OPENAI_BASE_URL=https://test.openai.azure.com/\n")
+            f.write("INGENIOUS_MODELS__0__API_KEY=test-key\n")
+            f.write("INGENIOUS_MODELS__0__BASE_URL=https://test.openai.azure.com/\n")
+            f.write("INGENIOUS_MODELS__0__MODEL=gpt-4o-mini\n")
+            f.write("INGENIOUS_MODELS__0__API_TYPE=rest\n")
+            f.write("INGENIOUS_WEB_CONFIGURATION__AUTHENTICATION__ENABLE=false\n")
             env_file_path = f.name
 
         try:
@@ -62,8 +69,11 @@ class TestIngeniousSettings:
             env_vars = {
                 "INGENIOUS_LOGGING__ROOT_LOG_LEVEL": "debug",
                 "INGENIOUS_WEB_CONFIGURATION__PORT": "8888",
-                "AZURE_OPENAI_API_KEY": "test-key",
-                "AZURE_OPENAI_BASE_URL": "https://test.openai.azure.com/",
+                "INGENIOUS_MODELS__0__API_KEY": "test-key",
+                "INGENIOUS_MODELS__0__BASE_URL": "https://test.openai.azure.com/",
+                "INGENIOUS_MODELS__0__MODEL": "gpt-4o-mini",
+                "INGENIOUS_MODELS__0__API_TYPE": "rest",
+                "INGENIOUS_WEB_CONFIGURATION__AUTHENTICATION__ENABLE": "false",
             }
             with patch.dict("os.environ", env_vars, clear=True):
                 settings = IngeniousSettings()
@@ -78,11 +88,13 @@ class TestIngeniousSettings:
             os.environ,
             {
                 "INGENIOUS_PROFILE": "production",
-                "AZURE_OPENAI_MODEL": "gpt-3.5-turbo",
-                "AZURE_OPENAI_API_KEY": "prod-key",
-                "AZURE_OPENAI_BASE_URL": "https://prod.openai.azure.com/",
+                "INGENIOUS_MODELS__0__MODEL": "gpt-3.5-turbo",
+                "INGENIOUS_MODELS__0__API_KEY": "prod-key",
+                "INGENIOUS_MODELS__0__BASE_URL": "https://prod.openai.azure.com/",
+                "INGENIOUS_MODELS__0__API_TYPE": "rest",
                 "INGENIOUS_WEB_CONFIGURATION__PORT": "8080",
                 "INGENIOUS_LOGGING__LOG_LEVEL": "warning",
+                "INGENIOUS_WEB_CONFIGURATION__AUTHENTICATION__ENABLE": "false",
             },
         ):
             settings = IngeniousSettings()
@@ -98,9 +110,10 @@ class TestIngeniousSettings:
         with patch.dict(
             os.environ,
             {
-                "AZURE_OPENAI_MODEL": "gpt-4.1-nano",
-                "AZURE_OPENAI_API_KEY": "key1",
-                "AZURE_OPENAI_BASE_URL": "https://endpoint1.com/",
+                "INGENIOUS_MODELS__0__MODEL": "gpt-4.1-nano",
+                "INGENIOUS_MODELS__0__API_KEY": "key1",
+                "INGENIOUS_MODELS__0__BASE_URL": "https://endpoint1.com/",
+                "INGENIOUS_MODELS__0__API_TYPE": "rest",
                 "INGENIOUS_WEB_CONFIGURATION__AUTHENTICATION__ENABLE": "true",
                 "INGENIOUS_WEB_CONFIGURATION__AUTHENTICATION__USERNAME": "admin",
                 "INGENIOUS_WEB_CONFIGURATION__AUTHENTICATION__PASSWORD": "secret",
@@ -154,8 +167,16 @@ class TestModelSettings:
             ModelSettings(model="gpt-4.1-nano", api_key="valid-key", base_url="invalid-url")
 
     def test_empty_values_allowed(self):
-        """Test that empty strings are allowed for development."""
-        model = ModelSettings(model="gpt-4.1-nano", api_key="", base_url="")
+        """Test that empty strings are allowed when using MSI authentication."""
+        from ingenious.common.enums import AuthenticationMethod
+
+        # MSI authentication doesn't require API key
+        model = ModelSettings(
+            model="gpt-4.1-nano",
+            api_key="",
+            base_url="",
+            authentication_method=AuthenticationMethod.MSI,
+        )
 
         assert model.api_key == ""
         assert model.base_url == ""
@@ -216,10 +237,10 @@ class TestWebSettings:
         web = WebSettings()
 
         assert web.ip_address == "0.0.0.0"
-        assert web.port == 80
+        assert web.port == 8000  # Default port is now 8000 to avoid privileged port 80
         assert web.type == "fastapi"
         assert web.asynchronous is False
-        assert web.authentication.enable is False
+        assert web.authentication.enable is True  # Default is now enabled
 
     def test_valid_port_range(self):
         """Test that valid port numbers are accepted."""
@@ -243,8 +264,11 @@ class TestConfigValidation:
         with patch.dict(
             os.environ,
             {
-                "AZURE_OPENAI_API_KEY": "valid-key",
-                "AZURE_OPENAI_BASE_URL": "https://valid.openai.azure.com/",
+                "INGENIOUS_MODELS__0__API_KEY": "valid-key",
+                "INGENIOUS_MODELS__0__BASE_URL": "https://valid.openai.azure.com/",
+                "INGENIOUS_MODELS__0__MODEL": "gpt-4o-mini",
+                "INGENIOUS_MODELS__0__API_TYPE": "rest",
+                "INGENIOUS_WEB_CONFIGURATION__AUTHENTICATION__ENABLE": "false",
             },
         ):
             settings = IngeniousSettings()
@@ -262,9 +286,10 @@ class TestConfigValidation:
         with patch.dict(
             os.environ,
             {
-                "AZURE_OPENAI_MODEL": "gpt-4.1-nano",
-                "AZURE_OPENAI_API_KEY": "placeholder_key",
-                "AZURE_OPENAI_BASE_URL": "https://test.com/",
+                "INGENIOUS_MODELS__0__MODEL": "gpt-4.1-nano",
+                "INGENIOUS_MODELS__0__API_KEY": "placeholder_key",
+                "INGENIOUS_MODELS__0__BASE_URL": "https://test.com/",
+                "INGENIOUS_MODELS__0__API_TYPE": "rest",
             },
         ):
             # Validation should fail during object creation due to pydantic validators
@@ -276,15 +301,16 @@ class TestConfigValidation:
         with patch.dict(
             os.environ,
             {
-                "AZURE_OPENAI_API_KEY": "valid-key",
-                "AZURE_OPENAI_BASE_URL": "https://valid.openai.azure.com/",
+                "INGENIOUS_MODELS__0__API_KEY": "valid-key",
+                "INGENIOUS_MODELS__0__BASE_URL": "https://valid.openai.azure.com/",
+                "INGENIOUS_MODELS__0__MODEL": "gpt-4o-mini",
+                "INGENIOUS_MODELS__0__API_TYPE": "rest",
                 "INGENIOUS_WEB_CONFIGURATION__AUTHENTICATION__ENABLE": "true",
                 "INGENIOUS_WEB_CONFIGURATION__AUTHENTICATION__PASSWORD": "",
             },
         ):
-            settings = IngeniousSettings()
             with pytest.raises(ValueError, match="no password is set"):
-                settings.validate_configuration()
+                IngeniousSettings()
 
 
 class TestGetConfigFunction:
@@ -295,8 +321,11 @@ class TestGetConfigFunction:
         with patch.dict(
             os.environ,
             {
-                "AZURE_OPENAI_API_KEY": "test-key",
-                "AZURE_OPENAI_BASE_URL": "https://test.openai.azure.com/",
+                "INGENIOUS_MODELS__0__API_KEY": "test-key",
+                "INGENIOUS_MODELS__0__BASE_URL": "https://test.openai.azure.com/",
+                "INGENIOUS_MODELS__0__MODEL": "gpt-4o-mini",
+                "INGENIOUS_MODELS__0__API_TYPE": "rest",
+                "INGENIOUS_WEB_CONFIGURATION__AUTHENTICATION__ENABLE": "false",
             },
         ):
             config = get_config()
@@ -309,13 +338,17 @@ class TestGetConfigFunction:
         with patch.dict(
             os.environ,
             {
-                "AZURE_OPENAI_API_KEY": "test-key",
-                "AZURE_OPENAI_BASE_URL": "https://test.openai.azure.com/",
+                "INGENIOUS_MODELS__0__API_KEY": "test-key",
+                "INGENIOUS_MODELS__0__BASE_URL": "https://test.openai.azure.com/",
+                "INGENIOUS_MODELS__0__MODEL": "gpt-4o-mini",
+                "INGENIOUS_MODELS__0__API_TYPE": "rest",
+                "INGENIOUS_WEB_CONFIGURATION__AUTHENTICATION__ENABLE": "false",
             },
         ):
             with patch.object(IngeniousSettings, "validate_configuration") as mock_validate:
                 get_config()
-                mock_validate.assert_called_once()
+                # validate_configuration is called during init and after, so it may be called twice
+                assert mock_validate.call_count >= 1
 
     def test_get_config_handles_validation_errors(self):
         """Test that get_config() properly handles validation errors."""
@@ -333,13 +366,21 @@ class TestMinimalConfig:
 
     def test_create_minimal_config(self):
         """Test creating minimal configuration for development."""
-        config = IngeniousSettings.create_minimal_config()
+        with patch.dict(
+            os.environ,
+            {
+                "INGENIOUS_MODELS__0__API_KEY": "test-key",
+                "INGENIOUS_MODELS__0__BASE_URL": "https://test.openai.azure.com/",
+                "INGENIOUS_MODELS__0__MODEL": "gpt-4o-mini",
+            },
+        ):
+            config = IngeniousSettings.create_minimal_config()
 
-        assert isinstance(config, IngeniousSettings)
-        assert len(config.models) >= 1
-        assert config.logging.root_log_level == "debug"
-        assert config.web_configuration.port == 8000
-        assert config.web_configuration.authentication.enable is False
+            assert isinstance(config, IngeniousSettings)
+            assert len(config.models) >= 1
+            assert config.logging.root_log_level == "debug"
+            assert config.web_configuration.port == 8000
+            assert config.web_configuration.authentication.enable is False
 
 
 class TestBackwardCompatibility:
@@ -350,8 +391,11 @@ class TestBackwardCompatibility:
         with patch.dict(
             os.environ,
             {
-                "AZURE_OPENAI_API_KEY": "test-key",
-                "AZURE_OPENAI_BASE_URL": "https://test.openai.azure.com/",
+                "INGENIOUS_MODELS__0__API_KEY": "test-key",
+                "INGENIOUS_MODELS__0__BASE_URL": "https://test.openai.azure.com/",
+                "INGENIOUS_MODELS__0__MODEL": "gpt-4o-mini",
+                "INGENIOUS_MODELS__0__API_TYPE": "rest",
+                "INGENIOUS_WEB_CONFIGURATION__AUTHENTICATION__ENABLE": "false",
             },
         ):
             config = get_config()
@@ -385,17 +429,19 @@ class TestErrorHandling:
                 assert False, "Should have raised ValidationError"
             except ValueError as e:
                 error_msg = str(e)
-                assert "AZURE_OPENAI_API_KEY" in error_msg
-                assert "AZURE_OPENAI_BASE_URL" in error_msg
+                # Check for the new environment variable format in error message
+                assert "INGENIOUS_MODELS__0__API_KEY" in error_msg
+                assert "INGENIOUS_MODELS__0__BASE_URL" in error_msg
 
     def test_configuration_validation_error_details(self):
         """Test that configuration validation provides detailed error information."""
         with patch.dict(
             os.environ,
             {
-                "AZURE_OPENAI_MODEL": "gpt-4.1-nano",
-                "AZURE_OPENAI_API_KEY": "placeholder_key",
-                "AZURE_OPENAI_BASE_URL": "placeholder_url",
+                "INGENIOUS_MODELS__0__MODEL": "gpt-4.1-nano",
+                "INGENIOUS_MODELS__0__API_KEY": "placeholder_key",
+                "INGENIOUS_MODELS__0__BASE_URL": "placeholder_url",
+                "INGENIOUS_MODELS__0__API_TYPE": "rest",
             },
         ):
             # Validation should fail during object creation due to pydantic validators

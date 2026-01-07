@@ -1,27 +1,12 @@
 # See https://pre-commit.com for more information
 # See https://pre-commit.com/hooks.html for more hooks
+# Common exclusion patterns
+default_language_version:
+  python: python3
 repos:
-  - repo: https://github.com/djlint/djLint
-    rev: v1.36.4
-    hooks:
-      # Reformat Flask/Jinja templates
-      - id: djlint-reformat-jinja
-        files: "\\.(html|jinja)$"
-        types_or: ["html", "jinja"]
-      # Lint Flask/Jinja templates
-      - id: djlint-jinja
-        files: "\\.(html|jinja)$"
-        types_or: ["html", "jinja"]
-  - repo: https://github.com/google/yamlfmt
-    rev: v0.20.0
-    hooks:
-      - id: yamlfmt
-  - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.14.5
-    hooks:
-      - id: ruff-check
-        args: ["--fix", "--extend-select=I,D", "--ignore=E402"]
-      - id: ruff-format
+  # ============================================================
+  # General code quality hooks (for all files)
+  # ============================================================
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v6.0.0
     hooks:
@@ -30,18 +15,118 @@ repos:
       - id: check-yaml
       - id: check-merge-conflict
       - id: debug-statements
-  # Static type checking with mypy
+        exclude: &venv_node_exclude '\.venv/|node_modules/'
+  - repo: https://github.com/google/yamlfmt
+    rev: v0.20.0
+    hooks:
+      - id: yamlfmt
+  # ============================================================
+  # Python linting and formatting (ruff)
+  # ============================================================
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.14.5
+    hooks:
+      - id: ruff-check
+        args: ["--fix", "--extend-select=I,D", "--ignore=E402"]
+        exclude: *venv_node_exclude
+      - id: ruff-format
+        exclude: *venv_node_exclude
+  # ============================================================
+  # Jinja/HTML templates (main ingenious package only)
+  # ============================================================
+  - repo: https://github.com/djlint/djLint
+    rev: v1.36.4
+    hooks:
+      - id: djlint-reformat-jinja
+        files: '\.(html|jinja)$'
+        exclude: &subproject_exclude '^(soca|ingen-prompt-tuner)/|node_modules/'
+        types_or: ["html", "jinja"]
+      - id: djlint-jinja
+        files: '\.(html|jinja)$'
+        exclude: *subproject_exclude
+        types_or: ["html", "jinja"]
+  # ============================================================
+  # Python type checking - main ingenious package
+  # ============================================================
   - repo: https://github.com/pre-commit/mirrors-mypy
     rev: v1.18.2
     hooks:
       - id: mypy
         args: [--ignore-missing-imports]
-        additional_dependencies: [pydantic, pydantic-settings, fastapi, typer, click]
-  # Security issue detection with bandit
+        exclude: '\.venv/|node_modules/|^soca/backend/|^ingen-prompt-tuner/backend/'
+        additional_dependencies:
+          - pydantic
+          - pydantic-settings
+          - fastapi
+          - typer
+          - click
+          - bcrypt
+          - python-jose
+          - httpx
+  # ============================================================
+  # Security scanning
+  # ============================================================
   - repo: https://github.com/PyCQA/bandit
     rev: '1.8.6'
     hooks:
       - id: bandit
-        # Only fail on medium+ severity; config in pyproject.toml
         args: ['-c', 'pyproject.toml', '-ll']
+        exclude: *venv_node_exclude
         additional_dependencies: ['bandit[toml]']
+  # ============================================================
+  # Sub-project hooks: SoCa and Prompt Tuner
+  # ============================================================
+  - repo: local
+    hooks:
+      # --- SoCa Backend ---
+      - id: soca-backend-mypy
+        name: SoCa Backend mypy
+        entry: bash -c 'cd soca/backend && MYPYPATH=src uv run mypy --ignore-missing-imports --explicit-package-bases $(echo "$@" | sed "s|soca/backend/||g")' --
+        language: system
+        files: '^soca/backend/src/soca/.*\.py$'
+        types: [python]
+      # --- SoCa Frontend ---
+      - id: soca-frontend-lint
+        name: SoCa Frontend ESLint
+        entry: bash -c 'cd soca/frontend && npm run lint'
+        language: system
+        files: '^soca/frontend/src/.*\.(vue|ts|js)$'
+        pass_filenames: false
+      - id: soca-frontend-typecheck
+        name: SoCa Frontend TypeScript
+        entry: bash -c 'cd soca/frontend && npm run typecheck'
+        language: system
+        files: '^soca/frontend/src/.*\.(vue|ts)$'
+        pass_filenames: false
+      - id: soca-frontend-format
+        name: SoCa Frontend Prettier
+        entry: bash -c 'cd soca/frontend && npm run format:check'
+        language: system
+        files: '^soca/frontend/src/.*\.(vue|ts|js)$'
+        pass_filenames: false
+      # --- Prompt Tuner Backend ---
+      - id: prompt-tuner-backend-mypy
+        name: Prompt Tuner Backend mypy
+        entry: bash -c 'cd ingen-prompt-tuner/backend && MYPYPATH=src uv run mypy --ignore-missing-imports --explicit-package-bases $(echo "$@" | sed "s|ingen-prompt-tuner/backend/||g")' --
+        language: system
+        files: '^ingen-prompt-tuner/backend/src/ingen_prompt_tuner/.*\.py$'
+        types: [python]
+      # --- Prompt Tuner Frontend ---
+      - id: prompt-tuner-frontend-lint
+        name: Prompt Tuner Frontend ESLint
+        entry: bash -c 'cd ingen-prompt-tuner/frontend && npm run lint'
+        language: system
+        files: '^ingen-prompt-tuner/frontend/src/.*\.(vue|ts|js)$'
+        pass_filenames: false
+      - id: prompt-tuner-frontend-typecheck
+        name: Prompt Tuner Frontend TypeScript
+        entry: bash -c 'cd ingen-prompt-tuner/frontend && npm run typecheck'
+        language: system
+        files: '^ingen-prompt-tuner/frontend/src/.*\.(vue|ts)$'
+        pass_filenames: false
+      - id: prompt-tuner-frontend-format
+        name: Prompt Tuner Frontend Prettier
+        entry: bash -c 'cd ingen-prompt-tuner/frontend && npm run format:check'
+        language: system
+        files: '^ingen-prompt-tuner/frontend/src/.*\.(vue|ts|js)$'
+        pass_filenames: false
