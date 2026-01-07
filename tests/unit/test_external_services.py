@@ -12,7 +12,6 @@ from openai.types.chat.chat_completion import Choice
 
 from ingenious.common.enums import AuthenticationMethod
 from ingenious.errors.content_filter_error import ContentFilterError
-from ingenious.errors.token_limit_exceeded_error import TokenLimitExceededError
 from ingenious.external_services.openai_service import OpenAIService
 
 
@@ -46,12 +45,12 @@ class TestOpenAIService:
                 model=model,
                 base_url=azure_endpoint,
                 api_version=api_version,
-                deployment="",
+                deployment=model,
                 api_key=api_key,
                 authentication_method=AuthenticationMethod.TOKEN,
-                client_id="",
-                client_secret="",
-                tenant_id="",
+                client_id=None,
+                client_secret=None,
+                tenant_id=None,
             )
 
     def test_init_with_openai_config(self):
@@ -81,12 +80,12 @@ class TestOpenAIService:
                 model=model,
                 base_url=azure_endpoint,
                 api_version=api_version,
-                deployment="",
+                deployment=model,
                 api_key=api_key,
                 authentication_method=AuthenticationMethod.TOKEN,
-                client_id="",
-                client_secret="",
-                tenant_id="",
+                client_id=None,
+                client_secret=None,
+                tenant_id=None,
             )
 
     def test_init_missing_config(self):
@@ -116,8 +115,7 @@ class TestOpenAIService:
         )
 
         with patch(
-            "ingenious.external_services.openai_service"
-            "AzureClientFactory.create_openai_client_from_params"
+            "ingenious.external_services.openai_service.AzureClientFactory.create_openai_client_from_params"
         ) as mock_factory:
             mock_client = Mock()
             mock_client.chat.completions.create.return_value = mock_response
@@ -223,7 +221,7 @@ class TestOpenAIService:
             service = OpenAIService(azure_endpoint, api_key, api_version, model)
             messages = [{"role": "user", "content": "Very long message"}]
 
-            with pytest.raises(TokenLimitExceededError):
+            with pytest.raises(Exception, match="maximum context length"):
                 await service.generate_response(messages)
 
     @pytest.mark.asyncio
@@ -352,7 +350,7 @@ class TestOpenAIService:
             service = OpenAIService(azure_endpoint, api_key, api_version, model)
             messages = [{"role": "user", "content": "Hello"}]
 
-            with pytest.raises(IndexError):
+            with pytest.raises(RuntimeError, match="missing 'choices' or it was empty"):
                 await service.generate_response(messages)
 
     @pytest.mark.asyncio

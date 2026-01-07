@@ -91,32 +91,51 @@ class TestFastAgentAPI:
     def test_setup_middleware_configures_cors_and_context(self):
         """Test that _setup_middleware configures middleware correctly."""
         api = FastAgentAPI.__new__(FastAgentAPI)
-        api.config = self.mock_config
+
+        # Set up mock config with proper CORS configuration
+        mock_config = Mock()
+        mock_cors = Mock()
+        mock_cors.allowed_origins = [
+            "http://localhost",
+            "http://localhost:5173",
+            "http://localhost:4173",
+        ]
+        mock_cors.allow_credentials = True
+        mock_cors.allow_methods = ["*"]
+        mock_cors.allow_headers = ["*"]
+        mock_config.web_configuration.cors = mock_cors
+        mock_config.web_configuration.authentication.enable_global_middleware = True
+
+        api.config = mock_config
         api.app = Mock()
 
         api._setup_middleware()
 
-        # Verify middleware was added (CORS, Context, and Authentication)
-        assert api.app.add_middleware.call_count == 3
+        # Verify middleware was added (Context, Security Headers, CORS, and Auth)
+        assert api.app.add_middleware.call_count == 4
 
         # Check that RequestContextMiddleware was added first
         first_call = api.app.add_middleware.call_args_list[0]
         assert "RequestContextMiddleware" in str(first_call[0][0])
 
-        # Check that CORSMiddleware was added second with correct config
+        # Check that SecurityHeadersMiddleware was added second
         second_call = api.app.add_middleware.call_args_list[1]
-        args, kwargs = second_call
+        assert "SecurityHeadersMiddleware" in str(second_call[0][0])
+
+        # Check that CORSMiddleware was added third with correct config
+        third_call = api.app.add_middleware.call_args_list[2]
+        args, kwargs = third_call
         assert "CORSMiddleware" in str(args[0])
         assert "http://localhost" in kwargs["allow_origins"]
-
-        # Check that AuthenticationMiddleware was added third
-        third_call = api.app.add_middleware.call_args_list[2]
-        assert "AuthenticationMiddleware" in str(third_call[0][0])
         assert "http://localhost:5173" in kwargs["allow_origins"]
         assert "http://localhost:4173" in kwargs["allow_origins"]
         assert kwargs["allow_credentials"] is True
         assert kwargs["allow_methods"] == ["*"]
         assert kwargs["allow_headers"] == ["*"]
+
+        # Check that AuthenticationMiddleware was added fourth
+        fourth_call = api.app.add_middleware.call_args_list[3]
+        assert "AuthenticationMiddleware" in str(fourth_call[0][0])
 
     @patch("ingenious.main.app_factory.RouteManager")
     def test_setup_routes(self, mock_route_manager):

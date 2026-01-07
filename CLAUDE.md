@@ -9,6 +9,21 @@ Your context window will be automatically compacted as it approaches its limit, 
 
 This is the **ingenious** package - a core AI agent framework library (v0.2.8).
 
+### Subprojects
+
+This repository contains two applications built on the Ingenious framework:
+
+| Project | Directory | Purpose | Ports |
+|---------|-----------|---------|-------|
+| **SoCa** | `soca/` | Document evaluation app - upload submissions, define criteria, receive AI scores | Backend: 8001, Frontend: 5173 |
+| **Prompt Tuner** | `ingen-prompt-tuner/` | Central AI orchestration hub - manage prompts, view traces, host AI agents | Backend: 8002, Frontend: 5174 |
+
+**Integration**: SoCa delegates AI evaluation to Prompt Tuner via `/api/v1/chat` endpoint. Prompt Tuner hosts the Ingenious agent flows and persists traces to Cosmos DB.
+
+Each subproject has its own `CLAUDE.md` with detailed guidance:
+- `soca/CLAUDE.md` - SoCa-specific commands, architecture, and API endpoints
+- `ingen-prompt-tuner/CLAUDE.md` - Prompt Tuner configuration, conversation flows, and frontend patterns
+
 ## Communication Style
 
 **CRITICAL**: When working with this codebase:

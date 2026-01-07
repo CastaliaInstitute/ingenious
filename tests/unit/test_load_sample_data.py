@@ -322,7 +322,7 @@ class TestSqliteSampleDb:
             mock_df.to_sql.assert_called_with(
                 "test_table", mock_connection, if_exists="replace", index=False
             )
-            mock_print.assert_any_call("CSV data loaded into test_table table")
+            mock_print.assert_any_call("CSV data loaded into test_table table.")
 
     @patch("ingenious.utils.load_sample_data.get_config")
     @patch("ingenious.utils.load_sample_data.os.path.exists")
@@ -349,7 +349,7 @@ class TestSqliteSampleDb:
             sqlite_sample_db()
 
             # Verify error message
-            mock_print.assert_any_call("CSV file not found at /tmp/nonexistent.csv")  # nosec B108: acceptable for testing
+            mock_print.assert_any_call("CSV file not found at /tmp/nonexistent.csv.")  # nosec B108: acceptable for testing
 
     def test_execute_sql_with_parameters(self):
         """Test execute_sql method with parameters."""

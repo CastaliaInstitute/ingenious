@@ -155,7 +155,7 @@ class TestProcessingError:
         assert result["cause"] == str(cause)
         assert "file_path" in result["context"]
 
-    @patch("ingenious.errors.processing.logger")
+    @patch("ingenious.errors.processing.base.logger")
     def test_logging_integration(self, mock_logger):
         """Test that errors are logged with structured data."""
         error = ProcessingError(
@@ -602,7 +602,7 @@ class TestIntegrationScenarios:
 class TestExternalIntegration:
     """Test integration with external libraries and systems."""
 
-    @patch("ingenious.errors.processing.logger")
+    @patch("ingenious.errors.processing.base.logger")
     def test_logging_structured_data(self, mock_logger):
         """Test that structured logging captures all error data."""
         error = ExtractionError(

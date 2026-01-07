@@ -270,8 +270,8 @@ strict = true
 namespace_packages = true
 explicit_package_bases = true
 
-# Exclude test_dir and its subdirectories from type checking
-exclude = ["test_dir/.*"]
+# Exclude non-package directories from type checking
+exclude = ["soca/.*", "prompt-tuner/.*"]
 
 # Plugins
 plugins = ["pydantic.mypy"]
@@ -421,10 +421,9 @@ filterwarnings = [
 # Dynamic parts are only column/table names from controlled dict keys
 skips = ["B608"]
 # Exclude test files from security checks (they use asserts intentionally)
-exclude_dirs = ["tests", "test_dir", "ingenious/services/azure_search/tests"]
+exclude_dirs = ["tests", "soca", "prompt-tuner", "ingenious/services/azure_search/tests"]
 
 [tool.uv.workspace]
 members = [
-    "test_dir",
     ".",
 ]

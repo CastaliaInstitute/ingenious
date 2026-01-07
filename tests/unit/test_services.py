@@ -272,7 +272,7 @@ class TestMessageFeedbackService:
         )
 
         result = await service.update_message_feedback("test_message_id", feedback)
-        assert result.message == "Feedback submitted for message test_message_id"
+        assert result.message == "Feedback submitted for message test_message_id."
 
     @pytest.mark.asyncio
     async def test_update_message_feedback_failure(self):

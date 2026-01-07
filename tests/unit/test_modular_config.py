@@ -17,6 +17,7 @@ from ingenious.config import (
 from ingenious.config.models import (
     LoggingSettings,
     ModelSettings,
+    WebAuthenticationSettings,
     WebSettings,
 )
 from ingenious.config.validators import validate_configuration
@@ -90,7 +91,8 @@ class TestConfigValidators:
                     api_key="test-key",
                     base_url="https://test.openai.azure.com/",
                 )
-            ]
+            ],
+            web_configuration=WebSettings(authentication=WebAuthenticationSettings(enable=False)),
         )
         # Should not raise an exception
         validate_configuration(settings)
@@ -105,7 +107,8 @@ class TestConfigValidators:
                     api_key="test-key",
                     base_url="https://test.openai.azure.com/",
                 )
-            ]
+            ],
+            web_configuration=WebSettings(authentication=WebAuthenticationSettings(enable=False)),
         )
 
         # Use object.__setattr__ to bypass pydantic validation
@@ -128,12 +131,13 @@ class TestIngeniousSettings:
                     api_key="test-key",
                     base_url="https://test.openai.azure.com/",
                 )
-            ]
+            ],
+            web_configuration=WebSettings(authentication=WebAuthenticationSettings(enable=False)),
         )
         assert len(settings.models) == 1
         assert settings.models[0].model == "gpt-4.1-nano"
         assert settings.profile == "default"
-        assert settings.web_configuration.port == 80
+        assert settings.web_configuration.port == 8000
 
     def test_environment_variable_override(self):
         """Test environment variable overrides."""
@@ -145,6 +149,7 @@ class TestIngeniousSettings:
                 "INGENIOUS_MODELS__0__API_KEY": "test-key",
                 "INGENIOUS_MODELS__0__BASE_URL": "https://test.openai.azure.com/",
                 "INGENIOUS_MODELS__0__MODEL": "gpt-4.1-nano",
+                "INGENIOUS_WEB_CONFIGURATION__AUTHENTICATION__ENABLE": "false",
             },
         ):
             settings = IngeniousSettings()
@@ -163,6 +168,7 @@ class TestConfigFactoryFunctions:
                 "INGENIOUS_MODELS__0__API_KEY": "test-key",
                 "INGENIOUS_MODELS__0__BASE_URL": "https://test.openai.azure.com/",
                 "INGENIOUS_MODELS__0__MODEL": "gpt-4.1-nano",
+                "INGENIOUS_WEB_CONFIGURATION__AUTHENTICATION__ENABLE": "false",
             },
         ):
             config = get_config()
@@ -171,12 +177,19 @@ class TestConfigFactoryFunctions:
 
     def test_create_minimal_config(self):
         """Test create_minimal_config function."""
-        config = create_minimal_config()
-        assert isinstance(config, IngeniousSettings)
-        assert len(config.models) == 1
-        assert config.logging.root_log_level == "debug"
-        assert config.web_configuration.port == 8000
-        assert not config.web_configuration.authentication.enable
+        with patch.dict(
+            os.environ,
+            {
+                "INGENIOUS_MODELS__0__API_KEY": "test-key",
+                "INGENIOUS_MODELS__0__BASE_URL": "https://test.openai.azure.com/",
+            },
+        ):
+            config = create_minimal_config()
+            assert isinstance(config, IngeniousSettings)
+            assert len(config.models) == 1
+            assert config.logging.root_log_level == "debug"
+            assert config.web_configuration.port == 8000
+            assert not config.web_configuration.authentication.enable
 
     @pytest.mark.isolation_sensitive
     def test_load_from_env_file(self):
@@ -188,6 +201,7 @@ class TestConfigFactoryFunctions:
             "INGENIOUS_MODELS__0__API_KEY": "test-key",
             "INGENIOUS_MODELS__0__BASE_URL": "https://test.openai.azure.com/",
             "INGENIOUS_MODELS__0__MODEL": "gpt-4.1-nano",
+            "INGENIOUS_WEB_CONFIGURATION__AUTHENTICATION__ENABLE": "false",
         }
 
         with patch.dict(os.environ, env_vars):

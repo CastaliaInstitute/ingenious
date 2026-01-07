@@ -34,17 +34,16 @@ class TestDiagnosticRoutes:
     @pytest.mark.asyncio
     async def test_health_check_success(self):
         """Test successful health check."""
-        # Mock dependencies
-        with patch("ingenious.dependencies.get_config", return_value=Mock()):
-            with patch("ingenious.dependencies.get_config", return_value=Mock()):
-                from ingenious.api.routes.diagnostic import health_check
+        # Mock the get_config function used in the diagnostic module
+        with patch("ingenious.api.routes.diagnostic.ingen_deps.get_config", return_value=Mock()):
+            from ingenious.api.routes.diagnostic import health_check
 
-                response = await health_check()
-                assert response["status"] == "healthy"
-                assert "timestamp" in response
-                assert "response_time_ms" in response
-                assert response["components"]["configuration"] == "ok"
-                assert response["components"]["profile"] == "ok"
+            response = await health_check()
+            assert response["status"] == "healthy"
+            assert "timestamp" in response
+            assert "response_time_ms" in response
+            assert response["components"]["configuration"] == "ok"
+            assert response["components"]["profile"] == "ok"
 
     def test_diagnostic_route_exists(self):
         """Test that diagnostic route module can be imported."""

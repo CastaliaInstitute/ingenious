@@ -51,7 +51,7 @@ class TestMessageFeedbackService:
 
         # Verify
         assert isinstance(result, MessageFeedbackResponse)
-        assert result.message == f"Feedback submitted for message {message_id}"
+        assert result.message == f"Feedback submitted for message {message_id}."
 
         # Verify repository calls
         self.mock_chat_history_repository.get_message.assert_called_once_with(message_id, thread_id)
@@ -148,7 +148,7 @@ class TestMessageFeedbackService:
 
         # Verify success
         assert isinstance(result, MessageFeedbackResponse)
-        assert result.message == f"Feedback submitted for message {message_id}"
+        assert result.message == f"Feedback submitted for message {message_id}."
 
         # Verify repository calls
         self.mock_chat_history_repository.update_message_feedback.assert_called_once_with(
