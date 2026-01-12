@@ -67,6 +67,7 @@ export const useEvaluationsStore = defineStore('evaluations', () => {
     const updated = await evaluationsService.run(id)
     const index = evaluations.value.findIndex((e) => e.id === id)
     if (index !== -1) {
+      // eslint-disable-next-line security/detect-object-injection -- index is a validated numeric array index from findIndex
       evaluations.value[index] = updated
     }
     return updated

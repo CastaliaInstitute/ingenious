@@ -78,6 +78,7 @@ export const useCriteriaStore = defineStore('criteria', () => {
     const updated = await criteriaService.update(id, data)
     const index = criteriaSets.value.findIndex((c) => c.id === id)
     if (index !== -1) {
+      // eslint-disable-next-line security/detect-object-injection -- index is a validated numeric array index from findIndex
       criteriaSets.value[index] = updated
     }
     return updated

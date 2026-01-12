@@ -1,6 +1,7 @@
 import pluginVue from 'eslint-plugin-vue'
 import tseslint from 'typescript-eslint'
 import jsdoc from 'eslint-plugin-jsdoc'
+import security from 'eslint-plugin-security'
 
 export default [
   // Ignore patterns
@@ -13,6 +14,8 @@ export default [
   ...pluginVue.configs['flat/recommended'],
   // JSDoc config for TypeScript
   jsdoc.configs['flat/recommended-typescript'],
+  // Security config
+  security.configs.recommended,
   // Custom rules
   {
     files: ['**/*.vue', '**/*.ts'],
