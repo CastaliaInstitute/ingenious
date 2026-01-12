@@ -321,6 +321,8 @@ module = [
   "langchain_openai.*",
   "langchain_text_splitters.*",
   "yaml.*",
+  "openai.*",
+  "tiktoken.*",
 ]
 ignore_missing_imports = true
 
