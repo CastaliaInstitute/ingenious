@@ -1,10 +1,11 @@
 """Evaluations module with AI-powered evaluation logic."""
 
+import asyncio
 import json
 import logging
 import uuid
 from datetime import datetime
-from typing import Optional
+from typing import Any, Optional
 
 import httpx
 
@@ -22,12 +23,69 @@ from soca.templates import get_user_prompt_template, render_template
 
 logger = logging.getLogger(__name__)
 
+# Retry configuration
+MAX_RETRIES = 3
+INITIAL_RETRY_DELAY = 2.0  # seconds
+MAX_RETRY_DELAY = 30.0  # seconds
+
+
+async def _call_prompt_tuner_api(
+    prompt_tuner_url: str,
+    prompt: str,
+) -> tuple[bool, dict[str, Any] | None, str]:
+    """Call the Prompt Tuner API with error handling.
+
+    Returns:
+        Tuple of (success, data, error_message)
+    """
+    try:
+        async with httpx.AsyncClient() as client:
+            logger.info(f"Calling Prompt Tuner API at {prompt_tuner_url}/api/v1/chat")
+            response = await client.post(
+                f"{prompt_tuner_url}/api/v1/chat",
+                json={
+                    "user_prompt": prompt,
+                    "thread_id": str(uuid.uuid4()),
+                    "conversation_flow": "soca-evaluator",
+                },
+                timeout=120.0,
+            )
+
+            if response.status_code == 200:
+                data = response.json()
+                agent_response = data.get("agent_response", "{}")
+
+                # Parse the AI response
+                try:
+                    evaluation_data = json.loads(agent_response)
+                    # Check if the response has valid criterion results
+                    if evaluation_data.get("criterionResults"):
+                        return True, evaluation_data, ""
+                    else:
+                        return False, None, "AI returned empty criterion results"
+                except json.JSONDecodeError as e:
+                    return False, None, f"Failed to parse AI response: {e}"
+            elif response.status_code == 429:
+                return False, None, "Rate limited by AI service"
+            else:
+                return False, None, f"API returned status {response.status_code}"
+
+    except httpx.TimeoutException:
+        return False, None, "Request timed out"
+    except httpx.ConnectError:
+        return False, None, f"Could not connect to {prompt_tuner_url}"
+    except Exception as e:
+        return False, None, f"Error: {str(e)}"
+
 
 async def evaluate_submission(
     submission: Submission,
     criteria_set: CriteriaSet,
 ) -> EvaluationResult:
-    """Evaluate a single submission against criteria using AI via Prompt Tuner."""
+    """Evaluate a single submission against criteria using AI via Prompt Tuner.
+
+    Includes retry logic with exponential backoff for transient failures.
+    """
     # Build criteria text for template
     criteria_text = "\n".join(
         f"- {c.id}: {c.name} (weight: {c.weight}%, max score: {c.max_score}): {c.description}"
@@ -49,95 +107,85 @@ async def evaluate_submission(
         },
     )
 
-    # Call Prompt Tuner API for AI evaluation
+    # Call Prompt Tuner API for AI evaluation with retries
     prompt_tuner_url = settings.ingenious_api_url or "http://localhost:8002"
 
-    try:
-        async with httpx.AsyncClient() as client:
-            logger.info(f"Calling Prompt Tuner API at {prompt_tuner_url}/api/v1/chat")
-            response = await client.post(
-                f"{prompt_tuner_url}/api/v1/chat",
-                json={
-                    "user_prompt": prompt,
-                    "thread_id": str(uuid.uuid4()),
-                    "conversation_flow": "soca-evaluator",
-                },
-                timeout=120.0,
+    last_error = ""
+    retry_delay = INITIAL_RETRY_DELAY
+
+    for attempt in range(MAX_RETRIES):
+        if attempt > 0:
+            logger.info(
+                f"Retry attempt {attempt + 1}/{MAX_RETRIES} for submission {submission.id} "
+                f"after {retry_delay}s delay"
             )
+            await asyncio.sleep(retry_delay)
+            # Exponential backoff with cap
+            retry_delay = min(retry_delay * 2, MAX_RETRY_DELAY)
 
-            if response.status_code == 200:
-                data = response.json()
-                agent_response = data.get("agent_response", "{}")
+        success, evaluation_data, error = await _call_prompt_tuner_api(prompt_tuner_url, prompt)
 
-                # Parse the AI response
-                try:
-                    evaluation_data = json.loads(agent_response)
+        if success and evaluation_data:
+            # Map criterion results
+            criterion_results = []
+            for cr in evaluation_data.get("criterionResults", []):
+                criterion_results.append(
+                    CriterionResult(
+                        criterion_id=cr.get("criterionId", ""),
+                        score=float(cr.get("score", 0)),
+                        narrative=cr.get("narrative", ""),
+                    )
+                )
 
-                    # Map criterion results
-                    criterion_results = []
-                    for cr in evaluation_data.get("criterionResults", []):
-                        criterion_results.append(
-                            CriterionResult(
-                                criterion_id=cr.get("criterionId", ""),
-                                score=float(cr.get("score", 0)),
-                                narrative=cr.get("narrative", ""),
-                            )
+            # If no criterion results from AI, create default ones
+            if not criterion_results:
+                for criterion in criteria_set.criteria:
+                    criterion_results.append(
+                        CriterionResult(
+                            criterion_id=criterion.id,
+                            score=criterion.max_score / 2,
+                            narrative="Evaluation pending - AI response incomplete.",
                         )
-
-                    # If no criterion results from AI, create default ones
-                    if not criterion_results:
-                        for criterion in criteria_set.criteria:
-                            criterion_results.append(
-                                CriterionResult(
-                                    criterion_id=criterion.id,
-                                    score=criterion.max_score / 2,
-                                    narrative="Evaluation pending - AI response incomplete.",
-                                )
-                            )
-
-                    # Calculate overall score as weighted percentage (0-100)
-                    # Formula: sum of (score / maxScore) * weight for each criterion
-                    overall_score = 0.0
-                    criteria_lookup = {c.id: c for c in criteria_set.criteria}
-                    for cr in criterion_results:
-                        if cr.criterion_id in criteria_lookup:
-                            criterion = criteria_lookup[cr.criterion_id]
-                            if criterion.max_score > 0:
-                                # (score / maxScore) * weight
-                                weighted_pct = (cr.score / criterion.max_score) * criterion.weight
-                                overall_score += weighted_pct
-
-                    logger.info(f"AI evaluation successful for submission {submission.id}")
-
-                    return EvaluationResult(
-                        submission_id=submission.id,
-                        submission_name=submission.name,
-                        submission_author=None,
-                        overall_score=round(overall_score, 2),
-                        criterion_results=criterion_results,
-                        summary=evaluation_data.get("summary", "Evaluation completed."),
                     )
 
-                except json.JSONDecodeError as e:
-                    logger.error(f"Failed to parse AI response: {e}")
-            else:
-                logger.error(f"Prompt Tuner API returned status {response.status_code}")
+            # Calculate overall score as weighted percentage (0-100)
+            # Formula: sum of (score / maxScore) * weight for each criterion
+            overall_score = 0.0
+            criteria_lookup = {c.id: c for c in criteria_set.criteria}
+            for cr in criterion_results:
+                if cr.criterion_id in criteria_lookup:
+                    criterion = criteria_lookup[cr.criterion_id]
+                    if criterion.max_score > 0:
+                        # (score / maxScore) * weight
+                        weighted_pct = (cr.score / criterion.max_score) * criterion.weight
+                        overall_score += weighted_pct
 
-    except httpx.TimeoutException:
-        logger.error("Prompt Tuner API request timed out")
-    except httpx.ConnectError:
-        logger.error(f"Could not connect to Prompt Tuner API at {prompt_tuner_url}")
-    except Exception as e:
-        logger.error(f"Error calling Prompt Tuner API: {e}")
+            logger.info(f"AI evaluation successful for submission {submission.id}")
 
-    # Fallback: return error result if AI evaluation fails
+            return EvaluationResult(
+                submission_id=submission.id,
+                submission_name=submission.name,
+                submission_author=None,
+                overall_score=round(overall_score, 2),
+                criterion_results=criterion_results,
+                summary=evaluation_data.get("summary", "Evaluation completed."),
+            )
+
+        last_error = error
+        logger.warning(f"Evaluation attempt {attempt + 1} failed: {error}")
+
+    # All retries exhausted - return error result
+    logger.error(
+        f"AI evaluation failed for submission {submission.id} after {MAX_RETRIES} attempts: {last_error}"
+    )
+
     criterion_results = []
     for criterion in criteria_set.criteria:
         criterion_results.append(
             CriterionResult(
                 criterion_id=criterion.id,
                 score=0,
-                narrative="AI evaluation unavailable - please check Prompt Tuner configuration.",
+                narrative=f"AI evaluation failed after {MAX_RETRIES} attempts.",
             )
         )
 
@@ -147,7 +195,7 @@ async def evaluate_submission(
         submission_author=None,
         overall_score=0,
         criterion_results=criterion_results,
-        summary="AI evaluation failed. Please ensure Prompt Tuner backend is running and Azure OpenAI is configured.",
+        summary=f"AI evaluation failed after {MAX_RETRIES} retries. Last error: {last_error}",
     )
 
 
