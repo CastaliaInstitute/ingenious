@@ -15,13 +15,101 @@
   }
 
   const parsedContent = computed<ParsedJson>(() => {
-    try {
-      const data = JSON.parse(props.content)
-      return { valid: true, data }
-    } catch {
+    const content = props.content?.trim() || ''
+    if (!content) {
       return { valid: false, data: null }
     }
+
+    // Try direct parse first
+    try {
+      let data = JSON.parse(content)
+      // Handle double-stringified JSON
+      if (typeof data === 'string') {
+        try {
+          const innerData = JSON.parse(data)
+          if (typeof innerData === 'object' && innerData !== null) {
+            data = innerData
+          }
+        } catch {
+          // Inner parse failed, keep original string
+        }
+      }
+      return { valid: true, data }
+    } catch {
+      // Direct parse failed, try to find JSON in the content
+    }
+
+    // Try to extract JSON object or array from text
+    const jsonStartIndex = findJsonStart(content)
+    if (jsonStartIndex >= 0) {
+      const potentialJson = content.substring(jsonStartIndex)
+      try {
+        const data = JSON.parse(potentialJson)
+        return { valid: true, data }
+      } catch {
+        // Try to find matching bracket and parse
+        const extracted = extractJsonSubstring(potentialJson)
+        if (extracted) {
+          try {
+            const data = JSON.parse(extracted)
+            return { valid: true, data }
+          } catch {
+            // Extraction failed
+          }
+        }
+      }
+    }
+
+    return { valid: false, data: null }
   })
+
+  function findJsonStart(text: string): number {
+    const objectStart = text.indexOf('{')
+    const arrayStart = text.indexOf('[')
+    if (objectStart === -1) return arrayStart
+    if (arrayStart === -1) return objectStart
+    return Math.min(objectStart, arrayStart)
+  }
+
+  function extractJsonSubstring(text: string): string | null {
+    const startChar = text[0]
+    const endChar = startChar === '{' ? '}' : ']'
+    let depth = 0
+    let inString = false
+    let escapeNext = false
+
+    for (let i = 0; i < text.length; i++) {
+      const char = text[i]
+
+      if (escapeNext) {
+        escapeNext = false
+        continue
+      }
+
+      if (char === '\\' && inString) {
+        escapeNext = true
+        continue
+      }
+
+      if (char === '"') {
+        inString = !inString
+        continue
+      }
+
+      if (inString) continue
+
+      if (char === startChar) {
+        depth++
+      } else if (char === endChar) {
+        depth--
+        if (depth === 0) {
+          return text.substring(0, i + 1)
+        }
+      }
+    }
+
+    return null
+  }
 
   function toggleCollapse(path: string) {
     if (collapsedPaths.value.has(path)) {
@@ -80,7 +168,7 @@
       title="Copy to clipboard"
       @click="copyToClipboard"
     >
-      <template v-if="copied">Copied</template>
+      <template v-if="copied"> Copied </template>
       <template v-else>
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path
