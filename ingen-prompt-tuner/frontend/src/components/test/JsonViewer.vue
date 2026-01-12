@@ -14,53 +14,82 @@
     data: unknown
   }
 
+  const INVALID_JSON: ParsedJson = { valid: false, data: null }
+
+  /**
+   * Try to parse JSON string, returns null on failure
+   */
+  function tryParseJson(text: string): unknown | null {
+    try {
+      return JSON.parse(text)
+    } catch {
+      return null
+    }
+  }
+
+  /**
+   * Unwrap double-stringified JSON if applicable
+   */
+  function unwrapDoubleStringified(data: unknown): unknown {
+    if (typeof data !== 'string') {
+      return data
+    }
+    const innerData = tryParseJson(data)
+    if (typeof innerData === 'object' && innerData !== null) {
+      return innerData
+    }
+    return data
+  }
+
+  /**
+   * Attempt direct JSON parse with double-stringify handling
+   */
+  function tryDirectParse(content: string): ParsedJson | null {
+    const data = tryParseJson(content)
+    if (data === null) {
+      return null
+    }
+    return { valid: true, data: unwrapDoubleStringified(data) }
+  }
+
+  /**
+   * Attempt to extract and parse JSON from within text
+   */
+  function tryExtractFromText(content: string): ParsedJson | null {
+    const jsonStartIndex = findJsonStart(content)
+    if (jsonStartIndex < 0) {
+      return null
+    }
+
+    const potentialJson = content.substring(jsonStartIndex)
+
+    // Try parsing from start index
+    const directResult = tryParseJson(potentialJson)
+    if (directResult !== null) {
+      return { valid: true, data: directResult }
+    }
+
+    // Try to find matching bracket and parse
+    const extracted = extractJsonSubstring(potentialJson)
+    if (!extracted) {
+      return null
+    }
+
+    const extractedResult = tryParseJson(extracted)
+    if (extractedResult !== null) {
+      return { valid: true, data: extractedResult }
+    }
+
+    return null
+  }
+
   const parsedContent = computed<ParsedJson>(() => {
     const content = props.content?.trim() || ''
     if (!content) {
-      return { valid: false, data: null }
+      return INVALID_JSON
     }
 
-    // Try direct parse first
-    try {
-      let data = JSON.parse(content)
-      // Handle double-stringified JSON
-      if (typeof data === 'string') {
-        try {
-          const innerData = JSON.parse(data)
-          if (typeof innerData === 'object' && innerData !== null) {
-            data = innerData
-          }
-        } catch {
-          // Inner parse failed, keep original string
-        }
-      }
-      return { valid: true, data }
-    } catch {
-      // Direct parse failed, try to find JSON in the content
-    }
-
-    // Try to extract JSON object or array from text
-    const jsonStartIndex = findJsonStart(content)
-    if (jsonStartIndex >= 0) {
-      const potentialJson = content.substring(jsonStartIndex)
-      try {
-        const data = JSON.parse(potentialJson)
-        return { valid: true, data }
-      } catch {
-        // Try to find matching bracket and parse
-        const extracted = extractJsonSubstring(potentialJson)
-        if (extracted) {
-          try {
-            const data = JSON.parse(extracted)
-            return { valid: true, data }
-          } catch {
-            // Extraction failed
-          }
-        }
-      }
-    }
-
-    return { valid: false, data: null }
+    return tryDirectParse(content) ?? tryExtractFromText(content) ?? INVALID_JSON
   })
 
   function findJsonStart(text: string): number {
@@ -71,40 +100,63 @@
     return Math.min(objectStart, arrayStart)
   }
 
+  interface ParserState {
+    depth: number
+    inString: boolean
+    escapeNext: boolean
+  }
+
+  /**
+   * Process a single character and update parser state
+   * Returns the ending index if bracket matching is complete, -1 otherwise
+   */
+  function processCharacter(
+    char: string,
+    index: number,
+    startChar: string,
+    endChar: string,
+    state: ParserState
+  ): number {
+    if (state.escapeNext) {
+      state.escapeNext = false
+      return -1
+    }
+
+    if (char === '\\' && state.inString) {
+      state.escapeNext = true
+      return -1
+    }
+
+    if (char === '"') {
+      state.inString = !state.inString
+      return -1
+    }
+
+    if (state.inString) {
+      return -1
+    }
+
+    if (char === startChar) {
+      state.depth++
+    } else if (char === endChar) {
+      state.depth--
+      if (state.depth === 0) {
+        return index
+      }
+    }
+
+    return -1
+  }
+
   function extractJsonSubstring(text: string): string | null {
     const startChar = text[0]
     const endChar = startChar === '{' ? '}' : ']'
-    let depth = 0
-    let inString = false
-    let escapeNext = false
+    const state: ParserState = { depth: 0, inString: false, escapeNext: false }
 
     for (let i = 0; i < text.length; i++) {
-      const char = text[i]
-
-      if (escapeNext) {
-        escapeNext = false
-        continue
-      }
-
-      if (char === '\\' && inString) {
-        escapeNext = true
-        continue
-      }
-
-      if (char === '"') {
-        inString = !inString
-        continue
-      }
-
-      if (inString) continue
-
-      if (char === startChar) {
-        depth++
-      } else if (char === endChar) {
-        depth--
-        if (depth === 0) {
-          return text.substring(0, i + 1)
-        }
+      const endIndex = processCharacter(text[i], i, startChar, endChar, state)
+      if (endIndex >= 0) {
+        return text.substring(0, endIndex + 1)
       }
     }
 
