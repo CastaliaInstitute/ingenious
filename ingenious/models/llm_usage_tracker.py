@@ -89,11 +89,6 @@ class LLMUsageTracker(logging.Handler):
         """
         return self._completion_tokens
 
-    def reset(self) -> None:
-        """Reset the token counters to zero."""
-        self._prompt_tokens = 0
-        self._completion_tokens = 0
-
     async def write_llm_responses_to_file(self, file_prefixes: List[str] = []) -> None:
         """Write LLM responses from the queue to files.
 
