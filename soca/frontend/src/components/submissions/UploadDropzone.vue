@@ -1,7 +1,7 @@
 <script setup lang="ts">
   import { ref } from 'vue'
 
-  const props = defineProps<{
+  defineProps<{
     progress: number | null
   }>()
 
@@ -42,12 +42,6 @@
       emit('files-selected', Array.from(input.files))
       input.value = ''
     }
-  }
-
-  function formatFileSize(bytes: number): string {
-    if (bytes < 1024) return `${bytes} B`
-    if (bytes < 1024 * 1024) return `${(bytes / 1024).toFixed(1)} KB`
-    return `${(bytes / (1024 * 1024)).toFixed(1)} MB`
   }
 </script>
 

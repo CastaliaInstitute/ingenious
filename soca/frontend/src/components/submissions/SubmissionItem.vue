@@ -27,12 +27,6 @@
       hour12: true,
     })
   }
-
-  function getFileIcon(fileType: string): string {
-    if (fileType.includes('pdf')) return 'pdf'
-    if (fileType.includes('word') || fileType.includes('docx')) return 'doc'
-    return 'txt'
-  }
 </script>
 
 <template>

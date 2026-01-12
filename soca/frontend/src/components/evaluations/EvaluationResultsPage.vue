@@ -5,7 +5,6 @@
   import { useCriteriaStore } from '@/stores/criteria'
   import api from '@/services/api'
   import StatCard from '@/components/common/StatCard.vue'
-  import Button from '@/components/common/Button.vue'
   import ResultCard from './ResultCard.vue'
 
   const evaluationsStore = useEvaluationsStore()
@@ -57,19 +56,6 @@
     const remainingSeconds = seconds % 60
     return `${minutes}m ${remainingSeconds}s`
   })
-
-  function getScoreColor(score: number): string {
-    if (score >= 80) return 'text-green-600'
-    if (score >= 60) return 'text-amber-600'
-    return 'text-orange-600'
-  }
-
-  function getRankBadge(rank: number): { bg: string; text: string } {
-    if (rank === 1) return { bg: 'bg-yellow-100', text: 'text-yellow-700' }
-    if (rank === 2) return { bg: 'bg-gray-200', text: 'text-gray-700' }
-    if (rank === 3) return { bg: 'bg-amber-100', text: 'text-amber-700' }
-    return { bg: 'bg-gray-100', text: 'text-gray-600' }
-  }
 
   async function exportResults(format: 'json' | 'csv') {
     if (!evaluation.value) return

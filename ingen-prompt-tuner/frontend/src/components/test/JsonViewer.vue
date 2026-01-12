@@ -121,10 +121,6 @@
     collapsedPaths.value = new Set(collapsedPaths.value)
   }
 
-  function isCollapsed(path: string): boolean {
-    return collapsedPaths.value.has(path)
-  }
-
   async function copyToClipboard() {
     try {
       await navigator.clipboard.writeText(props.content)
@@ -135,29 +131,6 @@
     } catch {
       // Fallback
     }
-  }
-
-  function getType(value: unknown): string {
-    if (value === null) return 'null'
-    if (Array.isArray(value)) return 'array'
-    return typeof value
-  }
-
-  function formatValue(value: unknown): string {
-    if (value === null) return 'null'
-    if (typeof value === 'string') return `"${value}"`
-    return String(value)
-  }
-
-  function getPreview(value: unknown): string {
-    if (Array.isArray(value)) {
-      return `[${value.length} items]`
-    }
-    if (typeof value === 'object' && value !== null) {
-      const keys = Object.keys(value)
-      return `{${keys.length} keys}`
-    }
-    return formatValue(value)
   }
 
   const isTruncated = computed(() => {

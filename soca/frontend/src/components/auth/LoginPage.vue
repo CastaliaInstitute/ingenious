@@ -15,7 +15,7 @@
 
     try {
       await authStore.login(email.value, password.value)
-    } catch (e) {
+    } catch {
       error.value = 'Invalid email or password'
     } finally {
       loading.value = false

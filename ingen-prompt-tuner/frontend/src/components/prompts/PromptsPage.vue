@@ -46,7 +46,7 @@
         copyPrompts.value ? revisionsStore.activeRevision : undefined
       )
       closeCreateModal()
-    } catch (error) {
+    } catch {
       alert('Failed to create revision. Name may already exist.')
     }
   }
