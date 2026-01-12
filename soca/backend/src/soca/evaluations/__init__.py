@@ -33,16 +33,7 @@ async def _call_prompt_tuner_api(
     prompt: str,
     thread_id: str,
 ) -> tuple[bool, dict[str, Any] | None, str]:
-    """Call the Prompt Tuner API with error handling.
-
-    Args:
-        prompt_tuner_url: Base URL for Prompt Tuner API.
-        prompt: The evaluation prompt to send.
-        thread_id: Thread ID to associate traces (typically evaluation_id).
-
-    Returns:
-        Tuple of (success, data, error_message)
-    """
+    """Call the Prompt Tuner API with error handling."""
     try:
         async with httpx.AsyncClient() as client:
             logger.info(f"Calling Prompt Tuner API at {prompt_tuner_url}/api/v1/chat")
@@ -57,23 +48,10 @@ async def _call_prompt_tuner_api(
             )
 
             if response.status_code == 200:
-                data = response.json()
-                agent_response = data.get("agent_response", "{}")
-
-                # Parse the AI response
-                try:
-                    evaluation_data = json.loads(agent_response)
-                    # Check if the response has valid criterion results
-                    if evaluation_data.get("criterionResults"):
-                        return True, evaluation_data, ""
-                    else:
-                        return False, None, "AI returned empty criterion results"
-                except json.JSONDecodeError as e:
-                    return False, None, f"Failed to parse AI response: {e}"
-            elif response.status_code == 429:
+                return _parse_api_response(response.json())
+            if response.status_code == 429:
                 return False, None, "Rate limited by AI service"
-            else:
-                return False, None, f"API returned status {response.status_code}"
+            return False, None, f"API returned status {response.status_code}"
 
     except httpx.TimeoutException:
         return False, None, "Request timed out"
@@ -83,35 +61,26 @@ async def _call_prompt_tuner_api(
         return False, None, f"Error: {str(e)}"
 
 
-async def evaluate_submission(
-    submission: Submission,
-    criteria_set: CriteriaSet,
-    evaluation_id: str,
-) -> EvaluationResult:
-    """Evaluate a single submission against criteria using AI via Prompt Tuner.
+def _parse_api_response(data: dict[str, Any]) -> tuple[bool, dict[str, Any] | None, str]:
+    """Parse and validate API response."""
+    agent_response = data.get("agent_response", "{}")
+    try:
+        evaluation_data = json.loads(agent_response)
+        if evaluation_data.get("criterionResults"):
+            return True, evaluation_data, ""
+        return False, None, "AI returned empty criterion results"
+    except json.JSONDecodeError as e:
+        return False, None, f"Failed to parse AI response: {e}"
 
-    Uses the 6-agent pipeline:
-    - Phase 1 (Parallel): Submission Evaluator, Criteria Evaluator, Next Steps Agent
-    - Phase 2: Scoring Agent
-    - Phase 3: Summarizer Agent
-    - Phase 4: Sanity Check Agent
 
-    Args:
-        submission: The submission to evaluate.
-        criteria_set: The criteria set to evaluate against.
-        evaluation_id: The evaluation ID (used as thread_id for trace linking).
-
-    Includes retry logic with exponential backoff for transient failures.
-    """
-    # Build criteria text for the 6-agent pipeline
+def _build_structured_input(submission: Submission, criteria_set: CriteriaSet) -> str:
+    """Build structured JSON input for the evaluation pipeline."""
     criteria_text = "\n".join(
         f"- {c.id}: {c.name} (weight: {c.weight}%, max score: {c.max_score}): {c.description}"
         for c in criteria_set.criteria
     )
 
-    # Build structured input for the 6-agent pipeline
-    # The pipeline expects JSON with submission_name, submission_content, criteria_text
-    structured_input = json.dumps(
+    return json.dumps(
         {
             "submission_name": submission.name,
             "submission_content": (
@@ -123,117 +92,114 @@ async def evaluate_submission(
         }
     )
 
-    # Call Prompt Tuner API for AI evaluation with retries
-    prompt_tuner_url = settings.ingenious_api_url or "http://localhost:8002"
 
-    last_error = ""
-    retry_delay = INITIAL_RETRY_DELAY
-
-    for attempt in range(MAX_RETRIES):
-        if attempt > 0:
-            logger.info(
-                f"Retry attempt {attempt + 1}/{MAX_RETRIES} for submission {submission.id} "
-                f"after {retry_delay}s delay"
-            )
-            await asyncio.sleep(retry_delay)
-            # Exponential backoff with cap
-            retry_delay = min(retry_delay * 2, MAX_RETRY_DELAY)
-
-        success, evaluation_data, error = await _call_prompt_tuner_api(
-            prompt_tuner_url, structured_input, evaluation_id
+def _parse_criterion_results(
+    evaluation_data: dict[str, Any], criteria_set: CriteriaSet
+) -> list[CriterionResult]:
+    """Parse criterion results from evaluation data."""
+    criterion_results = [
+        CriterionResult(
+            criterion_id=cr.get("criterionId", ""),
+            score=float(cr.get("score", 0)),
+            narrative=cr.get("narrative", ""),
         )
+        for cr in evaluation_data.get("criterionResults", [])
+    ]
 
-        if success and evaluation_data:
-            # Map criterion results
-            criterion_results = []
-            for cr in evaluation_data.get("criterionResults", []):
-                criterion_results.append(
-                    CriterionResult(
-                        criterion_id=cr.get("criterionId", ""),
-                        score=float(cr.get("score", 0)),
-                        narrative=cr.get("narrative", ""),
-                    )
-                )
-
-            # If no criterion results from AI, create default ones
-            if not criterion_results:
-                for criterion in criteria_set.criteria:
-                    criterion_results.append(
-                        CriterionResult(
-                            criterion_id=criterion.id,
-                            score=criterion.max_score / 2,
-                            narrative="Evaluation pending - AI response incomplete.",
-                        )
-                    )
-
-            # Calculate overall score as weighted percentage (0-100)
-            # Formula: sum of (score / maxScore) * weight for each criterion
-            overall_score = 0.0
-            criteria_lookup = {c.id: c for c in criteria_set.criteria}
-            for cr in criterion_results:
-                if cr.criterion_id in criteria_lookup:
-                    criterion = criteria_lookup[cr.criterion_id]
-                    if criterion.max_score > 0:
-                        # (score / maxScore) * weight
-                        weighted_pct = (cr.score / criterion.max_score) * criterion.weight
-                        overall_score += weighted_pct
-
-            # Parse agent contributions from the 6-agent pipeline response
-            agent_contributions = []
-            for ac in evaluation_data.get("agentContributions", []):
-                agent_contributions.append(
-                    AgentContribution(
-                        agent_name=ac.get("agent_name", ""),
-                        phase=ac.get("phase", 0),
-                        input_summary=ac.get("input_summary", ""),
-                        output_summary=ac.get("output_summary", ""),
-                        token_count=ac.get("token_count", 0),
-                        execution_time_ms=ac.get("execution_time_ms", 0),
-                    )
-                )
-
-            # Parse next steps recommendations
-            next_steps = evaluation_data.get("nextSteps", [])
-            if not isinstance(next_steps, list):
-                next_steps = []
-
-            # Get validation status from sanity check agent
-            validation_status = evaluation_data.get("validationStatus", "passed")
-
-            logger.info(
-                f"6-agent evaluation successful for submission {submission.id} "
-                f"(validation: {validation_status}, agents: {len(agent_contributions)})"
+    if not criterion_results:
+        criterion_results = [
+            CriterionResult(
+                criterion_id=criterion.id,
+                score=criterion.max_score / 2,
+                narrative="Evaluation pending - AI response incomplete.",
             )
+            for criterion in criteria_set.criteria
+        ]
 
-            return EvaluationResult(
-                submission_id=submission.id,
-                submission_name=submission.name,
-                submission_author=None,
-                overall_score=round(overall_score, 2),
-                criterion_results=criterion_results,
-                summary=evaluation_data.get("summary", "Evaluation completed."),
-                next_steps=next_steps,
-                agent_contributions=agent_contributions,
-                validation_status=validation_status,
-            )
+    return criterion_results
 
-        last_error = error
-        logger.warning(f"Evaluation attempt {attempt + 1} failed: {error}")
 
-    # All retries exhausted - return error result
+def _calculate_overall_score(
+    criterion_results: list[CriterionResult], criteria_set: CriteriaSet
+) -> float:
+    """Calculate weighted overall score from criterion results."""
+    criteria_lookup = {c.id: c for c in criteria_set.criteria}
+    overall_score = 0.0
+
+    for cr in criterion_results:
+        criterion = criteria_lookup.get(cr.criterion_id)
+        if criterion and criterion.max_score > 0:
+            weighted_pct = (cr.score / criterion.max_score) * criterion.weight
+            overall_score += weighted_pct
+
+    return round(overall_score, 2)
+
+
+def _parse_agent_contributions(evaluation_data: dict[str, Any]) -> list[AgentContribution]:
+    """Parse agent contributions from evaluation data."""
+    return [
+        AgentContribution(
+            agent_name=ac.get("agent_name", ""),
+            phase=ac.get("phase", 0),
+            input_summary=ac.get("input_summary", ""),
+            output_summary=ac.get("output_summary", ""),
+            token_count=ac.get("token_count", 0),
+            execution_time_ms=ac.get("execution_time_ms", 0),
+        )
+        for ac in evaluation_data.get("agentContributions", [])
+    ]
+
+
+def _build_success_result(
+    submission: Submission,
+    evaluation_data: dict[str, Any],
+    criteria_set: CriteriaSet,
+) -> EvaluationResult:
+    """Build successful evaluation result."""
+    criterion_results = _parse_criterion_results(evaluation_data, criteria_set)
+    overall_score = _calculate_overall_score(criterion_results, criteria_set)
+    agent_contributions = _parse_agent_contributions(evaluation_data)
+
+    next_steps = evaluation_data.get("nextSteps", [])
+    if not isinstance(next_steps, list):
+        next_steps = []
+
+    validation_status = evaluation_data.get("validationStatus", "passed")
+
+    logger.info(
+        f"6-agent evaluation successful for submission {submission.id} "
+        f"(validation: {validation_status}, agents: {len(agent_contributions)})"
+    )
+
+    return EvaluationResult(
+        submission_id=submission.id,
+        submission_name=submission.name,
+        submission_author=None,
+        overall_score=overall_score,
+        criterion_results=criterion_results,
+        summary=evaluation_data.get("summary", "Evaluation completed."),
+        next_steps=next_steps,
+        agent_contributions=agent_contributions,
+        validation_status=validation_status,
+    )
+
+
+def _build_error_result(
+    submission: Submission, criteria_set: CriteriaSet, last_error: str
+) -> EvaluationResult:
+    """Build error evaluation result after all retries exhausted."""
     logger.error(
         f"AI evaluation failed for submission {submission.id} after {MAX_RETRIES} attempts: {last_error}"
     )
 
-    criterion_results = []
-    for criterion in criteria_set.criteria:
-        criterion_results.append(
-            CriterionResult(
-                criterion_id=criterion.id,
-                score=0,
-                narrative=f"AI evaluation failed after {MAX_RETRIES} attempts.",
-            )
+    criterion_results = [
+        CriterionResult(
+            criterion_id=criterion.id,
+            score=0,
+            narrative=f"AI evaluation failed after {MAX_RETRIES} attempts.",
         )
+        for criterion in criteria_set.criteria
+    ]
 
     return EvaluationResult(
         submission_id=submission.id,
@@ -246,6 +212,43 @@ async def evaluate_submission(
         agent_contributions=[],
         validation_status="error",
     )
+
+
+async def evaluate_submission(
+    submission: Submission,
+    criteria_set: CriteriaSet,
+    evaluation_id: str,
+) -> EvaluationResult:
+    """Evaluate a single submission against criteria using AI via Prompt Tuner.
+
+    Uses the 6-agent pipeline with retry logic and exponential backoff.
+    """
+    structured_input = _build_structured_input(submission, criteria_set)
+    prompt_tuner_url = settings.ingenious_api_url or "http://localhost:8002"
+
+    last_error = ""
+    retry_delay = INITIAL_RETRY_DELAY
+
+    for attempt in range(MAX_RETRIES):
+        if attempt > 0:
+            logger.info(
+                f"Retry attempt {attempt + 1}/{MAX_RETRIES} for submission {submission.id} "
+                f"after {retry_delay}s delay"
+            )
+            await asyncio.sleep(retry_delay)
+            retry_delay = min(retry_delay * 2, MAX_RETRY_DELAY)
+
+        success, evaluation_data, error = await _call_prompt_tuner_api(
+            prompt_tuner_url, structured_input, evaluation_id
+        )
+
+        if success and evaluation_data:
+            return _build_success_result(submission, evaluation_data, criteria_set)
+
+        last_error = error
+        logger.warning(f"Evaluation attempt {attempt + 1} failed: {error}")
+
+    return _build_error_result(submission, criteria_set, last_error)
 
 
 async def run_evaluation(evaluation_id: str) -> Optional[Evaluation]:
