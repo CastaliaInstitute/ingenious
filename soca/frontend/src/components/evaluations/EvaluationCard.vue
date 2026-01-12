@@ -1,4 +1,8 @@
 <script setup lang="ts">
+  /**
+   * EvaluationCard component for displaying an evaluation summary.
+   * Shows status, name, submission count, and timing information.
+   */
   import StatusBadge from '@/components/common/StatusBadge.vue'
   import type { Evaluation } from '@/types'
 
@@ -11,6 +15,11 @@
     delete: [evaluation: Evaluation]
   }>()
 
+  /**
+   * Formats a date string to a human-readable relative time or full date.
+   * @param dateString - The ISO date string to format.
+   * @returns Formatted time string.
+   */
   function formatTime(dateString: string): string {
     const date = new Date(dateString)
     const now = new Date()

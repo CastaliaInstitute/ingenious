@@ -1,4 +1,8 @@
 <script setup lang="ts">
+  /**
+   * Pagination component for navigating through paginated data.
+   * Provides controls for page navigation and page size selection.
+   */
   import { computed } from 'vue'
 
   const props = withDefaults(
@@ -32,18 +36,28 @@
   const canGoPrevious = computed(() => props.currentPage > 1)
   const canGoNext = computed(() => props.currentPage < totalPages.value)
 
+  /**
+   * Navigates to the previous page if available.
+   */
   function goToPrevious() {
     if (canGoPrevious.value) {
       emit('update:currentPage', props.currentPage - 1)
     }
   }
 
+  /**
+   * Navigates to the next page if available.
+   */
   function goToNext() {
     if (canGoNext.value) {
       emit('update:currentPage', props.currentPage + 1)
     }
   }
 
+  /**
+   * Handles page size selection changes and resets to first page.
+   * @param event - The change event from the select element.
+   */
   function handlePageSizeChange(event: Event) {
     const target = event.target as HTMLSelectElement
     const newSize = parseInt(target.value, 10)

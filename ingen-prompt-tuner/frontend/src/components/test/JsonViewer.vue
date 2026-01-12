@@ -1,4 +1,8 @@
 <script setup lang="ts">
+  /**
+   * JsonViewer component for displaying formatted JSON content.
+   * Supports collapsible sections and clipboard copy functionality.
+   */
   import { computed, ref } from 'vue'
 
   const props = defineProps<{
@@ -63,6 +67,11 @@
     return { valid: false, data: null }
   })
 
+  /**
+   * Finds the starting index of JSON content in a string.
+   * @param text - The text to search in.
+   * @returns The index of the first JSON-like character, or -1 if not found.
+   */
   function findJsonStart(text: string): number {
     const objectStart = text.indexOf('{')
     const arrayStart = text.indexOf('[')
@@ -71,6 +80,11 @@
     return Math.min(objectStart, arrayStart)
   }
 
+  /**
+   * Extracts a valid JSON substring by matching brackets.
+   * @param text - The text starting with a JSON bracket.
+   * @returns The extracted JSON string, or null if extraction fails.
+   */
   function extractJsonSubstring(text: string): string | null {
     const startChar = text[0]
     const endChar = startChar === '{' ? '}' : ']'
@@ -111,6 +125,10 @@
     return null
   }
 
+  /**
+   * Toggles the collapsed state of a JSON path.
+   * @param path - The JSON path to toggle.
+   */
   function toggleCollapse(path: string) {
     if (collapsedPaths.value.has(path)) {
       collapsedPaths.value.delete(path)
@@ -121,6 +139,9 @@
     collapsedPaths.value = new Set(collapsedPaths.value)
   }
 
+  /**
+   * Copies the JSON content to the clipboard.
+   */
   async function copyToClipboard() {
     try {
       await navigator.clipboard.writeText(props.content)

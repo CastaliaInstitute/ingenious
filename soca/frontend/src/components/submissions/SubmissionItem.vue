@@ -1,4 +1,8 @@
 <script setup lang="ts">
+  /**
+   * SubmissionItem component for displaying a submission in a list.
+   * Shows file info, upload date, and action buttons.
+   */
   import type { Submission } from '@/types'
 
   defineProps<{
@@ -11,12 +15,22 @@
     click: []
   }>()
 
+  /**
+   * Formats file size in bytes to a human-readable string.
+   * @param bytes - The file size in bytes.
+   * @returns Formatted size string (e.g., "1.5 MB").
+   */
   function formatFileSize(bytes: number): string {
     if (bytes < 1024) return `${bytes} B`
     if (bytes < 1024 * 1024) return `${(bytes / 1024).toFixed(1)} KB`
     return `${(bytes / (1024 * 1024)).toFixed(1)} MB`
   }
 
+  /**
+   * Formats a date string to a human-readable format.
+   * @param dateString - The ISO date string to format.
+   * @returns Formatted date string.
+   */
   function formatDate(dateString: string): string {
     return new Date(dateString).toLocaleDateString('en-US', {
       month: 'short',

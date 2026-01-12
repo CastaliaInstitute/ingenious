@@ -1,4 +1,8 @@
 <script setup lang="ts">
+  /**
+   * CriteriaGeneratorModal component for AI-powered criteria generation.
+   * Allows users to upload documents or paste text to generate evaluation criteria.
+   */
   import { ref, computed } from 'vue'
   import { useCriteriaStore } from '@/stores/criteria'
   import Button from '@/components/common/Button.vue'
@@ -30,16 +34,26 @@
     return pastedText.value.trim().length >= 50
   })
 
-  // Methods
+  /**
+   * Handles drag over events for the file drop zone.
+   * @param e - The drag event.
+   */
   function handleDragOver(e: DragEvent) {
     e.preventDefault()
     isDragging.value = true
   }
 
+  /**
+   * Handles drag leave events for the file drop zone.
+   */
   function handleDragLeave() {
     isDragging.value = false
   }
 
+  /**
+   * Handles file drop events and validates the dropped file.
+   * @param e - The drop event.
+   */
   function handleDrop(e: DragEvent) {
     e.preventDefault()
     isDragging.value = false
@@ -56,6 +70,11 @@
     }
   }
 
+  /**
+   * Validates if a file has an accepted type for criteria generation.
+   * @param file - The file to validate.
+   * @returns True if the file type is valid.
+   */
   function isValidFileType(file: File): boolean {
     const validTypes = [
       'application/pdf',
@@ -69,6 +88,10 @@
     )
   }
 
+  /**
+   * Handles file selection from the file input.
+   * @param e - The change event from the file input.
+   */
   function handleFileSelect(e: Event) {
     const target = e.target as HTMLInputElement
     const files = target.files
@@ -78,6 +101,9 @@
     }
   }
 
+  /**
+   * Clears the currently selected file.
+   */
   function clearFile() {
     selectedFile.value = null
     if (fileInput.value) {
@@ -85,10 +111,16 @@
     }
   }
 
+  /**
+   * Triggers the hidden file input to open the file picker.
+   */
   function triggerFileSelect() {
     fileInput.value?.click()
   }
 
+  /**
+   * Generates criteria from the uploaded document or pasted text using AI.
+   */
   async function handleGenerate() {
     if (!canGenerate.value) return
 

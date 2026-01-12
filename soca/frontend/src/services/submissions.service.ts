@@ -1,12 +1,28 @@
 import api from './api'
 import type { Submission } from '@/types'
 
+/**
+ * Service for managing document submissions.
+ * Provides upload, listing, update, and deletion operations.
+ */
 export const submissionsService = {
+  /**
+   * Retrieves all submissions.
+   * @returns Array of submission objects.
+   */
   async list(): Promise<Submission[]> {
     const response = await api.get<Submission[]>('/submissions')
     return response.data
   },
 
+  /**
+   * Uploads a new document submission.
+   * @param file - The document file to upload.
+   * @param name - Optional name for the submission.
+   * @param description - Optional description for the submission.
+   * @param onProgress - Optional callback for upload progress updates.
+   * @returns The created submission object.
+   */
   async upload(
     file: File,
     name?: string,
@@ -31,10 +47,20 @@ export const submissionsService = {
     return response.data
   },
 
+  /**
+   * Deletes a submission.
+   * @param id - The submission identifier to delete.
+   */
   async delete(id: string): Promise<void> {
     await api.delete(`/submissions/${id}`)
   },
 
+  /**
+   * Updates a submission's metadata.
+   * @param id - The submission identifier.
+   * @param data - The fields to update (name and/or description).
+   * @returns The updated submission object.
+   */
   async update(id: string, data: { name?: string; description?: string }): Promise<Submission> {
     const response = await api.patch<Submission>(`/submissions/${id}`, data)
     return response.data

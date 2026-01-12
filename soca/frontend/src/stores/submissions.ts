@@ -3,12 +3,19 @@ import { ref } from 'vue'
 import type { Submission } from '@/types'
 import { submissionsService } from '@/services/submissions.service'
 
+/**
+ * Pinia store for managing document submissions.
+ * Handles upload, listing, update, and deletion operations.
+ */
 export const useSubmissionsStore = defineStore('submissions', () => {
   const submissions = ref<Submission[]>([])
   const loading = ref(false)
   const uploadProgress = ref<number | null>(null)
   const error = ref<string | null>(null)
 
+  /**
+   * Fetches all submissions from the API.
+   */
   async function fetchSubmissions() {
     loading.value = true
     error.value = null
@@ -21,6 +28,13 @@ export const useSubmissionsStore = defineStore('submissions', () => {
     }
   }
 
+  /**
+   * Uploads a new document submission with progress tracking.
+   * @param file - The document file to upload.
+   * @param name - Optional name for the submission.
+   * @param description - Optional description for the submission.
+   * @returns The created submission.
+   */
   async function uploadSubmission(file: File, name?: string, description?: string) {
     uploadProgress.value = 0
     try {
@@ -34,11 +48,21 @@ export const useSubmissionsStore = defineStore('submissions', () => {
     }
   }
 
+  /**
+   * Deletes a submission.
+   * @param id - The submission identifier to delete.
+   */
   async function deleteSubmission(id: string) {
     await submissionsService.delete(id)
     submissions.value = submissions.value.filter((s) => s.id !== id)
   }
 
+  /**
+   * Updates a submission's metadata.
+   * @param id - The submission identifier.
+   * @param data - The fields to update (name and/or description).
+   * @returns The updated submission.
+   */
   async function updateSubmission(id: string, data: { name?: string; description?: string }) {
     const updated = await submissionsService.update(id, data)
     const index = submissions.value.findIndex((s) => s.id === id)
@@ -48,6 +72,11 @@ export const useSubmissionsStore = defineStore('submissions', () => {
     return updated
   }
 
+  /**
+   * Retrieves a submission by ID from the local store.
+   * @param id - The submission identifier.
+   * @returns The submission if found.
+   */
   function getSubmission(id: string) {
     return submissions.value.find((s) => s.id === id)
   }

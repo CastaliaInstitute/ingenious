@@ -1,4 +1,8 @@
 <script setup lang="ts">
+  /**
+   * PromptsPage component for managing prompt revisions and files.
+   * Provides revision selection, creation, and prompt editing interface.
+   */
   import { onMounted, ref } from 'vue'
   import { useRevisionsStore } from '@/stores/revisions'
   import { useEditorStore } from '@/stores/editor'
@@ -21,22 +25,35 @@
     }
   })
 
+  /**
+   * Handles revision dropdown selection changes.
+   * @param event - The change event from the select element.
+   */
   function handleRevisionChange(event: Event) {
     const target = event.target as HTMLSelectElement
     revisionsStore.setActiveRevision(target.value)
     editorStore.clearSelection()
   }
 
+  /**
+   * Opens the create revision modal with default values.
+   */
   function openCreateModal() {
     newRevisionName.value = ''
     copyPrompts.value = true
     showCreateModal.value = true
   }
 
+  /**
+   * Closes the create revision modal.
+   */
   function closeCreateModal() {
     showCreateModal.value = false
   }
 
+  /**
+   * Creates a new revision with the specified name.
+   */
   async function handleCreateRevision() {
     if (!newRevisionName.value.trim()) return
 

@@ -1,4 +1,8 @@
 <script setup lang="ts">
+  /**
+   * EditorPanel component for editing prompt content.
+   * Provides a code editor with save, discard, and export functionality.
+   */
   import { useEditorStore } from '@/stores/editor'
   import { useRevisionsStore } from '@/stores/revisions'
   import { promptsService } from '@/services/prompts.service'
@@ -8,6 +12,9 @@
   const editorStore = useEditorStore()
   const revisionsStore = useRevisionsStore()
 
+  /**
+   * Saves the current prompt content to the backend.
+   */
   async function handleSave() {
     if (editorStore.selectedPrompt && editorStore.modifiedContent) {
       await promptsService.update(
@@ -18,10 +25,17 @@
     }
   }
 
+  /**
+   * Handles content changes from the code editor.
+   * @param value - The new content value.
+   */
   function handleEditorChange(value: string) {
     editorStore.updateContent(value)
   }
 
+  /**
+   * Exports the current prompt content as a downloadable file.
+   */
   function handleExport() {
     if (!editorStore.selectedPrompt) return
 

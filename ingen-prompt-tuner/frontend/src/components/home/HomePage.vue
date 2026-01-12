@@ -1,4 +1,8 @@
 <script setup lang="ts">
+  /**
+   * HomePage component displaying the main dashboard.
+   * Shows statistics, workflow visualization, and recent activity.
+   */
   import { ref, onMounted, computed } from 'vue'
   import { useUIStore } from '@/stores/ui'
   import { tracesService } from '@/services/traces.service'
@@ -30,6 +34,11 @@
     })
   })
 
+  /**
+   * Converts a date to a human-readable relative time string.
+   * @param date - The date to convert.
+   * @returns A string like "Just now", "5 min ago", or "2 days ago".
+   */
   function getTimeAgo(date: Date): string {
     const now = new Date()
     const diffMs = now.getTime() - date.getTime()
