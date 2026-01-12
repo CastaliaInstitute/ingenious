@@ -40,7 +40,7 @@ def make_app_and_register() -> typer.Typer:
     return app
 
 
-def stub_config(ip: str = "0.0.0.0", port: int = 80) -> SimpleNamespace:
+def stub_config(ip: str = "0.0.0.0", port: int = 80) -> SimpleNamespace:  # nosec B104 - test fixture
     """Create a mock configuration object for testing.
 
     This function produces a simplified configuration object that mimics the
@@ -82,7 +82,7 @@ def test_serve_env_port_precedence(tmp_path: Path, monkeypatch: MonkeyPatch) -> 
         args: tuple[Any, ...]
         kwargs: dict[str, Any]
         args, kwargs = uv_run.call_args
-        assert kwargs["host"] == "0.0.0.0"
+        assert kwargs["host"] == "0.0.0.0"  # nosec B104 - test assertion
         assert kwargs["port"] == 1234
 
         # LOADENV flipped

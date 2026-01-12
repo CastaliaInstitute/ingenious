@@ -30,7 +30,7 @@ class Settings(BaseSettings):
     """Application settings for Prompt Tuner."""
 
     # Server
-    host: str = "0.0.0.0"
+    host: str = "0.0.0.0"  # nosec B104 - intentional for container deployments
     port: int = 8002
 
     # Authentication

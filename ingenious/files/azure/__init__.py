@@ -151,7 +151,7 @@ class azure_FileStorageRepository(IFileStorage):
             blob_client.delete_blob()
             # print(f"Successfully deleted {path} from container {self.container_name}.")
         except Exception as e:
-            logger.error(f"Failed to delete {path} from container {self.container_name}: {e}")
+            logger.error(f"Failed to delete {path} from container {self.container_name}: {e}")  # nosec B608 - not SQL
             raise
         return str(path)
 
