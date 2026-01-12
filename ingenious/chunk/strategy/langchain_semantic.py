@@ -245,6 +245,7 @@ class _SafeSemantic(TextSplitter):
     # identical.                                                       #
     # -----------------------------------------------------------------
     def split_text(self, text: str) -> List[str]:  # pragma: no cover
+        """Splits text into chunks by delegating to the split_documents method."""
         doc = Document(page_content=text)
         return [d.page_content for d in self.split_documents([doc])]
 

@@ -24,6 +24,7 @@ class DatabaseError(IngeniousError):
         super().__init__(message, **kwargs)
 
     def _generate_user_message(self) -> str:
+        """Generate a user-friendly error message for database errors."""
         return "A database error occurred. Please try again in a moment."
 
 

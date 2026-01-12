@@ -142,6 +142,7 @@ class azuresql_ChatHistoryRepository(BaseSQLRepository):
     # Removed empty _create_tables override - using base class implementation
 
     async def _get_user_by_id(self, user_id: str) -> User | None:
+        """Retrieve a user by their unique identifier from Azure SQL."""
         cursor = self.connection.cursor()
         cursor.execute(
             """SELECT id, identifier, metadata, createdAt FROM users WHERE id = ?""",

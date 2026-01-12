@@ -71,11 +71,15 @@ def get_chat_service(
 
     # Create a wrapper that includes the openai_service
     class ConfigWrapper:
+        """Wrapper that extends config with openai_service access."""
+
         def __init__(self, config: IngeniousSettings, openai_service: OpenAIService):
+            """Initialize config wrapper with OpenAI service instance."""
             self._config = config
             self.openai_service_instance = openai_service
 
         def __getattr__(self, name: str) -> object:
+            """Delegate attribute access to the wrapped config."""
             return getattr(self._config, name)
 
     wrapped_config = ConfigWrapper(config, openai_service)

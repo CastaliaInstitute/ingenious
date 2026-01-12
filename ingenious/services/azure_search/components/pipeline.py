@@ -70,10 +70,14 @@ class _NullAsyncSearchClient:
         """
 
         class _Empty:
+            """Empty async iterator that yields no results."""
+
             def __aiter__(self) -> "_Empty":
+                """Return self as the async iterator."""
                 return self
 
             async def __anext__(self) -> Any:
+                """Raise StopAsyncIteration immediately."""
                 raise StopAsyncIteration
 
         return _Empty()
@@ -158,6 +162,7 @@ class AdvancedSearchPipeline:
             return fused_results
 
         def _quote(v: str) -> str:
+            """Escape single quotes in a string for OData filter syntax."""
             return "'" + v.replace("'", "''") + "'"
 
         filt = " or ".join(f"{id_field} eq {_quote(i)}" for i in ids)
@@ -396,6 +401,7 @@ class AdvancedSearchPipeline:
         """
 
         async def _aclose(x: Any) -> None:
+            """Close a component if it has a close method."""
             if not x:
                 return
             closer = getattr(x, "close", None)

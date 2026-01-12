@@ -23,6 +23,7 @@ class ServiceError(IngeniousError):
         super().__init__(message, **kwargs)
 
     def _generate_user_message(self) -> str:
+        """Generate a user-friendly error message for service errors."""
         return "A service error occurred. Please try again."
 
 
@@ -58,6 +59,7 @@ class AuthenticationError(ServiceError):
         super().__init__(message, **kwargs)
 
     def _generate_user_message(self) -> str:
+        """Generate a user-friendly error message for authentication errors."""
         return "Authentication failed. Please check your credentials."
 
 
@@ -82,6 +84,7 @@ class AuthorizationError(ServiceError):
         super().__init__(message, **kwargs)
 
     def _generate_user_message(self) -> str:
+        """Generate a user-friendly error message for authorization errors."""
         return "You don't have permission to perform this action."
 
 

@@ -77,6 +77,7 @@ class sqlite_ChatHistoryRepository(BaseSQLRepository):
     def _execute_sql(
         self, sql: str, params: list[Any] | None = None, expect_results: bool = True
     ) -> Any:
+        """Execute SQL query using the connection pool."""
         if params is None:
             params = []
         try:
@@ -127,6 +128,7 @@ class sqlite_ChatHistoryRepository(BaseSQLRepository):
         pass
 
     async def _get_user_by_id(self, user_id: str) -> User | None:
+        """Retrieve a user by their unique identifier from SQLite."""
         with self.pool.get_connection() as connection:
             cursor = connection.cursor()
             cursor.execute(
