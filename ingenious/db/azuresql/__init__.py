@@ -4,7 +4,6 @@ Provides repository implementation for storing chat history, threads,
 messages, and metadata in Azure SQL Database using pyodbc.
 """
 
-import json
 from typing import Any
 
 import pyodbc
@@ -139,23 +138,6 @@ class azuresql_ChatHistoryRepository(BaseSQLRepository):
         return self._execute_sql(sql, params, expect_results)
 
     # Removed empty _create_tables override - using base class implementation
-
-    def _parse_json_field(self, value: Any, default: Any = None) -> Any:
-        """Parse a JSON field, returning default if parsing fails.
-
-        Args:
-            value: Value to parse (may be string or already parsed).
-            default: Default value to return on parse failure.
-
-        Returns:
-            Parsed value or default.
-        """
-        if not isinstance(value, str):
-            return value if value is not None else default
-        try:
-            return json.loads(value)
-        except (json.JSONDecodeError, TypeError):
-            return default if default is not None else {}
 
     async def update_memory(self) -> None:
         """Update the chat history summary table to retain only the latest record per thread.
