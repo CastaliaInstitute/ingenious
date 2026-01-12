@@ -236,7 +236,7 @@ class TestWebSettings:
         """Test default web configuration."""
         web = WebSettings()
 
-        assert web.ip_address == "0.0.0.0"
+        assert web.ip_address == "0.0.0.0"  # nosec B104
         assert web.port == 8000  # Default port is now 8000 to avoid privileged port 80
         assert web.type == "fastapi"
         assert web.asynchronous is False

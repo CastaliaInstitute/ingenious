@@ -116,7 +116,7 @@ class TestMultiAgentChatServiceInit:
         config = MagicMock()
         config.openai_service_instance = MagicMock()
         config.chat_history = MagicMock()
-        config.chat_history.memory_path = "/tmp/memory"
+        config.chat_history.memory_path = "/tmp/memory"  # nosec B108
         return config
 
     @pytest.fixture
@@ -500,7 +500,7 @@ class TestIConversationFlow:
 
         config = MagicMock()
         config.chat_history = MagicMock()
-        config.chat_history.memory_path = "/tmp/memory"
+        config.chat_history.memory_path = "/tmp/memory"  # nosec B108
         config.models = MagicMock()
 
         parent = MagicMock(spec=MultiAgentChatService)
@@ -596,7 +596,7 @@ class TestIConversationFlow:
         with patch("ingenious.services.memory_manager.get_memory_manager"):
             flow = ConcreteFlow(parent_multi_agent_chat_service=mock_parent_service)
 
-        assert flow.get_memory_path() == "/tmp/memory"
+        assert flow.get_memory_path() == "/tmp/memory"  # nosec B108
 
     def test_get_memory_file_returns_full_path(self, mock_parent_service):
         """Test get_memory_file returns full memory file path."""
@@ -616,7 +616,7 @@ class TestIConversationFlow:
         with patch("ingenious.services.memory_manager.get_memory_manager"):
             flow = ConcreteFlow(parent_multi_agent_chat_service=mock_parent_service)
 
-        assert flow.get_memory_file() == "/tmp/memory/context.md"
+        assert flow.get_memory_file() == "/tmp/memory/context.md"  # nosec B108
 
     @pytest.mark.asyncio
     async def test_default_streaming_falls_back_to_chunks(self, mock_parent_service):

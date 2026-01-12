@@ -38,6 +38,11 @@ export default [
       '@typescript-eslint/no-explicit-any': 'warn',
       '@typescript-eslint/explicit-function-return-type': 'off',
 
+      // Complexity rules
+      'complexity': ['warn', { max: 10 }],
+      'max-depth': ['warn', 4],
+      'max-nested-callbacks': ['warn', 3],
+
       // General
       'no-console': ['warn', { allow: ['warn', 'error'] }],
 

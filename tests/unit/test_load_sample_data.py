@@ -99,9 +99,7 @@ class TestSqliteSampleDb:
         mock_config.local_sql_db.sample_csv_path = "/tmp/nonexistent.csv"  # nosec B108: acceptable for testing
         mock_get_config.return_value = mock_config
 
-        mock_exists.side_effect = (
-            lambda path: path == "/tmp"
-        )  # Only directory exists  # nosec B108: acceptable for testing
+        mock_exists.side_effect = lambda path: path == "/tmp"  # nosec B108
 
         mock_connection = MagicMock()
         mock_connection.__enter__.return_value = mock_connection
@@ -335,9 +333,7 @@ class TestSqliteSampleDb:
         mock_config.local_sql_db.sample_csv_path = "/tmp/nonexistent.csv"  # nosec B108: acceptable for testing
         mock_get_config.return_value = mock_config
 
-        mock_exists.side_effect = (
-            lambda path: path == "/tmp"
-        )  # Only directory exists  # nosec B108: acceptable for testing
+        mock_exists.side_effect = lambda path: path == "/tmp"  # nosec B108
 
         mock_connection = MagicMock()
         mock_connection.__enter__.return_value = mock_connection
