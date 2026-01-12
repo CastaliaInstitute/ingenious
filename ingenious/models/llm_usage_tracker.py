@@ -4,7 +4,6 @@ This module provides a logging handler that tracks LLM token usage and
 manages agent chat interactions for logging and analysis purposes.
 """
 
-import asyncio
 import logging
 from datetime import datetime
 from typing import TYPE_CHECKING, Any, List, Optional, Union
@@ -17,7 +16,6 @@ from ingenious.config import settings as ig_config
 from ingenious.db.chat_history_repository import ChatHistoryRepository
 from ingenious.files.files_repository import FileStorage
 from ingenious.models.llm_event_kwargs import LLMEventKwargs
-from ingenious.models.message import Message as ChatHistoryMessage
 
 from .agent_chat import AgentChat
 
@@ -108,55 +106,6 @@ class LLMUsageTracker(logging.Handler):
                 temp_file_prefixes.append(agent_chat.target_agent_name)
                 temp_file_prefixes.append(self._identifier)
                 await fs.write_file(content, f"{'_'.join(temp_file_prefixes)}.md", output_path)
-
-    async def write_llm_responses_to_repository(
-        self, user_id: str, thread_id: str, message_id: str
-    ) -> None:
-        """Write LLM responses from the queue to the chat history repository.
-
-        Args:
-            user_id: The ID of the user.
-            thread_id: The ID of the conversation thread.
-            message_id: The ID of the message.
-        """
-        for agent_chat in self._queue:
-            agent = self._get_agent(agent_chat.target_agent_name)
-            if agent is not None and agent.log_to_prompt_tuner:
-                fs = FileStorage(self._config)
-                output_path = await fs.get_output_path(self._revision_id)
-                content = agent_chat.model_dump_json()
-                await fs.write_file(
-                    content,
-                    f"agent_response_{self._event_type}_{agent_chat.source_agent_name}_{agent_chat.target_agent_name}_{self._identifier}.md",
-                    output_path,
-                )
-
-                message: ChatHistoryMessage = ChatHistoryMessage(
-                    user_id=user_id,
-                    thread_id=thread_id,
-                    message_id=message_id,
-                    role="agent_chat",
-                    # Get the item from the queue where chat_name = "summary"
-                    content=agent_chat.model_dump_json(),
-                    content_filter_results=None,
-                    tool_calls=None,
-                    tool_call_id=None,
-                    tool_call_function=None,
-                )
-
-                if self._chat_history_database:
-                    await self._chat_history_database.add_message(message=message)
-
-    async def post_chats_to_queue(self, target_queue: asyncio.Queue[AgentChat]) -> None:
-        """Post agent chats from the internal queue to a target queue.
-
-        Args:
-            target_queue: The asyncio queue to post chats to.
-        """
-        for agent_chat in self._queue:
-            agent = self._get_agent(agent_chat.target_agent_name)
-            if agent is not None:
-                await agent.log(agent_chat, target_queue)
 
     def _parse_agent_id(self, agent_id: Optional[str]) -> Optional[tuple[str, str]]:
         """Parse agent ID into agent name and source name."""
