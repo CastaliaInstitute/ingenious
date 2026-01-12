@@ -40,15 +40,21 @@ export const useRevisionsStore = defineStore('revisions', () => {
     fetchPrompts()
   }
 
-  async function createRevision(name: string) {
-    const revision: Revision = {
-      id: name,
-      name,
-      createdAt: new Date().toISOString(),
-      promptCount: prompts.value.length,
+  async function createRevision(name: string, copyFrom?: string) {
+    try {
+      const response = await api.post('/revisions', {
+        name,
+        copyFrom: copyFrom || null,
+      })
+      const revision: Revision = response.data
+      revisions.value.unshift(revision)
+      // Switch to the new revision
+      setActiveRevision(name)
+      return revision
+    } catch (error) {
+      console.error('Failed to create revision:', error)
+      throw error
     }
-    revisions.value.unshift(revision)
-    return revision
   }
 
   return {

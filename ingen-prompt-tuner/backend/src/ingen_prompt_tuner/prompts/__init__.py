@@ -131,6 +131,33 @@ def _get_base_prompts() -> list[Prompt]:
 _edited_prompts: dict[str, dict[str, str]] = {}
 
 
+def create_revision(name: str, copy_from: str | None = None) -> Revision:
+    """Create a new revision, optionally copying prompts from an existing revision."""
+    from datetime import datetime
+
+    # Check if revision already exists
+    if name in _revisions:
+        raise ValueError(f"Revision '{name}' already exists")
+
+    # Create the new revision
+    new_revision = Revision(
+        id=name,
+        name=name,
+        created_at=datetime.utcnow().isoformat() + "Z",
+        prompt_count=4,  # Always 4 base prompts
+    )
+    _revisions[name] = new_revision
+
+    # Copy prompts from source revision if specified
+    if copy_from and copy_from in _revisions:
+        source_prompts = get_prompts(copy_from)
+        _edited_prompts[name] = {}
+        for prompt in source_prompts:
+            _edited_prompts[name][prompt.filename] = prompt.content
+
+    return new_revision
+
+
 def get_prompts(revision: str) -> list[Prompt]:
     """Get prompts for a revision, with any edits applied."""
     prompts = []

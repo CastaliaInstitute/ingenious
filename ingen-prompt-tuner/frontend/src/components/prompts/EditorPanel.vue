@@ -21,6 +21,22 @@
   function handleEditorChange(value: string) {
     editorStore.updateContent(value)
   }
+
+  function handleExport() {
+    if (!editorStore.selectedPrompt) return
+
+    const content = editorStore.modifiedContent || ''
+    const filename = editorStore.selectedPrompt.filename
+    const blob = new Blob([content], { type: 'text/markdown' })
+    const url = URL.createObjectURL(blob)
+    const link = document.createElement('a')
+    link.href = url
+    link.download = filename
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+    URL.revokeObjectURL(url)
+  }
 </script>
 
 <template>
@@ -34,6 +50,7 @@
         <span class="text-xs text-taupe">Last modified 2 hours ago</span>
       </div>
       <div class="flex items-center gap-2">
+        <Button size="sm" variant="secondary" @click="handleExport"> Export </Button>
         <Button
           size="sm"
           variant="secondary"

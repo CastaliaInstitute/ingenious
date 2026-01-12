@@ -24,6 +24,7 @@ from ingen_prompt_tuner.conversation_flows.soca_evaluator import (
 from ingen_prompt_tuner.models import (
     ChatRequest,
     ChatResponseModel,
+    CreateRevisionRequest,
     LoginRequest,
     LoginResponse,
     Prompt,
@@ -32,6 +33,7 @@ from ingen_prompt_tuner.models import (
     User,
 )
 from ingen_prompt_tuner.prompts import (
+    create_revision,
     get_prompt,
     get_prompts,
     get_revisions,
@@ -110,6 +112,19 @@ async def list_revisions(
     """List all revisions."""
     revisions: list[Revision] = get_revisions()
     return revisions
+
+
+@app.post("/api/revisions", response_model=Revision)
+async def create_revision_endpoint(
+    request: CreateRevisionRequest,
+    current_user: User = Depends(get_current_user),
+) -> Revision:
+    """Create a new revision, optionally copying prompts from an existing revision."""
+    try:
+        revision = create_revision(request.name, request.copy_from)
+        return revision
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e))
 
 
 # Prompts endpoints

@@ -84,6 +84,19 @@ class UpdatePromptRequest(BaseModel):
     content: str
 
 
+class CreateRevisionRequest(BaseModel):
+    """Create revision request."""
+
+    name: str = Field(description="Name for the new revision")
+    copy_from: Optional[str] = Field(
+        default=None,
+        description="Optional: revision to copy prompts from",
+        alias="copyFrom",
+    )
+
+    model_config = {"populate_by_name": True}
+
+
 class ChatRequest(BaseModel):
     """Chat request for AI agent invocation."""
 

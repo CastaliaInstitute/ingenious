@@ -396,18 +396,16 @@ interface ConversationTrace {
 - [ ] Browser tab close shows native beforeunload warning
 - [ ] Warning offers: Save, Discard, Cancel
 
-### US-4.8: Export Prompt to File (NOT YET IMPLEMENTED)
+### US-4.8: Export Prompt to File
 **As a** user
 **I want to** export a prompt to a file
 **So that** I can share or backup prompt content
 
-**Status:** Not yet implemented. Users can manually copy content from the editor.
-
 **Acceptance Criteria:**
-- [ ] "Export" button visible when prompt is selected
-- [ ] Clicking export downloads prompt as .md or .jinja file
-- [ ] Filename matches prompt filename
-- [ ] Content includes current editor content (including unsaved changes)
+- [x] "Export" button visible when prompt is selected
+- [x] Clicking export downloads prompt as .md or .jinja file
+- [x] Filename matches prompt filename
+- [x] Content includes current editor content (including unsaved changes)
 
 ---
 
@@ -501,18 +499,16 @@ interface ConversationTrace {
 - [ ] New revision appears in dropdown
 - [ ] User automatically switched to new revision
 
-### US-6.2: Copy Prompts to New Revision (NOT YET IMPLEMENTED)
+### US-6.2: Copy Prompts to New Revision
 **As a** user
 **I want to** copy existing prompts to a new revision
 **So that** I can start from the current state
 
-**Status:** Not yet implemented. New revisions start with default prompts.
-
 **Acceptance Criteria:**
-- [ ] Checkbox: "Copy prompts from current revision"
-- [ ] When checked, all prompts duplicated to new revision
-- [ ] Original revision unchanged
-- [ ] New revision selected after creation
+- [x] Checkbox: "Copy prompts from current revision"
+- [x] When checked, all prompts duplicated to new revision
+- [x] Original revision unchanged
+- [x] New revision selected after creation
 
 ### US-6.3: View Revision Metadata
 **As a** user
