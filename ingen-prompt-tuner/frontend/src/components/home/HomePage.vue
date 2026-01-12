@@ -1,7 +1,6 @@
 <script setup lang="ts">
   import { ref, onMounted, computed } from 'vue'
   import { useUIStore } from '@/stores/ui'
-  import { useRevisionsStore } from '@/stores/revisions'
   import { tracesService } from '@/services/traces.service'
   import api from '@/services/api'
   import StatCard from '@/components/common/StatCard.vue'
@@ -9,7 +8,6 @@
   import type { ConversationTrace } from '@/types'
 
   const uiStore = useUIStore()
-  const revisionsStore = useRevisionsStore()
 
   const stats = ref({
     revisions: 0,
