@@ -306,6 +306,7 @@ def create_multi_agent_trace(
     timestamp = datetime.now(timezone.utc).isoformat()
 
     def truncate(text: str, max_len: int) -> str:
+        """Truncate text to max_len characters, adding ellipsis if needed."""
         return text[:max_len] + "..." if len(text) > max_len else text
 
     agents: list[AgentTrace] = []

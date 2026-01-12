@@ -49,6 +49,7 @@ def sync_templates(config: IngeniousSettings = Depends(get_config)) -> None:
         import asyncio
 
         async def sync_files() -> None:
+            """Asynchronously sync template files from remote storage."""
             template_files = await fs.list_files(file_path=template_path)
             for file in template_files:
                 file_name = os.path.basename(file)

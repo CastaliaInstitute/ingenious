@@ -24,6 +24,7 @@ class ConfigurationError(IngeniousError):
         super().__init__(message, **kwargs)
 
     def _generate_user_message(self) -> str:
+        """Generate a user-friendly error message for configuration errors."""
         return "There is a configuration error. Please check your settings."
 
 

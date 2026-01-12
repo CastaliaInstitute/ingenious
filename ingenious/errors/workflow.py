@@ -23,6 +23,7 @@ class WorkflowError(IngeniousError):
         super().__init__(message, **kwargs)
 
     def _generate_user_message(self) -> str:
+        """Generate a user-friendly error message for workflow errors."""
         return "A workflow error occurred. Please check your configuration."
 
 

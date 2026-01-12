@@ -58,8 +58,11 @@ def retry_with_backoff(
     """
 
     def decorator(func: F) -> F:
+        """Decorate function with retry logic and exponential backoff."""
+
         @functools.wraps(func)
         def wrapper(*args: Any, **kwargs: Any) -> Any:
+            """Execute function with retry on recoverable errors."""
             last_exception = None
 
             for attempt in range(max_retries + 1):

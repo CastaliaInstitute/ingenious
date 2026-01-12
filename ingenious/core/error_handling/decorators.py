@@ -171,6 +171,7 @@ def retry_on_error(
     """
 
     def decorator(func: Callable[P, T]) -> Callable[P, T]:
+        """Decorate function with retry logic and exponential backoff."""
         handler = _RetryHandler(
             max_retries=max_retries,
             base_delay=base_delay,
@@ -184,6 +185,7 @@ def retry_on_error(
 
         @functools.wraps(func)
         def wrapper(*args: P.args, **kwargs: P.kwargs) -> T:
+            """Execute function with retry logic on recoverable errors."""
             last_exception: Exception | None = None
 
             for attempt in range(max_retries + 1):
@@ -249,6 +251,7 @@ def async_retry_on_error(
     """
 
     def decorator(func: Callable[P, T]) -> Callable[P, T]:
+        """Decorate async function with retry logic and exponential backoff."""
         handler = _RetryHandler(
             max_retries=max_retries,
             base_delay=base_delay,
@@ -262,6 +265,7 @@ def async_retry_on_error(
 
         @functools.wraps(func)
         async def wrapper(*args: P.args, **kwargs: P.kwargs) -> T:
+            """Execute async function with retry logic on recoverable errors."""
             last_exception: Exception | None = None
 
             for attempt in range(max_retries + 1):

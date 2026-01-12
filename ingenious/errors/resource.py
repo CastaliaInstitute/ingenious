@@ -23,6 +23,7 @@ class ResourceError(IngeniousError):
         super().__init__(message, **kwargs)
 
     def _generate_user_message(self) -> str:
+        """Generate a user-friendly error message for resource errors."""
         return "A resource error occurred. Please try again."
 
 

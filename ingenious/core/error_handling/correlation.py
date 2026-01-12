@@ -32,8 +32,11 @@ def with_correlation_id(
     """
 
     def decorator(func: Callable[P, T]) -> Callable[P, T]:
+        """Decorate function to use correlation ID for error tracking."""
+
         @functools.wraps(func)
         def wrapper(*args: P.args, **kwargs: P.kwargs) -> T:
+            """Execute function with correlation ID context."""
             cid = correlation_id or str(uuid4())
 
             # Store correlation ID in thread-local storage or similar

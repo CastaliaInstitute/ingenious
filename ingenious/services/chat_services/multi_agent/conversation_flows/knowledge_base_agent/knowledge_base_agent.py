@@ -60,6 +60,8 @@ from ingenious.services.retrieval.errors import PreflightError
 
 
 class _SearchConfigLike(Protocol):
+    """Protocol defining required search configuration attributes."""
+
     search_index_name: str
     search_endpoint: str
     search_key: SecretStr
@@ -93,6 +95,7 @@ class _StreamingState:
     __slots__ = ("accumulated_content", "total_tokens", "completion_tokens")
 
     def __init__(self) -> None:
+        """Initialize streaming state with empty values."""
         self.accumulated_content: str = ""
         self.total_tokens: int = 0
         self.completion_tokens: int = 0

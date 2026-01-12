@@ -76,6 +76,7 @@ class sqlite_ChatHistoryRepository(BaseSQLRepository):
     def _execute_sql(
         self, sql: str, params: list[Any] | None = None, expect_results: bool = True
     ) -> Any:
+        """Execute SQL query using the connection pool."""
         if params is None:
             params = []
         try:
