@@ -7,7 +7,7 @@ individual agents and collections of agents within the system.
 import asyncio
 import json
 from datetime import datetime
-from typing import Any, List, Optional, Type
+from typing import List, Optional
 
 from autogen_agentchat.base import Response
 from autogen_agentchat.messages import TextMessage
@@ -15,8 +15,6 @@ from autogen_core import (
     CancellationToken,
     FunctionCall,
     MessageContext,
-    SingleThreadedAgentRuntime,
-    TypeSubscription,
 )
 from autogen_core.models import FunctionExecutionResult
 from autogen_core.tools import Tool
@@ -195,14 +193,6 @@ class Agents(BaseModel):
         """
         return self._agents
 
-    def get_agents_for_prompt_tuner(self) -> List[Agent]:
-        """Get all agents that have logging to prompt tuner enabled.
-
-        Returns:
-            List[Agent]: A list of agents with log_to_prompt_tuner set to True.
-        """
-        return [agent for agent in self._agents if agent.log_to_prompt_tuner]
-
     def get_agent_by_name(self, agent_name: str) -> Agent:
         """Get an agent by its name.
 
@@ -219,40 +209,6 @@ class Agents(BaseModel):
             if agent.agent_name == agent_name:
                 return agent
         raise ValueError(f"Agent with name {agent_name} not found")
-
-    async def register_agent(
-        self,
-        ag_class: Type[Any],
-        runtime: SingleThreadedAgentRuntime,
-        agent_name: str,
-        data_identifier: str,
-        next_agent_topic: str,
-        tools: List[Tool] = [],
-    ) -> None:
-        """Register an agent with the runtime and subscribe it to its topic.
-
-        Args:
-            ag_class: The agent class to instantiate.
-            runtime: The agent runtime to register with.
-            agent_name: The name of the agent to register.
-            data_identifier: Identifier for the data payload.
-            next_agent_topic: The topic for the next agent in the chain.
-            tools: List of tools available to the agent.
-        """
-        agent = self.get_agent_by_name(agent_name=agent_name)
-        reg_agent = await ag_class.register(
-            runtime=runtime,
-            type=agent.agent_name,
-            factory=lambda: ag_class(
-                agent=agent,
-                data_identifier=data_identifier,
-                next_agent_topic=next_agent_topic,
-                tools=tools,
-            ),
-        )
-        await runtime.add_subscription(
-            TypeSubscription(topic_type=agent_name, agent_type=reg_agent.type)
-        )
 
 
 class AgentMessage(BaseModel):
