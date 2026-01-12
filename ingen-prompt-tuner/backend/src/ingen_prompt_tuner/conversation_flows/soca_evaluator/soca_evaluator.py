@@ -23,6 +23,7 @@ import json
 import logging
 import time
 import uuid
+from dataclasses import dataclass, field
 from typing import Any, Optional
 
 from autogen_agentchat.agents import AssistantAgent
@@ -51,6 +52,40 @@ from ingenious.models.agent import LLMUsageTracker
 from ingenious.models.chat import ChatRequest
 
 
+@dataclass
+class EvaluationContext:
+    """Context data for evaluation pipeline."""
+
+    submission_name: str
+    submission_content: str
+    criteria_text: str
+    revision: str
+    model_client: Any
+    cancellation_token: CancellationToken
+
+
+@dataclass
+class AgentResult:
+    """Result from a single agent execution."""
+
+    output: str
+    tokens: int
+    agent_name: str
+    display_name: str
+    system_prompt: str
+    user_prompt: str
+    execution_time_ms: int
+
+
+@dataclass
+class PipelineState:
+    """Mutable state for the evaluation pipeline."""
+
+    total_tokens: int = 0
+    agent_contributions: list[AgentContribution] = field(default_factory=list)
+    agents_trace_data: list[dict[str, Any]] = field(default_factory=list)
+
+
 def _clean_json_response(text: str) -> str:
     """Clean markdown formatting from JSON response."""
     clean = text.strip()
@@ -69,6 +104,11 @@ def _render_template(template_str: str, variables: dict[str, Any]) -> str:
     return template.render(**variables)
 
 
+def _truncate_output(output: str, max_len: int = 200) -> str:
+    """Truncate output for summary display."""
+    return output[:max_len] + "..." if len(output) > max_len else output
+
+
 async def _run_agent(
     agent_name: str,
     system_prompt: str,
@@ -76,18 +116,7 @@ async def _run_agent(
     model_client: Any,
     cancellation_token: CancellationToken,
 ) -> tuple[str, int]:
-    """Run a single agent and return its response and token count.
-
-    Args:
-        agent_name: Name of the agent
-        system_prompt: System prompt for the agent
-        user_prompt: User message to send
-        model_client: Azure OpenAI client
-        cancellation_token: Cancellation token
-
-    Returns:
-        Tuple of (response_text, token_count)
-    """
+    """Run a single agent and return its response and token count."""
     agent = AssistantAgent(
         name=agent_name,
         system_message=system_prompt,
@@ -102,7 +131,6 @@ async def _run_agent(
     chat_msg = response.chat_message
     result_text = str(chat_msg.content) if hasattr(chat_msg, "content") else "{}"
 
-    # Get token count
     token_count = 0
     if hasattr(chat_msg, "models_usage") and chat_msg.models_usage is not None:
         usage = chat_msg.models_usage
@@ -111,15 +139,259 @@ async def _run_agent(
     return _clean_json_response(result_text), token_count
 
 
-class ConversationFlow:
-    """Conversation flow for SoCa document evaluation using 6-agent pipeline.
+def _record_agent_result(
+    state: PipelineState,
+    result: AgentResult,
+    phase: int,
+    order: int,
+    input_summary: str,
+) -> None:
+    """Record agent result in pipeline state."""
+    state.total_tokens += result.tokens
+    state.agent_contributions.append(
+        AgentContribution(
+            agent_name=result.display_name,
+            phase=phase,
+            input_summary=input_summary,
+            output_summary=_truncate_output(result.output),
+            token_count=result.tokens,
+            execution_time_ms=result.execution_time_ms,
+        )
+    )
+    state.agents_trace_data.append(
+        {
+            "agent_name": result.display_name,
+            "order": order,
+            "input": result.user_prompt,
+            "output": result.output,
+            "token_usage": result.tokens,
+            "system_prompt": result.system_prompt,
+            "user_prompt": result.user_prompt,
+        }
+    )
 
-    The pipeline processes evaluations through 4 phases:
-    - Phase 1: Parallel analysis (Submission, Criteria, Next Steps)
-    - Phase 2: Scoring based on Phase 1 outputs
-    - Phase 3: Summary generation
-    - Phase 4: Validation and sanity check
-    """
+
+async def _run_phase1(ctx: EvaluationContext, state: PipelineState) -> tuple[str, str, str]:
+    """Run Phase 1: Parallel analysis agents."""
+    logging.info("Phase 1: Running parallel analysis agents")
+    phase_start = time.time()
+
+    sub_sys, sub_user = get_submission_evaluator_prompts(ctx.revision)
+    crit_sys, crit_user = get_criteria_evaluator_prompts(ctx.revision)
+    next_sys, next_user = get_next_steps_prompts(ctx.revision)
+
+    sub_user_rendered = _render_template(
+        sub_user,
+        {"submission_name": ctx.submission_name, "submission_content": ctx.submission_content},
+    )
+    crit_user_rendered = _render_template(crit_user, {"criteria_text": ctx.criteria_text})
+    next_user_rendered = _render_template(
+        next_user,
+        {"submission_name": ctx.submission_name, "submission_content": ctx.submission_content},
+    )
+
+    results = await asyncio.gather(
+        _run_agent(
+            "submission_evaluator",
+            sub_sys,
+            sub_user_rendered,
+            ctx.model_client,
+            ctx.cancellation_token,
+        ),
+        _run_agent(
+            "criteria_evaluator",
+            crit_sys,
+            crit_user_rendered,
+            ctx.model_client,
+            ctx.cancellation_token,
+        ),
+        _run_agent(
+            "next_steps", next_sys, next_user_rendered, ctx.model_client, ctx.cancellation_token
+        ),
+        return_exceptions=True,
+    )
+
+    phase_time = int((time.time() - phase_start) * 1000)
+    agent_time = phase_time // 3
+
+    agent_configs = [
+        (
+            "submission_evaluator",
+            "Submission Evaluator",
+            sub_sys,
+            sub_user_rendered,
+            "Analyzed submission",
+        ),
+        (
+            "criteria_evaluator",
+            "Criteria Evaluator",
+            crit_sys,
+            crit_user_rendered,
+            "Analyzed criteria",
+        ),
+        ("next_steps", "Next Steps Agent", next_sys, next_user_rendered, "Analyzed improvements"),
+    ]
+
+    outputs = ["{}", "{}", "{}"]
+    for i, (agent_result, agent_cfg) in enumerate(zip(results, agent_configs)):
+        agent_name, display_name, sys_prompt, user_prompt, input_summary = agent_cfg
+
+        if isinstance(agent_result, BaseException):
+            logging.error(f"{agent_name} failed: {agent_result}")
+            output, tokens = json.dumps({"error": str(agent_result)}), 0
+        else:
+            output, tokens = agent_result
+
+        outputs[i] = output
+        _record_agent_result(
+            state,
+            AgentResult(
+                output, tokens, agent_name, display_name, sys_prompt, user_prompt, agent_time
+            ),
+            phase=1,
+            order=i + 1,
+            input_summary=input_summary,
+        )
+
+    return outputs[0], outputs[1], outputs[2]
+
+
+async def _run_sequential_agent(
+    ctx: EvaluationContext,
+    state: PipelineState,
+    agent_name: str,
+    display_name: str,
+    get_prompts_fn: Any,
+    template_vars: dict[str, Any],
+    phase: int,
+    order: int,
+    input_summary: str,
+) -> str:
+    """Run a sequential agent phase."""
+    logging.info(f"Phase {phase}: Running {display_name}")
+    phase_start = time.time()
+
+    sys_prompt, user_prompt = get_prompts_fn(ctx.revision)
+    user_rendered = _render_template(user_prompt, template_vars)
+
+    output, tokens = await _run_agent(
+        agent_name, sys_prompt, user_rendered, ctx.model_client, ctx.cancellation_token
+    )
+    phase_time = int((time.time() - phase_start) * 1000)
+
+    _record_agent_result(
+        state,
+        AgentResult(
+            output, tokens, agent_name, display_name, sys_prompt, user_rendered, phase_time
+        ),
+        phase=phase,
+        order=order,
+        input_summary=input_summary,
+    )
+
+    return output
+
+
+def _extract_next_steps(sanity_output: dict[str, Any], next_steps_output: str) -> list[str]:
+    """Extract next steps from sanity check or original next steps output."""
+    final_output = sanity_output.get("final_output", {})
+    next_steps_list = final_output.get("nextSteps", [])
+
+    if next_steps_list:
+        return next_steps_list
+
+    try:
+        next_data = json.loads(next_steps_output)
+        improvements = next_data.get("priority_improvements", [])
+        return [imp.get("recommended_action", "") for imp in improvements[:5]]
+    except (json.JSONDecodeError, KeyError):
+        return []
+
+
+def _build_final_response(
+    sanity_output: str,
+    summary_output: str,
+    next_steps_output: str,
+    agent_contributions: list[AgentContribution],
+) -> tuple[str, str]:
+    """Build the final evaluation response JSON."""
+    try:
+        sanity_data = json.loads(sanity_output)
+        final_output = sanity_data.get("final_output", {})
+        validation_status = sanity_data.get("validation_status", "passed")
+
+        criterion_results = [
+            CriterionResultSchema(
+                criterionId=cr.get("criterionId", ""),
+                score=float(cr.get("score", 0)),
+                narrative=cr.get("narrative", ""),
+            )
+            for cr in final_output.get("criterionResults", [])
+        ]
+
+        next_steps_list = _extract_next_steps(sanity_data, next_steps_output)
+
+        eval_response = EvaluationResponseSchema(
+            criterionResults=criterion_results,
+            overallScore=float(final_output.get("overallScore", 0)),
+            summary=final_output.get("narrative", "Evaluation completed."),
+            nextSteps=next_steps_list,
+            agentContributions=agent_contributions,
+            validationStatus=validation_status,
+        )
+        return eval_response.model_dump_json(), validation_status
+
+    except (json.JSONDecodeError, KeyError) as e:
+        logging.error(f"Failed to parse sanity check output: {e}")
+        return _build_fallback_response(summary_output, agent_contributions)
+
+
+def _build_fallback_response(
+    summary_output: str,
+    agent_contributions: list[AgentContribution],
+) -> tuple[str, str]:
+    """Build fallback response when sanity check parsing fails."""
+    try:
+        summary_data = json.loads(summary_output)
+        eval_response = EvaluationResponseSchema(
+            criterionResults=[],
+            overallScore=float(summary_data.get("overallScore", 0)),
+            summary=summary_data.get("overall_narrative", "Evaluation completed."),
+            nextSteps=[],
+            agentContributions=agent_contributions,
+            validationStatus="flagged",
+        )
+        return eval_response.model_dump_json(), "flagged"
+    except (json.JSONDecodeError, KeyError):
+        error_response = {
+            "criterionResults": [],
+            "overallScore": 0,
+            "summary": "Evaluation pipeline completed but output parsing failed.",
+            "nextSteps": [],
+            "agentContributions": [ac.model_dump() for ac in agent_contributions],
+            "validationStatus": "flagged",
+        }
+        return json.dumps(error_response), "flagged"
+
+
+def _build_error_response(
+    error: Exception, agent_contributions: list[AgentContribution]
+) -> tuple[str, str]:
+    """Build error response when pipeline fails."""
+    logging.error(f"Evaluation pipeline failed: {error}")
+    error_response = {
+        "criterionResults": [],
+        "overallScore": 0,
+        "summary": f"Evaluation pipeline failed: {str(error)}",
+        "nextSteps": [],
+        "agentContributions": [ac.model_dump() for ac in agent_contributions],
+        "validationStatus": "error",
+    }
+    return json.dumps(error_response), f"Evaluation error: {str(error)[:50]}..."
+
+
+class ConversationFlow:
+    """Conversation flow for SoCa document evaluation using 6-agent pipeline."""
 
     @staticmethod
     async def get_conversation_response(
@@ -131,20 +403,7 @@ class ConversationFlow:
         chatrequest: Optional[ChatRequest] = None,
         revision: str = "active",
     ) -> tuple[str, str, int, str]:
-        """Get an evaluation response using the 6-agent pipeline.
-
-        Args:
-            message: User's submission to evaluate (contains criteria and content).
-            topics: List of topics for context.
-            thread_memory: Previous conversation memory.
-            memory_record_switch: Whether memory recording is enabled.
-            thread_chat_history: Previous conversation history.
-            chatrequest: ChatRequest object for backward compatibility.
-            revision: Prompt revision to use.
-
-        Returns:
-            Tuple of (evaluation_result_json, memory_summary, token_count, agents_info).
-        """
+        """Get an evaluation response using the 6-agent pipeline."""
         if chatrequest:
             message = chatrequest.user_prompt
             _ = chatrequest.topic if chatrequest.topic else topics
@@ -152,390 +411,110 @@ class ConversationFlow:
         _config = config.get_config()
         model_config = _config.models[0]
 
-        # Initialize logging
         logger = logging.getLogger(EVENT_LOGGER_NAME)
         logger.setLevel(logging.INFO)
+        logger.handlers = [
+            LLMUsageTracker(
+                agents=[
+                    "submission_evaluator",
+                    "criteria_evaluator",
+                    "next_steps",
+                    "scoring_agent",
+                    "summarizer_agent",
+                    "sanity_check",
+                ],
+                config=_config,
+                chat_history_repository=None,
+                revision_id=str(uuid.uuid4()),
+                identifier=str(uuid.uuid4()),
+                event_type="evaluation",
+            )
+        ]
 
-        llm_logger = LLMUsageTracker(
-            agents=[
-                "submission_evaluator",
-                "criteria_evaluator",
-                "next_steps",
-                "scoring_agent",
-                "summarizer_agent",
-                "sanity_check",
-            ],
-            config=_config,
-            chat_history_repository=None,
-            revision_id=str(uuid.uuid4()),
-            identifier=str(uuid.uuid4()),
-            event_type="evaluation",
-        )
-        logger.handlers = [llm_logger]
-
-        # Parse the input message to extract submission and criteria
         try:
             input_data = json.loads(message)
             submission_name = input_data.get("submission_name", "Untitled")
             submission_content = input_data.get("submission_content", message)
             criteria_text = input_data.get("criteria_text", "")
         except json.JSONDecodeError:
-            # Fall back to using message as content
             submission_name = "Untitled"
             submission_content = message
             criteria_text = ""
 
-        # Create model client
         builder = AzureOpenAIChatCompletionClientBuilder(model_config)
         model_client = builder.build()
-        cancellation_token = CancellationToken()
 
-        total_tokens = 0
-        agent_contributions: list[AgentContribution] = []
-        # Track detailed agent data for trace storage
-        agents_trace_data: list[dict[str, Any]] = []
+        ctx = EvaluationContext(
+            submission_name=submission_name,
+            submission_content=submission_content,
+            criteria_text=criteria_text,
+            revision=revision,
+            model_client=model_client,
+            cancellation_token=CancellationToken(),
+        )
+        state = PipelineState()
 
         try:
-            # =========================================================
-            # PHASE 1: PARALLEL ANALYSIS
-            # =========================================================
-            logging.info("Phase 1: Running parallel analysis agents")
-            phase1_start = time.time()
-
-            # Get prompts for Phase 1 agents
-            sub_sys, sub_user = get_submission_evaluator_prompts(revision)
-            crit_sys, crit_user = get_criteria_evaluator_prompts(revision)
-            next_sys, next_user = get_next_steps_prompts(revision)
-
-            # Render user prompts with variables
-            sub_user_rendered = _render_template(
-                sub_user,
-                {"submission_name": submission_name, "submission_content": submission_content},
-            )
-            crit_user_rendered = _render_template(crit_user, {"criteria_text": criteria_text})
-            next_user_rendered = _render_template(
-                next_user,
-                {"submission_name": submission_name, "submission_content": submission_content},
+            submission_analysis, criteria_analysis, next_steps_output = await _run_phase1(
+                ctx, state
             )
 
-            # Run Phase 1 agents in parallel
-            phase1_results = await asyncio.gather(
-                _run_agent(
-                    "submission_evaluator",
-                    sub_sys,
-                    sub_user_rendered,
-                    model_client,
-                    cancellation_token,
-                ),
-                _run_agent(
-                    "criteria_evaluator",
-                    crit_sys,
-                    crit_user_rendered,
-                    model_client,
-                    cancellation_token,
-                ),
-                _run_agent(
-                    "next_steps",
-                    next_sys,
-                    next_user_rendered,
-                    model_client,
-                    cancellation_token,
-                ),
-                return_exceptions=True,
-            )
-
-            phase1_time = int((time.time() - phase1_start) * 1000)
-
-            # Process Phase 1 results
-            submission_analysis = "{}"
-            criteria_analysis = "{}"
-            next_steps_output = "{}"
-
-            # User prompts for Phase 1 agents
-            phase1_user_prompts = [sub_user_rendered, crit_user_rendered, next_user_rendered]
-            phase1_system_prompts = [sub_sys, crit_sys, next_sys]
-
-            for i, agent_result in enumerate(phase1_results):
-                agent_name = ["submission_evaluator", "criteria_evaluator", "next_steps"][i]
-                display_name = ["Submission Evaluator", "Criteria Evaluator", "Next Steps Agent"][i]
-                if isinstance(agent_result, BaseException):
-                    logging.error(f"{agent_name} failed: {agent_result}")
-                    tokens = 0
-                    output = json.dumps({"error": str(agent_result)})
-                else:
-                    # agent_result is tuple[str, int] here
-                    output, tokens = agent_result
-                    total_tokens += tokens
-
-                if i == 0:
-                    submission_analysis = output
-                elif i == 1:
-                    criteria_analysis = output
-                else:
-                    next_steps_output = output
-
-                agent_contributions.append(
-                    AgentContribution(
-                        agent_name=display_name,
-                        phase=1,
-                        input_summary=f"Analyzed {'submission' if i == 0 else 'criteria' if i == 1 else 'improvements'}",
-                        output_summary=output[:200] + "..." if len(output) > 200 else output,
-                        token_count=tokens,
-                        execution_time_ms=phase1_time // 3,  # Approximate per agent
-                    )
-                )
-
-                # Track for trace storage
-                agents_trace_data.append(
-                    {
-                        "agent_name": display_name,
-                        "order": i + 1,
-                        "input": phase1_user_prompts[i],
-                        "output": output,
-                        "token_usage": tokens,
-                        "system_prompt": phase1_system_prompts[i],
-                        "user_prompt": phase1_user_prompts[i],
-                    }
-                )
-
-            # =========================================================
-            # PHASE 2: SCORING
-            # =========================================================
-            logging.info("Phase 2: Running Scoring Agent")
-            phase2_start = time.time()
-
-            score_sys, score_user = get_scoring_agent_prompts(revision)
-            score_user_rendered = _render_template(
-                score_user,
+            scoring_output = await _run_sequential_agent(
+                ctx,
+                state,
+                "scoring_agent",
+                "Scoring Agent",
+                get_scoring_agent_prompts,
                 {
                     "submission_analysis": submission_analysis,
                     "criteria_analysis": criteria_analysis,
                     "next_steps": next_steps_output,
                     "criteria_text": criteria_text,
                 },
+                phase=2,
+                order=4,
+                input_summary="Combined Phase 1 outputs for scoring",
             )
 
-            scoring_output, scoring_tokens = await _run_agent(
-                "scoring_agent",
-                score_sys,
-                score_user_rendered,
-                model_client,
-                cancellation_token,
-            )
-            total_tokens += scoring_tokens
-            phase2_time = int((time.time() - phase2_start) * 1000)
-
-            agent_contributions.append(
-                AgentContribution(
-                    agent_name="Scoring Agent",
-                    phase=2,
-                    input_summary="Combined Phase 1 outputs for scoring",
-                    output_summary=scoring_output[:200] + "..."
-                    if len(scoring_output) > 200
-                    else scoring_output,
-                    token_count=scoring_tokens,
-                    execution_time_ms=phase2_time,
-                )
-            )
-
-            # Track for trace storage
-            agents_trace_data.append(
-                {
-                    "agent_name": "Scoring Agent",
-                    "order": 4,
-                    "input": score_user_rendered,
-                    "output": scoring_output,
-                    "token_usage": scoring_tokens,
-                    "system_prompt": score_sys,
-                    "user_prompt": score_user_rendered,
-                }
-            )
-
-            # =========================================================
-            # PHASE 3: SUMMARIZATION
-            # =========================================================
-            logging.info("Phase 3: Running Summarizer Agent")
-            phase3_start = time.time()
-
-            sum_sys, sum_user = get_summarizer_agent_prompts(revision)
-            sum_user_rendered = _render_template(
-                sum_user,
-                {"scores": scoring_output, "submission_name": submission_name},
-            )
-
-            summary_output, summary_tokens = await _run_agent(
+            summary_output = await _run_sequential_agent(
+                ctx,
+                state,
                 "summarizer_agent",
-                sum_sys,
-                sum_user_rendered,
-                model_client,
-                cancellation_token,
-            )
-            total_tokens += summary_tokens
-            phase3_time = int((time.time() - phase3_start) * 1000)
-
-            agent_contributions.append(
-                AgentContribution(
-                    agent_name="Summarizer Agent",
-                    phase=3,
-                    input_summary="Created summary from scoring results",
-                    output_summary=summary_output[:200] + "..."
-                    if len(summary_output) > 200
-                    else summary_output,
-                    token_count=summary_tokens,
-                    execution_time_ms=phase3_time,
-                )
+                "Summarizer Agent",
+                get_summarizer_agent_prompts,
+                {"scores": scoring_output, "submission_name": submission_name},
+                phase=3,
+                order=5,
+                input_summary="Created summary from scoring results",
             )
 
-            # Track for trace storage
-            agents_trace_data.append(
-                {
-                    "agent_name": "Summarizer Agent",
-                    "order": 5,
-                    "input": sum_user_rendered,
-                    "output": summary_output,
-                    "token_usage": summary_tokens,
-                    "system_prompt": sum_sys,
-                    "user_prompt": sum_user_rendered,
-                }
-            )
-
-            # =========================================================
-            # PHASE 4: SANITY CHECK
-            # =========================================================
-            logging.info("Phase 4: Running Sanity Check Agent")
-            phase4_start = time.time()
-
-            sanity_sys, sanity_user = get_sanity_check_prompts(revision)
-            sanity_user_rendered = _render_template(
-                sanity_user,
+            sanity_output = await _run_sequential_agent(
+                ctx,
+                state,
+                "sanity_check",
+                "Sanity Check Agent",
+                get_sanity_check_prompts,
                 {
                     "summary": summary_output,
                     "scores": scoring_output,
                     "criteria_text": criteria_text,
                 },
+                phase=4,
+                order=6,
+                input_summary="Validated evaluation for consistency",
             )
 
-            sanity_output, sanity_tokens = await _run_agent(
-                "sanity_check",
-                sanity_sys,
-                sanity_user_rendered,
-                model_client,
-                cancellation_token,
+            result_json, validation_status = _build_final_response(
+                sanity_output, summary_output, next_steps_output, state.agent_contributions
             )
-            total_tokens += sanity_tokens
-            phase4_time = int((time.time() - phase4_start) * 1000)
-
-            agent_contributions.append(
-                AgentContribution(
-                    agent_name="Sanity Check Agent",
-                    phase=4,
-                    input_summary="Validated evaluation for consistency",
-                    output_summary=sanity_output[:200] + "..."
-                    if len(sanity_output) > 200
-                    else sanity_output,
-                    token_count=sanity_tokens,
-                    execution_time_ms=phase4_time,
-                )
-            )
-
-            # Track for trace storage
-            agents_trace_data.append(
-                {
-                    "agent_name": "Sanity Check Agent",
-                    "order": 6,
-                    "input": sanity_user_rendered,
-                    "output": sanity_output,
-                    "token_usage": sanity_tokens,
-                    "system_prompt": sanity_sys,
-                    "user_prompt": sanity_user_rendered,
-                }
-            )
-
-            # =========================================================
-            # BUILD FINAL RESPONSE
-            # =========================================================
-            try:
-                sanity_data = json.loads(sanity_output)
-                final_output = sanity_data.get("final_output", {})
-                validation_status = sanity_data.get("validation_status", "passed")
-
-                # Extract criterion results
-                criterion_results = []
-                for cr in final_output.get("criterionResults", []):
-                    criterion_results.append(
-                        CriterionResultSchema(
-                            criterionId=cr.get("criterionId", ""),
-                            score=float(cr.get("score", 0)),
-                            narrative=cr.get("narrative", ""),
-                        )
-                    )
-
-                # Extract next steps from the sanity check output or original next steps
-                next_steps_list = final_output.get("nextSteps", [])
-                if not next_steps_list:
-                    try:
-                        next_data = json.loads(next_steps_output)
-                        improvements = next_data.get("priority_improvements", [])
-                        next_steps_list = [
-                            imp.get("recommended_action", "") for imp in improvements[:5]
-                        ]
-                    except (json.JSONDecodeError, KeyError):
-                        next_steps_list = []
-
-                eval_response = EvaluationResponseSchema(
-                    criterionResults=criterion_results,
-                    overallScore=float(final_output.get("overallScore", 0)),
-                    summary=final_output.get("narrative", "Evaluation completed."),
-                    nextSteps=next_steps_list,
-                    agentContributions=agent_contributions,
-                    validationStatus=validation_status,
-                )
-                result_json = eval_response.model_dump_json()
-
-            except (json.JSONDecodeError, KeyError) as e:
-                logging.error(f"Failed to parse sanity check output: {e}")
-                # Fallback: try to build from summary output
-                try:
-                    summary_data = json.loads(summary_output)
-                    eval_response = EvaluationResponseSchema(
-                        criterionResults=[],
-                        overallScore=float(summary_data.get("overallScore", 0)),
-                        summary=summary_data.get("overall_narrative", "Evaluation completed."),
-                        nextSteps=[],
-                        agentContributions=agent_contributions,
-                        validationStatus="flagged",
-                    )
-                    result_json = eval_response.model_dump_json()
-                except (json.JSONDecodeError, KeyError):
-                    error_response = {
-                        "criterionResults": [],
-                        "overallScore": 0,
-                        "summary": "Evaluation pipeline completed but output parsing failed.",
-                        "nextSteps": [],
-                        "agentContributions": [ac.model_dump() for ac in agent_contributions],
-                        "validationStatus": "flagged",
-                    }
-                    result_json = json.dumps(error_response)
-
             memory_summary = f"6-agent evaluation completed. Validation: {validation_status}"
 
         except Exception as e:
-            logging.error(f"Evaluation pipeline failed: {e}")
-            error_response = {
-                "criterionResults": [],
-                "overallScore": 0,
-                "summary": f"Evaluation pipeline failed: {str(e)}",
-                "nextSteps": [],
-                "agentContributions": [ac.model_dump() for ac in agent_contributions],
-                "validationStatus": "error",
-            }
-            result_json = json.dumps(error_response)
-            memory_summary = f"Evaluation error: {str(e)[:50]}..."
+            result_json, memory_summary = _build_error_response(e, state.agent_contributions)
 
         finally:
             await model_client.close()
 
-        # Build agents info string for tracing (includes full trace data)
         agents_info = json.dumps(
             {
                 "pipeline": "6-agent",
@@ -548,9 +527,9 @@ class ConversationFlow:
                     "Summarizer Agent",
                     "Sanity Check Agent",
                 ],
-                "total_tokens": total_tokens,
-                "agents_trace_data": agents_trace_data,
+                "total_tokens": state.total_tokens,
+                "agents_trace_data": state.agents_trace_data,
             }
         )
 
-        return result_json, memory_summary, total_tokens, agents_info
+        return result_json, memory_summary, state.total_tokens, agents_info

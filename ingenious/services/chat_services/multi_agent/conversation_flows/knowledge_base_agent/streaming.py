@@ -275,6 +275,82 @@ class StreamMessageHandler:
         return None
 
 
+def _handle_tool_event(
+    message: Any,
+    handler: StreamMessageHandler,
+    factory: StreamChunkFactory,
+    thread_id: str,
+    message_id: str,
+) -> Optional[ChatResponseChunk]:
+    """Handle tool events and return status chunk if applicable."""
+    if handler.is_tool_event(message):
+        return factory.status(thread_id, message_id, "Searching knowledge base...")
+    return None
+
+
+def _handle_content(
+    message: Any,
+    handler: StreamMessageHandler,
+    factory: StreamChunkFactory,
+    state: StreamingState,
+    thread_id: str,
+    message_id: str,
+) -> Optional[ChatResponseChunk]:
+    """Handle plain text content from message."""
+    if not hasattr(message, "content") or not message.content:
+        return None
+
+    text = str(message.content)
+    if handler.looks_like_tool_chatter(text):
+        return None
+
+    state.accumulated_content += text
+    return factory.content(thread_id, message_id, text)
+
+
+def _handle_usage(
+    message: Any,
+    factory: StreamChunkFactory,
+    state: StreamingState,
+    thread_id: str,
+    message_id: str,
+) -> Optional[ChatResponseChunk]:
+    """Handle token usage from message."""
+    if not hasattr(message, "usage"):
+        return None
+
+    usage = message.usage
+    if hasattr(usage, "total_tokens"):
+        state.total_tokens = usage.total_tokens
+    if hasattr(usage, "completion_tokens"):
+        state.completion_tokens = usage.completion_tokens
+
+    return factory.token_count(thread_id, message_id, state.total_tokens)
+
+
+def _handle_task_result(
+    message: Any,
+    handler: StreamMessageHandler,
+    factory: StreamChunkFactory,
+    state: StreamingState,
+    thread_id: str,
+    message_id: str,
+) -> Optional[ChatResponseChunk]:
+    """Handle TaskResult final flush."""
+    if not handler.is_task_result(message):
+        return None
+
+    final_text = handler.get_task_result_content(message)
+    if not final_text or final_text in state.accumulated_content:
+        return None
+
+    if handler.looks_like_tool_chatter(final_text):
+        return None
+
+    state.accumulated_content += final_text
+    return factory.content(thread_id, message_id, final_text)
+
+
 async def process_agent_stream(
     stream: AsyncIterator[Any],
     thread_id: str,
@@ -282,51 +358,30 @@ async def process_agent_stream(
     state: StreamingState,
     logger: Optional[logging.Logger] = None,
 ) -> AsyncIterator[ChatResponseChunk]:
-    """Process an agent stream and yield chat response chunks.
-
-    Args:
-        stream: The async iterator from agent.run_stream().
-        thread_id: The thread ID for response chunks.
-        message_id: The message ID for response chunks.
-        state: Mutable state to accumulate content and tokens.
-        logger: Optional logger for diagnostics.
-
-    Yields:
-        ChatResponseChunk objects for the streaming response.
-    """
+    """Process an agent stream and yield chat response chunks."""
     factory = StreamChunkFactory()
     handler = StreamMessageHandler()
 
     try:
         async for message in stream:
-            # Handle tool events with status
-            if handler.is_tool_event(message):
-                yield factory.status(thread_id, message_id, "Searching knowledge base...")
+            tool_chunk = _handle_tool_event(message, handler, factory, thread_id, message_id)
+            if tool_chunk:
+                yield tool_chunk
                 continue
 
-            # Handle plain text content
-            if hasattr(message, "content") and message.content:
-                text = str(message.content)
-                if not handler.looks_like_tool_chatter(text):
-                    state.accumulated_content += text
-                    yield factory.content(thread_id, message_id, text)
+            content_chunk = _handle_content(message, handler, factory, state, thread_id, message_id)
+            if content_chunk:
+                yield content_chunk
 
-            # Handle token usage
-            if hasattr(message, "usage"):
-                usage = message.usage
-                if hasattr(usage, "total_tokens"):
-                    state.total_tokens = usage.total_tokens
-                if hasattr(usage, "completion_tokens"):
-                    state.completion_tokens = usage.completion_tokens
-                yield factory.token_count(thread_id, message_id, state.total_tokens)
+            usage_chunk = _handle_usage(message, factory, state, thread_id, message_id)
+            if usage_chunk:
+                yield usage_chunk
 
-            # Handle TaskResult final flush
-            if handler.is_task_result(message):
-                final_text = handler.get_task_result_content(message)
-                if final_text and final_text not in state.accumulated_content:
-                    if not handler.looks_like_tool_chatter(final_text):
-                        state.accumulated_content += final_text
-                        yield factory.content(thread_id, message_id, final_text)
+            task_chunk = _handle_task_result(
+                message, handler, factory, state, thread_id, message_id
+            )
+            if task_chunk:
+                yield task_chunk
 
     except Exception as e:
         if logger:
