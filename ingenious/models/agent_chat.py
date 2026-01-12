@@ -4,7 +4,6 @@ This module provides models for representing and managing chat interactions
 between agents, including individual chats and collections of chats.
 """
 
-from datetime import datetime
 from typing import List, Optional
 
 from autogen_agentchat.base import Response
@@ -37,47 +36,6 @@ class AgentChat(BaseModel):
     prompt_tokens: int = 0
     start_time: Optional[float] = None
     end_time: Optional[float] = None
-
-    def get_execution_time(self) -> float:
-        """Calculate the execution time in seconds.
-
-        Returns:
-            float: The execution time in seconds, or 0.0 if start/end time is not set.
-        """
-        if self.end_time is None or self.start_time is None:
-            return 0.0
-        return self.end_time - self.start_time
-
-    def get_execution_time_formatted(self) -> str:
-        """Get the execution time formatted as MM:SS.
-
-        Returns:
-            str: The execution time in MM:SS format.
-        """
-        execution_time = self.get_execution_time()
-        return f"{int(execution_time // 60)}:{int(execution_time % 60):02d}"
-
-    def get_start_time_formatted(self) -> str:
-        """Get the start time formatted as HH:MM:SS.
-
-        Returns:
-            str: The start time in HH:MM:SS format, or "00:00:00" if not set.
-        """
-        if self.start_time is None:
-            return "00:00:00"
-        return datetime.fromtimestamp(self.start_time).strftime("%H:%M:%S")
-
-    def get_associated_agent_response_file_name(self, identifier: str, event_type: str) -> str:
-        """Generate the filename for the agent response file.
-
-        Args:
-            identifier: The unique identifier for the chat session.
-            event_type: The type of event being logged.
-
-        Returns:
-            str: The generated filename in markdown format.
-        """
-        return f"agent_response_{event_type}_{self.source_agent_name}_{self.target_agent_name}_{identifier.strip()}.md"
 
 
 class AgentChats(BaseModel):
