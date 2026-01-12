@@ -13,6 +13,7 @@
     ]
   },
   "enabledPlugins": {
-    "ralph-wiggum@claude-plugins-official": true
+    "ralph-wiggum@claude-plugins-official": true,
+    "ralph-loop@claude-plugins-official": true
   }
 }
