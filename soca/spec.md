@@ -404,23 +404,23 @@ INGEN_PROMPT_TUNER_API_KEY=<shared-api-key>
 **Test Cases:**
 
 **TC-4.5.1-A: Create Evaluation with 3+ Submissions**
-- [ ] Upload at least 3 distinct submission files with varying content quality
-- [ ] Create a new evaluation selecting all 3+ submissions
-- [ ] Select a criteria set with multiple weighted criteria
-- [ ] Run the evaluation successfully
-- [ ] Verify all submissions are evaluated and ranked
+- [x] Upload at least 3 distinct submission files with varying content quality
+- [x] Create a new evaluation selecting all 3+ submissions
+- [x] Select a criteria set with multiple weighted criteria
+- [x] Run the evaluation successfully
+- [x] Verify all submissions are evaluated and ranked
 
 **TC-4.5.1-B: Ranking Accuracy**
-- [ ] Results should be sorted by overall score (highest first)
-- [ ] Rank badges should show correct position (1, 2, 3, etc.)
-- [ ] Submissions with similar scores should have distinct rankings
-- [ ] Score distribution should reflect content quality differences
+- [x] Results should be sorted by overall score (highest first)
+- [x] Rank badges should show correct position (1, 2, 3, etc.)
+- [x] Submissions with similar scores should have distinct rankings
+- [x] Score distribution should reflect content quality differences
 
 **TC-4.5.1-C: Comparative Analysis**
-- [ ] Each submission should have individual criterion scores
-- [ ] AI narratives should reference submission-specific content
-- [ ] Overall summaries should differentiate between submissions
-- [ ] Export should include all submissions with complete data
+- [x] Each submission should have individual criterion scores
+- [x] AI narratives should reference submission-specific content
+- [x] Overall summaries should differentiate between submissions
+- [x] Export should include all submissions with complete data
 
 **TC-4.5.1-D: Large Batch Evaluation**
 - [ ] System should handle evaluation of 5+ submissions
