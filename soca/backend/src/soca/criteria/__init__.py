@@ -15,6 +15,85 @@ from soca.templates import get_user_prompt_template, render_template
 
 logger = logging.getLogger(__name__)
 
+# MIME types for file type detection
+_PLAIN_TEXT_TYPES = ("text/plain", "text/markdown")
+_PDF_TYPE = "application/pdf"
+_DOCX_TYPE = "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+
+
+def _extract_text_from_plain(content: bytes) -> str:
+    """Extract text from plain text or markdown file.
+
+    Args:
+        content: Raw file bytes
+
+    Returns:
+        Decoded text content
+    """
+    return content.decode("utf-8", errors="ignore")
+
+
+def _extract_text_from_pdf(content: bytes) -> str:
+    """Extract text from PDF file.
+
+    Args:
+        content: Raw PDF file bytes
+
+    Returns:
+        Extracted text from all pages
+
+    Raises:
+        ValueError: If pypdf is not installed or extraction fails
+    """
+    try:
+        import pypdf
+
+        reader = pypdf.PdfReader(BytesIO(content))
+        text_parts = [page.extract_text() for page in reader.pages if page.extract_text()]
+        return "\n\n".join(text_parts)
+    except ImportError:
+        logger.warning("pypdf not installed, PDF extraction unavailable")
+        raise ValueError("PDF extraction requires pypdf library")
+    except Exception as e:
+        logger.error(f"PDF extraction failed: {e}")
+        raise ValueError(f"Failed to extract text from PDF: {e}")
+
+
+def _extract_text_from_docx(content: bytes) -> str:
+    """Extract text from DOCX file.
+
+    Args:
+        content: Raw DOCX file bytes
+
+    Returns:
+        Extracted text from all paragraphs
+
+    Raises:
+        ValueError: If python-docx is not installed or extraction fails
+    """
+    try:
+        import docx
+
+        doc = docx.Document(BytesIO(content))
+        text_parts = [paragraph.text for paragraph in doc.paragraphs if paragraph.text.strip()]
+        return "\n\n".join(text_parts)
+    except ImportError:
+        logger.warning("python-docx not installed, DOCX extraction unavailable")
+        raise ValueError("DOCX extraction requires python-docx library")
+    except Exception as e:
+        logger.error(f"DOCX extraction failed: {e}")
+        raise ValueError(f"Failed to extract text from DOCX: {e}")
+
+
+def _is_pdf_file(content_type: str, filename: str) -> bool:
+    """Check if file is a PDF based on content type or extension."""
+    return content_type == _PDF_TYPE or filename.lower().endswith(".pdf")
+
+
+def _is_docx_file(content_type: str, filename: str) -> bool:
+    """Check if file is a DOCX based on content type or extension."""
+    return content_type == _DOCX_TYPE or filename.lower().endswith(".docx")
+
 
 async def extract_text_from_file(content: bytes, content_type: str, filename: str) -> str:
     """Extract text from uploaded file based on content type.
@@ -30,46 +109,14 @@ async def extract_text_from_file(content: bytes, content_type: str, filename: st
     Raises:
         ValueError: If file type is unsupported or extraction fails
     """
-    # Plain text files
-    if content_type in ("text/plain", "text/markdown"):
-        return content.decode("utf-8", errors="ignore")
+    if content_type in _PLAIN_TEXT_TYPES:
+        return _extract_text_from_plain(content)
 
-    # PDF files
-    if content_type == "application/pdf" or filename.lower().endswith(".pdf"):
-        try:
-            import pypdf
+    if _is_pdf_file(content_type, filename):
+        return _extract_text_from_pdf(content)
 
-            reader = pypdf.PdfReader(BytesIO(content))
-            text_parts = []
-            for page in reader.pages:
-                text = page.extract_text()
-                if text:
-                    text_parts.append(text)
-            return "\n\n".join(text_parts)
-        except ImportError:
-            logger.warning("pypdf not installed, PDF extraction unavailable")
-            raise ValueError("PDF extraction requires pypdf library")
-        except Exception as e:
-            logger.error(f"PDF extraction failed: {e}")
-            raise ValueError(f"Failed to extract text from PDF: {e}")
-
-    # DOCX files
-    if (
-        content_type == "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
-        or filename.lower().endswith(".docx")
-    ):
-        try:
-            import docx
-
-            doc = docx.Document(BytesIO(content))
-            text_parts = [paragraph.text for paragraph in doc.paragraphs if paragraph.text.strip()]
-            return "\n\n".join(text_parts)
-        except ImportError:
-            logger.warning("python-docx not installed, DOCX extraction unavailable")
-            raise ValueError("DOCX extraction requires python-docx library")
-        except Exception as e:
-            logger.error(f"DOCX extraction failed: {e}")
-            raise ValueError(f"Failed to extract text from DOCX: {e}")
+    if _is_docx_file(content_type, filename):
+        return _extract_text_from_docx(content)
 
     raise ValueError(f"Unsupported file type: {content_type}")
 

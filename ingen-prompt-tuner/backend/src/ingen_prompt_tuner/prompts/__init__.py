@@ -598,5 +598,3 @@ def get_criteria_generator_system_prompt(revision: str = "active") -> str:
     if prompt:
         return prompt.content
     return CRITERIA_GENERATOR_SYSTEM_PROMPT
-
-

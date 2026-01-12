@@ -23,6 +23,72 @@ from ingenious.models.agent import LLMUsageTracker
 from ingenious.models.chat import ChatRequest
 
 
+def _clean_json_response(text: str) -> str:
+    """Remove markdown code block formatting from JSON response.
+
+    Args:
+        text: Raw response text that may contain markdown formatting.
+
+    Returns:
+        Cleaned JSON string without markdown code blocks.
+    """
+    clean = text.strip()
+    if clean.startswith("```json"):
+        clean = clean[7:]
+    if clean.startswith("```"):
+        clean = clean[3:]
+    if clean.endswith("```"):
+        clean = clean[:-3]
+    return clean.strip()
+
+
+def _normalize_weights(criteria: list[Any]) -> None:
+    """Normalize criterion weights to sum to exactly 100.
+
+    Modifies criteria in place. Only normalizes if total weight is between 80-120.
+
+    Args:
+        criteria: List of criterion objects with weight attributes.
+    """
+    if not criteria:
+        return
+
+    total_weight = sum(c.weight for c in criteria)
+    if total_weight == 100:
+        return
+
+    if 80 <= total_weight <= 120:
+        for criterion in criteria:
+            criterion.weight = round(criterion.weight * 100 / total_weight)
+        # Adjust last criterion to ensure exact sum
+        adjustment = 100 - sum(c.weight for c in criteria[:-1])
+        criteria[-1].weight = adjustment
+    else:
+        logging.warning(f"Weight sum is {total_weight}, expected 100")
+
+
+def _extract_token_count(chat_msg: Any, llm_logger: Any) -> int:
+    """Extract token count from chat message or logger.
+
+    Args:
+        chat_msg: The chat message response object.
+        llm_logger: The LLM usage tracker logger.
+
+    Returns:
+        Total token count (prompt + completion tokens).
+    """
+    token_count = 0
+
+    if hasattr(chat_msg, "models_usage") and chat_msg.models_usage is not None:
+        usage = chat_msg.models_usage
+        token_count = getattr(usage, "prompt_tokens", 0) + getattr(usage, "completion_tokens", 0)
+
+    if token_count == 0 and hasattr(llm_logger, "tokens"):
+        token_count = llm_logger.tokens
+
+    return token_count
+
+
 class ConversationFlow:
     """Conversation flow for criteria extraction from documents.
 
@@ -133,49 +199,15 @@ Respond ONLY with valid JSON, no markdown formatting or additional text."""
 
             # Parse and validate the response
             try:
-                # Clean markdown formatting if present
-                clean_result = result_text.strip()
-                if clean_result.startswith("```json"):
-                    clean_result = clean_result[7:]
-                if clean_result.startswith("```"):
-                    clean_result = clean_result[3:]
-                if clean_result.endswith("```"):
-                    clean_result = clean_result[:-3]
-                clean_result = clean_result.strip()
-
-                # Validate against schema
+                clean_result = _clean_json_response(result_text)
                 parsed = CriteriaGenerationResponseSchema.model_validate_json(clean_result)
-
-                # Validate and normalize weight sum
-                total_weight = sum(c.weight for c in parsed.criteria)
-                if total_weight != 100 and parsed.criteria:
-                    # Normalize weights to sum to 100 if close
-                    if 80 <= total_weight <= 120:
-                        for criterion in parsed.criteria:
-                            criterion.weight = round(criterion.weight * 100 / total_weight)
-                        # Adjust last criterion to ensure exact sum
-                        adjustment = 100 - sum(c.weight for c in parsed.criteria[:-1])
-                        parsed.criteria[-1].weight = adjustment
-                    else:
-                        logging.warning(f"Weight sum is {total_weight}, expected 100")
-
+                _normalize_weights(parsed.criteria)
                 result = parsed.model_dump_json()
             except Exception as parse_error:
                 logging.warning(f"Failed to parse response: {parse_error}")
                 result = result_text
 
-            # Get token count from the response's models_usage
-            # AutoGen AgentChat includes RequestUsage with prompt_tokens and completion_tokens
-            if hasattr(chat_msg, "models_usage") and chat_msg.models_usage is not None:
-                usage = chat_msg.models_usage
-                token_count = getattr(usage, "prompt_tokens", 0) + getattr(
-                    usage, "completion_tokens", 0
-                )
-
-            # Fallback to LLM logger if response doesn't have usage
-            if token_count == 0 and hasattr(llm_logger, "tokens"):
-                token_count = llm_logger.tokens
-
+            token_count = _extract_token_count(chat_msg, llm_logger)
             memory_summary = "Criteria extraction completed successfully"
 
         except Exception as e:
