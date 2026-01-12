@@ -148,9 +148,17 @@ Respond ONLY with valid JSON, no markdown formatting or additional text."""
                 # If parsing fails, use the raw result
                 result = result_text
 
-            # Get token count from the LLM logger if available
-            if hasattr(llm_logger, "total_tokens"):
-                token_count = llm_logger.total_tokens
+            # Get token count from the response's models_usage
+            # AutoGen AgentChat includes RequestUsage with prompt_tokens and completion_tokens
+            if hasattr(chat_msg, "models_usage") and chat_msg.models_usage is not None:
+                usage = chat_msg.models_usage
+                token_count = getattr(usage, "prompt_tokens", 0) + getattr(
+                    usage, "completion_tokens", 0
+                )
+
+            # Fallback to LLM logger if response doesn't have usage
+            if token_count == 0 and hasattr(llm_logger, "tokens"):
+                token_count = llm_logger.tokens
 
             memory_summary = "Evaluation completed successfully"
 
