@@ -67,6 +67,7 @@ export const useSubmissionsStore = defineStore('submissions', () => {
     const updated = await submissionsService.update(id, data)
     const index = submissions.value.findIndex((s) => s.id === id)
     if (index !== -1) {
+      // eslint-disable-next-line security/detect-object-injection -- index is a validated numeric array index from findIndex
       submissions.value[index] = updated
     }
     return updated

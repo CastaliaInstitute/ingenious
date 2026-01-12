@@ -168,6 +168,7 @@
     const state: ParserState = { depth: 0, inString: false, escapeNext: false }
 
     for (let i = 0; i < text.length; i++) {
+      // eslint-disable-next-line security/detect-object-injection -- i is a numeric loop counter
       const endIndex = processCharacter(text[i], i, startChar, endChar, state)
       if (endIndex >= 0) {
         return text.substring(0, endIndex + 1)
