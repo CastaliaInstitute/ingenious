@@ -3,6 +3,10 @@ import { ref, computed } from 'vue'
 import type { Evaluation } from '@/types'
 import { evaluationsService } from '@/services/evaluations.service'
 
+/**
+ * Pinia store for managing document evaluations.
+ * Handles CRUD operations and evaluation execution.
+ */
 export const useEvaluationsStore = defineStore('evaluations', () => {
   const evaluations = ref<Evaluation[]>([])
   const loading = ref(false)
@@ -20,6 +24,9 @@ export const useEvaluationsStore = defineStore('evaluations', () => {
     evaluations.value.reduce((sum, e) => sum + e.submissionIds.length, 0)
   )
 
+  /**
+   * Fetches all evaluations from the API.
+   */
   async function fetchEvaluations() {
     loading.value = true
     error.value = null
@@ -32,6 +39,14 @@ export const useEvaluationsStore = defineStore('evaluations', () => {
     }
   }
 
+  /**
+   * Creates a new evaluation.
+   * @param data - The evaluation configuration.
+   * @param data.name - The name for the evaluation.
+   * @param data.submissionIds - Array of submission IDs to evaluate.
+   * @param data.criteriaSetId - The criteria set ID to use for evaluation.
+   * @returns The created evaluation.
+   */
   async function createEvaluation(data: {
     name: string
     submissionIds: string[]
@@ -42,6 +57,11 @@ export const useEvaluationsStore = defineStore('evaluations', () => {
     return evaluation
   }
 
+  /**
+   * Executes an evaluation to score submissions against criteria.
+   * @param id - The evaluation identifier to run.
+   * @returns The updated evaluation with results.
+   */
   async function runEvaluation(id: string) {
     const evaluation = evaluations.value.find((e) => e.id === id)
     if (evaluation) {
@@ -50,15 +70,25 @@ export const useEvaluationsStore = defineStore('evaluations', () => {
     const updated = await evaluationsService.run(id)
     const index = evaluations.value.findIndex((e) => e.id === id)
     if (index !== -1) {
+      // eslint-disable-next-line security/detect-object-injection -- index is a validated numeric array index from findIndex
       evaluations.value[index] = updated
     }
     return updated
   }
 
+  /**
+   * Retrieves an evaluation by ID from the local store.
+   * @param id - The evaluation identifier.
+   * @returns The evaluation if found.
+   */
   function getEvaluation(id: string) {
     return evaluations.value.find((e) => e.id === id)
   }
 
+  /**
+   * Deletes an evaluation.
+   * @param id - The evaluation identifier to delete.
+   */
   async function deleteEvaluation(id: string) {
     await evaluationsService.delete(id)
     evaluations.value = evaluations.value.filter((e) => e.id !== id)

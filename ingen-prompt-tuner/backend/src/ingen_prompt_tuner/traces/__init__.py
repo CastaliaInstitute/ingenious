@@ -161,6 +161,49 @@ def get_trace(trace_id: str) -> Optional[ConversationTrace]:
         return None
 
 
+def delete_traces_by_thread_id(thread_id: str) -> int:
+    """Delete all traces matching a thread_id from Cosmos DB.
+
+    Args:
+        thread_id: The thread ID to match for deletion.
+
+    Returns:
+        Number of traces deleted.
+    """
+    container = _get_container()
+    if container is None:
+        logger.warning(f"Skipping trace deletion (no Cosmos DB): thread_id={thread_id}")
+        return 0
+
+    try:
+        # Find all traces with matching thread_id
+        query = "SELECT c.id, c.revision FROM c WHERE c.thread_id = @thread_id"
+        params: list[dict[str, object]] = [{"name": "@thread_id", "value": thread_id}]
+        items = list(
+            container.query_items(
+                query=query,
+                parameters=params,
+                enable_cross_partition_query=True,
+            )
+        )
+
+        deleted_count = 0
+        for item in items:
+            try:
+                container.delete_item(item["id"], partition_key=item["revision"])
+                deleted_count += 1
+                logger.info(f"Deleted trace: {item['id']}")
+            except exceptions.CosmosHttpResponseError as e:
+                logger.error(f"Failed to delete trace {item['id']}: {e}")
+
+        logger.info(f"Deleted {deleted_count} traces for thread_id={thread_id}")
+        return deleted_count
+
+    except exceptions.CosmosHttpResponseError as e:
+        logger.error(f"Failed to query traces for deletion: {e}")
+        return 0
+
+
 def _item_to_trace(item: dict[str, Any]) -> ConversationTrace:
     """Convert a Cosmos DB item to a ConversationTrace model."""
     return ConversationTrace(
@@ -217,15 +260,83 @@ def create_trace_from_chat(
             AgentTrace(
                 agent_name=agent_name,
                 order=1,
-                input=user_query[:1000] + "..." if len(user_query) > 1000 else user_query,
-                output=agent_response[:2000] + "..."
-                if len(agent_response) > 2000
+                input=user_query[:50000] + "..." if len(user_query) > 50000 else user_query,
+                output=agent_response[:50000] + "..."
+                if len(agent_response) > 50000
                 else agent_response,
                 token_usage=token_count,
                 system_prompt=truncated_system,
                 user_prompt=truncated_user,
             )
         ],
+    )
+
+    add_trace(trace)
+    return trace
+
+
+def create_multi_agent_trace(
+    trace_id: str,
+    thread_id: str,
+    user_query: str,
+    agents_data: list[dict[str, Any]],
+    revision: str = "active",
+    workflow: str = "soca-evaluator",
+) -> ConversationTrace:
+    """Create and store a trace with multiple agent executions.
+
+    Args:
+        trace_id: Unique trace identifier
+        thread_id: Conversation thread ID
+        user_query: Original user query
+        agents_data: List of agent execution data, each containing:
+            - agent_name: Name of the agent
+            - order: Execution order (1-6)
+            - input: Input received by agent
+            - output: Output produced by agent
+            - token_usage: Tokens used
+            - system_prompt: System prompt used
+            - user_prompt: User prompt used
+        revision: Prompt revision used
+        workflow: Workflow name
+
+    Returns:
+        Created ConversationTrace
+    """
+    timestamp = datetime.now(timezone.utc).isoformat()
+
+    def truncate(text: str, max_len: int) -> str:
+        """Truncate text to max_len characters, adding ellipsis if needed."""
+        return text[:max_len] + "..." if len(text) > max_len else text
+
+    agents: list[AgentTrace] = []
+    total_tokens = 0
+
+    for agent_data in agents_data:
+        token_usage = agent_data.get("token_usage", 0)
+        total_tokens += token_usage
+
+        agents.append(
+            AgentTrace(
+                agent_name=agent_data.get("agent_name", "Unknown"),
+                order=agent_data.get("order", len(agents) + 1),
+                input=truncate(agent_data.get("input", ""), 50000),
+                output=truncate(agent_data.get("output", ""), 50000),
+                token_usage=token_usage,
+                system_prompt=truncate(agent_data.get("system_prompt", ""), 5000),
+                user_prompt=truncate(agent_data.get("user_prompt", ""), 5000),
+            )
+        )
+
+    trace = ConversationTrace(
+        trace_id=trace_id,
+        thread_id=thread_id,
+        workflow=workflow,
+        revision=revision,
+        user_query=truncate(user_query, 200),
+        timestamp=timestamp,
+        total_tokens=total_tokens,
+        agents=agents,
     )
 
     add_trace(trace)

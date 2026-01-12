@@ -317,6 +317,7 @@ class AzureAuthConfig:
             ) from e
 
         def _sync_provider() -> str:
+            """Synchronous wrapper that runs the async token provider."""
             coro = aio_provider()
             try:
                 loop = asyncio.get_event_loop()

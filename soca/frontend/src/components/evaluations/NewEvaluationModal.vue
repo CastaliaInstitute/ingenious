@@ -1,4 +1,8 @@
 <script setup lang="ts">
+  /**
+   * NewEvaluationModal component for creating new evaluations.
+   * Allows selection of submissions and criteria for evaluation.
+   */
   import { ref, onMounted } from 'vue'
   import { useEvaluationsStore } from '@/stores/evaluations'
   import { useSubmissionsStore } from '@/stores/submissions'
@@ -24,6 +28,10 @@
     criteriaStore.fetchCriteriaSets()
   })
 
+  /**
+   * Toggles a submission's selection state.
+   * @param id - The submission identifier to toggle.
+   */
   function toggleSubmission(id: string) {
     const index = selectedSubmissions.value.indexOf(id)
     if (index === -1) {
@@ -33,6 +41,9 @@
     }
   }
 
+  /**
+   * Creates and runs a new evaluation with the selected options.
+   */
   async function handleCreate() {
     if (!name.value || selectedSubmissions.value.length === 0 || !selectedCriteriaSet.value) {
       error.value = 'Please fill in all fields'

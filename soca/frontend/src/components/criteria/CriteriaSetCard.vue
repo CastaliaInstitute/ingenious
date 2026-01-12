@@ -1,4 +1,8 @@
 <script setup lang="ts">
+  /**
+   * CriteriaSetCard component for displaying a criteria set summary.
+   * Shows name, description, criteria count, and action buttons.
+   */
   import type { CriteriaSet } from '@/types'
 
   defineProps<{
@@ -10,11 +14,19 @@
     delete: [id: string]
   }>()
 
+  /**
+   * Formats a date string to a human-readable format.
+   * @param dateString - The ISO date string to format.
+   * @returns Formatted date string.
+   */
   function formatDate(dateString: string): string {
     return new Date(dateString).toLocaleDateString('en-US', {
       month: 'short',
       day: 'numeric',
       year: 'numeric',
+      hour: 'numeric',
+      minute: '2-digit',
+      hour12: true,
     })
   }
 </script>

@@ -24,6 +24,7 @@ from ingen_prompt_tuner.conversation_flows.soca_evaluator import (
 from ingen_prompt_tuner.models import (
     ChatRequest,
     ChatResponseModel,
+    CreateRevisionRequest,
     LoginRequest,
     LoginResponse,
     Prompt,
@@ -32,12 +33,19 @@ from ingen_prompt_tuner.models import (
     User,
 )
 from ingen_prompt_tuner.prompts import (
+    create_revision,
     get_prompt,
     get_prompts,
     get_revisions,
     update_prompt,
 )
-from ingen_prompt_tuner.traces import create_trace_from_chat, get_trace, get_traces
+from ingen_prompt_tuner.traces import (
+    create_multi_agent_trace,
+    create_trace_from_chat,
+    delete_traces_by_thread_id,
+    get_trace,
+    get_traces,
+)
 
 logger = logging.getLogger(__name__)
 
@@ -112,6 +120,19 @@ async def list_revisions(
     return revisions
 
 
+@app.post("/api/revisions", response_model=Revision)
+async def create_revision_endpoint(
+    request: CreateRevisionRequest,
+    current_user: User = Depends(get_current_user),
+) -> Revision:
+    """Create a new revision, optionally copying prompts from an existing revision."""
+    try:
+        revision = create_revision(request.name, request.copy_from)
+        return revision
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e))
+
+
 # Prompts endpoints
 @app.get("/api/prompts/{revision}", response_model=list[Prompt])
 async def list_prompts(
@@ -175,6 +196,19 @@ async def view_trace(
     return result
 
 
+@app.delete("/api/traces/by-thread/{thread_id}")
+async def delete_traces_by_thread(
+    thread_id: str,
+) -> dict[str, Any]:
+    """Delete all traces associated with a thread_id.
+
+    This endpoint is called by SoCa when deleting an evaluation to clean up
+    associated trace data. No authentication required for internal service calls.
+    """
+    deleted_count = delete_traces_by_thread_id(thread_id)
+    return {"status": "deleted", "deleted_count": deleted_count, "thread_id": thread_id}
+
+
 # Stats endpoint
 @app.get("/api/stats")
 async def get_stats(
@@ -235,7 +269,7 @@ async def chat(request: ChatRequest) -> ChatResponseModel:
             result,
             memory_summary,
             token_count,
-            system_prompt,
+            agents_info,
         ) = await flow_class.get_conversation_response(
             message=request.user_prompt,
             topics=request.topic,
@@ -244,19 +278,51 @@ async def chat(request: ChatRequest) -> ChatResponseModel:
 
         logger.info(f"Chat request processed with {workflow}: {message_id}, tokens: {token_count}")
 
-        # Log trace for this AI call with prompts
-        create_trace_from_chat(
-            trace_id=message_id,
-            thread_id=request.thread_id,
-            user_query=request.user_prompt,
-            agent_response=result,
-            token_count=token_count,
-            revision="active",
-            workflow=workflow,
-            system_prompt=system_prompt,
-            user_prompt=request.user_prompt,
-            agent_name=agent_name,
-        )
+        # Parse agents_info to check for multi-agent trace data
+        try:
+            import json as json_module
+
+            agents_info_parsed = json_module.loads(agents_info)
+            agents_trace_data = agents_info_parsed.get("agents_trace_data", [])
+
+            if agents_trace_data and len(agents_trace_data) > 1:
+                # Multi-agent trace (soca-evaluator with 6 agents)
+                create_multi_agent_trace(
+                    trace_id=message_id,
+                    thread_id=request.thread_id,
+                    user_query=request.user_prompt,
+                    agents_data=agents_trace_data,
+                    revision="active",
+                    workflow=workflow,
+                )
+            else:
+                # Single agent trace (criteria-generator or fallback)
+                create_trace_from_chat(
+                    trace_id=message_id,
+                    thread_id=request.thread_id,
+                    user_query=request.user_prompt,
+                    agent_response=result,
+                    token_count=token_count,
+                    revision="active",
+                    workflow=workflow,
+                    system_prompt=agents_info,
+                    user_prompt=request.user_prompt,
+                    agent_name=agent_name,
+                )
+        except (json_module.JSONDecodeError, KeyError):
+            # Fallback to single agent trace
+            create_trace_from_chat(
+                trace_id=message_id,
+                thread_id=request.thread_id,
+                user_query=request.user_prompt,
+                agent_response=result,
+                token_count=token_count,
+                revision="active",
+                workflow=workflow,
+                system_prompt=agents_info,
+                user_prompt=request.user_prompt,
+                agent_name=agent_name,
+            )
 
         return ChatResponseModel(
             thread_id=request.thread_id,

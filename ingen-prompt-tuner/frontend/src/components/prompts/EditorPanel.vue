@@ -1,4 +1,8 @@
 <script setup lang="ts">
+  /**
+   * EditorPanel component for editing prompt content.
+   * Provides a code editor with save, discard, and export functionality.
+   */
   import { useEditorStore } from '@/stores/editor'
   import { useRevisionsStore } from '@/stores/revisions'
   import { promptsService } from '@/services/prompts.service'
@@ -8,6 +12,9 @@
   const editorStore = useEditorStore()
   const revisionsStore = useRevisionsStore()
 
+  /**
+   * Saves the current prompt content to the backend.
+   */
   async function handleSave() {
     if (editorStore.selectedPrompt && editorStore.modifiedContent) {
       await promptsService.update(
@@ -18,8 +25,31 @@
     }
   }
 
+  /**
+   * Handles content changes from the code editor.
+   * @param value - The new content value.
+   */
   function handleEditorChange(value: string) {
     editorStore.updateContent(value)
+  }
+
+  /**
+   * Exports the current prompt content as a downloadable file.
+   */
+  function handleExport() {
+    if (!editorStore.selectedPrompt) return
+
+    const content = editorStore.modifiedContent || ''
+    const filename = editorStore.selectedPrompt.filename
+    const blob = new Blob([content], { type: 'text/markdown' })
+    const url = URL.createObjectURL(blob)
+    const link = document.createElement('a')
+    link.href = url
+    link.download = filename
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+    URL.revokeObjectURL(url)
   }
 </script>
 
@@ -34,6 +64,7 @@
         <span class="text-xs text-taupe">Last modified 2 hours ago</span>
       </div>
       <div class="flex items-center gap-2">
+        <Button size="sm" variant="secondary" @click="handleExport"> Export </Button>
         <Button
           size="sm"
           variant="secondary"

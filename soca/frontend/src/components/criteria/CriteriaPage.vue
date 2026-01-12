@@ -1,4 +1,8 @@
 <script setup lang="ts">
+  /**
+   * CriteriaPage component for managing evaluation criteria sets.
+   * Displays user criteria sets and templates with CRUD functionality.
+   */
   import { onMounted, ref } from 'vue'
   import { useCriteriaStore } from '@/stores/criteria'
   import Button from '@/components/common/Button.vue'
@@ -18,6 +22,10 @@
     criteriaStore.fetchTemplates()
   })
 
+  /**
+   * Creates a new criteria set from a template.
+   * @param templateId - The template identifier to copy from.
+   */
   function handleUseTemplate(templateId: string) {
     const name = prompt('Enter a name for the new criteria set:')
     if (name) {
@@ -25,26 +33,44 @@
     }
   }
 
+  /**
+   * Opens the builder modal to edit a criteria set.
+   * @param criteriaSet - The criteria set to edit.
+   */
   function handleEdit(criteriaSet: CriteriaSet) {
     editingCriteriaSet.value = criteriaSet
     showBuilder.value = true
   }
 
+  /**
+   * Deletes a criteria set after confirmation.
+   * @param id - The criteria set identifier to delete.
+   */
   function handleDelete(id: string) {
     if (confirm('Are you sure you want to delete this criteria set?')) {
       criteriaStore.deleteCriteriaSet(id)
     }
   }
 
+  /**
+   * Closes the builder modal and clears the editing state.
+   */
   function handleCloseBuilder() {
     showBuilder.value = false
     editingCriteriaSet.value = null
   }
 
+  /**
+   * Closes the generator modal.
+   */
   function handleGeneratorClose() {
     showGenerator.value = false
   }
 
+  /**
+   * Handles successful criteria generation by opening the result for editing.
+   * @param criteriaSetId - The generated criteria set identifier.
+   */
   function handleGenerated(criteriaSetId: string) {
     showGenerator.value = false
     // Optionally open the criteria set for editing

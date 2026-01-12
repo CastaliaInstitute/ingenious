@@ -1,4 +1,8 @@
 <script setup lang="ts">
+  /**
+   * SubmissionsPage component for managing document submissions.
+   * Provides upload, listing, editing, and deletion functionality.
+   */
   import { onMounted, ref, computed } from 'vue'
   import { useSubmissionsStore } from '@/stores/submissions'
   import Spinner from '@/components/common/Spinner.vue'
@@ -30,12 +34,20 @@
     submissionsStore.fetchSubmissions()
   })
 
+  /**
+   * Handles file selection and uploads each file.
+   * @param files - Array of files to upload.
+   */
   async function handleFilesSelected(files: File[]) {
     for (const file of files) {
       await submissionsStore.uploadSubmission(file, file.name)
     }
   }
 
+  /**
+   * Toggles selection of a submission for viewing details.
+   * @param submission - The submission to select or deselect.
+   */
   function selectSubmission(submission: Submission) {
     if (selectedSubmission.value?.id === submission.id) {
       selectedSubmission.value = null
@@ -45,6 +57,9 @@
     }
   }
 
+  /**
+   * Enters edit mode for the selected submission.
+   */
   function startEdit() {
     if (selectedSubmission.value) {
       editName.value = selectedSubmission.value.name
@@ -53,10 +68,16 @@
     }
   }
 
+  /**
+   * Cancels the current edit operation.
+   */
   function cancelEdit() {
     isEditing.value = false
   }
 
+  /**
+   * Saves the edited submission metadata.
+   */
   async function saveEdit() {
     if (selectedSubmission.value && editName.value.trim()) {
       await submissionsStore.updateSubmission(selectedSubmission.value.id, {
@@ -72,25 +93,45 @@
     }
   }
 
+  /**
+   * Formats file size in bytes to a human-readable string.
+   * @param bytes - The file size in bytes.
+   * @returns Formatted size string.
+   */
   function formatFileSize(bytes: number): string {
     if (bytes < 1024) return `${bytes} B`
     if (bytes < 1024 * 1024) return `${(bytes / 1024).toFixed(1)} KB`
     return `${(bytes / (1024 * 1024)).toFixed(1)} MB`
   }
 
+  /**
+   * Formats a date string to a human-readable format.
+   * @param dateString - The ISO date string to format.
+   * @returns Formatted date string.
+   */
   function formatDate(dateString: string): string {
     return new Date(dateString).toLocaleDateString('en-US', {
       month: 'short',
       day: 'numeric',
       year: 'numeric',
+      hour: 'numeric',
+      minute: '2-digit',
+      hour12: true,
     })
   }
 
+  /**
+   * Opens the delete confirmation dialog for a submission.
+   * @param submission - The submission to delete.
+   */
   function handleDeleteClick(submission: Submission) {
     submissionToDelete.value = submission
     deleteDialogOpen.value = true
   }
 
+  /**
+   * Confirms and executes the submission deletion.
+   */
   async function confirmDelete() {
     if (submissionToDelete.value) {
       if (selectedSubmission.value?.id === submissionToDelete.value.id) {
@@ -106,6 +147,9 @@
     submissionToDelete.value = null
   }
 
+  /**
+   * Cancels the delete operation and closes the dialog.
+   */
   function cancelDelete() {
     deleteDialogOpen.value = false
     submissionToDelete.value = null

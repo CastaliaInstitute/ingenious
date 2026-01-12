@@ -84,6 +84,19 @@ class UpdatePromptRequest(BaseModel):
     content: str
 
 
+class CreateRevisionRequest(BaseModel):
+    """Create revision request."""
+
+    name: str = Field(description="Name for the new revision")
+    copy_from: Optional[str] = Field(
+        default=None,
+        description="Optional: revision to copy prompts from",
+        alias="copyFrom",
+    )
+
+    model_config = {"populate_by_name": True}
+
+
 class ChatRequest(BaseModel):
     """Chat request for AI agent invocation."""
 
@@ -103,6 +116,22 @@ class ChatResponseModel(BaseModel):
     memory_summary: Optional[str] = None
 
 
+class AgentContribution(BaseModel):
+    """Tracks an individual agent's contribution to the evaluation."""
+
+    agent_name: str = Field(description="Name of the agent")
+    phase: int = Field(description="Pipeline phase (1-4)")
+    input_summary: str = Field(description="Summary of input received")
+    output_summary: str = Field(description="Summary of output produced")
+    token_count: int = Field(description="Tokens used by this agent")
+    execution_time_ms: int = Field(default=0, description="Execution time in milliseconds")
+
+
+# =============================================================================
+# EVALUATION RESULT SCHEMAS
+# =============================================================================
+
+
 # Structured output models for AI evaluation (enforced JSON schema)
 class CriterionResultSchema(BaseModel):
     """Individual criterion evaluation result with enforced schema."""
@@ -120,6 +149,16 @@ class EvaluationResponseSchema(BaseModel):
     )
     overallScore: float = Field(description="Weighted average score from 0-100")
     summary: str = Field(description="A 2-3 sentence summary of the overall evaluation")
+    nextSteps: list[str] = Field(
+        default_factory=list,
+        description="Actionable improvement recommendations from the evaluation",
+    )
+    agentContributions: list[AgentContribution] = Field(
+        default_factory=list, description="Details of each agent's contribution to the evaluation"
+    )
+    validationStatus: str = Field(
+        default="passed", description="Sanity check validation status: passed or flagged"
+    )
 
 
 # Structured output models for criteria generation

@@ -43,6 +43,7 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
         self._create_containers()
 
     def _create_database(self, database_id: str) -> None:
+        """Create or connect to the Cosmos DB database based on authentication method."""
         authentication_method = getattr(self.config.cosmos_service, "authentication_method", None)
 
         if authentication_method == AuthenticationMethod.TOKEN:
@@ -51,6 +52,7 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
             self.database = self.client.get_database_client(database_id)
 
     def _create_containers(self) -> None:
+        """Create or connect to Cosmos DB containers for chat history storage."""
         authentication_method = getattr(self.config.cosmos_service, "authentication_method", None)
 
         # Initialize containers based on authentication method
@@ -74,6 +76,7 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
 
     # Utility mappers
     def _message_to_doc(self, m: Message) -> Dict[str, Any]:
+        """Convert a Message object to a Cosmos DB document dictionary."""
         return {
             "id": m.message_id or str(uuid.uuid4()),
             "user_id": m.user_id,
@@ -90,6 +93,7 @@ class cosmos_ChatHistoryRepository(IChatHistoryRepository):
         }
 
     def _doc_to_message(self, d: Dict[str, Any]) -> Message:
+        """Convert a Cosmos DB document dictionary to a Message object."""
         from datetime import datetime
 
         ts_val = d.get("timestamp")

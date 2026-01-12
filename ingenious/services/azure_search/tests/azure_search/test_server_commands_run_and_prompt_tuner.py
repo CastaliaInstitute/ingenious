@@ -43,7 +43,7 @@ def make_app_and_register(console: Console | MagicMock | None = None) -> typer.T
     return app
 
 
-def stub_config(ip: str = "0.0.0.0", port: int = 80) -> SimpleNamespace:
+def stub_config(ip: str = "0.0.0.0", port: int = 80) -> SimpleNamespace:  # nosec B104 - test fixture
     """Create a minimal stub for the application configuration.
 
     This function returns a SimpleNamespace object that mimics the structure
@@ -78,7 +78,7 @@ def test_serve_uses_WEB_PORT_env_when_set(monkeypatch: MonkeyPatch) -> None:
         make_app_mock.assert_called_once_with(get_cfg.return_value)
         kwargs: dict[str, Any]
         _, kwargs = uv_run.call_args
-        assert kwargs["host"] == "0.0.0.0"
+        assert kwargs["host"] == "0.0.0.0"  # nosec B104 - test assertion
         assert kwargs["port"] == 1234
         # Env side‑effect enforced by command
         assert os.environ.get("LOADENV") == "False"

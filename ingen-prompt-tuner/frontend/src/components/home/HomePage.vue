@@ -1,7 +1,10 @@
 <script setup lang="ts">
+  /**
+   * HomePage component displaying the main dashboard.
+   * Shows statistics, workflow visualization, and recent activity.
+   */
   import { ref, onMounted, computed } from 'vue'
   import { useUIStore } from '@/stores/ui'
-  import { useRevisionsStore } from '@/stores/revisions'
   import { tracesService } from '@/services/traces.service'
   import api from '@/services/api'
   import StatCard from '@/components/common/StatCard.vue'
@@ -9,7 +12,6 @@
   import type { ConversationTrace } from '@/types'
 
   const uiStore = useUIStore()
-  const revisionsStore = useRevisionsStore()
 
   const stats = ref({
     revisions: 0,
@@ -32,6 +34,11 @@
     })
   })
 
+  /**
+   * Converts a date to a human-readable relative time string.
+   * @param date - The date to convert.
+   * @returns A string like "Just now", "5 min ago", or "2 days ago".
+   */
   function getTimeAgo(date: Date): string {
     const now = new Date()
     const diffMs = now.getTime() - date.getTime()

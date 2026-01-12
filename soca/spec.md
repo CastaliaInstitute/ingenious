@@ -341,17 +341,23 @@ INGEN_PROMPT_TUNER_API_KEY=<shared-api-key>
 - [ ] Create button saves evaluation in Draft status
 - [ ] Cancel closes modal without saving
 
-### US-4.3: Run Evaluation
+### US-4.3: Run Multi-Agent Evaluation
 **As a** user
-**I want to** run an evaluation
-**So that** the AI can score my submissions
+**I want to** run an evaluation using a 6-agent AI pipeline
+**So that** my submissions receive thorough, multi-perspective scoring with validation
 
 **Acceptance Criteria:**
 - [ ] "Run" button visible on Draft evaluations
 - [ ] Clicking Run changes status to "Running"
 - [ ] Progress indicator shows during processing
-- [ ] **CRITICAL**: Backend calls Ingenious API for each submission
-- [ ] Each submission evaluated against all criteria
+- [ ] **CRITICAL**: Backend calls 6-agent pipeline via Ingen Prompt Tuner API
+- [ ] **Phase 1 (Parallel):**
+  - [ ] **Submission Evaluator**: Analyzes submission content, extracts key claims and evidence
+  - [ ] **Criteria Evaluator**: Parses and interprets evaluation criteria with scoring rubrics
+  - [ ] **Next Steps Agent**: Identifies improvement areas and recommendations
+- [ ] **Phase 2:** **Scoring Agent**: Combines all Phase 1 outputs, scores each criterion
+- [ ] **Phase 3:** **Summarizer Agent**: Creates executive summary and key findings
+- [ ] **Phase 4:** **Sanity Check Agent**: Validates scores, checks consistency, flags issues
 - [ ] AI generates score (1-5 or 1-10) per criterion
 - [ ] AI generates narrative justification per criterion
 - [ ] AI generates overall summary per submission
@@ -359,17 +365,46 @@ INGEN_PROMPT_TUNER_API_KEY=<shared-api-key>
 - [ ] Status changes to "Completed" when done
 - [ ] Status changes to "Failed" if Ingenious API errors
 
-### US-4.3.1: Configurable Evaluation Prompts
+**Multi-Agent Flow Diagram:**
+```
+Submissions ──► Submission Evaluator ──┐
+                                       │
+                                       ▼
+                                ┌─────────────┐
+Criteria ────► Criteria Evaluator │   Scoring   │──► Summarizer ──► Sanity Check
+                                └─────────────┘
+                                       ▲
+               Next Steps Agent ───────┘
+```
+
+### US-4.3.1: Configurable Multi-Agent Prompts
 **As a** administrator
-**I want to** customize the AI evaluation prompt via Prompt Tuner
-**So that** I can fine-tune how submissions are evaluated without code changes
+**I want to** customize each agent's prompts via Prompt Tuner
+**So that** I can fine-tune how each agent processes submissions
 
 **Acceptance Criteria:**
-- [ ] SoCa fetches user prompt template from Prompt Tuner API
-- [ ] Template uses Jinja2 variables: `submission_name`, `submission_content`, `criteria_text`
-- [ ] Template can be edited in Prompt Tuner UI
-- [ ] Falls back to default template if Prompt Tuner unavailable
+- [ ] SoCa delegates all AI orchestration to Prompt Tuner backend
+- [ ] 6 agents with configurable system/user prompt pairs:
+  - `submission_evaluator_system.md` / `submission_evaluator_user.md`
+  - `criteria_evaluator_system.md` / `criteria_evaluator_user.md`
+  - `next_steps_system.md` / `next_steps_user.md`
+  - `scoring_agent_system.md` / `scoring_agent_user.md`
+  - `summarizer_agent_system.md` / `summarizer_agent_user.md`
+  - `sanity_check_system.md` / `sanity_check_user.md`
+- [ ] All prompts editable in Prompt Tuner UI
 - [ ] Template changes take effect on next evaluation run
+
+### US-4.3.2: View Agent Contributions in Results
+**As a** user
+**I want to** see which agents contributed to an evaluation
+**So that** I can understand how the AI reached its conclusions
+
+**Acceptance Criteria:**
+- [ ] Results detail shows "Evaluated by 6 agents" indicator
+- [ ] Expandable "Agent Breakdown" section in results
+- [ ] Shows 4-phase pipeline: Analysis -> Scoring -> Summary -> Validation
+- [ ] Displays each agent's key output
+- [ ] Token usage breakdown per agent visible
 
 ### US-4.4: View Evaluation Results
 **As a** user
@@ -396,6 +431,62 @@ INGEN_PROMPT_TUNER_API_KEY=<shared-api-key>
 - [ ] Overall AI-generated summary at bottom
 - [ ] Only one result expanded at a time
 
+### US-4.5.1: Multi-Submission Evaluation Test Cases
+**As a** tester
+**I want to** verify evaluations work correctly with multiple submissions
+**So that** I can ensure the ranking and comparison features work as expected
+
+**Test Cases:**
+
+**TC-4.5.1-A: Create Evaluation with 3+ Submissions**
+- [x] Upload at least 3 distinct submission files with varying content quality
+- [x] Create a new evaluation selecting all 3+ submissions
+- [x] Select a criteria set with multiple weighted criteria
+- [x] Run the evaluation successfully
+- [x] Verify all submissions are evaluated and ranked
+
+**TC-4.5.1-B: Ranking Accuracy**
+- [x] Results should be sorted by overall score (highest first)
+- [x] Rank badges should show correct position (1, 2, 3, etc.)
+- [x] Submissions with similar scores should have distinct rankings
+- [x] Score distribution should reflect content quality differences
+
+**TC-4.5.1-C: Comparative Analysis**
+- [x] Each submission should have individual criterion scores
+- [x] AI narratives should reference submission-specific content
+- [x] Overall summaries should differentiate between submissions
+- [x] Export should include all submissions with complete data
+
+**TC-4.5.1-D: Large Batch Evaluation**
+- [x] System should handle evaluation of 5+ submissions
+- [x] Progress indicator should update during batch processing
+- [x] All submissions should complete without timeout
+- [x] Results should be consistent across multiple runs
+
+**TC-4.5.1-E: PDF Document Submission**
+- [x] Upload a PDF file as submission
+- [x] PDF text content is extracted correctly
+- [x] AI evaluation references PDF content appropriately
+- [x] Results include meaningful scores and narratives
+
+**TC-4.5.1-F: DOCX Document Submission**
+- [x] Upload a DOCX file as submission
+- [x] DOCX text content is extracted correctly
+- [x] AI evaluation references DOCX content appropriately
+- [x] Results include meaningful scores and narratives
+
+### US-4.5.2: Agent Pipeline Validation
+**As a** user
+**I want to** see that my evaluation has been validated by the Sanity Check Agent
+**So that** I can trust the scores are consistent and complete
+
+**Acceptance Criteria:**
+- [ ] Sanity Check Agent validates score consistency
+- [ ] Flags any scores that seem inconsistent with narratives
+- [ ] Ensures all criteria are scored
+- [ ] Validates that summary accurately reflects the scores
+- [ ] Shows validation status (passed/flagged) in results
+
 ### US-4.6: Delete Evaluation
 **As a** user
 **I want to** delete an evaluation
@@ -406,6 +497,18 @@ INGEN_PROMPT_TUNER_API_KEY=<shared-api-key>
 - [ ] Confirmation dialog required
 - [ ] Cannot delete running evaluations
 - [ ] Successful deletion removes from list
+
+### US-4.7: Delete Evaluation Traces
+**As a** system
+**I want to** delete associated traces when an evaluation is deleted
+**So that** Prompt Tuner does not accumulate orphaned trace data
+
+**Acceptance Criteria:**
+- [ ] When SoCa deletes an evaluation, it calls Prompt Tuner API to delete traces
+- [ ] Traces are identified by thread_id matching the evaluation ID
+- [ ] Prompt Tuner provides DELETE /api/traces/{thread_id} endpoint
+- [ ] Failure to delete traces does not block evaluation deletion (graceful degradation)
+- [ ] Successful trace deletion logged for audit purposes
 
 ---
 
@@ -512,6 +615,17 @@ INGEN_PROMPT_TUNER_API_KEY=<shared-api-key>
 - [ ] Uploads show in list immediately (with loading state)
 - [ ] Deletes remove from list immediately
 - [ ] Errors revert optimistic changes
+
+### US-7.3: Timestamp Display Format
+**As a** user
+**I want to** see timestamps with time (x:xx AM/PM) in addition to dates
+**So that** I can understand exactly when events occurred
+
+**Acceptance Criteria:**
+- [x] Evaluation list shows date and time (e.g., "Jan 12, 2026 3:45 PM")
+- [x] Submission list shows date and time
+- [x] Relative times ("Just now", "2 min ago") still used for recent items
+- [x] Consistent format across all timestamp displays
 
 ---
 

@@ -1,5 +1,7 @@
 import pluginVue from 'eslint-plugin-vue'
 import tseslint from 'typescript-eslint'
+import jsdoc from 'eslint-plugin-jsdoc'
+import security from 'eslint-plugin-security'
 
 export default [
   // Ignore patterns
@@ -10,6 +12,10 @@ export default [
   ...tseslint.configs.recommended,
   // Vue config
   ...pluginVue.configs['flat/recommended'],
+  // JSDoc config for TypeScript
+  jsdoc.configs['flat/recommended-typescript'],
+  // Security config
+  security.configs.recommended,
   // Custom rules
   {
     files: ['**/*.vue', '**/*.ts'],
@@ -17,6 +23,9 @@ export default [
       parserOptions: {
         parser: tseslint.parser,
       },
+    },
+    plugins: {
+      jsdoc,
     },
     rules: {
       // Vue specific
@@ -31,6 +40,24 @@ export default [
 
       // General
       'no-console': ['warn', { allow: ['warn', 'error'] }],
+
+      // JSDoc rules
+      'jsdoc/require-jsdoc': ['warn', {
+        require: {
+          FunctionDeclaration: true,
+          MethodDefinition: true,
+          ClassDeclaration: true,
+          ArrowFunctionExpression: false,
+          FunctionExpression: false,
+        },
+        contexts: [
+          'ExportNamedDeclaration > FunctionDeclaration',
+          'ExportDefaultDeclaration > FunctionDeclaration',
+        ],
+      }],
+      'jsdoc/require-description': 'warn',
+      'jsdoc/require-param-description': 'warn',
+      'jsdoc/require-returns-description': 'warn',
     },
   },
 ]

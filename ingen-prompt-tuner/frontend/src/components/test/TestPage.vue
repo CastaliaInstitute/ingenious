@@ -1,4 +1,8 @@
 <script setup lang="ts">
+  /**
+   * TestPage component for viewing conversation traces.
+   * Displays a paginated list of trace records for the selected revision.
+   */
   import { ref, computed, onMounted, watch } from 'vue'
   import { useRevisionsStore } from '@/stores/revisions'
   import { useTracesStore } from '@/stores/traces'
@@ -44,6 +48,10 @@
     }
   })
 
+  /**
+   * Handles revision dropdown selection changes.
+   * @param event - The change event from the select element.
+   */
   function handleRevisionChange(event: Event) {
     const target = event.target as HTMLSelectElement
     revisionsStore.setActiveRevision(target.value)

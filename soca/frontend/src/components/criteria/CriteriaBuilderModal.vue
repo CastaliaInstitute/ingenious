@@ -1,4 +1,8 @@
 <script setup lang="ts">
+  /**
+   * CriteriaBuilderModal component for creating and editing criteria sets.
+   * Provides a form interface for defining evaluation criteria.
+   */
   import { ref, computed, onMounted } from 'vue'
   import { useCriteriaStore } from '@/stores/criteria'
   import Button from '@/components/common/Button.vue'
@@ -38,16 +42,26 @@
 
   const totalWeight = computed(() => criteria.value.reduce((sum, c) => sum + c.weight, 0))
 
+  /**
+   * Adds a new criterion to the criteria list with default values.
+   */
   function addCriterion() {
     criteria.value.push({ name: '', description: '', weight: 0, maxScore: 5 })
   }
 
+  /**
+   * Removes a criterion from the list at the specified index.
+   * @param index - The index of the criterion to remove.
+   */
   function removeCriterion(index: number) {
     if (criteria.value.length > 1) {
       criteria.value.splice(index, 1)
     }
   }
 
+  /**
+   * Validates and saves the criteria set.
+   */
   async function handleSave() {
     if (!name.value) {
       error.value = 'Please enter a name'

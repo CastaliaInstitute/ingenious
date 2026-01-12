@@ -23,6 +23,7 @@ class APIError(IngeniousError):
         super().__init__(message, **kwargs)
 
     def _generate_user_message(self) -> str:
+        """Generate a user-friendly error message for API errors."""
         return "An API error occurred. Please check your request."
 
 
@@ -93,4 +94,5 @@ class RateLimitError(APIError):
         super().__init__(message, **kwargs)
 
     def _generate_user_message(self) -> str:
+        """Generate a user-friendly error message for rate limit errors."""
         return "Rate limit exceeded. Please try again later."

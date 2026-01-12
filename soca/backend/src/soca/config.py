@@ -8,7 +8,7 @@ class Settings(BaseSettings):
 
     # Server
     port: int = 8001
-    host: str = "0.0.0.0"
+    host: str = "0.0.0.0"  # nosec B104 - intentional for container deployments
 
     # Authentication
     auth_enabled: bool = True

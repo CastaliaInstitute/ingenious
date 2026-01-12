@@ -1,4 +1,8 @@
 <script setup lang="ts">
+  /**
+   * JsonViewer component for displaying formatted JSON content.
+   * Supports collapsible sections and clipboard copy functionality.
+   */
   import { computed, ref } from 'vue'
 
   const props = defineProps<{
@@ -14,15 +18,183 @@
     data: unknown
   }
 
-  const parsedContent = computed<ParsedJson>(() => {
+  const INVALID_JSON: ParsedJson = { valid: false, data: null }
+
+  /**
+   * Attempts to parse a JSON string.
+   * @param text - The JSON string to parse.
+   * @returns The parsed JSON data, or null if parsing fails.
+   */
+  function tryParseJson(text: string): unknown | null {
     try {
-      const data = JSON.parse(props.content)
-      return { valid: true, data }
+      return JSON.parse(text)
     } catch {
-      return { valid: false, data: null }
+      return null
     }
+  }
+
+  /**
+   * Unwraps double-stringified JSON if the data is a string containing valid JSON.
+   * @param data - The data to potentially unwrap.
+   * @returns The unwrapped JSON object, or the original data if not double-stringified.
+   */
+  function unwrapDoubleStringified(data: unknown): unknown {
+    if (typeof data !== 'string') {
+      return data
+    }
+    const innerData = tryParseJson(data)
+    if (typeof innerData === 'object' && innerData !== null) {
+      return innerData
+    }
+    return data
+  }
+
+  /**
+   * Attempts direct JSON parse with double-stringify handling.
+   * @param content - The content string to parse.
+   * @returns A ParsedJson object if successful, or null if parsing fails.
+   */
+  function tryDirectParse(content: string): ParsedJson | null {
+    const data = tryParseJson(content)
+    if (data === null) {
+      return null
+    }
+    return { valid: true, data: unwrapDoubleStringified(data) }
+  }
+
+  /**
+   * Attempts to extract and parse JSON from within text that may contain non-JSON prefix.
+   * @param content - The text content that may contain embedded JSON.
+   * @returns A ParsedJson object if JSON is found and parsed, or null otherwise.
+   */
+  function tryExtractFromText(content: string): ParsedJson | null {
+    const jsonStartIndex = findJsonStart(content)
+    if (jsonStartIndex < 0) {
+      return null
+    }
+
+    const potentialJson = content.substring(jsonStartIndex)
+
+    // Try parsing from start index
+    const directResult = tryParseJson(potentialJson)
+    if (directResult !== null) {
+      return { valid: true, data: directResult }
+    }
+
+    // Try to find matching bracket and parse
+    const extracted = extractJsonSubstring(potentialJson)
+    if (!extracted) {
+      return null
+    }
+
+    const extractedResult = tryParseJson(extracted)
+    if (extractedResult !== null) {
+      return { valid: true, data: extractedResult }
+    }
+
+    return null
+  }
+
+  const parsedContent = computed<ParsedJson>(() => {
+    const content = props.content?.trim() || ''
+    if (!content) {
+      return INVALID_JSON
+    }
+
+    return tryDirectParse(content) ?? tryExtractFromText(content) ?? INVALID_JSON
   })
 
+  /**
+   * Finds the starting index of JSON content in a string.
+   * @param text - The text to search in.
+   * @returns The index of the first JSON-like character, or -1 if not found.
+   */
+  function findJsonStart(text: string): number {
+    const objectStart = text.indexOf('{')
+    const arrayStart = text.indexOf('[')
+    if (objectStart === -1) return arrayStart
+    if (arrayStart === -1) return objectStart
+    return Math.min(objectStart, arrayStart)
+  }
+
+  interface ParserState {
+    depth: number
+    inString: boolean
+    escapeNext: boolean
+  }
+
+  /**
+   * Processes a single character and updates the parser state for bracket matching.
+   * @param char - The character to process.
+   * @param index - The current index in the string.
+   * @param startChar - The opening bracket character.
+   * @param endChar - The closing bracket character.
+   * @param state - The current parser state tracking depth and string context.
+   * @returns The ending index if bracket matching is complete, -1 otherwise.
+   */
+  function processCharacter(
+    char: string,
+    index: number,
+    startChar: string,
+    endChar: string,
+    state: ParserState
+  ): number {
+    if (state.escapeNext) {
+      state.escapeNext = false
+      return -1
+    }
+
+    if (char === '\\' && state.inString) {
+      state.escapeNext = true
+      return -1
+    }
+
+    if (char === '"') {
+      state.inString = !state.inString
+      return -1
+    }
+
+    if (state.inString) {
+      return -1
+    }
+
+    if (char === startChar) {
+      state.depth++
+    } else if (char === endChar) {
+      state.depth--
+      if (state.depth === 0) {
+        return index
+      }
+    }
+
+    return -1
+  }
+
+  /**
+   * Extracts a valid JSON substring by matching brackets.
+   * @param text - The text starting with a JSON bracket.
+   * @returns The extracted JSON string, or null if extraction fails.
+   */
+  function extractJsonSubstring(text: string): string | null {
+    const startChar = text[0]
+    const endChar = startChar === '{' ? '}' : ']'
+    const state: ParserState = { depth: 0, inString: false, escapeNext: false }
+
+    for (let i = 0; i < text.length; i++) {
+      // eslint-disable-next-line security/detect-object-injection -- i is a numeric loop counter
+      const endIndex = processCharacter(text[i], i, startChar, endChar, state)
+      if (endIndex >= 0) {
+        return text.substring(0, endIndex + 1)
+      }
+    }
+
+    return null
+  }
+
+  /**
+   * Toggles the collapsed state of a JSON path.
+   * @param path - The JSON path to toggle.
+   */
   function toggleCollapse(path: string) {
     if (collapsedPaths.value.has(path)) {
       collapsedPaths.value.delete(path)
@@ -33,10 +205,9 @@
     collapsedPaths.value = new Set(collapsedPaths.value)
   }
 
-  function isCollapsed(path: string): boolean {
-    return collapsedPaths.value.has(path)
-  }
-
+  /**
+   * Copies the JSON content to the clipboard.
+   */
   async function copyToClipboard() {
     try {
       await navigator.clipboard.writeText(props.content)
@@ -49,28 +220,10 @@
     }
   }
 
-  function getType(value: unknown): string {
-    if (value === null) return 'null'
-    if (Array.isArray(value)) return 'array'
-    return typeof value
-  }
-
-  function formatValue(value: unknown): string {
-    if (value === null) return 'null'
-    if (typeof value === 'string') return `"${value}"`
-    return String(value)
-  }
-
-  function getPreview(value: unknown): string {
-    if (Array.isArray(value)) {
-      return `[${value.length} items]`
-    }
-    if (typeof value === 'object' && value !== null) {
-      const keys = Object.keys(value)
-      return `{${keys.length} keys}`
-    }
-    return formatValue(value)
-  }
+  const isTruncated = computed(() => {
+    const content = props.content?.trim() || ''
+    return content.endsWith('...')
+  })
 </script>
 
 <template>
@@ -80,7 +233,7 @@
       title="Copy to clipboard"
       @click="copyToClipboard"
     >
-      <template v-if="copied">Copied</template>
+      <template v-if="copied"> Copied </template>
       <template v-else>
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path
@@ -106,6 +259,9 @@
         />
       </template>
       <template v-else>
+        <div v-if="isTruncated" class="mb-2 text-amber-600 text-xs italic">
+          Content truncated - JSON formatting unavailable
+        </div>
         <pre class="whitespace-pre-wrap text-mine">{{ content }}</pre>
       </template>
     </div>

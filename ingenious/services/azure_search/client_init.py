@@ -47,13 +47,19 @@ class SearchConfigProtocol(Protocol):
     """Minimal interface for search configuration objects."""
 
     @property
-    def search_index_name(self) -> str: ...
+    def search_index_name(self) -> str:
+        """Name of the Azure Search index."""
+        ...
 
     @property
-    def search_endpoint(self) -> str: ...
+    def search_endpoint(self) -> str:
+        """Azure Search service endpoint URL."""
+        ...
 
     @property
-    def search_key(self) -> SecretStr: ...
+    def search_key(self) -> SecretStr:
+        """API key for Azure Search authentication."""
+        ...
 
 
 # ─────────────────────────────────────────────────────────────────────────────

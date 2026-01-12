@@ -48,13 +48,12 @@ class SQLiteDialect(Dialect):
             f'"{col}" = EXCLUDED."{col}"' for col in columns if col != conflict_column
         )
 
-        # nosec B608: table name validated by caller, parameters use ? placeholders
         return f"""
             INSERT INTO {table} ({columns_str})
             VALUES ({values_str})
             ON CONFLICT ("{conflict_column}") DO UPDATE
             SET {updates_str}
-        """
+        """  # nosec B608: table validated by caller, parameterized query
 
     def get_temp_table_syntax(self, table_name: str, select_query: str) -> str:
         """Generate SQLite temporary table creation syntax.
