@@ -260,9 +260,9 @@ def create_trace_from_chat(
             AgentTrace(
                 agent_name=agent_name,
                 order=1,
-                input=user_query[:1000] + "..." if len(user_query) > 1000 else user_query,
-                output=agent_response[:2000] + "..."
-                if len(agent_response) > 2000
+                input=user_query[:50000] + "..." if len(user_query) > 50000 else user_query,
+                output=agent_response[:50000] + "..."
+                if len(agent_response) > 50000
                 else agent_response,
                 token_usage=token_count,
                 system_prompt=truncated_system,
@@ -319,8 +319,8 @@ def create_multi_agent_trace(
             AgentTrace(
                 agent_name=agent_data.get("agent_name", "Unknown"),
                 order=agent_data.get("order", len(agents) + 1),
-                input=truncate(agent_data.get("input", ""), 1000),
-                output=truncate(agent_data.get("output", ""), 2000),
+                input=truncate(agent_data.get("input", ""), 50000),
+                output=truncate(agent_data.get("output", ""), 50000),
                 token_usage=token_usage,
                 system_prompt=truncate(agent_data.get("system_prompt", ""), 5000),
                 user_prompt=truncate(agent_data.get("user_prompt", ""), 5000),

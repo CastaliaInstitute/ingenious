@@ -159,6 +159,11 @@
     }
     return formatValue(value)
   }
+
+  const isTruncated = computed(() => {
+    const content = props.content?.trim() || ''
+    return content.endsWith('...')
+  })
 </script>
 
 <template>
@@ -194,6 +199,9 @@
         />
       </template>
       <template v-else>
+        <div v-if="isTruncated" class="mb-2 text-amber-600 text-xs italic">
+          Content truncated - JSON formatting unavailable
+        </div>
         <pre class="whitespace-pre-wrap text-mine">{{ content }}</pre>
       </template>
     </div>
