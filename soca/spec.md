@@ -396,6 +396,38 @@ INGEN_PROMPT_TUNER_API_KEY=<shared-api-key>
 - [ ] Overall AI-generated summary at bottom
 - [ ] Only one result expanded at a time
 
+### US-4.5.1: Multi-Submission Evaluation Test Cases
+**As a** tester
+**I want to** verify evaluations work correctly with multiple submissions
+**So that** I can ensure the ranking and comparison features work as expected
+
+**Test Cases:**
+
+**TC-4.5.1-A: Create Evaluation with 3+ Submissions**
+- [ ] Upload at least 3 distinct submission files with varying content quality
+- [ ] Create a new evaluation selecting all 3+ submissions
+- [ ] Select a criteria set with multiple weighted criteria
+- [ ] Run the evaluation successfully
+- [ ] Verify all submissions are evaluated and ranked
+
+**TC-4.5.1-B: Ranking Accuracy**
+- [ ] Results should be sorted by overall score (highest first)
+- [ ] Rank badges should show correct position (1, 2, 3, etc.)
+- [ ] Submissions with similar scores should have distinct rankings
+- [ ] Score distribution should reflect content quality differences
+
+**TC-4.5.1-C: Comparative Analysis**
+- [ ] Each submission should have individual criterion scores
+- [ ] AI narratives should reference submission-specific content
+- [ ] Overall summaries should differentiate between submissions
+- [ ] Export should include all submissions with complete data
+
+**TC-4.5.1-D: Large Batch Evaluation**
+- [ ] System should handle evaluation of 5+ submissions
+- [ ] Progress indicator should update during batch processing
+- [ ] All submissions should complete without timeout
+- [ ] Results should be consistent across multiple runs
+
 ### US-4.6: Delete Evaluation
 **As a** user
 **I want to** delete an evaluation
