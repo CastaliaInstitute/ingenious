@@ -18,7 +18,6 @@ from ingenious.config import IngeniousSettings
 # )
 from ingenious.core.structured_logging import get_logger
 from ingenious.db.base_sql import BaseSQLRepository
-from ingenious.db.chat_history_models import User
 from ingenious.db.connection_pool import ConnectionPool, SQLiteConnectionFactory
 from ingenious.db.query_builder import QueryBuilder, SQLiteDialect
 from ingenious.errors import (
@@ -125,18 +124,6 @@ class sqlite_ChatHistoryRepository(BaseSQLRepository):
     def _create_table(self) -> None:
         """Legacy method for backward compatibility. Tables are now created via base class."""
         pass
-
-    async def _get_user_by_id(self, user_id: str) -> User | None:
-        with self.pool.get_connection() as connection:
-            cursor = connection.cursor()
-            cursor.execute(
-                """SELECT id, identifier, metadata, createdAt FROM users WHERE id = ?""",
-                (user_id,),
-            )
-            row = cursor.fetchone()
-            if row:
-                return User(id=row[0], identifier=row[1], metadata=row[2], createdAt=row[3])
-            return None
 
     async def update_memory(self) -> None:
         """Update chat history summary to keep only the latest record per thread.

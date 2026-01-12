@@ -600,13 +600,3 @@ def get_criteria_generator_system_prompt(revision: str = "active") -> str:
     return CRITERIA_GENERATOR_SYSTEM_PROMPT
 
 
-def get_criteria_generator_user_prompt(revision: str = "active") -> str:
-    """Get the current criteria generator user prompt template.
-
-    This is a Jinja2 template that SoCa fetches and renders locally.
-    Variables: document_text
-    """
-    prompt = get_prompt(revision, "criteria_generator_user.md")
-    if prompt:
-        return prompt.content
-    return CRITERIA_GENERATOR_USER_PROMPT

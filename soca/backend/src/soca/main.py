@@ -9,7 +9,7 @@ from datetime import datetime
 from typing import Any, Optional
 
 import httpx
-from fastapi import BackgroundTasks, Depends, FastAPI, File, Form, HTTPException, UploadFile
+from fastapi import Depends, FastAPI, File, Form, HTTPException, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse
 
@@ -320,7 +320,6 @@ async def create_evaluation(
 @app.post("/api/evaluations/{evaluation_id}/run", response_model=Evaluation)
 async def run_evaluation_endpoint(
     evaluation_id: str,
-    background_tasks: BackgroundTasks,
     current_user: User = Depends(get_current_user),
 ) -> Evaluation:
     """Run an evaluation."""
@@ -328,7 +327,7 @@ async def run_evaluation_endpoint(
     if not evaluation:
         raise HTTPException(status_code=404, detail="Evaluation not found")
 
-    # Run evaluation (in demo mode, run synchronously for simplicity)
+    # Run evaluation synchronously
     result = await run_evaluation(evaluation_id)
     if not result:
         raise HTTPException(status_code=500, detail="Evaluation failed")
