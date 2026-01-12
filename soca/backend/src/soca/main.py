@@ -77,12 +77,19 @@ async def create_submission(
     content = await file.read()
     file_size = len(content)
 
-    # Extract text (simplified - in production, use PDF parser, etc.)
+    # Extract text using the comprehensive extraction function
     extracted_text = ""
-    if file.content_type == "text/plain":
-        extracted_text = content.decode("utf-8", errors="ignore")
-    elif file.content_type == "text/markdown":
-        extracted_text = content.decode("utf-8", errors="ignore")
+    try:
+        extracted_text = await extract_text_from_file(
+            content=content,
+            content_type=file.content_type or "application/octet-stream",
+            filename=file.filename or "file",
+        )
+    except ValueError as e:
+        # Log but don't fail - store empty text for unsupported types
+        import logging
+
+        logging.getLogger(__name__).warning(f"Text extraction failed: {e}")
 
     # For demo, store file URL as placeholder
     # In production, upload to Azure Blob Storage

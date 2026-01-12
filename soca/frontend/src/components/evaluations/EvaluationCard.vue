@@ -15,15 +15,26 @@
     const date = new Date(dateString)
     const now = new Date()
     const diff = now.getTime() - date.getTime()
+    const minutes = Math.floor(diff / (1000 * 60))
     const hours = Math.floor(diff / (1000 * 60 * 60))
     const days = Math.floor(hours / 24)
 
     if (days > 7) {
-      return date.toLocaleDateString()
+      // Show full date with time for older items
+      return date.toLocaleDateString('en-US', {
+        month: 'short',
+        day: 'numeric',
+        year: 'numeric',
+        hour: 'numeric',
+        minute: '2-digit',
+        hour12: true,
+      })
     } else if (days > 0) {
       return `${days} day${days > 1 ? 's' : ''} ago`
     } else if (hours > 0) {
       return `${hours} hour${hours > 1 ? 's' : ''} ago`
+    } else if (minutes > 0) {
+      return `${minutes} min${minutes > 1 ? 's' : ''} ago`
     } else {
       return 'Just now'
     }

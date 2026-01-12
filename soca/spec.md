@@ -423,10 +423,22 @@ INGEN_PROMPT_TUNER_API_KEY=<shared-api-key>
 - [x] Export should include all submissions with complete data
 
 **TC-4.5.1-D: Large Batch Evaluation**
-- [ ] System should handle evaluation of 5+ submissions
-- [ ] Progress indicator should update during batch processing
-- [ ] All submissions should complete without timeout
-- [ ] Results should be consistent across multiple runs
+- [x] System should handle evaluation of 5+ submissions
+- [x] Progress indicator should update during batch processing
+- [x] All submissions should complete without timeout
+- [x] Results should be consistent across multiple runs
+
+**TC-4.5.1-E: PDF Document Submission**
+- [x] Upload a PDF file as submission
+- [x] PDF text content is extracted correctly
+- [x] AI evaluation references PDF content appropriately
+- [x] Results include meaningful scores and narratives
+
+**TC-4.5.1-F: DOCX Document Submission**
+- [x] Upload a DOCX file as submission
+- [x] DOCX text content is extracted correctly
+- [x] AI evaluation references DOCX content appropriately
+- [x] Results include meaningful scores and narratives
 
 ### US-4.6: Delete Evaluation
 **As a** user
@@ -544,6 +556,17 @@ INGEN_PROMPT_TUNER_API_KEY=<shared-api-key>
 - [ ] Uploads show in list immediately (with loading state)
 - [ ] Deletes remove from list immediately
 - [ ] Errors revert optimistic changes
+
+### US-7.3: Timestamp Display Format
+**As a** user
+**I want to** see timestamps with time (x:xx AM/PM) in addition to dates
+**So that** I can understand exactly when events occurred
+
+**Acceptance Criteria:**
+- [x] Evaluation list shows date and time (e.g., "Jan 12, 2026 3:45 PM")
+- [x] Submission list shows date and time
+- [x] Relative times ("Just now", "2 min ago") still used for recent items
+- [x] Consistent format across all timestamp displays
 
 ---
 
