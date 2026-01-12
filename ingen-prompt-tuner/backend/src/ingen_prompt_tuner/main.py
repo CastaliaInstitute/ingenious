@@ -42,6 +42,7 @@ from ingen_prompt_tuner.prompts import (
 from ingen_prompt_tuner.traces import (
     create_multi_agent_trace,
     create_trace_from_chat,
+    delete_traces_by_thread_id,
     get_trace,
     get_traces,
 )
@@ -193,6 +194,19 @@ async def view_trace(
         raise HTTPException(status_code=404, detail="Trace not found")
     result: dict[str, Any] = trace.model_dump(by_alias=True)
     return result
+
+
+@app.delete("/api/traces/by-thread/{thread_id}")
+async def delete_traces_by_thread(
+    thread_id: str,
+) -> dict[str, Any]:
+    """Delete all traces associated with a thread_id.
+
+    This endpoint is called by SoCa when deleting an evaluation to clean up
+    associated trace data. No authentication required for internal service calls.
+    """
+    deleted_count = delete_traces_by_thread_id(thread_id)
+    return {"status": "deleted", "deleted_count": deleted_count, "thread_id": thread_id}
 
 
 # Stats endpoint

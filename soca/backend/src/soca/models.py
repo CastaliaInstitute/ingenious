@@ -72,6 +72,19 @@ class CriterionResult(BaseModel):
     model_config = {"populate_by_name": True}
 
 
+class AgentContribution(BaseModel):
+    """Tracks an individual agent's contribution to the evaluation."""
+
+    agent_name: str = Field(alias="agentName")
+    phase: int
+    input_summary: str = Field(alias="inputSummary")
+    output_summary: str = Field(alias="outputSummary")
+    token_count: int = Field(alias="tokenCount")
+    execution_time_ms: int = Field(default=0, alias="executionTimeMs")
+
+    model_config = {"populate_by_name": True}
+
+
 class EvaluationResult(BaseModel):
     """Evaluation result for a submission."""
 
@@ -81,6 +94,11 @@ class EvaluationResult(BaseModel):
     overall_score: float = Field(alias="overallScore")
     criterion_results: list[CriterionResult] = Field(alias="criterionResults")
     summary: str
+    next_steps: list[str] = Field(default_factory=list, alias="nextSteps")
+    agent_contributions: list[AgentContribution] = Field(
+        default_factory=list, alias="agentContributions"
+    )
+    validation_status: str = Field(default="passed", alias="validationStatus")
 
     model_config = {"populate_by_name": True}
 

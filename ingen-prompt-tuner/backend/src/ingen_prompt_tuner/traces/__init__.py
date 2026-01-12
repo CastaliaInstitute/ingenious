@@ -161,6 +161,49 @@ def get_trace(trace_id: str) -> Optional[ConversationTrace]:
         return None
 
 
+def delete_traces_by_thread_id(thread_id: str) -> int:
+    """Delete all traces matching a thread_id from Cosmos DB.
+
+    Args:
+        thread_id: The thread ID to match for deletion.
+
+    Returns:
+        Number of traces deleted.
+    """
+    container = _get_container()
+    if container is None:
+        logger.warning(f"Skipping trace deletion (no Cosmos DB): thread_id={thread_id}")
+        return 0
+
+    try:
+        # Find all traces with matching thread_id
+        query = "SELECT c.id, c.revision FROM c WHERE c.thread_id = @thread_id"
+        params: list[dict[str, object]] = [{"name": "@thread_id", "value": thread_id}]
+        items = list(
+            container.query_items(
+                query=query,
+                parameters=params,
+                enable_cross_partition_query=True,
+            )
+        )
+
+        deleted_count = 0
+        for item in items:
+            try:
+                container.delete_item(item["id"], partition_key=item["revision"])
+                deleted_count += 1
+                logger.info(f"Deleted trace: {item['id']}")
+            except exceptions.CosmosHttpResponseError as e:
+                logger.error(f"Failed to delete trace {item['id']}: {e}")
+
+        logger.info(f"Deleted {deleted_count} traces for thread_id={thread_id}")
+        return deleted_count
+
+    except exceptions.CosmosHttpResponseError as e:
+        logger.error(f"Failed to query traces for deletion: {e}")
+        return 0
+
+
 def _item_to_trace(item: dict[str, Any]) -> ConversationTrace:
     """Convert a Cosmos DB item to a ConversationTrace model."""
     return ConversationTrace(

@@ -3,7 +3,6 @@
 import asyncio
 import json
 import logging
-import uuid
 from datetime import datetime
 from typing import Any, Optional
 
@@ -12,6 +11,7 @@ import httpx
 from soca.config import settings
 from soca.db import db
 from soca.models import (
+    AgentContribution,
     CriteriaSet,
     CriterionResult,
     Evaluation,
@@ -19,7 +19,6 @@ from soca.models import (
     EvaluationStatus,
     Submission,
 )
-from soca.templates import get_user_prompt_template, render_template
 
 logger = logging.getLogger(__name__)
 
@@ -32,8 +31,14 @@ MAX_RETRY_DELAY = 30.0  # seconds
 async def _call_prompt_tuner_api(
     prompt_tuner_url: str,
     prompt: str,
+    thread_id: str,
 ) -> tuple[bool, dict[str, Any] | None, str]:
     """Call the Prompt Tuner API with error handling.
+
+    Args:
+        prompt_tuner_url: Base URL for Prompt Tuner API.
+        prompt: The evaluation prompt to send.
+        thread_id: Thread ID to associate traces (typically evaluation_id).
 
     Returns:
         Tuple of (success, data, error_message)
@@ -45,7 +50,7 @@ async def _call_prompt_tuner_api(
                 f"{prompt_tuner_url}/api/v1/chat",
                 json={
                     "user_prompt": prompt,
-                    "thread_id": str(uuid.uuid4()),
+                    "thread_id": thread_id,
                     "conversation_flow": "soca-evaluator",
                 },
                 timeout=120.0,
@@ -81,21 +86,32 @@ async def _call_prompt_tuner_api(
 async def evaluate_submission(
     submission: Submission,
     criteria_set: CriteriaSet,
+    evaluation_id: str,
 ) -> EvaluationResult:
     """Evaluate a single submission against criteria using AI via Prompt Tuner.
 
+    Uses the 6-agent pipeline:
+    - Phase 1 (Parallel): Submission Evaluator, Criteria Evaluator, Next Steps Agent
+    - Phase 2: Scoring Agent
+    - Phase 3: Summarizer Agent
+    - Phase 4: Sanity Check Agent
+
+    Args:
+        submission: The submission to evaluate.
+        criteria_set: The criteria set to evaluate against.
+        evaluation_id: The evaluation ID (used as thread_id for trace linking).
+
     Includes retry logic with exponential backoff for transient failures.
     """
-    # Build criteria text for template
+    # Build criteria text for the 6-agent pipeline
     criteria_text = "\n".join(
         f"- {c.id}: {c.name} (weight: {c.weight}%, max score: {c.max_score}): {c.description}"
         for c in criteria_set.criteria
     )
 
-    # Fetch and render user prompt template from Prompt Tuner
-    template_content = await get_user_prompt_template("soca_evaluator_user.md")
-    prompt = render_template(
-        template_content,
+    # Build structured input for the 6-agent pipeline
+    # The pipeline expects JSON with submission_name, submission_content, criteria_text
+    structured_input = json.dumps(
         {
             "submission_name": submission.name,
             "submission_content": (
@@ -104,7 +120,7 @@ async def evaluate_submission(
                 else "No content available"
             ),
             "criteria_text": criteria_text,
-        },
+        }
     )
 
     # Call Prompt Tuner API for AI evaluation with retries
@@ -123,7 +139,9 @@ async def evaluate_submission(
             # Exponential backoff with cap
             retry_delay = min(retry_delay * 2, MAX_RETRY_DELAY)
 
-        success, evaluation_data, error = await _call_prompt_tuner_api(prompt_tuner_url, prompt)
+        success, evaluation_data, error = await _call_prompt_tuner_api(
+            prompt_tuner_url, structured_input, evaluation_id
+        )
 
         if success and evaluation_data:
             # Map criterion results
@@ -160,7 +178,32 @@ async def evaluate_submission(
                         weighted_pct = (cr.score / criterion.max_score) * criterion.weight
                         overall_score += weighted_pct
 
-            logger.info(f"AI evaluation successful for submission {submission.id}")
+            # Parse agent contributions from the 6-agent pipeline response
+            agent_contributions = []
+            for ac in evaluation_data.get("agentContributions", []):
+                agent_contributions.append(
+                    AgentContribution(
+                        agent_name=ac.get("agent_name", ""),
+                        phase=ac.get("phase", 0),
+                        input_summary=ac.get("input_summary", ""),
+                        output_summary=ac.get("output_summary", ""),
+                        token_count=ac.get("token_count", 0),
+                        execution_time_ms=ac.get("execution_time_ms", 0),
+                    )
+                )
+
+            # Parse next steps recommendations
+            next_steps = evaluation_data.get("nextSteps", [])
+            if not isinstance(next_steps, list):
+                next_steps = []
+
+            # Get validation status from sanity check agent
+            validation_status = evaluation_data.get("validationStatus", "passed")
+
+            logger.info(
+                f"6-agent evaluation successful for submission {submission.id} "
+                f"(validation: {validation_status}, agents: {len(agent_contributions)})"
+            )
 
             return EvaluationResult(
                 submission_id=submission.id,
@@ -169,6 +212,9 @@ async def evaluate_submission(
                 overall_score=round(overall_score, 2),
                 criterion_results=criterion_results,
                 summary=evaluation_data.get("summary", "Evaluation completed."),
+                next_steps=next_steps,
+                agent_contributions=agent_contributions,
+                validation_status=validation_status,
             )
 
         last_error = error
@@ -196,6 +242,9 @@ async def evaluate_submission(
         overall_score=0,
         criterion_results=criterion_results,
         summary=f"AI evaluation failed after {MAX_RETRIES} retries. Last error: {last_error}",
+        next_steps=[],
+        agent_contributions=[],
+        validation_status="error",
     )
 
 
@@ -219,7 +268,7 @@ async def run_evaluation(evaluation_id: str) -> Optional[Evaluation]:
     for submission_id in evaluation.submission_ids:
         submission = await db.get_submission(submission_id)
         if submission:
-            result = await evaluate_submission(submission, criteria_set)
+            result = await evaluate_submission(submission, criteria_set, evaluation_id)
             results.append(result)
             evaluation.results = results
             await db.update_evaluation(evaluation)

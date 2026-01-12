@@ -3,10 +3,12 @@
 import csv
 import io
 import json
+import logging
 import uuid
 from datetime import datetime
 from typing import Any, Optional
 
+import httpx
 from fastapi import BackgroundTasks, Depends, FastAPI, File, Form, HTTPException, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse
@@ -28,6 +30,8 @@ from soca.models import (
     UpdateSubmissionRequest,
     User,
 )
+
+logger = logging.getLogger(__name__)
 
 app = FastAPI(title="SoCa API", version="0.1.0")
 
@@ -439,12 +443,34 @@ async def export_evaluation(
 async def delete_evaluation(
     evaluation_id: str,
     current_user: User = Depends(get_current_user),
-) -> dict[str, str]:
-    """Delete an evaluation."""
+) -> dict[str, Any]:
+    """Delete an evaluation and its associated traces in Prompt Tuner."""
     success = await db.delete_evaluation(evaluation_id)
     if not success:
         raise HTTPException(status_code=404, detail="Evaluation not found")
-    return {"status": "deleted"}
+
+    # Delete associated traces in Prompt Tuner (graceful degradation on failure)
+    traces_deleted = 0
+    prompt_tuner_url = settings.ingenious_api_url or "http://localhost:8002"
+    try:
+        async with httpx.AsyncClient() as client:
+            response = await client.delete(
+                f"{prompt_tuner_url}/api/traces/by-thread/{evaluation_id}",
+                timeout=10.0,
+            )
+            if response.status_code == 200:
+                data = response.json()
+                traces_deleted = data.get("deleted_count", 0)
+                logger.info(f"Deleted {traces_deleted} traces for evaluation {evaluation_id}")
+            else:
+                logger.warning(
+                    f"Failed to delete traces for evaluation {evaluation_id}: "
+                    f"status {response.status_code}"
+                )
+    except Exception as e:
+        logger.warning(f"Could not delete traces for evaluation {evaluation_id}: {e}")
+
+    return {"status": "deleted", "traces_deleted": traces_deleted}
 
 
 # Health check
