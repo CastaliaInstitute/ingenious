@@ -40,12 +40,4 @@ export interface ConversationTrace {
   totalTokens: number
 }
 
-export interface ActivityItem {
-  id: string
-  type: 'edit' | 'revision' | 'test'
-  title: string
-  subtitle: string
-  timestamp: string
-}
-
 export type TabName = 'home' | 'prompts' | 'test'
