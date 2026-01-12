@@ -230,3 +230,70 @@ def create_trace_from_chat(
 
     add_trace(trace)
     return trace
+
+
+def create_multi_agent_trace(
+    trace_id: str,
+    thread_id: str,
+    user_query: str,
+    agents_data: list[dict[str, Any]],
+    revision: str = "active",
+    workflow: str = "soca-evaluator",
+) -> ConversationTrace:
+    """Create and store a trace with multiple agent executions.
+
+    Args:
+        trace_id: Unique trace identifier
+        thread_id: Conversation thread ID
+        user_query: Original user query
+        agents_data: List of agent execution data, each containing:
+            - agent_name: Name of the agent
+            - order: Execution order (1-6)
+            - input: Input received by agent
+            - output: Output produced by agent
+            - token_usage: Tokens used
+            - system_prompt: System prompt used
+            - user_prompt: User prompt used
+        revision: Prompt revision used
+        workflow: Workflow name
+
+    Returns:
+        Created ConversationTrace
+    """
+    timestamp = datetime.now(timezone.utc).isoformat()
+
+    def truncate(text: str, max_len: int) -> str:
+        return text[:max_len] + "..." if len(text) > max_len else text
+
+    agents: list[AgentTrace] = []
+    total_tokens = 0
+
+    for agent_data in agents_data:
+        token_usage = agent_data.get("token_usage", 0)
+        total_tokens += token_usage
+
+        agents.append(
+            AgentTrace(
+                agent_name=agent_data.get("agent_name", "Unknown"),
+                order=agent_data.get("order", len(agents) + 1),
+                input=truncate(agent_data.get("input", ""), 1000),
+                output=truncate(agent_data.get("output", ""), 2000),
+                token_usage=token_usage,
+                system_prompt=truncate(agent_data.get("system_prompt", ""), 5000),
+                user_prompt=truncate(agent_data.get("user_prompt", ""), 5000),
+            )
+        )
+
+    trace = ConversationTrace(
+        trace_id=trace_id,
+        thread_id=thread_id,
+        workflow=workflow,
+        revision=revision,
+        user_query=truncate(user_query, 200),
+        timestamp=timestamp,
+        total_tokens=total_tokens,
+        agents=agents,
+    )
+
+    add_trace(trace)
+    return trace
