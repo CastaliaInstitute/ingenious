@@ -19,7 +19,6 @@ from ingenious.config import IngeniousSettings
 # )
 from ingenious.core.structured_logging import get_logger
 from ingenious.db.base_sql import BaseSQLRepository
-from ingenious.db.chat_history_models import User
 from ingenious.db.query_builder import AzureSQLDialect, QueryBuilder
 from ingenious.errors import (
     DatabaseQueryError,
@@ -140,19 +139,6 @@ class azuresql_ChatHistoryRepository(BaseSQLRepository):
         return self._execute_sql(sql, params, expect_results)
 
     # Removed empty _create_tables override - using base class implementation
-
-    async def _get_user_by_id(self, user_id: str) -> User | None:
-        cursor = self.connection.cursor()
-        cursor.execute(
-            """SELECT id, identifier, metadata, createdAt FROM users WHERE id = ?""",
-            (user_id,),
-        )
-        row = cursor.fetchone()
-        cursor.close()
-
-        if row:
-            return User(id=row[0], identifier=row[1], metadata=row[2], createdAt=row[3])
-        return None
 
     def _parse_json_field(self, value: Any, default: Any = None) -> Any:
         """Parse a JSON field, returning default if parsing fails.
