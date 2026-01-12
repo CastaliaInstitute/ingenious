@@ -1,5 +1,9 @@
 import axios from 'axios'
 
+/**
+ * Pre-configured Axios instance for API communication.
+ * Includes base URL configuration and JSON content type header.
+ */
 const api = axios.create({
   baseURL: import.meta.env.VITE_API_BASE_URL || '/api',
   headers: {

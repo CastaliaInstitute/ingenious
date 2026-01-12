@@ -1,4 +1,8 @@
 <script setup lang="ts">
+  /**
+   * WorkflowDag component for displaying workflow architecture diagrams.
+   * Uses Mermaid.js to render interactive DAG visualizations.
+   */
   import { ref, onMounted, watch, nextTick } from 'vue'
   import mermaid from 'mermaid'
 
@@ -107,6 +111,12 @@ flowchart LR
     class B processing
 `
 
+  /**
+   * Renders a Mermaid diagram into a container element.
+   * @param container - The HTML element to render the diagram into.
+   * @param diagram - The Mermaid diagram definition string.
+   * @param id - A unique identifier for the diagram.
+   */
   async function renderDiagram(container: HTMLElement | null, diagram: string, id: string) {
     if (!container) return
 

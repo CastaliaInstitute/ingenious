@@ -1,4 +1,8 @@
 <script setup lang="ts">
+  /**
+   * EvaluationResultsPage component for viewing evaluation results.
+   * Displays scores, statistics, and export functionality.
+   */
   import { computed, ref } from 'vue'
   import { useEvaluationsStore } from '@/stores/evaluations'
   import { useUIStore } from '@/stores/ui'
@@ -57,6 +61,10 @@
     return `${minutes}m ${remainingSeconds}s`
   })
 
+  /**
+   * Exports evaluation results in the specified format.
+   * @param format - The export format (json or csv).
+   */
   async function exportResults(format: 'json' | 'csv') {
     if (!evaluation.value) return
 

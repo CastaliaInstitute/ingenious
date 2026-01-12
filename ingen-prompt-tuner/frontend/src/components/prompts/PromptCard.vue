@@ -1,4 +1,8 @@
 <script setup lang="ts">
+  /**
+   * PromptCard component for displaying a prompt file summary.
+   * Shows filename, description, size, and tags in a clickable card.
+   */
   import type { Prompt } from '@/types'
 
   defineProps<{
@@ -10,6 +14,11 @@
     click: []
   }>()
 
+  /**
+   * Formats file size in bytes to a human-readable string.
+   * @param bytes - The file size in bytes.
+   * @returns Formatted size string (e.g., "1.5 KB").
+   */
   function formatSize(bytes: number): string {
     if (bytes < 1024) return `${bytes} B`
     return `${(bytes / 1024).toFixed(1)} KB`

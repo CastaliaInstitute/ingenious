@@ -1,4 +1,8 @@
 <script setup lang="ts">
+  /**
+   * ResultCard component for displaying an evaluation result.
+   * Shows submission score, rank, and detailed criterion scores.
+   */
   import type { EvaluationResult, Criterion } from '@/types'
 
   const props = defineProps<{
@@ -12,12 +16,22 @@
     toggle: []
   }>()
 
+  /**
+   * Returns the appropriate color class for a score value.
+   * @param score - The score value (0-100).
+   * @returns CSS color class string.
+   */
   function getScoreColor(score: number): string {
     if (score >= 80) return 'text-green-600'
     if (score >= 60) return 'text-amber-600'
     return 'text-orange-600'
   }
 
+  /**
+   * Returns badge styling for a rank position.
+   * @param rank - The rank position (1-based).
+   * @returns Object with bg and text CSS classes.
+   */
   function getRankBadge(rank: number): { bg: string; text: string } {
     if (rank === 1) return { bg: 'bg-yellow-100', text: 'text-yellow-700' }
     if (rank === 2) return { bg: 'bg-gray-200', text: 'text-gray-700' }
@@ -25,6 +39,11 @@
     return { bg: 'bg-gray-100', text: 'text-gray-600' }
   }
 
+  /**
+   * Retrieves the human-readable name for a criterion.
+   * @param criterionId - The criterion identifier.
+   * @returns The criterion name or the ID if not found.
+   */
   function getCriterionName(criterionId: string): string {
     const criterion = props.criteria.find((c) => c.id === criterionId)
     return criterion?.name || criterionId

@@ -1,4 +1,8 @@
 <script setup lang="ts">
+  /**
+   * AppHeader component for the main application header.
+   * Contains navigation tabs and user authentication controls.
+   */
   import { useAuthStore } from '@/stores/auth'
   import { useUIStore } from '@/stores/ui'
   import type { TabName } from '@/types'
@@ -12,10 +16,17 @@
     { name: 'criteria', label: 'Criteria' },
   ]
 
+  /**
+   * Handles navigation tab click events.
+   * @param tab - The tab name to navigate to.
+   */
   function handleTabClick(tab: TabName) {
     uiStore.setActiveTab(tab)
   }
 
+  /**
+   * Navigates to the evaluations tab when branding is clicked.
+   */
   function handleBrandingClick() {
     uiStore.setActiveTab('evaluations')
   }

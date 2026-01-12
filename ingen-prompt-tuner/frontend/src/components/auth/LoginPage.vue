@@ -1,4 +1,8 @@
 <script setup lang="ts">
+  /**
+   * LoginPage component for user authentication.
+   * Displays a login form with email and password fields.
+   */
   import { ref, computed } from 'vue'
   import { useAuthStore } from '@/stores/auth'
 
@@ -11,6 +15,10 @@
 
   const isFormValid = computed(() => email.value.trim() !== '' && password.value !== '')
 
+  /**
+   * Handles the login form submission.
+   * Authenticates the user with provided credentials.
+   */
   async function handleLogin() {
     error.value = ''
     loading.value = true

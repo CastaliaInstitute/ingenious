@@ -1,4 +1,8 @@
 <script setup lang="ts">
+  /**
+   * EvaluationsPage component for managing evaluations.
+   * Displays statistics, evaluation list, and creation interface.
+   */
   import { computed, onMounted, ref } from 'vue'
   import { useEvaluationsStore } from '@/stores/evaluations'
   import { useUIStore } from '@/stores/ui'
@@ -31,19 +35,33 @@
     evaluationsStore.fetchEvaluations()
   })
 
+  /**
+   * Navigates to view the results of an evaluation.
+   * @param evaluation - The evaluation to view.
+   */
   function handleEvaluationClick(evaluation: Evaluation) {
     uiStore.viewEvaluationResults(evaluation.id)
   }
 
+  /**
+   * Opens the new evaluation modal.
+   */
   function handleNewEvaluation() {
     showNewModal.value = true
   }
 
+  /**
+   * Opens the delete confirmation dialog for an evaluation.
+   * @param evaluation - The evaluation to delete.
+   */
   function handleDeleteClick(evaluation: Evaluation) {
     evaluationToDelete.value = evaluation
     deleteDialogOpen.value = true
   }
 
+  /**
+   * Confirms and executes the evaluation deletion.
+   */
   async function confirmDelete() {
     if (evaluationToDelete.value) {
       await evaluationsStore.deleteEvaluation(evaluationToDelete.value.id)
@@ -56,6 +74,9 @@
     evaluationToDelete.value = null
   }
 
+  /**
+   * Cancels the delete operation and closes the dialog.
+   */
   function cancelDelete() {
     deleteDialogOpen.value = false
     evaluationToDelete.value = null

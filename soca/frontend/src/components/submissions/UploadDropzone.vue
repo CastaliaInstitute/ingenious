@@ -1,4 +1,8 @@
 <script setup lang="ts">
+  /**
+   * UploadDropzone component for file uploads via drag-and-drop or click.
+   * Shows upload progress and accepts multiple document formats.
+   */
   import { ref } from 'vue'
 
   defineProps<{
@@ -14,15 +18,26 @@
 
   const acceptedTypes = '.pdf,.txt,.md,.docx,.rtf'
 
+  /**
+   * Handles drag over events for the drop zone.
+   * @param e - The drag event.
+   */
   function handleDragOver(e: DragEvent) {
     e.preventDefault()
     isDragging.value = true
   }
 
+  /**
+   * Handles drag leave events for the drop zone.
+   */
   function handleDragLeave() {
     isDragging.value = false
   }
 
+  /**
+   * Handles file drop events and emits the selected files.
+   * @param e - The drop event.
+   */
   function handleDrop(e: DragEvent) {
     e.preventDefault()
     isDragging.value = false
@@ -32,10 +47,17 @@
     }
   }
 
+  /**
+   * Opens the file picker dialog when the zone is clicked.
+   */
   function handleClick() {
     fileInput.value?.click()
   }
 
+  /**
+   * Handles file selection from the file input.
+   * @param e - The change event from the file input.
+   */
   function handleFileChange(e: Event) {
     const input = e.target as HTMLInputElement
     if (input.files?.length) {

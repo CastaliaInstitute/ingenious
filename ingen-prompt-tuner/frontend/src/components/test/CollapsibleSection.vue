@@ -1,4 +1,8 @@
 <script setup lang="ts">
+  /**
+   * CollapsibleSection component for expandable content areas.
+   * Provides a toggleable section with a title header.
+   */
   import { ref } from 'vue'
 
   defineProps<{
@@ -8,6 +12,9 @@
 
   const isOpen = ref(false)
 
+  /**
+   * Toggles the collapsed/expanded state of the section.
+   */
   function toggle() {
     isOpen.value = !isOpen.value
   }

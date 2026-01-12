@@ -1,4 +1,8 @@
 <script setup lang="ts">
+  /**
+   * TraceCard component for displaying a single conversation trace.
+   * Shows trace metadata and expandable agent details.
+   */
   import { computed } from 'vue'
   import { useUIStore } from '@/stores/ui'
   import type { ConversationTrace } from '@/types'
@@ -16,6 +20,11 @@
     return props.trace.agents.find((a) => a.agentName === uiStore.expandedAgent?.agentName)
   })
 
+  /**
+   * Formats a timestamp to a human-readable relative time string.
+   * @param timestamp - The ISO timestamp string to format.
+   * @returns A string like "Just now", "5 minutes ago", or "2 days ago".
+   */
   function formatTime(timestamp: string): string {
     const date = new Date(timestamp)
     const now = new Date()
@@ -34,6 +43,11 @@
     return 'Just now'
   }
 
+  /**
+   * Formats token count to a human-readable string.
+   * @param tokens - The number of tokens.
+   * @returns Formatted string like "1.5k tokens" or "500 tokens".
+   */
   function formatTokens(tokens: number): string {
     if (tokens >= 1000) {
       return `${(tokens / 1000).toFixed(1)}k tokens`
@@ -41,6 +55,11 @@
     return `${tokens} tokens`
   }
 
+  /**
+   * Checks if an agent is currently expanded.
+   * @param agentName - The agent name to check.
+   * @returns True if the agent is expanded.
+   */
   function isAgentActive(agentName: string): boolean {
     return (
       uiStore.expandedAgent?.traceId === props.trace.traceId &&
@@ -48,6 +67,10 @@
     )
   }
 
+  /**
+   * Toggles the expanded state of an agent.
+   * @param agentName - The agent name to toggle.
+   */
   function toggleAgent(agentName: string) {
     uiStore.toggleAgent(props.trace.traceId, agentName)
   }
