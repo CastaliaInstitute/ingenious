@@ -21,7 +21,9 @@
   const INVALID_JSON: ParsedJson = { valid: false, data: null }
 
   /**
-   * Try to parse JSON string, returns null on failure
+   * Attempts to parse a JSON string.
+   * @param text - The JSON string to parse.
+   * @returns The parsed JSON data, or null if parsing fails.
    */
   function tryParseJson(text: string): unknown | null {
     try {
@@ -32,7 +34,9 @@
   }
 
   /**
-   * Unwrap double-stringified JSON if applicable
+   * Unwraps double-stringified JSON if the data is a string containing valid JSON.
+   * @param data - The data to potentially unwrap.
+   * @returns The unwrapped JSON object, or the original data if not double-stringified.
    */
   function unwrapDoubleStringified(data: unknown): unknown {
     if (typeof data !== 'string') {
@@ -46,7 +50,9 @@
   }
 
   /**
-   * Attempt direct JSON parse with double-stringify handling
+   * Attempts direct JSON parse with double-stringify handling.
+   * @param content - The content string to parse.
+   * @returns A ParsedJson object if successful, or null if parsing fails.
    */
   function tryDirectParse(content: string): ParsedJson | null {
     const data = tryParseJson(content)
@@ -57,7 +63,9 @@
   }
 
   /**
-   * Attempt to extract and parse JSON from within text
+   * Attempts to extract and parse JSON from within text that may contain non-JSON prefix.
+   * @param content - The text content that may contain embedded JSON.
+   * @returns A ParsedJson object if JSON is found and parsed, or null otherwise.
    */
   function tryExtractFromText(content: string): ParsedJson | null {
     const jsonStartIndex = findJsonStart(content)
@@ -116,8 +124,13 @@
   }
 
   /**
-   * Process a single character and update parser state
-   * Returns the ending index if bracket matching is complete, -1 otherwise
+   * Processes a single character and updates the parser state for bracket matching.
+   * @param char - The character to process.
+   * @param index - The current index in the string.
+   * @param startChar - The opening bracket character.
+   * @param endChar - The closing bracket character.
+   * @param state - The current parser state tracking depth and string context.
+   * @returns The ending index if bracket matching is complete, -1 otherwise.
    */
   function processCharacter(
     char: string,

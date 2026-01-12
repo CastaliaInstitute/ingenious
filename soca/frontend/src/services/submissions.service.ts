@@ -58,7 +58,9 @@ export const submissionsService = {
   /**
    * Updates a submission's metadata.
    * @param id - The submission identifier.
-   * @param data - The fields to update (name and/or description).
+   * @param data - The fields to update.
+   * @param data.name - Optional new name for the submission.
+   * @param data.description - Optional new description for the submission.
    * @returns The updated submission object.
    */
   async update(id: string, data: { name?: string; description?: string }): Promise<Submission> {

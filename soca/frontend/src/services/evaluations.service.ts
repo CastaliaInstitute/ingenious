@@ -27,7 +27,10 @@ export const evaluationsService = {
 
   /**
    * Creates a new evaluation.
-   * @param data - The evaluation configuration with name, submissions, and criteria.
+   * @param data - The evaluation configuration.
+   * @param data.name - The name for the evaluation.
+   * @param data.submissionIds - Array of submission IDs to evaluate.
+   * @param data.criteriaSetId - The criteria set ID to use for evaluation.
    * @returns The created evaluation object.
    */
   async create(data: {
