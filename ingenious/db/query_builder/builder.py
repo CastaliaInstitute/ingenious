@@ -165,16 +165,14 @@ class QueryBuilder:
         limit_clause = self.dialect.get_limit_clause(1)
 
         if isinstance(self.dialect, AzureSQLDialect):
-            # nosec B608: table name 'chat_history_summary' is hardcoded constant, parameters use ? placeholders
             return f"""
                 SELECT {limit_clause} user_id, thread_id, message_id, positive_feedback, timestamp, role, content,
                        content_filter_results, tool_calls, tool_call_id, tool_call_function
                 FROM chat_history_summary
                 WHERE thread_id = ?
                 ORDER BY timestamp DESC
-            """
+            """  # nosec B608: hardcoded table, parameterized query
         else:
-            # nosec B608: table name 'chat_history_summary' is hardcoded constant, parameters use ? placeholders
             return f"""
                 SELECT user_id, thread_id, message_id, positive_feedback, timestamp, role, content,
                        content_filter_results, tool_calls, tool_call_id, tool_call_function
@@ -182,7 +180,7 @@ class QueryBuilder:
                 WHERE thread_id = ?
                 ORDER BY timestamp DESC
                 {limit_clause}
-            """
+            """  # nosec B608: hardcoded table, parameterized query
 
     def update_message_feedback(self) -> str:
         """Generate UPDATE query for updating message feedback.
@@ -266,7 +264,6 @@ class QueryBuilder:
             ordered by timestamp ascending (oldest to newest).
         """
         if isinstance(self.dialect, AzureSQLDialect):
-            # nosec B608: table name 'chat_history' is hardcoded constant, parameters use ? placeholders
             return f"""
                 SELECT TOP {limit} user_id, thread_id, message_id, positive_feedback, timestamp, role, content,
                        content_filter_results, tool_calls, tool_call_id, tool_call_function
@@ -279,9 +276,8 @@ class QueryBuilder:
                 ) AS ranked
                 WHERE rn <= {limit}
                 ORDER BY timestamp ASC
-            """
+            """  # nosec B608: hardcoded table, limit is int, parameterized query
         else:
-            # nosec B608: table name 'chat_history' is hardcoded constant, parameters use ? placeholders
             return f"""
                 SELECT *
                 FROM (
@@ -293,7 +289,7 @@ class QueryBuilder:
                     LIMIT {limit}
                 ) AS last_five
                 ORDER BY timestamp ASC
-            """
+            """  # nosec B608: hardcoded table, limit is int, parameterized query
 
     def select_thread_memory(self) -> str:
         """Generate SELECT query for retrieving thread memory.
@@ -304,16 +300,14 @@ class QueryBuilder:
         limit_clause = self.dialect.get_limit_clause(1)
 
         if isinstance(self.dialect, AzureSQLDialect):
-            # nosec B608: table name 'chat_history_summary' is hardcoded constant, parameters use ? placeholders
             return f"""
                 SELECT {limit_clause} user_id, thread_id, message_id, positive_feedback, timestamp, role, content,
                        content_filter_results, tool_calls, tool_call_id, tool_call_function
                 FROM chat_history_summary
                 WHERE thread_id = ?
                 ORDER BY timestamp DESC
-            """
+            """  # nosec B608: hardcoded table, parameterized query
         else:
-            # nosec B608: table name 'chat_history_summary' is hardcoded constant, parameters use ? placeholders
             return f"""
                 SELECT user_id, thread_id, message_id, positive_feedback, timestamp, role, content,
                        content_filter_results, tool_calls, tool_call_id, tool_call_function
@@ -321,7 +315,7 @@ class QueryBuilder:
                 WHERE thread_id = ?
                 ORDER BY timestamp DESC
                 {limit_clause}
-            """
+            """  # nosec B608: hardcoded table, parameterized query
 
     def delete_thread(self) -> str:
         """Generate DELETE query for removing all messages in a thread.

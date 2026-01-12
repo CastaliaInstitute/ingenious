@@ -46,7 +46,6 @@ class AzureSQLDialect(Dialect):
         values_str = ", ".join("?" for _ in columns)
         updates_str = ", ".join(f"[{col}] = ?" for col in columns if col != conflict_column)
 
-        # nosec B608: table name validated by caller, parameters use ? placeholders
         return f"""
             MERGE {table} AS target
             USING (SELECT ? as {conflict_column}) AS source ON target.[{conflict_column}] = source.{conflict_column}
@@ -55,7 +54,7 @@ class AzureSQLDialect(Dialect):
             WHEN NOT MATCHED THEN
                 INSERT ({columns_str})
                 VALUES ({values_str})
-        """
+        """  # nosec B608: table validated by caller, parameterized query
 
     def get_temp_table_syntax(self, table_name: str, select_query: str) -> str:
         """Generate Azure SQL temporary table creation syntax.

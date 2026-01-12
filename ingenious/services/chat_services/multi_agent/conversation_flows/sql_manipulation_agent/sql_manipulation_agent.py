@@ -209,8 +209,8 @@ class ConversationFlow(IConversationFlow):
         table_name = db_config.table_name
         columns = ", ".join(db_config.column_names)
 
-        # Prompt template for LLM (not executed as SQL); validated by caller
-        # nosec B608: database_type and table_name are validated before this function call
+        # This is a prompt template for the LLM assistant, not executed as SQL.
+        # The database_type and table_name come from validated configuration.
         return f"""You are a SQL expert that helps write and execute SQL queries on data stored in {database_type}.
 
 {memory_context}IMPORTANT: If there is previous conversation context above, you MUST:
@@ -237,7 +237,7 @@ Example queries:
 - SELECT * FROM {table_name} LIMIT 5
 - SELECT AVG(salary) FROM {table_name}
 - SELECT COUNT(*) FROM {table_name} WHERE department = 'Engineering'
-"""
+"""  # nosec B608: LLM prompt template, not executable SQL
 
     def _estimate_tokens(
         self, system_message: str, user_msg: str, final_message: str, model: str
