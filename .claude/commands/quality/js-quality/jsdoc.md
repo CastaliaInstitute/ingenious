@@ -46,7 +46,7 @@ Add to `.eslintrc.js`:
 ## 3. Run JSDoc Analysis
 
 ```bash
-npx eslint resources/js/ --ext .js,.ts,.vue --rule 'jsdoc/require-jsdoc: warn'
+npx eslint . --ext .js,.ts,.vue --rule 'jsdoc/require-jsdoc: warn'
 ```
 
 ## 4. JSDoc Standards
@@ -126,7 +126,7 @@ For each file with issues:
 
 After each batch of fixes:
 ```bash
-npx eslint resources/js/ --ext .js,.ts,.vue
+npx eslint . --ext .js,.ts,.vue
 ```
 
 Continue fixing until zero JSDoc violations. Then run tests:
@@ -137,7 +137,7 @@ npm test
 ## Completion Criteria
 
 This task is NOT complete until:
-1. `npx eslint resources/js/ --ext .js,.ts,.vue` reports zero JSDoc violations
+1. `npx eslint . --ext .js,.ts,.vue` reports zero JSDoc violations
 2. All public functions have JSDoc comments
 3. All tests pass
 

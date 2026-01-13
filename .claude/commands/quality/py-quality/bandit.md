@@ -20,11 +20,12 @@ For each issue note:
 Create a working list sorted: High severity first, then Medium.
 
 ## 3. Classify Each Finding
-Choose one:
-- TRUE_POSITIVE → fix now
-- NEEDS_REFACTOR → create safer abstraction then fix
-- FALSE_POSITIVE → justify & suppress locally
-- ACCEPT_RISK_TEMPORARILY → open tracking issue (include rationale + mitigation plan)
+
+For each finding, assign one classification:
+- **TRUE_POSITIVE** - Fix immediately
+- **NEEDS_REFACTOR** - Create safer abstraction then fix
+- **FALSE_POSITIVE** - Justify and suppress locally with comment
+- **ACCEPT_RISK_TEMPORARILY** - Open tracking issue (include rationale + mitigation plan)
 
 ## 4. Fix Patterns
 Common Bandit IDs and actions:

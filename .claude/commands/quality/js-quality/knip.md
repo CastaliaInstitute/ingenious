@@ -72,12 +72,12 @@ git commit -m "chore(cleanup): remove unused <item> as detected by knip"
 
 ## 8. Configure Knip
 
-Create `knip.json` to customize:
+Create `knip.json` to customize (adjust paths to match project structure):
 ```json
 {
-  "entry": ["resources/js/app.ts"],
-  "project": ["resources/js/**/*.{ts,vue}"],
-  "ignore": ["**/*.d.ts", "**/test/**"],
+  "entry": ["src/**/*.ts", "**/*.config.{js,ts}"],
+  "project": ["src/**/*.{ts,tsx,js,jsx,vue}"],
+  "ignore": ["**/*.d.ts", "**/test/**", "**/node_modules/**", "**/.venv/**"],
   "ignoreDependencies": ["@types/*"]
 }
 ```

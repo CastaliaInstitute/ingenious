@@ -18,17 +18,9 @@
     git checkout -
     ```
 
-4. **Merge or rebase main into current branch**
-    Choose one of the following strategies:
-
-    **Option A: Merge (preserves commit history)**
+4. **Merge main into current branch**
     ```sh
     git merge main
-    ```
-
-    **Option B: Rebase (cleaner linear history)**
-    ```sh
-    git rebase main
     ```
 
 5. **If merge conflicts occur:**
@@ -37,11 +29,9 @@
     - Look for conflict markers: `<<<<<<<`, `=======`, `>>>>>>>`
     - Edit files to resolve conflicts, keeping the desired changes
     - Stage resolved files: `git add <resolved-file>`
-    - Continue the merge/rebase:
-        - For merge: `git commit` (or `git merge --continue`)
-        - For rebase: `git rebase --continue`
+    - Continue the merge: `git commit` (or `git merge --continue`)
 
-6. **Verify the merge/rebase was successful**
+6. **Verify the merge was successful**
     ```sh
     git status
     git log --oneline -10

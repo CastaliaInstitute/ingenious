@@ -1,6 +1,14 @@
 # Pull Request Merge Workflow
 
-You are an expert GitHub repository manager and Python developer. Your task is to help the user manage pull requests by listing them, allowing selection for merging, and then handling all merge conflicts and quality checks using a two-stage merge process: first to `to-stable` branch, then to `main`.
+## Arguments
+
+- `$ARGUMENTS` - Format: `[staging-branch] [production-branch]` (defaults: `staging main`)
+  - First argument: Staging branch name (default: `staging`)
+  - Second argument: Production branch name (default: `main`)
+
+## Overview
+
+You are an expert GitHub repository manager and Python developer. Your task is to help the user manage pull requests by listing them, allowing selection for merging, and then handling all merge conflicts and quality checks using a two-stage merge process: first to the staging branch, then to the production branch.
 
 ## Workflow Steps
 
@@ -16,15 +24,15 @@ You are an expert GitHub repository manager and Python developer. Your task is t
    - Ensure all modified files are explained in the PR description
 
 3. **Merge Process**: For each selected pull request:
-   - Check if the PR can be merged cleanly into `to-stable` branch
-   - Attempt to merge the pull request into `to-stable`
+   - Check if the PR can be merged cleanly into the staging branch
+   - Attempt to merge the pull request into the staging branch
    - If merge conflicts occur, identify and resolve them intelligently by:
      - Analyzing the conflicting code
      - Understanding the intent of both changes
      - Creating a resolution that preserves functionality from both branches
      - Testing the resolution makes sense in context
 
-4. **Quality Assurance Pipeline**: After merging to `to-stable`, run the complete quality pipeline:
+4. **Quality Assurance Pipeline**: After merging to the staging branch, run the complete quality pipeline:
 
    a. **Test Suite**: Run `uv run pytest`
    - If tests fail, analyze the failures and fix them
@@ -43,15 +51,15 @@ You are an expert GitHub repository manager and Python developer. Your task is t
 
 5. **Final Verification**: Run all checks one final time to ensure everything passes
 
-6. **Merge to Main**: Once all quality checks pass on `to-stable`:
-   - Check if `to-stable` can be merged cleanly into `main`
-   - Merge `to-stable` branch into `main`
+6. **Merge to Production**: Once all quality checks pass on the staging branch:
+   - Check if the staging branch can be merged cleanly into the production branch
+   - Merge the staging branch into the production branch
    - If conflicts occur during this merge, resolve them using the same intelligent approach
-   - Run a final verification on `main` to ensure everything still works
+   - Run a final verification on the production branch to ensure everything still works
 
 ## Guidelines
 
-- **Two-Stage Merge Process**: Always merge PRs to `to-stable` first, run all quality checks, then merge `to-stable` to `main`. This ensures stability in the main branch.
+- **Two-Stage Merge Process**: Always merge PRs to the staging branch first, run all quality checks, then merge the staging branch to the production branch. This ensures stability in the production branch.
 
 - **CRITICAL Merge Requirements**:
   - **NEVER use squash merge** - preserve all commits with their individual history
@@ -62,7 +70,7 @@ You are an expert GitHub repository manager and Python developer. Your task is t
   - **DO NOT add attribution footers** (e.g., no "Generated with Claude Code" or "Co-Authored-By: Claude")
   - Use standard merge commits (not squash or rebase) to preserve full commit history
 
-- **Merge Conflict Resolution**: When resolving conflicts (both to `to-stable` and `to-stable` to `main`), prioritize:
+- **Merge Conflict Resolution**: When resolving conflicts (both to staging and staging to production), prioritize:
   - Functionality preservation
   - Code consistency with the existing codebase
   - Following established patterns in the project
