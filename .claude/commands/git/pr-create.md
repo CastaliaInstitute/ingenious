@@ -1,8 +1,12 @@
 # Pull Request Creation
 
+## Arguments
+
+- `$ARGUMENTS` - Base branch for the PR (default: `to-stable`)
+
 ## Instructions
 
-Use GitHub CLI to create a pull request with the remote branch `to-stable`.
+Use GitHub CLI to create a pull request targeting the base branch specified in `$ARGUMENTS`. If no argument is provided, use `to-stable` as the default base branch.
 
 ## Pre-PR Analysis
 
@@ -32,11 +36,17 @@ Before creating the PR, perform comprehensive change analysis:
 ## Command Format
 
 ```sh
-gh pr create --base to-stable --title "Your PR title" --body "Your PR description"
+gh pr create --base <base-branch> --title "Your PR title" --body "Your PR description"
 ```
 
-## Example
+Where `<base-branch>` is the value from `$ARGUMENTS` or `to-stable` if not specified.
+
+## Examples
 
 ```sh
-gh pr create --base to-stable --title "Add authentication middleware" --body "Add JWT authentication middleware for API endpoints. Includes tests and documentation."
+# Using default base branch (to-stable)
+gh pr create --base to-stable --title "Add authentication middleware" --body "Add JWT authentication middleware for API endpoints."
+
+# Using custom base branch (e.g., main)
+gh pr create --base main --title "Add authentication middleware" --body "Add JWT authentication middleware for API endpoints."
 ```

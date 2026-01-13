@@ -9,7 +9,7 @@ Use ESLint security plugins and npm audit to detect common JavaScript/TypeScript
 npm audit
 
 # Run ESLint with security rules (if configured)
-npx eslint --ext .js,.ts,.vue resources/js/ --rule 'no-eval: error'
+npx eslint --ext .js,.ts,.vue . --rule 'no-eval: error'
 ```
 
 For comprehensive security scanning:
@@ -76,7 +76,7 @@ const value = obj[validatedKey];
 
 ```bash
 npm audit --audit-level=high
-npx eslint resources/js/ --ext .js,.ts,.vue
+npx eslint . --ext .js,.ts,.vue
 npm test
 ```
 

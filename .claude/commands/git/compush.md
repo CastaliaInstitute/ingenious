@@ -2,31 +2,16 @@
 
 ## Instructions
 
-1. **Security Check: Scan for secrets using static analysis**
-    - **CRITICAL**: Before committing, run a static analysis tool to detect secrets:
+1. **Security Check: Scan for secrets using detect-secrets**
+    - **CRITICAL**: Before committing, run detect-secrets to scan for secrets:
 
-    **Option A: detect-secrets (recommended)**
     ```bash
     # Install if needed: pip install detect-secrets
     # Scan staged files for secrets
     git diff --cached --name-only | xargs detect-secrets scan --list-all-secrets
     ```
 
-    **Option B: gitleaks**
-    ```bash
-    # Install if needed: brew install gitleaks (macOS) or download from GitHub
-    # Scan staged changes
-    gitleaks detect --staged --verbose
-    ```
-
-    **Option C: trufflehog**
-    ```bash
-    # Install if needed: brew install trufflehog (macOS)
-    # Scan staged changes
-    git diff --cached | trufflehog --json filesystem --staged
-    ```
-
-    - The tool will detect:
+    - detect-secrets will detect:
       - API keys, tokens, passwords
       - Private keys, certificates
       - Connection strings, database credentials
@@ -34,7 +19,7 @@
       - High-entropy strings that may be secrets
     - **If secrets are found**: Remove them immediately, use environment variables or secret management instead
     - **NEVER commit or push files containing secrets**
-    - For false positives, add to `.secrets.baseline` (detect-secrets) or `.gitleaksignore` (gitleaks)
+    - For false positives, add to `.secrets.baseline` file
 
 2. **Assess the scope of changes**
     - If there are extensive changes, break them into logical groups

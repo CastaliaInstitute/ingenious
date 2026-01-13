@@ -16,27 +16,27 @@ If context window limits approach, document remaining files in the todo list and
 ## 1. Run Docstring Coverage Analysis
 
 ```bash
-uv run interrogate -v scholarship_app/ app.py --fail-under 100
+uv run interrogate -v . --fail-under 100 --ignore-init-method --ignore-init-module --exclude .venv --exclude venv --exclude .git --exclude __pycache__ --exclude node_modules
 ```
 
 This shows which modules, classes, and functions are missing docstrings. The `-v` flag provides detailed output. The `--fail-under 100` ensures nothing is missed.
 
 For a summary report:
 ```bash
-uv run interrogate scholarship_app/ app.py --generate-badge /tmp/docstring-badge
+uv run interrogate . --generate-badge /tmp/docstring-badge --exclude .venv --exclude venv
 ```
 
 ## 2. Run Docstring Style Check
 
 ```bash
-uv run pydocstyle scholarship_app/ app.py --convention=google
+uv run pydocstyle . --convention=google --match='(?!test_).*\.py' --ignore=D100,D104
 ```
 
-This validates docstrings follow Google style conventions. Alternatives: `numpy`, `pep257`.
+This validates docstrings follow Google style conventions (D100 and D104 are ignored for module-level docstrings which are often unnecessary).
 
 For specific error codes only:
 ```bash
-uv run pydocstyle scholarship_app/ app.py --select=D100,D101,D102,D103,D107
+uv run pydocstyle . --select=D101,D102,D103,D107
 ```
 
 Key codes:
@@ -113,8 +113,8 @@ For each file with issues:
 
 After each batch of fixes, re-run analysis to track progress:
 ```bash
-uv run interrogate -v scholarship_app/ app.py --fail-under 100
-uv run pydocstyle scholarship_app/ app.py --convention=google
+uv run interrogate -v . --fail-under 100 --exclude .venv --exclude venv --exclude __pycache__
+uv run pydocstyle . --convention=google --match='(?!test_).*\.py' --ignore=D100,D104
 ```
 
 Continue fixing until both commands pass with zero issues. Then run tests:
@@ -131,8 +131,8 @@ uv add --dev interrogate pydocstyle
 ## Completion Criteria
 
 This task is NOT complete until:
-1. `uv run interrogate -v scholarship_app/ app.py` shows 100% coverage
-2. `uv run pydocstyle scholarship_app/ app.py --convention=google` reports zero violations
+1. `uv run interrogate -v .` shows 100% coverage (excluding venv directories)
+2. `uv run pydocstyle .` reports zero violations
 3. All tests pass
 
 **Do not stop early. Do not skip files. Process the entire codebase.**

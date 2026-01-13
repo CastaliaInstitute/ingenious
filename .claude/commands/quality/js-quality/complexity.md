@@ -6,7 +6,7 @@ Use ESLint complexity rules to identify high-complexity functions and refactor t
 
 ```bash
 # Check cyclomatic complexity with ESLint
-npx eslint resources/js/ --ext .js,.ts,.vue --rule 'complexity: ["warn", 10]'
+npx eslint . --ext .js,.ts,.vue --rule 'complexity: ["warn", 10]'
 ```
 
 ## 2. Identify Hotspots
@@ -58,7 +58,7 @@ git commit -m "refactor(complexity): reduce complexity in <function>"
 
 When a file is improved:
 ```bash
-npx eslint resources/js/ --ext .js,.ts,.vue
+npx eslint . --ext .js,.ts,.vue
 npm test
 npm run build:check
 ```
@@ -74,7 +74,7 @@ Stop when:
 ## 7. Final Quality Gate
 
 ```bash
-npx eslint resources/js/ --ext .js,.ts,.vue
+npx eslint . --ext .js,.ts,.vue
 npm run build:check
 npm test
 ```

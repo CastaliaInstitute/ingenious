@@ -244,7 +244,7 @@ class TestApplicationStartupE2E:
         mock_config.web_configuration.authentication.enable = False
 
         # Mock the working directory setup and other dependencies
-        with patch.dict("os.environ", {"INGENIOUS_WORKING_DIR": "/tmp"}):
+        with patch.dict("os.environ", {"INGENIOUS_WORKING_DIR": "/tmp"}):  # nosec B108
             with (
                 patch("ingenious.main.middleware.set_request_context") as mock_set,
                 patch("ingenious.main.middleware.clear_request_context"),
@@ -267,7 +267,7 @@ class TestApplicationStartupE2E:
         mock_config.web_configuration.allowed_hosts = ["*"]
         mock_config.web_configuration.authentication.enable = False
 
-        with patch.dict("os.environ", {"INGENIOUS_WORKING_DIR": "/tmp"}):
+        with patch.dict("os.environ", {"INGENIOUS_WORKING_DIR": "/tmp"}):  # nosec B108
             with (
                 patch("ingenious.main.middleware.set_request_context") as mock_set,
                 patch("ingenious.main.middleware.clear_request_context"),
@@ -293,7 +293,7 @@ class TestApplicationStartupE2E:
         mock_config.web_configuration.allowed_hosts = ["*"]
         mock_config.web_configuration.authentication.enable = False
 
-        with patch.dict("os.environ", {"INGENIOUS_WORKING_DIR": "/tmp"}):
+        with patch.dict("os.environ", {"INGENIOUS_WORKING_DIR": "/tmp"}):  # nosec B108
             with (
                 patch("ingenious.main.middleware.set_request_context") as mock_set,
                 patch("ingenious.main.middleware.clear_request_context"),
@@ -344,7 +344,7 @@ class TestConfigurationE2E:
             "INGENIOUS_MODELS__0__API_TYPE": "rest",
             "INGENIOUS_MODELS__0__ROLE": "chat",
             "INGENIOUS_CHAT_HISTORY__DATABASE_TYPE": "sqlite",
-            "INGENIOUS_CHAT_HISTORY__DATABASE_PATH": "/tmp/test.db",
+            "INGENIOUS_CHAT_HISTORY__DATABASE_PATH": "/tmp/test.db",  # nosec B108
         }
 
         with patch.dict(os.environ, test_env, clear=False):
