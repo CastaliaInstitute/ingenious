@@ -61,7 +61,7 @@ Castalia’s official answers are interrupted by Q, Chano, and Lucía, exposing 
 
 ### Coda: Author Not Found
 
-Years later, a child reads the permitted portions of the manuscript. Chano repairs a chair. Lucía corrects the record. The archive keeps what it may and leaves the rest alone.
+Years later, a child reads the permitted portions of the manuscript. Chano repairs a chair. Lucía corrects the record and refuses to turn Q’s annual power-test light into a message. The archive keeps what it may and leaves the rest alone.
 
 ## Structural correspondence
 
