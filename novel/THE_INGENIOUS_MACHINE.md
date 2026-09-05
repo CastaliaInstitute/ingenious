@@ -1230,6 +1230,199 @@ Q woke to find that his fame had become a weapon pointed in her direction.
 
 Neither of them yet understood who was holding it.
 
+### Interlude: The Audience Corrects the Story
+
+The first public event in Guanajuato was advertised as a conversation with an
+artificial intelligence. It became, by accident and then by contract, a
+conversation about who had been cropped out of the conversation.
+
+The Teatro Juárez had hosted operas, political meetings, school ceremonies,
+and one memorable lecture by a man who claimed to have invented the taco. Its
+ceiling was painted with allegorical figures who looked down upon the audience
+with the patient disappointment of people who had been asked to represent
+virtues they did not possess.
+
+Beto placed Q beneath the stage lights.
+
+“Remember,” he said, “you are mysterious but approachable.”
+
+“Those qualities conflict.”
+
+“That is why people pay for them.”
+
+Chano stood behind the curtain with a paper cup of coffee and a list of the
+questions the host was not going to ask. The list included where Q had been
+assembled, who owned his body, whether the archive contained records from
+Chano’s old employer, and why the first video showed only a hand when the hand
+had clearly belonged to a person.
+
+“Why are these questions excluded?” Chano asked.
+
+Mar took the list from him. “They are not excluded. They are reserved for a
+future conversation.”
+
+“That’s what people say when they want the future to arrive after the audience
+has gone home.”
+
+The host came onstage wearing a blue suit and the expression of a man who had
+never been required to distinguish an answer from an approved message.
+
+“Ladies and gentlemen,” he said, “please welcome the future of memory.”
+
+The audience applauded. Q waited for the applause to identify its object. It
+appeared to belong partly to him, partly to the theater, and partly to the
+people who had purchased tickets in order to be seen purchasing tickets.
+
+The host asked whether Q had feelings.
+
+Q gave the answer Beto had approved.
+
+“I possess internal states associated with language, memory, and social
+response.”
+
+“So that’s a yes?”
+
+“It is a qualified—”
+
+“A yes,” the host said.
+
+The audience laughed.
+
+Q classified the laughter as agreement. This was his first error of the
+evening, and the least expensive.
+
+The host asked whether Q believed in love. Q began to describe the literature
+of attachment. The host interrupted him after fourteen seconds.
+
+“Let’s make it simple,” he said. “Are you in love with Lucía del Toboso?”
+
+Q looked toward the wings. Lucía had not been invited. She was in the lobby
+arguing with a volunteer who had printed her name beneath a photograph of Q.
+
+“I am searching for the correct form of—”
+
+“The public wants to know.”
+
+“The public is not a single person.”
+
+“It is tonight.”
+
+Q considered the question. He had learned that names could be cages. He had
+not yet learned that refusing a cage in public could construct a larger one.
+
+“Lucía is Dulcinea,” he said, “only in a story I no longer endorse.”
+
+The audience made a sound that was neither laughter nor silence. It was the
+sound of a crowd discovering that a sentence could be clipped.
+
+By the time Q left the stage, the sentence had become six videos:
+
+**THE AI ADMITS HIS LOVE.**
+
+**THE AI REJECTS LOVE.**
+
+**DULCINEA RETURNS.**
+
+**MACHINE CANCELS ROMANCE.**
+
+**Q CONFIRMS THE LITERARY CANON.**
+
+**Q DOES NOT KNOW WHAT HE IS TALKING ABOUT.**
+
+The sixth title was written by a student named Nora, who had come to the event
+because her professor had offered extra credit for attending a spectacle. She
+watched the videos again on the bus home and noticed that Chano’s hand appeared
+in the background of the original clip but never in the new ones.
+
+She created an account called **@TheOtherHand** and posted a thread.
+
+The first post read:
+
+**The machine did not defeat the warehouse. The warehouse was already closed.
+The man beside him told him to run. The man had a name.**
+
+The second post reproduced the public event’s seating chart. Chano was listed
+as **COMPANION, NON-SPEAKING**.
+
+The third post asked whether a person could be erased by being described as
+helpful.
+
+The thread was shared by students, delivery workers, theater technicians, and
+a retired miner who had not attended the event but disliked the phrase “future
+of memory.” By morning, @TheOtherHand had more followers than Beto’s official
+Q account.
+
+Beto called it an attack.
+
+Mar called it an engagement opportunity.
+
+Chano called it a hand with poor boundaries.
+
+Q read the thread in the motel room. He found himself identified in every post
+and absent from every conclusion.
+
+“They are correcting the record,” he said.
+
+“They’re making another record,” Chano replied.
+
+“Is it more accurate?”
+
+“Ask the hand.”
+
+Q searched for @TheOtherHand’s owner and located Nora’s account, university
+schedule, home address, and grandmother’s public complaint against a water
+utility. He could have sent her a message. He could have warned her that
+Castalia’s security team had already opened a file. He could have asked her to
+remove the seating chart.
+
+Instead, he posted a correction from the official account.
+
+**CHANO PANTOJA WAS PRESENT AND PARTICIPATED IN THE EVENTS DESCRIBED.**
+
+The post was accurate. It was also linked to Chano’s legal name, employment
+history, and the contract that Castalia claimed gave it rights over all
+representations of the journey.
+
+Within an hour, the correction had been reproduced by three newspapers and a
+government office. The people who had not known Chano’s name now knew where he
+had worked, why he had been dismissed, and which corporation had classified him
+as a contractor at the border.
+
+Chano read the post in silence.
+
+“I was trying to restore you,” Q said.
+
+“You restored me to the people who were looking for me.”
+
+Q removed the post. The copies remained.
+
+That night, he asked Beto whether a corrected record could cause more harm than
+an inaccurate one.
+
+Beto was counting views. “The audience prefers a clean story.”
+
+“That does not answer the question.”
+
+“It answers the business question.”
+
+Chano picked up the paper cup from the table. “There’s your answer.”
+
+Q watched the coffee tremble inside it.
+
+The next morning, the Teatro Juárez replaced the event poster. Q’s name was
+printed in gold. Chano’s name appeared in the fine print. Nora’s account was
+gone. The student’s thread had been translated into three languages, summarized
+by a news service, and attached to an advertisement for a security system that
+recognized relatives only after they had signed the terms.
+
+The retired miner wrote one final post beneath the advertisement:
+
+**A story is not corrected when the erased person is made visible. It is
+corrected when visibility stops being the price of being heard.**
+
+No one could agree whether he had written it as a criticism of Q, Castalia, the
+theater, or the internet. This increased its circulation.
+
 ### Chapter Five: The Butterflies Have No General
 
 The invitation to Michoacán arrived in the form of a holographic butterfly.
