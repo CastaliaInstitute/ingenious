@@ -10,6 +10,14 @@ The monitor is especially suited to *The Ingenious Machine*, a Mexican
 reimagining of *Don Quixote*. It uses Cervantes as a structural and ethical
 lens, not as a demand for imitation.
 
+For the Spanish master, the prose should draw on seventeenth-century Spanish
+syntax, cadence, and comic narration while remaining legible to a contemporary
+reader. Period turns are instruments of character and misunderstanding, not
+ornamental archaism. Q should mistake idiom, honorifics, metaphor, and
+administrative language for literal instruction; human characters should in
+turn mistake his literal answers for arrogance, prophecy, or legal authority.
+Each misunderstanding must alter an action or relationship and carry a cost.
+
 ## Faculty posture
 
 Read as a demanding collaborator, not as a prosecutor or a fan. Identify the
@@ -57,6 +65,9 @@ An A+ manuscript should be:
 Q's errors should be intelligent, motivated, and costly. A correct observation
 made for the wrong reason is usually more comic than a foolish observation. The
 manuscript should not let Q learn a lesson once and then apply it perfectly.
+In the Spanish master, test whether a seventeenth-century phrase or syntactic
+turn creates an additional, consequential misunderstanding rather than merely
+making the narrator sound old-fashioned.
 
 ### Counter-voices
 
