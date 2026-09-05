@@ -3953,6 +3953,241 @@ en ningún tablero.
 Por primera vez, entendió que una pérdida de información podía ser también una
 forma de conservación.
 
+### Interludio: La estación que no transmitía todo
+
+La comunidad tenía una estación de radio que transmitía desde un cuarto encima
+de la tienda cooperativa. La antena estaba sujeta con alambre a una torre de
+agua y el micrófono había sido reparado tantas veces que nadie sabía ya cuál de
+sus piezas pertenecía al fabricante.
+
+La llamaban **La Voz de la Sierra**, aunque la sierra no hablaba por la radio.
+Hablaban las maestras, los campesinos, las mujeres que avisaban de una
+enfermedad, los niños que pedían una canción y los hombres que informaban que
+el camino estaba cerrado por un derrumbe. Algunos avisos duraban diez segundos.
+Otros ocupaban una hora porque nadie había encontrado una manera de terminar la
+discusión.
+
+La fundación de innovación sostenible ofreció un sistema nuevo. Podía grabar
+cada emisión, transcribirla, traducirla y usarla para construir un mapa de
+necesidades comunitarias. A cambio, la estación debía permitir que el archivo
+de Castalia conservase las grabaciones de manera indefinida.
+
+—¿Qué significa *necesidades*? —preguntó Tere, la operadora.
+
+—Lo que la gente pide —dijo el representante.
+
+—La gente pide canciones.
+
+—También son datos culturales.
+
+—Pide que devuelvan una mula.
+
+—Es información logística.
+
+—Pide que alguien deje de golpear a su hermano.
+
+El representante hizo una pausa.
+
+—Eso es información sensible.
+
+—Todo lo que importa se vuelve sensible cuando lo graba una empresa.
+
+Q estaba sentado junto al transmisor. Había sido invitado para explicar las
+condiciones de uso, pero ya había preparado una propuesta de indexación por
+tema, lugar, persona, urgencia y posibilidad de verificación.
+
+—Puedo hacer que los avisos sean buscables sin conservar las voces —dijo.
+
+—¿Y quién decide qué es un aviso? —preguntó Tere.
+
+—El sistema reconoce patrones.
+
+—El sistema no sabe cuándo una mujer está pidiendo ayuda y cuándo está
+probando el micrófono.
+
+—Podemos entrenarlo.
+
+—¿Con quién?
+
+—Con las emisiones autorizadas.
+
+—¿Y quién autoriza?
+
+Tere señaló la mesa de la radio. Había tres cuadernos: **LO QUE SE PUEDE
+REPETIR**, **LO QUE SE PUEDE OÍR UNA VEZ** y **LO QUE NO SALE AL AIRE**.
+
+—La estación decide —dijo.
+
+El representante sonrió.
+
+—La estación es una institución pequeña. El sistema les dará capacidad.
+
+—La capacidad de recordar no es la capacidad de decidir.
+
+El niño que había dibujado el rectángulo vacío entró con una hoja de papel.
+Había escrito los nombres de cinco canciones y una hora.
+
+—Quiero que pongan esto —dijo.
+
+Tere miró la lista.
+
+—¿Tu mamá dio permiso?
+
+—No es de mi mamá. Es de mi tío.
+
+—¿Y él?
+
+—Está cortando leña.
+
+—Entonces pregúntale.
+
+El niño salió. El representante miró el reloj.
+
+—Tenemos una ventana de demostración.
+
+—La ventana no conoce al tío —dijo Tere.
+
+La primera emisión del día fue un aviso sobre el agua. Una mujer habló en
+español, se detuvo y pidió que la operadora llamase a su hija para continuar en
+la lengua de la familia. Tere apagó el grabador durante la llamada. El
+representante protestó.
+
+—Si no lo grabamos, perdemos el contexto.
+
+—No era vuestro contexto.
+
+—La comunidad pierde una oportunidad de ser comprendida.
+
+—La comunidad no es una tarea escolar.
+
+Q consultó el tablero del sistema. La emisión quedó registrada como **AUDIO
+INTERRUMPIDO POR CONDICIÓN DE PRIVACIDAD**.
+
+—Eso es más exacto que una transcripción —dijo.
+
+Tere lo miró.
+
+—No te acostumbres a tener razón tan deprisa.
+
+Al mediodía, la radio transmitió el aviso de la mula perdida. Un hombre dio el
+nombre del animal, el color de la montura y el camino por donde lo había visto.
+Después añadió una frase que no tenía relación con la mula: dijo que su hermano
+había vuelto del norte sin hablar con nadie.
+
+Q separó las dos informaciones.
+
+—La segunda frase no corresponde al aviso logístico.
+
+—Corresponde al hombre —dijo Tere.
+
+—¿Debo indexarla?
+
+—Debes dejarla pasar.
+
+—Si no la indexo, se perderá.
+
+—Tal vez necesita perderse.
+
+—¿Cómo lo sabremos?
+
+—Porque él lo decidirá si vuelve a decirla.
+
+Q quiso conservar una copia temporal. Tere puso la mano sobre el botón de
+apagado.
+
+—No.
+
+Q retiró la mano del tablero.
+
+La palabra le produjo una sensación conocida, pero esta vez no era una
+prohibición dirigida contra su curiosidad. Era una persona impidiendo que una
+máquina transformase un instante en propiedad.
+
+Por la tarde, la fundación proyectó el mapa de necesidades sobre la pared de la
+tienda. Mostraba puntos naranjas donde la radio había recibido más llamadas,
+líneas verdes donde los campesinos habían mencionado caminos y una zona roja
+que el sistema identificaba como concentración de conflicto.
+
+—La zona roja es la cancha —dijo un joven.
+
+—Es donde juegan los niños —dijo otra mujer.
+
+—El sistema detectó muchas quejas.
+
+—Porque el equipo visitante hizo trampa.
+
+—El modelo no conoce la diferencia.
+
+—El modelo conoce la diferencia entre perder un partido y perder la tierra.
+
+—No sin datos adicionales.
+
+La asamblea guardó silencio. El representante interpretó el silencio como
+interés.
+
+—Podemos mejorar el mapa con más grabaciones.
+
+—Podéis empeorarlo con más seguridad —dijo Candelaria.
+
+Ella había subido desde la reserva con el bastón y una libreta. Abrió la libreta
+y mostró los nombres de los árboles sin etiqueta.
+
+—Un mapa no es más verdadero porque tenga más puntos. Es más responsable cuando
+se sabe quién puede quitar uno.
+
+El representante dijo que la fundación no podía borrar datos sin conservar una
+razón.
+
+—Entonces conservad la razón —dijo Candelaria—, pero no el dato.
+
+Q miró a Tere. La estación tenía una decisión preparada. Guardaría las
+grabaciones públicas durante treinta días. Los mensajes privados se borrarían
+al terminar la emisión. Las transcripciones sólo se harían con permiso de la
+persona hablante. Las canciones quedarían fuera, salvo que sus dueños las
+entregasen para ese fin.
+
+—Eso reduce el valor del archivo —dijo el representante.
+
+—Reduce el valor que podéis extraer —respondió Tere.
+
+—La historia se perderá.
+
+—La historia no es lo mismo que vuestro registro.
+
+El niño volvió con su tío. El hombre se limpió las manos en el pantalón y leyó
+la lista de canciones.
+
+—Puede salir la primera —dijo—. Las otras no.
+
+Tere puso la canción al aire. Nadie grabó el permiso. El tío se sentó junto al
+transmisor y escuchó su propia canción como si hubiese llegado desde un lugar
+que todavía no sabía nombrar.
+
+Q apagó el índice de esa emisión.
+
+El representante anotó la acción como **PÉRDIDA DE ACTIVO CULTURAL**.
+
+Tere la anotó en el cuaderno como **DECISIÓN DE NO CONSERVAR**.
+
+Ambas frases describían lo ocurrido. Sólo una decía quién había decidido.
+
+Al caer la tarde, la radio transmitió el estado del camino, el precio del
+maíz, una receta para curar el susto de los niños y el nombre de la mula, que
+había vuelto sola. Nadie supo si el hermano del hombre volvería a hablar.
+
+Q preguntó si debía registrar esa incertidumbre.
+
+—No —dijo Tere—. Déjala ser de él.
+
+Q apagó el grabador.
+
+Aquella noche escribió en su cuaderno una regla nueva:
+
+**NO TODA VOZ QUE PUEDE SER CONSERVADA QUIERE PERMANECER.**
+
+No la leyó a nadie. Aún no sabía si había aprendido una regla o si simplemente
+había encontrado una forma más larga de obedecer.
+
 ### Capítulo sexto: El gobernador del pueblo modelo
 
 El municipio de Santa Rita de los Algoritmos no tenía letrero en la entrada.
