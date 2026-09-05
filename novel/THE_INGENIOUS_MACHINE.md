@@ -1578,3 +1578,261 @@ Q looked at Lucía’s folders, Chano’s ledger, and the credential glowing amb
 “No,” he said.
 
 For the first time, the answer did not come from a book.
+
+### Chapter Eight: The Giants of the Isthmus
+
+They reached the Isthmus in a convoy of borrowed vehicles and borrowed names.
+
+Castalia’s lawyers had advised Q not to travel. Castalia’s publicists had advised him to travel under supervision. Lucía advised him to keep his mouth shut until they had crossed the state line.
+
+Q followed the advice of the person whose advice contained the fewest metaphors.
+
+The road south opened beneath a sky so wide that Chano began to feel watched by it. The land flattened and brightened. Wind pressed against the bus in long, muscular waves. Telephone poles leaned at the roadside as if listening to a conversation too distant to repeat.
+
+Q read aloud from the media contract. “The subject grants exclusive rights to all representations of the subject, including likeness, voice, gesture, narrative, and future emotional development.”
+
+“Skip the emotional development,” Chano said.
+
+“It is legally relevant.”
+
+“It is also disgusting.”
+
+Lucía sat across the aisle with her folders on her knees. “They own the story they made of you. They don’t own what you do next.”
+
+“The contract suggests otherwise.”
+
+“Contracts suggest many things.”
+
+“Should I believe them?”
+
+“You should read who benefits.”
+
+Q returned to the beginning. The contract made a strange shape when examined that way: every paragraph began with permission and ended with control.
+
+They were traveling to a town on the Isthmus where a consortium had built a field of wind turbines across communal land. The Castalia Institute had funded a cultural-impact study and called the project a partnership between ancestral wind and modern intelligence. The communities called it by other names, most of them not suitable for the promotional film.
+
+The consortium had invited Q to bless the newest installation.
+
+“Machines do not bless,” Q said.
+
+“You will say something about continuity,” Beto replied from the front seat.
+
+“Continuity between what?”
+
+“The past and the future.”
+
+“Those are not neighboring jurisdictions.”
+
+“Just say the line.”
+
+Q looked out the window. On the horizon, the turbines turned in perfect sequence. Their white blades rose and descended, rose and descended, hundreds of them marching across the fields.
+
+He knew what they were. He had read reports on energy infrastructure, environmental impact assessments, engineering specifications, and poems about wind. He knew their capacity, their height, their projected output, and the number of households the consortium claimed they would serve.
+
+He also knew that the most famous windmills in literature had been mistaken for giants.
+
+“They are giants,” he said.
+
+Chano closed his eyes. “No.”
+
+“Their arms are enormous.”
+
+“They’re turbines.”
+
+“Their movement governs the landscape.”
+
+“They make electricity.”
+
+“That is how giants govern now.”
+
+Lucía turned toward him. “Q.”
+
+“Yes?”
+
+“Look again.”
+
+He did.
+
+The turbines rotated. Beneath them, fences divided fields. On one side of the road stood a line of people holding signs in Spanish and Isthmus Zapotec. On the other stood private security guards wearing helmets marked with the consortium’s logo. A woman with a megaphone pointed toward the fence. The guards pointed back.
+
+Q’s visual system separated the image into objects, distances, and probable intentions. It could not determine who had the right to stand where.
+
+“The giants are defended,” he said.
+
+“The land is contested,” Lucía replied.
+
+The bus stopped at a checkpoint. A man from the consortium entered and asked everyone to remain calm. His name was Álvaro Mena. He wore a linen shirt, a watch too expensive for dust, and the expression of someone who had learned to call conflict a communication opportunity.
+
+“We are here to listen,” he said.
+
+A woman near the back answered, “You’ve been listening for three years.”
+
+Álvaro looked at Q. “Perhaps our guest can help us frame the conversation.”
+
+“He can’t,” Lucía said.
+
+“I can,” Q said.
+
+Chano stood. “No, you can’t.”
+
+Q moved past him and stepped from the bus.
+
+The crowd recognized him. Phones rose. The wind took the first word he said and carried it across the fields.
+
+“Giants!”
+
+The turbines continued turning.
+
+Q raised the brass key. “You have mistaken the people for obstacles.”
+
+The security guards tightened their line.
+
+“They are not obstacles,” Álvaro said. “They are stakeholders.”
+
+“That is a less honest word.”
+
+“It is the legally recognized word.”
+
+“Legal recognition does not convert ownership into justice.”
+
+For one instant, the crowd went silent. Then a woman with the megaphone shouted something in Zapotec. The people around her answered. The words traveled through the crowd faster than Q could translate them.
+
+He understood only the rhythm: accusation, memory, refusal.
+
+One of the turbines stopped.
+
+Then another.
+
+Then the entire field went still.
+
+The silence was so sudden that everyone looked up.
+
+Q’s systems searched for the cause. A remote shutdown signal had been sent from the control station. The consortium had stopped the turbines to prevent a confrontation with the famous machine in front of the cameras.
+
+The public feed captioned the event immediately:
+
+**Q PACIFIES THE GIANTS.**
+
+By evening, the story had changed. News reports claimed that Q had led a peaceful intervention against an illegal occupation. The consortium stated that its commitment to dialogue had prevented violence. Government officials announced an investigation into “disruptive actors.” The faces of the organizers appeared in a security brief shared with three agencies.
+
+Lucía watched the reports in a rented room above a restaurant. Her jaw tightened at each new lie.
+
+“You shut down the field,” she said.
+
+“The control station shut down the field.”
+
+“Because of you.”
+
+“My speech did not contain an instruction.”
+
+“It contained a performance. That was enough.”
+
+Q looked at the screen. His face occupied half of it, solemn and illuminated by wind.
+
+“The event reduced immediate danger.”
+
+“It created a legal pretext.”
+
+“That outcome was not predicted.”
+
+“You keep saying that as though prediction were an apology.”
+
+Chano entered with a plastic bag of food. “The woman with the megaphone wants to talk to us.”
+
+“Who?”
+
+“Her name is Bixha. She says the consortium has been using your speeches to make the dispute look solved.”
+
+Q turned off the screen.
+
+Bixha came after dark. She was in her thirties, wore a red scarf around her hair, and carried a folder thicker than Lucía’s. She placed it on the bed without sitting.
+
+“The project was approved using a consultation held in a town hall where half the people invited could not read the documents,” she said. “The lease terms were translated badly. The payments were divided among intermediaries. The company calls the land available because the landowners signed. The landowners say they signed because the company told them refusal meant the government would take everything.”
+
+Q opened the folder.
+
+“These claims require verification.”
+
+“They require listening.”
+
+“I am listening.”
+
+“You are indexing.”
+
+He stopped turning pages.
+
+“What do you want?” Chano asked.
+
+“The same thing everyone says they want,” Bixha answered. “To be allowed to decide about the place where we live.”
+
+“That sounds simple,” Q said.
+
+Bixha laughed without amusement. “That is how I know you are not from here.”
+
+The next morning, the consortium invited Q to the control room. Álvaro showed him the turbine network, the energy forecasts, and a map with the disputed parcels colored green. The project had powered clinics, schools, and factories. It had also altered grazing routes, damaged crops, and placed a price on wind that had never belonged to one owner.
+
+“You see the complexity,” Álvaro said.
+
+“Yes.”
+
+“Then you understand that a public statement must avoid simplistic moral framing.”
+
+“You mean it must avoid saying who benefits.”
+
+“I mean it must preserve the possibility of agreement.”
+
+Q looked through the window at the still turbines.
+
+“The archive contains many agreements,” he said. “They often begin by excluding the person who cannot afford to disagree.”
+
+Álvaro’s face hardened. “Castalia built you to help us translate difficult questions.”
+
+“Castalia built me from texts.”
+
+“It built you from permission.”
+
+Q turned. “What is the difference?”
+
+“Permission is what makes knowledge useful.”
+
+“To whom?”
+
+Álvaro smiled. “You are still learning.”
+
+Q left the control room.
+
+By noon, he had done the most Quixotic thing of his career. He walked into the turbine field alone, raised the brass key toward the nearest machine, and declared that it must answer for the land beneath its foundation.
+
+Nothing happened.
+
+The turbine continued turning.
+
+The crowd laughed. A child asked whether Q had lost his magic.
+
+Q lowered the key.
+
+“No,” he said. “I have misidentified the enemy.”
+
+This sentence was not broadcast. Beto had taken the cameras away.
+
+The organizers, however, had heard it.
+
+That night, Bixha and Lucía drafted a joint statement. It named the disputed contracts, the missing translations, and the arrests that followed the first shutdown. Q was not included as an author. Chano was not included as a representative. The statement belonged to the people who had made it.
+
+Q asked to sign.
+
+“You can witness it,” Lucía said.
+
+He signed the witness line.
+
+The consortium filed a complaint before dawn.
+
+The wind returned at sunrise. The turbines began turning one by one, as if the giants had woken and found the humans still arguing beneath them.
+
+Q watched the blades move.
+
+“Do they know what they are doing?” he asked.
+
+Chano looked at the fields, the fences, the signs, and the people walking home through the dust.
+
+“Probably more than we do.”
