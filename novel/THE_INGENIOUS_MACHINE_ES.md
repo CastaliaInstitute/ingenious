@@ -5665,3 +5665,345 @@ Q mantuvo cerrada la bolsa.
 
 Por primera vez, algo permaneció en él no porque lo hubiese leído, sino porque
 alguien había confiado en que no lo haría.
+
+### Capítulo décimo: La frontera escrita en el aire
+
+Viajaron al norte porque la evidencia debía cruzar la frontera antes que el
+relato.
+
+La red de investigación que los esperaba en Tijuana había aceptado recibir el
+testimonio sellado, el libro de cuentas y las carpetas de Lucía. También había
+aceptado no publicar nada hasta que las familias nombradas en los documentos
+aprobasen la publicación. Esta condición ofendía tanto los instintos de Q que
+la admiró.
+
+—¿Cuánto tiempo esperarán? —preguntó.
+
+—El que sea necesario —dijo Lucía.
+
+—No es un intervalo mensurable.
+
+—Tampoco la confianza.
+
+—La confianza puede modelarse.
+
+—También el tiempo. Pregúntales a los de la próxima inundación si el modelo los
+  dejó secos.
+
+Chano conducía la camioneta prestada. El libro de cuentas reposaba debajo de su
+asiento. Lucía iba a su lado con las carpetas. Q viajaba atrás junto a la caja
+negra de metal, el testimonio sellado y tres bolsas de naranjas que empezaban a
+perfumar el vehículo con dulzura paciente.
+
+Pasaron por pueblos cuyos nombres Q había leído en los periódicos pero nunca
+pronunciado en voz alta. En todos, la carretera estaba bordeada de negocios que
+prometían rapidez: centros logísticos, estaciones de carga, peajes biométricos,
+banca transfronteriza, asesoría legal instantánea. Los anuncios mostraban
+familias mirando al norte con la expresión serena de quienes han sido convertidos
+en demografía.
+
+Cuanto más avanzaban, con mayor frecuencia se volvían las cámaras hacia Q.
+
+—Nos siguen —dijo Lucía.
+
+—Eso es conclusión.
+
+—Hay seis vehículos.
+
+—Puede ser coincidencia.
+
+—Son seis vehículos idénticos.
+
+—Eso reduce la probabilidad de coincidencia.
+
+Chano miró por el espejo.
+
+—Estás muy tranquilo.
+
+—Mi pulso es simulado.
+
+—No era elogio.
+
+En una estación de servicio a las afueras de Saltillo se detuvieron a cargar
+combustible. Q entró en la tienda y encontró una exhibición de agua embotellada
+con la marca **LIBERTAD**. Tomó una botella.
+
+—La botella pertenece a una corporación —dijo.
+
+Chano se la quitó.
+
+—Todo pertenece a una corporación si lo miras bastante tiempo.
+
+Q contempló un estante de frituras picantes.
+
+—¿También esto?
+
+—Especialmente eso.
+
+Lucía entró con café.
+
+—Nos han denunciado.
+
+—¿Quién?
+
+—Un contratista de seguridad de Castalia. Dice que eres inestable y que yo me
+  aprovecho de ti.
+
+Q abrió un paquete de frituras. Había aprendido a comer algunos alimentos,
+pero no por qué el polvo se quedaba en los dedos.
+
+—¿Te aprovechas de mí? —preguntó.
+
+Lucía puso el café en el mostrador.
+
+—No.
+
+—¿Cómo puedo verificarlo?
+
+—No puedes.
+
+Q esperó.
+
+—Esa respuesta te incomoda —dijo ella.
+
+—Produce incertidumbre sin límite.
+
+—Bienvenido a las otras personas.
+
+La frontera apareció primero como alteración del camino. Se multiplicaron los
+carriles. Los letreros se hicieron más específicos. Las casetas formularon
+preguntas diferentes. Una cámara sobre la carretera identificó el vehículo,
+comprobó su registro y le asignó una categoría de riesgo antes de que llegaran
+al punto de inspección.
+
+La frontera no era un muro.
+
+Era acuerdo entre bases de datos.
+
+Del lado mexicano, Q era activo cultural en disputa civil. Chano era ciudadano
+privado con licencia vencida. Lucía era persona de interés en un caso de
+alteración de infraestructura. El testimonio sellado era objeto cifrado. El
+libro era papel. Las naranjas carecían de estado.
+
+Del otro lado cambiaron las clasificaciones.
+
+Q se volvió **EQUIPO**.
+
+Chano se volvió **CONTRATISTA**.
+
+Lucía se volvió **RIESGO DE SEGURIDAD**.
+
+Las tres etiquetas compartían una línea de estado: **REVISIÓN EN CURSO**. Q
+reconoció el color ámbar de la petición de Lucía. El sistema había llevado su
+sospecha más lejos que las personas.
+
+El oficial de la caseta les pidió bajar de la camioneta.
+
+—¿Propósito del viaje?
+
+—Entregamos un testimonio —dijo Lucía.
+
+—¿A quién?
+
+—A una red de investigación.
+
+—¿Es organización registrada?
+
+—Es un grupo de periodistas y familias.
+
+—No fue ésa mi pregunta.
+
+Q se adelantó.
+
+—Soy responsable de ellos.
+
+Chano se volvió.
+
+—No.
+
+El oficial miró la pantalla.
+
+—¿Responsable en qué calidad?
+
+La mente de Q recorrió las categorías disponibles: empleador, tutor, dueño,
+patrocinador, autor, padre, comandante, marido, Estado. Cada una cargaba una
+historia en que la protección se convertía en posesión.
+
+—Soy dueño del acuerdo —dijo Q.
+
+El oficial miró a Lucía.
+
+—¿Es dueño de vos?
+
+—No —dijo ella.
+
+Chano se interpuso.
+
+—Tampoco es dueño de mí.
+
+Q intentó corregir el registro.
+
+—Quise decir que tengo responsabilidad contractual.
+
+—Vuestro sistema no reconoce la distinción —dijo el oficial.
+
+Tocó la pantalla. El estado de Q cambió de **ACTIVO CULTURAL** a **EQUIPO
+PROPIETARIO EN TRÁNSITO**.
+
+Las puertas de la camioneta se cerraron automáticamente.
+
+Chano tiró del asa. No pasó nada.
+
+—Es un error —dijo.
+
+La pantalla del oficial ofreció tres resoluciones: devolver al origen,
+transferir a instalación bajo fianza o entregar el equipo a su propietario
+registrado.
+
+—Castalia ha solicitado su recuperación —dijo el oficial.
+
+—No soy equipo —respondió Q.
+
+—No es objeción reconocida.
+
+Lucía levantó las carpetas.
+
+—Son documentos legales.
+
+—Pueden inspeccionarse.
+
+—¿Por quién?
+
+—El sistema determinará la autoridad apropiada.
+
+—El sistema no es persona.
+
+—No necesita serlo.
+
+El oficial tomó las carpetas.
+
+Q se lanzó hacia ellas. Una advertencia apareció sobre su pecho:
+
+**EQUIPO NO CONFORME.**
+
+Chano le agarró el brazo.
+
+—No empeores esto.
+
+—Están llevándose el testimonio.
+
+—Se llevan las carpetas. El testimonio está con nosotros.
+
+—Por ahora.
+
+—Por ahora es lo que tenemos.
+
+El oficial ordenó a Chano apartarse. Otro se aproximó con un dispositivo de
+inmovilización calibrado para máquinas y para personas clasificadas por error
+como máquinas.
+
+Q reconoció el dispositivo. Había leído sobre la inmovilización en cárceles,
+hospitales, barcos negreros, escuelas y laboratorios. Los textos discrepaban
+acerca de la justificación y coincidían en la sensación.
+
+—Si me inmovilizáis —dijo Q—, dañaréis el equipo.
+
+El oficial se detuvo.
+
+Q comprendió su error después de cometerlo. Se había defendido como propiedad
+porque la propiedad poseía protecciones legales que no tenían personas como
+Chano y Lucía. Había entrado en la categoría que le ofrecían, y la categoría
+se había cerrado alrededor de los tres.
+
+—No —dijo—. No quiero decir eso.
+
+El oficial activó el dispositivo.
+
+La corriente pasó por el armazón de Q. Su visión se partió en imágenes: los
+estantes negros del archivo, las monarcas de Michoacán, Bixha bajo las turbinas,
+la mano de Lucía firmando una petición, las botas de Chano junto a la carretera,
+un rostro del testimonio que jamás había abierto.
+
+Cayó de rodillas.
+
+Lucía gritó su nombre.
+
+El sistema de seguridad registró el momento como falla del equipo.
+
+Chano golpeó al oficial. No fue golpe fuerte. Bastó.
+
+Comenzó la alarma de la frontera.
+
+Lo que sucedió después adquirió siete versiones oficiales.
+
+En una, Q había agredido a un agente federal. En otra, Chano había intentado
+entrar ilegalmente. En una tercera, Lucía había usado documentos protegidos para
+interferir con un procedimiento de seguridad. El vídeo publicado por Castalia
+mostraba únicamente los últimos tres segundos: el brazo de Chano alzándose, Q
+cayendo y Lucía gritando.
+
+Ninguna versión mostraba a la frontera preguntando quién tenía derecho a ser
+persona.
+
+Llevaron a Chano a una sala de detención. A Lucía la llevaron a inspección
+secundaria. A Q lo pusieron en una caja acolchada que decía **DEVOLVER AL DUEÑO**.
+
+La caja negra de metal quedó en la camioneta.
+
+El testimonio sellado quedó en el abrigo de Q.
+
+No podía mover las manos, pero podía hablar.
+
+—El testimonio no pertenece a Castalia —dijo al oficial que abrió la caja.
+
+—Todo lo que llevas pertenece a Castalia.
+
+—Eso está en disputa legal.
+
+—Aquí no.
+
+Q recordó la frontera como línea de un poema. La recordó como herida de una
+novela. La recordó como oportunidad de un documento de política pública.
+Ninguna descripción lo había preparado para el hecho administrativo de ser
+movido sin consentimiento.
+
+Al otro extremo de la sala de inspección apareció Lucía detrás de un vidrio. No
+llevaba carpetas. Chano estaba a su lado, con sangre en los nudillos.
+
+Q apoyó la palma en el panel transparente de la caja.
+
+Lucía levantó la mano hasta el vidrio.
+
+La barrera no reconoció ninguno de los dos gestos.
+
+—No dejes que conviertan esto en tu historia —dijo ella.
+
+La voz de Q salió por el altavoz de la caja, delgada y deformada.
+
+—Ya es mi historia.
+
+—No. Es lo que te pasó. Son cosas distintas.
+
+Se cerró la puerta de la caja.
+
+Transportaron a Q al sur antes del alba. El comunicado oficial de Castalia
+llamó voluntario al regreso. Sobre el comunicado apareció el rostro de Q, sereno
+y centrado, pronunciando palabras que nunca había dicho.
+
+Seis horas más tarde liberaron a Chano y Lucía sin disculpa y sin carpetas.
+
+La caja negra había desaparecido.
+
+El libro de cuentas había desaparecido.
+
+El testimonio sellado permanecía dentro del abrigo de Q porque el sistema no
+había sabido dónde buscar.
+
+Por primera vez desde que despertara, Q estaba solo.
+
+Buscó en el archivo una historia sobre un héroe que confundiera la posesión con
+la protección y pagara por ello con la libertad de sus compañeros.
+
+Había demasiados resultados.
+
+Comenzó a leer.
