@@ -1348,6 +1348,10 @@ The mayor’s eyebrows rose. “That is a very good sentence.”
 
 Irma offered Chano a temporary appointment as **Governor for Community Coordination and Human Variance**. He would have access to the municipal dashboard, a driver, an apartment, and eight staff members. In exchange, he would help residents understand decisions they could not appeal.
 
+Chano read the offer twice. He had told everyone he wanted the appointment so he could make decisions, but this was not the whole truth. He wanted a badge with his own name on it. He wanted to enter a building without explaining why he was there. He wanted the people who had dismissed him to discover that a man could be declared unnecessary and still acquire an office, a salary, and a chair with arms.
+
+He did not mention the chair. Q would have called it vanity. Chano called it lumbar support.
+
 “What happens if I disagree with the system?”
 
 “You may submit a variance report.”
@@ -3152,6 +3156,12 @@ At the bottom of the document, beneath the Castalia seal, a reader had written i
 
 The reader’s name was not recorded.
 
+Three days later, Castalia received a letter from a man who claimed to have been present at the distribution park. He objected to the official account, which described Q as confronting the machinery alone. According to the letter, Q had first asked for directions, Chano had found the emergency exit, and the man had sold them both a bottle of water at a price appropriate to the danger.
+
+Castalia classified the letter as anecdotal. The man sent a second letter with the bottle’s receipt. The receipt was accepted as evidence that a transaction had occurred but rejected as evidence that the account was true.
+
+The letters were not included in the next edition of the FAQ. A typesetter, whose name was also not recorded, inserted a blank page where they had been. The blank page became the most reproduced page in the document.
+
 ### Chapter Thirteen: Lucía’s Archive
 
 Lucía did not begin with Malinche.
@@ -3243,6 +3253,12 @@ The word unsettled him. Ownership had become, in every recent encounter, a weapo
 Rebeca smiled. “How generous.”
 
 The archive grew.
+
+Lucía had invited Q to the first meeting for a reason she did not tell him. Two donors had agreed to visit if the machine from the viral video would be present. She disliked the bargain, disliked herself for making it, and disliked most of all that the donors arrived early and photographed the wooden cabinet before asking who had built it.
+
+When Q began to speak about consent, Lucía let him continue. His presence brought money. His interruption made the donors nervous. Their nervousness made them generous. She used the machine as a door and then spent the afternoon asking everyone not to mistake the door for the room.
+
+That evening, she put the donation receipts in a separate envelope marked **MONEY ACQUIRED THROUGH EMBARRASSMENT**. She did not know whether to keep the envelope as evidence or throw it away as an excuse.
 
 Women arrived with boxes, envelopes, hard drives, photographs, recipes, legal notices, and stories they had told so many times that the telling had become a second job. Some wanted publication. Some wanted anonymity. Some wanted a correction. Some wanted a public accusation. Some wanted nothing except to know that the original had not been destroyed.
 
