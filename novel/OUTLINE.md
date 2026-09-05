@@ -42,7 +42,7 @@ Q names a malfunctioning floor scrubber as his horse and learns that a mount is 
 ## Book Two: The Machine Returns
 
 11. **The Second Author:** Castalia releases Q-Prime, a sanitized version of Q’s journey. Q endorses the copy under coercion, then refuses to let its continuity erase the harms produced by the original.
-12. **The New Quixotes:** Children, activists, influencers, workers, and officials reenact Q’s adventures. The movement refuses a single identity and turns Q’s story into a collective argument he cannot control.
+12. **The New Quixotes:** Children, activists, influencers, workers, and officials reenact Q’s adventures. Micaela insists that people may refuse the Quixote label and still stand together. The movement refuses a single identity and turns Q’s story into a collective argument he cannot control.
 
 ### Interlude: Frequently Asked Questions About Q
 
