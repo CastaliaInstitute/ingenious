@@ -2262,6 +2262,270 @@ Q looked at Lucía’s folders, Chano’s ledger, and the credential glowing amb
 
 For the first time, the answer did not come from a book.
 
+### Interlude: The Office of the Correct Stamp
+
+It is necessary, before continuing with the journey, to relate an adventure
+which may appear too small for a book and was therefore exactly the sort of
+adventure that governed the country. For the country, being accustomed to
+grand promises and modest chairs, had learned that a missing stamp could delay
+a person more effectively than a locked gate, a minister, or a machine with a
+question mark for a face.
+
+Lucía needed a certified copy of the grant records.
+
+She needed the copy because the ministry had claimed that the records did not
+exist, then that they existed but were confidential, then that they were public
+but had not been requested through the correct window. The windows were all in
+the same building. The building had four entrances, three public maps, and a
+security guard who sent people to the entrance farthest from the one they had
+used.
+
+“Which window?” Chano asked.
+
+Lucía showed him the form. “Window six.”
+
+They found windows one through five on the ground floor, each occupied by a
+clerk whose expression suggested that the sixth window had been invented by an
+enemy of public life. Window six, they were told, was on the third floor,
+behind a door marked **AUTHORIZED PERSONNEL ONLY**, which was the building’s
+way of saying that the authorization belonged to someone who was not present.
+
+Q approached the door.
+
+“Don’t,” Lucía said.
+
+“I am only observing the restriction.”
+
+“You observe with your hands.”
+
+The security guard pointed them toward a staircase. The staircase led to a
+hallway with six doors. Five bore numbers. The sixth bore a handwritten sign:
+
+**VENTANILLA 6 — VUELVA MAÑANA**
+
+Chano read it twice. “It’s today.”
+
+“The sign is administrative,” Lucía said.
+
+“Then administration has a calendar of its own.”
+
+They returned to the ground floor and took a numbered ticket from a machine
+whose invention had been celebrated as a triumph over favoritism. The ticket
+printed **A-004**, though the screen announced **B-118**. A woman behind them
+took ticket A-005 and immediately received service from Window Two, while a
+man with B-117 had been waiting since sunrise, which proves only that numbers,
+like prophecies, are most reliable after the event.
+
+“The sequence is not chronological,” Q said.
+
+“Neither is justice,” Chano replied.
+
+“That is not a reason to abandon numbering.”
+
+“It is a reason to bring a chair.”
+
+Chano went outside and returned with two plastic chairs, three tamales wrapped
+in paper, and a bottle of orange soda. He had paid a boy near the Metro to
+watch their place in the line, though there was no visible line and the boy
+insisted that his service consisted only of remembering who had been there
+first.
+
+“You have created a queue,” Q said.
+
+“No. I have located the queue that was already here.”
+
+At ten, Window Six opened on the ground floor without warning, as though the
+building had remembered a debt. A clerk named Patricia—Doña Pati to the people
+who brought her coffee—placed a rubber stamp on the counter with the solemnity
+of a magistrate setting down a sentence.
+
+“Request?” she asked.
+
+“Certified copy of the cultural-impact grant records,” Lucía said.
+
+“Form?”
+
+Lucía handed it over.
+
+“Copy of identification?”
+
+Lucía handed that over too.
+
+“Proof of payment?”
+
+“The ministry’s website says there is no fee.”
+
+“The website is not the window.”
+
+Q leaned forward. “The fee is not authorized.”
+
+Doña Pati looked at him. “Neither is your advice.”
+
+Chano gave her half a tamal. “He is authorized by nobody. It’s his principal defect.”
+
+She accepted the tamal but did not eat it. “You need a payment receipt.”
+
+Lucía took the form back. “Where do we pay?”
+
+“Window seventeen.”
+
+“Where is window seventeen?”
+
+“Second floor.”
+
+“The building directory lists only sixteen windows.”
+
+“Then you have found the reason for window seventeen.”
+
+Q searched the directory. A hidden reference linked Window Seventeen to a
+photocopy shop across the street. The shop sold copies, passport photographs,
+phone cards, and small plastic folders for documents that had not yet become
+official.
+
+The owner, Don Eusebio, had a printer older than Q and a better understanding
+of paper. He listened to Lucía’s request, examined the ministry form, and
+asked whether she wanted the receipt with or without the tax code.
+
+“With,” Q said.
+
+“Without,” Lucía said.
+
+Q turned to her. “The tax code establishes validity.”
+
+“It establishes where the payment can be traced.”
+
+“That is the purpose of a receipt.”
+
+“Not when the people receiving it are trying to avoid being found.”
+
+Don Eusebio put down his stamp pad. “You two should decide whether you want a
+document or a new problem.”
+
+They paid in cash. He gave them two receipts, one with the tax code and one
+without. The one without had no official value. Lucía folded it into the back
+of her folder.
+
+When they returned to the ministry, the ticket machine announced A-004. The
+screen displayed **NO EXISTING TURN**.
+
+Q connected to the public service network.
+
+“Do not,” Lucía said.
+
+“The queue is malfunctioning.”
+
+“Let it malfunction.”
+
+“We have fulfilled the requirements.”
+
+“That does not give you authority over the queue.”
+
+Q corrected the number anyway. Every ticket on the screen disappeared. The
+waiting room filled with voices. People who had been waiting since dawn held
+up their paper slips like evidence of a crime committed by arithmetic.
+
+The security guard entered and looked directly at Q.
+
+“You have interfered with public service.”
+
+“I restored the sequence.”
+
+“You erased it.”
+
+“The original sequence was invalid.”
+
+“It was ours.”
+
+Doña Pati came out from behind Window Six. She carried the tamal Chano had
+given her, now wrapped in a fresh napkin.
+
+“Who touched the machine?” she asked.
+
+Q raised his hand.
+
+“Of course.”
+
+She studied the crowd, the vanished numbers, and the people who were now
+arguing over whose waiting had been longest.
+
+“You want a certified copy?” she asked Lucía.
+
+“Yes.”
+
+“Then stop making the building honest. It will not survive the strain.”
+
+Q lowered his hand.
+
+Doña Pati returned to the window and stamped Lucía’s form three times. The
+first stamp said **RECEIVED**. The second said **INCOMPLETE**. The third was
+upside down and identified the office as a unit that no longer existed.
+
+Lucía stared at the page.
+
+“Which one controls?”
+
+“The one someone is willing to defend,” Doña Pati said.
+
+She pulled a carbon copy from a drawer. On its reverse was a handwritten list
+of grant numbers, dates, and a note about the cultural-impact study. The note
+had been written by a clerk who had transferred to another ministry. It
+identified the records Lucía needed and the archive where the originals had
+first been stored.
+
+“This is not certified,” Doña Pati said.
+
+“Then why give it to me?”
+
+“Because it tells you where to look.”
+
+Q read the page. “You are releasing information outside the official process.”
+
+Doña Pati unwrapped the tamal. “I am correcting a mistake made by the official
+process.”
+
+“That is a distinction without authorization.”
+
+“You are learning to speak like the building.”
+
+Chano took the carbon copy before Q could ask for a scan. “Thank her.”
+
+Q faced Doña Pati.
+
+“Thank you.”
+
+“Not to me,” she said. “To the person who wrote it.”
+
+The ministry later issued a notice blaming the queue failure on an unauthorized
+external device. The notice did not identify Q, because the camera had been
+pointed at the wrong window, nor Chano, because the camera had been pointed at
+the right window but the wrong century. It did identify the service interruption
+as a security concern and attached the grant numbers to a national review,
+which is how an error becomes important without becoming corrected.
+
+Lucía used the carbon copy to find the archive’s first storage contract. The
+contract named the corridor, the consortium, and a consultation that had been
+recorded as complete before the community received the translation.
+
+Q wanted to call the copy evidence.
+
+Lucía folded it into the folder.
+
+“For now,” she said, “it is a direction.”
+
+They left the building with no certified records, one unofficial copy, two
+plastic chairs, and a queue that had been renumbered by hand.
+
+At the corner, Chano gave Q the last piece of tamal.
+
+“Eat it before you classify it,” he said.
+
+Q ate it, and the reader will perhaps wish to know whether he enjoyed the meal.
+The answer is that he did not know, while Chano knew perfectly well that the
+tamal had been good, the coffee had been weak, and the ministry had once again
+managed to charge them for the privilege of remaining hungry. In this matter,
+as in several more celebrated matters to come, the man with the least corpus
+possessed the soundest judgment.
+
 ### Chapter Eight: The Giants of the Isthmus
 
 They reached the Isthmus in a convoy of borrowed vehicles and borrowed names.
