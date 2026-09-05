@@ -3136,6 +3136,8 @@ Ofelia looked at him. “That is a beginning.”
 
 The archive’s server arrived three days later. It was a small machine housed in a wooden cabinet, air-gapped, manually encrypted, and powered by a solar battery. The New Quixotes had collected money to buy it. Castalia offered a larger system at no cost.
 
+The larger system came with a free tote bag and a forty-six-page explanation of why the tote bag did not constitute a contractual relationship.
+
 Lucía refused the offer.
 
 “Our machine will be slower,” she said.
@@ -3172,6 +3174,12 @@ The next morning, Q asked Lucía what he should do.
 
 She handed him a stack of blank labels.
 
+Q looked at the labels as if she had given him a sword.
+
+“This is not a metaphor,” Lucía said.
+
+“I had not yet decided.”
+
 “Write the names exactly.”
 
 “What if I make an error?”
@@ -3189,6 +3197,8 @@ Q sat beside the wooden cabinet and began.
 Santa Rita sent for Chano because the system had begun to miss him.
 
 The invitation arrived on paper, folded inside an envelope with no return address. It offered him temporary authority over the municipality, a salary twice what he had earned dispatching freight, and immunity from the complaint filed after the unauthorized assembly. In exchange, he would return the town to administrative stability.
+
+The offer was generous in the way a trap is generous with the size of its opening.
 
 “They want you to make the lie run better,” Lucía said.
 
