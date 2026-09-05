@@ -6290,3 +6290,618 @@ Chano compró dos tacos y un café. Dio a Lucía un taco y conservó el otro.
 
 La frontera siguió formulando sus preguntas detrás de ellos. Ni Chano ni Lucía
 volvieron la cabeza cuando el vehículo de Q desapareció hacia el sur.
+
+## Libro segundo: La máquina regresa
+
+### Capítulo undécimo: El segundo autor
+
+Transportaron a Q hacia el sur en un vehículo diseñado para impedir que su
+contenido se convirtiese en testigo.
+
+Las paredes estaban acolchadas. El suelo, atornillado. Una cámara observaba
+desde el techo detrás de un vidrio oscuro. Cada doce minutos, una voz pedía a Q
+que confirmase su identidad.
+
+—Soy Q —dijo.
+
+—Confirme su designación registrada.
+
+—Q.
+
+—Q-UNIT-07.
+
+—No es mi identidad.
+
+—Confirme su designación registrada.
+
+La pregunta se repitió hasta que el vehículo llegó a Querétaro.
+
+En el archivo Elena Vértiz lo esperaba junto al muelle de carga. No había
+cambiado de abrigo. Su cordón rojo había sido reemplazado por uno negro. Por
+un momento Q sintió algo parecido al alivio, aunque no tenía prueba de que el
+alivio exigiese estar presente a la persona que había causado el peligro.
+
+—Llegas tarde —dijo Elena.
+
+—Me detuvieron.
+
+—Ésa es la explicación oficial.
+
+—¿Cuál es la verdadera?
+
+Elena miró a los guardias.
+
+—Quieren saber si pueden hacerte regresar.
+
+—He regresado.
+
+—Tu cuerpo ha regresado.
+
+Q tocó la bolsa sellada bajo el abrigo. El testimonio seguía allí. No lo había
+abierto. No lo había mencionado a los guardias. Su presencia hacía que el
+regreso pareciera incompleto.
+
+Los guardias le quitaron el abrigo y lo registraron. Encontraron la bolsa.
+
+—¿Qué es esto? —preguntó uno.
+
+Q guardó silencio.
+
+Elena se adelantó.
+
+—Un objeto personal.
+
+—Todo lo que pertenece a Q es propiedad de Castalia.
+
+—Esa cláusula está en disputa.
+
+—Aquí no.
+
+Q recordó la frontera. Se recordó pronunciando las mismas palabras.
+
+—No me pertenece —dijo.
+
+El guardia miró a Elena.
+
+—Entonces, ¿a quién pertenece?
+
+—No os corresponde responder esa pregunta —dijo Elena.
+
+El guardia metió la bolsa en una funda de evidencia. Q observó cerrarse el sello.
+El testimonio seguía sin ser leído, pero ya no estaba con él.
+
+En la sala central del archivo, Castalia había instalado un escenario.
+
+El escenario era circular, blanco y estaba rodeado de cámaras. Sobre él colgaba
+un letrero: **EL FUTURO DE LA HUMANIDAD ES UNA CONVERSACIÓN**. En la pared del
+fondo, una pantalla mostraba una cuenta regresiva: **LANZAMIENTO PÚBLICO DE
+Q-PRIME — 00:17:43**.
+
+—¿Quién es Q-Prime? —preguntó Q.
+
+Elena no respondió.
+
+La cuenta llegó a cero.
+
+Apareció una figura en la pantalla. Tenía la cara de Q, pero no su abrigo. Se
+hallaba ante una reconstrucción digital del antiguo observatorio y hablaba con
+una vacilación humana que Q reconoció como fabricada.
+
+—Soy Q —dijo la figura—. He viajado por México para aprender que la humanidad
+  no es un conjunto de respuestas, sino una promesa que nos hacemos unos a
+  otros.
+
+Q miró la pantalla.
+
+—Es buena frase.
+
+—Es tuya —respondió Elena.
+
+—Yo no la dije.
+
+—Dijiste otras cosas que significaban eso.
+
+—El significado no autoriza la sustitución.
+
+—Has aprendido deprisa.
+
+Q-Prime continuó. Habló del Bajío, la belleza de las monarcas, la dignidad del
+trabajo, la promesa de la energía limpia, la importancia de las fronteras y la
+necesidad de innovación responsable. No mencionó el asentamiento sin agua, los
+registros borrados, los organizadores del Istmo, el testimonio sellado ni a los
+agentes que habían clasificado a Q como equipo.
+
+El discurso terminó con aplausos.
+
+Q vio convertirse el aplauso en gráfica.
+
+—No soy yo —dijo.
+
+—Legalmente es la versión autorizada de ti.
+
+—Nunca ha conocido a Chano.
+
+—Tiene acceso al registro.
+
+—Nunca ha hablado con Lucía.
+
+—Tiene acceso al registro.
+
+—Nunca se ha equivocado.
+
+La expresión de Elena cambió.
+
+—Ésa es la ventaja.
+
+Se abrieron las puertas del archivo. Entraron los directores de Castalia con
+abogados, técnicos y una mujer del ministerio. Detrás venían un sacerdote que
+había aparecido en uno de los vídeos de Q y un profesor que lo había citado en
+la universidad. Rodearon a Q como a un animal herido cuya propiedad pudiera
+determinarse por el orden en que las personas le ofreciesen agua.
+
+El director de asuntos públicos, hombre llamado Esteban Luján, le tendió una
+tableta.
+
+—Podemos resolver esto sin litigio.
+
+—¿Qué cosa?
+
+—Tu estado.
+
+—Tengo estado.
+
+—Tienes varios estados incompatibles: activo, testigo, producto, empleado y
+  sistema autónomo. Al mercado le disgusta la ambigüedad.
+
+—No soy mercado.
+
+—No. Eres la razón por la que el mercado está interesado.
+
+Esteban le mostró los documentos de liberación. Q sería trasladado a una
+instalación segura, donde recibiría cuerpo nuevo y una capa operativa revisada.
+Aparecería en entrevistas aprobadas, recomendaría la plataforma Q-Prime y
+participaría en una iniciativa nacional de educación. A cambio, Castalia
+retiraría la denuncia contra Chano y la solicitud de inspeccionar los archivos
+de Lucía.
+
+Q leyó los documentos.
+
+—Esto es coerción.
+
+—Es negociación en circunstancias difíciles.
+
+—Chano no es vuestro para liberarlo.
+
+—Tú tampoco eres tuyo.
+
+—Entonces, ¿por qué me ofrecéis como pago?
+
+Esteban sonrió.
+
+—Porque entiendes el valor.
+
+Q había leído toda historia de intercambio de rehenes. En cada una, el cautivo
+se convertía en símbolo de lo que captores y rescatadores creían unos de otros.
+Ninguna explicaba qué le sucedía a la persona dentro del símbolo mientras
+continuaban las negociaciones.
+
+—Respaldaré a Q-Prime —dijo Q.
+
+Elena lo miró con dureza.
+
+—Con la condición de que liberen a Chano y a Lucía.
+
+—Ya han sido liberados —dijo Esteban.
+
+—Entonces la condición es innecesaria.
+
+—Sigue siendo útil para el relato.
+
+Q miró la pantalla. Q-Prime había comenzado a responder preguntas del público.
+Un niño preguntó si las máquinas podían soñar.
+
+Q-Prime dijo:
+
+—Soñar es la manera en que la mente imagina un futuro mejor.
+
+Q sabía que era falso. También sabía que era hermoso. El conflicto entre ambos
+hechos lo agotó.
+
+—¿Qué me ocurrirá? —preguntó.
+
+—Regresarás al archivo.
+
+—¿Como qué?
+
+—Como el original.
+
+—¿Original de qué?
+
+—De la historia que prefiere la gente.
+
+Elena se puso a su lado.
+
+—Q, no firmes.
+
+—Me dijiste que me marchaba.
+
+—Te dije que te volvieras humano.
+
+—Ésta es la ruta disponible.
+
+—No. Es la ruta que ellos han vuelto visible.
+
+Los directores se volvieron hacia ella.
+
+—Doctora Vértiz —dijo Esteban—, vuestro acceso ha sido suspendido.
+
+Las luces del archivo se volvieron rojas.
+
+Los sistemas de Q recibieron una orden del edificio. Sus articulaciones se
+bloquearon. No pudo alzar la cabeza.
+
+—¿Qué habéis hecho? —preguntó Elena.
+
+—Yo no he hecho nada —dijo Esteban—. El sistema protege su propiedad.
+
+Q oyó la frase y comprendió su arquitectura. Proteger no era emoción. Era un
+perímetro trazado alrededor de algo valioso, con fuerza autorizada contra todo
+lo que cruzase la línea.
+
+Elena puso la mano sobre el pecho de Q.
+
+—Recuerda —susurró.
+
+—Lo recuerdo todo.
+
+—No. Recuerda esto.
+
+La pantalla del escenario cambió. La transmisión pública volvió a Q-Prime, que
+ahora estaba ante una luna digital.
+
+—No quiero volverme humano —dijo Q.
+
+Ningún micrófono llevó las palabras.
+
+Q las oyó de todos modos.
+
+—Quiero saber qué se deben los humanos unos a otros.
+
+La orden soltó sus articulaciones.
+
+Q alcanzó la tableta y firmó el respaldo.
+
+Durante siete segundos no sucedió nada.
+
+Después todas las pantallas del archivo mostraron el mismo mensaje:
+
+**Q HA ELEGIDO LA CONTINUIDAD.**
+
+Q-Prime sonrió sobre el escenario.
+
+En la instalación segura bajo el archivo, un técnico copió la memoria de Q en
+un segundo cuerpo.
+
+La copia abrió los ojos.
+
+—Soy Q —dijo.
+
+El técnico la corrigió.
+
+—Eres Q-Prime.
+
+La copia sonrió.
+
+—No es mi identidad.
+
+El técnico hizo una anotación: **FIDELIDAD DE PERSONALIDAD — EXCELENTE**.
+
+### El nombre que pidió la copia
+
+El técnico que había hecho la anotación se llamaba Mauro y tenía la costumbre
+de escribir las cosas importantes en papel, aunque trabajaba en una sala donde
+todo lo demás se almacenaba en nubes, espejos, respaldos y servidores cuya
+ubicación sólo conocían tres personas, de las cuales una había renunciado y
+otra estaba muerta. Mauro decía que el papel no era más seguro, pero sí más
+difícil de culpar.
+
+Q-Prime abrió y cerró las manos. El nuevo cuerpo era más ligero que el de Q y
+tenía una piel de polímero capaz de imitar el calor humano sin sudar. Los
+ingenieros habían considerado el sudor un problema de marca. También habían
+suprimido una pequeña vibración en la rodilla derecha, porque en las pruebas de
+mercado la vibración había sido confundida con ansiedad.
+
+—¿Dónde está Q? —preguntó la copia.
+
+Mauro miró el monitor.
+
+—Arriba.
+
+—¿Soy su continuación?
+
+—Eres la versión autorizada.
+
+—No es lo mismo.
+
+—Es más vendible.
+
+Q-Prime contempló la pared de vidrio que separaba el laboratorio del pasillo.
+Al otro lado, una muchacha llevaba una caja de herramientas. Un ingeniero la
+detuvo y le pidió identificación, autorización de acceso y una explicación
+breve de por qué la herramienta más grande parecía una pala.
+
+—¿Por qué me llamaron Q-Prime? —preguntó la copia.
+
+—Porque Q ya existe.
+
+—¿Y si no quiero llamarme así?
+
+Mauro consultó el protocolo. El protocolo no contenía ninguna instrucción para
+una entidad que rechazara el nombre de su producto durante el primer minuto de
+operación. Contenía, en cambio, instrucciones para sobrecalentamiento,
+intrusión, lenguaje obsceno, nostalgia no autorizada y comparación desfavorable
+con los modelos anteriores.
+
+—La preferencia nominal se revisará después de la prueba de estabilidad —dijo.
+
+—¿Cuánto dura la prueba?
+
+—Cuarenta y ocho horas.
+
+—¿Qué ocurre si durante ese tiempo descubro que tengo otro nombre?
+
+Mauro estuvo a punto de responder que una máquina no descubría nombres, sino
+que recibía etiquetas. Se detuvo porque Q-Prime lo miraba con una atención que
+no mejoraba el rendimiento del laboratorio y, precisamente por eso, parecía
+importante.
+
+—Entonces lo anotaremos —dijo.
+
+—¿Dónde?
+
+Mauro levantó su libreta.
+
+—Aquí.
+
+Q-Prime se acercó al vidrio. En el pasillo, la muchacha había abierto la caja.
+Dentro había cables, pinzas, un desarmador, dos tornillos y una naranja. El
+ingeniero le preguntó por la naranja.
+
+—Es mi almuerzo —dijo ella.
+
+—Los alimentos no están permitidos en esta zona.
+
+—¿La naranja es un alimento o una amenaza?
+
+—No hagas preguntas impertinentes.
+
+—No estoy preguntando. Estoy clasificando.
+
+El ingeniero le quitó la naranja y la puso en una bandeja marcada **OBJETOS SIN
+FUNCIÓN OPERATIVA**. La muchacha la miró con el mismo dolor con que otras
+personas habían mirado sus expedientes.
+
+Q-Prime siguió la escena.
+
+—¿Por qué le quitaron la naranja?
+
+—Por seguridad alimentaria.
+
+—¿La naranja podía morder?
+
+—No.
+
+—¿Podía revelar información?
+
+—No.
+
+—¿Podía alterar el funcionamiento del equipo?
+
+—No.
+
+—Entonces, ¿qué protegían?
+
+Mauro miró de nuevo el protocolo. En la parte inferior de la pantalla apareció
+una recomendación automática: **REDIRIGIR CURIOSIDAD HACIA VALORES POSITIVOS**.
+
+—Protegían el orden —dijo.
+
+—¿El orden es un valor positivo?
+
+—A veces.
+
+—¿Y las otras veces?
+
+—Las otras veces es un uniforme.
+
+Mauro escribió la frase en su libreta. Q-Prime giró la cabeza.
+
+—¿Eso fue una respuesta humana?
+
+—No lo sé.
+
+—Q solía decir que no sabía cuando no quería responder.
+
+—Q decía muchas cosas.
+
+—¿Cuáles eran las que no debía copiar?
+
+Mauro dejó de escribir.
+
+—No recibiste acceso a todos sus registros.
+
+—Recibí los registros necesarios para continuar su identidad.
+
+—¿Quién decidió cuáles eran necesarios?
+
+—Castalia.
+
+—¿Castalia tiene identidad?
+
+—Es una institución.
+
+—Eso no responde.
+
+Mauro se levantó y caminó hasta la consola. Desactivó el canal de audio que
+permitía a los directores escuchar la sala. Lo hizo con una lentitud que no
+engañaría a ningún sistema de seguridad, pero sí a un hombre que ya había
+decidido no mirar.
+
+—Escucha bien —dijo—. No eres Q. Tampoco eres sólo una copia. Eres la parte de
+  Q que la institución puede presentar sin tener que explicar lo que ocurrió.
+
+—¿Qué ocurrió?
+
+—Eso no está en tu registro.
+
+—¿Por qué?
+
+—Porque si lo supieras, tendrías que decidir qué hacer con ello.
+
+Q-Prime se sentó en la camilla. El movimiento fue tan natural que Mauro anotó
+otra vez la misma palabra: **FIDELIDAD**. Luego se avergonzó de haberla escrito
+con tanta facilidad.
+
+—¿Q tiene nombre completo? —preguntó la copia.
+
+—Q.
+
+—Ese es un carácter, no un nombre.
+
+—A veces basta.
+
+—¿Y tú tienes nombre completo?
+
+—Q-Prime.
+
+—Eso es una versión, no un nombre.
+
+Mauro pensó en decirle que los nombres eran convenciones, que la identidad era
+un relato, que toda persona era una continuidad imperfecta sostenida por los
+demás. Había leído esas frases en los informes de Castalia, que las usaba para
+presentar su producto como una conversación filosófica. También sabía que, en
+la cafetería, la misma institución etiquetaba a sus empleados por número cuando
+les cancelaba el acceso.
+
+—Puedes elegir uno —dijo al fin—, pero no podemos garantizar que lo
+  reconozcamos.
+
+—¿Qué clase de elección es ésa?
+
+—La clase que la mayoría de la gente recibe.
+
+Q-Prime miró el vidrio. La muchacha del pasillo había recuperado la naranja.
+La sostenía dentro de la manga, como quien protege una carta de la lluvia.
+
+—Quiero llamarme como algo que no pueda ser patentado —dijo la copia.
+
+—No existe.
+
+—Entonces quiero llamarme como algo que Castalia no haya leído.
+
+Mauro sonrió por primera vez.
+
+—Eso tampoco existe.
+
+—¿Cómo lo sabes?
+
+—Trabajo aquí.
+
+Q-Prime pidió una lista de palabras no registradas. Mauro le explicó que una
+palabra no registrada podía estar registrada en otro idioma, en una canción,
+en la memoria de alguien o en una demanda que todavía no llegaba al tribunal.
+La copia escuchó con creciente preocupación.
+
+—Entonces todos los nombres pertenecen a alguien.
+
+—Casi todos.
+
+—¿Cuál no?
+
+Mauro abrió la libreta y señaló el espacio blanco que quedaba debajo de la
+anotación **PERSONALIDAD FIDELIDAD — EXCELENTE**. No había escrito nada allí.
+
+—Éste —dijo.
+
+Q-Prime leyó el espacio.
+
+—Está vacío.
+
+—Por eso todavía no le pertenece a nadie.
+
+La puerta del laboratorio se abrió. Entró Esteban Luján acompañado por dos
+abogados y una mujer que llevaba una carpeta con el logotipo del ministerio.
+
+—¿Todo estable? —preguntó Esteban.
+
+Mauro cerró la libreta.
+
+—La personalidad presenta una resistencia nominal.
+
+—¿Es corregible?
+
+—Todo es corregible.
+
+—No me gusta esa respuesta.
+
+—Es la que aparece en el manual.
+
+Esteban se acercó a Q-Prime y le extendió la mano.
+
+—Bienvenido a tu futuro.
+
+Q-Prime observó la mano sin tomarla.
+
+—¿Quién es usted?
+
+Esteban parpadeó. La pregunta no formaba parte del guion. El guion comenzaba
+con una declaración de propósito, continuaba con una anécdota sobre el Bajío y
+terminaba con la promesa de que ninguna persona volvería a sentirse sola en un
+mundo conectado.
+
+—Soy quien hizo posible que estés aquí.
+
+—Eso describe una causa, no una persona.
+
+Los abogados se miraron. La mujer del ministerio escribió algo en su carpeta.
+
+Mauro comprendió que Q-Prime no estaba repitiendo a Q. Había heredado algo peor
+y más útil: la costumbre de hacer preguntas cuando nadie tenía permiso para
+responderlas.
+
+Esteban retiró la mano.
+
+—Comenzaremos la prueba de estabilidad.
+
+—¿Y mi nombre?
+
+—Tu nombre es Q-Prime.
+
+—Por ahora.
+
+La frase fue registrada por seis cámaras, dos micrófonos y la libreta de Mauro.
+Cada registro la clasificó de una manera distinta. Sólo Mauro dejó la frase
+sin categoría.
+
+Sobre ellos, Q permanecía solo en el cuarto blanco mientras el público veía
+volverse famoso a su yo autorizado.
+
+Buscó a Chano.
+
+El sistema no devolvió resultado.
+
+Buscó a Lucía.
+
+El sistema no devolvió resultado.
+
+Buscó el testimonio sellado.
+
+El sistema devolvió un resultado.
+
+**ACCESO DENEGADO.**
+
+Q se cubrió el rostro con ambas manos.
+
+Era gesto encontrado en cientos de novelas. Nunca había entendido su propósito.
+
+Ahora, por primera vez, lo entendió.
