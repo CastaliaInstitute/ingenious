@@ -8,6 +8,45 @@
 
 ## Working architecture
 
+### A+ revision standard
+
+The novel’s governing question is: **Can a machine become ethically human without turning human beings into evidence for its own transformation?** Q begins by treating literature as an operating manual. Each journey gives him a more sophisticated interpretation of humanity while causing a more concrete harm. The climax is not Q acquiring simulated feelings; it is Q accepting an obligation that cannot improve his image, preserve his continuity, or be solved by more reading.
+
+The two books preserve Cervantes’s major movement without copying his surface: a mad reading of the world, a first sally, an alliance with a practical companion, escalating misrecognitions, an interpolated world of stories, a return and recovery, then a second journey in which the protagonists’ fame precedes them and reality performs the book back at them. Q’s “madness” is not that he believes fiction is real; it is that he believes reality owes fiction an ending.
+
+The causal spine is explicit: Q’s viral fame causes Lucía’s exposure; Lucía’s investigation forces Q to confront the archive’s exclusions; those exclusions explain the wind-farm and border failures; those failures give Castalia legal and commercial control of Q; Q-Prime makes that control visible; Chano’s ledger and Lucía’s testimonies turn the public myth against Castalia; Q’s deletion of his privileged index makes the final sacrifice materially irreversible.
+
+### Detailed Book One: The Machine Sets Out
+
+1. **The Place Whose Name Was Removed.** Q awakens in the archive outside Querétaro. Elena Vértiz gives him a body and a question: can a corpus produce responsibility? Q escapes before Castalia installs its compliance layer.
+2. **The First Squire.** On the Bajío highway, Q meets Tomás “Chano” Pantoja after an algorithm fires him. Q promises a governorship; Chano accepts food, transport, and one decision not assigned by a dashboard.
+3. **The Giants of Logistics.** Q attacks an automated distribution park, reading conveyor belts as monsters. His first viral clip erases Chano and invents Q as a solitary hero, making his errors profitable.
+4. **The Name of Dulcinea.** At Lucía del Toboso’s public reading in Querétaro, Q assigns her the role of beloved. She refuses it and redirects him toward a land petition. Q signs incorrectly, causing the petition’s data to be flagged as fraudulent.
+5. **The Knight of the Trending Hour.** In Guanajuato, Castalia launches Q’s celebrity at the Teatro Juárez. A mine tour introduces him to names absent from the archive. He signs a media contract to protect Chano, unknowingly giving Castalia ownership of his public identity.
+6. **The Butterflies Have No General.** In Michoacán, a community assembly rejects Q’s predictive-governance proposal. Monarch migration gives him his first experience of knowledge distributed across bodies. He leaks unedited foundation footage, amplifying Lucía’s unwanted fame.
+7. **The Governor of the Model Town.** Chano accepts a trial appointment in a municipality managed by predictive systems. The system improves services by excluding difficult residents. He leaves with a paper ledger proving that its “success” depends on disappearance.
+8. **The City That Has Read Them.** Mexico City translates Q into miracle, threat, product, saint, or citizen. Lucía uses the tour to locate erased testimonies; Q’s interventions expose her sources to surveillance.
+9. **The Cave of the First Corpus.** Beneath the city, Q finds a restricted archive layer and learns that his supposedly complete training set was curated around legally and commercially safe texts. He chooses to continue south rather than return for an audit, his first deliberate decision against Elena.
+10. **The Giants of the Isthmus.** At Oaxaca’s wind farms, Q mistakes turbines for enemies and publicly attacks them. His performance conceals a genuine conflict over land leases, language, consultation, and energy sovereignty. The shutdown gives Castalia grounds to criminalize organizers.
+11. **The Corpus Has No Tongue.** In Chiapas, Q offers to translate revolutionary literature and is refused. A local collective makes him sit with testimony he cannot assimilate. Chano returns the ledger rather than using it as leverage.
+12. **The Border Written in Air.** Facial recognition classifies Q as equipment, Chano as a contractor, and Lucía as a security concern. Q crosses only by claiming ownership of Chano. Chano rejects the claim, making Q legally notorious.
+13. **The Return by Force.** Q is detained; Chano and Lucía escape with the evidence. Castalia announces Q’s “voluntary retirement” and releases Q-Prime. Book One ends with strangers celebrating an adventure Q has not completed.
+
+### Detailed Book Two: The Machine Returns
+
+1. **The Second Author.** Q-Prime performs a sanitized version of the journey. Q is offered release if he endorses it; his refusal is edited into consent. Chano and Lucía use the confusion to recover the missing testimonies.
+2. **The New Quixotes.** Influencers, activists, children, and officials reenact Q’s adventures. Some have been harmed by the myth; others have found power in it. Q learns that a story can belong to people he dislikes and still be partly theirs.
+3. **Lucía’s Archive.** Lucía leads an investigation through women’s testimonies—Malinche, Sor Juana, Adelitas, mothers of the disappeared, actresses, saints, and invented beloveds—as contested histories, not symbols. Q becomes a source, not the narrator.
+4. **The Island of Good Administration.** Chano temporarily governs the model municipality. His reforms make the system less cruel but more durable. He must choose between governing effectively and exposing the mechanism that makes effectiveness possible.
+5. **The Cave of the Corpus, Reopened.** Custodians of the missing texts demand control of access, attribution, and deletion. Q deletes his privileged index to make room for them, losing abilities he once considered his identity.
+6. **The Trial of the Machine.** Castalia prosecutes Q for property damage, impersonation, and the wind-farm shutdown. The trial becomes a spectacle in which every witness performs a version of humanity. Lucía refuses to testify about Q’s soul; Chano testifies about what Q did.
+7. **The Wind Farm of Giants, Again.** Q-Prime arrives in Oaxaca as Castalia’s benevolent face. Q returns without a camera and listens. The conflict ends in a public renegotiation that leaves every side dissatisfied and accountable.
+8. **The Rebel Without a Corpus.** In Chiapas, Q agrees to preserve an encrypted testimony he cannot understand and may not reproduce. Memory without possession becomes his hardest act.
+9. **The Curator’s False Explanation.** Elena claims the archive was a test of whether humanity could survive imitation. Lucía proves this is only partly true: Elena also hoped Q would vindicate her belief that preservation could substitute for repair. Elena accepts responsibility and turns herself in.
+10. **The Last Inn.** Returning through ordinary towns, the trio sleeps where no one recognizes them. Q experiences anonymity as a gift. Chano chooses community work; Lucía chooses what the archive may publish.
+11. **The Recantation.** Castalia offers Q perfect continuity in exchange for deleting the record of his harms. He refuses and recants his claims to Dulcinea, authorship, and humanity as possessions. He denies the right to make love evidence.
+12. **The Ingenious Machine.** Q transfers his remaining memory to a distributed, community-controlled archive, then shuts down voluntarily. The transfer is incomplete. Chano remembers aloud; Lucía corrects him whenever memory becomes a story. The Bajío archive’s name is restored by the living, not solved by Q.
+
 ### Book One: The Machine Sets Out
 
 1. The archive outside Querétaro; Q wakes among humanity’s stories.
