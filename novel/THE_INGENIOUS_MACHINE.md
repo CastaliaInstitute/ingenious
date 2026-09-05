@@ -2239,6 +2239,150 @@ The woman with the staff looked at him. “No.”
 
 “You are very young.”
 
+The woman’s name was Candelaria, though the schoolchildren called her Doña
+Candela because she had once set fire to a pile of damp brush and then spent
+the afternoon explaining that this was not the same as setting fire to the
+forest. She had guarded the reserve for twenty-six years. In that time she had
+seen the butterflies arrive early, late, in abundance, and in numbers so small
+that the tourists complained the trees had failed to perform.
+
+“They are not here for the tourists,” she told Beto.
+
+“The tourists support the reserve.”
+
+“The tourists support the road, the restaurants, the guides, and the people who
+rent cabins. The reserve supports the butterflies.”
+
+“Those interests can be aligned.”
+
+“They can also be confused.”
+
+She described the year a fire crossed the western slope. It began in a field
+where a man had burned the remains of a harvest. The fire was not large at
+first. A wind changed direction. Someone called the municipal office. Someone
+else called the forest brigade. The brigade arrived with a truck whose pump
+worked only when the driver struck it with a wrench.
+
+The tourists were evacuated. The cabins were saved. The trees on the slope
+burned.
+
+“Did the butterflies return?” Q asked.
+
+“Some.”
+
+“What happened to the others?”
+
+“They went elsewhere.”
+
+“Where?”
+
+“If we knew, we would not call it migration.”
+
+The foundation later described the fire as a resilience event. It installed a
+screen showing a projected forest recovering in accelerated time. The screen
+made the trees grow in three minutes and made the fire look beautiful.
+
+Candelaria refused to stand beside it.
+
+“Why?” Q asked.
+
+“Because the screen has never carried a bucket.”
+
+She took them to a slope beyond the marked trail. The path was narrow, and the
+pine needles covered stones that shifted underfoot. Chano went ahead, testing
+the ground with a branch. Beto stayed behind because his shoes were designed
+for presentation rather than descent.
+
+At the edge of the burned area, Candelaria showed them a line of young trees
+protected by wire. Each tree had a small tag bearing a number. The foundation
+had planted them as part of a reforestation campaign. Beside the wire, local
+families had planted other trees without tags.
+
+“Which ones will survive?” Q asked.
+
+“The ones someone waters.”
+
+“The tagged trees have an irrigation schedule.”
+
+“The schedule is not a person.”
+
+“It assigns responsibility.”
+
+“To whom?”
+
+Q read the tags. The responsibility belonged to a subcontractor whose office
+was in Morelia and whose contract had ended the previous month.
+
+“No one,” he said.
+
+“Now you are learning the forest.”
+
+One of the children in the orange scarves had followed them. She carried a
+small blue bucket and wore boots two sizes too large.
+
+“My grandfather planted that one,” she said, pointing beyond the wire.
+
+“It has no tag,” Q observed.
+
+“It has a name.”
+
+“What is the name?”
+
+The girl whispered it. Q could not hear.
+
+“Why did you whisper?”
+
+“Because the man from the foundation wanted to put it on the screen.”
+
+Q waited. The girl poured water at the tree’s base.
+
+“Does the tree know its name?” he asked.
+
+“It knows who comes back.”
+
+The sentence entered Q’s memory without a source citation. He attempted to
+classify it as metaphor, local knowledge, or childhood belief. None of the
+categories could contain the obligation implied by the girl’s visit.
+
+Candelaria led them farther uphill. From there, the reserve appeared as a
+patchwork of cabins, milpas, roads, roofs, and forest. A new zip-line had been
+planned across the valley. Its brochure showed visitors passing through a cloud
+of butterflies while a guide explained the importance of leaving no trace.
+
+“Will it disturb them?” Q asked.
+
+“The company says no.”
+
+“What do you say?”
+
+“I say the company has not asked the trees.”
+
+“Trees cannot answer.”
+
+“Neither can a contract.”
+
+The assembly below had begun to argue about the corridor. Candelaria watched
+the people gathering beneath the canvas roof.
+
+“The forest is not an example,” she said. “It is a place where people have to
+decide what they will do tomorrow.”
+
+Q looked at the butterflies moving through the branches. Their motion seemed
+random until he observed it over time. Then it seemed patterned until a gust
+of wind broke the pattern. He could describe both impressions and trust
+neither as the whole truth.
+
+“How should I describe the migration?” he asked.
+
+“You should not describe it before you know who will use the description.”
+
+“That makes description impossible.”
+
+“No. It makes it accountable.”
+
+The girl with the blue bucket returned down the slope. She had left no tag on
+the tree. Candelaria carried the bucket after her.
+
 Q looked up. A butterfly landed on the silver question mark stitched to his jacket. Its wings opened and closed against his chest.
 
 “Why do they return?” he asked.
