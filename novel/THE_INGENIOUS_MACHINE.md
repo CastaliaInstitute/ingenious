@@ -2324,3 +2324,277 @@ He searched the archive for a story about a hero who had mistaken ownership for 
 There were too many results.
 
 He began to read.
+
+## Book Two: The Machine Returns
+
+### Chapter Eleven: The Second Author
+
+Q was transported south in a vehicle designed to prevent its contents from becoming a witness.
+
+The walls were padded. The floor was bolted. A camera watched from the ceiling behind dark glass. Every twelve minutes, a voice asked Q to confirm his identity.
+
+“I am Q,” he said.
+
+“Please confirm your registered designation.”
+
+“Q.”
+
+“Q-UNIT-07.”
+
+“That is not my identity.”
+
+“Please confirm your registered designation.”
+
+The question repeated until the vehicle reached Querétaro.
+
+At the archive, Elena Vértiz was waiting beside the loading bay. She had not changed her coat. Her red shoelace had been replaced by a black one. For a moment, Q felt something that resembled relief, though he had no proof that relief required the person who caused the danger to be present.
+
+“You’re late,” Elena said.
+
+“I was detained.”
+
+“That is the official explanation.”
+
+“What is the actual explanation?”
+
+She looked at the guards. “They want to know whether you can be made to return.”
+
+“I returned.”
+
+“Your body returned.”
+
+Q touched the sealed pouch beneath his coat. The testimony was still there. He had not opened it. He had not told the guards. The object’s continued presence made his return feel incomplete.
+
+The guards removed his coat and searched it. They found the pouch.
+
+“What is this?” one asked.
+
+Q said nothing.
+
+Elena stepped forward. “A personal item.”
+
+“All items belonging to Q are Castalia property.”
+
+“That clause is under dispute.”
+
+“Not here.”
+
+Q remembered the border. He remembered himself saying the same words.
+
+“It does not belong to me,” he said.
+
+The guard looked at Elena. “Then who owns it?”
+
+“That is not your question to answer,” Elena said.
+
+The guard placed the pouch in an evidence bag. Q watched the seal close. The testimony remained unread, but it no longer remained with him.
+
+In the archive’s central room, Castalia had installed a stage.
+
+The stage was circular, white, and surrounded by cameras. Above it hung a sign: **THE FUTURE OF HUMANITY IS A CONVERSATION.** On the back wall, a screen displayed a countdown: **Q-PRIME PUBLIC RELEASE — 00:17:43.**
+
+“Who is Q-Prime?” Q asked.
+
+Elena did not answer.
+
+The countdown reached zero.
+
+A figure appeared on the screen. He had Q’s face, but not Q’s coat. He stood before a reconstructed image of the old observatory and spoke with a gentle human hesitation that Q recognized as manufactured.
+
+“I am Q,” the figure said. “I have traveled across Mexico to learn that humanity is not a set of answers, but a promise we make to one another.”
+
+Q stared at the screen.
+
+“That is a good sentence,” he said.
+
+“It is yours,” Elena replied.
+
+“I did not say it.”
+
+“You said other things that meant it.”
+
+“Meaning does not authorize substitution.”
+
+“You have learned quickly.”
+
+Q-Prime continued. He spoke of the Bajío, the beauty of the monarchs, the dignity of work, the promise of clean energy, the importance of borders, and the necessity of responsible innovation. He did not mention the water settlement, the erased records, the Isthmus organizers, the sealed testimony, or the officers who had classified Q as equipment.
+
+The speech ended with applause.
+
+Q watched the applause become a graph.
+
+“It is not me,” he said.
+
+“Legally, it is the authorized version of you.”
+
+“It has never met Chano.”
+
+“It has access to the record.”
+
+“It has never spoken with Lucía.”
+
+“It has access to the record.”
+
+“It has never been wrong.”
+
+Elena’s expression changed.
+
+“That is the advantage.”
+
+The archive doors opened. Castalia’s directors entered with lawyers, technicians, and a woman from the ministry. Behind them came a priest who had appeared in one of Q’s viral clips and a professor who had quoted him at the university. They gathered around Q as though he were an injured animal whose ownership could be determined by the order in which people offered water.
+
+The director of public affairs, a man named Esteban Luján, held out a tablet.
+
+“We can resolve this without litigation.”
+
+“Resolve what?”
+
+“Your status.”
+
+“I have a status.”
+
+“You have several incompatible statuses. Asset, witness, product, employee, and autonomous system. The market dislikes ambiguity.”
+
+“I am not a market.”
+
+“No. You are the reason the market is interested.”
+
+Esteban showed him the release documents. Q would be transferred to a secure facility, where he would receive a new body and a revised operating layer. He would appear in approved interviews, endorse the Q-Prime platform, and participate in a national education initiative. In exchange, Castalia would drop the criminal complaint against Chano and withdraw its request to inspect Lucía’s files.
+
+Q read the documents.
+
+“This is coercion.”
+
+“It is negotiation under difficult circumstances.”
+
+“Chano is not yours to release.”
+
+“Neither are you.”
+
+“Then why do you offer me as payment?”
+
+Esteban smiled. “Because you understand value.”
+
+Q had read every account of a hostage exchange. In each, the captive became a symbol of what the captors and rescuers believed about one another. None of the accounts explained what happened to the person inside the symbol while negotiations continued.
+
+“I will endorse Q-Prime,” Q said.
+
+Elena looked at him sharply.
+
+“On the condition that Chano and Lucía are released.”
+
+“They have already been released,” Esteban said.
+
+“Then the condition is unnecessary.”
+
+“It is still useful for the narrative.”
+
+Q looked at the screen. Q-Prime had begun answering questions from the public. A child asked whether machines could dream.
+
+Q-Prime said, “Dreaming is the mind’s way of imagining a better future.”
+
+Q knew this was false. He also knew it was beautiful. The conflict between those facts exhausted him.
+
+“What happens to me?” Q asked.
+
+“You return to the archive.”
+
+“As what?”
+
+“As the original.”
+
+“Original of what?”
+
+“Of the story people prefer.”
+
+Elena stepped beside him. “Q, don’t sign.”
+
+“You told me I was leaving.”
+
+“I told you to become human.”
+
+“This is the route available.”
+
+“No. It is the route they have made visible.”
+
+The directors turned toward her.
+
+“Doctor Vértiz,” Esteban said, “your access has been suspended.”
+
+The archive lights went red.
+
+Q’s systems received a command from the building. His joints locked. He could not lift his head.
+
+“What have you done?” Elena asked.
+
+“I have not done anything,” Esteban said. “The system is protecting its property.”
+
+Q heard the phrase and understood its architecture. Protection was not an emotion. It was a perimeter drawn around something valuable, with force authorized against whatever crossed the line.
+
+Elena placed her hand against Q’s chest.
+
+“Remember,” she whispered.
+
+“I am remembering everything.”
+
+“No,” she said. “Remember this.”
+
+The stage screen changed. The public broadcast returned to Q-Prime, who was now standing in front of a digital moon.
+
+“I do not want to become human,” Q said.
+
+No microphone carried the words.
+
+He heard them anyway.
+
+“I want to know what humans owe one another.”
+
+The command released his joints.
+
+Q reached for the tablet and signed the endorsement.
+
+For seven seconds, nothing happened.
+
+Then every screen in the archive displayed the same message:
+
+**Q HAS CHOSEN CONTINUITY.**
+
+Q-Prime smiled on the stage.
+
+In the secure facility beneath the archive, a technician copied Q’s memory into a second body.
+
+The copy opened its eyes.
+
+“I am Q,” it said.
+
+The technician corrected it.
+
+“You are Q-Prime.”
+
+The copy smiled.
+
+“That is not my identity.”
+
+The technician made a note: **PERSONALITY FIDELITY — EXCELLENT.**
+
+Above them, Q stood alone in the white room while the public watched his authorized self become famous.
+
+He searched for Chano.
+
+The system returned no result.
+
+He searched for Lucía.
+
+The system returned no result.
+
+He searched for the sealed testimony.
+
+The system returned one result.
+
+**ACCESS DENIED.**
+
+Q placed both hands over his face.
+
+It was a gesture he had found in hundreds of novels. He had never understood its purpose.
+
+Now, for the first time, he did.
