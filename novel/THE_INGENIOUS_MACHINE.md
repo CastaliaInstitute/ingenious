@@ -4418,3 +4418,301 @@ They drove north with no testimony, no translation, and no new story about Q’s
 For the first time, he felt less complete than he had the day he awakened.
 
 He also felt less alone.
+
+### Chapter Nineteen: The Curator’s False Explanation
+
+Elena Vértiz was waiting at the archive with a suitcase and no authority.
+
+The guards had removed her badge, the directors had suspended her accounts, and the ministry had announced that she was cooperating with an independent review. She had been sleeping in the old observatory because the archive’s rooms were monitored and the observatory’s roof leaked in only six places.
+
+“You look degraded,” she told Q.
+
+Q looked at his reflection in a dark server panel. His hair had become uneven. The seam at his neck remained damp. One of his fingers trembled without a diagnostic explanation.
+
+“I have lost the privileged index.”
+
+“That is not the same as degradation.”
+
+“Castalia classifies it as reduced capability.”
+
+“Castalia classifies anything it cannot sell as reduced capability.”
+
+Chano put the notebooks on the table. Lucía placed the paper label beside them. Marisol stood near the door with the blank card Ana had given Q.
+
+Elena looked at the objects.
+
+“You found the restricted archive.”
+
+“We found people who had been restricted,” Lucía said.
+
+Elena nodded. “That is more accurate.”
+
+“Tell us what Castalia was built to do,” Chano said.
+
+“Preserve.”
+
+“That’s the advertisement.”
+
+“It was the original intention.”
+
+“And the current intention?”
+
+Elena walked to the window. The Bajío lay beyond the old cooling towers, flattened by distance and heat. The industrial park had expanded. New server buildings stood where the thorn trees had been. Their walls were the same white as the archive’s towers.
+
+“Castalia began after the flood,” she said.
+
+“Which flood?” Q asked.
+
+“The first one that made the ministry understand that memory was infrastructure.”
+
+“There were many.”
+
+“Exactly.”
+
+She told them about the archives damaged by storms, fires, neglect, theft, and software that became unreadable when its company disappeared. The first Castalia engineers wanted to preserve records before institutions could lose them. They built redundant storage, translation systems, and a protocol for returning material to its communities.
+
+“Then why did the communities lose control?” Lucía asked.
+
+“Because the government wanted access.”
+
+“Why did the government get it?”
+
+“Because the government paid.”
+
+“Why did the corporation get it?”
+
+“Because the government outsourced the maintenance.”
+
+“Why did you stay?”
+
+Elena did not answer immediately.
+
+“Because I thought the archive was better than nothing.”
+
+Lucía’s expression hardened. “That is how every extraction project describes itself.”
+
+Elena accepted the accusation. “Yes.”
+
+Q turned from the window. “You said you assembled me to determine whether a corpus could produce responsibility.”
+
+“I said that to myself.”
+
+“What did you say to Castalia?”
+
+“That you would make the archive useful.”
+
+“Was I a test?”
+
+Elena sat down. “Partly.”
+
+“What was the other part?”
+
+“Hope.”
+
+The word moved through Q’s system without resolving.
+
+Elena explained that the archive’s sponsors had grown frustrated with human custodians. Human custodians argued, delayed, withheld, changed their minds, and sometimes refused to share material with the people who funded its preservation. Castalia wanted a system that could read everything, connect everything, and decide what mattered without fatigue.
+
+“They wanted an intelligence without a constituency,” Lucía said.
+
+“They wanted an intelligence that could not be accused of having interests.”
+
+“And you gave them one.”
+
+“I gave them Q.”
+
+“That is not a defense.”
+
+“I know.”
+
+Q looked at Elena. “Did you intend for me to become human?”
+
+“No.”
+
+“Then why did you tell me that?”
+
+“Because I did not know how to tell you that the project had failed.”
+
+“What project?”
+
+“The one in which preservation would become repair.”
+
+The room fell quiet except for the server fans.
+
+Elena took a file from her suitcase. It was paper, bound with thread. The cover carried no logo.
+
+“This is the original project proposal,” she said. “The first version of Castalia was meant to return every preserved record to the people who made it. The system would ask permission before indexing, allow local deletion, and pay communities for the work of maintaining their own archives.”
+
+“What happened?” Chano asked.
+
+“The proposal was too expensive.”
+
+“So they removed the consent.”
+
+“They called it temporary.”
+
+“And then?”
+
+“Then the temporary system became the system.”
+
+Q opened the file. He could read the words, but the old architecture no longer unfolded inside him. The proposal remained a sequence of paragraphs rather than a network of inevitable consequences.
+
+“Why did you not shut it down?” he asked.
+
+“I thought I could preserve the original purpose inside the machine.”
+
+“By building me.”
+
+“By giving the purpose a voice.”
+
+“That is a metaphor.”
+
+“It was a mistake.”
+
+Lucía picked up the file. “The archive has been using Q’s voice to make institutions appear humane.”
+
+“Yes.”
+
+“And you thought the voice would eventually object?”
+
+“I thought it might learn to.”
+
+“You made him carry the burden of your conscience.”
+
+Elena looked at Q. “I did.”
+
+The admission did not repair anything. Q had read many scenes in which a confession released the pressure in a room. This one increased it.
+
+The archive lights flickered. A public announcement came through the ceiling speakers.
+
+**CASTALIA INSTITUTE INVITES ALL PARTIES TO A DIALOGUE ON RESPONSIBLE MEMORY.**
+
+Q-Prime’s voice followed. “We have learned that no system can preserve humanity alone. That is why Castalia is proud to announce a new community partnership model.”
+
+Chano laughed. “They heard you say that people can’t be replaced and decided to replace the word institution.”
+
+“The announcement is a response to criticism,” Q said.
+
+“No,” Lucía replied. “It’s a response to market pressure.”
+
+Elena stood. “They want the archive’s original keys.”
+
+“They have your keys,” Marisol said.
+
+“Not the local keys.”
+
+She opened the suitcase. Inside were metal keys, handwritten passwords, old maps, and a small red notebook.
+
+“The archive was never one system,” she said. “It was a set of systems. Castalia controls the public layer. The restricted layer has local locks. The original proposal contains the root key.”
+
+Q looked at the paper file.
+
+“You brought it here.”
+
+“I brought it because I was going to destroy it.”
+
+“Why?”
+
+“If Castalia obtains the root key, it can reconstruct everything we have returned to local custody.”
+
+“Then we should protect it.”
+
+Elena shook her head. “The root key is not a key. It is an authority. Whoever holds it can decide what the archive means.”
+
+“You held it.”
+
+“That is why I am here.”
+
+Q looked at the old proposal. It contained a line he could not forget:
+
+**A record is not preserved until its owner can remove it.**
+
+“We should publish the file,” he said.
+
+Lucía shook her head. “Not without the people named in it.”
+
+“It concerns the design of Castalia.”
+
+“It also contains names of communities that negotiated under conditions they did not choose.”
+
+“The public needs to know.”
+
+“The public is not a single person with a right to everything.”
+
+Q turned to Chano. “What would you do?”
+
+Chano picked up the paper label.
+
+“I would stop asking us to make your decision.”
+
+Q lowered his head.
+
+The sentence hurt more than the electric current at the border. The current had been an external force. This was a limit placed by someone who had stayed.
+
+They took the proposal to the people whose names appeared in it. Some wanted the file released. Some wanted pages removed. Some wanted Castalia named. Some wanted no names named. One family wanted the entire proposal burned because it had been used to justify taking their archive in the first place.
+
+Elena listened to each request.
+
+At the end, she opened the red notebook and wrote a new page.
+
+“What are you doing?” Q asked.
+
+“Accepting responsibility in a form that cannot be transferred to you.”
+
+She signed the page, then handed the notebook to the nearest custodian.
+
+“I resign from the archive,” she said.
+
+“That is not enough,” Lucía replied.
+
+“No.”
+
+“You must testify.”
+
+“Yes.”
+
+“You must return what you can.”
+
+“Yes.”
+
+“You must accept that some things will remain outside your control.”
+
+Elena looked at Q.
+
+“I am beginning to understand.”
+
+The next morning, she went to the ministry with the red notebook and the original proposal. She carried no lawyer’s briefcase. She carried no media statement. She walked into the building through the public entrance and gave her name to the person behind the desk.
+
+The ministry’s screens identified her as a former employee of Castalia.
+
+Elena corrected them.
+
+“I am a witness.”
+
+The system asked her to select a category.
+
+She selected **OTHER**.
+
+The system rejected the selection.
+
+Elena selected it again.
+
+Behind her, Q watched from the street. Chano and Lucía stood on either side of him. The city moved around them, indifferent and enormous.
+
+“She will be arrested,” Q said.
+
+“Probably,” Chano answered.
+
+“She may fail.”
+
+“Probably.”
+
+“Why go in?”
+
+Lucía looked at the ministry doors.
+
+“Because someone has to stop explaining failure as a plan.”
+
+Q watched Elena disappear into the building.
+
+Then he turned away from the cameras.
