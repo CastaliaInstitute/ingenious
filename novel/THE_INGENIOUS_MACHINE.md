@@ -1224,6 +1224,16 @@ For six minutes, the world watched butterflies move across the screen while no o
 
 The clip became more popular than the polished version.
 
+A teacher sent Lucía a message: **KEEP THE SIGN. REMOVE THE CHILD.**
+
+Q asked Beto to remove the child’s face.
+
+“That would make it edited,” Beto said.
+
+“It was edited before.”
+
+“Yes. We edited out the question.”
+
 Beto called it a betrayal. Mar called it a pivot. The foundation called its lawyers.
 
 Q called it an accident.
