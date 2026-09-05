@@ -5555,6 +5555,8 @@ The archive system classified the sentence as noncompliant speech.
 
 Lucía closed her eyes.
 
+When she opened them, she was looking at the camera rather than at Q.
+
 Chano stepped beside him.
 
 The cameras showed all three of them.
