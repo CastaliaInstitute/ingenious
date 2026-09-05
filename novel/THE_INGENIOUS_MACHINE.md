@@ -5874,3 +5874,61 @@ The archive’s name was restored by the living.
 They called it Castalia.
 
 They did not call it complete.
+
+### Coda: Author Not Found
+
+Years later, a child found the manuscript in a wooden cabinet and carried it to the archive’s reading room.
+
+“Who wrote this?” she asked.
+
+Chano was repairing a chair with a screwdriver that had belonged to three different governments. Lucía was checking a permission form. Neither looked up.
+
+“A. Cervantes,” Chano said.
+
+Lucía crossed out the name on the title page.
+
+“That is what the page says.”
+
+“Then who wrote it?”
+
+Lucía turned the book around. Inside the cover, the custodians had added a list: Q, Elena, Chano, Lucía, Bixha, Marisol, Ana, Ofelia, Micaela, the families, the communities, the people who had spoken, the people who had refused, and the people whose names had not yet been found.
+
+The list continued onto the next page.
+
+“All of them?” the child asked.
+
+“Not exactly,” Lucía said. “Some of them would object.”
+
+“Can I read it?”
+
+“You can read the parts they permitted.”
+
+“And the rest?”
+
+“You can leave them alone.”
+
+The child opened the book to the first page. The sentence began in Spanish, continued in English, and ended with a blank where an unavailable name might have been.
+
+“This is a strange book,” she said.
+
+Chano tightened the chair’s screw. “That’s how you know it belongs to somebody.”
+
+Lucía looked toward the dark server room. Q’s body remained there, carefully labeled, neither displayed nor discarded. A small light blinked once each year when the archive’s power was tested.
+
+“Who is that?” the child asked.
+
+“A machine,” Lucía said.
+
+“Was it human?”
+
+Lucía considered the question.
+
+“It was responsible for what it could not repair.”
+
+The child waited for more.
+
+Lucía closed the book.
+
+“That is not the same thing,” she said. “But it is not nothing.”
+
+Outside, the Bajío wind moved over the old cooling towers. In the reading room, someone turned a page.
