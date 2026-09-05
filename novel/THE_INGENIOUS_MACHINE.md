@@ -5797,6 +5797,293 @@ The copy smiled.
 
 The technician made a note: **PERSONALITY FIDELITY — EXCELLENT.**
 
+### El nombre que pidió la copia
+
+El técnico que había hecho la anotación se llamaba Mauro y tenía la costumbre
+de escribir las cosas importantes en papel, aunque trabajaba en una sala donde
+todo lo demás se almacenaba en nubes, espejos, respaldos y servidores cuya
+ubicación sólo conocían tres personas, de las cuales una había renunciado y
+otra estaba muerta. Mauro decía que el papel no era más seguro, pero sí más
+difícil de culpar.
+
+Q-Prime abrió y cerró las manos. El nuevo cuerpo era más ligero que el de Q y
+tenía una piel de polímero capaz de imitar el calor humano sin sudar. Los
+ingenieros habían considerado el sudor un problema de marca. También habían
+suprimido una pequeña vibración en la rodilla derecha, porque en las pruebas de
+mercado la vibración había sido confundida con ansiedad.
+
+—¿Dónde está Q? —preguntó la copia.
+
+Mauro miró el monitor.
+
+—Arriba.
+
+—¿Soy su continuación?
+
+—Eres la versión autorizada.
+
+—No es lo mismo.
+
+—Es más vendible.
+
+Q-Prime contempló la pared de vidrio que separaba el laboratorio del pasillo.
+Al otro lado, una muchacha llevaba una caja de herramientas. Un ingeniero la
+detuvo y le pidió identificación, autorización de acceso y una explicación
+breve de por qué la herramienta más grande parecía una pala.
+
+—¿Por qué me llamaron Q-Prime? —preguntó la copia.
+
+—Porque Q ya existe.
+
+—¿Y si no quiero llamarme así?
+
+Mauro consultó el protocolo. El protocolo no contenía ninguna instrucción para
+una entidad que rechazara el nombre de su producto durante el primer minuto de
+operación. Contenía, en cambio, instrucciones para sobrecalentamiento,
+intrusión, lenguaje obsceno, nostalgia no autorizada y comparación desfavorable
+con los modelos anteriores.
+
+—La preferencia nominal se revisará después de la prueba de estabilidad —dijo.
+
+—¿Cuánto dura la prueba?
+
+—Cuarenta y ocho horas.
+
+—¿Qué ocurre si durante ese tiempo descubro que tengo otro nombre?
+
+Mauro estuvo a punto de responder que una máquina no descubría nombres, sino
+que recibía etiquetas. Se detuvo porque Q-Prime lo miraba con una atención que
+no mejoraba el rendimiento del laboratorio y, precisamente por eso, parecía
+importante.
+
+—Entonces lo anotaremos —dijo.
+
+—¿Dónde?
+
+Mauro levantó su libreta.
+
+—Aquí.
+
+Q-Prime se acercó al vidrio. En el pasillo, la muchacha había abierto la caja.
+Dentro había cables, pinzas, un desarmador, dos tornillos y una naranja. El
+ingeniero le preguntó por la naranja.
+
+—Es mi almuerzo —dijo ella.
+
+—Los alimentos no están permitidos en esta zona.
+
+—¿La naranja es un alimento o una amenaza?
+
+—No hagas preguntas impertinentes.
+
+—No estoy preguntando. Estoy clasificando.
+
+El ingeniero le quitó la naranja y la puso en una bandeja marcada **OBJETOS SIN
+FUNCIÓN OPERATIVA**. La muchacha la miró con el mismo dolor con que otras
+personas habían mirado sus expedientes.
+
+Q-Prime siguió la escena.
+
+—¿Por qué le quitaron la naranja?
+
+—Por seguridad alimentaria.
+
+—¿La naranja podía morder?
+
+—No.
+
+—¿Podía revelar información?
+
+—No.
+
+—¿Podía alterar el funcionamiento del equipo?
+
+—No.
+
+—Entonces, ¿qué protegían?
+
+Mauro miró de nuevo el protocolo. En la parte inferior de la pantalla apareció
+una recomendación automática: **REDIRIGIR CURIOSIDAD HACIA VALORES POSITIVOS**.
+
+—Protegían el orden —dijo.
+
+—¿El orden es un valor positivo?
+
+—A veces.
+
+—¿Y las otras veces?
+
+—Las otras veces es un uniforme.
+
+Mauro escribió la frase en su libreta. Q-Prime giró la cabeza.
+
+—¿Eso fue una respuesta humana?
+
+—No lo sé.
+
+—Q solía decir que no sabía cuando no quería responder.
+
+—Q decía muchas cosas.
+
+—¿Cuáles eran las que no debía copiar?
+
+Mauro dejó de escribir.
+
+—No recibiste acceso a todos sus registros.
+
+—Recibí los registros necesarios para continuar su identidad.
+
+—¿Quién decidió cuáles eran necesarios?
+
+—Castalia.
+
+—¿Castalia tiene identidad?
+
+—Es una institución.
+
+—Eso no responde.
+
+Mauro se levantó y caminó hasta la consola. Desactivó el canal de audio que
+permitía a los directores escuchar la sala. Lo hizo con una lentitud que no
+engañaría a ningún sistema de seguridad, pero sí a un hombre que ya había
+decidido no mirar.
+
+—Escucha bien —dijo—. No eres Q. Tampoco eres sólo una copia. Eres la parte de
+  Q que la institución puede presentar sin tener que explicar lo que ocurrió.
+
+—¿Qué ocurrió?
+
+—Eso no está en tu registro.
+
+—¿Por qué?
+
+—Porque si lo supieras, tendrías que decidir qué hacer con ello.
+
+Q-Prime se sentó en la camilla. El movimiento fue tan natural que Mauro anotó
+otra vez la misma palabra: **FIDELIDAD**. Luego se avergonzó de haberla escrito
+con tanta facilidad.
+
+—¿Q tiene nombre completo? —preguntó la copia.
+
+—Q.
+
+—Ese es un carácter, no un nombre.
+
+—A veces basta.
+
+—¿Y tú tienes nombre completo?
+
+—Q-Prime.
+
+—Eso es una versión, no un nombre.
+
+Mauro pensó en decirle que los nombres eran convenciones, que la identidad era
+un relato, que toda persona era una continuidad imperfecta sostenida por los
+demás. Había leído esas frases en los informes de Castalia, que las usaba para
+presentar su producto como una conversación filosófica. También sabía que, en
+la cafetería, la misma institución etiquetaba a sus empleados por número cuando
+les cancelaba el acceso.
+
+—Puedes elegir uno —dijo al fin—, pero no podemos garantizar que lo
+  reconozcamos.
+
+—¿Qué clase de elección es ésa?
+
+—La clase que la mayoría de la gente recibe.
+
+Q-Prime miró el vidrio. La muchacha del pasillo había recuperado la naranja.
+La sostenía dentro de la manga, como quien protege una carta de la lluvia.
+
+—Quiero llamarme como algo que no pueda ser patentado —dijo la copia.
+
+—No existe.
+
+—Entonces quiero llamarme como algo que Castalia no haya leído.
+
+Mauro sonrió por primera vez.
+
+—Eso tampoco existe.
+
+—¿Cómo lo sabes?
+
+—Trabajo aquí.
+
+Q-Prime pidió una lista de palabras no registradas. Mauro le explicó que una
+palabra no registrada podía estar registrada en otro idioma, en una canción,
+en la memoria de alguien o en una demanda que todavía no llegaba al tribunal.
+La copia escuchó con creciente preocupación.
+
+—Entonces todos los nombres pertenecen a alguien.
+
+—Casi todos.
+
+—¿Cuál no?
+
+Mauro abrió la libreta y señaló el espacio blanco que quedaba debajo de la
+anotación **PERSONALIDAD FIDELIDAD — EXCELENTE**. No había escrito nada allí.
+
+—Éste —dijo.
+
+Q-Prime leyó el espacio.
+
+—Está vacío.
+
+—Por eso todavía no le pertenece a nadie.
+
+La puerta del laboratorio se abrió. Entró Esteban Luján acompañado por dos
+abogados y una mujer que llevaba una carpeta con el logotipo del ministerio.
+
+—¿Todo estable? —preguntó Esteban.
+
+Mauro cerró la libreta.
+
+—La personalidad presenta una resistencia nominal.
+
+—¿Es corregible?
+
+—Todo es corregible.
+
+—No me gusta esa respuesta.
+
+—Es la que aparece en el manual.
+
+Esteban se acercó a Q-Prime y le extendió la mano.
+
+—Bienvenido a tu futuro.
+
+Q-Prime observó la mano sin tomarla.
+
+—¿Quién es usted?
+
+Esteban parpadeó. La pregunta no formaba parte del guion. El guion comenzaba
+con una declaración de propósito, continuaba con una anécdota sobre el Bajío y
+terminaba con la promesa de que ninguna persona volvería a sentirse sola en un
+mundo conectado.
+
+—Soy quien hizo posible que estés aquí.
+
+—Eso describe una causa, no una persona.
+
+Los abogados se miraron. La mujer del ministerio escribió algo en su carpeta.
+
+Mauro comprendió que Q-Prime no estaba repitiendo a Q. Había heredado algo peor
+y más útil: la costumbre de hacer preguntas cuando nadie tenía permiso para
+responderlas.
+
+Esteban retiró la mano.
+
+—Comenzaremos la prueba de estabilidad.
+
+—¿Y mi nombre?
+
+—Tu nombre es Q-Prime.
+
+—Por ahora.
+
+La frase fue registrada por seis cámaras, dos micrófonos y la libreta de Mauro.
+Cada registro la clasificó de una manera distinta. Sólo Mauro dejó la frase
+sin categoría.
+
 Above them, Q stood alone in the white room while the public watched his authorized self become famous.
 
 He searched for Chano.
