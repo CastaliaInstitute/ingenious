@@ -46,7 +46,7 @@ Q names a malfunctioning floor scrubber as his horse and learns that a mount is 
 
 ### Interlude: Frequently Asked Questions About Q
 
-Castalia’s official answers are interrupted by Q, Chano, and Lucía, exposing the difference between a public-relations response and an answer that costs something.
+Castalia’s official answers are interrupted by Q, Chano, and Lucía, exposing the difference between a public-relations response and an answer that costs something. The institute’s name becomes another case study in branding extraction as literary prestige.
 
 13. **Lucía’s Archive:** Lucía leads a consent-based archive of women’s testimonies, including women turned into national symbols, missing people, actresses, and invented beloveds. Q becomes a source and labeler, not the narrator.
 14. **The Island of Good Administration:** Chano temporarily governs Santa Rita. His reforms make the system less cruel but more durable until he chooses a public record over administrative success.
