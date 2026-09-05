@@ -4892,7 +4892,9 @@ She signed the page, then handed the notebook to the nearest custodian.
 
 Elena looked at Q.
 
-“I am beginning to understand.”
+“I do not understand yet,” she said. “I know what I must do next.”
+
+Chano nodded. “That is already better than most management.”
 
 The next morning, she went to the ministry with the red notebook and the original proposal. She carried no lawyer’s briefcase. She carried no media statement. She walked into the building through the public entrance and gave her name to the person behind the desk.
 
