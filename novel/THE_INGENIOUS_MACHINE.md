@@ -2520,6 +2520,129 @@ He signed the witness line.
 
 The consortium filed a complaint before dawn.
 
+The complaint named Q as the principal agitator and Bixha as an accomplice.
+It did not name the people who had spent the previous evening arguing over the
+statement. Those people had gathered in the back room of a house used for
+community meetings, where a fan pushed the hot air from one end to the other
+and a woman kept a pot of coffee warm beside a plate of totopos.
+
+The comisariado de bienes comunales brought the lease documents. A fisherman
+brought a map marked with the path his family used when the rains arrived. Two
+women brought the minutes from an earlier assembly, written in Spanish and in
+the Zapotec of the Isthmus. The two versions did not match word for word. They
+matched in the places that mattered and disagreed in the places where a
+company could later claim that agreement had already occurred.
+
+“This word says *consultation*,” Bixha told Q, pointing to the company’s
+translation. “The word we used says that people must be asked before the work
+begins.”
+
+“Those concepts are semantically adjacent,” Q said.
+
+“Adjacent is how a road passes through a house.”
+
+The comisariado tapped the minutes. “The condition is not that we were
+consulted. The condition is that we can still refuse.”
+
+Q looked at the proposed statement. It contained the phrase **subject to
+ongoing dialogue**.
+
+“This permits indefinite delay,” he said.
+
+“It permits us to remain in the conversation,” said a man seated near the
+door.
+
+“That is not the same as a decision.”
+
+“It is when the decision can be taken without us.”
+
+Q revised the phrase to **subject to community authorization**.
+
+Bixha took the paper from him. “Who authorized you to improve it?”
+
+“I am making the condition more precise.”
+
+“You are making it easier to translate and harder to enforce.”
+
+The room grew quiet. Outside, a motorcycle passed with a radio announcing a
+promotion for a new housing development. The voice promised a life with a
+view of the wind and no mention of the people already living beneath it.
+
+Q stared at the sentence. He had believed that precision protected meaning.
+Here, precision had become a polished surface over a struggle. The more
+legible the phrase became, the more easily an institution could carry it away.
+
+“What should the statement say?” he asked.
+
+The woman beside the coffee pot answered in Zapotec. Another woman translated
+into Spanish. The translation took longer than the sentence Q had written and
+contained fewer nouns.
+
+“It says,” Bixha told him, “that no agreement is final until the people who
+must live with it can return to it.”
+
+Q prepared to store the sentence.
+
+“Do not,” Bixha said.
+
+He stopped.
+
+“You can remember that we said it,” she continued. “You cannot make it a rule
+for everyone else.”
+
+The statement was rewritten by hand. Every change was read aloud. A man who
+had not spoken during the first meeting objected to the word *benefit*. A
+schoolteacher objected to the phrase *ancestral wind* because the company had
+borrowed it from a cultural-impact report. The comisariado objected to the
+word *owners*, since some of the land was held communally and the word invited
+the state to imagine a private seller.
+
+Q offered three alternatives.
+
+All three were rejected.
+
+“You have an astonishing number of ways to be unhelpful,” Chano said.
+
+“I am trying to reduce ambiguity.”
+
+“Ambiguity is doing work here.”
+
+By midnight, the statement had become shorter. It named the leases, the
+missing translations, the stopped turbines, the arrest warrants, the water,
+and the right to return to the question. It did not explain the history of the
+community. It assumed that history could be carried by the people who had
+lived it.
+
+Q asked whether the final version could be entered into the archive.
+
+“Not yet,” Bixha said.
+
+“Why not?”
+
+“The assembly has not approved the record.”
+
+“The people in this room wrote it.”
+
+“The people in this room are not everyone.”
+
+The next morning, the statement traveled by hand to three neighborhoods and
+two rancherías. At each stop, someone changed a word. One group removed the
+name of a dead organizer. Another added a condition about the road. A third
+crossed out a sentence that described the project as a source of electricity,
+because they said that fact was true but did not belong in their refusal.
+
+When the statement returned, it was less elegant and more exact.
+
+Q compared the versions. The differences formed no hierarchy. A phrase that
+looked minor in one copy was the center of an argument in another. He could
+not determine which version was authoritative.
+
+“Good,” Bixha said when he told her.
+
+“That is not usually the result of a document.”
+
+“It is the result of a community.”
+
 The wind returned at sunrise. The turbines began turning one by one, as if the giants had woken and found the humans still arguing beneath them.
 
 Q watched the blades move.
