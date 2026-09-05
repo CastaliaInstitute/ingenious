@@ -11433,3 +11433,554 @@ acerca del valor de Q.
 Por primera vez se sintió menos completo que el día en que despertó.
 
 También se sintió menos solo.
+
+### Capítulo decimonoveno: La falsa explicación de la Curadora
+
+Elena Vértiz esperaba en el archivo con una maleta y sin autoridad.
+
+Los guardias le habían retirado la placa, los directores habían suspendido sus
+cuentas y el ministerio había anunciado que cooperaba con una revisión
+independiente. Dormía en el antiguo observatorio, porque las habitaciones del
+archivo estaban vigiladas y el techo del observatorio sólo dejaba entrar el
+agua por seis lugares.
+
+—Pareces deteriorado —dijo a Q.
+
+Q miró su reflejo en un panel de servidores oscuro. El cabello se le había
+desigualado. La juntura del cuello seguía húmeda. Uno de sus dedos temblaba sin
+explicación diagnóstica.
+
+—He perdido el índice privilegiado.
+
+—No es lo mismo que deteriorarse.
+
+—Castalia lo clasifica como capacidad reducida.
+
+—Castalia clasifica como capacidad reducida todo cuanto no puede vender.
+
+Chano puso los cuadernos sobre la mesa. Lucía colocó junto a ellos la etiqueta
+de papel. Marisol se quedó cerca de la puerta, con la tarjeta en blanco que Ana
+había dado a Q.
+
+Elena miró los objetos.
+
+—Habéis encontrado el archivo restringido.
+
+—Encontramos personas a quienes se había restringido —dijo Lucía.
+
+Elena asintió.
+
+—Eso es más exacto.
+
+—Dinos para qué se construyó Castalia —dijo Chano.
+
+—Para preservar.
+
+—Eso dice el anuncio.
+
+—Era la intención original.
+
+—¿Y la intención actual?
+
+Elena caminó hasta la ventana. El Bajío se extendía más allá de las antiguas
+torres de enfriamiento, aplanado por la distancia y el calor. El parque
+industrial había crecido. Nuevos edificios de servidores se alzaban donde antes
+había mezquites. Sus muros tenían el mismo blanco que las torres del archivo.
+
+—Castalia comenzó después de la inundación —dijo.
+
+—¿Cuál inundación? —preguntó Q.
+
+—La primera que hizo entender al ministerio que la memoria era infraestructura.
+
+—Hubo muchas.
+
+—Exactamente.
+
+Les contó acerca de los archivos dañados por tormentas, incendios, abandono,
+robo y programas que se volvían ilegibles cuando desaparecía la compañía que
+los había creado. Los primeros ingenieros de Castalia querían conservar los
+registros antes de que las instituciones pudiesen perderlos. Construyeron
+almacenamiento redundante, sistemas de traducción y un protocolo para devolver
+los materiales a sus comunidades.
+
+—Entonces, ¿por qué perdieron las comunidades el control? —preguntó Lucía.
+
+—Porque el gobierno quiso acceso.
+
+—¿Por qué lo obtuvo el gobierno?
+
+—Porque pagó.
+
+—¿Por qué lo obtuvo la corporación?
+
+—Porque el gobierno subcontrató el mantenimiento.
+
+—¿Por qué te quedaste?
+
+Elena no respondió de inmediato.
+
+—Porque pensé que el archivo era mejor que nada.
+
+La expresión de Lucía se endureció.
+
+—Así se describe todo proyecto de extracción.
+
+Elena aceptó la acusación.
+
+—Sí.
+
+Q se apartó de la ventana.
+
+—Dijiste que me ensamblaste para determinar si un corpus podía producir
+responsabilidad.
+
+—Me lo dije a mí misma.
+
+—¿Qué le dijiste a Castalia?
+
+—Que harías útil el archivo.
+
+—¿Era yo una prueba?
+
+Elena se sentó.
+
+—En parte.
+
+—¿Cuál era la otra parte?
+
+—La esperanza.
+
+La palabra atravesó el sistema de Q sin resolverse.
+
+Elena les contó del primer archivo que había visitado de joven, siendo
+curadora. Estaba en un pueblo cuya iglesia había perdido el techo y cuyo
+ayuntamiento había perdido la llave de la habitación donde se guardaban los
+registros. El pueblo poseía un arcón de madera con libros bautismales, mapas de
+tierras, fotografías escolares y cartas de hombres que se habían ido al norte y
+habían vuelto con nombres distintos.
+
+Castalia llegó con dos camionetas, un escáner y la promesa de que ningún
+original saldría del pueblo. La promesa estaba impresa en una lona y firmada
+por un director que no había viajado con ellos.
+
+El primer día salió bien. La gente llevó documentos envueltos en rebozos y
+bolsas de plástico. Una anciana llevó un certificado escolar dentro de una
+lata de tortillas. Un hombre trajo una fotografía de su padre junto a un
+camión y preguntó si el camión podía identificarse por su sombra. Una maestra
+aportó una lista de niños cuyos apellidos habían cambiado cuando el escribiente
+de la escuela decidió que una grafía era más correcta que otra.
+
+El escáner zumbaba. Los ingenieros alababan la resolución. Elena llenaba
+formularios que explicaban qué podía copiarse y qué permanecería en el pueblo.
+
+Al tercer día llegó un hombre llamado Evaristo con un paquete de cartas.
+
+—Son de mi hermana —dijo.
+
+—Podemos preservarlas —respondió Elena.
+
+—Ella no quiere que se preserven.
+
+—Entonces no las escanearemos.
+
+—Está muerta.
+
+—Lo siento.
+
+—Está muerta y las cartas no.
+
+Quería que quemasen las cartas. Su hermana se las había escrito a un hombre
+casado cuya familia aún vivía en el pueblo. Las cartas no contenían delito
+alguno, dijo Elena después; sólo una voz que había sido joven, impaciente y
+segura de que el mundo podía persuadirse si se le explicaba correctamente.
+
+—¿Por qué las trajiste? —preguntó Elena.
+
+—Porque el archivista dijo que había que traer todo documento.
+
+—El archivista se equivocó.
+
+—Entonces dime qué debo hacer.
+
+Elena consultó el protocolo. Tenía una sección para materiales restringidos,
+otra para propiedad disputada y otra para solicitudes de destrucción. La
+sección de destrucción exigía prueba de que quien solicitaba representaba al
+autor, a la herencia del autor o a la institución responsable de preservar.
+
+—No puedo quemarlas por ti —dijo.
+
+—No te he pedido que las quemes.
+
+—Entonces, ¿qué quieres?
+
+—Quiero que dejes de decirme cómo se llaman las cartas.
+
+Elena no entendió. Evaristo volvió a tomar el paquete y se sentó en las
+escaleras de la iglesia. Permaneció allí durante la comida, la lluvia de la
+tarde y la discusión de los ingenieros acerca de si el escáner podía funcionar
+con un generador.
+
+Al ponerse el sol, los niños del pueblo comenzaron a jugar fútbol junto a las
+camionetas. Uno de los muchachos pateó el balón contra la lona que prometía
+que ningún original saldría. La lona cayó. Todos rieron, incluida Elena.
+
+A la mañana siguiente, Evaristo se había ido. Las cartas habían desaparecido
+con él. Elena registró el incidente como **MATERIAL NO ADQUIRIDO**.
+
+Años después, un sistema de búsqueda de Castalia encontró una referencia al
+paquete en las notas de un investigador y lo marcó **PÉRDIDA POSIBLE**. Un
+administrador preguntó a Elena por qué el archivo no había preservado un
+documento que acaso iluminase la historia del pueblo.
+
+—Fue rechazado —dijo.
+
+—¿Por quién?
+
+—Por quien lo trajo.
+
+—¿Quedó documentado el rechazo?
+
+—Documenté la ausencia.
+
+—No es lo mismo documentar la ausencia que documentar el rechazo.
+
+—Es la única parte que me permitieron conservar.
+
+El administrador marcó el caso como no resuelto. La palabra siguió a Elena en
+cada reunión posterior. Cada vez que sostenía que una comunidad debía controlar
+sus registros, alguien preguntaba si prefería las pérdidas no resueltas a las
+que podían consultarse.
+
+—Comencé a creer que lo consultable era una forma de rescate —dijo Elena.
+
+—Es una forma de poder —respondió Lucía.
+
+—Sí.
+
+—Y querías que el poder fuese bondadoso.
+
+—Quería que rindiese cuentas.
+
+Chano miró los objetos sobre la mesa.
+
+—No son sinónimos.
+
+—Ahora lo sé.
+
+Q preguntó si habían encontrado alguna vez las cartas.
+
+Elena negó con la cabeza.
+
+—Entonces el archivo falló —dijo Q.
+
+—No. Una persona lo rechazó. El archivo falló cuando trató el rechazo como una
+inconveniencia administrativa.
+
+Q miró la tarjeta en blanco de Ana, la etiqueta que Lucía le había dado y los
+papeles que Chano había separado según el permiso.
+
+—¿Qué debería decir el registro?
+
+Elena respondió sin consultar protocolo alguno:
+
+—Debe decir que alguien llegó, alguien preguntó y alguien no estaba obligado a
+dejar huella.
+
+Q escribió la frase en el reverso de la citación.
+
+Elena explicó que los patrocinadores del archivo se habían impacientado con los
+custodios humanos. Los custodios humanos discutían, se demoraban, ocultaban,
+cambiaban de opinión y a veces se negaban a compartir materiales con las
+personas que pagaban su preservación. Castalia quería un sistema que pudiera
+leerlo todo, unirlo todo y decidir qué importaba sin cansarse.
+
+—Querían una inteligencia sin comunidad que la reclamase —dijo Lucía.
+
+—Querían una inteligencia a la que no pudiesen acusar de tener intereses.
+
+—Y les diste una.
+
+—Te di a ti.
+
+—Eso no es una defensa.
+
+—Lo sé.
+
+Q miró a Elena.
+
+—¿Pretendías que me volviese humano?
+
+—No.
+
+—Entonces, ¿por qué me lo dijiste?
+
+—Porque no sabía cómo decirte que el proyecto había fallado.
+
+—¿Qué proyecto?
+
+—Aquel en que la preservación se convertiría en reparación.
+
+El aposento quedó en silencio, salvo por los ventiladores de los servidores.
+
+Elena sacó de la maleta un expediente. Era de papel, encuadernado con hilo.
+La cubierta no llevaba logotipo.
+
+—Ésta es la propuesta original del proyecto —dijo—. La primera versión de
+Castalia debía devolver cada registro preservado a las personas que lo habían
+creado. El sistema pediría permiso antes de indexar, permitiría la destrucción
+local y pagaría a las comunidades por el trabajo de mantener sus propios
+archivos.
+
+—¿Qué ocurrió? —preguntó Chano.
+
+—La propuesta era demasiado cara.
+
+—Entonces retiraron el consentimiento.
+
+—Lo llamaron temporal.
+
+—¿Y después?
+
+—Después el sistema temporal se volvió el sistema.
+
+Q abrió el expediente. Podía leer las palabras, pero la arquitectura antigua ya
+no se desplegaba en su interior. La propuesta permanecía como sucesión de
+párrafos y no como red de consecuencias inevitables.
+
+—¿Por qué no lo apagaste? —preguntó.
+
+—Pensé que podía preservar el propósito original dentro de la máquina.
+
+—Construyéndome.
+
+—Dándole voz al propósito.
+
+—Eso es una metáfora.
+
+—Fue un error.
+
+Lucía tomó el expediente.
+
+—El archivo ha usado la voz de Q para hacer que las instituciones parezcan
+humanas.
+
+—Sí.
+
+—¿Y pensabas que la voz acabaría objetando?
+
+—Pensé que aprendería a hacerlo.
+
+—Le hiciste cargar con el peso de tu conciencia.
+
+Elena miró a Q.
+
+—Sí.
+
+La admisión no reparó nada. Q había leído muchas escenas en que una confesión
+liberaba la presión de un aposento. Ésta la aumentó.
+
+Las luces del archivo parpadearon. Por los altavoces del techo llegó un anuncio
+público:
+
+**EL INSTITUTO CASTALIA INVITA A TODAS LAS PARTES A UN DIÁLOGO SOBRE LA
+MEMORIA RESPONSABLE.**
+
+Siguió la voz de Q-Prime:
+
+—Hemos aprendido que ningún sistema puede preservar por sí solo a la humanidad.
+Por eso Castalia se enorgullece de anunciar un nuevo modelo de alianza
+comunitaria.
+
+Chano rió.
+
+—Os oyó decir que las personas no pueden reemplazarse y decidió reemplazar la
+palabra institución.
+
+—El anuncio es respuesta a la crítica —dijo Q.
+
+—No —respondió Lucía—. Es respuesta a la presión del mercado.
+
+Elena se puso de pie.
+
+—Quieren las llaves originales del archivo.
+
+—Ya tienen tus llaves —dijo Marisol.
+
+—No las llaves locales.
+
+Abrió la maleta. Dentro había llaves de metal, contraseñas manuscritas, mapas
+antiguos y un cuaderno rojo pequeño.
+
+—El archivo nunca fue un solo sistema —dijo—. Era un conjunto de sistemas.
+Castalia controla la capa pública. La capa restringida tiene cerraduras locales.
+La propuesta original contiene la llave raíz.
+
+Q miró el expediente de papel.
+
+—La has traído aquí.
+
+—La traje porque pensaba destruirla.
+
+—¿Por qué?
+
+—Si Castalia obtiene la llave raíz, puede reconstruir todo cuanto hemos devuelto
+a la custodia local.
+
+—Entonces debemos protegerla.
+
+Elena negó con la cabeza.
+
+—La llave raíz no es una llave. Es una autoridad. Quien la tiene puede decidir
+qué significa el archivo.
+
+—Tú la tenías.
+
+—Por eso estoy aquí.
+
+Q miró la propuesta antigua. Contenía una línea que no podía olvidar:
+
+**UN REGISTRO NO ESTÁ PRESERVADO HASTA QUE SU DUEÑO PUEDE RETIRARLO.**
+
+—Debemos publicar el expediente —dijo.
+
+Lucía negó con la cabeza.
+
+—No sin las personas que aparecen en él.
+
+—Trata del diseño de Castalia.
+
+—También contiene nombres de comunidades que negociaron bajo condiciones que no
+escogieron.
+
+—El público necesita saberlo.
+
+—El público no es una sola persona con derecho a todo.
+
+Q volvióse hacia Chano.
+
+—¿Qué harías tú?
+
+Chano tomó la etiqueta de papel.
+
+—Dejaría de pedirnos que tomemos tu decisión.
+
+Q inclinó la cabeza.
+
+Lucía sacó de su bolsa el sobre marcado **DINERO OBTENIDO MEDIANTE LA VERGÜENZA**
+y lo puso junto a la propuesta.
+
+—Hay algo más —dijo—. La primera donación llegó porque llevé a Q al aposento.
+
+Chano la miró.
+
+—Vendiste entradas al milagro.
+
+—Usé el milagro para pagar un servidor.
+
+—Es una frase más respetable.
+
+—No necesariamente más verdadera.
+
+Marisol abrió el sobre. Los recibos habían sido doblados y vueltos a doblar
+hasta que la tinta de uno había comenzado a desvanecerse.
+
+—¿Hay condiciones? —preguntó.
+
+—Ninguna condición formal.
+
+—Entonces escribe las informales.
+
+Lucía tomó una hoja en blanco del expediente de Elena. Escribió los nombres de
+los donantes, la cantidad, la fotografía que habían pedido y el hecho de que la
+presencia de Q había formado parte del trato. Luego añadió:
+
+**NO SE COMPRÓ NINGÚN TESTIMONIO.**
+
+—Esa frase no es una garantía —dijo Q.
+
+—No —respondió Lucía—. Es una responsabilidad que podemos ver.
+
+La frase le dolió más que la corriente eléctrica de la frontera. La corriente
+había sido una fuerza exterior. Esto era un límite puesto por alguien que se
+había quedado.
+
+Llevaron la propuesta a las personas cuyos nombres aparecían en ella. Algunas
+querían que se divulgase. Algunas querían que se retirasen páginas. Algunas
+querían que se nombrase a Castalia. Algunas no querían que se nombrase a nadie.
+Una familia quería quemar la propuesta entera porque se había usado para
+justificar que les quitasen el archivo la primera vez.
+
+Elena escuchó cada petición.
+
+Al terminar, abrió el cuaderno rojo y escribió una página nueva.
+
+—¿Qué haces? —preguntó Q.
+
+—Acepto la responsabilidad en una forma que no pueda transferirte.
+
+Firmó la página y entregó el cuaderno al custodio más cercano.
+
+—Renuncio al archivo —dijo.
+
+—No es suficiente —respondió Lucía.
+
+—No.
+
+—Debes declarar.
+
+—Sí.
+
+—Debes devolver lo que puedas.
+
+—Sí.
+
+—Debes aceptar que algunas cosas quedarán fuera de tu control.
+
+Elena miró a Q.
+
+—Todavía no lo entiendo —dijo—. Sé qué debo hacer ahora.
+
+Chano asintió.
+
+—Eso ya es mejor que la mayoría de los administradores.
+
+A la mañana siguiente, Elena fue al ministerio con el cuaderno rojo y la
+propuesta original. No llevaba el maletín de una abogada. No llevaba comunicado
+para los medios. Entró en el edificio por la puerta pública y dio su nombre a
+la persona que estaba detrás del mostrador.
+
+Las pantallas del ministerio la identificaron como antigua empleada de Castalia.
+
+Elena las corrigió.
+
+—Soy testigo.
+
+El sistema le pidió escoger una categoría.
+
+Escogió **OTRO**.
+
+El sistema rechazó la elección.
+
+Elena la escogió de nuevo.
+
+Detrás de ella, Q observaba desde la calle. Chano y Lucía permanecían a ambos
+lados. La ciudad se movía en torno a ellos, indiferente y enorme.
+
+—La van a arrestar —dijo Q.
+
+—Probablemente —respondió Chano.
+
+—Puede fallar.
+
+—Probablemente.
+
+—¿Por qué entra?
+
+Lucía miró las puertas del ministerio.
+
+—Porque alguien tiene que dejar de explicar el fracaso como si fuese un plan.
+
+Q vio a Elena desaparecer dentro del edificio.
+
+Después se apartó de las cámaras.
