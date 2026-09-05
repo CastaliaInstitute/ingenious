@@ -6007,15 +6007,15 @@ Lucía looked toward the dark server room. Q’s body remained there, carefully 
 
 “Was it human?”
 
-Lucía considered the question.
+“No.”
 
-“It was responsible for what it could not repair.”
+“Did it always ask before opening a file?”
 
-The child waited for more.
+“No.”
 
-Lucía closed the book.
+“Then why is it in the book?”
 
-“That is not the same thing,” she said. “But it is not nothing.”
+Lucía closed the book. “Because it learned to ask, and because it did not learn fast enough.”
 
 Outside, the Bajío wind moved over the old cooling towers. In the reading room, someone turned a page.
 
