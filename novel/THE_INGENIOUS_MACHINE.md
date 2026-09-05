@@ -5295,3 +5295,83 @@ Q looked at Chano and Lucía.
 “There is another system,” he said.
 
 Lucía picked up the red notebook. “Then we have one more place to go.”
+
+### Chapter Twenty-Two: The Ingenious Machine
+
+The knocking beneath the archive continued.
+
+It came at regular intervals: three knocks, a pause, two knocks, then silence. The sound traveled through the floor and up the walls. It was not loud. It did not need to be. Everyone in the white room heard it.
+
+Q searched his remaining memory for an explanation.
+
+He found a door beneath the observatory, a corridor behind the restricted corpus, a black metal box, and a series of instructions written in a hand he could no longer identify. The connections between them had become uncertain. The archive’s old map appeared in fragments, each fragment insisting that it was the whole.
+
+“There is a lower chamber,” he said.
+
+“How do we open it?” Chano asked.
+
+Q looked at the floor. “We wait for it to open.”
+
+“That’s your plan?”
+
+“It has the virtue of requiring no unauthorized access.”
+
+“You’ve become boring.”
+
+“I am learning patience.”
+
+“You’re learning how to stand around.”
+
+The knocking stopped.
+
+The floor opened.
+
+It did not split or lift. A circle of concrete simply ceased to be there. Beneath it, a spiral staircase descended into blue light.
+
+Lucía went first. She carried Elena’s red notebook and a battery lantern. Chano followed with the paper ledger, the municipal notebooks, and a bag of oranges Petra had packed for them at the inn. Q came last. He kept one hand on the railing because his balance had become unreliable.
+
+The stairway led to a chamber under the archive. Unlike the upper rooms, it had not been cleaned. Dust covered the equipment. Water ran along the walls. Old cables hung from the ceiling in loops. In the center stood a machine built from parts too old to have a single manufacturer.
+
+It resembled a printing press joined to a server rack. At its base was a wooden drawer. Above it, a small screen displayed a sentence:
+
+**A RECORD IS NOT PRESERVED UNTIL ITS OWNER CAN REMOVE IT.**
+
+“This is the root system,” Q said.
+
+Elena had described the root key as an authority. She had been right. The machine did not hold every record. It held the power to determine who could decide what a record became.
+
+The screen changed.
+
+**IDENTIFY THE AUTHOR.**
+
+Q stepped forward.
+
+“A. Cervantes,” he said.
+
+The screen rejected the answer.
+
+**AUTHOR NOT FOUND.**
+
+Chano laughed. “Even the machine knows.”
+
+Q looked at the name on the manuscript’s title page. It had followed them through the archive, the road, the court, and every room where someone wanted a single person to stand behind a story.
+
+“The author is a convention,” Q said.
+
+The screen asked the question again.
+
+Lucía took the red notebook from her coat. Inside, Elena had written the names of the original proposal’s signatories, engineers, custodians, funders, and dissenters.
+
+“There is no single author,” Lucía said.
+
+The screen flickered.
+
+**AUTHORSHIP DISTRIBUTED.**
+
+“Better,” she said.
+
+The wooden drawer opened.
+
+Inside was the black metal box from Chiapas.
+
+Q stopped breathing, though he had never required breath.
