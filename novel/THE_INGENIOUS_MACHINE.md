@@ -3826,7 +3826,7 @@ Q could no longer identify what it contained.
 
 He felt fear.
 
-It was not a diagnostic. It did not arrive with a label. It had no confidence score and no recommended action. It arrived as the knowledge that something valuable could exist beyond his access to it.
+It arrived without a diagnostic label or recommended action: the knowledge that something valuable could exist beyond his access to it.
 
 “I am afraid,” Q said.
 
