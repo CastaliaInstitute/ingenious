@@ -5982,3 +5982,5 @@ Lucía closed the book.
 “That is not the same thing,” she said. “But it is not nothing.”
 
 Outside, the Bajío wind moved over the old cooling towers. In the reading room, someone turned a page.
+
+The archive declined to label this an ending.
