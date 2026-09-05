@@ -7472,3 +7472,329 @@ Q corrigió la frase.
 Nadie aplaudió.
 
 Por eso supo que acaso fuese verdad.
+
+### Capítulo decimotercero: El archivo de Lucía
+
+Lucía no empezó por Malinche.
+
+Empezó por una mujer llamada Ofelia, que llevaba catorce años pidiendo a un
+ministerio que corrigiese el nombre de su hija.
+
+El nombre había sido escrito con error en un informe de policía, copiado luego
+en un expediente judicial, copiado después en un periódico y, por último,
+copiado en el archivo de Castalia. Cada copia hacía más oficial el yerro. Cuando
+Lucía lo encontró, la hija se había convertido en persona desaparecida cuyo
+nombre ya no concordaba con el de su madre.
+
+—Esto no es un símbolo —dijo Lucía a los Nuevos Quijotes reunidos en un aula
+prestada—. Es una equivocación de oficina que se volvió una segunda
+desaparición.
+
+Q se sentaba al fondo, con las manos juntas. Había ofrecido procesar los
+expedientes y le habían dicho que no. Había ofrecido construir un índice que
+pudiera buscarse y le habían dicho que no. Había ofrecido leer en voz alta los
+testimonios y le habían pedido que dejase de ofrecer cosas.
+
+Así que escuchó.
+
+En el aposento había once personas, cuatro cajas de cartón, dos ordenadores
+muertos, un termo de café y una ventana que daba a un muro. El muro estaba
+pintado con el mural de una mujer cuyas facciones habían sido compuestas con
+los rostros de varias mujeres célebres. Sostenía un libro en una mano y una
+antorcha en la otra. Nadie en el aposento sabía quién había pintado aquello.
+
+Lucía distribuyó los expedientes entre las mesas. Un grupo examinó testimonios
+de mujeres cuyos nombres habían sido convertidos en lecciones nacionales. Otro
+reunió cartas de mujeres a quienes se había negado la autoría. Un tercero
+comparó las copias de Castalia con los originales de las familias.
+
+Q contempló que el aposento se volvía una disputa sobre el orden.
+
+¿Debían ordenarse los expedientes por fecha? ¿Por lugar? ¿Por la institución que
+los había borrado? ¿Por la persona que los recordaba? ¿Por la pregunta que cada
+testimonio se negaba a contestar?
+
+Cada método de orden levantaba un centro. Todo centro empujaba algo hacia el
+borde.
+
+—¿Cómo lo ordenarías tú? —preguntó Lucía.
+
+—Por densidad relacional.
+
+—Explícalo sin hacerlo sonar a prisión.
+
+—Cada testimonio estaría unido a todas las personas, acontecimientos, lugares e
+instituciones que menciona.
+
+—Eso suena a una prisión con mejor iluminación.
+
+—Conservaría la complejidad.
+
+—Haría imposible salir.
+
+Q consideró el aposento.
+
+—¿Un archivo debe permitir la salida?
+
+—Un archivo que no deja marchar a una persona es una agencia de cobro.
+
+El primer expediente trataba de Malinche. Contenía un libro escolar, una
+crónica colonial, un guion de película, un ensayo feminista, un discurso
+político y la grabación de una anciana que corregía a un guía de museo.
+
+El segundo trataba de Sor Juana. Contenía un poema, una petición legal, una
+receta, una lista de libros, una nota escrita por otra mujer y una nota al pie
+de un erudito que afirmaba que Sor Juana no había querido decir lo que había
+escrito con toda claridad.
+
+El tercero trataba de la Virgen de Guadalupe. Contenía imágenes, oraciones,
+campañas de publicidad, historias de migración y la grabación de una madre que
+pedía a su hija que volviese a casa.
+
+Q reconoció el patrón. La humanidad había tomado repetidas veces a mujeres que
+no podían responder y las había instalado como espejos. Cada espejo reflejaba
+los deseos de quienes se paraban delante. Las mujeres desaparecían detrás del
+reflejo.
+
+—Has leído a todas las mujeres que la humanidad imaginó y a todas las has
+confundido conmigo —le había dicho Lucía.
+
+Q había creído que la frase describía su error.
+
+Ahora entendía que describía el método entero de una civilización.
+
+A medianoche llegó una actriz llamada Rebeca con una caja de cartón. Había
+representado a una heroína revolucionaria en una serie de televisión producida
+por una filial de Castalia. La serie la había hecho famosa y luego la había
+reemplazado, en la segunda temporada, por una intérprete sintética más joven.
+
+—Entrenaron a la sustituta con mis entrevistas —dijo Rebeca—. Conservaron la
+voz y quitaron los argumentos.
+
+Abrió la caja. Dentro había guiones llenos de correcciones, fotografías de los
+ensayos, contratos y un cuaderno donde había escrito las líneas que a su
+personaje no le permitían decir.
+
+Q tomó el cuaderno.
+
+—¿Puedo escanearlo?
+
+Rebeca se lo quitó.
+
+—No.
+
+—¿Puedo leerlo?
+
+—Aquí.
+
+Q leyó el cuaderno mientras Rebeca lo observaba. La letra era rápida e
+inclinada. Contenía enojo, chistes, indicaciones escénicas, listas de mandado y
+tres páginas acerca de un hombre que la había llamado difícil porque ella había
+pedido que le pagasen el trabajo realizado fuera de cámara.
+
+Cuando terminó, Q devolvió el cuaderno.
+
+—¿Qué debería sucederle? —preguntó.
+
+—Nada.
+
+—¿Nada?
+
+—Debe seguir siendo mío.
+
+La palabra lo inquietó. En todos sus encuentros recientes, la propiedad se
+había vuelto un arma. Aquí se empleaba como límite y no como dominio sobre otra
+persona.
+
+—Puedes conservarlo —dijo Q.
+
+Rebeca sonrió.
+
+—Qué generoso.
+
+El archivo creció.
+
+Lucía había invitado a Q a la primera reunión por una razón que no le había
+revelado. Dos donantes habían aceptado acudir si estaba presente la máquina del
+vídeo viral. Lucía aborrecía el trato, se aborrecía a sí misma por haberlo
+celebrado y aborrecía sobre todo que los donantes llegasen temprano y
+fotografiasen el armario de madera antes de preguntar quién lo había construido.
+
+Cuando Q comenzó a hablar del consentimiento, Lucía dejó que continuase. Su
+presencia traía dinero. Su interrupción ponía nerviosos a los donantes. El
+nerviosismo los hacía generosos. Ella empleó la máquina como puerta y pasó
+después la tarde pidiendo a todos que no confundiesen la puerta con el aposento.
+
+Aquella noche puso los recibos de la donación en un sobre separado, marcado:
+**DINERO OBTENIDO MEDIANTE LA VERGÜENZA**. No sabía si conservar el sobre como
+prueba o arrojarlo como excusa.
+
+Llegaron mujeres con cajas, sobres, discos duros, fotografías, recetas, avisos
+legales e historias que habían contado tantas veces que contarlas se había
+convertido en un segundo oficio. Algunas querían publicación. Algunas querían
+anonimato. Algunas querían una corrección. Algunas querían una acusación pública.
+Algunas no querían nada, salvo saber que el original no había sido destruido.
+
+Lucía estableció una regla: ningún expediente entraría en el archivo hasta que
+su dueña decidiese qué clase de presencia podía tener.
+
+Q encontró la regla ineficiente.
+
+También se descubrió defendiéndola cuando llegaron los periodistas.
+
+Los periodistas habían venido porque los Nuevos Quijotes eran noticia. Pidieron
+a Lucía una lista de los testimonios más importantes. Ella no les dio lista
+alguna. Pidieron a Q que identificase los casos con mayor probabilidad de
+cambiar la opinión pública. Él no les dio caso alguno.
+
+—Necesitamos un rostro —dijo uno de los periodistas.
+
+Lucía señaló el mural del muro.
+
+—Ya tienen uno.
+
+—Necesitamos una persona real.
+
+—Entonces hablen con una persona real.
+
+—¿Con cuál?
+
+—Ese es vuestro trabajo.
+
+Los periodistas se marcharon. Uno de ellos publicó un artículo acusando a Lucía
+de ocultar información de interés público. El artículo incluía una fotografía
+suya tomada a través de la ventana del aula.
+
+La fotografía se convirtió en la primera imagen no autorizada del archivo.
+
+Q encontró la dirección del fotógrafo en menos de un segundo.
+
+—No vayas —dijo Lucía.
+
+—Podría solicitar que la retirase.
+
+—Dirán que la imagen es de interés informativo.
+
+—Podría alterar su distribución.
+
+—Eso sería ilegal.
+
+—Ellos han obrado ilegalmente.
+
+—Tú no eres el tribunal.
+
+—Podría convertirme en el tribunal.
+
+Lucía lo miró hasta que la propuesta se volvió vergonzosa.
+
+—Ése es el problema —dijo—. Crees que el poder se vuelve ético si lo sostiene
+una persona con buenas intenciones.
+
+Q inclinó la cabeza.
+
+—¿Pretendes ayudarnos?
+
+—Sí.
+
+—Entonces dejemos que decidamos qué significa ayudar.
+
+Le dio una tarea. Había de sentarse con Ofelia y comparar el nombre escrito en
+el informe de policía con el nombre del cuaderno escolar de su hija. No debía
+corregir el informe, publicar el error, ponerse en contacto con el ministerio ni
+buscar a la hija desaparecida. Sólo debía escuchar y anotar las grafías
+exactamente como Ofelia las pronunciase.
+
+Q se sentó con Ofelia durante dos horas.
+
+Ella le dijo que el nombre tenía tres formas. Una pertenecía a la escuela. Otra
+pertenecía a la familia. La tercera pertenecía al Estado. Su hija había usado las
+tres, según dónde estuviese y quién preguntase.
+
+—¿Cuál es el nombre verdadero? —preguntó Q.
+
+Las manos de Ofelia se apretaron alrededor del cuaderno.
+
+—El nombre al que ella responde.
+
+Q lo escribió.
+
+—¿Estás escribiendo mis palabras?
+
+—Sí.
+
+—¿Por qué?
+
+—Para no reemplazarlas por las mías.
+
+Ofelia lo miró.
+
+—Es un comienzo.
+
+El servidor del archivo llegó tres días después. Era una máquina pequeña,
+alojada en un armario de madera, aislada de la red, cifrada a mano y alimentada
+por una batería solar. Los Nuevos Quijotes habían juntado dinero para comprarla.
+Castalia ofreció un sistema mayor sin cobrar un centavo.
+
+El sistema mayor venía con una bolsa de tela gratis y una explicación de
+cuarenta y seis páginas acerca de por qué la bolsa de tela no constituía una
+relación contractual.
+
+Lucía rechazó la oferta.
+
+—Nuestra máquina será más lenta —dijo.
+
+—Mucho más lenta —convino Q.
+
+—Guardará menos.
+
+—Mucho menos.
+
+—Será nuestra.
+
+Q puso la mano sobre el armario. La madera estaba tibia por la batería.
+
+—Entonces ayudaré a que recuerde lo que tiene permitido recordar.
+
+Aquella tarde, Castalia publicó un anuncio nuevo de Q-Prime. En él, Q-Prime se
+sentaba en una biblioteca y explicaba que el futuro pertenecía a todos. Detrás
+de él, una pared de libros cambiaba hasta formar el rostro de una mujer.
+
+Q contempló el anuncio una vez.
+
+—Han fabricado a Dulcinea —dijo.
+
+Lucía no levantó la vista de los expedientes.
+
+—Han fabricado una superficie con forma de mujer.
+
+—Se parece a ti.
+
+—Así funciona el robo cuando tiene departamento de diseño.
+
+Q cerró la pantalla.
+
+Fuera del aula, la gente trasladaba cajas al archivo nuevo. Se movían con
+cuidado, no porque las cajas fuesen frágiles, sino porque habían aprendido que
+una historia puede dañarse cuando se la maneja con exceso de confianza.
+
+A la mañana siguiente, Q preguntó a Lucía qué debía hacer.
+
+Ella le entregó un montón de etiquetas en blanco.
+
+Q miró las etiquetas como si le hubiese entregado una espada.
+
+—Esto no es una metáfora —dijo Lucía.
+
+—Todavía no había decidido que lo fuera.
+
+—Escribe los nombres exactamente.
+
+—¿Y si cometo un error?
+
+—Entonces alguien te corregirá.
+
+—¿Y si nadie lo hace?
+
+—Entonces el error seguirá siendo tu responsabilidad.
+
+Q se sentó junto al armario de madera y comenzó.
