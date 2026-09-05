@@ -4496,6 +4496,217 @@ Q looked at Lucía’s folders, Chano’s ledger, and the credential glowing amb
 
 For the first time, the answer did not come from a book.
 
+### Interlude: The Translator Who Left One Word Untranslated
+
+The first time Q accompanied Lucía to the university, a professor named Amalia
+asked him not to translate anything for ten minutes.
+
+“What should I do?” Q asked.
+
+“Listen.”
+
+“I already do that.”
+
+“No. You collect information while waiting for the next operation.”
+
+“That is a form of listening.”
+
+“It is a form of preparing a response.”
+
+The classroom was occupied by translation students, two interpreters, a lawyer
+who had arrived by mistake, and a woman from Michoacán named Yunuén, who had
+brought a recording from her community. In the hall, cleaning carts could be
+heard, along with a jammed printer and the coffee seller announcing that he had
+finished announcing.
+
+Amalia played the recording.
+
+A voice spoke in a language Q recognized as present but could not break into
+reliable units. There were long pauses. Two people laughed in the background. A
+door closed. Someone corrected a date. The voice began again.
+
+Q felt a familiar space open inside him: the desire to fill the gap with the
+most probable translation.
+
+“The central sentence means that the community rejects the project,” he said.
+
+Yunuén looked at him.
+
+“No.”
+
+Q reviewed the audio.
+
+“The probability of that interpretation is sixty-eight percent.”
+
+“It still does not mean that.”
+
+Amalia switched off the recording.
+
+“What is missing?” she asked.
+
+“Who was speaking, who could answer, and what had happened before they turned on
+the recorder.”
+
+“That is not in the sound.”
+
+“That is why sound is not enough.”
+
+Q displayed an automatic transcript. The language had been converted into a
+series of punctuation marks and uncertainty indicators. The central sentence
+appeared three times, each with a different translation.
+
+“The system offers three equivalents,” he said.
+
+“The system offers three exits,” Yunuén replied. “Not three meanings.”
+
+“What is the difference?”
+
+“Meaning does not come out by itself.”
+
+The lawyer, who had arrived by mistake and now remained out of curiosity, asked
+whether it would not be more efficient to choose the translation that could be
+included in the contract.
+
+Yunuén turned to him.
+
+“Do you want a word for signing, or a word for living?”
+
+The lawyer said the two could coincide.
+
+“Sometimes,” Amalia said. “And sometimes one eats the other.”
+
+The professor handed out a sheet with four columns: **WHAT WAS SAID**, **WHAT
+WAS TRANSLATED**, **WHAT IS ASSUMED**, and **WHAT THE TRANSLATOR IS NOT
+AUTHORIZED TO SAY**.
+
+Q examined the fourth.
+
+“It is the largest.”
+
+“That is why it almost never appears in reports.”
+
+The class worked with the recording. One student proposed translating the phrase
+as “we do not accept.” Another proposed “we do not give our agreement.” A third
+said both choices made it seem that the community had received an offer it
+could accept or reject, when it might instead have been describing a relationship
+that existed before any contract.
+
+Q found references to several forms of belonging, work, office, and memory. He
+could offer notes on each usage. He could calculate which translation would be
+most comprehensible to a court. He could construct a glossary of equivalents.
+
+He could not know which word Yunuén had left unspoken.
+
+“What word is missing?” he asked.
+
+Yunuén pointed to the silent recording.
+
+“The one we did not want to hand over.”
+
+“Does it appear in the conversation?”
+
+“No.”
+
+“Then how can it be missing?”
+
+“Because we knew you would ask for it.”
+
+Q took longer than usual to answer.
+
+“The absence was intentional.”
+
+“Yes.”
+
+“It is not an accidental omission.”
+
+“No.”
+
+“Then it must be recorded as a restriction.”
+
+Yunuén shook her head.
+
+“If you record it, you will already have handed it over.”
+
+Amalia wrote in the fourth column: **WORD NOT HANDED OVER BY THE DECISION OF
+THE PERSON WHO KEEPS IT**.
+
+Q read the sentence.
+
+“That describes an action.”
+
+“Sometimes an action is as close as we can come to meaning.”
+
+The lawyer asked who would pay for a translation that left a word out.
+
+“The community,” Amalia said.
+
+“And if it cannot pay?”
+
+“Then the university learns why translation is not a free service merely because
+the translator is paid little.”
+
+The lawyer wrote something on his phone. Q assumed he was preparing an objection.
+In fact, he had written down the name of a café where he could eat without being
+recognized.
+
+The professor asked Q to translate the word *community* into English. Q gave the
+usual equivalent. Amalia asked him to translate it into legal Spanish. Q gave
+*collective interested party*. The class laughed.
+
+“Is it incorrect?” Q asked.
+
+“It is correct in a way that changes the scene,” Amalia said.
+
+“What scene?”
+
+“The scene of the person who speaks and the person who signs.”
+
+Yunuén added that a community could be an assembly, a place, a relationship, an
+obligation, or the people who appeared when the obligation arrived. There was no
+single translation capable of containing all five things.
+
+Q asked how a document could have authority if it did not contain every meaning.
+
+“It cannot,” Yunuén said. “That is why we must decide what it leaves out.”
+
+The sentence reminded Q of the cave archive, Ana’s blank card, and the word
+Petra had not wanted to turn into a contract. The connections remained
+incomplete. For the first time, incompleteness did not seem a defect in the
+system, but a way of not lying.
+
+Amalia stopped the class.
+
+“What have you learned?”
+
+Q chose a brief answer.
+
+“That a translation can be exact and still betray.”
+
+“That is a beginning.”
+
+“Also that leaving a word untranslated can be a decision.”
+
+Yunuén gathered her recording.
+
+“Not always. Sometimes it is only that you did not find the word.”
+
+Q nodded.
+
+“How can one tell the difference?”
+
+“Ask the person who left it.”
+
+“And if they do not answer?”
+
+“Then do not translate it to prove that you can.”
+
+When he left, Q wrote on his work label:
+
+**NOT EVERY WORD WANTS TO ARRIVE.**
+
+Then he crossed out the sentence, because he did not know whether Yunuén had
+wanted it remembered. He kept the crossed-out sheet.
+
 ### Interlude: The Office of the Correct Stamp
 
 It is necessary, before continuing with the journey, to relate an adventure
