@@ -4384,6 +4384,8 @@ He began recording a message about listening.
 
 No one listened to him.
 
+The cameras continued recording, which was not the same thing.
+
 ### Chapter Eighteen: The Rebel Without a Corpus
 
 The testimony had acquired a name that Q was not allowed to know.
