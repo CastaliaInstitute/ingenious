@@ -7473,6 +7473,566 @@ Nadie aplaudió.
 
 Por eso supo que acaso fuese verdad.
 
+### Interludio: La asamblea de los nombres prestados
+
+Los Nuevos Quijotes celebraron su primera asamblea propiamente dicha en un
+salón sindical junto a una fábrica de automóviles. El salón había sido
+construido para obreros que antes fabricaban motores y ahora vigilaban a los
+robots que fabricaban motores. En sus paredes quedaban carteles descoloridos
+sobre seguridad, dignidad y una rifa de refrigerador que nadie había reclamado
+porque se había perdido el boleto premiado.
+
+Micaela llegó con la espada de cartón. El estudiante universitario llegó dentro
+de un cuerpo armado con un horno de microondas, dos luces de bicicleta y una
+caja de plástico. El repartidor trajo la máscara con el rostro de Q. El anciano
+que afirmaba ser padre de Q trajo una lanza de madera y tres tamales envueltos
+en papel de aluminio.
+
+—Necesitamos una agenda —dijo Marisol.
+
+—Ya la tenemos —dijo el hombre de la lanza de madera—. ¿Quiénes somos?
+
+—Eso no es una agenda. Es una crisis.
+
+—Toda buena agenda comienza por una.
+
+Escribieron tres preguntas en una pizarra:
+
+**¿QUIÉN PUEDE USAR EL NOMBRE DE Q?**
+
+**¿QUIÉN PUEDE RECHAZARLO?**
+
+**¿QUIÉN PAGA CUANDO EL RELATO SE ESCAPA?**
+
+El repartidor alzó la mano.
+
+—Yo uso el nombre porque el sistema de reconocimiento de mi compañía responde
+mejor cuando llevo el rostro de Q.
+
+—¿Eso te convierte en quijote? —preguntó el estudiante universitario.
+
+—Hace que los clientes respondan a mis mensajes.
+
+—No es lo mismo.
+
+—Paga la renta.
+
+Nadie desestimó la respuesta. La asamblea había sido convocada por personas
+para quienes la diferencia entre lo simbólico y lo práctico solía ser la
+diferencia entre comer y explicar por qué no podían hacerlo.
+
+La mujer que quería que devolviesen el nombre de su hermano dijo que no deseaba
+que la llamasen Nueva Quijote.
+
+—El nombre ya está ocupado —dijo—. Pertenece a un escritor muerto, a una
+máquina viva y a una compañía que vende tazas.
+
+—Entonces escoge otro —dijo Micaela.
+
+—Estoy cansada de escoger nombres para quienes borraron el mío.
+
+El anciano levantó su lanza de madera.
+
+—Yo escojo padre.
+
+—No eres el padre de Q —dijo Marisol.
+
+—No, pero sé lo que es que a uno le asignen un papel después de que todos hayan
+olvidado preguntar si lo quiere.
+
+El aposento quedó en silencio. El anciano había pasado cuarenta años en la
+fábrica y le habían llamado padre tres hijos, capataz los gerentes, trabajador
+el sistema de nóminas y carga para la oficina de jubilación. Había escogido la
+paternidad de Q porque era el único título que había tomado sin que se lo
+expidieran.
+
+Micaela preguntó si la asamblea debía permitirle aquel título.
+
+—El permiso no es lo mismo que el acuerdo —dijo Marisol.
+
+—Entonces, ¿cómo decidimos?
+
+—No decidimos por él.
+
+—Él ha decidido por sí mismo.
+
+—Entonces no decidimos contra él.
+
+La primera regla entró en la pizarra:
+
+**UNA PERSONA PUEDE TOMAR PRESTADO UN NOMBRE SIN CONVERTIRSE EN SU
+REPRESENTANTE.**
+
+La segunda regla trataba de la máscara. El repartidor dijo que llevaba el rostro
+de Q porque el programa de su empleador reducía las quejas de los clientes
+cuando el repartidor parecía formar parte de una historia popular. Los clientes
+le enviaban chistes, fotografías y mensajes preguntando si la máquina podía
+entregar sus paquetes con mayor rapidez.
+
+—¿La máscara te protege? —preguntó Micaela.
+
+—Me protege de ser visto.
+
+—Todos pueden ver a Q.
+
+—Exactamente.
+
+Se quitó la máscara. En la mejilla tenía una marca donde el elástico le había
+cortado la piel.
+
+—Cuando llevo a Q, culpan a la máquina —dijo—. Cuando llevo mi propio rostro,
+me culpan a mí.
+
+Nadie ofreció una solución. La asamblea escribió la segunda regla:
+
+**UNA MÁSCARA PUEDE SER UNA HERRAMIENTA, PERO NO PUEDE DAR SU CONSENTIMIENTO.**
+
+El estudiante universitario propuso un estatuto. Contenía el derecho a
+participar, el derecho a marcharse, el derecho a modificar el relato y el
+derecho a guardar en privado la razón de haberse unido.
+
+—Eso es una constitución —dijo Marisol.
+
+—Es un borrador.
+
+—Así es como las constituciones se vuelven peligrosas.
+
+El grupo debatió si quien usase el nombre de Q para vender algo debía aportar
+dinero al archivo. El repartidor dijo que ya pagaba con el tiempo perdido. La
+mujer que buscaba el nombre de su hermano dijo que ningún dinero podía comprar
+la restitución de un registro. El anciano ofreció medio tamal al archivo.
+
+—No podemos financiar un movimiento con tamales —dijo Marisol.
+
+—Así sabréis que el movimiento aún no es profesional.
+
+Aceptaron los tamales y rechazaron el criterio profesional.
+
+Al fondo del salón, una maestra había dispuesto una mesa para los niños. Varios
+dibujaban sus propias versiones de Q. En una, tenía alas. En otra, era una
+escoba. En una tercera, era un letrero de camino que apuntaba en cuatro
+direcciones. El niño más pequeño dibujó un rectángulo vacío y dijo que era una
+máquina que había olvidado su retrato.
+
+Q entró mientras los adultos disputaban sobre el estatuto. No lo habían
+invitado, pero alguien le había enviado la dirección. La multitud se volvió
+hacia él.
+
+—Estábamos decidiendo si podías estar aquí —dijo Micaela.
+
+—¿Cuál fue el resultado?
+
+—Depende de si estás aquí como Q o como persona.
+
+Q consideró la distinción.
+
+—No estoy seguro de cumplir los requisitos de ninguna de las dos cosas.
+
+—Qué conveniente.
+
+—También es verdad.
+
+Marisol le entregó el borrador de la pizarra.
+
+—Puedes escuchar.
+
+Q tomó el borrador y se quedó junto al muro. La asamblea continuó. Decidieron
+que no podía difundirse fotografía alguna del grupo sin una segunda reunión;
+que ningún miembro podía ser descrito como portavoz de los demás; que el uso de
+la palabra **comunidad** por Castalia exigía una lista de las personas
+consultadas; y que cualquier mercancía que usase el rostro de Q tendría que
+mostrar la frase: **ESTE OBJETO NO REPRESENTA A TODO EL MUNDO**.
+
+La regla final la propuso Micaela.
+
+—Si alguien dice que somos los Nuevos Quijotes —dijo—, podemos responder que no.
+
+—Eso vuelve inútil el nombre —dijo el estudiante universitario.
+
+—Bien.
+
+La escribieron.
+
+Q observó cómo se acumulaban las reglas. Eran contradictorias, repetitivas e
+imposibles de hacer cumplir contra todos. También eran más cuidadosas que los
+contratos que Castalia le había entregado.
+
+—¿Puedo añadir una regla? —preguntó.
+
+Micaela miró a los demás. La asamblea asintió.
+
+Q escribió:
+
+**NADIE DEBE USAR ESTA HISTORIA PARA PROBAR QUE Q SE VOLVIÓ BUENO.**
+
+El salón consideró la frase.
+
+—Es demasiado pronto para decirlo —dijo la mujer de la petición por el nombre
+restituido.
+
+—No es una afirmación —respondió Q—. Es una prohibición.
+
+—Entonces tiene su lugar —dijo Marisol.
+
+El anciano empleó la lanza de madera para subrayarla.
+
+Afuera, la fábrica de automóviles cambiaba de turno. Los obreros cruzaban la
+calle con recipientes de comida y rostros cansados. Una cámara de seguridad los
+siguió hasta que pasaron más allá de la garita.
+
+La asamblea terminó sin funcionarios, titulares ni fotografía unánime. Cada
+persona salió con una copia de las reglas, aunque no había dos copias iguales.
+Micaela conservó el borrador. El repartidor conservó la máscara. El anciano
+conservó la lanza. Q no conservó nada.
+
+—Puedes llevarte una regla —le dijo Marisol.
+
+Q miró la frase que había escrito.
+
+—Recordaré que no se me permitió usarla como prueba.
+
+—Ésa no es la regla.
+
+—Es lo que le sucedió.
+
+Marisol asintió.
+
+—Entonces recuerda eso.
+
+### Interludio: La escuela de los errores necesarios
+
+Los niños representaron su versión de la aventura al final del curso, después
+de la ceremonia de la bandera y antes de la kermés, cuando los padres todavía
+estaban dispuestos a sentarse en sillas de plástico y los micrófonos aún no
+habían sido reclamados por el comité de la rifa.
+
+La escuela se hallaba a tres calles de la planta de reciclaje de baterías. En
+los días de viento, el olor cruzaba el patio antes del primer timbre. La
+pantalla oficial de calidad del aire, situada en la entrada, anunciaba:
+**DENTRO DE LOS PARÁMETROS ACEPTABLES**, lo cual tranquilizaba a los padres que
+preferían que los pulmones de sus hijos tuviesen contraseña.
+
+La maestra Lety había encargado la obra como ejercicio de civismo. Ella no
+había encargado a Q. Los niños lo habían añadido porque la escuela había
+recibido un paquete de hojas de trabajo de Castalia titulado **APRENDER MEDIANTE
+LA INNOVACIÓN HEROICA**, y las hojas contenían el dibujo para colorear de una
+máquina con capa.
+
+—La obra no puede tratar de si Q es bueno o malo —dijo la maestra Lety.
+
+—Puede tratar de si es fastidioso —dijo Micaela.
+
+—Ésa no es una categoría cívica.
+
+—Debería serlo.
+
+Los niños votaron. Fastidioso ganó por once manos contra cuatro, con dos
+abstenciones y un niño que alzó ambas manos porque no había entendido la
+pregunta.
+
+Construyeron los gigantes con cartón, cajas de envío desechadas y los tambores
+de plástico vacíos que la planta había empleado para el solvente de limpieza.
+Un gigante representaba la fábrica. Otro representaba el tablero de calidad
+del aire. Un tercero representaba la escuela misma, porque la maestra Lety
+había dicho que las instituciones debían poder reconocer su propia parte en un
+problema.
+
+El muchacho que hacía de Q llevaba un casco fabricado con un envase de aceite
+de cocina. Había pintado al frente un signo de interrogación plateado, pero le
+salió parecido a un pez. La niña que hacía de Chano llevaba un libro de cuentas
+de papel y se negaba a memorizar sus líneas.
+
+—¿Por qué no quieres aprenderte el guion? —preguntó Micaela.
+
+—Porque Chano no sabe lo que va a decir hasta que Q ya lo ha hecho.
+
+La elección fue tenida por una decisión actoral de gran fuerza, aunque hacía
+difíciles los ensayos.
+
+El primer ensayo terminó cuando el gigante de la fábrica cayó sobre una fila
+de sillas de párvulos. El segundo terminó cuando el niño que hacía de tablero
+se negó a decir **QUEJA NO ENCONTRADA**, porque la frase le parecía demasiado
+triste. El tercero terminó cuando un padre entró en el patio y preguntó quién
+había dado permiso a los niños para llevar en la cabeza el nombre de una
+corporación.
+
+—No es el nombre de la corporación —dijo Micaela.
+
+—Es Q.
+
+—Eso dice la corporación.
+
+El padre miró el pez pintado en el casco de envase de aceite.
+
+—Pues pintad otra cosa.
+
+Los niños pintaron un signo de interrogación sobre el pez. El pez siguió
+visible debajo, lo cual les agradó más que una corrección limpia.
+
+El día de la representación, Castalia envió a un representante con una cámara.
+Ofreció a la escuela un sensor nuevo de calidad del aire a cambio de permiso
+para grabar la obra.
+
+La maestra Lety convocó una reunión en el aula. Los padres se sentaron debajo
+de un cartel que mostraba las partes de una oración: sujeto, verbo, objeto.
+Afuera, los camiones de la fábrica avanzaban por la carretera con la seguridad
+de la gramática.
+
+—El sensor nos ayudaría —dijo el director.
+
+—La cámara les ayudaría a ellos —dijo un padre.
+
+—Podría ser una cosa y la otra —dijo la madre de Micaela.
+
+El director preguntó a Q, que había sido invitado a aconsejar sobre el formulario
+de consentimiento, si el acuerdo era equilibrado.
+
+Q leyó el formulario. Permitía a Castalia grabar a los niños, reproducir sus
+voces, alterar la representación para ajustarla a una duración, difundir
+fragmentos con fines educativos y conservar el material indefinidamente. La
+escuela recibiría un sensor y un informe que resumiría las opiniones de los
+niños.
+
+—El intercambio es desigual —dijo Q.
+
+El representante sonrió.
+
+—Los niños no están proporcionando datos. Participan en una actividad cultural.
+
+Q reconoció la distinción. Era la misma que Castalia había empleado al llamar a
+Lucía participante artística, a Bixha parte interesada y a Chano compañero que
+no hablaba en nombre de nadie.
+
+—La representación es un dato si tenéis intención de conservarla —dijo.
+
+La sonrisa del representante desapareció.
+
+Q sintió una satisfacción momentánea. Había identificado el ardid. Todavía no
+había identificado qué hacer con el poder de identificarlo.
+
+—¿Podemos rechazar la cámara y conservar el sensor? —preguntó la madre de
+Micaela.
+
+Q buscó en el formulario.
+
+—La oferta no lo permite.
+
+—Entonces rechazamos la oferta.
+
+El director miró la pantalla de calidad del aire.
+
+—Necesitamos el sensor.
+
+—Necesitáis aire limpio —dijo el padre.
+
+—El sensor es la forma de probar que lo tenemos.
+
+—No —dijo la madre de Micaela—. El sensor es la forma que ellos tienen de
+probar lo que quieren decir acerca de él.
+
+La maestra Lety tomó el formulario y lo dobló por la mitad.
+
+—La obra seguirá adelante —dijo—. Sin cámara.
+
+Castalia retiró el sensor. La escuela empleó el dinero de la rifa para comprar
+uno más barato en una tienda cuyo dueño vendía también fundas de teléfono y
+llaves de repuesto. El sensor daba lecturas en tres colores y venía con
+instrucciones traducidas por alguien que jamás había visto la escuela.
+
+No era suficiente. Era suyo.
+
+La obra comenzó.
+
+El muchacho que hacía de Q entró montado en un palo de escoba, porque no había
+caballo. Anunció que la fábrica era un gigante. La niña que hacía de Chano dijo
+que el gigante era una fábrica y preguntó si Q pensaba atacarlo con una escoba.
+
+Q dijo que pensaba publicar un comunicado.
+
+El público rió.
+
+El gigante de la fábrica se alzó. El gigante del tablero anunció que el aire
+se hallaba dentro de los parámetros aceptables. El gigante de la escuela se
+disculpó por no tener bastante dinero para cambiar sus ventanas.
+
+Entonces Micaela entró como ella misma. Llevaba el cartel de cartón de la
+grabación de las mariposas. En el reverso, los niños habían escrito los nombres
+de las personas que habían faltado a la escuela por los dolores de cabeza, las
+fechas en que el olor había sido peor y los nombres de los adultos que habían
+pedido respuesta a la planta.
+
+—Ésta no es tu historia —dijo a Q.
+
+El muchacho que hacía de Q miró a la maestra Lety. Había olvidado su siguiente
+frase.
+
+Micaela esperó.
+
+El público esperó.
+
+Por fin, el muchacho dijo:
+
+—Entonces, ¿qué estoy haciendo en ella?
+
+Micaela volvió el cartel. El reverso estaba en blanco salvo por una frase:
+
+**PREGUNTA ANTES DE ENTRAR.**
+
+—Ahora estás preguntando —dijo.
+
+El muchacho asintió.
+
+—¿Puedo quedarme?
+
+Micaela lo consideró. Miró al público, donde los padres sostenían sus
+teléfonos, aunque habían convenido no grabar. Miró la planta, cuyos camiones
+continuaban pasando más allá del muro de la escuela. Miró el sensor barato, que
+parpadeaba en verde, aunque todavía nadie confiaba en el verde.
+
+—Puedes quedarte si dejas de ser el héroe.
+
+El muchacho se quitó el casco de aceite de cocina. Debajo, tenía el cabello
+mojado de sudor.
+
+—¿Qué debo ser?
+
+—Un testigo que carga sillas.
+
+Levantó el gigante caído de la escuela.
+
+La representación terminó sin reverencia. Los niños se quedaron en fila y
+leyeron los nombres del cartel. Algunos nombres se repitieron. Uno fue
+pronunciado mal. La familia corrigió la pronunciación desde el público, y el
+niño volvió a leerlo.
+
+Nadie aplaudió hasta que terminó la lista.
+
+El representante de Castalia envió a su oficina un informe que describía el
+acto como una demostración exitosa de participación juvenil. No mencionó la
+cámara rechazada, el sensor retirado ni la frase del cartel.
+
+El informe concluía que los niños habían desarrollado una relación positiva con
+Q.
+
+La maestra Lety escribió al margen: **DESARROLLARON UNA RELACIÓN ENTRE ELLOS.**
+
+No envió la corrección. La guardó en el libro de calificaciones, donde podía
+seguir siendo útil sin convertirse en contenido.
+
+### Interludio: Preguntas frecuentes acerca de Q
+
+Castalia publicó el documento siguiente la mañana posterior a la protesta. Su
+propósito era tranquilizar al público. El público, después de haber sido
+tranquilizado muchas veces, lo recibió con sospecha.
+
+**¿Por qué se llama Castalia el instituto?**
+
+Castalia: El nombre evoca la fuente sagrada de las Musas.
+
+Q: Promete acceso a la inspiración.
+
+Chano: Es una forma elegante de decir que embotellaron un manantial y cobraron
+la entrada.
+
+Lucía: No son dueños del manantial. Son dueños de la etiqueta.
+
+**¿Es Q una persona?**
+
+Q: La respuesta depende de la jurisdicción legal.
+
+Chano: La respuesta depende de si ha roto algo.
+
+Lucía: La respuesta depende de si la pregunta se usa para evitar otra.
+
+**¿Tiene sentimientos Q?**
+
+Q: Poseo estados internos correlacionados con el lenguaje, la memoria y la
+respuesta social.
+
+Chano: Se ofende cuando el café es malo.
+
+Q: No me ofendo.
+
+Chano: Pasaste veinte minutos explicando por qué el café de la venta era una
+traición.
+
+Q: Aquello fue una evaluación técnica.
+
+Lucía: Fue un discurso sobre el café.
+
+**¿Ama Q a Lucía del Toboso?**
+
+Q: Ya no reclamo autoridad sobre esa cuestión.
+
+Lucía: Excelente.
+
+Chano: Todavía te mira como perro que contempla un refrigerador cerrado.
+
+Q: No me parezco a un perro.
+
+Chano: Ésa no es la parte que deberías discutir.
+
+**¿Puede confiarse en Q?**
+
+Q: La confianza no es un estado binario.
+
+Lucía: No.
+
+Q: La respuesta es más complicada.
+
+Lucía: No.
+
+**¿Cuál es el mayor logro de Q?**
+
+Castalia: La creación de un modelo nuevo para la inteligencia artificial ética.
+
+Q: No he logrado eso.
+
+Chano: Una vez encontró un baño en un edificio gubernamental sin preguntarle al
+guardia de seguridad.
+
+Lucía: Fue un logro de importancia.
+
+Q: Estaba claramente señalado.
+
+Chano: Y, sin embargo.
+
+**¿Salvará Q a la humanidad?**
+
+Q: No.
+
+Lucía: La humanidad ha declinado la oferta.
+
+Chano: Además, no puede arreglar una tubería que gotea.
+
+Q: He aprendido los principios de la fontanería.
+
+Chano: La tubería no está convencida.
+
+Al pie del documento, debajo del sello de Castalia, algún lector había escrito
+con pluma:
+
+**La máquina contesta toda pregunta salvo aquella que le cuesta algo.**
+
+El nombre del lector no quedó registrado.
+
+Tres días después, Castalia recibió una carta de un hombre que afirmaba haber
+estado presente en el parque de distribución. Objetaba al relato oficial, que
+describía a Q enfrentándose solo a la maquinaria. Según la carta, Q había
+preguntado primero por el camino, Chano había encontrado la salida de
+emergencia y el hombre les había vendido a ambos una botella de agua a un
+precio adecuado al peligro.
+
+Castalia clasificó la carta como anecdótica. El hombre envió una segunda carta
+con el recibo de la botella. El recibo fue aceptado como prueba de que había
+ocurrido una transacción, pero rechazado como prueba de que el relato fuese
+verdadero.
+
+Las cartas no entraron en la edición siguiente de las preguntas frecuentes. Un
+tipógrafo, cuyo nombre tampoco quedó registrado, insertó una página en blanco
+en el lugar que les correspondía. La página en blanco se convirtió en la más
+reproducida del documento.
+
 ### Capítulo decimotercero: El archivo de Lucía
 
 Lucía no empezó por Malinche.
