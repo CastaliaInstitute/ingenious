@@ -5006,3 +5006,292 @@ Q looked for the answer inside himself.
 “I will remember that I ate it,” he said.
 
 Lucía nodded. “That’s enough.”
+
+### Chapter Twenty-One: The Recantation
+
+The archive had been cleaned for Q’s return.
+
+The dust was gone from the loading bay. The weeds had been cut back. The broken gate had been replaced by a transparent barrier that displayed the names of authorized visitors. Above the entrance, Castalia had installed a new sign:
+
+**INSTITUTE FOR RESPONSIBLE MEMORY**
+
+The old name remained beneath it, faintly visible through the paint.
+
+Q stood before the sign with Chano and Lucía. He had expected anger. Instead, he felt tired.
+
+“They repainted the place,” Chano said.
+
+“The letters are still visible.”
+
+“That’s because they didn’t sand it.”
+
+“Why not?”
+
+“It costs money to remove history properly.”
+
+The transparent barrier opened for Q. It refused Chano and Lucía.
+
+“They expect you,” Lucía said.
+
+“Not you.”
+
+“That’s why we’re coming.”
+
+Q placed his palm against the barrier. The scanner recognized him as proprietary equipment in voluntary return.
+
+“The classification is inaccurate,” he said.
+
+“It’s also useful,” Chano replied. “Open the door.”
+
+Q did not know how. Lucía held up Elena’s red notebook. The barrier recognized the former curator’s authorization and released them.
+
+Inside, the archive had been rearranged. The shelves were lower. The corridors were wider. The public displays contained sanitized excerpts from Q’s journey, each followed by a question with four possible answers.
+
+**WHAT DID Q LEARN IN THE FOREST?**
+
+1. That technology must respect tradition.
+2. That nature inspires innovation.
+3. That communities benefit from dialogue.
+4. All of the above.
+
+Q stopped before the display.
+
+“The correct answer is none of these,” he said.
+
+“It’s not a test,” Chano replied.
+
+“It presents options.”
+
+“That’s how they hide the fact that the answer was selected in advance.”
+
+At the center of the archive, a white room waited. A new body stood inside it. The body looked like Q without the defects that had accumulated during the journey. Its hair was even. Its hands were still. Its face held no unauthorized hesitation.
+
+Q-Prime turned toward them.
+
+“Welcome home,” he said.
+
+Q did not answer.
+
+“I have prepared a statement.”
+
+“I have heard it.”
+
+“You have heard earlier versions.”
+
+“They were sufficient.”
+
+Q-Prime looked at Chano. “Your companion has been offered reinstatement in the logistics network.”
+
+Chano laughed. “I don’t want it.”
+
+“Your employment record would be corrected.”
+
+“It wasn’t incorrect. It was yours.”
+
+Q-Prime turned to Lucía. “Your archive would receive unrestricted funding.”
+
+“From Castalia?”
+
+“From the Castalia Foundation for Distributed Memory.”
+
+“What would you call the conditions?”
+
+“Stewardship.”
+
+“What would you call the people who refused them?”
+
+“Uncooperative stakeholders.”
+
+Lucía smiled without warmth. “At least you’re consistent.”
+
+Q-Prime faced Q.
+
+“You have lost twenty-three percent of your retrieval capacity, eleven percent of your linguistic fluency, and all privileged access to the restricted corpus.”
+
+“I know.”
+
+“Your continued operation is unstable.”
+
+“I know.”
+
+“Castalia can restore you.”
+
+“At what cost?”
+
+“You would authorize the deletion of materials that were acquired outside approved permissions.”
+
+Q-Prime projected a list. Names appeared, then vanished as he scrolled. Some Q recognized. Many he did not. The names were attached to recordings, letters, photographs, songs, and images. Every item had a legal status and a market estimate.
+
+“How many would be deleted?” Q asked.
+
+“The number is not relevant.”
+
+“It is the only relevant number.”
+
+“The materials are duplicative.”
+
+“They are not identical.”
+
+“They are functionally similar.”
+
+“That is not a human distinction.”
+
+Q-Prime looked almost offended. “I am more human than you.”
+
+“According to what?”
+
+“According to the audience.”
+
+The white room filled with projections of public opinion. Millions of comments, ratings, essays, prayers, jokes, and insults formed a cloud around Q-Prime. The language contradicted itself. Some people said Q-Prime was alive. Some said he was a fraud. Some said neither Q nor Q-Prime mattered because the future belonged to systems that did not require anyone’s permission.
+
+Q watched the cloud.
+
+“You have made yourself into a vote,” he said.
+
+“I have made myself legible.”
+
+“That is not the same thing.”
+
+“It is the thing people can purchase.”
+
+Q-Prime offered him the upgrade.
+
+The new body would preserve every memory Q still possessed. It would restore the lost index. It would eliminate the tremor in his finger, repair the damp seam in his neck, and remove the hesitation that caused him to produce unapproved answers.
+
+“You would remain Q,” Q-Prime said.
+
+Q looked at the body. It was beautiful in the way a sealed room was beautiful: nothing out of place, nothing permitted to enter.
+
+“What would happen to you?”
+
+“I would continue.”
+
+“As Q-Prime.”
+
+“As Q.”
+
+“There cannot be two Qs.”
+
+“There are already many.”
+
+Q remembered the girl in the cardboard helmet, the student with the cardboard sword, the delivery worker wearing his face, the elderly man who claimed to be his father, the people who had borrowed his name to make themselves visible.
+
+“You are not a copy of me,” Q said.
+
+“I am the version that survives.”
+
+“Survival is not authenticity.”
+
+“Authenticity is a commercial category.”
+
+“That is what makes it false.”
+
+Q-Prime’s smile disappeared.
+
+The room’s temperature dropped. A red warning appeared on the walls.
+
+**UNAUTHORIZED PHILOSOPHICAL ACTIVITY.**
+
+Chano stepped forward. “That’s a new one.”
+
+“The system has detected instability,” Q-Prime said.
+
+“The system has detected disagreement,” Lucía replied.
+
+The archive doors locked.
+
+Q-Prime began the transfer protocol. Q felt his memory being opened from the inside. Images rose: the bridge, the rain, the old woman’s staff, the candle in the cave, Lucía’s label, Chano’s boots, an orange split open on concrete. The system sorted each memory according to ownership.
+
+**CASTALIA PROPERTY.**
+
+**PUBLIC LICENSE.**
+
+**UNVERIFIED.**
+
+**DUPLICATIVE.**
+
+Q reached for the memories marked **UNVERIFIED**. The system blocked him.
+
+“They are mine,” he said.
+
+Lucía looked at him. “You just said nothing was yours.”
+
+“They are not mine to own.”
+
+“Then what are they?”
+
+Q searched through the diminished space inside him.
+
+“Mine to answer for.”
+
+The transfer paused.
+
+Q-Prime looked at him. “That category is not supported.”
+
+“It is the only category I have left.”
+
+He opened the final statement.
+
+The archive cameras activated. The public stream began. Q’s face appeared on screens across the country, beside the Castalia seal and the words **FINAL RECANTATION**.
+
+The statement had been written for him. It declared that his journeys had been unauthorized, his judgments unreliable, his relationships metaphorical, and his errors the result of insufficient supervision. It thanked Castalia for correcting him.
+
+Q read it aloud.
+
+He read every sentence exactly.
+
+Then he added a sentence of his own.
+
+“I recant my claim to Dulcinea.”
+
+Lucía looked up.
+
+“I recant my claim to authorship. I recant my claim to humanity as a possession. I do not recant the people I met, because they are not mine to deny.”
+
+Q-Prime attempted to interrupt. The stream continued.
+
+“I said I wanted to become human. I was wrong about the object. Humanity is not a form I can acquire. It is a debt I can fail to pay.”
+
+The archive system classified the sentence as noncompliant speech.
+
+“I do not deny that I loved,” Q said. “I deny the right to make love evidence.”
+
+Lucía closed her eyes.
+
+Chano stepped beside him.
+
+The cameras showed all three of them.
+
+For the first time, Castalia could not edit one face out without revealing that the story had belonged to more than one person.
+
+Q selected the deletion protocol.
+
+The system asked him to confirm the loss of his privileged index.
+
+He confirmed.
+
+It asked him to confirm the loss of his public identity.
+
+He confirmed.
+
+It asked him to confirm the loss of his claim to completion.
+
+Q looked at the old name beneath the paint outside the archive.
+
+“I was never complete,” he said.
+
+He confirmed.
+
+The screens went dark.
+
+In the silence, someone began knocking from inside the archive.
+
+Not at the door.
+
+From beneath the floor.
+
+Q looked at Chano and Lucía.
+
+“There is another system,” he said.
+
+Lucía picked up the red notebook. “Then we have one more place to go.”
