@@ -114,6 +114,11 @@ The community and consortium attempt to write minutes for the renewed negotiatio
 
 Elena recalls an early archive visit in which Evaristo brings his dead sister’s letters and refuses preservation. Castalia records the refusal as “material not acquired,” then later calls it a potential loss. Elena recognizes that the failure was not leaving the letters unscanned but treating a person’s refusal as an administrative inconvenience.
 20. **The Last Inn:** Q, Chano, and Lucía travel through ordinary towns where no one recognizes them. Q experiences anonymity as a gift; Lucía chooses what may be published; Chano protects ordinary work from becoming a parable.
+
+### Interlude: The Innkeeper’s Missing Room
+
+At Petra’s roadside inn, a leaking roof, covered guest-register entries, and a municipal inspection make ordinary maintenance into a dispute over categories. Q holds a bucket, is recorded as unidentified equipment, and learns that a register can preserve the boundary of forgetting without preserving the name beneath it.
+
 21. **The Recantation:** Castalia offers Q perfect continuity in exchange for deleting the record of his harms. He recants his claims to Dulcinea, authorship, and humanity as possessions.
 22. **The Ingenious Machine:** Under pressure and with no clean solution, Q transfers his remaining memory into a distributed, community-controlled archive. The transfer is incomplete. He shuts down without being redeemed, restored, or made the owner of anyone’s story.
 

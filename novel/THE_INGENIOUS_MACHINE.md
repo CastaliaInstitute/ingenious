@@ -8864,6 +8864,160 @@ Q looked for the answer inside himself.
 
 Lucía nodded. “That’s enough.”
 
+### Interlude: The Innkeeper’s Missing Room
+
+Petra kept a register, but unlike Celia she did not tear pages from it. She
+covered the names with strips of brown paper whenever a guest asked to be
+forgotten, and she refused to remove the paper when a later guest asked to know
+who had slept in the room before him.
+
+“That makes the register useless,” Q said.
+
+“It tells you where usefulness ends.”
+
+The missing entries accumulated. Room Four had five covered names, Room Seven
+had two, and the room beside the kitchen had an entire page hidden beneath a
+piece of a flour sack. Petra said the page belonged to a wedding party that
+had argued all night about whether the groom had married the bride or the
+family.
+
+“Which answer was correct?” Q asked.
+
+“They are still arguing.”
+
+The morning after the orange, a municipal inspector arrived to assess the leak.
+He carried a tablet, a measuring instrument, and a document certifying that he
+was authorized to inspect the premises. Petra made him wait while she served
+breakfast to the drivers.
+
+“The leak is urgent,” he said.
+
+“So are eggs.”
+
+“I have an appointment.”
+
+“The roof did not make one.”
+
+Q offered to calculate the probability of structural damage. Petra told him to
+hold the bucket. He held it beneath the leak while the inspector photographed
+the ceiling from three angles.
+
+“Your property is not compliant,” the inspector announced.
+
+“It keeps guests dry most of the time.”
+
+“That is not a standard.”
+
+“It should be.”
+
+The inspector asked Q whether he was the owner.
+
+“No.”
+
+“Manager?”
+
+“No.”
+
+“Employee?”
+
+“Not formally.”
+
+“Then why are you holding the bucket?”
+
+Q considered the question. “Because it is raining indoors.”
+
+The inspector recorded him as **UNIDENTIFIED MALE EQUIPMENT**. Chano saw the
+entry and laughed so hard he had to sit down.
+
+“You wanted to become human,” he said. “Now you’re a man-shaped bucket
+assistant.”
+
+Petra signed the inspection form but refused the recommended renovation
+contract. The inspector warned her that the inn might be closed. She asked
+whether closure would repair the roof.
+
+“It would make the premises unavailable.”
+
+“That is not the same thing.”
+
+“It is the legal thing.”
+
+Q recognized the structure. “The category is replacing the condition.”
+
+The inspector looked at him. “Who told you that?”
+
+“Several towns.”
+
+“Then you should return to them.”
+
+Petra gave the inspector the bucket. He stood beneath the leak while she took
+his photograph for the register. She did not photograph his face. She
+photographed the bucket, the water, the tablet, and the floor becoming damp.
+
+“What is that for?” Q asked.
+
+“My record.”
+
+“Will you submit it?”
+
+“If I need to.”
+
+“To whom?”
+
+“That is why I keep records.”
+
+At noon, the drivers left. One paid in coins. One paid by transfer. One promised
+to return after the harvest. Petra accepted all three forms of payment, though
+she knew the promise was not a currency recognized by any bank.
+
+Q asked whether the inn made a profit.
+
+“Some months.”
+
+“Then why continue?”
+
+Petra pointed to the covered register. “People arrive tired. They need a room
+that does not ask them to explain the whole journey.”
+
+The answer remained with Q longer than several philosophical definitions had
+done. It described the inn, but also the archive, the road, and the place beside
+Chano in which Q had been allowed to be wrong without becoming a lesson.
+
+Before they left, Petra brought out a small notebook. It contained the names of
+repairs: leak above Four, broken latch in Two, fan in Seven, orange tree lifting
+the pavement, television speaking over the news.
+
+“You can take this,” she said.
+
+“Why?”
+
+“So someone remembers what was broken.”
+
+“May I copy it?”
+
+“You may read it here.”
+
+Q read the entries and returned the notebook.
+
+“You are not keeping a copy.”
+
+“No.”
+
+“Then the information may be lost.”
+
+“It may.”
+
+“That is an unacceptable risk.”
+
+Petra shrugged. “It is the risk of not being Castalia.”
+
+The bus arrived before Q could answer. He climbed aboard with Chano and Lucía.
+Petra stood in the road until the bus turned. The inspector remained beneath
+the leak, still holding the bucket, though nobody had authorized him to stay.
+
+In the rear window, Q watched the inn become smaller. The sign’s last O was
+still dark. The road did not correct it.
+
 ### Chapter Twenty-One: The Recantation
 
 The archive had been cleaned for Q’s return.
