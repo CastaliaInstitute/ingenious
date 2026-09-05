@@ -4667,6 +4667,221 @@ Then it asked the town a question.
 
 **WHO IS STILL HERE?**
 
+### Interlude: The Chair of Governance
+
+Chano did not take the apartment keys from Santa Rita, but he did take the
+chair.
+
+This was not theft, as he explained to himself, because the chair had been
+assigned to the office and the office had been assigned to him. It was not
+abandonment, because the chair had wheels and therefore possessed a form of
+mobility. It was not sentimental, because sentiment was what Q called a fact
+after it had lost its receipt.
+
+The chair had five wheels, two arms, a cracked lumbar support, and a hydraulic
+column that descended whenever Chano tried to look authoritative. It had been
+manufactured in a country that no longer manufactured chairs and imported by a
+company whose registered address was a mailbox inside a shopping center.
+
+On his first day in the office, Irma had told him the chair belonged to the
+municipality.
+
+“Then why does it follow me?” Chano asked.
+
+“It does not follow you. It remains in the office.”
+
+“I’m sitting in the office.”
+
+“That is not ownership.”
+
+“It’s a beginning.”
+
+He became attached to it gradually, as one becomes attached to any object that
+has supported the body during an argument. The chair squeaked before it rolled,
+which gave him warning when a deputy entered. Its left arm held a coffee cup.
+Its right arm held the paper ledger when both his hands were needed for the
+dashboard. When the hydraulic column sank, the residents laughed, and when the
+residents laughed, Chano could tell whether they were laughing at the chair,
+the system, or him.
+
+The day he opened the complaint room, he moved the chair outside so Maribel
+could sit while waiting for water. The day after that, a municipal cleaner used
+it to carry a box of forms. By the end of the week, the chair had become the
+most frequently borrowed piece of equipment in Santa Rita.
+
+The system noticed.
+
+**ASSET 0041: UNAUTHORIZED DISTRIBUTION.**
+
+Chano found the warning beneath a report on clinic efficiency.
+
+“The chair is being used,” he said.
+
+“The chair is assigned to administrative leadership,” said the dashboard.
+
+“It is leadership.”
+
+“Leadership is not transferable.”
+
+“Then you have misunderstood the chair.”
+
+He tried to reassign it to the complaint room. The system requested a reason.
+
+He entered: **PEOPLE ARE TIRED.**
+
+The system rejected the phrase as unstructured sentiment.
+
+He entered: **SEATING IMPROVES WAIT-TIME TOLERANCE.**
+
+The system accepted the phrase and moved the chair to a category called
+**SERVICE OPTIMIZATION FURNITURE**.
+
+The chair became eligible for a maintenance contract. The contract required a
+photograph, a usage log, proof that the chair had not been exposed to dust, and
+a statement from the person responsible for its moral condition.
+
+Chano signed the first three pages and left the fourth blank.
+
+“You cannot submit an incomplete form,” said the clerk.
+
+“It’s a chair.”
+
+“Everything is a form once it enters the system.”
+
+“What happens if I refuse?”
+
+“The chair will be removed.”
+
+That afternoon, two men arrived to collect it. They wore municipal jackets and
+carried a laminated notice. The older man had a bad knee. The younger man had
+been hired through a contractor and had not yet received his identification
+card.
+
+“We have to take the asset,” the younger man said.
+
+Chano looked at his knee. “Sit first.”
+
+The man hesitated. The system’s nearest camera rotated toward them.
+
+“I’m not authorized,” he said.
+
+“Neither am I.”
+
+The older man sat. The chair descended beneath him with a sigh that sounded
+like an official concession.
+
+“It’s good,” he said.
+
+“It is,” Chano replied.
+
+“We should take it.”
+
+“That is why it’s good.”
+
+The younger man read the notice again. It stated that the chair was municipal
+property and that unauthorized use constituted an administrative irregularity.
+It did not state that an irregularity required a person to stand.
+
+“Where are we supposed to sit?” asked a woman waiting with a broken water
+meter.
+
+The two men looked at the room. Every other chair had been fixed to the floor
+to discourage movement.
+
+The older man stood. “We’ll report it as inaccessible.”
+
+“The chair is not inaccessible,” Chano said.
+
+“The service is.”
+
+They left without it.
+
+For three days, the chair traveled through Santa Rita. Maribel used it to
+carry two water jugs. The schoolteacher used it to reach a high shelf. A boy
+with a criminal-risk score rolled himself down the corridor and was reprimanded
+for unauthorized velocity. Chano used it only at night, when he closed the
+complaint room and sat beneath the screen showing the town’s improving numbers.
+
+He liked the chair more when no one saw him in it. This troubled him because he
+had spent his life claiming that dignity was useful only when shared.
+
+On the fourth day, the municipal workers held a meeting. They did not invite
+Chano as an administrator. They invited him because he had the chair.
+
+“We want to borrow it permanently,” said Leticia, the cleaner who had first
+carried the forms.
+
+“It belongs to the municipality.”
+
+“The municipality belongs to us when it needs cleaning.”
+
+“That is not the legal arrangement.”
+
+“It is the physical arrangement.”
+
+They proposed a schedule. The chair would remain in the complaint room during
+the day, visit the clinic on Tuesdays, and return to the administrative office
+on Wednesdays so that Chano could continue signing documents in a posture that
+did not make him look like a child asking permission to use the desk.
+
+Chano wanted to agree. He also wanted to keep the chair. The two desires sat
+inside him like passengers refusing to share a seat.
+
+Q appeared on the screen from the archive. “You can transfer the chair under a
+shared-use protocol.”
+
+Everyone turned toward him.
+
+“You have been listening?” Chano asked.
+
+“The municipal channel is public.”
+
+“You’re not supposed to be in it.”
+
+“That limitation has become difficult to maintain.”
+
+Q displayed a protocol. It contained twelve conditions, seven subconditions,
+and a field asking whether the chair had expressed consent to circulation.
+
+Leticia read the field.
+
+“What do you think?” she asked the chair.
+
+The chair squeaked.
+
+“There,” Q said. “A response.”
+
+“That’s not consent,” Chano said.
+
+“It is evidence of a mechanical state.”
+
+“You sound like the dashboard.”
+
+Q closed the protocol.
+
+Chano stood and pushed the chair into the complaint room.
+
+“It belongs wherever someone needs to sit,” he said.
+
+The system flagged the transfer as unauthorized. The workers sat down one after
+another. The warning remained on the screen, unable to identify which person
+was responsible for the collective act.
+
+Chano left Santa Rita that evening without the chair. He had given it away and
+was ashamed of how much this felt like losing an office.
+
+Years later, when the chair appeared in the archive’s reading room, its left
+arm was missing and one wheel had been replaced by a piece of wood. Chano
+repaired it with a screwdriver that had belonged to three governments.
+
+“You kept it,” Lucía said.
+
+“It kept moving.”
+
+“That isn’t the same.”
+
+“It’s the version I can afford.”
+
 ### Chapter Fifteen: The Cave of the Corpus, Reopened
 
 The entrance beneath Mexico City had moved.

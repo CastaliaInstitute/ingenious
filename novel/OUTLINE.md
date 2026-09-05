@@ -64,6 +64,11 @@ Castalia’s official answers are interrupted by Q, Chano, and Lucía, exposing 
 
 13. **Lucía’s Archive:** Lucía leads a consent-based archive of women’s testimonies, including women turned into national symbols, missing people, actresses, and invented beloveds. She quietly uses Q’s fame to attract donors, then must reckon with turning him into a door while insisting he is not the room. Q becomes a source and labeler, not the narrator.
 14. **The Island of Good Administration:** Chano temporarily governs Santa Rita. His reforms make the system less cruel but more durable until he chooses a public record over administrative success.
+
+### Interlude: The Chair of Governance
+
+Chano takes the municipal office chair, discovers that the dashboard considers shared use an unauthorized asset transfer, and gives it to the complaint room. Years later, the chair returns to the archive as an ordinary object repaired by ordinary hands.
+
 15. **The Cave of the Corpus, Reopened:** Custodians of restricted materials demand control of access, attribution, and deletion. Q deletes his privileged index and loses abilities he once considered his identity.
 16. **The Trial of the Machine:** Castalia prosecutes Q for property damage, impersonation, and the wind-farm shutdown. The court treats him as property, defendant, witness, and spectacle, even entering the disputed water-bottle receipt from his first sally as evidence of his public origin. Chano testifies about what Q did; Lucía refuses to testify about Q’s soul.
 17. **The Wind Farm of Giants, Again:** Q returns to Oaxaca without a camera and gives the center back to Bixha and the people arguing over the project. When he tries to summarize their agreement, Bixha makes him remove his name. A partial renegotiation leaves every side dissatisfied and accountable.
