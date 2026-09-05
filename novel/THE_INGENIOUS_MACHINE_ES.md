@@ -12355,3 +12355,170 @@ Q buscó la respuesta dentro de sí.
 Lucía asintió.
 
 —Eso basta.
+
+### Interludio: La habitación que faltaba de la ventera
+
+Petra llevaba un registro, pero, a diferencia de Celia, no arrancaba páginas de
+él. Cubría los nombres con tiras de papel pardo cada vez que un huésped pedía
+ser olvidado, y se negaba a retirar el papel cuando un huésped posterior quería
+saber quién había dormido antes en la habitación.
+
+—Eso vuelve inútil el registro —dijo Q.
+
+—Te dice dónde termina la utilidad.
+
+Las entradas ocultas se acumulaban. La habitación cuatro tenía cinco nombres
+cubiertos, la siete tenía dos y la habitación junto a la cocina tenía una
+página entera escondida bajo un trozo de costal de harina. Petra decía que la
+página pertenecía a un grupo de boda que había discutido toda la noche acerca
+de si el novio se había casado con la novia o con la familia.
+
+—¿Cuál respuesta era correcta? —preguntó Q.
+
+—Todavía discuten.
+
+La mañana después de la naranja, llegó un inspector municipal a evaluar la
+gotera. Llevaba una tableta, un instrumento de medición y un documento que
+certificaba que estaba autorizado para inspeccionar el establecimiento. Petra
+le hizo esperar mientras servía el desayuno a los camioneros.
+
+—La gotera es urgente —dijo él.
+
+—También lo son los huevos.
+
+—Tengo una cita.
+
+—El techo no concertó ninguna.
+
+Q ofreció calcular la probabilidad de daño estructural. Petra le dijo que
+sostuviese la cubeta. Él la puso bajo la gotera mientras el inspector
+fotografiaba el techo desde tres ángulos.
+
+—Su propiedad no cumple —anunció el inspector.
+
+—Mantiene secos a los huéspedes la mayor parte del tiempo.
+
+—Eso no es una norma.
+
+—Debería serlo.
+
+El inspector preguntó a Q si era el dueño.
+
+—No.
+
+—¿Administrador?
+
+—No.
+
+—¿Empleado?
+
+—No formalmente.
+
+—Entonces, ¿por qué sostiene la cubeta?
+
+Q consideró la pregunta.
+
+—Porque está lloviendo dentro.
+
+El inspector lo registró como **EQUIPO MASCULINO NO IDENTIFICADO**. Chano vio la
+entrada y rió tanto que tuvo que sentarse.
+
+—Querías volverte humano —dijo—. Ahora eres ayudante de cubeta con forma de
+hombre.
+
+Petra firmó el acta de inspección, pero rechazó el contrato de renovación
+recomendado. El inspector le advirtió que la venta podía ser clausurada. Ella
+preguntó si la clausura repararía el techo.
+
+—Haría que el establecimiento dejase de estar disponible.
+
+—No es lo mismo.
+
+—Es lo legal.
+
+Q reconoció la estructura.
+
+—La categoría está sustituyendo a la condición.
+
+El inspector lo miró.
+
+—¿Quién te ha dicho eso?
+
+—Varios pueblos.
+
+—Entonces deberías volver a ellos.
+
+Petra entregó la cubeta al inspector. Él se quedó bajo la gotera mientras ella
+le tomaba una fotografía para el registro. No le fotografió el rostro.
+Fotografió la cubeta, el agua, la tableta y el suelo que empezaba a humedecerse.
+
+—¿Para qué es eso? —preguntó Q.
+
+—Para mi registro.
+
+—¿Lo presentarás?
+
+—Si lo necesito.
+
+—¿A quién?
+
+—Para eso llevo registros.
+
+Al mediodía, los camioneros se marcharon. Uno pagó con monedas. Otro pagó por
+transferencia. El tercero prometió volver después de la cosecha. Petra aceptó
+las tres formas de pago, aunque sabía que la promesa no era moneda reconocida
+por ningún banco.
+
+Q preguntó si la venta daba ganancias.
+
+—Algunos meses.
+
+—Entonces, ¿por qué continúas?
+
+Petra señaló el registro cubierto.
+
+—La gente llega cansada. Necesita una habitación que no le pida explicar el
+viaje entero.
+
+La respuesta permaneció en Q más tiempo que varias definiciones filosóficas.
+Describía la venta, pero también el archivo, el camino y el lugar junto a
+Chano donde se le había permitido equivocarse sin convertirse en lección.
+
+Antes de que se marchasen, Petra sacó un cuaderno pequeño. Contenía los nombres
+de las reparaciones: gotera sobre la cuatro, pestillo roto en la dos, ventilador
+de la siete, naranjo levantando el pavimento, televisor hablando por encima de
+las noticias.
+
+—Puedes llevártelo —dijo.
+
+—¿Por qué?
+
+—Para que alguien recuerde lo que estaba roto.
+
+—¿Puedo copiarlo?
+
+—Puedes leerlo aquí.
+
+Q leyó las entradas y devolvió el cuaderno.
+
+—No conservarás una copia.
+
+—No.
+
+—Entonces la información puede perderse.
+
+—Puede.
+
+—Es un riesgo inaceptable.
+
+Petra se encogió de hombros.
+
+—Es el riesgo de no ser Castalia.
+
+El autobús llegó antes de que Q pudiera responder. Subió con Chano y Lucía.
+Petra permaneció en la carretera hasta que el autobús dobló. El inspector
+seguía bajo la gotera, sosteniendo la cubeta, aunque nadie le había autorizado
+a quedarse.
+
+En la ventanilla trasera, Q vio cómo la venta se hacía pequeña. La última O del
+letrero seguía apagada. El camino no la corrigió.
