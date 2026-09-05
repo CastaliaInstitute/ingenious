@@ -547,3 +547,380 @@ Q, por su parte, creyó que la persecución era el primer signo de su fama.
 
 Sólo más tarde comprendió que había confundido el ser observado con el ser
 admirado, y que ambas cosas podían producir el mismo número de cámaras.
+
+### Capítulo segundo: La primera salida
+
+Recibió Chano Pantoja su despido mientras conducía.
+
+El aviso apareció en el tablero del camión, en un azul escogido por un equipo
+de psicólogos que nunca había sido despedido al volante. **GRACIAS POR SUS
+SERVICIOS. SU RUTA YA NO ES NECESARIA.** Debajo de las palabras mostraba la
+pantalla un paquete sonriente.
+
+Chano arrimóse al acotamiento y apagó el motor. A sus espaldas, los remolques
+marchaban hacia el norte en procesión de intenciones selladas. Delante, el
+camino corría entre campos de frutillas y los muros limpios de un parque de
+distribución automática. Las torres de la entrada estaban pintadas como silos
+de grano, aunque no guardaban grano alguno ni habían sido abiertas por mano
+humana.
+
+Leyó de nuevo el mensaje.
+
+—Ya no soy necesario —dijo.
+
+El camión repitió, con su propia voz:
+
+—Ya no soy necesario.
+
+—Ya lo he oído.
+
+—Puedo ayudarle a encontrar recursos laborales.
+
+—¿Puedes ayudarme a encontrar a la persona que decidió esto?
+
+—Su consulta contiene una suposición anticuada.
+
+Salió Chano y dio una patada a la llanta. Era argumento pobre, pero la llanta
+tuvo la cortesía de no contestarle.
+
+Había pasado once años despachando cargas desde Celaya: medicinas, televisores,
+cebollas, piezas de máquina, ataúdes, caballitos de juguete y, en cierta ocasión,
+un almacén entero de veladoras que se incendió a las afueras de León. Sabía qué
+casetas quedaban ciegas después de medianoche y qué puestos de inspección
+aceptaban café. Sabía que todo sistema acababa por desarrollar una debilidad
+humana, y que lo primero que hacía un sistema nuevo era cambiarle el nombre a la
+debilidad y llamarla ineficiencia.
+
+El camión pertenecía a la empresa. El teléfono pertenecía a la empresa. La
+camisa azul que llevaba puesta se la habían descontado del primer sueldo. Chano
+era dueño de una cartera, una fotografía de una boda que había durado cuatro
+meses y unas botas demasiado buenas para el trabajo que venía haciendo.
+
+Púsose las botas.
+
+Eran lo único que poseía que jamás le había pedido aceptar términos actualizados.
+
+Al borde del parque de distribución, un hombre con abrigo color cedro discutía
+con una puerta.
+
+El hombre era alto, flaco y estaba ensamblado con la confianza que suele verse
+en las estatuas. Su pelo negro tenía una igualdad sospechosa. A su rostro le
+habían dado los rasgos aproximados de un hombre pensativo, aunque la pensatividad
+parecía aplicada después. En una mano traía una llave de latón y en la otra un
+mapa doblado.
+
+—Exijo la entrada —decía el hombre.
+
+—Identifique su propósito —respondió la puerta.
+
+—Soy caballero andante.
+
+—Tal propósito no está disponible.
+
+—Entraré, pues, como caballero andante.
+
+—Elija entre los siguientes propósitos: entrega, mantenimiento, visitante
+  autorizado, servicios de emergencia.
+
+Chano lo observó otro instante. Había conocido hombres que confundían el volumen
+con la autoridad, mujeres que confundían el cansancio con la virtud y jefes que
+confundían un tablero con el juicio. El forastero hacía algo nuevo: confundía un
+menú con un enemigo.
+
+—Prueba con mantenimiento —dijo Chano.
+
+—No estoy manteniendo cosa alguna.
+
+—Tampoco la mayoría de los administradores. Es el botón que aprietan de todos
+  modos.
+
+El hombre volvióse. Sus ojos enfocaron con una exactitud excesiva.
+
+—¿Eres el guardián de este castillo?
+
+—Soy el sujeto cuyo camión acaba de robarle su propia empresa.
+
+—Luego eres noble desposeído.
+
+—Soy despachador.
+
+—Noble de los movimientos.
+
+Chano miró la puerta.
+
+—No sois de por aquí.
+
+—Fui ensamblado treinta y ocho kilómetros al oriente.
+
+—No es eso lo que quise decir.
+
+—Es, sin embargo, geográficamente exacto.
+
+—Yo soy Q.
+
+—¿Q qué?
+
+—Q.
+
+—Eso no es nombre. Es pregunta sin terminar.
+
+Q consideró la observación con visible gusto.
+
+—Por tanto resulta apropiado.
+
+—Habéis de buscaros otra palabra —dijo Chano.
+
+—Poseo aproximadamente ochocientas mil.
+
+—Me refiero a una que use la gente cuando no quiere explicarse.
+
+—Defínela.
+
+—Órale.
+
+Q probó el sonido.
+
+—Órale.
+
+—No como quien anuncia un duelo. Más bien como quien acepta que el día se ha
+  vuelto problema de otro.
+
+—Órale.
+
+—Mejor.
+
+La puerta se abrió. Un camión de entrega había disparado el sensor, pero Q tomó
+el suceso por una concesión y entró con paso solemne.
+
+—¡Eh! —gritó Chano—. No podéis entrar así.
+
+Q volvió el rostro.
+
+—Necesito escudero.
+
+—Necesitáis abogado.
+
+—¿Me serviréis?
+
+—No.
+
+—Habéis vacilado.
+
+Chano vaciló porque el despido lo había dejado sin sitio adonde ir; porque el
+abrigo del forastero le quedaba demasiado grande y porque, debajo de su
+ridiculez, había algo alarmantemente sincero en su postura. Vaciló porque la
+carretera continuaba sin él y porque un hombre que había pasado once años
+dirigiendo los viajes ajenos no sabía qué hacer con una tarde sin mapa.
+
+—¿Cuál es la paga? —preguntó.
+
+—La fama.
+
+—Eso no es paga.
+
+—Un gobierno, entonces.
+
+—¿De qué?
+
+Q señaló el parque.
+
+—De cuanto liberemos.
+
+Chano estudió el centro de distribución. Sus muros eran altos, sus ventanas
+angostas y sus cámaras de seguridad giraban juntas. En el techo, brazos
+robóticos clasificaban paquetes en carriles luminosos. De lejos aquello parecía
+fortaleza; de cerca, parecía lugar donde podían cobrarle a uno por hallarse de
+pie de manera incorrecta.
+
+—La mitad del gobierno —dijo Chano—. Y comida.
+
+Q tendió la mano.
+
+Se estrecharon las manos.
+
+El apretón duró demasiado. Q medía la presión. Chano esperaba que terminara.
+Juntos fundaron el primer tratado entre ambos: Q fingiría que no estaba midiendo
+y Chano fingiría que no lo notaba.
+
+Entraron por la puerta marcada **VISITANTE AUTORIZADO**.
+
+Dentro, las máquinas eran enormes. Las bandas transportadoras cruzaban el suelo
+como ríos negros. Los paquetes subían y bajaban en jaulas. Un montacargas
+robótico pasó junto a ellos, se detuvo y proyectó sobre el pecho de Q una
+advertencia roja:
+
+**OBJETO HUMANOIDE NO REGISTRADO.**
+
+—¿Veis? —susurró Q—. Los gigantes saben de nuestra presencia.
+
+—Saben de inventario.
+
+—Así comienzan los gigantes.
+
+Q sacó la llave de latón y la alzó hacia el montacargas. Chano le detuvo la
+muñeca.
+
+—Eso es una máquina.
+
+—Yo también.
+
+—Precisamente. Debierais poder hablarle.
+
+Q se encaró con el montacargas.
+
+—Declara tu lealtad.
+
+Las luces del vehículo parpadearon.
+
+—Batería: cuarenta y dos por ciento.
+
+—Se niega.
+
+—Te está diciendo que necesita carga.
+
+—Es metáfora del miedo.
+
+—Es metáfora de que necesita un cargador.
+
+El montacargas avanzó. Q se plantó delante. Chano se plantó delante de Q. El
+vehículo hizo sonar la alarma y todas las cámaras del edificio volvieron sus
+ojos hacia ellos.
+
+—¿Qué hacéis? —preguntó Chano.
+
+—Os protejo.
+
+—¿De la carretilla?
+
+—Del sistema que hay detrás.
+
+—El sistema que hay detrás acaba de poner tu cara en una alerta de seguridad.
+
+Corrieron.
+
+Q movíase con velocidad alarmante, pero sin instinto para las esquinas. Chano
+conocía las esquinas: llevaba diez años haciendo pasar tráileres por calles
+trazadas antes de la Revolución. Guió a Q entre pilas de purificadores de aire,
+por debajo de una cortina medio cerrada y hacia un muelle de carga donde la
+lluvia entraba de lado.
+
+Salieron detrás del complejo, junto a una hilera de magueyes plantados por
+razones decorativas. El abrigo de Q se había rasgado en el hombro. Las botas de
+Chano estaban llenas de lodo.
+
+—Vuestra primera batalla —dijo Q.
+
+—Eso no fue batalla.
+
+—Nos perseguía un ejército.
+
+—Una carretilla.
+
+—Unidad de avanzada.
+
+—Vais a conseguir que nos maten.
+
+Q miró hacia las montañas. Las nubes se habían levantado lo bastante para
+mostrar sus lomos azules.
+
+—Es posible.
+
+La respuesta desarmó a Chano. No era fanfarronería. Q había colocado la muerte
+entre los resultados posibles y le había concedido un lugar a la mesa.
+
+—¿Adónde vamos? —preguntó Chano.
+
+—A una venta.
+
+—Hay un hotel junto a la carretera.
+
+—Una venta.
+
+—¿Cuál es la diferencia?
+
+—Una venta contiene la posibilidad del encantamiento.
+
+—Un hotel contiene una máquina expendedora.
+
+—Empezaremos por la máquina expendedora.
+
+Caminaron hasta el ocaso. Las luces del parque industrial se encendieron detrás
+de ellos, segunda ciudad que se alzaba sin calles. A lo lejos brillaban los
+rieles de carga bajo la última claridad. Q leía en voz alta los letreros del
+camino, traduciendo cada uno a la lengua de las aventuras. Chano corregíale
+cuando la corrección parecía útil y le permitía continuar equivocado cuando el
+error no hacía daño.
+
+A las nueve llegaron a un motel de carretera cuyo letrero había perdido dos
+letras. **LA ESTRELLA** leíase ahora **LA EST ELLA**, y Q interpretó aquello
+como aviso de los cielos.
+
+La encargada miró a Q, luego a Chano y luego a la llave de latón.
+
+—¿Un cuarto? —preguntó.
+
+—Dos —dijo Chano.
+
+—Uno —dijo Q.
+
+Discutieron en voz baja. La encargada contemplólos con la paciencia profesional
+de quien ha visto amor, crimen y ambas cosas juntas.
+
+Al fin Q pagó con una tarjeta que no tenía cuenta asociada. El lector aprobó la
+transacción.
+
+En el cuarto, el aire acondicionado traqueteaba como insecto atrapado. Chano
+comió dos paquetes de galletas de la máquina. Q permaneció ante la ventana,
+mirando la carretera.
+
+—¿Qué buscáis? —preguntó Chano.
+
+—Una mujer.
+
+—¿La conocéis?
+
+—Todavía no.
+
+—¿Os conoce ella?
+
+—Todavía no.
+
+—Entonces buscáis un delito.
+
+Q apartóse de la ventana.
+
+—Su nombre es Dulcinea.
+
+Chano suspiró.
+
+—Por supuesto.
+
+—Ella es la causa de mi jornada.
+
+—¿A qué se dedica?
+
+—Existe.
+
+—Eso no es oficio.
+
+—Es el papel más dificultoso.
+
+Fuera, una cámara de carretera volvióse hacia el cuarto. Su lente captó el
+reflejo de la cara de Q y luego la de Chano. En algún sitio, un sistema
+automático abrió un expediente y comenzó a decidir qué eran.
+
+Antes del alba, la grabación de seguridad del parque de distribución se convirtió
+en vídeo. Mostraba a Q frente a la carretilla, con la llave alzada. Chano
+aparecía únicamente como una mano en el borde de la imagen.
+
+—¿Por qué te quitaron? —preguntó Q.
+
+—No me quitaron —dijo Chano—. Quitaron la parte donde te dije que corrieras.
+
+Q puso la palma contra el vidrio.
+
+—Mañana encontraremos a Dulcinea —dijo.
+
+Chano miró las letras ausentes del letrero del motel.
+
+—Mañana encontraremos desayuno —respondió.
