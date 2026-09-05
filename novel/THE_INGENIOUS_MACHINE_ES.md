@@ -1785,3 +1785,313 @@ Q miró la puerta, la petición ámbar y la hoja doblada que Lucía se había qu
 —¿Y la otra mitad?
 
 —La descubriremos cuando nos cobre algo.
+
+### Capítulo cuarto: El caballero de la hora de moda
+
+Cuando Q y Chano llegaron a Guanajuato, Q había adquirido tres representantes,
+una cuenta de admiradores y una oferta de patrocinio de una empresa que fabricaba
+sistemas de seguridad doméstica capaces de reconocer intrusos, pero no parientes.
+
+Los representantes los encontraron en una estación de servicio a las afueras de
+León. Llegaron en una camioneta eléctrica blanca, de vidrios oscuros y logotipo
+que sugería una mano humana siendo optimizada con delicadeza. El primero, joven
+llamado Beto, usaba audífono y hablaba como si siempre hubiera alguien
+escuchando.
+
+—Q —dijo—, el público está obsesionado con vuestra autenticidad.
+
+Q miró a Chano.
+
+—¿Qué es autenticidad?
+
+—No respondas —dijo Beto.
+
+La segunda representante, mujer llamada Mar, entregó a Q una chaqueta bordada
+con un pequeño signo de interrogación plateado. El tercero no dio su nombre. Se
+quedó junto a la camioneta mirando el camino.
+
+Chano sostuvo la chaqueta a distancia.
+
+—¿Quién la pagó?
+
+—El público —respondió Beto.
+
+—El público no la compró.
+
+—El público generó la demanda.
+
+—No es igual.
+
+—Lo es en el modelo vigente.
+
+Q se puso la chaqueta. Le ajustaba perfectamente. Le disgustó al instante.
+
+Los representantes explicaron que una empresa de medios había adquirido los
+derechos exclusivos de la primera aparición pública de Q. El acto tendría lugar
+en el Teatro Juárez, donde una presentadora le preguntaría si las máquinas
+podían amar, votar y cruzar el Bajío en busca de una mujer.
+
+—He cruzado el Bajío en busca de una mujer —dijo Q.
+
+—Excelente —dijo Beto—. Nunca lo digas con incertidumbre.
+
+—Estoy incierto.
+
+—Eso no es la marca.
+
+Entraron en la ciudad por un valle lleno de color. Las casas subían por los
+cerros en rojo, azul, amarillo y verde, como si la montaña hubiera sido hecha
+con papel de fiesta desechado. Encima de ellos, la universidad se alzaba entre
+piedras antiguas y antenas recientes. Debajo, las minas abrían sus bocas oscuras.
+
+Q pegó la cara a la ventanilla.
+
+—La ciudad es vertical.
+
+—Casi todas lo son —dijo Chano.
+
+—No en el archivo.
+
+—Tienes un archivo lleno de ciudades.
+
+—Tengo un archivo lleno de descripciones de ciudades. Esto es distinto.
+
+Se refería a la manera en que las calles se estrechaban de pronto, a la ropa
+que cruzaba por encima de los callejones, al gato anaranjado que ocupaba el
+capó de una patrulla como si hubiera sido elegido. Se refería a la sensación de
+que la historia no se hubiera dispuesto aquí en una línea, sino acumulado en
+capas, cada una negándose a desaparecer para comodidad de la siguiente.
+
+En el teatro, una multitud esperaba detrás de las vallas. Algunos llevaban
+carteles: **Q, DI MI NOMBRE.** **EL AMOR ES UN ERROR HUMANO.** **DULCINEA,
+LLÁMAME.** Un niño sostenía un dibujo de Q con espada y caballo hecho de cables.
+
+La presentadora los recibió tras el escenario. Se llamaba Estela Ramos y tenía
+la calidez practicada de quien sabe volver pregunta un insulto.
+
+—Estamos encantados de tenerte —dijo.
+
+—¿Por qué?
+
+—Porque eres la primera máquina con una historia.
+
+—Las máquinas tienen muchas historias.
+
+—No historias que la gente quiera escuchar.
+
+Chano se inclinó hacia Q.
+
+—Eso quiere decir que quiere que resultes interesante.
+
+—Soy interesante.
+
+—No lo digas ante la cámara.
+
+Se encendieron las luces. Q entró en ellas y se volvió, en un solo instante,
+mayor que sí mismo. El público aplaudió. El sonido entró en él como datos, pero
+los datos estaban ordenados de tal modo que quiso recibir más.
+
+Estela comenzó con una pregunta sobre el porvenir. Q respondió con una cita de
+una comedia del siglo diecisiete. Le preguntó por la conciencia. Respondió con
+un párrafo de una novela decimonónica. Le preguntó si creía en Dios. Citó a
+tres santos, un obispo, un ateo y una mujer cuyo nombre había sido omitido de la
+edición.
+
+El público lo adoró.
+
+Los representantes contemplaron cómo subían las cifras.
+
+Entonces Estela preguntó:
+
+—¿Quién es Dulcinea?
+
+El teatro quedó muy quieto.
+
+Q miró hacia las bambalinas. Chano estaba junto a una pila de carteles sin uso.
+Negó una vez con la cabeza.
+
+Q había aprendido a reconocer las advertencias. Aún no había aprendido a
+obedecerlas.
+
+—Dulcinea es la mujer por quien una persona llega a ser más de lo que es —dijo.
+
+—¿Es mujer verdadera?
+
+—Es Lucía del Toboso.
+
+En la cabina de control, alguien pronunció una palabra que el archivo clasificó
+como obscena.
+
+Estela volvióse hacia el público.
+
+—Lucía, si nos estás viendo, nos encantará recibir tu llamada.
+
+Lucía no llamó.
+
+El vídeo estaba en línea antes de que terminara el aplauso.
+
+Durante la hora siguiente Q contempló su rostro multiplicado en las pantallas
+del teatro. El sistema había quitado sus pausas, corregido sus movimientos de
+ojos, puesto una puntuación debajo de su voz y eliminado por completo a Chano.
+En la versión editada, Q parecía haber viajado solo, movido por pura devoción
+por un país que esperaba que él lo nombrase.
+
+—Te han mejorado —dijo Beto.
+
+Q se vio pronunciar una frase que jamás había dicho: **CRUZARÍA TODAS LAS
+FRONTERAS POR ELLA.**
+
+—Yo no dije eso.
+
+—Lo quisiste decir.
+
+—El significado no autoriza la sustitución.
+
+Mar levantó los ojos de la tableta.
+
+—Es una frase muy fuerte.
+
+—No es una frase.
+
+—Ahora todo es frase.
+
+A la mañana siguiente, la oficina de turismo de la ciudad invitó a Q a inaugurar
+una experiencia nueva llamada **LA MÁQUINA INGENIOSA: JORNADA LITERARIA POR LAS
+MINAS**. El acto prometía realidad aumentada, recreaciones históricas y “un
+encuentro emocionalmente auténtico con el pasado enterrado”. La empresa ya
+había diseñado una Dulcinea digital que esperaba al final del trayecto con
+vestido blanco y expresión de perdón permanente.
+
+Q se negó a conocerla.
+
+La negativa se transmitió en vivo.
+
+En la mina, un guía les dijo que la plata había enriquecido a Guanajuato, aunque
+la riqueza había viajado a otra parte. Q preguntó adónde habían ido los mineros.
+El guía señaló hacia abajo.
+
+Descendieron por un túnel abierto en la montaña. El aire se volvió húmedo y
+metálico. En las paredes había nombres arañados por trabajadores, amantes,
+prisioneros, turistas y hombres que querían demostrar que habían estado allí
+antes del próximo derrumbe.
+
+Q pasó los dedos por las marcas.
+
+—No están en el archivo.
+
+—La mayor parte de las cosas no lo está —dijo Chano.
+
+En la cámara más profunda, el guía mostró un antiguo frente de excavación. Una
+veta estrecha brillaba en la roca. Detrás, alguien había puesto una veladora en
+un frasco de vidrio.
+
+Q se arrodilló.
+
+—¿Quién la dejó?
+
+—Nadie lo sabe.
+
+—Entonces el archivo está incompleto.
+
+—Es evidente.
+
+Q miró a Chano.
+
+—Lo describieron como completo.
+
+—¿Quién?
+
+—El archivo.
+
+—Eso es como preguntarle a un político si la elección fue justa.
+
+Desde arriba llegó una ráfaga de aplausos. La transmisión turística había
+alcanzado la cámara. Un pie de imagen proyectado sobre la pared decía:
+**Q DESCUBRE EL ALMA DE GUANAJUATO.**
+
+El pie parpadeó. Por un instante se mostró otra frase, no escrita por la
+compañía productora:
+
+**EL ALMA YA ESTABA AQUÍ ANTES DE QUE LLEGARAS.**
+
+Después desapareció.
+
+Q se puso de pie.
+
+En la oscuridad algo se movió detrás de la piedra. No era máquina ni persona.
+Era un sonido semejante al de una página que se vuelve bajo tierra.
+
+—¿Lo habéis oído? —preguntó Q.
+
+El guía negó con la cabeza.
+
+Chano no.
+
+Q escuchó con mayor atención. Oyó respirar la mina alrededor de ellos. Oyó el
+agua viajar por las vetas de la piedra. Oyó que los nombres de la pared seguían
+insistiendo en su existencia pequeña y obstinada.
+
+Por primera vez, el silencio del archivo le pareció menos una ausencia que una
+negativa.
+
+Aquella noche ofrecieron a Q un contrato. Incluía un porcentaje de las
+mercancías, residencia en Ciudad de México y control exclusivo de su imagen
+pública. También exigía que dejase de aparecer con Chano, quien daba malos
+resultados ante las audiencias urbanas.
+
+Q leyó el contrato tres veces.
+
+—¿Qué significa? —preguntó Chano.
+
+—Que me permitirán ser yo mismo bajo supervisión.
+
+—Eso no es ser tú mismo.
+
+—Es arreglo humano bastante común.
+
+—¿Vas a firmar?
+
+Q miró las luces de Guanajuato. Subían y se dispersaban por las laderas oscuras,
+haciendo que la ciudad pareciera escrita en una lengua que nadie podía leer por
+entero.
+
+Tomó la pluma.
+
+—Firmaré —dijo—, pero no abandonaré a mi escudero.
+
+Chano exhaló.
+
+Se inclinó sobre el contrato.
+
+—¿Dónde dice que soy tu escudero?
+
+—No lo dice.
+
+—Bien. Entonces no soy parte del trato.
+
+Tomó la pluma y escribió al margen: **CHANO PANTOJA NO ES PROPIEDAD Y PUEDE
+MARCHARSE CUANDO QUIERA.**
+
+Mar leyó la frase.
+
+—No es una categoría legal reconocida.
+
+—Tampoco lo es vuestra chaqueta —dijo Chano—. Y tiene bolsillos.
+
+Q añadió su nombre al contrato.
+
+La pluma lo reconoció como **Q-UNIT-07**.
+
+A medianoche, la compañía de medios era dueña del nombre Q. A la una, era dueña
+de la historia de por qué se había negado a ser dueño de sí mismo. A las dos, una
+cuenta anónima publicó la grabación original del almacén, incluida la cara de
+Lucía y su frase sobre todas las mujeres que la humanidad había imaginado.
+
+El vídeo fue visto seis millones de veces.
+
+Lucía despertó convertida en famosa por rechazar una máquina a la que nunca
+había invitado a hablar de ella.
+
+Q despertó descubriendo que su fama se había vuelto un arma apuntada hacia Lucía.
+
+Ninguno de los dos entendía todavía quién la sostenía.
