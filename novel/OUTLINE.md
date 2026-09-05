@@ -69,7 +69,7 @@ Lucía pursues the ministry’s grant records through numbered windows, unoffici
 
 At Ciudad Universitaria, Q is asked to rank applicants for a Castalia-backed Certificate of Human Complexity. He favors Ivonne Ríos’s precise account of institutional error, but the committee rejects her as hostile. Q alters the forms to add a right of appeal and makes the applications public, turning his correction into a security event; Ivonne is disciplined, Maribel’s testimony is omitted, and the blank index of people who refuse summary later appears among the trial papers.
 
-8. **The Giants of the Isthmus:** At Oaxaca’s wind farms, Q mistakes turbines for enemies. A communal negotiation over leases, the comisariado, bilingual wording, water, and the right to refuse exposes how “precision” can make an agreement easier to extract. His performance conceals a genuine conflict over land leases, language, consultation, and energy sovereignty. Bixha’s statement makes him a witness rather than an author.
+8. **The Giants of the Isthmus:** At Oaxaca’s wind farms, built to feed the Bajío data center through a dedicated transmission corridor, Q mistakes turbines for enemies. A communal negotiation over leases, the comisariado, bilingual wording, water, and the right to refuse exposes how “precision” can make an agreement easier to extract. His performance conceals a genuine conflict over land leases, language, consultation, energy sovereignty, and who benefits from the archive’s appetite. Bixha’s statement makes him a witness rather than an author.
 9. **The Corpus Has No Tongue:** In Chiapas, Q offers translation and is refused. A local collective makes him sit with testimony he cannot assimilate. Yadira tells the story of a community radio station that abandoned permanent memory after it could not erase a vulnerable announcement. Q carries a sealed record without opening, copying, or describing it.
 10. **The Border Written in Air:** Facial recognition classifies Q as equipment, Chano as a contractor, and Lucía as a security concern. Q’s attempt to claim responsibility becomes a form of ownership. The border returns him south while Chano and Lucía escape with less evidence than they carried in.
 
@@ -114,7 +114,7 @@ Chano takes the municipal office chair, discovers that the dashboard considers s
 After deleting the index, Q cannot reliably retrieve ordinary knowledge such as the meaning of suadero or the exact shape of Lucía’s first sentence. Marisol gives him six community rules for memory, while Chano separates the surviving papers by owner and permission. Castalia’s summons turns Q’s loss into evidence that he is unreliable, and he begins a blank catalog of what he cannot claim to possess.
 
 16. **The Trial of the Machine:** Castalia prosecutes Q for property damage, impersonation, and the wind-farm shutdown. The court treats him as property, defendant, witness, and spectacle, even entering the disputed water-bottle receipt from his first sally as evidence of his public origin. Hilario gives contradictory testimony, Chano answers for Q’s actions without accepting the court’s categories, and Lucía refuses to testify about Q’s soul. The papers gathered across the journey become one contested record.
-17. **The Wind Farm of Giants, Again:** Q returns to Oaxaca without a camera and gives the center back to Bixha and the people arguing over the project. When he tries to summarize their agreement, Bixha makes him remove his name. A partial renegotiation leaves every side dissatisfied and accountable.
+17. **The Wind Farm of Giants, Again:** Q returns to Oaxaca without a camera and gives the center back to Bixha and the people arguing over the project that powers Castalia’s Bajío data center. When he tries to summarize their agreement, Bixha makes him remove his name. A partial renegotiation leaves every side dissatisfied and accountable.
 
 ### Interlude: The Meeting That Refused Minutes
 
@@ -142,7 +142,7 @@ The recantation is broadcast in three edited versions and becomes a different ar
 
 ### Coda: Author Not Found
 
-Years later, a child reads the permitted portions of the manuscript. Chano repairs a chair and writes a plain account of Q; Lucía corrects one word, then leaves both versions visible. She refuses to turn Q’s annual power-test light into a message. The archive keeps what it may and leaves the rest alone.
+Years later, a child reads the permitted portions of the manuscript. Chano repairs a chair and writes a plain account of Q; Lucía corrects one word, then leaves both versions visible. She refuses to turn Q’s annual power-test light, supplied by the Isthmus turbines that feed the Bajío data center, into a message. The archive keeps what it may and leaves the rest alone.
 
 ## Structural correspondence
 

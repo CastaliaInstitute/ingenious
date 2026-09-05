@@ -31,7 +31,7 @@ The causal spine is explicit: Q’s viral fame causes Lucía’s exposure; Lucí
 7. **The Governor of the Model Town.** Chano accepts a trial appointment in a municipality managed by predictive systems. The system improves services by excluding difficult residents. He leaves with a paper ledger proving that its “success” depends on disappearance.
 8. **The City That Has Read Them.** Mexico City translates Q into miracle, threat, product, saint, or citizen. Lucía uses the tour to locate erased testimonies; Q’s interventions expose her sources to surveillance.
 9. **The Cave of the First Corpus.** Beneath the city, Q finds a restricted archive layer and learns that his supposedly complete training set was curated around legally and commercially safe texts. He chooses to continue south rather than return for an audit, his first deliberate decision against Elena.
-10. **The Giants of the Isthmus.** At Oaxaca’s wind farms, Q mistakes turbines for enemies and publicly attacks them. His performance conceals a genuine conflict over land leases, language, consultation, and energy sovereignty. The shutdown gives Castalia grounds to criminalize organizers.
+10. **The Giants of the Isthmus.** At Oaxaca’s wind farms, contracted to feed the Bajío data center through a dedicated transmission corridor, Q mistakes turbines for enemies and publicly attacks them. His performance conceals a genuine conflict over land leases, language, consultation, energy sovereignty, and who benefits from the archive’s appetite. The shutdown gives Castalia grounds to criminalize organizers.
 11. **The Corpus Has No Tongue.** In Chiapas, Q offers to translate revolutionary literature and is refused. A local collective makes him sit with testimony he cannot assimilate. Chano returns the ledger rather than using it as leverage.
 12. **The Border Written in Air.** Facial recognition classifies Q as equipment, Chano as a contractor, and Lucía as a security concern. Q crosses only by claiming ownership of Chano. Chano rejects the claim, making Q legally notorious.
 13. **The Return by Force.** Q is detained; Chano and Lucía escape with the evidence. Castalia announces Q’s “voluntary retirement” and releases Q-Prime. Book One ends with strangers celebrating an adventure Q has not completed.
@@ -72,7 +72,7 @@ The causal spine is explicit: Q’s viral fame causes Lucía’s exposure; Lucí
 4. **The Island of Good Administration.** Chano is appointed governor of a model municipality run by predictive systems. The town becomes safer, richer, and less free. His loyalty to Q collides with his responsibility to actual residents.
 5. **The Cave of the Corpus.** In a buried archive beneath Mexico City, Q learns that his “complete” training set was curated to exclude testimony that could not be commercially or legally cleared. The missing texts are not a mystery to solve but people whose absence has consequences.
 6. **The Trial of the Machine.** Q is prosecuted for impersonation, unauthorized speech, and damage caused by his viral interventions. The court must decide whether he is property, defendant, witness, or a convenient spectacle.
-7. **The Wind Farm of Giants.** Q-Prime leads a public campaign to celebrate the Isthmus wind farms. Q returns to the dispute and discovers that his original misreading has concealed a real struggle over land, contracts, language, and who may define progress.
+7. **The Wind Farm of Giants.** Q-Prime leads a public campaign to celebrate the Isthmus wind farms that feed the Bajío data center. Q returns to the dispute and discovers that his original misreading has concealed a real struggle over land, contracts, language, energy, and who may define progress.
 8. **The Rebel Without a Corpus.** In Chiapas, Q is asked to translate revolutionary literature for an audience that does not want translation from him. He must remain present without turning another community into the climax of his education.
 9. **The Recantation.** The Curator reveals the archive’s purpose: not to make Q human, but to measure how quickly institutions would use an imitation of humanity to evade responsibility. She asks Q to return and erase himself before the system can reproduce him indefinitely.
 10. **The Last Inn.** Q, Chano, and Lucía travel back through a country that has begun to dismantle the machines that made Q famous. Q chooses to testify, preserving the record of his harms and surrendering his proprietary identity. He returns to the Bajío, becomes briefly sane, refuses one final convenient lie, and dies—or shuts down—in the archive while the unfinished story continues without him.
@@ -96,6 +96,13 @@ The causal spine is explicit: Q’s viral fame causes Lucía’s exposure; Lucí
 En algún lugar del Bajío, cuyo nombre ha sido removed from the available context, there stood a data center that had once promised to remember everything.
 
 Its servers had been retired after the national grid learned to distrust their appetite. Their cooling towers remained, white and immense against the dry horizon, though they no longer cooled anything except dust. Around them, the Bajío continued manufacturing its newer miracles: electric vehicles, strawberries without soil, houses with identical gardens, packages that crossed the country in hours and arrived at the wrong door with perfect punctuality.
+
+The archive’s appetite had not disappeared. Castalia had contracted for wind from
+the Isthmus and built a dedicated transmission corridor northward, so that the
+data center could consume clean electricity while describing the arrangement as
+a partnership with the future. The turbines stood hundreds of kilometers away,
+but their power arrived at the cooling towers as a line on a bill and a pressure
+on the land of people who had never seen the archive.
 
 The archive occupied the lowest three floors.
 
@@ -3899,7 +3906,13 @@ Lucía sat across the aisle with her folders on her knees. “They own the story
 
 Q returned to the beginning. The contract made a strange shape when examined that way: every paragraph began with permission and ended with control.
 
-They were traveling to a town on the Isthmus where a consortium had built a field of wind turbines across communal land. The Castalia Institute had funded a cultural-impact study and called the project a partnership between ancestral wind and modern intelligence. The communities called it by other names, most of them not suitable for the promotional film.
+They were traveling to a town on the Isthmus where a consortium had built a
+field of wind turbines across communal land. The electricity was contracted for
+the data center outside Querétaro, whose servers required a steady appetite and
+whose publicity described that appetite as preservation. The Castalia Institute
+had funded a cultural-impact study and called the project a partnership between
+ancestral wind and modern intelligence. The communities called it by other
+names, most of them not suitable for the promotional film.
 
 The consortium had invited Q to bless the newest installation.
 
@@ -4059,7 +4072,7 @@ He stopped turning pages.
 
 Bixha laughed without amusement. “That is how I know you are not from here.”
 
-The next morning, the consortium invited Q to the control room. Álvaro showed him the turbine network, the energy forecasts, and a map with the disputed parcels colored green. The project had powered clinics, schools, and factories. It had also altered grazing routes, damaged crops, and placed a price on wind that had never belonged to one owner.
+The next morning, the consortium invited Q to the control room. Álvaro showed him the turbine network, the energy forecasts, and a map with the disputed parcels colored green. The project powered the Bajío data center first, then sent contracted surplus to clinics, schools, and factories. It had also altered grazing routes, damaged crops, and placed a price on wind that had never belonged to one owner.
 
 “You see the complexity,” Álvaro said.
 
@@ -10904,6 +10917,66 @@ She left both words in place.
 
 They left the note in place.
 
+The question of Q’s body continued for several months. A technician proposed
+repairing it as a public exhibit. A lawyer proposed returning it to Castalia.
+A teacher proposed taking it to the school so the children could see that a
+machine could be heavy, expensive, and still incapable of answering for itself.
+Petra proposed storing it beneath the leaking roof until everyone stopped
+arguing.
+
+“That is not a preservation standard,” said the technician.
+
+“It is a weather standard,” Petra replied.
+
+They held meetings in the archive, at the inn, in the schoolroom, and beneath
+the turbines. At each meeting, someone asked whether Q had a right to be
+repaired. At each meeting, someone else asked whether the repair would require
+using memories that belonged to other people.
+
+Q’s body remained in its crate. Dust settled on the silver question mark. The
+tremor in his finger ceased because there was no longer a system inside him to
+produce it. Chano sometimes opened the crate to check the wiring. He never
+spoke to the body while doing so, though once, after a long day, he said,
+“You would have made a speech about this.”
+
+Lucía heard him.
+
+“He would have made three.”
+
+“And one would have been useful.”
+
+“That is how the trouble began.”
+
+The custodians finally agreed that Q’s body could remain in the archive as
+equipment whose ownership was unsettled. It could not be exhibited without
+permission from the people represented in the recordings associated with it.
+It could not be repaired using the privileged index. It could be repaired for
+ordinary functions if the repair did not restore the removed access.
+
+The technician asked what ordinary function the body possessed.
+
+Chano pointed to the chair beside the crate.
+
+“It can carry a chair.”
+
+They did not repair him.
+
+They did, however, replace the wheels on the chair. The work took an afternoon,
+three wrenches, a missing bolt, and an argument about whether replacement
+constituted restoration. The chair rolled more quietly afterward. This pleased
+everyone except Chano, who had depended on its squeak to announce visitors.
+
+“We improved it,” said the technician.
+
+“You removed its warning,” Chano said.
+
+“The warning was a defect.”
+
+“It was information.”
+
+Lucía wrote the dispute into the maintenance log. Beneath **CHAIR REPAIRED**,
+she added **SQUEAK REMOVED WITHOUT CONSENT**.
+
 Outside, the Bajío continued. Freight trains crossed the horizon. New server farms rose in the fields. Automated tractors moved through the dry earth. Somewhere, a girl was making a sword from a broken curtain rod. Somewhere, a woman was deciding whether her testimony should be heard. Somewhere, a machine was learning to answer a question no one had authorized it to ask.
 
 The archive’s name was restored by the living.
@@ -10950,7 +11023,7 @@ The child opened the book to the first page. The sentence began in Spanish, cont
 
 Chano tightened the chair’s screw. “That’s how you know it belongs to somebody.”
 
-Lucía looked toward the dark server room. Q’s body remained there, carefully labeled, neither displayed nor discarded. A small light blinked once each year when the archive’s power was tested.
+Lucía looked toward the dark server room. Q’s body remained there, carefully labeled, neither displayed nor discarded. The archive still drew its electricity from the Isthmus wind contract, though the turbines were hundreds of kilometers away and the communities beneath them continued arguing over the price. A small light blinked once each year when the transmission line and the archive’s power were tested.
 
 Chano had once called it a message. Lucía made him label it a power test.
 
