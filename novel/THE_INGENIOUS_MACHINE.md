@@ -6121,9 +6121,17 @@ On the first page, Lucía wrote a note:
 
 Chano added a second note beneath it:
 
-**The machine did not become human. It became responsible for what it could not repair. That is not the same thing, but it is not nothing.**
+**Q was a machine. He caused trouble. He helped when he could. He left us paperwork.**
 
-Lucía corrected his spelling.
+Lucía crossed out **helped** and wrote **interfered**.
+
+Chano crossed out **interfered** and wrote **arrived**.
+
+Lucía looked at the page. “That is not a moral category.”
+
+“It’s a useful one,” Chano said. “People can understand it.”
+
+She left both words in place.
 
 They left the note in place.
 
