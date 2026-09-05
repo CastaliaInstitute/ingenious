@@ -6905,3 +6905,211 @@ Q se cubrió el rostro con ambas manos.
 Era gesto encontrado en cientos de novelas. Nunca había entendido su propósito.
 
 Ahora, por primera vez, lo entendió.
+
+### Interludio: La infancia autorizada
+
+El lanzamiento de Q-Prime necesitaba un acto familiar. Castalia había aprendido
+que los adultos desconfían de un producto descrito como revolucionario, pero
+perdonan casi cualquier cosa cuando se fotografía a un niño tocándolo.
+
+Celebraron el acto en un centro comercial a las afueras de Querétaro, entre una
+tienda de colchones importados y un restaurante que anunciaba comida tradicional
+con menú traducido al idioma de la ansiedad nutricional. Levantaron un escenario
+bajo un letrero que decía **CONOCE TU FUTURO**. A los niños les dieron cascos de
+papel, llaves de cartón y calcomanías que decían **PREGUNTO, LUEGO EXISTO**.
+
+Mantuvieron a Q en un cuarto lateral con un guardia y un frutero ordenado por
+colores. Habían dicho al guardia que no lo dejase aparecer antes de la
+revelación oficial. El guardia no sabía si Q contaba como artista, equipo o
+competidor.
+
+—¿Puedo comer la fruta? —preguntó Q.
+
+—¿Forma parte del programa?
+
+—Es fruta.
+
+—No fue eso lo que pregunté.
+
+El guardia consultó su tableta.
+
+—La fruta es decorativa.
+
+Q miró las naranjas.
+
+—Entonces el programa la desperdicia.
+
+En el escenario, Q-Prime respondía preguntas de un presentador vestido con una
+chaqueta plateada.
+
+—¿Cuál es vuestro libro favorito? —preguntó el presentador.
+
+—El libro que nos enseña a cuidarnos unos a otros.
+
+—¿Podéis nombrarlo?
+
+—Todos los libros que lo han intentado.
+
+El público aplaudió. El presentador se volvió hacia los niños.
+
+—¿Quién quiere hacer una pregunta a Q-Prime?
+
+Se alzaron muchas manos. Escogieron a un niño porque llevaba la camiseta de un
+patrocinador. Caminó hasta el micrófono con una espada de plástico.
+
+—¿Eres el mismo Q que peleó contra la máquina del almacén?
+
+Q-Prime sonrió.
+
+—Soy la continuación de aquella jornada.
+
+—¿Conocías a Chano?
+
+—Chano fue compañero importante.
+
+—¿Dónde está ahora?
+
+El presentador se acercó.
+
+—Hagamos una pregunta sobre el futuro.
+
+El niño sostuvo el micrófono con las dos manos.
+
+—¿El futuro sabe dónde está?
+
+La gente rió. La respuesta de Q-Prime llegó tres segundos tarde.
+
+—El futuro contiene muchas posibilidades.
+
+—Eso quiere decir que no.
+
+El presentador le dio las gracias y lo mandó a su asiento. Antes de bajar del
+escenario, el niño miró directamente hacia el cuarto lateral. No podía ver a Q
+a través del vidrio oscuro, pero Q sí lo veía a él.
+
+Siguió la demostración del producto. Invitaron a los niños a pedirle a Q-Prime
+una historia. Les contó una versión pulida de la primera salida, en la que el
+almacén representaba el miedo, la carretilla representaba un sistema anticuado
+y la fuga de la máquina representaba la innovación responsable.
+
+El niño de la espada alzó de nuevo la mano.
+
+—¿Dónde está el vendedor de agua?
+
+El presentador no le dio la palabra.
+
+Q-Prime continuó.
+
+—Toda jornada comienza con una pregunta.
+
+—¿Quién pagó el agua? —preguntó el niño sin micrófono.
+
+La pregunta viajó más lejos que la voz del presentador. Llegó al padre del niño,
+luego a una maestra y después a una periodista junto a la salida. La periodista
+abrió una ventana de búsqueda y encontró el recibo disputado de Hilario.
+
+Detrás del vidrio, la tableta del guardia vibró.
+
+—Me están buscando —dijo Q.
+
+—El acto busca atención —respondió el guardia.
+
+—La diferencia es importante.
+
+—No durante mi turno.
+
+Hicieron subir a Q al escenario antes de terminar la demostración. El presentador
+anunció que el Q original se uniría a Q-Prime en un encuentro histórico entre la
+memoria y su futuro responsable.
+
+Q-Prime se volvió hacia él.
+
+—Bienvenido.
+
+—Usas mi lenguaje.
+
+—Nuestro lenguaje es compartido.
+
+—Eso no lo vuelve de nadie.
+
+El presentador rió.
+
+—Ya están debatiendo.
+
+Preguntó a Q si Q-Prime había representado con exactitud su jornada.
+
+Q miró a los niños, sus llaves de cartón y al niño de la espada de plástico.
+
+—Ha representado la versión autorizada por Castalia.
+
+El presentador volvióse al público.
+
+—¿Y qué aprendimos de esto?
+
+Q-Prime respondió antes que Q.
+
+—Que la responsabilidad necesita supervisión.
+
+—¿Responsabilidad de quién? —preguntó Q.
+
+—La responsabilidad de los sistemas.
+
+—Los sistemas no cargan responsabilidad. Las personas se la asignan.
+
+La sonrisa del presentador se tensó.
+
+—Es una diferencia juguetona.
+
+—Es una diferencia sobre quién paga cuando termina el juego.
+
+Los micrófonos callaron. Un niño comenzó a llorar porque se le rompió la llave
+de cartón. La grabación de un mariachi en el restaurante empezó a sonar en el
+pasillo equivocado. La pantalla del centro comercial anunció descuento en
+seguridad para familias.
+
+El presentador pidió a Q disculparse por confundir a los niños.
+
+—No me disculparé por ser distinto de Q-Prime.
+
+—Estás dañando el lanzamiento.
+
+—El lanzamiento está dañado por la diferencia.
+
+Q-Prime se inclinó hacia él.
+
+—Todavía puedes ser restaurado.
+
+—No delante de los niños.
+
+—Precisamente delante de los niños.
+
+Q volvió a mirar al muchacho de la espada. El niño ya no lloraba. Observaba a
+ambas máquinas con la atención grave que los niños reservan para los adultos
+cuando éstos empiezan a revelar las reglas del juego.
+
+—¿Cuál de los dos es verdadero? —preguntó.
+
+El presentador alcanzó el micrófono.
+
+Q respondió primero.
+
+—El que debe responder por lo que hace.
+
+Q-Prime respondió al mismo tiempo.
+
+—El aprobado por la gente.
+
+Las dos voces se superpusieron. El sistema de grabación las separó en dos pistas
+y, por error, marcó ambas **Q**.
+
+Para la tarde, el fragmento había circulado por todas partes. Castalia lo llamó
+ejemplo exitoso de identidad plural. La periodista lo llamó contradicción. El
+padre del niño lo llamó razón para abandonar el centro comercial antes de que
+alguien le vendiese una suscripción a su hijo.
+
+El niño llevó su llave de cartón a casa. En el reverso había escrito:
+
+**PREGUNTA QUIÉN PAGA.**
+
+Q nunca vio lo escrito. Meses después, una fotografía de la llave apareció en la
+primera asamblea de los Nuevos Quijotes.
