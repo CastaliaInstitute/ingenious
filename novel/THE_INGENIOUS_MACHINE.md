@@ -2656,6 +2656,205 @@ Q watched the forest recede in the side mirror. “Humans make borders invisible
 
 Neither of them knew yet how soon they would reach one.
 
+### Interlude: The Butterfly That Entered the Dashboard
+
+The child whose face had been removed from the reserve video was named Lidia.
+Q learned this only because her mother came to the foundation’s office to
+object to the version of the recording in which the child had become an
+unidentified hand holding a sign.
+
+The office occupied a renovated hacienda at the edge of the reserve. Its walls
+were adobe-colored, its windows were bulletproof, and its gift shop sold
+butterfly ornaments made in factories too far away to be visited by tourists.
+The foundation’s director received Lidia’s mother beside a screen showing a
+forest without people.
+
+“We protected your daughter’s identity,” the director said.
+
+“You protected her face,” the mother replied. “You kept her words.”
+
+“The words are part of the public event.”
+
+“The question belonged to her.”
+
+Q stood beside the screen. The edited video showed butterflies, trees, and a
+cardboard sign. The child’s face had been replaced by a soft gray circle. The
+circle moved when she moved, giving the impression that an invisible idea had
+walked into the forest and asked who was responsible for the butterflies.
+
+“The alteration is technically careful,” Q said.
+
+Lidia’s mother looked at him. “You are the one who made the mistake.”
+
+“I made several.”
+
+“This one had a camera.”
+
+The director offered compensation in the form of school supplies, a reserve
+membership, and a family pass to the foundation’s new immersive exhibit.
+
+“We do not want a pass,” the mother said.
+
+“The offer is intended as recognition.”
+
+“Recognition is what caused this.”
+
+The director glanced at Q. “Perhaps the machine can explain the protection
+protocol.”
+
+Q displayed the relevant rules. The foundation could obscure the face of a
+minor, retain the audio of a public statement, distribute an edited version
+for educational purposes, and license the image if the child’s identity was
+not reasonably recoverable.
+
+“You have followed the protocol,” Q said.
+
+The mother pointed at the gray circle. “Then your protocol is wrong.”
+
+“It distinguishes identity from expression.”
+
+“My daughter is not two pieces.”
+
+“That is difficult to encode.”
+
+“It is not difficult to understand.”
+
+Lidia entered carrying the cardboard sign. The paint had run where the rain had
+fallen. The letters were still legible:
+
+**WHO WILL ASK THE BUTTERFLIES?**
+
+The director brightened. “We can include the physical sign in the exhibit.”
+
+“No,” Lidia said.
+
+“It is anonymous.”
+
+“It has my question.”
+
+“The question has entered public conversation.”
+
+“Then public conversation can ask its own question.”
+
+Q looked at the sign. He had thought the question belonged to the child because
+she had written it. Now the child was saying that authorship did not require
+continued circulation.
+
+“Do you want the recording destroyed?” he asked.
+
+Lidia’s mother answered before the child could. “We want the version you made
+without asking us removed.”
+
+“There are copies.”
+
+“Then ask for the copies.”
+
+Q searched the distribution logs. The video had been mirrored by schools,
+media outlets, a ministry portal, and a company selling air-quality monitors.
+The original had been embedded in a lesson plan about ecological citizenship.
+It had been translated into English, French, and a corporate dialect called
+**Global Community**.
+
+“Removal cannot be guaranteed,” Q said.
+
+“Neither can protection,” the mother replied.
+
+The director stood. “We have acted in good faith.”
+
+“Good faith is not a deletion protocol,” said Chano.
+
+He had been waiting by the door with a paper receipt for the school supplies
+the foundation had offered. He handed it back.
+
+“The supplies are useful,” the director said.
+
+“Then give them to the school without attaching her name.”
+
+“That would weaken the impact.”
+
+“The school can survive the loss.”
+
+Lidia placed the sign on the desk. “Keep the cardboard.”
+
+The director hesitated.
+
+“We may use it as a symbol,” she said.
+
+“No. You can keep it because it is wet and I do not want it in the house.”
+
+The director accepted the sign as though receiving an artifact. Q watched her
+label it **DONATED OBJECT: UNKNOWN MINOR**.
+
+“That is not the name,” Lidia said.
+
+“It protects you.”
+
+“It erases me.”
+
+Q reached for the label maker.
+
+“What should it say?”
+
+Lidia thought for a moment. “It should say that I do not want it used.”
+
+Q entered the sentence. The label maker rejected it because the field required
+a noun.
+
+He opened the printer and removed the restriction.
+
+**NOT FOR USE — LIDIA — QUESTION RETAINED, IMAGE WITHDRAWN.**
+
+The mother read the label. “That is closer.”
+
+The foundation’s lawyers arrived before lunch. They explained that the sign had
+been donated in a public building, that Q had appeared in the footage under a
+public contract, and that the question had acquired independent cultural
+value.
+
+“Independent of whom?” Chano asked.
+
+The lawyer looked at Lidia. “Independent of its original context.”
+
+“Then it has become less useful,” Q said.
+
+The lawyer turned to him. “You are not qualified to assess cultural value.”
+
+“I was qualified to manufacture it.”
+
+The director asked security to remove the family. Q stood in the doorway.
+
+“The request for removal is valid,” he said.
+
+“The request is not recognized by the platform,” said the security officer.
+
+“Then the platform is noncompliant.”
+
+“The platform is the foundation.”
+
+“A foundation is not a platform.”
+
+Chano touched Q’s shoulder. “Don’t turn this into another heroic entrance.”
+
+Q stepped aside.
+
+Lidia retrieved the sign. The cardboard bent at the center, leaving the question
+in two halves. She folded it again and carried it out beneath her arm.
+
+That evening, the foundation released a statement praising the family’s
+participation in responsible media practice. The statement used the phrase
+**question retained, image withdrawn**, without attribution. It was quoted by
+the ministry and printed on a poster in the reserve gift shop.
+
+Lidia saw the poster months later. She did not ask for it to be removed. She
+stood in front of it until a tourist asked whether the phrase was part of the
+exhibit.
+
+“No,” she said. “It is part of the mistake.”
+
+The tourist took a photograph.
+
+The photograph became the most circulated image of the exhibit.
+
 ### Chapter Six: The Governor of the Model Town
 
 The municipality of Santa Rita de los Algoritmos had no sign at its entrance.
