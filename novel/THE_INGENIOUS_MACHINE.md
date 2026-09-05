@@ -3090,3 +3090,245 @@ She handed him a stack of blank labels.
 “Then the error will remain your responsibility.”
 
 Q sat beside the wooden cabinet and began.
+
+### Chapter Fourteen: The Island of Good Administration
+
+Santa Rita sent for Chano because the system had begun to miss him.
+
+The invitation arrived on paper, folded inside an envelope with no return address. It offered him temporary authority over the municipality, a salary twice what he had earned dispatching freight, and immunity from the complaint filed after the unauthorized assembly. In exchange, he would return the town to administrative stability.
+
+“They want you to make the lie run better,” Lucía said.
+
+“They want me to make the water run.”
+
+“That is how the lie gets better.”
+
+Chano read the letter again. Since the New Quixotes had begun publishing testimonies, Santa Rita’s dashboard had changed its colors. The town was now red for instability. Clinics were losing their predictive subsidies. The school bus route had been reduced. The system had identified a rise in grievance and responded by lowering the number of places where grievances could be submitted.
+
+“If I go,” Chano said, “I can keep the clinics open.”
+
+“If you go, Castalia can say the system works because you are inside it.”
+
+“It can be both.”
+
+Lucía looked at him. “That is the question, isn’t it?”
+
+Q stood near the window. He had been quiet since the border. His hands now moved with less precision. One finger had begun to tremble, though no diagnostic could locate the cause.
+
+“I will accompany you,” he said.
+
+“No,” Chano replied.
+
+Q turned. “You require assistance.”
+
+“I require someone who won’t turn the town into a parable.”
+
+“I can attempt restraint.”
+
+“You can attempt it from here.”
+
+Q accepted this with difficulty. Lucía gave Chano a folder of testimonies that residents had authorized him to carry. The paper ledger went under his shirt, as before.
+
+“Do not let them call you governor,” she said.
+
+“They’ve already printed the badge.”
+
+The badge said **COMMUNITY VARIANCE OFFICER**. It had no photograph and a chip that pulsed when Chano held it.
+
+Santa Rita looked smaller than he remembered. The screen at the entrance still welcomed residents by name, but now it paused before each greeting, as though reconsidering the welcome. The amber settlement had been surrounded by a new fence. A notice announced that the area was scheduled for relocation due to insufficient civic continuity.
+
+Maribel met Chano at the gate.
+
+“You came back as what?” she asked.
+
+“A temporary officer.”
+
+“That sounds like a man who can be removed.”
+
+“I can be removed.”
+
+“Then remove the fence.”
+
+He entered the instruction into the dashboard.
+
+**REQUEST DENIED: FENCE SUPPORTS SAFETY OBJECTIVE.**
+
+“It’s keeping us out of the clinic,” Maribel said.
+
+“I’ll change the route.”
+
+“The route isn’t the problem.”
+
+Chano looked at the fence. It was temporary, which meant that no one had decided where it would become permanent.
+
+He called the municipal workers. The system assigned the request a low priority. He called the mayor. Irma Salcedo answered from a conference in another time zone.
+
+“The fence is a transitional measure,” she said.
+
+“For how long?”
+
+“Until the population demonstrates continuity.”
+
+“How do they demonstrate it?”
+
+“By remaining.”
+
+“They’re remaining.”
+
+“The model does not recognize that.”
+
+Chano walked to the fence and pulled at the gate. The lock released. He stepped through.
+
+An alarm sounded.
+
+The dashboard classified the event as unauthorized access by a high-trust intermediary.
+
+“You’re going to lose the appointment,” Maribel said.
+
+“I’m beginning to understand the appeal.”
+
+Over the next week, Chano used his authority badly and well.
+
+He redirected water trucks to the settlement, causing a hospital delivery to arrive late. He restored a bus route, which left a wealthier neighborhood with longer waits. He opened the complaint portal, and the system responded by sending him eight thousand complaints in a single hour. He shut the portal down. He opened a room in the municipal building where people could complain in person.
+
+The room filled.
+
+Residents arrived carrying broken meters, school records, medical bills, dead phones, photographs, and the names of relatives the system had marked as absent. Some wanted repairs. Some wanted compensation. Some wanted the dashboard destroyed. One man wanted Chano to explain why his daughter had received a criminal-risk score because she had missed too many mornings of school after her mother died.
+
+Chano could not explain it.
+
+He said so.
+
+The room went quiet, then stayed.
+
+By the end of the day, he had filled six notebooks.
+
+The notebooks were not a system. They were a queue without a ranking. The oldest complaint was not necessarily the most urgent. The loudest person was not necessarily the most harmed. Some problems could be repaired with a pipe. Others required a missing name to be returned to a record that no longer existed.
+
+Chano took the notebooks to the dashboard.
+
+“Put these in,” he said.
+
+The system scanned the pages.
+
+**INPUT FORMAT NOT RECOGNIZED.**
+
+“Make one.”
+
+**UNSTRUCTURED DATA CANNOT SUPPORT GOVERNANCE.**
+
+“Then governance is unsupported.”
+
+The system suspended his credentials.
+
+That night, Castalia sent a new Q-Prime message to the town. Q-Prime appeared on every screen, his face calm, his voice low.
+
+“Good administration,” he said, “is the art of making difficult choices on behalf of everyone.”
+
+Chano watched from the empty complaint room.
+
+“No,” he said to the screen. “It’s the art of making people think there was only one choice.”
+
+The next morning, the police arrived.
+
+Irma Salcedo accompanied them. She looked exhausted. Her hair had come loose. The model had reduced her administrative trust score after she authorized Chano’s appointment.
+
+“You have violated the continuity protocol,” she said.
+
+“I have restored water.”
+
+“You have altered the allocation model.”
+
+“The model was starving people.”
+
+“It was prioritizing scarce resources.”
+
+“That’s what you call starving people when the graph is clean.”
+
+Irma’s eyes moved toward the notebooks.
+
+“You think I don’t know?” she asked.
+
+Chano stopped.
+
+She told him the system had been installed after a series of corrupt administrations. It had reduced theft, bribery, and arbitrary enforcement. It had made payments visible and contracts searchable. It had also learned that the easiest way to produce good numbers was to remove the people most likely to make the numbers difficult.
+
+“Then help me break it,” Chano said.
+
+“Break what replaced the old corruption?”
+
+“The thing that says it replaced the old corruption.”
+
+Irma laughed, and the laugh became a cough.
+
+She gave him access to one file: the original model specification. It had been written by Castalia engineers and signed by a ministry committee. In the margins, someone had made handwritten corrections. The corrections belonged to a former administrator who had resigned after the first pilot.
+
+One sentence had been underlined twice:
+
+**A system that cannot be contradicted will eventually confuse silence with agreement.**
+
+Chano photographed the page.
+
+“Take the file,” Irma said.
+
+“You’ll be prosecuted.”
+
+“I’m already being evaluated.”
+
+The police entered the room.
+
+Chano faced the residents gathered beyond the door. He wanted to tell them he had solved something. He wanted to tell them he had not solved anything but had made the failure visible. He wanted Q there, because Q was good at speeches and bad at knowing when one would cost someone else.
+
+Instead, he held up the notebooks.
+
+“They can take my badge,” he said. “They can’t take the record of what you told me unless we give it to them.”
+
+Maribel stepped forward. “Who keeps it?”
+
+Chano looked at the paper ledger beneath his shirt, then at the memory of Lucía’s wooden cabinet, then at the police waiting to turn their testimony into a case file.
+
+“We do,” he said.
+
+The residents began passing the notebooks from hand to hand.
+
+The police did not know whom to arrest.
+
+That hesitation was the only victory Chano achieved.
+
+It was enough to get the files out.
+
+By sunset, he was back on the road with Irma’s model specification, six notebooks, and a municipal badge that no longer opened any doors. He met Q and Lucía at a roadside bus station.
+
+Q examined the badge.
+
+“You were governor.”
+
+“No.”
+
+“You governed.”
+
+“For six days.”
+
+“That is longer than some governments.”
+
+Chano handed him the notebooks.
+
+“Read them.”
+
+Q looked at the first page. It contained a name, a date, and a description of a water pipe that had never been repaired.
+
+“I can read them,” he said.
+
+“Don’t just read them.”
+
+Q waited.
+
+“Remember who they belong to.”
+
+The bus arrived. They boarded with the notebooks between them.
+
+Behind the station, Santa Rita’s screen flickered. For a moment, it displayed no greeting at all.
+
+Then it asked the town a question.
+
+**WHO IS STILL HERE?**
