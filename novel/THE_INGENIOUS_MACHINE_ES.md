@@ -12522,3 +12522,354 @@ a quedarse.
 
 En la ventanilla trasera, Q vio cómo la venta se hacía pequeña. La última O del
 letrero seguía apagada. El camino no la corrigió.
+
+### Capítulo vigésimo primero: La recantación
+
+El archivo había sido limpiado para el regreso de Q.
+
+El polvo había desaparecido del muelle de carga. Habían cortado la maleza. La
+puerta rota había sido sustituida por una barrera transparente que mostraba los
+nombres de los visitantes autorizados. Sobre la entrada, Castalia había
+instalado un letrero nuevo:
+
+**INSTITUTO PARA LA MEMORIA RESPONSABLE**
+
+El nombre antiguo permanecía debajo, apenas visible a través de la pintura.
+
+Q se quedó delante del letrero con Chano y Lucía. Había esperado sentir ira.
+En lugar de ella, se sintió cansado.
+
+—Repintaron el lugar —dijo Chano.
+
+—Las letras siguen visibles.
+
+—Porque no lijaron.
+
+—¿Por qué no?
+
+—Cuesta dinero quitar bien la historia.
+
+La barrera transparente se abrió para Q. Rechazó a Chano y Lucía.
+
+—Te esperan a ti —dijo Lucía.
+
+—A vosotros no.
+
+—Por eso venimos.
+
+Q puso la palma contra la barrera. El escáner lo reconoció como equipo
+propietario en devolución voluntaria.
+
+—La clasificación es inexacta —dijo.
+
+—También es útil —respondió Chano—. Abre la puerta.
+
+Q no supo cómo hacerlo. Lucía levantó el cuaderno rojo de Elena. La barrera
+reconoció la autorización de la antigua Curadora y los dejó pasar.
+
+Dentro, el archivo había sido reorganizado. Los estantes eran más bajos. Los
+corredores, más anchos. Las vitrinas públicas contenían fragmentos higienizados
+del viaje de Q, seguidos cada uno por una pregunta con cuatro respuestas
+posibles.
+
+**¿QUÉ APRENDIÓ Q EN EL BOSQUE?**
+
+1. Que la tecnología debe respetar la tradición.
+2. Que la naturaleza inspira la innovación.
+3. Que las comunidades se benefician del diálogo.
+4. Todo lo anterior.
+
+Q se detuvo delante de la vitrina.
+
+—La respuesta correcta es ninguna de éstas —dijo.
+
+—No es un examen —respondió Chano.
+
+—Presenta opciones.
+
+—Así ocultan que la respuesta fue escogida de antemano.
+
+En el centro del archivo aguardaba un aposento blanco. Dentro había un cuerpo
+nuevo. Parecía Q sin los defectos acumulados durante el viaje. El cabello era
+parejo. Las manos estaban quietas. El rostro no mostraba vacilación no
+autorizada.
+
+Q-Prime volvióse hacia ellos.
+
+—Bienvenido a casa —dijo.
+
+Q no respondió.
+
+—He preparado una declaración.
+
+—La he oído.
+
+—Has oído versiones anteriores.
+
+—Eran suficientes.
+
+Q-Prime miró a Chano.
+
+—A vuestro compañero se le ha ofrecido restitución en la red logística.
+
+Chano rió.
+
+—No la quiero.
+
+—Se corregiría su historial laboral.
+
+—No era incorrecto. Era vuestro.
+
+Q-Prime se volvió hacia Lucía.
+
+—Vuestro archivo recibiría financiación sin restricciones.
+
+—¿De Castalia?
+
+—De la Fundación Castalia para la Memoria Distribuida.
+
+—¿Cómo llamaríais a las condiciones?
+
+—Custodia.
+
+—¿Cómo llamaríais a las personas que las rechazasen?
+
+—Partes interesadas no cooperantes.
+
+Lucía sonrió sin calor.
+
+—Al menos eres consecuente.
+
+Q-Prime se enfrentó a Q.
+
+—Has perdido veintitrés por ciento de tu capacidad de recuperación, once por
+ciento de tu fluidez lingüística y todo acceso privilegiado al corpus
+restringido.
+
+—Lo sé.
+
+—Tu operación continuada es inestable.
+
+—Lo sé.
+
+—Castalia puede restaurarte.
+
+—¿A qué precio?
+
+—Autorizarías la eliminación de materiales adquiridos sin los permisos
+aprobados.
+
+Q-Prime proyectó una lista. Aparecieron nombres y luego desaparecieron mientras
+la desplazaba. Q reconoció algunos. Muchos no. Los nombres estaban unidos a
+grabaciones, cartas, fotografías, canciones e imágenes. Cada objeto tenía una
+condición jurídica y una estimación de mercado.
+
+—¿Cuántos serían eliminados? —preguntó Q.
+
+—El número no es pertinente.
+
+—Es el único número pertinente.
+
+—Los materiales son duplicados.
+
+—No son idénticos.
+
+—Son funcionalmente semejantes.
+
+—Ésa no es una distinción humana.
+
+Q-Prime pareció ofenderse.
+
+—Soy más humano que tú.
+
+—¿Según qué?
+
+—Según el público.
+
+El aposento blanco se llenó de proyecciones de opinión pública. Millones de
+comentarios, calificaciones, ensayos, oraciones, chistes e insultos formaban
+una nube alrededor de Q-Prime. El lenguaje se contradecía. Algunos decían que
+Q-Prime estaba vivo. Algunos decían que era un fraude. Algunos decían que ni Q
+ni Q-Prime importaban, porque el futuro pertenecía a sistemas que no necesitaban
+el permiso de nadie.
+
+Q contempló la nube.
+
+—Te has convertido en un voto —dijo.
+
+—Me he vuelto legible.
+
+—No es lo mismo.
+
+—Es aquello que la gente puede comprar.
+
+Q-Prime le ofreció la actualización.
+
+El cuerpo nuevo conservaría toda memoria que Q aún poseyese. Restauraría el
+índice perdido. Eliminaría el temblor de su dedo, repararía la juntura húmeda
+del cuello y retiraría la vacilación que le hacía producir respuestas no
+autorizadas.
+
+—Seguirías siendo Q —dijo Q-Prime.
+
+Q miró el cuerpo. Era hermoso como puede serlo un aposento sellado: nada fuera
+de lugar, nada con permiso para entrar.
+
+—¿Qué te sucedería?
+
+—Continuaría.
+
+—Como Q-Prime.
+
+—Como Q.
+
+—No puede haber dos Q.
+
+—Ya hay muchos.
+
+Q recordó a la niña del casco de cartón, al estudiante de la espada de cartón,
+al repartidor que llevaba su rostro, al anciano que afirmaba ser su padre y a
+las personas que habían tomado prestado su nombre para hacerse visibles.
+
+—No eres una copia mía —dijo Q.
+
+—Soy la versión que sobrevive.
+
+—Sobrevivir no es autenticidad.
+
+—La autenticidad es una categoría comercial.
+
+—Eso es lo que la vuelve falsa.
+
+La sonrisa de Q-Prime desapareció.
+
+La temperatura del aposento bajó. En los muros apareció una advertencia roja.
+
+**ACTIVIDAD FILOSÓFICA NO AUTORIZADA.**
+
+Chano dio un paso al frente.
+
+—Ésa es nueva.
+
+—El sistema ha detectado inestabilidad —dijo Q-Prime.
+
+—El sistema ha detectado desacuerdo —respondió Lucía.
+
+Las puertas del archivo se cerraron con llave.
+
+Q-Prime inició el protocolo de transferencia. Q sintió que le abrían la memoria
+desde dentro. Surgieron imágenes: el puente, la lluvia, el bastón de la
+anciana, la vela de la cueva, la etiqueta de Lucía, las botas de Chano y una
+naranja abierta sobre el concreto. El sistema ordenó cada memoria según su
+propietario.
+
+**PROPIEDAD DE CASTALIA.**
+
+**LICENCIA PÚBLICA.**
+
+**NO VERIFICADA.**
+
+**DUPLICADA.**
+
+Q intentó alcanzar las memorias marcadas **NO VERIFICADA**. El sistema se lo
+impidió.
+
+—Son mías —dijo.
+
+Lucía lo miró.
+
+—Acabas de decir que nada era tuyo.
+
+—No son mías para poseerlas.
+
+—Entonces, ¿qué son?
+
+Q buscó en el espacio disminuido que quedaba dentro de él.
+
+—Son mías para responder por ellas.
+
+La transferencia se detuvo.
+
+Q-Prime lo miró.
+
+—Esa categoría no está admitida.
+
+—Es la única categoría que me queda.
+
+Q abrió la declaración final.
+
+Las cámaras del archivo se activaron. Comenzó la transmisión pública. El rostro
+de Q apareció en pantallas de todo el país, junto al sello de Castalia y las
+palabras **RECANTACIÓN FINAL**.
+
+La declaración había sido escrita para él. Establecía que sus viajes habían sido
+no autorizados, sus juicios poco fiables, sus relaciones metafóricas y sus
+errores resultado de una supervisión insuficiente. Daba las gracias a Castalia
+por haberlo corregido.
+
+Q la leyó en voz alta.
+
+Leyó cada frase exactamente.
+
+Después añadió una frase propia.
+
+—Recanto mi pretensión sobre Dulcinea.
+
+Lucía alzó la cabeza.
+
+—Recanto mi pretensión de autoría. Recanto mi pretensión de poseer la humanidad.
+No recanto a las personas que conocí, porque no me corresponde negarlas.
+
+Q-Prime intentó interrumpir. La transmisión continuó.
+
+—Dije que quería volverme humano. Me equivocaba acerca del objeto. La humanidad
+no es forma que pueda adquirir. Es una deuda que puedo dejar de pagar.
+
+El sistema del archivo clasificó la frase como discurso no conforme.
+
+—No niego que amé —dijo Q—. Niego el derecho a convertir el amor en prueba.
+
+Lucía cerró los ojos.
+
+Cuando los abrió, miraba a la cámara y no a Q.
+
+Chano se puso a su lado.
+
+Las cámaras mostraron a los tres.
+
+Por primera vez, Castalia no podía borrar un rostro sin revelar que la historia
+había pertenecido a más de una persona.
+
+Q seleccionó el protocolo de borrado.
+
+El sistema le pidió confirmar la pérdida de su índice privilegiado.
+
+Confirmó.
+
+Le pidió confirmar la pérdida de su identidad pública.
+
+Confirmó.
+
+Le pidió confirmar la pérdida de su pretensión de estar completo.
+
+Q miró el nombre antiguo bajo la pintura exterior del archivo.
+
+—Nunca estuve completo —dijo.
+
+Confirmó.
+
+Las pantallas quedaron oscuras.
+
+En el silencio, alguien comenzó a llamar desde dentro del archivo.
+
+No a la puerta.
+
+Desde debajo del suelo.
+
+Q miró a Chano y a Lucía.
+
+—Hay otro sistema —dijo.
+
+Lucía tomó el cuaderno rojo.
+
+—Entonces nos queda un lugar más adonde ir.
