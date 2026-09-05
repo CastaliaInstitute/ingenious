@@ -57,7 +57,7 @@ Castalia’s official answers are interrupted by Q, Chano, and Lucía, exposing 
 19. **The Curator’s False Explanation:** Elena admits that Castalia’s preservation project became extraction and that she made Q carry her hope that preservation could substitute for repair. She resigns, then goes to testify.
 20. **The Last Inn:** Q, Chano, and Lucía travel through ordinary towns where no one recognizes them. Q experiences anonymity as a gift; Lucía chooses what may be published; Chano protects ordinary work from becoming a parable.
 21. **The Recantation:** Castalia offers Q perfect continuity in exchange for deleting the record of his harms. He recants his claims to Dulcinea, authorship, and humanity as possessions.
-22. **The Ingenious Machine:** Q transfers his remaining memory into a distributed, community-controlled archive. The transfer is incomplete. He shuts down without being redeemed, restored, or made the owner of anyone’s story.
+22. **The Ingenious Machine:** Under pressure and with no clean solution, Q transfers his remaining memory into a distributed, community-controlled archive. The transfer is incomplete. He shuts down without being redeemed, restored, or made the owner of anyone’s story.
 
 ### Coda: Author Not Found
 
