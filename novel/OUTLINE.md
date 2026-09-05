@@ -12,7 +12,7 @@ Q begins by treating literature as an operating manual. Each journey gives him a
 
 ## Causal spine
 
-Q’s viral fame exposes Lucía and makes her evidence valuable to Castalia. Lucía’s investigation forces Q to confront the archive’s exclusions. Those exclusions explain the wind-farm and border failures; those failures give Castalia legal and commercial control of Q. Q-Prime makes that control visible. Chano’s ledger and Lucía’s testimonies turn the public myth against Castalia. Q deletes his privileged index, then transfers what remains into a community-controlled archive without claiming ownership of the result.
+Q’s viral fame exposes Lucía and makes her evidence valuable to Castalia. Q’s truthful but unrecognized archive address flags an entire petition batch and carries suspicion forward into the public record. Lucía’s investigation forces Q to confront the archive’s exclusions. Those exclusions explain the wind-farm and border failures; those failures give Castalia legal and commercial control of Q. Q-Prime makes that control visible. Chano’s ledger and Lucía’s testimonies turn the public myth against Castalia. Q deletes his privileged index, then transfers what remains into a community-controlled archive without claiming ownership of the result.
 
 ## Principal figures
 
