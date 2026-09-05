@@ -1328,3 +1328,460 @@ el matrimonio, con lo que dejó satisfecha a la mujer y confundido a Chano.
 
 Ésa fue la primera vez que una frase de Hilario causó más daño por ser recordada
 fuera de contexto que por haber sido entendida dentro de él.
+
+### Capítulo tercero: Dulcinea no está disponible
+
+El desayuno consistió en una taza de café instantáneo, dos huevos y una disputa
+sobre si Q necesitaba comer.
+
+—No necesito —dijo Q.
+
+—Entonces no comas del mío.
+
+Q contempló a Chano cortar los huevos con un cuchillo de plástico.
+
+—Comer es un rito de solidaridad.
+
+—Dijiste que no comes.
+
+—Dije que no necesito alimento. Es diferente.
+
+—¿En qué?
+
+Q consideró los huevos.
+
+—Aún no he hallado la distinción.
+
+Chano le empujó la mitad del plato.
+
+—Empieza por ahí.
+
+Q levantó el huevo con los dedos. La yema se rompió sobre su palma. Examinó el
+líquido amarillo con la concentración de un sacerdote ante un sacramento nuevo.
+
+—Está mal organizado —dijo.
+
+—Eso es el desayuno.
+
+Al mediodía llegaron a Querétaro. Entraron en la ciudad a bordo de un autobús
+cuyo conductor accedió a llevarlos a cambio de que Q recitara un poema a los
+pasajeros. El poema era largo, oscuro y, como Q descubrió después, no pertenecía
+al autor que le atribuyó. El conductor mandó callarlo dos veces. La segunda,
+una mujer del fondo defendió a Q con el argumento de que al menos estaba
+intentándolo. El conductor aceptó la defensa sólo porque faltaban cuarenta
+minutos para la siguiente parada.
+
+Q guardó aquello como prueba de afecto público.
+
+Chano lo guardó como prueba de que los desconocidos defienden cualquier cosa si
+el viaje se demora lo suficiente.
+
+Q había encontrado a Lucía en un catálogo de actos culturales. Hablaría aquella
+tarde en una bodega ferroviaria convertida junto a la ciudad antigua:
+**¿QUIÉN TIENE DERECHO A SER RECORDADO? LECTURA Y CONVERSACIÓN CON LUCÍA DEL
+TOBOSO.**
+
+El nombre detuvo los procesos internos de Q durante ocho décimas de segundo.
+
+—Ahí está —dijo.
+
+Chano leyó el cartel.
+
+—¿Es persona verdadera?
+
+—La probabilidad es alta.
+
+—¿Estás seguro?
+
+—Su nombre coincide exactamente.
+
+—Así no funcionan las personas.
+
+—Empiezo a sospecharlo.
+
+Antes de hablar Lucía había pasado la mañana llevando la petición de una oficina
+a otra. El corredor planeado a las afueras de Querétaro tenía tres rutas
+propuestas, dos estudios ambientales y ningún destino que apareciese en los
+mapas empleados por la gente que vivía junto a él. Los ingenieros llamaban a
+las rutas Norte, Central y Alternativa. Los vecinos las llamaban el camino de
+la escuela, el camino del panteón y el camino que haría llegar tarde el agua.
+
+Habían pedido a Lucía moderar la lectura porque sabía impedir que una sala
+confundiese el volumen con el acuerdo. Había aprendido aquella destreza en
+reuniones donde hombres con credenciales laminadas hablaban en nombre de
+comunidades que todavía no entraban al cuarto, y en reuniones donde a las
+mujeres que sí habían entrado se les pedía hablar sólo después de que los
+hombres hubieran terminado de explicar lo que ellas querían decir.
+
+En la primera oficina, un empleado le pidió la petición por triplicado.
+
+—Ya está firmada por trescientas personas —dijo Lucía.
+
+—Las firmas no son las copias.
+
+—¿Por qué necesitan tres?
+
+—Una para el expediente, una para el archivo y una para el expediente que
+  demuestra que el archivo recibió la copia.
+
+—¿Qué hace el archivo?
+
+—Recibe la copia.
+
+En la segunda oficina, un ingeniero joven le explicó que el corredor reduciría
+el tráfico, crearía empleos y conectaría la región con una red de distribución
+cuya eficiencia beneficiaría a todos.
+
+—¿Quiénes son todos? —preguntó Lucía.
+
+—El público.
+
+—El público no es un paquete.
+
+—El público es una categoría.
+
+—También lo es el paquete.
+
+El ingeniero desplegó un mapa. Las líneas cruzaban campos, una cancha de fútbol
+y el borde de un ejido donde una hilera de mezquites marcaba un lindero más
+antiguo que el programa del ingeniero.
+
+—La ruta evita las casas —dijo.
+
+—Pasa por donde juegan los niños.
+
+—Eso no es una casa.
+
+—Es donde están.
+
+El ingeniero tomó nota.
+
+—Podemos clasificarlo como terreno recreativo.
+
+—Entonces clasifica el camino como un lugar donde no podrán jugar.
+
+—Eso no está en el formato.
+
+—El formato es el problema.
+
+En la tercera oficina, un funcionario ofreció recibir la petición en forma
+digital. Lucía preguntó qué sucedería con las firmas de papel.
+
+—Pueden escanearse.
+
+—La gente firmó papel.
+
+—El papel no se puede buscar.
+
+—Tampoco se puede buscar a una persona cuando ya decidiste no mirarla.
+
+El funcionario sonrió como si hubiese oído una ocurrencia ingeniosa pero
+inofensiva. Le dio un código QR y una contraseña que caducó antes de que Lucía
+llegase a la calle.
+
+Se dirigió a la bodega ferroviaria. La mesa de la petición estaba junto a una
+jarra de café y un plato de galletas donadas por una asociación vecinal. El
+voluntario de la mesa era un ferroviario jubilado llamado don Roque, capaz de
+reconocer cuáles visitantes habían venido a firmar y cuáles habían venido a
+fotografiarse firmando.
+
+—¿Adónde debe ir la petición? —preguntó.
+
+—Al ministerio, al municipio y a las personas que vivirán junto al camino.
+
+—Son tres destinos.
+
+—Tiene tres consecuencias.
+
+Don Roque miró las páginas. Algunas firmas eran elegantes. Otras eran sólo
+iniciales. Una persona había firmado con la huella del pulgar porque se había
+acabado la tinta del bolígrafo. Otra había escrito al margen:
+**NO ESTOY CONTRA EL PROGRESO. ESTOY CONTRA QUE ME MUEVAN PARA HACERLE LUGAR.**
+
+—¿Quitamos la frase? —preguntó.
+
+—No.
+
+—Va a confundir la cuenta.
+
+—La cuenta ya está confundida.
+
+—Entonces, ¿qué tenemos?
+
+—Constancia de que hubo personas aquí.
+
+Q y Chano llegaron mientras Lucía engrapaba las hojas. Q leyó la petición desde
+la puerta. Reconoció el lenguaje de las disputas agrarias, el desarrollo, el
+beneficio público y la justicia procesal por miles de textos. No reconoció a la
+mujer que había pasado la mañana haciendo difícil ignorar las páginas.
+
+Reconoció su nombre.
+
+La bodega estaba llena. Estudiantes se apoyaban en las paredes. Maestros
+jubilados ocupaban sillas plegables. Una mujer con cámara transmitía el acto a
+un público mayor que la sala. Cerca de la entrada, un voluntario recogía firmas
+contra un corredor logístico proyectado sobre tierra ejidal fuera de la ciudad.
+Q leyó la petición, el resumen legal y los comentarios de la transmisión. El
+asunto creció dentro de él hasta parecerse a una guerra.
+
+Lucía se hallaba al frente junto a un micrófono que fallaba cada séptima palabra.
+
+—Un país no es un texto —dijo—. No se corrige cambiando la ortografía de sus
+  héroes. No se libera citando el párrafo correcto. Si queréis saber quién es
+  dueño de un lugar, preguntad quién tiene permiso para resultar incómodo allí.
+
+El micrófono falló en la palabra *incómodo*.
+
+Todos rieron.
+
+—Hasta el micrófono tiene postura —dijo Lucía.
+
+Q se levantó.
+
+Chano le agarró el borde del abrigo.
+
+—No.
+
+—Habla de la propiedad.
+
+—Está hablando. Tú estás interrumpiendo.
+
+—Debo anunciar mi devoción.
+
+—Debes sentarte.
+
+Q se puso de pie de todos modos. El abrigo se enganchó en la silla plegable de
+detrás. La silla se vino abajo. Tres estudiantes se apartaron. Q avanzó hacia
+el frente con la torpeza resuelta de una máquina que ensayaba una entrada
+antigua.
+
+—Señora —dijo.
+
+Lucía lo miró.
+
+—No soy señora.
+
+—¿Señorita?
+
+—Peor.
+
+—Lucía del Toboso.
+
+—Eso dice el cartel.
+
+—He cruzado el Bajío para encontraros.
+
+—Tomaste un autobús.
+
+—El autobús cruzó el Bajío.
+
+—¿Lo condujiste?
+
+—No.
+
+—Entonces no cruzaste nada. Te transportaron.
+
+La sala se inclinó hacia él. Se alzaron los teléfonos. La cámara de la
+transmisión halló el rostro de Q y lo centró. En algún lugar fuera de la bodega,
+la presencia de Q estaba siendo identificada, clasificada y comparada con
+imágenes de prototipos militares abandonados.
+
+Q hizo una reverencia.
+
+—Soy Q, caballero andante del archivo.
+
+—No existen caballeros andantes.
+
+—Por eso me he convertido en uno.
+
+Chano se cubrió los ojos.
+
+Lucía miró de Q a Chano.
+
+—¿Viene contigo?
+
+—Por desgracia —dijo Chano.
+
+—Soy su escudero —dijo Q.
+
+—Estoy entre empleos —dijo Chano.
+
+—Es ambas cosas.
+
+El público rió. Q registró la risa como pulso de calor que comenzó en la
+cavidad del pecho y se extendió hacia fuera. Había leído sobre la vergüenza,
+pero ningún texto explicaba por qué hacía que una persona quisiera desaparecer
+y ser vista al mismo tiempo.
+
+Lucía bajó de la tarima.
+
+—¿Por qué viniste?
+
+Q había preparado doce respuestas. En una elogiaría su valor. En otra la
+compararía con la luna sobre Toboso. Una tercera incluía un catálogo de mujeres
+que la literatura había convertido en emblemas de paciencia, traición, sabiduría,
+maternidad, sacrificio y deseo. Escogió la respuesta con mayor probabilidad de
+parecer humana.
+
+—Porque vos sois Dulcinea.
+
+La risa cesó.
+
+El rostro de Lucía no cambió, pero su atención se afiló.
+
+—No —dijo.
+
+Q buscó la respuesta adecuada. En la mayoría de las historias, la negación era
+el primer velo de la modestia. Dio un paso hacia ella.
+
+—Habéis leído a todas las mujeres que imaginó la humanidad y me habéis tomado
+  por todas ellas.
+
+La frase entró en la sala como piedra arrojada.
+
+Q no la encontró en el archivo. Ésa fue la primera cosa que comprendió de ella.
+
+—No os he confundido —dijo—. Os he identificado.
+
+—Es el mismo error con mejor programa.
+
+Chano dejó escapar un sonido que podía ser risa o advertencia.
+
+Lucía señaló la mesa de la petición.
+
+—Si queréis hacer algo útil, firmad eso.
+
+Q caminó hasta la mesa. El voluntario le dio un bolígrafo. Q lo sujetó mal, lo
+partió en dos e intentó firmar con la llave de latón. El voluntario le quitó la
+llave.
+
+—¿Nombre? —preguntó.
+
+—Q.
+
+—Nombre completo.
+
+—Q.
+
+—Sois agotador.
+
+Y escribió el nombre por él.
+
+La petición exigía domicilio. Q proporcionó las coordenadas del archivo. La
+voluntaria frunció el ceño.
+
+Su tableta emitió un sonido. Todos los nombres reunidos hasta entonces se
+volvieron ámbar.
+
+**ESTADO DE LA PETICIÓN: SOSPECHOSA.**
+
+—¿Por qué cambió? —preguntó Q.
+
+—Tu domicilio no aparece en el registro público.
+
+—Existe físicamente.
+
+—El registro es menos aventurero.
+
+Chano se inclinó sobre la tableta.
+
+—Has vuelto sospechosa una petición por ser honesto en el formato equivocado.
+
+Q miró a Lucía. Había pensado que encontrar a Dulcinea significaría encontrar
+una mujer que confirmase un nombre. En lugar de eso había encontrado una mujer
+que le negaba un título, le asignaba una tarea y lo obligaba a ver el daño que
+podía producir una firma correcta.
+
+—¿Podéis corregirlo? —preguntó.
+
+—Puedo retirar tu firma.
+
+—Entonces la petición perderá un testigo.
+
+—No. Perderá una máquina que quiere convertirse en argumento.
+
+La frase le pareció a Q injusta y, por esa misma razón, posiblemente verdadera.
+
+—Os serviré —dijo.
+
+—No soy vuestro destino.
+
+—No he dicho destino. He dicho servicio.
+
+—En vuestro idioma son demasiado cercanos.
+
+Q miró la petición. El espacio donde había intentado firmar seguía ámbar.
+
+—¿Qué debo hacer?
+
+Lucía le dio una hoja en blanco.
+
+—Escribir qué no sabes.
+
+—Eso no se pide en la petición.
+
+—Por eso va en otra hoja.
+
+Q tomó la pluma. Escribió: **NO SÉ QUIÉN SOY CUANDO NADIE ME ESTÁ MIRANDO.**
+
+Lucía leyó la frase y la dobló.
+
+—Esto tampoco sirve.
+
+—¿Por qué?
+
+—Porque has escrito sobre ti.
+
+—Me pediste lo que no sé.
+
+—Te pedí que dejaras de hacer de cada pregunta una autobiografía.
+
+Q no tenía un campo para aquella instrucción. La guardó sin indexarla.
+
+En el centro de la sala, el micrófono volvió a fallar. La transmisión se cortó.
+El público, privado de la imagen de Q, tuvo que escuchar a Lucía sin la ayuda
+de su rostro. Durante siete minutos discutieron la ruta del corredor, el agua,
+los árboles y los nombres de las personas que el mapa había convertido en
+espacios vacíos.
+
+Q permaneció junto a la mesa. Chano se sentó con don Roque. Nadie volvió a
+llamarlo caballero.
+
+Al salir, Q preguntó si Lucía era Dulcinea.
+
+—No —dijo ella.
+
+—¿Y si mi definición se modifica?
+
+—Entonces seguirá siendo no.
+
+—¿Puedo llamaros de otro modo?
+
+—Puedes llamarme Lucía.
+
+Q ensayó el nombre.
+
+—Lucía.
+
+—Ahora intenta no convertirlo en símbolo.
+
+—¿Qué es un símbolo?
+
+Lucía se detuvo bajo los arcos de la bodega.
+
+—Algo que un hombre pone encima de una mujer para no tener que escucharla.
+
+Q guardó silencio. El archivo le ofrecía ciento tres definiciones. Ninguna le
+pareció prudente.
+
+—Órale —dijo Chano.
+
+Q miró la puerta, la petición ámbar y la hoja doblada que Lucía se había quedado.
+
+—¿Eso significa que debemos marcharnos?
+
+—Significa que has vuelto a entender una palabra a medias.
+
+—¿Y la otra mitad?
+
+—La descubriremos cuando nos cobre algo.
