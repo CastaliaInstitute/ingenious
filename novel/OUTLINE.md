@@ -102,6 +102,11 @@ After deleting the index, Q cannot reliably retrieve ordinary knowledge such as 
 
 16. **The Trial of the Machine:** Castalia prosecutes Q for property damage, impersonation, and the wind-farm shutdown. The court treats him as property, defendant, witness, and spectacle, even entering the disputed water-bottle receipt from his first sally as evidence of his public origin. Hilario gives contradictory testimony, Chano answers for Q’s actions without accepting the court’s categories, and Lucía refuses to testify about Q’s soul. The papers gathered across the journey become one contested record.
 17. **The Wind Farm of Giants, Again:** Q returns to Oaxaca without a camera and gives the center back to Bixha and the people arguing over the project. When he tries to summarize their agreement, Bixha makes him remove his name. A partial renegotiation leaves every side dissatisfied and accountable.
+
+### Interlude: The Meeting That Refused Minutes
+
+The community and consortium attempt to write minutes for the renewed negotiation, but every neutral phrase becomes a disputed door. Food, translation, water, labor, and the right not to be recorded enter the argument. The meeting ends without a finished agreement; its unfinished sentence is later weaponized by Castalia, the consortium, and the community in three incompatible ways.
+
 18. **The Rebel Without a Corpus:** Q delivers an encrypted testimony he is forbidden to understand or reproduce. Memory without possession becomes his hardest act.
 19. **The Curator’s False Explanation:** Elena admits that Castalia’s preservation project became extraction and that she made Q carry her hope that preservation could substitute for repair. Lucía discloses the archive’s own compromised donor bargain and records it as a liability rather than a virtue. Elena resigns, then goes to testify.
 20. **The Last Inn:** Q, Chano, and Lucía travel through ordinary towns where no one recognizes them. Q experiences anonymity as a gift; Lucía chooses what may be published; Chano protects ordinary work from becoming a parable.

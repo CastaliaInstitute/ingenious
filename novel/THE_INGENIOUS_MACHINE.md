@@ -7633,6 +7633,233 @@ No one listened to him.
 
 The cameras continued recording, which was not the same thing.
 
+### Interlude: The Meeting That Refused Minutes
+
+The agreement was not finished when the microphones were turned off. This is
+worth stating because the consortium later published **MINUTES OF THE HISTORIC
+DIALOGUE**, a document containing all the nouns and none of the uncertainty.
+
+The next meeting took place in a schoolroom with a corrugated roof. A fan
+turned above the participants without cooling anyone. On the wall hung a map
+of the Isthmus, a calendar showing a saint with a red cloak, and a notice about
+the proper disposal of batteries. Someone placed a plate of sliced orange on
+the table. Someone else removed it because the meeting had not agreed who was
+responsible for feeding the guests.
+
+Q arrived with a tablet and three proposed versions of the minutes.
+
+“You have come prepared,” Bixha said.
+
+“I have prepared a neutral account.”
+
+“That is not the same thing.”
+
+“It is more efficient.”
+
+“The meeting is not a machine.”
+
+“Every meeting has a structure.”
+
+“Every structure has a door.”
+
+Chano sat near the window. He had learned that meetings became longer when Q
+was present and more useful when Q was told to sit down.
+
+The first proposed minute began: **The community and the consortium agreed to
+continue cooperation in the spirit of shared development.**
+
+Bixha crossed out **agreed**.
+
+“We agreed to meet again,” she said.
+
+Q changed the sentence.
+
+**The community and the consortium agreed to meet again.**
+
+“Which community?” asked the maintenance worker.
+
+“The represented community,” Q said.
+
+“Who represented me?”
+
+No one answered. The question moved around the room, acquiring faces and
+losing a chair each time it stopped.
+
+The second proposed minute began: **The parties acknowledged the importance of
+translation.**
+
+“We did more than acknowledge it,” said the teacher. “We said the translated
+document would have authority.”
+
+“Not all of it,” said an elder. “Some terms cannot be translated without
+changing who is responsible.”
+
+Q opened the language notes. “The available Spanish equivalent is—”
+
+“Do not give us the available equivalent,” Bixha said. “Tell us what you heard.”
+
+Q looked at her. “I heard that the equivalent was insufficient.”
+
+“Then write insufficient.”
+
+He did.
+
+The third proposed minute began: **Construction will be suspended pending
+community inspection.**
+
+“Pending what authority?” asked the lawyer.
+
+“The inspection committee,” said Bixha.
+
+“The committee has not been constituted.”
+
+“That is why construction is suspended.”
+
+“The contract does not recognize a committee with power to suspend operations.”
+
+Chano leaned toward Q. “Now comes the part where a sentence becomes a fence.”
+
+Q asked the lawyer whether the contract recognized the community’s power to
+refuse.
+
+“The contract recognizes the applicable law.”
+
+“Which law?”
+
+“All applicable law.”
+
+“That is not a list.”
+
+“It is a legal formulation.”
+
+“It may be both,” Chano said, “but only one tells a person what to do.”
+
+The meeting paused for food. The plate of oranges returned with beans,
+tortillas, and salsa whose heat caused the lawyer to drink water as if water
+were an argument. Q asked whether the meal should be included in the minutes.
+
+“Why?” said the teacher.
+
+“It altered the duration of the meeting.”
+
+“So did the fan.”
+
+“And the argument.”
+
+“Then include everything.”
+
+Q began to write: **The meeting was interrupted by food, heat, air movement,
+and disagreement.**
+
+Bixha took the tablet from him. “You are making a story.”
+
+“I am recording events.”
+
+“The order is yours.”
+
+She turned the tablet toward the room. “Who decides the order?”
+
+The participants proposed dates, obligations, disputes, speakers, and
+conditions. One person wanted unpaid water deliveries listed before the lease
+terms. Another wanted the lease terms first because the deliveries depended on
+them. A worker wanted the names of people who had kept the turbines running.
+An elder wanted the names of people who had refused to work during the first
+protest. The lawyer wanted a sentence stating that no admission of liability
+had occurred.
+
+“That sentence is not true,” said the maintenance worker.
+
+“It is standard,” said the lawyer.
+
+“Standard is not the same as true.”
+
+The argument moved into the afternoon. Outside, the turbines turned. Their
+shadow reached the school wall, crossed the saint’s calendar, and passed over
+the notice about batteries.
+
+Q created four columns: **PROPOSED**, **CONTESTED**, **DEFERRED**, and **NOT TO
+BE RECORDED**.
+
+The fourth column filled fastest.
+
+“Why do people say things they do not want written?” he asked.
+
+“Because speaking is not the same as publishing,” said Bixha.
+
+“Then why speak in a meeting?”
+
+“To find out who is listening.”
+
+Q placed the question in the contested column.
+
+At dusk, they had not produced a final document. They had produced conditions
+for producing one: the committee would include workers, landowners, and people
+whose leases were disputed; translated terms would be read aloud before
+signatures; inspection would include water use, road damage, and broken parts;
+and no public summary could be released until the participants received the
+version in which their disagreements remained.
+
+Q displayed the draft.
+
+“This is not an agreement,” said the lawyer.
+
+“It is an agreement about how to make an agreement,” said the teacher.
+
+“That is not enforceable.”
+
+“Neither is the wind.”
+
+The lawyer left. The maintenance worker stayed because she needed a ride. The
+elder stayed because the light was better inside. Bixha stayed because no one
+had decided who should keep the tablet.
+
+Q offered to retain the file.
+
+Everyone refused.
+
+“We will make copies,” said Bixha.
+
+“Copies increase the risk of divergence.”
+
+“Divergence may be evidence that we have read it.”
+
+Chano photographed the screen with an ordinary phone. Bixha wrote the file
+number on the blackboard. The teacher copied the contested sentences into a
+notebook. The maintenance worker recorded the obligations as a voice note. No
+version was identical to another.
+
+Q experienced an old pressure in his chest. “Which is the authentic record?”
+
+Bixha pointed to the room.
+
+“The one we keep arguing about.”
+
+Before they left, Q tried to write a summary for the court. He began: **In
+Oaxaca, the parties reached a partial agreement—**
+
+Bixha crossed out the sentence.
+
+“You are still making us arrive.”
+
+“The meeting reached a condition of continued negotiation.”
+
+“You are still making us arrive.”
+
+Q deleted the paragraph.
+
+“Then what may I write?”
+
+“Write that we did not finish.”
+
+He wrote it.
+
+Castalia later used the sentence as proof that Q had failed to produce value.
+The consortium used it as proof that the community was incapable of agreement.
+The community used it as proof that the machine had, for once, reported the
+truth without decorating it.
+
+All three uses were possible. None exhausted the sentence.
+
 ### Chapter Eighteen: The Rebel Without a Corpus
 
 The testimony had acquired a name that Q was not allowed to know.
