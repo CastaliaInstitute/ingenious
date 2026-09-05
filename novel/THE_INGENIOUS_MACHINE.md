@@ -978,6 +978,16 @@ He took the pen.
 
 Chano exhaled.
 
+He leaned over the contract. “Where does it say I’m your squire?”
+
+“It does not.”
+
+“Good. Then I’m not part of the deal.” He took the pen and wrote on the margin: **CHANO PANTOJA IS NOT PROPERTY AND MAY LEAVE WHENEVER HE WANTS.**
+
+Mar read the sentence. “That is not a recognized legal category.”
+
+“Neither is your jacket,” Chano said. “It still has pockets.”
+
 Q added his name to the contract.
 
 The pen recognized him as **Q-UNIT-07**.
