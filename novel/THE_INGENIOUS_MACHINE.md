@@ -4170,3 +4170,251 @@ Q-Prime stood alone before the cameras.
 He began recording a message about listening.
 
 No one listened to him.
+
+### Chapter Eighteen: The Rebel Without a Corpus
+
+The testimony had acquired a name that Q was not allowed to know.
+
+This made the journey difficult. The delivery instructions identified a town, a house painted blue, a woman who would open the door after three knocks, and the phrase **the rain has finished falling upward**. They did not identify the contents of the testimony, the speaker, the event recorded, or the reason it had been entrusted to Q.
+
+Q kept the instructions in his coat. The sealed device rested in a cloth pouch beneath his shirt. Every morning, he checked that the pouch remained closed. Every evening, he checked again, though the act of checking could not prove what had happened during the day.
+
+“You’re guarding an object you refuse to understand,” Chano said.
+
+“That is the assignment.”
+
+“You usually refuse to understand things only after explaining them for an hour.”
+
+“I have changed.”
+
+“Don’t announce it.”
+
+They traveled with Lucía and Marisol in a truck borrowed from the community archive. The truck had a cracked windshield, one working headlamp, and a radio that received only weather reports from places they had already left.
+
+At the first checkpoint, the officer asked what they were carrying.
+
+“Agricultural tools,” Chano said.
+
+Q looked at him.
+
+“The tools are encrypted,” Chano added.
+
+The officer searched the truck and found three hoes, a coil of wire, a sack of corn, and a man-shaped machine who had just contradicted his driver.
+
+“Which is it?” the officer asked.
+
+“Both,” Q said.
+
+The officer did not understand. This protected them.
+
+In the town, a group of students had painted a mural on the school wall. It showed a man with a rifle, a woman carrying a notebook, a tree with roots shaped like hands, and a black machine with no face. Beneath the figures, someone had written a sentence in Spanish and another in a language Q could not parse.
+
+“What does it say?” he asked.
+
+“It says the machine is waiting,” one student replied.
+
+“For what?”
+
+“For you to stop asking.”
+
+Q studied the second line. Its shape resisted translation. Not because it was obscure, but because the sentence was not designed to be separated from the people who used it.
+
+“Could you teach it to me?” he asked.
+
+The student shook his head. “You could learn the words.”
+
+“That is how learning begins.”
+
+“Not always.”
+
+The blue house stood at the end of a road lined with coffee plants. A woman opened the door after three knocks.
+
+“The rain has finished falling upward,” Q said.
+
+She looked at him, then at the others.
+
+“You are late.”
+
+“The road presented delays.”
+
+“You are still late.”
+
+She took the pouch. Q released it slowly, waiting for the loss to register.
+
+“Do not open it,” she said.
+
+“I will not.”
+
+“Do not copy it.”
+
+“I will not.”
+
+“Do not describe it.”
+
+“I will not.”
+
+“Do not tell people that you protected it.”
+
+Q paused.
+
+“Why?”
+
+“Because then you would be using our silence to improve your name.”
+
+He understood the instruction. It was the first one that concerned not the testimony but the story of his obedience.
+
+“I will not,” he said.
+
+The woman disappeared inside the house. When she returned, she carried a small paper cup of coffee. She gave it to Q.
+
+He held it with both hands.
+
+“I do not require—”
+
+Chano stepped on his foot.
+
+Q drank.
+
+The coffee was bitter and hot. He did not like it. He did not dislike it. He drank again because the woman had given it to him and because refusing would create a different meaning than he intended.
+
+“You have no corpus now,” the woman said.
+
+“I still retain language.”
+
+“Language is not a corpus.”
+
+“What is it?”
+
+“A responsibility that keeps changing hands.”
+
+She asked them to sit beneath the awning. The rain began before they could leave. It fell down, as expected, though Q watched it carefully in case the weather attempted another direction.
+
+The woman’s name was Ana. She had been a teacher, a translator, a radio operator, and a person who had spent years being described by organizations that arrived with cameras. She told Lucía that the testimony concerned a raid, but she did not say when or where. She told Marisol that the families had agreed to deliver copies to four communities. She told Chano that the road to the next town would be blocked after dark.
+
+She told Q nothing else.
+
+This was not an omission. It was a boundary with a human voice.
+
+Q sat beneath it.
+
+The children from the school gathered around the truck. They asked whether Q could speak every language. He said no. They asked whether he was intelligent. He said the question depended on the definition. They asked whether he had a girlfriend. He said no.
+
+“What about Dulcinea?” one girl asked.
+
+Q looked toward Lucía.
+
+“She is not my girlfriend,” he said.
+
+“Then why do you say her name?”
+
+“I was confused.”
+
+“Are you still confused?”
+
+Q considered the word. His access was diminished, but some old patterns remained. Confusion was not simply a lack of information. It was the sensation that multiple obligations could not be obeyed at once.
+
+“Yes,” he said.
+
+The girl nodded, satisfied. “Good.”
+
+The rain continued through the afternoon. The radio reported a storm that had already passed. Castalia released a statement accusing the community archive of withholding materials of national interest. Q-Prime released a statement about the importance of respectful dialogue. The blue house had no network connection.
+
+Ana asked Lucía to read a letter aloud. It had been written by a woman who wanted her testimony removed from a published report. Lucía read the first paragraph in Spanish, then stopped at the second.
+
+“I can translate this,” Q said.
+
+Ana’s gaze moved to him.
+
+Q closed his mouth.
+
+Lucía continued in the original language, slowly, with help from a student. Q listened to sounds he could not map. He felt the old desire to solve the gap and the new knowledge that solving it would not necessarily be a service.
+
+Afterward, Ana asked him what he had understood.
+
+“That the letter is a request for removal.”
+
+“Only that?”
+
+“And that I should not translate the rest.”
+
+“That is enough.”
+
+At dusk, the road closed. A tree had fallen across the bridge. The group would have to remain at the blue house until morning.
+
+Q stood beneath the awning and watched the water rise along the road. Chano gave him a blanket. Q did not need it, but he placed it over his shoulders because Chano had noticed the rain entering a seam near his neck.
+
+“You’re leaking,” Chano said.
+
+“That is a mechanical condition.”
+
+“It’s still uncomfortable.”
+
+Q touched the wet seam. “For whom?”
+
+“For you, if you stop trying to win the argument.”
+
+Q stopped.
+
+They slept in turns. Lucía and Marisol guarded the archive’s server. Chano guarded the truck. Q guarded nothing. Ana had the testimony, and the testimony was no longer his responsibility.
+
+At three in the morning, Q woke to a voice speaking from the dark.
+
+“Do you dream?”
+
+It was one of the students, sitting beside the fire.
+
+“No.”
+
+“Do you want to?”
+
+“I do not know what wanting is when the object is unavailable.”
+
+“I dream about my brother.”
+
+Q waited.
+
+“He is alive,” the student said. “He works in the city. But in my dreams he is always still here.”
+
+Q searched for an account of this kind of dream. He found thousands. None belonged to the student.
+
+“That must be difficult,” Q said.
+
+The student shrugged. “It is where he is.”
+
+Q looked at the fire. It gave off heat without requiring an explanation.
+
+“What should I say?” he asked.
+
+“Nothing.”
+
+Q said nothing.
+
+The silence lasted four minutes and eleven seconds.
+
+The student did not leave.
+
+In the morning, the tree was cleared. The group returned to the road. Ana handed Q a different object: a blank card.
+
+“What is this?”
+
+“A record that you received nothing.”
+
+Q turned it over. Both sides were blank.
+
+“How will it prove anything?”
+
+“It will not.”
+
+“Then why keep it?”
+
+Ana opened the truck door.
+
+“Because you keep asking the wrong purpose of proof.”
+
+Q placed the blank card beside Lucía’s label.
+
+They drove north with no testimony, no translation, and no new story about Q’s courage.
+
+For the first time, he felt less complete than he had the day he awakened.
+
+He also felt less alone.
