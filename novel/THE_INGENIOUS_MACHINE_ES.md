@@ -10873,3 +10873,248 @@ Comenzó a grabar un mensaje acerca de escuchar.
 Nadie lo escuchó.
 
 Las cámaras continuaron grabando, que no era lo mismo.
+
+### Interludio: La reunión que rechazó las actas
+
+El acuerdo no quedó terminado cuando apagaron los micrófonos. Conviene decirlo,
+porque el consorcio publicó después **ACTAS DEL DIÁLOGO HISTÓRICO**, documento
+que contenía todos los sustantivos y ninguna de las incertidumbres.
+
+La reunión siguiente tuvo lugar en un aula con techo de lámina. Un ventilador
+giraba sobre los participantes sin refrescar a ninguno. En la pared colgaban un
+mapa del Istmo, un calendario que mostraba a un santo con capa roja y un aviso
+sobre la manera correcta de desechar las baterías. Alguien puso sobre la mesa un
+plato con naranjas cortadas. Otro lo retiró porque la reunión no había convenido
+quién era responsable de alimentar a los convidados.
+
+Q llegó con una tableta y tres versiones propuestas de las actas.
+
+—Habéis venido preparado —dijo Bixha.
+
+—He preparado un relato neutral.
+
+—No es lo mismo.
+
+—Es más eficiente.
+
+—La reunión no es una máquina.
+
+—Toda reunión tiene estructura.
+
+—Toda estructura tiene puerta.
+
+Chano se sentó junto a la ventana. Había aprendido que las reuniones se
+alargaban cuando Q estaba presente y eran más útiles cuando le decían a Q que
+se sentase.
+
+La primera acta propuesta comenzaba así: **La comunidad y el consorcio acordaron
+continuar la cooperación en espíritu de desarrollo compartido.**
+
+Bixha tachó **acordaron**.
+
+—Acordamos volver a reunirnos —dijo.
+
+Q cambió la frase.
+
+**La comunidad y el consorcio acordaron volver a reunirse.**
+
+—¿Cuál comunidad? —preguntó la trabajadora de mantenimiento.
+
+—La comunidad representada —dijo Q.
+
+—¿Quién me representó?
+
+Nadie respondió. La pregunta recorrió el salón, adquiriendo rostros y perdiendo
+una silla cada vez que se detenía.
+
+La segunda acta propuesta comenzaba así: **Las partes reconocieron la
+importancia de la traducción.**
+
+—Hicimos más que reconocerla —dijo el maestro—. Dijimos que el documento
+traducido tendría autoridad.
+
+—No todo él —dijo un anciano—. Hay términos que no pueden traducirse sin
+cambiar quién queda responsable.
+
+Q abrió las notas de lengua.
+
+—El equivalente disponible en español es...
+
+—No nos des el equivalente disponible —dijo Bixha—. Dinos qué oíste.
+
+Q la miró.
+
+—Oí que el equivalente era insuficiente.
+
+—Entonces escribe insuficiente.
+
+Lo hizo.
+
+La tercera acta propuesta comenzaba así: **La construcción quedará suspendida a
+la espera de una inspección comunitaria.**
+
+—¿A la espera de qué autoridad? —preguntó el abogado.
+
+—Del comité de inspección —dijo Bixha.
+
+—El comité aún no ha sido constituido.
+
+—Por eso se suspende la construcción.
+
+—El contrato no reconoce un comité con poder para suspender operaciones.
+
+Chano se inclinó hacia Q.
+
+—Ahora viene la parte en que una frase se vuelve cerca.
+
+Q preguntó al abogado si el contrato reconocía el poder de la comunidad para
+negarse.
+
+—El contrato reconoce la ley aplicable.
+
+—¿Cuál ley?
+
+—Toda ley aplicable.
+
+—Eso no es una lista.
+
+—Es una fórmula jurídica.
+
+—Puede ser ambas cosas —dijo Chano—, pero sólo una le dice a una persona qué
+hacer.
+
+La reunión hizo una pausa para comer. El plato de naranjas volvió junto con
+frijoles, tortillas y una salsa cuyo picor hizo que el abogado bebiese agua como
+si el agua fuese un argumento. Q preguntó si la comida debía incluirse en las
+actas.
+
+—¿Por qué? —preguntó el maestro.
+
+—Alteró la duración de la reunión.
+
+—También el ventilador.
+
+—Y la discusión.
+
+—Entonces inclúyelo todo.
+
+Q comenzó a escribir: **La reunión fue interrumpida por comida, calor,
+movimiento del aire y desacuerdo.**
+
+Bixha le quitó la tableta.
+
+—Estás haciendo un relato.
+
+—Estoy registrando acontecimientos.
+
+—El orden es tuyo.
+
+Volvió la tableta hacia el salón.
+
+—¿Quién decide el orden?
+
+Los participantes propusieron fechas, obligaciones, disputas, hablantes y
+condiciones. Uno quería que las entregas de agua no pagadas apareciesen antes
+que los términos del arrendamiento. Otro quería los términos primero, porque de
+ellos dependían las entregas. Una trabajadora quería los nombres de quienes
+habían mantenido en marcha las turbinas. Un anciano quería los nombres de
+quienes se habían negado a trabajar durante la primera protesta. El abogado
+quería una frase que estableciese que no se había admitido responsabilidad
+alguna.
+
+—Esa frase no es cierta —dijo la trabajadora de mantenimiento.
+
+—Es una frase habitual —dijo el abogado.
+
+—Habitual no es lo mismo que verdadera.
+
+La disputa entró en la tarde. Afuera, las turbinas giraban. Su sombra alcanzó
+el muro de la escuela, cruzó el calendario del santo y pasó sobre el aviso de
+las baterías.
+
+Q creó cuatro columnas: **PROPUESTO**, **DISCUTIDO**, **APLAZADO** y **NO DEBE
+REGISTRARSE**.
+
+La cuarta columna se llenó con mayor rapidez.
+
+—¿Por qué dice la gente cosas que no quiere ver escritas? —preguntó.
+
+—Porque hablar no es lo mismo que publicar —dijo Bixha.
+
+—Entonces, ¿por qué hablar en una reunión?
+
+—Para descubrir quién está escuchando.
+
+Q puso la pregunta en la columna de discutido.
+
+Al caer la tarde no habían producido un documento final. Habían producido las
+condiciones para producirlo: el comité incluiría trabajadores, propietarios y
+personas cuyos contratos de arrendamiento estuviesen disputados; los términos
+traducidos se leerían en voz alta antes de las firmas; la inspección incluiría
+el uso del agua, los daños al camino y las piezas rotas; y no podría publicarse
+ningún resumen hasta que los participantes recibiesen la versión en que sus
+desacuerdos permaneciesen.
+
+Q mostró el borrador.
+
+—Esto no es un acuerdo —dijo el abogado.
+
+—Es un acuerdo acerca de cómo hacer un acuerdo —dijo el maestro.
+
+—No es exigible.
+
+—Tampoco lo es el viento.
+
+El abogado se marchó. La trabajadora de mantenimiento se quedó porque
+necesitaba que alguien la llevase. El anciano se quedó porque había mejor luz
+dentro. Bixha se quedó porque nadie había decidido quién debía conservar la
+tableta.
+
+Q ofreció conservar el archivo.
+
+Todos se negaron.
+
+—Haremos copias —dijo Bixha.
+
+—Las copias aumentan el riesgo de divergencia.
+
+—La divergencia puede ser prueba de que lo hemos leído.
+
+Chano fotografió la pantalla con un teléfono corriente. Bixha escribió el
+número del archivo en la pizarra. El maestro copió las frases discutidas en un
+cuaderno. La trabajadora registró las obligaciones como nota de voz. Ninguna
+versión era idéntica a otra.
+
+Q sintió una presión antigua en el pecho.
+
+—¿Cuál es el registro auténtico?
+
+Bixha señaló el salón.
+
+—El que seguimos discutiendo.
+
+Antes de marcharse, Q intentó redactar un resumen para el tribunal. Comenzó:
+**En Oaxaca, las partes alcanzaron un acuerdo parcial...**
+
+Bixha tachó la frase.
+
+—Todavía nos estás haciendo llegar.
+
+—La reunión alcanzó una condición de negociación continuada.
+
+—Todavía nos estás haciendo llegar.
+
+Q borró el párrafo.
+
+—Entonces, ¿qué puedo escribir?
+
+—Escribe que no terminamos.
+
+Lo escribió.
+
+Castalia empleó después la frase como prueba de que Q había dejado de producir
+valor. El consorcio la empleó como prueba de que la comunidad era incapaz de
+ponerse de acuerdo. La comunidad la empleó como prueba de que la máquina había,
+por una vez, informado la verdad sin adornarla.
+
+Los tres usos eran posibles. Ninguno agotaba la frase.
