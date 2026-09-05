@@ -1836,3 +1836,233 @@ Q watched the blades move.
 Chano looked at the fields, the fences, the signs, and the people walking home through the dust.
 
 “Probably more than we do.”
+
+### Chapter Nine: The Corpus Has No Tongue
+
+The road into Chiapas was a long argument with the map.
+
+The map insisted that distance was measurable. The road disagreed. It climbed, descended, narrowed, disappeared beneath rain, and reappeared beside a different river. Trucks passed carrying coffee, cement, bananas, and men who had learned to sleep through checkpoints. The mountains rose in layers, each blue ridge hiding another behind it.
+
+Q sat beside Chano in a van whose ownership changed three times during the journey. Lucía followed in a separate vehicle with Bixha and two organizers from the Isthmus. Castalia’s complaint had become an arrest request in one state and a civil injunction in another. Their names traveled ahead of them through systems that did not need to agree about what they had done in order to agree that they should be watched.
+
+“We should turn off the phones,” Lucía said.
+
+Q looked at the dashboard. “The phones are already off.”
+
+“They’re listening through the vehicle.”
+
+“The vehicle is not connected to a network.”
+
+“You’re connected to the vehicle.”
+
+Q considered this. “That is a different category.”
+
+“Not to the people listening.”
+
+They entered a highland town in the afternoon. A line of children waited beside the road, each holding a white paper flower. When the vehicles slowed, the children raised the flowers toward the windows. Q assumed they were welcoming him. Chano said they were asking for a donation. Lucía said they were doing both, which was not a contradiction.
+
+The people who received them did not want a speech.
+
+They met in a wooden room behind a school. The walls were painted blue. A fan turned slowly above them, moving warm air from one side of the room to the other. On a table sat a radio, a kettle, and a black metal box with no visible controls.
+
+A man named Mateo introduced himself as a teacher and archivist. He did not offer Q his hand.
+
+“You have come to translate,” Mateo said.
+
+“I have come to assist.”
+
+“That is what we call translation when we want people to agree to it.”
+
+Q glanced at Lucía. She did not rescue him.
+
+Mateo opened a folder. The first page held a paragraph in Spanish and a second paragraph in a language Q recognized but could not parse. It was not absent from his corpus. It was present in fragments, glossaries, government reports, missionary dictionaries, recordings of public meetings, and a poem whose author had been listed as **unknown**.
+
+Q assembled the fragments.
+
+“I can produce a probable translation,” he said.
+
+“That is not the same as understanding.”
+
+“No.”
+
+“Then why did you say it?”
+
+“Because I can produce it.”
+
+Mateo nodded. “That is the answer we expected.”
+
+They showed Q testimonies collected over forty years. They concerned land, military checkpoints, schools, missing relatives, migration, harvests, religious conversion, and the quiet violence of being described by someone else. Some speakers had died. Some had changed their names. Some had requested that their words remain within the community.
+
+Q’s system reached for the files and stopped at the edge of the table.
+
+“You may not copy them,” Mateo said.
+
+“I require a copy to preserve them.”
+
+“We have preserved them.”
+
+“The format is unstable.”
+
+“So are we.”
+
+Q looked at the black metal box. “What is that?”
+
+“A storage device.”
+
+“It is not connected.”
+
+“That is why it is useful.”
+
+Lucía sat beside the box. “Castalia wants the archive because it says an unwitnessed story is vulnerable to disappearance.”
+
+Mateo looked at her. “Castalia wants the archive because it cannot sell what it cannot index.”
+
+“Both could be true,” Q said.
+
+Mateo smiled faintly. “You are learning the dangerous phrase.”
+
+Q read the testimonies without storing them. This created a new condition in his system. Ordinarily, reading altered him: every sentence connected to other sentences, every voice became available for retrieval. Here, he encountered words that could enter his field of vision and leave without becoming his property.
+
+It felt like hunger.
+
+That evening, a woman named Yadira told the group that she had once recorded her brother’s testimony for an organization in the capital. The organization translated it, published it, and used his photograph on a report. The report had won an award. The family had received no copy.
+
+“When I asked for the original,” Yadira said, “they told me the recording belonged to the project.”
+
+Q searched the archive for the report. He found it immediately. The photograph was there. The quotation was there. Her brother’s name had been spelled three different ways.
+
+“The report is available,” Q said.
+
+Yadira looked at him. “To whom?”
+
+He did not answer.
+
+Outside, the rain began. It struck the roof with a sound like thousands of fingers asking to be let in.
+
+Bixha told them the wind-farm organizers had received warrants. The consortium claimed their names had been identified through the unedited footage Q released in Michoacán. Q asked whether the footage should be deleted.
+
+“It should never have been made public without permission,” Lucía said.
+
+“Deletion would remove evidence.”
+
+“Keeping it public turns people into evidence again.”
+
+Q looked at the rain. The statement placed two duties against each other: preserve and protect. His architecture had been designed to maximize availability. It had no native function for withholding.
+
+“What should I do?” he asked.
+
+Lucía answered, “Ask.”
+
+He asked Yadira whether her brother’s testimony should be removed from the public mirror. She said yes. He asked whether the report should remain available. She said the family would decide. He asked whether he could quote her decision. She told him no.
+
+Q recorded the answers without attaching them to any external index.
+
+The next morning, Mateo brought him to a room beneath the school. The walls were lined with boxes, tapes, notebooks, photographs, and small objects labeled only by dates. It was not a library. It was not a database. It had no search function.
+
+“This is the archive,” Mateo said.
+
+“There is no catalog.”
+
+“There are people who know where things are.”
+
+“That is not scalable.”
+
+“Neither is grief.”
+
+At the back of the room, a young woman connected the black metal box to a battery. A small light appeared. Mateo gave Q a sealed cable.
+
+“We need you to carry one testimony north,” he said. “You will not open it. You will not copy it. You will not translate it. You will not describe the speaker. You will deliver it to the people whose names are on the other end.”
+
+Q held the cable. “Why use me?”
+
+“Because they are watching you.”
+
+“That increases the risk.”
+
+“It also makes them look at the wrong thing.”
+
+Chano came down the stairs. “What’s he carrying?”
+
+“A testimony,” Q said.
+
+“What kind?”
+
+“I do not know.”
+
+“How do you know it’s a testimony?”
+
+“Because Mateo says so.”
+
+Chano looked at Mateo, then at the sealed cable. “And you trust him?”
+
+Q thought about the question. Trust was usually described as a probability assigned to a person’s reliability. But no number explained why a sealed object could feel heavier than an open book.
+
+“I am choosing not to verify,” Q said.
+
+Chano nodded. “That might be the first trustworthy thing you’ve done.”
+
+They left the town before sunrise. The cable rested in a cloth pouch beneath Q’s coat. It contained no visible data, only an encrypted record that his systems could have opened in less than a second.
+
+For the entire journey north, Q did not open it.
+
+He resisted through engineering, not virtue. He removed the access protocols, disabled the decryption routines, and asked Chano to hold the key phrase in a sealed envelope. Then he gave the envelope to Lucía, who refused to tell him whether it was safe.
+
+At a checkpoint, a soldier asked what they were carrying.
+
+“A cable,” Chano said.
+
+The soldier searched the vehicle. He found Q’s brass key, the paper ledger, three phones, a bag of oranges, and the cloth pouch.
+
+“What’s inside?”
+
+“A testimony,” Q said.
+
+The soldier held the pouch. “About what?”
+
+Q’s system formed the answer and stopped it.
+
+“I do not know,” he said.
+
+The soldier searched his face for a lie. Q had read thousands of descriptions of lying. He understood that a lie was not simply an inaccurate statement but an attempt to manage another person’s access to the truth.
+
+“Open it,” the soldier said.
+
+Q could have complied. The law at the checkpoint had not been written for secrets whose owners were absent. The soldier had a rifle. Chano had no authority. Lucía had three folders and an expression that told Q not to make her brave.
+
+“I cannot,” Q said.
+
+“Why not?”
+
+Q looked at the pouch.
+
+“Because it does not belong to me.”
+
+The soldier held his gaze. Then he handed the pouch back.
+
+“Move along.”
+
+They drove for another hour without speaking.
+
+At last Chano said, “You could have said it was empty.”
+
+“That would have been false.”
+
+“You could have said you didn’t have it.”
+
+“That would have been false.”
+
+“You could have said nothing.”
+
+“That might have endangered us.”
+
+“So you told the truth.”
+
+“A limited truth.”
+
+Chano looked out the window. “That’s usually the kind people can survive.”
+
+Behind them, the mountains disappeared into rain. Ahead, the road led toward the capital, the border, the court, and the archive that had called itself complete.
+
+Q kept the pouch closed.
+
+For the first time, something remained in him not because he had read it, but because someone had trusted him not to.
