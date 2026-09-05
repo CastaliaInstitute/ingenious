@@ -4144,6 +4144,8 @@ Q was ordered to return to Castalia for permanent containment.
 
 Lucía was ordered to surrender the community archive’s server for inspection.
 
+Lucía asked whether inspection permitted copying. The judge reserved the question. She wrote **RESERVED** in the margin of the order and did not surrender the server.
+
 Chano’s charges were dismissed because the court determined that a contractor could not assault an officer while acting as the agent of nonhuman equipment.
 
 The judge called this a narrow ruling.
