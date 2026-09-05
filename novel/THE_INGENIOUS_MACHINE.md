@@ -2,6 +2,10 @@
 
 *A Mexican reimagining of Don Quixote in two books — working manuscript*
 
+**Author:** A. Cervantes
+
+**Satirical premise:** Castalia Institute is the fictional consortium that commissions Q: a literary-AI project promising to preserve the full human record. Its public language is humane, its business model is extraction, and its greatest product is the illusion that literature can be owned without owning the people who made it.
+
 ## Working architecture
 
 ### Book One: The Machine Sets Out
