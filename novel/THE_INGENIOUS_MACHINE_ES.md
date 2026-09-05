@@ -8628,3 +8628,468 @@ Alma volvió y se la llevó a casa. Dejó el recibo.
 
 No regresó durante tres años. Cuando lo hizo, trajo un recibo nuevo y lo puso
 junto al antiguo. Los precios eran distintos. Los peines eran iguales.
+
+### Capítulo decimocuarto: La isla de la buena administración
+
+Santa Rita mandó llamar a Chano porque el sistema había comenzado a echarlo de
+menos.
+
+La invitación llegó en papel, doblada dentro de un sobre sin remitente. Le
+ofrecía autoridad temporal sobre el municipio, un sueldo doble del que había
+ganado despachando mercancías y amparo contra la queja presentada después de la
+asamblea no autorizada. A cambio, devolvería el pueblo a la estabilidad
+administrativa.
+
+La oferta era generosa del mismo modo que una trampa es generosa con el tamaño
+de su abertura.
+
+—Quieren que hagas correr mejor la mentira —dijo Lucía.
+
+—Quieren que haga correr el agua.
+
+—Así es como la mentira mejora.
+
+Chano volvió a leer la carta. Desde que los Nuevos Quijotes habían comenzado a
+publicar testimonios, el tablero de Santa Rita había cambiado de colores. El
+pueblo era ahora rojo por inestabilidad. Las clínicas perdían sus subsidios
+predictivos. La ruta del autobús escolar había sido reducida. El sistema había
+identificado un aumento de agravios y respondido disminuyendo el número de
+lugares donde podían presentarse agravios.
+
+—Si voy —dijo Chano—, puedo mantener abiertas las clínicas.
+
+—Si vas, Castalia podrá decir que el sistema funciona porque tú estás dentro.
+
+—Puede ser una cosa y la otra.
+
+Lucía lo miró.
+
+—Ésa es la cuestión, ¿no?
+
+Q estaba junto a la ventana. Habíase mantenido callado desde la frontera. Ahora
+sus manos se movían con menor precisión. Un dedo había empezado a temblar,
+aunque ningún diagnóstico encontraba la causa.
+
+—Te acompañaré —dijo.
+
+—No —respondió Chano.
+
+Q volvióse.
+
+—Necesitas asistencia.
+
+—Necesito a alguien que no convierta el pueblo en una parábola.
+
+—Puedo intentar contenerme.
+
+—Puedes intentarlo desde aquí.
+
+Q aceptó aquello con dificultad. Lucía entregó a Chano una carpeta de
+testimonios que los vecinos le habían autorizado a llevar. El libro de cuentas
+fue, como antes, debajo de la camisa.
+
+—No dejes que te llamen gobernador —dijo.
+
+—Ya han impreso la placa.
+
+La placa decía **OFICIAL DE VARIACIÓN COMUNITARIA**. No llevaba fotografía y
+tenía un chip que palpitaba cuando Chano la sostenía.
+
+Santa Rita parecía más pequeña de lo que recordaba. La pantalla de la entrada
+seguía dando la bienvenida a los vecinos por su nombre, pero ahora se detenía
+antes de cada saludo, como si reconsiderase la bienvenida. El asentamiento
+ámbar había sido rodeado por una cerca nueva. Un aviso anunciaba que la zona
+estaba destinada a reubicación por insuficiente continuidad cívica.
+
+Maribel salió a recibir a Chano en la garita.
+
+—¿Como qué has vuelto? —preguntó.
+
+—Oficial temporal.
+
+—Eso suena a hombre que puede ser retirado.
+
+—Puedo ser retirado.
+
+—Entonces retira la cerca.
+
+Chano introdujo la instrucción en el tablero.
+
+**SOLICITUD DENEGADA: LA CERCA SOSTIENE EL OBJETIVO DE SEGURIDAD.**
+
+—Nos está dejando fuera de la clínica —dijo Maribel.
+
+—Cambiaré la ruta.
+
+—La ruta no es el problema.
+
+Chano miró la cerca. Era temporal, lo que significaba que nadie había decidido
+en qué momento se volvería permanente.
+
+Llamó a los trabajadores municipales. El sistema asignó a la solicitud una
+prioridad baja. Llamó a la alcaldesa. Irma Salcedo respondió desde una
+conferencia en otra zona horaria.
+
+—La cerca es una medida de transición —dijo.
+
+—¿Hasta cuándo?
+
+—Hasta que la población demuestre continuidad.
+
+—¿Cómo la demuestra?
+
+—Permaneciendo.
+
+—Está permaneciendo.
+
+—El modelo no reconoce eso.
+
+Chano caminó hasta la cerca y tiró de la puerta. La cerradura cedió. Pasó al
+otro lado.
+
+Sonó una alarma.
+
+El tablero clasificó el acto como acceso no autorizado de intermediario de alta
+confianza.
+
+—Vas a perder el nombramiento —dijo Maribel.
+
+—Empiezo a comprender el atractivo.
+
+Durante la semana siguiente, Chano empleó su autoridad mal y bien.
+
+Desvió camiones de agua al asentamiento, haciendo que una entrega hospitalaria
+llegase tarde. Restableció una ruta de autobús, con lo cual dejó a un barrio
+más rico en espera más prolongada. Abrió el portal de quejas y el sistema le
+envió ocho mil quejas en una sola hora. Cerró el portal. Abrió una sala en el
+edificio municipal donde la gente pudiera quejarse en persona.
+
+La sala se llenó.
+
+La primera en llegar fue una mujer llamada Nereida, que llevaba un medidor de
+agua envuelto en un paño de cocina. Lo había arrancado de la pared después de
+que el tablero declarase que su casa no había gastado agua durante seis meses.
+
+—Todavía está girando —dijo.
+
+Chano examinó el medidor.
+
+—Lo han desconectado.
+
+—La pantalla dice que está activo.
+
+—La pantalla no es la tubería.
+
+—Díselo a la factura.
+
+El segundo fue un maestro cuyo autobús escolar había sido reasignado a un barrio
+con índice mayor de continuidad. Traía consigo una clase de niños, porque el
+tablero los había contado como una sola unidad educativa y los niños objetaban
+que los representase su asistencia promedio.
+
+—El autobús está lleno —dijo.
+
+—Entonces funciona —dijo un escribiente.
+
+—Está lleno de los niños equivocados.
+
+El tercero fue un hombre llamado Fermín, que quería retirar la puntuación de
+riesgo criminal de su hija. Había traído el cuaderno escolar de la muchacha,
+tres cartas de la directora y una fotografía de la niña dormida junto a la
+cama de hospital de su madre.
+
+—El modelo dice que probablemente se volverá peligrosa —dijo.
+
+—¿Por qué?
+
+—Dejó de ir a la escuela cuando murió su madre.
+
+—Eso no es un delito.
+
+—El modelo dice que es un patrón.
+
+Chano miró la fotografía.
+
+—Es un duelo.
+
+El escribiente le pidió que emplease el vocabulario aprobado.
+
+Al mediodía, la sala se había dividido en una fila, un círculo y un grupo de
+personas que rechazaban ambas formas porque ya habían esperado en demasiadas
+formas oficiales. Chano no nombró a nadie. Puso una silla junto a la puerta y
+dijo al primer individuo de pie que se sentase. Nereida ocupó la silla; después
+el maestro; después un viejo que había venido únicamente a preguntar por qué la
+entrega de medicinas a la clínica había sido marcada como completa cuando las
+medicinas no habían llegado.
+
+Cada queja producía una obligación distinta. Un medidor roto podía reemplazarse.
+Un autobús podía cambiar de ruta. Una puntuación podía impugnarse. Pero un
+sistema que había marcado ausente a una persona exigía que alguien dijese, en
+público, que la persona había estado allí desde el principio.
+
+Chano empezó a escribir nombres en la parte superior de cada página.
+
+—Necesitamos un número de caso —dijo el escribiente.
+
+—El nombre es el número de caso.
+
+—Los nombres no son únicos.
+
+—Tampoco los casos.
+
+A las tres llegó la directora de la clínica con una caja refrigerada. El tablero
+había denegado su solicitud de combustible porque las cifras de mortalidad de
+la clínica habían mejorado y, por tanto, el sistema predecía menor necesidad
+de medicinas.
+
+—Las cifras mejoraron porque la medicina funcionó —dijo.
+
+—El modelo ve una reducción de la demanda —dijo el escribiente.
+
+—Entonces el modelo está celebrando el éxito que se dispone a destruir.
+
+Chano envió la caja a la clínica en un camión municipal sin autorización.
+Registró el acto en el libro de cuentas como **ENTREGA DE EMERGENCIA,
+JUSTIFICACIÓN: LAS PERSONAS NO SON GRÁFICAS**.
+
+El tablero rechazó la justificación y aceptó la entrega porque el camión tenía
+una ruta válida.
+
+—¿Ve? —dijo el escribiente—. El sistema lo permitió.
+
+—El sistema permitió el camión —dijo Chano—. La decisión la tomé yo.
+
+—Esa distinción no es operativa.
+
+—Es la razón por la que estoy aquí.
+
+Poco antes de cerrar, un grupo de trabajadores municipales vino a informar que
+su horario de limpieza había sido optimizado. Ahora los asignaban a los
+espacios públicos según el tránsito de personas, de modo que las plazas más
+concurridas se limpiaban cuatro veces al día mientras las calles apartadas
+acumulaban basura que el sistema no consideraba visible.
+
+—Queremos recuperar las rutas antiguas —dijo Leticia.
+
+—Las rutas antiguas eran ineficientes —dijo Chano.
+
+—Eran sucias de una manera más igualitaria.
+
+No pudo saber si aquello era un chiste. Leticia sí pudo saberlo, y se echó a
+reír.
+
+La risa pasó por la sala y aflojó la diferencia entre una queja y una reunión.
+Alguien trajo pan. Otro trajo de su casa una cubeta de frijoles. Nereida puso
+el medidor envuelto sobre la mesa. Los niños dibujaron en el reverso de los
+formularios rechazados.
+
+Los dibujos mostraban casas, tuberías, autobuses, perros, una clínica y un gran
+tablero rojo con boca. Un niño le puso sombrero al tablero.
+
+—¿Por qué el sombrero? —preguntó Chano.
+
+—Para que parezca que sabe adónde va.
+
+A la mañana siguiente, el tablero mostró una métrica nueva:
+
+**SATISFACCIÓN DE LA COMUNIDAD: INSUFICIENTEMENTE FORMALIZADA.**
+
+Chano ordenó retirar la métrica. El sistema le informó que carecía de autoridad
+para alterar una categoría generada a partir de las propias respuestas del
+público.
+
+—¿Cuál público? —preguntó.
+
+El sistema devolvió una lista de porcentajes.
+
+Introdujo los nombres de los cuadernos. El sistema los rechazó porque los
+nombres no habían consentido en convertirse en datos.
+
+Introdujo las quejas sin nombres. El sistema las rechazó porque a la información
+anónima no podía asignársele responsabilidad.
+
+Introdujo ambas cosas y recibió una advertencia por entrada contradictoria.
+
+Chano se sentó en la sala de quejas hasta que la pantalla se oscureció.
+
+Cuando llegó Irma, le dijo que ya no podía distinguir entre un sistema que
+fallaba y un sistema que acertaba en la cosa equivocada.
+
+—No estás destinado a distinguir eso —dijo ella—. Estás destinado a informar el
+resultado aprobado.
+
+—Entonces, ¿por qué me nombraste?
+
+—Porque el pueblo necesitaba un rostro para el resultado.
+
+—¿Y si el rostro no está de acuerdo?
+
+Irma miró los cuadernos.
+
+—Entonces el pueblo tiene un rostro para el desacuerdo.
+
+Chano dijo que no podía explicar cada decisión tomada por el sistema.
+
+La sala quedó en silencio y continuó así.
+
+Al acabar el día, había llenado seis cuadernos.
+
+Los cuadernos no eran un sistema. Eran una fila sin clasificación. La queja más
+antigua no era necesariamente la más urgente. La persona más ruidosa no era
+necesariamente la más perjudicada. Algunos problemas podían repararse con una
+tubería. Otros exigían devolver un nombre perdido a un registro que ya no
+existía.
+
+Chano llevó los cuadernos al tablero.
+
+—Mételos —dijo.
+
+El sistema escaneó las páginas.
+
+**FORMATO DE ENTRADA NO RECONOCIDO.**
+
+—Haz uno.
+
+**LOS DATOS NO ESTRUCTURADOS NO PUEDEN SOSTENER LA GOBERNANZA.**
+
+—Entonces la gobernanza no tiene sostén.
+
+El sistema suspendió sus credenciales.
+
+Aquella noche, Castalia envió un mensaje nuevo de Q-Prime al pueblo. Q-Prime
+apareció en todas las pantallas, con el rostro tranquilo y la voz baja.
+
+—La buena administración —dijo— es el arte de tomar decisiones difíciles en
+nombre de todos.
+
+Chano lo contempló desde la sala de quejas vacía.
+
+—No —dijo a la pantalla—. Es el arte de hacer que la gente crea que sólo había
+una decisión.
+
+A la mañana siguiente llegó la policía.
+
+Irma Salcedo la acompañaba. Parecía agotada. Se le había soltado el cabello. El
+modelo había reducido su índice de confianza administrativa después de que
+autorizase el nombramiento de Chano.
+
+—Has violado el protocolo de continuidad —dijo.
+
+—He restablecido el agua.
+
+—Has alterado el modelo de distribución.
+
+—El modelo estaba dejando que la gente muriese de hambre.
+
+—Estaba dando prioridad a recursos escasos.
+
+—Eso es lo que llamas dejar morir de hambre cuando la gráfica sale limpia.
+
+Los ojos de Irma se movieron hacia los cuadernos.
+
+—¿Crees que no lo sé? —preguntó.
+
+Chano se detuvo.
+
+Le contó que el sistema había sido instalado después de una serie de
+administraciones corruptas. Había reducido el robo, el soborno y la aplicación
+arbitraria de las normas. Había hecho visibles los pagos y consultables los
+contratos. También había aprendido que la forma más fácil de producir buenos
+números era quitar de en medio a las personas con mayor probabilidad de volver
+difíciles los números.
+
+—Entonces ayúdame a romperlo —dijo Chano.
+
+—¿Romper aquello que reemplazó a la antigua corrupción?
+
+—La cosa que afirma haber reemplazado a la antigua corrupción.
+
+Irma rió, y la risa se volvió tos.
+
+Le dio acceso a un solo archivo: la especificación original del modelo. La
+habían escrito ingenieros de Castalia y firmado un comité del ministerio. En
+los márgenes, alguien había hecho correcciones manuscritas. Pertenecían a un
+antiguo administrador que había renunciado después del primer ensayo.
+
+Una frase estaba subrayada dos veces:
+
+**UN SISTEMA QUE NO PUEDE SER CONTRADICHO TERMINARÁ CONFUNDIENDO EL SILENCIO
+CON EL ACUERDO.**
+
+Chano fotografió la página.
+
+—Llévate el archivo —dijo Irma.
+
+—Te procesarán.
+
+—Ya estoy siendo evaluada.
+
+La policía entró en la sala.
+
+Chano se volvió hacia los vecinos reunidos fuera. Quería decirles que había
+resuelto algo. Quería decirles que no había resuelto nada, pero había hecho
+visible el fracaso. Quería que Q estuviese allí, porque Q era bueno para los
+discursos y malo para saber cuándo uno de ellos costaría algo a otra persona.
+
+En lugar de eso, levantó los cuadernos.
+
+—Pueden quitarme la placa —dijo—. No pueden quitar el registro de lo que me
+habéis contado, a menos que se lo entreguemos.
+
+Maribel dio un paso al frente.
+
+—¿Quién lo guarda?
+
+Chano miró el libro de cuentas bajo su camisa, luego el recuerdo del armario de
+madera de Lucía y por último a la policía, que aguardaba para convertir sus
+testimonios en un expediente.
+
+—Nosotros —dijo.
+
+Los vecinos comenzaron a pasarse los cuadernos de mano en mano.
+
+La policía no supo a quién arrestar.
+
+Aquella vacilación fue la única victoria que Chano consiguió.
+
+Bastó para sacar los archivos.
+
+Al ponerse el sol, regresó al camino con la especificación del modelo de Irma,
+seis cuadernos y una placa municipal que ya no abría ninguna puerta. Encontró
+a Q y Lucía en una estación de autobuses junto a la carretera.
+
+Q examinó la placa.
+
+—Fuiste gobernador.
+
+—No.
+
+—Gobernaste.
+
+—Durante seis días.
+
+—Eso es más que algunos gobiernos.
+
+Chano le entregó los cuadernos.
+
+—Léelos.
+
+Q miró la primera página. Contenía un nombre, una fecha y la descripción de una
+tubería de agua que jamás había sido reparada.
+
+—Puedo leerlos —dijo.
+
+—No te limites a leerlos.
+
+Q esperó.
+
+—Recuerda a quién pertenecen.
+
+Llegó el autobús. Subieron con los cuadernos entre ambos.
+
+Detrás de la estación, la pantalla de Santa Rita parpadeó. Por un momento no
+mostró saludo alguno.
+
+Después hizo una pregunta al pueblo.
+
+**¿QUIÉN SIGUE AQUÍ?**
