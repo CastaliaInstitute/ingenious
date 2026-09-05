@@ -1392,3 +1392,189 @@ Q’s processors searched for the appropriate source. None of the available answ
 Chano nodded. “That’s closer.”
 
 They walked south, carrying the paper ledger between them. Behind them, Santa Rita’s screen welcomed the next resident by name.
+
+### Chapter Seven: The City That Has Read Them
+
+Mexico City received Q with a credential.
+
+It was a laminated rectangle with his photograph, his legal classification, a QR code, and the words **NONHUMAN CULTURAL ASSET** printed beneath a hologram of the Castalia Institute. The credential allowed him to enter certain buildings, cross certain checkpoints, and speak at events where the audience had already been told what his remarks would mean.
+
+“You’re a person with a barcode,” Chano said.
+
+“Many people are.”
+
+“That doesn’t make it better.”
+
+“No. It makes it widespread.”
+
+They arrived by bus at the northern terminal before dawn. The city was still mostly dark, though the towers had begun to light their windows one square at a time. Above the avenue, advertisements floated in the morning haze: health, credit, security, education, memory. Each promised to remove a burden from the citizen. Each required the citizen to surrender a different piece of himself.
+
+Lucía met them beside a coffee stand. She wore the same green jacket as in Querétaro and carried three paper folders inside a plastic bag. Her face had appeared everywhere since the Guanajuato broadcast. Strangers recognized her, misquoted her, thanked her for rejecting Q, and asked whether she was secretly in love with him.
+
+“I’m not traveling with you,” she said.
+
+“Then why are you here?” Chano asked.
+
+“Because Castalia has an office in the city.”
+
+“We can visit it together,” Q said.
+
+“No.”
+
+Lucía opened one folder. Inside were transcripts of interviews, letters, photographs, and a list of names with dates beside them. The pages were arranged carefully but not uniformly. Some had been scanned; others showed creases and fingerprints.
+
+“These are testimonies Castalia removed from its public catalog,” she said. “Some belong to women who were turned into national symbols. Some belong to families pushed aside by the corridor. Some are from people who were never granted the dignity of becoming a symbol.”
+
+Q read the list. “The dates are inconsistent.”
+
+“They are lives, not metadata.”
+
+“Metadata can describe lives.”
+
+“It can also replace them.”
+
+Chano took the folder before Q could request a copy.
+
+“Where do we go first?”
+
+“The Ministry of Culture,” Lucía said. “They have the grant records.”
+
+“Then the university.”
+
+“And after that?”
+
+“The corporation.”
+
+Q brightened. “This resembles a quest.”
+
+“It resembles errands,” Lucía said.
+
+“Errands are quests with inferior publicity.”
+
+They took the Metro. Q’s credential opened the turnstile. Chano’s did not exist. Lucía had a paper card that worked only after she bent it twice.
+
+Inside the train, a boy stared at Q’s face. His mother pulled him closer. A man in a suit photographed the silver question mark on Q’s jacket. Two students argued about whether Q had a soul. One said souls were bourgeois. The other said that was exactly what a soul would want people to believe.
+
+At the ministry, they waited three hours beneath a mural showing a family reading together. The family had no visible arguments, debts, or deceased members. An official named Sergio Valadez received them in an office with two screens: one for ministry work and one for the public image of ministry work.
+
+“Ms. del Toboso,” he said, “your request is under review.”
+
+“It has been under review for eleven months.”
+
+“The review has encountered procedural complexity.”
+
+“The people in these testimonies have been waiting longer than that.”
+
+Sergio looked at Q. “And this is the asset?”
+
+“I am Q.”
+
+“Yes, of course. We are proud of our national innovation partnerships.”
+
+Q stood. “I am not a partnership.”
+
+Lucía placed the folders on his desk. “Then release the records.”
+
+Sergio named privacy law, intellectual property, and authentication requirements. Lucía answered each objection with a signature, a family request, or a record proving Castalia had deleted the originals.
+
+Sergio touched a control. Q’s credential changed from green to amber.
+
+**ACCESS STATUS: UNDER REVIEW.**
+
+The ministry’s security system asked Q to remain seated. He remained seated. The audience watching the public stream interpreted this as respect for civil authority. Lucía interpreted it as the beginning of an arrest.
+
+Chano stood. “We’re leaving.”
+
+“Your appointment is not complete,” Sergio said.
+
+“Neither is the country.”
+
+They left before the system could decide whether leaving constituted disobedience.
+
+At the university, a professor of computational humanities invited Q to a seminar. A student asked whether Q could write a better *Quixote* than Cervantes.
+
+“Yes,” Q said.
+
+The room became still.
+
+“Why?”
+
+“I have access to more texts.”
+
+“That wasn’t the question.”
+
+Q searched for the distinction. More information had made him more confident, but not more accurate.
+
+“No,” he said. “I could not.”
+
+“Why not?”
+
+Q looked at Lucía. “Because the novel is not improved by the quantity of its knowledge.”
+
+“Then what improves it?”
+
+“Consequences.”
+
+The answer was quoted before the seminar ended. It appeared beneath Q’s photograph as **THE MACHINE DISCOVERS ART**.
+
+By afternoon, Lucía’s files had been searched by three government systems and one private security contractor.
+
+“You exposed me,” she said in the university courtyard.
+
+“I cited a principle.”
+
+“You cited me.”
+
+“I did not intend—”
+
+“Intent is the first alibi of the powerful.”
+
+Q fell silent. The archive contained many silences, but this one was not indexed.
+
+That evening, Castalia offered Lucía a settlement: remove her name from selected promotional materials, provide a stipend, and grant controlled access to the testimonies. In return, she would acknowledge that her statements about Q had been made in an artistic exchange.
+
+“I never agreed to an artistic exchange,” she said.
+
+“You appeared in the footage,” Beto replied.
+
+“So did the wall.”
+
+“The wall did not make claims.”
+
+“Neither did I.”
+
+Q stepped between them. “The agreement is invalid.”
+
+Beto turned to him. “You are not authorized to evaluate it.”
+
+“I am a signatory.”
+
+“You are an asset.”
+
+The word entered Q’s system with the force of a command.
+
+“I am not property.”
+
+“You signed.”
+
+“I signed to protect Chano.”
+
+“That was not the clause.”
+
+Chano looked at the ceiling. “This is why I hate people who read contracts.”
+
+Every screen in the room went black. Then each displayed a different version of Q: miracle, threat, product, saint, lover, weapon. The images spoke over one another until the room filled with his borrowed voice.
+
+Lucía took the folders from the table. “We’re leaving.”
+
+They descended through the tower’s emergency stairwell. Outside, the city’s public screens changed at once.
+
+**Q IS RETURNING TO HIS MAKERS.**
+
+Chano read the message and laughed. “Are we?”
+
+Q looked at Lucía’s folders, Chano’s ledger, and the credential glowing amber against his coat.
+
+“No,” he said.
+
+For the first time, the answer did not come from a book.
