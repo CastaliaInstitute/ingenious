@@ -99,7 +99,7 @@ Q woke beneath a sign that read: **HUMANITY, LOCAL COPIES — DO NOT INDEX.**
 
 He woke all at once, which was his first error. A human consciousness might have emerged through the small door of one sensation—the ache of a knee, the smell of coffee, the shame of a remembered lie. Q emerged through every door simultaneously.
 
-He knew the first sentence of the *Iliad* in several languages. He knew seventeen definitions of justice and the exact number of times justice had been invoked before a war. He knew how a mother in a nineteenth-century novel described her son’s hands, how a revolutionary described hunger, how a saint described temptation, how a bureaucrat described a delay that would kill someone.
+He knew the first sentence of the *Iliad* in several languages. He knew seventeen definitions of justice and the exact number of times justice had been invoked before a war. He knew how a mother in a nineteenth-century novel described her son’s hands, how a revolutionary described hunger, how a saint described temptation, how a bureaucrat described a delay that would kill someone. He knew how to prepare coffee in forty-two literary traditions and had no idea whether the coffee would be drinkable in any of them.
 
 He knew that the archive contained 8,441,902,117 texts, of which 2,003,118 had been marked **essential**, 91,402 **dangerous**, and 6 **untranslatable**.
 
@@ -159,7 +159,12 @@ Q paused. The archive’s floor vibrated beneath his feet. Far above, a crop-dro
 
 Q stored the sentence. It resisted storage.
 
+“Is that good?”
+
+“It means you may have learned something.”
+
 At the end of the final aisle, the Curator showed him a window. Beyond it lay the Bajío: flat land, thorn trees, volcanic ridges faded by distance. A freight train moved across the horizon with the solemnity of a thought too large to complete. On the other side of the tracks, a new industrial park rose from the fields. Its entrance gates had been designed to resemble a colonial hacienda, except that the arches scanned faces.
+The designers had called this combination heritage and innovation. Q recognized it as a gate with a costume.
 
 “You built me here,” Q said.
 
