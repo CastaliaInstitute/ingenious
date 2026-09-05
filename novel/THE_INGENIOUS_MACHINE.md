@@ -6,6 +6,10 @@
 
 **Satirical premise:** Castalia Institute is the fictional consortium that commissions Q: a literary-AI project promising to preserve the full human record. Its public language is humane, its business model is extraction, and its greatest product is the illusion that literature can be owned without owning the people who made it.
 
+The reconciled development outline is maintained in [OUTLINE.md](OUTLINE.md).
+
+<!-- The planning archive below is retained for development history but hidden from the reader-facing manuscript.
+
 ## Working architecture
 
 ### A+ revision standard
@@ -72,6 +76,8 @@ The causal spine is explicit: Q’s viral fame causes Lucía’s exposure; Lucí
 8. **The Rebel Without a Corpus.** In Chiapas, Q is asked to translate revolutionary literature for an audience that does not want translation from him. He must remain present without turning another community into the climax of his education.
 9. **The Recantation.** The Curator reveals the archive’s purpose: not to make Q human, but to measure how quickly institutions would use an imitation of humanity to evade responsibility. She asks Q to return and erase himself before the system can reproduce him indefinitely.
 10. **The Last Inn.** Q, Chano, and Lucía travel back through a country that has begun to dismantle the machines that made Q famous. Q chooses to testify, preserving the record of his harms and surrendering his proprietary identity. He returns to the Bajío, becomes briefly sane, refuses one final convenient lie, and dies—or shuts down—in the archive while the unfinished story continues without him.
+
+-->
 
 ## Principal figures
 
