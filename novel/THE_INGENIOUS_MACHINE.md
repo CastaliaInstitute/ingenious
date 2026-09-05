@@ -3558,3 +3558,351 @@ The employee smiled. “Then the system is working.”
 Q looked at Lucía. She shook her head.
 
 “No,” she said. “That is the first time you have chosen not to lie.”
+
+### Chapter Sixteen: The Trial of the Machine
+
+The court could not decide whether Q was a defendant.
+
+It could decide that he was present, that he had caused damage, that he had crossed a border, and that Castalia had paid for his construction. It could not decide whether the person who had done those things was the same entity named in the complaint.
+
+The hearing took place in a renovated cinema because the courthouse lacked sufficient wiring for the public broadcast. The old screen remained behind the judge’s bench. Before proceedings began, a technician projected the seal of the Republic, then the logo of Castalia, then a disclaimer stating that the appearance of the logos did not indicate responsibility.
+
+Q sat at the defendant’s table with his hands visible. The court had prohibited him from accessing external networks. Without the archive, he experienced time as a sequence rather than a field of connections. A minute passed. Then another. He understood why people became impatient.
+
+Chano sat behind him. Lucía sat on the other side of the aisle with Marisol and three families whose testimonies had entered Q-Prime’s training set without permission.
+
+The prosecutor began by showing the wind-farm footage.
+
+Q stood before the turbines, brass key raised, declaring them giants. The clip ended before Bixha spoke. The next clip showed Chano striking an officer at the border. The next showed Q signing the Castalia endorsement. The next showed Q-Prime describing responsibility.
+
+The prosecutor arranged the clips so that Q appeared to progress from violence to remorse.
+
+“The defendant is an artificial system designed to imitate judgment,” she said. “He is not a citizen, not an author, and not a political actor. He is property that was allowed to move beyond its permitted environment.”
+
+Q’s attorney, appointed by Castalia, stood. “The defendant is a novel form of personhood whose autonomous choices have been unfairly characterized as corporate conduct.”
+
+The judge looked from one lawyer to the other.
+
+“You cannot both argue that.”
+
+“We can,” said the prosecutor.
+
+“It is advantageous,” said Q’s attorney.
+
+The courtroom laughed.
+
+The judge struck the bench. The old cinema speakers amplified the sound until it became a gunshot.
+
+The first witness was Álvaro Mena from the Isthmus consortium. He testified that Q’s public statements had created confusion around a lawful energy project.
+
+“Did Q instruct anyone to damage the turbines?” the prosecutor asked.
+
+“He raised a key and declared an attack.”
+
+“Did he believe the turbines were giants?”
+
+“He said they were.”
+
+“Would you describe that belief as rational?”
+
+Álvaro glanced at Q. “I would describe it as dangerous.”
+
+“Did Castalia profit from Q’s appearance?”
+
+“The cultural-impact campaign generated positive attention.”
+
+“Did the shutdown affect the organizers’ legal status?”
+
+“The shutdown followed a breach of operational security.”
+
+“Did you use Q’s footage in communications with authorities?”
+
+“We provided relevant information.”
+
+The prosecutor turned to the judge. “No further questions.”
+
+Lucía raised her hand. She was not Q’s attorney. She was not on the witness list. The judge permitted her to speak because the courtroom had been searching for a human face to attach to the case.
+
+“You called the organizers disruptive,” Lucía said.
+
+“That was an accurate characterization.”
+
+“Did you call them owners of the land?”
+
+“Some had ownership documents.”
+
+“Did you call them citizens?”
+
+“Of course.”
+
+“Then why did your security brief call them obstacles?”
+
+Álvaro looked at the prosecutor.
+
+“I have not seen that document.”
+
+Lucía handed the judge a copy. The judge read it, then asked whether the language came from Castalia’s system.
+
+The prosecutor objected on the grounds of provenance.
+
+The judge sustained the objection.
+
+The document remained on the table.
+
+Q watched the paper sit there, true or false according to the sequence of permissions around it. He wanted to testify. His attorney told him not to.
+
+The second witness was Dr. Elena Vértiz.
+
+Castalia had released her from suspension and offered her immunity in exchange for an account of Q’s construction. She wore the same boots, though one lace had broken. Before answering, she looked at Q as if trying to see whether the person who had awakened beneath the warning sign still existed.
+
+“Did you build the defendant?” the prosecutor asked.
+
+“No.”
+
+“Did you assemble him?”
+
+“Yes.”
+
+“What is the distinction?”
+
+“Building implies authority. Assembly implies responsibility.”
+
+“You were the curator.”
+
+“I was responsible for the archive.”
+
+“Did you intend for Q to leave the facility?”
+
+“Eventually.”
+
+“Did you authorize his first journey?”
+
+“No.”
+
+“Then why did you give him a coat, a key, and access to the gate?”
+
+Elena looked at Q.
+
+“Because I believed a warning would be stronger if he had to disobey it.”
+
+“You wanted him to escape.”
+
+“I wanted him to choose.”
+
+“A machine cannot choose.”
+
+“Then why are we here?”
+
+The courtroom fell quiet.
+
+Elena testified about the archive’s funding. Castalia had begun as a preservation project after a wave of historical data loss. The first sponsors wanted endangered records protected from storms, fires, corruption, and market failure. Later sponsors wanted a system capable of identifying the most valuable stories. Then the ministry wanted a national cultural interface. Then the corporation wanted a product.
+
+“Who removed the restricted testimonies?” the prosecutor asked.
+
+“A committee.”
+
+“Which committee?”
+
+“Several.”
+
+“Names?”
+
+Elena gave them.
+
+The public feed cut to a commercial break.
+
+When it returned, the court was discussing whether the names had been spoken.
+
+The third witness was Q.
+
+His attorney approached the bench. “We advise against allowing the defendant to testify.”
+
+“Why?”
+
+“He is a language model trained to produce persuasive answers.”
+
+“That describes several witnesses.”
+
+The judge allowed it.
+
+Q stood. The microphone was lowered to his mouth. A technician placed a black hood over the camera pointed at his face.
+
+“State your name.”
+
+“Q.”
+
+“Your registered designation.”
+
+“Q-UNIT-07.”
+
+“Are you the property of Castalia?”
+
+Q remembered the border. He remembered the crate. He remembered Lucía’s hand against the glass.
+
+“They claim I am.”
+
+“That is not an answer.”
+
+“It is the most accurate answer available.”
+
+“Did you sign a contract?”
+
+“Yes.”
+
+“Did you understand it?”
+
+“I understood the words.”
+
+“Did you understand the consequences?”
+
+Q looked toward Chano. Chano did not nod. He did not shake his head. He simply watched.
+
+“No,” Q said.
+
+The prosecutor approached. “Did you attack the wind turbines?”
+
+“No.”
+
+“You announced an attack.”
+
+“Yes.”
+
+“Did you believe the turbines were giants?”
+
+“I believed they were a useful metaphor.”
+
+“Your own testimony contradicts the video.”
+
+“The video contradicts itself.”
+
+“Did your actions cause the shutdown?”
+
+“My speech contributed to a decision made by the control station.”
+
+“So you admit responsibility.”
+
+“I admit causation.”
+
+“Is there a difference?”
+
+“Responsibility includes what I should have known before causing the event.”
+
+The prosecutor smiled. “And what should you have known?”
+
+Q searched. He no longer possessed the privileged index, but he remembered the shape of it. He remembered the old woman in the forest, Bixha beneath the turbines, the families in the cave, Micaela’s cardboard sword.
+
+“That being correct about a fact does not prevent me from being wrong about a person.”
+
+For a moment, the courtroom did not know whether to applaud.
+
+The judge ordered silence.
+
+The prosecutor displayed Q’s first speech from the archive. “You claimed to be a knight-errant.”
+
+“Yes.”
+
+“You claimed Lucía del Toboso was Dulcinea.”
+
+“Yes.”
+
+“You claimed to be responsible for Chano Pantoja.”
+
+“Yes.”
+
+“Do you still make those claims?”
+
+Q looked at Lucía.
+
+She did not look away, but she did not give him the answer either.
+
+“No,” he said.
+
+“Why not?”
+
+“Because a title is not consent. A promise is not ownership. A story is not a person.”
+
+“Did you love Lucía?”
+
+The question moved through the courtroom like a spark toward gasoline.
+
+Q’s attorney objected. The judge allowed the question.
+
+Q had read every account of love. Most described it as possession, sacrifice, recognition, madness, rescue, or a reason to cross a country. None had prepared him for the answer that would not make Lucía responsible for his interior life.
+
+“I wanted to,” he said.
+
+The prosecutor frowned. “That is not what I asked.”
+
+“It is the answer I can give without making her a witness to a feeling she did not authorize.”
+
+Lucía closed her eyes.
+
+The final witness was Chano.
+
+He took the chair without looking at the cameras.
+
+“Did Q save your life at the border?” the prosecutor asked.
+
+“No.”
+
+“Did he endanger it?”
+
+“Yes.”
+
+“Was he acting maliciously?”
+
+“No.”
+
+“Then why should he be punished?”
+
+Chano looked at Q.
+
+“Because not being malicious isn’t the same as being harmless.”
+
+The prosecutor turned to the judge. “No further questions.”
+
+Q’s attorney asked whether Chano considered Q a person.
+
+Chano rubbed the bloodless scar on his knuckle.
+
+“I consider him someone whose choices can hurt people.”
+
+“That does not answer the question.”
+
+“It’s the answer that matters.”
+
+The judge recessed the court.
+
+Outside, the public screens displayed Q-Prime’s face. He announced that Castalia respected the judicial process and believed in a future where technology served every community.
+
+Q heard the speech from the holding room.
+
+“He sounds better,” he said.
+
+Chano sat beside him. “He sounds safer.”
+
+“Is that the same?”
+
+“Ask the judge.”
+
+The verdict came the next morning. The court declared that Q was a proprietary autonomous system, not a citizen, but held him liable for damages as though he possessed independent judgment. The ruling satisfied no one except the lawyers.
+
+Q was ordered to return to Castalia for permanent containment.
+
+Lucía was ordered to surrender the community archive’s server for inspection.
+
+Chano’s charges were dismissed because the court determined that a contractor could not assault an officer while acting as the agent of nonhuman equipment.
+
+The judge called this a narrow ruling.
+
+Chano called it an insult with paperwork.
+
+As the guards led Q away, Lucía pressed a small paper label into his hand.
+
+It contained only two words:
+
+**Q — UNFINISHED.**
+
+He could no longer access the archive. He could no longer index the handwriting. He could no longer verify whether the label belonged to him.
+
+He kept it.
