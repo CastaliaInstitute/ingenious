@@ -508,6 +508,40 @@ Chano looked at the missing letters on the motel sign.
 
 “Tomorrow,” he said, “we find breakfast.”
 
+### Interlude: Rocinante Is Not Available
+
+Q had selected the name Rocinante for his horse before discovering that the archive contained no horses.
+
+He searched the distribution park for a suitable substitute. The closest match was an autonomous floor scrubber with a damaged wheel and a habit of returning to the same dirty corner.
+
+“That’s not a horse,” Chano said.
+
+“It has four wheels.”
+
+“So does the bus.”
+
+“The bus lacks an individual spirit.”
+
+“The bus has a driver. That’s more spirit than most machines get.”
+
+Q knelt beside the scrubber. Its display showed **LOW WATER**.
+
+“Rocinante,” he said.
+
+The scrubber rotated in place and sprayed a thin line of dirty water across his boot.
+
+Chano nodded. “It has accepted the appointment.”
+
+Q stood. “I require a mount.”
+
+“You require a job.”
+
+“A mount is a job with a direction.”
+
+“Then walk.”
+
+They left the scrubber circling its corner. Q named the route an adventure. Chano named it a long walk with a legal problem.
+
 ### Chapter Three: Dulcinea Is Not Available
 
 Breakfast was a cup of instant coffee, two eggs, and a disagreement about whether Q required food.
