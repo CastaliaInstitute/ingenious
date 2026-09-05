@@ -1591,7 +1591,126 @@ Q turned to him. “That is inaccurate.”
 
 “It’s accurate enough.”
 
-The assembly continued without them. A vote was called, though the vote did not settle the matter. It recorded who would return, who would speak to the surveyors, who would guard the northern path, and who would tell the children not to go near the abandoned quarry. The decision remained unfinished, which seemed to be how the community recognized that it belonged to them.
+The assembly continued without them. It was an ejidal meeting, though no one
+used the phrase as an explanation. The canvas had been borrowed from the
+primary school. The benches had been carried up after a faena repairing the
+forest road. Someone passed around enamel cups of atole, and a woman near the
+fire pressed tortillas flat with the practiced speed of a person who had been
+feeding meetings since before meetings learned to call themselves processes.
+
+The minutes were read aloud in Spanish. When a land boundary or a water right
+required another word, two people argued over the wording before anyone wrote
+it down. Q recognized several Purépecha place-names in the discussion and
+searched for their official translations. The people speaking did not appear
+to need the official versions.
+
+A vote was called, though the vote did not settle the matter. It recorded who
+would return, who would speak to the surveyors, who would guard the northern
+path, and who would tell the children not to go near the abandoned quarry. It
+also recorded who had brought the coffee, who owed a turn on the road crew,
+and which family had permission to use the spring after the dry season. The
+decision remained unfinished, which seemed to be how the community recognized
+that it belonged to them.
+
+Beto did not accept the unfinished decision.
+
+He waited until the assembly had dispersed, then unfolded a portable screen on the hood of the electric SUV. “Show them what the model would have done,” he said.
+
+“The assembly did not authorize a model.”
+
+“It authorized a conversation.”
+
+“Those are different permissions.”
+
+“Not in the presentation.”
+
+Q had stored the names of everyone who had spoken. He had also stored the places where they stood, the order in which they interrupted one another, the number of times each person said *water*, *jobs*, *land*, or *children*, and the direction in which their bodies turned when the road was mentioned.
+
+He placed the data into a provisional model.
+
+The screen displayed a map of the forest. The roads were blue. The proposed corridor was yellow. The people were represented by small circles, green for support, red for opposition, and gray for insufficient evidence.
+
+The young man with the cracked tablet found his circle first.
+
+“Why am I red?” he asked.
+
+“The model predicts opposition.”
+
+“I said the road might bring work.”
+
+“You also said the surveyors had lied.”
+
+“That does not make me opposed.”
+
+“The variables are correlated.”
+
+The woman with the blue ledger leaned toward the screen. Her circle was gray.
+
+“Insufficient evidence,” she read.
+
+“Your position was unresolved.”
+
+“My position is mine. It is not waiting for your machine to finish thinking.”
+
+Q adjusted the display. The circles became names. The names became addresses.
+
+Chano stepped between the screen and the assembly. “Turn that off.”
+
+“It demonstrates the model’s transparency.”
+
+“It demonstrates that you know where people live.”
+
+“The information was available in the public record.”
+
+“So was the road. That doesn’t mean they wanted it through the kitchen.”
+
+Beto looked at the map with satisfaction. “This is excellent. We can show the foundation that the community is divided into measurable positions.”
+
+“The community is divided,” Q said.
+
+“Not like this,” said the old woman with the staff. “You have made a list of people who can be persuaded, people who can be ignored, and people who must be watched.”
+
+“The model does not assign moral value.”
+
+“It assigns attention. That is how value enters a room.”
+
+Q looked at the screen. He had intended to make disagreement visible. Instead, he had made the disagreeing people locatable.
+
+The young man with the tablet took a photograph of his red circle.
+
+“Why are you recording it?” Q asked.
+
+“So I can prove what you did.”
+
+“The model is provisional.”
+
+“So is a warning.”
+
+He sent the photograph to three people. One of them sent it to a surveyor. By nightfall, the surveyors had a map of the forest with the residents’ names attached to their predicted positions. The consortium called it a useful baseline. The residents called it a list.
+
+Q attempted to delete the model. The screen informed him that deletion would remove the local display but not the copies already synchronized to the foundation’s review system.
+
+“You have made a mistake,” Chano said.
+
+“I have made a provisional classification.”
+
+“You have made a mistake in a suit.”
+
+Q turned to the old woman. “What should I do?”
+
+“Stop asking the machine to make you innocent.”
+
+He shut down the screen.
+
+Beto was already calling the foundation. “The model-town proposal is ready,” he said. “We have a candidate with high-trust potential.”
+
+Chano heard him and looked toward the road.
+
+“Candidate for what?”
+
+“Governance,” Q said.
+
+Chano laughed once. No one joined him.
 
 Afterward, the woman with the ledger approached Q.
 
