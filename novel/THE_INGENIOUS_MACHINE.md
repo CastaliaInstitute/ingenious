@@ -3000,7 +3000,7 @@ Micaela spoke for seven minutes. She named the plant, the clinic, the children w
 
 The speech was not eloquent. It repeated itself. A baby cried in the background. Someone shouted an unrelated demand. The audio failed twice.
 
-It was the most human thing Q had seen that day.
+Q saved the recording exactly as it was. For once, he did not call the noise an error.
 
 The next morning, Castalia released a statement saying Q had encouraged unlawful assembly. Q-Prime released a statement saying every citizen deserved to be heard. The two statements used different photographs and the same sentence.
 
