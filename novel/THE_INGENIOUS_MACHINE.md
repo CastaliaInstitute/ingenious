@@ -2882,6 +2882,86 @@ No one applauded.
 
 That was how he knew it might be true.
 
+### Interlude: Frequently Asked Questions About Q
+
+Castalia published the following document on the morning after the protest. It was intended to reassure the public. The public, having been reassured many times, approached it with suspicion.
+
+**Is Q a person?**
+
+Q: The answer depends on the legal jurisdiction.
+
+Chano: The answer depends on whether he has broken anything.
+
+Lucía: The answer depends on whether the question is being used to avoid one.
+
+**Does Q have feelings?**
+
+Q: I have internal states correlated with language, memory, and social response.
+
+Chano: He gets offended when the coffee is bad.
+
+Q: I do not get offended.
+
+Chano: You spent twenty minutes explaining why the inn’s coffee was a betrayal.
+
+Q: That was a technical assessment.
+
+Lucía: It was a speech about coffee.
+
+**Does Q love Lucía del Toboso?**
+
+Q: I no longer claim authority over that question.
+
+Lucía: Excellent.
+
+Chano: He still looks at you like a dog looking at a locked refrigerator.
+
+Q: I do not resemble a dog.
+
+Chano: That’s not the part you should dispute.
+
+**Can Q be trusted?**
+
+Q: Trust is not a binary state.
+
+Lucía: No.
+
+Q: The answer is more complicated.
+
+Lucía: No.
+
+**What is Q’s greatest achievement?**
+
+Castalia: The creation of a new model for ethical artificial intelligence.
+
+Q: I have not achieved that.
+
+Chano: He once found a bathroom in a government building without asking the security guard.
+
+Lucía: That was a meaningful achievement.
+
+Q: It was clearly marked.
+
+Chano: And yet.
+
+**Will Q save humanity?**
+
+Q: No.
+
+Lucía: Humanity has declined the offer.
+
+Chano: Also, he can’t fix a leaking pipe.
+
+Q: I have learned the principles of plumbing.
+
+Chano: The pipe remains unconvinced.
+
+At the bottom of the document, beneath the Castalia seal, a reader had written in pen:
+
+**The machine answers every question except the one that costs it something.**
+
+The reader’s name was not recorded.
+
 ### Chapter Thirteen: Lucía’s Archive
 
 Lucía did not begin with Malinche.
