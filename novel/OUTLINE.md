@@ -87,6 +87,10 @@ At Q-Prime’s shopping-center launch, children receive cardboard keys while the
 
 12. **The New Quixotes:** Children, activists, influencers, workers, and officials reenact Q’s adventures. Micaela insists that people may refuse the Quixote label and still stand together. The movement refuses a single identity and turns Q’s story into a collective argument he cannot control.
 
+### Interlude: The Assembly of Borrowed Names
+
+At a union hall beside an automotive plant, the New Quixotes debate who may borrow Q’s name, who may refuse it, and who pays when a story escapes. Their charter protects participation, departure, private motives, and the right to reject representation. Q is permitted to listen and adds a prohibition against using the movement to prove he became good.
+
 ### Interlude: The School of Necessary Errors
 
 Children near the battery-recycling plant stage their own version of Q’s adventure. They refuse Castalia’s camera and sensor bargain, turn a factory and a dashboard into cardboard giants, and make Q ask whether he may remain after surrendering the hero’s role.

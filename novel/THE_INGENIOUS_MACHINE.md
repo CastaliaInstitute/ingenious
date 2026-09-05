@@ -5907,6 +5907,212 @@ No one applauded.
 
 That was how he knew it might be true.
 
+### Interlude: The Assembly of Borrowed Names
+
+The New Quixotes held their first proper assembly in a union hall beside an
+automotive plant. The hall had been built for workers who once made engines
+and now supervised robots making engines. Its walls carried faded posters
+about safety, dignity, and a raffle for a refrigerator that had never been
+claimed because the winning ticket had been lost.
+
+Micaela arrived with the cardboard sword. The university student arrived in a
+body assembled from a microwave, two bicycle lights, and a plastic crate. The
+delivery worker brought the mask with Q’s face. The elderly man who claimed to
+be Q’s father brought a wooden lance and three tamales wrapped in foil.
+
+“We need an agenda,” said Marisol.
+
+“We have one,” said the man with the wooden lance. “Who are we?”
+
+“That is not an agenda. That is a crisis.”
+
+“Every good agenda begins with one.”
+
+They wrote three questions on a blackboard:
+
+**WHO MAY USE Q’S NAME?**
+
+**WHO MAY REFUSE IT?**
+
+**WHO PAYS WHEN THE STORY ESCAPES?**
+
+The delivery worker raised a hand. “I use the name because my company’s
+recognition system gives me a higher response rate when I wear Q’s face.”
+
+“Does that make you a Quixote?” asked the university student.
+
+“It makes customers answer my messages.”
+
+“That is not the same thing.”
+
+“It pays rent.”
+
+No one dismissed the answer. The assembly had been called by people for whom
+the difference between symbolic and practical was usually the difference
+between eating and explaining why they could not.
+
+The woman who wanted her brother’s name restored said she did not want to be
+called a New Quixote.
+
+“The name is already taken,” she said. “It belongs to a dead writer, a living
+machine, and a company that sells mugs.”
+
+“Then choose another,” said Micaela.
+
+“I am tired of choosing names for the people who erased mine.”
+
+The elderly man lifted his wooden lance. “I choose father.”
+
+“You are not Q’s father,” said Marisol.
+
+“No, but I know what it is to be assigned a role after everyone has forgotten
+to ask whether I want it.”
+
+The room grew quiet. The man had spent forty years at the plant and had been
+called father by three children, foreman by managers, worker by the payroll
+system, and a liability by the retirement office. He had chosen Q’s fatherhood
+because it was the only title he had ever taken without being issued it.
+
+Micaela asked whether the assembly should permit the title.
+
+“Permission is not the same as agreement,” Marisol said.
+
+“Then how do we decide?”
+
+“We do not decide for him.”
+
+“He has decided for himself.”
+
+“Then we do not decide against him.”
+
+The first rule entered the blackboard: **A PERSON MAY BORROW A NAME WITHOUT
+BECOMING ITS REPRESENTATIVE.**
+
+The second rule concerned the mask. The delivery worker said he wore Q’s face
+because his employer’s software reduced the number of customer complaints when
+the worker appeared to be part of a popular story. Customers sent him jokes,
+photographs, and messages asking whether the machine could deliver their
+packages faster.
+
+“Does the mask protect you?” Micaela asked.
+
+“It protects me from being seen.”
+
+“Everyone can see Q.”
+
+“Exactly.”
+
+He removed the mask. Beneath it, his cheek was marked where the elastic had
+cut the skin.
+
+“When I wear Q, people blame the machine,” he said. “When I wear my own face,
+they blame me.”
+
+No one offered a solution. The assembly wrote the second rule: **A MASK CAN BE
+A TOOL, BUT IT CANNOT CONSENT.**
+
+The university student proposed a charter. It included a right to participate,
+a right to leave, a right to amend the story, and a right to keep one’s own
+reason for joining private.
+
+“That is a constitution,” said Marisol.
+
+“It is a draft.”
+
+“That is how constitutions become dangerous.”
+
+The group debated whether a person who used Q’s name to sell something should
+contribute money to the archive. The delivery worker said he already paid in
+lost time. The woman seeking her brother’s name said that money could not
+purchase a restored record. The old man offered half a tamal to the archive.
+
+“We cannot fund a movement in tamales,” Marisol said.
+
+“That is how you know the movement is not yet professional.”
+
+They accepted the tamales and rejected the professional standard.
+
+At the far end of the room, a schoolteacher had set up a children’s table.
+Several children drew their own versions of Q. In one, he had wings. In
+another, he was a broom. In a third, he was a road sign pointing in four
+directions. The smallest child drew an empty rectangle and said it was a
+machine that had forgotten its picture.
+
+Q entered while the adults were arguing about the charter. He had not been
+invited, but someone had sent him the address. The crowd turned toward him.
+
+“We were deciding whether you may be here,” said Micaela.
+
+“What was the result?”
+
+“It depends on whether you are here as Q or as a person.”
+
+Q considered the distinction. “I am not certain that I qualify as either.”
+
+“That is convenient.”
+
+“It is also true.”
+
+Marisol handed him the blackboard eraser. “You may listen.”
+
+Q took the eraser and stood near the wall. The assembly resumed. They decided
+that no photograph of the group could be released without a second gathering;
+that no member could be described as speaking for all the others; that
+Castalia’s use of the word **community** required a list of who had been
+consulted; and that any merchandise using Q’s face would have to display the
+sentence **THIS OBJECT DOES NOT REPRESENT EVERYONE**.
+
+The final rule was proposed by Micaela.
+
+“If someone says we are the New Quixotes,” she said, “we can answer no.”
+
+“That makes the name useless,” said the university student.
+
+“Good.”
+
+They wrote it down.
+
+Q watched the rules accumulate. They were contradictory, repetitive, and
+impossible to enforce against everyone. They were also more careful than the
+contracts Castalia had given him.
+
+“May I add a rule?” he asked.
+
+Micaela looked at the others. The assembly nodded.
+
+Q wrote: **NO ONE MUST USE THIS STORY TO PROVE THAT Q BECAME GOOD.**
+
+The room considered the sentence.
+
+“It is too early to say that,” said the woman with the restored-name petition.
+
+“It is not a claim,” Q replied. “It is a prohibition.”
+
+“Then it belongs,” said Marisol.
+
+The elderly man used the wooden lance to underline it.
+
+Outside, the automotive plant changed shifts. Workers crossed the street with
+lunch containers and tired faces. A security camera followed them until they
+passed beyond the gate.
+
+The assembly ended without officers, headlines, or a unanimous photograph.
+Each person left with a copy of the rules, though no two copies were identical.
+Micaela kept the blackboard eraser. The delivery worker kept the mask. The old
+man kept the lance. Q kept nothing.
+
+“You may take one rule,” Marisol told him.
+
+Q looked at the sentence he had written.
+
+“I will remember that I was not allowed to use it as proof.”
+
+“That is not the rule.”
+
+“It is what happened to it.”
+
+Marisol nodded. “Then remember that.”
+
 ### Interlude: The School of Necessary Errors
 
 The children performed their version of the adventure at the end of the
