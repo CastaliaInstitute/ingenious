@@ -1988,6 +1988,18 @@ Q glanced at Lucía. She did not rescue him.
 
 Mateo opened a folder. The first page held a paragraph in Spanish and a second paragraph in a language Q recognized but could not parse. It was not absent from his corpus. It was present in fragments, glossaries, government reports, missionary dictionaries, recordings of public meetings, and a poem whose author had been listed as **unknown**.
 
+Mateo named the language Tsotsil. Q found the word in the archive and attached to it every available spelling, classification, and dispute over classification.
+
+“The archive calls that coverage,” Q said.
+
+“Coverage is what a roof does,” Mateo replied.
+
+Q looked up at the leaking ceiling.
+
+“Then this roof has failed.”
+
+“Now you are translating.”
+
 Q assembled the fragments.
 
 “I can produce a probable translation,” he said.
