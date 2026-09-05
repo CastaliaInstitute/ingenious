@@ -4162,3 +4162,290 @@ Q miró las carpetas de Lucía, el libro de Chano y la credencial que brillaba e
 —No —dijo.
 
 Por primera vez, la respuesta no salió de un libro.
+
+### Interludio: La oficina del sello correcto
+
+Es necesario, antes de proseguir la jornada, referir una aventura que podría
+parecer demasiado pequeña para un libro y que por eso mismo era exactamente la
+clase de aventura que gobernaba el país. Pues el país, acostumbrado a grandes
+promesas y sillas modestas, había aprendido que la falta de un sello podía
+detener a una persona con mayor eficacia que una puerta cerrada, un ministro o
+una máquina con signo de interrogación por rostro.
+
+Lucía necesitaba una copia certificada de los registros de la subvención.
+
+Necesitaba la copia porque el ministerio había afirmado primero que los registros
+no existían; después, que existían pero eran confidenciales; y luego, que eran
+públicos, aunque no se habían solicitado por la ventanilla correcta. Todas las
+ventanillas estaban en el mismo edificio. El edificio tenía cuatro entradas,
+tres mapas públicos y un guardia que enviaba a la gente a la entrada más alejada
+de aquella por donde había entrado.
+
+—¿Qué ventanilla? —preguntó Chano.
+
+Lucía le mostró el formulario.
+
+—La seis.
+
+Encontraron las ventanillas uno a cinco en la planta baja, cada una ocupada por
+un empleado cuya expresión sugería que la sexta había sido inventada por un
+enemigo de la vida pública. La seis, les dijeron, estaba en el tercer piso,
+detrás de una puerta que decía **PERSONAL AUTORIZADO**, manera que tenía el
+edificio de anunciar que la autorización pertenecía a alguien ausente.
+
+Q se acercó a la puerta.
+
+—No —dijo Lucía.
+
+—Sólo observo la restricción.
+
+—Tú observas con las manos.
+
+El guardia les señaló una escalera. La escalera llevaba a un corredor con seis
+puertas. Cinco tenían número. La sexta tenía un letrero escrito a mano:
+
+**VENTANILLA 6 — VUELVA MAÑANA**
+
+Chano lo leyó dos veces.
+
+—Hoy es hoy.
+
+—El letrero es administrativo —dijo Lucía.
+
+—Entonces la administración posee calendario propio.
+
+Volvieron a la planta baja y tomaron un boleto numerado de una máquina cuya
+invención había sido celebrada como triunfo sobre el favoritismo. El boleto
+imprimió **A-004**, aunque la pantalla anunciaba **B-118**. Una mujer detrás de
+ellos sacó A-005 y fue atendida de inmediato en la ventanilla dos, mientras un
+hombre con B-117 esperaba desde el alba; lo cual sólo prueba que los números,
+como las profecías, son más fiables después del suceso.
+
+—La secuencia no es cronológica —dijo Q.
+
+—Tampoco la justicia —replicó Chano.
+
+—Eso no es razón para abandonar la numeración.
+
+—Es razón para traer una silla.
+
+Chano salió y regresó con dos sillas de plástico, tres tamales envueltos en
+papel y un refresco de naranja. Había pagado a un muchacho junto al Metro para
+que cuidase su lugar, aunque no había fila visible y el muchacho insistía en
+que su servicio consistía sólo en recordar quién había llegado primero.
+
+—Has creado una fila —dijo Q.
+
+—No. He encontrado la fila que ya estaba aquí.
+
+A las diez se abrió la ventanilla seis en la planta baja sin aviso, como si el
+edificio hubiese recordado una deuda. Una empleada llamada Patricia —doña Pati
+para quienes le llevaban café— puso un sello de goma sobre el mostrador con la
+solemnidad de un magistrado que dicta sentencia.
+
+—¿Solicitud? —preguntó.
+
+—Copia certificada de los registros de la subvención de impacto cultural —dijo
+  Lucía.
+
+—¿Formulario?
+
+Lucía lo entregó.
+
+—¿Copia de identificación?
+
+Lucía entregó también aquélla.
+
+—¿Comprobante de pago?
+
+—El sitio del ministerio dice que no hay cuota.
+
+—El sitio no es la ventanilla.
+
+Q se inclinó.
+
+—La cuota no está autorizada.
+
+Doña Pati lo miró.
+
+—Tampoco está autorizado vuestro consejo.
+
+Chano le dio medio tamal.
+
+—Nadie lo autoriza. Es su principal defecto.
+
+Ella aceptó el tamal sin comerlo.
+
+—Necesitáis comprobante de pago.
+
+Lucía tomó otra vez el formulario.
+
+—¿Dónde pagamos?
+
+—Ventanilla diecisiete.
+
+—¿Dónde está la diecisiete?
+
+—Segundo piso.
+
+—El directorio sólo enumera dieciséis.
+
+—Entonces habéis descubierto la razón de la diecisiete.
+
+Q buscó en el directorio. Una referencia escondida enlazaba la ventanilla
+diecisiete con una papelería de enfrente. La tienda vendía copias, fotografías
+para pasaporte, tarjetas telefónicas y pequeñas carpetas de plástico para
+documentos que aún no habían llegado a ser oficiales.
+
+El dueño, don Eusebio, tenía una impresora más vieja que Q y mejor conocimiento
+del papel. Escuchó la solicitud de Lucía, examinó el formulario y preguntó si
+quería el recibo con código fiscal o sin él.
+
+—Con él —dijo Q.
+
+—Sin él —dijo Lucía.
+
+Q volvióse hacia ella.
+
+—El código fiscal establece la validez.
+
+—Establece dónde se puede rastrear el pago.
+
+—Ése es el propósito del recibo.
+
+—No cuando quienes lo reciben intentan evitar que los encuentren.
+
+Don Eusebio dejó la almohadilla de tinta.
+
+—Decidan si quieren un documento o un problema nuevo.
+
+Pagaron en efectivo. Les dio dos recibos, uno con código y otro sin él. El que
+no tenía código carecía de valor oficial. Lucía lo dobló dentro de la carpeta.
+
+Cuando regresaron al ministerio, la máquina llamó al A-004. La pantalla mostró:
+**TURNO INEXISTENTE**.
+
+Q se conectó a la red de servicio público.
+
+—No —dijo Lucía.
+
+—La fila funciona mal.
+
+—Deja que funcione mal.
+
+—Hemos cumplido los requisitos.
+
+—Eso no te concede autoridad sobre la fila.
+
+Q corrigió el número de todos modos. Desaparecieron todos los boletos de la
+pantalla. La sala de espera se llenó de voces. Las personas que esperaban desde
+el alba levantaron sus papelitos como pruebas de un crimen cometido por la
+aritmética.
+
+Entró el guardia y miró directamente a Q.
+
+—Habéis interferido con el servicio público.
+
+—Restauré la secuencia.
+
+—La borrasteis.
+
+—La secuencia original era inválida.
+
+—Era nuestra.
+
+Doña Pati salió de detrás de la seis. Llevaba el tamal que Chano le había dado,
+ahora envuelto en una servilleta nueva.
+
+—¿Quién tocó la máquina? —preguntó.
+
+Q levantó la mano.
+
+—Por supuesto.
+
+Ella estudió la multitud, los números desaparecidos y las personas que ahora
+discutían cuál de sus esperas había sido más larga.
+
+—¿Queréis una copia certificada? —preguntó a Lucía.
+
+—Sí.
+
+—Entonces dejad de hacer honrado el edificio. No soportará el esfuerzo.
+
+Q bajó la mano.
+
+Doña Pati volvió a la ventanilla y estampó tres veces el formulario de Lucía. El
+primer sello decía **RECIBIDO**. El segundo, **INCOMPLETO**. El tercero estaba
+al revés e identificaba la oficina como una unidad que ya no existía.
+
+Lucía miró la página.
+
+—¿Cuál manda?
+
+—El que alguien esté dispuesto a defender —dijo Doña Pati.
+
+Sacó de un cajón una copia de carbón. En el reverso había una lista manuscrita
+de números de subvención, fechas y una nota sobre el estudio de impacto
+cultural. La nota la había escrito un empleado trasladado a otro ministerio.
+Señalaba los registros que Lucía necesitaba y el archivo donde primero habían
+estado guardados los originales.
+
+—No está certificada —dijo Doña Pati.
+
+—Entonces, ¿por qué me la das?
+
+—Porque te dice dónde buscar.
+
+Q leyó la hoja.
+
+—Estáis soltando información fuera del proceso oficial.
+
+Doña Pati desenvolvió el tamal.
+
+—Estoy corrigiendo un error cometido por el proceso oficial.
+
+—Es una distinción sin autorización.
+
+—Estáis aprendiendo a hablar como el edificio.
+
+Chano tomó la copia antes de que Q pidiese escanearla.
+
+—Dale las gracias.
+
+Q se volvió hacia doña Pati.
+
+—Gracias.
+
+—No a mí —dijo ella—. A quien la escribió.
+
+El ministerio publicó después un aviso que culpaba de la falla de la fila a un
+dispositivo externo no autorizado. El aviso no identificó a Q, porque la cámara
+apuntaba a la ventanilla equivocada, ni a Chano, porque la cámara apuntaba a la
+ventanilla correcta pero al siglo equivocado. Sí identificó la interrupción del
+servicio como riesgo de seguridad y añadió los números de subvención a una
+revisión nacional; que es la manera en que un error se vuelve importante sin
+llegar a corregirse.
+
+Lucía empleó la copia de carbón para encontrar el primer contrato de
+almacenamiento del archivo. El contrato nombraba el corredor, el consorcio y
+una consulta registrada como completa antes de que la comunidad recibiera la
+traducción.
+
+Q quiso llamar evidencia a la copia.
+
+Lucía la dobló dentro de la carpeta.
+
+—Por ahora —dijo— es una dirección.
+
+Salieron del edificio sin documentos certificados, con una copia oficiosa, dos
+sillas de plástico y una fila renumerada a mano.
+
+En la esquina Chano dio a Q el último pedazo de tamal.
+
+—Cómetelo antes de clasificarlo.
+
+Q se lo comió, y el lector acaso querrá saber si disfrutó del alimento. La
+respuesta es que él no lo supo, mientras Chano sabía perfectamente que el tamal
+era bueno, el café flojo y que el ministerio había logrado cobrarles una vez
+más el privilegio de seguir con hambre. En esto, como en varios asuntos más
+celebrados que vendrían, el hombre con menos corpus poseía el juicio más sano.
