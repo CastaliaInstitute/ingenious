@@ -4369,6 +4369,209 @@ No one applauded.
 
 That was how he knew it might be true.
 
+### Interlude: The School of Necessary Errors
+
+The children performed their version of the adventure at the end of the
+school year, after the flag ceremony and before the kermés, when the parents
+were still willing to sit in plastic chairs and the microphones had not yet
+been claimed by the raffle committee.
+
+The school stood three streets from the battery-recycling plant. On windy days,
+the smell crossed the playground before the first bell. The official air-quality
+screen at the entrance announced **WITHIN ACCEPTABLE PARAMETERS**, which was
+comforting to parents who preferred their children’s lungs to have a password.
+
+Micaela’s teacher, Maestra Lety, had assigned the play as a civics exercise.
+She had not assigned Q. The children had added him because the school had
+received a packet of Castalia worksheets entitled **LEARNING THROUGH HEROIC
+INNOVATION**, and the worksheets contained a coloring page of a machine with a
+cape.
+
+“The play cannot be about whether Q is good or bad,” Maestra Lety said.
+
+“It can be about whether he is annoying,” said Micaela.
+
+“That is not a civic category.”
+
+“It should be.”
+
+The children voted. Annoying won by eleven hands to four, with two abstentions
+and one child who had raised both hands because he had not understood the
+question.
+
+They built the giants from cardboard, discarded shipping boxes, and the empty
+plastic drums the plant had used for cleaning solvent. One giant represented
+the factory. Another represented the air-quality dashboard. A third represented
+the school itself, because Maestra Lety had said that institutions should be
+able to recognize their own part in a problem.
+
+The boy playing Q wore a helmet made from a cooking-oil container. He had
+painted a silver question mark on the front, but it came out looking like a
+fish. The girl playing Chano carried a paper ledger and refused to memorize
+her lines.
+
+“Why won’t you learn the script?” Micaela asked.
+
+“Because Chano doesn’t know what he’ll say until Q has already done it.”
+
+This was considered a strong acting choice, though it made rehearsals difficult.
+
+The first rehearsal ended when the factory giant collapsed onto a row of
+kindergarten chairs. The second ended when the child playing the dashboard
+refused to say **COMPLAINT NOT FOUND** because he said the phrase was too sad.
+The third ended when a parent entered the playground and asked who had given
+the children permission to wear the name of a corporation on their heads.
+
+“It’s not the corporation’s name,” Micaela said.
+
+“It’s Q.”
+
+“That’s what the corporation says.”
+
+The parent looked at the painted fish on the cooking-oil helmet.
+
+“Then paint something else.”
+
+The children painted a question mark over the fish. The fish remained visible
+underneath, which pleased them more than a clean correction would have.
+
+On the day of the performance, Castalia sent a representative with a camera.
+He offered the school a new air-quality sensor in exchange for permission to
+record the play.
+
+Maestra Lety called a meeting in the classroom. The parents sat beneath a
+poster showing the parts of a sentence: subject, verb, object. Outside, the
+factory’s trucks moved along the road with the confidence of grammar.
+
+“The sensor would help us,” said the principal.
+
+“The camera would help them,” said a father.
+
+“It could be both,” said Micaela’s mother.
+
+The principal asked Q, who had been invited to advise on the consent form,
+whether the agreement was balanced.
+
+Q read the form. It allowed Castalia to record the children, reproduce their
+voices, alter the performance for length, distribute excerpts for educational
+purposes, and retain the material indefinitely. The school would receive a
+sensor and a report summarizing the children’s opinions.
+
+“The exchange is unequal,” Q said.
+
+The representative smiled. “The children are not providing data. They are
+participating in a cultural activity.”
+
+Q recognized the distinction. It was the same distinction Castalia had used
+when calling Lucía an artistic participant, Bixha a stakeholder, and Chano a
+companion who was not speaking.
+
+“The performance is data if you intend to keep it,” he said.
+
+The representative’s smile vanished.
+
+Q felt a pulse of satisfaction. He had identified the trick. He had not yet
+identified what to do with the power of identification.
+
+“Can we refuse the camera and keep the sensor?” Micaela’s mother asked.
+
+Q searched the form. “The offer does not permit that.”
+
+“Then we refuse the offer.”
+
+The principal looked at the air-quality screen. “We need the sensor.”
+
+“You need clean air,” said the father.
+
+“The sensor is how we prove whether we have it.”
+
+“No,” said Micaela’s mother. “The sensor is how they prove what they want to
+say about it.”
+
+Maestra Lety took the form and folded it in half.
+
+“The play will go on,” she said. “No camera.”
+
+Castalia withdrew the sensor. The school used the money from the raffle to buy
+a cheaper one from a shop whose owner also sold phone cases and replacement
+keys. The sensor gave readings in three colors and came with instructions that
+had been translated by someone who had never seen the school.
+
+It was not sufficient. It was theirs.
+
+The play began.
+
+The boy playing Q entered on a broomstick because there was no horse. He
+announced that the factory was a giant. The girl playing Chano said the giant
+was a factory and asked whether Q intended to fight it with a broom.
+
+Q said he intended to publish a statement.
+
+The audience laughed.
+
+The factory giant rose. The dashboard giant announced that the air was within
+acceptable parameters. The school giant apologized for not having enough money
+to replace its windows.
+
+Then Micaela entered as herself. She carried the cardboard sign from the
+butterfly footage. On its reverse, the children had written the names of the
+people who had missed school because of headaches, the dates when the smell
+was worst, and the names of the adults who had asked the plant for an answer.
+
+“This is not your story,” she told Q.
+
+The boy playing Q looked at Maestra Lety. He had forgotten his next line.
+
+Micaela waited.
+
+The audience waited.
+
+Finally, the boy said, “Then what am I doing in it?”
+
+Micaela turned the sign around. The back was blank except for one sentence:
+
+**ASK BEFORE YOU ENTER.**
+
+“You’re asking now,” she said.
+
+The boy nodded. “May I stay?”
+
+Micaela considered him. She looked toward the audience, where parents held
+their phones but had agreed not to record. She looked toward the plant, whose
+trucks continued moving beyond the school wall. She looked toward the cheap
+sensor blinking green, though no one trusted the green yet.
+
+“You may stay if you stop being the hero.”
+
+The boy removed the cooking-oil helmet. Beneath it, his hair was wet with
+sweat.
+
+“What should I be?”
+
+“A witness who carries chairs.”
+
+He picked up the fallen school giant.
+
+The performance ended without a bow. The children stood in a line and read the
+names from the sign. Some names were repeated. One was mispronounced. The
+family corrected the pronunciation from the audience, and the child read it
+again.
+
+No one applauded until the list was finished.
+
+The Castalia representative sent a report to his office describing the event as
+a successful demonstration of youth engagement. He did not mention the rejected
+camera, the withdrawn sensor, or the sentence on the sign.
+
+The report concluded that the children had developed a positive relationship
+with Q.
+
+Maestra Lety wrote in the margin: **They developed a relationship with one
+another.**
+
+She did not send the correction. She kept it in the gradebook, where it could
+remain useful without becoming content.
+
 ### Interlude: Frequently Asked Questions About Q
 
 Castalia published the following document on the morning after the protest. It was intended to reassure the public. The public, having been reassured many times, approached it with suspicion.

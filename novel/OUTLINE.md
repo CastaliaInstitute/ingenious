@@ -62,6 +62,10 @@ Chano and Lucía endure the garita’s paperwork after Q is taken. A woman’s f
 11. **The Second Author:** Castalia releases Q-Prime, a sanitized version of Q’s journey. Q endorses the copy under coercion, then refuses to let its continuity erase the harms produced by the original.
 12. **The New Quixotes:** Children, activists, influencers, workers, and officials reenact Q’s adventures. Micaela insists that people may refuse the Quixote label and still stand together. The movement refuses a single identity and turns Q’s story into a collective argument he cannot control.
 
+### Interlude: The School of Necessary Errors
+
+Children near the battery-recycling plant stage their own version of Q’s adventure. They refuse Castalia’s camera and sensor bargain, turn a factory and a dashboard into cardboard giants, and make Q ask whether he may remain after surrendering the hero’s role.
+
 ### Interlude: Frequently Asked Questions About Q
 
 Castalia’s official answers are interrupted by Q, Chano, and Lucía, exposing the difference between a public-relations response and an answer that costs something. An unnamed witness’s competing account of Q’s first sally, supported by a water-bottle receipt, is omitted from the next edition; its blank replacement page becomes the most reproduced page. The institute’s name becomes another case study in branding extraction as literary prestige.
