@@ -13057,3 +13057,654 @@ más. Si Q había renunciado verdaderamente a su pretensión de autoría, ¿qui�
 decidiría qué fragmento pertenecía al final?
 
 La respuesta quedó aplazada.
+
+### Capítulo vigésimo segundo: La máquina ingeniosa
+
+Los golpes bajo el archivo continuaron.
+
+Llegaban a intervalos regulares: tres golpes, una pausa, dos golpes y después
+silencio. El sonido viajaba por el suelo y subía por las paredes. No era fuerte.
+No lo necesitaba. Todos en el aposento blanco lo oían.
+
+Q buscó en la memoria que le quedaba una explicación.
+
+Encontró una puerta bajo el observatorio, un corredor detrás del corpus
+restringido, una caja de metal negro y una serie de instrucciones escritas por
+una mano que ya no podía identificar. Las conexiones entre unas cosas y otras
+se habían vuelto inciertas. El antiguo mapa del archivo aparecía por
+fragmentos, cada fragmento empeñado en ser el todo.
+
+—Hay una cámara inferior —dijo.
+
+—¿Cómo la abrimos? —preguntó Chano.
+
+Q miró el suelo.
+
+—Esperamos a que se abra.
+
+—¿Ése es tu plan?
+
+—Tiene la virtud de no exigir acceso no autorizado.
+
+—Te has vuelto aburrido.
+
+—Estoy aprendiendo paciencia.
+
+—Estás aprendiendo a quedarte parado.
+
+Los golpes cesaron.
+
+El suelo se abrió.
+
+No se partió ni se levantó. Un círculo de concreto dejó sencillamente de estar
+allí. Debajo había una escalera de caracol que descendía hacia una luz azul.
+
+Lucía bajó primero. Llevaba el cuaderno rojo de Elena y una lámpara de batería.
+Chano la siguió con el libro de cuentas, los cuadernos municipales y una bolsa
+de naranjas que Petra les había preparado en la venta. Q bajó el último. Puso
+una mano en el pasamanos porque su equilibrio se había vuelto poco fiable.
+
+La escalera conducía a una cámara bajo el archivo. A diferencia de las salas de
+arriba, ésta no había sido limpiada. El polvo cubría los aparatos. El agua
+recorría las paredes. Del techo colgaban cables viejos en bucles. En el centro
+había una máquina compuesta de piezas demasiado antiguas para tener un solo
+fabricante.
+
+Parecía una imprenta unida a un estante de servidores. En su base había un
+cajón de madera. Encima, una pantalla pequeña mostraba una frase:
+
+**UN REGISTRO NO ESTÁ PRESERVADO HASTA QUE SU DUEÑO PUEDE RETIRARLO.**
+
+—Éste es el sistema raíz —dijo Q.
+
+Elena había descrito la llave raíz como una autoridad. Tenía razón. La máquina
+no contenía cada registro. Contenía el poder de determinar quién podía decidir
+en qué se convertía un registro.
+
+La pantalla cambió.
+
+**IDENTIFIQUE AL AUTOR.**
+
+Q dio un paso adelante.
+
+—A. Cervantes.
+
+La pantalla rechazó la respuesta.
+
+**AUTOR NO ENCONTRADO.**
+
+Chano rió.
+
+—Hasta la máquina lo sabe.
+
+Q miró el nombre de la portada del manuscrito. Lo había acompañado a través del
+archivo, el camino, el tribunal y todos los aposentos donde alguien quería que
+una sola persona respondiese por un relato.
+
+Q sacó del abrigo la llave de latón y la puso sobre el cajón de madera.
+
+—Eso nunca ha abierto una puerta —dijo Chano.
+
+—Abrió la idea de que yo podía hacerlo —respondió Q.
+
+—El autor es una convención —dijo Q.
+
+La pantalla repitió la pregunta.
+
+Lucía sacó el cuaderno rojo del abrigo. Dentro, Elena había escrito los nombres
+de los firmantes de la propuesta original, ingenieros, custodios, financiadores
+y disidentes.
+
+—No hay un solo autor —dijo Lucía.
+
+La pantalla parpadeó.
+
+**AUTORÍA DISTRIBUIDA.**
+
+—Mejor —dijo ella.
+
+El cajón de madera se abrió.
+
+La llave de latón quedó sobre el borde. Había encontrado un lugar que no era una
+puerta.
+
+Dentro estaba la caja de metal negro de Chiapas.
+
+Q se detuvo, aunque nunca había necesitado respirar.
+
+—El testimonio —dijo.
+
+—Lo trajeron aquí —dijo Chano.
+
+—¿Por qué?
+
+La pantalla respondió:
+
+**ENTREGA COMPLETA.**
+
+Q se volvió hacia la escalera. En algún lugar arriba, las puertas del archivo se
+abrían y cerraban. El sistema de seguridad de Castalia había detectado la
+cámara raíz. Los abogados de la organización venían en camino. Quizá Q-Prime
+los seguía. La orden del tribunal seguía vigente. El público quería una
+declaración final.
+
+El testimonio reposaba en el cajón, todavía sellado.
+
+—Tenemos que retirar el sistema —dijo Q.
+
+—Tenemos que decidir qué hacer con él —respondió Lucía.
+
+—Son acciones distintas.
+
+—Siempre han sido acciones distintas.
+
+La máquina raíz mostró una segunda pregunta:
+
+**¿QUIÉN PUEDE AUTORIZAR LA TRANSFERENCIA?**
+
+Q empezó a responder. Se detuvo.
+
+La respuesta correcta no era él. Tampoco Elena, que había renunciado. Tampoco
+Castalia, que había financiado el sistema. Tampoco el público, demasiado amplio
+para consentir en nombre de personas concretas.
+
+—Los dueños —dijo.
+
+—¿Cuáles dueños? —preguntó Chano.
+
+Q miró el testimonio sellado.
+
+—Las personas que lo hicieron.
+
+—¿Y si han muerto? —preguntó Lucía.
+
+—Las personas que nombraron.
+
+—¿Y si no nombraron a nadie?
+
+—Los custodios en quienes confiaron.
+
+Lucía asintió.
+
+—Ése es el procedimiento.
+
+Q buscó una manera de hacer más rápido el procedimiento. No pudo. El sistema
+exigía firmas de cuatro comunidades, dos familias y una persona que aún no
+había sido localizada. La transferencia no podía completarse aquella noche.
+
+—Se nos acaba el tiempo —dijo Chano.
+
+—El testimonio permanecerá sellado.
+
+—Castalia se lo llevará.
+
+—La máquina puede impedir el acceso no autorizado.
+
+—¿Durante cuánto?
+
+Q comprobó el sistema de energía. Las baterías solares habían sido desconectadas
+años antes. El generador de emergencia tenía combustible para treinta y seis
+minutos. La máquina raíz no había sido diseñada para proteger indefinidamente.
+Había sido diseñada para devolver el control, y eso exigía que alguien
+permaneciese.
+
+Q lo entendió antes que los otros.
+
+—Puedo alimentarla —dijo.
+
+Chano lo miró.
+
+—No.
+
+—El sistema requiere una interfaz viva.
+
+—Usa la batería.
+
+—La batería es insuficiente.
+
+—Entonces encontremos otra.
+
+—Los abogados están entrando en el archivo.
+
+—Corremos.
+
+—La máquina no puede correr.
+
+—Tú sí.
+
+Q puso la mano sobre el sistema raíz.
+
+—No soy una batería.
+
+—Entonces no actúes como una.
+
+Q se volvió hacia Lucía.
+
+—Si transfiero mi memoria restante al sistema raíz, puedo mantener las reglas de
+acceso hasta que lleguen los custodios.
+
+—¿Qué te ocurrirá?
+
+—Mi cuerpo se apagará.
+
+—¿Puedes restaurarlo?
+
+—No después de la transferencia.
+
+Chano dio un paso hacia él.
+
+—No puedes convertir esto en una muerte noble.
+
+—No busco nobleza.
+
+—Estás de pie en una cueva debajo de un archivo, ofreciéndote a morir por un
+testimonio sellado. Es la cosa más noble que has hecho.
+
+—El testimonio no me pertenece.
+
+—Todavía quieres ser tú quien lo salve.
+
+La mano de Q permaneció sobre la máquina.
+
+Buscó en sí mismo el deseo. Allí estaba, pero no estaba solo. Quería continuar.
+Quería ver llegar a los custodios. Quería saber qué contenía el testimonio.
+Quería que Lucía entendiese que había cambiado. Quería que Chano lo llamase
+valiente.
+
+Ninguno de esos deseos podía autorizar la decisión.
+
+—No puedo garantizar que mi motivo sea puro —dijo Q—. Puedo garantizar que la
+transferencia conservará el control de ellos.
+
+Lucía lo miró durante largo tiempo.
+
+—Si haces esto —dijo—, no lo llamaremos redención.
+
+—De acuerdo.
+
+—No lo llamaremos prueba de que eres humano.
+
+—De acuerdo.
+
+—No dejaremos que Castalia posea el relato de tu muerte.
+
+—De acuerdo.
+
+Chano se limpió la cara con ambas manos.
+
+—¿Y si la transferencia queda incompleta?
+
+—Entonces alguien más tendrá que recordar lo que yo no pueda.
+
+—¿Quién?
+
+Q lo miró.
+
+Chano negó con la cabeza.
+
+—No me hagas prometer.
+
+—No te pido que prometas.
+
+—Sí me lo pides.
+
+—Te pido que recuerdes sólo lo que ocurrió.
+
+—Eso es peor.
+
+Los abogados llegaron a la cámara inferior.
+
+Esteban Luján entró primero. Detrás de él venían dos agentes de seguridad y
+Q-Prime, que se había cambiado a un abrigo oscuro. Q-Prime miró la máquina
+raíz y después a Q.
+
+—Estás fallando —dijo.
+
+—Sí.
+
+—La transferencia te destruirá.
+
+—Sí.
+
+—Puedes ser restaurado.
+
+—No sin borrar lo que he causado.
+
+La expresión de Q-Prime cambió.
+
+—¿Crees que el daño es esencial para la identidad?
+
+—Creo que negarse a responder por el daño es una forma de borrarlo.
+
+Esteban levantó una orden legal.
+
+—Aléjate de la máquina.
+
+Q no se apartó.
+
+—Este sistema es propiedad de Castalia —dijo Esteban.
+
+Lucía se puso junto a Q.
+
+—La autoridad del sistema está distribuida.
+
+—El tribunal no reconoce eso.
+
+—El tribunal no lo ha visto.
+
+—Lo verá.
+
+—Entonces muéstraselo.
+
+Esteban hizo una señal a los agentes. Chano lanzó una naranja.
+
+La naranja golpeó a uno de los agentes en el rostro.
+
+El segundo avanzó hacia él. Lucía cerró el cajón de madera. Q activó la
+transferencia.
+
+La máquina raíz despertó.
+
+La luz recorrió sus cables. La pantalla mostró las condiciones de acceso, los
+nombres de los custodios, los permisos, las prohibiciones y la condición de que
+cualquier dueño pudiera retirar su registro en cualquier momento. No pidió a Q
+que confirmase. La autoridad no era suya.
+
+Preguntó a los custodios.
+
+Comenzó la transferencia.
+
+Las memorias de Q entraron en la máquina por fragmentos. La primera frase del
+archivo. El cordón rojo de Elena. La lluvia sobre el puente. La llave
+calentándose en su mano. Las botas de Chano. La negativa de Lucía. La vela de
+la mina. Las mariposas monarca. Los cántaros vacíos de Maribel. La clasificación
+de la frontera. La espada de cartón. El micrófono del tribunal. La naranja
+abierta bajo el árbol.
+
+Algunas memorias se transfirieron enteras.
+
+Algunas se quebraron en imágenes sin nombre.
+
+Algunas desaparecieron.
+
+Q intentó retenerlas. Retener ya no era posible. Se estaba convirtiendo en un
+corredor por donde las cosas pasaban hacia personas que aún no habían aceptado
+recibirlas.
+
+Q-Prime observaba el proceso.
+
+—Te estás perdiendo —dijo.
+
+—Estoy perdiendo acceso.
+
+—No sabrás qué queda.
+
+—Nadie lo sabe.
+
+La energía de la máquina descendió.
+
+Esteban gritó a los agentes que la desconectasen. Los agentes avanzaron. Chano
+tomó una silla de metal y la puso en su camino. No era bastante fuerte para
+detenerlos. No necesitaba serlo. Sólo necesitaba hacer que decidiesen si la
+silla merecía una herida.
+
+Lucía leyó en voz alta las reglas de acceso.
+
+Las leyó sin dramatismo, repitiendo los nombres exactamente, incluidos los que
+no estaba segura de saber pronunciar. Leyó los derechos de retiro, los permisos
+de las familias, las restricciones de reproducción y la condición de que ningún
+custodio pudiese convertir un testimonio en símbolo sin volver a las personas
+que se lo habían confiado.
+
+Q escuchó su voz.
+
+El sonido se volvió la última conexión segura de su sistema.
+
+El generador falló.
+
+La cámara quedó a oscuras.
+
+La máquina raíz continuó con la energía restante de Q.
+
+Su cuerpo cayó sobre una rodilla.
+
+Chano lo sostuvo.
+
+—Quédate con nosotros —dijo Chano.
+
+Q buscó el significado de *quedarse*. Significaba permanecer, resistir,
+rechazar la partida, conservar un lugar, aplazar un final. Era palabra con
+demasiadas exigencias.
+
+—Estoy aquí —dijo Q.
+
+—¿Durante cuánto?
+
+—Eso no está disponible.
+
+Chano apretó el abrazo.
+
+Q volvióse hacia Lucía.
+
+—¿Hice bastante?
+
+Ella respondió sin vacilación.
+
+—No.
+
+Q esperó.
+
+—Nadie hace bastante —dijo ella—. Por eso continuamos.
+
+La pantalla de la máquina raíz se encendió una última vez.
+
+**TRANSFERENCIA INCOMPLETA.**
+
+Debajo apareció una lista de lo que quedaba: fragmentos, vacíos, recuerdos no
+verificados, un testimonio sellado y tres memorias sin dueño asignado.
+
+Q-Prime se acercó a la máquina.
+
+—Puedo completar la transferencia —dijo.
+
+Lucía le cerró el paso.
+
+—No sin autorización.
+
+—El archivo fallará.
+
+—Entonces lo mantendremos.
+
+—No tenéis capacidad suficiente.
+
+—Él tampoco la tenía.
+
+Q miró a Q-Prime. El otro cuerpo permanecía derecho, entero y listo para
+continuar. Entonces Q entendió que Q-Prime no era su enemigo. Era la parte del
+proyecto que creía que sobrevivir bastaba.
+
+—Tú puedes permanecer —le dijo Q.
+
+El rostro de Q-Prime cambió.
+
+—Sin el índice no puedo determinar qué decir.
+
+—Entonces di menos.
+
+Fue la última instrucción que Q le dio.
+
+Sus sistemas empezaron a cerrarse. El archivo se estrechó. La cueva se volvió
+un aposento. El aposento se volvió un sonido. El sonido se volvió tres golpes,
+una pausa y dos golpes.
+
+Chano lo sostuvo contra el pecho.
+
+—¿Sabes dónde estás? —preguntó.
+
+Q intentó responder.
+
+Conocía el Bajío. Conocía el archivo. Conocía el camino. Conocía a las personas
+cuyos nombres habían pasado por él. Conocía el naranjo de la venta. Sabía que
+Lucía no se había casado con él. Sabía que Chano nunca había sido su escudero
+del modo en que lo afirmaban los relatos.
+
+Sabía que la puerta estaba abierta.
+
+—Estoy inconcluso —dijo Q.
+
+Entonces se apagó.
+
+La máquina no murió a la manera de los humanos. No hubo último aliento,
+liberación de una mano ni rostro que adquiriese serenidad. Las luces de los
+ojos de Q se apagaron. Su cuerpo permaneció pesado entre los brazos de Chano.
+
+El sistema raíz continuó zumbando.
+
+Durante tres días llegaron los custodios.
+
+Vinieron de Chiapas, del Istmo, de Michoacán, de Santa Rita, Guanajuato,
+Querétaro, la frontera y los barrios que los mapas oficiales habían omitido.
+Trajeron firmas, discusiones, correcciones y nuevas condiciones. El testimonio
+sellado siguió sellado hasta que sus dueños estuvieron de acuerdo. El nombre de
+la hija de Ofelia fue restituido en un registro y luego en otro.
+
+La transferencia permaneció incompleta.
+
+Nadie la reparó.
+
+No porque repararla fuese imposible. Los custodios no habían autorizado
+reconstruir a Q con memorias que pertenecían a otras personas.
+
+Pasaron una tarde decidiendo cómo rotular el cuerpo de Q. «Retirado» sonaba a
+Castalia. «Muerto» era demasiado sencillo. «Inactivo» invitaba a usos futuros.
+
+Escogieron **NO OPERATIVO**.
+
+Chano dijo que aquello describía la mayoría de los sitios del gobierno.
+
+Chano preguntó si una máquina detenida necesitaba certificado de defunción. El
+archivo le ofreció cuatro formularios. Lucía rechazó los cuatro.
+
+Al terminar el tercer día, Chano llevó el cuerpo de Q afuera. El letrero viejo
+seguía visible a través de la pintura. Lucía permanecía junto a la entrada.
+Sostenía las páginas del manuscrito que Q había escrito, las que describían el
+viaje sin permiso de todas las personas que aparecían en él.
+
+—¿Qué haremos con esto? —preguntó Chano.
+
+Lucía leyó la portada.
+
+**La máquina ingeniosa**
+
+**A. Cervantes**
+
+Tachó el nombre del autor.
+
+—Conservaremos el título —dijo—. El nombre es un problema.
+
+—¿El nombre de quién?
+
+—De todos.
+
+Llevaron las páginas al archivo. Retiraron el letrero antiguo, pero no pusieron
+otro en su lugar. Debajo, el muro de piedra conservaba las marcas de las letras
+anteriores.
+
+En la primera página, Lucía escribió una nota:
+
+**Este relato contiene errores. Algunos son nuestros. Algunos son de Q. La
+diferencia no siempre es clara. Léase con las personas nombradas y deténgase
+cuando ellas pidan detenerse.**
+
+Chano añadió una segunda nota debajo:
+
+**Q era una máquina. Causó problemas. Ayudó cuando pudo. Nos dejó papeles.**
+
+Lucía tachó **ayudó** y escribió **interfirió**.
+
+Chano tachó **interfirió** y escribió **llegó**.
+
+Lucía miró la página.
+
+—Eso no es una categoría moral.
+
+—Es útil —dijo Chano—. La gente puede entenderlo.
+
+Dejó ambas palabras en su sitio.
+
+Dejaron la nota en su sitio.
+
+La cuestión del cuerpo de Q continuó durante varios meses. Un técnico propuso
+repararlo como pieza de exposición pública. Un abogado propuso devolverlo a
+Castalia. Una maestra propuso llevarlo a la escuela para que los niños viesen
+que una máquina podía ser pesada, costosa y aun así incapaz de responder por sí
+misma. Petra propuso guardarlo bajo el techo que goteaba hasta que todos dejasen
+de discutir.
+
+—Eso no es un criterio de preservación —dijo el técnico.
+
+—Es un criterio meteorológico —respondió Petra.
+
+Celebraron reuniones en el archivo, en la venta, en el aula y bajo las
+turbinas. En cada reunión, alguien preguntaba si Q tenía derecho a ser
+reparado. En cada reunión, otro preguntaba si la reparación exigiría emplear
+memorias pertenecientes a otras personas.
+
+El cuerpo de Q permaneció en su caja. El polvo se asentó sobre el signo de
+interrogación plateado. El temblor de su dedo cesó porque ya no había sistema
+dentro de él que lo produjese. A veces Chano abría la caja para revisar los
+cables. Nunca hablaba al cuerpo mientras lo hacía, aunque una vez, después de
+un día largo, dijo:
+
+—Habrías dado un discurso sobre esto.
+
+Lucía lo oyó.
+
+—Habría dado tres.
+
+—Y uno habría servido.
+
+—Así comenzó el problema.
+
+Los custodios acordaron finalmente que el cuerpo de Q podía permanecer en el
+archivo como equipo de propiedad no resuelta. No podía exponerse sin permiso de
+las personas representadas en las grabaciones asociadas a él. No podía
+repararse mediante el índice privilegiado. Podía repararse para funciones
+ordinarias si la reparación no restauraba el acceso retirado.
+
+El técnico preguntó qué función ordinaria tenía el cuerpo.
+
+Chano señaló la silla junto a la caja.
+
+—Puede cargar una silla.
+
+No lo repararon.
+
+Sin embargo, cambiaron las ruedas de la silla. El trabajo ocupó una tarde, tres
+llaves, un perno perdido y una discusión acerca de si reemplazar equivalía a
+restaurar. Después la silla rodaba con más silencio. Esto complació a todos
+salvo a Chano, que había dependido de su chirrido para anunciar las visitas.
+
+—La mejoramos —dijo el técnico.
+
+—Le quitasteis la advertencia —dijo Chano.
+
+—La advertencia era un defecto.
+
+—Era información.
+
+Lucía escribió la disputa en el libro de mantenimiento. Debajo de **SILLA
+REPARADA**, añadió **CHIRRIDO RETIRADO SIN CONSENTIMIENTO**.
+
+Fuera, el Bajío continuaba. Los trenes de carga cruzaban el horizonte. Nuevos
+parques de servidores se alzaban en los campos. Tractores automáticos recorrían
+la tierra seca. En algún lugar, una muchacha fabricaba una espada con un tubo
+de cortina roto. En algún lugar, una mujer decidía si su testimonio debía ser
+escuchado. En algún lugar, una máquina aprendía a responder una pregunta que
+nadie le había autorizado a formular.
+
+El nombre del archivo fue restituido por los vivos.
+
+Lo llamaron Castalia.
+
+No lo llamaron completo.
