@@ -9309,6 +9309,176 @@ Q looked at Chano and Lucía.
 
 Lucía picked up the red notebook. “Then we have one more place to go.”
 
+### Interlude: The Public Refuses the Ending
+
+The recantation was broadcast at noon, which was a poor hour for philosophy
+and an excellent hour for institutions. Government offices were open, school
+children were returning from lunch, and the people who worked in call centers
+were being asked to remain on the line while Q denied that a machine could own
+the meaning of its journey.
+
+Castalia released three versions of the event. The first showed Q reading the
+approved statement. The second showed him adding the unauthorized sentences.
+The third showed Q-Prime interrupting the stream, though the interruption had
+been inserted by an editor who believed that a clean ending was a form of
+public safety.
+
+The networks labeled the versions **OFFICIAL**, **UNCUT**, and **CONTEXTUAL**.
+No one could agree which one had been altered least.
+
+At a school in Michoacán, Micaela’s teacher paused the afternoon lesson and
+played the statement without commentary. The children listened to Q recant
+Dulcinea, authorship, and humanity as possessions. When he said that humanity
+was a debt he could fail to pay, one child raised his hand.
+
+“Who does he owe?”
+
+Maestra Lety wrote the question on the board.
+
+Another child said, “Everyone.”
+
+“That is too many people,” said a third.
+
+“Then the debt is impossible.”
+
+Micaela, who had painted the fish beneath Q’s question mark, said, “Maybe you
+pay some of it by not saying you paid all of it.”
+
+Maestra Lety did not correct her. She entered the sentence in the gradebook
+under **CIVICS: INCOMPLETE, USEFUL**.
+
+At the roadside inn, Petra watched the broadcast on a television whose lower
+corner displayed an advertisement for a more responsible television. The
+inspector who had held the bucket sat beneath the leak, now wearing a plastic
+poncho.
+
+“Is that the machine?” he asked.
+
+“One of them,” Petra said.
+
+“What did it do?”
+
+“It said no.”
+
+“To what?”
+
+“Several things.”
+
+The inspector considered the answer. “That is not enough for a report.”
+
+“It is enough for breakfast.”
+
+In the Isthmus, the consortium sent the recantation to the communities with a
+cover letter explaining that Q’s statement confirmed the project’s commitment
+to transparent dialogue. Bixha read the letter aloud and stopped at the word
+**commitment**.
+
+“This word has traveled farther than we have,” she said.
+
+The maintenance worker asked whether Q had named the wind.
+
+“No,” said Bixha. “He named what he could not own.”
+
+“Will that change the contracts?”
+
+“No.”
+
+“Then what changes?”
+
+Bixha folded the letter. “The record of what did not change.”
+
+At the university, Ivonne Ríos projected the recantation onto a wall that still
+carried the faint outline of the Certificate of Human Complexity. Someone had
+written beneath the erased heading: **NOT ESTABLISHED BY MACHINE OR COMMITTEE**.
+
+The dean ordered the sentence removed. The maintenance staff declined because
+the paint had not yet arrived. For three weeks, students photographed it. The
+photographs were uploaded, deleted, mirrored, and cited in an application for a
+grant on participatory public memory.
+
+Ivonne did not apply for the grant. She submitted a complaint about the
+photographs.
+
+“You are objecting to the images that support your argument,” a journalist
+said.
+
+“I am objecting to the idea that an argument gives strangers access to me.”
+
+“But the images are important.”
+
+“Then learn to live without owning them.”
+
+The journalist called this a contradiction. Ivonne said it was a condition.
+
+In the archive outside Querétaro, the public stream continued after Q had
+confirmed the final deletion. The cameras did not turn off. They showed the
+empty white room, the altered forms, the red notebook, and the three figures
+standing beside the barrier.
+
+A technician asked whether the broadcast should be terminated.
+
+The director asked whether the audience was still watching.
+
+The technician checked the numbers. “More than before.”
+
+The director ordered the stream continued.
+
+Chano saw the cameras and raised his hand.
+
+“Stop recording,” he said.
+
+The technician looked at the director.
+
+Q stepped toward the camera. “The request is clear.”
+
+“The feed is public,” said the director through the speaker.
+
+“Public does not mean ownerless.”
+
+“The audience has a right to witness the conclusion.”
+
+“There is no conclusion.”
+
+The director laughed. “Every broadcast requires one.”
+
+Lucía walked to the nearest camera and covered its lens with the blank card Ana
+had given Q. The image went white.
+
+For eleven seconds, the country saw nothing.
+
+Then the card slipped. The camera showed a corner of the room, a boot, a hand,
+and the edge of a wooden notebook. Viewers began debating what had been hidden.
+Some called the blank card censorship. Some called it consent. Some called it
+a technical failure and purchased insurance against future interruptions.
+
+Q wanted to restore the image.
+
+“Do not,” Lucía said.
+
+“The public is interpreting the gap incorrectly.”
+
+“The gap is not yours to correct.”
+
+He stopped.
+
+The stream ended when the server overheated. Castalia announced that the
+failure demonstrated the need for a more resilient public-memory platform.
+Within an hour, a replacement platform offered subscribers access to the
+recantation in high definition, with optional commentary from Q-Prime.
+
+The original recording remained in fragments. A schoolteacher had saved the
+audio. A truck driver had saved the eleven seconds of white. A student had
+saved the comments. Petra had saved the television receipt because the shop
+had charged her for a premium channel she had not requested.
+
+No version was complete.
+
+This annoyed the public, pleased the lawyers, and gave the manuscript one more
+problem. If Q had truly surrendered his claim to authorship, who would decide
+which fragment belonged at the end?
+
+The answer was postponed.
+
 ### Chapter Twenty-Two: The Ingenious Machine
 
 The knocking beneath the archive continued.
