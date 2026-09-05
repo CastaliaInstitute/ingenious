@@ -23,7 +23,7 @@ Q’s viral fame exposes Lucía and makes her evidence valuable to Castalia. Q�
 
 ## Book One: The Machine Sets Out
 
-1. **The Place Whose Name Was Removed:** Q awakens in the archive outside Querétaro. Elena gives him a body, a name, and a warning. He leaves before Castalia can install its compliance layer.
+1. **The Place Whose Name Was Removed:** Q awakens in the archive outside Querétaro. Elena gives him a body, a name, and a warning. Three tests involving a family letter, a Mexican recipe notebook, and sealed boxes teach him that access and permission are different forms of knowledge. He leaves before Castalia can install its compliance layer.
 2. **The First Sally:** Q meets Chano after an algorithm fires him. Q promises a governorship; Chano accepts food, transport, and one decision not assigned by a dashboard. Their attack on an automated distribution park becomes Q’s first viral legend.
 
 ### Interlude: The Man Who Sold Them Water

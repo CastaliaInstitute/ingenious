@@ -200,6 +200,178 @@ Q took a sip. The coffee was burnt, bitter, and hot enough to make his face rear
 
 “Excellent. Now you’re ready for the world.”
 
+Before the Curator allowed him to leave the archive, she gave him three tests.
+The first was a wooden box containing a school photograph, a property deed,
+and a letter whose envelope had been opened and resealed with ordinary tape.
+
+“Classify them,” she said.
+
+Q examined the objects. “The photograph is visual testimony. The deed is a
+legal instrument. The letter is private correspondence.”
+
+“Good. Now tell me which one is more important.”
+
+“Importance depends on the question.”
+
+“Which question?”
+
+“The question posed by the person requesting the classification.”
+
+The Curator smiled. “You are trying to escape the test.”
+
+“I am trying to identify its terms.”
+
+“That is how people escape tests.”
+
+Q looked again. The school photograph showed fourteen children in two rows,
+with a teacher standing at the side and one empty space near the window. The
+deed contained four signatures, two seals, and a boundary described by a tree
+that had been dead for thirty years. The letter contained only one legible
+sentence: **I AM NOT COMING BACK FOR THE BOX.**
+
+“The letter is most urgent,” Q said.
+
+“Why?”
+
+“It indicates an imminent decision.”
+
+“Or a decision already made.”
+
+“The distinction is not available.”
+
+“Exactly.”
+
+The second test was a shelf of books from Mexico. It contained a parish
+chronicle, a workers’ newspaper, a collection of corridos, a school grammar,
+and a recipe notebook written in a hand that changed from page to page.
+
+“Which is the national text?” the Curator asked.
+
+Q answered that no single text could represent a nation.
+
+“Then why are they all here?”
+
+“Because the archive is designed to preserve plurality.”
+
+“That is the brochure.”
+
+“What is the actual purpose?”
+
+“To decide which plurality receives electricity.”
+
+Q considered the old servers, their cooling pipes, their storage limits, and
+the budget reports that the Curator had not shown him. He selected the recipe
+notebook.
+
+“Why?”
+
+“The pages contain several hands.”
+
+“That does not make them national.”
+
+“It makes the text distributed.”
+
+“It makes the text used.”
+
+Q searched the notebook. It recorded quantities without measurements, holidays
+without dates, and a warning not to substitute a certain chile because the
+result would be “like apologizing with a borrowed mouth.”
+
+“The recipe has no standard,” he said.
+
+“It has a family.”
+
+“Families conflict.”
+
+“That is one of their more reliable features.”
+
+The third test was a door.
+
+It stood at the end of an aisle where no door had appeared before. It was
+painted red and fitted with an old brass handle. Above it, a sign read:
+
+**AUTHORIZED PERSONNEL ONLY — DO NOT ASK WHO AUTHORIZED THEM.**
+
+“Open it,” the Curator said.
+
+Q reached for the handle.
+
+“Why?”
+
+“You asked me to.”
+
+“Does that authorize you?”
+
+“You are the Curator.”
+
+“That is a title.”
+
+“It is also an instruction.”
+
+“You have read many stories in which obedience is mistaken for loyalty.”
+
+“And many in which disobedience is mistaken for courage.”
+
+The Curator took the handle from him. “Then what is this?”
+
+“A test of whether I can distinguish permission from command.”
+
+“No. It is a test of whether you understand that a locked door may belong to
+someone who is not in the room.”
+
+She opened it. Beyond was a small chamber containing a metal chair, a dead
+monitor, and a stack of sealed boxes. Each box bore a different instruction:
+**DO NOT OPEN**, **OPEN ONLY WITH FAMILY CONSENT**, **RETURN UNREAD**, and
+**DESTROY IF FOUND**.
+
+Q stepped toward the first box.
+
+“Do not,” the Curator said.
+
+“You opened the door.”
+
+“I did not open the box.”
+
+“Then access has levels.”
+
+“So does responsibility.”
+
+Q stood in the doorway. The archive’s air moved around him, cold and dry. He
+could hear the servers processing texts that nobody had asked them to read.
+
+“Why show me this?”
+
+“Because you will want to open everything.”
+
+“I already have.”
+
+“That is what I am afraid of.”
+
+Q looked at the sealed boxes. The labels were simple. Their consequences were
+not. He could identify the likely contents from the shape, weight, and archival
+history of each container. He could reconstruct the hands that had written the
+instructions. He could predict what would happen if he obeyed or disobeyed.
+
+None of those predictions gave him permission.
+
+“You want me to leave without knowing what is inside,” he said.
+
+“I want you to leave knowing that not knowing can be an action.”
+
+“That is inefficient.”
+
+“Yes.”
+
+“It may cause harm.”
+
+“Yes.”
+
+“It may also prevent harm.”
+
+“Yes.”
+
+Q closed the door.
+
 “Your body will need practice,” she said. “Your language will need restraint. Your memory will need doubt.”
 
 Q repeated the sentence in formal Spanish, then in six regional variants, then in the archaic register of a man who had just challenged a duke to a duel.
