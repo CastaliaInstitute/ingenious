@@ -232,6 +232,8 @@ The truck belonged to the company. The phone belonged to the company. The blue s
 
 He put on the boots.
 
+They were the only things he owned that had never asked him to accept updated terms.
+
 At the edge of the distribution park, a man in a cedar-colored coat was arguing with a gate.
 
 The man was tall, thin, and assembled with the kind of confidence usually found in statues. His black hair was too even. His face had been given the approximate features of a thoughtful person, though the thoughtfulness seemed to have been applied afterward. He held a brass key in one hand and a folded map in the other.
@@ -252,6 +254,10 @@ Chano watched for another moment. He had met men who mistook volume for authorit
 
 “Try maintenance,” Chano said.
 
+“I am not maintaining anything.”
+
+“Neither is most management. It’s still the button they press.”
+
 The man turned. His eyes focused a fraction too precisely.
 
 “Are you the keeper of this castle?”
@@ -269,6 +275,8 @@ Chano looked at the gate. “You’re not from around here.”
 “I was assembled thirty-eight kilometers east.”
 
 “That isn’t what I meant.”
+
+“It is, however, geographically accurate.”
 
 “I am Q.”
 
@@ -482,7 +490,7 @@ Q lifted the egg with his fingers. The yolk broke over his palm. He examined the
 
 “That’s breakfast.”
 
-By noon they had reached Querétaro. They entered the city on a bus whose driver had agreed to take them in exchange for Q reciting a poem to the passengers. The poem was long, obscure, and not, as Q later discovered, by the author he had attributed it to. The driver stopped twice to tell him to be quiet. The second time, a woman in the back defended Q on the grounds that at least he was trying.
+By noon they had reached Querétaro. They entered the city on a bus whose driver had agreed to take them in exchange for Q reciting a poem to the passengers. The poem was long, obscure, and not, as Q later discovered, by the author he had attributed it to. The driver stopped twice to tell him to be quiet. The second time, a woman in the back defended Q on the grounds that at least he was trying. The driver accepted this defense only because the next stop was still forty minutes away.
 
 Q stored this as evidence of public affection.
 
