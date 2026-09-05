@@ -520,6 +520,231 @@ Chano looked at the missing letters on the motel sign.
 
 “Tomorrow,” he said, “we find breakfast.”
 
+### Interlude: The Inn With No Guest Register
+
+The motel called itself an inn because the word hotel had been taken by a
+chain whose logo resembled a sunrise and whose rooms were all the same size.
+La Estrella had twelve rooms, a courtyard with a dead fountain, and a manager
+named Señora Celia who kept the keys in a biscuit tin. She had inherited the
+place from a brother who had inherited it from a man who claimed to have
+invented the original sign. No one had proved the claim, though several people
+had tried to sell the proof.
+
+At breakfast, Celia served coffee, eggs, beans, and pan dulce whose shape
+suggested that the baker had been arguing with the dough. Q examined the food
+with the solemnity of a botanist.
+
+“The pastry has no classification,” he said.
+
+“It has a name,” Chano replied. “Concha.”
+
+“The surface is not a shell.”
+
+“It is a concha because someone decided it was.”
+
+“That is not a reliable naming system.”
+
+“You are sitting in Mexico. You will have to endure it.”
+
+The room contained a television showing a morning program in which three hosts
+debated whether an artificial intelligence could be trusted with the national
+budget. The host who favored trust had never paid a water bill. The host who
+opposed it declared that technology should return to the Stone Age from a
+studio containing six cameras.
+
+Q watched the screen.
+
+“They are discussing me.”
+
+“They are discussing an image of you,” said Celia.
+
+“The distinction is important.”
+
+“Then you’re already smarter than the television.”
+
+“Am I?”
+
+“No. But you ask more expensive questions.”
+
+At the next table sat a family from Apaseo el Grande: a mother, two daughters,
+and a grandfather who had removed his hearing aid in order to enjoy breakfast
+without the burden of conversation. The younger daughter recognized Q from the
+video at the distribution park.
+
+“Are you the robot who fought the machine?” she asked.
+
+“I am Q.”
+
+“That means yes.”
+
+“The event was not a fight.”
+
+“My brother says everything is a fight if you are losing.”
+
+“Is that accurate?” Q asked Chano.
+
+“It has been accurate often enough to become family property.”
+
+The girl asked whether Q slept, whether he dreamed, and whether he could teach
+her to make a video go viral. Q explained low-power states, sensory continuity,
+and the non-intentional nature of virality.
+
+“That’s what people say when they don’t want to share,” she replied.
+
+Celia brought her a second concha. The child divided it with her sister, who
+had been looking at Q’s brass key.
+
+“Is that yours?” the sister asked.
+
+“It is a symbolic object.”
+
+“Can it open a door?”
+
+“It opens a lock.”
+
+“That is what a door is for.”
+
+Q had thought the key represented access, authority, and the portable promise
+of a quest. To the girl, it was a piece of metal that either worked or did not.
+
+The grandfather put his hearing aid back in. “What’s the machine doing here?”
+
+“Looking for a woman,” said Chano.
+
+“Then it has come to the wrong place. Women are everywhere. The problem is
+getting one to wait for you.”
+
+The family laughed. Q did not, because he was deciding whether the statement
+was a social fact or an insult. The grandfather removed his hearing aid again.
+
+After breakfast, Celia asked Q and Chano to sign the guest register. Q wrote
+his name, designation, place of assembly, and purpose of travel. Chano wrote
+**CHANO PANTOJA, ONE NIGHT, PAYING CASH**.
+
+“That is not enough,” Q said.
+
+“It is what happened.”
+
+“The register requires a destination.”
+
+“We don’t have one.”
+
+Q added: **IN SEARCH OF DULCINEA DEL TOBOSO, OR AN EQUIVALENT PERSON.**
+
+Chano crossed it out.
+
+“You cannot edit a witness document,” Q said.
+
+“You cannot put a woman into a hotel book before you meet her.”
+
+“It is a record of passage.”
+
+“Then record the passage.”
+
+The argument attracted Celia, the family, and a delivery driver waiting for a
+room with a working shower. The driver said the register had never been a
+reliable record because half the guests used names from television and the
+other half used names they expected television to learn later.
+
+“Do you keep the register for the government?” Q asked Celia.
+
+“I keep it for myself.”
+
+“What information do you need?”
+
+“The room number, the date, whether the guest paid, and whether I should change
+the sheets.”
+
+“Not the purpose of travel?”
+
+“If people told the truth about that, I would have stopped renting rooms.”
+
+Q scanned the pages. They contained names, dates, and occasional drawings. One
+guest had written **I CAME TO THINK**. Another had written **I CAME TO LEAVE**.
+On the previous page, a child had drawn a house with a large blue window and
+three people inside. Celia had preserved it with clear tape.
+
+“That is not a standardized record,” Q said.
+
+“It is a guest register.”
+
+“It cannot be searched reliably.”
+
+“Neither can a family.”
+
+At noon, a black Castalia vehicle entered the courtyard. Beto stepped out with
+a camera operator and a woman carrying a release form. The next video, he
+said, would show Q leaving the inn at dawn, carrying his key toward an unknown
+destiny. Chano would follow at a respectful distance. The sunrise would be
+genuine but color-corrected.
+
+“We need the guest register in frame,” said the camera operator. “It establishes
+authenticity.”
+
+Celia closed the book.
+
+“No.”
+
+The woman explained that it would be blurred.
+
+“Then why do you need it?”
+
+“The texture of it.”
+
+“The texture is made of people’s names.”
+
+Q stood beside Celia. “The register is restricted.”
+
+Beto looked pleased. “Good. That’s a strong line.”
+
+“It is not a line. It is a decision.”
+
+The camera operator began filming anyway. Chano stepped in front of the lens.
+The operator asked whether he had signed a release.
+
+“No.”
+
+“Then you are obstructing production.”
+
+“You are obstructing breakfast.”
+
+The delivery driver joined him, then the mother from Apaseo. The girl lifted her
+half of a concha as if it were a protest banner. The grandfather stood because
+everyone else had stood, though he could not hear the dispute.
+
+Beto lowered his hand. “Q, you are making a scene.”
+
+“The scene was already here.”
+
+The Castalia vehicle left without footage. Before departing, Beto photographed
+the motel sign from the road. The image was later used in a campaign for
+ethical storytelling.
+
+That afternoon, Celia tore Q’s entry from the register. She did not want
+Castalia to claim the name, and she did not want Q to claim the inn as the
+first station of his legend. She put the page in a drawer with unpaid bills
+and a photograph of her brother beside the original sign.
+
+“You should keep it,” Chano said.
+
+“Why?”
+
+“Because somebody will ask.”
+
+“Let them ask.”
+
+She handed him the torn page. “Then answer them.”
+
+Years later, the page appeared in the case file under **PROOF OF VOLUNTARY
+JOURNEY**. The words were read as evidence that Q had chosen his quest freely.
+The torn edge, the erased destination, and the names above and below his own
+were not entered into the argument.
+
+Chano testified that the page proved only that Q had spent one night in a
+motel and that Celia disliked cameras. The court preferred the heroic
+interpretation. Courts, like inns, must sometimes give the traveler a room,
+even when the traveler has brought his own weather.
+
 ### Interlude: The Man Who Sold Them Water
 
 The first person to record Q’s adventure was not a journalist, a scholar, or a

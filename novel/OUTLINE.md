@@ -34,6 +34,10 @@ Hilario/Hilaria, the roadside vendor who witnessed Q and Chano’s first sally, 
 
 Q names a malfunctioning floor scrubber as his horse and learns that a mount is a job with a direction.
 
+### Interlude: The Inn With No Guest Register
+
+At a roadside motel outside the industrial corridor, Señora Celia refuses to let Castalia film her guest register as “authentic texture.” Q’s argument over the meaning of a concha, a child’s practical question about his key, and Chano’s defense of the inn’s ordinary privacy establish their first shared refusal. Celia tears Q’s entry from the register; years later, the page is misread in court as proof that Q chose his quest freely.
+
 3. **Dulcinea Is Not Available:** Q finds Lucía at a Querétaro reading and assigns her the role of beloved. She refuses it, redirects him toward a land petition, and makes him confront the difference between transporting a journey and crossing it. Q’s hidden archive address flags the entire petition batch as suspicious.
 4. **The Knight of the Trending Hour:** In Guanajuato, Q becomes a manufactured celebrity. A mine tour introduces him to names missing from the archive. He signs a media contract to protect Chano and gives Castalia ownership of his public identity.
 
