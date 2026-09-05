@@ -1562,6 +1562,24 @@ They took the Metro. Q’s credential opened the turnstile. Chano’s did not ex
 
 Inside the train, a boy stared at Q’s face. His mother pulled him closer. A man in a suit photographed the silver question mark on Q’s jacket. Two students argued about whether Q had a soul. One said souls were bourgeois. The other said that was exactly what a soul would want people to believe.
 
+In the station plaza, bells announced a procession toward a temporary altar of the Virgin of Guadalupe. Beside the candles, mothers held photocopies of missing daughters beneath a hand-painted sign: **NO ESTÁN SOLAS**.
+
+Q recognized the Virgin from paintings, prayers, calendars, taxi windshields, and three Castalia reports on resilient communities.
+
+“Is she a historical person?” he asked.
+
+“Depends who is praying,” Lucía said.
+
+“Depends who is selling the candle,” Chano added.
+
+One of the mothers handed Q a list. “Read it.”
+
+He reached for the page with his other hand.
+
+She pulled it back. “Only read it.”
+
+Q read the names aloud. When he finished, he returned the list without asking for a copy.
+
 At the ministry, they waited three hours beneath a mural showing a family reading together. The family had no visible arguments, debts, or deceased members. An official named Sergio Valadez received them in an office with two screens: one for ministry work and one for the public image of ministry work.
 
 “Ms. del Toboso,” he said, “your request is under review.”
