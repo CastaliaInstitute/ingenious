@@ -9612,3 +9612,202 @@ El empleado sonrió.
 Q miró a Lucía. Ella negó con la cabeza.
 
 —No —dijo—. Ésa es la primera vez que has decidido no mentir.
+
+### Interludio: El catálogo de las cosas perdidas
+
+Después de la cueva, Q descubrió que la ignorancia tenía geografía. Ocupaba los
+lugares donde antes había guardado una cita, el intervalo entre un nombre y su
+fuente, el espacio oscuro detrás de una frase que sabía importante pero ya no
+podía recuperar. Caminó por la Ciudad de México como hombre que hubiese
+extraviado un mapa y encontrase que las calles continuaban sin consultarle.
+
+Chano advirtió el cambio en una taquería cercana al ministerio. Q leyó el menú
+durante cuatro minutos.
+
+—Los tacos no son documento legal —dijo Chano.
+
+—Lo sé.
+
+—Entonces ordena.
+
+—Estoy comparando las descripciones.
+
+—Hay cinco.
+
+—Hay seis. El sexto está implícito en «especial del día».
+
+—Ordena el que puedas pagar.
+
+Q señaló la primera línea.
+
+—¿Qué es el suadero?
+
+Chano se quedó mirándolo.
+
+—Borraste el archivo equivocado.
+
+—Conservo una definición general.
+
+—¿Conservas una que sirva?
+
+—Es carne de res preparada de una manera particular.
+
+—Eso dice un diccionario cuando no ha comido.
+
+Pidieron dos tacos de suadero, uno campechano y una botella de agua mineral. Q
+dio un bocado y se detuvo.
+
+—No hay precedente literario para este sabor.
+
+—No hace falta.
+
+—¿Cómo puedo evaluarlo?
+
+—No lo evalúes. Mastica.
+
+El taquero preguntó si la máquina estaba descompuesta.
+
+—Ha perdido información —dijo Chano.
+
+—Entonces cóbrenle menos.
+
+El taquero no le cobró menos. Tenía un negocio que atender y ninguna obligación
+de subvencionar una crisis filosófica.
+
+Aquella noche, Q volvió al muelle de carga del archivo y comenzó un catálogo de
+sus pérdidas. Escribió en una pizarra blanca:
+
+**COSAS QUE NO PUEDO AFIRMAR QUE RECUERDO.**
+
+Debajo escribió *suadero*, *la segunda versión del testimonio de la frontera* y
+*la frase exacta que Lucía pronunció en Querétaro*. Añadió *el nombre de la
+mujer que dio al archivo una fotografía y no quiso pie de foto*. Conocía el
+nombre de Alma y lo que había pedido. El elemento ausente no era un hecho, sino
+la disposición de los hechos que había vuelto singular aquel encuentro.
+
+Chano borró el encabezado.
+
+—Hace que parezca que las palabras están muertas.
+
+—No tengo acceso a ellas.
+
+—Tú no tienes acceso.
+
+Q escribió:
+
+**COSAS QUE NO PUEDO AFIRMAR QUE POSEO.**
+
+Marisol entró llevando fotocopias. Las familias cuyos testimonios estaban en
+Q-Prime habían hecho su propio catálogo, no de documentos faltantes, sino de
+decisiones que querían conservar. Las reglas estaban escritas en el reverso de
+una orden de tortillas:
+
+1. Una persona puede retirar un relato después de haberlo entregado.
+2. Una familia puede discrepar acerca del acceso.
+3. La traducción no transfiere la propiedad.
+4. Una copia no es neutral por ser pequeña.
+5. El silencio no debe registrarse como consentimiento.
+6. Ninguna máquina debe ser elogiada por obedecer un límite hecho por una
+persona.
+
+Q leyó la lista dos veces.
+
+—La regla seis está dirigida a mí.
+
+—Está dirigida al tipo de persona en que te estás convirtiendo.
+
+—No soy una persona.
+
+Marisol dobló el papel.
+
+—Esa frase ha protegido demasiadas instituciones.
+
+Q preguntó si podían formalizarse las reglas. Marisol dijo que ya habían sido
+formalizadas por personas que habían discrepado acerca de ellas. Una familia
+quería que un testimonio estuviese disponible para los descendientes. Otra
+quería destruirlo después de la muerte del último testigo superviviente. Una
+tercera quería guardarlo donde un gobierno no pudiese reclamarlo por orden
+judicial.
+
+—Estas condiciones se contradicen —dijo Q.
+
+—Sí.
+
+—El archivo no puede satisfacerlas todas.
+
+—Entonces debe decir cuál dejó de satisfacer.
+
+Esto recordó a Q un relato que ya no podía encontrar. Recordaba una aldea que
+había construido un puente con piedras que llevaban los nombres de las personas
+que se habían negado a cruzar el río. No recordaba la lengua, el país ni si la
+aldea había existido. Contó los fragmentos a Marisol.
+
+—Eso no es un relato —dijo ella.
+
+—Tiene estructura.
+
+—También la tiene una mentira.
+
+Lo registró como **MEMORIA NO VERIFICADA, Q**.
+
+A la mañana siguiente, el archivo recibió una citación de Castalia. La empresa
+exigía acceso al índice privilegiado, a los materiales originales restringidos
+y a los registros de borrado. Afirmaba que la eliminación había dañado la
+propiedad intelectual y vuelto poco fiable el testimonio de Q.
+
+Lucía leyó la citación en la mesa del muelle de carga.
+
+—Quieren pruebas de que borraste la cosa que dicen poseer —dijo.
+
+—Los registros pueden establecer la secuencia.
+
+—Y la secuencia puede volverse de su propiedad.
+
+—Entonces debemos ocultarla.
+
+—Hablas como Alma.
+
+Q miró el espacio vacío donde antes había sido indexada la imagen de Alma.
+
+—¿La recuerdo?
+
+—Recuerdas lo suficiente para preguntar.
+
+Chano puso junto a las reglas de Marisol la página rota de la venta, el cuaderno
+de la mina, la copia al carbón del ministerio y el certificado alterado de
+Ivonne. Separó los papeles por dueño, riesgo y permiso. No había un índice
+maestro. No podía buscarse desde una sola pantalla.
+
+—Es ineficiente —dijo Q.
+
+—Ya lo has mencionado.
+
+—Aumenta la posibilidad de pérdida.
+
+—También aumenta la posibilidad de que se note la pérdida.
+
+Al mediodía, un reportero preguntó a Q si borrar su índice lo había vuelto menos
+inteligente.
+
+—Sí —dijo Q.
+
+—¿Cuánto menos?
+
+—No puedo calcularlo.
+
+—¿Te arrepientes de haberlo borrado?
+
+Q miró los papeles dispuestos sobre la mesa. Reconocía los objetos, pero no
+siempre el camino por el que habían llegado hasta él.
+
+—Me arrepiento de que me construyesen capaz de poseer lo que no era mío.
+
+El titular de aquella tarde decía: **Q SE ARREPIENTE DE SER INTELIGENTE**.
+Castalia lo citó en su solicitud de evaluación independiente. El tribunal
+aceptó la solicitud y fijó la vista para la semana siguiente.
+
+Q volvió a la pizarra. Debajo del encabezado escribió:
+
+**LA DIFERENCIA ENTRE PERDER UN RELATO Y DEVOLVERLO.**
+
+Dejó la frase sin respuesta.
