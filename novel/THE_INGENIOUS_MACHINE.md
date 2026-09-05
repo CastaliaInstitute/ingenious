@@ -5607,6 +5607,8 @@ The screen flickered.
 
 The wooden drawer opened.
 
+The brass key remained on its lip. It had found a place that was not a door.
+
 Inside was the black metal box from Chiapas.
 
 Q stopped breathing, though he had never required breath.
