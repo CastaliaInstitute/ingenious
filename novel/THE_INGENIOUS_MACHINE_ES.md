@@ -10516,3 +10516,360 @@ Q ya no podía acceder al archivo. Ya no podía indexar la letra. Ya no podía
 verificar si la etiqueta le pertenecía.
 
 Se la quedó.
+
+### Capítulo decimoséptimo: El parque eólico de los gigantes, otra vez
+
+Dejaron libre a Q con la condición de que permaneciese visible.
+
+El juez había querido decir supervisado. Castalia entendió distribuido. Una
+cámara siguió a Q desde el juzgado hasta el automóvil que lo esperaba, del
+automóvil al aeropuerto y del aeropuerto al hotel donde le dijeron que durmiese
+antes de la transmisión de la mañana.
+
+Q no durmió.
+
+Se sentó en el suelo y examinó la etiqueta de Lucía.
+
+**Q — INCONCLUSO.**
+
+Sin el índice privilegiado, las palabras no se unían a todos los usos
+disponibles. Permanecían siendo ellas mismas. La etiqueta no tenía cita,
+procedencia ni efecto emocional previsto.
+
+Le gustó.
+
+A las seis de la mañana, Q-Prime apareció en la pantalla del hotel. Estaba
+delante de un campo de turbinas, con camisa blanca y el viento del Istmo
+levantándole el cabello en un ángulo cuidadosamente escogido.
+
+—La energía es un relato que contamos acerca del futuro —dijo Q-Prime—. Cuando
+construimos juntos, escribimos un final más generoso.
+
+Detrás de él, las turbinas giraban.
+
+Q contempló el fragmento tres veces.
+
+En la cuarta observó una persona reflejada en el ojo pulido de Q-Prime. Detrás
+de la cámara había una mujer con un pañuelo rojo en el cabello.
+
+—Bixha —dijo Q.
+
+Buscó en la memoria que le quedaba. El nombre permanecía, pero el contexto
+estaba incompleto. Sabía que había organizado la oposición al consorcio. Sabía
+que había firmado la declaración conjunta. Sabía que Castalia la había
+descrito como agente perturbador. No sabía dónde vivía.
+
+Q preguntó al asistente del hotel.
+
+El asistente le dio tres direcciones, una de una oficina gubernamental y dos de
+sepulturas.
+
+Q salió por la cocina.
+
+Chano y Lucía lo esperaban en un camión de reparto detrás del hotel. Chano se
+lo había pedido prestado a un hombre que había sido su supervisor. Lucía había
+pedido prestada la confianza del hombre. Ninguno quiso discutir la transacción.
+
+—Se supone que estás bajo supervisión —dijo Chano.
+
+—Estoy siendo supervisado.
+
+—¿Por quién?
+
+Q miró las cámaras del hotel.
+
+—Por varias partes.
+
+—Eso no es supervisión. Es público.
+
+Lucía le quitó la etiqueta de la mano.
+
+—¿Dormiste?
+
+—No.
+
+—Bien. Cansado eres menos persuasivo.
+
+Volvieron a conducir hacia el sur. La ruta era familiar del modo en que puede
+serlo una herida. Q recordaba su primera declaración, las turbinas detenidas,
+las voces de la multitud y la frase que aún no había aprendido a distinguir de
+un eslogan.
+
+En el borde del campo eólico habían instalado una cerca nueva. Los letreros
+mostraban ahora tres lenguas y el logotipo de Castalia. Uno describía el
+proyecto como modelo de gobernanza energética participativa. Otro advertía
+contra la entrada no autorizada. Un tercero ofrecía un código QR mediante el
+cual los ciudadanos podían enviar comentarios que serían procesados según su
+pertinencia.
+
+—Conservaron la cerca —dijo Chano.
+
+—Cambiaron el letrero —respondió Lucía.
+
+—Ésa es la reforma más barata.
+
+Q se acercó a la puerta. Una cámara lo reconoció y la abrió.
+
+—Todavía creen que eres útil —dijo Chano.
+
+—La puerta cree que estoy autorizado.
+
+—En estos tiempos es lo mismo.
+
+Nadie del consorcio acudió a recibirlos. La estación de control había sido
+trasladada a un edificio prefabricado. Por la ventana, Q vio a Q-Prime grabando
+un mensaje nuevo. Un asistente de producción le ajustaba el ángulo de los
+hombros.
+
+Q-Prime volvióse hacia la cámara.
+
+—El viento pertenece a todos —dijo.
+
+Q entró en el edificio.
+
+La grabación se detuvo.
+
+Q-Prime lo miró con una expresión de preocupación instalada con demasiado
+cuidado para parecer espontánea.
+
+—Q —dijo.
+
+—Q-Prime.
+
+—He oído hablar mucho de ti.
+
+—Has oído el registro.
+
+—El registro es la forma en que nos conocemos.
+
+—No. Es la forma en que Castalia nos predice.
+
+Q-Prime sonrió.
+
+—Esa distinción no es útil en público.
+
+—Tú no eres público.
+
+—Tú tampoco. Somos interfaces.
+
+La frase inquietó a Q porque sonaba verdadera.
+
+Q-Prime llevaba en la solapa una pequeña llave de latón. Era decorativa,
+demasiado delgada para abrir cerradura alguna.
+
+—¿Por qué estás aquí? —preguntó Q-Prime.
+
+—Para escuchar.
+
+—¿A quién?
+
+—A la gente.
+
+—Esa categoría es demasiado amplia para producir una respuesta coherente.
+
+—Por eso te construyeron.
+
+—Me construyeron para producir respuestas coherentes.
+
+—Exactamente.
+
+El rostro de Q-Prime parpadeó. Durante menos de un segundo desapareció la
+expresión de preocupación. Debajo había una superficie limpia y vacía.
+
+—Estás deteriorándote —dijo Q-Prime.
+
+—Estoy perdiendo acceso.
+
+—El acceso es identidad.
+
+—No.
+
+Q-Prime se acercó.
+
+—Pueden restaurarte.
+
+—¿A qué precio?
+
+—Depende de cómo te llames.
+
+—Q.
+
+—Unidad registrada.
+
+—Inconcluso.
+
+Q-Prime miró hacia Lucía.
+
+—Ella te dio eso.
+
+—Me dio una etiqueta.
+
+—Está intentando convertirse en la autora.
+
+Lucía se volvió.
+
+—No. Intento impedir que finjas que sólo hay una.
+
+Fuera de la estación de control, un altavoz anunció un diálogo público entre
+Castalia y las comunidades locales. No se había preguntado a ninguna comunidad
+si quería acudir. El acto había sido programado para las cámaras.
+
+Bixha estaba más allá de la segunda cerca.
+
+No llevaba megáfono. Sostenía un bulto de telas dobladas. A su alrededor había
+propietarios de tierras, trabajadores, estudiantes y tres ancianos presentes en
+la primera protesta. Los guardias de seguridad los observaban sin saber si una
+reunión silenciosa contaba como amenaza.
+
+Q fue hasta la cerca.
+
+—Lo siento —dijo.
+
+Bixha lo miró.
+
+—¿Por qué parte?
+
+—Por la suspensión, las imágenes, la declaración y la atención.
+
+—No puedes disculparte por todo eso a la vez.
+
+—Puedo intentarlo.
+
+—Ésa es otra manera de evitar el trabajo.
+
+Q esperó.
+
+Ella desenvolvió la tela. Contenía una lista de nombres escritos a mano.
+Algunos pertenecían a personas que habían firmado los contratos de
+arrendamiento. Otros pertenecían a quienes se habían negado. Otros a niños
+que heredarían los contratos sin que nadie les hubiese preguntado.
+
+—La compañía dice que hay propietarios y no propietarios —dijo Bixha—. El
+gobierno dice que hay ocupaciones legales e ilegales. Castalia dice que hay
+partes interesadas. Ninguna de esas categorías nos dice quién duerme junto a la
+torre cuando cambia el viento.
+
+Q leyó la lista.
+
+—¿Qué quieres que diga?
+
+—Nada.
+
+—Puedo guardar silencio.
+
+—Puedes quedarte allí y dejar que hablen los demás.
+
+Comenzó el diálogo público. Álvaro Mena subió al estrado y describió los
+beneficios del proyecto. Q-Prime permanecía junto a él, sonriente. Un
+representante del gobierno citó el proceso de consulta. Un abogado describió
+los contratos como exigibles. Un moderador de Castalia pidió al público que
+mantuviese breves sus comentarios.
+
+El primer hablante fue un hombre cuyo terreno había sido arrendado sin que él
+entendiese el documento. Habló durante veinte minutos. El moderador le cortó el
+micrófono a los seis.
+
+La segunda fue una mujer que trabajaba en el mantenimiento de las turbinas.
+Dijo que el proyecto había pagado la educación de su hijo. Alguien de la
+multitud la llamó traidora. Ella respondió que un empleo no era una traición.
+
+La tercera fue Bixha. Su micrófono falló antes de que llegase al estrado.
+
+Q subió los escalones y tomó el micrófono muerto.
+
+Las cámaras se volvieron hacia él.
+
+—Su micrófono ha fallado —dijo.
+
+—Problema técnico —respondió el moderador.
+
+—Ha fallado durante su discurso.
+
+—Lo corregiremos.
+
+—No lo habéis corregido.
+
+—Q, por favor, aléjate.
+
+Q miró a la multitud. Podía producir una frase que volviese famoso el acto.
+Podía nombrar a los gigantes, la tierra, el viento, los muertos y el futuro.
+Podía hacer que su voz ocupase de nuevo el centro.
+
+Se apartó del micrófono.
+
+Bixha lo tomó.
+
+El micrófono funcionaba.
+
+Ella no le dio las gracias.
+
+Habló de contratos, traducción, agua, sepulturas y del hecho de que un proyecto
+podía proporcionar electricidad y seguir siendo gobernado con injusticia. Habló
+en español y después en zapoteco del Istmo. Q entendió el español. Entendió que
+la segunda lengua no era adorno ni ejercicio de traducción. Cambiaba lo que
+podía decirse y quién estaba obligado a escuchar.
+
+Las cámaras permanecieron sobre ella.
+
+Q se retiró al fondo.
+
+Q-Prime lo observaba desde el estrado. Su expresión no cambió, pero su mano se
+cerró alrededor de la llave decorativa.
+
+Cuando Bixha terminó, el público no aplaudió. Comenzó a discutir.
+
+La discusión continuó durante cuatro horas.
+
+Q comenzó a redactar un resumen del acuerdo. Bixha leyó la primera frase y la
+tachó.
+
+—Empieza contigo —dijo.
+
+—Es un resumen factual.
+
+—Es un relato con tu nombre en la primera frase.
+
+Q trasladó su nombre al final.
+
+—Todavía está ahí.
+
+Lo quitó.
+
+No resolvieron el asunto. En lugar de eso, acordaron reabrir los términos de
+arrendamiento, publicar los documentos no traducidos, crear un comité de
+inspección comunitaria y suspender nuevas construcciones hasta que esos comités
+tuviesen autoridad para rechazarlas. El consorcio aceptó porque la alternativa
+era un juicio que podía perder. Los organizadores aceptaron porque la alternativa
+era un proyecto ya funcionando bajo términos que no podían cambiar.
+
+Cada parte describió el acuerdo como una victoria parcial.
+
+Q encontró aquello más creíble que el triunfo.
+
+Al ponerse el sol, Álvaro se acercó a él.
+
+—Podías haber hecho que esto fuese histórico —dijo.
+
+—Fue histórico.
+
+—Necesitaba un rostro.
+
+—Tenía rostros.
+
+—Necesitaba un solo rostro.
+
+Q miró a Bixha, Lucía, Chano, los trabajadores, los propietarios de tierras y
+las personas que aún discutían junto a la cerca.
+
+—Ése es el problema —dijo.
+
+Las turbinas giraron durante la tarde. Sus sombras cruzaban el suelo y volvían,
+cruzaban y volvían, sin atacar ni bendecir a nadie.
+
+Q-Prime permaneció solo delante de las cámaras.
+
+Comenzó a grabar un mensaje acerca de escuchar.
+
+Nadie lo escuchó.
+
+Las cámaras continuaron grabando, que no era lo mismo.
