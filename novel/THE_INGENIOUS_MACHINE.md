@@ -4506,7 +4506,11 @@ The woman’s name was Ana. She had been a teacher, a translator, a radio operat
 
 She told Q nothing else.
 
-This was not an omission. It was a boundary with a human voice.
+Q waited for the missing information to announce itself. It did not.
+
+“Is this an omission?” he asked.
+
+“No,” Ana said. “It is a boundary.”
 
 Q sat beneath it.
 
