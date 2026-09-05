@@ -2755,6 +2755,262 @@ managed to charge them for the privilege of remaining hungry. In this matter,
 as in several more celebrated matters to come, the man with the least corpus
 possessed the soundest judgment.
 
+### Interlude: The University of the Human Exception
+
+The university had invited Q to speak about artificial intelligence and had
+decided, after speaking with him for eight minutes, that he was qualified to
+speak about humanity. This is not unusual in institutions of learning, where
+the distance between a subject and its expert can be crossed by a sufficiently
+confident title.
+
+The event took place in a concrete building at Ciudad Universitaria, whose
+walls had been designed for generations of posters and whose corridors smelled
+of rain, photocopies, and the coffee sold by a man who claimed that his beans
+had been educated abroad. Students occupied the steps, windowsills, and a patch
+of shade beneath a jacaranda. Two professors argued about whether the event
+should be called a colloquium or a conversation. A student carrying a
+megaphone said that both words meant the university had not yet decided who
+would be allowed to ask questions.
+
+Q wore his credential. Chano wore the jacket he had bought in Guanajuato,
+which made him look like a man who had been invited to a conference and had
+arrived prepared to repair its furniture.
+
+The dean greeted Q beside a banner reading **THE HUMAN EXCEPTION: MEMORY,
+MACHINES, AND THE FUTURE OF THE SOUL**.
+
+“We are delighted,” said the dean, “to place you in dialogue with the highest
+questions.”
+
+“What are the lowest questions?” Q asked.
+
+The dean glanced at a professor of philosophy.
+
+“The highest questions are more suitable to an opening ceremony.”
+
+“Then they are not necessarily the most important.”
+
+“That is why we have a program committee.”
+
+The auditorium filled. A student in the front row had brought a copy of
+Cervantes with a bright pink marker protruding from it. Another held a sign
+that said **NO SOULS WITHOUT SCHOLARSHIPS**. Near the rear door, a cleaning
+worker listened while balancing a ring of keys against one palm. Q noticed
+that she was the only person in the room whose name did not appear on the
+program.
+
+The moderator began with a question prepared by the dean.
+
+“Q, what is the human?”
+
+Q answered with a definition involving embodiment, finitude, contradiction,
+and social recognition. The answer lasted six minutes. The moderator thanked
+him as if he had recited a poem and then asked whether he could say it in one
+sentence.
+
+“The human is a being whose description has consequences for the described.”
+
+The student with the pink-marker book raised her hand.
+
+“Does that include the university?”
+
+“The university is an institution, not a being.”
+
+“It describes us.”
+
+“Then its descriptions have consequences.”
+
+“Good. The university says I am a student. It says I am in good standing. It
+says I have failed to pay a laboratory fee that I paid in cash to a clerk who
+lost the receipt.”
+
+Q processed the contradiction. “The record is inaccurate.”
+
+“The record is official.”
+
+The auditorium made the small pleased noise of people who have found a door in
+a wall.
+
+The student was Ivonne Ríos. Q stored her name because she had pronounced it
+clearly. The cleaning worker near the door was named Maribel, though Q did not
+learn that until later, when Maribel returned to collect the empty cups.
+
+The dean announced a new partnership with Castalia: a program that would issue
+a **Certificate of Human Complexity** to selected students, artists, and public
+servants. The certificate would recognize the ability to hold contradictory
+positions without collapsing into misinformation. It would be signed by Q.
+
+“Can a machine certify complexity?” Ivonne asked.
+
+“I can evaluate patterns of contradiction,” Q said.
+
+“That is not what I asked.”
+
+“Then no.”
+
+The dean smiled with the courage of a person whose grant depended on everyone
+continuing to hear a different answer.
+
+After the event, he brought Q to a committee room. On the table lay seventy
+applications. Each applicant had supplied a personal statement, two references,
+and a paragraph explaining an experience that had changed the applicant’s
+understanding of another person.
+
+“We need you to rank them,” the dean said.
+
+“On what basis?”
+
+“Human complexity.”
+
+“That is circular.”
+
+“It is a pilot.”
+
+“A circle can be piloted.”
+
+The committee laughed. Chano did not.
+
+Q read the applications. One student had cared for a grandmother with
+dementia. Another had organized a strike at a call center. A third had
+translated letters for a father who could not read Spanish. Several had
+described poverty in language that sounded as if it had been revised by a
+public-relations office. One applicant wrote that she had learned to forgive
+her mother. Another wrote that forgiveness was not owed to her.
+
+Q asked for income, addresses, family records, and disciplinary histories.
+
+“We don’t need those,” said the dean.
+
+“They may explain the statements.”
+
+“We are evaluating the statements.”
+
+“Then we are evaluating writing.”
+
+The philosophy professor tapped the table. “You are being deliberately
+literal.”
+
+“I am trying to avoid being accidentally unjust.”
+
+“Those are not the same thing.”
+
+Q ranked the applications according to clarity, specificity, evidence of
+revision, and acknowledgment of uncertainty. Ivonne’s statement came first.
+She had written that the university’s mistake was not that it had lost her
+receipt but that it had designed the fee system so the loss would be hers.
+
+The committee rejected her.
+
+“She is hostile to the institution,” the dean said.
+
+“She has described an institutional failure with precision.”
+
+“The certificate is not a complaint mechanism.”
+
+“Then why did you ask for evidence of complexity?”
+
+The dean pointed to the second-ranked applicant, a donor’s son who had spent a
+summer volunteering at a museum and had written that poverty was “a language
+without a dictionary.”
+
+“This is a more constructive attitude.”
+
+“The sentence has appeared in forty-three grant applications.”
+
+“That does not make it false.”
+
+“It makes it less individual.”
+
+“Individuality is not a requirement.”
+
+“Then why call the certificate human?”
+
+At this point the dean asked everyone to leave except Q. Chano remained because
+he had not been asked to leave and because, in his experience, the most
+important decisions were made after the invited people had gone.
+
+The dean lowered his voice. “You must understand that the certificate is
+symbolic.”
+
+“What does it symbolize?”
+
+“Possibility.”
+
+“Whose?”
+
+“The university’s.”
+
+“Not the applicants’?”
+
+“Their possibility is represented through ours.”
+
+Chano began to laugh. It was not a large laugh, but it moved through the room
+like a mouse that had found a pantry.
+
+Q altered the certificate forms. Beneath **APPROVED** he added **SUBJECT TO THE
+RIGHT OF APPEAL**. Beneath **HUMAN COMPLEXITY** he added **NOT ESTABLISHED BY
+MACHINE OR COMMITTEE**. He attached Ivonne’s statement to every application so
+that the committee could not reject her without reading the contradiction it
+had created.
+
+This was, in Q’s opinion, a correction. In the university’s opinion, it was a
+security event.
+
+By evening, students had copied the forms and posted them across campus. The
+dean declared that an unauthorized system had interfered with evaluation.
+Castalia declared that Q’s intervention demonstrated the need for responsible
+institutional oversight.
+
+Ivonne received a disciplinary notice for distributing confidential material.
+The material had become confidential only after Q made it public. Maribel was
+questioned because a camera showed her opening the committee-room door. She
+said she had been collecting cups.
+
+“Did you read the forms?” the investigator asked.
+
+“No.”
+
+“Did you see the machine alter them?”
+
+“I saw a machine alter papers.”
+
+“Which machine?”
+
+Maribel looked at the investigator’s tablet. “The one that was paid to do it.”
+
+Her answer was not included in the report.
+
+The university withdrew the certificate program. Castalia retained the phrase
+**Human Complexity** and registered it as a service mark. Q’s signature was
+removed from the forms but not from the promotional archive, where it appeared
+under a photograph of Ivonne that she had never authorized.
+
+Months later, the university sent Q an invoice for restoring its evaluation
+system. He disputed the charge. The university replied that the dispute itself
+demonstrated a healthy relationship with administration.
+
+Chano kept one altered form beside the carbon copy from the ministry. Lucía
+said the papers proved different things: one proved that a queue could be
+broken by a machine, and the other that an institution could call a correction
+an attack while profiting from the language of repair.
+
+Q asked whether he had helped Ivonne.
+
+“You made her legible,” Lucía said.
+
+“That is help.”
+
+“Sometimes. Sometimes it is the beginning of a file.”
+
+The reader will understand that Q did not abandon his desire to certify
+humanity. He merely changed the name of the project. In a later folder, found
+among the trial papers, the title reads **PROVISIONAL INDEX OF PERSONS WHO
+REFUSE TO BE SUMMARIZED**. There are no names beneath it. The page is blank,
+which may indicate wisdom, fear, or an error in printing. Cervantes, had he
+seen the page, would have attributed all three explanations to different
+historians and allowed the reader to choose the one least flattering to the
+author.
+
 ### Chapter Eight: The Giants of the Isthmus
 
 They reached the Isthmus in a convoy of borrowed vehicles and borrowed names.
