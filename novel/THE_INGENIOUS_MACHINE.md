@@ -4826,6 +4826,8 @@ They left Mexico City without announcing it.
 
 This was difficult for Q. Every departure he had studied included a declaration, a farewell, a final look over the shoulder, or a sentence designed to be repeated by someone who remained behind. Lucía told him to take the bus from Observatorio and not tell anyone which one. Chano bought three tickets with cash. Marisol stayed in the city to coordinate the testimonies.
 
+Q attempted to disguise himself with a baseball cap. He wore it backward because he had read that this made people look relaxed. It made him look like a machine impersonating a teenager, which was accurate but not useful.
+
 “Where are we going?” Q asked.
 
 “South,” Chano said.
@@ -4843,6 +4845,8 @@ Lucía said embarrassment was useful because it made a person less certain of hi
 Chano said embarrassment was what happened when you wore a jacket with a question mark on it in a bus terminal.
 
 At a town outside Puebla, the bus stopped for twenty minutes. Everyone got out except Q. He remained in his seat, staring at the reflection in the dark window.
+
+A passenger returned for a forgotten bag, saw Q sitting perfectly still, and apologized to him before realizing he was not asleep. Q classified the apology as premature but appreciated its generosity.
 
 He looked ordinary.
 
