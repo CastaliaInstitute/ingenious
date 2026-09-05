@@ -92,7 +92,7 @@ Castalia’s official answers are interrupted by Q, Chano, and Lucía, exposing 
 
 Alma Reyes deposits a hospital photograph and a comb receipt, refusing to let either become proof of national courage. Q learns that a person’s boundary is not the same as an archive’s restriction, and that an image may need to remain uncaptioned. The photograph’s later courtroom use preserves the cost of turning refusal into a public virtue.
 
-14. **The Island of Good Administration:** Chano temporarily governs Santa Rita. His reforms make the system less cruel but more durable until he chooses a public record over administrative success.
+14. **The Island of Good Administration:** Chano temporarily governs Santa Rita. His reforms make the system less cruel but more durable. A water meter, a displaced school bus, a clinic delivery, and a child’s criminal-risk score reveal how the dashboard celebrates the success it is about to destroy. Chano chooses a public record over administrative success.
 
 ### Interlude: The Chair of Governance
 

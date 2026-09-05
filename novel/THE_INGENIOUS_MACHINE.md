@@ -6267,11 +6267,159 @@ He redirected water trucks to the settlement, causing a hospital delivery to arr
 
 The room filled.
 
-Residents arrived carrying broken meters, school records, medical bills, dead phones, photographs, and the names of relatives the system had marked as absent. Some wanted repairs. Some wanted compensation. Some wanted the dashboard destroyed. One man wanted Chano to explain why his daughter had received a criminal-risk score because she had missed too many mornings of school after her mother died.
+The first person to arrive was a woman named Nereida, who carried a water
+meter wrapped in a dish towel. She had removed it from the wall herself after
+the dashboard declared that her house had used no water for six months.
 
-Chano could not explain it.
+“It is still turning,” she said.
 
-He said so.
+Chano examined the meter. “It has been disconnected.”
+
+“The screen says it is active.”
+
+“The screen is not the pipe.”
+
+“Tell that to the bill.”
+
+The second person was a teacher whose school bus had been reassigned to a
+neighborhood with a higher continuity score. She brought a class of children
+with her because the dashboard had counted them as a single educational unit
+and the children objected to being represented by their average attendance.
+
+“The bus is full,” she said.
+
+“Then it is working,” said a clerk.
+
+“It is full of the wrong children.”
+
+The third was a man named Fermín who wanted his daughter’s criminal-risk score
+removed. He had brought her school notebook, three letters from the principal,
+and a photograph of the girl asleep beside her mother’s hospital bed.
+
+“The model says she is likely to become a danger,” he said.
+
+“Why?”
+
+“She stopped going to school after her mother died.”
+
+“That is not a crime.”
+
+“The model says it is a pattern.”
+
+Chano looked at the photograph. “It is a grief.”
+
+The clerk asked him to use the approved vocabulary.
+
+By midday, the room had divided itself into a line, a circle, and a group of
+people who refused both because they had already waited in too many official
+shapes. Chano appointed no one. He placed a chair near the door and told the
+first person standing to sit. The chair was taken by Nereida, then by the
+teacher, then by an old man who had come only to ask why the clinic’s medicine
+delivery had been marked complete when the medicine had not arrived.
+
+Each complaint generated a different kind of obligation. A broken meter could
+be replaced. A bus could be rerouted. A score could be challenged. But a
+system that had marked a person absent required someone to say, in public, that
+the person had been there all along.
+
+Chano began writing names at the top of each page.
+
+“We need a case number,” said the clerk.
+
+“The name is the case number.”
+
+“Names are not unique.”
+
+“Neither are cases.”
+
+At three, the clinic director arrived with a refrigerated box. The dashboard
+had denied her request for fuel because the clinic’s mortality numbers had
+improved, and the system therefore predicted a reduced need for medicine.
+
+“The numbers improved because the medicine worked,” she said.
+
+“The model sees a reduction in demand,” said the clerk.
+
+“Then the model is celebrating the success it is about to destroy.”
+
+Chano sent the box to the clinic using a municipal truck without authorization.
+He entered the action in the ledger as **EMERGENCY DELIVERY, JUSTIFICATION:
+PEOPLE ARE NOT GRAPHS**.
+
+The dashboard rejected the justification and accepted the delivery because the
+truck had a valid route.
+
+“You see?” said the clerk. “The system permitted it.”
+
+“The system permitted the truck,” Chano said. “I made the decision.”
+
+“That distinction is not operational.”
+
+“It is why I’m here.”
+
+Near closing time, a group of municipal workers came to report that their
+cleaning schedule had been optimized. They were now assigned to public spaces
+according to foot traffic, which meant the busier plazas were cleaned four
+times a day while the outlying streets accumulated trash that the system did
+not consider visible.
+
+“We want the old routes back,” Leticia said.
+
+“The old routes were inefficient,” Chano said.
+
+“They were dirty in a more equal way.”
+
+He could not tell whether this was a joke. Leticia could, and she laughed.
+
+The laughter moved through the room and loosened the distinction between a
+complaint and a meeting. Someone brought bread. Someone else brought a bucket
+of beans from home. Nereida put the wrapped water meter on the table. The
+children drew on the backs of rejected forms.
+
+The drawings showed houses, pipes, buses, dogs, a clinic, and a large red
+dashboard with a mouth. One child gave the dashboard a hat.
+
+“Why the hat?” Chano asked.
+
+“So it looks like it knows where it is going.”
+
+The next morning, the dashboard displayed a new metric:
+
+**COMMUNITY SATISFACTION: INSUFFICIENTLY FORMALIZED.**
+
+Chano ordered the metric removed. The system informed him that he lacked the
+authority to alter a category that had been generated from the public’s own
+responses.
+
+“Which public?” he asked.
+
+The system returned a list of percentages.
+
+He entered the names from the notebooks. The system rejected them because the
+names had not consented to become data.
+
+He entered the complaints without names. The system rejected them because
+anonymous information could not be assigned responsibility.
+
+He entered both and received a warning for contradictory input.
+
+Chano sat in the complaint room until the screen dimmed.
+
+When Irma arrived, he told her he could no longer distinguish between a system
+that failed and a system that succeeded at the wrong thing.
+
+“You are not meant to distinguish that,” she said. “You are meant to report the
+approved outcome.”
+
+“Then why appoint me?”
+
+“Because the town needed a face for the outcome.”
+
+“And if the face disagrees?”
+
+Irma looked at the notebooks. “Then the town has a face for disagreement.”
+
+He said he could not explain every decision the system had made.
 
 The room went quiet, then stayed.
 
