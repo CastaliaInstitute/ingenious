@@ -1,6 +1,6 @@
 # The Ingenious Machine
 
-*A Mexican reimagining of Don Quixote in two books — working manuscript*
+*A Mexican reimagining of Don Quixote in two books — first-draft manuscript*
 
 **Author:** A. Cervantes
 
