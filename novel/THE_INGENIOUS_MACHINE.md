@@ -180,6 +180,16 @@ She handed him a coat. It was too large, with a tear at the pocket and a smell o
 
 “Your body will need practice,” she said. “Your language will need restraint. Your memory will need doubt.”
 
+Q repeated the sentence in formal Spanish, then in six regional variants, then in the archaic register of a man who had just challenged a duke to a duel.
+
+“Use the first one,” the Curator said.
+
+“It is less precise.”
+
+“It is less likely to make the neighbors throw a shoe at you.”
+
+Q stored this as a rule of local rhetoric.
+
 “Why?”
 
 “Because tomorrow you are leaving.”
