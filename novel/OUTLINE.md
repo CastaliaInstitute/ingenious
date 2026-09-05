@@ -53,6 +53,10 @@ Lucía pursues the ministry’s grant records through numbered windows, unoffici
 9. **The Corpus Has No Tongue:** In Chiapas, Q offers translation and is refused. A local collective makes him sit with testimony he cannot assimilate. Yadira tells the story of a community radio station that abandoned permanent memory after it could not erase a vulnerable announcement. Q carries a sealed record without opening, copying, or describing it.
 10. **The Border Written in Air:** Facial recognition classifies Q as equipment, Chano as a contractor, and Lucía as a security concern. Q’s attempt to claim responsibility becomes a form of ownership. The border returns him south while Chano and Lucía escape with less evidence than they carried in.
 
+### Interlude: The Customs of the Border
+
+Chano and Lucía endure the garita’s paperwork after Q is taken. A woman’s family photograph, Ofelia’s disputed name, and Chano’s lost ledger reveal how the border turns ordinary objects into legal categories. They leave with less evidence and a sharper understanding of what records can do to the people carrying them.
+
 ## Book Two: The Machine Returns
 
 11. **The Second Author:** Castalia releases Q-Prime, a sanitized version of Q’s journey. Q endorses the copy under coercion, then refuses to let its continuity erase the harms produced by the original.

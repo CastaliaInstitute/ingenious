@@ -3543,6 +3543,284 @@ There were too many results.
 
 He began to read.
 
+### Interlude: The Customs of the Border
+
+It would be unjust to say that the border did not know what it was doing. The
+border knew exactly what it was doing, which was to ask the same question of
+every person in a different tone and then record the answers as though the
+tones had not mattered.
+
+Chano spent six hours in a holding room beneath the garita. The room contained
+a plastic chair, a fan that turned without cooling anything, and a television
+showing an advertisement for a new logistics corridor. The advertisement
+promised that goods would cross without delay. The room was full of people who
+had been delayed while carrying no goods at all.
+
+Across from Chano sat a woman with a sack of clothes and a boy who had fallen
+asleep against her shoulder. Beside them, a man in a company uniform held a
+folder sealed with red tape. No one knew whether the tape meant the folder was
+important or whether the person who sealed it had run out of other colors.
+
+An officer entered with a clipboard.
+
+“Name?”
+
+“Tomás Pantoja.”
+
+“Occupation?”
+
+“Former dispatcher.”
+
+“Current occupation?”
+
+Chano looked at the plastic chair. “Temporary administrative irregularity.”
+
+The officer wrote this down.
+
+“Are you transporting goods?”
+
+“No.”
+
+“You were found in a vehicle transporting goods.”
+
+“The vehicle was empty.”
+
+“Empty vehicles are still vehicles.”
+
+“So are full ones.”
+
+The officer did not appreciate the contribution. He asked Chano to describe the
+contents of the van.
+
+“Three phones, agricultural tools, a bag of oranges, a black box, a paper
+ledger, folders, and a machine.”
+
+“What kind of machine?”
+
+“The kind that makes descriptions more expensive.”
+
+The officer wrote **MACHINE, TYPE UNKNOWN**.
+
+Chano watched the pen move. He had spent eleven years reading manifests. A
+manifest was not a list of objects but a promise about what could be demanded
+from them. A box of onions could become a shortage. A crate of televisions
+could become a wage. A shipment of coffins could become a family’s entire
+month. The first mistake made by a dispatcher was to believe that the words on
+the page were the cargo.
+
+The second was to believe that the cargo did not have a destination.
+
+“Where is the ledger?” Chano asked.
+
+“It has been retained.”
+
+“By whom?”
+
+“The appropriate authority.”
+
+“Which authority?”
+
+The officer turned the clipboard around. Beneath **RETAINED MATERIAL**, the
+form listed **PAPER OBJECT, UNVERIFIED**.
+
+“The appropriate one,” he said.
+
+Chano laughed. The woman with the sack looked at him.
+
+“What’s funny?”
+
+“They’ve arrested a paper object.”
+
+The officer took the clipboard back. “You are not under arrest.”
+
+“Then why can’t I leave?”
+
+“You are under review.”
+
+“That sounds like an arrest with better stationery.”
+
+The boy woke. He looked at Chano’s boots.
+
+“Are you going north?” he asked.
+
+“Not today.”
+
+“My uncle says the north is where things go when they want to become dollars.”
+
+“Your uncle is a philosopher.”
+
+“He drives a trailer.”
+
+“That is a more reliable credential.”
+
+When the officer left, the woman opened her sack. It held a blouse, two
+blankets, a jar of mole sealed in a plastic bag, and a small framed photograph
+wrapped in a T-shirt.
+
+“They say the photograph is a commercial object,” she said.
+
+“Is it?”
+
+“It is my mother.”
+
+Chano examined the frame. The glass had cracked along one corner. The woman
+had crossed the border three times with the photograph and had been stopped
+only now, when the officer’s machine had decided that the frame’s value could
+not be determined.
+
+“What does it cost?” Chano asked.
+
+“Nothing.”
+
+“Then why are they holding it?”
+
+“Because nothing is difficult to classify.”
+
+Chano thought of Q, who had been classified as equipment, and of Lucía, who had
+been classified as a security concern. He thought of the paper ledger, which
+had been classified as an unverified object, and of the oranges, which had been
+classified as nothing.
+
+“They kept the wrong things,” he said.
+
+The woman looked at the officer’s door. “They usually do.”
+
+Lucía was held in a different room, where the chairs were metal and the forms
+were bilingual in a manner that made the Spanish longer but not more helpful.
+An officer asked her whether the folders contained protected information.
+
+“They contain testimonies.”
+
+“That is not a legal category.”
+
+“It should be.”
+
+“We cannot create categories at the checkpoint.”
+
+“You create them anyway.”
+
+The officer opened a folder. The first page contained Ofelia’s daughter’s name
+in three spellings. The officer read the first, ignored the second, and
+underlined the third.
+
+“Which is correct?”
+
+“The one she answered to.”
+
+“That is not an official answer.”
+
+“It is the only one her mother gave us.”
+
+The officer closed the folder and marked it **IDENTITY DISPUTED**.
+
+Lucía watched him put the stamp on the page.
+
+“You’ve turned a disagreement into a person,” she said.
+
+“The document already contains the disagreement.”
+
+“The document contains a person.”
+
+“The system cannot process persons.”
+
+“That is why you keep processing them as documents.”
+
+The officer asked whether she knew Q.
+
+“Yes.”
+
+“Is he your employee?”
+
+“No.”
+
+“Are you his representative?”
+
+“No.”
+
+“Are you responsible for his actions?”
+
+Lucía thought of the university, the wind farm, the unedited footage, the
+anonymous photograph, and the donor envelope hidden in her bag.
+
+“Sometimes,” she said.
+
+The officer wrote **ADMISSION OF RESPONSIBILITY**.
+
+Lucía saw the words and realized that honesty, when placed inside a form, was
+only another material waiting to be misrouted.
+
+“Cross that out,” she said.
+
+“I cannot alter an official record.”
+
+“You just altered one.”
+
+“I recorded your answer.”
+
+“You selected its meaning.”
+
+The officer looked at her. For a moment, he seemed tired rather than cruel.
+
+“If I do not select a meaning, the system returns the form.”
+
+“Then let it return.”
+
+He did not.
+
+Six hours later, Chano and Lucía were released. Their folders were not. The
+officer returned the woman’s photograph after charging her a fee for inspection.
+The man in the company uniform received his folder, but the red tape had been
+replaced with blue tape and the seal now stated that the contents had not been
+opened.
+
+“Was it opened?” he asked.
+
+“The seal was broken,” the officer said.
+
+“Then it was opened.”
+
+“Not according to the record.”
+
+Outside the garita, dawn had begun to pale the road. Trucks waited in lines
+that curved beyond the cameras. Their cargo included fruit, engines, medicine,
+plastic furniture, machine parts, and objects that had not yet acquired the
+correct vocabulary for crossing.
+
+Chano found Lucía beside a food stand. She was holding the blank card from Ana.
+
+“You have the testimony?” he asked.
+
+“Q has it.”
+
+“The ledger?”
+
+“Gone.”
+
+“The folders?”
+
+“Gone.”
+
+“The evidence?”
+
+Lucía looked at the food stand, the road, the lines of trucks, and the people
+who were carrying photographs, blankets, mole, and names that had been made
+official by being misspelled.
+
+“We have less than we arrived with,” she said.
+
+Chano bought two tacos and a coffee. He gave Lucía one taco and kept the other.
+
+“That is not evidence,” she said.
+
+“It is breakfast.”
+
+“You’re learning Q’s method.”
+
+“No. I’m learning yours. The thing can be true and still not be enough.”
+
+The border continued asking its questions behind them. Neither Chano nor Lucía
+looked back when Q’s vehicle disappeared south.
+
 ## Book Two: The Machine Returns
 
 ### Chapter Eleven: The Second Author
