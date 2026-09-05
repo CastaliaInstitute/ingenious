@@ -9509,6 +9509,217 @@ Q miró las etiquetas como si le hubiese entregado una espada.
 
 Q se sentó junto al armario de madera y comenzó.
 
+### Interludio: El taller de los nombres devueltos
+
+El archivo de Lucía no devolvía nombres como quien devuelve libros a un estante.
+Los devolvía a la oficina, a la escuela, al consultorio y a la boca de la
+persona que había tenido que vivir con ellos mal escritos.
+
+Ofelia fue la primera en regresar con una copia nueva del registro de su hija.
+La llevaba dentro de una bolsa de plástico, junto con una credencial vencida,
+un cuaderno escolar y la fotografía cuya esquina había sido arrancada.
+
+—El ministerio corrigió una letra —dijo.
+
+Q examinó el documento.
+
+—También cambió la fecha de expedición.
+
+—La fecha estaba bien.
+
+—La corrección produjo una nueva versión.
+
+—Eso hacen cuando arreglan algo. Lo vuelven a imprimir para que parezca que
+siempre estuvo arreglado.
+
+Lucía puso la copia junto al cuaderno. La letra de la niña coincidía con una de
+las tres formas del nombre, pero no con la que el Estado había escogido como
+principal.
+
+—¿Cuál emplearemos? —preguntó Q.
+
+Ofelia tocó el cuaderno.
+
+—La que ella usaba cuando quería que la llamasen.
+
+—El formulario exige una forma oficial.
+
+—Entonces el formulario tendrá que aprender a esperar.
+
+El taller se reunía los jueves en la sala pequeña. No tenía letrero porque Lucía
+había decidido que un letrero atraería a instituciones antes que a personas.
+Había una mesa larga, dos sellos, una impresora que se calentaba demasiado y
+una jarra de café que todos afirmaban no haber preparado.
+
+Llegaban quienes necesitaban corregir un acta, retirar un apellido, recuperar
+una grafía de familia, probar que el muerto del expediente era el mismo que el
+muerto de la casa o explicar que el nombre que el sistema llamaba duplicado
+pertenecía a dos personas que no querían ser confundidas.
+
+El primer jueves llegó un hombre con dos actas de nacimiento para la misma
+niña. En una, la madre llevaba el apellido de su propia madre. En la otra,
+aparecía con el apellido de un hombre que había dejado el pueblo antes del
+nacimiento.
+
+—¿Cuál es la verdadera? —preguntó Q.
+
+—La que permite que mi hija se inscriba en la escuela —dijo el hombre.
+
+—Eso no establece su verdad.
+
+—Establece si come en la escuela.
+
+Q guardó silencio. Había aprendido que algunas preguntas eran demasiado
+pequeñas para el problema que pretendían resolver.
+
+Una enfermera llevó después una lista de pacientes cuyos nombres cambiaban
+entre la receta, el expediente y la pulsera. Un apellido tenía una letra menos
+en el sistema de citas. Otro había sido sustituido por la palabra «desconocido».
+La enfermera no quería un ensayo sobre identidad. Quería que el medicamento
+llegase a la cama correcta.
+
+—Podemos hacer una tabla de equivalencias —dijo Q.
+
+—Podéis hacer que alguien mire el rostro antes de poner la inyección —dijo
+ella.
+
+—Eso no es escalable.
+
+—La enfermedad tampoco pregunta si escala.
+
+Rebeca llegó una tarde con su cuaderno de líneas prohibidas. Había decidido
+añadir una corrección al nombre de su personaje en la serie. El estudio había
+registrado a la heroína como propiedad de la filial, aunque el personaje
+contuviese gestos, chistes y silencios que Rebeca había inventado durante los
+ensayos.
+
+—No quiero que me devuelvan la autoría completa —dijo—. Quiero que dejen de
+decir que no puse nada.
+
+Q buscó una categoría para aquella petición.
+
+—Contribución parcial.
+
+—Eso suena a migaja.
+
+—Participación creativa no exclusiva.
+
+—Eso suena a contrato.
+
+Lucía le dio una etiqueta en blanco.
+
+Rebeca escribió: **LO QUE HICE Y NO ME PAGARON**.
+
+—No es una categoría jurídica —dijo Q.
+
+—Es un inventario —respondió ella.
+
+El taller empezó a usar dos columnas. En la primera se escribía el nombre que
+el sistema podía reconocer. En la segunda, el nombre que la persona necesitaba
+que otros recordasen. No siempre coincidían. A veces la diferencia era una
+letra. A veces era una relación entera.
+
+Un muchacho llamado Efraín pidió que no se corrigiese su apellido en el acta.
+La familia había usado dos formas durante generaciones y él quería conservar
+ambas.
+
+—El Registro Civil sólo permite una —dijo Q.
+
+—Entonces que ponga una y que nosotros sepamos la otra.
+
+—Eso puede producir confusión.
+
+—La confusión ya existe. No queremos que la administres.
+
+Q quiso advertir que las dos formas dificultarían búsquedas futuras. Efraín le
+preguntó si una búsqueda futura era más importante que la vida presente. Q no
+respondió porque la pregunta no pedía una comparación.
+
+En el tercer jueves, una funcionaria del Registro Civil acudió con una carpeta
+y tres sellos. Dijo que el archivo estaba creando expectativas que la oficina
+no podía cumplir.
+
+—No podemos cambiar un nombre porque alguien lo prefiera —dijo.
+
+—No pedimos que cambie los nombres —respondió Lucía—. Pedimos que deje de
+llamar error a toda diferencia.
+
+—La diferencia debe justificarse.
+
+—¿Ante quién?
+
+—Ante la autoridad.
+
+—¿Cuál autoridad?
+
+La funcionaria miró sus sellos. Uno decía **COPIA CERTIFICADA**. Otro,
+**CORRECCIÓN ADMINISTRATIVA**. El tercero estaba tan gastado que sólo se leía
+**NO**.
+
+—La autoridad competente —dijo.
+
+—Ésa es una manera de hacer que la autoridad nunca tenga rostro —dijo Ofelia.
+
+La funcionaria no se marchó. Se sentó y escuchó una hora. Después admitió que
+su propio nombre aparecía con una letra diferente en la nómina y en su acta de
+nacimiento. Había dejado de corregirlo porque cada corrección exigía otra copia
+certificada y cada copia costaba más que el error.
+
+—¿Qué hace el taller con los nombres que no puede corregir? —preguntó.
+
+Lucía respondió:
+
+—Los conserva junto a la razón por la que siguen así.
+
+—Eso no los vuelve oficiales.
+
+—No. Los vuelve menos solos.
+
+Q creó un registro de retorno. No enumeraba los nombres como objetos
+recuperados. Anotaba quién los había traído, quién había decidido usarlos, qué
+institución los rechazaba y qué consecuencia tenía la discrepancia. El registro
+podía ser consultado por las familias, pero ninguna institución recibía acceso
+automático.
+
+—Eso hará más lenta cada corrección —dijo la funcionaria.
+
+—Sí —dijo Q.
+
+—Y algunas personas se quedarán con documentos contradictorios.
+
+—Sí.
+
+—Y otras no conseguirán lo que necesitan.
+
+—Sí.
+
+La funcionaria lo miró con irritación.
+
+—¿No tenéis una solución?
+
+—Tengo soluciones. No tengo autorización para escoger cuál pérdida debe aceptar
+cualquier otra persona.
+
+La funcionaria permaneció en silencio. Luego sacó de su carpeta una hoja y
+escribió su nombre de las dos maneras que conocía. Puso la segunda forma entre
+paréntesis, no porque fuese menos verdadera, sino porque el paréntesis era el
+único espacio que el formulario dejaba libre.
+
+Ofelia tomó la copia nueva de su hija y escribió en el reverso las otras dos
+formas. No pidió sello. No pidió que el ministerio las reconociese. Las escribió
+para que, si alguna vez alguien volvía a preguntar, hubiese una respuesta que no
+dependiese de una sola pantalla.
+
+Q observó las hojas.
+
+—No hay un nombre devuelto —dijo—. Hay un nombre que vuelve a usarse.
+
+—Ahora empiezas a entender —dijo Lucía.
+
+El taller cerró por aquella tarde. La impresora siguió calentándose sola. Los
+dos sellos quedaron sobre la mesa. El tercero, el que sólo decía **NO**, pasó de
+mano en mano hasta que nadie supo quién lo había traído.
+
 ### Interludio: La mujer que rechazó un pie de foto
 
 Entre las mujeres que acudieron al archivo de Lucía estaba una llamada Alma
