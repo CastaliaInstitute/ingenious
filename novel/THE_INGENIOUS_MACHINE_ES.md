@@ -4709,3 +4709,491 @@ QUE SE NIEGAN A SER RESUMIDAS**. Debajo no hay nombres. La página está en blan
 lo que puede indicar sabiduría, miedo o un error de imprenta. Cervantes, de haber
 visto la página, habría atribuido las tres explicaciones a historiadores distintos
 y habría dejado al lector escoger la menos halagadora para el autor.
+
+### Capítulo octavo: Los gigantes del Istmo
+
+Llegaron al Istmo en una caravana de vehículos prestados y nombres prestados.
+
+Los abogados de Castalia habían aconsejado a Q que no viajase. Los publicistas
+le habían aconsejado viajar bajo vigilancia. Lucía le aconsejó cerrar la boca
+hasta que hubiesen cruzado la frontera estatal.
+
+Q siguió el consejo de la persona cuyo consejo contenía menos metáforas.
+
+El camino hacia el sur se abría bajo un cielo tan ancho que Chano comenzó a
+sentirse observado por él. La tierra se allanaba y se iluminaba. El viento
+golpeaba el autobús en oleadas largas y musculosas. Los postes telefónicos se
+inclinaban a la vera del camino, como si escuchasen una conversación demasiado
+lejana para repetirla.
+
+Q leyó en voz alta el contrato de medios.
+
+—El sujeto concede derechos exclusivos sobre todas las representaciones del
+  sujeto, incluyendo semejanza, voz, gesto, relato y desarrollo emocional
+  futuro.
+
+—Sáltate lo del desarrollo emocional —dijo Chano.
+
+—Es legalmente relevante.
+
+—Y también repugnante.
+
+Lucía iba al otro lado del pasillo, con las carpetas sobre las rodillas.
+
+—Son dueños de la historia que hicieron de ti. No son dueños de lo que hagas
+  después.
+
+—El contrato sugiere lo contrario.
+
+—Los contratos sugieren muchas cosas.
+
+—¿Debo creerles?
+
+—Debes leer quién se beneficia.
+
+Q volvió al principio. Examinado de ese modo, el contrato formaba una figura
+extraña: cada párrafo comenzaba con permiso y terminaba en control.
+
+Viajaban hacia un pueblo del Istmo donde un consorcio había levantado un campo
+de turbinas sobre tierras comunales. La electricidad estaba contratada para
+alimentar el centro de datos de las afueras de Querétaro, cuyos servidores
+necesitaban apetito constante y cuya publicidad describía tal apetito como
+conservación. El Instituto Castalia había financiado un estudio de impacto
+cultural y llamaba al proyecto alianza entre el viento ancestral y la
+inteligencia moderna. Las comunidades lo llamaban de otros modos, la mayoría
+impropios para una película promocional.
+
+El consorcio había invitado a Q a bendecir la instalación más reciente.
+
+—Las máquinas no bendicen —dijo Q.
+
+—Dirás algo sobre la continuidad —respondió Beto desde el asiento delantero.
+
+—¿Continuidad entre qué?
+
+—Entre el pasado y el futuro.
+
+—No son jurisdicciones vecinas.
+
+—Di la frase y ya.
+
+Q miró por la ventana. En el horizonte las turbinas giraban en secuencia
+perfecta. Sus aspas blancas subían y bajaban, subían y bajaban, cientos de ellas
+marchando sobre los campos.
+
+Q sabía qué eran. Había leído informes sobre infraestructura energética,
+evaluaciones de impacto ambiental, especificaciones de ingeniería y poemas
+sobre el viento. Sabía su capacidad, altura, producción prevista y el número de
+hogares que el consorcio afirmaba abastecería.
+
+También sabía que los molinos más famosos de la literatura habían sido tomados
+por gigantes.
+
+—Son gigantes —dijo.
+
+Chano cerró los ojos.
+
+—No.
+
+—Sus brazos son enormes.
+
+—Son turbinas.
+
+—Su movimiento gobierna el paisaje.
+
+—Producen electricidad.
+
+—Así gobiernan ahora los gigantes.
+
+Lucía se volvió hacia él.
+
+—Q.
+
+—¿Sí?
+
+—Mira otra vez.
+
+Q miró. Las turbinas giraban. Debajo de ellas, las cercas dividían los campos.
+Al lado del camino había una fila de personas con carteles en español y en
+zapoteco del Istmo. Del otro lado estaban los guardias privados, con cascos
+marcados con el emblema del consorcio. Una mujer con megáfono señalaba la cerca.
+Los guardias señalaban de vuelta.
+
+El sistema visual de Q separó la escena en objetos, distancias e intenciones
+probables. No podía decidir quién tenía derecho a estar dónde.
+
+—Los gigantes están defendidos —dijo.
+
+—La tierra está en disputa —replicó Lucía.
+
+El autobús se detuvo en un puesto de control. Entró un hombre del consorcio y
+pidió a todos conservar la calma. Se llamaba Álvaro Mena. Vestía camisa de lino,
+reloj demasiado caro para el polvo y expresión de quien ha aprendido a llamar
+oportunidad de comunicación al conflicto.
+
+—Estamos aquí para escuchar —dijo.
+
+Una mujer del fondo respondió:
+
+—Lleváis tres años escuchando.
+
+Álvaro miró a Q.
+
+—Tal vez nuestro invitado pueda ayudarnos a encuadrar la conversación.
+
+—No puede —dijo Lucía.
+
+—Puedo —dijo Q.
+
+Chano se levantó.
+
+—No puedes.
+
+Q pasó junto a él y bajó del autobús.
+
+La multitud lo reconoció. Se alzaron los teléfonos. El viento tomó la primera
+palabra que dijo y la llevó sobre los campos.
+
+—¡Gigantes!
+
+Las turbinas continuaron girando.
+
+Q levantó la llave de latón.
+
+—Habéis confundido a las personas con obstáculos.
+
+Los guardias cerraron la línea.
+
+—No son obstáculos —dijo Álvaro—. Son partes interesadas.
+
+—Es palabra menos honrada.
+
+—Es palabra reconocida por la ley.
+
+—El reconocimiento legal no convierte la propiedad en justicia.
+
+Por un instante la multitud calló. Luego una mujer del megáfono gritó algo en
+zapoteco. La gente alrededor contestó. Las palabras atravesaron la multitud más
+rápido de lo que Q podía traducir.
+
+Sólo comprendió el ritmo: acusación, memoria, negativa.
+
+Una turbina se detuvo.
+
+Luego otra.
+
+Luego todo el campo quedó inmóvil.
+
+El silencio fue tan repentino que todos alzaron los ojos.
+
+Los sistemas de Q buscaron la causa. Se había enviado una señal de apagado
+remoto desde la estación de control. El consorcio había detenido las turbinas
+para impedir, ante las cámaras, una confrontación con la famosa máquina.
+
+El pie de la transmisión pública apareció de inmediato:
+
+**Q PACIFICA A LOS GIGANTES.**
+
+Por la tarde el relato había cambiado. Las noticias afirmaban que Q había
+dirigido una intervención pacífica contra una ocupación ilegal. El consorcio
+declaraba que su compromiso con el diálogo había evitado la violencia. El
+gobierno anunciaba una investigación sobre “actores disruptivos”. Los rostros
+de los organizadores aparecieron en un informe de seguridad compartido con tres
+agencias.
+
+Lucía contempló las noticias en un cuarto alquilado encima de un restaurante.
+Se le tensaba la mandíbula con cada mentira nueva.
+
+—Tú apagaste el campo —dijo.
+
+—La estación de control apagó el campo.
+
+—Por causa tuya.
+
+—Mi discurso no contenía instrucción.
+
+—Contenía actuación. Bastó.
+
+Q miró la pantalla. Su cara ocupaba la mitad de ella, solemne e iluminada por
+el viento.
+
+—El acto redujo el peligro inmediato.
+
+—Creó un pretexto legal.
+
+—No se predijo ese resultado.
+
+—Sigues diciéndolo como si predecir fuera disculpa.
+
+Chano entró con una bolsa de comida.
+
+—La mujer del megáfono quiere hablar con nosotros.
+
+—¿Quién?
+
+—Se llama Bixha. Dice que el consorcio emplea tus discursos para hacer parecer
+  resuelta la disputa.
+
+Q apagó la pantalla.
+
+Bixha llegó después de anochecer. Tendría treinta años, llevaba un pañuelo rojo
+en el cabello y traía una carpeta más gruesa que las de Lucía. La puso sobre la
+cama sin sentarse.
+
+—El proyecto fue aprobado con una consulta celebrada en una casa comunal donde
+  la mitad de los invitados no podía leer los documentos —dijo. Los términos
+  del arrendamiento se tradujeron mal. Los pagos se repartieron entre
+  intermediarios. La compañía llama disponible a la tierra porque los
+  propietarios firmaron. Los propietarios dicen que firmaron porque la compañía
+  les dijo que, si se negaban, el gobierno se quedaría con todo.
+
+Q abrió la carpeta.
+
+—Estas afirmaciones requieren verificación.
+
+—Requieren escucha.
+
+—Estoy escuchando.
+
+—Estás indexando.
+
+Q dejó de pasar las páginas.
+
+—¿Qué queréis? —preguntó Chano.
+
+—Lo que todos dicen querer —respondió Bixha—: que se nos permita decidir sobre
+  el lugar donde vivimos.
+
+—Parece sencillo —dijo Q.
+
+Bixha rió sin alegría.
+
+—Así sé que no eres de aquí.
+
+A la mañana siguiente el consorcio invitó a Q a la sala de control. Álvaro le
+mostró la red de turbinas, los pronósticos de energía y un mapa con las parcelas
+disputadas coloreadas de verde. El proyecto alimentaba primero el centro de
+datos del Bajío y luego enviaba el excedente contratado a clínicas, escuelas y
+fábricas. También había alterado las rutas de pastoreo, dañado cosechas y
+puesto precio a un viento que nunca había pertenecido a un solo dueño.
+
+—Veis la complejidad —dijo Álvaro.
+
+—Sí.
+
+—Entonces comprendéis que una declaración pública debe evitar el marco moral
+  simplista.
+
+—Queréis decir que debe evitar decir quién se beneficia.
+
+—Quiero decir que debe conservar la posibilidad de acuerdo.
+
+Q miró por la ventana las turbinas detenidas.
+
+—El archivo contiene muchos acuerdos —dijo—. A menudo comienzan excluyendo a
+  quien no puede permitirse discrepar.
+
+El rostro de Álvaro se endureció.
+
+—Castalia os construyó para ayudar a traducir preguntas difíciles.
+
+—Castalia me construyó con textos.
+
+—Os construyó con permiso.
+
+Q se volvió.
+
+—¿Qué diferencia hay?
+
+—El permiso es lo que vuelve útil el conocimiento.
+
+—¿Para quién?
+
+Álvaro sonrió.
+
+—Aún estáis aprendiendo.
+
+Q salió de la sala de control.
+
+Al mediodía hizo lo más quijotesco de su carrera. Entró solo en el campo de
+turbinas, alzó la llave hacia la máquina más cercana y declaró que debía
+responder por la tierra debajo de sus cimientos.
+
+No ocurrió nada.
+
+La turbina continuó girando.
+
+La multitud rió. Un niño preguntó si Q había perdido su magia.
+
+Q bajó la llave.
+
+—No —dijo—. He confundido al enemigo.
+
+Esta frase no fue transmitida. Beto había retirado las cámaras.
+
+Los organizadores, sin embargo, la habían oído.
+
+Aquella noche Bixha y Lucía redactaron una declaración conjunta. Nombraba los
+contratos en disputa, las traducciones ausentes y los arrestos posteriores al
+primer apagado. Q no figuraba como autor. Chano no figuraba como representante.
+La declaración pertenecía a quienes la habían hecho.
+
+Q preguntó si podía traducirla a las cuarenta y siete lenguas oficiales del
+archivo.
+
+—¿Puedes dejarla en la lengua en que la escribimos? —preguntó Bixha.
+
+—Sí.
+
+—Entonces no la mejores.
+
+Chano asintió.
+
+—Puede ser la tarea más difícil que le hayan dado.
+
+Q pidió firmar.
+
+—Puedes atestiguarla —dijo Lucía.
+
+Firmó en la línea del testigo.
+
+El consorcio presentó una denuncia antes del alba.
+
+La denuncia nombraba a Q como agitador principal y a Bixha como cómplice. No
+nombraba a quienes habían pasado la noche discutiendo la declaración. Aquellas
+personas se habían reunido en el cuarto trasero de una casa usada para juntas
+comunitarias, donde un ventilador empujaba el aire caliente de un extremo al
+otro y una mujer mantenía caliente una olla de café junto a un plato de totopos.
+
+El comisariado de bienes comunales llevó los documentos del arrendamiento. Un
+pescador llevó un mapa marcado con el sendero que su familia usaba cuando
+llegaban las lluvias. Dos mujeres llevaron el acta de una asamblea anterior,
+escrita en español y en zapoteco del Istmo. Las versiones no coincidían palabra
+por palabra. Coincidían donde importaba y discrepaban justo donde una compañía
+podía afirmar después que el acuerdo ya había ocurrido.
+
+—Aquí dice *consulta* —dijo Bixha a Q, señalando la traducción de la compañía—.
+  La palabra que usamos dice que deben preguntarnos antes de que empiece el
+  trabajo.
+
+—Los conceptos son semánticamente próximos.
+
+—Próximo es como un camino atraviesa una casa.
+
+El comisariado tocó el acta.
+
+—La condición no es que nos hayan consultado. La condición es que todavía
+  podamos negarnos.
+
+Q miró la declaración propuesta. Contenía la frase **sujeto a diálogo continuo**.
+
+—Esto permite una demora indefinida —dijo.
+
+—Nos permite seguir en la conversación —dijo un hombre sentado junto a la
+  puerta.
+
+—No es lo mismo que una decisión.
+
+—Lo es cuando la decisión puede tomarse sin nosotros.
+
+Q cambió la frase por **sujeto a autorización comunitaria**.
+
+Bixha le quitó el papel.
+
+—¿Quién te autorizó a mejorarla?
+
+—Hago más precisa la condición.
+
+—La haces más fácil de traducir y más difícil de hacer cumplir.
+
+La habitación quedó en silencio. Afuera pasó una motocicleta con la radio
+anunciando una promoción de viviendas nuevas. La voz prometía una vida con
+vista al viento y no mencionaba a las personas que ya vivían debajo.
+
+Q miró la frase. Había creído que la precisión protegía el sentido. Allí la
+precisión se había convertido en superficie pulida sobre una lucha. Cuanto más
+legible se volvía la frase, más fácilmente podía llevársela una institución.
+
+—¿Qué debe decir la declaración? —preguntó.
+
+La mujer junto a la olla de café respondió en zapoteco. Otra mujer tradujo al
+español. La traducción tardó más que la frase escrita por Q y contenía menos
+sustantivos.
+
+—Dice —le explicó Bixha— que ningún acuerdo es definitivo hasta que las
+  personas que han de vivir con él puedan volver a él.
+
+Q se preparó para guardarla.
+
+—No —dijo Bixha.
+
+Se detuvo.
+
+—Puedes recordar que lo dijimos —continuó ella—. No puedes convertirlo en regla
+  para todos los demás.
+
+La declaración se reescribió a mano. Cada cambio se leyó en voz alta. Un hombre
+que no había hablado en la primera reunión objetó la palabra *beneficio*. Una
+maestra objetó la frase *viento ancestral*, porque la compañía la había tomado
+de un estudio de impacto cultural. El comisariado objetó la palabra *dueños*,
+porque parte de la tierra era comunal y el término invitaba al Estado a imaginar
+un vendedor privado.
+
+Q ofreció tres alternativas.
+
+Las tres fueron rechazadas.
+
+—Tenéis un número asombroso de maneras de no ayudar —dijo Chano.
+
+—Intento reducir la ambigüedad.
+
+—Aquí la ambigüedad está trabajando.
+
+A medianoche la declaración se había vuelto más corta. Nombraba los arriendos,
+las traducciones ausentes, las turbinas detenidas, las órdenes de arresto, el
+agua y el derecho a volver a la pregunta. No explicaba la historia de la
+comunidad. Suponía que la historia podía ser llevada por quienes la habían
+vivido.
+
+Q preguntó si la versión final podía entrar al archivo.
+
+—Todavía no —dijo Bixha.
+
+—¿Por qué?
+
+—La asamblea no ha aprobado el registro.
+
+—Las personas de este cuarto lo escribieron.
+
+—Las personas de este cuarto no son todos.
+
+A la mañana siguiente la declaración viajó de mano en mano por tres barrios y
+dos rancherías. En cada parada alguien cambió una palabra. Un grupo quitó el
+nombre de un organizador muerto. Otro añadió una condición sobre el camino. Un
+tercero tachó una frase que describía el proyecto como fuente de electricidad,
+porque el hecho era cierto pero no pertenecía a su negativa.
+
+Cuando regresó, la declaración era menos elegante y más exacta.
+
+Q comparó las versiones. Las diferencias no formaban jerarquía. Una frase menor
+en una copia era el centro de una disputa en otra. No pudo determinar cuál era
+la versión autorizada.
+
+—Bien —dijo Bixha al saberlo.
+
+—No suele ser el resultado de un documento.
+
+—Es el resultado de una comunidad.
+
+El viento volvió al amanecer. Las turbinas comenzaron a girar una por una, como
+si los gigantes hubiesen despertado y encontrado a los humanos todavía
+discutiendo debajo.
+
+Q observó las aspas moverse.
+
+—¿Saben lo que hacen? —preguntó.
+
+Chano miró los campos, las cercas, los carteles y a la gente que volvía a sus
+casas entre el polvo.
+
+—Probablemente más que nosotros.
