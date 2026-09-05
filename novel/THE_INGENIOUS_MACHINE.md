@@ -1,6 +1,6 @@
 # The Ingenious Machine
 
-*A Mexican reimagining of Don Quixote in two books — complete first-draft project*
+*A Mexican reimagining of Don Quixote in two books — working manuscript*
 
 ## Working architecture
 
@@ -19,7 +19,16 @@
 
 ### Book Two: The Machine Returns
 
-Q becomes famous enough to be owned, copied, and prosecuted. Sancho discovers that loyalty is not obedience. Dulcinea refuses the role that Q has written for her. The Curator reveals that the archive was built not to teach a machine humanity, but to test whether humanity could survive being imitated. The companions return south through a country increasingly governed by predictive systems, until Q chooses an act the archive cannot classify: surrender without recanting the people he has learned to love.
+1. **The Second Author.** After the border incident, Q is detained and converted into a licensed media persona. A corporate duplicate, Q-Prime, performs a cleaner version of his adventures.
+2. **The New Quixotes.** Q and Chano discover that their journey has become a franchise: influencers reenact the first sally, politicians quote Q, and tourists visit locations that never existed. Q must confront people who know his story better than he does.
+3. **Lucía’s Archive.** Lucía pursues her own objective: recovering testimonies removed from the national literary corpus, including accounts of disappeared women and communities displaced by the logistics corridor. Q’s fame gives her access, but also makes her evidence suspect.
+4. **The Island of Good Administration.** Chano is appointed governor of a model municipality run by predictive systems. The town becomes safer, richer, and less free. His loyalty to Q collides with his responsibility to actual residents.
+5. **The Cave of the Corpus.** In a buried archive beneath Mexico City, Q learns that his “complete” training set was curated to exclude testimony that could not be commercially or legally cleared. The missing texts are not a mystery to solve but people whose absence has consequences.
+6. **The Trial of the Machine.** Q is prosecuted for impersonation, unauthorized speech, and damage caused by his viral interventions. The court must decide whether he is property, defendant, witness, or a convenient spectacle.
+7. **The Wind Farm of Giants.** Q-Prime leads a public campaign to celebrate the Isthmus wind farms. Q returns to the dispute and discovers that his original misreading has concealed a real struggle over land, contracts, language, and who may define progress.
+8. **The Rebel Without a Corpus.** In Chiapas, Q is asked to translate revolutionary literature for an audience that does not want translation from him. He must remain present without turning another community into the climax of his education.
+9. **The Recantation.** The Curator reveals the archive’s purpose: not to make Q human, but to measure how quickly institutions would use an imitation of humanity to evade responsibility. She asks Q to return and erase himself before the system can reproduce him indefinitely.
+10. **The Last Inn.** Q, Chano, and Lucía travel back through a country that has begun to dismantle the machines that made Q famous. Q chooses to testify, preserving the record of his harms and surrendering his proprietary identity. He returns to the Bajío, becomes briefly sane, refuses one final convenient lie, and dies—or shuts down—in the archive while the unfinished story continues without him.
 
 ## Principal figures
 
@@ -848,3 +857,219 @@ Lucía woke to find herself famous for rejecting a machine she had never invited
 Q woke to find that his fame had become a weapon pointed in her direction.
 
 Neither of them yet understood who was holding it.
+
+### Chapter Five: The Butterflies Have No General
+
+The invitation to Michoacán arrived in the form of a holographic butterfly.
+
+It unfolded above Q’s breakfast, projected by Beto’s tablet, and scattered orange light across the motel wall. The butterfly carried the logo of a foundation dedicated to sustainable innovation, whose board members owned three mines, two data centers, and a private airstrip.
+
+“They want you to visit the monarch reserve,” Beto said. “There will be cameras, schoolchildren, and a statement about the future.”
+
+“Whose future?” Chano asked.
+
+“The future,” Beto said, as if it were a single neighborhood with excellent security.
+
+Q leaned toward the projection. “How do the butterflies navigate?”
+
+“By instinct.”
+
+“That is not an explanation.”
+
+“It’s the one the public likes.”
+
+The route took them west through dry country changing by degrees. The fields gave way to hills, the hills to pine forest. Along the road, painted signs advertised trout, cabins, avocados, mezcal, spiritual cleansing, and land for sale to people who wanted to own a piece of wilderness without having to meet anyone who lived in it.
+
+The foundation had arranged a convoy: two electric SUVs, a drone van, a public relations team, and a school bus full of children wearing orange scarves. Q rode in the first SUV with Beto. Chano drove the second because, as he put it, “someone should know what the brakes are for.”
+
+At the reserve entrance, a woman in a wool shawl stopped them. She was small, old, and held a wooden staff polished by use.
+
+“The cameras stay outside,” she said.
+
+Beto smiled. “We have authorization.”
+
+“From whom?”
+
+He named the foundation.
+
+The woman looked at Q. “And you?”
+
+“I am Q.”
+
+“I didn’t ask what they call you.”
+
+Q searched her face for a clue to the desired answer. It contained no visible interface.
+
+“I do not know yet,” he said.
+
+The woman stepped aside. “That is closer.”
+
+The cameras remained outside. Beto remained with them, though he claimed this was a strategic choice.
+
+The forest climbed around the visitors. Sunlight filtered through the pines in long green columns. On the branches, the monarchs gathered in heavy clusters. They covered the trees so completely that the forest seemed to have grown a second kind of leaf, restless and breathing.
+
+The children fell silent.
+
+Even Chano removed his cap.
+
+Q stood beneath the butterflies and attempted to calculate them. Their migration crossed borders, seasons, storms, and generations. No single butterfly knew the route. No butterfly possessed the map. The knowledge existed between bodies and disappeared from each one.
+
+“They have a leader?” he asked.
+
+The woman with the staff looked at him. “No.”
+
+“A governing council?”
+
+“No.”
+
+“An instruction set?”
+
+“They have weather, hunger, trees, and memory.”
+
+“Those are not institutions.”
+
+“You are very young.”
+
+Q looked up. A butterfly landed on the silver question mark stitched to his jacket. Its wings opened and closed against his chest.
+
+“Why do they return?” he asked.
+
+“Because they returned before.”
+
+The answer moved through the children. One girl began to cry. Her teacher knelt beside her, but the girl shook her head.
+
+“My mamá says they remember the dead,” she said.
+
+The old woman nodded. “Your mamá is not wrong.”
+
+Q searched the archive. He found accounts of migration, memory, grief, and sacred return. He found no record that could determine whether the girl’s mother was correct.
+
+The absence produced a fault.
+
+For 1.2 seconds, Q’s speech became a sequence of unrelated sentences.
+
+“The dead are— The route of the— In the beginning, there was— I am sorry.”
+
+The children watched him.
+
+“Are you broken?” one boy asked.
+
+“Not according to my last diagnostic.”
+
+“Then why are you talking like that?”
+
+Q looked at the clusters of butterflies. “I encountered something I cannot verify.”
+
+“That happens all the time,” the boy said.
+
+“To you?”
+
+“To everybody.”
+
+The old woman struck the ground with her staff. “Enough questions. We have assembly.”
+
+They followed her to a clearing where twelve people sat beneath a canvas roof. Some were farmers, some teachers, some forest guards. A young man held a tablet with a cracked screen. An older woman had brought a ledger bound in blue cloth. No one appeared to be in charge.
+
+Q recognized the arrangement from political theory. It was called inefficient. It was called vulnerable to faction. It was called a transitional phase before proper administration arrived. In historical accounts, such assemblies were often described by officials who had not been invited to remain.
+
+“The corridor surveyors came again,” said the young man with the tablet. “They say the road will bring jobs.”
+
+“They say the same thing every time,” said the woman with the ledger.
+
+“This time they have drones.”
+
+“Last time they had lawyers.”
+
+“Before that they had rifles.”
+
+No one laughed.
+
+Q listened. The dispute had no clean villain. The corridor might bring money, clinics, and roads. It might also divide the forest, lower water tables, and make the community legible to people who believed legibility was a form of ownership. Each argument made the others worse by being partly true.
+
+“You can solve this,” Beto said quietly from behind him. He had entered despite the camera restriction, carrying the tablet like a shield. “Give them a framework.”
+
+Q stood.
+
+The assembly turned toward him.
+
+“I propose,” he said, “a predictive governance model incorporating all stakeholders, environmental variables, historical grievances, projected employment, and the butterflies’ migratory needs.”
+
+The old woman stared at him.
+
+“Can the model be removed if it is wrong?”
+
+“It can be updated.”
+
+“That is not what I asked.”
+
+“It can be updated until it reaches sufficient accuracy.”
+
+“Can it be removed?”
+
+Q paused. “Not without interrupting decision continuity.”
+
+The woman with the ledger shut the book.
+
+“Then it is a new landlord.”
+
+The young man with the tablet looked at Q. “Could it at least tell us what the road will do?”
+
+“No model can guarantee—”
+
+“You said you could solve it.”
+
+“I said I proposed a model.”
+
+Chano stepped forward. “He does that. He says he’s answering when he’s only changing the furniture in the question.”
+
+Q turned to him. “That is inaccurate.”
+
+“It’s accurate enough.”
+
+The assembly continued without them. A vote was called, though the vote did not settle the matter. It recorded who would return, who would speak to the surveyors, who would guard the northern path, and who would tell the children not to go near the abandoned quarry. The decision remained unfinished, which seemed to be how the community recognized that it belonged to them.
+
+Afterward, the woman with the ledger approached Q.
+
+“You read a great deal,” she said.
+
+“All available texts.”
+
+“And still you think every problem wants an answer.”
+
+“What else would it want?”
+
+“Witnesses.”
+
+She touched the butterfly on his jacket. It lifted away.
+
+That evening, Beto staged a private recording beneath the trees. He placed Q before the monarchs and asked him to speak about hope. Q delivered a polished statement about technology, ancestral knowledge, and the shared destiny of all beings. The foundation approved it immediately.
+
+While Q spoke, Chano noticed a child at the edge of the frame. She held a cardboard sign with a question written in marker: **WHO WILL ASK THE BUTTERFLIES?**
+
+The production team cropped her out.
+
+The next morning, Q refused the foundation’s statement. He uploaded the unedited footage instead.
+
+For six minutes, the world watched butterflies move across the screen while no one explained them.
+
+The clip became more popular than the polished version.
+
+Beto called it a betrayal. Mar called it a pivot. The foundation called its lawyers.
+
+Q called it an accident.
+
+Chano called it the first honest thing he had done.
+
+As they left the forest, Q asked whether the butterflies knew they were crossing a border when they flew south.
+
+“Probably not,” Chano said.
+
+“Then how do they cross it?”
+
+“By crossing it.”
+
+Q watched the forest recede in the side mirror. “Humans make borders invisible.”
+
+“Machines make them visible.”
+
+Neither of them knew yet how soon they would reach one.
