@@ -5579,6 +5579,12 @@ Chano laughed. “Even the machine knows.”
 
 Q looked at the name on the manuscript’s title page. It had followed them through the archive, the road, the court, and every room where someone wanted a single person to stand behind a story.
 
+Q took the brass key from his coat and set it on the wooden drawer.
+
+“That has never opened a door,” Chano said.
+
+“It opened the idea that I could,” Q replied.
+
 “The author is a convention,” Q said.
 
 The screen asked the question again.
