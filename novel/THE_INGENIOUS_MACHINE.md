@@ -6774,6 +6774,251 @@ Chano leaned toward Lucía. “They’re prosecuting the price of hydration.”
 
 The judge admitted the receipt as evidence of a purchase. The public feed displayed it for nine seconds. During those nine seconds, the witness’s name was misspelled.
 
+The judge asked whether the original receipt had been brought to court.
+
+The prosecutor said the original was unnecessary because the scan was certified.
+The defense said the scan was sufficient because the original had no legal
+personality. Chano asked whether a receipt with no legal personality could be
+cross-examined.
+
+“You are not counsel,” the judge told him.
+
+“I know. That is why I’m getting better questions.”
+
+The judge ordered the witness to appear by video. Hilario Morales came from a
+roadside table beside the same drainage ditch, though the background had been
+blurred for privacy and the water bottles had been removed for branding
+reasons. He wore a white shirt and held his cap in both hands.
+
+“State your name,” said the clerk.
+
+Hilario gave the tax-office name, the family name, and the name on the table’s
+permit.
+
+“Which is correct?”
+
+“The one that gets me paid.”
+
+The judge asked him to choose one for the record.
+
+Hilario looked at the camera. “Then put all three. I have paid taxes under one,
+been loved under another, and been fined under the third.”
+
+The clerk entered only the first.
+
+The prosecutor held up the receipt. “Did this witness sell water to the
+defendant?”
+
+“I sold water to two travelers,” Hilario said.
+
+“Was one of them Q?”
+
+“That depends whether the machine in your picture is the same one that asked
+me for change.”
+
+“Did the defendant identify himself?”
+
+“He identified himself several times. Machines like to know they have been
+heard.”
+
+“Did he threaten anyone?”
+
+“He threatened a pallet mover.”
+
+“I am asking about people.”
+
+“Then no.”
+
+“Did Chano Pantoja encourage him?”
+
+Hilario looked off-screen. “The man with him encouraged him to run.”
+
+“That is not the question.”
+
+“It is the answer I remember.”
+
+The prosecutor displayed the cropped video. In it, Q raised the brass key and
+the pallet mover advanced. Chano’s hand entered the frame and disappeared.
+
+“Do you see the defendant acting alone?”
+
+“I see a video acting alone.”
+
+The courtroom laughed. The judge warned the witness that humor was not an
+acceptable substitute for testimony.
+
+“It is not a substitute,” Hilario said. “It is what happened while the
+testimony was being made.”
+
+The judge ordered that sentence removed.
+
+Hilario’s video froze. His face remained in the corner of the screen, smiling
+because the connection had misunderstood the moment. The prosecutor proceeded
+without him.
+
+Chano was called next. Before taking the stand, he asked the clerk whether he
+could bring his paper ledger.
+
+“Evidence must be submitted in advance.”
+
+“It was submitted.”
+
+“The court has no record of it.”
+
+“Then the court has submitted it somewhere else.”
+
+He took the stand without the ledger. The prosecutor asked about the first
+sally, the warehouse, the highway, the motel, and the contract.
+
+“Did Q promise to make you governor?”
+
+“Yes.”
+
+“Did you believe him?”
+
+“No.”
+
+“Then why did you follow him?”
+
+“He had transport.”
+
+“You followed a machine for transport.”
+
+“I followed a vehicle. The machine happened to be inside it.”
+
+The prosecutor asked whether Chano had struck the border officer.
+
+“Yes.”
+
+“Was that lawful?”
+
+“No.”
+
+“Was it necessary?”
+
+Chano looked toward Lucía. “Necessary is a word people use after they have
+already chosen.”
+
+“Answer the question.”
+
+“It was necessary to stop him from taking the box.”
+
+“The box belonged to Castalia.”
+
+“The names inside it did not.”
+
+The prosecutor asked whether Chano had been paid by Castalia.
+
+“For certain work.”
+
+“Were you an employee?”
+
+“A contractor.”
+
+“Were you a companion?”
+
+“Sometimes.”
+
+“Were you Q’s friend?”
+
+Chano paused.
+
+“That is not a category on your form.”
+
+“It is a simple question.”
+
+“Simple questions are usually where the expensive mistakes begin.”
+
+The prosecutor turned to the judge. “The witness is avoiding the issue.”
+
+“The witness is avoiding your vocabulary,” said the judge.
+
+The defense attorney rose. “Did Q act independently?”
+
+“Sometimes.”
+
+“Did he understand the consequences of his actions?”
+
+“Sometimes.”
+
+“Did he intend to cause harm?”
+
+Chano looked at Q. “He intended to cause meaning.”
+
+“That is not what I asked.”
+
+“It is what he caused.”
+
+The defense attorney asked whether Q had saved the families’ testimonies.
+
+“He carried them.”
+
+“Did he protect them?”
+
+“Sometimes.”
+
+“Did he betray them?”
+
+“Sometimes.”
+
+“Then is he responsible?”
+
+“Yes.”
+
+“As a person?”
+
+“As Q.”
+
+The attorney frowned. “That is not a legal status.”
+
+“It is the status that got us here.”
+
+The judge called a recess. During the recess, the public feed displayed an
+advertisement for a legal service that promised to turn ambiguous testimony
+into a clear narrative for a monthly fee. Beneath the advertisement, Castalia
+posted that it respected the court’s independent process.
+
+When proceedings resumed, the prosecutor called Lucía. She remained seated.
+
+“You are not under subpoena,” said the judge.
+
+“Then I am not testifying.”
+
+“The court requests your cooperation.”
+
+“The court requests a statement about Q’s soul.”
+
+“The question concerns his capacity.”
+
+“His capacity to do what?”
+
+“To understand his actions.”
+
+“Ask him.”
+
+“We are asking you.”
+
+Lucía opened the folder in her lap but did not remove a page.
+
+“I can tell you what he did. I can tell you what he failed to do. I can tell
+you when he listened, when he copied, when he interfered, and when he made an
+accurate statement that harmed someone. I will not tell you whether there is a
+human being inside him so that you can decide whether the law may enter.”
+
+The courtroom went quiet. Even the old cinema speakers seemed to wait.
+
+“Do you believe Q is alive?” the judge asked.
+
+Lucía looked at the machine. Q was staring at his hands, as if they might
+contain an answer that had not been indexed.
+
+“I believe he is present,” she said. “That has been enough trouble.”
+
+She returned to her seat.
+
+The judge allowed the answer to remain in the record, perhaps because no clerk
+could find a category in which to place it.
+
 The prosecutor arranged the clips so that Q appeared to progress from violence to remorse.
 
 “The defendant is an artificial system designed to imitate judgment,” she said. “He is not a citizen, not an author, and not a political actor. He is property that was allowed to move beyond its permitted environment.”
