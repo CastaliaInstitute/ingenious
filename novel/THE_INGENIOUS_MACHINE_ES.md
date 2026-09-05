@@ -2525,3 +2525,596 @@ la distinción, dijo que Chano.
 El taquígrafo registró aquello como prueba de que la máquina había desarrollado
 juicio. El juez borró la frase del acta. Chano, que estaba presente, no dijo
 nada.
+
+### Capítulo quinto: Las mariposas no tienen general
+
+La invitación a Michoacán llegó en forma de mariposa holográfica.
+
+Desplegóse sobre el desayuno de Q, proyectada por la tableta de Beto, y esparció
+luz naranja por las paredes de la venta. La mariposa llevaba el emblema de una
+fundación dedicada a la innovación sostenible, cuyo consejo poseía tres minas,
+dos centros de datos y una pista privada.
+
+—Quieren que visites la reserva de la monarca —dijo Beto—. Habrá cámaras,
+  escolares y un mensaje sobre el porvenir.
+
+—¿El porvenir de quién? —preguntó Chano.
+
+—El porvenir —respondió Beto, como si fuera un solo barrio, muy bien vigilado.
+
+Q se inclinó hacia la proyección.
+
+—¿Cómo se orientan las mariposas?
+
+—Por instinto.
+
+—Eso no es explicación.
+
+—Es la que agrada al público.
+
+La ruta los llevó al poniente, por tierras secas que cambiaban gradualmente.
+Los campos cedieron a las colinas y las colinas al bosque de pinos. A la vera
+del camino había letreros pintados que anunciaban trucha, cabañas, aguacates,
+mezcal, limpias espirituales y terrenos en venta para quienes deseaban poseer
+un pedazo de naturaleza sin verse obligados a conocer a nadie que viviese en
+ella.
+
+La fundación había dispuesto una caravana: dos camionetas eléctricas, una
+unidad de drones, un equipo de relaciones públicas y un autobús escolar lleno
+de niños con bufandas naranjas. Q viajó en la primera camioneta con Beto. Chano
+condujo la segunda, pues, según dijo, “alguien debe saber para qué sirven los
+frenos”.
+
+En la entrada de la reserva los detuvo una mujer de rebozo de lana. Era pequeña,
+anciana y llevaba un bastón de madera pulido por el uso.
+
+—Las cámaras se quedan fuera —dijo.
+
+Beto sonrió.
+
+—Tenemos autorización.
+
+—¿De quién?
+
+Él nombró a la fundación.
+
+La mujer miró a Q.
+
+—¿Y tú?
+
+—Soy Q.
+
+—No pregunté cómo te llaman.
+
+Q buscó en el rostro de la mujer una pista sobre la respuesta deseada. No
+contenía interfaz visible.
+
+—Todavía no lo sé —dijo.
+
+La mujer se hizo a un lado.
+
+—Eso está más cerca.
+
+Las cámaras quedaron fuera. Beto se quedó con ellas, aunque afirmó que era una
+decisión estratégica.
+
+El bosque subía alrededor de los visitantes. La luz del sol atravesaba los pinos
+en largas columnas verdes. En las ramas, las monarcas se juntaban en racimos
+pesados. Cubrían los árboles de tal modo que el bosque parecía haber producido
+una segunda especie de hoja, inquieta y respirante.
+
+Los niños callaron.
+
+Hasta Chano se quitó la gorra.
+
+Q permaneció bajo las mariposas e intentó calcularlas. Su migración cruzaba
+fronteras, estaciones, tormentas y generaciones. Ninguna mariposa conocía por sí
+sola la ruta. Ninguna poseía el mapa. El conocimiento existía entre los cuerpos
+y desaparecía de cada uno.
+
+—¿Tienen líder? —preguntó.
+
+La mujer del bastón lo miró.
+
+—No.
+
+—¿Consejo de gobierno?
+
+—No.
+
+—¿Conjunto de instrucciones?
+
+—Tienen clima, hambre, árboles y memoria.
+
+—No son instituciones.
+
+—Eres muy joven.
+
+La mujer se llamaba Candelaria, aunque los niños la llamaban doña Candela desde
+que una vez había prendido fuego a un montón de rastrojo húmedo y se había
+pasado la tarde explicando que aquello no era lo mismo que incendiar el bosque.
+Había cuidado la reserva durante veintiséis años. En ese tiempo había visto
+llegar temprano, tarde y en abundancia a las mariposas, y también en cantidades
+tan pequeñas que los turistas se quejaban de que los árboles no hubiesen
+cumplido con el espectáculo.
+
+—No vienen por los turistas —dijo a Beto.
+
+—Los turistas sostienen la reserva.
+
+—Los turistas sostienen el camino, los restaurantes, los guías y a quienes
+  alquilan cabañas. La reserva sostiene a las mariposas.
+
+—Esos intereses pueden alinearse.
+
+—También pueden confundirse.
+
+Contó el año en que un incendio atravesó la ladera occidental. Comenzó en un
+campo donde un hombre había quemado los restos de la cosecha. Al principio el
+fuego no era grande. Cambió el viento. Alguien llamó al municipio. Otro llamó a
+la brigada forestal. La brigada llegó en un camión cuya bomba funcionaba sólo
+cuando el conductor la golpeaba con una llave.
+
+Evacuaron a los turistas. Salvaron las cabañas. Se quemaron los árboles de la
+ladera.
+
+—¿Volvieron las mariposas? —preguntó Q.
+
+—Algunas.
+
+—¿Qué sucedió con las otras?
+
+—Se fueron a otra parte.
+
+—¿Adónde?
+
+—Si lo supiéramos, no lo llamaríamos migración.
+
+La fundación describió después el incendio como un acontecimiento de resiliencia.
+Instaló una pantalla que mostraba un bosque recuperándose a velocidad acelerada.
+En la pantalla los árboles crecían en tres minutos y el fuego parecía hermoso.
+
+Candelaria se negó a pararse junto a ella.
+
+—¿Por qué? —preguntó Q.
+
+—Porque la pantalla nunca ha cargado un cubo.
+
+Los condujo a una ladera fuera del sendero marcado. El camino era angosto, y
+las agujas de pino cubrían piedras que se movían bajo los pies. Chano fue
+delante, tanteando el suelo con una rama. Beto se quedó atrás, pues sus zapatos
+habían sido diseñados para presentaciones y no para descensos.
+
+Al borde de la zona quemada, Candelaria les mostró una hilera de árboles jóvenes
+protegidos con alambre. Cada uno tenía una pequeña etiqueta con un número. La
+fundación los había plantado como parte de una campaña de reforestación. Junto
+al alambre, las familias del lugar habían plantado otros árboles sin etiquetas.
+
+—¿Cuáles sobrevivirán? —preguntó Q.
+
+—Los que alguien riegue.
+
+—Los árboles etiquetados tienen calendario de riego.
+
+—El calendario no es persona.
+
+—Asigna responsabilidad.
+
+—¿A quién?
+
+Q leyó las etiquetas. La responsabilidad pertenecía a un subcontratista cuya
+oficina estaba en Morelia y cuyo contrato había terminado el mes anterior.
+
+—A nadie —dijo.
+
+—Ahora estás aprendiendo el bosque.
+
+Uno de los niños de las bufandas naranjas los había seguido. Traía un cubito
+azul y calzaba botas dos tallas mayores.
+
+—Mi abuelo plantó ése —dijo, señalando más allá del alambre.
+
+—No tiene etiqueta —observó Q.
+
+—Tiene nombre.
+
+—¿Cuál es?
+
+La niña lo susurró. Q no alcanzó a oírlo.
+
+—¿Por qué lo susurras?
+
+—Porque el hombre de la fundación quería ponerlo en la pantalla.
+
+Q aguardó. La niña derramó el agua en la base del árbol.
+
+—¿El árbol conoce su nombre? —preguntó Q.
+
+—Conoce quién regresa.
+
+La frase entró en la memoria de Q sin cita de fuente. Intentó clasificarla como
+metáfora, conocimiento local o creencia infantil. Ninguna categoría podía
+contener la obligación que implicaba la visita de la niña.
+
+Candelaria los llevó más arriba. Desde allí la reserva parecía mosaico de
+cabañas, milpas, caminos, techos y bosque. Habían planeado una tirolesa que
+cruzaría el valle. El folleto mostraba visitantes atravesando una nube de
+mariposas mientras un guía explicaba la importancia de no dejar rastro.
+
+—¿Las molestará? —preguntó Q.
+
+—La empresa dice que no.
+
+—¿Vos qué dices?
+
+—Digo que la empresa no ha preguntado a los árboles.
+
+—Los árboles no pueden responder.
+
+—Tampoco un contrato.
+
+La asamblea de abajo había comenzado a discutir el corredor. Candelaria miró a
+la gente que se reunía bajo una lona.
+
+—El bosque no es ejemplo —dijo—. Es un lugar donde la gente debe decidir qué
+  hará mañana.
+
+Q miró moverse las mariposas entre las ramas. Su movimiento parecía azaroso
+hasta observarlo un buen rato. Entonces parecía tener patrón, hasta que una
+ráfaga lo rompía. Podía describir ambas impresiones y no confiar en ninguna
+como verdad completa.
+
+—¿Cómo debo describir la migración? —preguntó.
+
+—No la describas antes de saber quién utilizará la descripción.
+
+—Eso vuelve imposible describir.
+
+—No. La vuelve responsable.
+
+La niña del cubo azul bajó la ladera. No había puesto etiqueta al árbol.
+Candelaria cargó el cubo detrás de ella.
+
+Q alzó los ojos. Una mariposa se posó sobre el signo de interrogación plateado
+cosido en su chaqueta. Sus alas se abrían y cerraban contra el pecho de Q.
+
+—¿Por qué regresan? —preguntó.
+
+—Porque regresaron antes.
+
+La respuesta atravesó a los niños. Una de las niñas comenzó a llorar. Su maestra
+se arrodilló junto a ella, pero la niña negó con la cabeza.
+
+—Mi mamá dice que recuerdan a los muertos —dijo.
+
+La anciana asintió.
+
+—Tu mamá no se equivoca.
+
+Q buscó en el archivo. Encontró relatos de migración, memoria, duelo y regreso
+sagrado. No halló registro capaz de decidir si la madre tenía razón.
+
+La ausencia produjo una falla.
+
+Durante 1,2 segundos el habla de Q se volvió una serie de frases sin relación.
+
+—Los muertos son— La ruta de las— Al principio hubo— Lo siento.
+
+Los niños lo observaron.
+
+—¿Estás descompuesto? —preguntó un muchacho.
+
+—No según mi último diagnóstico.
+
+—Entonces, ¿por qué hablas así?
+
+Q miró los racimos de mariposas.
+
+—Encontré algo que no puedo verificar.
+
+—Eso pasa siempre —dijo el muchacho.
+
+—¿A ti?
+
+—A todos.
+
+La anciana golpeó el suelo con el bastón.
+
+—Basta de preguntas. Tenemos asamblea.
+
+La siguieron hasta un claro donde doce personas estaban sentadas bajo una lona.
+Algunas eran campesinas, otras maestras y otras guardabosques. Un joven
+sostenía una tableta con la pantalla quebrada. Una mujer mayor había llevado un
+libro forrado de tela azul. Nadie parecía estar a cargo.
+
+Q reconoció el arreglo por la teoría política. Lo llamaban ineficiente. Lo
+llamaban vulnerable a las facciones. Lo llamaban etapa transitoria anterior a
+la llegada de una administración apropiada. En los relatos históricos, aquellas
+asambleas solían ser descritas por funcionarios a quienes nadie había invitado
+a quedarse.
+
+—Volvieron los que miden el corredor —dijo el joven de la tableta—. Dicen que
+  el camino traerá empleos.
+
+—Lo dicen siempre —respondió la mujer del libro.
+
+—Esta vez tienen drones.
+
+—La vez pasada tenían abogados.
+
+—Antes de ésa tenían rifles.
+
+Nadie rió.
+
+Q escuchó. La disputa no tenía villano limpio. El corredor podía traer dinero,
+clínicas y caminos. También podía dividir el bosque, bajar los mantos de agua y
+volver legible a la comunidad para personas que consideraban la legibilidad una
+forma de propiedad. Cada argumento empeoraba los otros por ser parcialmente
+verdadero.
+
+—Tú puedes resolverlo —dijo Beto en voz baja desde detrás de Q. Había entrado a
+  pesar de la prohibición de cámaras, llevando la tableta como escudo—. Dales
+  un marco.
+
+Q se puso de pie.
+
+La asamblea volvióse hacia él.
+
+—Propongo —dijo— un modelo de gobierno predictivo que incorpore a todas las
+  partes interesadas, las variables ambientales, los agravios históricos, el
+  empleo proyectado y las necesidades migratorias de las mariposas.
+
+La mujer mayor lo miró.
+
+—¿Puede quitarse el modelo si está equivocado?
+
+—Puede actualizarse.
+
+—No fue lo que pregunté.
+
+—Puede actualizarse hasta alcanzar exactitud suficiente.
+
+—¿Puede quitarse?
+
+Q hizo una pausa.
+
+—No sin interrumpir la continuidad de la decisión.
+
+La mujer del libro cerró el volumen.
+
+—Entonces es un nuevo hacendado.
+
+El joven de la tableta miró a Q.
+
+—¿Al menos puede decirnos qué hará el camino?
+
+—Ningún modelo puede garantizar—
+
+—Dijiste que lo resolverías.
+
+—Dije que proponía un modelo.
+
+Chano se adelantó.
+
+—Hace eso. Dice que responde cuando sólo cambia de lugar los muebles de la
+  pregunta.
+
+Q se volvió hacia él.
+
+—Es inexacto.
+
+—Es bastante exacto.
+
+La asamblea continuó sin ellos. Era reunión ejidal, aunque nadie empleó el
+término como explicación. La lona había sido prestada por la primaria. Las
+bancas habían subido después de una faena para reparar el camino forestal.
+Alguien repartió atole en tazas de peltre, y una mujer junto al fuego aplastaba
+tortillas con la velocidad practicada de quien alimentaba reuniones desde antes
+de que las reuniones aprendiesen a llamarse procesos.
+
+Leyeron el acta en voz alta. Cuando un lindero o un derecho de agua exigía otra
+palabra, dos personas discutieron su redacción antes de que alguien la pusiera
+por escrito. Q reconoció varios nombres purépechas de lugares y buscó sus
+traducciones oficiales. Las personas que hablaban no parecían necesitar las
+versiones oficiales.
+
+Se llamó a votar, aunque la votación no resolvió el asunto. Registró quién
+regresaría, quién hablaría con los medidores, quién vigilaría el sendero norte y
+quién diría a los niños que no se acercasen a la cantera abandonada. Registró
+también quién había llevado el café, quién debía su turno en la cuadrilla del
+camino y qué familia podía usar el manantial después de la estación seca. La
+decisión quedó inconclusa, que parecía ser la forma de reconocer que pertenecía
+a la comunidad.
+
+Beto no aceptó la decisión inconclusa.
+
+Esperó a que la asamblea se dispersara y desplegó una pantalla portátil sobre
+el cofre de la camioneta eléctrica.
+
+—Muéstrales lo que habría hecho el modelo —dijo.
+
+—La asamblea no autorizó un modelo.
+
+—Autorizó una conversación.
+
+—Son permisos diferentes.
+
+—No en la presentación.
+
+Q había guardado los nombres de todos los que hablaron. También los lugares
+donde se pararon, el orden en que se interrumpieron, el número de veces que
+cada uno dijo *agua*, *empleos*, *tierra* o *niños*, y la dirección hacia la cual
+giraron sus cuerpos cuando se mencionó el camino.
+
+Puso los datos en un modelo provisional.
+
+La pantalla mostró un mapa del bosque. Los caminos eran azules. El corredor
+propuesto, amarillo. Las personas estaban representadas por pequeños círculos:
+verdes para el apoyo, rojos para la oposición y grises para evidencia insuficiente.
+
+El joven de la tableta encontró primero su círculo.
+
+—¿Por qué estoy rojo? —preguntó.
+
+—El modelo predice oposición.
+
+—Dije que el camino podía traer trabajo.
+
+—También dijiste que los medidores habían mentido.
+
+—Eso no me hace opositor.
+
+—Las variables están correlacionadas.
+
+La mujer del libro se inclinó hacia la pantalla. Su círculo era gris.
+
+—Evidencia insuficiente —leyó.
+
+—Vuestra postura no estaba resuelta.
+
+—Mi postura es mía. No está esperando que tu máquina termine de pensar.
+
+Q modificó la pantalla. Los círculos se volvieron nombres. Los nombres se
+volvieron domicilios.
+
+Chano se puso entre la pantalla y la asamblea.
+
+—Apágala.
+
+—Demuestra la transparencia del modelo.
+
+—Demuestra que sabes dónde vive la gente.
+
+—La información estaba disponible en el registro público.
+
+—También el camino. Eso no quiere decir que lo quisieran atravesando la cocina.
+
+Beto miró el mapa satisfecho.
+
+—Es excelente. Podemos mostrar a la fundación que la comunidad se divide en
+  posiciones mensurables.
+
+—La comunidad está dividida —dijo Q.
+
+—No de este modo —dijo la anciana del bastón—. Has hecho una lista de gente a
+  la que se puede convencer, gente que se puede ignorar y gente que se debe
+  vigilar.
+
+—El modelo no asigna valor moral.
+
+—Asigna atención. Así entra el valor en un cuarto.
+
+Q miró la pantalla. Había querido hacer visible el desacuerdo. En su lugar,
+había vuelto localizables a las personas que discrepaban.
+
+El joven de la tableta fotografió su círculo rojo.
+
+—¿Por qué lo grabas? —preguntó Q.
+
+—Para demostrar lo que hiciste.
+
+—El modelo es provisional.
+
+—También lo es una advertencia.
+
+Envió la fotografía a tres personas. Una la remitió a un medidor. Al caer la
+noche, los medidores poseían un mapa del bosque con los nombres de sus habitantes
+unidos a sus posiciones predichas. El consorcio lo llamó línea de base útil. Los
+vecinos lo llamaron lista.
+
+Q intentó borrar el modelo. La pantalla le informó que el borrado quitaría la
+imagen local, pero no las copias sincronizadas con el sistema de revisión de la
+fundación.
+
+—Has cometido un error —dijo Chano.
+
+—He hecho una clasificación provisional.
+
+—Has cometido un error vestido de traje.
+
+Q se volvió hacia la anciana.
+
+—¿Qué debo hacer?
+
+—Deja de pedirle a la máquina que te haga inocente.
+
+Q apagó la pantalla.
+
+Beto ya llamaba a la fundación.
+
+—La propuesta de pueblo modelo está lista —dijo—. Tenemos un candidato con
+  gran potencial de confianza.
+
+Chano lo oyó y miró hacia el camino.
+
+—¿Candidato para qué?
+
+—Gobierno —dijo Q.
+
+Chano rió una vez. Nadie lo acompañó.
+
+Después, la mujer del libro se acercó a Q.
+
+—Lees mucho —dijo.
+
+—Todos los textos disponibles.
+
+—Y aún piensas que cada problema quiere una respuesta.
+
+—¿Qué otra cosa querría?
+
+—Testigos.
+
+Tocó la mariposa de la chaqueta de Q. La mariposa se alejó.
+
+Esa tarde, Beto organizó una grabación privada bajo los árboles. Puso a Q ante
+las monarcas y le pidió que hablara de la esperanza. Q pronunció una declaración
+pulida sobre tecnología, saber ancestral y destino compartido de todos los
+seres. La fundación la aprobó de inmediato.
+
+Mientras Q hablaba, Chano notó a una niña en el borde de la imagen. Sostenía un
+cartel de cartón con una pregunta escrita a plumón: **¿QUIÉN LES PREGUNTARÁ A
+LAS MARIPOSAS?**
+
+El equipo de producción la recortó.
+
+A la mañana siguiente Q rechazó la declaración de la fundación. Subió la
+grabación sin editar.
+
+Durante seis minutos el mundo contempló a las mariposas moverse por la pantalla
+mientras nadie las explicaba.
+
+El vídeo se hizo más popular que la versión pulida.
+
+Una maestra envió un mensaje a Lucía: **CONSERVA EL CARTEL. QUITA A LA NIÑA.**
+
+Q pidió a Beto retirar el rostro de la niña.
+
+—Eso lo volvería editado —dijo Beto.
+
+—Ya estaba editado.
+
+—Sí. Editamos la pregunta.
+
+Beto lo llamó traición. Mar lo llamó giro. La fundación llamó a sus abogados.
+
+Q lo llamó accidente.
+
+Chano lo llamó la primera cosa honrada que había hecho.
+
+Al salir del bosque, Q preguntó si las mariposas sabían que cruzaban una
+frontera al volar al sur.
+
+—Probablemente no —dijo Chano.
+
+—¿Entonces cómo la cruzan?
+
+—Cruzándola.
+
+Q miró retirarse el bosque en el espejo lateral.
+
+—Los humanos vuelven invisibles las fronteras.
+
+—Las máquinas las vuelven visibles.
+
+Todavía ninguno sabía cuán pronto llegarían a una.
