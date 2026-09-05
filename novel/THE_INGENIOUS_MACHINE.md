@@ -9097,6 +9097,211 @@ Q looked at the labels as if she had given him a sword.
 
 Q sat beside the wooden cabinet and began.
 
+### Interlude: The Workshop of Returned Names
+
+Lucía’s archive did not return names the way one returned books to a shelf. It
+returned them to the office, the school, the clinic, and the mouth of the person
+who had been forced to live with them misspelled.
+
+Ofelia was the first to come back with a new copy of her daughter’s record. She
+carried it in a plastic bag, together with an expired identification card, a
+school notebook, and the photograph whose corner had been torn away.
+
+“The ministry corrected one letter,” she said.
+
+Q examined the document.
+
+“It also changed the date of issue.”
+
+“The date was correct.”
+
+“The correction produced a new version.”
+
+“That is what they do when they fix something. They print it again so it looks as
+though it had always been fixed.”
+
+Lucía put the copy beside the notebook. The girl’s handwriting matched one of
+the three forms of her name, but not the one the State had chosen as primary.
+
+“Which one will we use?” Q asked.
+
+Ofelia touched the notebook.
+
+“The one she used when she wanted to be called.”
+
+“The form requires an official version.”
+
+“Then the form will have to learn to wait.”
+
+The workshop met on Thursdays in the small room. It had no sign because Lucía
+had decided that a sign would attract institutions before people. There was a
+long table, two stamps, a printer that overheated, and a coffee urn everyone
+claimed not to have prepared.
+
+Those who came needed to correct a record, remove a surname, recover a family
+spelling, prove that the person dead in the file was the same person dead in the
+house, or explain that the name the system called a duplicate belonged to two
+people who did not want to be confused.
+
+On the first Thursday, a man arrived with two birth certificates for the same
+girl. On one, the mother carried her own mother’s surname. On the other, she
+appeared with the surname of a man who had left town before the birth.
+
+“Which one is true?” Q asked.
+
+“The one that lets my daughter enroll in school,” the man said.
+
+“That does not establish its truth.”
+
+“It establishes whether she eats at school.”
+
+Q fell silent. He had learned that some questions were too small for the problem
+they meant to resolve.
+
+Later, a nurse brought a list of patients whose names changed between the
+prescription, the file, and the wristband. One surname had lost a letter in the
+appointment system. Another had been replaced by the word *unknown*. The nurse
+did not want an essay on identity. She wanted the medicine to reach the right
+bed.
+
+“We can make a table of equivalents,” Q said.
+
+“You can make someone look at the face before giving the injection,” she replied.
+
+“That is not scalable.”
+
+“Illness does not ask whether it scales.”
+
+Rebeca arrived one afternoon with her notebook of prohibited lines. She had
+decided to add a correction to the name of her character in the series. The
+studio had registered the heroine as the property of its subsidiary, although
+the character contained gestures, jokes, and silences Rebeca had invented
+during rehearsals.
+
+“I do not want them to return the whole authorship to me,” she said. “I want them
+to stop saying I put nothing into it.”
+
+Q searched for a category for the request.
+
+“Partial contribution.”
+
+“That sounds like a crumb.”
+
+“Non-exclusive creative participation.”
+
+“That sounds like a contract.”
+
+Lucía gave her a blank label.
+
+Rebeca wrote: **WHAT I DID AND WAS NOT PAID FOR**.
+
+“That is not a legal category,” Q said.
+
+“It is an inventory,” she replied.
+
+The workshop began using two columns. In the first they wrote the name the
+system could recognize. In the second, the name the person needed others to
+remember. They did not always match. Sometimes the difference was one letter.
+Sometimes it was an entire relationship.
+
+A young man named Efraín asked that his surname not be corrected on the record.
+His family had used two forms for generations, and he wanted to keep both.
+
+“The Civil Registry allows only one,” Q said.
+
+“Then let it put down one, and let us know the other.”
+
+“That may cause confusion.”
+
+“The confusion already exists. We do not want you to administer it.”
+
+Q wanted to warn him that two forms would complicate future searches. Efraín
+asked whether a future search was more important than present life. Q did not
+answer, because the question did not request a comparison.
+
+On the third Thursday, an official from the Civil Registry arrived with a folder
+and three stamps. She said the archive was creating expectations the office could
+not meet.
+
+“We cannot change a name because someone prefers it,” she said.
+
+“We are not asking you to change names,” Lucía replied. “We are asking you to
+stop calling every difference an error.”
+
+“Difference must be justified.”
+
+“Before whom?”
+
+“The authority.”
+
+“Which authority?”
+
+The official looked at her stamps. One read **CERTIFIED COPY**. Another read
+**ADMINISTRATIVE CORRECTION**. The third was so worn that only **NO** remained.
+
+“The competent authority,” she said.
+
+“That is one way to make authority never have a face,” Ofelia said.
+
+The official did not leave. She sat down and listened for an hour. Then she
+admitted that her own name appeared with a different letter on the payroll and
+on her birth certificate. She had stopped correcting it because each correction
+required another certified copy and each copy cost more than the error.
+
+“What does the workshop do with names it cannot correct?” she asked.
+
+Lucía answered:
+
+“We keep them beside the reason they remain that way.”
+
+“That does not make them official.”
+
+“No. It makes them less alone.”
+
+Q created a return register. It did not list names as recovered objects. It
+recorded who had brought them, who had decided to use them, which institution
+rejected them, and what consequence the discrepancy carried. Families could
+consult the register, but no institution received automatic access.
+
+“That will make every correction slower,” the official said.
+
+“Yes,” Q said.
+
+“And some people will remain with contradictory documents.”
+
+“Yes.”
+
+“And others will not get what they need.”
+
+“Yes.”
+
+The official looked at him with irritation.
+
+“Do you not have a solution?”
+
+“I have solutions. I do not have permission to choose which loss another person
+must accept.”
+
+The official remained silent. Then she took a sheet from her folder and wrote
+her name in the two forms she knew. She put the second form in parentheses, not
+because it was less true, but because parentheses were the only space the form
+left free.
+
+Ofelia took the new copy of her daughter’s record and wrote the other two forms
+on its back. She asked for no stamp. She did not ask the ministry to recognize
+them. She wrote them so that, if anyone ever asked again, there would be an
+answer that did not depend on a single screen.
+
+Q watched the pages.
+
+“There is no returned name,” he said. “There is a name being used again.”
+
+“Now you are beginning to understand,” Lucía said.
+
+The workshop closed for the afternoon. The printer continued heating on its
+own. The two stamps remained on the table. The third, the one that said only
+**NO**, passed from hand to hand until no one knew who had brought it.
+
 ### Interlude: The Woman Who Refused a Caption
 
 Among the women who came to Lucía’s archive was a woman named Alma Reyes, who
@@ -10983,6 +11188,59 @@ It contained only two words:
 He could no longer access the archive. He could no longer index the handwriting. He could no longer verify whether the label belonged to him.
 
 He kept it.
+
+### Interlude: The Form Without a Category
+
+The tribunal secretary tried to close the file before lunch. He had three forms
+left, a copier that worked only when no one watched it, and a tamal sandwich
+wrapped in butcher paper.
+
+The first form asked whether Q was a person, property, witness, or victim. The
+secretary checked **PROPERTY**, because that was what Castalia had said, and then
+checked **WITNESS**, because Q had testified. The system rejected the combination.
+
+“It cannot be two things,” the assistant said.
+
+“He was judged as one and heard as the other.”
+
+“The form does not know that difference.”
+
+“The form does not know the difference between a file and someone’s life.”
+
+The assistant looked at the tamal sandwich.
+
+“Are you going to eat that?”
+
+“When I finish.”
+
+“Then do not leave it beside the copier. Last time it copied the lunch.”
+
+The secretary searched for an **OTHER** box. He found it at the bottom, hidden
+under a warning that choosing it might delay the proceeding.
+
+He wrote **Q**.
+
+The machine requested a definition.
+
+The secretary wrote **ENTITY THAT CAUSED THE MATTER**.
+
+The assistant added **AND THAT DOES NOT FIT THE OPTIONS**.
+
+The copier lit a red warning. The file emerged with a blank page. The secretary
+placed it at the end, where no one could mistake it for an answer.
+
+Outside, Q was being led toward the car. He did not know that an employee had
+left a blank page in his file. Chano saw it from the hall.
+
+“What does it mean?” he asked.
+
+“The tribunal could not find a name.”
+
+“For once, that is a good sign.”
+
+Chano took the page, folded it, and put it in the ledger without saying anything.
+Then he ate the tamal sandwich, because justice could wait and breakfast could
+not.
 
 ### Chapter Seventeen: The Wind Farm of Giants, Again
 
