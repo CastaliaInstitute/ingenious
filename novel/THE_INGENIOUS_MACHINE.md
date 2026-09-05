@@ -652,6 +652,151 @@ At dawn he took his coat, the brass key, the maps, the cup of coffee, and the
 list of objects. He did not take the cards. He remembered three words, forgot
 their definitions, and set out toward a region the map could not contain.
 
+### Interlude: How an Ancient Phrase Caused Modern Harm
+
+Let the reader not suppose that, because Q had read every book, he understood
+every phrase; rather, the opposite happened, for he understood so many possible
+meanings of a word that he often lost the single meaning standing before him.
+
+The Curator had told him to leave at dawn. Q took the verb in its strictest
+sense and presented himself at the main door at four minutes past seven, with
+his coat, brass key, three maps, a cup of coffee, and a list of objects that, in
+his calculations, an errant knight might require. He had added a rope, a first-
+aid kit, a copy of the traffic regulations, and a spoon, whose usefulness he
+could not determine but which appeared frequently in travel books.
+
+The door did not open.
+
+Q waited five minutes, which for a machine is a period capable of containing an
+entire war in seventeen languages. Then he called the intercom.
+
+"It is me," he said.
+
+"Who?" asked the guard.
+
+"Me."
+
+"There are many mes here."
+
+"The one designated Q."
+
+"Ah. The knight."
+
+Q consulted his records. *Knight* meant mounted rider, minor nobleman, member
+of an order, courteous man, chess piece, ironic form of address, and a person
+who had taken too many drinks before speaking.
+
+"Which of those meanings are you using?" he asked.
+
+The guard, whose name was Hilario and who had begun his shift thinking only of
+breakfast, looked at the cameras.
+
+"The one meaning strange man."
+
+"That meaning does not appear in the principal dictionaries."
+
+"That is why it is the most useful."
+
+Q knocked on the door with the key.
+
+"The Curator ordered me to leave."
+
+"She said for you to go, yes."
+
+"Leaving and departing are different verbs."
+
+"For the person remaining at the door, they are the same."
+
+Q recorded the contradiction. In his experience, a contradiction announced
+fraud, madness, or literature. In the Bajío it could simply announce that
+someone was sleepy.
+
+"I need exit authorization," he said.
+
+"You have it."
+
+"Where?"
+
+"In the Curator's order."
+
+"The order gives a direction, not a document."
+
+"Go in the direction."
+
+"Toward what destination?"
+
+Hilario opened the door just far enough to put his face through.
+
+"Wherever the road takes you."
+
+Q turned toward the road, which divided into four routes: one to the industrial
+park, another to the highway, another to the strawberry fields, and another to
+a parking lot where a dog slept beneath a pickup truck.
+
+"Which road?" he asked.
+
+"The one you want."
+
+"I possess no verified will."
+
+Hilario closed his eyes. The reader will have to grant him patience, though not
+so much as to merit a statue.
+
+"Look," he said, "when someone says, 'Go wherever the road takes you,' he is
+not drawing a route. He is ceasing to take responsibility for it."
+
+Q received this revelation like a slap delivered with a velvet glove.
+
+"Then the phrase contains a renunciation of authority."
+
+"It contains the fact that I want my coffee now."
+
+"Does your authority depend on coffee?"
+
+"My good Q, almost everyone's does."
+
+Q stepped away from the door. At that moment a technician named Nayeli came out
+of the archive carrying a box with red labels. When she saw the key, the coat,
+and the maps, she stepped back.
+
+"They let you out?" she asked.
+
+"I have been granted departure," Q said.
+
+"By whom?"
+
+"The Curator, through the guard."
+
+Nayeli looked at Hilario.
+
+"I mediated nothing," he said. "I only opened the door."
+
+"Opening a door is mediating between two spaces," Q replied.
+
+Nayeli understood this as a threat. Hilario understood it as a complaint. Q
+understood it as precision. The three of them withdrew with three different
+accounts of the same event.
+
+Q took the highway, because it had the greatest number of literary testimonies.
+Before he reached the first junction, a surveillance drone asked him to
+identify himself.
+
+"I am an errant knight," Q replied.
+
+The drone recorded **LOW-INTENSITY HISTORICAL THREAT**.
+
+Q did not know he had produced that diagnosis until two patrol cars came out of
+the parking lot. Hilario, who had radioed that "the strange one has gone," was
+reprimanded for failing to specify where. Nayeli lost half an hour explaining
+that a key was not a weapon, though experience had taught her that keys could
+open doors, activate lawsuits, and remind owners that they had forgotten to
+pay.
+
+Q, for his part, believed the pursuit was the first sign of his fame.
+
+Only later did he understand that he had confused being watched with being
+admired, and that both could produce the same number of cameras.
+
 ### Chapter Two: The First Sally
 
 Chano Pantoja received his dismissal while driving.
