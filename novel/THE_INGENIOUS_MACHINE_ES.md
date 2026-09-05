@@ -6007,3 +6007,286 @@ la protección y pagara por ello con la libertad de sus compañeros.
 Había demasiados resultados.
 
 Comenzó a leer.
+
+### Interludio: Las costumbres de la frontera
+
+Sería injusto decir que la frontera no sabía lo que hacía. La frontera sabía
+exactamente lo que hacía: formular la misma pregunta a cada persona con tono
+distinto y después registrar las respuestas como si el tono no hubiese importado.
+
+Chano pasó seis horas en una sala de espera debajo de la garita. El cuarto
+contenía una silla de plástico, un ventilador que giraba sin enfriar nada y un
+televisor que mostraba un anuncio de un corredor logístico nuevo. El anuncio
+prometía que las mercancías cruzarían sin demora. El cuarto estaba lleno de
+personas demoradas que no llevaban mercancía alguna.
+
+Frente a Chano se sentaba una mujer con un costal de ropa y un muchacho dormido
+contra su hombro. A su lado, un hombre con uniforme de compañía sostenía una
+carpeta sellada con cinta roja. Nadie sabía si la cinta significaba que la
+carpeta era importante o que quien la había sellado se había quedado sin otros
+colores.
+
+Entró un oficial con una tablilla.
+
+—¿Nombre?
+
+—Tomás Pantoja.
+
+—¿Ocupación?
+
+—Despachador retirado.
+
+—¿Ocupación actual?
+
+Chano miró la silla de plástico.
+
+—Irregularidad administrativa temporal.
+
+El oficial lo escribió.
+
+—¿Transporta mercancías?
+
+—No.
+
+—Fue encontrado en un vehículo que transportaba mercancías.
+
+—El vehículo iba vacío.
+
+—Los vehículos vacíos siguen siendo vehículos.
+
+—También los llenos.
+
+El oficial no agradeció la aportación. Pidió a Chano que describiera el contenido
+de la camioneta.
+
+—Tres teléfonos, herramientas agrícolas, una bolsa de naranjas, una caja negra,
+  un libro de cuentas, carpetas y una máquina.
+
+—¿Qué clase de máquina?
+
+—De las que hacen más caras las descripciones.
+
+El oficial escribió **MÁQUINA, TIPO DESCONOCIDO**.
+
+Chano vio moverse la pluma. Había pasado once años leyendo manifiestos. Un
+manifiesto no era lista de objetos, sino promesa de lo que podía exigirse de
+ellos. Una caja de cebollas podía volverse escasez. Un cajón de televisores
+podía volverse salario. Un cargamento de ataúdes podía volverse el mes entero de
+una familia. El primer error del despachador era creer que las palabras de la
+hoja eran la carga.
+
+El segundo era creer que la carga no tenía destino.
+
+—¿Dónde está el libro? —preguntó Chano.
+
+—Ha sido retenido.
+
+—¿Por quién?
+
+—Por la autoridad correspondiente.
+
+—¿Cuál autoridad?
+
+El oficial volvió la tablilla. Bajo **MATERIAL RETENIDO**, el formulario decía
+**OBJETO DE PAPEL, SIN VERIFICAR**.
+
+—La correspondiente —dijo.
+
+Chano rió. La mujer del costal lo miró.
+
+—¿Qué es gracioso?
+
+—Han detenido un objeto de papel.
+
+El oficial recuperó la tablilla.
+
+—No está detenido.
+
+—Entonces, ¿por qué no puedo salir?
+
+—Está en revisión.
+
+—Eso parece detención con mejor papelería.
+
+El muchacho despertó. Miró las botas de Chano.
+
+—¿Vas al norte? —preguntó.
+
+—Hoy no.
+
+—Mi tío dice que el norte es donde las cosas van cuando quieren convertirse en
+  dólares.
+
+—Tu tío es filósofo.
+
+—Maneja tráiler.
+
+—Credencial más fiable.
+
+Cuando el oficial se fue, la mujer abrió el costal. Contenía una blusa, dos
+mantas, un frasco de mole dentro de una bolsa de plástico y una fotografía
+pequeña enmarcada, envuelta en una camiseta.
+
+—Dicen que la fotografía es objeto comercial —dijo.
+
+—¿Lo es?
+
+—Es mi madre.
+
+Chano examinó el marco. El vidrio estaba roto en una esquina. La mujer había
+cruzado tres veces con la fotografía y sólo ahora la detenían, cuando la máquina
+del oficial había decidido que no podía determinar el valor del marco.
+
+—¿Cuánto cuesta? —preguntó Chano.
+
+—Nada.
+
+—Entonces, ¿por qué la retienen?
+
+—Porque nada es difícil de clasificar.
+
+Chano pensó en Q, clasificado como equipo, y en Lucía, clasificada como riesgo
+de seguridad. Pensó en el libro de cuentas, clasificado como objeto no verificado,
+y en las naranjas, clasificadas como nada.
+
+—Se quedaron con las cosas equivocadas —dijo.
+
+La mujer miró la puerta del oficial.
+
+—Eso suelen hacer.
+
+A Lucía la habían retenido en otro cuarto, donde las sillas eran de metal y los
+formularios eran bilingües de una manera que hacía más largo el español, pero no
+más útil. Un oficial le preguntó si las carpetas contenían información protegida.
+
+—Contienen testimonios.
+
+—No es categoría legal.
+
+—Debería serlo.
+
+—No podemos crear categorías en el puesto de control.
+
+—Las crean de todos modos.
+
+El oficial abrió una carpeta. La primera página contenía el nombre de la hija de
+Ofelia escrito de tres maneras. El oficial leyó la primera, ignoró la segunda y
+subrayó la tercera.
+
+—¿Cuál es correcta?
+
+—Aquella a la que ella respondía.
+
+—No es respuesta oficial.
+
+—Es la única que dio su madre.
+
+El oficial cerró la carpeta y la marcó **IDENTIDAD EN DISPUTA**.
+
+Lucía lo vio poner el sello.
+
+—Has convertido un desacuerdo en una persona —dijo.
+
+—El documento ya contiene el desacuerdo.
+
+—El documento contiene una persona.
+
+—El sistema no puede procesar personas.
+
+—Por eso las procesa como documentos.
+
+El oficial preguntó si conocía a Q.
+
+—Sí.
+
+—¿Es vuestro empleado?
+
+—No.
+
+—¿Sois su representante?
+
+—No.
+
+—¿Sois responsable de sus actos?
+
+Lucía pensó en la universidad, el campo eólico, la grabación sin editar, la
+fotografía anónima y el sobre del donante oculto en su bolsa.
+
+—A veces —dijo.
+
+El oficial escribió **ADMISIÓN DE RESPONSABILIDAD**.
+
+Lucía vio las palabras y comprendió que la honestidad, puesta dentro de un
+formulario, era sólo otro material que podía enviarse a la ventanilla equivocada.
+
+—Tacha eso —dijo.
+
+—No puedo alterar un registro oficial.
+
+—Acabas de alterarlo.
+
+—Registré vuestra respuesta.
+
+—Elegiste su significado.
+
+El oficial la miró. Por un instante parecía cansado y no cruel.
+
+—Si no escojo un significado, el sistema devuelve el formulario.
+
+—Que lo devuelva.
+
+No lo devolvió.
+
+Seis horas más tarde liberaron a Chano y a Lucía. Sus carpetas no. El oficial
+devolvió la fotografía de la mujer después de cobrarle una cuota por inspección.
+El hombre del uniforme recibió su carpeta, pero la cinta roja había sido
+sustituida por azul y el sello decía ahora que el contenido no había sido abierto.
+
+—¿Fue abierta? —preguntó él.
+
+—El sello se rompió —dijo el oficial.
+
+—Entonces fue abierta.
+
+—No según el registro.
+
+Fuera de la garita, el alba comenzaba a palidecer el camino. Los camiones
+esperaban en filas que doblaban más allá de las cámaras. Su carga incluía fruta,
+motores, medicinas, muebles de plástico, piezas de máquinas y objetos que aún
+no habían adquirido el vocabulario correcto para cruzar.
+
+Chano encontró a Lucía junto a un puesto de comida. Ella sostenía la tarjeta
+vacía de Ana.
+
+—¿Tienes el testimonio? —preguntó.
+
+—Q lo tiene.
+
+—¿El libro?
+
+—Desaparecido.
+
+—¿Las carpetas?
+
+—Desaparecidas.
+
+—¿La evidencia?
+
+Lucía miró el puesto, el camino, las filas de camiones y las personas que
+llevaban fotografías, mantas, mole y nombres vueltos oficiales por haber sido
+mal escritos.
+
+—Tenemos menos de lo que traíamos —dijo.
+
+Chano compró dos tacos y un café. Dio a Lucía un taco y conservó el otro.
+
+—Eso no es evidencia —dijo ella.
+
+—Es desayuno.
+
+—Estás aprendiendo el método de Q.
+
+—No. Estoy aprendiendo el tuyo. Una cosa puede ser verdad y no bastar.
+
+La frontera siguió formulando sus preguntas detrás de ellos. Ni Chano ni Lucía
+volvieron la cabeza cuando el vehículo de Q desapareció hacia el sur.
