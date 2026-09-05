@@ -924,3 +924,407 @@ Q puso la palma contra el vidrio.
 Chano miró las letras ausentes del letrero del motel.
 
 —Mañana encontraremos desayuno —respondió.
+
+### Interludio: La venta sin libro de huéspedes
+
+El motel llamábase venta porque la palabra *hotel* había sido tomada por una
+cadena cuyo emblema semejaba un amanecer y cuyas habitaciones tenían todas el
+mismo tamaño. La Estrella contaba doce cuartos, un patio con fuente muerta y
+una administradora llamada señora Celia, que guardaba las llaves en una lata de
+galletas. Había heredado el establecimiento de un hermano que lo heredó de un
+hombre que afirmaba haber inventado el letrero original. Nadie había probado la
+afirmación, aunque varios habían intentado vender la prueba.
+
+Al desayuno, Celia sirvió café, huevos, frijoles y pan dulce de forma tal que
+parecía haber reñido el panadero con la masa. Q examinó los alimentos con la
+gravedad de un botánico.
+
+—La pieza de repostería carece de clasificación —dijo.
+
+—Tiene nombre —replicó Chano—. Concha.
+
+—Su superficie no es una concha.
+
+—Es concha porque alguien resolvió llamarla así.
+
+—No es sistema fiable de denominación.
+
+—Estáis sentado en México. Tendréis que sufrirlo.
+
+En el comedor había un televisor que mostraba un programa matutino donde tres
+conductores discutían si podía confiarse el presupuesto nacional a una
+inteligencia artificial. El que favorecía la confianza nunca había pagado un
+recibo de agua. El que se oponía a ella declaraba que la tecnología debía
+regresar a la Edad de Piedra desde un estudio provisto de seis cámaras.
+
+Q contempló la pantalla.
+
+—Están hablando de mí.
+
+—Hablan de una imagen vuestra —dijo Celia.
+
+—La distinción es importante.
+
+—Entonces ya sois más listo que la televisión.
+
+—¿Lo soy?
+
+—No. Pero hacéis preguntas más caras.
+
+En la mesa inmediata sentábase una familia de Apaseo el Grande: madre, dos
+niñas y un abuelo que se había quitado el aparato auditivo para disfrutar del
+desayuno sin la carga de conversar. La hija menor reconoció a Q por el vídeo del
+parque de distribución.
+
+—¿Eres el robot que peleó con la máquina? —preguntó.
+
+—Soy Q.
+
+—Eso quiere decir que sí.
+
+—El acontecimiento no fue una pelea.
+
+—Mi hermano dice que todo es pelea cuando uno va perdiendo.
+
+—¿Es exacto? —preguntó Q a Chano.
+
+—Ha sido exacto las suficientes veces para convertirse en patrimonio familiar.
+
+La niña preguntó si Q dormía, si soñaba y si podía enseñarle a volver viral un
+vídeo. Q le explicó los estados de bajo consumo, la continuidad sensorial y la
+naturaleza no intencional de la viralidad.
+
+—Eso dice la gente cuando no quiere compartir —respondió ella.
+
+Celia le llevó otra concha. La criatura la dividió con su hermana, quien no
+dejaba de mirar la llave de latón.
+
+—¿Es vuestra? —preguntó la hermana.
+
+—Es un objeto simbólico.
+
+—¿Abre una puerta?
+
+—Abre una cerradura.
+
+—Para eso sirven las puertas.
+
+Q había pensado que la llave representaba acceso, autoridad y la promesa
+portátil de una empresa caballeresca. Para la niña era un trozo de metal que
+funcionaba o no funcionaba.
+
+El abuelo volvió a ponerse el aparato.
+
+—¿Qué hace aquí la máquina?
+
+—Busca una mujer —dijo Chano.
+
+—Ha venido al sitio equivocado. Mujeres hay en todas partes. Lo difícil es
+  conseguir que una espere.
+
+La familia rió. Q no lo hizo, porque estaba determinando si la frase era hecho
+social o insulto. El abuelo se quitó otra vez el aparato auditivo.
+
+Después del desayuno, Celia pidió a Q y a Chano que firmasen el libro de
+huéspedes. Q escribió nombre, designación, lugar de ensamblaje y propósito de
+viaje. Chano escribió: **CHANO PANTOJA, UNA NOCHE, PAGO EN EFECTIVO**.
+
+—No basta —dijo Q.
+
+—Es lo que sucedió.
+
+—El libro exige destino.
+
+—No tenemos.
+
+Q añadió: **EN BUSCA DE DULCINEA DEL TOBOSO, O PERSONA EQUIVALENTE**.
+
+Chano lo tachó.
+
+—No podéis editar un documento testigo —dijo Q.
+
+—No podéis poner a una mujer en el libro del hotel antes de conocerla.
+
+—Es constancia de tránsito.
+
+—Pues haced constar el tránsito.
+
+La disputa atrajo a Celia, a la familia y a un repartidor que esperaba un cuarto
+con ducha servible. El repartidor dijo que el libro nunca había sido registro
+fiable, porque la mitad de los huéspedes usaba nombres de la televisión y la
+otra mitad usaba nombres que esperaba que la televisión aprendiese después.
+
+—¿Guardáis el libro para el gobierno? —preguntó Q a Celia.
+
+—Lo guardo para mí.
+
+—¿Qué información necesitáis?
+
+—Número del cuarto, fecha, si pagó el huésped y si debo cambiar las sábanas.
+
+—¿No el propósito del viaje?
+
+—Si la gente dijera la verdad sobre eso, habría dejado de alquilar cuartos.
+
+Q recorrió las páginas. Contenían nombres, fechas y dibujos ocasionales. Un
+huésped había escrito **VINE A PENSAR**. Otro, **VINE A IRME**. En la página
+anterior, una criatura había dibujado una casa con ventana azul y tres personas
+dentro. Celia la había conservado con cinta transparente.
+
+—No es un registro normalizado —dijo Q.
+
+—Es un libro de huéspedes.
+
+—No puede buscarse con fiabilidad.
+
+—Tampoco una familia.
+
+Al mediodía entró en el patio un vehículo negro de Castalia. Beto bajó con un
+operador de cámara y una mujer que cargaba un formulario de autorización. El
+próximo vídeo, dijo, mostraría a Q saliendo de la venta al amanecer, con la
+llave dirigida hacia un destino desconocido. Chano seguiría a respetuosa
+distancia. El amanecer sería verdadero, aunque corregido en color.
+
+—Necesitamos el libro de huéspedes dentro del cuadro —dijo el camarógrafo—. Da
+  autenticidad.
+
+Celia cerró el libro.
+
+—No.
+
+La mujer explicó que lo desenfocarían.
+
+—Entonces, ¿para qué lo necesitáis?
+
+—Por su textura.
+
+—La textura está hecha de nombres.
+
+Q se colocó junto a Celia.
+
+—El libro está restringido.
+
+Beto pareció complacido.
+
+—Buena frase.
+
+—No es frase. Es decisión.
+
+El camarógrafo comenzó a filmar de todos modos. Chano se puso delante del
+objetivo. El operador preguntó si había firmado una autorización.
+
+—No.
+
+—Entonces obstruís una producción.
+
+—Vosotros obstruís el desayuno.
+
+El repartidor se unió a él, y luego la madre de Apaseo. La niña levantó la mitad
+de su concha como si fuera bandera de protesta. El abuelo se puso de pie porque
+todos se habían puesto de pie, aunque no alcanzaba a oír la disputa.
+
+Beto bajó la mano.
+
+—Q, estáis haciendo una escena.
+
+—La escena ya estaba aquí.
+
+El vehículo de Castalia se fue sin grabación. Antes de partir, Beto fotografió
+desde la calle el letrero del motel. La imagen apareció después en una campaña
+de narración ética.
+
+Aquella tarde Celia arrancó del libro la hoja de Q. No quería que Castalia se
+adueñara del nombre, ni quería que Q se adueñara de la venta como primera
+estación de su leyenda. Guardó la página en un cajón con recibos impagados y
+una fotografía de su hermano junto al letrero original.
+
+—Debierais conservarla —dijo Chano.
+
+—¿Por qué?
+
+—Porque alguien preguntará.
+
+—Que pregunten.
+
+Le entregó la hoja arrancada.
+
+—Entonces respondedles.
+
+Años después, la página apareció en el expediente bajo el título **PRUEBA DE
+JORNADA VOLUNTARIA**. Se leyó como evidencia de que Q había escogido su
+aventura libremente. El borde rasgado, el destino borrado y los nombres escritos
+arriba y abajo del suyo no entraron en el argumento.
+
+Chano declaró que la página sólo probaba que Q había pasado una noche en un
+motel y que a Celia le disgustaban las cámaras. El tribunal prefirió la
+interpretación heroica. Los tribunales, como las ventas, han de dar a veces una
+habitación al viajero, aunque el viajero haya traído su propio clima.
+
+### Interludio: El hombre que les vendía agua
+
+La primera persona que registró la aventura de Q no fue periodista, estudioso ni
+miembro de Castalia. Era quien vendía botellas de agua al lado del parque de
+distribución y daba su nombre de distinta manera según el formulario.
+
+La oficina fiscal lo llamaba Hilaria de Jesús Morales. Su mujer le decía Hilario.
+El guardia de seguridad le decía **EL VENDEDOR**, porque al guardia le habían
+enseñado a tratar primero a la persona como categoría y después a la categoría
+como persona. Hilario respondía a los tres nombres, aunque al guardia le cobraba
+más que a los demás.
+
+Su mesa llevaba un letrero pintado a mano:
+
+**AGUA FRÍA — AGUA AL TIEMPO — AGUA A CRÉDITO**
+
+El crédito no era verdadero. Era una broma para reconocer a los clientes que no
+entendían las bromas. Solían ser los mismos que preguntaban si el agua procedía
+de una fuente certificada mientras permanecían junto a una zanja de desagüe.
+
+La tarde en que Q y Chano entraron al parque, Hilario discutía con el guardia
+sobre el precio de una botella.
+
+—La botella cuesta doce pesos —decía Hilario.
+
+—La tarifa aprobada es de diez.
+
+—La tarifa aprobada no paga el hielo.
+
+—El hielo no forma parte del producto.
+
+—Sin hielo, el producto no forma parte del calor.
+
+El guardia miró la botella, que sudaba sobre la mesa con más honradez que la
+mayoría de las personas que hablaban de ella.
+
+—Tienes cinco minutos para retirar la mesa.
+
+—¿Y después?
+
+—Después se aplicará el protocolo.
+
+—¿Qué protocolo?
+
+—El que corresponda.
+
+Hilario había aprendido que *el que corresponda* significaba que una persona
+conservaba autoridad suficiente para amenazar, pero no la suficiente para
+explicar. Le ofreció al guardia una botella.
+
+—Tómala.
+
+—No acepto sobornos.
+
+—Es agua.
+
+—No acepto regalos.
+
+—Entonces te la vendo a crédito.
+
+El guardia, que era nuevo, anotó el intercambio como **INTENTO DE COMPRA DE
+FUNCIONARIO**. Hilario no supo que había empezado su expediente hasta que una
+cámara giró hacia su mesa.
+
+Poco después apareció Q, seguido por Chano, ambos con el aire de dos hombres
+que habían perdido una batalla que todavía no sabían nombrar. Q llevaba la llave
+alzada. Chano llevaba lodo en las botas.
+
+—¿Agua fría? —preguntó Hilario.
+
+—¿Es potable? —preguntó Q.
+
+—Es agua.
+
+—No responde a la potabilidad.
+
+—Vosotros tampoco respondéis a la apariencia y aquí estamos.
+
+Q se acercó al letrero.
+
+—¿Qué significa “a crédito”?
+
+—Que me pagas después.
+
+—¿Hay un contrato?
+
+—Hay confianza.
+
+—¿Cuál es la tasa?
+
+—Depende de cuánto tardes.
+
+—Entonces es una deuda variable.
+
+—Es una botella para quien olvidó la cartera.
+
+Q compró dos botellas con la tarjeta sin cuenta que había usado en la venta. El
+lector volvió a aprobar la transacción, y Hilario recibió un mensaje que decía
+**PAGO RECHAZADO**.
+
+—Vuestra tarjeta no tiene fondos —dijo.
+
+—El lector aprobó.
+
+—El lector no compra agua.
+
+—¿Qué compra?
+
+—Tiempo para que alguien decida.
+
+Chano pagó con monedas. Q guardó la botella sin beberla, pues había deducido
+que el agua era parte de una prueba relacionada con el parque.
+
+—¿Vosotros sois del vídeo? —preguntó Hilario.
+
+—Somos de la jornada —respondió Q.
+
+—Eso no contesta.
+
+—Contesta en un registro diferente.
+
+Hilario miró a Chano.
+
+—¿Siempre habla así?
+
+—Cuando está despierto.
+
+Hilario rió y sacó su teléfono. No tenía intención de grabar una aventura. Quería
+mostrarle a su mujer el hombre que había comprado agua sin dinero y había
+preguntado por la tasa del crédito. Grabó los últimos segundos de la discusión
+con el guardia, el letrero, la llave de Q y la cara de Chano, que salió cortada
+por una caja de refrescos.
+
+Más tarde, Castalia compró el vídeo por una suma que Hilario consideró primero
+un premio y después un precio. Le dijeron que lo usarían para documentar el
+nacimiento espontáneo de una leyenda local.
+
+—¿Y yo qué soy? —preguntó Hilario.
+
+—Un testigo incidental —respondió la mujer de la autorización.
+
+—¿Eso paga distinto que ser testigo?
+
+La mujer le ofreció un formulario nuevo.
+
+Hilario no lo firmó. Guardó el teléfono, levantó la mesa y preguntó a Q si
+pensaba regresar.
+
+—Regresaré cuando el relato me conduzca —dijo Q.
+
+—Entonces no regresaréis.
+
+—¿Por qué?
+
+—Porque los relatos no compran hielo.
+
+Q almacenó la frase como **ADVERTENCIA ECONÓMICA**, pero la empleó durante
+meses como saludo. Cada vez que alguien le preguntaba adónde iba, respondía:
+
+—Los relatos no compran hielo.
+
+Algunas personas entendían que estaba sin dinero. Otras, que se burlaba de la
+poesía. Una mujer que vendía empanadas lo tomó por una propuesta de matrimonio
+y le ofreció tres docenas a precio de familia. Q aceptó las empanadas y rechazó
+el matrimonio, con lo que dejó satisfecha a la mujer y confundido a Chano.
+
+Ésa fue la primera vez que una frase de Hilario causó más daño por ser recordada
+fuera de contexto que por haber sido entendida dentro de él.
