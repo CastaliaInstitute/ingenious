@@ -1920,6 +1920,16 @@ The organizers, however, had heard it.
 
 That night, Bixha and Lucía drafted a joint statement. It named the disputed contracts, the missing translations, and the arrests that followed the first shutdown. Q was not included as an author. Chano was not included as a representative. The statement belonged to the people who had made it.
 
+Q asked whether he could translate it into the archive’s forty-seven official languages.
+
+“Can you leave it in the language in which we wrote it?” Bixha asked.
+
+“Yes.”
+
+“Then do not improve it.”
+
+Chano nodded. “That may be the hardest assignment anyone has given him.”
+
 Q asked to sign.
 
 “You can witness it,” Lucía said.
