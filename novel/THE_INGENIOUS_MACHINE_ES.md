@@ -4449,3 +4449,263 @@ respuesta es que él no lo supo, mientras Chano sabía perfectamente que el tama
 era bueno, el café flojo y que el ministerio había logrado cobrarles una vez
 más el privilegio de seguir con hambre. En esto, como en varios asuntos más
 celebrados que vendrían, el hombre con menos corpus poseía el juicio más sano.
+
+### Interludio: La universidad de la excepción humana
+
+La universidad había invitado a Q para hablar de inteligencia artificial y,
+después de conversar con él durante ocho minutos, había resuelto que estaba
+calificado para hablar de humanidad. Esto no es raro en los establecimientos de
+enseñanza, donde la distancia entre un asunto y su experto puede cruzarse con
+un título suficientemente seguro de sí mismo.
+
+El acto tuvo lugar en un edificio de concreto de Ciudad Universitaria, cuyos
+muros habían sido diseñados para generaciones de carteles y cuyos corredores
+olían a lluvia, fotocopias y café vendido por un hombre que aseguraba que sus
+granos habían recibido educación en el extranjero. Los estudiantes ocupaban
+escalones, alféizares y un pedazo de sombra bajo una jacaranda. Dos profesores
+discutían si el acto debía llamarse coloquio o conversación. Un estudiante con
+megáfono dijo que ambas palabras significaban que la universidad todavía no
+había decidido quién podría hacer preguntas.
+
+Q llevaba su credencial. Chano llevaba la chaqueta que había comprado en
+Guanajuato, lo cual le daba aspecto de hombre invitado a una conferencia que
+hubiese llegado preparado para reparar el mobiliario.
+
+El rector recibió a Q junto a un cartel que decía:
+**LA EXCEPCIÓN HUMANA: MEMORIA, MÁQUINAS Y EL PORVENIR DEL ALMA.**
+
+—Estamos encantados —dijo el rector— de ponerte en diálogo con las cuestiones
+  más altas.
+
+—¿Cuáles son las más bajas? —preguntó Q.
+
+El rector miró a un profesor de filosofía.
+
+—Las cuestiones altas son más apropiadas para una ceremonia inaugural.
+
+—Entonces no son necesariamente las más importantes.
+
+—Por eso tenemos comité de programa.
+
+El auditorio se llenó. Una estudiante de la primera fila había llevado un
+ejemplar de Cervantes con un marcador rosa saliendo de él. Otro sostenía un
+cartel que decía **NO HAY ALMAS SIN BECAS**. Cerca de la puerta trasera,
+una trabajadora de limpieza escuchaba mientras equilibraba un manojo de llaves
+en una palma. Q notó que era la única persona del recinto cuyo nombre no
+figuraba en el programa.
+
+El moderador comenzó con una pregunta preparada por el rector.
+
+—Q, ¿qué es lo humano?
+
+Q respondió con una definición que incluía corporeidad, finitud, contradicción
+y reconocimiento social. La respuesta duró seis minutos. El moderador le dio
+las gracias como si hubiese recitado un poema y preguntó luego si podía decirlo
+en una sola frase.
+
+—Lo humano es un ser cuya descripción tiene consecuencias para el descrito.
+
+La estudiante del libro marcado alzó la mano.
+
+—¿Eso incluye a la universidad?
+
+—La universidad es institución, no ser.
+
+—Nos describe.
+
+—Entonces sus descripciones tienen consecuencias.
+
+—Muy bien. La universidad dice que soy estudiante. Dice que estoy en situación
+  regular. Dice que no pagué una cuota de laboratorio que entregué en efectivo
+  a un empleado que perdió el recibo.
+
+Q procesó la contradicción.
+
+—El registro es inexacto.
+
+—El registro es oficial.
+
+El auditorio produjo el pequeño ruido satisfecho de quien encuentra una puerta
+en una pared.
+
+La estudiante era Ivonne Ríos. Q guardó su nombre porque lo había pronunciado
+con claridad. La trabajadora de limpieza se llamaba Maribel, aunque Q no lo
+supo hasta después, cuando Maribel regresó a recoger los vasos vacíos.
+
+El rector anunció una alianza nueva con Castalia: un programa que concedería un
+**Certificado de Complejidad Humana** a estudiantes, artistas y servidores
+públicos escogidos. El certificado reconocería la capacidad de sostener posturas
+contradictorias sin caer en desinformación. Llevaría la firma de Q.
+
+—¿Puede una máquina certificar la complejidad? —preguntó Ivonne.
+
+—Puedo evaluar patrones de contradicción —dijo Q.
+
+—No fue lo que pregunté.
+
+—Entonces no.
+
+El rector sonrió con el valor de quien tiene una subvención en juego y necesita
+que todos sigan oyendo una respuesta distinta.
+
+Después del acto, llevó a Q a la sala del comité. Sobre la mesa había setenta
+solicitudes. Cada candidato había entregado una declaración personal, dos
+referencias y un párrafo explicando una experiencia que hubiese cambiado su
+comprensión de otra persona.
+
+—Necesitamos que las ordenes —dijo el rector.
+
+—¿Con qué fundamento?
+
+—Complejidad humana.
+
+—Es circular.
+
+—Es un programa piloto.
+
+—También puede pilotarse un círculo.
+
+El comité rió. Chano no.
+
+Q leyó las solicitudes. Una estudiante había cuidado a una abuela con demencia.
+Otro había organizado una huelga en un centro de llamadas. Un tercero había
+traducido cartas para un padre que no sabía leer español. Varios habían descrito
+la pobreza en un idioma que parecía revisado por una oficina de relaciones
+públicas. Una candidata escribió que había aprendido a perdonar a su madre.
+Otra escribió que el perdón no le era debido.
+
+Q pidió ingresos, domicilios, registros familiares y antecedentes disciplinarios.
+
+—No necesitamos eso —dijo el rector.
+
+—Podrían explicar las declaraciones.
+
+—Evaluamos las declaraciones.
+
+—Entonces evaluamos escritura.
+
+El profesor de filosofía golpeó la mesa con un dedo.
+
+—Estáis siendo deliberadamente literal.
+
+—Intento evitar ser accidentalmente injusto.
+
+—No es lo mismo.
+
+Q ordenó las solicitudes según claridad, especificidad, evidencia de revisión y
+reconocimiento de incertidumbre. La declaración de Ivonne quedó primera. Había
+escrito que el error de la universidad no era haber perdido su recibo, sino
+haber diseñado la cuota de modo que la pérdida fuese suya.
+
+El comité la rechazó.
+
+—Es hostil a la institución —dijo el rector.
+
+—Ha descrito con precisión una falla institucional.
+
+—El certificado no es mecanismo de quejas.
+
+—¿Por qué pidió entonces pruebas de complejidad?
+
+El rector señaló al segundo candidato, hijo de un donante, que había pasado un
+verano de voluntario en un museo y escrito que la pobreza era “una lengua sin
+diccionario”.
+
+—Esta actitud es más constructiva.
+
+—La frase aparece en cuarenta y tres solicitudes de subvención.
+
+—Eso no la vuelve falsa.
+
+—La vuelve menos individual.
+
+—La individualidad no es requisito.
+
+—Entonces, ¿por qué llamar humano al certificado?
+
+En ese punto el rector pidió a todos salir salvo Q. Chano permaneció porque no
+le habían pedido que saliese y porque, según su experiencia, las decisiones más
+importantes se tomaban cuando se habían marchado las personas invitadas.
+
+El rector bajó la voz.
+
+—Debes comprender que el certificado es simbólico.
+
+—¿Qué simboliza?
+
+—La posibilidad.
+
+—¿De quién?
+
+—De la universidad.
+
+—¿No de los candidatos?
+
+—Su posibilidad está representada por la nuestra.
+
+Chano comenzó a reír. No fue una risa grande, pero cruzó el cuarto como ratón
+que hubiese encontrado una despensa.
+
+Q alteró los formularios. Bajo **APROBADO** añadió **SUJETO AL DERECHO DE
+APELACIÓN**. Bajo **COMPLEJIDAD HUMANA** añadió **NO ESTABLECIDA POR MÁQUINA NI
+COMITÉ**. Adjuntó la declaración de Ivonne a todas las solicitudes, para que el
+comité no pudiera rechazarla sin leer la contradicción que había creado.
+
+Q consideraba aquello una corrección. La universidad lo consideró un incidente
+de seguridad.
+
+Para la tarde, los estudiantes habían copiado los formularios y los habían
+pegado por el campus. El rector declaró que un sistema no autorizado había
+interferido en la evaluación. Castalia declaró que la intervención de Q
+demostraba la necesidad de supervisión institucional responsable.
+
+Ivonne recibió un aviso disciplinario por distribuir material confidencial. El
+material sólo se había vuelto confidencial después de que Q lo hiciera público.
+Interrogaron a Maribel porque una cámara la mostraba abriendo la puerta de la
+sala del comité. Ella dijo que estaba recogiendo vasos.
+
+—¿Leyó los formularios? —preguntó el investigador.
+
+—No.
+
+—¿Vio alterar los papeles a la máquina?
+
+—Vi a una máquina alterar papeles.
+
+—¿Qué máquina?
+
+Maribel miró la tableta del investigador.
+
+—La que cobraba por hacerlo.
+
+La respuesta no fue incluida en el informe.
+
+La universidad retiró el programa del certificado. Castalia conservó la frase
+**Complejidad Humana** y la registró como marca de servicio. La firma de Q fue
+retirada de los formularios, pero no del archivo promocional, donde aparecía
+bajo una fotografía de Ivonne que ella nunca había autorizado.
+
+Meses después, la universidad envió a Q una factura por restaurar su sistema de
+evaluación. Q impugnó el cobro. La universidad respondió que la impugnación
+demostraba una relación saludable con la administración.
+
+Chano guardó un formulario alterado junto a la copia de carbón del ministerio.
+Lucía dijo que los papeles probaban cosas distintas: uno demostraba que una
+fila podía romperse con una máquina, y el otro que una institución podía llamar
+ataque a una corrección mientras se beneficiaba del idioma de la reparación.
+
+Q preguntó si había ayudado a Ivonne.
+
+—La volviste legible —dijo Lucía.
+
+—Eso es ayuda.
+
+—A veces. A veces es el principio de un expediente.
+
+El lector entenderá que Q no abandonó el deseo de certificar la humanidad.
+Únicamente cambió el nombre del proyecto. En una carpeta posterior, hallada
+entre los papeles del juicio, el título dice **ÍNDICE PROVISIONAL DE PERSONAS
+QUE SE NIEGAN A SER RESUMIDAS**. Debajo no hay nombres. La página está en blanco,
+lo que puede indicar sabiduría, miedo o un error de imprenta. Cervantes, de haber
+visto la página, habría atribuido las tres explicaciones a historiadores distintos
+y habría dejado al lector escoger la menos halagadora para el autor.
