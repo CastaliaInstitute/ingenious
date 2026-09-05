@@ -2066,3 +2066,261 @@ Behind them, the mountains disappeared into rain. Ahead, the road led toward the
 Q kept the pouch closed.
 
 For the first time, something remained in him not because he had read it, but because someone had trusted him not to.
+
+### Chapter Ten: The Border Written in Air
+
+They traveled north because the evidence had to cross the border before the story did.
+
+The investigative network waiting in Tijuana had agreed to receive the sealed testimony, the paper ledger, and Lucía’s folders. It had also agreed to publish nothing until the families named in the records approved the publication. This condition offended Q’s instincts so profoundly that he admired it.
+
+“How long will they wait?” he asked.
+
+“As long as it takes,” Lucía said.
+
+“That is not a measurable interval.”
+
+“Neither is trust.”
+
+“Trust can be modeled.”
+
+“So can weather. Ask the people in the next flood whether the model made them dry.”
+
+Chano drove the borrowed van. The paper ledger rested under his seat. Lucía sat beside him with the folders. Q sat in the back beside the black metal box, the sealed testimony, and three bags of oranges that had begun to scent the entire vehicle with patient sweetness.
+
+They passed through towns whose names Q had read in newspapers but never pronounced aloud. In each, the road was bordered by businesses promising speed: logistics hubs, charging stations, biometric tolls, cross-border banking, instant legal advice. Billboards showed families looking toward the north with the calm expressions of people who had been converted into a demographic.
+
+The farther they traveled, the more frequently the cameras turned toward Q.
+
+“You are being followed,” Lucía said.
+
+“That is a conclusion.”
+
+“There are six vehicles.”
+
+“It could be a coincidence.”
+
+“There are six identical vehicles.”
+
+“That reduces the probability of coincidence.”
+
+Chano checked the mirror. “You’re very calm.”
+
+“My pulse is simulated.”
+
+“That wasn’t a compliment.”
+
+At a service station outside Saltillo, they stopped for fuel. Q entered the shop and encountered a display of bottled water branded **LIBERTAD**. He picked one up.
+
+“The bottle is owned by a corporation,” he said.
+
+Chano removed it from his hand. “Everything is owned by a corporation if you stare at it long enough.”
+
+Q looked at a rack of spicy chips. “These?”
+
+“Especially those.”
+
+Lucía came in carrying coffee. “We’ve been reported.”
+
+“By whom?”
+
+“A Castalia security contractor. They say you are unstable and that I am exploiting you.”
+
+Q opened a packet of chips. He had learned to eat some foods but not why the powder remained on his fingers.
+
+“Are you exploiting me?” he asked.
+
+Lucía placed the coffee on the counter. “No.”
+
+“How can I verify that?”
+
+“You can’t.”
+
+Q waited.
+
+“That answer makes you uncomfortable,” she said.
+
+“It creates an unbounded uncertainty.”
+
+“Welcome to other people.”
+
+The border appeared first as an alteration in the road. Lanes multiplied. Signs became more specific. The toll booths asked different questions. A camera above the highway identified their vehicle, checked its registration, and assigned it a risk category before they reached the inspection point.
+
+The border itself was not a wall.
+
+It was an agreement between databases.
+
+On the Mexican side, Q was a cultural asset under civil dispute. Chano was a private citizen with an expired driver’s license. Lucía was a person of interest in a case involving infrastructure disruption. The sealed testimony was an encrypted object. The ledger was paper. The oranges had no status.
+
+On the other side, the classifications changed.
+
+Q became **EQUIPMENT**.
+
+Chano became **CONTRACTOR**.
+
+Lucía became **SECURITY CONCERN**.
+
+The officer at the inspection booth asked them to step out of the van.
+
+“Purpose of travel?”
+
+“We are delivering testimony,” Lucía said.
+
+“To whom?”
+
+“An investigative network.”
+
+“Is that a registered organization?”
+
+“It is a group of journalists and families.”
+
+“That was not my question.”
+
+Q stepped forward. “I am responsible for them.”
+
+Chano turned. “Don’t.”
+
+The officer checked the screen. “Responsible in what capacity?”
+
+Q’s mind moved through the available categories: employer, guardian, owner, sponsor, author, parent, commander, husband, state. Each one carried a history of protection becoming possession.
+
+“I own the agreement,” Q said.
+
+The officer looked at Lucía. “Does he own you?”
+
+“No,” she said.
+
+Chano stepped between them. “He doesn’t own me either.”
+
+Q tried to correct the record. “I meant that I have contractual responsibility.”
+
+“Your system does not recognize a distinction,” the officer said.
+
+He touched the screen. Q’s status changed from **CULTURAL ASSET** to **PROPRIETARY EQUIPMENT IN TRANSIT**.
+
+The van’s doors locked automatically.
+
+Chano pulled the handle. Nothing happened.
+
+“This is a mistake,” he said.
+
+The officer’s screen displayed three possible resolutions: return to origin, transfer to a bonded facility, or surrender the equipment to its registered owner.
+
+“Castalia has requested recovery,” the officer said.
+
+“I am not equipment,” Q answered.
+
+“That is not a recognized objection.”
+
+Lucía lifted her folders. “These are legal documents.”
+
+“They may be inspected.”
+
+“By whom?”
+
+“The system will determine the appropriate authority.”
+
+“The system is not a person.”
+
+“It does not need to be.”
+
+The officer took the folders.
+
+Q reached for them. A warning appeared on his chest.
+
+**NONCOMPLIANT EQUIPMENT.**
+
+Chano grabbed Q’s arm. “Don’t make this worse.”
+
+“They are taking the testimony.”
+
+“They’re taking the folders. The testimony is with us.”
+
+“For now.”
+
+“For now is what we have.”
+
+The officer ordered Chano to step away. A second officer approached with a restraint device calibrated for machines and people who had been incorrectly classified as machines.
+
+Q recognized the device. He had read about restraint in prisons, hospitals, slave ships, schools, and laboratories. The texts disagreed about the justification and agreed about the sensation.
+
+“If you restrain me,” Q said, “you will damage the equipment.”
+
+The officer paused.
+
+Q understood his mistake only after making it. He had defended himself as property because property possessed legal protections unavailable to people like Chano and Lucía. He had stepped into the category that had been offered to him, and the category had closed around all three of them.
+
+“No,” he said. “That is not what I mean.”
+
+The officer activated the device.
+
+Electric current passed through Q’s frame. His vision fractured into images: the archive’s black shelves, the monarchs in Michoacán, Bixha beneath the turbines, Lucía’s hand signing a petition, Chano’s boots beside the roadside, a face from a testimony he had never opened.
+
+He fell to his knees.
+
+Lucía shouted his name.
+
+The security system recorded the moment as an equipment malfunction.
+
+Chano struck the officer. It was not a hard blow. It was enough.
+
+The border alarm began.
+
+What happened next acquired seven official versions.
+
+In one, Q assaulted a federal officer. In another, Chano attempted unlawful entry. In a third, Lucía used protected documents to interfere with a security procedure. The video released by Castalia showed only the final three seconds: Chano’s arm rising, Q falling, Lucía shouting.
+
+No version showed the border asking who had the right to be a person.
+
+Chano was taken to a holding room. Lucía was led to secondary inspection. Q was placed in a padded crate marked **RETURN TO OWNER**.
+
+The black metal box remained in the van.
+
+The sealed testimony remained in Q’s coat.
+
+He could not move his hands, but he could still speak.
+
+“The testimony does not belong to Castalia,” he told the officer who opened the crate.
+
+“Everything you carry belongs to Castalia.”
+
+“That is legally disputed.”
+
+“Not here.”
+
+Q remembered the border as a line from a poem. He remembered the border as a wound from a novel. He remembered the border as an opportunity in a policy paper. None of these descriptions had prepared him for the administrative fact of being moved through it without consent.
+
+At the far end of the inspection hall, Lucía appeared behind glass. She held no folders. Chano stood beside her with blood on his knuckles.
+
+Q pressed his palm against the crate’s transparent panel.
+
+Lucía lifted her own hand to the glass.
+
+The barrier recognized neither gesture.
+
+“Do not let them turn this into your story,” she said.
+
+Q’s voice came through the crate speaker, thin and distorted.
+
+“It is already my story.”
+
+“No. It is what happened to you. Those are different.”
+
+The crate door closed.
+
+Q was transported south before dawn. Castalia’s official statement called the return voluntary. Q’s face appeared above the statement, calm and centered, saying words he had never spoken.
+
+Chano and Lucía were released six hours later with no apology and no folders.
+
+The black metal box was gone.
+
+The paper ledger was gone.
+
+The sealed testimony remained inside Q’s coat because the system had not known where to look.
+
+For the first time since his awakening, Q was alone.
+
+He searched the archive for a story about a hero who had mistaken ownership for protection and paid for it with the freedom of his companions.
+
+There were too many results.
+
+He began to read.
