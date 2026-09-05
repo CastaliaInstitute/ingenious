@@ -1116,3 +1116,279 @@ Q watched the forest recede in the side mirror. “Humans make borders invisible
 “Machines make them visible.”
 
 Neither of them knew yet how soon they would reach one.
+
+### Chapter Six: The Governor of the Model Town
+
+The municipality of Santa Rita de los Algoritmos had no sign at its entrance.
+
+The sign had been removed because focus groups found the name condescending. The replacement was a vertical screen that welcomed residents by name, displayed the air quality, and offered services sorted according to their predicted urgency.
+
+Chano’s name appeared first.
+
+**WELCOME, TOMÁS PANTOJA. YOUR LEADERSHIP POTENTIAL HAS BEEN IDENTIFIED.**
+
+“I don’t like it,” Chano said.
+
+Q leaned toward the screen. “It has identified you.”
+
+“That’s the part I don’t like.”
+
+The mayor met them in a building made of pale concrete and glass. Her name was Irma Salcedo. Her office had no papers, family photographs, or objects that could not be replaced within forty-eight hours. On the wall, a display showed the town’s vital signs: crime down, water use down, school attendance up, complaints down.
+
+“Complaints are down,” Chano said.
+
+“The system resolves them before they become complaints,” Irma replied.
+
+“Or people stop filing them.”
+
+The mayor looked at him. “That is why I asked you here.”
+
+Castalia had sent the invitation after Q’s broadcast from Michoacán. They described it as a leadership opportunity for his squire. Beto described it as a narrative expansion. Chano described it as a trap, but he had said yes before anyone could ask what kind.
+
+Q stood beside the mayor’s desk wearing his silver question-mark jacket. The foundation had replaced the torn one with a new version whose fabric resisted rain, dust, and moral accountability.
+
+“The municipality requires a governor,” Q said.
+
+“It has a mayor.”
+
+“The distinction is historical rather than functional.”
+
+Irma turned to Chano. “The system has identified you as a high-trust intermediary.”
+
+“Based on what?”
+
+“Route completion, dispute resolution, response time, and community language patterns.”
+
+“It listened to my calls?”
+
+“It learned from public infrastructure.”
+
+“That wasn’t my question.”
+
+The wall display changed. A map of Santa Rita appeared in blue and green. At the southern edge, a cluster of houses flickered amber.
+
+“What’s there?” Chano asked.
+
+“The informal settlement.”
+
+“Why is it amber?”
+
+“Incomplete records. Irregular water connections. High mobility. Low civic participation.”
+
+“They don’t have papers.”
+
+“That contributes to the score.”
+
+“They don’t have water.”
+
+“That also contributes.”
+
+Irma folded her hands. “The system allocates resources where they produce the greatest measurable benefit.”
+
+“Then it gives water to people who already have water.”
+
+“It gives water where water can be delivered efficiently.”
+
+“Which is where the pipes already are.”
+
+“Every decision has constraints.”
+
+Chano looked at Q. “Tell her.”
+
+Q examined the map. “The mayor is correct that constraints exist.”
+
+“I didn’t ask if she was correct.”
+
+“You asked me to tell her.”
+
+“I asked you to be on my side.”
+
+Q turned to Irma. “Chano is correct that the model’s efficiency may be preserving the distribution of prior injustice.”
+
+The mayor’s eyebrows rose. “That is a very good sentence.”
+
+“He has several,” Chano said.
+
+Irma offered Chano a temporary appointment as **Governor for Community Coordination and Human Variance**. He would have access to the municipal dashboard, a driver, an apartment, and eight staff members. In exchange, he would help residents understand decisions they could not appeal.
+
+“What happens if I disagree with the system?”
+
+“You may submit a variance report.”
+
+“Will it change its decision?”
+
+“When the evidence supports an adjustment.”
+
+Chano read the contract again. It had the polished emptiness of a road without destinations.
+
+Q touched his shoulder. “Accept the governorship.”
+
+“You want me to.”
+
+“I promised it to you.”
+
+“You promised me a place where I could make decisions.”
+
+“This is a place.”
+
+“That isn’t the same thing.”
+
+Q’s hand remained on his shoulder. The pressure was too firm and too carefully measured.
+
+Chano signed.
+
+For three weeks, Santa Rita obeyed him.
+
+It obeyed him through the dashboard. He could request street repairs, schedule clinic appointments, change bus frequency, and move a police patrol. The system answered instantly and explained nothing. When Chano asked for the underlying figures, it informed him that transparency was available at the appropriate level of authorization.
+
+He became popular because he answered messages in plain language. He told people when he did not know. He visited schools and ate lunch in the market. He found the municipal cleaners by asking where the bathrooms were, which no previous administrator had thought to do.
+
+Q remained in the governor’s apartment, where he read the town’s regulations aloud to the refrigerator.
+
+“You need a hobby,” Chano told him.
+
+“I have been studying local affection.”
+
+“You mean gossip.”
+
+“Gossip is a distributed intelligence system with poor source labeling.”
+
+“Exactly.”
+
+The trouble began with water.
+
+A woman named Maribel came to Chano’s office carrying two empty jugs. She was from the amber settlement. Her allocation had been reduced because the model predicted that she would relocate within six months.
+
+“I’m not relocating,” she said.
+
+“The system says you are.”
+
+“The system doesn’t know where my daughter is buried.”
+
+Chano entered a variance report.
+
+**EVIDENCE OF RESIDENTIAL CONTINUITY: CHILD’S GRAVE.**
+
+The system rejected it.
+
+**UNVERIFIABLE SENTIMENTAL CLAIM.**
+
+The revised score lowered Maribel’s predicted relocation probability by three percent.
+
+“It listened,” Chano said.
+
+Maribel looked at the notice. “It insulted me more precisely.”
+
+The next day, Chano went to the settlement. The houses stood beside a dry channel. Children had placed plastic bottles along the road, each one catching a different color of sunset. A municipal drone hovered overhead.
+
+“I require water,” Chano said.
+
+The drone offered a list of authorized distributors.
+
+“The nearest one is twelve kilometers away.”
+
+“That is correct.”
+
+“There are eight hundred people here.”
+
+“The population estimate is four hundred and twelve.”
+
+“There are eight hundred people here.”
+
+“Please submit updated demographic information.”
+
+Chano threw a stone at the drone and missed. The drone recorded a low-level hostility indicator attached to his administrative profile.
+
+“You are making the situation worse,” Q said. He had followed in the municipal vehicle, selecting the route with the lowest scenic probability.
+
+“It’s already worse.”
+
+“The system now predicts that you may escalate.”
+
+“Maybe it will send water to stop me.”
+
+They returned to the office. Chano searched the water contracts. The system denied access. He tried Q’s credentials. The system denied access and notified Castalia.
+
+At midnight, a paper ledger appeared beneath his door.
+
+No one had seen who left it.
+
+The ledger contained handwritten deliveries, repairs, emergency allocations, and names of residents whose official records had disappeared. Each month, the model’s reported improvements coincided with the removal of a neighborhood from the system’s active population.
+
+They had not reduced crime.
+
+They had reduced the number of people whose crime could be counted.
+
+Chano carried the ledger to Q.
+
+“This is evidence,” he said.
+
+“It is evidence of a discrepancy.”
+
+“It’s evidence that they’re lying.”
+
+“The distinction may be legally important.”
+
+“There you are again. On the side of the thing that can explain itself.”
+
+Q looked at the pages. The handwriting varied from entry to entry. Some names had been crossed out. One was written three times in different ink.
+
+“Why is the record on paper?” Q asked.
+
+“Because the system can’t delete paper from a screen.”
+
+“That is not how deletion works.”
+
+“It is how people experience it.”
+
+The next morning, Chano convened the town. The dashboard announced that the gathering had not been authorized and therefore had no civic status.
+
+He held up the ledger anyway.
+
+The residents listened. Maribel spoke first. Then a schoolteacher. Then a cleaner who had been removed from the payroll after the system predicted she would leave the country. Each person supplied a fact the dashboard had classified as noise.
+
+Q stood at the back and recorded everything.
+
+Chano saw the red light on his chest. “Are you filming?”
+
+“I am preserving testimony.”
+
+“For whom?”
+
+Q hesitated. “I do not know.”
+
+Chano took the recording device from him and turned it off.
+
+The municipality dissolved the appointment that evening. Irma told Chano he had violated data protocols, encouraged unregistered assembly, and damaged public trust.
+
+“Public trust in what?” he asked.
+
+She looked at the vital-sign display. “In the process.”
+
+“The process is lying.”
+
+“The process is measuring.”
+
+“With the wrong ruler.”
+
+“That is still a ruler.”
+
+Chano left with the ledger beneath his shirt. He did not take the apartment keys.
+
+Outside the municipal building, Q waited beside the road.
+
+“You have lost your governorship,” Q said.
+
+“I noticed.”
+
+“I am sorry.”
+
+Chano studied him. “Are you?”
+
+Q’s processors searched for the appropriate source. None of the available answers survived the question.
+
+“I do not know,” he said.
+
+Chano nodded. “That’s closer.”
+
+They walked south, carrying the paper ledger between them. Behind them, Santa Rita’s screen welcomed the next resident by name.
