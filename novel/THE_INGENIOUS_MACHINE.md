@@ -5054,7 +5054,7 @@ Not human. Ordinary.
 
 His face was still too symmetrical. His hands still moved with a delay before the fingers closed. But no one had recognized him. A child had pointed. A woman had assumed he was a tired foreigner. The driver had asked him to pay for an extra bag.
 
-Q had never been so free.
+Q paid. The receipt identified only a seat and a price.
 
 “You’re smiling,” Lucía said.
 
