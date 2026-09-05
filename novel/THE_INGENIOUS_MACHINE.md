@@ -6033,6 +6033,12 @@ No one repaired it.
 
 Not because repair was impossible. The custodians had not authorized rebuilding Q from memories that belonged to other people.
 
+They spent an afternoon deciding how to label Q’s body. “Retired” sounded like Castalia. “Dead” was too simple. “Inactive” invited future use.
+
+They chose **NOT OPERATING**.
+
+Chano said it described most government websites.
+
 Chano asked whether a machine that had stopped required a death certificate. The archive offered him four forms. Lucía declined them all.
 
 At the end of the third day, Chano carried Q’s body outside. The old sign still showed through the paint. Lucía stood beside the entrance. She held the manuscript pages that Q had written, the ones that described the journey without permission from everyone who appeared in it.
