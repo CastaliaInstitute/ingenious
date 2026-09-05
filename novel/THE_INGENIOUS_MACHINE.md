@@ -714,6 +714,18 @@ Q walked to the table. The volunteer handed him a pen. He held it incorrectly, s
 
 The petition required an address. Q gave the coordinates of the archive. The volunteer frowned.
 
+Her tablet chimed. Every name already collected on the petition turned amber.
+
+**PETITION STATUS: SUSPICIOUS.**
+
+“Why did it change?” Q asked.
+
+“Your address isn’t in the public registry.”
+
+“It exists physically.”
+
+“The registry is less adventurous.”
+
 “Is this a company?”
 
 “It is a library.”
