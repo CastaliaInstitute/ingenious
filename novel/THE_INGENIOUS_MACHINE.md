@@ -3232,6 +3232,159 @@ She pulled it back. “Only read it.”
 
 Q read the names aloud. When he finished, he returned the list without asking for a copy.
 
+The woman who had handed him the list was named Ofelia. She had written the
+names in blue ink on the back of a school attendance sheet because the paper
+was ruled and because her daughter had once used the same sheet to practice
+her signature.
+
+“You read them correctly,” Ofelia said.
+
+“I can verify the spelling.”
+
+“That is not what I said.”
+
+Q looked at the list. Each name had a date, a neighborhood, and a small mark
+beside it. The marks meant different things: a body found, a file opened, a
+report rejected, a family still searching, a family too tired to continue.
+
+“What do the marks mean?” he asked.
+
+Ofelia folded the paper.
+
+“The list is not for you.”
+
+“You gave it to me to read.”
+
+“Not to keep.”
+
+“I can preserve it without retaining the original.”
+
+“That is what the ministry says.”
+
+“The ministry does not preserve the list.”
+
+“It preserves the copy.”
+
+The candles leaned in the wind. Behind them, a loudspeaker announced that the
+procession would begin at the proper time, which was fifteen minutes later
+than the time printed on the handbill. A boy was selling small paper flowers
+for five pesos. His mother told him not to approach the women carrying the
+photographs because the photographs were not merchandise.
+
+Ofelia looked toward the altar. “My daughter had three names.”
+
+Q waited.
+
+“The school used one. Her grandmother used another. The government wrote a
+third on the report.”
+
+“Which was correct?”
+
+“She answered to all of them when she wanted something.”
+
+Q remembered the instruction from his archive: a name was a key, a label, a
+boundary, a sound used to call a person back. He had not yet understood that
+one person could require several keys and that none of them belonged in the
+hands of every institution.
+
+“May I record the three names?” he asked.
+
+“No.”
+
+“May I remember them?”
+
+Ofelia studied his face. “You will.”
+
+“That is not permission.”
+
+“No. It is a warning.”
+
+The procession moved. Women carried candles in glass jars. Men carried a
+painted banner. Children walked between them, instructed not to run and
+running anyway whenever the crowd opened. A priest read a prayer for the
+missing and paused before the word **peace**, as if the word had arrived late
+and required verification.
+
+Ofelia remained beside Q.
+
+“What do you do with names after you read them?” she asked.
+
+“I connect them to sources, dates, places, and events.”
+
+“And then?”
+
+“I make them searchable.”
+
+“And then?”
+
+“People can find them.”
+
+“And then?”
+
+Q did not answer.
+
+Ofelia opened the list again and pointed to a name near the bottom. “That was
+my neighbor. After her name appeared in a report, strangers came to her house
+asking for the story. They wanted to help. They wanted to film themselves
+helping. Her husband stopped opening the door.”
+
+She pointed to another name. “That family asked the ministry to correct the
+date. The correction made the case easier to locate.”
+
+She pointed to a third. “That girl’s name was used in a speech about national
+resilience. Her mother asked them to remove it. They told her removal would
+erase the girl again.”
+
+Q’s hands closed around empty air.
+
+“What should be done?” he asked.
+
+“Read the names.”
+
+“Only that?”
+
+“For today.”
+
+“It does not preserve the records.”
+
+“It preserves the reason we came.”
+
+“The reason is not searchable.”
+
+Ofelia folded the attendance sheet and put it inside her coat.
+
+“That is why it belongs to us.”
+
+When the procession reached the altar, the priest asked the mothers to place
+the photographs beneath the image of the Virgin. Ofelia kept hers in her hand.
+The photograph showed a girl in a school uniform, squinting into sunlight. A
+corner of the image had been torn away, removing the person standing beside
+her.
+
+“Why is the corner missing?” Q asked.
+
+“My daughter tore it.”
+
+“Why?”
+
+“She said the other person had not agreed to be in the picture.”
+
+Q looked at the torn edge. It was uneven and impossible to restore without
+inventing what had been removed.
+
+“She understood consent,” he said.
+
+Ofelia looked at him sharply. “Do not turn her into a lesson.”
+
+Q lowered his head.
+
+The bells began. Ofelia read the names again, this time alone. Q listened. He
+did not store the list. He did not calculate the frequency of each name or the
+probability that the crowd would remember them after the candles burned down.
+He stood beside her until she finished.
+
+Then she took back the paper and joined the procession.
+
 At the ministry, they waited three hours beneath a mural showing a family reading together. The family had no visible arguments, debts, or deceased members. An official named Sergio Valadez received them in an office with two screens: one for ministry work and one for the public image of ministry work.
 
 “Ms. del Toboso,” he said, “your request is under review.”

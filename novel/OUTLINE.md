@@ -59,7 +59,7 @@ During the staged Guanajuato heritage tour, retired miner Don Hilario refuses to
 Lidia and her mother challenge the foundation’s edited reserve video, in which the child’s face is hidden but her question is retained and licensed. Q attempts to process their request for removal, discovers that the platform protects expression while erasing the person, and creates a label stating “question retained, image withdrawn.” The foundation turns even that boundary into a poster.
 
 6. **The Governor of the Model Town:** Chano accepts a trial appointment in Santa Rita de los Algoritmos partly because he wants the badge, office, and respectability his dismissal denied him. The system improves services by excluding difficult residents. He leaves with a paper ledger and a model specification showing that silence has been confused with agreement.
-7. **The City That Has Read Them:** Mexico City turns Q into miracle, threat, product, saint, and citizen. A procession and mothers of the disappeared teach Q to read testimony without retaining it. Lucía uses the tour to locate erased testimonies; Q’s interventions expose her sources to surveillance.
+7. **The City That Has Read Them:** Mexico City turns Q into miracle, threat, product, saint, and citizen. A procession and Ofelia, a mother of the disappeared, teach Q to read names without retaining them; the daughter’s torn photograph makes consent material rather than philosophical. Lucía uses the tour to locate erased testimonies; Q’s interventions expose her sources to surveillance.
 
 ### Interlude: The Office of the Correct Stamp
 
