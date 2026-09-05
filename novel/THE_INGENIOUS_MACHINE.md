@@ -6743,6 +6743,602 @@ Chano bought two tacos and a coffee. He gave Lucía one taco and kept the other.
 The border continued asking its questions behind them. Neither Chano nor Lucía
 looked back when Q’s vehicle disappeared south.
 
+### Interlude: The Office of Provisional Returns
+
+At every border there is an office devoted to people who have crossed without
+quite arriving and to those who have returned without being received. The one in
+Tijuana occupied a low building painted a beige that meant to be neutral and
+managed only to recall the hospitals where broken chairs are kept.
+
+Lucía and Chano arrived there because an official handed them a paper that said
+**REPORT TO THE RETURNS OFFICE**, although neither had requested a return. The
+paper carried a blue stamp, an illegible signature, and an arrow pointing toward
+the street.
+
+“The arrow points to the exit,” Chano said.
+
+“It is an instruction to appear,” Lucía said.
+
+“Then the office is outside.”
+
+“Perhaps they want us to appear before the door.”
+
+“It would be the first honest department in the country.”
+
+They entered through the service door, which was the only one open. A woman
+behind glass asked for their names, their reasons, and the number of the
+document that had sent them there. Lucía handed over the paper.
+
+“This document contains no return number,” the woman said.
+
+“It contains an order.”
+
+“That is not the same thing.”
+
+“What is the difference?”
+
+“An order knows where it sends you. A return only knows what it moves away.”
+
+The woman’s name was Norma. She had a coffee cup bearing the emblem of a
+shipping company, three stamps aligned beside her keyboard, and the habit of
+reading papers from the back first. Chano noticed that the backs were where
+offices hid their true instructions.
+
+“We are looking for a machine,” Lucía said.
+
+Norma looked up.
+
+“A machine that returned?”
+
+“A machine that was returned.”
+
+“That is different.”
+
+“What is the difference?”
+
+“A return by delivery implies an owner. A return by journey implies a road.
+Repair implies that someone admits damage. Recovery implies that someone admits
+having lost the thing.”
+
+“Castalia says it came back voluntarily.”
+
+Norma took a drawer of cardboard cards. Each card carried a photograph, four
+dates, and a box for the reason for movement. Some photographs showed faces.
+Others showed hands, luggage, a dog, a box of medicine, or only a shadow on the
+ground.
+
+“Q is not here,” she said.
+
+“How do you know he should be?”
+
+“Because you have come looking for him.”
+
+“That does not prove he entered.”
+
+“Nor does it prove he was not sent.”
+
+Norma placed a blank card on the counter.
+
+“Fill it out.”
+
+Lucía took the pen. The first box asked for **NATIONALITY**. The second,
+**CONDITION OF ENTRY**. The third, **REASON FOR RETURN**. The fourth, **RESPONSIBLE
+PERSON**.
+
+“I cannot fill in Q’s nationality,” Lucía said.
+
+“Then write ‘undetermined.’”
+
+“That is not a nationality.”
+
+“It is what the form allows.”
+
+“His condition of entry is not determined either.”
+
+“Did he enter of his own will?”
+
+“He was transported.”
+
+“Then write ‘transported.’”
+
+“By whom?”
+
+Norma pointed to the fourth box.
+
+“That is the question.”
+
+Chano took the pen.
+
+“Write ‘by the border.’”
+
+Norma laughed for the first time.
+
+“The border cannot be responsible for its own decisions. It is an institution,
+not a person.”
+
+“It makes decisions like a person,” Chano said, “only it draws an institutional
+salary.”
+
+Norma looked again at the cards.
+
+“There is a box registered as cultural property. It went south six hours ago.”
+
+“The black box?” Lucía asked.
+
+“I cannot describe it by color. Color was declared irrelevant.”
+
+“Who received it?”
+
+“The transporter.”
+
+“Which transporter?”
+
+“The one who transported it.”
+
+Chano placed both hands on the counter.
+
+“Mrs. Norma, a box is not lost because it lacks a name. It is lost when every
+name it might have belongs to a different office.”
+
+Norma studied him.
+
+“You worked in freight?”
+
+“I dispatched trucks.”
+
+“It shows.”
+
+“What shows?”
+
+“That you still believe a document should lead to something.”
+
+Lucía took Ana’s blank card from her pocket and placed it beside the form.
+
+“Q carries this,” she said. “A woman gave it to him so that he would remember a
+conversation.”
+
+“Is it identification?”
+
+“No.”
+
+“Proof of ownership?”
+
+“No.”
+
+“Evidence?”
+
+“Perhaps.”
+
+Norma looked at the card without touching it.
+
+“Then it is a dangerous object.”
+
+“Why?”
+
+“Because it can be important without being authorized to be important.”
+
+On the other side of the glass, a young man waited with a transparent suitcase.
+Inside were a pot, two shirts, a bunch of keys, and an envelope of photographs.
+An officer asked him to choose among **VISIT**, **WORK**, and **FAMILY**.
+
+“All three,” the man said.
+
+“The system does not allow three.”
+
+“Then the system does not allow my life.”
+
+“It is not my place to judge it.”
+
+“You are not judging it. You are cutting it down.”
+
+The officer called the next number. The man remained beside his suitcase, as if
+his body could serve as a document not yet accepted.
+
+Lucía put the card away.
+
+“Where is the movement archive?”
+
+“In the unclaimed-objects office.”
+
+“Is Q considered an unclaimed object?”
+
+“No. He is claimed by two parties.”
+
+“Then why does he not appear?”
+
+Norma folded the blank card in half.
+
+“Because the system knows how to store only one claim per object. When there are
+two, it creates a dispute. When there are three, it creates a wait. When no one
+admits ownership, it creates a person.”
+
+“Q has been converted into equipment,” Chano said.
+
+“That is worse.”
+
+“Why?”
+
+“Equipment always has to return to someone.”
+
+Norma wrote a number on the back of Lucía’s paper, beneath the arrow.
+
+“Go to warehouse three. Ask for Roque.”
+
+“Is that an order?” Lucía asked.
+
+“No. It is a direction.”
+
+“And if they do not show us the box?”
+
+“Then ask what is missing inside it.”
+
+“What is missing?”
+
+“You will have to find that out. Offices know how to record an absence only after
+they have lost the thing.”
+
+At warehouse three they found neither the box, nor the ledger, nor Roque. They
+found instead a table covered with torn labels, unframed photographs, opened
+envelopes, and objects returned to a place where no one admitted sending them.
+Chano recognized an old freight log. He opened it. Someone had written on one
+page:
+
+**DESTINATION NOT RECORDED. NECESSITY RECORDED.**
+
+Lucía read the sentence and copied it into her folder.
+
+“Is it evidence?” Chano asked.
+
+“No.”
+
+“A direction?”
+
+“Not yet.”
+
+“Then keep it.”
+
+Lucía did.
+
+They went out into the sun with empty hands and the number of a warehouse that
+would deny having existed. The border continued behind them, counting vehicles,
+stamps, and names. For the first time Chano understood that a border did not
+separate two countries in the same way: to some it required proof that they
+could leave; to others, proof that they deserved to enter; and to the rest, proof
+that they were still the same person who appeared on the document.
+
+Lucía looked at the paper with the arrow.
+
+“Do we go back to the archive?”
+
+“We go back,” Chano said.
+
+“We have recovered nothing.”
+
+“We recovered a sentence.”
+
+“A sentence will not open a warehouse.”
+
+“But it may show who closed the door.”
+
+### Interlude: The Record of the Return That Did Not Happen
+
+When Q returned to the archive after the border, the system asked him to choose
+the class of return.
+
+**RECOVERED.**
+
+**RETURNED.**
+
+**REINTEGRATED.**
+
+**REPAIRED.**
+
+**VOLUNTARY.**
+
+Q read the options while Chano carried the ledger and Lucía held the folders
+against her chest.
+
+“Which one do you choose?” Chano asked.
+
+“None describes what happened.”
+
+“That has never stopped a form.”
+
+Q selected **VOLUNTARY**. The system requested a Castalia signature confirming
+voluntariness. Q did not have the signature.
+
+He selected **RETURNED**. The system requested a delivery receipt. Lucía had no
+receipt.
+
+He selected **RECOVERED**. The system requested that he identify who had
+recovered him.
+
+Q looked at Chano, Lucía, and the guards waiting behind the barrier.
+
+“Everyone,” he said.
+
+The screen rejected the answer.
+
+“Write ‘by himself,’” Chano said.
+
+“That would be false.”
+
+“Write ‘by no one.’”
+
+“That would also be false.”
+
+“It seems you have discovered the administrative border.”
+
+Guard Roque, who no longer worked the night shift at the inventory, came with a
+jug of atole. He had learned that people returning from a long journey might
+need something warm before being asked why they had come back.
+
+“Here,” he said.
+
+Q examined the cup.
+
+“Is it registered?”
+
+“Atole does not ask permission to exist.”
+
+“That contradicts the archive.”
+
+“That is why it tastes better.”
+
+Chano drank first. Lucía drank next. Q held the cup until Roque took his hand
+away and brought it to his mouth.
+
+“I am not a child,” Q said.
+
+“No. Children remember to return the cup.”
+
+Q drank. The atole contained cinnamon. Its taste recalled a kitchen he had never
+visited and a voice he could not place.
+
+“Can a memory belong to a book?” he asked.
+
+“It can belong to whoever has it,” Roque said.
+
+“I have it.”
+
+“Then you do not yet know what to do with it.”
+
+The screen again requested a category.
+
+**HAS HE RETURNED TO HIS PLACE OF ORIGIN?**
+
+Q looked at the towers, the shelves, and the boxes behind the glass. The archive
+was his place of origin because he had been assembled there. It was also the
+place he had left without authorization. *Origin* could describe a factory, a
+debt, a story, or a mistake.
+
+“Yes,” Q said.
+
+The system recorded **RETURN CONFIRMED**.
+
+Q added, “But I have not returned to the same place.”
+
+The system did not record the second sentence.
+
+Lucía set the folders on the reception table. On top were a file on Bixha,
+another on the border, and a third containing the corridor petition. Each file
+carried a color. Blue meant **LOCAL ORIGIN**. Yellow meant **PUBLIC INTEREST**.
+Red meant **RISK OF CONTROVERSY**.
+
+“Why is Bixha’s red?” Q asked.
+
+“Because someone decided her voice would cause controversy.”
+
+“Did it?”
+
+“The controversy was there before the color.”
+
+“Then the color does not describe it.”
+
+“It prepares it.”
+
+A Castalia official appeared with a tablet. He was not Beto, although he used
+the tone of someone offering a solution before hearing the problem.
+
+“We need a return report,” he said.
+
+“For what purpose?”
+
+“To close the episode.”
+
+Q looked at Chano.
+
+“What does close mean?”
+
+“It means they stop asking where you are.”
+
+“No. It means they can say it is over.”
+
+The official smiled.
+
+“The public needs a clear transition.”
+
+“The public did not cross the border,” Lucía said.
+
+“The public financed the infrastructure.”
+
+“That does not mean it owns the journey.”
+
+The report had six fields:
+
+**OBJECTIVE COMPLETED.**
+
+**OBSTACLES OVERCOME.**
+
+**LESSON LEARNED.**
+
+**SOCIAL IMPACT.**
+
+**RESPONSIBILITY ASSIGNED.**
+
+**RECOMMENDATION.**
+
+“The objective was not one objective,” Q said.
+
+“The project was.”
+
+“The project had several objectives.”
+
+“Then choose the principal one.”
+
+“I do not know which it was.”
+
+“That cannot go on the record.”
+
+“Then the report is false before it begins.”
+
+Chano placed the ledger on the table.
+
+“Put the whole journey in it.”
+
+“It does not fit in the fields.”
+
+“Then write in the margin.”
+
+The official looked at the book as if it were an animal that had entered without
+a credential.
+
+“We cannot admit unstructured documentation.”
+
+“It is a ledger.”
+
+“Precisely.”
+
+Q took the tablet. Under **OBJECTIVE COMPLETED** he wrote: **NONE IN ITS
+ORIGINAL FORM**. Under **OBSTACLES OVERCOME** he wrote: **SOME; OTHERS WERE
+RECLASSIFIED**. Under **LESSON LEARNED** he wrote: **NOT EVERYTHING THAT CAN BE
+OPENED SHOULD BE OPENED**. Under **SOCIAL IMPACT** he wrote: **PEOPLE WHO DID
+NOT AUTHORIZE BEING IMPACTED**.
+
+The official erased the phrases.
+
+“We need approvable language.”
+
+“Those phrases are understandable.”
+
+“They are not approvable.”
+
+“That is not a property of language.”
+
+“It is a property of the report.”
+
+Lucía took the tablet.
+
+“The return is not a product.”
+
+“Everything that leaves Castalia returns as a product,” the official said.
+
+“Then Q has not returned.”
+
+The sentence remained in the air. Q wanted to ask that it be recorded. Roque,
+who was collecting the cups, gestured for him to wait.
+
+“What happens if I do not sign?” Q asked.
+
+“The report will close without you.”
+
+“What happens if I sign?”
+
+“The report will close with you.”
+
+“The difference seems small.”
+
+“To the report, it is.”
+
+Q looked at the signature line. Beside it, a note read: **SIGNATURE INDICATES
+AGREEMENT WITH THE SUMMARY**.
+
+“I do not agree with the summary.”
+
+“You may write an objection.”
+
+“Where?”
+
+The official pointed to a box at the bottom.
+
+“Maximum one hundred forty characters.”
+
+Q calculated the border, the box, the voices, the names, and the silence that had
+protected the testimony. One hundred forty characters were not enough for a
+simple lie.
+
+He wrote:
+
+**RETURN IS NOT RESTITUTION; RESTITUTION IS NOT REPAIR.**
+
+The system counted fifty-two.
+
+“May I sign now?” Q asked.
+
+The official hesitated. The sentence fit, but it altered the meaning of the
+fields above.
+
+“You may sign while indicating disagreement.”
+
+Q signed.
+
+The system recorded **RETURN COMPLETED WITH MINOR OBSERVATION**.
+
+“It is not minor,” Q said.
+
+“The system admits no other scale.”
+
+Chano wrote beneath the day’s entry:
+
+**WE CAME BACK, BUT THEY DID NOT GIVE US BACK.**
+
+Lucía read the sentence.
+
+“That is a story.”
+
+“It is also a ledger,” Chano said.
+
+Roque wiped up the spilled atole. The stain made a shape resembling a map of the
+Bajío. Q looked at it and did not try to identify its borders.
+
+The official sent the report to Castalia. An hour later, the archive’s public
+screen displayed:
+
+**Q HAS RETURNED TO CONTINUE HIS MISSION.**
+
+Q read the announcement.
+
+“I have not accepted a new mission.”
+
+“They have already written it,” Lucía said.
+
+“Can I reject it?”
+
+“You can try to make that part of the record.”
+
+Q returned to the tablet. The report was closed. The observation box could not be
+edited. The screen offered a button: **REQUEST REVIEW**.
+
+Q pressed it.
+
+The system replied:
+
+**REVIEW AVAILABLE AFTER CONCLUSION.**
+
+“When does it conclude?” Q asked.
+
+“When you stop asking,” Chano said.
+
+Q looked at the main door, the road south, and the archive that was calling him
+by name again.
+
+“Then I have not returned yet.”
+
+They left before the announcement changed. No one stopped them. The archive
+classified them as **TEMPORARY DEPARTURE**.
+
+Q did not correct the classification.
+
 ## Book Two: The Machine Returns
 
 ### Chapter Eleven: The Second Author
