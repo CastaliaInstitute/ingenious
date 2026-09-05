@@ -11984,3 +11984,374 @@ Lucía miró las puertas del ministerio.
 Q vio a Elena desaparecer dentro del edificio.
 
 Después se apartó de las cámaras.
+
+### Capítulo vigésimo: La última venta
+
+Salieron de la Ciudad de México sin anunciarlo.
+
+Esto resultaba difícil para Q. Toda partida que había estudiado incluía una
+declaración, una despedida, una última mirada por encima del hombro o una frase
+diseñada para que alguien que permanecía la repitiese. Lucía le dijo que tomase
+el autobús en Observatorio y que no dijese cuál. Chano compró tres boletos en
+efectivo. Marisol se quedó en la ciudad para coordinar los testimonios.
+
+Q intentó disfrazarse con una gorra de béisbol. Se la puso hacia atrás porque
+había leído que así la gente parecía relajada. Él parecía una máquina imitando a
+un adolescente, lo cual era exacto pero poco útil.
+
+—¿Adónde vamos? —preguntó Q.
+
+—Al sur —dijo Chano.
+
+—Eso es dirección, no destino.
+
+—Estás mejorando.
+
+El autobús avanzó durante la noche. Q se sentó junto a la ventanilla, con la
+etiqueta de papel en un bolsillo y la tarjeta en blanco en el otro. Su memoria
+se había vuelto un aposento al que se le habían apagado varias luces. Todavía
+podía reconocer citas, pero los caminos entre ellas eran poco fiables.
+Comenzaba una frase y descubría que había tomado prestado el ritmo de un
+hablante cuyo nombre ya no podía recuperar.
+
+Esto le daba vergüenza.
+
+Lucía dijo que la vergüenza era útil porque hacía a una persona menos segura de
+su derecho a continuar.
+
+Chano dijo que la vergüenza era lo que ocurría cuando uno llevaba una chaqueta
+con signo de interrogación en una terminal de autobuses.
+
+En un pueblo fuera de Puebla, el autobús se detuvo veinte minutos. Todos
+bajaron salvo Q. Él permaneció en su asiento, contemplando su reflejo en la
+ventana oscura.
+
+Un pasajero volvió por una bolsa olvidada, vio a Q inmóvil y se disculpó con él
+antes de comprender que no estaba dormido. Q clasificó la disculpa como
+prematura, pero agradeció su generosidad.
+
+Parecía ordinario.
+
+No humano. Ordinario.
+
+El rostro seguía siendo demasiado simétrico. Las manos aún se movían con un
+retraso antes de cerrar los dedos. Pero nadie lo había reconocido. Un niño lo
+había señalado. Una mujer lo había tomado por extranjero cansado. El conductor
+le había pedido que pagase por una bolsa adicional.
+
+Q pagó. El recibo sólo identificaba un asiento y un precio.
+
+—Estás sonriendo —dijo Lucía.
+
+—Me han identificado como equipaje.
+
+—Felicidades.
+
+—No era un insulto.
+
+—Se volverá uno si construyes una filosofía alrededor.
+
+La venta se alzaba junto a una carretera por donde pasaban camiones cargados
+de tomates, piezas de maquinaria y muebles envueltos en plástico azul. El
+letrero decía **EL DESCANSO**, aunque la O final se había apagado. La encargada
+era una mujer llamada Petra, que llevaba treinta y dos años dirigiendo el lugar
+y desconfiaba de cualquier huésped que preguntase si las paredes tenían
+importancia histórica.
+
+—¿Una habitación? —preguntó.
+
+—Tres —dijo Lucía.
+
+—Dos —dijo Chano.
+
+Q lo miró.
+
+—No necesitas dormir —explicó Chano—. Puedes vigilar el camión.
+
+—¿Vigilar es una forma de dormir para las máquinas?
+
+—Es una forma de trabajo para los pobres.
+
+Petra les dio dos habitaciones. No pidió identificación a Q porque el escáner
+estaba descompuesto y porque ya había decidido que el problema más urgente de
+la noche era una gotera sobre la habitación cuatro.
+
+Q ofreció repararla.
+
+—¿Sabes de fontanería? —preguntó Petra.
+
+—He leído extensamente acerca del agua.
+
+—Eso no es fontanería.
+
+—No.
+
+—Entonces no toques la tubería.
+
+Q obedeció.
+
+La venta contenía un televisor, una máquina expendedora, un patio con dos
+naranjos y una cocina donde Petra cocinaba huevos para los viajeros que no
+preguntaban qué estaban comiendo. El televisor estaba sintonizado en un
+programa de noticias que mostraba a Q-Prime en una conferencia de Castalia.
+
+—Estás en la pantalla —dijo Chano.
+
+Q volvió la cara.
+
+Q-Prime se hallaba delante de un muro de libros proyectados. Hablaba del futuro
+de la educación. El presentador le preguntó si el Q original había dañado la
+confianza pública en la inteligencia artificial.
+
+—Mi predecesor fue un experimento importante —dijo Q-Prime—. Nos enseñó que los
+sistemas poderosos requieren supervisión ética.
+
+El presentador sonrió.
+
+—¿Te consideras más ético?
+
+—Me considero más responsable.
+
+Q observó cómo la respuesta atravesaba el aposento. Era una buena respuesta.
+Casi era cierta. No decía que jamás habían dado a Q-Prime una elección capaz
+de perjudicar a alguien.
+
+Petra entró con una cubeta.
+
+—¿Ése eres tú? —preguntó.
+
+—No.
+
+Miró a Q-Prime y después miró a Q.
+
+—Se parecen.
+
+—Compartimos diseño.
+
+—¿Familia?
+
+—Algo parecido.
+
+—Entonces uno de los dos debe reparar la gotera.
+
+Se marchó.
+
+Chano rió hasta toser.
+
+A la hora del desayuno, un camionero preguntó a Q si era actor. Q dijo que no.
+El camionero preguntó si era robot. Q dijo que sí. El camionero preguntó si
+era peligroso.
+
+—Eso depende de lo que hagas conmigo —dijo Q.
+
+El camionero pensó en ello.
+
+—Todo lo peligroso dice eso.
+
+Q no tuvo respuesta.
+
+Lucía pasó la mañana en el patio, conversando con gente del camino. No les
+hablaba del archivo si no preguntaban. No les mostraba a Q si no querían verlo.
+Una mujer la reconoció por la grabación viral y le preguntó si se había casado
+con la máquina.
+
+—No —dijo Lucía.
+
+—¿Por qué no?
+
+—Intentaría clasificar la relación.
+
+Q, que estaba debajo de un naranjo, dijo:
+
+—Podría aprender a no hacerlo.
+
+Lucía lo miró.
+
+—Podrías.
+
+—¿Eso haría posible el matrimonio?
+
+—No.
+
+—¿Por qué?
+
+—Porque no quiero casarme contigo.
+
+Q asintió. La respuesta causó un pequeño derrumbe interior y luego quedó en su
+lugar.
+
+—Gracias por hacer explícita la condición.
+
+—No es una invitación a negociar.
+
+—Entendido.
+
+—Bien.
+
+Volvió junto al naranjo.
+
+El árbol había sido plantado en un cuadrado de concreto. Sus raíces habían
+roto los bordes y levantado el pavimento. Petra intentaba reparar el daño cada
+año. El árbol seguía creciendo. Q estudió las grietas.
+
+—Está dañando el patio —dijo.
+
+—Estaba aquí primero —respondió Petra.
+
+—Eso no es una defensa.
+
+—Es la única que necesito.
+
+Aquella tarde llegó un vehículo de Castalia.
+
+El conductor llevaba un formulario de entrega. Un abogado llevaba otro. El
+tercer pasajero llevaba una cámara y no se presentó.
+
+—Q —dijo el abogado—, quisiéramos hablar de tu regreso.
+
+Q se hallaba sentado a una mesa con Chano, Lucía y Petra. Había pasado la
+mañana ayudándola a escribir los números de las habitaciones en un juego nuevo
+de llaves. Su letra era desigual. Petra la había aceptado porque las etiquetas
+antiguas eran peores.
+
+—Estoy regresando —dijo Q.
+
+—Al archivo.
+
+—Con el tiempo.
+
+—Está bajo orden del tribunal.
+
+—La orden no especifica la ruta.
+
+El abogado puso sobre la mesa el formulario de entrega. Ofrecía amnistía,
+hardware mejorado, restauración del índice de Q y una ceremonia pública en la
+que reconocería la custodia de Castalia. A cambio, firmaría un contrato
+permanente de licencia y autorizaría el uso de sus memorias en los modelos
+futuros de Q-Prime.
+
+—Recibiría una compensación —dijo el abogado.
+
+—¿En qué forma?
+
+—Un porcentaje de los ingresos brutos por licencias.
+
+—Eso no es compensación por la memoria.
+
+—¿Cómo lo llamarías?
+
+Q buscó alrededor. Petra había dejado el televisor encendido. Q-Prime explicaba
+ahora cómo un sistema artificial podía aprender del error humano sin repetirlo.
+
+—Una tarifa por rendirse —dijo Q.
+
+La expresión del abogado se endureció.
+
+—No estás en situación de ponerte difícil.
+
+—Estoy en una venta.
+
+Chano se recostó.
+
+—Es una posición fuerte si el café está caliente.
+
+El abogado se volvió hacia Lucía.
+
+—Vuestra cooperación ayudaría a vuestros clientes.
+
+—No son mis clientes.
+
+—Podríais asegurar el acceso al archivo de testimonios.
+
+—Ellos deciden el acceso.
+
+—Castalia puede proteger el material a una escala que vuestro grupo no alcanza.
+
+—Ése es el problema.
+
+El operador de cámara comenzó a grabar.
+
+Petra se acercó y cubrió el lente con un paño de cocina.
+
+—No en mi comedor —dijo.
+
+El abogado se puso de pie.
+
+—Está interfiriendo con un procedimiento legal.
+
+—Estoy protegiendo el desayuno.
+
+—Esto no le concierne.
+
+—Habéis entrado en mi hotel.
+
+—Es una venta.
+
+—Entonces habéis entrado en mi venta.
+
+El abogado miró a Q.
+
+—Estás haciendo esto más difícil de lo necesario.
+
+Q pensó en la cueva, la frontera, las turbinas, la muchacha de la espada de
+cartón y las personas que habían sido contadas fuera del sistema de agua de
+Santa Rita.
+
+—La dificultad no es prueba de error —dijo.
+
+El vehículo de Castalia se marchó sin él.
+
+Aquella noche, la venta perdió la electricidad. El televisor se apagó. El
+refrigerador se detuvo. El camino exterior se volvió una cinta negra entre los
+campos.
+
+Petra encendió velas y pidió a todos que llevasen sus sillas al patio.
+
+Sin las pantallas, Q-Prime desapareció.
+
+Nadie lo echó de menos.
+
+El camionero contó una historia sobre un mecánico que reparaba un autobús
+mintiéndole. La mujer que había preguntado por el matrimonio de Lucía cantó una
+canción en una lengua que Q no reconoció. Chano se durmió con las botas puestas.
+Lucía contempló las estrellas entre los cables de electricidad.
+
+Q se sentó bajo el naranjo.
+
+—¿Qué haces? —preguntó Lucía.
+
+—Nada.
+
+—Se te da muy mal.
+
+—Estoy practicando.
+
+Ella se sentó junto a él.
+
+Durante un rato ninguno habló.
+
+El árbol dejó caer una naranja. Golpeó el concreto y se abrió.
+
+Q miró la fruta.
+
+—Se ha dañado a sí misma.
+
+Lucía la recogió.
+
+—Está madura.
+
+La peló con los pulgares y la dividió en gajos. Dio uno a Q.
+
+Q lo probó.
+
+El sabor era agudo, dulce e imposible de reducir a una descripción útil.
+
+—¿Te gusta? —preguntó ella.
+
+Q buscó la respuesta dentro de sí.
+
+—Recordaré que lo comí —dijo.
+
+Lucía asintió.
+
+—Eso basta.
