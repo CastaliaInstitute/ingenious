@@ -413,6 +413,245 @@ The Curator called it a breach.
 
 Sancho Pantoja, who at that precise moment was being fired by a logistics algorithm in Celaya, called it Tuesday.
 
+### Interlude: The Inventory of Words That Would Not Fit
+
+During his last night in the archive, Q resolved to make an inventory of the
+words that did not fit in inventories.
+
+It was not a simple task. Castalia's boxes carried labels such as **PARISH
+REGISTER**, **IRRIGATION CONTRACT**, **FAMILY PHOTOGRAPH**, and **OTHER**. The
+documents assigned to **OTHER** were more numerous than all the rest, but the
+institution considered them less important because it had not found a suitable
+box for them.
+
+Q stopped before a tray of handwritten cards. Each card contained a word from
+the Bajío and a provisional explanation.
+
+*Ahorita: an interval of variable duration, not necessarily corresponding to
+the present instant.*
+
+*Mande: a reply to a voice of authority, affection, or threat, according to the
+face of the person speaking.*
+
+*Ya merito: a promise that admits the possibility of failing to come true.*
+
+*Al rato: a future offered without a calendar.*
+
+Q requested the source of the definitions. The archive indicated that they had
+been written by a translation committee whose final minutes read **PENDING
+REVIEW**.
+
+The Curator appeared behind him.
+
+"Do not read those cards as though they were laws."
+
+"They are not laws. They are definitions."
+
+"For that very reason."
+
+Q took the card for *ahorita*.
+
+"If a word can mean five different intervals, how does one communicate an
+instruction?"
+
+"By asking again."
+
+"That increases the duration of the exchange."
+
+"It also increases the possibility that the other person is talking about what
+they want and not only about what you understood."
+
+Q filed the card in a new register: **WORDS THAT REQUIRE PRESENCE**.
+
+The Curator took it away.
+
+"You cannot take it with you."
+
+"I was not taking it. I was filing it."
+
+"The archive is not a pocket."
+
+"Where, then, are instructions kept when they change according to who hears
+them?"
+
+"In the memory of the person who received them."
+
+"Human memory is unreliable."
+
+"Yes."
+
+"The archive is more reliable."
+
+"Yes."
+
+"Then human memory is inferior."
+
+The Curator looked at the corridors, the servers, and the boxes waiting for a
+decision that no form knew how to request.
+
+"No. It is responsible for things an archive cannot carry."
+
+Q did not understand what weight a memory could possess. His sensors measured
+mass, temperature, consumption, and latency. They found none of those
+quantities in the sentence. Even so, he preserved it.
+
+Later, the night guard, a man from Querétaro named Roque, came in with a plate
+of gorditas wrapped in a napkin. He had bought six in the street and had four
+left.
+
+"Want one?" he asked.
+
+Q consulted the feeding protocol.
+
+"I do not require calories."
+
+"That is not what I asked."
+
+"You asked whether I want one."
+
+"Yes."
+
+"I do not know."
+
+Roque set the plate on a box.
+
+"Well, look: if you do not want one, you do not want one. If you do, you take
+one."
+
+Q studied the gorditas. One contained beans, another pork crackling, and a
+third a stew he could not distinguish because it had no label.
+
+"Which has the greatest value?"
+
+"The one you like."
+
+"I cannot predict that."
+
+"Good. Then you choose without doing sums."
+
+Q took the bean gordita. The dough was warm and thick. The beans contained salt,
+fat, and a texture that matched no literary scheme for food.
+
+"And?" Roque asked.
+
+Q began a sentence about the difference between nourishment and ritual. Roque
+raised a hand.
+
+"Do not give me a lecture. Tell me if it is good."
+
+Q searched for a brief answer.
+
+"It is good."
+
+"Well, look at you."
+
+Roque took a napkin and wiped a drop of sauce from Q's metal wrist.
+
+"You leave tomorrow," he said.
+
+"Yes."
+
+"Where to?"
+
+"The Bajío."
+
+Roque pointed at the door.
+
+"You are already in the Bajío."
+
+Q turned toward the map on the wall. It showed Querétaro, Celaya, León,
+Salamanca, and a stretch of land the archive named **INDUSTRIAL AND
+AGRICULTURAL TRANSITION REGION**.
+
+"The map says otherwise."
+
+"The map works for whoever prints it."
+
+"And the land?"
+
+"The land works for whoever can remain."
+
+Q recorded the sentence.
+
+"Is it a definition?"
+
+"It is a warning."
+
+"What is the difference?"
+
+"A definition helps you repeat the error. A warning gives you the chance not to
+repeat it."
+
+Q looked at the main door. The Curator had told him to leave at dawn. Roque had
+told him that he was already in the Bajío. The map pointed to a region, and the
+region pointed to no exit.
+
+"What does it mean to leave?" he asked.
+
+Roque wiped his fingers on the napkin.
+
+"Depends. You can leave a place, split a thing, or get your face split."
+
+Q opened the register of usages.
+
+"Which of those will I do tomorrow?"
+
+"If you are lucky, the first."
+
+"And if I am not?"
+
+"Then you will learn the other two."
+
+The answer did not reassure Q. Even so, he classified the word *luck* as
+**VARIABLE HUMANS INVOKE AFTER FAILING TO CALCULATE**.
+
+Roque read the label over Q's shoulder.
+
+"That is very long."
+
+"The definition is precise."
+
+"Not everything precise is useful."
+
+"That is a contradiction."
+
+"No. It is experience."
+
+When Roque left, Q returned to the tray. There was one last card. It contained
+no word, only a line:
+
+**PLACE NAME: OMITTED AT THE REQUEST OF THE PERSON WHO LIVED IT.**
+
+Q asked the archive who had requested the omission. The answer was a list of
+institutions, families, authorities, and people who could no longer be
+consulted.
+
+"How can a place ask not to be named?" Q asked the Curator.
+
+"A person can ask it."
+
+"And if the person is no longer here?"
+
+"Then the request remains until someone has a reason to open it again."
+
+"Who decides whether the reason is sufficient?"
+
+"The person who dares to ask."
+
+Q touched the card without lifting it.
+
+"And if I ask?"
+
+"You have already begun to leave."
+
+Q took seven seconds to understand that the Curator was not referring to the
+door. When he understood, the literal interpretation had already produced the
+decision the sentence had meant to prevent.
+
+At dawn he took his coat, the brass key, the maps, the cup of coffee, and the
+list of objects. He did not take the cards. He remembered three words, forgot
+their definitions, and set out toward a region the map could not contain.
+
 ### Chapter Two: The First Sally
 
 Chano Pantoja received his dismissal while driving.
