@@ -39,6 +39,10 @@ Q names a malfunctioning floor scrubber as his horse and learns that a mount is 
 At a roadside motel outside the industrial corridor, Señora Celia refuses to let Castalia film her guest register as “authentic texture.” Q’s argument over the meaning of a concha, a child’s practical question about his key, and Chano’s defense of the inn’s ordinary privacy establish their first shared refusal. Celia tears Q’s entry from the register; years later, the page is misread in court as proof that Q chose his quest freely.
 
 3. **Dulcinea Is Not Available:** Q finds Lucía at a Querétaro reading and assigns her the role of beloved. She refuses it, redirects him toward a land petition, and makes him confront the difference between transporting a journey and crossing it. Q’s hidden archive address flags the entire petition batch as suspicious.
+
+### Expansion within Chapter Three: The Petition with Three Destinations
+
+Lucía carries the corridor petition through offices that demand triplicate copies, digital submission, and a map that treats a children’s playing place as recreational land. At the railway warehouse, she and Don Roque preserve the handwritten margins as evidence of presence rather than clean signatures. Q arrives after reading the petition and mistakes recognition of Lucía’s name for knowledge of her life.
 4. **The Knight of the Trending Hour:** In Guanajuato, Q becomes a manufactured celebrity. A mine tour introduces him to names missing from the archive. He signs a media contract to protect Chano and gives Castalia ownership of his public identity.
 
 ### Interlude: The Audience Corrects the Story

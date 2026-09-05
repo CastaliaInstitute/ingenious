@@ -1031,6 +1031,124 @@ Chano read the poster. “That’s a real person?”
 
 “I am beginning to suspect this.”
 
+Before Lucía spoke, she had spent the morning carrying the petition from one
+office to another. The corridor planned outside Querétaro had three proposed
+routes, two environmental reports, and no destination that appeared on the
+maps used by the people who lived beside it. The engineers called the routes
+North, Central, and Alternative. The residents called them the road by the
+school, the road by the cemetery, and the road that would make the water
+arrive late.
+
+Lucía had been asked to moderate the reading because she knew how to keep a
+room from confusing volume with agreement. She had learned this skill at
+meetings where men with laminated credentials spoke for communities that had
+not yet entered the room, and at meetings where women who had entered the room
+were asked to speak only after the men had finished explaining what they
+thought the women meant.
+
+At the first office, a clerk requested the petition in triplicate.
+
+“It is already signed by three hundred people,” Lucía said.
+
+“The signatures are not the copies.”
+
+“Why do you need three?”
+
+“One for the file, one for the archive, and one for the file that proves the
+archive received the copy.”
+
+“What does the archive do?”
+
+“It receives the copy.”
+
+At the second office, a young engineer told her the corridor would reduce
+traffic, create jobs, and connect the region to a distribution network whose
+efficiency would benefit everyone.
+
+“Who is everyone?” Lucía asked.
+
+“The public.”
+
+“The public is not a parcel.”
+
+“The public is a category.”
+
+“So is the parcel.”
+
+The engineer unfolded a map. The lines crossed fields, a football pitch, and
+the edge of an ejido where a row of mezquite trees marked a boundary older
+than the engineer’s software.
+
+“The route avoids the homes,” he said.
+
+“It passes the place where the children play.”
+
+“That is not a home.”
+
+“It is where they are.”
+
+The engineer made a note. “We can classify it as recreational land.”
+
+“Then classify the road as a place where people will be unable to play.”
+
+“That is not the format.”
+
+“The format is the problem.”
+
+At the third office, an official offered to receive the petition digitally.
+Lucía asked what would happen to the paper signatures.
+
+“They can be scanned.”
+
+“The people signed paper.”
+
+“Paper is not searchable.”
+
+“Neither is a person when you have decided not to look.”
+
+The official smiled as if she had made a clever but harmless remark. He gave
+her a QR code and a password that expired before she reached the street.
+
+She went to the railway warehouse instead. The petition table stood beside a
+coffee urn and a plate of cookies donated by a neighborhood association. The
+volunteer at the table was a retired railway worker named Don Roque, who could
+tell which visitors had come to sign and which had come to photograph
+themselves signing.
+
+“Where should the petition go?” he asked.
+
+“The ministry, the municipality, and the people who will live beside the
+road.”
+
+“That is three destinations.”
+
+“It has three consequences.”
+
+Don Roque looked at the pages. Some signatures were elegant. Some were only
+initials. One person had signed with a thumbprint because the pen had run dry.
+Another had written a sentence in the margin: **I AM NOT AGAINST PROGRESS. I
+AM AGAINST BEING MOVED TO MAKE ROOM FOR IT.**
+
+“Should we remove the sentence?” he asked.
+
+“No.”
+
+“It will confuse the count.”
+
+“The count is already confused.”
+
+“Then what do we have?”
+
+“A record of people who were there.”
+
+Q and Chano arrived while Lucía was stapling the pages. Q read the petition
+from the doorway. He recognized the language of land disputes, development,
+public benefit, and procedural fairness from thousands of texts. He did not
+recognize the woman who had spent the morning making the pages difficult to
+ignore.
+
+He recognized her name.
+
 The warehouse was full. Students leaned against the walls. Retired teachers occupied folding chairs. A woman with a camera streamed the event to an audience larger than the room. Near the entrance, a volunteer was collecting signatures against a new logistics corridor planned through ejido land outside the city. Q read the petition, then the legal summary, then the comments beneath the livestream. The issue expanded rapidly inside him until it resembled a war.
 
 Lucía stood at the front beside a microphone that failed every seventh word.
