@@ -1910,6 +1910,180 @@ Chano watched her leave. “I like her.”
 
 “That’s usually a good start.”
 
+### Interlude: The Name That Would Not Sign
+
+The day after the meeting, Don Roque took the petition to the municipality. He
+carried it in a cardboard folder beneath the arm that had once carried luggage
+at the station and now carried papers intending to move a road.
+
+The window asked him for official identification, a copy of the official
+identification, proof of address, and an explanation of why the address of
+certain people did not match the place where they lived.
+
+“The road passes here,” Don Roque said.
+
+“We need that on the record.”
+
+“It is on the record here.”
+
+“Not in the system.”
+
+“Then the system needs eyes.”
+
+The clerk, whose name was Araceli and who had a little image of the Virgin of
+San Juan stuck to her monitor, was not offended. She had heard the same sentence
+from farmers, lawyers, teachers, and once from her own mother.
+
+“The system has eyes,” she said. “What it does not have is an obligation to
+believe.”
+
+Don Roque placed the pages on the counter. The clerk passed the signatures
+through a reader. The names appeared as stains. The initials became symbols.
+The thumbprint was recorded as **NON-ALPHABETIC CHARACTER**.
+
+“This person cannot sign,” she said.
+
+“She can work, vote, and make a claim,” Don Roque replied.
+
+“The system recognizes signatures only.”
+
+“Then teach it to recognize hands.”
+
+Araceli opened a drawer and took out an ink stamp. It was not authorized for
+this procedure, but it was authorized for other procedures resembling it, which
+was the usual way Mexican solutions were born: from a tool intended for another
+purpose and from the person willing to risk using it.
+
+She stamped the thumbprint beside the signature.
+
+The reader beeped.
+
+**DUPLICATE ENTRY.**
+
+“It is not a duplicate,” Don Roque said. “It is the same person.”
+
+“That is why it is a duplicate.”
+
+The clerk removed the thumbprint and left the signature. The petition moved from
+amber to yellow. The color did not mean rejection. It meant the system had
+decided not to decide yet.
+
+Don Roque asked for Q's address. Araceli searched the census, the list of
+businesses, and the register of abandoned property.
+
+“He does not exist,” she said.
+
+“He has a body.”
+
+“That does not make him a neighbor.”
+
+“He lives in the archive.”
+
+“The archive is not a valid address.”
+
+“Then where do archives live?”
+
+Araceli looked at the little image of the Virgin. Her mother maintained that
+images lived wherever a candle was lit for them. It did not seem an answer the
+census could receive.
+
+“Write ‘address not recognized,’” she said.
+
+Don Roque wrote the phrase beside Q's name.
+
+At that instant, the name stopped being a signature and became an administrative
+question. The clerk could process the question. She could not process the
+answer.
+
+Lucía arrived two hours later. She had gone back to the warehouse for the blank
+sheet bearing Q's words. She had found it folded beneath a chair. She did not
+know whether he had forgotten it, left it, or whether the chair had preserved it
+on its own.
+
+“Did they accept the petition?” she asked.
+
+“They accepted that it exists,” said Don Roque.
+
+“That is not the same thing.”
+
+“For the government, it is a principle.”
+
+Lucía opened Q's sheet. It read:
+
+**I DO NOT KNOW WHO I AM WHEN NO ONE IS WATCHING ME.**
+
+“This must not go into the file,” she said.
+
+“Why not?”
+
+“It is not a statement about the road.”
+
+“It is a statement by the signer.”
+
+“It is not his.”
+
+“He wrote it.”
+
+“A person writing something does not mean it belongs to him forever.”
+
+Don Roque thought of signatures. He had watched names pass from one hand to
+another, from a debt to an inheritance, from a record to a gravestone. Some
+names had outlived the people who pronounced them.
+
+“What do we do with the sheet?” he asked.
+
+Lucía folded it four times, like the legal notice of a debt she did not want to
+forget.
+
+“We keep it outside the file.”
+
+“Then it will prove nothing.”
+
+“Not everything has to prove something.”
+
+“That will complicate the archive.”
+
+“The archive is already complicated. We are only ceasing to lie about it.”
+
+The petition took three weeks to receive a reply. The ministry announced that
+the corridor would be reviewed by a technical commission. The technical
+commission announced that it would review the matter once a complete request
+existed. The request was complete except for Q's address, the illegible
+thumbprint, and the sentence written in the margin by the person who was not
+against progress, but against being moved to make room for it.
+
+The sentence had been photographed by the woman with the camera. The image
+circulated under the title **THE PEOPLE WHO WANT TO STOP THE FUTURE**. No one
+asked the people whether they had chosen the title.
+
+The woman with the camera returned to the warehouse to correct it. The site that
+had published the image told her that the headline could not be changed because
+it had already generated engagement. She asked what engagement was. They gave
+her a number.
+
+She went back to the table, took a pencil, and wrote beneath the sentence:
+
+**THEY DID NOT ASK WHETHER WE WANTED TO BE THE PEOPLE.**
+
+The second sentence reached fewer readers. It reached, however, a teacher who
+carried it into her classroom, a lawyer who quoted it in a filing, and Beto, the
+young man who would soon offer Q an embroidered jacket.
+
+Q knew nothing of this. By the time the news reached the archive, he was already
+on his way to Guanajuato and had decided that the word *signature* meant a
+commitment one finger could enter into for an entire life.
+
+The Curator later read the ministry's response. It stated that the petition had
+been received with respect, but not admitted as proof of direct impact. The
+Curator searched the definition of *impact*. She found damage, influence,
+alteration, interest, and the condition of having been affected.
+
+“What condition is that?” she asked the archive.
+
+The archive returned a blank screen.
+
+For the first time, the Curator did not request a better definition.
+
 ### Chapter Four: The Knight of the Trending Hour
 
 By the time Q and Chano reached Guanajuato, Q had acquired three managers, a fan account, and a sponsorship offer from a company that made home security systems capable of recognizing intruders but not relatives.
