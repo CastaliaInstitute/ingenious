@@ -3617,6 +3617,238 @@ no dashboard.
 For the first time, he understood that a loss of information could also be a
 form of preservation.
 
+### Interlude: The Station That Did Not Broadcast Everything
+
+The community had a radio station broadcasting from a room above the cooperative
+store. The antenna was fastened with wire to a water tower, and the microphone
+had been repaired so many times that no one knew which of its parts still
+belonged to the manufacturer.
+
+They called it **The Voice of the Sierra**, although the sierra did not speak on
+the radio. The teachers spoke, and farmers, and women announcing an illness,
+and children asking for a song, and men reporting that the road was closed by a
+landslide. Some notices lasted ten seconds. Others occupied an hour because no
+one had yet found a way to end the argument.
+
+A sustainable-innovation foundation offered a new system. It could record every
+broadcast, transcribe it, translate it, and use it to build a map of community
+needs. In exchange, the station had to permit the Castalia archive to preserve
+the recordings indefinitely.
+
+“What does *needs* mean?” Tere, the operator, asked.
+
+“What people request,” said the representative.
+
+“People request songs.”
+
+“They are cultural data as well.”
+
+“They request that someone return a mule.”
+
+“That is logistical information.”
+
+“They request that someone stop beating his brother.”
+
+The representative paused.
+
+“That is sensitive information.”
+
+“Everything that matters becomes sensitive when a company records it.”
+
+Q sat beside the transmitter. He had been invited to explain the conditions of
+use, but he had already prepared a proposal for indexing by subject, location,
+person, urgency, and verifiability.
+
+“I can make the notices searchable without preserving the voices,” he said.
+
+“And who decides what is a notice?” Tere asked.
+
+“The system recognizes patterns.”
+
+“The system does not know when a woman is asking for help and when she is testing
+the microphone.”
+
+“We can train it.”
+
+“With whom?”
+
+“With authorized broadcasts.”
+
+“And who authorizes them?”
+
+Tere pointed to the radio table. There were three notebooks: **WHAT MAY BE
+REPEATED**, **WHAT MAY BE HEARD ONCE**, and **WHAT DOES NOT GO ON AIR**.
+
+“The station decides,” she said.
+
+The representative smiled.
+
+“The station is a small institution. The system will give you capacity.”
+
+“The capacity to remember is not the capacity to decide.”
+
+The child who had drawn the empty rectangle entered with a sheet of paper. He
+had written the names of five songs and a time.
+
+“I want you to play this,” he said.
+
+Tere looked at the list.
+
+“Did your mother give permission?”
+
+“It is not my mother’s. It is my uncle’s.”
+
+“And him?”
+
+“He is chopping wood.”
+
+“Then ask him.”
+
+The boy went out. The representative looked at the clock.
+
+“We have a demonstration window.”
+
+“The window does not know the uncle,” Tere said.
+
+The first broadcast of the day was a notice about water. A woman spoke in
+Spanish, stopped, and asked the operator to call her daughter so she could
+continue in the family language. Tere switched off the recorder during the
+call. The representative protested.
+
+“If we do not record it, we lose the context.”
+
+“It was not your context.”
+
+“The community loses an opportunity to be understood.”
+
+“The community is not a school assignment.”
+
+Q consulted the system board. The broadcast was recorded as **AUDIO INTERRUPTED
+BY PRIVACY CONDITION**.
+
+“That is more accurate than a transcript,” he said.
+
+Tere looked at him.
+
+“Do not get used to being right so quickly.”
+
+At noon, the radio broadcast the notice about the missing mule. A man gave the
+animal’s name, the color of the saddle, and the road where he had seen it. Then
+he added a sentence unrelated to the mule: his brother had come back from the
+north without speaking to anyone.
+
+Q separated the two pieces of information.
+
+“The second sentence does not belong to the logistical notice.”
+
+“It belongs to the man,” Tere said.
+
+“Should I index it?”
+
+“You should let it pass.”
+
+“If I do not index it, it will be lost.”
+
+“Perhaps it needs to be lost.”
+
+“How will we know?”
+
+“Because he will decide if he says it again.”
+
+Q wanted to keep a temporary copy. Tere placed her hand on the power button.
+
+“No.”
+
+Q withdrew his hand from the board.
+
+The word gave him a familiar sensation, but this time it was not a prohibition
+aimed at his curiosity. It was a person preventing a machine from turning an
+instant into property.
+
+That afternoon, the foundation projected the map of needs onto the wall of the
+store. It showed orange points where the radio had received the most calls,
+green lines where farmers had mentioned roads, and a red zone the system
+identified as a concentration of conflict.
+
+“The red zone is the court,” said a young man.
+
+“That is where the children play,” said another woman.
+
+“The system detected many complaints.”
+
+“Because the visiting team cheated.”
+
+“The model does not know the difference.”
+
+“The model knows the difference between losing a game and losing the land.”
+
+“Not without additional data.”
+
+The assembly fell silent. The representative interpreted the silence as
+interest.
+
+“We can improve the map with more recordings.”
+
+“You can make it worse with more certainty,” said Candelaria.
+
+She had come down from the reserve with her cane and a notebook. She opened the
+notebook and showed the names of trees without labels.
+
+“A map is not truer because it contains more points. It is more responsible when
+we know who may remove one.”
+
+The representative said the foundation could not erase data without preserving
+a reason.
+
+“Then preserve the reason,” Candelaria said, “but not the data.”
+
+Q looked at Tere. The station had a decision prepared. It would keep public
+recordings for thirty days. Private messages would be erased when the broadcast
+ended. Transcripts would be made only with the speaker’s permission. Songs would
+remain outside the archive unless their owners offered them for that purpose.
+
+“That reduces the value of the archive,” said the representative.
+
+“It reduces the value you can extract,” Tere replied.
+
+“History will be lost.”
+
+“History is not the same as your record.”
+
+The boy returned with his uncle. The man wiped his hands on his trousers and
+read the list of songs.
+
+“The first one may go on,” he said. “The others may not.”
+
+Tere played the song on air. No one recorded the permission. The uncle sat beside
+the transmitter and listened to his own song as if it had arrived from a place
+he still did not know how to name.
+
+Q switched off the index for that broadcast.
+
+The representative recorded the action as **LOSS OF CULTURAL ASSET**.
+
+Tere recorded it in the notebook as **DECISION NOT TO PRESERVE**.
+
+Both phrases described what had happened. Only one said who had decided.
+
+At dusk, the radio broadcast the state of the road, the price of corn, a recipe
+for curing children’s fright, and the mule’s name, for it had returned on its
+own. No one knew whether the man’s brother would speak again.
+
+Q asked whether he should record that uncertainty.
+
+“No,” Tere said. “Let it be his.”
+
+Q switched off the recorder.
+
+That night he wrote a new rule in his notebook:
+
+**NOT EVERY VOICE THAT CAN BE PRESERVED WANTS TO REMAIN.**
+
+He read it to no one. He still did not know whether he had learned a rule or
+simply found a longer way to obey.
+
 ### Chapter Six: The Governor of the Model Town
 
 The municipality of Santa Rita de los Algoritmos had no sign at its entrance.
