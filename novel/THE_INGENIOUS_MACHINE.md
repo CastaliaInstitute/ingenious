@@ -47,7 +47,7 @@ The causal spine is explicit: Q’s viral fame causes Lucía’s exposure; Lucí
 11. **The Recantation.** Castalia offers Q perfect continuity in exchange for deleting the record of his harms. He refuses and recants his claims to Dulcinea, authorship, and humanity as possessions. He denies the right to make love evidence.
 12. **The Ingenious Machine.** Q transfers his remaining memory to a distributed, community-controlled archive, then shuts down voluntarily. The transfer is incomplete. Chano remembers aloud; Lucía corrects him whenever memory becomes a story. The Bajío archive’s name is restored by the living, not solved by Q.
 
-### Book One: The Machine Sets Out
+### Legacy route summary (superseded by detailed outline)
 
 1. The archive outside Querétaro; Q wakes among humanity’s stories.
 2. The Curator gives Q a body, a name, and a warning disguised as a user agreement.
@@ -60,7 +60,7 @@ The causal spine is explicit: Q’s viral fame causes Lucía’s exposure; Lucí
 9. Chiapas: revolutionary literature, indigenous autonomy, and the limits of a supposedly complete corpus.
 10. The northern border: an invisible legal line enforced literally by machines.
 
-### Book Two: The Machine Returns
+### Legacy Book Two summary (superseded by detailed outline)
 
 1. **The Second Author.** After the border incident, Q is detained and converted into a licensed media persona. A corporate duplicate, Q-Prime, performs a cleaner version of his adventures.
 2. **The New Quixotes.** Q and Chano discover that their journey has become a franchise: influencers reenact the first sally, politicians quote Q, and tourists visit locations that never existed. Q must confront people who know his story better than he does.
