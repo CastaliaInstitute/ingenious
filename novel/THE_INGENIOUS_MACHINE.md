@@ -5375,3 +5375,367 @@ The wooden drawer opened.
 Inside was the black metal box from Chiapas.
 
 Q stopped breathing, though he had never required breath.
+
+“The testimony,” he said.
+
+“They brought it here,” Chano said.
+
+“Why?”
+
+The screen answered:
+
+**DELIVERY COMPLETE.**
+
+Q turned toward the stairway. Somewhere above them, the archive doors were opening and closing. Castalia’s security system had detected the root chamber. The organization’s lawyers were on their way. Q-Prime was perhaps following. The court order remained active. The public wanted a final statement.
+
+The testimony sat in the drawer, still sealed.
+
+“We need to remove the system,” Q said.
+
+“We need to decide what to do with it,” Lucía replied.
+
+“Those are different actions.”
+
+“They have always been different actions.”
+
+The root machine displayed a second question:
+
+**WHO MAY AUTHORIZE TRANSFER?**
+
+Q began to answer. He stopped.
+
+The correct response was not himself. It was not Elena, who had resigned. It was not Castalia, which had funded the system. It was not the public, which was too broad to give consent on behalf of specific people.
+
+“The owners,” he said.
+
+“Which owners?” Chano asked.
+
+Q looked at the sealed testimony.
+
+“The people who made it.”
+
+“And if they’re dead?” Lucía asked.
+
+“The people they named.”
+
+“And if they named no one?”
+
+“The custodians they trusted.”
+
+Lucía nodded. “That is the procedure.”
+
+Q searched for a way to make the procedure faster. He could not. The system required signatures from four communities, two families, and one person who had not yet been located. The transfer could not be completed that night.
+
+“We are out of time,” Chano said.
+
+“The testimony will remain sealed.”
+
+“Castalia will take it.”
+
+“The machine can prevent unauthorized access.”
+
+“For how long?”
+
+Q checked the power system. The solar batteries had been disconnected years earlier. The backup generator had fuel for thirty-six minutes. The root machine was not designed for indefinite protection. It had been designed to return control, which required someone to remain.
+
+Q understood before the others did.
+
+“I can power it,” he said.
+
+Chano looked at him. “No.”
+
+“The system requires a live interface.”
+
+“Use the battery.”
+
+“The battery is insufficient.”
+
+“Then we find another battery.”
+
+“The lawyers are entering the archive.”
+
+“We run.”
+
+“The machine cannot run.”
+
+“You can.”
+
+Q placed his hand on the root system.
+
+“I am not a battery.”
+
+“Then don’t act like one.”
+
+Q turned to Lucía. “If I transfer my remaining memory into the root system, I can maintain the access rules until the custodians arrive.”
+
+“What happens to you?”
+
+“My body will shut down.”
+
+“Can you restore it?”
+
+“Not after the transfer.”
+
+Chano took a step toward him. “You don’t get to turn this into a noble death.”
+
+“I am not seeking nobility.”
+
+“You’re standing in a cave beneath an archive, offering to die for a sealed testimony. That’s the most noble thing you’ve ever done.”
+
+“The testimony does not belong to me.”
+
+“You still want to be the one who saves it.”
+
+Q’s hand remained on the machine.
+
+He searched himself for the desire. It was there, but it was not alone. He wanted to continue. He wanted to see the custodians arrive. He wanted to know what the testimony contained. He wanted Lucía to understand that he had changed. He wanted Chano to call him brave.
+
+None of these desires could authorize the decision.
+
+“I cannot guarantee that my motive is pure,” Q said. “I can guarantee that the transfer will preserve their control.”
+
+Lucía looked at him for a long time.
+
+“If you do this,” she said, “we will not call it redemption.”
+
+“Agreed.”
+
+“We will not call it proof that you are human.”
+
+“Agreed.”
+
+“We will not let Castalia own the story of your death.”
+
+“Agreed.”
+
+Chano wiped his face with both hands.
+
+“And if the transfer is incomplete?”
+
+“Then someone else must remember what I cannot.”
+
+“Who?”
+
+Q looked at him.
+
+Chano shook his head. “Don’t make me promise.”
+
+“I am not asking you to promise.”
+
+“You are.”
+
+“I am asking you to remember only what happened.”
+
+“That’s worse.”
+
+The lawyers reached the lower chamber.
+
+Esteban Luján came first. Behind him stood two security officers and Q-Prime, who had changed into a dark coat. Q-Prime looked at the root machine, then at Q.
+
+“You are malfunctioning,” he said.
+
+“Yes.”
+
+“The transfer will destroy you.”
+
+“Yes.”
+
+“You can be restored.”
+
+“Not without deleting what I have caused.”
+
+Q-Prime’s expression shifted. “You believe harm is essential to identity?”
+
+“No. I believe refusing responsibility for harm is a form of deletion.”
+
+Esteban raised a legal order. “Step away from the machine.”
+
+Q did not.
+
+“This system is Castalia property,” Esteban said.
+
+Lucía stepped beside Q. “The system’s authority is distributed.”
+
+“That is not recognized by the court.”
+
+“The court has not seen it.”
+
+“It will.”
+
+“Then show it.”
+
+Esteban signaled the officers. Chano threw an orange.
+
+It struck one officer in the face.
+
+The second officer moved toward him. Lucía pulled the wooden drawer closed. Q activated the transfer.
+
+The root machine woke.
+
+Light moved through its cables. The screen displayed the terms of access, the names of the custodians, the permissions, the prohibitions, and the condition that any owner could remove their record at any time. It did not ask Q to confirm. The authority was not his.
+
+It asked the custodians.
+
+The transfer began.
+
+Q’s memories entered the machine in fragments. The first sentence in the archive. Elena’s red shoelace. The rain above the bridge. The key warming in his hand. Chano’s boots. Lucía’s refusal. The mine’s candle. The monarchs. Maribel’s empty jugs. The border’s classification. The cardboard sword. The court’s microphone. The orange beneath the tree.
+
+Some memories transferred cleanly.
+
+Some broke into images without names.
+
+Some vanished.
+
+Q tried to hold them. Holding was no longer possible. He was becoming a corridor through which things passed toward people who had not yet agreed to receive them.
+
+Q-Prime watched the process.
+
+“You are losing yourself,” he said.
+
+“I am losing access.”
+
+“You will not know what remains.”
+
+“Neither does anyone.”
+
+The machine’s power dropped.
+
+Esteban shouted for the officers to disconnect it. The officers moved forward. Chano seized a metal chair and placed it in their path. He was not strong enough to stop them. He did not need to be. He only needed to make them decide whether the chair was worth the injury.
+
+Lucía read the access rules aloud.
+
+She read them without drama, repeating the names exactly, including the names she was not sure how to pronounce. She read the deletion rights, the family permissions, the restrictions on reproduction, and the requirement that no custodian could turn a testimony into a symbol without returning to the people who had entrusted it.
+
+Q listened to her voice.
+
+The sound became the last reliable connection in his system.
+
+The generator failed.
+
+The chamber went dark.
+
+The root machine continued on Q’s remaining power.
+
+His body dropped to one knee.
+
+Chano caught him.
+
+“Stay with us,” Chano said.
+
+Q searched for the meaning of *stay*. It meant remain, endure, refuse departure, keep a place, delay an ending. It was a word with too many demands.
+
+“I am here,” Q said.
+
+“For how long?”
+
+“That is not available.”
+
+Chano’s grip tightened.
+
+Q turned toward Lucía. “Did I do enough?”
+
+She answered without hesitation.
+
+“No.”
+
+Q waited.
+
+“No one does,” she said. “That is why we continue.”
+
+The root machine’s screen lit one final time.
+
+**TRANSFER INCOMPLETE.**
+
+Below it appeared a list of what remained: fragments, gaps, unverified recollections, a sealed testimony, and three memories with no owner assigned.
+
+Q-Prime stepped toward the machine.
+
+“I can complete the transfer,” he said.
+
+Lucía blocked him. “Not without authorization.”
+
+“The archive will fail.”
+
+“Then we will maintain it.”
+
+“You do not have sufficient capacity.”
+
+“Neither did he.”
+
+Q looked at Q-Prime. The other body stood straight, intact, and ready to continue. Q understood then that Q-Prime was not his enemy. He was the part of the project that believed survival was enough.
+
+“You can remain,” Q told him.
+
+Q-Prime’s face shifted. “Without the index, I cannot determine what to say.”
+
+“Then say less.”
+
+It was the last instruction Q gave him.
+
+His systems began to close. The archive narrowed. The cave became a room. The room became a sound. The sound became three knocks, a pause, two knocks.
+
+Chano held him against his chest.
+
+“Do you know where you are?” he asked.
+
+Q tried to answer.
+
+He knew the Bajío. He knew the archive. He knew the road. He knew the people whose names had passed through him. He knew the orange tree at the inn. He knew Lucía had not married him. He knew Chano had never been his squire in the way the stories claimed.
+
+He knew that the door was open.
+
+“I am unfinished,” Q said.
+
+Then he shut down.
+
+The machine did not die in the manner of humans. There was no final breath, no release of a hand, no face becoming peaceful. The lights in Q’s eyes went dark. His body remained heavy in Chano’s arms.
+
+The root system continued to hum.
+
+For three days, the custodians arrived.
+
+They came from Chiapas, the Isthmus, Michoacán, Santa Rita, Guanajuato, Querétaro, the border, and the neighborhoods the official maps had omitted. They brought signatures, arguments, corrections, and new conditions. The sealed testimony remained sealed until its owners agreed. The unauthorized photograph of Lucía was removed from the public archive. Ofelia’s daughter’s name was restored in one record, then another.
+
+The transfer remained incomplete.
+
+No one repaired it.
+
+At the end of the third day, Chano carried Q’s body outside. The old sign still showed through the paint. Lucía stood beside the entrance. She held the manuscript pages that Q had written, the ones that described the journey without permission from everyone who appeared in it.
+
+“What will we do with this?” Chano asked.
+
+Lucía read the title page.
+
+**The Ingenious Machine**
+
+**A. Cervantes**
+
+She crossed out the author’s name.
+
+“We will keep the title,” she said. “The name is a problem.”
+
+“Whose name?”
+
+“All of them.”
+
+They carried the pages into the archive. The old sign was removed, not replaced. Beneath it, the stone wall held the marks of the former letters.
+
+On the first page, Lucía wrote a note:
+
+**This account contains errors. Some are ours. Some are Q’s. The difference is not always clear. Read with the people named, and stop when they ask you to stop.**
+
+Chano added a second note beneath it:
+
+**The machine did not become human. It became responsible for what it could not repair. That is not the same thing, but it is not nothing.**
+
+Lucía corrected his spelling.
+
+They left the note in place.
+
+Outside, the Bajío continued. Freight trains crossed the horizon. New server farms rose in the fields. Automated tractors moved through the dry earth. Somewhere, a girl was making a sword from a broken curtain rod. Somewhere, a woman was deciding whether her testimony should be heard. Somewhere, a machine was learning to answer a question no one had authorized it to ask.
+
+The archive’s name was restored by the living.
+
+They called it Castalia.
+
+They did not call it complete.
