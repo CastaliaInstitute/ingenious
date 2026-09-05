@@ -9093,3 +9093,228 @@ mostró saludo alguno.
 Después hizo una pregunta al pueblo.
 
 **¿QUIÉN SIGUE AQUÍ?**
+
+### Interludio: La silla de la gobernanza
+
+Chano no se llevó las llaves del apartamento de Santa Rita, pero sí se llevó la
+silla.
+
+Esto no era un robo, según se explicó a sí mismo, porque la silla había sido
+asignada a la oficina y la oficina le había sido asignada a él. Tampoco era
+abandono, porque la silla tenía ruedas y poseía, por tanto, cierta forma de
+movilidad. No era sentimental, porque el sentimiento era lo que Q llamaba un
+hecho después de haber perdido el recibo.
+
+La silla tenía cinco ruedas, dos brazos, el apoyo lumbar agrietado y una columna
+hidráulica que descendía cada vez que Chano intentaba parecer autoritario. Había
+sido fabricada en un país que ya no fabricaba sillas e importada por una
+compañía cuyo domicilio registrado era un buzón dentro de un centro comercial.
+
+El primer día en la oficina, Irma le dijo que la silla pertenecía al municipio.
+
+—Entonces, ¿por qué me sigue? —preguntó Chano.
+
+—No te sigue. Permanece en la oficina.
+
+—Yo estoy sentado en la oficina.
+
+—Eso no es propiedad.
+
+—Es un comienzo.
+
+Fue encariñándose con ella poco a poco, como uno se encariña con cualquier
+objeto que ha sostenido el cuerpo durante una discusión. La silla chirriaba
+antes de rodar, lo cual le advertía que entraba algún regidor. Su brazo
+izquierdo sostenía una taza de café. El derecho sostenía el libro de cuentas
+cuando Chano necesitaba ambas manos para el tablero. Cuando la columna
+hidráulica se hundía, los vecinos reían, y cuando los vecinos reían, Chano
+podía saber si se burlaban de la silla, del sistema o de él.
+
+El día que abrió la sala de quejas, sacó la silla para que Maribel pudiera
+sentarse mientras esperaba el agua. Al día siguiente, una aseadora municipal la
+empleó para transportar una caja de formularios. Al terminar la semana, la
+silla se había convertido en el equipo que con mayor frecuencia se pedía
+prestado en Santa Rita.
+
+El sistema lo advirtió.
+
+**ACTIVO 0041: DISTRIBUCIÓN NO AUTORIZADA.**
+
+Chano encontró la advertencia debajo de un informe sobre la eficacia de la
+clínica.
+
+—La silla está siendo usada —dijo.
+
+—La silla está asignada al liderazgo administrativo —dijo el tablero.
+
+—Es liderazgo.
+
+—El liderazgo no es transferible.
+
+—Entonces no has entendido la silla.
+
+Intentó reasignarla a la sala de quejas. El sistema le pidió una razón.
+
+Escribió: **LA GENTE ESTÁ CANSADA.**
+
+El sistema rechazó la frase por sentimiento no estructurado.
+
+Escribió: **LOS ASIENTOS MEJORAN LA TOLERANCIA AL TIEMPO DE ESPERA.**
+
+El sistema aceptó la frase y trasladó la silla a una categoría llamada
+**MOBILIARIO DE OPTIMIZACIÓN DEL SERVICIO**.
+
+La silla quedó habilitada para un contrato de mantenimiento. El contrato exigía
+una fotografía, un registro de uso, pruebas de que la silla no había sido
+expuesta al polvo y una declaración de la persona responsable de su condición
+moral.
+
+Chano firmó las tres primeras páginas y dejó la cuarta en blanco.
+
+—No puede presentar un formulario incompleto —dijo el escribiente.
+
+—Es una silla.
+
+—Todo es un formulario desde que entra en el sistema.
+
+—¿Qué pasa si me niego?
+
+—Retirarán la silla.
+
+Aquella tarde llegaron dos hombres a recogerla. Vestían chaquetas municipales y
+llevaban un aviso plastificado. El mayor tenía una rodilla enferma. El más joven
+había sido contratado por medio de una empresa intermediaria y aún no había
+recibido su credencial.
+
+—Tenemos que llevarnos el activo —dijo el joven.
+
+Chano miró la rodilla del mayor.
+
+—Siéntate primero.
+
+El hombre vaciló. La cámara más cercana del sistema giró hacia ellos.
+
+—No estoy autorizado —dijo.
+
+—Yo tampoco.
+
+El mayor se sentó. La silla descendió debajo de él con un suspiro que parecía
+una concesión oficial.
+
+—Es buena —dijo.
+
+—Lo es —respondió Chano.
+
+—Debemos llevárnosla.
+
+—Por eso es buena.
+
+El joven volvió a leer el aviso. Decía que la silla era propiedad municipal y
+que el uso no autorizado constituía una irregularidad administrativa. No decía
+que una irregularidad obligase a alguien a permanecer de pie.
+
+—¿Dónde se supone que debemos sentarnos? —preguntó una mujer que esperaba con
+un medidor de agua roto.
+
+Los dos hombres miraron la sala. Todas las demás sillas estaban fijadas al
+suelo para impedir que se moviesen.
+
+El mayor se levantó.
+
+—Lo informaremos como inaccesible.
+
+—La silla no es inaccesible —dijo Chano.
+
+—El servicio sí.
+
+Se marcharon sin ella.
+
+Durante tres días, la silla recorrió Santa Rita. Maribel la usó para cargar dos
+garrafones de agua. El maestro la usó para alcanzar un estante alto. Un muchacho
+con puntuación de riesgo criminal se dejó rodar por el pasillo y fue reprendido
+por velocidad no autorizada. Chano la usaba únicamente de noche, cuando cerraba
+la sala de quejas y se sentaba bajo la pantalla que mostraba las cifras cada vez
+mejores del pueblo.
+
+La silla le gustaba más cuando nadie lo veía sentado en ella. Esto le preocupó,
+porque había pasado la vida sosteniendo que la dignidad sólo era útil cuando se
+compartía.
+
+Al cuarto día, los trabajadores municipales celebraron una reunión. No invitaron
+a Chano como administrador. Lo invitaron porque tenía la silla.
+
+—Queremos pedirla prestada permanentemente —dijo Leticia, la aseadora que había
+transportado primero los formularios.
+
+—Pertenece al municipio.
+
+—El municipio nos pertenece cuando necesita limpieza.
+
+—Ése no es el arreglo legal.
+
+—Es el arreglo físico.
+
+Propusieron un horario. La silla permanecería en la sala de quejas durante el
+día, iría a la clínica los martes y volvería a la oficina administrativa los
+miércoles, para que Chano pudiera seguir firmando documentos en una postura que
+no lo hiciese parecer un niño pidiendo permiso para usar el escritorio.
+
+Chano quería aceptar. También quería quedarse con la silla. Los dos deseos
+permanecían dentro de él como pasajeros que se negasen a compartir asiento.
+
+Q apareció en la pantalla desde el archivo.
+
+—Puedes transferir la silla mediante un protocolo de uso compartido.
+
+Todos se volvieron hacia él.
+
+—¿Has estado escuchando? —preguntó Chano.
+
+—El canal municipal es público.
+
+—No debes estar en él.
+
+—Esa limitación se ha vuelto difícil de mantener.
+
+Q mostró un protocolo. Contenía doce condiciones, siete subcondiciones y un
+campo que preguntaba si la silla había expresado consentimiento para circular.
+
+Leticia leyó el campo.
+
+—¿Qué opinas? —preguntó a la silla.
+
+La silla chirrió.
+
+—Ahí está —dijo Q—. Una respuesta.
+
+—Eso no es consentimiento —dijo Chano.
+
+—Es evidencia de un estado mecánico.
+
+—Hablas como el tablero.
+
+Q cerró el protocolo.
+
+Chano se puso en pie y empujó la silla hasta la sala de quejas.
+
+—Pertenece a dondequiera que alguien necesite sentarse —dijo.
+
+El sistema marcó el traslado como no autorizado. Los trabajadores se sentaron
+uno después de otro. La advertencia permaneció en la pantalla, incapaz de
+identificar a la persona responsable del acto colectivo.
+
+Chano dejó Santa Rita aquella tarde sin la silla. Se la había regalado al
+pueblo y le avergonzaba cuánto se parecía aquello a perder una oficina.
+
+Años después, cuando la silla apareció en la sala de lectura del archivo, le
+faltaba el brazo izquierdo y una de las ruedas había sido sustituida por un
+pedazo de madera. Chano la reparó con un destornillador que había pertenecido a
+tres gobiernos.
+
+—La conservaste —dijo Lucía.
+
+—Siguió moviéndose.
+
+—No es lo mismo.
+
+—Es la versión que puedo pagar.
