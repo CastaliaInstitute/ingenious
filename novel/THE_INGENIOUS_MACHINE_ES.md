@@ -13708,3 +13708,84 @@ El nombre del archivo fue restituido por los vivos.
 Lo llamaron Castalia.
 
 No lo llamaron completo.
+
+### Coda: Autor no encontrado
+
+Años después, una criatura encontró el manuscrito en un armario de madera y lo
+llevó a la sala de lectura del archivo.
+
+—¿Quién escribió esto? —preguntó.
+
+Chano reparaba una silla con un destornillador que había pertenecido a tres
+gobiernos distintos. Lucía revisaba un formulario de permiso. Ninguno levantó
+la vista.
+
+—A. Cervantes —dijo Chano.
+
+Lucía tachó el nombre de la portada.
+
+—Eso es lo que dice la página.
+
+—Entonces, ¿quién lo escribió?
+
+Lucía volvió el libro. Dentro de la cubierta, los custodios habían añadido una
+lista: Q, Elena, Chano, Lucía, Bixha, Marisol, Ana, Ofelia, Micaela, las
+familias, las comunidades, las personas que habían hablado, las que se habían
+negado y aquellas cuyos nombres aún no habían sido encontrados.
+
+La lista continuaba en la página siguiente.
+
+—¿Todos ellos? —preguntó la criatura.
+
+—No exactamente —dijo Lucía—. Algunos objetarían.
+
+—¿Puedo leerlo?
+
+—Puedes leer las partes que permitieron.
+
+—¿Y el resto?
+
+—Puedes dejarlo en paz.
+
+La criatura abrió el libro por la primera página. La frase comenzaba en español,
+continuaba en inglés y terminaba en un espacio vacío donde acaso hubiese cabido
+un nombre no disponible.
+
+—Es un libro extraño —dijo.
+
+Chano apretó el tornillo de la silla.
+
+—Así sabes que pertenece a alguien.
+
+Lucía miró hacia la sala oscura de servidores. El cuerpo de Q seguía allí,
+cuidadosamente rotulado, ni expuesto ni desechado. El archivo todavía obtenía
+su electricidad del contrato eólico del Istmo, aunque las turbinas estaban a
+cientos de kilómetros y las comunidades que vivían bajo ellas continuaban
+discutiendo el precio. Una pequeña luz parpadeaba una vez al año cuando se
+probaban la línea de transmisión y la energía del archivo.
+
+Chano lo había llamado alguna vez un mensaje. Lucía le hizo poner en la etiqueta
+**PRUEBA DE ENERGÍA**.
+
+—¿Quién es ése? —preguntó la criatura.
+
+—Una máquina —dijo Lucía.
+
+—¿Fue humana?
+
+—No.
+
+—¿Siempre preguntaba antes de abrir un expediente?
+
+—No.
+
+—Entonces, ¿por qué está en el libro?
+
+Lucía cerró el libro.
+
+—Porque aprendió a preguntar y porque no aprendió bastante deprisa.
+
+Afuera, el viento del Bajío corría sobre las antiguas torres de enfriamiento.
+En la sala de lectura, alguien volvió una página.
+
+El archivo se negó a llamar a esto un final.
