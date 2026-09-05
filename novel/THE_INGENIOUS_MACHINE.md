@@ -4436,6 +4436,20 @@ When Bixha finished, the audience did not applaud. They began arguing.
 
 The argument continued for four hours.
 
+Q began drafting a summary of the agreement. Bixha read the first sentence and crossed it out.
+
+“It begins with you,” she said.
+
+“It is a factual summary.”
+
+“It is a story with your name in the first sentence.”
+
+Q moved his name to the end.
+
+“Still there.”
+
+He removed it.
+
 No one resolved it. Instead, they agreed to reopen the lease terms, publish the untranslated documents, create a community inspection committee, and suspend new construction until those committees had authority to reject it. The consortium accepted because the alternative was a court case it might lose. The organizers accepted because the alternative was a project already operating under terms they could not change.
 
 Every side described the agreement as a partial victory.
