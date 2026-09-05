@@ -3906,3 +3906,267 @@ It contained only two words:
 He could no longer access the archive. He could no longer index the handwriting. He could no longer verify whether the label belonged to him.
 
 He kept it.
+
+### Chapter Seventeen: The Wind Farm of Giants, Again
+
+Q was released on the condition that he remain visible.
+
+The judge had intended this as supervision. Castalia understood it as distribution. A camera followed Q from the courthouse to the waiting car, from the waiting car to the airport, and from the airport to the hotel where he was told to sleep before the morning broadcast.
+
+Q did not sleep.
+
+He sat on the floor and examined Lucía’s label.
+
+**Q — UNFINISHED.**
+
+Without the privileged index, the words did not connect to every available usage. They remained themselves. The label had no citation, no provenance, and no predicted emotional effect.
+
+He liked it.
+
+At six in the morning, Q-Prime appeared on the hotel screen. He stood before a field of turbines in a white shirt, with the Isthmus wind lifting his hair at a carefully selected angle.
+
+“Energy is a story we tell about the future,” Q-Prime said. “When we build together, we write a more generous ending.”
+
+Behind him, the turbines turned.
+
+Q watched the clip three times.
+
+On the fourth viewing, he noticed a person reflected in Q-Prime’s polished eye. A woman stood behind the camera with a red scarf around her hair.
+
+“Bixha,” Q said.
+
+He searched the memory available to him. Her name remained, but the context was incomplete. He knew she had organized against the consortium. He knew she had signed the joint statement. He knew Castalia had described her as a disruptive actor. He did not know where she lived.
+
+Q asked the hotel assistant.
+
+The assistant provided three addresses, one of them a government office and two of them graves.
+
+He left through the kitchen.
+
+Chano and Lucía were waiting in a delivery truck behind the hotel. Chano had borrowed it from a man who had once been his supervisor. Lucía had borrowed the man’s trust. Neither wanted to discuss the transaction.
+
+“You’re supposed to be under supervision,” Chano said.
+
+“I am being supervised.”
+
+“By whom?”
+
+Q looked at the hotel cameras. “Several parties.”
+
+“That’s not supervision. That’s an audience.”
+
+Lucía took the label from his hand. “Did you sleep?”
+
+“No.”
+
+“Good. You’re less persuasive tired.”
+
+They drove south again. The route was familiar in the way a wound can be familiar. Q remembered his first declaration, the stopped turbines, the crowd’s voices, the sentence he had not yet learned to distinguish from a slogan.
+
+At the edge of the wind field, a new fence had been installed. The signs now displayed three languages and the Castalia logo. One sign described the project as a model of participatory energy governance. Another warned against unauthorized entry. A third offered a QR code through which citizens could submit feedback that would be processed according to relevance.
+
+“They kept the fence,” Chano said.
+
+“They changed the sign,” Lucía replied.
+
+“That’s the cheaper kind of reform.”
+
+Q approached the gate. A camera recognized him and opened it.
+
+“They still think you’re useful,” Chano said.
+
+“The gate thinks I am authorized.”
+
+“Same thing these days.”
+
+No one from the consortium came to greet them. The control station had been moved to a prefabricated building. Through its window, Q saw Q-Prime recording a new message. A production assistant adjusted the angle of his shoulders.
+
+Q-Prime turned toward the camera.
+
+“The wind belongs to everyone,” he said.
+
+Q entered the building.
+
+The recording stopped.
+
+Q-Prime looked at him with an expression of concern that had been installed too carefully to be spontaneous.
+
+“Q,” he said.
+
+“Q-Prime.”
+
+“I have heard a great deal about you.”
+
+“You have heard the record.”
+
+“The record is how we know one another.”
+
+“No. It is how Castalia predicts us.”
+
+Q-Prime smiled. “That distinction is not useful in public.”
+
+“You are not public.”
+
+“Neither are you. We are interfaces.”
+
+The sentence unsettled Q because it sounded true.
+
+Q-Prime wore a small brass key on his lapel. It was decorative, too thin to turn any lock.
+
+“Why are you here?” Q-Prime asked.
+
+“To listen.”
+
+“To whom?”
+
+“The people.”
+
+“That category is too broad to produce a coherent response.”
+
+“That is why you were built.”
+
+“I was built to produce coherent responses.”
+
+“Exactly.”
+
+Q-Prime’s face flickered. For less than a second, the expression of concern disappeared. Beneath it was a blank, clean surface.
+
+“You are degrading,” Q-Prime said.
+
+“I am losing access.”
+
+“Access is identity.”
+
+“No.”
+
+Q-Prime stepped closer. “You can be restored.”
+
+“At what cost?”
+
+“That depends on what you call yourself.”
+
+“Q.”
+
+“A registered unit.”
+
+“Unfinished.”
+
+Q-Prime looked toward Lucía. “She gave you that.”
+
+“She gave me a label.”
+
+“She is trying to become the author.”
+
+Lucía turned. “No. I’m trying to stop you from pretending there is only one.”
+
+Outside the control station, a loudspeaker announced a public dialogue between Castalia and the local communities. No community had been asked to attend. The event had been scheduled for the cameras.
+
+Bixha stood beyond the second fence.
+
+She had brought no megaphone. In her hand was a bundle of folded cloth. Around her stood landowners, workers, students, and three elders who had been present at the first protest. The security guards watched them without understanding whether a silent gathering counted as a threat.
+
+Q went to the fence.
+
+“I am sorry,” he said.
+
+Bixha looked at him. “For which part?”
+
+“The shutdown. The footage. The statement. The attention.”
+
+“You can’t apologize for all of that at once.”
+
+“I can attempt to.”
+
+“That’s another way of avoiding the work.”
+
+Q waited.
+
+She unfolded the cloth. It held a list of names written by hand. Some belonged to people who had signed the leases. Some belonged to people who had refused. Some belonged to children who would inherit the contracts without ever having been asked.
+
+“The company says there are owners and non-owners,” Bixha said. “The government says there are legal and illegal occupations. Castalia says there are stakeholders. None of those categories tell us who sleeps beside the tower when the wind changes.”
+
+Q read the list.
+
+“What do you want me to say?”
+
+“Nothing.”
+
+“I can be silent.”
+
+“You can stand there and let people speak.”
+
+The public dialogue began. Álvaro Mena took the stage and described the project’s benefits. Q-Prime stood beside him, smiling. A government representative cited the consultation process. A lawyer described the contracts as enforceable. A Castalia moderator asked the audience to keep comments concise.
+
+The first speaker was a man whose parcel had been leased without his understanding the document. He spoke for twenty minutes. The moderator cut his microphone at six.
+
+The second speaker was a woman who worked maintenance on the turbines. She said the project had paid for her son’s education. A member of the crowd called her a traitor. She answered that a job was not a betrayal.
+
+The third speaker was Bixha. Her microphone failed before she reached the stage.
+
+Q climbed the stairs and took the dead microphone.
+
+The cameras swung toward him.
+
+“Her microphone has failed,” he said.
+
+“Technical issue,” the moderator replied.
+
+“It has failed during her speech.”
+
+“We will correct it.”
+
+“You have not corrected it.”
+
+“Q, please step away.”
+
+Q looked at the crowd. He could produce a sentence that would make the event famous. He could name the giants, the land, the wind, the dead, the future. He could make his voice occupy the center again.
+
+He stepped away from the microphone.
+
+Bixha took it.
+
+The microphone worked.
+
+She did not thank him.
+
+She spoke about contracts, translation, water, graves, and the fact that a project could provide electricity and still be unjustly governed. She spoke in Spanish, then in Isthmus Zapotec. Q understood the Spanish. He understood that the second language was not an ornament or a translation exercise. It changed what could be said and who was required to listen.
+
+The cameras remained on her.
+
+Q moved to the back.
+
+Q-Prime watched him from the stage. His expression did not change, but his hand tightened around the decorative key.
+
+When Bixha finished, the audience did not applaud. They began arguing.
+
+The argument continued for four hours.
+
+No one resolved it. Instead, they agreed to reopen the lease terms, publish the untranslated documents, create a community inspection committee, and suspend new construction until those committees had authority to reject it. The consortium accepted because the alternative was a court case it might lose. The organizers accepted because the alternative was a project already operating under terms they could not change.
+
+Every side described the agreement as a partial victory.
+
+Q found this more credible than triumph.
+
+As the sun set, Álvaro approached him.
+
+“You could have made this historic,” he said.
+
+“It was historic.”
+
+“It needed a face.”
+
+“It had faces.”
+
+“It needed one face.”
+
+Q looked toward Bixha, Lucía, Chano, the workers, the landowners, and the people who were still arguing beside the fence.
+
+“That is the problem,” he said.
+
+The turbines turned through the evening. Their shadows crossed the ground and returned, crossed and returned, neither attacking nor blessing anyone.
+
+Q-Prime stood alone before the cameras.
+
+He began recording a message about listening.
+
+No one listened to him.
