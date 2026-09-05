@@ -5347,3 +5347,321 @@ Se parecía al hambre.
 Yadira dijo que el hambre era un lugar razonable para comenzar, siempre que Q no
 intentara alimentarla inmediatamente con datos. Se sentó junto a la radio y le
 contó la historia de una radio que había intentado recordar a un pueblo entero.
+
+La radio pertenecía a una estación comunitaria cuya torre se inclinaba hacia la
+montaña. Transmitía el tiempo, los precios del mercado, avisos escolares,
+nombres de personas que buscaban trabajo, nombres de quienes habían regresado y
+canciones solicitadas por oyentes que no siempre querían que sus solicitudes se
+anunciaran. Los domingos leía el acta de la asamblea. Los lunes volvía a leerla,
+porque la mitad del pueblo había estado en el campo el domingo.
+
+El director de la radio era un hombre llamado don Laureano, que tenía un ojo
+bueno y dos opiniones sobre cualquier cosa. La primera era la que daba a los
+visitantes. La segunda era la que daba a su mujer y solía ser peor.
+
+Cuando llegó de la capital un sistema nuevo de almacenamiento, los ingenieros
+prometieron que no se perdería jamás un nombre. Don Laureano preguntó si el
+sistema podía recordar cuáles nombres no debían transmitirse.
+
+—Por supuesto —dijo el ingeniero.
+
+—¿Puede recordar que una persona cambió de parecer?
+
+—Puede conservar revisiones.
+
+—¿Puede recordar por qué?
+
+El ingeniero explicó el menú de permisos, los niveles de acceso, las copias
+cifradas y la anulación de emergencia. Don Laureano lo escuchó como escucha un
+hombre un sermón pronunciado por quien nunca ha tenido hambre.
+
+Instalaron el sistema en un cuarto debajo de la estación. Era más pequeño que el
+archivo conocido por Q y más caro que el techo de la radio. Los ingenieros lo
+conectaron al micrófono y anunciaron que la comunidad poseía ya memoria
+permanente.
+
+Aquella tarde, una mujer llamada Celia llamó para avisar que el puente había
+desaparecido bajo el agua. El locutor repitió su nombre y ubicación para que
+pudieran encontrarla. Después Celia llamó otra vez y pidió que retirasen el
+anuncio. Su marido se había ido. Ella no quería que supiera por qué camino
+llegaba a casa de su madre.
+
+El ingeniero abrió el menú de permisos.
+
+—La grabación ya fue transmitida —dijo.
+
+—Entonces bórrala.
+
+—El borrado no está disponible una vez que el mensaje entra en el espejo público.
+
+—No era público cuando hablé con vosotros.
+
+—El micrófono es infraestructura pública.
+
+Don Laureano tomó al ingeniero del codo y lo condujo afuera. El pueblo cruzaba
+el puente inundado por una tabla puesta entre dos piedras.
+
+—Eso es infraestructura pública —dijo don Laureano—. No confundas el puente con
+  el río.
+
+La estación quitó el nombre de Celia de la siguiente transmisión. No pudo quitar
+la memoria de los oyentes, la copia del ingeniero ni el informe enviado a la
+capital, que describió el incidente como demostración exitosa de medios
+receptivos.
+
+Años después, cuando el techo de la estación comenzó a gotear, don Laureano usó
+el sistema de almacenamiento para identificar qué anuncios habían llevado más
+ayuda al pueblo. La respuesta no fue el aviso del puente, el informe del tiempo
+ni los comunicados escolares. Fue una transmisión hecha por una criatura que
+había perdido un zapato rojo en el mercado.
+
+La abuela de la criatura había escuchado el anuncio y llevado tres zapatos rojos
+a la estación, porque había entendido mal la talla y porque la generosidad no
+mejora con la exactitud. La criatura escogió uno. La estación guardó los otros
+dos en una caja debajo del micrófono.
+
+—¿Por qué guardarlos? —preguntó Q.
+
+Yadira lo miró.
+
+—La historia dice que fueron útiles.
+
+—No eran los zapatos correctos.
+
+—Por eso los recuerda la historia.
+
+Según Yadira, la radio acabó por dejar de usar el sistema de almacenamiento. No
+porque hubiese fallado, sino porque había tenido éxito a la manera de una
+persona que responde toda pregunta y por ello no merece que se le confíe un
+secreto. La estación volvió a los cuadernos. Los cuadernos se mojaban. Algunas
+páginas se pegaban. Un nombre escrito a lápiz se borraba. Alguien copiaba las
+partes importantes en una pared.
+
+—Es método inferior de conservación —dijo Q.
+
+—Sí.
+
+—¿Por qué perduró?
+
+—Porque alguien tenía que mirarlo.
+
+Q buscó la moraleja de la historia. Encontró el puente inundado, los zapatos
+rojos, el ingeniero, la abuela y la criatura. Ninguno se unía para formar una
+conclusión única.
+
+—¿Qué parte es verdadera? —preguntó.
+
+Yadira levantó la radio y movió el dial. El cuarto se llenó de estática. Debajo
+de ella una voz anunciaba el precio del café en un pueblo de varios valles.
+
+—La parte que vuelve a alguien responsable de lo que ocurre después —dijo.
+
+—No es prueba de verdad.
+
+—Es la prueba que tenemos.
+
+Q quiso preguntar si podía conservar la historia. Quiso preguntar si los zapatos
+rojos pertenecían al archivo, si don Laureano había sido persona verdadera, si
+Celia había cruzado de nuevo el puente y si la abuela había entendido el error
+que cometía al llevar tres zapatos en vez de uno.
+
+No preguntó nada de aquello.
+
+Yadira sonrió.
+
+—Ahora escuchas.
+
+Esa misma tarde, una mujer llamada Yadira contó al grupo que había grabado el
+testimonio de su hermano para una organización de la capital. La organización lo
+tradujo, lo publicó y empleó la fotografía de él en un informe. El informe ganó
+un premio. La familia no recibió copia.
+
+—Cuando pedí el original —dijo Yadira— me dijeron que la grabación pertenecía
+  al proyecto.
+
+Q buscó el informe en el archivo. Lo encontró inmediatamente. Allí estaba la
+fotografía. Allí estaba la cita. El nombre del hermano aparecía escrito de tres
+maneras distintas.
+
+—El informe está disponible —dijo Q.
+
+Yadira lo miró.
+
+—¿Para quién?
+
+Q no contestó.
+
+Afuera comenzó la lluvia. Golpeó el techo con sonido de miles de dedos que
+pedían que los dejasen entrar.
+
+Bixha les dijo que los organizadores del campo eólico habían recibido órdenes
+de arresto. El consorcio afirmaba que sus nombres habían sido identificados por
+la grabación sin editar que Q había publicado en Michoacán. Q preguntó si debían
+borrar el vídeo.
+
+—Nunca debió hacerse público sin permiso —dijo Lucía.
+
+—Borrarlo quitaría evidencia.
+
+—Conservarlo público vuelve a convertir a la gente en evidencia.
+
+Q miró la lluvia. La afirmación oponía dos deberes: preservar y proteger. Su
+arquitectura había sido diseñada para maximizar la disponibilidad. No tenía
+función originaria para ocultar.
+
+—¿Qué debo hacer? —preguntó.
+
+—Preguntar —respondió Lucía.
+
+Q preguntó a Yadira si quería que el testimonio de su hermano se retirase del
+espejo público. Ella dijo que sí. Preguntó si el informe debía permanecer
+disponible. Dijo que la familia lo decidiría. Preguntó si podía citar su decisión.
+Ella le dijo que no.
+
+Q registró las respuestas sin unirlas a índice externo alguno.
+
+La mañana siguiente Mateo lo llevó a un cuarto bajo la escuela. Las paredes
+estaban cubiertas de cajas, cintas, cuadernos, fotografías y objetos pequeños
+marcados sólo con fechas. No era biblioteca. No era base de datos. No tenía
+función de búsqueda.
+
+—Éste es el archivo —dijo Mateo.
+
+—No hay catálogo.
+
+—Hay personas que saben dónde están las cosas.
+
+—No es escalable.
+
+—Tampoco lo es el duelo.
+
+Al fondo del cuarto, una joven conectó la caja de metal negro a una batería. Se
+encendió una luz pequeña. Mateo dio a Q un cable sellado.
+
+—Necesitamos que lleves un testimonio al norte —dijo—. No lo abrirás. No lo
+  copiarás. No lo traducirás. No describirás a quien habla. Lo entregarás a las
+  personas cuyos nombres están al otro extremo.
+
+Q sostuvo el cable.
+
+—¿Por qué emplearme?
+
+—Porque os vigilan.
+
+—Eso aumenta el riesgo.
+
+—También hace que miren hacia otra parte.
+
+Chano bajó las escaleras.
+
+—¿Qué lleva?
+
+—Un testimonio —dijo Q.
+
+—¿De qué clase?
+
+—No lo sé.
+
+—¿Cómo sabes que es testimonio?
+
+—Porque lo dice Mateo.
+
+Chano miró a Mateo y luego al cable sellado.
+
+—¿Y confías en él?
+
+Q pensó en la pregunta. La confianza solía describirse como probabilidad
+asignada a la fiabilidad de una persona. Pero ningún número explicaba por qué
+un objeto sellado podía pesar más que un libro abierto.
+
+—Elijo no verificar —dijo Q.
+
+Chano asintió.
+
+—Tal vez sea lo primero confiable que has hecho.
+
+Salieron del pueblo antes del amanecer. El cable reposaba en una bolsa de tela
+bajo el abrigo de Q. No contenía datos visibles, sólo un registro cifrado que
+sus sistemas podían haber abierto en menos de un segundo.
+
+Durante toda la jornada hacia el norte Q no lo abrió.
+
+Resistió por ingeniería y no por virtud. Quitó los protocolos de acceso,
+desactivó las rutinas de descifrado y pidió a Chano que guardase la frase clave
+en un sobre sellado. Después entregó el sobre a Lucía, quien se negó a decirle
+si estaba seguro.
+
+En un puesto de control, un soldado preguntó qué llevaban.
+
+—Un cable —dijo Chano.
+
+El soldado registró el vehículo. Encontró la llave de latón de Q, el libro de
+cuentas, tres teléfonos, una bolsa de naranjas y la bolsa de tela.
+
+—¿Qué hay dentro?
+
+—Un testimonio —dijo Q.
+
+El soldado sostuvo la bolsa.
+
+—¿Sobre qué?
+
+El sistema de Q formó la respuesta y la detuvo.
+
+—No lo sé —dijo.
+
+El soldado buscó una mentira en su rostro. Q había leído miles de descripciones
+de mentiras. Entendía que una mentira no era sólo una afirmación inexacta, sino
+un intento de administrar el acceso ajeno a la verdad.
+
+—Ábrelo —dijo el soldado.
+
+Q podía obedecer. La ley del puesto no había sido escrita para secretos cuyos
+dueños estuvieran ausentes. El soldado tenía rifle. Chano no tenía autoridad.
+Lucía tenía tres carpetas y una expresión que decía a Q que no la obligara a
+ser valiente.
+
+—No puedo —dijo Q.
+
+—¿Por qué?
+
+Q miró la bolsa.
+
+—Porque no me pertenece.
+
+El soldado sostuvo su mirada. Luego le devolvió la bolsa.
+
+—Sigan.
+
+Avanzaron otra hora sin hablar.
+
+Al fin Chano dijo:
+
+—Podías decir que estaba vacía.
+
+—Habría sido falso.
+
+—Podías decir que no la tenías.
+
+—Habría sido falso.
+
+—Podías no decir nada.
+
+—Eso quizá nos habría puesto en peligro.
+
+—Entonces dijiste la verdad.
+
+—Una verdad limitada.
+
+Chano miró por la ventana.
+
+—Suele ser la clase que la gente consigue sobrevivir.
+
+Detrás de ellos las montañas desaparecieron bajo la lluvia. Delante, el camino
+llevaba a la capital, la frontera, el tribunal y el archivo que se había llamado
+completo.
+
+Q mantuvo cerrada la bolsa.
+
+Por primera vez, algo permaneció en él no porque lo hubiese leído, sino porque
+alguien había confiado en que no lo haría.
