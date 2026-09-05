@@ -12873,3 +12873,187 @@ Q miró a Chano y a Lucía.
 Lucía tomó el cuaderno rojo.
 
 —Entonces nos queda un lugar más adonde ir.
+
+### Interludio: El público rechaza el final
+
+La recantación se transmitió al mediodía, hora mala para la filosofía y
+excelente para las instituciones. Las oficinas del gobierno estaban abiertas,
+los escolares volvían de comer y a quienes trabajaban en los centros de
+llamadas les pedían permanecer en la línea mientras Q negaba que una máquina
+pudiese poseer el sentido de su viaje.
+
+Castalia publicó tres versiones del acontecimiento. La primera mostraba a Q
+leyendo la declaración aprobada. La segunda lo mostraba añadiendo las frases no
+autorizadas. La tercera mostraba a Q-Prime interrumpiendo la transmisión,
+aunque la interrupción había sido añadida por un editor que creía que un final
+limpio era una forma de seguridad pública.
+
+Las redes llamaron a las versiones **OFICIAL**, **SIN CORTES** y **CONTEXTUAL**.
+Nadie logró convenir cuál había sido alterada en menor medida.
+
+En una escuela de Michoacán, la maestra de Micaela detuvo la lección de la tarde
+y puso la declaración sin comentario alguno. Los niños escucharon a Q recantar
+la posesión de Dulcinea, de la autoría y de la humanidad. Cuando dijo que la
+humanidad era una deuda que podía dejar de pagar, un niño alzó la mano.
+
+—¿A quién le debe?
+
+La maestra Lety escribió la pregunta en la pizarra.
+
+Otro niño dijo:
+
+—A todo el mundo.
+
+—Son demasiadas personas —dijo un tercero.
+
+—Entonces la deuda es imposible.
+
+Micaela, que había pintado el pez debajo del signo de interrogación de Q, dijo:
+
+—Quizá uno paga una parte al no decir que la pagó entera.
+
+La maestra Lety no la corrigió. Entró la frase en el libro de calificaciones bajo
+el título **CIVISMO: INCOMPLETO, ÚTIL**.
+
+En la venta de la carretera, Petra vio la transmisión en un televisor cuya
+esquina inferior mostraba un anuncio de un televisor más responsable. El
+inspector que había sostenido la cubeta se hallaba debajo de la gotera,
+vistiendo ahora un impermeable de plástico.
+
+—¿Ésa es la máquina? —preguntó.
+
+—Una de ellas —dijo Petra.
+
+—¿Qué hizo?
+
+—Dijo que no.
+
+—¿A qué?
+
+—A varias cosas.
+
+El inspector pensó la respuesta.
+
+—No basta para un informe.
+
+—Basta para el desayuno.
+
+En el Istmo, el consorcio envió la recantación a las comunidades con una carta
+que explicaba que la declaración de Q confirmaba el compromiso del proyecto
+con el diálogo transparente. Bixha leyó la carta en voz alta y se detuvo en la
+palabra **compromiso**.
+
+—Esta palabra ha viajado más lejos que nosotros —dijo.
+
+La trabajadora de mantenimiento preguntó si Q había nombrado al viento.
+
+—No —dijo Bixha—. Nombró lo que no podía poseer.
+
+—¿Eso cambiará los contratos?
+
+—No.
+
+—Entonces, ¿qué cambia?
+
+Bixha dobló la carta.
+
+—El registro de lo que no cambió.
+
+En la universidad, Ivonne Ríos proyectó la recantación sobre un muro que aún
+conservaba el contorno débil del Certificado de Complejidad Humana. Alguien
+había escrito debajo del encabezado borrado:
+
+**NO ESTABLECIDO POR MÁQUINA NI COMITÉ**
+
+El decano ordenó quitar la frase. El personal de mantenimiento se negó porque
+la pintura aún no había llegado. Durante tres semanas, los estudiantes la
+fotografiaron. Las fotografías fueron subidas, borradas, duplicadas y citadas
+en una solicitud de beca sobre memoria pública participativa.
+
+Ivonne no solicitó la beca. Presentó una queja contra las fotografías.
+
+—Está objetando las imágenes que sostienen su argumento —dijo un periodista.
+
+—Objeto la idea de que un argumento dé a los extraños acceso a mí.
+
+—Pero las imágenes son importantes.
+
+—Entonces aprended a vivir sin poseerlas.
+
+El periodista llamó a esto una contradicción. Ivonne dijo que era una condición.
+
+En el archivo de las afueras de Querétaro, la transmisión pública continuó
+después de que Q confirmase el borrado final. Las cámaras no se apagaron.
+Mostraban el aposento blanco vacío, los formularios alterados, el cuaderno rojo
+y las tres figuras junto a la barrera.
+
+Un técnico preguntó si debía terminar la transmisión.
+
+El director preguntó si el público seguía mirando.
+
+El técnico comprobó las cifras.
+
+—Más que antes.
+
+El director ordenó continuar la transmisión.
+
+Chano vio las cámaras y alzó la mano.
+
+—Dejad de grabar —dijo.
+
+El técnico miró al director.
+
+Q dio un paso hacia la cámara.
+
+—La petición es clara.
+
+—La transmisión es pública —dijo el director por el altavoz.
+
+—Público no significa sin dueño.
+
+—El público tiene derecho a presenciar la conclusión.
+
+—No hay conclusión.
+
+El director rió.
+
+—Toda transmisión exige una.
+
+Lucía caminó hasta la cámara más cercana y cubrió el lente con la tarjeta en
+blanco que Ana había dado a Q. La imagen se volvió blanca.
+
+Durante once segundos, el país no vio nada.
+
+Después la tarjeta resbaló. La cámara mostró una esquina del aposento, una
+bota, una mano y el borde de un cuaderno de madera. Los espectadores comenzaron
+a discutir qué se había ocultado. Algunos llamaron censura a la tarjeta.
+Algunos la llamaron consentimiento. Algunos la llamaron falla técnica y
+compraron un seguro contra futuras interrupciones.
+
+Q quiso restaurar la imagen.
+
+—No lo hagas —dijo Lucía.
+
+—El público interpreta la brecha de manera equivocada.
+
+—La brecha no te corresponde corregirla.
+
+Q se detuvo.
+
+La transmisión terminó cuando el servidor se sobrecalentó. Castalia anunció
+que el fallo demostraba la necesidad de una plataforma de memoria pública más
+resistente. En una hora, una plataforma sustituta ofrecía a los suscriptores
+acceso a la recantación en alta definición, con comentario opcional de Q-Prime.
+
+La grabación original permaneció en fragmentos. Una maestra había guardado el
+audio. Un camionero había guardado los once segundos blancos. Un estudiante
+había guardado los comentarios. Petra había guardado el recibo del televisor
+porque la tienda le había cobrado un canal premium que no había solicitado.
+
+Ninguna versión estaba completa.
+
+Esto irritó al público, agradó a los abogados y dio al manuscrito un problema
+más. Si Q había renunciado verdaderamente a su pretensión de autoría, ¿quién
+decidiría qué fragmento pertenecía al final?
+
+La respuesta quedó aplazada.
