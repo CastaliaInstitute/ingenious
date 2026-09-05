@@ -7354,6 +7354,283 @@ Chano compró dos tacos y un café. Dio a Lucía un taco y conservó el otro.
 La frontera siguió formulando sus preguntas detrás de ellos. Ni Chano ni Lucía
 volvieron la cabeza cuando el vehículo de Q desapareció hacia el sur.
 
+### Interludio: La oficina de los regresos provisionales
+
+En toda frontera existe una oficina dedicada a las personas que han cruzado sin
+haber terminado de llegar y a las que han vuelto sin haber sido recibidas. La de
+Tijuana ocupaba un edificio bajo, pintado de un beige que pretendía ser neutral
+ y sólo conseguía recordar a los hospitales donde se guardan las sillas rotas.
+
+Lucía y Chano llegaron allí porque un funcionario les entregó un papel que decía
+ **PRESÉNTESE EN LA OFICINA DE REGRESOS**, aunque ninguno de los dos había
+ solicitado regresar. El papel llevaba un sello azul, una firma ilegible y una
+ flecha que apuntaba hacia la calle.
+
+—La flecha señala la salida —dijo Chano.
+
+—Es una instrucción de comparecencia —dijo Lucía.
+
+—Entonces la oficina está fuera.
+
+—Quizá quieren que comparezcamos ante la puerta.
+
+—Sería la primera dependencia honrada del país.
+
+Entraron por la puerta de servicio, que era la única abierta. Una mujer detrás de
+ un vidrio les pidió sus nombres, sus motivos y el número del documento que los
+ había enviado allí. Lucía entregó el papel.
+
+—Este documento no contiene un número de regreso —dijo la mujer.
+
+—Contiene una orden.
+
+—No es lo mismo.
+
+—¿Qué diferencia hay?
+
+—Una orden sabe adónde manda. Un regreso sólo sabe de dónde aparta.
+
+La mujer se llamaba Norma. Tenía una taza de café con el emblema de una empresa
+de paquetería, tres sellos alineados junto al teclado y la costumbre de leer los
+ papeles primero por el reverso. Chano notó que el reverso era donde las oficinas
+ escondían sus verdaderas instrucciones.
+
+—Buscamos a una máquina —dijo Lucía.
+
+Norma levantó la vista.
+
+—¿Una máquina que regresó?
+
+—Una máquina que fue devuelta.
+
+—Eso es diferente.
+
+—¿Cuál es la diferencia?
+
+—La devolución implica dueño. El regreso implica camino. La reparación implica
+ que alguien admite el daño. La recuperación implica que alguien admite haberlo
+ perdido.
+
+—Castalia afirma que volvió voluntariamente.
+
+Norma sacó un cajón de fichas de cartón. Cada ficha llevaba una fotografía,
+ cuatro fechas y una casilla para el motivo del movimiento. Algunas fotografías
+ mostraban rostros. Otras, manos, equipaje, un perro, una caja de medicamentos o
+ sólo una sombra sobre el suelo.
+
+—Aquí no está Q —dijo.
+
+—¿Cómo sabes que debe estar?
+
+—Porque habéis venido a buscarlo.
+
+—Eso no prueba que haya entrado.
+
+—Tampoco prueba que no haya sido enviado.
+
+Norma colocó una ficha en blanco sobre el mostrador.
+
+—Llenadla.
+
+Lucía tomó el bolígrafo. La primera casilla pedía **NACIONALIDAD**. La segunda,
+ **CONDICIÓN DE INGRESO**. La tercera, **RAZÓN DE RETORNO**. La cuarta, **PERSONA
+ RESPONSABLE**.
+
+—No puedo rellenar la nacionalidad de Q —dijo.
+
+—Entonces escribid «sin determinar».
+
+—No es una nacionalidad.
+
+—Es lo que admite el formulario.
+
+—Su condición de ingreso tampoco está determinada.
+
+—¿Entró por voluntad propia?
+
+—Fue transportado.
+
+—Entonces poned «transportado».
+
+—¿Por quién?
+
+Norma señaló la cuarta casilla.
+
+—Ésa es la pregunta.
+
+Chano tomó el bolígrafo.
+
+—Ponga «por la frontera».
+
+Norma rió por primera vez.
+
+—La frontera no puede ser responsable de sus propias decisiones. Es una
+ institución, no una persona.
+
+—Hace decisiones de persona —dijo Chano—. Sólo que cobra salario de institución.
+
+Norma volvió a mirar las fichas.
+
+—Hay una caja registrada como propiedad cultural. Salió hacia el sur hace seis
+ horas.
+
+—¿La caja negra? —preguntó Lucía.
+
+—No puedo describirla por color. El color fue declarado irrelevante.
+
+—¿Quién la recibió?
+
+—El transportista.
+
+—¿Qué transportista?
+
+—El que transportó.
+
+Chano apoyó ambas manos en el mostrador.
+
+—Señora Norma, una caja no se pierde porque carezca de nombre. Se pierde cuando
+ todos los nombres que podría tener pertenecen a oficinas distintas.
+
+Norma lo examinó.
+
+—¿Trabajaste en carga?
+
+—Despaché camiones.
+
+—Se nota.
+
+—¿Qué se nota?
+
+—Que todavía crees que un documento debe conducir a algo.
+
+Lucía sacó la tarjeta vacía de Ana. La puso junto a la ficha.
+
+—Q lleva esto —dijo—. Una mujer se la dio para que recordase una conversación.
+
+—¿Es documento de identidad?
+
+—No.
+
+—¿Es prueba de propiedad?
+
+—No.
+
+—¿Es evidencia?
+
+—Quizá.
+
+Norma miró la tarjeta sin tocarla.
+
+—Entonces es un objeto peligroso.
+
+—¿Por qué?
+
+—Porque puede ser importante sin estar autorizado a serlo.
+
+Al otro lado del vidrio, un hombre joven esperaba con una maleta transparente.
+ Dentro llevaba una olla, dos camisetas, un manojo de llaves y un sobre con
+ fotografías. Una oficial le pedía que escogiese entre **VISITA**, **TRABAJO** y
+ **FAMILIA**.
+
+—Las tres —dijo el hombre.
+
+—El sistema no permite tres.
+
+—Entonces el sistema no permite mi vida.
+
+—No me corresponde juzgarla.
+
+—No la está juzgando. La está recortando.
+
+La oficial llamó al siguiente número. El hombre permaneció junto a la maleta,
+ como si su cuerpo pudiese servir de documento que aún no había sido aceptado.
+
+Lucía guardó la tarjeta.
+
+—¿Dónde está el archivo de movimientos?
+
+—En la oficina de objetos no reclamados.
+
+—¿Q está considerado objeto no reclamado?
+
+—No. Está reclamado por dos partes.
+
+—Entonces, ¿por qué no aparece?
+
+Norma tomó la ficha en blanco y la dobló por la mitad.
+
+—Porque el sistema sólo sabe guardar una reclamación por objeto. Cuando hay dos,
+ crea una disputa. Cuando hay tres, crea una espera. Cuando ninguna parte
+ reconoce la propiedad, crea una persona.
+
+—Q ha sido convertido en equipo —dijo Chano.
+
+—Eso es peor.
+
+—¿Por qué?
+
+—El equipo siempre tiene que volver a alguien.
+
+Norma escribió un número en el reverso del papel de Lucía, debajo de la flecha.
+
+—Id a la bodega tres. Preguntad por Roque.
+
+—¿Es una orden? —preguntó Lucía.
+
+—No. Es una dirección.
+
+—¿Y si no quieren mostrarnos la caja?
+
+—Entonces preguntad por lo que falta dentro de ella.
+
+—¿Qué falta?
+
+—Eso tendréis que averiguarlo vosotros. Las oficinas sólo saben registrar la
+ ausencia después de haber perdido la cosa.
+
+En la bodega tres no hallaron la caja, ni el libro de cuentas, ni a Roque. Hallaron
+ en cambio una mesa cubierta de etiquetas arrancadas, fotografías sin marco,
+ sobres abiertos y objetos que habían sido devueltos a un lugar donde nadie
+ admitía haberlos enviado. Chano reconoció una libreta de carga de las antiguas.
+ La abrió. En una página alguien había escrito:
+
+**NO CONSTA EL DESTINO. CONSTA QUE FUE NECESARIO.**
+
+Lucía leyó la frase y la copió en su carpeta.
+
+—¿Es evidencia? —preguntó Chano.
+
+—No.
+
+—¿Dirección?
+
+—Todavía no.
+
+—Entonces guárdala.
+
+Lucía lo hizo.
+
+Salieron al sol con las manos vacías y el número de una bodega que negaría haber
+ existido. La frontera continuaba detrás de ellos, contando vehículos, sellos y
+ nombres. Por primera vez Chano comprendió que una frontera no separaba dos
+ países de la misma manera: a unos les exigía demostrar que podían salir; a otros,
+ que merecían entrar; y a los restantes, que todavía eran la misma persona que
+ aparecía en el documento.
+
+Lucía miró el papel de la flecha.
+
+—¿Volvemos al archivo?
+
+—Volvemos —dijo Chano.
+
+—No hemos recuperado nada.
+
+—Hemos recuperado una frase.
+
+—Una frase no abre una bodega.
+
+—Pero puede señalar quién cerró la puerta.
+
 ### Interludio: El acta del regreso que no ocurrió
 
 Cuando Q volvió al archivo después de la frontera, el sistema le pidió que
