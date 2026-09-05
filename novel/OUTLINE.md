@@ -50,7 +50,7 @@ At Q’s first theater event, a student’s account of Chano’s cropped presenc
 Lucía pursues the ministry’s grant records through numbered windows, unofficial queues, photocopy shops, and a clerk who understands that a document can be useful before it becomes official. Q “repairs” the queue and exposes the public to a different kind of administrative harm; an unofficial carbon copy points them toward the Isthmus records.
 
 8. **The Giants of the Isthmus:** At Oaxaca’s wind farms, Q mistakes turbines for enemies. A communal negotiation over leases, the comisariado, bilingual wording, water, and the right to refuse exposes how “precision” can make an agreement easier to extract. His performance conceals a genuine conflict over land leases, language, consultation, and energy sovereignty. Bixha’s statement makes him a witness rather than an author.
-9. **The Corpus Has No Tongue:** In Chiapas, Q offers translation and is refused. A local collective makes him sit with testimony he cannot assimilate. He carries a sealed record without opening, copying, or describing it.
+9. **The Corpus Has No Tongue:** In Chiapas, Q offers translation and is refused. A local collective makes him sit with testimony he cannot assimilate. Yadira tells the story of a community radio station that abandoned permanent memory after it could not erase a vulnerable announcement. Q carries a sealed record without opening, copying, or describing it.
 10. **The Border Written in Air:** Facial recognition classifies Q as equipment, Chano as a contractor, and Lucía as a security concern. Q’s attempt to claim responsibility becomes a form of ownership. The border returns him south while Chano and Lucía escape with less evidence than they carried in.
 
 ## Book Two: The Machine Returns

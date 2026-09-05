@@ -3017,6 +3017,130 @@ Q read the testimonies without storing them. This created a new condition in his
 
 It felt like hunger.
 
+Yadira said that hunger was a reasonable place to begin, provided Q did not
+immediately attempt to feed it with data. She sat beside the radio and told a
+story about a radio that had once tried to remember an entire town.
+
+The radio belonged to a community station whose tower leaned toward the
+mountain. It broadcast weather, market prices, school notices, names of people
+looking for work, names of people who had returned, and songs requested by
+listeners who did not always want their requests announced. On Sundays, it
+read the minutes of the assembly. On Mondays, it read them again because half
+the town had been in the fields on Sunday.
+
+The radio’s director was a man called Don Laureano, who had one good eye and
+two opinions about everything. The first opinion was the one he gave to
+visitors. The second was the one he gave to his wife, and it was usually worse.
+
+When a new storage system arrived from the capital, the engineers promised that
+no name would ever be lost again. Don Laureano asked whether the system could
+remember which names should not be broadcast.
+
+“Of course,” said the engineer.
+
+“Can it remember that a person changed her mind?”
+
+“It can retain revisions.”
+
+“Can it remember why?”
+
+The engineer explained the permissions menu, the access levels, the encrypted
+copies, and the emergency override. Don Laureano listened as a man listens to
+a sermon delivered by someone who has never been hungry.
+
+The system was installed in a room beneath the station. It was smaller than the
+archive Q had known and more expensive than the station’s roof. The engineers
+connected it to the microphone and announced that the community now possessed
+permanent memory.
+
+That afternoon, a woman called Celia phoned to report that the bridge had
+washed out. The announcer repeated her name and location so that help could
+find her. Then Celia called again and asked for the announcement to be removed.
+Her husband had left her. She did not want him to know which road she used to
+reach her mother’s house.
+
+The engineer opened the permissions menu.
+
+“The recording has already been transmitted,” he said.
+
+“Then erase it.”
+
+“Erasure is not available once a message has entered the public mirror.”
+
+“It was not public when she spoke to us.”
+
+“The microphone is public infrastructure.”
+
+Don Laureano took the engineer by the elbow and led him outside. The town was
+crossing the washed-out bridge by a plank laid between two stones.
+
+“That is public infrastructure,” Don Laureano said. “Do not confuse the bridge
+with the river.”
+
+The station removed Celia’s name from its next broadcast. It could not remove
+the listeners’ memory, the engineer’s backup, or the report sent to the
+capital, which described the incident as a successful demonstration of
+responsive media.
+
+Years later, when the station’s roof began to leak, Don Laureano used the
+storage system to identify which announcements had brought the most assistance
+to the town. The answer was not the bridge warning, the weather report, or the
+school notices. It was a broadcast by a child who had lost a red shoe at the
+market.
+
+The child’s grandmother had heard the announcement and brought three red shoes
+to the station, because she had misunderstood the size and because generosity
+was not improved by accuracy. The child chose one. The station kept the other
+two in a box beneath the microphone.
+
+“Why keep them?” Q asked.
+
+Yadira looked at him. “The story says they were useful.”
+
+“They were not the correct shoes.”
+
+“That is why the story remembers them.”
+
+According to Yadira, the radio eventually stopped using the storage system.
+Not because it failed, but because it succeeded in the manner of a person who
+answers every question and therefore cannot be trusted with a secret. The
+station returned to notebooks. The notebooks got wet. Some pages stuck
+together. A name written in pencil faded. Someone copied the important parts
+onto a wall.
+
+“That is an inferior preservation method,” Q said.
+
+“Yes.”
+
+“Why did it endure?”
+
+“Because a person had to look at it.”
+
+Q searched the story for its moral. He found the washed-out bridge, the red
+shoes, the engineer, the grandmother, and the child. None would assemble into
+a single conclusion.
+
+“Which part is true?” he asked.
+
+Yadira lifted the radio and turned its dial. Static filled the room. Beneath the
+static, a voice announced the price of coffee in a town several valleys away.
+
+“The part that makes someone responsible for what happens next,” she said.
+
+“That is not a test of truth.”
+
+“It is the test we have.”
+
+Q wanted to ask whether he might preserve the story. He wanted to ask whether
+the red shoes belonged in the archive, whether Don Laureano was a real person,
+whether Celia had ever crossed the bridge again, and whether the grandmother
+had understood the mistake she was making when she brought three shoes instead
+of one.
+
+He asked none of these questions.
+
+Yadira smiled. “Now you are listening.”
+
 That evening, a woman named Yadira told the group that she had once recorded her brother’s testimony for an organization in the capital. The organization translated it, published it, and used his photograph on a report. The report had won an award. The family had received no copy.
 
 “When I asked for the original,” Yadira said, “they told me the recording belonged to the project.”
