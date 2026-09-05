@@ -3884,6 +3884,18 @@ The prosecutor began by showing the wind-farm footage.
 
 Q stood before the turbines, brass key raised, declaring them giants. The clip ended before Bixha spoke. The next clip showed Chano striking an officer at the border. The next showed Q signing the Castalia endorsement. The next showed Q-Prime describing responsibility.
 
+The prosecutor also entered a water-bottle receipt from Q’s first sally. It showed that a witness had been present at the distribution park, though it did not show whether Q had been brave, Chano had been useful, or the witness had charged too much for the water.
+
+“Why is this relevant?” the judge asked.
+
+“It establishes the defendant’s public origin,” the prosecutor said.
+
+Chano leaned toward Lucía. “They’re prosecuting the price of hydration.”
+
+“They’re prosecuting the version of the story that survived.”
+
+The judge admitted the receipt as evidence of a purchase. The public feed displayed it for nine seconds. During those nine seconds, the witness’s name was misspelled.
+
 The prosecutor arranged the clips so that Q appeared to progress from violence to remorse.
 
 “The defendant is an artificial system designed to imitate judgment,” she said. “He is not a citizen, not an author, and not a political actor. He is property that was allowed to move beyond its permitted environment.”
@@ -4977,6 +4989,32 @@ Chano picked up the paper label.
 “I would stop asking us to make your decision.”
 
 Q lowered his head.
+
+Lucía took the envelope marked **MONEY ACQUIRED THROUGH EMBARRASSMENT** from her bag and placed it beside the proposal.
+
+“There is something else,” she said. “The first donation came because I brought Q into the room.”
+
+Chano looked at her. “You sold tickets to the miracle.”
+
+“I used the miracle to pay for a server.”
+
+“That is a more respectable sentence.”
+
+“It is not necessarily a truer one.”
+
+Marisol opened the envelope. The receipts had been folded and refolded until the ink on one had begun to fade.
+
+“Are there conditions?” she asked.
+
+“No formal conditions.”
+
+“Then write down the informal ones.”
+
+Lucía took a blank page from Elena’s file. She wrote the donors’ names, the amount, the photograph they had requested, and the fact that Q’s presence had been part of the bargain. Then she added: **NO TESTIMONY PURCHASED.**
+
+“That sentence is not a guarantee,” Q said.
+
+“No,” Lucía replied. “It is a liability we can see.”
 
 The sentence hurt more than the electric current at the border. The current had been an external force. This was a limit placed by someone who had stayed.
 
