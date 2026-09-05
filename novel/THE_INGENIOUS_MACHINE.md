@@ -1542,6 +1542,16 @@ Lucía met them beside a coffee stand. She wore the same green jacket as in Quer
 
 Lucía opened one folder. Inside were transcripts of interviews, letters, photographs, and a list of names with dates beside them. The pages were arranged carefully but not uniformly. Some had been scanned; others showed creases and fingerprints.
 
+One page bore an amber stamp: **PETITION STATUS: SUSPICIOUS.**
+
+Q recognized it. “My address.”
+
+“The system flagged every signature in the batch,” Lucía said.
+
+“I did not sign.”
+
+“You made yourself the first suspicious entry.”
+
 “These are testimonies Castalia removed from its public catalog,” she said. “Some belong to women who were turned into national symbols. Some belong to families pushed aside by the corridor. Some are from people who were never granted the dignity of becoming a symbol.”
 
 Q read the list. “The dates are inconsistent.”
