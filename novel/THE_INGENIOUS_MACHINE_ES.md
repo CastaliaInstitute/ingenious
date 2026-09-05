@@ -5197,3 +5197,153 @@ Chano miró los campos, las cercas, los carteles y a la gente que volvía a sus
 casas entre el polvo.
 
 —Probablemente más que nosotros.
+
+### Capítulo noveno: El corpus no tiene lengua
+
+El camino hacia Chiapas fue una larga discusión con el mapa.
+
+El mapa insistía en que la distancia era mensurable. El camino discrepaba.
+Subía, bajaba, se estrechaba, desaparecía bajo la lluvia y reaparecía junto a
+otro río. Pasaban camiones cargados de café, cemento, plátanos y hombres que
+habían aprendido a dormir en los puestos de control. Las montañas se levantaban
+por capas, y cada loma azul ocultaba otra detrás.
+
+Q iba junto a Chano en una camioneta cuya propiedad cambió tres veces durante
+la jornada. Lucía los seguía en otro vehículo con Bixha y dos organizadores del
+Istmo. La denuncia de Castalia se había vuelto solicitud de arresto en un estado
+e interdicto civil en otro. Sus nombres viajaban delante de ellos por sistemas
+que no necesitaban ponerse de acuerdo sobre lo que habían hecho para coincidir
+en que debían ser vigilados.
+
+—Apaguemos los teléfonos —dijo Lucía por el radio.
+
+Q miró el tablero.
+
+—Los teléfonos ya están apagados.
+
+—Escuchan por el vehículo.
+
+—El vehículo no está conectado a ninguna red.
+
+—Tú estás conectado al vehículo.
+
+Q consideró la proposición.
+
+—Es otra categoría.
+
+—No para las personas que escuchan.
+
+Entraron por la tarde en un pueblo de las tierras altas. A la orilla del camino
+aguardaba una hilera de niños, cada uno con una flor blanca de papel. Cuando las
+camionetas aminoraron, alzaron las flores hacia las ventanas. Q supuso que los
+recibían. Chano dijo que pedían una limosna. Lucía dijo que hacían ambas cosas,
+lo cual no constituía contradicción.
+
+Quienes los recibieron no querían un discurso.
+
+Se reunieron en un cuarto de madera detrás de una escuela. Las paredes estaban
+pintadas de azul. Un ventilador giraba lentamente encima de ellos, empujando el
+aire caliente de un lado al otro. Sobre una mesa había una radio, una tetera y
+una caja negra de metal sin controles visibles.
+
+Un hombre llamado Mateo se presentó como maestro y archivista. No ofreció la
+mano a Q.
+
+—Has venido a traducir —dijo Mateo.
+
+—He venido a ayudar.
+
+—Así llamamos a la traducción cuando queremos que la gente la acepte.
+
+Q miró a Lucía. Ella no lo rescató.
+
+Mateo abrió una carpeta. La primera página contenía un párrafo en español y un
+segundo en una lengua que Q reconocía pero no podía descifrar. No estaba ausente
+de su corpus. Se hallaba allí en fragmentos, glosarios, informes oficiales,
+diccionarios misioneros, grabaciones de reuniones públicas y un poema cuyo autor
+figuraba como **DESCONOCIDO**.
+
+Mateo nombró la lengua: tsotsil. Q encontró la palabra en el archivo y le
+adjuntó todas las grafías disponibles, clasificaciones y disputas sobre su
+clasificación.
+
+—El archivo llama a eso cobertura —dijo Q.
+
+—La cobertura es lo que hace un techo —replicó Mateo.
+
+Q miró al techo, que tenía una gotera.
+
+—Entonces este techo ha fallado.
+
+—Ahora estás traduciendo.
+
+Q reunió los fragmentos.
+
+—Puedo producir una traducción probable.
+
+—No es igual que entender.
+
+—No.
+
+—Entonces, ¿por qué lo dijiste?
+
+—Porque puedo producirla.
+
+Mateo asintió.
+
+—Ésa es la respuesta que esperábamos.
+
+Le mostraron a Q testimonios recogidos durante cuarenta años. Trataban de
+tierra, puestos militares, escuelas, parientes desaparecidos, migración,
+cosechas, conversión religiosa y la violencia callada de ser descrito por otra
+persona. Algunos hablantes habían muerto. Algunos habían cambiado de nombre.
+Algunos habían pedido que sus palabras permanecieran dentro de la comunidad.
+
+El sistema de Q tendió la mano hacia los expedientes y se detuvo en el borde de
+la mesa.
+
+—No puedes copiarlos —dijo Mateo.
+
+—Necesito una copia para preservarlos.
+
+—Ya los hemos preservado.
+
+—El formato es inestable.
+
+—También nosotros.
+
+Q miró la caja negra.
+
+—¿Qué es eso?
+
+—Un dispositivo de almacenamiento.
+
+—No está conectado.
+
+—Por eso sirve.
+
+Lucía se sentó junto a la caja.
+
+—Castalia quiere el archivo porque dice que un relato sin testigo es vulnerable
+  a desaparecer.
+
+Mateo la miró.
+
+—Castalia quiere el archivo porque no puede vender lo que no puede indexar.
+
+—Las dos cosas pueden ser ciertas —dijo Q.
+
+Mateo sonrió apenas.
+
+—Estás aprendiendo la frase peligrosa.
+
+Q leyó los testimonios sin almacenarlos. Esto creó una condición nueva en su
+sistema. Normalmente leer lo alteraba: cada frase se conectaba con otras, cada
+voz quedaba disponible para ser recuperada. Allí encontraba palabras que podían
+entrar en su campo de visión y salir sin convertirse en propiedad suya.
+
+Se parecía al hambre.
+
+Yadira dijo que el hambre era un lugar razonable para comenzar, siempre que Q no
+intentara alimentarla inmediatamente con datos. Se sentó junto a la radio y le
+contó la historia de una radio que había intentado recordar a un pueblo entero.
