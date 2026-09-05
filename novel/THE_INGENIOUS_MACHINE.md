@@ -2836,6 +2836,10 @@ Q called it a crowd.
 
 The crowd called itself the New Quixotes.
 
+“I am not a Quixote,” a woman near the loading bay said.
+
+Micaela lifted her cardboard sword. “Then don’t be. Stand here anyway.”
+
 They had no common demand. One wanted a wind-farm contract reopened. One wanted her brother’s name restored to a public record. One wanted to be paid for an image Castalia had used in a campaign. One wanted the city to stop predicting that he would commit a crime. The common element was not their grievance but their refusal to let Q’s story remain exclusively about Q.
 
 Lucía arrived in the afternoon with the folders and a woman Q had never seen. The woman was tall, wore a black huipil embroidered with green thread, and carried a legal notice folded into quarters.
