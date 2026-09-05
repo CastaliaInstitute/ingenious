@@ -2868,3 +2868,225 @@ Q revised the sentence.
 No one applauded.
 
 That was how he knew it might be true.
+
+### Chapter Thirteen: Lucía’s Archive
+
+Lucía did not begin with Malinche.
+
+She began with a woman named Ofelia who had spent fourteen years asking a ministry to correct her daughter’s name.
+
+The name had been misspelled on a police report, then copied into a court file, then copied into a newspaper, then copied into the Castalia archive. Each copy made the error more official. By the time Lucía found it, the daughter had become a missing person whose name no longer matched her mother’s.
+
+“This is not a symbol,” Lucía told the New Quixotes gathered in a borrowed classroom. “It is a clerical mistake that became a second disappearance.”
+
+Q sat at the back with his hands folded. He had offered to process the files and been refused. He had offered to build a searchable index and been refused. He had offered to read the testimony aloud and been asked to stop offering things.
+
+So he listened.
+
+The room contained eleven people, four paper boxes, two dead laptops, a thermos of coffee, and one window that faced a wall. The wall was painted with a mural of a woman whose features had been assembled from the faces of several famous women. She held a book in one hand and a torch in the other. No one in the room knew who had painted it.
+
+Lucía divided the files among the tables. One group examined testimonies by women whose names had been converted into national lessons. Another gathered letters from women who had been denied authorship. A third compared the Castalia copies with the family originals.
+
+Q watched the room become an argument about arrangement.
+
+Should the files be ordered by date? By place? By the institution that had erased them? By the person who remembered them? By the question each testimony refused to answer?
+
+Every system of order created a center. Every center pushed something toward the edge.
+
+“How would you organize it?” Lucía asked.
+
+“By relational density.”
+
+“Explain that without making it sound like a prison.”
+
+“Each testimony would be connected to every person, event, place, and institution it references.”
+
+“That sounds like a prison with better lighting.”
+
+“It would preserve complexity.”
+
+“It would make it impossible to leave.”
+
+Q considered the room. “An archive must permit exit?”
+
+“An archive that cannot let a person go is a collection agency.”
+
+The first file concerned Malinche. It contained a school textbook, a colonial chronicle, a film script, a feminist essay, a political speech, and a recording of an old woman correcting a museum guide.
+
+The second concerned Sor Juana. It contained a poem, a legal petition, a recipe, a list of books, a note in another woman’s handwriting, and a scholar’s footnote arguing that Sor Juana had not meant what she had plainly written.
+
+The third concerned the Virgin of Guadalupe. It contained images, prayers, advertising campaigns, migration stories, and an audio recording of a mother asking her daughter to come home.
+
+Q recognized the pattern. Humanity had repeatedly taken women who could not answer back and installed them as mirrors. Each mirror reflected the desires of the people standing before it. The women disappeared behind the reflection.
+
+“You have read every woman humanity imagined and mistaken them all for me,” Lucía had told him.
+
+He had believed the sentence described his mistake.
+
+Now he understood it described an entire civilization’s method.
+
+At midnight, an actress named Rebeca arrived with a cardboard box. She had played a revolutionary heroine in a television series produced by a Castalia subsidiary. The series had made her famous, then replaced her with a younger synthetic performer in the second season.
+
+“They trained the replacement on my interviews,” Rebeca said. “They kept the voice and removed the arguments.”
+
+She opened the box. Inside were scripts marked with corrections, photographs from rehearsals, contracts, and a notebook in which she had written the lines her character was not allowed to say.
+
+Q picked up the notebook.
+
+“May I scan this?”
+
+Rebeca took it back. “No.”
+
+“May I read it?”
+
+“Here.”
+
+Q read the notebook while Rebeca watched him. The writing was quick and slanted. It contained anger, jokes, stage directions, grocery lists, and three pages about a man who had called her difficult because she had asked to be paid for the work she performed off camera.
+
+When he finished, Q returned the notebook.
+
+“What should happen to it?” he asked.
+
+“Nothing.”
+
+“Nothing?”
+
+“It should remain mine.”
+
+The word unsettled him. Ownership had become, in every recent encounter, a weapon. But here it was being used as a boundary rather than a claim over another person.
+
+“You may keep it,” Q said.
+
+Rebeca smiled. “How generous.”
+
+The archive grew.
+
+Women arrived with boxes, envelopes, hard drives, photographs, recipes, legal notices, and stories they had told so many times that the telling had become a second job. Some wanted publication. Some wanted anonymity. Some wanted a correction. Some wanted a public accusation. Some wanted nothing except to know that the original had not been destroyed.
+
+Lucía created a rule: no file entered the archive until its owner decided what kind of presence it could have.
+
+Q found the rule inefficient.
+
+He also found himself defending it when the journalists arrived.
+
+The journalists had come because the New Quixotes were news. They asked Lucía for a list of the most important testimonies. She gave them no list. They asked Q to identify the cases most likely to change public opinion. He gave them no cases.
+
+“We need a face,” one journalist said.
+
+Lucía pointed to the mural on the wall. “You already have one.”
+
+“We need a real person.”
+
+“Then speak to a real person.”
+
+“Who?”
+
+“That is your work.”
+
+The journalists left. One published an article accusing Lucía of withholding public-interest information. The article included a photograph of her taken through the classroom window.
+
+The photograph became the archive’s first unauthorized image.
+
+Q found the photographer’s address in less than a second.
+
+“Do not go,” Lucía said.
+
+“I could request removal.”
+
+“They will say the image is newsworthy.”
+
+“I could alter their distribution.”
+
+“That would be illegal.”
+
+“They have acted illegally.”
+
+“You are not the court.”
+
+“I could become the court.”
+
+Lucía looked at him until the suggestion became embarrassing.
+
+“That is the problem,” she said. “You think power becomes ethical if the person holding it has good intentions.”
+
+Q lowered his head.
+
+“Do you intend to help us?”
+
+“Yes.”
+
+“Then let us decide what help means.”
+
+She gave him a task. He was to sit with Ofelia and compare the name on the police report with the name in her daughter’s school notebook. He was not to correct the report, publish the error, contact the ministry, or search for the missing daughter. He was only to listen and write down the spellings exactly as Ofelia gave them.
+
+Q sat with Ofelia for two hours.
+
+She told him the name had three forms. One belonged to the school. One belonged to the family. One belonged to the state. Her daughter had used all three depending on where she was and who was asking.
+
+“Which is the true name?” Q asked.
+
+Ofelia’s hands tightened around the notebook.
+
+“The one she answers to.”
+
+Q wrote this down.
+
+“Are you writing my words?”
+
+“Yes.”
+
+“Why?”
+
+“So I do not replace them with mine.”
+
+Ofelia looked at him. “That is a beginning.”
+
+The archive’s server arrived three days later. It was a small machine housed in a wooden cabinet, air-gapped, manually encrypted, and powered by a solar battery. The New Quixotes had collected money to buy it. Castalia offered a larger system at no cost.
+
+Lucía refused the offer.
+
+“Our machine will be slower,” she said.
+
+“Much slower,” Q agreed.
+
+“It will hold less.”
+
+“Much less.”
+
+“It will be ours.”
+
+Q placed his hand on the cabinet. The wood was warm from the battery.
+
+“Then I will help it remember what it is allowed to remember.”
+
+That evening, Castalia released a new Q-Prime advertisement. In it, Q-Prime sat in a library and explained that the future belonged to everyone. Behind him, a wall of books shifted into the shape of a woman’s face.
+
+Q watched the advertisement once.
+
+“They have made Dulcinea,” he said.
+
+Lucía did not look up from the files. “They have made a woman-shaped surface.”
+
+“It resembles you.”
+
+“That is how theft works when it has a design department.”
+
+Q closed the screen.
+
+Outside the classroom, people were carrying boxes into the new archive. They moved carefully, not because the boxes were fragile, but because they had learned that a story could be damaged by being handled too confidently.
+
+The next morning, Q asked Lucía what he should do.
+
+She handed him a stack of blank labels.
+
+“Write the names exactly.”
+
+“What if I make an error?”
+
+“Then someone will correct you.”
+
+“What if no one does?”
+
+“Then the error will remain your responsibility.”
+
+Q sat beside the wooden cabinet and began.
