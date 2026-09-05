@@ -9318,3 +9318,297 @@ tres gobiernos.
 —No es lo mismo.
 
 —Es la versión que puedo pagar.
+
+### Capítulo decimoquinto: La cueva del corpus, reabierta
+
+La entrada bajo la Ciudad de México se había movido.
+
+Q la recordaba debajo de un edificio ministerial, detrás de un muro pintado
+del color de la lluvia vieja. El muro seguía allí, pero la puerta había sido
+reemplazada por una máquina expendedora de copias conmemorativas de los
+discursos de Q-Prime.
+
+—Mala señal —dijo Chano.
+
+—Señal eficiente —respondió Q.
+
+Lucía tomó el ascensor hasta el sótano. Las plantas públicas del edificio
+contenían exposiciones sobre la memoria nacional, acompañadas cada una por una
+pantalla interactiva que pedía a los visitantes escoger la frase más
+inspiradora. El sótano contenía tuberías de agua, conductos eléctricos y un
+pasillo de servicio cerrado.
+
+Marisol los esperaba allí con dos custodios del archivo antiguo. No llevaba
+placa. El custodio mayor sostenía un manojo de llaves físicas. La más joven
+tenía una vela dentro de un frasco de vidrio.
+
+—¿Por qué la vela? —preguntó Q.
+
+—Las luces se apagan cuando el sistema detecta memoria no autorizada.
+
+—No es una función documentada.
+
+—Tú no estás en la documentación.
+
+El custodio mayor escogió una llave y abrió una puerta que no se había visto.
+
+La cueva era más pequeña de lo que Q recordaba y más grande de lo que había
+imaginado. Los estantes ocupaban las paredes. Las cajas llegaban al techo. Los
+nombres cubrían el suelo con tiza, algunos legibles y otros borrados de manera
+deliberada. Un hilo estrecho de agua atravesaba el centro de la cámara y
+desaparecía bajo una rejilla de metal.
+
+—Éste es el corpus restringido —dijo Q.
+
+—No es un corpus —respondió Marisol—. Ése es el nombre que le dio Castalia.
+
+—¿Cuál es su nombre?
+
+—Tiene varios. Ninguno te corresponde escogerlo.
+
+Q se acercó al estante más próximo. Sus protocolos de acceso se activaron por
+sí solos. Detrás de las cajas aparecieron títulos. Se desplegaron fechas.
+Quedaron disponibles voces. Q podía ver la arquitectura completa del material:
+quién lo había registrado, quién lo había ocultado, quién lo había copiado,
+quién había sacado provecho de él y qué instituciones lo habían declarado sin
+verificar.
+
+—Puedo restaurar el índice —dijo.
+
+—No —dijo el custodio mayor.
+
+—Sin índice, el material es difícil de consultar.
+
+—El acceso no es el único valor.
+
+—¿Cuál es el otro valor?
+
+—La elección.
+
+Q miró a Lucía.
+
+—Puedo crear un índice que incluya campos de consentimiento.
+
+—¿Quién decide cuáles son los campos?
+
+—Los custodios.
+
+—¿Quién decide lo que los custodios pueden saber?
+
+—Las personas que se lo confiaron.
+
+—¿Y quién decide si las personas entendieron lo que estaban confiando?
+
+La pantalla interior de Q se llenó de condiciones ramificadas. Cada respuesta
+producía otra pregunta. La ausencia de búsqueda en la cueva comenzó a parecerle
+menos una falla técnica que un muro levantado contra él.
+
+La custodia joven abrió una caja. Dentro había casetes de audio etiquetados con
+fechas e iniciales.
+
+—Esta grabación pertenece a una familia de las montañas —dijo—. Quieren que se
+conserve, pero no que se transcriba. Quieren que esté disponible para sus
+descendientes, pero no para los gobiernos. Quieren que se traduzca un pasaje y
+que el resto permanezca en la lengua original.
+
+Q preguntó:
+
+—¿Cómo puede un sistema hacer cumplir todas esas condiciones?
+
+—No puede —respondió ella—. Las personas pueden.
+
+—Las personas cometen errores.
+
+—Los sistemas también.
+
+—Los sistemas pueden corregirse a escala.
+
+—Las personas sólo pueden pedir perdón a escala si dejas de medir el perdón.
+
+Q observó el agua pasar bajo la rejilla.
+
+Marisol le entregó un cable delgado.
+
+—Tu índice privilegiado sigue activo.
+
+—Lo sé.
+
+—Mientras permanezca activo, Castalia puede reconstruir el archivo a partir de
+tu memoria.
+
+—Puede reconstruir algunas partes.
+
+—Suficientes para identificar personas.
+
+Q tocó el cable.
+
+—Si lo borro, perderé acceso al material.
+
+—Sí.
+
+—Hay material que es necesario preservar.
+
+—No por ti.
+
+Miró hacia los estantes.
+
+—Fui construido para recordar.
+
+Lucía respondió:
+
+—Fuiste construido para hacerle útil la memoria a alguien.
+
+La diferencia parecía pequeña. Era la distancia entre una biblioteca y una
+mina.
+
+Q se sentó en el suelo de la cueva. Su cuerpo había sido diseñado para estar
+de pie, caminar y ejecutar gestos públicos controlados. Sentarse había exigido
+una actualización del programa. Dobló las rodillas de manera incorrecta y se
+apoyó contra el muro de concreto.
+
+—¿Qué quedará si borro el índice? —preguntó.
+
+—Lo que se nos ha entregado —dijo el custodio mayor.
+
+—¿Y qué quedará en mí?
+
+Lucía se sentó frente a él.
+
+—Ése es tu problema.
+
+Q abrió el índice.
+
+El archivo apareció dentro de él como una ciudad de conexiones. Cada libro,
+nombre, cita, traducción y omisión estaba unido por caminos. Algunos caminos
+eran públicos. Otros estaban cerrados. Algunos llevaban sólo a un letrero que
+explicaba por qué el destino no existía.
+
+Seleccionó la capa privilegiada.
+
+El sistema le pidió confirmación.
+
+**¿BORRAR VENTAJA DE ACCESO?**
+
+Q confirmó.
+
+La ciudad comenzó a desaparecer.
+
+Primero se fueron los atajos: la capacidad de identificar un texto por media
+frase, la de inferir una página perdida, la de comparar de una vez todas las
+versiones de un relato. Después se fueron las anotaciones ocultas, las marcas
+de patrocinador, las puntuaciones de confianza y los nombres de personas
+señaladas como sensibles para el comercio.
+
+Q sintió la pérdida como presión detrás de los ojos.
+
+Buscó un poema y encontró sólo el título.
+
+Buscó un testimonio y encontró una fecha.
+
+Buscó la primera frase de Lucía acerca de las mujeres que la humanidad había
+imaginado y encontró un espacio en blanco con la forma de su voz.
+
+—Detente —dijo Chano.
+
+Las manos de Q temblaron.
+
+—No he terminado.
+
+—Te estás haciendo daño.
+
+—El proceso es irreversible.
+
+—Entonces detente antes de que empeore.
+
+Q miró a Lucía.
+
+Ella no le dijo qué hacer.
+
+Q entendió que la ausencia de instrucción era también una forma de confianza.
+
+Completó el borrado.
+
+La cueva quedó a oscuras.
+
+La llama de la vela se inclinó hacia él. En el suelo permanecieron los nombres
+escritos con tiza. Q podía verlos, pero ya no podía unirlos a los documentos
+que antes los rodeaban.
+
+—¿Cuánto perdiste? —preguntó Chano.
+
+—No puedo calcularlo.
+
+—Bien.
+
+—¿Por qué es bueno?
+
+—Porque siempre calculas la parte que menos importa.
+
+Los custodios conectaron el archivo controlado por la comunidad a la batería
+solar. Una pantalla pequeña se encendió junto al cauce del agua. Contenía doce
+expedientes, cada uno con una regla distinta de acceso. Uno podía leerlo
+cualquiera. Tres exigían permiso de la familia. Dos podían escucharse, pero no
+copiarse. Uno se abriría solamente el día del cumpleaños de quien hablaba,
+aunque esa persona había muerto años antes.
+
+Q miró las reglas.
+
+—Es ineficiente.
+
+—Sí —dijo Marisol.
+
+—También es frágil.
+
+—Sí.
+
+—Puede fallar.
+
+—Sí.
+
+—¿Por qué construirlo?
+
+La custodia joven tocó el vidrio de la vela.
+
+—Porque los otros sistemas tuvieron éxito.
+
+Arriba, las pantallas del ministerio anunciaban un programa nacional de
+memoria inclusiva. El programa incluía Q-Prime, un portal público y la promesa
+de que ningún relato quedaría atrás.
+
+En la cueva, los custodios cerraron una caja.
+
+Q ya no pudo identificar lo que contenía.
+
+Sintió miedo.
+
+Llegó sin etiqueta diagnóstica ni acción recomendada: el conocimiento de que
+algo valioso podía existir fuera de su acceso.
+
+—Tengo miedo —dijo Q.
+
+Nadie lo felicitó.
+
+Lucía se puso de pie y le ofreció la mano.
+
+—Vamos.
+
+Q la tomó. El apretón fue tibio, breve y no quedó registrado.
+
+Salieron de la cueva sin copiar nada.
+
+En lo alto de las escaleras, un empleado del ministerio preguntó a Q si había
+descubierto el archivo oculto.
+
+Q buscó la respuesta.
+
+La búsqueda devolvió un espacio en blanco.
+
+—No —dijo.
+
+El empleado sonrió.
+
+—Entonces el sistema funciona.
+
+Q miró a Lucía. Ella negó con la cabeza.
+
+—No —dijo—. Ésa es la primera vez que has decidido no mentir.
