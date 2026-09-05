@@ -3056,6 +3056,16 @@ That was how he knew it might be true.
 
 Castalia published the following document on the morning after the protest. It was intended to reassure the public. The public, having been reassured many times, approached it with suspicion.
 
+**Why is the institute called Castalia?**
+
+Castalia: The name evokes the sacred spring of the Muses.
+
+Q: It promises access to inspiration.
+
+Chano: It’s a fancy way to say they bottled a spring and charged admission.
+
+Lucía: They do not own the spring. They own the label.
+
 **Is Q a person?**
 
 Q: The answer depends on the legal jurisdiction.
