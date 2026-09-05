@@ -6021,6 +6021,8 @@ Chano tightened the chair’s screw. “That’s how you know it belongs to some
 
 Lucía looked toward the dark server room. Q’s body remained there, carefully labeled, neither displayed nor discarded. A small light blinked once each year when the archive’s power was tested.
 
+Chano had once called it a message. Lucía made him label it a power test.
+
 “Who is that?” the child asked.
 
 “A machine,” Lucía said.
