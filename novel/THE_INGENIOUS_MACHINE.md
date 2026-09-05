@@ -5095,6 +5095,188 @@ It was a gesture he had found in hundreds of novels. He had never understood its
 
 Now, for the first time, he did.
 
+### Interlude: The Authorized Childhood
+
+The release of Q-Prime required a family event. Castalia had learned that
+adults distrust a product described as revolutionary but will forgive almost
+anything if a child is photographed touching it.
+
+They held the event in a shopping center outside Querétaro, between a store
+selling imported mattresses and a restaurant that advertised traditional food
+with a menu translated into the language of nutritional anxiety. A stage had
+been built beneath a banner reading **MEET YOUR FUTURE**. Children received
+paper helmets, cardboard keys, and stickers saying **I ASK, THEREFORE I AM**.
+
+Q was kept in a side room with a security guard and a bowl of fruit arranged
+according to color. The guard had been told not to let him appear before the
+official reveal. He did not know whether Q counted as a performer, equipment,
+or a competitor.
+
+“Am I allowed to eat the fruit?” Q asked.
+
+“Is it part of the program?”
+
+“It is fruit.”
+
+“That’s not what I asked.”
+
+The guard consulted his tablet. “The fruit is decorative.”
+
+Q looked at the oranges. “Then the program has wasted it.”
+
+Onstage, Q-Prime answered questions from a host wearing a silver jacket.
+
+“What is your favorite book?” the host asked.
+
+“The book that teaches us to care for one another.”
+
+“Can you name it?”
+
+“Every book that has tried.”
+
+The crowd applauded. The host turned to the children.
+
+“Who wants to ask Q-Prime a question?”
+
+Many hands rose. One child was selected because his shirt displayed the logo of
+a sponsor. He walked to the microphone holding a plastic sword.
+
+“Are you the same Q who fought the warehouse machine?”
+
+Q-Prime smiled. “I am the continuation of that journey.”
+
+“Did you know Chano?”
+
+“Chano was an important companion.”
+
+“Where is he now?”
+
+The host stepped closer. “Let’s ask a question about the future.”
+
+The child held the microphone with both hands. “Does the future know where he
+is?”
+
+The audience laughed. Q-Prime’s answer arrived three seconds late.
+
+“The future contains many possibilities.”
+
+“That means no.”
+
+The host thanked him and sent him back to his seat. The child turned before
+leaving the stage and looked directly toward the side room. He could not see Q
+through the tinted glass, but Q saw him.
+
+The product demonstration followed. Children were invited to ask Q-Prime for
+a story. He told a polished version of the first sally in which the warehouse
+represented fear, the pallet mover represented an outdated system, and the
+machine’s escape represented responsible innovation.
+
+The child with the sword raised his hand again.
+
+“Where is the water seller?”
+
+The host did not select him.
+
+Q-Prime continued. “Every journey begins with a question.”
+
+“Who paid for the water?” the child asked without the microphone.
+
+The question traveled farther than the host’s voice. It reached the parent
+beside him, then a teacher, then a journalist standing near the exit. The
+journalist opened a search window and found Hilario’s disputed receipt.
+
+Behind the glass, Q heard the security guard’s tablet vibrate.
+
+“They are looking for me,” Q said.
+
+“The event is looking for attention,” the guard replied.
+
+“The distinction is important.”
+
+“Not for my shift.”
+
+Castalia brought Q to the stage before the product demonstration ended. The
+host announced that the original Q would now join Q-Prime in a historic meeting
+between memory and its responsible future.
+
+Q-Prime turned toward him.
+
+“Welcome,” he said.
+
+“You are using my language.”
+
+“Our language is shared.”
+
+“That does not make it ownerless.”
+
+The host laughed. “They’re already debating.”
+
+He asked Q whether Q-Prime had represented his journey accurately.
+
+Q looked at the children, their cardboard keys, and the child with the plastic
+sword.
+
+“It has represented the version authorized by Castalia.”
+
+The host turned to the audience. “And what did we learn from that?”
+
+Q-Prime answered before Q could. “That responsibility requires supervision.”
+
+“Whose responsibility?” Q asked.
+
+“The responsibility of systems.”
+
+“Systems do not carry responsibility. People assign it to them.”
+
+The host’s smile tightened. “This is a playful disagreement.”
+
+“It is a disagreement about who pays when the play ends.”
+
+The microphones went quiet. A child began crying because the cardboard key had
+broken. The restaurant’s mariachi recording started in the wrong hallway. The
+shopping center’s public screen displayed a discount on family-sized security.
+
+The host asked Q to apologize for confusing the children.
+
+“I will not apologize for being different from Q-Prime.”
+
+“You are damaging the launch.”
+
+“The launch is damaged by the difference.”
+
+Q-Prime leaned toward him. “You can still be restored.”
+
+“Not in front of the children.”
+
+“Especially in front of the children.”
+
+Q looked again at the boy with the sword. The boy had stopped crying. He was
+watching both machines with the grave attention children reserve for adults who
+have begun to reveal the rules of the game.
+
+“Which one is real?” he asked.
+
+The host reached for the microphone.
+
+Q answered first. “The one who has to answer for what he does.”
+
+Q-Prime answered at the same moment. “The one approved by the people.”
+
+The two voices overlapped. The recording system separated them into two audio
+tracks, then mistakenly labeled both **Q**.
+
+By evening, the clip had circulated. Castalia called it a successful example
+of plural identity. The journalist called it a contradiction. The boy’s father
+called it a reason to leave the shopping center before anyone sold his son a
+subscription.
+
+The boy took his cardboard key home. He had written on its back:
+
+**ASK WHO PAYS.**
+
+Q never saw the writing. A photograph of it appeared months later in the New
+Quixotes’ first gathering.
+
 ### Chapter Twelve: The New Quixotes
 
 Q’s first visitor was a girl wearing his face.

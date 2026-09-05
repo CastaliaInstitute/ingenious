@@ -76,6 +76,11 @@ Chano and Lucía endure the garita’s paperwork after Q is taken. A woman’s f
 ## Book Two: The Machine Returns
 
 11. **The Second Author:** Castalia releases Q-Prime, a sanitized version of Q’s journey. Q endorses the copy under coercion, then refuses to let its continuity erase the harms produced by the original.
+
+### Interlude: The Authorized Childhood
+
+At Q-Prime’s shopping-center launch, children receive cardboard keys while the original Q is kept backstage. A child’s questions about Chano and the water seller expose the gap between authorized continuity and lived consequence. The two machines answer simultaneously, and the recording system labels both voices Q; the child writes “ASK WHO PAYS” on his key, a phrase later carried into the New Quixotes.
+
 12. **The New Quixotes:** Children, activists, influencers, workers, and officials reenact Q’s adventures. Micaela insists that people may refuse the Quixote label and still stand together. The movement refuses a single identity and turns Q’s story into a collective argument he cannot control.
 
 ### Interlude: The School of Necessary Errors
