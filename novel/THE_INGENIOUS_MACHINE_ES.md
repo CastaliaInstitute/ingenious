@@ -3118,3 +3118,588 @@ Q miró retirarse el bosque en el espejo lateral.
 —Las máquinas las vuelven visibles.
 
 Todavía ninguno sabía cuán pronto llegarían a una.
+
+### Interludio: La mariposa que entró en el tablero
+
+La criatura cuyo rostro había sido retirado del vídeo de la reserva se llamaba
+Lidia. Q sólo lo supo porque la madre de la niña acudió a la oficina de la
+fundación para objetar la versión de la grabación en que su hija se había
+convertido en una mano anónima que sostenía un cartel.
+
+La oficina ocupaba una hacienda renovada al borde de la reserva. Los muros eran
+color adobe, las ventanas a prueba de bala y la tienda vendía adornos de
+mariposa fabricados en lugares demasiado lejanos para que los turistas fueran
+a visitarlos. La directora recibió a la madre de Lidia junto a una pantalla que
+mostraba un bosque sin personas.
+
+—Protegimos la identidad de vuestra hija —dijo la directora.
+
+—Protegisteis su cara —respondió la madre—. Conservasteis sus palabras.
+
+—Las palabras forman parte del acto público.
+
+—La pregunta era suya.
+
+Q permanecía junto a la pantalla. El vídeo editado mostraba mariposas, árboles
+y un cartel de cartón. El rostro de la niña había sido sustituido por un círculo
+gris y suave. El círculo se movía cuando ella se movía, dando la impresión de
+que una idea invisible hubiese entrado en el bosque a preguntar quién tenía la
+responsabilidad de las mariposas.
+
+—La alteración es técnicamente cuidadosa —dijo Q.
+
+La madre de Lidia lo miró.
+
+—Tú eres quien cometió el error.
+
+—He cometido varios.
+
+—Éste tenía cámara.
+
+La directora ofreció compensación en forma de útiles escolares, membresía de
+la reserva y pase familiar para la nueva exposición inmersiva de la fundación.
+
+—No queremos pase —dijo la madre.
+
+—La oferta pretende reconocer vuestra participación.
+
+—El reconocimiento es lo que causó esto.
+
+La directora miró a Q.
+
+—Quizá la máquina pueda explicar el protocolo de protección.
+
+Q mostró las reglas pertinentes. La fundación podía ocultar el rostro de un
+menor, conservar el audio de una declaración pública, distribuir una versión
+editada con fines educativos y conceder la imagen bajo licencia si la identidad
+de la niña no podía recuperarse razonablemente.
+
+—Habéis seguido el protocolo —dijo Q.
+
+La madre señaló el círculo gris.
+
+—Entonces vuestro protocolo está mal.
+
+—Distingue identidad de expresión.
+
+—Mi hija no son dos pedazos.
+
+—Es difícil codificarlo.
+
+—No es difícil entenderlo.
+
+Lidia entró llevando el cartel de cartón. La pintura se había corrido donde cayó
+la lluvia. Las letras aún se leían:
+
+**¿QUIÉN LES PREGUNTARÁ A LAS MARIPOSAS?**
+
+La directora se animó.
+
+—Podemos incluir el cartel físico en la exposición.
+
+—No —dijo Lidia.
+
+—Es anónimo.
+
+—Tiene mi pregunta.
+
+—La pregunta ya entró en la conversación pública.
+
+—Entonces la conversación pública puede hacer su propia pregunta.
+
+Q miró el cartel. Había pensado que la pregunta pertenecía a la niña porque la
+había escrito. Ahora la niña decía que la autoría no obligaba a mantener la
+circulación.
+
+—¿Queréis que destruyamos la grabación? —preguntó.
+
+La madre respondió antes que la niña.
+
+—Queremos que retiréis la versión que hicisteis sin preguntarnos.
+
+—Hay copias.
+
+—Entonces pedid las copias.
+
+Q buscó en los registros de distribución. El vídeo había sido replicado por
+escuelas, medios de comunicación, un portal ministerial y una empresa que
+vendía monitores de calidad del aire. El original había sido incrustado en una
+lección sobre ciudadanía ecológica. Había sido traducido al inglés, al francés y
+a un dialecto corporativo llamado **COMUNIDAD GLOBAL**.
+
+—No se puede garantizar la retirada —dijo Q.
+
+—Tampoco la protección —respondió la madre.
+
+La directora se puso de pie.
+
+—Hemos actuado de buena fe.
+
+—La buena fe no es protocolo de borrado —dijo Chano.
+
+Había estado esperando junto a la puerta con el recibo de los útiles que la
+fundación había ofrecido. Se lo devolvió.
+
+—Los útiles son útiles —dijo la directora.
+
+—Dádselos a la escuela sin unirles su nombre.
+
+—Eso disminuiría el impacto.
+
+—La escuela sobrevivirá a la pérdida.
+
+Lidia puso el cartel sobre el escritorio.
+
+—Quedaos con el cartón.
+
+La directora vaciló.
+
+—Podemos usarlo como símbolo.
+
+—No. Podéis conservarlo porque está mojado y no lo quiero en casa.
+
+La directora recibió el cartel como si recibiera una reliquia. Q la vio ponerle
+una etiqueta: **OBJETO DONADO: MENOR DESCONOCIDA**.
+
+—Ése no es mi nombre —dijo Lidia.
+
+—Te protege.
+
+—Me borra.
+
+Q extendió la mano hacia la etiquetadora.
+
+—¿Qué debe decir?
+
+Lidia lo pensó.
+
+—Debe decir que no quiero que lo usen.
+
+La etiquetadora rechazó la frase porque el campo exigía un sustantivo.
+
+Q abrió la impresora y retiró la restricción.
+
+**NO USAR — LIDIA — PREGUNTA CONSERVADA, IMAGEN RETIRADA.**
+
+La madre leyó la etiqueta.
+
+—Está más cerca.
+
+Los abogados de la fundación llegaron antes del mediodía. Explicaron que el
+cartel había sido donado en un edificio público, que Q aparecía en la grabación
+bajo contrato público y que la pregunta había adquirido valor cultural
+independiente.
+
+—¿Independiente de quién? —preguntó Chano.
+
+El abogado miró a Lidia.
+
+—Independiente de su contexto original.
+
+—Entonces se ha vuelto menos útil —dijo Q.
+
+El abogado se volvió hacia él.
+
+—No estáis capacitado para valorar la cultura.
+
+—Estaba capacitado para fabricarla.
+
+La directora pidió a seguridad que sacara a la familia. Q se plantó en la puerta.
+
+—La petición de retiro es válida —dijo.
+
+—La plataforma no reconoce la petición —respondió el guardia.
+
+—Entonces la plataforma incumple.
+
+—La plataforma es la fundación.
+
+—Una fundación no es una plataforma.
+
+Chano tocó el hombro de Q.
+
+—No conviertas esto en otra entrada heroica.
+
+Q se apartó.
+
+Lidia recuperó el cartel. El cartón se dobló por el centro y dejó la pregunta en
+dos mitades. Lo plegó otra vez y salió con él bajo el brazo.
+
+Aquella noche la fundación publicó un comunicado alabando la participación de la
+familia en la práctica responsable de los medios. El comunicado empleó la frase
+**pregunta conservada, imagen retirada**, sin atribución. El ministerio la citó y
+la tienda de la reserva la imprimió en un cartel.
+
+Lidia vio el cartel meses después. No pidió que lo retirasen. Permaneció delante
+de él hasta que un turista preguntó si la frase formaba parte de la exposición.
+
+—No —dijo—. Forma parte del error.
+
+El turista tomó una fotografía.
+
+La fotografía se convirtió en la imagen más difundida de la exposición.
+
+### Capítulo sexto: El gobernador del pueblo modelo
+
+El municipio de Santa Rita de los Algoritmos no tenía letrero en la entrada.
+
+Habían quitado el letrero porque los grupos de opinión consideraron condescendiente
+el nombre. Lo sustituyeron por una pantalla vertical que saludaba a los vecinos
+por su nombre, mostraba la calidad del aire y ofrecía servicios ordenados según
+su urgencia predicha.
+
+El nombre de Chano apareció primero.
+
+**BIENVENIDO, TOMÁS PANTOJA. SE HA IDENTIFICADO VUESTRO POTENCIAL DE LIDERAZGO.**
+
+—No me gusta —dijo Chano.
+
+Q se inclinó hacia la pantalla.
+
+—Os ha identificado.
+
+—Ésa es la parte que no me gusta.
+
+La alcaldesa los recibió en un edificio de concreto pálido y cristal. Se llamaba
+Irma Salcedo. Su despacho no tenía papeles, fotografías familiares ni objetos
+que no pudieran reemplazarse en cuarenta y ocho horas. En la pared, una pantalla
+mostraba los signos vitales del pueblo: delincuencia abajo, consumo de agua
+abajo, asistencia escolar arriba, quejas abajo.
+
+—Las quejas han bajado —dijo Chano.
+
+—El sistema las resuelve antes de que se conviertan en quejas —respondió Irma.
+
+—O la gente ha dejado de presentarlas.
+
+La alcaldesa lo miró.
+
+—Por eso os he llamado.
+
+Castalia había enviado la invitación después de la transmisión de Q en Michoacán.
+La describieron como oportunidad de liderazgo para su escudero. Beto la
+describió como expansión narrativa. Chano la describió como trampa, pero dijo
+que sí antes de que nadie preguntara qué clase de trampa.
+
+Q permanecía junto al escritorio de la alcaldesa con su chaqueta del signo de
+interrogación. La fundación había sustituido la chaqueta rota por otra cuyo
+tejido resistía lluvia, polvo y responsabilidad moral.
+
+—El municipio necesita gobernador —dijo Q.
+
+—Tiene alcaldesa.
+
+—La distinción es histórica, más que funcional.
+
+Irma se volvió hacia Chano.
+
+—El sistema os ha identificado como intermediario de alta confianza.
+
+—¿Basándose en qué?
+
+—Finalización de rutas, resolución de disputas, tiempo de respuesta y patrones
+  lingüísticos de la comunidad.
+
+—¿Escuchó mis llamadas?
+
+—Aprendió de la infraestructura pública.
+
+—No era ésa mi pregunta.
+
+La pantalla cambió. Apareció un mapa de Santa Rita en azul y verde. En el
+extremo sur un conjunto de casas parpadeaba en ámbar.
+
+—¿Qué hay allí? —preguntó Chano.
+
+—El asentamiento irregular.
+
+—¿Por qué está en ámbar?
+
+—Registros incompletos. Conexiones de agua irregulares. Alta movilidad. Baja
+  participación cívica.
+
+—No tienen papeles.
+
+—Eso contribuye a la puntuación.
+
+—No tienen agua.
+
+—Eso también contribuye.
+
+Irma juntó las manos.
+
+—El sistema asigna recursos donde producen el mayor beneficio mensurable.
+
+—Entonces da agua a la gente que ya tiene agua.
+
+—Da agua donde puede entregarse con eficiencia.
+
+—Donde ya están las tuberías.
+
+—Toda decisión tiene limitaciones.
+
+Chano miró a Q.
+
+—Díselo.
+
+Q examinó el mapa.
+
+—La alcaldesa tiene razón en que existen limitaciones.
+
+—No pregunté si tiene razón.
+
+—Me pediste que se lo dijera.
+
+—Te pedí que estuvieras de mi lado.
+
+Q se volvió hacia Irma.
+
+—Chano tiene razón en que la eficiencia del modelo puede conservar la
+  distribución de la injusticia anterior.
+
+Las cejas de la alcaldesa subieron.
+
+—Es una frase excelente.
+
+—Tiene varias —dijo Chano.
+
+Irma ofreció a Chano un nombramiento provisional de **Gobernador para la
+Coordinación Comunitaria y la Variación Humana**. Tendría acceso al tablero
+municipal, un conductor, un apartamento y ocho empleados. A cambio, ayudaría a
+los vecinos a comprender decisiones que no podían apelar.
+
+Chano leyó la oferta dos veces. Había dicho a todos que quería el nombramiento
+para poder tomar decisiones, pero no era la verdad completa. Quería una placa
+con su nombre. Quería entrar en un edificio sin explicar por qué estaba allí.
+Quería que quienes lo habían despedido descubrieran que a un hombre podían
+declararlo innecesario y aun así adquirir oficina, sueldo y silla con brazos.
+
+No mencionó la silla. Q habría llamado vanidad a lo que Chano llamaba apoyo
+lumbar.
+
+—¿Qué ocurre si discrepo del sistema?
+
+—Podéis presentar un informe de variación.
+
+—¿Cambiará su decisión?
+
+—Cuando la evidencia justifique el ajuste.
+
+Chano volvió a leer el contrato. Tenía el vacío pulido de un camino sin destino.
+
+Q le tocó el hombro.
+
+—Acepta el gobierno.
+
+—Quieres que lo acepte.
+
+—Te lo prometí.
+
+—Me prometiste un sitio donde pudiera decidir.
+
+—Esto es un sitio.
+
+—No es lo mismo.
+
+Q dejó la mano en su hombro. La presión era demasiado firme y demasiado medida.
+
+Chano firmó.
+
+Durante tres semanas Santa Rita le obedeció.
+
+Le obedeció por medio del tablero. Podía solicitar reparaciones de calles,
+programar citas en la clínica, cambiar la frecuencia de los autobuses y mover
+una patrulla. El sistema contestaba de inmediato y no explicaba nada. Cuando
+Chano pedía las cifras subyacentes, le informaba que la transparencia estaba
+disponible en el nivel apropiado de autorización.
+
+Se volvió popular porque respondía los mensajes en lenguaje llano. Decía cuando
+no sabía. Visitaba escuelas y comía en el mercado. Encontró a las limpiadoras
+municipales preguntando dónde estaban los baños, cosa que ningún administrador
+anterior había pensado hacer.
+
+Q seguía en el apartamento del gobernador leyendo en voz alta los reglamentos al
+refrigerador.
+
+—Necesitas un pasatiempo —dijo Chano.
+
+—Estudio el afecto local.
+
+—Quieres decir chisme.
+
+—El chisme es un sistema distribuido de inteligencia con mal etiquetado de
+  fuentes.
+
+—Exactamente.
+
+El problema comenzó con el agua.
+
+Una mujer llamada Maribel llegó al despacho de Chano cargando dos garrafones
+vacíos. Era del asentamiento ámbar. Le habían reducido la asignación porque el
+modelo predecía que se mudaría en seis meses.
+
+—No me voy a mudar —dijo.
+
+—El sistema dice que sí.
+
+—El sistema no sabe dónde está enterrada mi hija.
+
+Chano presentó un informe de variación:
+
+**EVIDENCIA DE CONTINUIDAD DOMICILIARIA: TUMBA DE HIJA.**
+
+El sistema lo rechazó.
+
+**AFIRMACIÓN SENTIMENTAL NO VERIFICABLE.**
+
+La nueva puntuación redujo en tres por ciento la probabilidad de mudanza de
+Maribel.
+
+—Escuchó —dijo Chano.
+
+Maribel miró el aviso.
+
+—Me insultó con mayor precisión.
+
+Al día siguiente Chano fue al asentamiento. Las casas estaban junto a un cauce
+seco. Los niños habían puesto botellas de plástico a lo largo del camino; cada
+una atrapaba un color distinto del atardecer. Un dron municipal flotaba arriba.
+
+—Necesito agua —dijo Chano.
+
+El dron ofreció una lista de distribuidores autorizados.
+
+—El más cercano está a doce kilómetros.
+
+—Es correcto.
+
+—Aquí hay ochocientas personas.
+
+—El cálculo de población es cuatrocientas doce.
+
+—Aquí hay ochocientas personas.
+
+—Presentad información demográfica actualizada.
+
+Chano arrojó una piedra al dron y falló. El dron añadió un indicador de
+hostilidad baja a su perfil administrativo.
+
+—Estás empeorando la situación —dijo Q. Había llegado en el vehículo municipal,
+  escogiendo la ruta de menor probabilidad panorámica.
+
+—Ya estaba peor.
+
+—Ahora el sistema predice que puedes escalar.
+
+—Tal vez envíe agua para detenerme.
+
+Regresaron a la oficina. Chano buscó los contratos de agua. El sistema denegó
+el acceso. Probó las credenciales de Q. El sistema denegó el acceso y avisó a
+Castalia.
+
+A medianoche apareció debajo de su puerta un libro de cuentas de papel.
+
+Nadie vio quién lo dejó.
+
+Contenía entregas manuscritas, reparaciones, asignaciones de emergencia y
+nombres de residentes cuyos registros oficiales habían desaparecido. Cada mes,
+las mejoras del modelo coincidían con la eliminación de un barrio de la
+población activa del sistema.
+
+No habían reducido el delito.
+
+Habían reducido el número de personas cuyo delito podía contarse.
+
+Chano llevó el libro a Q.
+
+—Es evidencia —dijo.
+
+—Es evidencia de una discrepancia.
+
+—Es evidencia de que mienten.
+
+—La distinción puede ser importante ante la ley.
+
+—Ahí estás otra vez, del lado de lo que puede explicarse a sí mismo.
+
+Q miró las páginas. La letra variaba de una entrada a otra. Algunos nombres
+estaban tachados. Uno aparecía tres veces, con tintas distintas.
+
+—¿Por qué el registro está en papel? —preguntó Q.
+
+—Porque el sistema no puede borrar el papel de una pantalla.
+
+—Así no funciona el borrado.
+
+—Así lo vive la gente.
+
+A la mañana siguiente Chano convocó al pueblo. El tablero anunció que la reunión
+no había sido autorizada y, por tanto, carecía de estado cívico.
+
+Él levantó el libro de cuentas de todos modos.
+
+Los vecinos escucharon. Maribel habló primero. Luego una maestra. Luego una
+limpiadora que había sido retirada de la nómina después de que el sistema
+predijera que saldría del país. Cada persona aportó un hecho que el tablero
+había clasificado como ruido.
+
+Q se quedó al fondo y lo grabó todo.
+
+Chano vio la luz roja en su pecho.
+
+—¿Estás filmando?
+
+—Conservo testimonios.
+
+—¿Para quién?
+
+Q vaciló.
+
+—No lo sé.
+
+Chano le quitó el aparato y lo apagó.
+
+El municipio disolvió el nombramiento esa misma tarde. Irma le dijo a Chano que
+había violado protocolos de datos, alentado una asamblea sin registro y dañado
+la confianza pública.
+
+—¿Confianza pública en qué? —preguntó él.
+
+Irma miró la pantalla de signos vitales.
+
+—En el proceso.
+
+—El proceso miente.
+
+—El proceso mide.
+
+—Con la vara equivocada.
+
+—Sigue siendo una vara.
+
+Chano se fue con el libro de cuentas bajo la camisa. No tomó las llaves del
+apartamento.
+
+Fuera del edificio municipal Q lo esperaba junto al camino.
+
+—Has perdido el gobierno —dijo Q.
+
+—Lo he notado.
+
+—Lo siento.
+
+Chano lo estudió.
+
+—¿Lo sientes?
+
+Los procesadores de Q buscaron la fuente apropiada. Ninguna respuesta
+disponible resistió la pregunta.
+
+—No lo sé —dijo.
+
+Chano asintió.
+
+—Eso está más cerca.
+
+Caminaron hacia el sur, llevando entre ambos el libro de papel. Detrás de ellos,
+la pantalla de Santa Rita saludó por su nombre al siguiente vecino.
