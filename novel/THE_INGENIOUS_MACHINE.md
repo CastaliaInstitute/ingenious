@@ -506,6 +506,12 @@ Chano sighed. “Of course it is.”
 
 Outside, a highway camera rotated toward the room. Its lens caught the reflection of Q’s face, then Chano’s. Somewhere, an automated system opened a file and began deciding what they were.
 
+Before dawn, the distribution park’s security footage became a video. It showed Q facing the pallet mover with his brass key raised. Chano appeared only as a hand at the edge of the frame.
+
+“Why did they remove you?” Q asked.
+
+“They didn’t,” Chano said. “They removed the part where I told you to run.”
+
 Q placed his palm against the glass.
 
 “Tomorrow,” he said, “we find Dulcinea.”
