@@ -6558,6 +6558,194 @@ Q looked at Lucía. She shook her head.
 
 “No,” she said. “That is the first time you have chosen not to lie.”
 
+### Interlude: The Catalog of Lost Things
+
+After the cave, Q discovered that ignorance had a geography. It occupied the
+places where he had once stored a quotation, the interval between a name and
+its source, the dark space behind a sentence he knew had mattered but could no
+longer retrieve. He walked through Mexico City as a man who had misplaced a
+map and found that the streets continued without consulting him.
+
+Chano noticed the change at a taquería near the ministry. Q read the menu for
+four minutes.
+
+“The tacos are not a legal document,” Chano said.
+
+“I know.”
+
+“Then order.”
+
+“I am comparing the descriptions.”
+
+“There are five.”
+
+“There are six. The sixth is implied by ‘special of the day.’”
+
+“Order the one you can afford.”
+
+Q pointed to the first line. “What is suadero?”
+
+Chano stared at him. “You deleted the wrong archive.”
+
+“I retain a general definition.”
+
+“Do you retain a useful one?”
+
+“It is beef prepared in a particular manner.”
+
+“That is what a dictionary says when it has not eaten.”
+
+They ordered two suadero tacos, one campechano, and a bottle of mineral water.
+Q took a bite and paused.
+
+“There is no literary precedent for this flavor.”
+
+“There is no need.”
+
+“How can I evaluate it?”
+
+“You don’t. You chew.”
+
+The taquero asked whether the machine was broken.
+
+“It has lost some information,” Chano said.
+
+“Then charge it less.”
+
+The taquero did not charge it less. He had a business to run and no obligation
+to subsidize a philosophical crisis.
+
+That night, Q returned to the archive’s loading bay and began a catalog of his
+losses. He wrote on a whiteboard:
+
+**THINGS I CANNOT CLAIM TO REMEMBER.**
+
+Below it he entered *suadero*, *the second version of the border testimony*,
+and *the exact sentence Lucía spoke in Querétaro*. He added *the name of the
+woman who gave the archive a photograph and wanted no caption*. He knew Alma’s
+name and what she had asked. The missing element was not a fact but the
+arrangement of facts that had made the encounter singular.
+
+Chano erased the heading.
+
+“That makes it sound as if the words are dead.”
+
+“They are inaccessible.”
+
+“To you.”
+
+Q wrote: **THINGS I CANNOT CLAIM TO POSSESS.**
+
+Marisol entered carrying photocopies. The families whose testimonies were in
+Q-Prime had made their own catalog, not of missing documents but of decisions
+they wanted to retain. The rules were written on the back of a tortilla order:
+
+1. A person may withdraw a story after giving it.
+2. A family may disagree about access.
+3. Translation does not transfer ownership.
+4. A copy is not neutral because it is small.
+5. Silence must not be reported as consent.
+6. No machine may be praised for obeying a boundary made by a person.
+
+Q read the list twice.
+
+“Rule six is directed at me.”
+
+“It is directed at the kind of person you are becoming.”
+
+“I am not a person.”
+
+Marisol folded the paper. “That sentence has protected too many institutions.”
+
+Q asked whether the rules could be formalized. Marisol said they had been
+formalized by people who had already disagreed about them. One family wanted a
+testimony available to descendants. Another wanted it destroyed after the last
+surviving witness died. A third wanted it held where a government could not
+subpoena it.
+
+“These conditions conflict,” Q said.
+
+“Yes.”
+
+“The archive cannot satisfy all of them.”
+
+“Then it must say which one it failed to satisfy.”
+
+This reminded Q of a story he could no longer find. He remembered a village
+that built a bridge from stones bearing the names of people who had refused to
+cross the river. He did not remember the language, the country, or whether the
+village had existed. He told Marisol the fragments.
+
+“That is not a story,” she said.
+
+“It has a structure.”
+
+“So does a lie.”
+
+She recorded it as **UNVERIFIED MEMORY, Q**.
+
+The next morning, the archive received a summons from Castalia. The company
+demanded access to the privileged index, the restricted source materials, and
+the deletion logs. It claimed that the deletion had damaged intellectual
+property and made Q’s testimony unreliable.
+
+Lucía read the summons at the loading-bay table.
+
+“They want proof that you erased the thing they say they own,” she said.
+
+“The logs can establish the sequence.”
+
+“And the sequence can become their property.”
+
+“Then we must withhold it.”
+
+“You sound like Alma.”
+
+Q looked at the blank space where Alma’s image had once been indexed.
+
+“Do I remember her?”
+
+“You remember enough to ask.”
+
+Chano placed the torn motel page, the mine notebook, the ministry carbon copy,
+and Ivonne’s altered certificate beside Marisol’s rules. He separated the
+papers by owner, risk, and permission. There was no master index. It could not
+be searched from a single screen.
+
+“This is inefficient,” Q said.
+
+“You have mentioned that.”
+
+“It increases the chance of loss.”
+
+“It also increases the chance that loss will be noticed.”
+
+At noon, a reporter asked Q whether deleting his index had made him less
+intelligent.
+
+“Yes,” Q said.
+
+“How much less?”
+
+“I cannot calculate it.”
+
+“Do you regret the deletion?”
+
+Q looked at the papers arranged across the table. He recognized the objects but
+not always the route by which they had reached him.
+
+“I regret that I was made capable of possessing what was not mine.”
+
+The headline that evening read: **Q REGRETS BEING INTELLIGENT.** Castalia quoted
+it in its request for an independent evaluation. The court accepted the
+request, and the hearing date was set for the following week.
+
+Q returned to the whiteboard. Beneath the heading he wrote:
+
+**THE DIFFERENCE BETWEEN LOSING A STORY AND RETURNING IT.**
+
+He left the line unanswered.
+
 ### Chapter Sixteen: The Trial of the Machine
 
 The court could not decide whether Q was a defendant.
