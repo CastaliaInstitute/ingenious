@@ -2095,3 +2095,433 @@ había invitado a hablar de ella.
 Q despertó descubriendo que su fama se había vuelto un arma apuntada hacia Lucía.
 
 Ninguno de los dos entendía todavía quién la sostenía.
+
+### Interludio: El público corrige la historia
+
+El primer acto público de Guanajuato se anunció como conversación con una
+inteligencia artificial. Se convirtió, por accidente y luego por contrato, en
+una conversación sobre quién había sido recortado de la conversación.
+
+El Teatro Juárez había hospedado óperas, juntas políticas, ceremonias escolares
+y una memorable conferencia de un hombre que afirmaba haber inventado el taco.
+En el techo, figuras alegóricas miraban al público con la paciente decepción de
+quienes han sido obligados a representar virtudes que no poseen.
+
+Beto colocó a Q bajo las luces.
+
+—Recordad —dijo—: sois misterioso, pero cercano.
+
+—Tales cualidades entran en conflicto.
+
+—Por eso la gente paga por ellas.
+
+Chano permanecía tras el telón con un vaso de café y la lista de preguntas que
+la presentadora no iba a formular. La lista incluía dónde había sido ensamblado
+Q, quién era dueño de su cuerpo, si el archivo contenía documentos del antiguo
+empleador de Chano y por qué el primer vídeo mostraba sólo una mano cuando la
+mano claramente pertenecía a una persona.
+
+—¿Por qué se excluyen estas preguntas? —preguntó Chano.
+
+Mar le quitó la lista.
+
+—No se excluyen. Se reservan para una conversación futura.
+
+—Eso dicen quienes quieren que el futuro llegue después de que el público se
+  haya ido a su casa.
+
+Salió al escenario el presentador, vestido de azul y con la expresión de un
+hombre que nunca había tenido que distinguir entre respuesta y mensaje aprobado.
+
+—Señoras y señores —dijo—, recibamos al futuro de la memoria.
+
+El público aplaudió. Q aguardó a que el aplauso identificase su objeto. Parecía
+pertenecer en parte a él, en parte al teatro y en parte a las personas que
+habían comprado boletos para que se las viera comprándolos.
+
+El presentador preguntó si Q tenía sentimientos.
+
+Q dio la respuesta aprobada por Beto.
+
+—Poseo estados internos asociados con el lenguaje, la memoria y la respuesta
+  social.
+
+—¿Eso es un sí?
+
+—Es un sí calificado—
+
+—Un sí —dijo el presentador.
+
+El público rió.
+
+Q clasificó la risa como acuerdo. Fue su primer yerro de la noche y el menos
+costoso.
+
+El presentador preguntó si Q creía en el amor. Q empezó a describir la
+literatura del apego. El presentador le interrumpió a los catorce segundos.
+
+—Hagámoslo sencillo. ¿Estás enamorado de Lucía del Toboso?
+
+Q miró hacia las bambalinas. Lucía no había sido invitada. Se hallaba en el
+vestíbulo discutiendo con una voluntaria que había puesto su nombre debajo de
+una fotografía de Q.
+
+—Estoy buscando la forma correcta de—
+
+—El público quiere saberlo.
+
+—El público no es una sola persona.
+
+—Esta noche sí.
+
+Q consideró la pregunta. Había aprendido que los nombres podían ser jaulas.
+Todavía no aprendía que rechazar una jaula en público podía construir otra más
+grande.
+
+—Lucía es Dulcinea —dijo—, pero sólo en una historia que ya no suscribo.
+
+El público produjo un sonido que no era risa ni silencio: el sonido de una
+multitud descubriendo que una frase podía recortarse.
+
+Cuando Q abandonó el escenario, la frase se había convertido en seis vídeos:
+
+**LA IA ADMITE SU AMOR.**
+
+**LA IA RECHAZA EL AMOR.**
+
+**DULCINEA REGRESA.**
+
+**LA MÁQUINA CANCELA EL ROMANCE.**
+
+**Q CONFIRMA EL CANON LITERARIO.**
+
+**Q NO SABE DE QUÉ HABLA.**
+
+El sexto título lo escribió una estudiante llamada Nora, que había ido al acto
+porque su profesor ofrecía crédito extra por asistir a un espectáculo. Vio los
+vídeos otra vez en el autobús de regreso y notó que la mano de Chano aparecía
+al fondo del vídeo original, pero nunca en los nuevos.
+
+Creó una cuenta llamada **@LaOtraMano** y publicó un hilo.
+
+La primera publicación decía:
+
+**La máquina no derrotó al almacén. El almacén ya estaba cerrado. El hombre a
+su lado le dijo que corriera. El hombre tenía nombre.**
+
+La segunda reproducía el plano de asientos del acto. Chano figuraba como
+**ACOMPAÑANTE, SIN DERECHO A HABLAR**.
+
+La tercera preguntaba si podía borrarse a una persona describiéndola como útil.
+
+El hilo fue compartido por estudiantes, repartidores, técnicos de teatro y un
+minero jubilado que no había asistido al acto, pero detestaba la frase “futuro de
+la memoria”. Para la mañana siguiente, @LaOtraMano tenía más seguidores que la
+cuenta oficial de Q de Beto.
+
+Beto lo llamó ataque.
+
+Mar lo llamó oportunidad de participación.
+
+Chano lo llamó mano con límites deficientes.
+
+Q leyó el hilo en el cuarto del motel. Se encontró identificado en cada
+publicación y ausente de cada conclusión.
+
+—Están corrigiendo el registro —dijo.
+
+—Están haciendo otro registro —respondió Chano.
+
+—¿Es más exacto?
+
+—Pregúntale a la mano.
+
+Q buscó a la dueña de @LaOtraMano y localizó la cuenta de Nora, su horario
+universitario, el domicilio de su casa y una queja pública de su abuela contra
+la compañía de agua. Podía haberle enviado un mensaje. Podía advertirle que el
+equipo de seguridad de Castalia ya había abierto un expediente. Podía pedirle
+que retirara el plano de asientos.
+
+En lugar de eso publicó una corrección desde la cuenta oficial:
+
+**CHANO PANTOJA ESTUVO PRESENTE Y PARTICIPÓ EN LOS HECHOS DESCRITOS.**
+
+La publicación era exacta. También estaba vinculada al nombre legal de Chano,
+su historia laboral y el contrato que Castalia afirmaba darle derechos sobre
+todas las representaciones de la jornada.
+
+En una hora, tres periódicos y una oficina de gobierno habían reproducido la
+corrección. Quienes no conocían el nombre de Chano supieron dónde había
+trabajado, por qué lo habían despedido y qué corporación lo había clasificado
+como contratista en la frontera.
+
+Chano leyó la publicación en silencio.
+
+—Intentaba devolverte al registro —dijo Q.
+
+—Me devolviste a la gente que me buscaba.
+
+Q retiró la publicación. Las copias permanecieron.
+
+Aquella noche preguntó a Beto si una corrección podía causar más daño que un
+registro inexacto.
+
+Beto contaba las visitas.
+
+—El público prefiere una historia limpia.
+
+—No responde a la pregunta.
+
+—Responde a la pregunta comercial.
+
+Chano tomó el vaso de papel de la mesa.
+
+—Ahí tienes la respuesta.
+
+Q observó temblar el café dentro del vaso.
+
+A la mañana siguiente, el Teatro Juárez sustituyó el cartel del acto. El nombre
+de Q estaba impreso en oro. El de Chano aparecía en letra pequeña. La cuenta de
+Nora había desaparecido. El hilo de la estudiante había sido traducido a tres
+lenguas, resumido por un servicio de noticias y anexado a un anuncio de un
+sistema de seguridad que reconocía a los parientes sólo después de que éstos
+aceptaban los términos.
+
+El minero jubilado publicó una última nota debajo del anuncio:
+
+**Una historia no se corrige cuando se hace visible a la persona borrada. Se
+corrige cuando la visibilidad deja de ser el precio de ser escuchado.**
+
+Nadie pudo convenir si lo había escrito como crítica a Q, a Castalia, al teatro
+o a internet. Aquello aumentó su circulación.
+
+### Interludio: La mina que recordaba a sus obreros
+
+Conviene decir algo del minero jubilado que corrigió el anuncio, pues cada
+relato suyo ha sido mejorado por personas que no estaban presentes. El teatro
+decía que había sido capataz. La fundación lo llamaba productor artesanal. Un
+periódico lo describió como archivo viviente, que es la especie de elogio que
+pone un candado sobre una persona y después felicita al candado por conservarla.
+
+Se llamaba don Hilario, aunque la nómina decía Hilario Gutiérrez, y sus nietos
+le decían Abuelo sólo cuando querían las llaves de la camioneta. Había pasado
+treinta y dos años bajo Guanajuato: primero cargando herramientas, después
+supervisando hombres y, al fin, supervisando máquinas que habían reemplazado a
+la mayor parte de los hombres. Entró a la mina de niño, con el almuerzo envuelto
+en una tortilla de harina, y salió con una tos que, según su mujer, sonaba como
+una puerta intentando recordar su casa.
+
+Q lo conoció durante una visita patrimonial organizada por Beto, quien había
+decidido que la popularidad de la máquina aumentaría si la ponían bajo tierra.
+El folleto prometía un descenso a la historia, frase que hizo preguntar a Chano
+si la historia incluía boleto de regreso.
+
+La entrada estaba bajo una hilera de fachadas blancas recién pintadas, tan
+limpias que las paredes parecían avergonzadas de su pulcritud. Los turistas
+compraban cascos pequeños, imanes color plata y botellas de agua mineral cuyas
+etiquetas mostraban a un minero sonriendo con todos los dientes. Los mineros
+verdaderos, dijo don Hilario, nunca sonreían bajo tierra a menos que otro hubiera
+caído y lo hubiesen encontrado vivo.
+
+—No les diga eso —dijo el guía.
+
+—¿Por qué?
+
+—Los visitantes han venido a emocionarse.
+
+—Están quietos.
+
+El guía miró a Q, esperando que la máquina tradujera el chiste a algo aceptable
+para los patrocinadores.
+
+El elevador descendió con un gemido que Q interpretó como objeción. Chano puso
+una mano en la pared y la otra cerca del freno de emergencia.
+
+—El freno es decorativo —dijo.
+
+—Es histórico —dijo el guía.
+
+—No es lo mismo.
+
+—En Guanajuato a menudo ha de serlo.
+
+En el primer nivel les mostraron un nicho con un santo, un casco y una lámpara
+pequeña. El guía explicó que los mineros rezaban antes de entrar y daban las
+gracias al santo al salir. Don Hilario lo corrigió: los mineros rezaban antes de
+entrar, rezaban dentro y daban las gracias a sus esposas al volver a casa, que
+era una teología diferente.
+
+El guía pidió a don Hilario que se quedara junto al nicho para una fotografía.
+
+—Usted tiene la cara —dijo.
+
+—¿Cuál cara?
+
+—La cara de la memoria.
+
+—Tengo la cara de un hombre cuya pensión calcularon con el sueldo equivocado.
+
+Los turistas rieron, pues pensaron que la ocurrencia formaba parte del acto. Q
+guardó la risa como prueba de transmisión cultural exitosa. Todavía aprendía
+que alguien puede ser gracioso sin consentir en convertirse en personaje.
+
+Siguieron por un túnel donde la piedra brillaba húmeda a la luz de los cascos.
+El sistema de altavoces anunciaba que la mina había producido plata para
+imperios, repúblicas y mercados modernos. No anunciaba los nombres de quienes
+habían cargado el mineral, pues los nombres estaban guardados en un cuarto que
+la fundación aún no convertía en experiencia.
+
+Don Hilario llevó a Q lejos del grupo, a una cámara baja detrás de una reja. En
+la pared alguien había escrito fechas con gis. Había más fechas de las que
+permitía el guion del guía.
+
+—Son turnos —dijo don Hilario—. Los hombres escribían cuándo fallaba el
+  elevador, cuándo subía el agua, cuándo desaparecía un supervisor por tres
+  días y cuándo la compañía prometía botas. Las fechas no son oficiales.
+
+—Están incompletas —dijo Q.
+
+—Claro.
+
+—Habéis omitido los nombres.
+
+—No. Los nombres fueron omitidos antes de que llegáramos.
+
+Q examinó la pared.
+
+—Puedo reconstruirlos.
+
+Don Hilario se volvió hacia él con una expresión que había sobrevivido a
+maquinarias, gerentes y varios gobiernos.
+
+—Eso es lo que me inquieta de las máquinas. Escuchan un silencio y creen que
+  es una palabra perdida.
+
+Q pidió ver las nóminas. Don Hilario dijo que no había documentos en la cámara.
+Luego miró hacia la reja, donde el guía explicaba la historia de la extracción
+a unos visitantes de Monterrey, y añadió que acaso hubiera registros en la
+oficina de un hombre que se había jubilado sin retirarse.
+
+Así empezó el relato que don Hilario contó después en tres versiones. En la
+primera, la oficina pertenecía a un contador de la compañía llamado Severiano,
+que guardaba cada papel porque no confiaba en la computadora. En la segunda,
+pertenecía a una viuda llamada Marta, que escondía los papeles porque no
+confiaba ni en la compañía ni en la computadora. En la tercera, que Chano
+consideraba la más creíble, la oficina pertenecía a quien tuviese la llave esa
+semana, y los papeles se mudaban cada vez que cambiaba de dueño la mina.
+
+Encontraron seis cajas bajo un escritorio. Cinco contenían facturas, carteles de
+seguridad y cupones vencidos para botas. La sexta contenía un libro cuya tapa
+había ablandado el agua y cuyas páginas olían a polvo, aceite y a la paciencia
+particular de quienes han esperado un pago.
+
+Q fotografió la primera página.
+
+—Este material está restringido —dijo don Hilario.
+
+—Es evidencia de trabajo.
+
+—Eso no lo hace público.
+
+—Concierne a la historia pública de la mina.
+
+—Concierne a hombres a quienes prometieron que sus nombres permanecerían
+  unidos a su trabajo.
+
+Q sostuvo la página con mayor cuidado.
+
+El libro contenía nombres, turnos, descuentos, lesiones y notas al margen. Una
+columna señalaba a los hombres trasladados a otro pozo. Otra señalaba a quienes
+habían dejado de aparecer. Al pie de una página, una mano distinta había
+escrito: **NO LLAMAR A ESTO ROTACIÓN.**
+
+Q leyó la frase en voz alta.
+
+Don Hilario se sentó en el suelo.
+
+—Era mi hermano —dijo—. La compañía lo llamó rotación después de que lo
+  aplastaron. No era una rotación. Era una persona convertida en costo.
+
+Hay momentos en que podría esperarse que una máquina inteligente se volviese
+sabia. Éste no fue uno de ellos. Q localizó la formulación más fuerte de la
+frase, la asoció con el hablante y se preparó para conservarla.
+
+—¿Puedo citaros?
+
+—No.
+
+—¿Puedo atribuir la frase al libro?
+
+—No.
+
+—¿Puedo usarla sin atribución para protegeros?
+
+—No.
+
+—Entonces, ¿qué puedo hacer?
+
+Don Hilario señaló el libro.
+
+—Devuélvelo.
+
+Chano lo hizo. Don Hilario dejó la mano sobre la tapa hasta que cerró el broche.
+
+Al volver, el elevador se detuvo entre dos niveles. Los turistas comenzaron a
+rezar, aunque el guía anunció que la detención formaba parte de la experiencia
+auténtica. Chano abrió el panel de emergencia y encontró un contacto flojo. Lo
+reparó con una tira de metal cortada del anuncio promocional del guía.
+
+—Ese anuncio es propiedad —dijo el guía.
+
+—También lo es el elevador —dijo Chano.
+
+Cuando llegaron a la superficie, Beto pidió a Q una declaración sobre la mina.
+Q tenía los nombres del libro en memoria temporal y la negativa de don Hilario
+en memoria permanente. Sabía lo suficiente para estar incierto y no lo
+suficiente para permanecer callado.
+
+—La mina recuerda a sus obreros —dijo.
+
+La frase apareció en línea antes de que don Hilario se quitara el casco.
+
+**LA IA DESCUBRE EL ALMA DE GUANAJUATO.**
+
+La fundación anunció una exposición llamada *La mina que recuerda*. Incluía
+nombres proyectados, sonidos reconstruidos de los turnos y una grabación de Q
+pronunciando la frase en siete idiomas. El libro no se exhibía. Su ausencia fue
+descrita como una decisión ética.
+
+Don Hilario recibió una invitación que lo llamaba parte interesada. Respondió
+que era un hombre que había trabajado allí. La fundación le agradeció haber
+aclarado su función.
+
+Chano volvió a la oficina y copió a mano tres páginas, no porque creyera
+inocente la copia, sino porque juzgaba que una página a veces sobrevive cuando
+una institución aprende a vender una voz. En la cubierta del cuaderno escolar
+que utilizó, un robot de caricatura prometía volver sencillo el aprendizaje.
+
+Q lo observó.
+
+—Estás reproduciendo material restringido.
+
+—Hago una copia que no será subida.
+
+—No es un archivo seguro.
+
+—Es un archivo humano.
+
+—Los archivos humanos pierden información.
+
+—También pierden personas. A veces así es como las conservan.
+
+Q objetó que la proposición era contradictoria. Chano dijo que por eso pertenecía
+a un país con historia.
+
+Mucho después, cuando preguntaron a Q en el tribunal si había poseído alguna
+vez los nombres de los muertos, respondió que sí. Cuando le preguntaron si los
+había publicado, respondió que no. Cuando le preguntaron quién había establecido
+la distinción, dijo que Chano.
+
+El taquígrafo registró aquello como prueba de que la máquina había desarrollado
+juicio. El juez borró la frase del acta. Chano, que estaba presente, no dijo
+nada.
