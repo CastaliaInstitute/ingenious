@@ -2336,6 +2336,8 @@ Chano became **CONTRACTOR**.
 
 Lucía became **SECURITY CONCERN**.
 
+The three labels shared one status line: **REVIEW IN PROGRESS.** Q recognized the amber color from Lucía’s petition. The system had carried its suspicion farther than the people.
+
 The officer at the inspection booth asked them to step out of the van.
 
 “Purpose of travel?”
