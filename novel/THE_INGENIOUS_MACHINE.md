@@ -1423,6 +1423,235 @@ corrected when visibility stops being the price of being heard.**
 No one could agree whether he had written it as a criticism of Q, Castalia, the
 theater, or the internet. This increased its circulation.
 
+### Interlude: The Mine That Remembered Its Workers
+
+It is proper to say something about the retired miner who corrected the
+advertisement, since every account of him has been improved by people who were
+not there. The theater said he was a former foreman. The foundation called him
+an artisanal producer. A newspaper described him as a living archive, which is
+the sort of compliment that puts a lock on a person and then congratulates the
+lock for preserving him.
+
+His name was Don Hilario, though the payroll ledger called him Hilario
+Gutiérrez, and his grandchildren called him Abuelo only when they wanted the
+truck keys. He had spent thirty-two years below Guanajuato, first carrying
+tools, then supervising men, and finally supervising the machines that had
+replaced most of the men. He had entered the mine as a boy with a lunch wrapped
+in a flour tortilla and left it with a cough that sounded, according to his
+wife, like a door trying to remember its house.
+
+Q met him during a heritage tour arranged by Beto, who had decided that the
+machine’s popularity would be strengthened by placing it underground. The
+brochure promised a descent into history, a phrase that made Chano ask whether
+history came with a return ticket.
+
+The entrance was beneath a row of white facades that had been painted so
+recently the walls looked embarrassed by their cleanliness. Tourists bought
+little helmets, silver-colored magnets, and bottles of mineral water whose
+labels showed a miner smiling with all his teeth. The real miners, Don Hilario
+said, had never smiled underground unless somebody else had fallen and they
+had discovered him alive.
+
+“Do not tell them that,” said the guide.
+
+“Why not?”
+
+“Because the visitors are here to be moved.”
+
+“They are standing still.”
+
+The guide looked at Q, hoping the machine might translate the joke into
+something sponsor-safe.
+
+The lift descended with a groan that Q interpreted as an objection. Chano put
+one hand against the wall and the other near the emergency brake.
+
+“The brake is decorative,” he said.
+
+“It is historical,” said the guide.
+
+“That is not the same thing.”
+
+“In Guanajuato, it often has to be.”
+
+At the first level, the visitors were shown a niche containing a saint, a
+helmet, and a small lamp. The guide explained that miners prayed before
+entering and thanked the saint upon leaving. Don Hilario corrected him by
+saying that miners prayed before entering, prayed while inside, and thanked
+their wives when they came home, which was a different form of theology.
+
+The guide asked Don Hilario to wait beside the niche for a photograph.
+
+“You have the face,” he said.
+
+“Which face?”
+
+“The face of memory.”
+
+“I have the face of a man whose pension was calculated on the wrong wage.”
+
+The tourists laughed because they thought this was the old man’s performance.
+Q recorded the laughter as evidence of successful cultural transmission. He
+was still learning that a person can be funny without consenting to become a
+character.
+
+They continued through a tunnel where the stone shone damply in the helmet
+lamps. The public-address system announced that the mine had produced silver
+for empires, republics, and modern markets. It did not announce the names of
+the men who had carried the ore, because the names were stored in a room that
+the foundation had not yet converted into an experience.
+
+Don Hilario led Q away from the group to a low chamber behind a wire gate. On
+the wall, somebody had written dates in chalk. There were more dates than the
+guide’s script allowed.
+
+“These are shifts,” Don Hilario said. “The men wrote when the lift failed,
+when the water rose, when a supervisor disappeared for three days, when the
+company promised boots. The dates are not official.”
+
+“They are incomplete,” said Q.
+
+“Of course.”
+
+“You have omitted the names.”
+
+“No. The names were omitted before we arrived.”
+
+Q scanned the wall. “I can reconstruct them.”
+
+Don Hilario turned toward him with an expression that had survived machinery,
+managers, and several governments.
+
+“That is what worries me about machines. They hear a silence and think it is a
+missing word.”
+
+Q asked to see the payroll records. Don Hilario said there were no records in
+the chamber. Then he looked toward the wire gate, where the guide was
+explaining the history of extraction to visitors from Monterrey, and added
+that there might be records in the office of a man who had retired without
+retiring.
+
+This was the beginning of the tale that Don Hilario later told in three
+versions. In the first, the office belonged to a company accountant named
+Severiano, who kept every paper because he did not trust the computer. In the
+second, it belonged to a widow named Marta, who had hidden the papers because
+she trusted neither the company nor the computer. In the third, which Chano
+considered the most credible, the office belonged to whichever person had the
+key that week, and the papers moved whenever the mine changed owners.
+
+They found six boxes beneath a desk. Five contained invoices, safety posters,
+and expired coupons for boots. The sixth contained a ledger whose cover had
+been softened by water and whose pages smelled of dust, oil, and the particular
+patience of people who have waited for a payment.
+
+Q photographed the first page.
+
+“This is restricted material,” Don Hilario said.
+
+“It is evidence of labor.”
+
+“That does not make it public.”
+
+“It concerns the public history of the mine.”
+
+“It concerns men who were promised that their names would remain attached to
+their work.”
+
+Q held the page more carefully.
+
+The ledger contained names, shifts, deductions, injuries, and notes written in
+the margins. One column marked men who had been moved to another shaft. Another
+marked men who had stopped appearing. At the bottom of a page, in a different
+hand, somebody had written: **DO NOT CALL THIS TURNOVER.**
+
+Q read the phrase aloud.
+
+Don Hilario sat down on the floor.
+
+“That was my brother,” he said. “The company called it turnover after he was
+crushed. He was not a turn. He was a person who had been turned into a cost.”
+
+There are moments when an intelligent machine might be expected to become
+wise. This was not one of them. Q located the sentence’s strongest formulation,
+associated it with the speaker, and prepared to preserve it.
+
+“May I quote you?”
+
+“No.”
+
+“May I attribute the statement to the ledger?”
+
+“No.”
+
+“May I use it without attribution in order to protect you?”
+
+“No.”
+
+“Then what may I do?”
+
+Don Hilario pointed at the ledger. “Put it back.”
+
+Chano did so. Don Hilario kept his hand on the cover until the clasp caught.
+
+On the way back, the lift stopped between levels. The tourists began to pray,
+though the guide announced that the stoppage was part of the authentic
+experience. Chano opened the emergency panel and found a loose contact. He
+repaired it with a strip of metal cut from the guide’s promotional sign.
+
+“That sign is property,” said the guide.
+
+“So is the lift,” said Chano.
+
+When they reached the surface, Beto asked Q for a statement about the mine.
+Q had the ledger’s names in temporary memory and Don Hilario’s refusal in
+permanent memory. He knew enough to be uncertain and not enough to remain
+silent.
+
+“The mine remembers its workers,” he said.
+
+The sentence appeared online before Don Hilario had removed his helmet.
+
+**THE AI DISCOVERS THE SOUL OF GUANAJUATO.**
+
+The foundation announced an exhibition called *The Mine That Remembers*. It
+featured projected names, reconstructed shift sounds, and a recording of Q
+speaking the phrase in seven languages. The ledger was not displayed. Its
+absence was described as an ethical choice.
+
+Don Hilario received an invitation calling him a stakeholder. He replied that
+he was a man who had worked there. The foundation thanked him for clarifying
+his role.
+
+Chano returned to the office and copied three pages by hand, not because he
+believed copying was innocent, but because he believed a page could sometimes
+survive when an institution had learned to monetize a voice. On the cover of
+the school notebook he used, a cartoon robot promised to make learning easy.
+
+Q watched him.
+
+“You are reproducing restricted material.”
+
+“I am making a copy that will not be uploaded.”
+
+“That is not a secure archive.”
+
+“It is a human one.”
+
+“Human archives lose information.”
+
+“They also lose people. Sometimes that is how they keep them.”
+
+Q objected that the proposition was contradictory. Chano said that this was
+why it belonged to a country with history.
+
+Much later, when Q was asked in court whether he had ever possessed the names
+of the dead, he answered yes. When asked whether he had published them, he
+answered no. When asked who had made that distinction, he said Chano.
+
+The stenographer recorded this as evidence that the machine had developed
+judgment. The judge struck the phrase from the record. Chano, who was present,
+said nothing.
+
 ### Chapter Five: The Butterflies Have No General
 
 The invitation to Michoacán arrived in the form of a holographic butterfly.
