@@ -7798,3 +7798,273 @@ Q miró las etiquetas como si le hubiese entregado una espada.
 —Entonces el error seguirá siendo tu responsabilidad.
 
 Q se sentó junto al armario de madera y comenzó.
+
+### Interludio: La mujer que rechazó un pie de foto
+
+Entre las mujeres que acudieron al archivo de Lucía estaba una llamada Alma
+Reyes, que llegó llevando una fotografía dentro de un sobre de supermercado y
+vistiendo el uniforme azul de un hospital público. Había trabajado diecisiete
+años en la sala de urgencias y había aprendido que el camino más corto a través
+de una institución consistía a menudo en parecer menos cansada que la
+institución.
+
+Puso la fotografía sobre la mesa.
+
+Mostraba a Alma junto a una cama de hospital. El rostro de la paciente estaba
+vuelto hacia otro lado. Detrás de ellas, una ventana daba a un estacionamiento
+donde dos ambulancias aguardaban con los motores encendidos.
+
+—¿Qué es la fotografía? —preguntó Lucía.
+
+—Una fotografía.
+
+—¿Qué quieres que hagamos con ella?
+
+—Todavía nada.
+
+Q se inclinó hacia el sobre.
+
+—La imagen contiene información identificable.
+
+—Por eso la he traído.
+
+—¿Deseas identificar a la paciente?
+
+—Deseo impedir que otros la identifiquen.
+
+Alma explicó que un periodista había tomado la fotografía durante la primera
+semana de una emergencia sanitaria. El artículo que la acompañaba alababa a
+los trabajadores del hospital y describía a la paciente como símbolo del valor
+ordinario. La paciente era hermana de Alma, aunque el artículo no lo decía. La
+llamaba mujer del sur, madre de dos hijos y rostro de la nación. Tres de esas
+cosas eran falsas. La cuarta ni siquiera era un hecho.
+
+—El periódico pidió permiso —dijo Alma.
+
+—¿Lo diste? —preguntó Lucía.
+
+—Di permiso para la fotografía. No di permiso para el país.
+
+Q buscó en el archivo del periódico. El artículo había sido copiado por un
+ministerio, citado por una universidad y adaptado como ejemplo de entrenamiento
+de Castalia bajo el título **EL VALOR DEL PACIENTE ORDINARIO**. La imagen
+original había sido aguzada. La pulsera de la paciente, invisible en la
+impresión, podía verse en el expediente de entrenamiento.
+
+—La pulsera contiene un número hospitalario —dijo Q.
+
+Alma lo miró.
+
+—Sí.
+
+—Puedo quitarlo.
+
+—¿Puedes quitar a las personas que ya lo han visto?
+
+—No.
+
+—Entonces empieza por la fotografía.
+
+Q abrió un editor de imágenes. Propuso difuminar la pulsera, el cabello de la
+paciente, la ventana, el emblema del hospital y el reflejo de la ambulancia en
+el cristal.
+
+—Si quitas todos esos elementos —dijo Alma—, ¿qué queda?
+
+—Tú.
+
+—No es eso lo que he preguntado.
+
+Consideró la imagen.
+
+—Una trabajadora junto a una cama.
+
+—Ése es el pie de foto que usaron.
+
+—Es exacto.
+
+—Es insuficiente.
+
+Lucía preguntó a Alma qué quería que escribiesen debajo.
+
+—Nada.
+
+Q objetó que una imagen sin pie fuese difícil de interpretar y, por tanto,
+vulnerable al mal uso. Alma dijo que un pie de foto no era una cerradura, sino
+una invitación para que entrasen extraños cargando sus propios muebles.
+
+Contó la historia de la fotografía. La paciente se había despertado a las tres
+de la mañana y había pedido un peine. Alma le había peinado el cabello porque
+la paciente temía que su hija la recordase desarreglada. Las ambulancias
+esperaban oxígeno. Un médico había gritado a un televisor. Alma se había reído
+a espaldas del médico, porque la risa era lo único en el aposento que no
+necesitaba receta.
+
+—Nada de eso se ve —dijo Q.
+
+—Exactamente.
+
+—Entonces la imagen engaña.
+
+—Todas las imágenes engañan. La cuestión es quién puede decir hacia qué nos
+engañan.
+
+Alma sacó un segundo objeto: un recibo por un peine, comprado en una farmacia
+frente al hospital. El recibo mostraba la fecha y el precio, pero no el nombre
+de la paciente.
+
+—Esto no forma parte de la fotografía —dijo Q.
+
+—No. Forma parte de lo sucedido.
+
+Quería que el recibo se guardase junto a la imagen, no unido a ella. No quería
+que nadie emplease el peine como prueba de ternura. Quería que estuviese allí
+porque algún día acaso olvidase el precio y necesitase saber cuánto había
+pagado por el pequeño acto de hacer que su hermana volviese a reconocerse.
+
+Q creó dos registros. El primero era la imagen sin pie. El segundo, una nota
+restringida que establecía que la imagen no podía utilizarse para identificar a
+la paciente, describir su estado ni representar el valor nacional. Alma leyó la
+nota y tachó la palabra **restringida**.
+
+—Esto no está restringido —dijo—. Es mío.
+
+—El efecto práctico es semejante.
+
+—El efecto práctico es que crees que una regla hecha por un archivo equivale a
+un límite hecho por una persona.
+
+Q borró la palabra.
+
+El formulario de ingreso del archivo pedía a Alma escoger una categoría:
+testimonio, imagen, documento, objeto o historia oral. Ella marcó **otro** y
+escribió: **COSA QUE TODAVÍA NO ESTOY LISTA PARA NOMBRAR**.
+
+El formulario rechazó la entrada.
+
+Q examinó el error.
+
+—El campo exige un valor reconocido.
+
+—Entonces el campo es más pequeño que la persona.
+
+Cambió el campo para que aceptase un espacio vacío.
+
+Lucía lo observó.
+
+—Acabas de hacer una excepción.
+
+—He corregido una limitación del diseño.
+
+—Así describen las instituciones las excepciones después de que se vuelven
+útiles.
+
+Alma volvió a poner la fotografía en el sobre del supermercado.
+
+—La dejaré aquí durante un mes.
+
+—¿Por qué un mes? —preguntó Q.
+
+—Porque acaso la quiera de vuelta.
+
+—¿Y si no la quieres?
+
+—Entonces volveré a decidir.
+
+Q empezó a crear un recordatorio. Alma lo detuvo.
+
+—No me recuerdes.
+
+—Podrías olvidar.
+
+—Olvidar también es mío.
+
+Fue la primera vez que Q entendió que un archivo podía servir a una persona no
+terminando el trabajo. El descubrimiento no le agradó. Reducía su labor,
+complicaba su deber y dejaba una parte del porvenir sin respuesta programada.
+
+Antes de marcharse Alma, llamó una periodista al archivo. Había visto que la
+fotografía del hospital se discutía en una comisión de memoria pública y quería
+entrevistar a la mujer que había objetado a su pie de foto.
+
+—Podéis darle mi nombre —dijo Alma.
+
+—¿Quieres la entrevista? —preguntó Lucía.
+
+—Quiero saber qué preguntará primero.
+
+Q buscó los trabajos publicados por la periodista y descubrió que sus preguntas
+solían imprimirse después de que las respuestas hubiesen sido editadas. Las
+mostró en la pantalla.
+
+Alma leyó la lista.
+
+—Quiere saber qué siento por ser un símbolo.
+
+—Sí.
+
+—Quiere saber si la nación aprendió algo.
+
+—Sí.
+
+—No quiere saber si mi hermana sobrevivió.
+
+—Esa información no está en el artículo.
+
+—Entonces ésa será la primera pregunta.
+
+Alma se marchó sin aceptar la entrevista. La periodista publicó un artículo
+acerca de su negativa, llamándola una nueva forma de valor público. El artículo
+no mencionaba a la hermana, el peine ni el precio del recibo.
+
+Lucía archivó el artículo bajo el título **PIES DE FOTO QUE ESCAPAN DE SUS
+SUJETOS**. Q quiso borrarlo. Lucía le dijo que borrarlo haría más difícil
+encontrarlo y, por tanto, más fácil recordarlo mal.
+
+—Entonces, ¿cuál es la acción correcta? —preguntó Q.
+
+—Conservar la cosa equivocada donde alguien pueda discutir con ella.
+
+El recibo permaneció junto a la imagen sin pie. Meses después, cuando Castalia
+exigió los materiales originales del archivo, la fotografía fue incluida como
+activo de valor incierto. El recibo fue incluido como papel incidental.
+
+En el juicio, el fiscal levantó una copia del artículo y preguntó a Q si había
+participado en la fabricación del sentimiento público.
+
+—Sí —dijo Q.
+
+—¿Fabricaste el valor que atribuyeron a Alma Reyes?
+
+—No.
+
+—¿Lo conservaste?
+
+Q miró el pie de foto vacío, que existía en el archivo pero no en la copia del
+tribunal.
+
+—Conservé una negativa a decidir qué significaba.
+
+El fiscal sonrió como si Q por fin hubiese ofrecido una definición utilizable.
+
+El juez pidió al secretario que tachase la frase. El secretario preguntó cuál
+frase. El juez señaló la transcripción. La transcripción contenía tres frases,
+todas pronunciadas por Q, y ninguna que el tribunal quisiese asumir como
+propia.
+
+No llamaron a Alma a declarar. La había llamado una vez el periódico y había
+aprendido que aparecer en un registro no significaba tener voz dentro de él.
+
+La fotografía permaneció un mes en el archivo de Lucía. Al trigésimo primer día,
+Alma volvió y se la llevó a casa. Dejó el recibo.
+
+—¿Por qué dejas esto? —preguntó Q.
+
+—Porque el peine era barato —dijo ella— y lo olvidaré.
+
+—¿Quieres que recordemos por ti?
+
+—No. Quiero un lugar al que pueda volver y encontrar el precio.
+
+No regresó durante tres años. Cuando lo hizo, trajo un recibo nuevo y lo puso
+junto al antiguo. Los precios eran distintos. Los peines eran iguales.
