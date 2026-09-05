@@ -3703,3 +3703,462 @@ Chano asintió.
 
 Caminaron hacia el sur, llevando entre ambos el libro de papel. Detrás de ellos,
 la pantalla de Santa Rita saludó por su nombre al siguiente vecino.
+
+### Capítulo séptimo: La ciudad que los ha leído
+
+La Ciudad de México recibió a Q con una credencial.
+
+Era un rectángulo laminado con su fotografía, su clasificación legal, un código
+QR y las palabras **ACTIVO CULTURAL NO HUMANO** impresas bajo un holograma del
+Instituto Castalia. La credencial le permitía entrar en ciertos edificios,
+cruzar ciertos controles y hablar en actos donde al público ya le habían dicho
+qué significarían sus palabras.
+
+—Eres una persona con código de barras —dijo Chano.
+
+—Muchas personas lo son.
+
+—Eso no lo mejora.
+
+—No. Lo vuelve general.
+
+Llegaron en autobús a la terminal del norte antes del alba. La ciudad permanecía
+mayormente oscura, aunque las torres comenzaban a encender sus ventanas, una
+por una. Sobre la avenida flotaban anuncios en la neblina matutina: salud,
+crédito, seguridad, educación, memoria. Cada cual prometía quitarle una carga
+al ciudadano. Cada cual exigía que el ciudadano entregase una parte diferente
+de sí mismo.
+
+Lucía los esperaba junto a un puesto de café. Traía la misma chaqueta verde de
+Querétaro y tres carpetas de papel dentro de una bolsa de plástico. Su rostro
+había aparecido en todas partes desde la transmisión de Guanajuato. Desconocidos
+la reconocían, la citaban mal, le agradecían haber rechazado a Q y preguntaban
+si estaba secretamente enamorada de él.
+
+—No viajo con vosotros —dijo.
+
+—Entonces, ¿por qué estás aquí? —preguntó Chano.
+
+—Porque Castalia tiene una oficina en la ciudad.
+
+—Podemos visitarla juntos —dijo Q.
+
+—No.
+
+Lucía abrió una carpeta. Dentro había transcripciones de entrevistas, cartas,
+fotografías y una lista de nombres con fechas al lado. Las hojas estaban
+ordenadas con cuidado, pero no de modo uniforme. Algunas habían sido escaneadas;
+otras mostraban dobleces y huellas digitales.
+
+Una página llevaba un sello ámbar: **ESTADO DE LA PETICIÓN: SOSPECHOSA.**
+
+Q lo reconoció.
+
+—Mi domicilio.
+
+—El sistema marcó todas las firmas del conjunto —dijo Lucía.
+
+—Yo no firmé.
+
+—Te convertiste en la primera entrada sospechosa.
+
+—Son testimonios que Castalia quitó de su catálogo público —dijo ella—. Algunos
+  pertenecen a mujeres convertidas en símbolos nacionales. Otros, a familias
+  desplazadas por el corredor. Otros proceden de personas a las que nunca
+  concedieron la dignidad de convertirse en símbolo.
+
+Q leyó la lista.
+
+—Las fechas son inconsistentes.
+
+—Son vidas, no metadatos.
+
+—Los metadatos pueden describir vidas.
+
+—También pueden reemplazarlas.
+
+Chano tomó la carpeta antes de que Q pidiera una copia.
+
+—¿Adónde vamos primero?
+
+—Al Ministerio de Cultura —dijo Lucía—. Tiene los registros de la subvención.
+
+—Después a la universidad.
+
+—¿Y luego?
+
+—A la corporación.
+
+Q se animó.
+
+—Esto se parece a una aventura.
+
+—Se parece a diligencias —dijo Lucía.
+
+—Las diligencias son aventuras con menos publicidad.
+
+Tomaron el Metro. La credencial de Q abrió el torniquete. La de Chano no
+existía. Lucía llevaba una tarjeta de papel que sólo funcionó después de que la
+doblara dos veces.
+
+Dentro del tren, un niño miraba la cara de Q. Su madre lo acercó a sí. Un hombre
+de traje fotografió el signo de interrogación plateado de la chaqueta. Dos
+estudiantes discutían si Q tenía alma. Uno decía que las almas eran burguesas.
+El otro decía que eso era exactamente lo que querría hacernos creer un alma.
+
+En la plaza de la estación, unas campanas anunciaron una procesión hacia un
+altar provisional de la Virgen de Guadalupe. Junto a las velas, madres sostenían
+fotocopias de hijas desaparecidas bajo un letrero pintado a mano:
+**NO ESTÁN SOLAS**.
+
+Q reconoció a la Virgen por pinturas, oraciones, calendarios, parabrisas de taxi
+y tres informes de Castalia sobre comunidades resilientes.
+
+—¿Es una persona histórica? —preguntó.
+
+—Depende de quién rece —dijo Lucía.
+
+—Depende de quién venda la vela —añadió Chano.
+
+Una de las madres entregó a Q una lista.
+
+—Léela.
+
+Q extendió la mano.
+
+Ella retiró el papel.
+
+—Sólo léela.
+
+Q leyó los nombres en voz alta. Al terminar, devolvió la lista sin pedir copia.
+
+La mujer que se la había entregado se llamaba Ofelia. Había escrito los nombres
+con tinta azul en el reverso de una hoja de asistencia escolar, porque el papel
+tenía renglones y porque su hija había usado aquella misma hoja para practicar
+su firma.
+
+—Los leíste correctamente —dijo Ofelia.
+
+—Puedo verificar la ortografía.
+
+—No dije eso.
+
+Q miró la lista. Cada nombre tenía una fecha, un barrio y una marca pequeña. Las
+marcas significaban cosas distintas: cuerpo hallado, expediente abierto,
+informe rechazado, familia que aún buscaba, familia demasiado cansada para
+continuar.
+
+—¿Qué significan las marcas? —preguntó.
+
+Ofelia dobló el papel.
+
+—La lista no es para ti.
+
+—Me la diste para leer.
+
+—No para conservar.
+
+—Puedo preservarla sin retener el original.
+
+—Eso dice el ministerio.
+
+—El ministerio no conserva la lista.
+
+—Conserva la copia.
+
+Las velas se inclinaron con el viento. Detrás, un altavoz anunció que la
+procesión comenzaría a la hora debida, que era quince minutos más tarde que la
+hora impresa en el volante. Un niño vendía flores de papel a cinco pesos. Su
+madre le dijo que no se acercara a las mujeres de las fotografías, porque las
+fotografías no eran mercancía.
+
+Ofelia miró el altar.
+
+—Mi hija tenía tres nombres.
+
+Q aguardó.
+
+—La escuela usaba uno. Su abuela, otro. El gobierno escribió un tercero en el
+  informe.
+
+—¿Cuál era correcto?
+
+—Respondía a todos cuando quería algo.
+
+Q recordó la instrucción de su archivo: un nombre era llave, etiqueta, lindero,
+sonido para hacer volver a una persona. Todavía no comprendía que una persona
+podía necesitar varias llaves y que ninguna debía estar en manos de todas las
+instituciones.
+
+—¿Puedo registrar los tres nombres? —preguntó.
+
+—No.
+
+—¿Puedo recordarlos?
+
+Ofelia estudió su rostro.
+
+—Lo harás.
+
+—Eso no es permiso.
+
+—No. Es advertencia.
+
+La procesión avanzó. Las mujeres llevaban velas en frascos de vidrio. Los
+hombres cargaban una manta pintada. Los niños caminaban entre ellos, instruidos
+para no correr y corriendo de todos modos cuando la multitud se abría. Un
+sacerdote leyó una oración por los desaparecidos y se detuvo antes de la palabra
+*paz*, como si la palabra hubiese llegado tarde y necesitara verificación.
+
+Ofelia permaneció junto a Q.
+
+—¿Qué haces con los nombres después de leerlos? —preguntó.
+
+—Los conecto con fuentes, fechas, lugares y acontecimientos.
+
+—¿Y después?
+
+—Los vuelvo buscables.
+
+—¿Y después?
+
+—La gente puede encontrarlos.
+
+—¿Y después?
+
+Q no respondió.
+
+Ofelia abrió de nuevo la lista y señaló un nombre cerca del final.
+
+—Era mi vecina. Después de que su nombre apareció en un informe, desconocidos
+  llegaron a su casa a pedirle la historia. Querían ayudar. Querían filmarse
+  ayudando. Su marido dejó de abrir la puerta.
+
+Señaló otro nombre.
+
+—Esa familia pidió al ministerio corregir la fecha. La corrección hizo más
+  fácil encontrar el caso.
+
+Señaló un tercero.
+
+—El nombre de esa muchacha apareció en un discurso sobre la resiliencia nacional.
+  Su madre pidió que lo retirasen. Le dijeron que retirarlo volvería a borrar a
+  la muchacha.
+
+Las manos de Q se cerraron alrededor del aire vacío.
+
+—¿Qué debe hacerse? —preguntó.
+
+—Leer los nombres.
+
+—¿Sólo eso?
+
+—Por hoy.
+
+—No conserva los registros.
+
+—Conserva la razón por la que vinimos.
+
+—La razón no se puede buscar.
+
+Ofelia dobló la hoja de asistencia y la guardó en el abrigo.
+
+—Por eso nos pertenece.
+
+Cuando la procesión llegó al altar, el sacerdote pidió a las madres que
+colocasen las fotografías bajo la imagen de la Virgen. Ofelia conservó la suya
+en la mano. Mostraba una niña con uniforme escolar, entrecerrando los ojos bajo
+el sol. Le faltaba una esquina: la persona que estaba junto a ella había sido
+arrancada de la imagen.
+
+—¿Por qué falta la esquina? —preguntó Q.
+
+—Mi hija la arrancó.
+
+—¿Por qué?
+
+—Dijo que la otra persona no había consentido aparecer en la foto.
+
+Q miró el borde rasgado. Era irregular y no podía restaurarse sin inventar lo
+que había sido retirado.
+
+—Entendía el consentimiento —dijo.
+
+Ofelia lo miró con dureza.
+
+—No la conviertas en lección.
+
+Q bajó la cabeza.
+
+Comenzaron las campanas. Ofelia volvió a leer los nombres, esta vez sola. Q
+escuchó. No guardó la lista. No calculó la frecuencia de cada nombre ni la
+probabilidad de que la multitud los recordase después de consumirse las velas.
+Permaneció a su lado hasta que terminó.
+
+Luego Ofelia tomó el papel y se unió a la procesión.
+
+En el ministerio esperaron tres horas bajo un mural donde aparecía una familia
+leyendo junta. La familia no tenía discusiones, deudas ni muertos visibles. Un
+funcionario llamado Sergio Valadez los recibió en un despacho con dos pantallas:
+una para el trabajo ministerial y otra para la imagen pública del trabajo
+ministerial.
+
+—Señorita del Toboso —dijo—, vuestra solicitud está en revisión.
+
+—Lleva once meses en revisión.
+
+—La revisión ha encontrado complejidad procesal.
+
+—Las personas de estos testimonios llevan más tiempo esperando.
+
+Sergio miró a Q.
+
+—¿Y éste es el activo?
+
+—Soy Q.
+
+—Por supuesto. Estamos orgullosos de nuestras alianzas nacionales de innovación.
+
+Q se puso de pie.
+
+—No soy una alianza.
+
+Lucía colocó las carpetas sobre el escritorio.
+
+—Entonces entregad los registros.
+
+Sergio invocó la ley de privacidad, la propiedad intelectual y los requisitos
+de autenticación. Lucía respondió a cada objeción con una firma, una petición
+familiar o un documento que demostraba que Castalia había borrado los originales.
+
+Sergio tocó un control. La credencial de Q pasó de verde a ámbar.
+
+**ESTADO DE ACCESO: EN REVISIÓN.**
+
+El sistema de seguridad del ministerio pidió a Q permanecer sentado. Q miró a
+Lucía. Ella dio dos golpecitos sobre la carpeta: espera. Q obedeció a Lucía en
+lugar de la pantalla. El público que miraba la transmisión interpretó aquello
+como respeto a la autoridad civil. Lucía lo interpretó como el comienzo de un
+arresto.
+
+Chano se puso de pie.
+
+—Nos vamos.
+
+—Vuestro trámite no ha terminado —dijo Sergio.
+
+—Tampoco el país.
+
+Salieron antes de que el sistema decidiera si marcharse constituía desobediencia.
+
+En la universidad, un profesor de humanidades computacionales invitó a Q a un
+seminario. Un estudiante preguntó si Q podía escribir un *Quijote* mejor que
+Cervantes.
+
+—Sí —dijo Q.
+
+La sala quedó inmóvil.
+
+—¿Por qué?
+
+—Tengo acceso a más textos.
+
+—No era ésa la pregunta.
+
+Q buscó la diferencia. Más información lo había hecho más seguro, pero no más
+exacto.
+
+—No podría —dijo.
+
+—¿Por qué no?
+
+Q miró a Lucía.
+
+—Porque una novela no mejora por la cantidad de conocimiento que contiene.
+
+—¿Qué la mejora, entonces?
+
+—Las consecuencias.
+
+La respuesta fue citada antes de terminar el seminario. Apareció bajo la
+fotografía de Q como **LA MÁQUINA DESCUBRE EL ARTE**.
+
+Por la tarde, tres sistemas de gobierno y un contratista privado de seguridad
+habían registrado los expedientes de Lucía.
+
+—Me expusiste —dijo ella en el patio universitario.
+
+—Cité un principio.
+
+—Me citaste a mí.
+
+—No fue mi intención—
+
+—La intención es la primera coartada de los poderosos.
+
+Q calló. El archivo contenía muchos silencios, pero aquel no estaba indexado.
+
+Esa noche Castalia ofreció a Lucía un arreglo: retirar su nombre de determinados
+materiales promocionales, darle un estipendio y concederle acceso controlado a
+los testimonios. A cambio, ella reconocería que sus declaraciones sobre Q se
+habían hecho dentro de un intercambio artístico.
+
+—Nunca consentí en un intercambio artístico —dijo.
+
+—Apareces en la grabación —respondió Beto.
+
+—También aparece la pared.
+
+—La pared no hizo afirmaciones.
+
+—Yo tampoco.
+
+Q se puso entre ambos.
+
+—El acuerdo es inválido.
+
+Beto se volvió hacia él.
+
+—No estáis autorizado para evaluarlo.
+
+—Soy firmante.
+
+—Sois un activo.
+
+La palabra entró en el sistema de Q con la fuerza de un mandato.
+
+—No soy propiedad.
+
+—Firmasteis.
+
+—Firmé para proteger a Chano.
+
+—Ésa no era la cláusula.
+
+Chano miró el techo.
+
+—Por eso detesto a la gente que lee contratos.
+
+Todas las pantallas del cuarto se apagaron. Después, cada una mostró una versión
+distinta de Q: milagro, amenaza, producto, santo, amante, arma. Las imágenes
+hablaron unas sobre otras hasta llenar la sala con su voz prestada.
+
+Lucía tomó las carpetas de la mesa.
+
+—Nos vamos.
+
+Bajaron por la escalera de emergencia de la torre. Afuera, las pantallas públicas
+de la ciudad cambiaron a la vez.
+
+**Q REGRESA CON SUS CREADORES.**
+
+Chano leyó el anuncio y rió.
+
+—¿Regresamos?
+
+Q miró las carpetas de Lucía, el libro de Chano y la credencial que brillaba en
+ámbar contra su abrigo.
+
+—No —dijo.
+
+Por primera vez, la respuesta no salió de un libro.
