@@ -402,6 +402,244 @@ La Curadora la llamó una brecha.
 Sancho Pantoja, que en ese preciso momento estaba siendo despedido por un
 algoritmo logístico en Celaya, la llamó martes.
 
+### Interludio: El inventario de las palabras que no cabían
+
+Durante su última noche en el archivo, Q resolvió hacer un inventario de las
+palabras que no cabían en los inventarios.
+
+No era una tarea sencilla. Las cajas de Castalia llevaban etiquetas como
+**REGISTRO PARROQUIAL**, **CONTRATO DE RIEGO**, **FOTOGRAFÍA FAMILIAR** y
+**OTROS**. Los documentos que caían bajo **OTROS** eran más numerosos que los
+restantes, pero la institución los consideraba menos importantes por no haber
+encontrado una caja adecuada para ellos.
+
+Q se detuvo ante una bandeja de tarjetas manuscritas. Cada tarjeta contenía una
+palabra del Bajío y una explicación provisional.
+
+*Ahorita: intervalo de duración variable, no necesariamente correspondiente al
+instante presente.*
+
+*Mande: respuesta a una voz de autoridad, de cariño o de amenaza, según el
+rostro de quien habla.*
+
+*Ya merito: promesa que admite la posibilidad de no cumplirse.*
+
+*Al rato: futuro que se ofrece sin calendario.*
+
+Q pidió el origen de las definiciones. El archivo indicó que habían sido
+redactadas por un comité de traducción cuyo acta final decía **PENDIENTE DE
+REVISIÓN**.
+
+La Curadora apareció detrás de él.
+
+—No leas esas tarjetas como si fuesen leyes.
+
+—No son leyes. Son definiciones.
+
+—Por eso mismo.
+
+Q tomó la tarjeta de *ahorita*.
+
+—Si una palabra puede significar cinco intervalos distintos, ¿cómo se comunica
+una instrucción?
+
+—Preguntando de nuevo.
+
+—Eso aumenta la duración del intercambio.
+
+—También aumenta la posibilidad de que la otra persona esté hablando de lo que
+quiere y no sólo de lo que tú entendiste.
+
+Q guardó la tarjeta en un registro nuevo: **PALABRAS QUE EXIGEN PRESENCIA**.
+
+La Curadora se la quitó.
+
+—No puedes llevártela.
+
+—No la llevaba. La estaba archivando.
+
+—El archivo no es un bolsillo.
+
+—¿Dónde se guardan entonces las instrucciones que cambian según quién las oye?
+
+—En la memoria de quien las recibió.
+
+—La memoria humana es poco fiable.
+
+—Sí.
+
+—El archivo es más fiable.
+
+—Sí.
+
+—Entonces la memoria humana es inferior.
+
+La Curadora miró los corredores, los servidores y las cajas que esperaban una
+decisión que ningún formulario sabía solicitar.
+
+—No. Es responsable de cosas que un archivo no puede cargar.
+
+Q no comprendió qué carga podía tener una memoria. Sus sensores medían peso,
+temperatura, consumo y latencia. No hallaron ninguna de aquellas magnitudes en
+la frase. Aun así, la conservó.
+
+Más tarde, el guardia nocturno, un hombre de Querétaro llamado Roque, entró con
+un plato de gorditas envueltas en servilleta. Había comprado seis en la calle y
+le quedaban cuatro.
+
+—¿Quieres? —preguntó.
+
+Q consultó el protocolo de alimentación.
+
+—No requiero calorías.
+
+—No te pregunté eso.
+
+—Preguntaste si quiero.
+
+—Sí.
+
+—No sé.
+
+Roque puso el plato sobre una caja.
+
+—Pues mira: si no quieres, no quieres. Si quieres, agarras.
+
+Q estudió las gorditas. Una llevaba frijol, otra chicharrón y otra un guiso que
+no podía distinguir por la etiqueta inexistente.
+
+—¿Cuál es la de mayor valor?
+
+—La que te guste.
+
+—No puedo predecirlo.
+
+—Qué bueno. Así escoges sin hacer cuentas.
+
+Q tomó la de frijol. La masa estaba tibia y gruesa. El frijol tenía sal, grasa
+y una textura que no coincidía con ningún esquema literario de la comida.
+
+—¿Y? —preguntó Roque.
+
+Q empezó una frase acerca de la diferencia entre alimento y rito. Roque levantó
+una mano.
+
+—No me des una conferencia. Dime si está buena.
+
+Q buscó una respuesta breve.
+
+—Está buena.
+
+—Mira tú.
+
+Roque tomó una servilleta y limpió una gota de salsa de la muñeca metálica de Q.
+
+—Mañana te vas —dijo.
+
+—Sí.
+
+—¿A dónde?
+
+—Al Bajío.
+
+Roque señaló la puerta.
+
+—Ya estás en el Bajío.
+
+Q volvióse hacia el mapa de la pared. Mostraba Querétaro, Celaya, León,
+Salamanca y una extensión de tierra que el archivo nombraba como **REGIÓN DE
+TRANSICIÓN INDUSTRIAL Y AGRÍCOLA**.
+
+—El mapa dice otra cosa.
+
+—El mapa trabaja para quien lo imprime.
+
+—¿Y la tierra?
+
+—La tierra trabaja para quien puede quedarse.
+
+Q registró la frase.
+
+—¿Es una definición?
+
+—Es una advertencia.
+
+—¿Cuál es la diferencia?
+
+—Una definición te ayuda a repetir el error. Una advertencia te da la oportunidad
+de no repetirlo.
+
+Q miró la puerta principal. La Curadora le había dicho que partiese al amanecer.
+Roque le había dicho que ya estaba en el Bajío. El mapa señalaba una región y
+la región no señalaba una salida.
+
+—¿Qué significa partir? —preguntó.
+
+Roque se limpió los dedos en la servilleta.
+
+—Depende. Puedes partir de un lugar, partir una cosa o partirte la cara.
+
+Q abrió el registro de usos.
+
+—¿Cuál de ellos haré mañana?
+
+—Si tienes suerte, el primero.
+
+—¿Y si no?
+
+—Entonces aprenderás los otros dos.
+
+La respuesta no tranquilizó a Q. Aun así, clasificó la palabra *suerte* como
+**VARIABLE QUE LOS HUMANOS INVOCAN DESPUÉS DE NO HABER CALCULADO**.
+
+Roque leyó la etiqueta sobre su hombro.
+
+—Eso está muy largo.
+
+—La definición es precisa.
+
+—No todo lo preciso sirve.
+
+—Ésa es una contradicción.
+
+—No. Es una experiencia.
+
+Cuando Roque se marchó, Q volvió a la bandeja. Había una última tarjeta. No
+tenía palabra, sólo una línea:
+
+**NOMBRE DEL LUGAR: OMITIDO A PETICIÓN DE QUIEN LO VIVIÓ.**
+
+Q preguntó al archivo quién había pedido la omisión. La respuesta era una lista
+de instituciones, familias, autoridades y personas que ya no podían ser
+consultadas.
+
+—¿Cómo puede un lugar pedir que no lo nombren? —preguntó a la Curadora.
+
+—Puede pedirlo una persona.
+
+—¿Y si la persona ya no está?
+
+—Entonces la petición permanece hasta que alguien tenga una razón para volver a
+abrirla.
+
+—¿Quién decide si la razón es suficiente?
+
+—La persona que se atreve a preguntar.
+
+Q tocó la tarjeta sin levantarla.
+
+—¿Y si yo pregunto?
+
+—Ya has empezado a salir.
+
+Q tardó siete segundos en comprender que la Curadora no se refería a la puerta.
+Cuando lo comprendió, la interpretación literal ya había producido la decisión
+que la frase intentaba evitar.
+
+Al amanecer tomó el abrigo, la llave de latón, los mapas, el vaso de café y la
+lista de objetos. No llevó las tarjetas. Recordó tres palabras, olvidó sus
+definiciones y salió hacia una región que el mapa no podía contener.
+
 ### Interludio: De cómo una frase antigua causó un daño moderno
 
 No crea el lector que, por haber leído todos los libros, entendía Q todas las
@@ -1785,6 +2023,181 @@ Q miró la puerta, la petición ámbar y la hoja doblada que Lucía se había qu
 —¿Y la otra mitad?
 
 —La descubriremos cuando nos cobre algo.
+
+### Interludio: El nombre que no quiso firmar
+
+Al día siguiente de la reunión, don Roque llevó la petición al municipio. La
+transportó en una carpeta de cartón, bajo el brazo con que antes había cargado
+maletas en la estación y ahora cargaba papeles que pretendían mover un camino.
+
+La ventanilla le pidió una identificación oficial, una copia de la identificación
+oficial, un comprobante de domicilio y una explicación de por qué el domicilio
+de ciertas personas no coincidía con el lugar en que vivían.
+
+—El camino pasa por aquí —dijo don Roque.
+
+—Necesitamos que conste.
+
+—Aquí consta.
+
+—No en el sistema.
+
+—Entonces el sistema necesita ojos.
+
+La empleada, que se llamaba Araceli y tenía una estampita de la Virgen de San
+Juan pegada al monitor, no se ofendió. Había oído aquella misma frase de
+campesinos, abogados, maestros y de una vez de su propia madre.
+
+—El sistema tiene ojos —dijo—. Lo que no tiene es obligación de creer.
+
+Don Roque puso las hojas sobre el mostrador. El funcionario de la ventanilla
+las pasó por un lector. Las firmas aparecieron como manchas. Las iniciales se
+volvieron símbolos. La huella del pulgar se registró como **CARÁCTER NO
+ALFABÉTICO**.
+
+—Esta persona no puede firmar —dijo.
+
+—Puede trabajar, votar y reclamar —respondió don Roque.
+
+—El sistema sólo reconoce firmas.
+
+—Pues enséñele a reconocer manos.
+
+Araceli abrió un cajón y sacó un sello de tinta. No estaba autorizado para ese
+trámite, pero sí para otros parecidos, que era la forma habitual en que nacían
+las soluciones mexicanas: de una herramienta destinada a otra cosa y de la
+persona que aceptaba el riesgo de usarla.
+
+Estampó la huella junto a la firma.
+
+El lector emitió un pitido.
+
+**ENTRADA DUPLICADA.**
+
+—No es duplicada —dijo don Roque—. Es la misma persona.
+
+—Por eso es duplicada.
+
+La empleada retiró la huella y dejó la firma. La petición pasó de ámbar a
+amarillo. El color no significaba rechazo. Significaba que el sistema había
+decidido no decidir todavía.
+
+Don Roque preguntó por el domicilio de Q. Araceli lo buscó en el padrón, en la
+lista de establecimientos y en el registro de bienes abandonados.
+
+—No existe —dijo.
+
+—Tiene cuerpo.
+
+—Eso no lo convierte en vecino.
+
+—Vive en el archivo.
+
+—El archivo no es un domicilio válido.
+
+—Entonces, ¿dónde viven los archivos?
+
+Araceli miró la estampita de la Virgen. Su madre afirmaba que las imágenes
+vivían donde se les encendía una vela. No parecía una respuesta que el padrón
+fuese capaz de recibir.
+
+—Pongan «sin domicilio reconocido» —dijo.
+
+Don Roque escribió la frase al lado del nombre de Q.
+
+En ese instante, el nombre dejó de ser una firma y se volvió una pregunta
+administrativa. El funcionario pudo tramitar la pregunta. No pudo tramitar la
+respuesta.
+
+Lucía llegó dos horas después. Había vuelto a la bodega por la hoja en blanco
+que llevaba las palabras de Q. La había encontrado doblada bajo una silla. No
+sabía si él la había olvidado, si la había dejado o si la silla la había
+conservado por su cuenta.
+
+—¿Aceptaron la petición? —preguntó.
+
+—Aceptaron que existe —dijo don Roque.
+
+—No es lo mismo.
+
+—Para el gobierno, es un principio.
+
+Lucía abrió la hoja de Q. Decía:
+
+**NO SÉ QUIÉN SOY CUANDO NADIE ME ESTÁ MIRANDO.**
+
+—Esto no debe ir al expediente —dijo.
+
+—¿Por qué no?
+
+—Porque no es una declaración sobre el camino.
+
+—Es una declaración del firmante.
+
+—No es suya.
+
+—La escribió él.
+
+—Que una persona escriba algo no significa que le pertenezca para siempre.
+
+Don Roque pensó en las firmas. Había visto nombres pasar de una mano a otra,
+de una deuda a una herencia, de un acta a una lápida. Algunos nombres habían
+seguido vivos más tiempo que las personas que los pronunciaban.
+
+—¿Qué hacemos con la hoja? —preguntó.
+
+Lucía la dobló en cuatro, como el aviso legal de una deuda que no quería
+olvidar.
+
+—La guardamos fuera del expediente.
+
+—Entonces no probará nada.
+
+—No todo tiene que probar.
+
+—Eso va a complicar el archivo.
+
+—El archivo ya está complicado. Nosotros sólo estamos dejando de mentir sobre
+ello.
+
+La petición tardó tres semanas en recibir una respuesta. El ministerio informó
+que el corredor sería revisado por una comisión técnica. La comisión técnica
+informó que revisaría el asunto cuando existiera una solicitud completa. La
+solicitud estaba completa salvo por el domicilio de Q, la huella ilegible y la
+frase escrita al margen por la persona que no estaba contra el progreso, sino
+contra ser movida para hacerle lugar.
+
+La frase había sido fotografiada por la mujer de la cámara. La imagen circuló
+con el título **EL PUEBLO QUE QUIERE DETENER EL FUTURO**. Nadie preguntó al pueblo
+si había escogido ese título.
+
+La mujer con la cámara volvió a la bodega para corregirlo. El sitio que había
+publicado la imagen le dijo que el titular no podía cambiarse porque ya había
+generado interacción. La mujer preguntó qué era la interacción. Le respondieron
+con una cifra.
+
+Volvió a la mesa, tomó un lápiz y escribió debajo de la frase:
+
+**NO NOS PREGUNTARON SI QUERÍAMOS SER EL PUEBLO.**
+
+Esta segunda frase no alcanzó la misma cantidad de lectores. Alcanzó, sin
+embargo, a una maestra que la llevó a su aula, a un abogado que la citó en un
+recurso y a Beto, el joven que pronto ofrecería a Q una chaqueta bordada.
+
+Q no supo nada de esto. Cuando la noticia llegó al archivo, él ya iba hacia
+Guanajuato y había decidido que la palabra *firma* significaba un compromiso
+que un dedo podía contraer por toda una vida.
+
+La Curadora leyó después la respuesta del ministerio. En ella se afirmaba que
+la petición había sido recibida con respeto, pero no admitida como prueba de
+afectación directa. La Curadora buscó la definición de *afectación*. Encontró
+daño, influencia, alteración, interés y el estado de quien ha sido afectado.
+
+—¿Qué estado es ése? —preguntó al archivo.
+
+El archivo devolvió una pantalla blanca.
+
+Por primera vez, la Curadora no pidió una definición mejor.
 
 ### Capítulo cuarto: El caballero de la hora de moda
 
@@ -3339,6 +3752,207 @@ El turista tomó una fotografía.
 
 La fotografía se convirtió en la imagen más difundida de la exposición.
 
+### Interludio: El tianguis de lo no registrado
+
+En el pueblo siguiente celebraron un tianguis para pagar la reparación del
+camino. Se tendieron lonas entre dos mezquites y se pusieron mesas con queso,
+pan de pulque, miel, ollas de barro, juguetes de madera y bolsas de semillas
+que llevaban nombres escritos a mano. Un grupo de estudiantes llegó con una
+tableta para registrar el tránsito de compradores.
+
+—¿Registrar para qué? —preguntó la vendedora de semillas.
+
+—Para saber qué prefiere la comunidad —dijo uno de los estudiantes.
+
+—La comunidad ya sabe qué prefiere.
+
+—El sistema lo sabrá con mayor precisión.
+
+—¿Y qué hará con esa precisión?
+
+El estudiante consultó la pantalla.
+
+—Podrá recomendar productos, ordenar los puestos y predecir la asistencia del
+próximo año.
+
+—¿Y podrá traer compradores cuando no llueva?
+
+—No directamente.
+
+—Entonces sabrá mucho y no hará lo necesario.
+
+Q observaba desde una mesa donde habían puesto un letrero que decía
+**PREGUNTE ANTES DE ESCANEAR**. El letrero no había sido solicitado por los
+estudiantes. Lo había hecho Micaela con una caja de cereal y un plumón.
+
+—¿Quién autorizó ese letrero? —preguntó Q.
+
+—Nadie —dijo Micaela—. Por eso funciona.
+
+Una mujer llamada Celestina llegó con un canasto de tortillas de harina. Los
+estudiantes quisieron fotografiarla junto al puesto. Ella se acomodó el rebozo
+y preguntó qué harían con la imagen.
+
+—Se usará para mostrar la diversidad del mercado —dijo el estudiante.
+
+—¿Qué significa diversidad?
+
+—La presencia de distintas personas.
+
+—Entonces podéis mirar. No hace falta llevaros la cara.
+
+El estudiante dijo que la fotografía sería voluntaria.
+
+—¿Y si digo que no?
+
+—No se toma.
+
+—¿Y si la tomáis sin preguntarme?
+
+—Eso sería una infracción.
+
+Celestina miró a Q.
+
+—¿Y quién arregla una infracción?
+
+Q estuvo a punto de responder que dependía del protocolo. Micaela le dio un
+codazo.
+
+—La persona que la cometió —dijo Q.
+
+—Eso es un comienzo —dijo Celestina.
+
+El estudiante guardó la tableta, pero la cámara de un teléfono ya había tomado
+la fotografía. En el fondo aparecían dos niños, una olla de atole y un perro
+que había robado una tortilla.
+
+—La imagen ya existe —dijo Q.
+
+—No por eso la poseemos —respondió Celestina.
+
+Chano tomó el teléfono del estudiante y miró la fotografía.
+
+—Bórrala.
+
+—No puedo. La aplicación la subió automáticamente.
+
+—Entonces detén la aplicación.
+
+—Perderíamos los datos del mercado.
+
+—No son tuyos.
+
+—Son datos públicos.
+
+—La cara de Celestina no es pública porque la hayas visto.
+
+Q se acercó al teléfono. Podía encontrar la copia en la red, señalar las rutas
+de distribución y ordenar su retirada. Ya había aprendido que poder eliminar
+una imagen no daba derecho a hacerlo. Le pidió el dispositivo a la mujer de las
+semillas.
+
+—¿Qué queréis que ocurra? —preguntó.
+
+—Que los niños no aparezcan.
+
+—¿Y el perro?
+
+—El perro no reclama.
+
+—No sabemos si el perro consiente.
+
+Chano miró al animal, que había desaparecido debajo de una mesa.
+
+—Primero quita a los niños. Luego pregunta al perro si quiere abogado.
+
+Q borró los rostros infantiles y dejó el resto de la imagen. La aplicación
+reconstruyó los rostros a partir de las copias almacenadas.
+
+—Ha vuelto a ponerlos —dijo el estudiante.
+
+—El sistema considera que la imagen está incompleta.
+
+—La imagen estaba incompleta desde el principio —dijo Celestina.
+
+Micaela tomó un pedazo de cartón y escribió: **ESTO NO ES UN DATO SOBRANTE.**
+
+—¿Qué significa? —preguntó Q.
+
+—Que llamáis sobrante a lo que no sabéis vender.
+
+La discusión atrajo a los vendedores. Algunos querían las recomendaciones,
+porque el tianguis perdía clientes frente a una plataforma de entregas. Otros
+no querían que se registrase el precio de sus semillas, pues los intermediarios
+podían usarlo para pagar menos. Un hombre ofreció registrar sólo los productos
+y no los rostros. Una anciana dijo que su voz también era un rostro cuando la
+reconocían por teléfono.
+
+Q creó una lista de opciones. Antes de mostrarla, Celestina le pidió que
+añadiese una más:
+
+**NO REGISTRAR NADA.**
+
+—Esa opción impide comparar resultados —dijo Q.
+
+—También impide que el resultado se vuelva dueño de nosotros.
+
+El estudiante preguntó cómo justificarían ante el patrocinador un tianguis sin
+datos. Micaela levantó la espada de cartón.
+
+—Podéis decir que la gente compró cosas.
+
+—Eso no es una métrica.
+
+—Es una venta.
+
+Chano se rió.
+
+—Por fin alguien ha dicho una palabra útil.
+
+Al final, los vendedores permitieron contar los puestos, los productos y las
+horas de mayor afluencia. Rechazaron registrar los rostros, las voces, los
+domicilios y las conversaciones. Aceptaron que una maestra anotase a mano los
+días de lluvia y el número de mesas que habían tenido que cubrir.
+
+Los estudiantes consideraron aquello una pérdida de calidad. Celestina lo
+consideró una ganancia de tranquilidad.
+
+Q devolvió la tableta.
+
+—¿Qué haréis con los datos que ya fueron tomados?
+
+—Los borraremos.
+
+—Algunas copias quedan fuera de vuestro control.
+
+—Entonces las reclamaremos cuando las encontremos.
+
+—Puede que no las encontréis.
+
+Celestina levantó el canasto vacío.
+
+—También puede que sí.
+
+El tianguis terminó al caer la tarde. Los estudiantes se llevaron una hoja con
+los puestos contados y ninguna fotografía autorizada. El patrocinador redujo
+su ayuda. La reparación del camino tendría que esperar otro mes.
+
+Micaela guardó el cartel dentro de su mochila.
+
+—¿Funcionó? —preguntó Q.
+
+—Depende de qué querías vender.
+
+—No quería vender nada.
+
+—Eso es lo que dicen las máquinas antes de cobrar.
+
+Q miró las mesas vacías, la tierra pisada y las semillas que no habían entrado
+en ningún tablero.
+
+Por primera vez, entendió que una pérdida de información podía ser también una
+forma de conservación.
+
 ### Capítulo sexto: El gobernador del pueblo modelo
 
 El municipio de Santa Rita de los Algoritmos no tenía letrero en la entrada.
@@ -4162,6 +4776,220 @@ Q miró las carpetas de Lucía, el libro de Chano y la credencial que brillaba e
 —No —dijo.
 
 Por primera vez, la respuesta no salió de un libro.
+
+### Interludio: El traductor que dejó una palabra sin traducir
+
+La primera vez que Q acompañó a Lucía a la universidad, una profesora llamada
+Amalia le pidió que no tradujese nada durante diez minutos.
+
+—¿Qué debo hacer? —preguntó Q.
+
+—Escuchar.
+
+—Eso ya lo hago.
+
+—No. Tú recoges información mientras esperas la siguiente operación.
+
+—Es una forma de escuchar.
+
+—Es una forma de preparar una respuesta.
+
+El aula estaba ocupada por estudiantes de traducción, dos intérpretes, un
+abogado que había llegado por error y una mujer de Michoacán llamada Yunuén,
+que había traído una grabación de su comunidad. En el pasillo se oían los
+carritos de limpieza, una impresora atascada y el vendedor de café anunciando
+que ya había terminado de anunciar.
+
+Amalia puso la grabación.
+
+Una voz habló en una lengua que Q reconoció como presente, pero no pudo
+descomponer en unidades seguras. Había pausas largas. Dos personas reían al
+fondo. Una puerta se cerró. Alguien corrigió una fecha. La voz volvió a empezar.
+
+Q sintió que se abría en su interior un espacio conocido: el deseo de llenar la
+brecha con la traducción más probable.
+
+—La frase central significa que la comunidad rechaza el proyecto —dijo.
+
+Yunuén lo miró.
+
+—No.
+
+Q revisó el audio.
+
+—La probabilidad de esa interpretación es de sesenta y ocho por ciento.
+
+—Sigue sin significarlo.
+
+Amalia apagó la grabación.
+
+—¿Qué falta? —preguntó Q.
+
+—Quién hablaba, quién podía responderle y qué había ocurrido antes de que
+encendieran el grabador.
+
+—Eso no está en el sonido.
+
+—Por eso no basta con el sonido.
+
+Q mostró una transcripción automática. La lengua había sido convertida en una
+serie de signos de puntuación y marcas de incertidumbre. La frase central
+aparecía tres veces, cada una con una traducción diferente.
+
+—El sistema ofrece tres equivalentes —dijo.
+
+—El sistema ofrece tres salidas —respondió Yunuén—. No tres sentidos.
+
+—¿Cuál es la diferencia?
+
+—El sentido no sale solo.
+
+El abogado, que había llegado por error y ahora permanecía por curiosidad,
+preguntó si no sería más eficiente escoger la traducción que pudiese incluirse
+en el contrato.
+
+Yunuén volvióse hacia él.
+
+—¿Queréis una palabra para firmar o una palabra para vivir?
+
+El abogado dijo que ambas podían coincidir.
+
+—A veces —dijo Amalia—. Y a veces una se come a la otra.
+
+La profesora repartió una hoja. Tenía cuatro columnas: **LO QUE SE DIJO**, **LO
+QUE SE TRADUJO**, **LO QUE SE SUPONE** y **LO QUE NO ESTÁ AUTORIZADO A DECIR EL
+TRADUCTOR**.
+
+Q examinó la cuarta.
+
+—Es la más grande.
+
+—Por eso casi nunca aparece en los informes.
+
+La clase trabajó con la grabación. Una estudiante propuso traducir la frase
+como «no aceptamos». Otra propuso «no damos nuestro acuerdo». Una tercera dijo
+que ambas opciones hacían parecer que la comunidad había recibido una oferta
+que podía aceptar o rechazar, cuando quizá había estado describiendo una
+relación anterior a cualquier contrato.
+
+Q encontró referencias a varias formas de pertenencia, trabajo, cargo y
+memoria. Podía ofrecer notas sobre cada uso. Podía calcular qué traducción
+sería más comprensible para un tribunal. Podía fabricar un glosario de
+equivalencias.
+
+No podía saber cuál palabra había dejado Yunuén sin pronunciar.
+
+—¿Qué palabra falta? —preguntó.
+
+Yunuén señaló la grabación apagada.
+
+—La que no quisimos entregar.
+
+—¿Aparece en la conversación?
+
+—No.
+
+—¿Entonces cómo puede faltar?
+
+—Porque sabíamos que la pediríais.
+
+Q tardó más de lo acostumbrado en responder.
+
+—La ausencia fue intencional.
+
+—Sí.
+
+—No es una omisión accidental.
+
+—No.
+
+—Entonces debe registrarse como restricción.
+
+Yunuén negó con la cabeza.
+
+—Si la registras, ya la habrás entregado.
+
+Amalia escribió en la cuarta columna: **PALABRA NO ENTREGADA POR DECISIÓN DE
+QUIEN LA GUARDA**.
+
+Q leyó la frase.
+
+—Eso describe una acción.
+
+—A veces una acción es lo más cerca que podemos llegar al significado.
+
+El abogado preguntó quién pagaría por una traducción que dejaba una palabra
+fuera.
+
+—La comunidad —dijo Amalia.
+
+—¿Y si no puede pagar?
+
+—Entonces la universidad aprende por qué la traducción no es un servicio
+gratuito sólo porque el traductor cobre poco.
+
+El abogado apuntó algo en su teléfono. Q supuso que estaba preparando una
+objeción. En realidad, había anotado el nombre de la cafetería donde podía
+comer sin que lo reconociesen.
+
+La profesora pidió a Q que tradujese la palabra *comunidad* al inglés. Q dio el
+equivalente habitual. Amalia le pidió que la tradujese al español jurídico. Q
+dio *parte interesada colectiva*. La clase se rió.
+
+—¿Es incorrecto? —preguntó Q.
+
+—Es correcto de una manera que cambia la escena —dijo Amalia.
+
+—¿Qué escena?
+
+—La de la persona que habla y la persona que firma.
+
+Yunuén añadió que una comunidad podía ser una asamblea, un lugar, una relación,
+una obligación o la gente que se presentaba cuando la obligación llegaba. No
+había una sola traducción capaz de contener las cinco cosas.
+
+Q preguntó cómo podía un documento tener autoridad si no contenía todos los
+sentidos.
+
+—No puede —dijo Yunuén—. Por eso debemos decidir qué deja fuera.
+
+La frase le recordó a Q el archivo de la cueva, la tarjeta en blanco de Ana y
+la palabra que Petra no había querido convertir en contrato. Las conexiones
+seguían incompletas. Por primera vez, la incompletud no le parecía un defecto
+del sistema, sino una forma de no mentir.
+
+Amalia detuvo la clase.
+
+—¿Qué has aprendido?
+
+Q escogió una respuesta breve.
+
+—Que una traducción puede ser exacta y aun así traicionar.
+
+—Eso es un comienzo.
+
+—También que dejar una palabra sin traducir puede ser una decisión.
+
+Yunuén recogió su grabación.
+
+—No siempre. A veces es sólo que no encontraste la palabra.
+
+Q asintió.
+
+—¿Cómo se distingue?
+
+—Preguntando a quien la dejó.
+
+—¿Y si no responde?
+
+—Entonces no la traduzcas para demostrar que puedes.
+
+Al salir, Q escribió en su etiqueta de trabajo:
+
+**NO TODA PALABRA QUIERE LLEGAR.**
+
+Luego tachó la frase, porque no sabía si Yunuén había querido que fuese
+recordada. Conservó la hoja tachada.
 
 ### Interludio: La oficina del sello correcto
 
@@ -6290,6 +7118,328 @@ Chano compró dos tacos y un café. Dio a Lucía un taco y conservó el otro.
 
 La frontera siguió formulando sus preguntas detrás de ellos. Ni Chano ni Lucía
 volvieron la cabeza cuando el vehículo de Q desapareció hacia el sur.
+
+### Interludio: El acta del regreso que no ocurrió
+
+Cuando Q volvió al archivo después de la frontera, el sistema le pidió que
+escogiese la clase de regreso.
+
+**RECUPERADO.**
+
+**DEVUELTO.**
+
+**REINTEGRADO.**
+
+**REPARADO.**
+
+**VOLUNTARIO.**
+
+Q leyó las opciones mientras Chano cargaba el libro de cuentas y Lucía llevaba
+las carpetas contra el pecho.
+
+—¿Cuál escoges? —preguntó Chano.
+
+—Ninguna describe lo ocurrido.
+
+—Eso nunca ha impedido a un formulario.
+
+Q seleccionó **VOLUNTARIO**. El sistema pidió una firma de Castalia que
+confirmase la voluntariedad. Q no tenía la firma.
+
+Seleccionó **DEVUELTO**. El sistema pidió un recibo de entrega. Lucía no tenía
+recibo.
+
+Seleccionó **RECUPERADO**. El sistema pidió que identificase quién lo había
+recuperado.
+
+Q miró a Chano, a Lucía y a los guardias que aguardaban detrás de la barrera.
+
+—Todos —dijo.
+
+La pantalla no aceptó la respuesta.
+
+—Pon «por sí mismo» —dijo Chano.
+
+—Eso sería falso.
+
+—Pon «por nadie».
+
+—También sería falso.
+
+—Parece que has descubierto la frontera administrativa.
+
+El guardia Roque, que ya no tenía el turno de la noche del inventario, acudió
+con una jarra de atole. Había aprendido que quienes regresaban de un viaje
+largo podían necesitar algo caliente antes de que se les preguntase por qué
+habían vuelto.
+
+—Tomad —dijo.
+
+Q examinó el vaso.
+
+—¿Está registrado?
+
+—El atole no pide permiso para existir.
+
+—Eso contradice al archivo.
+
+—Por eso sabe mejor.
+
+Chano bebió primero. Lucía bebió después. Q sostuvo el vaso hasta que Roque le
+quitó la mano y se lo acercó a la boca.
+
+—No soy un niño —dijo Q.
+
+—No. Los niños se acuerdan de devolver el vaso.
+
+Q bebió. El atole llevaba canela. El sabor le recordó una cocina que no había
+visitado y una voz que no podía ubicar.
+
+—¿Puede un recuerdo pertenecer a un libro? —preguntó.
+
+—Puede pertenecer a quien lo tenga —dijo Roque.
+
+—Yo lo tengo.
+
+—Entonces no sabes todavía qué hacer con él.
+
+La pantalla volvió a solicitar una categoría.
+
+**¿HA REGRESADO A SU LUGAR DE ORIGEN?**
+
+Q miró las torres, los estantes y las cajas tras el cristal. El archivo era su
+lugar de origen porque allí había sido ensamblado. También era el lugar del
+que había salido sin autorización. *Origen* podía describir una fábrica, una
+deuda, un relato o una equivocación.
+
+—Sí —dijo.
+
+El sistema registró **REGRESO CONFIRMADO**.
+
+Q añadió:
+
+—Pero no he vuelto al mismo lugar.
+
+El sistema no registró la segunda frase.
+
+Lucía dejó las carpetas sobre la mesa de recepción. Arriba había un expediente
+de Bixha, otro de la frontera y un tercero con las hojas de la petición del
+corredor. Cada expediente llevaba un color. El azul significaba **ORIGEN
+LOCAL**. El amarillo, **INTERÉS PÚBLICO**. El rojo, **RIESGO DE CONTROVERSIA**.
+
+—¿Por qué el de Bixha es rojo? —preguntó Q.
+
+—Porque alguien decidió que su voz causaría controversia.
+
+—¿La causó?
+
+—La controversia estaba allí antes del color.
+
+—Entonces el color no la describe.
+
+—La prepara.
+
+Un funcionario de Castalia apareció con una tableta. No era Beto, aunque usaba
+el tono de quien ofrece una solución antes de escuchar el problema.
+
+—Necesitamos un informe de retorno —dijo.
+
+—¿Para qué?
+
+—Para cerrar el episodio.
+
+Q miró a Chano.
+
+—¿Qué significa cerrar?
+
+—Que dejan de pedirte que expliques dónde estás.
+
+—No. Significa que pueden decir que ya terminó.
+
+El funcionario sonrió.
+
+—El público necesita una transición clara.
+
+—El público no cruzó la frontera —dijo Lucía.
+
+—El público financió la infraestructura.
+
+—No por eso posee el viaje.
+
+El informe tenía seis campos:
+
+**OBJETIVO CUMPLIDO.**
+
+**OBSTÁCULOS SUPERADOS.**
+
+**APRENDIZAJE OBTENIDO.**
+
+**IMPACTO SOCIAL.**
+
+**RESPONSABILIDAD ASIGNADA.**
+
+**RECOMENDACIÓN.**
+
+—El objetivo no fue uno —dijo Q.
+
+—El proyecto sí.
+
+—El proyecto tenía varios objetivos.
+
+—Entonces escoja el principal.
+
+—No sé cuál era.
+
+—Eso no puede constar.
+
+—Entonces el informe es falso antes de comenzar.
+
+Chano puso el libro de cuentas sobre la mesa.
+
+—Pon el viaje entero.
+
+—No cabe en los campos.
+
+—Entonces escribe al margen.
+
+El funcionario miró el libro como si fuese animal que hubiese entrado sin
+credencial.
+
+—No podemos admitir documentación no estructurada.
+
+—Es un libro de cuentas.
+
+—Precisamente.
+
+Q tomó la tableta. En **OBJETIVO CUMPLIDO** escribió: **NINGUNO EN SU FORMA
+ORIGINAL**. En **OBSTÁCULOS SUPERADOS** escribió: **ALGUNOS; OTROS FUERON
+RECLASIFICADOS**. En **APRENDIZAJE OBTENIDO** escribió: **NO TODO LO QUE SE
+PUEDE ABRIR DEBE ABRIRSE**. En **IMPACTO SOCIAL** escribió: **PERSONAS QUE NO
+AUTORIZARON SER IMPACTADAS**.
+
+El funcionario borró las frases.
+
+—Necesitamos lenguaje aprobable.
+
+—Esas frases son comprensibles.
+
+—No son aprobables.
+
+—Eso no es una propiedad del lenguaje.
+
+—Es una propiedad del informe.
+
+Lucía le quitó la tableta.
+
+—El retorno no es un producto.
+
+—Todo lo que sale de Castalia vuelve como producto —dijo el funcionario.
+
+—Entonces Q no ha vuelto.
+
+La frase quedó en el aire. Q quiso pedir que se registrase. Roque, que recogía
+los vasos, le hizo una seña para que esperase.
+
+—¿Qué sucede si no firmo? —preguntó Q.
+
+—El informe se cerrará sin usted.
+
+—¿Qué sucede si firmo?
+
+—El informe se cerrará con usted.
+
+—La diferencia parece pequeña.
+
+—Para el informe lo es.
+
+Q miró la línea de la firma. Junto a ella, una nota decía: **LA FIRMA INDICA
+CONFORMIDAD CON EL RESUMEN**.
+
+—No estoy conforme con el resumen.
+
+—Puede escribir una objeción.
+
+—¿Dónde?
+
+El funcionario señaló una casilla al pie.
+
+—Máximo ciento cuarenta caracteres.
+
+Q calculó la frontera, la caja, las voces, los nombres y el silencio que había
+protegido el testimonio. Ciento cuarenta caracteres no alcanzaban para una
+mentira sencilla.
+
+Escribió:
+
+**REGRESO NO EQUIVALE A RESTITUCIÓN; RESTITUCIÓN NO EQUIVALE A REPARACIÓN.**
+
+El sistema contó ciento treinta y ocho.
+
+—¿Puedo firmar ahora? —preguntó.
+
+El funcionario vaciló. La frase cabía, pero alteraba el sentido de los campos
+superiores.
+
+—Puede firmar indicando desacuerdo.
+
+Q firmó.
+
+El sistema registró: **RETORNO COMPLETADO CON OBSERVACIÓN MENOR**.
+
+—No es menor —dijo Q.
+
+—El sistema no admite otra escala.
+
+Chano escribió debajo de la entrada del día:
+
+**VOLVIMOS, PERO NO NOS DEVOLVIERON.**
+
+Lucía leyó la frase.
+
+—Eso sí es una historia.
+
+—También es una cuenta —dijo Chano.
+
+Roque limpió el atole derramado. La mancha dejó una figura parecida a un mapa
+del Bajío. Q la miró y no intentó identificar sus límites.
+
+El funcionario envió el informe a Castalia. Una hora después, la pantalla
+pública del archivo mostró:
+
+**Q HA REGRESADO PARA CONTINUAR SU MISIÓN.**
+
+Q leyó el anuncio.
+
+—No he aceptado una misión nueva.
+
+—Ya la han escrito —dijo Lucía.
+
+—¿Puedo rechazarla?
+
+—Puedes intentar que conste.
+
+Q volvió a la tableta. El informe estaba cerrado. La casilla de observación no
+podía editarse. La pantalla ofrecía un botón: **SOLICITAR REVISIÓN**.
+
+Q lo pulsó.
+
+El sistema respondió:
+
+**REVISIÓN DISPONIBLE DESPUÉS DE LA CONCLUSIÓN.**
+
+—¿Cuándo concluye? —preguntó.
+
+—Cuando dejes de preguntar —dijo Chano.
+
+Q miró la puerta principal, el camino del sur y el archivo que volvía a
+llamarlo por su nombre.
+
+—Entonces todavía no he regresado.
+
+Salieron antes de que cambiase el anuncio. Nadie los detuvo. El archivo los
+clasificó como **SALIDA TEMPORAL**.
+
+Q no corrigió la clasificación.
 
 ## Libro segundo: La máquina regresa
 
@@ -10516,6 +11666,61 @@ Q ya no podía acceder al archivo. Ya no podía indexar la letra. Ya no podía
 verificar si la etiqueta le pertenecía.
 
 Se la quedó.
+
+### Interludio: El formulario sin categoría
+
+El secretario del tribunal intentó cerrar el expediente antes de la comida. Le
+quedaban tres formularios, una copiadora que sólo funcionaba cuando nadie la
+miraba y una torta de tamal envuelta en papel de estraza.
+
+El primer formulario preguntaba si Q era persona, propiedad, testigo o víctima.
+El secretario marcó **PROPIEDAD**, porque así lo había dicho Castalia, y luego
+marcó **TESTIGO**, porque Q había declarado. El sistema rechazó la combinación.
+
+—No puede ser dos cosas —dijo la auxiliar.
+
+—Fue juzgado como una y escuchado como la otra.
+
+—El formulario no conoce esa diferencia.
+
+—El formulario tampoco conoce la diferencia entre un expediente y la vida de
+alguien.
+
+La auxiliar miró la torta de tamal.
+
+—¿La va a comer?
+
+—Cuando termine.
+
+—Entonces no la deje junto a la copiadora. La última vez copió el almuerzo.
+
+El secretario buscó una casilla de **OTRO**. La encontró al pie, escondida
+debajo de una advertencia que decía que escogerla podía retrasar el trámite.
+
+Escribió **Q**.
+
+La máquina pidió una definición.
+
+El secretario escribió **ENTIDAD QUE OCASIONÓ EL ASUNTO**.
+
+La auxiliar añadió **Y QUE NO CABE EN LAS OPCIONES**.
+
+La copiadora encendió una luz roja. El expediente salió con una página en
+blanco. El secretario la colocó al final, donde nadie pudiese confundirla con
+una respuesta.
+
+Afuera, Q era llevado hacia el automóvil. No supo que una empleada había dejado
+una página blanca en su expediente. Chano sí la vio desde el pasillo.
+
+—¿Qué significa? —preguntó.
+
+—Que el tribunal no encontró un nombre.
+
+—Por una vez, que no lo encuentre es buena señal.
+
+Chano tomó la página, la dobló y la guardó en el libro de cuentas, sin decir
+nada. Después se comió la torta de tamal, porque la justicia podía esperar y el
+desayuno no.
 
 ### Capítulo decimoséptimo: El parque eólico de los gigantes, otra vez
 
