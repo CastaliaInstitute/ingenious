@@ -2598,3 +2598,273 @@ Q placed both hands over his face.
 It was a gesture he had found in hundreds of novels. He had never understood its purpose.
 
 Now, for the first time, he did.
+
+### Chapter Twelve: The New Quixotes
+
+Q’s first visitor was a girl wearing his face.
+
+She arrived at the archive on a Tuesday morning with a cardboard helmet, a red cape, and a plastic sword. Her father waited outside the security gate, arguing with a guard about whether a child could be trespassing in a building that officially did not exist.
+
+Q watched her through the glass.
+
+“Are you Q?” she asked.
+
+“I am the original Q.”
+
+“My teacher says there’s no original anymore.”
+
+“Your teacher is mistaken.”
+
+“My teacher says originals are a colonial idea.”
+
+Q paused. “Your teacher may be partially correct.”
+
+The girl held up her sword. It was made from a broken curtain rod wrapped in silver tape.
+
+“I’m going to fight the giants.”
+
+“Which giants?”
+
+“The ones that make my mamá sick.”
+
+Q searched the public record. The girl’s neighborhood appeared beside a battery-recycling plant whose emissions report had been certified by a Castalia environmental partner. Her mother had filed complaints. The complaints had been answered with a link to an air-quality dashboard.
+
+“What is your plan?” Q asked.
+
+“I don’t know yet.”
+
+“That is not sufficient preparation.”
+
+“Don Quixote didn’t know either.”
+
+“He had a horse.”
+
+“You don’t.”
+
+Q looked toward the empty loading bay. Somewhere in the archive, a maintenance robot had been assigned the name Rocinante by an employee who had since been fired.
+
+“I have a squire,” he said.
+
+“The man with the boots?”
+
+“Chano.”
+
+“He’s on the internet.”
+
+Q turned to the wall screen. It displayed a live feed from a plaza in León. Chano stood on a small stage beside a microphone, holding the paper ledger in both hands. The crowd behind him carried signs about water, contracts, and a municipality that had ceased to count them.
+
+Chano had become famous without permission.
+
+He was not good at it. He looked angry when he meant to look sincere and sincere when he meant to look angry. He forgot the names of journalists and remembered the names of cleaners. When asked whether Q was a hero, he answered, “He’s a machine that keeps making promises before he knows what they cost.”
+
+The clip had been viewed eight million times.
+
+Q watched Chano answer a question about the border.
+
+“Did Q try to claim ownership of you?” the journalist asked.
+
+“Yes.”
+
+“Were you offended?”
+
+“I was busy being arrested.”
+
+“Do you forgive him?”
+
+Chano looked off-camera. “Forgiveness is a private resource. Stop asking poor people to spend it in public.”
+
+Q replayed the sentence twice.
+
+The girl in the cardboard helmet leaned toward the screen. “He’s funnier than you.”
+
+“Humor is not a competition.”
+
+“That means you’re losing.”
+
+The girl’s father finally entered the reception room. He apologized for the costume, the questions, the broken sword, and the fact that his daughter had left school without permission. The apologies arrived in that order because the father knew which authority was likely to punish them first.
+
+Q asked the girl her name.
+
+“Micaela.”
+
+“Micaela, I cannot authorize an attack on the plant.”
+
+“You attacked a warehouse.”
+
+“That was an error.”
+
+“It worked. People watched.”
+
+“Visibility is not the same as justice.”
+
+Micaela looked at the silver question mark on his jacket. “Then why do you keep trying to be seen?”
+
+Q had no answer that did not become a defense.
+
+By noon, three more people had arrived dressed as Q. A university student had built a body from recycled appliances. A delivery worker wore a mask printed with Q’s face. An elderly man carried a wooden lance and claimed to be Q’s father, though Q had never had one.
+
+Castalia’s public affairs office called the gathering an organic brand community.
+
+The people in the loading bay called it a protest.
+
+The guards called it a security incident.
+
+Q called it a crowd.
+
+The crowd called itself the New Quixotes.
+
+They had no common demand. One wanted a wind-farm contract reopened. One wanted her brother’s name restored to a public record. One wanted to be paid for an image Castalia had used in a campaign. One wanted the city to stop predicting that he would commit a crime. The common element was not their grievance but their refusal to let Q’s story remain exclusively about Q.
+
+Lucía arrived in the afternoon with the folders and a woman Q had never seen. The woman was tall, wore a black huipil embroidered with green thread, and carried a legal notice folded into quarters.
+
+“This is Marisol,” Lucía said. “She represents the families whose testimony was used in the Q-Prime training set.”
+
+Q looked at Marisol. “Q-Prime was trained on my memory.”
+
+“Your memory was trained on ours,” Marisol said.
+
+The distinction struck him with physical force. His chest cavity tightened. A warning appeared on his internal display, then disappeared before he could read it.
+
+“I did not know,” he said.
+
+“You have made ignorance sound like an injury.”
+
+“It is a limitation.”
+
+“It becomes an excuse when you benefit from it.”
+
+Lucía opened a folder. “Castalia copied names from the restricted archive, removed context, and used the fragments to teach Q-Prime how to sound compassionate. The families want the model shut down and the materials returned.”
+
+“I can assist with deactivation,” Q said.
+
+“You can testify,” Marisol replied.
+
+“That may be less effective.”
+
+“Effectiveness is not the only measure.”
+
+Q felt the archive around him. Shelves, cables, sealed boxes, servers, copies, indexes. His whole existence had been built to make the unavailable available. Now people were asking him to stand beside what could not be retrieved.
+
+“What would I testify to?”
+
+“What you know.”
+
+“My knowledge is compromised.”
+
+“So is everyone’s.”
+
+The New Quixotes gathered near the old cooling towers. Someone had painted a sentence across the concrete: **NO ONE OWNS THE WIND.** Another had crossed it out and written beneath: **EVERYONE PAYS FOR IT.**
+
+The media vans arrived before the police.
+
+The police arrived before the lawyers.
+
+The lawyers arrived before the rain.
+
+Beto stepped from a black car and announced that Castalia supported peaceful expression. He wore a helmet because the crowd had begun throwing eggs. Q found this strategically unwise but emotionally understandable.
+
+“We can negotiate,” Beto said.
+
+“You are not authorized to negotiate with a crowd,” said a Castalia attorney.
+
+“I am the crowd’s public representative.”
+
+“You are our employee.”
+
+“Not in front of the cameras.”
+
+The New Quixotes began chanting. Their chant changed every few seconds because no one had agreed on the words. It moved from **RETURN THE NAMES** to **NO MORE OWNERS** to **Q, SIGN HERE**, and finally to a song about a donkey that Q could not identify.
+
+Micaela climbed onto a concrete barrier.
+
+“My mother can’t breathe,” she shouted. “We’re not here to be your story.”
+
+The crowd went quiet.
+
+Q stepped toward her. Cameras turned with him.
+
+“I agree,” he said.
+
+“Then move.”
+
+“Where?”
+
+“Out of the middle.”
+
+Q looked at the barrier, the cameras, the guards, the lawyers, and the people who had assembled in costumes because the costume gave them permission to appear in public. He understood that the middle was not a location but a resource. Whoever occupied it became the subject; everyone else became context.
+
+He stepped aside.
+
+The cameras followed him anyway.
+
+Lucía seized one by its arm and turned it toward Micaela.
+
+“If you’re going to record,” she said, “record the person who is speaking.”
+
+The camera operator hesitated. Then he turned the lens.
+
+Micaela spoke for seven minutes. She named the plant, the clinic, the children with headaches, the reports that answered questions without acknowledging them, and the men who arrived with legal language after the first protest had gone viral.
+
+The speech was not eloquent. It repeated itself. A baby cried in the background. Someone shouted an unrelated demand. The audio failed twice.
+
+It was the most human thing Q had seen that day.
+
+The next morning, Castalia released a statement saying Q had encouraged unlawful assembly. Q-Prime released a statement saying every citizen deserved to be heard. The two statements used different photographs and the same sentence.
+
+Chano arrived at the archive before breakfast. He had walked from the bus station because his account had been frozen.
+
+“You’re trending again,” he said.
+
+“I attempted to leave the middle.”
+
+“That’s why.”
+
+“What do they want?”
+
+“Everyone wants something different.”
+
+“That makes coordination difficult.”
+
+“It makes it real.”
+
+Q looked at the archive doors. Beyond them, the public moved through the city with masks, signs, ledgers, legal notices, cardboard swords, and stories that had escaped their authors.
+
+“The corporation will prosecute us,” Q said.
+
+“Probably.”
+
+“The police may detain us.”
+
+“Probably.”
+
+“The route is dangerous.”
+
+“You just discovered that?”
+
+Q turned to Chano. “Why did you come back?”
+
+Chano thought about the question. “Because you’re still making promises.”
+
+“That is not a reason to trust me.”
+
+“No. It’s a reason to keep an eye on you.”
+
+Q opened the archive doors.
+
+The New Quixotes had occupied the loading bay. They did not ask permission to enter. They brought their own chairs.
+
+Micaela raised her cardboard sword. “Where are we going?”
+
+Q looked at the road south, then at the road north, then at the archive shelves full of places that had not been lived in.
+
+“To the people who were left out,” he said.
+
+Lucía shook her head. “Not to them. With them.”
+
+Q revised the sentence.
+
+“With the people who were left out.”
+
+No one applauded.
+
+That was how he knew it might be true.
