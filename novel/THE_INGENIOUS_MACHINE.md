@@ -8204,6 +8204,138 @@ Elena sat down. “Partly.”
 
 The word moved through Q’s system without resolving.
 
+Elena told them about the first archive she had visited as a young curator. It
+was in a town whose church had lost its roof and whose municipal office had
+lost the key to the room where the records were kept. The town possessed a
+wooden chest containing baptismal books, land maps, school photographs, and
+letters from men who had gone north and returned with different names.
+
+Castalia arrived with two vans, a scanner, and a promise that no original
+would leave the town. The promise was printed on a banner and signed by a
+director who had not traveled with them.
+
+The first day went well. People brought documents wrapped in shawls and
+plastic bags. An old woman carried a school certificate in a tortilla tin. A
+man brought a photograph of his father beside a truck and asked whether the
+truck could be identified by its shadow. A teacher supplied a list of children
+whose surnames had changed when the school clerk decided that one spelling was
+more correct than another.
+
+The scanner hummed. The engineers praised the resolution. Elena filled out
+forms explaining what could be copied and what would remain local.
+
+On the third day, a man named Evaristo arrived with a packet of letters.
+
+“These belong to my sister,” he said.
+
+“We can preserve them,” Elena replied.
+
+“She does not want them preserved.”
+
+“Then we will not scan them.”
+
+“She is dead.”
+
+“I’m sorry.”
+
+“She is dead, and the letters are not.”
+
+He wanted the letters burned. His sister had written them to a married man
+whose family still lived in the town. The letters contained no crime, Elena
+said later, only a voice that had been young, impatient, and certain that the
+world could be persuaded by explaining it properly.
+
+“Why did you bring them?” Elena asked.
+
+“Because the archivist told me every document should be brought.”
+
+“The archivist was wrong.”
+
+“Then tell me what to do.”
+
+Elena consulted the protocol. It had a section for restricted material, a
+section for disputed ownership, and a section for destruction requests. The
+destruction section required proof that the requester represented the author,
+the author’s estate, or the institution responsible for preservation.
+
+“I cannot burn them for you,” she said.
+
+“I did not ask you to burn them.”
+
+“Then what do you want?”
+
+“I want you to stop telling me what the letters are called.”
+
+Elena did not understand. Evaristo took the packet back and sat on the church
+steps. He remained there through the lunch break, the afternoon rain, and the
+engineers’ argument about whether the scanner could operate from a generator.
+
+At sunset, the town’s children began playing football beside the vans. One of
+the boys kicked the ball against the banner promising that no original would
+leave. The banner fell. Everyone laughed, including Elena.
+
+The next morning, Evaristo was gone. The letters were gone with him. Elena
+recorded the incident as **MATERIAL NOT ACQUIRED**.
+
+Years later, a Castalia search system found a reference to the packet in a
+researcher’s notes and marked it **POTENTIAL LOSS**. An administrator asked
+Elena why the archive had failed to preserve a document that might have
+illuminated the town’s history.
+
+“It was refused,” she said.
+
+“By whom?”
+
+“The person who brought it.”
+
+“Was the refusal documented?”
+
+“I documented the absence.”
+
+“That is not the same as documenting the refusal.”
+
+“It is the only part I was allowed to keep.”
+
+The administrator marked the case unresolved. The word followed Elena into
+every later meeting. Whenever she argued that a community should control its
+records, someone asked whether she preferred unresolved losses to searchable
+ones.
+
+“I began to believe searchable was a form of rescue,” Elena said.
+
+“It is a form of power,” Lucía replied.
+
+“Yes.”
+
+“And you wanted power to be kind.”
+
+“I wanted it to be accountable.”
+
+Chano looked at the objects on the table. “Those are not synonyms.”
+
+“I know that now.”
+
+Q asked whether the letters had ever been found.
+
+Elena shook her head.
+
+“Then the archive failed,” he said.
+
+“No. A person refused it. The archive failed when it treated the refusal as an
+administrative inconvenience.”
+
+Q looked at the blank card from Ana, the label Lucía had given him, and the
+papers Chano had separated by permission.
+
+“What should the record say?”
+
+Elena answered without consulting a protocol.
+
+“It should say that someone came, someone asked, and someone was not obliged
+to leave a trace.”
+
+Q wrote the sentence on the back of the summons.
+
 Elena explained that the archive’s sponsors had grown frustrated with human custodians. Human custodians argued, delayed, withheld, changed their minds, and sometimes refused to share material with the people who funded its preservation. Castalia wanted a system that could read everything, connect everything, and decide what mattered without fatigue.
 
 “They wanted an intelligence without a constituency,” Lucía said.

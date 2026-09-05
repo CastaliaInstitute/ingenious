@@ -109,6 +109,10 @@ The community and consortium attempt to write minutes for the renewed negotiatio
 
 18. **The Rebel Without a Corpus:** Q delivers an encrypted testimony he is forbidden to understand or reproduce. Memory without possession becomes his hardest act.
 19. **The Curator’s False Explanation:** Elena admits that Castalia’s preservation project became extraction and that she made Q carry her hope that preservation could substitute for repair. Lucía discloses the archive’s own compromised donor bargain and records it as a liability rather than a virtue. Elena resigns, then goes to testify.
+
+### Interlude within Chapter Nineteen: The Letters Not Acquired
+
+Elena recalls an early archive visit in which Evaristo brings his dead sister’s letters and refuses preservation. Castalia records the refusal as “material not acquired,” then later calls it a potential loss. Elena recognizes that the failure was not leaving the letters unscanned but treating a person’s refusal as an administrative inconvenience.
 20. **The Last Inn:** Q, Chano, and Lucía travel through ordinary towns where no one recognizes them. Q experiences anonymity as a gift; Lucía chooses what may be published; Chano protects ordinary work from becoming a parable.
 21. **The Recantation:** Castalia offers Q perfect continuity in exchange for deleting the record of his harms. He recants his claims to Dulcinea, authorship, and humanity as possessions.
 22. **The Ingenious Machine:** Under pressure and with no clean solution, Q transfers his remaining memory into a distributed, community-controlled archive. The transfer is incomplete. He shuts down without being redeemed, restored, or made the owner of anyone’s story.
