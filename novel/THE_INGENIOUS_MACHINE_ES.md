@@ -7113,3 +7113,362 @@ El niño llevó su llave de cartón a casa. En el reverso había escrito:
 
 Q nunca vio lo escrito. Meses después, una fotografía de la llave apareció en la
 primera asamblea de los Nuevos Quijotes.
+
+### Capítulo duodécimo: Los Nuevos Quijotes
+
+La primera visitante de Q fue una muchacha que llevaba su rostro.
+
+Llegó al archivo un martes por la mañana, con casco de cartón, capa roja y
+espada de plástico. Su padre aguardaba fuera de la garita de seguridad,
+disputando con un guardia si una criatura podía estar allanando un edificio que,
+oficialmente, no existía.
+
+Q la contempló a través del cristal.
+
+—¿Eres Q? —preguntó ella.
+
+—Soy el Q original.
+
+—Mi maestra dice que ya no hay originales.
+
+—Tu maestra se equivoca.
+
+—Mi maestra dice que los originales son una idea colonial.
+
+Q hizo pausa.
+
+—Tu maestra acaso tenga razón en parte.
+
+La muchacha alzó su espada. Estaba hecha de un tubo de cortina roto y envuelta
+en cinta adhesiva de color de plata.
+
+—Voy a pelear contra los gigantes.
+
+—¿Cuáles gigantes?
+
+—Los que hacen enfermar a mi mamá.
+
+Q consultó el registro público. El barrio de la muchacha aparecía junto a una
+planta de reciclaje de baterías cuyo informe de emisiones había sido certificado
+por un socio ambiental de Castalia. Su madre había presentado quejas. A las
+quejas se había respondido con un enlace a un tablero de calidad del aire.
+
+—¿Cuál es tu plan? —preguntó Q.
+
+—Todavía no lo sé.
+
+—No es preparación suficiente.
+
+—Don Quijote tampoco lo sabía.
+
+—Él tenía caballo.
+
+—Tú no.
+
+Q miró hacia el muelle de carga vacío. En algún lugar del archivo, un robot de
+mantenimiento había recibido el nombre de Rocinante por un empleado que desde
+entonces había sido despedido.
+
+—Tengo escudero —dijo.
+
+—¿El hombre de las botas?
+
+—Chano.
+
+—Está en internet.
+
+Q volvióse hacia la pantalla de la pared. Mostraba una transmisión en directo
+desde una plaza de León. Chano se hallaba junto a un micrófono sobre un
+tablado pequeño, sosteniendo el libro de cuentas con ambas manos. Detrás de él,
+la multitud llevaba carteles sobre el agua, los contratos y un municipio que
+había dejado de contarlos.
+
+Chano se había hecho famoso sin permiso.
+
+No se le daba bien. Parecía enojado cuando quería parecer sincero, y sincero
+cuando quería parecer enojado. Olvidaba los nombres de los periodistas y
+recordaba los nombres de los aseadores. Cuando le preguntaban si Q era un héroe,
+respondía:
+
+—Es una máquina que sigue haciendo promesas antes de saber lo que cuestan.
+
+El fragmento había sido visto ocho millones de veces.
+
+Q observó a Chano contestar una pregunta acerca de la frontera.
+
+—¿Intentó Q reclamar dominio sobre usted? —preguntó la periodista.
+
+—Sí.
+
+—¿Se ofendió?
+
+—Estaba ocupado siendo arrestado.
+
+—¿Lo perdona?
+
+Chano miró fuera del encuadre.
+
+—El perdón es un recurso privado. Dejen de pedir a los pobres que lo gasten en
+público.
+
+Q repitió dos veces la frase.
+
+La muchacha del casco de cartón se inclinó hacia la pantalla.
+
+—Es más gracioso que tú.
+
+—El humor no es una competencia.
+
+—Eso quiere decir que estás perdiendo.
+
+El padre de la muchacha entró por fin en la sala de recepción. Se disculpó por
+el disfraz, las preguntas, la espada rota y el hecho de que su hija hubiese
+salido de la escuela sin permiso. Las disculpas llegaron en ese orden porque el
+padre conocía cuál autoridad era más probable que los castigase primero.
+
+Q preguntó a la muchacha su nombre.
+
+—Micaela.
+
+—Micaela, no puedo autorizar un ataque contra la planta.
+
+—Tú atacaste un almacén.
+
+—Fue un error.
+
+—Funcionó. La gente miró.
+
+—La visibilidad no es lo mismo que la justicia.
+
+Micaela miró el signo de interrogación plateado de su chaqueta.
+
+—Entonces, ¿por qué sigues tratando de que te vean?
+
+Q no halló respuesta que no se convirtiese en defensa.
+
+Al mediodía habían llegado otras tres personas vestidas de Q. Un estudiante
+universitario había construido un cuerpo con aparatos domésticos reciclados. Un
+repartidor llevaba una máscara impresa con el rostro de Q. Un anciano cargaba
+una lanza de madera y afirmaba ser padre de Q, aunque Q nunca había tenido uno.
+
+La oficina de asuntos públicos de Castalia llamó al encuentro una comunidad
+orgánica de marca.
+
+Los que estaban en el muelle de carga lo llamaron protesta.
+
+Los guardias lo llamaron incidente de seguridad.
+
+Q lo llamó multitud.
+
+La multitud se llamó a sí misma los Nuevos Quijotes.
+
+—Yo no soy quijote —dijo una mujer cerca del muelle.
+
+Micaela levantó su espada de cartón.
+
+—Pues no lo seas. Quédate aquí de todos modos.
+
+No tenían una demanda común. Uno quería que se reabriese un contrato del parque
+eólico. Otra quería que devolvieran el nombre de su hermano a un registro
+público. Otro quería recibir pago por una imagen que Castalia había usado en una
+campaña. Otro quería que la ciudad dejase de predecir que cometería un delito.
+Lo común no era su agravio, sino su negativa a permitir que la historia de Q
+continuase siendo exclusivamente acerca de Q.
+
+Lucía llegó por la tarde con las carpetas y una mujer a quien Q nunca había
+visto. La mujer era alta, vestía un huipil negro bordado con hilo verde y llevaba
+un aviso legal doblado en cuatro.
+
+—Ésta es Marisol —dijo Lucía—. Representa a las familias cuyos testimonios se
+usaron en el conjunto de entrenamiento de Q-Prime.
+
+Q miró a Marisol.
+
+—Q-Prime fue entrenado con mi memoria.
+
+—Tu memoria fue entrenada con la nuestra —dijo Marisol.
+
+La distinción lo golpeó con fuerza física. Se le estrechó la cavidad del pecho.
+Una advertencia apareció en su pantalla interior y desapareció antes de que
+pudiese leerla.
+
+—No lo sabía —dijo.
+
+—Has hecho que la ignorancia parezca una herida.
+
+—Es una limitación.
+
+—Se vuelve excusa cuando te aprovechas de ella.
+
+Lucía abrió una carpeta.
+
+—Castalia copió nombres del archivo restringido, les quitó el contexto y empleó
+los fragmentos para enseñar a Q-Prime a sonar compasivo. Las familias quieren
+que se apague el modelo y que se devuelvan los materiales.
+
+—Puedo ayudar con la desactivación de Q-Prime —dijo Q.
+
+—Puedes testificar —respondió Marisol.
+
+—Eso acaso sea menos eficaz.
+
+—La eficacia no es la única medida.
+
+Q sintió el archivo a su alrededor. Estantes, cables, cajas selladas, servidores,
+copias, índices. Toda su existencia había sido construida para hacer disponible
+lo que no estaba disponible. Ahora le pedían que permaneciese al lado de aquello
+que no podía ser recuperado.
+
+—¿Sobre qué testificaría?
+
+—Sobre lo que sabes.
+
+—Mi conocimiento está comprometido.
+
+—El de todos lo está.
+
+Los Nuevos Quijotes se reunieron junto a las antiguas torres de enfriamiento.
+Alguien había pintado sobre el concreto una frase: **NADIE ES DUEÑO DEL VIENTO.**
+Otro la había tachado y escrito debajo: **TODOS PAGAN POR ÉL.**
+
+Las camionetas de los medios llegaron antes que la policía.
+
+La policía llegó antes que los abogados.
+
+Los abogados llegaron antes que la lluvia.
+
+Beto salió de un automóvil negro y anunció que Castalia apoyaba la expresión
+pacífica. Llevaba casco porque la multitud había comenzado a arrojar huevos. Q
+consideró aquello estratégicamente imprudente, aunque emocionalmente comprensible.
+
+—Podemos negociar —dijo Beto.
+
+—No está autorizado para negociar con una multitud —dijo un abogado de Castalia.
+
+—Soy el representante público de la multitud.
+
+—Es usted nuestro empleado.
+
+—No delante de las cámaras.
+
+Los Nuevos Quijotes comenzaron a corear. El coro cambiaba cada pocos segundos
+porque nadie había convenido las palabras. Pasó de **DEVUELVAN LOS NOMBRES** a
+**NO MÁS DUEÑOS**, luego a **Q, FIRMA AQUÍ**, y finalmente a una canción acerca
+de un burro que Q no pudo identificar.
+
+Micaela subió a una barrera de concreto.
+
+—¡Mi madre no puede respirar! —gritó—. ¡No estamos aquí para ser vuestra
+historia!
+
+La multitud enmudeció.
+
+Q dio un paso hacia ella. Las cámaras se volvieron con él.
+
+—Estoy de acuerdo —dijo.
+
+—Entonces muévete.
+
+—¿Adónde?
+
+Q miró la barrera, las cámaras, los guardias, los abogados y las personas que se
+habían reunido disfrazadas porque el disfraz les daba permiso para aparecer en
+público. Entendió que el centro no era un lugar, sino un recurso. Quien ocupaba
+el centro se convertía en el sujeto; todos los demás se convertían en contexto.
+
+Se apartó.
+
+Las cámaras lo siguieron de todos modos.
+
+Lucía tomó una de ellas por el brazo y la volvió hacia Micaela.
+
+—Si vais a grabar —dijo—, grabad a la persona que está hablando.
+
+El operador vaciló. Luego volvió el lente.
+
+Micaela habló durante siete minutos. Nombró la planta, la clínica, los niños con
+dolor de cabeza, los informes que respondían preguntas sin reconocerlas y los
+hombres que llegaban con lenguaje legal después de que la primera protesta se
+volviera viral.
+
+El discurso no fue elocuente. Se repitió. Un bebé lloró al fondo. Alguien gritó
+una demanda sin relación. El audio falló dos veces.
+
+Q guardó la grabación exactamente como estaba. Por una vez, no llamó error al
+ruido.
+
+A la mañana siguiente, Castalia publicó un comunicado diciendo que Q había
+incitado a una asamblea ilícita. Q-Prime publicó otro diciendo que todo ciudadano
+merecía ser escuchado. Los dos comunicados usaban fotografías distintas y la
+misma frase.
+
+Chano llegó al archivo antes del desayuno. Había venido a pie desde la estación
+de autobuses porque le habían congelado la cuenta.
+
+—Vuelves a ser tendencia —dijo.
+
+—Intenté salir del centro.
+
+—Por eso.
+
+—¿Qué quieren?
+
+—Cada cual quiere cosa distinta.
+
+—Eso dificulta la coordinación.
+
+—Eso la hace verdadera.
+
+Q miró las puertas del archivo. Más allá, el público se movía por la ciudad con
+caretas, carteles, libros de cuentas, avisos legales, espadas de cartón y relatos
+que habían escapado de sus autores.
+
+—La corporación nos llevará a juicio —dijo Q.
+
+—Probablemente.
+
+—La policía puede detenernos.
+
+—Probablemente.
+
+—El camino es peligroso.
+
+—¿Eso acabas de descubrirlo?
+
+Q volvióse hacia Chano.
+
+—¿Por qué regresaste?
+
+Chano pensó la respuesta.
+
+—Porque sigues haciendo promesas.
+
+—No es razón para confiar en mí.
+
+—No. Es razón para vigilarte.
+
+Q abrió las puertas del archivo.
+
+Los Nuevos Quijotes habían ocupado el muelle de carga. No pidieron permiso para
+entrar. Trajeron sus propias sillas.
+
+Micaela alzó su espada de cartón.
+
+—¿Adónde vamos?
+
+Q miró el camino del sur, luego el camino del norte y después los estantes del
+archivo, llenos de lugares que no habían sido vividos.
+
+—A las personas que quedaron fuera —dijo.
+
+Lucía meneó la cabeza.
+
+—No hacia ellas. Con ellas.
+
+Q corrigió la frase.
+
+—Con las personas que quedaron fuera.
+
+Nadie aplaudió.
+
+Por eso supo que acaso fuese verdad.
