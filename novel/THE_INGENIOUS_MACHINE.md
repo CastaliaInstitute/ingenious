@@ -3614,8 +3614,14 @@ Micaela put the sign in her backpack.
 Q looked at the empty tables, the trampled earth, and the seeds that had entered
 no dashboard.
 
-For the first time, he understood that a loss of information could also be a
-form of preservation.
+The tablet, forgotten on the table, continued asking how many buyers had not
+consented to being recorded. Micaela placed the sign over the screen again.
+Celestina took away the seeds that had entered no dashboard and left a tortilla
+folded in four.
+
+At dawn, the students found the tortilla dry and the sign covering the screen.
+They did not know whether it was a loss of data, a private sale, or an answer
+they had not learned how to count.
 
 ### Interlude: The Station That Did Not Broadcast Everything
 
@@ -3846,8 +3852,9 @@ That night he wrote a new rule in his notebook:
 
 **NOT EVERY VOICE THAT CAN BE PRESERVED WANTS TO REMAIN.**
 
-He read it to no one. He still did not know whether he had learned a rule or
-simply found a longer way to obey.
+He read it to no one. He closed the notebook, placed it beneath the three
+registers, and switched off the transmitter. The station fell silent; for once,
+no one recorded it as a failure.
 
 ### Chapter Six: The Governor of the Model Town
 
@@ -9296,11 +9303,18 @@ Q watched the pages.
 
 “There is no returned name,” he said. “There is a name being used again.”
 
-“Now you are beginning to understand,” Lucía said.
+Lucía took the stamp that said **NO** and put it in the official’s folder.
+
+“Take it with you.”
+
+“It is not authorized,” the official said.
+
+“That is why you will need it.”
 
 The workshop closed for the afternoon. The printer continued heating on its
-own. The two stamps remained on the table. The third, the one that said only
-**NO**, passed from hand to hand until no one knew who had brought it.
+own. The two stamps remained on the table. The official left with the third, the
+one that said only **NO**, and for the first time the stamp had a destination not
+listed in its catalog.
 
 ### Interlude: The Woman Who Refused a Caption
 

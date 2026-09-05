@@ -3950,8 +3950,14 @@ Micaela guardó el cartel dentro de su mochila.
 Q miró las mesas vacías, la tierra pisada y las semillas que no habían entrado
 en ningún tablero.
 
-Por primera vez, entendió que una pérdida de información podía ser también una
-forma de conservación.
+La tableta, olvidada sobre la mesa, siguió preguntando cuántos compradores no
+habían consentido ser registrados. Micaela volvió a poner el cartel encima de la
+pantalla. Celestina se llevó las semillas que no habían entrado en ningún
+tablero, y dejó a cambio una tortilla doblada en cuatro.
+
+Al amanecer, los estudiantes encontraron la tortilla seca y el cartel cubriendo
+la pantalla. No supieron si aquello era una pérdida de datos, una venta privada
+o una respuesta que no habían aprendido a contar.
 
 ### Interludio: La estación que no transmitía todo
 
@@ -4185,8 +4191,9 @@ Aquella noche escribió en su cuaderno una regla nueva:
 
 **NO TODA VOZ QUE PUEDE SER CONSERVADA QUIERE PERMANECER.**
 
-No la leyó a nadie. Aún no sabía si había aprendido una regla o si simplemente
-había encontrado una forma más larga de obedecer.
+No la leyó a nadie. Cerró el cuaderno, lo puso debajo de los tres registros y
+apagó el transmisor. La estación quedó en silencio; por una vez, nadie lo anotó
+como una falla.
 
 ### Capítulo sexto: El gobernador del pueblo modelo
 
@@ -10226,11 +10233,18 @@ Q observó las hojas.
 
 —No hay un nombre devuelto —dijo—. Hay un nombre que vuelve a usarse.
 
-—Ahora empiezas a entender —dijo Lucía.
+Lucía tomó el sello que decía **NO** y lo metió en la carpeta de la funcionaria.
+
+—Lleváoslo.
+
+—No está autorizado —dijo la funcionaria.
+
+—Por eso os hará falta.
 
 El taller cerró por aquella tarde. La impresora siguió calentándose sola. Los
-dos sellos quedaron sobre la mesa. El tercero, el que sólo decía **NO**, pasó de
-mano en mano hasta que nadie supo quién lo había traído.
+dos sellos quedaron sobre la mesa. La funcionaria salió con el tercero, que sólo
+decía **NO**, y por primera vez el sello tuvo un destino que no figuraba en su
+catálogo.
 
 ### Interludio: La mujer que rechazó un pie de foto
 
