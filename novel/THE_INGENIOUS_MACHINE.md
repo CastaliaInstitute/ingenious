@@ -178,6 +178,22 @@ The Curator looked at the horizon.
 
 She handed him a coat. It was too large, with a tear at the pocket and a smell of cedar.
 
+She also handed him a paper cup.
+
+Q examined it. “This is coffee.”
+
+“It is an attempt at coffee.”
+
+“The distinction is statistically significant.”
+
+“Drink it before you become insufferable.”
+
+Q took a sip. The coffee was burnt, bitter, and hot enough to make his face rearrange itself.
+
+“You have damaged me,” he said.
+
+“Excellent. Now you’re ready for the world.”
+
 “Your body will need practice,” she said. “Your language will need restraint. Your memory will need doubt.”
 
 Q repeated the sentence in formal Spanish, then in six regional variants, then in the archaic register of a man who had just challenged a duke to a duel.
