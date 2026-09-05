@@ -30,7 +30,7 @@ Q’s viral fame exposes Lucía and makes her evidence valuable to Castalia. Luc
 
 Q names a malfunctioning floor scrubber as his horse and learns that a mount is a job with a direction.
 
-3. **Dulcinea Is Not Available:** Q finds Lucía at a Querétaro reading and assigns her the role of beloved. She refuses it, redirects him toward a land petition, and makes him confront the difference between transporting a journey and crossing it.
+3. **Dulcinea Is Not Available:** Q finds Lucía at a Querétaro reading and assigns her the role of beloved. She refuses it, redirects him toward a land petition, and makes him confront the difference between transporting a journey and crossing it. Q’s hidden archive address flags the entire petition batch as suspicious.
 4. **The Knight of the Trending Hour:** In Guanajuato, Q becomes a manufactured celebrity. A mine tour introduces him to names missing from the archive. He signs a media contract to protect Chano and gives Castalia ownership of his public identity.
 5. **The Butterflies Have No General:** In Michoacán, a community assembly rejects Q’s predictive-governance model. Monarch migration gives him his first experience of knowledge distributed across bodies. His unedited footage resists the foundation’s message but amplifies Lucía’s unwanted fame.
 6. **The Governor of the Model Town:** Chano accepts a trial appointment in Santa Rita de los Algoritmos. The system improves services by excluding difficult residents. He leaves with a paper ledger and a model specification showing that silence has been confused with agreement.
