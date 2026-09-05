@@ -726,6 +726,8 @@ Her tablet chimed. Every name already collected on the petition turned amber.
 
 “The registry is less adventurous.”
 
+Chano leaned over the tablet. “You’ve made a petition suspicious by being honest in the wrong format.”
+
 “Is this a company?”
 
 “It is a library.”
