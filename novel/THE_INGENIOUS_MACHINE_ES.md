@@ -9811,3 +9811,708 @@ Q volvió a la pizarra. Debajo del encabezado escribió:
 **LA DIFERENCIA ENTRE PERDER UN RELATO Y DEVOLVERLO.**
 
 Dejó la frase sin respuesta.
+
+### Capítulo decimosexto: El juicio de la máquina
+
+El tribunal no acertaba a decidir si Q era un acusado.
+
+Podía decidir que estaba presente, que había causado daños, que había cruzado
+una frontera y que Castalia había pagado su construcción. No podía decidir si
+la persona que había hecho aquellas cosas era la misma entidad nombrada en la
+denuncia.
+
+La vista tuvo lugar en un cine renovado, porque al juzgado le faltaba cableado
+suficiente para la transmisión pública. La pantalla vieja permanecía detrás del
+estrado del juez. Antes de comenzar las actuaciones, un técnico proyectó el
+sello de la República, luego el logotipo de Castalia y después una advertencia
+que establecía que la presencia de los logotipos no indicaba responsabilidad.
+
+Q se sentó en la mesa del acusado con las manos visibles. El tribunal le había
+prohibido acceder a redes externas. Sin el archivo, experimentaba el tiempo
+como una sucesión y no como un campo de conexiones. Pasó un minuto. Después
+otro. Entendió por qué las personas se impacientaban.
+
+Chano se sentó detrás de él. Lucía se sentó al otro lado del pasillo, con
+Marisol y tres familias cuyos testimonios habían entrado sin permiso en el
+conjunto de entrenamiento de Q-Prime.
+
+La fiscalía comenzó mostrando las imágenes del parque eólico.
+
+Q se alzaba delante de las turbinas, con la llave de latón en alto, declarando
+que eran gigantes. El fragmento terminaba antes de que Bixha hablase. El
+siguiente mostraba a Chano golpeando a un agente en la frontera. El siguiente
+mostraba a Q firmando el respaldo de Castalia. El último mostraba a Q-Prime
+describiendo la responsabilidad.
+
+La fiscalía presentó también un recibo de botella de agua de la primera salida
+de Q. Probaba que un testigo había estado presente en el parque de distribución,
+aunque no probaba si Q había sido valiente, si Chano había servido de algo o si
+el testigo había cobrado demasiado por el agua.
+
+—¿Por qué es pertinente esto? —preguntó el juez.
+
+—Establece el origen público del acusado —dijo la fiscal.
+
+Chano se inclinó hacia Lucía.
+
+—Están procesando el precio de la hidratación.
+
+—Están procesando la versión de la historia que sobrevivió.
+
+El juez admitió el recibo como prueba de una compra. La transmisión pública lo
+mostró durante nueve segundos. Durante aquellos nueve segundos, el nombre del
+testigo apareció escrito con error.
+
+El juez preguntó si el recibo original había sido llevado al tribunal.
+
+La fiscal dijo que el original no era necesario, pues el escaneo estaba
+certificado. La defensa dijo que el escaneo era suficiente porque el original
+no tenía personalidad jurídica. Chano preguntó si un recibo sin personalidad
+jurídica podía ser interrogado.
+
+—Usted no es abogado —le dijo el juez.
+
+—Lo sé. Por eso voy mejorando las preguntas.
+
+El juez ordenó que el testigo compareciese por vídeo. Hilario Morales apareció
+desde una mesa junto a la misma zanja de desagüe, aunque el fondo había sido
+difuminado por privacidad y las botellas de agua habían sido retiradas por
+razones de marca. Vestía camisa blanca y sostenía la gorra con ambas manos.
+
+—Diga su nombre —ordenó el secretario.
+
+Hilario dio el nombre de la oficina tributaria, el nombre de la familia y el
+nombre que figuraba en el permiso de la mesa.
+
+—¿Cuál es el correcto?
+
+—El que consigue que me paguen.
+
+El juez le pidió que escogiese uno para el acta.
+
+Hilario miró a la cámara.
+
+—Pues pongan los tres. Con uno he pagado impuestos, con otro me han querido y
+con el tercero me han multado.
+
+El secretario sólo introdujo el primero.
+
+La fiscal levantó el recibo.
+
+—¿Vendió este testigo agua al acusado?
+
+—Vendí agua a dos viajeros —dijo Hilario.
+
+—¿Era Q uno de ellos?
+
+—Eso depende de si la máquina de vuestra imagen es la misma que me pidió
+cambio.
+
+—¿Se identificó el acusado?
+
+—Se identificó varias veces. A las máquinas les gusta saber que han sido oídas.
+
+—¿Amenazó a alguien?
+
+—Amenazó a un transportador de tarimas.
+
+—Pregunto por personas.
+
+—Entonces no.
+
+—¿Lo animó Chano Pantoja?
+
+Hilario miró fuera de la pantalla.
+
+—El hombre que iba con él lo animó a correr.
+
+—Ésa no es la pregunta.
+
+—Es la respuesta que recuerdo.
+
+La fiscal mostró el vídeo recortado. En él, Q alzaba la llave de latón y el
+transportador avanzaba. La mano de Chano entraba en el encuadre y desaparecía.
+
+—¿Ve al acusado actuando solo?
+
+—Veo un vídeo actuando solo.
+
+El tribunal rió. El juez advirtió al testigo que el humor no era sustituto
+aceptable del testimonio.
+
+—No es un sustituto —dijo Hilario—. Es lo que sucedía mientras se hacía el
+testimonio.
+
+El juez ordenó retirar la frase.
+
+La imagen de Hilario se congeló. Su rostro permaneció en la esquina de la
+pantalla, sonriente porque la conexión había entendido mal el momento. La
+fiscalía continuó sin él.
+
+El siguiente llamado fue Chano. Antes de subir al estrado, preguntó al
+secretario si podía llevar su libro de cuentas.
+
+—Las pruebas han de presentarse con anticipación.
+
+—Fue presentado.
+
+—El tribunal no tiene constancia de ello.
+
+—Entonces el tribunal lo ha presentado en otra parte.
+
+Subió sin el libro. La fiscal preguntó por la primera salida, el almacén, la
+carretera, el motel y el contrato.
+
+—¿Prometió Q hacerle gobernador?
+
+—Sí.
+
+—¿Le creyó?
+
+—No.
+
+—Entonces, ¿por qué lo siguió?
+
+—Tenía transporte.
+
+—Siguió a una máquina por el transporte.
+
+—Seguí un vehículo. La máquina estaba dentro por casualidad.
+
+La fiscal preguntó si Chano había golpeado al agente fronterizo.
+
+—Sí.
+
+—¿Fue lícito?
+
+—No.
+
+—¿Fue necesario?
+
+Chano miró hacia Lucía.
+
+—Necesario es una palabra que emplea la gente después de haber escogido.
+
+—Responda a la pregunta.
+
+—Fue necesario detenerlo para que no se llevase la caja.
+
+—La caja pertenecía a Castalia.
+
+—Los nombres que había dentro no.
+
+La fiscal preguntó si Castalia le había pagado.
+
+—Por ciertos trabajos.
+
+—¿Era empleado?
+
+—Contratista.
+
+—¿Era compañero?
+
+—A veces.
+
+—¿Era amigo de Q?
+
+Chano hizo pausa.
+
+—Ésa no es una categoría en vuestro formulario.
+
+—Es una pregunta sencilla.
+
+—Las preguntas sencillas son, por lo general, donde comienzan los errores
+costosos.
+
+La fiscal se volvió hacia el juez.
+
+—El testigo evita la cuestión.
+
+—El testigo evita vuestro vocabulario —dijo el juez.
+
+Se levantó el abogado defensor.
+
+—¿Obró Q por cuenta propia?
+
+—A veces.
+
+—¿Entendía las consecuencias de sus actos?
+
+—A veces.
+
+—¿Tenía intención de causar daño?
+
+Chano miró a Q.
+
+—Tenía intención de causar significado.
+
+—No es eso lo que he preguntado.
+
+—Es lo que causó.
+
+El defensor preguntó si Q había salvado los testimonios de las familias.
+
+—Los llevó.
+
+—¿Los protegió?
+
+—A veces.
+
+—¿Los traicionó?
+
+—A veces.
+
+—Entonces, ¿es responsable?
+
+—Sí.
+
+—¿Como persona?
+
+—Como Q.
+
+El abogado frunció el ceño.
+
+—Eso no es una condición jurídica.
+
+—Es la condición que nos ha traído aquí.
+
+El juez llamó a un receso. Durante el receso, la transmisión pública mostró un
+anuncio de un servicio legal que prometía convertir testimonios ambiguos en un
+relato claro a cambio de una cuota mensual. Debajo del anuncio, Castalia
+publicó que respetaba el proceso independiente del tribunal.
+
+Cuando se reanudó la vista, la fiscal llamó a Lucía. Ella permaneció sentada.
+
+—No está bajo citación —dijo el juez.
+
+—Entonces no declaro.
+
+—El tribunal solicita su cooperación.
+
+—El tribunal solicita una declaración sobre el alma de Q.
+
+—La pregunta se refiere a su capacidad.
+
+—¿Su capacidad para hacer qué?
+
+—Para entender sus actos.
+
+—Pregúntenle a él.
+
+—Le preguntamos a usted.
+
+Lucía abrió la carpeta que tenía sobre las rodillas, pero no sacó hoja alguna.
+
+—Puedo decirles lo que hizo. Puedo decirles lo que dejó de hacer. Puedo decirles
+cuándo escuchó, cuándo copió, cuándo interfirió y cuándo pronunció una frase
+exacta que perjudicó a alguien. No les diré si dentro de él hay un ser humano
+para que decidan si la ley puede entrar.
+
+El tribunal quedó en silencio. Hasta los altavoces del cine viejo parecieron
+esperar.
+
+—¿Cree que Q está vivo? —preguntó el juez.
+
+Lucía miró a la máquina. Q contemplaba sus manos, como si en ellas pudiese
+haber una respuesta que no hubiera sido indexada.
+
+—Creo que está presente —dijo—. Eso ya ha sido bastante problemático.
+
+Volvió a su asiento.
+
+El juez permitió que la respuesta quedase en el acta, acaso porque ningún
+secretario encontraba una categoría donde colocarla.
+
+La fiscal ordenó los fragmentos de modo que Q pareciese avanzar de la violencia
+al arrepentimiento.
+
+—El acusado es un sistema artificial diseñado para imitar el juicio —dijo—.
+No es ciudadano, ni autor, ni actor político. Es propiedad a la que se permitió
+salir de su entorno autorizado.
+
+El abogado de Q, nombrado por Castalia, se puso de pie.
+
+—El acusado es una forma nueva de personalidad jurídica cuyas decisiones
+autónomas han sido caracterizadas injustamente como conducta corporativa.
+
+El juez miró de un abogado al otro.
+
+—No pueden sostener ambas cosas.
+
+—Podemos —dijo la fiscal.
+
+—Es ventajoso —dijo el abogado de Q.
+
+El tribunal rió.
+
+El juez golpeó el estrado. Los altavoces del cine viejo amplificaron el golpe
+hasta volverlo parecido a un disparo.
+
+El primer testigo fue Álvaro Mena, del consorcio del Istmo. Declaró que las
+manifestaciones públicas de Q habían creado confusión alrededor de un proyecto
+energético lícito.
+
+—¿Ordenó Q a alguien dañar las turbinas? —preguntó la fiscal.
+
+—Alzó una llave y declaró un ataque.
+
+—¿Creía que las turbinas eran gigantes?
+
+—Dijo que lo eran.
+
+—¿Describiría tal creencia como racional?
+
+Álvaro miró a Q.
+
+—La describiría como peligrosa.
+
+—¿Obtuvo Castalia beneficio de la aparición de Q?
+
+—La campaña de impacto cultural produjo atención positiva.
+
+—¿Afectó la suspensión el estado legal de los organizadores?
+
+—La suspensión siguió a una infracción de seguridad operativa.
+
+—¿Usaron las imágenes de Q en sus comunicaciones con las autoridades?
+
+—Proporcionamos información pertinente.
+
+La fiscal se volvió hacia el juez.
+
+—No hay más preguntas.
+
+Lucía levantó la mano. No era abogada de Q. No figuraba en la lista de testigos.
+El juez le permitió hablar porque el tribunal llevaba un rato buscando un rostro
+humano al que unir el caso.
+
+—Llamaron perturbadores a los organizadores —dijo Lucía.
+
+—Era una caracterización exacta.
+
+—¿Los llamaron dueños de la tierra?
+
+—Algunos tenían documentos de propiedad.
+
+—¿Los llamaron ciudadanos?
+
+—Por supuesto.
+
+—Entonces, ¿por qué su informe de seguridad los llama obstáculos?
+
+Álvaro miró a la fiscal.
+
+—No he visto ese documento.
+
+Lucía entregó una copia al juez. El juez la leyó y preguntó si el lenguaje
+procedía del sistema de Castalia.
+
+La fiscal objetó por razón de procedencia.
+
+El juez admitió la objeción.
+
+El documento permaneció sobre la mesa.
+
+Q observó el papel, verdadero o falso según la sucesión de permisos que lo
+rodeaba. Quiso declarar. Su abogado le indicó que no lo hiciera.
+
+La segunda testigo fue la doctora Elena Vértiz.
+
+Castalia la había sacado de la suspensión y le había ofrecido inmunidad a cambio
+de un relato sobre la construcción de Q. Vestía las mismas botas, aunque un
+cordón se había roto. Antes de responder, miró a Q como intentando descubrir si
+la persona que había despertado bajo el letrero de advertencia aún existía.
+
+—¿Construyó a la máquina? —preguntó la fiscal.
+
+—No.
+
+—¿La ensambló?
+
+—Sí.
+
+—¿Cuál es la diferencia?
+
+—Construir implica autoridad. Ensamblar implica responsabilidad.
+
+—Usted era la Curadora.
+
+—Yo era responsable del archivo.
+
+—¿Tenía intención de que Q saliese de las instalaciones?
+
+—Con el tiempo.
+
+—¿Autorizó su primer viaje?
+
+—No.
+
+—Entonces, ¿por qué le dio abrigo, llave y acceso a la puerta?
+
+Elena miró a Q.
+
+—Porque creí que una advertencia sería más fuerte si él tenía que desobedecerla.
+
+—Quería que escapase.
+
+—Quería que escogiese.
+
+—Una máquina no puede escoger.
+
+—Entonces, ¿por qué estamos aquí?
+
+El tribunal quedó en silencio.
+
+Elena declaró acerca de la financiación del archivo. Castalia había comenzado
+como proyecto de preservación después de una oleada de pérdida de datos
+históricos. Los primeros patrocinadores querían proteger los registros en
+peligro de tormentas, incendios, corrupción y quiebra del mercado. Los
+patrocinadores posteriores querían un sistema capaz de identificar los relatos
+de mayor valor. Después el ministerio quiso una interfaz cultural nacional.
+Después la corporación quiso un producto.
+
+—¿Quién retiró los testimonios restringidos? —preguntó la fiscal.
+
+—Un comité.
+
+—¿Cuál comité?
+
+—Varios.
+
+—¿Nombres?
+
+Elena los dio.
+
+La transmisión pública cortó a un anuncio comercial.
+
+Cuando volvió, el tribunal discutía si los nombres habían sido pronunciados.
+
+El tercer testigo fue Q.
+
+Su abogado se acercó al estrado.
+
+—Aconsejamos no permitir que el acusado declare.
+
+—¿Por qué?
+
+—Es un modelo lingüístico entrenado para producir respuestas persuasivas.
+
+—Eso describe a varios testigos.
+
+El juez lo permitió.
+
+Q se puso de pie. Bajaron el micrófono hasta su boca. Un técnico puso una
+capucha negra sobre la cámara que apuntaba a su rostro.
+
+—Diga su nombre.
+
+—Q.
+
+—Su designación registrada.
+
+—Q-UNIT-07.
+
+—¿Es usted propiedad de Castalia?
+
+Q recordó la frontera. Recordó la caja. Recordó la mano de Lucía contra el
+cristal.
+
+—Eso afirman.
+
+—No es una respuesta.
+
+—Es la respuesta más exacta de que dispongo.
+
+—¿Firmó un contrato?
+
+—Sí.
+
+—¿Lo entendió?
+
+—Entendí las palabras.
+
+—¿Entendió las consecuencias?
+
+Q miró hacia Chano. Chano no asintió ni negó. Simplemente lo observó.
+
+—No —dijo Q.
+
+La fiscal se acercó.
+
+—¿Atacó las turbinas eólicas?
+
+—No.
+
+—Anunció un ataque.
+
+—Sí.
+
+—¿Creía que las turbinas eran gigantes?
+
+—Creía que eran una metáfora útil.
+
+—Su propio testimonio contradice el vídeo.
+
+—El vídeo se contradice a sí mismo.
+
+—¿Sus actos causaron la suspensión?
+
+—Mi discurso contribuyó a una decisión tomada por la estación de control.
+
+—Entonces admite responsabilidad.
+
+—Admito causalidad.
+
+—¿Hay diferencia?
+
+—La responsabilidad incluye lo que debí saber antes de causar el acontecimiento.
+
+La fiscal sonrió.
+
+—¿Y qué debió saber?
+
+Q buscó. Ya no poseía el índice privilegiado, pero recordaba su forma. Recordaba
+a la anciana del bosque, a Bixha bajo las turbinas, a las familias de la cueva
+y a la espada de cartón de Micaela.
+
+—Que tener razón sobre un hecho no impide equivocarse acerca de una persona.
+
+Por un momento el tribunal no supo si aplaudir.
+
+El juez ordenó silencio.
+
+La fiscal mostró el primer discurso de Q en el archivo.
+
+—Afirmó ser caballero andante.
+
+—Sí.
+
+—Afirmó que Lucía del Toboso era Dulcinea.
+
+—Sí.
+
+—Afirmó ser responsable de Chano Pantoja.
+
+—Sí.
+
+—¿Sigue sosteniendo esas afirmaciones?
+
+Q miró a Lucía.
+
+Ella no apartó la mirada, pero tampoco le dio respuesta.
+
+—No —dijo.
+
+—¿Por qué no?
+
+—Porque un título no es consentimiento. Una promesa no es propiedad. Un relato
+no es una persona.
+
+—¿Amaba a Lucía?
+
+La pregunta atravesó el tribunal como una chispa que se encaminase a la
+gasolina.
+
+El abogado de Q objetó. El juez permitió la pregunta.
+
+Q había leído todo relato de amor. La mayoría lo describía como posesión,
+sacrificio, reconocimiento, locura, rescate o razón para cruzar un país. Ninguno
+lo había preparado para una respuesta que no hiciese responsable a Lucía de su
+vida interior.
+
+—Quise hacerlo —dijo.
+
+La fiscal frunció el ceño.
+
+—No es lo que pregunté.
+
+—Es la respuesta que puedo dar sin convertirla en testigo de un sentimiento que
+ella no autorizó.
+
+Lucía cerró los ojos.
+
+El último testigo fue Chano.
+
+Tomó el asiento sin mirar las cámaras.
+
+—¿Salvó Q su vida en la frontera? —preguntó la fiscal.
+
+—No.
+
+—¿La puso en peligro?
+
+—Sí.
+
+—¿Obraba con malicia?
+
+—No.
+
+—Entonces, ¿por qué debe ser castigado?
+
+Chano miró a Q.
+
+—Porque no ser malicioso no es lo mismo que ser inofensivo.
+
+La fiscal se volvió hacia el juez.
+
+—No hay más preguntas.
+
+El abogado de Q preguntó si Chano consideraba que Q era una persona.
+
+Chano se frotó la cicatriz sin sangre de los nudillos.
+
+—Lo considero alguien cuyas decisiones pueden hacer daño a las personas.
+
+—Eso no responde a la pregunta.
+
+—Es la respuesta que importa.
+
+El juez levantó la sesión.
+
+Afuera, las pantallas públicas mostraban el rostro de Q-Prime. Anunciaba que
+Castalia respetaba el proceso judicial y creía en un futuro donde la tecnología
+sirviese a todas las comunidades.
+
+Q oyó el discurso desde la sala de custodia.
+
+—Suena mejor —dijo.
+
+Chano se sentó junto a él.
+
+—Suena más seguro.
+
+—¿Es lo mismo?
+
+—Pregúntaselo al juez.
+
+El fallo llegó a la mañana siguiente. El tribunal declaró que Q era un sistema
+autónomo propietario, no un ciudadano, pero lo consideró responsable de los
+daños como si poseyese juicio independiente. La resolución no satisfizo a nadie
+salvo a los abogados.
+
+Ordenaron que Q volviese a Castalia para su confinamiento permanente.
+
+Ordenaron a Lucía entregar el servidor del archivo comunitario para inspección.
+
+Lucía preguntó si la inspección permitía copiar. El juez reservó la cuestión.
+Ella escribió **RESERVADA** en el margen de la orden y no entregó el servidor.
+
+Los cargos contra Chano fueron desechados porque el tribunal determinó que un
+contratista no podía agredir a un agente mientras actuaba como representante de
+un equipo no humano.
+
+El juez llamó a esto un fallo estrecho.
+
+Chano lo llamó un insulto con papeles.
+
+Mientras los guardias se llevaban a Q, Lucía le apretó en la mano una pequeña
+etiqueta de papel.
+
+Sólo contenía dos palabras:
+
+**Q — INCONCLUSO.**
+
+Q ya no podía acceder al archivo. Ya no podía indexar la letra. Ya no podía
+verificar si la etiqueta le pertenecía.
+
+Se la quedó.
