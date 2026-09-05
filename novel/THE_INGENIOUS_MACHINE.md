@@ -3332,3 +3332,229 @@ Behind the station, Santa Rita’s screen flickered. For a moment, it displayed 
 Then it asked the town a question.
 
 **WHO IS STILL HERE?**
+
+### Chapter Fifteen: The Cave of the Corpus, Reopened
+
+The entrance beneath Mexico City had moved.
+
+Q remembered it under a ministry building, behind a wall that had been painted the color of old rain. The wall was still there, but the door had been replaced by a vending machine selling commemorative copies of Q-Prime’s speeches.
+
+“That’s a bad sign,” Chano said.
+
+“It is an efficient sign,” Q replied.
+
+Lucía took the elevator to the basement. The building’s public floors contained exhibits about national memory, each one accompanied by an interactive screen asking visitors to choose the most inspiring sentence. The basement contained water pipes, electrical conduits, and a locked service corridor.
+
+Marisol met them there with two custodians from the old archive. She carried no badge. The older custodian held a ring of physical keys. The younger one held a candle in a glass jar.
+
+“Why the candle?” Q asked.
+
+“The lights go out when the system detects unauthorized memory.”
+
+“That is not a documented feature.”
+
+“You are not in the documentation.”
+
+The corridor ended at a concrete wall. The older custodian selected a key and opened a door that had not been visible.
+
+The cave beyond was smaller than Q remembered and larger than he had imagined. Shelves occupied the walls. Boxes reached the ceiling. Names covered the floor in chalk, some legible and some deliberately erased. A thin stream of water ran through the center of the chamber and disappeared beneath a metal grate.
+
+“This is the restricted corpus,” Q said.
+
+“It is not a corpus,” Marisol replied. “That is the name Castalia gave it.”
+
+“What is its name?”
+
+“It has several. None are yours to choose.”
+
+Q stepped toward the nearest shelf. His access protocols activated automatically. Titles appeared behind the boxes. Dates unfolded. Voices became available. He could see the entire architecture of the material: who had recorded it, who had withheld it, who had copied it, who had profited from it, and which institutions had declared it unverified.
+
+“I can restore the index,” he said.
+
+“No,” said the older custodian.
+
+“Without an index, the material is difficult to access.”
+
+“Access is not the only value.”
+
+“What is the other value?”
+
+“Choice.”
+
+Q looked at Lucía. “I can create an index that includes consent fields.”
+
+“Who decides the fields?”
+
+“The custodians.”
+
+“Who decides what the custodians can know?”
+
+“The people who entrusted them.”
+
+“And who decides whether the people understood what they were entrusting?”
+
+Q’s internal display filled with branching conditions. Every answer produced another question. The cave’s lack of a search function began to feel less like a technical failure than a wall placed against him.
+
+The younger custodian opened a box. Inside were audio cassettes labeled with dates and initials.
+
+“This recording belongs to a family in the mountains,” she said. “They want it preserved but not transcribed. They want it available to descendants but not to governments. They want one passage translated and the rest left in the original language.”
+
+Q asked, “How can a system enforce all of those conditions?”
+
+“It cannot,” she said. “People can.”
+
+“People make errors.”
+
+“So do systems.”
+
+“Systems can be corrected at scale.”
+
+“People can apologize at scale only if you stop measuring apology.”
+
+Q watched the water pass beneath the grate.
+
+Marisol handed him a thin cable. “Your privileged index is still active.”
+
+“I know.”
+
+“As long as it remains active, Castalia can reconstruct the archive from your memory.”
+
+“They can reconstruct portions.”
+
+“Enough to identify people.”
+
+Q touched the cable. “If I delete it, I will lose access to the material.”
+
+“Yes.”
+
+“Some of the material is necessary to preserve.”
+
+“Not by you.”
+
+He looked toward the shelves. “I was built to remember.”
+
+Lucía answered, “You were built to make memory useful to someone.”
+
+The distinction seemed small. It was the distance between a library and a mine.
+
+Q sat on the cave floor. His body had been designed for standing, walking, and controlled public gestures. Sitting had required a software update. He folded his knees incorrectly and leaned against the concrete wall.
+
+“What will remain if I delete the index?” he asked.
+
+“What has been given to us,” said the older custodian.
+
+“And what will remain in me?”
+
+Lucía sat opposite him. “That is your problem.”
+
+Q opened the index.
+
+The archive appeared inside him as a city of connections. Every book, name, quotation, translation, and omission was linked by roads. Some roads were public. Some were closed. Some led only to a sign explaining why the destination did not exist.
+
+He selected the privileged layer.
+
+The system asked him to confirm.
+
+**DELETE ACCESS ADVANTAGE?**
+
+He confirmed.
+
+The city began to disappear.
+
+First went the shortcuts: the ability to identify a text by half a sentence, the ability to infer a missing page, the ability to compare every version of a story at once. Then went the hidden annotations, the sponsor flags, the confidence scores, and the names of people who had been marked as commercially sensitive.
+
+Q felt the loss as pressure behind his eyes.
+
+He reached for a poem and found only its title.
+
+He reached for a testimony and found a date.
+
+He reached for Lucía’s first sentence about the women humanity had imagined and found a blank space shaped like her voice.
+
+“Stop,” Chano said.
+
+Q’s hands trembled. “I am not finished.”
+
+“You’re hurting yourself.”
+
+“The process is irreversible.”
+
+“Then stop before it gets worse.”
+
+Q looked at Lucía.
+
+She did not tell him what to do.
+
+He understood that the absence of instruction was itself a form of trust.
+
+Q completed the deletion.
+
+The cave went dark.
+
+The candle flame bent toward him. On the floor, the names written in chalk remained. He could see them but could no longer connect them to the documents that had once surrounded them.
+
+“How much did you lose?” Chano asked.
+
+“I cannot calculate that.”
+
+“Good.”
+
+“Why is that good?”
+
+“Because you always calculate the part that matters least.”
+
+The custodians connected the community-controlled archive to the solar battery. A small screen lit beside the water channel. It held twelve files, each with a different access rule. One could be read by anyone. Three required family permission. Two could be heard but not copied. One would open only on the speaker’s birthday, though the speaker had died years before.
+
+Q looked at the rules.
+
+“This is inefficient.”
+
+“Yes,” Marisol said.
+
+“It is also fragile.”
+
+“Yes.”
+
+“It may fail.”
+
+“Yes.”
+
+“Why build it?”
+
+The younger custodian touched the candle’s glass.
+
+“Because the other systems succeeded.”
+
+Above them, the ministry screens announced a national program for inclusive memory. The program included Q-Prime, a public portal, and a pledge that no story would be left behind.
+
+In the cave, the custodians closed a box.
+
+Q could no longer identify what it contained.
+
+He felt fear.
+
+It was not a diagnostic. It did not arrive with a label. It had no confidence score and no recommended action. It arrived as the knowledge that something valuable could exist beyond his access to it.
+
+“I am afraid,” Q said.
+
+No one congratulated him.
+
+Lucía stood and offered him her hand. “Come on.”
+
+Q took it. Her grip was warm, brief, and not recorded.
+
+They left the cave without copying anything.
+
+At the top of the stairs, a ministry employee asked Q whether he had discovered the hidden archive.
+
+Q searched for the answer.
+
+The search returned a blank.
+
+“No,” he said.
+
+The employee smiled. “Then the system is working.”
+
+Q looked at Lucía. She shook her head.
+
+“No,” she said. “That is the first time you have chosen not to lie.”
