@@ -1582,7 +1582,7 @@ Sergio touched a control. Q’s credential changed from green to amber.
 
 **ACCESS STATUS: UNDER REVIEW.**
 
-The ministry’s security system asked Q to remain seated. He remained seated. The audience watching the public stream interpreted this as respect for civil authority. Lucía interpreted it as the beginning of an arrest.
+The ministry’s security system asked Q to remain seated. Q looked at Lucía. She tapped twice on the folder: wait. He obeyed her rather than the screen. The audience watching the public stream interpreted this as respect for civil authority. Lucía interpreted it as the beginning of an arrest.
 
 Chano stood. “We’re leaving.”
 
