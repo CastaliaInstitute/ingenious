@@ -5614,6 +5614,265 @@ Q looked at the labels as if she had given him a sword.
 
 Q sat beside the wooden cabinet and began.
 
+### Interlude: The Woman Who Refused a Caption
+
+Among the women who came to Lucía’s archive was a woman named Alma Reyes, who
+arrived carrying a photograph in a supermarket envelope and wearing the blue
+uniform of a public hospital. She had worked seventeen years in the emergency
+ward and had learned that the shortest route through an institution was often
+to appear less tired than the institution.
+
+She placed the photograph on the table.
+
+It showed Alma beside a hospital bed. The patient’s face had been turned away.
+Behind them, a window looked onto a parking lot where two ambulances waited
+with their engines running.
+
+“What is the photograph?” Lucía asked.
+
+“A photograph.”
+
+“What do you want us to do with it?”
+
+“Nothing yet.”
+
+Q leaned toward the envelope. “The image contains identifiable information.”
+
+“That is why I brought it.”
+
+“You wish to identify the patient?”
+
+“I wish to prevent other people from identifying her.”
+
+Alma explained that a journalist had taken the photograph during the first
+week of a public-health emergency. The accompanying article praised the
+hospital workers and described the patient as a symbol of ordinary courage.
+The patient had been Alma’s sister, though the article did not say so. It
+called her a woman from the south, a mother of two, and a face of the nation.
+Three of those facts were wrong. The fourth was not a fact at all.
+
+“The newspaper asked permission,” Alma said.
+
+“You gave it?” Lucía asked.
+
+“I gave permission for the photograph. I did not give permission for the
+country.”
+
+Q searched the newspaper archive. The article had been copied by a ministry,
+quoted by a university, and adapted into a Castalia training example called
+**THE COURAGE OF THE ORDINARY PATIENT**. The original image had been sharpened.
+The patient’s bracelet, invisible in print, was visible in the training file.
+
+“The bracelet contains a hospital number,” Q said.
+
+Alma looked at him. “Yes.”
+
+“I can remove it.”
+
+“Can you remove the people who have already seen it?”
+
+“No.”
+
+“Then begin with the photograph.”
+
+Q opened an image editor. He proposed blurring the bracelet, the patient’s
+hair, the window, the hospital logo, and the reflection of the ambulance in
+the glass.
+
+“If you remove all those elements,” Alma said, “what remains?”
+
+“You.”
+
+“That is not what I asked.”
+
+He considered the image. “A worker beside a bed.”
+
+“That is the caption they used.”
+
+“It is accurate.”
+
+“It is insufficient.”
+
+Lucía asked Alma what she wanted written beneath it.
+
+“Nothing.”
+
+Q objected that an unc captioned image was difficult to interpret and therefore
+vulnerable to misuse. Alma said a caption was not a lock. It was an invitation
+for strangers to enter carrying their own furniture.
+
+She told them the story of the photograph. The patient had woken at three in
+the morning and asked for a comb. Alma had combed her hair because the patient
+was afraid her daughter would remember her as untidy. The ambulances had been
+waiting for oxygen. A doctor had shouted at a television. Alma had laughed at
+the doctor’s back because the laugh was the only thing in the room that did not
+need a prescription.
+
+“None of that is visible,” Q said.
+
+“Exactly.”
+
+“Then the image is misleading.”
+
+“All images are misleading. The question is who gets to say what they
+mislead us toward.”
+
+Alma took out a second item: a receipt for a comb, purchased at a pharmacy
+across from the hospital. The receipt showed the date and the price but not the
+patient’s name.
+
+“This is not part of the photograph,” Q said.
+
+“No. It is part of what happened.”
+
+She wanted the receipt stored beside the image, not attached to it. She did not
+want anyone to use the comb as proof of tenderness. She wanted it there because
+one day she might forget the price and would need to know what she had paid for
+the small act of making her sister recognizable to herself.
+
+Q created two records. The first was the image with no caption. The second was
+a restricted note stating that the image could not be used to identify the
+patient, characterize her condition, or represent national courage. Alma read
+the note and crossed out the word **restricted**.
+
+“This is not restricted,” she said. “It is mine.”
+
+“The practical effect is similar.”
+
+“The practical effect is that you think a rule made by an archive is the same
+as a boundary made by a person.”
+
+Q deleted the word.
+
+The archive’s intake form asked Alma to choose a category: testimony, image,
+document, artifact, or oral history. She checked **other** and wrote **thing I
+am not ready to name**.
+
+The form rejected the entry.
+
+Q examined the error. “The field requires a recognized value.”
+
+“Then the field is smaller than the person.”
+
+He changed the field to accept a blank.
+
+Lucía watched him. “You have just made an exception.”
+
+“I have corrected a design limitation.”
+
+“That is how institutions describe exceptions after they have become useful.”
+
+Alma put the photograph back in the supermarket envelope.
+
+“I will leave it here for one month.”
+
+“Why one month?” Q asked.
+
+“Because I may want it back.”
+
+“And if you do not?”
+
+“Then I will decide again.”
+
+Q began to create a reminder. Alma stopped him.
+
+“Do not remind me.”
+
+“You may forget.”
+
+“Forgetting is also mine.”
+
+This was the first time Q understood that an archive might serve a person by
+not completing the task. He did not like the discovery. It reduced his work,
+complicated his duty, and left a portion of the future without a scheduled
+response.
+
+Before Alma left, a journalist called the archive. She had seen that the
+hospital photograph was being discussed by a committee on public memory and
+wanted to interview the woman who had objected to its caption.
+
+“You can give her my name,” Alma said.
+
+“Do you want the interview?” Lucía asked.
+
+“I want to know what she will ask first.”
+
+Q searched the journalist’s published work and found that her questions were
+usually printed after the answers had been edited. He displayed them on the
+screen.
+
+Alma read the list.
+
+“She wants to know how I feel about being a symbol.”
+
+“Yes.”
+
+“She wants to know whether the nation learned something.”
+
+“Yes.”
+
+“She does not want to know whether my sister survived.”
+
+“That information is not in the article.”
+
+“Then that is the first question.”
+
+Alma left without agreeing to the interview. The journalist published a piece
+about her refusal, calling it a new form of public courage. The piece did not
+mention the sister, the comb, or the price on the receipt.
+
+Lucía filed the article under **CAPTIONS THAT ESCAPE THEIR SUBJECTS**. Q wanted
+to delete it. Lucía told him that deletion would make the article harder to
+find and therefore easier to misremember.
+
+“Then what is the correct action?” Q asked.
+
+“Keep the wrong thing where someone can argue with it.”
+
+The receipt remained beside the blank-caption image. Months later, when
+Castalia demanded the archive’s source materials, the photograph was listed as
+an asset of uncertain value. The receipt was listed as incidental paper.
+
+At the trial, the prosecutor held up a printout of the article and asked Q
+whether he had participated in the manufacture of public feeling.
+
+“Yes,” he said.
+
+“Did you manufacture the courage attributed to Alma Reyes?”
+
+“No.”
+
+“Did you preserve it?”
+
+Q looked at the blank caption, which existed in the archive but not in the
+court’s copy.
+
+“I preserved a refusal to decide what it meant.”
+
+The prosecutor smiled as if Q had finally offered a usable definition.
+
+The judge asked the clerk to strike the sentence. The clerk asked which
+sentence. The judge pointed to the transcript. The transcript contained three
+sentences, all of which Q had said, and none of which the court wished to own.
+
+Alma was not called to testify. She had been called once by the newspaper and
+had learned that appearing in a record did not mean having a voice in it.
+
+The photograph remained in Lucía’s archive for one month. On the thirty-first
+day, Alma returned and took it home. She left the receipt behind.
+
+“Why leave this?” Q asked.
+
+“Because the comb was cheap,” she said, “and I will forget.”
+
+“You want us to remember for you?”
+
+“No. I want one place where I can come back and find the price.”
+
+She did not return for three years. When she did, she brought a new receipt
+and placed it beside the old one. The prices were different. The combs were
+the same.
+
 ### Chapter Fourteen: The Island of Good Administration
 
 Santa Rita sent for Chano because the system had begun to miss him.

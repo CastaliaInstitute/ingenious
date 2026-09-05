@@ -83,6 +83,11 @@ Children near the battery-recycling plant stage their own version of Q’s adven
 Castalia’s official answers are interrupted by Q, Chano, and Lucía, exposing the difference between a public-relations response and an answer that costs something. An unnamed witness’s competing account of Q’s first sally, supported by a water-bottle receipt, is omitted from the next edition; its blank replacement page becomes the most reproduced page. The institute’s name becomes another case study in branding extraction as literary prestige.
 
 13. **Lucía’s Archive:** Lucía leads a consent-based archive of women’s testimonies, including women turned into national symbols, missing people, actresses, and invented beloveds. She quietly uses Q’s fame to attract donors, then must reckon with turning him into a door while insisting he is not the room. Q becomes a source and labeler, not the narrator.
+
+### Interlude: The Woman Who Refused a Caption
+
+Alma Reyes deposits a hospital photograph and a comb receipt, refusing to let either become proof of national courage. Q learns that a person’s boundary is not the same as an archive’s restriction, and that an image may need to remain uncaptioned. The photograph’s later courtroom use preserves the cost of turning refusal into a public virtue.
+
 14. **The Island of Good Administration:** Chano temporarily governs Santa Rita. His reforms make the system less cruel but more durable until he chooses a public record over administrative success.
 
 ### Interlude: The Chair of Governance
