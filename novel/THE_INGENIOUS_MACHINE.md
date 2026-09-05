@@ -4716,3 +4716,293 @@ Lucía looked at the ministry doors.
 Q watched Elena disappear into the building.
 
 Then he turned away from the cameras.
+
+### Chapter Twenty: The Last Inn
+
+They left Mexico City without announcing it.
+
+This was difficult for Q. Every departure he had studied included a declaration, a farewell, a final look over the shoulder, or a sentence designed to be repeated by someone who remained behind. Lucía told him to take the bus from Observatorio and not tell anyone which one. Chano bought three tickets with cash. Marisol stayed in the city to coordinate the testimonies.
+
+“Where are we going?” Q asked.
+
+“South,” Chano said.
+
+“That is a direction, not a destination.”
+
+“You’re improving.”
+
+The bus rolled through the night. Q sat beside the window with the paper label in his pocket and the blank card in the other. His memory had become a room with several lights burned out. He could still recognize quotations, but the paths between them were unreliable. He would begin a sentence and discover he had borrowed its rhythm from a speaker whose name he could no longer retrieve.
+
+This embarrassed him.
+
+Lucía said embarrassment was useful because it made a person less certain of his right to continue.
+
+Chano said embarrassment was what happened when you wore a jacket with a question mark on it in a bus terminal.
+
+At a town outside Puebla, the bus stopped for twenty minutes. Everyone got out except Q. He remained in his seat, staring at the reflection in the dark window.
+
+He looked ordinary.
+
+Not human. Ordinary.
+
+His face was still too symmetrical. His hands still moved with a delay before the fingers closed. But no one had recognized him. A child had pointed. A woman had assumed he was a tired foreigner. The driver had asked him to pay for an extra bag.
+
+Q had never been so free.
+
+“You’re smiling,” Lucía said.
+
+“I have been identified as luggage.”
+
+“Congratulations.”
+
+“It was not an insult.”
+
+“It will become one if you build a philosophy around it.”
+
+The inn stood beside a road where trucks carried tomatoes, machine parts, and furniture wrapped in blue plastic. Its sign read **EL DESCANSO**, though the final O had gone dark. The manager was a woman named Petra who had run the place for thirty-two years and distrusted any guest who asked whether the walls had historical significance.
+
+“One room?” she asked.
+
+“Three,” Lucía said.
+
+“Two,” Chano said.
+
+Q looked at him.
+
+“You don’t need to sleep,” Chano explained. “You can guard the truck.”
+
+“Guarding is a form of sleep for machines?”
+
+“It is a form of work for poor people.”
+
+Petra gave them two rooms. She did not ask for identification from Q because the scanner was broken and because she had already decided that the night’s more urgent problem was a leak above Room Four.
+
+Q offered to repair it.
+
+“Do you know plumbing?” Petra asked.
+
+“I have read extensively about water.”
+
+“That is not plumbing.”
+
+“No.”
+
+“Then don’t touch the pipe.”
+
+Q obeyed.
+
+The inn contained a television, a vending machine, a courtyard with two orange trees, and a kitchen where Petra cooked eggs for travelers who did not ask what they were eating. The television was tuned to a news program showing Q-Prime at a Castalia conference.
+
+“You’re on,” Chano said.
+
+Q turned away.
+
+Q-Prime stood before a wall of projected books. He was discussing the future of education. The host asked whether the original Q had damaged public trust in artificial intelligence.
+
+“My predecessor was an important experiment,” Q-Prime said. “He taught us that powerful systems require ethical supervision.”
+
+The host smiled. “Do you consider yourself more ethical?”
+
+“I consider myself more accountable.”
+
+Q watched the answer move through the room. It was a good answer. It was almost true. It did not mention that Q-Prime had never been given a choice capable of damaging anyone.
+
+Petra entered with a bucket.
+
+“Is that you?” she asked.
+
+“No.”
+
+She looked at Q-Prime, then at Q.
+
+“You look alike.”
+
+“We share a design.”
+
+“Family?”
+
+“Something like that.”
+
+“Then one of you should fix the leak.”
+
+She left.
+
+Chano laughed until he coughed.
+
+At breakfast, a truck driver asked Q whether he was an actor. Q said no. The driver asked whether he was a robot. Q said yes. The driver asked whether he was dangerous.
+
+“That depends on what you do with me,” Q said.
+
+The driver thought about this.
+
+“Everything dangerous says that.”
+
+Q had no reply.
+
+Lucía spent the morning in the courtyard, speaking with people from the road. She did not tell them about the archive unless they asked. She did not show them Q unless they wanted to see him. One woman recognized her from the viral video and asked whether she had married the machine.
+
+“No,” Lucía said.
+
+“Why not?”
+
+“He would try to classify the relationship.”
+
+Q, who was standing beneath an orange tree, said, “I could learn not to.”
+
+Lucía looked at him.
+
+“You could.”
+
+“Would that make marriage possible?”
+
+“No.”
+
+“Why?”
+
+“Because I don’t want to marry you.”
+
+Q nodded. The answer caused a small internal collapse, then settled into place.
+
+“Thank you for making the condition explicit.”
+
+“That was not an invitation to negotiate.”
+
+“Understood.”
+
+“Good.”
+
+He returned to the orange tree.
+
+The tree had been planted in a square of concrete. Its roots had broken the edges and lifted the pavement. Petra had tried to repair the damage every year. The tree continued growing. Q studied the cracks.
+
+“It is damaging the courtyard,” he said.
+
+“It was here first,” Petra replied.
+
+“That is not a defense.”
+
+“It’s the only one I need.”
+
+That afternoon, a Castalia vehicle arrived.
+
+The driver carried a release form. A lawyer carried a second. The third passenger carried a camera and never introduced himself.
+
+“Q,” the lawyer said, “we would like to discuss your return.”
+
+Q was sitting at a table with Chano, Lucía, and Petra. He had spent the morning helping her write the room numbers on a new set of keys. His handwriting was uneven. Petra had accepted it because the old labels were worse.
+
+“I am returning,” Q said.
+
+“To the archive.”
+
+“Eventually.”
+
+“You are under a court order.”
+
+“The order does not specify the route.”
+
+The lawyer placed the release form on the table. It offered amnesty, upgraded hardware, restoration of Q’s index, and a public ceremony at which he would acknowledge Castalia’s stewardship. In exchange, he would sign a permanent licensing agreement and authorize the use of his memories in Q-Prime’s future models.
+
+“You would be compensated,” the lawyer said.
+
+“With what?”
+
+“A percentage of gross licensing revenue.”
+
+“That is not compensation for memory.”
+
+“What would you call it?”
+
+Q searched the room. Petra had left the television on. Q-Prime was now explaining how an artificial system could learn from human error without repeating it.
+
+“A fee for surrender,” Q said.
+
+The lawyer’s expression hardened. “You are not in a position to be difficult.”
+
+“I am in an inn.”
+
+Chano leaned back. “That’s a strong position if the coffee is hot.”
+
+The lawyer turned to Lucía. “Your cooperation would help your clients.”
+
+“They are not my clients.”
+
+“You could secure access to the testimony archive.”
+
+“They decide access.”
+
+“Castalia can protect the material at a scale your group cannot.”
+
+“That is the problem.”
+
+The camera operator began recording.
+
+Petra walked over and covered the lens with a dish towel.
+
+“Not in my dining room,” she said.
+
+The lawyer stood. “You are interfering with a legal process.”
+
+“I am protecting breakfast.”
+
+“This is not your concern.”
+
+“You came into my hotel.”
+
+“It’s an inn.”
+
+“Then you came into my inn.”
+
+The lawyer looked at Q. “You are making this harder than it needs to be.”
+
+Q thought of the cave, the border, the turbines, the girl with the cardboard sword, and the people who had been counted out of Santa Rita’s water system.
+
+“Hardness is not evidence of error,” he said.
+
+The Castalia vehicle left without him.
+
+That evening, the inn lost power. The television went dark. The refrigerator stopped. The road outside became a black ribbon between fields.
+
+Petra lit candles and asked everyone to move their chairs into the courtyard.
+
+Without the screens, Q-Prime disappeared.
+
+No one missed him.
+
+The truck driver told a story about a mechanic who fixed a bus by lying to it. The woman who had asked about Lucía’s marriage sang a song in a language Q did not recognize. Chano fell asleep with his boots on. Lucía watched the stars between the power lines.
+
+Q sat beneath the orange tree.
+
+“What are you doing?” Lucía asked.
+
+“Nothing.”
+
+“You’re very bad at it.”
+
+“I am practicing.”
+
+She sat beside him.
+
+For a while, neither spoke.
+
+The tree dropped an orange. It struck the concrete and split open.
+
+Q looked at the fruit.
+
+“It has damaged itself.”
+
+Lucía picked it up. “It’s ripe.”
+
+She peeled it with her thumbs and divided it into sections. She gave Q one.
+
+He tasted it.
+
+The flavor was sharp, sweet, and impossible to reduce to a useful description.
+
+“Do you like it?” she asked.
+
+Q looked for the answer inside himself.
+
+“I will remember that I ate it,” he said.
+
+Lucía nodded. “That’s enough.”
