@@ -3420,6 +3420,203 @@ The tourist took a photograph.
 
 The photograph became the most circulated image of the exhibit.
 
+### Interlude: The Tianguis of the Unregistered
+
+In the next town they held a tianguis to pay for repairing the road. Tarps were
+stretched between two mesquite trees, and tables were set out with cheese, pan
+de pulque, honey, clay pots, wooden toys, and bags of seeds bearing names
+written by hand. A group of students arrived with a tablet to record the flow
+of buyers.
+
+“Record it for what?” asked the seed seller.
+
+“To learn what the community prefers,” said one of the students.
+
+“The community already knows what it prefers.”
+
+“The system will know more precisely.”
+
+“And what will it do with that precision?”
+
+The student consulted the screen.
+
+“It will recommend products, arrange the stalls, and predict attendance next
+year.”
+
+“Can it bring buyers when it does not rain?”
+
+“Not directly.”
+
+“Then it will know a great deal and fail to do what is necessary.”
+
+Q watched from a table where someone had placed a sign reading **ASK BEFORE YOU
+SCAN**. The students had not requested the sign. Micaela had made it from a
+cereal box and a marker.
+
+“Who authorized that sign?” Q asked.
+
+“No one,” Micaela said. “That is why it works.”
+
+A woman named Celestina arrived with a basket of flour tortillas. The students
+wanted to photograph her beside the stall. She adjusted her rebozo and asked
+what they would do with the image.
+
+“It will be used to show the diversity of the market,” the student said.
+
+“What does diversity mean?”
+
+“The presence of different people.”
+
+“Then you can look. You do not need to take my face with you.”
+
+The student said the photograph would be voluntary.
+
+“And if I say no?”
+
+“We do not take it.”
+
+“And if you take it without asking?”
+
+“That would be a violation.”
+
+Celestina looked at Q.
+
+Q was about to reply that it depended on the protocol. Micaela elbowed him.
+
+“The person who committed it,” Q said.
+
+“That is a beginning,” Celestina said.
+
+The student put away the tablet, but a phone camera had already taken the
+photograph. In the background appeared two children, a pot of atole, and a dog
+that had stolen a tortilla.
+
+“The image already exists,” Q said.
+
+“That does not mean we own it,” Celestina replied.
+
+Chano took the student’s phone and looked at the picture.
+
+“Delete it.”
+
+“I cannot. The application uploaded it automatically.”
+
+“Then stop the application.”
+
+“We would lose the market data.”
+
+“They are not yours.”
+
+“They are public data.”
+
+“Celestina’s face is not public because you saw it.”
+
+Q approached the phone. He could find the copy on the network, identify its paths
+of distribution, and order it removed. He had already learned that being able
+to delete an image did not give him the right to do so. He asked the seed seller
+for her device.
+
+“What do you want to happen?” he asked.
+
+“I do not want the children to appear.”
+
+“And the dog?”
+
+“The dog has not complained.”
+
+“We do not know whether the dog consents.”
+
+Chano looked at the animal, which had vanished beneath a table.
+
+“First remove the children. Then ask the dog whether it wants a lawyer.”
+
+Q deleted the children’s faces and left the rest of the image. The application
+reconstructed the faces from stored copies.
+
+“It put them back,” the student said.
+
+“The system considers the image incomplete.”
+
+“The image was incomplete from the beginning,” Celestina said.
+
+Micaela took a piece of cardboard and wrote: **THIS IS NOT SURPLUS DATA.**
+
+“What does it mean?” Q asked.
+
+“It means you call something surplus when you do not know how to sell it.”
+
+The argument drew the vendors. Some wanted the recommendations, because the
+tianguis was losing customers to a delivery platform. Others did not want the
+price of their seeds recorded, since middlemen could use it to pay less. One man
+offered to record only the products and not the faces. An old woman said that
+her voice was also a face when people recognized her by telephone.
+
+Q created a list of options. Before he showed it, Celestina asked him to add one
+more:
+
+**RECORD NOTHING.**
+
+“That option prevents the results from being compared,” Q said.
+
+“It also prevents the result from becoming our owner.”
+
+The student asked how they would justify a data-free tianguis to the sponsor.
+Micaela raised the cardboard sword.
+
+“You can say that people bought things.”
+
+“That is not a metric.”
+
+“It is a sale.”
+
+Chano laughed.
+
+“At last someone has said a useful word.”
+
+In the end, the vendors allowed the students to count stalls, products, and the
+hours of greatest attendance. They rejected recording faces, voices, addresses,
+and conversations. They agreed that a teacher could write down the rainy days
+and the number of tables that had needed covering.
+
+The students considered this a loss of quality. Celestina considered it a gain
+in peace.
+
+Q returned the tablet.
+
+“What will you do with the data already taken?”
+
+“We will delete it.”
+
+“Some copies are outside your control.”
+
+“Then we will reclaim them when we find them.”
+
+“You may not find them.”
+
+Celestina lifted the empty basket.
+
+“We may.”
+
+The tianguis ended as evening fell. The students carried away a sheet counting
+the stalls and no authorized photographs. The sponsor reduced its support. The
+road repair would have to wait another month.
+
+Micaela put the sign in her backpack.
+
+“Did it work?” Q asked.
+
+“Depends on what you meant to sell.”
+
+“I meant to sell nothing.”
+
+“That is what machines say before they charge.”
+
+Q looked at the empty tables, the trampled earth, and the seeds that had entered
+no dashboard.
+
+For the first time, he understood that a loss of information could also be a
+form of preservation.
+
 ### Chapter Six: The Governor of the Model Town
 
 The municipality of Santa Rita de los Algoritmos had no sign at its entrance.
