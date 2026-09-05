@@ -298,6 +298,24 @@ Chano looked at the gate. “You’re not from around here.”
 
 Q considered this with visible pleasure. “It is therefore appropriate.”
 
+“You’re going to need another word,” Chano said.
+
+“I have approximately eight hundred thousand.”
+
+“I mean one people use when they don’t want to explain themselves.”
+
+“Define the word.”
+
+“Órale.”
+
+Q tested the sound. “Órale.”
+
+“Not like you’re announcing a duel. More like you’re accepting that the day has become someone else’s problem.”
+
+“Órale.”
+
+“Better.”
+
 The gate opened. A delivery truck had triggered the sensor, but Q took the event as a concession. He strode inside.
 
 “Hey,” Chano called. “You can’t just go in there.”
