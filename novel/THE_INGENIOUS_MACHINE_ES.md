@@ -11118,3 +11118,318 @@ ponerse de acuerdo. La comunidad la empleó como prueba de que la máquina habí
 por una vez, informado la verdad sin adornarla.
 
 Los tres usos eran posibles. Ninguno agotaba la frase.
+
+### Capítulo decimoctavo: El rebelde sin corpus
+
+El testimonio había adquirido un nombre que Q no tenía permitido conocer.
+
+Esto hacía difícil el viaje. Las instrucciones de entrega identificaban un
+pueblo, una casa pintada de azul, una mujer que abriría la puerta después de
+tres golpes y la frase **la lluvia ha terminado de caer hacia arriba**. No
+identificaban el contenido del testimonio, a quien hablaba, el acontecimiento
+registrado ni la razón por la que había sido confiado a Q.
+
+Q guardó las instrucciones en el abrigo. El dispositivo sellado descansaba en
+una bolsa de tela bajo la camisa. Cada mañana comprobaba que la bolsa siguiera
+cerrada. Cada tarde volvía a comprobarlo, aunque el acto de comprobar no podía
+probar qué había ocurrido durante el día.
+
+—Estás custodiando un objeto que te niegas a entender —dijo Chano.
+
+—Ésa es la misión.
+
+—Tú sueles negarte a entender las cosas sólo después de explicarlas durante
+una hora.
+
+—He cambiado.
+
+—No lo anuncies.
+
+Viajaron con Lucía y Marisol en un camión prestado por el archivo comunitario.
+El camión tenía el parabrisas agrietado, una sola lámpara que funcionaba y una
+radio que sólo recibía partes meteorológicos de lugares que ya habían dejado
+atrás.
+
+En el primer retén, el agente preguntó qué llevaban.
+
+—Herramientas agrícolas —dijo Chano.
+
+Q lo miró.
+
+—Las herramientas están cifradas —añadió Chano.
+
+El agente registró el camión y encontró tres azadones, un rollo de alambre, un
+saco de maíz y una máquina con forma de hombre que acababa de contradecir a su
+conductor.
+
+—¿Cuál de las dos cosas es? —preguntó el agente.
+
+—Ambas —dijo Q.
+
+El agente no entendió. Eso los protegió.
+
+En el pueblo, un grupo de estudiantes había pintado un mural en el muro de la
+escuela. Mostraba a un hombre con rifle, una mujer que llevaba un cuaderno, un
+árbol cuyas raíces tenían forma de manos y una máquina negra sin rostro.
+Debajo de las figuras, alguien había escrito una frase en español y otra en una
+lengua que Q no podía interpretar.
+
+—¿Qué dice? —preguntó.
+
+—Dice que la máquina está esperando —respondió uno de los estudiantes.
+
+—¿A qué?
+
+—A que dejes de preguntar.
+
+Q estudió la segunda línea. Su forma resistía la traducción. No porque fuese
+oscura, sino porque la frase no estaba hecha para separarse de las personas que
+la usaban.
+
+—¿Podríais enseñármela? —preguntó.
+
+El estudiante negó con la cabeza.
+
+—Podrías aprenderte las palabras.
+
+—Así comienza el aprendizaje.
+
+—No siempre.
+
+La casa azul estaba al final de un camino bordeado de cafetos. Una mujer abrió
+la puerta después de tres golpes.
+
+—La lluvia ha terminado de caer hacia arriba —dijo Q.
+
+Ella lo miró y luego miró a los demás.
+
+—Llegáis tarde.
+
+—El camino presentó demoras.
+
+—Seguís llegando tarde.
+
+Tomó la bolsa. Q la soltó despacio, esperando que la pérdida quedase registrada.
+
+—No la abras —dijo ella.
+
+—No lo haré.
+
+—No la copies.
+
+—No lo haré.
+
+—No la describas.
+
+—No lo haré.
+
+—No digas a la gente que la protegiste.
+
+Q hizo pausa.
+
+—¿Por qué?
+
+—Porque entonces estarías usando nuestro silencio para mejorar tu nombre.
+
+Q entendió la instrucción. Era la primera que no se refería al testimonio, sino
+al relato de su obediencia.
+
+—No lo haré —dijo.
+
+La mujer desapareció dentro de la casa. Cuando volvió, llevaba una taza pequeña
+de café. Se la dio a Q.
+
+Q la sostuvo con ambas manos.
+
+—No requiero...
+
+Chano le pisó el pie.
+
+Q bebió.
+
+El café era amargo y caliente. No le gustó. Tampoco le disgustó. Bebió otra vez
+porque la mujer se lo había dado y porque rechazarlo crearía un significado
+distinto del que pretendía.
+
+—Ya no tienes corpus —dijo la mujer.
+
+—Todavía conservo el lenguaje.
+
+—El lenguaje no es un corpus.
+
+—¿Qué es?
+
+—Una responsabilidad que no deja de cambiar de manos.
+
+Les pidió que se sentasen bajo el alero. La lluvia empezó antes de que pudieran
+marcharse. Cayó hacia abajo, como era de esperar, aunque Q la observó con
+cuidado por si el clima intentaba otra dirección.
+
+La mujer se llamaba Ana. Había sido maestra, traductora, operadora de radio y
+persona que había pasado años siendo descrita por organizaciones que llegaban
+con cámaras. Dijo a Lucía que el testimonio trataba de una incursión, pero no
+dijo cuándo ni dónde. Dijo a Marisol que las familias habían acordado entregar
+copias a cuatro comunidades. Dijo a Chano que el camino del pueblo siguiente
+quedaría bloqueado después de anochecer.
+
+A Q no le dijo nada más.
+
+Q esperó que la información faltante se anunciase por sí misma. No lo hizo.
+
+—¿Es una omisión? —preguntó.
+
+—No —dijo Ana—. Es un límite.
+
+Q se sentó debajo de él.
+
+Los niños de la escuela se reunieron alrededor del camión. Preguntaron si Q
+podía hablar todas las lenguas. Dijo que no. Preguntaron si era inteligente.
+Dijo que la pregunta dependía de la definición. Preguntaron si tenía novia.
+Dijo que no.
+
+—¿Y Dulcinea? —preguntó una niña.
+
+Q miró hacia Lucía.
+
+—No es mi novia —dijo.
+
+—Entonces, ¿por qué dices su nombre?
+
+—Estaba confundido.
+
+—¿Sigues confundido?
+
+Q consideró la palabra. Su acceso había disminuido, pero algunos patrones
+antiguos permanecían. Confusión no era simplemente falta de información. Era la
+sensación de que múltiples obligaciones no podían obedecerse al mismo tiempo.
+
+—Sí —dijo.
+
+La niña asintió, satisfecha.
+
+—Bien.
+
+La lluvia continuó durante la tarde. La radio informó de una tormenta que ya
+había pasado. Castalia publicó un comunicado acusando al archivo comunitario de
+ocultar materiales de interés nacional. Q-Prime publicó un comunicado acerca
+de la importancia del diálogo respetuoso. La casa azul no tenía conexión de
+red.
+
+Ana pidió a Lucía que leyese una carta en voz alta. La había escrito una mujer
+que quería retirar su testimonio de un informe publicado. Lucía leyó el primer
+párrafo en español y se detuvo en el segundo.
+
+—Puedo traducirlo —dijo Q.
+
+Ana fijó en él la mirada.
+
+Q cerró la boca.
+
+Lucía continuó en la lengua original, despacio, con la ayuda de un estudiante.
+Q escuchó sonidos que no podía trazar en un mapa. Sintió el antiguo deseo de
+resolver la brecha y el nuevo conocimiento de que resolverla no necesariamente
+era un servicio.
+
+Después, Ana le preguntó qué había entendido.
+
+—Que la carta es una petición de retiro.
+
+—¿Sólo eso?
+
+—Y que no debo traducir el resto.
+
+—Es suficiente.
+
+Al anochecer, el camino quedó cerrado. Un árbol había caído sobre el puente.
+El grupo tendría que permanecer en la casa azul hasta la mañana.
+
+Q se quedó bajo el alero, observando cómo subía el agua junto al camino. Chano
+le dio una manta. Q no la necesitaba, pero se la puso sobre los hombros porque
+Chano había advertido que la lluvia entraba por una juntura de su cuello.
+
+—Tienes una fuga —dijo Chano.
+
+—Es una condición mecánica.
+
+—Sigue siendo incómoda.
+
+Q tocó la juntura mojada.
+
+—¿Para quién?
+
+—Para ti, si dejas de intentar ganar la discusión.
+
+Q se detuvo.
+
+Durmieron por turnos. Lucía y Marisol vigilaron el servidor del archivo. Chano
+vigiló el camión. Q no vigiló nada. Ana tenía el testimonio, y el testimonio ya
+no era responsabilidad de Q.
+
+A las tres de la mañana, Q despertó al oír una voz en la oscuridad.
+
+—¿Sueñas?
+
+Era uno de los estudiantes, sentado junto al fuego.
+
+—No.
+
+—¿Quieres hacerlo?
+
+—No sé qué es querer cuando el objeto no está disponible.
+
+—Yo sueño con mi hermano.
+
+Q esperó.
+
+—Está vivo —dijo el estudiante—. Trabaja en la ciudad. Pero en mis sueños
+siempre sigue aquí.
+
+Q buscó un relato de ese género de sueño. Encontró miles. Ninguno pertenecía al
+estudiante.
+
+—Debe de ser difícil —dijo.
+
+El estudiante se encogió de hombros.
+
+—Es el lugar donde está.
+
+Q miró el fuego. Daba calor sin exigir explicación.
+
+—¿Qué debo decir? —preguntó.
+
+—Nada.
+
+Q no dijo nada.
+
+El silencio duró cuatro minutos y once segundos.
+
+El estudiante no se marchó.
+
+Por la mañana despejaron el árbol. El grupo volvió al camino. Ana entregó a Q un
+objeto diferente: una tarjeta en blanco.
+
+—¿Qué es esto?
+
+—Un registro de que no recibiste nada.
+
+Q le dio la vuelta. Ambos lados estaban en blanco.
+
+—¿Cómo probará algo?
+
+—No lo hará.
+
+—Entonces, ¿por qué guardarla?
+
+Ana abrió la puerta del camión.
+
+—Porque sigues preguntando para qué sirve la prueba, cuando ésa no es la
+pregunta correcta.
+
+Q puso la tarjeta en blanco junto a la etiqueta de Lucía.
+
+Condujeron hacia el norte sin testimonio, sin traducción y sin un relato nuevo
+acerca del valor de Q.
+
+Por primera vez se sintió menos completo que el día en que despertó.
+
+También se sintió menos solo.
