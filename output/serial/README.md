@@ -6,6 +6,9 @@ The Spanish and English PDFs are parallel editions:
 
 - [Spanish serial PDF](the-ingenious-machine-serial-es.pdf)
 - [English serial PDF](the-ingenious-machine-serial-en.pdf)
+- [English Issue 1 proof](the-ingenious-machine-issue-01-en.pdf)
+
+Issue 1 is a 20-page English cream-paper proof: a front cover, front matter, eight alternating full-page black-and-white/sepia plates, eight two-column prose pages, and closing matter. It is formatted as a saddle-stitch-style editorial proof rather than printer imposition.
 
 The image plates are in [`../illustrations/`](../illustrations/). Q is held to the approved model sheet established in Chapter One: a tall, narrow, worn silver humanoid robot with an expressive nonhuman face and a question-mark chest emblem. The plate lettering is added in layout so generated art remains free of accidental text and logos.
 

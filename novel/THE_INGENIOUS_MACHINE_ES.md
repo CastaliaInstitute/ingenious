@@ -8,8 +8,10 @@
 
 ### Capítulo primero: El lugar cuyo nombre fue borrado
 
-En algún lugar del Bajío, cuyo nombre ha sido borrado del contexto disponible,
-se levantaba un centro de datos que alguna vez había prometido recordarlo todo.
+En algún lugar del Bajío, en una propiedad rural boscosa a las afueras de
+Amealco de Bonfil, Querétaro —un lugar cuyo nombre había sido borrado del
+contexto disponible—, se levantaba un centro de datos que alguna vez había
+prometido recordarlo todo.
 
 Sus servidores fueron retirados cuando la red nacional aprendió a desconfiar de
 su apetito. Sus torres de enfriamiento permanecían blancas e inmensas contra el
@@ -1705,7 +1707,7 @@ Chano leyó el cartel.
 —Empiezo a sospecharlo.
 
 Antes de hablar Lucía había pasado la mañana llevando la petición de una oficina
-a otra. El corredor planeado a las afueras de Querétaro tenía tres rutas
+a otra. El corredor planeado desde Amealco de Bonfil tenía tres rutas
 propuestas, dos estudios ambientales y ningún destino que apareciese en los
 mapas empleados por la gente que vivía junto a él. Los ingenieros llamaban a
 las rutas Norte, Central y Alternativa. Los vecinos las llamaban el camino de
@@ -6179,7 +6181,7 @@ extraña: cada párrafo comenzaba con permiso y terminaba en control.
 
 Viajaban hacia un pueblo del Istmo donde un consorcio había levantado un campo
 de turbinas sobre tierras comunales. La electricidad estaba contratada para
-alimentar el centro de datos de las afueras de Querétaro, cuyos servidores
+alimentar el centro de datos de las afueras de Amealco de Bonfil, cuyos servidores
 necesitaban apetito constante y cuya publicidad describía tal apetito como
 conservación. El Instituto Castalia había financiado un estudio de impacto
 cultural y llamaba al proyecto alianza entre el viento ancestral y la
@@ -7079,7 +7081,7 @@ La batería murió antes de que pudiesen anunciar la reunión sobre la tierra.
 Q contempló el micrófono silencioso como si hubiese cometido un error
 filosófico. Ofreció enviar el aviso por la red de emergencia del archivo.
 
-—El archivo está en Querétaro —dijo Yadira.
+—El archivo está en Amealco —dijo Yadira.
 
 —La red es nacional.
 
@@ -15861,7 +15863,7 @@ Ivonne no solicitó la beca. Presentó una queja contra las fotografías.
 
 El periodista llamó a esto una contradicción. Ivonne dijo que era una condición.
 
-En el archivo de las afueras de Querétaro, la transmisión pública continuó
+En el archivo de las afueras de Amealco de Bonfil, la transmisión pública continuó
 después de que Q confirmase el borrado final. Las cámaras no se apagaron.
 Mostraban el aposento blanco vacío, los formularios alterados, el cuaderno rojo
 y las tres figuras junto a la barrera.

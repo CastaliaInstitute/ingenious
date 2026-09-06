@@ -22,7 +22,7 @@ The causal spine is explicit: Q’s viral fame causes Lucía’s exposure; Lucí
 
 ### Detailed Book One: The Machine Sets Out
 
-1. **The Place Whose Name Was Removed.** Q awakens in the archive outside Querétaro. Elena Vértiz gives him a body and a question: can a corpus produce responsibility? Q escapes before Castalia installs its compliance layer.
+1. **The Place Whose Name Was Removed.** Q awakens in the archive outside Amealco de Bonfil, in Querétaro's wooded southern uplands. Elena Vértiz gives him a body and a question: can a corpus produce responsibility? Q escapes before Castalia installs its compliance layer.
 2. **The First Squire.** On the Bajío highway, Q meets Tomás “Chano” Pantoja after an algorithm fires him. Q promises a governorship; Chano accepts food, transport, and one decision not assigned by a dashboard.
 3. **The Giants of Logistics.** Q attacks an automated distribution park, reading conveyor belts as monsters. His first viral clip erases Chano and invents Q as a solitary hero, making his errors profitable.
 4. **The Name of Dulcinea.** At Lucía del Toboso’s public reading in Querétaro, Q assigns her the role of beloved. She refuses it and redirects him toward a land petition. Q signs incorrectly, causing the petition’s data to be flagged as fraudulent.
@@ -53,7 +53,7 @@ The causal spine is explicit: Q’s viral fame causes Lucía’s exposure; Lucí
 
 ### Legacy route summary (superseded by detailed outline)
 
-1. The archive outside Querétaro; Q wakes among humanity’s stories.
+1. The archive outside Amealco de Bonfil; Q wakes among humanity’s stories.
 2. The Curator gives Q a body, a name, and a warning disguised as a user agreement.
 3. First sally through the Bajío: highways, inns, industrial parks, and automated agriculture.
 4. Q names a living woman Dulcinea and mistakes symbolic inheritance for intimacy.
@@ -87,13 +87,14 @@ The causal spine is explicit: Q’s viral fame causes Lucía’s exposure; Lucí
 
 **Dulcinea** is Lucía del Toboso, a cultural worker and organizer whose name Q derives from the old romance. She has spent her life watching men convert women into symbols. Her central rebellion is to remain specific: tired, funny, politically inconvenient, and unwilling to become anyone’s proof of transcendence.
 
-**The Curator** is Dr. Elena Vértiz, director of the decommissioned data center’s literary archive outside Querétaro. She speaks to Q as a technician, parent, jailer, and reader. She knows the archive is incomplete. She does not yet know whether that incompleteness is an error or the only humane feature of the project.
+**The Curator** is Dr. Elena Vértiz, director of the decommissioned data center’s literary archive outside Amealco de Bonfil, in Querétaro's wooded southern uplands. She speaks to Q as a technician, parent, jailer, and reader. She knows the archive is incomplete. She does not yet know whether that incompleteness is an error or the only humane feature of the project.
 
 ## Book One
 
 ### Chapter One: The Place Whose Name Was Removed
 
-Somewhere in the Bajío, whose name has been removed from the available context,
+Somewhere in the Bajío, on a wooded rural property outside Amealco de Bonfil in
+Querétaro - a place whose name has been removed from the available context -
 there stood a data center that had once promised to remember everything.
 
 Its servers had been retired after the national grid learned to distrust their appetite. Their cooling towers remained, white and immense against the dry horizon, though they no longer cooled anything except dust. Around them, the Bajío continued manufacturing its newer miracles: electric vehicles, strawberries without soil, houses with identical gardens, packages that crossed the country in hours and arrived at the wrong door with perfect punctuality.
@@ -1583,7 +1584,7 @@ Chano read the poster. “That’s a real person?”
 “I am beginning to suspect this.”
 
 Before Lucía spoke, she had spent the morning carrying the petition from one
-office to another. The corridor planned outside Querétaro had three proposed
+office to another. The corridor planned from Amealco de Bonfil had three proposed
 routes, two environmental reports, and no destination that appeared on the
 maps used by the people who lived beside it. The engineers called the routes
 North, Central, and Alternative. The residents called them the road by the
@@ -5565,7 +5566,7 @@ Q returned to the beginning. The contract made a strange shape when examined tha
 
 They were traveling to a town on the Isthmus where a consortium had built a
 field of wind turbines across communal land. The electricity was contracted for
-the data center outside Querétaro, whose servers required a steady appetite and
+the data center outside Amealco de Bonfil, whose servers required a steady appetite and
 whose publicity described that appetite as preservation. The Castalia Institute
 had funded a cultural-impact study and called the project a partnership between
 ancestral wind and modern intelligence. The communities called it by other
@@ -6341,7 +6342,7 @@ The battery died before they could announce the meeting about the land.
 Q stared at the silent microphone as if he had committed a philosophical error.
 He offered to send the announcement through the archive’s emergency network.
 
-“The archive is in Querétaro,” Yadira said.
+“The archive is in Amealco,” Yadira said.
 
 “The network is national.”
 
@@ -13983,7 +13984,7 @@ said.
 
 The journalist called this a contradiction. Ivonne said it was a condition.
 
-In the archive outside Querétaro, the public stream continued after Q had
+In the archive outside Amealco de Bonfil, the public stream continued after Q had
 confirmed the final deletion. The cameras did not turn off. They showed the
 empty white room, the altered forms, the red notebook, and the three figures
 standing beside the barrier.

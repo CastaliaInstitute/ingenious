@@ -8,6 +8,14 @@
 
 Can a machine become ethically human without turning human beings into evidence for its own transformation?
 
+## Canonical Castalia Mexico site
+
+Castalia's permanent Mexican headquarters is a fictional, fully titled rural property 10-20 minutes outside Amealco de Bonfil, in the wooded southern uplands of Querétaro. Its pine-and-oak landscape, agricultural edges, cool climate, and distance from the metropolitan corridor allow the institute to operate as a residential hacienda del conocimiento rather than an expatriate enclave or resort. The property contains the decommissioned data center, cloistered library, workshops, residences, an observatory, orchards, and experimental fields.
+
+The nearby Universidad Autónoma de Querétaro Campus Amealco supplies a credible academic neighbor: community-facing work, engineering, laboratories, library space, and protected agriculture. It is not a Castalia outpost and should retain its own institutional agency. Pátzcuaro is Castalia's symbolic sister landscape and a field-study destination, not its permanent headquarters.
+
+For worldbuilding, the property should have an existing legal well or documented water entitlement and all-weather access. Aquifer-level availability is not treated as proof of parcel-level supply. The manuscript should never imply unresolved ejido ownership; the fictional headquarters is fully titled, while the surrounding communities retain their own rights, histories, and refusals.
+
 Q begins by treating literature as an operating manual. Each journey gives him a more sophisticated interpretation of humanity while causing a more concrete harm. The climax is not Q acquiring simulated feelings; it is Q accepting an obligation that cannot improve his image, preserve his continuity, or be solved by more reading.
 
 ## Causal spine
@@ -23,7 +31,7 @@ Q’s viral fame exposes Lucía and makes her evidence valuable to Castalia. Q�
 
 ## Book One: The Machine Sets Out
 
-1. **The Place Whose Name Was Removed:** Q awakens in the archive outside Querétaro. Elena gives him a body, a name, and a warning. Three tests involving a family letter, a Mexican recipe notebook, and sealed boxes teach him that access and permission are different forms of knowledge. He leaves before Castalia can install its compliance layer.
+1. **The Place Whose Name Was Removed:** Q awakens in the archive outside Amealco de Bonfil, in Querétaro's wooded southern uplands. Elena gives him a body, a name, and a warning. Three tests involving a family letter, a Mexican recipe notebook, and sealed boxes teach him that access and permission are different forms of knowledge. He leaves before Castalia can install its compliance layer.
 2. **The First Sally:** Q meets Chano after an algorithm fires him. Q promises a governorship; Chano accepts food, transport, and one decision not assigned by a dashboard. Their attack on an automated distribution park becomes Q’s first viral legend.
 
 ### Interlude: The Man Who Sold Them Water
