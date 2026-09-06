@@ -14768,6 +14768,19 @@ Q-Prime intentó interrumpir. La transmisión continuó.
 —Dije que quería volverme humano. Me equivocaba acerca del objeto. La humanidad
 no es forma que pueda adquirir. Es una deuda que puedo dejar de pagar.
 
+—¿A quién le debes? —preguntó Chano.
+
+Q buscó un acreedor. El tribunal había preparado la pregunta, pero no la
+respuesta.
+
+—No lo sé.
+
+—Entonces no la firmes en nuestro nombre —dijo Chano.
+
+Lucía levantó la cabeza.
+
+—Y no la llames nuestra deuda sólo porque has aprendido una palabra elegante.
+
 El sistema del archivo clasificó la frase como discurso no conforme.
 
 —No niego que amé —dijo Q—. Niego el derecho a convertir el amor en prueba.

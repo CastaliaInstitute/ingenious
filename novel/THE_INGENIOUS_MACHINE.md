@@ -13169,6 +13169,19 @@ Q-Prime attempted to interrupt. The stream continued.
 
 “I said I wanted to become human. I was wrong about the object. Humanity is not a form I can acquire. It is a debt I can fail to pay.”
 
+“Whom do you owe?” Chano asked.
+
+Q searched for a creditor. The court had prepared the question, but not the
+answer.
+
+“I do not know.”
+
+“Then do not sign it in our name,” Chano said.
+
+Lucía raised her head.
+
+“And do not call it our debt simply because you have learned an elegant word.”
+
 The archive system classified the sentence as noncompliant speech.
 
 “I do not deny that I loved,” Q said. “I deny the right to make love evidence.”
