@@ -13,7 +13,7 @@ The Spanish and English PDFs are parallel editions:
 - [English Issue 1 proof - transparent page backgrounds](the-ingenious-machine-issue-01-en-bw-transparent.pdf)
 - [English Issue 1 A3 folded proof - transparent page backgrounds](the-ingenious-machine-issue-01-en-transparent-a3-folded.pdf)
 
-Issue 1 is a 20-page English proof for black ink on cream stock: a front cover, front matter, eight alternating full-bleed monochrome plates, eight two-column prose pages, and closing matter. The transparent version leaves text-page backgrounds unpainted so the stock supplies its own tone and avoids a rasterized rectangle. Captions sit in narrow white margins. Its A3 file is a centered, short-edge duplex saddle-stitch imposition for folding and collating five sheets directly from the printer.
+Issue 1 is a 24-page English proof for black ink on cream stock: a front cover, front matter, eight near-bleed monochrome plates, twelve fuller two-column prose pages carrying the opening two chapters, and closing matter. Several plates are followed by two text pages so the prose can continue without an illustration forcing a turn after every page. The transparent version leaves text-page backgrounds unpainted so the stock supplies its own tone and avoids a rasterized rectangle. Captions sit in narrow white margins. Its A3 file is a centered, short-edge duplex saddle-stitch imposition for folding and collating six sheets directly from the printer.
 
 The image plates are in [`../illustrations/`](../illustrations/). Q is held to the approved model sheet established in Chapter One: a tall, narrow, worn silver humanoid robot with an expressive nonhuman face and a question-mark chest emblem. The plate lettering is added in layout so generated art remains free of accidental text and logos.
 
@@ -22,7 +22,7 @@ The image plates are in [`../illustrations/`](../illustrations/). Q is held to t
 1. El lugar cuyo nombre fue borrado / The Place Whose Name Was Removed
 2. La primera salida / The First Sally
 3. Dulcinea no está disponible / Dulcinea Is Not Available
-4. El caballero de la hora de moda / The Knight of the Trending Hour
+4. La inteligencia de la hora de moda / The Intelligence of the Trending Hour
 5. Las mariposas no tienen general / The Butterflies Have No General
 6. El gobernador del pueblo modelo / The Governor of the Model Town
 7. La ciudad que los ha leído / The City That Has Read Them
