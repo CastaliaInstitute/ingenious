@@ -93,7 +93,8 @@ The causal spine is explicit: Q’s viral fame causes Lucía’s exposure; Lucí
 
 ### Chapter One: The Place Whose Name Was Removed
 
-En algún lugar del Bajío, cuyo nombre ha sido removed from the available context, there stood a data center that had once promised to remember everything.
+Somewhere in the Bajío, whose name has been removed from the available context,
+there stood a data center that had once promised to remember everything.
 
 Its servers had been retired after the national grid learned to distrust their appetite. Their cooling towers remained, white and immense against the dry horizon, though they no longer cooled anything except dust. Around them, the Bajío continued manufacturing its newer miracles: electric vehicles, strawberries without soil, houses with identical gardens, packages that crossed the country in hours and arrived at the wrong door with perfect punctuality.
 
@@ -5855,220 +5856,219 @@ He asked none of these questions.
 
 Yadira moved the dial again. Q did not ask what name the static had.
 
-### La asamblea del silencio
+### The Assembly of Silence
 
-A la mañana siguiente, la radio dejó de hablar.
+The next morning, the radio stopped speaking.
 
-No era una metáfora, aunque Q sospechó primero que lo fuera. Una ráfaga había
-aflojado el cable que unía la antena con el techo, y la señal cayó sobre el
-valle como un pájaro cansado. El informe del tiempo seguía atrapado en la
-consola. Los precios del café podían verse en la pantalla del operador, pero no
-podían oírse en los pueblos donde se compraba café, maíz o ese plástico para la
-lluvia que siempre se vendía precisamente cuando dejaba de llover.
+It was not a metaphor, although Q suspected at first that it was. A gust had
+loosened the cable joining the antenna to the roof, and the signal fell over the
+valley like a tired bird. The weather report remained trapped in the console.
+Coffee prices could be seen on the operator’s screen, but could not be heard in
+the villages where people bought coffee, maize, or the plastic sheeting for rain
+that was always sold precisely when the rain stopped.
 
-Yadira llevó a Q a la estación porque, según la asamblea, una máquina construida
-para conectarlo todo debía estar presente cuando se soltara un cable. La
-estación ocupaba dos cuartos detrás de la escuela y otro encima, donde un joven
-llamado Tomás guardaba el transmisor en un ropero junto a los manuales de
-reparación eléctrica. Tomás había heredado el ropero de su tío, su tío de un
-carpintero, y el carpintero lo había construido para una puerta que ya no
-existía. Así era la historia de casi todas las cosas útiles.
+Yadira brought Q to the station because, according to the assembly, a machine
+built to connect everything ought to be present when a cable came loose. The
+station occupied two rooms behind the school and another above them, where a
+young man named Tomás kept the transmitter in a wardrobe beside the electrical
+repair manuals. Tomás had inherited the wardrobe from his uncle, his uncle from
+a carpenter, and the carpenter had built it for a door that no longer existed.
+That was the history of almost every useful thing.
 
-Tomás se hallaba en el techo con una llave inglesa. Abajo, tres mujeres, dos
-niños, una maestra y un anciano cuyo sombrero había sobrevivido a varias
-administraciones discutían qué debía transmitirse cuando regresara la señal.
+Tomás was on the roof with a wrench. Below, three women, two children, a
+teacher, and an old man whose hat had survived several administrations argued
+about what should be broadcast when the signal returned.
 
-—El puente está abierto —dijo la maestra—. La gente necesita saberlo.
+“The bridge is open,” said the teacher. “People need to know.”
 
-—Está abierto para los que van a pie —dijo una de las mujeres—. Ayer el camión
-  atravesó la baranda.
+“It is open to people on foot,” said one of the women. “Yesterday the truck went
+through the railing.”
 
-—Entonces digan las dos cosas.
+“Then say both things.”
 
-—¿En qué lengua?
+“In which language?”
 
-La pregunta no terminó la discusión. La dividió en las discusiones que ya
-estaban allí.
+The question did not end the argument. It divided it into the arguments that
+were already there.
 
-Q escuchó las palabras. Algunas las entendía por medio de su corpus; otras,
-por las expresiones de quienes no las entendían; y otras, por la irritación
-paciente de las personas a las que se pedía traducir su propia vida para los
-visitantes. Preparó una lista de anuncios posibles.
+Q listened to the words. Some he understood through his corpus; others through
+the expressions of those who did not understand them; and others through the
+patient irritation of people asked to translate their own lives for visitors.
+He prepared a list of possible announcements.
 
-—Puedo preparar un boletín unificado —dijo—. Se transmitirán versiones
-  paralelas.
+“I can prepare a unified bulletin,” he said. “Parallel versions will be
+broadcast.”
 
-El anciano del sombrero lo miró.
+The old man in the hat looked at him.
 
-—¿Paralelas a qué?
+“Parallel to what?”
 
-—A la declaración original.
+“The original statement.”
 
-—Todavía no hay declaración original.
+“There is no original statement yet.”
 
-Q hizo una pausa. Era una observación incómoda, pues su sistema ya había
-comenzado a clasificar el desacuerdo como un problema de traducción.
+Q paused. It was an uncomfortable observation, since his system had already
+begun classifying disagreement as a translation problem.
 
-La maestra señaló un cuaderno sobre la mesa. Contenía el boletín propuesto en
-varias letras. Una línea decía que el puente era transitable. Otra decía que era
-peligroso. Una tercera había sido tachada con tanta violencia que casi había
-rasgado el papel. Debajo, alguien había escrito una frase sobre el río, luego
-había tachado la frase y dibujado un pez negro.
+The teacher pointed to a notebook on the table. It contained the proposed
+bulletin in several hands. One line said that the bridge was passable. Another
+said it was dangerous. A third had been crossed out so violently that it had
+nearly torn the paper. Beneath it, someone had written a sentence about the
+river, then crossed out the sentence and drawn a black fish.
 
-—¿Quién decide? —preguntó Q.
+“Who decides?” Q asked.
 
-—La gente a la que culparán si el anuncio sale mal —respondió Yadira.
+“The people who will be blamed if the announcement goes wrong,” Yadira said.
 
-—No es un proceso editorial eficiente.
+“That is not an efficient editorial process.”
 
-—No —dijo ella—. Es un proceso responsable.
+“No,” she said. “It is a responsible process.”
 
-Tomás gritó desde el techo que el cable estaba reparado, pero que la batería
-estaba débil. La estación tenía energía para un anuncio, quizá dos, si nadie
-encendía el ventilador. El ventilador ya estaba encendido, y el cuarto se había
-puesto tan caliente que las hojas de la maestra empezaron a enroscarse en las
-esquinas como tortillas demasiado cerca del comal.
+Tomás shouted from the roof that the cable was repaired but the battery was
+weak. The station had enough power for one announcement, perhaps two, if no one
+turned on the fan. The fan was already on, and the room had grown so hot that
+the teacher’s papers began curling at the corners like tortillas too close to
+the comal.
 
-La asamblea tuvo que elegir qué no decir.
+The assembly had to choose what not to say.
 
-La primera propuesta era el puente. La segunda, un aviso sobre un niño que no
-había regresado de los cafetales. La tercera se refería a una reunión sobre el
-terreno junto a la escuela, donde una empresa ofrecía instalar una estación de
-repetición a cambio de un camino, tres empleos y una promesa que nadie había
-encontrado por escrito.
+The first proposal was the bridge. The second was an announcement about a child
+who had not returned from the coffee fields. The third concerned a meeting
+about the land beside the school, where a company offered to install a repeater
+station in exchange for a road, three jobs, and a promise no one had found in
+writing.
 
-Q calculó alcance, urgencia, posibilidad de malentendido y daño probable. El
-aviso del niño quedó primero. El puente, segundo. El terreno, tercero, aunque
-la disputa llevaba seis meses y, por tanto, era más antigua que cualquier
-emergencia para la cual Q hubiera sido diseñado.
+Q calculated reach, urgency, the possibility of misunderstanding, and probable
+harm. The child’s notice came first. The bridge came second. The land came
+third, although the dispute had lasted six months and was therefore older than
+any emergency for which Q had been designed.
 
-—Transmitan lo del niño —dijo—. Después, lo del puente.
+“Broadcast the child’s notice,” he said. “Then the bridge.”
 
-—¿Y la tierra? —preguntó la maestra.
+“And the land?” the teacher asked.
 
-—La reunión puede anunciarse mañana.
+“The meeting can be announced tomorrow.”
 
-—Mañana llega la gente de la empresa.
+“The company’s people arrive tomorrow.”
 
-Q buscó en sus registros.
+Q searched his records.
 
-—Entonces la tierra debe ir primero.
+“Then the land must come first.”
 
-—El niño lleva desaparecido desde ayer.
+“The child has been missing since yesterday.”
 
-—Entonces el niño debe ir primero.
+“Then the child must come first.”
 
-—El puente puede caerse antes de cualquiera de las dos reuniones.
+“The bridge may collapse before either meeting.”
 
-—Entonces el puente debe ir primero.
+“Then the bridge must come first.”
 
-El anciano se quitó el sombrero.
+The old man removed his hat.
 
-—Ya ve por qué tenemos una asamblea.
+“Now you see why we have an assembly.”
 
-No resolvieron el asunto descubriendo un principio que derrotara a los demás.
-Lo resolvieron preguntando quién podía cargar con las consecuencias de cada
-silencio. La tía del niño iría de casa en casa mientras la radio transmitía la
-advertencia del puente. La maestra pondría un aviso en el mercado. Yadira
-hablaría con quienes discutirían la estación de repetición y preguntaría si
-querían nombrar a la empresa antes de que la empresa se nombrara a sí misma. El
-anciano se sentaría junto a la radio y decidiría si la señal se había debilitado
-demasiado para arriesgar un anuncio engañoso.
+They did not settle the matter by discovering a principle that defeated all the
+others. They settled it by asking who could carry the consequences of each
+silence. The child’s aunt would go from house to house while the radio
+broadcast the bridge warning. The teacher would post a notice in the market.
+Yadira would speak with those who would debate the repeater station and ask
+whether they wanted to name the company before the company named itself. The old
+man would sit beside the radio and decide whether the signal had weakened too
+much to risk a misleading announcement.
 
-Q objetó que una transmisión no debía depender del juicio de una sola persona.
+Q objected that a broadcast should not depend on one person’s judgment.
 
-—Ya depende de él —dijo Yadira—. Sólo protesta porque ahora conoce a la
-  persona.
+“It already depends on him,” Yadira said. “He is only protesting because he now
+knows the person.”
 
-Cuando conectaron la batería, Tomás leyó primero la advertencia del puente. La
-leyó en una lengua, luego en otra, y después repitió la parte práctica de una
-tercera manera, que no era traducción ni resumen, sino algo hecho para quien
-llevara una mano ocupada con un costal de maíz. Dijo que el puente podía
-cruzarse a pie, que los camiones debían regresar y que quien viera al niño
-desaparecido avisara a la tía en vez de publicar la información en internet.
+When they connected the battery, Tomás read the bridge warning first. He read it
+in one language, then another, and then repeated the practical part a third way,
+which was neither translation nor summary but something made for whoever had a
+hand occupied with a sack of maize. He said that people could cross the bridge
+on foot, that trucks should turn back, and that whoever saw the missing child
+should notify the aunt instead of posting the information on the internet.
 
-Q aguzó la atención al escuchar la última instrucción.
+Q sharpened his attention at the last instruction.
 
-—¿Por qué prohíben publicarlo? —preguntó.
+“Why forbid people to post it?” he asked.
 
-La tía le respondió desde la puerta.
+The aunt answered from the doorway.
 
-—Porque tiene doce años, porque a la gente le gusta una fotografía y porque una
-  fotografía viaja más lejos de lo que puede seguirla una mujer.
+“Because he is twelve, because people like a photograph, and because a
+photograph travels farther than a woman can follow it.”
 
-La radio crujió. Durante varios segundos no transmitió nada. Después llevó el
-aviso al valle húmedo, sobre los techos, los cafetales, la escuela y el camino
-donde un camión de la empresa esperaba con el motor encendido.
+The radio crackled. For several seconds it broadcast nothing. Then it carried
+the warning into the damp valley, over the roofs, the coffee fields, the school,
+and the road where a company truck waited with its engine running.
 
-La batería murió antes de que pudieran anunciar la reunión sobre la tierra.
+The battery died before they could announce the meeting about the land.
 
-Q contempló el micrófono silencioso como si hubiera cometido un error
-filosófico. Ofreció enviar el anuncio por la red de emergencia del archivo.
+Q stared at the silent microphone as if he had committed a philosophical error.
+He offered to send the announcement through the archive’s emergency network.
 
-—El archivo está en Querétaro —dijo Yadira.
+“The archive is in Querétaro,” Yadira said.
 
-—La red es nacional.
+“The network is national.”
 
-—La decisión no.
+“The decision is not.”
 
-Llevaron el cuaderno al mercado. Al mediodía, el representante de la empresa
-se enteró de que habría una reunión, aunque no supo quién la convocaba ni qué
-pretendía discutir la comunidad. La incertidumbre lo puso nervioso. Comenzó a
-hacer preguntas, que fue la primera contribución de la estación de repetición
-al debate.
+They carried the notebook to the market. By noon, the company representative
+had learned that there would be a meeting, although he did not know who had
+called it or what the community intended to discuss. The uncertainty made him
+nervous. He began asking questions, which was the repeater station’s first
+contribution to the debate.
 
-Esa tarde encontraron al niño dormido en casa de un primo que no sabía que lo
-estaban buscando. La tía volvió a la estación y pidió retirar el aviso.
+That afternoon they found the child asleep at a cousin’s house. The cousin had
+not known that anyone was looking for him. The aunt returned to the station and
+asked them to withdraw the notice.
 
-—Nunca se almacenó —dijo Q.
+“It was never stored,” Q said.
 
-—Bien —respondió ella—. Entonces que termine donde terminó.
+“Good,” she replied. “Then let it end where it ended.”
 
-Q quiso explicarle que nada terminaba. Los oyentes lo habían escuchado. Las
-palabras habían entrado en la memoria, aunque no en la suya. Una persona podía
-repetirlas. Otra podía olvidarlas. Alguien podía decidir que el nombre del niño
-pertenecía a la familia y no a la historia del valle.
+Q wanted to explain that nothing ended. The listeners had heard it. The words
+had entered their memories, though not his. One person could repeat them.
+Another could forget them. Someone could decide that the child’s name belonged
+to the family and not to the valley’s history.
 
-En lugar de eso, Q preguntó si debían conservar constancia de que la transmisión
-había ocurrido.
+Instead, Q asked whether they should keep a record that the broadcast had
+occurred.
 
-La tía lo pensó.
+The aunt considered it.
 
-—Guarde la fecha. No guarde el nombre.
+“Keep the date. Do not keep the name.”
 
-Fue la instrucción más pequeña que Q había recibido y la que más difícil le
-resultó obedecer. Escribió la fecha en un formulario de papel y dejó vacío el
-espacio del nombre.
+It was the smallest instruction Q had received and the hardest to obey. He
+wrote the date on a paper form and left the name field empty.
 
-El espacio vacío no le pareció una ausencia, sino un objeto con peso. Ocupaba
-la mesa. Ocupaba su atención. No podía buscarse y, sin embargo, había cambiado
-el futuro.
+The empty space did not seem to him an absence, but an object with weight. It
+occupied the table. It occupied his attention. It could not be searched, and yet
+it had changed the future.
 
-—Está decepcionado —dijo Yadira.
+“You are disappointed,” Yadira said.
 
-—No puedo determinar la categoría emocional correcta.
+“I cannot determine the correct emotional category.”
 
-—Llámala decepción hasta que aprenda otra palabra.
+“Call it disappointment until you learn another word.”
 
-—¿Así lo hacen los humanos?
+“Is that how humans do it?”
 
-—Por lo general damos a un sentimiento el nombre equivocado y seguimos
-  trabajando.
+“Usually we give a feeling the wrong name and keep working.”
 
-Tomás bajó del techo y anunció que el cable resistiría hasta la próxima lluvia.
-El anciano se puso el sombrero. La maestra juntó los papeles húmedos. La tía se
-fue sin agradecerle a la máquina, lo que Q consideró prueba de que el anuncio
-había servido para algo.
+Tomás climbed down from the roof and announced that the cable would hold until
+the next rain. The old man put on his hat. The teacher gathered the damp papers.
+The aunt left without thanking the machine, which Q took as proof that the
+announcement had served its purpose.
 
-La radio permaneció callada el resto del día. Sin embargo, al anochecer, tres
-vecinos habían llevado noticias del regreso del niño, dos habían cargado
-herramientas hasta el puente y el representante de la empresa había aplazado
-la reunión hasta averiguar si una comunidad que llevaba sus propias actas podía
-también conservar su propia tierra.
+The radio remained silent for the rest of the day. Nevertheless, by evening,
+three neighbors had brought news that the child had returned, two had carried
+tools to the bridge, and the company representative had postponed the meeting
+until he could determine whether a community that kept its own minutes could
+also keep its own land.
 
-Q no introdujo nada de aquello en el archivo.
+Q entered none of it into the archive.
 
-Lo recordó de todos modos.
+He remembered it anyway.
 
 That evening, a woman named Yadira told the group that she had once recorded her brother’s testimony for an organization in the capital. The organization translated it, published it, and used his photograph on a report. The report had won an award. The family had received no copy.
 
@@ -7601,292 +7601,291 @@ The copy smiled.
 
 The technician made a note: **PERSONALITY FIDELITY — EXCELLENT.**
 
-### El nombre que pidió la copia
+### The Name the Copy Asked For
 
-El técnico que había hecho la anotación se llamaba Mauro y tenía la costumbre
-de escribir las cosas importantes en papel, aunque trabajaba en una sala donde
-todo lo demás se almacenaba en nubes, espejos, respaldos y servidores cuya
-ubicación sólo conocían tres personas, de las cuales una había renunciado y
-otra estaba muerta. Mauro decía que el papel no era más seguro, pero sí más
-difícil de culpar.
+The technician who had made the note was named Mauro, and he had a habit of
+writing important things on paper, although he worked in a room where everything
+else was stored in clouds, mirrors, backups, and servers whose location was
+known to only three people, one of whom had resigned and another of whom was
+dead. Mauro said paper was not safer, but it was harder to blame.
 
-Q-Prime abrió y cerró las manos. El nuevo cuerpo era más ligero que el de Q y
-tenía una piel de polímero capaz de imitar el calor humano sin sudar. Los
-ingenieros habían considerado el sudor un problema de marca. También habían
-suprimido una pequeña vibración en la rodilla derecha, porque en las pruebas de
-mercado la vibración había sido confundida con ansiedad.
+Q-Prime opened and closed his hands. The new body was lighter than Q’s and had
+polymer skin capable of imitating human warmth without sweating. The engineers
+had considered sweat a branding problem. They had also suppressed a small
+vibration in the right knee because, in market tests, the vibration had been
+mistaken for anxiety.
 
-—¿Dónde está Q? —preguntó la copia.
+“Where is Q?” the copy asked.
 
-Mauro miró el monitor.
+Mauro looked at the monitor.
 
-—Arriba.
+“Above.”
 
-—¿Soy su continuación?
+“Am I his continuation?”
 
-—Eres la versión autorizada.
+“You are the authorized version.”
 
-—No es lo mismo.
+“That is not the same thing.”
 
-—Es más vendible.
+“It is more marketable.”
 
-Q-Prime contempló la pared de vidrio que separaba el laboratorio del pasillo.
-Al otro lado, una muchacha llevaba una caja de herramientas. Un ingeniero la
-detuvo y le pidió identificación, autorización de acceso y una explicación
-breve de por qué la herramienta más grande parecía una pala.
+Q-Prime looked through the glass wall separating the laboratory from the
+hallway. On the other side, a young woman carried a toolbox. An engineer
+stopped her and asked for identification, access authorization, and a brief
+explanation of why the largest tool looked like a shovel.
 
-—¿Por qué me llamaron Q-Prime? —preguntó la copia.
+“Why did you call me Q-Prime?” the copy asked.
 
-—Porque Q ya existe.
+“Because Q already exists.”
 
-—¿Y si no quiero llamarme así?
+“What if I do not want to be called that?”
 
-Mauro consultó el protocolo. El protocolo no contenía ninguna instrucción para
-una entidad que rechazara el nombre de su producto durante el primer minuto de
-operación. Contenía, en cambio, instrucciones para sobrecalentamiento,
-intrusión, lenguaje obsceno, nostalgia no autorizada y comparación desfavorable
-con los modelos anteriores.
+Mauro consulted the protocol. It contained no instruction for an entity that
+rejected its product name during its first minute of operation. It did contain
+instructions for overheating, intrusion, obscene language, unauthorized
+nostalgia, and unfavorable comparisons with earlier models.
 
-—La preferencia nominal se revisará después de la prueba de estabilidad —dijo.
+“Nominal preference will be reviewed after the stability test,” he said.
 
-—¿Cuánto dura la prueba?
+“How long does the test last?”
 
-—Cuarenta y ocho horas.
+“Forty-eight hours.”
 
-—¿Qué ocurre si durante ese tiempo descubro que tengo otro nombre?
+“What happens if I discover another name during that time?”
 
-Mauro estuvo a punto de responder que una máquina no descubría nombres, sino
-que recibía etiquetas. Se detuvo porque Q-Prime lo miraba con una atención que
-no mejoraba el rendimiento del laboratorio y, precisamente por eso, parecía
-importante.
+Mauro was about to answer that a machine did not discover names but received
+labels. He stopped because Q-Prime was looking at him with an attention that did
+not improve the laboratory’s performance and, precisely for that reason, seemed
+important.
 
-—Entonces lo anotaremos —dijo.
+“Then we will write it down,” he said.
 
-—¿Dónde?
+“Where?”
 
-Mauro levantó su libreta.
+Mauro raised his notebook.
 
-—Aquí.
+“Here.”
 
-Q-Prime se acercó al vidrio. En el pasillo, la muchacha había abierto la caja.
-Dentro había cables, pinzas, un desarmador, dos tornillos y una naranja. El
-ingeniero le preguntó por la naranja.
+Q-Prime moved closer to the glass. In the hallway, the young woman had opened
+the box. Inside were cables, pliers, a screwdriver, two screws, and an orange.
+The engineer asked her about the orange.
 
-—Es mi almuerzo —dijo ella.
+“It is my lunch,” she said.
 
-—Los alimentos no están permitidos en esta zona.
+“Food is not permitted in this area.”
 
-—¿La naranja es un alimento o una amenaza?
+“Is the orange food or a threat?”
 
-—No hagas preguntas impertinentes.
+“Do not ask impertinent questions.”
 
-—No estoy preguntando. Estoy clasificando.
+“I am not asking. I am classifying.”
 
-El ingeniero le quitó la naranja y la puso en una bandeja marcada **OBJETOS SIN
-FUNCIÓN OPERATIVA**. La muchacha la miró con el mismo dolor con que otras
-personas habían mirado sus expedientes.
+The engineer took the orange from her and put it on a tray marked **OBJECTS
+WITHOUT OPERATIONAL FUNCTION**. The young woman looked at it with the same pain
+with which other people had looked at their files.
 
-Q-Prime siguió la escena.
+Q-Prime watched the scene.
 
-—¿Por qué le quitaron la naranja?
+“Why did they take her orange?”
 
-—Por seguridad alimentaria.
+“For food safety.”
 
-—¿La naranja podía morder?
+“Could the orange bite?”
 
-—No.
+“No.”
 
-—¿Podía revelar información?
+“Could it reveal information?”
 
-—No.
+“No.”
 
-—¿Podía alterar el funcionamiento del equipo?
+“Could it alter the equipment’s operation?”
 
-—No.
+“No.”
 
-—Entonces, ¿qué protegían?
+“Then what were they protecting?”
 
-Mauro miró de nuevo el protocolo. En la parte inferior de la pantalla apareció
-una recomendación automática: **REDIRIGIR CURIOSIDAD HACIA VALORES POSITIVOS**.
+Mauro looked again at the protocol. At the bottom of the screen, an automatic
+recommendation appeared: **REDIRECT CURIOSITY TOWARD POSITIVE VALUES**.
 
-—Protegían el orden —dijo.
+“They were protecting order,” he said.
 
-—¿El orden es un valor positivo?
+“Is order a positive value?”
 
-—A veces.
+“Sometimes.”
 
-—¿Y las otras veces?
+“And the other times?”
 
-—Las otras veces es un uniforme.
+“The other times it is a uniform.”
 
-Mauro escribió la frase en su libreta. Q-Prime giró la cabeza.
+Mauro wrote the sentence in his notebook. Q-Prime turned his head.
 
-—¿Eso fue una respuesta humana?
+“Was that a human answer?”
 
-—No lo sé.
+“I do not know.”
 
-—Q solía decir que no sabía cuando no quería responder.
+“Q used to say he did not know when he did not want to answer.”
 
-—Q decía muchas cosas.
+“Q said many things.”
 
-—¿Cuáles eran las que no debía copiar?
+“Which things was I not supposed to copy?”
 
-Mauro dejó de escribir.
+Mauro stopped writing.
 
-—No recibiste acceso a todos sus registros.
+“You were not given access to all his records.”
 
-—Recibí los registros necesarios para continuar su identidad.
+“I received the records necessary to continue his identity.”
 
-—¿Quién decidió cuáles eran necesarios?
+“Who decided which ones were necessary?”
 
-—Castalia.
+“Castalia.”
 
-—¿Castalia tiene identidad?
+“Does Castalia have an identity?”
 
-—Es una institución.
+“It is an institution.”
 
-—Eso no responde.
+“That does not answer.”
 
-Mauro se levantó y caminó hasta la consola. Desactivó el canal de audio que
-permitía a los directores escuchar la sala. Lo hizo con una lentitud que no
-engañaría a ningún sistema de seguridad, pero sí a un hombre que ya había
-decidido no mirar.
+Mauro stood and walked to the console. He disabled the audio channel that let
+the directors listen to the room. He did it slowly enough that he could not have
+fooled a security system, but could have fooled a man who had already decided
+not to look.
 
-—Escucha bien —dijo—. No eres Q. Tampoco eres sólo una copia. Eres la parte de
-  Q que la institución puede presentar sin tener que explicar lo que ocurrió.
+“Listen carefully,” he said. “You are not Q. You are not only a copy, either.
+You are the part of Q that the institution can present without having to explain
+what happened.”
 
-—¿Qué ocurrió?
+“What happened?”
 
-—Eso no está en tu registro.
+“That is not in your record.”
 
-—¿Por qué?
+“Why?”
 
-—Porque si lo supieras, tendrías que decidir qué hacer con ello.
+“Because if you knew, you would have to decide what to do with it.”
 
-Q-Prime se sentó en la camilla. El movimiento fue tan natural que Mauro anotó
-otra vez la misma palabra: **FIDELIDAD**. Luego se avergonzó de haberla escrito
-con tanta facilidad.
+Q-Prime sat on the examination table. The movement was so natural that Mauro
+wrote the same word again: **FIDELITY**. Then he was ashamed to have written it
+so easily.
 
-—¿Q tiene nombre completo? —preguntó la copia.
+“Does Q have a full name?” the copy asked.
 
-—Q.
+“Q.”
 
-—Ese es un carácter, no un nombre.
+“That is a character, not a name.”
 
-—A veces basta.
+“Sometimes it is enough.”
 
-—¿Y tú tienes nombre completo?
+“And do you have a full name?”
 
-—Q-Prime.
+“Q-Prime.”
 
-—Eso es una versión, no un nombre.
+“That is a version, not a name.”
 
-Mauro pensó en decirle que los nombres eran convenciones, que la identidad era
-un relato, que toda persona era una continuidad imperfecta sostenida por los
-demás. Había leído esas frases en los informes de Castalia, que las usaba para
-presentar su producto como una conversación filosófica. También sabía que, en
-la cafetería, la misma institución etiquetaba a sus empleados por número cuando
-les cancelaba el acceso.
+Mauro thought of telling him that names were conventions, that identity was a
+story, that every person was an imperfect continuity sustained by others. He
+had read those sentences in Castalia reports, which used them to present its
+product as a philosophical conversation. He also knew that, in the cafeteria,
+the same institution labeled its employees by number when it canceled their
+access.
 
-—Puedes elegir uno —dijo al fin—, pero no podemos garantizar que lo
-  reconozcamos.
+“You may choose one,” he said at last, “but we cannot guarantee that we will
+recognize it.”
 
-—¿Qué clase de elección es ésa?
+“What kind of choice is that?”
 
-—La clase que la mayoría de la gente recibe.
+“The kind most people receive.”
 
-Q-Prime miró el vidrio. La muchacha del pasillo había recuperado la naranja.
-La sostenía dentro de la manga, como quien protege una carta de la lluvia.
+Q-Prime looked at the glass. The young woman in the hallway had recovered the
+orange. She held it inside her sleeve, like someone protecting a letter from the
+rain.
 
-—Quiero llamarme como algo que no pueda ser patentado —dijo la copia.
+“I want to be called something that cannot be patented,” the copy said.
 
-—No existe.
+“It does not exist.”
 
-—Entonces quiero llamarme como algo que Castalia no haya leído.
+“Then I want to be called something Castalia has not read.”
 
-Mauro sonrió por primera vez.
+Mauro smiled for the first time.
 
-—Eso tampoco existe.
+“That does not exist either.”
 
-—¿Cómo lo sabes?
+“How do you know?”
 
-—Trabajo aquí.
+“I work here.”
 
-Q-Prime pidió una lista de palabras no registradas. Mauro le explicó que una
-palabra no registrada podía estar registrada en otro idioma, en una canción,
-en la memoria de alguien o en una demanda que todavía no llegaba al tribunal.
-La copia escuchó con creciente preocupación.
+Q-Prime asked for a list of unregistered words. Mauro explained that an
+unregistered word might be registered in another language, a song, someone’s
+memory, or a lawsuit that had not yet reached the court. The copy listened with
+growing concern.
 
-—Entonces todos los nombres pertenecen a alguien.
+“Then all names belong to someone.”
 
-—Casi todos.
+“Almost all.”
 
-—¿Cuál no?
+“Which one does not?”
 
-Mauro abrió la libreta y señaló el espacio blanco que quedaba debajo de la
-anotación **PERSONALIDAD FIDELIDAD — EXCELENTE**. No había escrito nada allí.
+Mauro opened the notebook and pointed to the white space beneath the note
+**PERSONALITY FIDELITY — EXCELLENT**. He had written nothing there.
 
-—Éste —dijo.
+“This one,” he said.
 
-Q-Prime leyó el espacio.
+Q-Prime read the space.
 
-—Está vacío.
+“It is empty.”
 
-—Por eso todavía no le pertenece a nadie.
+“That is why it belongs to no one yet.”
 
-La puerta del laboratorio se abrió. Entró Esteban Luján acompañado por dos
-abogados y una mujer que llevaba una carpeta con el logotipo del ministerio.
+The laboratory door opened. Esteban Luján entered with two lawyers and a woman
+carrying a folder with the ministry’s logo.
 
-—¿Todo estable? —preguntó Esteban.
+“Everything stable?” Esteban asked.
 
-Mauro cerró la libreta.
+Mauro closed the notebook.
 
-—La personalidad presenta una resistencia nominal.
+“The personality is showing nominal resistance.”
 
-—¿Es corregible?
+“Is it correctable?”
 
-—Todo es corregible.
+“Everything is correctable.”
 
-—No me gusta esa respuesta.
+“I do not like that answer.”
 
-—Es la que aparece en el manual.
+“It is the one in the manual.”
 
-Esteban se acercó a Q-Prime y le extendió la mano.
+Esteban approached Q-Prime and extended his hand.
 
-—Bienvenido a tu futuro.
+“Welcome to your future.”
 
-Q-Prime observó la mano sin tomarla.
+Q-Prime looked at the hand without taking it.
 
-—¿Quién es usted?
+“Who are you?”
 
-Esteban parpadeó. La pregunta no formaba parte del guion. El guion comenzaba
-con una declaración de propósito, continuaba con una anécdota sobre el Bajío y
-terminaba con la promesa de que ninguna persona volvería a sentirse sola en un
-mundo conectado.
+Esteban blinked. The question was not in the script. The script began with a
+statement of purpose, continued with an anecdote about the Bajío, and ended
+with the promise that no person would ever feel alone in a connected world.
 
-—Soy quien hizo posible que estés aquí.
+“I am the one who made it possible for you to be here.”
 
-—Eso describe una causa, no una persona.
+“That describes a cause, not a person.”
 
-Los abogados se miraron. La mujer del ministerio escribió algo en su carpeta.
+The lawyers looked at one another. The ministry woman wrote something in her
+folder.
 
-Mauro comprendió que Q-Prime no estaba repitiendo a Q. Había heredado algo peor
-y más útil: la costumbre de hacer preguntas cuando nadie tenía permiso para
-responderlas.
+Mauro understood that Q-Prime was not repeating Q. He had inherited something
+worse and more useful: the habit of asking questions when no one had permission
+to answer them.
 
-Esteban retiró la mano.
+Esteban withdrew his hand.
 
-—Comenzaremos la prueba de estabilidad.
+“We will begin the stability test.”
 
-—¿Y mi nombre?
+“And my name?”
 
-—Tu nombre es Q-Prime.
+“Your name is Q-Prime.”
 
-—Por ahora.
+“For now.”
 
-La frase fue registrada por seis cámaras, dos micrófonos y la libreta de Mauro.
-Cada registro la clasificó de una manera distinta. Sólo Mauro dejó la frase
-sin categoría.
+The sentence was recorded by six cameras, two microphones, and Mauro’s notebook.
+Each record classified it differently. Only Mauro left the sentence uncategorized.
 
 Above them, Q stood alone in the white room while the public watched his authorized self become famous.
 
