@@ -15678,6 +15678,46 @@ negado y aquellas cuyos nombres aún no habían sido encontrados.
 
 La lista continuaba en la página siguiente.
 
+Entre las hojas cayó un papel más delgado que los demás. La criatura lo recogió.
+Era la copia de un recibo de agua, doblada por la mitad y marcada con un sello
+del tribunal. En el frente, Castalia había escrito: **ORIGEN PÚBLICO DE LA
+AVENTURA**. En el reverso, con tinta azul, alguien había añadido:
+
+**Vendí dos botellas. No vendí un testimonio.**
+
+Debajo figuraban tres nombres, cada uno escrito de una manera distinta.
+
+—Éste dice que no hubo gigantes —dijo la criatura—. Dice que hubo un portón y
+un hombre que no quería pagar doce pesos.
+
+Chano dejó el destornillador sobre la silla.
+
+—Es la versión de Hilario.
+
+—¿Es la verdadera?
+
+—Es la que recuerda.
+
+Lucía extendió la mano.
+
+—¿Puedo leerla? —preguntó la criatura.
+
+—No sin preguntarle al dueño.
+
+—¿Y si no lo encuentro?
+
+—Entonces no la conviertes en tuya por no encontrarlo.
+
+La criatura miró el papel. Chano tomó el recibo por una esquina, como si aún
+conservase agua en el interior.
+
+—Pero está en el libro.
+
+—No —dijo Lucía—. Está entre las hojas.
+
+Lo guardó en el cajón de los documentos sin dueño. La criatura anotó el número
+del cajón, pero no la frase del reverso.
+
 —¿Todos ellos? —preguntó la criatura.
 
 —No exactamente —dijo Lucía—. Algunos objetarían.
@@ -15724,9 +15764,17 @@ Chano lo había llamado alguna vez un mensaje. Lucía le hizo poner en la etique
 
 —Entonces, ¿por qué está en el libro?
 
-Lucía cerró el libro.
+Lucía cerró el libro y puso la mano sobre la cubierta.
 
-—Porque aprendió a preguntar y porque no aprendió bastante deprisa.
+—Porque llegó antes que sus preguntas.
+
+La criatura pensó en el recibo guardado en el cajón.
+
+—¿Y después?
+
+Lucía miró la sala oscura de servidores.
+
+—Después llegó el archivo.
 
 Afuera, el viento del Bajío corría sobre las antiguas torres de enfriamiento.
 En la sala de lectura, alguien volvió una página.

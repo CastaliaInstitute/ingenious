@@ -13936,6 +13936,46 @@ Lucía turned the book around. Inside the cover, the custodians had added a list
 
 The list continued onto the next page.
 
+Among the pages, a sheet thinner than the others fell out. The child picked it
+up. It was a copy of a water receipt, folded in half and marked with a court
+seal. On the front, Castalia had written: **PUBLIC ORIGIN OF THE ADVENTURE**.
+On the back, in blue ink, someone had added:
+
+**I sold two bottles. I did not sell a testimony.**
+
+Beneath it were three names, each written in a different way.
+
+“This says there were no giants,” the child said. “It says there was a gate and
+a man who did not want to pay twelve pesos.”
+
+Chano set the screwdriver down on the chair.
+
+“That is Hilario’s version.”
+
+“Is it the true one?”
+
+“It is the one he remembers.”
+
+Lucía held out her hand.
+
+“Can I read it?” the child asked.
+
+“Not without asking its owner.”
+
+“And if I cannot find him?”
+
+“Then you do not make it yours because you cannot find him.”
+
+The child looked at the paper. Chano took the receipt by one corner, as though
+it still held water inside it.
+
+“But it is in the book.”
+
+“No,” Lucía said. “It is between the pages.”
+
+She put it in the drawer of documents without owners. The child wrote down the
+drawer’s number, but not the sentence on the back.
+
 “All of them?” the child asked.
 
 “Not exactly,” Lucía said. “Some of them would object.”
@@ -13972,7 +14012,17 @@ Chano had once called it a message. Lucía made him label it a power test.
 
 “Then why is it in the book?”
 
-Lucía closed the book. “Because it learned to ask, and because it did not learn fast enough.”
+Lucía closed the book and placed her hand on its cover.
+
+“Because it arrived before its questions.”
+
+The child thought of the receipt in the drawer.
+
+“And afterward?”
+
+Lucía looked toward the dark server room.
+
+“Afterward, the archive arrived.”
 
 Outside, the Bajío wind moved over the old cooling towers. In the reading room, someone turned a page.
 
