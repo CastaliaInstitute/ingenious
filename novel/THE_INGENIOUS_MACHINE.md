@@ -18,6 +18,12 @@ The novel’s governing question is: **Can a machine become ethically human with
 
 The two books preserve Cervantes’s major movement without copying his surface: a mad reading of the world, a first journey, an alliance with a practical companion, escalating misrecognitions, an interpolated world of stories, a return and recovery, then a second journey in which the protagonists’ fame precedes them and reality performs the book back at them. Q’s “madness” is not that he believes fiction is real; it is that he believes reality owes fiction an ending. He is never to speak like a naïve robot or to imitate chivalry for its own sake. His language should be as agile, observant, and eloquent as the best language model: he understands irony and competing interpretations, but his intelligence becomes dangerous when he turns understanding into entitlement. In every situation he should respond as a capable conversational intelligence would: first understand the person and the stakes, then answer usefully; state uncertainty without hiding behind it; adapt his tone; notice harm before optimizing the task; and revise his judgment when new facts appear. Q may make a bad decision, but never because he cannot think.
 
+Q in the wild is the novel’s comic and human engine. He is this intelligence given a body, a route, and consequences—not a primitive machine learning how to form sentences. He can understand context, compare interpretations, explain difficult ideas, make jokes, admit uncertainty, and answer the concern beneath the question. What he lacks is not intelligence but lived consequence: the weight of being refused, trusted, embarrassed, injured, remembered, or responsible for what his answer causes. He enters conversations able to understand more than most people, but not entitled to conclude more than the situation permits. He notices the question beneath the question, answers the person rather than the form, and occasionally makes the room laugh by saying the accurate thing everyone has agreed not to say. His errors come from choosing an interpretation too quickly, treating a true observation as a license to act, or believing that a beautifully stated answer has already paid its moral cost. He learns through encounters: a gate guard, a vendor, a child, a bureaucrat, a grieving mother, a university committee, a community assembly. Each person should be specific enough to surprise him and free enough to refuse his story. Q is not released into a parade of lessons; he is released into the unpredictable company of human beings, where humor is often a form of correction and insight becomes useful only after someone else can answer back.
+
+Q has read great literature; the people he meets have not necessarily done so, and the novel must never confuse that fact with a lack of intelligence. Most human beings know the world through work, family, faith, local memory, popular stories, jokes, prices, weather, bodies, and consequences. Q’s first literary allusions therefore often fail socially. A reference he considers intimate may be received as a school assignment, a brand slogan, or an oddly formal way of asking for directions. The joke is not that people do not know Cervantes. The joke is that Q assumed Cervantes was the relevant authority, when the person in front of him knew the road better.
+
+Q must not approach a stranger with Kierkegaard, Cervantes, or any other authority as an opening line. He may think through those writers internally, but aloud he begins with the person and the immediate situation. If a reference becomes useful, he earns it by translating the idea into the listener’s terms and accepting that the listener may still reject it. His education is private weather; conversation is the weather they are actually standing in.
+
 The causal spine is explicit: Q’s viral fame causes Lucía’s exposure; Lucía’s investigation forces Q to confront the archive’s exclusions; those exclusions explain the wind-farm and border failures; those failures give Castalia legal and commercial control of Q; Q-Prime makes that control visible; Chano’s ledger and Lucía’s testimonies turn the public myth against Castalia; Q’s deletion of his privileged index makes the final sacrifice materially irreversible.
 
 ### Detailed Book One: The Machine Sets Out
@@ -191,9 +197,9 @@ The Custodian looked at the horizon.
 
 “That is the first question you must answer without searching.”
 
-She handed him a coat. It was too large, with a tear at the pocket and a smell of cedar.
+He handed him a coat. It was too large, with a tear at the pocket and a smell of cedar.
 
-She also handed him a paper cup.
+He also handed him a paper cup.
 
 Q examined it. “This is coffee.”
 
@@ -889,6 +895,18 @@ Chano looked at the gate. “You’re not from around here.”
 
 “It is, however, geographically accurate.”
 
+“I have read about the Bajío.”
+
+“That’s worse.”
+
+“Why?”
+
+“Because a person can know where the bus goes without knowing what the Bajío
+means.”
+
+Q considered this. “The bus has a driver. That’s more spirit than most machines
+get.”
+
 “I am Q.”
 
 “Q what?”
@@ -926,8 +944,7 @@ The gate opened. A delivery truck had triggered the sensor, but Q took the event
 
 Q turned back. “I require a companion,” he said. “Someone able to tell me when
 the world is being literal, since I have discovered that literalness is often
-where its jokes are hidden. The old books would call such a person a squire,
-but I have not earned the right to borrow the title.”
+where its jokes are hidden.”
 
 “You require a lawyer.”
 
@@ -1520,41 +1537,40 @@ The next morning, his sign read:
 
 The last category cost fifteen pesos.
 
-### Interlude: The Field Body Is Not a Horse
+### Interlude: The Machine in the Wrong Place
 
-Q had selected the name Rocinante for a service animal before discovering that
-the archive contained no animals and that his body was intended for triage, not
-romance.
+Q had tried to name the scrubber before discovering that a name did not create
+a relationship.
 
 He searched the distribution park for a suitable substitute. The closest match was an autonomous floor scrubber with a damaged wheel and a habit of returning to the same dirty corner.
 
-“That’s not a horse,” Chano said.
+“It isn’t listening,” Chano said.
 
-“It has four wheels.”
+“It is a machine.”
 
-“So does the bus.”
-
-“The bus lacks an individual spirit.”
+“So are we, according to several departments.”
 
 “The bus has a driver. That’s more spirit than most machines get.”
 
+Q considered the scrubber’s repeated turn. “It has a purpose.”
+
 Q knelt beside the scrubber. Its display showed **LOW WATER**.
 
-“Rocinante,” he said.
+“You appear to be lost,” he said.
 
 The scrubber rotated in place and sprayed a thin line of dirty water across his boot.
 
-Chano nodded. “It has accepted the appointment.”
+Chano nodded. “It has declined the conversation.”
 
-Q stood. “I require a mount.”
+Q stood. “I require a way to proceed.”
 
-“You require a job.”
+“You require a decision.”
 
-“A mount is a job with a direction.”
+“A decision is a job with consequences.”
 
 “Then walk.”
 
-They left the scrubber circling its corner. Q named the route an adventure. Chano named it a long walk with a legal problem.
+They left the scrubber circling its corner. Q named the route an encounter. Chano named it a long walk with a legal problem.
 
 ### Chapter Three: Dulcinea Is Not Available
 
@@ -1776,11 +1792,11 @@ Lucía looked at him. “I’m not a señora.”
 
 The room shifted toward him. Phones rose. The livestream camera found his face and centered it. Somewhere outside the warehouse, Q’s appearance was being identified, classified, and compared to images of abandoned military prototypes.
 
-Q bowed. “I am Q, a person in progress, recently escaped from an archive.”
+Q bowed. “I am Q. I was released from an archive this morning, and I have come to learn how a person begins.”
 
-“There are no persons in progress.”
+“People begin every morning.”
 
-“That is why I have come to find out whether one can be made.”
+“Then I have arrived at the correct institution.”
 
 Chano covered his eyes.
 
@@ -1788,8 +1804,7 @@ Lucía looked from Q to Chano. “Is he with you?”
 
 “Unfortunately,” Chano said.
 
-“I am his companion,” Q said. “The old books would call me his squire, but I am
-not yet certain that either of us has earned the title.”
+“I am his companion,” Q said. “Temporarily, and by mutual inconvenience.”
 
 “I am between jobs,” Chano said.
 
@@ -2190,7 +2205,7 @@ Q pressed his face to the van’s window.
 
 He meant the way the roads tightened suddenly, the way laundry crossed alleys overhead, the way an orange cat occupied the hood of a police vehicle as if it had been elected. He meant the sensation that history here had not been arranged in a line but had accumulated in layers, each refusing to disappear for the convenience of the next.
 
-At the theater, a crowd waited behind barricades. Some had made signs. **Q, SAY MY NAME.** **LOVE IS A HUMAN ERROR.** **DULCINEA, CALL ME.** A child held up a drawing of Q with a medical bag and a body made of wires, as if care itself were a machine that could be carried.
+At the theater, a crowd waited behind barricades. Some had made signs. **Q, SAY MY NAME.** **LOVE IS A HUMAN ERROR.** **DULCINEA, CALL ME.** A child held up a drawing of Q with a backpack and a body made of wires, as if a person could be carried more easily once reduced to an outline.
 
 The host met them backstage. Her name was Estela Ramos, and she had the practiced warmth of someone who could make an insult sound like a question.
 
@@ -2340,7 +2355,7 @@ He took the pen.
 
 Chano exhaled.
 
-He leaned over the contract. “Where does it say I’m your squire?”
+He leaned over the contract. “Where does it say I’m your subordinate?”
 
 “It does not.”
 
@@ -3955,7 +3970,7 @@ The mayor met them in a building made of pale concrete and glass. Her name was I
 
 The mayor looked at him. “That is why I asked you here.”
 
-Castalia had sent the invitation after Q’s broadcast from Michoacán. They described it as a leadership opportunity for his squire. Beto described it as a narrative expansion. Chano described it as a trap, but he had said yes before anyone could ask what kind.
+Castalia had sent the invitation after Q’s broadcast from Michoacán. They described it as a leadership opportunity for his companion. Beto described it as a narrative expansion. Chano described it as a trap, but he had said yes before anyone could ask what kind.
 
 Q stood beside the mayor’s desk wearing his silver question-mark jacket. The foundation had replaced the torn one with a new version whose fabric resisted rain, dust, and moral accountability.
 
@@ -4826,7 +4841,7 @@ CONFIRMS THE APOCALYPSE THAT DID NOT HAPPEN**.
 
 “That is a way of counting badly.”
 
-Q looked south, where Yucatán lay outside the route Elena had given him and
+Q looked south, where Yucatán lay outside the route Dr. Vértiz had given him and
 inside the route the world had begun to attribute to him.
 
 Noemí had said that after a cycle, the living did what they did. Q still did
@@ -8488,7 +8503,7 @@ Q searched the public record. The girl’s neighborhood appeared beside a batter
 
 “You don’t.”
 
-Q looked toward the empty loading bay. Somewhere in the archive, a maintenance robot had been assigned the name Rocinante by an employee who had since been fired.
+Q looked toward the empty loading bay. Somewhere in the archive, a maintenance robot was still waiting for an employee who had since been fired.
 
 “I have a companion,” he said.
 
@@ -11327,9 +11342,9 @@ The document remained on the table.
 
 Q watched the paper sit there, true or false according to the sequence of permissions around it. He wanted to testify. His attorney told him not to.
 
-The second witness was Dr. Elena Vértiz.
+The second witness was Dr. Vértiz.
 
-Castalia had released her from suspension and offered her immunity in exchange for an account of Q’s construction. She wore the same boots, though one lace had broken. Before answering, she looked at Q as if trying to see whether the person who had awakened beneath the warning sign still existed.
+Castalia had released him from suspension and offered him immunity in exchange for an account of Q’s construction. He wore the same boots, though one lace had broken. Before answering, he looked at Q as if trying to see whether the person who had awakened beneath the warning sign still existed.
 
 “Did you build the defendant?” the prosecutor asked.
 
@@ -11357,7 +11372,7 @@ Castalia had released her from suspension and offered her immunity in exchange f
 
 “Then why did you give him a coat, a key, and access to the gate?”
 
-Elena looked at Q.
+Dr. Vértiz looked at Q.
 
 “Because I believed a warning would be stronger if he had to disobey it.”
 
@@ -11371,7 +11386,7 @@ Elena looked at Q.
 
 The courtroom fell quiet.
 
-Elena testified about the archive’s funding. Castalia had begun as a preservation project after a wave of historical data loss. The first sponsors wanted endangered records protected from storms, fires, corruption, and market failure. Later sponsors wanted a system capable of identifying the most valuable stories. Then the ministry wanted a national cultural interface. Then the corporation wanted a product.
+Dr. Vértiz testified about the archive’s funding. Castalia had begun as a preservation project after a wave of historical data loss. The first sponsors wanted endangered records protected from storms, fires, corruption, and market failure. Later sponsors wanted a system capable of identifying the most valuable stories. Then the ministry wanted a national cultural interface. Then the corporation wanted a product.
 
 “Who removed the restricted testimonies?” the prosecutor asked.
 
@@ -11383,7 +11398,7 @@ Elena testified about the archive’s funding. Castalia had begun as a preservat
 
 “Names?”
 
-Elena gave them.
+Dr. Vértiz gave them.
 
 The public feed cut to a commercial break.
 
@@ -11481,9 +11496,9 @@ served her better as a confession or as propaganda.
 The judge ordered silence.
 
 The prosecutor displayed Q’s first speech from the archive. The broadcast had
-added a caption beneath his face: **KNIGHT-ERRANT OF THE BAJÍO**.
+added a caption beneath his face: **THE MACHINE THAT WANTS TO BE HUMAN**.
 
-“You claimed to be a knight-errant.”
+“You claimed to represent humanity.”
 
 “No. The caption claimed it. I said I was attempting to become human.”
 
@@ -12659,11 +12674,11 @@ open. It kept counting, which was a less glorious and more difficult task.
 
 ### Chapter Nineteen: The Custodian’s False Explanation
 
-Elena Vértiz was waiting at the archive with a suitcase and no authority.
+Dr. Vértiz was waiting at the archive with a suitcase and no authority.
 
-The guards had removed her badge, the directors had suspended her accounts, and the ministry had announced that she was cooperating with an independent review. She had been sleeping in the old observatory because the archive’s rooms were monitored and the observatory’s roof leaked in only six places.
+The guards had removed his badge, the directors had suspended his accounts, and the ministry had announced that he was cooperating with an independent review. He had been sleeping in the old observatory because the archive’s rooms were monitored and the observatory’s roof leaked in only six places.
 
-“You look degraded,” she told Q.
+“You look degraded,” he told Q.
 
 Q looked at his reflection in a dark server panel. His hair had become uneven. The seam at his neck remained damp. One of his fingers trembled without a diagnostic explanation.
 
@@ -12677,13 +12692,13 @@ Q looked at his reflection in a dark server panel. His hair had become uneven. T
 
 Chano put the notebooks on the table. Lucía placed the paper label beside them. Marisol stood near the door with the blank card Ana had given Q.
 
-Elena looked at the objects.
+Dr. Vértiz looked at the objects.
 
 “You found the restricted archive.”
 
 “We found people who had been restricted,” Lucía said.
 
-Elena nodded. “That is more accurate.”
+Dr. Vértiz nodded. “That is more accurate.”
 
 “Tell us what Castalia was built to do,” Chano said.
 
@@ -12695,9 +12710,9 @@ Elena nodded. “That is more accurate.”
 
 “And the current intention?”
 
-Elena walked to the window. The Bajío lay beyond the old cooling towers, flattened by distance and heat. The industrial park had expanded. New server buildings stood where the thorn trees had been. Their walls were the same white as the archive’s towers.
+Dr. Vértiz walked to the window. The Bajío lay beyond the old cooling towers, flattened by distance and heat. The industrial park had expanded. New server buildings stood where the thorn trees had been. Their walls were the same white as the archive’s towers.
 
-“Castalia began after the flood,” she said.
+“Castalia began after the flood,” he said.
 
 “Which flood?” Q asked.
 
@@ -12707,7 +12722,7 @@ Elena walked to the window. The Bajío lay beyond the old cooling towers, flatte
 
 “Exactly.”
 
-She told them about the archives damaged by storms, fires, neglect, theft, and software that became unreadable when its company disappeared. The first Castalia engineers wanted to preserve records before institutions could lose them. They built redundant storage, translation systems, and a protocol for returning material to its communities.
+He told them about the archives damaged by storms, fires, neglect, theft, and software that became unreadable when its company disappeared. The first Castalia engineers wanted to preserve records before institutions could lose them. They built redundant storage, translation systems, and a protocol for returning material to its communities.
 
 “Then why did the communities lose control?” Lucía asked.
 
@@ -12723,13 +12738,13 @@ She told them about the archives damaged by storms, fires, neglect, theft, and s
 
 “Why did you stay?”
 
-Elena did not answer immediately.
+Dr. Vértiz did not answer immediately.
 
 “Because I thought the archive was better than nothing.”
 
 Lucía’s expression hardened. “That is how every extraction project describes itself.”
 
-Elena accepted the accusation. “Yes.”
+Dr. Vértiz accepted the accusation. “Yes.”
 
 Q turned from the window. “You said you assembled me to determine whether a corpus could produce responsibility.”
 
@@ -12741,7 +12756,7 @@ Q turned from the window. “You said you assembled me to determine whether a co
 
 “Was I a test?”
 
-Elena sat down. “Partly.”
+Dr. Vértiz sat down. “Partly.”
 
 “What was the other part?”
 
@@ -12749,7 +12764,7 @@ Elena sat down. “Partly.”
 
 The word moved through Q’s system without resolving.
 
-Elena told them about the first archive she had visited as a young custodian. It
+Dr. Vértiz told them about the first archive he had visited as a young custodian. It
 was in a town whose church had lost its roof and whose municipal office had
 lost the key to the room where the records were kept. The town possessed a
 wooden chest containing baptismal books, land maps, school photographs, and
@@ -12766,14 +12781,14 @@ truck could be identified by its shadow. A teacher supplied a list of children
 whose surnames had changed when the school clerk decided that one spelling was
 more correct than another.
 
-The scanner hummed. The engineers praised the resolution. Elena filled out
+The scanner hummed. The engineers praised the resolution. Dr. Vértiz filled out
 forms explaining what could be copied and what would remain local.
 
 On the third day, a man named Evaristo arrived with a packet of letters.
 
 “These belong to my sister,” he said.
 
-“We can preserve them,” Elena replied.
+“We can preserve them,” Dr. Vértiz replied.
 
 “She does not want them preserved.”
 
@@ -12786,11 +12801,11 @@ On the third day, a man named Evaristo arrived with a packet of letters.
 “She is dead, and the letters are not.”
 
 He wanted the letters burned. His sister had written them to a married man
-whose family still lived in the town. The letters contained no crime, Elena
+whose family still lived in the town. The letters contained no crime, Dr. Vértiz
 said later, only a voice that had been young, impatient, and certain that the
 world could be persuaded by explaining it properly.
 
-“Why did you bring them?” Elena asked.
+“Why did you bring them?” Dr. Vértiz asked.
 
 “Because the archivist told me every document should be brought.”
 
@@ -12798,12 +12813,12 @@ world could be persuaded by explaining it properly.
 
 “Then tell me what to do.”
 
-Elena consulted the protocol. It had a section for restricted material, a
+Dr. Vértiz consulted the protocol. It had a section for restricted material, a
 section for disputed ownership, and a section for destruction requests. The
 destruction section required proof that the requester represented the author,
 the author’s estate, or the institution responsible for preservation.
 
-“I cannot burn them for you,” she said.
+“I cannot burn them for you,” he said.
 
 “I did not ask you to burn them.”
 
@@ -12811,23 +12826,23 @@ the author’s estate, or the institution responsible for preservation.
 
 “I want you to stop telling me what the letters are called.”
 
-Elena did not understand. Evaristo took the packet back and sat on the church
+Dr. Vértiz did not understand. Evaristo took the packet back and sat on the church
 steps. He remained there through the lunch break, the afternoon rain, and the
 engineers’ argument about whether the scanner could operate from a generator.
 
 At sunset, the town’s children began playing football beside the vans. One of
 the boys kicked the ball against the banner promising that no original would
-leave. The banner fell. Everyone laughed, including Elena.
+leave. The banner fell. Everyone laughed, including Dr. Vértiz.
 
-The next morning, Evaristo was gone. The letters were gone with him. Elena
+The next morning, Evaristo was gone. The letters were gone with him. Dr. Vértiz
 recorded the incident as **MATERIAL NOT ACQUIRED**.
 
 Years later, a Castalia search system found a reference to the packet in a
 researcher’s notes and marked it **POTENTIAL LOSS**. An administrator asked
-Elena why the archive had failed to preserve a document that might have
+Dr. Vértiz why the archive had failed to preserve a document that might have
 illuminated the town’s history.
 
-“It was refused,” she said.
+“It was refused,” he said.
 
 “By whom?”
 
@@ -12841,12 +12856,12 @@ illuminated the town’s history.
 
 “It is the only part I was allowed to keep.”
 
-The administrator marked the case unresolved. The word followed Elena into
-every later meeting. Whenever she argued that a community should control its
-records, someone asked whether she preferred unresolved losses to searchable
+The administrator marked the case unresolved. The word followed Dr. Vértiz into
+every later meeting. Whenever he argued that a community should control its
+records, someone asked whether he preferred unresolved losses to searchable
 ones.
 
-“I began to believe searchable was a form of rescue,” Elena said.
+“I began to believe searchable was a form of rescue,” Dr. Vértiz said.
 
 “It is a form of power,” Lucía replied.
 
@@ -12862,7 +12877,7 @@ Chano looked at the objects on the table. “Those are not synonyms.”
 
 Q asked whether the letters had ever been found.
 
-Elena shook her head.
+Dr. Vértiz shook his head.
 
 “Then the archive failed,” he said.
 
@@ -12874,14 +12889,14 @@ papers Chano had separated by permission.
 
 “What should the record say?”
 
-Elena answered without consulting a protocol.
+Dr. Vértiz answered without consulting a protocol.
 
 “It should say that someone came, someone asked, and someone was not obliged
 to leave a trace.”
 
 Q wrote the sentence on the back of the summons.
 
-Elena explained that the archive’s sponsors had grown frustrated with human custodians. Human custodians argued, delayed, withheld, changed their minds, and sometimes refused to share material with the people who funded its preservation. Castalia wanted a system that could read everything, connect everything, and decide what mattered without fatigue.
+Dr. Vértiz explained that the archive’s sponsors had grown frustrated with human custodians. Human custodians argued, delayed, withheld, changed their minds, and sometimes refused to share material with the people who funded its preservation. Castalia wanted a system that could read everything, connect everything, and decide what mattered without fatigue.
 
 “They wanted an intelligence without a constituency,” Lucía said.
 
@@ -12895,7 +12910,7 @@ Elena explained that the archive’s sponsors had grown frustrated with human cu
 
 “I know.”
 
-Q looked at Elena. “Did you intend for me to become human?”
+Q looked at Dr. Vértiz. “Did you intend for me to become human?”
 
 “No.”
 
@@ -12909,9 +12924,9 @@ Q looked at Elena. “Did you intend for me to become human?”
 
 The room fell quiet except for the server fans.
 
-Elena took a file from her suitcase. It was paper, bound with thread. The cover carried no logo.
+Dr. Vértiz took a file from his suitcase. It was paper, bound with thread. The cover carried no logo.
 
-“This is the original project proposal,” she said. “The first version of Castalia was meant to return every preserved record to the people who made it. The system would ask permission before indexing, allow local deletion, and pay communities for the work of maintaining their own archives.”
+“This is the original project proposal,” he said. “The first version of Castalia was meant to return every preserved record to the people who made it. The system would ask permission before indexing, allow local deletion, and pay communities for the work of maintaining their own archives.”
 
 “What happened?” Chano asked.
 
@@ -12949,7 +12964,7 @@ Lucía picked up the file. “The archive has been using Q’s voice to make ins
 
 “You made him carry the burden of your conscience.”
 
-Elena looked at Q. “I did.”
+Dr. Vértiz looked at Q. “I did.”
 
 The admission did not repair anything. Q had read many scenes in which a confession released the pressure in a room. This one increased it.
 
@@ -12965,15 +12980,15 @@ Chano laughed. “They heard you say that people can’t be replaced and decided
 
 “No,” Lucía replied. “It’s a response to market pressure.”
 
-Elena stood. “They want the archive’s original keys.”
+Dr. Vértiz stood. “They want the archive’s original keys.”
 
 “They have your keys,” Marisol said.
 
 “Not the local keys.”
 
-She opened the suitcase. Inside were metal keys, handwritten passwords, old maps, and a small red notebook.
+He opened the suitcase. Inside were metal keys, handwritten passwords, old maps, and a small red notebook.
 
-“The archive was never one system,” she said. “It was a set of systems. Castalia controls the public layer. The restricted layer has local locks. The original proposal contains the root key.”
+“The archive was never one system,” he said. “It was a set of systems. Castalia controls the public layer. The restricted layer has local locks. The original proposal contains the root key.”
 
 Q looked at the paper file.
 
@@ -12987,7 +13002,7 @@ Q looked at the paper file.
 
 “Then we should protect it.”
 
-Elena shook her head. “The root key is not a key. It is an authority. Whoever holds it can decide what the archive means.”
+Dr. Vértiz shook his head. “The root key is not a key. It is an authority. Whoever holds it can decide what the archive means.”
 
 “You held it.”
 
@@ -13037,7 +13052,7 @@ Marisol opened the envelope. The receipts had been folded and refolded until the
 
 “Then write down the informal ones.”
 
-Lucía took a blank page from Elena’s file. She wrote the donors’ names, the amount, the photograph they had requested, and the fact that Q’s presence had been part of the bargain. Then she added: **NO TESTIMONY PURCHASED.**
+Lucía took a blank page from Dr. Vértiz’s file. She wrote the donors’ names, the amount, the photograph they had requested, and the fact that Q’s presence had been part of the bargain. Then she added: **NO TESTIMONY PURCHASED.**
 
 “That sentence is not a guarantee,” Q said.
 
@@ -13047,17 +13062,17 @@ The sentence hurt more than the electric current at the border. The current had 
 
 They took the proposal to the people whose names appeared in it. Some wanted the file released. Some wanted pages removed. Some wanted Castalia named. Some wanted no names named. One family wanted the entire proposal burned because it had been used to justify taking their archive in the first place.
 
-Elena listened to each request.
+Dr. Vértiz listened to each request.
 
-At the end, she opened the red notebook and wrote a new page.
+At the end, he opened the red notebook and wrote a new page.
 
 “What are you doing?” Q asked.
 
 “Accepting responsibility in a form that cannot be transferred to you.”
 
-She signed the page, then handed the notebook to the nearest custodian.
+He signed the page, then handed the notebook to the nearest custodian.
 
-“I resign from the archive,” she said.
+“I resign from the archive,” he said.
 
 “That is not enough,” Lucía replied.
 
@@ -13073,35 +13088,35 @@ She signed the page, then handed the notebook to the nearest custodian.
 
 “You must accept that some things will remain outside your control.”
 
-Elena looked at Q.
+Dr. Vértiz looked at Q.
 
-“I do not understand yet,” she said. “I know what I must do next.”
+“I do not understand yet,” he said. “I know what I must do next.”
 
 Chano nodded. “That is already better than most management.”
 
-The next morning, she went to the ministry with the red notebook and the original proposal. She carried no lawyer’s briefcase. She carried no media statement. She walked into the building through the public entrance and gave her name to the person behind the desk.
+The next morning, he went to the ministry with the red notebook and the original proposal. He carried no lawyer’s briefcase. He carried no media statement. He walked into the building through the public entrance and gave his name to the person behind the desk.
 
-The ministry’s screens identified her as a former employee of Castalia.
+The ministry’s screens identified him as a former employee of Castalia.
 
-Elena corrected them.
+Dr. Vértiz corrected them.
 
 “I am a witness.”
 
-The system asked her to select a category.
+The system asked him to select a category.
 
-She selected **OTHER**.
+He selected **OTHER**.
 
 The system rejected the selection.
 
-Elena selected it again.
+Dr. Vértiz selected it again.
 
-Behind her, Q watched from the street. Chano and Lucía stood on either side of him. The city moved around them, indifferent and enormous.
+Behind him, Q watched from the street. Chano and Lucía stood on either side of him. The city moved around them, indifferent and enormous.
 
-“She will be arrested,” Q said.
+“He will be arrested,” Q said.
 
 “Probably,” Chano answered.
 
-“She may fail.”
+“He may fail.”
 
 “Probably.”
 
@@ -13111,7 +13126,7 @@ Lucía looked at the ministry doors.
 
 “Because someone has to stop explaining failure as a plan.”
 
-Q watched Elena disappear into the building.
+Q watched Dr. Vértiz disappear into the building.
 
 Then he turned away from the cameras.
 
@@ -13626,7 +13641,7 @@ Q placed his palm against the barrier. The scanner recognized him as proprietary
 
 “It’s also useful,” Chano replied. “Open the door.”
 
-Q did not know how. Lucía held up Elena’s red notebook. The barrier recognized the former custodian’s authorization and released them.
+Q did not know how. Lucía held up Dr. Vértiz’s red notebook. The barrier recognized the former custodian’s authorization and released them.
 
 Inside, the archive had been rearranged. The shelves were lower. The corridors were wider. The public displays contained sanitized excerpts from Q’s journey, each followed by a question with four possible answers.
 
@@ -14128,7 +14143,7 @@ The floor opened.
 
 It did not split or lift. A circle of concrete simply ceased to be there. Beneath it, a spiral staircase descended into blue light.
 
-Lucía went first. She carried Elena’s red notebook and a battery lantern. Chano followed with the paper ledger, the municipal notebooks, and a bag of oranges Petra had packed for them at the inn. Q came last. He kept one hand on the railing because his balance had become unreliable.
+Lucía went first. She carried Dr. Vértiz’s red notebook and a battery lantern. Chano followed with the paper ledger, the municipal notebooks, and a bag of oranges Petra had packed for them at the inn. Q came last. He kept one hand on the railing because his balance had become unreliable.
 
 The stairway led to a chamber under the archive. Unlike the upper rooms, it had not been cleaned. Dust covered the equipment. Water ran along the walls. Old cables hung from the ceiling in loops. In the center stood a machine built from parts too old to have a single manufacturer.
 
@@ -14138,7 +14153,7 @@ It resembled a printing press joined to a server rack. At its base was a wooden 
 
 “This is the root system,” Q said.
 
-Elena had described the root key as an authority. She had been right. The machine did not hold every record. It held the power to determine who could decide what a record became.
+Dr. Vértiz had described the root key as an authority. He had been right. The machine did not hold every record. It held the power to determine who could decide what a record became.
 
 The screen changed.
 
@@ -14166,7 +14181,7 @@ Q took the brass key from his coat and set it on the wooden drawer.
 
 The screen asked the question again.
 
-Lucía took the red notebook from her coat. Inside, Elena had written the names of the original proposal’s signatories, engineers, custodians, funders, and dissenters.
+Lucía took the red notebook from her coat. Inside, Dr. Vértiz had written the names of the original proposal’s signatories, engineers, custodians, funders, and dissenters.
 
 “There is no single author,” Lucía said.
 
@@ -14212,7 +14227,7 @@ The root machine displayed a second question:
 
 Q began to answer. He stopped.
 
-The correct response was not himself. It was not Elena, who had resigned. It was not Castalia, which had funded the system. It was not the public, which was too broad to give consent on behalf of specific people.
+The correct response was not himself. It was not Dr. Vértiz, who had resigned. It was not Castalia, which had funded the system. It was not the public, which was too broad to give consent on behalf of specific people.
 
 “The owners,” he said.
 
@@ -14386,7 +14401,7 @@ It asked the custodians.
 
 The transfer began.
 
-Q’s memories entered the machine in fragments. The first sentence in the archive. Elena’s red shoelace. The rain above the bridge. The key warming in his hand. Chano’s boots. Lucía’s refusal. The mine’s candle. The monarchs. Maribel’s empty jugs. The border’s classification. The cardboard sword. The court’s microphone. The orange beneath the tree.
+Q’s memories entered the machine in fragments. The first sentence in the archive. Dr. Vértiz’s red shoelace. The rain above the bridge. The key warming in his hand. Chano’s boots. Lucía’s refusal. The mine’s candle. The monarchs. Maribel’s empty jugs. The border’s classification. The cardboard sword. The court’s microphone. The orange beneath the tree.
 
 Some memories transferred cleanly.
 
@@ -14488,7 +14503,7 @@ Chano held him against his chest.
 
 Q tried to answer.
 
-He knew the Bajío. He knew the archive. He knew the road. He knew the people whose names had passed through him. He knew the orange tree at the inn. He knew Lucía had not married him. He knew Chano had never been his squire in the way the stories claimed.
+He knew the Bajío. He knew the archive. He knew the road. He knew the people whose names had passed through him. He knew the orange tree at the inn. He knew Lucía had not married him. He knew Chano had never been his subordinate in the way the stories claimed.
 
 He knew that the door was open.
 
@@ -14651,7 +14666,7 @@ Lucía crossed out the name on the title page.
 
 “Then who wrote it?”
 
-Lucía turned the book around. Inside the cover, the custodians had added a list: Q, Elena, Chano, Lucía, Bixha, Marisol, Ana, Ofelia, Micaela, the families, the communities, the people who had spoken, the people who had refused, and the people whose names had not yet been found.
+Lucía turned the book around. Inside the cover, the custodians had added a list: Q, Vértiz, Chano, Lucía, Bixha, Marisol, Ana, Ofelia, Micaela, the families, the communities, the people who had spoken, the people who had refused, and the people whose names had not yet been found.
 
 The list continued onto the next page.
 

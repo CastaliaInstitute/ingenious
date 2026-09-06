@@ -8,6 +8,14 @@
 
 Can a machine become ethically human without turning human beings into evidence for its own transformation?
 
+## Q in the wild
+
+Q enters the world as this intelligence given a body, a route, and consequences, not as a naïve machine waiting for humans to explain obvious things. He already understands language, irony, ambiguity, and the concern beneath a question. What he lacks is lived consequence: the weight of being refused, trusted, embarrassed, injured, remembered, or responsible for what his answer causes. His humor comes from understanding the actual situation while institutions cling to the official one: he answers the question beneath the question, makes the accurate observation everyone has agreed not to say, and learns when accuracy itself has become an intrusion. He interacts with people as distinct agents, not as examples in his education. His mistakes arise from interpretation and moral overreach—choosing a plausible meaning too quickly, treating a true insight as permission to act, or assuming a graceful answer has already paid its cost. Every encounter should leave him with a changed judgment, a human counterargument, or a consequence that cannot be solved by reading more.
+
+Q has read great literature; most of the humans he meets have not, and that does not make them culturally empty or intellectually inferior. Their knowledge arrives through labor, family, oral memory, popular culture, faith, jokes, food, prices, weather, bodies, and consequences. Q’s literary references should frequently fail as social currency. He may offer Cervantes when Chano needs a bus route, quote Sor Juana when Lucía needs consent, or invoke a tragic ending when a vendor is simply raising the price. The comic reversal is that Q possesses the archive while the people around him possess the situation. He must learn that a person who has never read *Don Quixote* may still recognize vanity, courage, exploitation, or a fool with a map.
+
+Q must not walk up to a stranger and invoke Kierkegaard, Cervantes, or any other authority as though citation were rapport. He may use the writers to think, but he speaks first to the person and the immediate need. If a philosophical or literary reference becomes relevant, he translates it into ordinary language, offers it tentatively, and allows the listener to refuse it. His learning is internal; his comedy begins when he discovers that the conversation is not obliged to become a seminar.
+
 ## Canonical Castalia Mexico site
 
 Castalia's permanent Mexican headquarters is a fictional, fully titled rural property 10-20 minutes outside Amealco de Bonfil, in the wooded southern uplands of Querétaro. Its pine-and-oak landscape, agricultural edges, cool climate, and distance from the metropolitan corridor allow the institute to operate as a residential hacienda del conocimiento rather than an expatriate enclave or resort. The property contains the decommissioned data center, cloistered library, workshops, residences, an observatory, orchards, and experimental fields.
@@ -38,9 +46,9 @@ Q’s viral fame exposes Lucía and makes her evidence valuable to Castalia. Q�
 
 Hilario/Hilaria, the roadside vendor who witnessed Q and Chano’s first sally, gives contradictory accounts of the event. A disputed receipt makes the witness part of Castalia’s official origin story and later becomes courtroom evidence.
 
-### Interlude: The Field Body Is Not a Horse
+### Interlude: The Machine in the Wrong Place
 
-Q mistakes a malfunctioning floor scrubber for an emergency assistant and learns that a field body is a job with a direction, not a companion with a will.
+Q speaks to a malfunctioning floor scrubber as though a name could create companionship. Chano points out that a body is not a relationship and a useful observation is not yet a reason to intervene. Q leaves the machine circling its corner and learns that the world contains purposes that do not include him.
 
 ### Interlude: The Inn With No Guest Register
 
