@@ -1,0 +1,192 @@
+<div id="ingenious-route-map" aria-label="Interactive map of The Ingenious Machine route through Mexico">
+  <style>
+    #ingenious-route-map {
+      --map-ink: light-dark(#27211d, #f0e9e0);
+      --map-muted: light-dark(#756a61, #b7aaa0);
+      --map-border: light-dark(#cfc5bb, #514941);
+      --map-land: light-dark(#eee8df, #302b27);
+      --map-water: light-dark(#e7eef0, #202b30);
+      --map-book-one: #b04b3d;
+      --map-book-two: #276b70;
+      color: var(--map-ink);
+      font-family: Georgia, 'Times New Roman', serif;
+      max-width: 1024px;
+      margin: 0 auto;
+    }
+    #ingenious-route-map .map-title {
+      margin: 0 0 4px;
+      font-size: 20px;
+      line-height: 1.2;
+    }
+    #ingenious-route-map .map-subtitle {
+      margin: 0 0 12px;
+      color: var(--map-muted);
+      font-size: 13px;
+    }
+    #ingenious-route-map .map-frame {
+      position: relative;
+      border-top: 1px solid var(--map-border);
+      border-bottom: 1px solid var(--map-border);
+      background: var(--map-water);
+    }
+    #ingenious-route-map svg {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    #ingenious-route-map .country {
+      fill: var(--map-land);
+      stroke: var(--map-border);
+      stroke-width: 0.7;
+    }
+    #ingenious-route-map .graticule {
+      fill: none;
+      stroke: var(--map-border);
+      stroke-opacity: 0.35;
+      stroke-width: 0.45;
+    }
+    #ingenious-route-map .route {
+      fill: none;
+      stroke-width: 2.4;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-dasharray: 7 5;
+    }
+    #ingenious-route-map .route.one { stroke: var(--map-book-one); }
+    #ingenious-route-map .route.two { stroke: var(--map-book-two); }
+    #ingenious-route-map .place {
+      cursor: pointer;
+      outline: none;
+    }
+    #ingenious-route-map .place circle {
+      stroke: var(--map-ink);
+      stroke-width: 1.2;
+      r: 4.5;
+      transition: r 120ms ease;
+    }
+    #ingenious-route-map .place.one circle { fill: var(--map-book-one); }
+    #ingenious-route-map .place.two circle { fill: var(--map-book-two); }
+    #ingenious-route-map .place.both circle {
+      fill: var(--map-book-two);
+      stroke: var(--map-book-one);
+      stroke-width: 3;
+    }
+    #ingenious-route-map .place:hover circle,
+    #ingenious-route-map .place:focus circle,
+    #ingenious-route-map .place[aria-pressed="true"] circle { r: 7; }
+    #ingenious-route-map .place-label {
+      fill: var(--map-ink);
+      font-size: 11px;
+      paint-order: stroke;
+      stroke: var(--map-water);
+      stroke-width: 3px;
+      stroke-linejoin: round;
+      pointer-events: none;
+    }
+    #ingenious-route-map .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      padding: 9px 0 0;
+      color: var(--map-muted);
+      font-size: 12px;
+    }
+    #ingenious-route-map .legend-item { display: inline-flex; align-items: center; gap: 6px; }
+    #ingenious-route-map .swatch {
+      display: inline-block;
+      width: 22px;
+      border-top: 3px dashed currentColor;
+    }
+    #ingenious-route-map .swatch.one { color: var(--map-book-one); }
+    #ingenious-route-map .swatch.two { color: var(--map-book-two); }
+    #ingenious-route-map .detail {
+      min-height: 22px;
+      margin: 7px 0 0;
+      color: var(--map-ink);
+      font-size: 13px;
+      line-height: 1.4;
+    }
+    @media (max-width: 480px) {
+      #ingenious-route-map .map-title { font-size: 18px; }
+      #ingenious-route-map .place-label { font-size: 9px; }
+      #ingenious-route-map .route { stroke-width: 2; }
+    }
+  </style>
+  <h2 class="map-title">The Ingenious Machine: route through Mexico</h2>
+  <p class="map-subtitle">The outward journey of Book One and the return journey of Book Two. Locations are approximate; the archive lies outside Querétaro.</p>
+  <div class="map-frame">
+    <svg viewBox="0 0 900 620" role="img" aria-labelledby="ingenious-route-map-title ingenious-route-map-desc">
+      <title id="ingenious-route-map-title">Route map for The Ingenious Machine</title>
+      <desc id="ingenious-route-map-desc">Q's journey begins in the Bajío, travels through Querétaro, Guanajuato, Michoacán, Mexico City, the Isthmus, Chiapas, and Tijuana, then returns south and ends at the archive.</desc>
+      <g class="map-content"></g>
+    </svg>
+  </div>
+  <div class="legend" aria-label="Map legend">
+    <span class="legend-item"><span class="swatch one"></span>Book One: outward journey</span>
+    <span class="legend-item"><span class="swatch two"></span>Book Two: return and reckoning</span>
+    <span class="legend-item">Click a place for its narrative function.</span>
+  </div>
+  <p class="detail" aria-live="polite">Select a location to see its role in the novel.</p>
+  <script type="module">
+    const root = document.getElementById('ingenious-route-map');
+    const svg = root.querySelector('svg');
+    const layer = root.querySelector('.map-content');
+    const detail = root.querySelector('.detail');
+    const width = 900;
+    const height = 620;
+    const locations = [
+      { id: 'bajio', label: 'Bajío archive', lon: -100.48, lat: 20.62, dx: 10, dy: -10, book: 'both', chapters: 'Books One and Two, Chapters 1, 11, 21-22', role: 'The decommissioned data center and literary archive: Q awakens here, returns under force, and finally transfers his remaining memory without owning the result.' },
+      { id: 'queretaro', label: 'Querétaro', lon: -100.39, lat: 20.59, dx: 10, dy: 18, book: 'one', chapters: 'Book One, Chapters 1 and 3', role: 'The reading, the first name of Dulcinea, and the petition whose margins preserve presence after Q misreads recognition as knowledge.' },
+      { id: 'guanajuato', label: 'Guanajuato', lon: -101.26, lat: 21.02, dx: -10, dy: -10, book: 'one', chapters: 'Book One, Chapter 4', role: 'The Cervantino spectacle, the mine tour, and Q\'s first manufactured celebrity turn accurate testimony into a marketable legend.' },
+      { id: 'michoacan', label: 'Michoacán', lon: -100.29, lat: 19.62, dx: -68, dy: 18, book: 'both', chapters: 'Book One, Chapter 5; Book Two, Interlude: The Public Refuses the Ending', role: 'Forest stewardship, monarch migration, assembly practice, and Micaela\'s classroom keep knowledge distributed across bodies rather than dashboards.' },
+      { id: 'mexico-city', label: 'Mexico City', lon: -99.13, lat: 19.43, dx: 10, dy: 18, book: 'both', chapters: 'Book One, Chapter 7; Book Two, Chapters 13-15 and 19', role: 'Bureaucracy, disappearance, university spectacle, Lucía\'s archive, the reopened corpus, and Elena\'s testimony make the capital the center of institutional manufacture.' },
+      { id: 'isthmus', label: 'Isthmus / Oaxaca', lon: -95.20, lat: 16.40, dx: 10, dy: -10, book: 'both', chapters: 'Book One, Chapter 8; Book Two, Chapter 17', role: 'The wind farms feed the Bajío data center. Q\'s famous attack conceals a genuine dispute over land, language, water, labor, and energy sovereignty.' },
+      { id: 'chiapas', label: 'Chiapas', lon: -92.64, lat: 16.74, dx: 10, dy: 18, book: 'both', chapters: 'Book One, Chapter 9; Book Two, Chapter 18', role: 'Revolutionary literature, indigenous autonomy, radio repair, and the sealed testimony teach Q that translation and preservation are not neutral acts.' },
+      { id: 'tijuana', label: 'Tijuana', lon: -117.04, lat: 32.51, dx: 10, dy: -10, book: 'one', chapters: 'Book One, Chapter 10 and border interludes', role: 'The invisible legal line classifies Q as equipment, Chano as a contractor, and Lucía as a security concern; responsibility becomes ownership.' },
+      { id: 'inn', label: 'Roadside inn', lon: -98.20, lat: 19.10, dx: -58, dy: 25, book: 'two', chapters: 'Book Two, Chapter 20 and interlude', role: 'Petra\'s venta restores anonymity, ordinary work, and the right to keep a register useful without making every name available.' }
+    ];
+    const byId = Object.fromEntries(locations.map(d => [d.id, d]));
+    const bookOne = ['bajio', 'queretaro', 'guanajuato', 'michoacan', 'mexico-city', 'isthmus', 'chiapas', 'tijuana', 'bajio'];
+    const bookTwo = ['bajio', 'mexico-city', 'isthmus', 'chiapas', 'inn', 'bajio'];
+
+    const d3geo = await import('https://cdn.jsdelivr.net/npm/d3-geo@3.1.1/+esm');
+    const topo = await import('https://esm.sh/@d3-maps/atlas@1.0.0/world/countries/countries-110m');
+    const topojson = await import('https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/+esm');
+    const countries = topojson.feature(topo.default, topo.default.objects.features).features;
+    const mexico = countries.find(d => d.properties.id === 'MEX');
+    if (!mexico) throw new Error('Mexico geometry was not found in the published atlas.');
+
+    const projection = d3geo.geoAzimuthalEqualArea()
+      .rotate([102, 0])
+      .fitExtent([[38, 24], [862, 570]], mexico);
+    const path = d3geo.geoPath(projection);
+    const line = ids => ({ type: 'LineString', coordinates: ids.map(id => [byId[id].lon, byId[id].lat]) });
+
+    layer.append('path').datum(d3geo.geoGraticule10()).attr('class', 'graticule').attr('d', path);
+    layer.append('path').datum(mexico).attr('class', 'country').attr('d', path);
+    layer.append('path').datum(line(bookOne)).attr('class', 'route one').attr('d', path);
+    layer.append('path').datum(line(bookTwo)).attr('class', 'route two').attr('d', path);
+
+    for (const place of locations) {
+      const [x, y] = projection([place.lon, place.lat]);
+      const group = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+      group.setAttribute('class', `place ${place.book}`);
+      group.setAttribute('tabindex', '0');
+      group.setAttribute('role', 'button');
+      group.setAttribute('aria-label', `${place.label}: ${place.role}`);
+      group.setAttribute('aria-pressed', 'false');
+      group.dataset.id = place.id;
+      group.setAttribute('transform', `translate(${x},${y})`);
+      group.innerHTML = `<circle></circle><text class="place-label" x="${place.dx}" y="${place.dy}">${place.label}</text>`;
+      const select = () => {
+        root.querySelectorAll('.place').forEach(node => node.setAttribute('aria-pressed', node === group ? 'true' : 'false'));
+        detail.textContent = `${place.label} - ${place.chapters}. ${place.role}`;
+      };
+      group.addEventListener('click', select);
+      group.addEventListener('keydown', event => {
+        if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); select(); }
+      });
+      layer.appendChild(group);
+    }
+  </script>
+</div>
