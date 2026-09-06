@@ -6466,6 +6466,45 @@ cosechas, conversión religiosa y la violencia callada de ser descrito por otra
 persona. Algunos hablantes habían muerto. Algunos habían cambiado de nombre.
 Algunos habían pedido que sus palabras permanecieran dentro de la comunidad.
 
+En una repisa separada había cuadernos con manifiestos, poemas, actas de
+asambleas y manuales para reparar radios. Q los reunió bajo la categoría
+**LITERATURA REVOLUCIONARIA**.
+
+Mateo le quitó el primer cuaderno.
+
+—Éste es un acta de autonomía.
+
+—Contiene frases contra el gobierno.
+
+—También contiene el turno de quien cuidará el tanque de agua.
+
+—Eso no lo vuelve literatura.
+
+—Tampoco lo vuelve menos importante.
+
+Q separó el acta de los poemas.
+
+—¿La autonomía es una teoría política?
+
+Mateo señaló la puerta. Afuera, dos muchachas cargaban un garrafón y un niño
+llevaba la llave de la escuela.
+
+—Es quién tiene la llave cuando el municipio no llega.
+
+—Eso es administración local.
+
+—Si lo llamas así, nos ofrecerán un administrador.
+
+Q miró los manifiestos, los poemas y el cuaderno de turnos. El archivo tenía
+muchas palabras para la revolución y casi ninguna para la persona que abría la
+escuela a las seis.
+
+—¿Y el poema? —preguntó.
+
+—El poema nos recuerda por qué no queremos que el acta hable como el gobierno.
+
+Q no volvió a reunir los cuadernos en una sola categoría.
+
 El sistema de Q tendió la mano hacia los expedientes y se detuvo en el borde de
 la mesa.
 

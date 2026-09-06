@@ -5742,6 +5742,45 @@ Mateo nodded. “That is the answer we expected.”
 
 They showed Q testimonies collected over forty years. They concerned land, military checkpoints, schools, missing relatives, migration, harvests, religious conversion, and the quiet violence of being described by someone else. Some speakers had died. Some had changed their names. Some had requested that their words remain within the community.
 
+On a separate shelf were notebooks containing manifestos, poems, assembly
+minutes, and manuals for repairing radios. Q gathered them under the category
+**REVOLUTIONARY LITERATURE**.
+
+Mateo took the first notebook away from him.
+
+“This is an act of autonomy.”
+
+“It contains statements against the government.”
+
+“It also contains the shift of the person who will watch the water tank.”
+
+“That does not make it literature.”
+
+“Nor does it make it less important.”
+
+Q separated the act from the poems.
+
+“Is autonomy a political theory?”
+
+Mateo pointed to the door. Outside, two girls carried a water jug and a child
+carried the school key.
+
+“It is who has the key when the municipality does not arrive.”
+
+“That is local administration.”
+
+“If you call it that, they will offer us an administrator.”
+
+Q looked at the manifestos, the poems, and the shift notebook. The archive had
+many words for revolution and almost none for the person who opened the school
+at six.
+
+“And the poem?” he asked.
+
+“The poem reminds us why we do not want the minutes to speak like the government.”
+
+Q did not gather the notebooks into a single category again.
+
 Q’s system reached for the files and stopped at the edge of the table.
 
 “You may not copy them,” Mateo said.
