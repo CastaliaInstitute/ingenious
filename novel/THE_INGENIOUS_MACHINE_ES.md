@@ -7072,7 +7072,7 @@ Al fin Chano dijo:
 
 Chano miró por la ventana.
 
-—Suele ser la clase que la gente consigue sobrevivir.
+—Suele ser la clase de verdad con la que la gente consigue sobrevivir.
 
 Detrás de ellos las montañas desaparecieron bajo la lluvia. Delante, el camino
 llevaba a la capital, la frontera, el tribunal y el archivo que se había llamado

@@ -6283,7 +6283,7 @@ At last Chano said, “You could have said it was empty.”
 
 “A limited truth.”
 
-Chano looked out the window. “That’s usually the kind people can survive.”
+Chano looked out the window. “That’s usually the kind of truth people can survive with.”
 
 Behind them, the mountains disappeared into rain. Ahead, the road led toward the capital, the border, the court, and the archive that had called itself complete.
 
