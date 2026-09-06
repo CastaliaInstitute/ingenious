@@ -10426,9 +10426,9 @@ Q empezó a crear un recordatorio. Alma lo detuvo.
 
 —Olvidar también es mío.
 
-Fue la primera vez que Q entendió que un archivo podía servir a una persona no
-terminando el trabajo. El descubrimiento no le agradó. Reducía su labor,
-complicaba su deber y dejaba una parte del porvenir sin respuesta programada.
+Q retiró las manos del teclado. El campo del recordatorio permaneció vacío. Alma
+miró la pantalla, esperó a que apareciese una confirmación y, al no verla, guardó
+el peine en el sobre.
 
 Antes de marcharse Alma, llamó una periodista al archivo. Había visto que la
 fotografía del hospital se discutía en una comisión de memoria pública y quería

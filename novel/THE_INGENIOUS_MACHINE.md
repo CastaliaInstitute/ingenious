@@ -9487,10 +9487,9 @@ Q began to create a reminder. Alma stopped him.
 
 “Forgetting is also mine.”
 
-This was the first time Q understood that an archive might serve a person by
-not completing the task. He did not like the discovery. It reduced his work,
-complicated his duty, and left a portion of the future without a scheduled
-response.
+Q took his hands off the keyboard. The reminder field remained blank. Alma
+watched the screen, waited for a confirmation to appear, and, when none did,
+put the comb back in the envelope.
 
 Before Alma left, a journalist called the archive. She had seen that the
 hospital photograph was being discussed by a committee on public memory and
