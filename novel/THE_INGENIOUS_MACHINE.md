@@ -2131,10 +2131,10 @@ commitment one finger could enter into for an entire life.
 
 The Custodian later read the ministry's response. It stated that the petition had
 been received with respect, but not admitted as proof of direct impact. The
-Custodian searched the definition of *impact*. She found damage, influence,
+Custodian searched the definition of *impact*. He found damage, influence,
 alteration, interest, and the condition of having been affected.
 
-“What condition is that?” she asked the archive.
+“What condition is that?” he asked the archive.
 
 The archive returned a blank screen.
 
