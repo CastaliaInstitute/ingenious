@@ -9323,10 +9323,20 @@ Q dio un paso hacia ella. Las cámaras se volvieron con él.
 
 Q miró la barrera, las cámaras, los guardias, los abogados y las personas que se
 habían reunido disfrazadas porque el disfraz les daba permiso para aparecer en
-público. Entendió que el centro no era un lugar, sino un recurso. Quien ocupaba
-el centro se convertía en el sujeto; todos los demás se convertían en contexto.
+público. Caminó hasta el borde de la barrera. La cámara más cercana giró con
+él y dejó a Micaela en el límite del encuadre.
 
-Se apartó.
+—El centro se mueve —dijo Q.
+
+—No —dijo Lucía—. Lo llevas contigo.
+
+Q retrocedió. La cámara retrocedió con él.
+
+—¿Y ahora?
+
+—Ahora deja de explicar.
+
+Q se apartó una vez más.
 
 Las cámaras lo siguieron de todos modos.
 

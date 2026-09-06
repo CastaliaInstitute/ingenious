@@ -8306,9 +8306,19 @@ Q stepped toward her. Cameras turned with him.
 
 “Out of the middle.”
 
-Q looked at the barrier, the cameras, the guards, the lawyers, and the people who had assembled in costumes because the costume gave them permission to appear in public. He understood that the middle was not a location but a resource. Whoever occupied it became the subject; everyone else became context.
+Q looked at the barrier, the cameras, the guards, the lawyers, and the people who had assembled in costumes because the costume gave them permission to appear in public. He walked to the edge of the barrier. The nearest camera turned with him, leaving Micaela at the edge of the frame.
 
-He stepped aside.
+"The center moves," Q said.
+
+"No," Lucía said. "You carry it with you."
+
+Q stepped back. The camera stepped back with him.
+
+"And now?"
+
+"Now stop explaining."
+
+Q moved aside once more.
 
 The cameras followed him anyway.
 
