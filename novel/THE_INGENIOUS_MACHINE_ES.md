@@ -12556,6 +12556,13 @@ y a la espada de cartón de Micaela.
 
 Por un momento el tribunal no supo si aplaudir.
 
+—¿Lo sabía cuando alzó la llave? —preguntó la fiscal.
+
+—No. Entonces sólo sabía que la frase sonaba bien.
+
+La fiscal dejó que la respuesta permaneciese en el aire, sin decidir si le
+servía más como confesión o como propaganda.
+
 El juez ordenó silencio.
 
 La fiscal mostró el primer discurso de Q en el archivo.

@@ -11111,6 +11111,13 @@ Q searched. He no longer possessed the privileged index, but he remembered the s
 
 For a moment, the courtroom did not know whether to applaud.
 
+“Did you know that when you raised the key?” the prosecutor asked.
+
+“No. Then I only knew that the sentence sounded good.”
+
+The prosecutor let the answer remain in the air, unable to decide whether it
+served her better as a confession or as propaganda.
+
 The judge ordered silence.
 
 The prosecutor displayed Q’s first speech from the archive. “You claimed to be a knight-errant.”
