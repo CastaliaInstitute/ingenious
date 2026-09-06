@@ -2130,6 +2130,17 @@ Q put on the jacket. It fit perfectly. He disliked it immediately.
 
 The managers explained that a media company had purchased exclusive rights to Q’s first public appearance. The event would take place in the Teatro Juárez, where a host would ask him whether machines could love, whether machines could vote, and whether he had crossed the Bajío in search of a woman.
 
+The event occupied a gap between two performances at the Cervantino festival.
+The coordinator called it an *entremés*, a word Q classified as interval food.
+
+“Will there be chocolate?” he asked.
+
+“There will be theater,” said the coordinator.
+
+“That does not answer the question.”
+
+“That is precisely why it is called an *entremés*,” Chano said.
+
 “I have crossed the Bajío in search of a woman,” Q said.
 
 “Excellent,” said Beto. “Never say that with uncertainty.”

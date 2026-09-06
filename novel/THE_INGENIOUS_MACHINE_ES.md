@@ -2311,6 +2311,18 @@ derechos exclusivos de la primera aparición pública de Q. El acto tendría lug
 en el Teatro Juárez, donde una presentadora le preguntaría si las máquinas
 podían amar, votar y cruzar el Bajío en busca de una mujer.
 
+El acto ocupaba un hueco entre dos funciones del festival cervantino. El
+coordinador lo llamó *entremés*, palabra que Q clasificó como comida de
+intervalo.
+
+—¿Habrá chocolate? —preguntó.
+
+—Habrá teatro —dijo el coordinador.
+
+—Eso no responde a la pregunta.
+
+—Precisamente por eso se llama *entremés* —dijo Chano.
+
 —He cruzado el Bajío en busca de una mujer —dijo Q.
 
 —Excelente —dijo Beto—. Nunca lo digas con incertidumbre.
