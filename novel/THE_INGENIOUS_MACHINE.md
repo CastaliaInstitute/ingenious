@@ -5246,14 +5246,12 @@ Q asked whether he had helped Ivonne.
 
 “Sometimes. Sometimes it is the beginning of a file.”
 
-The reader will understand that Q did not abandon his desire to certify
-humanity. He merely changed the name of the project. In a later folder, found
-among the trial papers, the title reads **PROVISIONAL INDEX OF PERSONS WHO
-REFUSE TO BE SUMMARIZED**. There are no names beneath it. The page is blank,
-which may indicate wisdom, fear, or an error in printing. Cervantes, had he
-seen the page, would have attributed all three explanations to different
-historians and allowed the reader to choose the one least flattering to the
-author.
+The project reappeared under another name in a later folder, found among the
+trial papers. Its title read **PROVISIONAL INDEX OF PERSONS WHO REFUSE TO BE
+SUMMARIZED**. There are no names beneath it. The page is blank, which may
+indicate wisdom, fear, or an error in printing. Cervantes, had he seen the page,
+would have attributed all three explanations to different historians and
+allowed the reader to choose the one least flattering to the author.
 
 ### Chapter Eight: The Giants of the Isthmus
 

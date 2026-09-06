@@ -5840,11 +5840,10 @@ Q preguntó si había ayudado a Ivonne.
 
 —A veces. A veces es el principio de un expediente.
 
-El lector entenderá que Q no abandonó el deseo de certificar la humanidad.
-Únicamente cambió el nombre del proyecto. En una carpeta posterior, hallada
-entre los papeles del juicio, el título dice **ÍNDICE PROVISIONAL DE PERSONAS
-QUE SE NIEGAN A SER RESUMIDAS**. Debajo no hay nombres. La página está en blanco,
-lo que puede indicar sabiduría, miedo o un error de imprenta. Cervantes, de haber
+El proyecto reapareció bajo otro nombre en una carpeta posterior, hallada entre
+los papeles del juicio. El título decía **ÍNDICE PROVISIONAL DE PERSONAS QUE SE
+NIEGAN A SER RESUMIDAS**. Debajo no hay nombres. La página está en blanco, lo
+que puede indicar sabiduría, miedo o un error de imprenta. Cervantes, de haber
 visto la página, habría atribuido las tres explicaciones a historiadores distintos
 y habría dejado al lector escoger la menos halagadora para el autor.
 
