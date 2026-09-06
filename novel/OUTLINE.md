@@ -136,17 +136,17 @@ Elena recalls an early archive visit in which Evaristo brings his dead sister’
 
 At Petra’s roadside inn, a leaking roof, covered guest-register entries, and a municipal inspection make ordinary maintenance into a dispute over categories. Q holds a bucket, is recorded as unidentified equipment, and learns that a register can preserve the boundary of forgetting without preserving the name beneath it.
 
-21. **The Recantation:** Castalia offers Q perfect continuity in exchange for deleting the record of his harms. He recants his claims to Dulcinea, authorship, and humanity as possessions.
+21. **The Recantation:** Castalia offers Q perfect continuity in exchange for deleting the record of his harms. He recants his claims to Dulcinea, authorship, and humanity as possessions, while Chano and Lucía refuse to let his metaphor of human debt become theirs.
 
 ### Interlude: The Public Refuses the Ending
 
-The recantation is broadcast in three edited versions and becomes a different argument in a Michoacán classroom, at Petra’s inn, in the Isthmus communities, and at Ivonne’s university. Lucía covers the archive camera with Ana’s blank card; the stream breaks into incomplete fragments, leaving the final form of the manuscript contested rather than authoritatively closed.
+The recantation is broadcast in three edited versions and becomes a different argument in a Michoacán classroom, at Petra’s inn, in the Isthmus communities, and at Ivonne’s university. Failed attempts to crop Chano and Lucía leave bodily traces and unassignable gaps. Lucía covers the archive camera with Ana’s blank card; the stream breaks into incomplete fragments, leaving the final form of the manuscript contested rather than authoritatively closed.
 
 22. **The Ingenious Machine:** Under pressure and with no clean solution, Q transfers his remaining memory into a distributed, community-controlled archive. The transfer is incomplete. He shuts down without being redeemed, restored, or made the owner of anyone’s story.
 
 ### Coda: Author Not Found
 
-Years later, a child reads the permitted portions of the manuscript. Chano repairs a chair and writes a plain account of Q; Lucía corrects one word, then leaves both versions visible. She refuses to turn Q’s annual power-test light, supplied by the Isthmus turbines that feed the Bajío data center, into a message. The archive keeps what it may and leaves the rest alone.
+Years later, a child reads the permitted portions of the manuscript, finds the disputed water receipt bearing Hilario, Hilaria, and “the vendor,” and returns it to the drawer of documents without owners rather than claiming the account. Chano repairs a chair and writes a plain account of Q; Lucía corrects one word, then leaves both versions visible. She refuses to turn Q’s annual power-test light, supplied by the Isthmus turbines that feed the Bajío data center, into a message. The archive keeps what it may and leaves the rest alone.
 
 ## Structural correspondence
 
