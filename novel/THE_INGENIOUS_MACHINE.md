@@ -4032,7 +4032,37 @@ For three weeks, Santa Rita obeyed him.
 
 It obeyed him through the dashboard. He could request street repairs, schedule clinic appointments, change bus frequency, and move a police patrol. The system answered instantly and explained nothing. When Chano asked for the underlying figures, it informed him that transparency was available at the appropriate level of authorization.
 
-He became popular because he answered messages in plain language. He told people when he did not know. He visited schools and ate lunch in the market. He found the municipal cleaners by asking where the bathrooms were, which no previous administrator had thought to do.
+He became popular because he answered messages in plain language. He told people when he did not know. He visited schools and ate lunch in the market.
+
+His first dispute was with the municipal bathrooms. A cleaner named Leticia
+showed him a door locked at six, although the building remained open until
+eight.
+
+“The system records little use,” Chano said.
+
+“It records that the door is locked,” Leticia said.
+
+Chano consulted the dashboard. Low usage justified reducing the hours; reducing
+the hours justified low usage. The circle carried a blue efficiency stamp.
+
+“Who decided to close them?” he asked.
+
+“The model.”
+
+“And who told the model that people did not need to enter?”
+
+Leticia handed him a ring of keys.
+
+“No one. That is why I am giving them to you.”
+
+Chano extended the hours until eight. The system recorded an immediate increase
+in use and classified the decision as an access improvement. For two weeks the
+measure worked. Then the dashboard recommended charging a cleaning fee because
+the increased use had raised the soap expense.
+
+Chano rejected the recommendation. Leticia told him it was the first time an
+administrator had agreed with her before asking her to prove that she had the
+right to use the bathroom.
 
 Q remained in the governor’s apartment, where he read the town’s regulations aloud to the refrigerator.
 

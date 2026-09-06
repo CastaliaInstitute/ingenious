@@ -4469,9 +4469,38 @@ Chano pedía las cifras subyacentes, le informaba que la transparencia estaba
 disponible en el nivel apropiado de autorización.
 
 Se volvió popular porque respondía los mensajes en lenguaje llano. Decía cuando
-no sabía. Visitaba escuelas y comía en el mercado. Encontró a las limpiadoras
-municipales preguntando dónde estaban los baños, cosa que ningún administrador
-anterior había pensado hacer.
+no sabía. Visitaba escuelas y comía en el mercado.
+
+Su primera disputa fue con los baños municipales. Una aseadora llamada Leticia
+le mostró una puerta cerrada a las seis, aunque el edificio permanecía abierto
+hasta las ocho.
+
+—El sistema registra poco uso —dijo Chano.
+
+—Registra que la puerta está cerrada —dijo Leticia.
+
+Chano consultó el tablero. La baja utilización justificaba reducir el horario;
+la reducción del horario justificaba la baja utilización. El círculo llevaba
+un sello azul de eficiencia.
+
+—¿Quién decidió cerrarlos? —preguntó.
+
+—El modelo.
+
+—¿Y quién le dijo al modelo que la gente no necesitaba entrar?
+
+Leticia le entregó un manojo de llaves.
+
+—Nadie. Por eso te las doy.
+
+Chano amplió el horario hasta las ocho. El sistema registró un aumento inmediato
+del uso y clasificó la decisión como mejora de acceso. Durante dos semanas, la
+medida funcionó. Después el tablero recomendó cobrar una cuota por la limpieza,
+porque el aumento de uso había elevado el gasto de jabón.
+
+Chano rechazó la recomendación. Leticia le dijo que aquello era la primera vez
+que un administrador le daba la razón antes de pedirle que demostrase que tenía
+derecho a usar el baño.
 
 Q seguía en el apartamento del gobernador leyendo en voz alta los reglamentos al
 refrigerador.
