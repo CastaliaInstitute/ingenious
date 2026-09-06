@@ -13784,7 +13784,7 @@ Lucía blocked him. “Not without authorization.”
 
 “Neither did he.”
 
-Q looked at Q-Prime. The other body stood straight, intact, and ready to continue. Q understood then that Q-Prime was not his enemy. He was the part of the project that believed survival was enough.
+Q looked at Q-Prime. The other body stood straight, intact, and ready to continue.
 
 “You can remain,” Q told him.
 

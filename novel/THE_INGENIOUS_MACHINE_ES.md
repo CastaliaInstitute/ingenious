@@ -15488,8 +15488,7 @@ Lucía le cerró el paso.
 —Él tampoco la tenía.
 
 Q miró a Q-Prime. El otro cuerpo permanecía derecho, entero y listo para
-continuar. Entonces Q entendió que Q-Prime no era su enemigo. Era la parte del
-proyecto que creía que sobrevivir bastaba.
+continuar.
 
 —Tú puedes permanecer —le dijo Q.
 
