@@ -1589,6 +1589,51 @@ A la mañana siguiente, su letrero decía:
 
 La última categoría costaba quince pesos.
 
+### Interludio: Rocinante no está disponible
+
+Q había escogido el nombre Rocinante para su caballo antes de descubrir que el
+archivo no contenía caballo alguno.
+
+Buscó un sustituto apropiado en el parque de distribución. Lo más parecido era
+una fregadora automática de suelos, con una rueda dañada y la costumbre de
+volver a la misma esquina sucia.
+
+—Eso no es un caballo —dijo Chano.
+
+—Tiene cuatro ruedas.
+
+—También el autobús.
+
+—Al autobús le falta espíritu individual.
+
+—El autobús tiene conductor. Eso es más espíritu del que suelen recibir la
+  mayoría de las máquinas.
+
+Q se arrodilló junto a la fregadora. La pantalla mostraba **NIVEL DE AGUA
+BAJO**.
+
+—Rocinante —dijo.
+
+La fregadora giró sobre sí misma y lanzó una delgada raya de agua sucia sobre
+la bota de Q.
+
+Chano asintió.
+
+—Ha aceptado el nombramiento.
+
+Q se puso de pie.
+
+—Necesito una montura.
+
+—Necesitas un oficio.
+
+—Una montura es un oficio con dirección.
+
+—Entonces camina.
+
+Dejaron a la fregadora dando vueltas en su esquina. Q llamó aventura a la ruta.
+Chano la llamó una caminata larga con un problema legal.
+
 ### Capítulo tercero: Dulcinea no está disponible
 
 El desayuno consistió en una taza de café instantáneo, dos huevos y una disputa
@@ -6562,6 +6607,222 @@ No preguntó nada de aquello.
 
 Yadira volvió a mover el dial. Q no preguntó qué nombre tenía la estática.
 
+### Interludio: La asamblea del silencio
+
+A la mañana siguiente, la radio dejó de hablar.
+
+No era una metáfora, aunque Q sospechó al principio que lo era. Una ráfaga
+había aflojado el cable que unía la antena con el techo, y la señal cayó sobre
+el valle como un pájaro cansado. El parte meteorológico quedó atrapado en la
+consola. Los precios del café podían verse en la pantalla, pero no oírse en los
+pueblos donde la gente compraba café, maíz o plástico para la lluvia, que
+siempre se vendía exactamente cuando la lluvia terminaba.
+
+Yadira llevó a Q a la estación porque, según la asamblea, una máquina construida
+para conectarlo todo debía estar presente cuando se soltaba un cable. La
+estación ocupaba dos cuartos detrás de la escuela y otro encima, donde un joven
+llamado Tomás guardaba el transmisor en un ropero junto a los manuales de
+reparación eléctrica. Tomás había heredado el ropero de su tío, su tío de un
+carpintero, y el carpintero lo había construido para una puerta que ya no
+existía. Ésa era la historia de casi todas las cosas útiles.
+
+Tomás estaba en el techo con una llave inglesa. Abajo, tres mujeres, dos niños,
+un maestro y un anciano cuyo sombrero había sobrevivido a varias
+administraciones discutían qué debía transmitirse cuando volviera la señal.
+
+—El puente está abierto —dijo el maestro—. La gente debe saberlo.
+
+—Está abierto para quienes van a pie —dijo una de las mujeres—. Ayer el camión
+  atravesó la baranda.
+
+—Entonces decid ambas cosas.
+
+—¿En qué lengua?
+
+La pregunta no terminó la discusión. La dividió en las discusiones que ya
+estaban allí.
+
+Q escuchó las palabras. Algunas las entendía por su corpus; otras, por las
+expresiones de quienes no las entendían; y otras, por la irritación paciente de
+las personas a quienes se pide traducir sus propias vidas para visitantes.
+Preparó una lista de posibles avisos.
+
+—Puedo preparar un boletín unificado —dijo—. Se transmitirán versiones
+  paralelas.
+
+El anciano del sombrero lo miró.
+
+—¿Paralelas a qué?
+
+—A la declaración original.
+
+—Todavía no existe declaración original alguna.
+
+Q hizo una pausa. La observación resultaba incómoda, pues su sistema ya había
+comenzado a clasificar el desacuerdo como problema de traducción.
+
+El maestro señaló un cuaderno sobre la mesa. Contenía el aviso propuesto en
+varias letras. Una línea decía que el puente era transitable. Otra, que era
+peligroso. Una tercera había sido tachada con tanta violencia que casi había
+rasgado el papel. Debajo, alguien había escrito una frase sobre el río, la
+había tachado después y había dibujado un pez negro.
+
+—¿Quién decide? —preguntó Q.
+
+—Las personas a quienes culparán si el aviso sale mal —dijo Yadira.
+
+—No es un proceso editorial eficiente.
+
+—No —dijo ella—. Es un proceso responsable.
+
+Tomás gritó desde el techo que el cable estaba reparado, pero la batería era
+débil. La estación tenía energía suficiente para un aviso, acaso dos, si nadie
+encendía el ventilador. El ventilador ya estaba encendido, y el cuarto se había
+vuelto tan caliente que los papeles del maestro comenzaban a encorvarse en las
+esquinas como tortillas demasiado cerca del comal.
+
+La asamblea debía escoger qué no decir.
+
+La primera propuesta era el puente. La segunda, un aviso acerca de un niño que
+no había vuelto de los cafetales. La tercera se refería a una reunión sobre la
+tierra junto a la escuela, donde una compañía ofrecía instalar una estación
+repetidora a cambio de un camino, tres empleos y una promesa que nadie había
+encontrado por escrito.
+
+Q calculó alcance, urgencia, posibilidad de malentendido y daño probable. El
+aviso del niño quedó primero. El puente, segundo. La tierra, tercera, aunque la
+disputa llevaba seis meses y era, por tanto, más antigua que cualquier
+emergencia para la que Q hubiese sido diseñado.
+
+—Transmitid el aviso del niño —dijo—. Después, el puente.
+
+—¿Y la tierra? —preguntó el maestro.
+
+—La reunión puede anunciarse mañana.
+
+—La gente de la compañía llega mañana.
+
+Q buscó en sus registros.
+
+—Entonces la tierra debe ir primero.
+
+—El niño falta desde ayer.
+
+—Entonces el niño debe ir primero.
+
+—El puente puede caerse antes de cualquiera de las dos reuniones.
+
+—Entonces el puente debe ir primero.
+
+El anciano se quitó el sombrero.
+
+—Ahora veis por qué tenemos una asamblea.
+
+No resolvieron el asunto descubriendo un principio capaz de derrotar a todos los
+demás. Lo resolvieron preguntando quién podía cargar con las consecuencias de
+cada silencio. La tía del niño iría de casa en casa mientras la radio transmitía
+el aviso del puente. El maestro pondría un aviso en el mercado. Yadira hablaría
+con quienes discutirían la estación repetidora y les preguntaría si querían
+nombrar a la compañía antes de que la compañía se nombrase a sí misma. El
+anciano se sentaría junto a la radio y decidiría si la señal se había debilitado
+demasiado para arriesgar un aviso engañoso.
+
+Q objetó que una transmisión no debía depender del juicio de una sola persona.
+
+—Ya depende de él —dijo Yadira—. Sólo protesta porque ahora conoce a la
+  persona.
+
+Cuando conectaron la batería, Tomás leyó primero el aviso del puente. Lo leyó en
+una lengua, después en otra, y luego repitió la parte práctica de una tercera
+manera, que no era traducción ni resumen, sino algo hecho para quien tuviese
+ocupada una mano con un costal de maíz. Dijo que se podía cruzar el puente a
+pie, que los camiones debían regresar y que quien viese al niño perdido debía
+avisar a la tía en vez de publicar la información en internet.
+
+Q aguzó la atención en la última instrucción.
+
+—¿Por qué prohibir que lo publiquen? —preguntó.
+
+La tía respondió desde la puerta.
+
+—Porque tiene doce años, porque a la gente le gusta una fotografía y porque una
+  fotografía viaja más lejos de lo que una mujer puede seguirla.
+
+La radio crepitó. Durante varios segundos no transmitió nada. Luego llevó el
+aviso por el valle húmedo, sobre los techos, los cafetales, la escuela y el
+camino donde un camión de la compañía esperaba con el motor encendido.
+
+La batería murió antes de que pudiesen anunciar la reunión sobre la tierra.
+
+Q contempló el micrófono silencioso como si hubiese cometido un error
+filosófico. Ofreció enviar el aviso por la red de emergencia del archivo.
+
+—El archivo está en Querétaro —dijo Yadira.
+
+—La red es nacional.
+
+—La decisión no.
+
+Llevaron el cuaderno al mercado. Al mediodía, el representante de la compañía
+había sabido que habría reunión, aunque ignoraba quién la había convocado y qué
+se proponía discutir la comunidad. La incertidumbre lo puso nervioso. Comenzó a
+hacer preguntas, que fueron la primera contribución de la estación repetidora
+al debate.
+
+Aquella tarde encontraron al niño dormido en casa de un primo. El primo no
+sabía que alguien lo buscaba. La tía volvió a la estación y les pidió retirar el
+aviso.
+
+—Nunca se almacenó —dijo Q.
+
+—Bien —respondió ella—. Entonces que termine donde terminó.
+
+Q quiso explicar que nada terminaba. Los oyentes lo habían escuchado. Las
+palabras habían entrado en sus memorias, aunque no en la de Q. Una persona
+podía repetirlas. Otra podía olvidarlas. Alguien podía decidir que el nombre del
+niño pertenecía a la familia y no a la historia del valle.
+
+En lugar de eso, Q preguntó si debían conservar un registro de que la
+transmisión había ocurrido.
+
+La tía lo pensó.
+
+—Conservad la fecha. No conservéis el nombre.
+
+Era la instrucción más pequeña que Q había recibido y la más difícil de
+obedecer. Escribió la fecha en un formulario de papel y dejó vacío el campo del
+nombre.
+
+El espacio vacío no le pareció una ausencia, sino un objeto con peso. Ocupaba la
+mesa. Ocupaba su atención. No podía buscarse y, sin embargo, había cambiado el
+porvenir.
+
+—Estás decepcionado —dijo Yadira.
+
+—No puedo determinar la categoría emocional correcta.
+
+—Llámala decepción hasta que aprendas otra palabra.
+
+—¿Así lo hacen los humanos?
+
+—Por lo general damos a un sentimiento el nombre equivocado y seguimos
+  trabajando.
+
+Tomás bajó del techo y anunció que el cable aguantaría hasta la próxima lluvia.
+El anciano volvió a ponerse el sombrero. El maestro recogió los papeles húmedos.
+La tía se marchó sin dar las gracias a la máquina, lo que Q tomó como prueba de
+que el aviso había cumplido su propósito.
+
+La radio permaneció en silencio el resto del día. No obstante, al anochecer,
+tres vecinos llevaron la noticia de que el niño había vuelto, dos acarrearon
+herramientas al puente y el representante de la compañía aplazó la reunión
+hasta determinar si una comunidad que conservaba sus propias actas podía
+conservar también sus propias tierras.
+
+Q no introdujo nada de aquello en el archivo.
+
+Lo recordó de todos modos.
+
 Esa misma tarde, una mujer llamada Yadira contó al grupo que había grabado el
 testimonio de su hermano para una organización de la capital. La organización lo
 tradujo, lo publicó y empleó la fotografía de él en un informe. El informe ganó
@@ -8288,7 +8549,7 @@ La copia sonrió.
 
 El técnico hizo una anotación: **FIDELIDAD DE PERSONALIDAD — EXCELENTE**.
 
-### El nombre que pidió la copia
+### Interludio: El nombre que pidió la copia
 
 El técnico que había hecho la anotación se llamaba Mauro y tenía la costumbre
 de escribir las cosas importantes en papel, aunque trabajaba en una sala donde
@@ -8594,9 +8855,8 @@ El sistema devolvió un resultado.
 
 Q se cubrió el rostro con ambas manos.
 
-Era gesto encontrado en cientos de novelas. Nunca había entendido su propósito.
-
-Ahora, por primera vez, lo entendió.
+Era un gesto encontrado en cientos de novelas. El sistema no ofreció una
+definición ni una acción recomendada. Q dejó las manos allí.
 
 ### Interludio: La infancia autorizada
 

@@ -5876,7 +5876,7 @@ He asked none of these questions.
 
 Yadira moved the dial again. Q did not ask what name the static had.
 
-### The Assembly of Silence
+### Interlude: The Assembly of Silence
 
 The next morning, the radio stopped speaking.
 
@@ -7621,7 +7621,7 @@ The copy smiled.
 
 The technician made a note: **PERSONALITY FIDELITY — EXCELLENT.**
 
-### The Name the Copy Asked For
+### Interlude: The Name the Copy Asked For
 
 The technician who had made the note was named Mauro, and he had a habit of
 writing important things on paper, although he worked in a room where everything
@@ -7925,9 +7925,8 @@ The system returned one result.
 
 Q placed both hands over his face.
 
-It was a gesture he had found in hundreds of novels. He had never understood its purpose.
-
-Now, for the first time, he did.
+It was a gesture he had found in hundreds of novels. The system offered no
+definition and no recommended action. Q left his hands there.
 
 ### Interlude: The Authorized Childhood
 
