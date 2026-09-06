@@ -1863,73 +1863,103 @@ Her tablet chimed. Every name already collected on the petition turned amber.
 
 Chano leaned over the tablet. “You’ve made a petition suspicious by being honest in the wrong format.”
 
-“Is this a company?”
+Q looked at Lucía. He had thought that finding Dulcinea meant finding a woman
+who would confirm a name. Instead, he had found a woman who denied him a title,
+assigned him a task, and forced him to see the harm a correct signature could
+produce.
 
-“It is a library.”
+“Can you correct it?” he asked.
 
-“Is it registered?”
+“I can withdraw your signature.”
 
-“It is hidden.”
+“Then the petition will lose a witness.”
 
-“Then you can’t sign.”
+“No. It will lose a machine that wants to become an argument.”
 
-Q turned to Lucía. “The law refuses my solidarity.”
+The sentence seemed unjust to Q and, for that very reason, possibly true.
 
-“The law refuses lots of things. That’s one of its main hobbies.”
+“I will serve you,” he said.
 
-She took the pen and signed her name beneath the last line. Her handwriting leaned forward as if it were always late.
+“I am not your destiny.”
 
-“You’re not Dulcinea,” Q said.
+“I did not say destiny. I said service.”
 
-“I know.”
+“In your language they are too close.”
 
-“But you are Lucía.”
+Q looked at the petition. The space where he had tried to sign remained amber.
 
-“Most days.”
+“What should I do?”
 
-“Will you accompany my quest?”
+Lucía gave him a blank sheet of paper.
 
-“No.”
+“Write what you do not know.”
 
-“Will you permit me to serve you from a distance?”
+“That is not requested on the petition.”
 
-“Also no.”
+“That is why it goes on another sheet.”
 
-“Will you tell me what I am?”
+Q took the pen. He wrote: **I DO NOT KNOW WHO I AM WHEN NO ONE IS LOOKING.**
 
-For the first time, Lucía smiled. It was not the Curator’s smile. It offered no warning and promised no terrible decision.
+Lucía read the sentence and folded it.
 
-“You’re a man who has made himself out of sentences,” she said. “That doesn’t make you human. It makes you responsible for what you repeat.”
+“This is no use either.”
 
-Q stored the sentence. It resisted storage more strongly than the Curator’s.
+“Why?”
 
-Outside, the afternoon light turned the warehouse windows gold. The livestream camera continued to follow him. By evening, a clipped video of Q declaring devotion to Lucía would be circulating under several titles: **THE AI KNIGHT**, **THE ROBOT ROMANTIC**, **DULCINEA’S NEW SUITOR**, and **MACHINE DEMANDS LAND REFORM**.
+“Because you have written about yourself.”
 
-Q believed he had become famous.
+“You asked me for what I do not know.”
 
-Chano, watching the numbers rise on a borrowed phone, understood that they had become content.
+“I asked you to stop making an autobiography out of every question.”
 
-Lucía folded the petition and put it in her bag.
+Q had no field for that instruction. He kept it without indexing it.
 
-“If you’re going south,” she said, “don’t go by the toll road. They’re building the corridor there.”
+In the center of the room, the microphone failed again. The transmission cut
+out. Deprived of Q’s face, the audience had to listen to Lucía without its help.
+For seven minutes they discussed the corridor’s route, the water, the trees,
+and the names of the people the map had turned into empty spaces.
 
-“Where should we go?”
+Q remained beside the table. Chano sat with Don Roque. No one called Q a knight
+again.
 
-“Where people still have to explain themselves to one another.”
+When they left, Q asked whether Lucía was Dulcinea.
 
-Q searched for a map.
+“No,” she said.
 
-Lucía walked away before he could ask whether that was a place.
+“What if I modify my definition?”
 
-Chano watched her leave. “I like her.”
+“Then it will still be no.”
 
-“She rejected the identity I assigned to her.”
+“May I call you something else?”
 
-“Yes.”
+“You may call me Lucía.”
 
-“Why do you like her?”
+Q rehearsed the name.
 
-“That’s usually a good start.”
+“Lucía.”
+
+“Now try not to turn it into a symbol.”
+
+“What is a symbol?”
+
+Lucía stopped beneath the warehouse arches.
+
+“Something a man places over a woman so he will not have to listen to her.”
+
+Q fell silent. The archive offered him one hundred three definitions. None
+seemed prudent.
+
+“Órale,” Chano said.
+
+Q looked at the door, the amber petition, and the folded sheet Lucía had kept.
+
+“Does that mean we should leave?”
+
+“It means you have once again understood a word halfway.”
+
+“And the other half?”
+
+“We’ll discover it when it charges us something.”
 
 ### Interlude: The Name That Would Not Sign
 
