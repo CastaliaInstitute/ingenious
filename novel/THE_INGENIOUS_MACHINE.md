@@ -5987,14 +5987,12 @@ The old man removed his hat.
 
 “Now you see why we have an assembly.”
 
-They did not settle the matter by discovering a principle that defeated all the
-others. They settled it by asking who could carry the consequences of each
-silence. The child’s aunt would go from house to house while the radio
-broadcast the bridge warning. The teacher would post a notice in the market.
-Yadira would speak with those who would debate the repeater station and ask
-whether they wanted to name the company before the company named itself. The old
-man would sit beside the radio and decide whether the signal had weakened too
-much to risk a misleading announcement.
+The child’s aunt kept his name to herself and went from house to house while the
+radio broadcast the bridge warning. The teacher posted another notice in the
+market. Yadira went to speak with those who would debate the repeater station
+and asked whether they wanted to name the company before the company named
+itself. The old man sat beside the radio, one finger on the dial, ready to
+interrupt the broadcast if the signal weakened too much.
 
 Q objected that a broadcast should not depend on one person’s judgment.
 
@@ -6061,9 +6059,9 @@ The aunt considered it.
 It was the smallest instruction Q had received and the hardest to obey. He
 wrote the date on a paper form and left the name field empty.
 
-The empty space did not seem to him an absence, but an object with weight. It
-occupied the table. It occupied his attention. It could not be searched, and yet
-it had changed the future.
+Q looked at the empty field. It could not fit in the search function, but it
+occupied the table and his attention. He held it there until the ink of the date
+dried.
 
 “You are disappointed,” Yadira said.
 
@@ -6077,8 +6075,8 @@ it had changed the future.
 
 Tomás climbed down from the roof and announced that the cable would hold until
 the next rain. The old man put on his hat. The teacher gathered the damp papers.
-The aunt left without thanking the machine, which Q took as proof that the
-announcement had served its purpose.
+The aunt left without thanking the machine. Q waited for someone to praise him
+for the announcement. No one did.
 
 The radio remained silent for the rest of the day. Nevertheless, by evening,
 three neighbors had brought news that the child had returned, two had carried

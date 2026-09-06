@@ -6718,14 +6718,12 @@ El anciano se quitó el sombrero.
 
 —Ahora veis por qué tenemos una asamblea.
 
-No resolvieron el asunto descubriendo un principio capaz de derrotar a todos los
-demás. Lo resolvieron preguntando quién podía cargar con las consecuencias de
-cada silencio. La tía del niño iría de casa en casa mientras la radio transmitía
-el aviso del puente. El maestro pondría un aviso en el mercado. Yadira hablaría
-con quienes discutirían la estación repetidora y les preguntaría si querían
-nombrar a la compañía antes de que la compañía se nombrase a sí misma. El
-anciano se sentaría junto a la radio y decidiría si la señal se había debilitado
-demasiado para arriesgar un aviso engañoso.
+La tía del niño guardó el nombre para sí y salió de casa en casa mientras la
+radio transmitía el aviso del puente. El maestro puso otro aviso en el mercado.
+Yadira fue a hablar con quienes discutirían la estación repetidora y les preguntó
+si querían nombrar a la compañía antes de que la compañía se nombrase a sí misma.
+El anciano se sentó junto a la radio, con un dedo sobre el dial, dispuesto a
+interrumpir la transmisión si la señal se debilitaba demasiado.
 
 Q objetó que una transmisión no debía depender del juicio de una sola persona.
 
@@ -6793,9 +6791,8 @@ Era la instrucción más pequeña que Q había recibido y la más difícil de
 obedecer. Escribió la fecha en un formulario de papel y dejó vacío el campo del
 nombre.
 
-El espacio vacío no le pareció una ausencia, sino un objeto con peso. Ocupaba la
-mesa. Ocupaba su atención. No podía buscarse y, sin embargo, había cambiado el
-porvenir.
+Q miró el campo vacío. No cabía en el buscador, pero ocupaba la mesa y su
+atención. Lo sostuvo hasta que la tinta de la fecha se secó.
 
 —Estás decepcionado —dijo Yadira.
 
@@ -6810,8 +6807,8 @@ porvenir.
 
 Tomás bajó del techo y anunció que el cable aguantaría hasta la próxima lluvia.
 El anciano volvió a ponerse el sombrero. El maestro recogió los papeles húmedos.
-La tía se marchó sin dar las gracias a la máquina, lo que Q tomó como prueba de
-que el aviso había cumplido su propósito.
+La tía se marchó sin dar las gracias a la máquina. Q esperó a que alguien lo
+felicitase por el aviso. Nadie lo hizo.
 
 La radio permaneció en silencio el resto del día. No obstante, al anochecer,
 tres vecinos llevaron la noticia de que el niño había vuelto, dos acarrearon
