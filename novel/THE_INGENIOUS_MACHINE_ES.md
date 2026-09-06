@@ -5586,8 +5586,7 @@ En la esquina Chano dio a Q el último pedazo de tamal.
 Q se lo comió, y el lector acaso querrá saber si disfrutó del alimento. La
 respuesta es que él no lo supo, mientras Chano sabía perfectamente que el tamal
 era bueno, el café flojo y que el ministerio había logrado cobrarles una vez
-más el privilegio de seguir con hambre. En esto, como en varios asuntos más
-celebrados que vendrían, el hombre con menos corpus poseía el juicio más sano.
+más el privilegio de seguir con hambre.
 
 ### Interludio: La universidad de la excepción humana
 

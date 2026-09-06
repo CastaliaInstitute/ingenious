@@ -4997,9 +4997,7 @@ At the corner, Chano gave Q the last piece of tamal.
 Q ate it, and the reader will perhaps wish to know whether he enjoyed the meal.
 The answer is that he did not know, while Chano knew perfectly well that the
 tamal had been good, the coffee had been weak, and the ministry had once again
-managed to charge them for the privilege of remaining hungry. In this matter,
-as in several more celebrated matters to come, the man with the least corpus
-possessed the soundest judgment.
+managed to charge them for the privilege of remaining hungry.
 
 ### Interlude: The University of the Human Exception
 
