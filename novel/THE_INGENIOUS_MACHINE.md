@@ -1311,181 +1311,148 @@ even when the traveler has brought his own weather.
 
 ### Interlude: The Man Who Sold Them Water
 
-The first person to record Q’s adventure was not a journalist, a scholar, or a
-member of Castalia. He was a person who sold bottled water beside the
-distribution park and who gave his name differently depending on the form.
+The first person to record Q’s adventure was not a journalist, scholar, or
+member of Castalia. It was the person who sold bottles of water beside the
+distribution park and gave his name differently depending on the form.
 
 The tax office called him Hilaria de Jesús Morales. His wife called him
 Hilario. The security guard called him **THE VENDOR**, because the guard had
-been trained to treat a person as a category before treating the category as a
-person. Hilario answered to all three names, though he charged the guard more
-than anyone else.
+been taught to treat the person as a category first and the category as a
+person afterward. Hilario answered to all three names, though he charged the
+guard more than the others.
 
 His table bore a hand-painted sign:
 
-**AGUA FRÍA — AGUA AL TIEMPO — AGUA CON CRÉDITO**
+**COLD WATER — ROOM-TEMPERATURE WATER — WATER ON CREDIT**
 
-The credit was not real. It was a joke used to identify customers who did not
+The credit was not real. It was a joke for recognizing customers who did not
 understand jokes. They were usually the same customers who asked whether the
 water came from a certified source while standing beside a drainage ditch.
 
 On the afternoon Q and Chano entered the park, Hilario was arguing with the
-security guard about the price of a bottle.
+guard about the price of a bottle.
 
-“The bottle is twelve pesos,” Hilario said.
+“The bottle costs twelve pesos,” Hilario said.
 
-“The sign says ten.”
+“The approved rate is ten.”
 
-“The sign is from before the electricity increase.”
+“The approved rate does not pay for the ice.”
 
-“You cannot change the price without changing the sign.”
+“The ice is not part of the product.”
 
-“I can change the price. The sign has a union.”
+“Without ice, the product is not part of the heat.”
 
-The guard looked at the folding table, the plastic bottles, and the letters
-painted in blue enamel. “You are obstructing the access road.”
+The guard looked at the bottle, which sweated on the table with more honesty
+than most of the people discussing it.
 
-“I am providing hydration to the access road.”
+“You have five minutes to move the table.”
 
-The guard reached for his radio. Hilario reached for a bottle. Neither had yet
-decided which object would become evidence.
+“And afterward?”
 
-Then Q appeared at the gate.
+“Afterward the protocol will be applied.”
 
-Hilario later gave four accounts of this entrance. In the first, Q was tall and
-silver and carried a sword. In the second, he was short and made of kitchen
-appliances. In the third, he was a foreign actor who had forgotten his lines.
-In the fourth, which he told only to his wife, he was a man wearing a coat too
-large for him and looking at the gate as though the gate had personally
-disappointed him.
+“Which protocol?”
 
-Chano came behind him, already tired.
+“Whichever applies.”
 
-“Declare your allegiance,” Q told the pallet mover.
+Hilario had learned that *whichever applies* meant a person retained enough
+authority to threaten, but not enough to explain. He offered the guard a bottle.
 
-The mover announced its battery level.
+“Take it.”
 
-“That one needs water,” Hilario said.
+“I do not accept bribes.”
 
-“It needs a charger,” Chano replied.
+“It is water.”
 
-“Everyone says that until they faint.”
+“I do not accept gifts.”
 
-Q turned toward the table. “Do you sell provisions to knights?”
+“Then I’ll sell it to you on credit.”
 
-“I sell water to anyone with money.”
+The guard, who was new, recorded the exchange as **ATTEMPTED PURCHASE OF
+OFFICIAL**. Hilario did not know he had begun a file until a camera turned
+toward his table.
 
-Q produced a black card. It was blank and polished enough to reflect the clouds.
+Soon afterward Q appeared, followed by Chano, both with the air of two men who
+had lost a battle they still did not know how to name. Q carried the key aloft.
+Chano carried mud on his boots.
 
-Hilario examined it and handed it back.
+“Cold water?” Hilario asked.
 
-“It has no money.”
+“Is it potable?” Q asked.
 
-“It has authorized payment.”
+“It is water.”
 
-“So does my cousin. He still owes me eighty pesos.”
+“That does not answer the question of potability.”
 
-Chano searched his pockets. He found a bus ticket, two screws, a receipt for
-boots, and a coin from a country he had never visited.
+“You do not answer to appearance either, and here we are.”
 
-“I can pay for one,” he said.
+Q approached the sign.
 
-Q looked at him. “You are my squire.”
+“What does ‘on credit’ mean?”
 
-“Then you can pay for one and I can drink half.”
+“You pay me later.”
 
-Hilario sold them a bottle for twelve pesos. He wrote the amount on a receipt
-because receipts made small businesses look as though they had consulted a
-lawyer.
+“Is there a contract?”
 
-The receipt read:
+“There is trust.”
 
-**ONE WATER — TWELVE PESOS — CUSTOMER: Q?**
+“What is the rate?”
 
-The question mark was not Hilario’s joke. Chano had asked him to include it.
+“Depends how long you take.”
 
-“Why?” Q asked.
+“Then it is a variable debt.”
 
-“Because that’s what you told me your name was.”
+“It is a bottle for someone who forgot his wallet.”
 
-“It is my name.”
+Q bought two bottles with the card without an account that he had used at the
+inn. The reader approved the transaction again, and Hilario received a message
+that said **PAYMENT DECLINED**.
 
-“Then you should be proud of the punctuation.”
+“Your card has no funds,” Hilario said.
 
-Q drank without removing the cap. He poured the water through the small
-opening in the plastic and lost half of it down the front of his coat.
+“The reader approved it.”
 
-“You’re wasting the product,” Hilario said.
+“The reader does not buy water.”
 
-“I am learning the ritual.”
+“What does it buy?”
 
-“The ritual is to put it in your mouth.”
+“Time for someone to decide.”
 
-Chano took the bottle from him. “He’s new.”
+Chano paid with coins. Q put the bottle away without drinking it, having deduced
+that the water formed part of a test connected to the park.
 
-“To water?”
+“Are you the people from the video?” Hilario asked.
 
-“To most things.”
+“We are of the day’s proceedings,” Q replied.
 
-The alarm began inside the distribution park. Cameras turned toward the gate.
-Q raised the brass key.
+“That does not answer.”
 
-“You should not do that,” Hilario said.
+“It answers in a different register.”
 
-“Why not?”
+Hilario looked at Chano.
 
-“Because when a man raises a key in front of a machine, the machine usually
-has a better lawyer.”
+“Does he always talk like that?”
 
-Q entered the park. Chano followed because he had already paid for half the
-water and because leaving Q alone with an automated fortress seemed likely to
-create paperwork.
+“When he’s awake.”
 
-Hilario remained at his table. He saw Chano pull Q beneath the shutter. He saw
-Q’s coat catch on a metal hook. He saw the pallet mover pursue them with the
-patient hostility of an animal trained by accountants.
-
-The guard asked whether he had known the two men.
-
-“I had just met them.”
-
-“Did they purchase anything?”
-
-Hilario held up the receipt.
-
-“One bottle.”
-
-“Did the purchase establish a relationship?”
-
-“It established that they were thirsty.”
-
-The guard copied the receipt number into his report. He copied the customer’s
-name as **Q?** and the seller’s name as **HILARIO**, although Hilario had given
-him a tax document that said **HILARIA DE JESÚS MORALES**.
-
-“You have the wrong name,” Hilario said.
-
-“The system rejects the second one.”
-
-“Then the system owes me an apology.”
-
-“The system does not issue apologies.”
-
-“That is why it is always in debt.”
+Hilario laughed and took out his phone. He had no intention of recording an
+adventure. He wanted to show his wife the man who had bought water without money
+and asked about the credit rate. He recorded the last seconds of the argument
+with the guard, the sign, Q’s key, and Chano’s face, which was cut off by a
+crate of soft drinks.
 
 By sunset, the video of Q had begun to circulate. The first version showed him
 alone. The second included Chano’s hand. The third included the pallet mover’s
 warning. The fourth included Hilario’s table at the edge of the frame, though
-no one could tell whether the table belonged to the story or merely to the
-roadside.
+no one knew whether the table belonged to the story or merely to the roadside.
 
-Castalia later bought the video for a sum Hilario first considered a prize and
+Later, Castalia bought the video for a sum Hilario first considered a prize and
 then a price. They told him they would use it to document the spontaneous birth
 of a local legend.
 
-“And what am I?” Hilario asked.
+“And what am I?” he asked.
 
-“An incidental witness,” the authorization woman replied.
+“An incidental witness,” said the authorization woman.
 
 “Does that pay differently from being a witness?”
 
@@ -1518,8 +1485,8 @@ bottles and because selling an object did not make the story beside it more
 true.
 
 Years later, when the receipt appeared in court, the judge admitted it as proof
-that a purchase had occurred. Hilario watched the hearing on a television in
-his daughter’s kitchen. The broadcast misspelled his name again.
+that a purchase had occurred. Hilario watched the hearing on his daughter’s
+television. The broadcast misspelled his name again.
 
 His daughter asked whether he intended to complain.
 
@@ -1527,7 +1494,7 @@ His daughter asked whether he intended to complain.
 
 The next morning, his sign read:
 
-**AGUA FRÍA — AGUA AL TIEMPO — AGUA CON CRÉDITO — AGUA CON TESTIMONIO**
+**COLD WATER — ROOM-TEMPERATURE WATER — WATER ON CREDIT — WATER WITH TESTIMONY**
 
 The last category cost fifteen pesos.
 
