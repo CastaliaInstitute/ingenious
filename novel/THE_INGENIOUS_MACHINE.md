@@ -5748,17 +5748,17 @@ minutes, and manuals for repairing radios. Q gathered them under the category
 
 Mateo took the first notebook away from him.
 
-“This is an act of autonomy.”
+“These are the minutes of an autonomous assembly.”
 
 “It contains statements against the government.”
 
-“It also contains the shift of the person who will watch the water tank.”
+“It also contains the duty roster for whoever will watch the water tank.”
 
 “That does not make it literature.”
 
 “Nor does it make it less important.”
 
-Q separated the act from the poems.
+Q separated the minutes from the poems.
 
 “Is autonomy a political theory?”
 
@@ -5771,7 +5771,7 @@ carried the school key.
 
 “If you call it that, they will offer us an administrator.”
 
-Q looked at the manifestos, the poems, and the shift notebook. The archive had
+Q looked at the manifestos, the poems, and the duty notebook. The archive had
 many words for revolution and almost none for the person who opened the school
 at six.
 
