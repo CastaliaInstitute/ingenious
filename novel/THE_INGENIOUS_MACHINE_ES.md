@@ -13442,6 +13442,14 @@ la puerta después de tres golpes.
 
 Ella lo miró y luego miró a los demás.
 
+Q miró el cielo, por si la lluvia hubiese obedecido al mensaje.
+
+—La contraseña no es un parte meteorológico —dijo la mujer.
+
+—¿Qué parte es?
+
+—La que os dice que alguien os esperaba antes.
+
 —Llegáis tarde.
 
 —El camino presentó demoras.

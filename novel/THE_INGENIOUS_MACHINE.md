@@ -11854,6 +11854,14 @@ The blue house stood at the end of a road lined with coffee plants. A woman open
 
 She looked at him, then at the others.
 
+Q looked at the sky, in case the rain had obeyed the message.
+
+“The password is not a weather report,” the woman said.
+
+“What report is it?”
+
+“The one that tells you someone was expecting you earlier.”
+
 “You are late.”
 
 “The road presented delays.”
