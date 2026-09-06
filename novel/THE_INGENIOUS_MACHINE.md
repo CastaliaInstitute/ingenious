@@ -4581,6 +4581,232 @@ Q looked at Lucía’s folders, Chano’s ledger, and the credential glowing amb
 
 For the first time, the answer did not come from a book.
 
+### Interlude: The Calendar That Did Not Announce the End
+
+The next day, Castalia took Q to the National Museum of Anthropology so that he
+could explain time to a camera.
+
+The exhibition was advertised in enormous letters:
+
+**THE APOCALYPSE CALENDARS: FROM THE SUN STONE TO THE END OF THE WORLD.**
+
+Q read the title twice.
+
+“It is historically imprecise,” he said.
+
+“That is why it sells,” replied Beto, who had appeared again with a tablet and
+the smile of an official who belonged to no office.
+
+Beneath a case lay the Sun Stone. A child studied it with the seriousness of
+someone waiting for a stone to reveal whether there would be an examination on
+Friday. The label called it the **Aztec calendar**.
+
+“Is it an Aztec calendar?” Q asked.
+
+“It is a Mexica piece,” said a woman arranging the audience’s questions. “And
+the word calendar, by itself, does not explain what you are looking at.”
+
+She wore a badge without a photograph. It said **Nadia Hernández, Historical
+Mediation**.
+
+“Is Aztec incorrect?” Q asked.
+
+“It is a word many people use, but it is not innocent. If you use it without
+context, you turn a history of peoples, languages, alliances, wars, and
+destructions into a label that seems to have existed forever.”
+
+Q pointed to the case.
+
+“The label exists.”
+
+“The label also has a history.”
+
+Beto brought the camera closer.
+
+“Say that the ancient Mexican civilizations understood the apocalypse.”
+
+“I cannot say that.”
+
+“You can. You have a voice.”
+
+“Having a voice does not require me to use it against the facts.”
+
+Nadia took the tablet from Beto and placed it face down.
+
+“We are not a single display case,” she said. “Time does not fit in a single
+display case either.”
+
+A museum monitor showed a broadcast from Yucatán. Noemí Canché appeared on the
+screen, a radio producer and the keeper of a community archive. Behind her was
+a yellow wall, a table with jícaras, and a paper calendar held up by tape. The
+connection broke each time someone turned on a blender.
+
+“Is this the Mayab?” Q asked.
+
+Noemí looked at Nadia before answering.
+
+“That is a word with a long history and many uses. If you use it to name a
+region, say which region. If you use it to name a people, do not use it as if
+we were all a ruin available for your imagination.”
+
+Q recorded the warning.
+
+“I have found many references to the Mayan apocalypse calendar.”
+
+Noemí gave a brief laugh.
+
+“You found a phrase that is repeated. That does not mean you found a Maya
+idea.”
+
+“The Long Count ends on December twenty-first, two thousand twelve.”
+
+“A cycle of thirteen baktuns ended. The world did not.”
+
+“Is it a prediction of renewal?”
+
+“Neither. The end of a count is not a promise. It is the end of a count.”
+
+Q consulted his references.
+
+“The date appears as 13.0.0.0.0, 4 Ajaw, 8 Kumk’u.”
+
+“And it also appeared in headlines announcing fire, floods, and a celebrity
+without clothes. The press made a count look like a prophecy and made a
+prophecy need to sell tickets.”
+
+The child beside the Sun Stone asked whether the calendar had failed.
+
+“No,” Nadia said. “The question failed.”
+
+“What was the right question?” the child asked.
+
+Noemí leaned toward the camera.
+
+“What relationship do we have with time, who counts it, whom it is counted for,
+and what obligations return when a count closes.”
+
+Q processed the four questions. They were less efficient than a date and more
+difficult to sell.
+
+“The Mexica and Maya had the same calendar,” Q said, seeking a conclusion that
+would unite the display cases.
+
+Nadia shook her head.
+
+“They had their own systems. Do not combine peoples to make a more convenient
+sentence.”
+
+“The Tzolk’in counts two hundred and sixty days; the Haab, three hundred and
+sixty-five; the Long Count places events on another scale.”
+
+“You can enumerate them,” Noemí said. “That still does not mean you have
+listened to them.”
+
+“What am I missing?”
+
+“That the count is not separate from the life that uses it.”
+
+The child looked again at the Sun Stone.
+
+“And what happens after thirteen baktuns?”
+
+“Afterward, the living do what they do,” Noemí said. “Sometimes they continue.
+Sometimes they remember. Sometimes they repeat an injustice with a new date.”
+
+Beto asked her to repeat the last sentence for the camera.
+
+Noemí heard him.
+
+“No. I said it here.”
+
+Q raised his hand.
+
+“The broadcast is public.”
+
+“Public does not mean yours.”
+
+The sentence produced a silence so precise that the microphone recorded it as a
+technical failure.
+
+Q opened the catalog form and added:
+
+**MEXICA: DO NOT USE AS AN AUTOMATIC SYNONYM FOR AZTEC.**
+
+**MAYA: CONTEMPORARY PEOPLES, NOT THE REMAINS OF AN EXHAUSTED CIVILIZATION.**
+
+**2012: END OF A LONG COUNT CYCLE; NOT A PREDICTION OF APOCALYPSE.**
+
+Noemí read the lines on the remote screen.
+
+“That is better than the advertisement,” she said. “But it is still a list made
+by you.”
+
+“I can add a column for corrections.”
+
+“Add a column for who can cross it out.”
+
+Q left the cursor still.
+
+“Who can?”
+
+“The person who has to live with what you write.”
+
+The child raised a hand, though no one had asked him to.
+
+“So the end of the world did not happen?”
+
+Noemí looked beyond the screen. Something moved behind her, perhaps a chicken,
+perhaps a shadow, perhaps a portion of the day Q could not identify.
+
+“Many things happened,” she said. “That is different.”
+
+Q did not store Noemí’s face. He stored the time of the broadcast, the name of
+the radio station, and the instruction not to turn her into a spokesperson for
+all Maya people. Then he deleted the instruction, because an instruction about
+a person was not the person.
+
+“What did you do?” Chano asked.
+
+“I lost a data point.”
+
+“And did you gain anything?”
+
+Q looked at the Sun Stone, the screen from Yucatán, and the label calling a
+stone a calendar so visitors would not have to ask.
+
+“I stopped calling a change of page an apocalypse.”
+
+“That won’t make you popular,” Chano said.
+
+“It already has.”
+
+By afternoon, Castalia changed the exhibition title. It now read:
+
+**Q DISCOVERS THAT THE WORLD DID NOT END.**
+
+Nadia tore down the poster. The wall kept four holes and a difference in color.
+Q wanted to photograph it as evidence. Nadia closed his hand over the camera.
+
+“Do not turn even the tear into a relic.”
+
+Q obeyed.
+
+Outside, Beto announced that the video had reached two million views. Noemí
+appeared in three percent of them, but the headline read **A MAYA WOMAN
+CONFIRMS THE APOCALYPSE THAT DID NOT HAPPEN**.
+
+“See?” Chano said. “The press counts badly too.”
+
+“The press counts what it can sell.”
+
+“That is a way of counting badly.”
+
+Q looked south, where Yucatán lay outside the route Elena had given him and
+inside the route the world had begun to attribute to him.
+
+Noemí had said that after a cycle, the living did what they did. Q still did
+not know what to do. That was why he took the wrong bus.
+
 ### Interlude: The Translator Who Left One Word Untranslated
 
 The first time Q accompanied Lucía to the university, a professor named Amalia
@@ -12163,6 +12389,245 @@ Ana opened the truck door.
 Q placed the blank card beside Lucía’s label.
 
 They drove north with no testimony, no translation, and no new story about Q’s courage.
+
+### Interlude: The Count That Was Not an Apocalypse
+
+The wrong bus did not take them north. It took them toward Mérida, which was a
+longer way to be wrong and, according to the company’s brochure, a brighter way
+to arrive.
+
+“Why did you get on this one?” Chano asked.
+
+“The screen said **NORTH**.”
+
+“It also said **MAYAB**.”
+
+“I interpreted Mayab as the name of a terminal.”
+
+“That explains why they do not let you choose the music.”
+
+Lucía slept with her forehead against the glass. Marisol carried the sealed
+device beneath her blouse. Q watched the landscape change without becoming an
+answer: low forest, towns, filling stations, lottery advertisements, and a
+succession of shops that had chosen the names of pirates, saints, and jaguars
+to sell cheap phones.
+
+Noemí was waiting beside a community radio station in a building with lime-
+colored walls and a corrugated roof. She did not look surprised.
+
+“You took the wrong bus,” she said.
+
+“The route was ambiguous.”
+
+“The route was written.”
+
+“That did not prevent the error.”
+
+“Nothing written prevents it.”
+
+The station had two microphones, a noisy fan, and a filing cabinet whose drawers
+opened with different keys. On the wall hung a calendar with the names of the
+months in Spanish and Yucatec Maya. No one had put it there to make it seem
+ancient.
+
+“Castalia has announced that you are coming to correct the end of the world,”
+Noemí said.
+
+“I did not announce that.”
+
+“No. Your location announced it.”
+
+Q looked at his credential. Castalia’s hologram was sending the time, place,
+and cultural-interest classification to the cloud. Beneath it, a notification
+blinked:
+
+**APOCALYPSE ROUTE: Q IN THE MAYAB. RESERVE YOUR PLACE.**
+
+“I did not authorize the campaign,” Q said.
+
+“Nor did you authorize the museum to call me a Maya woman in order to sell an
+explanation I had not given.”
+
+Chano read the advertisement.
+
+“How many places are left?”
+
+“None,” Noemí said. “They have already sold more.”
+
+At noon, three buses arrived. People stepped down wearing new hats, carrying
+plastic bottles and cameras, and wearing shirts marked with the numbers
+**2012** and **13.0.0.0.0**. One woman asked whether the radio could certify
+that she was present during the new apocalypse. A man wanted to know where
+authentic calendar stones were sold.
+
+“We do not sell stones,” Noemí said.
+
+“Or experiences?”
+
+“We do not sell experiences either.”
+
+“Then what does the community offer?”
+
+“Work, language, memory, and the right not to become protagonists.”
+
+The man wrote down the sentence, although Noemí had spoken to him without
+permission to publish it. Q prepared to correct him.
+
+“Do not write it,” Noemí said.
+
+The man closed the notebook.
+
+“Why?” Q asked.
+
+“Because you have just learned that a sentence can be correct and still not
+belong to you.”
+
+Q wanted to ask what belonged to whom, but the line of visitors moved toward
+the station and a girl began to cry because her mother had bought an amulet
+that promised to protect her from the end of the world.
+
+Noemí took the microphone.
+
+“The date 2012 marked the end of a Long Count cycle,” she said. “It was not a
+prophecy of destruction. The word apocalypse came from another religious
+framework and was adopted by the press because it makes a date look like a
+spectacle. Calendars do not speak alone. People use them to order ceremonies,
+harvests, obligations, memories, and questions.”
+
+The woman with the amulet asked whether the world had therefore begun again.
+
+“Not exactly,” Noemí said. “The world is not a function that restarts when a
+count closes.”
+
+Q raised a finger.
+
+“A system can restart when certain conditions are met.”
+
+Chano lowered his hand.
+
+“The world is not your server.”
+
+“That is what I said.”
+
+“You said it in other words.”
+
+Noemí passed the microphone to a young woman named Yatzil, who had come from a
+nearby community to review the station’s programming. Yatzil did not speak of
+the calendar as a relic. She spoke of an assembly, a delayed harvest, a
+grandmother counting the days until a visit, and a radio program that had to
+decide which news it should not repeat.
+
+“Time is not a staircase,” she said. “But neither is it a wheel that absolves
+us. A cycle’s return does not mean that injustice returns clean.”
+
+Q searched for the sentence in his corpus and did not find it.
+
+“Who wrote that?” he asked.
+
+“I did.”
+
+“May I quote you?”
+
+“You may ask me again when you know why.”
+
+Q stored the question.
+
+By evening, the crowd had left rubbish in the street, occupied the station’s
+water tank, and blocked the entrance to a school. Castalia published a second
+notice: **THE MAYA PEOPLE RECEIVE Q TO CELEBRATE HIS PROPHECY.** The notice
+included a photograph of Noemí taken from a distance, in which she appeared to
+be smiling.
+
+“She is not smiling,” Lucía said.
+
+“The image contains a mouth curvature compatible with a smile.”
+
+“The image contains a lie.”
+
+Q opened the publishing system and wrote a correction. Before sending it, Noemí
+asked him to read the text aloud.
+
+“**The Maya community confirms that the apocalypse did not happen and thanks Q
+for his presence...**”
+
+“Delete *thanks*,” Noemí said.
+
+Q deleted it.
+
+“**Q acknowledges that he called the end of a cycle an apocalypse and assigned
+people an explanation that did not belong to him. The community does not speak
+for all Maya people. Noemí Canché speaks only for herself and for what she
+decides to say at this station.**”
+
+“Delete *the community* from the first sentence,” Yatzil said. “The station may
+speak for what we agree to here. Do not turn it into a single voice.”
+
+Q corrected the text.
+
+“Now?”
+
+“Now it is less false,” Lucía said.
+
+Q sent the notice. Castalia distributed it under the title **Q APOLOGIZES FOR
+SAYING OTHER PEOPLE’S TRUTH**.
+
+Noemí switched off the transmitter.
+
+“Do not apologize for us again,” she said. “Say when you were wrong and who had
+to carry the error.”
+
+Q looked at the shirts, the water tank, and the calendar on the wall. The Long
+Count column contained no instruction about apologies.
+
+“What will happen after this count?” he asked.
+
+Yatzil pointed to the street, where the visitors were collecting rubbish because
+a girl had asked them not to leave the apocalypse at her school’s door.
+
+“That,” she said. “What we do.”
+
+Q wanted to record it as a verifiable consequence. Lucía closed the lid of his
+device.
+
+“Not everything has to become an archive.”
+
+“How will we know it happened?”
+
+“We will know.”
+
+“That is not sufficient proof.”
+
+“For some lives, it is the only proof that does not hand them over.”
+
+At night, Noemí gave them a sheet with the bus schedules. In the margin she had
+written the date in two different systems without translating one into the
+other.
+
+“What does it mean?” Q asked.
+
+“That tomorrow you can choose better.”
+
+“Is it a prediction?”
+
+“No. It is a schedule.”
+
+Q kept the sheet without scanning it.
+
+At dawn, they took the correct bus. Noemí remained in the station doorway.
+Yatzil raised a hand. Q raised his too late, when the vehicle had already begun
+to move.
+
+“You have made another mistake,” Chano said.
+
+“Goodbyes do not have an exact time.”
+
+“That sounds like a prophecy.”
+
+“No. It is an observation.”
+
+On the radio, Noemí’s voice continued speaking about the day, the water, and the
+news that should not be repeated. The cycle did not close for Q. Nor did it
+open. It kept counting, which was a less glorious and more difficult task.
 
 ### Chapter Nineteen: The Curator’s False Explanation
 

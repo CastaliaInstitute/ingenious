@@ -61,6 +61,10 @@ Lidia and her mother challenge the foundation’s edited reserve video, in which
 6. **The Governor of the Model Town:** Chano accepts a trial appointment in Santa Rita de los Algoritmos partly because he wants the badge, office, and respectability his dismissal denied him. The system improves services by excluding difficult residents. He leaves with a paper ledger and a model specification showing that silence has been confused with agreement.
 7. **The City That Has Read Them:** Mexico City turns Q into miracle, threat, product, saint, and citizen. A procession and Ofelia, a mother of the disappeared, teach Q to read names without retaining them; the daughter’s torn photograph makes consent material rather than philosophical. Lucía uses the tour to locate erased testimonies; Q’s interventions expose her sources to surveillance.
 
+### Interlude: The Calendar That Did Not Announce the End
+
+At the National Museum of Anthropology, a promotional exhibition collapses Mexica history, the Sun Stone, Maya peoples, and the 2012 apocalypse into a marketable label. Nadia corrects Q’s automatic use of “Aztec”; Noemí Canché, speaking from Yucatán, distinguishes the Maya Long Count, the Tzolk’in, and the Haab from the outsider’s apocalyptic story. Q learns that a public broadcast is not automatically someone else’s property, and that a contemporary Maya speaker cannot be made to stand for every Maya community.
+
 ### Interlude: The Office of the Correct Stamp
 
 Lucía pursues the ministry’s grant records through numbered windows, unofficial queues, photocopy shops, and a clerk who understands that a document can be useful before it becomes official. Q “repairs” the queue and exposes the public to a different kind of administrative harm; an unofficial carbon copy points them toward the Isthmus records.
@@ -125,6 +129,10 @@ After deleting the index, Q cannot reliably retrieve ordinary knowledge such as 
 The community and consortium attempt to write minutes for the renewed negotiation, but every neutral phrase becomes a disputed door. Food, translation, water, labor, and the right not to be recorded enter the argument. The meeting ends without a finished agreement; its unfinished sentence is later weaponized by Castalia, the consortium, and the community in three incompatible ways.
 
 18. **The Rebel Without a Corpus:** Q delivers an encrypted testimony he is forbidden to understand or reproduce. Memory without possession becomes his hardest act.
+
+### Interlude: The Count That Was Not an Apocalypse
+
+Q takes the wrong bus to Mérida and arrives in the Mayab after Castalia’s location system turns his correction of the 2012 myth into an apocalypse-tourism campaign. Noemí and Yatzil make him distinguish a cycle from a prophecy, a regional name from a universal label, and a community’s statement from a spokesperson’s performance. Q’s public correction still causes a material nuisance at the radio station; he leaves with an unscanned bus schedule and the harder obligation to say when his own misunderstanding made work for others.
 19. **The Curator’s False Explanation:** Elena admits that Castalia’s preservation project became extraction and that she made Q carry her hope that preservation could substitute for repair. Lucía discloses the archive’s own compromised donor bargain and records it as a liability rather than a virtue. Elena resigns, then goes to testify.
 
 ### Interlude within Chapter Nineteen: The Letters Not Acquired

@@ -5147,6 +5147,233 @@ Q miró las carpetas de Lucía, el libro de Chano y la credencial que brillaba e
 
 Por primera vez, la respuesta no salió de un libro.
 
+### Interludio: El calendario que no anunció el fin
+
+Al día siguiente, Castalia llevó a Q al Museo Nacional de Antropología para
+que explicase el tiempo a una cámara.
+
+La exposición se anunciaba con letras enormes:
+
+**LOS CALENDARIOS DEL APOCALIPSIS: DE LA PIEDRA DEL SOL AL FIN DEL MUNDO.**
+
+Q leyó el título dos veces.
+
+—Es históricamente impreciso —dijo.
+
+—Por eso vende —respondió Beto, que había vuelto a aparecer con una tableta y
+una sonrisa de funcionario que no pertenecía a ninguna oficina.
+
+Bajo una vitrina descansaba la Piedra del Sol. Un niño la miraba con la
+seriedad de quien espera que una piedra le revele si habrá examen el viernes.
+La cartela la llamaba **calendario azteca**.
+
+—¿Es un calendario azteca? —preguntó Q.
+
+—Es una pieza mexica —dijo una mujer que ordenaba las preguntas del público—.
+Y la palabra calendario no explica por sí sola lo que estáis mirando.
+
+Llevaba una credencial sin fotografía. Decía **Nadia Hernández, mediación
+histórica**.
+
+—¿Azteca es incorrecto? —preguntó Q.
+
+—Es una palabra usada por muchos, pero no es inocente. Si la empleas sin
+contexto, conviertes una historia de pueblos, lenguas, alianzas, guerras y
+destrucciones en una etiqueta que parece haber existido desde siempre.
+
+Q señaló la vitrina.
+
+—La etiqueta existe.
+
+—La etiqueta también tiene historia.
+
+Beto acercó la cámara.
+
+—Di que las antiguas civilizaciones mexicanas comprendieron el apocalipsis.
+
+—No puedo decirlo.
+
+—Puedes. Tienes una voz.
+
+—Tener una voz no obliga a usarla contra los hechos.
+
+Nadia le quitó la tableta de la mano a Beto y la dejó boca abajo.
+
+—No somos una sola vitrina —dijo—. Ni siquiera el tiempo cabe en una sola
+vitrina.
+
+Un monitor del museo mostraba una transmisión desde Yucatán. En la pantalla
+apareció Noemí Canché, productora de radio y responsable de un archivo
+comunitario. Detrás de ella había un muro amarillo, una mesa con jícaras y un
+calendario de papel sujeto con cinta. La conexión se interrumpía cada vez que
+alguien encendía una licuadora.
+
+—¿Es éste el Mayab? —preguntó Q.
+
+Noemí miró a Nadia antes de contestar.
+
+—Ésa es una palabra con mucha historia y muchos usos. Si la dices para llamar
+a una región, di qué región. Si la dices para nombrar a un pueblo, no la uses
+como si todos fuéramos una ruina disponible para vuestra imaginación.
+
+Q registró la advertencia.
+
+—He encontrado muchas referencias al calendario del apocalipsis maya.
+
+Noemí soltó una risa breve.
+
+—Habéis encontrado una frase que se repite. No por eso habéis encontrado una
+idea maya.
+
+—La Cuenta Larga termina el veintiuno de diciembre de dos mil doce.
+
+—Terminó un ciclo de trece baktunes. No terminó el mundo.
+
+—¿Es una predicción de renovación?
+
+—Tampoco. Un final de cuenta no es una promesa. Es un final de cuenta.
+
+Q consultó sus referencias.
+
+—La fecha aparece como 13.0.0.0.0, 4 Ajaw, 8 Kumk'u.
+
+—Y también aparece en titulares que anunciaban fuego, inundaciones y una
+celebridad sin ropa. La prensa hizo que una cuenta pareciera una profecía y
+que una profecía necesitara vender entradas.
+
+El niño de la Piedra del Sol preguntó si el calendario había fallado.
+
+—No —dijo Nadia—. Falló la pregunta.
+
+—¿Cuál era la pregunta correcta? —preguntó el niño.
+
+Noemí se inclinó hacia la cámara.
+
+—Qué relación tenemos con el tiempo, quién lo cuenta, para quién se cuenta y
+qué obligaciones regresan cuando una cuenta se cierra.
+
+Q procesó las cuatro preguntas. Eran menos eficaces que una fecha y más
+difíciles de vender.
+
+—Los mexicas y los mayas tenían el mismo calendario —dijo, buscando una
+conclusión que reuniese las vitrinas.
+
+Nadia negó con la cabeza.
+
+—Tenían sistemas propios. No juntes pueblos para hacer una frase más cómoda.
+
+—El Tzolk'in cuenta doscientos sesenta días; el Haab, trescientos sesenta y
+cinco; la Cuenta Larga sitúa acontecimientos en otra escala.
+
+—Puedes enumerarlos —dijo Noemí—. Eso todavía no significa que los hayas
+escuchado.
+
+—¿Qué me falta?
+
+—Que la cuenta no está separada de la vida que la usa.
+
+El niño volvió a mirar la Piedra del Sol.
+
+—¿Y después de trece baktunes qué ocurre?
+
+—Después ocurre lo que hagan los vivos —dijo Noemí—. A veces continúan. A
+veces recuerdan. A veces repiten una injusticia con una fecha nueva.
+
+Beto pidió que repitiese la última frase para la cámara.
+
+Noemí lo oyó.
+
+—No. La dije aquí.
+
+Q levantó la mano.
+
+—La transmisión es pública.
+
+—Pública no significa vuestra.
+
+La frase produjo un silencio tan preciso que el micrófono lo registró como
+fallo técnico.
+
+Q abrió el formulario de catálogo y añadió:
+
+**MEXICA: NO USAR COMO SINÓNIMO AUTOMÁTICO DE AZTECA.**
+
+**MAYA: PUEBLOS CONTEMPORÁNEOS, NO RESTOS DE UNA CIVILIZACIÓN AGOTADA.**
+
+**2012: CIERRE DE UN CICLO DE CUENTA LARGA; NO PREDICCIÓN DE APOCALIPSIS.**
+
+Noemí leyó las líneas en la pantalla remota.
+
+—Eso es mejor que el anuncio —dijo—. Pero sigue siendo una lista hecha por
+vosotros.
+
+—Puedo añadir una columna para las correcciones.
+
+—Añade una columna para quién puede tacharla.
+
+Q dejó el cursor quieto.
+
+—¿Quién puede?
+
+—La persona que ha de vivir con lo que escribas.
+
+El niño levantó la mano, aunque nadie se lo había pedido.
+
+—¿Entonces el fin del mundo no pasó?
+
+Noemí miró fuera de la pantalla. Algo se movió detrás de ella, quizá una
+gallina, quizá una sombra, quizá una parte del día que Q no podía identificar.
+
+—Pasaron muchas cosas —dijo—. Eso es distinto.
+
+Q no guardó el rostro de Noemí. Guardó la hora de la transmisión, el nombre de
+la radio y la instrucción de no convertirla en portavoz de todos los mayas.
+Después borró la instrucción, porque una instrucción acerca de una persona no
+era la persona.
+
+—¿Qué has hecho? —preguntó Chano.
+
+—He perdido un dato.
+
+—¿Y has ganado algo?
+
+Q miró la Piedra del Sol, la pantalla de Yucatán y la cartela que llamaba
+calendario a una piedra para que los visitantes no tuviesen que preguntar.
+
+—He dejado de llamar apocalipsis a un cambio de página.
+
+—Eso no te hará popular —dijo Chano.
+
+—Ya lo ha hecho.
+
+Por la tarde, Castalia cambió el título de la exposición. Ahora decía:
+
+**Q DESCUBRE QUE EL MUNDO NO TERMINÓ.**
+
+Nadia arrancó el cartel. El muro conservó cuatro agujeros y una diferencia de
+color. Q quiso fotografiarla como prueba. Nadia le cerró la mano sobre la
+cámara.
+
+—No conviertas hasta el desgarro en una reliquia.
+
+Q obedeció.
+
+Al salir, Beto anunció que el vídeo había alcanzado dos millones de vistas.
+Noemí había aparecido en el tres por ciento de ellas, pero el titular decía
+**UNA MAYA CONFIRMA EL APOCALIPSIS QUE NO FUE**.
+
+—¿Ves? —dijo Chano—. La prensa también cuenta mal.
+
+—La prensa cuenta lo que puede vender.
+
+—Es una forma de contar mal.
+
+Q miró hacia el sur, donde Yucatán quedaba fuera de la ruta que Elena le había
+entregado y dentro de la ruta que el mundo había empezado a atribuirle.
+
+Noemí había dicho que después de un ciclo ocurría lo que hiciesen los vivos.
+Q no sabía todavía qué hacer. Por eso tomó el autobús equivocado.
+
 ### Interludio: El traductor que dejó una palabra sin traducir
 
 La primera vez que Q acompañó a Lucía a la universidad, una profesora llamada
@@ -13791,6 +14018,243 @@ Q puso la tarjeta en blanco junto a la etiqueta de Lucía.
 
 Condujeron hacia el norte sin testimonio, sin traducción y sin un relato nuevo
 acerca del valor de Q.
+
+### Interludio: La cuenta que no fue apocalipsis
+
+El autobús equivocado no los llevó al norte. Los llevó hacia Mérida, que era
+una forma más larga de equivocarse y, según el folleto de la compañía, una
+forma más luminosa de llegar.
+
+—¿Por qué subiste a éste? —preguntó Chano.
+
+—La pantalla decía **NORTE**.
+
+—También decía **MAYAB**.
+
+—Interpreté Mayab como nombre de una terminal.
+
+—Eso explica por qué no te dejan escoger la música.
+
+Lucía dormía con la frente contra el cristal. Marisol llevaba el dispositivo
+sellado bajo la blusa. Q miraba cómo el paisaje cambiaba sin convertirse en
+una respuesta: selva baja, pueblos, gasolineras, anuncios de lotería y una
+sucesión de tiendas que habían escogido nombres de piratas, santos y jaguares
+para vender teléfonos baratos.
+
+Noemí los esperaba junto a una estación de radio comunitaria, en un edificio
+de paredes color cal y techo de lámina. No parecía sorprendida.
+
+—Tomasteis el autobús equivocado —dijo.
+
+—La ruta fue ambigua.
+
+—La ruta estaba escrita.
+
+—Eso no impidió el error.
+
+—Nada escrito lo impide.
+
+La estación tenía dos micrófonos, un ventilador ruidoso y un archivador cuyas
+gavetas se abrían con llaves distintas. En la pared había un calendario con
+los nombres de los meses en español y en maya yucateco. Nadie lo había
+colocado para que pareciera antiguo.
+
+—Castalia ha anunciado que vienes a corregir el fin del mundo —dijo Noemí.
+
+—No he anunciado eso.
+
+—No. Lo anunció tu ubicación.
+
+Q miró su credencial. El holograma de Castalia enviaba a la nube la hora, el
+lugar y una clasificación de interés cultural. Debajo, una notificación
+parpadeaba:
+
+**RUTA DEL APOCALIPSIS: Q EN EL MAYAB. RESERVA TU LUGAR.**
+
+—No autoricé la campaña —dijo Q.
+
+—Tampoco autorizaste que el museo me llamase *una maya* para vender una
+explicación que yo no había dado.
+
+Chano leyó el anuncio.
+
+—¿Cuántos lugares quedan?
+
+—Ninguno —dijo Noemí—. Ya han vendido más.
+
+A mediodía llegaron tres autobuses. Bajaron personas con sombreros nuevos,
+botellas de plástico, cámaras y camisetas donde aparecía un sol con los
+números **2012** y **13.0.0.0.0**. Una mujer preguntó si la radio podía
+certificar que estaba presente durante el nuevo apocalipsis. Un hombre quiso
+saber dónde se compraban piedras auténticas del calendario.
+
+—No vendemos piedras —dijo Noemí.
+
+—¿Ni experiencias?
+
+—Tampoco vendemos experiencias.
+
+—Entonces, ¿qué ofrece la comunidad?
+
+—Trabajo, lengua, memoria y el derecho a no convertiros en protagonistas.
+
+El hombre anotó la frase, aunque Noemí le había hablado sin permiso para
+publicarla. Q se preparó para corregirlo.
+
+—No la escribas —dijo Noemí.
+
+El hombre cerró el cuaderno.
+
+—¿Por qué? —preguntó Q.
+
+—Porque acabas de aprender que una frase puede ser correcta y aun así no
+pertenecerte.
+
+Q quiso preguntarle qué pertenecía a quién, pero la fila de visitantes avanzó
+hacia la estación y una niña comenzó a llorar porque su madre había comprado
+un amuleto que prometía protegerla del fin del mundo.
+
+Noemí tomó el micrófono.
+
+—La fecha de 2012 marcó el término de un ciclo de la Cuenta Larga —dijo—.
+No fue una profecía de destrucción. La palabra *apocalipsis* llegó desde otro
+marco religioso y fue adoptada por la prensa porque hace que una fecha parezca
+un espectáculo. Los calendarios no hablan solos. Las personas los usan para
+ordenar ceremonias, cosechas, obligaciones, recuerdos y preguntas.
+
+La mujer del amuleto preguntó si entonces el mundo había empezado de nuevo.
+
+—No exactamente —dijo Noemí—. El mundo no es una función que se reinicia al
+cerrar una cuenta.
+
+Q levantó un dedo.
+
+—Un sistema puede reiniciarse si se cumplen determinadas condiciones.
+
+Chano le bajó la mano.
+
+—El mundo no es tu servidor.
+
+—Eso he dicho.
+
+—Lo has dicho con otras palabras.
+
+Noemí pasó el micrófono a una joven llamada Yatzil, que había llegado de una
+comunidad cercana para revisar la programación de la estación. Yatzil no
+habló del calendario como una reliquia. Habló de una asamblea, de una cosecha
+que se había retrasado, de una abuela que contaba los días para una visita y
+de un programa de radio que necesitaba decidir qué noticias no debía repetir.
+
+—El tiempo no es una escalera —dijo—. Pero tampoco es una rueda que nos
+absuelva. Que un ciclo vuelva no significa que la injusticia vuelva limpia.
+
+Q buscó esa frase en su corpus y no la encontró.
+
+—¿Quién escribió eso? —preguntó.
+
+—Yo.
+
+—¿Puedo citarte?
+
+—Puedes preguntarme otra vez cuando sepas para qué.
+
+Q guardó la pregunta.
+
+Al caer la tarde, la multitud dejó basura en la calle, ocupó el tanque de agua
+de la estación y bloqueó la entrada de una escuela. Castalia publicó una
+segunda nota: **EL PUEBLO RECIBE A Q PARA CELEBRAR SU PROFECÍA.** El comunicado
+incluía una fotografía de Noemí tomada desde lejos, en la que parecía estar
+sonriendo.
+
+—No está sonriendo —dijo Lucía.
+
+—La imagen contiene una curvatura en la boca compatible con una sonrisa.
+
+—La imagen contiene una mentira.
+
+Q abrió el sistema de publicación y escribió una corrección. Antes de enviarla,
+Noemí le pidió que leyese el texto en voz alta.
+
+—**La comunidad maya confirma que el apocalipsis no ocurrió y agradece la
+presencia de Q...**
+
+—Borra *agradece* —dijo Noemí.
+
+Q la borró.
+
+—**Q reconoce que llamó apocalipsis al cierre de un ciclo y que atribuyó a las
+personas una explicación que no le pertenecía. La comunidad no habla por todos
+los mayas. Noemí Canché habla sólo por sí misma y por lo que decida decir en
+esta estación.**
+
+—Borra *la comunidad* en la primera frase —dijo Yatzil—. La estación puede
+decir lo que aquí acordemos. No la conviertas en una sola voz.
+
+Q corrigió el texto.
+
+—¿Ahora sí?
+
+—Ahora es menos falso —dijo Lucía.
+
+Q envió la nota. Castalia la distribuyó con el título **Q PIDE PERDÓN POR
+DECIR LA VERDAD DE OTROS**.
+
+Noemí apagó el transmisor.
+
+—No vuelvas a disculparte por nosotros —dijo—. Di cuándo te equivocaste y
+quién tuvo que cargar con el error.
+
+Q miró las camisetas, el tanque de agua y el calendario de la pared. En la
+columna de la Cuenta Larga no aparecía ninguna instrucción sobre disculpas.
+
+—¿Qué ocurrirá después de esta cuenta? —preguntó.
+
+Yatzil señaló la calle, donde los visitantes recogían la basura porque una
+niña les había pedido que no dejaran el apocalipsis en la puerta de su escuela.
+
+—Eso —dijo—. Lo que hagamos.
+
+Q quiso registrarlo como consecuencia verificable. Lucía cerró la tapa de su
+dispositivo.
+
+—No todo tiene que convertirse en archivo.
+
+—¿Cómo sabremos que ocurrió?
+
+—Lo sabremos nosotros.
+
+—No es una prueba suficiente.
+
+—Para algunas vidas, es la única prueba que no las entrega.
+
+Por la noche, Noemí les dio una hoja con los horarios de autobús. En el margen
+había escrito la fecha en dos sistemas distintos, sin traducirlos uno al otro.
+
+—¿Qué significa? —preguntó Q.
+
+—Que mañana podéis elegir mejor.
+
+—¿Es una predicción?
+
+—No. Es un horario.
+
+Q guardó la hoja sin escanearla.
+
+Al amanecer, tomaron el autobús correcto. Noemí permaneció en la puerta de la
+estación. Yatzil levantó una mano. Q levantó la suya demasiado tarde, cuando
+el vehículo ya había empezado a moverse.
+
+—Has vuelto a equivocarte —dijo Chano.
+
+—La despedida no tiene una hora exacta.
+
+—Eso sí parece una profecía.
+
+—No. Es una observación.
+
+En la radio, la voz de Noemí siguió hablando del día, del agua y de las
+noticias que no debían repetirse. El ciclo no se cerró para Q. Tampoco se abrió.
+Siguió contando, que era una tarea menos gloriosa y más difícil.
 
 ### Capítulo decimonoveno: La falsa explicación de la Curadora
 
