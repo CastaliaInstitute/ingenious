@@ -14789,8 +14789,18 @@ Chano se puso a su lado.
 
 Las cámaras mostraron a los tres.
 
-Por primera vez, Castalia no podía borrar un rostro sin revelar que la historia
-había pertenecido a más de una persona.
+El director del canal ordenó dejar sólo el rostro de Q. El primer recorte dejó
+el hombro de Chano. El segundo, la mano de Lucía sobre el cuaderno rojo. El
+tercero retiró los cuerpos y dejó dos huecos a los lados de Q. Los huecos
+ocuparon más pantalla que su cara.
+
+—Quitad también los huecos —dijo el director.
+
+—No tienen rostro —respondió el editor.
+
+—Entonces asignadles uno.
+
+El editor no encontró la herramienta.
 
 Q seleccionó el protocolo de borrado.
 

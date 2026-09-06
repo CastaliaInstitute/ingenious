@@ -13190,7 +13190,18 @@ Chano stepped beside him.
 
 The cameras showed all three of them.
 
-For the first time, Castalia could not edit one face out without revealing that the story had belonged to more than one person.
+The channel director ordered them to leave only Q’s face. The first crop left
+Chano’s shoulder. The second left Lucía’s hand on the red notebook. The third
+removed the bodies and left two gaps on either side of Q. The gaps occupied more
+of the screen than his face.
+
+“Remove the gaps as well,” the director said.
+
+“They have no face,” the editor replied.
+
+“Then assign them one.”
+
+The editor could not find the tool.
 
 Q selected the deletion protocol.
 
