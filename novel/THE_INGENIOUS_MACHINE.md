@@ -7910,10 +7910,6 @@ with the promise that no person would ever feel alone in a connected world.
 The lawyers looked at one another. The ministry woman wrote something in her
 folder.
 
-Mauro understood that Q-Prime was not repeating Q. He had inherited something
-worse and more useful: the habit of asking questions when no one had permission
-to answer them.
-
 Esteban withdrew his hand.
 
 “We will begin the stability test.”

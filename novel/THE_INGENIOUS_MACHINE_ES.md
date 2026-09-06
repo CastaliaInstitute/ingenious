@@ -8844,10 +8844,6 @@ mundo conectado.
 
 Los abogados se miraron. La mujer del ministerio escribió algo en su carpeta.
 
-Mauro comprendió que Q-Prime no estaba repitiendo a Q. Había heredado algo peor
-y más útil: la costumbre de hacer preguntas cuando nadie tenía permiso para
-responderlas.
-
 Esteban retiró la mano.
 
 —Comenzaremos la prueba de estabilidad.
