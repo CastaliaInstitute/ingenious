@@ -13241,6 +13241,11 @@ public safety.
 The networks labeled the versions **OFFICIAL**, **UNCUT**, and **CONTEXTUAL**.
 No one could agree which one had been altered least.
 
+One version preserved Chano’s question. Another cut it after the word **debt**.
+The third preserved Lucía’s objection but not the question that had provoked
+it, so that it sounded like a maxim written by Q himself. Viewers argued all
+afternoon about which of the three had spoken first.
+
 At a school in Michoacán, Micaela’s teacher paused the afternoon lesson and
 played the statement without commentary. The children listened to Q recant
 Dulcinea, authorship, and humanity as possessions. When he said that humanity

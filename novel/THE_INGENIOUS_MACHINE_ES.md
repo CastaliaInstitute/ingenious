@@ -14843,6 +14843,12 @@ limpio era una forma de seguridad pública.
 Las redes llamaron a las versiones **OFICIAL**, **SIN CORTES** y **CONTEXTUAL**.
 Nadie logró convenir cuál había sido alterada en menor medida.
 
+Una de las versiones conservó la pregunta de Chano. Otra la cortó después de la
+palabra **deuda**. La tercera conservó la objeción de Lucía, pero no la pregunta
+que la había provocado, de modo que parecía una máxima escrita por el propio
+Q. Los espectadores discutieron durante toda la tarde sobre cuál de los tres
+había hablado primero.
+
 En una escuela de Michoacán, la maestra de Micaela detuvo la lección de la tarde
 y puso la declaración sin comentario alguno. Los niños escucharon a Q recantar
 la posesión de Dulcinea, de la autoría y de la humanidad. Cuando dijo que la
