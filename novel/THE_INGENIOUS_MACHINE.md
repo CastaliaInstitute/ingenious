@@ -12824,6 +12824,33 @@ piece of a flour sack. Petra said the page belonged to a wedding party that
 had argued all night about whether the groom had married the bride or the
 family.
 
+The party had arrived after a civil wedding at the municipal office. The clerk
+had written the groom’s surname on the bride’s line and the bride’s surname on
+the witness’s line. He said the system would correct it the next day.
+
+“And tonight?” the bride asked.
+
+The clerk gave them a tracking number. Petra gave them three rooms and a bucket.
+
+At midnight, the mother asked for another room for the cake, which, she said,
+could not share a wall with the argument.
+
+The groom wanted to sleep with his wife; the groom’s mother wanted to sleep with
+her son; the bride wanted to sleep where no one would ask her to explain why she
+had signed. By two in the morning they had occupied four rooms, the kitchen,
+and the telephone at reception.
+
+At dawn, the groom wrote in the register: **I CAME TO GET MARRIED**. The bride
+wrote: **I CAME TO SEE IF IT WAS TRUE**. The mother wrote: **I CAME TO COLLECT
+THE CAKE I PAID FOR**. Petra covered all three names and left the sentences
+visible, because sentences paid less than silence but took up less space.
+
+Years later, all three returned on different days. Each asked for the page to
+prove that they had been right. Petra offered them coffee and asked whether any
+of them had brought the corrected certificate. None had. The marriage remained
+valid according to the municipality; according to the family, it had ended in
+Room Seven; according to Petra, they still owed her a bucket.
+
 “Which answer was correct?” Q asked.
 
 “They are still arguing.”

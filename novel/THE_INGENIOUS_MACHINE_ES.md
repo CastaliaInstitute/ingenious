@@ -14622,6 +14622,34 @@ página entera escondida bajo un trozo de costal de harina. Petra decía que la
 página pertenecía a un grupo de boda que había discutido toda la noche acerca
 de si el novio se había casado con la novia o con la familia.
 
+El grupo había llegado después de una boda civil en el municipio. El funcionario
+había escrito el apellido del novio en el renglón de la novia y el de la novia
+en el renglón de la testigo. Dijo que el sistema lo corregiría al día siguiente.
+
+—¿Y esta noche? —preguntó la novia.
+
+El funcionario les dio un número de seguimiento. Petra les dio tres cuartos y
+una cubeta.
+
+A medianoche la madre pidió un cuarto más para el pastel, que según ella no
+podía compartir pared con la discusión.
+
+El novio quería dormir con su esposa; la madre del novio quería dormir con su
+hijo; la novia quería dormir donde nadie le pidiese explicar por qué había
+firmado. A las dos de la mañana habían ocupado cuatro cuartos, la cocina y el
+teléfono de la recepción.
+
+Al amanecer, el novio escribió en el registro: **VINE A CASARME**. La novia
+escribió: **VINE A VER SI ERA CIERTO**. La madre escribió: **VINE A COBRAR EL
+PASTEL QUE PAGUÉ**. Petra cubrió los tres nombres y dejó visibles las frases,
+porque las frases pagaban menos que el silencio pero ocupaban menos espacio.
+
+Años después, los tres regresaron en días distintos. Cada uno pidió la página
+para demostrar que había tenido razón. Petra les ofreció café y preguntó si
+alguno había traído el acta corregida. Ninguno la había traído. El matrimonio
+seguía vigente según el municipio; según la familia, había terminado en el
+cuarto siete; según Petra, todavía debían una cubeta.
+
 —¿Cuál respuesta era correcta? —preguntó Q.
 
 —Todavía discuten.
