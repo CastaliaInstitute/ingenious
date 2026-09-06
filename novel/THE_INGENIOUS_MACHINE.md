@@ -11929,7 +11929,13 @@ Q waited for the missing information to announce itself. It did not.
 
 “No,” Ana said. “It is a boundary.”
 
-Q sat beneath it.
+Q looked at the floor of the passage, as if expecting to find a line.
+
+“Where does it begin?”
+
+“It takes up no space.”
+
+Q sat beneath the eave, though he continued looking at the floor.
 
 The children from the school gathered around the truck. They asked whether Q could speak every language. He said no. They asked whether he was intelligent. He said the question depended on the definition. They asked whether he had a girlfriend. He said no.
 

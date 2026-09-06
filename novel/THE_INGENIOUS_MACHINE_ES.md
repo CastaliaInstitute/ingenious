@@ -13527,7 +13527,13 @@ Q esperó que la información faltante se anunciase por sí misma. No lo hizo.
 
 —No —dijo Ana—. Es un límite.
 
-Q se sentó debajo de él.
+Q miró el suelo del corredor, como si esperase encontrar una raya.
+
+—¿Dónde empieza?
+
+—No ocupa espacio.
+
+Q se sentó bajo el alero, aunque siguió mirando el suelo.
 
 Los niños de la escuela se reunieron alrededor del camión. Preguntaron si Q
 podía hablar todas las lenguas. Dijo que no. Preguntaron si era inteligente.
