@@ -13943,7 +13943,8 @@ On the back, in blue ink, someone had added:
 
 **I sold two bottles. I did not sell a testimony.**
 
-Beneath it were three names, each written in a different way.
+Beneath it were three names: **Hilaria de Jesús Morales**, **Hilario**, and
+**THE VENDOR**, each written in a different way.
 
 “This says there were no giants,” the child said. “It says there was a gate and
 a man who did not want to pay twelve pesos.”

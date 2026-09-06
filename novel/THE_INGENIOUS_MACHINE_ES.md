@@ -15685,7 +15685,8 @@ AVENTURA**. En el reverso, con tinta azul, alguien había añadido:
 
 **Vendí dos botellas. No vendí un testimonio.**
 
-Debajo figuraban tres nombres, cada uno escrito de una manera distinta.
+Debajo figuraban tres nombres: **Hilaria de Jesús Morales**, **Hilario** y
+**EL VENDEDOR**, cada uno escrito de una manera distinta.
 
 —Éste dice que no hubo gigantes —dijo la criatura—. Dice que hubo un portón y
 un hombre que no quería pagar doce pesos.
