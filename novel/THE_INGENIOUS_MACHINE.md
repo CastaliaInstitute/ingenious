@@ -10337,7 +10337,8 @@ Q looked at Lucía.
 
 She did not tell him what to do.
 
-He understood that the absence of instruction was itself a form of trust.
+Lucía moved the candle out of the draft and held her hand over the chalk names
+without touching them.
 
 Q completed the deletion.
 
@@ -11856,7 +11857,8 @@ Q paused.
 
 “Because then you would be using our silence to improve your name.”
 
-He understood the instruction. It was the first one that concerned not the testimony but the story of his obedience.
+Q opened his mouth and found no answer that would not turn the silence into proof
+of himself. He lowered his head.
 
 “I will not,” he said.
 

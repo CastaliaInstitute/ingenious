@@ -11411,7 +11411,8 @@ Q miró a Lucía.
 
 Ella no le dijo qué hacer.
 
-Q entendió que la ausencia de instrucción era también una forma de confianza.
+Lucía apartó la vela de la corriente de aire y sostuvo la mano sobre los nombres
+de tiza, sin tocarlos.
 
 Completó el borrado.
 
@@ -13173,8 +13174,8 @@ Q hizo pausa.
 
 —Porque entonces estarías usando nuestro silencio para mejorar tu nombre.
 
-Q entendió la instrucción. Era la primera que no se refería al testimonio, sino
-al relato de su obediencia.
+Q abrió la boca y no encontró una respuesta que no convirtiese el silencio en
+prueba de sí mismo. Bajó la cabeza.
 
 —No lo haré —dijo.
 
