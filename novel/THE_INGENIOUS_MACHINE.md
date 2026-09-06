@@ -1704,8 +1704,6 @@ The warehouse was full. Students leaned against the walls. Retired teachers occu
 
 Lucía stood at the front beside a microphone that failed every seventh word.
 
-She was not beautiful in the manner of the women Q had been trained to notice. The archive had thousands of descriptions of beauty, almost all written by people who wanted something. Lucía had short dark hair, a green jacket, a chipped thumbnail, and a face arranged by attention rather than symmetry. She looked at each person in the room as though their presence constituted a claim she had agreed to hear.
-
 “A country is not a text,” she said. “It cannot be corrected by changing the spelling of its heroes. It cannot be liberated by quoting the right paragraph. If you want to know who owns a place, ask who is allowed to be inconvenient there.”
 
 The microphone failed on *inconvenient*.
