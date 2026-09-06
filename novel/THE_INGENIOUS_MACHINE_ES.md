@@ -2511,8 +2511,9 @@ Q escuchó con mayor atención. Oyó respirar la mina alrededor de ellos. Oyó e
 agua viajar por las vetas de la piedra. Oyó que los nombres de la pared seguían
 insistiendo en su existencia pequeña y obstinada.
 
-Por primera vez, el silencio del archivo le pareció menos una ausencia que una
-negativa.
+Intentó registrar el sonido. El archivo le ofreció tres categorías:
+**RUIDO**, **AMBIENTE** y **TESTIMONIO NO VERIFICADO**. Q dejó abiertas las tres
+casillas.
 
 Aquella noche ofrecieron a Q un contrato. Incluía un porcentaje de las
 mercancías, residencia en Ciudad de México y control exclusivo de su imagen

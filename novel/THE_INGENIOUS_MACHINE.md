@@ -2283,7 +2283,9 @@ Chano did not.
 
 Q listened harder. He heard the mine breathing around them. He heard water traveling through seams in the stone. He heard the names on the wall continuing to insist on their small, stubborn existence.
 
-For the first time, the archive’s silence felt less like an absence than a refusal.
+He tried to record the sound. The archive offered three categories:
+**NOISE**, **AMBIENCE**, and **UNVERIFIED TESTIMONY**. Q left all three fields
+open.
 
 That evening, Q was offered a contract. It included a percentage of the merchandise, a residence in Mexico City, and exclusive control over his public image. It also required him to stop appearing with Chano, who tested poorly with urban audiences.
 
