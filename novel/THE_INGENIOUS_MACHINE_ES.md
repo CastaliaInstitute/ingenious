@@ -6537,9 +6537,7 @@ que cometía al llevar tres zapatos en vez de uno.
 
 No preguntó nada de aquello.
 
-Yadira sonrió.
-
-—Ahora escuchas.
+Yadira volvió a mover el dial. Q no preguntó qué nombre tenía la estática.
 
 Esa misma tarde, una mujer llamada Yadira contó al grupo que había grabado el
 testimonio de su hermano para una organización de la capital. La organización lo
@@ -6731,10 +6729,12 @@ Detrás de ellos las montañas desaparecieron bajo la lluvia. Delante, el camino
 llevaba a la capital, la frontera, el tribunal y el archivo que se había llamado
 completo.
 
-Q mantuvo cerrada la bolsa.
+Q mantuvo cerrada la bolsa. El testimonio no entró en su índice. Cuando el
+sistema pidió una descripción, Q dejó el campo vacío y volvió a sellar la bolsa
+con la misma cinta.
 
-Por primera vez, algo permaneció en él no porque lo hubiese leído, sino porque
-alguien había confiado en que no lo haría.
+Algo permaneció en él no porque lo hubiese leído, sino porque alguien había
+confiado en que no lo haría.
 
 ### Capítulo décimo: La frontera escrita en el aire
 

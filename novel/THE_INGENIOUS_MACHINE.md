@@ -5853,7 +5853,7 @@ of one.
 
 He asked none of these questions.
 
-Yadira smiled. “Now you are listening.”
+Yadira moved the dial again. Q did not ask what name the static had.
 
 ### La asamblea del silencio
 
@@ -6208,9 +6208,12 @@ Chano looked out the window. “That’s usually the kind people can survive.”
 
 Behind them, the mountains disappeared into rain. Ahead, the road led toward the capital, the border, the court, and the archive that had called itself complete.
 
-Q kept the pouch closed.
+Q kept the pouch closed. The testimony did not enter his index. When the system
+requested a description, Q left the field blank and resealed the pouch with the
+same tape.
 
-For the first time, something remained in him not because he had read it, but because someone had trusted him not to.
+Something remained in him not because he had read it, but because someone had
+trusted him not to.
 
 ### Chapter Ten: The Border Written in Air
 
