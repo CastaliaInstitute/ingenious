@@ -15301,9 +15301,25 @@ porque la tienda le había cobrado un canal premium que no había solicitado.
 
 Ninguna versión estaba completa.
 
-Esto irritó al público, agradó a los abogados y dio al manuscrito un problema
-más. Si Q había renunciado verdaderamente a su pretensión de autoría, ¿quién
-decidiría qué fragmento pertenecía al final?
+Al día siguiente llegaron al archivo ciento treinta y seis solicitudes de
+rectificación. Cuarenta y una pedían la voz de Q; veintisiete, la de Chano;
+once, la de Lucía. Las demás pedían que Q-Prime narrase el final con una música
+que hiciera parecer inevitable lo ocurrido.
+
+El sistema reunió las solicitudes bajo **DISPUTA SOBRE LA VERSIÓN FINAL**.
+
+—¿Cuál debemos conservar? —preguntó un técnico.
+
+Q abrió la carpeta. Las solicitudes se reordenaron solas según el número de
+visualizaciones.
+
+—Ninguna en mi nombre —dijo.
+
+—Eso no es una respuesta.
+
+—Es una custodia.
+
+El técnico esperó que explicase la palabra. Q no la explicó. Cerró la carpeta.
 
 La respuesta quedó aplazada.
 

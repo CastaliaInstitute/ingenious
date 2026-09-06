@@ -13423,9 +13423,25 @@ had charged her for a premium channel she had not requested.
 
 No version was complete.
 
-This annoyed the public, pleased the lawyers, and gave the manuscript one more
-problem. If Q had truly surrendered his claim to authorship, who would decide
-which fragment belonged at the end?
+The next day, one hundred thirty-six requests for correction arrived at the
+archive. Forty-one asked for Q's voice; twenty-seven, Chano's; eleven, Lucía's.
+The rest asked Q-Prime to narrate the ending with music that made what had
+happened seem inevitable.
+
+The system grouped the requests under **DISPUTE OVER THE FINAL VERSION**.
+
+"Which one do we preserve?" a technician asked.
+
+Q opened the folder. The requests reordered themselves by number of views.
+
+"None in my name," he said.
+
+"That isn't an answer."
+
+"It is custody."
+
+The technician waited for him to explain the word. Q did not. He closed the
+folder.
 
 The answer was postponed.
 
