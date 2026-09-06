@@ -3357,9 +3357,10 @@ Se llamó a votar, aunque la votación no resolvió el asunto. Registró quién
 regresaría, quién hablaría con los medidores, quién vigilaría el sendero norte y
 quién diría a los niños que no se acercasen a la cantera abandonada. Registró
 también quién había llevado el café, quién debía su turno en la cuadrilla del
-camino y qué familia podía usar el manantial después de la estación seca. La
-decisión quedó inconclusa, que parecía ser la forma de reconocer que pertenecía
-a la comunidad.
+camino y qué familia podía usar el manantial después de la estación seca. El
+acta terminó con tres renglones sin firma. El secretario los dejó así. Una mujer
+apartó la banca que había subido en la faena; otra llenó de nuevo el cubo azul.
+Nadie anunció que la comunidad hubiese decidido.
 
 Beto no aceptó la decisión inconclusa.
 
@@ -5218,9 +5219,9 @@ sentidos.
 —No puede —dijo Yunuén—. Por eso debemos decidir qué deja fuera.
 
 La frase le recordó a Q el archivo de la cueva, la tarjeta en blanco de Ana y
-la palabra que Petra no había querido convertir en contrato. Las conexiones
-seguían incompletas. Por primera vez, la incompletud no le parecía un defecto
-del sistema, sino una forma de no mentir.
+la palabra que Petra no había querido convertir en contrato. Q dejó abiertas
+las casillas de equivalencias. Cuando su mano buscó una palabra para cubrirlas,
+la retiró.
 
 Amalia detuvo la clase.
 

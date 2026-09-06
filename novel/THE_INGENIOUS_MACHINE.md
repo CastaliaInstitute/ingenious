@@ -3083,8 +3083,9 @@ would return, who would speak to the surveyors, who would guard the northern
 path, and who would tell the children not to go near the abandoned quarry. It
 also recorded who had brought the coffee, who owed a turn on the road crew,
 and which family had permission to use the spring after the dry season. The
-decision remained unfinished, which seemed to be how the community recognized
-that it belonged to them.
+minutes ended with three lines unsigned. The secretary left them that way. One
+woman moved the bench she had carried up during the faena; another refilled the
+blue bucket. No one announced that the community had decided.
 
 Beto did not accept the unfinished decision.
 
@@ -4698,9 +4699,8 @@ Q asked how a document could have authority if it did not contain every meaning.
 “It cannot,” Yunuén said. “That is why we must decide what it leaves out.”
 
 The sentence reminded Q of the cave archive, Ana’s blank card, and the word
-Petra had not wanted to turn into a contract. The connections remained
-incomplete. For the first time, incompleteness did not seem a defect in the
-system, but a way of not lying.
+Petra had not wanted to turn into a contract. Q left the equivalence fields
+open. When his hand searched for a word to cover them, he withdrew it.
 
 Amalia stopped the class.
 
