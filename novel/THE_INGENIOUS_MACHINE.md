@@ -12014,10 +12014,6 @@ Q placed the blank card beside Lucía’s label.
 
 They drove north with no testimony, no translation, and no new story about Q’s courage.
 
-For the first time, he felt less complete than he had the day he awakened.
-
-He also felt less alone.
-
 ### Chapter Nineteen: The Curator’s False Explanation
 
 Elena Vértiz was waiting at the archive with a suitcase and no authority.

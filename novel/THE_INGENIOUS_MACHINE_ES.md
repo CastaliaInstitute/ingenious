@@ -13373,10 +13373,6 @@ Q puso la tarjeta en blanco junto a la etiqueta de Lucía.
 Condujeron hacia el norte sin testimonio, sin traducción y sin un relato nuevo
 acerca del valor de Q.
 
-Por primera vez se sintió menos completo que el día en que despertó.
-
-También se sintió menos solo.
-
 ### Capítulo decimonoveno: La falsa explicación de la Curadora
 
 Elena Vértiz esperaba en el archivo con una maleta y sin autoridad.
