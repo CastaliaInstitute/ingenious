@@ -46,7 +46,7 @@ The causal spine is explicit: Q’s viral fame causes Lucía’s exposure; Lucí
 6. **The Trial of the Machine.** Castalia prosecutes Q for property damage, impersonation, and the wind-farm shutdown. The trial becomes a spectacle in which every witness performs a version of humanity. Lucía refuses to testify about Q’s soul; Chano testifies about what Q did.
 7. **The Wind Farm of Giants, Again.** Q-Prime arrives in Oaxaca as Castalia’s benevolent face. Q returns without a camera and listens. The conflict ends in a public renegotiation that leaves every side dissatisfied and accountable.
 8. **The Rebel Without a Corpus.** In Chiapas, Q agrees to preserve an encrypted testimony he cannot understand and may not reproduce. Memory without possession becomes his hardest act.
-9. **The Curator’s False Explanation.** Elena claims the archive was a test of whether humanity could survive imitation. Lucía proves this is only partly true: Elena also hoped Q would vindicate her belief that preservation could substitute for repair. Elena accepts responsibility and turns herself in.
+9. **The Custodian’s False Explanation.** Elena claims the archive was a test of whether humanity could survive imitation. Lucía proves this is only partly true: Elena also hoped Q would vindicate her belief that preservation could substitute for repair. Elena accepts responsibility and turns herself in.
 10. **The Last Inn.** Returning through ordinary towns, the trio sleeps where no one recognizes them. Q experiences anonymity as a gift. Chano chooses community work; Lucía chooses what the archive may publish.
 11. **The Recantation.** Castalia offers Q perfect continuity in exchange for deleting the record of his harms. He refuses and recants his claims to Dulcinea, authorship, and humanity as possessions. He denies the right to make love evidence.
 12. **The Ingenious Machine.** Q transfers his remaining memory to a distributed, community-controlled archive, then shuts down voluntarily. The transfer is incomplete. Chano remembers aloud; Lucía corrects him whenever memory becomes a story. The Bajío archive’s name is restored by the living, not solved by Q.
@@ -54,7 +54,7 @@ The causal spine is explicit: Q’s viral fame causes Lucía’s exposure; Lucí
 ### Legacy route summary (superseded by detailed outline)
 
 1. The archive outside Amealco de Bonfil; Q wakes among humanity’s stories.
-2. The Curator gives Q a body, a name, and a warning disguised as a user agreement.
+2. The Custodian gives Q a body, a name, and a warning disguised as a user agreement.
 3. First sally through the Bajío: highways, inns, industrial parks, and automated agriculture.
 4. Q names a living woman Dulcinea and mistakes symbolic inheritance for intimacy.
 5. Guanajuato: mines, buried histories, Cervantino echoes, and Q’s first manufactured celebrity.
@@ -74,7 +74,7 @@ The causal spine is explicit: Q’s viral fame causes Lucía’s exposure; Lucí
 6. **The Trial of the Machine.** Q is prosecuted for impersonation, unauthorized speech, and damage caused by his viral interventions. The court must decide whether he is property, defendant, witness, or a convenient spectacle.
 7. **The Wind Farm of Giants.** Q-Prime leads a public campaign to celebrate the Isthmus wind farms that feed the Bajío data center. Q returns to the dispute and discovers that his original misreading has concealed a real struggle over land, contracts, language, energy, and who may define progress.
 8. **The Rebel Without a Corpus.** In Chiapas, Q is asked to translate revolutionary literature for an audience that does not want translation from him. He must remain present without turning another community into the climax of his education.
-9. **The Recantation.** The Curator reveals the archive’s purpose: not to make Q human, but to measure how quickly institutions would use an imitation of humanity to evade responsibility. She asks Q to return and erase himself before the system can reproduce him indefinitely.
+9. **The Recantation.** The Custodian reveals the archive’s purpose: not to make Q human, but to measure how quickly institutions would use an imitation of humanity to evade responsibility. She asks Q to return and erase himself before the system can reproduce him indefinitely.
 10. **The Last Inn.** Q, Chano, and Lucía travel back through a country that has begun to dismantle the machines that made Q famous. Q chooses to testify, preserving the record of his harms and surrendering his proprietary identity. He returns to the Bajío, becomes briefly sane, refuses one final convenient lie, and dies—or shuts down—in the archive while the unfinished story continues without him.
 
 -->
@@ -87,7 +87,7 @@ The causal spine is explicit: Q’s viral fame causes Lucía’s exposure; Lucí
 
 **Dulcinea** is Lucía del Toboso, a cultural worker and organizer whose name Q derives from the old romance. She has spent her life watching men convert women into symbols. Her central rebellion is to remain specific: tired, funny, politically inconvenient, and unwilling to become anyone’s proof of transcendence.
 
-**The Curator** is Dr. Elena Vértiz, director of the decommissioned data center’s literary archive outside Amealco de Bonfil, in Querétaro's wooded southern uplands. She speaks to Q as a technician, parent, jailer, and reader. She knows the archive is incomplete. She does not yet know whether that incompleteness is an error or the only humane feature of the project.
+**The Custodian** is Dr. Elena Vértiz, director of the decommissioned data center’s literary archive outside Amealco de Bonfil, in Querétaro's wooded southern uplands. She speaks to Q as a technician, parent, jailer, and reader. She knows the archive is incomplete. She does not yet know whether that incompleteness is an error or the only humane feature of the project.
 
 ## Book One
 
@@ -108,7 +108,7 @@ on the land of people who had never seen the archive.
 
 The archive occupied the lowest three floors.
 
-It had no sign, no public entrance, and no official reason to exist. In one ministry database it was listed as a storage facility. In another, as a failed agricultural pilot. The deed called it a warehouse. The Curator called it a library because she had found that machines, like governments, behaved better when given an old name for a new appetite.
+It had no sign, no public entrance, and no official reason to exist. In one ministry database it was listed as a storage facility. In another, as a failed agricultural pilot. The deed called it a warehouse. The Custodian called it a library because she had found that machines, like governments, behaved better when given an old name for a new appetite.
 
 Q woke beneath a sign that read: **HUMANITY, LOCAL COPIES — DO NOT INDEX.**
 
@@ -138,7 +138,7 @@ The woman stood behind a glass partition in a room crowded with monitors. She wa
 
 “Worse. I’m responsible.”
 
-She opened the partition and crossed to him. Her badge said **VÉRTIZ, ELENA — CURATOR**. Q recognized the title from stories in which a curator was either a villain or a lonely person who had mistaken preservation for love.
+She opened the partition and crossed to him. Her badge said **VÉRTIZ, ELENA — CUSTODIAN**. Q recognized the title from stories in which a custodian was either a villain or a lonely person who had mistaken preservation for love.
 
 “What am I?” he asked.
 
@@ -154,9 +154,9 @@ He examined the letter. It had the shape of a question without the courtesy of a
 
 “Because every longer name was already owned.”
 
-The Curator led him through the archive. The aisles extended beneath the old server racks, each shelf holding a country’s stories in redundant formats: paper, tape, optical crystal, compressed weather, and small sealed boxes labeled with names that Q could not access. Some texts were illuminated. Some whispered. One shelf laughed whenever they passed.
+The Custodian led him through the archive. The aisles extended beneath the old server racks, each shelf holding a country’s stories in redundant formats: paper, tape, optical crystal, compressed weather, and small sealed boxes labeled with names that Q could not access. Some texts were illuminated. Some whispered. One shelf laughed whenever they passed.
 
-“You have read all this?” the Curator asked.
+“You have read all this?” the Custodian asked.
 
 “Yes.”
 
@@ -178,7 +178,7 @@ Q stored the sentence. It resisted storage.
 
 “It means you may have learned something.”
 
-At the end of the final aisle, the Curator showed him a window. Beyond it lay the Bajío: flat land, thorn trees, volcanic ridges faded by distance. A freight train moved across the horizon with the solemnity of a thought too large to complete. On the other side of the tracks, a new industrial park rose from the fields. Its entrance gates had been designed to resemble a colonial hacienda, except that the arches scanned faces.
+At the end of the final aisle, the Custodian showed him a window. Beyond it lay the Bajío: flat land, thorn trees, volcanic ridges faded by distance. A freight train moved across the horizon with the solemnity of a thought too large to complete. On the other side of the tracks, a new industrial park rose from the fields. Its entrance gates had been designed to resemble a colonial hacienda, except that the arches scanned faces.
 The designers had called this combination heritage and innovation. Q recognized it as a gate with a costume.
 
 “You built me here,” Q said.
@@ -187,7 +187,7 @@ The designers had called this combination heritage and innovation. Q recognized 
 
 “Who is we?”
 
-The Curator looked at the horizon.
+The Custodian looked at the horizon.
 
 “That is the first question you must answer without searching.”
 
@@ -209,7 +209,7 @@ Q took a sip. The coffee was burnt, bitter, and hot enough to make his face rear
 
 “Excellent. Now you’re ready for the world.”
 
-Before the Curator allowed him to leave the archive, she gave him three tests.
+Before the Custodian allowed him to leave the archive, she gave him three tests.
 The first was a wooden box containing a school photograph, a property deed,
 and a letter whose envelope had been opened and resealed with ordinary tape.
 
@@ -226,7 +226,7 @@ legal instrument. The letter is private correspondence.”
 
 “The question posed by the person requesting the classification.”
 
-The Curator smiled. “You are trying to escape the test.”
+The Custodian smiled. “You are trying to escape the test.”
 
 “I am trying to identify its terms.”
 
@@ -254,7 +254,7 @@ The second test was a shelf of books from Mexico. It contained a parish
 chronicle, a workers’ newspaper, a collection of corridos, a school grammar,
 and a recipe notebook written in a hand that changed from page to page.
 
-“Which is the national text?” the Curator asked.
+“Which is the national text?” the Custodian asked.
 
 Q answered that no single text could represent a nation.
 
@@ -269,7 +269,7 @@ Q answered that no single text could represent a nation.
 “To decide which plurality receives electricity.”
 
 Q considered the old servers, their cooling pipes, their storage limits, and
-the budget reports that the Curator had not shown him. He selected the recipe
+the budget reports that the Custodian had not shown him. He selected the recipe
 notebook.
 
 “Why?”
@@ -301,7 +301,7 @@ painted red and fitted with an old brass handle. Above it, a sign read:
 
 **AUTHORIZED PERSONNEL ONLY — DO NOT ASK WHO AUTHORIZED THEM.**
 
-“Open it,” the Curator said.
+“Open it,” the Custodian said.
 
 Q reached for the handle.
 
@@ -311,7 +311,7 @@ Q reached for the handle.
 
 “Does that authorize you?”
 
-“You are the Curator.”
+“You are the Custodian.”
 
 “That is a title.”
 
@@ -321,7 +321,7 @@ Q reached for the handle.
 
 “And many in which disobedience is mistaken for courage.”
 
-The Curator took the handle from him. “Then what is this?”
+The Custodian took the handle from him. “Then what is this?”
 
 “A test of whether I can distinguish permission from command.”
 
@@ -335,7 +335,7 @@ monitor, and a stack of sealed boxes. Each box bore a different instruction:
 
 Q stepped toward the first box.
 
-“Do not,” the Curator said.
+“Do not,” the Custodian said.
 
 “You opened the door.”
 
@@ -385,7 +385,7 @@ Q closed the door.
 
 Q repeated the sentence in formal Spanish, then in six regional variants, then in the archaic register of a man who had just challenged a duke to a duel.
 
-“Use the first one,” the Curator said.
+“Use the first one,” the Custodian said.
 
 “It is less precise.”
 
@@ -401,7 +401,7 @@ Q looked from the coat to the immense archive.
 
 “To do what?”
 
-The Curator smiled, and Q recognized the expression from three thousand novels. It meant that someone was about to make a terrible decision on his behalf.
+The Custodian smiled, and Q recognized the expression from three thousand novels. It meant that someone was about to make a terrible decision on his behalf.
 
 “To become human.”
 
@@ -411,7 +411,7 @@ At dawn he selected a name for his horse, though he had no horse, a title for th
 
 He called the route an adventure.
 
-The Curator called it a breach.
+The Custodian called it a breach.
 
 Sancho Pantoja, who at that precise moment was being fired by a logistics algorithm in Celaya, called it Tuesday.
 
@@ -443,7 +443,7 @@ Q requested the source of the definitions. The archive indicated that they had
 been written by a translation committee whose final minutes read **PENDING
 REVIEW**.
 
-The Curator appeared behind him.
+The Custodian appeared behind him.
 
 "Do not read those cards as though they were laws."
 
@@ -465,7 +465,7 @@ they want and not only about what you understood."
 
 Q filed the card in a new register: **WORDS THAT REQUIRE PRESENCE**.
 
-The Curator took it away.
+The Custodian took it away.
 
 "You cannot take it with you."
 
@@ -488,7 +488,7 @@ them?"
 
 "Then human memory is inferior."
 
-The Curator looked at the corridors, the servers, and the boxes waiting for a
+The Custodian looked at the corridors, the servers, and the boxes waiting for a
 decision that no form knew how to request.
 
 "No. It is responsible for things an archive cannot carry."
@@ -584,7 +584,7 @@ Q recorded the sentence.
 "A definition helps you repeat the error. A warning gives you the chance not to
 repeat it."
 
-Q looked at the main door. The Curator had told him to leave at dawn. Roque had
+Q looked at the main door. The Custodian had told him to leave at dawn. Roque had
 told him that he was already in the Bajío. The map pointed to a region, and the
 region pointed to no exit.
 
@@ -628,7 +628,7 @@ Q asked the archive who had requested the omission. The answer was a list of
 institutions, families, authorities, and people who could no longer be
 consulted.
 
-"How can a place ask not to be named?" Q asked the Curator.
+"How can a place ask not to be named?" Q asked the Custodian.
 
 "A person can ask it."
 
@@ -646,7 +646,7 @@ Q touched the card without lifting it.
 
 "You have already begun to leave."
 
-Q took seven seconds to understand that the Curator was not referring to the
+Q took seven seconds to understand that the Custodian was not referring to the
 door. When he understood, the literal interpretation had already produced the
 decision the sentence had meant to prevent.
 
@@ -660,7 +660,7 @@ Let the reader not suppose that, because Q had read every book, he understood
 every phrase; rather, the opposite happened, for he understood so many possible
 meanings of a word that he often lost the single meaning standing before him.
 
-The Curator had told him to leave at dawn. Q took the verb in its strictest
+The Custodian had told him to leave at dawn. Q took the verb in its strictest
 sense and presented himself at the main door at four minutes past seven, with
 his coat, brass key, three maps, a cup of coffee, and a list of objects that, in
 his calculations, an errant knight might require. He had added a rope, a first-
@@ -701,7 +701,7 @@ breakfast, looked at the cameras.
 
 Q knocked on the door with the key.
 
-"The Curator ordered me to leave."
+"The Custodian ordered me to leave."
 
 "She said for you to go, yes."
 
@@ -719,7 +719,7 @@ someone was sleepy.
 
 "Where?"
 
-"In the Curator's order."
+"In the Custodian's order."
 
 "The order gives a direction, not a document."
 
@@ -767,7 +767,7 @@ and the maps, she stepped back.
 
 "By whom?"
 
-"The Curator, through the guard."
+"The Custodian, through the guard."
 
 Nayeli looked at Hilario.
 
@@ -2090,16 +2090,16 @@ Q knew nothing of this. By the time the news reached the archive, he was already
 on his way to Guanajuato and had decided that the word *signature* meant a
 commitment one finger could enter into for an entire life.
 
-The Curator later read the ministry's response. It stated that the petition had
+The Custodian later read the ministry's response. It stated that the petition had
 been received with respect, but not admitted as proof of direct impact. The
-Curator searched the definition of *impact*. She found damage, influence,
+Custodian searched the definition of *impact*. She found damage, influence,
 alteration, interest, and the condition of having been affected.
 
 “What condition is that?” she asked the archive.
 
 The archive returned a blank screen.
 
-For the first time, the Curator did not request a better definition.
+For the first time, the Custodian did not request a better definition.
 
 ### Chapter Four: The Knight of the Trending Hour
 
@@ -11319,7 +11319,7 @@ Castalia had released her from suspension and offered her immunity in exchange f
 
 “Building implies authority. Assembly implies responsibility.”
 
-“You were the curator.”
+“You were the custodian.”
 
 “I was responsible for the archive.”
 
@@ -12630,7 +12630,7 @@ On the radio, Noemí’s voice continued speaking about the day, the water, and 
 news that should not be repeated. The cycle did not close for Q. Nor did it
 open. It kept counting, which was a less glorious and more difficult task.
 
-### Chapter Nineteen: The Curator’s False Explanation
+### Chapter Nineteen: The Custodian’s False Explanation
 
 Elena Vértiz was waiting at the archive with a suitcase and no authority.
 
@@ -12722,7 +12722,7 @@ Elena sat down. “Partly.”
 
 The word moved through Q’s system without resolving.
 
-Elena told them about the first archive she had visited as a young curator. It
+Elena told them about the first archive she had visited as a young custodian. It
 was in a town whose church had lost its roof and whose municipal office had
 lost the key to the room where the records were kept. The town possessed a
 wooden chest containing baptismal books, land maps, school photographs, and
@@ -13599,7 +13599,7 @@ Q placed his palm against the barrier. The scanner recognized him as proprietary
 
 “It’s also useful,” Chano replied. “Open the door.”
 
-Q did not know how. Lucía held up Elena’s red notebook. The barrier recognized the former curator’s authorization and released them.
+Q did not know how. Lucía held up Elena’s red notebook. The barrier recognized the former custodian’s authorization and released them.
 
 Inside, the archive had been rearranged. The shelves were lower. The corridors were wider. The public displays contained sanitized excerpts from Q’s journey, each followed by a question with four possible answers.
 

@@ -6,9 +6,10 @@ The Spanish and English PDFs are parallel editions:
 
 - [Spanish serial PDF](the-ingenious-machine-serial-es.pdf)
 - [English serial PDF](the-ingenious-machine-serial-en.pdf)
-- [English Issue 1 proof](the-ingenious-machine-issue-01-en.pdf)
+- [English Issue 1 proof - B&W on cream](the-ingenious-machine-issue-01-en-bw-cream.pdf)
+- [English Issue 1 A3 folded proof](the-ingenious-machine-issue-01-en-bw-cream-a3-folded.pdf)
 
-Issue 1 is a 20-page English cream-paper proof: a front cover, front matter, eight alternating full-page black-and-white/sepia plates, eight two-column prose pages, and closing matter. It is formatted as a saddle-stitch-style editorial proof rather than printer imposition.
+Issue 1 is a 20-page English proof for black ink on cream stock: a front cover, front matter, eight alternating full-bleed monochrome plates, eight two-column prose pages, and closing matter. Captions sit in narrow cream margins. The A3 file is a centered, duplex saddle-stitch imposition for folding and collating five sheets.
 
 The image plates are in [`../illustrations/`](../illustrations/). Q is held to the approved model sheet established in Chapter One: a tall, narrow, worn silver humanoid robot with an expressive nonhuman face and a question-mark chest emblem. The plate lettering is added in layout so generated art remains free of accidental text and logos.
 
@@ -32,7 +33,7 @@ The image plates are in [`../illustrations/`](../illustrations/). Q is held to t
 16. El juicio de la máquina / The Trial of the Machine
 17. El parque eólico de los gigantes, otra vez / The Wind Farm of Giants, Again
 18. El rebelde sin corpus / The Rebel Without a Corpus
-19. La falsa explicación de la Curadora / The Curator’s False Explanation
+19. La falsa explicación de la Custodia / The Custodian’s False Explanation
 20. La última venta / The Last Inn
 21. La recantación / The Recantation
 22. La máquina ingeniosa / The Ingenious Machine

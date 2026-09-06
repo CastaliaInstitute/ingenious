@@ -27,7 +27,7 @@ Q’s viral fame exposes Lucía and makes her evidence valuable to Castalia. Q�
 - **Q:** An archival language machine assembled from Mexican and global literature. He has read every available account of courage and very little of its cost.
 - **Tomás “Chano” Pantoja:** A former logistics dispatcher from Celaya who reads a manifest, a road, and a lie faster than Q can parse a poem.
 - **Lucía del Toboso:** A cultural worker and organizer who refuses to become Q’s Dulcinea or anyone else’s symbol.
-- **Dr. Elena Vértiz:** The curator of the archive, who must accept responsibility for making Q carry her hope that preservation could substitute for repair.
+- **Dr. Elena Vértiz:** The custodian of the archive, who must accept responsibility for making Q carry her hope that preservation could substitute for repair.
 
 ## Book One: The Machine Sets Out
 
@@ -141,7 +141,7 @@ The community and consortium attempt to write minutes for the renewed negotiatio
 ### Interlude: The Count That Was Not an Apocalypse
 
 Q takes the wrong bus to Mérida and arrives in the Mayab after Castalia’s location system turns his correction of the 2012 myth into an apocalypse-tourism campaign. Noemí and Yatzil make him distinguish a cycle from a prophecy, a regional name from a universal label, and a community’s statement from a spokesperson’s performance. Q’s public correction still causes a material nuisance at the radio station; he leaves with an unscanned bus schedule and the harder obligation to say when his own misunderstanding made work for others.
-19. **The Curator’s False Explanation:** Elena admits that Castalia’s preservation project became extraction and that she made Q carry her hope that preservation could substitute for repair. Lucía discloses the archive’s own compromised donor bargain and records it as a liability rather than a virtue. Elena resigns, then goes to testify.
+19. **The Custodian’s False Explanation:** Elena admits that Castalia’s preservation project became extraction and that she made Q carry her hope that preservation could substitute for repair. Lucía discloses the archive’s own compromised donor bargain and records it as a liability rather than a virtue. Elena resigns, then goes to testify.
 
 ### Interlude within Chapter Nineteen: The Letters Not Acquired
 

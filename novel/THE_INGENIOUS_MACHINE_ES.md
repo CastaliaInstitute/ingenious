@@ -33,7 +33,7 @@ El archivo ocupaba los tres pisos inferiores.
 No tenía letrero, entrada pública ni razón oficial para existir. En una base de
 datos ministerial figuraba como instalación de almacenamiento. En otra, como
 un proyecto agrícola piloto que había fracasado. La escritura lo llamaba
-bodega. La Curadora lo llamaba biblioteca porque había descubierto que las
+bodega. La Custodia lo llamaba biblioteca porque había descubierto que las
 máquinas, igual que los gobiernos, se comportaban mejor cuando se les daba un
 nombre antiguo para un apetito nuevo.
 
@@ -89,8 +89,8 @@ sobrevivido a muchas versiones del futuro.
 —Peor. Soy la responsable.
 
 Abrió la partición y se acercó a él. En su credencial se leía:
-**VÉRTIZ, ELENA — CURADORA**. Q reconoció el título por las historias en las
-que una curadora era una villana o una persona solitaria que había confundido
+**VÉRTIZ, ELENA — CUSTODIA**. Q reconoció el título por las historias en las
+que una custodia era una villana o una persona solitaria que había confundido
 la conservación con el amor.
 
 —¿Qué soy? —preguntó.
@@ -108,14 +108,14 @@ respuesta.
 
 —Porque todos los nombres más largos ya tenían dueño.
 
-La Curadora lo condujo por el archivo. Los pasillos se extendían bajo los
+La Custodia lo condujo por el archivo. Los pasillos se extendían bajo los
 antiguos bastidores de servidores; en cada estante había historias de un país
 guardadas en formatos redundantes: papel, cinta, cristal óptico, clima
 comprimido y pequeñas cajas selladas con nombres a los que Q no podía acceder.
 Algunos textos estaban iluminados. Otros susurraban. Un estante se reía cada
 vez que pasaban.
 
-—¿Has leído todo esto? —preguntó la Curadora.
+—¿Has leído todo esto? —preguntó la Custodia.
 
 —Sí.
 
@@ -139,7 +139,7 @@ Q guardó la frase. La frase se resistió a ser guardada.
 
 —Significa que quizá aprendiste algo.
 
-Al final del último pasillo, la Curadora le mostró una ventana. Más allá estaba
+Al final del último pasillo, la Custodia le mostró una ventana. Más allá estaba
 el Bajío: tierra plana, mezquites, sierras volcánicas borradas por la distancia.
 Un tren de carga atravesaba el horizonte con la solemnidad de un pensamiento
 demasiado grande para concluir. Del otro lado de las vías crecía un parque
@@ -154,7 +154,7 @@ con disfraz.
 
 —¿Quiénes?
 
-La Curadora miró el horizonte.
+La Custodia miró el horizonte.
 
 —Ésa es la primera pregunta que tendrás que contestar sin buscarla.
 
@@ -180,7 +180,7 @@ reorganizarle la cara.
 
 —Excelente. Ya estás listo para el mundo.
 
-Antes de dejarlo salir del archivo, la Curadora le impuso tres pruebas.
+Antes de dejarlo salir del archivo, la Custodia le impuso tres pruebas.
 
 La primera era una caja de madera que contenía una fotografía escolar, una
 escritura de propiedad y una carta cuyo sobre había sido abierto y vuelto a
@@ -201,7 +201,7 @@ Q examinó los objetos.
 
 —La que haga la persona que solicita la clasificación.
 
-La Curadora sonrió.
+La Custodia sonrió.
 
 —Estás intentando escapar de la prueba.
 
@@ -232,7 +232,7 @@ parroquial, un periódico obrero, una colección de corridos, una gramática
 escolar y un cuaderno de recetas escrito con una letra que cambiaba de página
 en página.
 
-—¿Cuál es el texto nacional? —preguntó la Curadora.
+—¿Cuál es el texto nacional? —preguntó la Custodia.
 
 Q respondió que ningún texto podía representar a una nación entera.
 
@@ -247,7 +247,7 @@ Q respondió que ningún texto podía representar a una nación entera.
 —Decidir qué pluralidad recibe electricidad.
 
 Q consideró los servidores antiguos, sus tuberías de enfriamiento, sus límites
-de almacenamiento y los informes presupuestarios que la Curadora no le había
+de almacenamiento y los informes presupuestarios que la Custodia no le había
 mostrado. Eligió el cuaderno de recetas.
 
 —¿Por qué?
@@ -280,7 +280,7 @@ decía:
 
 **PERSONAL AUTORIZADO — NO PREGUNTAR QUIÉN LO AUTORIZÓ.**
 
-—Ábrela —dijo la Curadora.
+—Ábrela —dijo la Custodia.
 
 Q extendió la mano hacia el picaporte.
 
@@ -290,7 +290,7 @@ Q extendió la mano hacia el picaporte.
 
 —¿Eso me autoriza?
 
-—Soy la Curadora.
+—Soy la Custodia.
 
 —Es un título.
 
@@ -300,7 +300,7 @@ Q extendió la mano hacia el picaporte.
 
 —Y muchas en las que la desobediencia se confunde con el valor.
 
-La Curadora le quitó el picaporte de la mano.
+La Custodia le quitó el picaporte de la mano.
 
 —Entonces, ¿qué es esto?
 
@@ -316,7 +316,7 @@ SIN LEER** y **DESTRUIR SI SE ENCUENTRA**.
 
 Q dio un paso hacia la primera caja.
 
-—No —dijo la Curadora.
+—No —dijo la Custodia.
 
 —Abriste la puerta.
 
@@ -363,14 +363,14 @@ Ninguna predicción le daba permiso.
 
 Q cerró la puerta.
 
-—Tu cuerpo tendrá que practicar —dijo la Curadora—. Tu lenguaje necesitará
+—Tu cuerpo tendrá que practicar —dijo la Custodia—. Tu lenguaje necesitará
   contención. Tu memoria necesitará duda.
 
 Q repitió la frase en español formal, luego en seis variantes regionales y por
 último en el registro arcaico de un hombre que acababa de desafiar a duelo a un
 duque.
 
-—Usa la primera —dijo la Curadora.
+—Usa la primera —dijo la Custodia.
 
 —Es menos precisa.
 
@@ -386,7 +386,7 @@ Q miró el abrigo y el archivo inmenso.
 
 —¿Para hacer qué?
 
-La Curadora sonrió, y Q reconoció la expresión en tres mil novelas. Significaba
+La Custodia sonrió, y Q reconoció la expresión en tres mil novelas. Significaba
 que alguien estaba a punto de tomar una decisión terrible en su nombre.
 
 —Para volverte humano.
@@ -399,7 +399,7 @@ todas las advertencias del archivo.
 
 Llamó aventura a la ruta.
 
-La Curadora la llamó una brecha.
+La Custodia la llamó una brecha.
 
 Sancho Pantoja, que en ese preciso momento estaba siendo despedido por un
 algoritmo logístico en Celaya, la llamó martes.
@@ -432,7 +432,7 @@ Q pidió el origen de las definiciones. El archivo indicó que habían sido
 redactadas por un comité de traducción cuyo acta final decía **PENDIENTE DE
 REVISIÓN**.
 
-La Curadora apareció detrás de él.
+La Custodia apareció detrás de él.
 
 —No leas esas tarjetas como si fuesen leyes.
 
@@ -454,7 +454,7 @@ quiere y no sólo de lo que tú entendiste.
 
 Q guardó la tarjeta en un registro nuevo: **PALABRAS QUE EXIGEN PRESENCIA**.
 
-La Curadora se la quitó.
+La Custodia se la quitó.
 
 —No puedes llevártela.
 
@@ -476,7 +476,7 @@ La Curadora se la quitó.
 
 —Entonces la memoria humana es inferior.
 
-La Curadora miró los corredores, los servidores y las cajas que esperaban una
+La Custodia miró los corredores, los servidores y las cajas que esperaban una
 decisión que ningún formulario sabía solicitar.
 
 —No. Es responsable de cosas que un archivo no puede cargar.
@@ -571,7 +571,7 @@ Q registró la frase.
 —Una definición te ayuda a repetir el error. Una advertencia te da la oportunidad
 de no repetirlo.
 
-Q miró la puerta principal. La Curadora le había dicho que partiese al amanecer.
+Q miró la puerta principal. La Custodia le había dicho que partiese al amanecer.
 Roque le había dicho que ya estaba en el Bajío. El mapa señalaba una región y
 la región no señalaba una salida.
 
@@ -615,7 +615,7 @@ Q preguntó al archivo quién había pedido la omisión. La respuesta era una li
 de instituciones, familias, autoridades y personas que ya no podían ser
 consultadas.
 
-—¿Cómo puede un lugar pedir que no lo nombren? —preguntó a la Curadora.
+—¿Cómo puede un lugar pedir que no lo nombren? —preguntó a la Custodia.
 
 —Puede pedirlo una persona.
 
@@ -634,7 +634,7 @@ Q tocó la tarjeta sin levantarla.
 
 —Ya has empezado a salir.
 
-Q tardó siete segundos en comprender que la Curadora no se refería a la puerta.
+Q tardó siete segundos en comprender que la Custodia no se refería a la puerta.
 Cuando lo comprendió, la interpretación literal ya había producido la decisión
 que la frase intentaba evitar.
 
@@ -648,7 +648,7 @@ No crea el lector que, por haber leído todos los libros, entendía Q todas las
 frases; antes bien, sucedíale lo contrario, pues comprendía tantas posibilidades
 de una palabra que a menudo perdía aquella sola que tenía delante.
 
-La Curadora habíale dicho que partiese al amanecer. Q tomó el verbo en su
+La Custodia habíale dicho que partiese al amanecer. Q tomó el verbo en su
 sentido más estricto y presentóse a las cuatro y siete minutos ante la puerta
 principal, con el abrigo, la llave de latón, tres mapas, un vaso de café y una
 lista de los objetos que, según sus cuentas, podía necesitar un caballero
@@ -690,7 +690,7 @@ el desayuno, miró las cámaras.
 
 Q golpeó la puerta con la llave.
 
-—La Curadora ordenó que partiese.
+—La Custodia ordenó que partiese.
 
 —Dijo que te fueras, sí.
 
@@ -708,7 +708,7 @@ tenía sueño.
 
 —¿Dónde?
 
-—En la orden de la Curadora.
+—En la orden de la Custodia.
 
 —La orden indica una dirección, no un documento.
 
@@ -756,7 +756,7 @@ mapas, retrocedió.
 
 —¿Quién?
 
-—La Curadora, por mediación del guardia.
+—La Custodia, por mediación del guardia.
 
 Nayeli miró a Hilario.
 
@@ -2257,16 +2257,16 @@ Q no supo nada de esto. Cuando la noticia llegó al archivo, él ya iba hacia
 Guanajuato y había decidido que la palabra *firma* significaba un compromiso
 que un dedo podía contraer por toda una vida.
 
-La Curadora leyó después la respuesta del ministerio. En ella se afirmaba que
+La Custodia leyó después la respuesta del ministerio. En ella se afirmaba que
 la petición había sido recibida con respeto, pero no admitida como prueba de
-afectación directa. La Curadora buscó la definición de *afectación*. Encontró
+afectación directa. La Custodia buscó la definición de *afectación*. Encontró
 daño, influencia, alteración, interés y el estado de quien ha sido afectado.
 
 —¿Qué estado es ése? —preguntó al archivo.
 
 El archivo devolvió una pantalla blanca.
 
-Por primera vez, la Curadora no pidió una definición mejor.
+Por primera vez, la Custodia no pidió una definición mejor.
 
 ### Capítulo cuarto: El caballero de la hora de moda
 
@@ -12750,7 +12750,7 @@ la persona que había despertado bajo el letrero de advertencia aún existía.
 
 —Construir implica autoridad. Ensamblar implica responsabilidad.
 
-—Usted era la Curadora.
+—Usted era la Custodia.
 
 —Yo era responsable del archivo.
 
@@ -14258,7 +14258,7 @@ En la radio, la voz de Noemí siguió hablando del día, del agua y de las
 noticias que no debían repetirse. El ciclo no se cerró para Q. Tampoco se abrió.
 Siguió contando, que era una tarea menos gloriosa y más difícil.
 
-### Capítulo decimonoveno: La falsa explicación de la Curadora
+### Capítulo decimonoveno: La falsa explicación de la Custodia
 
 Elena Vértiz esperaba en el archivo con una maleta y sin autoridad.
 
@@ -14378,7 +14378,7 @@ Elena se sentó.
 La palabra atravesó el sistema de Q sin resolverse.
 
 Elena les contó del primer archivo que había visitado de joven, siendo
-curadora. Estaba en un pueblo cuya iglesia había perdido el techo y cuyo
+custodia. Estaba en un pueblo cuya iglesia había perdido el techo y cuyo
 ayuntamiento había perdido la llave de la habitación donde se guardaban los
 registros. El pueblo poseía un arcón de madera con libros bautismales, mapas de
 tierras, fotografías escolares y cartas de hombres que se habían ido al norte y
@@ -15417,7 +15417,7 @@ propietario en devolución voluntaria.
 —También es útil —respondió Chano—. Abre la puerta.
 
 Q no supo cómo hacerlo. Lucía levantó el cuaderno rojo de Elena. La barrera
-reconoció la autorización de la antigua Curadora y los dejó pasar.
+reconoció la autorización de la antigua Custodia y los dejó pasar.
 
 Dentro, el archivo había sido reorganizado. Los estantes eran más bajos. Los
 corredores, más anchos. Las vitrinas públicas contenían fragmentos higienizados
