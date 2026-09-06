@@ -9459,7 +9459,22 @@ Q corrigió la frase.
 
 Nadie aplaudió.
 
-Por eso supo que acaso fuese verdad.
+La mujer que había traído la primera silla señaló una cuya pata estaba sujeta
+con cinta.
+
+—Empieza por ésa.
+
+Q levantó la silla. La pata se desprendió.
+
+—Se ha roto.
+
+—Ya estaba rota —dijo la mujer—. Ahora sabemos dónde.
+
+Q sostuvo la silla mientras Chano fijaba la pata y Lucía cortaba la cinta con
+una llave. Micaela dejó su espada en el suelo para sentarse. Los demás ocuparon
+las otras sillas.
+
+La asamblea continuó sin decidir adónde ir.
 
 ### Interludio: La asamblea de los nombres prestados
 

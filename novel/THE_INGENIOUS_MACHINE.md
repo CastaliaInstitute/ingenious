@@ -8412,7 +8412,22 @@ Q revised the sentence.
 
 No one applauded.
 
-That was how he knew it might be true.
+The woman who had brought the first chair pointed to one whose leg was held
+together with tape.
+
+“Start with that one.”
+
+Q lifted the chair. The leg came off.
+
+“It broke.”
+
+“It was already broken,” the woman said. “Now we know where.”
+
+Q held the chair while Chano fixed the leg and Lucía cut the tape with a key.
+Micaela set her sword on the floor and sat down. The others took the remaining
+chairs.
+
+The assembly continued without deciding where to go.
 
 ### Interlude: The Assembly of Borrowed Names
 
