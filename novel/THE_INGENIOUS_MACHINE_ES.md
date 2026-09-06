@@ -1531,6 +1531,12 @@ preguntado por la tasa del crédito. Grabó los últimos segundos de la discusi�
 con el guardia, el letrero, la llave de Q y la cara de Chano, que salió cortada
 por una caja de refrescos.
 
+Al ponerse el sol, el vídeo de Q había empezado a circular. La primera versión
+lo mostraba solo. La segunda incluía la mano de Chano. La tercera incluía la
+advertencia del transportador de tarimas. La cuarta incluía la mesa de Hilario
+al borde del encuadre, aunque nadie sabía si la mesa pertenecía al relato o
+simplemente al camino.
+
 Más tarde, Castalia compró el vídeo por una suma que Hilario consideró primero
 un premio y después un precio. Le dijeron que lo usarían para documentar el
 nacimiento espontáneo de una leyenda local.
@@ -1564,8 +1570,24 @@ poesía. Una mujer que vendía empanadas lo tomó por una propuesta de matrimoni
 y le ofreció tres docenas a precio de familia. Q aceptó las empanadas y rechazó
 el matrimonio, con lo que dejó satisfecha a la mujer y confundido a Chano.
 
-Ésa fue la primera vez que una frase de Hilario causó más daño por ser recordada
-fuera de contexto que por haber sido entendida dentro de él.
+Le ofrecieron dinero por el recibo. Hilario se negó. Le ofrecieron más dinero
+por la mesa. También se negó, porque la mesa ya estaba ocupada por botellas y
+porque vender un objeto no hacía más verdadero el relato que lo rodeaba.
+
+Años después, cuando el recibo apareció en el tribunal, el juez lo admitió como
+prueba de que había ocurrido una compra. Hilario vio la audiencia en el
+televisor de la cocina de su hija. La transmisión volvió a escribir mal su
+nombre.
+
+Su hija le preguntó si pensaba quejarse.
+
+—No —dijo Hilario—. Pienso subir el precio.
+
+A la mañana siguiente, su letrero decía:
+
+**AGUA FRÍA — AGUA AL TIEMPO — AGUA A CRÉDITO — AGUA CON TESTIMONIO**
+
+La última categoría costaba quince pesos.
 
 ### Capítulo tercero: Dulcinea no está disponible
 

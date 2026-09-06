@@ -1479,21 +1479,41 @@ warning. The fourth included Hilario’s table at the edge of the frame, though
 no one could tell whether the table belonged to the story or merely to the
 roadside.
 
-Castalia later asked Hilario to sign a statement saying that Q had entered the
-park with revolutionary intent.
+Castalia later bought the video for a sum Hilario first considered a prize and
+then a price. They told him they would use it to document the spontaneous birth
+of a local legend.
 
-“He entered with an empty bottle,” Hilario said.
+“And what am I?” Hilario asked.
 
-“The statement concerns his motives.”
+“An incidental witness,” the authorization woman replied.
 
-“Then ask him.”
+“Does that pay differently from being a witness?”
 
-“He is unavailable.”
+The woman offered him a new form.
 
-“That makes two of you.”
+Hilario did not sign it. He put away his phone, lifted the table, and asked Q
+whether he intended to return.
 
-They offered him money for the receipt. He refused. They offered him more for
-the table. He refused that too, because the table was already occupied by
+“I will return when the story leads me,” Q said.
+
+“Then you will not return.”
+
+“Why?”
+
+“Stories do not buy ice.”
+
+Q stored the sentence as **ECONOMIC WARNING**, but used it as a greeting for
+months. Whenever anyone asked where he was going, he answered:
+
+“Stories do not buy ice.”
+
+Some people understood that he had no money. Others thought he was mocking
+poetry. A woman who sold empanadas took it as a marriage proposal and offered
+him three dozen at a family price. Q accepted the empanadas and rejected the
+marriage, leaving the woman satisfied and Chano confused.
+
+They offered Hilario money for the receipt. He refused. They offered him more
+for the table. He refused that too, because the table was already occupied by
 bottles and because selling an object did not make the story beside it more
 true.
 
