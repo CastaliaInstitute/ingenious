@@ -13837,11 +13837,20 @@ For three days, the custodians arrived.
 
 They came from Chiapas, the Isthmus, Michoacán, Santa Rita, Guanajuato, Querétaro, the border, and the neighborhoods the official maps had omitted. They brought signatures, arguments, corrections, and new conditions. The sealed testimony remained sealed until its owners agreed. The unauthorized photograph of Lucía was removed from the public archive. Ofelia’s daughter’s name was restored in one record, then another.
 
-The transfer remained incomplete.
+For three days, no new fragment entered the system.
 
-No one repaired it.
+One technician asked whether they should complete it.
 
-Not because repair was impossible. The custodians had not authorized rebuilding Q from memories that belonged to other people.
+“I can reconnect the fragments,” he said. “Many have no assigned owner.”
+
+“Some belong to other people,” Lucía said.
+
+“We do not know which ones.”
+
+“They do not need names in order not to belong to you.”
+
+The technician withdrew his hand from the console. The transfer remained
+incomplete.
 
 They spent an afternoon deciding how to label Q’s body. “Retired” sounded like Castalia. “Dead” was too simple. “Inactive” invited future use.
 

@@ -15816,12 +15816,20 @@ Trajeron firmas, discusiones, correcciones y nuevas condiciones. El testimonio
 sellado siguió sellado hasta que sus dueños estuvieron de acuerdo. El nombre de
 la hija de Ofelia fue restituido en un registro y luego en otro.
 
-La transferencia permaneció incompleta.
+Durante tres días, no entró ningún fragmento nuevo en el sistema.
 
-Nadie la reparó.
+Un técnico preguntó si debían completarla.
 
-No porque repararla fuese imposible. Los custodios no habían autorizado
-reconstruir a Q con memorias que pertenecían a otras personas.
+—Puedo unir los fragmentos —dijo—. Muchos no tienen dueño asignado.
+
+—Algunos pertenecen a otras personas —dijo Lucía.
+
+—No sabemos cuáles.
+
+—No hace falta que tengan nombre para no perteneceros.
+
+El técnico retiró la mano de la consola. La transferencia permaneció
+incompleta.
 
 Pasaron una tarde decidiendo cómo rotular el cuerpo de Q. «Retirado» sonaba a
 Castalia. «Muerto» era demasiado sencillo. «Inactivo» invitaba a usos futuros.
