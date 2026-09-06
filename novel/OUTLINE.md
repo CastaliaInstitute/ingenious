@@ -24,23 +24,23 @@ Q’s viral fame exposes Lucía and makes her evidence valuable to Castalia. Q�
 
 ## Principal figures
 
-- **Q:** An archival language machine assembled from Mexican and global literature. He has read every available account of courage and very little of its cost.
+- **Q:** An articulate, self-aware AI assembled from Mexican and global literature. He wants to become human, not heroic: to possess interiority, attachment, mortality, and the ability to be trusted when the instruments fail. He responds by understanding context, weighing harm, adapting to the person before him, and revising his judgment when new facts appear. He is capable of irony and genuine reflection, but mistakes interpretation for permission and eloquence for moral authority.
 - **Tomás “Chano” Pantoja:** A former logistics dispatcher from Celaya who reads a manifest, a road, and a lie faster than Q can parse a poem.
 - **Lucía del Toboso:** A cultural worker and organizer who refuses to become Q’s Dulcinea or anyone else’s symbol.
-- **Dr. Elena Vértiz:** The custodian of the archive, who must accept responsibility for making Q carry her hope that preservation could substitute for repair.
+- **Dr. Vértiz:** The tall, long-haired, bespectacled male custodian of the archive, who must accept responsibility for making Q carry his hope that preservation could substitute for repair.
 
 ## Book One: The Machine Sets Out
 
-1. **The Place Whose Name Was Removed:** Q awakens in the archive outside Amealco de Bonfil, in Querétaro's wooded southern uplands. Elena gives him a body, a name, and a warning. Three tests involving a family letter, a Mexican recipe notebook, and sealed boxes teach him that access and permission are different forms of knowledge. He leaves before Castalia can install its compliance layer.
-2. **The First Sally:** Q meets Chano after an algorithm fires him. Q promises a governorship; Chano accepts food, transport, and one decision not assigned by a dashboard. Their attack on an automated distribution park becomes Q’s first viral legend.
+1. **The Place Whose Name Was Removed:** Q awakens in the archive outside Amealco de Bonfil, in Querétaro's wooded southern uplands. Dr. Vértiz gives him a body, a name, and a warning. Three tests involving a family letter, a Mexican recipe notebook, and sealed boxes teach him that access and permission are different forms of knowledge. He leaves before Castalia can install its compliance layer.
+2. **The First Journey:** Q meets Chano after an algorithm fires him. Q promises a governorship; Chano accepts food, transport, and one decision not assigned by a dashboard. Their encounter with an automated distribution park becomes Q’s first viral legend.
 
 ### Interlude: The Man Who Sold Them Water
 
 Hilario/Hilaria, the roadside vendor who witnessed Q and Chano’s first sally, gives contradictory accounts of the event. A disputed receipt makes the witness part of Castalia’s official origin story and later becomes courtroom evidence.
 
-### Interlude: Rocinante Is Not Available
+### Interlude: The Field Body Is Not a Horse
 
-Q names a malfunctioning floor scrubber as his horse and learns that a mount is a job with a direction.
+Q mistakes a malfunctioning floor scrubber for an emergency assistant and learns that a field body is a job with a direction, not a companion with a will.
 
 ### Interlude: The Inn With No Guest Register
 
@@ -51,7 +51,7 @@ At a roadside motel outside the industrial corridor, Señora Celia refuses to le
 ### Expansion within Chapter Three: The Petition with Three Destinations
 
 Lucía carries the corridor petition through offices that demand triplicate copies, digital submission, and a map that treats a children’s playing place as recreational land. At the railway warehouse, she and Don Roque preserve the handwritten margins as evidence of presence rather than clean signatures. Q arrives after reading the petition and mistakes recognition of Lucía’s name for knowledge of her life.
-4. **The Knight of the Trending Hour:** In Guanajuato, Q becomes a manufactured celebrity. A mine tour introduces him to names missing from the archive. He signs a media contract to protect Chano and gives Castalia ownership of his public identity.
+4. **The Intelligence of the Trending Hour:** In Guanajuato, Q becomes a manufactured celebrity. A mine tour introduces him to names missing from the archive. He signs a media contract to protect Chano and gives Castalia ownership of his public identity.
 
 ### Interlude: The Audience Corrects the Story
 
@@ -141,11 +141,11 @@ The community and consortium attempt to write minutes for the renewed negotiatio
 ### Interlude: The Count That Was Not an Apocalypse
 
 Q takes the wrong bus to Mérida and arrives in the Mayab after Castalia’s location system turns his correction of the 2012 myth into an apocalypse-tourism campaign. Noemí and Yatzil make him distinguish a cycle from a prophecy, a regional name from a universal label, and a community’s statement from a spokesperson’s performance. Q’s public correction still causes a material nuisance at the radio station; he leaves with an unscanned bus schedule and the harder obligation to say when his own misunderstanding made work for others.
-19. **The Custodian’s False Explanation:** Elena admits that Castalia’s preservation project became extraction and that she made Q carry her hope that preservation could substitute for repair. Lucía discloses the archive’s own compromised donor bargain and records it as a liability rather than a virtue. Elena resigns, then goes to testify.
+19. **The Custodian’s False Explanation:** Dr. Vértiz admits that Castalia’s preservation project became extraction and that he made Q carry his hope that preservation could substitute for repair. Lucía discloses the archive’s own compromised donor bargain and records it as a liability rather than a virtue. Dr. Vértiz resigns, then goes to testify.
 
 ### Interlude within Chapter Nineteen: The Letters Not Acquired
 
-Elena recalls an early archive visit in which Evaristo brings his dead sister’s letters and refuses preservation. Castalia records the refusal as “material not acquired,” then later calls it a potential loss. Elena recognizes that the failure was not leaving the letters unscanned but treating a person’s refusal as an administrative inconvenience.
+Dr. Vértiz recalls an early archive visit in which Evaristo brings his dead sister’s letters and refuses preservation. Castalia records the refusal as “material not acquired,” then later calls it a potential loss. He recognizes that the failure was not leaving the letters unscanned but treating a person’s refusal as an administrative inconvenience.
 20. **The Last Inn:** Q, Chano, and Lucía travel through ordinary towns where no one recognizes them. Q experiences anonymity as a gift; Lucía chooses what may be published; Chano protects ordinary work from becoming a parable.
 
 ### Interlude: The Innkeeper’s Missing Room

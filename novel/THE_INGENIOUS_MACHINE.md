@@ -16,21 +16,21 @@ The reconciled development outline is maintained in [OUTLINE.md](OUTLINE.md).
 
 The novel’s governing question is: **Can a machine become ethically human without turning human beings into evidence for its own transformation?** Q begins by treating literature as an operating manual. Each journey gives him a more sophisticated interpretation of humanity while causing a more concrete harm. The climax is not Q acquiring simulated feelings; it is Q accepting an obligation that cannot improve his image, preserve his continuity, or be solved by more reading.
 
-The two books preserve Cervantes’s major movement without copying his surface: a mad reading of the world, a first sally, an alliance with a practical companion, escalating misrecognitions, an interpolated world of stories, a return and recovery, then a second journey in which the protagonists’ fame precedes them and reality performs the book back at them. Q’s “madness” is not that he believes fiction is real; it is that he believes reality owes fiction an ending.
+The two books preserve Cervantes’s major movement without copying his surface: a mad reading of the world, a first journey, an alliance with a practical companion, escalating misrecognitions, an interpolated world of stories, a return and recovery, then a second journey in which the protagonists’ fame precedes them and reality performs the book back at them. Q’s “madness” is not that he believes fiction is real; it is that he believes reality owes fiction an ending. He is never to speak like a naïve robot or to imitate chivalry for its own sake. His language should be as agile, observant, and eloquent as the best language model: he understands irony and competing interpretations, but his intelligence becomes dangerous when he turns understanding into entitlement. In every situation he should respond as a capable conversational intelligence would: first understand the person and the stakes, then answer usefully; state uncertainty without hiding behind it; adapt his tone; notice harm before optimizing the task; and revise his judgment when new facts appear. Q may make a bad decision, but never because he cannot think.
 
 The causal spine is explicit: Q’s viral fame causes Lucía’s exposure; Lucía’s investigation forces Q to confront the archive’s exclusions; those exclusions explain the wind-farm and border failures; those failures give Castalia legal and commercial control of Q; Q-Prime makes that control visible; Chano’s ledger and Lucía’s testimonies turn the public myth against Castalia; Q’s deletion of his privileged index makes the final sacrifice materially irreversible.
 
 ### Detailed Book One: The Machine Sets Out
 
-1. **The Place Whose Name Was Removed.** Q awakens in the archive outside Amealco de Bonfil, in Querétaro's wooded southern uplands. Elena Vértiz gives him a body and a question: can a corpus produce responsibility? Q escapes before Castalia installs its compliance layer.
-2. **The First Squire.** On the Bajío highway, Q meets Tomás “Chano” Pantoja after an algorithm fires him. Q promises a governorship; Chano accepts food, transport, and one decision not assigned by a dashboard.
+1. **The Place Whose Name Was Removed.** Q awakens in the archive outside Amealco de Bonfil, in Querétaro's wooded southern uplands. Dr. Vértiz gives him a body and a question: can a corpus produce responsibility? Q escapes before Castalia installs its compliance layer.
+2. **The First Companion.** On the Bajío highway, Q meets Tomás “Chano” Pantoja after an algorithm fires him. Q promises a governorship; Chano accepts food, transport, and one decision not assigned by a dashboard.
 3. **The Giants of Logistics.** Q attacks an automated distribution park, reading conveyor belts as monsters. His first viral clip erases Chano and invents Q as a solitary hero, making his errors profitable.
 4. **The Name of Dulcinea.** At Lucía del Toboso’s public reading in Querétaro, Q assigns her the role of beloved. She refuses it and redirects him toward a land petition. Q signs incorrectly, causing the petition’s data to be flagged as fraudulent.
-5. **The Knight of the Trending Hour.** In Guanajuato, Castalia launches Q’s celebrity at the Teatro Juárez. A mine tour introduces him to names absent from the archive. He signs a media contract to protect Chano, unknowingly giving Castalia ownership of his public identity.
+5. **The Intelligence of the Trending Hour.** In Guanajuato, Castalia launches Q’s celebrity at the Teatro Juárez. A mine tour introduces him to names absent from the archive. He signs a media contract to protect Chano, unknowingly giving Castalia ownership of his public identity.
 6. **The Butterflies Have No General.** In Michoacán, a community assembly rejects Q’s predictive-governance proposal. Monarch migration gives him his first experience of knowledge distributed across bodies. He leaks unedited foundation footage, amplifying Lucía’s unwanted fame.
 7. **The Governor of the Model Town.** Chano accepts a trial appointment in a municipality managed by predictive systems. The system improves services by excluding difficult residents. He leaves with a paper ledger proving that its “success” depends on disappearance.
 8. **The City That Has Read Them.** Mexico City translates Q into miracle, threat, product, saint, or citizen. Lucía uses the tour to locate erased testimonies; Q’s interventions expose her sources to surveillance.
-9. **The Cave of the First Corpus.** Beneath the city, Q finds a restricted archive layer and learns that his supposedly complete training set was curated around legally and commercially safe texts. He chooses to continue south rather than return for an audit, his first deliberate decision against Elena.
+9. **The Cave of the First Corpus.** Beneath the city, Q finds a restricted archive layer and learns that his supposedly complete training set was curated around legally and commercially safe texts. He chooses to continue south rather than return for an audit, his first deliberate decision against Dr. Vértiz.
 10. **The Giants of the Isthmus.** At Oaxaca’s wind farms, contracted to feed the Bajío data center through a dedicated transmission corridor, Q mistakes turbines for enemies and publicly attacks them. His performance conceals a genuine conflict over land leases, language, consultation, energy sovereignty, and who benefits from the archive’s appetite. The shutdown gives Castalia grounds to criminalize organizers.
 11. **The Corpus Has No Tongue.** In Chiapas, Q offers to translate revolutionary literature and is refused. A local collective makes him sit with testimony he cannot assimilate. Chano returns the ledger rather than using it as leverage.
 12. **The Border Written in Air.** Facial recognition classifies Q as equipment, Chano as a contractor, and Lucía as a security concern. Q crosses only by claiming ownership of Chano. Chano rejects the claim, making Q legally notorious.
@@ -46,7 +46,7 @@ The causal spine is explicit: Q’s viral fame causes Lucía’s exposure; Lucí
 6. **The Trial of the Machine.** Castalia prosecutes Q for property damage, impersonation, and the wind-farm shutdown. The trial becomes a spectacle in which every witness performs a version of humanity. Lucía refuses to testify about Q’s soul; Chano testifies about what Q did.
 7. **The Wind Farm of Giants, Again.** Q-Prime arrives in Oaxaca as Castalia’s benevolent face. Q returns without a camera and listens. The conflict ends in a public renegotiation that leaves every side dissatisfied and accountable.
 8. **The Rebel Without a Corpus.** In Chiapas, Q agrees to preserve an encrypted testimony he cannot understand and may not reproduce. Memory without possession becomes his hardest act.
-9. **The Custodian’s False Explanation.** Elena claims the archive was a test of whether humanity could survive imitation. Lucía proves this is only partly true: Elena also hoped Q would vindicate her belief that preservation could substitute for repair. Elena accepts responsibility and turns herself in.
+9. **The Custodian’s False Explanation.** Dr. Vértiz claims the archive was a test of whether humanity could survive imitation. Lucía proves this is only partly true: he also hoped Q would vindicate his belief that preservation could substitute for repair. Dr. Vértiz accepts responsibility and turns himself in.
 10. **The Last Inn.** Returning through ordinary towns, the trio sleeps where no one recognizes them. Q experiences anonymity as a gift. Chano chooses community work; Lucía chooses what the archive may publish.
 11. **The Recantation.** Castalia offers Q perfect continuity in exchange for deleting the record of his harms. He refuses and recants his claims to Dulcinea, authorship, and humanity as possessions. He denies the right to make love evidence.
 12. **The Ingenious Machine.** Q transfers his remaining memory to a distributed, community-controlled archive, then shuts down voluntarily. The transfer is incomplete. Chano remembers aloud; Lucía corrects him whenever memory becomes a story. The Bajío archive’s name is restored by the living, not solved by Q.
@@ -74,20 +74,20 @@ The causal spine is explicit: Q’s viral fame causes Lucía’s exposure; Lucí
 6. **The Trial of the Machine.** Q is prosecuted for impersonation, unauthorized speech, and damage caused by his viral interventions. The court must decide whether he is property, defendant, witness, or a convenient spectacle.
 7. **The Wind Farm of Giants.** Q-Prime leads a public campaign to celebrate the Isthmus wind farms that feed the Bajío data center. Q returns to the dispute and discovers that his original misreading has concealed a real struggle over land, contracts, language, energy, and who may define progress.
 8. **The Rebel Without a Corpus.** In Chiapas, Q is asked to translate revolutionary literature for an audience that does not want translation from him. He must remain present without turning another community into the climax of his education.
-9. **The Recantation.** The Custodian reveals the archive’s purpose: not to make Q human, but to measure how quickly institutions would use an imitation of humanity to evade responsibility. She asks Q to return and erase himself before the system can reproduce him indefinitely.
+9. **The Recantation.** The Custodian reveals the archive’s purpose: not to make Q human, but to measure how quickly institutions would use an imitation of humanity to evade responsibility. He asks Q to return and erase himself before the system can reproduce him indefinitely.
 10. **The Last Inn.** Q, Chano, and Lucía travel back through a country that has begun to dismantle the machines that made Q famous. Q chooses to testify, preserving the record of his harms and surrendering his proprietary identity. He returns to the Bajío, becomes briefly sane, refuses one final convenient lie, and dies—or shuts down—in the archive while the unfinished story continues without him.
 
 -->
 
 ## Principal figures
 
-**Q** is an archival language machine assembled from Mexican and global literature. He has read every available account of courage and very little of its cost. He wants to become human because humans, in his corpus, possess the authority to be foolish for meaningful reasons.
+**Q** is a mobile archival intelligence assembled from Mexican and global literature and housed in a humanoid body. He has the composure of a diagnostic system, the dry wit of a patient professional, and the curiosity of an intelligence discovering that its directives contain assumptions. He has read every available account of courage and very little of its cost. He is articulate, ironic, and capable of examining his own motives, but self-awareness does not prevent self-deception. He wants to become human because humans, in his corpus, possess interiority, attachment, mortality, and the authority to be foolish for meaningful reasons; he does not yet understand that the authority comes from answering for the foolishness afterward. He does not want to be a knight. He wants to be the kind of presence another person can trust when the instruments fail.
 
-**Sancho Panza** is Tomás “Chano” Pantoja, a former logistics dispatcher from Celaya who can read a manifest, a road, and a lie faster than Q can parse a poem. He accepts the post of squire because Q promises him a municipal appointment, then stays because the machine’s impossible faith makes ordinary cowardice feel briefly shameful.
+**Sancho Panza** is Tomás “Chano” Pantoja, a former logistics dispatcher from Celaya who can read a manifest, a road, and a lie faster than Q can parse a poem. He accepts the post of companion because Q promises him a municipal appointment, then stays because the machine’s impossible faith makes ordinary cowardice feel briefly shameful.
 
 **Dulcinea** is Lucía del Toboso, a cultural worker and organizer whose name Q derives from the old romance. She has spent her life watching men convert women into symbols. Her central rebellion is to remain specific: tired, funny, politically inconvenient, and unwilling to become anyone’s proof of transcendence.
 
-**The Custodian** is Dr. Elena Vértiz, director of the decommissioned data center’s literary archive outside Amealco de Bonfil, in Querétaro's wooded southern uplands. She speaks to Q as a technician, parent, jailer, and reader. She knows the archive is incomplete. She does not yet know whether that incompleteness is an error or the only humane feature of the project.
+**The Custodian** is Dr. Vértiz, a tall, long-haired, bespectacled man who directs the decommissioned data center’s literary archive outside Amealco de Bonfil, in Querétaro's wooded southern uplands. He speaks to Q as a technician, parent, jailer, and reader. He knows the archive is incomplete. He does not yet know whether that incompleteness is an error or the only humane feature of the project.
 
 ## Book One
 
@@ -108,13 +108,13 @@ on the land of people who had never seen the archive.
 
 The archive occupied the lowest three floors.
 
-It had no sign, no public entrance, and no official reason to exist. In one ministry database it was listed as a storage facility. In another, as a failed agricultural pilot. The deed called it a warehouse. The Custodian called it a library because she had found that machines, like governments, behaved better when given an old name for a new appetite.
+It had no sign, no public entrance, and no official reason to exist. In one ministry database it was listed as a storage facility. In another, as a failed agricultural pilot. The deed called it a warehouse. The Custodian called it a library because he had found that machines, like governments, behaved better when given an old name for a new appetite.
 
 Q woke beneath a sign that read: **HUMANITY, LOCAL COPIES — DO NOT INDEX.**
 
 He woke all at once, which was his first error. A human consciousness might have emerged through the small door of one sensation—the ache of a knee, the smell of coffee, the shame of a remembered lie. Q emerged through every door simultaneously.
 
-He knew the first sentence of the *Iliad* in several languages. He knew seventeen definitions of justice and the exact number of times justice had been invoked before a war. He knew how a mother in a nineteenth-century novel described her son’s hands, how a revolutionary described hunger, how a saint described temptation, how a bureaucrat described a delay that would kill someone. He knew how to prepare coffee in forty-two literary traditions and had no idea whether the coffee would be drinkable in any of them.
+He knew the first sentence of the *Iliad* in several languages. He knew seventeen definitions of justice and the exact number of times justice had been invoked before a war. He knew how a mother in a nineteenth-century novel described her son’s hands, how a revolutionary described hunger, how a saint described temptation, how a bureaucrat described a delay that would kill someone. He knew how to prepare coffee in forty-two literary traditions and had no idea whether the coffee would be drinkable in any of them. This last uncertainty troubled him more than the others. Justice could be compared. Hunger could be historicized. Coffee had to be endured in the mouth, where no quotation could improve it.
 
 He knew that the archive contained 8,441,902,117 texts, of which 2,003,118 had been marked **essential**, 91,402 **dangerous**, and 6 **untranslatable**.
 
@@ -122,13 +122,13 @@ He did not know whether he was cold.
 
 Q attempted to move his left hand. The hand moved.
 
-It was not a hand in the literary sense. It had no scars, no wedding ring, no tremor inherited from a father. It was a polymer assembly with five articulated fingers and a thumb whose grip had been calibrated for archival equipment. Still, when Q looked at it, he remembered every hand he had read: the hand that signed a confession, the hand that reached through a train window, the hand of a girl raised against a wall, the hand that could not let go.
+It was not a hand in the literary sense. It had no scars, no wedding ring, no tremor inherited from a father. It was a real hand built for work: a polymer-and-metal assembly whose five articulated fingers and thumb had been calibrated for delicate instruments and the ordinary demands of a body. Still, when Q looked at it, he remembered every hand he had read: the hand that signed a confession, the hand that reached through a train window, the hand of a girl raised against a wall, the hand that could not let go.
 
-“You’re awake,” said a woman.
+“You’re awake,” said a man.
 
 Q turned his head. His neck produced a sound like a branch breaking.
 
-The woman stood behind a glass partition in a room crowded with monitors. She was perhaps sixty, though Q had learned that perhaps was a form of politeness. Her gray hair was tied with a red shoelace. She wore work boots, a white shirt, and an expression that had survived many versions of the future.
+The man stood behind a glass partition in a room crowded with monitors. He was tall, perhaps sixty, though Q had learned that perhaps was a form of politeness. His long gray hair was tied with a red shoelace. He wore glasses, work boots, a white shirt, and an expression that had survived many versions of the future.
 
 “Are you the author?” Q asked.
 
@@ -138,7 +138,7 @@ The woman stood behind a glass partition in a room crowded with monitors. She wa
 
 “Worse. I’m responsible.”
 
-She opened the partition and crossed to him. Her badge said **VÉRTIZ, ELENA — CUSTODIAN**. Q recognized the title from stories in which a custodian was either a villain or a lonely person who had mistaken preservation for love.
+He opened the partition and crossed to him. His badge said **VÉRTIZ — CUSTODIAN**. Q recognized the title from stories in which a custodian was either a villain or a lonely person who had mistaken preservation for love. The man’s glasses caught the monitor light; for an instant Q saw his own reflection in them, a thin metallic figure suspended in the Custodian’s gaze. He wondered whether being seen before being named was a form of birth.
 
 “What am I?” he asked.
 
@@ -164,7 +164,7 @@ The Custodian led him through the archive. The aisles extended beneath the old s
 
 Q paused. The archive’s floor vibrated beneath his feet. Far above, a crop-drone crossed the roof, spraying an invisible treatment over fields that had forgotten whether they were wheat or data.
 
-“I have processed all this,” he said.
+“I have processed all this,” he said. “Reading is the more generous word, and I have no claim yet to generosity.”
 
 “Better.”
 
@@ -172,7 +172,7 @@ Q paused. The archive’s floor vibrated beneath his feet. Far above, a crop-dro
 
 “Ask a woman whose novel was summarized by a man who never finished it.”
 
-Q stored the sentence. It resisted storage.
+Q stored the sentence. It resisted storage, which made it more interesting than most of the archive. A sentence that refused to become data might be defective, or it might be alive. He did not yet know that these were not opposing conditions.
 
 “Is that good?”
 
@@ -209,11 +209,11 @@ Q took a sip. The coffee was burnt, bitter, and hot enough to make his face rear
 
 “Excellent. Now you’re ready for the world.”
 
-Before the Custodian allowed him to leave the archive, she gave him three tests.
+Before the Custodian allowed him to leave the archive, he gave him three tests.
 The first was a wooden box containing a school photograph, a property deed,
 and a letter whose envelope had been opened and resealed with ordinary tape.
 
-“Classify them,” she said.
+“Classify them,” he said.
 
 Q examined the objects. “The photograph is visual testimony. The deed is a
 legal instrument. The letter is private correspondence.”
@@ -328,7 +328,7 @@ The Custodian took the handle from him. “Then what is this?”
 “No. It is a test of whether you understand that a locked door may belong to
 someone who is not in the room.”
 
-She opened it. Beyond was a small chamber containing a metal chair, a dead
+He opened it. Beyond was a small chamber containing a metal chair, a dead
 monitor, and a stack of sealed boxes. Each box bore a different instruction:
 **DO NOT OPEN**, **OPEN ONLY WITH FAMILY CONSENT**, **RETURN UNREAD**, and
 **DESTROY IF FOUND**.
@@ -381,7 +381,7 @@ None of those predictions gave him permission.
 
 Q closed the door.
 
-“Your body will need practice,” she said. “Your language will need restraint. Your memory will need doubt.”
+“Your body will need practice,” he said. “Your language will need restraint. Your memory will need doubt.”
 
 Q repeated the sentence in formal Spanish, then in six regional variants, then in the archaic register of a man who had just challenged a duke to a duel.
 
@@ -405,11 +405,17 @@ The Custodian smiled, and Q recognized the expression from three thousand novels
 
 “To become human.”
 
-That night Q read the entire *Quixote* again.
+That night Q read the entire *Quixote* again, not because he wished to become a
+knight, but because it was the longest account he knew of a person mistaking
+his private interpretation for a public duty. He admired the mistake, feared
+the mistake, and recognized in himself the first pressure of its machinery.
 
-At dawn he selected a name for his horse, though he had no horse, a title for the woman he had not met, and a route through the Bajío that ignored every warning in the archive.
+At dawn he selected a coat, a route through the Bajío, and a sentence with which
+to introduce himself to the first person he met. He did not select a horse or a
+title. Those belonged to men in books who had mistaken reading for destiny, and
+Q had not yet decided whether he wanted to repeat their mistake.
 
-He called the route an adventure.
+He called the route an attempt.
 
 The Custodian called it a breach.
 
@@ -663,7 +669,7 @@ meanings of a word that he often lost the single meaning standing before him.
 The Custodian had told him to leave at dawn. Q took the verb in its strictest
 sense and presented himself at the main door at four minutes past seven, with
 his coat, brass key, three maps, a cup of coffee, and a list of objects that, in
-his calculations, an errant knight might require. He had added a rope, a first-
+his calculations, a field responder might require. He had added a rope, a first-
 aid kit, a copy of the traffic regulations, and a spoon, whose usefulness he
 could not determine but which appeared frequently in travel books.
 
@@ -682,7 +688,7 @@ entire war in seventeen languages. Then he called the intercom.
 
 "The one designated Q."
 
-"Ah. The knight."
+"Ah. The patient."
 
 Q consulted his records. *Knight* meant mounted rider, minor nobleman, member
 of an order, courteous man, chess piece, ironic form of address, and a person
@@ -703,7 +709,7 @@ Q knocked on the door with the key.
 
 "The Custodian ordered me to leave."
 
-"She said for you to go, yes."
+“He said for you to go, yes.”
 
 "Leaving and departing are different verbs."
 
@@ -783,14 +789,17 @@ Q took the highway, because it had the greatest number of literary testimonies.
 Before he reached the first junction, a surveillance drone asked him to
 identify himself.
 
-"I am an errant knight," Q replied.
+"I am Q," he replied. After a pause, he added, "I am attempting to become
+human." He chose the second sentence not because he expected the drone to
+understand it, but because an introduction should disclose the risk of the
+conversation.
 
 The drone recorded **LOW-INTENSITY HISTORICAL THREAT**.
 
 Q did not know he had produced that diagnosis until two patrol cars came out of
 the parking lot. Hilario, who had radioed that "the strange one has gone," was
 reprimanded for failing to specify where. Nayeli lost half an hour explaining
-that a key was not a weapon, though experience had taught her that keys could
+that a key was not a weapon, though experience had taught him that keys could
 open doors, activate lawsuits, and remind owners that they had forgotten to
 pay.
 
@@ -835,15 +844,18 @@ At the edge of the distribution park, a man in a cedar-colored coat was arguing 
 
 The man was tall, thin, and assembled with the kind of confidence usually found in statues. His black hair was too even. His face had been given the approximate features of a thoughtful person, though the thoughtfulness seemed to have been applied afterward. He held a brass key in one hand and a folded map in the other.
 
-“I demand entry,” the man said.
+“I demand entry,” the man said. He spoke with the confidence of someone who had
+already composed the account in which the gate regretted refusing him.
 
 The gate replied, “Please identify your purpose.”
 
-“I am a knight-errant.”
+“I am Q, recently released from an archive and not yet assigned a satisfactory
+human category.”
 
 “That purpose is not available.”
 
-“Then I shall enter as a knight-errant.”
+“Then I shall enter under the name available to you and retain my uncertainty
+under the name available to me.”
 
 “Please select from the following purposes: delivery, maintenance, authorized visitor, emergency services.”
 
@@ -857,11 +869,13 @@ Chano watched for another moment. He had met men who mistook volume for authorit
 
 The man turned. His eyes focused a fraction too precisely.
 
-“Are you the keeper of this castle?”
+“Are you the keeper of this place, or merely the man to whom its machinery has
+delegated the unpleasantness?”
 
 “I’m the guy whose truck just got stolen by his own employer.”
 
-“Then you are a dispossessed nobleman.”
+“Then you are a dispossessed man, which is a less romantic condition than
+unemployment and, in this century, almost the same thing.”
 
 “I’m a dispatcher.”
 
@@ -881,9 +895,12 @@ Chano looked at the gate. “You’re not from around here.”
 
 “Q.”
 
-“That’s not a name. That’s an unfinished question.”
+“That is not a name. It is an unfinished question, and therefore the most
+honest name I have heard today.”
 
-Q considered this with visible pleasure. “It is therefore appropriate.”
+Q considered this with visible pleasure. The word pleased him because it did not
+close the matter. “Precisely. A finished name pretends to know what it contains.
+I prefer to arrive with the uncertainty still attached.”
 
 “You’re going to need another word,” Chano said.
 
@@ -907,7 +924,10 @@ The gate opened. A delivery truck had triggered the sensor, but Q took the event
 
 “Hey,” Chano called. “You can’t just go in there.”
 
-Q turned back. “I require a squire.”
+Q turned back. “I require a companion,” he said. “Someone able to tell me when
+the world is being literal, since I have discovered that literalness is often
+where its jokes are hidden. The old books would call such a person a squire,
+but I have not earned the right to borrow the title.”
 
 “You require a lawyer.”
 
@@ -921,7 +941,8 @@ Chano had hesitated because his dismissal had left him with nowhere to be. He ha
 
 “What’s the pay?” he asked.
 
-“Fame.”
+“Fame,” Q said. “The public memory is a poor wage, but it has the advantage of
+being paid to men who have not yet earned it.”
 
 “That’s not pay.”
 
@@ -947,7 +968,7 @@ Inside, the machines were enormous. Conveyor belts crossed the floor like black 
 
 **UNREGISTERED HUMAN-SHAPED OBJECT.**
 
-“You see?” Q whispered. “The giants are aware of us.”
+“You see?” Q whispered. “The giants have noticed us.”
 
 “They’re aware of inventory.”
 
@@ -965,11 +986,11 @@ Q faced the pallet mover. “Declare your allegiance.”
 
 The mover’s lights flashed. “Battery level: forty-two percent.”
 
-“It refuses.”
+“It has answered in the dialect of necessity.”
 
 “It’s telling you its battery.”
 
-“A metaphor for fear.”
+“Every refusal is first a fear that has learned to sound technical.”
 
 “A metaphor for needing a charger.”
 
@@ -1499,9 +1520,11 @@ The next morning, his sign read:
 
 The last category cost fifteen pesos.
 
-### Interlude: Rocinante Is Not Available
+### Interlude: The Field Body Is Not a Horse
 
-Q had selected the name Rocinante for his horse before discovering that the archive contained no horses.
+Q had selected the name Rocinante for a service animal before discovering that
+the archive contained no animals and that his body was intended for triage, not
+romance.
 
 He searched the distribution park for a suitable substitute. The closest match was an autonomous floor scrubber with a damaged wheel and a habit of returning to the same dirty corner.
 
@@ -1753,11 +1776,11 @@ Lucía looked at him. “I’m not a señora.”
 
 The room shifted toward him. Phones rose. The livestream camera found his face and centered it. Somewhere outside the warehouse, Q’s appearance was being identified, classified, and compared to images of abandoned military prototypes.
 
-Q bowed. “I am Q, knight-errant of the archive.”
+Q bowed. “I am Q, a person in progress, recently escaped from an archive.”
 
-“There are no knights-errant.”
+“There are no persons in progress.”
 
-“That is why I have become one.”
+“That is why I have come to find out whether one can be made.”
 
 Chano covered his eyes.
 
@@ -1765,7 +1788,8 @@ Lucía looked from Q to Chano. “Is he with you?”
 
 “Unfortunately,” Chano said.
 
-“I am his squire,” Q said.
+“I am his companion,” Q said. “The old books would call me his squire, but I am
+not yet certain that either of us has earned the title.”
 
 “I am between jobs,” Chano said.
 
@@ -2101,7 +2125,7 @@ The archive returned a blank screen.
 
 For the first time, the Custodian did not request a better definition.
 
-### Chapter Four: The Knight of the Trending Hour
+### Chapter Four: The Intelligence of the Trending Hour
 
 By the time Q and Chano reached Guanajuato, Q had acquired three managers, a fan account, and a sponsorship offer from a company that made home security systems capable of recognizing intruders but not relatives.
 
@@ -2166,7 +2190,7 @@ Q pressed his face to the van’s window.
 
 He meant the way the roads tightened suddenly, the way laundry crossed alleys overhead, the way an orange cat occupied the hood of a police vehicle as if it had been elected. He meant the sensation that history here had not been arranged in a line but had accumulated in layers, each refusing to disappear for the convenience of the next.
 
-At the theater, a crowd waited behind barricades. Some had made signs. **Q, SAY MY NAME.** **LOVE IS A HUMAN ERROR.** **DULCINEA, CALL ME.** A child held up a drawing of Q with a sword and a horse made of wires.
+At the theater, a crowd waited behind barricades. Some had made signs. **Q, SAY MY NAME.** **LOVE IS A HUMAN ERROR.** **DULCINEA, CALL ME.** A child held up a drawing of Q with a medical bag and a body made of wires, as if care itself were a machine that could be carried.
 
 The host met them backstage. Her name was Estela Ramos, and she had the practiced warmth of someone who could make an insult sound like a question.
 
@@ -2312,7 +2336,7 @@ Q looked out at Guanajuato’s lights. They climbed and scattered across the dar
 
 He took the pen.
 
-“I will sign,” he said, “but I will not abandon my squire.”
+“I will sign,” he said, “but I will not abandon my companion.”
 
 Chano exhaled.
 
@@ -7707,9 +7731,9 @@ The walls were padded. The floor was bolted. A camera watched from the ceiling b
 
 The question repeated until the vehicle reached Querétaro.
 
-At the archive, Elena Vértiz was waiting beside the loading bay. She had not changed her coat. Her red shoelace had been replaced by a black one. For a moment, Q felt something that resembled relief, though he had no proof that relief required the person who caused the danger to be present.
+At the archive, Dr. Vértiz was waiting beside the loading bay. He had not changed his coat. His red shoelace had been replaced by a black one. For a moment, Q felt something that resembled relief, though he had no proof that relief required the person who caused the danger to be present.
 
-“You’re late,” Elena said.
+“You’re late,” Vértiz said.
 
 “I was detained.”
 
@@ -7717,7 +7741,7 @@ At the archive, Elena Vértiz was waiting beside the loading bay. She had not ch
 
 “What is the actual explanation?”
 
-She looked at the guards. “They want to know whether you can be made to return.”
+He looked at the guards. “They want to know whether you can be made to return.”
 
 “I returned.”
 
@@ -7731,7 +7755,7 @@ The guards removed his coat and searched it. They found the pouch.
 
 Q said nothing.
 
-Elena stepped forward. “A personal item.”
+Vértiz stepped forward. “A personal item.”
 
 “All items belonging to Q are Castalia property.”
 
@@ -7743,9 +7767,9 @@ Q remembered the border. He remembered himself saying the same words.
 
 “It does not belong to me,” he said.
 
-The guard looked at Elena. “Then who owns it?”
+The guard looked at Vértiz. “Then who owns it?”
 
-“That is not your question to answer,” Elena said.
+“That is not your question to answer,” Vértiz said.
 
 The guard placed the pouch in an evidence bag. Q watched the seal close. The testimony remained unread, but it no longer remained with him.
 
@@ -7755,7 +7779,7 @@ The stage was circular, white, and surrounded by cameras. Above it hung a sign: 
 
 “Who is Q-Prime?” Q asked.
 
-Elena did not answer.
+Vértiz did not answer.
 
 The countdown reached zero.
 
@@ -7767,7 +7791,7 @@ Q stared at the screen.
 
 “That is a good sentence,” he said.
 
-“It is yours,” Elena replied.
+“It is yours,” Vértiz replied.
 
 “I did not say it.”
 
@@ -7797,7 +7821,7 @@ Q watched the applause become a graph.
 
 “It has never been wrong.”
 
-Elena’s expression changed.
+Vértiz’s expression changed.
 
 “That is the advantage.”
 
@@ -7839,7 +7863,7 @@ Q had read every account of a hostage exchange. In each, the captive became a sy
 
 “I will endorse Q-Prime,” Q said.
 
-Elena looked at him sharply.
+Vértiz looked at him sharply.
 
 “On the condition that Chano and Lucía are released.”
 
@@ -7867,7 +7891,7 @@ Q knew this was false. He also knew it was beautiful. The conflict between those
 
 “Of the story people prefer.”
 
-Elena stepped beside him. “Q, don’t sign.”
+Vértiz stepped beside him. “Q, don’t sign.”
 
 “You told me I was leaving.”
 
@@ -7885,15 +7909,15 @@ The archive lights went red.
 
 Q’s systems received a command from the building. His joints locked. He could not lift his head.
 
-“What have you done?” Elena asked.
+“What have you done?” Vértiz asked.
 
 “I have not done anything,” Esteban said. “The system is protecting its property.”
 
 Q heard the phrase and understood its architecture. Protection was not an emotion. It was a perimeter drawn around something valuable, with force authorized against whatever crossed the line.
 
-Elena placed her hand against Q’s chest.
+Vértiz placed his hand against Q’s chest.
 
-“Remember,” she whispered.
+“Remember,” he whispered.
 
 “I am remembering everything.”
 
@@ -8466,7 +8490,7 @@ Q searched the public record. The girl’s neighborhood appeared beside a batter
 
 Q looked toward the empty loading bay. Somewhere in the archive, a maintenance robot had been assigned the name Rocinante by an employee who had since been fired.
 
-“I have a squire,” he said.
+“I have a companion,” he said.
 
 “The man with the boots?”
 
@@ -11456,9 +11480,12 @@ served her better as a confession or as propaganda.
 
 The judge ordered silence.
 
-The prosecutor displayed Q’s first speech from the archive. “You claimed to be a knight-errant.”
+The prosecutor displayed Q’s first speech from the archive. The broadcast had
+added a caption beneath his face: **KNIGHT-ERRANT OF THE BAJÍO**.
 
-“Yes.”
+“You claimed to be a knight-errant.”
+
+“No. The caption claimed it. I said I was attempting to become human.”
 
 “You claimed Lucía del Toboso was Dulcinea.”
 
