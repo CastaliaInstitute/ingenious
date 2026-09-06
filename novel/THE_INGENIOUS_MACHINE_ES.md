@@ -2744,6 +2744,24 @@ Chano leyó la publicación en silencio.
 
 Q retiró la publicación. Las copias permanecieron.
 
+Nora leyó los comentarios bajo el hilo. Uno pedía el domicilio de Chano. Otro
+ofrecía buscarlo. Su abuela, cuya queja contra la compañía de agua figuraba en
+el registro público que Q había encontrado, le preguntó:
+
+—¿Le pediste permiso?
+
+—Yo sólo quería demostrar que tenía un nombre.
+
+—Un nombre no es una dirección.
+
+La abuela señaló la llave seca del patio.
+
+—Mi queja también es pública. El agua sigue sin llegar.
+
+Nora retiró el plano de asientos y escribió: **NO PUBLIQUÉIS LA DIRECCIÓN DEL
+HOMBRE**. La plataforma llamó a la operación **REDUCCIÓN VOLUNTARIA DEL ALCANCE**.
+El plano siguió circulando.
+
 Aquella noche preguntó a Beto si una corrección podía causar más daño que un
 registro inexacto.
 

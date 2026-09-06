@@ -2494,6 +2494,24 @@ Chano read the post in silence.
 
 Q removed the post. The copies remained.
 
+Nora read the comments beneath the thread. One asked for Chano’s address. Another
+offered to find it. Her grandmother, whose complaint against the water utility
+appeared in the public record Q had found, asked her:
+
+“Did you ask his permission?”
+
+“I only wanted to prove that he had a name.”
+
+“A name is not an address.”
+
+Her grandmother pointed to the dry faucet in the courtyard.
+
+“My complaint is public too. The water still hasn’t arrived.”
+
+Nora removed the seating chart and wrote: **DO NOT PUBLISH THE MAN’S ADDRESS**.
+The platform called the operation **VOLUNTARY REDUCTION OF REACH**. The chart
+continued to circulate.
+
 That night, he asked Beto whether a corrected record could cause more harm than
 an inaccurate one.
 
