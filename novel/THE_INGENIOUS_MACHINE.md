@@ -14104,5 +14104,3 @@ Lucía looked toward the dark server room.
 “Afterward, the archive arrived.”
 
 Outside, the Bajío wind moved over the old cooling towers. In the reading room, someone turned a page.
-
-The archive declined to label this an ending.

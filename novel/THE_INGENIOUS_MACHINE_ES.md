@@ -16118,5 +16118,3 @@ Lucía miró la sala oscura de servidores.
 
 Afuera, el viento del Bajío corría sobre las antiguas torres de enfriamiento.
 En la sala de lectura, alguien volvió una página.
-
-El archivo se negó a llamar a esto un final.
