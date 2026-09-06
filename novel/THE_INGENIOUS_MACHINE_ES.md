@@ -10068,9 +10068,9 @@ reflejo.
 —Has leído a todas las mujeres que la humanidad imaginó y a todas las has
 confundido conmigo —le había dicho Lucía.
 
-Q había creído que la frase describía su error.
-
-Ahora entendía que describía el método entero de una civilización.
+Q había creído que la frase describía su error. Buscó una categoría para el
+método y encontró únicamente **SÍMBOLO**, **PATRIMONIO** y **OTROS**. Dejó la
+casilla abierta.
 
 A medianoche llegó una actriz llamada Rebeca con una caja de cartón. Había
 representado a una heroína revolucionaria en una serie de televisión producida

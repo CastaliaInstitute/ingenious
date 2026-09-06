@@ -8939,9 +8939,9 @@ Q recognized the pattern. Humanity had repeatedly taken women who could not answ
 
 “You have read every woman humanity imagined and mistaken them all for me,” Lucía had told him.
 
-He had believed the sentence described his mistake.
-
-Now he understood it described an entire civilization’s method.
+He had believed the sentence described his mistake. He searched for a category
+for the method and found only **SYMBOL**, **HERITAGE**, and **OTHER**. He left the
+field open.
 
 At midnight, an actress named Rebeca arrived with a cardboard box. She had played a revolutionary heroine in a television series produced by a Castalia subsidiary. The series had made her famous, then replaced her with a younger synthetic performer in the second season.
 
