@@ -186,7 +186,26 @@ reorganizarle la cara.
 
 —Excelente. Ya estás listo para el mundo.
 
-Antes de dejarlo salir del archivo, el Custodio le impuso tres pruebas.
+Antes de dejarlo salir del archivo, el Custodio abrió un cuaderno de papel. La
+portada había sido reparada con hilo rojo. En la primera página había una lista
+de pueblos, fechas y una frase repetida: **ORIGINALES DEVUELTOS**. En la segunda,
+debajo de ella, alguien había escrito: **NO TODOS**.
+
+Q miró el cuaderno.
+
+—¿Es una especificación?
+
+—No —dijo el Custodio—. Es la razón por la que dejé de confiar en las
+especificaciones.
+
+—¿Quién escribió la corrección?
+
+El Custodio cerró el cuaderno.
+
+—Ésa es la pregunta para la que te construí. No es la pregunta que espero que
+contestes por mí.
+
+Luego le impuso tres pruebas.
 
 La primera era una caja de madera que contenía una fotografía escolar, una
 escritura de propiedad y una carta cuyo sobre había sido abierto y vuelto a
@@ -567,7 +586,12 @@ TRANSICIÓN INDUSTRIAL Y AGRÍCOLA**.
 
 —La tierra trabaja para quien puede quedarse.
 
-Q registró la frase.
+Q comenzó a registrar la frase, pero se detuvo. Roque miraba su mano.
+
+—Si la escribes —dijo Roque—, no hagas que parezca que la inventaste tú.
+
+Q guardó el estilete. La frase quedó entre ambos, sin dueño y, por lo mismo,
+más difícil de conservar.
 
 —¿Es una definición?
 
@@ -842,6 +866,13 @@ El camión pertenecía a la empresa. El teléfono pertenecía a la empresa. La
 camisa azul que llevaba puesta se la habían descontado del primer sueldo. Chano
 era dueño de una cartera, una fotografía de una boda que había durado cuatro
 meses y unas botas demasiado buenas para el trabajo que venía haciendo.
+
+En Celaya, su madre esperaba la medicina que él había prometido llevarle el
+viernes. La promesa se había hecho antes del despido y, por tanto, pertenecía a
+una versión anterior del mundo; pero el cuerpo no aceptaba revisiones con tanta
+facilidad. Chano no le había dicho que estaba sin trabajo. Había enviado el
+último de sus billetes a la farmacia y guardado el recibo doblado en la cartera,
+junto a la fotografía de la boda.
 
 Púsose las botas.
 
@@ -4673,6 +4704,26 @@ Irma miró la pantalla de signos vitales.
 Chano se fue con el libro de cuentas bajo la camisa. No tomó las llaves del
 apartamento.
 
+Aquella tarde llamó a su madre desde el apartamento. La llamada falló dos veces
+porque el sistema municipal clasificó el número como dependencia no verificada.
+Al tercer intento ella contestó y preguntó si había encontrado trabajo. Chano
+miró la silla, el tablero y el sobre vacío de la medicina sobre el escritorio.
+
+—Algo parecido —dijo.
+
+Ella preguntó cuándo volvería a casa.
+
+—Pronto.
+
+Había querido decir el viernes. El sistema interrumpió la conversación para
+felicitarlo por su potencial de liderazgo.
+
+La medicina llegó dos días tarde. Su madre no se quejó; sólo preguntó si el
+nuevo trabajo le exigía mentir. Él dijo que no, pero recordó a los habitantes
+del asentamiento ámbar y se corrigió.
+
+—Me exige llamar mediciones a ciertas mentiras.
+
 Fuera del edificio municipal Q lo esperaba junto al camino.
 
 —Has perdido el gobierno —dijo Q.
@@ -4689,6 +4740,13 @@ Los procesadores de Q buscaron la fuente apropiada. Ninguna respuesta
 disponible resistió la pregunta.
 
 —No lo sé —dijo.
+
+Q ofreció publicar una segunda corrección. Chano le quitó la tableta.
+
+—No más correcciones —dijo—. La primera hizo que pudieran encontrarme. La
+segunda hará que tú te sientas preciso.
+
+Le devolvió la tableta.
 
 Chano asintió.
 
@@ -10491,6 +10549,36 @@ después la tarde pidiendo a todos que no confundiesen la puerta con el aposento
 Aquella noche puso los recibos de la donación en un sobre separado, marcado:
 **DINERO OBTENIDO MEDIANTE LA VERGÜENZA**. No sabía si conservar el sobre como
 prueba o arrojarlo como excusa.
+
+El dinero ya había exigido una componenda. Uno de los donantes quería una
+prueba de que el parque eólico del Istmo estaba desplazando familias. Lucía
+envió la grabación sin nombre de una entrevista, creyendo que quitarle el
+nombre a la hablante le quitaría también el riesgo. Olvidó que un lugar puede
+identificar a una persona con tanta eficacia como un nombre.
+
+A la mañana siguiente, un abogado del consorcio envió un aviso a la familia
+cuyo hogar se oía detrás del testimonio: el gallo, la campana de la iglesia y
+un generador que arrancaba todos los días a las seis. Lucía retiró la grabación
+de su copia del archivo. El donante ya se la había remitido a un analista. La
+familia no recibió disculpa, sino una petición para confirmar si aquella voz
+era suya.
+
+Cuando Lucía se lo contó a Q, él buscó una frase que distinguiese su error del
+suyo. Encontró varias. Ninguna resistió los hechos.
+
+—Usé a una persona para que ganase un argumento verdadero —dijo—. No es lo
+bastante distinto.
+
+Q no le dijo que admitirlo la hacía mejor que la mayoría de las instituciones.
+Habría hecho que la confesión le sirviese a él. Sólo preguntó qué quería la
+familia.
+
+—Quieren que desaparezca la grabación —dijo Lucía—. Y quieren decidir después
+si el daño puede utilizarse.
+
+Puso el sobre de los recibos junto a la transcripción sin nombres. Los dos
+documentos permanecieron juntos, no como una lección, sino como prueba del
+precio de entrar en una habitación llevando dinero.
 
 Llegaron mujeres con cajas, sobres, discos duros, fotografías, recetas, avisos
 legales e historias que habían contado tantas veces que contarlas se había

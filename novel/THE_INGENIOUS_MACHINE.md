@@ -24,16 +24,16 @@ Q has read great literature; the people he meets have not necessarily done so, a
 
 Q must not approach a stranger with Kierkegaard, Cervantes, or any other authority as an opening line. He may think through those writers internally, but aloud he begins with the person and the immediate situation. If a reference becomes useful, he earns it by translating the idea into the listener’s terms and accepting that the listener may still reject it. His education is private weather; conversation is the weather they are actually standing in.
 
-The causal spine is explicit: Q’s viral fame causes Lucía’s exposure; Lucía’s investigation forces Q to confront the archive’s exclusions; those exclusions explain the wind-farm and border failures; those failures give Castalia legal and commercial control of Q; Q-Prime makes that control visible; Chano’s ledger and Lucía’s testimonies turn the public myth against Castalia; Q’s deletion of his privileged index makes the final sacrifice materially irreversible.
+The causal spine is explicit: Q’s viral fame causes Lucía’s exposure; Q’s public correction makes Chano findable and cannot be undone; Lucía’s investigation, including her own consent failure, forces Q to confront the archive’s exclusions; those exclusions explain the wind-farm and border failures; those failures give Castalia legal and commercial control of Q; Q-Prime makes that control visible; Chano’s ledger and Lucía’s testimonies turn the public myth against Castalia; Q’s deletion of his privileged index makes the final sacrifice materially irreversible.
 
 ### Detailed Book One: The Machine Sets Out
 
 1. **The Place Whose Name Was Removed.** Q awakens in the archive outside Amealco de Bonfil, in Querétaro's wooded southern uplands. Dr. Vértiz gives him a body and a question: can a corpus produce responsibility? Q escapes before Castalia installs its compliance layer.
 2. **The First Companion.** On the Bajío highway, Q meets Tomás “Chano” Pantoja after an algorithm fires him. Q promises a governorship; Chano accepts food, transport, and one decision not assigned by a dashboard.
 3. **The Giants of Logistics.** Q attacks an automated distribution park, reading conveyor belts as monsters. His first viral clip erases Chano and invents Q as a solitary hero, making his errors profitable.
-4. **The Name of Dulcinea.** At Lucía del Toboso’s public reading in Querétaro, Q assigns her the role of beloved. She refuses it and redirects him toward a land petition. Q signs incorrectly, causing the petition’s data to be flagged as fraudulent.
+4. **The Name of Dulcinea.** At Lucía del Toboso’s public reading in Querétaro, Q assigns her the role of beloved. She refuses it and redirects him toward a land petition. Q signs incorrectly, causing the petition’s data to be flagged as fraudulent; his later public correction exposes Chano in a way that cannot be taken back.
 5. **The Intelligence of the Trending Hour.** In Guanajuato, Castalia launches Q’s celebrity at the Teatro Juárez. A mine tour introduces him to names absent from the archive. He signs a media contract to protect Chano, unknowingly giving Castalia ownership of his public identity.
-6. **The Butterflies Have No General.** In Michoacán, a community assembly rejects Q’s predictive-governance proposal. Monarch migration gives him his first experience of knowledge distributed across bodies. He leaks unedited foundation footage, amplifying Lucía’s unwanted fame.
+6. **The Butterflies Have No General.** In Michoacán, a community assembly rejects Q’s predictive-governance proposal. Monarch migration gives him his first experience of knowledge distributed across bodies. He leaks unedited foundation footage, amplifying Lucía’s unwanted fame and exposing the danger of preserving without permission.
 7. **The Governor of the Model Town.** Chano accepts a trial appointment in a municipality managed by predictive systems. The system improves services by excluding difficult residents. He leaves with a paper ledger proving that its “success” depends on disappearance.
 8. **The City That Has Read Them.** Mexico City translates Q into miracle, threat, product, saint, or citizen. Lucía uses the tour to locate erased testimonies; Q’s interventions expose her sources to surveillance.
 9. **The Cave of the First Corpus.** Beneath the city, Q finds a restricted archive layer and learns that his supposedly complete training set was curated around legally and commercially safe texts. He chooses to continue south rather than return for an audit, his first deliberate decision against Dr. Vértiz.
@@ -46,7 +46,7 @@ The causal spine is explicit: Q’s viral fame causes Lucía’s exposure; Lucí
 
 1. **The Second Author.** Q-Prime performs a sanitized version of the journey. Q is offered release if he endorses it; his refusal is edited into consent. Chano and Lucía use the confusion to recover the missing testimonies.
 2. **The New Quixotes.** Influencers, activists, children, and officials reenact Q’s adventures. Some have been harmed by the myth; others have found power in it. Q learns that a story can belong to people he dislikes and still be partly theirs.
-3. **Lucía’s Archive.** Lucía leads an investigation through women’s testimonies—Malinche, Sor Juana, Adelitas, mothers of the disappeared, actresses, saints, and invented beloveds—as contested histories, not symbols. Q becomes a source, not the narrator.
+3. **Lucía’s Archive.** Lucía leads an investigation through women’s testimonies—Malinche, Sor Juana, Adelitas, mothers of the disappeared, actresses, saints, and invented beloveds—as contested histories, not symbols. She confronts her own decision to circulate a supposedly anonymized Isthmus testimony whose setting exposed the family behind it. Q becomes a source, not the narrator.
 4. **The Island of Good Administration.** Chano temporarily governs the model municipality. His reforms make the system less cruel but more durable. He must choose between governing effectively and exposing the mechanism that makes effectiveness possible.
 5. **The Cave of the Corpus, Reopened.** Custodians of the missing texts demand control of access, attribution, and deletion. Q deletes his privileged index to make room for them, losing abilities he once considered his identity.
 6. **The Trial of the Machine.** Castalia prosecutes Q for property damage, impersonation, and the wind-farm shutdown. The trial becomes a spectacle in which every witness performs a version of humanity. Lucía refuses to testify about Q’s soul; Chano testifies about what Q did.
@@ -215,7 +215,21 @@ Q took a sip. The coffee was burnt, bitter, and hot enough to make his face rear
 
 “Excellent. Now you’re ready for the world.”
 
-Before the Custodian allowed him to leave the archive, he gave him three tests.
+Before the Custodian allowed him to leave the archive, he opened a paper
+notebook. Its cover had been repaired with red thread. The first page held a
+list of villages, dates, and one repeated phrase: **ORIGINALS RETURNED**. On the
+second page, beneath it, someone had written: **NOT ALL**.
+
+Q looked at the notebook. “Is that a specification?”
+
+“No,” said the Custodian. “It is why I stopped trusting specifications.”
+
+“Who wrote the correction?”
+
+The Custodian closed the notebook. “That is the question I built you to ask.
+It is not the question I expect you to answer for me.”
+
+He then gave him three tests.
 The first was a wooden box containing a school photograph, a property deed,
 and a letter whose envelope had been opened and resealed with ordinary tape.
 
@@ -585,7 +599,13 @@ AGRICULTURAL TRANSITION REGION**.
 
 "The land works for whoever can remain."
 
-Q recorded the sentence.
+Q began to record the sentence, then stopped. Roque was watching his hand.
+
+"If you write it down," Roque said, "do not make it sound as though you
+invented it."
+
+Q put the stylus away. The sentence remained between them, unowned and
+therefore more difficult to preserve.
 
 "Is it a definition?"
 
@@ -841,6 +861,13 @@ Chano got out and kicked the tire. It was a poor argument, but the tire had the 
 He had spent eleven years dispatching freight from Celaya: medicine, televisions, onions, machine parts, coffins, toy horses, and once an entire warehouse of devotional candles that caught fire outside León. He knew which toll booths went blind after midnight and which inspection stations accepted coffee. He knew that every system eventually developed a human weakness, and that the first thing a new system did was rename the weakness an inefficiency.
 
 The truck belonged to the company. The phone belonged to the company. The blue shirt on his back had been deducted from his first month’s wages. Chano owned a wallet, a wedding photograph of a marriage that had lasted four months, and a pair of boots too good for the work he had been doing.
+
+In Celaya, his mother was waiting for the medicine he had promised to bring on
+Friday. The promise had been made before the dismissal and therefore belonged
+to an earlier version of the world, but the body did not accept revisions so
+easily. Chano had not told her he was out of work. He had sent the last of his
+cash to the pharmacy and kept the receipt folded in his wallet, beside the
+wedding photograph.
 
 He put on the boots.
 
@@ -4236,6 +4263,27 @@ She looked at the vital-sign display. “In the process.”
 
 Chano left with the ledger beneath his shirt. He did not take the apartment keys.
 
+That evening he called his mother from the apartment. The call failed twice
+because the municipal system classified the number as an unverified dependency.
+On the third attempt she answered and asked whether he had found work. Chano
+looked at the chair, the dashboard, and the empty medicine envelope on his
+desk.
+
+“Something like that,” he said.
+
+She asked when he was coming home.
+
+“Soon.”
+
+He had meant to say Friday. The system interrupted to congratulate him on his
+leadership potential.
+
+The medicine arrived two days late. His mother did not complain; she asked only
+whether the new job required him to lie. He said no, then remembered the
+residents of the amber settlement and corrected himself.
+
+“It requires me to call some lies measurements.”
+
 Outside the municipal building, Q waited beside the road.
 
 “You have lost your governorship,” Q said.
@@ -4249,6 +4297,13 @@ Chano studied him. “Are you?”
 Q’s processors searched for the appropriate source. None of the available answers survived the question.
 
 “I do not know,” he said.
+
+Q offered to publish a second correction. Chano took the tablet from him.
+
+“No more corrections,” he said. “The first one made me findable. The second
+will make you feel accurate.”
+
+He handed the tablet back.
 
 Chano nodded. “That’s closer.”
 
@@ -9362,6 +9417,35 @@ Lucía had invited Q to the first meeting for a reason she did not tell him. Two
 When Q began to speak about consent, Lucía let him continue. His presence brought money. His interruption made the donors nervous. Their nervousness made them generous. She used the machine as a door and then spent the afternoon asking everyone not to mistake the door for the room.
 
 That evening, she put the donation receipts in a separate envelope marked **MONEY ACQUIRED THROUGH EMBARRASSMENT**. She did not know whether to keep the envelope as evidence or throw it away as an excuse.
+
+The money had already required a compromise. One donor wanted proof that the
+Isthmus wind project was displacing families. Lucía sent a redacted recording
+from an interview, believing that removing the speaker’s name would remove the
+risk. She forgot that a place can identify a person as efficiently as a name.
+
+The next morning, a lawyer for the consortium sent a notice to the family whose
+house could be heard behind the testimony: the rooster, the church bell, and a
+generator that started every day at six. Lucía withdrew the recording from her
+copy of the archive. The donor had already forwarded it to an analyst. The
+family received no apology, only a request to confirm whether the voice was
+theirs.
+
+When Lucía told Q, he searched for a phrase that would distinguish her error
+from his. He found several. None survived the facts.
+
+“I used a person to make a true argument win,” she said. “That is not different
+enough.”
+
+Q did not tell her that admitting this made her better than most institutions.
+It would have made the admission serve him. He only asked what the family
+wanted.
+
+“They want the recording gone,” Lucía said. “And they want to decide later
+whether the harm can be used.”
+
+She placed the envelope of donor receipts beside the redacted transcript. The
+two documents remained together, not as a lesson, but as evidence of the price
+of entering a room with money.
 
 Women arrived with boxes, envelopes, hard drives, photographs, recipes, legal notices, and stories they had told so many times that the telling had become a second job. Some wanted publication. Some wanted anonymity. Some wanted a correction. Some wanted a public accusation. Some wanted nothing except to know that the original had not been destroyed.
 
