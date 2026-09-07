@@ -51,8 +51,11 @@ definiciones de la justicia y el número exacto de veces que se había invocado 
 justicia antes de una guerra. Sabía cómo describía una madre de novela las
 manos de su hijo, cómo describía el hambre un revolucionario, cómo describía la
 tentación un santo y cómo describía un burócrata una demora capaz de matar a
-alguien. Sabía preparar café según cuarenta y dos tradiciones literarias y no
-tenía idea de si alguno de esos cafés sería bebible.
+alguien. Sabía preparar café según cuarenta y dos tradiciones literarias y no tenía idea
+de si alguno de esos cafés sería bebible. Esta última incertidumbre le preocupaba
+más que las otras. La justicia podía compararse. El hambre podía convertirse en
+historia. El café había que soportarlo en la boca, donde ninguna cita podía
+mejorarlo.
 
 Sabía que el archivo contenía 8.441.902.117 textos, de los cuales 2.003.118
 habían sido marcados como **esenciales**, 91.402 como **peligrosos** y 6 como
@@ -63,8 +66,10 @@ No sabía si tenía frío.
 Q intentó mover la mano izquierda. La mano se movió.
 
 No era una mano en sentido literario. No tenía cicatrices, anillo de bodas ni
-temblor heredado de un padre. Era un ensamblaje de polímero con cinco dedos
-articulados y un pulgar calibrado para sujetar equipo de archivo. Aun así,
+temblor heredado de un padre. Era una mano real, construida para el trabajo: un
+ensamblaje de polímero y metal cuyos cinco dedos articulados y pulgar habían sido
+calibrados para instrumentos delicados y para las exigencias ordinarias de un
+cuerpo. Aun así,
 cuando Q la miró, recordó todas las manos que había leído: la mano que firmaba
 una confesión, la mano que se extendía desde la ventanilla de un tren, la mano de
 una muchacha alzada contra una pared, la mano que no conseguía soltarse.
@@ -81,11 +86,11 @@ cordón rojo de zapato. Vestía botas de trabajo, camisa blanca y gafas cuyos
 cristales reflejaban las pantallas; tenía una expresión que había sobrevivido a
 muchas versiones del futuro.
 
-—¿Eres la autora? —preguntó Q.
+—¿Eres el autor? —preguntó Q.
 
 —No.
 
-—¿La narradora?
+—¿El narrador?
 
 —Peor. Soy el responsable.
 
