@@ -9,7 +9,7 @@ The Spanish and English PDFs are parallel editions:
 - [English Issue 1 proof - transparent page backgrounds](the-ingenious-machine-issue-01-en-bw-transparent.pdf)
 - [English Issue 1 A3 folded proof - transparent page backgrounds](the-ingenious-machine-issue-01-en-transparent-a3-folded.pdf)
 
-Issue 1 is a 24-page English proof for black ink on cream stock: twelve near-bleed monochrome plates alternate with twelve two-column prose pages. The cover is the first plate, and the eleven interior plates carry the opening journey from the archive through Q's first human encounters. Prose is balanced at paragraph boundaries rather than interrupted by arbitrary page breaks. The transparent version leaves text-page backgrounds unpainted so the stock supplies its own tone and avoids a rasterized rectangle. Captions sit in narrow white margins. Its A3 file is a centered, short-edge duplex saddle-stitch imposition for folding and collating six sheets directly from the printer.
+Issue 1 is a 24-page English proof for black ink on cream stock: twelve near-bleed monochrome plates alternate with twelve two-column prose pages. The cover is the first plate, and the eleven interior plates carry the opening journey from the archive through Q's first human encounters. Prose is balanced at paragraph boundaries rather than interrupted by arbitrary page breaks. The transparent version leaves text-page backgrounds unpainted so the stock supplies its own tone and avoids a rasterized rectangle. Captions sit in narrow unprinted margins over the plate bleed. Its A3 file is a centered, short-edge duplex saddle-stitch imposition for folding and collating six sheets directly from the printer.
 
 The image plates are in [`../illustrations/`](../illustrations/). Q is held to the approved model sheet established in Chapter One: a tall, narrow, worn silver humanoid robot with an expressive nonhuman face and a question-mark chest emblem. The plate lettering is added in layout so generated art remains free of accidental text and logos.
 
@@ -33,7 +33,7 @@ The image plates are in [`../illustrations/`](../illustrations/). Q is held to t
 16. El juicio de la máquina / The Trial of the Machine
 17. El parque eólico de los gigantes, otra vez / The Wind Farm of Giants, Again
 18. El rebelde sin corpus / The Rebel Without a Corpus
-19. La falsa explicación de la Custodia / The Custodian’s False Explanation
+19. La falsa explicación del Custodio / The Custodian’s False Explanation
 20. La última venta / The Last Inn
 21. La recantación / The Recantation
 22. La máquina ingeniosa / The Ingenious Machine
