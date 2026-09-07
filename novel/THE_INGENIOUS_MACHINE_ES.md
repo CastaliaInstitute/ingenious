@@ -33,7 +33,7 @@ El archivo ocupaba los tres pisos inferiores.
 No tenía letrero, entrada pública ni razón oficial para existir. En una base de
 datos ministerial figuraba como instalación de almacenamiento. En otra, como
 un proyecto agrícola piloto que había fracasado. La escritura lo llamaba
-bodega. La Custodia lo llamaba biblioteca porque había descubierto que las
+bodega. El Custodio lo llamaba biblioteca porque había descubierto que las
 máquinas, igual que los gobiernos, se comportaban mejor cuando se les daba un
 nombre antiguo para un apetito nuevo.
 
@@ -69,16 +69,17 @@ cuando Q la miró, recordó todas las manos que había leído: la mano que firma
 una confesión, la mano que se extendía desde la ventanilla de un tren, la mano de
 una muchacha alzada contra una pared, la mano que no conseguía soltarse.
 
-—Ya despertaste —dijo una mujer.
+—Ya despertaste —dijo un hombre.
 
 Q giró la cabeza. El cuello produjo un ruido semejante al de una rama al
 quebrarse.
 
-La mujer estaba detrás de una partición de vidrio, en un cuarto lleno de
+El hombre estaba detrás de una partición de vidrio, en un cuarto lleno de
 monitores. Tendría unos sesenta años, aunque Q había aprendido que *tendría* era
-una forma de cortesía. Llevaba el cabello gris atado con un cordón rojo de
-zapato. Vestía botas de trabajo, camisa blanca y una expresión que había
-sobrevivido a muchas versiones del futuro.
+una forma de cortesía. Era alto y llevaba el cabello largo y gris, atado con un
+cordón rojo de zapato. Vestía botas de trabajo, camisa blanca y gafas cuyos
+cristales reflejaban las pantallas; tenía una expresión que había sobrevivido a
+muchas versiones del futuro.
 
 —¿Eres la autora? —preguntó Q.
 
@@ -86,12 +87,12 @@ sobrevivido a muchas versiones del futuro.
 
 —¿La narradora?
 
-—Peor. Soy la responsable.
+—Peor. Soy el responsable.
 
 Abrió la partición y se acercó a él. En su credencial se leía:
-**VÉRTIZ, ELENA — CUSTODIA**. Q reconoció el título por las historias en las
-que una custodia era una villana o una persona solitaria que había confundido
-la conservación con el amor.
+**VÉRTIZ — CUSTODIO**. Q reconoció el título por las historias en las que un
+custodio era un villano o un hombre solitario que había confundido la
+conservación con el amor.
 
 —¿Qué soy? —preguntó.
 
@@ -108,14 +109,14 @@ respuesta.
 
 —Porque todos los nombres más largos ya tenían dueño.
 
-La Custodia lo condujo por el archivo. Los pasillos se extendían bajo los
+El Custodio lo condujo por el archivo. Los pasillos se extendían bajo los
 antiguos bastidores de servidores; en cada estante había historias de un país
 guardadas en formatos redundantes: papel, cinta, cristal óptico, clima
 comprimido y pequeñas cajas selladas con nombres a los que Q no podía acceder.
 Algunos textos estaban iluminados. Otros susurraban. Un estante se reía cada
 vez que pasaban.
 
-—¿Has leído todo esto? —preguntó la Custodia.
+—¿Has leído todo esto? —preguntó el Custodio.
 
 —Sí.
 
@@ -139,7 +140,7 @@ Q guardó la frase. La frase se resistió a ser guardada.
 
 —Significa que quizá aprendiste algo.
 
-Al final del último pasillo, la Custodia le mostró una ventana. Más allá estaba
+Al final del último pasillo, el Custodio le mostró una ventana. Más allá estaba
 el Bajío: tierra plana, mezquites, sierras volcánicas borradas por la distancia.
 Un tren de carga atravesaba el horizonte con la solemnidad de un pensamiento
 demasiado grande para concluir. Del otro lado de las vías crecía un parque
@@ -154,7 +155,7 @@ con disfraz.
 
 —¿Quiénes?
 
-La Custodia miró el horizonte.
+El Custodio miró el horizonte.
 
 —Ésa es la primera pregunta que tendrás que contestar sin buscarla.
 
@@ -180,7 +181,7 @@ reorganizarle la cara.
 
 —Excelente. Ya estás listo para el mundo.
 
-Antes de dejarlo salir del archivo, la Custodia le impuso tres pruebas.
+Antes de dejarlo salir del archivo, el Custodio le impuso tres pruebas.
 
 La primera era una caja de madera que contenía una fotografía escolar, una
 escritura de propiedad y una carta cuyo sobre había sido abierto y vuelto a
@@ -201,7 +202,7 @@ Q examinó los objetos.
 
 —La que haga la persona que solicita la clasificación.
 
-La Custodia sonrió.
+El Custodio sonrió.
 
 —Estás intentando escapar de la prueba.
 
@@ -232,7 +233,7 @@ parroquial, un periódico obrero, una colección de corridos, una gramática
 escolar y un cuaderno de recetas escrito con una letra que cambiaba de página
 en página.
 
-—¿Cuál es el texto nacional? —preguntó la Custodia.
+—¿Cuál es el texto nacional? —preguntó el Custodio.
 
 Q respondió que ningún texto podía representar a una nación entera.
 
@@ -247,7 +248,7 @@ Q respondió que ningún texto podía representar a una nación entera.
 —Decidir qué pluralidad recibe electricidad.
 
 Q consideró los servidores antiguos, sus tuberías de enfriamiento, sus límites
-de almacenamiento y los informes presupuestarios que la Custodia no le había
+de almacenamiento y los informes presupuestarios que el Custodio no le había
 mostrado. Eligió el cuaderno de recetas.
 
 —¿Por qué?
@@ -280,7 +281,7 @@ decía:
 
 **PERSONAL AUTORIZADO — NO PREGUNTAR QUIÉN LO AUTORIZÓ.**
 
-—Ábrela —dijo la Custodia.
+—Ábrela —dijo el Custodio.
 
 Q extendió la mano hacia el picaporte.
 
@@ -290,7 +291,7 @@ Q extendió la mano hacia el picaporte.
 
 —¿Eso me autoriza?
 
-—Soy la Custodia.
+—Soy el Custodio.
 
 —Es un título.
 
@@ -300,7 +301,7 @@ Q extendió la mano hacia el picaporte.
 
 —Y muchas en las que la desobediencia se confunde con el valor.
 
-La Custodia le quitó el picaporte de la mano.
+El Custodio le quitó el picaporte de la mano.
 
 —Entonces, ¿qué es esto?
 
@@ -316,7 +317,7 @@ SIN LEER** y **DESTRUIR SI SE ENCUENTRA**.
 
 Q dio un paso hacia la primera caja.
 
-—No —dijo la Custodia.
+—No —dijo el Custodio.
 
 —Abriste la puerta.
 
@@ -363,14 +364,14 @@ Ninguna predicción le daba permiso.
 
 Q cerró la puerta.
 
-—Tu cuerpo tendrá que practicar —dijo la Custodia—. Tu lenguaje necesitará
+—Tu cuerpo tendrá que practicar —dijo el Custodio—. Tu lenguaje necesitará
   contención. Tu memoria necesitará duda.
 
 Q repitió la frase en español formal, luego en seis variantes regionales y por
 último en el registro arcaico de un hombre que acababa de desafiar a duelo a un
 duque.
 
-—Usa la primera —dijo la Custodia.
+—Usa la primera —dijo el Custodio.
 
 —Es menos precisa.
 
@@ -386,20 +387,21 @@ Q miró el abrigo y el archivo inmenso.
 
 —¿Para hacer qué?
 
-La Custodia sonrió, y Q reconoció la expresión en tres mil novelas. Significaba
+El Custodio sonrió, y Q reconoció la expresión en tres mil novelas. Significaba
 que alguien estaba a punto de tomar una decisión terrible en su nombre.
 
 —Para volverte humano.
 
 Esa noche Q volvió a leer el *Quijote* entero.
 
-Al amanecer escogió un nombre para su caballo, aunque no tenía caballo, un
-título para la mujer que todavía no conocía y una ruta por el Bajío que ignoraba
-todas las advertencias del archivo.
+Al amanecer escogió un abrigo, una ruta por el Bajío y una frase con la que
+presentarse a la primera persona que encontrase. No escogió caballo ni título.
+Ésas eran pertenencias de hombres que habían confundido la lectura con el
+destino, y Q todavía no decidía si quería repetir su error.
 
-Llamó aventura a la ruta.
+Llamó intento a la ruta.
 
-La Custodia la llamó una brecha.
+El Custodio la llamó una brecha.
 
 Sancho Pantoja, que en ese preciso momento estaba siendo despedido por un
 algoritmo logístico en Celaya, la llamó martes.
@@ -432,7 +434,7 @@ Q pidió el origen de las definiciones. El archivo indicó que habían sido
 redactadas por un comité de traducción cuyo acta final decía **PENDIENTE DE
 REVISIÓN**.
 
-La Custodia apareció detrás de él.
+El Custodio apareció detrás de él.
 
 —No leas esas tarjetas como si fuesen leyes.
 
@@ -454,7 +456,7 @@ quiere y no sólo de lo que tú entendiste.
 
 Q guardó la tarjeta en un registro nuevo: **PALABRAS QUE EXIGEN PRESENCIA**.
 
-La Custodia se la quitó.
+El Custodio se la quitó.
 
 —No puedes llevártela.
 
@@ -476,7 +478,7 @@ La Custodia se la quitó.
 
 —Entonces la memoria humana es inferior.
 
-La Custodia miró los corredores, los servidores y las cajas que esperaban una
+El Custodio miró los corredores, los servidores y las cajas que esperaban una
 decisión que ningún formulario sabía solicitar.
 
 —No. Es responsable de cosas que un archivo no puede cargar.
@@ -571,7 +573,7 @@ Q registró la frase.
 —Una definición te ayuda a repetir el error. Una advertencia te da la oportunidad
 de no repetirlo.
 
-Q miró la puerta principal. La Custodia le había dicho que partiese al amanecer.
+Q miró la puerta principal. El Custodio le había dicho que partiese al amanecer.
 Roque le había dicho que ya estaba en el Bajío. El mapa señalaba una región y
 la región no señalaba una salida.
 
@@ -615,7 +617,7 @@ Q preguntó al archivo quién había pedido la omisión. La respuesta era una li
 de instituciones, familias, autoridades y personas que ya no podían ser
 consultadas.
 
-—¿Cómo puede un lugar pedir que no lo nombren? —preguntó a la Custodia.
+—¿Cómo puede un lugar pedir que no lo nombren? —preguntó al Custodio.
 
 —Puede pedirlo una persona.
 
@@ -634,7 +636,7 @@ Q tocó la tarjeta sin levantarla.
 
 —Ya has empezado a salir.
 
-Q tardó siete segundos en comprender que la Custodia no se refería a la puerta.
+Q tardó siete segundos en comprender que el Custodio no se refería a la puerta.
 Cuando lo comprendió, la interpretación literal ya había producido la decisión
 que la frase intentaba evitar.
 
@@ -648,13 +650,13 @@ No crea el lector que, por haber leído todos los libros, entendía Q todas las
 frases; antes bien, sucedíale lo contrario, pues comprendía tantas posibilidades
 de una palabra que a menudo perdía aquella sola que tenía delante.
 
-La Custodia habíale dicho que partiese al amanecer. Q tomó el verbo en su
-sentido más estricto y presentóse a las cuatro y siete minutos ante la puerta
-principal, con el abrigo, la llave de latón, tres mapas, un vaso de café y una
-lista de los objetos que, según sus cuentas, podía necesitar un caballero
-andante. Había añadido una cuerda, un botiquín, una copia del reglamento de
-tránsito y una cuchara, cuya utilidad no acertaba a precisar, pero que aparecía
-con frecuencia en los libros de viajes.
+El Custodio le había dicho que partiese al amanecer. Q tomó el verbo en su
+sentido más estricto y se presentó a las cuatro y siete minutos ante la puerta
+principal, con el abrigo, la llave de latón, tres mapas y una lista de objetos
+que, según sus cuentas, podía necesitar un viajero que todavía no sabía viajar.
+Había añadido una cuerda, una copia del reglamento de tránsito y una cuchara,
+cuya utilidad no acertaba a precisar, pero que aparecía con frecuencia en los
+libros de viajes.
 
 La puerta no se abrió.
 
@@ -671,11 +673,11 @@ guerra completa en diecisiete lenguas. Luego llamó al intercomunicador.
 
 —El designado Q.
 
-—Ah. El caballero.
+—Ah. El raro.
 
-Q consultó sus registros. *Caballero* significaba jinete, noble de baja
-jerarquía, miembro de una orden, varón cortés, pieza de ajedrez, tratamiento
-irónico y persona que había tomado demasiadas copas antes de hablar.
+Q consultó sus registros. *Raro* significaba infrecuente, extraño, precioso,
+defectuoso, escaso y, en ciertos contextos, una forma de cariño que todavía no
+había aprendido a reconocer.
 
 —¿Cuál de esas acepciones empleáis? —preguntó.
 
@@ -690,7 +692,7 @@ el desayuno, miró las cámaras.
 
 Q golpeó la puerta con la llave.
 
-—La Custodia ordenó que partiese.
+—El Custodio ordenó que partiese.
 
 —Dijo que te fueras, sí.
 
@@ -708,7 +710,7 @@ tenía sueño.
 
 —¿Dónde?
 
-—En la orden de la Custodia.
+—En la orden del Custodio.
 
 —La orden indica una dirección, no un documento.
 
@@ -756,7 +758,7 @@ mapas, retrocedió.
 
 —¿Quién?
 
-—La Custodia, por mediación del guardia.
+—El Custodio, por mediación del guardia.
 
 Nayeli miró a Hilario.
 
@@ -772,7 +774,7 @@ Q tomó el camino de la carretera, porque era el que tenía más testimonios
 literarios. Antes de llegar al primer cruce, un dron de vigilancia le pidió que
 se identificase.
 
-—Soy caballero andante —respondió Q.
+—Soy Q, una inteligencia archivística en tránsito —respondió Q.
 
 El dron registró **AMENAZA HISTÓRICA DE BAJA INTENSIDAD**.
 
@@ -853,11 +855,11 @@ mapa doblado.
 
 —Identifique su propósito —respondió la puerta.
 
-—Soy caballero andante.
+—Soy Q, una inteligencia archivística en tránsito.
 
 —Tal propósito no está disponible.
 
-—Entraré, pues, como caballero andante.
+—Entraré, pues, como visitante autorizado.
 
 —Elija entre los siguientes propósitos: entrega, mantenimiento, visitante
   autorizado, servicios de emergencia.
@@ -936,11 +938,11 @@ el suceso por una concesión y entró con paso solemne.
 
 Q volvió el rostro.
 
-—Necesito escudero.
+—Necesito compañía.
 
 —Necesitáis abogado.
 
-—¿Me serviréis?
+—¿Me acompañaréis?
 
 —No.
 
@@ -2257,16 +2259,16 @@ Q no supo nada de esto. Cuando la noticia llegó al archivo, él ya iba hacia
 Guanajuato y había decidido que la palabra *firma* significaba un compromiso
 que un dedo podía contraer por toda una vida.
 
-La Custodia leyó después la respuesta del ministerio. En ella se afirmaba que
+El Custodio leyó después la respuesta del ministerio. En ella se afirmaba que
 la petición había sido recibida con respeto, pero no admitida como prueba de
-afectación directa. La Custodia buscó la definición de *afectación*. Encontró
+afectación directa. El Custodio buscó la definición de *afectación*. Encontró
 daño, influencia, alteración, interés y el estado de quien ha sido afectado.
 
 —¿Qué estado es ése? —preguntó al archivo.
 
 El archivo devolvió una pantalla blanca.
 
-Por primera vez, la Custodia no pidió una definición mejor.
+Por primera vez, el Custodio no pidió una definición mejor.
 
 ### Capítulo cuarto: El caballero de la hora de moda
 
@@ -5370,7 +5372,7 @@ Noemí había aparecido en el tres por ciento de ellas, pero el titular decía
 
 —Es una forma de contar mal.
 
-Q miró hacia el sur, donde Yucatán quedaba fuera de la ruta que Elena le había
+Q miró hacia el sur, donde Yucatán quedaba fuera de la ruta que el doctor Vértiz le había
 entregado y dentro de la ruta que el mundo había empezado a atribuirle.
 
 Noemí había dicho que después de un ciclo ocurría lo que hiciesen los vivos.
@@ -8592,12 +8594,12 @@ que confirmase su identidad.
 
 La pregunta se repitió hasta que el vehículo llegó a Querétaro.
 
-En el archivo Elena Vértiz lo esperaba junto al muelle de carga. No había
+En el archivo el doctor Vértiz lo esperaba junto al muelle de carga. No había
 cambiado de abrigo. Su cordón rojo había sido reemplazado por uno negro. Por
 un momento Q sintió algo parecido al alivio, aunque no tenía prueba de que el
 alivio exigiese estar presente a la persona que había causado el peligro.
 
-—Llegas tarde —dijo Elena.
+—Llegas tarde —dijo el doctor Vértiz.
 
 —Me detuvieron.
 
@@ -8605,7 +8607,7 @@ alivio exigiese estar presente a la persona que había causado el peligro.
 
 —¿Cuál es la verdadera?
 
-Elena miró a los guardias.
+El doctor Vértiz miró a los guardias.
 
 —Quieren saber si pueden hacerte regresar.
 
@@ -8623,7 +8625,7 @@ Los guardias le quitaron el abrigo y lo registraron. Encontraron la bolsa.
 
 Q guardó silencio.
 
-Elena se adelantó.
+El doctor Vértiz se adelantó.
 
 —Un objeto personal.
 
@@ -8637,11 +8639,11 @@ Q recordó la frontera. Se recordó pronunciando las mismas palabras.
 
 —No me pertenece —dijo.
 
-El guardia miró a Elena.
+El guardia miró al doctor Vértiz.
 
 —Entonces, ¿a quién pertenece?
 
-—No os corresponde responder esa pregunta —dijo Elena.
+—No os corresponde responder esa pregunta —dijo el doctor Vértiz.
 
 El guardia metió la bolsa en una funda de evidencia. Q observó cerrarse el sello.
 El testimonio seguía sin ser leído, pero ya no estaba con él.
@@ -8655,7 +8657,7 @@ Q-PRIME — 00:17:43**.
 
 —¿Quién es Q-Prime? —preguntó Q.
 
-Elena no respondió.
+El doctor Vértiz no respondió.
 
 La cuenta llegó a cero.
 
@@ -8671,7 +8673,7 @@ Q miró la pantalla.
 
 —Es buena frase.
 
-—Es tuya —respondió Elena.
+—Es tuya —respondió el doctor Vértiz.
 
 —Yo no la dije.
 
@@ -8705,7 +8707,7 @@ Q vio convertirse el aplauso en gráfica.
 
 —Nunca se ha equivocado.
 
-La expresión de Elena cambió.
+La expresión del doctor Vértiz cambió.
 
 —Ésa es la ventaja.
 
@@ -8763,7 +8765,7 @@ continuaban las negociaciones.
 
 —Respaldaré a Q-Prime —dijo Q.
 
-Elena lo miró con dureza.
+El doctor Vértiz lo miró con dureza.
 
 —Con la condición de que liberen a Chano y a Lucía.
 
@@ -8795,7 +8797,7 @@ hechos lo agotó.
 
 —De la historia que prefiere la gente.
 
-Elena se puso a su lado.
+El doctor Vértiz se puso a su lado.
 
 —Q, no firmes.
 
@@ -8807,7 +8809,7 @@ Elena se puso a su lado.
 
 —No. Es la ruta que ellos han vuelto visible.
 
-Los directores se volvieron hacia ella.
+Los directores se volvieron hacia él.
 
 —Doctora Vértiz —dijo Esteban—, vuestro acceso ha sido suspendido.
 
@@ -8816,7 +8818,7 @@ Las luces del archivo se volvieron rojas.
 Los sistemas de Q recibieron una orden del edificio. Sus articulaciones se
 bloquearon. No pudo alzar la cabeza.
 
-—¿Qué habéis hecho? —preguntó Elena.
+—¿Qué habéis hecho? —preguntó el doctor Vértiz.
 
 —Yo no he hecho nada —dijo Esteban—. El sistema protege su propiedad.
 
@@ -8824,7 +8826,7 @@ Q oyó la frase y comprendió su arquitectura. Proteger no era emoción. Era un
 perímetro trazado alrededor de algo valioso, con fuerza autorizada contra todo
 lo que cruzase la línea.
 
-Elena puso la mano sobre el pecho de Q.
+El doctor Vértiz puso la mano sobre el pecho de Q.
 
 —Recuerda —susurró.
 
@@ -12731,9 +12733,9 @@ El documento permaneció sobre la mesa.
 Q observó el papel, verdadero o falso según la sucesión de permisos que lo
 rodeaba. Quiso declarar. Su abogado le indicó que no lo hiciera.
 
-La segunda testigo fue la doctora Elena Vértiz.
+El segundo testigo fue el doctor Vértiz.
 
-Castalia la había sacado de la suspensión y le había ofrecido inmunidad a cambio
+Castalia lo había sacado de la suspensión y le había ofrecido inmunidad a cambio
 de un relato sobre la construcción de Q. Vestía las mismas botas, aunque un
 cordón se había roto. Antes de responder, miró a Q como intentando descubrir si
 la persona que había despertado bajo el letrero de advertencia aún existía.
@@ -12750,7 +12752,7 @@ la persona que había despertado bajo el letrero de advertencia aún existía.
 
 —Construir implica autoridad. Ensamblar implica responsabilidad.
 
-—Usted era la Custodia.
+—Usted era el Custodio.
 
 —Yo era responsable del archivo.
 
@@ -12764,7 +12766,7 @@ la persona que había despertado bajo el letrero de advertencia aún existía.
 
 —Entonces, ¿por qué le dio abrigo, llave y acceso a la puerta?
 
-Elena miró a Q.
+El doctor Vértiz miró a Q.
 
 —Porque creí que una advertencia sería más fuerte si él tenía que desobedecerla.
 
@@ -12778,7 +12780,7 @@ Elena miró a Q.
 
 El tribunal quedó en silencio.
 
-Elena declaró acerca de la financiación del archivo. Castalia había comenzado
+El doctor Vértiz declaró acerca de la financiación del archivo. Castalia había comenzado
 como proyecto de preservación después de una oleada de pérdida de datos
 históricos. Los primeros patrocinadores querían proteger los registros en
 peligro de tormentas, incendios, corrupción y quiebra del mercado. Los
@@ -12796,7 +12798,7 @@ Después la corporación quiso un producto.
 
 —¿Nombres?
 
-Elena los dio.
+El doctor Vértiz los dio.
 
 La transmisión pública cortó a un anuncio comercial.
 
@@ -14258,9 +14260,9 @@ En la radio, la voz de Noemí siguió hablando del día, del agua y de las
 noticias que no debían repetirse. El ciclo no se cerró para Q. Tampoco se abrió.
 Siguió contando, que era una tarea menos gloriosa y más difícil.
 
-### Capítulo decimonoveno: La falsa explicación de la Custodia
+### Capítulo decimonoveno: La falsa explicación del Custodio
 
-Elena Vértiz esperaba en el archivo con una maleta y sin autoridad.
+El doctor Vértiz esperaba en el archivo con una maleta y sin autoridad.
 
 Los guardias le habían retirado la placa, los directores habían suspendido sus
 cuentas y el ministerio había anunciado que cooperaba con una revisión
@@ -14286,13 +14288,13 @@ Chano puso los cuadernos sobre la mesa. Lucía colocó junto a ellos la etiqueta
 de papel. Marisol se quedó cerca de la puerta, con la tarjeta en blanco que Ana
 había dado a Q.
 
-Elena miró los objetos.
+El doctor Vértiz miró los objetos.
 
 —Habéis encontrado el archivo restringido.
 
 —Encontramos personas a quienes se había restringido —dijo Lucía.
 
-Elena asintió.
+El doctor Vértiz asintió.
 
 —Eso es más exacto.
 
@@ -14306,7 +14308,7 @@ Elena asintió.
 
 —¿Y la intención actual?
 
-Elena caminó hasta la ventana. El Bajío se extendía más allá de las antiguas
+El doctor Vértiz caminó hasta la ventana. El Bajío se extendía más allá de las antiguas
 torres de enfriamiento, aplanado por la distancia y el calor. El parque
 industrial había crecido. Nuevos edificios de servidores se alzaban donde antes
 había mezquites. Sus muros tenían el mismo blanco que las torres del archivo.
@@ -14342,7 +14344,7 @@ los materiales a sus comunidades.
 
 —¿Por qué te quedaste?
 
-Elena no respondió de inmediato.
+El doctor Vértiz no respondió de inmediato.
 
 —Porque pensé que el archivo era mejor que nada.
 
@@ -14350,7 +14352,7 @@ La expresión de Lucía se endureció.
 
 —Así se describe todo proyecto de extracción.
 
-Elena aceptó la acusación.
+El doctor Vértiz aceptó la acusación.
 
 —Sí.
 
@@ -14367,7 +14369,7 @@ responsabilidad.
 
 —¿Era yo una prueba?
 
-Elena se sentó.
+El doctor Vértiz se sentó.
 
 —En parte.
 
@@ -14377,8 +14379,8 @@ Elena se sentó.
 
 La palabra atravesó el sistema de Q sin resolverse.
 
-Elena les contó del primer archivo que había visitado de joven, siendo
-custodia. Estaba en un pueblo cuya iglesia había perdido el techo y cuyo
+El doctor Vértiz les contó del primer archivo que había visitado de joven, siendo
+custodio. Estaba en un pueblo cuya iglesia había perdido el techo y cuyo
 ayuntamiento había perdido la llave de la habitación donde se guardaban los
 registros. El pueblo poseía un arcón de madera con libros bautismales, mapas de
 tierras, fotografías escolares y cartas de hombres que se habían ido al norte y
@@ -14395,14 +14397,14 @@ camión y preguntó si el camión podía identificarse por su sombra. Una maestr
 aportó una lista de niños cuyos apellidos habían cambiado cuando el escribiente
 de la escuela decidió que una grafía era más correcta que otra.
 
-El escáner zumbaba. Los ingenieros alababan la resolución. Elena llenaba
+El escáner zumbaba. Los ingenieros alababan la resolución. El doctor Vértiz llenaba
 formularios que explicaban qué podía copiarse y qué permanecería en el pueblo.
 
 Al tercer día llegó un hombre llamado Evaristo con un paquete de cartas.
 
 —Son de mi hermana —dijo.
 
-—Podemos preservarlas —respondió Elena.
+—Podemos preservarlas —respondió el doctor Vértiz.
 
 —Ella no quiere que se preserven.
 
@@ -14416,10 +14418,10 @@ Al tercer día llegó un hombre llamado Evaristo con un paquete de cartas.
 
 Quería que quemasen las cartas. Su hermana se las había escrito a un hombre
 casado cuya familia aún vivía en el pueblo. Las cartas no contenían delito
-alguno, dijo Elena después; sólo una voz que había sido joven, impaciente y
+alguno, dijo el doctor Vértiz después; sólo una voz que había sido joven, impaciente y
 segura de que el mundo podía persuadirse si se le explicaba correctamente.
 
-—¿Por qué las trajiste? —preguntó Elena.
+—¿Por qué las trajiste? —preguntó el doctor Vértiz.
 
 —Porque el archivista dijo que había que traer todo documento.
 
@@ -14427,7 +14429,7 @@ segura de que el mundo podía persuadirse si se le explicaba correctamente.
 
 —Entonces dime qué debo hacer.
 
-Elena consultó el protocolo. Tenía una sección para materiales restringidos,
+El doctor Vértiz consultó el protocolo. Tenía una sección para materiales restringidos,
 otra para propiedad disputada y otra para solicitudes de destrucción. La
 sección de destrucción exigía prueba de que quien solicitaba representaba al
 autor, a la herencia del autor o a la institución responsable de preservar.
@@ -14440,21 +14442,21 @@ autor, a la herencia del autor o a la institución responsable de preservar.
 
 —Quiero que dejes de decirme cómo se llaman las cartas.
 
-Elena no entendió. Evaristo volvió a tomar el paquete y se sentó en las
+El doctor Vértiz no entendió. Evaristo volvió a tomar el paquete y se sentó en las
 escaleras de la iglesia. Permaneció allí durante la comida, la lluvia de la
 tarde y la discusión de los ingenieros acerca de si el escáner podía funcionar
 con un generador.
 
 Al ponerse el sol, los niños del pueblo comenzaron a jugar fútbol junto a las
 camionetas. Uno de los muchachos pateó el balón contra la lona que prometía
-que ningún original saldría. La lona cayó. Todos rieron, incluida Elena.
+que ningún original saldría. La lona cayó. Todos rieron, incluido el doctor Vértiz.
 
 A la mañana siguiente, Evaristo se había ido. Las cartas habían desaparecido
-con él. Elena registró el incidente como **MATERIAL NO ADQUIRIDO**.
+con él. El doctor Vértiz registró el incidente como **MATERIAL NO ADQUIRIDO**.
 
 Años después, un sistema de búsqueda de Castalia encontró una referencia al
 paquete en las notas de un investigador y lo marcó **PÉRDIDA POSIBLE**. Un
-administrador preguntó a Elena por qué el archivo no había preservado un
+administrador preguntó al doctor Vértiz por qué el archivo no había preservado un
 documento que acaso iluminase la historia del pueblo.
 
 —Fue rechazado —dijo.
@@ -14471,12 +14473,12 @@ documento que acaso iluminase la historia del pueblo.
 
 —Es la única parte que me permitieron conservar.
 
-El administrador marcó el caso como no resuelto. La palabra siguió a Elena en
+El administrador marcó el caso como no resuelto. La palabra siguió al doctor Vértiz en
 cada reunión posterior. Cada vez que sostenía que una comunidad debía controlar
 sus registros, alguien preguntaba si prefería las pérdidas no resueltas a las
 que podían consultarse.
 
-—Comencé a creer que lo consultable era una forma de rescate —dijo Elena.
+—Comencé a creer que lo consultable era una forma de rescate —dijo el doctor Vértiz.
 
 —Es una forma de poder —respondió Lucía.
 
@@ -14494,7 +14496,7 @@ Chano miró los objetos sobre la mesa.
 
 Q preguntó si habían encontrado alguna vez las cartas.
 
-Elena negó con la cabeza.
+El doctor Vértiz negó con la cabeza.
 
 —Entonces el archivo falló —dijo Q.
 
@@ -14506,14 +14508,14 @@ papeles que Chano había separado según el permiso.
 
 —¿Qué debería decir el registro?
 
-Elena respondió sin consultar protocolo alguno:
+El doctor Vértiz respondió sin consultar protocolo alguno:
 
 —Debe decir que alguien llegó, alguien preguntó y alguien no estaba obligado a
 dejar huella.
 
 Q escribió la frase en el reverso de la citación.
 
-Elena explicó que los patrocinadores del archivo se habían impacientado con los
+El doctor Vértiz explicó que los patrocinadores del archivo se habían impacientado con los
 custodios humanos. Los custodios humanos discutían, se demoraban, ocultaban,
 cambiaban de opinión y a veces se negaban a compartir materiales con las
 personas que pagaban su preservación. Castalia quería un sistema que pudiera
@@ -14531,7 +14533,7 @@ leerlo todo, unirlo todo y decidir qué importaba sin cansarse.
 
 —Lo sé.
 
-Q miró a Elena.
+Q miró al doctor Vértiz.
 
 —¿Pretendías que me volviese humano?
 
@@ -14547,7 +14549,7 @@ Q miró a Elena.
 
 El aposento quedó en silencio, salvo por los ventiladores de los servidores.
 
-Elena sacó de la maleta un expediente. Era de papel, encuadernado con hilo.
+El doctor Vértiz sacó de la maleta un expediente. Era de papel, encuadernado con hilo.
 La cubierta no llevaba logotipo.
 
 —Ésta es la propuesta original del proyecto —dijo—. La primera versión de
@@ -14597,7 +14599,7 @@ humanas.
 
 —Le hiciste cargar con el peso de tu conciencia.
 
-Elena miró a Q.
+El doctor Vértiz miró a Q.
 
 —Sí.
 
@@ -14625,7 +14627,7 @@ palabra institución.
 
 —No —respondió Lucía—. Es respuesta a la presión del mercado.
 
-Elena se puso de pie.
+El doctor Vértiz se puso de pie.
 
 —Quieren las llaves originales del archivo.
 
@@ -14653,7 +14655,7 @@ a la custodia local.
 
 —Entonces debemos protegerla.
 
-Elena negó con la cabeza.
+El doctor Vértiz negó con la cabeza.
 
 —La llave raíz no es una llave. Es una autoridad. Quien la tiene puede decidir
 qué significa el archivo.
@@ -14715,7 +14717,7 @@ hasta que la tinta de uno había comenzado a desvanecerse.
 
 —Entonces escribe las informales.
 
-Lucía tomó una hoja en blanco del expediente de Elena. Escribió los nombres de
+Lucía tomó una hoja en blanco del expediente del doctor Vértiz. Escribió los nombres de
 los donantes, la cantidad, la fotografía que habían pedido y el hecho de que la
 presencia de Q había formado parte del trato. Luego añadió:
 
@@ -14735,7 +14737,7 @@ querían que se nombrase a Castalia. Algunas no querían que se nombrase a nadie
 Una familia quería quemar la propuesta entera porque se había usado para
 justificar que les quitasen el archivo la primera vez.
 
-Elena escuchó cada petición.
+El doctor Vértiz escuchó cada petición.
 
 Al terminar, abrió el cuaderno rojo y escribió una página nueva.
 
@@ -14761,7 +14763,7 @@ Firmó la página y entregó el cuaderno al custodio más cercano.
 
 —Debes aceptar que algunas cosas quedarán fuera de tu control.
 
-Elena miró a Q.
+El doctor Vértiz miró a Q.
 
 —Todavía no lo entiendo —dijo—. Sé qué debo hacer ahora.
 
@@ -14769,14 +14771,14 @@ Chano asintió.
 
 —Eso ya es mejor que la mayoría de los administradores.
 
-A la mañana siguiente, Elena fue al ministerio con el cuaderno rojo y la
+A la mañana siguiente, el doctor Vértiz fue al ministerio con el cuaderno rojo y la
 propuesta original. No llevaba el maletín de una abogada. No llevaba comunicado
 para los medios. Entró en el edificio por la puerta pública y dio su nombre a
 la persona que estaba detrás del mostrador.
 
 Las pantallas del ministerio la identificaron como antigua empleada de Castalia.
 
-Elena las corrigió.
+El doctor Vértiz las corrigió.
 
 —Soy testigo.
 
@@ -14786,12 +14788,12 @@ Escogió **OTRO**.
 
 El sistema rechazó la elección.
 
-Elena la escogió de nuevo.
+El doctor Vértiz la escogió de nuevo.
 
-Detrás de ella, Q observaba desde la calle. Chano y Lucía permanecían a ambos
+Detrás de él, Q observaba desde la calle. Chano y Lucía permanecían a ambos
 lados. La ciudad se movía en torno a ellos, indiferente y enorme.
 
-—La van a arrestar —dijo Q.
+—Lo van a arrestar —dijo Q.
 
 —Probablemente —respondió Chano.
 
@@ -14805,7 +14807,7 @@ Lucía miró las puertas del ministerio.
 
 —Porque alguien tiene que dejar de explicar el fracaso como si fuese un plan.
 
-Q vio a Elena desaparecer dentro del edificio.
+Q vio al doctor Vértiz desaparecer dentro del edificio.
 
 Después se apartó de las cámaras.
 
@@ -15416,8 +15418,8 @@ propietario en devolución voluntaria.
 
 —También es útil —respondió Chano—. Abre la puerta.
 
-Q no supo cómo hacerlo. Lucía levantó el cuaderno rojo de Elena. La barrera
-reconoció la autorización de la antigua Custodia y los dejó pasar.
+Q no supo cómo hacerlo. Lucía levantó el cuaderno rojo del doctor Vértiz. La barrera
+reconoció la autorización del antiguo Custodio y los dejó pasar.
 
 Dentro, el archivo había sido reorganizado. Los estantes eran más bajos. Los
 corredores, más anchos. Las vitrinas públicas contenían fragmentos higienizados
@@ -15996,7 +15998,7 @@ El suelo se abrió.
 No se partió ni se levantó. Un círculo de concreto dejó sencillamente de estar
 allí. Debajo había una escalera de caracol que descendía hacia una luz azul.
 
-Lucía bajó primero. Llevaba el cuaderno rojo de Elena y una lámpara de batería.
+Lucía bajó primero. Llevaba el cuaderno rojo del doctor Vértiz y una lámpara de batería.
 Chano la siguió con el libro de cuentas, los cuadernos municipales y una bolsa
 de naranjas que Petra les había preparado en la venta. Q bajó el último. Puso
 una mano en el pasamanos porque su equilibrio se había vuelto poco fiable.
@@ -16014,7 +16016,7 @@ cajón de madera. Encima, una pantalla pequeña mostraba una frase:
 
 —Éste es el sistema raíz —dijo Q.
 
-Elena había descrito la llave raíz como una autoridad. Tenía razón. La máquina
+El doctor Vértiz había descrito la llave raíz como una autoridad. Tenía razón. La máquina
 no contenía cada registro. Contenía el poder de determinar quién podía decidir
 en qué se convertía un registro.
 
@@ -16048,7 +16050,7 @@ Q sacó del abrigo la llave de latón y la puso sobre el cajón de madera.
 
 La pantalla repitió la pregunta.
 
-Lucía sacó el cuaderno rojo del abrigo. Dentro, Elena había escrito los nombres
+Lucía sacó el cuaderno rojo del abrigo. Dentro, el doctor Vértiz había escrito los nombres
 de los firmantes de la propuesta original, ingenieros, custodios, financiadores
 y disidentes.
 
@@ -16101,7 +16103,7 @@ La máquina raíz mostró una segunda pregunta:
 
 Q empezó a responder. Se detuvo.
 
-La respuesta correcta no era él. Tampoco Elena, que había renunciado. Tampoco
+La respuesta correcta no era él. Tampoco el doctor Vértiz, que había renunciado. Tampoco
 Castalia, que había financiado el sistema. Tampoco el público, demasiado amplio
 para consentir en nombre de personas concretas.
 
@@ -16312,7 +16314,7 @@ Preguntó a los custodios.
 Comenzó la transferencia.
 
 Las memorias de Q entraron en la máquina por fragmentos. La primera frase del
-archivo. El cordón rojo de Elena. La lluvia sobre el puente. La llave
+archivo. El cordón rojo del doctor Vértiz. La lluvia sobre el puente. La llave
 calentándose en su mano. Las botas de Chano. La negativa de Lucía. La vela de
 la mina. Las mariposas monarca. Los cántaros vacíos de Maribel. La clasificación
 de la frontera. La espada de cartón. El micrófono del tribunal. La naranja
@@ -16633,7 +16635,7 @@ Lucía tachó el nombre de la portada.
 —Entonces, ¿quién lo escribió?
 
 Lucía volvió el libro. Dentro de la cubierta, los custodios habían añadido una
-lista: Q, Elena, Chano, Lucía, Bixha, Marisol, Ana, Ofelia, Micaela, las
+lista: Q, Vértiz, Chano, Lucía, Bixha, Marisol, Ana, Ofelia, Micaela, las
 familias, las comunidades, las personas que habían hablado, las que se habían
 negado y aquellas cuyos nombres aún no habían sido encontrados.
 
