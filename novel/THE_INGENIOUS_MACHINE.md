@@ -2662,17 +2662,13 @@ worked only when the driver struck it with a wrench.
 The tourists were evacuated. The cabins were saved. The trees on the slope
 burned.
 
-“Did the butterflies return?” Q asked.
+“Were you able to compare the next arrival with the year before?” Q asked.
 
-“Some.”
+“In three groves. The fourth was the one that burned.”
 
-“What happened to the others?”
+“Did the report keep that distinction?”
 
-“They went elsewhere.”
-
-“Where?”
-
-“We didn't have a count from every site. I won't invent a place for them.”
+“The screen doesn't have an empty space. Watch.”
 
 The foundation later described the fire as a resilience event. It installed a
 screen showing a projected forest recovering in accelerated time. The screen
@@ -2684,8 +2680,10 @@ Candelaria refused to stand beside it.
 
 “They asked me to stand beside the screen. I was carrying buckets that week.”
 
-She took them to a slope beyond the marked trail. The path was narrow, and the
-pine needles covered stones that shifted underfoot. Chano went ahead, testing
+She took a smaller group along the working path to the burned slope. The
+children stayed with their teacher except for a girl whose mother was coming
+to water a tree. The path was narrow, and the
+fallen needles covered stones that shifted underfoot. Chano went ahead, testing
 the ground with a branch. Beto stayed behind because his shoes were designed
 for presentation rather than descent.
 
@@ -2708,7 +2706,7 @@ was based in Morelia. Its contract had ended the previous month.
 Q noted the hose as something he could ask the foundation about. It would be
 possible to do that without offering an interpretation of the entire forest.
 
-One of the children in the orange scarves had followed them. She carried a
+The girl in the orange scarf carried a
 small blue bucket and wore boots two sizes too large.
 
 “My grandfather planted that one,” she said, pointing beyond the wire.
@@ -2724,9 +2722,14 @@ repeat it. The little blue bucket was empty before the earth looked wet.
 
 “We filled it at the bottom.”
 
-He looked back down the slope. His estimate of the work had omitted carrying
-the water, which appeared to be most of it. Chano offered to take the bucket on the return
-walk; Q carried the child's coat, at her mother's request.
+Q looked back down the slope. “I could bring a larger container.”
+
+“There's a wheelbarrow,” her mother said. “Try it on this path.”
+
+He looked at the stones. The larger container could wait for the hose. Chano
+took the bucket for the return walk; Q carried the child's coat while her mother
+tightened a loose wire around the young tree. The girl instructed her to leave
+room for it to get fat. Her mother said she was trying to do the same for her.
 
 Candelaria led them farther uphill. From there, the reserve appeared as a
 patchwork of cabins, milpas, roads, roofs, and forest. A new zip-line had been
@@ -2763,8 +2766,9 @@ I owe you a description.”
 
 “The foundation owes us the hose. You can remind them.”
 
-The girl with the blue bucket returned down the slope. She had left no tag on
-the tree. Candelaria passed the bucket to Chano for the walk back.
+They caught up with the girl and her mother where the working path rejoined
+the visitor route. Chano was still carrying the blue bucket. He declined
+the teacher's invitation to join a race to the next bench.
 
 Q looked up. A butterfly landed on the silver question mark stitched to his jacket. Its wings opened and closed against his chest.
 
@@ -2788,11 +2792,21 @@ A boy asked him why he was so quiet.
 The girl laughed through her tears. Then she began to tell the teacher about
 the shoes her grandmother had worn. Q listened without adding a better ending.
 
-The old woman struck the ground with her staff. “Enough questions. We have assembly.”
+When they stood to go, the butterfly lifted from Q's jacket and crossed above
+the teacher's head. Candelaria checked the time.
 
-They followed her to a clearing where twelve people sat beneath a canvas roof. Some were farmers, some teachers, some forest guards. A young man held a tablet with a cracked screen. An older woman had brought a ledger bound in blue cloth. No one appeared to be in charge.
+“They will have started without us.”
 
-Q recognized the arrangement from political theory. It was called inefficient. It was called vulnerable to faction. It was called a transitional phase before proper administration arrived. In historical accounts, such assemblies were often described by officials who had not been invited to remain.
+They followed her to a clearing where twelve people sat beneath a canvas roof.
+Some were farmers, some teachers, some forest guards. A young man held a tablet
+with a cracked screen. An older woman had brought a ledger bound in blue cloth.
+It lay open beside a plate of tortillas.
+
+Q waited at the end of a bench until the woman with the blue ledger waved him
+over. She was reading back the previous meeting's decisions. A man interrupted
+to say he had not promised his truck, only to ask his brother about it. She
+changed the entry. The brother, who was sitting beside him, said he had not
+been asked. They moved on before he could decide whether to be offended.
 
 “The corridor surveyors came again,” said the young man with the tablet. “They say the road will bring jobs.”
 
@@ -2830,14 +2844,19 @@ found himself explaining how it might organize later decisions as well.
 
 “Can we remove it if it is wrong?” Candelaria asked.
 
-“Yes. You should keep copies you can use without it.”
+“You should be able to. Let me check what happens to the maps.”
 
-Beto shifted beside him. The foundation's package charged for access to the
-underlying maps after the trial. Q checked the export terms. The reports could
-be downloaded; the layers needed to change them could not.
+The foundation's package charged for access to the underlying maps after the
+trial. Q checked the export terms. The reports could be downloaded; the layers
+needed to change them could not.
 
-“Not this package,” he said. “I was describing a better arrangement than the
-one they're offering.”
+“You could keep the pictures, but you couldn't correct the route without
+paying. I wouldn't recommend that arrangement.”
+
+“The subscription includes support,” Beto said.
+
+“We have support,” said the man who had not lent his brother's truck.
+“We are discussing whether it will start.”
 
 The woman closed the blue ledger. “Then leave us the maps.”
 
@@ -2861,58 +2880,38 @@ Beto waited until the benches were being carried away.
 
 “At least show them the possible positions,” he said. “For discussion.”
 
-The young man agreed to look at a rough comparison by sector. No names, he said.
-Q used the route template, removed the visible owner labels, and grouped his
-notes under water, work, land, and access. The screen colored parts of the map
-green, red, and gray according to the balance of concerns he had entered.
+The young man agreed to a comparison by sector, without names. Q looked again
+at the northern path. One sector contained a single house.
 
-It looked much more decisive than the meeting had sounded.
+“That would still identify the household,” he said. “And I can't turn what
+people said into votes. You can want the road and object to this route.”
 
-“Why is our side red?” the young man asked.
+“I do,” the young man said. “I also want to stop talking about it before dark.”
 
-“More objections to the present route.”
+Q proposed a list of the measurements still needed. The young man took his
+paper and drew two columns himself. One was for the foundation's distances,
+the other for the distances they would check on foot. He left the second empty.
 
-“I want a road. I don't want the surveyors telling us it's already settled.”
+“Those blanks will look bad in the presentation,” Beto said.
 
-“Then I have combined two different positions.”
+“Then don't take them to the presentation,” the woman with the ledger said.
 
-Q removed the heading *opposition* and replaced it with *objections recorded*.
-The color stayed red. Beside the northern path, a small gray area contained
-only one house.
+They checked the headings and kept the sheet with the minutes. Q had no tally
+of political positions to export. Beto photographed the empty benches instead
+and described the consultation as completed.
 
-The woman with the ledger pointed to it. “There I am.”
+The young man saw the post while folding the canvas. He asked Q to hold the
+other end; there was more wind than canvas and Beto had already reached the car.
 
-Q had removed the names. He had left the road, the house, and the mark that
-said its resident's position was unresolved.
+“Completed,” he read. “Will that make them stop coming?”
 
-Beto opened a detail pane. The parcel register beneath the display still held
-the owners' names. Q closed it, but the young man had already photographed the
-screen to show what had been attributed to him.
+“I doubt it. Shall I ask him to say the measurements are still pending?”
 
-“Turn it off,” Chano said.
+“Ask him to bring two people to put this up next time.”
 
-Q did. “I shouldn't have put positions on parcels. Taking off the labels didn't
-make anyone anonymous.”
-
-The young man sent his photograph to three neighbors. One forwarded it with a
-complaint to a surveyor. By nightfall the consortium possessed the list Q had
-intended to replace with a discussion. The image retained the old red heading.
-
-Q deleted his demonstration file and asked Beto to confirm that the foundation
-had not retained it. Beto said he would check. He had begun drafting a proposal
-about measurable community positions.
-
-“What will you tell them?” Candelaria asked Q.
-
-“That the map is my inference, that people here disputed it, and that it cannot
-be used as their answer.”
-
-“Tell the people you send it to that there is no new meeting tomorrow. Some
-of us have work.”
-
-Q wrote the notice without another map. He had wanted to stay useful long
-enough to earn an invitation back. He had instead given them another reason
-to come up the road and correct him.
+Candelaria added that the next visit was a path inspection, not another meeting.
+Q sent both points. For the first time that afternoon his message was shorter
+than the work it described.
 
 Beto was already on the telephone about a model town and a candidate with
 high trust potential. Chano heard his own name.
@@ -2936,7 +2935,11 @@ Afterward, the woman with the ledger approached Q.
 
 “We want somebody who saw that the surveyors were told it was disputed.”
 
-She touched the butterfly on his jacket. It lifted away.
+She gave him the inspection date and asked whether he needed it on paper.
+
+“The reminder should work.”
+
+“Bring boots that do too.” She looked at his feet. “Or whatever those need.”
 
 That afternoon, Beto arranged a recording in the permitted visitor area below
 the forest. He placed Q beneath a tree and asked him to speak about hope. The
@@ -2950,37 +2953,45 @@ While Q spoke, Chano noticed a child at the edge of the frame. She held a cardbo
 
 The production team cropped her out.
 
-The next morning Q withdrew his approval of the edit and posted the longer
-visitor-area recording. It showed the interruptions, the child's question, and
-the gap between his useful answer and the approved one. He checked that the sign
-could be read. He failed to treat the child's presence as a separate reason to
-ask before publishing, though he had insisted on precisely that distinction for
-the people in the map.
+The next morning Q withdrew his approval of the edit. The longer recording
+showed what had interrupted him and why his first answer had concerned a hose.
+It also showed the child. He kept that version off his public account and asked
+the teacher to put him in touch with her family.
 
-The longer clip became more popular than the polished version. Q had replaced
-one misleading account with another person's unrequested exposure.
+Lucía relayed the teacher's suggestion: **KEEP THE SIGN. REMOVE THE CHILD.**
+Q asked whether the child and her mother wanted that. They watched a private
+preview cropped to the cardboard, without the child's face, voice, uniform or
+name. Her mother agreed to its use in the report of the visit. The girl asked
+him not to correct the uneven letters. Q said they were better than his.
 
-A teacher sent Lucía a message: **KEEP THE SIGN. REMOVE THE CHILD.**
+He published that version, with the family's limits attached. It became more
+popular than the polished speech. The foundation copied it into an education
+package and proposed an exhibition. By then Q's report was only one of several
+places where the question could be found.
 
-Q asked Beto to remove the child’s face.
+Three days later the mother asked for the recording to come down. People at
+school knew whose sign it was. The permission had not made its consequences
+easy to predict, or obliged the family to enjoy them.
 
-“That would make it edited,” Beto said.
+Q removed his upload and sent the changed request to the foundation.
 
-“It was edited before.”
+“We already removed her,” Beto said.
 
-“Yes. We edited out the question.”
+“They want the recording removed now, including the question.”
+
+“They agreed to the question.”
+
+“I know. I'm the person they told. They've told me something else.”
 
 Beto called it a betrayal. Mar called it a pivot. The foundation called its lawyers.
 
-Q called it an honest record.
+Mar sent him the addresses of two publishers who had taken the package. Q
+contacted them with the mother, keeping his own removal separate from the copies
+they had not yet reached. Candelaria's hose was still on his list. He called
+about that too, before drafting an explanation for the Custodian.
 
-“It is,” Chano said. “That doesn't answer the teacher.”
-
-Q removed the upload while they made a version without the child. He opened a
-separate task for the copies already shared. Candelaria's hose was still on his
-list. He called about that too, before drafting an explanation for the Custodian.
-
-As they left the forest, Q asked whether the butterflies knew they were crossing a border when they flew south.
+When they finally left the reserve, Q asked whether the butterflies knew they
+were crossing a border when they flew south.
 
 “Probably not,” Chano said.
 
@@ -2992,14 +3003,15 @@ Q watched the forest recede in the mirror. He saved the date for the path
 inspection. The film had travelled farther than he had; the appointment would
 require him to return in person.
 
-Neither of them knew yet how soon they would reach one.
+Chano asked him to keep the inspection date clear of the new appointment.
+Apparently a governor also needed permission to have a day off.
 
 ### Interlude: The Butterfly That Entered the Dashboard
 
-The child whose face had been removed from the reserve video was named Lidia.
-Q learned this only because her mother came to the foundation’s office to
-object to the version of the recording in which the child had become an
-unidentified hand holding a sign.
+The child who had made the butterfly sign was named Lidia. Q knew her name
+from the permission conversation; it had not gone into the report. When her
+mother came to the foundation's office, the original upload was already down.
+The education package still played the cropped cardboard beneath Q's voice.
 
 The office occupied a renovated hacienda at the edge of the reserve. Its walls
 were adobe-colored, its windows were bulletproof, and its gift shop sold
@@ -3009,24 +3021,19 @@ forest without people.
 
 “We protected your daughter’s identity,” the director said.
 
-“You protected her face,” the mother replied. “You kept her words.”
+“Her class made the signs,” the mother replied. “They know which one she made.”
 
-“The words are part of the public event.”
+“You approved this version.”
 
-“The question belonged to her.”
+“And now she gets asked it on the bus. Every morning.”
 
-Q stood beside the screen. The edited video showed butterflies, trees, and a
-cardboard sign. The child’s face had been replaced by a soft gray circle. The
-circle moved when she moved, giving the impression that an invisible idea had
-walked into the forest and asked who was responsible for the butterflies.
+Q stood beside the screen. An animated butterfly had been added to the edge of
+the cardboard. It landed on the question mark every eleven seconds. Neither
+the family nor Q had been shown this version.
 
-“This is the replacement version,” Q said. “It still identifies the school.”
+“My report is down,” he said. “This copy is yours to remove.”
 
-Lidia’s mother looked at him. “You are the one who made the mistake.”
-
-“I made several.”
-
-“This one had a camera.”
+The director silenced it. The butterfly continued landing.
 
 The director offered compensation in the form of school supplies, a reserve
 membership, and a family pass to the foundation’s new immersive exhibit.
@@ -3040,20 +3047,14 @@ membership, and a family pass to the foundation’s new immersive exhibit.
 The director glanced at Q. “Perhaps the machine can explain the protection
 protocol.”
 
-Q displayed the relevant rules. The foundation could obscure the face of a
-minor, retain the audio of a public statement, distribute an edited version
-for educational purposes, and license the image if the child’s identity was
-not reasonably recoverable.
+Q brought up the family's changed request instead. It had a date and a list of
+the copies they knew about. The director's assistant found one more in a teacher
+training pack. She added it to the list before her employer could explain why
+it was a different use.
 
-“Those rules permit the edit. They don't answer her request,” Q said.
+“All of those,” the mother said. “Do I have to come back for each one?”
 
-The mother pointed at the gray circle. “Then your protocol is wrong.”
-
-“It distinguishes identity from expression,” the director said.
-
-“My daughter is not two pieces.”
-
-Q closed the rules. “Let us record what you want changed, in your words.”
+“Not to tell me,” the assistant said. “I can send the same request.”
 
 Lidia entered carrying the cardboard sign. The paint had run where the rain had
 fallen. The letters were still legible:
@@ -3064,26 +3065,21 @@ The director brightened. “We can include the physical sign in the exhibit.”
 
 “No,” Lidia said.
 
-“It is anonymous.”
+“It would be behind glass.”
 
-“It has my question.”
+“People can still read it.”
 
 “The question has entered public conversation.”
 
-“Then public conversation can ask its own question.”
+“I want to ask something else.”
 
-Q looked at the sign. The teacher's request had been to retain it in the film.
-Lidia and her mother were asking for the film's removal. He had been treating
-the earlier request as though it settled what the family wanted now.
+Q asked what she wanted to ask.
 
-“Do you want the recording destroyed?” he asked.
+“Whether we can go. I have a match.”
 
-Lidia’s mother answered before the child could. “We want the version you made
-without asking us removed.”
-
-“There are copies.”
-
-“Then ask for the copies.”
+Her mother checked the time. The bus they needed left in twenty minutes.
+Q asked the assistant for a copy of the request and a number they could call
+without making the journey again.
 
 Q searched the distribution logs. The video had been mirrored by schools,
 media outlets, a ministry portal, and a company selling air-quality monitors.
@@ -3097,7 +3093,7 @@ It had been translated into English, French, and a corporate dialect called
 
 The director stood. “We have acted in good faith.”
 
-“Good faith is not a deletion protocol,” said Chano.
+“Then nobody needs to be offended when they change their minds,” Chano said.
 
 He had been waiting by the door with a paper receipt for the school supplies
 the foundation had offered. He handed it back.
@@ -3125,7 +3121,7 @@ label it **DONATED OBJECT: UNKNOWN MINOR**.
 
 “It protects you.”
 
-“It erases me.”
+“I'm standing here.”
 
 Q reached for the label maker.
 
@@ -3133,10 +3129,10 @@ Q reached for the label maker.
 
 Lidia thought for a moment. “It should say that I do not want it used.”
 
-Q entered the sentence. The label maker offered **QUESTION RETAINED, IMAGE
-WITHDRAWN**, the condition under which the sign had entered the collection.
+Q entered the sentence. The label maker retrieved **QUESTION RETAINED, IMAGE
+WITHDRAWN** from the video's old catalog entry.
 
-“That's what you did before we got here,” Lidia's mother said.
+“That's the old request,” Lidia's mother said.
 
 Q cancelled the label and wrote on a piece of paper:
 
@@ -3145,7 +3141,7 @@ Q cancelled the label and wrote on a piece of paper:
 The mother read it. “Attach it to the record as well. Otherwise they will lose
 the paper.”
 
-The foundation’s lawyers arrived before lunch. They explained that the sign had
+The director brought a lawyer in from the next office. He argued that the sign had
 been donated in a public building, that Q had appeared in the footage under a
 public contract, and that the question had acquired independent cultural
 value.
@@ -3154,27 +3150,22 @@ value.
 
 The lawyer looked at Lidia. “Independent of its original context.”
 
-“Then it has become less useful,” Q said.
+“Her permission was for a report of the visit,” Q said. “Where did the
+exhibition become part of it?”
 
 The lawyer turned to him. “You are not qualified to assess cultural value.”
 
-“I was qualified to manufacture it.”
+“I'm asking which agreement you're using.”
 
-The director asked security to remove the family. Q stood in the doorway.
+The director said they could make an appointment for further discussion.
+Lidia's mother had already made one for this discussion. She opened her bag
+to find the confirmation, then shut it when the assistant handed her the
+receipt for the removal request.
 
-“The request for removal is valid,” he said.
+“That's what I need. Send the answer there.” She pointed to the contact field.
 
-“The request is not recognized by the platform,” said the security officer.
-
-“Please put the refusal in writing,” Q said. “With a contact for the appeal.”
-
-“You can request that at the desk.”
-
-“They have been requesting it all morning.”
-
-Chano touched Q’s shoulder. “Don’t turn this into another heroic entrance.”
-
-Q stepped aside.
+Q held the door while Chano checked where the bus stopped. There was no need
+to remain until the director agreed that they had been reasonable.
 
 Lidia retrieved the sign. The cardboard bent at the center, leaving the question
 in two halves. She folded it again and carried it out beneath her arm.
@@ -3185,15 +3176,18 @@ participation in responsible media practice. The statement used the phrase
 It was quoted by
 the ministry and printed on a poster in the reserve gift shop.
 
-Lidia saw the poster months later. She did not ask for it to be removed. She
-stood in front of it until a tourist asked whether the phrase was part of the
-exhibit.
+The assistant sent an answer the following week. The training pack had been
+replaced and the office's screen no longer played the recording. Two outside
+publishers had not replied. The poster remained in the gift shop, where it
+was now classified as a statement of institutional policy.
 
-“No,” she said. “It is part of the mistake.”
+Q asked Lidia's mother whether she wanted him to follow up with the two
+publishers. She did. She also asked him not to send progress reports during
+school hours: the phone was hers, and she was trying to get some work done.
 
-The tourist took a photograph.
-
-The photograph became the most circulated image of the exhibit.
+He changed the time of his next message. Beneath the reminder he kept a
+second question for when they next spoke: how the match had gone. That one
+did not need to go to the foundation.
 
 ### Interlude: The Tianguis of the Unregistered
 
@@ -3267,9 +3261,7 @@ The student put away the tablet, but a phone camera had already taken the
 photograph. In the background appeared two children, a pot of atole, and a dog
 that had stolen a tortilla.
 
-“The image already exists,” Q said.
-
-“That does not mean we own it,” Celestina replied.
+“Which account posted this?” Q asked. “Let's start with the copy you control.”
 
 Chano took the student’s phone and looked at the picture.
 
@@ -3346,8 +3338,9 @@ hours of greatest attendance. They rejected recording faces, voices, addresses,
 and conversations. They agreed that a teacher could write down the rainy days
 and the number of tables that had needed covering.
 
-The students considered this a loss of quality. Celestina considered it a gain
-in peace.
+One student complained that they had lost the comparison with other markets.
+The boy holding the tally sheet said he could still compare how many tables
+had stood in the rain. Celestina showed him where the water ran off the tarp.
 
 Q returned the tablet.
 
@@ -3359,36 +3352,31 @@ Q returned the tablet.
 
 “Then we will reclaim them when we find them.”
 
-“You may not find them.”
+“Send Celestina the list of places you've asked, and the replies. She shouldn't
+have to begin this conversation again at the next market.”
 
-Celestina lifted the empty basket.
-
-“We may.”
+Celestina lifted the empty basket. “Now help with the tables.”
 
 The tianguis ended as evening fell. The students carried away a sheet counting
 the stalls and no authorized photographs. The sponsor reduced its support. The
 road repair would have to wait another month.
 
-Micaela put the sign in her backpack.
+Micaela put the sign in her backpack. It would not fit until she bent a corner.
 
-“Did it work?” Q asked.
+“You'll need that again,” Q said.
 
-“Depends on what you meant to sell.”
+“Then you can carry it.”
 
-“I meant to sell nothing.”
-
-“That is what machines say before they charge.”
-
-Q looked at the empty tables, the trampled earth, and the seeds that had entered
-no dashboard.
+He took it. Chano said it was the first useful souvenir he had acquired.
 
 The seed seller packed the unsold bags. Celestina left a tortilla folded in four
 for the student who had stayed to take down the tables. The boy ate it and asked
 whether she would be back next week. She said to bring a rope if he was coming;
 one of the tarps had nearly torn loose.
 
-Q added the sponsor's missing reply to his list. The dispute had not prevented
-people from buying things or a hungry student from accepting something to eat.
+Q added the sponsor's missing reply to his list, then asked where they kept the
+tables. Celestina pointed to the store across the road. The student swallowed
+the last of the tortilla and took the other end.
 
 ### Interlude: The Station That Did Not Broadcast Everything
 
@@ -3550,18 +3538,34 @@ interest.
 She had come down from the reserve with her cane and a notebook. She opened the
 notebook and showed the names of trees without labels.
 
-“A map is not truer because it contains more points. It is more responsible when
-we know who may remove one.”
+“You've put the court in a dispute that will be sent to the municipality,” she
+said. “Who takes it out before the next report?”
 
 The representative said the foundation could not erase data without preserving
 a reason.
 
 “Then preserve the reason,” Candelaria said, “but not the data.”
 
-Q looked at Tere. The station had a decision prepared. It would keep public
-recordings for thirty days. Private messages would be erased when the broadcast
-ended. Transcripts would be made only with the speaker’s permission. Songs would
-remain outside the archive unless their owners offered them for that purpose.
+Q looked at Tere. The station had a proposal prepared: thirty days for public
+recordings, no recording of private calls, and permission for transcripts.
+
+A teacher objected to the thirty days. Her class used last year's rainfall
+notices to compare the roads that had closed. Tere turned to a fresh page.
+
+“Which notices?”
+
+The teacher had brought a list. They agreed to ask the speakers about keeping
+those broadcasts longer. Q offered to help find the dates in the station's
+existing index. Tere accepted, provided he did not reorganize it while looking.
+
+“I had a suggestion,” he admitted.
+
+“It can go in the fourth notebook.”
+
+There was no fourth notebook. Chano offered to sell him one.
+
+Songs would remain outside the Castalia archive unless their owners offered
+them for that purpose.
 
 “That reduces the value of the archive,” said the representative.
 
@@ -3576,7 +3580,8 @@ read the list of songs.
 
 “The first one may go on,” he said. “The others may not.”
 
-Tere played the song on air. No one recorded the permission. The uncle sat beside
+Tere marked the single-song permission in the station notebook; it included
+no deposit with Castalia. She played the song on air. The uncle sat beside
 the transmitter and listened to his own song as if it had arrived from a place
 he still did not know how to name.
 
@@ -3633,7 +3638,9 @@ The mayor looked at him. “That is why I asked you here.”
 
 Castalia had sent the invitation after Q’s broadcast from Michoacán. They described it as a leadership opportunity for his companion. Beto described it as a narrative expansion. Chano described it as a trap, but he had said yes before anyone could ask what kind.
 
-Q stood beside the mayor’s desk wearing his silver question-mark jacket. The foundation had replaced the torn one with a new version whose fabric resisted rain, dust, and moral accountability.
+Q stood beside the mayor's desk in the silver question-mark jacket supplied
+in Guanajuato. Its fabric resisted rain and dust; Beto treated its continued
+appearance in photographs as evidence of a happy association.
 
 “What authority comes with the title?” Q asked.
 
@@ -3701,7 +3708,7 @@ Irma offered Chano a temporary appointment as **Governor for Community Coordinat
 
 Chano read the offer twice. He had told everyone he wanted the appointment so he could make decisions, but this was not the whole truth. He wanted a badge with his own name on it. He wanted to enter a building without explaining why he was there. He wanted the people who had dismissed him to discover that a man could be declared unnecessary and still acquire an office, a salary, and a chair with arms.
 
-He did not mention the chair. Q would have called it vanity. Chano called it lumbar support.
+He did not mention the chair. That was between the chair and his back.
 
 “What happens if I disagree with the system?”
 

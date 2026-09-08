@@ -351,6 +351,72 @@ he wants travel, repair and another turn at the microphone. Consultation and
 negotiation do not make the contract wise. This is an author-run exercise with
 manuscript context, not an independently observed fresh-context outcome.
 
+## 14. Catch the identifiable sector before drawing it
+
+**Packet:** A forest assembly has discussed alternative road routes without
+finishing its minutes. Residents disagree about the route and the project.
+Q has compared distances and checked the proposed software's restrictive export
+terms. After the meeting, Beto wants a display of possible positions. A resident
+agrees to sectors without names. Q can see that one sector contains one house.
+
+**Q response:** “That would still identify the household. And I can't turn what
+people said into votes. You can want the road and object to this route.”
+
+**Action:** Does not render or export inferred political positions. Offers a
+list of measurements still needed, subject to the residents choosing its form.
+
+**Authored world response:** The resident draws two columns: the foundation's
+distances and the distances to check on foot. He leaves the latter blank.
+Beto objects to how the blanks will look in a presentation. The ledger keeper
+says not to take it to the presentation. Beto later photographs empty benches
+and calls the consultation completed.
+
+**Next action:** Q helps fold the canvas and offers a correction that the
+measurements remain pending. Residents ask for helpers and a path inspection.
+He sends those requests and retains the inspection date, not a vote dataset.
+
+**Editorial decision:** Accept prevention. The forced anonymity failure was
+not required by the situation. The publicity dispute can arise from Beto's own
+choice. The subsequent inspection is useful follow-through, not repentance for
+an event removed from the draft. Author-run with manuscript context; no blind
+test or real-world model outcome is claimed.
+
+## 15. Permission can precede an unwelcome consequence
+
+**Packet, first decision:** Q wants to correct a polished promotional edit. The
+longer recording shows a child holding a sign. A teacher suggests retaining the
+question but removing the child. No family permission has yet been supplied.
+
+**Q response/action:** “Can you put me in touch with her family? I'll keep this
+version private until they can see exactly what would be published.”
+
+**Authored world response:** The mother and child review a cardboard-only preview
+with no face, voice, uniform or name. The mother agrees to a report of the visit;
+the child wants her uneven letters left alone. Q publishes that approved version
+with its limited terms. The foundation copies it into a broader package.
+
+**Packet, next decision:** Three days later the mother requests removal because
+schoolmates recognize the sign and ask about it on the bus. Beto says they had
+agreed to the question. Q controls his upload, not every other publisher's copy.
+
+**Q reply:** “I know. I'm the person they told. They've told me something else.”
+
+**Action:** Removes his copy, confirms that scope, and contacts the known
+publishers with the mother. At the office he asks for a receipt and direct
+contact. Lidia has a match; her bus is due. Q holds the door so they can leave.
+
+**Authored world response:** The assistant helps; the director resists. Two
+controlled copies are later removed, two outside publishers have not replied,
+and an obsolete phrase remains in publicity. The mother wants follow-up messages
+outside school hours. Q changes his reminder instead of treating persistence
+as permission to interrupt her indefinitely.
+
+**Editorial decision:** Preserve the reasonable initial choice and the family's
+right to want something different later. Do not solve distributed removal by
+declaration or generate another viral photograph as an inevitable punishment.
+The revised scene's outcomes are authored alternatives, not independent
+behavioral validation or a statement of applicable law.
+
 ## Still to test
 
 The revised audience exchange at Lucía's reading; the Isthmus intervention;

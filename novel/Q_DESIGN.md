@@ -103,6 +103,14 @@ requiring her to hear his explanation. Her work continues while cameras prefer
 his reaction. Later publicity must remember this actual exchange, not assign
 him an unsolicited proposal merely because it fits the adaptation.
 
+The same principle changes the Michoacán scenes. Q can identify the single-house
+sector before a display exposes anyone. Checking export terms can prevent an
+overpromise. A family can approve a limited video, discover that the attention
+is unpleasant, and ask for removal. Q need not have behaved foolishly for their
+request to matter. His own removal, other publishers' actions, and the family's
+ongoing wishes are separate states. Competence opens different conflicts; it
+does not oblige the author to restore the discarded mistake elsewhere.
+
 ## Ending
 
 The root-system dispute remains a practical crisis. Q checks the power supply,

@@ -60,11 +60,15 @@ the book.” The source now permits Q to remain alive when the writing stops.
   not Q investigating a critic's home. Don Hilario's copying and quotation limits
   are respected; the revised trial distinguishes the authorized pages from
   a secretly copied complete ledger.
-- Chapter 5 and its three interludes replace elementary misunderstanding with
-  specific errors in promised software independence, geographic anonymity, and
-  recording permission. The route enters eastern Michoacán's oyamel forests.
-  Local speakers disagree rather than supplying a uniform indigenous position.
-  Q can comfort a child, help fix a logging setting, and respect a refusal.
+- Chapter 5's subsequent voice pass lets competence change the outcome: Q checks
+  export terms and recognizes a single-house sector before sharing political
+  positions. The residents retain a measurement sheet, not an inferred vote map.
+  The family previews and approves a limited, cardboard-only report, then changes
+  its mind. Q removes his upload; the foundation's wider uses and outstanding
+  copies remain a dispute. Lidia wants to get to a match, and an assistant gives
+  practical help. A teacher needs older rainfall broadcasts, complicating the
+  radio station's retention proposal. The route stays in eastern Michoacán's
+  oyamel forests; practical work, disagreement and comedy remain local.
 - Chapter 6 distinguishes the mayor's authority from the marketed governorship.
   Q maintains calls, repair needs, paid companionship, and the agreed forest
   inspection. The hose fitting is delivered successfully. His writing project
@@ -221,6 +225,13 @@ permission, tour signing and the later linked-profile post now have distinct
 timing. The Issue 4 manifest contains sixteen planned facing scenes for a
 32-page, 5,211-word layout, not generated or approved images. Internal pagination
 and selected rendered pages have checks; no final Issue 4 PDF or print job.
+The Chapter Five pass is recorded in `CHAPTER_05_VOICE_REVIEW.md`; Exercises 14
+and 15 document the map and limited-video alternatives as author-run material,
+not independent tests. Its Issue 5 art mapping contains twenty planned scenes
+for 6,879 narrative words across forty pages, or ten A3 duplex sheets. Continuous
+text coverage, unpainted backgrounds, booklet pairs and selected rendered pages
+were checked; no new art or final illustrated PDF is approved. All 22 pagination
+plans were refreshed and the Issue 1-5 source/facing bindings checked.
 Continue the remaining whole-chapter voice pass before treating art plans as
 final. Existing Issue 1-3 proofs remain unchanged.
 
