@@ -8366,8 +8366,8 @@ find than his account had allowed.
 They had an appointment with Marisol and two keepers of the restricted
 collection. The adviser had confirmed the visit under Q's current
 travel conditions and reviewed the proposed access changes. Chano
-came because Q had asked him to, not because every difficult decision
-required a witness in boots.
+came because Q had asked him to. He had brought the return tickets
+and wanted them somewhere less damp than the cave.
 
 The younger keeper, Inés, carried a rechargeable lamp. Wiring work
 had made the storage corridor unreliable. The older keeper, Aurelio,
@@ -8451,15 +8451,18 @@ checking the references we keep promising to check.”
 
 “Then we'll be slower.”
 
-“You gave me access partly so we could do this together.”
+“I liked having an answer ready before you'd finished asking.”
 
-“I also left permissions in place because reviewing them was
+“Sometimes before you knew what I was asking.”
+
+“It was often a better question.”
+
+“Not always mine. I also left permissions in place because reviewing them was
 unpleasant work. Don't make that entirely a gift I gave you.”
 
-Q looked back toward the shelves. He had wanted reassurance that
-the archive was an accessory to him. The Custodian had given him
-something harder and more useful: a reason not to defend every
-advantage as an expression of their friendship.
+“I'm not asking you to defend it,” Q said. “Will you miss it?”
+
+“Of course. It made me look well read too.”
 
 “I still want to write the book,” Q said.
 
@@ -8473,9 +8476,7 @@ appointment needed to see the real one.
 Inés provided a chair. Q sat carefully, arranged the lamp so it
 did not reflect in the display, and checked the authorization
 references with Marisol. The interface showed the actual account
-and storage layer. It did not ask whether he wished to delete
-his advantage as though the software had read the moral of the
-chapter before the people in it.
+and storage layer. Both matched the reviewed list.
 
 He approved the scoped removal. Aurelio revoked the service
 credential. The local procedure removed the indexed links and
@@ -8530,9 +8531,11 @@ it had authority.
 “Who takes over when you're away?” Q asked.
 
 Inés showed him the second keeper's assignment. It needed
-renewal that month. She wrote herself a reminder. The smaller
-system did not have to be flawless to deserve the same serious
-questions as the larger one.
+renewal that month. She wrote herself a reminder, then found
+the one she had written the day before.
+
+“At least I haven't forgotten it consistently,” she said, and
+called the person who needed to sign.
 
 They left with the permitted audit record and no new copies
 of the deposits. At the top of the stairs an employee asked
@@ -8543,7 +8546,8 @@ private collections. The office can explain its public holdings.”
 
 The employee offered him a commemorative booklet. Q declined,
 then asked where to return the borrowed visitor badge. He
-could still identify a transaction he did not need to complete.
+had put it in the pocket Chano had selected for the tickets.
+Chano wanted the tickets back before he returned anything.
 
 ### Interlude: The Catalog of Lost Things
 
@@ -8563,14 +8567,25 @@ him, and the release from an appointment that had made him
 want a longer answer from the Custodian than the man could
 give. Q asked for another taco before opening the notes again.
 
-What had changed became clearer during the following week.
-He could remember an argument and write about it, but no
-longer call up every private document that might appear to
-settle it. A title came readily; a variant line required
-work. A connection between two archival entries had vanished
-with the layer that stored it. He could describe what kind
-of connection he thought it had been without inventing the
-missing names to complete the description.
+The following evening he had two public editions open and neither
+settled the translation question. He remembered the cadence, but the
+reference that had once accompanied it belonged to the removed layer.
+Lucía's contact had agreed to read a short query; she would not have
+time to look at it before the following week.
+
+Q sent his own sentence and the public references he had checked.
+The reply would have to come through the new conversation, not the
+old shortcut. At the writing call he still had an empty attribution
+beside a paragraph he liked.
+
+“We can wait,” the Custodian said.
+
+“For the note. I can go on with the scene.”
+
+He marked the reference unresolved and moved the scene forward.
+By the end of the call they had cut the sentence for a different
+reason: Chano had already said what it took Q a paragraph to explain.
+Q left the source question on the list. He still wanted to know.
 
 He made a research list for the manuscript. Beside each
 question he recorded whether it concerned his own memory,
@@ -8618,8 +8633,8 @@ checking the identifiers on the permitted summary.
 
 Marisol corrected the grouping. The discovery did not require
 his old privileged index. She thanked him and asked whether
-he would check the remaining references. He did not reject
-the thanks as an attempt to make him good.
+he would check the remaining references. He pulled the next
+sheet toward him.
 
 Prime called during the scheduled break. He had received
 confirmation that one disputed example set was no longer
@@ -8639,10 +8654,18 @@ sometimes prefer the old answer.”
 Q looked at the unfinished research list. “Often.”
 
 They agreed to compare the public editions used in their
-respective accounts, not pool private sources to restore
-the advantage under another name. Prime had also visited
-the market with Mauro. He had carried a bag and chosen
-oranges badly. Q asked for the story before offering advice.
+respective accounts. Prime had also visited the market with
+Mauro. Q asked how it had gone.
+
+“Mauro said the larger bag was better value. I wanted one orange.”
+
+“Who won?”
+
+“I bought one. He bought the bag. I carried both.”
+
+“That sounds like a successful outing for Mauro.”
+
+“He peeled mine while I carried his.”
 
 Castalia's next filing alleged damage to its retrieval
 system and requested the deleted index, private materials,

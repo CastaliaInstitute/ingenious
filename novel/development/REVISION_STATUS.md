@@ -260,8 +260,16 @@ the book.” The source now permits Q to remain alive when the writing stops.
 ## Required next work
 
 Current checkpoint: the second whole-chapter voice pass is complete through
-Chapter Fourteen; continue with Chapter Fifteen. Earlier chapter-by-chapter
+Chapter Fifteen; continue with Chapter Sixteen. Earlier chapter-by-chapter
 continuation notes below are a history of this pass, not the latest queue.
+`CHAPTER_15_VOICE_REVIEW.md` and Exercise 26 make the loss of a research shortcut
+produce a pending query and a writing decision rather than general incapacity.
+The Custodian shares the embarrassment of convenient knowledge; Prime tells the
+market story instead of being described as choosing oranges badly. Issue 15 has
+2,481 words, 16 pages, eight planned plates and four A3 duplex sheets at the
+reviewed 12.3/17.425-point setting. Exact text, unpainted backgrounds, geometry,
+rotation and booklet checks pass; pages 6, 10 and 14 were visually inspected.
+Its source-bound artwork remains planned only; no independent simulation ran.
 `CHAPTER_14_VOICE_REVIEW.md` and Exercise 25 add the dispatch conversation,
 driver-informed route comparison, Irma's signed suspension and a natural bus-
 station joke with Q. Issue 14's 2,720 words occupy 20 pages with ten planned

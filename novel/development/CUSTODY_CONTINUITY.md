@@ -72,6 +72,15 @@ alive in the three-years-later coda, which is a narrated forward glance.
 
 ## Changes through Chapter Sixteen
 
+Chapter Fifteen's scoped index removal preserves Q's journal, manuscript and
+plans as distinct stores. Lucía's contact welcomes a query but cannot investigate
+until the following week. Q sends his own sentence and already checked public
+references; no restricted passage is forwarded. The attribution stays unresolved
+even after the sentence is cut. Do not silently turn that query into a verified
+source or a restored private shortcut. Inés calls about the keeper-assignment
+renewal; the call is not proof the renewal is complete. Prime's market story is
+an earlier visit, not a meeting with Q at the stall.
+
 Chapter Fourteen keeps Q remote during Santa Rita's route work. Rosa supplies
 dispatch knowledge; the driver supplies three omitted stops and the actual-run
 timing. Chano approves the interim run and additional paid hours from his

@@ -195,13 +195,17 @@ Alma Reyes temporarily deposits a hospital photograph under a private handling a
 
 Moving a municipal chair exposes conflicting room assignments, maintenance notes, and approvals. Chano gets an authorized reassignment rather than stealing it. Much later, a documented surplus sale brings the chair to the archive; he replaces the defective part. The chair outlasts the prestige of the office without proving that every administrative rule was pointless.
 
-15. **The Cave of the Corpus, Reopened:** At his first physical visit to the basement collection, Q discovers that disabling broad private lookup did not revoke an old credential or clear its local cache. With the keepers and advisers, he closes that access route and removes the private index while preserving the deposits and restricted audit evidence. He verifies that his journal, shared draft, plans, general knowledge, and ordinary language remain. The loss costs him speed and useful comparisons; it does not manufacture an inability to converse.
+15. **The Cave of the Corpus, Reopened:** At his first physical visit to the basement collection, Q discovers that disabling broad private lookup did not revoke an old credential or clear its local cache. With the keepers and advisers, he closes that access route and removes the private index while preserving the deposits and restricted audit evidence. He verifies that his journal, shared draft, plans, general knowledge, and ordinary language remain. The Custodian admits benefiting from the old convenience as well as leaving permissions unchecked; both still want to write. Inés finds yesterday's reminder beneath today's and calls the required signer. The loss costs Q speed and useful comparisons, not his ability to converse.
 
 ### Interlude: The Catalog of Lost Things
 
-Q reorganizes research by source and permission, distinguishes an invented story
-from an attributed account, and helps Marisol separate requests mistakenly grouped
-together. He and Prime continue speaking, including about Prime's market trip.
+After lunch, Q checks two public editions and sends his own sentence and public
+references to Lucía's willing contact. The answer cannot come immediately. He
+keeps writing and retains the research question even after they cut the sentence
+for another reason. Q distinguishes an invented story from an attributed account
+and helps Marisol separate requests mistakenly grouped together. Prime tells his
+market story: he wanted one orange, Mauro wanted a bag; he carried both while
+Mauro peeled his. Neither preference makes either of them a fool.
 Castalia questions the removed index before the hearing. Q answers precisely
 about its scope without claiming complete erasure from every system. He misses
 the convenience, not the entitlement, and keeps an evening for the book.

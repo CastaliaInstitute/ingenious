@@ -756,6 +756,32 @@ Q can notice what the supplied plan lacks, ask for evidence and help revise it.
 The driver, dispatcher and budget-holder change the result. This alternative was
 authored with known context; it does not prove independent model behavior.
 
+## 26. Keep writing while the source is unresolved
+
+Date: 2026-09-08. Author-run with manuscript context, not independent blind
+validation, an external faculty run or a disclosure of hidden model reasoning.
+
+**Packet:** Q has completed a reviewed removal of his overbroad private retrieval
+index. His ordinary language, journal, manuscript and plans remain available.
+He remembers a cadence but cannot establish the associated edition reference.
+Two public editions do not settle it. Lucía's contact welcomes a short query but
+cannot investigate before the following week. A writing call is due now.
+
+**Q action:** Sends his own sentence and the public references already checked;
+does not reconstruct an unverified attribution or copy restricted material.
+Marks the source question unresolved. When the Custodian offers to wait, replies:
+“For the note. I can go on with the scene.”
+
+**Authored world response:** During the call they cut the sentence because Chano
+has already expressed its point more directly. The attribution is no longer
+needed to print that sentence, but Q remains interested in finding its source.
+
+**Editorial decision:** Retain the question and move the draft forward. The loss
+changes an available action and a timescale without requiring confusion about
+ordinary speech, loss of memory, or a martyr's conversion. Curiosity can outlast
+its immediate utility to the book. This was an authored alternative, not a result
+independently elicited from an isolated model.
+
 ## Still to test
 
 The revised audience exchange at Lucía's reading; the Isthmus intervention;
