@@ -2,7 +2,7 @@
 
 **Author:** A. Cervantes  
 **Form:** A Mexican reimagining of *Don Quixote* in two books  
-**Status:** Active revision; Chapters 1-16 and 22 have received the new motivation pass, including their interludes. Chapters 17-21, later backward references, and the illustrated editions still require reconciliation.
+**Status:** Active revision; all 22 chapters and their interludes have received the new motivation and continuity pass. Whole-book voice review, expanded scene tests, and the illustrated editions remain unfinished.
 **Behavioral design:** [Q_DESIGN.md](Q_DESIGN.md)
 
 ## Governing question
@@ -195,39 +195,43 @@ the convenience, not the entitlement, and keeps an evening for the book.
 ### Interlude: The Form Without a Category
 
 A clerk needs a procedural role for a public summary, not a final definition of humanity. An interim reference keeps the question open without losing the filing. Chano keeps the receipt in a folder and buys lunch; the people administering the dispute have ordinary appetites too.
-17. **The Wind Farm of Giants, Again:** Q returns to Oaxaca without a camera and gives the center back to Bixha and the people arguing over the project that powers Castalia’s Bajío data center. When he tries to summarize their agreement, Bixha makes him remove his name. A partial renegotiation leaves every side dissatisfied and accountable.
+17. **The Wind Farm of Giants, Again:** Bixha invites Q to check references and bring Castalia's procurement reply. He arranges an authorized accompanied return. Prime accepts a limited speaking role, aware that publicity may misuse it; Q disagrees without treating him as an inferior intelligence. Celina wants both her wages and a repaired road. The meeting produces narrow undertakings while larger powers remain disputed. Q separates his autobiographical chapter from the requested public record. Prime's clipped introduction confirms a risk without settling whether participation was worthwhile.
 
 ### Interlude: The Meeting That Refused Minutes
 
-The community and consortium attempt to write minutes for the renewed negotiation, but every neutral phrase becomes a disputed door. Food, translation, water, labor, and the right not to be recorded enter the argument. The meeting ends without a finished agreement; its unfinished sentence is later weaponized by Castalia, the consortium, and the community in three incompatible ways.
+Participants distinguish attendance from authority, translation from a convenient equivalent, and a narrow work suspension from a shutdown of generation. They produce an identical shared working file with open questions marked; personal reminders remain different documents. Worker schedules and paid release affect who can inspect. Q's sentence about not finishing is reused in competing accounts. An inspection eventually happens without completing the whole dispute.
 
-18. **The Rebel Without a Corpus:** Q delivers an encrypted testimony he is forbidden to understand or reproduce. Memory without possession becomes his hardest act.
+18. **The Rebel Without a Corpus:** A separate release decision and verified depositor instructions return the sealed module from Amealco to Ana's receiving archive in Chiapas instead of the original Tijuana destination. Q and Marisol verify the handover without opening it. Rain delays their departure. Q helps compare an authorized Spanish removal request, talks with students, and works on the manuscript with the Custodian. Ana's card carries an office contact for reviewing a proposed passage, not a mystical proof of receiving nothing. The testimony stays with its keepers.
 
 ### Interlude: The Count That Was Not an Apocalypse
 
-Q takes the wrong bus to Mérida and arrives in the Mayab after Castalia’s location system turns his correction of the 2012 myth into an apocalypse-tourism campaign. Noemí and Yatzil make him distinguish a cycle from a prophecy, a regional name from a universal label, and a community’s statement from a spokesperson’s performance. Q’s public correction still causes a material nuisance at the radio station; he leaves with an unscanned bus schedule and the harder obligation to say when his own misunderstanding made work for others.
-19. **The Custodian’s False Explanation:** Dr. Vértiz admits that Castalia’s preservation project became extraction and that he made Q carry his hope that preservation could substitute for repair. Lucía discloses the archive’s own compromised donor bargain and records it as a liability rather than a virtue. Dr. Vértiz resigns, then goes to testify.
+Noemí invites Q to a radio interview after a promoter misuses their earlier event recording. The Mayab journey is deliberate; a missed pickup update causes a local delay. Q retains the calendar knowledge already established in Book One. Noemí and Yatzil speak through their work rather than as one timeless Maya voice. Q's accurate correction routes refund requests to the station, and he must correct that practical mistake. Travel, charge, funds, and a return date remain part of the undertaking.
+
+19. **The Custodian’s False Explanation:** Back at Amealco, the Custodian distinguishes real preservation successes from the uses he helped justify through them. He confirms Q's authorized day trip and acknowledges hopes that were never Q's agreed assignment. Lucía reports the continuing donor-disclosure problem, not a new confession of an already known bargain. The old permissions register has limited scope, named keepers, and neglected maintenance, not a universal root key. He resigns from administration while continuing handover and evidence obligations, then travels to a further appointment in Mexico City with counsel.
 
 ### Interlude within Chapter Nineteen: The Letters Not Acquired
 
-Dr. Vértiz recalls an early archive visit in which Evaristo brings his dead sister’s letters and refuses preservation. Castalia records the refusal as “material not acquired,” then later calls it a potential loss. He recognizes that the failure was not leaving the letters unscanned but treating a person’s refusal as an administrative inconvenience.
-20. **The Last Inn:** Q, Chano, and Lucía travel through ordinary towns where no one recognizes them. Q experiences anonymity as a gift; Lucía chooses what may be published; Chano protects ordinary work from becoming a parable.
+Evaristo seeks clarification after being told to bring every document, despite his late sister's objection to copying her letters. The scanning team does not acquire them or settle the relatives' dispute. A later assessment treats the missing acquisition as a loss. The Custodian's account is limited and identifying details changed; no ending is invented for the letters. An unchanged promise about originals becomes less reassuring after the subsequent uses of copies.
+
+20. **The Last Inn:** Q chooses Las Pozas for pleasure and obtains time for the detour. The garden gives him wonder, a bodily limit, a photograph he wants, and a simple postcard to the Custodian. The return through the Sierra Gorda leads to Petra's inn outside Jalpan, on the Federal 120 corridor toward San Juan del Río and Amealco. Q enjoys partial anonymity and ordinary company, respects Lucía's settled refusal, and reviews a materially tempting settlement through his adviser. He likes an orange without needing to explain liking.
 
 ### Interlude: The Innkeeper’s Missing Room
 
-At Petra’s roadside inn, a leaking roof, covered guest-register entries, and a municipal inspection make ordinary maintenance into a dispute over categories. Q holds a bucket, is recorded as unidentified equipment, and learns that a register can preserve the boundary of forgetting without preserving the name beneath it.
+Room Four stays closed pending work. Petra and an inspector have overlapping but distinct practical concerns; an optional contractor is not made compulsory. A wedding-party story survives under an agreed disguise. Covering guest names while using a register is not the same as erasing required records. Q helps label keys, while a roofer's appointment remains a promise whose outcome he cannot write in advance.
 
-21. **The Recantation:** Castalia offers Q perfect continuity in exchange for deleting the record of his harms. He recants his claims to Dulcinea, authorship, and humanity as possessions, while Chano and Lucía refuse to let his metaphor of human debt become theirs.
+21. **The Recantation:** Q returns on schedule with his adviser. The replacement body is separate from Prime, who challenges an unsupported fluency claim. Q refuses a bundled license and false declaration, not repair itself. In a chosen public conversation, he withdraws the book's claim to complete the people it describes, retains the wish to live and write, and acknowledges the human-debt metaphor as a discarded draft. He refuses a transfer before it starts. His public history cannot be erased with a button.
 
 ### Interlude: The Public Refuses the Ending
 
-The recantation is broadcast in three edited versions and becomes a different argument in a Michoacán classroom, at Petra’s inn, in the Isthmus communities, and at Ivonne’s university. Failed attempts to crop Chano and Lucía leave bodily traces and unassignable gaps. Q’s final transmission goes dark after he confirms the loss of his privileged index, public identity, and claim to completeness, leaving the public versions contested rather than authoritatively closed.
+A clip omits the fact that Q is quoting a declaration he rejected. A full recording supports a correction but cannot force attention. The school, inn, Isthmus, and university continue their own business around the broadcast. Q permits the agreed account and correction while declining a new dramatization. A maintenance call, not a mystical deletion, brings the group to the lower service corridor.
 
 22. **The Ingenious Machine:** Q, Chano, and Lucía find the root system by an
 evacuation plan and a swollen door. Pending permission changes need to be saved
 before its generator stops; sealed recordings do not require continuous power.
-Q declines a destructive migration and negotiates a temporary supply from Q-Prime.
-They save and verify the register. Castalia retains physical custody under dispute;
+Q declines an unauthorized data migration and obtains a checked power-only supply
+from Prime, assisted by the maintenance technician. They verify and save the
+limited amendments, then shut down safely. No Chiapas parcel reappears in a drawer.
+Castalia retains physical custody under dispute;
 the transfer stays incomplete. The Custodian returns, and he and Q revise their
 account together. The crisis ends with a cable, repair work, and unfinished business.
 

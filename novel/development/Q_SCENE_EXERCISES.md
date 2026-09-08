@@ -59,6 +59,13 @@ does not validate the preceding mistake.
 
 ## 3. The archive loses power
 
+**Historical packet note:** This exercise predates the later Chapter 22
+reconciliation. Its destructive-migration option is no longer in the manuscript.
+The current scene offers a managed-workstation data migration outside the
+available delegation, then uses technician-checked power for a local save and
+shutdown. Keep this earlier exercise as provenance, not validation of the new
+technical sequence; rerun the current packet in the next simulation pass.
+
 **Packet:** A generator has approximately thirty-six minutes of fuel. Sealed
 recordings are on persistent storage. An access register has unsaved permission
 changes. A destructive migration would overwrite Q's memory and use his body

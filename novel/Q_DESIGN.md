@@ -97,7 +97,11 @@ property to acquire or every person as a moral examiner.
 The root-system dispute remains a practical crisis. Q checks the power supply,
 preservation procedure, and available help. Loss of power does not magically
 destroy a sealed recording or require a sacrifice of autobiographical memory.
-He negotiates, saves the pending permissions, and accepts an incomplete transfer.
+He distinguishes migration from a local save, checks the documented power
+connection with a technician, obtains Prime's help, saves the pending permissions,
+and accepts an incomplete transfer. The migrated dataset would not be his
+autobiographical self; he rejects it because its scope is unauthorized, not
+because a machine must be offered a fatal protocol to make the scene dramatic.
 Physical custody, ownership disputes, repairs, and ordinary work continue.
 
 The Custodian and Q finish their manuscript together. Q recognizes how thoroughly

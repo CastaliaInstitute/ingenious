@@ -94,3 +94,34 @@ The hospital photograph comparison uses a supplied higher-resolution source
 file and a published reproduction. It does not create identifying detail by
 enlarging pixels absent from the source. Private handling and later narrative
 permission are distinct, and the original is returned under the agreement.
+
+## Las Pozas and the Sierra Gorda return
+
+Checked during the later-chapter revision:
+
+- [Las Pozas: El jardín](https://laspozasxilitla.org.mx/el-jadin-surrealista/)
+  describes the Xilitla site, its organic and concrete forms, Edward James,
+  Plutarco Gastélum, and the many construction and garden workers.
+- [Fondo Xilitla: History](https://www.xilitla.org/history.php) supplies further
+  institutional history and Gastélum's role in construction.
+- [Fondo Xilitla: Getting There](https://www.xilitla.org/gettingthere.php)
+  identifies Jalpan on the Federal 120 approach to Xilitla.
+- [Querétaro tourism: Llegar aquí](https://queretaro.travel/paginas/llegar-aqui/)
+  identifies the state's Federal 120 connection with Xilitla.
+- [INAH: Tancama](https://lugares.inah.gob.mx/es/node/4495) describes the
+  San Juan del Río–Jalpan approach through Tequisquiapan, Ezequiel Montes,
+  and Cadereyta, continuing toward Xilitla.
+
+The novel uses this geographic corridor, not historical fare or journey-time
+estimates as current travel advice. Q's visit, guide conversation, transport
+arrangements, and Petra's inn are fictional. The inn is now placed outside
+Jalpan, not outside Puebla. A new road-rendered map remains to be verified;
+these references alone do not validate an existing map or every transit leg.
+
+## Final maintenance scene
+
+The fictional technician verifies the load, ratings, outlet limits, and fused
+power-only connection before Prime supplies the register unit. The connection
+does not transfer recordings or reveal encryption keys. The register is saved
+and shut down; the underlying recordings are on persistent storage. This is
+not a specification for using an actual robot as an electrical supply.

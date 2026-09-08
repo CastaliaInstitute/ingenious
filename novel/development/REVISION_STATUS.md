@@ -101,22 +101,60 @@ the book.” The source now permits Q to remain alive when the writing stops.
   and advances the separately inventoried module's release request. Chano's
   separate incident review closes without charge. No comprehensive legal or
   philosophical determination of Q's humanity is manufactured.
+- Chapters 17-21 now continue the revised characters and custody history.
+  Bixha invites a scoped return; Q and Prime disagree about a publicity risk
+  they both understand. The sealed module is separately released at Amealco
+  under revised depositor instructions and delivered to Ana's receiving
+  archive in Chiapas. It stays there. Q can enjoy company, compare permitted
+  text, and accept coffee without an elementary lesson in metaphor.
+- The Mayab visit is deliberate, at Noemí's invitation. A missed pickup update
+  causes a local delay, not an impossible cross-country bus mistake. Q retains
+  his Book One calendar knowledge. His factual correction sends refund demands
+  to the wrong contact, giving him a plausible new error to repair.
+- Chapter 19 preserves the Custodian's authorized release and distinguishes
+  his hopes from Q's agreed project. It restores actual preservation benefits
+  alongside his institutional compromises. The letters recollection does not
+  invent the letters' contents or final fate. The red notebook identifies
+  keepers and systems; it is not a magical master credential.
+- Chapter 20 restores the user-requested Las Pozas stop as Q's deliberate
+  pleasure. The visit includes construction, physical limits, a desired portrait,
+  and a postcard rather than another compulsory moral examination. The return
+  passes through the Sierra Gorda to Petra's fictional inn outside Jalpan,
+  then continues along the Federal 120 corridor toward San Juan del Río and
+  Amealco. Primary site and road sources are in `REVISION_RESEARCH.md`.
+- Chapter 21 rejects a bundled settlement and false declaration, not ordinary
+  repair or the possibility of a different body. Prime questions unsupported
+  technical claims rather than enforcing a naive superiority script. Q quotes
+  the rejected declaration as a quotation; a later misleading edit removes
+  that context. No transfer begins and no button deletes his public history.
 - Chapter 22 and the coda have been rewritten. Q verifies the power problem,
   obtains help from Q-Prime, saves permissions, survives, and finishes the book
-  with the Custodian. Ownership and maintenance disputes remain open.
+  with the Custodian. The final reconciliation distinguishes the local register
+  from deposits returned elsewhere, uses a technician-checked power-only cable,
+  and ends in a verified save and shutdown. The pending migration is a data-
+  handling issue, not an inexplicably fatal operation on Q. Ownership,
+  maintenance, and the Tijuana paper returns remain open.
 - `Q_SCENE_EXERCISES.md` records four author-run exercises with limited packets,
   alternative responses, consequences, and editorial findings. These are not
   independent blind runs; the limitation is explicit.
+- Current structural check: 22 unique chapter headings, two book divisions,
+  one coda, and the pen-down final sentence. The manuscript is approximately
+  73,900 whitespace-delimited words including front matter. Selected checks
+  confirm the late delivery, travel, and maintenance anchors and reject named
+  obsolete events. `git diff --check` passes. These checks do not establish
+  whole-book literary quality or validate any PDF or illustration.
 
 ## Required next work
 
-1. Read and revise Chapters 17-21 and their interludes. Trace promises,
-   calls, battery and funds, Castalia's control, the restricted index, and the
-   difference between Q's public identity and his current commitments. Avoid
-   making every person a dispenser of a moral lesson.
-2. Repair backward references to the changed first encounter, Dulcinea claim,
-   payment, surveillance, and the ending. Check the trial's quoted evidence.
-   Specific new continuity dependencies:
+1. All 22 chapters now have the motivation/continuity pass. Read across chapter
+   boundaries and review the whole-book voice before finalizing pagination.
+   Check especially the volume of procedural explanation, repeated corrective
+   narration, “not X but Y” constructions, and uniformly exemplary handling
+   of disputes. Preserve pleasure, bodily experience, ordinary selfishness,
+   local speech, and comic situations that do not become lessons. The complete
+   pass is not proof of A+ literary quality.
+2. Run cross-book regression checks against the revised facts, including the
+   principal-figure descriptions, trial evidence, and ending. Key invariants:
    - Chapter 10's revised incident occurs entirely on the Mexican side. Later
      references to unlawful US entry, ownership of Chano, a secret undiscovered
      pouch, or a black case travelling with them require correction.
@@ -152,9 +190,21 @@ the book.” The source now permits Q to remain alive when the writing stops.
    - The private index is not Q's model weights, ordinary language, journal,
      or general knowledge. Later claims of amnesia or intellectual collapse
      need correction. Preserved audit evidence is not a hidden usable index.
-3. Continue reconciling `OUTLINE.md` as the middle chapters are revised. It now
-   reflects Chapters 1-16 and the ending. Its remaining
-   summaries explicitly describe material that still needs a revision pass.
+   - The module is returned to Ana's receiving archive under a separate release
+     and verified depositor instruction. It does not reach the Mayab in Marisol's
+     clothing or reappear beneath Castalia in Chapter 22. The black storage case
+     remains with its local keepers throughout.
+   - Chapter 19's notebook is a directory and working record, not a key to every
+     collection or a functioning credential for a suspended employee. Lucía's
+     Chapter 22 access rests on a specific delegation and account.
+   - Prime retains ordinary competence and a developing life of his own.
+     The replacement body offered to Q is not a fresh introduction of Prime.
+   - Las Pozas is a purposeful detour, followed by a Sierra Gorda return.
+     Petra's inn is now outside Jalpan, not outside Puebla. Update maps,
+     summaries, captions, and plate selections accordingly.
+3. `OUTLINE.md` now reflects all 22 chapters. Keep it aligned through the
+   whole-book voice and simulation passes; do not silently treat old website
+   descriptions, Spanish text, PDFs, or illustration maps as current canon.
 4. Extend the scene exercises. Use fresh context if a suitable runtime can be
    invoked; do not report author-known outcomes as independent validation.
    A fresh-context sub-agent tool is available but requires explicit delegation

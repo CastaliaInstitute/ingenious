@@ -2,8 +2,7 @@
 
 This is an author-facing continuity record for the revised English manuscript.
 It records the state at this point, not proof that every later chapter already
-matches. The update below records changes through Chapter 16; Chapters 17-21
-still require reconciliation.
+matches. Updates below trace the subsequent states through the ending.
 
 | Item or commitment | Current state | Constraint on later scenes |
 | --- | --- | --- |
@@ -54,3 +53,25 @@ The hearing does not settle humanity, ownership, every damage claim, or the
 archive's governance in one judgment. Q acknowledges his actual premature stop
 at the distribution park. The wind-farm operator's precautionary group stop is
 distinct from both that incident and the promotional picture of an attack.
+
+## Changes through the ending
+
+| Item or commitment | Final narrated state | Constraint on editions and later revision |
+| --- | --- | --- |
+| Southern itinerary | Approved accompanied visits, revised for the Mayab interview and later Las Pozas detour. Q returns on schedule. | No secret kitchen escape or unrestricted journey after an order of permanent confinement. |
+| Sealed module | Separately released from Amealco under verified revised instructions; received under seal by Ana's archive in Chiapas. | It is not carried to Mérida and is not the contents of the Chapter 22 drawer. Q never receives its keys or testimony. |
+| Chiapas black storage case | Still with the local keepers. | It never traveled north or appeared under Amealco. |
+| Tijuana papers | Chano's original ledger and Lucía's folders still await final release paperwork at the ending. | Their copies, notes, and receipts are not the originals. Unresolved recovery is acknowledged rather than magically completed. |
+| Ana's card | Office contact on one side, blank reverse, for reviewing a proposed passage. | It is not a mystical proof of receiving nothing and is not used to blank the recantation broadcast. |
+| The Custodian | Resigns from administration, continues handover and evidence obligations, later returns to write with Q. | He did authorize the first day trip. His unspoken hopes do not become Q's hidden instruction. |
+| Red notebook | Names, systems, requested work, and references; working copy with Lucía, evidence copy retained. | It is not a universal decryption key or a physical object a scanner can recognize as unrestricted authority. |
+| Lower permissions register | Limited Amealco holdings; seven amendments verified under delegated authority, saved, then shut down safely. | It cannot recover collections returned elsewhere. Lucía retains only the authorized register extract. |
+| Prime | Disagrees with Q about participation, challenges misleading technical claims, supplies checked power, and wants a garden visit. | Do not reinstate the malicious, literal-minded replacement personality or a forced transfer he never begins. |
+| Q's body | Existing body remains; replacement package unsigned; supported knee needs a part; ownership dispute continues. | Repair is not rejected as moral corruption. He remains operational after the last page. |
+| Proposed consolidation | Canceled before transfer begins; agreed evidence retained. | No repeated deletion of the already removed index, invented fluency collapse, or erasure of public identity. |
+| Full recantation recording | Retained under the agreement; some outlets circulate misleading cuts and partial corrections. | A public clip is not the complete event. The original is not magically lost in an overheated server. |
+| Petra's inn | Fictional establishment outside Jalpan; Room Four closed pending work, roof inspected, repairs outstanding. | The inspector does not live beneath the leak. The route no longer places the inn near Puebla. |
+
+The coda finishes the shared book. Q's plans, relationships, repair needs, and
+disputed circumstances continue beyond it. Textual closure does not require a
+physical death or a completed resolution of every claim.
