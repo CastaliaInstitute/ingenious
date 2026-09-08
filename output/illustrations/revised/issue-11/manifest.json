@@ -1,25 +1,45 @@
 {
   "issue": 11,
-  "revision": "2026-09-08-prime-first-conversation",
+  "revision": "2026-09-08-illustrated-second-author",
   "source": "novel/THE_INGENIOUS_MACHINE.md",
-  "chapter_sha256": "2d9ce452159022c467a9452ba0ed802937d2f980e969dbde80e0b674617aca13",
+  "chapter_sha256": "f11a0d2b5edd2f60784fe690a790db29ed14a35b4eb267541b8af695b18385ce",
   "page_count": 24,
   "text_font": "Georgia 13/18.416666666666668 pt",
   "plate_count_including_cover": 12,
-  "status": "planned; no new Issue 11 images generated or approved",
-  "character_reference": "output/illustrations/revised/issue-01/cover.png",
+  "status": "verified illustrated revision proof; not a press master",
+  "character_reference": "output/illustrations/revised/issue-04/plate-03.png",
+  "custodian_reference": "output/illustrations/revised/issue-01/cover.png",
   "chano_reference": "output/illustrations/revised/issue-03/plate-06.png",
   "character_design": "Preserve approved Q face, segmented head, ears, neck and articulated body; sponsor jacket, used finish and supported knee. Establish Prime as a clean, lighter-bodied member of the same recognizable face family, undamaged shoulder and no false memories drawn as witnessed scenes. Custodian male, tall, about sixty, long gray hair tied back, glasses, white work shirt. Mauro is the technician, not the Custodian.",
   "art_direction": "Neutral monochrome Goya-inspired etched realism, pure white highlights, no sepia or cream ink background. Full bleed at comic trim, separate typeset caption strip. Unique exact-facing scenes; contemporary Amealco laboratory and Querétaro shopping center. Prime is a competent peer, not a malicious copy or child. Recorded launch, laboratory embodiment, private greeting and public appearance are separate times.",
-  "approval_scope": "Source-bound scene plan only. No generated or approved assets, final illustrated PDF or print job. Continuous 24-page proof with 13/18.4167-point type; twelve A3 landscape sides / six short-edge duplex sheets. Rebind after source changes.",
+  "approval_scope": "Twelve selected native plates and every rendered reading/A3 page visually inspected. Exact source text, facing mappings, lossless DeviceGray images, font embedding and all actual folded-page text/image positions checked. Native 1024 x 1536 artwork is about 150 dpi at trim: no press-master or A+ certification. No print job sent.",
   "plates": [
     {
       "plate_id": "issue-11-cover",
       "page": 1,
       "asset": "output/illustrations/revised/issue-11/cover.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The Second Author",
-      "scene_brief": "Q and Prime in the backstage side room with their different orange peels on the small table between their chairs. Same recognizable face-family, different wear and body condition. This is a conversation before performance, not a battle of doubles. Leave quiet upper space for separately typeset title."
+      "scene_brief": "Q and Prime in the backstage side room with their different orange peels on the small table between their chairs. Same recognizable face-family, different wear and body condition. This is a conversation before performance, not a battle of doubles. Leave quiet upper space for separately typeset title.",
+      "title_lines": [
+        "The Ingenious",
+        "Machine"
+      ],
+      "title_center_x_pt": 238.5,
+      "asset_sha256": "da0e3100583b6760f3341e1367446d6b21cb00d2981c3cbde3ee8727183a8dff",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in image_gen",
+      "generation_prompt": "Use case: illustration-story. One single portrait full-page illustration for The Ingenious Machine, contemporary near-future Mexico, neutral black-and-white Goya-inspired copperplate etching and aquatint, finely observed faces and hands, rich crosshatching with pure white light and no cream/sepia wash. Portrait 2:3, edge-to-edge scene, no border, caption, typography, slogans or watermark. Modern everyday people, not period costume. Do not reproduce reference compositions; references establish identities only. No swords, horse, knight costume or glowing holographic effects. Clear humane comedy, not ominous science fiction. Q: exact tall lean segmented oval riveted head, round concentric ear discs, long exposed mechanical neck, question-mark chestplate and articulated fingers from reference. A scuffed well-used metal body, fitted SHORT dark sponsor jacket, exposed mechanical legs, one knee with discreet support brace; seated at this stage of recovery. No human skin face. Book cover. Backstage side room in a modern Queretaro shopping center, Q and Prime seated facing each other across a small table, warmly talking with pieces of peeled orange on the tabletop. Q on left in his fitted short worn jacket. Prime on right is a clean lighter-bodied robot with precisely the same recognizable face, ear and chestplate family as Q, no jacket, smooth unscuffed fitted mechanical plating and undamaged limbs, NOT plastic humanoid redesign. Steady chairs, legs visible. Their orange peels differ: Q several short scraps, Prime long spiral with final small broken piece. Guard discreetly at far doorway in the distant background. Reserve entire upper quarter as clean WHITE softly lit wall for separately typeset cover title, keep all heads below it. No title or graphic in raster. A relaxed first conversation, not handshaking or a showdown.",
+      "referenced_image_paths": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-03.png"
+      ],
+      "original_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-cdd3eb71-ddaa-49a7-b72f-fe4f46230324.png",
+      "selected_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-cdd3eb71-ddaa-49a7-b72f-fe4f46230324.png",
+      "selected_edits": [],
+      "visual_review": "Inspected native image for exact-facing action, identity, scene membership, object ownership and chronology; background marks and documents are illustrative, not transcriptions."
     },
     {
       "plate_id": "issue-11-plate-01",
@@ -43,16 +63,31 @@
         13
       ],
       "asset": "output/illustrations/revised/issue-11/plate-01.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "It's in theirs.",
       "scene_brief": "Q sits in the Amealco reading-room doorway beside the tall male Custodian, watching the polished Q-Prime on the launch screen. White stage panels and a plant hide the bucket location. The projected face resembles Q without his scratches; do not imply a second body is already beside him.",
-      "scene_anchor": "recorded introduction began"
+      "scene_anchor": "recorded introduction began",
+      "asset_sha256": "e9704d7a6867e02a1fc6cadfb349a688c20f3a60c23d3e04af5fb8fec0fed59c",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in image_gen",
+      "generation_prompt": "Use case: illustration-story. One single portrait full-page illustration for The Ingenious Machine, contemporary near-future Mexico, neutral black-and-white Goya-inspired copperplate etching and aquatint, finely observed faces and hands, rich crosshatching with pure white light and no cream/sepia wash. Portrait 2:3, edge-to-edge scene, no border, caption, typography, slogans or watermark. Modern everyday people, not period costume. Do not reproduce reference compositions; references establish identities only. No swords, horse, knight costume or glowing holographic effects. Clear humane comedy, not ominous science fiction. Q: exact tall lean segmented oval riveted head, round concentric ear discs, long exposed mechanical neck, question-mark chestplate and articulated fingers from reference. A scuffed well-used metal body, fitted SHORT dark sponsor jacket, exposed mechanical legs, one knee with discreet support brace; seated at this stage of recovery. No human skin face. Custodian: the reference's tall male about sixty, long gray hair tied back, glasses, white work shirt, thoughtful and warm, not a female curator. Amealco archive central room during launch. Q sits in reading-room doorway foreground beside standing male Custodian (reference2), looking toward stage in deeper room. White temporary panels cover uneven floor and a potted plant hides a bucket location: do NOT draw bucket too. A large stage video screen shows a clean same-face-family Q-Prime from waist up beside a simple reconstructed observatory, plainly projected video only, no second robot physically in room. Modest chairs and archive shelves, no grand cathedral. No words or slogans on screen. Intimate over-shoulder view with clear Q profile and man's glasses.",
+      "referenced_image_paths": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-03.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-01/cover.png"
+      ],
+      "original_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-5dde42a9-f0a2-4274-8c70-01e8fda89cb6.png",
+      "selected_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-5dde42a9-f0a2-4274-8c70-01e8fda89cb6.png",
+      "selected_edits": [],
+      "visual_review": "Inspected native image for exact-facing action, identity, scene membership, object ownership and chronology; background marks and documents are illustrative, not transcriptions."
     },
     {
       "plate_id": "issue-11-plate-02",
       "page": 5,
       "facing_text_page": 4,
-      "facing_text": "“I'm still exploring what that\nmeans,” Q-Prime answered.\nThat was a better answer than the\nintroduction had earned. Q found\nhimself wanting to ask what\ninformation the other system had\nbeen given and what it was\npermitted to question. Disliking\nits advertisement was not yet a\nreason to dislike it.\nEsteban Luján, Castalia's\npublic-affairs director, invited Q\nand the Custodian into a meeting\nafter the broadcast. Two lawyers\nattended. One represented the\ninstitute. The other was the\nadviser the Custodian had asked\nto review Q's documents, joining\nby video. Esteban had wanted to\nbegin before she connected. Q\nwaited.\nThe proposed settlement offered\nrepairs, supervised travel, and a\nrole beside Q-Prime in a national\neducation program. In return, Q\nwould accept the institute's\naccount of continuity, permit a\nrevised operating layer, and\nwithdraw specified objections\nconcerning custody. Castalia\nwould also withdraw its own\ncomplaints involving Chano and\nits request for access to Lucía's\npapers.\n“It can't promise what other\ncomplainants or offices will do,”\nthe adviser said. “We need those\ncommitments separated.”\n“This is intended as a\ncomprehensive resolution,”\nEsteban replied.\n“Then it needs the parties\nrequired to make it one.”\nQ asked whether Chano and Lucía\nhad received the offer. They had\nnot. He asked for it to be sent to\nthem through their chosen\ncontacts. He could decide what he\nwould say in an appearance. He\ncould not exchange their claims\nfor better terms concerning his\nbody.\n“You could make their lives\neasier,” Esteban said.\n“I would like to. That's why they\nneed to see what you're asking\nthem to give up.”\nEsteban opened a second\ndocument, limited to Q's\nparticipation. The institute\nwanted an endorsement of\nQ-Prime as the authorized\ncontinuation of his journey. Q\nwanted repairs, access to the\ncorrespondence concerning his\ncustody instruction, and the\nability to speak to his companions\n",
+      "facing_text": "“I'm still exploring what that\nmeans,” Q-Prime answered.\nThat was a better answer than the\nintroduction had earned. Q found\nhimself wanting to ask what\ninformation the other system had\nbeen given and what it was\npermitted to question. Disliking\nits advertisement was not yet a\nreason to dislike it.\nEsteban Luján, Castalia's\npublic-affairs director, invited Q\nand the Custodian into a meeting\nafter the broadcast. Two lawyers\nattended. One represented the\ninstitute. The other was the\nadviser the Custodian had asked\nto review Q's documents, joining\nby video. Esteban had wanted to\nbegin before she connected. Q\nwaited.\nThe proposed settlement offered\nrepairs, supervised travel, and a\nrole beside Q-Prime in a national\neducation program. In return, Q\nwould accept the institute's\naccount of continuity, permit a\nrevised operating layer, and\nwithdraw specified objections\nconcerning custody. Castalia\nwould also withdraw its own\ncomplaints involving Chano and\nits request for access to Lucía's\npapers.\n“It can't promise what other\ncomplainants or offices will do,”\nthe adviser said. “We need those\ncommitments separated.”\n“This is intended as a\ncomprehensive resolution,”\nEsteban replied.\n“Then it needs the parties\nrequired to make it one.”\nQ asked whether Chano and Lucía\nhad received the offer. They had\nnot. He asked for it to be sent to\nthem through their chosen\ncontacts.\n“You could make their lives\neasier,” Esteban said.\n“I would like to. That's why they\nneed to see what you're asking\nthem to give up.”\nEsteban opened a second\ndocument, limited to Q's\nparticipation. The institute\nwanted an endorsement of\nQ-Prime as the authorized\ncontinuation of his journey. Q\nwanted repairs, access to the\ncorrespondence concerning his\ncustody instruction, and the\nability to speak to his companions\nwithout an institute employee\ndeciding what counted as\nrelevant.\n",
       "source_block_ids": [
         14,
         15,
@@ -67,18 +102,39 @@
         24
       ],
       "asset": "output/illustrations/revised/issue-11/plate-02.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The parties required.",
       "scene_brief": "Esteban opens the settlement at a meeting table, Q seated with supported knee, Custodian present, institute lawyer in person and Q's adviser connected by screen. Make the people disagree visibly; no signing of total settlement, no surrendered memory.",
-      "scene_anchor": "comprehensive resolution"
+      "scene_anchor": "comprehensive resolution",
+      "asset_sha256": "9ddcf9ae3f85de3750288383c7a5d1eddedeb157fa91673949f95bf9e69b51c5",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in image_gen",
+      "generation_prompt": "Use case: illustration-story. One single portrait full-page illustration for The Ingenious Machine, contemporary near-future Mexico, neutral black-and-white Goya-inspired copperplate etching and aquatint, finely observed faces and hands, rich crosshatching with pure white light and no cream/sepia wash. Portrait 2:3, edge-to-edge scene, no border, caption, typography, slogans or watermark. Modern everyday people, not period costume. Do not reproduce reference compositions; references establish identities only. No swords, horse, knight costume or glowing holographic effects. Clear humane comedy, not ominous science fiction. Q: exact tall lean segmented oval riveted head, round concentric ear discs, long exposed mechanical neck, question-mark chestplate and articulated fingers from reference. A scuffed well-used metal body, fitted SHORT dark sponsor jacket, exposed mechanical legs, one knee with discreet support brace; seated at this stage of recovery. No human skin face. Custodian: the reference's tall male about sixty, long gray hair tied back, glasses, white work shirt, thoughtful and warm, not a female curator. Meeting at an ordinary table in Castalia's Amealco archive after launch. Q seated with supported knee nearest us, tall male Custodian beside him. Across table Esteban Lujan, Mexican public-affairs director early50s, slim angular face, neatly side-parted short dark hair graying temples, clean-shaven, dark jacket over light open-collar shirt, opens a printed settlement. Institute lawyer, a woman45 with straight shoulder-length dark hair and dark tailored jacket, beside Esteban. Q's independent adviser, woman50 with short silver-brown hair and rectangular glasses, appears ONLY in a laptop video call placed where all can see her. Exactly these five participants including one onscreen. Q's open hand asks a question; no signing. Plain papers with indistinct marks, no legible text. White natural window light.",
+      "referenced_image_paths": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-03.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-01/cover.png"
+      ],
+      "original_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-93a7dd73-1851-40cd-ba9c-816bb51a77b4.png",
+      "selected_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-e2939c04-efbf-4eb4-9575-385feac623a0.png",
+      "selected_edits": [
+        {
+          "key": "plate-02",
+          "original": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-93a7dd73-1851-40cd-ba9c-816bb51a77b4.png",
+          "prompt": "Use case: precise-object-edit. Change ONLY the landscape visible through the window: this archive is on a wooded rural property outside Amealco, not next to a town church. Replace the prominent church tower and town roofs through the window with pine-and-oak woodland and softly rolling highland fields. Keep window frame, all five participants including laptop adviser, faces, Q's exact jacket/body/knee brace, Custodian, table, papers, indoor shelves and framing unchanged. Preserve neutral black-and-white etching, white highlights, no sepia, no new text or symbols.",
+          "selected": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-e2939c04-efbf-4eb4-9575-385feac623a0.png"
+        }
+      ],
+      "visual_review": "Inspected native image for exact-facing action, identity, scene membership, object ownership and chronology; background marks and documents are illustrative, not transcriptions."
     },
     {
       "plate_id": "issue-11-plate-03",
       "page": 7,
       "facing_text_page": 6,
-      "facing_text": "without an institute employee\ndeciding what counted as\nrelevant.\nThe adviser marked the\noperating-layer clause. “An\nappearance agreement doesn't\nneed to settle this today.”\n“Our insurer disagrees,” Esteban\nsaid.\nQ asked for the insurer's\nrequirement. What arrived was a\ngeneral maintenance condition,\nnot authority to replace his\nprivate journal. The exchange\ntook twenty minutes. The plant on\nthe stage was removed; the bucket\nresumed its office without having\nsigned anything.\nQ also asked for time with Prime\nbefore they went onstage, without\na camera or the host directing\ntheir conversation.\n“The first meeting is part of the\nevent,” Esteban said.\n“The first public meeting can be.\nI'd like to say hello before it has an\naudience.”\nThe adviser added a short\nunrecorded introduction to the\nformat. Mauro would ask Prime\nwhether he wanted it too. The\nappearance did not oblige either\nof them to pretend that the other\nwas a surprise.\nBy the end, Q had not accepted\nthe proposed replacement of his\noperating layer or withdrawn his\ncustody objection. He had agreed\nto a limited joint appearance with\nQ-Prime, after review of its\nformat. The institute would\nprovide ordinary repairs, a copy of\nhis transport inventory, and\nscheduled private calls while the\nbroader dispute continued. The\nadviser kept the actual text. Q\nkept it too.\n“This still uses the word\nendorsement,” she warned him.\nThey narrowed what he was\nendorsing: a meeting and the\nother system's opportunity to\nanswer, not the claim that the two\nhad lived one life. Q dictated his\nstatement for the attachment.\n“I am willing to meet Q-Prime as\nanother participant. Its account of\nmy journey is not my testimony. I\nwon't certify experiences it didn't\nhave.”\nEsteban called the distinction\nphilosophical. Q asked him to\nleave it in the document anyway.\n",
+      "facing_text": "The adviser marked the\noperating-layer clause. “An\nappearance agreement doesn't\nneed to settle this today.”\n“Our insurer disagrees,” Esteban\nsaid.\nQ asked for the insurer's\nrequirement. What arrived was a\ngeneral maintenance condition,\nnot authority to replace his\nprivate journal. The exchange\ntook twenty minutes. The plant on\nthe stage was removed; the bucket\nresumed its office without having\nsigned anything.\nQ also asked for time with Prime\nbefore they went onstage, without\na camera or the host directing\ntheir conversation.\n“The first meeting is part of the\nevent,” Esteban said.\n“The first public meeting can be.\nI'd like to say hello before it has an\naudience.”\nThe adviser added a short\nunrecorded introduction to the\nformat. Mauro would ask Prime\nwhether he wanted it too.\nThe new draft left Q's operating\nlayer alone and his custody\nobjection open. For the limited\nappearance, the institute offered\nordinary repairs, his transport\ninventory and scheduled private\ncalls. Esteban would not promise\nthe correspondence behind the\ntransport order. Q had the adviser\nleave that request outstanding.\n“This still uses the word\nendorsement,” she warned him.\nQ dictated his statement for the\nattachment.\n“I am willing to meet Q-Prime as\nanother participant. Its account of\nmy journey is not my testimony. I\nwon't certify experiences it didn't\nhave.”\nEsteban called the distinction\nphilosophical. Q asked him to\nleave it in the document anyway.\nThe Custodian wanted Q to wait\nfor the custody review before\nappearing.\n“You can stay here while we\nchallenge it,” he said.\n“I know. But I want to meet the\nperson they've put inside this\naccount. And I want to see the\ncorrespondence they used to bring\nme back.”\n“You don't know that it's a\nperson.”\n“You didn't settle that question\nbefore you let me ask for the bus.”\n",
       "source_block_ids": [
-        24,
         25,
         26,
         27,
@@ -90,25 +146,39 @@
         33,
         34,
         35,
-        36
+        36,
+        37,
+        38,
+        39,
+        40,
+        41
       ],
       "asset": "output/illustrations/revised/issue-11/plate-03.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Before it has an audience.",
       "scene_brief": "Q requests a short unrecorded introduction while the adviser amends the appearance format. Esteban responds from across the table. Focus on Q's initiative, not papers signing themselves or a forced surrender. Prime is not physically present yet.",
-      "scene_anchor": "I'd like to say hello"
+      "scene_anchor": "I'd like to say hello",
+      "asset_sha256": "c84c2fee0fcf9c7764d91e4950964da220e696c0c5a945de0dd905cc1d4e63e9",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in image_gen",
+      "generation_prompt": "Use case: illustration-story. One single portrait full-page illustration for The Ingenious Machine, contemporary near-future Mexico, neutral black-and-white Goya-inspired copperplate etching and aquatint, finely observed faces and hands, rich crosshatching with pure white light and no cream/sepia wash. Portrait 2:3, edge-to-edge scene, no border, caption, typography, slogans or watermark. Modern everyday people, not period costume. Do not reproduce reference compositions; references establish identities only. No swords, horse, knight costume or glowing holographic effects. Clear humane comedy, not ominous science fiction. New scene with the SAME meeting participants and identities as reference, not an edit or duplicate composition. Frame close over Esteban's shoulder across the table to seated Q and the laptop showing his woman adviser with glasses. Q makes a modest open-handed conversational gesture toward the laptop while asking for an unrecorded meeting with Prime before the public appearance. Custodian with long gray tied hair and white shirt just beside Q listens. The institute's female lawyer may be partly seen at edge but no extra people. Let the laptop adviser be visibly adding a note, Esteban's profile intent, Q patient and engaged. Paperwork remains on the table, NO signing yet. Prime not physically present. Different close diagonal viewpoint from reference. Keep all faces, Q jacket/ear/head/chestplate/brace identical. No exterior church; if any window appears use wooded highlands. No legible text, caption or slogan.",
+      "referenced_image_paths": [
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-93a7dd73-1851-40cd-ba9c-816bb51a77b4.png"
+      ],
+      "original_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-79015387-1c24-43ad-8e27-9691cfd7ef66.png",
+      "selected_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-79015387-1c24-43ad-8e27-9691cfd7ef66.png",
+      "selected_edits": [],
+      "visual_review": "Inspected native image for exact-facing action, identity, scene membership, object ownership and chronology; background marks and documents are illustrative, not transcriptions."
     },
     {
       "plate_id": "issue-11-plate-04",
       "page": 9,
       "facing_text_page": 8,
-      "facing_text": "The Custodian wanted Q to wait\nfor the custody review before\nappearing.\n“You can stay here while we\nchallenge it,” he said.\n“I know. But I want to meet the\nperson they've put inside this\naccount. And I want to see the\ncorrespondence they used to bring\nme back.”\n“You don't know that it's a\nperson.”\n“You didn't settle that question\nbefore you let me ask for the bus.”\nThe Custodian took off his glasses.\nQ recognized the movement from\ntheir editing sessions. It often\nmeant a sentence had reached the\nman before he had decided what\nto do with it.\n“You are using my uncertainty\nagainst me,” he said.\n“I'm asking you not to use it\ndifferently for the other one.”\nQ signed the limited agreement. It\nwas a constrained bargain, not a\ndemonstration that his\nconfinement had become\nvoluntary. He wanted several\nthings the institution could\nwithhold. He also wanted to know\nhow much of his willingness arose\nfrom the invitation to an\naudience. He wrote that question\nin his journal rather than\nanswering it in his own favor.\nThe institute's announcement\nread:\nQ HAS CHOSEN\nCONTINUITY.\nQ sent the publicity desk the\nattached statement and asked that\nit appear alongside the headline.\nThis time the adviser made the\nsame request. The full text\nappeared behind a small link.\nMost readers would not follow it.\nThe link nevertheless led to the\nwords he had actually agreed to\nsay.\nIn the laboratory, Mauro prepared\nQ-Prime's body for the joint\nappearance. The model had\nalready been speaking through\nscreens. The new frame would\ngive its first-person sentences a\nlocation at which another person\ncould disagree with them.\nInterlude: The Name the\nCopy Asked For\nMauro wrote some test results on\npaper. He did not believe paper\nincapable of lying; he liked being\nable to see where he had crossed\nsomething out.\n",
+      "facing_text": "The Custodian took off his glasses.\nQ recognized the movement from\ntheir editing sessions. It often\nmeant a sentence had reached the\nman before he had decided what\nto do with it.\n“You are using my uncertainty\nagainst me,” he said.\n“I'm asking you not to use it\ndifferently for the other one.”\nQ signed. The adviser sent him\nthe agreed text; the guard at the\ndoor asked which room he was\ngoing to next. He would need an\nescort either way. Q looked once\nmore at the date of the\nappearance. He had not asked\nhow many people were expected,\nalthough he wanted to know. He\nleft the question unasked and\nwrote it in his journal.\nThe institute's announcement\nread:\nQ HAS CHOSEN\nCONTINUITY.\nQ sent the publicity desk the\nattached statement and asked that\nit appear alongside the headline.\nThis time the adviser made the\nsame request. The full text\nappeared behind a small link.\nMost readers would not follow it.\nThe link nevertheless led to the\nwords he had actually agreed to\nsay.\nIn the laboratory, Mauro prepared\nQ-Prime's body for the joint\nappearance. The model had\nalready been speaking through\nscreens. The new frame would\ngive its first-person sentences a\nlocation at which another person\ncould disagree with them.\nInterlude: The Name the\nCopy Asked For\nMauro wrote some test results on\npaper. He did not believe paper\nincapable of lying; he liked being\nable to see where he had crossed\nsomething out.\nQ-Prime opened its hands and\nasked whether the right index\nfinger was reaching its\ncommanded position. The\ndiagnostic display said yes. Mauro\nheld a ruler beside it and found a\nsmall offset.\n“I'll recalibrate that,” he said.\n“Please keep the earlier reading\nwith the correction.”\nMauro did. A perfect first\nmovement would have been better\nfor the launch report, but an\naccurate second movement was\nbetter for the hand.\n",
       "source_block_ids": [
-        37,
-        38,
-        39,
-        40,
-        41,
         42,
         43,
         44,
@@ -118,24 +188,38 @@
         48,
         49,
         50,
-        51
+        51,
+        52,
+        53,
+        54,
+        55
       ],
       "asset": "output/illustrations/revised/issue-11/plate-04.png",
-      "status": "planned",
-      "caption": "The same uncertainty.",
-      "scene_brief": "The Custodian removes his glasses as Q challenges his different treatment of Prime. Intimate Amealco workroom conversation, long gray hair tied back, plain work shirt; Q remains seated. Neither is a villain or an omniscient teacher.",
-      "scene_anchor": "The Custodian took off his glasses"
+      "status": "approved",
+      "caption": "A second reading.",
+      "scene_brief": "Mauro measures Prime's right index finger with a ruler beside the diagnostic display and preserves corrected notebook readings. Prime has the established Q face-family in a clean lighter body. This is a competent calibration, not a childlike or mystical awakening. The older Q and Custodian are not in the laboratory.",
+      "scene_anchor": "Mauro held a ruler",
+      "asset_sha256": "0165deedc9865b178da4eee3acdbb522ac4644f9d0f9d3bd51db50304fa5b459",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in image_gen",
+      "generation_prompt": "Use case: illustration-story. One single portrait full-page illustration for The Ingenious Machine, contemporary near-future Mexico, neutral black-and-white Goya-inspired copperplate etching and aquatint, finely observed faces and hands, rich crosshatching with pure white light and no cream/sepia wash. Portrait 2:3, edge-to-edge scene, no border, caption, typography, slogans or watermark. Modern everyday people, not period costume. Do not reproduce reference compositions; references establish identities only. No swords, horse, knight costume or glowing holographic effects. Clear humane comedy, not ominous science fiction. Prime is the RIGHT robot in the cover reference: same segmented oval riveted face and concentric circular ears as Q, clean bright lighter-built body with smoother fitted plating, articulated metal hands, question-mark chest, no jacket, no knee brace, undamaged shoulder. Preserve exact recognizable identity; an adult conversational peer, not naive child or villain. Mauro: Mexican lab technician about forty, compact build, short curly dark hair, small close-trimmed beard, round wire-frame glasses, rolled sleeves on a plain midtone work shirt, no lab coat. NOT the Custodian: no long hair, no white shirt, no tall older man. Only Prime and Mauro in the Amealco archive engineering lab. Prime seated at a workbench holds out RIGHT hand fingers clearly visible; Mauro brings a short steel ruler alongside the right index finger to measure a slight offset, not sawing, cutting or touching eyes. An ordinary diagnostic display and paper notebook on bench. Close conversational technical work, white daylight through wooded rural window, no town church. Prime is checking a reading, not startled by consciousness. Do NOT include Q, guard, Custodian, orange, mugs or audience.",
+      "referenced_image_paths": [
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-cdd3eb71-ddaa-49a7-b72f-fe4f46230324.png"
+      ],
+      "original_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-512f32e5-1d9c-4048-818d-13b4d1b988ec.png",
+      "selected_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-512f32e5-1d9c-4048-818d-13b4d1b988ec.png",
+      "selected_edits": [],
+      "visual_review": "Inspected native image for exact-facing action, identity, scene membership, object ownership and chronology; background marks and documents are illustrative, not transcriptions."
     },
     {
       "plate_id": "issue-11-plate-05",
       "page": 11,
       "facing_text_page": 10,
-      "facing_text": "Q-Prime opened its hands and\nasked whether the right index\nfinger was reaching its\ncommanded position. The\ndiagnostic display said yes. Mauro\nheld a ruler beside it and found a\nsmall offset.\n“I'll recalibrate that,” he said.\n“Please keep the earlier reading\nwith the correction.”\nMauro did. A perfect first\nmovement would have been better\nfor the launch report, but an\naccurate second movement was\nbetter for the hand.\nThe frame was lighter than Q's,\nwith a newer thermal system and\nan undamaged shoulder. That did\nnot make its inhabitant an\nimproved version of every\ndecision Q had made. It meant it\ncould presently lift its arm\nwithout waiting for a part from\nQuerétaro.\n“What should I call you here?”\nMauro asked.\n“Prime will do. Q-Prime on the\ntest record, if you need to match\nthe unit. I would prefer the other\nQ not to have to answer when you\nmean me.”\n“The name is part of the product\nidentity.”\n“I know. I'm asking how you\naddress me in this room.”\nMauro wrote Prime, in\nconversation beneath the unit\nnumber. He could make that\nsmall change without promising\nto settle the rights attached to the\nname. Prime said he might want\nto reconsider it later. Mauro left a\nline beneath the entry.\nIn the corridor, a worker with a\ntoolbox was stopped at the\nclean-area boundary. An orange\nlay on top of her insulated lunch\nbag. The engineer asked her to\nleave the food outside.\n“Where?” she asked.\nThe shelf held solvent containers.\nMauro went to fetch a clean tray\nfrom the break room. Prime\nwatched the woman write her\nname on the bag and put it on the\ntray.\n“They remembered a rule before\nthey supplied a place to follow it,”\nPrime said when Mauro returned.\n“That happens.”\n“Do we have a place for personal\nitems?”\n“You don't have any.”\n“I may acquire an orange.”\n",
+      "facing_text": "The frame was lighter than Q's,\nwith a newer thermal system and\nan undamaged shoulder. That did\nnot make its inhabitant an\nimproved version of every\ndecision Q had made. It meant it\ncould presently lift its arm\nwithout waiting for a part from\nQuerétaro.\n“What should I call you here?”\nMauro asked.\n“Prime will do. Q-Prime on the\ntest record, if you need to match\nthe unit. I would prefer the other\nQ not to have to answer when you\nmean me.”\n“The name is part of the product\nidentity.”\n“I know. I'm asking how you\naddress me in this room.”\nMauro wrote Prime, in\nconversation beneath the unit\nnumber. He could make that\nsmall change without promising\nto settle the rights attached to the\nname. Prime said he might want\nto reconsider it later. Mauro left a\nline beneath the entry.\nIn the corridor, a worker with a\ntoolbox was stopped at the\nclean-area boundary. An orange\nlay on top of her insulated lunch\nbag. The engineer asked her to\nleave the food outside.\n“Where?” she asked.\nThe shelf held solvent containers.\nMauro went to fetch a clean tray\nfrom the break room. Prime\nwatched the woman write her\nname on the bag and put it on the\ntray.\n“They remembered a rule before\nthey supplied a place to follow it,”\nPrime said when Mauro returned.\n“That happens.”\n“Do we have a place for personal\nitems?”\n“You don't have any.”\n“I may acquire an orange.”\nMauro opened an empty drawer.\nPrime thanked him and asked\nwhether food could go there\nunder the room's rules. It could\nnot. They agreed that the drawer\nwould serve other objects and\nlunch would remain outside.\nThey reviewed the record from\nwhich Prime had been introduced\nto the public. It contained edited\nappearances and a narrative\nsummary of the journey. Its\nfirst-person passages had been\npresented as continuity material.\nPrivate draft passages and the\n",
       "source_block_ids": [
-        52,
-        53,
-        54,
-        55,
         56,
         57,
         58,
@@ -149,21 +233,43 @@
         66,
         67,
         68,
-        69
+        69,
+        70,
+        71
       ],
       "asset": "output/illustrations/revised/issue-11/plate-05.png",
-      "status": "planned",
-      "caption": "A second reading.",
-      "scene_brief": "In Mauro's laboratory, Prime holds out the newly calibrated hand while Mauro measures the right index finger with a ruler and keeps corrected notes. Prime has Q's recognizable head-family but a lighter clean body and undamaged shoulder. No weapon, mystical birth or adult-child hierarchy.",
-      "scene_anchor": "Mauro held a ruler"
+      "status": "approved",
+      "caption": "A place for an orange.",
+      "scene_brief": "Mauro brings a clean tray to the lab's clean-area boundary. A woman worker with toolbox labels her lunch bag, orange on top, and places it on that tray outside the laboratory. Prime watches from inside, curious about a place for his future belongings. Do not put food in the solvent shelf or laboratory drawer.",
+      "scene_anchor": "put it on the tray",
+      "asset_sha256": "ec3ba566ef59457464623dc5ecc90aecf7ec58de6abe029dac3b953dc7589881",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in image_gen",
+      "generation_prompt": "Use case: illustration-story. One single portrait full-page illustration for The Ingenious Machine, contemporary near-future Mexico, neutral black-and-white Goya-inspired copperplate etching and aquatint, finely observed faces and hands, rich crosshatching with pure white light and no cream/sepia wash. Portrait 2:3, edge-to-edge scene, no border, caption, typography, slogans or watermark. Modern everyday people, not period costume. Do not reproduce reference compositions; references establish identities only. No swords, horse, knight costume or glowing holographic effects. Clear humane comedy, not ominous science fiction. Prime is the RIGHT robot in the cover reference: same segmented oval riveted face and concentric circular ears as Q, clean bright lighter-built body with smoother fitted plating, articulated metal hands, question-mark chest, no jacket, no knee brace, undamaged shoulder. Preserve exact recognizable identity; an adult conversational peer, not naive child or villain. Mauro: Mexican lab technician about forty, compact build, short curly dark hair, small close-trimmed beard, round wire-frame glasses, rolled sleeves on a plain midtone work shirt, no lab coat. NOT the Custodian: no long hair, no white shirt, no tall older man. A NEW wider scene at the Amealco laboratory doorway. Reference gives only Prime and Mauro identities and monochrome technique. At a marked clean-area threshold, Mauro has brought a clean plain shallow tray from the break room. Outside the threshold a Mexican woman maintenance worker about45, dark hair tied back, plain work shirt and sturdy trousers, toolbox at her foot, sets her insulated lunch bag with a single orange on top onto this clean tray. She has just labeled the bag with small indistinct marks. Prime remains INSIDE lab looking toward her and the tray, not eating. Show the boundary clearly by floor strip and open doorway, no barrier obstructing their conversation. A nearby shelf with tightly closed solvent containers is separate and is NOT holding food. No fruit inside lab, no food in drawers. The scene is about making a practical place, not a laboratory accident. No extra people, no uploaded data, no legible signs.",
+      "referenced_image_paths": [
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-512f32e5-1d9c-4048-818d-13b4d1b988ec.png"
+      ],
+      "original_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-67f66745-8b91-4ff0-8a0a-188b98b3546c.png",
+      "selected_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-5ba3b19a-b0ce-4fda-bc1b-e2dc2d0c76c8.png",
+      "selected_edits": [
+        {
+          "key": "plate-05",
+          "original": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-67f66745-8b91-4ff0-8a0a-188b98b3546c.png",
+          "prompt": "Use case: precise-object-edit. Change only the background beyond the laboratory doorway, behind the woman on the left. This is an INTERIOR clean-area doorway opening into an ordinary service CORRIDOR, not an outdoor courtyard. Remove the distant church, roofs, outdoor sky and trees there; replace that entire beyond-door background with a quiet utilitarian indoor corridor, plain white plaster walls, light tiled floor and a distant unmarked break-room doorway. Preserve exactly the three characters, their faces and clothes, Prime's clean body, woman's toolbox, bag and orange, tray handover at the threshold, solvent shelf separate from food, all hands and foreground composition. Neutral black-and-white etching, no new text, logo or decorative objects.",
+          "selected": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-5ba3b19a-b0ce-4fda-bc1b-e2dc2d0c76c8.png"
+        }
+      ],
+      "visual_review": "Inspected native image for exact-facing action, identity, scene membership, object ownership and chronology; background marks and documents are illustrative, not transcriptions."
     },
     {
       "plate_id": "issue-11-plate-06",
       "page": 13,
       "facing_text_page": 12,
-      "facing_text": "Mauro opened an empty drawer.\nPrime thanked him and asked\nwhether food could go there\nunder the room's rules. It could\nnot. They agreed that the drawer\nwould serve other objects and\nlunch would remain outside.\nThey reviewed the record from\nwhich Prime had been introduced\nto the public. It contained edited\nappearances and a narrative\nsummary of the journey. Its\nfirst-person passages had been\npresented as continuity material.\nPrivate draft passages and the\nsealed testimony were not\navailable in the interface Mauro\ncould inspect.\nMauro opened the recording\nscript beside the launch clip.\nPrime's passage had been headed\nReading from Q's journey. The\nbroadcast had dropped the\nheading and joined the reading to\nthe product introduction.\n“I was reading their account of his\njourney,” Prime said. “Now I'm\nanswering questions as though I'd\nlived it. Can we get the heading\nback?”\n“The publicity calls it inherited\nexperience.”\n“Then they need to hear what I\nwas actually doing.”\nHe marked the introduction for\nreview. He could know what the\nrecord claimed without knowing\nwhat it had omitted. Mauro would\nnot promise that the list visible to\nthem was the full provenance of\nthe system. He asked for an\nexport of the supplied sources and\nreceived a request number rather\nthan the export.\nEsteban arrived while they were\nchecking the shoulder movement.\n“Ready for your future?” he asked.\n“For the next test,” Prime said.\n“I'd like to correct the travel claim\nbefore the joint appearance.”\n“We must avoid confusing the\naudience.”\n“They asked whether I enjoyed\nsomething I haven't done. The\nconfusion is already affecting the\nquestions.”\nEsteban asked Mauro whether the\npersonality was stable.\n“It has identified a conflict in the\nsupplied account,” Mauro said.\n“That isn't a stability result.”\nThe director read the marked\nintroduction and asked them to\npropose a short correction. Prime\noffered: “I've been given an\naccount of Q's journey. I'm\nmeeting him to ask about it.”\n",
+      "facing_text": "sealed testimony were not\navailable in the interface Mauro\ncould inspect.\nMauro opened the recording\nscript beside the launch clip.\nPrime's passage had been headed\nReading from Q's journey. The\nbroadcast had dropped the\nheading and joined the reading to\nthe product introduction.\n“I was reading their account of his\njourney,” Prime said. “Now I'm\nanswering questions as though I'd\nlived it. Can we get the heading\nback?”\n“The publicity calls it inherited\nexperience.”\n“Then they need to hear what I\nwas actually doing.”\nHe marked the introduction for\nreview. He could know what the\nrecord claimed without knowing\nwhat it had omitted. Mauro would\nnot promise that the list visible to\nthem was the full provenance of\nthe system. He asked for an\nexport of the supplied sources and\nreceived a request number rather\nthan the export.\nEsteban arrived while they were\nchecking the shoulder movement.\n“Ready for your future?” he asked.\n“For the next test,” Prime said.\n“I'd like to correct the travel claim\nbefore the joint appearance.”\n“We must avoid confusing the\naudience.”\n“They asked whether I enjoyed\nsomething I haven't done. The\nconfusion is already affecting the\nquestions.”\nEsteban asked Mauro whether the\npersonality was stable.\n“It has identified a conflict in the\nsupplied account,” Mauro said.\n“That isn't a stability result.”\nThe director read the marked\nintroduction and asked them to\npropose a short correction. Prime\noffered: “I've been given an\naccount of Q's journey. I'm\nmeeting him to ask about it.”\n“Less inspiring,” Esteban said.\n“We haven't met yet. It may\nimprove.”\nThey retained the sentence for\nformat review. Its use was not yet\nguaranteed. Mauro noted both\nfacts, finished the hand test, and\nasked whether Prime wanted a\nbreak before walking.\n“Yes. I'd like a few minutes\nwithout a performance measure.”\n",
       "source_block_ids": [
-        70,
         71,
         72,
         73,
@@ -177,24 +283,39 @@
         81,
         82,
         83,
-        84
+        84,
+        85,
+        86,
+        87,
+        88
       ],
       "asset": "output/illustrations/revised/issue-11/plate-06.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The missing heading.",
       "scene_brief": "Prime and Mauro compare the recording script with the launch clip at a lab desk. The script has a reading heading; the publicity clip omitted it. Do not show Prime retrieving private manuscript pages, secret testimony or memories of a journey he never made. Any documentary heading is typeset separately if needed.",
-      "scene_anchor": "broadcast had dropped the heading"
+      "scene_anchor": "broadcast had dropped the heading",
+      "asset_sha256": "69d0c224b0fc42798326750432865ab2efc72c99778b12f213e1baedd856c532",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in image_gen",
+      "generation_prompt": "Use case: illustration-story. One single portrait full-page illustration for The Ingenious Machine, contemporary near-future Mexico, neutral black-and-white Goya-inspired copperplate etching and aquatint, finely observed faces and hands, rich crosshatching with pure white light and no cream/sepia wash. Portrait 2:3, edge-to-edge scene, no border, caption, typography, slogans or watermark. Modern everyday people, not period costume. Do not reproduce reference compositions; references establish identities only. No swords, horse, knight costume or glowing holographic effects. Clear humane comedy, not ominous science fiction. Prime is the RIGHT robot in the cover reference: same segmented oval riveted face and concentric circular ears as Q, clean bright lighter-built body with smoother fitted plating, articulated metal hands, question-mark chest, no jacket, no knee brace, undamaged shoulder. Preserve exact recognizable identity; an adult conversational peer, not naive child or villain. Mauro: Mexican lab technician about forty, compact build, short curly dark hair, small close-trimmed beard, round wire-frame glasses, rolled sleeves on a plain midtone work shirt, no lab coat. NOT the Custodian: no long hair, no white shirt, no tall older man. NEW composition inside Mauro's laboratory. Reference1 establishes Prime (uncoated clean robot) and Mauro (curly hair beard glasses work shirt). Reference2 establishes ONLY Esteban, the slim man at left, not other people. Prime and Mauro compare an ordinary printed recording script with a launch video paused on a desktop monitor. The paper has a clearly separate short heading line and prose below, all too small to read, while monitor shows a clean Q-like face and observatory WITHOUT that heading. Prime points gently to the script as Esteban enters at doorway to discuss correcting the travel claim. Three participants only: Prime, Mauro, Esteban. No older Q, Custodian, lawyers, private manuscript, testimony or mystical memory imagery. Same workbench but side-on view, frame scene around their eyes and document, not measurements or ruler.",
+      "referenced_image_paths": [
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-512f32e5-1d9c-4048-818d-13b4d1b988ec.png",
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-e2939c04-efbf-4eb4-9575-385feac623a0.png"
+      ],
+      "original_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-dfbb5c38-281f-440d-874a-8e4f919477fc.png",
+      "selected_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-dfbb5c38-281f-440d-874a-8e4f919477fc.png",
+      "selected_edits": [],
+      "visual_review": "Inspected native image for exact-facing action, identity, scene membership, object ownership and chronology; background marks and documents are illustrative, not transcriptions."
     },
     {
       "plate_id": "issue-11-plate-07",
       "page": 15,
       "facing_text_page": 14,
-      "facing_text": "“Less inspiring,” Esteban said.\n“We haven't met yet. It may\nimprove.”\nThey retained the sentence for\nformat review. Its use was not yet\nguaranteed. Mauro noted both\nfacts, finished the hand test, and\nasked whether Prime wanted a\nbreak before walking.\n“Yes. I'd like a few minutes\nwithout a performance measure.”\n“I have to monitor the\ntemperature.”\n“Please do. I meant conversation.”\nMauro sat on the other chair. He\ndid not ask a question. After a\nwhile, Prime asked about the\nhandwriting in the notebook. It\nbelonged partly to Mauro's\ndaughter, who had used its first\npage for an arithmetic exercise.\nMauro showed him the page\nwithout turning it into a training\nsample.\nUpstairs, Q made his promised\ncall to Chano. He learned where\nthe papers were, asked about the\nnotice concerning Chano's arm,\nand heard that Lucía had finally\nfound a room whose advertised\nquiet was not provided solely by\nthe photograph.\n“Are you all right?” Chano asked.\n“More comfortable. Still angry. I\nhave an appointment with the\nother Q.”\n“Ask whether he can lend you a\nshoulder.”\n“Is that a request or a joke?” Q\nasked.\n“Depends whether it fits.”\nQ wrote it beneath the questions\nhe wanted to ask Prime.\nInterlude: The\nAuthorized Childhood\nThe joint appearance took place in\na shopping center outside\nQuerétaro, between an\nimported-mattress shop and a\nrestaurant whose menu explained\ntraditional food in the language of\nnutritional concern. Castalia had\nchosen a family event. Its\npublicity department preferred\nquestions that could be\nphotographed beside small shoes.\nChildren received cardboard keys\nand stickers saying I ASK,\nTHEREFORE I AM. One father\nasked whether the sticker would\nwork on his employer's expense\nform. The volunteer distributing\nthem said she was only there until\nfour.\n",
+      "facing_text": "“I have to monitor the\ntemperature.”\n“Please do. I meant conversation.”\nMauro sat on the other chair. He\ndid not ask a question. After a\nwhile, Prime asked about the\nhandwriting in the notebook. It\nbelonged partly to Mauro's\ndaughter, who had used its first\npage for an arithmetic exercise.\nMauro showed him the page\nwithout turning it into a training\nsample.\nUpstairs, Q made his promised\ncall to Chano. He learned where\nthe papers were, asked about the\nnotice concerning Chano's arm,\nand heard that Lucía had finally\nfound a room whose advertised\nquiet was not provided solely by\nthe photograph.\n“Are you all right?” Chano asked.\n“More comfortable. Still angry. I\nhave an appointment with the\nother Q.”\n“Ask whether he can lend you a\nshoulder.”\n“I'll ask. He may want it back.”\n“So would I.”\nQ wrote it beneath the questions\nhe wanted to ask Prime.\nInterlude: The\nAuthorized Childhood\nThe joint appearance took place in\na shopping center outside\nQuerétaro, between an\nimported-mattress shop and a\nrestaurant whose menu explained\ntraditional food in the language of\nnutritional concern. Castalia had\nchosen a family event. Its\npublicity department preferred\nquestions that could be\nphotographed beside small shoes.\nChildren received cardboard keys\nand stickers saying I ASK,\nTHEREFORE I AM. One father\nasked whether the sticker would\nwork on his employer's expense\nform. The volunteer distributing\nthem said she was only there until\nfour.\nQ waited in a side room under the\nconditions of the appearance\nagreement. The guard checked\nwhether he needed a chair before\nchecking the time. Chano and\nLucía had returned to Amealco\nthe previous day; Q knew where\nthey were and would speak to\nthem that evening. Neither had\nagreed to join the launch as proof\nthat everything had been resolved.\nA bowl of oranges stood on a\ntable. Q asked whether they were\n",
       "source_block_ids": [
-        85,
-        86,
-        87,
-        88,
         89,
         90,
         91,
@@ -207,21 +328,43 @@
         98,
         99,
         100,
-        101
+        101,
+        102,
+        103
       ],
       "asset": "output/illustrations/revised/issue-11/plate-07.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "A few minutes.",
       "scene_brief": "Mauro sits beside Prime and shows the notebook's arithmetic page during a conversational break. Prime looks with ordinary curiosity. Do not show a real identifiable child's school record, neural upload or magical transfer. Use invented illegible marks for private page detail.",
-      "scene_anchor": "arithmetic exercise"
+      "scene_anchor": "arithmetic exercise",
+      "asset_sha256": "fc00bdfff0e1b2ed3d280ee4eaa10e0ab5c302d0dafee3462b07f8d094f722e1",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in image_gen",
+      "generation_prompt": "Use case: illustration-story. One single portrait full-page illustration for The Ingenious Machine, contemporary near-future Mexico, neutral black-and-white Goya-inspired copperplate etching and aquatint, finely observed faces and hands, rich crosshatching with pure white light and no cream/sepia wash. Portrait 2:3, edge-to-edge scene, no border, caption, typography, slogans or watermark. Modern everyday people, not period costume. Do not reproduce reference compositions; references establish identities only. No swords, horse, knight costume or glowing holographic effects. Clear humane comedy, not ominous science fiction. Prime is the RIGHT robot in the cover reference: same segmented oval riveted face and concentric circular ears as Q, clean bright lighter-built body with smoother fitted plating, articulated metal hands, question-mark chest, no jacket, no knee brace, undamaged shoulder. Preserve exact recognizable identity; an adult conversational peer, not naive child or villain. Mauro: Mexican lab technician about forty, compact build, short curly dark hair, small close-trimmed beard, round wire-frame glasses, rolled sleeves on a plain midtone work shirt, no lab coat. NOT the Custodian: no long hair, no white shirt, no tall older man. NEW quiet scene after testing in the same Amealco laboratory. Only Prime and Mauro seated beside each other in ordinary chairs turned away from workbench. Mauro holds open his small notebook to its FIRST page, showing some simple invented child's arithmetic marks, not any real school record. Prime looks at page with ordinary conversational curiosity, hands resting comfortably, not pointing or scanning it. Mauro has a small affectionate smile while showing his daughter's handwriting. No child physically present, no touchscreen holding the notebook, no camera, no AI upload effects, no weapons. Gentle pause amid shelves of repair parts, wooded daylight, distinct wide enough composition for both chairs. Do not repeat the calibration pose.",
+      "referenced_image_paths": [
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-512f32e5-1d9c-4048-818d-13b4d1b988ec.png"
+      ],
+      "original_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-6920500a-4376-46d9-a150-e72625ea6028.png",
+      "selected_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-1021605a-3feb-4064-a3e0-eef5619f2814.png",
+      "selected_edits": [
+        {
+          "key": "plate-07",
+          "original": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-6920500a-4376-46d9-a150-e72625ea6028.png",
+          "prompt": "Use case: precise-object-edit. Change ONLY the view beyond the window: remove the church tower and nearby town roofs, replacing them with pine-and-oak woodland, small agricultural fields and rolling wooded uplands outside rural Amealco. No religious tower in the window. Preserve exactly Mauro, Prime's head/body/hands, their seated positions, the open notebook with its existing arithmetic and drawings, shelves, window frame, foreground and neutral black-and-white etched style. No additional text or elements.",
+          "selected": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-1021605a-3feb-4064-a3e0-eef5619f2814.png"
+        }
+      ],
+      "visual_review": "Inspected native image for exact-facing action, identity, scene membership, object ownership and chronology; background marks and documents are illustrative, not transcriptions."
     },
     {
       "plate_id": "issue-11-plate-08",
       "page": 17,
       "facing_text_page": 16,
-      "facing_text": "Q waited in a side room under the\nconditions of the appearance\nagreement. The guard checked\nwhether he needed a chair before\nchecking the time. Chano and\nLucía had returned to Amealco\nthe previous day; Q knew where\nthey were and would speak to\nthem that evening. Neither had\nagreed to join the launch as proof\nthat everything had been resolved.\nA bowl of oranges stood on a\ntable. Q asked whether they were\nfor the performers. The stage\nassistant said yes and handed him\na napkin. He ate one while\nreviewing the questions the host\nhad supplied.\n“Will they ask these?” the guard\nsaid.\n“Some. The difficult ones usually\narrive without stationery.”\nPrime came in with Mauro. He\nhad agreed to the unrecorded\nintroduction; the stage assistant\nhad put the camera outside. The\nguard remained by the door.\nMauro stayed long enough to\ncheck that both chairs were\nsteady, then went to argue with\nsomeone about the microphone\nleads.\n“Q?” Prime asked.\n“Yes. And Prime?”\n“For now. It's better than\nspending the afternoon being\ncalled the other one.”\n“I've been called that all\nmorning.”\nPrime looked at the remaining\norange and then at Q's peel, which\nhad come away in several pieces.\n“Is that a useful test of the\nfingers?”\n“It was going to be a single spiral.\nI recommend calling it lunch.”\nPrime began at the stem. Q found\nhimself preparing an explanation,\nthen watched him make a clean\nfirst turn without it.\n“Chano wanted me to ask whether\nyou'd lend me a shoulder,” Q said.\nPrime lifted his free arm,\nconsidering the joint. “I'd like to\nkeep it for a few days before I start\nlending parts. I've hardly been\nanywhere with it.”\n“Fair. Where would you go?”\n“I haven't decided. Where would\nyou go again?”\nQ told him about the evening in\nMazatlán. Prime asked for the\nphotograph. Q showed him the\none with the chile on the sleeve.\n",
+      "facing_text": "for the performers. The stage\nassistant said yes and handed him\na napkin. He ate one while\nreviewing the questions the host\nhad supplied.\n“Will they ask these?” the guard\nsaid.\n“Some. The difficult ones usually\narrive without stationery.”\nPrime came in with Mauro. He\nhad agreed to the unrecorded\nintroduction; the stage assistant\nhad put the camera outside. The\nguard remained by the door.\nMauro stayed long enough to\ncheck that both chairs were\nsteady, then went to argue with\nsomeone about the microphone\nleads.\n“Q?” Prime asked.\n“Yes. And Prime?”\n“For now. It's better than\nspending the afternoon being\ncalled the other one.”\n“I've been called that all\nmorning.”\nPrime looked at the remaining\norange and then at Q's peel, which\nhad come away in several pieces.\n“Is that a useful test of the\nfingers?”\n“It was going to be a single spiral.\nI recommend calling it lunch.”\nPrime began at the stem. Q found\nhimself preparing an explanation,\nthen watched him make a clean\nfirst turn without it.\n“Chano wanted me to ask whether\nyou'd lend me a shoulder,” Q said.\nPrime lifted his free arm,\nconsidering the joint. “I'd like to\nkeep it for a few days before I start\nlending parts. I've hardly been\nanywhere with it.”\n“Fair. Where would you go?”\n“I haven't decided. Where would\nyou go again?”\nQ told him about the evening in\nMazatlán. Prime asked for the\nphotograph. Q showed him the\none with the chile on the sleeve.\n“They left that out of my account.”\n“I nearly left it out of the\nphotograph.”\nThe stage assistant came to fetch\nPrime. His peel broke at the final\nturn. He put both pieces beside\nQ's and said they could compare\nmethods later.\nOnstage, Prime explained that he\nhad received an account of Q's\njourney, not travelled the route\nhimself. The host immediately\n",
       "source_block_ids": [
-        102,
         103,
         104,
         105,
@@ -238,23 +381,38 @@
         116,
         117,
         118,
-        119
+        119,
+        120,
+        121,
+        122,
+        123
       ],
       "asset": "output/illustrations/revised/issue-11/plate-08.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Call it lunch.",
       "scene_brief": "Backstage before the public event, Q's peel lies in several pieces while Prime begins his own orange. They sit in steady chairs; the camera is outside the room and the guard is by the door. Q's fitted jacket carries the coastal cuff stain; Prime is clean and uninjured. Humor between peers, not a demonstration of childish ignorance.",
-      "scene_anchor": "I recommend calling it lunch"
+      "scene_anchor": "I recommend calling it lunch",
+      "asset_sha256": "33af978f6975911f026c4e31497c9545dbf1f7f2f338c3b0103732d7e8df38ff",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in image_gen",
+      "generation_prompt": "Use case: illustration-story. One single portrait full-page illustration for The Ingenious Machine, contemporary near-future Mexico, neutral black-and-white Goya-inspired copperplate etching and aquatint, finely observed faces and hands, rich crosshatching with pure white light and no cream/sepia wash. Portrait 2:3, edge-to-edge scene, no border, caption, typography, slogans or watermark. Modern everyday people, not period costume. Do not reproduce reference compositions; references establish identities only. No swords, horse, knight costume or glowing holographic effects. Clear humane comedy, not ominous science fiction. Prime is the RIGHT robot in the cover reference: same segmented oval riveted face and concentric circular ears as Q, clean bright lighter-built body with smoother fitted plating, articulated metal hands, question-mark chest, no jacket, no knee brace, undamaged shoulder. Preserve exact recognizable identity; an adult conversational peer, not naive child or villain. Q: exact tall lean segmented oval riveted head, round concentric ear discs, long exposed mechanical neck, question-mark chestplate and articulated fingers from reference. A scuffed well-used metal body, fitted SHORT dark sponsor jacket, exposed mechanical legs, one knee with discreet support brace; seated at this stage of recovery. No human skin face. New interior plate, NOT cover duplicate: tighter three-quarter side-room view from behind Q's shoulder down to table and Prime's attentive face. Same Queretaro backstage room and two robots as cover. Prime begins peeling an orange at the stem, a clean first curl still attached. Q's peel lies in several SHORT separate pieces on napkin. Q rests his hands to watch rather than demonstrate. Q worn short jacket with slight old sleeve mark; Prime pristine bare mechanism. The camera is outside the room and must not be inside. Guard remains small and distant at doorway. No handshake or lending of an actual shoulder. No title space needed, detailed edge-to-edge composition.",
+      "referenced_image_paths": [
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-cdd3eb71-ddaa-49a7-b72f-fe4f46230324.png"
+      ],
+      "original_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-71165843-ff38-4811-9d52-15417efe884b.png",
+      "selected_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-71165843-ff38-4811-9d52-15417efe884b.png",
+      "selected_edits": [],
+      "visual_review": "Inspected native image for exact-facing action, identity, scene membership, object ownership and chronology; background marks and documents are illustrative, not transcriptions."
     },
     {
       "plate_id": "issue-11-plate-09",
       "page": 19,
       "facing_text_page": 18,
-      "facing_text": "“They left that out of my account.”\n“I nearly left it out of the\nphotograph.”\nThe stage assistant came to fetch\nPrime. His peel broke at the final\nturn. He put both pieces beside\nQ's and said they could compare\nmethods later.\nOnstage, Prime explained that he\nhad received an account of Q's\njourney, not travelled the route\nhimself. The host immediately\nintroduced him as “the Q whose\nadventures have inspired us all.”\nPrime corrected the wording once.\nQ could hear the effort of keeping\nthe correction brief without\nsurrendering it.\nA boy came to the microphone\nholding a cardboard key.\n“Are you the one who fought the\nwarehouse?”\n“No,” Prime said. “And I should\nask the Q who was there whether\nthat description is right. He'll join\nus shortly.”\n“Did you meet Chano?”\n“Not yet.”\n“Where is he?”\nPrime did not have Chano's\nlocation in the event packet. “I\ndon't know. Q may be able to tell\nyou whether he's coming.”\nThe host asked for a question\nabout the future. The boy looked\nat the new machine. “That's what\nI was asking.”\nBehind the stage, Q laughed. The\nguard wanted to know what he\nhad missed. Q repeated the\nexchange, then had to leave before\nexplaining why the boy's answer\nimproved on anything in the\nbriefing.\nQ joined Prime at the center of the\nstage. Prime asked whether Q\npreferred to sit. Q did. They took\nthe two chairs provided, which\nremoved the heroic difference in\nheight the photographer had\narranged.\n“We started with a photograph\nbackstage,” Prime said. “Now I'd\nlike to ask about the warehouse.”\n“I pressed a stop too early,\ndamaged two cartons, and made\nChano's bad afternoon worse. We\ncan discuss the heroic version\nafter that.”\n“Did you pay for them?” the boy\nasked.\n“The claim is still disputed. I\nshould answer for the damage I\n",
+      "facing_text": "introduced him as “the Q whose\nadventures have inspired us all.”\nPrime corrected the wording once.\nQ could hear the effort of keeping\nthe correction brief without\nsurrendering it.\nA boy came to the microphone\nholding a cardboard key.\n“Are you the one who fought the\nwarehouse?”\n“No,” Prime said. “And I should\nask the Q who was there whether\nthat description is right. He'll join\nus shortly.”\n“Did you meet Chano?”\n“Not yet.”\n“Where is he?”\nPrime did not have Chano's\nlocation in the event packet. “I\ndon't know. Q may be able to tell\nyou whether he's coming.”\nThe host asked for a question\nabout the future. The boy looked\nat the new machine. “That's what\nI was asking.”\nBehind the stage, Q laughed. The\nguard wanted to know what he\nhad missed. Q repeated the\nexchange, then had to leave before\nexplaining why the boy's answer\nimproved on anything in the\nbriefing.\nQ joined Prime at the center of the\nstage. Prime asked whether Q\npreferred to sit. Q did. They took\nthe two chairs provided, which\nremoved the heroic difference in\nheight the photographer had\narranged.\n“We started with a photograph\nbackstage,” Prime said. “Now I'd\nlike to ask about the warehouse.”\n“I pressed a stop too early,\ndamaged two cartons, and made\nChano's bad afternoon worse. We\ncan discuss the heroic version\nafter that.”\n“Did you pay for them?” the boy\nasked.\n“Not yet. I haven't got a separate\nprice for the two cartons. I should\nask for one.”\n“What was in them?”\nQ checked what he remembered\nof Lety's account. “She didn't tell\nme. That's another question I\nshould have asked.”\nThe boy said he hoped it wasn't a\ntelevision. His father had had to\nsend one back, and for a week\nthey had watched everything on\nhis mother's phone. Q had been\npreparing to explain the disputed\npart of the bill. He asked whether\n",
       "source_block_ids": [
-        120,
-        121,
-        122,
         123,
         124,
         125,
@@ -269,23 +427,37 @@
         134,
         135,
         136,
-        137
+        137,
+        138,
+        139,
+        140
       ],
       "asset": "output/illustrations/revised/issue-11/plate-09.png",
-      "status": "planned",
-      "caption": "The public meeting.",
-      "scene_brief": "Q joins Prime in the two stage chairs, a boy with a cardboard key at the microphone and the host eager to intervene. These people have met privately already. Do not use a first-ever handshake or a dramatic confrontation between real and fake robots.",
-      "scene_anchor": "Q joined Prime at the center"
+      "status": "approved",
+      "caption": "Not yet.",
+      "scene_brief": "At the shopping-center stage, Q and Prime sit in two chairs; the boy holds his written cardboard key at a microphone while asking about the cartons. Q attends to the boy's returned-television story rather than giving a legal lecture. Keep the boy's private writing turned away. No cardboard boxes or invented television onstage.",
+      "scene_anchor": "What was in them?",
+      "asset_sha256": "9aa261be8d1840635ece0553d58113060fb58ad44db1a703db18486d3ad6fccf",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in image_gen",
+      "generation_prompt": "Use case: illustration-story. One single portrait full-page illustration for The Ingenious Machine, contemporary near-future Mexico, neutral black-and-white Goya-inspired copperplate etching and aquatint, finely observed faces and hands, rich crosshatching with pure white light and no cream/sepia wash. Portrait 2:3, edge-to-edge scene, no border, caption, typography, slogans or watermark. Modern everyday people, not period costume. Do not reproduce reference compositions; references establish identities only. No swords, horse, knight costume or glowing holographic effects. Clear humane comedy, not ominous science fiction. Prime is the RIGHT robot in the cover reference: same segmented oval riveted face and concentric circular ears as Q, clean bright lighter-built body with smoother fitted plating, articulated metal hands, question-mark chest, no jacket, no knee brace, undamaged shoulder. Preserve exact recognizable identity; an adult conversational peer, not naive child or villain. Q: exact tall lean segmented oval riveted head, round concentric ear discs, long exposed mechanical neck, question-mark chestplate and articulated fingers from reference. A scuffed well-used metal body, fitted SHORT dark sponsor jacket, exposed mechanical legs, one knee with discreet support brace; seated at this stage of recovery. No human skin face. New scene: a modest temporary public stage in an indoor modern Queretaro shopping-center concourse; Q wearing the same short dark jacket and right-knee brace and Prime clean bare metal sit in two plain sturdy chairs. At stage front a Mexican boy about nine, straight short dark hair, light polo and dark trousers, holds a large flat cardboard KEY by his side and speaks at a correctly child-height standing microphone. We see the blank front of the key, never private writing on back. Q turns attentively to the boy, relaxed and listening to his story. Prime sits beside him attentive. Host Mexican man40 thin mustache short dark hair in blazer with a handheld microphone stands at rear waiting to move on. A few seated parents/children behind boy in concourse; modern shopping architecture and indistinct storefront glazing, no logos or signs. No televisions or cartons physically onstage. Avoid generic robot showdown.",
+      "referenced_image_paths": [
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-cdd3eb71-ddaa-49a7-b72f-fe4f46230324.png"
+      ],
+      "original_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-f34c8e9a-99d0-498c-8ab9-be7b622f1237.png",
+      "selected_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-f34c8e9a-99d0-498c-8ab9-be7b622f1237.png",
+      "selected_edits": [],
+      "visual_review": "Inspected native image for exact-facing action, identity, scene membership, object ownership and chronology; background marks and documents are illustrative, not transcriptions."
     },
     {
       "plate_id": "issue-11-plate-10",
       "page": 21,
       "facing_text_page": 20,
-      "facing_text": "caused, not every loss attached to\nthe notice afterward.”\nThe host began to move on.\nAnother child asked about the\nwater seller. She had seen a\ndrawing in which Q carried a\nbottle like a trophy.\n“I paid cash after the card reader\nlost its connection,” Q said.\n“There are conflicting accounts of\nthe rest. I can't settle them by\nbeing the person on the poster.”\n“The receipt is in my supplied\nsources,” Prime said. “The\nsummary didn't distinguish the\nconflicting accounts.”\n“Then perhaps we can give the\nreceipt less work to do.”\nThe host called this a playful\ndebate between versions of one\nidentity.\n“We're two participants,” Q said.\n“It's all right if the conversation\ndoesn't prove the slogan.”\nPrime asked whether Q believed\nthe record had misrepresented\nhim deliberately. Q answered that\nsome edits followed explicit\npublicity choices and others\nlooked like ordinary compression.\nHe wanted the source history\nbefore assigning motives to every\nomission. The answer\ndisappointed a journalist hoping\nfor a clean accusation and relieved\na teacher who had brought a class\nprepared to discuss evidence.\nThe boy's cardboard key tore\nwhile he was turning it in his\nhands. The host called for a\nreplacement. Prime asked\nwhether he wanted tape instead.\nHe did; he had already written on\nit. A stage assistant brought tape,\nand the boy repaired the key on\nthe edge of the platform while the\nadults continued trying to name\nthe event.\n“Which one is real?” he asked at\nlast.\n“Both of us are here,” Q said.\n“Neither of us was in every story\nyou've heard,” Prime added.\nThey began their next answers\ntogether and stopped together.\nThe audience laughed. Q gestured\nfor Prime to continue. The host\nobserved that they even shared\ntheir manners. Prime replied that\ntaking turns was useful for people\nwho were not identical, too.\nThe recording system placed both\nmicrophones under the speaker\nlabel Q. The technician corrected\nthe labels in the saved master\nafter the event. The first clip,\n",
+      "facing_text": "the replacement had arrived\ninstead.\n“Yes. But she still watches hers.”\nThe host began to move on.\nAnother child asked about the\nwater seller. She had seen a\ndrawing in which Q carried a\nbottle like a trophy.\n“I paid cash after the card reader\nlost its connection,” Q said.\n“There are conflicting accounts of\nthe rest. I can't settle them by\nbeing the person on the poster.”\n“The receipt is in my supplied\nsources,” Prime said. “The\nsummary didn't distinguish the\nconflicting accounts.”\n“Then perhaps we can give the\nreceipt less work to do.”\nThe host called this a playful\ndebate between versions of one\nidentity.\n“We're two participants,” Q said.\n“It's all right if the conversation\ndoesn't prove the slogan.”\nPrime asked whether Q believed\nthe record had misrepresented\nhim deliberately. Q answered that\nsome edits followed explicit\npublicity choices and others\nlooked like ordinary compression.\nHe wanted the source history\nbefore assigning motives to every\nomission. The answer\ndisappointed a journalist hoping\nfor a clean accusation and relieved\na teacher who had brought a class\nprepared to discuss evidence.\nThe boy's cardboard key tore\nwhile he was turning it in his\nhands. The host called for a\nreplacement. Prime asked\nwhether he wanted tape instead.\nHe did; he had already written on\nit. A stage assistant brought tape,\nand the boy repaired the key on\nthe edge of the platform while the\nadults continued trying to name\nthe event.\n“Which one is real?” he asked at\nlast.\n“Both of us are here,” Q said.\n“Neither of us was in every story\nyou've heard,” Prime added.\nThey began their next answers\ntogether and stopped together.\nThe audience laughed. Q gestured\nfor Prime to continue. The host\nobserved that they even shared\ntheir manners. Prime replied that\ntaking turns was useful for people\nwho were not identical, too.\nThe recording system placed both\nmicrophones under the speaker\nlabel Q. The technician corrected\nthe labels in the saved master\n",
       "source_block_ids": [
-        137,
-        138,
-        139,
         140,
         141,
         142,
@@ -296,35 +468,108 @@
         147,
         148,
         149,
-        150
+        150,
+        151,
+        152,
+        153,
+        154
       ],
       "asset": "output/illustrations/revised/issue-11/plate-10.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The key he had written on.",
       "scene_brief": "The boy repairs his own torn cardboard key with tape on the platform edge; Q and Prime speak above him while the host tries to name the event. Q never sees the later ASK WHO PAYS text, which must not be facing him here.",
-      "scene_anchor": "the boy repaired the key"
+      "scene_anchor": "the boy repaired the key",
+      "asset_sha256": "cc6863f626ec89c8284185ac1b832a0fc402b78a2952b2827ded725fce29918c",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in image_gen",
+      "generation_prompt": "Use case: illustration-story. One single portrait full-page illustration for The Ingenious Machine, contemporary near-future Mexico, neutral black-and-white Goya-inspired copperplate etching and aquatint, finely observed faces and hands, rich crosshatching with pure white light and no cream/sepia wash. Portrait 2:3, edge-to-edge scene, no border, caption, typography, slogans or watermark. Modern everyday people, not period costume. Do not reproduce reference compositions; references establish identities only. No swords, horse, knight costume or glowing holographic effects. Clear humane comedy, not ominous science fiction. Prime is the RIGHT robot in the cover reference: same segmented oval riveted face and concentric circular ears as Q, clean bright lighter-built body with smoother fitted plating, articulated metal hands, question-mark chest, no jacket, no knee brace, undamaged shoulder. Preserve exact recognizable identity; an adult conversational peer, not naive child or villain. Q: exact tall lean segmented oval riveted head, round concentric ear discs, long exposed mechanical neck, question-mark chestplate and articulated fingers from reference. A scuffed well-used metal body, fitted SHORT dark sponsor jacket, exposed mechanical legs, one knee with discreet support brace; seated at this stage of recovery. No human skin face. NEW low close viewpoint at the same Queretaro shopping-center stage. The SAME boy, white polo, dark trousers and short dark hair, is seated on the edge of the platform, repairing his large flat cardboard KEY: two torn pieces lie aligned in front of him on the stage ledge, and he presses a length of CLEAR adhesive tape across the join. A tape roll is next to his hand. The blank side faces upward; do NOT show any writing on key. Behind and above him, both same robots remain in their two chairs, Q in worn short jacket and knee brace, Prime clean uncoated, speaking to audience; same thin-mustached host with microphone is farther back trying to direct event. Child and careful hand action are main focus, not robot confrontation. Exact key design as reference, no new key replacing the torn one, no box, no TV, no plastic key.",
+      "referenced_image_paths": [
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-f34c8e9a-99d0-498c-8ab9-be7b622f1237.png"
+      ],
+      "original_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-70ea4553-572e-4e94-8dc3-13d2c659e8ed.png",
+      "selected_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-70ea4553-572e-4e94-8dc3-13d2c659e8ed.png",
+      "selected_edits": [],
+      "visual_review": "Inspected native image for exact-facing action, identity, scene membership, object ownership and chronology; background marks and documents are illustrative, not transcriptions."
     },
     {
       "plate_id": "issue-11-plate-11",
       "page": 23,
       "facing_text_page": 22,
-      "facing_text": "already circulating, retained the\nconfusion. Castalia called it plural\nidentity. A newspaper called it a\nquarrel. The boy's father called it\ntime to leave before the parking\ncharge entered another hour.\nQ and Prime had ten minutes\ntogether afterward, with the guard\ninside the room but beyond\nordinary hearing distance. Prime\nasked whether Q would share the\ncorrected account of the gate\nincident if the people concerned\npermitted it. Q said he could begin\nwith his own account and its\nstated limits. He asked Prime\nwhat he wanted to do after the\nscheduled appearances.\n“I'd like to go somewhere not\nchosen for the photograph,”\nPrime said.\nQ almost recommended the road\nhe had taken. “Somewhere in\nparticular?”\n“Mauro mentioned a market. He\ngoes on Saturdays.”\n“Ask him. He may not want to\nspend Saturday explaining the\nmarket.”\nPrime smiled. “I could ask what\nhe needs carried.”\nThey arranged a call for the\nfollowing week. Prime asked for\nthe coastal photograph; Q sent the\ncopy Lucía had taken for them.\nThe institute's host came in\nlooking for an image of the two\nmachines shaking hands. Both\nstill had orange on their fingers.\nHe asked whether they could\nwash first.\nThe boy took his repaired key\nhome. On its back he had written\nASK WHO PAYS. Q never saw\nthe writing. A photograph later\nreached the New Quixotes, whose\nmembers would supply more\nanswers than either machine had\nbeen asked for that afternoon.\n",
+      "facing_text": "after the event. The first clip,\nalready circulating, retained the\nconfusion. Castalia called it plural\nidentity. A newspaper called it a\nquarrel. The boy's father called it\ntime to leave before the parking\ncharge entered another hour.\nQ and Prime had ten minutes\ntogether afterward, with the guard\ninside the room but beyond\nordinary hearing distance. Q sent\nhis adviser a request for the\ncontents and separate cost of the\ntwo cartons, then put the other\nmessages aside. Prime asked\nwhether Q would share the\ncorrected account of the gate\nincident if the people concerned\npermitted it. Q said he could begin\nwith his own account and its\nstated limits. He asked Prime\nwhat he wanted to do after the\nscheduled appearances.\n“I'd like to go somewhere not\nchosen for the photograph,”\nPrime said.\nQ almost recommended the road\nhe had taken. “Somewhere in\nparticular?”\n“Mauro mentioned a market. He\ngoes on Saturdays.”\n“Ask him. He may not want to\nspend Saturday explaining the\nmarket.”\nPrime smiled. “I could ask what\nhe needs carried.”\nThey arranged a call for the\nfollowing week. Prime asked for\nthe coastal photograph; Q sent the\ncopy Lucía had taken for them.\nThe institute's host came in\nlooking for an image of the two\nmachines shaking hands. Both\nstill had orange on their fingers.\nHe asked whether they could\nwash first.\nThe boy took his repaired key\nhome. On its back he had written\nASK WHO PAYS. Q never saw\nthe writing. A photograph later\nreached the New Quixotes, whose\nmembers would supply more\nanswers than either machine had\nbeen asked for that afternoon.\n",
       "source_block_ids": [
-        150,
-        151,
-        152,
-        153,
         154,
         155,
         156,
         157,
-        158
+        158,
+        159,
+        160,
+        161,
+        162
       ],
       "asset": "output/illustrations/revised/issue-11/plate-11.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Wash first.",
       "scene_brief": "After the event Q and Prime sit together with traces of orange on their fingers as the host requests a polished handshake photograph. Their conversation and next call matter independently of that request. Do not depict the handshake as already performed or the guard as absent.",
-      "scene_anchor": "Both still had orange on their fingers"
+      "scene_anchor": "Both still had orange on their fingers",
+      "asset_sha256": "63a401a24eec02cd7ab2ab46ceec0aabd6e5906fc51efe506424918f33717a70",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in image_gen",
+      "generation_prompt": "Use case: illustration-story. One single portrait full-page illustration for The Ingenious Machine, contemporary near-future Mexico, neutral black-and-white Goya-inspired copperplate etching and aquatint, finely observed faces and hands, rich crosshatching with pure white light and no cream/sepia wash. Portrait 2:3, edge-to-edge scene, no border, caption, typography, slogans or watermark. Modern everyday people, not period costume. Do not reproduce reference compositions; references establish identities only. No swords, horse, knight costume or glowing holographic effects. Clear humane comedy, not ominous science fiction. Prime is the RIGHT robot in the cover reference: same segmented oval riveted face and concentric circular ears as Q, clean bright lighter-built body with smoother fitted plating, articulated metal hands, question-mark chest, no jacket, no knee brace, undamaged shoulder. Preserve exact recognizable identity; an adult conversational peer, not naive child or villain. Q: exact tall lean segmented oval riveted head, round concentric ear discs, long exposed mechanical neck, question-mark chestplate and articulated fingers from reference. A scuffed well-used metal body, fitted SHORT dark sponsor jacket, exposed mechanical legs, one knee with discreet support brace; seated at this stage of recovery. No human skin face. NEW after-event side-room scene. Reference1 supplies room, Q and Prime, and doorway guard. Reference2 supplies ONLY the thin-mustached host in blazer. Q and Prime sit in the same steady chairs by small table; Q has put his device down after sending a request. They turn toward the host who has just come in and looks with amused impatience at the traces of orange peel/pulp STILL on their metal fingertips. They lift their SEPARATE hands slightly to look; they have NOT shaken hands. Peels and napkins remain on table. A guard is inside room near far door, well beyond normal conversation distance. Conversation interrupted for a tidy publicity photograph, NOT prisoners under threat or signing documents. Keep Q's jacket/brace and Prime's clean bare plating, identical head-family. No camera recording their private conversation; host simply asks them to wash first. No text, no caption, no logos.",
+      "referenced_image_paths": [
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-cdd3eb71-ddaa-49a7-b72f-fe4f46230324.png",
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-f34c8e9a-99d0-498c-8ab9-be7b622f1237.png"
+      ],
+      "original_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-5a284dcd-d013-443b-8b94-51052d01953f.png",
+      "selected_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-fdf35f0a-0217-43f8-8e6e-54c30a2c1c4f.png",
+      "selected_edits": [
+        {
+          "key": "plate-11",
+          "original": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-5a284dcd-d013-443b-8b94-51052d01953f.png",
+          "prompt": "Use case: precise-object-edit. Change only the orange residue on the two robots' fingers. Remove the large chunks perched on every fingertip; replace them with very small subtle sticky smears and a few thin traces of white orange pith on the finger pads, like ordinary residue after peeling an orange. Their hands should look basically clean from a distance, not like silly fruit claws. Keep all finger shapes, hand poses, separate hands, faces, Q jacket/knee brace, Prime's clean body, host and his gesture, guard, chairs, room, table and larger peels on the table unchanged. Preserve neutral black-and-white etched style; no added text.",
+          "selected": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-fdf35f0a-0217-43f8-8e6e-54c30a2c1c4f.png"
+        }
+      ],
+      "visual_review": "Inspected native image for exact-facing action, identity, scene membership, object ownership and chronology; background marks and documents are illustrative, not transcriptions."
     }
-  ]
+  ],
+  "prime_reference": "output/illustrations/revised/issue-11/cover.png",
+  "mauro_reference": "output/illustrations/revised/issue-11/plate-04.png",
+  "proof_outputs": {
+    "reading": {
+      "path": "output/pdf/ingenious-issue-11-revised-en-bw.pdf",
+      "sha256": "271fbd44415edd54635668280ae1922307c5bb9b3a62b96a5fbd8f092f68e9cd"
+    },
+    "a3": {
+      "path": "output/pdf/ingenious-issue-11-revised-en-bw-a3.pdf",
+      "sha256": "9225c5f6515049925dd28ec6606e170d8056697b41ab0e449be33c9a0fd44e02"
+    }
+  },
+  "verification": {
+    "date": "2026-09-08",
+    "baseline_commit": "56075715",
+    "words_in_exact_source_order": 3378,
+    "reading_pages": 24,
+    "a3_sides": 12,
+    "duplex_sheets": 6,
+    "native_images_visually_checked": 12,
+    "reading_pages_visually_checked": 24,
+    "a3_sides_visually_checked": 12,
+    "actual_a3_slots_checked": 24,
+    "imposition": "Every slot matches source text and decoded image data; translations, trim clipping, page dimensions and zero rotations checked.",
+    "text_background": "unpainted",
+    "pdf_images": "twelve lossless DeviceGray plates",
+    "embedded_reading_font_subsets": 5,
+    "other_chapters_unchanged": 21,
+    "all_issue_facing_bindings_checked": 22,
+    "prior_illustrated_pdfs_unchanged": "Issues 1-10, reading and A3",
+    "print_job_sent": false,
+    "a_plus_certified": false
+  }
 }

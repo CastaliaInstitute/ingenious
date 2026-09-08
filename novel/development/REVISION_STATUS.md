@@ -10,7 +10,20 @@ illustrated issues, verify affected print PDFs, and push the revision.
 The latest user clarification governs the ending: “Death just means we finish
 the book.” The source now permits Q to remain alive when the writing stops.
 
-Latest checkpoint: Issue Ten has verified 28-page reading and fourteen-side A3
+Latest checkpoint: Issue Eleven has verified 24-page reading and twelve-side A3
+revision proofs: twelve unique plates, six duplex sheets, and all 3,378 words in
+source order. Four fresh-context calls informed clearer payment dialogue and a
+shorter settlement passage; Q listens to the child's story and then initiates the
+cost inquiry. Four image edits corrected settings and exaggerated orange residue.
+All reading/A3 pages and actual imposed text/image positions were checked. Only
+Chapter Eleven and its outline entries change; the other twenty-one chapters,
+living ending and Issues 1-10 PDFs are unchanged from `56075715`. See
+`CHAPTER_11_FRESH_CONTEXT_REVIEW.md` and `ISSUE_11_PRODUCTION.md`. Issues 1-11
+are current illustrated revision proofs; eleven remain. No printing or A+
+certification; approximately 150-dpi native art and whole-book review remain
+limitations. The active goal is open.
+
+Previous checkpoint: Issue Ten has verified 28-page reading and fourteen-side A3
 revision proofs, fourteen unique plates and seven duplex sheets. All 4,422 words,
 all rendered pages and every actual imposed text/image position were checked.
 Nine image edits corrected character identity, ownership, physical interaction,

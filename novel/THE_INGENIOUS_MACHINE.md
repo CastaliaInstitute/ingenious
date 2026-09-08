@@ -6530,9 +6530,7 @@ adviser said. “We need those commitments separated.”
 “Then it needs the parties required to make it one.”
 
 Q asked whether Chano and Lucía had received the offer. They had not.
-He asked for it to be sent to them through their chosen contacts. He
-could decide what he would say in an appearance. He could not exchange
-their claims for better terms concerning his body.
+He asked for it to be sent to them through their chosen contacts.
 
 “You could make their lives easier,” Esteban said.
 
@@ -6563,20 +6561,16 @@ or the host directing their conversation.
 “The first public meeting can be. I'd like to say hello before it has an audience.”
 
 The adviser added a short unrecorded introduction to the format. Mauro would
-ask Prime whether he wanted it too. The appearance did not oblige either of
-them to pretend that the other was a surprise.
+ask Prime whether he wanted it too.
 
-By the end, Q had not accepted the proposed replacement of his operating
-layer or withdrawn his custody objection. He had agreed to a limited
-joint appearance with Q-Prime, after review of its format. The institute
-would provide ordinary repairs, a copy of his transport inventory,
-and scheduled private calls while the broader dispute continued. The
-adviser kept the actual text. Q kept it too.
+The new draft left Q's operating layer alone and his custody objection open.
+For the limited appearance, the institute offered ordinary repairs, his
+transport inventory and scheduled private calls. Esteban would not promise
+the correspondence behind the transport order. Q had the adviser leave
+that request outstanding.
 
 “This still uses the word endorsement,” she warned him.
 
-They narrowed what he was endorsing: a meeting and the other system's
-opportunity to answer, not the claim that the two had lived one life.
 Q dictated his statement for the attachment.
 
 “I am willing to meet Q-Prime as another participant. Its account of my
@@ -6604,12 +6598,11 @@ he had decided what to do with it.
 
 “I'm asking you not to use it differently for the other one.”
 
-Q signed the limited agreement. It was a constrained bargain, not a
-demonstration that his confinement had become voluntary. He wanted
-several things the institution could withhold. He also wanted to know
-how much of his willingness arose from the invitation to an audience.
-He wrote that question in his journal rather than answering it in
-his own favor.
+Q signed. The adviser sent him the agreed text; the guard at the door
+asked which room he was going to next. He would need an escort either way.
+Q looked once more at the date of the appearance. He had not asked how
+many people were expected, although he wanted to know. He left the question
+unasked and wrote it in his journal.
 
 The institute's announcement read:
 
@@ -6762,9 +6755,9 @@ provided solely by the photograph.
 
 “Ask whether he can lend you a shoulder.”
 
-“Is that a request or a joke?” Q asked.
+“I'll ask. He may want it back.”
 
-“Depends whether it fits.”
+“So would I.”
 
 Q wrote it beneath the questions he wanted to ask Prime.
 
@@ -6879,8 +6872,20 @@ heroic version after that.”
 
 “Did you pay for them?” the boy asked.
 
-“The claim is still disputed. I should answer for the damage I caused,
-not every loss attached to the notice afterward.”
+“Not yet. I haven't got a separate price for the two cartons. I should
+ask for one.”
+
+“What was in them?”
+
+Q checked what he remembered of Lety's account. “She didn't tell me.
+That's another question I should have asked.”
+
+The boy said he hoped it wasn't a television. His father had had to send
+one back, and for a week they had watched everything on his mother's phone.
+Q had been preparing to explain the disputed part of the bill. He asked
+whether the replacement had arrived instead.
+
+“Yes. But she still watches hers.”
 
 The host began to move on. Another child asked about the water seller.
 She had seen a drawing in which Q carried a bottle like a trophy.
@@ -6931,7 +6936,9 @@ The boy's father called it time to leave before the parking charge
 entered another hour.
 
 Q and Prime had ten minutes together afterward, with the guard inside
-the room but beyond ordinary hearing distance. Prime asked whether
+the room but beyond ordinary hearing distance. Q sent his adviser a request
+for the contents and separate cost of the two cartons, then put the other
+messages aside. Prime asked whether
 Q would share the corrected account of the gate incident if the people
 concerned permitted it. Q said he could begin with his own account and
 its stated limits. He asked Prime what he wanted to do after the

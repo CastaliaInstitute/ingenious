@@ -180,7 +180,28 @@ native art remains a press-quality limitation. No print job was sent. See the
 [production record](../../novel/development/ISSUE_10_PRODUCTION.md) and
 [art/prompt manifest](../illustrations/revised/issue-10/manifest.json).
 
-The remaining twelve issues still require their revised illustrated builds.
+## Current Issue 11 revision proof
+
+- [English Issue 11: revised reading PDF](../pdf/ingenious-issue-11-revised-en-bw.pdf)
+- [English Issue 11: revised A3 folding PDF](../pdf/ingenious-issue-11-revised-en-bw-a3.pdf)
+
+24 pages, twelve unique plates including cover, six A3 duplex sheets. All 3,378
+words flow through eleven two-column narrative pages at Georgia 13/18.4167 points.
+Q and Prime meet privately before their public appearance; Q answers a child's
+payment question plainly, listens, and sends a concrete follow-up request.
+The settlement remains limited, and the Custodian is the established long-haired
+man. Exact-facing images distinguish the launch screen, laboratory, backstage
+conversation and public event.
+
+All reading pages and A3 sides were visually checked, and all twenty-four imposed
+positions match the source text and decoded images. Text backgrounds are unpainted;
+twelve lossless grayscale plates reach comic trim. Print all twelve A3 landscape
+sides at actual size, short-edge duplex. Folding leaves an A4 carrier around the
+smaller trim. Native art remains about 150 dpi, not press-master resolution. No
+printing or A+ certification. See the [production record](../../novel/development/ISSUE_11_PRODUCTION.md)
+and [art/prompt manifest](../illustrations/revised/issue-11/manifest.json).
+
+The remaining eleven issues still require their revised illustrated builds.
 
 ## Earlier editions
 
