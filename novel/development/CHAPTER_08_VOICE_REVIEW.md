@@ -1,5 +1,10 @@
 # Chapter Eight: the gate and the picture
 
+Historical review: the later `GATE_SIMULATION_REVISION.md` supersedes this file's
+gate choreography. Q now asks the nearby guard and remains inside the visitor bay;
+the photographer leaves for his own angle. The historical review below is not
+the current source of truth for movements, testimony or illustration selection.
+
 ## Verdict
 
 The chapter's strong conflict is that Q can help someone through a gate while

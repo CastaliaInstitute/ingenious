@@ -159,11 +159,16 @@ know then from what the later record establishes. The wind-farm operator's preca
 distinct from both that incident and the promotional picture of an attack.
 
 At the wind-field gate, the permitted passage to the plots, visitor bay and
-internal service track are distinct. Wind masks most of Teresa's first call.
-Q hears the second, hands the gate to the guard and returns to the bay. A visitor
-has backed along the internal track to photograph him. Teresa supplies that
+internal service track are distinct. Q asks the guard beside the latch to hold
+the gate; the guard does so and the woman clears the opening. Q remains inside
+the bay and asks Teresa how long it will stay open. A photographer requests a
+pose; Q waits for the access answer, and the visitor leaves to choose his own
+angle. Q sees him leave the bay, not his subsequent route. Wind masks most of
+Teresa's call; Lucía repeats the instruction. Teresa supplies the internal-track
 route from a later staff report; it is not Q's direct observation. Chapter
-Sixteen preserves that source distinction. The partial stop and later temporary
+Sixteen preserves both that source distinction and Q's remaining inside the bay.
+There is no confession that he should have called the guard: he did. The
+photographer is not following Q's physical movement. The partial stop and later temporary
 passage do not settle either land access or every lease. The later visit in
 Chapter Seventeen still finds changed visitor arrangements and pending gate work.
 

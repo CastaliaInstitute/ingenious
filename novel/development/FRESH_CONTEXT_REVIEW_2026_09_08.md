@@ -109,6 +109,11 @@ behavioral, pacing or illustrated-edition work.
 
 ## Reproduction and evidence location
 
+Follow-up: `GATE_SIMULATION_REVISION.md` records the subsequent manuscript decision.
+Q now calls the guard and stays within the bay in Chapter Eight and the Chapter
+Sixteen testimony. This report preserves the baseline and initial findings rather
+than silently treating the revised scene as the one the models originally saw.
+
 Per repository instructions, test inputs, runners and complete request/response
 artifacts are under `/tmp`, not checked into the novel repository:
 

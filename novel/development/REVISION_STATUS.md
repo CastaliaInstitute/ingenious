@@ -263,10 +263,19 @@ the book.” The source now permits Q to remain alive when the writing stops.
 Current checkpoint: the second whole-chapter voice pass is complete through
 Chapter Twenty-Two. Eight fresh-context calls now test two scene variants with
 Qwen3 8B and Gemini 2.5 Flash; `FRESH_CONTEXT_REVIEW_2026_09_08.md` records the
-outputs, author-supplied world updates and limitations. Next: review Chapter Eight's
-staff-help alternative and the dependent Chapter Sixteen testimony, then continue
-whole-book pacing, broader scene tests and illustration production. Earlier chapter-by-chapter
+outputs, author-supplied world updates and limitations. The staff-help alternative
+now changes Chapter Eight and the dependent Chapter Sixteen testimony; see
+`GATE_SIMULATION_REVISION.md`. Next: whole-book pacing, broader scene tests and
+illustration production. Earlier chapter-by-chapter
 continuation notes below are a history of this pass, not the latest queue.
+Q requests help from the guard and remains inside the visitor bay. The photographer
+leaves for his own angle, not by following Q; Lucía repeats the masked instruction.
+The incident account, site-plan annotation and two testimony passages agree.
+Rebound Issue 8: 2,671 words, 16 pages, eight planned plates, four A3 sheets at
+12/17 pt. Issue 16: 3,170 words, 20 pages, ten planned plates, five A3 sheets at
+12.2/17.2833 pt. Exact text, white backgrounds, geometry and pairs pass. Three
+text pages and the innermost spread of each were inspected. No new approved art
+or finished illustrated PDFs; the changed gate and site-plan briefs remain plans.
 `CHAPTER_22_VOICE_REVIEW.md` keeps Q's other plans visible before the book closes.
 The Custodian and Q argue over the verb on the page; the final invitation and pen
 remain untouched. Staff and Chano perform the lifting. Stored recordings and

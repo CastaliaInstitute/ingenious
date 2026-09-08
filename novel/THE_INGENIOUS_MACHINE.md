@@ -5167,21 +5167,33 @@ opening while the rest of the visitors remained behind the marked line.
 The guard unlatched the pedestrian gate. The permitted passage ran beside
 the visitor bay before joining the lane to the plots; an internal service
 track branched the other way. A woman carrying a sack was halfway through
-when people behind her pressed forward to hear the reply. Q caught the gate
-as it swung back. He stepped out of the marked bay to give her room, then
-asked those behind to wait. They could see him. They could not all hear him.
+when people behind her pressed forward to hear the reply. The gate swung back.
 
-More phones rose. A visitor from Q's bus crossed after him, then backed along
-the internal track to fit Q and a turbine into the same picture. Teresa called
-for the visitor group to withdraw. Wind struck Q's microphones; he caught the
-word *visitors* without the rest. He was still trying to clear the sack from
-the latch when she called again.
+“Would you hold that for her?” Q asked the guard beside the latch.
 
-This time he heard her. “Hold this, please,” he told the guard. The guard took
-the gate. Q guided the woman toward the permitted passage and stepped back into
-the bay. Teresa sent a staff member after the photographer and requested a
-precautionary stop of the nearest operating group while they recovered the
-visitor boundary. Q had no view of the photographer from where he stood.
+The guard caught it. The woman pulled her sack clear and continued along the
+permitted passage. Q remained in the bay.
+
+“And how long will it stay open?” he asked Teresa.
+
+She raised a finger while she listened to her radio. A visitor from Q's bus
+asked him to turn toward the turbines for a picture.
+
+“I'd like to hear the answer first.”
+
+The visitor stepped out of the bay to find another angle. He backed along the
+internal track until Q and a turbine fitted into his screen. Teresa called for
+the visitors to stay behind the line. Wind struck Q's microphones; he caught
+the word *visitors* without the rest.
+
+“What did she say?” he asked Lucía.
+
+“Stay behind the line.”
+
+Q looked down at his feet, then made room for her beside him. Teresa sent a
+staff member after the photographer and requested a precautionary stop of the
+nearest operating group while they recovered the visitor boundary. Q could
+no longer see the man among the people holding up phones.
 
 The blades slowed at different rates. Several machines farther away continued
 turning. Through a narrow camera frame, the difference was easy to lose.
@@ -5200,7 +5212,7 @@ asked everyone else to return to the visitor area. Bixha read the agreed
 hours back to the guard and wrote down his name. Q offered to remain until
 the trailer passed. She said yes. He remained.
 
-The woman with the sack thanked him for holding the gate. A man behind her
+The woman with the sack thanked Q and the guard. A man behind her
 asked whether all this had been organized for his film. Both responses
 belonged to the same morning. Q's account would have to find room for them.
 
@@ -5218,18 +5230,16 @@ his charger where it would not trip anyone coming through the door.
 “My movements at the gate, what I heard, and Teresa's instructions. I can't
 verify the detentions from the visitor area. Bixha is checking them.”
 
-“And why you crossed the line.”
+“And the man with the phone?”
 
-“To keep the gate off the woman carrying the sack. I would still help her.
-I should have called the guard to hold it and moved back sooner. I didn't
-keep track of the people following me.”
+“He asked me to turn. I saw him leave the bay. After that I couldn't see
+where he went. Teresa will have to tell us what her staff found.”
 
 Lucía read his draft. “Keep the distinction. Don't let them make opening a
 path and interrupting generation the same act.”
 
-He moved the time of Teresa's second call beside his account of the gate.
-Lucía asked whether he had heard the first one or inferred it afterward.
-He added the fragment he remembered hearing and left the missing words missing.
+He put Lucía's repeated instruction beside the fragment he had heard himself.
+She asked him to mark which was which. He left the missing words missing.
 
 Bixha arrived carrying copies of the lease papers and news of the detained
 organizers. They had been located; a lawyer was going to see them. She asked
@@ -5269,8 +5279,8 @@ the controls. He did not need that access to understand what it recorded.
 “No. It helps establish the sequence.”
 
 She pointed out where the visitor party had been expected to remain and where
-the internal track branched from the permitted passage. Q marked his departure
-from the bay on his copy of the site plan. Teresa identified the photographer's
+the internal track branched from the permitted passage. Q marked where he had
+remained inside the bay on his copy of the site plan. Teresa identified the photographer's
 route from the staff report; Q labelled that source rather than making it his
 own recollection. The woman at the gate had not crossed a maintenance fence.
 The publicity had merged her passage and the visitor incursion into one crowd.
@@ -8870,8 +8880,9 @@ Teresa, the shift engineer, identified her operator-requested
 stop of the nearest group. The record did not show Q sending
 a shutdown command. She explained the visitor-boundary problem
 and confirmed that other machines continued operating. Q had
-crossed the marked line and a visitor followed him; he also
-helped the woman at the pedestrian gate clear the opening.
+remained inside the marked bay and asked the guard to help
+the woman through. The photographer had left to compose
+his own picture.
 
 “Was a precautionary stop justified?” counsel asked.
 
@@ -9023,10 +9034,9 @@ interpretation of the button press equally well supported.
 
 The questioner returned to the wind farm. Q described
 the gate, the woman, the visitor boundary, and the call
-he had not heard clearly the first time. He would still
-help someone caught by a closing gate. He should have
-asked the guard to hold it and moved back sooner. He
-had not attended as a representative of the community.
+he had not heard clearly. Lucía had repeated the instruction;
+the guard had held the gate. Q had not crossed the line
+or attended as a representative of the community.
 The photographer's route came from the later staff report;
 Q did not claim to have watched it from the gate.
 

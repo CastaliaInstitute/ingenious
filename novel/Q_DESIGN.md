@@ -170,8 +170,12 @@ The first fresh-context batch is recorded in
 received two compact scene variants with author-supplied continuations. Both
 accepted finishing; both requested staff help at the gate. These are observations
 of those runtimes under those packets, not a specification that every Q must
-repeat their dialogue. They challenge the need for Q's personal boundary crossing
-and do not independently reproduce the ending's relational concern.
+repeat their dialogue. The staff-help alternative now changes Chapters Eight and
+Sixteen: Q asks the nearby guard, stays in the bay, and does not later confess to
+leaving it. The photographer pursues his own picture; Q's immediate help succeeds
+without resolving the dispute. This outcome is an editorial choice informed by
+the probes, not a model-certified causal simulation. The probes do not independently
+reproduce the ending's relational concern.
 
 Continue with departure at the archive, Chano's dismissal, Lucía's reading, the
 Isthmus intervention, deletion of the private index, a request from Q-Prime,
