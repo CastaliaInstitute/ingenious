@@ -5829,17 +5829,54 @@ why a line of parked trailers might mean something other than a queue,
 where his former employer had stopped paying for lodging. Q wrote down
 the directions Chano wanted retained. He asked before using the stories.
 
+They kept the day by the Pacific. On the route north through Guadalajara
+and Tepic, they turned into Mazatlán and took a room far enough from the
+malecón for Chano to approve its price. He slept through the first afternoon.
+Lucía went out without either of them. Q charged beside the room's least
+attractive chair and refused to describe this as a wasted opportunity.
+
+Toward evening they walked beside the sea. A vendor shook lime and chile
+over a bag of mango while Q tried to decide whether he wanted it.
+
+“You can think while I do the next one,” the man said.
+
+“Mango, please. A little chile.”
+
+“His little or yours?” Chano asked.
+
+Q pointed to the smaller shaker. The vendor used it generously.
+
+They found a place to sit. The first piece was sweeter than Q had expected;
+the next had collected most of the chile. Chano offered his water, then
+remembered that this mouth did not need rescuing in quite the same way.
+Q took a small drink anyway. He liked the change.
+
+Lucía asked him what he thought of the Pacific.
+
+“I'd like another day.”
+
+“We can afford breakfast here,” Chano said.
+
+“Then I'll begin with breakfast.”
+
+For their photograph, Q put the bag down and straightened his jacket. Chano
+pointed out the streak on the cuff. Lucía took the picture before Q could
+finish arranging himself. He preferred it to the next one, in which they
+had all managed to look ready for something. He sent it to the Custodian.
+
+The reply asked whether that was chile on the expensive sleeve. Q said yes.
+The Custodian asked for the photograph at its original size.
+
 On the route through the northwest, a Castalia vehicle appeared at two
 successive stops. Lucía saw its logo before Q did.
 
 “They may be following the itinerary,” he said. “I'll ask our contact
 whether anyone has inquired about the handover.”
 
-He sent that question, not a declaration that six cars formed a pursuit.
 The reply confirmed an inquiry from the institute's recovery contractor.
 Their receiving contact, Elena, asked them to call before entering the
-freight district. Her colleague was obtaining advice about the ownership
-claim. They paused the journey at a service station while she did.
+freight district. Her adviser was checking a notice concerning the ownership
+claim. They paused at a service station on the approach to Tijuana.
 
 Q bought water for the others and a packet of chips. Orange powder settled
 in the grooves of his fingers. A napkin moved it into new grooves.
@@ -5859,42 +5896,53 @@ trip because you think you owe me a rescue.”
 
 Chano tapped the parked van. “At present we owe it diesel.”
 
-Elena proposed meeting at a receiving office on the Mexican side, with the
-deposit kept closed and the transport papers ready. Her adviser could not
-promise that Castalia's claim would stay out of the meeting. Mateo confirmed
-that the depositors still wanted the attempt, with the same contingency:
-if stopped, document where the package went and notify the receiving group.
-They chose to continue. Q called the Custodian before starting again.
+Elena proposed meeting at the receiving office. Q looked at the entry
+instructions, which required them to pass a freight-terminal equipment check.
 
-As they approached Tijuana, the road acquired lanes for different kinds
-of intention. Trucks, private cars, local exits, international approaches:
-each separation promised to simplify a journey by asking it to become
-one thing at a time. Chano followed the local signs toward the receiving
-office. Beyond another barrier stood vehicles bound for inspection at
-the international crossing. Beyond those, visible through fences and
-machinery, lay the United States.
+“Could you collect it here instead? The deposit doesn't need to travel
+through the dispute about me.”
 
-A screen outside a logistics center showed an American humanoid patrol
-machine walking a marked route. Another machine carried trays inside
-the café beside it. Q watched a worker take a cup from the second one's
+She checked with the archive keeper. They could receive it off site if the
+depositors approved the change. Mateo obtained that approval through the
+existing contact. Elena brought a colleague, the amended receipt and a case.
+They used a table in the service station's café. Q matched the recipient and
+seal number with the record, and Elena inspected the closed pouch. Her
+colleague signed as witness. Nobody needed the café to become an archive
+for the two appointed people to receive a package there.
+
+“That finishes my delivery?” Q asked.
+
+“It does.”
+
+He saved the signed receipt, sent the agreed confirmation, and watched the
+colleague leave with the case for the archive. The bag at Q's feet was
+lighter. He had expected success to take longer to identify.
+
+Elena stayed while her adviser arranged a call about the recovery claim.
+Changing the delivery point had not withdrawn that claim or made the
+companions' vehicle unrecognizable. The Castalia van was parked across
+the road. Chano wanted to leave; the adviser asked them to wait for the
+verified notice before deciding where to go. Q called the Custodian while
+Elena ordered something she could eat without putting down her phone.
+
+A screen above the café counter showed an American humanoid patrol
+machine walking a marked route. Another machine carried trays between
+the café's tables. Q watched a worker take a cup from the second one's
 tray and ask it to move because she needed to mop beneath it.
 
 “The future has arrived at different wages,” Chano said.
 
 “And only one of those demonstrations shows someone cleaning up afterward.”
 
-They were near the border, not on the other side of it. The automated
-vehicle check at the freight-district entrance nevertheless returned
-an international equipment record against Q's serial number. Castalia
-had registered him for a promotional journey he had never accepted.
-The recovery claim was attached to that record.
+They were near the border, not on the other side of it. They had not
+entered the freight terminal when a Mexican officer named Salas came
+into the café with a colleague and asked for Q. The recovery contractor
+had supplied the van's location. Salas displayed a notice with an
+international equipment record attached: Castalia had registered Q
+for a promotional journey he had never accepted.
 
-The barrier stayed down. A Mexican officer named Salas came to the van
-with a terminal employee. Elena arrived while they were checking the
-papers. Her office was two buildings away.
-
-“We have a receiving appointment here,” she said. “There is no export
-delivery on our instructions.”
+Elena put down her food. “There is no export delivery. The archive
+deposit has been received here under its own instructions.”
 
 Salas looked again at the screen. Q's designation appeared beside
 **PROPRIETARY EQUIPMENT IN TRANSIT**. The record showed Chano as a
@@ -5906,12 +5954,13 @@ it had understood their present destination.
 and the itinerary attached to it. Chano and Lucía can answer for their
 own travel. Please don't record my statement as theirs.”
 
-Salas asked them to move into the inspection bay while he checked the
-notice with the issuing office. He returned with an order for provisional
+Salas asked them to remain while he checked the serial and notice with
+the issuing office. The confirmation included an order for provisional
 custody connected to the dispute over Q's body. It named a case and a
-custody facility. It did not settle ownership of the material he carried.
-Elena called the adviser. Q asked that his objection and the actual
-destination be attached to the transfer record.
+custody facility. Elena's adviser spoke to Salas by telephone, disputed
+the removal and requested review. Salas gave him the issuing reference;
+he would not postpone the transport. Q asked that his objection and
+the completed Mexican-side delivery be attached to the record.
 
 “I can note the objection,” Salas said. “I can't decide this claim here.”
 
@@ -5925,16 +5974,15 @@ She requested a page count and an itemized receipt. One employee began
 with **PAPER MATERIAL**. She asked him to identify each folder separately.
 Q supplied no account of what she had not asked him to describe.
 
-The sealed module appeared on its own transport receipt. Q showed the
-deposit contact and requested that Elena receive it under the agreed
-handover. Salas would not release an item recovered from the same bag
-while the connected notices were being checked. He recorded it as a
-sealed third-party deposit and included the visible seal number. Q
-asked Elena to photograph that entry, not the contents of the folders.
+Salas asked about the archive delivery. Elena supplied its receipt
+reference. The module was no longer in the van or the companions' bag,
+and the notices Salas held did not direct a search of its receiving
+archive. He entered the completed handover separately. The paper folders
+and Chano's ledger remained on the table for inventory.
 
-Then the contractor arrived to collect the disputed machine.
+Then the contractor brought the transport vehicle across the road.
 
-A technician opened a padded transport frame. It resembled a seat designed
+A technician opened a padded transport frame beside the vehicle. It resembled a seat designed
 by someone who had been told that discomfort was a matter of opinion.
 He asked Q to remove his coat and stand on the marked platform.
 
@@ -5947,7 +5995,8 @@ Q requested a call to the Custodian before moving. Salas allowed it.
 The call lasted ninety seconds. The Custodian asked for the case number
 twice, wrote it down, and said he would be at the archive when the
 transport arrived. His voice made Q want to say that everything was
-all right. Instead he described the frame and the separate deposit.
+all right. Instead he described the frame and confirmed that the deposit
+had reached its receiver before the officers arrived.
 
 The technician reached for a maintenance port at Q's shoulder.
 
@@ -5975,19 +6024,18 @@ and people who knew how to make it picturesque. Neither kind had supplied
 the angle at which his shoulder now pressed against the rail.
 
 They supported the knee, fitted the restraints, and put his coat in a
-separate sleeve. The deposit pouch went into a sealed property container
-for the same transport, identified independently of his personal items.
-That was not the requested delivery. It was a traceable interruption.
+separate sleeve. Q asked for the list of what would travel with him.
+It named the coat, his charger and his personal device. Elena kept a copy.
 
 Chano and Lucía were kept for statements concerning the inspection. Elena
-stayed with them and sent the depositors the receipt reference. Q could
+stayed with them and sent the depositors the custody update. Q could
 see all three through the transport frame's clear panel. He asked whether
 his voice was reaching them. It was, faintly.
 
-“I'll tell the Custodian where the package went,” he said.
+“The Custodian knows the delivery is finished,” he said.
 
-“We have the number,” Lucía answered. “Don't agree that the papers are yours
-because they're moving with you.”
+“We have the receipt,” Lucía answered. “Don't agree that these papers are
+yours. They're keeping them here.”
 
 “I won't. Tell Chano I'll call when I can.”
 
@@ -6002,9 +6050,8 @@ The release remained online. The objection received an acknowledgment.
 
 In the vehicle, Q reduced nonessential processing to conserve charge and
 asked the attendant when they would stop. He retained the answer, his
-uncompleted handover, the names of the people notified, and the call he
-owed Chano. He did not begin a search for heroes who had suffered more
-eloquently. He wanted his shoulder out of the rail.
+completed handover, the names of the people notified, and the call he
+owed Chano. He wanted his shoulder out of the rail.
 
 The attendant adjusted the padding at the next stop. His name was Omar.
 He had been given a collection number and a warning not to discuss the
@@ -6101,7 +6148,6 @@ It listed one frame and two bags. Only one bag belonged to her.
 Chano found the adjacent tray number on the duplicate. She called the
 employee over and showed him. He moved a label, returned the frame, and
 took the second bag to the person waiting beside the water dispenser.
-The correction required neither a theory of identity nor a miracle.
 
 “You work here?” the woman asked.
 
@@ -6174,9 +6220,15 @@ He placed the two receipts side by side. “That's why we're here.”
 
 Norma had a shipping-company coffee cup, three stamps, and a keyboard
 with one replacement key brighter than all the others. Her display
-showed Q under the body serial number and the deposit under a transport
-sub-entry. The sealed package had left with the custody vehicle. The
-papers had not.
+showed Q under the body serial number. The attached delivery receipt had been
+entered as though the deposit were part of his transport inventory.
+
+“That package was delivered before this movement,” Lucía said. She
+pointed to the two times and the different receiving names.
+
+Norma checked the item list and corrected the link. Q's coat, charger
+and device had travelled with him. The paper folders had not; the
+archive deposit had never entered this transport.
 
 “Castalia says the return was voluntary,” Lucía said.
 
@@ -6222,7 +6274,7 @@ directions and did not produce the items.
 
 He showed them the inventory through the glass. The ledger was marked
 **PAPER BOOK, DESTINATION UNVERIFIED**. Chano supplied the destination:
-the receiving archive two buildings from the original inspection.
+Elena's receiving archive in the freight district.
 
 “I can't amend the reason for retention,” Adrián said.
 
@@ -6271,11 +6323,11 @@ described the fall and asked that the technician record the existing
 shoulder fault separately from the new damage. He wanted to sit down.
 The Custodian brought a chair rather than an explanation of suffering.
 
-The sealed deposit was entered into a locked property cabinet under
-its own identifier. The Custodian witnessed the intact seal and the
-third-party claim but did not acquire authority to open it by standing
-beside Q. He sent the receipt onward to Elena and the depositors.
-The requested handover remained incomplete.
+The Custodian checked the arriving items against Elena's copy of the list.
+Someone had left space for a sealed package. He drew a line through it.
+The deposit had reached its receiver in Tijuana; no such package had
+been entrusted to this vehicle. Q asked him to keep that correction
+with the inventory.
 
 Roque came from the kitchen with atole in a jug. Q thanked him, accepted
 a cup, and put it where his hand could reach without straining the
@@ -6305,8 +6357,8 @@ Custodian's copy of the original leave authorization went with them.
 doesn't change what this form allowed.”
 
 The official called a supervisor about the attachment. While they
-waited, Q spoke with Chano and Lucía by telephone. He told them where
-the sealed package was and asked about the papers retained in Tijuana.
+waited, Q spoke with Chano and Lucía by telephone. He confirmed the
+arriving items and asked about the papers retained in Tijuana.
 They read the separate receipt numbers aloud. Chano promised to bring
 his copies when they arrived. The ledger itself was still in Tijuana.
 
@@ -6321,15 +6373,15 @@ the afternoon repeatedly refreshing the page.
 
 The reception official also needed a journey report. Its headings asked
 for objective, outcome, obstacles, social impact, and recommendation.
-Q began with the actual deposit: intended recipient in Tijuana; delivery
-interrupted; sealed item now in disputed custody. He listed the people
-notified and the pending next action. He did not summarize the journey
-as an unsuccessful attempt to become human.
+Q began with the actual deposit: delivered to its appointed receiver
+in Tijuana; signed receipt attached. Then he described his own involuntary
+transport and the papers retained separately. The first line of the
+form allowed only one outcome. He continued in the next box.
 
 “The public report needs something shorter,” the official said.
 
-“Use the first sentence. The others are for the people trying to finish
-the delivery.”
+“Keep both outcomes. I finished the delivery. I object to the transport.
+Neither sentence cancels the other.”
 
 The official wanted Q to sign a closing summary. Beneath its signature
 line was **AGREEMENT WITH THE ACCOUNT ABOVE**. Q declined. He signed
@@ -6342,7 +6394,7 @@ In a comment field he wrote:
 
 It fitted. That was useful, not proof that it contained the whole
 matter. He attached the item references instead of asking the sentence
-to open the cabinet.
+to substitute for the people who would have to answer them.
 
 The supervisor confirmed that the machine's arrival could be recorded
 without resolving the ownership dispute. Q could use the reading room
@@ -6405,8 +6457,8 @@ out after Chano asked who had made which promise.
 “It's in theirs.”
 
 The broadcast showed monarchs, work, clean energy, and families at the
-border. It did not mention the held folders or the deposit now locked
-in the property cabinet. The graphic describing Q's return used the
+border. It did not mention the held folders or the delivery completed
+outside the institute's itinerary. The graphic describing Q's return used the
 same green as the countryside behind the reconstructed observatory.
 
 A child asked whether Q-Prime had enjoyed being human.
@@ -6451,7 +6503,7 @@ to give up.”
 Esteban opened a second document, limited to Q's participation. The
 institute wanted an endorsement of Q-Prime as the authorized continuation
 of his journey. Q wanted repairs, access to the correspondence concerning
-the seized deposit, and the ability to speak to his companions without
+his custody instruction, and the ability to speak to his companions without
 an institute employee deciding what counted as relevant.
 
 The adviser marked the operating-layer clause. “An appearance agreement
@@ -6467,7 +6519,7 @@ the bucket resumed its office without having signed anything.
 By the end, Q had not accepted the proposed replacement of his operating
 layer or withdrawn his custody objection. He had agreed to a limited
 joint appearance with Q-Prime, after review of its format. The institute
-would provide ordinary repairs, a copy of the deposit custody entry,
+would provide ordinary repairs, a copy of his transport inventory,
 and scheduled private calls while the broader dispute continued. The
 adviser kept the actual text. Q kept it too.
 
@@ -6590,7 +6642,7 @@ likely to consume someone's meal.
 They reviewed the record from which Prime had been introduced to the
 public. It contained edited appearances and a narrative summary of
 the journey. Its first-person passages had been presented as continuity
-material. Private draft passages and the disputed deposit were not
+material. Private draft passages and the sealed testimony were not
 available in the interface Mauro could inspect.
 
 “When I said I travelled across Mexico, I was following that summary,”
@@ -8179,7 +8231,7 @@ the preservation checks once more before we begin.”
 
 They did. The current manuscript opened from its own storage.
 His plans still listed the next call, the transport return time,
-and the unfinished deposit. The personal memory record of the
+and the request for the retained papers. The personal memory record of the
 meeting with Lucía remained available. Its presence did not
 authorize every use he could make of it, but it was not one of
 the private collection tables being removed.
@@ -8779,10 +8831,11 @@ a claim worth hearing.
 The community archive's records were to be preserved for
 a defined inspection proposal. Lucía's adviser sought
 limits on access and copying before any transfer. The
-sealed third-party module remained separately identified;
-its release for the intended handover required the pending
-custody decision. The judge ordered the request addressed
-rather than absorbed into Castalia's claim over Q's coat.
+sealed third-party module had already reached its appointed
+receiver in Tijuana. Its completed receipt did not entitle
+Castalia to the testimony. The judge left any further request
+for that deposit to a separate application, not the claim
+over Q's body and coat.
 
 The separate review of Chano's intervention closed without
 a charge after the fuller account was considered. No
@@ -8867,7 +8920,7 @@ provided the meeting about the access road ended when it was supposed
 to end, which she advised him not to regard as a promise.
 
 His adviser added the visit to a proposed accompanied itinerary.
-Marisol's deposit work would take them into Chiapas afterward. A
+Marisol's archive work and Ana's invitation would take them into Chiapas afterward. A
 separate request from Noemí would take Q farther east if the time and
 money allowed. The return date, companions, check-ins, and permitted
 work went into the revised travel authorization. The document did
@@ -9216,31 +9269,28 @@ dispute either, but somebody inspected the road.
 
 ### Chapter Eighteen: The Rebel Without a Corpus
 
-The sealed module required a separate release decision, an appointment
-at the Amealco property cabinet, and a person authorized to sign the
-receipt. The decision arrived first. Finding the person took longer.
+Elena sent the new receipt while Q was packing. At the depositors'
+request, her archive had returned the sealed module to Ana, their
+appointed keeper in Chiapas. The archive's courier had completed
+the transfer. Q's first delivery had made this second one possible;
+neither required him to discover what the testimony said.
 
-Elena had sent the depositors' revised instructions from Tijuana.
-They no longer wanted this copy taken to the northern receiving
-office. They wanted it returned to a keeper they had named in
-Chiapas. Marisol verified the change through the contacts already
-used for the deposit. The release concerned this inventoried module,
-not Q's body, the retained paper folders, or Chano's ledger.
+He checked the receiving confirmation with Marisol, then removed
+the old reminder from his list. The papers retained in Tijuana
+still had their own unanswered request. One finished task did not
+have to wait for all the others before it could be finished.
 
-Q checked the serial, seal, and receipt with her. The evidence copy
-of the custody record stayed with the adviser. The module went into
-the fitted case supplied for the journey. He had no decryption key.
-He knew enough about the object to carry it responsibly without
-knowing the testimony inside it.
-
-At the counter, the clerk asked whether the machine could sign.
-
-“He has signed too many things,” Chano said. “This is one of the
-better ones.”
+Ana had invited them to the office where she was working with
+Marisol on publication requests. Mateo had written about the
+training arranged after Q's first visit: both keepers had attended,
+and one had since taken a different job. He wanted another session.
+Q sent the request to the Custodian and asked Ana whether she had
+time to discuss it. She had time for that and a particular Spanish
+reply she wanted him to read, not a general inspection of her archive.
 
 After the Isthmus meetings, they continued into Chiapas. Marisol
-joined them for the handover. She had other work there, and a
-return ticket that the module was not entitled to make her miss.
+joined them for the office visit. She had other work there, and a
+return ticket she was not offering to the needs of Q's manuscript.
 Their hired driver stopped before dusk when rain reduced the
 road ahead to the color of the windshield. The inn cost more
 than they had allowed. Q moved money from the optional part
@@ -9254,9 +9304,9 @@ divide the expense.
 
 “You have made worse things longer.”
 
-The next morning, an officer at a road check asked about the
-case. Marisol produced the release and transport documents;
-Q identified himself and the separately listed deposit.
+The next morning, an officer at a road check asked for their
+travel papers. Marisol produced the accompanied-journey authorization;
+Q identified himself and the listed destination.
 The officer checked the references with his supervisor.
 They waited beside a truck carrying sacks of feed. Its
 driver wanted to know whether Q could help him recover
@@ -9270,7 +9320,7 @@ titles and found a public recording of one when the signal
 returned. It was the wrong song. The driver played it twice
 because he liked it better than the one he had wanted.
 
-Their documents came back with the case still sealed.
+Their documents came back.
 The driver asked for the title of the wrong song.
 Q wrote it on a scrap of paper before they left.
 
@@ -9281,12 +9331,11 @@ farther along the road remained locked; had they trusted
 the first directions alone, they would have delivered a
 considerable speech to its door.
 
-Ana checked their identities and the transfer reference.
-Q checked hers through the agreed contact. She inspected
-the seal, compared the number, and signed the receipt.
-Her colleague put the module in the locked cabinet. The
-local archive's larger black storage case had never made
-the northern journey and was still with its keepers.
+Ana had the receiving confirmation ready. The module had
+arrived under the agreed seal with the archive's courier,
+not in Q's luggage. The local archive's larger black storage
+case had never made the northern journey and was still with
+its keepers. Q put his copy of the confirmation away.
 
 “Anything else you need?” Ana asked.
 
@@ -9295,7 +9344,7 @@ seal. We have that.”
 
 “You don't want a photograph?”
 
-“Not for the handover.”
+“Not of a handover I didn't make.”
 
 “Good. Last month's delivery man wanted one of me holding
 the box. I said it would prove I could hold a box.”
@@ -9382,7 +9431,7 @@ an ending while the people in them were still busy.
 
 “Is this in it?” she asked.
 
-“The delivery needn't be. I'd like to include some of
+“I'd like to include some of
 the visit if you and the others are willing. Not the
 contents of the deposit or details that locate it.”
 
@@ -9397,9 +9446,9 @@ eave. Rain had entered the outer collar of his coat;
 he had checked the body seal and moved indoors before
 it became a repair.
 
-“You delivered it?”
+“The return was completed?”
 
-“Yes. The receipt is with the people who need it.”
+“Yes. Their courier brought it. I came for the visit.”
 
 “And the chapter?”
 

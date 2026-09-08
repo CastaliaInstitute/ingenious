@@ -111,6 +111,16 @@ request to matter. His own removal, other publishers' actions, and the family's
 ongoing wishes are separate states. Competence opens different conflicts; it
 does not oblige the author to restore the discarded mistake elsewhere.
 
+In Tijuana, a competent alternative changes the outcome. Q asks the appointed
+receiver to collect the sealed module outside the freight-terminal check. The
+depositors approve; the handover succeeds. The contractor's separate pursuit
+of Q's body does not retroactively make that success a failure. Later chapters
+must not put the module in Castalia's cabinet to restore the discarded plot.
+The receiving archive, not Q, later arranges its return to Chiapas. His second
+visit can be an invitation to people, not a duty to repeat the delivery.
+The funded Pacific stop also happens: leisure is an undertaking he keeps,
+not an optional promise the author forgets when more serious material arrives.
+
 ## Ending
 
 The root-system dispute remains a practical crisis. Q checks the power supply,

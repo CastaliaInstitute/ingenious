@@ -7,7 +7,7 @@ matches. Updates below trace the subsequent states through the ending.
 | Item or commitment | Current state | Constraint on later scenes |
 | --- | --- | --- |
 | Q's body | At Amealco under disputed provisional custody; specified accompanied visits have been permitted. | A later unrestricted journey needs a changed condition. His original day trip was authorized; the recovery claim does not rewrite that fact. |
-| Encrypted testimony module | Separately inventoried sealed third-party deposit in an Amealco property cabinet. Elena and the depositors have the references. | It did not escape discovery, enter Q's private memory, or reach the Tijuana recipient. Any new handover needs a traceable release. Q has no decryption keys. |
+| Encrypted testimony module | Delivered under seal to Elena and the appointed witness outside the Tijuana freight terminal, then taken to their archive before Q's custody incident. | This is a completed authorized handover, not a hidden object that escaped inspection. It never enters the Amealco custody vehicle or cabinet. Q has no decryption keys. |
 | Chano's original ledger | Retained in Tijuana; identified in the warehouse register. | Chano can carry existing copies and receipts, but cannot hold the original until its recovery is narrated. |
 | Guanajuato miners' ledger | Read in the mine office and left there. Don Hilario Gutiérrez takes selected pension figures copied by Chano and checked by Q. | This is not Chano's later Tijuana ledger. Reading a page is not taking the book; the permitted public disagreement does not authorize publication of private memories or unrelated wage entries. |
 | Lucía's retained folders | In Tijuana under separate item entries. Relevant keepers have some copies; the inventory is not the contents. | New working files are not magically the retained originals. Do not imply that all evidence vanished or every original was backed up. |
@@ -24,15 +24,17 @@ matches. Updates below trace the subsequent states through the ending.
 | Lidia's visit report | Private cardboard-only preview approved by mother and child for a visit report; Q removes his upload when they later request removal. Foundation copies become a separate dispute. | Do not restore an unauthorized full-child upload by Q. Initial permission is real and limited; later withdrawal is also real. The physical sign leaves with Lidia, not the foundation. After the interlude, two controlled copies are removed and two outside publishers have not replied. |
 | Mexico City seminar | Q discusses his own opening and sends a reader ten pages. He does not connect Lucía's grant reference to her investigation on the stream. | The public clip uses the opening. Later reflection must not reinstate the removed seminar disclosure; the certificate interlude continues his existing restraint rather than learning from that discarded incident. |
 | Lucía's catalog evidence | Family requests and catalog notices establish that entries vanished from public search; the originals' whereabouts remain under inquiry. | A delisted entry is not proof the underlying original was destroyed. The dispatch-sheet lead and later archive search must retain that distinction. |
-| Elena | Receiving contact in Tijuana; helps trace the interrupted deposit and retained items. | Reaching her office does not require crossing into the United States. She is not an owner of the deposited testimony. |
+| Elena | Receives the deposit at the café under approved changed instructions; her colleague takes it to the archive. Helps trace the subsequently retained papers. | No US entry or freight-terminal entry is required for the handover. She is the appointed receiver, not the owner of the testimony. |
 | The Custodian | Tall, long-haired, bespectacled man; supports Q, works on the draft, and bears his own responsibility for Castalia's choices. | Do not feminize him or turn practical help into authority to open other people's deposits. |
 
 ## Order of the revised border and return
 
-The group confirms a Mexican-side handover; a freight-district check links Q to
-an equipment record and custody instruction; Q objects; the module and papers
-receive separate entries; a restraint error causes his fall; the module travels
-under seal with his custody transport; papers remain in Tijuana; Q reaches
+The group keeps the Mazatlán leisure stop. Near Tijuana, Q asks for an off-site
+handover; the depositors approve, Elena receives it and her colleague takes it
+to the archive. The following contractor supplies Q's location to Salas, who
+verifies a separate body-custody instruction at the café despite the adviser's
+objection. A restraint error causes Q's fall. Only his personal items travel
+with him; the module is already delivered and the papers are retained in Tijuana. Q reaches
 Amealco before Chano and Lucía; local receipt inquiries continue; the companions
 return; Q negotiates and attends the joint appearance; later permitted visits
 bring him to the union hall and school.
@@ -46,7 +48,7 @@ again at the start of Book Two.
 | Item or commitment | State after the hearing | Constraint on later scenes |
 | --- | --- | --- |
 | Q's body and travel | Ownership remains disputed under an interim order; the approved accompanied schedule continues pending review. | No unexplained permanent confinement, unrestricted departure, or escape. The original day trip remains authorized. |
-| Sealed module | Still separately inventoried in the Amealco property cabinet. The release request must now be addressed. | An order to address a request is not a completed release. Any changed destination needs the depositors' authorization and an actual handover. |
+| Sealed module | Already with its appointed Tijuana receiving archive. | The hearing leaves any further request for it to a separate application; Q's ownership dispute does not acquire the testimony. A later transfer needs depositor instructions and a completed handover. |
 | Chano's ledger and Lucía's retained folders | Originals still retained in Tijuana. | Later working copies and receipts do not put originals in anyone's pocket. |
 | Chano's intervention review | Closed without charge after the fuller incident record is considered. | His action was catching the technician's arm during Q's fall, not an established assault or a US-entry offense. |
 | Alma's photograph | Returned after its limited private deposit. The agreed handling record remains. | The hearing refers to the record and an already public article, not an original still held for exhibition. |
@@ -80,7 +82,7 @@ Chapter Seventeen still finds changed visitor arrangements and pending gate work
 | Item or commitment | Final narrated state | Constraint on editions and later revision |
 | --- | --- | --- |
 | Southern itinerary | Approved accompanied visits, revised for the Mayab interview and later Las Pozas detour. Q returns on schedule. | No secret kitchen escape or unrestricted journey after an order of permanent confinement. |
-| Sealed module | Separately released from Amealco under verified revised instructions; received under seal by Ana's archive in Chiapas. | It is not carried to Mérida and is not the contents of the Chapter 22 drawer. Q never receives its keys or testimony. |
+| Sealed module | Returned from the Tijuana archive to Ana in Chiapas by that archive's courier under the depositors' instructions. Q checks the confirmation during his separately invited visit. | Q does not carry it a second time. It never enters Amealco custody, travels to Mérida or becomes the Chapter 22 drawer's contents. Q never receives its keys or testimony. |
 | Chiapas black storage case | Still with the local keepers. | It never traveled north or appeared under Amealco. |
 | Tijuana papers | Chano's original ledger and Lucía's folders still await final release paperwork at the ending. | Their copies, notes, and receipts are not the originals. Unresolved recovery is acknowledged rather than magically completed. |
 | Ana's card | Office contact on one side, blank reverse, for reviewing a proposed passage. | It is not a mystical proof of receiving nothing and is not used to blank the recantation broadcast. |

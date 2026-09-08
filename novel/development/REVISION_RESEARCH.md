@@ -89,9 +89,12 @@ technical incidents nor the institutional disputes are reports of actual events.
 
 ## Border institutions and Prime
 
-The border episode is near-future fiction on the Mexican side of Tijuana. Its
-freight-district check, linked international equipment record, custody order,
-contractor, maintenance restraint, and appeal arrangements are invented. They
+The border episode is near-future fiction on the Mexican side of Tijuana. Q
+avoids the proposed freight-terminal equipment check by arranging an authorized
+off-site deposit handover. The module reaches its archive before the separately
+pursued body-custody instruction is served at the café. The contractor's location
+report, international equipment record, custody order, maintenance restraint,
+and appeal arrangements are invented. They
 are not descriptions of current Mexican or US law, customs practice, or a
 verified humanoid-patrol deployment. The patrol demonstration on the screen
 belongs to the story's future; the delivery requires no US entry.
@@ -102,6 +105,21 @@ does not assert that a modern model's weights are an autobiographical diary
 or that a supplied passage proves a particular training process. The formal
 and experiential differences between Q and Prime remain questions for the
 characters, not claims about actual machine consciousness.
+
+## Pacific stop
+
+The Pacific stop uses Mazatlán's malecón, documented by the
+[municipal tourism service](https://tics.mazatlan.gob.mx/tourist/es/sitios-interes/detalle/7).
+The Guadalajara-Tepic-Mazatlán approach is consistent with the México-Nogales
+corridor described in this
+[official planning document](https://www.ordenjuridico.gob.mx/Documentos/Eliminados/wo23710.pdf).
+The [SICT corridor account](https://www.gob.mx/sict/prensa/mas-de-19-mmdp-para-fortalecer-infraestructura-carretera-del-estado-considerado-el-granero-del-pais-gre)
+also places Mazatlán on México 15 and identifies the corridor's Tijuana branch.
+This supports the geographic choice, not a verified full road itinerary, current
+travel-time estimate or safety recommendation. The lodging, vendor, mango and
+family photograph are invented. No unsourced world-ranking claim about the
+malecón is used. The SICT page's search extract supplied its corridor description;
+direct opening returned 403. The Tepic plan's page 70 was directly inspected.
 
 ## Later hearing, archives, and index removal
 

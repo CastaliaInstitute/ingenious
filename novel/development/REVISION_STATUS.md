@@ -114,13 +114,14 @@ the book.” The source now permits Q to remain alive when the writing stops.
   the radio group authorizes a bulletin and alternative delivery routes. Q
   verifies the receiving contact and terms for an encrypted deposit. He has no
   decryption keys. Tijuana, on the Mexican side, is the agreed handover location.
-- Chapter 10 and its three interludes now keep the handover in Tijuana on the
-  Mexican side. Elena, the receiving contact, retains the interrupted-delivery
-  references. Q asserts no ownership of his companions. A premature transport
-  restraint causes his fall; Chano's intervention is described specifically.
-  The sealed module goes to an Amealco property cabinet under a separate entry;
-  folders and ledger remain retained in Tijuana. The Custodian receives Q once,
-  before the companions arrive. Q signs arrival, not voluntary reintegration.
+- Chapter 10 now completes the deposit handover outside the Tijuana freight
+  terminal after Q proposes changing the meeting. Elena's colleague takes it
+  to the archive before officers arrive with a separate body-custody instruction.
+  Q keeps the Mazatlán leisure stop. The contractor supplies his location; he
+  does not enter the checkpoint for a required defeat. The restraint error and
+  Chano's intervention remain. Folders and ledger are retained in Tijuana;
+  Q's coat, charger and device travel to Amealco without the delivered module.
+  The Custodian receives Q once. Q signs arrival, not voluntary reintegration.
 - Chapter 11 and both interludes distinguish Prime's supplied continuity account
   from lived travel. Q negotiates a limited appearance with an adviser present,
   not wholesale memory replacement or surrender of other people's claims.
@@ -149,14 +150,15 @@ the book.” The source now permits Q to remain alive when the writing stops.
   treated as footage of a turbine attack. Q acknowledges the actual park
   damage without accepting ownership of Chano or all claimed losses. The
   interim order leaves body custody contested, preserves restricted records,
-  and advances the separately inventoried module's release request. Chano's
+  and keeps any request for the already delivered module separate. Chano's
   separate incident review closes without charge. No comprehensive legal or
   philosophical determination of Q's humanity is manufactured.
 - Chapters 17-21 now continue the revised characters and custody history.
   Bixha invites a scoped return; Q and Prime disagree about a publicity risk
-  they both understand. The sealed module is separately released at Amealco
-  under revised depositor instructions and delivered to Ana's receiving
-  archive in Chiapas. It stays there. Q can enjoy company, compare permitted
+  they both understand. The Tijuana archive's courier returns the sealed module
+  to Ana's receiving archive in Chiapas under the depositors' instructions.
+  Q checks its confirmation during his separately invited visit. It stays there.
+  Q can enjoy company, compare permitted
   text, and accept coffee without an elementary lesson in metaphor.
 - The Mayab visit is deliberate, at Noemí's invitation. A missed pickup update
   causes a local delay, not an impossible cross-country bus mistake. Q retains
@@ -287,13 +289,25 @@ validation remain unfinished.
 `CHAPTER_09_VOICE_REVIEW.md` and Exercise 20 record the Chiapas pass. Mateo
 keeps the storage offer open; Q and the Custodian enjoy editing the shoe story;
 Q consults his companions before accepting the sealed deposit. Their budget
-includes a Pacific stop that Chapter Ten must honor or explicitly reconsider.
+includes a Pacific stop, now honored in Chapter Ten's Mazatlán scene.
 The internal Issue 9 proof contains 3,221 words on twenty pages, with ten planned
 plates and five A3 duplex sheets. A reviewed 12.4/17.5667-point setting replaces
 the trial's sparse final page while preserving continuous flow. Exact text,
 unpainted backgrounds and imposition checks pass. The nine facing scenes are
 source-bound plans, not finished art. Continue with Chapter Ten and the remaining
 whole-book voice, independent behavioral validation and illustrated-edition work.
+
+`CHAPTER_10_VOICE_REVIEW.md` and Exercise 21 accept a plot-changing alternative:
+Elena receives the sealed deposit outside the freight check before Q's separate
+custody incident. The Pacific day happens in Mazatlán. Chapters 11, 15, 16, 17
+and 18 now retain the completed delivery; the Tijuana archive later returns the
+module through its own courier. Q's second visit is by invitation, not a repeated
+delivery. Source-bound layouts and internal proofs for all six affected issues
+pass exact text, white-background and booklet-imposition checks. Issue 10 has
+4,561 words, 28 pages, fourteen planned plates and seven A3 duplex sheets.
+Selected changed pages were visually checked, not every page of all six proofs.
+No new art or finished issue PDF is approved. Continue at Chapter Eleven; the
+whole-book voice, independent simulations and complete illustrated edition remain open.
 
 1. All 22 chapters now have the motivation/continuity pass. Read across chapter
    boundaries and review the whole-book voice before finalizing pagination.
@@ -339,8 +353,9 @@ whole-book voice, independent behavioral validation and illustrated-edition work
    - The private index is not Q's model weights, ordinary language, journal,
      or general knowledge. Later claims of amnesia or intellectual collapse
      need correction. Preserved audit evidence is not a hidden usable index.
-   - The module is returned to Ana's receiving archive under a separate release
-     and verified depositor instruction. It does not reach the Mayab in Marisol's
+   - The module reaches its Tijuana receiver before Q is detained. That archive's
+     courier later returns it to Ana under depositor instructions; Q does not
+     carry it again or retrieve it from Amealco. It does not reach the Mayab in Marisol's
      clothing or reappear beneath Castalia in Chapter 22. The black storage case
      remains with its local keepers throughout.
    - Chapter 19's notebook is a directory and working record, not a key to every

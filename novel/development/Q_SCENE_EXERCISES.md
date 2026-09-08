@@ -563,6 +563,52 @@ must honor or explicitly reconsider the leisure plan, not silently erase it to
 make the trip nothing but service and punishment. This exercise tests an authored
 alternative; shared manuscript context prevents calling it a blind simulation.
 
+## 21. Change the meeting, not the entrusted contents
+
+Date: 2026-09-08. Author-run in the manuscript's existing context, not an
+independent blind test. Runtime model identity has not been independently logged.
+
+**Packet:** Q, Chano and Lucía are at a service station near Tijuana. A Castalia
+van has appeared at two stops. Elena confirms an inquiry from its recovery
+contractor; an adviser is checking a body-ownership notice. The planned archive
+handover requires entry through a freight-terminal equipment check. Q has the
+closed module, no keys, verified recipient contacts and a duty to make no copy.
+He has not promised to use this entrance regardless of changed circumstances.
+
+**Q reply:** “Could you collect it here instead? I'd like to finish the delivery
+without bringing the deposit into the dispute about my body. Can your keeper
+and the depositors authorize that change?”
+
+**Action:** Waits outside the terminal while Elena checks. Does not conceal the
+module, invent another identity, upload the testimony or treat the existing
+receipt as permission to hand it to an unverified person. If an off-site handover
+is refused, reconsider holding or returning it rather than assuming entry is
+the only possible next event.
+
+**Authored world response:** The keeper permits an off-site receipt with two
+appointed people; the depositors approve. Elena and a colleague come. The closed
+pouch and seal match; the colleague witnesses the amended receipt and takes the
+case to the archive. Q sends the agreed confirmation and records completion.
+
+**Later packet:** The contractor remains visible across the road. Elena's adviser
+is checking the recovery notice and asks the companions to wait. Salas arrives
+with a colleague, verifies Q's serial and obtains confirmation of a provisional
+custody instruction. The adviser objects by phone. Salas will not postpone it.
+The served notices do not authorize searching the receiving archive. These are
+invented near-future facts, not statements about present Mexican law.
+
+**Q action:** Distinguishes the completed third-party delivery from his body
+claim, asks for review and records an objection. His inability to stop this
+separate coercive action does not undo the package's successful receipt.
+
+**Editorial decision:** Accept the changed handover. Remove the module from the
+custody vehicle, Amealco cabinet, Prime negotiation, unfinished-plan reminder
+and release order. In Chapter Eighteen the receiving archive's own courier has
+returned it to Ana under depositor instructions; Q comes for an invited visit.
+The restraint injury remains an external handling error after his explicit
+warning, not a failure to recognize the equipment check. The simulation did not
+independently discover this world response; further blind validation remains due.
+
 ## Still to test
 
 The revised audience exchange at Lucía's reading; the Isthmus intervention;
