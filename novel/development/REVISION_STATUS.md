@@ -10,7 +10,17 @@ illustrated issues, verify affected print PDFs, and push the revision.
 The latest user clarification governs the ending: “Death just means we finish
 the book.” The source now permits Q to remain alive when the writing stops.
 
-Latest checkpoint: Issue Seven now has verified 44-page reading and 22-side A3
+Latest checkpoint: Issue Eight has verified 16-page reading and eight-side A3
+proofs, eight unique plates and four duplex sheets. All 2,671 words, all rendered
+pages and every actual imposed text/image slot were checked. Four image edits
+corrected gate chronology, the woman's direction, the site sketch and Isthmus
+totopos. The only manuscript change from `1afe0adc` counts the ten letters in
+"accomplice" correctly. The outline, other twenty-one chapters and Issues 1-7
+PDFs are unchanged. See `ISSUE_08_PRODUCTION.md`. Issues 1-8 are current
+illustrated revision proofs; fourteen remain. No print job was sent. Native art
+remains approximately 150 dpi and the overall goal remains active.
+
+Previous checkpoint: Issue Seven now has verified 44-page reading and 22-side A3
 revision proofs, with 22 unique plates and eleven duplex sheets. All 7,139 words,
 44 rendered pages, facing mappings, grayscale assets and booklet pairs were
 checked. Seven corrective image edits repaired inherited settings, the seminar
@@ -374,8 +384,9 @@ and ten-side A3 proof. Its existing paid-travel offer survives the bounded
 four-call dismissal test; the source is unchanged. The paid-companion audit
 subsequently established the agreement in Chapter Two and rebuilt Issue Two;
 see `PAID_COMPANION_CONTINUITY.md`. Issue Seven's unique plates are now complete.
-Next: continue with Issue Eight's source-bound plates and extend fresh-context
-scene tests without inventing a running budget. Fifteen issues still need
+Issue Eight now also has eight approved plates and verified reading/A3 proofs.
+Next: continue with Issue Nine's source-bound plates and extend fresh-context
+scene tests without inventing a running budget. Fourteen issues still need
 revised approved art. The pacing reports
 are bounded structural reviews, not a new
 full reading of both books. Earlier chapter-by-chapter continuation notes below
@@ -383,11 +394,12 @@ are a history of the voice pass, not the latest queue.
 Q requests help from the guard and remains inside the visitor bay. The photographer
 leaves for his own angle, not by following Q; Lucía repeats the masked instruction.
 The incident account, site-plan annotation and two testimony passages agree.
-Rebound Issue 8: 2,671 words, 16 pages, eight planned plates, four A3 sheets at
+Rebound Issue 8: 2,671 words, 16 pages, eight plates, four A3 sheets at
 12/17 pt. Issue 16: 3,170 words, 20 pages, ten planned plates, five A3 sheets at
 12.2/17.2833 pt. Exact text, white backgrounds, geometry and pairs pass. Three
-text pages and the innermost spread of each were inspected. No new approved art
-or finished illustrated PDFs; the changed gate and site-plan briefs remain plans.
+text pages and the innermost spread of each were inspected at that checkpoint.
+Issue Eight has subsequently received complete illustration and PDF review;
+Issue Sixteen still awaits its illustrated build.
 `CHAPTER_22_VOICE_REVIEW.md` keeps Q's other plans visible before the book closes.
 The Custodian and Q argue over the verb on the page; the final invitation and pen
 remain untouched. Staff and Chano perform the lifting. Stored recordings and
@@ -642,12 +654,12 @@ illustrated edition as unfinished requirements.
    The old public-example packet at `/tmp/ingenious-fresh-scene-packets.json`
    contains a superseded disclosure event and was not run; replace it before use.
 5. Rebuild the remaining English chapter issues only after text and plate placement
-   are reconciled. The new Issue 1-7 revision proofs represent their current chapters.
+   are reconciled. The new Issue 1-8 revision proofs represent their current chapters.
    English is the current revision source; the Spanish edition remains earlier.
 6. Use the new explicit-manifest builder, not the old modulo-indexed asset maps.
    It maps even narrative pages to the following odd plate pages, rejects stale
    chapter/asset hashes and repeats, and checks rendered text coverage. Extend
-   these checks and unique facing-scene illustrations through the remaining fifteen issues.
+   these checks and unique facing-scene illustrations through the remaining fourteen issues.
 7. Restore the requested print specifications: readable larger text, continuous
    flow, black ink and unpainted text backgrounds for cream stock, captions in a
    margin, full-bleed art, and the 24-page/12-plate/six-sheet Issue 1 proof. Verify

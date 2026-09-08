@@ -123,7 +123,26 @@ about 150 dpi, not a press master. No print job was sent. See the
 [production record](../../novel/development/ISSUE_07_PRODUCTION.md) and
 [art/prompt manifest](../illustrations/revised/issue-07/manifest.json).
 
-The remaining fifteen issues still require their revised illustrated builds.
+## Current Issue 8 revision proof
+
+- [English Issue 8: revised reading PDF](../pdf/ingenious-issue-08-revised-en-bw.pdf)
+- [English Issue 8: revised A3 folding PDF](../pdf/ingenious-issue-08-revised-en-bw-a3.pdf)
+
+16 pages, eight unique plates including the cover, and four A3 duplex sheets.
+All 2,671 words flow through seven two-column narrative pages in Georgia
+12/17-point type. The gate scene keeps Q inside the visitor bay while the
+guard helps the woman through; the later sketch separates Q's position from
+the photographer's reported route. The radio scene uses Isthmus totopos.
+One prose correction counts the ten letters in "accomplice." All reading pages
+and A3 sides were visually checked, with exact text and decoded-image checks
+in every imposed position. Unpainted backgrounds and lossless grayscale remain
+the specification. Print all eight landscape A3 sides at actual size, short-edge
+duplex; folding leaves an A4 carrier around comic trim. Approximately 150-dpi
+art remains a press-quality limitation. No print job was sent. See the
+[production record](../../novel/development/ISSUE_08_PRODUCTION.md) and
+[art/prompt manifest](../illustrations/revised/issue-08/manifest.json).
+
+The remaining fourteen issues still require their revised illustrated builds.
 
 ## Earlier editions
 

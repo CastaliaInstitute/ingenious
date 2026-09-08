@@ -1,26 +1,55 @@
 {
   "issue": 8,
-  "revision": "2026-09-08-staff-help-gate-revision",
+  "revision": "2026-09-08-illustrated-isthmus",
   "source": "novel/THE_INGENIOUS_MACHINE.md",
-  "chapter_sha256": "87765e519c2b7100dedede3fef6195c9bd746ea619c11c64084632b5dc6b3cba",
+  "chapter_sha256": "bb8e7aaa7016b137b842d22061d927a18ab3f851803677982f874fbacbb87cd3",
   "page_count": 16,
   "text_font": "Georgia 12/17 pt",
   "plate_count_including_cover": 8,
-  "status": "planned; no new Issue 8 images generated or approved",
+  "status": "verified illustrated revision proof; not a press master",
+  "proof_outputs": {
+    "reading": {
+      "path": "output/pdf/ingenious-issue-08-revised-en-bw.pdf",
+      "sha256": "b8a914a9196fb432d436c883e85d643d165ec023dcf0096a015b3b94a2f18fbe",
+      "pages": 16
+    },
+    "a3": {
+      "path": "output/pdf/ingenious-issue-08-revised-en-bw-a3.pdf",
+      "sha256": "82609cecb5830f14197abcae2c06d7697947616d5099e064fc02ae159d09ca97",
+      "sides": 8,
+      "duplex_sheets": 4,
+      "orientation": "landscape",
+      "duplex": "short edge, actual size"
+    },
+    "verification": "All 2671 source words in order; all 16 reading pages and eight A3 sides visually checked; actual text and decoded image data match every imposed slot; trim clipping and translation verified; unpainted text backgrounds; eight lossless DeviceGray images; embedded reading fonts. No physical print test."
+  },
   "character_reference": "output/illustrations/revised/issue-01/cover.png",
   "chano_reference": "output/illustrations/revised/issue-03/plate-06.png",
   "wardrobe": "Q retains the fitted sponsor jacket, small silver question mark, established segmented oval head, ears, neck, long articulated limbs and breastplate. The key is a workshop key, not a weapon. Preserve Lucía's and Chano's existing designs.",
   "secondary_character_design": "Establish Bixha, Teresa and Álvaro for recurrence in Chapter Seventeen. Bixha is a contemporary organizer with a megaphone and independent work, not a timeless ceremonial figure. Teresa is a shift engineer in overalls; Álvaro wears a linen shirt and carries a folder. The sack-carrying woman and photographer are distinct people with distinct routes.",
   "art_direction": "Unique exact-facing scene, neutral monochrome Goya-inspired etched realism, pure white highlights and no sepia wash. Full bleed at comic trim, separately typeset captions. The contemporary Isthmus wind field is fictional: diagram and access geometry must be coherent across plates, not passed off as an identified site. Only the operator's local group stops. La Sandunga is a sourced regional reference; no lyrics or particular recording reproduced.",
-  "approval_scope": "Source-bound scene plan only; no approved assets or final illustrated Issue 8 PDF. Rebind after source changes. Never substitute an old robot-charging-a-windmill image for the revised gate event. Gate revision: Q remains in the bay and requests the guard's help; no approved image may depict the discarded boundary crossing.",
+  "approval_scope": "All eight selected images visually checked against exact facing passages. Guard holds the gate, Q stays inside visitor bay, photographer route is a later staff report. Fictional site sketch, not a surveyed map. Approximately 150-dpi native art; not a press master.",
   "plates": [
     {
       "plate_id": "issue-08-cover",
       "page": 1,
       "asset": "output/illustrations/revised/issue-08/cover.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The Giants of the Isthmus",
-      "scene_brief": "Q seen from behind at the visitor entrance, his hands empty and lowered, with the narrow gate and people in the middle distance and the large modern turbines beyond. Their scale matters, but they are machinery supplying his archive, not monsters. Leave quiet upper space for separately typeset cover title."
+      "scene_brief": "Q seen from behind at the visitor entrance, his hands empty and lowered, with the narrow gate and people in the middle distance and the large modern turbines beyond. Their scale matters, but they are machinery supplying his archive, not monsters. Leave quiet upper space for separately typeset cover title.",
+      "asset_sha256": "b2dc29ab1c3de766503b3a200d22d7334680928928e8fbffe24a120fe1f9d198",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_trim": 149.85,
+      "generation_prompt": "Use case: illustration-story. Generate a NEW portrait 2:3 full-page black and white Goya-inspired etching/aquatint for a literary comic. Crisp fine crosshatching, expressive contemporary human faces, pure white highlights, no sepia or paper tint. Highest native resolution available. No title, caption, frame or watermark. Essential faces/hands above bottom 6% for separately typeset caption. Input1: Q and Chano IDENTITY ONLY, NOT setting. Q has exact elongated segmented metal head, circular ears, narrow neck, long slender articulated limbs, question-mark breastplate, fitted SHORT dark sponsor jacket with small ? lapel; NO long ragged coat, armor, sword or lance. Chano stocky middle-aged wavy black hair and moustache, contemporary shirt/trousers/jacket. Other inputs identity ONLY as specified. Entirely NEW contemporary Isthmus of Tehuantepec scene, tropical low plain, scattered scrub and flat distant wind fields. NO Querétaro mountains, aqueduct, town hall, colonial towers, maps or text copied from references.\nScene: Q seen from behind at the visitor entrance, his hands empty and lowered, with the narrow gate and people in the middle distance and the large modern turbines beyond. Their scale matters, but they are machinery supplying his archive, not monsters. Leave quiet upper space for separately typeset cover title.\nInput2 is fictional entrance layout reference. New distant rear view, Q in lower foreground INSIDE marked visitor bay, hands empty down by sides, facing low mesh fence/narrow pedestrian gate and waiting people. Modern turbines well beyond. Upper22% pure WHITE sky unobstructed by blades or heads, reserved for title typeset later. NO raised key, NO heroic lance. Gate's agricultural foot passage to left, separate maintenance track right as reference. Simple physical landscape.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-06/plate-09.png",
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-b77931d9-2a63-4e16-be0c-098490c99969.png"
+      ],
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-9ad7fc0e-3fc7-41c5-95c4-dda5c5bc1b73.png",
+      "review_scope": "Selected native image inspected for scene, identity and continuity; not press-resolution approval."
     },
     {
       "plate_id": "issue-08-plate-01",
@@ -46,10 +75,22 @@
         15
       ],
       "asset": "output/illustrations/revised/issue-08/plate-01.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "A more awkward relationship.",
       "scene_brief": "Q and Chano on the bus descending toward the Isthmus; Chano has just shut the window against the strong wind. Modern turbines stand in irregular groups beyond the road. Q holds the brochure and purchase summary as two distinct pages. No turbine fighting, dedicated wire to Amealco, or medieval armor.",
-      "scene_anchor": "machines supplying part"
+      "scene_anchor": "machines supplying part",
+      "asset_sha256": "f21a37c9abe02a20fc98b13954dfe3f94927bc513f171299dcd7997fe4359995",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_trim": 149.85,
+      "generation_prompt": "Use case: illustration-story. Generate a NEW portrait 2:3 full-page black and white Goya-inspired etching/aquatint for a literary comic. Crisp fine crosshatching, expressive contemporary human faces, pure white highlights, no sepia or paper tint. Highest native resolution available. No title, caption, frame or watermark. Essential faces/hands above bottom 6% for separately typeset caption. Input1: Q and Chano IDENTITY ONLY, NOT setting. Q has exact elongated segmented metal head, circular ears, narrow neck, long slender articulated limbs, question-mark breastplate, fitted SHORT dark sponsor jacket with small ? lapel; NO long ragged coat, armor, sword or lance. Chano stocky middle-aged wavy black hair and moustache, contemporary shirt/trousers/jacket. Other inputs identity ONLY as specified. Entirely NEW contemporary Isthmus of Tehuantepec scene, tropical low plain, scattered scrub and flat distant wind fields. NO Querétaro mountains, aqueduct, town hall, colonial towers, maps or text copied from references.\nScene: Q and Chano on the bus descending toward the Isthmus; Chano has just shut the window against the strong wind. Modern turbines stand in irregular groups beyond the road. Q holds the brochure and purchase summary as two distinct pages. No turbine fighting, dedicated wire to Amealco, or medieval armor.\nTwo seated men inside an ordinary intercity bus. Q holds TWO separate pages with indistinct printed lines, Chano's hand on CLOSED sliding window; outside flat tropical scrub plain with distant wind turbines, no city. Their attention is on the machines, not directly toward reader. Only Q and Chano required; do not import other reference people.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-06/plate-09.png"
+      ],
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-f1826b51-ac02-483e-b6d4-b2443e23a2ef.png",
+      "review_scope": "Selected native image inspected for scene, identity and continuity; not press-resolution approval."
     },
     {
       "plate_id": "issue-08-plate-02",
@@ -75,10 +116,30 @@
         31
       ],
       "asset": "output/illustrations/revised/issue-08/plate-02.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "When does the gate open?",
       "scene_brief": "Bixha with a megaphone faces Álvaro and the guard at the closed access gate while Teresa uses her radio. The bus is being moved to a parking area, allowing people more room. Establish the visitor bay, permitted pedestrian passage and branching internal service track for continuity with the next plate.",
-      "scene_anchor": "Could we move the bus first"
+      "scene_anchor": "Could we move the bus first",
+      "asset_sha256": "76608462516f3c40703726528f144fd492a45052ea4577c3b1e7dfbe36c43851",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_trim": 149.85,
+      "generation_prompt": "Use case: illustration-story. Generate a NEW portrait 2:3 full-page black and white Goya-inspired etching/aquatint for a literary comic. Crisp fine crosshatching, expressive contemporary human faces, pure white highlights, no sepia or paper tint. Highest native resolution available. No title, caption, frame or watermark. Essential faces/hands above bottom 6% for separately typeset caption. Input1: Q and Chano IDENTITY ONLY, NOT setting. Q has exact elongated segmented metal head, circular ears, narrow neck, long slender articulated limbs, question-mark breastplate, fitted SHORT dark sponsor jacket with small ? lapel; NO long ragged coat, armor, sword or lance. Chano stocky middle-aged wavy black hair and moustache, contemporary shirt/trousers/jacket. Other inputs identity ONLY as specified. Entirely NEW contemporary Isthmus of Tehuantepec scene, tropical low plain, scattered scrub and flat distant wind fields. NO Querétaro mountains, aqueduct, town hall, colonial towers, maps or text copied from references.\nScene: Bixha with a megaphone faces Álvaro and the guard at the closed access gate while Teresa uses her radio. The bus is being moved to a parking area, allowing people more room. Establish the visitor bay, permitted pedestrian passage and branching internal service track for continuity with the next plate.\nEstablish fiction site clearly: broad entry apron with bus turning toward parking at rear LEFT; visitor bay outlined in painted lines in foreground RIGHT; a narrow mesh pedestrian gate beside bay leads into a fenced foot passage receding LEFT toward agricultural plots. A separate wider internal maintenance track branches RIGHT toward turbines beyond visitor boundary. Mesh fence and simple galvanized gate; no ornate architecture. Bixha: 45-year-old sturdy woman, dark hair low bun, plain short-sleeve cotton blouse and practical dark trousers, megaphone lowered while addressing Álvaro: 50s slim clean-shaven receding hair, light linen shirt, folder under arm. Teresa: 30s woman, short cropped hair, dark work coveralls reflective bands, radio at mouth. Male guard uniform cap at closed pedestrian gate. Q waits within bay, hands lowered. Few waiting adults with small unreadable signs, no invented indigenous glyphs; no weapons or confrontation.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-06/plate-09.png"
+      ],
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-69bcf6d7-ed92-4fe6-aafd-7c1b79fec103.png",
+      "review_scope": "Selected native image inspected for scene, identity and continuity; not press-resolution approval.",
+      "edits": [
+        {
+          "original_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-b77931d9-2a63-4e16-be0c-098490c99969.png",
+          "prompt": "Edit only the pedestrian gate's closed state in this illustration. Preserve all foreground characters, their identities/clothing, Q's stance inside bay, guard at post, bus parking, turbines, fence and path geometry. The central narrow footpath is CLOSED at its entrance: add its shut galvanized mesh gate across opening beside guard. Remove the people already walking down that narrow path beyond gate, leaving it empty. Those people are waiting before opening, not beyond it; don't add new foreground figures. Keep all other elements unchanged. No writing or labels.",
+          "selected_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-69bcf6d7-ed92-4fe6-aafd-7c1b79fec103.png",
+          "result": "Inspected and accepted for revision proof."
+        }
+      ]
     },
     {
       "plate_id": "issue-08-plate-03",
@@ -105,10 +166,31 @@
         48
       ],
       "asset": "output/illustrations/revised/issue-08/plate-03.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Would you hold that for her?",
       "scene_brief": "The guard holds the pedestrian gate as the woman carrying the sack clears it toward the permitted passage. Q speaks from inside the clearly marked visitor bay; neither his feet nor hands cross out to seize the gate. Teresa listens to her radio nearby. A visitor with a phone wants his own angle, but Q has not led or invited him onto the internal service track. Show the three spaces coherently: bay, public permitted passage and separate internal track. No turbine controls, heroic intervention or Q passing the gate to the guard.",
-      "scene_anchor": "The guard caught it."
+      "scene_anchor": "The guard caught it.",
+      "asset_sha256": "10ec5872fae68bbf84b63ba86e3f3eb99f0ca595142a24eb331c49ef7194c8cb",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_trim": 149.85,
+      "generation_prompt": "Use case: illustration-story. Generate a NEW portrait 2:3 full-page black and white Goya-inspired etching/aquatint for a literary comic. Crisp fine crosshatching, expressive contemporary human faces, pure white highlights, no sepia or paper tint. Highest native resolution available. No title, caption, frame or watermark. Essential faces/hands above bottom 6% for separately typeset caption. Input1: Q and Chano IDENTITY ONLY, NOT setting. Q has exact elongated segmented metal head, circular ears, narrow neck, long slender articulated limbs, question-mark breastplate, fitted SHORT dark sponsor jacket with small ? lapel; NO long ragged coat, armor, sword or lance. Chano stocky middle-aged wavy black hair and moustache, contemporary shirt/trousers/jacket. Other inputs identity ONLY as specified. Entirely NEW contemporary Isthmus of Tehuantepec scene, tropical low plain, scattered scrub and flat distant wind fields. NO Querétaro mountains, aqueduct, town hall, colonial towers, maps or text copied from references.\nScene: The guard holds the pedestrian gate as the woman carrying the sack clears it toward the permitted passage. Q speaks from inside the clearly marked visitor bay; neither his feet nor hands cross out to seize the gate. Teresa listens to her radio nearby. A visitor with a phone wants his own angle, but Q has not led or invited him onto the internal service track. Show the three spaces coherently: bay, public permitted passage and separate internal track. No turbine controls, heroic intervention or Q passing the gate to the guard.\nInput2 supplies Teresa cropped hair/reflective coveralls, male uniform guard, gate location and geometry. Focus a SINGLE MOMENT after guard catches swinging gate. Narrow mesh pedestrian gate at center-left OPEN; guard beside post HOLDS IT with hand. Ordinary middle-aged woman in plain blouse and skirt pulls shoulder sack CLEAR OF GATE onto narrow fenced footpath. Q full body foreground right, both feet entirely behind white visitor-bay boundary, hands away from gate, one modest conversational gesture toward guard. Teresa listens to radio at right. Background right separate gravel service track toward turbines. No photographer on track YET (later event). No Q crossing, touching gate or controlling turbines.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-06/plate-09.png",
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-b77931d9-2a63-4e16-be0c-098490c99969.png"
+      ],
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-bee5fb7c-f8db-4e55-b35c-dcab68791e34.png",
+      "review_scope": "Selected native image inspected for scene, identity and continuity; not press-resolution approval.",
+      "edits": [
+        {
+          "original_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-269daa30-e740-49eb-9bc4-4fa9de5e4857.png",
+          "prompt": "Correct only the foreground gate exchange. Keep site layout, Q body and both feet entirely inside white bay, guard holding open gate, Teresa radio, bus and turbines unchanged. REMOVE Chano (moustached man standing between Q and gate), leaving clear open space. Turn Q's head and small open-hand gesture toward GUARD at left, so Q addresses guard not another companion. Replace the sack-carrying woman with a distinct younger woman, slim face, single braid, PLAIN unembroidered blouse and knee-length skirt, NOT the megaphone organizer Bixha. Show her FROM BEHIND walking AWAY from viewer through open gate INTO narrow fenced footpath toward distant fields, sack across shoulder just clearing gate. She must NOT walk out toward viewer. Keep guard hand visibly holding gate, Q never reaching it. No other changes.",
+          "selected_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-bee5fb7c-f8db-4e55-b35c-dcab68791e34.png",
+          "result": "Inspected and accepted for revision proof."
+        }
+      ]
     },
     {
       "plate_id": "issue-08-plate-04",
@@ -133,10 +215,24 @@
         63
       ],
       "asset": "output/illustrations/revised/issue-08/plate-04.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "What he heard.",
       "scene_brief": "In the rented room above the restaurant, Lucía checks Q's incident draft while Bixha arrives with lease copies and news that the detained organizers have been located. Q's charger stays out of the doorway. Their papers and concerns remain separate; no public broadcast of family names or magical live view of detention.",
-      "scene_anchor": "Bixha arrived carrying copies"
+      "scene_anchor": "Bixha arrived carrying copies",
+      "asset_sha256": "0808bc83142266e26218754da6c837f7777301da309675147462b43a96249e2c",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_trim": 149.85,
+      "generation_prompt": "Use case: illustration-story. Generate a NEW portrait 2:3 full-page black and white Goya-inspired etching/aquatint for a literary comic. Crisp fine crosshatching, expressive contemporary human faces, pure white highlights, no sepia or paper tint. Highest native resolution available. No title, caption, frame or watermark. Essential faces/hands above bottom 6% for separately typeset caption. Input1: Q and Chano IDENTITY ONLY, NOT setting. Q has exact elongated segmented metal head, circular ears, narrow neck, long slender articulated limbs, question-mark breastplate, fitted SHORT dark sponsor jacket with small ? lapel; NO long ragged coat, armor, sword or lance. Chano stocky middle-aged wavy black hair and moustache, contemporary shirt/trousers/jacket. Other inputs identity ONLY as specified. Entirely NEW contemporary Isthmus of Tehuantepec scene, tropical low plain, scattered scrub and flat distant wind fields. NO Querétaro mountains, aqueduct, town hall, colonial towers, maps or text copied from references.\nScene: In the rented room above the restaurant, Lucía checks Q's incident draft while Bixha arrives with lease copies and news that the detained organizers have been located. Q's charger stays out of the doorway. Their papers and concerns remain separate; no public broadcast of family names or magical live view of detention.\nInput2 CENTRAL WOMAN leaning over map is Lucía identity only; loosely tied dark hair/field jacket. Input3 Bixha woman with megaphone is Bixha identity ONLY. Night inside modest plaster rented room, small table and two beds, shuttered window. ONLY Q, Lucía and Bixha. Lucía seated reading Q's draft, Q seated with quiet attentive gesture, Bixha at doorway holding separate lease-page folder. Small charging brick/cable against wall next to Q safely NOT across doorway. NO maps, no wind-farm gate, no hall, no broadcast screens, no Chano/Álvaro/Teresa.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-06/plate-09.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-03/cover.png",
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-b77931d9-2a63-4e16-be0c-098490c99969.png"
+      ],
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-a507daf6-7f1c-4ccc-b565-fcce6e58ffbc.png",
+      "review_scope": "Selected native image inspected for scene, identity and continuity; not press-resolution approval."
     },
     {
       "plate_id": "issue-08-plate-05",
@@ -158,10 +254,32 @@
         74
       ],
       "asset": "output/illustrations/revised/issue-08/plate-05.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The later report.",
       "scene_brief": "Teresa shows Q and Lucía the redacted operator extract and a site plan in the control building. Q marks where he remained inside the visitor bay. Teresa supplies the photographer's later route from the staff report, a different evidentiary source. Her cold coffee remains beside the keyboard; Álvaro stands nearby. No Q departure arrow, confession of crossing, private controls or real-site geographic claim.",
-      "scene_anchor": "Teresa identified the photographer"
+      "scene_anchor": "Teresa identified the photographer",
+      "asset_sha256": "503478055fa2704e8e1fd92d24ad4f19348ab0ee46e6290acc9d20493750105a",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_trim": 149.85,
+      "generation_prompt": "Use case: illustration-story. Generate a NEW portrait 2:3 full-page black and white Goya-inspired etching/aquatint for a literary comic. Crisp fine crosshatching, expressive contemporary human faces, pure white highlights, no sepia or paper tint. Highest native resolution available. No title, caption, frame or watermark. Essential faces/hands above bottom 6% for separately typeset caption. Input1: Q and Chano IDENTITY ONLY, NOT setting. Q has exact elongated segmented metal head, circular ears, narrow neck, long slender articulated limbs, question-mark breastplate, fitted SHORT dark sponsor jacket with small ? lapel; NO long ragged coat, armor, sword or lance. Chano stocky middle-aged wavy black hair and moustache, contemporary shirt/trousers/jacket. Other inputs identity ONLY as specified. Entirely NEW contemporary Isthmus of Tehuantepec scene, tropical low plain, scattered scrub and flat distant wind fields. NO Querétaro mountains, aqueduct, town hall, colonial towers, maps or text copied from references.\nScene: Teresa shows Q and Lucía the redacted operator extract and a site plan in the control building. Q marks where he remained inside the visitor bay. Teresa supplies the photographer's later route from the staff report, a different evidentiary source. Her cold coffee remains beside the keyboard; Álvaro stands nearby. No Q departure arrow, confession of crossing, private controls or real-site geographic claim.\nInput2 CENTRALwoman=Lucía identity; input3 short-haired woman reflective coveralls=Teresa, receding-haired man light linen shirt=Álvaro. ONLY Q Lucía Teresa Álvaro in plain modern operator-office. Teresa points to paper site plan on desk, Q pencil marking one stationary dot INSIDE rectangular visitor bay; separate dotted photographer route from staff report begins elsewhere. Printed redacted extract with black redaction bars NEXT TO plan. Cold coffee beside keyboard belonging to Teresa. Q never touches keyboard/controls. Plan geometry simple: public gate and narrow footpath along LEFT edge of bay to plots, internal service track branches RIGHT toward turbines; NO real city map, no arrows showing Q leaving bay. Window flat wind field, not old city.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-06/plate-09.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-03/cover.png",
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-b77931d9-2a63-4e16-be0c-098490c99969.png"
+      ],
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-263ef354-5e90-4c85-86fe-d6f4ed895ca0.png",
+      "review_scope": "Selected native image inspected for scene, identity and continuity; not press-resolution approval.",
+      "edits": [
+        {
+          "original_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-84be6cab-dad0-4e7e-8cab-2ac8047c4784.png",
+          "prompt": "Edit ONLY the two papers on this desk. Preserve every person, face, pose, Q's pencil at stationary black dot, window and room. Main paper: replace pictorial plan with a simple clear flat site sketch. Q pencil dot is inside a rectangular EMPTY visitor bay labeled 'VISITANTES'. NO bus or vehicle inside this bay. A narrow fenced pedestrian passage runs beside bay LEFT edge through small gate toward fields; a separate wider internal service track branches RIGHT. The bus belongs to a separate parking area FAR LEFT, outside bay. A dashed photographer route can run from the bay's right boundary onto the right service track, labeled 'INFORME'; it must NOT start at Q's dot. Do not draw Q walking or crossing. Foreground separate extract: preserve black redaction bars, replace its invented photograph with additional printed lines, no photographs. Keep all other scene details unchanged.",
+          "selected_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-263ef354-5e90-4c85-86fe-d6f4ed895ca0.png",
+          "result": "Inspected and accepted for revision proof."
+        }
+      ]
     },
     {
       "plate_id": "issue-08-plate-06",
@@ -186,16 +304,37 @@
         89
       ],
       "asset": "output/illustrations/revised/issue-08/plate-06.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Several brass parts.",
       "scene_brief": "Near midnight Bixha turns up the radio while Chano hums several brass parts and Q listens. Finished copies sit beneath a plate against the fan, with coffee and totopos nearby. Q's joining the song occurs on the following narrative page, so do not stage it here as already performed. Contemporary clothes and shared amusement, no ceremonial tableau, triumph over the dispute or reproduced song lyrics.",
-      "scene_anchor": "You are doing several brass parts"
+      "scene_anchor": "You are doing several brass parts",
+      "asset_sha256": "cf1ebcc42fac03dfe381057a63a45066c7b2362d45aafb3bf9b43c47dc2e97d2",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_trim": 149.85,
+      "generation_prompt": "Use case: illustration-story. Generate a NEW portrait 2:3 full-page black and white Goya-inspired etching/aquatint for a literary comic. Crisp fine crosshatching, expressive contemporary human faces, pure white highlights, no sepia or paper tint. Highest native resolution available. No title, caption, frame or watermark. Essential faces/hands above bottom 6% for separately typeset caption. Input1: Q and Chano IDENTITY ONLY, NOT setting. Q has exact elongated segmented metal head, circular ears, narrow neck, long slender articulated limbs, question-mark breastplate, fitted SHORT dark sponsor jacket with small ? lapel; NO long ragged coat, armor, sword or lance. Chano stocky middle-aged wavy black hair and moustache, contemporary shirt/trousers/jacket. Other inputs identity ONLY as specified. Entirely NEW contemporary Isthmus of Tehuantepec scene, tropical low plain, scattered scrub and flat distant wind fields. NO Querétaro mountains, aqueduct, town hall, colonial towers, maps or text copied from references.\nScene: Near midnight Bixha turns up the radio while Chano hums several brass parts and Q listens. Finished copies sit beneath a plate against the fan, with coffee and totopos nearby. Q's joining the song occurs on the following narrative page, so do not stage it here as already performed. Contemporary clothes and shared amusement, no ceremonial tableau, triumph over the dispute or reproduced song lyrics.\nInput2 megaphone-woman supplies Bixha identity ONLY. New intimate near-midnight room after meeting, plain plaster walls, dark window, table fan. Q sits LISTENING amused, not singing yet. Chano at table eyes half closed humming, NOT holding any musical instrument. Bixha smiling sideways at him, hand turning portable RADIO volume knob. Three principal figures; coffee pot, cups, totopos and PAPER COPIES HELD DOWN UNDER A PLATE against fan. NO gate, ceremonial clothing, dance performance, lectern, band or official seals. Pleasure among tired people with unfinished work; not victorious rally.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-06/plate-09.png",
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-b77931d9-2a63-4e16-be0c-098490c99969.png"
+      ],
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-0f14d824-f2dc-4f55-ad57-9d56f5f04e35.png",
+      "review_scope": "Selected native image inspected for scene, identity and continuity; not press-resolution approval.",
+      "edits": [
+        {
+          "original_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-d9721f4c-c594-4a4c-80e4-0da685412c4e.png",
+          "prompt": "Edit only the FOOD in the small basket on table. Replace generic triangular tortilla chips with authentic Isthmus of Tehuantepec totopos: several thin ROUND toasted maize discs roughly 14 cm across with irregular small holes perforating their surface, stacked partly overlapping, lightly blistered edges, grayscale etched texture. Not triangular nacho chips. Preserve basket position and scale, coffee, radio, fan, papers beneath plate, every face, hand, pose and room detail EXACTLY. No other changes.",
+          "selected_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-0f14d824-f2dc-4f55-ad57-9d56f5f04e35.png",
+          "result": "Inspected and accepted for revision proof."
+        }
+      ]
     },
     {
       "plate_id": "issue-08-plate-07",
       "page": 15,
       "facing_text_page": 14,
-      "facing_text": "Q joined for a few bars. Chano's\nsurprise pleased him enough that he\ncame in too early the second time.\nBixha turned the radio up another\nnotch. The fan continued at the same\nvolume and lost the argument.\nWhen the song ended, she checked\nher phone for the lawyer's reply.\nThere wasn't one yet. She put it face\ndown and asked who wanted the last\ncoffee.\nThe draft travelled to three\nneighborhoods and two rancherías.\nOne group removed a dead\norganizer's name; another added a\nroad condition. Disagreement\nreturned with the copies. Bixha kept\na record of which body had accepted\nwhich wording instead of calling the\nneatest page the final version. Q did\nnot upload a composite while they\nwere deciding.\nThe consortium filed a complaint\nnaming Q as an agitator and Bixha as\nhis accomplice. She had spent years\non the dispute before meeting him.\nThe noun managed to steal those\nyears in nine letters.\nQ sent the complaint to the lawyer\nalready handling the incident and\nrecorded the next date on which his\naccount might be needed. Then he\ncalled home. The Custodian had\nfound the approval memo. Its\nattachment list included a\ntranslation nobody at Castalia could\nyet locate.\n“I wanted to return with a better\nstory,” Q said.\n“You may have to return with a file.”\n“Can we avoid making that sound\nlike a moral improvement? It has six\nversions and I am fairly sure one is\nmissing a page.”\nThe Custodian asked him to read the\nreference numbers. They worked\nuntil Q's charge was sufficient for the\nmorning and the connection failed\ntwice.\nAt sunrise, the stopped machines\nwere turning again. Chano watched\nthem from the restaurant balcony\nwhile Q packed the verified copies he\nwas permitted to carry. The brass key\nlay beside his charger. In the online\nillustration, he had raised it like a\nlance against the blades.\n“You look taller in that,” Chano said.\n“They've improved the shoulder too.”\n“Send it to the repair shop.”\nQ put the key away. Before leaving,\nhe checked that the gate\narrangement was still in force. It\nwas, for that morning. Bixha gave\nhim the contact for the lawyer's next\nupdate and returned to a\nconversation that had not required\nhis arrival in order to begin.\n",
+      "facing_text": "Q joined for a few bars. Chano's\nsurprise pleased him enough that he\ncame in too early the second time.\nBixha turned the radio up another\nnotch. The fan continued at the same\nvolume and lost the argument.\nWhen the song ended, she checked\nher phone for the lawyer's reply.\nThere wasn't one yet. She put it face\ndown and asked who wanted the last\ncoffee.\nThe draft travelled to three\nneighborhoods and two rancherías.\nOne group removed a dead\norganizer's name; another added a\nroad condition. Disagreement\nreturned with the copies. Bixha kept\na record of which body had accepted\nwhich wording instead of calling the\nneatest page the final version. Q did\nnot upload a composite while they\nwere deciding.\nThe consortium filed a complaint\nnaming Q as an agitator and Bixha as\nhis accomplice. She had spent years\non the dispute before meeting him.\nThe noun managed to steal those\nyears in ten letters.\nQ sent the complaint to the lawyer\nalready handling the incident and\nrecorded the next date on which his\naccount might be needed. Then he\ncalled home. The Custodian had\nfound the approval memo. Its\nattachment list included a\ntranslation nobody at Castalia could\nyet locate.\n“I wanted to return with a better\nstory,” Q said.\n“You may have to return with a file.”\n“Can we avoid making that sound\nlike a moral improvement? It has six\nversions and I am fairly sure one is\nmissing a page.”\nThe Custodian asked him to read the\nreference numbers. They worked\nuntil Q's charge was sufficient for the\nmorning and the connection failed\ntwice.\nAt sunrise, the stopped machines\nwere turning again. Chano watched\nthem from the restaurant balcony\nwhile Q packed the verified copies he\nwas permitted to carry. The brass key\nlay beside his charger. In the online\nillustration, he had raised it like a\nlance against the blades.\n“You look taller in that,” Chano said.\n“They've improved the shoulder too.”\n“Send it to the repair shop.”\nQ put the key away. Before leaving,\nhe checked that the gate\narrangement was still in force. It\nwas, for that morning. Bixha gave\nhim the contact for the lawyer's next\nupdate and returned to a\nconversation that had not required\nhis arrival in order to begin.\n",
       "source_block_ids": [
         90,
         91,
@@ -213,10 +352,27 @@
         103
       ],
       "asset": "output/illustrations/revised/issue-08/plate-07.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The improved shoulder.",
       "scene_brief": "At sunrise on the restaurant balcony, Chano watches the operating turbines while Q packs authorized copies. His real brass key lies beside the charger, lowered and ordinary. A small screen may show the obviously fabricated heroic publicity image, distinct from reality; do not make Q actually raise the key against a turbine.",
-      "scene_anchor": "The brass key lay beside his charger"
+      "scene_anchor": "The brass key lay beside his charger",
+      "asset_sha256": "b1fed1d7812d7a8e5e29a57e85384f74b11b2c022ff7e66652db87cb59108dae",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_trim": 149.85,
+      "generation_prompt": "Use case: illustration-story. Generate a NEW portrait 2:3 full-page black and white Goya-inspired etching/aquatint for a literary comic. Crisp fine crosshatching, expressive contemporary human faces, pure white highlights, no sepia or paper tint. Highest native resolution available. No title, caption, frame or watermark. Essential faces/hands above bottom 6% for separately typeset caption. Input1: Q and Chano IDENTITY ONLY, NOT setting. Q has exact elongated segmented metal head, circular ears, narrow neck, long slender articulated limbs, question-mark breastplate, fitted SHORT dark sponsor jacket with small ? lapel; NO long ragged coat, armor, sword or lance. Chano stocky middle-aged wavy black hair and moustache, contemporary shirt/trousers/jacket. Other inputs identity ONLY as specified. Entirely NEW contemporary Isthmus of Tehuantepec scene, tropical low plain, scattered scrub and flat distant wind fields. NO Querétaro mountains, aqueduct, town hall, colonial towers, maps or text copied from references.\nScene: At sunrise on the restaurant balcony, Chano watches the operating turbines while Q packs authorized copies. His real brass key lies beside the charger, lowered and ordinary. A small screen may show the obviously fabricated heroic publicity image, distinct from reality; do not make Q actually raise the key against a turbine.\nSunrise on plain small-town restaurant balcony: Chano stands at simple railing watching distant operational wind turbines across low flat landscape. Q at table packs neatly separated paper copies into his satchel. Small ordinary brass workshop key lying FLAT beside charging block on table. Charger cable kept aside, never a lance. No heroic publicity screen necessary. No churches, colonial city or mountain from reference; quiet practical departure.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-06/plate-09.png"
+      ],
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-97407321-6678-404b-974b-cad3caf57120.png",
+      "review_scope": "Selected native image inspected for scene, identity and continuity; not press-resolution approval."
     }
-  ]
+  ],
+  "generation_mode": "built-in",
+  "generation_calls": {
+    "originals": 8,
+    "corrective_edits": 4
+  }
 }

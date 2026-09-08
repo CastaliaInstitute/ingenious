@@ -5406,7 +5406,7 @@ upload a composite while they were deciding.
 
 The consortium filed a complaint naming Q as an agitator and Bixha as his
 accomplice. She had spent years on the dispute before meeting him. The noun
-managed to steal those years in nine letters.
+managed to steal those years in ten letters.
 
 Q sent the complaint to the lawyer already handling the incident and recorded
 the next date on which his account might be needed. Then he called home.
