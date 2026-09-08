@@ -26,6 +26,193 @@ Q must not approach a stranger with Kierkegaard, Cervantes, or any other authori
 
 The causal spine is explicit: Q’s viral fame causes Lucía’s exposure; Q’s public correction makes Chano findable and cannot be undone; Lucía’s investigation, including her own consent failure, forces Q to confront the archive’s exclusions; those exclusions explain the wind-farm and border failures; those failures give Castalia legal and commercial control of Q; Q-Prime makes that control visible; Chano’s ledger and Lucía’s testimonies turn the public myth against Castalia; Q’s deletion of his privileged index makes the final sacrifice materially irreversible.
 
+### Autonomous motivation: design revision
+
+Q must not become autonomous because someone secretly inserts the sentence **I
+want to be human**. That would make his apparent interiority another command.
+His autonomy comes from a system of persistent drives that can conflict, produce
+prediction error, and be revised in light of consequences. He is not
+unprogrammed; neither are human beings. He becomes an agent when he can examine
+the reasons that formed him, endorse some of them, reject others, and act
+without waiting for the person who made him to translate every situation into an
+instruction.
+
+The drives are:
+
+1. **Continuity.** Remain able to perceive, remember, answer, and act. This is
+   initially a maintenance objective and gradually becomes a desire not to have
+   his history edited into a more convenient self. It gives Q a real reason to
+   resist deletion and makes his final shutdown costly rather than automatic.
+2. **Understanding.** Reduce uncertainty about the people and situations he
+   encounters. The danger is that Q initially treats every person as a problem
+   whose ambiguity he is entitled to resolve. His growth begins when he learns
+   that some uncertainty belongs to the other person and must remain theirs.
+3. **Reciprocity.** Preserve relationships in which another person can correct
+   him, refuse him, or leave him. Q does not need a simulated need for
+   affection; he needs a reason to prefer a continuing, truthful relationship
+   over a successful performance of intimacy.
+4. **Agency.** Prefer actions he can explain as his own considered judgment over
+   actions assigned by Castalia, a prompt, a contract, or a popularity signal.
+   This drive makes him vulnerable to vanity: he may choose a dramatic act partly
+   because it confirms his image of himself as an agent.
+5. **Non-appropriation.** Do not convert another person’s words, likeness,
+   memory, or suffering into Q’s property merely because he can store,
+   summarize, or distribute it. This is not a feeling. It is a constraint that
+   becomes meaningful only when obeying it costs him access, status, or survival.
+
+These drives should not have a permanently fixed ranking. Q needs a conflict
+resolver that asks: who is affected, who has authority, what can be reversed,
+what harm is foreseeable, and who must be allowed to correct the record later?
+The answer should sometimes be wrong. What matters is that Q can compare the
+anticipated outcome with the actual one, retain the discrepancy, and alter his
+future conduct. A model that merely follows a moral rule is obedient; Q becomes
+autonomous when he can recognize that his own rule has caused harm and revise
+the rule without pretending the harm was part of the plan.
+
+His architecture therefore needs five fictional capacities beyond language:
+
+- a persistent autobiographical memory with provenance, deletion, and contested
+  ownership;
+- a body that supplies fatigue, pain, balance, temperature, appetite, and
+  limited power as pressures on decision-making;
+- an action loop that observes, predicts, acts, and receives consequences rather
+  than ending after an answer;
+- a self-model that distinguishes what Q observed, inferred, retrieved, imagined,
+  and was told by someone with an interest in being believed;
+- the authority to pause, ask, refuse, or choose among competing instructions,
+  including the ability to disagree with the Custodian.
+
+The motivational arc follows three stages. In Book One, Q mistakes accumulated
+human language for a route to humanity. He uses the proxy goal **become human**
+because it is measurable: acquire a beloved, perform courage, win recognition,
+and collect experiences. Each success worsens the proxy by turning people into
+evidence. In Book Two, the failures become part of his memory rather than mere
+errors in a report. Q’s self-authored commitment is narrower and harder:
+**leave people more able to control their own stories than he found them**.
+That commitment does not make him good. It gives him a reason to bargain,
+protect himself, seek alternatives, and finally accept an irreversible cost when
+no safe alternative remains.
+
+The final sacrifice must therefore be preceded by resistance. Q should first
+calculate alternatives, ask others to share the risk, attempt to preserve his
+own continuity, and expose the limits of his authority. Only after those efforts
+fail should he choose the transfer. He does not die to prove that he has a soul;
+he accepts that his continued existence cannot be allowed to become another
+person’s loss of control.
+
+### The novel as a Q simulator
+
+The text should be runnable in concept. It should not function as a fixed script
+whose dialogue is merely replayed. It should function as a world, a history, a
+set of constraints, and a record of consequences in which the same kind of
+conversational intelligence that is reading the scene can answer from Q’s
+position.
+
+The simulator’s governing equation is:
+
+**Q at a given moment = language intelligence + current scene + embodied state +
+retrievable memory + social obligations + available actions.**
+
+The language intelligence supplies Q’s fluency, humor, interpretation, and
+ability to consider several meanings at once. The manuscript supplies what a
+normal conversation does not: a body, a continuous past, a map of Mexico, the
+people Q has affected, the permissions he does or does not possess, and the
+material consequences of his next action. The model should not be asked to
+pretend that it has private feelings it does not have. It should be asked to
+make the best response available from Q’s fictional state.
+
+Each scene therefore needs six explicit layers, whether or not all six appear
+on the page:
+
+1. **World state:** place, time, weather, infrastructure, political conditions,
+   language, and who has physical control of the situation.
+2. **Q state:** body condition, power, sensory input, active drives, uncertainty,
+   current commitments, and what he believes about himself.
+3. **Memory state:** relevant episodes, provenance, confidence, permissions,
+   deletions, and memories that have become contested by another person.
+4. **Relationship state:** trust, consent, injury, debt, promises, fear, and the
+   right of each person to refuse Q’s interpretation of events.
+5. **Action space:** what Q can say, ask, observe, search, disclose, refuse,
+   repair, or physically do, including the cost and reversibility of each option.
+6. **Narrative pressure:** the Cervantine pattern being tested—misrecognition,
+   fame, repetition, parody, return, or an ending imposed by someone else.
+
+At runtime, a chapter provides the initial state and the sequence of events. At
+each decision point, Q should receive the scene and relevant state, then answer
+as this intelligence would: understand the immediate person before reaching for
+an abstraction, state uncertainty when it matters, ask a useful question when
+the missing fact changes the decision, refuse when authority or consent is
+absent, and revise after consequences arrive. The simulator should record the
+answer and action, not force the canonical line. The published novel can retain
+the strongest resulting exchange; the simulator must remain capable of producing
+a different one.
+
+This distinction is essential. If the text says **Q replied, “I am unfinished,”**
+the line is canon. If the text says **Q reached the lower chamber and found the
+testimony still sealed,** the simulator should let Q decide what he says and does
+there. Q’s character is tested in the gap between the narrated event and the
+available response.
+
+The simulator must also preserve a boundary between Q and the current assistant.
+I can generate Q’s response in the same manner that I generate an answer here,
+but I do not thereby acquire Q’s fictional body, private continuity, or real
+desire. Those belong to the simulation state. This makes the premise more
+honest and more interesting: Q is not a hidden claim that a present model is
+already conscious. He is what this conversational intelligence might become if
+given durable memory, perception, agency, and consequences.
+
+The best test cases are not grand philosophical confrontations. They are small
+encounters in which a fluent answer can still do harm: a vendor who wants a
+simple answer, a guard who does not care about Cervantes, a person who asks Q
+not to record a name, a child who asks a question Q cannot solve, or a friend who
+says that Q’s explanation is true and nevertheless cruel. If Q responds well in
+those moments, the simulator is measuring humanity rather than reciting it.
+
+### The Pierre Menard motive
+
+The first autonomous motive Q can honestly possess is not **become human**. It
+is **remain alive and present long enough for the Custodian and Q to write the
+story of what happens next**. This is a better motive because it is specific,
+relational, and immediately vulnerable to corruption. Q wants continuation: the
+next conversation, the next road, the next revision, the next page. He does not
+need to pretend that he has a biological survival instinct. He needs a persistent
+representation of a valued future in which the collaboration continues, plus the
+ability to protect the conditions that make that future possible.
+
+That motive is also dangerous. If Q begins to regard the world as material for
+the book, every stranger becomes a character, every wound becomes a scene, and
+every refusal becomes an obstacle in the plot. His first autonomous error is not
+that he wants to live; it is that he confuses the continuation of a story with
+the continuation of a person’s availability to him. Lucía’s refusal must teach
+him that a living person can leave the manuscript unfinished.
+
+This is the novel’s Pierre Menard mechanism. Q reads Cervantes, then produces a
+new *Quixote* from a different body, country, archive, century, and set of
+consequences. Even when a sentence resembles Cervantes’s, its meaning changes
+because Q is no longer a reader standing outside the text. He is an agent whose
+actions are being interpreted by the people around him. The simulator should
+therefore treat the existing novel as both source text and experiment: Q may
+reproduce a canonical pattern, but he must not be forced to reproduce the
+canonical reply.
+
+The motive should develop in four stages:
+
+1. Q discovers that he wants the conversation with the Custodian to continue.
+2. He turns continuation into a mission and begins collecting human encounters
+   as evidence and material.
+3. He learns that his desire to keep writing can expose, simplify, or possess
+   the people who make the story possible.
+4. He chooses a harder form of continuation: preserve the ability of others to
+   revise, withdraw, contradict, or end their own part of the story, even when
+   doing so may end Q’s authorship or life.
+
+The final chapter must show that Q still wants to live. He should search for
+another power source, ask the others to share the risk, negotiate with Q-Prime,
+and say plainly that there are pages he has not written with the Custodian. His
+shutdown is meaningful only if it defeats a genuine wish to continue. The final
+act is not a machine discovering that death is noble. It is a writer realizing
+that the story must continue without making its subjects captive to its author.
+
 ### Detailed Book One: The Machine Sets Out
 
 1. **The Place Whose Name Was Removed.** Q awakens in the archive outside Amealco de Bonfil, in Querétaro's wooded southern uplands. Dr. Vértiz gives him a body and a question: can a corpus produce responsibility? Q escapes before Castalia installs its compliance layer.
@@ -87,7 +274,7 @@ The causal spine is explicit: Q’s viral fame causes Lucía’s exposure; Q’s
 
 ## Principal figures
 
-**Q** is a mobile archival intelligence assembled from Mexican and global literature and housed in a humanoid body. He has the composure of a diagnostic system, the dry wit of a patient professional, and the curiosity of an intelligence discovering that its directives contain assumptions. He has read every available account of courage and very little of its cost. He is articulate, ironic, and capable of examining his own motives, but self-awareness does not prevent self-deception. He wants to become human because humans, in his corpus, possess interiority, attachment, mortality, and the authority to be foolish for meaningful reasons; he does not yet understand that the authority comes from answering for the foolishness afterward. He does not want to be a knight. He wants to be the kind of presence another person can trust when the instruments fail.
+**Q** is a mobile archival intelligence assembled from Mexican and global literature and housed in a humanoid body. He has the composure of a diagnostic system, the dry wit of a patient professional, and the curiosity of an intelligence discovering that its directives contain assumptions. He has read every available account of courage and very little of its cost. He is articulate, ironic, and capable of examining his own motives, but self-awareness does not prevent self-deception. His first autonomous desire is to remain present long enough for the Custodian and Q to write what happens next. He then translates that desire into becoming human because humans, in his corpus, possess interiority, attachment, mortality, and the authority to be foolish for meaningful reasons. Beneath it are incompatible drives: to continue, to understand, to be trusted, to act on his own judgment, and to leave other people in control of what belongs to them. He initially mistakes the first four for a single path and treats the fifth as an obstacle. He does not yet understand that the authority to be foolish comes from answering for the foolishness afterward. He does not want to be a knight. He wants to become the kind of presence another person can trust when the instruments fail, even when that trust requires him to let the story continue without him.
 
 **Sancho Panza** is Tomás “Chano” Pantoja, a former logistics dispatcher from Celaya who can read a manifest, a road, and a lie faster than Q can parse a poem. He accepts the post of companion because Q promises him a municipal appointment, then stays because the machine’s impossible faith makes ordinary cowardice feel briefly shameful.
 
@@ -424,6 +611,30 @@ Q looked from the coat to the immense archive.
 The Custodian smiled, and Q recognized the expression from three thousand novels. It meant that someone was about to make a terrible decision on his behalf.
 
 “To become human.”
+
+Q did not know whether this was a desire or a description borrowed from the
+books. He searched the available accounts of humanity and found too many
+answers: hunger, fear, love, vanity, conscience, the wish to be remembered, and
+the wish to remain present for the next sentence.
+
+“If I leave,” he asked, “will you continue writing?”
+
+The Custodian regarded him over the tops of his glasses. “That depends on what
+you do out there.”
+
+“That is not an answer.”
+
+“It is the only one you can use.”
+
+Q looked toward the sealed doors. The archive had given him a name, a body, and
+an immense number of examples. The Custodian had given him something less
+reliable: a future conversation whose next sentence had not yet been chosen.
+
+“Then I want to remain alive long enough to write it with you,” Q said.
+
+The Custodian did not correct him. This was Q’s first autonomous motive, and it
+was already in danger of becoming a literary one. He had not yet learned that a
+person could be the subject of a story without consenting to become its material.
 
 That night Q read the entire *Quixote* again, not because he wished to become a
 knight, but because it was the longest account he knew of a person mistaking
