@@ -59,3 +59,19 @@ infrastructure and the grid, not an assertion that a dedicated stream of
 identifiable electrons travels exclusively from the Isthmus to Amealco.
 The storage module is encrypted and Q does not have its keys. Neither the
 technical incidents nor the institutional disputes are reports of actual events.
+
+## Border institutions and Prime
+
+The border episode is near-future fiction on the Mexican side of Tijuana. Its
+freight-district check, linked international equipment record, custody order,
+contractor, maintenance restraint, and appeal arrangements are invented. They
+are not descriptions of current Mexican or US law, customs practice, or a
+verified humanoid-patrol deployment. The patrol demonstration on the screen
+belongs to the story's future; the delivery requires no US entry.
+
+Prime's system is fictional too. It has a supplied continuity account and a
+new body. The characters lack complete source provenance. The revised text
+does not assert that a modern model's weights are an autobiographical diary
+or that a supplied passage proves a particular training process. The formal
+and experiential differences between Q and Prime remain questions for the
+characters, not claims about actual machine consciousness.

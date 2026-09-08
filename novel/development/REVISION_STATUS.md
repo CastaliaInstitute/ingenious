@@ -62,6 +62,25 @@ the book.” The source now permits Q to remain alive when the writing stops.
   the radio group authorizes a bulletin and alternative delivery routes. Q
   verifies the receiving contact and terms for an encrypted deposit. He has no
   decryption keys. Tijuana, on the Mexican side, is the agreed handover location.
+- Chapter 10 and its three interludes now keep the handover in Tijuana on the
+  Mexican side. Elena, the receiving contact, retains the interrupted-delivery
+  references. Q asserts no ownership of his companions. A premature transport
+  restraint causes his fall; Chano's intervention is described specifically.
+  The sealed module goes to an Amealco property cabinet under a separate entry;
+  folders and ledger remain retained in Tijuana. The Custodian receives Q once,
+  before the companions arrive. Q signs arrival, not voluntary reintegration.
+- Chapter 11 and both interludes distinguish Prime's supplied continuity account
+  from lived travel. Q negotiates a limited appearance with an adviser present,
+  not wholesale memory replacement or surrender of other people's claims.
+  Prime is fluent and capable from the start; the two can disagree without
+  treating the copy as intrinsically false. Mauro's lab work gives Prime a
+  bodily beginning and a conversational name. The Custodian remains male.
+- Chapter 12 and its three interludes reconcile Micaela's earlier tianguis meeting,
+  Chano's retained ledger, the disputed source materials, and the accompanied-
+  travel conditions. Q does not casually offer to deactivate Prime. The union
+  meeting governs its actual records and spending. The school play uses safe
+  materials and a new public-question placard, not Lidia's withdrawn sign or
+  children's private health information. The FAQ has an explicit compiled form.
 - Chapter 22 and the coda have been rewritten. Q verifies the power problem,
   obtains help from Q-Prime, saves permissions, survives, and finishes the book
   with the Custodian. Ownership and maintenance disputes remain open.
@@ -71,16 +90,16 @@ the book.” The source now permits Q to remain alive when the writing stops.
 
 ## Required next work
 
-1. Read and revise Chapters 10-21 and their interludes. Trace promises,
+1. Read and revise Chapters 13-21 and their interludes. Trace promises,
    calls, battery and funds, Castalia's control, the restricted index, and the
    difference between Q's public identity and his current commitments. Avoid
    making every person a dispenser of a moral lesson.
 2. Repair backward references to the changed first encounter, Dulcinea claim,
    payment, surveillance, and the ending. Check the trial's quoted evidence.
    Specific new continuity dependencies:
-   - Chapter 10 must distinguish reaching Tijuana from crossing into the US.
-     The agreed handover is on the Mexican side. Do not force an unmotivated
-     international crossing to reach the old border scene.
+   - Chapter 10's revised incident occurs entirely on the Mexican side. Later
+     references to unlawful US entry, ownership of Chano, a secret undiscovered
+     pouch, or a black case travelling with them require correction.
    - The black archive storage case remains with the local keepers. Q carries
      a sealed module and receipt, not the community's storage server or keys.
    - The Isthmus operator stops one group as a safety precaution; Q obtains a
@@ -92,8 +111,18 @@ the book.” The source now permits Q to remain alive when the writing stops.
      Later visits must not describe Q learning for the first time that 2012
      was not an apocalypse. The museum event is fictional hired-room programming,
      not a claim about an actual INAH exhibition.
+   - Use `CUSTODY_CONTINUITY.md` when revising later returns, the trial, and the
+     sealed-delivery episode. Receipts are not recovered originals. A later
+     transfer needs a narrated authority, handover, and record.
+   - Prime and Q have agreed to speak again. Later conflict needs an actual
+     cause; do not revert Prime to naive stock replies merely to elevate Q.
+     Prime's full source provenance remains unverified by the characters.
+   - Check subsequent travel permissions as the custody review develops.
+     Q cannot leave unrestricted simply because the next chapter needs him
+     elsewhere. His accepted opportunity to travel at the beginning remains
+     distinct from Castalia's later disputed recovery claim.
 3. Continue reconciling `OUTLINE.md` as the middle chapters are revised. It now
-   reflects Chapters 1-9 and the ending. Its remaining
+   reflects Chapters 1-12 and the ending. Its remaining
    summaries explicitly describe material that still needs a revision pass.
 4. Extend the scene exercises. Use fresh context if a suitable runtime can be
    invoked; do not report author-known outcomes as independent validation.
@@ -119,6 +148,11 @@ the book.” The source now permits Q to remain alive when the writing stops.
    the requested quality review.
 8. Render and inspect PDFs, check full text coverage and no repetition, validate
    links and page sizes, and commit/push completed changes. The goal remains active.
+9. After the continuity pass, review rhythm and comic range across whole chapters.
+   The procedural repairs should not leave every encounter sounding like an
+   account of good recordkeeping. Preserve bodily experience, conflict, pleasure,
+   local knowledge, and differences in people's voices. Structural checks do not
+   establish A+ literary quality.
 
 ## Located build tools
 

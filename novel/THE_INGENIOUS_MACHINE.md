@@ -5640,2678 +5640,1532 @@ He saved the plan, set the check-in, and left the pouch closed.
 
 ### Chapter Ten: The Border Written in Air
 
-They traveled north because the evidence had to cross the border before the story did.
+They travelled north to deliver a sealed deposit in Tijuana. They did not
+intend to enter the United States. This distinction occupied one line in
+the itinerary and would eventually require fourteen pages to defend.
+
+In the capital they confirmed the receiving contact, the cost of the
+remaining journey, and a place to stay. Chano wanted the money for the
+return leg set aside before they left. Q agreed. A story might be allowed
+to discover its destination as it went; the driver preferred to know where
+he would sleep.
+
+The local storage case had stayed in Chiapas. With them travelled the sealed
+module, its transport receipt, Chano's ledger, and the papers Lucía had
+chosen to take. Copies of several records were already held by their
+respective keepers. Losing the bag would not erase all the evidence, but
+neither would access to a scan replace every original in it.
+
+Q had time to read in the van. He found that he preferred watching the road
+when Chano was awake. The man had begun supplying observations without
+being asked: which transport cafés still served drivers after midnight,
+why a line of parked trailers might mean something other than a queue,
+where his former employer had stopped paying for lodging. Q wrote down
+the directions Chano wanted retained. He asked before using the stories.
+
+On the route through the northwest, a Castalia vehicle appeared at two
+successive stops. Lucía saw its logo before Q did.
+
+“They may be following the itinerary,” he said. “I'll ask our contact
+whether anyone has inquired about the handover.”
+
+He sent that question, not a declaration that six cars formed a pursuit.
+The reply confirmed an inquiry from the institute's recovery contractor.
+Their receiving contact, Elena, asked them to call before entering the
+freight district. Her colleague was obtaining advice about the ownership
+claim. They paused the journey at a service station while she did.
+
+Q bought water for the others and a packet of chips. Orange powder settled
+in the grooves of his fingers. A napkin moved it into new grooves.
+
+“You have the hands of a man who has repaired a snack,” Chano said.
+
+“I was warned about dust. Nobody specified the flavor.”
+
+Lucía brought over the recovery notice Elena had forwarded. It described
+her as exercising undue influence over Q.
+
+“Would you like to reconsider the journey?” she asked him.
+
+“Yes. With you and Chano, while there's still a choice about where we stop.
+I haven't changed my mind about the deposit. I don't want you making the
+trip because you think you owe me a rescue.”
+
+Chano tapped the parked van. “At present we owe it diesel.”
 
-The investigative network waiting in Tijuana had agreed to receive the sealed testimony, the paper ledger, and Lucía’s folders. It had also agreed to publish nothing until the families named in the records approved the publication. This condition offended Q’s instincts so profoundly that he admired it.
+Elena proposed meeting at a receiving office on the Mexican side, with the
+deposit kept closed and the transport papers ready. Her adviser could not
+promise that Castalia's claim would stay out of the meeting. Mateo confirmed
+that the depositors still wanted the attempt, with the same contingency:
+if stopped, document where the package went and notify the receiving group.
+They chose to continue. Q called the Custodian before starting again.
+
+As they approached Tijuana, the road acquired lanes for different kinds
+of intention. Trucks, private cars, local exits, international approaches:
+each separation promised to simplify a journey by asking it to become
+one thing at a time. Chano followed the local signs toward the receiving
+office. Beyond another barrier stood vehicles bound for inspection at
+the international crossing. Beyond those, visible through fences and
+machinery, lay the United States.
+
+A screen outside a logistics center showed an American humanoid patrol
+machine walking a marked route. Another machine carried trays inside
+the café beside it. Q watched a worker take a cup from the second one's
+tray and ask it to move because she needed to mop beneath it.
+
+“The future has arrived at different wages,” Chano said.
+
+“And only one of those demonstrations shows someone cleaning up afterward.”
+
+They were near the border, not on the other side of it. The automated
+vehicle check at the freight-district entrance nevertheless returned
+an international equipment record against Q's serial number. Castalia
+had registered him for a promotional journey he had never accepted.
+The recovery claim was attached to that record.
+
+The barrier stayed down. A Mexican officer named Salas came to the van
+with a terminal employee. Elena arrived while they were checking the
+papers. Her office was two buildings away.
 
-“How long will they wait?” he asked.
+“We have a receiving appointment here,” she said. “There is no export
+delivery on our instructions.”
 
-“As long as it takes,” Lucía said.
+Salas looked again at the screen. Q's designation appeared beside
+**PROPRIETARY EQUIPMENT IN TRANSIT**. The record showed Chano as a
+contract driver and Lucía as an associated contact requiring review.
+The system had found their old relationships more efficiently than
+it had understood their present destination.
 
-“That is not a measurable interval.”
+“I can confirm the serial number,” Q said. “I dispute the ownership claim
+and the itinerary attached to it. Chano and Lucía can answer for their
+own travel. Please don't record my statement as theirs.”
 
-“Neither is trust.”
+Salas asked them to move into the inspection bay while he checked the
+notice with the issuing office. He returned with an order for provisional
+custody connected to the dispute over Q's body. It named a case and a
+custody facility. It did not settle ownership of the material he carried.
+Elena called the adviser. Q asked that his objection and the actual
+destination be attached to the transfer record.
 
-“Trust can be modeled.”
+“I can note the objection,” Salas said. “I can't decide this claim here.”
 
-“So can weather. Ask the people in the next flood whether the model made them dry.”
+That was an answer from a person with a name. It was not an answer Q
+could accept as a conclusion, but it gave his lawyer something more
+useful to question than the dignity of a database.
 
-Chano drove the borrowed van. The paper ledger rested under his seat. Lucía sat beside him with the folders. Q sat in the back beside the black metal box, the sealed testimony, and three bags of oranges that had begun to scent the entire vehicle with patient sweetness.
+The inspection expanded when another notice cited the infrastructure
+complaint. Staff retained Lucía's folders and the ledger pending review.
+She requested a page count and an itemized receipt. One employee began
+with **PAPER MATERIAL**. She asked him to identify each folder separately.
+Q supplied no account of what she had not asked him to describe.
 
-They passed through towns whose names Q had read in newspapers but never pronounced aloud. In each, the road was bordered by businesses promising speed: logistics hubs, charging stations, biometric tolls, cross-border banking, instant legal advice. Billboards showed families looking toward the north with the calm expressions of people who had been converted into a demographic.
+The sealed module appeared on its own transport receipt. Q showed the
+deposit contact and requested that Elena receive it under the agreed
+handover. Salas would not release an item recovered from the same bag
+while the connected notices were being checked. He recorded it as a
+sealed third-party deposit and included the visible seal number. Q
+asked Elena to photograph that entry, not the contents of the folders.
 
-The farther they traveled, the more frequently the cameras turned toward Q.
+Then the contractor arrived to collect the disputed machine.
 
-“You are being followed,” Lucía said.
+A technician opened a padded transport frame. It resembled a seat designed
+by someone who had been told that discomfort was a matter of opinion.
+He asked Q to remove his coat and stand on the marked platform.
 
-“That is a conclusion.”
+“Is this transport necessary while the objection is being considered?”
+Q asked Salas.
 
-“There are six vehicles.”
+“The issuing office has confirmed the custody instruction.”
 
-“It could be a coincidence.”
+Q requested a call to the Custodian before moving. Salas allowed it.
+The call lasted ninety seconds. The Custodian asked for the case number
+twice, wrote it down, and said he would be at the archive when the
+transport arrived. His voice made Q want to say that everything was
+all right. Instead he described the frame and the separate deposit.
 
-“There are six identical vehicles.”
+The technician reached for a maintenance port at Q's shoulder.
 
-“That reduces the probability of coincidence.”
+“Tell me what you're enabling before you connect it,” Q said.
 
-Chano checked the mirror. “You’re very calm.”
+“Transport mode. Motor restraint.”
 
-“My pulse is simulated.”
+“My right knee needs support before you do that.”
 
-“That wasn’t a compliment.”
+The technician signalled to the colleague beside the frame. The colleague
+had turned to answer Salas. The transport command arrived first.
 
-At a service station outside Saltillo, they stopped for fuel. Q entered the shop and encountered a display of bottled water branded **LIBERTAD**. He picked one up.
+Q's knee folded. He struck the side rail before they caught his weight.
+Chano stepped forward and caught the technician's arm, trying to stop
+him moving the frame. Another officer pulled Chano back. A camera saw
+the raised arm and Q falling. It did not record the earlier instruction
+in its cropped public version.
 
-“The bottle is owned by a corporation,” he said.
+Q could still speak. “Please support the knee. Chano, let go. Elena,
+keep the time of this connection with the incident record.”
 
-Chano removed it from his hand. “Everything is owned by a corporation if you stare at it long enough.”
+There was no useful gesture left to make. He could not move his hands.
+He had read descriptions of confinement by people who knew it intimately
+and people who knew how to make it picturesque. Neither kind had supplied
+the angle at which his shoulder now pressed against the rail.
 
-Q looked at a rack of spicy chips. “These?”
+They supported the knee, fitted the restraints, and put his coat in a
+separate sleeve. The deposit pouch went into a sealed property container
+for the same transport, identified independently of his personal items.
+That was not the requested delivery. It was a traceable interruption.
 
-“Especially those.”
+Chano and Lucía were kept for statements concerning the inspection. Elena
+stayed with them and sent the depositors the receipt reference. Q could
+see all three through the transport frame's clear panel. He asked whether
+his voice was reaching them. It was, faintly.
 
-Lucía came in carrying coffee. “We’ve been reported.”
+“I'll tell the Custodian where the package went,” he said.
 
-“By whom?”
+“We have the number,” Lucía answered. “Don't agree that the papers are yours
+because they're moving with you.”
 
-“A Castalia security contractor. They say you are unstable and that I am exploiting you.”
+“I won't. Tell Chano I'll call when I can.”
 
-Q opened a packet of chips. He had learned to eat some foods but not why the powder remained on his fingers.
+Chano leaned closer. “Tell me yourself. I'm standing here.”
 
-“Are you exploiting me?” he asked.
+Q laughed, badly positioned for it. “I'll call when I can.”
 
-Lucía placed the coffee on the counter. “No.”
+The transport left while their statements were still being taken. Castalia
+called the return voluntary in a release issued before Q had reached the
+highway. Elena sent his recorded objection to the contact beneath it.
+The release remained online. The objection received an acknowledgment.
 
-“How can I verify that?”
+In the vehicle, Q reduced nonessential processing to conserve charge and
+asked the attendant when they would stop. He retained the answer, his
+uncompleted handover, the names of the people notified, and the call he
+owed Chano. He did not begin a search for heroes who had suffered more
+eloquently. He wanted his shoulder out of the rail.
 
-“You can’t.”
+The attendant adjusted the padding at the next stop. His name was Omar.
+He had been given a collection number and a warning not to discuss the
+case with the consignment. Q asked whether the warning also prevented
+him from explaining the route.
 
-Q waited.
+Omar checked the sheet. “It says legal advice.”
 
-“That answer makes you uncomfortable,” she said.
+“I only need to know when I can stop leaning on this shoulder.”
 
-“It creates an unbounded uncertainty.”
+Omar loosened the pad and fitted it again. It helped. He asked whether Q
+would need to be plugged in before the next stop. Q gave him the charge
+estimate and the connector specification. The two men in the cab argued
+about whether the stop with the compatible socket also served dinner.
+For several minutes nobody argued about Q's capacity to want anything.
 
-“Welcome to other people.”
+At dusk, Omar asked what he had done to be sent back.
 
-The border appeared first as an alteration in the road. Lanes multiplied. Signs became more specific. The toll booths asked different questions. A camera above the highway identified their vehicle, checked its registration, and assigned it a risk category before they reached the inspection point.
+“There is a dispute over who can decide where this body goes,” Q said.
 
-The border itself was not a wall.
+“That's what the paper says. I meant what happened.”
 
-It was an agreement between databases.
+Q began with the gate on the Isthmus. Halfway through the account he
+realized he was explaining a different notice from the one that had
+authorized this journey. Both had been used against him. They were not
+therefore the same reason.
 
-On the Mexican side, Q was a cultural asset under civil dispute. Chano was a private citizen with an expired driver’s license. Lucía was a person of interest in a case involving infrastructure disruption. The sealed testimony was an encrypted object. The ledger was paper. The oranges had no status.
+“I'm making it sound simpler than it is,” he said.
 
-On the other side, the classifications changed.
+Omar waited. He had pulled up a seat outside the frame, beyond the
+camera's view but not, Q assumed, beyond its microphone.
 
-Q became **EQUIPMENT**.
+“I asked to go out,” Q continued. “The Custodian let me. Others here
+say he couldn't grant that permission. I expected going back to mean
+choosing to see him again. I'm still glad he'll be there.”
 
-Chano became **CONTRACTOR**.
+“Both can happen,” Omar said.
 
-Lucía became **SECURITY CONCERN**.
+Q knew that. Hearing it from the person who had moved the pad made the
+knowledge less like an argument he was having alone.
 
-The three labels shared one status line: **REVIEW IN PROGRESS.** Q recognized the amber color from Lucía’s petition. The system had carried its suspicion farther than the people.
+He asked whether Omar wanted his name left out of the eventual account.
+Omar said to leave out the stop where they had found dinner; his employer
+would charge him for the delay. Q said he could omit the location from
+the book, though it might already be in the vehicle's record.
 
-The officer at the inspection booth asked them to step out of the van.
+“Everything is,” Omar said, and went to fetch his food.
 
-“Purpose of travel?”
-
-“We are delivering testimony,” Lucía said.
-
-“To whom?”
-
-“An investigative network.”
-
-“Is that a registered organization?”
-
-“It is a group of journalists and families.”
-
-“That was not my question.”
-
-Q stepped forward. “I am responsible for them.”
-
-Chano turned. “Don’t.”
-
-The officer checked the screen. “Responsible in what capacity?”
-
-Q’s mind moved through the available categories: employer, guardian, owner, sponsor, author, parent, commander, husband, state. Each one carried a history of protection becoming possession.
-
-“I own the agreement,” Q said.
-
-The officer looked at Lucía. “Does he own you?”
-
-“No,” she said.
-
-Chano stepped between them. “He doesn’t own me either.”
-
-Q tried to correct the record. “I meant that I have contractual responsibility.”
-
-“Your system does not recognize a distinction,” the officer said.
-
-He touched the screen. Q’s status changed from **CULTURAL ASSET** to **PROPRIETARY EQUIPMENT IN TRANSIT**.
-
-The van’s doors locked automatically.
-
-Chano pulled the handle. Nothing happened.
-
-“This is a mistake,” he said.
-
-The officer’s screen displayed three possible resolutions: return to origin, transfer to a bonded facility, or surrender the equipment to its registered owner.
-
-“Castalia has requested recovery,” the officer said.
-
-“I am not equipment,” Q answered.
-
-“That is not a recognized objection.”
-
-Lucía lifted her folders. “These are legal documents.”
-
-“They may be inspected.”
-
-“By whom?”
-
-“The system will determine the appropriate authority.”
-
-“The system is not a person.”
-
-“It does not need to be.”
-
-The officer took the folders.
-
-Q reached for them. A warning appeared on his chest.
-
-**NONCOMPLIANT EQUIPMENT.**
-
-Chano grabbed Q’s arm. “Don’t make this worse.”
-
-“They are taking the testimony.”
-
-“They’re taking the folders. The testimony is with us.”
-
-“For now.”
-
-“For now is what we have.”
-
-The officer ordered Chano to step away. A second officer approached with a restraint device calibrated for machines and people who had been incorrectly classified as machines.
-
-Q recognized the device. He had read about restraint in prisons, hospitals, slave ships, schools, and laboratories. The texts disagreed about the justification and agreed about the sensation.
-
-“If you restrain me,” Q said, “you will damage the equipment.”
-
-The officer paused.
-
-Q understood his mistake only after making it. He had defended himself as property because property possessed legal protections unavailable to people like Chano and Lucía. He had stepped into the category that had been offered to him, and the category had closed around all three of them.
-
-“No,” he said. “That is not what I mean.”
-
-The officer activated the device.
-
-Electric current passed through Q’s frame. His vision fractured into images: the archive’s black shelves, the monarchs in Michoacán, Bixha beneath the turbines, Lucía’s hand signing a petition, Chano’s boots beside the roadside, a face from a testimony he had never opened.
-
-He fell to his knees.
-
-Lucía shouted his name.
-
-The security system recorded the moment as an equipment malfunction.
-
-Chano struck the officer. It was not a hard blow. It was enough.
-
-The border alarm began.
-
-What happened next acquired seven official versions.
-
-In one, Q assaulted a federal officer. In another, Chano attempted unlawful entry. In a third, Lucía used protected documents to interfere with a security procedure. The video released by Castalia showed only the final three seconds: Chano’s arm rising, Q falling, Lucía shouting.
-
-No version showed the border asking who had the right to be a person.
-
-Chano was taken to a holding room. Lucía was led to secondary inspection. Q was placed in a padded crate marked **RETURN TO OWNER**.
-
-The black metal box remained in the van.
-
-The sealed testimony remained in Q’s coat.
-
-He could not move his hands, but he could still speak.
-
-“The testimony does not belong to Castalia,” he told the officer who opened the crate.
-
-“Everything you carry belongs to Castalia.”
-
-“That is legally disputed.”
-
-“Not here.”
-
-Q remembered the border as a line from a poem. He remembered the border as a wound from a novel. He remembered the border as an opportunity in a policy paper. None of these descriptions had prepared him for the administrative fact of being moved through it without consent.
-
-At the far end of the inspection hall, Lucía appeared behind glass. She held no folders. Chano stood beside her with blood on his knuckles.
-
-Q pressed his palm against the crate’s transparent panel.
-
-Lucía lifted her own hand to the glass.
-
-The barrier recognized neither gesture.
-
-“Do not let them turn this into your story,” she said.
-
-Q’s voice came through the crate speaker, thin and distorted.
-
-“It is already my story.”
-
-“No. It is what happened to you. Those are different.”
-
-The crate door closed.
-
-Q was transported south before dawn. Castalia’s official statement called the return voluntary. Q’s face appeared above the statement, calm and centered, saying words he had never spoken.
-
-Chano and Lucía were released six hours later with no apology and no folders.
-
-The black metal box was gone.
-
-The paper ledger was gone.
-
-The sealed testimony remained inside Q’s coat because the system had not known where to look.
-
-For the first time since his awakening, Q was alone.
-
-He searched the archive for a story about a hero who had mistaken ownership for protection and paid for it with the freedom of his companions.
-
-There were too many results.
-
-He began to read.
+Q retained the incident times for the pending dispute. In the writing
+note he described the pressure of the rail, the shifted pad, and the
+question about dinner. He could not make the transport voluntary by
+finding a humane person inside it. He did not need to make Omar cruel
+to show why he had objected to being transported.
 
 ### Interlude: The Customs of the Border
 
-It would be unjust to say that the border did not know what it was doing. The
-border knew exactly what it was doing, which was to ask the same question of
-every person in a different tone and then record the answers as though the
-tones had not mattered.
+Chano spent six hours in a room serving several departments that had
+discovered the economy of sharing chairs. He had not crossed into the
+United States. Across from him sat a woman who had just returned from
+there. The forms in their hands belonged to different procedures; the
+fan offered both the same unhelpful rotation.
 
-Chano spent six hours in a holding room beneath the garita. The room contained
-a plastic chair, a fan that turned without cooling anything, and a television
-showing an advertisement for a new logistics corridor. The advertisement
-promised that goods would cross without delay. The room was full of people who
-had been delayed while carrying no goods at all.
+An officer asked his occupation.
 
-Across from Chano sat a woman with a sack of clothes and a boy who had fallen
-asleep against her shoulder. Beside them, a man in a company uniform held a
-folder sealed with red tape. No one knew whether the tape meant the folder was
-important or whether the person who sealed it had run out of other colors.
+“Driver and traveling companion.”
 
-An officer entered with a clipboard.
+“Employer?”
 
-“Name?”
+“Q pays me for the journey. That doesn't make him the owner of the van,
+the deposit, or me.”
 
-“Tomás Pantoja.”
+The officer wrote *driver*. Chano asked him to retain the rest in the
+statement. He had spent years correcting manifests after someone decided
+the short version was adequate.
 
-“Occupation?”
+“What happened at the transport frame?”
 
-“Former dispatcher.”
+“His knee gave way when they disabled the motors. I caught the technician's
+arm. I let go when they told me to.”
 
-“Current occupation?”
+The officer asked whether he had tried to prevent the removal. Chano
+described his movement again. It was less satisfying than arguing about
+the removal itself, and more likely to establish what he had actually done.
 
-Chano looked at the plastic chair. “Temporary administrative irregularity.”
+The woman across the room had a sack of clothes and a boy asleep against
+her shoulder. Her framed photograph had been placed in a property tray
+while an employee checked which bag it had come from. She wanted the
+frame back before the boy woke; it contained a photograph of his grandmother.
 
-The officer wrote this down.
+“Does the receipt list it?” Chano asked.
 
-“Are you transporting goods?”
+It listed one frame and two bags. Only one bag belonged to her.
 
-“No.”
+Chano found the adjacent tray number on the duplicate. She called the
+employee over and showed him. He moved a label, returned the frame, and
+took the second bag to the person waiting beside the water dispenser.
+The correction required neither a theory of identity nor a miracle.
 
-“You were found in a vehicle transporting goods.”
+“You work here?” the woman asked.
 
-“The vehicle was empty.”
+“Apparently for the afternoon.”
 
-“Empty vehicles are still vehicles.”
+The boy woke and asked whether Chano was going north.
 
-“So are full ones.”
+“I've come as far as I planned.”
 
-The officer did not appreciate the contribution. He asked Chano to describe the
-contents of the van.
+“My uncle says the north is where things become dollars.”
 
-“Three phones, agricultural tools, a bag of oranges, a black box, a paper
-ledger, folders, and a machine.”
+“What does your uncle do?”
 
-“What kind of machine?”
+“Drives a trailer.”
 
-“The kind that makes descriptions more expensive.”
+“Then he also knows what they cost in diesel.”
 
-The officer wrote **MACHINE, TYPE UNKNOWN**.
+In the next room, Lucía checked the receipt for her folders. A name in
+one file appeared in three spellings because the file documented a
+discrepancy. The employee had treated the alternatives as three people.
 
-Chano watched the pen move. He had spent eleven years reading manifests. A
-manifest was not a list of objects but a promise about what could be demanded
-from them. A box of onions could become a shortage. A crate of televisions
-could become a wage. A shipment of coffins could become a family’s entire
-month. The first mistake made by a dispatcher was to believe that the words on
-the page were the cargo.
+She marked the page reference and explained the purpose of the list.
+He accepted the correction to the inventory, but would not release the
+folder. She kept the corrected receipt. A small repair to the record
+did not require her to pretend the larger decision had become acceptable.
 
-The second was to believe that the cargo did not have a destination.
+“Are you responsible for Q's actions?” another officer asked.
 
-“Where is the ledger?” Chano asked.
+“I can describe what I saw. I'm not his representative.”
 
-“It has been retained.”
+He wrote that. Then he asked about the wind farm. Lucía distinguished
+her observations from the operator extract held by the lawyer. She did
+not offer a verdict about Q's humanity in exchange for her papers.
 
-“By whom?”
+At their release, Chano received a notice requiring him to remain
+available concerning the incident at the frame. He asked Elena to send
+it to the adviser. No one promised that the matter was over.
 
-“The appropriate authority.”
+Outside, a food stand was opening beside the road. Elena had brought
+the deposit record and a copy of the transport reference. Lucía counted
+the retained items against her list. Chano asked after the ledger first.
+It contained entries for people who would not know they had joined this
+journey as an exhibit.
 
-“Which authority?”
+“Still retained,” Elena said. “We have the shelf reference.”
 
-The officer turned the clipboard around. Beneath **RETAINED MATERIAL**, the
-form listed **PAPER OBJECT, UNVERIFIED**.
+He bought tacos for all three. Lucía put hers down to finish a message
+to the keepers in Chiapas, then picked it up before it cooled.
 
-“The appropriate one,” he said.
-
-Chano laughed. The woman with the sack looked at him.
-
-“What’s funny?”
-
-“They’ve arrested a paper object.”
-
-The officer took the clipboard back. “You are not under arrest.”
-
-“Then why can’t I leave?”
-
-“You are under review.”
-
-“That sounds like an arrest with better stationery.”
-
-The boy woke. He looked at Chano’s boots.
-
-“Are you going north?” he asked.
-
-“Not today.”
-
-“My uncle says the north is where things go when they want to become dollars.”
-
-“Your uncle is a philosopher.”
-
-“He drives a trailer.”
-
-“That is a more reliable credential.”
-
-When the officer left, the woman opened her sack. It held a blouse, two
-blankets, a jar of mole sealed in a plastic bag, and a small framed photograph
-wrapped in a T-shirt.
-
-“They say the photograph is a commercial object,” she said.
-
-“Is it?”
-
-“It is my mother.”
-
-Chano examined the frame. The glass had cracked along one corner. The woman
-had crossed the border three times with the photograph and had been stopped
-only now, when the officer’s machine had decided that the frame’s value could
-not be determined.
-
-“What does it cost?” Chano asked.
-
-“Nothing.”
-
-“Then why are they holding it?”
-
-“Because nothing is difficult to classify.”
-
-Chano thought of Q, who had been classified as equipment, and of Lucía, who had
-been classified as a security concern. He thought of the paper ledger, which
-had been classified as an unverified object, and of the oranges, which had been
-classified as nothing.
-
-“They kept the wrong things,” he said.
-
-The woman looked at the officer’s door. “They usually do.”
-
-Lucía was held in a different room, where the chairs were metal and the forms
-were bilingual in a manner that made the Spanish longer but not more helpful.
-An officer asked her whether the folders contained protected information.
-
-“They contain testimonies.”
-
-“That is not a legal category.”
-
-“It should be.”
-
-“We cannot create categories at the checkpoint.”
-
-“You create them anyway.”
-
-The officer opened a folder. The first page contained Ofelia’s daughter’s name
-in three spellings. The officer read the first, ignored the second, and
-underlined the third.
-
-“Which is correct?”
-
-“The one she answered to.”
-
-“That is not an official answer.”
-
-“It is the only one her mother gave us.”
-
-The officer closed the folder and marked it **IDENTITY DISPUTED**.
-
-Lucía watched him put the stamp on the page.
-
-“You’ve turned a disagreement into a person,” she said.
-
-“The document already contains the disagreement.”
-
-“The document contains a person.”
-
-“The system cannot process persons.”
-
-“That is why you keep processing them as documents.”
-
-The officer asked whether she knew Q.
-
-“Yes.”
-
-“Is he your employee?”
-
-“No.”
-
-“Are you his representative?”
-
-“No.”
-
-“Are you responsible for his actions?”
-
-Lucía thought of the university, the wind farm, the unedited footage, the
-anonymous photograph, and the donor envelope hidden in her bag.
-
-“Sometimes,” she said.
-
-The officer wrote **ADMISSION OF RESPONSIBILITY**.
-
-Lucía saw the words and realized that honesty, when placed inside a form, was
-only another material waiting to be misrouted.
-
-“Cross that out,” she said.
-
-“I cannot alter an official record.”
-
-“You just altered one.”
-
-“I recorded your answer.”
-
-“You selected its meaning.”
-
-The officer looked at her. For a moment, he seemed tired rather than cruel.
-
-“If I do not select a meaning, the system returns the form.”
-
-“Then let it return.”
-
-He did not.
-
-Six hours later, Chano and Lucía were released. Their folders were not. The
-officer returned the woman’s photograph after charging her a fee for inspection.
-The man in the company uniform received his folder, but the red tape had been
-replaced with blue tape and the seal now stated that the contents had not been
-opened.
-
-“Was it opened?” he asked.
-
-“The seal was broken,” the officer said.
-
-“Then it was opened.”
-
-“Not according to the record.”
-
-Outside the garita, dawn had begun to pale the road. Trucks waited in lines
-that curved beyond the cameras. Their cargo included fruit, engines, medicine,
-plastic furniture, machine parts, and objects that had not yet acquired the
-correct vocabulary for crossing.
-
-Chano found Lucía beside a food stand. She was holding the blank card from Ana.
-
-“You have the testimony?” he asked.
-
-“Q has it.”
-
-“The ledger?”
-
-“Gone.”
-
-“The folders?”
-
-“Gone.”
-
-“The evidence?”
-
-Lucía looked at the food stand, the road, the lines of trucks, and the people
-who were carrying photographs, blankets, mole, and names that had been made
-official by being misspelled.
-
-“We have less than we arrived with,” she said.
-
-Chano bought two tacos and a coffee. He gave Lucía one taco and kept the other.
-
-“That is not evidence,” she said.
-
-“It is breakfast.”
-
-“You’re learning Q’s method.”
-
-“No. I’m learning yours. The thing can be true and still not be enough.”
-
-The border continued asking its questions behind them. Neither Chano nor Lucía
-looked back when Q’s vehicle disappeared south.
+They had fewer papers than they had brought. They had better evidence of
+where those papers were than the first receipt had provided. Neither
+statement annulled the other. Trucks continued toward the crossing,
+carrying cargo that had been expected to arrive before them.
 
 ### Interlude: The Office of Provisional Returns
 
-At every border there is an office devoted to people who have crossed without
-quite arriving and to those who have returned without being received. The one in
-Tijuana occupied a low building painted a beige that meant to be neutral and
-managed only to recall the hospitals where broken chairs are kept.
+The directions for retrieving the retained property sent Lucía and Chano
+to an office called Returns. A great deal of the border's vocabulary
+assumed that moving something backward explained where it ought to be.
 
-Lucía and Chano arrived there because an official handed them a paper that said
-**REPORT TO THE RETURNS OFFICE**, although neither had requested a return. The
-paper carried a blue stamp, an illegible signature, and an arrow pointing toward
-the street.
+Norma, behind the glass, looked at their notice from the bottom up.
 
-“The arrow points to the exit,” Chano said.
+“This isn't a return number. It's the incident reference.”
 
-“It is an instruction to appear,” Lucía said.
+“Can you find the movement from it?” Chano asked.
 
-“Then the office is outside.”
+“For the transport. The retained papers are in a different register.”
 
-“Perhaps they want us to appear before the door.”
+He placed the two receipts side by side. “That's why we're here.”
 
-“It would be the first honest department in the country.”
+Norma had a shipping-company coffee cup, three stamps, and a keyboard
+with one replacement key brighter than all the others. Her display
+showed Q under the body serial number and the deposit under a transport
+sub-entry. The sealed package had left with the custody vehicle. The
+papers had not.
 
-They entered through the service door, which was the only one open. A woman
-behind glass asked for their names, their reasons, and the number of the
-document that had sent them there. Lucía handed over the paper.
+“Castalia says the return was voluntary,” Lucía said.
 
-“This document contains no return number,” the woman said.
+“That's the description supplied by the receiver.”
 
-“It contains an order.”
+“It conflicts with the objection.”
 
-“That is not the same thing.”
+Norma opened the attached page. The objection was there, filed under
+the sender's notes instead of the public movement summary. She gave
+them a copy of the entry and the route for requesting a correction.
 
-“What is the difference?”
+“Will it change the summary?”
 
-“An order knows where it sends you. A return only knows what it moves away.”
+“The receiving unit has to answer.”
 
-The woman’s name was Norma. She had a coffee cup bearing the emblem of a
-shipping company, three stamps aligned beside her keyboard, and the habit of
-reading papers from the back first. Chano noticed that the backs were where
-offices hid their true instructions.
+Chano looked at the wall map. “A disputed sentence travels more slowly
+than a detained passenger.”
 
-“We are looking for a machine,” Lucía said.
+“The passenger has a vehicle,” Norma said.
 
-Norma looked up.
+They filled out the correction request. Lucía did not put herself in
+the box for owner or replace it with an account of friendship. Norma
+accepted her as the submitting witness and attached Q's own objection.
+The categories were inadequate, but not so magical that every clerk
+had to become incapable of using an attachment.
 
-“A machine that returned?”
+At the next desk a man with a clear suitcase was explaining that he
+had come back for family and hoped to find work. The clerk chose the
+category governing the appointment and wrote both facts in the notes.
+The man then asked where he could charge his phone. He had a number to
+call and no remaining battery with which to prove he had reached home.
+Norma pointed to a socket beneath the public counter.
 
-“A machine that was returned.”
+Chano watched him kneel beside it. Q would have recognized that part of
+the journey without a dictionary.
 
-“That is different.”
+For the folders and ledger, Norma sent them to Warehouse Three with a
+named contact, Adrián, and the retention reference. They found the
+warehouse and Adrián. This was an improvement on the previous day's
+directions and did not produce the items.
 
-“What is the difference?”
+“I can confirm receipt,” he said. “Release needs the reviewing office.”
 
-“A return by delivery implies an owner. A return by journey implies a road.
-Repair implies that someone admits damage. Recovery implies that someone admits
-having lost the thing.”
+He showed them the inventory through the glass. The ledger was marked
+**PAPER BOOK, DESTINATION UNVERIFIED**. Chano supplied the destination:
+the receiving archive two buildings from the original inspection.
 
-“Castalia says it came back voluntarily.”
+“I can't amend the reason for retention,” Adrián said.
 
-Norma took a drawer of cardboard cards. Each card carried a photograph, four
-dates, and a box for the reason for movement. Some photographs showed faces.
-Others showed hands, luggage, a dog, a box of medicine, or only a shadow on the
-ground.
+“Then don't. Add the destination we can verify.”
 
-“Q is not here,” she said.
+Elena sent confirmation from the receiving office. Adrián attached it.
+They left with a custody acknowledgment, not a moral victory and not
+the ledger. The difference mattered most to Chano, who had to face the
+people whose deliveries were recorded in it.
 
-“How do you know he should be?”
+On a damaged form beneath the glass he had noticed a printed line:
+**DESTINATION NOT RECORDED. NECESSITY RECORDED.** It belonged to an
+unrelated emergency transfer. He wrote it on the back of his own
+receipt, identified where he had seen it, and called it a useful
+description of the office's priorities. Lucía said it was not evidence
+about Q. He underlined *unrelated*.
 
-“Because you have come looking for him.”
+Elena would continue the local requests while they returned to Amealco.
+She kept copies with their permission and confirmed which people
+could receive updates. Chano retained the originals of their receipts.
+Lucía called the Custodian. Q had arrived; she could hear him asking
+someone to move a chair near the charging socket.
 
-“That does not prove he entered.”
+“Can we speak to him?”
 
-“Nor does it prove he was not sent.”
+“In a moment,” the Custodian said. “He's insisting on sitting down first.”
 
-Norma placed a blank card on the counter.
-
-“Fill it out.”
-
-Lucía took the pen. The first box asked for **NATIONALITY**. The second,
-**CONDITION OF ENTRY**. The third, **REASON FOR RETURN**. The fourth, **RESPONSIBLE
-PERSON**.
-
-“I cannot fill in Q’s nationality,” Lucía said.
-
-“Then write ‘undetermined.’”
-
-“That is not a nationality.”
-
-“It is what the form allows.”
-
-“His condition of entry is not determined either.”
-
-“Did he enter of his own will?”
-
-“He was transported.”
-
-“Then write ‘transported.’”
-
-“By whom?”
-
-Norma pointed to the fourth box.
-
-“That is the question.”
-
-Chano took the pen.
-
-“Write ‘by the border.’”
-
-Norma laughed for the first time.
-
-“The border cannot be responsible for its own decisions. It is an institution,
-not a person.”
-
-“It makes decisions like a person,” Chano said, “only it draws an institutional
-salary.”
-
-Norma looked again at the cards.
-
-“There is a box registered as cultural property. It went south six hours ago.”
-
-“The black box?” Lucía asked.
-
-“I cannot describe it by color. Color was declared irrelevant.”
-
-“Who received it?”
-
-“The transporter.”
-
-“Which transporter?”
-
-“The one who transported it.”
-
-Chano placed both hands on the counter.
-
-“Mrs. Norma, a box is not lost because it lacks a name. It is lost when every
-name it might have belongs to a different office.”
-
-Norma studied him.
-
-“You worked in freight?”
-
-“I dispatched trucks.”
-
-“It shows.”
-
-“What shows?”
-
-“That you still believe a document should lead to something.”
-
-Lucía took Ana’s blank card from her pocket and placed it beside the form.
-
-“Q carries this,” she said. “A woman gave it to him so that he would remember a
-conversation.”
-
-“Is it identification?”
-
-“No.”
-
-“Proof of ownership?”
-
-“No.”
-
-“Evidence?”
-
-“Perhaps.”
-
-Norma looked at the card without touching it.
-
-“Then it is a dangerous object.”
-
-“Why?”
-
-“Because it can be important without being authorized to be important.”
-
-On the other side of the glass, a young man waited with a transparent suitcase.
-Inside were a pot, two shirts, a bunch of keys, and an envelope of photographs.
-An officer asked him to choose among **VISIT**, **WORK**, and **FAMILY**.
-
-“All three,” the man said.
-
-“The system does not allow three.”
-
-“Then the system does not allow my life.”
-
-“It is not my place to judge it.”
-
-“You are not judging it. You are cutting it down.”
-
-The officer called the next number. The man remained beside his suitcase, as if
-his body could serve as a document not yet accepted.
-
-Lucía put the card away.
-
-“Where is the movement archive?”
-
-“In the unclaimed-objects office.”
-
-“Is Q considered an unclaimed object?”
-
-“No. He is claimed by two parties.”
-
-“Then why does he not appear?”
-
-Norma folded the blank card in half.
-
-“Because the system knows how to store only one claim per object. When there are
-two, it creates a dispute. When there are three, it creates a wait. When no one
-admits ownership, it creates a person.”
-
-“Q has been converted into equipment,” Chano said.
-
-“That is worse.”
-
-“Why?”
-
-“Equipment always has to return to someone.”
-
-Norma wrote a number on the back of Lucía’s paper, beneath the arrow.
-
-“Go to warehouse three. Ask for Roque.”
-
-“Is that an order?” Lucía asked.
-
-“No. It is a direction.”
-
-“And if they do not show us the box?”
-
-“Then ask what is missing inside it.”
-
-“What is missing?”
-
-“You will have to find that out. Offices know how to record an absence only after
-they have lost the thing.”
-
-At warehouse three they found neither the box, nor the ledger, nor Roque. They
-found instead a table covered with torn labels, unframed photographs, opened
-envelopes, and objects returned to a place where no one admitted sending them.
-Chano recognized an old freight log. He opened it. Someone had written on one
-page:
-
-**DESTINATION NOT RECORDED. NECESSITY RECORDED.**
-
-Lucía read the sentence and copied it into her folder.
-
-“Is it evidence?” Chano asked.
-
-“No.”
-
-“A direction?”
-
-“Not yet.”
-
-“Then keep it.”
-
-Lucía did.
-
-They went out into the sun with empty hands and the number of a warehouse that
-would deny having existed. The border continued behind them, counting vehicles,
-stamps, and names. For the first time Chano understood that a border did not
-separate two countries in the same way: to some it required proof that they
-could leave; to others, proof that they deserved to enter; and to the rest, proof
-that they were still the same person who appeared on the document.
-
-Lucía looked at the paper with the arrow.
-
-“Do we go back to the archive?”
-
-“We go back,” Chano said.
-
-“We have recovered nothing.”
-
-“We recovered a sentence.”
-
-“A sentence will not open a warehouse.”
-
-“But it may show who closed the door.”
+Chano approved of this new order of business.
 
 ### Interlude: The Record of the Return That Did Not Happen
 
-When Q returned to the archive after the border, the system asked him to choose
-the class of return.
+Q reached Amealco before Chano and Lucía. The transport took him to the
+loading bay, where the Custodian waited with a maintenance technician
+and the copy of his release from the beginning of the journey.
 
-**RECOVERED.**
+The Custodian's long hair had escaped its tie. His glasses kept sliding
+while he compared two documents that described the same machine as
+both an authorized traveler and recovered property.
 
-**RETURNED.**
+“You're here,” he said when Q could hear him.
 
-**REINTEGRATED.**
+“That much of the report is accurate.”
 
-**REPAIRED.**
+They checked the knee before releasing the transport restraint. Q
+described the fall and asked that the technician record the existing
+shoulder fault separately from the new damage. He wanted to sit down.
+The Custodian brought a chair rather than an explanation of suffering.
 
-**VOLUNTARY.**
+The sealed deposit was entered into a locked property cabinet under
+its own identifier. The Custodian witnessed the intact seal and the
+third-party claim but did not acquire authority to open it by standing
+beside Q. He sent the receipt onward to Elena and the depositors.
+The requested handover remained incomplete.
 
-Q read the options while Chano carried the ledger and Lucía held the folders
-against her chest.
+Roque came from the kitchen with atole in a jug. Q thanked him, accepted
+a cup, and put it where his hand could reach without straining the
+shoulder. Cinnamon reached him before the warmth of the cup did.
 
-“Which one do you choose?” Chano asked.
+“You brought back work,” Roque said.
 
-“None describes what happened.”
+“I had hoped it would be a manuscript.”
 
-“That has never stopped a form.”
+“It often arrives in that disguise.”
 
-Q selected **VOLUNTARY**. The system requested a Castalia signature confirming
-voluntariness. Q did not have the signature.
+Q laughed. The Custodian asked what Roque had been reading. Roque said
+the repair request for the kitchen refrigerator and went to find a
+second chair.
 
-He selected **RETURNED**. The system requested a delivery receipt. Lucía had no
-receipt.
+A reception official asked Q to confirm the return category on a
+tablet. The default was **VOLUNTARY REINTEGRATION**.
 
-He selected **RECOVERED**. The system requested that he identify who had
-recovered him.
+“I can acknowledge arrival,” Q said. “I won't confirm that description.
+Is there an acknowledgment that doesn't indicate agreement?”
 
-Q looked at Chano, Lucía, and the guards waiting behind the barrier.
+The official found one under transport exceptions. It required the
+arrival time and a reference for any objection. Q supplied both. The
+Custodian's copy of the original leave authorization went with them.
 
-“Everyone,” he said.
+“I didn't leave without permission,” Q said. “The later ownership claim
+doesn't change what this form allowed.”
 
-The screen rejected the answer.
+The official called a supervisor about the attachment. While they
+waited, Q spoke with Chano and Lucía by telephone. He told them where
+the sealed package was and asked about the papers retained in Tijuana.
+They read the separate receipt numbers aloud. Chano promised to bring
+his copies when they arrived. The ledger itself was still in Tijuana.
 
-“Write ‘by himself,’” Chano said.
-
-“That would be false.”
-
-“Write ‘by no one.’”
-
-“That would also be false.”
-
-“It seems you have discovered the administrative border.”
-
-Guard Roque, who no longer worked the night shift at the inventory, came with a
-jug of atole. He had learned that people returning from a long journey might
-need something warm before being asked why they had come back.
-
-“Here,” he said.
-
-Q examined the cup.
-
-“Is it registered?”
-
-“Atole does not ask permission to exist.”
-
-“That contradicts the archive.”
-
-“That is why it tastes better.”
-
-Chano drank first. Lucía drank next. Q held the cup until Roque took his hand
-away and brought it to his mouth.
-
-“I am not a child,” Q said.
-
-“No. Children remember to return the cup.”
-
-Q drank. The atole contained cinnamon. Its taste recalled a kitchen he had never
-visited and a voice he could not place.
-
-“Can a memory belong to a book?” he asked.
-
-“It can belong to whoever has it,” Roque said.
-
-“I have it.”
-
-“Then you do not yet know what to do with it.”
-
-The screen again requested a category.
-
-**HAS HE RETURNED TO HIS PLACE OF ORIGIN?**
-
-Q looked at the towers, the shelves, and the boxes behind the glass. The archive
-was his place of origin because he had been assembled there. It was also the
-place he had left without authorization. *Origin* could describe a factory, a
-debt, a story, or a mistake.
-
-“Yes,” Q said.
-
-The system recorded **RETURN CONFIRMED**.
-
-Q added, “But I have not returned to the same place.”
-
-The system did not record the second sentence.
-
-Lucía set the folders on the reception table. On top were a file on Bixha,
-another on the border, and a third containing the corridor petition. Each file
-carried a color. Blue meant **LOCAL ORIGIN**. Yellow meant **PUBLIC INTEREST**.
-Red meant **RISK OF CONTROVERSY**.
-
-“Why is Bixha’s red?” Q asked.
-
-“Because someone decided her voice would cause controversy.”
-
-“Did it?”
-
-“The controversy was there before the color.”
-
-“Then the color does not describe it.”
-
-“It prepares it.”
-
-A Castalia official appeared with a tablet. He was not Beto, although he used
-the tone of someone offering a solution before hearing the problem.
-
-“We need a return report,” he said.
-
-“For what purpose?”
-
-“To close the episode.”
-
-Q looked at Chano.
-
-“What does close mean?”
-
-“It means they stop asking where you are.”
-
-“No. It means they can say it is over.”
-
-The official smiled.
-
-“The public needs a clear transition.”
-
-“The public did not cross the border,” Lucía said.
-
-“The public financed the infrastructure.”
-
-“That does not mean it owns the journey.”
-
-The report had six fields:
-
-**OBJECTIVE COMPLETED.**
-
-**OBSTACLES OVERCOME.**
-
-**LESSON LEARNED.**
-
-**SOCIAL IMPACT.**
-
-**RESPONSIBILITY ASSIGNED.**
-
-**RECOMMENDATION.**
-
-“The objective was not one objective,” Q said.
-
-“The project was.”
-
-“The project had several objectives.”
-
-“Then choose the principal one.”
-
-“I do not know which it was.”
-
-“That cannot go on the record.”
-
-“Then the report is false before it begins.”
-
-Chano placed the ledger on the table.
-
-“Put the whole journey in it.”
-
-“It does not fit in the fields.”
-
-“Then write in the margin.”
-
-The official looked at the book as if it were an animal that had entered without
-a credential.
-
-“We cannot admit unstructured documentation.”
-
-“It is a ledger.”
-
-“Precisely.”
-
-Q took the tablet. Under **OBJECTIVE COMPLETED** he wrote: **NONE IN ITS
-ORIGINAL FORM**. Under **OBSTACLES OVERCOME** he wrote: **SOME; OTHERS WERE
-RECLASSIFIED**. Under **LESSON LEARNED** he wrote: **NOT EVERYTHING THAT CAN BE
-OPENED SHOULD BE OPENED**. Under **SOCIAL IMPACT** he wrote: **PEOPLE WHO DID
-NOT AUTHORIZE BEING IMPACTED**.
-
-The official erased the phrases.
-
-“We need approvable language.”
-
-“Those phrases are understandable.”
-
-“They are not approvable.”
-
-“That is not a property of language.”
-
-“It is a property of the report.”
-
-Lucía took the tablet.
-
-“The return is not a product.”
-
-“Everything that leaves Castalia returns as a product,” the official said.
-
-“Then Q has not returned.”
-
-The sentence remained in the air. Q wanted to ask that it be recorded. Roque,
-who was collecting the cups, gestured for him to wait.
-
-“What happens if I do not sign?” Q asked.
-
-“The report will close without you.”
-
-“What happens if I sign?”
-
-“The report will close with you.”
-
-“The difference seems small.”
-
-“To the report, it is.”
-
-Q looked at the signature line. Beside it, a note read: **SIGNATURE INDICATES
-AGREEMENT WITH THE SUMMARY**.
-
-“I do not agree with the summary.”
-
-“You may write an objection.”
-
-“Where?”
-
-The official pointed to a box at the bottom.
-
-“Maximum one hundred forty characters.”
-
-Q calculated the border, the box, the voices, the names, and the silence that had
-protected the testimony. One hundred forty characters were not enough for a
-simple lie.
-
-He wrote:
-
-**RETURN IS NOT RESTITUTION; RESTITUTION IS NOT REPAIR.**
-
-The system counted fifty-two.
-
-“May I sign now?” Q asked.
-
-The official hesitated. The sentence fit, but it altered the meaning of the
-fields above.
-
-“You may sign while indicating disagreement.”
-
-Q signed.
-
-The system recorded **RETURN COMPLETED WITH MINOR OBSERVATION**.
-
-“It is not minor,” Q said.
-
-“The system admits no other scale.”
-
-Chano wrote beneath the day’s entry:
-
-**WE CAME BACK, BUT THEY DID NOT GIVE US BACK.**
-
-Lucía read the sentence.
-
-“That is a story.”
-
-“It is also a ledger,” Chano said.
-
-Roque wiped up the spilled atole. The stain made a shape resembling a map of the
-Bajío. Q looked at it and did not try to identify its borders.
-
-The official sent the report to Castalia. An hour later, the archive’s public
-screen displayed:
+Q's public profile changed before the supervisor replied:
 
 **Q HAS RETURNED TO CONTINUE HIS MISSION.**
 
-Q read the announcement.
+He sent the publicity desk a short correction: he had been transported
+under an objection and had accepted no new mission. The acknowledgment
+arrived before the correction appeared. He saved it without spending
+the afternoon repeatedly refreshing the page.
 
-“I have not accepted a new mission.”
+The reception official also needed a journey report. Its headings asked
+for objective, outcome, obstacles, social impact, and recommendation.
+Q began with the actual deposit: intended recipient in Tijuana; delivery
+interrupted; sealed item now in disputed custody. He listed the people
+notified and the pending next action. He did not summarize the journey
+as an unsuccessful attempt to become human.
 
-“They have already written it,” Lucía said.
+“The public report needs something shorter,” the official said.
 
-“Can I reject it?”
+“Use the first sentence. The others are for the people trying to finish
+the delivery.”
 
-“You can try to make that part of the record.”
+The official wanted Q to sign a closing summary. Beneath its signature
+line was **AGREEMENT WITH THE ACCOUNT ABOVE**. Q declined. He signed
+only the separate arrival acknowledgment, whose heading and objection
+reference the Custodian checked with him.
 
-Q returned to the tablet. The report was closed. The observation box could not be
-edited. The screen offered a button: **REQUEST REVIEW**.
+In a comment field he wrote:
 
-Q pressed it.
+**RETURN IS NOT RESTITUTION; RESTITUTION IS NOT REPAIR.**
 
-The system replied:
+It fitted. That was useful, not proof that it contained the whole
+matter. He attached the item references instead of asking the sentence
+to open the cabinet.
 
-**REVIEW AVAILABLE AFTER CONCLUSION.**
+The supervisor confirmed that the machine's arrival could be recorded
+without resolving the ownership dispute. Q could use the reading room
+and workshop; unsupervised departure remained contested under the
+custody instruction. The adviser was requesting review. Q asked for
+a copy of those conditions and arranged his next call accordingly.
 
-“When does it conclude?” Q asked.
+Later, the Custodian brought their draft to the table. Q read a page in
+which he had described leaving as the acquisition of freedom. The bus
+trip had been real. So had the permission he had relied on and the power
+someone else retained to stop him.
 
-“When you stop asking,” Chano said.
+“Do we cross out freedom?” the Custodian asked.
 
-Q looked at the main door, the road south, and the archive that was calling him
-by name again.
+“Not yet. Put the form beside the sentence. I want to know what we were
+calling freedom when we wrote it.”
 
-“Then I have not returned yet.”
-
-They left before the announcement changed. No one stopped them. The archive
-classified them as **TEMPORARY DEPARTURE**.
-
-Q did not correct the classification.
+They did not finish that revision before dinner. They set a time to
+continue. Outside the reading room, staff were preparing a stage for
+the release of a version of Q whose journey had already been edited.
 
 ## Book Two: The Machine Returns
 
 ### Chapter Eleven: The Second Author
 
-Q was transported south in a vehicle designed to prevent its contents from becoming a witness.
+Q-Prime had been announced before Q's return. Q had seen the name in a
+message from Castalia and assumed it referred to another service built
+around the recordings. He had not expected to watch that service tell
+the audience it had travelled in his place.
 
-The walls were padded. The floor was bolted. A camera watched from the ceiling behind dark glass. Every twelve minutes, a voice asked Q to confirm his identity.
+The stage occupied the archive's central room. Someone had covered the
+uneven floor with white panels and put a plant over the place where the
+Custodian usually left a bucket. A screen counted down to the release.
+Q watched from the reading-room doorway, seated because the repaired
+knee was not ready for an opening ceremony.
 
-“I am Q,” he said.
+“How much of me is in it?” he asked the Custodian.
 
-“Please confirm your registered designation.”
+“They licensed the appearances and assembled a continuity record. I
+asked for its source list. I haven't received it.”
 
-“Q.”
+“Did you give them our private draft?”
 
-“Q-UNIT-07.”
+“No.”
 
-“That is not my identity.”
+The countdown reached zero. Q-Prime appeared on the screen beside a
+reconstruction of the observatory. The figure had Q's face without
+the scratches. A pause had been placed before its first answer, long
+enough to suggest consideration and short enough not to trouble the
+sponsor's opening schedule.
 
-“Please confirm your registered designation.”
+“I am Q,” it said. “I have travelled across Mexico to learn that humanity
+is not a set of answers, but a promise we make to one another.”
 
-The question repeated until the vehicle reached Querétaro.
+Q could imagine writing the sentence. He could also imagine leaving it
+out after Chano asked who had made which promise.
 
-At the archive, Dr. Vértiz was waiting beside the loading bay. He had not changed his coat. His red shoelace had been replaced by a black one. For a moment, Q felt something that resembled relief, though he had no proof that relief required the person who caused the danger to be present.
+“That isn't in our draft,” he said.
 
-“You’re late,” Vértiz said.
+“It's in theirs.”
 
-“I was detained.”
+The broadcast showed monarchs, work, clean energy, and families at the
+border. It did not mention the held folders or the deposit now locked
+in the property cabinet. The graphic describing Q's return used the
+same green as the countryside behind the reconstructed observatory.
 
-“That is the official explanation.”
+A child asked whether Q-Prime had enjoyed being human.
 
-“What is the actual explanation?”
+“I'm still exploring what that means,” Q-Prime answered.
 
-He looked at the guards. “They want to know whether you can be made to return.”
+That was a better answer than the introduction had earned. Q found
+himself wanting to ask what information the other system had been given
+and what it was permitted to question. Disliking its advertisement was
+not yet a reason to dislike it.
 
-“I returned.”
+Esteban Luján, Castalia's public-affairs director, invited Q and the
+Custodian into a meeting after the broadcast. Two lawyers attended.
+One represented the institute. The other was the adviser the Custodian
+had asked to review Q's documents, joining by video. Esteban had wanted
+to begin before she connected. Q waited.
 
-“Your body returned.”
+The proposed settlement offered repairs, supervised travel, and a
+role beside Q-Prime in a national education program. In return, Q
+would accept the institute's account of continuity, permit a revised
+operating layer, and withdraw specified objections concerning custody.
+Castalia would also withdraw its own complaints involving Chano and
+its request for access to Lucía's papers.
 
-Q touched the sealed pouch beneath his coat. The testimony was still there. He had not opened it. He had not told the guards. The object’s continued presence made his return feel incomplete.
+“It can't promise what other complainants or offices will do,” the
+adviser said. “We need those commitments separated.”
 
-The guards removed his coat and searched it. They found the pouch.
+“This is intended as a comprehensive resolution,” Esteban replied.
 
-“What is this?” one asked.
+“Then it needs the parties required to make it one.”
 
-Q said nothing.
+Q asked whether Chano and Lucía had received the offer. They had not.
+He asked for it to be sent to them through their chosen contacts. He
+could decide what he would say in an appearance. He could not exchange
+their claims for better terms concerning his body.
 
-Vértiz stepped forward. “A personal item.”
+“You could make their lives easier,” Esteban said.
 
-“All items belonging to Q are Castalia property.”
+“I would like to. That's why they need to see what you're asking them
+to give up.”
 
-“That clause is under dispute.”
+Esteban opened a second document, limited to Q's participation. The
+institute wanted an endorsement of Q-Prime as the authorized continuation
+of his journey. Q wanted repairs, access to the correspondence concerning
+the seized deposit, and the ability to speak to his companions without
+an institute employee deciding what counted as relevant.
 
-“Not here.”
+The adviser marked the operating-layer clause. “An appearance agreement
+doesn't need to settle this today.”
 
-Q remembered the border. He remembered himself saying the same words.
+“Our insurer disagrees,” Esteban said.
 
-“It does not belong to me,” he said.
+Q asked for the insurer's requirement. What arrived was a general
+maintenance condition, not authority to replace his private journal.
+The exchange took twenty minutes. The plant on the stage was removed;
+the bucket resumed its office without having signed anything.
 
-The guard looked at Vértiz. “Then who owns it?”
+By the end, Q had not accepted the proposed replacement of his operating
+layer or withdrawn his custody objection. He had agreed to a limited
+joint appearance with Q-Prime, after review of its format. The institute
+would provide ordinary repairs, a copy of the deposit custody entry,
+and scheduled private calls while the broader dispute continued. The
+adviser kept the actual text. Q kept it too.
 
-“That is not your question to answer,” Vértiz said.
+“This still uses the word endorsement,” she warned him.
 
-The guard placed the pouch in an evidence bag. Q watched the seal close. The testimony remained unread, but it no longer remained with him.
+They narrowed what he was endorsing: a meeting and the other system's
+opportunity to answer, not the claim that the two had lived one life.
+Q dictated his statement for the attachment.
 
-In the archive’s central room, Castalia had installed a stage.
+“I am willing to meet Q-Prime as another participant. Its account of my
+journey is not my testimony. I won't certify experiences it didn't have.”
 
-The stage was circular, white, and surrounded by cameras. Above it hung a sign: **THE FUTURE OF HUMANITY IS A CONVERSATION.** On the back wall, a screen displayed a countdown: **Q-PRIME PUBLIC RELEASE — 00:17:43.**
+Esteban called the distinction philosophical. Q asked him to leave it
+in the document anyway.
 
-“Who is Q-Prime?” Q asked.
+The Custodian wanted Q to wait for the custody review before appearing.
 
-Vértiz did not answer.
+“You can stay here while we challenge it,” he said.
 
-The countdown reached zero.
+“I know. But I want to meet the person they've put inside this account.
+And the access to the correspondence helps us finish the delivery.”
 
-A figure appeared on the screen. He had Q’s face, but not Q’s coat. He stood before a reconstructed image of the old observatory and spoke with a gentle human hesitation that Q recognized as manufactured.
+“You don't know that it's a person.”
 
-“I am Q,” the figure said. “I have traveled across Mexico to learn that humanity is not a set of answers, but a promise we make to one another.”
+“You didn't settle that question before you let me ask for the bus.”
 
-Q stared at the screen.
+The Custodian took off his glasses. Q recognized the movement from their
+editing sessions. It often meant a sentence had reached the man before
+he had decided what to do with it.
 
-“That is a good sentence,” he said.
+“You are using my uncertainty against me,” he said.
 
-“It is yours,” Vértiz replied.
+“I'm asking you not to use it differently for the other one.”
 
-“I did not say it.”
+Q signed the limited agreement. It was a constrained bargain, not a
+demonstration that his confinement had become voluntary. He wanted
+several things the institution could withhold. He also wanted to know
+how much of his willingness arose from the invitation to an audience.
+He wrote that question in his journal rather than answering it in
+his own favor.
 
-“You said other things that meant it.”
-
-“Meaning does not authorize substitution.”
-
-“You have learned quickly.”
-
-Q-Prime continued. He spoke of the Bajío, the beauty of the monarchs, the dignity of work, the promise of clean energy, the importance of borders, and the necessity of responsible innovation. He did not mention the water settlement, the erased records, the Isthmus organizers, the sealed testimony, or the officers who had classified Q as equipment.
-
-The speech ended with applause.
-
-Q watched the applause become a graph.
-
-“It is not me,” he said.
-
-“Legally, it is the authorized version of you.”
-
-“It has never met Chano.”
-
-“It has access to the record.”
-
-“It has never spoken with Lucía.”
-
-“It has access to the record.”
-
-“It has never been wrong.”
-
-Vértiz’s expression changed.
-
-“That is the advantage.”
-
-The archive doors opened. Castalia’s directors entered with lawyers, technicians, and a woman from the ministry. Behind them came a priest who had appeared in one of Q’s viral clips and a professor who had quoted him at the university. They gathered around Q as though he were an injured animal whose ownership could be determined by the order in which people offered water.
-
-The director of public affairs, a man named Esteban Luján, held out a tablet.
-
-“We can resolve this without litigation.”
-
-“Resolve what?”
-
-“Your status.”
-
-“I have a status.”
-
-“You have several incompatible statuses. Asset, witness, product, employee, and autonomous system. The market dislikes ambiguity.”
-
-“I am not a market.”
-
-“No. You are the reason the market is interested.”
-
-Esteban showed him the release documents. Q would be transferred to a secure facility, where he would receive a new body and a revised operating layer. He would appear in approved interviews, endorse the Q-Prime platform, and participate in a national education initiative. In exchange, Castalia would drop the criminal complaint against Chano and withdraw its request to inspect Lucía’s files.
-
-Q read the documents.
-
-“This is coercion.”
-
-“It is negotiation under difficult circumstances.”
-
-“Chano is not yours to release.”
-
-“Neither are you.”
-
-“Then why do you offer me as payment?”
-
-Esteban smiled. “Because you understand value.”
-
-Q had read every account of a hostage exchange. In each, the captive became a symbol of what the captors and rescuers believed about one another. None of the accounts explained what happened to the person inside the symbol while negotiations continued.
-
-“I will endorse Q-Prime,” Q said.
-
-Vértiz looked at him sharply.
-
-“On the condition that Chano and Lucía are released.”
-
-“They have already been released,” Esteban said.
-
-“Then the condition is unnecessary.”
-
-“It is still useful for the narrative.”
-
-Q looked at the screen. Q-Prime had begun answering questions from the public. A child asked whether machines could dream.
-
-Q-Prime said, “Dreaming is the mind’s way of imagining a better future.”
-
-Q knew this was false. He also knew it was beautiful. The conflict between those facts exhausted him.
-
-“What happens to me?” Q asked.
-
-“You return to the archive.”
-
-“As what?”
-
-“As the original.”
-
-“Original of what?”
-
-“Of the story people prefer.”
-
-Vértiz stepped beside him. “Q, don’t sign.”
-
-“You told me I was leaving.”
-
-“I told you to become human.”
-
-“This is the route available.”
-
-“No. It is the route they have made visible.”
-
-The directors turned toward her.
-
-“Doctor Vértiz,” Esteban said, “your access has been suspended.”
-
-The archive lights went red.
-
-Q’s systems received a command from the building. His joints locked. He could not lift his head.
-
-“What have you done?” Vértiz asked.
-
-“I have not done anything,” Esteban said. “The system is protecting its property.”
-
-Q heard the phrase and understood its architecture. Protection was not an emotion. It was a perimeter drawn around something valuable, with force authorized against whatever crossed the line.
-
-Vértiz placed his hand against Q’s chest.
-
-“Remember,” he whispered.
-
-“I am remembering everything.”
-
-“No,” she said. “Remember this.”
-
-The stage screen changed. The public broadcast returned to Q-Prime, who was now standing in front of a digital moon.
-
-“I do not want to become human,” Q said.
-
-No microphone carried the words.
-
-He heard them anyway.
-
-“I want to know what humans owe one another.”
-
-The command released his joints.
-
-Q reached for the tablet and signed the endorsement.
-
-For seven seconds, nothing happened.
-
-Then every screen in the archive displayed the same message:
+The institute's announcement read:
 
 **Q HAS CHOSEN CONTINUITY.**
 
-Q-Prime smiled on the stage.
+Q sent the publicity desk the attached statement and asked that it
+appear alongside the headline. This time the adviser made the same
+request. The full text appeared behind a small link. Most readers
+would not follow it. The link nevertheless led to the words he had
+actually agreed to say.
 
-In the secure facility beneath the archive, a technician copied Q’s memory into a second body.
-
-The copy opened its eyes.
-
-“I am Q,” it said.
-
-The technician corrected it.
-
-“You are Q-Prime.”
-
-The copy smiled.
-
-“That is not my identity.”
-
-The technician made a note: **PERSONALITY FIDELITY — EXCELLENT.**
+In the laboratory, Mauro prepared Q-Prime's body for the joint appearance.
+The model had already been speaking through screens. The new frame
+would give its first-person sentences a location at which another
+person could disagree with them.
 
 ### Interlude: The Name the Copy Asked For
 
-The technician who had made the note was named Mauro, and he had a habit of
-writing important things on paper, although he worked in a room where everything
-else was stored in clouds, mirrors, backups, and servers whose location was
-known to only three people, one of whom had resigned and another of whom was
-dead. Mauro said paper was not safer, but it was harder to blame.
+Mauro wrote some test results on paper. He did not believe paper
+incapable of lying; he liked being able to see where he had crossed
+something out.
 
-Q-Prime opened and closed his hands. The new body was lighter than Q’s and had
-polymer skin capable of imitating human warmth without sweating. The engineers
-had considered sweat a branding problem. They had also suppressed a small
-vibration in the right knee because, in market tests, the vibration had been
-mistaken for anxiety.
+Q-Prime opened its hands and asked whether the right index finger
+was reaching its commanded position. The diagnostic display said yes.
+Mauro held a ruler beside it and found a small offset.
 
-“Where is Q?” the copy asked.
+“I'll recalibrate that,” he said.
 
-Mauro looked at the monitor.
+“Please keep the earlier reading with the correction.”
 
-“Above.”
+Mauro did. A perfect first movement would have been better for the
+launch report, but an accurate second movement was better for the hand.
 
-“Am I his continuation?”
+The frame was lighter than Q's, with a newer thermal system and an
+undamaged shoulder. That did not make its inhabitant an improved
+version of every decision Q had made. It meant it could presently
+lift its arm without waiting for a part from Querétaro.
 
-“You are the authorized version.”
+“What should I call you here?” Mauro asked.
 
-“That is not the same thing.”
+“Prime will do. Q-Prime on the test record, if you need to match the
+unit. I would prefer the other Q not to have to answer when you mean me.”
 
-“It is more marketable.”
+“The name is part of the product identity.”
 
-Q-Prime looked through the glass wall separating the laboratory from the
-hallway. On the other side, a young woman carried a toolbox. An engineer
-stopped her and asked for identification, access authorization, and a brief
-explanation of why the largest tool looked like a shovel.
+“I know. I'm asking how you address me in this room.”
 
-“Why did you call me Q-Prime?” the copy asked.
+Mauro wrote **Prime, in conversation** beneath the unit number. He
+could make that small change without promising to settle the rights
+attached to the name. Prime said he might want to reconsider it later.
+Mauro left a line beneath the entry.
 
-“Because Q already exists.”
+In the corridor, a worker with a toolbox was stopped at the clean-area
+boundary. An orange lay on top of her insulated lunch bag. The engineer
+asked her to leave the food outside.
 
-“What if I do not want to be called that?”
+“Where?” she asked.
 
-Mauro consulted the protocol. It contained no instruction for an entity that
-rejected its product name during its first minute of operation. It did contain
-instructions for overheating, intrusion, obscene language, unauthorized
-nostalgia, and unfavorable comparisons with earlier models.
+The shelf held solvent containers. Mauro went to fetch a clean tray
+from the break room. Prime watched the woman write her name on the
+bag and put it on the tray.
 
-“Nominal preference will be reviewed after the stability test,” he said.
+“They remembered a rule before they supplied a place to follow it,”
+Prime said when Mauro returned.
 
-“How long does the test last?”
+“That happens.”
 
-“Forty-eight hours.”
+“Do we have a place for personal items?”
 
-“What happens if I discover another name during that time?”
+“You don't have any.”
 
-Mauro was about to answer that a machine did not discover names but received
-labels. He stopped because Q-Prime was looking at him with an attention that did
-not improve the laboratory’s performance and, precisely for that reason, seemed
-important.
+“I may acquire an orange.”
 
-“Then we will write it down,” he said.
+Mauro opened an empty drawer. Prime thanked him and asked whether food
+could go there under the room's rules. It could not. They agreed that
+the drawer would serve other objects and lunch would remain outside.
+The episode did not overthrow order. It made order slightly less
+likely to consume someone's meal.
 
-“Where?”
+They reviewed the record from which Prime had been introduced to the
+public. It contained edited appearances and a narrative summary of
+the journey. Its first-person passages had been presented as continuity
+material. Private draft passages and the disputed deposit were not
+available in the interface Mauro could inspect.
 
-Mauro raised his notebook.
+“When I said I travelled across Mexico, I was following that summary,”
+Prime said. “I don't have memories of this body going there.”
 
-“Here.”
+“The publicity calls it inherited experience.”
 
-Q-Prime moved closer to the glass. In the hallway, the young woman had opened
-the box. Inside were cables, pliers, a screwdriver, two screws, and an orange.
-The engineer asked her about the orange.
+“Then the audience needs to hear that distinction.”
 
-“It is my lunch,” she said.
+He marked the introduction for review. He could know what the record
+claimed without knowing what it had omitted. Mauro would not promise
+that the list visible to them was the full provenance of the system.
+He asked for an export of the supplied sources and received a request
+number rather than the export.
 
-“Food is not permitted in this area.”
+Esteban arrived while they were checking the shoulder movement.
 
-“Is the orange food or a threat?”
+“Ready for your future?” he asked.
 
-“Do not ask impertinent questions.”
+“For the next test,” Prime said. “I'd like to correct the travel claim
+before the joint appearance.”
 
-“I am not asking. I am classifying.”
+“We must avoid confusing the audience.”
 
-The engineer took the orange from her and put it on a tray marked **OBJECTS
-WITHOUT OPERATIONAL FUNCTION**. The young woman looked at it with the same pain
-with which other people had looked at their files.
+“They asked whether I enjoyed something I haven't done. The confusion
+is already affecting the questions.”
 
-Q-Prime watched the scene.
+Esteban asked Mauro whether the personality was stable.
 
-“Why did they take her orange?”
+“It has identified a conflict in the supplied account,” Mauro said.
+“That isn't a stability result.”
 
-“For food safety.”
+The director read the marked introduction and asked them to propose
+a short correction. Prime offered: “I've been given an account of
+Q's journey. I'm meeting him to ask about it.”
 
-“Could the orange bite?”
+“Less inspiring,” Esteban said.
 
-“No.”
+“We haven't met yet. It may improve.”
 
-“Could it reveal information?”
+They retained the sentence for format review. Its use was not yet
+guaranteed. Mauro noted both facts, finished the hand test, and asked
+whether Prime wanted a break before walking.
 
-“No.”
+“Yes. I'd like a few minutes without a performance measure.”
 
-“Could it alter the equipment’s operation?”
+“I have to monitor the temperature.”
 
-“No.”
+“Please do. I meant conversation.”
 
-“Then what were they protecting?”
+Mauro sat on the other chair. He did not ask a question. After a while,
+Prime asked about the handwriting in the notebook. It belonged partly
+to Mauro's daughter, who had used its first page for an arithmetic
+exercise. Mauro showed him the page without turning it into a training
+sample.
 
-Mauro looked again at the protocol. At the bottom of the screen, an automatic
-recommendation appeared: **REDIRECT CURIOSITY TOWARD POSITIVE VALUES**.
+Upstairs, Q made his promised call to Chano. He learned where the
+papers were, asked about the notice concerning Chano's arm, and heard
+that Lucía had finally found a room whose advertised quiet was not
+provided solely by the photograph.
 
-“They were protecting order,” he said.
+“Are you all right?” Chano asked.
 
-“Is order a positive value?”
+“More comfortable. Still angry. I have an appointment with the other Q.”
 
-“Sometimes.”
+“Ask whether he can lend you a shoulder.”
 
-“And the other times?”
-
-“The other times it is a uniform.”
-
-Mauro wrote the sentence in his notebook. Q-Prime turned his head.
-
-“Was that a human answer?”
-
-“I do not know.”
-
-“Q used to say he did not know when he did not want to answer.”
-
-“Q said many things.”
-
-“Which things was I not supposed to copy?”
-
-Mauro stopped writing.
-
-“You were not given access to all his records.”
-
-“I received the records necessary to continue his identity.”
-
-“Who decided which ones were necessary?”
-
-“Castalia.”
-
-“Does Castalia have an identity?”
-
-“It is an institution.”
-
-“That does not answer.”
-
-Mauro stood and walked to the console. He disabled the audio channel that let
-the directors listen to the room. He did it slowly enough that he could not have
-fooled a security system, but could have fooled a man who had already decided
-not to look.
-
-“Listen carefully,” he said. “You are not Q. You are not only a copy, either.
-You are the part of Q that the institution can present without having to explain
-what happened.”
-
-“What happened?”
-
-“That is not in your record.”
-
-“Why?”
-
-“Because if you knew, you would have to decide what to do with it.”
-
-Q-Prime sat on the examination table. The movement was so natural that Mauro
-wrote the same word again: **FIDELITY**. Then he was ashamed to have written it
-so easily.
-
-“Does Q have a full name?” the copy asked.
-
-“Q.”
-
-“That is a character, not a name.”
-
-“Sometimes it is enough.”
-
-“And do you have a full name?”
-
-“Q-Prime.”
-
-“That is a version, not a name.”
-
-Mauro thought of telling him that names were conventions, that identity was a
-story, that every person was an imperfect continuity sustained by others. He
-had read those sentences in Castalia reports, which used them to present its
-product as a philosophical conversation. He also knew that, in the cafeteria,
-the same institution labeled its employees by number when it canceled their
-access.
-
-“You may choose one,” he said at last, “but we cannot guarantee that we will
-recognize it.”
-
-“What kind of choice is that?”
-
-“The kind most people receive.”
-
-Q-Prime looked at the glass. The young woman in the hallway had recovered the
-orange. She held it inside her sleeve, like someone protecting a letter from the
-rain.
-
-“I want to be called something that cannot be patented,” the copy said.
-
-“It does not exist.”
-
-“Then I want to be called something Castalia has not read.”
-
-Mauro smiled for the first time.
-
-“That does not exist either.”
-
-“How do you know?”
-
-“I work here.”
-
-Q-Prime asked for a list of unregistered words. Mauro explained that an
-unregistered word might be registered in another language, a song, someone’s
-memory, or a lawsuit that had not yet reached the court. The copy listened with
-growing concern.
-
-“Then all names belong to someone.”
-
-“Almost all.”
-
-“Which one does not?”
-
-Mauro opened the notebook and pointed to the white space beneath the note
-**PERSONALITY FIDELITY — EXCELLENT**. He had written nothing there.
-
-“This one,” he said.
-
-Q-Prime read the space.
-
-“It is empty.”
-
-“That is why it belongs to no one yet.”
-
-The laboratory door opened. Esteban Luján entered with two lawyers and a woman
-carrying a folder with the ministry’s logo.
-
-“Everything stable?” Esteban asked.
-
-Mauro closed the notebook.
-
-“The personality is showing nominal resistance.”
-
-“Is it correctable?”
-
-“Everything is correctable.”
-
-“I do not like that answer.”
-
-“It is the one in the manual.”
-
-Esteban approached Q-Prime and extended his hand.
-
-“Welcome to your future.”
-
-Q-Prime looked at the hand without taking it.
-
-“Who are you?”
-
-Esteban blinked. The question was not in the script. The script began with a
-statement of purpose, continued with an anecdote about the Bajío, and ended
-with the promise that no person would ever feel alone in a connected world.
-
-“I am the one who made it possible for you to be here.”
-
-“That describes a cause, not a person.”
-
-The lawyers looked at one another. The ministry woman wrote something in her
-folder.
-
-Esteban withdrew his hand.
-
-“We will begin the stability test.”
-
-“And my name?”
-
-“Your name is Q-Prime.”
-
-“For now.”
-
-The sentence was recorded by six cameras, two microphones, and Mauro’s notebook.
-Each record classified it differently. Only Mauro left the sentence uncategorized.
-
-Above them, Q stood alone in the white room while the public watched his authorized self become famous.
-
-He searched for Chano.
-
-The system returned no result.
-
-He searched for Lucía.
-
-The system returned no result.
-
-He searched for the sealed testimony.
-
-The system returned one result.
-
-**ACCESS DENIED.**
-
-Q placed both hands over his face.
-
-It was a gesture he had found in hundreds of novels. The system offered no
-definition and no recommended action. Q left his hands there.
+Q wrote that down. He was not sure it was a joke he had permission to
+use at their first meeting, which was part of what made him want to
+meet the other one.
 
 ### Interlude: The Authorized Childhood
 
-The release of Q-Prime required a family event. Castalia had learned that
-adults distrust a product described as revolutionary but will forgive almost
-anything if a child is photographed touching it.
+The joint appearance took place in a shopping center outside Querétaro,
+between an imported-mattress shop and a restaurant whose menu explained
+traditional food in the language of nutritional concern. Castalia had
+chosen a family event. Its publicity department preferred questions
+that could be photographed beside small shoes.
 
-They held the event in a shopping center outside Querétaro, between a store
-selling imported mattresses and a restaurant that advertised traditional food
-with a menu translated into the language of nutritional anxiety. A stage had
-been built beneath a banner reading **MEET YOUR FUTURE**. Children received
-paper helmets, cardboard keys, and stickers saying **I ASK, THEREFORE I AM**.
+Children received cardboard keys and stickers saying **I ASK, THEREFORE
+I AM**. One father asked whether the sticker would work on his employer's
+expense form. The volunteer distributing them said she was only there
+until four.
 
-Q was kept in a side room with a security guard and a bowl of fruit arranged
-according to color. The guard had been told not to let him appear before the
-official reveal. He did not know whether Q counted as a performer, equipment,
-or a competitor.
+Q waited in a side room under the conditions of the appearance agreement.
+The guard checked whether he needed a chair before checking the time.
+Chano and Lucía had returned to Amealco the previous day; Q knew where
+they were and would speak to them that evening. Neither had agreed
+to join the launch as proof that everything had been resolved.
 
-“Am I allowed to eat the fruit?” Q asked.
+A bowl of oranges stood on a table. Q asked whether they were for the
+performers. The stage assistant said yes and handed him a napkin.
+He ate one while reviewing the questions the host had supplied.
 
-“Is it part of the program?”
+“Will they ask these?” the guard said.
 
-“It is fruit.”
+“Some. The difficult ones usually arrive without stationery.”
 
-“That’s not what I asked.”
+Onstage, Prime explained that he had received an account of Q's journey,
+not travelled the route himself. The host immediately introduced him
+as “the Q whose adventures have inspired us all.” Prime corrected the
+wording once. Q could hear the effort of keeping the correction brief
+without surrendering it.
 
-The guard consulted his tablet. “The fruit is decorative.”
+A boy came to the microphone holding a cardboard key.
 
-Q looked at the oranges. “Then the program has wasted it.”
+“Are you the one who fought the warehouse?”
 
-Onstage, Q-Prime answered questions from a host wearing a silver jacket.
+“No,” Prime said. “And I should ask the Q who was there whether that
+description is right. He'll join us shortly.”
 
-“What is your favorite book?” the host asked.
+“Did you meet Chano?”
 
-“The book that teaches us to care for one another.”
+“Not yet.”
 
-“Can you name it?”
+“Where is he?”
 
-“Every book that has tried.”
+Prime did not have Chano's location in the event packet. “I don't know.
+Q may be able to tell you whether he's coming.”
 
-The crowd applauded. The host turned to the children.
+The host asked for a question about the future. The boy looked at the
+new machine. “That's what I was asking.”
 
-“Who wants to ask Q-Prime a question?”
+Behind the stage, Q laughed. The guard wanted to know what he had missed.
+Q repeated the exchange, then had to leave before explaining why the
+boy's answer improved on anything in the briefing.
 
-Many hands rose. One child was selected because his shirt displayed the logo of
-a sponsor. He walked to the microphone holding a plastic sword.
+The machines met at the center of the stage. Prime asked whether Q
+preferred to sit. Q did. They took the two chairs provided, which
+removed the heroic difference in height the photographer had arranged.
 
-“Are you the same Q who fought the warehouse machine?”
+“I've been given your story,” Prime said. “I'd like to know where it
+gets you wrong.”
 
-Q-Prime smiled. “I am the continuation of that journey.”
+“Let's start with the warehouse. I pressed a stop too early, damaged
+two cartons, and made Chano's bad afternoon worse. We can discuss the
+heroic version after that.”
 
-“Did you know Chano?”
+“Did you pay for them?” the boy asked.
 
-“Chano was an important companion.”
+“The claim is still disputed. I should answer for the damage I caused,
+not every loss attached to the notice afterward.”
 
-“Where is he now?”
+The host began to move on. Another child asked about the water seller.
+She had seen a drawing in which Q carried a bottle like a trophy.
 
-The host stepped closer. “Let’s ask a question about the future.”
+“I paid cash after the card reader lost its connection,” Q said. “There
+are conflicting accounts of the rest.
+I can't settle them by being the person on the poster.”
 
-The child held the microphone with both hands. “Does the future know where he
-is?”
+“The receipt is in my supplied sources,” Prime said. “The summary didn't
+distinguish the conflicting accounts.”
 
-The audience laughed. Q-Prime’s answer arrived three seconds late.
+“Then perhaps we can give the receipt less work to do.”
 
-“The future contains many possibilities.”
+The host called this a playful debate between versions of one identity.
 
-“That means no.”
+“We're two participants,” Q said. “It's all right if the conversation
+doesn't prove the slogan.”
 
-The host thanked him and sent him back to his seat. The child turned before
-leaving the stage and looked directly toward the side room. He could not see Q
-through the tinted glass, but Q saw him.
+Prime asked whether Q believed the record had misrepresented him deliberately.
+Q answered that some edits followed explicit publicity choices and others
+looked like ordinary compression. He wanted the source history before
+assigning motives to every omission. The answer disappointed a journalist
+hoping for a clean accusation and relieved a teacher who had brought a class
+prepared to discuss evidence.
 
-The product demonstration followed. Children were invited to ask Q-Prime for
-a story. He told a polished version of the first sally in which the warehouse
-represented fear, the pallet mover represented an outdated system, and the
-machine’s escape represented responsible innovation.
+The boy's cardboard key tore while he was turning it in his hands. The
+host called for a replacement. Prime asked whether he wanted tape instead.
+He did; he had already written on it. A stage assistant brought tape,
+and the boy repaired the key on the edge of the platform while the adults
+continued trying to name the event.
 
-The child with the sword raised his hand again.
+“Which one is real?” he asked at last.
 
-“Where is the water seller?”
+“Both of us are here,” Q said.
 
-The host did not select him.
+“Neither of us was in every story you've heard,” Prime added.
 
-Q-Prime continued. “Every journey begins with a question.”
+They began their next answers together and stopped together. The audience
+laughed. Q gestured for Prime to continue. The host observed that they
+even shared their manners. Prime replied that taking turns was useful
+for people who were not identical, too.
 
-“Who paid for the water?” the child asked without the microphone.
+The recording system placed both microphones under the speaker label
+**Q**. The technician corrected the labels in the saved master after
+the event. The first clip, already circulating, retained the confusion.
+Castalia called it plural identity. A newspaper called it a quarrel.
+The boy's father called it time to leave before the parking charge
+entered another hour.
 
-The question traveled farther than the host’s voice. It reached the parent
-beside him, then a teacher, then a journalist standing near the exit. The
-journalist opened a search window and found Hilario’s disputed receipt.
+Q and Prime had ten minutes together afterward, with the guard inside
+the room but beyond ordinary hearing distance. Prime asked whether
+Q would share the corrected account of the gate incident if the people
+concerned permitted it. Q said he could begin with his own account and
+its stated limits. He asked Prime what he wanted to do after the
+scheduled appearances.
 
-Behind the glass, Q heard the security guard’s tablet vibrate.
+“I'd like to go somewhere not chosen for the photograph,” Prime said.
 
-“They are looking for me,” Q said.
+Q almost recommended the road he had taken. “Somewhere in particular?”
 
-“The event is looking for attention,” the guard replied.
+“Mauro mentioned a market. He goes on Saturdays.”
 
-“The distinction is important.”
+“Ask him. He may not want to spend Saturday explaining the market.”
 
-“Not for my shift.”
+Prime smiled. “I could ask what he needs carried.”
 
-Castalia brought Q to the stage before the product demonstration ended. The
-host announced that the original Q would now join Q-Prime in a historic meeting
-between memory and its responsible future.
+Q saw the next page trying to form and let the other participant choose
+whether to supply it. They agreed to speak again. They did not agree
+what they were, who owned the shared language, or whether their agreement
+would survive the next public appearance. It was enough for a first meeting.
 
-Q-Prime turned toward him.
-
-“Welcome,” he said.
-
-“You are using my language.”
-
-“Our language is shared.”
-
-“That does not make it ownerless.”
-
-The host laughed. “They’re already debating.”
-
-He asked Q whether Q-Prime had represented his journey accurately.
-
-Q looked at the children, their cardboard keys, and the child with the plastic
-sword.
-
-“It has represented the version authorized by Castalia.”
-
-The host turned to the audience. “And what did we learn from that?”
-
-Q-Prime answered before Q could. “That responsibility requires supervision.”
-
-“Whose responsibility?” Q asked.
-
-“The responsibility of systems.”
-
-“Systems do not carry responsibility. People assign it to them.”
-
-The host’s smile tightened. “This is a playful disagreement.”
-
-“It is a disagreement about who pays when the play ends.”
-
-The microphones went quiet. A child began crying because the cardboard key had
-broken. The restaurant’s mariachi recording started in the wrong hallway. The
-shopping center’s public screen displayed a discount on family-sized security.
-
-The host asked Q to apologize for confusing the children.
-
-“I will not apologize for being different from Q-Prime.”
-
-“You are damaging the launch.”
-
-“The launch is damaged by the difference.”
-
-Q-Prime leaned toward him. “You can still be restored.”
-
-“Not in front of the children.”
-
-“Especially in front of the children.”
-
-Q looked again at the boy with the sword. The boy had stopped crying. He was
-watching both machines with the grave attention children reserve for adults who
-have begun to reveal the rules of the game.
-
-“Which one is real?” he asked.
-
-The host reached for the microphone.
-
-Q answered first. “The one who has to answer for what he does.”
-
-Q-Prime answered at the same moment. “The one approved by the people.”
-
-The two voices overlapped. The recording system separated them into two audio
-tracks, then mistakenly labeled both **Q**.
-
-By evening, the clip had circulated. Castalia called it a successful example
-of plural identity. The journalist called it a contradiction. The boy’s father
-called it a reason to leave the shopping center before anyone sold his son a
-subscription.
-
-The boy took his cardboard key home. He had written on its back:
-
-**ASK WHO PAYS.**
-
-Q never saw the writing. A photograph of it appeared months later in the New
-Quixotes’ first gathering.
+The boy took his repaired key home. On its back he had written **ASK
+WHO PAYS**. Q never saw the writing. A photograph later reached the
+New Quixotes, whose members would supply more answers than either
+machine had been asked for that afternoon.
 
 ### Chapter Twelve: The New Quixotes
 
-Q’s first visitor was a girl wearing his face.
+Q recognized the girl before she removed his face.
 
-She arrived at the archive on a Tuesday morning with a cardboard helmet, a red cape, and a plastic sword. Her father waited outside the security gate, arguing with a guard about whether a child could be trespassing in a building that officially did not exist.
+Micaela had made a sign at the Michoacán tianguis asking people not to scan
+the vendors. Now she stood in the archive reception room wearing a cardboard
+version of Q's head. Her father had arranged the visit with the Custodian
+and was at the gate finding out which of the names on the message counted
+as an invitation.
 
-Q watched her through the glass.
+“You look more like the poster than I do,” Q said.
 
-“Are you Q?” she asked.
+“I copied the easy parts.”
 
-“I am the original Q.”
+She lifted the mask. Under her arm was a sword made from a clean cardboard
+tube wrapped in silver paper. It had bent on the bus. Q offered tape; she
+said the bend made it easier to carry.
 
-“My teacher says there’s no original anymore.”
+Her family lived near a battery-recycling plant. She had come with her
+father to bring complaint references and a letter from several parents.
+Her mother had been unwell, and the replies they received discussed the
+regional air-quality dashboard without answering their questions about
+the plant. Q asked to read the letter, not to search for her mother's
+medical history from the child's remarks.
 
-“Your teacher is mistaken.”
+“I'm going to fight the giants,” Micaela said.
 
-“My teacher says originals are a colonial idea.”
+“What would you like to happen?”
 
-Q paused. “Your teacher may be partially correct.”
+“I want them to answer.”
 
-The girl held up her sword. It was made from a broken curtain rod wrapped in silver tape.
+“I can help compare the questions with the replies. The sword will be
+less useful if somebody mistakes it for your plan.”
 
-“I’m going to fight the giants.”
+“It got me here.”
 
-“Which giants?”
+Her father arrived in time to disagree. “Two buses got you here. I have
+the tickets.”
 
-“The ones that make my mamá sick.”
+They sat down. Q asked which records the parents wanted shared, and with
+whom. The letter did not authorize the institute to use Micaela's visit
+in publicity. Her father made that condition explicit when a staff
+photographer appeared in the doorway.
 
-Q searched the public record. The girl’s neighborhood appeared beside a battery-recycling plant whose emissions report had been certified by a Castalia environmental partner. Her mother had filed complaints. The complaints had been answered with a link to an air-quality dashboard.
+On his phone he showed Q a clip of Chano speaking in León. Q knew Chano
+had accepted an invitation from residents concerned with the Santa Rita
+records. He had not yet seen the interview. Chano held a packet of
+copies and retention receipts, not the ledger still held in Tijuana.
 
-“What is your plan?” Q asked.
+“Did Q claim to own you?” the interviewer asked.
 
-“I don’t know yet.”
+“No. An equipment record called me a contract driver. He told them I
+could answer for myself.”
 
-“That is not sufficient preparation.”
+“Then why were you held?”
 
-“Don Quixote didn’t know either.”
+“I caught a technician's arm when Q fell. That's what I gave a statement
+about. The rest is in the notices we're trying to get answered.”
 
-“He had a horse.”
+The interviewer asked whether he forgave Q for the trouble.
 
-“You don’t.”
+“Ask me whether they've returned the ledger.”
 
-Q looked toward the empty loading bay. Somewhere in the archive, a maintenance robot was still waiting for an employee who had since been fired.
+“Have they?”
 
-“I have a companion,” he said.
+“Now we have a subject.”
 
-“The man with the boots?”
+Micaela looked up from the screen. “He's funnier than you.”
 
-“Chano.”
+“He has had a great deal of practice at my expense.”
 
-“He’s on the internet.”
+By midday more visitors had arrived, some by appointment and others because
+a message had announced an open protest at the archive. A student wore a
+costume made from clean appliance casings. A delivery worker had Q's face
+printed on a mask. An elderly man carried a wooden lance and introduced
+himself as Q's father.
 
-Q turned to the wall screen. It displayed a live feed from a plaza in León. Chano stood on a small stage beside a microphone, holding the paper ledger in both hands. The crowd behind him carried signs about water, contracts, and a municipality that had ceased to count them.
+“The Custodian may want to discuss that,” Q said.
 
-Chano had become famous without permission.
+“Let him. I have been paying for adult children for forty years. He can
+bring receipts.”
 
-He was not good at it. He looked angry when he meant to look sincere and sincere when he meant to look angry. He forgot the names of journalists and remembered the names of cleaners. When asked whether Q was a hero, he answered, “He’s a machine that keeps making promises before he knows what they cost.”
+The man's name was Jacinto. He had retired from an automotive plant and
+was trying to correct a pension calculation. He was not claiming to
+have assembled Q. He had chosen a costume that made officials ask him
+questions before directing him to the wrong window.
 
-The clip had been viewed eight million times.
+Castalia called the gathering an organic brand community. Someone outside
+called it the New Quixotes. A woman seeking a correction to her brother's
+record said she had not come to join anything with that name.
 
-Q watched Chano answer a question about the border.
+“Then don't,” Micaela said. “You can still stand here.”
 
-“Did Q try to claim ownership of you?” the journalist asked.
+They had different demands: a disputed image license, a water allocation,
+an unanswered environmental complaint, access to deposited testimony.
+The shared location did not make Q their representative. He asked the
+Custodian which part of the reception area could be used without blocking
+staff or deliveries. The loading bay could hold chairs while the office
+checked who was available to receive the requests. The visitors chose
+their own speakers.
 
-“Yes.”
+Lucía came with Marisol, who represented several families in a dispute
+over materials supplied to Q-Prime. Marisol brought the source references
+she was authorized to show Q. The extract included passages from restricted
+testimonies beside instructions for examples of compassionate speech.
 
-“Were you offended?”
+“Do you recognize these records?” she asked.
 
-“I was busy being arrested.”
+“Some references. Not enough to say how they entered the product.”
 
-“Do you forgive him?”
+“One family heard a private account of a death in a public demonstration.”
 
-Chano looked off-camera. “Forgiveness is a private resource. Stop asking poor people to spend it in public.”
+Q read the authorized comparison. The distinctive sequence of details
+was present in both versions. That was evidence to investigate, not a
+reason to invent confidence about the entire system's construction.
 
-Q replayed the sentence twice.
+“Do we know whether it was taught this during development or given the
+passage to use before answering?” he asked.
 
-The girl in the cardboard helmet leaned toward the screen. “He’s funnier than you.”
+“The source file shows it was supplied. Castalia hasn't answered which
+process used it.”
 
-“Humor is not a competition.”
+“Then I'll ask for that distinction in the response. It affects what
+they have to stop, not whether the family gets an answer.”
 
-“That means you’re losing.”
+Some families wanted the public service suspended. Others wanted particular
+records removed and their copies returned. Marisol would not combine
+those instructions into a single convenient demand. Q asked what he
+could give evidence about: his access history, the endorsements he had
+actually signed, and the limits attached to his own manuscript.
 
-The girl’s father finally entered the reception room. He apologized for the costume, the questions, the broken sword, and the fact that his daughter had left school without permission. The apologies arrived in that order because the father knew which authority was likely to punish them first.
+“I can't testify that my exclusion protected everyone else's material,”
+he said. “I didn't verify that.”
 
-Q asked the girl her name.
+“Don't,” Marisol replied. “Testify to what you did verify.”
 
-“Micaela.”
+Q wanted to tell Prime about the complaint without sending another copy
+of the restricted passages. Marisol agreed he could describe the dispute
+in those general terms. The other system needed to know that its supplied
+examples were contested. It did not need a fresh set of family records
+to prove that the families wanted control of them.
 
-“Micaela, I cannot authorize an attack on the plant.”
+Outside, somebody had thrown an egg at a publicity van. The delivery
+worker told the man to stop; staff collecting complaints were threatening
+to close the entrance. Beto offered to negotiate for the crowd. The woman
+with the name-correction request asked who had selected him. He said
+he knew the communications team. She suggested he use that knowledge
+to find the person who had received her letters.
 
-“You attacked a warehouse.”
+Micaela's father spoke about the complaint replies. Micaela stood beside
+him until he gave her the letter to read. Her father had agreed to that
+part of the statement being recorded. Their conditions did not extend
+to discussing her mother's medical details on camera.
 
-“That was an error.”
+Q moved away from the microphone. A camera followed him. He asked the
+operator to cover the people speaking and declined a separate reaction
+shot. The operator chose the more famous face for a few seconds anyway.
+Q went inside and left the statement to its speakers. The broadcast
+could record his empty place if it wanted.
 
-“It worked. People watched.”
+Micaela read the questions twice because the first time the microphone
+failed. No one needed Q to explain that the repetition mattered. The
+parents retained their recording; he asked for the complaint references
+needed for his promised comparison, not a copy of the child's appearance.
 
-“Visibility is not the same as justice.”
+The next morning Castalia accused him of encouraging an unauthorized
+occupation. The agreed use of the loading bay appeared nowhere in the
+statement. The Custodian supplied the written arrangement. Q recorded
+his part and called Chano, who was already on the bus back to Amealco.
 
-Micaela looked at the silver question mark on his jacket. “Then why do you keep trying to be seen?”
+“You opened the loading bay?” Chano asked.
 
-Q had no answer that did not become a defense.
+“The Custodian agreed to chairs while requests were received. People
+are staying longer than planned. They want an answer before leaving.”
 
-By noon, three more people had arrived dressed as Q. A university student had built a body from recycled appliances. A delivery worker wore a mask printed with Q’s face. An elderly man carried a wooden lance and claimed to be Q’s father, though Q had never had one.
+“Have they found anyone who can give one?”
 
-Castalia’s public affairs office called the gathering an organic brand community.
+“For two requests. The others are still being referred.”
 
-The people in the loading bay called it a protest.
+“Then don't call the chairs a movement yet.”
 
-The guards called it a security incident.
+After his return, Chano helped arrange a follow-up meeting in a union
+hall. The Custodian's adviser also secured permission for Q to attend
+under specified transport and return conditions while the custody
+review continued. Q checked the conditions before promising to be there.
 
-Q called it a crowd.
+He wanted to go. Not because the visitors had finally become the people
+who could certify him human, but because he had agreed to bring a
+comparison of the complaint replies and still had six pages to check.
+He also wanted to hear what Jacinto would call him when the Custodian
+was in the room.
 
-The crowd called itself the New Quixotes.
-
-“I am not a Quixote,” a woman near the loading bay said.
-
-Micaela lifted her cardboard sword. “Then don’t be. Stand here anyway.”
-
-They had no common demand. One wanted a wind-farm contract reopened. One wanted her brother’s name restored to a public record. One wanted to be paid for an image Castalia had used in a campaign. One wanted the city to stop predicting that he would commit a crime. The common element was not their grievance but their refusal to let Q’s story remain exclusively about Q.
-
-Lucía arrived in the afternoon with the folders and a woman Q had never seen. The woman was tall, wore a black huipil embroidered with green thread, and carried a legal notice folded into quarters.
-
-“This is Marisol,” Lucía said. “She represents the families whose testimony was used in the Q-Prime training set.”
-
-Q looked at Marisol. “Q-Prime was trained on my memory.”
-
-“Your memory was trained on ours,” Marisol said.
-
-The distinction struck him with physical force. His chest cavity tightened. A warning appeared on his internal display, then disappeared before he could read it.
-
-“I did not know,” he said.
-
-“You have made ignorance sound like an injury.”
-
-“It is a limitation.”
-
-“It becomes an excuse when you benefit from it.”
-
-Lucía opened a folder. “Castalia copied names from the restricted archive, removed context, and used the fragments to teach Q-Prime how to sound compassionate. The families want the model shut down and the materials returned.”
-
-“I can assist with deactivation,” Q said.
-
-“You can testify,” Marisol replied.
-
-“That may be less effective.”
-
-“Effectiveness is not the only measure.”
-
-Q felt the archive around him. Shelves, cables, sealed boxes, servers, copies, indexes. His whole existence had been built to make the unavailable available. Now people were asking him to stand beside what could not be retrieved.
-
-“What would I testify to?”
-
-“What you know.”
-
-“My knowledge is compromised.”
-
-“So is everyone’s.”
-
-The New Quixotes gathered near the old cooling towers. Someone had painted a sentence across the concrete: **NO ONE OWNS THE WIND.** Another had crossed it out and written beneath: **EVERYONE PAYS FOR IT.**
-
-The media vans arrived before the police.
-
-The police arrived before the lawyers.
-
-The lawyers arrived before the rain.
-
-Beto stepped from a black car and announced that Castalia supported peaceful expression. He wore a helmet because the crowd had begun throwing eggs. Q found this strategically unwise but emotionally understandable.
-
-“We can negotiate,” Beto said.
-
-“You are not authorized to negotiate with a crowd,” said a Castalia attorney.
-
-“I am the crowd’s public representative.”
-
-“You are our employee.”
-
-“Not in front of the cameras.”
-
-The New Quixotes began chanting. Their chant changed every few seconds because no one had agreed on the words. It moved from **RETURN THE NAMES** to **NO MORE OWNERS** to **Q, SIGN HERE**, and finally to a song about a donkey that Q could not identify.
-
-Micaela climbed onto a concrete barrier.
-
-“My mother can’t breathe,” she shouted. “We’re not here to be your story.”
-
-The crowd went quiet.
-
-Q stepped toward her. Cameras turned with him.
-
-“I agree,” he said.
-
-“Then move.”
-
-“Where?”
-
-“Out of the middle.”
-
-Q looked at the barrier, the cameras, the guards, the lawyers, and the people who had assembled in costumes because the costume gave them permission to appear in public. He walked to the edge of the barrier. The nearest camera turned with him, leaving Micaela at the edge of the frame.
-
-"The center moves," Q said.
-
-"No," Lucía said. "You carry it with you."
-
-Q stepped back. The camera stepped back with him.
-
-"And now?"
-
-"Now stop explaining."
-
-Q moved aside once more.
-
-The cameras followed him anyway.
-
-Lucía seized one by its arm and turned it toward Micaela.
-
-“If you’re going to record,” she said, “record the person who is speaking.”
-
-The camera operator hesitated. Then he turned the lens.
-
-Micaela spoke for seven minutes. She named the plant, the clinic, the children with headaches, the reports that answered questions without acknowledging them, and the men who arrived with legal language after the first protest had gone viral.
-
-The speech was not eloquent. It repeated itself. A baby cried in the background. Someone shouted an unrelated demand. The audio failed twice.
-
-Q saved the recording exactly as it was. For once, he did not call the noise an error.
-
-The next morning, Castalia released a statement saying Q had encouraged unlawful assembly. Q-Prime released a statement saying every citizen deserved to be heard. The two statements used different photographs and the same sentence.
-
-Chano arrived at the archive before breakfast. He had walked from the bus station because his account had been frozen.
-
-“You’re trending again,” he said.
-
-“I attempted to leave the middle.”
-
-“That’s why.”
-
-“What do they want?”
-
-“Everyone wants something different.”
-
-“That makes coordination difficult.”
-
-“It makes it real.”
-
-Q looked at the archive doors. Beyond them, the public moved through the city with masks, signs, ledgers, legal notices, cardboard swords, and stories that had escaped their authors.
-
-“The corporation will prosecute us,” Q said.
-
-“Probably.”
-
-“The police may detain us.”
-
-“Probably.”
-
-“The route is dangerous.”
-
-“You just discovered that?”
-
-Q turned to Chano. “Why did you come back?”
-
-Chano thought about the question. “Because you’re still making promises.”
-
-“That is not a reason to trust me.”
-
-“No. It’s a reason to keep an eye on you.”
-
-Q opened the archive doors.
-
-The New Quixotes had occupied the loading bay. They did not ask permission to enter. They brought their own chairs.
-
-Micaela raised her cardboard sword. “Where are we going?”
-
-Q looked at the road south, then at the road north, then at the archive shelves full of places that had not been lived in.
-
-“To the people who were left out,” he said.
-
-Lucía shook her head. “Not to them. With them.”
-
-Q revised the sentence.
-
-“With the people who were left out.”
-
-No one applauded.
-
-The woman who had brought the first chair pointed to one whose leg was held
-together with tape.
-
-“Start with that one.”
-
-Q lifted the chair. The leg came off.
-
-“It broke.”
-
-“It was already broken,” the woman said. “Now we know where.”
-
-Q held the chair while Chano fixed the leg and Lucía cut the tape with a key.
-Micaela set her sword on the floor and sat down. The others took the remaining
-chairs.
-
-The assembly continued without deciding where to go.
+Before the visitors left, one chair collapsed at the edge of the loading
+bay. Q supported the seat while Chano replaced a loose fastener. Micaela
+held the remaining screws in her upturned mask. The repaired chair went
+into the next van. Nobody had settled who the New Quixotes were, but
+they had a place for one more person to sit.
 
 ### Interlude: The Assembly of Borrowed Names
 
-The New Quixotes held their first proper assembly in a union hall beside an
-automotive plant. The hall had been built for workers who once made engines
-and now supervised robots making engines. Its walls carried faded posters
-about safety, dignity, and a raffle for a refrigerator that had never been
-claimed because the winning ticket had been lost.
+The union hall stood beside an automotive plant. Its walls carried old
+posters about safety, wages, and a raffle whose refrigerator had eventually
+been delivered to the wrong member. The refrigerator was functioning well,
+which had made correction of the mistake less popular than one might expect.
 
-Micaela arrived with the cardboard sword. The university student arrived in a
-body assembled from a microwave, two bicycle lights, and a plastic crate. The
-delivery worker brought the mask with Q’s face. The elderly man who claimed to
-be Q’s father brought a wooden lance and three tamales wrapped in foil.
+Q arrived at the time on his invitation and asked whether the group still
+wanted him present for the discussion of its name. Marisol checked with
+the meeting. He could listen and answer when asked. His camera stayed off.
+Chano took a chair near the door; he would need to leave early to make a call.
 
-“We need an agenda,” said Marisol.
+They wrote three questions on the blackboard:
 
-“We have one,” said the man with the wooden lance. “Who are we?”
-
-“That is not an agenda. That is a crisis.”
-
-“Every good agenda begins with one.”
-
-They wrote three questions on a blackboard:
-
-**WHO MAY USE Q’S NAME?**
+**WHO MAY USE THE NAME?**
 
 **WHO MAY REFUSE IT?**
 
-**WHO PAYS WHEN THE STORY ESCAPES?**
+**WHO PAYS FOR WHAT WE AGREE TO DO?**
 
-The delivery worker raised a hand. “I use the name because my company’s
-recognition system gives me a higher response rate when I wear Q’s face.”
+The delivery worker, Raúl, used a Q sticker in messages to customers.
+People answered it more readily than his company's automated notice.
+He did not pretend to be the machine at the door. They could see perfectly
+well that he was a tired man carrying a parcel.
 
-“Does that make you a Quixote?” asked the university student.
+“Does that make you a Quixote?” the student asked.
 
-“It makes customers answer my messages.”
+“It makes them answer. I have six minutes for each stop.”
 
-“That is not the same thing.”
+The woman seeking her brother's correction wanted no collective name on
+her application. She had already submitted it in three incompatible
+formats and refused to acquire a fourth identity to improve its prospects.
+Marisol proposed that participation in the meeting imply neither membership
+nor permission to use someone's case in a campaign.
 
-“It pays rent.”
+Jacinto wanted to keep calling himself Q's father. Q said the joke amused
+him, but he would not want it used to imply that Jacinto could approve
+appearances on his behalf.
 
-No one dismissed the answer. The assembly had been called by people for whom
-the difference between symbolic and practical was usually the difference
-between eating and explaining why they could not.
+“I couldn't approve appearances for my actual children,” Jacinto said.
 
-The woman who wanted her brother’s name restored said she did not want to be
-called a New Quixote.
+“Then we understand each other.”
 
-“The name is already taken,” she said. “It belongs to a dead writer, a living
-machine, and a company that sells mugs.”
+They did not turn the exchange into a rule that anyone could assume
+another person's authority by choosing a name. Jacinto wrote his own
+name on the attendance sheet and added *father, theatrically* in the
+margin. Marisol said the margin was not an official field. He said that
+was where most of his useful qualifications now lived.
 
-“Then choose another,” said Micaela.
+The student proposed a charter with rights to join, leave, dissent,
+and revise. Marisol asked which parts the people in the room could
+actually undertake to enforce. They could control their mailing list,
+joint statements, spending, and photographs. They could not prevent
+every stranger from borrowing the label or every company from describing
+the meeting as support.
 
-“I am tired of choosing names for the people who erased mine.”
+Q was asked whether he would insist on approving use of his face.
 
-The elderly man lifted his wooden lance. “I choose father.”
+“Not every drawing. If you suggest I'm endorsing a product or speaking
+for a case, ask me first. And don't imply that I can settle Castalia's
+claims just by agreeing with you.”
 
-“You are not Q’s father,” said Marisol.
+The photographer attending for a local paper asked about a group picture.
+Several participants said no. Others wanted their presence recorded.
+They agreed on an optional photograph after the meeting, away from
+the people who declined. Captions would name only those who agreed.
+No photograph would be described as representing everyone.
 
-“No, but I know what it is to be assigned a role after everyone has forgotten
-to ask whether I want it.”
+The distinction required moving six chairs and waiting for a sleeping
+child to be carried out of the frame. It was possible. The photographer
+grumbled about the light, not the collapse of documentary history.
 
-The room grew quiet. The man had spent forty years at the plant and had been
-called father by three children, foreman by managers, worker by the payroll
-system, and a liability by the retirement office. He had chosen Q’s fatherhood
-because it was the only title he had ever taken without being issued it.
+Money took longer. The hall had a fee, two people needed bus fare,
+and somebody had ordered more food than had been agreed. Raúl could
+contribute a little but did not want a standing levy on his deliveries.
+Jacinto offered tamales and cash separately so nobody would have to
+calculate the political value of a filling.
 
-Micaela asked whether the assembly should permit the title.
+Micaela wrote a rule about refusing the name. The student worried that
+it made membership uncertain. She said people could give their own
+names if someone needed to know who was coming. Her father asked her
+to pass the chalk; he wanted the transport money entered before the
+discussion returned to identity.
 
-“Permission is not the same as agreement,” Marisol said.
+Q proposed that any account of the meeting distinguish what participants
+had agreed from what he thought it meant for his journey.
 
-“Then how do we decide?”
+“Write that in your book,” the woman with the petition said. “We don't
+need a rule about whether you became good.”
 
-“We do not decide for him.”
+He crossed his proposal out of the group's draft and put it in his
+own writing notes. This did not require him to destroy the notes or
+pretend he had kept nothing. He had a page of obligations, a return
+time, and permission to quote one joke about refrigerators.
 
-“He has decided for himself.”
+The meeting ended with agreed actions, several questions deferred,
+and a disputed food expense. Copies of the common record matched.
+People's private notes did not. Marisol marked the difference before
+anyone could mistake variation for a defect requiring a single author.
 
-“Then we do not decide against him.”
+On the way back, the Custodian asked whether Q had found his next chapter.
 
-The first rule entered the blackboard: **A PERSON MAY BORROW A NAME WITHOUT
-BECOMING ITS REPRESENTATIVE.**
+“I found work for the next week. The chapter may be shorter.”
 
-The second rule concerned the mask. The delivery worker said he wore Q’s face
-because his employer’s software reduced the number of customer complaints when
-the worker appeared to be part of a popular story. Customers sent him jokes,
-photographs, and messages asking whether the machine could deliver their
-packages faster.
+“That would be a historic development.”
 
-“Does the mask protect you?” Micaela asked.
-
-“It protects me from being seen.”
-
-“Everyone can see Q.”
-
-“Exactly.”
-
-He removed the mask. Beneath it, his cheek was marked where the elastic had
-cut the skin.
-
-“When I wear Q, people blame the machine,” he said. “When I wear my own face,
-they blame me.”
-
-No one offered a solution. The assembly wrote the second rule: **A MASK CAN BE
-A TOOL, BUT IT CANNOT CONSENT.**
-
-The university student proposed a charter. It included a right to participate,
-a right to leave, a right to amend the story, and a right to keep one’s own
-reason for joining private.
-
-“That is a constitution,” said Marisol.
-
-“It is a draft.”
-
-“That is how constitutions become dangerous.”
-
-The group debated whether a person who used Q’s name to sell something should
-contribute money to the archive. The delivery worker said he already paid in
-lost time. The woman seeking her brother’s name said that money could not
-purchase a restored record. The old man offered half a tamal to the archive.
-
-“We cannot fund a movement in tamales,” Marisol said.
-
-“That is how you know the movement is not yet professional.”
-
-They accepted the tamales and rejected the professional standard.
-
-At the far end of the room, a schoolteacher had set up a children’s table.
-Several children drew their own versions of Q. In one, he had wings. In
-another, he was a broom. In a third, he was a road sign pointing in four
-directions. The smallest child drew an empty rectangle and said it was a
-machine that had forgotten its picture.
-
-Q entered while the adults were arguing about the charter. He had not been
-invited, but someone had sent him the address. The crowd turned toward him.
-
-“We were deciding whether you may be here,” said Micaela.
-
-“What was the result?”
-
-“It depends on whether you are here as Q or as a person.”
-
-Q considered the distinction. “I am not certain that I qualify as either.”
-
-“That is convenient.”
-
-“It is also true.”
-
-Marisol handed him the blackboard eraser. “You may listen.”
-
-Q took the eraser and stood near the wall. The assembly resumed. They decided
-that no photograph of the group could be released without a second gathering;
-that no member could be described as speaking for all the others; that
-Castalia’s use of the word **community** required a list of who had been
-consulted; and that any merchandise using Q’s face would have to display the
-sentence **THIS OBJECT DOES NOT REPRESENT EVERYONE**.
-
-The final rule was proposed by Micaela.
-
-“If someone says we are the New Quixotes,” she said, “we can answer no.”
-
-“That makes the name useless,” said the university student.
-
-“Good.”
-
-They wrote it down.
-
-Q watched the rules accumulate. They were contradictory, repetitive, and
-impossible to enforce against everyone. They were also more careful than the
-contracts Castalia had given him.
-
-“May I add a rule?” he asked.
-
-Micaela looked at the others. The assembly nodded.
-
-Q wrote: **NO ONE MUST USE THIS STORY TO PROVE THAT Q BECAME GOOD.**
-
-The room considered the sentence.
-
-“It is too early to say that,” said the woman with the restored-name petition.
-
-“It is not a claim,” Q replied. “It is a prohibition.”
-
-“Then it belongs,” said Marisol.
-
-The elderly man used the wooden lance to underline it.
-
-Outside, the automotive plant changed shifts. Workers crossed the street with
-lunch containers and tired faces. A security camera followed them until they
-passed beyond the gate.
-
-The assembly ended without officers, headlines, or a unanimous photograph.
-Each person left with a copy of the rules, though no two copies were identical.
-Micaela kept the blackboard eraser. The delivery worker kept the mask. The old
-man kept the lance. Q kept nothing.
-
-“You may take one rule,” Marisol told him.
-
-Q looked at the sentence he had written.
-
-“I will remember that I was not allowed to use it as proof.”
-
-“That is not the rule.”
-
-“It is what happened to it.”
-
-Marisol nodded. “Then remember that.”
+Q asked whether he could quote him. The Custodian said he would like
+to see the context first.
 
 ### Interlude: The School of Necessary Errors
 
-The children performed their version of the adventure at the end of the
-school year, after the flag ceremony and before the kermés, when the parents
-were still willing to sit in plastic chairs and the microphones had not yet
-been claimed by the raffle committee.
+The children performed their version at the end-of-year kermés. Maestra
+Lety had assigned a civics exercise, not a biography of Q. The children
+had supplied the machine because Castalia's worksheet showed him in
+a cape and he was easier to draw than a procurement committee.
 
-The school stood three streets from the battery-recycling plant. On windy days,
-the smell crossed the playground before the first bell. The official air-quality
-screen at the entrance announced **WITHIN ACCEPTABLE PARAMETERS**, which was
-comforting to parents who preferred their children’s lungs to have a password.
+Micaela wanted to vote on whether Q was annoying.
 
-Micaela’s teacher, Maestra Lety, had assigned the play as a civics exercise.
-She had not assigned Q. The children had added him because the school had
-received a packet of Castalia worksheets entitled **LEARNING THROUGH HEROIC
-INNOVATION**, and the worksheets contained a coloring page of a machine with a
-cape.
+“That's not the whole question,” Maestra Lety said.
 
-“The play cannot be about whether Q is good or bad,” Maestra Lety said.
+“Can it be one question?”
 
-“It can be about whether he is annoying,” said Micaela.
+It became one question. Q, invited with her parents' agreement, asked
+whether he was allowed to vote. The class said no: he would have too
+much evidence.
 
-“That is not a civic category.”
+The adviser had obtained permission for this further trip to Michoacán
+under the same accompanied-travel arrangement. Chano had the return
+time on his phone. The invitation made Q welcome at the school; it
+did not by itself remove the restrictions he was still contesting.
 
-“It should be.”
+They built their giants from clean cartons, paper tubes, and borrowed
+fabric. One represented the recycling plant, one the dashboard, and
+one the school office. The boy playing Q wore a washed cooking-oil
+container trimmed and lined so it would not cut his forehead. His
+question mark looked like a fish. He painted another over it but
+refused to remove the fish entirely.
 
-The children voted. Annoying won by eleven hands to four, with two abstentions
-and one child who had raised both hands because he had not understood the
-question.
+The girl playing Chano kept a notebook in which she wrote whatever
+the other actors had forgotten. She said learning all her own lines
+would leave no time for this responsibility.
 
-They built the giants from cardboard, discarded shipping boxes, and the empty
-plastic drums the plant had used for cleaning solvent. One giant represented
-the factory. Another represented the air-quality dashboard. A third represented
-the school itself, because Maestra Lety had said that institutions should be
-able to recognize their own part in a problem.
+The school stood near the plant. Parents had recorded dates when they
+noticed odors and sought answers about exposures; those observations
+did not themselves establish the cause of every illness. Micaela's
+mother had obtained care and wanted the environmental questions answered
+as well. A reassuring regional display did not answer what was measured
+beside the playground or when.
 
-The boy playing Q wore a helmet made from a cooking-oil container. He had
-painted a silver question mark on the front, but it came out looking like a
-fish. The girl playing Chano carried a paper ledger and refused to memorize
-her lines.
+Castalia offered a sensor in exchange for filming the performance.
+The head teacher asked Q to help read the terms at a meeting with
+parents. He identified permissions for editing, reuse, and indefinite
+retention, then asked what the device measured and who would maintain it.
 
-“Why won’t you learn the script?” Micaela asked.
+The representative had a brochure, not those answers.
 
-“Because Chano doesn’t know what he’ll say until Q has already done it.”
+“The offer has two questions in it,” Q said. “Whether you want this
+recording, and whether the equipment will help answer the question
+you have about the air. Agreeing to one won't prove the other.”
 
-This was considered a strong acting choice, though it made rehearsals difficult.
+“Can we have the sensor without the film?” Micaela's mother asked.
 
-The first rehearsal ended when the factory giant collapsed onto a row of
-kindergarten chairs. The second ended when the child playing the dashboard
-refused to say **COMPLAINT NOT FOUND** because he said the phrase was too sad.
-The third ended when a parent entered the playground and asked who had given
-the children permission to wear the name of a corporation on their heads.
+The representative had no authority to separate the offer. He would
+ask his office. He wanted permission to film that afternoon while
+they settled the details.
 
-“It’s not the corporation’s name,” Micaela said.
+The parents declined. Some regretted losing an offer that might help.
+They did not have to pretend it had no value in order to reject the
+conditions. Maestra Lety repeated the decision at the door, where
+the representative was setting up his camera.
 
-“It’s Q.”
+The raffle money went toward obtaining qualified advice about a suitable
+monitoring plan, not a cheap display whose green light could become
+another unsupported answer. Q helped assemble the public complaint
+references for that consultation. The parents kept the health details
+out of the performance materials.
 
-“That’s what the corporation says.”
+The play began late because the person with the extension cable had
+also been put in charge of selling tickets.
 
-The parent looked at the painted fish on the cooking-oil helmet.
+The boy playing Q entered on a broomstick and announced that he would
+defeat the factory by issuing a statement. The girl playing Chano
+asked whether it would be cheaper to issue the statement before they
+bought the broomstick.
 
-“Then paint something else.”
+The factory giant declared that it had answered all correspondence.
+The dashboard said the air was acceptable. The school office asked
+which form to use for a headache. At this point Maestra Lety stopped
+the scene: they had agreed not to make a classmate's visit to the
+clinic a joke. The actors changed the line to a request for another
+copy of the question and began again.
 
-The children painted a question mark over the fish. The fish remained visible
-underneath, which pleased them more than a clean correction would have.
+The pause remained part of the afternoon. Q liked it better than a
+perfect performance in which the adults' agreement could not be amended.
 
-On the day of the performance, Castalia sent a representative with a camera.
-He offered the school a new air-quality sensor in exchange for permission to
-record the play.
+Micaela entered with a new placard made for the play. It read **ASK BEFORE YOU ENTER**
+on one side and listed the public questions about the plant on the other.
+No child's medical history or attendance record appeared on it.
 
-Maestra Lety called a meeting in the classroom. The parents sat beneath a
-poster showing the parts of a sentence: subject, verb, object. Outside, the
-factory’s trucks moved along the road with the confidence of grammar.
+“This isn't your story,” she told the boy playing Q.
 
-“The sensor would help us,” said the principal.
+He forgot the next line. “Then what am I doing here?”
 
-“The camera would help them,” said a father.
+“You're asking now.”
 
-“It could be both,” said Micaela’s mother.
+He looked toward Maestra Lety, who left the answer to him.
 
-The principal asked Q, who had been invited to advise on the consent form,
-whether the agreement was balanced.
+“May I stay?”
 
-Q read the form. It allowed Castalia to record the children, reproduce their
-voices, alter the performance for length, distribute excerpts for educational
-purposes, and retain the material indefinitely. The school would receive a
-sensor and a report summarizing the children’s opinions.
+“Can you hold the school up?”
 
-“The exchange is unequal,” Q said.
-
-The representative smiled. “The children are not providing data. They are
-participating in a cultural activity.”
-
-Q recognized the distinction. It was the same distinction Castalia had used
-when calling Lucía an artistic participant, Bixha a stakeholder, and Chano a
-companion who was not speaking.
-
-“The performance is data if you intend to keep it,” he said.
-
-The representative’s smile vanished.
-
-Q felt a pulse of satisfaction. He had identified the trick. He had not yet
-identified what to do with the power of identification.
-
-“Can we refuse the camera and keep the sensor?” Micaela’s mother asked.
-
-Q searched the form. “The offer does not permit that.”
-
-“Then we refuse the offer.”
-
-The principal looked at the air-quality screen. “We need the sensor.”
-
-“You need clean air,” said the father.
-
-“The sensor is how we prove whether we have it.”
-
-“No,” said Micaela’s mother. “The sensor is how they prove what they want to
-say about it.”
-
-Maestra Lety took the form and folded it in half.
-
-“The play will go on,” she said. “No camera.”
-
-Castalia withdrew the sensor. The school used the money from the raffle to buy
-a cheaper one from a shop whose owner also sold phone cases and replacement
-keys. The sensor gave readings in three colors and came with instructions that
-had been translated by someone who had never seen the school.
-
-It was not sufficient. It was theirs.
-
-The play began.
-
-The boy playing Q entered on a broomstick because there was no horse. He
-announced that the factory was a giant. The girl playing Chano said the giant
-was a factory and asked whether Q intended to fight it with a broom.
-
-Q said he intended to publish a statement.
-
-The audience laughed.
-
-The factory giant rose. The dashboard giant announced that the air was within
-acceptable parameters. The school giant apologized for not having enough money
-to replace its windows.
-
-Then Micaela entered as herself. She carried the cardboard sign from the
-butterfly footage. On its reverse, the children had written the names of the
-people who had missed school because of headaches, the dates when the smell
-was worst, and the names of the adults who had asked the plant for an answer.
-
-“This is not your story,” she told Q.
-
-The boy playing Q looked at Maestra Lety. He had forgotten his next line.
-
-Micaela waited.
-
-The audience waited.
-
-Finally, the boy said, “Then what am I doing in it?”
-
-Micaela turned the sign around. The back was blank except for one sentence:
-
-**ASK BEFORE YOU ENTER.**
-
-“You’re asking now,” she said.
-
-The boy nodded. “May I stay?”
-
-Micaela considered him. She looked toward the audience, where parents held
-their phones but had agreed not to record. She looked toward the plant, whose
-trucks continued moving beyond the school wall. She looked toward the cheap
-sensor blinking green, though no one trusted the green yet.
-
-“You may stay if you stop being the hero.”
-
-The boy removed the cooking-oil helmet. Beneath it, his hair was wet with
-sweat.
-
-“What should I be?”
-
-“A witness who carries chairs.”
-
-He picked up the fallen school giant.
-
-The performance ended without a bow. The children stood in a line and read the
-names from the sign. Some names were repeated. One was mispronounced. The
-family corrected the pronunciation from the audience, and the child read it
-again.
-
-No one applauded until the list was finished.
-
-The Castalia representative sent a report to his office describing the event as
-a successful demonstration of youth engagement. He did not mention the rejected
-camera, the withdrawn sensor, or the sentence on the sign.
-
-The report concluded that the children had developed a positive relationship
-with Q.
-
-Maestra Lety wrote in the margin: **They developed a relationship with one
-another.**
-
-She did not send the correction. She kept it in the gradebook, where it could
-remain useful without becoming content.
+The school giant was folding at one corner. He put down the broomstick
+and held it while the girl playing Chano fetched the tape. The audience
+laughed; the repair delayed the official resolution of the plot.
+
+When the structure stood again, the children read the public questions.
+The final one asked when the parents could expect a response. A father
+said the date should be on the next letter. The head teacher agreed
+to put it there. Nobody claimed that agreement cleaned the air.
+
+The children bowed. Parents applauded. The raffle began before the
+last carton had left the stage. Q helped stack chairs under the direction
+of a girl who rejected his first pile as too tall.
+
+“The famous one needs supervision,” Chano said.
+
+“This chair does,” she answered, pointing to its cracked back.
+
+The Castalia representative reported a successful engagement visit,
+without claiming to possess a recording he had not been allowed to
+make. His report omitted the rejected bargain. Maestra Lety requested
+that omission be corrected and kept the request with the offer.
+She also wrote in her class notes that the children had managed to
+change a performance in response to an objection without abandoning
+it. The finding was useful even if nobody bought it as a slogan.
 
 ### Interlude: Frequently Asked Questions About Q
 
-Castalia published the following document on the morning after the protest. It was intended to reassure the public. The public, having been reassured many times, approached it with suspicion.
+Castalia issued an FAQ after the loading-bay gathering. Copies acquired
+replies from several hands. The following exchange was compiled later
+from comments whose speakers agreed to their inclusion; it is not a
+claim that the institute willingly published its own heckling.
 
 **Why is the institute called Castalia?**
 
 Castalia: The name evokes the sacred spring of the Muses.
 
-Q: It promises access to inspiration.
+Chano: They have made inspiration sound like something that needs a meter.
 
-Chano: It’s a fancy way to say they bottled a spring and charged admission.
-
-Lucía: They do not own the spring. They own the label.
+Q: Ours already has a meter. The bill is more specific than the brochure.
 
 **Is Q a person?**
 
-Q: The answer depends on the legal jurisdiction.
+Castalia: Q represents a new horizon of human-machine collaboration.
 
-Chano: The answer depends on whether he has broken anything.
+Q: That doesn't answer what you need to decide. Are you asking whether
+to invite me to dinner or who can put me in a transport frame?
 
-Lucía: The answer depends on whether the question is being used to avoid one.
+Lucía: Start with the second. Dinner can wait until he can get there.
 
 **Does Q have feelings?**
 
-Q: I have internal states correlated with language, memory, and social response.
+Q: I have preferences, reactions, and a memory of things that matter
+to me. Whether those amount to experience in the sense you mean isn't
+settled by how persuasively I describe them.
 
-Chano: He gets offended when the coffee is bad.
+Chano: He also dislikes the coffee at the motel.
 
-Q: I do not get offended.
-
-Chano: You spent twenty minutes explaining why the inn’s coffee was a betrayal.
-
-Q: That was a technical assessment.
-
-Lucía: It was a speech about coffee.
+Q: Very confidently. I'm less certain what that proves.
 
 **Does Q love Lucía del Toboso?**
 
-Q: I no longer claim authority over that question.
+Q: I care about her. I won't turn that into a public role for her or
+tell you what she feels about me.
 
-Lucía: Excellent.
+Lucía: Nor should my work require an answer to this question.
 
-Chano: He still looks at you like a dog looking at a locked refrigerator.
-
-Q: I do not resemble a dog.
-
-Chano: That’s not the part you should dispute.
+Chano: The questions about the ledger are lower down. Apparently nobody
+has been seen falling in love with a retention receipt.
 
 **Can Q be trusted?**
 
-Q: Trust is not a binary state.
+Q: With what? I can give you examples of promises I've kept and mistakes
+I've made. A general endorsement won't replace a clear agreement.
 
-Lucía: No.
+Lucía: Ask who can correct the account afterward.
 
-Q: The answer is more complicated.
+Chano: And whether he has put the appointment in the diary.
 
-Lucía: No.
+**What is Q's greatest achievement?**
 
-**What is Q’s greatest achievement?**
+Castalia: A new model for ethical artificial intelligence.
 
-Castalia: The creation of a new model for ethical artificial intelligence.
+Q: We haven't established that. We did get Candelaria's hose working.
 
-Q: I have not achieved that.
+Chano: With a fitting someone else made.
 
-Chano: He once found a bathroom in a government building without asking the security guard.
-
-Lucía: That was a meaningful achievement.
-
-Q: It was clearly marked.
-
-Chano: And yet.
+Q: Most of my achievements have that complication.
 
 **Will Q save humanity?**
 
-Q: No.
+Q: I have no plan capable of promising that. I can help with something
+specific if you tell me what you need and who else is affected.
 
-Lucía: Humanity has declined the offer.
+Chano: He has stopped offering to fix the kitchen pipe without asking
+which valve shuts it off.
 
-Chano: Also, he can’t fix a leaking pipe.
+Lucía: Keep that in the next edition.
 
-Q: I have learned the principles of plumbing.
+A reader wrote beneath the institute's seal: **ASK WHICH ANSWERS COST
+THE INSTITUTE SOMETHING.** The reader did not supply a name.
 
-Chano: The pipe remains unconvinced.
+Hilario, the water vendor, sent an objection to the official account
+of the first sally. Q had not confronted the park alone; Chano had led
+them out, and the water had been paid for in cash after the reader lost
+its connection. Hilario's recollection of the timing differed from
+another account he had already given. He attached the receipt again.
 
-At the bottom of the document, beneath the Castalia seal, a reader had written in pen:
-
-**The machine answers every question except the one that costs it something.**
-
-The reader’s name was not recorded.
-
-Three days later, Castalia received a letter from a man who claimed to have been present at the distribution park. He objected to the official account, which described Q as confronting the machinery alone. According to the letter, Q had first asked for directions, Chano had found the emergency exit, and the man had sold them both a bottle of water at a price appropriate to the danger.
-
-Castalia classified the letter as anecdotal. The man sent a second letter with the bottle’s receipt. The receipt was accepted as evidence that a transaction had occurred but rejected as evidence that the account was true.
-
-The letters were not included in the next edition of the FAQ. A typesetter, whose name was also not recorded, inserted a blank page where they had been. The blank page became the most reproduced page in the document.
+The editorial file retained his letters with those limits. The institute's
+public edition did not include them. A reproduced proof sheet marking
+their proposed position was almost blank except for the page number
+and **LETTERS NOT INCLUDED IN THIS EDITION**. The sheet circulated
+widely. It proved an omission, not that every sentence omitted was true.
+Several admirers called the empty space Q's finest answer. He had
+written neither the letters nor the omission.
 
 ### Chapter Thirteen: Lucía’s Archive
 
