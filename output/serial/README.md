@@ -50,7 +50,24 @@ this is a checked revision proof, not a press master. See the
 [production record](../../novel/development/ISSUE_03_PRODUCTION.md) and
 [art/prompt manifest](../illustrations/revised/issue-03/manifest.json).
 
-The remaining nineteen issues still require their revised illustrated builds.
+## Current Issue 4 revision proof
+
+- [English Issue 4: revised reading PDF](../pdf/ingenious-issue-04-revised-en-bw.pdf)
+- [English Issue 4: revised A3 folding PDF](../pdf/ingenious-issue-04-revised-en-bw-a3.pdf)
+
+32 pages, sixteen unique plates including the cover, and eight A3 duplex sheets.
+All 5,211 words of Chapter Four and both interludes flow through fifteen
+two-column narrative pages in Georgia 12.2/17.2833-point type. The illustrations
+follow Q's publicity, Nora's response and Don Hilario's mine account, with
+distinct scenes opposite their source passages. Unpainted text backgrounds,
+lossless grayscale, full-bleed comic trim and centered A3 landscape imposition
+continue the proof specification. Print all sixteen A3 sides at actual size,
+short-edge duplex. Native art remains about 150 dpi, not an A+ press master;
+no print job was sent. See the
+[production record](../../novel/development/ISSUE_04_PRODUCTION.md) and
+[art/prompt manifest](../illustrations/revised/issue-04/manifest.json).
+
+The remaining eighteen issues still require their revised illustrated builds.
 
 ## Earlier editions
 

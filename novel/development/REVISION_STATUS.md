@@ -254,9 +254,20 @@ the book.” The source now permits Q to remain alive when the writing stops.
   manifest now binds the revised chapter and exact facing text to reviewed
   assets, including a second truck-window edit after the first failed to remove
   an unwanted reflected face. `ISSUE_02_PRODUCTION.md` records checks and limits.
-  Issues 1 and 3 are unchanged; the remaining nineteen illustrated issues are
-  not complete. Fine generated facial/costume details and native raster detail
+  Issues 1 and 3 were unchanged at that checkpoint. Fine generated facial/costume
+  details and native raster detail
   still prevent an A+ press-master claim.
+- Issue 4 now has sixteen unique, scene-specific illustrations and complete
+  32-page reading / sixteen-side A3 revision proofs: 5,211 words in exact source
+  order, eight duplex sheets, Georgia 12.2/17.2833-point text. The manuscript is
+  unchanged from the Chapter Seven pacing checkpoint. The slightly larger
+  setting fills both final narrative columns without dropping text or forcing
+  interlude breaks. Exact facing text, anchors, character references, asset
+  hashes and full built-in generation/edit prompts are recorded in its manifest.
+  Targeted edits correct Nora's phone orientation, the cover's theater ornament
+  and Chano's role at the old display lever. A two-line cover title avoids the
+  dark curtain. `ISSUE_04_PRODUCTION.md` records the PDF and visual checks.
+  Issues 1-4 are now illustrated revision proofs; eighteen issues remain.
 
 ## Required next work
 
@@ -274,7 +285,8 @@ agrees and no longer demands a lesson or failed literary reference at every stop
 Issue 7 remains 44 pages with 22 planned plates and eleven A3 sheets at
 12.3/17.425 pt. Its 7,139 printable words pass source-order checks; pages 14,
 40 and 42 and the center spread have visual review. All 22 issue manifests
-match fresh layout plans. No new art is generated or approved.
+match fresh layout plans. Issue 4 has subsequently been illustrated and
+checked as a revision proof; Issue 7 still has planned art only.
 Next: examine Chapter Five's interlude sequence and the return/hearing repetition
 in Chapters Ten and Sixteen; continue broader scene tests and illustration
 production. The current pacing report is a bounded structural review, not a new
@@ -541,12 +553,12 @@ illustrated edition as unfinished requirements.
    The old public-example packet at `/tmp/ingenious-fresh-scene-packets.json`
    contains a superseded disclosure event and was not run; replace it before use.
 5. Rebuild the remaining English chapter issues only after text and plate placement
-   are reconciled. The new Issue 1, 2 and 3 revision proofs represent their current chapters.
+   are reconciled. The new Issue 1-4 revision proofs represent their current chapters.
    English is the current revision source; the Spanish edition remains earlier.
 6. Use the new explicit-manifest builder, not the old modulo-indexed asset maps.
    It maps even narrative pages to the following odd plate pages, rejects stale
    chapter/asset hashes and repeats, and checks rendered text coverage. Extend
-   these checks and unique facing-scene illustrations through the remaining nineteen issues.
+   these checks and unique facing-scene illustrations through the remaining eighteen issues.
 7. Restore the requested print specifications: readable larger text, continuous
    flow, black ink and unpainted text backgrounds for cream stock, captions in a
    margin, full-bleed art, and the 24-page/12-plate/six-sheet Issue 1 proof. Verify

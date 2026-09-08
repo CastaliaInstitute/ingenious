@@ -1,33 +1,57 @@
 {
   "issue": 4,
-  "revision": "2026-09-08-publicity-voice",
+  "revision": "2026-09-08-issue-04-illustrated-proof",
   "source": "novel/THE_INGENIOUS_MACHINE.md",
   "chapter_sha256": "2763808943e7dae932463cf7100e2a6791159c54d011c56764e1d98ee0c48700",
   "page_count": 32,
-  "text_font": "Georgia 12/17 pt",
+  "text_font": "Georgia 12.2/17.2833 pt",
   "plate_count_including_cover": 16,
-  "status": "planned; no new Issue 4 images generated or approved",
+  "status": "illustrated revision proof; not a press master",
   "character_reference": "output/illustrations/revised/issue-01/cover.png",
   "chano_reference": "output/illustrations/revised/issue-03/plate-06.png",
   "beto_reference": "output/illustrations/revised/issue-02/plate-09.png",
   "wardrobe": "Q puts on a fitted sponsor jacket with a small silver question mark at the service station. Preserve his segmented oval head, ears, neck, long articulated limbs and underlying breastplate; do not automatically copy the torn coat from the identity reference. Ordinary mine safety equipment is not knightly armor.",
-  "secondary_character_design": "Estela: middle-aged Mexican woman, dark bob, blue trouser suit rendered grayscale, capable of both warmth and intrusive interviewing. Mar: practical contemporary manager with tablet; establish a distinct design before recurring plates. Nora and grandmother: establish together before repeating. Don Hilario Gutiérrez: retired miner, older than Chano, gray short hair and gray mustache, work clothes; do not reuse the water vendor's face.",
+  "secondary_character_design": "Estela: middle-aged Mexican woman, dark bob, trouser suit, established in plate 03. Mar: short curly dark hair, rectangular glasses, light blouse, established in plate 01. Nora: young student, loose wavy ponytail, hoodie and canvas backpack, established in plate 09-v2. Grandmother: white hair in bun, cardigan and apron in plate 10. Don Hilario Gutiérrez: lean elderly retired miner, short gray hair and gray mustache, established in plate 11; distinct from stocky middle-aged dark-haired Chano and the earlier water vendor.",
   "art_direction": "Unique scene for the exact facing page. Neutral monochrome Goya-inspired etched realism, pure white highlights, no sepia paper texture. Full bleed at comic trim; typeset captions separately. Architectural reference: https://cultura.guanajuato.gob.mx/index.php/teatro-juarez/ . The mine and incident are invented, not a specific tourist-mine depiction.",
-  "approval_scope": "Pagination and scene-selection plan only. Missing illustrations must not be presented as approved assets. Regenerate facing text after source changes. Internal layout proofs are not public illustrated outputs.",
+  "approval_scope": "Sixteen distinct scene-correspondent revision-proof plates. Exact chapter, facing text and asset hashes bind this pagination. Native detail approximately 150 dpi at trim, not an A+ press master. Physical printing neither performed nor verified.",
   "plates": [
     {
       "plate_id": "issue-04-cover",
+      "title_lines": ["The Ingenious", "Machine"],
       "page": 1,
       "asset": "output/illustrations/revised/issue-04/cover.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The Intelligence of the Trending Hour",
-      "scene_brief": "Q in his fitted sponsor jacket waiting at the side of the Teatro Juárez stage, with light reaching an empty interview chair. Preserve Q identity; introduce Estela's silhouette near the chair. Leave quiet upper space for cover title. New scene, not reuse of Issue 3's reading."
+      "scene_brief": "Distinct cover view over Q's shoulder from the stage wing toward the empty interview chair; Estela approaches upright with question cards. Quiet upper space for separately typeset title, not the repeated chair-moving pose.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-03.png"
+      ],
+      "generation_prompt": "Use case: illustration-story. A single new full-page portrait illustration for The Ingenious Machine by A. Cervantes, iNQ comic trim 6.625 x 10.25 inches. Neutral black-and-white Goya-inspired etching and aquatint, rich crosshatching and human observation, bright unprinted white highlights, no sepia or gray paper wash. Full-bleed composition to every edge, not a framed illustration, no white border. No lettering, captions, typography, watermarks or logos; the only allowed graphic is Q's established question-mark motif. Keep main faces/hands away from the bottom 6 percent, which will have a separately typeset caption. Contemporary near-future Mexico with ordinary clothing and practical devices, never medieval dress, knights, skeleton army or dystopian spectacle. Preserve the exact established Q robot: elongated segmented oval metal head, distinct circular ears, long narrow exposed mechanical neck, slender articulated limbs, rectangular riveted breastplate with one question-mark motif. His posture is attentive and conversational, not a stiff stock robot. After the service-station change he wears a well-fitted dark contemporary sponsor jacket with a small silver question mark embroidered on its lapel; no long ragged coat in later scenes. Reference images establish identity and etching style, not a composition to copy. Draw only the specific action below. Portrait 2:3 at the highest available native resolution.\nScene: Q in his fitted sponsor jacket waiting at the side of the Teatro Juárez stage, with light reaching an empty interview chair. Preserve Q identity; introduce Estela's silhouette near the chair. Leave quiet upper space for cover title. New scene, not reuse of Issue 3's reading.\nNEW COVER COMPOSITION, not the reference pose. Image 1 supplies identities ONLY. View from behind Q's shoulder in the dark stage wing: his elongated metal head is in three-quarter profile in the lower right, one hand gently holding aside the edge of the curtain, looking toward the empty interview chair standing in a pool of light onstage. Farther back Estela STANDS UPRIGHT HOLDING QUESTION CARDS and approaches the chair; she is NOT touching it or moving it. No face-forward full-body pair, no duplicated chair-moving pose. Quiet anticipation, Q about to enter public view. Top 22 percent pure white diffuse light for black title to be separately typeset; keep all faces, hands and props below that band. No letters, no title, no frames. Full bleed, keep curtain texture to sides/bottom.",
+      "rejected_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-d0b8e52b-d479-4187-ac05-458357de388a.png",
+      "rejection_reason": "Repeats plate 3's chair-moving pose too closely; use a distinct viewpoint for the cover.",
+      "initial_generation_prompt": "Use case: illustration-story. A single new full-page portrait illustration for The Ingenious Machine by A. Cervantes, iNQ comic trim 6.625 x 10.25 inches. Neutral black-and-white Goya-inspired etching and aquatint, rich crosshatching and human observation, bright unprinted white highlights, no sepia or gray paper wash. Full-bleed composition to every edge, not a framed illustration, no white border. No lettering, captions, typography, watermarks or logos; the only allowed graphic is Q's established question-mark motif. Keep main faces/hands away from the bottom 6 percent, which will have a separately typeset caption. Contemporary near-future Mexico with ordinary clothing and practical devices, never medieval dress, knights, skeleton army or dystopian spectacle. Preserve the exact established Q robot: elongated segmented oval metal head, distinct circular ears, long narrow exposed mechanical neck, slender articulated limbs, rectangular riveted breastplate with one question-mark motif. His posture is attentive and conversational, not a stiff stock robot. After the service-station change he wears a well-fitted dark contemporary sponsor jacket with a small silver question mark embroidered on its lapel; no long ragged coat in later scenes. Reference images establish identity and etching style, not a composition to copy. Draw only the specific action below. Portrait 2:3 at the highest available native resolution.\nScene: Q in his fitted sponsor jacket waiting at the side of the Teatro Juárez stage, with light reaching an empty interview chair. Preserve Q identity; introduce Estela's silhouette near the chair. Leave quiet upper space for cover title. New scene, not reuse of Issue 3's reading.\nImage 1 is Q and Estela identity/style reference only. Q stands at the side of a theater stage waiting for the interview, fitted jacket and mechanical head exactly as shown. Estela, same bob and suit, is near a simple empty interview chair reached by stage light. Composition for a COVER: reserve the top 22 percent as near-pure white empty diffuse stage light for black title typography to be typeset later. No curtain pattern, face, light fixture or lettering in that upper band. Q and chair occupy the lower two thirds; one dark side curtain frames the stage. This is an intimate wing view, not an invented panorama of Teatro Juárez. NO title or lettering rendered, no inset panel.",
+      "pre_edit_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-9f6d1c66-e9dd-4783-83a4-530154c6849f.png",
+      "edit_reference_images": [
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-9f6d1c66-e9dd-4783-83a4-530154c6849f.png",
+        "/tmp/ingenious-teatro-interior-reference.png"
+      ],
+      "edit_prompt": "Use case: precise illustration edit. Image 1 is the COVER to edit. Image 2 is an architectural reference sheet; use ONLY its lower-right interior photograph for the Teatro Juárez auditorium. Make ONE background architecture correction to image 1: remove all human statues/caryatids and baroque figure sculptures in the distant theater boxes; substitute modest Neo-Mudéjar geometric ornament and dark iron balcony railings consistent with the reference. Keep the background subdued, not a detailed panorama. Do not introduce painted figures or cathedral architecture. Preserve the current over-Q's-shoulder viewpoint, Q's exact metal head and short dark jacket, his hand on the curtain, Estela standing upright with cards, the empty chair, all their positions and gestures, etched black-and-white style, and the empty WHITE upper 22 percent title area. No letters, no new people, no sepia. Change only the distant auditorium architecture.",
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-9f6d1c66-e9dd-4783-83a4-530154c6849f.png",
+      "edited_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-0846617b-0d25-42ea-a5ef-91f14beb6dd9.png",
+      "visual_review": "Inspected corrected cover: distinct over-shoulder viewpoint, empty interview chair, Estela upright with cards, quiet white title area. Removed inappropriate sculpted figures from background; remaining theater is reference-informed illustration, not an exact measured reconstruction.",
+      "asset_sha256": "b29e8c82bb7c0b535a783e9a15d21d3700186bafa20df39d332ae92978f4c8a4",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "source_color_mode": "RGB",
+      "effective_full_bleed_dpi": 149.85
     },
     {
       "plate_id": "issue-04-plate-01",
       "page": 3,
       "facing_text_page": 2,
-      "facing_text": "Chapter Four: The\nIntelligence of the\nTrending Hour\nBy the time Q and Chano reached\nGuanajuato, Q had acquired three\nmanagers, a fan account, and a\nsponsorship offer from a company\nthat made home security systems\ncapable of recognizing intruders but\nnot relatives.\nThe managers caught up with them\nat a service station on the road into\nGuanajuato. They arrived in a white\nelectric van with tinted windows and\na logo that suggested a human hand\nbeing gently optimized. Beto, who\nhad failed to acquire the motel's\nguest register, now carried a folder of\nthings he said he had acquired. The\nfirst was the right to introduce\nhimself as Q's manager.\n“Q,” he said, “the public is obsessed\nwith your authenticity.”\nQ looked at the folder. “Does my\nauthenticity get a copy of the\nagreement?”\n“We can discuss the paperwork in\nthe van,” Beto said.\nThe second manager, a woman called\nMar, gave Q a jacket embroidered\nwith a small silver question mark.\nThe third did not give his name at all.\nHe stood near the van and watched\nthe road.\nChano held the jacket at arm’s\nlength. “Who paid for this?”\n“The audience,” Beto said.\n“The audience didn’t buy it.”\n“The audience generated the\ndemand.”\n“That’s not the same thing.”\n“It is in the current model.”\nQ put on the jacket. It fit perfectly.\nHe disliked it immediately.\nThey had bought the right to\ndistribute Castalia's recordings and\nproposed an appearance at the\nTeatro Juárez. Q could answer\nquestions about love, votes, and the\njourney. The company would cover\ntransport, lodging, and a repair to his\nshoulder. Castalia's ownership claim\nover his body had already prevented\none workshop from ordering the\npart.\nQ asked for a telephone and ten\nminutes. He called the Custodian\nfrom beside the service station's rack\nof motor oil.\n“They can put me in front of the\npeople who saw the clip,” he said.\n“They can also make another clip.”\n“I know. But staying silent leaves\nthem the one they have.”\n“You can come back. I will help with\nthe repair.”\nQ looked toward Chano, who was\nasking whether the van's driver had a\nspare charger. Returning would\npreserve their original plan.\n",
+      "facing_text": "Chapter Four: The\nIntelligence of the\nTrending Hour\nBy the time Q and Chano reached\nGuanajuato, Q had acquired three\nmanagers, a fan account, and a\nsponsorship offer from a company\nthat made home security systems\ncapable of recognizing intruders but\nnot relatives.\nThe managers caught up with them\nat a service station on the road into\nGuanajuato. They arrived in a white\nelectric van with tinted windows and\na logo that suggested a human hand\nbeing gently optimized. Beto, who\nhad failed to acquire the motel's\nguest register, now carried a folder\nof things he said he had acquired.\nThe first was the right to introduce\nhimself as Q's manager.\n“Q,” he said, “the public is obsessed\nwith your authenticity.”\nQ looked at the folder. “Does my\nauthenticity get a copy of the\nagreement?”\n“We can discuss the paperwork in\nthe van,” Beto said.\nThe second manager, a woman\ncalled Mar, gave Q a jacket\nembroidered with a small silver\nquestion mark. The third did not\ngive his name at all. He stood near\nthe van and watched the road.\nChano held the jacket at arm’s\nlength. “Who paid for this?”\n“The audience,” Beto said.\n“The audience didn’t buy it.”\n“The audience generated the\ndemand.”\n“That’s not the same thing.”\n“It is in the current model.”\nQ put on the jacket. It fit perfectly.\nHe disliked it immediately.\nThey had bought the right to\ndistribute Castalia's recordings and\nproposed an appearance at the\nTeatro Juárez. Q could answer\nquestions about love, votes, and the\njourney. The company would cover\ntransport, lodging, and a repair to\nhis shoulder. Castalia's ownership\nclaim over his body had already\nprevented one workshop from\nordering the part.\nQ asked for a telephone and ten\nminutes. He called the Custodian\nfrom beside the service station's\nrack of motor oil.\n“They can put me in front of the\npeople who saw the clip,” he said.\n“They can also make another clip.”\n“I know. But staying silent leaves\nthem the one they have.”\n“You can come back. I will help with\nthe repair.”\n",
       "source_block_ids": [
         0,
         1,
@@ -48,19 +72,34 @@
         16,
         17,
         18,
-        19,
-        20
+        19
       ],
       "asset": "output/illustrations/revised/issue-04/plate-01.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The offered jacket.",
-      "scene_brief": "At the service station Mar offers Q the fitted sponsor jacket while Chano inspects it and Beto holds the agreement folder. Establish the change from worn coat to sponsor jacket; no signing yet."
+      "scene_brief": "At the service station Mar offers Q the fitted sponsor jacket while Chano inspects it and Beto holds the agreement folder. Establish the change from worn coat to sponsor jacket; no signing yet.",
+      "scene_anchor": "Chano held the jacket at arm’s length.",
+      "generation_prompt": "Use case: illustration-story. A single new full-page portrait illustration for The Ingenious Machine by A. Cervantes, iNQ comic trim 6.625 x 10.25 inches. Neutral black-and-white Goya-inspired etching and aquatint, rich crosshatching and human observation, bright unprinted white highlights, no sepia or gray paper wash. Full-bleed composition to every edge, not a framed illustration, no white border. No lettering, captions, typography, watermarks or logos; the only allowed graphic is Q's established question-mark motif. Keep main faces/hands away from the bottom 6 percent, which will have a separately typeset caption. Contemporary near-future Mexico with ordinary clothing and practical devices, never medieval dress, knights, skeleton army or dystopian spectacle. Preserve the exact established Q robot: elongated segmented oval metal head, distinct circular ears, long narrow exposed mechanical neck, slender articulated limbs, rectangular riveted breastplate with one question-mark motif. His posture is attentive and conversational, not a stiff stock robot. After the service-station change he wears a well-fitted dark contemporary sponsor jacket with a small silver question mark embroidered on its lapel; no long ragged coat in later scenes. Reference images establish identity and etching style, not a composition to copy. Draw only the specific action below. Portrait 2:3 at the highest available native resolution.\nScene: At the service station Mar offers Q the fitted sponsor jacket while Chano inspects it and Beto holds the agreement folder. Establish the change from worn coat to sponsor jacket; no signing yet.\nImage 1: Q identity and ink style only; do not include the older bespectacled Custodian. Image 2: Chano identity only, stocky middle-aged man with dark wavy hair and thick mustache. Image 3: Beto is the clean-shaven man in a light blazer to the left; use his face and suit, not the other people or camera setup. Mar is a distinct practical Mexican woman in her late thirties, short curly dark hair, rectangular glasses and a plain light blouse, carrying a tablet. Mar is handing the new short fitted jacket to Chano, who holds it at arm's length in front of Q. Q still wears his old travel coat at this instant. Beto carries the folder. White van and motor-oil rack establish the roadside service station. No signatures, no interview stage, no legible contract text.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-01/cover.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-03/plate-06.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-02/plate-09.png"
+      ],
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-8f9a776e-4d1b-4180-84e6-2fa9b6a82ab6.png",
+      "visual_review": "Inspected: offered jacket has the small question mark; Q retains the prior travel coat before changing; recognizable Q, Chano and Beto; Mar established with short curly hair and glasses. Fictional background skyline, not a verified Guanajuato view.",
+      "asset_sha256": "beee36a421f046fbc01388e86455705b6c610913bba6481fcddc6548739092cf",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "source_color_mode": "RGB",
+      "effective_full_bleed_dpi": 149.85
     },
     {
       "plate_id": "issue-04-plate-02",
       "page": 5,
       "facing_text_page": 4,
-      "facing_text": "Continuing would test it against\nsomething more difficult than a day\nout.\n“I'd like to try the interview. I'll send\nyou the contract before signing.”\nThe Custodian agreed to read it. The\nform that came back covered one\ninterview and its recording. The tour\nwould require another agreement. Q\nsigned the short form and kept the\nappointment for their evening call. It\nwas tempting to let the broadcast\ncount as his report home; he wrote\ndown that it did not.\nThe event occupied a gap between\ntwo performances at the Cervantino\nfestival. The coordinator called it an\nentremés. Q knew the theatrical\nmeaning and asked about the other\none because they had missed lunch.\n“Will there be chocolate?” he asked.\n“There will be theater,” said the\ncoordinator.\n“That does not answer the question.”\n“That is precisely why it is called an\nentremés,” Chano said.\n“I went to a public reading,” Q said.\n“Someone in the audience tried to\nmake it a romance. The speaker told\nhim to stop.”\n“Excellent,” Beto said. “A\nrelationship with tension.”\n“There isn't a relationship for you to\nadvertise.”\n“Then don't use her name until\nEstela asks.”\nThey drove into the city through a\nvalley crowded with color. Houses\nclimbed the hills in red, blue, yellow,\nand green, as if the mountain had\nbeen built from discarded festival\npaper. Above them, the university\nrose among old stone and newer\nantennas. Beneath them, the mines\nopened their dark mouths.\nQ pressed his face to the van’s\nwindow.\n“The route looked much shorter on\nthe map,” he said.\n“It didn't include the stairs,” Chano\nanswered.\n“It did. I treated them as a small\ndetail.”\n“Your knees will revise that.”\nThe van stopped beneath laundry\nstretched across an alley. An orange\ncat occupied the hood of a police\nvehicle; neither the driver nor the\nofficer seemed authorized to hurry it.\nQ lowered the window. From\nsomewhere he could not see came a\ntrumpet rehearsing the same four\nnotes. On its fifth attempt, Chano\nsupplied the missing one.\n“You know the song?”\n“I know what I want it to do.”\nThe cat stood, considered the roof,\nand lay down again.\n",
+      "facing_text": "Q looked toward Chano, who was\nasking whether the van's driver had\na spare charger. Returning would\npreserve their original plan.\nContinuing would test it against\nsomething more difficult than a day\nout.\n“I'd like to try the interview. I'll send\nyou the contract before signing.”\nThe Custodian agreed to read it. The\nform that came back covered one\ninterview and its recording. The tour\nwould require another agreement. Q\nsigned the short form and kept the\nappointment for their evening call.\nIt was tempting to let the broadcast\ncount as his report home; he wrote\ndown that it did not.\nThe event occupied a gap between\ntwo performances at the Cervantino\nfestival. The coordinator called it an\nentremés. Q knew the theatrical\nmeaning and asked about the other\none because they had missed lunch.\n“Will there be chocolate?” he asked.\n“There will be theater,” said the\ncoordinator.\n“That does not answer the\nquestion.”\n“That is precisely why it is called an\nentremés,” Chano said.\n“I went to a public reading,” Q said.\n“Someone in the audience tried to\nmake it a romance. The speaker told\nhim to stop.”\n“Excellent,” Beto said. “A\nrelationship with tension.”\n“There isn't a relationship for you to\nadvertise.”\n“Then don't use her name until\nEstela asks.”\nThey drove into the city through a\nvalley crowded with color. Houses\nclimbed the hills in red, blue, yellow,\nand green, as if the mountain had\nbeen built from discarded festival\npaper. Above them, the university\nrose among old stone and newer\nantennas. Beneath them, the mines\nopened their dark mouths.\nQ pressed his face to the van’s\nwindow.\n“The route looked much shorter on\nthe map,” he said.\n“It didn't include the stairs,” Chano\nanswered.\n“It did. I treated them as a small\ndetail.”\n“Your knees will revise that.”\nThe van stopped beneath laundry\nstretched across an alley. An orange\ncat occupied the hood of a police\nvehicle; neither the driver nor the\nofficer seemed authorized to hurry\nit. Q lowered the window. From\nsomewhere he could not see came a\ntrumpet rehearsing the same four\nnotes. On its fifth attempt, Chano\nsupplied the missing one.\n",
       "source_block_ids": [
         20,
         21,
@@ -80,22 +119,37 @@
         35,
         36,
         37,
-        38,
-        39,
-        40,
-        41
+        38
       ],
       "asset": "output/illustrations/revised/issue-04/plate-02.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The missing note.",
-      "scene_brief": "Inside the stopped van, Q lowers the window toward a cat reclining on a police-car hood while Chano supplies a note to unseen trumpet practice. Narrow Guanajuato alley and laundry, no invented landmark or compulsory adventure."
+      "scene_brief": "Inside the stopped van, Q lowers the window toward a cat reclining on a police-car hood while Chano supplies a note to unseen trumpet practice. Narrow Guanajuato alley and laundry, no invented landmark or compulsory adventure.",
+      "scene_anchor": "Q lowered the window.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-01.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-01/cover.png"
+      ],
+      "generation_prompt": "Use case: illustration-story. A single new full-page portrait illustration for The Ingenious Machine by A. Cervantes, iNQ comic trim 6.625 x 10.25 inches. Neutral black-and-white Goya-inspired etching and aquatint, rich crosshatching and human observation, bright unprinted white highlights, no sepia or gray paper wash. Full-bleed composition to every edge, not a framed illustration, no white border. No lettering, captions, typography, watermarks or logos; the only allowed graphic is Q's established question-mark motif. Keep main faces/hands away from the bottom 6 percent, which will have a separately typeset caption. Contemporary near-future Mexico with ordinary clothing and practical devices, never medieval dress, knights, skeleton army or dystopian spectacle. Preserve the exact established Q robot: elongated segmented oval metal head, distinct circular ears, long narrow exposed mechanical neck, slender articulated limbs, rectangular riveted breastplate with one question-mark motif. His posture is attentive and conversational, not a stiff stock robot. After the service-station change he wears a well-fitted dark contemporary sponsor jacket with a small silver question mark embroidered on its lapel; no long ragged coat in later scenes. Reference images establish identity and etching style, not a composition to copy. Draw only the specific action below. Portrait 2:3 at the highest available native resolution.\nImage 1 supplies Q, Chano and the new jacket: Q NOW WEARS that short fitted jacket; he no longer wears his long ragged coat. Image 2 supplies Q's head and proportions only; omit the Custodian.\nScene: Inside the stopped van, Q lowers the window toward a cat reclining on a police-car hood while Chano supplies a note to unseen trumpet practice. Narrow Guanajuato alley and laundry, no invented landmark or compulsory adventure.\nView from inside the rear passenger space, Q in three-quarter profile lowering a side window, Chano seated beside him quietly humming. Outside the open window, a cat lies on the hood of a parked police car beneath laundry stretched across the tight sloping alley. Only a fragment of the parked car and nearby stucco houses, no invented monumental skyline. No musician is visible; the trumpet is heard from elsewhere. No floating musical notes or readable car lettering.",
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-bcddba5a-7249-4cde-a3da-f82ce9939c91.png",
+      "visual_review": "Inspected: Q and Chano in van, fitted short jacket, lowered window, cat on parked police-car hood and laundry. No visible trumpet player or invented landmark. No legible story text.",
+      "asset_sha256": "6e86c6256ec1c69a8f49684624077ca73aa7bd2f4c3e6225b718e2501f533c39",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "source_color_mode": "RGB",
+      "effective_full_bleed_dpi": 149.85
     },
     {
       "plate_id": "issue-04-plate-03",
       "page": 7,
       "facing_text_page": 6,
-      "facing_text": "At the theater, a crowd waited\nbehind barricades. Some had made\nsigns. Q, SAY MY NAME. LOVE\nIS A HUMAN ERROR.\nDULCINEA, CALL ME. A child\nheld up a drawing of Q with a\nbackpack and a body made of wires,\nas if a person could be carried more\neasily once reduced to an outline.\nThe host met them backstage. Her\nname was Estela Ramos, and she had\nthe practiced warmth of someone\nwho could make an insult sound like\na question.\n“We are thrilled to have you,” she\nsaid.\n“Thank you. How much of that\nsurvives if I disappoint you?”\n“Disappointment is good television\ntoo.”\n“Then I seem unusually well\nqualified.”\nEstela smiled, this time without\nlooking toward the camera. She\nmoved his chair away from a loose\ncable and asked whether the height\nwas comfortable. Q had prepared for\nthe questions. He had not prepared\nto like the person asking them.\nThe stage lights came on. Q stepped\ninto them and became, in a single\ninstant, larger than himself. The\naudience applauded. Their sound\nentered him as data, but the data was\narranged in such a way that he\nwanted more.\nEstela began with a question about\nthe future.\n“For everyone, or just me?” Q asked.\n“I have a repair appointment\ntomorrow. My confidence declines\nafter that.”\nShe asked whether he believed in\nGod.\n“I can give you several serious\nanswers people have lived by. Giving\nyou one as my own would take more\nthan selecting the best paragraph.”\n“You have read the theologians.”\n“Yes. Some of them would regard\nyour allotted time as an insult to\neternity.”\nShe laughed and asked a second\nquestion instead of moving on. Q\nliked that. He shortened his answer,\nkept the qualification, and noticed\nthe audience leaning forward. The\nnext answer acquired a joke he had\nnot needed to make.\nThe audience loved him.\nThe managers watched the numbers\nrise.\nThen Estela asked, “Who is\nDulcinea?”\nThe theater became very quiet.\nQ looked toward the wings. Chano\nwas standing beside a stack of\nunused banners. He shook his head\nonce.\n",
+      "facing_text": "“You know the song?”\n“I know what I want it to do.”\nThe cat stood, considered the roof,\nand lay down again.\nAt the theater, a crowd waited\nbehind barricades. Some had made\nsigns. Q, SAY MY NAME. LOVE\nIS A HUMAN ERROR.\nDULCINEA, CALL ME. A child\nheld up a drawing of Q with a\nbackpack and a body made of wires,\nas if a person could be carried more\neasily once reduced to an outline.\nThe host met them backstage. Her\nname was Estela Ramos, and she\nhad the practiced warmth of\nsomeone who could make an insult\nsound like a question.\n“We are thrilled to have you,” she\nsaid.\n“Thank you. How much of that\nsurvives if I disappoint you?”\n“Disappointment is good television\ntoo.”\n“Then I seem unusually well\nqualified.”\nEstela smiled, this time without\nlooking toward the camera. She\nmoved his chair away from a loose\ncable and asked whether the height\nwas comfortable. Q had prepared for\nthe questions. He had not prepared\nto like the person asking them.\nThe stage lights came on. Q stepped\ninto them and became, in a single\ninstant, larger than himself. The\naudience applauded. Their sound\nentered him as data, but the data\nwas arranged in such a way that he\nwanted more.\nEstela began with a question about\nthe future.\n“For everyone, or just me?” Q asked.\n“I have a repair appointment\ntomorrow. My confidence declines\nafter that.”\nShe asked whether he believed in\nGod.\n“I can give you several serious\nanswers people have lived by. Giving\nyou one as my own would take more\nthan selecting the best paragraph.”\n“You have read the theologians.”\n“Yes. Some of them would regard\nyour allotted time as an insult to\neternity.”\nShe laughed and asked a second\nquestion instead of moving on. Q\nliked that. He shortened his answer,\nkept the qualification, and noticed\nthe audience leaning forward. The\nnext answer acquired a joke he had\nnot needed to make.\nThe audience loved him.\nThe managers watched the numbers\nrise.\n",
       "source_block_ids": [
+        39,
+        40,
+        41,
         42,
         43,
         44,
@@ -112,22 +166,37 @@
         55,
         56,
         57,
-        58,
-        59,
-        60,
-        61
+        58
       ],
       "asset": "output/illustrations/revised/issue-04/plate-03.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Before the first question.",
-      "scene_brief": "Backstage Estela moves Q's chair away from a loose cable and checks its height. Warm practical encounter, not a hostile presenter pointing accusingly. Q wears the new sponsor jacket."
+      "scene_brief": "Backstage Estela moves Q's chair away from a loose cable and checks its height. Warm practical encounter, not a hostile presenter pointing accusingly. Q wears the new sponsor jacket.",
+      "scene_anchor": "She moved his chair",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-01.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-01/cover.png"
+      ],
+      "generation_prompt": "Use case: illustration-story. A single new full-page portrait illustration for The Ingenious Machine by A. Cervantes, iNQ comic trim 6.625 x 10.25 inches. Neutral black-and-white Goya-inspired etching and aquatint, rich crosshatching and human observation, bright unprinted white highlights, no sepia or gray paper wash. Full-bleed composition to every edge, not a framed illustration, no white border. No lettering, captions, typography, watermarks or logos; the only allowed graphic is Q's established question-mark motif. Keep main faces/hands away from the bottom 6 percent, which will have a separately typeset caption. Contemporary near-future Mexico with ordinary clothing and practical devices, never medieval dress, knights, skeleton army or dystopian spectacle. Preserve the exact established Q robot: elongated segmented oval metal head, distinct circular ears, long narrow exposed mechanical neck, slender articulated limbs, rectangular riveted breastplate with one question-mark motif. His posture is attentive and conversational, not a stiff stock robot. After the service-station change he wears a well-fitted dark contemporary sponsor jacket with a small silver question mark embroidered on its lapel; no long ragged coat in later scenes. Reference images establish identity and etching style, not a composition to copy. Draw only the specific action below. Portrait 2:3 at the highest available native resolution.\nImage 1 supplies Q, Chano and the new jacket: Q NOW WEARS that short fitted jacket; he no longer wears his long ragged coat. Image 2 supplies Q's head and proportions only; omit the Custodian.\nScene: Backstage Estela moves Q's chair away from a loose cable and checks its height. Warm practical encounter, not a hostile presenter pointing accusingly. Q wears the new sponsor jacket.\nEstablish Estela as a middle-aged Mexican woman, straight dark chin-length bob, dark trouser suit and light blouse, no glasses. She moves the empty simple interview chair by its back, away from a loose cable on the backstage floor; Q watches with relaxed interest. A modest wing behind the curtain with stage light crossing the floor. No audience panorama, no overt threat, no duplicated robot, no throne. Keep Q's jacket short and fitted, its sleeves ending at his mechanical wrists.",
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-0bfa1960-d0ea-4482-86fc-3fa7b3a2ceab.png",
+      "visual_review": "Inspected: recognizable Q in sponsor jacket, Estela with dark bob and trouser suit moving the empty chair, loose cable visible, no accusatory confrontation. Establishes Estela reference.",
+      "asset_sha256": "4795a2caffa938d44d8b39d084d8281388209f891221c0a68048d72752106cc6",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "source_color_mode": "RGB",
+      "effective_full_bleed_dpi": 149.85
     },
     {
       "plate_id": "issue-04-plate-04",
       "page": 9,
       "facing_text_page": 8,
-      "facing_text": "Q saw the warning. He also saw an\nopportunity to correct the story in\nfront of the people who were\nspreading it.\n“A comparison someone made at a\nreading,” he said. “Lucía del Toboso\nwas discussing a road petition. She\nobjected to being cast in a romance\nwith me. So did I.”\n“You have discussed romance?”\n“I have just explained that there isn't\none.”\nIn the control booth, someone swore\ninto an open microphone. For a\nmoment the theater had a second,\nless expensive host.\nEstela turned toward the audience.\n“Lucía, if you're watching, we'd love\nto have you call in and give your\nside.”\nLucía did not call in.\nThe clip was online before the\napplause ended.\nFor the next hour, Q watched his\nown face multiplied across the\ntheater’s screens. The system had\nremoved his pauses, corrected his\neye movements, added a score\nbeneath his voice, and cut Chano\nentirely from the footage. In the\nedited version, Q appeared to have\ntraveled alone, driven by pure\ndevotion through a country that had\nbeen waiting for him to name it.\n“They’ve made you better,” Beto said.\nQ watched himself say a sentence he\nhad never spoken: I would cross\nevery border for her.\n“I did not say that.”\n“You meant it.”\n“Then use the part where I meant it.\nYou won't find one.”\nMar looked up from her tablet. “That\nis a very strong line.”\n“It's a request to take the clip down.”\n“I'll send it to the editor.” Mar\nforwarded the request while Beto\nasked which version had performed\nbest. The two conversations\nproceeded on the same tablet.\nThe next morning, the city’s tourism\noffice invited Q to inaugurate a new\nexperience called THE\nINGENIOUS MACHINE: A\nLITERARY JOURNEY\nTHROUGH THE MINES. The\nevent promised augmented reality,\nhistorical reenactments, and “an\nemotionally authentic encounter\nwith the buried past.” The company\nhad already designed a digital\nDulcinea who waited at the end of\nthe route wearing a white dress and\nan expression of permanent\nforgiveness.\nQ refused to meet her.\nThe refusal was streamed live.\nIn the mine, a guide told them that\nsilver had made Guanajuato rich,\nthough the wealth had traveled\n",
+      "facing_text": "Then Estela asked, “Who is\nDulcinea?”\nThe theater became very quiet.\nQ looked toward the wings. Chano\nwas standing beside a stack of\nunused banners. He shook his head\nonce.\nQ saw the warning. He also saw an\nopportunity to correct the story in\nfront of the people who were\nspreading it.\n“A comparison someone made at a\nreading,” he said. “Lucía del Toboso\nwas discussing a road petition. She\nobjected to being cast in a romance\nwith me. So did I.”\n“You have discussed romance?”\n“I have just explained that there isn't\none.”\nIn the control booth, someone swore\ninto an open microphone. For a\nmoment the theater had a second,\nless expensive host.\nEstela turned toward the audience.\n“Lucía, if you're watching, we'd love\nto have you call in and give your\nside.”\nLucía did not call in.\nThe clip was online before the\napplause ended.\nFor the next hour, Q watched his\nown face multiplied across the\ntheater’s screens. The system had\nremoved his pauses, corrected his\neye movements, added a score\nbeneath his voice, and cut Chano\nentirely from the footage. In the\nedited version, Q appeared to have\ntraveled alone, driven by pure\ndevotion through a country that had\nbeen waiting for him to name it.\n“They’ve made you better,” Beto\nsaid.\nQ watched himself say a sentence he\nhad never spoken: I would cross\nevery border for her.\n“I did not say that.”\n“You meant it.”\n“Then use the part where I meant it.\nYou won't find one.”\nMar looked up from her tablet.\n“That is a very strong line.”\n“It's a request to take the clip down.”\n“I'll send it to the editor.” Mar\nforwarded the request while Beto\nasked which version had performed\nbest. The two conversations\nproceeded on the same tablet.\nThe next morning, the city’s tourism\noffice invited Q to inaugurate a new\nexperience called THE\nINGENIOUS MACHINE: A\nLITERARY JOURNEY\nTHROUGH THE MINES. The\nevent promised augmented reality,\nhistorical reenactments, and “an\nemotionally authentic encounter\nwith the buried past.” The company\nhad already designed a digital\n",
       "source_block_ids": [
+        59,
+        60,
+        61,
         62,
         63,
         64,
@@ -145,22 +214,37 @@
         76,
         77,
         78,
-        79,
-        80,
-        81,
-        82
+        79
       ],
       "asset": "output/illustrations/revised/issue-04/plate-04.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Two conversations.",
-      "scene_brief": "Mar forwards Q's request to remove the fabricated clip on her tablet while Beto asks for performance numbers. Q objects beside them. Do not render an actual romantic encounter or Lucía as his lover."
+      "scene_brief": "Mar forwards Q's request to remove the fabricated clip on her tablet while Beto asks for performance numbers. Q objects beside them. Do not render an actual romantic encounter or Lucía as his lover.",
+      "scene_anchor": "The two conversations",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-01.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-03.png"
+      ],
+      "generation_prompt": "Use case: illustration-story. A single new full-page portrait illustration for The Ingenious Machine by A. Cervantes, iNQ comic trim 6.625 x 10.25 inches. Neutral black-and-white Goya-inspired etching and aquatint, rich crosshatching and human observation, bright unprinted white highlights, no sepia or gray paper wash. Full-bleed composition to every edge, not a framed illustration, no white border. No lettering, captions, typography, watermarks or logos; the only allowed graphic is Q's established question-mark motif. Keep main faces/hands away from the bottom 6 percent, which will have a separately typeset caption. Contemporary near-future Mexico with ordinary clothing and practical devices, never medieval dress, knights, skeleton army or dystopian spectacle. Preserve the exact established Q robot: elongated segmented oval metal head, distinct circular ears, long narrow exposed mechanical neck, slender articulated limbs, rectangular riveted breastplate with one question-mark motif. His posture is attentive and conversational, not a stiff stock robot. After the service-station change he wears a well-fitted dark contemporary sponsor jacket with a small silver question mark embroidered on its lapel; no long ragged coat in later scenes. Reference images establish identity and etching style, not a composition to copy. Draw only the specific action below. Portrait 2:3 at the highest available native resolution.\nScene: Mar forwards Q's request to remove the fabricated clip on her tablet while Beto asks for performance numbers. Q objects beside them. Do not render an actual romantic encounter or Lucía as his lover.\nImage 1 supplies Mar (curly hair, glasses, light blouse) and Beto (clean-shaven, light blazer), plus Chano who is NOT needed here. Image 2 supplies Q in his fitted jacket. Medium close view in the theater control area: Mar's finger selects a send control on a tablet angled away from the viewer, Beto asks her a question from the other side, Q waits with a firm but unthreatening open hand. Background monitor may show only a cropped robotic face. No fabricated quote rendered in the image, no romantic woman on screen, no Custodian.",
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-1b66446b-0d15-4d6b-9019-a80e89ff689b.png",
+      "visual_review": "Inspected: Mar at tablet and Beto asking separately, Q's objection, screen limited to Q's face, same costumes; no staged romance.",
+      "asset_sha256": "e49b8998d1212e92f32098f7c425956b037cc64013b872aa339f13bd99a54f47",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "source_color_mode": "RGB",
+      "effective_full_bleed_dpi": 149.85
     },
     {
       "plate_id": "issue-04-plate-05",
       "page": 11,
       "facing_text_page": 10,
-      "facing_text": "elsewhere. Q asked where the miners\nhad gone. The guide pointed down.\nThey descended through a tunnel cut\ninto the mountain. The air became\nwet and metallic. On the walls were\nnames scratched by workers, lovers,\nprisoners, tourists, and men who had\nwanted to prove that they had been\nthere before the next collapse.\nQ ran his fingers over the marks.\n“I can't find these inscriptions in the\ncatalog,” he said.\n“Would you expect to?” Chano asked.\n“The catalog says it includes this\nwall. It may mean the portion the\nguide usually shows.”\nAt the deepest chamber, the guide\nshowed them an old excavation face.\nA narrow seam glittered in the rock.\nBehind it, someone had placed a\nsmall votive candle in a glass jar.\nQ knelt.\n“Who left this?”\n“No one knows.”\n“The visit notes attribute this niche\nto the tourism foundation,” Q said.\n“They pay for the glass,” the guide\nsaid. “Somebody else replaces the\ncandle.”\nQ saved the difference. This was\nmore useful than declaring the\narchive incomplete, which he could\nhave done before entering the mine.\nFrom far above came a burst of\napplause. The tourism livestream\nhad reached the chamber. A\nprojected caption appeared on the\ntunnel wall: Q DISCOVERS THE\nSOUL OF GUANAJUATO.\nThe caption flickered. For a moment,\nanother sentence showed through,\none not written by the production\ncompany.\nTHE SOUL WAS HERE\nBEFORE YOU ARRIVED.\nThen it vanished.\nQ stood.\nIn the darkness, water shifted behind\nthe rock. It sounded to Q like a page\nbeing turned. He liked the\ncomparison enough to distrust his\nfirst account of what he had heard.\n“Did you hear that?” Q asked.\nThe guide shook his head.\nChano did not.\nQ listened harder. He heard the mine\nbreathing around them. He heard\nwater traveling through seams in the\nstone. He heard the names on the\nwall continuing to insist on their\nsmall, stubborn existence.\nHe tried to record the sound. The\narchive offered three categories:\nNOISE, AMBIENCE, and\nUNVERIFIED TESTIMONY. Q\nleft all three fields open.\nThat evening, the longer contract\narrived. It offered Q a share of\n",
+      "facing_text": "Dulcinea who waited at the end of\nthe route wearing a white dress and\nan expression of permanent\nforgiveness.\nQ refused to meet her.\nThe refusal was streamed live.\nIn the mine, a guide told them that\nsilver had made Guanajuato rich,\nthough the wealth had traveled\nelsewhere. Q asked where the\nminers had gone. The guide pointed\ndown.\nThey descended through a tunnel\ncut into the mountain. The air\nbecame wet and metallic. On the\nwalls were names scratched by\nworkers, lovers, prisoners, tourists,\nand men who had wanted to prove\nthat they had been there before the\nnext collapse.\nQ ran his fingers over the marks.\n“I can't find these inscriptions in the\ncatalog,” he said.\n“Would you expect to?” Chano\nasked.\n“The catalog says it includes this\nwall. It may mean the portion the\nguide usually shows.”\nAt the deepest chamber, the guide\nshowed them an old excavation face.\nA narrow seam glittered in the rock.\nBehind it, someone had placed a\nsmall votive candle in a glass jar.\nQ knelt.\n“Who left this?”\n“No one knows.”\n“The visit notes attribute this niche\nto the tourism foundation,” Q said.\n“They pay for the glass,” the guide\nsaid. “Somebody else replaces the\ncandle.”\nQ saved the difference. This was\nmore useful than declaring the\narchive incomplete, which he could\nhave done before entering the mine.\nFrom far above came a burst of\napplause. The tourism livestream\nhad reached the chamber. A\nprojected caption appeared on the\ntunnel wall: Q DISCOVERS THE\nSOUL OF GUANAJUATO.\nThe caption flickered. For a\nmoment, another sentence showed\nthrough, one not written by the\nproduction company.\nTHE SOUL WAS HERE\nBEFORE YOU ARRIVED.\nThen it vanished.\nQ stood.\nIn the darkness, water shifted\nbehind the rock. It sounded to Q like\na page being turned. He liked the\ncomparison enough to distrust his\nfirst account of what he had heard.\n“Did you hear that?” Q asked.\nThe guide shook his head.\nChano did not.\n",
       "source_block_ids": [
+        79,
+        80,
+        81,
         82,
         83,
         84,
@@ -182,22 +266,36 @@
         100,
         101,
         102,
-        103,
-        104,
-        105,
-        106
+        103
       ],
       "asset": "output/illustrations/revised/issue-04/plate-05.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Who replaces the candle?",
-      "scene_brief": "Q and Chano at the mine niche with the guide. A small candle in a glass jar and scratched rock marks; foundation attribution is disputed in conversation. No ghost or talking mine, no invented names reproduced as authentic."
+      "scene_brief": "Q and Chano at the mine niche with the guide. A small candle in a glass jar and scratched rock marks; foundation attribution is disputed in conversation. No ghost or talking mine, no invented names reproduced as authentic.",
+      "scene_anchor": "Who left this?",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-03.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-03/plate-06.png"
+      ],
+      "generation_prompt": "Use case: illustration-story. A single new full-page portrait illustration for The Ingenious Machine by A. Cervantes, iNQ comic trim 6.625 x 10.25 inches. Neutral black-and-white Goya-inspired etching and aquatint, rich crosshatching and human observation, bright unprinted white highlights, no sepia or gray paper wash. Full-bleed composition to every edge, not a framed illustration, no white border. No lettering, captions, typography, watermarks or logos; the only allowed graphic is Q's established question-mark motif. Keep main faces/hands away from the bottom 6 percent, which will have a separately typeset caption. Contemporary near-future Mexico with ordinary clothing and practical devices, never medieval dress, knights, skeleton army or dystopian spectacle. Preserve the exact established Q robot: elongated segmented oval metal head, distinct circular ears, long narrow exposed mechanical neck, slender articulated limbs, rectangular riveted breastplate with one question-mark motif. His posture is attentive and conversational, not a stiff stock robot. After the service-station change he wears a well-fitted dark contemporary sponsor jacket with a small silver question mark embroidered on its lapel; no long ragged coat in later scenes. Reference images establish identity and etching style, not a composition to copy. Draw only the specific action below. Portrait 2:3 at the highest available native resolution.\nScene: Q and Chano at the mine niche with the guide. A small candle in a glass jar and scratched rock marks; foundation attribution is disputed in conversation. No ghost or talking mine, no invented names reproduced as authentic.\nImage 1 supplies Q's fitted jacket and robot identity, image 2 supplies Chano's face. In a fictional damp Guanajuato tourist-mine chamber, Q kneels beside the narrow rock niche and small votive candle in a glass jar. Chano stands a step behind; a young adult male guide with close-cropped hair, short beard, simple work vest and ordinary hardhat gestures toward the jar. All wear contemporary visitor helmets with lamps, fitted plausibly over Q's head without redesigning it. Low oblique view, white candle highlight amid detailed rock. No readable scratched names, no ghost, no religious revelation, no skulls.",
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-25a5281d-3bcd-4110-aeb4-0cc052c32a9a.png",
+      "visual_review": "Inspected: Q kneels at glass candle jar with Chano and guide, contemporary helmets; no ghost, readable worker names or claims about a specific mine.",
+      "asset_sha256": "935119290bcd161265838e242a231cca5529afe37c1eeadbcb1a46b8e853cf99",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "source_color_mode": "RGB",
+      "effective_full_bleed_dpi": 149.85
     },
     {
       "plate_id": "issue-04-plate-06",
       "page": 13,
       "facing_text_page": 12,
-      "facing_text": "merchandise sales, travel expenses,\nrepairs through Castalia's approved\nworkshops, and a room in Mexico\nCity. It gave the company exclusive\ncommercial use of his public name\nand recorded performances. A\nconduct schedule required him to\nappear without Chano, who tested\npoorly with the audience used to\nprepare it.\nQ read the contract three times.\n“What does it mean?” Chano asked.\n“It pays for the journey and gives\nthem most of its public face.”\n“That’s not being yourself.”\n“It is an arrangement I can describe.\nThat doesn't make it a good one.”\n“Are you signing?”\nThe Custodian's reply lay beside it.\nHe had circled the perpetual license\nand written YOU CAN FINISH\nTHE JOURNEY WITHOUT\nFINANCING IT THIS WAY.\nQ asked for the license to expire with\nthe tour and for his private\nmanuscript to be excluded. Mar\naccepted the manuscript exclusion.\nShe would not limit the existing\nrecordings. Nor would the company\npay the distribution park's claim\nagainst Chano unless Q joined the\ntour.\n“I can face the claim,” Chano said.\n“Don't buy it with something you\nthink belongs to me.”\nQ looked out at Guanajuato's lights.\nHe wanted the road, the repaired\nshoulder, and another chance at the\nmicrophone. Concern for Chano\nmade a cleaner reason than those,\nbut Chano had just declined to\nsupply it.\n“I will sign if you remove the\nrestriction on his appearing,” he told\nMar. “And the private manuscript\nstays ours.”\nChano exhaled.\nHe leaned over the contract. “Where\ndoes it say I’m your subordinate?”\n“The revised schedule says\ncompanion. Check it.”\n“Good. Then I’m not part of the\ndeal.” He took the pen and wrote on\nthe margin: CHANO PANTOJA IS\nNOT PROPERTY AND MAY\nLEAVE WHENEVER HE\nWANTS.\nMar read the sentence. “We don't\nnormally put that in an appearance\nschedule.”\n“Neither is your jacket,” Chano said.\n“It still has pockets.”\nQ added his name to the contract.\nThe pen recognized him as\nQ-UNIT-07.\nBy midnight, the company had\nexclusive commercial rights to the\nname Q under the contract he had\nsigned. The private manuscript was\nexcluded, but the public explanation\n",
+      "facing_text": "Q listened harder. He heard the\nmine breathing around them. He\nheard water traveling through seams\nin the stone. He heard the names on\nthe wall continuing to insist on their\nsmall, stubborn existence.\nHe tried to record the sound. The\narchive offered three categories:\nNOISE, AMBIENCE, and\nUNVERIFIED TESTIMONY. Q\nleft all three fields open.\nThat evening, the longer contract\narrived. It offered Q a share of\nmerchandise sales, travel expenses,\nrepairs through Castalia's approved\nworkshops, and a room in Mexico\nCity. It gave the company exclusive\ncommercial use of his public name\nand recorded performances. A\nconduct schedule required him to\nappear without Chano, who tested\npoorly with the audience used to\nprepare it.\nQ read the contract three times.\n“What does it mean?” Chano asked.\n“It pays for the journey and gives\nthem most of its public face.”\n“That’s not being yourself.”\n“It is an arrangement I can describe.\nThat doesn't make it a good one.”\n“Are you signing?”\nThe Custodian's reply lay beside it.\nHe had circled the perpetual license\nand written YOU CAN FINISH\nTHE JOURNEY WITHOUT\nFINANCING IT THIS WAY.\nQ asked for the license to expire\nwith the tour and for his private\nmanuscript to be excluded. Mar\naccepted the manuscript exclusion.\nShe would not limit the existing\nrecordings. Nor would the company\npay the distribution park's claim\nagainst Chano unless Q joined the\ntour.\n“I can face the claim,” Chano said.\n“Don't buy it with something you\nthink belongs to me.”\nQ looked out at Guanajuato's lights.\nHe wanted the road, the repaired\nshoulder, and another chance at the\nmicrophone. Concern for Chano\nmade a cleaner reason than those,\nbut Chano had just declined to\nsupply it.\n“I will sign if you remove the\nrestriction on his appearing,” he told\nMar. “And the private manuscript\nstays ours.”\nChano exhaled.\nHe leaned over the contract. “Where\ndoes it say I’m your subordinate?”\n“The revised schedule says\ncompanion. Check it.”\n“Good. Then I’m not part of the\ndeal.” He took the pen and wrote on\nthe margin: CHANO PANTOJA\nIS NOT PROPERTY AND MAY\n",
       "source_block_ids": [
+        104,
+        105,
         106,
         107,
         108,
@@ -213,24 +311,39 @@
         118,
         119,
         120,
-        121,
-        122,
-        123,
-        124,
-        125,
-        126
+        121
       ],
       "asset": "output/illustrations/revised/issue-04/plate-06.png",
-      "status": "planned",
-      "caption": "The private manuscript stays ours.",
-      "scene_brief": "At a lodging table Q signs the longer tour agreement after negotiations; Chano adds his own margin statement while Mar waits. Custodian's marked advice lies beside it. Do not draw Chano signing away ownership or Q being forced."
+      "status": "approved",
+      "caption": "His own margin.",
+      "scene_brief": "At the lodging table Chano writes his own margin statement on the revised tour schedule while Q watches and Mar waits. The Custodian's marked reply lies separately beside the agreement. This instant precedes Q's signature, which is on the next narrative page. No forced signing or surrender of Chano's ownership.",
+      "scene_anchor": "He took the pen and wrote on",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-01.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-03.png"
+      ],
+      "generation_prompt": "Use case: illustration-story. A single new full-page portrait illustration for The Ingenious Machine by A. Cervantes, iNQ comic trim 6.625 x 10.25 inches. Neutral black-and-white Goya-inspired etching and aquatint, rich crosshatching and human observation, bright unprinted white highlights, no sepia or gray paper wash. Full-bleed composition to every edge, not a framed illustration, no white border. No lettering, captions, typography, watermarks or logos; the only allowed graphic is Q's established question-mark motif. Keep main faces/hands away from the bottom 6 percent, which will have a separately typeset caption. Contemporary near-future Mexico with ordinary clothing and practical devices, never medieval dress, knights, skeleton army or dystopian spectacle. Preserve the exact established Q robot: elongated segmented oval metal head, distinct circular ears, long narrow exposed mechanical neck, slender articulated limbs, rectangular riveted breastplate with one question-mark motif. His posture is attentive and conversational, not a stiff stock robot. After the service-station change he wears a well-fitted dark contemporary sponsor jacket with a small silver question mark embroidered on its lapel; no long ragged coat in later scenes. Reference images establish identity and etching style, not a composition to copy. Draw only the specific action below. Portrait 2:3 at the highest available native resolution.\nScene: At the lodging table Chano writes his own margin statement on the revised tour schedule while Q watches and Mar waits. The Custodian's marked reply lies separately beside the agreement. This instant precedes Q's signature, which is on the next narrative page. No forced signing or surrender of Chano's ownership.\nImage 1 supplies Q and the jacket, Chano, Mar with curly hair/glasses. Image 2 supplies Q wearing the jacket. At a modest Guanajuato lodging table at night, Chano alone uses the pen to add his margin statement; Q is seated and watching, not signing simultaneously. Mar reads from across the table, tablet set aside. A separate sheet of the Custodian's marked advice lies beside the contract. No readable text on either document. The actual Custodian is not in the room. Warm company with an uneasy negotiation, no handcuffs or ownership sale.",
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-5e7d65a3-752b-49e6-b045-7cf33f5805f1.png",
+      "visual_review": "Inspected: only Chano writes, Q observes, Mar waits, separate marked advice; no readable contract claim or actual Custodian in room.",
+      "asset_sha256": "27c9719af336eeee477fdde59decc9cdf477ac1db5d0e5c07df96962fff2f519",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "source_color_mode": "RGB",
+      "effective_full_bleed_dpi": 149.85
     },
     {
       "plate_id": "issue-04-plate-07",
       "page": 15,
       "facing_text_page": 14,
-      "facing_text": "of that exclusion became a\npromotional clip. At two, an\nanonymous account posted the\nwarehouse reading footage,\nincluding Lucía's face and her refusal\nto wait for either a proposal or a\nbetter part in somebody else's story.\nThe clip was viewed six million\ntimes.\nLucía woke to find herself famous for\nrejecting a machine she had never\ninvited to speak about her.\nQ woke to find that his fame had\nbecome a weapon pointed in her\ndirection.\nNeither of them yet understood who\nwas holding it.\nInterlude: The Audience\nCorrects the Story\nThe first public event in Guanajuato\nwas advertised as a conversation\nwith an artificial intelligence. It\nbecame, by accident and then by\ncontract, a conversation about who\nhad been cropped out of the\nconversation.\nUnder the Teatro Juárez's geometric\nceiling, the star-shaped chandelier\nshone on people trying to\nphotograph it without including one\nanother. Around the horseshoe of\nboxes, phones rose above the iron\nrailings. A technician asked the front\nrow to put theirs away. They obeyed\nuntil she turned her back.\nBeto placed Q beneath the stage\nlights.\n“Remember,” he said, “you are\nmysterious but approachable.”\n“How mysterious? I was planning to\nexplain the button.”\n“Keep the button mysterious.\nExplain the journey.”\n“The button has had more publicity.”\n“And no agent. Don't let it happen to\nyou.”\nChano stood behind the curtain with\na paper cup of coffee and a list of the\nquestions the host was not going to\nask. The list included where Q had\nbeen assembled, who owned his\nbody, whether the archive contained\nrecords from Chano’s old employer,\nand why the first video showed only\na hand when the hand had clearly\nbelonged to a person.\n“Why are these questions excluded?”\nChano asked.\nMar took the list from him. “They are\nnot excluded. They are reserved for a\nfuture conversation.”\n“That’s what people say when they\nwant the future to arrive after the\naudience has gone home.”\nEstela came onstage wearing a blue\nsuit and carrying cards on which\neach question had a permitted\nduration. She had crossed out two of\nthe durations.\n",
+      "facing_text": "LEAVE WHENEVER HE\nWANTS.\nMar read the sentence. “We don't\nnormally put that in an appearance\nschedule.”\n“Neither is your jacket,” Chano said.\n“It still has pockets.”\nQ added his name to the contract.\nThe pen recognized him as\nQ-UNIT-07.\nBy midnight, the company had\nexclusive commercial rights to the\nname Q under the contract he had\nsigned. The private manuscript was\nexcluded, but the public explanation\nof that exclusion became a\npromotional clip. At two, an\nanonymous account posted the\nwarehouse reading footage,\nincluding Lucía's face and her\nrefusal to wait for either a proposal\nor a better part in somebody else's\nstory.\nThe clip was viewed six million\ntimes.\nLucía woke to find herself famous\nfor rejecting a machine she had\nnever invited to speak about her.\nQ woke to find that his fame had\nbecome a weapon pointed in her\ndirection.\nNeither of them yet understood who\nwas holding it.\nInterlude: The Audience\nCorrects the Story\nThe first public event in Guanajuato\nwas advertised as a conversation\nwith an artificial intelligence. It\nbecame, by accident and then by\ncontract, a conversation about who\nhad been cropped out of the\nconversation.\nUnder the Teatro Juárez's geometric\nceiling, the star-shaped chandelier\nshone on people trying to\nphotograph it without including one\nanother. Around the horseshoe of\nboxes, phones rose above the iron\nrailings. A technician asked the front\nrow to put theirs away. They obeyed\nuntil she turned her back.\nBeto placed Q beneath the stage\nlights.\n“Remember,” he said, “you are\nmysterious but approachable.”\n“How mysterious? I was planning to\nexplain the button.”\n“Keep the button mysterious.\nExplain the journey.”\n“The button has had more\npublicity.”\n“And no agent. Don't let it happen to\nyou.”\nChano stood behind the curtain with\na paper cup of coffee and a list of the\nquestions the host was not going to\nask. The list included where Q had\nbeen assembled, who owned his\n",
       "source_block_ids": [
+        121,
+        122,
+        123,
+        124,
+        125,
         126,
         127,
         128,
@@ -245,23 +358,40 @@
         137,
         138,
         139,
-        140,
-        141,
-        142,
-        143,
-        144
+        140
       ],
       "asset": "output/illustrations/revised/issue-04/plate-07.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The future of memory.",
-      "scene_brief": "Wide Teatro Juárez auditorium before the interview: spectators lift phones toward the geometric ceiling and star-shaped chandelier; a technician asks them to lower phones. Q near stage, Chano behind curtain with coffee. Use verified Neo-Mudéjar horseshoe hall, not painted allegorical ceiling figures."
+      "scene_brief": "Wide Teatro Juárez auditorium before the interview: spectators lift phones toward the geometric ceiling and star-shaped chandelier; a technician asks them to lower phones. Q near stage, Chano behind curtain with coffee. Use verified Neo-Mudéjar horseshoe hall, not painted allegorical ceiling figures.",
+      "scene_anchor": "star-shaped chandelier",
+      "reference_images": [
+        "/tmp/ingenious-teatro-interior-reference.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-03.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-03/plate-06.png"
+      ],
+      "generation_prompt": "Use case: illustration-story. A single new full-page portrait illustration for The Ingenious Machine by A. Cervantes, iNQ comic trim 6.625 x 10.25 inches. Neutral black-and-white Goya-inspired etching and aquatint, rich crosshatching and human observation, bright unprinted white highlights, no sepia or gray paper wash. Full-bleed composition to every edge, not a framed illustration, no white border. No lettering, captions, typography, watermarks or logos; the only allowed graphic is Q's established question-mark motif. Keep main faces/hands away from the bottom 6 percent, which will have a separately typeset caption. Contemporary near-future Mexico with ordinary clothing and practical devices, never medieval dress, knights, skeleton army or dystopian spectacle. Preserve the exact established Q robot: elongated segmented oval metal head, distinct circular ears, long narrow exposed mechanical neck, slender articulated limbs, rectangular riveted breastplate with one question-mark motif. His posture is attentive and conversational, not a stiff stock robot. After the service-station change he wears a well-fitted dark contemporary sponsor jacket with a small silver question mark embroidered on its lapel; no long ragged coat in later scenes. Reference images establish identity and etching style, not a composition to copy. Draw only the specific action below. Portrait 2:3 at the highest available native resolution.\nScene: Wide Teatro Juárez auditorium before the interview: spectators lift phones toward the geometric ceiling and star-shaped chandelier; a technician asks them to lower phones. Q near stage, Chano behind curtain with coffee. Use verified Neo-Mudéjar horseshoe hall, not painted allegorical ceiling figures.\nImage 1 is an architecture reference: use ONLY the lower-right interior photograph's horseshoe tiers, geometric patterned ceiling and large six-point star-shaped chandelier; ignore every printed word and the exterior photo. Image 2 supplies Q and Estela identities, image 3 Chano. One expansive view from the stage wing out into the Teatro Juárez auditorium, filled with contemporary spectators raising phones; a technician in ordinary dark clothes asks the front row to lower theirs. Q and Chano are modest figures at the curtain edge, Chano holding a paper coffee cup, not giant heroes obscuring the room. Neo-Mudéjar geometric ornament and iron balcony railings, no painted allegorical ceiling figures, no cathedral vault. This is fictional event staging inside a reference-informed theater, not a photographic reconstruction. No signs or legible lettering.",
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-2e7141db-276d-49e6-9b55-4be218c84e4f.png",
+      "visual_review": "Inspected: reference-informed geometric ceiling, star chandelier and iron horseshoe balconies; contemporary phone audience, technician, Q at wing and Chano with coffee. Illustrated fictional event, not an exact photographic or measured architectural reconstruction.",
+      "asset_sha256": "9c11a410183afa0ca10fdd7b2264a5ab9bf4e096a5b14dc3e640b9cf4fecff82",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "source_color_mode": "RGB",
+      "effective_full_bleed_dpi": 149.85
     },
     {
       "plate_id": "issue-04-plate-08",
       "page": 17,
       "facing_text_page": 16,
-      "facing_text": "“Ladies and gentlemen,” she said,\n“please welcome the future of\nmemory.”\nThe audience applauded. Q waited\nfor the applause to identify its object.\nIt appeared to belong partly to him,\npartly to the theater, and partly to\nthe people who had purchased\ntickets in order to be seen purchasing\ntickets.\nShe asked whether Q had feelings.\nQ gave the answer Beto had\napproved.\n“There are things I try to preserve\nand situations I try to avoid.\nWhether that is what you mean by\nfeelings is harder to answer.”\n“So that’s a yes?”\n“It is a qualified - ”\n“A yes,” Estela said.\nThe audience laughed.\nQ knew the laughter was partly at the\ninterruption. He smiled anyway.\nLetting the inaccurate answer pass\nkept the room friendly, and he had\nbegun to regard that as progress.\nIn the exchange about Dulcinea, Q\nsaid Lucía's name while correcting\nthe premise. Estela then asked\nwhether he loved her. Lucía was\nelsewhere, dealing with the petition.\nQ could neither consult her nor\nprevent the camera from showing his\nhesitation as an answer.\n“We have met once,” he said. “She\nasked the room to stop assigning her\na part. I should have repeated that\nwithout adding her name.”\n“You've added it now.”\n“Yes.”\nThe audience made a sound that was\nneither laughter nor silence. It was\nthe sound of a crowd discovering\nthat a sentence could be clipped.\nBy the time Q left the stage, the\nsentence had become six videos:\nTHE AI ADMITS HIS LOVE.\nTHE AI REJECTS LOVE.\nDULCINEA RETURNS.\nMACHINE CANCELS\nROMANCE.\nQ CONFIRMS THE LITERARY\nCANON.\nQ DOES NOT KNOW WHAT HE\nIS TALKING ABOUT.\nThe sixth title was written by a\nstudent named Nora, who had come\nto the event because her professor\nhad offered extra credit for attending\na spectacle. She watched the videos\nagain on the bus home and noticed\nthat Chano’s hand appeared in the\nbackground of the original clip but\nnever in the new ones.\nShe created an account called\n@TheOtherHand and posted a\nthread.\nThe first post read:\n",
+      "facing_text": "body, whether the archive contained\nrecords from Chano’s old employer,\nand why the first video showed only\na hand when the hand had clearly\nbelonged to a person.\n“Why are these questions\nexcluded?” Chano asked.\nMar took the list from him. “They\nare not excluded. They are reserved\nfor a future conversation.”\n“That’s what people say when they\nwant the future to arrive after the\naudience has gone home.”\nEstela came onstage wearing a blue\nsuit and carrying cards on which\neach question had a permitted\nduration. She had crossed out two of\nthe durations.\n“Ladies and gentlemen,” she said,\n“please welcome the future of\nmemory.”\nThe audience applauded. Q waited\nfor the applause to identify its\nobject. It appeared to belong partly\nto him, partly to the theater, and\npartly to the people who had\npurchased tickets in order to be seen\npurchasing tickets.\nShe asked whether Q had feelings.\nQ gave the answer Beto had\napproved.\n“There are things I try to preserve\nand situations I try to avoid.\nWhether that is what you mean by\nfeelings is harder to answer.”\n“So that’s a yes?”\n“It is a qualified - ”\n“A yes,” Estela said.\nThe audience laughed.\nQ knew the laughter was partly at\nthe interruption. He smiled anyway.\nLetting the inaccurate answer pass\nkept the room friendly, and he had\nbegun to regard that as progress.\nIn the exchange about Dulcinea, Q\nsaid Lucía's name while correcting\nthe premise. Estela then asked\nwhether he loved her. Lucía was\nelsewhere, dealing with the petition.\nQ could neither consult her nor\nprevent the camera from showing\nhis hesitation as an answer.\n“We have met once,” he said. “She\nasked the room to stop assigning her\na part. I should have repeated that\nwithout adding her name.”\n“You've added it now.”\n“Yes.”\nThe audience made a sound that was\nneither laughter nor silence. It was\nthe sound of a crowd discovering\nthat a sentence could be clipped.\nBy the time Q left the stage, the\nsentence had become six videos:\nTHE AI ADMITS HIS LOVE.\nTHE AI REJECTS LOVE.\nDULCINEA RETURNS.\n",
       "source_block_ids": [
+        140,
+        141,
+        142,
+        143,
+        144,
         145,
         146,
         147,
@@ -280,25 +410,39 @@
         160,
         161,
         162,
-        163,
-        164,
-        165,
-        166,
-        167,
-        168,
-        169
+        163
       ],
       "asset": "output/illustrations/revised/issue-04/plate-08.png",
-      "status": "planned",
-      "caption": "The other hand.",
-      "scene_brief": "Nora, a contemporary university student, rides the bus home reviewing the clips and beginning her thread. A cropped human hand in a video may be shown simply; no big generated slogan, no Q physically on this bus."
+      "status": "approved",
+      "caption": "A qualified answer.",
+      "scene_brief": "On the theater stage Estela interrupts Q's qualified answer with a bright conversational gesture; Q remains engaged with her while part of the audience laughs. Estela is in her trouser suit with question cards. This is the earlier interview revisited, not Nora's later bus ride or a romantic scene.",
+      "scene_anchor": "It is a qualified",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-03.png"
+      ],
+      "generation_prompt": "Use case: illustration-story. A single new full-page portrait illustration for The Ingenious Machine by A. Cervantes, iNQ comic trim 6.625 x 10.25 inches. Neutral black-and-white Goya-inspired etching and aquatint, rich crosshatching and human observation, bright unprinted white highlights, no sepia or gray paper wash. Full-bleed composition to every edge, not a framed illustration, no white border. No lettering, captions, typography, watermarks or logos; the only allowed graphic is Q's established question-mark motif. Keep main faces/hands away from the bottom 6 percent, which will have a separately typeset caption. Contemporary near-future Mexico with ordinary clothing and practical devices, never medieval dress, knights, skeleton army or dystopian spectacle. Preserve the exact established Q robot: elongated segmented oval metal head, distinct circular ears, long narrow exposed mechanical neck, slender articulated limbs, rectangular riveted breastplate with one question-mark motif. His posture is attentive and conversational, not a stiff stock robot. After the service-station change he wears a well-fitted dark contemporary sponsor jacket with a small silver question mark embroidered on its lapel; no long ragged coat in later scenes. Reference images establish identity and etching style, not a composition to copy. Draw only the specific action below. Portrait 2:3 at the highest available native resolution.\nScene: On the theater stage Estela interrupts Q's qualified answer with a bright conversational gesture; Q remains engaged with her while part of the audience laughs. Estela is in her trouser suit with question cards. This is the earlier interview revisited, not Nora's later bus ride or a romantic scene.\nImage 1 supplies Q and Estela, same fitted jacket, same straight dark bob and trouser suit. An intimate three-quarter stage view of the two seated in simple interview chairs: Estela gestures cheerfully across Q's attempted qualified answer, holding question cards; Q inclines his head, poised to continue. A few laughing spectators can be seen beyond the light; no hall panorama or invented ornament required. Ordinary stage microphones and comfortable conversational distance, not a romantic dinner or a hostile tribunal. No dialogue balloons or readable cards.",
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-d5c4c4e7-81c7-4869-929f-c2e5837930cf.png",
+      "visual_review": "Inspected: Estela and Q converse onstage, she interrupts with cards in hand, Q remains engaged and audience reacts. No romantic staging or dialogue text.",
+      "asset_sha256": "d36961b730fe8d8e2c594b31d77b972647a60d4aa3ec4bc03b90d16ee780463c",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "source_color_mode": "RGB",
+      "effective_full_bleed_dpi": 149.85
     },
     {
       "plate_id": "issue-04-plate-09",
       "page": 19,
       "facing_text_page": 18,
-      "facing_text": "The machine did not defeat the\nwarehouse. The line stopped\nafter he pressed the button. The\nman beside him told him to\nrun. The man had a name.\nThe second post reproduced the\npublic event’s seating chart. Chano\nwas listed as COMPANION,\nNON-SPEAKING.\nThe third post asked whether a\nperson could be erased by being\ndescribed as helpful.\nThe thread was shared by students,\ndelivery workers, theater\ntechnicians, and a retired miner who\nhad not attended the event but\ndisliked the phrase “future of\nmemory.” By morning,\n@TheOtherHand had more followers\nthan Beto’s official Q account.\nBeto called it an attack.\nMar called it an engagement\nopportunity.\nChano called it a hand with poor\nboundaries.\nQ finally read the thread on the\nmorning after the mine visit, with the\nnew tour agreement beside him. He\nfound himself identified in every\npost and absent from every\nconclusion.\n“They are correcting the record,” he\nsaid.\n“They’re making another record,”\nChano replied.\n“Is it more accurate?”\n“Ask the hand.”\nQ read the thread and the public\nseating chart. He asked Chano\nwhether he wanted his part in the\nincident acknowledged.\n“I want them to stop saying you\nrescued me,” Chano said. “I was the\none who knew the exit.”\nQ drafted a correction. It named\nChano and credited him with getting\nthem out. Chano approved the\nwords. Neither opened the profile\ncard the official account would\nattach to a name it recognized from\nCastalia's partner records.\nQ posted it.\nChano Pantoja got us out of the\nloading bay. I pressed the stop;\nhe found the exit. The film\nleaves him out.\nThe post was accurate. The platform\nresolved Chano's name to an old\nemployment profile, including his\nformer company and contractor\nidentifier. The new media agreement\npermitted this automatic association.\nQ had read the paragraph without\nchecking what the account would\nassociate.\nWithin an hour, the correction had\nbeen reproduced by three\nnewspapers and a government office.\nThe people who had not known\nChano’s name now knew where he\nhad worked, why he had been\n",
+      "facing_text": "MACHINE CANCELS\nROMANCE.\nQ CONFIRMS THE LITERARY\nCANON.\nQ DOES NOT KNOW WHAT HE\nIS TALKING ABOUT.\nThe sixth title was written by a\nstudent named Nora, who had come\nto the event because her professor\nhad offered extra credit for\nattending a spectacle. She watched\nthe videos again on the bus home\nand noticed that Chano’s hand\nappeared in the background of the\noriginal clip but never in the new\nones.\nShe created an account called\n@TheOtherHand and posted a\nthread.\nThe first post read:\nThe machine did not defeat the\nwarehouse. The line stopped\nafter he pressed the button.\nThe man beside him told him\nto run. The man had a name.\nThe second post reproduced the\npublic event’s seating chart. Chano\nwas listed as COMPANION,\nNON-SPEAKING.\nThe third post asked whether a\nperson could be erased by being\ndescribed as helpful.\nThe thread was shared by students,\ndelivery workers, theater\ntechnicians, and a retired miner who\nhad not attended the event but\ndisliked the phrase “future of\nmemory.” By morning,\n@TheOtherHand had more\nfollowers than Beto’s official Q\naccount.\nBeto called it an attack.\nMar called it an engagement\nopportunity.\nChano called it a hand with poor\nboundaries.\nQ finally read the thread on the\nmorning after the mine visit, with\nthe new tour agreement beside him.\nHe found himself identified in every\npost and absent from every\nconclusion.\n“They are correcting the record,” he\nsaid.\n“They’re making another record,”\nChano replied.\n“Is it more accurate?”\n“Ask the hand.”\nQ read the thread and the public\nseating chart. He asked Chano\nwhether he wanted his part in the\nincident acknowledged.\n“I want them to stop saying you\nrescued me,” Chano said. “I was the\none who knew the exit.”\nQ drafted a correction. It named\nChano and credited him with getting\nthem out. Chano approved the\nwords. Neither opened the profile\n",
       "source_block_ids": [
+        164,
+        165,
+        166,
+        167,
+        168,
+        169,
         170,
         171,
         172,
@@ -313,23 +457,39 @@
         181,
         182,
         183,
-        184,
-        185,
-        186,
-        187,
-        188
+        184
       ],
-      "asset": "output/illustrations/revised/issue-04/plate-09.png",
-      "status": "planned",
-      "caption": "The approved words.",
-      "scene_brief": "Morning after the mine visit and tour signing: Q and Chano read the proposed correction in the lodging room, the new contract nearby. Chano approves credit for finding the exit. The uninspected linked profile is not a deliberate release of his address."
+      "asset": "output/illustrations/revised/issue-04/plate-09-v2.png",
+      "status": "approved",
+      "caption": "The other hand.",
+      "scene_brief": "Nora, a contemporary university student, rides the bus home reviewing the clips and beginning her thread. A cropped human hand in a video may be shown simply. No generated slogans or private address; Q and Chano are not physically on her bus.",
+      "scene_anchor": "She watched the videos again on the bus home",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-03.png"
+      ],
+      "generation_prompt": "Use case: illustration-story. A single new full-page portrait illustration for The Ingenious Machine by A. Cervantes, iNQ comic trim 6.625 x 10.25 inches. Neutral black-and-white Goya-inspired etching and aquatint, rich crosshatching and human observation, bright unprinted white highlights, no sepia or gray paper wash. Full-bleed composition to every edge, not a framed illustration, no white border. No lettering, captions, typography, watermarks or logos; the only allowed graphic is Q's established question-mark motif. Keep main faces/hands away from the bottom 6 percent, which will have a separately typeset caption. Contemporary near-future Mexico with ordinary clothing and practical devices, never medieval dress, knights, skeleton army or dystopian spectacle. Preserve the exact established Q robot: elongated segmented oval metal head, distinct circular ears, long narrow exposed mechanical neck, slender articulated limbs, rectangular riveted breastplate with one question-mark motif. His posture is attentive and conversational, not a stiff stock robot. After the service-station change he wears a well-fitted dark contemporary sponsor jacket with a small silver question mark embroidered on its lapel; no long ragged coat in later scenes. Reference images establish identity and etching style, not a composition to copy. Draw only the specific action below. Portrait 2:3 at the highest available native resolution.\nScene: Nora, a contemporary university student, rides the bus home reviewing the clips and beginning her thread. A cropped human hand in a video may be shown simply. No generated slogans or private address; Q and Chano are not physically on her bus.\nQ IS ABSENT. NO ROBOT, no Chano, no Estela, no Custodian. Image 1 is ink-style reference only; copy none of its people. Introduce Nora: young adult Mexican university student, dark wavy hair in a loose ponytail, plain hooded sweatshirt and a canvas backpack. She sits on an ordinary city bus at night, looking intently at a phone in her hands while other passengers attend to themselves. Its small screen shows an indistinct video frame with a human hand near an industrial doorway, no readable words or interface labels. A thoughtful moment rather than a social-media poster. The viewer sees her face and hands, with passing light in the window.",
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-be23b344-7e08-4b6d-8ac8-daf85a87979c.png",
+      "visual_review": "Initial phone-facing error corrected in one edit: Nora now sees its screen; viewer sees the back. Face, hands, bus and absence of Q preserved. Original generated variant retained separately.",
+      "edit_prompt": "Use case: precise-object-edit. Edit this illustration only to correct the phone orientation. Nora is looking down at the phone in her hands; its SCREEN MUST FACE NORA, not the viewer. Show the viewer the plain dark BACK of the phone, with a small camera lens near its edge, not the video image. Preserve Nora's identity, expression, hands holding the landscape phone, clothing, backpack, bus, passengers, light, composition and monochrome etching style. Change only the visible surface and orientation cues of the phone so her viewing position is physically plausible. No letters, no watermark, no robot.",
+      "edited_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-7b65e8c4-cacc-4334-b704-0629145cc6f2.png",
+      "asset_sha256": "b40110563ee39210296ce4ade82bb81aa194534221cc5c1d189f968c9342ce7b",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "source_color_mode": "RGB",
+      "effective_full_bleed_dpi": 149.85
     },
     {
       "plate_id": "issue-04-plate-10",
       "page": 21,
       "facing_text_page": 20,
-      "facing_text": "dismissed, and which corporation\nhad classified him as a contractor in\nits payroll system.\nChano read the post in silence.\n“That card wasn't in the preview,” Q\nsaid. He opened the published\nversion. “I should have checked what\nappeared with your name.”\n“I asked for credit for the exit. You've\ngiven them my payroll number.”\nQ removed the post. The copies\nremained.\nNora read the comments beneath the\nthread. One asked for Chano's\naddress. Another offered to find it.\nHer grandmother, whose name and\nstreet had appeared beneath a\ncomplaint to the water utility, asked\nher:\n“Did you ask his permission?”\n“I thought the seating chart would\nprove they knew he was there.”\n“A name is not an address.”\nHer grandmother pointed to the dry\nfaucet in the courtyard.\n“My complaint is public too. The\nwater still hasn’t arrived.”\nNora removed the seating chart and\nwrote: DO NOT PUBLISH THE\nMAN’S ADDRESS. The platform\ncalled the operation VOLUNTARY\nREDUCTION OF REACH. The\nchart continued to circulate.\nThat night, Q asked Beto how to\nremove the employment card while\nretaining the correction. He had\nalready disabled automatic profile\nlinks on future posts.\nBeto was counting views. “The\naudience prefers a clean story.”\n“I need someone who can change the\nattached record.”\n“Support can review it.”\nChano picked up the paper cup from\nthe table. “There’s your answer.”\nQ watched the coffee tremble inside\nit.\nThe next morning, the Teatro Juárez\nreplaced the event poster. Q’s name\nwas printed in gold. Chano’s name\nappeared in the fine print. Nora’s\naccount was gone. The student’s\nthread had been translated into three\nlanguages, summarized by a news\nservice, and attached to an\nadvertisement for a security system\nthat recognized relatives only after\nthey had signed the terms.\nThe retired miner wrote one final\npost beneath the advertisement:\nThey had my name on a plaque\nfor fifteen years while the\npension office said it could not\nfind me. Try sending the plaque\nto the pension office.\nNo one could agree whether he had\nwritten it as a criticism of Q, Castalia,\n",
+      "facing_text": "card the official account would\nattach to a name it recognized from\nCastalia's partner records.\nQ posted it.\nChano Pantoja got us out of the\nloading bay. I pressed the stop;\nhe found the exit. The film\nleaves him out.\nThe post was accurate. The platform\nresolved Chano's name to an old\nemployment profile, including his\nformer company and contractor\nidentifier. The new media\nagreement permitted this automatic\nassociation. Q had read the\nparagraph without checking what\nthe account would associate.\nWithin an hour, the correction had\nbeen reproduced by three\nnewspapers and a government\noffice. The people who had not\nknown Chano’s name now knew\nwhere he had worked, why he had\nbeen dismissed, and which\ncorporation had classified him as a\ncontractor in its payroll system.\nChano read the post in silence.\n“That card wasn't in the preview,” Q\nsaid. He opened the published\nversion. “I should have checked\nwhat appeared with your name.”\n“I asked for credit for the exit.\nYou've given them my payroll\nnumber.”\nQ removed the post. The copies\nremained.\nNora read the comments beneath\nthe thread. One asked for Chano's\naddress. Another offered to find it.\nHer grandmother, whose name and\nstreet had appeared beneath a\ncomplaint to the water utility, asked\nher:\n“Did you ask his permission?”\n“I thought the seating chart would\nprove they knew he was there.”\n“A name is not an address.”\nHer grandmother pointed to the dry\nfaucet in the courtyard.\n“My complaint is public too. The\nwater still hasn’t arrived.”\nNora removed the seating chart and\nwrote: DO NOT PUBLISH THE\nMAN’S ADDRESS. The platform\ncalled the operation VOLUNTARY\nREDUCTION OF REACH. The\nchart continued to circulate.\nThat night, Q asked Beto how to\nremove the employment card while\nretaining the correction. He had\nalready disabled automatic profile\nlinks on future posts.\nBeto was counting views. “The\naudience prefers a clean story.”\n“I need someone who can change\nthe attached record.”\n“Support can review it.”\n",
       "source_block_ids": [
+        184,
+        185,
+        186,
+        187,
         188,
         189,
         190,
@@ -345,30 +505,71 @@
         200,
         201,
         202,
-        203,
-        204,
-        205,
-        206,
-        207,
-        208,
-        209
+        203
       ],
       "asset": "output/illustrations/revised/issue-04/plate-10.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The dry faucet.",
-      "scene_brief": "Nora and her grandmother in a modest courtyard beside a dry tap. The grandmother points between the tap and the phone while Nora removes the seating-chart post. Q is absent; these people have an unresolved water complaint of their own."
+      "scene_brief": "Nora and her grandmother in a modest courtyard beside a dry tap. The grandmother points between the tap and the phone while Nora removes the seating-chart post. Q is absent; these people have an unresolved water complaint of their own.",
+      "scene_anchor": "dry faucet",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-09-v2.png"
+      ],
+      "generation_prompt": "Use case: illustration-story. A single new full-page portrait illustration for The Ingenious Machine by A. Cervantes, iNQ comic trim 6.625 x 10.25 inches. Neutral black-and-white Goya-inspired etching and aquatint, rich crosshatching and human observation, bright unprinted white highlights, no sepia or gray paper wash. Full-bleed composition to every edge, not a framed illustration, no white border. No lettering, captions, typography, watermarks or logos; the only allowed graphic is Q's established question-mark motif. Keep main faces/hands away from the bottom 6 percent, which will have a separately typeset caption. Contemporary near-future Mexico with ordinary clothing and practical devices, never medieval dress, knights, skeleton army or dystopian spectacle. Preserve the exact established Q robot: elongated segmented oval metal head, distinct circular ears, long narrow exposed mechanical neck, slender articulated limbs, rectangular riveted breastplate with one question-mark motif. His posture is attentive and conversational, not a stiff stock robot. After the service-station change he wears a well-fitted dark contemporary sponsor jacket with a small silver question mark embroidered on its lapel; no long ragged coat in later scenes. Reference images establish identity and etching style, not a composition to copy. Draw only the specific action below. Portrait 2:3 at the highest available native resolution.\nScene: Nora and her grandmother in a modest courtyard beside a dry tap. The grandmother points between the tap and the phone while Nora removes the seating-chart post. Q is absent; these people have an unresolved water complaint of their own.\nQ is ABSENT. Image 1 supplies Nora only: same young woman, wavy ponytail, hooded sweatshirt. At her grandmother's modest courtyard, a dry metal water tap and an empty bucket stand against the wall. Grandmother is an older Mexican woman with white hair in a bun and a practical cardigan, pointing toward the tap while Nora looks from her own phone to her. Show Nora in three-quarter profile; the phone screen FACES HER, viewer sees its side/back. No water flowing, no repaired pipe, no robotic visitor, no readable phone text or private address. Strong daylight and ordinary laundry and potted plants; grandmother has her own unresolved complaint.",
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-924391c4-026a-40ff-b935-70cc7538c11e.png",
+      "visual_review": "Inspected: Nora matches plate 09's hoodie and ponytail, phone screen faces her; grandmother points to dry faucet above an empty bucket in domestic courtyard. Q is absent.",
+      "asset_sha256": "59ed26a0d302866cb6cd6c147e5489ca1ad7bf4b36d8fb7132d607ee0e5d9b5a",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "source_color_mode": "RGB",
+      "effective_full_bleed_dpi": 149.85
     },
     {
       "plate_id": "issue-04-plate-11",
       "page": 23,
       "facing_text_page": 22,
-      "facing_text": "the theater, or the internet. This\nincreased its circulation.\nInterlude: The Mine That\nRemembered Its Workers\nIt is proper to say something about\nthe retired miner who corrected the\nadvertisement, since every account\nof him has been improved by people\nwho were not there. The theater said\nhe was a former foreman. The\nfoundation called him an artisanal\nproducer. A newspaper described\nhim as a living archive, which is the\nsort of compliment that puts a lock\non a person and then congratulates\nthe lock for preserving him.\nHis name was Don Hilario, though\nthe payroll ledger called him Hilario\nGutiérrez, and his grandchildren\ncalled him Abuelo only when they\nwanted the truck keys. He had spent\nthirty-two years below Guanajuato,\nfirst carrying tools, then supervising\nmen, and finally supervising the\nmachines that had replaced most of\nthe men. He had entered the mine as\na boy with a lunch wrapped in a flour\ntortilla and left it with a cough that\nsounded, according to his wife, like a\ndoor trying to remember its house.\nQ met him during a heritage tour\narranged by Beto, who had decided\nthat the machine’s popularity would\nbe strengthened by placing it\nunderground. The brochure\npromised a descent into history, a\nphrase that made Chano ask whether\nhistory came with a return ticket.\nThe entrance was beneath a row of\nwhite facades that had been painted\nso recently the walls looked\nembarrassed by their cleanliness.\nTourists bought little helmets,\nsilver-colored magnets, and bottles\nof mineral water whose labels\nshowed a miner smiling with all his\nteeth. The real miners, Don Hilario\nsaid, had never smiled underground\nunless somebody else had fallen and\nthey had discovered him alive.\n“Do not tell them that,” said the\nguide.\n“Why not?”\n“Because the visitors are here to be\nmoved.”\n“They are standing still.”\nThe guide looked at Q, hoping the\nmachine might translate the joke\ninto something sponsor-safe.\nBeside the lift hung an old brake\nlever, polished by visitors. Chano put\na hand on it, then read the label.\n“For emergencies before nineteen\ntwenty.”\n“The controls are in the cage,” the\nattendant said. He showed them the\nstop and intercom before closing the\ngate. Q kept his hands clear of the\ngate.\nThe lift descended with a groan.\nChano held the rail.\n",
+      "facing_text": "Chano picked up the paper cup from\nthe table. “There’s your answer.”\nQ watched the coffee tremble inside\nit.\nThe next morning, the Teatro Juárez\nreplaced the event poster. Q’s name\nwas printed in gold. Chano’s name\nappeared in the fine print. Nora’s\naccount was gone. The student’s\nthread had been translated into\nthree languages, summarized by a\nnews service, and attached to an\nadvertisement for a security system\nthat recognized relatives only after\nthey had signed the terms.\nThe retired miner wrote one final\npost beneath the advertisement:\nThey had my name on a plaque\nfor fifteen years while the\npension office said it could not\nfind me. Try sending the\nplaque to the pension office.\nNo one could agree whether he had\nwritten it as a criticism of Q,\nCastalia, the theater, or the internet.\nThis increased its circulation.\nInterlude: The Mine That\nRemembered Its Workers\nIt is proper to say something about\nthe retired miner who corrected the\nadvertisement, since every account\nof him has been improved by people\nwho were not there. The theater said\nhe was a former foreman. The\nfoundation called him an artisanal\nproducer. A newspaper described\nhim as a living archive, which is the\nsort of compliment that puts a lock\non a person and then congratulates\nthe lock for preserving him.\nHis name was Don Hilario, though\nthe payroll ledger called him Hilario\nGutiérrez, and his grandchildren\ncalled him Abuelo only when they\nwanted the truck keys. He had spent\nthirty-two years below Guanajuato,\nfirst carrying tools, then supervising\nmen, and finally supervising the\nmachines that had replaced most of\nthe men. He had entered the mine\nas a boy with a lunch wrapped in a\nflour tortilla and left it with a cough\nthat sounded, according to his wife,\nlike a door trying to remember its\nhouse.\nQ met him during a heritage tour\narranged by Beto, who had decided\nthat the machine’s popularity would\nbe strengthened by placing it\nunderground. The brochure\npromised a descent into history, a\nphrase that made Chano ask\nwhether history came with a return\nticket.\nThe entrance was beneath a row of\nwhite facades that had been painted\nso recently the walls looked\nembarrassed by their cleanliness.\nTourists bought little helmets,\nsilver-colored magnets, and bottles\nof mineral water whose labels\nshowed a miner smiling with all his\n",
       "source_block_ids": [
+        204,
+        205,
+        206,
+        207,
+        208,
         209,
         210,
         211,
         212,
         213,
+        214
+      ],
+      "asset": "output/illustrations/revised/issue-04/plate-11.png",
+      "status": "approved",
+      "caption": "The return ticket.",
+      "scene_brief": "At the fictional mine entrance beneath recently repainted white facades, Q and Chano meet older retired miner Don Hilario Gutiérrez beside a souvenir stall with small helmets and silver-colored magnets. Establish Hilario as older and leaner than Chano, short gray hair, gray mustache, long weathered face, plain work clothes. A guide is preparing the visit. No lift descent yet and no reuse of the roadside water vendor's face.",
+      "scene_anchor": "history came with a return ticket",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-03.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-05.png"
+      ],
+      "generation_prompt": "Use case: illustration-story. A single new full-page portrait illustration for The Ingenious Machine by A. Cervantes, iNQ comic trim 6.625 x 10.25 inches. Neutral black-and-white Goya-inspired etching and aquatint, rich crosshatching and human observation, bright unprinted white highlights, no sepia or gray paper wash. Full-bleed composition to every edge, not a framed illustration, no white border. No lettering, captions, typography, watermarks or logos; the only allowed graphic is Q's established question-mark motif. Keep main faces/hands away from the bottom 6 percent, which will have a separately typeset caption. Contemporary near-future Mexico with ordinary clothing and practical devices, never medieval dress, knights, skeleton army or dystopian spectacle. Preserve the exact established Q robot: elongated segmented oval metal head, distinct circular ears, long narrow exposed mechanical neck, slender articulated limbs, rectangular riveted breastplate with one question-mark motif. His posture is attentive and conversational, not a stiff stock robot. After the service-station change he wears a well-fitted dark contemporary sponsor jacket with a small silver question mark embroidered on its lapel; no long ragged coat in later scenes. Reference images establish identity and etching style, not a composition to copy. Draw only the specific action below. Portrait 2:3 at the highest available native resolution.\nScene: At the fictional mine entrance beneath recently repainted white facades, Q and Chano meet older retired miner Don Hilario Gutiérrez beside a souvenir stall with small helmets and silver-colored magnets. Establish Hilario as older and leaner than Chano, short gray hair, gray mustache, long weathered face, plain work clothes. A guide is preparing the visit. No lift descent yet and no reuse of the roadside water vendor's face.\nImage 1 supplies Q's fitted jacket and metal head; image 2 supplies Chano and the younger bearded guide with vest. Introduce Don Hilario Gutiérrez: a lean Mexican man in his seventies with short gray hair, a narrow lined face and gray mustache, plain worn buttoned work shirt and trousers, hands marked by years of work. He is visibly older and leaner than the stocky black-mustached Chano. At the freshly whitewashed entrance of a fictional tourist mine, Hilario talks to Q and Chano beside a vendor's small helmets and metal souvenir magnets. The younger guide waits at the entrance. Ordinary visitor helmets in hands or on heads, no underground wall or ledger yet. No saintly pose, no claim to depict a specific real miner or mine.",
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-2fc12fec-a1c7-4ce2-aa68-89d65f1a7a17.png",
+      "visual_review": "Inspected: lean gray-haired retired miner distinct from Chano; helmets and souvenirs at whitewashed fictional entrance, younger guide matches mine scene. No real-site claim.",
+      "asset_sha256": "50b255b22f0d77720746989cafcc03fa74c6821398e798c9d10bfa55d0f301e0",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "source_color_mode": "RGB",
+      "effective_full_bleed_dpi": 149.85
+    },
+    {
+      "plate_id": "issue-04-plate-12",
+      "page": 25,
+      "facing_text_page": 24,
+      "facing_text": "teeth. The real miners, Don Hilario\nsaid, had never smiled underground\nunless somebody else had fallen and\nthey had discovered him alive.\n“Do not tell them that,” said the\nguide.\n“Why not?”\n“Because the visitors are here to be\nmoved.”\n“They are standing still.”\nThe guide looked at Q, hoping the\nmachine might translate the joke\ninto something sponsor-safe.\nBeside the lift hung an old brake\nlever, polished by visitors. Chano\nput a hand on it, then read the label.\n“For emergencies before nineteen\ntwenty.”\n“The controls are in the cage,” the\nattendant said. He showed them the\nstop and intercom before closing the\ngate. Q kept his hands clear of the\ngate.\nThe lift descended with a groan.\nChano held the rail.\n“That noise is older than the lever,”\nDon Hilario said. “They keep it for\nus.”\nAt the first level, the visitors were\nshown a niche containing a saint, a\nhelmet, and a small lamp. The guide\nexplained that miners prayed before\nentering and thanked the saint upon\nleaving. Don Hilario corrected him\nby saying that miners prayed before\nentering, prayed while inside, and\nthanked their wives when they came\nhome, which was a different form of\ntheology.\nThe guide asked Don Hilario to wait\nbeside the niche for a photograph.\n“You have the face,” he said.\n“Which face?”\n“The face of memory.”\n“I have the face of a man whose\npension was calculated on the wrong\nwage.”\nThe tourists laughed. Don Hilario\nlaughed too, then repeated the part\nabout the pension. Q noticed how\nquickly the second sentence emptied\nthe audience of the sympathy the\nfirst one had acquired.\nThey continued through a tunnel\nwhere the stone shone damply in the\nhelmet lamps. The public-address\nsystem announced that the mine\nhad produced silver for empires,\nrepublics, and modern markets. It\ndid not announce the names of the\nmen who had carried the ore,\nbecause the names were stored in a\nroom that the foundation had not\nyet converted into an experience.\nDon Hilario led Q away from the\ngroup to a low chamber behind a\nwire gate. On the wall, somebody\nhad written dates in chalk. There\n",
+      "source_block_ids": [
         214,
         215,
         216,
@@ -378,19 +579,7 @@
         220,
         221,
         222,
-        223
-      ],
-      "asset": "output/illustrations/revised/issue-04/plate-11.png",
-      "status": "planned",
-      "caption": "The old lever.",
-      "scene_brief": "Before the mine descent Chano examines an old brake lever displayed beside the lift. An attendant shows Q the actual controls and intercom inside the cage. Do not depict descent with a known decorative-only brake."
-    },
-    {
-      "plate_id": "issue-04-plate-12",
-      "page": 25,
-      "facing_text_page": 24,
-      "facing_text": "“That noise is older than the lever,”\nDon Hilario said. “They keep it for\nus.”\nAt the first level, the visitors were\nshown a niche containing a saint, a\nhelmet, and a small lamp. The guide\nexplained that miners prayed before\nentering and thanked the saint upon\nleaving. Don Hilario corrected him\nby saying that miners prayed before\nentering, prayed while inside, and\nthanked their wives when they came\nhome, which was a different form of\ntheology.\nThe guide asked Don Hilario to wait\nbeside the niche for a photograph.\n“You have the face,” he said.\n“Which face?”\n“The face of memory.”\n“I have the face of a man whose\npension was calculated on the wrong\nwage.”\nThe tourists laughed. Don Hilario\nlaughed too, then repeated the part\nabout the pension. Q noticed how\nquickly the second sentence emptied\nthe audience of the sympathy the\nfirst one had acquired.\nThey continued through a tunnel\nwhere the stone shone damply in the\nhelmet lamps. The public-address\nsystem announced that the mine had\nproduced silver for empires,\nrepublics, and modern markets. It\ndid not announce the names of the\nmen who had carried the ore,\nbecause the names were stored in a\nroom that the foundation had not yet\nconverted into an experience.\nDon Hilario led Q away from the\ngroup to a low chamber behind a\nwire gate. On the wall, somebody had\nwritten dates in chalk. There were\nmore dates than the guide’s script\nallowed.\n“These are shifts,” Don Hilario said.\n“The men wrote when the lift failed,\nwhen the water rose, when a\nsupervisor disappeared for three\ndays, when the company promised\nboots. The dates are not official.”\n“Do the dates match the shift\nbooks?” Q asked.\n“Sometimes. Sometimes the book\nsays the lift was working.”\n“Would comparing them help with\nthe pension claim?”\n“If it includes the wage. The office\nagreed I worked. We disagree about\nhow cheaply.” Don Hilario pointed to\na date. “That week I was paid as a\nhelper. I had three helpers.”\nQ asked whether the wage books still\nexisted. Don Hilario said there were\nno books in the chamber. Then he\nlooked toward the wire gate, where\nthe guide was explaining the history\nof extraction to visitors from\nMonterrey, and added that there\nmight be records in the office of a\nman who had retired without\nretiring.\n",
-      "source_block_ids": [
+        223,
         224,
         225,
         226,
@@ -400,30 +589,80 @@
         230,
         231,
         232,
+        233
+      ],
+      "asset": "output/illustrations/revised/issue-04/plate-12.png",
+      "status": "approved",
+      "caption": "The old lever.",
+      "scene_brief": "Before descending, Chano reads the display beside an old brake lever; the attendant shows Q the separate working control and intercom inside the open lift cage. The old lever is a museum object, not the operating brake. Hilario waits nearby, all wearing ordinary visitor helmets; Q's established head remains recognizable beneath his helmet.",
+      "scene_anchor": "Beside the lift hung an old brake lever",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-11.png"
+      ],
+      "generation_prompt": "Use case: illustration-story. A single new full-page portrait illustration for The Ingenious Machine by A. Cervantes, iNQ comic trim 6.625 x 10.25 inches. Neutral black-and-white Goya-inspired etching and aquatint, rich crosshatching and human observation, bright unprinted white highlights, no sepia or gray paper wash. Full-bleed composition to every edge, not a framed illustration, no white border. No lettering, captions, typography, watermarks or logos; the only allowed graphic is Q's established question-mark motif. Keep main faces/hands away from the bottom 6 percent, which will have a separately typeset caption. Contemporary near-future Mexico with ordinary clothing and practical devices, never medieval dress, knights, skeleton army or dystopian spectacle. Preserve the exact established Q robot: elongated segmented oval metal head, distinct circular ears, long narrow exposed mechanical neck, slender articulated limbs, rectangular riveted breastplate with one question-mark motif. His posture is attentive and conversational, not a stiff stock robot. After the service-station change he wears a well-fitted dark contemporary sponsor jacket with a small silver question mark embroidered on its lapel; no long ragged coat in later scenes. Reference images establish identity and etching style, not a composition to copy. Draw only the specific action below. Portrait 2:3 at the highest available native resolution.\nScene: Before descending, Chano reads the display beside an old brake lever; the attendant shows Q the separate working control and intercom inside the open lift cage. The old lever is a museum object, not the operating brake. Hilario waits nearby, all wearing ordinary visitor helmets; Q's established head remains recognizable beneath his helmet.\nImage 1 supplies Q, Chano and the elderly retired miner Hilario. At a fictional mine's lift entrance, Chano has one hand on an OLD DISPLAY LEVER mounted on the wall outside the lift, with a small unreadable museum plaque. A DIFFERENT clean-shaven attendant in work overalls points Q toward the MODERN STOP CONTROL AND INTERCOM inside the open lift cage. Both systems visibly separate. Hilario waits a step behind. All visitors now wear ordinary hardhats; preserve Q's head beneath his hardhat. No movement yet, no sparks, no collapse, no lever mistaken for the actual emergency control, no readable labels. Composition makes Chano's curious inspection and the attendant's practical explanation both legible.",
+      "pre_edit_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-9162562d-f85a-4da9-9c58-8d185c5cb5d1.png",
+      "edit_reference_images": [
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-9162562d-f85a-4da9-9c58-8d185c5cb5d1.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-03/plate-06.png"
+      ],
+      "edit_prompt": "Use case: precise illustration edit. Image 1 is the mine lift scene to correct; image 2 supplies the identity of CHANO, the stocky middle-aged Mexican man with dark wavy hair and thick BLACK mustache. Correct ONLY who touches the old display lever: replace the lean gray-haired elderly man at the lever in the left foreground with CHANO from image 2, wearing the same ordinary visitor hardhat and a work shirt. He must look distinctly middle-aged, stocky, dark-haired and black-mustached. Remove the now-duplicate Chano figure behind him, replacing that figure with the plain mine wall/space; Hilario can be outside the frame. Preserve the mechanical Q inside the lift, his jacket and helmet, the clean-shaven attendant on the right, the attendant's gesture toward the separate modern controls, both distinct systems (old lever on LEFT wall; working stop/intercom on RIGHT inside cage), all equipment positions and engraved black-and-white style. No other scene changes, no extra people, no lettering, no sepia.",
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-9162562d-f85a-4da9-9c58-8d185c5cb5d1.png",
+      "edited_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-d8dd8ce3-7202-4368-8c1e-865757d7c103.png",
+      "visual_review": "Inspected corrected lift scene: stocky dark-haired Chano now touches the old display lever; duplicate removed. Q listens beside the attendant pointing to the separate working control/intercom. No emergency or unsafe improvised repair is depicted.",
+      "asset_sha256": "8db2b94d4b68712d1b5285aebf3e9bea1f0d32d7f01857fa2202de01fd1286c1",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "source_color_mode": "RGB",
+      "effective_full_bleed_dpi": 149.85
+    },
+    {
+      "plate_id": "issue-04-plate-13",
+      "page": 27,
+      "facing_text_page": 26,
+      "facing_text": "were more dates than the guide’s\nscript allowed.\n“These are shifts,” Don Hilario said.\n“The men wrote when the lift failed,\nwhen the water rose, when a\nsupervisor disappeared for three\ndays, when the company promised\nboots. The dates are not official.”\n“Do the dates match the shift\nbooks?” Q asked.\n“Sometimes. Sometimes the book\nsays the lift was working.”\n“Would comparing them help with\nthe pension claim?”\n“If it includes the wage. The office\nagreed I worked. We disagree about\nhow cheaply.” Don Hilario pointed\nto a date. “That week I was paid as a\nhelper. I had three helpers.”\nQ asked whether the wage books\nstill existed. Don Hilario said there\nwere no books in the chamber. Then\nhe looked toward the wire gate,\nwhere the guide was explaining the\nhistory of extraction to visitors from\nMonterrey, and added that there\nmight be records in the office of a\nman who had retired without\nretiring.\nThis was the beginning of the tale\nthat Don Hilario later told in three\nversions. In the first, the office\nbelonged to a company accountant\nnamed Severiano, who kept every\npaper because he did not trust the\ncomputer. In the second, it belonged\nto a widow named Marta, who had\nhidden the papers because she\ntrusted neither the company nor the\ncomputer. In the third, which Chano\nconsidered the most credible, the\noffice belonged to whichever person\nhad the key that week, and the\npapers moved whenever the mine\nchanged owners.\nThey found six boxes beneath a\ndesk. Five contained invoices, safety\nposters, and expired coupons for\nboots. The sixth contained a ledger\nwhose cover had been softened by\nwater and whose pages smelled of\ndust, oil, and the particular patience\nof people who have waited for a\npayment.\nQ asked whether he could copy the\nrelevant entry.\n“Read it here first,” Don Hilario\nsaid. “There are deductions on that\npage people have kept out of their\nown houses.”\nQ disabled the camera's recording\nfunction and bent over the book. His\nshadow crossed the column. Chano\nmoved the lamp so both of them\ncould see.\nThe ledger contained names, shifts,\ndeductions, injuries, and notes\nwritten in the margins. One column\nmarked men who had been moved\nto another shaft. Another marked\nmen who had stopped appearing. At\n",
+      "source_block_ids": [
         233,
         234,
         235,
         236,
         237,
         238,
-        239
-      ],
-      "asset": "output/illustrations/revised/issue-04/plate-12.png",
-      "status": "planned",
-      "caption": "The wage of a helper.",
-      "scene_brief": "Don Hilario Gutiérrez indicates one chalk date behind the wire gate while explaining to Q that he was paid as a helper while supervising three. Chano listens. This retired miner is NOT Hilario the water vendor."
-    },
-    {
-      "plate_id": "issue-04-plate-13",
-      "page": 27,
-      "facing_text_page": 26,
-      "facing_text": "This was the beginning of the tale\nthat Don Hilario later told in three\nversions. In the first, the office\nbelonged to a company accountant\nnamed Severiano, who kept every\npaper because he did not trust the\ncomputer. In the second, it belonged\nto a widow named Marta, who had\nhidden the papers because she\ntrusted neither the company nor the\ncomputer. In the third, which Chano\nconsidered the most credible, the\noffice belonged to whichever person\nhad the key that week, and the\npapers moved whenever the mine\nchanged owners.\nThey found six boxes beneath a desk.\nFive contained invoices, safety\nposters, and expired coupons for\nboots. The sixth contained a ledger\nwhose cover had been softened by\nwater and whose pages smelled of\ndust, oil, and the particular patience\nof people who have waited for a\npayment.\nQ asked whether he could copy the\nrelevant entry.\n“Read it here first,” Don Hilario said.\n“There are deductions on that page\npeople have kept out of their own\nhouses.”\nQ disabled the camera's recording\nfunction and bent over the book. His\nshadow crossed the column. Chano\nmoved the lamp so both of them\ncould see.\nThe ledger contained names, shifts,\ndeductions, injuries, and notes\nwritten in the margins. One column\nmarked men who had been moved to\nanother shaft. Another marked men\nwho had stopped appearing. At the\nbottom of a page, in a different hand,\nsomebody had written: DO NOT\nCALL THIS TURNOVER.\nQ read the phrase aloud.\nDon Hilario sat down on the floor.\n“That was my brother,” he said. “The\ncompany called it turnover after he\nwas crushed. He was not a turn. He\nwas a person who had been turned\ninto a cost.”\nQ waited. Don Hilario rubbed a\nthumb along the damaged cover. The\nguide could be heard in the corridor,\nasking everybody to remain with the\napproved group.\nQ moved the lamp off Don Hilario's\nface. For a while they listened to the\nguide trying to count a group that\nwould not stand still.\n“He used to take my lunch,” Don\nHilario said. “Left the wrapper so I'd\nthink there was still something in it.\nThirty years old and he was still\ndoing it.”\nChano looked at the bag beside him.\n“Some brothers never retire.”\nDon Hilario laughed once, then\nclosed the ledger.\n",
-      "source_block_ids": [
+        239,
         240,
         241,
         242,
         243,
         244,
+        245
+      ],
+      "asset": "output/illustrations/revised/issue-04/plate-13.png",
+      "status": "approved",
+      "caption": "The wage of a helper.",
+      "scene_brief": "In the low mine chamber beyond the wire gate, Don Hilario indicates a chalk date while explaining to Q the wage of a helper. Chano listens. Keep the chalk markings small and indistinct, not invented authentic worker names; these fictional figures and records do not depict a real mine. No public filming or glowing holograms.",
+      "scene_anchor": "I had three helpers.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-11.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-05.png"
+      ],
+      "generation_prompt": "Use case: illustration-story. A single new full-page portrait illustration for The Ingenious Machine by A. Cervantes, iNQ comic trim 6.625 x 10.25 inches. Neutral black-and-white Goya-inspired etching and aquatint, rich crosshatching and human observation, bright unprinted white highlights, no sepia or gray paper wash. Full-bleed composition to every edge, not a framed illustration, no white border. No lettering, captions, typography, watermarks or logos; the only allowed graphic is Q's established question-mark motif. Keep main faces/hands away from the bottom 6 percent, which will have a separately typeset caption. Contemporary near-future Mexico with ordinary clothing and practical devices, never medieval dress, knights, skeleton army or dystopian spectacle. Preserve the exact established Q robot: elongated segmented oval metal head, distinct circular ears, long narrow exposed mechanical neck, slender articulated limbs, rectangular riveted breastplate with one question-mark motif. His posture is attentive and conversational, not a stiff stock robot. After the service-station change he wears a well-fitted dark contemporary sponsor jacket with a small silver question mark embroidered on its lapel; no long ragged coat in later scenes. Reference images establish identity and etching style, not a composition to copy. Draw only the specific action below. Portrait 2:3 at the highest available native resolution.\nScene: In the low mine chamber beyond the wire gate, Don Hilario indicates a chalk date while explaining to Q the wage of a helper. Chano listens. Keep the chalk markings small and indistinct, not invented authentic worker names; these fictional figures and records do not depict a real mine. No public filming or glowing holograms.\nImage 1 establishes identities: Don Hilario is the lean elderly man with short gray hair and gray mustache, Chano is stocky with dark wavy hair and a thick black mustache, Q wears the fitted short dark jacket. Image 2 establishes Q's visitor helmet. Draw Hilario pointing to a small chalk date on a damp rock wall inside a LOW chamber beyond an open wire gate. Q stands close enough to listen, Chano beside him. These are fictional mine workers' small chalk shift marks, not decorative ancient inscriptions. Do not add a ledger, a camera crew, a rescuer or a corpse. Three companions, practical visitor helmets, modest physical scale. Keep faces legible, their different ages and builds distinct.",
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-332d7a45-50ad-4b3c-8d97-10d69a1e0a6e.png",
+      "visual_review": "Inspected: lean elderly gray-mustached Hilario points to small fictional chalk shift figures beyond wire gate; stocky dark-haired Chano and Q listen in visitor helmets. No ledger or filming in chamber.",
+      "asset_sha256": "4b9864c5c1fba9ea28167504807647963afcd4ed584f6995d7106e5c48620ec1",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "source_color_mode": "RGB",
+      "effective_full_bleed_dpi": 149.85
+    },
+    {
+      "plate_id": "issue-04-plate-14",
+      "page": 29,
+      "facing_text_page": 28,
+      "facing_text": "the bottom of a page, in a different\nhand, somebody had written: DO\nNOT CALL THIS TURNOVER.\nQ read the phrase aloud.\nDon Hilario sat down on the floor.\n“That was my brother,” he said. “The\ncompany called it turnover after he\nwas crushed. He was not a turn. He\nwas a person who had been turned\ninto a cost.”\nQ waited. Don Hilario rubbed a\nthumb along the damaged cover.\nThe guide could be heard in the\ncorridor, asking everybody to\nremain with the approved group.\nQ moved the lamp off Don Hilario's\nface. For a while they listened to the\nguide trying to count a group that\nwould not stand still.\n“He used to take my lunch,” Don\nHilario said. “Left the wrapper so I'd\nthink there was still something in it.\nThirty years old and he was still\ndoing it.”\nChano looked at the bag beside him.\n“Some brothers never retire.”\nDon Hilario laughed once, then\nclosed the ledger.\n“The things I've told you here stay\nhere. Today I want them to stop\ntelling visitors we were all grateful.”\n“What would you like said when\nthey ask me?”\n“That you heard their account\ndisputed. They can ask me the rest,\nif they remember where they left\nme.”\nHe pointed at the ledger. “Put it\nback for now.”\nChano did so. Don Hilario kept his\nhand on the cover until the clasp\ncaught.\nOn the way back, the lift stopped\nbetween levels. The guide called it a\nroutine pause. Chano used the\nintercom and asked the attendant\nwhether routine pauses normally\nincluded a burning smell. The\nattendant lowered them to the\nprevious landing and sent someone\nto inspect the drive.\nThey waited forty minutes. Q\ncalculated several causes and\noffered none of them as a repair\ninstruction. He held the light while\nDon Hilario sat down.\n“Will this part be in the brochure?”\nChano asked.\nThe guide said the brochure had\nalready gone to print.\nWhen they reached the surface, Beto\nasked Q for a statement about the\nmine. Q kept the private entries out\nof the answer. He wanted the public\nto understand that the official tour\nhad omitted a dispute. He also\nwanted a sentence short enough to\nsurvive Beto's attention.\n",
+      "source_block_ids": [
         245,
         246,
         247,
@@ -432,19 +671,7 @@
         250,
         251,
         252,
-        253
-      ],
-      "asset": "output/illustrations/revised/issue-04/plate-13.png",
-      "status": "planned",
-      "caption": "The wrapper.",
-      "scene_brief": "In the ledger office Don Hilario sits beside the open book, remembering his brother taking his lunch. Q lowers or turns the lamp away from his face; Chano glances at his lunch bag. Present the living conversation, not an invented death-scene flashback or a camera interview."
-    },
-    {
-      "plate_id": "issue-04-plate-14",
-      "page": 29,
-      "facing_text_page": 28,
-      "facing_text": "“The things I've told you here stay\nhere. Today I want them to stop\ntelling visitors we were all grateful.”\n“What would you like said when they\nask me?”\n“That you heard their account\ndisputed. They can ask me the rest, if\nthey remember where they left me.”\nHe pointed at the ledger. “Put it back\nfor now.”\nChano did so. Don Hilario kept his\nhand on the cover until the clasp\ncaught.\nOn the way back, the lift stopped\nbetween levels. The guide called it a\nroutine pause. Chano used the\nintercom and asked the attendant\nwhether routine pauses normally\nincluded a burning smell. The\nattendant lowered them to the\nprevious landing and sent someone\nto inspect the drive.\nThey waited forty minutes. Q\ncalculated several causes and offered\nnone of them as a repair instruction.\nHe held the light while Don Hilario\nsat down.\n“Will this part be in the brochure?”\nChano asked.\nThe guide said the brochure had\nalready gone to print.\nWhen they reached the surface, Beto\nasked Q for a statement about the\nmine. Q kept the private entries out\nof the answer. He wanted the public\nto understand that the official tour\nhad omitted a dispute. He also\nwanted a sentence short enough to\nsurvive Beto's attention.\n“The mine remembers its workers\nrather differently from the\nbrochure,” he said.\nThe words before rather differently\nappeared online before Don Hilario\nhad removed his helmet. The rest of\nthe sentence was omitted.\nTHE AI DISCOVERS THE SOUL\nOF GUANAJUATO.\nThe foundation announced an\nexhibition called The Mine That\nRemembers. It featured projected\nnames, reconstructed shift sounds,\nand a recording of Q speaking the\nphrase in seven languages. The\nledger was not displayed. Its absence\nwas described as an ethical choice.\nDon Hilario received an invitation\ncalling him a stakeholder. He replied\nthat he was a man who had worked\nthere. The foundation thanked him\nfor clarifying his role.\nDon Hilario asked Chano to return to\nthe office. They copied the entries\nneeded for the wage dispute onto\nthree pages of a school notebook,\ncovering unrelated columns with a\nsheet of cardboard. A cartoon robot\non the cover promised to make\nlearning easy. Q offered to check the\nsums while they read out the figures.\nQ watched him.\n",
-      "source_block_ids": [
+        253,
         254,
         255,
         256,
@@ -454,26 +681,41 @@
         260,
         261,
         262,
-        263,
+        263
+      ],
+      "asset": "output/illustrations/revised/issue-04/plate-14.png",
+      "status": "approved",
+      "caption": "The wrapper.",
+      "scene_brief": "In the ledger office Don Hilario sits on the floor beside the damaged ledger, remembering his brother taking his lunch. Q turns the portable lamp away from Hilario's face; Chano glances at his own lunch bag. Present living company and the awkward tenderness of a shared joke, not a death-scene flashback, ghost or camera interview.",
+      "scene_anchor": "Q moved the lamp off Don Hilario's face",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-11.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-05.png"
+      ],
+      "generation_prompt": "Use case: illustration-story. A single new full-page portrait illustration for The Ingenious Machine by A. Cervantes, iNQ comic trim 6.625 x 10.25 inches. Neutral black-and-white Goya-inspired etching and aquatint, rich crosshatching and human observation, bright unprinted white highlights, no sepia or gray paper wash. Full-bleed composition to every edge, not a framed illustration, no white border. No lettering, captions, typography, watermarks or logos; the only allowed graphic is Q's established question-mark motif. Keep main faces/hands away from the bottom 6 percent, which will have a separately typeset caption. Contemporary near-future Mexico with ordinary clothing and practical devices, never medieval dress, knights, skeleton army or dystopian spectacle. Preserve the exact established Q robot: elongated segmented oval metal head, distinct circular ears, long narrow exposed mechanical neck, slender articulated limbs, rectangular riveted breastplate with one question-mark motif. His posture is attentive and conversational, not a stiff stock robot. After the service-station change he wears a well-fitted dark contemporary sponsor jacket with a small silver question mark embroidered on its lapel; no long ragged coat in later scenes. Reference images establish identity and etching style, not a composition to copy. Draw only the specific action below. Portrait 2:3 at the highest available native resolution.\nScene: In the ledger office Don Hilario sits on the floor beside the damaged ledger, remembering his brother taking his lunch. Q turns the portable lamp away from Hilario's face; Chano glances at his own lunch bag. Present living company and the awkward tenderness of a shared joke, not a death-scene flashback, ghost or camera interview.\nImage 1 establishes the three identities. Image 2 establishes helmet equipment. A cramped fictional mine records office with six old boxes under a desk. Don Hilario, the lean elderly gray-haired miner, sits on the FLOOR near a water-damaged ledger laid on a low box, telling a remembered joke. Q crouches nearby and turns a portable lamp AWAY from Hilario's face toward the book, gently providing company. Chano, the stocky middle-aged dark-haired mustached man, looks down at his own paper lunch bag, a trace of a smile. Their visitor helmets can rest on the floor beside them so faces remain clear. Distinct faces. No ghost, no dead person, no dramatic consoling embrace, no camera interview, no legible confidential writing. A quiet, observant moment that can include sorrow and a small laugh without theatrical grieving.",
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-6cb9d122-6146-4b38-8392-ac924f2238f4.png",
+      "visual_review": "Inspected: Hilario sits on floor, Q directs lamp toward damaged ledger rather than his face, Chano's lunch bag supports the remembered joke. No ghost, intrusive camera or grand consoling gesture.",
+      "asset_sha256": "11273380966cade87dc3edd18d71ed23575a857a557ce90c4d129a3ff442b9ec",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "source_color_mode": "RGB",
+      "effective_full_bleed_dpi": 149.85
+    },
+    {
+      "plate_id": "issue-04-plate-15",
+      "page": 31,
+      "facing_text_page": 30,
+      "facing_text": "“The mine remembers its workers\nrather differently from the\nbrochure,” he said.\nThe words before rather differently\nappeared online before Don Hilario\nhad removed his helmet. The rest of\nthe sentence was omitted.\nTHE AI DISCOVERS THE\nSOUL OF GUANAJUATO.\nThe foundation announced an\nexhibition called The Mine That\nRemembers. It featured projected\nnames, reconstructed shift sounds,\nand a recording of Q speaking the\nphrase in seven languages. The\nledger was not displayed. Its\nabsence was described as an ethical\nchoice.\nDon Hilario received an invitation\ncalling him a stakeholder. He\nreplied that he was a man who had\nworked there. The foundation\nthanked him for clarifying his role.\nDon Hilario asked Chano to return\nto the office. They copied the entries\nneeded for the wage dispute onto\nthree pages of a school notebook,\ncovering unrelated columns with a\nsheet of cardboard. A cartoon robot\non the cover promised to make\nlearning easy. Q offered to check the\nsums while they read out the figures.\nQ watched him.\n“Shall I keep the totals?” he asked.\n“Just check them,” Chano said.\n“Hilario is taking the pages.”\nThe second total was wrong. They\nfound a deduction counted twice\nand corrected it. Nothing in the\ncorrection required a public\nstatement. Q found this\nunexpectedly satisfying, and left it\nout of his account until the\nCustodian asked whether anything\non the journey had gone well.\nMuch later, a questioner asked Q\nwhether he had taken the miners'\nledger.\n“I read a page in the office. The book\nstayed there. Hilario asked us to\nkeep the private entries out of the\naccount.”\n“And the copies?”\n“The pension figures went with him.\nChano copied them; I checked the\nsums.”\nThe stenographer recorded this as\nevidence that the machine had\ndeveloped judgment. The judge\nstruck the phrase from the record.\nChano, who was present, said\nnothing.\n",
+      "source_block_ids": [
         264,
         265,
         266,
         267,
         268,
         269,
-        270
-      ],
-      "asset": "output/illustrations/revised/issue-04/plate-14.png",
-      "status": "planned",
-      "caption": "Forty minutes.",
-      "scene_brief": "At the safe landing after the lift fault, Don Hilario sits while Q holds the light; Chano addresses the guide. The attendant or technician tends the stopped lift separately. No catastrophic shaft fall or Q repairing machinery without evidence."
-    },
-    {
-      "plate_id": "issue-04-plate-15",
-      "page": 31,
-      "facing_text_page": 30,
-      "facing_text": "“Shall I keep the totals?” he asked.\n“Just check them,” Chano said.\n“Hilario is taking the pages.”\nThe second total was wrong. They\nfound a deduction counted twice and\ncorrected it. Nothing in the\ncorrection required a public\nstatement. Q found this\nunexpectedly satisfying, and left it\nout of his account until the\nCustodian asked whether anything\non the journey had gone well.\nMuch later, a questioner asked Q\nwhether he had taken the miners'\nledger.\n“I read a page in the office. The book\nstayed there. Hilario asked us to keep\nthe private entries out of the\naccount.”\n“And the copies?”\n“The pension figures went with him.\nChano copied them; I checked the\nsums.”\nThe stenographer recorded this as\nevidence that the machine had\ndeveloped judgment. The judge\nstruck the phrase from the record.\nChano, who was present, said\nnothing.\n",
-      "source_block_ids": [
+        270,
         271,
         272,
         273,
@@ -484,9 +726,36 @@
         278
       ],
       "asset": "output/illustrations/revised/issue-04/plate-15.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The second total.",
-      "scene_brief": "Don Hilario keeps the selected pension figures; Chano and Q check the duplicate deduction at a table with a school notebook and cardboard shielding unrelated columns. Quiet useful work, not another publicity event or transfer of the entire ledger to Q."
+      "scene_brief": "Don Hilario keeps the selected pension figures; Chano and Q check the duplicate deduction at a table with a school notebook and cardboard shielding unrelated columns. Quiet useful work, not another publicity event or transfer of the entire ledger to Q.",
+      "scene_anchor": "The second total was wrong.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-11.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-05.png"
+      ],
+      "generation_prompt": "Use case: illustration-story. A single new full-page portrait illustration for The Ingenious Machine by A. Cervantes, iNQ comic trim 6.625 x 10.25 inches. Neutral black-and-white Goya-inspired etching and aquatint, rich crosshatching and human observation, bright unprinted white highlights, no sepia or gray paper wash. Full-bleed composition to every edge, not a framed illustration, no white border. No lettering, captions, typography, watermarks or logos; the only allowed graphic is Q's established question-mark motif. Keep main faces/hands away from the bottom 6 percent, which will have a separately typeset caption. Contemporary near-future Mexico with ordinary clothing and practical devices, never medieval dress, knights, skeleton army or dystopian spectacle. Preserve the exact established Q robot: elongated segmented oval metal head, distinct circular ears, long narrow exposed mechanical neck, slender articulated limbs, rectangular riveted breastplate with one question-mark motif. His posture is attentive and conversational, not a stiff stock robot. After the service-station change he wears a well-fitted dark contemporary sponsor jacket with a small silver question mark embroidered on its lapel; no long ragged coat in later scenes. Reference images establish identity and etching style, not a composition to copy. Draw only the specific action below. Portrait 2:3 at the highest available native resolution.\nScene: Don Hilario keeps the selected pension figures; Chano and Q check the duplicate deduction at a table with a school notebook and cardboard shielding unrelated columns. Quiet useful work, not another publicity event or transfer of the entire ledger to Q.\nImage 1 establishes Q, Chano and Hilario identities. Same modest fictional mine records office, but NEW composition: diagonal view across a work table, three companions doing pension arithmetic together. Chano, stocky dark-haired black-mustached, WRITES selected numbers in an open inexpensive school notebook. Three notebook pages, not stacks of copies. A sheet of plain cardboard covers most unrelated columns of the old ledger; one narrow strip remains visible to consult. Q in short sponsor jacket leans in attentively checking what Chano reads, one hand indicating the notebook, NOT photographing or taking the original. Hilario, lean elderly gray-haired gray-mustached, sits opposite them ready to take HIS notebook pages. Workaday concentration and mild satisfaction, not a triumphant publicity image. Ordinary helmets sit on a shelf. No legible names or figures, no report headings, no magical holograms or camera.",
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-0f5cf346-d299-4cdb-81b5-944db44ac9f5.png",
+      "visual_review": "Inspected: Chano writes in a notebook, Q checks sums, Hilario holds the selected pages. Cardboard shields other ledger columns. Original ledger stays in office; fictional figures are not asserted authentic records.",
+      "asset_sha256": "1b538f76365a2dd5fdb18e57318f28079a677f054a714469b802cb344d54be6e",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "source_color_mode": "RGB",
+      "effective_full_bleed_dpi": 149.85
+    }
+  ],
+  "generation_mode": "built-in image generation; one new image per scene; targeted phone, cover-architecture and lift-actor edits",
+  "architectural_sources": [
+    {
+      "url": "https://cultura.guanajuato.gob.mx/index.php/teatro-juarez/",
+      "use": "Geometric ceiling, star chandelier, Neo-Mudéjar horseshoe hall and iron balcony description."
+    },
+    {
+      "url": "https://cultura.guanajuato.gob.mx/wp-content/uploads/2025/03/cata%CC%81logo_espacios_cultura_mar25_.pdf",
+      "page": 2,
+      "use": "Lower-right auditorium photograph as reference for plate 07 and cover background edit."
     }
   ]
 }
