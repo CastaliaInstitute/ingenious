@@ -8,6 +8,7 @@
   "plate_count_including_cover": 14,
   "status": "planned; no new images generated or approved",
   "character_reference": "output/illustrations/revised/issue-01/cover.png",
+  "chano_reference": "output/illustrations/revised/issue-03/plate-06.png",
   "art_direction": "Unique facing-text scene, Goya-inspired etched realism. Preserve Q's established segmented head, exposed neck, long limbs and question-mark breastplate; coat and shoulder damage follow the actual scene chronology. Custodian male, tall, long gray hair tied back, glasses, white work shirt and boots. Neutral black and gray with pure white highlights, no cream texture. Full trim bleed, separately typeset margin caption. Review secondary-character designs before generating their recurring appearances.",
   "approval_scope": "Pagination and scene-selection plan only. Recheck chapter hash and actual facing text after every source edit. Reject these planned entries in final PDF production until unique assets are generated and individually reviewed.",
   "plates": [

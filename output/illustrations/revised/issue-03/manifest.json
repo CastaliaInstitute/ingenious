@@ -1,23 +1,33 @@
 {
   "issue": 3,
-  "revision": "2026-09-08-embodied-voice",
+  "revision": "2026-09-08-lucia-competent-alternative",
   "source": "novel/THE_INGENIOUS_MACHINE.md",
-  "chapter_sha256": "f5cad6f4a511726ddbdaf870bdb13468d4cac5c6319f22eb4fdff275328afb8a",
+  "chapter_sha256": "fb115a7f3cb9004192e340be0a97b1108b12d3c87cc6ed9d5e582fc352ac48d8",
   "page_count": 20,
   "text_font": "Georgia 12/17 pt",
   "plate_count_including_cover": 10,
-  "status": "planned; no new images generated or approved",
+  "generation_mode": "built-in image generation; one new image per scene; targeted lettering removal on plate 02",
   "character_reference": "output/illustrations/revised/issue-01/cover.png",
-  "art_direction": "Unique facing-text scene, Goya-inspired etched realism. Preserve Q's established segmented head, exposed neck, long limbs and question-mark breastplate; coat and shoulder damage follow the actual scene chronology. Custodian male, tall, long gray hair tied back, glasses, white work shirt and boots. Neutral black and gray with pure white highlights, no cream texture. Full trim bleed, separately typeset margin caption. Review secondary-character designs before generating their recurring appearances.",
-  "approval_scope": "Pagination and scene-selection plan only. Recheck chapter hash and actual facing text after every source edit. Reject these planned entries in final PDF production until unique assets are generated and individually reviewed.",
+  "lucia_reference": "output/illustrations/revised/issue-03/cover.png",
+  "secondary_reference": "output/illustrations/revised/issue-03/plate-07.png",
+  "approval_scope": "Ten unique scene-correspondent revision-proof plates; source and asset hashes bound to this pagination. Native detail about 150 dpi, not a press master. No physical printing approved or performed.",
   "plates": [
     {
       "plate_id": "issue-03-cover",
       "page": 1,
       "asset": "output/illustrations/revised/issue-03/cover.png",
-      "status": "planned",
-      "caption": "No part prepared for her.",
-      "scene_brief": "Lucía at the converted railway warehouse with the road petition; Q listens among a full, varied audience. Lucía is a working speaker, not a saint, muse, romantic apparition or robot's prize."
+      "status": "approved",
+      "caption": "Dulcinea Is Not Available",
+      "prompt": "Use case: illustration-story. Create a NEW single full-page portrait plate for The Ingenious Machine, a near-future Mexican literary novel, not a remix of the reference scene. Goya-inspired black-and-white etching, assured crosshatching and restrained aquatint, clear faces and gestures, PURE WHITE unprinted highlights, absolutely no sepia, cream, beige, aged paper, border or lettering. Portrait 2:3, highest available detail. Full bleed composition; keep important faces/hands above bottom 6% for a separately typeset caption. The attached image is ONLY a character and etching-style reference. Q must keep its exact slim long-limbed body, narrow segmented oval head, round ear mechanisms, exposed neck, articulated hands, question-mark breastplate and long worn coat. No knight, weapons, helmet or horse. Q is thoughtful and socially capable. The Custodian, ONLY if scene calls for him, is the same tall older man with long tied-back gray hair, rectangular glasses, white work shirt and boots. Otherwise do NOT include the Custodian. Modern Mexican clothing and working environments, not colonial costume. COVER scene: A converted railway warehouse in Querétaro. Lower two-thirds of composition: Lucía, a Mexican woman around forty, dark shoulder-length hair tied loosely back, strong unglamorized face, plain dark green work jacket rendered grayscale over a simple blouse, sets a folded road map on a table; she is absorbed in her work. Q sits among folding chairs to one side, attentive, not the center of her life. Students and older residents wait with papers. High roof windows produce a quiet PURE WHITE upper quarter for separately typeset cover title; no beam or face in that title area. No Custodian. Preserve reference Q but create completely new scene.",
+      "asset_sha256": "ce443d7b50444690066a3799ddac89a139da9b81df6c06388d71dd2c966dc962",
+      "raster_size_px": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_trim": 149.85,
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-d7381216-7435-4de0-a58f-8f4aabf672fd.png",
+      "review_scope": "Scene correspondence and character continuity reviewed for revision-proof insertion; not an A+ press-resolution approval.",
+      "review_note": "Concrete facing action and recurring character appearance checked. Incidental architecture and scenery are fictional illustrations, not surveyed depictions."
     },
     {
       "plate_id": "issue-03-plate-01",
@@ -42,9 +52,18 @@
         14
       ],
       "asset": "output/illustrations/revised/issue-03/plate-01.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The working window.",
-      "scene_brief": "On the bus to Querétaro, Q helps with the window latch after the poem is interrupted; driver and passengers continue their ordinary journey. No audience enthralled by an oration."
+      "prompt": "Use case: illustration-story. Create a NEW single full-page portrait plate for The Ingenious Machine, a near-future Mexican literary novel, not a remix of the reference scene. Goya-inspired black-and-white etching, assured crosshatching and restrained aquatint, clear faces and gestures, PURE WHITE unprinted highlights, absolutely no sepia, cream, beige, aged paper, border or lettering. Portrait 2:3, highest available detail. Full bleed composition; keep important faces/hands above bottom 6% for a separately typeset caption. The attached image is ONLY a character and etching-style reference. Q must keep its exact slim long-limbed body, narrow segmented oval head, round ear mechanisms, exposed neck, articulated hands, question-mark breastplate and long worn coat. No knight, weapons, helmet or horse. Q is thoughtful and socially capable. The Custodian, ONLY if scene calls for him, is the same tall older man with long tied-back gray hair, rectangular glasses, white work shirt and boots. Otherwise do NOT include the Custodian. Modern Mexican clothing and working environments, not colonial costume. Scene: Inside an ordinary intercity bus approaching Querétaro. Q is standing carefully beside a seated passenger, using one articulated hand to free the sliding window latch. The passenger looks toward the opening, a driver is visible well ahead, other passengers mind their bags. The practical window, not a grand speech, occupies Q's attention. His long coat has a small tear at the shoulder from an earlier loading shutter. Bright road daylight through glass, intimate oblique aisle view. No Custodian, no Lucía.",
+      "asset_sha256": "5a0683d0bae66a70a0cbaf71b8e63f69418ec791edce2fb92864c73dfda35f9a",
+      "raster_size_px": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_trim": 149.85,
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-984882b4-58d4-4d0a-b896-4708014b4bcd.png",
+      "review_scope": "Scene correspondence and character continuity reviewed for revision-proof insertion; not an A+ press-resolution approval.",
+      "review_note": "Concrete facing action and recurring character appearance checked. Incidental architecture and scenery are fictional illustrations, not surveyed depictions."
     },
     {
       "plate_id": "issue-03-plate-02",
@@ -69,9 +88,20 @@
         28
       ],
       "asset": "output/illustrations/revised/issue-03/plate-02.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The pitch on the map.",
-      "scene_brief": "Lucía and the young engineer mark the football pitch, entrance and proposed bus stop on the three-route working map. Both are engaged in a concrete task; no faceless bureaucratic villain."
+      "prompt": "Edit this illustration only to remove all readable typography and invented slogans. Replace the wall slogans with plain textured plaster; book spines and pencil cup should have no words. Keep map routes, football pitch icon and bus-stop icon but remove their text labels, leaving faint unlabeled map detail. Preserve EXACTLY both people, their faces, hands, clothing, pencil, pose, all furniture, map geometry, viewpoint and black-and-white etching style. Neutral grayscale and pure white highlights. No added text or other changes.",
+      "original_prompt": "Use case: illustration-story. Create a NEW single full-page portrait plate for The Ingenious Machine, a near-future Mexican literary novel, not a remix of the reference scene. Goya-inspired black-and-white etching, assured crosshatching and restrained aquatint, clear faces and gestures, PURE WHITE unprinted highlights, absolutely no sepia, cream, beige, aged paper, border or lettering. Portrait 2:3, highest available detail. Full bleed composition; keep important faces/hands above bottom 6% for a separately typeset caption. The attached image is ONLY a character and etching-style reference. Q must keep its exact slim long-limbed body, narrow segmented oval head, round ear mechanisms, exposed neck, articulated hands, question-mark breastplate and long worn coat. No knight, weapons, helmet or horse. Q is thoughtful and socially capable. The Custodian, ONLY if scene calls for him, is the same tall older man with long tied-back gray hair, rectangular glasses, white work shirt and boots. Otherwise do NOT include the Custodian. Modern Mexican clothing and working environments, not colonial costume. Input image 2 supplies Lucía's identity; preserve her face and work clothes, not the cover composition. Scene: In a modest municipal engineering office, Lucía and a young engineer bend over a working road map spread across a desk. She marks the football pitch entrance with a pencil while he holds down a different corner. A bus-stop request is another small mark. Three routes, ordinary paper not futuristic hologram. Lucía must be exactly the foreground woman in reference 2: loosely tied dark hair, work jacket, blouse, mature face. Engineer young man in plain shirt with rolled sleeves. No Q or Custodian, no audience, only these two. Side view close enough to see their practical cooperation; not a repeat of the public warehouse cover.",
+      "edit_reason": "Removed invented wall slogans and map labels without changing the people or action.",
+      "asset_sha256": "ee21c8e4ab484725b119d5d05874e816fbef3aa3fe60431f4ddebbc81e42e05d",
+      "raster_size_px": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_trim": 149.85,
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-e99261a9-450f-4129-9c06-2c6ed66c9bfa.png",
+      "review_scope": "Scene correspondence and character continuity reviewed for revision-proof insertion; not an A+ press-resolution approval.",
+      "review_note": "Concrete facing action and recurring character appearance checked. Incidental architecture and scenery are fictional illustrations, not surveyed depictions."
     },
     {
       "plate_id": "issue-03-plate-03",
@@ -100,15 +130,24 @@
         46
       ],
       "asset": "output/illustrations/revised/issue-03/plate-03.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Four minutes.",
-      "scene_brief": "Lucía eats her taco beside a parking meter, protecting the engineer's handwritten extension from salsa; copies under her arm. No Q in the scene."
+      "prompt": "Use case: illustration-story. Create a NEW single full-page portrait plate for The Ingenious Machine, a near-future Mexican literary novel, not a remix of the reference scene. Goya-inspired black-and-white etching, assured crosshatching and restrained aquatint, clear faces and gestures, PURE WHITE unprinted highlights, absolutely no sepia, cream, beige, aged paper, border or lettering. Portrait 2:3, highest available detail. Full bleed composition; keep important faces/hands above bottom 6% for a separately typeset caption. The attached image is ONLY a character and etching-style reference. Q must keep its exact slim long-limbed body, narrow segmented oval head, round ear mechanisms, exposed neck, articulated hands, question-mark breastplate and long worn coat. No knight, weapons, helmet or horse. Q is thoughtful and socially capable. The Custodian, ONLY if scene calls for him, is the same tall older man with long tied-back gray hair, rectangular glasses, white work shirt and boots. Otherwise do NOT include the Custodian. Modern Mexican clothing and working environments, not colonial costume. Input image 2 supplies Lucía's identity; preserve her face and work clothes, not the cover composition. Scene: Lucía alone on a Querétaro sidewalk beside a parking meter, eating a taco in the short interval before her bus. The same dark-haired woman and work jacket as reference 2. A folder of copies is tucked under her arm; she holds the taco carefully as a drop of salsa threatens the small paper bearing an engineer's telephone extension. Capture her concentrated half-smile at this inconvenience. Street storefronts and passing pedestrians blurred in etched distance. No Q, no Custodian, no map table or microphone. No text inscriptions.",
+      "asset_sha256": "be041313270bde4cea59923077e36fedca0a3cb580aabf2c4775fa31539bdf7f",
+      "raster_size_px": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_trim": 149.85,
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-5afec265-3767-43aa-8a16-24525dfd13a4.png",
+      "review_scope": "Scene correspondence and character continuity reviewed for revision-proof insertion; not an A+ press-resolution approval.",
+      "review_note": "Concrete facing action and recurring character appearance checked. Incidental architecture and scenery are fictional illustrations, not surveyed depictions."
     },
     {
       "plate_id": "issue-03-plate-04",
       "page": 9,
       "facing_text_page": 8,
-      "facing_text": "The microphone failed on\ninconvenient.\n“Even the microphone has a\nposition,” she said, and the room\nlaughed.\nQ liked her timing. He liked that she\nreturned immediately to the\ndocuments, without waiting for the\njoke to become a tribute. He began\ncomposing a reply.\nWhen she invited questions, he\nraised his hand.\nChano touched his sleeve. “A\nquestion.”\n“I know.”\nLucía nodded to him.\n“Which of the three routes is the\nministry actually considering? And is\nthe petition asking for a different\nroute, or for a decision to wait?”\n“For the alternatives to remain open\nwhile the people affected can\nexamine them,” Lucía said. “Some\nsigners want the road. Some don't.\nNone has seen a signed choice of\nalignment. We have asked for that in\nwriting. Twice.”\nQ thanked her. She pointed him\ntoward the public summary on the\ntable.\n“May I ask you about the account you\nare putting together afterward?” he\nsaid. “The Custodian of the Castalia\narchive and I are writing about the\njourney. I'd like to understand how\nyours is being assembled.”\n“Which account? These records\nbelong to different people. What do\nyou want to do with them?”\nShe had asked about the records. Q\nanswered about the book. He spoke\nof an account whose people could\nobject to their parts, and of how her\nargument had made him reconsider\na passage of his own. It was an\nanswer he could give well. The room\nhad recognized him; phones were\nlifting again.\n“A Dulcinea who can answer the\nbook back,” he said. “Someone the\nadventure has to listen to.”\nThere was a little laughter. Lucía did\nnot join it.\n“And that's why you've invented a\nplace for me in yours?”\n“I meant that you could contest the\naccount.”\n“You have read every woman\nhumanity imagined and mistaken\nthem all for me.”\nQ had imagined the right to object as\na generous place to offer someone in\na book. Lucía was declining the work\nof occupying it. He could see what\nshe meant; he disliked how much of\nhis prepared answer it left him\nholding.\n“You're right. You asked what I\nwanted the records for, and I gave\n",
+      "facing_text": "The microphone failed on\ninconvenient.\n“Even the microphone has a\nposition,” she said, and the room\nlaughed.\nQ liked her timing. He liked that she\nreturned immediately to the\ndocuments, without waiting for the\njoke to become a tribute. He began\ncomposing a reply.\nWhen she invited questions, he\nraised his hand.\nChano touched his sleeve. “A\nquestion.”\n“I know.”\nLucía nodded to him.\n“Which of the three routes is the\nministry actually considering? And is\nthe petition asking for a different\nroute, or for a decision to wait?”\n“For the alternatives to remain open\nwhile the people affected can\nexamine them,” Lucía said. “Some\nsigners want the road. Some don't.\nNone has seen a signed choice of\nalignment. We have asked for that in\nwriting. Twice.”\nQ thanked her. She pointed him\ntoward the public summary on the\ntable.\n“May I ask you about the account you\nare putting together afterward?” he\nsaid. “The Custodian of the Castalia\narchive and I are writing about the\njourney. I'd like to understand how\nyours is being assembled.”\n“Which account? These records\nbelong to different people. What do\nyou want to do with them?”\n“Describe this visit, if there's\nsomething useful I can say about it.\nI'm not asking for the private\nrecords. I'll read the summary first; if\nit leaves a question, may I send it to\nthe contact listed there?”\n“Yes. Include the page number. We\nget questions about versions we\nstopped using in February.”\nHe thanked her and sat. Chano\nshifted the chair so Q's coat would\nnot catch beneath it. For a moment\nthe next question belonged to a man\nholding a map.\nThen somebody near the woman\nstreaming the event called out, “Del\nToboso! Does that make her your\nDulcinea?”\nSeveral phones turned toward Q. The\nman with the map lowered it.\n“No,” Q said. “She's explaining a\npetition. I came to ask about it.”\n“He hasn't proposed yet,” the voice\nsaid.\nThere was laughter. Q had an answer\nready about what the proposed road\nmight cost, then saw Lucía reaching\nfor the microphone. He let her take\nthe turn.\n",
       "source_block_ids": [
         47,
         48,
@@ -132,17 +171,25 @@
         66
       ],
       "asset": "output/illustrations/revised/issue-03/plate-04.png",
-      "status": "planned",
-      "caption": "The unwanted comparison.",
-      "scene_brief": "At the warehouse reading, Lucía answers Q's literary comparison firmly while phones record. Q is seated or at his audience place, listening rather than approaching or kneeling."
+      "status": "approved",
+      "caption": "Her turn.",
+      "prompt": "Use case: illustration-story. Create a NEW single full-page portrait plate for The Ingenious Machine, a near-future Mexican literary novel, not a remix of the reference scene. Goya-inspired black-and-white etching, assured crosshatching and restrained aquatint, clear faces and gestures, PURE WHITE unprinted highlights, absolutely no sepia, cream, beige, aged paper, border or lettering. Portrait 2:3, highest available detail. Full bleed composition; keep important faces/hands above bottom 6% for a separately typeset caption. The attached image is ONLY a character and etching-style reference. Q must keep its exact slim long-limbed body, narrow segmented oval head, round ear mechanisms, exposed neck, articulated hands, question-mark breastplate and long worn coat. No knight, weapons, helmet or horse. Q is thoughtful and socially capable. The Custodian, ONLY if scene calls for him, is the same tall older man with long tied-back gray hair, rectangular glasses, white work shirt and boots. Otherwise do NOT include the Custodian. Modern Mexican clothing and working environments, not colonial costume. Input image 2 supplies Lucía's identity; preserve her face and work clothes, not the cover composition. Scene: Public reading in the converted railway warehouse. View from beside seated Q toward Lucía, same woman from reference 2, reaching to take the microphone so she can answer an audience heckle herself. Q has stopped speaking and is listening, his hands relaxed. Several spectators hold phones aimed at Q; one seated man has a folded road map lowered on his knees. Lucía is not angry at Q, not rejecting a marriage proposal; she is reclaiming her discussion. Make the microphone turn and diverging attention legible, no romance or kneeling. Q's coat has the small shoulder tear. Do not repeat cover's map-table composition.",
+      "asset_sha256": "cf2259f7e49c8e614a52aa249529ae622e5ea73f181048c88da129fb8e1385f5",
+      "raster_size_px": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_trim": 149.85,
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-7f015c2c-2c0a-4ad5-b120-7cd4e5885593.png",
+      "review_scope": "Scene correspondence and character continuity reviewed for revision-proof insertion; not an A+ press-resolution approval.",
+      "review_note": "Concrete facing action and recurring character appearance checked. Incidental architecture and scenery are fictional illustrations, not surveyed depictions."
     },
     {
       "plate_id": "issue-03-plate-05",
       "page": 11,
       "facing_text_page": 10,
-      "facing_text": "you a part. I'm sorry. I'll begin with\nthe public summary.”\n“That is what it is there for.”\nShe called on somebody else. Q sat\ndown. Chano shifted the chair so his\ncoat would not catch beneath it.\n“You had a question and an answer,”\nChano said. “You nearly got away.”\nQ nodded. The camera remained\npointed at him for another minute,\nhopeful of a larger embarrassment.\nAfter the reading he joined the queue\nat the petition table. Lucía was\nsorting copies with Don Roque. Q\nasked whether the public petition\naccepted supporters from outside the\naffected parcels. Don Roque showed\nhim the separate column.\nHe signed Q and gave the archive's\npostal address. His hand gripped the\npen more firmly than necessary, but\nit survived the signature.\nThe tablet chimed. The pending\nbatch of names turned amber.\nPETITION STATUS:\nSUSPICIOUS.\nDon Roque tried again. Q's address\nwas absent from the public registry.\nCastalia had taught him to give it as\nan address while registering the\nbuilding under a different use and a\ndifferent description.\n“Withdraw mine,” Q said. “Can the\nrest be submitted separately?”\n“It has held the batch,” Don Roque\nsaid.\nQ read the warning. Deleting the\nlatest entry would not clear a review\nalready attached to the submission.\nLucía showed Don Roque the local\nnumber from the morning upload;\nthat attempt had not produced a\nministry acknowledgment either.\nThree hundred signatures were\nwaiting behind two numbers. Several\npeople in the queue were looking at\nthe machine whose name had\nproduced the second one.\n“I'll ask the archive to confirm the\naddress.”\n“Privately,” Lucía said. “Don't send\nthem our list.”\n“Only my details and the error\nmessage.”\nHe showed her the proposed request\nbefore sending it. The Custodian's\noffice acknowledged receipt. The\nautomatic answer promised a\nresponse during business hours and\nwished them success with their\nresearch.\n“That should be useful tomorrow,”\nChano said.\n“Assuming somebody's research\nconcerns today,” Lucía said.\nQ offered to write an explanation for\nthe people waiting. Lucía gave him a\nblank sheet. He headed it THE\nSIGNATURES ARE SAFE and\n",
+      "facing_text": "“I'm not waiting for him to propose.\nOr for you to find a better part for\nme.”\nShe looked toward the man with the\nmap.\n“Which crossing did you want to ask\nabout?”\n“The one by the school.”\nHe unfolded the sheet. Two people\nmoved their chairs so he could lay it\ndown. The woman streaming the\nevent took a step sideways to keep Q\nin view; from there, her viewers\ncould no longer see the crossing.\nQ watched Lucía weigh down one\ncurling corner with her phone. He\nhad written the same nickname in\nhis notebook. It had seemed\nharmless there: a joke the Custodian\nwould understand without needing\nits target to participate. He had\nalready told Chano not to copy it into\nthe register. Now he wanted to\nexplain this distinction to someone.\nNobody in the room had asked.\n“Next time ask where the toilets are,”\nChano murmured.\n“Would that help?”\n“I need to know.”\nAfter the reading he joined the queue\nat the petition table. Lucía was\nsorting copies with Don Roque. Q\nasked whether the public petition\naccepted supporters from outside the\naffected parcels. Don Roque showed\nhim the separate column.\nHe signed Q and gave the archive's\npostal address. His hand gripped the\npen more firmly than necessary, but\nit survived the signature.\nThe tablet chimed. The pending\nbatch of names turned amber.\nPETITION STATUS:\nSUSPICIOUS.\nDon Roque tried again. Q's address\nwas absent from the public registry.\nCastalia had taught him to give it as\nan address while registering the\nbuilding under a different use and a\ndifferent description.\n“Withdraw mine,” Q said. “Can the\nrest be submitted separately?”\n“It has held the batch,” Don Roque\nsaid.\nQ read the warning. Deleting the\nlatest entry would not clear a review\nalready attached to the submission.\nLucía showed Don Roque the local\nnumber from the morning upload;\nthat attempt had not produced a\nministry acknowledgment either.\nThree hundred signatures were\nwaiting behind two numbers. Several\npeople in the queue were looking at\nthe machine whose name had\nproduced the second one.\n“I'll ask the archive to confirm the\naddress.”\n",
       "source_block_ids": [
-        66,
         67,
         68,
         69,
@@ -160,19 +207,27 @@
         81,
         82,
         83,
-        84,
-        85
+        84
       ],
       "asset": "output/illustrations/revised/issue-03/plate-05.png",
-      "status": "planned",
-      "caption": "Two references.",
-      "scene_brief": "At the petition table Q writes a notice while Lucía and Chano compare submission references; the papers and incomplete work remain local, not a triumphant delivery."
+      "status": "approved",
+      "caption": "Outside the frame.",
+      "prompt": "Use case: illustration-story. Create a NEW single full-page portrait plate for The Ingenious Machine, a near-future Mexican literary novel, not a remix of the reference scene. Goya-inspired black-and-white etching, assured crosshatching and restrained aquatint, clear faces and gestures, PURE WHITE unprinted highlights, absolutely no sepia, cream, beige, aged paper, border or lettering. Portrait 2:3, highest available detail. Full bleed composition; keep important faces/hands above bottom 6% for a separately typeset caption. The attached image is ONLY a character and etching-style reference. Q must keep its exact slim long-limbed body, narrow segmented oval head, round ear mechanisms, exposed neck, articulated hands, question-mark breastplate and long worn coat. No knight, weapons, helmet or horse. Q is thoughtful and socially capable. The Custodian, ONLY if scene calls for him, is the same tall older man with long tied-back gray hair, rectangular glasses, white work shirt and boots. Otherwise do NOT include the Custodian. Modern Mexican clothing and working environments, not colonial costume. Input image 2 supplies Lucía's identity; preserve her face and work clothes, not the cover composition. Scene: From BEHIND a woman livestreaming on her phone at the warehouse discussion: her phone is aimed at seated Q off to one side, while in the clearly visible larger scene Lucía and a resident are examining a school crossing on a map spread over two folding chairs. Lucía's phone weighs down a curling corner. Same Lucía as reference 2. The broadcaster's narrow framing excludes the map. Build strong near/far composition illustrating this choice, not a collage or panels. Only tiny indistinct shapes on phone screen, no legible interface text. Q unarmed, coat with shoulder tear, listens without taking over. Do not duplicate the cover view.",
+      "asset_sha256": "fc065e0680e0b221a269bf0260bf780b18b1eb037ebe129540c75518f670c836",
+      "raster_size_px": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_trim": 149.85,
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-024cff74-8ea9-421f-a963-9c7d042ac6df.png",
+      "review_scope": "Scene correspondence and character continuity reviewed for revision-proof insertion; not an A+ press-resolution approval.",
+      "review_note": "Livestream excludes the map; other residents participate around it. Architecture and incidental scenery are fictional, not a verified geographic view."
     },
     {
       "plate_id": "issue-03-plate-06",
       "page": 13,
       "facing_text_page": 12,
-      "facing_text": "began listing the two submission\nreferences.\n“Safe where?” she asked.\n“We still have the originals and the\nlocal scan.”\n“A woman has just asked whether\nshe needs to stay until the ministry\nreceives her name. Will she read it\nthat way?”\nQ looked toward the queue. The\nwoman had a shopping bag at her\nfeet and a child asleep against her\nshoulder. His heading promised\nmore than the answer beneath it. He\ncrossed it out.\n“We have kept the signatures. We\nhaven't confirmed delivery,” he read\naloud. “Is that the distinction you\nneed?”\n“Put the numbers underneath,” Don\nRoque said. “I'll write the next\nanswer beside them.”\nThey checked the notice together. Q\nadded the contact for updates,\nshowed it to the woman, and asked\nwhether it answered her question.\nShe wanted to know when the next\nbus left. Chano went to look. When\nhe returned, she was already shifting\nthe sleeping child to reach the bag.\nHe carried it to the door for her.\nThe microphone failed again. For\nseven minutes the room discussed\nthe route, the water, the trees, and\nthe places the map described as\nempty. Q stayed beside the table,\nmaking copies when asked. The next\nperson in the queue asked him to\nmove the stapler, which he did\nwithout adding it to the account of\nhis afternoon.\nAs they were leaving, he returned to\nLucía.\n“I won't use that name for you\nagain.”\n“Good.”\n“May I send the reply about the\naddress to Don Roque?”\nShe checked with Don Roque. He\nwrote an email on the back of a\nleaflet and asked for a call if the\nanswer required action that day.\nQ saved the task beside the evening\nappointment with the Custodian. He\nwould have preferred to return with\na remarkable conversation. Instead\nhe had an unresolved error, a person\nto contact, and a crossed-out\nheading. The sentence about\nDulcinea would also be waiting when\nhe opened the draft. He could\nremove it there. Other people had\nrecordings.\nChano waited beneath the\nwarehouse arches.\n“Still a good chapter?” he asked.\n“I hope so. It has been a poor\nafternoon for the petition.”\n“Remember which one has a\ndeadline.”\n",
+      "facing_text": "“Privately,” Lucía said. “Don't send\nthem our list.”\n“Only my details and the error\nmessage.”\nHe showed her the proposed request\nbefore sending it. The Custodian's\noffice acknowledged receipt. The\nautomatic answer promised a\nresponse during business hours and\nwished them success with their\nresearch.\n“That should be useful tomorrow,”\nChano said.\n“Assuming somebody's research\nconcerns today,” Lucía said.\nQ offered to write an explanation for\nthe people waiting. Lucía gave him a\nblank sheet. He headed it THE\nSIGNATURES ARE SAFE and\nbegan listing the two submission\nreferences.\n“Safe where?” she asked.\n“We still have the originals and the\nlocal scan.”\n“A woman has just asked whether\nshe needs to stay until the ministry\nreceives her name. Will she read it\nthat way?”\nQ looked toward the queue. The\nwoman had a shopping bag at her\nfeet and a child asleep against her\nshoulder. His heading promised\nmore than the answer beneath it. He\ncrossed it out.\n“We have kept the signatures. We\nhaven't confirmed delivery,” he read\naloud. “Is that the distinction you\nneed?”\n“Put the numbers underneath,” Don\nRoque said. “I'll write the next\nanswer beside them.”\nThey checked the notice together. Q\nadded the contact for updates,\nshowed it to the woman, and asked\nwhether it answered her question.\nShe wanted to know when the next\nbus left. Chano went to look. When\nhe returned, she was already shifting\nthe sleeping child to reach the bag.\nHe carried it to the door for her.\nThe microphone failed again. For\nseven minutes the room discussed\nthe route, the water, the trees, and\nthe places the map described as\nempty. Q stayed beside the table,\nmaking copies when asked. The next\nperson in the queue asked him to\nmove the stapler, which he did\nwithout adding it to the account of\nhis afternoon.\nAs they were leaving, he returned to\nLucía.\n“May I send the reply about the\naddress to Don Roque?”\nShe checked with Don Roque. He\nwrote an email on the back of a\nleaflet and asked for a call if the\nanswer required action that day.\nQ saved the task beside the evening\nappointment with the Custodian. He\n",
       "source_block_ids": [
         85,
         86,
@@ -191,20 +246,30 @@
         99,
         100,
         101,
-        102,
-        103
+        102
       ],
       "asset": "output/illustrations/revised/issue-03/plate-06.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The bus will not wait.",
-      "scene_brief": "Chano helps the departing woman carry a bag while she carries her sleeping child; the warehouse exit and a bus in the distance. Q's corrected notice remains a background detail."
+      "prompt": "Use case: illustration-story. Create a NEW single full-page portrait plate for The Ingenious Machine, a near-future Mexican literary novel, not a remix of the reference scene. Goya-inspired black-and-white etching, assured crosshatching and restrained aquatint, clear faces and gestures, PURE WHITE unprinted highlights, absolutely no sepia, cream, beige, aged paper, border or lettering. Portrait 2:3, highest available detail. Full bleed composition; keep important faces/hands above bottom 6% for a separately typeset caption. The attached image is ONLY a character and etching-style reference. Q must keep its exact slim long-limbed body, narrow segmented oval head, round ear mechanisms, exposed neck, articulated hands, question-mark breastplate and long worn coat. No knight, weapons, helmet or horse. Q is thoughtful and socially capable. The Custodian, ONLY if scene calls for him, is the same tall older man with long tied-back gray hair, rectangular glasses, white work shirt and boots. Otherwise do NOT include the Custodian. Modern Mexican clothing and working environments, not colonial costume. Scene: At the open doorway of the converted railway warehouse, Chano helps a woman depart for the bus. Chano is a stocky middle-aged Mexican logistics worker with short dark hair, a mustache, a plain work shirt and practical trousers; he holds her heavy shopping bag while she carries her sleeping young child against her shoulder. Their attention is on getting through the doorway without waking the child. Folding chairs and petition table recede behind them. No Q, no Custodian, no Lucía required. Eye-level side view, tender but unsentimental. No signs, slogans, captions or any readable letters.",
+      "asset_sha256": "93564305e19b16f1e957eaa4ae95416e3aa86172b9ad424863eb5a7a94da60a3",
+      "raster_size_px": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_trim": 149.85,
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-2fc1f745-0edd-4328-aa04-b9f540409298.png",
+      "review_scope": "Scene correspondence and character continuity reviewed for revision-proof insertion; not an A+ press-resolution approval.",
+      "review_note": "Concrete facing action and recurring character appearance checked. Incidental architecture and scenery are fictional illustrations, not surveyed depictions."
     },
     {
       "plate_id": "issue-03-plate-07",
       "page": 15,
       "facing_text_page": 14,
-      "facing_text": "Interlude: The Name That\nWould Not Sign\nThe day after the meeting, Don\nRoque took the petition to the\nmunicipality. He carried\nidentification, copies, the local\nsubmission numbers, and a spare\nfolder. Years at the railway station\nhad taught him that a journey might\nrequire documents unrelated to its\ndestination.\nThe clerk, Araceli, had a little image\nof the Virgin of San Juan beside her\nmonitor and a message from her\ndaughter asking whether she would\nbe home for lunch. She wrote start\nwithout me, then regretted having\nmade this sound like an arrangement\nrather than a prediction.\nDon Roque laid out the pages.\n“Are these the originals?”\n“These. The copies are underneath.”\n“And these?”\n“Copies for the person who asks after\nthe first copies have gone.”\nAraceli gave him back one set. “Then\nyou may get home with a souvenir.”\nThe scan had treated a thumbprint\nand the adjacent handwritten name\nas two entries. Don Roque knew the\nsigner. She had supplied the print\nwhen a pen failed; someone had\nadded her name beside it. Araceli\ncompared the paper with the scan,\nmarked the pair for manual\nchecking, and retained the original\nprint. The counter fell by one. The\nnumber of people remained the\nsame, which she could explain at the\ndesk more easily than in the box\nprovided for an explanation.\nQ's entry presented a different\nproblem. His address appeared in an\nabandoned- property list under a\nname unlike the one on the petition.\nThe archive's own brochure offered\ndirections, a telephone number, and\na claim to illuminate the future. The\nregistry wanted a building reference.\n“Does he live there?” Araceli asked.\n“He says so. I haven't been to his\nroom.”\n“Keep that distinction on the form.”\nDon Roque had expected an\nargument about whether a machine\ncould sign. Instead he was being\nasked which of two names identified\na building. He supplied what he\nknew and left the rest blank. Araceli\nsent the supporter entry to a separate\naddress check. It would not, by itself,\nestablish that Q occupied an affected\nparcel. Don Roque showed her the\ncolumn for supporters outside those\nparcels. She nodded and marked it.\nLucía arrived with Q's notice and the\nreply from the Custodian's office.\nThe reply confirmed where he lived\nbut used the archive's public name\nagain.\n",
+      "facing_text": "would have preferred to return with\na remarkable conversation. Instead\nhe had an unresolved error, a person\nto contact, and a crossed-out\nheading. He crossed out the private\nnickname too. He could still\nremember why it had pleased him.\nThat did not make it worth keeping.\nChano waited beneath the\nwarehouse arches.\n“Still a good chapter?” he asked.\n“I hope so. It has been a poor\nafternoon for the petition.”\n“Remember which one has a\ndeadline.”\nInterlude: The Name That\nWould Not Sign\nThe day after the meeting, Don\nRoque took the petition to the\nmunicipality. He carried\nidentification, copies, the local\nsubmission numbers, and a spare\nfolder. Years at the railway station\nhad taught him that a journey might\nrequire documents unrelated to its\ndestination.\nThe clerk, Araceli, had a little image\nof the Virgin of San Juan beside her\nmonitor and a message from her\ndaughter asking whether she would\nbe home for lunch. She wrote start\nwithout me, then regretted having\nmade this sound like an arrangement\nrather than a prediction.\nDon Roque laid out the pages.\n“Are these the originals?”\n“These. The copies are underneath.”\n“And these?”\n“Copies for the person who asks after\nthe first copies have gone.”\nAraceli gave him back one set. “Then\nyou may get home with a souvenir.”\nThe scan had treated a thumbprint\nand the adjacent handwritten name\nas two entries. Don Roque knew the\nsigner. She had supplied the print\nwhen a pen failed; someone had\nadded her name beside it. Araceli\ncompared the paper with the scan,\nmarked the pair for manual\nchecking, and retained the original\nprint. The counter fell by one. The\nnumber of people remained the\nsame, which she could explain at the\ndesk more easily than in the box\nprovided for an explanation.\nQ's entry presented a different\nproblem. His address appeared in an\nabandoned- property list under a\nname unlike the one on the petition.\nThe archive's own brochure offered\ndirections, a telephone number, and\na claim to illuminate the future. The\nregistry wanted a building reference.\n“Does he live there?” Araceli asked.\n“He says so. I haven't been to his\nroom.”\n“Keep that distinction on the form.”\nDon Roque had expected an\nargument about whether a machine\n",
       "source_block_ids": [
+        102,
+        103,
         104,
         105,
         106,
@@ -220,20 +285,30 @@
         116,
         117,
         118,
-        119
+        119,
+        120,
+        121
       ],
       "asset": "output/illustrations/revised/issue-03/plate-07.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "One person, two marks.",
-      "scene_brief": "Municipal clerk Araceli and retired railway worker Don Roque compare a handwritten name and thumbprint on the petition. She marks a manual check without deleting either."
+      "prompt": "Use case: illustration-story. Create a NEW single full-page portrait plate for The Ingenious Machine, a near-future Mexican literary novel, not a remix of the reference scene. Goya-inspired black-and-white etching, assured crosshatching and restrained aquatint, clear faces and gestures, PURE WHITE unprinted highlights, absolutely no sepia, cream, beige, aged paper, border or lettering. Portrait 2:3, highest available detail. Full bleed composition; keep important faces/hands above bottom 6% for a separately typeset caption. The attached image is ONLY a character and etching-style reference. Q must keep its exact slim long-limbed body, narrow segmented oval head, round ear mechanisms, exposed neck, articulated hands, question-mark breastplate and long worn coat. No knight, weapons, helmet or horse. Q is thoughtful and socially capable. The Custodian, ONLY if scene calls for him, is the same tall older man with long tied-back gray hair, rectangular glasses, white work shirt and boots. Otherwise do NOT include the Custodian. Modern Mexican clothing and working environments, not colonial costume. Scene: A modest municipal counter in Querétaro. Araceli, a Mexican clerk around fifty with short straight dark hair, small rectangular glasses and a plain light cardigan, compares a handwritten signature and thumbprint on a petition with Don Roque, a retired railway worker around seventy with cropped white hair, clean-shaven, sturdy face, dark modest zip-front jacket over a check shirt, holding a spare folder. Her pencil marks a manual check, neither erases the marks nor stamps a person out. Show clear, plausible hands, desk scanner, old monitor and a small devotional image of the Virgin of San Juan beside it. Just these two characters, no Q or Custodian. Tight three-quarter counter view. Make signatures unreadable pen strokes; no typography, posters, signs, labels or invented slogans anywhere.",
+      "asset_sha256": "917bc5b0df1c1b05686781a5fec64188bece0ecd64c0c575da3885af7e915c6c",
+      "raster_size_px": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_trim": 149.85,
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-c8c87ead-9c09-4294-a3f6-f3640d20c3f2.png",
+      "review_scope": "Scene correspondence and character continuity reviewed for revision-proof insertion; not an A+ press-resolution approval.",
+      "review_note": "Concrete facing action and recurring character appearance checked. Incidental architecture and scenery are fictional illustrations, not surveyed depictions."
     },
     {
       "plate_id": "issue-03-plate-08",
       "page": 17,
       "facing_text_page": 16,
-      "facing_text": "“Did they give you a receipt?” she\nasked Don Roque.\nHe showed her the municipal\nacknowledgment. It recorded the\npaper delivery. The morning's\nministry upload and the later held\nbatch still required separate answers.\nLucía put the papers in order. The\ncrossed-out heading on Q's notice\nread THE SIGNATURES ARE\nSAFE.\n“This won't go up on the wall,” she\nsaid. “People will read the large\nwords.”\n“The correction is underneath.”\n“People have buses to catch.”\nAraceli found a clean sheet. They\ncopied the corrected notice with the\ntwo submission numbers and the\nmunicipal acknowledgment. Don\nRoque kept the first sheet with the\nworking papers. The next person to\nread it would not have to guess why\nthe heading had changed.\nWhile the printer worked, Araceli\ncalled the extension supplied by the\nengineer. This time somebody\nanswered. They wanted a parcel list,\nnot another copy of the signatures.\nLucía took the telephone. She had\nthe list, but two families had asked\nthat their contact details not\naccompany the public version.\n“Which office needs those details?”\nshe asked.\nAraceli checked the time. Her\ndaughter had sent a photograph of\nlunch, already being eaten. Don\nRoque offered her one of the cookies\nfrom the reading. It had spent the\nnight in his folder and broke along\nthe same crease as the petition.\n“Not another document,” she said.\nThe petition took three weeks to\nreceive a ministry reply. The corridor\nwould be reviewed by a technical\ncommission once the parcel\nreferences and the record of direct\nimpact had been checked. The\nsupporter signatures remained\nattached; they were not a substitute\nfor those records. Lucía had more\nwork. She also had a named contact,\na corrected map layer, and three\nacknowledgments whose numbers\nshe could now distinguish without\nopening the folder.\nThe woman who had streamed the\nreading discovered that her\nphotograph of the petition margin\nwas circulating under THE\nPEOPLE WHO WANT TO STOP\nTHE FUTURE. The actual sentence\nwas I AM NOT AGAINST\nPROGRESS. I AM AGAINST\nBEING MOVED TO MAKE\nROOM FOR IT.\nShe asked the site to correct the\nheadline. Its reply gave her an\naudience figure. She had asked for\ndifferent words and received a large\nnumber.\n",
+      "facing_text": "could sign. Instead he was being\nasked which of two names identified\na building. He supplied what he\nknew and left the rest blank. Araceli\nsent the supporter entry to a separate\naddress check. It would not, by itself,\nestablish that Q occupied an affected\nparcel. Don Roque showed her the\ncolumn for supporters outside those\nparcels. She nodded and marked it.\nLucía arrived with Q's notice and the\nreply from the Custodian's office.\nThe reply confirmed where he lived\nbut used the archive's public name\nagain.\n“Did they give you a receipt?” she\nasked Don Roque.\nHe showed her the municipal\nacknowledgment. It recorded the\npaper delivery. The morning's\nministry upload and the later held\nbatch still required separate answers.\nLucía put the papers in order. The\ncrossed-out heading on Q's notice\nread THE SIGNATURES ARE\nSAFE.\n“This won't go up on the wall,” she\nsaid. “People will read the large\nwords.”\n“The correction is underneath.”\n“People have buses to catch.”\nAraceli found a clean sheet. They\ncopied the corrected notice with the\ntwo submission numbers and the\nmunicipal acknowledgment. Don\nRoque kept the first sheet with the\nworking papers. The next person to\nread it would not have to guess why\nthe heading had changed.\nWhile the printer worked, Araceli\ncalled the extension supplied by the\nengineer. This time somebody\nanswered. They wanted a parcel list,\nnot another copy of the signatures.\nLucía took the telephone. She had\nthe list, but two families had asked\nthat their contact details not\naccompany the public version.\n“Which office needs those details?”\nshe asked.\nAraceli checked the time. Her\ndaughter had sent a photograph of\nlunch, already being eaten. Don\nRoque offered her one of the cookies\nfrom the reading. It had spent the\nnight in his folder and broke along\nthe same crease as the petition.\n“Not another document,” she said.\nThe petition took three weeks to\nreceive a ministry reply. The corridor\nwould be reviewed by a technical\ncommission once the parcel\nreferences and the record of direct\nimpact had been checked. The\nsupporter signatures remained\nattached; they were not a substitute\nfor those records. Lucía had more\nwork. She also had a named contact,\na corrected map layer, and three\nacknowledgments whose numbers\nshe could now distinguish without\nopening the folder.\n",
       "source_block_ids": [
-        120,
         121,
         122,
         123,
@@ -246,29 +321,50 @@
         130,
         131,
         132,
-        133
+        133,
+        134
       ],
       "asset": "output/illustrations/revised/issue-03/plate-08.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Not another document.",
-      "scene_brief": "Araceli unfolds Don Roque's cookie after missing lunch; the checked papers are set aside. The small gift is food, not a signed agreement."
+      "prompt": "Create a NEW single portrait 2:3 full-bleed Goya-inspired black-and-white etching for The Ingenious Machine. Use attached image ONLY as identity reference for the same two people and same clerk office, NOT as composition to copy. Araceli is the seated middle-aged clerk with short dark hair, small rectangular glasses and light cardigan; Don Roque is the white-haired, clean-shaven retired railway worker in dark jacket and check shirt. NEW ACTION: a quiet pause after lunch was missed. Don Roque, smiling slightly, offers a BROKEN COOKIE resting on a folded paper wrapper; Araceli is reaching to take one half, surprised into amusement. The two halves should clearly be food, rough crumbly biscuit with crumbs, NOT a document. The closed petition folder sits aside. Her phone displays only indistinct shapes; no legible text. Compose a close waist-up view from the other side of the desk, with her free hand near the crumbs. Only these two people, no Q or Lucía. Assured crosshatching, restrained aquatint shadows, perfectly neutral BLACK AND GRAY on PURE WHITE. No sepia, cream, papertexture, borders or lettering. Keep hands and cookie well above bottom6% caption zone. Original new scene, not the signature-check scene.",
+      "asset_sha256": "02b5a3b01ed8b4efa7485458e02e1b4db86a69c89cdaa8f8cd82f18bed1cd16c",
+      "raster_size_px": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_trim": 149.85,
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-cce62ea6-550c-46a1-8ce1-a0d0fb4bbb4c.png",
+      "review_scope": "Scene correspondence and character continuity reviewed for revision-proof insertion; not an A+ press-resolution approval.",
+      "review_note": "Concrete facing action and recurring character appearance checked. Incidental architecture and scenery are fictional illustrations, not surveyed depictions."
     },
     {
       "plate_id": "issue-03-plate-09",
       "page": 19,
       "facing_text_page": 18,
-      "facing_text": "At the next meeting she wrote\nbeneath the sentence:\nTHEY DID NOT ASK\nWHETHER WE WANTED TO\nBE THE PEOPLE.\nHer correction reached fewer\nreaders. It reached a teacher who\ncarried it into her classroom, a\nlawyer who quoted it in a filing, and\nBeto, who was preparing an\nembroidered jacket for Q.\nQ received the address update on the\nroad to Guanajuato and called Don\nRoque. The headline arrived later,\nwithout either submission number.\nHe recognized his own impatience in\nthe version that made one machine\nthe cause of the whole afternoon. It\nwas easier to tell. It left out Lucía\nrunning back to the copy shop, the\nengineer waiting for a decision, and\nthe clerk who had missed lunch.\nAt Castalia, the Custodian found the\nbuilding reference in a file he had\nsigned years earlier. He telephoned\nthe municipality before lunch. When\nnobody answered, he left a message,\nwrote himself a reminder, and called\nagain in the afternoon. Q had not\ninvented every difficulty he had\ncarried out of the archive.\n",
+      "facing_text": "The woman who had streamed the\nreading discovered that her\nphotograph of the petition margin\nwas circulating under THE\nPEOPLE WHO WANT TO STOP\nTHE FUTURE. The actual sentence\nwas I AM NOT AGAINST\nPROGRESS. I AM AGAINST\nBEING MOVED TO MAKE\nROOM FOR IT.\nShe asked the site to correct the\nheadline. Its reply gave her an\naudience figure. She had asked for\ndifferent words and received a large\nnumber.\nAt the next meeting she wrote\nbeneath the sentence:\nTHEY DID NOT ASK\nWHETHER WE WANTED TO\nBE THE PEOPLE.\nHer correction reached fewer\nreaders. It reached a teacher who\ncarried it into her classroom, a\nlawyer who quoted it in a filing, and\nBeto, who was preparing an\nembroidered jacket for Q.\nQ received the address update on the\nroad to Guanajuato and called Don\nRoque. The headline arrived later,\nwithout either submission number.\nHe recognized his own impatience in\nthe version that made one machine\nthe cause of the whole afternoon. It\nwas easier to tell. It left out Lucía\nrunning back to the copy shop, the\nengineer waiting for a decision, and\nthe clerk who had missed lunch.\nAt Castalia, the Custodian found the\nbuilding reference in a file he had\nsigned years earlier. He telephoned\nthe municipality before lunch. When\nnobody answered, he left a message,\nwrote himself a reminder, and called\nagain in the afternoon. Q had not\ninvented every difficulty he had\ncarried out of the archive.\n",
       "source_block_ids": [
-        134,
         135,
         136,
         137,
-        138
+        138,
+        139,
+        140,
+        141
       ],
       "asset": "output/illustrations/revised/issue-03/plate-09.png",
-      "status": "planned",
-      "caption": "A reminder in the afternoon.",
-      "scene_brief": "The tall, long-gray-haired, bespectacled male Custodian at Castalia calls the municipality again, with the older building-reference file and his reminder at hand. Q is elsewhere."
+      "status": "approved",
+      "caption": "A second call.",
+      "prompt": "Use case: illustration-story. Create a NEW single full-page portrait plate for The Ingenious Machine, a near-future Mexican literary novel, not a remix of the reference scene. Goya-inspired black-and-white etching, assured crosshatching and restrained aquatint, clear faces and gestures, PURE WHITE unprinted highlights, absolutely no sepia, cream, beige, aged paper, border or lettering. Portrait 2:3, highest available detail. Full bleed composition; keep important faces/hands above bottom 6% for a separately typeset caption. The attached image is ONLY a character and etching-style reference. Q must keep its exact slim long-limbed body, narrow segmented oval head, round ear mechanisms, exposed neck, articulated hands, question-mark breastplate and long worn coat. No knight, weapons, helmet or horse. Q is thoughtful and socially capable. The Custodian, ONLY if scene calls for him, is the same tall older man with long tied-back gray hair, rectangular glasses, white work shirt and boots. Otherwise do NOT include the Custodian. Modern Mexican clothing and working environments, not colonial costume. Scene: The male Custodian alone at his working desk at Castalia outside Amealco, calling the municipality on an ordinary phone. A years-old building-reference file is open beside a handwritten reminder; pine trees outside a high window, used server racks and library shelving behind him. Long gray hair tied back, rectangular eyeglasses, white work shirt, exact same man as reference. One hand holds phone to ear, other rests near the file. Ordinary persistence, not despair or mystical revelation. No Q or other person visible. Do not render legible words.",
+      "asset_sha256": "4c51091ff8d14e15d280d5c3bcac4a295e93c67ad487dda97c800a22a6ab20fd",
+      "raster_size_px": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_trim": 149.85,
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-454c732f-7d0b-4293-b3bb-5d489a4ad1e8.png",
+      "review_scope": "Scene correspondence and character continuity reviewed for revision-proof insertion; not an A+ press-resolution approval.",
+      "review_note": "Concrete facing action and recurring character appearance checked. Incidental architecture and scenery are fictional illustrations, not surveyed depictions."
     }
   ]
 }

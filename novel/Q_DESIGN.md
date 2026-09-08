@@ -95,10 +95,13 @@ familiar book seems to require. Similarity to Cervantes is pressure on Q and his
 authors, not a rule forcing romance, knighthood, violence, or death.
 
 Shared authorship gives Q a reason to go out. It also tempts him to stage an
-encounter so that he will have something to bring back. Lucía's objection matters
-because a capable writer can still turn a living acquaintance into a convenient
-role. Q learns to revise the account without treating every conversation as
-property to acquire or every person as a moral examiner.
+encounter so that he will have something to bring back. At Lucía's reading he
+resists that temptation in public: he asks a real question, explains his purpose
+and yields. An audience member makes the Dulcinea comparison instead. Q can
+recognize his private pleasure in the same joke without imposing it on her or
+requiring her to hear his explanation. Her work continues while cameras prefer
+his reaction. Later publicity must remember this actual exchange, not assign
+him an unsolicited proposal merely because it fits the adaptation.
 
 ## Ending
 

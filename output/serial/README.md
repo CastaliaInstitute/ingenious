@@ -22,6 +22,22 @@ plates still need print-resolution and ink-on-stock review. No print job has bee
 sent. See the [production record](../../novel/development/ISSUE_01_PRODUCTION.md)
 and [facing-text manifest](../illustrations/revised/issue-01/manifest.json).
 
+## Current Issue 3 revision proof
+
+- [English Issue 3: revised reading PDF](../pdf/ingenious-issue-03-revised-en-bw.pdf)
+- [English Issue 3: revised A3 folding PDF](../pdf/ingenious-issue-03-revised-en-bw-a3.pdf)
+
+20 pages, ten unique plates including the cover, and five A3 duplex sheets.
+Q's competent reply now changes the reading scene; the comparison comes from
+the audience. Continuous Georgia 12/17 text, unpainted backgrounds and lossless
+grayscale plates follow the Issue 1 specification. Native art is about 150 dpi:
+this is a checked revision proof, not a press master. See the
+[production record](../../novel/development/ISSUE_03_PRODUCTION.md) and
+[art/prompt manifest](../illustrations/revised/issue-03/manifest.json).
+
+Issue 2 remains at the facing-scene planning stage; later issues still require
+their revised illustrated builds.
+
 ## Earlier editions
 
 These retain superseded text or layout. The Spanish edition is not yet a

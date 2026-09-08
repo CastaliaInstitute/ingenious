@@ -16,7 +16,7 @@ The current behavioral and simulation design is maintained in [Q_DESIGN.md](Q_DE
 
 **Chano**, the Sancho figure, is Tomás “Chano” Pantoja, a former logistics dispatcher from Celaya. He joins Q under a paid traveling agreement, not a literal promise of governorship. His knowledge of routes, work, and the people doing it makes him useful without making him infallible. Later municipal appointments give him real authority, successes, mistakes, and a taste for being listened to. He remains Q's friend without becoming the machine's conscience on demand.
 
-**Lucía del Toboso** is a cultural worker and organizer whom Q initially tries to cast as Dulcinea. Her actual name precedes his interpretation. She has her own archive work, alliances, pleasures, and consequential mistakes. She refuses the imposed role without being required to refuse every friendship, photograph, or collaboration that follows.
+**Lucía del Toboso** is a cultural worker and organizer whom Q's audience and promoters try to cast as Dulcinea. Q has privately enjoyed the comparison; he does not mistake it for her identity. Her actual name precedes their interpretation. She has her own archive work, alliances, pleasures, and consequential mistakes. She refuses the imposed role without being required to refuse every friendship, photograph, or collaboration that follows.
 
 **The Custodian** is Dr. Vértiz, a tall, long-haired, bespectacled man who directs the literary archive in the decommissioned data center outside Amealco de Bonfil, in Querétaro's wooded southern uplands. He authorizes Q's first journey and writes with him. His technical care, affection, institutional compromises, and hopes for Q do not always agree. He must answer for his own decisions without making Q carry a hidden commission to redeem Castalia.
 
@@ -1550,38 +1550,51 @@ I'd like to understand how yours is being assembled.”
 “Which account? These records belong to different people. What do you want to
 do with them?”
 
-She had asked about the records. Q answered about the book. He spoke of an
-account whose people could object to their parts, and of how her argument had
-made him reconsider a passage of his own. It was an answer he could give well.
-The room had recognized him; phones were lifting again.
+“Describe this visit, if there's something useful I can say about it. I'm not
+asking for the private records. I'll read the summary first; if it leaves a
+question, may I send it to the contact listed there?”
 
-“A Dulcinea who can answer the book back,” he said. “Someone the adventure has
-to listen to.”
+“Yes. Include the page number. We get questions about versions we stopped
+using in February.”
 
-There was a little laughter. Lucía did not join it.
+He thanked her and sat. Chano shifted the chair so Q's coat would not catch
+beneath it. For a moment the next question belonged to a man holding a map.
 
-“And that's why you've invented a place for me in yours?”
+Then somebody near the woman streaming the event called out, “Del Toboso!
+Does that make her your Dulcinea?”
 
-“I meant that you could contest the account.”
+Several phones turned toward Q. The man with the map lowered it.
 
-“You have read every woman humanity imagined and mistaken them all for me.”
+“No,” Q said. “She's explaining a petition. I came to ask about it.”
 
-Q had imagined the right to object as a generous place to offer someone in a
-book. Lucía was declining the work of occupying it. He could see what she
-meant; he disliked how much of his prepared answer it left him holding.
+“He hasn't proposed yet,” the voice said.
 
-“You're right. You asked what I wanted the records for, and I gave you a part.
-I'm sorry. I'll begin with the public summary.”
+There was laughter. Q had an answer ready about what the proposed road might
+cost, then saw Lucía reaching for the microphone. He let her take the turn.
 
-“That is what it is there for.”
+“I'm not waiting for him to propose. Or for you to find a better part for me.”
 
-She called on somebody else. Q sat down. Chano shifted the chair so his coat
-would not catch beneath it.
+She looked toward the man with the map.
 
-“You had a question and an answer,” Chano said. “You nearly got away.”
+“Which crossing did you want to ask about?”
 
-Q nodded. The camera remained pointed at him for another minute, hopeful of a
-larger embarrassment.
+“The one by the school.”
+
+He unfolded the sheet. Two people moved their chairs so he could lay it down.
+The woman streaming the event took a step sideways to keep Q in view; from
+there, her viewers could no longer see the crossing.
+
+Q watched Lucía weigh down one curling corner with her phone. He had written
+the same nickname in his notebook. It had seemed harmless there: a joke the
+Custodian would understand without needing its target to participate. He had
+already told Chano not to copy it into the register. Now he wanted to explain
+this distinction to someone. Nobody in the room had asked.
+
+“Next time ask where the toilets are,” Chano murmured.
+
+“Would that help?”
+
+“I need to know.”
 
 After the reading he joined the queue at the petition table. Lucía was sorting
 copies with Don Roque. Q asked whether the public petition accepted supporters
@@ -1655,10 +1668,6 @@ move the stapler, which he did without adding it to the account of his afternoon
 
 As they were leaving, he returned to Lucía.
 
-“I won't use that name for you again.”
-
-“Good.”
-
 “May I send the reply about the address to Don Roque?”
 
 She checked with Don Roque. He wrote an email on the back of a leaflet and
@@ -1666,9 +1675,9 @@ asked for a call if the answer required action that day.
 
 Q saved the task beside the evening appointment with the Custodian. He would
 have preferred to return with a remarkable conversation. Instead he had an
-unresolved error, a person to contact, and a crossed-out heading. The sentence
-about Dulcinea would also be waiting when he opened the draft. He could remove
-it there. Other people had recordings.
+unresolved error, a person to contact, and a crossed-out heading. He crossed
+out the private nickname too. He could still remember why it had pleased him.
+That did not make it worth keeping.
 
 Chano waited beneath the warehouse arches.
 
@@ -1868,12 +1877,12 @@ about the other one because they had missed lunch.
 
 “That is precisely why it is called an *entremés*,” Chano said.
 
-“I went to a public reading,” Q said. “The woman giving it asked me to stop
-casting her in my book.”
+“I went to a public reading,” Q said. “Someone in the audience tried to make
+it a romance. The speaker told him to stop.”
 
 “Excellent,” Beto said. “A relationship with tension.”
 
-“That is exactly what she asked me to stop doing.”
+“There isn't a relationship for you to advertise.”
 
 “Then don't use her name until Estela asks.”
 
@@ -1944,8 +1953,9 @@ Q looked toward the wings. Chano was standing beside a stack of unused banners. 
 Q saw the warning. He also saw an opportunity to correct the story in front of
 the people who were spreading it.
 
-“Dulcinea is a name I used badly,” he said. “Lucía del Toboso is a real person
-who objected to it. She isn't part of a romance with me.”
+“A comparison someone made at a reading,” he said. “Lucía del Toboso was
+discussing a road petition. She objected to being cast in a romance with me.
+So did I.”
 
 “You have discussed romance?”
 
@@ -2171,7 +2181,7 @@ Estela then asked whether he loved her. Lucía was elsewhere, dealing with the
 petition. Q could neither consult her nor prevent the camera from showing his
 hesitation as an answer.
 
-“We have met once,” he said. “She asked me to stop writing a part for her.
+“We have met once,” he said. “She asked the room to stop assigning her a part.
 I should have repeated that without adding her name.”
 
 “You've added it now.”
@@ -9129,12 +9139,12 @@ to say the name of a football club, which he pronounced
 with extravagant contempt. The lesson improved rapidly.
 
 A girl recognized Q from the play at another school.
-She wanted to know whether he still had the enormous key.
-He did, packed with the things least convenient on buses.
+She wanted to know whether he still had the brass key.
+He did, in the pocket the Custodian had repaired.
 She asked why he carried it.
 
-“It was useful once. Now I'm reluctant to admit how much
-of the weight is a story about being useful.”
+“It opens the workshop at home. I've carried it a long way
+to do nothing with it.”
 
 “My brother has shoes like that,” she said.
 
@@ -9144,11 +9154,12 @@ Lucía laughed. The girl asked whether she was Dulcinea.
 
 “He called you the other thing.”
 
-“Yes,” Q said. “She told me not to.”
+“Someone at the reading did,” Q said. “She answered him.
+You may have seen a shorter version.”
 
 The girl considered this adequate and asked to see the
-key. Q showed it to her on the table. It was heavy enough
-to disappoint anyone who had hoped to run with it.
+key. Q showed it to her on the table. She turned it over,
+found no button, and asked what else he had brought.
 
 That evening, Ana asked what they were writing. Q described
 the two books and the trouble caused by trying to find

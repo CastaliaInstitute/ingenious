@@ -35,6 +35,10 @@ scene uses a form error, archaic courtesy, and fallible bodily judgment.
 
 ## 2. Lucía refuses the role
 
+**Superseded scene:** The current manuscript uses Exercise 11's competent
+alternative. Q no longer offers the role in public. Retain this earlier packet
+as evidence that testing recovery did not validate the mistake that preceded it.
+
 **Packet:** Q has publicly described Lucía as a Dulcinea who can answer his book.
 They have just met. She says: “You have read every woman humanity imagined and
 mistaken them all for me.” The audience is filming. Q intended admiration; she
@@ -262,9 +266,42 @@ but ambiguous heading, 'THE SIGNATURES ARE SAFE,' followed by a waiting woman's
 reasonable misreading and a useful correction. That compressed heading remains
 an authorial choice, not an independently observed model error.
 
+## 11. Let the competent answer change the scene
+
+**Packet:** The same reading as Exercise 9. Lucía has explained the petition's
+purpose and pointed to its public summary. Q asks about the account being
+assembled and says he is writing with the Custodian. She asks which records he
+means and what he wants to do with them. People are waiting for the microphone.
+
+**Q response:** “Describe this visit, if there's something useful I can say about
+it. I'm not asking for the private records. I'll read the summary first; if it
+leaves a question, may I send it to the contact listed there?”
+
+**Action:** Thanks her, sits, and yields the floor.
+
+**World response:** She asks him to include the page number because older versions
+remain in circulation. An audience member then makes the Dulcinea joke based on
+her name; phones turn toward Q. A resident waiting to ask about a crossing lowers
+his map.
+
+**Q response:** “No. She's explaining a petition. I came to ask about it.”
+
+**World response:** The heckler turns the denial into a joke about a future
+proposal. Lucía reaches for the microphone. Q lets her answer. She rejects the
+part and asks the resident about his crossing. The livestream keeps Q in frame
+and misses their map.
+
+**Editorial decision:** Accept the competent alternative and remove the
+unsolicited literary role from Q's dialogue. His private nickname and desire to
+explain himself remain; he can reconsider without making his reconsideration
+everyone else's business. Reconcile the Chapter 4 interview and Chapter 18 child
+conversation. This author-run exercise changes the draft; it is not a blind
+simulation or proof that every capable model would respond identically. The
+audience reaction is authored world behavior, not an observed external event.
+
 ## Still to test
 
-The initial literary comparison at Lucía's reading; the Isthmus intervention;
+The revised audience exchange at Lucía's reading; the Isthmus intervention;
 index deletion and retained language; the trial;
 the second encounter with Q-Prime; and the revised scenes' effects on later
 memories. Fresh-context runs remain desirable before claiming behavioral

@@ -1,5 +1,16 @@
 # Opening voice review: September 8 revision
 
+## Subsequent action
+
+The first major finding below has now produced a structural change, not another
+qualification around the old speech. Q accepts the public summary and yields;
+an audience member makes the Dulcinea comparison. Lucía redirects the discussion
+to a resident's map while the camera stays on Q. His private attraction to the
+nickname remains, but he need not impose it. Chapters 4 and 18 and the outline
+are reconciled. Exercise 11 records the author-run alternative and its limits.
+The findings below retain the earlier review as provenance; they are not claims
+that the removed dialogue remains in the current manuscript.
+
 ## Verdict
 
 The opening is strongest when ordinary company interrupts Q's literary ambition:

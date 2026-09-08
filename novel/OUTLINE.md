@@ -79,10 +79,12 @@ when Q objects. The workshop key opens a known door at home. Celia preserves the
 entry separately; Castalia later uses it to argue for an independently chosen quest.
 
 3. **Dulcinea Is Not Available:** Q asks a useful question about the three routes
-and the petition's purpose. When he asks about Lucía's records, she asks what he
-wants to do with them; he answers with an elegant account of his book and offers
-her a role as a Dulcinea who can answer back. She refuses the work of occupying
-that part. He apologizes and accepts the public summary. His unrecognized archive
+and the petition's purpose. He explains his writing project, accepts the public
+summary and yields the floor. An audience member calls Lucía his Dulcinea. Q
+rejects the comparison and lets her answer the follow-up herself. She returns
+the discussion to a school crossing; the livestream keeps Q in frame and loses
+the map. Q privately recognizes his pleasure in the same nickname and crosses
+it out without making the room hear his explanation. His unrecognized archive
 address triggers a review of a new batch; the earlier upload was already awaiting
 acknowledgment. His notice says the signatures are safe, meaning locally preserved,
 but Lucía points out that waiting signers will read it as confirmation of delivery.

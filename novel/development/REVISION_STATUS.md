@@ -33,9 +33,13 @@ the book.” The source now permits Q to remain alive when the writing stops.
   damaged cartons and a separate security incident lead to the viral clip. The governorship
   begins as a joke in a paid companionship agreement. Q calls home and amends his
   plan. The motel, water vendor, and scrubber interludes have continuity repairs.
-- Chapter 3 now lets Q ask the practical route question first. His subsequent
-  literary comparison occurs in a discussion of his writing, and he withdraws it
-  when Lucía objects. Its behavioral plausibility remains unvalidated. Lucía's
+- Chapter 3 now lets Q ask the practical route question, explain his writing
+  purpose and yield. The author-run competent alternative replaced his
+  unsolicited literary comparison. An audience member supplies it; Q rejects it,
+  then lets Lucía answer for herself. The livestream misses the school-crossing
+  map while keeping him in frame. He crosses out his private nickname without
+  imposing an explanation on the room. Chapters 4 and 18 now recall this actual
+  encounter. These are authored choices, not independent behavioral validation. Lucía's
   copy-shop errand, the engineer's partial help, conflicting preferences about
   the road, and a clerk's missed lunch give other people independent activity.
   The failed upload predates Q's signature. His address causes another review;
@@ -156,12 +160,12 @@ the book.” The source now permits Q to remain alive when the writing stops.
   and ends in a verified save and shutdown. The pending migration is a data-
   handling issue, not an inexplicably fatal operation on Q. Ownership,
   maintenance, and the Tijuana paper returns remain open.
-- `Q_SCENE_EXERCISES.md` records ten author-run exercises with limited packets,
+- `Q_SCENE_EXERCISES.md` records eleven author-run exercises with limited packets,
   alternative responses, consequences, and editorial findings. These are not
   independent blind runs; the limitation is explicit.
 - Current structural check: 22 unique chapter headings, two book divisions,
   one coda, and the pen-down final sentence. The manuscript is approximately
-  74,200 whitespace-delimited words including front matter. Selected checks
+  74,300 whitespace-delimited words including front matter. Selected checks
   confirm the late delivery, travel, and maintenance anchors and reject named
   obsolete events. `git diff --check` passes. These checks do not establish
   whole-book literary quality or validate any PDF or illustration.
@@ -187,6 +191,15 @@ the book.” The source now permits Q to remain alive when the writing stops.
   achieve those counts. The enlarged Issue 2 setting avoids a four-line final
   narrative page. All 22 chapter pagination plans pass rendered text-order checks.
   The new plans mark every missing plate as planned, never approved.
+- Subsequently, Issue 3's competent-alternative revision has been fully
+  illustrated as a revision proof: ten unique plates, 20 pages, 3,219 words in
+  exact source order, and five A3 duplex sheets. It now has a reviewed, hash-bound
+  manifest rather than planned entries. All ten PNG assets are saved locally;
+  exact prompts and the one typography-removal edit are recorded. DeviceGray,
+  lossless image compression, unpainted text backgrounds, dimensions, rotation
+  and folding pairs pass independent checks. Rendered pages and representative
+  A3 spreads have visual review. `ISSUE_03_PRODUCTION.md` records evidence and
+  limits. Native art remains about 150 dpi; no A+ print claim or print job.
 
 ## Required next work
 
@@ -259,7 +272,7 @@ the book.” The source now permits Q to remain alive when the writing stops.
    no canonical outcome or required mistake. Run each in a separate fresh context
    if authorized, then let an explicit world response support a second step.
 5. Rebuild the remaining English chapter issues only after text and plate placement
-   are reconciled. Only the new Issue 1 revision proofs represent the current text.
+   are reconciled. The new Issue 1 and Issue 3 revision proofs represent their current chapters.
    English is the current revision source; the Spanish edition remains earlier.
 6. Use the new explicit-manifest builder, not the old modulo-indexed asset maps.
    It maps even narrative pages to the following odd plate pages, rejects stale
