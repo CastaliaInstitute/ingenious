@@ -16,7 +16,7 @@ matches. Updates below trace the subsequent states through the ending.
 | Prime's supplied account | Edited appearances and continuity material; some disputed private passages are evidenced in supplied source references. Full technical provenance is unverified. | Distinguish a product being supplied a record from proof about model training, retrieval, or ownership of every source. |
 | Q's signatures | Original leave/release arrangements; one-interview recording form; later restrictive tour license with manuscript exclusion; arrival acknowledgment with objection; limited joint-appearance agreement. | The linked employment-profile post follows the tour signing, not the first interview. He has not signed ownership of Chano or Lucía, voluntary reintegration, a new operating layer, or a claim that Prime lived the journey. |
 | Chano's incident review | Notice concerning his intervention when Q fell at the transport frame; referred to the adviser. | Do not convert it into an established assault conviction or an unlawful-US-entry episode. |
-| Q and Prime | Met, corrected some publicity, and agreed to speak again. Prime uses that name conversationally and may reconsider it. | Later disagreement must arise from information, interests, restrictions, or choices, not a reset to an incompetent stock robot. |
+| Q and Prime | Met privately before the public stage event, discussed oranges and the coastal photograph, corrected some publicity, and arranged a call for the following week. Prime may reconsider his conversational name. | The stage is not their first encounter. Prime has heard Chano's shoulder joke but has not met him or learned his location. Later disagreement needs actual information or interests, not a reset to a stock robot. |
 | Micaela | Already known from the Michoacán tianguis; visits with her father and participates in a school play. | Keep her distinct from Lidia and the withdrawn monarch-video sign. Her mother and the parents control their own records and complaint. |
 | Forest survey comparison | Residents retain a sheet of proposed and still-unchecked distances with the assembly minutes. Q agrees to witness the return inspection. | Q rejected the single-house political display before rendering it. No inferred-vote map or household opinion dataset was exported. Beto's completed-consultation post is his account, not the assembly's decision. |
 | Chano's first administration | Irma approves paid extra cleaning hours and soap; one distributor delivery actually fills Maribel's jugs. A later delivery is offered, not confirmed completed. | Irma ends the appointment after Chano refuses to postpone another meeting. Do not attribute the dismissal to an autonomous dashboard. Successful work does not settle the water shortage or erase the political conflict. |
@@ -28,6 +28,11 @@ matches. Updates below trace the subsequent states through the ending.
 | The Custodian | Tall, long-haired, bespectacled man; supports Q, works on the draft, and bears his own responsibility for Castalia's choices. | Do not feminize him or turn practical help into authority to open other people's deposits. |
 
 ## Order of the revised border and return
+
+Prime's launch includes a recorded reading followed by live questions. Mauro's
+script/clip comparison identifies a dropped reading heading, not proof that Prime
+mistook the supplied summary for bodily memories. That comparison does not expose
+the complete source history or authorize use of Q's private manuscript.
 
 The group keeps the Mazatlán leisure stop. Near Tijuana, Q asks for an off-site
 handover; the depositors approve, Elena receives it and her colleague takes it

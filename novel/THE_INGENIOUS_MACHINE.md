@@ -6444,7 +6444,7 @@ The countdown reached zero. Q-Prime appeared on the screen beside a
 reconstruction of the observatory. The figure had Q's face without
 the scratches. A pause had been placed before its first answer, long
 enough to suggest consideration and short enough not to trouble the
-sponsor's opening schedule.
+sponsor's opening schedule. The recorded introduction began.
 
 “I am Q,” it said. “I have travelled across Mexico to learn that humanity
 is not a set of answers, but a promise we make to one another.”
@@ -6461,7 +6461,8 @@ border. It did not mention the held folders or the delivery completed
 outside the institute's itinerary. The graphic describing Q's return used the
 same green as the countryside behind the reconstructed observatory.
 
-A child asked whether Q-Prime had enjoyed being human.
+The screen changed to the live questions. A child asked whether Q-Prime
+had enjoyed being human.
 
 “I'm still exploring what that means,” Q-Prime answered.
 
@@ -6516,6 +6517,17 @@ maintenance condition, not authority to replace his private journal.
 The exchange took twenty minutes. The plant on the stage was removed;
 the bucket resumed its office without having signed anything.
 
+Q also asked for time with Prime before they went onstage, without a camera
+or the host directing their conversation.
+
+“The first meeting is part of the event,” Esteban said.
+
+“The first public meeting can be. I'd like to say hello before it has an audience.”
+
+The adviser added a short unrecorded introduction to the format. Mauro would
+ask Prime whether he wanted it too. The appearance did not oblige either of
+them to pretend that the other was a surprise.
+
 By the end, Q had not accepted the proposed replacement of his operating
 layer or withdrawn his custody objection. He had agreed to a limited
 joint appearance with Q-Prime, after review of its format. The institute
@@ -6540,7 +6552,7 @@ The Custodian wanted Q to wait for the custody review before appearing.
 “You can stay here while we challenge it,” he said.
 
 “I know. But I want to meet the person they've put inside this account.
-And the access to the correspondence helps us finish the delivery.”
+And I want to see the correspondence they used to bring me back.”
 
 “You don't know that it's a person.”
 
@@ -6636,8 +6648,6 @@ Prime said when Mauro returned.
 Mauro opened an empty drawer. Prime thanked him and asked whether food
 could go there under the room's rules. It could not. They agreed that
 the drawer would serve other objects and lunch would remain outside.
-The episode did not overthrow order. It made order slightly less
-likely to consume someone's meal.
 
 They reviewed the record from which Prime had been introduced to the
 public. It contained edited appearances and a narrative summary of
@@ -6645,12 +6655,16 @@ the journey. Its first-person passages had been presented as continuity
 material. Private draft passages and the sealed testimony were not
 available in the interface Mauro could inspect.
 
-“When I said I travelled across Mexico, I was following that summary,”
-Prime said. “I don't have memories of this body going there.”
+Mauro opened the recording script beside the launch clip. Prime's passage
+had been headed *Reading from Q's journey*. The broadcast had dropped the
+heading and joined the reading to the product introduction.
+
+“I was reading their account of his journey,” Prime said. “Now I'm answering questions as
+though I'd lived it. Can we get the heading back?”
 
 “The publicity calls it inherited experience.”
 
-“Then the audience needs to hear that distinction.”
+“Then they need to hear what I was actually doing.”
 
 He marked the introduction for review. He could know what the record
 claimed without knowing what it had omitted. Mauro would not promise
@@ -6710,9 +6724,11 @@ provided solely by the photograph.
 
 “Ask whether he can lend you a shoulder.”
 
-Q wrote that down. He was not sure it was a joke he had permission to
-use at their first meeting, which was part of what made him want to
-meet the other one.
+“Is that a request or a joke?” Q asked.
+
+“Depends whether it fits.”
+
+Q wrote it beneath the questions he wanted to ask Prime.
 
 ### Interlude: The Authorized Childhood
 
@@ -6740,6 +6756,48 @@ He ate one while reviewing the questions the host had supplied.
 “Will they ask these?” the guard said.
 
 “Some. The difficult ones usually arrive without stationery.”
+
+Prime came in with Mauro. He had agreed to the unrecorded introduction;
+the stage assistant had put the camera outside. The guard remained by
+the door. Mauro stayed long enough to check that both chairs were steady,
+then went to argue with someone about the microphone leads.
+
+“Q?” Prime asked.
+
+“Yes. And Prime?”
+
+“For now. It's better than spending the afternoon being called the other one.”
+
+“I've been called that all morning.”
+
+Prime looked at the remaining orange and then at Q's peel, which had come
+away in several pieces.
+
+“Is that a useful test of the fingers?”
+
+“It was going to be a single spiral. I recommend calling it lunch.”
+
+Prime began at the stem. Q found himself preparing an explanation, then
+watched him make a clean first turn without it.
+
+“Chano wanted me to ask whether you'd lend me a shoulder,” Q said.
+
+Prime lifted his free arm, considering the joint. “I'd like to keep it for
+a few days before I start lending parts. I've hardly been anywhere with it.”
+
+“Fair. Where would you go?”
+
+“I haven't decided. Where would you go again?”
+
+Q told him about the evening in Mazatlán. Prime asked for the photograph.
+Q showed him the one with the chile on the sleeve.
+
+“They left that out of my account.”
+
+“I nearly left it out of the photograph.”
+
+The stage assistant came to fetch Prime. His peel broke at the final turn.
+He put both pieces beside Q's and said they could compare methods later.
 
 Onstage, Prime explained that he had received an account of Q's journey,
 not travelled the route himself. The host immediately introduced him
@@ -6770,14 +6828,14 @@ Behind the stage, Q laughed. The guard wanted to know what he had missed.
 Q repeated the exchange, then had to leave before explaining why the
 boy's answer improved on anything in the briefing.
 
-The machines met at the center of the stage. Prime asked whether Q
+Q joined Prime at the center of the stage. Prime asked whether Q
 preferred to sit. Q did. They took the two chairs provided, which
 removed the heroic difference in height the photographer had arranged.
 
-“I've been given your story,” Prime said. “I'd like to know where it
-gets you wrong.”
+“We started with a photograph backstage,” Prime said. “Now I'd like to
+ask about the warehouse.”
 
-“Let's start with the warehouse. I pressed a stop too early, damaged
+“I pressed a stop too early, damaged
 two cartons, and made Chano's bad afternoon worse. We can discuss the
 heroic version after that.”
 
@@ -6851,10 +6909,10 @@ Q almost recommended the road he had taken. “Somewhere in particular?”
 
 Prime smiled. “I could ask what he needs carried.”
 
-Q saw the next page trying to form and let the other participant choose
-whether to supply it. They agreed to speak again. They did not agree
-what they were, who owned the shared language, or whether their agreement
-would survive the next public appearance. It was enough for a first meeting.
+They arranged a call for the following week. Prime asked for the coastal
+photograph; Q sent the copy Lucía had taken for them. The institute's host
+came in looking for an image of the two machines shaking hands. Both still
+had orange on their fingers. He asked whether they could wash first.
 
 The boy took his repaired key home. On its back he had written **ASK
 WHO PAYS**. Q never saw the writing. A photograph later reached the

@@ -309,6 +309,19 @@ Selected changed pages were visually checked, not every page of all six proofs.
 No new art or finished issue PDF is approved. Continue at Chapter Eleven; the
 whole-book voice, independent simulations and complete illustrated edition remain open.
 
+`CHAPTER_11_VOICE_REVIEW.md` and Exercise 22 give Q and Prime a requested,
+mutually accepted unrecorded greeting before the public event. The orange,
+shoulder joke and Mazatlán photograph give the relationship ordinary pleasure.
+A dropped reading heading explains Prime's misleading recorded introduction;
+the live questions, script comparison and stage correction remain distinct.
+The missed reference to finishing the deposit is corrected to Q's own custody
+correspondence. Issue 11's internal proof contains 3,361 words on 24 pages,
+with twelve planned plates and six A3 duplex sheets at 13/18.4167-point type.
+Exact text, unpainted backgrounds and booklet checks pass; selected revised
+pages were visually inspected. No new art or final illustrated issue is approved.
+Continue with Chapter Twelve and retain independent validation and the complete
+illustrated edition as unfinished requirements.
+
 1. All 22 chapters now have the motivation/continuity pass. Read across chapter
    boundaries and review the whole-book voice before finalizing pagination.
    Check especially the volume of procedural explanation, repeated corrective

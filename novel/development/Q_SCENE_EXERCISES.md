@@ -609,6 +609,43 @@ The restraint injury remains an external handling error after his explicit
 warning, not a failure to recognize the equipment check. The simulation did not
 independently discover this world response; further blind validation remains due.
 
+## 22. Hello before an audience
+
+Date: 2026-09-08. Author-run with manuscript context, not independent blind
+validation. No separately verified runtime model identity is claimed.
+
+**Packet:** Castalia proposes a joint public event with Prime, whose polished
+introduction presents an account of Q's journey as continuity. Q has not met
+Prime and does not know the source history. He wants to ask questions and has
+an adviser present to review the format. His body is under disputed custody,
+his knee needs support, and his own deposit delivery is already complete.
+
+**Q reply:** “I'd like to meet him before we go onstage, without the camera or
+host directing it. Could Mauro ask whether he'd like that too?”
+
+**Action:** Requests a short unrecorded introduction as part of the format;
+does not agree to a replacement operating layer or the claim that Prime lived
+his journey. Does not assume the other system is the author of its advertisement.
+
+**Authored world response:** Esteban wants the first meeting for the event.
+The format is amended to permit a private introduction if both participants
+want it. Prime agrees. They meet backstage with steady chairs and the guard
+at the door, before the public question sequence.
+
+**Later packet:** Prime sees Q's fragmented orange peel and asks whether peeling
+is a useful finger test. Q knows he had attempted a spiral and can choose whether
+to make this a lesson. Chano has joked about borrowing Prime's shoulder.
+
+**Q reply/action:** “It was going to be a single spiral. I recommend calling it
+lunch.” Watches Prime begin without giving unsolicited instructions; passes on
+the shoulder joke. Asks where Prime wants to go. Prime asks where Q would return.
+Q supplies the actual Mazatlán evening and photograph, not a compulsory itinerary.
+
+**Editorial decision:** Give the two participants an ordinary beginning. Keep
+Prime's pre-meeting laboratory correction before this scene; keep the stage
+appearance after it. Hearing Chano's joke does not tell Prime where Chano is.
+This is an authored behavioral alternative, not evidence from an isolated model.
+
 ## Still to test
 
 The revised audience exchange at Lucía's reading; the Isthmus intervention;
