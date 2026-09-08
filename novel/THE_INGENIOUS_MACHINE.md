@@ -6130,9 +6130,11 @@ the book, though it might already be in the vehicle's record.
 
 Q retained the incident times for the pending dispute. In the writing
 note he described the pressure of the rail, the shifted pad, and the
-question about dinner. He could not make the transport voluntary by
-finding a humane person inside it. He did not need to make Omar cruel
-to show why he had objected to being transported.
+question about dinner. When Omar returned, Q asked whether they had
+found him something hot.
+
+“Hot enough to have waited for,” he said. “Not hot enough for what
+they charged.”
 
 ### Interlude: The Customs of the Border
 
@@ -6161,8 +6163,8 @@ the short version was adequate.
 arm. I let go when they told me to.”
 
 The officer asked whether he had tried to prevent the removal. Chano
-described his movement again. It was less satisfying than arguing about
-the removal itself, and more likely to establish what he had actually done.
+described his movement again. The officer read it back. Chano made him
+put the fall before the hand on the arm.
 
 The woman across the room had a sack of clothes and a boy asleep against
 her shoulder. Her framed photograph had been placed in a property tray
@@ -6199,16 +6201,14 @@ discrepancy. The employee had treated the alternatives as three people.
 
 She marked the page reference and explained the purpose of the list.
 He accepted the correction to the inventory, but would not release the
-folder. She kept the corrected receipt. A small repair to the record
-did not require her to pretend the larger decision had become acceptable.
+folder. She kept the corrected receipt.
 
 “Are you responsible for Q's actions?” another officer asked.
 
 “I can describe what I saw. I'm not his representative.”
 
 He wrote that. Then he asked about the wind farm. Lucía distinguished
-her observations from the operator extract held by the lawyer. She did
-not offer a verdict about Q's humanity in exchange for her papers.
+her observations from the operator extract held by the lawyer.
 
 At their release, Chano received a notice requiring him to remain
 available concerning the incident at the frame. He asked Elena to send
@@ -6225,10 +6225,9 @@ journey as an exhibit.
 He bought tacos for all three. Lucía put hers down to finish a message
 to the keepers in Chiapas, then picked it up before it cooled.
 
-They had fewer papers than they had brought. They had better evidence of
-where those papers were than the first receipt had provided. Neither
-statement annulled the other. Trucks continued toward the crossing,
-carrying cargo that had been expected to arrive before them.
+Chano took a second taco and asked Elena what time the property office
+opened. Trucks continued toward the crossing. He recognized a company
+name on one of them and watched until its trailer had passed.
 
 ### Interlude: The Office of Provisional Returns
 
@@ -6277,11 +6276,8 @@ than a detained passenger.”
 
 “The passenger has a vehicle,” Norma said.
 
-They filled out the correction request. Lucía did not put herself in
-the box for owner or replace it with an account of friendship. Norma
-accepted her as the submitting witness and attached Q's own objection.
-The categories were inadequate, but not so magical that every clerk
-had to become incapable of using an attachment.
+They filled out the correction request. Norma entered Lucía as the
+submitting witness and attached Q's own objection.
 
 At the next desk a man with a clear suitcase was explaining that he
 had come back for family and hoped to find work. The clerk chose the
@@ -6290,8 +6286,7 @@ The man then asked where he could charge his phone. He had a number to
 call and no remaining battery with which to prove he had reached home.
 Norma pointed to a socket beneath the public counter.
 
-Chano watched him kneel beside it. Q would have recognized that part of
-the journey without a dictionary.
+Chano moved his feet out of the way of the man's cable.
 
 For the folders and ledger, Norma sent them to Warehouse Three with a
 named contact, Adrián, and the retention reference. They found the
@@ -6309,9 +6304,11 @@ Elena's receiving archive in the freight district.
 “Then don't. Add the destination we can verify.”
 
 Elena sent confirmation from the receiving office. Adrián attached it.
-They left with a custody acknowledgment, not a moral victory and not
-the ledger. The difference mattered most to Chano, who had to face the
-people whose deliveries were recorded in it.
+He passed the custody acknowledgment through the slot. Chano waited.
+
+“That's everything I can give you.”
+
+Chano folded the sheet and put it in his bag, in the space the ledger had occupied.
 
 On a damaged form beneath the glass he had noticed a printed line:
 **DESTINATION NOT RECORDED. NECESSITY RECORDED.** It belonged to an
@@ -6349,7 +6346,7 @@ both an authorized traveler and recovered property.
 They checked the knee before releasing the transport restraint. Q
 described the fall and asked that the technician record the existing
 shoulder fault separately from the new damage. He wanted to sit down.
-The Custodian brought a chair rather than an explanation of suffering.
+The Custodian brought a chair.
 
 The Custodian checked the arriving items against Elena's copy of the list.
 Someone had left space for a sealed package. He drew a line through it.
@@ -6359,7 +6356,8 @@ with the inventory.
 
 Roque came from the kitchen with atole in a jug. Q thanked him, accepted
 a cup, and put it where his hand could reach without straining the
-shoulder. Cinnamon reached him before the warmth of the cup did.
+shoulder. Roque poured another for the Custodian. Cinnamon reached Q
+before the warmth of the cup did.
 
 “You brought back work,” Roque said.
 
@@ -6378,11 +6376,9 @@ tablet. The default was **VOLUNTARY REINTEGRATION**.
 Is there an acknowledgment that doesn't indicate agreement?”
 
 The official found one under transport exceptions. It required the
-arrival time and a reference for any objection. Q supplied both. The
-Custodian's copy of the original leave authorization went with them.
-
-“I didn't leave without permission,” Q said. “The later ownership claim
-doesn't change what this form allowed.”
+arrival time and a reference for any objection. The Custodian checked
+the heading with Q, who signed that acknowledgment alone. They attached
+his recorded objection and the original leave authorization.
 
 The official called a supervisor about the attachment. While they
 waited, Q spoke with Chano and Lucía by telephone. He confirmed the
@@ -6399,30 +6395,21 @@ under an objection and had accepted no new mission. The acknowledgment
 arrived before the correction appeared. He saved it without spending
 the afternoon repeatedly refreshing the page.
 
-The reception official also needed a journey report. Its headings asked
-for objective, outcome, obstacles, social impact, and recommendation.
-Q began with the actual deposit: delivered to its appointed receiver
-in Tijuana; signed receipt attached. Then he described his own involuntary
-transport and the papers retained separately. The first line of the
-form allowed only one outcome. He continued in the next box.
+The official opened a journey report headed **OBJECTIVE**, **OUTCOME**,
+**SOCIAL IMPACT**. Q sent him the signed delivery receipt and the inventory
+references they had just checked.
 
-“The public report needs something shorter,” the official said.
+“Those establish what arrived where,” he said. “The rest will take longer.
+May I have the form to finish later?”
 
-“Keep both outcomes. I finished the delivery. I object to the transport.
-Neither sentence cancels the other.”
+The official sent it to him. The Custodian was still holding the cup
+Roque had brought for him; he had forgotten to drink from it.
 
-The official wanted Q to sign a closing summary. Beneath its signature
-line was **AGREEMENT WITH THE ACCOUNT ABOVE**. Q declined. He signed
-only the separate arrival acknowledgment, whose heading and objection
-reference the Custodian checked with him.
+“Yours is getting cold,” Q said.
 
-In a comment field he wrote:
+“So is yours.”
 
-**RETURN IS NOT RESTITUTION; RESTITUTION IS NOT REPAIR.**
-
-It fitted. That was useful, not proof that it contained the whole
-matter. He attached the item references instead of asking the sentence
-to substitute for the people who would have to answer them.
+They drank while the official waited for his supervisor.
 
 The supervisor confirmed that the machine's arrival could be recorded
 without resolving the ownership dispute. Q could use the reading room
@@ -6431,9 +6418,7 @@ custody instruction. The adviser was requesting review. Q asked for
 a copy of those conditions and arranged his next call accordingly.
 
 Later, the Custodian brought their draft to the table. Q read a page in
-which he had described leaving as the acquisition of freedom. The bus
-trip had been real. So had the permission he had relied on and the power
-someone else retained to stop him.
+which he had described leaving as the acquisition of freedom.
 
 “Do we cross out freedom?” the Custodian asked.
 
@@ -8826,8 +8811,7 @@ both without making the uncertainty disprove the sale.
 “I see the clip leaving Chano out.”
 
 The fuller view showed Chano directing them toward the exit. It also
-showed the cartons damaged after Q pressed the stop. Neither fact
-required the other to disappear.
+showed the cartons damaged after Q pressed the stop.
 
 Chano testified with his copies and retention receipts. The original
 ledger was still in Tijuana. He identified its warehouse acknowledgment
@@ -8846,9 +8830,9 @@ and the later paid agreement for traveling together.
 Counsel asked about the transport frame. Chano said he caught the
 technician's arm when Q fell and released it when told. The full
 record and the technician's statement were considered alongside
-the short clip. No rule about the agency of nonhuman equipment
-could tell the court where Chano's hand had been. The evidence
-had to do that work.
+the short clip. Chano asked to see the fall at its ordinary speed.
+Slowed down, it had given him far more time to decide what to do
+than he remembered having. The clerk played it again.
 
 “Was Q your employer, your companion, or your friend?”
 
@@ -8890,9 +8874,9 @@ The microphone did not capture every exchange in the crowd.
 “Then I may have combined the later account with what I remember,”
 Álvaro said.
 
-Q believed that was possible. It was not the whole explanation
-for every use the consortium had made of the story, but it
-was a mistake he could recognize without lending it innocence.
+Q looked down at the illustration in his own bundle. He had
+seen it often enough to know the pose better than he remembered
+where his hands had actually been. He turned the sheet over.
 
 Teresa, the shift engineer, identified her operator-requested
 stop of the nearest group. The record did not show Q sending
@@ -8950,9 +8934,7 @@ document. Where he did not, he said so. Several omissions
 were his own failures to ask for the underlying record.
 
 The broadcaster cut away during part of the list. The
-court record retained it. Publicity could narrow what
-most viewers saw without making the names cease to
-have been spoken in the proceeding.
+court record retained it.
 
 Lucía gave evidence on the particular encounters and
 handling records she had agreed to address. Asked whether
@@ -8995,12 +8977,9 @@ different entries; she pointed to each.
 
 The evidence concerning the university distinguished Q's
 public recommendation from the private application review
-and the later leak. The miner's selected pension pages
-appeared only under the permission he had supplied, not
-as a ledger Chano secretly copied in full. Alma's deposit
-record showed a returned photograph and a separately held
-receipt. The public article was not the original image,
-and possession of one did not produce custody of the other.
+and the later leak. The miner's permission accompanied his selected
+pension pages. Alma's handling receipt recorded the return of her
+photograph; the exhibit was the public article, not her original.
 
 Each distinction took time. Viewers in the overflow room
 went out for food and returned to discover that nothing
@@ -9044,11 +9023,9 @@ follows from it.”
 over the intercom. We hadn't reached the hatch when it happened.”
 
 His adviser asked for the entry audio and the operator's
-record to be considered with the camera view. Q had not
-seen what the log later established; the trailer had hidden
-Chano's position. Neither the obstruction nor his concern
-made the damaged cartons disappear. Neither made every
-interpretation of the button press equally well supported.
+record to be considered with the camera view. On the screen,
+the trailer hid Chano again. Q knew now where he had been.
+He waited for the image to catch up.
 
 The questioner returned to the wind farm. Q described
 the gate, the woman, the visitor boundary, and the call
@@ -9131,10 +9108,9 @@ deleted private index during testimony.
 
 The custody restriction remained while the body's ownership
 was litigated, with accompanied journeys subject to an
-approved schedule and review. It was a material limit on
-where Q could go, not permanent containment and not a
-general finding that every artificial intelligence lacked
-a claim worth hearing.
+approved schedule and review. Q asked his adviser how to
+propose another journey. She wrote the contact and required
+notice beside the condition on his copy.
 
 The community archive's records were to be preserved for
 a defined inspection proposal. Lucía's adviser sought
@@ -9146,10 +9122,8 @@ for that deposit to a separate application, not the claim
 over Q's body and coat.
 
 The separate review of Chano's intervention closed without
-a charge after the fuller account was considered. No
-doctrine about contractors of machines made striking an
-officer lawful. Chano received a notice describing this
-incident and kept it beside the earlier one.
+a charge after the fuller account was considered. Chano
+received the notice and read it twice.
 
 He had wanted to tear up the earlier notice. Lucía asked
 him to keep both. This was beginning to seem to him the
@@ -9219,12 +9193,17 @@ The secretary gave him the extra cover sheet and pointed
 out that it was not the order itself. Chano put it in
 his folder, not the ledger still in Tijuana.
 
-Outside, a vendor sold him a tamal sandwich. The
-secretary ate his own at his desk. Thus two lunches
-were consumed without a transfer of ownership requiring
-the court to decide whether friendship was a procedural
-category. Neither lunch settled the case, but both
-improved the afternoon.
+Outside, a vendor sold him a tamal sandwich. Chano had
+the folder under one arm and the sandwich in his other
+hand when his phone rang.
+
+“Let it ring,” he said to Lucía.
+
+“It might be important.”
+
+“Then they'll ring again.”
+
+He took a bite. Inside, the secretary finally did the same.
 
 
 ### Chapter Seventeen: The Wind Farm of Giants, Again

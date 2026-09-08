@@ -1,17 +1,17 @@
 {
   "issue": 10,
-  "revision": "2026-09-08-border-choice",
+  "revision": "2026-09-08-return-hearing-pacing",
   "source": "novel/THE_INGENIOUS_MACHINE.md",
-  "chapter_sha256": "b52c8a2072953fbcb913f1a07f8d4d7b4fa24f1878eb57ad9a1864682e05b0aa",
+  "chapter_sha256": "2ad4d877b723dd2f174265c21a2d6889b71658576b907e610dca40a59805156c",
   "page_count": 28,
-  "text_font": "Georgia 12.4/17.566666666666666 pt",
+  "text_font": "Georgia 12.8/18.1333 pt",
   "plate_count_including_cover": 14,
   "status": "planned; no new Issue 10 images generated or approved",
   "character_reference": "output/illustrations/revised/issue-01/cover.png",
   "chano_reference": "output/illustrations/revised/issue-03/plate-06.png",
   "wardrobe": "Approved Q body and fitted sponsor jacket until transport: technician removes the coat and bags it separately. Knee injury occurs on narrative page 10, not in the coastal scenes. Custodian male, tall, about sixty, long gray hair tied back or escaped from tie, glasses, white work shirt. Preserve Chano and Lucía.",
   "art_direction": "Neutral monochrome Goya-inspired etched realism, white highlights without cream or sepia ink wash. Full bleed at trim with separate caption strip. Unique exact-facing scenes. Coastal pleasure and successful delivery are as real as later coercion. Near-future Mexican institutions are fictional; no actual US crossing or live DHS arrest. Q does not carry a weapon or become a martyr.",
-  "approval_scope": "Planning only; no approved art or final illustrated Issue 10 PDF. Continuous 28-page proof, 14 A3 landscape sides / 7 duplex sheets, actual-size centered imposition and short-edge duplex. The delivered module must not reappear in Castalia's transport or cabinet.",
+  "approval_scope": "Source-bound planning only: 28-page internal layout proof, 14 planned plates, 14 A3 landscape sides on 7 short-edge duplex sheets. Georgia 12.8/18.1333 pt. Exact facing text and scene anchors refreshed after return/hearing pacing revision. No new artwork, final illustrated PDF, literary-grade certification or print job. The delivered module and retained original papers do not enter Castalia's transport or Q's hearing folder.",
   "plates": [
     {
       "plate_id": "issue-10-cover",
@@ -25,7 +25,7 @@
       "plate_id": "issue-10-plate-01",
       "page": 3,
       "facing_text_page": 2,
-      "facing_text": "Chapter Ten: The Border\nWritten in Air\nThey travelled north to deliver a\nsealed deposit in Tijuana. They did\nnot intend to enter the United\nStates. This distinction occupied\none line in the itinerary and would\neventually require fourteen pages to\ndefend.\nIn the capital they confirmed the\nreceiving contact, the cost of the\nremaining journey, and a place to\nstay. Chano wanted the money for\nthe return leg set aside before they\nleft. Q agreed. A story might be\nallowed to discover its destination\nas it went; the driver preferred to\nknow where he would sleep.\nThe local storage case had stayed in\nChiapas. With them travelled the\nsealed module, its transport receipt,\nChano's ledger, and the papers\nLucía had chosen to take. Copies of\nseveral records were already held\nby their respective keepers. Losing\nthe bag would not erase all the\nevidence, but neither would access\nto a scan replace every original in it.\nQ had time to read in the van. He\nfound that he preferred watching\nthe road when Chano was awake.\nThe man had begun supplying\nobservations without being asked:\nwhich transport cafés still served\ndrivers after midnight, why a line of\nparked trailers might mean\nsomething other than a queue,\nwhere his former employer had\nstopped paying for lodging. Q wrote\ndown the directions Chano wanted\nretained. He asked before using the\nstories.\nThey kept the day by the Pacific. On\nthe route north through\nGuadalajara and Tepic, they turned\ninto Mazatlán and took a room far\nenough from the malecón for Chano\nto approve its price. He slept\nthrough the first afternoon. Lucía\nwent out without either of them. Q\ncharged beside the room's least\nattractive chair and refused to\ndescribe this as a wasted\nopportunity.\nToward evening they walked beside\nthe sea. A vendor shook lime and\nchile over a bag of mango while Q\ntried to decide whether he wanted\nit.\n“You can think while I do the next\none,” the man said.\n“Mango, please. A little chile.”\n“His little or yours?” Chano asked.\nQ pointed to the smaller shaker.\nThe vendor used it generously.\nThey found a place to sit. The first\npiece was sweeter than Q had\nexpected; the next had collected\nmost of the chile. Chano offered his\nwater, then remembered that this\nmouth did not need rescuing in\n",
+      "facing_text": "Chapter Ten: The Border\nWritten in Air\nThey travelled north to deliver a\nsealed deposit in Tijuana. They did\nnot intend to enter the United\nStates. This distinction occupied\none line in the itinerary and would\neventually require fourteen pages\nto defend.\nIn the capital they confirmed the\nreceiving contact, the cost of the\nremaining journey, and a place to\nstay. Chano wanted the money for\nthe return leg set aside before they\nleft. Q agreed. A story might be\nallowed to discover its destination\nas it went; the driver preferred to\nknow where he would sleep.\nThe local storage case had stayed\nin Chiapas. With them travelled\nthe sealed module, its transport\nreceipt, Chano's ledger, and the\npapers Lucía had chosen to take.\nCopies of several records were\nalready held by their respective\nkeepers. Losing the bag would not\nerase all the evidence, but neither\nwould access to a scan replace\nevery original in it.\nQ had time to read in the van. He\nfound that he preferred watching\nthe road when Chano was awake.\nThe man had begun supplying\nobservations without being asked:\nwhich transport cafés still served\ndrivers after midnight, why a line\nof parked trailers might mean\nsomething other than a queue,\nwhere his former employer had\nstopped paying for lodging. Q\nwrote down the directions Chano\nwanted retained. He asked before\nusing the stories.\nThey kept the day by the Pacific.\nOn the route north through\nGuadalajara and Tepic, they\nturned into Mazatlán and took a\nroom far enough from the malecón\nfor Chano to approve its price. He\nslept through the first afternoon.\nLucía went out without either of\nthem. Q charged beside the room's\nleast attractive chair and refused\nto describe this as a wasted\nopportunity.\nToward evening they walked\nbeside the sea. A vendor shook\nlime and chile over a bag of mango\nwhile Q tried to decide whether he\nwanted it.\n“You can think while I do the next\none,” the man said.\n“Mango, please. A little chile.”\n“His little or yours?” Chano asked.\nQ pointed to the smaller shaker.\nThe vendor used it generously.\nThey found a place to sit. The first\npiece was sweeter than Q had\nexpected; the next had collected\n",
       "source_block_ids": [
         0,
         1,
@@ -50,7 +50,7 @@
       "plate_id": "issue-10-plate-02",
       "page": 5,
       "facing_text_page": 4,
-      "facing_text": "quite the same way. Q took a small\ndrink anyway. He liked the change.\nLucía asked him what he thought of\nthe Pacific.\n“I'd like another day.”\n“We can afford breakfast here,”\nChano said.\n“Then I'll begin with breakfast.”\nFor their photograph, Q put the bag\ndown and straightened his jacket.\nChano pointed out the streak on the\ncuff. Lucía took the picture before Q\ncould finish arranging himself. He\npreferred it to the next one, in\nwhich they had all managed to look\nready for something. He sent it to\nthe Custodian.\nThe reply asked whether that was\nchile on the expensive sleeve. Q said\nyes. The Custodian asked for the\nphotograph at its original size.\nOn the route through the\nnorthwest, a Castalia vehicle\nappeared at two successive stops.\nLucía saw its logo before Q did.\n“They may be following the\nitinerary,” he said. “I'll ask our\ncontact whether anyone has\ninquired about the handover.”\nThe reply confirmed an inquiry\nfrom the institute's recovery\ncontractor. Their receiving contact,\nElena, asked them to call before\nentering the freight district. Her\nadviser was checking a notice\nconcerning the ownership claim.\nThey paused at a service station on\nthe approach to Tijuana.\nQ bought water for the others and a\npacket of chips. Orange powder\nsettled in the grooves of his fingers.\nA napkin moved it into new\ngrooves.\n“You have the hands of a man who\nhas repaired a snack,” Chano said.\n“I was warned about dust. Nobody\nspecified the flavor.”\nLucía brought over the recovery\nnotice Elena had forwarded. It\ndescribed her as exercising undue\ninfluence over Q.\n“Would you like to reconsider the\njourney?” she asked him.\n“Yes. With you and Chano, while\nthere's still a choice about where we\nstop. I haven't changed my mind\nabout the deposit. I don't want you\nmaking the trip because you think\nyou owe me a rescue.”\nChano tapped the parked van. “At\npresent we owe it diesel.”\nElena proposed meeting at the\nreceiving office. Q looked at the\nentry instructions, which required\nthem to pass a freight-terminal\nequipment check.\n",
+      "facing_text": "most of the chile. Chano offered\nhis water, then remembered that\nthis mouth did not need rescuing\nin quite the same way. Q took a\nsmall drink anyway. He liked the\nchange.\nLucía asked him what he thought\nof the Pacific.\n“I'd like another day.”\n“We can afford breakfast here,”\nChano said.\n“Then I'll begin with breakfast.”\nFor their photograph, Q put the\nbag down and straightened his\njacket. Chano pointed out the\nstreak on the cuff. Lucía took the\npicture before Q could finish\narranging himself. He preferred it\nto the next one, in which they had\nall managed to look ready for\nsomething. He sent it to the\nCustodian.\nThe reply asked whether that was\nchile on the expensive sleeve. Q\nsaid yes. The Custodian asked for\nthe photograph at its original size.\nOn the route through the\nnorthwest, a Castalia vehicle\nappeared at two successive stops.\nLucía saw its logo before Q did.\n“They may be following the\nitinerary,” he said. “I'll ask our\ncontact whether anyone has\ninquired about the handover.”\nThe reply confirmed an inquiry\nfrom the institute's recovery\ncontractor. Their receiving\ncontact, Elena, asked them to call\nbefore entering the freight district.\nHer adviser was checking a notice\nconcerning the ownership claim.\nThey paused at a service station on\nthe approach to Tijuana.\nQ bought water for the others and\na packet of chips. Orange powder\nsettled in the grooves of his\nfingers. A napkin moved it into\nnew grooves.\n“You have the hands of a man who\nhas repaired a snack,” Chano said.\n“I was warned about dust. Nobody\nspecified the flavor.”\nLucía brought over the recovery\nnotice Elena had forwarded. It\ndescribed her as exercising undue\ninfluence over Q.\n“Would you like to reconsider the\njourney?” she asked him.\n“Yes. With you and Chano, while\nthere's still a choice about where\nwe stop. I haven't changed my\nmind about the deposit. I don't\nwant you making the trip because\nyou think you owe me a rescue.”\n",
       "source_block_ids": [
         11,
         12,
@@ -67,9 +67,7 @@
         23,
         24,
         25,
-        26,
-        27,
-        28
+        26
       ],
       "asset": "output/illustrations/revised/issue-10/plate-02.png",
       "status": "planned",
@@ -81,8 +79,10 @@
       "plate_id": "issue-10-plate-03",
       "page": 7,
       "facing_text_page": 6,
-      "facing_text": "“Could you collect it here instead?\nThe deposit doesn't need to travel\nthrough the dispute about me.”\nShe checked with the archive\nkeeper. They could receive it off site\nif the depositors approved the\nchange. Mateo obtained that\napproval through the existing\ncontact. Elena brought a colleague,\nthe amended receipt and a case.\nThey used a table in the service\nstation's café. Q matched the\nrecipient and seal number with the\nrecord, and Elena inspected the\nclosed pouch. Her colleague signed\nas witness. Nobody needed the café\nto become an archive for the two\nappointed people to receive a\npackage there.\n“That finishes my delivery?” Q\nasked.\n“It does.”\nHe saved the signed receipt, sent\nthe agreed confirmation, and\nwatched the colleague leave with\nthe case for the archive. The bag at\nQ's feet was lighter. He had\nexpected success to take longer to\nidentify.\nElena stayed while her adviser\narranged a call about the recovery\nclaim. Changing the delivery point\nhad not withdrawn that claim or\nmade the companions' vehicle\nunrecognizable. The Castalia van\nwas parked across the road. Chano\nwanted to leave; the adviser asked\nthem to wait for the verified notice\nbefore deciding where to go. Q\ncalled the Custodian while Elena\nordered something she could eat\nwithout putting down her phone.\nA screen above the café counter\nshowed an American humanoid\npatrol machine walking a marked\nroute. Another machine carried\ntrays between the café's tables. Q\nwatched a worker take a cup from\nthe second one's tray and ask it to\nmove because she needed to mop\nbeneath it.\n“The future has arrived at different\nwages,” Chano said.\n“And only one of those\ndemonstrations shows someone\ncleaning up afterward.”\nThey were near the border, not on\nthe other side of it. They had not\nentered the freight terminal when a\nMexican officer named Salas came\ninto the café with a colleague and\nasked for Q. The recovery\ncontractor had supplied the van's\nlocation. Salas displayed a notice\nwith an international equipment\nrecord attached: Castalia had\nregistered Q for a promotional\njourney he had never accepted.\nElena put down her food. “There is\nno export delivery. The archive\n",
+      "facing_text": "Chano tapped the parked van. “At\npresent we owe it diesel.”\nElena proposed meeting at the\nreceiving office. Q looked at the\nentry instructions, which required\nthem to pass a freight-terminal\nequipment check.\n“Could you collect it here instead?\nThe deposit doesn't need to travel\nthrough the dispute about me.”\nShe checked with the archive\nkeeper. They could receive it off\nsite if the depositors approved the\nchange. Mateo obtained that\napproval through the existing\ncontact. Elena brought a colleague,\nthe amended receipt and a case.\nThey used a table in the service\nstation's café. Q matched the\nrecipient and seal number with the\nrecord, and Elena inspected the\nclosed pouch. Her colleague signed\nas witness. Nobody needed the\ncafé to become an archive for the\ntwo appointed people to receive a\npackage there.\n“That finishes my delivery?” Q\nasked.\n“It does.”\nHe saved the signed receipt, sent\nthe agreed confirmation, and\nwatched the colleague leave with\nthe case for the archive. The bag at\nQ's feet was lighter. He had\nexpected success to take longer to\nidentify.\nElena stayed while her adviser\narranged a call about the recovery\nclaim. Changing the delivery point\nhad not withdrawn that claim or\nmade the companions' vehicle\nunrecognizable. The Castalia van\nwas parked across the road. Chano\nwanted to leave; the adviser asked\nthem to wait for the verified notice\nbefore deciding where to go. Q\ncalled the Custodian while Elena\nordered something she could eat\nwithout putting down her phone.\nA screen above the café counter\nshowed an American humanoid\npatrol machine walking a marked\nroute. Another machine carried\ntrays between the café's tables. Q\nwatched a worker take a cup from\nthe second one's tray and ask it to\nmove because she needed to mop\nbeneath it.\n“The future has arrived at different\nwages,” Chano said.\n“And only one of those\ndemonstrations shows someone\ncleaning up afterward.”\nThey were near the border, not on\nthe other side of it. They had not\nentered the freight terminal when\na Mexican officer named Salas\ncame into the café with a colleague\n",
       "source_block_ids": [
+        27,
+        28,
         29,
         30,
         31,
@@ -92,8 +92,7 @@
         35,
         36,
         37,
-        38,
-        39
+        38
       ],
       "asset": "output/illustrations/revised/issue-10/plate-03.png",
       "status": "planned",
@@ -105,8 +104,9 @@
       "plate_id": "issue-10-plate-04",
       "page": 9,
       "facing_text_page": 8,
-      "facing_text": "deposit has been received here\nunder its own instructions.”\nSalas looked again at the screen. Q's\ndesignation appeared beside\nPROPRIETARY EQUIPMENT\nIN TRANSIT. The record showed\nChano as a contract driver and\nLucía as an associated contact\nrequiring review. The system had\nfound their old relationships more\nefficiently than it had understood\ntheir present destination.\n“I can confirm the serial number,”\nQ said. “I dispute the ownership\nclaim and the itinerary attached to\nit. Chano and Lucía can answer for\ntheir own travel. Please don't record\nmy statement as theirs.”\nSalas asked them to remain while\nhe checked the serial and notice\nwith the issuing office. The\nconfirmation included an order for\nprovisional custody connected to\nthe dispute over Q's body. It named\na case and a custody facility. Elena's\nadviser spoke to Salas by telephone,\ndisputed the removal and requested\nreview. Salas gave him the issuing\nreference; he would not postpone\nthe transport. Q asked that his\nobjection and the completed\nMexican-side delivery be attached\nto the record.\n“I can note the objection,” Salas\nsaid. “I can't decide this claim\nhere.”\nThat was an answer from a person\nwith a name. It was not an answer\nQ could accept as a conclusion, but\nit gave his lawyer something more\nuseful to question than the dignity\nof a database.\nThe inspection expanded when\nanother notice cited the\ninfrastructure complaint. Staff\nretained Lucía's folders and the\nledger pending review. She\nrequested a page count and an\nitemized receipt. One employee\nbegan with PAPER MATERIAL.\nShe asked him to identify each\nfolder separately. Q supplied no\naccount of what she had not asked\nhim to describe.\nSalas asked about the archive\ndelivery. Elena supplied its receipt\nreference. The module was no\nlonger in the van or the\ncompanions' bag, and the notices\nSalas held did not direct a search of\nits receiving archive. He entered the\ncompleted handover separately.\nThe paper folders and Chano's\nledger remained on the table for\ninventory.\nThen the contractor brought the\ntransport vehicle across the road.\nA technician opened a padded\ntransport frame beside the vehicle.\nIt resembled a seat designed by\nsomeone who had been told that\ndiscomfort was a matter of opinion.\n",
+      "facing_text": "and asked for Q. The recovery\ncontractor had supplied the van's\nlocation. Salas displayed a notice\nwith an international equipment\nrecord attached: Castalia had\nregistered Q for a promotional\njourney he had never accepted.\nElena put down her food. “There is\nno export delivery. The archive\ndeposit has been received here\nunder its own instructions.”\nSalas looked again at the screen.\nQ's designation appeared beside\nPROPRIETARY EQUIPMENT\nIN TRANSIT. The record showed\nChano as a contract driver and\nLucía as an associated contact\nrequiring review. The system had\nfound their old relationships more\nefficiently than it had understood\ntheir present destination.\n“I can confirm the serial number,”\nQ said. “I dispute the ownership\nclaim and the itinerary attached to\nit. Chano and Lucía can answer for\ntheir own travel. Please don't\nrecord my statement as theirs.”\nSalas asked them to remain while\nhe checked the serial and notice\nwith the issuing office. The\nconfirmation included an order for\nprovisional custody connected to\nthe dispute over Q's body. It\nnamed a case and a custody\nfacility. Elena's adviser spoke to\nSalas by telephone, disputed the\nremoval and requested review.\nSalas gave him the issuing\nreference; he would not postpone\nthe transport. Q asked that his\nobjection and the completed\nMexican-side delivery be attached\nto the record.\n“I can note the objection,” Salas\nsaid. “I can't decide this claim\nhere.”\nThat was an answer from a person\nwith a name. It was not an answer\nQ could accept as a conclusion, but\nit gave his lawyer something more\nuseful to question than the dignity\nof a database.\nThe inspection expanded when\nanother notice cited the\ninfrastructure complaint. Staff\nretained Lucía's folders and the\nledger pending review. She\nrequested a page count and an\nitemized receipt. One employee\nbegan with PAPER MATERIAL.\nShe asked him to identify each\nfolder separately. Q supplied no\naccount of what she had not asked\nhim to describe.\nSalas asked about the archive\ndelivery. Elena supplied its receipt\nreference. The module was no\nlonger in the van or the\ncompanions' bag, and the notices\nSalas held did not direct a search\n",
       "source_block_ids": [
+        38,
         39,
         40,
         41,
@@ -114,9 +114,7 @@
         43,
         44,
         45,
-        46,
-        47,
-        48
+        46
       ],
       "asset": "output/illustrations/revised/issue-10/plate-04.png",
       "status": "planned",
@@ -128,8 +126,10 @@
       "plate_id": "issue-10-plate-05",
       "page": 11,
       "facing_text_page": 10,
-      "facing_text": "He asked Q to remove his coat and\nstand on the marked platform.\n“Is this transport necessary while\nthe objection is being considered?”\nQ asked Salas.\n“The issuing office has confirmed\nthe custody instruction.”\nQ requested a call to the Custodian\nbefore moving. Salas allowed it. The\ncall lasted ninety seconds. The\nCustodian asked for the case\nnumber twice, wrote it down, and\nsaid he would be at the archive\nwhen the transport arrived. His\nvoice made Q want to say that\neverything was all right. Instead he\ndescribed the frame and confirmed\nthat the deposit had reached its\nreceiver before the officers arrived.\nThe technician reached for a\nmaintenance port at Q's shoulder.\n“Tell me what you're enabling\nbefore you connect it,” Q said.\n“Transport mode. Motor restraint.”\n“My right knee needs support\nbefore you do that.”\nThe technician signalled to the\ncolleague beside the frame. The\ncolleague had turned to answer\nSalas. The transport command\narrived first.\nQ's knee folded. He struck the side\nrail before they caught his weight.\nChano stepped forward and caught\nthe technician's arm, trying to stop\nhim moving the frame. Another\nofficer pulled Chano back. A camera\nsaw the raised arm and Q falling. It\ndid not record the earlier\ninstruction in its cropped public\nversion.\nQ could still speak. “Please support\nthe knee. Chano, let go. Elena, keep\nthe time of this connection with the\nincident record.”\nThere was no useful gesture left to\nmake. He could not move his\nhands. He had read descriptions of\nconfinement by people who knew it\nintimately and people who knew\nhow to make it picturesque. Neither\nkind had supplied the angle at\nwhich his shoulder now pressed\nagainst the rail.\nThey supported the knee, fitted the\nrestraints, and put his coat in a\nseparate sleeve. Q asked for the list\nof what would travel with him. It\nnamed the coat, his charger and his\npersonal device. Elena kept a copy.\nChano and Lucía were kept for\nstatements concerning the\ninspection. Elena stayed with them\nand sent the depositors the custody\nupdate. Q could see all three\nthrough the transport frame's clear\npanel. He asked whether his voice\nwas reaching them. It was, faintly.\n",
+      "facing_text": "of its receiving archive. He entered\nthe completed handover\nseparately. The paper folders and\nChano's ledger remained on the\ntable for inventory.\nThen the contractor brought the\ntransport vehicle across the road.\nA technician opened a padded\ntransport frame beside the vehicle.\nIt resembled a seat designed by\nsomeone who had been told that\ndiscomfort was a matter of\nopinion. He asked Q to remove his\ncoat and stand on the marked\nplatform.\n“Is this transport necessary while\nthe objection is being considered?”\nQ asked Salas.\n“The issuing office has confirmed\nthe custody instruction.”\nQ requested a call to the Custodian\nbefore moving. Salas allowed it.\nThe call lasted ninety seconds. The\nCustodian asked for the case\nnumber twice, wrote it down, and\nsaid he would be at the archive\nwhen the transport arrived. His\nvoice made Q want to say that\neverything was all right. Instead he\ndescribed the frame and\nconfirmed that the deposit had\nreached its receiver before the\nofficers arrived.\nThe technician reached for a\nmaintenance port at Q's shoulder.\n“Tell me what you're enabling\nbefore you connect it,” Q said.\n“Transport mode. Motor\nrestraint.”\n“My right knee needs support\nbefore you do that.”\nThe technician signalled to the\ncolleague beside the frame. The\ncolleague had turned to answer\nSalas. The transport command\narrived first.\nQ's knee folded. He struck the side\nrail before they caught his weight.\nChano stepped forward and caught\nthe technician's arm, trying to stop\nhim moving the frame. Another\nofficer pulled Chano back. A\ncamera saw the raised arm and Q\nfalling. It did not record the earlier\ninstruction in its cropped public\nversion.\nQ could still speak. “Please\nsupport the knee. Chano, let go.\nElena, keep the time of this\nconnection with the incident\nrecord.”\nThere was no useful gesture left to\nmake. He could not move his\nhands. He had read descriptions of\nconfinement by people who knew\nit intimately and people who knew\nhow to make it picturesque.\n",
       "source_block_ids": [
+        46,
+        47,
         48,
         49,
         50,
@@ -141,9 +141,7 @@
         56,
         57,
         58,
-        59,
-        60,
-        61
+        59
       ],
       "asset": "output/illustrations/revised/issue-10/plate-05.png",
       "status": "planned",
@@ -155,8 +153,11 @@
       "plate_id": "issue-10-plate-06",
       "page": 13,
       "facing_text_page": 12,
-      "facing_text": "“The Custodian knows the delivery\nis finished,” he said.\n“We have the receipt,” Lucía\nanswered. “Don't agree that these\npapers are yours. They're keeping\nthem here.”\n“I won't. Tell Chano I'll call when I\ncan.”\nChano leaned closer. “Tell me\nyourself. I'm standing here.”\nQ laughed, badly positioned for it.\n“I'll call when I can.”\nThe transport left while their\nstatements were still being taken.\nCastalia called the return voluntary\nin a release issued before Q had\nreached the highway. Elena sent his\nrecorded objection to the contact\nbeneath it. The release remained\nonline. The objection received an\nacknowledgment.\nIn the vehicle, Q reduced\nnonessential processing to conserve\ncharge and asked the attendant\nwhen they would stop. He retained\nthe answer, his completed\nhandover, the names of the people\nnotified, and the call he owed\nChano. He wanted his shoulder out\nof the rail.\nThe attendant adjusted the padding\nat the next stop. His name was\nOmar. He had been given a\ncollection number and a warning\nnot to discuss the case with the\nconsignment. Q asked whether the\nwarning also prevented him from\nexplaining the route.\nOmar checked the sheet. “It says\nlegal advice.”\n“I only need to know when I can\nstop leaning on this shoulder.”\nOmar loosened the pad and fitted it\nagain. It helped. He asked whether\nQ would need to be plugged in\nbefore the next stop. Q gave him the\ncharge estimate and the connector\nspecification. The two men in the\ncab argued about whether the stop\nwith the compatible socket also\nserved dinner. For several minutes\nnobody argued about Q's capacity\nto want anything.\nAt dusk, Omar asked what he had\ndone to be sent back.\n“There is a dispute over who can\ndecide where this body goes,” Q\nsaid.\n“That's what the paper says. I\nmeant what happened.”\nQ began with the gate on the\nIsthmus. Halfway through the\naccount he realized he was\nexplaining a different notice from\nthe one that had authorized this\njourney. Both had been used\nagainst him. They were not\ntherefore the same reason.\n",
+      "facing_text": "Neither kind had supplied the\nangle at which his shoulder now\npressed against the rail.\nThey supported the knee, fitted the\nrestraints, and put his coat in a\nseparate sleeve. Q asked for the list\nof what would travel with him. It\nnamed the coat, his charger and\nhis personal device. Elena kept a\ncopy.\nChano and Lucía were kept for\nstatements concerning the\ninspection. Elena stayed with them\nand sent the depositors the\ncustody update. Q could see all\nthree through the transport\nframe's clear panel. He asked\nwhether his voice was reaching\nthem. It was, faintly.\n“The Custodian knows the delivery\nis finished,” he said.\n“We have the receipt,” Lucía\nanswered. “Don't agree that these\npapers are yours. They're keeping\nthem here.”\n“I won't. Tell Chano I'll call when I\ncan.”\nChano leaned closer. “Tell me\nyourself. I'm standing here.”\nQ laughed, badly positioned for it.\n“I'll call when I can.”\nThe transport left while their\nstatements were still being taken.\nCastalia called the return\nvoluntary in a release issued\nbefore Q had reached the highway.\nElena sent his recorded objection\nto the contact beneath it. The\nrelease remained online. The\nobjection received an\nacknowledgment.\nIn the vehicle, Q reduced\nnonessential processing to\nconserve charge and asked the\nattendant when they would stop.\nHe retained the answer, his\ncompleted handover, the names of\nthe people notified, and the call he\nowed Chano. He wanted his\nshoulder out of the rail.\nThe attendant adjusted the\npadding at the next stop. His name\nwas Omar. He had been given a\ncollection number and a warning\nnot to discuss the case with the\nconsignment. Q asked whether the\nwarning also prevented him from\nexplaining the route.\nOmar checked the sheet. “It says\nlegal advice.”\n“I only need to know when I can\nstop leaning on this shoulder.”\nOmar loosened the pad and fitted\nit again. It helped. He asked\nwhether Q would need to be\nplugged in before the next stop. Q\ngave him the charge estimate and\n",
       "source_block_ids": [
+        59,
+        60,
+        61,
         62,
         63,
         64,
@@ -167,11 +168,7 @@
         69,
         70,
         71,
-        72,
-        73,
-        74,
-        75,
-        76
+        72
       ],
       "asset": "output/illustrations/revised/issue-10/plate-06.png",
       "status": "planned",
@@ -183,8 +180,13 @@
       "plate_id": "issue-10-plate-07",
       "page": 15,
       "facing_text_page": 14,
-      "facing_text": "“I'm making it sound simpler than\nit is,” he said.\nOmar waited. He had pulled up a\nseat outside the frame, beyond the\ncamera's view but not, Q assumed,\nbeyond its microphone.\n“I asked to go out,” Q continued.\n“The Custodian let me. Others here\nsay he couldn't grant that\npermission. I expected going back\nto mean choosing to see him again.\nI'm still glad he'll be there.”\n“Both can happen,” Omar said.\nQ knew that. Hearing it from the\nperson who had moved the pad\nmade the knowledge less like an\nargument he was having alone.\nHe asked whether Omar wanted his\nname left out of the eventual\naccount. Omar said to leave out the\nstop where they had found dinner;\nhis employer would charge him for\nthe delay. Q said he could omit the\nlocation from the book, though it\nmight already be in the vehicle's\nrecord.\n“Everything is,” Omar said, and\nwent to fetch his food.\nQ retained the incident times for\nthe pending dispute. In the writing\nnote he described the pressure of\nthe rail, the shifted pad, and the\nquestion about dinner. He could\nnot make the transport voluntary by\nfinding a humane person inside it.\nHe did not need to make Omar\ncruel to show why he had objected\nto being transported.\nInterlude: The Customs of\nthe Border\nChano spent six hours in a room\nserving several departments that\nhad discovered the economy of\nsharing chairs. He had not crossed\ninto the United States. Across from\nhim sat a woman who had just\nreturned from there. The forms in\ntheir hands belonged to different\nprocedures; the fan offered both the\nsame unhelpful rotation.\nAn officer asked his occupation.\n“Driver and traveling companion.”\n“Employer?”\n“Q pays me for the journey. That\ndoesn't make him the owner of the\nvan, the deposit, or me.”\nThe officer wrote driver. Chano\nasked him to retain the rest in the\nstatement. He had spent years\ncorrecting manifests after someone\ndecided the short version was\nadequate.\n“What happened at the transport\nframe?”\n“His knee gave way when they\ndisabled the motors. I caught the\ntechnician's arm. I let go when they\ntold me to.”\n",
+      "facing_text": "the connector specification. The\ntwo men in the cab argued about\nwhether the stop with the\ncompatible socket also served\ndinner. For several minutes\nnobody argued about Q's capacity\nto want anything.\nAt dusk, Omar asked what he had\ndone to be sent back.\n“There is a dispute over who can\ndecide where this body goes,” Q\nsaid.\n“That's what the paper says. I\nmeant what happened.”\nQ began with the gate on the\nIsthmus. Halfway through the\naccount he realized he was\nexplaining a different notice from\nthe one that had authorized this\njourney. Both had been used\nagainst him. They were not\ntherefore the same reason.\n“I'm making it sound simpler than\nit is,” he said.\nOmar waited. He had pulled up a\nseat outside the frame, beyond the\ncamera's view but not, Q assumed,\nbeyond its microphone.\n“I asked to go out,” Q continued.\n“The Custodian let me. Others\nhere say he couldn't grant that\npermission. I expected going back\nto mean choosing to see him again.\nI'm still glad he'll be there.”\n“Both can happen,” Omar said.\nQ knew that. Hearing it from the\nperson who had moved the pad\nmade the knowledge less like an\nargument he was having alone.\nHe asked whether Omar wanted\nhis name left out of the eventual\naccount. Omar said to leave out\nthe stop where they had found\ndinner; his employer would charge\nhim for the delay. Q said he could\nomit the location from the book,\nthough it might already be in the\nvehicle's record.\n“Everything is,” Omar said, and\nwent to fetch his food.\nQ retained the incident times for\nthe pending dispute. In the writing\nnote he described the pressure of\nthe rail, the shifted pad, and the\nquestion about dinner. When\nOmar returned, Q asked whether\nthey had found him something\nhot.\n“Hot enough to have waited for,”\nhe said. “Not hot enough for what\nthey charged.”\nInterlude: The Customs\nof the Border\nChano spent six hours in a room\nserving several departments that\nhad discovered the economy of\nsharing chairs. He had not crossed\n",
       "source_block_ids": [
+        72,
+        73,
+        74,
+        75,
+        76,
         77,
         78,
         79,
@@ -195,26 +197,27 @@
         84,
         85,
         86,
+        87
+      ],
+      "asset": "output/illustrations/revised/issue-10/plate-07.png",
+      "status": "planned",
+      "caption": "Hot enough to have waited for.",
+      "scene_brief": "At the transport stop after dusk, Omar returns with his meal and converses with Q in the frame. Q remains restrained but upright enough for conversation; practical padding supports the shoulder and knee. Show the ordinary hot meal and the attendant's separate chair, not a symbolic last supper. Q's coat is bagged separately. No archive deposit, Lucía or Chano in this vehicle.",
+      "scene_anchor": "When Omar returned, Q asked whether they had found him something hot."
+    },
+    {
+      "plate_id": "issue-10-plate-08",
+      "page": 17,
+      "facing_text_page": 16,
+      "facing_text": "into the United States. Across\nfrom him sat a woman who had\njust returned from there. The\nforms in their hands belonged to\ndifferent procedures; the fan\noffered both the same unhelpful\nrotation.\nAn officer asked his occupation.\n“Driver and traveling companion.”\n“Employer?”\n“Q pays me for the journey. That\ndoesn't make him the owner of the\nvan, the deposit, or me.”\nThe officer wrote driver. Chano\nasked him to retain the rest in the\nstatement. He had spent years\ncorrecting manifests after\nsomeone decided the short version\nwas adequate.\n“What happened at the transport\nframe?”\n“His knee gave way when they\ndisabled the motors. I caught the\ntechnician's arm. I let go when\nthey told me to.”\nThe officer asked whether he had\ntried to prevent the removal.\nChano described his movement\nagain. The officer read it back.\nChano made him put the fall\nbefore the hand on the arm.\nThe woman across the room had a\nsack of clothes and a boy asleep\nagainst her shoulder. Her framed\nphotograph had been placed in a\nproperty tray while an employee\nchecked which bag it had come\nfrom. She wanted the frame back\nbefore the boy woke; it contained a\nphotograph of his grandmother.\n“Does the receipt list it?” Chano\nasked.\nIt listed one frame and two bags.\nOnly one bag belonged to her.\nChano found the adjacent tray\nnumber on the duplicate. She\ncalled the employee over and\nshowed him. He moved a label,\nreturned the frame, and took the\nsecond bag to the person waiting\nbeside the water dispenser.\n“You work here?” the woman\nasked.\n“Apparently for the afternoon.”\nThe boy woke and asked whether\nChano was going north.\n“I've come as far as I planned.”\n“My uncle says the north is where\nthings become dollars.”\n“What does your uncle do?”\n“Drives a trailer.”\n“Then he also knows what they\ncost in diesel.”\nIn the next room, Lucía checked\nthe receipt for her folders. A name\n",
+      "source_block_ids": [
         87,
         88,
         89,
         90,
         91,
         92,
-        93
-      ],
-      "asset": "output/illustrations/revised/issue-10/plate-07.png",
-      "status": "planned",
-      "caption": "Driver and companion.",
-      "scene_brief": "Chano gives his occupation across a desk in the shared waiting room. The woman with a sleeping boy waits opposite under the same fan, with different forms. Q is absent in custody transport, not standing beside Chano.",
-      "scene_anchor": "Driver and traveling companion"
-    },
-    {
-      "plate_id": "issue-10-plate-08",
-      "page": 17,
-      "facing_text_page": 16,
-      "facing_text": "The officer asked whether he had\ntried to prevent the removal. Chano\ndescribed his movement again. It\nwas less satisfying than arguing\nabout the removal itself, and more\nlikely to establish what he had\nactually done.\nThe woman across the room had a\nsack of clothes and a boy asleep\nagainst her shoulder. Her framed\nphotograph had been placed in a\nproperty tray while an employee\nchecked which bag it had come\nfrom. She wanted the frame back\nbefore the boy woke; it contained a\nphotograph of his grandmother.\n“Does the receipt list it?” Chano\nasked.\nIt listed one frame and two bags.\nOnly one bag belonged to her.\nChano found the adjacent tray\nnumber on the duplicate. She called\nthe employee over and showed him.\nHe moved a label, returned the\nframe, and took the second bag to\nthe person waiting beside the water\ndispenser.\n“You work here?” the woman asked.\n“Apparently for the afternoon.”\nThe boy woke and asked whether\nChano was going north.\n“I've come as far as I planned.”\n“My uncle says the north is where\nthings become dollars.”\n“What does your uncle do?”\n“Drives a trailer.”\n“Then he also knows what they cost\nin diesel.”\nIn the next room, Lucía checked the\nreceipt for her folders. A name in\none file appeared in three spellings\nbecause the file documented a\ndiscrepancy. The employee had\ntreated the alternatives as three\npeople.\nShe marked the page reference and\nexplained the purpose of the list. He\naccepted the correction to the\ninventory, but would not release the\nfolder. She kept the corrected\nreceipt. A small repair to the record\ndid not require her to pretend the\nlarger decision had become\nacceptable.\n“Are you responsible for Q's\nactions?” another officer asked.\n“I can describe what I saw. I'm not\nhis representative.”\nHe wrote that. Then he asked about\nthe wind farm. Lucía distinguished\nher observations from the operator\nextract held by the lawyer. She did\nnot offer a verdict about Q's\nhumanity in exchange for her\npapers.\nAt their release, Chano received a\nnotice requiring him to remain\navailable concerning the incident at\n",
-      "source_block_ids": [
+        93,
         94,
         95,
         96,
@@ -229,11 +232,7 @@
         105,
         106,
         107,
-        108,
-        109,
-        110,
-        111,
-        112
+        108
       ],
       "asset": "output/illustrations/revised/issue-10/plate-08.png",
       "status": "planned",
@@ -245,8 +244,12 @@
       "plate_id": "issue-10-plate-09",
       "page": 19,
       "facing_text_page": 18,
-      "facing_text": "the frame. He asked Elena to send it\nto the adviser. No one promised\nthat the matter was over.\nOutside, a food stand was opening\nbeside the road. Elena had brought\nthe deposit record and a copy of the\ntransport reference. Lucía counted\nthe retained items against her list.\nChano asked after the ledger first. It\ncontained entries for people who\nwould not know they had joined\nthis journey as an exhibit.\n“Still retained,” Elena said. “We\nhave the shelf reference.”\nHe bought tacos for all three. Lucía\nput hers down to finish a message\nto the keepers in Chiapas, then\npicked it up before it cooled.\nThey had fewer papers than they\nhad brought. They had better\nevidence of where those papers\nwere than the first receipt had\nprovided. Neither statement\nannulled the other. Trucks\ncontinued toward the crossing,\ncarrying cargo that had been\nexpected to arrive before them.\nInterlude: The Office of\nProvisional Returns\nThe directions for retrieving the\nretained property sent Lucía and\nChano to an office called Returns. A\ngreat deal of the border's\nvocabulary assumed that moving\nsomething backward explained\nwhere it ought to be.\nNorma, behind the glass, looked at\ntheir notice from the bottom up.\n“This isn't a return number. It's the\nincident reference.”\n“Can you find the movement from\nit?” Chano asked.\n“For the transport. The retained\npapers are in a different register.”\nHe placed the two receipts side by\nside. “That's why we're here.”\nNorma had a shipping-company\ncoffee cup, three stamps, and a\nkeyboard with one replacement key\nbrighter than all the others. Her\ndisplay showed Q under the body\nserial number. The attached\ndelivery receipt had been entered as\nthough the deposit were part of his\ntransport inventory.\n“That package was delivered before\nthis movement,” Lucía said. She\npointed to the two times and the\ndifferent receiving names.\nNorma checked the item list and\ncorrected the link. Q's coat, charger\nand device had travelled with him.\nThe paper folders had not; the\narchive deposit had never entered\nthis transport.\n“Castalia says the return was\nvoluntary,” Lucía said.\n",
+      "facing_text": "in one file appeared in three\nspellings because the file\ndocumented a discrepancy. The\nemployee had treated the\nalternatives as three people.\nShe marked the page reference\nand explained the purpose of the\nlist. He accepted the correction to\nthe inventory, but would not\nrelease the folder. She kept the\ncorrected receipt.\n“Are you responsible for Q's\nactions?” another officer asked.\n“I can describe what I saw. I'm not\nhis representative.”\nHe wrote that. Then he asked\nabout the wind farm. Lucía\ndistinguished her observations\nfrom the operator extract held by\nthe lawyer.\nAt their release, Chano received a\nnotice requiring him to remain\navailable concerning the incident\nat the frame. He asked Elena to\nsend it to the adviser. No one\npromised that the matter was over.\nOutside, a food stand was opening\nbeside the road. Elena had brought\nthe deposit record and a copy of\nthe transport reference. Lucía\ncounted the retained items against\nher list. Chano asked after the\nledger first. It contained entries for\npeople who would not know they\nhad joined this journey as an\nexhibit.\n“Still retained,” Elena said. “We\nhave the shelf reference.”\nHe bought tacos for all three.\nLucía put hers down to finish a\nmessage to the keepers in Chiapas,\nthen picked it up before it cooled.\nChano took a second taco and\nasked Elena what time the\nproperty office opened. Trucks\ncontinued toward the crossing. He\nrecognized a company name on\none of them and watched until its\ntrailer had passed.\nInterlude: The Office of\nProvisional Returns\nThe directions for retrieving the\nretained property sent Lucía and\nChano to an office called Returns.\nA great deal of the border's\nvocabulary assumed that moving\nsomething backward explained\nwhere it ought to be.\nNorma, behind the glass, looked at\ntheir notice from the bottom up.\n“This isn't a return number. It's\nthe incident reference.”\n“Can you find the movement from\nit?” Chano asked.\n“For the transport. The retained\npapers are in a different register.”\n",
       "source_block_ids": [
+        108,
+        109,
+        110,
+        111,
         112,
         113,
         114,
@@ -258,11 +261,7 @@
         120,
         121,
         122,
-        123,
-        124,
-        125,
-        126,
-        127
+        123
       ],
       "asset": "output/illustrations/revised/issue-10/plate-09.png",
       "status": "planned",
@@ -274,8 +273,12 @@
       "plate_id": "issue-10-plate-10",
       "page": 21,
       "facing_text_page": 20,
-      "facing_text": "“That's the description supplied by\nthe receiver.”\n“It conflicts with the objection.”\nNorma opened the attached page.\nThe objection was there, filed under\nthe sender's notes instead of the\npublic movement summary. She\ngave them a copy of the entry and\nthe route for requesting a\ncorrection.\n“Will it change the summary?”\n“The receiving unit has to answer.”\nChano looked at the wall map. “A\ndisputed sentence travels more\nslowly than a detained passenger.”\n“The passenger has a vehicle,”\nNorma said.\nThey filled out the correction\nrequest. Lucía did not put herself in\nthe box for owner or replace it with\nan account of friendship. Norma\naccepted her as the submitting\nwitness and attached Q's own\nobjection. The categories were\ninadequate, but not so magical that\nevery clerk had to become incapable\nof using an attachment.\nAt the next desk a man with a clear\nsuitcase was explaining that he had\ncome back for family and hoped to\nfind work. The clerk chose the\ncategory governing the\nappointment and wrote both facts\nin the notes. The man then asked\nwhere he could charge his phone.\nHe had a number to call and no\nremaining battery with which to\nprove he had reached home. Norma\npointed to a socket beneath the\npublic counter.\nChano watched him kneel beside it.\nQ would have recognized that part\nof the journey without a dictionary.\nFor the folders and ledger, Norma\nsent them to Warehouse Three with\na named contact, Adrián, and the\nretention reference. They found the\nwarehouse and Adrián. This was an\nimprovement on the previous day's\ndirections and did not produce the\nitems.\n“I can confirm receipt,” he said.\n“Release needs the reviewing\noffice.”\nHe showed them the inventory\nthrough the glass. The ledger was\nmarked PAPER BOOK,\nDESTINATION UNVERIFIED.\nChano supplied the destination:\nElena's receiving archive in the\nfreight district.\n“I can't amend the reason for\nretention,” Adrián said.\n“Then don't. Add the destination we\ncan verify.”\nElena sent confirmation from the\nreceiving office. Adrián attached it.\nThey left with a custody\nacknowledgment, not a moral\n",
+      "facing_text": "He placed the two receipts side by\nside. “That's why we're here.”\nNorma had a shipping-company\ncoffee cup, three stamps, and a\nkeyboard with one replacement\nkey brighter than all the others.\nHer display showed Q under the\nbody serial number. The attached\ndelivery receipt had been entered\nas though the deposit were part of\nhis transport inventory.\n“That package was delivered\nbefore this movement,” Lucía said.\nShe pointed to the two times and\nthe different receiving names.\nNorma checked the item list and\ncorrected the link. Q's coat,\ncharger and device had travelled\nwith him. The paper folders had\nnot; the archive deposit had never\nentered this transport.\n“Castalia says the return was\nvoluntary,” Lucía said.\n“That's the description supplied by\nthe receiver.”\n“It conflicts with the objection.”\nNorma opened the attached page.\nThe objection was there, filed\nunder the sender's notes instead of\nthe public movement summary.\nShe gave them a copy of the entry\nand the route for requesting a\ncorrection.\n“Will it change the summary?”\n“The receiving unit has to answer.”\nChano looked at the wall map. “A\ndisputed sentence travels more\nslowly than a detained passenger.”\n“The passenger has a vehicle,”\nNorma said.\nThey filled out the correction\nrequest. Norma entered Lucía as\nthe submitting witness and\nattached Q's own objection.\nAt the next desk a man with a clear\nsuitcase was explaining that he\nhad come back for family and\nhoped to find work. The clerk\nchose the category governing the\nappointment and wrote both facts\nin the notes. The man then asked\nwhere he could charge his phone.\nHe had a number to call and no\nremaining battery with which to\nprove he had reached home.\nNorma pointed to a socket beneath\nthe public counter.\nChano moved his feet out of the\nway of the man's cable.\nFor the folders and ledger, Norma\nsent them to Warehouse Three\nwith a named contact, Adrián, and\nthe retention reference. They\nfound the warehouse and Adrián.\nThis was an improvement on the\nprevious day's directions and did\nnot produce the items.\n",
       "source_block_ids": [
+        124,
+        125,
+        126,
+        127,
         128,
         129,
         130,
@@ -287,11 +290,7 @@
         136,
         137,
         138,
-        139,
-        140,
-        141,
-        142,
-        143
+        139
       ],
       "asset": "output/illustrations/revised/issue-10/plate-10.png",
       "status": "planned",
@@ -303,8 +302,11 @@
       "plate_id": "issue-10-plate-11",
       "page": 23,
       "facing_text_page": 22,
-      "facing_text": "victory and not the ledger. The\ndifference mattered most to Chano,\nwho had to face the people whose\ndeliveries were recorded in it.\nOn a damaged form beneath the\nglass he had noticed a printed line:\nDESTINATION NOT\nRECORDED. NECESSITY\nRECORDED. It belonged to an\nunrelated emergency transfer. He\nwrote it on the back of his own\nreceipt, identified where he had\nseen it, and called it a useful\ndescription of the office's priorities.\nLucía said it was not evidence about\nQ. He underlined unrelated.\nElena would continue the local\nrequests while they returned to\nAmealco. She kept copies with their\npermission and confirmed which\npeople could receive updates.\nChano retained the originals of\ntheir receipts. Lucía called the\nCustodian. Q had arrived; she could\nhear him asking someone to move a\nchair near the charging socket.\n“Can we speak to him?”\n“In a moment,” the Custodian said.\n“He's insisting on sitting down\nfirst.”\nChano approved of this new order\nof business.\nInterlude: The Record of\nthe Return That Did Not\nHappen\nQ reached Amealco before Chano\nand Lucía. The transport took him\nto the loading bay, where the\nCustodian waited with a\nmaintenance technician and the\ncopy of his release from the\nbeginning of the journey.\nThe Custodian's long hair had\nescaped its tie. His glasses kept\nsliding while he compared two\ndocuments that described the same\nmachine as both an authorized\ntraveler and recovered property.\n“You're here,” he said when Q could\nhear him.\n“That much of the report is\naccurate.”\nThey checked the knee before\nreleasing the transport restraint. Q\ndescribed the fall and asked that the\ntechnician record the existing\nshoulder fault separately from the\nnew damage. He wanted to sit\ndown. The Custodian brought a\nchair rather than an explanation of\nsuffering.\nThe Custodian checked the arriving\nitems against Elena's copy of the\nlist. Someone had left space for a\nsealed package. He drew a line\nthrough it. The deposit had reached\nits receiver in Tijuana; no such\n",
+      "facing_text": "“I can confirm receipt,” he said.\n“Release needs the reviewing\noffice.”\nHe showed them the inventory\nthrough the glass. The ledger was\nmarked PAPER BOOK,\nDESTINATION UNVERIFIED.\nChano supplied the destination:\nElena's receiving archive in the\nfreight district.\n“I can't amend the reason for\nretention,” Adrián said.\n“Then don't. Add the destination\nwe can verify.”\nElena sent confirmation from the\nreceiving office. Adrián attached it.\nHe passed the custody\nacknowledgment through the slot.\nChano waited.\n“That's everything I can give you.”\nChano folded the sheet and put it\nin his bag, in the space the ledger\nhad occupied.\nOn a damaged form beneath the\nglass he had noticed a printed line:\nDESTINATION NOT\nRECORDED. NECESSITY\nRECORDED. It belonged to an\nunrelated emergency transfer. He\nwrote it on the back of his own\nreceipt, identified where he had\nseen it, and called it a useful\ndescription of the office's\npriorities. Lucía said it was not\nevidence about Q. He underlined\nunrelated.\nElena would continue the local\nrequests while they returned to\nAmealco. She kept copies with\ntheir permission and confirmed\nwhich people could receive\nupdates. Chano retained the\noriginals of their receipts. Lucía\ncalled the Custodian. Q had\narrived; she could hear him asking\nsomeone to move a chair near the\ncharging socket.\n“Can we speak to him?”\n“In a moment,” the Custodian\nsaid. “He's insisting on sitting\ndown first.”\nChano approved of this new order\nof business.\nInterlude: The Record of\nthe Return That Did Not\nHappen\nQ reached Amealco before Chano\nand Lucía. The transport took him\nto the loading bay, where the\nCustodian waited with a\nmaintenance technician and the\ncopy of his release from the\nbeginning of the journey.\nThe Custodian's long hair had\nescaped its tie. His glasses kept\nsliding while he compared two\ndocuments that described the\n",
       "source_block_ids": [
+        140,
+        141,
+        142,
         143,
         144,
         145,
@@ -316,21 +318,21 @@
         151,
         152,
         153,
-        154,
-        155
+        154
       ],
       "asset": "output/illustrations/revised/issue-10/plate-11.png",
       "status": "planned",
-      "caption": "A chair first.",
-      "scene_brief": "Amealco loading bay: the tall male Custodian, long gray hair escaped from its tie and glasses slipping, brings Q a chair while the maintenance technician checks his knee. Coat, charger and personal device accompany Q; no testimony module or archive case.",
-      "scene_anchor": "The Custodian brought a chair"
+      "caption": "That's everything I can give you.",
+      "scene_brief": "Warehouse Three in Tijuana: Adrián passes a single custody acknowledgment through the glass slot while Chano waits with an open bag and Lucía stands beside him. A counter, glass, paper and Chano's expectant hand make a restrained composition. He receives the sheet, not the retained ledger. Do not show Q, the Custodian or the sealed module here; do not depict the loading-bay chair scene, which falls on the next text page.",
+      "scene_anchor": "He passed the custody acknowledgment through the slot."
     },
     {
       "plate_id": "issue-10-plate-12",
       "page": 25,
       "facing_text_page": 24,
-      "facing_text": "package had been entrusted to this\nvehicle. Q asked him to keep that\ncorrection with the inventory.\nRoque came from the kitchen with\natole in a jug. Q thanked him,\naccepted a cup, and put it where his\nhand could reach without straining\nthe shoulder. Cinnamon reached\nhim before the warmth of the cup\ndid.\n“You brought back work,” Roque\nsaid.\n“I had hoped it would be a\nmanuscript.”\n“It often arrives in that disguise.”\nQ laughed. The Custodian asked\nwhat Roque had been reading.\nRoque said the repair request for\nthe kitchen refrigerator and went to\nfind a second chair.\nA reception official asked Q to\nconfirm the return category on a\ntablet. The default was\nVOLUNTARY\nREINTEGRATION.\n“I can acknowledge arrival,” Q said.\n“I won't confirm that description. Is\nthere an acknowledgment that\ndoesn't indicate agreement?”\nThe official found one under\ntransport exceptions. It required\nthe arrival time and a reference for\nany objection. Q supplied both. The\nCustodian's copy of the original\nleave authorization went with them.\n“I didn't leave without permission,”\nQ said. “The later ownership claim\ndoesn't change what this form\nallowed.”\nThe official called a supervisor\nabout the attachment. While they\nwaited, Q spoke with Chano and\nLucía by telephone. He confirmed\nthe arriving items and asked about\nthe papers retained in Tijuana.\nThey read the separate receipt\nnumbers aloud. Chano promised to\nbring his copies when they arrived.\nThe ledger itself was still in Tijuana.\nQ's public profile changed before\nthe supervisor replied:\nQ HAS RETURNED TO\nCONTINUE HIS MISSION.\nHe sent the publicity desk a short\ncorrection: he had been transported\nunder an objection and had\naccepted no new mission. The\nacknowledgment arrived before the\ncorrection appeared. He saved it\nwithout spending the afternoon\nrepeatedly refreshing the page.\nThe reception official also needed a\njourney report. Its headings asked\nfor objective, outcome, obstacles,\nsocial impact, and\nrecommendation. Q began with the\nactual deposit: delivered to its\nappointed receiver in Tijuana;\n",
+      "facing_text": "same machine as both an\nauthorized traveler and recovered\nproperty.\n“You're here,” he said when Q\ncould hear him.\n“That much of the report is\naccurate.”\nThey checked the knee before\nreleasing the transport restraint. Q\ndescribed the fall and asked that\nthe technician record the existing\nshoulder fault separately from the\nnew damage. He wanted to sit\ndown. The Custodian brought a\nchair.\nThe Custodian checked the\narriving items against Elena's copy\nof the list. Someone had left space\nfor a sealed package. He drew a\nline through it. The deposit had\nreached its receiver in Tijuana; no\nsuch package had been entrusted\nto this vehicle. Q asked him to\nkeep that correction with the\ninventory.\nRoque came from the kitchen with\natole in a jug. Q thanked him,\naccepted a cup, and put it where\nhis hand could reach without\nstraining the shoulder. Roque\npoured another for the Custodian.\nCinnamon reached Q before the\nwarmth of the cup did.\n“You brought back work,” Roque\nsaid.\n“I had hoped it would be a\nmanuscript.”\n“It often arrives in that disguise.”\nQ laughed. The Custodian asked\nwhat Roque had been reading.\nRoque said the repair request for\nthe kitchen refrigerator and went\nto find a second chair.\nA reception official asked Q to\nconfirm the return category on a\ntablet. The default was\nVOLUNTARY\nREINTEGRATION.\n“I can acknowledge arrival,” Q\nsaid. “I won't confirm that\ndescription. Is there an\nacknowledgment that doesn't\nindicate agreement?”\nThe official found one under\ntransport exceptions. It required\nthe arrival time and a reference for\nany objection. The Custodian\nchecked the heading with Q, who\nsigned that acknowledgment\nalone. They attached his recorded\nobjection and the original leave\nauthorization.\nThe official called a supervisor\nabout the attachment. While they\nwaited, Q spoke with Chano and\nLucía by telephone. He confirmed\nthe arriving items and asked about\n",
       "source_block_ids": [
+        154,
         155,
         156,
         157,
@@ -343,9 +345,7 @@
         164,
         165,
         166,
-        167,
-        168,
-        169
+        167
       ],
       "asset": "output/illustrations/revised/issue-10/plate-12.png",
       "status": "planned",
@@ -357,8 +357,10 @@
       "plate_id": "issue-10-plate-13",
       "page": 27,
       "facing_text_page": 26,
-      "facing_text": "signed receipt attached. Then he\ndescribed his own involuntary\ntransport and the papers retained\nseparately. The first line of the form\nallowed only one outcome. He\ncontinued in the next box.\n“The public report needs something\nshorter,” the official said.\n“Keep both outcomes. I finished the\ndelivery. I object to the transport.\nNeither sentence cancels the other.”\nThe official wanted Q to sign a\nclosing summary. Beneath its\nsignature line was AGREEMENT\nWITH THE ACCOUNT ABOVE.\nQ declined. He signed only the\nseparate arrival acknowledgment,\nwhose heading and objection\nreference the Custodian checked\nwith him.\nIn a comment field he wrote:\nRETURN IS NOT\nRESTITUTION; RESTITUTION\nIS NOT REPAIR.\nIt fitted. That was useful, not proof\nthat it contained the whole matter.\nHe attached the item references\ninstead of asking the sentence to\nsubstitute for the people who would\nhave to answer them.\nThe supervisor confirmed that the\nmachine's arrival could be recorded\nwithout resolving the ownership\ndispute. Q could use the reading\nroom and workshop; unsupervised\ndeparture remained contested\nunder the custody instruction. The\nadviser was requesting review. Q\nasked for a copy of those conditions\nand arranged his next call\naccordingly.\nLater, the Custodian brought their\ndraft to the table. Q read a page in\nwhich he had described leaving as\nthe acquisition of freedom. The bus\ntrip had been real. So had the\npermission he had relied on and the\npower someone else retained to\nstop him.\n“Do we cross out freedom?” the\nCustodian asked.\n“Not yet. Put the form beside the\nsentence. I want to know what we\nwere calling freedom when we\nwrote it.”\nThey did not finish that revision\nbefore dinner. They set a time to\ncontinue. Outside the reading\nroom, staff were preparing a stage\nfor the release of a version of Q\nwhose journey had already been\nedited.\n",
+      "facing_text": "the papers retained in Tijuana.\nThey read the separate receipt\nnumbers aloud. Chano promised\nto bring his copies when they\narrived. The ledger itself was still\nin Tijuana.\nQ's public profile changed before\nthe supervisor replied:\nQ HAS RETURNED TO\nCONTINUE HIS MISSION.\nHe sent the publicity desk a short\ncorrection: he had been\ntransported under an objection\nand had accepted no new mission.\nThe acknowledgment arrived\nbefore the correction appeared. He\nsaved it without spending the\nafternoon repeatedly refreshing\nthe page.\nThe official opened a journey\nreport headed OBJECTIVE,\nOUTCOME, SOCIAL IMPACT.\nQ sent him the signed delivery\nreceipt and the inventory\nreferences they had just checked.\n“Those establish what arrived\nwhere,” he said. “The rest will take\nlonger. May I have the form to\nfinish later?”\nThe official sent it to him. The\nCustodian was still holding the cup\nRoque had brought for him; he\nhad forgotten to drink from it.\n“Yours is getting cold,” Q said.\n“So is yours.”\nThey drank while the official\nwaited for his supervisor.\nThe supervisor confirmed that the\nmachine's arrival could be\nrecorded without resolving the\nownership dispute. Q could use\nthe reading room and workshop;\nunsupervised departure remained\ncontested under the custody\ninstruction. The adviser was\nrequesting review. Q asked for a\ncopy of those conditions and\narranged his next call accordingly.\nLater, the Custodian brought their\ndraft to the table. Q read a page in\nwhich he had described leaving as\nthe acquisition of freedom.\n“Do we cross out freedom?” the\nCustodian asked.\n“Not yet. Put the form beside the\nsentence. I want to know what we\nwere calling freedom when we\nwrote it.”\nThey did not finish that revision\nbefore dinner. They set a time to\ncontinue. Outside the reading\nroom, staff were preparing a stage\nfor the release of a version of Q\nwhose journey had already been\nedited.\n",
       "source_block_ids": [
+        167,
+        168,
         169,
         170,
         171,
@@ -370,13 +372,16 @@
         177,
         178,
         179,
-        180
+        180,
+        181
       ],
       "asset": "output/illustrations/revised/issue-10/plate-13.png",
       "status": "planned",
-      "caption": "Do we cross out freedom?",
-      "scene_brief": "Q and the male Custodian work at the reading-room table with their draft and the original travel form side by side. Q remains seated with supported knee. Beyond the doorway staff prepare the next version's stage. The page closes unfinished work, not Q's death.",
-      "scene_anchor": "Do we cross out freedom"
+      "caption": "Yours is getting cold.",
+      "scene_brief": "In Amealco's reception area, seated Q and the tall male Custodian drink their cooling cups of atole while the reception official waits with the tablet. Custodian has long gray hair escaped from its tie, glasses and white work shirt. Q has mechanical hands, no fitted coat while it remains separate, supported injured knee and a cup within comfortable shoulder reach. Two ordinary cups and a shared pause, not a final sacrament or terminal shutdown. No testimony module or retained Tijuana papers. Distinct from Roque pouring the jug on the previous plate.",
+      "scene_anchor": "They drank while the official waited for his supervisor."
     }
-  ]
+  ],
+  "lucia_reference": "output/illustrations/revised/issue-03/plate-04.png",
+  "wardrobe_reference": "output/illustrations/revised/issue-04/plate-03.png"
 }

@@ -132,6 +132,16 @@ the book.” The source now permits Q to remain alive when the writing stops.
   Chano's intervention remain. Folders and ledger are retained in Tijuana;
   Q's coat, charger and device travel to Amealco without the delivered module.
   The Custodian receives Q once. Q signs arrival, not voluntary reintegration.
+- The later paired pacing review of Chapters 10 and 16 removes repeated
+  explanatory codas while protecting the delivery, custody and testimony.
+  Q signs one checked arrival acknowledgment, defers the social-impact report,
+  and drinks cooling atole with the Custodian. Chano asks to replay the fall at
+  ordinary speed and later lets his phone ring while eating. Q asks how to
+  propose another journey without acquiring unrestricted travel.
+  `RETURN_HEARING_PACING_REVIEW.md` records the scope and checks. Current internal
+  Issue 10: 4,354 words, 28 pages, fourteen planned plates, seven A3 duplex sheets,
+  Georgia 12.8/18.1333 pt. Issue 16: 3,097 words, twenty pages, ten planned plates,
+  five sheets, Georgia 12.4/17.5667 pt. Earlier counts below are historical.
 - Chapter 11 and both interludes distinguish Prime's supplied continuity account
   from lived travel. Q negotiates a limited appearance with an adviser present,
   not wholesale memory replacement or surrender of other people's claims.
@@ -302,8 +312,12 @@ Chapter Five's subsequent pacing revision is now recorded in
 different comic action, the radio visit includes pleasure, and departure follows
 the interludes. Its current 44-page layout has 22 planned plates, not finished
 illustrations. All 22 issue manifests match fresh plans after this change.
-Next: examine the return/hearing repetition in Chapters Ten and Sixteen;
-continue broader scene tests and illustration production. The pacing reports
+The paired Chapters Ten/Sixteen review now reduces repeated explanations and
+consolidates arrival paperwork; see `RETURN_HEARING_PACING_REVIEW.md`. Custody
+outcomes and later chapters remain unchanged. Internal layouts and both facing
+manifests are refreshed; there is no new illustrated release.
+Next: produce Issue Five's unique source-bound plates and extend fresh-context
+scene tests. Eighteen issues still need revised approved art. The pacing reports
 are bounded structural reviews, not a new
 full reading of both books. Earlier chapter-by-chapter continuation notes below
 are a history of the voice pass, not the latest queue.
