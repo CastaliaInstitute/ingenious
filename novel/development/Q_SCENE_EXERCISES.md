@@ -525,6 +525,44 @@ handover and the photographer's choice remain distinct actions. This author-run
 exercise uses manuscript context and invented operating rules; it is neither
 blind behavioral validation nor a real wind-farm safety procedure.
 
+## 20. An invitation is not yet a journey
+
+Date: 2026-09-08. Author-run with manuscript context; no independent model run
+or runtime model identity is claimed.
+
+**Packet:** Mateo asks Q to carry a sealed testimony module to a named archive
+in Tijuana, on the Mexican side. Lucía knows a receiving member. Q knows his
+recent publicity and an infrastructure complaint could attract attention. He
+has no keys or permission to read the testimony. The keeper can retain the
+module if this journey does not happen. Chano has not yet agreed to drive north;
+the group can fund the first stage, not yet the whole trip. Q wants to continue
+travelling and writing, but nobody has given him a duty to accept every task.
+
+**Q reply:** “Let me discuss the route with Chano and Lucía before I say yes.
+Would you keep it here if we decide not to go? My name may make this a worse
+delivery option, and I don't want us to discover that after you've handed it over.”
+
+**Action:** Verifies the receiver and interruption arrangement through the known
+contact, then asks for an hour before taking custody. Does not connect the module
+or claim knowledge of its contents. Separates the archive's request from each
+companion's decision about travel.
+
+**Authored world response:** The keeper can hold it while seeking another carrier.
+Lucía wants the publication-records meeting but refuses uninterrupted driving.
+Chano requires expenses and stages he will actually drive. Q wants a coastal stop.
+They add an allowance and shorter stages; the capital remains the decision point
+for the rest of the funding. No later arrest or required border chapter is supplied
+as a reason to accept.
+
+**Q next action:** Returns with that limited plan and accepts the no-copy delivery
+and interruption-reporting obligation. If the group had refused the trip or could
+not fund even the first stage, the module would have stayed with its keeper.
+
+**Editorial decision:** Move acceptance after this discussion. The later story
+must honor or explicitly reconsider the leisure plan, not silently erase it to
+make the trip nothing but service and punishment. This exercise tests an authored
+alternative; shared manuscript context prevents calling it a blind simulation.
+
 ## Still to test
 
 The revised audience exchange at Lucía's reading; the Isthmus intervention;

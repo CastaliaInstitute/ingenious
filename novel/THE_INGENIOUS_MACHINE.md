@@ -5458,8 +5458,27 @@ cross-reference and asked whether the annex had been supplied with the
 signature page. Mateo brought an envelope. It had not.
 
 They spent an hour distinguishing the copies. Q made a table of received
-pages and missing ones for Mateo to check. It was useful, undramatic work,
-and Q enjoyed it enough to miss the kettle boiling dry until Lucía noticed.
+pages and missing ones for Mateo to check. When the kettle began to rattle,
+Mateo reached past the agreement to switch it off.
+
+“If we get the other pages, can we sign?”
+
+“You'll have the whole offer. You may like it less.”
+
+“I don't like what we have now. The cupboard leaks.”
+
+Q looked up at the stain. Mateo had already put a basin beneath its lowest
+edge. The promised storage was not an imaginary benefit, whatever else the
+agreement might take in payment.
+
+“Let's keep the offer open while we ask them to separate storage from reuse,”
+Q said. “And the training you asked for. I'll put those questions to the
+Custodian with you.”
+
+Mateo drew the signature page back from the pile Q had marked for replacement.
+“Ask. Don't refuse it for us.”
+
+Q left the page where Mateo had put it.
 
 On a shelf were poems, autonomous-assembly minutes, repair manuals, and a
 school duty book. Q asked which were available for visitors to read. Mateo
@@ -5509,7 +5528,6 @@ The station had stopped mirroring everything. It kept scheduled programs
 whose speakers had agreed and used short-lived notes for notices that needed
 to expire. Some records were lost that way. One of the announcers regretted
 losing an interview with his father; he had assumed somebody had kept it.
-Yadira did not describe the change as the arrival of wisdom.
 
 “We wrote a better instruction for interviews after that,” she said.
 
@@ -5540,16 +5558,31 @@ name. Yadira said yes, with one warning: she had not been present when the
 grandmother arrived. She had seen the shoes later. The splendid conversation
 with the announcer was his version of it.
 
-Q put that distinction in his note. It made the story neither useless nor
-certain. When he told it during the evening call, the Custodian asked which
-version would go in the book.
+Mateo joined the first part of the evening call. The Custodian could arrange
+a training session without a transfer, but could not change the storage offer
+on his own. Mateo chose a morning for the session and asked for a revised
+offer in writing. He left Q at the screen when someone came to fetch the
+school duty book.
+
+When Q told the shoe story, he included Yadira's warning.
+The Custodian asked which version would go in the book.
 
 “Perhaps the one in which we admit where it came from.”
 
 “Very economical. You'll only need another paragraph.”
 
-They added the paragraph, then removed a different one. Q was beginning to
-enjoy revision as something other than an appeal against having lived badly.
+They added the paragraph, then removed a different one.
+
+“That was a good paragraph,” the Custodian said.
+
+“It delayed the shoes.”
+
+“It was about narrative time.”
+
+“I know. I had time to notice.”
+
+The Custodian read the shorter passage aloud. Q waited for the brother's line,
+although he knew it was coming.
 
 ### Interlude: The Assembly of Silence
 
@@ -5561,8 +5594,8 @@ whether machines were naturally sympathetic to one another.
 
 Q asked Tomás what would help. He was given a lamp to hold and a dry place
 to stand. His body could not safely substitute for the station battery
-without an adapter they did not have. He checked the rating rather than
-offering an enthusiastic cable to a socket of the wrong kind.
+without an adapter they did not have. Tomás checked the rating with him,
+then asked him to bring the lamp closer.
 
 In the room below, the station's editorial group was deciding the bulletin.
 Three matters could not wait comfortably: a bridge damaged by a truck, a
@@ -5610,9 +5643,10 @@ endorsement of the repeater proposal.
 “I used to simplify them. There have been complaints.”
 
 They delivered six notices. At the third house, Q was asked to read the small
-print on a pump warranty. At the fourth he was asked to stop reading it aloud
-because the man who had bought the pump was still inside. Q returned the
-paper without asking for the family history necessary to complete the joke.
+print on a pump warranty. Before he reached the exclusions, the woman who had
+handed it to him asked him to lower his voice: the man who had bought the pump
+was still inside. Q moved closer and finished quietly. At the fourth house
+nobody was home; his companion knew where to leave the notice out of the rain.
 
 The company representative heard about the meeting by noon and wanted a
 list of those attending. Yadira gave him the time and the questions concerning
@@ -5630,16 +5664,15 @@ already helping. The later bulletin would close the notice as well.
 
 “Keep a record that it was withdrawn,” she told Yadira. “Not all the story.”
 
-Yadira noted the notice number, date, and completion. Q had no difficulty
-understanding the distinction. His difficulty was finding a satisfying end
-for the scene in his journal without making the family's worry serve as
-the machine's successful afternoon. He wrote what work he had done and left
-the boy's explanation out.
+Yadira noted the notice number, date, and completion. Q crossed out the last
+sentence of his journal entry. It had given him rather a large part in finding
+a boy whose aunt had made the calls. He kept the account of the bulletin and
+left the boy's explanation out.
 
 The technician's cousin brought a charged battery toward evening. Q helped
-carry the old one downstairs. The replacement weighed less than the history
-of the wardrobe in which it would stand, but more than Q's shoulder currently
-appreciated. He asked someone to take the other handle. They did.
+carry the old one downstairs. Before lifting the replacement, he asked someone
+to take the other handle. With one on either side, they could keep it level
+without making his shoulder the next piece of equipment needing repair.
 
 The closing bulletin went out. The bridge still needed inspection. The
 repeater meeting would happen in the morning. It had been a useful day
@@ -5704,21 +5737,37 @@ remain with the people entitled to release them.
 searched or seized. My name may attract exactly that attention.”
 
 The keeper wrote the concern into the transport record. Mateo consulted the
-depositors before confirming the request. Q agreed to carry it to the named
-recipient, report an interruption, and make no copy. He was not agreeing
-to whatever a concealed text might instruct him to do.
+depositors before confirming the request. They could keep the module here
+while seeking another carrier if the companions decided against the trip.
+Q asked for an hour before accepting it.
 
 Chano asked to see the route and expenses before deciding whether to drive.
 The journey was considerably larger than breakfast. They could fund the
 first stage and had a confirmed place to stay at the other end, but would
-need to reassess in the capital. Lucía had her own reasons to meet the
-receiving group. Nobody's agreement was entered under Q's signature.
+need to reassess in the capital. Lucía wanted to compare the receiving group's
+publication records with the ones she had brought from Mexico City. She was
+willing to go north; she was not willing to spend every day in the van.
+
+“Nor am I,” Q said. “I want to see the Pacific. Preferably while we're stopped.”
+
+Chano moved the phone with its route between the sugar bowl and Q's hand.
+“Put the sea in the expenses.”
+
+“I understood it was free.”
+
+“Very generous. Does it include a room?”
+
+They added a day's allowance and shortened the driving stages. The new total
+looked less like an adventure and more like something they might enjoy. Chano
+agreed to drive as far as the capital, where they would confirm the remaining
+money before committing to the northern leg. Q took the plan back to Mateo.
+Only then did he accept the deposit, agreeing to report any interruption and
+make no copy.
 
 They packed the module in a tamper-evident pouch. The keeper recorded its
 identifier and the seal; Q kept the transport receipt. He had no ordinary
-access to the plaintext and did not connect the module to his body. Those
-were sensible arrangements, not evidence that the universe had finally
-made him trustworthy.
+access to the plaintext and did not connect the module to his body. The pouch
+went into the bag; the local archive's larger black case stayed on the table.
 
 At a checkpoint later that day, an officer inspected the van and asked about
 the pouch. Q described it as a sealed data carrier and showed the receipt.

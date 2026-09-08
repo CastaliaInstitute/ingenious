@@ -284,6 +284,17 @@ The exact facing scenes remain planned rather than generated art. Continue
 with Chapter Nine. The complete illustrated edition and independent behavioral
 validation remain unfinished.
 
+`CHAPTER_09_VOICE_REVIEW.md` and Exercise 20 record the Chiapas pass. Mateo
+keeps the storage offer open; Q and the Custodian enjoy editing the shoe story;
+Q consults his companions before accepting the sealed deposit. Their budget
+includes a Pacific stop that Chapter Ten must honor or explicitly reconsider.
+The internal Issue 9 proof contains 3,221 words on twenty pages, with ten planned
+plates and five A3 duplex sheets. A reviewed 12.4/17.5667-point setting replaces
+the trial's sparse final page while preserving continuous flow. Exact text,
+unpainted backgrounds and imposition checks pass. The nine facing scenes are
+source-bound plans, not finished art. Continue with Chapter Ten and the remaining
+whole-book voice, independent behavioral validation and illustrated-edition work.
+
 1. All 22 chapters now have the motivation/continuity pass. Read across chapter
    boundaries and review the whole-book voice before finalizing pagination.
    Check especially the volume of procedural explanation, repeated corrective
