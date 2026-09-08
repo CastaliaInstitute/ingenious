@@ -222,7 +222,25 @@ limitation; no printing or A+ certification. See the
 [production record](../../novel/development/ISSUE_12_PRODUCTION.md) and
 [art/prompt manifest](../illustrations/revised/issue-12/manifest.json).
 
-The remaining ten issues still require their revised illustrated builds.
+## Current Issue 13 revision proof
+
+- [English Issue 13: revised reading PDF](../pdf/ingenious-issue-13-revised-en-bw.pdf)
+- [English Issue 13: revised A3 folding PDF](../pdf/ingenious-issue-13-revised-en-bw-a3.pdf)
+
+24 pages, twelve unique plates including the cover, and six A3 duplex sheets.
+All 3,773 words flow through eleven two-column narrative pages in Georgia
+12.7/17.9917-point type. Ofelia's receipts, the nurse's interrupted-reading test,
+Q's writing call and Alma's later sister visit have distinct facing illustrations.
+Q retains his short jacket and supported right knee; the Custodian appears remotely
+as the tall, long-haired man in glasses. No private hospital photograph or lease
+is displayed. Text backgrounds are unpainted; grayscale plates are lossless and
+full bleed at comic trim. All reading pages, A3 sides and actual page/image slots
+were checked. Approximately 150-dpi native art remains a press-quality limitation;
+no print job or A+ certification. See the
+[production record](../../novel/development/ISSUE_13_PRODUCTION.md) and
+[art/prompt manifest](../illustrations/revised/issue-13/manifest.json).
+
+The remaining nine issues still require their revised illustrated builds.
 
 ## Earlier editions
 

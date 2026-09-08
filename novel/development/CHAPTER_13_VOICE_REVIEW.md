@@ -1,5 +1,9 @@
 # Chapter Thirteen: a place to work, a call to keep
 
+Historical checkpoint: the later encounter pass is recorded in
+`CHAPTER_13_ENCOUNTER_REVIEW.md`. Its new text, plate bindings and production
+checks supersede the word count and unillustrated-proof status below.
+
 ## Verdict
 
 Rebeca's rehearsal and Alma's comb already permit comedy and affection to escape

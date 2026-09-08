@@ -7814,9 +7814,10 @@ she had spent asking.
 Q put the copies side by side. “This date says when the new copy was
 issued. Does the correction entry preserve when you first requested it?”
 
-It did not. They added that as a separate question, with the earlier
-submission receipts. The newer date was not itself proof of falsification;
-the absence of the request history was still something to challenge.
+It did not. Ofelia laid the earlier submission receipts beneath the new
+copy, oldest first. They added a question about the missing history.
+
+“Fourteen years,” she said. “They can spare another line.”
 
 Ofelia chose the form of the name used in the notebook for the workshop's
 display. The official variants stayed in a closed comparison record,
@@ -7833,9 +7834,14 @@ A nurse came later with fictionalized examples approved for a training
 exercise. She wanted a form discrepancy to trigger a staff check, not
 an automatic merger of patient identities. Q helped make the warning
 plain enough to be useful to someone interrupted during a shift.
-The nurse changed the order of the fields. Clinical verification remained
-with the people qualified to perform it; a neat table did not authorize
-the machine to decide which patient should receive a treatment.
+The nurse covered the bottom half with her hand.
+
+“I've read this much. Someone calls me. What do I remember?”
+
+“The wrong thing. I've put the explanation before the warning.”
+
+They moved the warning up. She read it again before passing the example
+to the colleague who would check it for the exercise.
 
 Rebeca returned to list the work she had added to the television role.
 Q proposed a heading, *Creative Contribution*, and she wrote beneath
@@ -7997,12 +8003,13 @@ her to retrieve it and no public display.
 “The comb was cheap,” she said. “I will remember buying it as if it
 cost everything.”
 
-Q checked that the printed price was still legible. “This may be useful
-for disagreeing with that memory.”
+Q checked that the printed price was still legible. “Then keep this.
+We can at least prevent the comb from getting more expensive every time
+you tell it.”
 
-“Not defeating it.”
+“Not less important.”
 
-“No.”
+“No. I'm only disputing the price.”
 
 The later court file would include the public article and the deposit's
 handling record, subject to their own limits. It would not thereby

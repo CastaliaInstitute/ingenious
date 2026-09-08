@@ -10,7 +10,21 @@ illustrated issues, verify affected print PDFs, and push the revision.
 The latest user clarification governs the ending: “Death just means we finish
 the book.” The source now permits Q to remain alive when the writing stops.
 
-Latest checkpoint: Issue Twelve has verified 28-page reading and fourteen-side A3
+Latest checkpoint: Issue Thirteen has verified 24-page reading and twelve-side A3
+revision proofs, twelve unique selected plates and six duplex sheets. All 3,773
+words flow continuously at Georgia 12.7/17.9917 points. Ofelia answers for her
+missing history; a nurse tests an interrupted reading of Q's draft; the comb
+exchange becomes a shared joke. The illustration plan's obsolete long coat is
+corrected. Two image edits repair handwriting and video-call geometry. All reading
+pages, A3 sides and actual imposed text/image slots were checked. Only Chapter
+Thirteen and two related outline entries change; the other chapters, living
+ending and Issues 1-12 PDFs are unchanged from `cf9f5d05`. See
+`CHAPTER_13_ENCOUNTER_REVIEW.md` and `ISSUE_13_PRODUCTION.md`. Issues 1-13 are
+current illustrated revision proofs; nine remain. No new faculty/inference calls,
+printing or A+ certification. Native art remains about 150 dpi; broader literary
+review and the revised Spanish edition remain unfinished. The goal stays active.
+
+Previous checkpoint: Issue Twelve has verified 28-page reading and fourteen-side A3
 revision proofs, fourteen unique selected plates and seven duplex sheets. All
 4,112 words flow continuously at Georgia 13/18.4167 points; FAQ questions stay
 with the start of their answers. Q enjoys a voice game with the child actor;

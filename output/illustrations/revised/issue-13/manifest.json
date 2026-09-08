@@ -1,25 +1,40 @@
 {
   "issue": 13,
-  "revision": "2026-09-08-paid-hours-and-the-municipal-clock",
+  "revision": "2026-09-08-interrupted-reading-and-the-price-of-a-comb",
   "source": "novel/THE_INGENIOUS_MACHINE.md",
-  "chapter_sha256": "025d4a3b59b1b27baa34e91e6343cd3774f9dabf73aaf21667d4aee3d682ffa6",
+  "chapter_sha256": "254cd96f65f84c55423ee48b2750ac9d79f3cd70ed099fa66d212a0cc7d44601",
   "page_count": 24,
   "text_font": "Georgia 12.7/17.991666666666664 pt",
   "plate_count_including_cover": 12,
-  "status": "planned; no new Issue 13 images generated or approved",
-  "character_reference": "output/illustrations/revised/issue-01/cover.png",
-  "lucia_reference": "output/illustrations/revised/issue-03/plate-04.png",
-  "character_design": "Q retains approved slim articulated body, narrow segmented oval head, ears, exposed neck, question-mark breastplate and worn long coat; keep his damaged shoulder and supported knee. Lucía follows the approved Issue 3 reference, not a new symbolic heroine. Custodian male, tall, about sixty, long tied-back gray hair, glasses and white work shirt. Establish distinct consistent adult faces for Rebeca the actress, Mariela the printer, Paula the clerk, Alma the nurse and her sister; Alma is not the earlier unnamed training nurse. Ofelia follows her existing story identity.",
+  "status": "verified illustrated revision proof; not a press master",
+  "character_reference": "output/illustrations/revised/issue-04/plate-03.png",
+  "lucia_reference": "output/illustrations/revised/issue-12/plate-03.png",
+  "character_design": "Q retains his slim articulated body, narrow segmented oval head, concentric ears, exposed neck, question-mark breastplate, fitted short dark sponsor jacket, damaged shoulder and anatomical RIGHT knee support. No old long coat. Lucía is the central young woman in the Issue 12 reference, with shoulder-length wavy dark hair, denim jacket and patterned blouse. Ofelia retains the older graying-braided woman from Issue 7. Custodian male, tall, about sixty, long tied-back gray hair, glasses and white work shirt; only on the private video-call screen. Rebeca dark straight bob, dark sweater, small earrings. Alma low ponytail, no glasses, light scrub top/dark cardigan, distinct from the curly-haired bespectacled training nurse. Mariela cropped graying hair/striped shirt; Paula gray bob/oval glasses/light blouse.",
   "art_direction": "Neutral monochrome Goya-inspired etching with clear expressions, crosshatching and pure white highlights. No sepia or cream ink field. Full bleed at trim, separate typeset caption margin. Contemporary Amealco classroom archive; regional printing-business donor, working clothes and modest equipment. Eleven unique exact-facing scenes. Do not reproduce Alma's protected photograph, the disclosed family's lease or invented medical identifiers. Rehearsal, video call and three-years-later coda are distinct times.",
-  "approval_scope": "Source-bound plan only; twelve planned plates including cover. Internal 24-page trim proof with twelve A3 landscape sides / six short-edge duplex sheets. Reviewed 12.7/17.9917-point setting keeps the writing-call punchline together and final text in both columns. No generated or approved new images, finished illustrated PDF or print job.",
+  "approval_scope": "Author-reviewed illustrations and complete visual PDF review: all twelve native selected assets, all 24 reading pages, all twelve A3 sides. Exact text, source bindings, embedded grayscale images, native pixels, PDF geometry and every actual A3 text/image slot checked. This is not independent literary certification or a physical print test.",
   "plates": [
     {
       "plate_id": "issue-13-cover",
       "page": 1,
       "asset": "output/illustrations/revised/issue-13/cover.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Lucía's Archive",
-      "scene_brief": "Wide view into the borrowed Amealco classroom: Lucía directs the work among four boxes and two modest laptops; seated Q has just found the only clear chair, Ofelia has a school notebook open. Through the window, a painted composite woman holds a book and torch, visibly a mural rather than a living saint. Human labor and ordinary clutter outweigh the monumental image. Leave upper space for typeset title; distinct from the close handwriting plate."
+      "scene_brief": "Wide view into the borrowed Amealco classroom: Lucía directs the work among four boxes and two modest laptops; seated Q has just found the only clear chair, Ofelia has a school notebook open. Through the window, a painted composite woman holds a book and torch, visibly a mural rather than a living saint. Human labor and ordinary clutter outweigh the monumental image. Leave upper space for typeset title; distinct from the close handwriting plate.",
+      "asset_sha256": "45d450ddd20e002307e89bf6df2fe44e5436cd91df7a7adb170f2c13885ee043",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in reference-based image generation",
+      "generation_prompt": "Use case: illustration-story. New full-bleed portrait 2:3 narrative plate for The Ingenious Machine, near-future Mexico, crisp Goya-inspired black-and-white etching/aquatint. Humane observed expressions, varied line weight, clear white highlights, no sepia or cream paper field. NOT a photo of a print. No borders, captions, lettering, watermarks or unrelated figures. Essential faces/hands above bottom 6 percent. Highest available native resolution. Contemporary borrowed classroom in Amealco, ordinary modest furnishings, not a palace or antique monastery. Windows show a plain exterior wall or wooded highland trees, NOT cathedral towers. Q: exactly the reference's tall slim articulated metal body, narrow riveted segmented oval face, round concentric ears, exposed long mechanical neck, question-mark breastplate, short fitted dark sponsor jacket, exposed articulated legs. No long coat, human skin, chivalric armor or clockface. RIGHT knee has a dark strapped support (viewer LEFT when facing Q); no brace on left knee. Damaged shoulder slightly restrained, not a newly broken arm. Conversationally competent adult colleague. Input1 Q identity only. Input2 Lucía is young woman at CENTER, wavy shoulder-length dark hair denim jacket patterned blouse. Input3 Ofelia is older woman at foreground LEFT, graying braid cardigan, NOT man or procession. NEW WIDE ESTABLISHING CLASSROOM COMPOSITION; leave top22% mostly clean WHITE PLASTER for typeset book title, no drawn text. Below it Lucía directs work standing beside four plain archive boxes and two modest open laptops; Q sits beside Ofelia and her school notebook, his bag under chair near wall socket. Other ordinary adult volunteers occupy distant tables (eleven people total if possible, focal three clear). Thermos coffee not magic server. Through side window across small courtyard is a PAINTED MURAL on flat wall of a composite woman holding a BOOK AND TORCH, visibly flat mundane paint; no actual fire near real papers, no religious apparition. Humanity doing work outweighs monumental image. Faces below22%, not repeated hands close-up.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-03.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-12/plate-03.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-07/plate-03.png"
+      ],
+      "original_generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-4c11c48c-ed69-405c-a252-70040971cf48.png",
+      "selected_generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-4c11c48c-ed69-405c-a252-70040971cf48.png",
+      "visual_approval": "Inspected at native resolution for scene, characters, physical interaction, setting, documentary limits and trim-safe placement. Approval is for a revision proof, not press quality."
     },
     {
       "plate_id": "issue-13-plate-01",
@@ -41,10 +56,34 @@
         11
       ],
       "asset": "output/illustrations/revised/issue-13/plate-01.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Two hands",
       "scene_brief": "Ofelia at the classroom table shows Q two handwritten capitals on scrap paper beside her daughter's school notebook. Q moves the official copies aside to look at the teacher's comment; the comic pleasure belongs to their handwriting, not a miraculous database correction. Close hands-and-faces composition; no legible invented private names.",
-      "scene_anchor": "Q moved the official copies aside to make room."
+      "scene_anchor": "Q moved the official copies aside to make room.",
+      "asset_sha256": "4e2e81258634c6959cce82a67c9a10bc2a556edc436be69c5d5eb8da658b5e39",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in reference-based image generation",
+      "generation_prompt": "Use case: illustration-story. New full-bleed portrait 2:3 narrative plate for The Ingenious Machine, near-future Mexico, crisp Goya-inspired black-and-white etching/aquatint. Humane observed expressions, varied line weight, clear white highlights, no sepia or cream paper field. NOT a photo of a print. No borders, captions, lettering, watermarks or unrelated figures. Essential faces/hands above bottom 6 percent. Highest available native resolution. Contemporary borrowed classroom in Amealco, ordinary modest furnishings, not a palace or antique monastery. Windows show a plain exterior wall or wooded highland trees, NOT cathedral towers. Q: exactly the reference's tall slim articulated metal body, narrow riveted segmented oval face, round concentric ears, exposed long mechanical neck, question-mark breastplate, short fitted dark sponsor jacket, exposed articulated legs. No long coat, human skin, chivalric armor or clockface. RIGHT knee has a dark strapped support (viewer LEFT when facing Q); no brace on left knee. Damaged shoulder slightly restrained, not a newly broken arm. Conversationally competent adult colleague. Input1 Q shape and SHORT JACKET reference only, do not include woman/stage. Input2 Ofelia identity reference only: older Mexican woman foreground with weathered oval face, graying braid and cardigan, not Chano or vigil background. Close hands-and-faces scene: Ofelia smiles while showing Q a scrap with two differently formed handwritten capitals beside a school notebook; Q moves official copies aside to give her notebook room. Paper bears indistinct pen marks, no invented readable names. Natural table light; practical tote beside chair.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-03.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-07/plate-03.png"
+      ],
+      "original_generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-7d88d199-a4c4-42ec-9e82-4ca152fb1ccd.png",
+      "selected_generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-5e910db6-b670-44ee-9b4c-4e46db5a83e3.png",
+      "visual_approval": "Inspected at native resolution for scene, characters, physical interaction, setting, documentary limits and trim-safe placement. Approval is for a revision proof, not press quality.",
+      "corrective_edits": [
+        {
+          "prompt": "Use case: precise-object-edit. Input1 is edit target. Change ONLY the two letters on the held scrap: replace both A capitals with two contrasting handwritten capital O letters. Left O small, cramped, visibly trembly; right O larger, sweeping confident oval with a small entry flourish. Ofelia's initial is O and her daughter's illustrative capital is also O, different handwriting. Keep characters, faces, hands, sheet edges, notebook, knee support, short jacket, lighting and all other image pixels/composition unchanged as closely as possible. Neutral black and white etching, no extra text, no new objects.",
+          "reference_images": [
+            "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-7d88d199-a4c4-42ec-9e82-4ca152fb1ccd.png"
+          ],
+          "selected_generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-5e910db6-b670-44ee-9b4c-4e46db5a83e3.png",
+          "reason": "Replace incorrect A initials with contrasting O handwriting."
+        }
+      ]
     },
     {
       "plate_id": "issue-13-plate-02",
@@ -65,10 +104,23 @@
         21
       ],
       "asset": "output/illustrations/revised/issue-13/plate-02.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The revised line",
       "scene_brief": "Rebeca opens her marked rehearsal notebook beside the printed script for Q at an evening table. Gesture toward the changed train-scene line; grocery notes are incidental unreadable texture, not documents Q scans. She is a contemporary working actress, not costumed as the revolutionary heroine. Avoid illustrating the fictitious train scene as present reality.",
-      "scene_anchor": "Rebeca opened the notebook at a scene about a woman waiting for a train."
+      "scene_anchor": "Rebeca opened the notebook at a scene about a woman waiting for a train.",
+      "asset_sha256": "3ffa6c9d5e7bb2ddf864e2d71fc674b0f5468ef27879484e084fa854cf545989",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in reference-based image generation",
+      "generation_prompt": "Use case: illustration-story. New full-bleed portrait 2:3 narrative plate for The Ingenious Machine, near-future Mexico, crisp Goya-inspired black-and-white etching/aquatint. Humane observed expressions, varied line weight, clear white highlights, no sepia or cream paper field. NOT a photo of a print. No borders, captions, lettering, watermarks or unrelated figures. Essential faces/hands above bottom 6 percent. Highest available native resolution. Contemporary borrowed classroom in Amealco, ordinary modest furnishings, not a palace or antique monastery. Windows show a plain exterior wall or wooded highland trees, NOT cathedral towers. Q: exactly the reference's tall slim articulated metal body, narrow riveted segmented oval face, round concentric ears, exposed long mechanical neck, question-mark breastplate, short fitted dark sponsor jacket, exposed articulated legs. No long coat, human skin, chivalric armor or clockface. RIGHT knee has a dark strapped support (viewer LEFT when facing Q); no brace on left knee. Damaged shoulder slightly restrained, not a newly broken arm. Conversationally competent adult colleague. Input1 Q identity only; do not copy woman, pose or stage. Establish REBECA a contemporary Mexican working actress around 40, strong angular face, thick brows, dark chin-length straight bob tucked behind one ear, small plain hoop earrings, simple dark crewneck sweater and trousers. She opens a much-used marked rehearsal notebook beside a printed script for seated Q at an evening classroom table, finger indicating a changed line. Close diagonal composition with amused critical rapport. Incidental grocery notes unreadable. No costume, train, scanning beam, stage or actual performance yet.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-03.png"
+      ],
+      "original_generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-e396d7ee-8d68-4dbf-adaf-117dd4788283.png",
+      "selected_generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-e396d7ee-8d68-4dbf-adaf-117dd4788283.png",
+      "visual_approval": "Inspected at native resolution for scene, characters, physical interaction, setting, documentary limits and trim-safe placement. Approval is for a revision proof, not press quality."
     },
     {
       "plate_id": "issue-13-plate-03",
@@ -97,10 +149,23 @@
         40
       ],
       "asset": "output/illustrations/revised/issue-13/plate-03.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "A disappointed municipal clock",
-      "scene_brief": "Rebeca has just demonstrated a noble expression; Q attempts it with his damaged shoulder, awkward dignity in his familiar narrow face and long coat. She is amused at his performance, not teaching a naive robot to recognize humor. Medium full-body composition with the rehearsal pages at the side, no literal clock face replacing Q's established head.",
-      "scene_anchor": "Q attempted it with his damaged shoulder and produced something she called a disappointed municipal clock."
+      "scene_brief": "Rebeca has just demonstrated a noble expression; Q attempts it with his damaged shoulder, awkward dignity in his familiar narrow face and short fitted dark jacket. She is amused at his performance, not teaching a naive robot to recognize humor. Medium full-body composition with the rehearsal pages at the side, no literal clock face replacing Q's established head.",
+      "scene_anchor": "Q attempted it with his damaged shoulder and produced something she called a disappointed municipal clock.",
+      "asset_sha256": "4800fda585af0485abca8e0f528b29bd4217b7f14aaea6059a6e6cfebef889b5",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in reference-based image generation",
+      "generation_prompt": "Use case: illustration-story. New full-bleed portrait 2:3 narrative plate for The Ingenious Machine, near-future Mexico, crisp Goya-inspired black-and-white etching/aquatint. Humane observed expressions, varied line weight, clear white highlights, no sepia or cream paper field. NOT a photo of a print. No borders, captions, lettering, watermarks or unrelated figures. Essential faces/hands above bottom 6 percent. Highest available native resolution. Contemporary borrowed classroom in Amealco, ordinary modest furnishings, not a palace or antique monastery. Windows show a plain exterior wall or wooded highland trees, NOT cathedral towers. Q: exactly the reference's tall slim articulated metal body, narrow riveted segmented oval face, round concentric ears, exposed long mechanical neck, question-mark breastplate, short fitted dark sponsor jacket, exposed articulated legs. No long coat, human skin, chivalric armor or clockface. RIGHT knee has a dark strapped support (viewer LEFT when facing Q); no brace on left knee. Damaged shoulder slightly restrained, not a newly broken arm. Conversationally competent adult colleague. Input1 character/style reference only: preserve Rebeca's face, dark straight bob and crewneck sweater; preserve Q's short jacket, metal head, restrained shoulder and RIGHT knee support. NEW composition: medium full-body scene in classroom open floor at evening. Q stands very solemnly attempting the noble expression Rebeca has demonstrated, his mechanical head lifted a little too high and the damaged shoulder modestly held back, one hand at breastplate. Rebeca sits SIDEWAYS on a chair near marked rehearsal pages at the edge and laughs at his intentionally theatrical attempt. Their shared joke is 'a disappointed municipal clock', but NO actual clock, clock face, gears as a clock, costume or stage. Adult intelligent rapport, not teaching him to understand jokes. Window behind plain wall and highland pines. No extra people. Essential hands/heads well within trim.",
+      "reference_images": [
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-e396d7ee-8d68-4dbf-adaf-117dd4788283.png"
+      ],
+      "original_generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-f6664a7d-d378-40fa-a33e-e9a159d39599.png",
+      "selected_generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-f6664a7d-d378-40fa-a33e-e9a159d39599.png",
+      "visual_approval": "Inspected at native resolution for scene, characters, physical interaction, setting, documentary limits and trim-safe placement. Approval is for a revision proof, not press quality."
     },
     {
       "plate_id": "issue-13-plate-04",
@@ -121,10 +186,24 @@
         51
       ],
       "asset": "output/illustrations/revised/issue-13/plate-04.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Who is paying now?",
       "scene_brief": "Mariela taps the unpaid-hours column of the budget with her pencil while Lucía revises the target. The equipment donor sits opposite, phone now put away; Q is present during the bounded demonstration. Work table with an envelope and ordinary laptops, not a stage or a glowing savior tableau. Do not depict the later unauthorized lease disclosure as this public demo.",
-      "scene_anchor": "Mariela tapped it with the pencil."
+      "scene_anchor": "Mariela tapped it with the pencil.",
+      "asset_sha256": "97312bc87e4df8acd634be256b58352305d1ef5b96d650bbe41f2c55a5af5a1b",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in reference-based image generation",
+      "generation_prompt": "Use case: illustration-story. New full-bleed portrait 2:3 narrative plate for The Ingenious Machine, near-future Mexico, crisp Goya-inspired black-and-white etching/aquatint. Humane observed expressions, varied line weight, clear white highlights, no sepia or cream paper field. NOT a photo of a print. No borders, captions, lettering, watermarks or unrelated figures. Essential faces/hands above bottom 6 percent. Highest available native resolution. Contemporary borrowed classroom in Amealco, ordinary modest furnishings, not a palace or antique monastery. Windows show a plain exterior wall or wooded highland trees, NOT cathedral towers. Q: exactly the reference's tall slim articulated metal body, narrow riveted segmented oval face, round concentric ears, exposed long mechanical neck, question-mark breastplate, short fitted dark sponsor jacket, exposed articulated legs. No long coat, human skin, chivalric armor or clockface. RIGHT knee has a dark strapped support (viewer LEFT when facing Q); no brace on left knee. Damaged shoulder slightly restrained, not a newly broken arm. Conversationally competent adult colleague. Input1 Q identity. Input2 Lucía identity ONLY young woman CENTER with wavy hair denim jacket light patterned blouse. Four adults at ordinary table: MARIELA printer from San Juan del Río, Mexican woman50, short graying cropped hair, rectangular reading glasses low on nose, plain rolled-sleeve striped shirt, uses a PENCIL to tap volunteer-hours column on budget while Lucía amends the target. Pencil shavings in an old envelope. Equipment donor opposite, Mexican man50 bald crown neatly trimmed beard wearing simple dark jacket, listens, phone entirely pocketed. Q present at side, open laptop displaying indistinct public catalog rows. Show budgeting argument, NOT a performance stage; no lease, identifiable names, real amounts, applause or saintly spotlight. Varied faces, natural interrupted negotiation.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-03.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-12/plate-03.png"
+      ],
+      "original_generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-ef76c887-04c2-48d7-a463-9070646e4cb8.png",
+      "selected_generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-ef76c887-04c2-48d7-a463-9070646e4cb8.png",
+      "visual_approval": "Inspected at native resolution for scene, characters, physical interaction, setting, documentary limits and trim-safe placement. Approval is for a revision proof, not press quality."
     },
     {
       "plate_id": "issue-13-plate-05",
@@ -142,10 +221,24 @@
         59
       ],
       "asset": "output/illustrations/revised/issue-13/plate-05.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Read it back",
       "scene_brief": "After the family call, Lucía dictates a recipient request to Q, then listens as he reads it back and cuts her explanation. Private workspace with unanswered requests visibly separated as paper shapes; no readable lease clause, parcel location, family testimony or contact details. Q helps, rather than standing over her as judge.",
-      "scene_anchor": "Lucía dictated the first request, stopped, and asked him to read it back."
+      "scene_anchor": "Lucía dictated the first request, stopped, and asked him to read it back.",
+      "asset_sha256": "f801be51fa6a320fa9d427bb75ec8e747d1e9320fdb9cf9f96b3f0f791760b24",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in reference-based image generation",
+      "generation_prompt": "Use case: illustration-story. New full-bleed portrait 2:3 narrative plate for The Ingenious Machine, near-future Mexico, crisp Goya-inspired black-and-white etching/aquatint. Humane observed expressions, varied line weight, clear white highlights, no sepia or cream paper field. NOT a photo of a print. No borders, captions, lettering, watermarks or unrelated figures. Essential faces/hands above bottom 6 percent. Highest available native resolution. Contemporary borrowed classroom in Amealco, ordinary modest furnishings, not a palace or antique monastery. Windows show a plain exterior wall or wooded highland trees, NOT cathedral towers. Q: exactly the reference's tall slim articulated metal body, narrow riveted segmented oval face, round concentric ears, exposed long mechanical neck, question-mark breastplate, short fitted dark sponsor jacket, exposed articulated legs. No long coat, human skin, chivalric armor or clockface. RIGHT knee has a dark strapped support (viewer LEFT when facing Q); no brace on left knee. Damaged shoulder slightly restrained, not a newly broken arm. Conversationally competent adult colleague. Input1 Q identity. Input2 ONLY young woman CENTER is Lucía reference, no older woman. Two adults only in intimate side-on classroom table view after a difficult family phone call. Lucía, tired but active, pen striking out an introductory paragraph on a draft recipient-request letter while Q seated BESIDE her reads back from it, hands relaxed. Several separate pending request sheets fanned at side, her phone facedown. All text indistinct unreadable marks, NO family testimony, lease clause, parcel map, contacts or identifiable addresses. Q not judge and not towering; both focused on revising, no theatrical tears or consolation hug.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-03.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-12/plate-03.png"
+      ],
+      "original_generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-3bcbf864-2397-464a-9994-ce48d8e8204b.png",
+      "selected_generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-3bcbf864-2397-464a-9994-ce48d8e8204b.png",
+      "visual_approval": "Inspected at native resolution for scene, characters, physical interaction, setting, documentary limits and trim-safe placement. Approval is for a revision proof, not press quality."
     },
     {
       "plate_id": "issue-13-plate-06",
@@ -168,16 +261,40 @@
         71
       ],
       "asset": "output/illustrations/revised/issue-13/plate-06.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Don't improve it",
       "scene_brief": "Q on a video call attempts the municipal-clock expression for the Custodian, having moved back into the camera frame. Show the tall male Custodian on the screen, long gray hair tied back, rectangular glasses and white work shirt, laughing over annotated draft pages. The Custodian is remote, not physically in the classroom; only Q's joke goes to this call, not a public broadcast.",
-      "scene_anchor": "The Custodian was laughing before he was ready."
+      "scene_anchor": "The Custodian was laughing before he was ready.",
+      "asset_sha256": "3905699bbac3355a5efcd464c61401c26c6b3bc7ef4943ab9de2c8ef568b80cc",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in reference-based image generation",
+      "generation_prompt": "Use case: illustration-story. New full-bleed portrait 2:3 narrative plate for The Ingenious Machine, near-future Mexico, crisp Goya-inspired black-and-white etching/aquatint. Humane observed expressions, varied line weight, clear white highlights, no sepia or cream paper field. NOT a photo of a print. No borders, captions, lettering, watermarks or unrelated figures. Essential faces/hands above bottom 6 percent. Highest available native resolution. Contemporary borrowed classroom in Amealco, ordinary modest furnishings, not a palace or antique monastery. Windows show a plain exterior wall or wooded highland trees, NOT cathedral towers. Q: exactly the reference's tall slim articulated metal body, narrow riveted segmented oval face, round concentric ears, exposed long mechanical neck, question-mark breastplate, short fitted dark sponsor jacket, exposed articulated legs. No long coat, human skin, chivalric armor or clockface. RIGHT knee has a dark strapped support (viewer LEFT when facing Q); no brace on left knee. Damaged shoulder slightly restrained, not a newly broken arm. Conversationally competent adult colleague. Input1 Q identity only. Input2 the standing long-haired bespectacled man at CENTER is the Custodian identity reference: tall male about60, long tied-back gray hair, rectangular glasses, white work shirt. Do not include the elderly man at left. Scene: Q makes an awkwardly noble 'disappointed municipal clock' pose for the Custodian during PRIVATE VIDEO CALL. Camera view over the laptop edge toward Q, seated or standing back from desk to fit frame, head held solemnly and one shoulder modestly raised; keep familiar robot head unchanged. Laptop screen angled clearly toward viewer shows ONLY the Custodian laughing at his own remote desk over annotated manuscript. The Custodian is ONLY on screen, not physically here; no other people. Paper pages and pencil at laptop. Comic friendship, no glowing hologram, no literal clock.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-03.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-12/plate-07-v2.png"
+      ],
+      "original_generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-de4ada10-2cd6-49a2-8712-b38476816a41.png",
+      "selected_generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-70a3ba9f-b41d-45ca-9e83-e6f7ef9908ed.png",
+      "visual_approval": "Inspected at native resolution for scene, characters, physical interaction, setting, documentary limits and trim-safe placement. Approval is for a revision proof, not press quality.",
+      "corrective_edits": [
+        {
+          "prompt": "Use case: compositing. Input1 edit target and exact character identities. Correct ONLY the physically impossible video-call geometry through a new camera angle: VIEW FROM JUST BEHIND Q'S SHOULDER toward the open laptop screen on desk in FRONT OF Q. We see Q in three-quarter REAR PROFILE, his familiar riveted head turned slightly and hand held in a mock-noble pose while performing FOR THE LAPTOP CAMERA. Laptop screen in upper/middle left shows the SAME laughing tall male Custodian, long tied-back gray hair, rectangular glasses, white shirt. Screen and camera face Q; Q and viewer are on same viewing side of screen. Custodian ONLY on screen. Keep short dark jacket, narrow articulated head, etching style, Amealco classroom, manuscript sheets/pencil. Tighter waist-up composition; no need to show knee. Avoid literal clocks, holograms, extra people and lettering. Strong comic private friendship. Neutral black and white full-bleed portrait, no border/caption. Preserve identities and joke, change viewpoint/layout to make real camera line of sight possible.",
+          "reference_images": [
+            "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-de4ada10-2cd6-49a2-8712-b38476816a41.png"
+          ],
+          "selected_generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-70a3ba9f-b41d-45ca-9e83-e6f7ef9908ed.png",
+          "reason": "Correct laptop-camera line of sight using over-Q-shoulder view."
+        }
+      ]
     },
     {
       "plate_id": "issue-13-plate-07",
       "page": 15,
       "facing_text_page": 14,
-      "facing_text": "and the ability to ask someone to\nshow the older copy before\ncorrecting the newer one.\nOfelia brought a record in which\none letter had finally been\nchanged. The issue date had\nchanged too. She worried that it\nerased the years she had spent\nasking.\nQ put the copies side by side. “This\ndate says when the new copy was\nissued. Does the correction entry\npreserve when you first requested\nit?”\nIt did not. They added that as a\nseparate question, with the earlier\nsubmission receipts. The newer\ndate was not itself proof of\nfalsification; the absence of the\nrequest history was still something\nto challenge.\nOfelia chose the form of the name\nused in the notebook for the\nworkshop's display. The official\nvariants stayed in a closed\ncomparison record, with their\nsources. Q did not ask her to\nidentify the one name true enough\nto make the others cease to have\nconsequences.\nA father arrived with conflicting\nbirth documents. He needed help\nwith school enrollment. Lucía\ncontacted the adviser about the\nimmediate documentation\nproblem rather than requiring him\nto settle every question about\nparentage that the papers raised. Q\nhelped make the comparison the\nadviser requested. The father\nchecked it before it went.\nA nurse came later with\nfictionalized examples approved\nfor a training exercise. She wanted\na form discrepancy to trigger a\nstaff check, not an automatic\nmerger of patient identities. Q\nhelped make the warning plain\nenough to be useful to someone\ninterrupted during a shift. The\nnurse changed the order of the\nfields. Clinical verification\nremained with the people qualified\nto perform it; a neat table did not\nauthorize the machine to decide\nwhich patient should receive a\ntreatment.\nRebeca returned to list the work\nshe had added to the television\nrole. Q proposed a heading,\nCreative Contribution, and she\nwrote beneath it, WHAT I DID\nAND WAS NOT PAID FOR.\n“Yours describes it,” she said.\n“Mine reminds me why I came.”\n“Keep both?”\n“As long as yours doesn't reduce\nthe amount.”\n",
+      "facing_text": "and the ability to ask someone to\nshow the older copy before\ncorrecting the newer one.\nOfelia brought a record in which\none letter had finally been\nchanged. The issue date had\nchanged too. She worried that it\nerased the years she had spent\nasking.\nQ put the copies side by side. “This\ndate says when the new copy was\nissued. Does the correction entry\npreserve when you first requested\nit?”\nIt did not. Ofelia laid the earlier\nsubmission receipts beneath the\nnew copy, oldest first. They added\na question about the missing\nhistory.\n“Fourteen years,” she said. “They\ncan spare another line.”\nOfelia chose the form of the name\nused in the notebook for the\nworkshop's display. The official\nvariants stayed in a closed\ncomparison record, with their\nsources. Q did not ask her to\nidentify the one name true enough\nto make the others cease to have\nconsequences.\nA father arrived with conflicting\nbirth documents. He needed help\nwith school enrollment. Lucía\ncontacted the adviser about the\nimmediate documentation\nproblem rather than requiring him\nto settle every question about\nparentage that the papers raised. Q\nhelped make the comparison the\nadviser requested. The father\nchecked it before it went.\nA nurse came later with\nfictionalized examples approved\nfor a training exercise. She wanted\na form discrepancy to trigger a\nstaff check, not an automatic\nmerger of patient identities. Q\nhelped make the warning plain\nenough to be useful to someone\ninterrupted during a shift. The\nnurse covered the bottom half with\nher hand.\n“I've read this much. Someone\ncalls me. What do I remember?”\n“The wrong thing. I've put the\nexplanation before the warning.”\nThey moved the warning up. She\nread it again before passing the\nexample to the colleague who\nwould check it for the exercise.\nRebeca returned to list the work\nshe had added to the television\nrole. Q proposed a heading,\nCreative Contribution, and she\nwrote beneath it, WHAT I DID\nAND WAS NOT PAID FOR.\n“Yours describes it,” she said.\n“Mine reminds me why I came.”\n",
       "source_block_ids": [
         71,
         72,
@@ -189,68 +306,109 @@
         78,
         79,
         80,
-        81
+        81,
+        82,
+        83
       ],
       "asset": "output/illustrations/revised/issue-13/plate-07.png",
-      "status": "planned",
-      "caption": "Both headings",
-      "scene_brief": "At the Thursday workshop Rebeca writes her plain-language payment heading below Q's polished heading on the same work list. Q sits beside her, interested rather than offended; notebook, printer and kettle in the contemporary borrowed classroom. Leave heading areas for later typesetting, no fake official payment award.",
-      "scene_anchor": "WHAT I DID AND WAS NOT PAID FOR."
+      "status": "approved",
+      "caption": "Before the explanation",
+      "scene_brief": "The unnamed training nurse covers the bottom half of Q's draft with her hand, testing what an interrupted reader will retain. Q acknowledges that his explanation precedes the warning. Classroom table, pencil, kettle and printer; unreadable fictional training form, no patient identifiers or clinical recommendations. This curly-haired bespectacled nurse is distinct from Alma.",
+      "scene_anchor": "The nurse covered the bottom half with her hand.",
+      "asset_sha256": "22df41547411f28e1a9d107d0f7df2d7964a3d961ea266a619d7d84acb9378df",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in reference-based image generation",
+      "generation_prompt": "Use case: illustration-story. New full-bleed portrait 2:3 narrative plate for The Ingenious Machine, near-future Mexico, crisp Goya-inspired black-and-white etching/aquatint. Humane observed expressions, varied line weight, clear white highlights, no sepia or cream paper field. NOT a photo of a print. No borders, captions, lettering, watermarks or unrelated figures. Essential faces/hands above bottom 6 percent. Highest available native resolution. Contemporary borrowed classroom in Amealco, ordinary modest furnishings, not a palace or antique monastery. Windows show a plain exterior wall or wooded highland trees, NOT cathedral towers. Q: exactly the reference's tall slim articulated metal body, narrow riveted segmented oval face, round concentric ears, exposed long mechanical neck, question-mark breastplate, short fitted dark sponsor jacket, exposed articulated legs. No long coat, human skin, chivalric armor or clockface. RIGHT knee has a dark strapped support (viewer LEFT when facing Q); no brace on left knee. Damaged shoulder slightly restrained, not a newly broken arm. Conversationally competent adult colleague. Input1 Q identity only. New close over-table composition. An unnamed Mexican nurse in her30s, short tightly curly dark hair, rectangular glasses, plain light scrub top, visibly DISTINCT FROM ALMA, covers the BOTTOM HALF of a fictional training form with her flat hand, looking at Q to test what the first lines communicate. Q sits beside her acknowledging the problem with his hand near pencil and upper visible lines. Unreadable short line marks only: NO patient names/IDs, diagnosis, actual medical advice, certificates. Classroom kettle and printer soft in background, not a ward; practical collaborative writing test. Do not show a comb, photograph or records on screen.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-03.png"
+      ],
+      "original_generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-95c09a99-dc4c-439a-b55e-4448dd3102f4.png",
+      "selected_generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-95c09a99-dc4c-439a-b55e-4448dd3102f4.png",
+      "visual_approval": "Inspected at native resolution for scene, characters, physical interaction, setting, documentary limits and trim-safe placement. Approval is for a revision proof, not press quality."
     },
     {
       "plate_id": "issue-13-plate-08",
       "page": 17,
       "facing_text_page": 16,
-      "facing_text": "They kept both. The list included a\nrevised scene, a joke, and a pause\nbefore an answer. The pause\noccupied most of the ensuing\ndiscussion. Rebeca performed the\nline with and without it. Even the\nprinter stopped long enough to\nimprove the second version,\nalthough no one proposed\nincluding the printer in the claim.\nEfraín used two surname forms in\ndifferent parts of his family. He did\nnot want the workshop to launch a\ncorrection on his behalf. Q asked\nwhether he wanted both recorded\nprivately or no new entry at all. He\nwanted a note for his own papers\nexplaining the sources, without an\napplication being sent to an office.\nQ prepared it and returned the\ncopies to him.\nOn the third Thursday, a registry\nofficial attended to explain what\nher office could handle and which\ncases needed a different\nprocedure. Her name was Paula.\nShe had also brought a list of\ncommon reasons requests were\nreturned. Lucía asked her to\ndistinguish missing information\nfrom information her office simply\npreferred in another format.\nPaula struck out two requirements\non the workshop's sample\nchecklist. They had come from a\nform for a different procedure. She\nwould not promise a single rule for\nevery dispute or waive\ndocumentation she was required to\nverify. The conversation became\nless comfortable when they\nreached the cases still going\nnowhere after all the requirements\nhad been met.\n“Those are the ones we need\nsomeone to follow,” Ofelia said.\nPaula agreed to supply a contact\nand the reference for each return.\nShe did not agree to decide every\ncase in the room. Q entered the\npromised follow-up and asked\nwhen they should check if no\nanswer came. The appointment\nmade her less abstract and the\nworkload no smaller.\nThe register did not promise to\nreturn names as if they were\nmissing objects. It recorded the\nsource, the discrepancy, the\nrequested action, the person\nentitled to receive an answer, and\nthe agreed access. A number\ndistinguished cases; a number did\nnot replace a name. Disagreement\ncould remain visible without being\npublished to every institution that\nmight find it convenient.\nNear closing, Paula mentioned that\nher own payroll used a different\nletter from her birth certificate.\n",
+      "facing_text": "“Keep both?”\n“As long as yours doesn't reduce\nthe amount.”\nThey kept both. The list included a\nrevised scene, a joke, and a pause\nbefore an answer. The pause\noccupied most of the ensuing\ndiscussion. Rebeca performed the\nline with and without it. Even the\nprinter stopped long enough to\nimprove the second version,\nalthough no one proposed\nincluding the printer in the claim.\nEfraín used two surname forms in\ndifferent parts of his family. He did\nnot want the workshop to launch a\ncorrection on his behalf. Q asked\nwhether he wanted both recorded\nprivately or no new entry at all. He\nwanted a note for his own papers\nexplaining the sources, without an\napplication being sent to an office.\nQ prepared it and returned the\ncopies to him.\nOn the third Thursday, a registry\nofficial attended to explain what\nher office could handle and which\ncases needed a different\nprocedure. Her name was Paula.\nShe had also brought a list of\ncommon reasons requests were\nreturned. Lucía asked her to\ndistinguish missing information\nfrom information her office simply\npreferred in another format.\nPaula struck out two requirements\non the workshop's sample\nchecklist. They had come from a\nform for a different procedure. She\nwould not promise a single rule for\nevery dispute or waive\ndocumentation she was required to\nverify. The conversation became\nless comfortable when they\nreached the cases still going\nnowhere after all the requirements\nhad been met.\n“Those are the ones we need\nsomeone to follow,” Ofelia said.\nPaula agreed to supply a contact\nand the reference for each return.\nShe did not agree to decide every\ncase in the room. Q entered the\npromised follow-up and asked\nwhen they should check if no\nanswer came. The appointment\nmade her less abstract and the\nworkload no smaller.\nThe register did not promise to\nreturn names as if they were\nmissing objects. It recorded the\nsource, the discrepancy, the\nrequested action, the person\nentitled to receive an answer, and\nthe agreed access. A number\ndistinguished cases; a number did\nnot replace a name. Disagreement\ncould remain visible without being\npublished to every institution that\nmight find it convenient.\n",
       "source_block_ids": [
-        82,
-        83,
         84,
         85,
         86,
         87,
         88,
-        89
+        89,
+        90,
+        91,
+        92
       ],
       "asset": "output/illustrations/revised/issue-13/plate-08.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Two requirements",
       "scene_brief": "Registry official Paula crosses out two incorrect requirements on the sample checklist with Lucía at the table and Ofelia waiting with her receipts. Q enters the promised follow-up, not a legal judgment. Paula is an ordinary visiting clerk with her own workload; no courtroom, robes, or instant corrected identity certificates.",
-      "scene_anchor": "Paula struck out two requirements on the workshop's sample checklist."
+      "scene_anchor": "Paula struck out two requirements on the workshop's sample checklist.",
+      "asset_sha256": "c76cec2ecffaf7f18a0d9bfa795341c8f99f5f71f23f93d45bd8c67ae30e1330",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in reference-based image generation",
+      "generation_prompt": "Use case: illustration-story. New full-bleed portrait 2:3 narrative plate for The Ingenious Machine, near-future Mexico, crisp Goya-inspired black-and-white etching/aquatint. Humane observed expressions, varied line weight, clear white highlights, no sepia or cream paper field. NOT a photo of a print. No borders, captions, lettering, watermarks or unrelated figures. Essential faces/hands above bottom 6 percent. Highest available native resolution. Contemporary borrowed classroom in Amealco, ordinary modest furnishings, not a palace or antique monastery. Windows show a plain exterior wall or wooded highland trees, NOT cathedral towers. Q: exactly the reference's tall slim articulated metal body, narrow riveted segmented oval face, round concentric ears, exposed long mechanical neck, question-mark breastplate, short fitted dark sponsor jacket, exposed articulated legs. No long coat, human skin, chivalric armor or clockface. RIGHT knee has a dark strapped support (viewer LEFT when facing Q); no brace on left knee. Damaged shoulder slightly restrained, not a newly broken arm. Conversationally competent adult colleague. Input1 Q. Input2 only young CENTER woman Lucía, wavy hair denim jacket. Input3 Ofelia LEFT older woman graying braid cardigan; no men/candles/church. Visiting registry official PAULA: Mexican woman around50 with smooth short gray bob, narrow face, thin oval glasses and plain light buttoned blouse, distinct from Lucía and Ofelia. Paula crosses out TWO lines on a sample checklist at long classroom worktable, Lucía leaning in to check; Ofelia waits with old submission receipts and Q enters agreed follow-up in ordinary notebook. Group of FOUR only, enough face separation. Papers bear unreadable marks, no actual certificates, IDs, court seals or invented case outcome. Clerk is colleague with workload, no robes, no grand institution.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-03.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-12/plate-03.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-07/plate-03.png"
+      ],
+      "original_generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-556d047d-500e-4377-a842-932612e4e54a.png",
+      "selected_generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-556d047d-500e-4377-a842-932612e4e54a.png",
+      "visual_approval": "Inspected at native resolution for scene, characters, physical interaction, setting, documentary limits and trim-safe placement. Approval is for a revision proof, not press quality."
     },
     {
       "plate_id": "issue-13-plate-09",
       "page": 19,
       "facing_text_page": 18,
-      "facing_text": "Rebeca offered to portray the\npayroll as a small but powerful\ncharacter in her next performance.\nPaula declined the role on its\nbehalf, then asked for the\nworkshop's comparison sheet to\ntake home.\nQ unplugged the printer after the\nlast copy and put its overheating\nfault on the maintenance list.\nOfelia packed her notebook. She\nleft the scrap with the two styles of\ncapital letter between its pages,\nwhere it required no official\nversion to remain recognizable.\nInterlude: The Woman\nWho Refused a Caption\nAlma Reyes came after a hospital\nshift with a photograph in a\nsupermarket envelope. She had\nworked seventeen years in an\nemergency ward. She sat down,\nput the envelope on the table and\nloosened one shoe with the other\nfoot.\nThe photograph showed her beside\na bed. Her sister's face was turned\naway. They had agreed to a limited\nnewspaper image during a\npublic-health emergency, with the\npatient's identifying details\nconcealed. The accompanying\nstory supplied a birthplace,\nchildren, and a representative\ncourage that did not correspond to\nthe account they had given.\nAlma wanted to challenge the\nreuse and leave the print\nsomewhere safe for a month while\ndeciding what else to do. Her sister\nhad authorized her to handle that\nrequest. Lucía asked what could be\nexamined now. The published\nversions and the release could be\ncompared; the private medical\nhistory was not part of the task.\nAlma brought a higher-resolution\nfile supplied by the newspaper in\nresponse to her inquiry. In a later\ninstitutional example, a hospital\nidentifier had not been concealed\nas it was in the printed image. Q\ndid not need to enlarge the later\nfile to read the number. The\ndifference was already visible in\nthe two copies Alma had brought.\n“We can identify which copy\ncontains it and request restriction\nof that version,” he said. “I can't\nretrieve copies from everyone who\nhas already received them.”\nAlma nodded. “Put both facts in\nthe request.”\nShe did not want a new public\ncaption explaining that she refused\nthe old one. She wanted no public\ndisplay of the deposited print at all.\nThe archive could retain the\nprivate instructions necessary to\n",
+      "facing_text": "Near closing, Paula mentioned that\nher own payroll used a different\nletter from her birth certificate.\nRebeca offered to portray the\npayroll as a small but powerful\ncharacter in her next performance.\nPaula declined the role on its\nbehalf, then asked for the\nworkshop's comparison sheet to\ntake home.\nQ unplugged the printer after the\nlast copy and put its overheating\nfault on the maintenance list.\nOfelia packed her notebook. She\nleft the scrap with the two styles of\ncapital letter between its pages,\nwhere it required no official\nversion to remain recognizable.\nInterlude: The Woman\nWho Refused a Caption\nAlma Reyes came after a hospital\nshift with a photograph in a\nsupermarket envelope. She had\nworked seventeen years in an\nemergency ward. She sat down,\nput the envelope on the table and\nloosened one shoe with the other\nfoot.\nThe photograph showed her beside\na bed. Her sister's face was turned\naway. They had agreed to a limited\nnewspaper image during a\npublic-health emergency, with the\npatient's identifying details\nconcealed. The accompanying\nstory supplied a birthplace,\nchildren, and a representative\ncourage that did not correspond to\nthe account they had given.\nAlma wanted to challenge the\nreuse and leave the print\nsomewhere safe for a month while\ndeciding what else to do. Her sister\nhad authorized her to handle that\nrequest. Lucía asked what could be\nexamined now. The published\nversions and the release could be\ncompared; the private medical\nhistory was not part of the task.\nAlma brought a higher-resolution\nfile supplied by the newspaper in\nresponse to her inquiry. In a later\ninstitutional example, a hospital\nidentifier had not been concealed\nas it was in the printed image. Q\ndid not need to enlarge the later\nfile to read the number. The\ndifference was already visible in\nthe two copies Alma had brought.\n“We can identify which copy\ncontains it and request restriction\nof that version,” he said. “I can't\nretrieve copies from everyone who\nhas already received them.”\nAlma nodded. “Put both facts in\nthe request.”\nShe did not want a new public\ncaption explaining that she refused\nthe old one. She wanted no public\n",
       "source_block_ids": [
-        89,
-        90,
-        91,
-        92,
         93,
         94,
         95,
         96,
         97,
-        98
+        98,
+        99,
+        100,
+        101,
+        102
       ],
       "asset": "output/illustrations/revised/issue-13/plate-09.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "After the shift",
       "scene_brief": "Alma sits at the archive table, sliding one heel out of her shoe with the other foot, supermarket envelope on the table. Q and Lucía receive her at eye level. Preserve her ordinary fatigue without saintly lighting; the envelope contents and hospital identifier are not visible to the viewer. She is not the earlier unnamed nurse with fictional training examples.",
-      "scene_anchor": "loosened one shoe with the other foot."
+      "scene_anchor": "loosened one shoe with the other foot.",
+      "asset_sha256": "44ee453e30ca8541855df8ef1c0b61ed3e1f184507df900a0bf7ce1c07f853db",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in reference-based image generation",
+      "generation_prompt": "Use case: illustration-story. New full-bleed portrait 2:3 narrative plate for The Ingenious Machine, near-future Mexico, crisp Goya-inspired black-and-white etching/aquatint. Humane observed expressions, varied line weight, clear white highlights, no sepia or cream paper field. NOT a photo of a print. No borders, captions, lettering, watermarks or unrelated figures. Essential faces/hands above bottom 6 percent. Highest available native resolution. Contemporary borrowed classroom in Amealco, ordinary modest furnishings, not a palace or antique monastery. Windows show a plain exterior wall or wooded highland trees, NOT cathedral towers. Q: exactly the reference's tall slim articulated metal body, narrow riveted segmented oval face, round concentric ears, exposed long mechanical neck, question-mark breastplate, short fitted dark sponsor jacket, exposed articulated legs. No long coat, human skin, chivalric armor or clockface. RIGHT knee has a dark strapped support (viewer LEFT when facing Q); no brace on left knee. Damaged shoulder slightly restrained, not a newly broken arm. Conversationally competent adult colleague. Input1 Q identity. Input2 Lucía is the YOUNG WOMAN AT CENTER with shoulder-length wavy dark hair, denim jacket, light patterned blouse; do not include older bespectacled woman. Establish ALMA REYES as Mexican nurse in her late40s, broad cheekbones, rounded strong nose, dark hair in a tidy low ponytail, no glasses, plain light V-neck scrub top under an unbuttoned dark cardigan, work trousers, simple slip-on work shoes. Scene: Alma has just sat at a table after a shift, loosening one heel out of a shoe using the other foot. Sealed supermarket envelope lying flat on table. Q and Lucía sit listening at eye level; legs and small shoe action visible. Quiet fatigue, ordinary available light, NO hospital photo visible, no medical ID, saintly halo, bed or public display.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-03.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-12/plate-03.png"
+      ],
+      "original_generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-095ade3a-abba-4f5c-8aca-369c6adcddaf.png",
+      "selected_generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-095ade3a-abba-4f5c-8aca-369c6adcddaf.png",
+      "visual_approval": "Inspected at native resolution for scene, characters, physical interaction, setting, documentary limits and trim-safe placement. Approval is for a revision proof, not press quality."
     },
     {
       "plate_id": "issue-13-plate-10",
       "page": 21,
       "facing_text_page": 20,
-      "facing_text": "care for it. Those were not a\nreplacement caption offered to\nstrangers.\nWhen the comparison was\nfinished, she told them about the\ncomb.\nHer sister had woken before dawn\nasking for one. Alma bought it at\nthe pharmacy opposite the\nhospital. A doctor had been\narguing with a television whose\nsound could not be turned down,\nbecause the remote had left in\nsomeone's pocket. Alma laughed\nwhile combing her sister's hair,\nand her sister accused her of\nlaughing at the parting.\n“Was it crooked?” Q asked.\n“Very. I had slept two hours.”\nAlma took the receipt from the\nenvelope. It gave the date and price\nof the comb, not a measure of\ndevotion. She wanted it stored\nseparately under the same private\ndeposit reference so she could find\nthe price later without exposing\nthe photograph.\nLucía asked whether Alma wanted\nany of that account included in a\npublic response to the article. She\ndid not, for now. What appears\nhere was permitted later, after the\nphotograph had returned home.\nThe delay belongs to the account as\nmuch as the comb does.\nThey agreed a one-month deposit.\nAlma wanted no reminder\nmessages. Q recorded that\npreference and the institution's\nown review date: the print would\nremain closed, and no new use\nwould be inferred if she failed to\nreturn on time. A missed\nappointment would not turn the\nobject into a donation. They\nrecorded how she could collect it\nand who else, if anyone, could do\nso. At present, no one else could.\n“You can remember the date\nwithout reminding me,” Alma said.\n“Of course. I'll put it in our diary,\nnot yours.”\nShe checked the date, the item\ncount and her instructions, then\ntook her copy. Before standing she\nhad to work her heel back into the\nshoe.\nA journalist later contacted the\narchive about the photograph.\nAlma agreed that Lucía could send\na request for the proposed\nquestions, not accept an interview\nfor her. The questions concerned\ncourage, the nation, and becoming\na symbol. None asked whether her\nsister had recovered.\n",
+      "facing_text": "display of the deposited print at all.\nThe archive could retain the\nprivate instructions necessary to\ncare for it. Those were not a\nreplacement caption offered to\nstrangers.\nWhen the comparison was\nfinished, she told them about the\ncomb.\nHer sister had woken before dawn\nasking for one. Alma bought it at\nthe pharmacy opposite the\nhospital. A doctor had been\narguing with a television whose\nsound could not be turned down,\nbecause the remote had left in\nsomeone's pocket. Alma laughed\nwhile combing her sister's hair,\nand her sister accused her of\nlaughing at the parting.\n“Was it crooked?” Q asked.\n“Very. I had slept two hours.”\nAlma took the receipt from the\nenvelope. It gave the date and price\nof the comb, not a measure of\ndevotion. She wanted it stored\nseparately under the same private\ndeposit reference so she could find\nthe price later without exposing\nthe photograph.\nLucía asked whether Alma wanted\nany of that account included in a\npublic response to the article. She\ndid not, for now. What appears\nhere was permitted later, after the\nphotograph had returned home.\nThe delay belongs to the account as\nmuch as the comb does.\nThey agreed a one-month deposit.\nAlma wanted no reminder\nmessages. Q recorded that\npreference and the institution's\nown review date: the print would\nremain closed, and no new use\nwould be inferred if she failed to\nreturn on time. A missed\nappointment would not turn the\nobject into a donation. They\nrecorded how she could collect it\nand who else, if anyone, could do\nso. At present, no one else could.\n“You can remember the date\nwithout reminding me,” Alma said.\n“Of course. I'll put it in our diary,\nnot yours.”\nShe checked the date, the item\ncount and her instructions, then\ntook her copy. Before standing she\nhad to work her heel back into the\nshoe.\nA journalist later contacted the\narchive about the photograph.\nAlma agreed that Lucía could send\na request for the proposed\nquestions, not accept an interview\nfor her. The questions concerned\ncourage, the nation, and becoming\na symbol. None asked whether her\nsister had recovered.\n",
       "source_block_ids": [
-        98,
-        99,
-        100,
-        101,
         102,
         103,
         104,
@@ -258,37 +416,177 @@
         106,
         107,
         108,
-        109
+        109,
+        110,
+        111,
+        112,
+        113
       ],
       "asset": "output/illustrations/revised/issue-13/plate-10.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Our diary, not yours",
       "scene_brief": "Alma works her heel back into her shoe while checking her deposit confirmation; Q enters the archive review date in its diary. A small receipt and closed envelope are distinct objects. No phone notification, reminder message or public display of the hospital photograph. An everyday departure rather than an allegory of memory.",
-      "scene_anchor": "Before standing she had to work her heel back into the shoe."
+      "scene_anchor": "Before standing she had to work her heel back into the shoe.",
+      "asset_sha256": "990fb9be2995fb2cf1661fdc9c0599d53c474049f48735dd3510dab7a6d660f0",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in reference-based image generation",
+      "generation_prompt": "Use case: illustration-story. New full-bleed portrait 2:3 narrative plate for The Ingenious Machine, near-future Mexico, crisp Goya-inspired black-and-white etching/aquatint. Humane observed expressions, varied line weight, clear white highlights, no sepia or cream paper field. NOT a photo of a print. No borders, captions, lettering, watermarks or unrelated figures. Essential faces/hands above bottom 6 percent. Highest available native resolution. Contemporary borrowed classroom in Amealco, ordinary modest furnishings, not a palace or antique monastery. Windows show a plain exterior wall or wooded highland trees, NOT cathedral towers. Q: exactly the reference's tall slim articulated metal body, narrow riveted segmented oval face, round concentric ears, exposed long mechanical neck, question-mark breastplate, short fitted dark sponsor jacket, exposed articulated legs. No long coat, human skin, chivalric armor or clockface. RIGHT knee has a dark strapped support (viewer LEFT when facing Q); no brace on left knee. Damaged shoulder slightly restrained, not a newly broken arm. Conversationally competent adult colleague. Input1 identities and style only: ALMA is LEFT adult low ponytail/cardigan/light scrub top, Lucía CENTER young wavy hair denim jacket, Q RIGHT. New DIFFERENT VIEWPOINT, from end of table, emphasizing departure. Alma holds her single deposit confirmation in one hand while leaning down to ease her heel back INTO slip-on work shoe. Q sits farther across table writing a date in archive diary, beside a small separate receipt and CLOSED supermarket envelope; Lucía may be omitted, only Alma/Q required. No reading photograph, public caption, notification, calendar alert, medical ID or hospital scene. Nobody touches her shoe for her. Her ordinary effort and Q's diary have equal compositional weight. Keep documentary marks unreadable.",
+      "reference_images": [
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-095ade3a-abba-4f5c-8aca-369c6adcddaf.png"
+      ],
+      "original_generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-4194e4b4-85de-41ba-944a-b9eeccac6457.png",
+      "selected_generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-4194e4b4-85de-41ba-944a-b9eeccac6457.png",
+      "visual_approval": "Inspected at native resolution for scene, characters, physical interaction, setting, documentary limits and trim-safe placement. Approval is for a revision proof, not press quality."
     },
     {
       "plate_id": "issue-13-plate-11",
       "page": 23,
       "facing_text_page": 22,
-      "facing_text": "“That is the first question I'd\nwant,” Alma said.\n“Would you like to send that\nback?” Q asked.\nShe did. The journalist revised the\nquestions, but Alma decided not to\ntake the interview. An article\nsubsequently described her refusal\nas a form of public courage. It used\nthe newspaper's earlier material,\nnot the archive's deposited print or\nthe private account of the comb.\nLucía retained the public article\nwith the correspondence\nconcerning its use. Alma's\nenvelope stayed closed. Keeping a\nrecord of a disputed publication\ndid not authorize them to make the\nunderlying image more available in\norder to explain why she objected.\nOn the thirty-first day Alma\nreturned. The deposit had\nremained closed after its review\ndate. She collected the photograph\nand signed the item receipt. She\nleft the comb receipt under a new\nagreement permitting her to\nretrieve it and no public display.\n“The comb was cheap,” she said. “I\nwill remember buying it as if it cost\neverything.”\nQ checked that the printed price\nwas still legible. “This may be\nuseful for disagreeing with that\nmemory.”\n“Not defeating it.”\n“No.”\nThe later court file would include\nthe public article and the deposit's\nhandling record, subject to their\nown limits. It would not thereby\nacquire an original photograph the\narchive no longer held. The ease\nwith which a description travelled\ninto an exhibit would still be part\nof the dispute.\nThree years later Alma returned\nwith another comb receipt. The\nprices had changed. Her sister was\nwaiting outside and wanted to\nknow why buying a comb now\nrequired a visit to an archive. Alma\nsaid it did not and took her time\ncomparing them anyway.\n",
+      "facing_text": "“That is the first question I'd\nwant,” Alma said.\n“Would you like to send that\nback?” Q asked.\nShe did. The journalist revised the\nquestions, but Alma decided not to\ntake the interview. An article\nsubsequently described her refusal\nas a form of public courage. It used\nthe newspaper's earlier material,\nnot the archive's deposited print or\nthe private account of the comb.\nLucía retained the public article\nwith the correspondence\nconcerning its use. Alma's\nenvelope stayed closed. Keeping a\nrecord of a disputed publication\ndid not authorize them to make the\nunderlying image more available in\norder to explain why she objected.\nOn the thirty-first day Alma\nreturned. The deposit had\nremained closed after its review\ndate. She collected the photograph\nand signed the item receipt. She\nleft the comb receipt under a new\nagreement permitting her to\nretrieve it and no public display.\n“The comb was cheap,” she said. “I\nwill remember buying it as if it cost\neverything.”\nQ checked that the printed price\nwas still legible. “Then keep this.\nWe can at least prevent the comb\nfrom getting more expensive every\ntime you tell it.”\n“Not less important.”\n“No. I'm only disputing the price.”\nThe later court file would include\nthe public article and the deposit's\nhandling record, subject to their\nown limits. It would not thereby\nacquire an original photograph the\narchive no longer held. The ease\nwith which a description travelled\ninto an exhibit would still be part\nof the dispute.\nThree years later Alma returned\nwith another comb receipt. The\nprices had changed. Her sister was\nwaiting outside and wanted to\nknow why buying a comb now\nrequired a visit to an archive. Alma\nsaid it did not and took her time\ncomparing them anyway.\n",
       "source_block_ids": [
-        110,
-        111,
-        112,
-        113,
         114,
         115,
         116,
         117,
         118,
         119,
-        120
+        120,
+        121,
+        122,
+        123,
+        124
       ],
       "asset": "output/illustrations/revised/issue-13/plate-11.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The second receipt",
       "scene_brief": "Three years later: Alma compares two small comb receipts at an archive table, unhurried, while her living sister waits outside the doorway with mildly impatient affection. No hospital bed, heroic mural or displayed photograph. This is the narrated later visit; do not put Q or the Custodian here without textual support or imply either has died. Receipt details remain unreadable.",
-      "scene_anchor": "Her sister was waiting outside"
+      "scene_anchor": "Her sister was waiting outside",
+      "asset_sha256": "e50aefd04823c3bffe7bb0c3d9512aaa4f26f5e9f68f3373cfdbb2d30c7ffce0",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in reference-based image generation",
+      "generation_prompt": "Use case: illustration-story. New full-bleed portrait 2:3 narrative plate for The Ingenious Machine, near-future Mexico, crisp Goya-inspired black-and-white etching/aquatint. Humane observed expressions, varied line weight, clear white highlights, no sepia or cream paper field. NOT a photo of a print. No borders, captions, lettering, watermarks or unrelated figures. Essential faces/hands above bottom 6 percent. Highest available native resolution. Contemporary borrowed classroom in Amealco, ordinary modest furnishings, not a palace or antique monastery. Windows show a plain exterior wall or wooded highland trees, NOT cathedral towers. Q: exactly the reference's tall slim articulated metal body, narrow riveted segmented oval face, round concentric ears, exposed long mechanical neck, question-mark breastplate, short fitted dark sponsor jacket, exposed articulated legs. No long coat, human skin, chivalric armor or clockface. RIGHT knee has a dark strapped support (viewer LEFT when facing Q); no brace on left knee. Damaged shoulder slightly restrained, not a newly broken arm. Conversationally competent adult colleague. Input1 ALMA identity reference ONLY: woman at LEFT with dark low ponytail, rounded nose/strong cheekbones, no glasses. Draw NO Q, no Lucía, no Custodian. THREE YEARS LATER: Alma, slightly more gray hair at temples and now in ordinary everyday buttoned blouse/cardigan (NOT nurse scrubs), stands inside archive desk comparing TWO narrow comb receipts unhurriedly. Through OPEN DOOR, her living sister waits OUTSIDE in daytime with gently impatient expression, one hand on hip. Sister late40s/50s, family resemblance but short loosely curly dark hair and plain light blouse/trousers, distinct from Alma. Medium-wide depth composition, receipts foreground, sister clearly beyond doorway with oak/pine highland courtyard behind. No hospital bed, illness props, saintly mural, comb display or photo. Receipt marks unreadable. Ordinary affectionate sibling impatience, a future visit after her recovery.",
+      "reference_images": [
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-095ade3a-abba-4f5c-8aca-369c6adcddaf.png"
+      ],
+      "original_generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-aa5c38e1-8dff-4f18-aace-f3f26897a927.png",
+      "selected_generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-aa5c38e1-8dff-4f18-aace-f3f26897a927.png",
+      "visual_approval": "Inspected at native resolution for scene, characters, physical interaction, setting, documentary limits and trim-safe placement. Approval is for a revision proof, not press quality."
     }
-  ]
+  ],
+  "custodian_reference": "output/illustrations/revised/issue-12/plate-07-v2.png",
+  "ofelia_reference": "output/illustrations/revised/issue-07/plate-03.png",
+  "generation_summary": {
+    "mode": "built-in",
+    "initial_calls": 12,
+    "corrective_calls": 2,
+    "native_pixels": [
+      1024,
+      1536
+    ],
+    "effective_dpi_about": 150,
+    "limitations": "Native raster resolution below a typical 300-dpi press target; no claim of press readiness."
+  },
+  "proof_outputs": {
+    "reading": {
+      "path": "output/pdf/ingenious-issue-13-revised-en-bw.pdf",
+      "sha256": "8e78673dad6fae25d8f418ac3dfe0a4dbc7976cc30ff1ff2c9154e292c35eb32"
+    },
+    "a3": {
+      "path": "output/pdf/ingenious-issue-13-revised-en-bw-a3.pdf",
+      "sha256": "1f3e38cf22ff0706319554e061b71e9af5569522ec2beb53825aef18a5d88560"
+    }
+  },
+  "verification": {
+    "narrative_words": 3773,
+    "reading_pages": 24,
+    "a3_landscape_sides": 12,
+    "duplex_sheets": 6,
+    "reading_trim_points": [
+      477,
+      738
+    ],
+    "a3_points": [
+      1190.55118,
+      841.88976
+    ],
+    "text_background": "unpainted: no narrative background fills, rectangles or raster images",
+    "grayscale": "twelve lossless DeviceGray images; no DCT/JPEG re-encoding or downsampling",
+    "native_image_pixels_preserved": true,
+    "reading_fonts": "five embedded TrueType subsets",
+    "rotations": 0,
+    "continuous_source_order": true,
+    "exact_facing_bindings": 11,
+    "all_issue_bindings_checked": 22,
+    "other_chapters_unchanged": 21,
+    "prior_issue_pdf_files_unchanged": 24,
+    "baseline_commit": "cf9f5d05",
+    "living_ending_unchanged": true,
+    "all_reading_pages_visually_reviewed": true,
+    "all_a3_sides_visually_reviewed": true,
+    "actual_a3_slots_checked": 24,
+    "actual_slot_checks": "extracted source text, image count, decoded image SHA256, placement translation, trim clipping",
+    "a3_pairs": [
+      [
+        24,
+        1
+      ],
+      [
+        2,
+        23
+      ],
+      [
+        22,
+        3
+      ],
+      [
+        4,
+        21
+      ],
+      [
+        20,
+        5
+      ],
+      [
+        6,
+        19
+      ],
+      [
+        18,
+        7
+      ],
+      [
+        8,
+        17
+      ],
+      [
+        16,
+        9
+      ],
+      [
+        10,
+        15
+      ],
+      [
+        14,
+        11
+      ],
+      [
+        12,
+        13
+      ]
+    ],
+    "printing": "not sent",
+    "limitations": [
+      "Approximately 150-dpi raster art remains below press target.",
+      "Physical Epson tray order and ink on stock untested.",
+      "No new independent faculty or fresh-context model calls this pass.",
+      "Whole-book literary review and nine later illustrated builds remain open."
+    ]
+  }
 }
