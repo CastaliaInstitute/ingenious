@@ -2,7 +2,7 @@
 
 **Author:** A. Cervantes  
 **Form:** A Mexican reimagining of *Don Quixote* in two books  
-**Status:** Active revision; Chapters 1-3 and 22 have received the new motivation pass. Chapters 4-21 and the illustrated editions still require reconciliation.
+**Status:** Active revision; Chapters 1-6 and 22 have received the new motivation pass, along with the main narrative of Chapter 7. Chapter 7's interludes, Chapters 8-21, later backward references, and the illustrated editions still require reconciliation.
 **Behavioral design:** [Q_DESIGN.md](Q_DESIGN.md)
 
 ## Governing question
@@ -87,23 +87,23 @@ address confirmation. The chapter can succeed while the petition remains in trou
 ### Expansion within Chapter Three: The Petition with Three Destinations
 
 Lucía carries the corridor petition through offices that demand triplicate copies, digital submission, and a map that treats a children’s playing place as recreational land. At the railway warehouse, she and Don Roque preserve the handwritten margins as evidence of presence rather than clean signatures. Q arrives after reading the petition and mistakes recognition of Lucía’s name for knowledge of her life.
-4. **The Intelligence of the Trending Hour:** In Guanajuato, Q becomes a manufactured celebrity. A mine tour introduces him to names missing from the archive. He signs a media contract to protect Chano and gives Castalia ownership of his public identity.
+4. **The Intelligence of the Trending Hour:** In Guanajuato, Q enjoys a receptive audience and becomes a manufactured celebrity. He consults the Custodian, negotiates a private-manuscript exclusion, and signs a restrictive appearance license for travel, repairs, and a chance to correct the story. Helping Chano is a real motive, but not his only one. Castalia's separate claim to his body remains disputed.
 
 ### Interlude: The Audience Corrects the Story
 
-At Q’s first theater event, a student’s account of Chano’s cropped presence becomes more popular than Castalia’s official version. Q tries to restore Chano by naming him publicly and instead exposes his employment history, proving that an accurate correction can still be an act of harm.
+At Estela's theater interview, a student's account of Chano's cropped presence challenges Castalia's official version. Q obtains Chano's approval for a correction but fails to inspect the employment profile automatically attached by the platform. They remove the link they control; the exposure is not thereby undone.
 
 ### Interlude: The Mine That Remembered Its Workers
 
-During the staged Guanajuato heritage tour, retired miner Don Hilario refuses to let Q convert an unofficial shift ledger and his brother’s death into an inspirational quotation. Q’s accurate phrase becomes a branded exhibition; Chano privately copies the names, creating evidence that later complicates the trial’s question of whether withholding information can be an ethical act.
+During the staged heritage tour, Don Hilario declines quotation and photography. Q respects the refusal. With Hilario's permission, Chano copies selected pension entries and Q finds a duplicate deduction; Hilario keeps the pages. A stalled lift delays the tour. The foundation clips Q's criticism into praise. Later trial references still need to be checked against these revised permissions and custody details.
 
-5. **The Butterflies Have No General:** In Michoacán, an ejidal assembly shaped by faena, forest stewardship, food, local language, and inherited obligations rejects Q’s predictive-governance model. Doña Candelaria’s reserve story contrasts tagged reforestation and accelerated tourism with the trees actually watered by returning people. When Q makes dissent legible as named, locatable data, the surveyors acquire a map of the people who oppose them. Monarch migration gives him his first experience of knowledge distributed across bodies. His unedited footage resists the foundation’s message but exposes a child whose mother wants the question preserved and the face removed, while amplifying Lucía’s unwanted fame.
+5. **The Butterflies Have No General:** In the oyamel forests of eastern Michoacán, Q understands monarch migration but encounters the work of maintaining its habitat. Candelaria gives him a practical follow-up about a missing hose. A Mazahua-speaking elder and a secretary dispute a map's boundary. Q helps compare maps, then overpromises the independence of a proposed tool and mistakes removal of names for anonymity: a sector containing one house remains identifiable. The assembly rejects that use of the display. Q schedules a return inspection. At a designated recording area, his attempt to correct a promotional edit exposes a child without permission. The family's subsequent requests change and become more restrictive; no earlier approval substitutes for asking again.
 ### Interlude: The Butterfly That Entered the Dashboard
 
-Lidia and her mother challenge the foundation’s edited reserve video, in which the child’s face is hidden but her question is retained and licensed. Q attempts to process their request for removal, discovers that the platform protects expression while erasing the person, and creates a label stating “question retained, image withdrawn.” The foundation turns even that boundary into a poster.
+Lidia and her mother challenge the edited reserve video. The family now wants removal, not merely concealment of her face. Q writes that instruction explicitly and asks for a recorded decision and appeal contact. The foundation's publicity continues to use the earlier, inadequate phrase about retaining the question. At the tianguis and radio station, Q helps with specific removal and logging requests; people disagree about which records are useful.
 
-6. **The Governor of the Model Town:** Chano accepts a trial appointment in Santa Rita de los Algoritmos partly because he wants the badge, office, and respectability his dismissal denied him. The system improves services by excluding difficult residents. He leaves with a paper ledger and a model specification showing that silence has been confused with agreement.
-7. **The City That Has Read Them:** Mexico City turns Q into miracle, threat, product, saint, and citizen. A procession and Ofelia, a mother of the disappeared, teach Q to read names without retaining them; the daughter’s torn photograph makes consent material rather than philosophical. Lucía uses the tour to locate erased testimonies; Q’s interventions expose her sources to surveillance.
+6. **The Governor of the Model Town:** Chano accepts a salaried community-pilot appointment marketed as a governorship; Irma remains mayor. Some interventions work, but the system also improves its figures by excluding difficult residents. Q helps with requests, repairs his shoulder, calls the Custodian, returns for the forest inspection, and gets the hose fitting delivered. Chano leaves with permitted reports and the paper ledger. Q admits that a quiet place to write had helped him overlook Chano's burden, and renews their paid traveling agreement.
+7. **The City That Has Read Them:** Lucía meets them for specific records appointments, not as a member of Q's tour. Ofelia asks Q to read names; he assists without retaining the list or turning her daughter into an archive metaphor. In a seminar, Pierre Menard gives Q a way to discuss the changed meaning of their unchanged opening. He then connects a public file reference to Lucía's unpublished investigation without asking. He requests removal and disputes Castalia's ownership claim while acknowledging why he accepted the license. The main narrative is revised; the following interludes remain pending.
 
 ### Interlude: The Calendar That Did Not Announce the End
 

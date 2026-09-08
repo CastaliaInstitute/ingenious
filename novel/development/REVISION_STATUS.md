@@ -27,9 +27,27 @@ the book.” The source now permits Q to remain alive when the writing stops.
 - Chapter 3 preserves Lucía's work and central objection. Q apologizes, asks a
   practical question, and accepts a follow-up task for the petition. He can still
   confuse a good autobiographical sentence with the requested incident report.
-- Chapter 4 has limited continuity repairs: the media converts a correction into
-  romantic publicity; Q no longer explicitly renames Lucía after promising not to.
-  Its complete voice and motive pass remains pending.
+- Chapter 4 and both interludes now distinguish Q's negotiated appearance license
+  from Castalia's disputed body ownership. The Custodian offers an alternative;
+  Q admits wanting travel, repair, and an audience. Estela remains the interviewer.
+  The employment-profile exposure comes from an unchecked automatic attachment,
+  not Q investigating a critic's home. Don Hilario's copying and quotation limits
+  are respected; later trial references still need reconciliation.
+- Chapter 5 and its three interludes replace elementary misunderstanding with
+  specific errors in promised software independence, geographic anonymity, and
+  recording permission. The route enters eastern Michoacán's oyamel forests.
+  Local speakers disagree rather than supplying a uniform indigenous position.
+  Q can comfort a child, help fix a logging setting, and respect a refusal.
+- Chapter 6 distinguishes the mayor's authority from the marketed governorship.
+  Q maintains calls, repair needs, paid companionship, and the agreed forest
+  inspection. The hose fitting is delivered successfully. His writing project
+  also gives him a reason to overlook the burdens Chano faces at the office.
+- Chapter 7's main narrative now uses a specific records appointment to bring
+  Lucía into the itinerary. Q remembers signing the petition and follows up the
+  address confirmation. Ofelia's scene lets him be helpful without forcing a
+  privacy failure. The Menard seminar tests an unchanged opening against changed
+  experience, then exposes a link between public and unpublished information.
+  The museum transition is repaired; its four interludes remain to be revised.
 - Chapter 22 and the coda have been rewritten. Q verifies the power problem,
   obtains help from Q-Prime, saves permissions, survives, and finishes the book
   with the Custodian. Ownership and maintenance disputes remain open.
@@ -39,14 +57,15 @@ the book.” The source now permits Q to remain alive when the writing stops.
 
 ## Required next work
 
-1. Read and revise Chapters 4-21, including all their interludes. Trace promises,
+1. Read and revise Chapter 7's four interludes and Chapters 8-21. Trace promises,
    calls, battery and funds, Castalia's control, the restricted index, and the
    difference between Q's public identity and his current commitments. Avoid
    making every person a dispenser of a moral lesson.
 2. Repair backward references to the changed first encounter, Dulcinea claim,
    payment, surveillance, and the ending. Check the trial's quoted evidence.
-3. Reconcile `OUTLINE.md` after the middle chapters are revised. Its status is
-   deliberately marked incomplete; several summaries describe pending changes.
+3. Continue reconciling `OUTLINE.md` as the middle chapters are revised. It now
+   reflects Chapters 1-6, Chapter 7's main narrative, and the ending. Its remaining
+   summaries explicitly describe material that still needs a revision pass.
 4. Extend the scene exercises. Use fresh context if a suitable runtime can be
    invoked; do not report author-known outcomes as independent validation.
 5. Rebuild the English chapter issues only after text and plate placement are
