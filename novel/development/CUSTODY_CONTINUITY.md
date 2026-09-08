@@ -247,6 +247,19 @@ rest. Prime's requested clip correction is not established as granted.
 | Full recantation recording | Retained under the agreement; some outlets circulate misleading cuts and partial corrections. | A public clip is not the complete event. The original is not magically lost in an overheated server. |
 | Petra's inn | Fictional establishment outside Jalpan; Room Four closed pending work, roof inspected, repairs outstanding. | The inspector does not live beneath the leak. The route no longer places the inn near Puebla. |
 
+In Chapter Twenty-Two Chano and the staff member move the cabinet; Q reads the
+plan and holds the light passed to him by Chano. Lucía takes that same light for
+the final checks. Q's knee does not recover enough for carrying equipment. The
+technician distinguishes stored recordings from unsaved permission amendments.
+After the local save is verified, the staff member deliberately stops the generator
+on instruction; Prime's checked temporary supply supports orderly shutdown.
+There is no last-second fuel exhaustion, data migration, memory sacrifice or new
+handover of the Chiapas module. Prime needs charging and says he can move his own
+appointment; Esteban records the connection's limited purpose.
+
 The coda finishes the shared book. Q's plans, relationships, repair needs, and
 disputed circumstances continue beyond it. Textual closure does not require a
 physical death or a completed resolution of every claim.
+His knee-part trip, promised visitor information for Prime and desired call with
+Ana already exist before the book closes. The last plan change schedules ordinary
+repair inquiries; it does not invent all his motivation after a blank goal state.

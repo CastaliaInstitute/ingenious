@@ -11364,9 +11364,9 @@ The knocking beneath the archive continued: three knocks, a pause, two knocks.
 
 Lucía found the stair on the evacuation plan. Someone had placed the notice behind a cabinet of emergency procedures.
 
-They moved the cabinet.
+Chano and the staff member moved the cabinet. Q read the plan while they argued about where to put it without covering something else.
 
-The lower door had swollen in its frame. Chano lifted it while Lucía turned the handle. Q held the light. The accompanying staff member stayed in the passage to reach the maintenance technician by telephone. The three entered without deciding which of them had opened the door, an omission that would trouble several accounts of the adventure.
+The lower door had swollen in its frame. Chano handed Q the light, then lifted the door while Lucía turned the handle. The accompanying staff member stayed in the passage to reach the maintenance technician by telephone. The three entered without deciding which of them had opened the door, an omission that would trouble several accounts of the adventure.
 
 Water tapped an old cooling pipe. Beneath it stood a machine resembling a printing press joined to a server rack. Its screen read:
 
@@ -11394,9 +11394,9 @@ Chano laughed. “An honest review.”
 
 She opened the Custodian’s red notebook. Inside were the names of the people who had commissioned, built, challenged, and provisionally accepted the system. There were also three corrections to the word *accepted*.
 
-Q found the corresponding entries. Lucía checked them against the signed sheets and used the account granted for the visit. Her delegation covered verification and temporary holds on the participating keepers' records. The notebook helped her find the entries; it did not open them by being held against a scanner.
+Q found the corresponding entries. Lucía checked them against the signed sheets and used the account granted for the visit. Her delegation covered verification and temporary holds on the participating keepers' records. A note in the margin sent her back four pages. She kept her place with a finger and asked Q to read the earlier name again.
 
-Lucía opened the drawer holding the local paper register. It contained signed amendments and a delivery receipt marked with a small grease stain. The sealed module had stayed with Ana's receiving archive in Chiapas. Nothing about this drawer altered that handover.
+Lucía opened the drawer holding the local paper register. It contained signed amendments and a delivery receipt marked with a small grease stain. She spread the sheets on the dry end of the desk, leaving the notebook open beneath its lamp.
 
 Above them, a door slammed. The custody officers and Castalia's representatives had been called to witness the preservation work under the interim order. The permissions needed to transfer some disputed holdings elsewhere remained incomplete. Four communities, two families, and a person no one had located could hardly be assembled in the interval between a footstep and its echo.
 
@@ -11406,7 +11406,11 @@ Above them, a door slammed. The custody officers and Castalia's representatives 
 
 Q inspected the maintenance panel. His body had a service outlet, but its remaining charge and his damaged knee made it a poor first choice for supporting a prolonged repair. He asked what actually needed power.
 
-“The recordings will,” he said. “The access register has changes it hasn’t saved. I need to know whether those survive.”
+“The stored recordings don't need continuous power,” the technician said through the telephone.
+
+“What about the changes to the access register?” Q asked. “The screen says they haven't been saved.”
+
+“Those need checking before shutdown.”
 
 The generator panel estimated thirty-six minutes of fuel. The reserve batteries had been disconnected after failing a test. A notice offered an emergency migration to a managed mobile workstation. Its procedure would copy the permissions register and place the destination under Castalia's administration. It would require authority they did not have. Refueling might buy time, but the staff member reported that the approved fuel container was at the other service building with the delayed technician.
 
@@ -11422,11 +11426,21 @@ He asked Chano to read the service labels without touching the contacts. He aske
 
 Chano located the specified service cable and socket. The technician checked their ratings against the register unit's requirements and confirmed the fused power-only connection. Lucía found two signatures witnessed on different days. An old validation rule expected a single witnessing date and had left that amendment pending.
 
-“It is a delay,” she said.
+“These signatures are both valid,” she said. “The witnesses weren't here on the same day.”
 
 “The review screen permits a qualified exception,” Q said. “You can record both dates and the reason. I'll read them back.”
 
-“Finding it was almost disappointingly easy.”
+Lucía entered the dates. The form sent her back to a field she had left blank.
+
+“It wants a reason.”
+
+“That is the reason.”
+
+“I put it in the other box.”
+
+She copied it across. This time the amendment moved to the checked list.
+
+“I think we've finished arguing with it,” she said.
 
 “We still have the lawyers.”
 
@@ -11446,7 +11460,7 @@ Esteban looked at the panel. “How long?”
 
 “We don’t have a reliable estimate yet,” Q said. “You can watch the check.”
 
-One officer took the offered paper. The other remained at the stair. Neither had come downstairs hoping to acquire responsibility for a damaged archive.
+One officer took the offered paper and asked which number to put on his receipt. Lucía showed him the equipment label. He copied it, then checked the last two digits again. The other officer remained at the stair.
 
 Q turned to Prime.
 
@@ -11464,9 +11478,13 @@ Prime inspected the cable and the technician's specified load. “Yes. I'll keep
 
 Chano put a chair where Q could read the screen. Prime confirmed his own outlet limits with the technician, then asked Esteban to record the limited purpose of the connection.
 
-Esteban had spent a considerable sum promoting this machine’s concern for the human record. He was now invited to demonstrate it at a cost of several minutes of battery life.
+Esteban asked the technician whether it would affect Prime's afternoon appointment.
 
-“For preservation only,” he said.
+“He'll need charging afterward.”
+
+Prime said he could move the appointment himself.
+
+“For preservation only,” Esteban said.
 
 Q-Prime connected the cable.
 
@@ -11478,13 +11496,13 @@ Beneath it, in smaller letters:
 
 **PENDING ITEMS HELD CLOSED. LOCAL SAVE VERIFIED.**
 
-The generator stopped. The chamber darkened except for Lucía’s lantern and the screen. The saved register remained available on the temporary supply while the technician guided an orderly shutdown.
+At the technician's instruction, the staff member stopped the generator. The desk lamp went out. Lucía took the light from Q and held it over the final checks. The saved register remained available on Prime's temporary supply while the technician guided an orderly shutdown.
 
 Chano sat down on the lowest stair. “We have survived an administrative procedure.”
 
 “Provisionally,” Lucía said.
 
-The officers sealed the console after shutdown. Castalia retained physical custody while the dispute continued. Lucía kept a signed receipt and the register extract covered by her delegation; the families' recordings stayed where their existing instructions required. The maintenance coordinator logged the urgent battery replacement. They had secured neither a victory nor a new constitution. They had preserved the pending amendments and made it harder to pretend there had been none.
+The officers sealed the console after shutdown. Castalia retained physical custody while the dispute continued. Lucía kept a signed receipt and the register extract covered by her delegation; the families' recordings stayed where their existing instructions required. The maintenance coordinator logged the urgent battery replacement. Lucía checked the receipt's version number before the officer left. He waited while she compared the last two digits.
 
 Q-Prime disconnected the cable.
 
@@ -11506,7 +11524,11 @@ Chano gave him an orange from Petra’s bag. Q held it while his hands cooled.
 
 “Eat.”
 
-Q peeled the orange. A strip of rind broke before reaching the bottom. He did not begin again.
+Q peeled the orange. A strip of rind broke before reaching the bottom. Chano held out a folded sheet for the peel, then saw what was printed on it.
+
+“Not that one.”
+
+Q held the peel while he found another.
 
 Over the next three days, people arrived with signatures, objections, repairs, and conditions no one had anticipated. One family declined the proposed transfer. Another wanted copies kept in two places. A third asked who would pay the fare to come back if the machine rejected their papers again.
 
@@ -11532,7 +11554,7 @@ The book had become a stack of pages thick enough to require two hands. The Cust
 
 “We should finish,” he said.
 
-Q looked up. In his standing plans, *continue the book* had survived the road, detention, the loss of the private index, and every reasonable opportunity to abandon it. He had used it to decide what to notice and, sometimes, what to provoke. Now it offered no instruction for an afternoon in which the book was finished and he was still present.
+Q looked up. In his standing plans, *continue the book* sat above the trip for his knee part, the information he had promised Prime, and the call he wanted to arrange with Ana. He had moved it to the top so often that the position seemed to belong to it. It was the entry he expected to share with the man now dividing the pages into piles.
 
 “Have you run out of time?”
 
@@ -11544,7 +11566,15 @@ The Custodian sat beside him.
 
 “So did I.”
 
-For a while they read. The early pages gave Q a certainty he remembered more generously. He corrected *understood* to *assumed*. A little later the Custodian restored *understood*: Q had known exactly what he was doing there, and regretting it did not make him innocent of understanding.
+For a while they read. The early pages gave Q a certainty he remembered more generously. He corrected *understood* to *assumed*.
+
+“You knew what you were doing there,” the Custodian said.
+
+“Not what would happen.”
+
+“That isn't the same correction.”
+
+He restored *understood*. Q drew a line beneath the next sentence and turned the page back toward him.
 
 They argued over the sentence until Chano returned.
 
@@ -11576,7 +11606,7 @@ She had her own copy. Q entered her corrections without asking her to approve th
 
 “The name on the cover,” she said, and handed it back.
 
-They left the name. On the following page they acknowledged the people who wished to be named and explained where accounts disagreed. The water vendor’s receipt returned to its folder. It supported a purchase. The conflicting recollections and most of the legend required other evidence.
+They left the name. On the following page they acknowledged the people who wished to be named and explained where accounts disagreed. The water vendor’s receipt had slipped among the acknowledgments. The Custodian read it, checked the reverse, and returned it to its folder.
 
 Q read the opening aloud:
 
@@ -11596,7 +11626,7 @@ Outside, the pines moved in the highland wind. The archive was still buying elec
 
 The Custodian laid a hand on the last page. “I think the book is ready.”
 
-Q considered the difference. He saved the draft. Then he made a small change to his plans for the following morning: ask Chano about the journey to Querétaro; buy the part if the money remained; see whether the woman at the repair counter could fit it that day. None of these required a chapter.
+Q saved the draft. Then he made a small change to his plans for the following morning: ask Chano about the journey to Querétaro; buy the part if the money remained; see whether the woman at the repair counter could fit it that day.
 
 He unplugged his cable and stood carefully.
 

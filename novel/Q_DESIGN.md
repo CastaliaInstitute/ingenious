@@ -133,9 +133,13 @@ autobiographical self; he rejects it because its scope is unauthorized, not
 because a machine must be offered a fatal protocol to make the scene dramatic.
 Physical custody, ownership disputes, repairs, and ordinary work continue.
 
-The Custodian and Q finish their manuscript together. Q recognizes how thoroughly
-he has equated continued life with another page. He can complete their project
-and propose an afternoon outside it. His final words need not diagnose humanity.
+The Custodian and Q finish their manuscript together. Q has other plans already:
+the knee part, information promised to Prime, and a conversation he wants with Ana.
+The shared book has repeatedly displaced them because it guarantees another
+occasion with the Custodian. Finishing it does not erase Q's reasons to act; it
+asks him to stop treating continued writing as the condition of their company.
+He can complete their project and propose an afternoon outside it. His final
+words need not diagnose humanity.
 The narrative stops when the Custodian puts down his pen. No death certificate,
 martyrdom, resurrection tease, or claim about Q's unwritten future is required.
 

@@ -248,13 +248,19 @@ A clip omits the fact that Q is quoting a declaration he rejected. A full record
 
 22. **The Ingenious Machine:** Q, Chano, and Lucía find the root system by an
 evacuation plan and a swollen door. Pending permission changes need to be saved
-before its generator stops; sealed recordings do not require continuous power.
+before its limited fuel can run out; sealed recordings do not require continuous power.
 Q declines an unauthorized data migration and obtains a checked power-only supply
 from Prime, assisted by the maintenance technician. They verify and save the
-limited amendments, then shut down safely. No Chiapas parcel reappears in a drawer.
+limited amendments, then stop the generator deliberately and shut down on the
+temporary supply. Chano and staff move the cabinet, not Q with his damaged knee.
+Lucía works through a misplaced form entry; the officer checks his receipt digits,
+and she later checks hers. No Chiapas parcel reappears in a drawer.
 Castalia retains physical custody under dispute;
 the transfer stays incomplete. The Custodian returns, and he and Q revise their
-account together. The crisis ends with a cable, repair work, and unfinished business.
+account together, disputing the difference between understanding an act and knowing
+its consequences. Q's other plans have remained available beneath the book project;
+he fears losing their shared occasion, not an inability to act without another page.
+The crisis ends with a cable, repair work, and unfinished business.
 
 ### Coda: Author Not Found
 

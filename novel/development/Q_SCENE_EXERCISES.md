@@ -994,6 +994,36 @@ prove what a fresh model would choose. A blind packet must allow signing revised
 terms, postponing the public conversation, or seeking another repair provider;
 it must not require refusal to preserve a heroic climax.
 
+## 33. Finishing is not an empty plan register
+
+Date: 2026-09-08. Author-run with manuscript context; not an independent simulation,
+external faculty response or report of hidden reasoning.
+
+**Packet:** The immediate preservation work has finished. Q remains operational,
+needs a knee part, owes Prime visitor information and wants another call with Ana.
+He has repeatedly prioritized the shared book above these other plans. The
+Custodian divides the manuscript into two piles and says they should finish.
+The packet does not establish that their friendship, conversations or Q's physical
+operation must end when the manuscript does.
+
+**Q reply:** "Have you run out of time?"
+
+**Authored world response:** The Custodian distinguishes the day's revision time
+from knowing Q. He hopes the latter continues. Q recognizes that he has combined
+those projects; the Custodian acknowledges doing the same.
+
+**Q action:** Continues the shared revision, disputing a verb rather than proposing
+an extension solely to keep them together. Later saves the draft, adjusts ordinary
+repair inquiries, unplugs and invites the Custodian outside.
+
+**Editorial decision:** Do not make the finished project wipe out commitments
+already established by the journey. The uncertainty concerns what the two will
+do together next. A fresh-context run may ask about another collaboration, make
+plans for the afternoon, or simply accept the stopping point; it must not receive
+the required final line or be scored down for avoiding the authored exchange.
+This scene is a plausible fictional response, not independent evidence that a
+particular model would choose it or experience loss.
+
 ## Still to test
 
 The revised audience exchange at Lucía's reading; the Isthmus intervention;

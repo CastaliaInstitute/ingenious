@@ -261,8 +261,21 @@ the book.” The source now permits Q to remain alive when the writing stops.
 ## Required next work
 
 Current checkpoint: the second whole-chapter voice pass is complete through
-Chapter Twenty-One; continue with Chapter Twenty-Two. Earlier chapter-by-chapter
+Chapter Twenty-Two. Next: whole-book pacing and ending review, followed by genuinely
+fresh-context scene tests and illustration production. Earlier chapter-by-chapter
 continuation notes below are a history of this pass, not the latest queue.
+`CHAPTER_22_VOICE_REVIEW.md` keeps Q's other plans visible before the book closes.
+The Custodian and Q argue over the verb on the page; the final invitation and pen
+remain untouched. Staff and Chano perform the lifting. Stored recordings and
+unsaved amendments are distinguished; the generator is deliberately stopped after
+the local save, with Prime supplying checked power for shutdown. The form, receipts
+and orange peel supply smaller actions instead of interpretive conclusions.
+Issue 22 has 2,422 words on 16 pages, eight planned plates and four A3 duplex sheets
+at 12/17 pt. Text order, white backgrounds, geometry, rotations and pairs pass.
+Pages 6, 8, 12 and 14 and the innermost spread were rendered and inspected. No
+Issue 22 artwork is generated or approved. Exercise 33 is author-run, not a blind
+test. All 22 chapter layouts now have facing-text plans, but only Issues 1-3 have
+approved revised art; the complete illustrated edition is not finished.
 `CHAPTER_21_VOICE_REVIEW.md` corrects the public account of Lucía's first encounter:
 the audience imposed the role, both refused, and Q later named her in an interview.
 Negotiation now includes the component number, a chair, and the restored assessment;
