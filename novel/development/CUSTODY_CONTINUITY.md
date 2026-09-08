@@ -144,6 +144,23 @@ Chapter Seventeen still finds changed visitor arrangements and pending gate work
 
 ## Changes through the ending
 
+Chapter Eighteen gives Q one receiving-confirmation copy at Ana's office, not a
+second handover of the module or a new receipt at departure. The courier completed
+the module transfer earlier. Q sends the proposed visit passage to Ana's office
+contact before leaving; delivery is acknowledged, review and permission are still
+pending. The students' disputed football argument is excluded from that proposal.
+The publisher follow-up is drafted and shortened, not established as sent or as
+having removed all downloaded copies.
+
+The Mayab pickup error concerns the first message's superseded location. Q checks
+before boarding the tour vehicle; there is a local delay, not a wrong intercity
+journey. His first public correction links the agreed notice and says the station
+did not authorize the visit or sell tickets. Requests still reach it because it
+answers. The subsequent contact addition is practical help, not repair of a
+bad link. Noemí assigns and reviews replies. One passenger reports a company
+answer; no refund, all-message resolution or worldwide screenshot correction is
+established. The tour leaves before the later charging/coauthor call.
+
 Chapter Seventeen's reference check finds a missing drainage condition in one
 circulated version. This is not the missing consultation annex in Castalia's
 procurement reply. Bixha asks for the paragraph and corrected reference to be

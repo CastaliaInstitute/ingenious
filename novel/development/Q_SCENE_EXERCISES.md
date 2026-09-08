@@ -855,6 +855,41 @@ not merely the guardian of a category Q ought to understand already. The public
 correction's delivery and the book's eventual wording are not established by
 this exchange. Its outcome was authored with context, not independently elicited.
 
+## 29. The notice is right and the phone is ringing
+
+Date: 2026-09-08. Author-run with manuscript context, not a blind simulation or
+external faculty review. Only replies, actions and brief editorial conclusions
+are recorded; no hidden model reasoning is treated as evidence.
+
+**Packet:** Q has posted the station-approved correction, accurately describing
+his role and saying the station neither authorized the tour visit nor sold its
+tickets. Noemí reports refund demands. One passenger acknowledges the station
+did not sell her ticket but wants it to make the promoter answer. Q does not know
+whether the company will respond or whether further inquiries will stop.
+
+**Q reply/action:** "Has the guide reached her office?" Checks whether the person
+already handling the tour has a usable route to the operator. Does not defend
+the notice by repeating that it was accurate or promise to obtain refunds.
+
+**Authored world response:** Noemí says the office answers the guide. Together
+they check the complaints contact and required booking reference. Noemí approves
+an addition to the notice and identifies the replies she wants used.
+
+**Q action:** Adds the same information to his post and requests updates from
+accounts that shared it. Drafts replies only to assigned messages; Noemí reviews
+them before sending. Keeps the coauthor call but shortens it, moving to a nearer
+socket rather than ignoring charge while extending the work.
+
+**Authored consequence:** One passenger reports an answer from the company, not
+a refund. Three others ask to speak to Q. Helpful work does not necessarily close
+the demand that brought it about.
+
+**Editorial decision:** Competence can remain intact while altering the expected
+outcome. The prior contradictory wrong-link incident is removed, not preserved
+because the chapter supposedly needs Q to err again. This response was authored
+with context; its plausibility has not been independently tested with a fresh
+model. The earlier missed pickup attachment remains a separate, bounded mistake.
+
 ## Still to test
 
 The revised audience exchange at Lucía's reading; the Isthmus intervention;

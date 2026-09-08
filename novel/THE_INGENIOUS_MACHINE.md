@@ -9695,14 +9695,21 @@ seal. We have that.”
 the box. I said it would prove I could hold a box.”
 
 She offered coffee. Q accepted a small cup and asked
-whether it was sweetened. Ana said he would find out
-when he stopped asking questions long enough to drink.
+whether it was sweetened.
 
-It was sweeter than he preferred. He drank it slowly.
-He was developing tastes that were neither recommendations
-nor conclusions, a form of evidence he found difficult
-to explain without making coffee unbearable to everyone
-else. This time he confined himself to asking for water.
+“Already,” Ana said. “I can make another pot.”
+
+“Let me try this one before I become more work.”
+
+It was sweeter than he preferred. He asked for water
+and kept the cup. Ana moved the sugar bowl away from
+Marisol, who was reaching for it without looking.
+
+“Taste it first.”
+
+Marisol did. “Who made this?”
+
+“You did.”
 
 Ana had been a teacher and a radio operator. She still
 did some translation work, but declined jobs that paid
@@ -9723,10 +9730,17 @@ No one needed Q to offer a translation he could not verify.
 
 “Then put both halves in the next letter,” Ana replied.
 
-He drafted a short follow-up for their review. It did
-not contain a meditation on the impossibility of repair.
-It asked about the paragraph, the image attached to it,
-and a date for the amended edition. Ana made it shorter.
+He drafted a short follow-up for their review. It asked
+about the paragraph, the image attached to it, and a date
+for the amended edition. Ana crossed out his opening thanks
+for their careful attention.
+
+“They haven't paid it yet.”
+
+Q read the letter without the first sentence. “It gets
+there sooner.”
+
+“So might they.”
 
 Rain began again before they could leave. A local driver
 reported a fallen tree on the road they needed. Their
@@ -9836,20 +9850,29 @@ tickets. Darío wanted to know who had won.
 
 “The bus company,” Q said. “We both bought tickets.”
 
-Darío stayed until someone found his shoes. He had
-not come for grief counseling. He had wanted company
-while his brother was elsewhere, and for a while
-there had been company.
+Darío stayed until someone called that his shoes were
+dry enough. He went to look, returned carrying them,
+and sat down again.
 
-In the morning, the road reopened. Ana gave them the
-confirmed return receipt and a bag of bread. She also
-gave Q a plain card with her office contact on one
-side, for sending the proposed passage. The reverse
-was blank because she had nothing to print there.
+“They can have another five minutes.”
+
+In the morning, the road reopened. Ana gave them a bag
+of bread and a plain card with her office contact for
+the proposed passage. Q had drafted it before breakfast.
+He sent it there with a note asking her to mark what
+she wanted changed or left out. The football argument
+was still absent; its participants had not agreed.
+
+Ana checked that it had arrived. “I'll read it after
+the program. Don't wait here for an answer.”
+
+“I'll try to find something else to do.”
+
+“That hasn't been your difficulty.”
 
 The testimony stayed with its receiving keepers. Q
-left with the things he had actually been given,
-including the task of writing back.
+put the card in the repaired pocket and took his
+share of the bread.
 
 ### Interlude: The Count That Was Not an Apocalypse
 
@@ -9871,9 +9894,8 @@ against the remaining journey allowance. Lucía had
 a meeting of her own by telephone and made them
 stop discussing the book during it.
 
-The bus Q chose for the station visit was wrong only
-at the end. He had used the pickup point in the first
-message and missed the later attachment changing it.
+For the station visit, Q used the pickup point in the
+first message and missed the later attachment changing it.
 The vehicle at that point belonged to the tour.
 He checked with the driver before they boarded.
 They lost forty minutes finding the local service.
@@ -9942,8 +9964,11 @@ There was shade nearby; a shop sold water. The
 station's water tank was for the people using the
 building, not part of an all-inclusive excursion.
 Q helped move a bench at the owner's request, then
-returned for the interview. He could not repair
-the booking system by becoming a better attraction.
+returned for the interview. The guide asked him to
+wait for a group photograph.
+
+“They've put the weather on twice for me already,”
+he said. “You'll have to excuse me.”
 
 Yatzil joined them at the second microphone. She
 worked with the station on programming and had
@@ -10001,43 +10026,42 @@ Noemí signaled that his microphone was not on.
 Q repeated the question with permission. The
 answer was no. History retained this defect.
 
-Afterward Q posted a correction through his
-own account, linking the agreed station notice.
-He did not announce what all Maya people believed
-or apologize for an apocalypse claim he had
-not made. He identified the reused clip, his
-actual role, and the absence of station permission
-for the tour. He also wrote that he had initially
-used the wrong pickup instructions himself.
+Afterward Q posted a correction through his own
+account, linking the agreed station notice. He
+identified the reused clip and his actual role.
+The station had neither authorized the visit nor
+sold tickets. He wrote both things plainly, then
+added his own mistake about the pickup instructions.
 
-His first post linked directly to the station's
-general contact page. The next hour brought
-refund demands there, although the station had
-sold no tickets. Noemí called him back.
+The next hour brought refund demands to the station.
+Noemí called him back.
 
-“You've sent us the customers.”
+“They're reading your post.”
 
-Q checked the link. It explained the correction
-well and routed the next action badly. He had
-not asked what a disappointed passenger would
-do after reading it.
+“And asking you for the money?”
 
-He changed the post to the agreed notice with
-the promoter's verified complaints contact,
-removed the station's general address from his
-summary, and asked the accounts that had copied
-it to update theirs. Noemí gave him the brief
-reply they wanted sent to misdirected inquiries.
-He helped with those they authorized. The first
-post did not disappear from every screenshot.
+“One says she knows we didn't sell the ticket.
+She wants us to make the company answer.”
 
-“This isn't quite the correction of an error,”
-he told the Custodian that night. “It has grown
-another error of its own.”
+Q opened the post again. Its explanation was still
+correct. The station was also the one place in the
+story where someone had answered the telephone.
 
-“Does that make the original correction wrong?”
+“Has the guide reached her office?” he asked.
 
-“No. It makes the afternoon longer.”
+“Twice. They answer her.”
+
+With the guide, they checked the promoter's complaints
+contact and the booking reference its staff needed.
+Noemí approved a short addition to the notice. Q added
+the same information to his post and asked the accounts
+that had shared it to include the update.
+
+Noemí showed him the reply the station wanted used
+for these inquiries. He drafted answers to the messages
+she assigned him; she checked them before they went out.
+One passenger wrote back to say the company had replied.
+Three others asked again whether they could speak to Q.
 
 The guide eventually obtained a changed route
 from her office. Some passengers bought drinks;
@@ -10055,11 +10079,22 @@ improved the jaguar. Her mother took a picture
 for the family, having asked the other people
 in the frame to move if they preferred.
 
+“My correction has become customer service,” Q told
+the Custodian that night.
+
+“Are you charging?”
+
+“Not enough to keep up with it.”
+
+He moved to the socket nearer the desk and sent Noemí
+the last reply for review. They shortened the writing
+call, but kept it.
+
 Noemí gave Q the correct departure schedule.
 He checked the date, stop, and service with
 her, then saved it where he would actually
-look in the morning. Paper was not sacred;
-neither was the first message in a long thread.
+look in the morning. Chano put a reminder
+about breakfast immediately above it.
 
 At the gate, Yatzil asked whether he had found
 an ending for the book.

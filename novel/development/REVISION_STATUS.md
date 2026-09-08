@@ -181,8 +181,9 @@ the book.” The source now permits Q to remain alive when the writing stops.
   text, and accept coffee without an elementary lesson in metaphor.
 - The Mayab visit is deliberate, at Noemí's invitation. A missed pickup update
   causes a local delay, not an impossible cross-country bus mistake. Q retains
-  his Book One calendar knowledge. His factual correction sends refund demands
-  to the wrong contact, giving him a plausible new error to repair.
+  his Book One calendar knowledge. The later voice pass removes the contradictory
+  bad-link incident: his accurate notice still brings demands to the station
+  because it answers. Q helps with Noemí's assigned replies and a checked contact.
 - Chapter 19 preserves the Custodian's authorized release and distinguishes
   his hopes from Q's agreed project. It restores actual preservation benefits
   alongside his institutional compromises. The letters recollection does not
@@ -260,8 +261,19 @@ the book.” The source now permits Q to remain alive when the writing stops.
 ## Required next work
 
 Current checkpoint: the second whole-chapter voice pass is complete through
-Chapter Seventeen; continue with Chapter Eighteen. Earlier chapter-by-chapter
+Chapter Eighteen; continue with Chapter Nineteen. Earlier chapter-by-chapter
 continuation notes below are a history of this pass, not the latest queue.
+`CHAPTER_18_VOICE_REVIEW.md` and Exercise 29 replace explanatory coffee and
+company passages with exchanges: Marisol made the sweet pot; Darío returns with
+his shoes. Q sends Ana the proposed passage before departure; her review remains
+pending and the football argument is excluded. The radio notice stays accurate.
+Q helps with the resulting inquiries, keeps a shortened writing call and charges.
+The first pickup mistake remains a missed attachment caught before boarding.
+Issue 18 contains 3,033 words on 20 pages, ten planned plates and five A3 duplex
+sheets at 12.85/18.2042 pt. Exact words, white backgrounds, dimensions, rotation
+and nested pairs pass; pages 4, 10 and 18 and the innermost spread were inspected.
+The source-bound artwork remains planned, not generated. Exercise 29 is author-
+run, not independent validation or external faculty review. No printing occurred.
 `CHAPTER_17_VOICE_REVIEW.md` and Exercise 28 replace two forced mistakes with
 a travel tradeoff and a useful check of mismatched handout versions. Q offers
 the book draft separately; Bixha's objection concerns its account of life between
