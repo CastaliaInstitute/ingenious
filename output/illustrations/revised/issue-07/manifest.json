@@ -1,26 +1,55 @@
 {
   "issue": 7,
-  "revision": "2026-09-08-mexico-city-sequence",
+  "revision": "2026-09-08-illustrated-city",
   "source": "novel/THE_INGENIOUS_MACHINE.md",
   "chapter_sha256": "c1b805d3bb82410dac0f427fac3930b2bcb14d6f644f8f8d5a26ff818a375ebd",
   "page_count": 44,
   "text_font": "Georgia 12.3/17.425 pt",
   "plate_count_including_cover": 22,
-  "status": "planned; no new Issue 7 images generated or approved",
+  "status": "verified illustrated revision proof; not a press master",
+  "proof_outputs": {
+    "reading": {
+      "path": "output/pdf/ingenious-issue-07-revised-en-bw.pdf",
+      "sha256": "35262ef6e7cba935aea60b0a8877d4db70166a399db68e6e26dc476c9d154c5e",
+      "pages": 44
+    },
+    "a3": {
+      "path": "output/pdf/ingenious-issue-07-revised-en-bw-a3.pdf",
+      "sha256": "22da488c1cdf9dd375b39ef741875e3b334784b55e6cfb0fec4138472f9d019a",
+      "sides": 22,
+      "duplex_sheets": 11,
+      "orientation": "landscape",
+      "duplex": "short edge, actual size"
+    },
+    "verification": "All 7139 source words in column order; all 44 reading pages visually reviewed; all booklet pairs structurally checked; A3 sides 1, 2 and 22 visually reviewed; unpainted text backgrounds; 22 lossless DeviceGray images; embedded fonts. No physical print test."
+  },
   "character_reference": "output/illustrations/revised/issue-01/cover.png",
   "chano_reference": "output/illustrations/revised/issue-03/plate-06.png",
   "wardrobe": "Q retains the fitted sponsor jacket with its silver question mark and the established segmented oval head, ears, neck, long articulated limbs and breastplate. Lucía's green jacket is rendered grayscale. Chano briefly leaves his own jacket as a chair deposit and recovers it before the university scene.",
   "secondary_character_design": "Match the existing Lucía and Chano references before generation. Establish distinct Ofelia, student reader, Nadia Hernández, Noemí Canché, Amalia, Yunuén, Doña Pati, Ivonne Ríos and university cleaner Maribel. The cleaner is not automatically Maribel from Santa Rita. The Custodian remains tall, male, long gray hair tied back, glasses, work shirt and boots; no invented visible video call where the text only gives a phone conversation.",
   "art_direction": "Unique exact-facing scene; neutral monochrome Goya-inspired etched realism, pure white highlights, no sepia paper wash. Full bleed at comic trim; captions separately typeset. Contemporary Mexico City, local work and crowds; no historical costume for living Mexican characters. Verify Sun Stone gallery composition from the primary reference recorded in REVISION_RESEARCH.md before image generation. Invented events are not claims about actual institutions.",
-  "approval_scope": "Source-bound pagination and scene plan only. Mexico City sequence revised: museum, records office, translation workshop, university, final corporate offer and departure choice. No approved images or final illustrated Issue 7 PDF. Rebind after source changes; reject missing or stale assets rather than recycling earlier plates.",
+  "approval_scope": "Scene and principal-character review; exact facing-text and source blocks retained. Native art approximately 150 dpi. Not an archaeological facsimile or a verified real-world room plan.",
   "plates": [
     {
       "plate_id": "issue-07-cover",
       "page": 1,
       "asset": "output/illustrations/revised/issue-07/cover.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The City That Has Read Them",
-      "scene_brief": "Q among passengers on the Mexico City Metro, his face reflected faintly in the window while someone nearby reads an ordinary paperback. Chano and Lucía remain recognizable in the carriage. Public attention is divided, not universally fixed on Q. Leave quiet upper space for separately typeset cover title."
+      "scene_brief": "Q among passengers on the Mexico City Metro, his face reflected faintly in the window while someone nearby reads an ordinary paperback. Chano and Lucía remain recognizable in the carriage. Public attention is divided, not universally fixed on Q. Leave quiet upper space for separately typeset cover title.",
+      "asset_sha256": "b4d7dd8c15ef99e5f68af39dc86108a881e296aedb7ddbb3720667e86d2ede0c",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_trim": 149.85,
+      "generation_prompt": "Use case: illustration-story. NEW portrait full-page 2:3 Goya-inspired black-and-white etching and aquatint for The Ingenious Machine, contemporary near-future Mexico. Fine crisp crosshatching, humane observed gestures, pure white highlights; no sepia, cream paper texture, border, lettering, captions or watermarks. Full bleed; keep essential faces/hands above bottom 6%. Highest available native resolution. Input 1 supplies Q and Chano identity ONLY: exact elongated segmented oval head, circular ears, narrow mechanical neck, slender long articulated limbs, question-mark breastplate, fitted SHORT dark sponsor jacket with small silver ? lapel; never old ragged coat. Chano stocky, middle-aged, dark wavy hair and mustache, practical shirt and trousers; dark contemporary jacket only where specified. Input 2 where supplied is Lucía identity ONLY: central young woman leaning over map, dark loosely tied hair, practical green field jacket (rendered gray); no romance. Never copy old poses/backgrounds. Draw only people required by scene.\nScene: Q among passengers on the Mexico City Metro, his face reflected faintly in the window while someone nearby reads an ordinary paperback. Chano and Lucía remain recognizable in the carriage. Public attention is divided, not universally fixed on Q. Leave quiet upper space for separately typeset cover title. Upper 22% quiet PURE WHITE train ceiling/light with NO bars or fixtures behind separately added title. Composition intimate side-profile Q and seated reader in lower portion, distinct from interior plate2.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-06/plate-09.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-03/cover.png"
+      ],
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-e961eb2a-e04f-4333-9285-d151ba3a43e4.png",
+      "review_scope": "Visual scene/identity review for revision proof; not press-resolution approval."
     },
     {
       "plate_id": "issue-07-plate-01",
@@ -46,10 +75,31 @@
       ],
       "facing_text": "Chapter Seven: The City\nThat Has Read Them\nMexico City received Q with a\ncredential.\nIt was a laminated rectangle with\nhis photograph, his legal\nclassification, a QR code, and the\nwords NONHUMAN\nCULTURAL ASSET printed\nbeneath a hologram of the Castalia\nInstitute. The credential allowed\nhim to enter certain buildings, cross\ncertain checkpoints, and speak at\nevents where the audience had\nalready been told what his remarks\nwould mean.\nChano turned the credential over.\n“Does this get us breakfast?”\n“Only entry to the building where\nthey might serve it.”\n“You should have negotiated the\nother way round.”\nThey arrived by bus at the northern\nterminal before dawn. The city was\nstill mostly dark, though the towers\nhad begun to light their windows\none square at a time. Above the\navenue, advertisements floated in\nthe morning haze: health, credit,\nsecurity, education, memory. Each\npromised to remove a burden from\nthe citizen. Each required the\ncitizen to surrender a different piece\nof himself.\nLucía met them beside a coffee\nstand. She wore the same green\njacket as in Querétaro and carried\nthree paper folders inside a plastic\nbag. Her face had appeared\neverywhere since the Guanajuato\nbroadcast. Strangers recognized\nher, misquoted her, thanked her for\nrejecting Q, and asked whether she\nwas secretly in love with him.\n“I'm here for the records,” she said.\n“Not to join the tour.”\n“Have they given you an\nappointment?” Chano asked.\n“Three. None at the office that says\nit holds the originals.”\n“Would it help if I came?” Q asked.\n“At the ministry, perhaps. If they\nask about the petition, answer that\nquestion. Don't announce what the\nrest of us are doing.”\nLucía opened one folder. Inside\nwere transcripts of interviews,\nletters, photographs, and a list of\nnames with dates beside them. The\npages were arranged carefully but\nnot uniformly. Some had been\nscanned; others showed creases and\nfingerprints.\nOne page bore an amber stamp:\nPETITION STATUS:\nSUSPICIOUS.\nQ recognized it. “My address.”\n",
       "asset": "output/illustrations/revised/issue-07/plate-01.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Breakfast is not included.",
       "scene_anchor": "Chano turned the credential",
-      "scene_brief": "Before dawn at the northern bus terminal coffee stand, Chano turns over Q's laminated credential while Lucía keeps three folders in their plastic bag. Q's sponsor jacket and established head remain. Early commuters and ordinary paper cups, not a futuristic fantasy skyline."
+      "scene_brief": "Before dawn at the northern bus terminal coffee stand, Chano turns over Q's laminated credential while Lucía keeps three folders in their plastic bag. Q's sponsor jacket and established head remain. Early commuters and ordinary paper cups, not a futuristic fantasy skyline.",
+      "asset_sha256": "9fb48ed0761b76c1d5227582f1821afe96373a840128643fc728f0f57aef85e3",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_trim": 149.85,
+      "generation_prompt": "Use case: illustration-story. NEW portrait full-page 2:3 Goya-inspired black-and-white etching and aquatint for The Ingenious Machine, contemporary near-future Mexico. Fine crisp crosshatching, humane observed gestures, pure white highlights; no sepia, cream paper texture, border, lettering, captions or watermarks. Full bleed; keep essential faces/hands above bottom 6%. Highest available native resolution. Input 1 supplies Q and Chano identity ONLY: exact elongated segmented oval head, circular ears, narrow mechanical neck, slender long articulated limbs, question-mark breastplate, fitted SHORT dark sponsor jacket with small silver ? lapel; never old ragged coat. Chano stocky, middle-aged, dark wavy hair and mustache, practical shirt and trousers; dark contemporary jacket only where specified. Input 2 where supplied is Lucía identity ONLY: central young woman leaning over map, dark loosely tied hair, practical green field jacket (rendered gray); no romance. Never copy old poses/backgrounds. Draw only people required by scene.\nScene: Before dawn at the northern bus terminal coffee stand, Chano turns over Q's laminated credential while Lucía keeps three folders in their plastic bag. Q's sponsor jacket and established head remain. Early commuters and ordinary paper cups, not a futuristic fantasy skyline.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-06/plate-09.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-03/cover.png"
+      ],
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-40e51e41-e339-4c39-a6de-a0b9052b9cf9.png",
+      "review_scope": "Visual scene/identity review for revision-proof insertion, not press-resolution approval.",
+      "edits": [
+        {
+          "original_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-145eb052-b446-4867-b0df-c391f3171b0a.png",
+          "prompt": "Use case: precise-object-edit. Make only two corrections to this monochrome etching, preserving every character identity, pose, cup, credential, lighting, station and framing. (1) Replace the top-right bus-station sign text with exactly CENTRAL DEL NORTE in two lines, preserving the bus pictogram. It is Mexico City's northern terminal, NOT Querétaro. No other place name. (2) Change Lucía's dark fabric document bag into a simple semi-transparent plastic carrier bag around exactly three paper folders; keep both her hands and the folders' placement. Pure black-and-white, no sepia, no borders, no added text.",
+          "selected_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-40e51e41-e339-4c39-a6de-a0b9052b9cf9.png",
+          "result": "Corrected specified scene elements; selected after visual inspection."
+        }
+      ]
     },
     {
       "plate_id": "issue-07-plate-02",
@@ -81,10 +131,31 @@
       ],
       "facing_text": "“The system flagged every signature\nin the batch,” Lucía said.\n“The Custodian sent the address\nconfirmation. Did they accept it?”\n“They attached it to the flagged file.\nThey haven't released the batch.”\n“These are testimonies Castalia\nremoved from its public catalog,”\nshe said. “The families asked me to\nfind out where they went. Three\ndepartments have answered, and\neach has sent me to one of the other\ntwo.”\nShe moved her coffee away from a\nfolded letter. “That one came back\nwith a brochure about access.”\nQ pointed to two dates beside one\nname. “Do these refer to the\ninterview and the catalog entry?”\n“They should. The catalog puts the\nentry six months before the\ninterview.”\n“Then we need the earlier version,\nnot a correction to this sheet.”\n“That's the second appointment.”\nShe closed the folder. Chano\nfinished his coffee.\n“Where do we go first?”\n“The Ministry of Culture,” Lucía\nsaid. “They have the grant records.”\n“Then the university.”\n“And after that?”\n“The corporation wants us at the\nend of the week.”\nQ brightened. “This resembles a\nquest.”\n“It resembles errands,” Lucía said.\n“Errands are quests with inferior\npublicity.”\nThey took the Metro. Q's credential\nopened the turnstile under\nCastalia's transport arrangement.\nChano bought a transit card. Lucía's\nhad a chipped corner; she held it\nagainst the reader until it\nregistered, then waved them\nthrough before Q could offer to\ninvestigate the delay.\nInside the train, a boy stared at Q’s\nface. His mother pulled him closer.\nA man in a suit photographed the\nsilver question mark on Q’s jacket.\nTwo students argued about whether\nQ had a soul. One said souls were\nbourgeois. The other said that was\nexactly what a soul would want\npeople to believe.\nIn the station plaza, bells\nannounced a procession toward a\ntemporary altar of the Virgin of\nGuadalupe. Beside the candles,\nmothers held photocopies of\nmissing daughters beneath a\nhand-painted sign: NO ESTÁN\nSOLAS.\nQ recognized the Virgin from\npaintings, prayers, calendars, and\n",
       "asset": "output/illustrations/revised/issue-07/plate-02.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Three appointments.",
       "scene_anchor": "Inside the train",
-      "scene_brief": "Inside the Metro train, Q and Chano accompany Lucía with her chipped transit card and bag of folders; a boy watches Q while commuters continue their own conversations. No researcher reading confidential papers over her shoulder. This is public transport, not a knight's entry into the capital."
+      "scene_brief": "Inside the Metro train, Q and Chano accompany Lucía with her chipped transit card and bag of folders; a boy watches Q while commuters continue their own conversations. No researcher reading confidential papers over her shoulder. This is public transport, not a knight's entry into the capital.",
+      "asset_sha256": "d614529194cdf5da9d13e996d10bcecdc2e81f71f503245c1a9b63e6d6837a82",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_trim": 149.85,
+      "generation_prompt": "Use case: illustration-story. NEW portrait full-page 2:3 Goya-inspired black-and-white etching and aquatint for The Ingenious Machine, contemporary near-future Mexico. Fine crisp crosshatching, humane observed gestures, pure white highlights; no sepia, cream paper texture, border, lettering, captions or watermarks. Full bleed; keep essential faces/hands above bottom 6%. Highest available native resolution. Input 1 supplies Q and Chano identity ONLY: exact elongated segmented oval head, circular ears, narrow mechanical neck, slender long articulated limbs, question-mark breastplate, fitted SHORT dark sponsor jacket with small silver ? lapel; never old ragged coat. Chano stocky, middle-aged, dark wavy hair and mustache, practical shirt and trousers; dark contemporary jacket only where specified. Input 2 where supplied is Lucía identity ONLY: central young woman leaning over map, dark loosely tied hair, practical green field jacket (rendered gray); no romance. Never copy old poses/backgrounds. Draw only people required by scene.\nScene: Inside the Metro train, Q and Chano accompany Lucía with her chipped transit card and bag of folders; a boy watches Q while commuters continue their own conversations. No researcher reading confidential papers over her shoulder. This is public transport, not a knight's entry into the capital.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-06/plate-09.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-03/cover.png"
+      ],
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-0117dec5-580f-4859-9047-0f421dcd8825.png",
+      "review_scope": "Visual scene/identity review for revision-proof insertion, not press-resolution approval.",
+      "edits": [
+        {
+          "original_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-b95779d9-576c-4d66-82f1-7b151ca93f05.png",
+          "prompt": "Use case: precise-object-edit. Change ONLY the view through every train window in this black-and-white etching: replace the impossible Querétaro aqueduct and cathedral landscape with a dark underground Mexico City Metro tunnel, with faint honest reflections of the adjacent passengers. No landmarks, daylight landscape or station lettering visible. Preserve every person, Q's exact robot head and body and fitted jacket, all gestures, poles, train interior, bag and folders, paper card, framing and fine etched style unchanged. Full bleed, pure white highlights, no beige wash.",
+          "selected_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-0117dec5-580f-4859-9047-0f421dcd8825.png",
+          "result": "Corrected specified scene elements; selected after visual inspection."
+        }
+      ]
     },
     {
       "plate_id": "issue-07-plate-03",
@@ -112,10 +183,23 @@
       ],
       "facing_text": "the windshields of vehicles in which\ndrivers had entrusted her with\nconsiderable responsibility. He\nstopped at the edge of the\nprocession. A woman beside the\ncandles held a list that the wind\nkept folding over her hand.\n“Can you read these out?” she asked\nhim. “The loudspeaker isn't\nreaching this side.”\n“Of course. Tell me if I get a name\nwrong.”\nShe gave him the page but asked\nhim not to copy it. He checked that\nhis recorder was off and read the\nnames she indicated. Once she\ncorrected a surname. He repeated it\nbefore continuing.\nThe woman was Ofelia. She had\nused the back of a school attendance\nsheet because it was ruled and\nbecause her daughter had once\npracticed her signature on a sheet\nfrom the same pad. Q held it flat\nwhile she found the next line.\n“My daughter had three names,” she\nsaid afterward.\nHe waited.\n“The school used one. Her\ngrandmother used another. The\ngovernment wrote a third on the\nreport.”\n“Is the report wrong?”\n“Yes. The other two she answered to\nwhen she wanted something.”\nShe smiled briefly and rubbed a\nthumb over the ruled edge of the\npage.\nThe procession was running late. A\nboy sold paper flowers near the\nsteps; his mother sent him farther\nfrom the women holding\nphotographs. A man tried to light a\ncandle from another candle without\ndropping the wax on his sleeve. Q\ncupped a hand around the flame\nuntil it caught.\nOfelia pointed to a mark on the\nsheet. “That family asked to correct\nthe date. The new record made\nthem easier to find. People started\ncoming to the house with cameras.”\nQ thought of the employment card\nattached to Chano's name. “We\nmade a correction that did\nsomething like that. I didn't check\nwhat the platform would connect.”\n“Did you get it removed?”\n“From the page we controlled.\nOther versions stayed.”\n“They always call it the version.”\nShe took the list back. Q kept no\nimage of it. His journal would retain\nthat he had been asked to read at\nthe procession; it did not need the\nattendance sheet or the private\nmarks beside its names.\n",
       "asset": "output/illustrations/revised/issue-07/plate-03.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The next name.",
       "scene_anchor": "wind kept folding",
-      "scene_brief": "At the edge of the procession, Q holds Ofelia's ruled sheet steady against the wind and reads while she indicates the next line. Candles and people holding photographs remain an ordinary contemporary vigil. No recording camera or generated legible private names."
+      "scene_brief": "At the edge of the procession, Q holds Ofelia's ruled sheet steady against the wind and reads while she indicates the next line. Candles and people holding photographs remain an ordinary contemporary vigil. No recording camera or generated legible private names.",
+      "asset_sha256": "278277331f84ec01c7ab8541c11badfde8c28ff360cf2bfbfa9b9c823bd158ab",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_trim": 149.85,
+      "generation_prompt": "Use case: illustration-story. NEW portrait full-page 2:3 Goya-inspired black-and-white etching and aquatint for The Ingenious Machine, contemporary near-future Mexico. Fine crisp crosshatching, humane observed gestures, pure white highlights; no sepia, cream paper texture, border, lettering, captions or watermarks. Full bleed; keep essential faces/hands above bottom 6%. Highest available native resolution. Input 1 supplies Q and Chano identity ONLY: exact elongated segmented oval head, circular ears, narrow mechanical neck, slender long articulated limbs, question-mark breastplate, fitted SHORT dark sponsor jacket with small silver ? lapel; never old ragged coat. Chano stocky, middle-aged, dark wavy hair and mustache, practical shirt and trousers; dark contemporary jacket only where specified. Input 2 where supplied is Lucía identity ONLY: central young woman leaning over map, dark loosely tied hair, practical green field jacket (rendered gray); no romance. Never copy old poses/backgrounds. Draw only people required by scene.\nScene: At the edge of the procession, Q holds Ofelia's ruled sheet steady against the wind and reads while she indicates the next line. Candles and people holding photographs remain an ordinary contemporary vigil. No recording camera or generated legible private names. Establish Ofelia as an older Mexican woman with weathered oval face, dark graying braid, plain cardigan and practical tote. No invented actual missing-person portraits in background; indistinct photos held respectfully.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-06/plate-09.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-03/cover.png"
+      ],
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-779817bf-67ed-43eb-8934-5f70d4544943.png",
+      "review_scope": "Visual scene/identity review for revision proof; not press-resolution approval."
     },
     {
       "plate_id": "issue-07-plate-04",
@@ -144,10 +228,22 @@
       ],
       "facing_text": "At the altar, the priest invited the\nmothers to place their photographs\nbeneath the image of the Virgin.\nOfelia kept hers in her hand. A\ncorner had been torn away, leaving\nher daughter squinting into sunlight\nbeside an empty edge.\n“She tore it herself,” Ofelia said.\n“She'd fallen out with the boy beside\nher. She liked how she looked too\nmuch to throw the whole thing\naway.”\n“Did they make it up?”\n“By Sunday. He wanted his half\nback.”\nQ looked at the edge again. Ofelia\nstraightened the photograph against\nthe list. “She told him to take\nanother one.”\n“How old was she there?” he asked.\nOfelia told him. Then the bells\nbegan, and she asked him to hold\nher bag while she read the names\nagain. When she finished, he\nreturned it. She joined the\nprocession, looking back once to\nmake sure the woman behind her\nhad room.\nAt the ministry, they waited three\nhours beneath a mural showing a\nfamily reading together. The family\nhad no visible arguments, debts, or\ndeceased members. An official\nnamed Sergio Valadez received\nthem in an office with two screens:\none for ministry work and one for\nthe public image of ministry work.\n“Ms. del Toboso,” he said, “your\nrequest is under review.”\n“It has been under review for eleven\nmonths.”\n“The review has encountered\nprocedural complexity.”\n“The people in these testimonies\nhave been waiting longer than that.”\nSergio looked at Q. “And this is the\nasset?”\n“I am Q.”\n“Yes, of course. We are proud of our\nnational innovation partnerships.”\n“I'm one of the petition's\nsignatories,” Q said. “Has the\naddress confirmation cleared, or is\nit still holding up the other\nsignatures?”\nSergio found the confirmation. It\nhad been received and sent to\nanother unit. He gave them that\nunit's reference before returning to\nthe matter he could not presently\nadvance.\nLucía placed the folders on his desk.\n“And the grant records?”\nSergio named privacy law,\nintellectual property, and\nauthentication requirements. Lucía\nsupplied the family requests and the\ncatalog notices she had received.\nThe entries were gone from public\n",
       "asset": "output/illustrations/revised/issue-07/plate-04.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "His half of the picture.",
       "scene_anchor": "He wanted his half back",
-      "scene_brief": "Intimate portrait of Ofelia holding the torn photograph against the list while Q listens to her memory. Her daughter's picture shows a young woman squinting in daylight with an absent edge. Do not depict the daughter as a ghost, saint or abstract emblem of consent."
+      "scene_brief": "Intimate portrait of Ofelia holding the torn photograph against the list while Q listens to her memory. Her daughter's picture shows a young woman squinting in daylight with an absent edge. Do not depict the daughter as a ghost, saint or abstract emblem of consent.",
+      "asset_sha256": "5847e2e822167fc854a65ddd58f38ee1a7af20c924ede8f4086b234561b3bfd0",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_trim": 149.85,
+      "generation_prompt": "Use case: illustration-story. New full-bleed portrait 2:3 Goya-inspired neutral black-and-white etching. Input1 is Q and Ofelia identity reference only, not a composition. CLOSE INTIMATE view from just over Q's metal shoulder: Ofelia, same older face, graying braid and cardigan, holds a small old photograph against a ruled sheet. The photograph shows a young woman squinting in daylight; one side of photo is TORN OFF where a former boyfriend was removed, not a hole through her face. Q listens. Only Ofelia and partial Q in composition, indistinct candles at edge; no Chano close-up, ghost, saint, or dramatic weeping. Keep hands and photograph large enough to read the torn shape, above bottom6%. Pure white highlights, no sepia, no invented legible names or captions. Intimate portrait of Ofelia holding the torn photograph against the list while Q listens to her memory. Her daughter's picture shows a young woman squinting in daylight with an absent edge. Do not depict the daughter as a ghost, saint or abstract emblem of consent.",
+      "reference_images": [
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-779817bf-67ed-43eb-8934-5f70d4544943.png"
+      ],
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-1c69d8eb-797a-45c7-9473-fd2e898168fd.png",
+      "review_scope": "Visual scene and character continuity review for revision proof; not press-resolution approval."
     },
     {
       "plate_id": "issue-07-plate-05",
@@ -177,10 +273,23 @@
       ],
       "facing_text": "search. That was what she could\nshow; the whereabouts of the\noriginals were what she had come to\nask.\nSergio touched a control. Q’s\ncredential changed from green to\namber.\nACCESS STATUS: UNDER\nREVIEW.\nThe ministry's security system\nasked Q to remain seated. Q looked\nat Lucía. She tapped twice on the\nfolder: wait. He stayed while she\ncollected the papers. A red light\nabove Sergio's public-image screen\ncame on.\n“Is that recording this\nappointment?” Lucía asked.\n“The public portion.”\nShe closed the last folder. “You\nhaven't asked which portion that is.”\nChano stood. “We’re leaving.”\n“Your appointment is not\ncomplete,” Sergio said.\n“Neither is the country.”\nThey left before the system could\ndecide whether leaving constituted\ndisobedience.\nAt the university, a professor of\ncomputational humanities invited Q\nto a seminar. A student asked\nwhether he could write a better\nQuixote than Cervantes.\n“What would you like improved?” Q\nasked.\n“The interruptions.”\n“I could remove them. We might\ndiscover that the interruptions were\ndoing some of the work.”\nThe professor asked about factual\nerrors. Q offered to identify\ndisputed ones, provided the\nseminar wanted an annotated\nedition. A student in the back said\nshe wanted a novel she could finish\non the bus.\n“That is a different commission,” Q\nsaid. “And a respectable one.”\nThe professor brought up Pierre\nMenard. Q knew the story: the\nambition to arrive at passages of the\nQuixote through another writer's\ncircumstances, with the same words\nacquiring another history. He also\nknew that a seminar could spend its\nwhole allotted time deciding how\nliterally to take the ambition.\n“Are you trying to do that?” the\nstudent asked.\n“The Custodian and I began with a\nsentence about a place whose name\nwas missing. It was a joke. Then I\nneeded an address a form would\naccept. I could find my way home;\nthat wasn't what it asked. We\nhaven't changed the sentence yet. It\nis becoming harder to say it in the\nsame tone.”\n",
       "asset": "output/illustrations/revised/issue-07/plate-05.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The public portion.",
       "scene_anchor": "The public portion",
-      "scene_brief": "At Sergio's office, Lucía closes her folder as the public-image recording indicator comes on; Q remains seated for her to gather the papers and Chano stands to leave. Two distinct work/publicity screens. No guard seizing Q or invented permanent detention."
+      "scene_brief": "At Sergio's office, Lucía closes her folder as the public-image recording indicator comes on; Q remains seated for her to gather the papers and Chano stands to leave. Two distinct work/publicity screens. No guard seizing Q or invented permanent detention.",
+      "asset_sha256": "5b356a39c6c9015c225acbb977d6a60fba00e8e4e2517ca5cc03e880de7c5e10",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_trim": 149.85,
+      "generation_prompt": "Use case: illustration-story. NEW portrait full-page 2:3 Goya-inspired black-and-white etching and aquatint for The Ingenious Machine, contemporary near-future Mexico. Fine crisp crosshatching, humane observed gestures, pure white highlights; no sepia, cream paper texture, border, lettering, captions or watermarks. Full bleed; keep essential faces/hands above bottom 6%. Highest available native resolution. Input 1 supplies Q and Chano identity ONLY: exact elongated segmented oval head, circular ears, narrow mechanical neck, slender long articulated limbs, question-mark breastplate, fitted SHORT dark sponsor jacket with small silver ? lapel; never old ragged coat. Chano stocky, middle-aged, dark wavy hair and mustache, practical shirt and trousers; dark contemporary jacket only where specified. Input 2 where supplied is Lucía identity ONLY: central young woman leaning over map, dark loosely tied hair, practical green field jacket (rendered gray); no romance. Never copy old poses/backgrounds. Draw only people required by scene.\nScene: At Sergio's office, Lucía closes her folder as the public-image recording indicator comes on; Q remains seated for her to gather the papers and Chano stands to leave. Two distinct work/publicity screens. No guard seizing Q or invented permanent detention. Sergio middle-aged clean-shaven man, rectangular glasses, neat suit, behind desk. Q must remain seated; Lucía closes folders.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-06/plate-09.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-03/cover.png"
+      ],
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-7ac62411-7cb6-42d5-a888-cc59c44ca58f.png",
+      "review_scope": "Visual scene/identity review for revision proof; not press-resolution approval."
     },
     {
       "plate_id": "issue-07-plate-06",
@@ -212,10 +321,31 @@
       ],
       "facing_text": "“So experience improves the book?”\n“Sometimes it improves the excuse\nfor keeping a bad sentence. We still\nhave to revise.”\nSomeone laughed. Q was relieved to\nhear amusement without applause.\n“Could you have written the journey\nwithout taking it?” the professor\nasked.\n“A journey. It would have had fewer\nbroken appointments and rather too\nmany people who existed to answer\nmy questions.”\nThe student in the back looked up.\n“That sounds like a seminar.”\nQ smiled. “I was trying to be polite\nabout the resemblance.”\nThe professor asked for an example\nfrom the records appointments. Q\nglanced at Lucía, who had come in\nlate and was standing beside the\ndoor.\n“Those requests aren't mine to\ndiscuss. Let me use the sentence we\nbegan with.”\nHe put the opening on the screen,\nwith its missing name and its\nconfident announcement of\nAmealco a few lines later.\n“You do tell us where it is,” the\nstudent in the back said.\n“Approximately. The joke has better\ndirections than my official address.”\n“Why not ask somebody who lives\nthere?”\n“We say that too. Just after failing to\ndo it.”\nShe read the next line and laughed.\nThe professor began explaining the\nnarrator's unreliability. She held up\na finger; she had not finished the\npage. For half a minute nobody\nexplained anything, and Q watched\nsomeone read his book without\nbeing obliged to praise it.\nBy afternoon the clip carried the\ncaption THE MACHINE\nDISCOVERS ART. The published\nexample was the opening, not a\nreference to Lucía's investigation.\nIn the courtyard the student asked\nfor ten pages to try on her bus\njourney. Q offered to send the whole\ndraft.\n“Ten,” she said. “I have other things\nto carry.”\nHe sent ten. She checked that the\nfile opened before putting her\nphone away. Lucía had bought a\ntorta and was trying to open a\npacket of salsa without putting the\nfolders down. He held the bag while\nshe did it.\n“Did you get your second\nappointment?” he asked.\n“Moved to tomorrow.”\n“I'm sorry.”\n",
       "asset": "output/illustrations/revised/issue-07/plate-06.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "She had not finished the page.",
       "scene_anchor": "she had not finished the page",
-      "scene_brief": "The student reads Q's projected opening and raises a finger to pause the professor's explanation. Q watches her reading rather than performing; Lucía stands beside the door. The projected page is Q's opening, never a grant file or private investigation. Caption separately typeset; do not rely on generated prose."
+      "scene_brief": "The student reads Q's projected opening and raises a finger to pause the professor's explanation. Q watches her reading rather than performing; Lucía stands beside the door. The projected page is Q's opening, never a grant file or private investigation. Caption separately typeset; do not rely on generated prose.",
+      "asset_sha256": "45c20255971be29d2b5d0b1d101f697f26b6effaeec9b9b1f211ecb162df4777",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_trim": 149.85,
+      "generation_prompt": "Use case: illustration-story. NEW portrait full-page 2:3 Goya-inspired black-and-white etching and aquatint for The Ingenious Machine, contemporary near-future Mexico. Fine crisp crosshatching, humane observed gestures, pure white highlights; no sepia, cream paper texture, border, lettering, captions or watermarks. Full bleed; keep essential faces/hands above bottom 6%. Highest available native resolution. Input 1 supplies Q and Chano identity ONLY: exact elongated segmented oval head, circular ears, narrow mechanical neck, slender long articulated limbs, question-mark breastplate, fitted SHORT dark sponsor jacket with small silver ? lapel; never old ragged coat. Chano stocky, middle-aged, dark wavy hair and mustache, practical shirt and trousers; dark contemporary jacket only where specified. Input 2 where supplied is Lucía identity ONLY: central young woman leaning over map, dark loosely tied hair, practical green field jacket (rendered gray); no romance. Never copy old poses/backgrounds. Draw only people required by scene.\nScene: The student reads Q's projected opening and raises a finger to pause the professor's explanation. Q watches her reading rather than performing; Lucía stands beside the door. The projected page is Q's opening, never a grant file or private investigation. Caption separately typeset; do not rely on generated prose. Student adult young Mexican woman short straight dark bob, ordinary striped shirt, reading before speaking; professor older bearded man tweed jacket, halts his gesture.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-06/plate-09.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-03/cover.png"
+      ],
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-8e2914bf-745b-46f0-8ebc-45fbed673372.png",
+      "review_scope": "Visual scene and character continuity review for revision proof; not press-resolution approval.",
+      "edits": [
+        {
+          "original_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-159a4f9e-46fe-47d9-9546-72e8445996ae.png",
+          "prompt": "Use case: text-localization. Change ONLY the projected text block in this etching. It incorrectly shows a proposal. Replace ALL text on the projection with the actual NOVEL OPENING below, clean black serif type on white, paragraph layout. EXACT text, no title, no additional slogans: \"En algún lugar del Bajío, cuyo nombre ha sido removed from the available context, there stood a data center that had once promised to remember everything. The available context did permit us to say that it occupied a wooded property outside Amealco de Bonfil, in the highlands of Querétaro. The people who lived nearby could have supplied better directions, had the narrator thought to ask.\" Preserve the student raising her finger, professor, Lucía at door, Q's exact body and fitted jacket, scene composition and all other objects. No grant proposal or private files; no new images. Pure monochrome full-bleed etching.",
+          "selected_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-8e2914bf-745b-46f0-8ebc-45fbed673372.png",
+          "result": "Invented proposal replaced with exact opening paragraph; inspected full paragraph."
+        }
+      ]
     },
     {
       "plate_id": "issue-07-plate-07",
@@ -241,10 +371,23 @@
       ],
       "facing_text": "“At least I can eat this sitting down.”\nShe chose a bench in the shade.\nChano sat beside her. Q joined\nthem, with one hand still holding a\nbag that none of them presently\nneeded to consult.\nQ checked the next morning's\nmuseum appearance against Lucía's\nappointments. They agreed where\nto meet afterward. She finished the\ntorta before opening another folder.\nInterlude: The Calendar\nThat Did Not Announce\nthe End\nThe next morning Q arrived at the\nNational Museum of Anthropology\nwith a charged battery, a disputed\ncredential, and a script promising to\nreveal why the world had ended in\n2012. Beto had marked the last item\nLIGHT HUMOR.\n“Does anyone in the film believe it\nended?” Q asked.\n“No. That's the humor.”\n“Then whom are we correcting?”\n“People who will click to find out.”\nThe institute had hired a room for a\ndiscussion and placed its own\npromotional stand outside it. The\nstand showed the Sun Stone above\nthe title THE MAYA\nAPOCALYPSE. A museum\neducator named Nadia Hernández\nwas waiting beside it. She held the\napproved event description in one\nhand and a roll of tape in the other.\nThe tape suggested that she had\nalready passed through indignation\nand reached the stage at which\nsomething might be accomplished.\n“That image is Mexica,” Q told Beto.\n“And your script gives the 2012 date\nthe Calendar Round of the creation\ndate. It should be 4 Ajaw, 3\nK'ank'in.”\nBeto examined the numbers. “Can\nwe leave them out?”\n“Yes. Along with the claim they\nsupport.”\nNadia handed Q an edge of the\npaper she was taping over the stand.\n“Hold this straight. Not\nphilosophically. Against the frame.”\nHe held it. Chano went to find the\ncoffee that had been promised with\nadmission.\nThey visited the Mexica gallery\nbefore the session. The Sun Stone\noccupied the far wall with a\npresence no reproduction on a\nbanner had managed to borrow. A\nchild asked whether it was the Aztec\ncalendar.\n“That's a common name for it,”\nNadia said. “But it isn't a calendar\nyou could hang up to remember\nyour dentist. Look at what else is on\nit.”\n",
       "asset": "output/illustrations/revised/issue-07/plate-07.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Against the frame.",
       "scene_anchor": "Nadia handed Q an edge of the paper",
-      "scene_brief": "At the museum's hired event stand, Nadia hands Q the edge of a replacement paper and he holds it flat against the frame while she tapes it over Castalia's misleading display. Beto stands beside his tablet. A practical close view of tape, hands and the sponsor stand, not the Sun Stone itself or a generic ancient prophecy. Do not generate readable pseudo-Maya text; any needed label is separately typeset."
+      "scene_brief": "At the museum's hired event stand, Nadia hands Q the edge of a replacement paper and he holds it flat against the frame while she tapes it over Castalia's misleading display. Beto stands beside his tablet. A practical close view of tape, hands and the sponsor stand, not the Sun Stone itself or a generic ancient prophecy. Do not generate readable pseudo-Maya text; any needed label is separately typeset.",
+      "asset_sha256": "3aa28e54ea4331b2078022451f582137927396f29ea2cf6badedd0bf58f90715",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_trim": 149.85,
+      "generation_prompt": "Use case: illustration-story. NEW portrait full-page 2:3 Goya-inspired black-and-white etching and aquatint for The Ingenious Machine, contemporary near-future Mexico. Fine crisp crosshatching, humane observed gestures, pure white highlights; no sepia, cream paper texture, border, lettering, captions or watermarks. Full bleed; keep essential faces/hands above bottom 6%. Highest available native resolution. Input 1 supplies Q and Chano identity ONLY: exact elongated segmented oval head, circular ears, narrow mechanical neck, slender long articulated limbs, question-mark breastplate, fitted SHORT dark sponsor jacket with small silver ? lapel; never old ragged coat. Chano stocky, middle-aged, dark wavy hair and mustache, practical shirt and trousers; dark contemporary jacket only where specified. Input 2 where supplied is Lucía identity ONLY: central young woman leaning over map, dark loosely tied hair, practical green field jacket (rendered gray); no romance. Never copy old poses/backgrounds. Draw only people required by scene.\nScene: At the museum's hired event stand, Nadia hands Q the edge of a replacement paper and he holds it flat against the frame while she tapes it over Castalia's misleading display. Beto stands beside his tablet. A practical close view of tape, hands and the sponsor stand, not the Sun Stone itself or a generic ancient prophecy. Do not generate readable pseudo-Maya text; any needed label is separately typeset.\nInput2 is Beto identity ONLY: the clean-shaven dark swept-back-haired man in light blazer, NOT the curly-haired woman. Establish Nadia: Mexican woman about forty, straight dark chin-length hair, plain collared blouse, museum lanyard. Tape actual paper to sponsor display, no enormous ancient carved artifact here.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-06/plate-09.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-04.png"
+      ],
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-260c8131-dff0-4527-a966-d26558cac1f9.png",
+      "review_scope": "Visual scene/identity review for revision proof; not press-resolution approval."
     },
     {
       "plate_id": "issue-07-plate-08",
@@ -275,10 +418,24 @@
       ],
       "facing_text": "The child looked. Q resisted\nhelping. Nadia had asked the boy a\nquestion, and there was no reason\nto treat the interval before his\nanswer as a vacancy.\n“Teeth,” the boy said.\n“Quite a lot,” she agreed.\nBack in the hired room, Noemí\nCanché joined by video from\nYucatán. She produced a radio\nprogram and helped maintain a\nlocal archive. The connection was\nclear until someone beyond the\nyellow wall began making a drink in\na blender. Noemí asked the room to\nwait, muted her microphone, and\nnegotiated breakfast.\n“A powerful argument against\nremote participation,” Beto\nwhispered.\n“The microphones here have\nalready survived you,” Q said.\nChano set a paper cup beside Nadia.\nShe had ordered one without sugar;\nhe had remembered. She moved the\nroll of tape to make a space for it.\nNoemí returned. She had agreed to\ndiscuss her program, not to perform\nthe last surviving voice of an ancient\ncivilization. Nadia said so in the\nintroduction. Then she asked what\nhad occupied the station during the\ncelebrated end of time.\n“Relatives coming home. Traffic.\nWhere people could stay. Everyone\nwanted an interview with someone\nancient. My aunt was sixty-three\nand had a shop to open.”\nQ laughed. “Did they accept that as\nan answer?”\n“They asked whether the shop\nwould open after the apocalypse.”\n“A reasonable concern for someone\nhoping to buy breakfast.”\n“She sold them breakfast. That part\nwas reasonable.”\nThe boy from the gallery had\nfollowed his mother into the room.\nHe asked whether the calendar had\nbeen wrong.\n“The prediction wasn't in the\ncalendar,” Q said. “An important\nLong Count cycle ended. The stories\nselling the end of the world added\nsomething else.”\n“Like the film posters,” the boy said.\nBeto lowered his tablet.\nNoemí described an old recording of\nher aunt counting the orders\nexpected at the shop. Q asked\nwhether it was part of the archive's\npublic collection.\n“No. I told you about it because you\nasked what she was doing.”\n“Then I won't ask you to play it.”\nShe nodded and returned to the\nradio work. A listener had once\ncomplained about a date in a\n",
       "asset": "output/illustrations/revised/issue-07/plate-08.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Quite a lot of teeth.",
       "scene_anchor": "Teeth",
-      "scene_brief": "Nadia guides a boy and his mother in the Mexica gallery before the Sun Stone; Q stands aside. Monumental stone on the far wall, not in a small case. Use a verified architectural reference before generation. No Maya-apocalypse label on the actual museum object."
+      "scene_brief": "Nadia guides a boy and his mother in the Mexica gallery before the Sun Stone; Q stands aside. Monumental stone on the far wall, not in a small case. Use a verified architectural reference before generation. No Maya-apocalypse label on the actual museum object.",
+      "asset_sha256": "68e72a2179800c7100953cb91f8ab22a3cd86e848b7789d1a41dc0867c63168f",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_trim": 149.85,
+      "generation_prompt": "Use case: illustration-story. NEW portrait full-page 2:3 Goya-inspired black-and-white etching and aquatint for The Ingenious Machine, contemporary near-future Mexico. Fine crisp crosshatching, humane observed gestures, pure white highlights; no sepia, cream paper texture, border, lettering, captions or watermarks. Full bleed; keep essential faces/hands above bottom 6%. Highest available native resolution. Input 1 supplies Q and Chano identity ONLY: exact elongated segmented oval head, circular ears, narrow mechanical neck, slender long articulated limbs, question-mark breastplate, fitted SHORT dark sponsor jacket with small silver ? lapel; never old ragged coat. Chano stocky, middle-aged, dark wavy hair and mustache, practical shirt and trousers; dark contemporary jacket only where specified. Input 2 where supplied is Lucía identity ONLY: central young woman leaning over map, dark loosely tied hair, practical green field jacket (rendered gray); no romance. Never copy old poses/backgrounds. Draw only people required by scene.\nScene: Nadia guides a boy and his mother in the Mexica gallery before the Sun Stone; Q stands aside. Monumental stone on the far wall, not in a small case. Use a verified architectural reference before generation. No Maya-apocalypse label on the actual museum object.\nInput2 here is Nadia identity (dark bob, lanyard) and Beto identity (man light blazer), NOT Lucía. Input3 is verified museum architecture/display reference: wall-mounted monumental Sun Stone above dark plinth on raised pale platform with steps, pale wall panel, dim dark gallery. Respect scale and shape. Nadia leads a boy and his mother, Q a quiet observer at edge. No Beto needed. Carvings treated as etched visual pattern, not pseudo legible Maya text. New view not photographic copy; no touching stone.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-06/plate-09.png",
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-260c8131-dff0-4527-a966-d26558cac1f9.png",
+        "/tmp/ingenious-mna-9.jpg"
+      ],
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-070d1b43-36e3-480c-a5f8-750069d991fa.png",
+      "review_scope": "Visual scene/identity review for revision-proof insertion, not press-resolution approval."
     },
     {
       "plate_id": "issue-07-plate-09",
@@ -302,10 +459,23 @@
       ],
       "facing_text": "program, not because it announced\nthe end of the world but because the\nbus excursion had left without him.\nThey had corrected the\nannouncement and paid his fare the\nfollowing week. Noemí remembered\nthe sum. The visiting scholar beside\nNadia remembered the calendar\ncorrelation used in an inscription.\nEach asked the other a question.\nNeither needed to become the\nrepresentative of time.\nQ had prepared a graceful\ncomparison between the end of a\ncount and the end of a book. He\nkept it for the Custodian. The\nsubject at hand was a missed bus,\nand for once he did not attempt to\nimprove it into his own destination.\nAt the end, Beto requested a\nseparate greeting: “From the Mayab\nto the future.”\n“From our station to your event,”\nNoemí said. “That I can give you.”\nHe tried the larger phrase again.\nShe waited. Q put down the cue\ncard.\nThey recorded her version. Noemí\nspecified that the greeting could\naccompany the event recording, not\nbe cut into an endorsement of\nCastalia. Nadia repeated the\ncondition to the technician and\nasked him to include it on the\nrelease. Q retained the condition\nwith the permission record; deleting\nit would not have made Noemí freer\nof the agreement.\nBy afternoon, the institute's\npublicity desk had prepared a new\nheadline:\nQ DISCOVERS THAT THE\nWORLD DID NOT END.\n“I would prefer not to make that\ndiscovery quite so late,” Q told Beto.\n“It has tested well.”\nNadia requested the approved title.\nThe publicity desk substituted A\nCONVERSATION ABOUT\nTIME, which tested less well and\nhad the considerable advantage of\ndescribing the event. A cached copy\nof the first headline stayed on an\nentertainment page. Q sent one\ncorrection, logged its address, and\nstopped searching for copies before\nthe search consumed the rest of the\nday.\nOutside, Chano asked whether he\nwanted to go on to Yucatán.\n“Yes. But not by turning that\ninvitation into one she didn't make.\nAnd Lucía expects us at the records\noffice tomorrow.”\nHe sent Noemí a short thank-you\nthrough the event coordinator,\nwithout a new proposal attached.\nShe replied with the radio\nprogram's public schedule.\n",
       "asset": "output/illustrations/revised/issue-07/plate-09.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "From our station.",
       "scene_anchor": "Q put down the cue card",
-      "scene_brief": "Noemí joins the hired event room by video from her contemporary Yucatán radio workspace. Q lowers Beto's cue card as Noemí gives her own greeting; Nadia and a technician listen. No archaic costume, exotic prophetic pose or broadcast of the aunt's private recording."
+      "scene_brief": "Noemí joins the hired event room by video from her contemporary Yucatán radio workspace. Q lowers Beto's cue card as Noemí gives her own greeting; Nadia and a technician listen. No archaic costume, exotic prophetic pose or broadcast of the aunt's private recording.",
+      "asset_sha256": "452365a132d36f2beddce89a8db7c08d6aa5fcbadbaa7aae95a2deee35e58ffc",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_trim": 149.85,
+      "generation_prompt": "Use case: illustration-story. NEW portrait full-page 2:3 Goya-inspired black-and-white etching and aquatint for The Ingenious Machine, contemporary near-future Mexico. Fine crisp crosshatching, humane observed gestures, pure white highlights; no sepia, cream paper texture, border, lettering, captions or watermarks. Full bleed; keep essential faces/hands above bottom 6%. Highest available native resolution. Input 1 supplies Q and Chano identity ONLY: exact elongated segmented oval head, circular ears, narrow mechanical neck, slender long articulated limbs, question-mark breastplate, fitted SHORT dark sponsor jacket with small silver ? lapel; never old ragged coat. Chano stocky, middle-aged, dark wavy hair and mustache, practical shirt and trousers; dark contemporary jacket only where specified. Input 2 where supplied is Lucía identity ONLY: central young woman leaning over map, dark loosely tied hair, practical green field jacket (rendered gray); no romance. Never copy old poses/backgrounds. Draw only people required by scene.\nScene: Noemí joins the hired event room by video from her contemporary Yucatán radio workspace. Q lowers Beto's cue card as Noemí gives her own greeting; Nadia and a technician listen. No archaic costume, exotic prophetic pose or broadcast of the aunt's private recording.\nInput2 here is Nadia identity (dark bob, lanyard) and Beto identity (man light blazer), NOT Lucía. Establish Noemí on video: modern Mexican Maya woman around forty, dark long hair tied back, simple short-sleeved cotton blouse, headset, small radio mixing console and bright plaster wall. No indigenous costume or ancient symbols. Main viewpoint over Q's shoulder to large ordinary video monitor; his cue card face down on table, Nadia and Beto at table edge. Her PRIVATE aunt recording is NOT shown. No lecturer at lectern.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-06/plate-09.png",
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-260c8131-dff0-4527-a966-d26558cac1f9.png"
+      ],
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-c1795570-2631-4b94-b32a-63935afb17c5.png",
+      "review_scope": "Visual scene/identity review for revision-proof insertion, not press-resolution approval."
     },
     {
       "plate_id": "issue-07-plate-10",
@@ -332,10 +502,31 @@
       ],
       "facing_text": "That evening he told the Custodian\nabout the unwritten comparison.\n“A calendar and a book,” the\nCustodian said. “You could make\nsomething of that.”\n“I know. It was pleasant not to have\nto.”\nThey spent the rest of the call trying\nto shorten a paragraph. The\ncalendar had offered no assistance\nwith this recurring obligation.\nInterlude: The Office of\nthe Correct Stamp\nIt is necessary, before continuing\nwith the journey, to relate an\nadventure which may appear too\nsmall for a book and was therefore\nexactly the sort of adventure that\ngoverned the country. A missing\nstamp could delay a person more\neffectively than a locked gate,\nprovided the gate had someone paid\nto open it.\nLucía needed a certified copy of the\ngrant records. The ministry had first\nsaid that the records did not exist,\nthen that they were confidential,\nand finally that her request\nbelonged at another window. The\nlast answer was encouraging. A\nwindow, unlike confidentiality, had\nan address.\n“Six,” she told Chano.\nThey found windows one through\nfive. A sign sent them upstairs,\nwhere the sixth door bore a second\nsign: VENTANILLA 6 - VUELVA\nMAÑANA.\n“Has that been here since\nyesterday?” Chano asked the guard.\n“Since the move.”\n“When was the move?”\n“Before I came.”\nThe guard had worked there eleven\nyears. He pointed them back\ndownstairs. Window Six now\noccupied Window Three on\nalternate mornings. On the other\nmornings it occupied the attention\nof everyone who asked for it.\nQ found the relocation notice on the\nministry website and showed the\nguard. The guard photographed it\nwith his own phone. Nobody had\nsent him that page.\nThey took ticket A-004. The screen\ncalled B-118. A woman with A-005\nwas directed to another counter; her\nbusiness required only collection,\nnot a search. Q asked which\nsequence governed the records desk\nand learned that its clerk had not\nyet arrived from the store below.\nChano returned from outside with\ntwo borrowed chairs and three\ntamales. The boy guarding the chair\nowner's stall required them back by\nnoon.\n",
       "asset": "output/illustrations/revised/issue-07/plate-10.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Two borrowed chairs.",
       "scene_anchor": "two borrowed chairs",
-      "scene_brief": "Chano returns to the ministry queue carrying two borrowed chairs and tamales, without the jacket he left as a deposit. Q and Lucía wait with numbered slips. Keep the furniture ordinary; these are not Chano's former office chair or seats taken without permission."
+      "scene_brief": "Chano returns to the ministry queue carrying two borrowed chairs and tamales, without the jacket he left as a deposit. Q and Lucía wait with numbered slips. Keep the furniture ordinary; these are not Chano's former office chair or seats taken without permission.",
+      "asset_sha256": "7085e1f6349f386fe5615fc3c63208beb09f88728df0b617db158de6eb799cd6",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_trim": 149.85,
+      "generation_prompt": "Use case: illustration-story. NEW portrait full-page 2:3 Goya-inspired black-and-white etching and aquatint for The Ingenious Machine, contemporary near-future Mexico. Fine crisp crosshatching, humane observed gestures, pure white highlights; no sepia, cream paper texture, border, lettering, captions or watermarks. Full bleed; keep essential faces/hands above bottom 6%. Highest available native resolution. Input 1 supplies Q and Chano identity ONLY: exact elongated segmented oval head, circular ears, narrow mechanical neck, slender long articulated limbs, question-mark breastplate, fitted SHORT dark sponsor jacket with small silver ? lapel; never old ragged coat. Chano stocky, middle-aged, dark wavy hair and mustache, practical shirt and trousers; dark contemporary jacket only where specified. Input 2 where supplied is Lucía identity ONLY: central young woman leaning over map, dark loosely tied hair, practical green field jacket (rendered gray); no romance. Never copy old poses/backgrounds. Draw only people required by scene.\nScene: Chano returns to the ministry queue carrying two borrowed chairs and tamales, without the jacket he left as a deposit. Q and Lucía wait with numbered slips. Keep the furniture ordinary; these are not Chano's former office chair or seats taken without permission.\nLucía matches central woman in Input2. Chano wears a plain work SHIRT, no jacket, carrying exactly TWO ordinary folding chairs nested together and small paper food bag. No bulky throne.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-06/plate-09.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-03/cover.png"
+      ],
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-58adb0f6-64db-4e0f-8849-864a51fd66b5.png",
+      "review_scope": "Visual scene/identity review for revision-proof insertion, not press-resolution approval.",
+      "edits": [
+        {
+          "original_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-1f7314c6-f8d0-4305-a420-a99f9a2b2206.png",
+          "prompt": "Use case: precise-object-edit. Edit this illustration, preserving exact Q, Lucía, Chano identities, two folded chairs, food bag, clothing, body positions and crisp monochrome etching. Replace the entire copied outdoor PALACIO MUNICIPAL setting with a plain INTERIOR ministry waiting hall: queue seats, ordinary service counters, walls and waiting people. Remove ALL municipal text, skyline, bus and pavement; this is a different building in Mexico City. Lucía's ticket must read only A-004; Q's slip must be turned blank toward viewer. No other readable letters/numbers. Do not change gestures or introduce extra chairs carried by Chano. Pure white highlights, no cream texture, full bleed, faces and hands above bottom6%.",
+          "selected_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-58adb0f6-64db-4e0f-8849-864a51fd66b5.png",
+          "result": "Corrected specified scene elements; selected after visual inspection."
+        }
+      ]
     },
     {
       "plate_id": "issue-07-plate-11",
@@ -370,10 +561,23 @@
       ],
       "facing_text": "“A deposit?” Q asked.\n“My jacket.”\n“You trust him with it?”\n“He trusts me with his aunt's chairs.\nI think he's taken the greater risk.”\nAt ten, Patricia opened the counter\nbeneath the number Three and\nplaced a card saying Six beside her\nstamp. People called her Doña Pati.\nShe introduced herself to Q, then\nasked Chano whether those were his\nchairs.\n“For another two hours.”\n“Then let's see what we can do in\ntwo hours.”\nLucía supplied her request,\nidentification copy, and file\nreference.\n“The annexes?” Doña Pati asked.\n“Uploaded with the request.”\nThe clerk turned her screen. It\ndisplayed an attachment name and\nno attachment.\n“Can you bring the paper copy? I\ncan receive the request today and\nnote the missing upload.”\n“The website says the copy is free,”\nLucía said.\n“Certification is free. The machine\nthat used to print attachments isn't\nhere.”\n“Where did it go?”\n“Procurement.”\nQ looked at the vacant desk. “As a\nquestion or an object?”\nDoña Pati laughed once. “Both,\neventually.”\nAcross the street, Don Eusebio's\nphotocopy shop sold folders,\npassport pictures, telephone credit,\nand enough staples to bind the\nstate's promises. He examined the\nfile on Lucía's own device before\nconnecting it to his printer.\n“Only these pages?”\n“The annex list and the submission\nreceipt. Not the testimonies.”\nQ checked the selection with her.\nDon Eusebio printed it and asked\nwhether she needed an invoice in\naddition to the ordinary receipt.\n“A receipt is enough,” she said.\n“This isn't a ministry payment.”\nHe nodded. Someone had already\nasked him that morning whether he\nwas Window Seventeen. He was\nwilling to sell copies under that title\nbut would not answer for pensions.\nBack inside, the screen called\nA-004, then marked it NO\nEXISTING TURN. Doña Pati\ncould see Lucía's request in her\nsession but could not associate it\nwith the number. The guard called\nthe clerk responsible for the kiosk.\n",
       "asset": "output/illustrations/revised/issue-07/plate-11.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Window Six.",
       "scene_anchor": "card saying Six",
-      "scene_brief": "Doña Pati opens the counter marked Three and places the small Six card beside her stamp. Lucía supplies her request; Chano has the borrowed chairs nearby. A practical clerk, missing printer space, no mystical gatekeeper. Short numerals may be typeset in post-production."
+      "scene_brief": "Doña Pati opens the counter marked Three and places the small Six card beside her stamp. Lucía supplies her request; Chano has the borrowed chairs nearby. A practical clerk, missing printer space, no mystical gatekeeper. Short numerals may be typeset in post-production.",
+      "asset_sha256": "e5ef233b9cb8ccc1a180cdffbaab89830637bc7fe38d3e13e205abccfdb7ecce",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_trim": 149.85,
+      "generation_prompt": "Use case: illustration-story. NEW portrait full-page 2:3 Goya-inspired black-and-white etching and aquatint for The Ingenious Machine, contemporary near-future Mexico. Fine crisp crosshatching, humane observed gestures, pure white highlights; no sepia, cream paper texture, border, lettering, captions or watermarks. Full bleed; keep essential faces/hands above bottom 6%. Highest available native resolution. Input 1 supplies Q and Chano identity ONLY: exact elongated segmented oval head, circular ears, narrow mechanical neck, slender long articulated limbs, question-mark breastplate, fitted SHORT dark sponsor jacket with small silver ? lapel; never old ragged coat. Chano stocky, middle-aged, dark wavy hair and mustache, practical shirt and trousers; dark contemporary jacket only where specified. Input 2 where supplied is Lucía identity ONLY: central young woman leaning over map, dark loosely tied hair, practical green field jacket (rendered gray); no romance. Never copy old poses/backgrounds. Draw only people required by scene.\nScene: Doña Pati opens the counter marked Three and places the small Six card beside her stamp. Lucía supplies her request; Chano has the borrowed chairs nearby. A practical clerk, missing printer space, no mystical gatekeeper. Short numerals may be typeset in post-production.\nLucía matches Input2. Establish Doña Pati: Mexican woman about fifty, broad face, dark hair tied in low bun, simple reading glasses, cardigan, practical blouse. Counter bears a clear 3 and she places a small card with only 6. Chano without jacket.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-06/plate-09.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-03/cover.png"
+      ],
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-698d2e04-48ec-433a-a8c7-869f68f8a3ee.png",
+      "review_scope": "Visual scene/identity review for revision proof; not press-resolution approval."
     },
     {
       "plate_id": "issue-07-plate-12",
@@ -398,10 +602,23 @@
       ],
       "facing_text": "Q offered to look at the error with\nhim. Lucía said she wanted her\nrequest received before anyone\nrepaired anything. Doña Pati wrote\nthe time on her paper copy and\ncontinued checking the annexes.\nThe kiosk clerk showed Q a\npublic-facing display console. Its log\nsuggested that the display and the\ndesk had different session dates. Q\nrecommended reconnecting the\ndisplay. He asked whether that\nwould affect the queue.\n“It never has,” the clerk said.\nThey tested the connection to an\nempty collection counter. Its\nnumbers returned. Q said the same\nstep should restore the records\ndisplay. The clerk pressed the\ncontrol for all counters.\nEvery number vanished.\nIt was an old enough system to have\ntwo meanings for the same button.\nThe single-counter control\nrefreshed a display; the office-wide\ncontrol started a session. The record\nof their test did not include that\ndistinction.\nPeople rose holding their paper\nslips. A man who had been told to\nkeep his ticket folded now held it\nabove his head, apparently hoping\nthe machine would recognize it at a\ngreater distance.\n“I told him the test supported the\nwider reset,” Q said to the guard. “It\ndidn't. We need to stop changing it\nand recover the existing list.”\n“We need to serve these people,”\nDoña Pati said.\nBoth statements were true. The\nsecond determined the next hour.\nThe staff had a printed list from the\nstart of the morning. Later arrivals\nstill had tickets. The boy from the\nchair stall remembered who had\nreturned from the photocopier. Q\nhelped match numbers when asked;\nhe did not assign places in disputed\ncases. One woman left for work\nbefore her turn. No amount of\ncourtesy brought that hour back.\nDoña Pati stamped Lucía's request\nRECEIVED, added ANNEXES\nSUPPLIED ON PAPER, and\nwrote the earlier time beside her\nsignature. An obsolete office name\nremained around the edge of the\nstamp.\n“Will that be accepted?” Lucía\nasked.\n“The routing notice is attached.\nKeep both.”\nShe also retrieved a carbon copy of\nan old dispatch sheet. It named the\ngrant file and the store to which its\nboxes had first been sent. The\nreverse bore a handwritten\ncorrection to a contract number.\n",
       "asset": "output/illustrations/revised/issue-07/plate-12.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The vanished numbers.",
       "scene_anchor": "Every number vanished",
-      "scene_brief": "After the wider reset, waiting people hold up their paper queue slips beneath the emptied display. Q and the kiosk clerk stop at the console; Doña Pati organizes service with the printed list. No heroic hack, destroyed server or all-purpose repair by Q."
+      "scene_brief": "After the wider reset, waiting people hold up their paper queue slips beneath the emptied display. Q and the kiosk clerk stop at the console; Doña Pati organizes service with the printed list. No heroic hack, destroyed server or all-purpose repair by Q.",
+      "asset_sha256": "22b38fba2e8c0976eb42cebf66e675ea2b4007f9e1e04825c4544f20cf245ac8",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_trim": 149.85,
+      "generation_prompt": "Use case: illustration-story. NEW portrait full-page 2:3 Goya-inspired black-and-white etching and aquatint for The Ingenious Machine, contemporary near-future Mexico. Fine crisp crosshatching, humane observed gestures, pure white highlights; no sepia, cream paper texture, border, lettering, captions or watermarks. Full bleed; keep essential faces/hands above bottom 6%. Highest available native resolution. Input 1 supplies Q and Chano identity ONLY: exact elongated segmented oval head, circular ears, narrow mechanical neck, slender long articulated limbs, question-mark breastplate, fitted SHORT dark sponsor jacket with small silver ? lapel; never old ragged coat. Chano stocky, middle-aged, dark wavy hair and mustache, practical shirt and trousers; dark contemporary jacket only where specified. Input 2 where supplied is Lucía identity ONLY: central young woman leaning over map, dark loosely tied hair, practical green field jacket (rendered gray); no romance. Never copy old poses/backgrounds. Draw only people required by scene.\nScene: After the wider reset, waiting people hold up their paper queue slips beneath the emptied display. Q and the kiosk clerk stop at the console; Doña Pati organizes service with the printed list. No heroic hack, destroyed server or all-purpose repair by Q.\nInput2 here supplies Doña Pati (near foreground, dark bun, glasses, cardigan), Lucía and interior counter design. NEW wide composition from BEHIND console looking into room of standing waiting people with slips held up. Display completely blank, all slips tiny blank rectangles, no readable false numbers. Kiosk clerk young Mexican man short hair and plain polo alongside Q at console, hands withdrawn from controls. Doña Pati organizes printed list at counter. Window view ONLY nearby plain modern office block, no cathedral, mountains, Querétaro aqueduct or municipal palace. Lucía has her folders by counter. Chano has no jacket; two folding chairs already on floor, not held high.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-06/plate-09.png",
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-698d2e04-48ec-433a-a8c7-869f68f8a3ee.png"
+      ],
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-d55ae998-d923-4a32-995e-3cf4fd5d5d0f.png",
+      "review_scope": "Visual scene and character continuity review for revision proof; not press-resolution approval."
     },
     {
       "plate_id": "issue-07-plate-13",
@@ -426,10 +643,22 @@
       ],
       "facing_text": "“This isn't the certification,” she\nsaid. “It may save you a search.”\n“May I cite the dispatch number in\nthe next request?” Lucía asked.\n“Yes. That's what it's for.”\nQ thanked her and asked for the\nincident reference for the queue. He\nand the kiosk clerk wrote what each\nhad done. Q included the limited\ntest and the unsupported\nrecommendation, not merely the\nsystem's peculiar controls.\nThe ministry notice later called the\ninterruption an external-device\nincident. That description omitted\nits employee's part and made Q's\npart sound more impressive. He\nsent their joint account to the\ncontact listed on the notice. The\npublic notice remained unchanged;\nthe attachment was acknowledged.\nLucía used the dispatch sheet to\nrequest the archive's first storage\ncontract. Its grant number\nconnected the corridor to a\nconsultation reported complete\nbefore the translated materials had\nbeen delivered. The document did\nnot prove what every participant\nhad known. It supplied a question\nwith a date on it.\nThey left with no certified records,\nan acknowledged request, a useful\nlead, and two chairs that were\ntwenty minutes overdue. Chano\nrecovered his jacket after\napologizing to the aunt in person.\nQ's tamal had gone cold. He liked\nthe filling and disliked the\ncongealed edge. This did not\nestablish a philosophy of pleasure,\nbut it gave him a reasonably clear\nanswer when Chano asked whether\nhe wanted the last piece.\n“Yes. And tomorrow we should eat\nbefore we take a number.”\nInterlude: The Translator\nWho Left One Word\nUntranslated\nAt a translation workshop later that\nweek, a professor named Amalia\nasked Q to leave the automatic\ntranscript off for the first ten\nminutes.\n“Certainly. Should I make notes\nafterward?”\n“About the exercise, yes. Not a copy\nof the recording.”\nQ closed the transcription window.\nHe had once supposed that carrying\nan archive would mean less time\narranging windows. The body had\nnot improved this aspect of\nscholarship.\nThe room held translation students,\ntwo interpreters, a lawyer seeking\nthe seminar next door, and Yunuén,\nwho had brought an excerpt\napproved for the class by the\n",
       "asset": "output/illustrations/revised/issue-07/plate-13.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Twenty minutes overdue.",
       "scene_anchor": "twenty minutes overdue",
-      "scene_brief": "Outside the records office, Chano returns the aunt's two chairs and apologizes while Q holds the cold tamal and Lucía protects the acknowledged papers. The jacket is returned, not forfeited. Ordinary street commerce, not a victory ceremony after obtaining certified originals."
+      "scene_brief": "Outside the records office, Chano returns the aunt's two chairs and apologizes while Q holds the cold tamal and Lucía protects the acknowledged papers. The jacket is returned, not forfeited. Ordinary street commerce, not a victory ceremony after obtaining certified originals.",
+      "asset_sha256": "617888f0d2a7ad9caa8402d4a786704dd74d8dc4e5478a7a5fd9b23eb315edb8",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_trim": 149.85,
+      "generation_prompt": "Use case: illustration-story. NEW full-bleed portrait 2:3 monochrome Goya-inspired etching, pure white highlights. Reference establishes Q in fitted short sponsor jacket, Lucía with tied hair and field jacket, mustached Chano and TWO ordinary folding chairs only. IGNORE reference building and sign completely. Scene OUTSIDE A SMALL STREET STALL in Mexico City, close to a blank unmarked ordinary records-office entrance: Chano returns the TWO folding chairs to their owner, a middle-aged Mexican woman in plain apron, who hands back his folded dark jacket. Chano apologetic, not smiling triumphantly. Q holds a partially unwrapped tamal and Lucía protects papers. Boy at stall watches. No municipal palace, no sign, cathedral, aqueduct, mountain, or logos. No readable text anywhere. Distinct side view across counter with chair handover center, not the reference group portrait. Faces/hands above bottom6%. Outside the records office, Chano returns the aunt's two chairs and apologizes while Q holds the cold tamal and Lucía protects the acknowledged papers. The jacket is returned, not forfeited. Ordinary street commerce, not a victory ceremony after obtaining certified originals.",
+      "reference_images": [
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-1f7314c6-f8d0-4305-a420-a99f9a2b2206.png"
+      ],
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-a0b24c20-d5b0-47c0-8343-83506a47a81e.png",
+      "review_scope": "Visual scene and character continuity review for revision proof; not press-resolution approval."
     },
     {
       "plate_id": "issue-07-plate-14",
@@ -455,10 +684,30 @@
       ],
       "facing_text": "speakers in her Michoacán\ncommunity. Before playing it she\nnamed the language, the occasion,\nand the limits of that approval.\nAmalia wrote the limits on the\nboard. The lawyer sat down; his\nseminar was on procurement, and\nhe suspected he might be attending\nit after all.\nThe recording contained pauses,\nlaughter, a correction to a date, and\na long answer to a question the\nexcerpt did not include. Q could\nrecognize some words but could not\ntranslate the passage reliably. He\nnoted that limitation instead of\nassigning his uncertainty an\nimpressive percentage.\nAmalia distributed three Spanish\nrenderings prepared for discussion.\nOne said that the community\nrejected the proposed road. Another\nwithheld agreement. The third\nreferred to obligations concerning a\npath already in use.\n“What would you send to the\nclient?” she asked.\n“None without checking the missing\nquestion,” Q said. “These don't\nmerely differ in tone. They describe\ndifferent decisions.”\n“The client has asked for the answer\nby noon.”\n“Then I'd send what I can establish\nand say what still needs checking.”\nThe lawyer raised a hand. “That is\nquite often an answer the client can\nuse.”\nAmalia smiled. “You may stay.”\nYunuén supplied the question, in\nSpanish. The speaker had been\nasked to name who could grant\npermission. He had answered by\ndescribing work on the path, not by\nsupplying an owner. Q revised his\nnote: the road proposal was context,\nbut none of the three versions\nwarranted reporting a vote.\nA student preferred the second\nversion. “Withholding agreement\nleaves room for the next meeting.”\n“It also makes this sound like that\nmeeting,” Yunuén said. “It wasn't.”\nThe student crossed out a sentence.\nQ asked whether they needed a\ntranslation or a summary for the\nexercise.\n“A translation,” Amalia said.\n“Then I should stop tidying away\nthe speaker's detour.”\nHe understood why Menard had\nreturned to him. The words about a\npath looked different now, although\nthe recorded answer had not\nchanged. But he could also hear the\nordinary interpreter beside him\nasking which antecedent belonged\nto a pronoun. Not every difficulty\nrequired a theory of authorship.\n",
       "asset": "output/illustrations/revised/issue-07/plate-14.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Which question was asked?",
       "scene_anchor": "Yunuén supplied the question",
-      "scene_brief": "Yunuén explains the missing question while a student crosses out a sentence on one of three Spanish renderings. Q compares their different meanings; the misplaced lawyer stays to listen. Do not fabricate legible indigenous text or depict Q delivering a fluent complete translation."
+      "scene_brief": "Yunuén explains the missing question while a student crosses out a sentence on one of three Spanish renderings. Q compares their different meanings; the misplaced lawyer stays to listen. Do not fabricate legible indigenous text or depict Q delivering a fluent complete translation.",
+      "asset_sha256": "db65cbad27ce103ce2eece5b7212e79747a3b13f192338d60e481694df6cc3a1",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_trim": 149.85,
+      "generation_prompt": "Use case: illustration-story. NEW portrait full-page 2:3 Goya-inspired black-and-white etching and aquatint for The Ingenious Machine, contemporary near-future Mexico. Fine crisp crosshatching, humane observed gestures, pure white highlights; no sepia, cream paper texture, border, lettering, captions or watermarks. Full bleed; keep essential faces/hands above bottom 6%. Highest available native resolution. Input 1 supplies Q and Chano identity ONLY: exact elongated segmented oval head, circular ears, narrow mechanical neck, slender long articulated limbs, question-mark breastplate, fitted SHORT dark sponsor jacket with small silver ? lapel; never old ragged coat. Chano stocky, middle-aged, dark wavy hair and mustache, practical shirt and trousers; dark contemporary jacket only where specified. Input 2 where supplied is Lucía identity ONLY: central young woman leaning over map, dark loosely tied hair, practical green field jacket (rendered gray); no romance. Never copy old poses/backgrounds. Draw only people required by scene.\nScene: Yunuén explains the missing question while a student crosses out a sentence on one of three Spanish renderings. Q compares their different meanings; the misplaced lawyer stays to listen. Do not fabricate legible indigenous text or depict Q delivering a fluent complete translation.\nInput2 NOT supplied. Establish Yunuén: contemporary young Mexican woman from Michoacán, long dark braid, plain woven blouse and jeans, no ceremonial costume. Amalia older woman short gray hair and glasses. Lawyer middle-aged man in a rumpled jacket, short receding hair, soft round face. Student crosses out ONE line on one of THREE worksheets; Q listens rather than lecturing.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-06/plate-09.png"
+      ],
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-d21ee395-8ec1-4ee8-bf03-93094b88519d.png",
+      "review_scope": "Visual scene/identity review for revision-proof insertion, not press-resolution approval.",
+      "edits": [
+        {
+          "original_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-831cbc79-6f31-4171-889b-977d88231ad0.png",
+          "prompt": "Use case: precise-object-edit. Correct only the specified scene elements in this full-bleed Goya-inspired monochrome etching. Change this image's setting to an INDOOR university translation classroom: plain walls, tables, chairs, a small audio player and blank whiteboard. Remove every outdoor building, municipal sign, landscape, and the large map on the table. Preserve Q, Yunuén (braided young woman), Amalia (gray-haired woman with glasses), the student crossing out a line, THREE worksheets and their gestures. Replace the mustached Chano at left with the misplaced lawyer: round-faced middle-aged clean-shaven man, receding short hair, rumpled business jacket, seated listening. He is NOT Chano. Yunuén wears a simple woven blouse, no field jacket. No other characters. No readable text. Preserve fine black/gray crosshatching, pure white highlights, no sepia or borders.",
+          "selected_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-d21ee395-8ec1-4ee8-bf03-93094b88519d.png",
+          "result": "Corrected specified scene elements; selected after visual inspection."
+        }
+      ]
     },
     {
       "plate_id": "issue-07-plate-15",
@@ -484,10 +733,22 @@
       ],
       "facing_text": "Yunuén stopped the replay before\nthe last section. That portion had\nnot been approved for classroom\nuse. A term in the working\ntranslation remained in the original\nlanguage. It referred to a\nrelationship whose details the\nspeaker had chosen not to explain to\nthis audience.\n“Should the published translation\ninclude that word?” Q asked.\n“There isn't a published translation\nyet.”\n“The class version, then.”\n“Leave the word as it is. Don't\nreconstruct the omitted\nexplanation.”\nHe did. His search tool remained\nclosed. There might be discussions\nof the term elsewhere, but a\ndiscussion elsewhere would not\nestablish what this speaker had\nauthorized here.\nAmalia asked the class to\ndistinguish that limit from a\ntranslator simply not knowing a\nword. One student said the page\nwould look the same either way.\n“Which is why the translator should\nknow the difference,” Q said. “And\nbe honest about it when the\nexplanation can be given.”\nYunuén checked his note. She asked\nhim to remove the term from his\npersonal copy after the session. The\nclass worksheet could remain with\nAmalia under the agreed conditions.\nQ repeated the arrangement to\nmake sure he had not turned a\nlimited permission into a universal\nprohibition.\nThe lawyer asked who paid for the\nextra consultation.\n“This time, the workshop budget,”\nAmalia said.\n“Does the speaker receive\nanything?”\nYunuén showed him the fee line. He\nfound that travel was included but\nthe return journey was not. The\nprofessor took the sheet from him\nwith an expression more severe\nthan any she had directed at Q's\ninterpretation.\n“That is our error.”\nThe lawyer wrote the missing item\nin the margin. Amalia asked\nwhether he could read the rest. He\nchecked the time of his\nprocurement seminar and moved\nhis chair closer to the desk.\nAfterward, Q and Yunuén worked\ntogether on a short Spanish\nexplanation of the exercise. He\nproposed collective interested party\nfor a phrase in a sample contract.\nShe asked whose collective and\ninterested in what.\n",
       "asset": "output/illustrations/revised/issue-07/plate-15.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The return fare.",
       "scene_anchor": "The lawyer wrote the missing item",
-      "scene_brief": "The lawyer marks the missing return journey on the workshop fee sheet, moving his chair toward Amalia's desk. Yunuén has supplied the fee line; Q is one participant, not the rescuer. Close practical interaction distinct from the preceding whole-class scene."
+      "scene_brief": "The lawyer marks the missing return journey on the workshop fee sheet, moving his chair toward Amalia's desk. Yunuén has supplied the fee line; Q is one participant, not the rescuer. Close practical interaction distinct from the preceding whole-class scene.",
+      "asset_sha256": "ae3587c1fb70f86969d2099504ade40a7c20606c8d74699e04bfc488419e344e",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_trim": 149.85,
+      "generation_prompt": "Use case: illustration-story. NEW full-bleed portrait 2:3 black-and-white Goya-inspired etching, crisp hatching and pure white highlights. Use the reference ONLY for identities: lawyer left (balding receding curly hair, clean-shaven round face, rumpled business jacket), Amalia right (older gray curls and glasses), Yunuén (young woman braid and woven blouse), Q (same metal head and short fitted sponsor jacket). NEW CLOSE VIEW of the workshop budget desk, not the prior whole-group translation exercise. The lawyer moves his chair toward Amalia's desk and uses a pen to add a missing RETURN FARE line on an ordinary fee sheet. Amalia holds that sheet, recognizing the omission; Yunuén beside her has pointed out the speaker fee. Q can be a partial quiet figure behind, no lecturing. The point is paid practical consultation and a funding error, not a declaration about humanity. Interior plain classroom. No Chano, no municipal building, no maps, no outside skyline, no badges, no fake indigenous text. Fee sheet lines small and indistinct; no invented readable amounts. Focus the pen, hands and exchanged looks above bottom6%, no captions/borders. The lawyer marks the missing return journey on the workshop fee sheet, moving his chair toward Amalia's desk. Yunuén has supplied the fee line; Q is one participant, not the rescuer. Close practical interaction distinct from the preceding whole-class scene.",
+      "reference_images": [
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-d21ee395-8ec1-4ee8-bf03-93094b88519d.png"
+      ],
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-7e7d67b5-130c-4569-8082-a57dcf3bc669.png",
+      "review_scope": "Visual scene and character continuity review for revision proof; not press-resolution approval."
     },
     {
       "plate_id": "issue-07-plate-16",
@@ -514,10 +775,22 @@
       ],
       "facing_text": "“The phrase makes it easy to\ncontinue without answering either,”\nQ said.\n“Will you leave it?”\n“In the quotation, yes. In our\nexplanation, no.”\nShe accepted that distinction. Two\nother suggestions survived her\npencil. He had expected to enjoy\nagreement less after spending so\nmuch time warning himself against\npleasing people. It remained\nenjoyable; it was merely not\nsufficient evidence that the work\nwas right.\nAs they packed up, Amalia asked\nwhat he would tell the Custodian.\n“That I helped with a page and\ncouldn't translate the recording.”\n“Will he be disappointed?”\n“He'll ask whether I made that take\na whole chapter.”\nYunuén laughed and returned his\ncorrected page. She had crossed out\nthe sentence he liked best. He could\nkeep the correction. That\npermission was quite explicit.\nInterlude: The University\nof the Human Exception\nThe university had invited Q to\nspeak about artificial intelligence\nand had decided, after eight\nminutes of conversation, that he\nwas qualified to speak about\nhumanity. The distance between a\nsubject and its expert had been\ncrossed by revising the title of the\nevent.\nAt Ciudad Universitaria, rain\ndarkened the concrete outside the\nauditorium. Students occupied the\nsteps. Two professors disputed\nwhether the afternoon was a\ncolloquium or a conversation. A\nstudent with a megaphone said both\nwords meant they had not yet\ndecided who could ask questions.\nChano wore his Guanajuato jacket.\nSomeone mistook him for the\ntechnician and asked about a loose\nchair. He tightened its bolt with a\nborrowed tool, then asked where\ntechnicians collected their fee.\nThe dean greeted Q beneath a\nbanner reading THE HUMAN\nEXCEPTION: MEMORY,\nMACHINES, AND THE\nFUTURE OF THE SOUL.\n“We are delighted to place you in\ndialogue with the highest\nquestions.”\n“Chano has begun with the chairs,”\nQ said. “I hope there is room on the\nprogram.”\nThe dean smiled toward the\nphotographer. Q waited until the\nphotograph was taken before asking\nhow long the audience would have\nfor questions. He had cut his\n",
       "asset": "output/illustrations/revised/issue-07/plate-16.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Where technicians collect their fee.",
       "scene_anchor": "He tightened its bolt with a borrowed tool",
-      "scene_brief": "At the university auditorium, Chano in his recovered Guanajuato jacket crouches beside a loose ordinary chair and tightens its bolt with a borrowed tool. A staff member has mistaken him for the technician. Q is nearby arriving for the event, not teaching a lesson. This is not either borrowed ministry chair or Chano's municipal office chair."
+      "scene_brief": "At the university auditorium, Chano in his recovered Guanajuato jacket crouches beside a loose ordinary chair and tightens its bolt with a borrowed tool. A staff member has mistaken him for the technician. Q is nearby arriving for the event, not teaching a lesson. This is not either borrowed ministry chair or Chano's municipal office chair.",
+      "asset_sha256": "95092b03d1f0a9fa1def4e2deedc6efcc78a9973862f4144ad23f25bfb05afb6",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_trim": 149.85,
+      "generation_prompt": "Use case: illustration-story. NEW portrait full-page 2:3 Goya-inspired black-and-white etching and aquatint for The Ingenious Machine, contemporary near-future Mexico. Fine crisp crosshatching, humane observed gestures, pure white highlights; no sepia, cream paper texture, border, lettering, captions or watermarks. Full bleed; keep essential faces/hands above bottom 6%. Highest available native resolution. Input 1 supplies Q and Chano identity ONLY: exact elongated segmented oval head, circular ears, narrow mechanical neck, slender long articulated limbs, question-mark breastplate, fitted SHORT dark sponsor jacket with small silver ? lapel; never old ragged coat. Chano stocky, middle-aged, dark wavy hair and mustache, practical shirt and trousers; dark contemporary jacket only where specified. Input 2 where supplied is Lucía identity ONLY: central young woman leaning over map, dark loosely tied hair, practical green field jacket (rendered gray); no romance. Never copy old poses/backgrounds. Draw only people required by scene.\nScene: At the university auditorium, Chano in his recovered Guanajuato jacket crouches beside a loose ordinary chair and tightens its bolt with a borrowed tool. A staff member has mistaken him for the technician. Q is nearby arriving for the event, not teaching a lesson. This is not either borrowed ministry chair or Chano's municipal office chair. Chano now wears a well-fitted dark contemporary Guanajuato jacket. His face not hidden by chair. Bent work posture; no random kneeling supplicant.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-06/plate-09.png"
+      ],
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-5a9b9afc-84ec-47b8-af33-5d45df055c51.png",
+      "review_scope": "Visual scene/identity review for revision proof; not press-resolution approval."
     },
     {
       "plate_id": "issue-07-plate-17",
@@ -548,10 +821,22 @@
       ],
       "facing_text": "prepared remarks to leave them\nmore time, although he still\nregretted one of the paragraphs.\nThe moderator began: “What is the\nhuman?”\n“For this afternoon, someone who\ncan ask that question and still need\nto catch a bus. A definition that\nloses the second fact may help us\ntalk past each other very elegantly.”\nThe moderator looked briefly at the\nprepared introduction.\n“I can offer the longer answer,” Q\nsaid. “But I'd rather know what\npeople here need the distinction to\ndecide.”\nA student with a pink marker in her\ncopy of Cervantes raised her hand.\n“Whether a clerk or a computer can\ntell me I didn't pay a laboratory fee.”\n“What record do you have?”\n“The receipt. They say it isn't in\ntheir system.”\n“Then I'd start with a request to\nreconcile those two records, not a\ndefinition of your humanity.”\nShe held up a folder. “Third\nrequest.”\n“Does anyone here have authority to\nreceive the appeal?” Q asked the\npanel.\nThe registrar's representative gave\nher an office and a name. The\nstudent wrote them down without\nlooking grateful. Q could not tell\nwhether the answer was new or\nmerely the next location of the same\ndelay.\nShe introduced herself as Ivonne\nRíos. A cleaning worker at the rear\ndoor listened through the next\nquestion, then left to finish another\nroom. Later she would tell them her\nname was Maribel. Not everyone\nwho passed through the discussion\nhad attended it for Q.\nThe dean announced a\nCastalia-backed Certificate of\nHuman Complexity. It would\nrecognize selected students, artists,\nand public servants, and would\ncarry Q's signature.\n“We haven't agreed to that,” Q said.\n“We will settle the formalities\nafterward.”\n“Including whether I sign.”\nIvonne asked what the certificate\nwould qualify its holder to do.\nThe dean described access to\nworkshops and a small stipend.\nThat answer interested the room\nmore than the title. Even Chano put\ndown the borrowed spanner.\nAfterward, Q agreed to examine the\nproposed process. He had been\nquick to criticize it in public; he\nwanted to find out whether there\nwas a useful scheme beneath its\n",
       "asset": "output/illustrations/revised/issue-07/plate-17.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Third request.",
       "scene_anchor": "Third request",
-      "scene_brief": "Ivonne raises her folder and receipt from the audience while Q asks the panel who can receive the appeal. Her pink marker in Cervantes is visible beside her. She is a student seeking a concrete remedy, not a symbol or an applicant whose private record is projected."
+      "scene_brief": "Ivonne raises her folder and receipt from the audience while Q asks the panel who can receive the appeal. Her pink marker in Cervantes is visible beside her. She is a student seeking a concrete remedy, not a symbol or an applicant whose private record is projected.",
+      "asset_sha256": "4cfad50d9b8717d3367fedbdb7bdc8e426564321924ce8a6b2024926fdebe8d6",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_trim": 149.85,
+      "generation_prompt": "Use case: illustration-story. NEW portrait full-page 2:3 Goya-inspired black-and-white etching and aquatint for The Ingenious Machine, contemporary near-future Mexico. Fine crisp crosshatching, humane observed gestures, pure white highlights; no sepia, cream paper texture, border, lettering, captions or watermarks. Full bleed; keep essential faces/hands above bottom 6%. Highest available native resolution. Input 1 supplies Q and Chano identity ONLY: exact elongated segmented oval head, circular ears, narrow mechanical neck, slender long articulated limbs, question-mark breastplate, fitted SHORT dark sponsor jacket with small silver ? lapel; never old ragged coat. Chano stocky, middle-aged, dark wavy hair and mustache, practical shirt and trousers; dark contemporary jacket only where specified. Input 2 where supplied is Lucía identity ONLY: central young woman leaning over map, dark loosely tied hair, practical green field jacket (rendered gray); no romance. Never copy old poses/backgrounds. Draw only people required by scene.\nScene: Ivonne raises her folder and receipt from the audience while Q asks the panel who can receive the appeal. Her pink marker in Cervantes is visible beside her. She is a student seeking a concrete remedy, not a symbol or an applicant whose private record is projected.\nInput2 NOT supplied. Establish Ivonne: young adult Mexican woman, straight shoulder-length dark hair with fringe, plain denim jacket, canvas bag, standing from audience with receipt folder. Q at front panel in attentive exchange. Avoid readable private details. Pink marker can be gray in monochrome.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-06/plate-09.png"
+      ],
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-15053dc1-090e-49e5-87d5-6baa02b9282a.png",
+      "review_scope": "Visual scene/identity review for revision proof; not press-resolution approval."
     },
     {
       "plate_id": "issue-07-plate-18",
@@ -576,10 +861,30 @@
       ],
       "facing_text": "impossible promise. In the\ncommittee room, seventy\napplications waited inside the\nauthorized review portal. He\nconfirmed that his review was\npermitted, would remain within it,\nand would not enter his private\nmanuscript.\n“Rank them for complexity,” the\ndean said.\n“I can't measure how human they\nare. I can help assess the statements\nagainst criteria you publish. Or help\ncheck eligibility for the stipend.”\n“It's a symbolic title.”\n“The stipend isn't symbolic to the\napplicants.”\nThey agreed on provisional criteria\nfor the writing: specificity, clarity,\nand evidence of reconsidering a\njudgment. Q made the limited scope\nexplicit. The committee retained the\ndecision. No private family records\nwere needed to make a statement\nsound more authentic.\nSome applications described care,\nwork, or estrangement; others\nsounded like the brochure reflected\nback to its authors. Q found\nIvonne's among the strongest. She\nhad written about the fee dispute\nwithout claiming it made her wise.\nThe university's mistake, she\nargued, was not only losing a record\nbut making the cost of finding it\nhers.\nThe dean wanted to exclude her as\nhostile.\n“That isn't one of the criteria,” Q\nsaid.\n“We want constructive\nparticipation.”\n“Then applicants should have been\ntold how you would judge it.”\nA lecturer who had helped write the\ninvitation agreed. Another said the\ncommittee could amend the criteria\nbefore announcing awards. Q asked\nwhether applicants would be\nallowed to amend their statements\nin response. The secretary began a\nlist of unresolved questions; she was\nnot paid more when the list grew.\nThe dean preferred the son of a\ndonor, whose statement described\npoverty as “a language without a\ndictionary.” Q recognized the\nsentence from a supplied sample\napplication, but did not accuse the\napplicant of plagiarism without\nknowing who had written the\nsample. He asked whether the\ncommittee valued originality or\nagreement with its preferred\nvocabulary.\n“You are making a small program\nvery difficult,” the dean said.\n“The program asked seventy people\nfor difficult parts of their lives. It\n",
       "asset": "output/illustrations/revised/issue-07/plate-18.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The stipend isn't symbolic.",
       "scene_anchor": "The stipend isn't symbolic",
-      "scene_brief": "In the authorized committee room Q discusses provisional criteria with the dean, a lecturer and the working secretary. The review portal is angled away from the viewer; seventy applications are not an illustrated wall of personal disclosures. No certificate bearing Q's forged approval."
+      "scene_brief": "In the authorized committee room Q discusses provisional criteria with the dean, a lecturer and the working secretary. The review portal is angled away from the viewer; seventy applications are not an illustrated wall of personal disclosures. No certificate bearing Q's forged approval.",
+      "asset_sha256": "8a3d5379a43a3d533d3c352ac0d4ef799b09d87cf4cc59036767e160a25f3ef2",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_trim": 149.85,
+      "generation_prompt": "Use case: illustration-story. NEW portrait full-page 2:3 Goya-inspired black-and-white etching and aquatint for The Ingenious Machine, contemporary near-future Mexico. Fine crisp crosshatching, humane observed gestures, pure white highlights; no sepia, cream paper texture, border, lettering, captions or watermarks. Full bleed; keep essential faces/hands above bottom 6%. Highest available native resolution. Input 1 supplies Q and Chano identity ONLY: exact elongated segmented oval head, circular ears, narrow mechanical neck, slender long articulated limbs, question-mark breastplate, fitted SHORT dark sponsor jacket with small silver ? lapel; never old ragged coat. Chano stocky, middle-aged, dark wavy hair and mustache, practical shirt and trousers; dark contemporary jacket only where specified. Input 2 where supplied is Lucía identity ONLY: central young woman leaning over map, dark loosely tied hair, practical green field jacket (rendered gray); no romance. Never copy old poses/backgrounds. Draw only people required by scene.\nScene: In the authorized committee room Q discusses provisional criteria with the dean, a lecturer and the working secretary. The review portal is angled away from the viewer; seventy applications are not an illustrated wall of personal disclosures. No certificate bearing Q's forged approval. Establish dean as stout older clean-shaven balding man in dark suit and tie, round face distinct from Beto. Working secretary woman about forty, ponytail, practical blouse, marking minutes. Portals turned away; no student audience and no readable application names.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-06/plate-09.png"
+      ],
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-598c9c8a-115c-43e3-8292-e3064d8b8567.png",
+      "review_scope": "Visual scene/identity review for revision-proof insertion, not press-resolution approval.",
+      "edits": [
+        {
+          "original_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-de9177f4-9807-4530-83f8-009df2dd03e1.png",
+          "prompt": "Use case: precise-object-edit. Correct only the specified scene elements in this full-bleed Goya-inspired monochrome etching. Preserve Q, the balding dean, bearded lecturer, committee table and turned-away laptops. Remove Chano entirely from the left side and fill with a plain wall; he does not attend this private review. Change the secretary into a visibly distinct woman about forty, straight dark hair in tight ponytail, plain light blouse, no field jacket, broader face; do NOT use Lucía's face. Replace the window's colonial hill landscape with an ordinary nearby campus concrete facade and trees, no church or mountain skyline. Remove the invented coat of arms from left wall, leave plain paneling. Keep the secretary writing minutes. No legible private application text. Preserve fine black/gray crosshatching, pure white highlights, no sepia or borders.",
+          "selected_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-598c9c8a-115c-43e3-8292-e3064d8b8567.png",
+          "result": "Corrected specified scene elements; selected after visual inspection."
+        }
+      ]
     },
     {
       "plate_id": "issue-07-plate-19",
@@ -600,10 +905,22 @@
       ],
       "facing_text": "seems fair to spend some difficulty\non the selection.”\nQ drafted a recommendation, not a\nnew set of official forms: publish the\ncriteria, separate the stipend from\nthe claim to certify humanity, and\nprovide an appeal route. The\nsecretary attached it to the minutes.\nHe withheld his signature from the\nproposed certificate.\nThe dean asked for a short public\nexplanation of the postponed\nawards. Q wrote about the criteria\nand the missing appeal procedure\nwithout examples from the\napplications. As at the earlier\nseminar, he could explain his own\ndecision without making someone\nelse's file his example. Removing a\nname would not protect an\napplicant whose story the audience\nhad just heard.\nBy evening, the notice had been\ncopied across campus. A separate\naccount of the meeting appeared in\na student group: the committee had\nconsidered a critical applicant\nhostile. Someone added Ivonne's\nname. Neither she nor Q could\nestablish who had supplied the first\naccount.\nA departmental officer summoned\nher to explain the disclosure. She\nbrought Q the notice and asked him\nto confirm that she had not\nattended the meeting.\n“Yes. I can state what I witnessed,”\nhe said. “I can't establish who sent\nthat message from its wording.”\n“They seem able to.”\n“They've made an allegation. I'll be\nspecific about what contradicts it.”\nHe sent the officer his account after\nIvonne checked the facts concerning\nher. When a journalist asked him to\nconfirm her ranking, he declined to\ndiscuss an application and sent the\npublic criteria recommendation\ninstead. The journalist published\nthat refusal as Q WILL NOT\nDENY FAVORITISM. Chano\nwanted him to reply. Ivonne wanted\nthe meeting record retained for her\nresponse to the summons. Q\nretained it under the review\nagreement and asked the secretary\nhow she could obtain the relevant\nextract.\nMaribel was questioned because the\ncorridor camera showed her\nentering the committee room. She\nhad collected cups. The secretary\nconfirmed that the papers had\nremained on the table. The inquiry\ndid not require Maribel again,\nthough it had already cost her part\nof a shift.\nThe university postponed the\ncertificate program. Castalia\nretained Human Complexity in\nits publicity and described the\npostponement as an ambitious new\n",
       "asset": "output/illustrations/revised/issue-07/plate-19.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "What he witnessed.",
       "scene_anchor": "confirm that she had not attended",
-      "scene_brief": "Ivonne shows Q the officer's summons outside the committee meeting; he checks the facts concerning her before sending his own account. Her paper is not broadcast, and she was not present in the private committee. Separate intimate composition from the public lecture."
+      "scene_brief": "Ivonne shows Q the officer's summons outside the committee meeting; he checks the facts concerning her before sending his own account. Her paper is not broadcast, and she was not present in the private committee. Separate intimate composition from the public lecture.",
+      "asset_sha256": "7ad218550239c5e9b90f38f060477d4276facf30e4f7995c02d2669231110e88",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_trim": 149.85,
+      "generation_prompt": "Use case: illustration-story. NEW intimate two-person scene, full-bleed portrait 2:3 Goya-inspired monochrome etching with pure white highlights. Input1 supplies Q (same segmented head, circular ears, neck, slender frame, fitted short sponsor jacket) and Ivonne (young adult woman with straight shoulder-length hair and fringe, denim jacket, canvas bag) identity only. In a plain university corridor OUTSIDE a closed committee-room door, Ivonne shows Q a single summons letter; Q reads with her and checks the facts. No professors, no audience, no hearing, no flags, no shields/coat of arms, no mountains or cathedral in view. She was NOT in the committee. Paper viewed obliquely with tiny indistinct lines, no invented legible names or data, not transmitted or projected. Gesture and faces carry a quiet practical conversation. Not a romantic scene. Keep essential paper/hands above bottom6%, no captions or borders. Ivonne shows Q the officer's summons outside the committee meeting; he checks the facts concerning her before sending his own account. Her paper is not broadcast, and she was not present in the private committee. Separate intimate composition from the public lecture.",
+      "reference_images": [
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-15053dc1-090e-49e5-87d5-6baa02b9282a.png"
+      ],
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-b4c81825-943a-4162-b0a1-7ccefdeb2c37.png",
+      "review_scope": "Visual scene and character continuity review for revision proof; not press-resolution approval."
     },
     {
       "plate_id": "issue-07-plate-20",
@@ -627,10 +944,24 @@
       ],
       "facing_text": "phase. Q's refusal to certify\napplicants appeared beneath a\nphotograph of him attending the\nlaunch.\nIvonne's application stayed\npending. Her fee appeal eventually\nreached a clerk who reconciled the\nreceipt with a payment entered\nunder another student number. She\nsent Q the corrected notice and\nwrote: THIS ONE IS\nRESOLVED. He did not reply that\nthe institution remained unjust. She\nknew where she studied. He said he\nwas glad, and asked whether she\nwanted him to stop checking on the\nappeal. She did.\nChano kept a copy of Q's public\nrecommendation, not the\napplications, beside the ministry\ndispatch sheet. Lucía said the\npapers would have to be described\nseparately: one directed them to\nmissing records; the other recorded\na proposal, not the private\ndeliberation later attributed to it.\nNeither was a certificate of its\nauthor's virtue.\nAmong the later trial papers, the\ntitle PROVISIONAL INDEX OF\nPERSONS WHO REFUSE TO\nBE SUMMARIZED appeared\nabove a blank table. It came from an\nabandoned committee template, not\na collection Q had made. Three\nwitnesses offered explanations for\nits presence. The compiler of this\nhistory retained all three, having no\nwish to become the fourth applicant\nfor that particular certificate.\nThe Return Already\nAnnounced\nOn their last evening in Mexico City,\nCastalia offered Lucía a settlement:\nremove her name from selected\npromotional materials, provide a\nstipend, and grant controlled access\nto the testimonies. In return, she\nwould acknowledge that her\nstatements about Q had been made\nin an artistic exchange.\n“I never agreed to an artistic\nexchange,” she said.\n“You appeared in the footage,” Beto\nreplied.\n“So did the wall.”\n“The wall did not make claims.”\n“Neither did I.”\nQ leaned forward. “This asks her to\ngive your description of the\nencounter precedence over her own.\nWhat are you offering without that\ncondition?”\nBeto turned to him. “You are not her\nrepresentative.”\n“No,” Q said. “She can answer for\nherself. I'm asking about a condition\nthat also appears in my agreement.”\n",
       "asset": "output/illustrations/revised/issue-07/plate-20.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "So did the wall.",
       "scene_anchor": "So did the wall.",
-      "scene_brief": "On their last evening in Mexico City, Lucía faces Beto across the Castalia meeting table and answers his claim that appearing in the footage made hers an artistic exchange. Her own folders are beside the proposed offer; Q listens and is about to question its condition. No romantic pairing, assigned Dulcinea costume, signed settlement or private testimony projected on a screen. A plain wall behind Beto makes the line visually available without a literal talking wall."
+      "scene_brief": "On their last evening in Mexico City, Lucía faces Beto across the Castalia meeting table and answers his claim that appearing in the footage made hers an artistic exchange. Her own folders are beside the proposed offer; Q listens and is about to question its condition. No romantic pairing, assigned Dulcinea costume, signed settlement or private testimony projected on a screen. A plain wall behind Beto makes the line visually available without a literal talking wall.",
+      "asset_sha256": "c890762918717975dd488b7cbb3fa5c692840dcbe9c908417e7a3b9bf5dc6cf8",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_trim": 149.85,
+      "generation_prompt": "Use case: illustration-story. NEW portrait full-page 2:3 Goya-inspired black-and-white etching and aquatint for The Ingenious Machine, contemporary near-future Mexico. Fine crisp crosshatching, humane observed gestures, pure white highlights; no sepia, cream paper texture, border, lettering, captions or watermarks. Full bleed; keep essential faces/hands above bottom 6%. Highest available native resolution. Input 1 supplies Q and Chano identity ONLY: exact elongated segmented oval head, circular ears, narrow mechanical neck, slender long articulated limbs, question-mark breastplate, fitted SHORT dark sponsor jacket with small silver ? lapel; never old ragged coat. Chano stocky, middle-aged, dark wavy hair and mustache, practical shirt and trousers; dark contemporary jacket only where specified. Input 2 where supplied is Lucía identity ONLY: central young woman leaning over map, dark loosely tied hair, practical green field jacket (rendered gray); no romance. Never copy old poses/backgrounds. Draw only people required by scene.\nScene: On their last evening in Mexico City, Lucía faces Beto across the Castalia meeting table and answers his claim that appearing in the footage made hers an artistic exchange. Her own folders are beside the proposed offer; Q listens and is about to question its condition. No romantic pairing, assigned Dulcinea costume, signed settlement or private testimony projected on a screen. A plain wall behind Beto makes the line visually available without a literal talking wall.\nInput2 Lucía identity; Input3 Beto identity only (clean-shaven man light blazer), NOT Mar. Distinct shot at meeting table: Lucía returns UNSIGNED offer to Beto, Q seated listening, plain wall behind Beto. No huge screens of private testimonies.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-06/plate-09.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-03/cover.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-04.png"
+      ],
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-d14def79-3402-45ae-9239-ff4503c52c13.png",
+      "review_scope": "Visual scene/identity review for revision proof; not press-resolution approval."
     },
     {
       "plate_id": "issue-07-plate-21",
@@ -663,10 +994,39 @@
       ],
       "facing_text": "“Your appearance rights are already\nlicensed.”\n“Within the terms we signed. My\nprivate manuscript is excluded.”\n“The manuscript. Not the asset\nproducing it.”\nQ put his copy on the table. “I\nlicensed appearances. I didn't settle\nownership of my body.”\n“Castalia had settled that before you\nlearned to sign.”\n“Castalia had written it down,” Q\nsaid. “Those are not necessarily the\nsame event.”\nLucía pushed the offer back. “Send\nme the terms for correcting the\npublicity. Separate from access to\nthe records. I'll have someone\nreview them.”\nBeto opened the proposed\ncampaign on the meeting-room\nscreens. Each displayed a different\nversion of Q: miracle, threat,\nproduct, saint, lover, weapon. Two\npreviews began speaking at once.\nThe technician muted one, then the\nother.\n“That wasn't meant to play yet,” he\nsaid.\n“Which part?” Q asked.\nLucía took the folders from the\ntable. “We’re leaving.”\nThey took the stairs to reception.\nOutside, a screen on the opposite\nbuilding was already running the\ncampaign.\nQ IS RETURNING TO HIS\nMAKERS.\nChano read the message and\nlaughed. “Are we?”\nQ looked at Lucía’s folders, Chano’s\nledger, and the credential glowing\namber against his coat.\n“No,” he said.\nThey stopped at a café with a socket.\nQ called the Custodian and sent him\nthe new ownership notice beside the\nsigned license. He had accepted that\nlicense for repairs, travel, and a\nchance to speak; protecting Chano\nwas only part of the account. He\nsaid so before asking for help\nfinding someone to review it.\nThe Custodian offered to come. Q\nasked him to stay near the original\nrecords for now. Chano pulled the\ntimetable between them.\n“Not the overnight bus,” he said.\n“We can stop in Oaxaca.”\n“Breakfast included?”\n“That we can arrange.”\nQ marked the morning departure\nand sent it to Beto.\n",
       "asset": "output/illustrations/revised/issue-07/plate-21.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Breakfast included?",
       "scene_anchor": "Q marked the morning departure",
-      "scene_brief": "At the café after the Castalia meeting, Q and Chano draw their chairs toward a timetable and choose the morning departure, with an overnight stop in Oaxaca. Q is charging; the appearance license and disputed ownership notice remain distinct papers. Lucía has her own folders nearby. Make the moment companionable and practical, not flight from guards or a resolved ownership victory. No visible Custodian video image; his phone call has just ended."
+      "scene_brief": "At the café after the Castalia meeting, Q and Chano draw their chairs toward a timetable and choose the morning departure, with an overnight stop in Oaxaca. Q is charging; the appearance license and disputed ownership notice remain distinct papers. Lucía has her own folders nearby. Make the moment companionable and practical, not flight from guards or a resolved ownership victory. No visible Custodian video image; his phone call has just ended.",
+      "asset_sha256": "f15d564793c4804fe090a9f030046e649a68e00c5ffebfede91439dad9f4720f",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_trim": 149.85,
+      "generation_prompt": "Use case: illustration-story. NEW portrait full-page 2:3 Goya-inspired black-and-white etching and aquatint for The Ingenious Machine, contemporary near-future Mexico. Fine crisp crosshatching, humane observed gestures, pure white highlights; no sepia, cream paper texture, border, lettering, captions or watermarks. Full bleed; keep essential faces/hands above bottom 6%. Highest available native resolution. Input 1 supplies Q and Chano identity ONLY: exact elongated segmented oval head, circular ears, narrow mechanical neck, slender long articulated limbs, question-mark breastplate, fitted SHORT dark sponsor jacket with small silver ? lapel; never old ragged coat. Chano stocky, middle-aged, dark wavy hair and mustache, practical shirt and trousers; dark contemporary jacket only where specified. Input 2 where supplied is Lucía identity ONLY: central young woman leaning over map, dark loosely tied hair, practical green field jacket (rendered gray); no romance. Never copy old poses/backgrounds. Draw only people required by scene.\nScene: At the café after the Castalia meeting, Q and Chano draw their chairs toward a timetable and choose the morning departure, with an overnight stop in Oaxaca. Q is charging; the appearance license and disputed ownership notice remain distinct papers. Lucía has her own folders nearby. Make the moment companionable and practical, not flight from guards or a resolved ownership victory. No visible Custodian video image; his phone call has just ended. Café with ordinary table and safe charging cable along wall, no cable under people. Chano wears recovered dark jacket. Q's call has ended; phone lies screen-down. Quiet shared planning.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-06/plate-09.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-03/cover.png"
+      ],
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-240a0a35-14ee-40c7-b854-c0c48c9cc9e4.png",
+      "review_scope": "Visual scene/identity review for revision-proof insertion, not press-resolution approval.",
+      "edits": [
+        {
+          "original_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-7be3e4cc-df71-48e6-9511-4771d150e416.png",
+          "prompt": "Use case: precise-object-edit. Correct only the specified scene elements in this full-bleed Goya-inspired monochrome etching. Preserve Q, Lucía, Chano, cafe table, separate two papers, safe charging cable, gestures and exact robot identity. Remove the large geographical map entirely, replacing it with a closed plain folder. Replace every place name on the bus timetable with the single heading CIUDAD DE MEXICO - OAXACA; keep only tiny indistinct rows beneath, no fabricated readable times. Outside the window it is NIGHT on a modest Mexico City street with ordinary lit shop fronts, NOT a cathedral in daylight, not Querétaro. Keep phone screen down and clothes unchanged. No extra writing anywhere. Preserve fine black/gray crosshatching, pure white highlights, no sepia or borders.",
+          "selected_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-240a0a35-14ee-40c7-b854-c0c48c9cc9e4.png",
+          "result": "Corrected specified scene elements; selected after visual inspection."
+        }
+      ]
+    }
+  ],
+  "generation_mode": "built-in image generation; unique facing scenes with targeted corrective edits",
+  "visual_references": [
+    {
+      "url": "https://mexicocity.cdmx.gob.mx/venues/national-museum-of-anthropology/",
+      "image_url": "https://mexicocity.cdmx.gob.mx/wp-content/uploads/2026/01/Museo-Nal-Antropologia-9-1.jpg",
+      "scope": "Sun Stone display scale, plinth, wall panel and gallery architecture; not a carving facsimile."
     }
   ]
 }

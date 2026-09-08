@@ -105,7 +105,25 @@ about 150 dpi: a verified revision proof, not an A+ press master. See the
 [production record](../../novel/development/ISSUE_06_PRODUCTION.md) and
 [art/prompt manifest](../illustrations/revised/issue-06/manifest.json).
 
-The remaining sixteen issues still require their revised illustrated builds.
+## Current Issue 7 revision proof
+
+- [English Issue 7: revised reading PDF](../pdf/ingenious-issue-07-revised-en-bw.pdf)
+- [English Issue 7: revised A3 folding PDF](../pdf/ingenious-issue-07-revised-en-bw-a3.pdf)
+
+44 pages, twenty-two unique plates including the cover, and eleven A3 duplex
+sheets. All 7,139 words flow through twenty-one two-column narrative pages in
+Georgia 12.3/17.425-point type without forced interlude breaks. Distinct facing
+scenes follow Ofelia's photograph, the Menard reader, Nadia and Noemí's work,
+the records queue, translation class, committee and final café. The source text
+is unchanged. Unpainted text backgrounds, lossless grayscale and full-bleed
+comic trim continue the proof specification. Print all twenty-two A3 landscape
+sides at actual size, short-edge duplex; folding leaves an A4 carrier around
+comic trim. All reading pages and the A3 order were checked. Native art remains
+about 150 dpi, not a press master. No print job was sent. See the
+[production record](../../novel/development/ISSUE_07_PRODUCTION.md) and
+[art/prompt manifest](../illustrations/revised/issue-07/manifest.json).
+
+The remaining fifteen issues still require their revised illustrated builds.
 
 ## Earlier editions
 

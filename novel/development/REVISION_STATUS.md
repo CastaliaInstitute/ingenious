@@ -10,7 +10,17 @@ illustrated issues, verify affected print PDFs, and push the revision.
 The latest user clarification governs the ending: “Death just means we finish
 the book.” The source now permits Q to remain alive when the writing stops.
 
-Latest checkpoint: the paid-companion continuity audit added eighty words to
+Latest checkpoint: Issue Seven now has verified 44-page reading and 22-side A3
+revision proofs, with 22 unique plates and eleven duplex sheets. All 7,139 words,
+44 rendered pages, facing mappings, grayscale assets and booklet pairs were
+checked. Seven corrective image edits repaired inherited settings, the seminar
+projection, scene membership and the final café. The manuscript, outline and
+Issues 1-6 PDFs are unchanged from `8ddaf2a8`; the living ending is retained.
+See `ISSUE_07_PRODUCTION.md` for evidence and limitations. Issues 1-7 are current
+illustrated revision proofs; fifteen remain. Native art is approximately 150 dpi,
+not a press master. No print job was sent; the overall goal remains active.
+
+Previous checkpoint: the paid-companion continuity audit added eighty words to
 Chapter Two, establishing the next-day rate separately from meals and fares,
 checking it against Q's card limit, and leaving subsequent days to agreement.
 Chapters Six and Sixteen now refer back to an agreement shown in the novel.
@@ -344,11 +354,11 @@ Chapter Seven's corporate confrontation after its four interludes; see
 choosing a morning departure, while all four interludes remain verbatim. The
 records office precedes the later-in-the-week translation workshop. The outline
 agrees and no longer demands a lesson or failed literary reference at every stop.
-Issue 7 remains 44 pages with 22 planned plates and eleven A3 sheets at
-12.3/17.425 pt. Its 7,139 printable words pass source-order checks; pages 14,
-40 and 42 and the center spread have visual review. All 22 issue manifests
-match fresh layout plans. Issue 4 has subsequently been illustrated and
-checked as a revision proof; Issue 7 still has planned art only.
+Issue 7 remains 44 pages with 22 plates and eleven A3 sheets at 12.3/17.425 pt.
+Its subsequent illustrated build verifies all 7,139 printable words and all
+44 rendered pages; see `ISSUE_07_PRODUCTION.md`. At the earlier pacing
+checkpoint all 22 issue manifests matched fresh layout plans. Issues 4-7 have
+subsequently been illustrated and checked as revision proofs.
 Chapter Five's subsequent pacing revision is now recorded in
 `CHAPTER_05_PACING_REVIEW.md`: the office scene is protected, the market has a
 different comic action, the radio visit includes pleasure, and departure follows
@@ -361,10 +371,12 @@ outcomes and later chapters remain unchanged. Internal layouts and both facing
 manifests are refreshed; those two chapters have no new illustrated release.
 Issue Six now also has ten inspected plates, a verified 20-page reading proof
 and ten-side A3 proof. Its existing paid-travel offer survives the bounded
-four-call dismissal test; the source is unchanged. Next: continue with Issue
-Seven's unique source-bound plates, extend fresh-context scene tests and audit
-the paid-companion agreement without inventing a running budget. Sixteen issues
-still need revised approved art. The pacing reports
+four-call dismissal test; the source is unchanged. The paid-companion audit
+subsequently established the agreement in Chapter Two and rebuilt Issue Two;
+see `PAID_COMPANION_CONTINUITY.md`. Issue Seven's unique plates are now complete.
+Next: continue with Issue Eight's source-bound plates and extend fresh-context
+scene tests without inventing a running budget. Fifteen issues still need
+revised approved art. The pacing reports
 are bounded structural reviews, not a new
 full reading of both books. Earlier chapter-by-chapter continuation notes below
 are a history of the voice pass, not the latest queue.
@@ -630,12 +642,12 @@ illustrated edition as unfinished requirements.
    The old public-example packet at `/tmp/ingenious-fresh-scene-packets.json`
    contains a superseded disclosure event and was not run; replace it before use.
 5. Rebuild the remaining English chapter issues only after text and plate placement
-   are reconciled. The new Issue 1-6 revision proofs represent their current chapters.
+   are reconciled. The new Issue 1-7 revision proofs represent their current chapters.
    English is the current revision source; the Spanish edition remains earlier.
 6. Use the new explicit-manifest builder, not the old modulo-indexed asset maps.
    It maps even narrative pages to the following odd plate pages, rejects stale
    chapter/asset hashes and repeats, and checks rendered text coverage. Extend
-   these checks and unique facing-scene illustrations through the remaining sixteen issues.
+   these checks and unique facing-scene illustrations through the remaining fifteen issues.
 7. Restore the requested print specifications: readable larger text, continuous
    flow, black ink and unpainted text backgrounds for cream stock, captions in a
    margin, full-bleed art, and the 24-page/12-plate/six-sheet Issue 1 proof. Verify
