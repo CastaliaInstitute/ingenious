@@ -260,8 +260,15 @@ the book.” The source now permits Q to remain alive when the writing stops.
 ## Required next work
 
 Current checkpoint: the second whole-chapter voice pass is complete through
-Chapter Thirteen; continue with Chapter Fourteen. Earlier chapter-by-chapter
+Chapter Fourteen; continue with Chapter Fifteen. Earlier chapter-by-chapter
 continuation notes below are a history of this pass, not the latest queue.
+`CHAPTER_14_VOICE_REVIEW.md` and Exercise 25 add the dispatch conversation,
+driver-informed route comparison, Irma's signed suspension and a natural bus-
+station joke with Q. Issue 14's 2,720 words occupy 20 pages with ten planned
+plates and five A3 duplex sheets. The reviewed 13.3/18.8417-point setting replaces
+a last column of only three lines with substantial continuous text. Pages 4,
+12, 14 and 18 were rendered and inspected. Exact text, white backgrounds, page
+geometry and booklet pairs pass; no new artwork is generated or approved.
 `CHAPTER_13_VOICE_REVIEW.md` and Exercise 24 record the current revision.
 Issue 13's internal proof contains 3,742 words on 24 pages, twelve planned plates
 and six A3 duplex sheets. The reviewed 12.7/17.9917-point setting keeps the final

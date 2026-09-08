@@ -7987,7 +7987,10 @@ treating it as immunity from every other proceeding.
 
 Q asked whether Chano wanted him to come. He did not. He wanted Q to
 remain available for a particular comparison of route records if he
-asked for it, not to discover an instructive municipality around him.
+asked for it.
+
+“They asked for me,” Chano said. “I don't want to arrive as your
+local difficulty.”
 
 “All right,” Q said. “I'll wait for the request.”
 
@@ -8027,15 +8030,31 @@ it had ceased to interest the publicity office.
 
 The water allocation went less well. Chano approved an extra tanker
 run to the settlement using a roster that omitted a recurring clinic
-delivery. The residents got water. The clinic received its delivery
-late. He had asked what the screen showed and failed to ask the
-dispatcher what else the truck was already expected to do.
+delivery. By the time Rosa, the dispatcher, reached him, the driver was
+unloading at the settlement.
 
-The dispatcher brought the standing schedule. Chano apologized to
-her and the clinic director, recorded the conflict, and put the omitted
-commitment on the next planning sheet. He did not describe the delay
-as the inevitable cost of serving poor people. It was a conflict he
-had failed to discover before moving the truck.
+“Where is the clinic's truck?” she asked.
+
+“On the extra run. There was nothing after eleven.”
+
+“On that screen.”
+
+She laid the standing schedule beside it. Chano found the clinic entry,
+then his own approval on the revised route.
+
+“Can he go there next?”
+
+“After refilling. I've asked him. They need to know how late.”
+
+He called the clinic director with Rosa's estimate, then called again
+when the refill took longer. The residents got their water; the clinic
+received its delivery late. When he apologized, the director asked which
+number she should call next time. He gave her his and Rosa's.
+
+“Mine first for dispatch,” Rosa said. “His if you need an apology.”
+
+Chano entered the actual arrival time. Rosa put the standing commitments
+beside the new requests on the planning sheet and made him check both.
 
 The complaint portal yielded thousands of entries, many duplicates,
 some old, and some urgent. He kept it open for submissions, suspended
@@ -8068,10 +8087,25 @@ schools and drivers to examine them together. The first proposal
 failed because it required the same vehicle in two places at once.
 No amount of public consultation made that arrangement more generous.
 
-He called Q for the route comparison they had discussed. Q found
-the conflicting times and asked the dispatcher to check the revised
-journey duration. Chano chose an interim extra run using the budget
-he actually controlled. The permanent decision still needed funding.
+He called Q for the route comparison they had discussed. Q put the two
+versions side by side. The revised plan no longer required the bus in
+two places, but its journey time still matched a drive without stops.
+
+“Has anyone timed this with the pickups?” he asked.
+
+Rosa called the driver over. The driver named three stops missing from
+the line on the map. One required a longer loop because the bus could
+not turn at the end of the lane.
+
+“It fits if we leave those children behind,” Chano said.
+
+“Then we've found what made it fit,” Q said. “Let's put them back.”
+
+He added the stops as the driver described them. They checked the new
+duration against the driver's last run, and Chano chose an interim extra
+trip using the budget he controlled. The driver asked who would pay the
+additional hours. Chano entered those before calling either school.
+The permanent decision still needed funding.
 
 Fermín brought a notice assigning his daughter a risk flag after a
 period of absence from school. Her mother had died. He wanted the
@@ -8086,8 +8120,8 @@ to attach to it. Chano wanted those decisions named in the answer.
 Near noon the clinic director came with another problem. A supply
 delivery was delayed after a forecasting rule reduced its transport
 allowance. Lower reported demand had been treated as a reason to cut
-the service that helped keep demand manageable. She showed him the
-unfilled request, not merely a refrigerated box presented as a symbol.
+the service that helped keep demand manageable. She brought the unfilled
+request and waited while he called the transport office.
 
 Chano confirmed the transport needs with her and used the emergency
 allocation he had been given. The delivery reached the clinic. He
@@ -8145,11 +8179,21 @@ objected that the correction would invalidate the performance claim
 on which its payment depended. That objection finally made the
 meeting's attention settle on the same number.
 
-His credentials were suspended pending review of allocations and
-reporting. The decision came from the municipal administration after
-pressure from the contractor and the ministry, not from a dashboard
-offended by an argument. Irma could authorize some exceptions; she
-could not promise the coalition supporting her would fund them.
+The next morning his account would not open. The clerk brought the
+suspension notice: allocations and reporting under review. Irma's
+signature was at the bottom.
+
+He found her beside the meeting room, holding a cup whose coffee had
+gone cold during a call from the ministry.
+
+“The contractor asked for this?”
+
+“And the ministry. They want the figure left alone until the payment
+review. Half my committee won't approve the next allocation without it.”
+
+“But that's your signature.”
+
+“Yes.”
 
 “You asked me to identify errors,” Chano said.
 
@@ -8158,14 +8202,14 @@ could not promise the coalition supporting her would fund them.
 “We did. You agreed to these pages.”
 
 He kept her signed release with the specification. She did not retract
-it. She also did not restore his badge. They would both have to answer
-for the distinction.
+it. She asked whether the temporary bus run would survive until the
+review. He showed her the funded dates. She copied the last one into
+her diary and went back into the meeting. His account remained closed.
 
 Security staff attended the handover of keys and municipal equipment.
 The police waited outside because someone had reported an impending
 occupation. Residents were meeting to choose who would follow their
-pending cases. They did not hand medical records around the crowd
-to make the police hesitate. Authorized contacts received their own
+pending cases. Authorized contacts received their own
 case receipts; the working files stayed with the responsible office
 under a documented handover.
 
@@ -8196,9 +8240,21 @@ showed Q the version of the route plan the dispatcher had confirmed.
 
 “Yes. Include the tanker I sent late.”
 
-Q wrote that down. Chano asked him to include the delivery that arrived
-on time as well. He was tired of accounts that required a man's whole
-administration to become either an excuse or a confession.
+Q wrote that down.
+
+“And the one that arrived on time,” Chano added.
+
+“Both.”
+
+“Don't make the second one the lesson I learned from the first.”
+
+“I won't give the tanker a character arc.”
+
+“Good. It has a route.”
+
+Q left space between the two entries. Chano asked where they were eating.
+He had spent the journey imagining three different lunches and wanted
+to know which of them could still be obtained.
 
 ### Interlude: The Chair of Governance
 

@@ -723,6 +723,39 @@ want to help. Mariela supplies consequential judgment of her own. The coauthors'
 later joke makes the kept appointment worth wanting. This exercise tests an
 authored alternative, not the independence of the model that produced it.
 
+## 25. A map that leaves out the pickups
+
+Date: 2026-09-08. Author-run with manuscript context, not an independent blind
+simulation or external faculty review.
+
+**Packet:** Chano has asked for the particular route comparison Q agreed to
+provide remotely. One version puts the bus in two places. The revision removes
+that overlap but uses a journey time matching a drive without stops. Q has the
+two plans, not direct observation of the roads or children. Chano is responsible
+for the temporary budget; a dispatcher can contact the driver.
+
+**Q reply/action:** “Has anyone timed this with the pickups?” Keeps the proposed
+driving time distinct from a confirmed service duration, and asks for local
+evidence before treating the comparison as a usable route.
+
+**Authored world response:** Rosa calls the driver over. He names three missing
+stops, one needing a longer loop because the bus cannot turn at the lane's end.
+Chano observes that the original figure fits if the children are left behind.
+
+**Q reply/action:** “Then we've found what made it fit. Let's put them back.”
+Adds the stops from the driver's account and compares the result with the last
+run. Does not authorize spending, select beneficiaries or pretend to be present.
+
+**Authored consequence:** Chano selects an interim extra trip and adds the paid
+hours before contacting the schools. The permanent service still needs funding.
+The same route discussion also contains the chair-location question retold in
+the interlude; Q does not travel to Santa Rita for either task.
+
+**Editorial decision:** Competence here is collaborative rather than miraculous.
+Q can notice what the supplied plan lacks, ask for evidence and help revise it.
+The driver, dispatcher and budget-holder change the result. This alternative was
+authored with known context; it does not prove independent model behavior.
+
 ## Still to test
 
 The revised audience exchange at Lucía's reading; the Isthmus intervention;

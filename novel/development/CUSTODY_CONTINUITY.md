@@ -72,6 +72,18 @@ alive in the three-years-later coda, which is a narrated forward glance.
 
 ## Changes through Chapter Sixteen
 
+Chapter Fourteen keeps Q remote during Santa Rita's route work. Rosa supplies
+dispatch knowledge; the driver supplies three omitted stops and the actual-run
+timing. Chano approves the interim run and additional paid hours from his
+delegated budget. Q does not claim to observe these roads himself or fund the
+permanent service. The earlier clinic tanker arrives late after a refill;
+the later supply delivery succeeds. Both results belong in the account.
+
+Irma signs the suspension after contractor and ministry pressure. She does not
+retract the specification release; she records the funded bus deadline without
+restoring Chano's account. The chair's complaint-desk assignment precedes the
+suspension. Its later surplus sale and repair remain separate from this handover.
+
 | Item or commitment | State after the hearing | Constraint on later scenes |
 | --- | --- | --- |
 | Q's body and travel | Ownership remains disputed under an interim order; the approved accompanied schedule continues pending review. | No unexplained permanent confinement, unrestricted departure, or escape. The original day trip remains authorized. |
