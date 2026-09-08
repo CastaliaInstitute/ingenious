@@ -10,6 +10,14 @@ illustrated issues, verify affected print PDFs, and push the revision.
 The latest user clarification governs the ending: “Death just means we finish
 the book.” The source now permits Q to remain alive when the writing stops.
 
+Latest production checkpoint: Issue Five has a verified 44-page illustrated
+reading proof and twenty-two-side A3 proof, with twenty-two unique plates and
+eleven duplex sheets. `ISSUE_05_PRODUCTION.md` records source/asset hashes,
+full-text and visual checks, corrections and the approximately 150-dpi press
+limitation. The manuscript is unchanged from `fe899220`. Issues 1-5 are current
+illustrated revision proofs; seventeen issues still need revised art. No print
+job was sent and the overall revision goal remains active.
+
 ## Evidence so far
 
 - `Q_DESIGN.md` contains the current motivation and simulation design. The prior
@@ -78,7 +86,8 @@ the book.” The source now permits Q to remain alive when the writing stops.
   the local visits. `CHAPTER_05_PACING_REVIEW.md` records the bounded review and
   checks: 7,202 printable words, 44 pages, 22 planned plates and eleven A3 duplex
   sheets at Georgia 12.45/17.6375 pt. This supersedes the earlier Chapter 5 layout,
-  not the already illustrated Issues 1-4. No new Issue 5 art is approved.
+  not the already illustrated Issues 1-4. At that pacing checkpoint no new
+  Issue 5 art was approved; the subsequent illustrated proof is recorded below.
 - Chapter 6 distinguishes the mayor's authority from the marketed governorship.
   Q maintains calls, repair needs, paid companionship, and the agreed forest
   inspection. The hose fitting is delivered successfully. His writing project
@@ -288,6 +297,17 @@ the book.” The source now permits Q to remain alive when the writing stops.
   and Chano's role at the old display lever. A two-line cover title avoids the
   dark curtain. `ISSUE_04_PRODUCTION.md` records the PDF and visual checks.
   Issues 1-4 are now illustrated revision proofs; eighteen issues remain.
+- Issue 5 now has twenty-two unique plates and complete 44-page reading /
+  twenty-two-side A3 proofs: 7,202 words, eleven duplex sheets, continuous
+  Georgia 12.45/17.6375-point text. Built-in generation and targeted edits keep
+  Q and returning people consistent, place the reserve scenes in the oyamel
+  highlands, and preserve practical actions from each facing page. Four image
+  edits correct the monarch's position and three backgrounds; two-line cover
+  type shifts into the open sky. All 44 reading renders and selected A3 spreads
+  have visual review. Independent extraction, grayscale/lossless image checks,
+  every imposition pair and all twenty-two current manifest bindings pass.
+  The manuscript and existing Issue 1-4 PDFs remain byte-identical to `fe899220`.
+  See `ISSUE_05_PRODUCTION.md`; this is not a press master or new literary grade.
 
 ## Required next work
 
@@ -310,14 +330,15 @@ checked as a revision proof; Issue 7 still has planned art only.
 Chapter Five's subsequent pacing revision is now recorded in
 `CHAPTER_05_PACING_REVIEW.md`: the office scene is protected, the market has a
 different comic action, the radio visit includes pleasure, and departure follows
-the interludes. Its current 44-page layout has 22 planned plates, not finished
-illustrations. All 22 issue manifests match fresh plans after this change.
+the interludes. Its 44-page layout subsequently received 22 inspected plates
+and complete reading/A3 revision proofs; see `ISSUE_05_PRODUCTION.md`.
+All 22 issue manifests match fresh plans after this change.
 The paired Chapters Ten/Sixteen review now reduces repeated explanations and
 consolidates arrival paperwork; see `RETURN_HEARING_PACING_REVIEW.md`. Custody
 outcomes and later chapters remain unchanged. Internal layouts and both facing
-manifests are refreshed; there is no new illustrated release.
-Next: produce Issue Five's unique source-bound plates and extend fresh-context
-scene tests. Eighteen issues still need revised approved art. The pacing reports
+manifests are refreshed; those two chapters have no new illustrated release.
+Next: continue with Issue Six's unique source-bound plates and extend
+fresh-context scene tests. Seventeen issues still need revised approved art. The pacing reports
 are bounded structural reviews, not a new
 full reading of both books. Earlier chapter-by-chapter continuation notes below
 are a history of the voice pass, not the latest queue.
@@ -582,12 +603,12 @@ illustrated edition as unfinished requirements.
    The old public-example packet at `/tmp/ingenious-fresh-scene-packets.json`
    contains a superseded disclosure event and was not run; replace it before use.
 5. Rebuild the remaining English chapter issues only after text and plate placement
-   are reconciled. The new Issue 1-4 revision proofs represent their current chapters.
+   are reconciled. The new Issue 1-5 revision proofs represent their current chapters.
    English is the current revision source; the Spanish edition remains earlier.
 6. Use the new explicit-manifest builder, not the old modulo-indexed asset maps.
    It maps even narrative pages to the following odd plate pages, rejects stale
    chapter/asset hashes and repeats, and checks rendered text coverage. Extend
-   these checks and unique facing-scene illustrations through the remaining eighteen issues.
+   these checks and unique facing-scene illustrations through the remaining seventeen issues.
 7. Restore the requested print specifications: readable larger text, continuous
    flow, black ink and unpainted text backgrounds for cream stock, captions in a
    margin, full-bleed art, and the 24-page/12-plate/six-sheet Issue 1 proof. Verify

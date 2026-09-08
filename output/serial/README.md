@@ -67,7 +67,25 @@ no print job was sent. See the
 [production record](../../novel/development/ISSUE_04_PRODUCTION.md) and
 [art/prompt manifest](../illustrations/revised/issue-04/manifest.json).
 
-The remaining eighteen issues still require their revised illustrated builds.
+## Current Issue 5 revision proof
+
+- [English Issue 5: revised reading PDF](../pdf/ingenious-issue-05-revised-en-bw.pdf)
+- [English Issue 5: revised A3 folding PDF](../pdf/ingenious-issue-05-revised-en-bw-a3.pdf)
+
+44 pages, twenty-two unique plates including the cover, and eleven A3 duplex
+sheets. All 7,202 words of Chapter Five and its interludes flow through
+twenty-one two-column narrative pages in Georgia 12.45/17.6375-point type.
+Distinct facing scenes follow the oyamel forest visit, Lidia's changed request,
+the rainy tianguis and Tere's radio station. Q's established body and fitted
+jacket remain consistent. Unpainted text backgrounds, lossless grayscale,
+full-bleed comic trim and separately typeset captions follow the earlier proofs.
+Print all twenty-two A3 landscape sides at actual size, short-edge duplex;
+folding leaves an A4 carrier around comic trim. No print job was sent. Native
+art remains about 150 dpi, not an A+ press master. See the
+[production record](../../novel/development/ISSUE_05_PRODUCTION.md) and
+[art/prompt manifest](../illustrations/revised/issue-05/manifest.json).
+
+The remaining seventeen issues still require their revised illustrated builds.
 
 ## Earlier editions
 

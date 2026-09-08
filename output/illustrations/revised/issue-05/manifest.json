@@ -1,27 +1,60 @@
 {
   "issue": 5,
-  "revision": "2026-09-08-chapter-05-pacing",
+  "revision": "2026-09-08-issue-05-illustrated-proof",
   "source": "novel/THE_INGENIOUS_MACHINE.md",
   "chapter_sha256": "346b6c0d6152d45e12d21660a0feaaf8c9e8d8e4c7fcf4201bf7fab5115268a7",
   "page_count": 44,
   "text_font": "Georgia 12.45/17.6375 pt",
   "plate_count_including_cover": 22,
-  "status": "planned; no revised Issue 5 illustrations approved",
+  "status": "illustrated revision proof; not a press master",
   "character_reference": "output/illustrations/revised/issue-01/cover.png",
   "chano_reference": "output/illustrations/revised/issue-03/plate-06.png",
   "beto_reference": "output/illustrations/revised/issue-02/plate-09.png",
   "wardrobe": "Q retains Chapter Four's fitted sponsor jacket and small silver question mark. Preserve the established segmented oval head, ears, neck, long articulated limbs and underlying breastplate. No new knightly costume or unexplained return to the original torn coat.",
-  "secondary_character_design": "Candelaria: small older Mexican forest worker, wool shawl and polished wooden staff; contemporary practical clothes, no invented ceremonial regalia. Establish distinct recurring designs for Lidia, her mother, the watering girl and mother, the grieving schoolgirl, Micaela, Celestina, Tere, the teacher, foundation director and assistant. These people are not interchangeable indigenous symbols. Match Micaela's later scenes before approving her design. Vero is the student who asks permission and records different vendor choices; her male partner carries the tally and tables. Do not render them as unauthorized photographers from the deleted version. The uncle's song scene is an afternoon broadcast, not automatically dusk.",
+  "secondary_character_design": "Candelaria: small older woman, grey low bun, patterned wool shawl, wooden cane. Ledger keeper: short wavy grey hair, rectangular glasses, flower blouse/cardigan; young assembly man: tight dark curls, checked work shirt. Lidia: ten, high dark ponytail, hoodie; mother: wavy shoulder-length dark hair, cardigan, light T-shirt, shoulder bag. Distinct watering girl (bob, oversized boots) and grieving schoolgirl (two braids, school clothes). Micaela: short curly bob, hoodie, backpack. Vero's male partner: straight dark fringe, square glasses, plain hoodie. Tere: dark side braid, light rolled-sleeve shirt, knitted vest. Foundation director: middle-aged woman, straight jaw-length dark hair with grey streak, pale tailored blazer; distinct from the mother and the younger assistant. Contemporary practical clothing, no invented ceremonial regalia. Custodian absent in person.",
   "art_direction": "One unique scene from each exact facing page. Neutral monochrome Goya-inspired etched realism, pure white highlights, no sepia paper texture. Full bleed at comic trim with separately typeset margin captions. Eastern Michoacan oyamel forest, contemporary local work and varied residents. No invented museum, school or reserve portrayed as an identified real institution. Preserve visual identity across the sequence.",
-  "approval_scope": "Pagination and exact facing-scene plan only. The 44-page internal proof contains no illustrations. All assets remain planned and cannot be used for a final illustrated build until generated, inspected and hash-bound.",
+  "approval_scope": "Twenty-two unique scene-correspondent assets individually inspected and hash-bound. All 44 reading-page renders and the A3 cover, first reverse and center spread visually reviewed. Independent PDF extraction confirms all 7202 narrative words once in source order, no painted narrative backgrounds, 22 lossless DeviceGray plates and all 22 A3 side pairs. Approximately 150-dpi native art remains a press-quality limitation. Physical printing not performed or verified.",
+  "generation_method": "Built-in image tool; one unique original scene per request and four targeted edits. Original cached PNGs retained; selected native assets copied without procedural image editing. PDF-only lossless grayscale prepress conversion.",
+  "proof_outputs": [
+    {
+      "asset": "output/pdf/ingenious-issue-05-revised-en-bw.pdf",
+      "sha256": "1912c0f1bc1a095427affe3a326ce93b12b797b2346dd5cfdc2dd2518729d761",
+      "pages": 44
+    },
+    {
+      "asset": "output/pdf/ingenious-issue-05-revised-en-bw-a3.pdf",
+      "sha256": "1805c6488f74b5ad7a325ad399731ecb4cc17d097d36a56eb92904b030460dba",
+      "sides": 22,
+      "duplex_sheets": 11
+    }
+  ],
   "plates": [
     {
       "plate_id": "issue-05-cover",
       "page": 1,
       "asset": "output/illustrations/revised/issue-05/cover.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The Butterflies Have No General",
-      "scene_brief": "Wide vertical forest composition: Q in his fitted jacket on a narrow oyamel path, seen from behind beneath immense boughs clustered with monarchs. Candelaria leads farther along the path; a small group follows without cameras. Keep scale and physical place, not a messianic machine worshipped by butterflies. Quiet upper space for separately typeset cover title."
+      "scene_brief": "Wide vertical forest composition: Q in his fitted jacket on a narrow oyamel path, seen from behind beneath immense boughs clustered with monarchs. Candelaria leads farther along the path; a small group follows without cameras. Keep scale and physical place, not a messianic machine worshipped by butterflies. Quiet upper space for separately typeset cover title.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-01/cover.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-03.png"
+      ],
+      "generation_prompt": "Use case: illustration-story. Continue the established illustrated novel The Ingenious Machine with a new cover plate for Issue Five, The Butterflies Have No General. Reference image 1 supplies Q's exact mechanical identity and the neutral black-ink etched style, NOT the old coat or Custodian setting. Reference image 2 supplies Q's current fitted dark sponsor jacket, small silver question-mark lapel emblem, unchanged segmented oval metal head, ring ears, exposed articulated neck and legs. No other reference characters appear. Scene: eastern Michoacán's high oyamel fir forest, a narrow visitor path under huge boughs weighed with naturally sized clustered monarch butterflies. Q is a tall slender traveler seen from behind in three-quarter view, body in lower half, gently following Candelaria, a small elderly Mexican woman with a practical wool shawl and worn polished wooden walking staff, dark skirt and sturdy shoes. A few schoolchildren in modern jackets and scarves follow on the path. They are visitors, not worshippers. Wide vertical composition with tall living fir trunks, fine needles, realistic clusters of small monarchs, sparse occasional wings in air. Top quarter quiet near-white mist between branches for separately typeset cover title. Pure neutral black ink, white paper highlights, Goya-inspired etched realism with fine cross-hatching and controlled shadows; no sepia, cream tint, aged-paper texture or gray page-wide wash. Portrait 2:3 composition, full-bleed scenery on sides and bottom, keep whole Q and guide away from trim. No generated title, caption, border or lettering. No knight costume, weapon, steampunk horse, tropical jungle, giant butterfly, halo, cameras or physical Custodian. Preserve Q's established proportions exactly; jacket waist length, not long ragged coat.",
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-5fd72d55-2dc5-452a-b6bf-93e4c14e5f25.png",
+      "visual_review": "Inspected: Q's exact segmented head and fitted waist-length jacket; distinct rear-quarter forest view, Candelaria and ordinary children on the path. Quiet upper space reserved for type. Native image is illustrative, not a measured reserve view.",
+      "asset_sha256": "123a2029e48225f6eee9f1d906718fabeba90e460c5037ee52fc33c17d3e83d0",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "source_color_mode": "RGB",
+      "effective_full_bleed_dpi": 149.85,
+      "title_lines": [
+        "The Ingenious",
+        "Machine"
+      ],
+      "title_center_x_pt": 273
     },
     {
       "plate_id": "issue-05-plate-01",
@@ -46,10 +79,25 @@
         14
       ],
       "asset": "output/illustrations/revised/issue-05/plate-01.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "A future above breakfast.",
       "scene_brief": "Beto's tablet projects a single artificial butterfly over the motel breakfast table; Q studies the itinerary and Chano watches Beto. This is a promotional hologram rendered as grayscale light, not a real forest.",
-      "scene_anchor": "Beto’s tablet"
+      "scene_anchor": "Beto’s tablet",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-03.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-03/plate-06.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-02/plate-09.png"
+      ],
+      "generation_prompt": "Use case: illustration-story. New interior plate 01 for Issue Five of The Ingenious Machine. Reference 1: ONLY Q's exact design and current fitted dark jacket with small question-mark lapel emblem, oval segmented metal head, round ring ears, exposed mechanical neck and long limbs. Reference 2: ONLY Chano, stocky middle-aged Mexican driver with thick dark mustache, wavy dark hair, work shirt and practical trousers. Reference 3: ONLY Beto, the younger clean-shaven man in pale tailored blazer standing behind Chano on the left; do not copy its camera crew or other characters. Scene: contemporary modest Mexican motel breakfast table. Beto holds a tablet flat enough to project one small luminous artificial monarch butterfly above the table. Q is seated, studying the itinerary on the tablet beneath the hovering projection, rather than gaping naively at it. Chano sits opposite and watches Beto with dry skepticism, coffee and simple breakfast dishes at hand. Three distinct characters, no additional person. Intimate low eye-level diagonal composition; butterfly visibly a translucent technological projection, subtly hatched grayscale light. Background plain plaster wall and motel window, daylight, practical furniture. Neutral monochrome Goya-inspired copperplate etching: articulate faces and mechanical hands, crisp cross-hatching, pure white highlights, no sepia or cream cast, no dirty-paper background wash. Portrait 2:3, one full-bleed scene, no panel grid. No text, caption, logos, title or margin inside the image. No real butterfly swarm, actual forest, Custodian, knightly weapon or long torn coat. This illustration faces the scene in which Beto proposes the reserve visit over breakfast; the guide has not arrived.",
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-68b09c6e-4095-4110-81f7-cf79dd3ea335.png",
+      "visual_review": "Beto's tablet projects the artificial butterfly over motel breakfast; Q studies it conversationally, Chano watches Beto. Three distinct people and correct jacket.",
+      "asset_sha256": "872dd5a84875c18cd691b9ca3cedc1fed7660941bb7a7e9cbcd7c7a13eebc6e1",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "source_color_mode": "RGB",
+      "effective_full_bleed_dpi": 149.85
     },
     {
       "plate_id": "issue-05-plate-02",
@@ -76,10 +124,25 @@
         31
       ],
       "asset": "output/illustrations/revised/issue-05/plate-02.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "He stopped describing them.",
       "scene_brief": "Q steps aside for a child to see monarchs clustered on a low oyamel bough; Chano has removed his cap and Candelaria leads on the marked path. No camera crew in the restricted forest.",
-      "scene_anchor": "Q made room for a child to see."
+      "scene_anchor": "Q made room for a child to see.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-03.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-05/cover.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-03/plate-06.png"
+      ],
+      "generation_prompt": "Use case: illustration-story. New single full-bleed portrait 2:3 narrative plate for Issue Five. Reference 1 ONLY exact Q identity and fitted dark waist-length jacket with small silver question-mark emblem: oval segmented head, round ear discs, exposed mechanical neck, slender long articulated body. Reference 2 ONLY Candelaria and forest continuity: small elderly Mexican woman, gray hair in low bun, fringed patterned wool shawl, long dark practical skirt and polished wooden staff. Reference 3 ONLY Chano: stocky middle-aged mustached Mexican driver with wavy dark hair and work shirt. Modern eastern Michoacán oyamel fir forest; neutral monochrome Goya-inspired fine etched realism on white, no sepia, aged paper or overall gray wash. No text/caption/border, Custodian, cameras, knight costume, weapon or mythic butterfly giant. Q steps sideways along the marked visitor path so a schoolchild can see a low fir bough thick with naturally sized roosting monarchs. Q's gesture makes space, not pointing out a lesson. A small boy in a contemporary zipped jacket and scarf peers around him; Chano holds his removed cap at his side. Candelaria farther up the path looks back to keep the group together. Low viewpoint at the child's height, finely drawn near bough and attentive relaxed figures. Keep butterflies clustered on needles and limbs, ordinary scale, not surrounding Q as a halo. Branch detail fills the upper foreground, not the cover's distant vista.",
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-daa61d43-879d-4cdf-b2ea-c4ae3821ba29.png",
+      "visual_review": "Q yields room beside a low butterfly bough; Chano holds his removed cap, Candelaria guides along the forest path. No retained camera crew. Incidental warm butterfly values are converted by lossless PDF grayscale prepress.",
+      "asset_sha256": "687d8bfcb56de59927faf9c8a522239cf58146ad9ef8167ebaea285d75325d28",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "source_color_mode": "RGB",
+      "effective_full_bleed_dpi": 149.85
     },
     {
       "plate_id": "issue-05-plate-03",
@@ -107,10 +170,25 @@
         49
       ],
       "asset": "output/illustrations/revised/issue-05/plate-03.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Trees someone waters.",
       "scene_brief": "Candelaria shows Q wire-protected saplings beside untagged family plantings on the burned slope. Chano tests the loose path with a branch. No miraculous recovery or delivered hose.",
-      "scene_anchor": "The ones someone waters."
+      "scene_anchor": "The ones someone waters.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-03.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-05/cover.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-03/plate-06.png"
+      ],
+      "generation_prompt": "Use case: illustration-story. New single full-bleed portrait 2:3 narrative plate for Issue Five. Reference 1 ONLY exact Q identity and fitted dark waist-length jacket with small silver question-mark emblem: oval segmented head, round ear discs, exposed mechanical neck, slender long articulated body. Reference 2 ONLY Candelaria and forest continuity: small elderly Mexican woman, gray hair in low bun, fringed patterned wool shawl, long dark practical skirt and polished wooden staff. Reference 3 ONLY Chano: stocky middle-aged mustached Mexican driver with wavy dark hair and work shirt. Modern eastern Michoacán oyamel fir forest; neutral monochrome Goya-inspired fine etched realism on white, no sepia, aged paper or overall gray wash. No text/caption/border, Custodian, cameras, knight costume, weapon or mythic butterfly giant. At the burned edge of the reserve Candelaria shows Q two young saplings: one within a simple wire guard with a small unreadable numbered tag, another local planting without a tag beside it. The damaged slope has sparse regrowth and fire-scarred trunks, not a recovering lush forest. Chano ahead tests the loose needle-covered path with a fallen branch. Mid-distance side composition: guide and Q by the tiny trees, Chano several steps lower, uneven ground visibly relevant. No hose has arrived; no watering demonstration, axe or dramatic fire. Treat Candelaria's knowledge as practical work. No children required in frame.",
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-22d0936a-ff04-4b7f-8708-a01833206a4b.png",
+      "visual_review": "Candelaria points to the young tree beside protective wire; burned slope and Chano's branch show ordinary restoration work, no miraculous recovery or delivered hose.",
+      "asset_sha256": "7540b5701339de899ce4bdca704d6572bfc665b547eb22610f699dda6fdcec5f",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "source_color_mode": "RGB",
+      "effective_full_bleed_dpi": 149.85
     },
     {
       "plate_id": "issue-05-plate-04",
@@ -142,10 +220,24 @@
         70
       ],
       "asset": "output/illustrations/revised/issue-05/plate-04.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Room to grow.",
       "scene_brief": "The watering girl's mother adjusts loose protective wire around the sapling, leaving growing room; Q holds the coat and Chano the small blue bucket. The child wears oversized boots. She is not automatically Lidia, Micaela or the grieving girl.",
-      "scene_anchor": "Q carried the child's coat"
+      "scene_anchor": "Q carried the child's coat",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-03.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-03/plate-06.png"
+      ],
+      "generation_prompt": "Use case: illustration-story. New unique single full-bleed 2:3 portrait plate for Issue Five of The Ingenious Machine. Neutral monochrome Goya-inspired etched realism: finely articulated faces, hands and materials, controlled cross-hatching, pure white highlights, no sepia/cream tint or aged paper wash. No titles, caption text, panel grid or border; captions added separately. Modern eastern Michoacán, ordinary clothes and work, not costumed folklore. Q retains exact established oval segmented metal head, circular ear mechanisms, exposed neck, tall slender articulated body, fitted waist-length dark sponsor blazer with small question-mark emblem. Never a knight, weapon bearer, stocky metal soldier or human-faced android. Custodian absent in person. Reference 1: Q only. Reference 2: Chano only, stocky mustached middle-aged driver with wavy dark hair and work shirt. Burned forest margin beside an uneven narrow trail. A young Mexican girl, about seven, straight chin-length dark bob, school scarf and oversized boots, supervises her mother tightening loose wire around a living young fir sapling with room to grow. Mother is a young adult with dark ponytail, plain cardigan, jeans and sturdy shoes, hands carefully adjusting the wire, not planting a new tree. Q holds the child's removed coat over his forearm. Chano carries the small empty bucket. Medium-low angle shows the tiny tree, wire, oversized boots and helpers without grandeur. Four individuals, natural gestures, scattered needles and modest regrowth. No watering hose, no wire binding the girl's body, no cameras or magical reforestation. Bucket rendered gray in monochrome.",
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-5d6d0fa4-bcba-4f51-b71f-ade6294c4279.png",
+      "visual_review": "Watering girl in oversized boots, mother adjusting wire, Q holding the child's coat, Chano taking the small bucket. Distinct from the schoolgirl and Lidia.",
+      "asset_sha256": "c9c4783999411be2177c3eda840f00b8bd42499870c069bbb5ccd1e54cb76189",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "source_color_mode": "RGB",
+      "effective_full_bleed_dpi": 149.85
     },
     {
       "plate_id": "issue-05-plate-05",
@@ -174,10 +266,28 @@
         88
       ],
       "asset": "output/illustrations/revised/issue-05/plate-05.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The shoes her grandmother wore.",
       "scene_brief": "The teacher and classmates sit beside the grieving girl on a fallen trunk. Q has made room and listens while a monarch rests on the stitched question mark of his jacket. No apparition, robotic embrace or conversion of the child into a symbol.",
-      "scene_anchor": "shoes her grandmother had worn."
+      "scene_anchor": "shoes her grandmother had worn.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-03.png"
+      ],
+      "generation_prompt": "Use case: illustration-story. New unique single full-bleed 2:3 portrait plate for Issue Five of The Ingenious Machine. Neutral monochrome Goya-inspired etched realism: finely articulated faces, hands and materials, controlled cross-hatching, pure white highlights, no sepia/cream tint or aged paper wash. No titles, caption text, panel grid or border; captions added separately. Modern eastern Michoacán, ordinary clothes and work, not costumed folklore. Q retains exact established oval segmented metal head, circular ear mechanisms, exposed neck, tall slender articulated body, fitted waist-length dark sponsor blazer with small question-mark emblem. Never a knight, weapon bearer, stocky metal soldier or human-faced android. Custodian absent in person. Reference 1: Q identity and current jacket only. On an oyamel forest visitor path a grieving schoolgirl about eleven with long dark hair in two braids, plain school sweater and scarf sits on a fallen trunk beside her middle-aged female teacher with short wavy hair, practical light jacket and shoulder bag. Two other schoolchildren sit nearby listening. Q stands a little back, leaving room, attentive and quiet. One naturally sized monarch rests on the small question mark stitched to his jacket lapel. The girl has begun talking about her grandmother's shoes; show her hands making a small descriptive gesture, teacher listening. No apparition or imagined grandmother, no inserted shoes floating in air, no robot embrace, no lecture. Side composition at the sitting children's eye height, fir trunks, needles and quiet daylight. Girl is distinct from the seven-year-old watering child and from Lidia/Micaela.",
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-3dd1ff73-44b6-4e58-8d25-2da1792a5b34.png",
+      "edit_prompt": "Precise-object edit of this single plate. Change ONLY the one monarch butterfly: move it from the top of Q's shoulder to rest directly on the small silver question-mark emblem stitched on the blazer below that shoulder, with its wings open over the emblem. Render the butterfly in neutral black-and-white ink, removing its orange color. It must remain a small real butterfly, not a large badge. Preserve absolutely everything else: every child's and teacher's face, expression, hands, clothing, poses, Q's exact mechanical head/body/jacket, tree and fallen log, crop, lighting and detailed etched texture. No new objects, no text, no recoloring of the rest, no layout changes.",
+      "edit_reference_images": [
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-3dd1ff73-44b6-4e58-8d25-2da1792a5b34.png"
+      ],
+      "edited_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-2e42def0-1dc0-4bf0-ab99-5bf91228f527.png",
+      "visual_review": "Schoolgirl with two braids speaks to her teacher beside classmates; Q listens. Targeted edit moved the monarch from his shoulder to his small jacket emblem and removed orange tint. No ghost or sentimental resurrection.",
+      "asset_sha256": "b9fd9927fa3a0edf94e31382af2d79b19eb233a3de9a6e27cfc587260e73cdd4",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "source_color_mode": "RGB",
+      "effective_full_bleed_dpi": 149.85
     },
     {
       "plate_id": "issue-05-plate-06",
@@ -202,10 +312,28 @@
         103
       ],
       "asset": "output/illustrations/revised/issue-05/plate-06.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Two distances to the spring.",
       "scene_brief": "Q and the young man compare two route maps at the canvas-roof assembly: a parcel endpoint differs from a spring endpoint. The ledger keeper listens. No political vote tally or invented accurate geographical labels.",
-      "scene_anchor": "Q placed the maps beside one another."
+      "scene_anchor": "Q placed the maps beside one another.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-03.png"
+      ],
+      "generation_prompt": "Use case: illustration-story. New unique single full-bleed 2:3 portrait plate for Issue Five of The Ingenious Machine. Neutral monochrome Goya-inspired etched realism: finely articulated faces, hands and materials, controlled cross-hatching, pure white highlights, no sepia/cream tint or aged paper wash. No titles, caption text, panel grid or border; captions added separately. Modern eastern Michoacán, ordinary clothes and work, not costumed folklore. Q retains exact established oval segmented metal head, circular ear mechanisms, exposed neck, tall slender articulated body, fitted waist-length dark sponsor blazer with small question-mark emblem. Never a knight, weapon bearer, stocky metal soldier or human-faced android. Custodian absent in person. Reference 1 Q only. Clearing under a borrowed canvas roof after local road work: Q sets two paper route maps beside each other on a rough table for a young Mexican man in his twenties, close-cropped curly hair, plain checked shirt and cracked-screen tablet. A different older woman, ledger keeper with short graying hair, rectangular reading glasses and a knitted cardigan, listens beside a blue-cloth ledger rendered gray. A plate of tortillas and enamel cups, ordinary benches and a few residents behind. The two maps show different endpoint lengths as simple invented lines, no readable geographical labels or political vote tally. Foreground diagonal of the maps and three sets of natural hands; Q compares, does not command a meeting. Not the repeated breakfast composition. No Candelaria in foreground, no faux Indigenous writing, ceremonial costume or real surveyed map.",
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-146dcf7f-fbae-428c-9ccd-b8ed60796942.png",
+      "edit_prompt": "Targeted edit. Keep the entire foreground unchanged: the exact three faces, Q's mechanical head and fitted blazer, every hand, maps, table, ledger, cups, tortilla plate, canvas roof and poles. Change ONLY the background beyond these figures: this assembly takes place in a high-altitude oyamel forest clearing, NOT a colonial town. Replace the distant church, truck, palms, stone courtyard and active roadworks with tall fir trees and a few contemporary residents sitting on plain wooden benches in a forest clearing. No active construction. Same neutral black-and-white etched realism, same composition and 2:3 dimensions. Do not add text.",
+      "edit_reference_images": [
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-146dcf7f-fbae-428c-9ccd-b8ed60796942.png"
+      ],
+      "edited_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-c5bc7ecd-c9aa-4529-9bb9-f72a2dd4f22f.png",
+      "visual_review": "Two maps on the table; Q checks distances with curly-haired young man and older ledger keeper. Targeted edit removed an incorrect village/active-roadworks background and restored the oyamel forest clearing.",
+      "asset_sha256": "4ed56869ba45050fec6c14e5e65c36361a96f3419ec042c56913a4cb09b4c9a3",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "source_color_mode": "RGB",
+      "effective_full_bleed_dpi": 149.85
     },
     {
       "plate_id": "issue-05-plate-07",
@@ -230,10 +358,24 @@
         118
       ],
       "asset": "output/illustrations/revised/issue-05/plate-07.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The disputed boundary.",
       "scene_brief": "A Mazahua-speaking elder and the secretary consult the map together at the assembly. Q waits for the secretary's version rather than pretending fluency. Atole, working benches and the blue ledger keep the setting practical. Do not invent indigenous script or ceremonial dress.",
-      "scene_anchor": "the secretary checked a place-name together."
+      "scene_anchor": "the secretary checked a place-name together.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-03.png",
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-146dcf7f-fbae-428c-9ccd-b8ed60796942.png"
+      ],
+      "generation_prompt": "Use case: illustration-story. New unique single full-bleed 2:3 portrait plate for Issue Five of The Ingenious Machine. Neutral monochrome Goya-inspired etched realism: finely articulated faces, hands and materials, controlled cross-hatching, pure white highlights, no sepia/cream tint or aged paper wash. No titles, caption text, panel grid or border; captions added separately. Modern eastern Michoacán, ordinary clothes and work, not costumed folklore. Q retains exact established oval segmented metal head, circular ear mechanisms, exposed neck, tall slender articulated body, fitted waist-length dark sponsor blazer with small question-mark emblem. Never a knight, weapon bearer, stocky metal soldier or human-faced android. Custodian absent in person. Assembly under borrowed canvas in a high oyamel FOREST CLEARING, not a town square. A Mazahua-speaking elder man in ordinary work shirt and plain cardigan, grey short hair, and a female secretary about forty with tied-back hair and a plain practical jacket lean over one map checking a boundary place-name. Q stands a little behind, patiently listening, not gesturing or translating. Reference2 supplies ONLY foreground Q and elderly woman ledger keeper with short wavy grey hair, rectangular glasses, flower blouse/cardigan; she sits nearby with the closed cloth ledger. Do NOT copy background church, roadworks, courtyard, truck from reference2. Plain benches, enamel atole cups, tortillas. Keep the elder and secretary central, Q subordinate. No invented indigenous writing, no ceremonial dress, no stage.",
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-b02bb6f2-aca2-4913-9e98-a2a5c7af1bb4.png",
+      "visual_review": "Elder and secretary check the same point on a map while Q waits behind. Ledger keeper identity retained, ordinary practical clothing, no invented indigenous script.",
+      "asset_sha256": "11b74077104f1a961d07e8028c2e9f8d96b78fcbec616f926d40dc7ce1839ff1",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "source_color_mode": "RGB",
+      "effective_full_bleed_dpi": 149.85
     },
     {
       "plate_id": "issue-05-plate-08",
@@ -265,10 +407,25 @@
         139
       ],
       "asset": "output/illustrations/revised/issue-05/plate-08.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Consultation completed.",
       "scene_brief": "Q and the young man fold the broad borrowed canvas against the wind while benches are removed. Beto is already by the car. Physical comedy, no triumphant completed-agreement ceremony.",
-      "scene_anchor": "He asked Q to hold the other end;"
+      "scene_anchor": "He asked Q to hold the other end;",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-03.png",
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-146dcf7f-fbae-428c-9ccd-b8ed60796942.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-02/plate-09.png"
+      ],
+      "generation_prompt": "Use case: illustration-story. New unique single full-bleed 2:3 portrait plate for Issue Five of The Ingenious Machine. Neutral monochrome Goya-inspired etched realism: finely articulated faces, hands and materials, controlled cross-hatching, pure white highlights, no sepia/cream tint or aged paper wash. No titles, caption text, panel grid or border; captions added separately. Modern eastern Michoacán, ordinary clothes and work, not costumed folklore. Q retains exact established oval segmented metal head, circular ear mechanisms, exposed neck, tall slender articulated body, fitted waist-length dark sponsor blazer with small question-mark emblem. Never a knight, weapon bearer, stocky metal soldier or human-faced android. Custodian absent in person. After the meeting in a HIGH OYAMEL FOREST CLEARING: Q and the young man from reference2 (short tight curls, checked work shirt) hold opposite ends of a broad borrowed canvas, folding it as a gust pulls the fabric sideways. Each man's two hands convincingly grip one edge; canvas forms a diagonal sail between them, not covering faces. A couple of residents stack plain wooden benches behind. Distant Beto beside parked SUV at forest path, on phone: reference3 ONLY the slim clean-shaven young man in pale jacket, not the other people. No completed-agreement ceremony. Do not copy church, roadworks or courtyard from reference2. Comedy of awkward useful work, Q not imperious.",
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-a20a9908-c3c9-4f2a-a06a-a473018d6c4c.png",
+      "visual_review": "Q and the young man fold the borrowed canvas in wind; practical unfinished work rather than a declaration of consensus.",
+      "asset_sha256": "566b44ecc11ca3c1bea06d3dc6fcb88b25d0cbc74d1ed4c9f6701f73100aef98",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "source_color_mode": "RGB",
+      "effective_full_bleed_dpi": 149.85
     },
     {
       "plate_id": "issue-05-plate-09",
@@ -291,10 +448,28 @@
         152
       ],
       "asset": "output/illustrations/revised/issue-05/plate-09.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Leave the letters as they are.",
       "scene_brief": "Lidia and her mother review the private cardboard-only crop beside Q. The screen contains no child's face, name, voice or uniform. This is the limited approval conversation, not unauthorized filming. Keep lettering indistinct; caption is separate.",
-      "scene_anchor": "They watched a private preview"
+      "scene_anchor": "They watched a private preview",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-03.png"
+      ],
+      "generation_prompt": "Use case: illustration-story. New unique single full-bleed 2:3 portrait plate for Issue Five of The Ingenious Machine. Neutral monochrome Goya-inspired etched realism: finely articulated faces, hands and materials, controlled cross-hatching, pure white highlights, no sepia/cream tint or aged paper wash. No titles, caption text, panel grid or border; captions added separately. Modern eastern Michoacán, ordinary clothes and work, not costumed folklore. Q retains exact established oval segmented metal head, circular ear mechanisms, exposed neck, tall slender articulated body, fitted waist-length dark sponsor blazer with small question-mark emblem. Never a knight, weapon bearer, stocky metal soldier or human-faced android. Custodian absent in person. Reference 1 Q only. Limited permission conversation in a plain reserve visitor area. Establish Lidia: Mexican girl about ten, dark straight hair in a single high ponytail, small round face, plain zipped school hoodie and trousers. Her mother: woman in her thirties with shoulder-length wavy hair, oval face, plain dark cardigan over a light crewneck shirt, practical shoulder tote. Lidia and her mother sit beside Q reviewing a tablet privately. The tablet image shows ONLY a tight crop of a piece of cardboard with uneven indistinct marker strokes, no child's face, body, uniform, name or voice waveform. Lidia indicates the uneven letters she wants kept. Q holds the screen angled naturally toward them, mother can see it; no public filming, no camera crew. Warm human attention rendered in neutral black ink, medium close view from behind the tablet edge so no readable text. No Candelaria, no director yet, no magical butterfly overlay on this original preview.",
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-6d39244b-fcb6-40d3-acff-193a23f14d4c.png",
+      "edit_prompt": "Targeted edit. Preserve every foreground detail: Q, child Lidia, mother, all exact faces, clothes, poses, hands, tablet facing away from reader, chairs, indoor wall and map. Change ONLY the outdoor view visible through the window: remove the church and palm trees; show high, cool oyamel-covered hills and the plain roof of a reserve visitor building. This is a highland forest visitor area, not a colonial city center. Neutral monochrome etched realism with white highlights. No other changes.",
+      "edit_reference_images": [
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-6d39244b-fcb6-40d3-acff-193a23f14d4c.png"
+      ],
+      "edited_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-d748f3c3-8b7f-4939-91a2-5fd76370adcb.png",
+      "visual_review": "Lidia and mother privately preview the tablet, its display facing away from the reader; their faces are not depicted as a public recording. Targeted edit changes only the window to the reserve's fir-covered hills.",
+      "asset_sha256": "bd7068050670a6d84706cfb73698acc633a96e32bd85973f6f4324f7efbd4402",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "source_color_mode": "RGB",
+      "effective_full_bleed_dpi": 149.85
     },
     {
       "plate_id": "issue-05-plate-10",
@@ -322,10 +497,24 @@
         170
       ],
       "asset": "output/illustrations/revised/issue-05/plate-10.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The butterfly keeps landing.",
       "scene_brief": "The foundation director silences the screen while Q and Lidia's mother watch the animated butterfly still visible beside the cropped cardboard. Office setting and power imbalance; no actual butterfly indoors or claim the mother approved this later version.",
-      "scene_anchor": "The director silenced it."
+      "scene_anchor": "The director silenced it.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-03.png",
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-6d39244b-fcb6-40d3-acff-193a23f14d4c.png"
+      ],
+      "generation_prompt": "Use case: illustration-story. New unique single full-bleed 2:3 portrait plate for Issue Five of The Ingenious Machine. Neutral monochrome Goya-inspired etched realism: finely articulated faces, hands and materials, controlled cross-hatching, pure white highlights, no sepia/cream tint or aged paper wash. No titles, caption text, panel grid or border; captions added separately. Modern eastern Michoacán, ordinary clothes and work, not costumed folklore. Q retains exact established oval segmented metal head, circular ear mechanisms, exposed neck, tall slender articulated body, fitted waist-length dark sponsor blazer with small question-mark emblem. Never a knight, weapon bearer, stocky metal soldier or human-faced android. Custodian absent in person. New foundation-office scene in renovated hacienda at edge of oyamel reserve, contemporary restrained office. A FEMALE foundation director, about fifty, straight jaw-length dark hair with grey streak, tailored pale business jacket, standing to left presses a mute button on remote. She is different from Lidia's mother. Mother from reference2, same shoulder-length wavy dark hair, dark cardigan, light T-shirt, shoulder bag, stands facing her, patient but firm. Q stands beside wall screen on right. On screen only a rough cardboard question-mark graphic with one tiny digital butterfly perched near it, no child's image/name, no readable text, no real butterfly indoors. Director has muted it but animation is still visible. Blank white walls, simple beam, thick modern window revealing fir-covered hills, no church/palms. Q listening, not lecturing. Lidia not yet entered. Three figures.",
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-f611c2da-07fb-4a4c-ac79-c6f5755c97f5.png",
+      "visual_review": "Director mutes the screen without removing the cardboard-and-butterfly animation; Q and mother watch. Screen contains no child's portrait or name.",
+      "asset_sha256": "75bc4d0952592252c6a1c74eae8ce8be2d1230bb904d265f70530c64a47c485c",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "source_color_mode": "RGB",
+      "effective_full_bleed_dpi": 149.85
     },
     {
       "plate_id": "issue-05-plate-11",
@@ -360,10 +549,24 @@
         194
       ],
       "asset": "output/illustrations/revised/issue-05/plate-11.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "She has a match.",
       "scene_brief": "Lidia holds the wet cardboard while her mother checks time and Q asks the assistant for a receipt and contact. Distinct director and assistant. Lidia's impatience, not a grand symbolic gesture, organizes the scene.",
-      "scene_anchor": "Her mother checked the time."
+      "scene_anchor": "Her mother checked the time.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-03.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-05/plate-09.png"
+      ],
+      "generation_prompt": "Use case: illustration-story. New unique single full-bleed 2:3 portrait plate for Issue Five of The Ingenious Machine. Neutral monochrome Goya-inspired etched realism: finely articulated faces, hands and materials, controlled cross-hatching, pure white highlights, no sepia/cream tint or aged paper wash. No titles, caption text, panel grid or border; captions added separately. Modern eastern Michoacán, ordinary clothes and work, not costumed folklore. Q retains exact established oval segmented metal head, circular ear mechanisms, exposed neck, tall slender articulated body, fitted waist-length dark sponsor blazer with small question-mark emblem. Never a knight, weapon bearer, stocky metal soldier or human-faced android. Custodian absent in person. Foundation office: Lidia (10, same face and high ponytail/hoodie as reference2) stands foreground holding a rain-stained cardboard sign flat against her side, BACK facing viewer, shoulders slightly slumped with impatience, she wants to leave for a football match. Beside her the mother from reference2 (same wavy shoulder-length hair, cardigan, light T-shirt, shoulder bag) checks her wristwatch. Q speaks quietly with the director's assistant, a distinct woman about thirty with short straight bob, thin wire glasses and plain light blouse, who prepares a small receipt and contact slip across a simple desk. The FEMALE director appears ONLY as a cropped out-of-focus back/shoulder at far left edge, jaw-length dark bob with grey streak and pale tailored business blazer, so her face is not visible and she does not dominate the picture. Total five figures including partial director. Lidia and time-checking mother are central, Q off to right leaning toward assistant's paperwork. Same practical renovated-hacienda office, plain pale walls, exposed beam, modern thick window to oyamel hills, no church/palm scene. No trophy, museum cabinet, public child portrait or dramatic proclamation. No readable text on cardboard or receipt. All poses natural, hands distinct, no one blocks the family.",
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-2098ded6-a93a-4115-ad33-ec60897a7e1f.png",
+      "visual_review": "Lidia's wet cardboard and impatience, mother's time check and assistant's paperwork organize the scene; Q does not turn it into a triumph.",
+      "asset_sha256": "470163e1d515a10daa53f0a04e7363f5404263e14ad89639eb21c02a3d1f9ffc",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "source_color_mode": "RGB",
+      "effective_full_bleed_dpi": 149.85
     },
     {
       "plate_id": "issue-05-plate-12",
@@ -395,10 +598,29 @@
         216
       ],
       "asset": "output/illustrations/revised/issue-05/plate-12.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The old request.",
       "scene_brief": "Q cancels the old label template and writes the family's changed request on paper while the mother watches. Cardboard lies on the desk, not transferred to an exhibition. No invented readable legal text.",
-      "scene_anchor": "Q cancelled the label"
+      "scene_anchor": "Q cancelled the label",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-03.png",
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-d748f3c3-8b7f-4939-91a2-5fd76370adcb.png"
+      ],
+      "generation_prompt": "Use case: illustration-story. New unique single full-bleed 2:3 portrait plate for Issue Five of The Ingenious Machine. Neutral monochrome Goya-inspired etched realism: finely articulated faces, hands and materials, controlled cross-hatching, pure white highlights, no sepia/cream tint or aged paper wash. No titles, caption text, panel grid or border; captions added separately. Modern eastern Michoacán, ordinary clothes and work, not costumed folklore. Q retains exact established oval segmented metal head, circular ear mechanisms, exposed neck, tall slender articulated body, fitted waist-length dark sponsor blazer with small question-mark emblem. Never a knight, weapon bearer, stocky metal soldier or human-faced android. Custodian absent in person. Close oblique view over a plain foundation-office desk. Q has put a small label printer aside and is writing the family's CHANGED request by hand on a piece of paper with an ordinary pen. His articulated fingers grip the pen naturally. Lidia's mother from reference2 (same wavy shoulder-length dark hair, cardigan, light tee, shoulder bag) leans to read beside him, focused and practical. Lidia from reference2 (10, high ponytail, same hoodie) beside her watching; she is not an abstract symbol. On desk wet roughly painted cardboard sign FACE DOWN or too oblique to read. No readable invented legal text on paper, use minute handwriting marks. Label-maker screen dim/blank, no old instruction made newly authoritative. Tightly framed so no director, lawyer or assistant visible; same renovated-hacienda office plain wall, thick modern window, beam. Keep physical writing action dominant, white paper bright, no display case or historical relics.",
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-72013be4-9412-4dbe-8b73-06ae2a09f73e.png",
+      "edit_prompt": "Precise background-only edit: preserve Q's exact head, jacket, writing hand, pen and paper, mother and Lidia's exact faces, clothes, poses and all foreground furniture, label maker, cardboard, wall map. Change ONLY the outdoor view through the top-right window: replace church towers and houses with oyamel-covered hills and one plain low reserve-office roof, matching the established highland office surroundings. No church tower or palms. Keep every foreground pixel as close as possible, neutral black-and-white etched realism, same portrait crop. No other changes, no text.",
+      "edit_reference_images": [
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-72013be4-9412-4dbe-8b73-06ae2a09f73e.png"
+      ],
+      "edited_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-25b62f80-1bf2-4589-8fc0-b5ddca817c27.png",
+      "visual_review": "Q writes the changed request on paper beside the unused label printer; mother reads and Lidia watches. No invented readable legal promise or exhibition transfer. Background-only edit restores the highland window view.",
+      "asset_sha256": "33fb1c70d369d55137ba6db3e8dd211045b0d3a6a129e2e91b87ee3e10410750",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "source_color_mode": "RGB",
+      "effective_full_bleed_dpi": 149.85
     },
     {
       "plate_id": "issue-05-plate-13",
@@ -422,10 +644,25 @@
         230
       ],
       "asset": "output/illustrations/revised/issue-05/plate-13.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The next bus.",
       "scene_brief": "Q holds the office door open as Lidia and her mother leave, the folded cardboard under Lidia's arm. Chano checks the way to the bus stop. No guard confrontation and no Q blocking the exit.",
-      "scene_anchor": "Q held the door"
+      "scene_anchor": "Q held the door",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-03.png",
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-d748f3c3-8b7f-4939-91a2-5fd76370adcb.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-03/plate-06.png"
+      ],
+      "generation_prompt": "Use case: illustration-story. New unique single full-bleed 2:3 portrait plate for Issue Five of The Ingenious Machine. Neutral monochrome Goya-inspired etched realism: finely articulated faces, hands and materials, controlled cross-hatching, pure white highlights, no sepia/cream tint or aged paper wash. No titles, caption text, panel grid or border; captions added separately. Modern eastern Michoacán, ordinary clothes and work, not costumed folklore. Q retains exact established oval segmented metal head, circular ear mechanisms, exposed neck, tall slender articulated body, fitted waist-length dark sponsor blazer with small question-mark emblem. Never a knight, weapon bearer, stocky metal soldier or human-faced android. Custodian absent in person. At a renovated hacienda office exit on edge of oyamel reserve, Q holds a heavy door OPEN from the inside with one hand, standing to side so people can leave freely. Lidia and mother from reference2 walk past him toward bright outdoor path: same child face/high ponytail/hoodie and same mother face/wavy shoulder-length hair/cardigan/light tee/bag. Lidia carries a small wet cardboard sign folded twice UNDER HER ARM, backside showing, not a display banner. Chano from reference3 ONLY the stocky wavy-haired mustached work-shirt man stands farther outside looking down the road toward bus stop, no other people from reference3. Contemporary ordinary departure, no confrontation, weapons, guard or police; no courthouse steps or triumph. Plain stucco/stone doorway and fir-covered reserve hillside outside, no palm tree or cathedral. Faces calm busy; mother has folded request receipt in hand.",
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-d4dbd08d-3b06-49d2-8b08-3d76601c5d03.png",
+      "visual_review": "Q stands to the side holding the exit open; Lidia carries folded cardboard, mother leaves with receipt and Chano checks the road. No confrontation or blocked departure.",
+      "asset_sha256": "8f3ae88fdc7cb01471436fb94d48253102f55dfbdf0d04b5d6cc222f05ef8dee",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "source_color_mode": "RGB",
+      "effective_full_bleed_dpi": 149.85
     },
     {
       "plate_id": "issue-05-plate-14",
@@ -452,10 +689,24 @@
         246
       ],
       "asset": "output/illustrations/revised/issue-05/plate-14.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Hold this.",
       "scene_brief": "Rain at the tianguis: Q holds the tarp pole where Chano asked him to stand; Micaela moves her cereal-box sign into the dry patch at his feet. Chano carries sugar toward the store with the working boy. No phone-photo dispute or injured robot.",
-      "scene_anchor": "Q took the pole."
+      "scene_anchor": "Q took the pole.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-03.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-03/plate-06.png"
+      ],
+      "generation_prompt": "Use case: illustration-story. New unique single full-bleed 2:3 portrait plate for Issue Five of The Ingenious Machine. Neutral monochrome Goya-inspired etched realism: finely articulated faces, hands and materials, controlled cross-hatching, pure white highlights, no sepia/cream tint or aged paper wash. No titles, caption text, panel grid or border; captions added separately. Modern eastern Michoacán, ordinary clothes and work, not costumed folklore. Q retains exact established oval segmented metal head, circular ear mechanisms, exposed neck, tall slender articulated body, fitted waist-length dark sponsor blazer with small question-mark emblem. Never a knight, weapon bearer, stocky metal soldier or human-faced android. Custodian absent in person. Reference 1 Q only; reference 2 Chano only, stocky mustached driver. Rainy tianguis outside a modest cooperative store. Q stands holding a vertical support pole beneath the sagging edge of a market tarp, where Chano asked him to stay. Both mechanical hands grip the pole naturally, no lance or martial pose. Micaela, a Mexican girl about twelve with short dark curly bob, plain hooded sweatshirt, jeans and school backpack, puts her cereal-box cardboard sign into the dry patch at his feet. Its face is angled away so marks are indistinct. She is not Lidia: no straight high ponytail. In background Chano and a working boy move a sack of sugar toward the store entrance. Wet ground, water shedding off tarp away from the dry cardboard, seed sacks and covered baskets; contemporary practical market rather than ceremonial bazaar. Body-level view emphasizes the inconvenient pole and small dry patch. No photograph dispute, no camera, no injured Q; no Vero surveying while Q rescues the world.",
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-e6618673-4566-4c02-86cc-c9095b5ad7ad.png",
+      "visual_review": "Q holds the tarp pole in rain; Micaela moves her sign under it; Chano and the working boy carry sugar indoors. Ordinary work and physical comedy, not a rescue spectacle.",
+      "asset_sha256": "9969d1b6f9327e949d96613845cefcda880a82323e1513283a4d8ba3fe270299",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "source_color_mode": "RGB",
+      "effective_full_bleed_dpi": 149.85
     },
     {
       "plate_id": "issue-05-plate-15",
@@ -482,10 +733,23 @@
         263
       ],
       "asset": "output/illustrations/revised/issue-05/plate-15.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The buyers went inside.",
       "scene_brief": "Inside the cooperative store, a woman measures honey into a jar for waiting buyers; Q and Vero's male partner look in from the entrance, his tally sheet lowered. Wet market visible outside. Commerce has relocated, not vanished; no rescue or invasive photo.",
-      "scene_anchor": "measuring honey into a jar"
+      "scene_anchor": "measuring honey into a jar",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-03.png"
+      ],
+      "generation_prompt": "Use case: illustration-story. New unique single full-bleed 2:3 portrait plate for Issue Five of The Ingenious Machine. Neutral monochrome Goya-inspired etched realism: finely articulated faces, hands and materials, controlled cross-hatching, pure white highlights, no sepia/cream tint or aged paper wash. No titles, caption text, panel grid or border; captions added separately. Modern eastern Michoacán, ordinary clothes and work, not costumed folklore. Q retains exact established oval segmented metal head, circular ear mechanisms, exposed neck, tall slender articulated body, fitted waist-length dark sponsor blazer with small question-mark emblem. Never a knight, weapon bearer, stocky metal soldier or human-faced android. Custodian absent in person. Reference 1 Q only. View from inside the cooperative store toward its rain-wet entrance. Foreground a middle-aged Mexican woman with dark hair in a simple bun and a rolled-sleeve blouse measures honey into an ordinary glass jar at the counter. Two adult buyers wait patiently with their bags. Q and Vero's male student partner stand at the threshold, looking at the ongoing trade. Establish the student as a slim Mexican young adult with straight dark fringe, square glasses, plain hoodie and a tally sheet lowered in one hand. He is not Chano or the assembly's young man. Wet market tables and tarps visible outside; people have moved commerce inside to keep dry. Off-center jar and hands anchor the composition, not a group tableau posing for Q. No photography, no ecstatic rescue, no invented transparent data visualization or readable private records.",
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-0000958e-8c1b-4885-85b5-65200967b167.png",
+      "visual_review": "Honey measured into a jar inside the store, two buyers still present; Q and student partner check the changed location. Incidental honey color is converted by lossless PDF grayscale prepress.",
+      "asset_sha256": "ee4799ca26b1f532b935ba4fce94a34c507c2a8efa63288fcf46e507e976976f",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "source_color_mode": "RGB",
+      "effective_full_bleed_dpi": 149.85
     },
     {
       "plate_id": "issue-05-plate-16",
@@ -515,10 +779,24 @@
         283
       ],
       "asset": "output/illustrations/revised/issue-05/plate-16.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Music above the store.",
       "scene_brief": "At market closing, Q pauses beneath the stairs to listen to music from above while the student takes the other end of a table. Celestina's tortilla and Micaela's awkward sign remain ordinary working objects, no ceremonial presentation.",
-      "scene_anchor": "Q stopped beneath the stairs to listen"
+      "scene_anchor": "Q stopped beneath the stairs to listen",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-03.png",
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-0000958e-8c1b-4885-85b5-65200967b167.png"
+      ],
+      "generation_prompt": "Use case: illustration-story. New unique single full-bleed 2:3 portrait plate for Issue Five of The Ingenious Machine. Neutral monochrome Goya-inspired etched realism: finely articulated faces, hands and materials, controlled cross-hatching, pure white highlights, no sepia/cream tint or aged paper wash. No titles, caption text, panel grid or border; captions added separately. Modern eastern Michoacán, ordinary clothes and work, not costumed folklore. Q retains exact established oval segmented metal head, circular ear mechanisms, exposed neck, tall slender articulated body, fitted waist-length dark sponsor blazer with small question-mark emblem. Never a knight, weapon bearer, stocky metal soldier or human-faced android. Custodian absent in person. Market closing at the cooperative store: Q pauses beneath an exterior wooden staircase with head turned toward a small open upstairs radio-room window, listening to music (do not draw music notes). He holds one end of a wooden market table with his right hand; the slim young male student from reference2 (straight dark fringe, square glasses, plain hoodie) reaches for the other end, swallowing the last bite of a folded tortilla held in his other hand. Table between them leg geometry physically sensible. Q carries a bent small cereal-cardboard sign tucked beneath his left arm, backside toward viewer; no readable sign text. Empty tables and rolled tarps beyond, wet ground after rain, ordinary afternoon. Student and Q doing work, not a ceremonial gift. No new large church landmark; close-up vernacular shop and stair geometry.",
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-ed7df91d-3444-49fb-b570-6d99f17219ea.png",
+      "visual_review": "Q pauses beneath stairs to hear music, the student takes the other end of a table. Bent cardboard and tortilla remain practical objects.",
+      "asset_sha256": "7396ecec3ae8d753939af40dcc00493e07a37ff991c20eaa31fb6cc18a8ec868",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "source_color_mode": "RGB",
+      "effective_full_bleed_dpi": 149.85
     },
     {
       "plate_id": "issue-05-plate-17",
@@ -547,10 +825,24 @@
         302
       ],
       "asset": "output/illustrations/revised/issue-05/plate-17.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The station above the store.",
       "scene_brief": "Tere and Q review equipment terms in the radio room above the cooperative store; Chano and the representative nearby. Patched microphone, transmitter and ordinary notebooks. No magical archive or omniscient map.",
-      "scene_anchor": "Q sat beside the transmitter"
+      "scene_anchor": "Q sat beside the transmitter",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-03.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-03/plate-06.png"
+      ],
+      "generation_prompt": "Use case: illustration-story. Create new Issue Five plate 17 establishing Tere and her radio station. Reference 1 supplies ONLY Q's unchanged tall slim mechanical body, oval segmented silver head, ring ears, exposed neck, fitted dark waist-length jacket and small question-mark emblem. Reference 2 supplies ONLY Chano's stocky body, wavy dark hair and thick mustache, practical work shirt. Scene: radio room above a cooperative store in a small contemporary eastern Michoacán town. Tere, a Mexican woman about 45, square expressive face, dark hair in a single practical braid over a shoulder, rolled-sleeve light cotton shirt with dark knitted vest, sits at her well-used desk and asks a pointed question of Q. Q sits beside the transmitter, a terms document open on a small screen; hands at rest, engaged conversation not technical wizardry. Chano leans nearby. A clean-shaven middle-aged male foundation representative with short neat hair and a plain modern windbreaker stands with his folder, listening. Four adults total. Patched microphone on a stand, transmitter with knobs, a modest speaker and exactly three ordinary notebooks on table. Window overlooks low town roofs. Medium-wide diagonal view gives the people and working radio equipment equal weight. Modern useful station, not an antique mad-science laboratory. Single portrait 2:3 full-bleed composition, neutral monochrome Goya-inspired fine etched realism, pure white highlights, varied cross-hatching with breathing room, no sepia or cream wash. No lettering, captions, logos, borders, glowing magic, giant archive, cameras, priestly regalia or Custodian. Preserve Q and Chano identity; do not import reference woman or child.",
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-8b4e1f7e-7642-4984-84bd-adacd60e2673.png",
+      "visual_review": "Tere in braid and vest, Q beside transmitter, Chano and foundation representative; patched microphone and three notebooks establish the working room.",
+      "asset_sha256": "0c7568040dd83e43daaf5482a61b6bd85035bc2650177c8675c2d1082bf1f5e2",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "source_color_mode": "RGB",
+      "effective_full_bleed_dpi": 149.85
     },
     {
       "plate_id": "issue-05-plate-18",
@@ -586,10 +878,24 @@
         328
       ],
       "asset": "output/illustrations/revised/issue-05/plate-18.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "A call outside the recording.",
       "scene_brief": "Tere switches off the recorder while helping the caller contact her daughter; Q checks the logging control beside her. Do not depict a waveform recording the private call or legible contact data.",
-      "scene_anchor": "Tere switched off the recorder"
+      "scene_anchor": "Tere switched off the recorder",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-05/plate-17.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-03.png"
+      ],
+      "generation_prompt": "Use case: illustration-story. New unique single full-bleed 2:3 portrait plate for Issue Five of The Ingenious Machine. Neutral monochrome Goya-inspired etched realism: finely articulated faces, hands and materials, controlled cross-hatching, pure white highlights, no sepia/cream tint or aged paper wash. No titles, caption text, panel grid or border; captions added separately. Modern eastern Michoacán, ordinary clothes and work, not costumed folklore. Q retains exact established oval segmented metal head, circular ear mechanisms, exposed neck, tall slender articulated body, fitted waist-length dark sponsor blazer with small question-mark emblem. Never a knight, weapon bearer, stocky metal soldier or human-faced android. Custodian absent in person. Reference 1 supplies Tere, Q and the radio room; reference 2 reinforces Q's mechanical identity only. Same radio room and Tere as reference 1: woman about 45 with dark single braid, light rolled-sleeve shirt and knitted dark vest. Preserve Q, her face, patched desk microphone, modest transmitter and speaker. New intimate side angle focused on Tere reaching to switch OFF a small recording control while helping an adult woman caller, in a plain cardigan, contact her daughter by phone. Q checks the separate logging setting beside Tere. A phone is turned toward its user, not toward the viewer; no waveform, glowing record light or retained private transcript. Three figures only in this close frame, other established men can be outside crop. The private call must not appear to be recorded. Natural hands and genuine conversation, no action spectacle.",
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-b6e22aa0-d5b1-4e90-8a33-95764dd7d54e.png",
+      "visual_review": "Tere switches off recording during a private call while Q checks controls. Caller has phone to ear, no public transcript or recording visualization.",
+      "asset_sha256": "3ec2bde9467dc5d31ef1a4ab2dc5afd4f967459d8c11893a56d0a3c5432bdeff",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "source_color_mode": "RGB",
+      "effective_full_bleed_dpi": 149.85
     },
     {
       "plate_id": "issue-05-plate-19",
@@ -621,10 +927,25 @@
         349
       ],
       "asset": "output/illustrations/revised/issue-05/plate-19.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The visiting team cheated.",
       "scene_brief": "Residents and Q examine a disputed projected needs-map marker at the store. A nearby ordinary football court explains the argument behind the label; do not portray armed land conflict, a real national map or a scientifically verified classification.",
-      "scene_anchor": "Because the visiting team cheated."
+      "scene_anchor": "Because the visiting team cheated.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-03.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-05/plate-03.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-05/plate-17.png"
+      ],
+      "generation_prompt": "Use case: illustration-story. New unique single full-bleed 2:3 portrait plate for Issue Five of The Ingenious Machine. Neutral monochrome Goya-inspired etched realism: finely articulated faces, hands and materials, controlled cross-hatching, pure white highlights, no sepia/cream tint or aged paper wash. No titles, caption text, panel grid or border; captions added separately. Modern eastern Michoacán, ordinary clothes and work, not costumed folklore. Q retains exact established oval segmented metal head, circular ear mechanisms, exposed neck, tall slender articulated body, fitted waist-length dark sponsor blazer with small question-mark emblem. Never a knight, weapon bearer, stocky metal soldier or human-faced android. Custodian absent in person. Afternoon exterior of cooperative store: a small portable projector casts a purely fictional schematic needs map on plain white wall, thin lines/dots with one dark hatched zone, no readable labels and not a real national map. Q checks the underlying example on a tablet held privately, not frontally for audience. Candelaria from reference2 (small elderly grey low bun, patterned wool shawl, wooden cane) shows an open pocket notebook to the foundation representative; use ONLY reference3's clean contemporary foundation representative, not Tere's whole radio room. Two residents gesture matter-of-factly toward a nearby small football court visible beyond a low fence; children casually playing there, no injury, weapons, protest banners, troops or real land confrontation. Viewer understands an ordinary sports argument has been classified as territorial conflict. Candelaria calm not mystical, Q attentive not savior. Composition leaves adequate white projected map contrast. No decorative cathedral or palms.",
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-42f0a2f3-3293-4bb6-8eea-fdd6530f3347.png",
+      "visual_review": "Projected fictional classification and ordinary football court explain the mismatch; Candelaria questions it with her notebook. No armed conflict or real national map.",
+      "asset_sha256": "d8906fe4ed6df2e609d94b449f63030ecf5e65536453828d463ba78a33eb47b2",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "source_color_mode": "RGB",
+      "effective_full_bleed_dpi": 149.85
     },
     {
       "plate_id": "issue-05-plate-20",
@@ -654,10 +975,24 @@
         369
       ],
       "asset": "output/illustrations/revised/issue-05/plate-20.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "His own song.",
       "scene_brief": "The uncle leans forward beside the transmitter to hear his own performance; Tere raises the speaker and Q stays to listen. Nephew nearby. The broadcast is permitted without a Castalia deposit; no Q performance, archival transfer or supernatural music.",
-      "scene_anchor": "Q stayed for the end of it."
+      "scene_anchor": "Q stayed for the end of it.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-05/plate-17.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-03.png"
+      ],
+      "generation_prompt": "Use case: illustration-story. New unique single full-bleed 2:3 portrait plate for Issue Five of The Ingenious Machine. Neutral monochrome Goya-inspired etched realism: finely articulated faces, hands and materials, controlled cross-hatching, pure white highlights, no sepia/cream tint or aged paper wash. No titles, caption text, panel grid or border; captions added separately. Modern eastern Michoacán, ordinary clothes and work, not costumed folklore. Q retains exact established oval segmented metal head, circular ear mechanisms, exposed neck, tall slender articulated body, fitted waist-length dark sponsor blazer with small question-mark emblem. Never a knight, weapon bearer, stocky metal soldier or human-faced android. Custodian absent in person. Reference 1 supplies Tere, Q and the radio room; reference 2 reinforces Q's mechanical identity only. Same radio room and Tere as reference 1: woman with dark single braid and knitted vest; keep her identity, Q and radio equipment. New scene later that afternoon: the uncle, a weathered Mexican man in his late fifties with short salt-and-pepper hair, plain work shirt, trousers and work-worn hands, sits beside the transmitter leaning forward to listen to his own prerecorded song. His young nephew stands near his chair with a folded song list. Tere turns the volume knob on the speaker/control unit, Q stays listening nearby with hands relaxed. Four figures total; no Chano or representative necessary in this framing. The uncle is listening, not playing an instrument now; Q does not perform. Side-lit afternoon window and a slightly lower viewpoint at the speaker's height. No musical notation floating in air, headphones on everybody, mystical rays, archival transfer or written dialogue.",
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-dc53873b-92ed-442e-ad2f-a3aa18f7c2e5.png",
+      "visual_review": "Uncle and nephew listen to the uncle's prerecorded song with Tere and Q. No performance falsely substituted for playback or automatic archive deposit.",
+      "asset_sha256": "c2212d42c791d72f457c8fbbe26e25794f46e06f1402399759c83bcb504932eb",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "source_color_mode": "RGB",
+      "effective_full_bleed_dpi": 149.85
     },
     {
       "plate_id": "issue-05-plate-21",
@@ -684,10 +1019,24 @@
         385
       ],
       "asset": "output/illustrations/revised/issue-05/plate-21.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Both at once.",
       "scene_brief": "Morning motel basin: Chano examines his chin in the mirror before the official appointment, razor among ordinary washing things; Q waits beside him in the fitted jacket. Reflect Chano correctly; no Custodian physically present, office already reached or imposed knightly costume.",
-      "scene_anchor": "Chano examined his chin."
+      "scene_anchor": "Chano examined his chin.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-03.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-03/plate-06.png"
+      ],
+      "generation_prompt": "Use case: illustration-story. New Issue Five plate 21, final morning scene. Reference 1 supplies Q's exact segmented metal head, circular ears, articulated neck, slim tall body and fitted sponsor blazer with little question-mark lapel emblem. Reference 2 supplies ONLY Chano: stocky middle-aged Mexican man, wavy dark hair, thick mustache, work shirt. Do not copy the woman, child or bus. Scene: plain motel washbasin the morning before Chano's official appointment. Chano considers whether to shave, studying his chin in a rectangular mirror; the mustache remains intact. Show his back/three-quarter shoulder in foreground and a geometrically correct reflection of that same face, not another man. Razor and soap rest beside the basin. Q waits nearby, relaxed and attentive, beyond the mirror's cropped reflected field. A quiet domestic joke, not grooming a mechanical soldier. Natural morning window light and worn simple tile/plaster. Strong distinct portrait 2:3 composition, single full-bleed illustration. Fine neutral black-and-white Goya-inspired etched realism, clear delicate faces, metallic anatomy faithfully matching reference; pure white highlights and controlled dark hatching. No cream/sepia ink, paper discoloration, background wash, caption, lettering or border. No Custodian, no extra characters, no alternate human Q, no long ragged coat or knightly costume. Two individuals total; mirror reflects Chano correctly.",
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-ef664b26-b869-4265-8047-680ec81ddd01.png",
+      "visual_review": "Chano considers his chin in a geometrically coherent mirror; Q waits beside him. Mustache intact, no other person added to the reflection.",
+      "asset_sha256": "dd5081c4244643e997de213e5145a9aab0727978d8e3193a81503f3371de80ea",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "source_color_mode": "RGB",
+      "effective_full_bleed_dpi": 149.85
     }
   ],
   "wardrobe_reference": "output/illustrations/revised/issue-04/plate-03.png"
