@@ -19,6 +19,13 @@ the book.” The source now permits Q to remain alive when the writing stops.
   budget, charge, physical limits, an adopted journey, and an evening call.
   Its interludes replace elementary semantic failures with missing context and
   administrative ambiguity. Amealco is rendered as wooded highland terrain.
+- The Issue 1 production read caught a surviving naive three-test sequence in
+  the earlier Chapter 1 pass. It has now been replaced. Q knows the Custodian's
+  voice before embodiment; balance, touch, and hot coffee are new, not ordinary
+  interpretation or consent. The archive exercise exposes missing facts and an
+  attractive premature story. The Custodian corrects his own records, shares a
+  joke, and repairs Q's coat pocket for the workshop key. Chano's name is aligned
+  with Chapter 2. The Isthmus contract is delivered through the grid.
 - Chapter 2 now begins with Q seeking a socket. He saves Chano's dismissal notice,
   makes an unjustified access assumption, and presses a stop too early. The
   resulting damage and security incident lead to the viral clip. The governorship
@@ -134,15 +141,30 @@ the book.” The source now permits Q to remain alive when the writing stops.
   and ends in a verified save and shutdown. The pending migration is a data-
   handling issue, not an inexplicably fatal operation on Q. Ownership,
   maintenance, and the Tijuana paper returns remain open.
-- `Q_SCENE_EXERCISES.md` records four author-run exercises with limited packets,
+- `Q_SCENE_EXERCISES.md` records six author-run exercises with limited packets,
   alternative responses, consequences, and editorial findings. These are not
   independent blind runs; the limitation is explicit.
 - Current structural check: 22 unique chapter headings, two book divisions,
   one coda, and the pen-down final sentence. The manuscript is approximately
-  73,900 whitespace-delimited words including front matter. Selected checks
+  73,700 whitespace-delimited words including front matter. Selected checks
   confirm the late delivery, travel, and maintenance anchors and reject named
   obsolete events. `git diff --check` passes. These checks do not establish
   whole-book literary quality or validate any PDF or illustration.
+- Issue 1 now has a new 24-page English revision proof and a 12-side A3 folding
+  proof in `output/pdf/`, linked from `output/serial/README.md`. Twelve new plates
+  use the corrected Q/Custodian reference; a hash-bound manifest records the
+  actual facing text, exact interior prompts, asset hashes, and review scope.
+  A second PDF extractor confirms all 3,836 narrative words once in source order.
+  Text pages have no background fills or images. The output's twelve plate image
+  objects are DeviceGray. Comic/A3 sizes, six-sheet pairing and zero PDF rotation
+  pass the structural checks. Art pages and narrative pages have rendered review;
+  the cover mask was removed because it clipped the antenna.
+- These are revision proofs, not A+ press masters. Native raster detail is about
+  150 dpi at comic trim; no artificial upsampling is represented as new detail.
+  Ink-on-stock and actual printer feed/duplex behavior remain unverified. No print
+  job has been sent. `ISSUE_01_PRODUCTION.md` records the specification and limits.
+  Other English issues, full-book PDFs and the Spanish edition remain superseded;
+  the serial indexes now label this explicitly instead of calling them ready.
 
 ## Required next work
 
@@ -214,14 +236,13 @@ the book.” The source now permits Q to remain alive when the writing stops.
    for the gate, limited translation, and a public-example decision. They contain
    no canonical outcome or required mistake. Run each in a separate fresh context
    if authorized, then let an explicit world response support a second step.
-5. Rebuild the English chapter issues only after text and plate placement are
-   reconciled. The existing PDFs predate this revision. They are not evidence of
-   the new story. English is the current revision source; the Spanish edition
-   remains an earlier translation and must be labeled accordingly if linked.
-6. Inspect plates against the actual facing text after pagination. The existing
-   builder uses modulo indexing and will silently repeat plates if the number of
-   text pages changes; remove that behavior. Its current odd-page art followed
-   by even-page text also requires a facing-spread audit in a bound booklet.
+5. Rebuild the remaining English chapter issues only after text and plate placement
+   are reconciled. Only the new Issue 1 revision proofs represent the current text.
+   English is the current revision source; the Spanish edition remains earlier.
+6. Use the new explicit-manifest builder, not the old modulo-indexed asset maps.
+   It maps even narrative pages to the following odd plate pages, rejects stale
+   chapter/asset hashes and repeats, and checks rendered text coverage. Extend
+   these checks and unique facing-scene illustrations beyond Issue 1.
 7. Restore the requested print specifications: readable larger text, continuous
    flow, black ink and unpainted text backgrounds for cream stock, captions in a
    margin, full-bleed art, and the 24-page/12-plate/six-sheet Issue 1 proof. Verify
@@ -240,6 +261,12 @@ the book.” The source now permits Q to remain alive when the writing stops.
 The repository's existing development scripts live in `/tmp`, as required by its
 AGENTS.md:
 
+- `/tmp/build_ingenious_issues_v2.py`: revised continuous pagination, explicit
+  facing-art manifest validation, and A3 imposition. Issue 1 is fixed at 24 pages
+  and 12/17-point body text. Preliminary plans for all 22 chapters pass complete
+  rendered-text coverage; only Issue 1's art and output have been rebuilt.
+- `/tmp/qa_ingenious_issue1.py`: independent PDF text, background, image color,
+  page size, rotation and booklet-pair checks.
 - `/tmp/build_chapter_issue_set.py`: all 22 English issues, hard-coded image maps,
   477 x 738 points, 8.8-point body text, currently colored ink.
 - `/tmp/build_ingenious_serial.py`: complete serial builder and shared styles.
@@ -249,6 +276,5 @@ AGENTS.md:
 - `/tmp/build_ingenious_pdfs.py` and `/tmp/generate_ingenious_pdfs.py`: additional
   complete-book builders, not yet inspected for this pass.
 
-The PDF skill has been read. Before first PDF authoring, locate and run its
-artifact-operation marker once if available. Intermediate renders and diagnostic
-scripts belong under `/tmp`. No PDF has been rebuilt in this pass.
+The PDF skill and its artifact-operation marker were used for the new Issue 1
+outputs. Intermediate renders and diagnostic scripts remain under `/tmp`.

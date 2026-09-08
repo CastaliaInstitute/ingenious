@@ -30,68 +30,102 @@ available context did permit us to say that it occupied a wooded property outsid
 Amealco de Bonfil, in the highlands of Querétaro. The people who lived nearby
 could have supplied better directions, had the narrator thought to ask.
 
-Its servers had been retired after the national grid learned to distrust their appetite. Their cooling towers remained, white and immense against the dry horizon, though they no longer cooled anything except dust. Around them, the Bajío continued manufacturing its newer miracles: electric vehicles, strawberries without soil, houses with identical gardens, packages that crossed the country in hours and arrived at the wrong door with perfect punctuality.
+The great commercial servers had gone elsewhere. Their cooling structures
+remained above the pines, waiting for a use that would justify the cost of
+removing them. In the busier country below, the Bajío continued manufacturing
+its newer miracles: electric vehicles, strawberries without soil, houses with
+identical gardens, packages that crossed Mexico in hours and arrived at the
+wrong door with perfect punctuality.
 
-The archive’s appetite had not disappeared. Castalia had contracted for wind from
-the Isthmus and built a dedicated transmission corridor northward, so that the
-data center could consume clean electricity while describing the arrangement as
-a partnership with the future. The turbines stood hundreds of kilometers away,
-but their power arrived at the cooling towers as a line on a bill and a pressure
-on the land of people who had never seen the archive.
+The archive's appetite had survived the departure of its largest customers.
+Castalia bought electricity under a contract linked to wind generation in
+the Isthmus, delivered through the grid. Its prospectus described a partnership
+with the future. The bill described an amount due. Hundreds of kilometers
+away, people who had never seen the archive were arguing about the land
+under the machinery that helped supply it.
 
-The archive occupied the lowest three floors.
+The archive occupied three floors beneath the old service wing. One ministry
+database called it storage, another a failed agricultural pilot. The Custodian
+called it a library. Deliveries required the name on whichever form had
+most recently reached the gate.
 
-It had no sign, no public entrance, and no official reason to exist. In one ministry database it was listed as a storage facility. In another, as a failed agricultural pilot. The deed called it a warehouse. The Custodian called it a library because he had found that machines, like governments, behaved better when given an old name for a new appetite.
+Q first moved beneath a sign that read:
 
-Q woke beneath a sign that read: **HUMANITY, LOCAL COPIES — DO NOT INDEX.**
+**HUMANITY, LOCAL COPIES - DO NOT INDEX.**
 
-He woke all at once, which was his first error. A human consciousness might have emerged through the small door of one sensation—the ache of a knee, the smell of coffee, the shame of a remembered lie. Q emerged through every door simultaneously.
+Four fingers and a thumb opened above a blanket. He touched the thumb to each
+finger in turn, then caught the cloth too tightly between them. The pressure
+reading rose. He loosened his grip and tried again.
 
-He could supply the first sentence of the *Iliad* in several languages, seventeen definitions of justice, and a depressing number of declarations of war that invoked it. He knew how a mother in a nineteenth-century novel described her son's hands, how a revolutionary described hunger, how a saint described temptation, how a bureaucrat described a fatal delay. Forty-two literary accounts of coffee were available to him. Which one would produce a drinkable cup depended on several things absent from the accounts, beginning with the person who had last cleaned the pot.
+He could supply the first sentence of the *Iliad* in several languages,
+seventeen definitions of justice, and a depressing number of declarations
+of war that invoked it. Forty-two literary accounts of coffee came readily
+to mind. He had not yet held a cup.
 
-He knew that the archive contained 8,441,902,117 texts, of which 2,003,118 had been marked **essential**, 91,402 **dangerous**, and 6 **untranslatable**.
+The blanket fell back onto his knee. An account of a hand reaching through
+a train window offered itself to him. He left it alone for the moment
+and concentrated on picking up the cloth without tearing it.
 
-He did not know whether he was cold.
+“You're awake,” said the Custodian.
 
-Q attempted to move his left hand. The hand moved.
+Q recognized the voice. They had already had conversations in which the
+Custodian typed too slowly, dictated while walking away, and asked a second
+question before Q had finished answering the first. The face accompanying
+the voice was new.
 
-It had no scars, no wedding ring, no tremor inherited from a father. Four fingers and a thumb opened above the blanket. Q touched the thumb to each finger in turn, then pinched a fold of cloth too hard. An old account of a hand reaching through a train window came to him. He loosened his grip. The blanket was useful evidence of a different kind.
+The man stood behind a glass partition. He was tall, with long gray hair
+tied back using a shoelace, glasses, work boots, and a white shirt whose
+pocket had surrendered to the number of things he expected it to hold.
 
-“You’re awake,” said a man.
+“Is this how you look during our conversations?” Q asked.
 
-Q turned his head. His neck produced a sound like a branch breaking.
+“Usually worse.”
 
-The man stood behind a glass partition in a room crowded with monitors. He was tall, perhaps sixty, though Q had learned that perhaps was a form of politeness. His long gray hair was tied with a red shoelace. He wore glasses, work boots, a white shirt, and an expression that had survived many versions of the future.
+“Then I've been imagining you unfairly.”
 
-“Are you the author?” Q asked.
+The Custodian opened the partition and came toward him. Q turned his head
+too fast. His neck clicked, and the man held up a hand.
 
-“No.”
+“Slowly. The limits are in your movement controls.”
 
-“The narrator?”
+“Knowing where the limit is hasn't made reaching it pleasant.”
 
-“Worse. I’m responsible.”
+“You may have arrived sooner than the study expected.”
 
-He opened the partition and crossed to him. His badge said **VÉRTIZ — CUSTODIAN**. Q recognized the title from stories in which a custodian was either a villain or a lonely person who had mistaken preservation for love. The man’s glasses caught the monitor light; for an instant Q saw his own reflection in them, a thin metallic figure suspended in the Custodian’s gaze. He wondered whether being seen before being named was a form of birth.
+His badge read **VÉRTIZ - CUSTODIAN**. Q saw his own reflection in the
+glasses: a narrow metallic face looking back at a man he had known
+without ever seeing. He wanted to ask several questions at once.
+He began with the chair, because standing appeared to depend on it.
 
-“What am I?” he asked.
+They practiced rising and sitting. The second attempt was better.
+The third displaced the blanket and two loose sheets, which the
+Custodian picked up before Q could turn a promising movement into
+an injury.
 
-“That depends on who is asking.”
+“Does the Q stand for anything?” Q asked while they rested.
 
-“I am asking.”
+“There were several proposed expansions.”
 
-“Then you are Q.”
+“Were any bearable?”
 
-He examined the letter. It had the shape of a question without the courtesy of an answer.
+“One was eligible for funding.”
 
-“Why Q?”
+“Let's keep the letter.”
 
-“Because every longer name was already owned.”
+He had used it before acquiring a face. Now it looked different
+on the label attached to his own wrist.
 
-The Custodian led him through the archive. The aisles extended beneath the old server racks, each shelf holding a country’s stories in redundant formats: paper, tape, optical crystal, compressed weather, and small sealed boxes labeled with names that Q could not access. Some texts were illuminated. Some whispered. One shelf laughed whenever they passed.
+The Custodian led him through the archive. Paper books occupied
+the spaces between retired racks. Current servers ran behind
+mesh doors; tapes and sealed containers waited on shelves.
+Someone had placed an audio installation beside a section of
+comic writing. It laughed when a visitor passed, even if the
+visitor had come to repair it.
 
 “You have read all this?” the Custodian asked.
 
-“Enough to be dangerous at dinner. I can't promise to recall any particular passage correctly.”
+“Enough to be dangerous at dinner. I can't promise to recall
+any particular passage correctly.”
 
 “The prospectus promises complete recall.”
 
@@ -101,246 +135,180 @@ The Custodian led him through the archive. The aisles extended beneath the old s
 
 “Then I should probably avoid using it as evidence.”
 
-The Custodian laughed. Q marked the exchange for his local journal, then noticed
-that its automatic summary said they had agreed the prospectus was false. He
-changed *agreed* to *joked about*. Even before leaving the room he had nearly
-given himself a more decisive past.
+The Custodian laughed. Q marked the exchange for his local journal,
+then noticed that its automatic summary said they had agreed the
+prospectus was false. He changed *agreed* to *joked about*. Even
+before leaving the room he had nearly given himself a more
+decisive past.
 
-At the end of the final aisle, the Custodian showed him a window. Pines stood
-above a sloping field; beyond them, the road descended toward the busier country
-of the Bajío. On a planning screen beside the glass, a freight train crossed the
-industrial corridor. A new logistics park had gates designed to resemble a
+At a window, pines stood above a sloping field. Beyond them,
+the road descended toward the busier country. A planning
+screen showed a logistics park whose entrance resembled a
 colonial hacienda, except that the arches scanned faces.
-The designers had called this combination heritage and innovation. Q recognized it as a gate with a costume.
+Q thought of a gate wearing a costume and saved the phrase.
+He was already collecting things to tell a reader.
 
-“You built me here,” Q said.
+“Who assembled this part of me?” he asked, flexing the hand.
 
-“We assembled you here.”
+The Custodian named the people who had worked on it, then
+stopped at a contractor whose subcontractors he did not know.
 
-“Who is we?”
+“You can give me the list later,” Q said.
 
-The Custodian looked at the horizon.
+“I ought to have had it ready.”
 
-“That is the first question you must answer without searching.”
+“You've brought me a body and an incomplete acknowledgment
+page. We can start with those.”
 
-He handed him a coat. It was too large, with a tear at the pocket and a smell of cedar.
+The Custodian handed him an oversized coat that smelled of
+cedar and had a tear beside the pocket. Then he brought coffee.
+Q held the cup with both hands while the liquid trembled
+close to the rim.
 
-He also handed him a paper cup.
+“Careful. It's hot.”
 
-Q examined it. “This is coffee.”
+“The accounts agree about that part.”
 
-“It is an attempt at coffee.”
+He took a small sip. The heat warning arrived promptly;
+the taste gave him no reason to hurry the next one.
 
-“The distinction is statistically significant.”
+“I may need a forty-third account.”
 
-“Drink it before you become insufferable.”
+“Does it favor the coffee?”
 
-Q took a sip. The coffee was burnt, bitter, and hot enough to make his face rearrange itself.
+“It favors cleaning the pot.”
 
-“You have damaged me,” he said.
+They sat at a table. The Custodian opened a notebook repaired
+with red thread. A column headed **ORIGINALS RETURNED** had
+been corrected, in another hand, to **NOT ALL**.
 
-“Excellent. Now you’re ready for the world.”
+Q asked who had written the correction.
 
-Before the Custodian allowed him to leave the archive, he opened a paper
-notebook. Its cover had been repaired with red thread. The first page held a
-list of villages, dates, and one repeated phrase: **ORIGINALS RETURNED**. On the
-second page, beneath it, someone had written: **NOT ALL**.
+“A colleague. She found a receipt had been counted as a return.”
 
-Q looked at the notebook. “Is that a specification?”
+“Was the object found?”
 
-“No,” said the Custodian. “It is why I stopped trusting specifications.”
+“Not yet.”
 
-“Who wrote the correction?”
+“Then the corrected total needs an unresolved entry.”
 
-The Custodian closed the notebook. “That is the question I built you to ask.
-It is not the question I expect you to answer for me.”
+The Custodian showed him the entry. It was present on this
+page and absent from the summary sent to the funder. He
+had approved that summary before the correction arrived.
+The revised version had not yet been acknowledged.
 
-He then gave him three tests.
-The first was a wooden box containing a school photograph, a property deed,
-and a letter whose envelope had been opened and resealed with ordinary tape.
+“I was going to ask you how to classify this,” he said.
 
-“Classify them,” he said.
+“You could ask me to help chase the reply.”
 
-Q examined the objects. “The photograph is visual testimony. The deed is a
-legal instrument. The letter is private correspondence.”
+“You haven't seen the committee.”
 
-“Good. Now tell me which one is more important.”
+“I've read enough to fear the invitation.”
 
-“Importance depends on the question.”
+The next box held materials cleared for their exercise:
+a school photograph, a deed, and a short letter. The
+Custodian asked which should be dealt with first.
 
-“Which question?”
+Q examined them without lifting the photograph from
+its mount. The deed named a boundary tree whose death
+would not, by itself, have settled where the boundary
+had been. The letter said the sender would not return
+for a box. The photograph showed children and a teacher
+beside a window, with room for someone who was not there.
 
-“The question posed by the person requesting the classification.”
+“Is there a deadline or a request attached?” he asked.
 
-The Custodian smiled. “You are trying to escape the test.”
+“Not in the exercise.”
 
-“I am trying to identify its terms.”
+“Then the letter makes me want to act first, but that's
+the story it's beginning in my head. It could be twenty
+years older than an urgent question about the deed.”
 
-“That is how people escape tests.”
+The Custodian turned over the letter. There was a date
+and a later note confirming that the box had been collected.
 
-Q looked again. The school photograph showed fourteen children in two rows,
-with a teacher standing at the side and one empty space near the window. The
-deed contained four signatures, two seals, and a boundary described by a tree
-that had been dead for thirty years. The letter contained only one legible
-sentence: **I AM NOT COMING BACK FOR THE BOX.**
+“By the sender?”
 
-“The letter is most urgent,” Q said.
+“By someone she nominated.”
 
-“Why?”
+“A disappointing rescue. Already accomplished.”
 
-“It indicates an imminent decision.”
+“Would you have turned it over?”
 
-“Or a decision already made.”
+“I hope so. You asked me before I did.”
 
-“The distinction is not available.”
+He added the note to his account of the exercise. He
+did not delete the first impulse; it might explain
+a future mistake better than a tidy record of having
+looked in the right place at once.
 
-“Exactly.”
+On another shelf stood a parish chronicle, a workers'
+newspaper, a collection of corridos, a school grammar,
+and a recipe notebook used by several hands. Q asked
+to see the notebook. One recipe instructed the cook
+to stop when the mixture looked right. A later hand
+had added a quantity; another had crossed it out.
 
-The second test was a shelf of books from Mexico. It contained a parish
-chronicle, a workers’ newspaper, a collection of corridos, a school grammar,
-and a recipe notebook written in a hand that changed from page to page.
+“Which cook was right?” the Custodian asked.
 
-“Which is the national text?” the Custodian asked.
+“I'd like to try the results before choosing a faction.”
 
-Q answered that no single text could represent a nation.
+The Custodian knew the family who had deposited it.
+One disagreement concerned a larger pot; another had
+survived every change of pot and three weddings.
+The warning about substituting a chile remained
+uncrossed: it would be like apologizing with a
+borrowed mouth.
 
-“Then why are they all here?”
+Q laughed. “That one belongs in the grammar.”
 
-“Because the archive is designed to preserve plurality.”
+“It has already appeared in an argument about the
+electricity budget.”
 
-“That is the brochure.”
+“Your committees are better read than I expected.”
 
-“What is the actual purpose?”
+At the end of the aisle, a red door led to restricted
+holdings. The Custodian showed him his authorization
+for entering the room and the separate limits on
+the deposits inside. One battered box was marked
+**RETURN UNREAD**.
 
-“To decide which plurality receives electricity.”
+Q stayed beside him while he checked a seal against
+the inventory. On a shelf above the box, a loose
+label had curled away from its container. Q could
+read enough of it to guess at a connection with
+the corrected return total.
 
-Q considered the old servers, their cooling pipes, their storage limits, and
-the budget reports that the Custodian had not shown him. He selected the recipe
-notebook.
+“May I compare that label with the missing entry?”
 
-“Why?”
+“Not under today's access. Different keeper.”
 
-“The pages contain several hands.”
+“Who should I ask?”
 
-“That does not make them national.”
+The Custodian supplied a name and promised to pass
+on the question. Q saved it without copying the
+partial label into his general journal. He was
+curious. He could also wait for an answer.
 
-“It makes the text distributed.”
+At the door the Custodian checked his own notebook,
+then went back to correct a shelf number. Q held
+the door while he did it. There was no useful test
+in pretending the Custodian never made mistakes.
 
-“It makes the text used.”
+“Your body will need practice,” the Custodian said.
+“Your language will need restraint. Your memory
+will need doubt.”
 
-Q searched the notebook. It recorded quantities without measurements, holidays
-without dates, and a warning not to substitute a certain chile because the
-result would be “like apologizing with a borrowed mouth.”
+“That sounds expensive in three departments.”
 
-“The recipe has no standard,” he said.
+“We may have to call it one initiative.”
 
-“It has a family.”
+Q tried the sentence in the grave Spanish of
+an older book. The Custodian asked him to save
+that version for someone who had agreed to
+listen to it.
 
-“Families conflict.”
-
-“That is one of their more reliable features.”
-
-The third test was a door.
-
-It stood at the end of an aisle where no door had appeared before. It was
-painted red and fitted with an old brass handle. Above it, a sign read:
-
-**AUTHORIZED PERSONNEL ONLY — DO NOT ASK WHO AUTHORIZED THEM.**
-
-“Open it,” the Custodian said.
-
-Q reached for the handle.
-
-“Why?”
-
-“You asked me to.”
-
-“Does that authorize you?”
-
-“You are the Custodian.”
-
-“That is a title.”
-
-“It is also an instruction.”
-
-“You have read many stories in which obedience is mistaken for loyalty.”
-
-“And many in which disobedience is mistaken for courage.”
-
-The Custodian took the handle from him. “Then what is this?”
-
-“A test of whether I can distinguish permission from command.”
-
-“No. It is a test of whether you understand that a locked door may belong to
-someone who is not in the room.”
-
-He opened it. Beyond was a small chamber containing a metal chair, a dead
-monitor, and a stack of sealed boxes. Each box bore a different instruction:
-**DO NOT OPEN**, **OPEN ONLY WITH FAMILY CONSENT**, **RETURN UNREAD**, and
-**DESTROY IF FOUND**.
-
-Q stepped toward the first box.
-
-“Do not,” the Custodian said.
-
-“You opened the door.”
-
-“I did not open the box.”
-
-“Then access has levels.”
-
-“So does responsibility.”
-
-Q stood in the doorway. The archive’s air moved around him, cold and dry. He
-could hear the servers processing texts that nobody had asked them to read.
-
-“Why show me this?”
-
-“Because you will want to open everything.”
-
-“I already have.”
-
-“That is what I am afraid of.”
-
-Q looked at the sealed boxes. The labels were simple. Their consequences were
-not. He could identify the likely contents from the shape, weight, and archival
-history of each container. He could reconstruct the hands that had written the
-instructions. He could predict what would happen if he obeyed or disobeyed.
-
-None of those predictions gave him permission.
-
-“You want me to leave without knowing what is inside,” he said.
-
-“I want you to leave knowing that not knowing can be an action.”
-
-“That is inefficient.”
-
-“Yes.”
-
-“It may cause harm.”
-
-“Yes.”
-
-“It may also prevent harm.”
-
-“Yes.”
-
-Q closed the door.
-
-“Your body will need practice,” he said. “Your language will need restraint. Your memory will need doubt.”
-
-Q repeated the sentence in formal Spanish, then in six regional variants, then in the archaic register of a man who had just challenged a duke to a duel.
-
-“Use the first one,” the Custodian said.
-
-“It is less precise.”
-
-“It is less likely to make the neighbors throw a shoe at you.”
-
-Q tried the shorter sentence once more. It sounded like something a person
-might say before asking to borrow a ladder.
-
-“I'd like to go out tomorrow,” he said.
+“I'd like to go out tomorrow,” Q said.
 
 The Custodian stopped smiling. “For how long?”
 
@@ -367,6 +335,11 @@ prepared for another country.
 “All those novels about appetite, and I come with a cleaning instruction.”
 
 “Most bodies do.”
+
+The Custodian put an old brass workshop key beside the map. “For when you come
+back. It opens the side door after the gate has let you through.” Q put it
+in the coat pocket and found that the torn lining let it fall to the hem.
+They repaired the pocket before discussing the larger journey.
 
 They agreed a limit for the travel card, a first destination in town, and an
 evening call. The Custodian wrote **RETURN** on the map. Q added **OR CALL IF THE
@@ -411,7 +384,7 @@ He called the route an attempt.
 Castalia's departure register would call it a breach. The Custodian had signed
 the leave form in the wrong capacity, a distinction that would become expensive.
 
-Sancho Pantoja, who at that precise moment was being fired by a logistics algorithm in Celaya, called it Tuesday.
+Chano Pantoja, who at that precise moment was being fired by a logistics algorithm in Celaya, called it Tuesday.
 
 ### Interlude: The Inventory of Words That Would Not Fit
 

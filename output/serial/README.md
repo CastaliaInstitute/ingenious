@@ -1,19 +1,44 @@
 # The Ingenious Machine: Serial Edition
 
-The serial edition lays out the complete manuscript as 22 illustrated episodes. Each episode opens with a portrait 2:3 comic-size plate, followed by the chapter and its intervening interludes in a two-column reading layout.
+The planned serial has 22 illustrated issues, one chapter and its interludes per
+issue. The English manuscript is the current revision source. Most PDFs in this
+directory predate the motivation, continuity, and ending revision and must not
+be presented as current or production-ready.
 
-The Spanish and English PDFs are parallel editions:
+## Current Issue 1 revision proof
+
+- [English Issue 1: revised reading PDF](../pdf/ingenious-issue-01-revised-en-bw.pdf)
+- [English Issue 1: revised A3 folding PDF](../pdf/ingenious-issue-01-revised-en-bw-a3.pdf)
+
+24 pages: illustrated cover, eleven continuous two-column narrative pages with
+eleven unique facing plates, and a publication-information back page. Georgia
+12/17-point text replaces the former small type. Text backgrounds are unpainted;
+the stock supplies the cream tone. The PDF uses grayscale plates, full bleed at
+the comic trim, and separately typeset captions. Twelve A3 landscape sides make
+six duplex sheets at actual size, short-edge flip. Fold ticks sit outside trim.
+
+This is a revision proof, not an A+ press master. The approximately 150-dpi raster
+plates still need print-resolution and ink-on-stock review. No print job has been
+sent. See the [production record](../../novel/development/ISSUE_01_PRODUCTION.md)
+and [facing-text manifest](../illustrations/revised/issue-01/manifest.json).
+
+## Earlier editions
+
+These retain superseded text or layout. The Spanish edition is not yet a
+translation of the current English revision:
 
 - [Spanish serial PDF](the-ingenious-machine-serial-es.pdf)
 - [English serial PDF](the-ingenious-machine-serial-en.pdf)
 - [English Issue 1 proof - transparent page backgrounds](the-ingenious-machine-issue-01-en-bw-transparent.pdf)
 - [English Issue 1 A3 folded proof - transparent page backgrounds](the-ingenious-machine-issue-01-en-transparent-a3-folded.pdf)
 
-The complete chapter-by-chapter English deployment is in the [issue set](issues/README.md): 22 independent PDFs, one per chapter, with a full-bleed plate alternating with every text page.
+The [earlier issue set](issues/README.md) contains 22 independent PDFs awaiting
+rebuild against the revised manuscript and verified facing-art mappings.
 
-Issue 1 is a 24-page English proof for black ink on cream stock: twelve near-bleed monochrome plates alternate with twelve two-column prose pages. The cover is the first plate, and the eleven interior plates carry the opening journey from the archive through Q's first human encounters. Prose is balanced at paragraph boundaries rather than interrupted by arbitrary page breaks. The transparent version leaves text-page backgrounds unpainted so the stock supplies its own tone and avoids a rasterized rectangle. Captions sit in narrow unprinted margins over the plate bleed. Its A3 file is a centered, short-edge duplex saddle-stitch imposition for folding and collating six sheets directly from the printer.
-
-The image plates are in [`../illustrations/`](../illustrations/). Q is held to the approved model sheet established in Chapter One: a tall, narrow, worn silver humanoid robot with an expressive nonhuman face and a question-mark chest emblem. The plate lettering is added in layout so generated art remains free of accidental text and logos.
+The revised Issue 1 assets are in [`../illustrations/revised/issue-01/`](../illustrations/revised/issue-01/).
+Q retains his segmented metal head, circular ear mechanisms, articulated body,
+and question-mark chest emblem. The Custodian is the tall, long-haired man in
+glasses. Earlier art elsewhere in the directory has not received the same review.
 
 ## Episode list
 

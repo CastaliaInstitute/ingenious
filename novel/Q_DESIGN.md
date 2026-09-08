@@ -62,6 +62,14 @@ a practical question. His old Spanish appears as a chosen register, a habit of
 quotation, or a socially mistaken flourish. It cannot make him incapable of
 understanding elementary present-day speech.
 
+His bodily awakening is not his first conversation. He recognizes the
+Custodian's voice and habits from their earlier exchanges; the face, tactile
+feedback, balance, and hot cup are new. Archive exercises may expose missing
+facts or a prematurely attractive story. They must not require him to discover
+that a request, a definition, and an authorization are different things. The
+Custodian makes mistakes, has incomplete records, and can share a joke without
+turning every answer into a pronouncement.
+
 His characteristic errors are premature confidence, excessive explanation,
 deference to an articulate account, and an attractive analogy that influences
 what he notices. He can know that a turbine is a turbine and still mistake a

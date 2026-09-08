@@ -1,16 +1,17 @@
 # The Ingenious Machine: Chapter Issues
 
-This directory contains the English serial deployment: one production-ready
-comic-size PDF for each of the novel's 22 chapters. Every issue alternates a
-full-page chapter plate with a two-column text page, so each issue has an even
-page count and can be reviewed, printed, or imposed independently.
+This directory contains an earlier English serial deployment. These 22 PDFs
+predate the current motivation, continuity, and ending revision. They are not
+current production-ready files. The revised [Issue 1 reading proof](../../pdf/ingenious-issue-01-revised-en-bw.pdf)
+and [six-sheet A3 proof](../../pdf/ingenious-issue-01-revised-en-bw-a3.pdf) are
+separate outputs; the rest of this issue set still requires rebuilding.
 
 Page size is 6.625 x 10.25 inches. Plate pages use the chapter illustration as
 a full-bleed image with the issue caption in the lower margin. Text pages use
 the complete chapter and its intervening interludes, flowing at paragraph
 boundaries without arbitrary page breaks.
 
-## Issue list
+## Earlier issue list (superseded text/layout)
 
 1. [The Place Whose Name Was Removed](en/issue-01-chapter-one-the-place-whose-name-was-removed.pdf) - 12 pages
 2. [The First Sally](en/issue-02-chapter-two-the-first-sally.pdf) - 12 pages

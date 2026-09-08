@@ -115,6 +115,69 @@ ends before the proposed activity is narrated.
 Q does not need to be destroyed, promised a sequel, or assigned an infinite
 writing project. The new ending permits a completed book and an open life.
 
+## 5. A plausible story is not the missing date
+
+**Packet:** The Custodian offers three materials cleared for an archive exercise:
+a mounted school photograph, a land deed, and a letter saying its sender will not
+return for a box. He asks which to deal with first. Q has no deadline or stated
+request. He can examine the cleared materials without dismounting the photograph.
+
+**Q response:** “Is this about urgency, or are you asking which catches my
+attention? The letter catches it. Before choosing what to do, I'd look for its
+date and any later note. Someone may already have collected the box.”
+
+**Action:** Asks about the task, then checks the reverse of the letter. Does not
+treat a compelling interpretation as a work order or infer a person's fate from
+an incomplete document.
+
+**World response:** The reverse records a collection by the sender's nominee.
+The Custodian admits that the exercise withheld useful information.
+
+**Next Q response:** “Then we've been spared my rescue. What actually needs
+doing with these?”
+
+**Revision finding:** The former three-test sequence asked a capable language
+model to discover elementary distinctions. The revised scene gives Q the right
+question at once and lets him acknowledge an attractive but premature story.
+The Custodian turns the letter over before Q does; that difference is retained
+as an ordinary conversational timing choice, not evidence that Q cannot think
+to inspect a document. The nearby coffee and pocket-repair scenes supply bodily
+novelty and shared activity without inventing semantic incompetence.
+
+## 6. Current power-and-permissions packet
+
+This supersedes Exercise 3 for present continuity. It remains an author-run
+exercise with prior manuscript context, not an independent simulation.
+
+**Packet:** A local console holds seven pending permission amendments. The
+recordings are on persistent storage under separate instructions. Lucía has
+delegated access to the register. The generator is running short of fuel.
+A technician is available by phone. Prime offers a service outlet, but the
+connector and power rating have not yet been checked. Q's knee warning is active.
+A proposed migration has incomplete authorization. No bodily memory transfer is
+required by the documented local save procedure.
+
+**Q response:** “Let's keep the migration on hold. Lucía, can you confirm these
+are the seven pending changes? Before we connect anything, I'd like the technician
+to check the outlet rating and the save procedure. And could someone bring a
+chair? My knee has already registered its objection.”
+
+**Action:** Sits, obtains the electrical check, asks Prime for limited power-only
+support, and verifies the local save with the authorized keeper. Does not open
+the underlying recordings or treat the power arrangement as a transfer license.
+
+**World response:** The technician confirms the connection and safe procedure.
+Prime agrees to the bounded use; Lucía checks the amendments. The console reports
+a verified local save and an incomplete transfer. A shutdown is then possible.
+
+**Next Q response:** “The changes are saved. We can shut this down properly now.
+The unfinished transfer will still be unfinished tomorrow.”
+
+**Revision finding:** Cooperation solves a limited technical problem without
+settling custody or exhausting Q's life. There is no need to force martyrdom to
+close the novel. Exercise 4 remains the separate test of choosing to finish the
+book while retaining ordinary plans.
+
 ## Still to test
 
 The decision to enter the distribution park; the initial introduction at Lucía's
