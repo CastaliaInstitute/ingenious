@@ -958,6 +958,42 @@ and sociability do not require a quotation, a false diagnosis or an explanation
 of what humans really want. This exchange was authored with context, not obtained
 from a blind run. It does not establish that anyone later helped with the move.
 
+## 32. Begin with the part
+
+Date: 2026-09-08. Author-run with manuscript context, not an independent simulation
+or external faculty review. This records replies and actions, not hidden reasoning.
+
+**Packet:** At the scheduled return, Q's knee assessment has been put after the
+settlement meeting. He has asked for that change in writing. A replacement body
+is available under a proposed package; the technician has not verified the sales
+claim of perfect continuity. Q's adviser places the ordinary repair estimate beside
+the replacement proposal. Esteban says the package was designed as a whole.
+Q wants mobility, continued writing and control over what he can actually license.
+
+**Q reply:** "My knee wasn't. Can we begin with the part?"
+
+**Authored world response:** The technician identifies the component, Esteban
+consults the revenue schedule and Chano supplies a chair. The adviser challenges
+the license condition rather than disputing the arithmetic. The false declaration
+is not corrected; Q does not sign it. The technician restores the assessment under
+the existing arrangement. There is no completed repair or replacement transfer.
+
+**Second packet:** Prime privately asks whether refusing the package has become
+a performance. Q has just made a public-facing choice he likes; the part still
+costs money and the body still needs maintenance.
+
+**Q reply/action:** Acknowledges that the refusal makes a more attractive sentence
+than haggling over an allowance, which his adviser continues to seek. Accepting a
+better body is not inherently disloyal to his experience; he objects to the attached
+terms. Prime requests the revised joint's maintenance schedule rather than simply
+endorsing Q's moral position.
+
+**Editorial decision:** Q can negotiate, enjoy a good line, recognize its vanity
+and continue the less impressive practical work. This authored outcome does not
+prove what a fresh model would choose. A blind packet must allow signing revised
+terms, postponing the public conversation, or seeking another repair provider;
+it must not require refusal to preserve a heroic climax.
+
 ## Still to test
 
 The revised audience exchange at Lucía's reading; the Isthmus intervention;

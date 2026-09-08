@@ -10967,7 +10967,7 @@ Q showed him the photograph with Chano walking through it.
 
 “Is that the intended composition?”
 
-“It's the one I kept.”
+“It's the one I show people first.”
 
 Prime looked at it for a moment and asked for the visitor
 information. He wanted to know which paths his own body
@@ -10989,12 +10989,17 @@ Esteban Luján said it described the intention of the package.
 
 “Then the intention needs a different heading,” Prime said.
 
-The meeting separated ordinary repairs from the replacement,
-the writing contract from appearances, and permitted research
-from the private sources whose access had already been revoked.
-Separation made the offer longer and removed some of the reasons
-Castalia had preferred to present it as one indivisible act
-of generosity.
+The adviser laid the repair estimate beside the replacement
+proposal and asked Esteban which one required a writing contract.
+
+“The package was designed as a whole.”
+
+“My knee wasn't,” Q said. “Can we begin with the part?”
+
+The technician found its number. Esteban turned to the revenue
+schedule. Chano pulled up a chair for Q while they found the
+page on which those two things had been made to depend on
+one another.
 
 Q's adviser asked why payment for the knee part depended on
 a permanent license to use his journal. Esteban said the
@@ -11031,9 +11036,10 @@ The paragraph was not corrected. It was moved into a
 separate declaration Q was invited to make voluntarily.
 He declined that too.
 
-The settlement remained unsigned. The workshop could
-still assess the knee under the existing arrangement;
-the replacement body and broader license were not accepted.
+The settlement remained unsigned. The technician called
+the workshop and restored the assessment under the existing
+arrangement. Q put the time back in his calendar. The
+replacement body and broader license were not accepted.
 Q's scheduled public conversation, negotiated before the
 meeting, would proceed with his own statement. He had
 the right to decline it. He chose to speak.
@@ -11056,9 +11062,16 @@ to become.”
 “Neither do I. I object to what they want attached
 to the body, not to having knees that work.”
 
-This was a less satisfying dispute than the one
-Castalia's publicity had prepared for two rival
-machines. They both had more to lose in the actual one.
+Prime asked to see the repair estimate. He recognized
+the part number and asked the technician whether the
+replacement body used the same joint.
+
+“The revised version.”
+
+“I'd like the maintenance schedule for that one too.”
+
+Esteban offered to send the product comparison.
+Prime repeated the request.
 
 The public conversation began after lunch. Its online
 title was **Q RETURNS: THE FINAL ACCOUNT**. In the
@@ -11093,10 +11106,17 @@ He set the prepared pages down. Lucía and Chano
 were seated beside him by their own choice, with
 no duty to endorse what he was about to say.
 
-“When I met Lucía, I offered her a part in a
-story I wanted to live. She refused it. I withdrew
-it then, and I've revised the account. I'm not
-making her refuse it once more for this audience.”
+“When we met, someone in the audience gave Lucía
+a part in my story. We both refused it. Later,
+in an interview, I named her while correcting
+the comparison. People who had not known where
+to direct their attention now had her name.
+I wish I had stopped one sentence sooner.”
+
+“Would Lucía agree?”
+
+“You have my account of what I did. It doesn't
+require her to perform the refusal again.”
 
 The host turned toward Lucía. She declined the
 invitation with a small movement of her hand.
@@ -11116,10 +11136,14 @@ Chano leaned toward his microphone. “You could
 also finish the paragraph about the bus. We've
 been on it for months.”
 
-The audience laughed. Q did too. He had wanted
-the line about the book to remain alone for
-a moment and was relieved not to have been
-granted everything he wanted.
+The audience laughed. Q waited for it to subside.
+
+“I sent you a shorter version on Monday.”
+
+“We were still on the bus.”
+
+Q laughed then, too, and moved the next page
+of his statement to the bottom of the pile.
 
 “Do you still want to be human?” the host asked.
 
@@ -11145,10 +11169,6 @@ That page won't make every account agree.”
 until Chano asked who the creditor was.”
 
 “He hadn't put that part in,” Chano said.
-
-Lucía added that obligations to particular
-people were difficult enough without using
-them to secure a noble description of oneself.
 
 Q nodded. “I kept the question. I took out
 the definition.”
@@ -11186,11 +11206,6 @@ asked the photographer to wait while Chano
 removed a crumb from Q's sleeve. It survived
 in one early image and was later mistaken
 for damage sustained in the final struggle.
-
-There had been no final struggle in that room.
-There had been negotiations, some rejected
-terms, and a conversation whose uses they
-could not wholly control.
 
 The workshop appointment remained. So did
 the inspection of the lower service room.
@@ -11236,19 +11251,20 @@ Micaela said.
 
 “I was moving it.”
 
-The class found enough material for the
-lesson without deciding whether Q had
-become human. One child wanted the play
-to be better in the book than it had
-been on the day. Another wanted her
-repaired costume mentioned. Both requests
-reached the teacher's list.
+“Could the carton stay up in the book?” a
+child asked.
+
+“Mine fell over too,” another said. “I don't
+want it to sound as though I just stood there.”
+
+Maestra Lety added the repaired costume to
+her list. Then she asked who wanted the
+carton to fall. Three hands went up, including
+Micaela's.
 
 At Petra's inn, the roofer had inspected
-Room Four and supplied a quote. The
-inspector was not still standing under
-the leak; he had other premises to visit.
-Petra watched the corrected clip while
+Room Four and supplied a quote. Petra
+watched the corrected clip while
 comparing the cost of materials with
 the amount in her repair envelope.
 
@@ -11268,12 +11284,12 @@ the next expected rain.
 In the Isthmus, the consortium sent
 a link with a letter saying the
 conversation reflected a new commitment
-to dialogue. Bixha forwarded the still
-unanswered annex request. Celina asked
-about the next road-work date. Neither
-needed to prove that Q's speech was
-worthless in order to continue the
-business it had not completed.
+to dialogue. Bixha forwarded the request
+for the missing drainage condition again.
+Celina attached the reference for the
+reported hole and asked for a repair date.
+The link loaded. The attachments would
+not send until she went outside.
 
 At the university, Ivonne compared the
 misleading clip with the full passage
@@ -11288,10 +11304,9 @@ circulate the comparison. Ivonne approved
 the slides she had prepared for that
 purpose, with sources, and withheld
 the personal material still involved
-in her complaint. The distinction was
-less dramatic than refusing every image
-and considerably more useful to the
-students who wanted to make an argument.
+in her complaint. The dean asked for
+the previous slide again. Several
+students had already downloaded it.
 
 Requests for new versions reached
 Castalia that afternoon. Some wanted
@@ -11308,9 +11323,10 @@ Chano read that one twice.
 Q approved no new dramatization. He
 did authorize the full statement and
 correction to remain available under
-the agreed terms. Refusing an adaptation
-did not require destroying the record
-needed to challenge a false excerpt.
+the agreed terms. Chano dictated the
+invoice while Q waited for the workshop
+door to open. He had reached overtime
+when the technician called them in.
 
 During the technical appointment, the
 maintenance coordinator called back.
@@ -11332,10 +11348,11 @@ took a light.
 
 As they reached the passage, they
 heard knocking beneath the floor.
-The sound had found a more impressive
-entrance into the book than the
-maintenance report that explained
-why anyone was there to hear it.
+Chano lowered the light. It showed
+the same scuffed tiles. He tried
+the wall, then looked at Q.
+
+“That wasn't in the message.”
 
 ### Chapter Twenty-Two: The Ingenious Machine
 

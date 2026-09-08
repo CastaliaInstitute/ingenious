@@ -70,6 +70,31 @@ does not place him bodily in the classroom. Alma's print returns on day 31;
 only the comb receipt remains under its new private agreement. Her sister is
 alive in the three-years-later coda, which is a narrated forward glance.
 
+## Chapter Twenty-One return and broadcast
+
+The public statement now matches Chapters Three, Four and Sixteen: the audience
+assigned the role; Q and Lucía refused; Q later named her during the interview.
+His private nickname is still a separate earlier act, not a public proposal.
+Both Las Pozas portraits were retained in Chapter Twenty. The one with Chano is
+the picture Q shows first, not the only one he kept. Prime receives a promise of
+checked visitor information, not proof of a completed visit or newly guaranteed
+access. Prime is distinct from the inactive offered replacement body.
+
+The technician restores the knee assessment under the existing arrangement. This
+is not the part's delivery, a completed repair, acceptance of the replacement body,
+or a signature on the settlement. Q's broader license remains unaccepted. The
+confirmation says no transfer started; retained evidence of the offer is not erased.
+Lucía and Chano retain separate authority over their proposals. Chano's invoice is
+a joke dictated while waiting, not an authorized bill sent to an outlet.
+
+Petra now has the roofer's inspection and quote, not a completed roof repair.
+Bixha's request concerns the drainage condition missing from the handout version;
+Celina asks for a repair date using the existing hole-report reference. Neither
+is the still-missing Castalia procurement annex. Ivonne's released slides exclude
+the personal material in her complaint. The lower service-room visit is accompanied
+and limited by Q's knee assessment; the knocking remains unidentified until Chapter
+Twenty-Two. The Custodian's notebook does not put the Custodian in the corridor.
+
 ## Changes through Chapter Sixteen
 
 Chapter Sixteen's testimony follows the current encounters: an audience member

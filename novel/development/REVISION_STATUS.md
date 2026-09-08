@@ -261,8 +261,19 @@ the book.” The source now permits Q to remain alive when the writing stops.
 ## Required next work
 
 Current checkpoint: the second whole-chapter voice pass is complete through
-Chapter Twenty; continue with Chapter Twenty-One. Earlier chapter-by-chapter
+Chapter Twenty-One; continue with Chapter Twenty-Two. Earlier chapter-by-chapter
 continuation notes below are a history of this pass, not the latest queue.
+`CHAPTER_21_VOICE_REVIEW.md` corrects the public account of Lucía's first encounter:
+the audience imposed the role, both refused, and Q later named her in an interview.
+Negotiation now includes the component number, a chair, and the restored assessment;
+Prime asks for a maintenance schedule. Q answers Chano's bus joke and changes his
+prepared statement. The interlude gives children and institutions actions of their
+own, while keeping the drainage-condition and reported-hole follow-ups distinct.
+Issue 21 has 2,307 words on 16 pages, eight planned plates and four A3 duplex sheets
+at 12.6/17.85 pt. Exact text, white backgrounds, dimensions, rotations and nesting
+pass; pages 4, 8 and 14 and the innermost spread were rendered and inspected.
+The art is planned only. Exercise 32 is author-run, not an independent simulation
+or faculty response. No final illustrated Issue 21 PDF or printing.
 `CHAPTER_20_VOICE_REVIEW.md` and Exercise 31 give Las Pozas more action and less
 interpretive reassurance: Chano follows the construction conversation, Q rests
 and plays with a drop, and he wants both portraits. A researched workforce detail
