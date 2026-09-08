@@ -14,7 +14,7 @@ matches. Updates below trace the subsequent states through the ending.
 | Chiapas black storage case | Remains with the local archive keepers. | It was never in the northern van or the custody transport. The carried object is the sealed module. |
 | Q's private journal and shared draft | Locally retained, with a private-manuscript exclusion in the appearance license. | Chapter 11 does not authorize their wholesale copying into Prime. Later evidence of misuse must identify its source. |
 | Prime's supplied account | Edited appearances and continuity material; some disputed private passages are evidenced in supplied source references. Full technical provenance is unverified. | Distinguish a product being supplied a record from proof about model training, retrieval, or ownership of every source. |
-| Chapter 12 notice to Prime | Q sends the general dispute and Marisol's agreed contact, not restricted passages. Prime asks Mauro to identify the supplied examples through the complaint handlers; the review is pending. | A sent notice and reply do not establish removal. Chapter 15's credential/cache audit and Chapter 16's stopped live supply remain later developments. |
+| Chapter 12 notice to Prime | Q sends the general dispute and Marisol's agreed contact, not restricted passages. Prime asks Mauro to identify the supplied examples through the complaint handlers; the review is pending. | A sent notice and reply do not establish removal. Chapter 13 confirms the limited live-answer component change; Chapter 15 separately audits Q's credential/cache. The Chapter 16 account preserves those limits. |
 | Micaela's parents' complaint | Q finishes the reply comparison and brings it to the union hall. Her father chooses a follow-up with questions, prior references and a requested response date. | The comparison is completed; dispatch and a substantive reply are not yet established. School-site measurements were requested, not obtained. The mother's illness is not proof of its cause. |
 | Q's signatures | Original leave/release arrangements; one-interview recording form; later restrictive tour license with manuscript exclusion; arrival acknowledgment with objection; limited joint-appearance agreement. | The linked employment-profile post follows the tour signing, not the first interview. He has not signed ownership of Chano or Lucía, voluntary reintegration, a new operating layer, or a claim that Prime lived the journey. |
 | Chano's incident review | Notice concerning his intervention when Q fell at the transport frame; referred to the adviser. | Do not convert it into an established assault conviction or an unlawful-US-entry episode. |
@@ -49,6 +49,26 @@ bring him to the union hall and school.
 This chronology replaces the old repetition in which Q arrived with recovered
 papers, left the archive freely, and then arrived in the same custody vehicle
 again at the start of Book Two.
+
+## Chapter Thirteen: funding and ordinary work
+
+The borrowed classroom is in Amealco and included in Q's approved visits.
+The offer of Q's presence is not prior agreement to a demonstration. He chooses
+twenty minutes without recording or endorsement, then leaves for his writing
+call. Mariela's gift funds the first paid hours; the other donor funds equipment.
+The smaller first-month target replaces the initial all-volunteer projection.
+
+The equipment donor, not Mariela, forwards the restricted extract. Lucía lacked
+the family's permission to send it to him. A confidentiality agreement does not
+undo that omission. Requests to trace further recipients remain unanswered where
+stated; withdrawal of the extract does not require destroying restricted evidence
+of its transmission. Neither Q nor Lucía has established complete erasure.
+
+Rebeca permits the municipal-clock joke in the book; her notebook stays hers.
+The same words return on Q's later video call with the male Custodian. The call
+does not place him bodily in the classroom. Alma's print returns on day 31;
+only the comb receipt remains under its new private agreement. Her sister is
+alive in the three-years-later coda, which is a narrated forward glance.
 
 ## Changes through Chapter Sixteen
 

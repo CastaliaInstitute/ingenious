@@ -7493,17 +7493,20 @@ to her daughter's name. The error had travelled from a report into later
 files and newspaper accounts. Ofelia had travelled after it with copies,
 bus tickets, and the name her daughter used at home.
 
-The new archive occupied a borrowed classroom. Eleven people, four boxes,
+The new archive occupied a borrowed classroom in Amealco. Eleven people, four boxes,
 two unreliable laptops, and a thermos of coffee filled it without quite
 making it an institution. A window faced a wall on which someone had
 painted a woman holding a book and a torch. Her face borrowed features
 from several public figures. Nobody present knew who had painted her;
 everyone had an opinion about the torch near the paper.
 
-Q had agreed to help compare deposit terms and public references. He asked
-where to put his bag and which files he could use. Lucía gave him a work
-list. His invitation to the room did not require him to invent a role
-before somebody else's instructions could arrive.
+Q's approved visits now included the classroom. He had agreed to help compare
+deposit terms and public references. Lucía gave him the work list and pointed
+to the only chair without a box on it.
+
+“That one is yours until the kettle boils. Then we need the socket behind it.”
+
+He put his bag beneath it. “I've had less secure appointments.”
 
 Ofelia wanted the school notebook compared with two official versions.
 The retained folder in Tijuana had another copy, but she had brought her
@@ -7518,7 +7521,8 @@ Q asked to see the comparison. Ofelia wrote her own initial on scrap
 paper, then her daughter's. He could see the difference. She laughed
 before folding the scrap into the notebook.
 
-He liked hearing it, and was glad when she continued talking.
+She turned to another page to show him what the teacher had written about
+both their hands. Q moved the official copies aside to make room.
 
 Other tables held materials about the women institutions had made into
 national symbols. The Malinche file brought together textbooks, translations,
@@ -7575,17 +7579,26 @@ the woman no longer owed him. Rebeca did the look. Q attempted it with
 his damaged shoulder and produced something she called a disappointed
 municipal clock.
 
+“May I use that?” he asked.
+
+“The look?”
+
+“The clock. In the book.”
+
+“Yes. Don't improve it.”
+
 When they returned to the contribution list, Q could identify the revised
 lines without claiming that every bodily decision in a performance
 could be returned in a document. Rebeca wanted particular acknowledgments
 and payment questions answered, not a certificate declaring her the
 sole author of the weather in the scene.
 
-Two donors visited the next afternoon. Lucía had mentioned that Q would
-be working there, knowing it helped secure the meeting, but had not told
-him that his presence was part of the attraction. He found out when
-one donor asked whether the archive would provide a machine demonstration
-with the budget presentation.
+Two donors visited the next afternoon. Mariela ran a printing business in
+San Juan del Río and brought a pencil that she sharpened over an old envelope.
+The other donor put his phone beside the budget before asking whether the
+archive would provide a machine demonstration. Lucía had mentioned that Q
+would be working there, knowing it helped secure the meeting, but had not
+told him that his presence was part of the attraction.
 
 “I can explain the work I'm doing,” he said. “I didn't agree to an
 appearance. Lucía, is that what was offered?”
@@ -7595,17 +7608,47 @@ distinction aloud did not improve it.
 
 “I should have asked you.”
 
-They took five minutes before continuing. Q agreed to answer questions
-about his work for the rest of the visit, without recordings or a
-personal endorsement. He was irritated and still wanted the archive
-funded. He could hold both positions without making either one secret
-evidence of the other.
+In the corridor Lucía showed him the unanswered messages that had preceded
+the invitation. His name appeared in the one that had received a reply.
 
-The donors contributed. Lucía put the receipts in an envelope and added
-a note about what she had promised. She did not title it with a clever
-name that would turn embarrassment into an alternative form of payment.
+“I wanted to get them through the door,” she said.
 
-A worse problem followed. One donor wanted a specific example of the
+“So did I. I'd probably have said yes.”
+
+“I thought you would.”
+
+“I'd like to be there for that part.”
+
+She put the phone away.
+
+“Twenty minutes on the work,” he said. “No recording or personal endorsement.
+Then I have a call I've promised not to move.”
+
+“With the Custodian?”
+
+“He has discovered a paragraph he can shorten. I don't want him left alone
+with it.”
+
+When they returned, the second donor put his phone in his pocket. Q showed
+the public catalog and one entry cleared for demonstration. The donor asked
+how many lives the archive expected to transform. Mariela asked who would
+answer requests on a day when Lucía was ill.
+
+Lucía had budgeted equipment and space. The hours in the next column were
+all volunteered. Mariela tapped it with the pencil.
+
+“That isn't free. Who is paying for it now?”
+
+Lucía named herself and two others. They added paid hours and reduced the
+number of items promised for the first month. The second donor thought the
+smaller target would be harder to present. Mariela said he could present the
+larger one if he came on Thursdays.
+
+Both contributed. Mariela's gift covered the first block of paid hours;
+the other went toward equipment. Lucía put the receipts in an envelope
+with the amended budget. Q left at the time he had given them.
+
+A worse problem followed. The equipment donor wanted a specific example of the
 Isthmus case. Lucía supplied a redacted extract under a confidentiality
 agreement, but without obtaining the family's permission to show that
 recipient the passage. The donor forwarded it to an analyst. A clause
@@ -7616,15 +7659,22 @@ The family received a letter asking whether it had authorized the
 allegations. Lucía had intended a private illustration for funding.
 She had sent a family's case into a chain it had not chosen.
 
-She told the family first, apologized, and requested deletion from
-the recipients. Their lawyer wanted a record of the forwarding retained
-under limited access. Lucía separated that evidence from the extract
-they wanted withdrawn. The donor's breach of the agreement remained
-the donor's act; her failure to ask the family remained hers.
+She called the family first. She had prepared an explanation of the agreement
+the donor had broken. Before she reached it, they asked why she had sent him
+their passage at all.
 
-Q helped prepare the record of who had received what. He did not search
-for a phrase that would make her error morally different from his own.
-Nor did he need her to resemble him before helping.
+“I didn't ask you. I should have,” she said.
+
+They asked who else had it. She could name the donor and analyst; she did
+not know whether it had gone farther. Their lawyer asked her to find out
+and keep the replies. The family wanted the extract withdrawn, not the
+evidence of where she had sent it destroyed.
+
+Q sat beside her afterward while they made the recipient list. Lucía dictated
+the first request, stopped, and asked him to read it back. He read it as it
+stood. She cut the explanation of what she had intended and kept the question
+about further recipients. The requests went out separately; the unanswered
+ones remained on the list.
 
 “They don't want this used as an example of what we learned,” she said.
 
@@ -7650,8 +7700,7 @@ uncooperative and used a photograph of Lucía taken through the window.
 
 Q asked whether she wanted him to help prepare a correction request.
 She wanted the inaccurate description challenged, and advice on the
-photograph's use. He sent neither a threat nor an investigation of the
-photographer's home. He compared the published statements with the
+photograph's use. He compared the published statements with the
 exchange they could document. One paragraph was corrected. The image
 remained while the separate complaint continued.
 
@@ -7681,11 +7730,25 @@ the finished composition. Lucía asked the publicity desk which sources
 had been used for the image. She wanted an answer before making a
 specific likeness claim.
 
-For the next day's work, Q prepared the blank labels and the agreed
-register rather than waiting to be assigned a new purpose. He also
-sent the Custodian the pages they had agreed to discuss that evening.
-The novel had reached a place where three people answered a question
-before he did. He was trying to preserve the order in which it happened.
+For the next day's work, Q prepared the blank labels and the agreed register.
+The Custodian had returned their pages with the shortened paragraph intact.
+Beside the next one he had written, *Who said this first?*
+
+Q checked his notes. Rebeca had made the observation; Lucía had objected to
+it; he had supplied the polished sentence that now stood alone in the draft.
+On their next call he read the three voices in their original order.
+
+“It's longer,” the Custodian said.
+
+“You still have your savings from the previous paragraph.”
+
+They kept the exchange. Q read him the municipal clock. The Custodian asked
+to see the look. Q tried it, discovered he was outside the camera frame, and
+had to begin again. The Custodian was laughing before he was ready.
+
+“That isn't the look,” Q said.
+
+“Don't improve it.”
 
 ### Interlude: The Workshop of Returned Names
 
@@ -7787,9 +7850,8 @@ where it required no official version to remain recognizable.
 ### Interlude: The Woman Who Refused a Caption
 
 Alma Reyes came after a hospital shift with a photograph in a supermarket
-envelope. She had worked seventeen years in an emergency ward. The
-expression with which she sat down suggested that a chair was useful
-even before anyone decided what it symbolized.
+envelope. She had worked seventeen years in an emergency ward. She sat down,
+put the envelope on the table and loosened one shoe with the other foot.
 
 The photograph showed her beside a bed. Her sister's face was turned
 away. They had agreed to a limited newspaper image during a public-health
@@ -7851,12 +7913,10 @@ and who else, if anyone, could do so. At present, no one else could.
 
 “You can remember the date without reminding me,” Alma said.
 
-“Yes. One is our obligation. The other would be a message you haven't
-asked for.”
+“Of course. I'll put it in our diary, not yours.”
 
-She looked at the confirmation and took her copy. The form contained
-the date, the item count, and her instructions. It did not ask her
-to supply a philosophy of possession before she could leave work.
+She checked the date, the item count and her instructions, then took her
+copy. Before standing she had to work her heel back into the shoe.
 
 A journalist later contacted the archive about the photograph. Alma
 agreed that Lucía could send a request for the proposed questions,

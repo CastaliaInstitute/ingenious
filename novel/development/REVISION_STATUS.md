@@ -151,6 +151,14 @@ the book.” The source now permits Q to remain alive when the writing stops.
   permitted records. Chano's second administration has delegated authority,
   concrete successes, a consequential mistake, and a privacy-aware handover.
   The chair moves by authorization and later surplus sale, not theft.
+- Chapter 13's subsequent voice pass makes the funding visit a negotiation.
+  Q agrees to twenty minutes and keeps his writing appointment. Mariela funds
+  paid hours; the equipment donor makes the later unauthorized forwarding.
+  Lucía answers the family's actual questions before drafting recipient requests
+  with Q. Rebeca permits the municipal-clock joke, which returns on a coauthor
+  call after other voices are restored to Q's polished sentence. Alma's loosened
+  shoe and Q's ordinary diary reply replace explanations of their humanity.
+  The classroom is explicitly in Amealco and within his permitted visits.
 - Chapter 12 now establishes Q disabling broad private lookup before Chapter
   15's audit identifies the surviving credential and cache. Revocation and
   local removal preserve deposits and restricted audit evidence. General
@@ -250,6 +258,19 @@ the book.” The source now permits Q to remain alive when the writing stops.
   still prevent an A+ press-master claim.
 
 ## Required next work
+
+Current checkpoint: the second whole-chapter voice pass is complete through
+Chapter Thirteen; continue with Chapter Fourteen. Earlier chapter-by-chapter
+continuation notes below are a history of this pass, not the latest queue.
+`CHAPTER_13_VOICE_REVIEW.md` and Exercise 24 record the current revision.
+Issue 13's internal proof contains 3,742 words on 24 pages, twelve planned plates
+and six A3 duplex sheets. The reviewed 12.7/17.9917-point setting keeps the final
+writing-call exchange together and uses both columns on the last narrative page.
+Pages 8, 12 and 22 and the innermost spread were visually checked. All exact-text,
+background, geometry and booklet checks pass. No Issue 13 images are generated
+or approved; independent validation and the complete illustrated edition remain
+unfinished. The Prime component-change note now correctly points to Chapter 13,
+separate from Chapter 15's audit of Q's access.
 
 The Chapter Four voice pass is recorded in `CHAPTER_04_VOICE_REVIEW.md`. It
 repairs Q's public correction, removal request and ledger response; gives

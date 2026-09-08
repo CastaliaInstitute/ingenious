@@ -687,6 +687,42 @@ appears in work delivered, not a narrator's assurance that he will help. The
 first exchange still contains an ordinary judgment Q can reconsider; its outcome
 was authored with knowledge of the scene, not discovered in an isolated run.
 
+## 24. An invitation offered on Q's behalf
+
+Date: 2026-09-08. Author-run with manuscript context, not independent blind
+validation or an external faculty run. No hidden model computation is requested
+or represented as evidence.
+
+**Packet:** Q is working at Lucía's classroom archive by agreement. Two donors
+arrive. One asks for a machine demonstration; Q had agreed to ordinary archive
+work, not an appearance. He wants the project funded and has a writing call he
+has promised to keep. He does not know anything about a later disclosure.
+
+**Q reply/action:** “I can explain the work I'm doing. I didn't agree to an
+appearance. Lucía, is that what was offered?” Asks to settle the format before
+continuing, rather than accepting the donor's assumption or abandoning the work.
+
+**Authored world response:** Lucía acknowledges she should have asked. In the
+corridor she shows the earlier unanswered invitations; the one with Q's name
+received a reply. She wanted to get the donors through the door and thought he
+would agree.
+
+**Q reply/action:** “So did I. I'd probably have said yes.” When she says she
+thought he would: “I'd like to be there for that part.” Chooses twenty minutes
+on the work, no recording or personal endorsement; keeps the earlier call.
+
+**Authored consequence:** The phone goes away. Q shows an approved public entry.
+Mariela asks about unpaid working hours; the budget gains paid hours and a smaller
+target. Both donors contribute to different costs. Q leaves when he said he would.
+The later equipment-donor disclosure is Lucía's separate choice, not information
+Q could anticipate from this packet.
+
+**Editorial decision:** Let a competent response secure a limited agreement
+without requiring either surrender or a punitive disaster. Q can be annoyed and
+want to help. Mariela supplies consequential judgment of her own. The coauthors'
+later joke makes the kept appointment worth wanting. This exercise tests an
+authored alternative, not the independence of the model that produced it.
+
 ## Still to test
 
 The revised audience exchange at Lucía's reading; the Isthmus intervention;
