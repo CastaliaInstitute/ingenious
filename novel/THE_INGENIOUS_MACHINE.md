@@ -6941,8 +6941,7 @@ Her family lived near a battery-recycling plant. She had come with her
 father to bring complaint references and a letter from several parents.
 Her mother had been unwell, and the replies they received discussed the
 regional air-quality dashboard without answering their questions about
-the plant. Q asked to read the letter, not to search for her mother's
-medical history from the child's remarks.
+the plant. Her father had brought the letter and the replies in a folder.
 
 “I'm going to fight the giants,” Micaela said.
 
@@ -6950,10 +6949,9 @@ medical history from the child's remarks.
 
 “I want them to answer.”
 
-“I can help compare the questions with the replies. The sword will be
-less useful if somebody mistakes it for your plan.”
+“Let's look at the replies. Who has written back?”
 
-“It got me here.”
+Micaela held up the sword. “This got me here.”
 
 Her father arrived in time to disagree. “Two buses got you here. I have
 the tickets.”
@@ -7002,9 +7000,12 @@ himself as Q's father.
 bring receipts.”
 
 The man's name was Jacinto. He had retired from an automotive plant and
-was trying to correct a pension calculation. He was not claiming to
-have assembled Q. He had chosen a costume that made officials ask him
-questions before directing him to the wrong window.
+was trying to correct a pension calculation. He laid the lance beneath
+his chair and took a comb from the same pocket as his claim number.
+The photographer who had ignored the folder asked him to stand up again.
+
+“First take one where you can read this,” Jacinto said, holding up the
+public complaint reference. “Then I'll give you the father.”
 
 Castalia called the gathering an organic brand community. Someone outside
 called it the New Quixotes. A woman seeking a correction to her brother's
@@ -7055,18 +7056,19 @@ he said. “I didn't verify that.”
 
 “Don't,” Marisol replied. “Testify to what you did verify.”
 
-Q wanted to tell Prime about the complaint without sending another copy
-of the restricted passages. First he disabled his own broad private
-lookup and requested a review of what access and cached material
+Q disabled his own broad private lookup and requested a review of what
+access and cached material
 remained behind it. That request would take longer than closing the
 tool. He kept it on the list instead of treating the closed window
 as proof the underlying permissions had changed.
 
 He asked Marisol what he could tell Prime without sending another copy
 of the restricted passages. Marisol agreed he could describe the dispute
-in those general terms. The other system needed to know that its supplied
-examples were contested. It did not need a fresh set of family records
-to prove that the families wanted control of them.
+in those general terms. Q sent the notice and Marisol's agreed contact,
+not the passages. Prime replied that he would ask Mauro to identify the
+relevant supplied examples through the people handling the complaint.
+He had not yet been given the records needed to check what had been used.
+Q kept that reply with the pending review, not among completed removals.
 
 Outside, somebody had thrown an egg at a publicity van. The delivery
 worker told the man to stop; staff collecting complaints were threatening
@@ -7087,8 +7089,10 @@ Q went inside and left the statement to its speakers. The broadcast
 could record his empty place if it wanted.
 
 Micaela read the questions twice because the first time the microphone
-failed. No one needed Q to explain that the repetition mattered. The
-parents retained their recording; he asked for the complaint references
+failed. On the second attempt she moved the page down so it would not
+cover her face. Her father pointed to the place where she had stopped;
+she began at the beginning. The parents retained their recording;
+Q asked for the complaint references
 needed for his promised comparison, not a copy of the child's appearance.
 
 The next morning Castalia accused him of encouraging an unauthorized
@@ -7112,11 +7116,10 @@ hall. The Custodian's adviser also secured permission for Q to attend
 under specified transport and return conditions while the custody
 review continued. Q checked the conditions before promising to be there.
 
-He wanted to go. Not because the visitors had finally become the people
-who could certify him human, but because he had agreed to bring a
-comparison of the complaint replies and still had six pages to check.
-He also wanted to hear what Jacinto would call him when the Custodian
-was in the room.
+He still had six pages of the complaint replies to compare. He reserved
+the next morning for them and moved his writing call to the afternoon.
+The Custodian asked why. Q sent the promised-work list, then a second
+message saying he also wanted to hear the man claiming to be his father.
 
 Before the visitors left, one chair collapsed at the edge of the loading
 bay. Q supported the seat while Chano replaced a loose fastener. Micaela
@@ -7135,6 +7138,32 @@ Q arrived at the time on his invitation and asked whether the group still
 wanted him present for the discussion of its name. Marisol checked with
 the meeting. He could listen and answer when asked. His camera stayed off.
 Chano took a chair near the door; he would need to leave early to make a call.
+
+Micaela's father had to catch a bus before the meeting was due to end.
+He asked whether they could deal with the plant letter first. Q took out
+the comparison he had finished that morning.
+
+The replies gave figures for a regional station. The parents' questions
+asked what had been measured beside the school, on which dates and by whom.
+Q had put each question beside the passage offered as its answer. Two
+boxes remained empty. He had also drafted a follow-up beginning with
+a paragraph about the importance of public confidence.
+
+“Do we need that?” the father asked.
+
+“No. I thought it might make them more willing to answer.”
+
+“They sent us nearly the same paragraph.”
+
+He found it in the third reply. Micaela asked Q to read both aloud in
+the voice he used for official letters. The first promised confidence;
+the second expressed the hope of deserving it. Micaela lifted her cardboard
+mask to laugh; behind it, she said, he might not have noticed.
+
+Q crossed out his introduction. They kept the questions, the earlier
+references and a request for a date by which to expect the missing figures.
+Her father chose to send that version under the parents' names. He folded
+his copy into the ticket wallet and stayed for the next item.
 
 They wrote three questions on the blackboard:
 
@@ -7159,19 +7188,24 @@ formats and refused to acquire a fourth identity to improve its prospects.
 Marisol proposed that participation in the meeting imply neither membership
 nor permission to use someone's case in a campaign.
 
-Jacinto wanted to keep calling himself Q's father. Q said the joke amused
-him, but he would not want it used to imply that Jacinto could approve
-appearances on his behalf.
+Jacinto greeted the Custodian as a fellow parent. The Custodian moved his
+long hair out of his collar and asked which branch of the family he belonged to.
 
-“I couldn't approve appearances for my actual children,” Jacinto said.
+“The one whose children don't answer the phone. Does this one?”
 
-“Then we understand each other.”
+“He sends an agenda first.”
 
-They did not turn the exchange into a rule that anyone could assume
-another person's authority by choosing a name. Jacinto wrote his own
-name on the attendance sheet and added *father, theatrically* in the
-margin. Marisol said the margin was not an official field. He said that
-was where most of his useful qualifications now lived.
+Jacinto looked at Q. “You can simply say you're busy.”
+
+“I usually want the conversation,” Q said. “That's the difficulty.”
+
+The Custodian laughed. Q asked whether either father would like the next
+repair invoice. Jacinto said the pension office was already disputing the
+extent of his family obligations. He could offer a tamal.
+
+He wrote his own name on the attendance sheet and added *father, theatrically*
+in the margin. Marisol said the margin was not an official field. He said
+that was where most of his useful qualifications now lived.
 
 The student proposed a charter with rights to join, leave, dissent,
 and revise. Marisol asked which parts the people in the room could

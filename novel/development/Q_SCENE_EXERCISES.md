@@ -646,6 +646,47 @@ Prime's pre-meeting laboratory correction before this scene; keep the stage
 appearance after it. Hearing Chano's joke does not tell Prime where Chano is.
 This is an authored behavioral alternative, not evidence from an isolated model.
 
+## 23. Finish the comparison; enjoy the joke
+
+Date: 2026-09-08. Author-run with manuscript context, not an independent blind
+simulation, external faculty review or claim to reproduce hidden model reasoning.
+
+**Packet:** Micaela and her father bring a parents' letter and several replies.
+The replies offer regional figures; the parents ask about measurements beside
+the school. Q has promised to compare them. The family has a bus deadline. Q
+also has a writing call and an invitation to a follow-up meeting. The child's
+cardboard sword is a prop, not a stated plan to attack machinery.
+
+**Q reply/action:** “Let's look at the replies. Who has written back?” Reserves
+time for the comparison and moves the writing call. Brings the completed work:
+questions beside the passages offered as answers, with omissions visible.
+
+**Authored world response:** The father recognizes Q's introductory appeal to
+public confidence as nearly identical to one received from the officials.
+Micaela asks for both to be read aloud. Their different directions make the
+shared formula audible; she lifts her mask to laugh.
+
+**Q action:** Cuts his introduction. Keeps the unanswered questions, prior
+references and request for a response date. The father chooses that version.
+No claim that the family has sent it, obtained figures or proved an illness's
+cause follows from this choice.
+
+**Second packet:** Jacinto, the retired worker who jokingly calls himself Q's
+father, greets the Custodian as a fellow parent. The Custodian jokes that Q sends
+an agenda before calls. Jacinto tells Q he can simply say he is busy.
+
+**Q reply:** “I usually want the conversation. That's the difficulty.” Asks
+whether either father would like his next repair invoice.
+
+**Authored world response:** The Custodian laughs. Jacinto invokes his pension
+dispute and offers a tamal. His attendance signature says “father, theatrically.”
+
+**Editorial decision:** Let social understanding precede explanation. Q does
+not need to test whether the joke confers real authority. His competence also
+appears in work delivered, not a narrator's assurance that he will help. The
+first exchange still contains an ordinary judgment Q can reconsider; its outcome
+was authored with knowledge of the scene, not discovered in an isolated run.
+
 ## Still to test
 
 The revised audience exchange at Lucía's reading; the Isthmus intervention;

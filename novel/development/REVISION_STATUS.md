@@ -134,6 +134,17 @@ the book.” The source now permits Q to remain alive when the writing stops.
   meeting governs its actual records and spending. The school play uses safe
   materials and a new public-question placard, not Lidia's withdrawn sign or
   children's private health information. The FAQ has an explicit compiled form.
+  The subsequent voice pass replaces explanations of Q's competence with an
+  actual completed comparison and a sent notice to Prime. Q's draft reassurance
+  resembles the officials' own; Micaela requests both readings and laughs. Her
+  father chooses the revised follow-up, not a magically answered complaint.
+  Jacinto and the male Custodian share a parenthood joke with Q, who wants the
+  conversation and can joke about his repair bill without policing the metaphor.
+  Issue 12's internal proof checks all 4,142 words in order: 28 pages, fourteen
+  planned plates, Georgia 13/18.4167 pt and seven A3 duplex sheets. Pages 12, 14
+  and 26 and the innermost spread were visually inspected; narrative backgrounds
+  remain unpainted. Its new exact-facing manifest is planned only, not generated
+  or approved artwork. Exercise 23 is author-run, not independent validation.
 - Chapters 13-16 and their interludes have been rewritten. Lucía's disclosure
   has a traceable consequence and does not make Q the owner of her archive.
   Alma's photograph is returned under its agreement; later testimony concerns
