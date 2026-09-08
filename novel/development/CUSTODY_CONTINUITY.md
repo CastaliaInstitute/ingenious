@@ -72,6 +72,23 @@ alive in the three-years-later coda, which is a narrated forward glance.
 
 ## Changes through Chapter Sixteen
 
+Chapter Sixteen's testimony follows the current encounters: an audience member
+assigned the Dulcinea role at the Chapter Three reading; both Lucía and Q refused.
+Q's private nickname and Chano's crossed-out register entry remain separate.
+Q then named Lucía during the Chapter Four interview, increasing her exposure.
+At the Chapter Seven seminar she was beside the door when he declined to use
+her records and showed his own opening. The hearing must not confess to the
+discarded private-inquiry disclosure. Q supplies the local exhibit reference;
+his adviser requests the permitted clip, not a fresh network search.
+
+Lucía's testimony acknowledges the Chapter Thirteen invitation before asking Q,
+their twenty-minute agreement and both donors' distinct contributions. It does
+not exonerate the later unauthorized forwarding or disclose protected pages.
+The male Custodian testifies in person. His later phone conversation concerns
+watching the replay after testimony and the following day's interim order;
+it does not make his original appearance remote. Hilario the water vendor
+appears by video and is not retired miner Don Hilario.
+
 Chapter Fifteen's scoped index removal preserves Q's journal, manuscript and
 plans as distinct stores. Lucía's contact welcomes a query but cannot investigate
 until the following week. Q sends his own sentence and already checked public

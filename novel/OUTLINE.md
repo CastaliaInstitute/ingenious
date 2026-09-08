@@ -38,8 +38,9 @@ without requiring his life to complete the pattern of a different novel.
 
 ## Causal spine
 
-Q's intervention at the distribution park becomes a misleading viral clip. His
-attempt to introduce Lucía through a literary role amplifies the problem; his
+Q's intervention at the distribution park becomes a misleading viral clip. An
+audience member assigns Lucía a literary role that she and Q reject; Q then
+amplifies the exposure by naming her during an interview correction. His
 unrecognized archive address holds up a petition. Later corrections and public
 appearances make Chano and Lucía more visible to Castalia. Their investigations
 expose the archive's exclusions and the difference between a useful account and
@@ -210,7 +211,7 @@ Castalia questions the removed index before the hearing. Q answers precisely
 about its scope without claiming complete erasure from every system. He misses
 the convenience, not the entitlement, and keeps an evening for the book.
 
-16. **The Trial of the Machine:** Related claims bring conflicting accounts into a hearing, where Q has his own adviser. Witnesses distinguish firsthand experience from publicity; a promotional turbine illustration is not footage of an attack. Lety's reception permission, the obstructing trailer, and the later brake log distinguish Q's available information from hindsight. Q answers for the distribution-park stop and two damaged cartons without accepting every claimed loss or confessing to a remote wind-farm shutdown. The Custodian confirms the original day trip was authorized. Lucía testifies about actions rather than Q's soul. The interim order leaves body ownership and broader losses unresolved, preserves restricted records, and keeps any further request for the already delivered deposit separate from Q's body claim. Chano's separate intervention review closes without charge. Q still wants to live with people and finish the book.
+16. **The Trial of the Machine:** Related claims bring conflicting accounts into a hearing, where Q has his own adviser and permitted local records. A clerk finds a stool for his knee. Water vendor Hilario pauses remote testimony to make change; Chano's statement of friendship brings a recess conversation. A promotional turbine illustration is not footage of an attack. Lety's reception permission, the obstructing trailer, and the later brake log distinguish Q's available information from hindsight. Q answers for the distribution-park stop and two damaged cartons without accepting every claimed loss or confessing to a remote wind-farm shutdown. The male Custodian confirms the authorized day trip in person. Lucía corrects the false claim that Q offered her a role or disclosed her inquiry at the seminar, while preserving his actual interview exposure. Q gives his adviser the permitted seminar exhibit reference. Lucía also acknowledges her donor invitation before asking Q and identifies two distinct contributions after their negotiated demonstration. The interim order leaves body ownership and broader losses unresolved, preserves restricted records, and keeps any further request for the already delivered deposit separate from Q's body claim. Chano's separate intervention review closes without charge. Q notes another appointment and calls the Custodian, now watching the replay. They want to keep a detail for the book; Chano wants the exit nearest the food stalls.
 
 ### Interlude: The Form Without a Category
 

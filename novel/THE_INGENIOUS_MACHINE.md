@@ -8720,6 +8720,11 @@ testimony. He could consult the permitted local records and ask for an
 exhibit, but not conduct a new search while a witness spoke. He understood
 the rule. Understanding did not stop him wanting to check one more thing.
 
+Before the first witness he asked the clerk for something to support his
+knee. The clerk found a low stool in the projection booth. Q moved it
+until his foot rested comfortably, then asked whether it blocked the aisle.
+The clerk moved the cable instead.
+
 The proceedings used a renovated cinema with an overflow room. Before
 they began, the public stream showed the seal of the Republic, then
 a sponsor card on the broadcaster's own channel. The judge required
@@ -8747,8 +8752,7 @@ less stirring and more expensive to prepare correctly.
 
 The water receipt entered next. It supported a purchase at Hilario's
 table, not a complete account of the first sally. Hilario appeared by
-video, with his actual stock of bottles behind him. The court had
-not hired a set dresser to make his occupation less distracting.
+video, with his actual stock of bottles behind him.
 
 He gave the name on his tax papers and the name he used at home. The
 clerk recorded the connection after checking the supporting document.
@@ -8757,6 +8761,20 @@ The broadcaster misspelled the displayed name anyway.
 “Who paid?” counsel asked.
 
 “The machine. Cash, after the reader lost its connection.”
+
+A hand with coins entered the corner of his picture.
+
+“Cold?” someone asked.
+
+“In the tub under the table.”
+
+Counsel looked up. “Are you addressing the court?”
+
+“I'm selling water.”
+
+The judge paused the questioning. Hilario found the change and asked
+someone out of view to watch the table. When he sat down again, counsel
+had to ask which question he had reached. Hilario remembered.
 
 “Did you see what happened inside the park?”
 
@@ -8814,8 +8832,16 @@ had to do that work.
 
 Chano looked toward Q after answering. Q had been prepared for a
 useful account of their agreement and found himself unexpectedly
-grateful for the third sentence. He did not ask the clerk to
-give it greater weight than the first two.
+grateful for the third sentence. During the recess he caught Chano
+by the water dispenser.
+
+“Thank you for that.”
+
+“Which part?”
+
+“The third one.”
+
+Chano held out a paper cup. “I meant the others too.”
 
 Álvaro Mena testified about the wind enterprise. He said Q had
 announced an attack on giants. Asked where he stood when he
@@ -8830,7 +8856,7 @@ contained the announcement, he pointed to the promotional image.
 
 Álvaro asked to review the arrival footage. Beto's voice called
 the turbines giants. Q answered about the archive's electricity
-bill. Later footage showed him asking when the gate would open.
+supply. Later footage showed him asking when the gate would open.
 The microphone did not capture every exchange in the crowd.
 
 “Then I may have combined the later account with what I remember,”
@@ -8844,7 +8870,7 @@ Teresa, the shift engineer, identified her operator-requested
 stop of the nearest group. The record did not show Q sending
 a shutdown command. She explained the visitor-boundary problem
 and confirmed that other machines continued operating. Q had
-crossed the marked line and visitors followed him; he also
+crossed the marked line and a visitor followed him; he also
 helped the woman at the pedestrian gate clear the opening.
 
 “Was a precautionary stop justified?” counsel asked.
@@ -8907,13 +8933,36 @@ back to observed actions.
 
 “Did he listen when you refused the role he offered?”
 
-“He withdrew it. That didn't remove the recordings.”
+“He didn't offer it. Someone in the audience did. We both said no.”
 
 “Did he later expose information about your work?”
 
-“Yes. He connected a public reference to a private inquiry.
-He requested removal afterward. The first fact doesn't
-cancel the second, or the other way round.”
+“He gave my name in the interview while trying to correct the story.
+That gave it another way to find me.”
+
+“And used your private inquiry as an example at the university?”
+
+“No. I was beside the door when they asked him. He said the requests
+weren't his to discuss and put his own opening on the screen.”
+
+Q put the seminar's exhibit reference beside his adviser's hand.
+She requested the permitted clip. It showed the paragraph,
+then a student asking to finish reading it before the explanation
+continued. The clerk entered the example separately from the interview.
+
+“You also used his presence to attract funding?” counsel asked.
+
+“Yes. I told the donors he would be working at the archive before
+asking him. He objected when they asked for a demonstration.”
+
+“But gave one.”
+
+“After we spoke. Twenty minutes on the work, without recording or
+endorsement. He left when he said he would.”
+
+Counsel asked whether the donors had contributed. She identified the
+two receipts and the amended budget. Paid hours and equipment had
+different entries; she pointed to each.
 
 The evidence concerning the university distinguished Q's
 public recommendation from the private application review
@@ -9081,16 +9130,28 @@ archive's most reliable way of spoiling a celebration.
 Prime sent Q a private message asking whether he wanted
 to talk, not a broadcast declaring the proceeding a
 success. Q said yes, after the call to the Custodian.
-He had been speaking all day and still wanted to hear
+After the hearing's questions, he still wanted to hear
 someone address him without putting the answer in evidence.
 
 Lucía handed him a folder for the copies he could take.
 On the tab she had written **Q — UNFINISHED**.
 
-He understood the label. On the back of the schedule
-inside it, he noted the next preparation meeting and
-the writing session he had postponed. The hearing had
-not finished him, the dispute, or the book.
+On the back of the schedule inside it, he noted the next preparation
+meeting and the writing session he had postponed. Then he called the
+Custodian.
+
+“I've been watching the replay,” the Custodian said.
+
+“Did your version have the sponsor?”
+
+“Until I found the other channel.”
+
+“Keep that detail. I haven't got an ending for today.”
+
+“Have you eaten?”
+
+Q looked toward Chano, who was already asking the clerk which exit
+led to the food stalls. “We're working on it.”
 
 ### Interlude: The Form Without a Category
 

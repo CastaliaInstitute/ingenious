@@ -260,8 +260,19 @@ the book.” The source now permits Q to remain alive when the writing stops.
 ## Required next work
 
 Current checkpoint: the second whole-chapter voice pass is complete through
-Chapter Fifteen; continue with Chapter Sixteen. Earlier chapter-by-chapter
+Chapter Sixteen; continue with Chapter Seventeen. Earlier chapter-by-chapter
 continuation notes below are a history of this pass, not the latest queue.
+`CHAPTER_16_VOICE_REVIEW.md` and Exercise 27 correct Lucía's hearing testimony
+against the actual reading, interview and seminar. Q's local exhibit reference
+helps his adviser distinguish events without a new search. Hilario sells water,
+Chano offers a cup after naming their friendship, and the Custodian's later
+replay call turns toward the book and lunch. The author-run exercise is not
+independent validation; the invented hearing is not verified current procedure.
+Issue 16 holds 3,179 words on 20 pages: ten planned plates and five A3 duplex
+sheets at 12.2/17.2833 pt. Exact text, unpainted backgrounds, dimensions, rotation
+and nested-pair checks pass. Pages 10 and 18 and the innermost A3 spread were
+rendered and inspected. Its artwork remains planned only; no final illustrated
+PDF or print job. The living ending remains unchanged.
 `CHAPTER_15_VOICE_REVIEW.md` and Exercise 26 make the loss of a research shortcut
 produce a pending query and a writing decision rather than general incapacity.
 The Custodian shares the embarrassment of convenient knowledge; Prime tells the

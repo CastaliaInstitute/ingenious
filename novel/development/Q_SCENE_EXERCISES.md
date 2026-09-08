@@ -782,6 +782,42 @@ ordinary speech, loss of memory, or a martyr's conversion. Curiosity can outlast
 its immediate utility to the book. This was an authored alternative, not a result
 independently elicited from an isolated model.
 
+## 27. A question that combines two events
+
+Date: 2026-09-08. Author-run with manuscript context, not an independent blind
+simulation, external faculty review or disclosure of hidden model reasoning.
+
+**Packet:** At the hearing Q has an adviser, permitted local records and exhibit
+references. New network searches are restricted during testimony. Counsel asks
+Lucía whether Q used her private inquiry at the university. Q recalls declining
+that example and showing his own opening; Lucía was present by the door. He also
+remembers a separate interview in which he named her while correcting the story.
+He does not know the eventual order from this packet.
+
+**Q action:** Finds the seminar exhibit reference in the permitted material and
+puts it beside his adviser's hand. Does not interrupt Lucía or seek new records
+over the network. If asked directly, distinguishes the two events and accepts
+the interview exposure instead of claiming universal vindication.
+
+**Authored world response:** Lucía corrects the question. The adviser requests
+the permitted clip. The clerk enters it separately from the interview. The clip
+shows Q's opening and the student asking to finish reading before the explanation
+continues. It does not contain Lucía's private inquiry.
+
+**Second packet:** Chano has testified that Q paid him, they travelled together,
+and they are friends. During recess Q sees him by the water dispenser.
+
+**Q reply:** "Thank you for that." Asked which part: "The third one."
+
+**Authored world response:** Chano offers a cup: "I meant the others too."
+
+**Editorial decision:** A competent local action can clarify the record without
+winning every disputed claim. Q's gratitude needs no lesson in the definition of
+friendship. These outcomes were authored with the source available; the exercise
+does not independently establish how a fresh model or a real court would behave.
+The final order, travel restrictions and living ending are tested separately as
+manuscript continuity, not smuggled into the decision packet.
+
 ## Still to test
 
 The revised audience exchange at Lucía's reading; the Isthmus intervention;
