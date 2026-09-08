@@ -890,6 +890,44 @@ because the chapter supposedly needs Q to err again. This response was authored
 with context; its plausibility has not been independently tested with a fresh
 model. The earlier missed pickup attachment remains a separate, bounded mistake.
 
+## 30. What the success file does not answer
+
+Date: 2026-09-08. Author-run with manuscript context, not independent simulation
+or external faculty review. Replies and actions are recorded without claiming
+access to hidden model reasoning.
+
+**Packet:** The Custodian presents an actual preservation success: recovered
+school records helped establish children's completed years. A later teacher
+letter reports that the new computer still opens the register but its printer
+does not work with it. The supplied file includes his promise to ask the technical
+team and no later answer. Q does not know whether the school eventually received
+help from that team or another source.
+
+**Q reply/action:** "We should find out." Treats the missing answer as a question,
+not proof of universal neglect or grounds to erase the earlier benefit. Keeps the
+two letters in the account rather than selecting only the one that fits a thesis.
+
+**Authored world response:** The Custodian says he will ask the school, not just
+his office, and notes the question. He remembers displaying the first letter but
+had forgotten the second. No completed inquiry or repair is supplied by the scene.
+
+**Second packet:** After discussing their different hopes for the journey, the
+Custodian is tired and says he has prepared nothing for their writing session.
+Q wants both the collaboration and the company; he remembers the road-check
+driver who sang in Chapter Eighteen.
+
+**Q reply/action:** Invites the session to continue through the comparison with
+that unprepared but welcome singer. When the Custodian asks whether he must sing,
+Q proposes working on that scene without it.
+
+**Authored world response:** The Custodian restores the appointment. Lucía asks
+them to return to the systems list, which still concerns her own work. Agreement
+to meet is not a completed writing session or an absolution of earlier choices.
+
+**Editorial decision:** Curiosity and companionship support Q's initiative.
+Neither requires a verdict on the Custodian or a therapeutic explanation. These
+are authored responses with context, not independently elicited behavior.
+
 ## Still to test
 
 The revised audience exchange at Lucía's reading; the Isthmus intervention;

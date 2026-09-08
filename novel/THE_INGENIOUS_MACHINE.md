@@ -10171,6 +10171,24 @@ A community office had obtained readable land maps after
 its only machine stopped opening the files. Those successes
 had not been imaginary.
 
+The Custodian found the teacher's letter among his copies.
+She had written again the following year. The new machine
+could still open the register, but the printer no longer
+worked with it. Parents were paying for a journey to obtain
+copies at the district office.
+
+“I remember answering this,” he said.
+
+He checked the attached correspondence. His reply promised
+to ask the technical team. There was no later answer in
+the file he had brought.
+
+“We should find out,” Q said.
+
+“I'll ask the school, not just our office.” He wrote the
+question in the notebook. “I put the first letter in every
+presentation. I'd forgotten she wrote twice.”
+
 Maintenance became a continuing expense. Sponsors wanted
 searchable material, then comparisons, then products that
 would pay for the maintenance. Some uses were agreed to.
@@ -10330,6 +10348,21 @@ reply too simple.
 
 “Yes. We can't revise the afternoon they had.”
 
+The Custodian rubbed the bridge of his nose beneath his
+glasses. Q waited, then asked whether he still wanted
+their writing session that evening.
+
+“I haven't prepared anything.”
+
+“Neither had the man who sang to me beside the feed truck.
+He was very good company.”
+
+“Do I have to sing?”
+
+“I was hoping we could work on that scene without it.”
+
+The Custodian put the session back on his calendar.
+
 Lucía asked to return to the systems list before
 the two authors made their difficulty the entire
 meeting. She had her own disclosure to report.
@@ -10409,10 +10442,16 @@ his next appointment. His lawyer met him at the
 entrance. He carried the requested exhibits,
 including a redacted public set and a restricted
 set handled under the review's arrangements.
-He was anxious. No one knew whether the inquiry
-would lead to a further case against him, and
-anxiety did not become courage merely by being
-filmed from a favorable angle.
+No one knew whether the inquiry would lead to a
+further case against him. His lawyer asked for
+the appointment slip. He took out the return
+ticket, apologized, and found the slip behind it.
+
+“Keep that one,” she said, handing back the ticket.
+
+He looked for a pocket where he would not mistake
+it again. Q held his coat while he rearranged
+the papers. The lawyer waited.
 
 Q walked with him as far as the permitted waiting
 area. At the desk, the clerk asked his occupation.

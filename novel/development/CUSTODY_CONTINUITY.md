@@ -144,6 +144,21 @@ Chapter Seventeen still finds changed visitor arrangements and pending gate work
 
 ## Changes through the ending
 
+Chapter Nineteen's teacher correspondence concerns a successfully recovered
+school register followed by a printer problem. The copy set contains the
+Custodian's promise to ask the technical team, but no subsequent answer. It does
+not prove no one ever answered or that the register was lost again. A new question
+for the school is noted, not completed. This correspondence is separate from
+Evaristo's unacquired packet and the unknown later fate of his sister's letters.
+
+Q's knee needs a part; the workshop appointment and later conditional maintenance
+inspection do not themselves establish repair. The Custodian resumes a writing
+appointment before his resignation and subsequent inquiry. Q's feed-truck callback
+refers to the road-check driver in Chapter Eighteen, not to a new journey together.
+At the later appointment Q holds a coat, not the restricted exhibits. His request
+for a personal call neither grants entry to the evidence room nor predicts the
+inquiry's result.
+
 Chapter Eighteen gives Q one receiving-confirmation copy at Ana's office, not a
 second handover of the module or a new receipt at departure. The courier completed
 the module transfer earlier. Q sends the proposed visit passage to Ana's office

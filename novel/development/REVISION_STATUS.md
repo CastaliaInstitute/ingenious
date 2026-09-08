@@ -261,8 +261,18 @@ the book.” The source now permits Q to remain alive when the writing stops.
 ## Required next work
 
 Current checkpoint: the second whole-chapter voice pass is complete through
-Chapter Eighteen; continue with Chapter Nineteen. Earlier chapter-by-chapter
+Chapter Nineteen; continue with Chapter Twenty. Earlier chapter-by-chapter
 continuation notes below are a history of this pass, not the latest queue.
+`CHAPTER_19_VOICE_REVIEW.md` and Exercise 30 give the Custodian a second school
+letter behind the often-cited success. The preserved register remains readable;
+the later printing problem needs follow-up, and the supplied file does not prove
+what happened afterward. Q asks to keep the writing session with a feed-truck
+callback, then holds the Custodian's coat before the inquiry. The Menard exchange
+and final promise of a call remain intact. Issue 19 contains 2,222 words on
+16 pages, eight planned plates and four A3 duplex sheets at 13/18.4167 pt.
+Exact text, white backgrounds, dimensions, rotations and nested pairs pass;
+pages 4, 10 and 14 and the innermost spread were inspected. Artwork remains
+planned; Exercise 30 is author-run, not external faculty or independent evidence.
 `CHAPTER_18_VOICE_REVIEW.md` and Exercise 29 replace explanatory coffee and
 company passages with exchanges: Marisol made the sweet pot; Darío returns with
 his shoes. Q sends Ana the proposed passage before departure; her review remains
