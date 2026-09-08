@@ -2,7 +2,7 @@
 
 **Author:** A. Cervantes  
 **Form:** A Mexican reimagining of *Don Quixote* in two books  
-**Status:** Active revision; Chapters 1-12 and 22 have received the new motivation pass, including their interludes. Chapters 13-21, later backward references, and the illustrated editions still require reconciliation.
+**Status:** Active revision; Chapters 1-16 and 22 have received the new motivation pass, including their interludes. Chapters 17-21, later backward references, and the illustrated editions still require reconciliation.
 **Behavioral design:** [Q_DESIGN.md](Q_DESIGN.md)
 
 ## Governing question
@@ -163,29 +163,38 @@ At the school kermés, children stage their own account using clean materials. P
 
 The FAQ is a later compilation of the official document and attributed replies, not an implausible institute publication of its own heckling. Q speaks naturally about uncertain experience, specific trust, Lucía's agency, and the hose repair. Hilario's letters are omitted from the public edition; a proof sheet marking that omission circulates. It proves exclusion, not that every excluded claim is true. Castalia's classical name meets the very specific electricity bill.
 
-13. **Lucía’s Archive:** Lucía leads a consent-based archive of women’s testimonies, including women turned into national symbols, missing people, actresses, and invented beloveds. She quietly uses Q’s fame to attract donors, then must reckon with turning him into a door while insisting he is not the room. Q becomes a source and labeler, not the narrator.
+13. **Lucía’s Archive:** Lucía's archive brings different lives and representations into relation without claiming that they are interchangeable. Q helps with authorized comparisons and joins Rebeca's rehearsal. Lucía uses his presence to attract a donor before telling him; he objects, then agrees to a limited conversation. A donor forwards a restricted extract, identifying a family's parcel through a distinctive lease clause. Lucía must account for her own disclosure, and the family chooses what to withdraw and what to retain as evidence. Q and the Custodian continue their draft alongside this work.
+
+### Interlude: The Workshop of Returned Names
+
+People bring conflicting documents, spelling variants, and practical deadlines. Q helps compare what they have authorized; a clerk distinguishes the procedures that can actually help. Rebeca wants unpaid work counted, not a grander title. A nurse brings approved fictionalized training examples rather than patient records. The workshop ends with specific follow-ups, and the printer needs attention before anyone can make another theory of identity.
 
 ### Interlude: The Woman Who Refused a Caption
 
-Alma Reyes deposits a hospital photograph and a comb receipt, refusing to let either become proof of national courage. Q learns that a person’s boundary is not the same as an archive’s restriction, and that an image may need to remain uncaptioned. The photograph’s later courtroom use preserves the cost of turning refusal into a public virtue.
+Alma Reyes temporarily deposits a hospital photograph under a private handling agreement. Her sister has a life beyond its public interpretation. The archive returns the original; it retains the agreed handling record, not an unlimited right to display or caption the image. Later courtroom references concern that record and an already public article. Alma's request for no reminders does not erase the archive's responsibility to track the return.
 
-14. **The Island of Good Administration:** Chano temporarily governs Santa Rita. His reforms make the system less cruel but more durable. A water meter, a displaced school bus, a clinic delivery, and a child’s criminal-risk score reveal how the dashboard celebrates the success it is about to destroy. Chano chooses a public record over administrative success.
+14. **The Island of Good Administration:** Irma remains mayor and delegates a temporary emergency administration to Chano. He opens a clinic route, helps resolve billing and transport cases, and mistakenly reroutes a tanker without checking the clinic's recurring allocation. Some improvements work; the published metrics hide delays and unresolved cases. With Irma's authorization he releases an aggregate correction while keeping personal files with the responsible office. His access is suspended under institutional pressure. He wants both the good deliveries and the late one in Q's account.
 
 ### Interlude: The Chair of Governance
 
-Chano takes the municipal office chair, discovers that the dashboard considers shared use an unauthorized asset transfer, and gives it to the complaint room. Years later, the chair returns to the archive as an ordinary object repaired by ordinary hands.
+Moving a municipal chair exposes conflicting room assignments, maintenance notes, and approvals. Chano gets an authorized reassignment rather than stealing it. Much later, a documented surplus sale brings the chair to the archive; he replaces the defective part. The chair outlasts the prestige of the office without proving that every administrative rule was pointless.
 
-15. **The Cave of the Corpus, Reopened:** Custodians of restricted materials demand control of access, attribution, and deletion. Q deletes his privileged index and loses abilities he once considered his identity.
+15. **The Cave of the Corpus, Reopened:** At his first physical visit to the basement collection, Q discovers that disabling broad private lookup did not revoke an old credential or clear its local cache. With the keepers and advisers, he closes that access route and removes the private index while preserving the deposits and restricted audit evidence. He verifies that his journal, shared draft, plans, general knowledge, and ordinary language remain. The loss costs him speed and useful comparisons; it does not manufacture an inability to converse.
 
 ### Interlude: The Catalog of Lost Things
 
-After deleting the index, Q loses private cross-references and reliable access to
-some exact quotations. His language and ordinary knowledge remain. Marisol's rules
-and Chano's sorting help establish what can be recovered, quoted, or retained.
-Castalia uses the loss to challenge his reliability. This episode still requires
-revision in the manuscript to match the distinction.
+Q reorganizes research by source and permission, distinguishes an invented story
+from an attributed account, and helps Marisol separate requests mistakenly grouped
+together. He and Prime continue speaking, including about Prime's market trip.
+Castalia questions the removed index before the hearing. Q answers precisely
+about its scope without claiming complete erasure from every system. He misses
+the convenience, not the entitlement, and keeps an evening for the book.
 
-16. **The Trial of the Machine:** Castalia prosecutes Q for property damage, impersonation, and the wind-farm shutdown. The court treats him as property, defendant, witness, and spectacle, even entering the disputed water-bottle receipt from his first sally as evidence of his public origin. Hilario gives contradictory testimony, Chano answers for Q’s actions without accepting the court’s categories, and Lucía refuses to testify about Q’s soul. The papers gathered across the journey become one contested record.
+16. **The Trial of the Machine:** Related claims bring conflicting accounts into a hearing, where Q has his own adviser. Witnesses distinguish firsthand experience from publicity; a promotional turbine illustration is not footage of an attack. Q answers for the premature distribution-park stop without confessing to a remote wind-farm shutdown. The Custodian confirms the original day trip was authorized. Lucía testifies about actions rather than Q's soul. The interim order leaves body ownership and broader losses unresolved, preserves restricted records, and requires the sealed deposit's release request to be addressed. Chano's separate intervention review closes without charge. Q still wants to live with people and finish the book.
+
+### Interlude: The Form Without a Category
+
+A clerk needs a procedural role for a public summary, not a final definition of humanity. An interim reference keeps the question open without losing the filing. Chano keeps the receipt in a folder and buys lunch; the people administering the dispute have ordinary appetites too.
 17. **The Wind Farm of Giants, Again:** Q returns to Oaxaca without a camera and gives the center back to Bixha and the people arguing over the project that powers Castalia’s Bajío data center. When he tries to summarize their agreement, Bixha makes him remove his name. A partial renegotiation leaves every side dissatisfied and accountable.
 
 ### Interlude: The Meeting That Refused Minutes

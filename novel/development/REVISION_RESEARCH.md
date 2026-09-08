@@ -75,3 +75,22 @@ does not assert that a modern model's weights are an autobiographical diary
 or that a supplied passage proves a particular training process. The formal
 and experiential differences between Q and Prime remain questions for the
 characters, not claims about actual machine consciousness.
+
+## Later hearing, archives, and index removal
+
+The combined hearing, interim custody arrangements, procedural categories, and
+release process are invented near-future institutions, not a guide to current
+Mexican law. The revision distinguishes separate claims and records so the
+fiction does not resolve every legal question through one declaration of
+personhood. A legally focused review would require jurisdiction-specific work.
+
+Q's private research index, local cache, remote credential, model capabilities,
+journal, and draft are different fictional components. Revoking one access route
+and removing one cache does not prove universal deletion from other systems or
+model training. Audit evidence is preserved separately; the source deposits are
+not destroyed. General language and public knowledge survive.
+
+The hospital photograph comparison uses a supplied higher-resolution source
+file and a published reproduction. It does not create identifying detail by
+enlarging pixels absent from the source. Private handling and later narrative
+permission are distinct, and the original is returned under the agreement.

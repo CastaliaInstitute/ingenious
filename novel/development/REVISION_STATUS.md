@@ -32,7 +32,8 @@ the book.” The source now permits Q to remain alive when the writing stops.
   Q admits wanting travel, repair, and an audience. Estela remains the interviewer.
   The employment-profile exposure comes from an unchecked automatic attachment,
   not Q investigating a critic's home. Don Hilario's copying and quotation limits
-  are respected; later trial references still need reconciliation.
+  are respected; the revised trial distinguishes the authorized pages from
+  a secretly copied complete ledger.
 - Chapter 5 and its three interludes replace elementary misunderstanding with
   specific errors in promised software independence, geographic anonymity, and
   recording permission. The route enters eastern Michoacán's oyamel forests.
@@ -81,6 +82,25 @@ the book.” The source now permits Q to remain alive when the writing stops.
   meeting governs its actual records and spending. The school play uses safe
   materials and a new public-question placard, not Lidia's withdrawn sign or
   children's private health information. The FAQ has an explicit compiled form.
+- Chapters 13-16 and their interludes have been rewritten. Lucía's disclosure
+  has a traceable consequence and does not make Q the owner of her archive.
+  Alma's photograph is returned under its agreement; later testimony concerns
+  permitted records. Chano's second administration has delegated authority,
+  concrete successes, a consequential mistake, and a privacy-aware handover.
+  The chair moves by authorization and later surplus sale, not theft.
+- Chapter 12 now establishes Q disabling broad private lookup before Chapter
+  15's audit identifies the surviving credential and cache. Revocation and
+  local removal preserve deposits and restricted audit evidence. General
+  language, public knowledge, journal, manuscript, and plans remain intact.
+  The cost is slower research and lost comparisons, not conversational collapse.
+- Chapter 16 tests accounts against the revised events. Q has an independent
+  adviser; the Custodian confirms the authorized day trip. Publicity is not
+  treated as footage of a turbine attack. Q acknowledges the actual park
+  damage without accepting ownership of Chano or all claimed losses. The
+  interim order leaves body custody contested, preserves restricted records,
+  and advances the separately inventoried module's release request. Chano's
+  separate incident review closes without charge. No comprehensive legal or
+  philosophical determination of Q's humanity is manufactured.
 - Chapter 22 and the coda have been rewritten. Q verifies the power problem,
   obtains help from Q-Prime, saves permissions, survives, and finishes the book
   with the Custodian. Ownership and maintenance disputes remain open.
@@ -90,7 +110,7 @@ the book.” The source now permits Q to remain alive when the writing stops.
 
 ## Required next work
 
-1. Read and revise Chapters 13-21 and their interludes. Trace promises,
+1. Read and revise Chapters 17-21 and their interludes. Trace promises,
    calls, battery and funds, Castalia's control, the restricted index, and the
    difference between Q's public identity and his current commitments. Avoid
    making every person a dispenser of a moral lesson.
@@ -121,8 +141,19 @@ the book.” The source now permits Q to remain alive when the writing stops.
      Q cannot leave unrestricted simply because the next chapter needs him
      elsewhere. His accepted opportunity to travel at the beginning remains
      distinct from Castalia's later disputed recovery claim.
+   - The Chapter 16 order is interim, not permanent containment followed by an
+     unexplained escape. Approved accompanied travel remains the operative
+     condition until a specific change is narrated.
+   - Alma's original photograph has been returned. Neither the hearing nor
+     subsequent editions can silently acquire a fresh right to exhibit it.
+   - Chano's second administration hands personal working files to the
+     responsible office. His own notebook, authorized copies, and released
+     specifications are distinct from those files and the Tijuana ledger.
+   - The private index is not Q's model weights, ordinary language, journal,
+     or general knowledge. Later claims of amnesia or intellectual collapse
+     need correction. Preserved audit evidence is not a hidden usable index.
 3. Continue reconciling `OUTLINE.md` as the middle chapters are revised. It now
-   reflects Chapters 1-12 and the ending. Its remaining
+   reflects Chapters 1-16 and the ending. Its remaining
    summaries explicitly describe material that still needs a revision pass.
 4. Extend the scene exercises. Use fresh context if a suitable runtime can be
    invoked; do not report author-known outcomes as independent validation.

@@ -2,7 +2,8 @@
 
 This is an author-facing continuity record for the revised English manuscript.
 It records the state at this point, not proof that every later chapter already
-matches. Chapters 13-21 still require reconciliation.
+matches. The update below records changes through Chapter 16; Chapters 17-21
+still require reconciliation.
 
 | Item or commitment | Current state | Constraint on later scenes |
 | --- | --- | --- |
@@ -33,3 +34,23 @@ bring him to the union hall and school.
 This chronology replaces the old repetition in which Q arrived with recovered
 papers, left the archive freely, and then arrived in the same custody vehicle
 again at the start of Book Two.
+
+## Changes through Chapter Sixteen
+
+| Item or commitment | State after the hearing | Constraint on later scenes |
+| --- | --- | --- |
+| Q's body and travel | Ownership remains disputed under an interim order; the approved accompanied schedule continues pending review. | No unexplained permanent confinement, unrestricted departure, or escape. The original day trip remains authorized. |
+| Sealed module | Still separately inventoried in the Amealco property cabinet. The release request must now be addressed. | An order to address a request is not a completed release. Any changed destination needs the depositors' authorization and an actual handover. |
+| Chano's ledger and Lucía's retained folders | Originals still retained in Tijuana. | Later working copies and receipts do not put originals in anyone's pocket. |
+| Chano's intervention review | Closed without charge after the fuller incident record is considered. | His action was catching the technician's arm during Q's fall, not an established assault or a US-entry offense. |
+| Alma's photograph | Returned after its limited private deposit. The agreed handling record remains. | The hearing refers to the record and an already public article, not an original still held for exhibition. |
+| Santa Rita's personal case files | Handed to the responsible office; public release concerns approved aggregate findings and specifications. | Chano carries his notebook and permitted copies, not unrestricted residents' medical or school files. |
+| Q's broad private lookup | Disabled in Chapter 12; Chapter 15 identifies a surviving credential and local cache, then revokes and removes them within a reviewed scope. | Closing a tool was not the same as erasure. The underlying deposits remain with their keepers; restricted audit evidence is preserved. |
+| Q's ordinary capacities | General language, public knowledge, journal, plans, and shared draft remain available. | The cost of index removal is speed and particular comparisons, not forgetting Lucía, food, or how to converse. |
+| Prime | Disputed examples are no longer supplied to live answers; wider provenance remains under review. He continues speaking with Q and has visited a market. | Do not claim all training history has been verified or reset him to an incompetent foil. |
+| Q's litigation advice | His own adviser distinguishes admissions, disputed claims, and disclosure scope. | Records are preserved pending a defined inspection proposal; the ruling does not authorize indiscriminate copying of all deposits. |
+
+The hearing does not settle humanity, ownership, every damage claim, or the
+archive's governance in one judgment. Q acknowledges his actual premature stop
+at the distribution park. The wind-farm operator's precautionary group stop is
+distinct from both that incident and the promotional picture of an attack.
