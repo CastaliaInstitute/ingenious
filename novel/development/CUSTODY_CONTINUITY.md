@@ -144,6 +144,21 @@ Chapter Seventeen still finds changed visitor arrangements and pending gate work
 
 ## Changes through the ending
 
+Chapter Twenty's Las Pozas visit is a permitted detour, not a new duty or a
+concealed escape. Q stops at the knee warning and does not reach the upper view.
+Lucía's photograph shows Chano there; it does not retroactively put Q there.
+He requests both portraits and writes the postcard; posting or receipt of that
+card is not established. The Custodian stays in Mexico City. The guide's worker
+count concerns construction history, not present staffing.
+
+At the inn, the truck's clutch is reported working after a two-day repair. Q
+does not inspect it. The settlement remains proposed and under separate-term
+discussion. Room Four remains closed; the inspector is not the roofer. The
+roofer promises an afternoon inspection, not a completed repair. Q supplies room
+numbers, not guest records. His paid share precedes Chano's balance payment.
+The sign's final O is still dark on departure; no roof, sign or knee fix is
+silently completed by hospitality, money or the courtyard conversation.
+
 Chapter Nineteen's teacher correspondence concerns a successfully recovered
 school register followed by a printer problem. The copy set contains the
 Custodian's promise to ask the technical team, but no subsequent answer. It does

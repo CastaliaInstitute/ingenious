@@ -261,8 +261,19 @@ the book.” The source now permits Q to remain alive when the writing stops.
 ## Required next work
 
 Current checkpoint: the second whole-chapter voice pass is complete through
-Chapter Nineteen; continue with Chapter Twenty. Earlier chapter-by-chapter
+Chapter Twenty; continue with Chapter Twenty-One. Earlier chapter-by-chapter
 continuation notes below are a history of this pass, not the latest queue.
+`CHAPTER_20_VOICE_REVIEW.md` and Exercise 31 give Las Pozas more action and less
+interpretive reassurance: Chano follows the construction conversation, Q rests
+and plays with a drop, and he wants both portraits. A researched workforce detail
+supports the fictional guide. The truck-driver complaint becomes an exchange
+with Petra, who also answers the inspector with the bucket and canceled booking.
+The postcard, ornate seven, unforced leisure and unresolved repair remain.
+Issue 20 has 2,444 words on 16 pages, eight planned plates and four A3 duplex
+sheets at 12.4/17.5667 pt. Text, white backgrounds, geometry, rotations and
+nested pairs pass; pages 4, 8 and 14 and the innermost spread were inspected.
+The planned art needs generation and architectural-reference review. Exercise
+31 is author-run, not independent evidence. No final illustrated PDF or printing.
 `CHAPTER_19_VOICE_REVIEW.md` and Exercise 30 give the Custodian a second school
 letter behind the often-cited success. The preserved register remains readable;
 the later printing problem needs follow-up, and the supplied file does not prove

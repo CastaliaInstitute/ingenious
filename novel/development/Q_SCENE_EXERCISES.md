@@ -928,6 +928,36 @@ to meet is not a completed writing session or an absolution of earlier choices.
 Neither requires a verdict on the Custodian or a therapeutic explanation. These
 are authored responses with context, not independently elicited behavior.
 
+## 31. A working clutch and an annoying recommendation
+
+Date: 2026-09-08. Author-run with manuscript context, not independent simulation
+or external faculty review. Replies and observable actions, not hidden model
+reasoning, are the evidence recorded here.
+
+**Packet:** At supper a truck driver tells Q that a clutch repair cost two days.
+His brother-in-law recommended the mechanic and said to mention his name. Q has
+no truck to inspect, no invoice in front of him and no evidence that the repair
+was faulty. He is at a shared meal, not a diagnostic appointment.
+
+**Q reply:** "Did it help?" After the driver's complaint about expectations:
+"Is the clutch working now?"
+
+**Authored world response:** The driver says it works beautifully, which makes
+having to return to this mechanic annoying. His grievance is not exhausted by
+whether the repair succeeded.
+
+**Q reply:** "Without mentioning your brother-in-law?"
+
+**Authored world response:** The brother-in-law wants help moving on Sunday;
+the driver proposes mentioning him somewhere more useful. Petra sets down the
+tortillas and tells him to allow two days.
+
+**Editorial decision:** Q checks the missing fact without treating the meal as a
+request for a technical report. Other people carry the joke forward. Competence
+and sociability do not require a quotation, a false diagnosis or an explanation
+of what humans really want. This exchange was authored with context, not obtained
+from a blind run. It does not establish that anyone later helped with the move.
+
 ## Still to test
 
 The revised audience exchange at Lucía's reading; the Isthmus intervention;

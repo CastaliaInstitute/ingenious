@@ -163,6 +163,17 @@ arrangements, and Petra's inn are fictional. The inn is now placed outside
 Jalpan, not outside Puebla. A new road-rendered map remains to be verified;
 these references alone do not validate an existing map or every transit leg.
 
+Rechecked 2026-09-08 for the Chapter Twenty voice pass: the garden's official
+[history](https://laspozasxilitla.org.mx/el-jadin-surrealista/) credits more than
+150 carpenters, masons and gardeners across construction. The guide's count
+uses that account, not a claim that this many people worked there simultaneously
+or currently. [Fondo Xilitla](https://www.xilitla.org/history.php) also identifies
+Gastélum's construction role. Q's remark about a building changing its mind,
+the group's dialogue and the particular resting/portrait scenes are invented.
+No new assertion about climbable structures, opening hours, transport services
+or present visitor permissions is made. Future plates need direct architectural
+reference inspection; source text alone does not verify an image.
+
 ## Final maintenance scene
 
 The fictional technician verifies the load, ratings, outlet limits, and fused

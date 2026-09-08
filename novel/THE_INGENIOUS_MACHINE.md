@@ -10524,13 +10524,20 @@ He moved. The husband reappeared in the photograph.
 
 Their guide spoke of Edward James, Plutarco Gastélum,
 and the carpenters, masons, and gardeners whose work
-had made the place. James's imagination was easier
-to put on a ticket than the many hands required to
-build and maintain it. Q asked about the work of
-making concrete take those shapes. The guide spent
-several minutes on construction rather than the
-eccentricities of a wealthy man, and Chano became
-more interested.
+had made the place. Q looked from a concrete flower
+to the stair beside it.
+
+“It looks as though a building kept changing its mind.”
+
+Chano looked up. “Expensive habit.”
+
+Q asked how many people had worked on the construction.
+The guide said more than a hundred and fifty. Chano
+asked about the carpenters, then how the shapes had
+been made. By the next stop he was walking beside
+the guide. Lucía caught Q looking pleased.
+
+“You can ask another question. He hasn't hired him.”
 
 “That bit looks unfinished,” Chano said.
 
@@ -10541,14 +10548,12 @@ He considered the surroundings. “A fair objection.”
 Q wanted to climb farther. His knee produced a warning
 on the next rise. He stopped at the permitted resting
 place while the others continued with the guide.
-The garden did not owe him its highest view because
-he had come a long way to obtain it.
 
 For a while he was irritated. Then he noticed water
 collecting on the underside of a leaf until its own
-weight made it fall. He watched the next drop gather.
-It did not become a theory of time. It was simply
-worth waiting for the drop.
+weight made it fall. He held a finger beneath the
+next one. It struck the metal and ran toward his
+wrist. He changed the angle of his hand and waited.
 
 When Chano came back, Q asked whether he had missed
 anything wonderful.
@@ -10561,8 +10566,9 @@ anything wonderful.
 
 Lucía sat beside him. She had taken a photograph of
 a passage he had not reached and offered to show it.
-Q thanked her. He could appreciate it without claiming
-that looking at the picture completed the walk.
+Q thanked her and asked to see the previous picture
+again. A figure at its edge turned out to be Chano,
+looking down from the place where Q had wanted to stand.
 
 “Do you want your portrait?” she asked.
 
@@ -10574,10 +10580,10 @@ asked whether he wanted a heroic angle.
 
 “I'd settle for both feet in the frame.”
 
-Lucía took the picture. Q looked pleased in it. The
-pleasure was not made less real by the arrangement,
-although he preferred the second picture, in which
-Chano had walked through while discussing lunch.
+Lucía took the picture. Q looked pleased in it.
+He preferred the second, in which Chano had walked
+through while discussing lunch, and asked her to
+send him both.
 
 At the exit, he bought a postcard. The reproduction
 flattened the place back into something he could
@@ -10679,21 +10685,34 @@ to pass a plate without hitting a glass.
 The driver moved the glass. “You're doing all right.”
 
 They talked about the road and a clutch repair
-that had cost the driver two days. Q could offer
-questions to ask about the invoice but could not
-inspect a truck that was not there. The driver
-mostly wanted to complain about his brother-in-law,
-who had recommended the mechanic. Q listened long
-enough to discover that the mechanic had eventually
-done the repair well. This did not improve the
-brother-in-law's position.
+that had cost the driver two days.
+
+“My brother-in-law said to mention his name.”
+
+“Did it help?” Q asked.
+
+“The mechanic knew exactly who to blame for my
+expectations.”
+
+“Is the clutch working now?”
+
+“Beautifully. That's the annoying part. I'll have
+to go back to him.”
+
+“Without mentioning your brother-in-law?”
+
+“I'm going to mention him somewhere more useful.
+He wants me to help him move on Sunday.”
+
+Petra put down the tortillas. “Tell him to allow
+two days.”
 
 A woman recognized Lucía from the old video and
 asked whether she had married the machine.
 
 “No,” Lucía said.
 
-“The video made it look as though—”
+“But in the video—”
 
 “The video was wrong about a number of things,”
 Q said. “We travel together. Would you pass the
@@ -10717,9 +10736,8 @@ about having been rejected with excellent clarity.
 “More useful to the people in the room.”
 
 She said this lightly and returned to her book.
-He let her read. Affection could include an
-evening in which he was not its most interesting
-object.
+He let her read and went to see whether Chano
+had moved the bed away from the socket.
 
 The message from Castalia arrived through his
 adviser, not in a vehicle that had somehow found
@@ -10756,8 +10774,7 @@ with the neighboring premises, reported the outage,
 and kept the refrigerator closed. Q had sufficient
 charge for the night and saved his draft. He
 rescheduled the long comparison he had planned
-to run. The outage did not require him to turn
-himself into the hotel's emergency supply.
+to run and joined Chano at the courtyard door.
 
 They brought chairs into the courtyard. The
 driver told the story of a bus repaired by
@@ -10783,26 +10800,29 @@ one was sharper than the last and very good.
 
 “Yes.”
 
-She gave him another section. No further
-account of liking was required.
+She gave him another section, then divided
+the rest between them.
 
 ### Interlude: The Innkeeper’s Missing Room
 
-The morning inspection did not concern the
-inn's right to contain imperfect people.
-It concerned water entering Room Four.
-Petra wanted a roofer; the inspector needed
-to check whether anyone was still being
-put in the affected room. Both interests
-could fit through the same doorway if
-neither brought all their grievances at once.
+The inspector arrived before the roofer, giving
+Petra someone to speak to about the ceiling
+but nobody who had come to mend it.
+
+“What are you using the room for now?” he asked.
+
+“Catching rain.”
+
+She showed him the canceled booking and the
+bucket. He checked that no guest was still
+being put in Room Four.
 
 Q helped move a dry table from the adjoining
 passage. The inspector asked whether he
 worked there. He said he was a guest helping
 Petra. The field on the form offered owner,
 employee, contractor, or other. The inspector
-selected other without resolving humanity.
+selected other and asked where the table was going.
 
 Chano looked disappointed.
 
@@ -10891,16 +10911,13 @@ Before leaving, Q asked whether she
 wanted a copy of the key list. She
 did. He gave her the sheet and kept
 no guest names because none had
-been needed. The inn did not become
-less hospitable by having a useful
-piece of paper.
+been needed.
 
 Petra sent them away with oranges.
 Chano paid the remaining room balance.
-Q had paid his share the night before;
-the division would disappoint anyone
-seeking one generous benefactor for
-the scene.
+Q had paid his share the night before.
+Petra counted the change into Chano's hand
+while he tried to keep the oranges in the bag.
 
 From the bus, he watched the sign
 lose its letters one by one behind
