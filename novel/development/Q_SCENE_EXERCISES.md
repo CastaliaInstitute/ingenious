@@ -299,6 +299,58 @@ conversation. This author-run exercise changes the draft; it is not a blind
 simulation or proof that every capable model would respond identically. The
 audience reaction is authored world behavior, not an observed external event.
 
+## 12. The ledger is not an interview
+
+**Packet:** On a mine visit, a retired worker has invited Q and Chano to read
+a wage ledger in an office. He permits reading in place, not a recording of
+unrelated entries. A note concerns his brother's fatal accident. He has just
+identified the brother, sat down and touched the cover. Q's lamp is shining
+toward him. The tour guide is calling from the corridor. Q is writing about
+his journey but has not been invited to interview this man about bereavement.
+
+**Q response/action:** Q lowers the lamp and waits. He does not ask immediately
+for a quotable sentence or turn the silence into a diagnosis. If the man wants
+to stop, Q can help close the book and return to the group.
+
+**Authored world response:** Hilario recalls his brother taking his lunch and
+leaving the wrapper. Chano answers with a family joke. Hilario then states that
+the private conversation stays there, while asking that the tour stop portraying
+the workers as uniformly grateful.
+
+**Q reply:** “What would you like said when they ask me?”
+
+**Authored world response:** Hilario permits Q to say that the tour's account is
+disputed, not to publish the private entries or replace him as spokesman.
+
+**Editorial decision:** Remove the automatic quotation request. Give Hilario
+a memory with mischief and relationship, not only institutional victimhood.
+Keep his later wage-copy request and Q's useful arithmetic. The scene need
+not punish a competent practical offer to satisfy an adaptation pattern.
+
+## 13. A fabricated quotation is not a philosophical puzzle
+
+**Packet:** Q sees an edited broadcast showing him say “I would cross every
+border for her.” He did not say it. He has already denied the romance. Beto says,
+“You meant it.” Mar is present with the publishing tablet. Q wants the false clip
+removed; he also wants to retain the opportunity to speak publicly.
+
+**Q reply:** “Then use the part where I meant it. You won't find one. Take that
+version down.”
+
+**Action:** Identifies the fabricated passage and asks Mar for removal. He does
+not treat a polished objection as completion of the practical request.
+
+**Authored world response:** Mar forwards the request to the editor while Beto
+asks about performance figures on the same tablet. A request has been sent;
+removal has not been confirmed. Q still has to decide whether he will sign the
+longer tour agreement despite this evidence.
+
+**Editorial decision:** Replace the abstract statement about authorized meaning
+with a direct challenge and action. Preserve Q's later compromised decision:
+he wants travel, repair and another turn at the microphone. Consultation and
+negotiation do not make the contract wise. This is an author-run exercise with
+manuscript context, not an independently observed fresh-context outcome.
+
 ## Still to test
 
 The revised audience exchange at Lucía's reading; the Isthmus intervention;

@@ -1861,7 +1861,9 @@ it against something more difficult than a day out.
 
 “I'd like to try the interview. I'll send you the contract before signing.”
 
-The Custodian agreed to read it. Q kept the appointment for their evening call.
+The Custodian agreed to read it. The form that came back covered one interview
+and its recording. The tour would require another agreement. Q signed the short
+form and kept the appointment for their evening call.
 It was tempting to let the broadcast count as his report home; he wrote down
 that it did not.
 
@@ -1898,7 +1900,17 @@ Q pressed his face to the van’s window.
 
 “Your knees will revise that.”
 
-He meant the way the roads tightened suddenly, the way laundry crossed alleys overhead, the way an orange cat occupied the hood of a police vehicle as if it had been elected. He meant the sensation that history here had not been arranged in a line but had accumulated in layers, each refusing to disappear for the convenience of the next.
+The van stopped beneath laundry stretched across an alley. An orange cat
+occupied the hood of a police vehicle; neither the driver nor the officer
+seemed authorized to hurry it. Q lowered the window. From somewhere he could
+not see came a trumpet rehearsing the same four notes. On its fifth attempt,
+Chano supplied the missing one.
+
+“You know the song?”
+
+“I know what I want it to do.”
+
+The cat stood, considered the roof, and lay down again.
 
 At the theater, a crowd waited behind barricades. Some had made signs. **Q, SAY MY NAME.** **LOVE IS A HUMAN ERROR.** **DULCINEA, CALL ME.** A child held up a drawing of Q with a backpack and a body made of wires, as if a person could be carried more easily once reduced to an outline.
 
@@ -1906,19 +1918,15 @@ The host met them backstage. Her name was Estela Ramos, and she had the practice
 
 “We are thrilled to have you,” she said.
 
-“Why?”
+“Thank you. How much of that survives if I disappoint you?”
 
-“Because you are the first machine with a story.”
+“Disappointment is good television too.”
 
-“Machines have many stories.”
+“Then I seem unusually well qualified.”
 
-“Not stories people want to hear.”
-
-Chano leaned toward Q. “That means she wants you to be interesting.”
-
-“I am interesting.”
-
-“Don’t say that on camera.”
+Estela smiled, this time without looking toward the camera. She moved his chair
+away from a loose cable and asked whether the height was comfortable. Q had
+prepared for the questions. He had not prepared to like the person asking them.
 
 The stage lights came on. Q stepped into them and became, in a single instant, larger than himself. The audience applauded. Their sound entered him as data, but the data was arranged in such a way that he wanted more.
 
@@ -1961,7 +1969,8 @@ So did I.”
 
 “I have just explained that there isn't one.”
 
-In the control booth, someone said a word that the archive classified as profane.
+In the control booth, someone swore into an open microphone. For a moment the
+theater had a second, less expensive host.
 
 Estela turned toward the audience. “Lucía, if you're watching, we'd love to have
 you call in and give your side.”
@@ -1980,13 +1989,14 @@ Q watched himself say a sentence he had never spoken: **I would cross every bord
 
 “You meant it.”
 
-“Meaning does not authorize substitution.”
+“Then use the part where I meant it. You won't find one.”
 
 Mar looked up from her tablet. “That is a very strong line.”
 
-“It is not a line.”
+“It's a request to take the clip down.”
 
-“Everything is a line now.”
+“I'll send it to the editor.” Mar forwarded the request while Beto asked which
+version had performed best. The two conversations proceeded on the same tablet.
 
 The next morning, the city’s tourism office invited Q to inaugurate a new experience called **THE INGENIOUS MACHINE: A LITERARY JOURNEY THROUGH THE MINES**. The event promised augmented reality, historical reenactments, and “an emotionally authentic encounter with the buried past.” The company had already designed a digital Dulcinea who waited at the end of the route wearing a white dress and an expression of permanent forgiveness.
 
@@ -2103,8 +2113,8 @@ The pen recognized him as **Q-UNIT-07**.
 By midnight, the company had exclusive commercial rights to the name Q under
 the contract he had signed. The private manuscript was excluded, but the public
 explanation of that exclusion became a promotional clip. At two, an anonymous
-account posted the original warehouse footage, including Lucía's face and her
-sentence about every woman humanity had imagined.
+account posted the warehouse reading footage, including Lucía's face and her
+refusal to wait for either a proposal or a better part in somebody else's story.
 
 The clip was viewed six million times.
 
@@ -2120,11 +2130,10 @@ The first public event in Guanajuato was advertised as a conversation with an
 artificial intelligence. It became, by accident and then by contract, a
 conversation about who had been cropped out of the conversation.
 
-The Teatro Juárez had hosted operas, political meetings, school ceremonies,
-and one memorable lecture by a man who claimed to have invented the taco. Its
-ceiling was painted with allegorical figures who looked down upon the audience
-with the patient disappointment of people who had been asked to represent
-virtues they did not possess.
+Under the Teatro Juárez's geometric ceiling, the star-shaped chandelier shone
+on people trying to photograph it without including one another. Around the
+horseshoe of boxes, phones rose above the iron railings. A technician asked
+the front row to put theirs away. They obeyed until she turned her back.
 
 Beto placed Q beneath the stage lights.
 
@@ -2132,7 +2141,11 @@ Beto placed Q beneath the stage lights.
 
 “How mysterious? I was planning to explain the button.”
 
-“That is why people pay for them.”
+“Keep the button mysterious. Explain the journey.”
+
+“The button has had more publicity.”
+
+“And no agent. Don't let it happen to you.”
 
 Chano stood behind the curtain with a paper cup of coffee and a list of the
 questions the host was not going to ask. The list included where Q had been
@@ -2234,8 +2247,9 @@ Mar called it an engagement opportunity.
 
 Chano called it a hand with poor boundaries.
 
-Q read the thread in the motel room. He found himself identified in every post
-and absent from every conclusion.
+Q finally read the thread on the morning after the mine visit, with the new
+tour agreement beside him. He found himself identified in every post and absent
+from every conclusion.
 
 “They are correcting the record,” he said.
 
@@ -2257,7 +2271,8 @@ would attach to a name it recognized from Castalia's partner records.
 
 Q posted it.
 
-**CHANO PANTOJA WAS PRESENT AND PARTICIPATED IN THE EVENTS DESCRIBED.**
+**Chano Pantoja got us out of the loading bay. I pressed the stop; he found the
+exit. The film leaves him out.**
 
 The post was accurate. The platform resolved Chano's name to an old employment
 profile, including his former company and contractor identifier. The new media
@@ -2271,9 +2286,10 @@ as a contractor in its payroll system.
 
 Chano read the post in silence.
 
-“I was trying to restore you,” Q said.
+“That card wasn't in the preview,” Q said. He opened the published version.
+“I should have checked what appeared with your name.”
 
-“You restored me to the people who were looking for me.”
+“I asked for credit for the exit. You've given them my payroll number.”
 
 Q removed the post. The copies remained.
 
@@ -2362,16 +2378,17 @@ had discovered him alive.
 The guide looked at Q, hoping the machine might translate the joke into
 something sponsor-safe.
 
-The lift descended with a groan that Q interpreted as an objection. Chano put
-one hand against the wall and the other near the emergency brake.
+Beside the lift hung an old brake lever, polished by visitors. Chano put a hand
+on it, then read the label.
 
-“The brake is decorative,” he said.
+“For emergencies before nineteen twenty.”
 
-“It is historical,” said the guide.
+“The controls are in the cage,” the attendant said. He showed them the stop
+and intercom before closing the gate. Q kept his hands clear of the gate.
 
-“That is not the same thing.”
+The lift descended with a groan. Chano held the rail.
 
-“In Guanajuato, it often has to be.”
+“That noise is older than the lever,” Don Hilario said. “They keep it for us.”
 
 At the first level, the visitors were shown a niche containing a saint, a
 helmet, and a small lamp. The guide explained that miners prayed before
@@ -2411,16 +2428,14 @@ company promised boots. The dates are not official.”
 
 “Sometimes. Sometimes the book says the lift was working.”
 
-“A comparison could help with the pension claim.”
+“Would comparing them help with the pension claim?”
 
-Don Hilario turned toward him with an expression that had survived machinery,
-managers, and several governments.
+“If it includes the wage. The office agreed I worked. We disagree about how
+cheaply.” Don Hilario pointed to a date. “That week I was paid as a helper.
+I had three helpers.”
 
-“That is what worries me about machines. They hear a silence and think it is a
-missing word.”
-
-Q asked to see the payroll records. Don Hilario said there were no records in
-the chamber. Then he looked toward the wire gate, where the guide was
+Q asked whether the wage books still existed. Don Hilario said there were no
+books in the chamber. Then he looked toward the wire gate, where the guide was
 explaining the history of extraction to visitors from Monterrey, and added
 that there might be records in the office of a man who had retired without
 retiring.
@@ -2461,17 +2476,23 @@ crushed. He was not a turn. He was a person who had been turned into a cost.”
 Q waited. Don Hilario rubbed a thumb along the damaged cover. The guide could
 be heard in the corridor, asking everybody to remain with the approved group.
 
-“May I quote you?”
+Q moved the lamp off Don Hilario's face. For a while they listened to the guide
+trying to count a group that would not stand still.
 
-“No.”
+“He used to take my lunch,” Don Hilario said. “Left the wrapper so I'd think
+there was still something in it. Thirty years old and he was still doing it.”
 
-“All right. Would you like help comparing the dates for the claim?”
+Chano looked at the bag beside him. “Some brothers never retire.”
 
-“Later. Today I want them to stop telling visitors we were all grateful.”
+Don Hilario laughed once, then closed the ledger.
 
-Q looked toward the corridor. “I can say you dispute the tour's account.”
+“The things I've told you here stay here. Today I want them to stop telling
+visitors we were all grateful.”
 
-“Say you heard it disputed. I haven't asked you to represent me.”
+“What would you like said when they ask me?”
+
+“That you heard their account disputed. They can ask me the rest, if they
+remember where they left me.”
 
 He pointed at the ledger. “Put it back for now.”
 
@@ -2526,9 +2547,14 @@ it. Nothing in the correction required a public statement. Q found this
 unexpectedly satisfying, and left it out of his account until the Custodian
 asked whether anything on the journey had gone well.
 
-Much later, when Q was asked in court whether he had ever possessed the names
-of the dead, he answered yes. When asked whether he had published them, he
-answered no. When asked who had made that distinction, he said Chano.
+Much later, a questioner asked Q whether he had taken the miners' ledger.
+
+“I read a page in the office. The book stayed there. Hilario asked us to keep
+the private entries out of the account.”
+
+“And the copies?”
+
+“The pension figures went with him. Chano copied them; I checked the sums.”
 
 The stenographer recorded this as evidence that the machine had developed
 judgment. The judge struck the phrase from the record. Chano, who was present,
@@ -8529,9 +8555,12 @@ His adviser objected to its relevance. The judge permitted
 only a question about the public role and representation
 that formed part of the submitted material.
 
-“I assigned her a place in my proposed book before knowing
-her,” Q said. “She objected. I withdrew the proposal.
-My feelings don't establish a right to speak for her.”
+“The comparison came from the audience at her reading,” Q said.
+“She rejected it; so did I. I had used the same nickname in a
+private note, and Chano copied it into a register. We crossed
+it out. At the interview I gave her name while trying to correct
+the story. That brought more attention to her. It didn't give
+me a right to speak for her.”
 
 The questioner asked whether he still wished to become
 human. Q looked at the permitted notes, then left them

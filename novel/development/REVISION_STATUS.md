@@ -160,12 +160,12 @@ the book.” The source now permits Q to remain alive when the writing stops.
   and ends in a verified save and shutdown. The pending migration is a data-
   handling issue, not an inexplicably fatal operation on Q. Ownership,
   maintenance, and the Tijuana paper returns remain open.
-- `Q_SCENE_EXERCISES.md` records eleven author-run exercises with limited packets,
+- `Q_SCENE_EXERCISES.md` records thirteen author-run exercises with limited packets,
   alternative responses, consequences, and editorial findings. These are not
   independent blind runs; the limitation is explicit.
 - Current structural check: 22 unique chapter headings, two book divisions,
   one coda, and the pen-down final sentence. The manuscript is approximately
-  74,300 whitespace-delimited words including front matter. Selected checks
+  74,600 whitespace-delimited words including front matter. Selected checks
   confirm the late delivery, travel, and maintenance anchors and reject named
   obsolete events. `git diff --check` passes. These checks do not establish
   whole-book literary quality or validate any PDF or illustration.
@@ -212,6 +212,17 @@ the book.” The source now permits Q to remain alive when the writing stops.
   still prevent an A+ press-master claim.
 
 ## Required next work
+
+The Chapter Four voice pass is recorded in `CHAPTER_04_VOICE_REVIEW.md`. It
+repairs Q's public correction, removal request and ledger response; gives
+Estela, Mar, Chano and Hilario more independent behavior; and corrects stale
+Lucía/ledger recollections including the Chapter Sixteen testimony. Interview
+permission, tour signing and the later linked-profile post now have distinct
+timing. The Issue 4 manifest contains sixteen planned facing scenes for a
+32-page, 5,211-word layout, not generated or approved images. Internal pagination
+and selected rendered pages have checks; no final Issue 4 PDF or print job.
+Continue the remaining whole-chapter voice pass before treating art plans as
+final. Existing Issue 1-3 proofs remain unchanged.
 
 1. All 22 chapters now have the motivation/continuity pass. Read across chapter
    boundaries and review the whole-book voice before finalizing pagination.

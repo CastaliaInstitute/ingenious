@@ -50,6 +50,19 @@ apocalypse banner to the museum's own curators. Noemí and Nadia are fictional
 characters. Noemí's family and radio anecdotes are not ethnographic evidence
 or claims to describe all contemporary Maya communities.
 
+## Teatro Juárez
+
+The Guanajuato cultural authority describes the auditorium's Neo-Mudéjar
+decoration, geometric ceiling, star-shaped chandelier and horseshoe plan.
+Chapter Four now uses those features instead of the unsupported painted
+allegorical figures on the auditorium ceiling.
+
+- [Guanajuato cultural authority: Teatro Juárez](https://cultura.guanajuato.gob.mx/index.php/teatro-juarez/)
+
+The near-future interview, production crew, mine tour, old brake-lever exhibit,
+lift fault and pension ledger are fictional. They are not reports about the
+theater's programming or the safety of an identified tourist mine.
+
 ## Invented institutional and technical events
 
 Viento Común, its procurement terms, the visitor incident, the kiosk failure,
