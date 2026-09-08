@@ -165,7 +165,15 @@ Record model identity if actually supplied by the runtime, date, packet, respons
 consequence, and editorial decision. Distinguish an author-run scene exercise
 from an independent blind test. Neither proves how every future model will act.
 
-Start with departure at the archive, Chano's dismissal, Lucía's reading, the
+The first fresh-context batch is recorded in
+`development/FRESH_CONTEXT_REVIEW_2026_09_08.md`: Qwen3 8B and Gemini 2.5 Flash
+received two compact scene variants with author-supplied continuations. Both
+accepted finishing; both requested staff help at the gate. These are observations
+of those runtimes under those packets, not a specification that every Q must
+repeat their dialogue. They challenge the need for Q's personal boundary crossing
+and do not independently reproduce the ending's relational concern.
+
+Continue with departure at the archive, Chano's dismissal, Lucía's reading, the
 Isthmus intervention, deletion of the private index, a request from Q-Prime,
 the power failure, and the decision to finish the manuscript. Extend to later
 scenes whenever a revision changes what Q can know or has promised.

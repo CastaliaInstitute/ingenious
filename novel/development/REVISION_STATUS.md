@@ -261,8 +261,11 @@ the book.” The source now permits Q to remain alive when the writing stops.
 ## Required next work
 
 Current checkpoint: the second whole-chapter voice pass is complete through
-Chapter Twenty-Two. Next: whole-book pacing and ending review, followed by genuinely
-fresh-context scene tests and illustration production. Earlier chapter-by-chapter
+Chapter Twenty-Two. Eight fresh-context calls now test two scene variants with
+Qwen3 8B and Gemini 2.5 Flash; `FRESH_CONTEXT_REVIEW_2026_09_08.md` records the
+outputs, author-supplied world updates and limitations. Next: review Chapter Eight's
+staff-help alternative and the dependent Chapter Sixteen testimony, then continue
+whole-book pacing, broader scene tests and illustration production. Earlier chapter-by-chapter
 continuation notes below are a history of this pass, not the latest queue.
 `CHAPTER_22_VOICE_REVIEW.md` keeps Q's other plans visible before the book closes.
 The Custodian and Q argue over the verb on the page; the final invitation and pen
@@ -508,15 +511,14 @@ illustrated edition as unfinished requirements.
 3. `OUTLINE.md` now reflects all 22 chapters. Keep it aligned through the
    whole-book voice and simulation passes; do not silently treat old website
    descriptions, Spanish text, PDFs, or illustration maps as current canon.
-4. Extend the scene exercises. Use fresh context if a suitable runtime can be
-   invoked; do not report author-known outcomes as independent validation.
-   A fresh-context sub-agent tool is available but requires explicit delegation
-   authorization. An asynchronous question has been sent; check for a user
-   response before invoking it. No independent run has occurred in this pass.
-   Three restricted packets are prepared at `/tmp/ingenious-fresh-scene-packets.json`
-   for the gate, limited translation, and a public-example decision. They contain
-   no canonical outcome or required mistake. Run each in a separate fresh context
-   if authorized, then let an explicit world response support a second step.
+4. Extend the scene exercises. A local stateless inference service and the
+   configured Google API now provide fresh-context actor responses without creating
+   a Codex task or tool-using subagent. Eight calls completed for two scene variants;
+   see `FRESH_CONTEXT_REVIEW_2026_09_08.md`. The world responses remain author-supplied,
+   and these models are not identical to the assistant writing Q. Do not call this
+   a blind whole-book validation. Expand the cases using current source context.
+   The old public-example packet at `/tmp/ingenious-fresh-scene-packets.json`
+   contains a superseded disclosure event and was not run; replace it before use.
 5. Rebuild the remaining English chapter issues only after text and plate placement
    are reconciled. The new Issue 1, 2 and 3 revision proofs represent their current chapters.
    English is the current revision source; the Spanish edition remains earlier.
