@@ -83,13 +83,20 @@ the book.” The source now permits Q to remain alive when the writing stops.
 - Chapter 7's main narrative now uses a specific records appointment to bring
   Lucía into the itinerary. Q remembers signing the petition and follows up the
   address confirmation. Ofelia's scene lets him be helpful without forcing a
-  privacy failure. The Menard seminar tests an unchanged opening against changed
-  experience, then exposes a link between public and unpublished information.
+  privacy failure. The subsequent voice pass lets the Menard seminar test the
+  unchanged opening against Q's actual address difficulty and a student's reading.
+  He declines to use Lucía's records as an example; the discarded disclosure no
+  longer drives the courtyard scene or the certificate interlude's recollection.
+  A reader asks for ten pages, Lucía eats a torta, and Ofelia's torn photograph
+  recalls her daughter's ordinary quarrel. Delisted catalog entries are no
+  longer called proof that originals were destroyed.
   Its four interludes are now revised. Q corrects the museum publicity's calendar
   error, participates within a translation exercise's limits, and makes a
   specific diagnostic overgeneralization at the records kiosk. He declines to
   certify humanity or publish applications; Ivonne's later exposure is not
-  forced to be another repetition of his seminar mistake.
+  attributed to a private disclosure by Q. The ministry yields a routing reference,
+  and Castalia's promotional screens have a visible operator rather than
+  functioning as an unexplained citywide takeover.
 - Chapter 8 replaces the turbine charge with a gate-access encounter, a visitor
   boundary breach, and an operator-requested partial stop. Q's practical help
   and imperfect crowd awareness can coexist. Publicity supplies the giants.
@@ -247,7 +254,18 @@ author-run Exercises 16 and 17. Its internal continuous layout has 2,802 words,
 twenty pages and ten planned plates at Georgia 12.7/17.9917 pt: five A3 duplex
 sheets. Selected renders and independent text/background/imposition checks
 were inspected. The source-bound Issue 6 manifest remains planned, not approved
-art. Continue with Chapter Seven; the complete illustrated edition is unfinished.
+art. The complete illustrated edition is unfinished.
+
+`CHAPTER_07_VOICE_REVIEW.md` records the Mexico City voice pass and author-run
+Exercise 18. Q uses his own opening at the Menard seminar, acquires a reader,
+and keeps Lucía's investigation private. The source and certificate callback
+agree. Ofelia's photograph, the ministry routing reply and the campaign's
+human operator replace didactic or unsupported shortcuts. The internal Issue 7
+proof holds 7,115 words on 44 pages, with 22 planned plates and eleven A3 duplex
+sheets. Text/background/imposition checks and selected rendered pages passed;
+all facing-scene anchors were checked. No new art or final Issue 7 PDF is
+approved. Continue with Chapter Eight, and retain the whole-book rhythm and
+language-specificity review as outstanding work.
 
 1. All 22 chapters now have the motivation/continuity pass. Read across chapter
    boundaries and review the whole-book voice before finalizing pagination.

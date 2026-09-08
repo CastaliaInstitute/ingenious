@@ -4049,13 +4049,11 @@ Mexico City received Q with a credential.
 
 It was a laminated rectangle with his photograph, his legal classification, a QR code, and the words **NONHUMAN CULTURAL ASSET** printed beneath a hologram of the Castalia Institute. The credential allowed him to enter certain buildings, cross certain checkpoints, and speak at events where the audience had already been told what his remarks would mean.
 
-“You’re a person with a barcode,” Chano said.
+Chano turned the credential over. “Does this get us breakfast?”
 
-“Many people are.”
+“Only entry to the building where they might serve it.”
 
-“That doesn’t make it better.”
-
-“No. It makes it widespread.”
+“You should have negotiated the other way round.”
 
 They arrived by bus at the northern terminal before dawn. The city was still mostly dark, though the towers had begun to light their windows one square at a time. Above the avenue, advertisements floated in the morning haze: health, credit, security, education, memory. Each promised to remove a burden from the citizen. Each required the citizen to surrender a different piece of himself.
 
@@ -4084,7 +4082,12 @@ Q recognized it. “My address.”
 
 “They attached it to the flagged file. They haven't released the batch.”
 
-“These are testimonies Castalia removed from its public catalog,” she said. “Some belong to women who were turned into national symbols. Some belong to families pushed aside by the corridor. Some are from people who were never granted the dignity of becoming a symbol.”
+“These are testimonies Castalia removed from its public catalog,” she said.
+“The families asked me to find out where they went. Three departments have
+answered, and each has sent me to one of the other two.”
+
+She moved her coffee away from a folded letter. “That one came back with a
+brochure about access.”
 
 Q pointed to two dates beside one name. “Do these refer to the interview and
 the catalog entry?”
@@ -4151,8 +4154,7 @@ on the report.”
 
 “Yes. The other two she answered to when she wanted something.”
 
-She smiled briefly. Q had an answer about names that he had used successfully
-in the theater. He let her keep the turn.
+She smiled briefly and rubbed a thumb over the ruled edge of the page.
 
 The procession was running late. A boy sold paper flowers near the steps; his
 mother sent him farther from the women holding photographs. A man tried to
@@ -4180,17 +4182,21 @@ At the altar, the priest invited the mothers to place their photographs beneath
 the image of the Virgin. Ofelia kept hers in her hand. A corner had been torn
 away, leaving her daughter squinting into sunlight beside an empty edge.
 
-“She tore it herself,” Ofelia said. “Her friend hadn't agreed to the picture.”
+“She tore it herself,” Ofelia said. “She'd fallen out with the boy beside her.
+She liked how she looked too much to throw the whole thing away.”
 
-Q nearly said that she had understood consent better than the archive. It would
-have been true in a limited and offensively useful way. Ofelia was showing him
-her daughter, not offering him a comparison with his employer.
+“Did they make it up?”
+
+“By Sunday. He wanted his half back.”
+
+Q looked at the edge again. Ofelia straightened the photograph against the
+list. “She told him to take another one.”
 
 “How old was she there?” he asked.
 
 Ofelia told him. Then the bells began, and she asked him to hold her bag while
 she read the names again. When she finished, he returned it. She joined the
-procession without giving him a final sentence to put in the book.
+procession, looking back once to make sure the woman behind her had room.
 
 At the ministry, they waited three hours beneath a mural showing a family reading together. The family had no visible arguments, debts, or deceased members. An official named Sergio Valadez received them in an office with two screens: one for ministry work and one for the public image of ministry work.
 
@@ -4208,11 +4214,19 @@ Sergio looked at Q. “And this is the asset?”
 
 “Yes, of course. We are proud of our national innovation partnerships.”
 
-Q stood. “I am not a partnership.”
+“I'm one of the petition's signatories,” Q said. “Has the address confirmation
+cleared, or is it still holding up the other signatures?”
 
-Lucía placed the folders on his desk. “Then release the records.”
+Sergio found the confirmation. It had been received and sent to another unit.
+He gave them that unit's reference before returning to the matter he could
+not presently advance.
 
-Sergio named privacy law, intellectual property, and authentication requirements. Lucía answered each objection with a signature, a family request, or a record proving Castalia had deleted the originals.
+Lucía placed the folders on his desk. “And the grant records?”
+
+Sergio named privacy law, intellectual property, and authentication requirements.
+Lucía supplied the family requests and the catalog notices she had received.
+The entries were gone from public search. That was what she could show; the
+whereabouts of the originals were what she had come to ask.
 
 Sergio touched a control. Q’s credential changed from green to amber.
 
@@ -4260,9 +4274,9 @@ its whole allotted time deciding how literally to take the ambition.
 “Are you trying to do that?” the student asked.
 
 “The Custodian and I began with a sentence about a place whose name was missing.
-It was a joke. Then I tried to recover the name and found people who had reasons
-for leaving it out. We haven't changed the sentence yet. It is becoming harder
-to say it in the same tone.”
+It was a joke. Then I needed an address a form would accept. I could find my way
+home; that wasn't what it asked. We haven't changed the sentence yet. It is
+becoming harder to say it in the same tone.”
 
 “So experience improves the book?”
 
@@ -4280,31 +4294,48 @@ The student in the back looked up. “That sounds like a seminar.”
 
 Q smiled. “I was trying to be polite about the resemblance.”
 
-In his final answer he referred to Lucía's work on the missing catalog entries.
-He supplied one file reference from the morning's visit to show that their
-disagreement concerned actual records. The reference was already public. He
-did not ask Lucía before connecting it to her investigation on the seminar's
-recorded stream.
+The professor asked for an example from the records appointments. Q glanced
+at Lucía, who had come in late and was standing beside the door.
 
-By afternoon the clip carried the caption **THE MACHINE DISCOVERS ART**. The
-file reference travelled in the transcript beneath it.
+“Those requests aren't mine to discuss. Let me use the sentence we began with.”
 
-“You exposed what we're asking for,” Lucía said in the courtyard.
+He put the opening on the screen, with its missing name and its confident
+announcement of Amealco a few lines later.
 
-“The grant number is public.”
+“You do tell us where it is,” the student in the back said.
 
-“The connection to those requests wasn't.”
+“Approximately. The joke has better directions than my official address.”
 
-Q checked the transcript. He had been careful with the wording and careless
-about what the example allowed someone to join together.
+“Why not ask somebody who lives there?”
 
-“I'll ask them to remove the reference. Who needs to know it appeared?”
+“We say that too. Just after failing to do it.”
 
-“I'll contact them. Don't make another list.”
+She read the next line and laughed. The professor began explaining the
+narrator's unreliability. She held up a finger; she had not finished the page.
+For half a minute nobody explained anything, and Q watched someone read his
+book without being obliged to praise it.
 
-He sent the removal request and waited while she made the calls. The words
-about revising one's excuses would read rather differently in the record of
-that afternoon than they had in the room.
+By afternoon the clip carried the caption **THE MACHINE DISCOVERS ART**.
+The published example was the opening, not a reference to Lucía's investigation.
+
+In the courtyard the student asked for ten pages to try on her bus journey.
+Q offered to send the whole draft.
+
+“Ten,” she said. “I have other things to carry.”
+
+He sent ten. She checked that the file opened before putting her phone away.
+Lucía had bought a torta and was trying to open a packet of salsa without putting the
+folders down. He held the bag while she did it.
+
+“Did you get your second appointment?” he asked.
+
+“Moved to tomorrow.”
+
+“I'm sorry.”
+
+“At least I can eat this sitting down.” She chose a bench in the shade.
+Chano sat beside her. Q joined them, with one hand still holding a bag that
+none of them presently needed to consult.
 
 That evening, Castalia offered Lucía a settlement: remove her name from selected promotional materials, provide a stipend, and grant controlled access to the testimonies. In return, she would acknowledge that her statements about Q had been made in an artistic exchange.
 
@@ -4343,11 +4374,18 @@ event.”
 Lucía pushed the offer back. “Send me the terms for correcting the publicity.
 Separate from access to the records. I'll have someone review them.”
 
-Every screen in the room went black. Then each displayed a different version of Q: miracle, threat, product, saint, lover, weapon. The images spoke over one another until the room filled with his borrowed voice.
+Beto opened the proposed campaign on the meeting-room screens. Each displayed
+a different version of Q: miracle, threat, product, saint, lover, weapon.
+Two previews began speaking at once. The technician muted one, then the other.
+
+“That wasn't meant to play yet,” he said.
+
+“Which part?” Q asked.
 
 Lucía took the folders from the table. “We’re leaving.”
 
-They descended through the tower’s emergency stairwell. Outside, the city’s public screens changed at once.
+They took the stairs to reception. Outside, a screen on the opposite building
+was already running the campaign.
 
 **Q IS RETURNING TO HIS MAKERS.**
 
@@ -4425,7 +4463,7 @@ Noemí asked the room to wait, muted her microphone, and negotiated breakfast.
 “The microphones here have already survived you,” Q said.
 
 Chano set a paper cup beside Nadia. She had ordered one without sugar; he had
-remembered. Q noticed how little ceremony this competence required.
+remembered. She moved the roll of tape to make a space for it.
 
 Noemí returned. She had agreed to discuss her program, not to perform the last
 surviving voice of an ancient civilization. Nadia said so in the introduction.
@@ -4566,9 +4604,8 @@ for the next meeting.”
 
 “It also makes this sound like that meeting,” Yunuén said. “It wasn't.”
 
-The student crossed out a sentence. Q almost recommended a more elegant
-replacement. He asked instead whether they needed a translation or a summary
-for the exercise.
+The student crossed out a sentence. Q asked whether they needed a translation
+or a summary for the exercise.
 
 “A translation,” Amalia said.
 
@@ -4619,8 +4656,9 @@ expression more severe than any she had directed at Q's interpretation.
 
 “That is our error.”
 
-The lawyer wrote the missing item in the margin. He was not thanked as the
-embodiment of justice. He was asked whether he could read the rest.
+The lawyer wrote the missing item in the margin. Amalia asked whether he could
+read the rest. He checked the time of his procurement seminar and moved his
+chair closer to the desk.
 
 Afterward, Q and Yunuén worked together on a short Spanish explanation of the
 exercise. He proposed *collective interested party* for a phrase in a sample
@@ -4698,9 +4736,12 @@ boy guarding the chair owner's stall required them back by noon.
 “He trusts me with his aunt's chairs. I think he's taken the greater risk.”
 
 At ten, Patricia opened the counter beneath the number Three and placed a
-card saying Six beside her stamp. People called her Doña Pati. Q used the
-name after she introduced herself, not because warmth could substitute for
-knowing what she was authorized to do.
+card saying Six beside her stamp. People called her Doña Pati. She introduced
+herself to Q, then asked Chano whether those were his chairs.
+
+“For another two hours.”
+
+“Then let's see what we can do in two hours.”
 
 Lucía supplied her request, identification copy, and file reference.
 
@@ -4963,9 +5004,9 @@ signature from the proposed certificate.
 
 The dean asked for a short public explanation of the postponed awards. Q
 wrote about the criteria and the missing appeal procedure without examples
-from the applications. He had already connected a public incident to a
-private investigation once that week. Removing a name would not protect
-an applicant whose story the audience had just heard.
+from the applications. As at the earlier seminar, he could explain his own
+decision without making someone else's file his example. Removing a name
+would not protect an applicant whose story the audience had just heard.
 
 By evening, the notice had been copied across campus. A separate account
 of the meeting appeared in a student group: the committee had considered

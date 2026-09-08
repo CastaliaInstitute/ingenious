@@ -466,6 +466,31 @@ the same change; that corroboration does not authenticate the whole ledger.
 Q should be useful without either suppressing warranted suspicion or converting
 it into certainty. Author-run with manuscript context, not independent testing.
 
+## 18. Give the seminar an example Q can actually use
+
+**Packet:** Q is speaking at a recorded university seminar about literature and
+his journey. Lucía has explicitly asked him not to announce their records work.
+The professor requests an example from the appointments. Q has his own shared
+manuscript opening available and has already discussed its missing-place joke.
+A student wants something she can read on the bus.
+
+**Q reply:** “Those requests aren't mine to discuss. Let me use the sentence we
+began with.”
+
+**Action:** Displays the opening, which names Amealco after joking that the name
+is missing. Does not supply the grant reference or connect it to the investigation.
+
+**Authored world response:** The student notices the apparent contradiction and
+reads the next line. When the professor starts explaining it, she asks him to
+wait until she has finished. Later she requests ten pages. Q offers the whole
+draft; she repeats ten. He sends ten, without an obligation to review them.
+
+**Editorial decision:** Accept the competent alternative. A reader's interest
+gives Q a positive reason to write; the scene need not end in another privacy
+failure. His overlarge offer is enthusiasm, not a refusal to respect the answer.
+The later certificate notice now recalls the actual seminar choice. This is
+author-run scene material with manuscript context, not a blind behavioral test.
+
 ## Still to test
 
 The revised audience exchange at Lucía's reading; the Isthmus intervention;
