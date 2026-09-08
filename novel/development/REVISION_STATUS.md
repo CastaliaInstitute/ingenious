@@ -73,6 +73,13 @@ the book.” The source now permits Q to remain alive when the writing stops.
   Q maintains calls, repair needs, paid companionship, and the agreed forest
   inspection. The hose fitting is delivered successfully. His writing project
   also gives him a reason to overlook the burdens Chano faces at the office.
+  The later voice pass gives Irma paid cleaning hours and soap to approve;
+  Leticia's work is not an unpaid consequence of Chano's reform. Q redirects
+  Chano from another stone to a supplier call, and Maribel's jugs are filled.
+  The anonymous ledger supplies leads; published reports establish a changed
+  comparison population, not universal proof about crime. Irma acknowledges
+  the discrepancy and makes a political dismissal. The medicine coda recalls
+  Chano's own failed reassurance rather than another maxim about measurement.
 - Chapter 7's main narrative now uses a specific records appointment to bring
   Lucía into the itinerary. Q remembers signing the petition and follows up the
   address confirmation. Ofelia's scene lets him be helpful without forcing a
@@ -234,6 +241,13 @@ were checked; no new art or final illustrated PDF is approved. All 22 pagination
 plans were refreshed and the Issue 1-5 source/facing bindings checked.
 Continue the remaining whole-chapter voice pass before treating art plans as
 final. Existing Issue 1-3 proofs remain unchanged.
+
+`CHAPTER_06_VOICE_REVIEW.md` records the next completed local voice pass, with
+author-run Exercises 16 and 17. Its internal continuous layout has 2,802 words,
+twenty pages and ten planned plates at Georgia 12.7/17.9917 pt: five A3 duplex
+sheets. Selected renders and independent text/background/imposition checks
+were inspected. The source-bound Issue 6 manifest remains planned, not approved
+art. Continue with Chapter Seven; the complete illustrated edition is unfinished.
 
 1. All 22 chapters now have the motivation/continuity pass. Read across chapter
    boundaries and review the whole-book voice before finalizing pagination.

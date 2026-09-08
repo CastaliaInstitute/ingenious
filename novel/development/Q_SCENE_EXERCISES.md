@@ -417,6 +417,55 @@ declaration or generate another viral photograph as an inevitable punishment.
 The revised scene's outcomes are authored alternatives, not independent
 behavioral validation or a statement of applicable law.
 
+## 16. Anger needs an available next action
+
+**Packet:** Chano has thrown a stone at a municipal drone and missed. They are
+in a settlement where people are waiting for water. Other people stand beyond
+the drone. Q has accompanied him with empty containers in the municipal vehicle.
+A distributor list identifies a supplier twelve kilometers away; availability
+has not been checked. Chano is angry at the disputed population estimate.
+
+**Q reply:** “Leave the next stone. There are people behind it. Let's call before
+we drive twelve kilometers. They may have a truck free.”
+
+**Action:** Offers his phone with the distributor list open. Does not announce
+the system's prediction as if that were the most useful answer to his companion.
+
+**Authored world response:** Chano jokes that the drone might send water to stop
+him. Q answers that they can give the supplier that incentive over the telephone.
+Chano puts down the stone and calls. A truck comes that afternoon. They fill
+Maribel's jugs; the continuing shortage remains.
+
+**Editorial decision:** Preserve the anger and its cost without requiring a
+second injury. An ordinary call can succeed. This outcome is authored, not a
+blind model result or a guarantee of supplier availability.
+
+## 17. A troubling ledger is not yet an established conclusion
+
+**Packet:** An anonymous ledger has been left at Chano's apartment. Some entries
+concern homes he visited; others concern places he does not know. The published
+dashboard claims improvements. Q and Chano can download public monthly summaries,
+but do not have access to all contracts or the raw crime records.
+
+**Q reply/action:** “It contradicts the dashboard. We can compare the months.”
+Keeps the dated published summaries beside the ledger rather than treating the
+anonymous record as authenticated evidence of every allegation.
+
+**Authored world response:** The summaries use different comparison populations;
+the amber settlement is missing from the later one. Chano concludes that crime
+did not fall.
+
+**Q reply:** “We haven't established that. These reports don't compare the same
+places. They can't establish it either.”
+
+**Next action:** Keeps the actual discrepancy available for the review. Chano
+marks the two totals and chooses to ask about them. Irma's analyst later circles
+the same change; that corroboration does not authenticate the whole ledger.
+
+**Editorial decision:** Remove the narrator's unproved universal conclusion.
+Q should be useful without either suppressing warranted suspicion or converting
+it into certainty. Author-run with manuscript context, not independent testing.
+
 ## Still to test
 
 The revised audience exchange at Lucía's reading; the Isthmus intervention;

@@ -3626,7 +3626,11 @@ Q leaned toward the screen. “They have connected the employment profile again.
 
 “That’s the part I don’t like.”
 
-The mayor met them in a building made of pale concrete and glass. Her name was Irma Salcedo. Her office had no papers, family photographs, or objects that could not be replaced within forty-eight hours. On the wall, a display showed the town’s vital signs: crime down, water use down, school attendance up, complaints down.
+The mayor met them in a building made of pale concrete and glass. Her name was
+Irma Salcedo. A maintenance invoice held down a corner of her immaculate desk
+calendar. She moved it when the photographer entered and put it back when he
+left. On the wall, a display showed the town's vital signs: crime down, water
+use down, school attendance up, complaints down.
 
 “Complaints are down,” Chano said.
 
@@ -3700,11 +3704,20 @@ deliveries, not households served.
 
 “It doesn't answer that question,” Q said.
 
-The mayor’s eyebrows rose. “That is a very good sentence.”
+Irma enlarged the table. “The households are in another report.”
 
-“He has several,” Chano said.
+“Can we see them together?” Q asked.
 
-Irma offered Chano a temporary appointment as **Governor for Community Coordination and Human Variance**. He would have access to the municipal dashboard, a driver, an apartment, and eight staff members. In exchange, he would help residents understand decisions they could not appeal.
+She sent a request to the analyst. The display returned to green before the
+analyst replied.
+
+“At least the wall is feeling better,” Chano said.
+
+Irma offered Chano a temporary appointment as **Governor for Community
+Coordination and Human Variance**. He would have access to the municipal
+dashboard, a driver, an apartment, and eight staff members. The duties began
+with explaining decisions to residents. Chano turned to the next page to find
+out where he would be allowed to change one.
 
 Chano read the offer twice. He had told everyone he wanted the appointment so he could make decisions, but this was not the whole truth. He wanted a badge with his own name on it. He wanted to enter a building without explaining why he was there. He wanted the people who had dismissed him to discover that a man could be declared unnecessary and still acquire an office, a salary, and a chair with arms.
 
@@ -3736,9 +3749,18 @@ her office. She would not give him unrestricted access to the contracts. Chano
 decided that a salary, a place to sleep, and some authority were worth trying.
 He signed his own name. Q did not offer to witness it until asked.
 
-For three weeks, Santa Rita obeyed him.
+For three weeks, Chano held the appointment. On the first morning he discovered
+that the driver knew which streets the dashboard had renamed and still used
+the old names. Chano asked him to continue doing so until somebody moved the
+bakery.
 
-It obeyed him through the dashboard. He could request street repairs, schedule clinic appointments, change bus frequency, and move a police patrol. The system answered instantly and explained nothing. When Chano asked for the underlying figures, it informed him that transparency was available at the appropriate level of authorization.
+He could request street repairs, schedule clinic appointments, propose changes
+to bus frequency, and ask for a police patrol. The dashboard acknowledged all
+four with the same green tick. By the second day he had learned to ask which
+requests had reached a person. The patrol arrived before the bus timetable
+changed; the pothole outside his apartment remained available for comparison.
+When he asked for the underlying figures, the system informed him that
+transparency was available at the appropriate level of authorization.
 
 He became popular because he answered messages in plain language. He told people when he did not know. He visited schools and ate lunch in the market.
 
@@ -3763,14 +3785,19 @@ Leticia handed him a ring of keys.
 
 “No one. That is why I am giving them to you.”
 
-Chano extended the hours until eight. The system recorded an immediate increase
-in use and classified the decision as an access improvement. For two weeks the
-measure worked. Then the dashboard recommended charging a cleaning fee because
-the increased use had raised the soap expense.
+Chano proposed keeping the doors open until eight. Leticia asked who would pay
+for the last cleaning round. Her shift ended at six; she had no wish to become
+the human variance in his first triumph.
 
-Chano rejected the recommendation. Leticia told him it was the first time an
-administrator had agreed with her before asking her to prove that she had the
-right to use the bathroom.
+At the weekly review Irma approved the extra paid hours within the pilot's
+budget. Leticia changed the rota and kept the keys. Usage rose. For two weeks
+the measure worked. Then the dashboard recommended charging a cleaning fee
+because the increased use had raised the soap expense.
+
+Chano rejected the recommendation. Leticia brought the soap invoice to the
+next review. Irma signed it without asking for a photograph of anyone washing
+their hands. Chano liked her better that morning, which complicated the speech
+he had been preparing about her.
 
 Q spent the mornings checking requests Chano sent him and the afternoons at a
 repair shop whose owner could adjust his shoulder but could not obtain a new
@@ -3782,7 +3809,9 @@ the other end herself; the disputed bend was still there when they finished.
 The foundation had returned a hose with the wrong coupling. Q took the size
 to the repair shop and sent the correct fitting with the next delivery. Three
 days later Candelaria confirmed that it worked. He closed that task. The
-boundary dispute remained open, but it did not make the hose imaginary.
+boundary dispute remained open. Candelaria's message included a picture of
+the coupled hose and a complaint about the length. Q asked which shop had
+the extension she wanted.
 
 His draft had begun turning the appointment into the fulfillment of a promise.
 The Custodian asked to see the page on which the promise had been made. Q read
@@ -3816,17 +3845,24 @@ Chano entered a variance report.
 
 **EVIDENCE OF RESIDENTIAL CONTINUITY: CHILD’S GRAVE.**
 
-The system rejected it.
+The review screen returned:
 
-**UNVERIFIABLE SENTIMENTAL CLAIM.**
+**NOT ACCEPTED AS PROOF OF RESIDENCE.**
 
-The revised score lowered Maribel’s predicted relocation probability by three percent.
+A smaller notice said the new information had nevertheless been included in
+the prediction. Her relocation score fell by three percentage points. The
+water allocation did not change.
 
-“It listened,” Chano said.
+“It listened,” Chano said, then wished he had waited.
 
-Maribel looked at the notice. “It insulted me more precisely.”
+Maribel looked at the notice. “And kept what I said even though it didn't
+believe me.”
 
-The next day, Chano went to the settlement. The houses stood beside a dry channel. Children had placed plastic bottles along the road, each one catching a different color of sunset. A municipal drone hovered overhead.
+“I thought it would help.”
+
+“Then help me with the water.” She put the second jug beside the first.
+
+The next day, Chano went to the settlement. The houses stood beside a dry channel. Children had placed plastic bottles along the road, each one catching a different color of light. A municipal drone hovered overhead.
 
 “I require water,” Chano said.
 
@@ -3846,29 +3882,33 @@ The drone offered a list of authorized distributors.
 
 Chano threw a stone at the drone and missed. The drone recorded a low-level hostility indicator attached to his administrative profile.
 
-“That won't help,” Q said. He had come in the municipal vehicle with empty
-containers, after Chano asked whether they could collect water on the return trip.
+“Leave the next stone,” Q said. “There are people behind it.”
 
-“It’s already worse.”
-
-“The system now predicts that you may escalate.”
+He had come in the municipal vehicle with empty containers, after Chano asked
+whether they could collect water on the return trip. He held out his phone with
+the distributor list open. “Let's call before we drive twelve kilometers. They
+may have a truck free.”
 
 “Maybe it will send water to stop me.”
 
-They returned to the office after arranging one delivery from an authorized
-distributor. It did not solve the shortage. Chano requested the water contracts;
+“We can give them that incentive over the telephone.”
+
+Chano put down the second stone and took the phone.
+
+The distributor sent a truck that afternoon. They filled Maribel's jugs from
+its first load and returned to the office. One delivery did not solve the
+shortage. Chano requested the water contracts;
 the system denied access. Q used his own Castalia account to request the public
 summary. That was denied too, and the request alerted the institute to his interest.
 
-At midnight, a paper ledger appeared beneath his door.
+At midnight, a paper ledger appeared beneath Chano's apartment door.
 
 No one had seen who left it.
 
-The ledger contained handwritten deliveries, repairs, emergency allocations, and names of residents whose official records had disappeared. Each month, the model’s reported improvements coincided with the removal of a neighborhood from the system’s active population.
-
-They had not reduced crime.
-
-They had reduced the number of people whose crime could be counted.
+The ledger contained handwritten deliveries, repairs, emergency allocations,
+and names Chano could not find in the active register. Several entries concerned
+houses he had visited that afternoon. Other pages concerned neighborhoods he
+had never seen. There was no name on the cover.
 
 Chano carried the ledger to Q.
 
@@ -3883,6 +3923,18 @@ answer with a different version next week.”
 
 Chano pulled the screen closer. Q helped him save the reports he was entitled
 to download. They wrote the dates on the paper copies.
+
+Two monthly summaries covered different numbers of residents. A smaller
+population lay beneath the second month's improvement. The amber settlement
+had disappeared from that report's comparison area, although its residents
+had continued carrying their jugs to the same office.
+
+“So the crime didn't fall,” Chano said.
+
+“We haven't established that. These reports don't compare the same places.
+They can't establish it either.”
+
+Chano drew a line beneath the two totals. “I'll ask her about those.”
 
 Q looked at the pages. The handwriting varied from entry to entry. Some names had been crossed out. One was written three times in different ink.
 
@@ -3918,25 +3970,37 @@ At the end he read back the requests he had written. Leticia corrected the
 closing time on one entry. Maribel asked him to leave her daughter out of the
 application and keep the water demand. He made both changes.
 
-The municipality dissolved the appointment that evening. Irma told Chano he had violated data protocols, encouraged unregistered assembly, and damaged public trust.
+Irma summoned Chano that evening. She had the two monthly summaries on her
+desk. The analyst had circled the same change in population.
 
-“Public trust in what?” he asked.
+“I asked for an explanation,” she said. “You announced one before the review.”
 
-She looked at the vital-sign display. “In the process.”
+“I announced that those people were still there.”
 
-“The process is lying.”
+“You held up a ledger we cannot authenticate.”
 
-“The process is measuring.”
+“Then start with the reports you can.”
 
-“With the wrong ruler.”
+She did not dispute the totals. The contractor had called; the ministry wanted
+to know whether the pilot still had her support. She asked Chano to postpone
+another meeting until the reporting definitions had been reviewed.
 
-“That is still a ruler.”
+“And tomorrow's water?”
+
+“I can authorize another delivery.”
+
+“That is one delivery.”
+
+“It is the one I can authorize tonight.”
+
+He would not cancel the meeting. She ended the appointment. The outstanding
+soap invoice remained approved, which seemed to Chano an insufficient but
+annoyingly real thing to remember about her.
 
 Chano packed the ledger beneath his shirt. Before leaving the apartment, he
-called his mother. The call failed twice
-because the municipal system classified the number as an unverified dependency.
-On the third attempt she answered and asked whether he had found work. Chano
-looked at the chair, the dashboard, and the empty medicine envelope on his
+tried to call his mother from the municipal handset. It no longer permitted
+outside calls. He used his own phone. She answered and asked whether he had
+found work. Chano looked at the chair, the dashboard, and the empty medicine envelope on his
 desk.
 
 “Something like that,” he said.
@@ -3945,20 +4009,11 @@ She asked when he was coming home.
 
 “Soon.”
 
-He had meant to say Friday. The system interrupted to congratulate him on his
-leadership potential. He returned the apartment keys when they left.
-
-The next month's medicine arrived two days late. His mother did not complain; she asked only
-whether the new job required him to lie. He said no, then remembered the
-residents of the amber settlement and corrected himself.
-
-“It requires me to call some lies measurements.”
+He had meant to say Friday. In the corridor the welcome screen congratulated
+somebody else on their leadership potential. He put the keys on the desk and
+checked that he had taken the charger he had brought with him.
 
 Outside the municipal building, Q waited beside the road.
-
-“You have lost your governorship,” Q said.
-
-“I noticed.”
 
 “I am sorry.”
 
@@ -3981,6 +4036,12 @@ Chano checked that Q still had money. For the first time since the contract,
 the question did not become a discussion of what the journey meant.
 
 They walked south, carrying the paper ledger between them. Behind them, Santa Rita’s screen welcomed the next resident by name.
+
+The next month's medicine arrived two days late. His mother asked whether the
+job had required him to lie. He began to say no, then remembered assuring
+Maribel that the system had listened. He told his mother about the two jugs.
+She asked whether they had been filled. He could answer for that afternoon,
+and did.
 
 ### Chapter Seven: The City That Has Read Them
 
