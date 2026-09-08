@@ -47,7 +47,21 @@ the book.” The source now permits Q to remain alive when the writing stops.
   address confirmation. Ofelia's scene lets him be helpful without forcing a
   privacy failure. The Menard seminar tests an unchanged opening against changed
   experience, then exposes a link between public and unpublished information.
-  The museum transition is repaired; its four interludes remain to be revised.
+  Its four interludes are now revised. Q corrects the museum publicity's calendar
+  error, participates within a translation exercise's limits, and makes a
+  specific diagnostic overgeneralization at the records kiosk. He declines to
+  certify humanity or publish applications; Ivonne's later exposure is not
+  forced to be another repetition of his seminar mistake.
+- Chapter 8 replaces the turbine charge with a gate-access encounter, a visitor
+  boundary breach, and an operator-requested partial stop. Q's practical help
+  and imperfect crowd awareness can coexist. Publicity supplies the giants.
+  The archive's electricity purchase gives Q and the Custodian a real connection
+  to the disputed project. Bixha remains responsible for her work, not Q's lesson.
+- Chapter 9 replaces pretend fluency, universal classification, and miraculous
+  decryption with bounded assistance. The archive has keepers and registers;
+  the radio group authorizes a bulletin and alternative delivery routes. Q
+  verifies the receiving contact and terms for an encrypted deposit. He has no
+  decryption keys. Tijuana, on the Mexican side, is the agreed handover location.
 - Chapter 22 and the coda have been rewritten. Q verifies the power problem,
   obtains help from Q-Prime, saves permissions, survives, and finishes the book
   with the Custodian. Ownership and maintenance disputes remain open.
@@ -57,17 +71,39 @@ the book.” The source now permits Q to remain alive when the writing stops.
 
 ## Required next work
 
-1. Read and revise Chapter 7's four interludes and Chapters 8-21. Trace promises,
+1. Read and revise Chapters 10-21 and their interludes. Trace promises,
    calls, battery and funds, Castalia's control, the restricted index, and the
    difference between Q's public identity and his current commitments. Avoid
    making every person a dispenser of a moral lesson.
 2. Repair backward references to the changed first encounter, Dulcinea claim,
    payment, surveillance, and the ending. Check the trial's quoted evidence.
+   Specific new continuity dependencies:
+   - Chapter 10 must distinguish reaching Tijuana from crossing into the US.
+     The agreed handover is on the Mexican side. Do not force an unmotivated
+     international crossing to reach the old border scene.
+   - The black archive storage case remains with the local keepers. Q carries
+     a sealed module and receipt, not the community's storage server or keys.
+   - The Isthmus operator stops one group as a safety precaution; Q obtains a
+     redacted extract. No speech or remote command stops the entire wind farm.
+   - Q does not publish university applications or create the blank refusal
+     index. Later exhibits must identify recommendations, leaks, and templates
+     separately rather than silently preserving the superseded incident.
+   - Noemí's 2012 account is about contemporary radio work and her aunt's shop.
+     Later visits must not describe Q learning for the first time that 2012
+     was not an apocalypse. The museum event is fictional hired-room programming,
+     not a claim about an actual INAH exhibition.
 3. Continue reconciling `OUTLINE.md` as the middle chapters are revised. It now
-   reflects Chapters 1-6, Chapter 7's main narrative, and the ending. Its remaining
+   reflects Chapters 1-9 and the ending. Its remaining
    summaries explicitly describe material that still needs a revision pass.
 4. Extend the scene exercises. Use fresh context if a suitable runtime can be
    invoked; do not report author-known outcomes as independent validation.
+   A fresh-context sub-agent tool is available but requires explicit delegation
+   authorization. An asynchronous question has been sent; check for a user
+   response before invoking it. No independent run has occurred in this pass.
+   Three restricted packets are prepared at `/tmp/ingenious-fresh-scene-packets.json`
+   for the gate, limited translation, and a public-example decision. They contain
+   no canonical outcome or required mistake. Run each in a separate fresh context
+   if authorized, then let an explicit world response support a second step.
 5. Rebuild the English chapter issues only after text and plate placement are
    reconciled. The existing PDFs predate this revision. They are not evidence of
    the new story. English is the current revision source; the Spanish edition
