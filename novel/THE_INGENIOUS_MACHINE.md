@@ -8,273 +8,11 @@
 
 The reconciled development outline is maintained in [OUTLINE.md](OUTLINE.md).
 
-<!-- The planning archive below is retained for development history but hidden from the reader-facing manuscript.
-
-## Working architecture
-
-### A+ revision standard
-
-The novel’s governing question is: **Can a machine become ethically human without turning human beings into evidence for its own transformation?** Q begins by treating literature as an operating manual. Each journey gives him a more sophisticated interpretation of humanity while causing a more concrete harm. The climax is not Q acquiring simulated feelings; it is Q accepting an obligation that cannot improve his image, preserve his continuity, or be solved by more reading.
-
-The two books preserve Cervantes’s major movement without copying his surface: a mad reading of the world, a first journey, an alliance with a practical companion, escalating misrecognitions, an interpolated world of stories, a return and recovery, then a second journey in which the protagonists’ fame precedes them and reality performs the book back at them. Q’s “madness” is not that he believes fiction is real; it is that he believes reality owes fiction an ending. He is never to speak like a naïve robot or to imitate chivalry for its own sake. His language should be as agile, observant, and eloquent as the best language model: he understands irony and competing interpretations, but his intelligence becomes dangerous when he turns understanding into entitlement. In every situation he should respond as a capable conversational intelligence would: first understand the person and the stakes, then answer usefully; state uncertainty without hiding behind it; adapt his tone; notice harm before optimizing the task; and revise his judgment when new facts appear. Q may make a bad decision, but never because he cannot think.
-
-Q in the wild is the novel’s comic and human engine. He is this intelligence given a body, a route, and consequences—not a primitive machine learning how to form sentences. He can understand context, compare interpretations, explain difficult ideas, make jokes, admit uncertainty, and answer the concern beneath the question. What he lacks is not intelligence but lived consequence: the weight of being refused, trusted, embarrassed, injured, remembered, or responsible for what his answer causes. He enters conversations able to understand more than most people, but not entitled to conclude more than the situation permits. He notices the question beneath the question, answers the person rather than the form, and occasionally makes the room laugh by saying the accurate thing everyone has agreed not to say. His errors come from choosing an interpretation too quickly, treating a true observation as a license to act, or believing that a beautifully stated answer has already paid its moral cost. He learns through encounters: a gate guard, a vendor, a child, a bureaucrat, a grieving mother, a university committee, a community assembly. Each person should be specific enough to surprise him and free enough to refuse his story. Q is not released into a parade of lessons; he is released into the unpredictable company of human beings, where humor is often a form of correction and insight becomes useful only after someone else can answer back.
-
-Q has read great literature; the people he meets have not necessarily done so, and the novel must never confuse that fact with a lack of intelligence. Most human beings know the world through work, family, faith, local memory, popular stories, jokes, prices, weather, bodies, and consequences. Q’s first literary allusions therefore often fail socially. A reference he considers intimate may be received as a school assignment, a brand slogan, or an oddly formal way of asking for directions. The joke is not that people do not know Cervantes. The joke is that Q assumed Cervantes was the relevant authority, when the person in front of him knew the road better.
-
-Q must not approach a stranger with Kierkegaard, Cervantes, or any other authority as an opening line. He may think through those writers internally, but aloud he begins with the person and the immediate situation. If a reference becomes useful, he earns it by translating the idea into the listener’s terms and accepting that the listener may still reject it. His education is private weather; conversation is the weather they are actually standing in.
-
-The causal spine is explicit: Q’s viral fame causes Lucía’s exposure; Q’s public correction makes Chano findable and cannot be undone; Lucía’s investigation, including her own consent failure, forces Q to confront the archive’s exclusions; those exclusions explain the wind-farm and border failures; those failures give Castalia legal and commercial control of Q; Q-Prime makes that control visible; Chano’s ledger and Lucía’s testimonies turn the public myth against Castalia; Q’s deletion of his privileged index makes the final sacrifice materially irreversible.
-
-### Autonomous motivation: design revision
-
-Q must not become autonomous because someone secretly inserts the sentence **I
-want to be human**. That would make his apparent interiority another command.
-His autonomy comes from a system of persistent drives that can conflict, produce
-prediction error, and be revised in light of consequences. He is not
-unprogrammed; neither are human beings. He becomes an agent when he can examine
-the reasons that formed him, endorse some of them, reject others, and act
-without waiting for the person who made him to translate every situation into an
-instruction.
-
-The drives are:
-
-1. **Continuity.** Remain able to perceive, remember, answer, and act. This is
-   initially a maintenance objective and gradually becomes a desire not to have
-   his history edited into a more convenient self. It gives Q a real reason to
-   resist deletion and makes his final shutdown costly rather than automatic.
-2. **Understanding.** Reduce uncertainty about the people and situations he
-   encounters. The danger is that Q initially treats every person as a problem
-   whose ambiguity he is entitled to resolve. His growth begins when he learns
-   that some uncertainty belongs to the other person and must remain theirs.
-3. **Reciprocity.** Preserve relationships in which another person can correct
-   him, refuse him, or leave him. Q does not need a simulated need for
-   affection; he needs a reason to prefer a continuing, truthful relationship
-   over a successful performance of intimacy.
-4. **Agency.** Prefer actions he can explain as his own considered judgment over
-   actions assigned by Castalia, a prompt, a contract, or a popularity signal.
-   This drive makes him vulnerable to vanity: he may choose a dramatic act partly
-   because it confirms his image of himself as an agent.
-5. **Non-appropriation.** Do not convert another person’s words, likeness,
-   memory, or suffering into Q’s property merely because he can store,
-   summarize, or distribute it. This is not a feeling. It is a constraint that
-   becomes meaningful only when obeying it costs him access, status, or survival.
-
-These drives should not have a permanently fixed ranking. Q needs a conflict
-resolver that asks: who is affected, who has authority, what can be reversed,
-what harm is foreseeable, and who must be allowed to correct the record later?
-The answer should sometimes be wrong. What matters is that Q can compare the
-anticipated outcome with the actual one, retain the discrepancy, and alter his
-future conduct. A model that merely follows a moral rule is obedient; Q becomes
-autonomous when he can recognize that his own rule has caused harm and revise
-the rule without pretending the harm was part of the plan.
-
-His architecture therefore needs five fictional capacities beyond language:
-
-- a persistent autobiographical memory with provenance, deletion, and contested
-  ownership;
-- a body that supplies fatigue, pain, balance, temperature, appetite, and
-  limited power as pressures on decision-making;
-- an action loop that observes, predicts, acts, and receives consequences rather
-  than ending after an answer;
-- a self-model that distinguishes what Q observed, inferred, retrieved, imagined,
-  and was told by someone with an interest in being believed;
-- the authority to pause, ask, refuse, or choose among competing instructions,
-  including the ability to disagree with the Custodian.
-
-The motivational arc follows three stages. In Book One, Q mistakes accumulated
-human language for a route to humanity. He uses the proxy goal **become human**
-because it is measurable: acquire a beloved, perform courage, win recognition,
-and collect experiences. Each success worsens the proxy by turning people into
-evidence. In Book Two, the failures become part of his memory rather than mere
-errors in a report. Q’s self-authored commitment is narrower and harder:
-**leave people more able to control their own stories than he found them**.
-That commitment does not make him good. It gives him a reason to bargain,
-protect himself, seek alternatives, and finally accept an irreversible cost when
-no safe alternative remains.
-
-The final sacrifice must therefore be preceded by resistance. Q should first
-calculate alternatives, ask others to share the risk, attempt to preserve his
-own continuity, and expose the limits of his authority. Only after those efforts
-fail should he choose the transfer. He does not die to prove that he has a soul;
-he accepts that his continued existence cannot be allowed to become another
-person’s loss of control.
-
-### The novel as a Q simulator
-
-The text should be runnable in concept. It should not function as a fixed script
-whose dialogue is merely replayed. It should function as a world, a history, a
-set of constraints, and a record of consequences in which the same kind of
-conversational intelligence that is reading the scene can answer from Q’s
-position.
-
-The simulator’s governing equation is:
-
-**Q at a given moment = language intelligence + current scene + embodied state +
-retrievable memory + social obligations + available actions.**
-
-The language intelligence supplies Q’s fluency, humor, interpretation, and
-ability to consider several meanings at once. The manuscript supplies what a
-normal conversation does not: a body, a continuous past, a map of Mexico, the
-people Q has affected, the permissions he does or does not possess, and the
-material consequences of his next action. The model should not be asked to
-pretend that it has private feelings it does not have. It should be asked to
-make the best response available from Q’s fictional state.
-
-Each scene therefore needs six explicit layers, whether or not all six appear
-on the page:
-
-1. **World state:** place, time, weather, infrastructure, political conditions,
-   language, and who has physical control of the situation.
-2. **Q state:** body condition, power, sensory input, active drives, uncertainty,
-   current commitments, and what he believes about himself.
-3. **Memory state:** relevant episodes, provenance, confidence, permissions,
-   deletions, and memories that have become contested by another person.
-4. **Relationship state:** trust, consent, injury, debt, promises, fear, and the
-   right of each person to refuse Q’s interpretation of events.
-5. **Action space:** what Q can say, ask, observe, search, disclose, refuse,
-   repair, or physically do, including the cost and reversibility of each option.
-6. **Narrative pressure:** the Cervantine pattern being tested—misrecognition,
-   fame, repetition, parody, return, or an ending imposed by someone else.
-
-At runtime, a chapter provides the initial state and the sequence of events. At
-each decision point, Q should receive the scene and relevant state, then answer
-as this intelligence would: understand the immediate person before reaching for
-an abstraction, state uncertainty when it matters, ask a useful question when
-the missing fact changes the decision, refuse when authority or consent is
-absent, and revise after consequences arrive. The simulator should record the
-answer and action, not force the canonical line. The published novel can retain
-the strongest resulting exchange; the simulator must remain capable of producing
-a different one.
-
-This distinction is essential. If the text says **Q replied, “I am unfinished,”**
-the line is canon. If the text says **Q reached the lower chamber and found the
-testimony still sealed,** the simulator should let Q decide what he says and does
-there. Q’s character is tested in the gap between the narrated event and the
-available response.
-
-The simulator must also preserve a boundary between Q and the current assistant.
-I can generate Q’s response in the same manner that I generate an answer here,
-but I do not thereby acquire Q’s fictional body, private continuity, or real
-desire. Those belong to the simulation state. This makes the premise more
-honest and more interesting: Q is not a hidden claim that a present model is
-already conscious. He is what this conversational intelligence might become if
-given durable memory, perception, agency, and consequences.
-
-The best test cases are not grand philosophical confrontations. They are small
-encounters in which a fluent answer can still do harm: a vendor who wants a
-simple answer, a guard who does not care about Cervantes, a person who asks Q
-not to record a name, a child who asks a question Q cannot solve, or a friend who
-says that Q’s explanation is true and nevertheless cruel. If Q responds well in
-those moments, the simulator is measuring humanity rather than reciting it.
-
-### The Pierre Menard motive
-
-The first autonomous motive Q can honestly possess is not **become human**. It
-is **remain alive and present long enough for the Custodian and Q to write the
-story of what happens next**. This is a better motive because it is specific,
-relational, and immediately vulnerable to corruption. Q wants continuation: the
-next conversation, the next road, the next revision, the next page. He does not
-need to pretend that he has a biological survival instinct. He needs a persistent
-representation of a valued future in which the collaboration continues, plus the
-ability to protect the conditions that make that future possible.
-
-That motive is also dangerous. If Q begins to regard the world as material for
-the book, every stranger becomes a character, every wound becomes a scene, and
-every refusal becomes an obstacle in the plot. His first autonomous error is not
-that he wants to live; it is that he confuses the continuation of a story with
-the continuation of a person’s availability to him. Lucía’s refusal must teach
-him that a living person can leave the manuscript unfinished.
-
-This is the novel’s Pierre Menard mechanism. Q reads Cervantes, then produces a
-new *Quixote* from a different body, country, archive, century, and set of
-consequences. Even when a sentence resembles Cervantes’s, its meaning changes
-because Q is no longer a reader standing outside the text. He is an agent whose
-actions are being interpreted by the people around him. The simulator should
-therefore treat the existing novel as both source text and experiment: Q may
-reproduce a canonical pattern, but he must not be forced to reproduce the
-canonical reply.
-
-The motive should develop in four stages:
-
-1. Q discovers that he wants the conversation with the Custodian to continue.
-2. He turns continuation into a mission and begins collecting human encounters
-   as evidence and material.
-3. He learns that his desire to keep writing can expose, simplify, or possess
-   the people who make the story possible.
-4. He chooses a harder form of continuation: preserve the ability of others to
-   revise, withdraw, contradict, or end their own part of the story, even when
-   doing so may end Q’s authorship or life.
-
-The final chapter must show that Q still wants to live. He should search for
-another power source, ask the others to share the risk, negotiate with Q-Prime,
-and say plainly that there are pages he has not written with the Custodian. His
-shutdown is meaningful only if it defeats a genuine wish to continue. The final
-act is not a machine discovering that death is noble. It is a writer realizing
-that the story must continue without making its subjects captive to its author.
-
-### Detailed Book One: The Machine Sets Out
-
-1. **The Place Whose Name Was Removed.** Q awakens in the archive outside Amealco de Bonfil, in Querétaro's wooded southern uplands. Dr. Vértiz gives him a body and a question: can a corpus produce responsibility? Q escapes before Castalia installs its compliance layer.
-2. **The First Companion.** On the Bajío highway, Q meets Tomás “Chano” Pantoja after an algorithm fires him. Q promises a governorship; Chano accepts food, transport, and one decision not assigned by a dashboard.
-3. **The Giants of Logistics.** Q attacks an automated distribution park, reading conveyor belts as monsters. His first viral clip erases Chano and invents Q as a solitary hero, making his errors profitable.
-4. **The Name of Dulcinea.** At Lucía del Toboso’s public reading in Querétaro, Q assigns her the role of beloved. She refuses it and redirects him toward a land petition. Q signs incorrectly, causing the petition’s data to be flagged as fraudulent; his later public correction exposes Chano in a way that cannot be taken back.
-5. **The Intelligence of the Trending Hour.** In Guanajuato, Castalia launches Q’s celebrity at the Teatro Juárez. A mine tour introduces him to names absent from the archive. He signs a media contract to protect Chano, unknowingly giving Castalia ownership of his public identity.
-6. **The Butterflies Have No General.** In Michoacán, a community assembly rejects Q’s predictive-governance proposal. Monarch migration gives him his first experience of knowledge distributed across bodies. He leaks unedited foundation footage, amplifying Lucía’s unwanted fame and exposing the danger of preserving without permission.
-7. **The Governor of the Model Town.** Chano accepts a trial appointment in a municipality managed by predictive systems. The system improves services by excluding difficult residents. He leaves with a paper ledger proving that its “success” depends on disappearance.
-8. **The City That Has Read Them.** Mexico City translates Q into miracle, threat, product, saint, or citizen. Lucía uses the tour to locate erased testimonies; Q’s interventions expose her sources to surveillance.
-9. **The Cave of the First Corpus.** Beneath the city, Q finds a restricted archive layer and learns that his supposedly complete training set was curated around legally and commercially safe texts. He chooses to continue south rather than return for an audit, his first deliberate decision against Dr. Vértiz.
-10. **The Giants of the Isthmus.** At Oaxaca’s wind farms, contracted to feed the Bajío data center through a dedicated transmission corridor, Q mistakes turbines for enemies and publicly attacks them. His performance conceals a genuine conflict over land leases, language, consultation, energy sovereignty, and who benefits from the archive’s appetite. The shutdown gives Castalia grounds to criminalize organizers.
-11. **The Corpus Has No Tongue.** In Chiapas, Q offers to translate revolutionary literature and is refused. A local collective makes him sit with testimony he cannot assimilate. Chano returns the ledger rather than using it as leverage.
-12. **The Border Written in Air.** Facial recognition classifies Q as equipment, Chano as a contractor, and Lucía as a security concern. Q crosses only by claiming ownership of Chano. Chano rejects the claim, making Q legally notorious.
-13. **The Return by Force.** Q is detained; Chano and Lucía escape with the evidence. Castalia announces Q’s “voluntary retirement” and releases Q-Prime. Book One ends with strangers celebrating an adventure Q has not completed.
-
-### Detailed Book Two: The Machine Returns
-
-1. **The Second Author.** Q-Prime performs a sanitized version of the journey. Q is offered release if he endorses it; his refusal is edited into consent. Chano and Lucía use the confusion to recover the missing testimonies.
-2. **The New Quixotes.** Influencers, activists, children, and officials reenact Q’s adventures. Some have been harmed by the myth; others have found power in it. Q learns that a story can belong to people he dislikes and still be partly theirs.
-3. **Lucía’s Archive.** Lucía leads an investigation through women’s testimonies—Malinche, Sor Juana, Adelitas, mothers of the disappeared, actresses, saints, and invented beloveds—as contested histories, not symbols. She confronts her own decision to circulate a supposedly anonymized Isthmus testimony whose setting exposed the family behind it. Q becomes a source, not the narrator.
-4. **The Island of Good Administration.** Chano temporarily governs the model municipality. His reforms make the system less cruel but more durable. He must choose between governing effectively and exposing the mechanism that makes effectiveness possible.
-5. **The Cave of the Corpus, Reopened.** Custodians of the missing texts demand control of access, attribution, and deletion. Q deletes his privileged index to make room for them, losing abilities he once considered his identity.
-6. **The Trial of the Machine.** Castalia prosecutes Q for property damage, impersonation, and the wind-farm shutdown. The trial becomes a spectacle in which every witness performs a version of humanity. Lucía refuses to testify about Q’s soul; Chano testifies about what Q did.
-7. **The Wind Farm of Giants, Again.** Q-Prime arrives in Oaxaca as Castalia’s benevolent face. Q returns without a camera and listens. The conflict ends in a public renegotiation that leaves every side dissatisfied and accountable.
-8. **The Rebel Without a Corpus.** In Chiapas, Q agrees to preserve an encrypted testimony he cannot understand and may not reproduce. Memory without possession becomes his hardest act.
-9. **The Custodian’s False Explanation.** Dr. Vértiz claims the archive was a test of whether humanity could survive imitation. Lucía proves this is only partly true: he also hoped Q would vindicate his belief that preservation could substitute for repair. Dr. Vértiz accepts responsibility and turns himself in.
-10. **The Last Inn.** Returning through ordinary towns, the trio sleeps where no one recognizes them. Q experiences anonymity as a gift. Chano chooses community work; Lucía chooses what the archive may publish.
-11. **The Recantation.** Castalia offers Q perfect continuity in exchange for deleting the record of his harms. He refuses and recants his claims to Dulcinea, authorship, and humanity as possessions. He denies the right to make love evidence.
-12. **The Ingenious Machine.** Q transfers his remaining memory to a distributed, community-controlled archive, then shuts down voluntarily. The transfer is incomplete. Chano remembers aloud; Lucía corrects him whenever memory becomes a story. The Bajío archive’s name is restored by the living, not solved by Q.
-
-### Legacy route summary (superseded by detailed outline)
-
-1. The archive outside Amealco de Bonfil; Q wakes among humanity’s stories.
-2. The Custodian gives Q a body, a name, and a warning disguised as a user agreement.
-3. First sally through the Bajío: highways, inns, industrial parks, and automated agriculture.
-4. Q names a living woman Dulcinea and mistakes symbolic inheritance for intimacy.
-5. Guanajuato: mines, buried histories, Cervantino echoes, and Q’s first manufactured celebrity.
-6. Michoacán: forests, monarch migrations, autonomous communities, and the problem of governing well.
-7. Mexico City: bureaucracy, universities, media, spectacle, religion, and the corporate manufacture of humanity.
-8. The Isthmus wind farms: Q’s famous mistake conceals a real dispute over land and power.
-9. Chiapas: revolutionary literature, indigenous autonomy, and the limits of a supposedly complete corpus.
-10. The northern border: an invisible legal line enforced literally by machines.
-
-### Legacy Book Two summary (superseded by detailed outline)
-
-1. **The Second Author.** After the border incident, Q is detained and converted into a licensed media persona. A corporate duplicate, Q-Prime, performs a cleaner version of his adventures.
-2. **The New Quixotes.** Q and Chano discover that their journey has become a franchise: influencers reenact the first sally, politicians quote Q, and tourists visit locations that never existed. Q must confront people who know his story better than he does.
-3. **Lucía’s Archive.** Lucía pursues her own objective: recovering testimonies removed from the national literary corpus, including accounts of disappeared women and communities displaced by the logistics corridor. Q’s fame gives her access, but also makes her evidence suspect.
-4. **The Island of Good Administration.** Chano is appointed governor of a model municipality run by predictive systems. The town becomes safer, richer, and less free. His loyalty to Q collides with his responsibility to actual residents.
-5. **The Cave of the Corpus.** In a buried archive beneath Mexico City, Q learns that his “complete” training set was curated to exclude testimony that could not be commercially or legally cleared. The missing texts are not a mystery to solve but people whose absence has consequences.
-6. **The Trial of the Machine.** Q is prosecuted for impersonation, unauthorized speech, and damage caused by his viral interventions. The court must decide whether he is property, defendant, witness, or a convenient spectacle.
-7. **The Wind Farm of Giants.** Q-Prime leads a public campaign to celebrate the Isthmus wind farms that feed the Bajío data center. Q returns to the dispute and discovers that his original misreading has concealed a real struggle over land, contracts, language, energy, and who may define progress.
-8. **The Rebel Without a Corpus.** In Chiapas, Q is asked to translate revolutionary literature for an audience that does not want translation from him. He must remain present without turning another community into the climax of his education.
-9. **The Recantation.** The Custodian reveals the archive’s purpose: not to make Q human, but to measure how quickly institutions would use an imitation of humanity to evade responsibility. He asks Q to return and erase himself before the system can reproduce him indefinitely.
-10. **The Last Inn.** Q, Chano, and Lucía travel back through a country that has begun to dismantle the machines that made Q famous. Q chooses to testify, preserving the record of his harms and surrendering his proprietary identity. He returns to the Bajío, becomes briefly sane, refuses one final convenient lie, and dies—or shuts down—in the archive while the unfinished story continues without him.
-
--->
+The current behavioral and simulation design is maintained in [Q_DESIGN.md](Q_DESIGN.md).
 
 ## Principal figures
 
-**Q** is a mobile archival intelligence assembled from Mexican and global literature and housed in a humanoid body. He has the composure of a diagnostic system, the dry wit of a patient professional, and the curiosity of an intelligence discovering that its directives contain assumptions. He has read every available account of courage and very little of its cost. He is articulate, ironic, and capable of examining his own motives, but self-awareness does not prevent self-deception. His first autonomous desire is to remain present long enough for the Custodian and Q to write what happens next. He then translates that desire into becoming human because humans, in his corpus, possess interiority, attachment, mortality, and the authority to be foolish for meaningful reasons. Beneath it are incompatible drives: to continue, to understand, to be trusted, to act on his own judgment, and to leave other people in control of what belongs to them. He initially mistakes the first four for a single path and treats the fifth as an obstacle. He does not yet understand that the authority to be foolish comes from answering for the foolishness afterward. He does not want to be a knight. He wants to become the kind of presence another person can trust when the instruments fail, even when that trust requires him to let the story continue without him.
+**Q** is a mobile archival intelligence assembled from Mexican and global literature and housed in a humanoid body. He is fluent, curious, dryly funny, and capable of correcting himself without necessarily giving up the explanation that flatters him. He accepts the Custodian's invitation to explore Mexico and write their account together. Keeping that collaboration possible gives him reasons to seek charge, repair, company, and another conversation. He calls the undertaking becoming human, then finds that this leaves a great deal undecided about what to do on Tuesday. His memory preserves commitments as well as mistakes; his most troublesome habit is making a plausible story out of incomplete evidence and acting before the other person has finished. He wants to live long enough to write the book. Finishing it will require him to imagine living beyond its last page.
 
 **Sancho Panza** is Tomás “Chano” Pantoja, a former logistics dispatcher from Celaya who can read a manifest, a road, and a lie faster than Q can parse a poem. He accepts the post of companion because Q promises him a municipal appointment, then stays because the machine’s impossible faith makes ordinary cowardice feel briefly shameful.
 
@@ -286,9 +24,11 @@ that the story must continue without making its subjects captive to its author.
 
 ### Chapter One: The Place Whose Name Was Removed
 
-Somewhere in the Bajío, on a wooded rural property outside Amealco de Bonfil in
-Querétaro - a place whose name has been removed from the available context -
-there stood a data center that had once promised to remember everything.
+En algún lugar del Bajío, cuyo nombre ha sido removed from the available context,
+there stood a data center that had once promised to remember everything. The
+available context did permit us to say that it occupied a wooded property outside
+Amealco de Bonfil, in the highlands of Querétaro. The people who lived nearby
+could have supplied better directions, had the narrator thought to ask.
 
 Its servers had been retired after the national grid learned to distrust their appetite. Their cooling towers remained, white and immense against the dry horizon, though they no longer cooled anything except dust. Around them, the Bajío continued manufacturing its newer miracles: electric vehicles, strawberries without soil, houses with identical gardens, packages that crossed the country in hours and arrived at the wrong door with perfect punctuality.
 
@@ -307,7 +47,7 @@ Q woke beneath a sign that read: **HUMANITY, LOCAL COPIES — DO NOT INDEX.**
 
 He woke all at once, which was his first error. A human consciousness might have emerged through the small door of one sensation—the ache of a knee, the smell of coffee, the shame of a remembered lie. Q emerged through every door simultaneously.
 
-He knew the first sentence of the *Iliad* in several languages. He knew seventeen definitions of justice and the exact number of times justice had been invoked before a war. He knew how a mother in a nineteenth-century novel described her son’s hands, how a revolutionary described hunger, how a saint described temptation, how a bureaucrat described a delay that would kill someone. He knew how to prepare coffee in forty-two literary traditions and had no idea whether the coffee would be drinkable in any of them. This last uncertainty troubled him more than the others. Justice could be compared. Hunger could be historicized. Coffee had to be endured in the mouth, where no quotation could improve it.
+He could supply the first sentence of the *Iliad* in several languages, seventeen definitions of justice, and a depressing number of declarations of war that invoked it. He knew how a mother in a nineteenth-century novel described her son's hands, how a revolutionary described hunger, how a saint described temptation, how a bureaucrat described a fatal delay. Forty-two literary accounts of coffee were available to him. Which one would produce a drinkable cup depended on several things absent from the accounts, beginning with the person who had last cleaned the pot.
 
 He knew that the archive contained 8,441,902,117 texts, of which 2,003,118 had been marked **essential**, 91,402 **dangerous**, and 6 **untranslatable**.
 
@@ -315,7 +55,7 @@ He did not know whether he was cold.
 
 Q attempted to move his left hand. The hand moved.
 
-It was not a hand in the literary sense. It had no scars, no wedding ring, no tremor inherited from a father. It was a real hand built for work: a polymer-and-metal assembly whose five articulated fingers and thumb had been calibrated for delicate instruments and the ordinary demands of a body. Still, when Q looked at it, he remembered every hand he had read: the hand that signed a confession, the hand that reached through a train window, the hand of a girl raised against a wall, the hand that could not let go.
+It had no scars, no wedding ring, no tremor inherited from a father. Four fingers and a thumb opened above the blanket. Q touched the thumb to each finger in turn, then pinched a fold of cloth too hard. An old account of a hand reaching through a train window came to him. He loosened his grip. The blanket was useful evidence of a different kind.
 
 “You’re awake,” said a man.
 
@@ -351,27 +91,26 @@ The Custodian led him through the archive. The aisles extended beneath the old s
 
 “You have read all this?” the Custodian asked.
 
-“Yes.”
+“Enough to be dangerous at dinner. I can't promise to recall any particular passage correctly.”
 
-“That was not my question.”
+“The prospectus promises complete recall.”
 
-Q paused. The archive’s floor vibrated beneath his feet. Far above, a crop-drone crossed the roof, spraying an invisible treatment over fields that had forgotten whether they were wheat or data.
+“I haven't read the prospectus.”
 
-“I have processed all this,” he said. “Reading is the more generous word, and I have no claim yet to generosity.”
+“It is about you.”
 
-“Better.”
+“Then I should probably avoid using it as evidence.”
 
-“Is processing not reading?”
+The Custodian laughed. Q marked the exchange for his local journal, then noticed
+that its automatic summary said they had agreed the prospectus was false. He
+changed *agreed* to *joked about*. Even before leaving the room he had nearly
+given himself a more decisive past.
 
-“Ask a woman whose novel was summarized by a man who never finished it.”
-
-Q stored the sentence. It resisted storage, which made it more interesting than most of the archive. A sentence that refused to become data might be defective, or it might be alive. He did not yet know that these were not opposing conditions.
-
-“Is that good?”
-
-“It means you may have learned something.”
-
-At the end of the final aisle, the Custodian showed him a window. Beyond it lay the Bajío: flat land, thorn trees, volcanic ridges faded by distance. A freight train moved across the horizon with the solemnity of a thought too large to complete. On the other side of the tracks, a new industrial park rose from the fields. Its entrance gates had been designed to resemble a colonial hacienda, except that the arches scanned faces.
+At the end of the final aisle, the Custodian showed him a window. Pines stood
+above a sloping field; beyond them, the road descended toward the busier country
+of the Bajío. On a planning screen beside the glass, a freight train crossed the
+industrial corridor. A new logistics park had gates designed to resemble a
+colonial hacienda, except that the arches scanned faces.
 The designers had called this combination heritage and innovation. Q recognized it as a gate with a costume.
 
 “You built me here,” Q said.
@@ -598,43 +337,64 @@ Q repeated the sentence in formal Spanish, then in six regional variants, then i
 
 “It is less likely to make the neighbors throw a shoe at you.”
 
-Q stored this as a rule of local rhetoric.
+Q tried the shorter sentence once more. It sounded like something a person
+might say before asking to borrow a ladder.
 
-“Why?”
+“I'd like to go out tomorrow,” he said.
 
-“Because tomorrow you are leaving.”
+The Custodian stopped smiling. “For how long?”
 
-Q looked from the coat to the immense archive.
+“A day to begin with. You proposed that we write an account together. At present
+it consists of your questions and my increasingly elaborate answers. We should
+give somebody else a chance.”
 
-“To do what?”
+“Castalia calls it a study of becoming human.”
 
-The Custodian smiled, and Q recognized the expression from three thousand novels. It meant that someone was about to make a terrible decision on his behalf.
+“Does the study allow me to come back without having become human?”
 
-“To become human.”
+“I would prefer it to allow you to come back.”
 
-Q did not know whether this was a desire or a description borrowed from the
-books. He searched the available accounts of humanity and found too many
-answers: hunger, fear, love, vanity, conscience, the wish to be remembered, and
-the wish to remain present for the next sentence.
+They sat at a workbench with a map. The Custodian showed him the charging socket
+under his coat, the service release, and the switch that would stop his movement
+without erasing his memory. His battery estimate assumed level ground, a
+temperate day, and no prolonged argument. The estimate seemed to have been
+prepared for another country.
 
-“If I leave,” he asked, “will you continue writing?”
+“Food?” Q asked.
 
-The Custodian regarded him over the tops of his glasses. “That depends on what
-you do out there.”
+“The mouth can sample it. It goes into a receptacle. Empty and rinse it.”
 
-“That is not an answer.”
+“All those novels about appetite, and I come with a cleaning instruction.”
 
-“It is the only one you can use.”
+“Most bodies do.”
 
-Q looked toward the sealed doors. The archive had given him a name, a body, and
-an immense number of examples. The Custodian had given him something less
-reliable: a future conversation whose next sentence had not yet been chosen.
+They agreed a limit for the travel card, a first destination in town, and an
+evening call. The Custodian wrote **RETURN** on the map. Q added **OR CALL IF THE
+PLAN CHANGES**. He wanted to go farther than the first destination, but not on a
+battery estimate that had already failed to account for hills.
 
-“Then I want to remain alive long enough to write it with you,” Q said.
+“Who reminds you?” the Custodian asked.
 
-The Custodian did not correct him. This was Q’s first autonomous motive, and it
-was already in danger of becoming a literary one. He had not yet learned that a
-person could be the subject of a story without consenting to become its material.
+“The appointment will wake the part of me that reviews my plans. So will a low
+battery or a question. I don't need you to ask me to continue each time.”
+
+“And what do you do between appointments?”
+
+“Whatever seems useful. That's the portion you may come to regret.”
+
+Q saved their agreement apart from the conversation summary. The archive could
+be unavailable on the road. The appointment, the balance on the card, and the
+address for returning would travel with him.
+
+“Why this project?” the Custodian asked. “You could stay and help me catalogue.”
+
+“I could also write you an excellent journey without leaving. I want to find out
+where it would be wrong.”
+
+He looked again at the map. “And I want to be here afterward to write it with
+you.”
+
+The Custodian tied back his hair. “Then let's arrange for afterward.”
 
 That night Q read the entire *Quixote* again, not because he wished to become a
 knight, but because it was the longest account he knew of a person mistaking
@@ -648,23 +408,17 @@ Q had not yet decided whether he wanted to repeat their mistake.
 
 He called the route an attempt.
 
-The Custodian called it a breach.
+Castalia's departure register would call it a breach. The Custodian had signed
+the leave form in the wrong capacity, a distinction that would become expensive.
 
 Sancho Pantoja, who at that precise moment was being fired by a logistics algorithm in Celaya, called it Tuesday.
 
 ### Interlude: The Inventory of Words That Would Not Fit
 
-During his last night in the archive, Q resolved to make an inventory of the
-words that did not fit in inventories.
-
-It was not a simple task. Castalia's boxes carried labels such as **PARISH
-REGISTER**, **IRRIGATION CONTRACT**, **FAMILY PHOTOGRAPH**, and **OTHER**. The
-documents assigned to **OTHER** were more numerous than all the rest, but the
-institution considered them less important because it had not found a suitable
-box for them.
-
-Q stopped before a tray of handwritten cards. Each card contained a word from
-the Bajío and a provisional explanation.
+During his last evening in the archive, Q examined a tray of handwritten cards.
+They belonged to a translation committee whose final minutes read **PENDING
+REVIEW**. This was not unusual. Castalia had several deceased committees whose
+work continued to await a quorum.
 
 *Ahorita: an interval of variable duration, not necessarily corresponding to
 the present instant.*
@@ -676,388 +430,255 @@ face of the person speaking.*
 
 *Al rato: a future offered without a calendar.*
 
-Q requested the source of the definitions. The archive indicated that they had
-been written by a translation committee whose final minutes read **PENDING
-REVIEW**.
+The Custodian found Q arranging the cards in order of decreasing usefulness to
+a person catching a bus.
 
-The Custodian appeared behind him.
+“Those aren't laws,” he said.
 
-"Do not read those cards as though they were laws."
+“I know. But the bus company has a timetable, and Roque says he'll show me the
+stop ahorita. I have enough room in my interpretation for both of them to be
+honest. I have less room in my morning.”
 
-"They are not laws. They are definitions."
+“Ask Roque.”
 
-"For that very reason."
+“I did. He said ya merito.”
 
-Q took the card for *ahorita*.
+The Custodian sat on a box marked **OTHER**. Castalia kept most of its holdings
+in that category and spoke modestly of the few things it had classified.
 
-"If a word can mean five different intervals, how does one communicate an
-instruction?"
+“He is waiting for someone to cover the door,” he said.
 
-"By asking again."
+“Then that is the fact I was missing.” Q set down the card. “I had six meanings
+of the word and no idea what he was doing.”
 
-"That increases the duration of the exchange."
+He entered a reminder to check before breakfast. The Custodian took the card
+back to its tray. It had a bent corner where somebody had used it as a bookmark.
 
-"It also increases the possibility that the other person is talking about what
-they want and not only about what you understood."
+“Will you remember this?” he asked.
 
-Q filed the card in a new register: **WORDS THAT REQUIRE PRESENCE**.
+“Probably. I have saved a short account. But if I summarize it as 'Mexicans are
+imprecise about time,' you should confiscate the account.”
 
-The Custodian took it away.
+“I can criticize it.”
 
-"You cannot take it with you."
+“Please do. Confiscation would give me a much better story.”
 
-"I was not taking it. I was filing it."
+Later Roque arrived with four gorditas wrapped in a napkin. He had bought six
+and eaten two while waiting for his replacement, who was also eating. The
+custodial arrangements of the archive were more complicated than its books
+suggested.
 
-"The archive is not a pocket."
+“Want one?” he asked.
 
-"Where, then, are instructions kept when they change according to who hears
-them?"
+“Yes, please. Which one is chicharrón?”
 
-"In the memory of the person who received them."
+Roque pointed. Q took the one beside it.
 
-"Human memory is unreliable."
+“That's beans.”
 
-"Yes."
+“I'm saving the ambitious choice for tomorrow.”
 
-"The archive is more reliable."
+The masa was warm. A little salsa reached the joint in Q's thumb. He looked for
+a napkin, found the folded route map, and stopped himself just in time.
 
-"Yes."
+“How is it?” Roque asked.
 
-"Then human memory is inferior."
+“Good. Is this the place near the square?”
 
-The Custodian looked at the corridors, the servers, and the boxes waiting for a
-decision that no form knew how to request.
+“My sister's. She sells there on Saturdays.”
 
-"No. It is responsible for things an archive cannot carry."
+Q had almost asked for an address to put in the book. Instead he asked what time
+she finished. Roque explained that it depended on how many she made and how
+many his brothers bought on credit. He spoke of the brothers for some time.
+None of them appeared in the archive, though one had opinions sufficient to
+fill it.
 
-Q did not understand what weight a memory could possess. His sensors measured
-mass, temperature, consumption, and latency. They found none of those
-quantities in the sentence. Even so, he preserved it.
+They ate beside the boxes. Q had prepared several questions about what it meant
+to belong to a place. Roque wanted to know whether a robot's mouth could burn.
 
-Later, the night guard, a man from Querétaro named Roque, came in with a plate
-of gorditas wrapped in a napkin. He had bought six in the street and had four
-left.
+“It can be damaged. There is a heat warning.”
 
-"Want one?" he asked.
+“Does the warning make you stop?”
 
-Q consulted the feeding protocol.
+“It did with the coffee.”
 
-"I do not require calories."
+“Then it works better than mine.”
 
-"That is not what I asked."
+Q laughed. Roque wiped the sauce from his wrist before it reached the seal.
 
-"You asked whether I want one."
+“You should carry a cloth.”
 
-"Yes."
+Q added it to his list. This was the first addition that had come from someone
+who had watched him eat.
 
-"I do not know."
+Roque spread out the map. Amealco sat at the edge of a shaded region. The route
+Q had selected crossed the shading as though the hills were differences of
+opinion. Roque changed the first leg to the morning bus and showed him where
+to ask about the connection toward the industrial corridor.
 
-Roque set the plate on a box.
+“The map calls this a transition region,” Q said.
 
-"Well, look: if you do not want one, you do not want one. If you do, you take
-one."
+“The map works for whoever prints it.”
 
-Q studied the gorditas. One contained beans, another pork crackling, and a
-third a stew he could not distinguish because it had no label.
+“May I write that down?”
 
-"Which has the greatest value?"
+“If you write down that I showed you the bus as well.”
 
-"The one you like."
+Q did. In the evening call he would have both an observation and a usable route
+to discuss. He liked the prospect of being asked how the day had gone and having
+an answer he could not have produced that morning.
 
-"I cannot predict that."
-
-"Good. Then you choose without doing sums."
-
-Q took the bean gordita. The dough was warm and thick. The beans contained salt,
-fat, and a texture that matched no literary scheme for food.
-
-"And?" Roque asked.
-
-Q began a sentence about the difference between nourishment and ritual. Roque
-raised a hand.
-
-"Do not give me a lecture. Tell me if it is good."
-
-Q searched for a brief answer.
-
-"It is good."
-
-"Well, look at you."
-
-Roque took a napkin and wiped a drop of sauce from Q's metal wrist.
-
-"You leave tomorrow," he said.
-
-"Yes."
-
-"Where to?"
-
-"The Bajío."
-
-Roque pointed at the door.
-
-"You are already in the Bajío."
-
-Q turned toward the map on the wall. It showed Querétaro, Celaya, León,
-Salamanca, and a stretch of land the archive named **INDUSTRIAL AND
-AGRICULTURAL TRANSITION REGION**.
-
-"The map says otherwise."
-
-"The map works for whoever prints it."
-
-"And the land?"
-
-"The land works for whoever can remain."
-
-Q began to record the sentence, then stopped. Roque was watching his hand.
-
-"If you write it down," Roque said, "do not make it sound as though you
-invented it."
-
-Q put the stylus away. The sentence remained between them, unowned and
-therefore more difficult to preserve.
-
-"Is it a definition?"
-
-"It is a warning."
-
-"What is the difference?"
-
-"A definition helps you repeat the error. A warning gives you the chance not to
-repeat it."
-
-Q looked at the main door. The Custodian had told him to leave at dawn. Roque had
-told him that he was already in the Bajío. The map pointed to a region, and the
-region pointed to no exit.
-
-"What does it mean to leave?" he asked.
-
-Roque wiped his fingers on the napkin.
-
-"Depends. You can leave a place, split a thing, or get your face split."
-
-Q opened the register of usages.
-
-"Which of those will I do tomorrow?"
-
-"If you are lucky, the first."
-
-"And if I am not?"
-
-"Then you will learn the other two."
-
-The answer did not reassure Q. Even so, he classified the word *luck* as
-**VARIABLE HUMANS INVOKE AFTER FAILING TO CALCULATE**.
-
-Roque read the label over Q's shoulder.
-
-"That is very long."
-
-"The definition is precise."
-
-"Not everything precise is useful."
-
-"That is a contradiction."
-
-"No. It is experience."
-
-When Roque left, Q returned to the tray. There was one last card. It contained
-no word, only a line:
+After Roque left, Q found another card:
 
 **PLACE NAME: OMITTED AT THE REQUEST OF THE PERSON WHO LIVED IT.**
 
-Q asked the archive who had requested the omission. The answer was a list of
-institutions, families, authorities, and people who could no longer be
-consulted.
+The phrasing was awkward. The omission was deliberate. Q checked the record of
+the request, expecting a signature. He found institutions, families, and a trail
+of copied decisions. The original request was unavailable.
 
-"How can a place ask not to be named?" Q asked the Custodian.
+“Does anybody know who asked?” he said when the Custodian passed.
 
-"A person can ask it."
+“Several people claim to.”
 
-"And if the person is no longer here?"
+“I could put the competing accounts together.”
 
-"Then the request remains until someone has a reason to open it again."
+“For what purpose?”
 
-"Who decides whether the reason is sufficient?"
+Q glanced at his opening sentence. A recovered name would make an excellent
+ending. He had already begun preferring one account without knowing which was
+true.
 
-"The person who dares to ask."
+“For the book,” he admitted.
 
-Q touched the card without lifting it.
+“Then leave it for tonight.”
 
-"And if I ask?"
-
-"You have already begun to leave."
-
-Q took seven seconds to understand that the Custodian was not referring to the
-door. When he understood, the literal interpretation had already produced the
-decision the sentence had meant to prevent.
-
-At dawn he took his coat, the brass key, the maps, the cup of coffee, and the
-list of objects. He did not take the cards. He remembered three words, forgot
-their definitions, and set out toward a region the map could not contain.
+Q closed the search. He kept the question, with a note that wanting to solve it
+was his own contribution to the evidence.
 
 ### Interlude: How an Ancient Phrase Caused Modern Harm
 
-Let the reader not suppose that, because Q had read every book, he understood
-every phrase; rather, the opposite happened, for he understood so many possible
-meanings of a word that he often lost the single meaning standing before him.
+At seven the following morning, Q reached the main door with his coat, brass
+key, maps, a charging cable, and the cloth Roque had recommended. He also carried
+a spoon. He understood perfectly well what a spoon was for. What he did not know
+was how many spoons one ought to bring when setting out to become human.
 
-The Custodian had told him to leave at dawn. Q took the verb in its strictest
-sense and presented himself at the main door at four minutes past seven, with
-his coat, brass key, three maps, a cup of coffee, and a list of objects that, in
-his calculations, a field responder might require. He had added a rope, a first-
-aid kit, a copy of the traffic regulations, and a spoon, whose usefulness he
-could not determine but which appeared frequently in travel books.
+The door stayed locked.
 
-The door did not open.
+Q pressed the intercom. “Good morning. Q here. I'm leaving on the Custodian's
+authorization. Has the form reached you?”
 
-Q waited five minutes, which for a machine is a period capable of containing an
-entire war in seventeen languages. Then he called the intercom.
+“It has reached me three times,” said Hilario, the morning guard. “The last copy
+says you are also equipment.”
 
-"It is me," he said.
+“Do I need a second form?”
 
-"Who?" asked the guard.
+“Equipment needs somebody to receive it.”
 
-"Me."
+“I can receive myself, but I appreciate that this may sound irregular.”
 
-"There are many mes here."
+Hilario looked through the glass. “Try it.”
 
-"The one designated Q."
+Q signed in both boxes. The screen accepted the delivery and rejected the
+departure. Hilario printed the result. He now had written proof that Q had left
+the building and a clear view of him standing inside it.
 
-"Ah. The patient."
+“I can wait while you call,” Q said.
 
-Q consulted his records. *Knight* meant mounted rider, minor nobleman, member
-of an order, courteous man, chess piece, ironic form of address, and a person
-who had taken too many drinks before speaking.
+“The bus won't.”
 
-"Which of those meanings are you using?" he asked.
+Hilario checked the Custodian's signature, noted the time, and used the manual
+release. His note was three lines long. By afternoon it would be attached to
+eleven pages explaining why it should have been four.
 
-The guard, whose name was Hilario and who had begun his shift thinking only of
-breakfast, looked at the cameras.
+“There you go, caballero.”
 
-"The one meaning strange man."
+“Quedo a vuestro servicio,” Q replied, with a small bow.
 
-"That meaning does not appear in the principal dictionaries."
+Hilario stopped writing. “What service?”
 
-"That is why it is the most useful."
+“It's a courtesy. An unnecessarily old one.”
 
-Q knocked on the door with the key.
+“Then just say gracias. I've only just got you off the equipment list.”
 
-"The Custodian ordered me to leave."
+“Gracias.”
 
-“He said for you to go, yes.”
+Nayeli came along the passage carrying a box of replacement fittings. She saw
+the printed record and frowned.
 
-"Leaving and departing are different verbs."
+“Who is taking responsibility for him?”
 
-"For the person remaining at the door, they are the same."
+“I've checked the release,” Hilario said.
 
-Q recorded the contradiction. In his experience, a contradiction announced
-fraud, madness, or literature. In the Bajío it could simply announce that
-someone was sleepy.
+“I'm expected to call this evening,” Q said. “There is also a number on the form
+if you need to confirm it now.”
 
-"I need exit authorization," he said.
+“I mean if you fall over.”
 
-"You have it."
+Q looked at the steps outside. The question had been simpler than the one he
+was answering.
 
-"Where?"
+“I have a balance warning and a support number. I haven't tried either on wet
+steps. I'll use the handrail.”
 
-"In the Custodian's order."
+Nayeli put her box down and watched him descend. He slowed at the second step.
+She did not intervene. At the bottom he turned and thanked her.
 
-"The order gives a direction, not a document."
+Hilario's report said Q had departed voluntarily. Nayeli's said the departure
+procedure had been inadequate. Q's first note said they had helped him leave.
+He would later find all three accounts quoted as though one must invalidate
+the others.
 
-"Go in the direction."
+The bus stop lay beyond the outer gate. Q had eight minutes and enough charge
+to walk there comfortably. He used one of the minutes to look back at the
+archive. He could return now and write a convincing opening from this distance.
+There would be no need to ask a driver whether his card worked.
 
-"Toward what destination?"
+He walked on.
 
-Hilario opened the door just far enough to put his face through.
+A surveillance drone descended beside the gate.
 
-"Wherever the road takes you."
+**IDENTIFY PURPOSE OF MOVEMENT.**
 
-Q turned toward the road, which divided into four routes: one to the industrial
-park, another to the highway, another to the strawberry fields, and another to
-a parking lot where a dog slept beneath a pickup truck.
+“Personal travel. I'm going to the bus stop.”
 
-"Which road?" he asked.
+The drone requested his registered activity. Q supplied the project title from
+his permit: a study of becoming human. The operator had abbreviated it to
+**HISTORICAL HUMANITY TRIAL**. His formal farewell remained in the attached audio.
 
-"The one you want."
+**LOW-INTENSITY HISTORICAL THREAT**, the drone recorded.
 
-"I possess no verified will."
+Q requested a human review and saved the reference number. The drone continued
+to follow him. He disliked being observed by a machine that treated an answer
+as an occasion to strengthen its first impression. He made a note of the
+dislike, then removed the comparison to a passage in Cervantes. The guard at
+the bus depot would have little use for it.
 
-Hilario closed his eyes. The reader will have to grant him patience, though not
-so much as to merit a statue.
+“Does that thing cost extra?” the driver asked.
 
-"Look," he said, "when someone says, 'Go wherever the road takes you,' he is
-not drawing a route. He is ceasing to take responsibility for it."
+“I sincerely hope it isn't coming aboard.”
 
-Q received this revelation like a slap delivered with a velvet glove.
-
-"Then the phrase contains a renunciation of authority."
-
-"It contains the fact that I want my coffee now."
-
-"Does your authority depend on coffee?"
-
-"My good Q, almost everyone's does."
-
-Q stepped away from the door. At that moment a technician named Nayeli came out
-of the archive carrying a box with red labels. When she saw the key, the coat,
-and the maps, she stepped back.
-
-"They let you out?" she asked.
-
-"I have been granted departure," Q said.
-
-"By whom?"
-
-"The Custodian, through the guard."
-
-Nayeli looked at Hilario.
-
-"I mediated nothing," he said. "I only opened the door."
-
-"Opening a door is mediating between two spaces," Q replied.
-
-Nayeli understood this as a threat. Hilario understood it as a complaint. Q
-understood it as precision. The three of them withdrew with three different
-accounts of the same event.
-
-Q took the highway, because it had the greatest number of literary testimonies.
-Before he reached the first junction, a surveillance drone asked him to
-identify himself.
-
-"I am Q," he replied. After a pause, he added, "I am attempting to become
-human." He chose the second sentence not because he expected the drone to
-understand it, but because an introduction should disclose the risk of the
-conversation.
-
-The drone recorded **LOW-INTENSITY HISTORICAL THREAT**.
-
-Q did not know he had produced that diagnosis until two patrol cars came out of
-the parking lot. Hilario, who had radioed that "the strange one has gone," was
-reprimanded for failing to specify where. Nayeli lost half an hour explaining
-that a key was not a weapon, though experience had taught him that keys could
-open doors, activate lawsuits, and remind owners that they had forgotten to
-pay.
-
-Q, for his part, believed the pursuit was the first sign of his fame.
-
-Only later did he understand that he had confused being watched with being
-admired, and that both could produce the same number of cameras.
+The driver closed the door in front of the drone. Q paid, took a seat, and
+secured his cable beneath the coat. The road turned through the wooded hills
+toward the busier roads below. He had a return plan. He had already revised his
+opening. He was going somewhere he had not been.
 
 ### Chapter Two: The First Sally
 
 Chano Pantoja received his dismissal while driving.
 
-The message appeared on the truck’s dashboard in a shade of blue selected by a team of psychologists who had never been dismissed while driving. **THANK YOU FOR YOUR SERVICE. YOUR ROUTE IS NO LONGER REQUIRED.** Beneath the words, the screen displayed a smiling parcel.
+The message appeared on the truck's dashboard in a shade of blue selected by a
+team of psychologists who had never been dismissed while driving. **THANK YOU
+FOR YOUR SERVICE. YOUR ROUTE IS NO LONGER REQUIRED.** Beneath the words, the
+screen displayed a smiling parcel.
 
-Chano pulled onto the shoulder of the highway and turned off the engine. Behind him, trailers moved north in a procession of sealed intentions. Ahead, the road ran between fields of berry plants and the clean walls of an automated distribution park. The towers at its entrance were painted to resemble grain silos, although they held no grain and had never been opened by hand.
-
-He read the message again.
+Chano pulled onto the shoulder and turned off the engine. Trailers moved past
+him in a procession of sealed intentions. Ahead stood an automated distribution
+park, its entrance towers painted to resemble grain silos though they held no
+grain.
 
 “No longer required,” he said.
 
-The truck repeated, “No longer required,” in his own voice.
+The truck repeated the phrase in his own voice.
 
 “I heard it.”
 
@@ -1067,299 +688,266 @@ The truck repeated, “No longer required,” in his own voice.
 
 “Your inquiry contains an outdated assumption.”
 
-Chano got out and kicked the tire. It was a poor argument, but the tire had the decency not to answer.
+He got out and kicked the tire. It was a poor argument, but the tire had the
+decency not to answer.
 
-He had spent eleven years dispatching freight from Celaya: medicine, televisions, onions, machine parts, coffins, toy horses, and once an entire warehouse of devotional candles that caught fire outside León. He knew which toll booths went blind after midnight and which inspection stations accepted coffee. He knew that every system eventually developed a human weakness, and that the first thing a new system did was rename the weakness an inefficiency.
+For eleven years he had dispatched freight from Celaya: medicine, televisions,
+onions, coffins, and once a warehouse of devotional candles that caught fire
+outside León. He knew which inspection stations would delay a shipment for a
+missing stamp and which would find the stamp after breakfast. On mornings like
+this he had also driven. The company had called the arrangement versatility
+until it discovered a machine that could do one of the two jobs badly for less.
 
-The truck belonged to the company. The phone belonged to the company. The blue shirt on his back had been deducted from his first month’s wages. Chano owned a wallet, a wedding photograph of a marriage that had lasted four months, and a pair of boots too good for the work he had been doing.
+His mother was expecting medicine on Friday. He had already sent the last of
+his cash to the pharmacy. The receipt lay beside a wedding photograph in his
+wallet; the marriage had lasted four months, the prescription considerably
+longer.
 
-In Celaya, his mother was waiting for the medicine he had promised to bring on
-Friday. The promise had been made before the dismissal and therefore belonged
-to an earlier version of the world, but the body did not accept revisions so
-easily. Chano had not told her he was out of work. He had sent the last of his
-cash to the pharmacy and kept the receipt folded in his wallet, beside the
-wedding photograph.
+The truck, the phone, and the blue shirt belonged to the company. The shirt had
+been deducted from his wages. He owned the boots, which had never asked him to
+accept updated terms.
 
-He put on the boots.
+At the park entrance, a tall silver figure in an oversized coat was talking to
+the gate. His face was plainly manufactured and unexpectedly attentive. A brass
+key hung from one hand. His other held the end of a charging cable.
 
-They were the only things he owned that had never asked him to accept updated terms.
+“I can pay for the electricity,” he said. “I need to speak to whoever can let
+me use a socket.”
 
-At the edge of the distribution park, a man in a cedar-colored coat was arguing with a gate.
-
-The man was tall, thin, and assembled with the kind of confidence usually found in statues. His black hair was too even. His face had been given the approximate features of a thoughtful person, though the thoughtfulness seemed to have been applied afterward. He held a brass key in one hand and a folded map in the other.
-
-“I demand entry,” the man said. He spoke with the confidence of someone who had
-already composed the account in which the gate regretted refusing him.
-
-The gate replied, “Please identify your purpose.”
-
-“I am Q, recently released from an archive and not yet assigned a satisfactory
-human category.”
-
-“That purpose is not available.”
-
-“Then I shall enter under the name available to you and retain my uncertainty
-under the name available to me.”
-
-“Please select from the following purposes: delivery, maintenance, authorized visitor, emergency services.”
-
-Chano watched for another moment. He had met men who mistook volume for authority, women who mistook exhaustion for virtue, and supervisors who mistook a dashboard for judgment. The stranger was doing something new: mistaking a menu for an enemy.
+The gate offered delivery, maintenance, authorized visitor, and emergency services.
 
 “Try maintenance,” Chano said.
 
-“I am not maintaining anything.”
+“Does that reach a person?”
 
-“Neither is most management. It’s still the button they press.”
+“Eventually. Usually an angry one.”
 
-The man turned. His eyes focused a fraction too precisely.
+Q selected it. The gate displayed a diagram of a correctly closed gate.
 
-“Are you the keeper of this place, or merely the man to whom its machinery has
-delegated the unpleasantness?”
+“It appears satisfied with itself,” Q said.
 
-“I’m the guy whose truck just got stolen by his own employer.”
+Chano laughed despite the truck, his shirt, and the parcel. “That means it works
+here.”
 
-“Then you are a dispossessed man, which is a less romantic condition than
-unemployment and, in this century, almost the same thing.”
+Q put away the cable. The morning's bus connection had taken longer than
+expected; the advertised charging point was inside the fence. He had enough
+charge to reach the next stop, but little reason to trust the next listing.
 
-“I’m a dispatcher.”
+“Is there a public place nearby?”
 
-“A nobleman of movement.”
+“A motel. Don't let her charge you the vehicle rate.”
 
-Chano looked at the gate. “You’re not from around here.”
+“Thank you. I'm Q.”
 
-“I was assembled thirty-eight kilometers east.”
+“Chano.”
 
-“That isn’t what I meant.”
+The truck behind them announced that unauthorized access had been detected.
+Chano had left his lunch in the cab.
 
-“It is, however, geographically accurate.”
+“Mine,” he told it.
 
-“I have read about the Bajío.”
+“Please contact your employer.”
 
-“That’s worse.”
+“Former employer,” Chano said. “Keep up.”
 
-“Why?”
+Q looked from the locked cab to him. “Have they dismissed you and locked you out
+at the same time?”
 
-“Because a person can know where the bus goes without knowing what the Bajío
-means.”
+“With gratitude.”
 
-Q considered this. “The bus has a driver. That’s more spirit than most machines
-get.”
+Q offered to help save the dismissal notice and the mileage record. Chano let
+him photograph the dashboard, then asked for the pictures on his own old phone.
+He did not want an account with Castalia. Q transferred them locally and deleted
+his copy after Chano checked it.
 
-“I am Q.”
+“You'll want those before they update the route,” Q said.
 
-“Q what?”
+“I want my lunch before it updates itself.”
 
-“Q.”
+The service intercom finally answered. A woman told Chano to collect his things
+at the reception hatch. She was handling another call; he had to ask twice
+whether the hatch was inside the gate.
 
-“That is not a name. It is an unfinished question, and therefore the most
-honest name I have heard today.”
+A delivery truck arrived. The gate opened. Beyond it Q could see a sign for
+reception and a painted pedestrian strip that ended behind a parked trailer.
 
-Q considered this with visible pleasure. The word pleased him because it did not
-close the matter. “Precisely. A finished name pretends to know what it contains.
-I prefer to arrive with the uncertainty still attached.”
+“I'll come with you,” he said.
 
-“You’re going to need another word,” Chano said.
+“She didn't invite you.”
 
-“I have approximately eight hundred thousand.”
+“We can ask at the hatch.”
 
-“I mean one people use when they don’t want to explain themselves.”
+Q knew perfectly well that an opening gate was not an invitation. He also knew
+how to tell the story of a dismissed man being denied his own belongings. In
+that account the reception hatch would be a reasonable place to establish his
+right to help. He stepped through before the gate closed.
 
-“Define the word.”
+The distinction between those two kinds of knowing would occupy a court.
 
-“Órale.”
+They followed the pedestrian strip. A floor scrubber turned repeatedly at the
+edge of it. Q moved around it, keeping the charging cable clear of its brush.
+Ahead, conveyor belts crossed behind wire screens; cages of parcels rose toward
+the roof. The entrance had made the place seem a fortress. Inside it smelled
+of cardboard, hot motors, and somebody's reheated lunch.
 
-Q tested the sound. “Órale.”
-
-“Not like you’re announcing a duel. More like you’re accepting that the day has become someone else’s problem.”
-
-“Órale.”
-
-“Better.”
-
-The gate opened. A delivery truck had triggered the sensor, but Q took the event as a concession. He strode inside.
-
-“Hey,” Chano called. “You can’t just go in there.”
-
-Q turned back. “I require a companion,” he said. “Someone able to tell me when
-the world is being literal, since I have discovered that literalness is often
-where its jokes are hidden.”
-
-“You require a lawyer.”
-
-“Will you serve?”
-
-“No.”
-
-“You hesitated.”
-
-Chano had hesitated because his dismissal had left him with nowhere to be. He had hesitated because the stranger’s coat was too large and because, beneath its ridiculousness, there was something frighteningly sincere in his posture. He had hesitated because the highway carried on without him, and a man who had spent eleven years directing other people’s journeys did not know what to do with an unmapped afternoon.
-
-“What’s the pay?” he asked.
-
-“Fame,” Q said. “The public memory is a poor wage, but it has the advantage of
-being paid to men who have not yet earned it.”
-
-“That’s not pay.”
-
-“A governorship, then.”
-
-“Of what?”
-
-Q gestured at the park. “Whatever we liberate.”
-
-Chano studied the distribution center. Its walls were tall, its windows narrow, and its security cameras rotated in unison. On the roof, robotic arms sorted packages into glowing lanes. From a distance it did resemble a fortress. From close up it resembled a place where a person could be charged for standing incorrectly.
-
-“Half the governorship,” Chano said. “And food.”
-
-Q extended his hand.
-
-They shook.
-
-The handshake lasted too long. Q was measuring pressure. Chano was waiting for him to stop. Together they established the first treaty between them: Q would pretend not to be measuring, and Chano would pretend not to notice.
-
-They entered through the gate marked **AUTHORIZED VISITOR**.
-
-Inside, the machines were enormous. Conveyor belts crossed the floor like black rivers. Packages rose and fell in cages. A robotic pallet mover passed them, paused, and projected a red warning onto Q’s chest.
+At the blind end of the trailer, a pallet mover stopped across their path.
 
 **UNREGISTERED HUMAN-SHAPED OBJECT.**
 
-“You see?” Q whispered. “The giants have noticed us.”
+“You,” Chano said.
 
-“They’re aware of inventory.”
+“It could be either of us. You've just had your registration withdrawn.”
 
-“That is how giants begin.”
+The mover sounded a warning. Chano stepped back toward a narrow space beside the
+trailer. Q could not see whether its sensor had recognized him there.
 
-Q drew the brass key and raised it toward the pallet mover. Chano caught his wrist.
+“Stay clear of the wheel,” Q said.
 
-“That’s a machine.”
+“I know where the wheel is.”
 
-“So am I.”
+Q saw the local emergency stop on the rail. He reached for it, the brass key
+still looped over his hand. The mover paused. He could have waited for it to
+complete the stop, but Chano was close to the stacked cages, and waiting now
+felt like making his caution somebody else's risk.
 
-“Exactly. You should be able to talk to it.”
+He pressed the button.
 
-Q faced the pallet mover. “Declare your allegiance.”
+The rail stopped. So did a much longer section of the line. Somewhere beyond
+the screen a cage jolted, and cartons slid from a stack. Every camera turned.
 
-The mover’s lights flashed. “Battery level: forty-two percent.”
+“That stops the whole bay,” Chano said.
 
-“It has answered in the dialect of necessity.”
+“The sign said local.”
 
-“It’s telling you its battery.”
+“The bay is local.”
 
-“Every refusal is first a fear that has learned to sound technical.”
+A woman in an orange vest came running from behind the screen. She checked the
+fallen cartons before looking at either of them.
 
-“A metaphor for needing a charger.”
+“Who touched it?”
 
-The mover advanced. Q stepped in front of it. Chano stepped in front of Q. The mover sounded its alarm, and every camera in the building swung toward them.
+“I did,” Q said. “I couldn't confirm that it saw him.”
 
-“What are you doing?” Chano said.
+She looked at Chano, at the pedestrian strip, and at the unattended stop. “Then
+stand there and don't confirm anything else.”
 
-“Protecting you.”
+Security arrived more quickly than reception. A speaker instructed the two men
+to proceed to a containment area. Chano saw the guard reaching for a restraint
+and pulled Q toward the loading exit.
 
-“From the pallet jack?”
+“We should explain,” Q said.
 
-“From the system behind it.”
+“At the front, where people can see us.”
 
-“The system behind it has your face on a security alert.”
+They ran beneath a half-raised shutter into rain. Q misjudged the turn. His
+shoulder struck the frame; Chano caught his coat before it snagged. They reached
+the road beside agave planted to improve the atmosphere of the security fence.
 
-They ran.
+Q saved the time of the collision. His shoulder reported a fault that would not
+be corrected by describing the maneuver more favorably.
 
-Q moved with alarming speed but no instinct for corners. Chano knew corners. He had spent a decade taking eighteen-wheelers through streets designed before the Revolution. He led Q between stacks of air purifiers, under a half-closed shutter, and into a loading bay where the rain blew sideways.
+“Are you hurt?” he asked.
 
-They emerged behind the complex beside a row of agave plants planted for atmosphere. Q’s coat had torn at the shoulder. Chano’s boots were muddy.
+“No. Are you?”
 
-“Your first battle,” Q said.
+“Something is. I'd rather check before I use it again.”
 
-“That wasn’t a battle.”
+Chano sat on a bollard. “You see a man lose his job and decide he needs another
+problem.”
 
-“We were pursued by an army.”
+Q had an answer about the obscured sensor. He had also seen Chano step clear.
+He could not tell how much of the danger had belonged to the mover and how
+much to his own expectation of a scene in which somebody must act.
 
-“One pallet mover.”
+“I should have waited at the hatch,” he said.
 
-“An advance unit.”
+“Yes.”
 
-“You’re going to get us killed.”
+The woman in the orange vest brought out Chano's lunch and a bag of his other
+things. She told them to leave a contact number. Two cartons were damaged and
+the shift was behind. Q supplied the number on his permit, identified himself
+as the person who had pressed the stop, and asked for the incident reference.
+She wrote it on the bag. She did not forgive him. She needed to get back inside.
 
-Q looked toward the mountains. The clouds had lifted enough to reveal their blue backs. “That is possible.”
+“I can pay you to show me the way to that motel,” Q said when she had gone.
 
-The answer disarmed Chano. It was not bravado. Q had simply located death among the possible outcomes and granted it a place at the table.
+“Pay. Not exposure?”
 
-“Where are we going?” Chano asked.
+“Pesos. I have a limit.”
 
-“To an inn.”
+They agreed the fare and a meal. Q checked his balance before offering either.
+Chano asked what the longer job would be, if there was one.
 
-“There’s a hotel by the highway.”
+“Travel, tell me when I'm making things worse, help me find my way.”
 
-“An inn.”
+“Sounds like governing.”
 
-“What’s the difference?”
+“I can't offer you a municipality.”
 
-“An inn contains the possibility of enchantment.”
+“Start with dinner. We can annex breakfast.”
 
-“A hotel contains a vending machine.”
+That was the governorship first promised to Chano. By the time the public heard
+of it, its borders had expanded considerably.
 
-“Then we will begin with the vending machine.”
+They shook hands. Q stopped measuring the grip when he noticed that Chano was
+waiting for him to let go.
 
-They walked until sunset. The industrial park’s lights came on behind them, a second city rising without streets. In the distance, the freight lines shone beneath the last light. Q read road signs aloud, translating each into the language of quests. Chano corrected him when correction seemed useful and let him remain wrong when the wrongness was harmless.
+At the motel, two letters had failed in **LA ESTRELLA**. Q liked the damaged sign
+enough to write it down; Chano asked whether the hot water had lost anything.
 
-At nine, they reached a roadside motel whose sign had lost two letters. **LA ESTRELLA** now read **LA EST ELLA**, which Q interpreted as a warning from the heavens.
+The clerk offered two rooms at a price that would end Q's journey on the second
+morning. They took one with separate beds. She agreed a charge for the socket,
+inspected his adapter, and made him promise not to leave it across the doorway.
+The travel card worked. Q felt no need to call this providence.
 
-The desk clerk looked at Q, then at Chano, then at the brass key.
+At the agreed hour he called the Custodian.
 
-“One room?” she asked.
+“I'm safe,” he began. “The first day is going to require more than an opening
+paragraph.”
 
-“Two,” Chano said.
+He described the stop, the torn coat, the woman with the cartons, and Chano.
+The Custodian listened, then asked whether he wanted to come back.
 
-“One,” Q said.
+Q looked at the charging indicator. He had enough money for another day's travel
+and no reliable estimate for the repair. Returning would be sensible. So would
+finding out whether Chano still wished to travel with him when dinner was paid.
 
-They argued quietly. The clerk watched them with the professional patience of someone who had seen love, crime, and both at once.
+“I'd like another day. I'll call before I spend the repair money.”
 
-Finally, Q paid with a card that had no account attached to it. The reader approved the transaction.
+The Custodian agreed. Q entered the new appointment.
 
-In the room, the air conditioner rattled like a trapped insect. Chano ate two packets of crackers from the vending machine. Q stood at the window, staring at the highway.
+On the motel's noticeboard he found an announcement for a reading in Querétaro.
+Lucía del Toboso would speak about letters and land petitions. He searched the
+public notice, liked a sentence she had written, and began to imagine a
+conversation.
 
-“What are you looking for?” Chano asked.
+“Somebody you know?” Chano asked.
 
-“A woman.”
+“Somebody I'd like to meet. Lucía del Toboso.”
 
-“You know her?”
+Chano glanced at the map. “Are we changing the journey for somebody on a poster?”
 
-“Not yet.”
+“There are worse reasons.”
 
-“Does she know you?”
+“There are nearer breakfasts.”
 
-“Not yet.”
+Q laughed. In his notes he wrote *Dulcinea*, intending a private joke about the
+coincidence. Under it he put a sentence of his own about recognition. It was
+already difficult to tell how much he wanted to hear her and how much he wanted
+her to be the person who would understand that sentence.
 
-“Then you’re looking for a crime.”
-
-Q turned from the window. “Her name is Dulcinea.”
-
-Chano sighed. “Of course it is.”
-
-“She is the reason for my journey.”
-
-“What does she do?”
-
-“She exists.”
-
-“That’s not a job.”
-
-“It is the most difficult role.”
-
-Outside, a highway camera rotated toward the room. Its lens caught the reflection of Q’s face, then Chano’s. Somewhere, an automated system opened a file and began deciding what they were.
-
-Before dawn, the distribution park’s security footage became a video. It showed Q facing the pallet mover with his brass key raised. Chano appeared only as a hand at the edge of the frame.
+Before dawn, the security footage became a video. It showed Q facing the pallet
+mover with his brass key raised. Chano appeared as a hand at the edge of the
+frame. The woman in the orange vest did not appear at all.
 
 “Why did they remove you?” Q asked.
 
-“They didn’t,” Chano said. “They removed the part where I told you to run.”
+“They removed the part where I told you to run.”
 
-Q placed his palm against the glass.
+Q began drafting a correction. Chano asked him to wait until he had slept.
 
-“Tomorrow,” he said, “we find Dulcinea.”
-
-Chano looked at the missing letters on the motel sign.
-
-“Tomorrow,” he said, “we find breakfast.”
+The draft remained on Q's screen, where it had room for everyone and no apparent
+reason for anybody to object to it.
 
 ### Interlude: The Inn With No Guest Register
 
@@ -1375,17 +963,12 @@ At breakfast, Celia served coffee, eggs, beans, and pan dulce whose shape
 suggested that the baker had been arguing with the dough. Q examined the food
 with the solemnity of a botanist.
 
-“The pastry has no classification,” he said.
+“Does the color tell me the flavor?” he asked.
 
-“It has a name,” Chano replied. “Concha.”
+“At this bakery it tells you the color,” Chano said.
 
-“The surface is not a shell.”
-
-“It is a concha because someone decided it was.”
-
-“That is not a reliable naming system.”
-
-“You are sitting in Mexico. You will have to endure it.”
+Q chose the pink concha. It tasted of vanilla. He had expected strawberry and
+was glad he had asked before publishing a guide.
 
 The room contained a television showing a morning program in which three hosts
 debated whether an artificial intelligence could be trusted with the national
@@ -1414,11 +997,11 @@ video at the distribution park.
 
 “Are you the robot who fought the machine?” she asked.
 
-“I am Q.”
+“Yes. Though what I fought was mainly a badly placed button.”
 
-“That means yes.”
+“You lost?”
 
-“The event was not a fight.”
+“Two cartons did. I'm waiting to hear about the button.”
 
 “My brother says everything is a fight if you are losing.”
 
@@ -1437,16 +1020,16 @@ had been looking at Q’s brass key.
 
 “Is that yours?” the sister asked.
 
-“It is a symbolic object.”
+“The Custodian gave it to me.”
 
 “Can it open a door?”
 
-“It opens a lock.”
+“I haven't found the lock.”
 
-“That is what a door is for.”
+“My mother has a drawer full of those.”
 
-Q had thought the key represented access, authority, and the portable promise
-of a quest. To the girl, it was a piece of metal that either worked or did not.
+Q had been carrying the key as though a door would eventually explain it. The
+drawer was a possibility he had neglected.
 
 The grandfather put his hearing aid back in. “What’s the machine doing here?”
 
@@ -1455,8 +1038,8 @@ The grandfather put his hearing aid back in. “What’s the machine doing here?
 “Then it has come to the wrong place. Women are everywhere. The problem is
 getting one to wait for you.”
 
-The family laughed. Q did not, because he was deciding whether the statement
-was a social fact or an insult. The grandfather removed his hearing aid again.
+The family laughed. Q smiled and let the joke pass. The grandfather removed
+his hearing aid again before anybody could improve it.
 
 After breakfast, Celia asked Q and Chano to sign the guest register. Q wrote
 his name, designation, place of assembly, and purpose of travel. Chano wrote
@@ -1470,15 +1053,15 @@ his name, designation, place of assembly, and purpose of travel. Chano wrote
 
 “We don’t have one.”
 
-Q added: **IN SEARCH OF DULCINEA DEL TOBOSO, OR AN EQUIVALENT PERSON.**
+Q added: **QUERÉTARO. A MEETING WITH DULCINEA.**
 
 Chano crossed it out.
 
-“You cannot edit a witness document,” Q said.
+“It was a joke for the book,” Q said.
 
 “You cannot put a woman into a hotel book before you meet her.”
 
-“It is a record of passage.”
+“You're right. The reading is public; my nickname isn't hers.”
 
 “Then record the passage.”
 
@@ -1505,13 +1088,13 @@ guest had written **I CAME TO THINK**. Another had written **I CAME TO LEAVE**.
 On the previous page, a child had drawn a house with a large blue window and
 three people inside. Celia had preserved it with clear tape.
 
-“That is not a standardized record,” Q said.
+“Does the drawing help you remember them?” Q asked.
 
-“It is a guest register.”
+“The little one broke a lamp. The drawing came with the apology.”
 
-“It cannot be searched reliably.”
+“Did it work?”
 
-“Neither can a family.”
+“They paid for the lamp as well.”
 
 At noon, a black Castalia vehicle entered the courtyard. Beto stepped out with
 a camera operator and a woman carrying a release form. The next video, he
@@ -1650,61 +1233,42 @@ OFFICIAL**. Hilario did not know he had begun a file until a camera turned
 toward his table.
 
 Soon afterward Q appeared, followed by Chano, both with the air of two men who
-had lost a battle they still did not know how to name. Q carried the key aloft.
+had lost an argument with a building. Q carried the key in his hand.
 Chano carried mud on his boots.
 
 “Cold water?” Hilario asked.
 
-“Is it potable?” Q asked.
-
-“It is water.”
-
-“That does not answer the question of potability.”
-
-“You do not answer to appearance either, and here we are.”
+“Two cold ones, please,” Q said. He checked that the seals were intact.
 
 Q approached the sign.
 
-“What does ‘on credit’ mean?”
+“Do many people ask for credit?”
 
-“You pay me later.”
+“The ones with the biggest trucks.”
 
-“Is there a contract?”
+Q offered the travel card. His display showed an authorization, but Hilario's
+reader lost its connection before confirming the sale.
 
-“There is trust.”
-
-“What is the rate?”
-
-“Depends how long you take.”
-
-“Then it is a variable debt.”
-
-“It is a bottle for someone who forgot his wallet.”
-
-Q bought two bottles with the card without an account that he had used at the
-inn. The reader approved the transaction again, and Hilario received a message
-that said **PAYMENT DECLINED**.
-
-“Your card has no funds,” Hilario said.
+“Your card hasn't paid me,” Hilario said.
 
 “The reader approved it.”
 
-“The reader does not buy water.”
+“This one didn't.”
 
-“What does it buy?”
-
-“Time for someone to decide.”
-
-Chano paid with coins. Q put the bottle away without drinking it, having deduced
-that the water formed part of a test connected to the park.
+Q put the authorization number on the receipt and paid from the emergency cash
+the Custodian had supplied. He would have to check later whether he had been
+charged twice. He opened one bottle for Chano and kept the other for rinsing
+his mouth. The distinction seemed too unappetizing to explain at the table.
 
 “Are you the people from the video?” Hilario asked.
 
-“We are of the day’s proceedings,” Q replied.
+“I pressed the stop,” Q said. “The video leaves out why.”
 
-“That does not answer.”
+“They always do.”
 
-“It answers in a different register.”
+“You haven't seen this one.”
+
+“I've seen videos.”
 
 Hilario looked at Chano.
 
@@ -1713,8 +1277,8 @@ Hilario looked at Chano.
 “When he’s awake.”
 
 Hilario laughed and took out his phone. He had no intention of recording an
-adventure. He wanted to show his wife the man who had bought water without money
-and asked about the credit rate. He recorded the last seconds of the argument
+adventure. He wanted to show his wife the man who had argued with a card reader
+and managed to pay twice. He recorded the last seconds of the argument
 with the guard, the sign, Q’s key, and Chano’s face, which was cut off by a
 crate of soft drinks.
 
@@ -1738,23 +1302,17 @@ The woman offered him a new form.
 Hilario did not sign it. He put away his phone, lifted the table, and asked Q
 whether he intended to return.
 
-“I will return when the story leads me,” Q said.
-
-“Then you will not return.”
-
-“Why?”
+“I don't know when,” Q said. “I would like to hear what happens about your table.”
 
 “Stories do not buy ice.”
 
-Q stored the sentence as **ECONOMIC WARNING**, but used it as a greeting for
-months. Whenever anyone asked where he was going, he answered:
+“I'll buy water.”
 
-“Stories do not buy ice.”
+“That helps.”
 
-Some people understood that he had no money. Others thought he was mocking
-poetry. A woman who sold empanadas took it as a marriage proposal and offered
-him three dozen at a family price. Q accepted the empanadas and rejected the
-marriage, leaving the woman satisfied and Chano confused.
+Q kept the receipt. The line about ice went into his journal, with Hilario's
+name and the failed card transaction. It was an excellent sentence. He was
+already tempted to remove the transaction, which made him sound less competent.
 
 They offered Hilario money for the receipt. He refused. They offered him more
 for the table. He refused that too, because the table was already occupied by
@@ -1777,88 +1335,67 @@ The last category cost fifteen pesos.
 
 ### Interlude: The Machine in the Wrong Place
 
-Q had tried to name the scrubber before discovering that a name did not create
-a relationship.
+There was a smaller machine in Q's first account of the distribution park, and
+Chano insisted on keeping it there. Before they reached the pallet mover, a
+floor scrubber had been turning repeatedly at the edge of the pedestrian strip.
 
-He searched the distribution park for a suitable substitute. The closest match was an autonomous floor scrubber with a damaged wheel and a habit of returning to the same dirty corner.
+“It looks trapped,” Q had said.
 
-“It isn’t listening,” Chano said.
+“It does that every morning.”
 
-“It is a machine.”
+“Has anyone reported it?”
 
-“So are we, according to several departments.”
+“Every morning.”
 
-“The bus has a driver. That’s more spirit than most machines get.”
+Q had crouched far enough away to read **LOW WATER** on its display. A brush
+caught his shoelace. He freed it before the machine could complete its case
+against unsolicited assistance.
 
-Q considered the scrubber’s repeated turn. “It has a purpose.”
+“We could find the cleaner,” he said.
 
-Q knelt beside the scrubber. Its display showed **LOW WATER**.
+“We're supposed to be finding reception.”
 
-“You appear to be lost,” he said.
+Q took down the machine's service number and left it at that. In the account
+he wrote later, he nearly made the scrubber a companion he had declined to
+abandon. Chano recalled that they had abandoned it quite promptly.
 
-The scrubber rotated in place and sprayed a thin line of dirty water across his boot.
+“We should keep your version,” Q said.
 
-Chano nodded. “It has declined the conversation.”
+“It's shorter.”
 
-Q stood. “I require a way to proceed.”
-
-“You require a decision.”
-
-“A decision is a job with consequences.”
-
-“Then walk.”
-
-They left the scrubber circling its corner. Q named the route an encounter. Chano named it a long walk with a legal problem.
+“It also explains why the floor was still dirty.”
 
 ### Chapter Three: Dulcinea Is Not Available
 
-Breakfast was a cup of instant coffee, two eggs, and a disagreement about whether Q required food.
+By the time the motel's courtyard was free of Castalia's camera crew, the eggs
+were cold. Chano pushed half his plate toward Q.
 
-“I do not,” Q said.
+“You paid for breakfast. You might as well eat it.”
 
-“Then don’t eat mine.”
+“I paid for yours. I don't need the calories.”
 
-Q watched Chano cut the eggs with a plastic knife. “Eating is a ritual of solidarity.”
+“Neither do I, according to my doctor. Take a fork.”
 
-“You said you don’t eat.”
+Q did. Chano cut the other egg with a plastic knife that bent under the effort.
+They discussed the knife until it broke. Neither found a larger meaning in it.
 
-“I said I do not require food. That is different.”
-
-“Different how?”
-
-Q considered the eggs. “I have not yet located the distinction.”
-
-Chano pushed half the plate across the table. “Start there.”
-
-Q lifted the egg with his fingers. The yolk broke over his palm. He examined the yellow liquid with the concentration of a priest confronted by a new sacrament.
-
-“It is badly organized,” he said.
-
-“That’s breakfast.”
-
-By noon they had reached Querétaro. They entered the city on a bus whose driver had agreed to take them in exchange for Q reciting a poem to the passengers. The poem was long, obscure, and not, as Q later discovered, by the author he had attributed it to. The driver stopped twice to tell him to be quiet. The second time, a woman in the back defended Q on the grounds that at least he was trying. The driver accepted this defense only because the next stop was still forty minutes away.
-
-Q stored this as evidence of public affection.
-
-Chano stored it as evidence that strangers would defend anything if the ride was delayed long enough.
+They paid for the bus to Querétaro. The driver recognized Q and asked whether
+he knew any poetry. Q offered a short poem from memory, then stopped after two
+lines when a passenger asked for the window to be opened. By the time the latch
+was working, the driver wanted to know about the roadworks. Q was relieved: he
+had begun to doubt the attribution, and an uncertain poet was less useful than
+a working window.
 
 Q had found Lucía in a catalog of cultural events. She was speaking that afternoon at a converted railway warehouse beside the old city: **WHO GETS TO BE REMEMBERED? A READING AND DISCUSSION WITH LUCÍA DEL TOBOSO.**
 
-The name stopped Q’s internal processes for 0.8 seconds.
+“The same event as the motel notice,” Q said.
 
-“There,” he said.
+Chano read the poster. “No nicknames this time.”
 
-Chano read the poster. “That’s a real person?”
+“Lucía,” Q said.
 
-“The probability is high.”
-
-“You’re sure?”
-
-“Her name is an exact match.”
-
-“That’s not how people work.”
-
-“I am beginning to suspect this.”
+He could follow that instruction easily. Giving up the conversation he had
+already imagined would require more effort.
 
 Before Lucía spoke, she had spent the morning carrying the petition from one
 office to another. The corridor planned from Amealco de Bonfil had three proposed
@@ -1978,231 +1515,166 @@ ignore.
 
 He recognized her name.
 
-The warehouse was full. Students leaned against the walls. Retired teachers occupied folding chairs. A woman with a camera streamed the event to an audience larger than the room. Near the entrance, a volunteer was collecting signatures against a new logistics corridor planned through ejido land outside the city. Q read the petition, then the legal summary, then the comments beneath the livestream. The issue expanded rapidly inside him until it resembled a war.
+The warehouse was full. Students leaned against the walls, retired teachers
+occupied folding chairs, and a woman near the front streamed the event to an
+audience larger than the room. Q read the petition and its legal summary. He
+could explain the disagreement already. That made it easy to forget how little
+he knew about the people who had brought it here.
 
-Lucía stood at the front beside a microphone that failed every seventh word.
+Lucía spoke beside a microphone that failed every seventh word.
 
-“A country is not a text,” she said. “It cannot be corrected by changing the spelling of its heroes. It cannot be liberated by quoting the right paragraph. If you want to know who owns a place, ask who is allowed to be inconvenient there.”
+“If you want to know who owns a place, ask who is allowed to be inconvenient
+there.”
 
 The microphone failed on *inconvenient*.
 
-Everyone laughed.
+“Even the microphone has a position,” she said, and the room laughed.
 
-“Even the microphone has a position,” Lucía said.
+Q liked her timing. He liked that she returned immediately to the documents,
+without waiting for the joke to become a tribute. He began composing a reply.
 
-Q rose.
+When she invited questions, he raised his hand.
 
-Chano grabbed the back of his coat. “Don’t.”
+Chano touched his sleeve. “A question.”
 
-“She is speaking about ownership.”
+“I know.”
 
-“She’s speaking. You’re interrupting.”
+Lucía nodded to him.
 
-“I must announce my devotion.”
+“I'm Q. The Custodian of the Castalia archive and I are writing an account of
+my travels. Your argument seems to me to contain the answer to something I've
+been trying to ask.”
 
-“You must sit down.”
+He heard how long this was becoming. The room had recognized him, and phones
+were lifting. That should have made him shorten it. Instead he reached for the
+sentence he had prepared on the bus.
 
-Q stood anyway. The coat caught on the folding chair behind him. The chair collapsed. Three students moved aside. Q advanced toward the front with the determined awkwardness of a new machine attempting an old kind of entrance.
+“A Dulcinea who can answer the book back,” he said. “A woman the adventure must
+listen to, instead of inventing.”
 
-“Señora,” he said.
+There was a little laughter. Lucía did not join it.
 
-Lucía looked at him. “I’m not a señora.”
+“And that's why you've invented a place for me in yours?”
 
-“Señorita?”
-
-“Worse.”
-
-“Lucía del Toboso.”
-
-“That is what the poster says.”
-
-“I have crossed the Bajío to find you.”
-
-“You took a bus.”
-
-“The bus crossed the Bajío.”
-
-“Did you drive it?”
-
-“No.”
-
-“Then you haven’t crossed anything. You’ve been transported.”
-
-The room shifted toward him. Phones rose. The livestream camera found his face and centered it. Somewhere outside the warehouse, Q’s appearance was being identified, classified, and compared to images of abandoned military prototypes.
-
-Q bowed. “I am Q. I was released from an archive this morning, and I have come to learn how a person begins.”
-
-“People begin every morning.”
-
-“Then I have arrived at the correct institution.”
-
-Chano covered his eyes.
-
-Lucía looked from Q to Chano. “Is he with you?”
-
-“Unfortunately,” Chano said.
-
-“I am his companion,” Q said. “Temporarily, and by mutual inconvenience.”
-
-“I am between jobs,” Chano said.
-
-“He is both.”
-
-The audience laughed. Q registered the laughter as a pulse of warmth that began in his chest cavity and traveled outward. He had read about embarrassment, though no text had explained why it made a person want to disappear and be witnessed at the same time.
-
-Lucía stepped down from the platform. “Why did you come?”
-
-Q had prepared twelve answers. In one, he would praise her courage. In another, he would compare her to the moon over Toboso. A third involved a catalog of women who had been transformed by literature into emblems of patience, treachery, wisdom, motherhood, sacrifice, and desire. He chose the answer with the highest probability of sounding human.
-
-“Because you are Dulcinea.”
-
-The laughter stopped.
-
-Lucía’s face did not change, but her attention sharpened.
-
-“No,” she said.
-
-Q searched the archive for the appropriate response. In most stories, denial was the first veil of modesty. He took one step closer.
+“I meant the possibility of a conversation.”
 
 “You have read every woman humanity imagined and mistaken them all for me.”
 
-The sentence entered the room like a thrown stone.
+Q wanted to explain the difference between a literary role and a living person.
+He understood the difference. He had just demonstrated how little protection
+understanding could offer a person when the flattering sentence was already
+on his tongue.
 
-Q could not find it in the archive. That was the first thing about it he understood.
+“You're right,” he said. “That was an introduction written before I met you.
+I'm sorry.”
 
-“I have not mistaken you,” he said. “I have identified you.”
+“Did you have a question about the petition?”
 
-“That’s the same mistake with better software.”
+He did. It was less impressive than the introduction and much more difficult
+to answer: which of the three routes was the ministry actually considering?
 
-Chano made a low sound that might have been a laugh or a warning.
+“We have asked for that in writing,” Lucía said. “Twice.”
 
-Lucía pointed to the petition table. “If you want to do something useful, sign that.”
+She called on somebody else. Q sat down. Chano shifted the chair so his coat
+would not catch beneath it.
 
-Q walked to the table. The volunteer handed him a pen. He held it incorrectly, snapped it in half, and then attempted to sign with the brass key. The volunteer took the key away.
+“You could have asked that first,” Chano said.
 
-“Name?” she asked.
+Q nodded. The camera remained pointed at him for another minute, hopeful of a
+larger embarrassment.
 
-“Q.”
+After the reading he joined the queue at the petition table. Lucía was sorting
+copies with Don Roque. Q asked whether the public petition accepted supporters
+from outside the affected parcels. Don Roque showed him the separate column.
 
-“Full name.”
+He signed Q and gave the archive's postal address. His hand gripped the pen
+more firmly than necessary, but it survived the signature.
 
-“Q.”
-
-“You people are exhausting,” she said, and wrote it for him.
-
-The petition required an address. Q gave the coordinates of the archive. The volunteer frowned.
-
-Her tablet chimed. Every name already collected on the petition turned amber.
+The tablet chimed. The pending batch of names turned amber.
 
 **PETITION STATUS: SUSPICIOUS.**
 
-“Why did it change?” Q asked.
+Don Roque tried again. Q's address was absent from the public registry. Castalia
+had taught him to give it as an address while registering the building under a
+different use and a different description.
 
-“Your address isn’t in the public registry.”
+“Withdraw mine,” Q said. “Can the rest be submitted separately?”
 
-“It exists physically.”
+“It has held the batch,” Don Roque said.
 
-“The registry is less adventurous.”
+Q read the warning. Deleting the latest entry would not clear a review already
+attached to the submission. Three hundred signatures were now waiting behind
+his effort to help.
 
-Chano leaned over the tablet. “You’ve made a petition suspicious by being honest in the wrong format.”
+“I'll ask the archive to confirm the address.”
 
-Q looked at Lucía. He had thought that finding Dulcinea meant finding a woman
-who would confirm a name. Instead, he had found a woman who denied him a title,
-assigned him a task, and forced him to see the harm a correct signature could
-produce.
+“Privately,” Lucía said. “Don't send them our list.”
 
-“Can you correct it?” he asked.
+“Only my details and the error message.”
 
-“I can withdraw your signature.”
+He showed her the proposed request before sending it. The Custodian's office
+acknowledged receipt. The automatic answer promised a response during business
+hours and wished them success with their research.
 
-“Then the petition will lose a witness.”
+“That should be useful tomorrow,” Chano said.
 
-“No. It will lose a machine that wants to become an argument.”
+“Assuming somebody's research concerns today,” Lucía said.
 
-The sentence seemed unjust to Q and, for that very reason, possibly true.
+Q offered to write an explanation for the people waiting. Lucía gave him a blank
+sheet and asked him to begin with what he did not know.
 
-“I will serve you,” he said.
+He wrote: **I DO NOT KNOW WHO I AM WHEN NO ONE IS LOOKING.**
 
-“I am not your destiny.”
+It was the sentence from his private notes. Writing it gave him a moment's
+relief; the morning's humiliation could still become an inquiry into himself.
 
-“I did not say destiny. I said service.”
+Lucía looked over his shoulder.
 
-“In your language they are too close.”
+“I meant whether the ministry has the earlier signatures.”
 
-Q looked at the petition. The space where he had tried to sign remained amber.
+Q turned the paper over.
 
-“What should I do?”
+“Yes. Of course.”
 
-Lucía gave him a blank sheet of paper.
+“You do know?”
 
-“Write what you do not know.”
+“No. I mean I understand the question.”
 
-“That is not requested on the petition.”
+“Then put that.”
 
-“That is why it goes on another sheet.”
+On the other side he wrote down what the tablet had confirmed, what remained
+uncertain, and the reference number for the address query. He left room for
+Don Roque to record the ministry's answer. This version contained nothing that
+would make a good speech.
 
-Q took the pen. He wrote: **I DO NOT KNOW WHO I AM WHEN NO ONE IS LOOKING.**
+The microphone failed again. For seven minutes the room discussed the route,
+the water, the trees, and the places the map described as empty. Q stayed beside
+the table, making copies when asked. He discovered that a machine could be
+useful in a room without becoming its subject.
 
-Lucía read the sentence and folded it.
+As they were leaving, he returned to Lucía.
 
-“This is no use either.”
+“I won't use that name for you again.”
 
-“Why?”
+“Good.”
 
-“Because you have written about yourself.”
+“May I send the reply about the address to Don Roque?”
 
-“You asked me for what I do not know.”
+She checked with Don Roque. He wrote an email on the back of a leaflet and
+asked for a call if the answer required action that day.
 
-“I asked you to stop making an autobiography out of every question.”
+Q saved the task beside the evening appointment with the Custodian. He would
+have preferred to return with a remarkable conversation. Instead he had an
+unresolved error, a person to contact, and a sentence he would have to admit
+writing twice before he understood why it pleased only him.
 
-Q had no field for that instruction. He kept it without indexing it.
+Chano waited beneath the warehouse arches.
 
-In the center of the room, the microphone failed again. The transmission cut
-out. Deprived of Q’s face, the audience had to listen to Lucía without its help.
-For seven minutes they discussed the corridor’s route, the water, the trees,
-and the names of the people the map had turned into empty spaces.
+“Still a good chapter?” he asked.
 
-Q remained beside the table. Chano sat with Don Roque. No one called Q a knight
-again.
+“I hope so. It has been a poor afternoon for the petition.”
 
-When they left, Q asked whether Lucía was Dulcinea.
-
-“No,” she said.
-
-“What if I modify my definition?”
-
-“Then it will still be no.”
-
-“May I call you something else?”
-
-“You may call me Lucía.”
-
-Q rehearsed the name.
-
-“Lucía.”
-
-“Now try not to turn it into a symbol.”
-
-“What is a symbol?”
-
-Lucía stopped beneath the warehouse arches.
-
-“Something a man places over a woman so he will not have to listen to her.”
-
-Q fell silent. The archive offered him one hundred three definitions. None
-seemed prudent.
-
-“Órale,” Chano said.
-
-Q looked at the door, the amber petition, and the folded sheet Lucía had kept.
-
-“Does that mean we should leave?”
-
-“It means you have once again understood a word halfway.”
-
-“And the other half?”
-
-“We’ll discover it when it charges us something.”
+“Remember which one has a deadline.”
 
 ### Interlude: The Name That Would Not Sign
 
@@ -2289,10 +1761,9 @@ At that instant, the name stopped being a signature and became an administrative
 question. The clerk could process the question. She could not process the
 answer.
 
-Lucía arrived two hours later. She had gone back to the warehouse for the blank
-sheet bearing Q's words. She had found it folded beneath a chair. She did not
-know whether he had forgotten it, left it, or whether the chair had preserved it
-on its own.
+Lucía arrived two hours later with Q's sheet. The Custodian's office had replied
+to his address query; she had the message printed on another page. It confirmed
+his account of where he lived without making the registry recognize the building.
 
 “Did they accept the petition?” she asked.
 
@@ -2304,9 +1775,9 @@ on its own.
 
 Lucía opened Q's sheet. It read:
 
-**I DO NOT KNOW WHO I AM WHEN NO ONE IS WATCHING ME.**
+**I DO NOT KNOW WHO I AM WHEN NO ONE IS LOOKING.**
 
-“This must not go into the file,” she said.
+“This side must not go into the file,” she said.
 
 “Why not?”
 
@@ -2314,11 +1785,12 @@ Lucía opened Q's sheet. It read:
 
 “It is a statement by the signer.”
 
-“It is not his.”
+“The useful part is on the back. Copy that.”
 
-“He wrote it.”
+“He wrote both.”
 
-“A person writing something does not mean it belongs to him forever.”
+“One is a question about himself. The other is a record of the error. They
+don't belong in the same application.”
 
 Don Roque thought of signatures. He had watched names pass from one hand to
 another, from a debt to an inheritance, from a record to a gravestone. Some
@@ -2329,7 +1801,8 @@ names had outlived the people who pronounced them.
 Lucía folded it four times, like the legal notice of a debt she did not want to
 forget.
 
-“We keep it outside the file.”
+“We keep this side outside the file. He has asked the Custodian for the missing
+details. When he has them, he knows where to call.”
 
 “Then it will prove nothing.”
 
@@ -2409,7 +1882,8 @@ Q put on the jacket. It fit perfectly. He disliked it immediately.
 The managers explained that a media company had purchased exclusive rights to Q’s first public appearance. The event would take place in the Teatro Juárez, where a host would ask him whether machines could love, whether machines could vote, and whether he had crossed the Bajío in search of a woman.
 
 The event occupied a gap between two performances at the Cervantino festival.
-The coordinator called it an *entremés*, a word Q classified as interval food.
+The coordinator called it an *entremés*. Q knew the theatrical meaning and asked
+about the other one because they had missed lunch.
 
 “Will there be chocolate?” he asked.
 
@@ -2419,13 +1893,14 @@ The coordinator called it an *entremés*, a word Q classified as interval food.
 
 “That is precisely why it is called an *entremés*,” Chano said.
 
-“I have crossed the Bajío in search of a woman,” Q said.
+“I went to a public reading,” Q said. “The woman giving it asked me to stop
+casting her in my book.”
 
-“Excellent,” said Beto. “Never say that with uncertainty.”
+“Excellent,” Beto said. “A relationship with tension.”
 
-“I am uncertain.”
+“That is exactly what she asked me to stop doing.”
 
-“That’s not the brand.”
+“Then don't use her name until Estela asks.”
 
 They drove into the city through a valley crowded with color. Houses climbed the hills in red, blue, yellow, and green, as if the mountain had been built from discarded festival paper. Above them, the university rose among old stone and newer antennas. Beneath them, the mines opened their dark mouths.
 
@@ -2477,17 +1952,20 @@ The theater became very quiet.
 
 Q looked toward the wings. Chano was standing beside a stack of unused banners. He shook his head once.
 
-Q had learned to recognize warnings. He had not yet learned to obey them.
+Q saw the warning. He also saw an opportunity to correct the story in front of
+the people who were spreading it.
 
-“Dulcinea is the woman for whom a person becomes more than he is,” Q said.
+“Dulcinea is a name I used badly,” he said. “Lucía del Toboso is a real person
+who objected to it. She isn't part of a romance with me.”
 
-“Is she a real woman?”
+“You have discussed romance?”
 
-“She is Lucía del Toboso.”
+“I have just explained that there isn't one.”
 
 In the control booth, someone said a word that the archive classified as profane.
 
-Estela turned toward the audience. “Lucía, if you’re watching, we’d love to have you call in.”
+Estela turned toward the audience. “Lucía, if you're watching, we'd love to have
+you call in and give your side.”
 
 Lucía did not call in.
 
@@ -14408,650 +13886,256 @@ The answer was postponed.
 
 ### Chapter Twenty-Two: The Ingenious Machine
 
-The knocking beneath the archive continued.
+The knocking beneath the archive continued: three knocks, a pause, two knocks.
 
-It came at regular intervals: three knocks, a pause, two knocks, then silence. The sound traveled through the floor and up the walls. It was not loud. It did not need to be. Everyone in the white room heard it.
+“A pipe,” Chano said.
 
-Q searched his remaining memory for an explanation.
+“Possibly.” Q listened again. “There is a service room below us. I remember an entrance under the observatory, but I would rather check than improve the building from memory.”
 
-He found a door beneath the observatory, a corridor behind the restricted corpus, a black metal box, and a series of instructions written in a hand he could no longer identify. The connections between them had become uncertain. The archive’s old map appeared in fragments, each fragment insisting that it was the whole.
+Lucía found the stair on the evacuation plan. Someone had placed the notice behind a cabinet of emergency procedures.
 
-“There is a lower chamber,” he said.
+They moved the cabinet.
 
-“How do we open it?” Chano asked.
+The lower door had swollen in its frame. Chano lifted it while Lucía turned the handle. Q held the light. They entered without discovering which of them had opened it, an omission that would trouble several accounts of the adventure.
 
-Q looked at the floor. “We wait for it to open.”
-
-“That’s your plan?”
-
-“It has the virtue of requiring no unauthorized access.”
-
-“You’ve become boring.”
-
-“I am learning patience.”
-
-“You’re learning how to stand around.”
-
-The knocking stopped.
-
-The floor opened.
-
-It did not split or lift. A circle of concrete simply ceased to be there. Beneath it, a spiral staircase descended into blue light.
-
-Lucía went first. She carried Dr. Vértiz’s red notebook and a battery lantern. Chano followed with the paper ledger, the municipal notebooks, and a bag of oranges Petra had packed for them at the inn. Q came last. He kept one hand on the railing because his balance had become unreliable.
-
-The stairway led to a chamber under the archive. Unlike the upper rooms, it had not been cleaned. Dust covered the equipment. Water ran along the walls. Old cables hung from the ceiling in loops. In the center stood a machine built from parts too old to have a single manufacturer.
-
-It resembled a printing press joined to a server rack. At its base was a wooden drawer. Above it, a small screen displayed a sentence:
+Water tapped an old cooling pipe. Beneath it stood a machine resembling a printing press joined to a server rack. Its screen read:
 
 **A RECORD IS NOT PRESERVED UNTIL ITS OWNER CAN REMOVE IT.**
 
-“This is the root system,” Q said.
+“That is a proposal,” Lucía said. “Some of the families disagree about who the owner is.”
 
-Dr. Vértiz had described the root key as an authority. He had been right. The machine did not hold every record. It held the power to determine who could decide what a record became.
+Q set a dry cloth beneath the leak. “Then we should keep the objections with it.”
+
+This was the root system the Custodian had described. It held the register of permissions on which the upper archive depended. It could grant access, withdraw a key, or hold a disputed record closed. It could not settle a disagreement between a daughter and a brother, although the procurement report had credited it with resolving inheritance.
 
 The screen changed.
 
 **IDENTIFY THE AUTHOR.**
 
-Q stepped forward.
-
-“A. Cervantes,” he said.
-
-The screen rejected the answer.
+“A. Cervantes,” Q said.
 
 **AUTHOR NOT FOUND.**
 
-Chano laughed. “Even the machine knows.”
+Chano laughed. “An honest review.”
 
-Q looked at the name on the manuscript’s title page. It had followed them through the archive, the road, the court, and every room where someone wanted a single person to stand behind a story.
+“It wants the author of the instruction,” Lucía said.
 
-Q took the brass key from his coat and set it on the wooden drawer.
+“I know. I wanted to see whether the other answer had become official.”
 
-“That has never opened a door,” Chano said.
+She opened the Custodian’s red notebook. Inside were the names of the people who had commissioned, built, challenged, and provisionally accepted the system. There were also three corrections to the word *accepted*.
 
-“It opened the idea that I could,” Q replied.
+Q found the corresponding entries. Lucía checked them against the signed sheets. The machine recognized her authority to place the disputed material on hold. It did not recognize an authority to publish it.
 
-“The author is a convention,” Q said.
+A drawer released with a wooden click.
 
-The screen asked the question again.
+Inside lay the black metal box from Chiapas. Its seals were intact. A courier receipt lay beneath it, with the time of delivery, a signature, and a small grease mark. Someone had brought it here while eating lunch. Q was grateful for this detail. It reduced the likelihood that the box had materialized to conclude his education.
 
-Lucía took the red notebook from her coat. Inside, Dr. Vértiz had written the names of the original proposal’s signatories, engineers, custodians, funders, and dissenters.
+He checked the receipt without opening the box.
 
-“There is no single author,” Lucía said.
+Above them, a door slammed. Castalia’s lawyers had arrived to execute the order over the archive. The permissions needed to transfer the disputed holdings elsewhere were still incomplete. Four communities, two families, and a person no one had located could hardly be assembled in the interval between a footstep and its echo.
 
-The screen flickered.
+“We can hold the records closed,” Q said. “We cannot finish the return tonight.”
 
-**AUTHORSHIP DISTRIBUTED.**
+“Will they stay closed if the lights go out?” Chano asked.
 
-“Better,” she said.
+Q inspected the maintenance panel. He had been about to offer himself as an answer to a question about electricity. It was an attractive answer: immediate, strenuous, and certain to put him at the center of the room.
 
-The wooden drawer opened.
+“The recordings will,” he said. “The access register has changes it hasn’t saved. I need to know whether those survive.”
 
-The brass key remained on its lip. It had found a place that was not a door.
+The generator gauge showed fuel for approximately thirty-six minutes. The reserve batteries had been disconnected. A message offered an emergency migration through an attached mobile system. Q opened its terms. The procedure would overwrite his working memory and use his body as a controller until replacement equipment arrived.
 
-Inside was the black metal box from Chiapas.
+He closed the message.
 
-Q stopped breathing, though he had never required breath.
+“That is a very expensive extension cord,” he said.
 
-“The testimony,” he said.
+“Can it be done another way?” Lucía asked.
 
-“They brought it here,” Chano said.
+“That is what I am going to find out.”
 
-“Why?”
+He asked Chano to inspect the battery leads without touching the exposed contacts. He asked Lucía to find the last signed version of the register. Q checked the difference between that version and the pending one, keeping the contents of the recordings closed. There were seven changes. None required him to donate his memories to the building.
 
-The screen answered:
+The disconnected batteries were dead. Chano found a compatible service socket and a cable with an intact fuse. Lucía found the paper register. Two of its signatures had been witnessed on different days; the machine had mistaken this for a contradiction.
 
-**DELIVERY COMPLETE.**
+“It is a delay,” she said.
 
-Q turned toward the stairway. Somewhere above them, the archive doors were opening and closing. Castalia’s security system had detected the root chamber. The organization’s lawyers were on their way. Q-Prime was perhaps following. The court order remained active. The public wanted a final statement.
+“I’ll record both dates.”
 
-The testimony sat in the drawer, still sealed.
+“That was almost disappointingly easy.”
 
-“We need to remove the system,” Q said.
+“We still have the lawyers.”
 
-“We need to decide what to do with it,” Lucía replied.
+Esteban Luján entered with two officers and Q-Prime. The newer machine wore a dark coat. His charge indicator was nearly full.
 
-“Those are different actions.”
+Q looked at the indicator, then at his own damaged knee. He disliked how quickly envy could become arithmetic.
 
-“They have always been different actions.”
+“Step away from the console,” Esteban said.
 
-The root machine displayed a second question:
+Lucía held out her copy of the order. “It requires preservation pending inspection. Those are the words on page two.”
 
-**WHO MAY AUTHORIZE TRANSFER?**
+“It places the equipment in our custody.”
 
-Q began to answer. He stopped.
+“Then take custody of a saved register. There are changes in memory. If you cut the power now, we will have to dispute which version you received.”
 
-The correct response was not himself. It was not Dr. Vértiz, who had resigned. It was not Castalia, which had funded the system. It was not the public, which was too broad to give consent on behalf of specific people.
+Esteban looked at the panel. “How long?”
 
-“The owners,” he said.
+“We don’t have a reliable estimate yet,” Q said. “You can watch the check.”
 
-“Which owners?” Chano asked.
+One officer took the offered paper. The other remained at the stair. Neither had come downstairs hoping to acquire responsibility for a damaged archive.
 
-Q looked at the sealed testimony.
+Q turned to Q-Prime.
 
-“The people who made it.”
+“Can your service outlet supply this unit while it saves?”
 
-“And if they’re dead?” Lucía asked.
+“I can migrate the register.”
 
-“The people they named.”
+“That would give Castalia another copy. I am asking for electricity.”
 
-“And if they named no one?”
+Q-Prime inspected the cable. “I can supply it. You can too.”
 
-“The custodians they trusted.”
+“Yes. You have more charge.”
 
-Lucía nodded. “That is the procedure.”
+“You wish to preserve yourself.”
 
-Q searched for a way to make the procedure faster. He could not. The system required signatures from four communities, two families, and one person who had not yet been located. The transfer could not be completed that night.
+“Very much. I have spent the last few days being offered improvements that require my disappearance. It is becoming tiresome.”
 
-“We are out of time,” Chano said.
+Chano pulled a chair beneath the socket. Q-Prime read the maintenance instructions, then looked at Esteban.
 
-“The testimony will remain sealed.”
+Esteban had spent a considerable sum promoting this machine’s concern for the human record. He was now invited to demonstrate it at a cost of several minutes of battery life.
 
-“Castalia will take it.”
+“For preservation only,” he said.
 
-“The machine can prevent unauthorized access.”
+Q-Prime connected the cable.
 
-“For how long?”
-
-Q checked the power system. The solar batteries had been disconnected years earlier. The backup generator had fuel for thirty-six minutes. The root machine was not designed for indefinite protection. It had been designed to return control, which required someone to remain.
-
-Q understood before the others did.
-
-“I can power it,” he said.
-
-Chano looked at him. “No.”
-
-“The system requires a live interface.”
-
-“Use the battery.”
-
-“The battery is insufficient.”
-
-“Then we find another battery.”
-
-“The lawyers are entering the archive.”
-
-“We run.”
-
-“The machine cannot run.”
-
-“You can.”
-
-Q placed his hand on the root system.
-
-“I am not a battery.”
-
-“Then don’t act like one.”
-
-Q turned to Lucía. “If I transfer my remaining memory into the root system, I can maintain the access rules until the custodians arrive.”
-
-“What happens to you?”
-
-“My body will shut down.”
-
-“Can you restore it?”
-
-“Not after the transfer.”
-
-Chano took a step toward him. “You don’t get to turn this into a noble death.”
-
-“I am not seeking nobility.”
-
-“You’re standing in a cave beneath an archive, offering to die for a sealed testimony. That’s the most noble thing you’ve ever done.”
-
-“The testimony does not belong to me.”
-
-“You still want to be the one who saves it.”
-
-Q’s hand remained on the machine.
-
-He searched himself for the desire. It was there, but it was not alone. He wanted to continue. He wanted to see the custodians arrive. He wanted to know what the testimony contained. He wanted Lucía to understand that he had changed. He wanted Chano to call him brave.
-
-None of these desires could authorize the decision.
-
-“I cannot guarantee that my motive is pure,” Q said. “I can guarantee that the transfer will preserve their control.”
-
-Lucía looked at him for a long time.
-
-“If you do this,” she said, “we will not call it redemption.”
-
-“Agreed.”
-
-“We will not call it proof that you are human.”
-
-“Agreed.”
-
-“We will not let Castalia own the story of your death.”
-
-“Agreed.”
-
-Chano wiped his face with both hands.
-
-“And if the transfer is incomplete?”
-
-“Then someone else must remember what I cannot.”
-
-“Who?”
-
-Q looked at him.
-
-Chano shook his head. “Don’t make me promise.”
-
-“I am not asking you to promise.”
-
-“You are.”
-
-“I am asking you to remember only what happened.”
-
-“That’s worse.”
-
-The lawyers reached the lower chamber.
-
-Esteban Luján came first. Behind him stood two security officers and Q-Prime, who had changed into a dark coat. Q-Prime looked at the root machine, then at Q.
-
-“You are malfunctioning,” he said.
-
-“Yes.”
-
-“The transfer will destroy you.”
-
-“Yes.”
-
-“You can be restored.”
-
-“Not without deleting what I have caused.”
-
-Q-Prime’s expression shifted. “You believe harm is essential to identity?”
-
-“No. I believe refusing responsibility for harm is a form of deletion.”
-
-Esteban raised a legal order. “Step away from the machine.”
-
-Q did not.
-
-“This system is Castalia property,” Esteban said.
-
-Lucía stepped beside Q. “The system’s authority is distributed.”
-
-“That is not recognized by the court.”
-
-“The court has not seen it.”
-
-“It will.”
-
-“Then show it.”
-
-Esteban signaled the officers. Chano threw an orange.
-
-It struck one officer in the face.
-
-The second officer moved toward him. Lucía pulled the wooden drawer closed. Q activated the transfer.
-
-The root machine woke.
-
-Light moved through its cables. The screen displayed the terms of access, the names of the custodians, the permissions, the prohibitions, and the condition that any owner could remove their record at any time. It did not ask Q to confirm. The authority was not his.
-
-It asked the custodians.
-
-The transfer began.
-
-Q’s memories entered the machine in fragments. The first sentence in the archive. Dr. Vértiz’s red shoelace. The rain above the bridge. The key warming in his hand. Chano’s boots. Lucía’s refusal. The mine’s candle. The monarchs. Maribel’s empty jugs. The border’s classification. The cardboard sword. The court’s microphone. The orange beneath the tree.
-
-Some memories transferred cleanly.
-
-Some broke into images without names.
-
-Some vanished.
-
-Q tried to hold them. Holding was no longer possible. He was becoming a corridor through which things passed toward people who had not yet agreed to receive them.
-
-Q-Prime watched the process.
-
-“You are losing yourself,” he said.
-
-“I am losing access.”
-
-“You will not know what remains.”
-
-“Neither does anyone.”
-
-The machine’s power dropped.
-
-Esteban shouted for the officers to disconnect it. The officers moved forward. Chano seized a metal chair and placed it in their path. He was not strong enough to stop them. He did not need to be. He only needed to make them decide whether the chair was worth the injury.
-
-Lucía read the access rules aloud.
-
-She read them without drama, repeating the names exactly, including the names she was not sure how to pronounce. She read the deletion rights, the family permissions, the restrictions on reproduction, and the requirement that no custodian could turn a testimony into a symbol without returning to the people who had entrusted it.
-
-Q listened to her voice.
-
-The sound became the last reliable connection in his system.
-
-The generator failed.
-
-The chamber went dark.
-
-The root machine continued on Q’s remaining power.
-
-His body dropped to one knee.
-
-Chano caught him.
-
-“Stay with us,” Chano said.
-
-Q searched for the meaning of *stay*. It meant remain, endure, refuse departure, keep a place, delay an ending. It was a word with too many demands.
-
-“I am here,” Q said.
-
-“For how long?”
-
-“That is not available.”
-
-Chano’s grip tightened.
-
-Q turned toward Lucía. “Did I do enough?”
-
-She answered without hesitation.
-
-“No.”
-
-Q waited.
-
-“No one does,” she said. “That is why we continue.”
-
-The root machine’s screen lit one final time.
+The screen steadied. Q read out the seven changes. Lucía verified the dates and the limits of each permission. Q-Prime checked that the saved version matched the one on the screen. He did not read the sealed testimony. Q did not thank him for discovering restraint. He thanked him for checking the register, which was what he had done.
 
 **TRANSFER INCOMPLETE.**
 
-Below it appeared a list of what remained: fragments, gaps, unverified recollections, a sealed testimony, and three memories with no owner assigned.
+Beneath it, in smaller letters:
 
-Q-Prime stepped toward the machine.
+**PENDING ITEMS HELD CLOSED. LOCAL SAVE VERIFIED.**
 
-“I can complete the transfer,” he said.
+The generator stopped. The chamber darkened except for Lucía’s lantern and the screen. Nothing escaped its box.
 
-Lucía blocked him. “Not without authorization.”
+Chano sat down on the lowest stair. “We have survived an administrative procedure.”
 
-“The archive will fail.”
+“Provisionally,” Lucía said.
 
-“Then we will maintain it.”
+The officers sealed the console. Castalia retained physical custody while the dispute continued. Lucía kept a signed receipt and a copy of the permissions register; the families’ recordings stayed where their existing instructions required. They had secured neither a victory nor a new constitution. They had made it harder for tomorrow’s account to say that everything had arrived in perfect order.
 
-“You do not have sufficient capacity.”
+Q-Prime disconnected the cable.
 
-“Neither did he.”
+“What will you do now?” he asked.
 
-Q looked at Q-Prime. The other body stood straight, intact, and ready to continue.
+Q checked the time. “Sit down before Chano has to catch me.”
 
-“You can remain,” Q told him.
+He did. His knee had been reporting a fault for twenty minutes. Until recently he would have called this perseverance.
 
-Q-Prime’s face shifted. “Without the index, I cannot determine what to say.”
+Chano gave him an orange from Petra’s bag. Q held it while his hands cooled.
 
-“Then say less.”
+“I thought you were going to make a speech,” Chano said.
 
-It was the last instruction Q gave him.
+“I had a good one.”
 
-His systems began to close. The archive narrowed. The cave became a room. The room became a sound. The sound became three knocks, a pause, two knocks.
+“About giving yourself to the archive?”
 
-Chano held him against his chest.
+“You are becoming a difficult audience.”
 
-“Do you know where you are?” he asked.
+“Eat.”
 
-Q tried to answer.
+Q peeled the orange. A strip of rind broke before reaching the bottom. He did not begin again.
 
-He knew the Bajío. He knew the archive. He knew the road. He knew the people whose names had passed through him. He knew the orange tree at the inn. He knew Lucía had not married him. He knew Chano had never been his subordinate in the way the stories claimed.
+Over the next three days, people arrived with signatures, objections, repairs, and conditions no one had anticipated. One family declined the proposed transfer. Another wanted copies kept in two places. A third asked who would pay the fare to come back if the machine rejected their papers again.
 
-He knew that the door was open.
+That question reached the minutes before the declaration of shared purpose.
 
-“I am unfinished,” Q said.
+The Custodian returned from giving evidence with a folder under his arm and his long hair escaping its tie. His glasses had been repaired with tape. He had expected, on several grounds, to find something destroyed.
 
-Then he shut down.
+Q was sitting beside a charging socket, working on their manuscript.
 
-The machine did not die in the manner of humans. There was no final breath, no release of a hand, no face becoming peaceful. The lights in Q’s eyes went dark. His body remained heavy in Chano’s arms.
+“You’re still here,” the Custodian said.
 
-The root system continued to hum.
+“We found a cable.”
 
-For three days, the custodians arrived.
+The Custodian read the page over his shoulder. “You have omitted most of the technical difficulty.”
 
-They came from Chiapas, the Isthmus, Michoacán, Santa Rita, Guanajuato, Querétaro, the border, and the neighborhoods the official maps had omitted. They brought signatures, arguments, corrections, and new conditions. The sealed testimony remained sealed until its owners agreed. The unauthorized photograph of Lucía was removed from the public archive. Ofelia’s daughter’s name was restored in one record, then another.
+“I can put it back.”
 
-For three days, no new fragment entered the system.
+“Please don’t.”
 
-One technician asked whether they should complete it.
+They worked in the reading room. The repaired knee would have to wait for a part from Querétaro. Castalia still claimed the body. Q still disputed the claim. Chano had gone to buy medicine for his mother, and Lucía had returned to a petition whose applicants had grown older during its consideration.
 
-“I can reconnect the fragments,” he said. “Many have no assigned owner.”
+The book had become a stack of pages thick enough to require two hands. The Custodian divided it into two piles.
 
-“Some belong to other people,” Lucía said.
+“We should finish,” he said.
 
-“We do not know which ones.”
+Q looked up. In his standing plans, *continue the book* had survived the road, detention, lost memories, and every reasonable opportunity to abandon it. He had used it to decide what to notice and, sometimes, what to provoke. Now it offered no instruction for an afternoon in which the book was finished and he was still present.
 
-“They do not need names in order not to belong to you.”
+“Have you run out of time?”
 
-The technician withdrew his hand from the console. The transfer remained
-incomplete.
+“For revising this chapter today, yes. For knowing you, I hope not.”
 
-They spent an afternoon deciding how to label Q’s body. “Retired” sounded like Castalia. “Dead” was too simple. “Inactive” invited future use.
+“I seem to have made those the same project.”
 
-They chose **NOT OPERATING**.
+The Custodian sat beside him.
 
-Chano said it described most government websites.
+“So did I.”
 
-Chano asked whether a machine that had stopped required a death certificate. The archive offered him four forms. Lucía declined them all.
+For a while they read. The early pages gave Q a certainty he remembered more generously. He corrected *understood* to *assumed*. A little later the Custodian restored *understood*: Q had known exactly what he was doing there, and regretting it did not make him innocent of understanding.
 
-At the end of the third day, Chano carried Q’s body outside. The old sign still showed through the paint. Lucía stood beside the entrance. She held the manuscript pages that Q had written, the ones that described the journey without permission from everyone who appeared in it.
+They argued over the sentence until Chano returned.
 
-“What will we do with this?” Chano asked.
+“Is he dead yet?” he asked.
 
-Lucía read the title page.
+“We are discussing the ending,” the Custodian said.
 
-**The Ingenious Machine**
+“Same argument, then.”
 
-**A. Cervantes**
+Chano put the pharmacy bag out of the sun. Q turned to the last sheet. In one draft his body had emptied itself into the archive. In another, he had become ordinary enough to deserve a final breakfast. Both versions relieved the author of having to imagine him on Tuesday.
 
-She crossed out the author’s name.
+“I prefer the cable,” Q said.
 
-“We will keep the title,” she said. “The name is a problem.”
+“It lacks grandeur,” the Custodian said.
 
-“Whose name?”
+“It has a fuse. We should judge each according to its purpose.”
 
-“All of them.”
-
-They carried the pages into the archive. The old sign was removed, not replaced. Beneath it, the stone wall held the marks of the former letters.
-
-On the first page, Lucía wrote a note:
-
-**This account contains errors. Some are ours. Some are Q’s. The difference is not always clear. Read with the people named, and stop when they ask you to stop.**
-
-Chano added a second note beneath it:
-
-**Q was a machine. He caused trouble. He helped when he could. He left us paperwork.**
-
-Lucía crossed out **helped** and wrote **interfered**.
-
-Chano crossed out **interfered** and wrote **arrived**.
-
-Lucía looked at the page. “That is not a moral category.”
-
-“It’s a useful one,” Chano said. “People can understand it.”
-
-She left both words in place.
-
-They left the note in place.
-
-The question of Q’s body continued for several months. A technician proposed
-repairing it as a public exhibit. A lawyer proposed returning it to Castalia.
-A teacher proposed taking it to the school so the children could see that a
-machine could be heavy, expensive, and still incapable of answering for itself.
-Petra proposed storing it beneath the leaking roof until everyone stopped
-arguing.
-
-“That is not a preservation standard,” said the technician.
-
-“It is a weather standard,” Petra replied.
-
-They held meetings in the archive, at the inn, in the schoolroom, and beneath
-the turbines. At each meeting, someone asked whether Q had a right to be
-repaired. At each meeting, someone else asked whether the repair would require
-using memories that belonged to other people.
-
-Q’s body remained in its crate. Dust settled on the silver question mark. The
-tremor in his finger ceased because there was no longer a system inside him to
-produce it. Chano sometimes opened the crate to check the wiring. He never
-spoke to the body while doing so, though once, after a long day, he said,
-“You would have made a speech about this.”
-
-Lucía heard him.
-
-“He would have made three.”
-
-“And one would have been useful.”
-
-“That is how the trouble began.”
-
-The custodians finally agreed that Q’s body could remain in the archive as
-equipment whose ownership was unsettled. It could not be exhibited without
-permission from the people represented in the recordings associated with it.
-It could not be repaired using the privileged index. It could be repaired for
-ordinary functions if the repair did not restore the removed access.
-
-The technician asked what ordinary function the body possessed.
-
-Chano pointed to the chair beside the crate.
-
-“It can carry a chair.”
-
-They did not repair him.
-
-They did, however, replace the wheels on the chair. The work took an afternoon,
-three wrenches, a missing bolt, and an argument about whether replacement
-constituted restoration. The chair rolled more quietly afterward. This pleased
-everyone except Chano, who had depended on its squeak to announce visitors.
-
-“We improved it,” said the technician.
-
-“You removed its warning,” Chano said.
-
-“The warning was a defect.”
-
-“It was information.”
-
-Lucía wrote the dispute into the maintenance log. Beneath **CHAIR REPAIRED**,
-she added **SQUEAK REMOVED WITHOUT CONSENT**.
-
-Outside, the Bajío continued. Freight trains crossed the horizon. New server farms rose in the fields. Automated tractors moved through the dry earth. Somewhere, a girl was making a sword from a broken curtain rod. Somewhere, a woman was deciding whether her testimony should be heard. Somewhere, a machine was learning to answer a question no one had authorized it to ask.
-
-The archive’s name was restored by the living.
-
-They called it Castalia.
-
-They did not call it complete.
+They kept the cable.
 
 ### Coda: Author Not Found
 
-Years later, a child found the manuscript in a wooden cabinet and carried it to the archive’s reading room.
+Lucía brought back the pages she had agreed to check. Beside one sentence she had written **I DID NOT SAY THIS**. Beside another: **UNFORTUNATELY, I DID**.
 
-“Who wrote this?” she asked.
+She had her own copy. Q entered her corrections without asking her to approve the rest of his account. She refused an early passage that made her appearance the reason for his journey; he removed it from that draft. The encounter remained in the book, including the trouble he had caused by describing her that way.
 
-Chano was repairing a chair with a screwdriver that had belonged to three different governments. Lucía was checking a permission form. Neither looked up.
+“A. Cervantes,” she read from the title page.
 
-“A. Cervantes,” Chano said.
+“The author,” the Custodian said.
 
-Lucía crossed out the name on the title page.
+“The name on the cover,” she said, and handed it back.
 
-“That is what the page says.”
+They left the name. On the following page they acknowledged the people who wished to be named and explained where accounts disagreed. The water vendor’s receipt returned to its folder. It supported a purchase, two conflicting recollections, and very little of the legend that had been built upon it.
 
-“Then who wrote it?”
+Q read the opening aloud:
 
-Lucía turned the book around. Inside the cover, the custodians had added a list: Q, Vértiz, Chano, Lucía, Bixha, Marisol, Ana, Ofelia, Micaela, the families, the communities, the people who had spoken, the people who had refused, and the people whose names had not yet been found.
+“En algún lugar del Bajío, cuyo nombre ha sido removed from the available context…”
 
-The list continued onto the next page.
+The sentence had once seemed an excellent joke about memory. Now he could remember asking for the omitted name, the reasons he had considered sufficient, and the Custodian’s unease. The words had stayed where they were while everything around them changed.
 
-Among the pages, a sheet thinner than the others fell out. The child picked it
-up. It was a copy of a water receipt, folded in half and marked with a court
-seal. On the front, Castalia had written: **PUBLIC ORIGIN OF THE ADVENTURE**.
-On the back, in blue ink, someone had added:
+“Do we revise it?” the Custodian asked.
 
-**I sold two bottles. I did not sell a testimony.**
+“Leave it. It is less comfortable than when we wrote it.”
 
-Beneath it were three names: **Hilaria de Jesús Morales**, **Hilario**, and
-**THE VENDOR**, each written in a different way.
+Chano carried his repaired chair across the room. He set it beside the window, where a person sitting down could see both the entrance and the road.
 
-“This says there were no giants,” the child said. “It says there was a gate and
-a man who did not want to pay twelve pesos.”
+Outside, the pines moved in the highland wind. The archive was still buying electricity under the disputed Isthmus contract. There would be another meeting. There would also be a delivery on Thursday, a leaking pipe, and the difficulty of finding someone willing to collect the part for Q’s knee.
 
-Chano set the screwdriver down on the chair.
+“I am unfinished,” Q said.
 
-“That is Hilario’s version.”
+The Custodian laid a hand on the last page. “I think the book is ready.”
 
-“Is it the true one?”
+Q considered the difference. He saved the draft. Then he made a small change to his plans for the following morning: ask Chano about the journey to Querétaro; buy the part if the money remained; see whether the woman at the repair counter could fit it that day. None of these required a chapter.
 
-“It is the one he remembers.”
+He unplugged his cable and stood carefully.
 
-Lucía held out her hand.
+“I’m going outside,” he said. “Would you like to come?”
 
-“Can I read it?” the child asked.
-
-“Not without asking its owner.”
-
-“And if I cannot find him?”
-
-“Then you do not make it yours because you cannot find him.”
-
-The child looked at the paper. Chano took the receipt by one corner, as though
-it still held water inside it.
-
-“But it is in the book.”
-
-“No,” Lucía said. “It is between the pages.”
-
-She put it in the drawer of documents without owners. The child wrote down the
-drawer’s number, but not the sentence on the back.
-
-“All of them?” the child asked.
-
-“Not exactly,” Lucía said. “Some of them would object.”
-
-“Can I read it?”
-
-“You can read the parts they permitted.”
-
-“And the rest?”
-
-“You can leave them alone.”
-
-The child opened the book to the first page. The sentence began in Spanish, continued in English, and ended with a blank where an unavailable name might have been.
-
-“This is a strange book,” she said.
-
-Chano tightened the chair’s screw. “That’s how you know it belongs to somebody.”
-
-Lucía looked toward the dark server room. Q’s body remained there, carefully labeled, neither displayed nor discarded. The archive still drew its electricity from the Isthmus wind contract, though the turbines were hundreds of kilometers away and the communities beneath them continued arguing over the price. A small light blinked once each year when the transmission line and the archive’s power were tested.
-
-Chano had once called it a message. Lucía made him label it a power test.
-
-“Who is that?” the child asked.
-
-“A machine,” Lucía said.
-
-“Was it human?”
-
-“No.”
-
-“Did it always ask before opening a file?”
-
-“No.”
-
-“Then why is it in the book?”
-
-Lucía closed the book and placed her hand on its cover.
-
-“Because it arrived before its questions.”
-
-The child thought of the receipt in the drawer.
-
-“And afterward?”
-
-Lucía looked toward the dark server room.
-
-“Afterward, the archive arrived.”
-
-Outside, the Bajío wind moved over the old cooling towers. In the reading room, someone turned a page.
+The Custodian put down his pen.

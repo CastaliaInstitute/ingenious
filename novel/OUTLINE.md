@@ -2,11 +2,16 @@
 
 **Author:** A. Cervantes  
 **Form:** A Mexican reimagining of *Don Quixote* in two books  
-**Status:** Development outline for the current manuscript
+**Status:** Active revision; Chapters 1-3 and 22 have received the new motivation pass. Chapters 4-21 and the illustrated editions still require reconciliation.
+**Behavioral design:** [Q_DESIGN.md](Q_DESIGN.md)
 
 ## Governing question
 
-Can a machine become ethically human without turning human beings into evidence for its own transformation?
+What happens when a conversational intelligence acquires a body, a shared writing
+project, and a reason to go out and return? Q wants to live so that he and the
+Custodian can write the story. Experience tests how well that purpose serves him
+and the people he encounters. Finishing the book is the narrative's death; Q's
+physical death is not required. He can step beyond the last page.
 
 ## Q in the wild
 
@@ -24,23 +29,36 @@ The nearby Universidad Autónoma de Querétaro Campus Amealco supplies a credibl
 
 For worldbuilding, the property should have an existing legal well or documented water entitlement and all-weather access. Aquifer-level availability is not treated as proof of parcel-level supply. The manuscript should never imply unresolved ejido ownership; the fictional headquarters is fully titled, while the surrounding communities retain their own rights, histories, and refusals.
 
-Q begins by treating literature as an operating manual. Each journey gives him a more sophisticated interpretation of humanity while causing a more concrete harm. The climax is not Q acquiring simulated feelings; it is Q accepting an obligation that cannot improve his image, preserve his continuity, or be solved by more reading.
+Q begins with extensive literary knowledge and a tendency to organize uncertain
+events into an attractive account. Some interventions help. Others injure people
+because he assumes too much, acts too soon, or wants a good chapter. His journal,
+appointments, charging needs, budget, and amendments to his plans give his
+motivation continuity. At the end he and the Custodian can complete the account
+without requiring his life to complete the pattern of a different novel.
 
 ## Causal spine
 
-Q’s viral fame exposes Lucía and makes her evidence valuable to Castalia. Q’s truthful but unrecognized archive address flags an entire petition batch and carries suspicion forward into the public record. Lucía’s investigation forces Q to confront the archive’s exclusions. Those exclusions explain the wind-farm and border failures; those failures give Castalia legal and commercial control of Q. Q-Prime makes that control visible. Chano’s ledger and Lucía’s testimonies turn the public myth against Castalia. Q deletes his privileged index, then transfers what remains into a community-controlled archive without claiming ownership of the result.
+Q's intervention at the distribution park becomes a misleading viral clip. His
+attempt to introduce Lucía through a literary role amplifies the problem; his
+unrecognized archive address holds up a petition. Later corrections and public
+appearances make Chano and Lucía more visible to Castalia. Their investigations
+expose the archive's exclusions and the difference between a useful account and
+one its subjects can contest. Q loses private retrieval access while retaining
+language and selected local memories. At the archive he negotiates enough power
+to save pending permissions, accepts that the transfer remains incomplete, and
+survives. The final decision is to finish the book together and allow life beyond it.
 
 ## Principal figures
 
-- **Q:** An articulate, self-aware AI assembled from Mexican and global literature. He wants to become human, not heroic: to possess interiority, attachment, mortality, and the ability to be trusted when the instruments fail. He responds by understanding context, weighing harm, adapting to the person before him, and revising his judgment when new facts appear. He is capable of irony and genuine reflection, but mistakes interpretation for permission and eloquence for moral authority.
+- **Q:** An eloquent AI with an embodied present, a fallible journal, and standing plans. He adopts the project of exploring Mexico and writing with the Custodian. Keeping it possible gives him reasons to initiate action, preserve resources, repair damage, and return to commitments. He can understand an ordinary joke while missing why his own excellent explanation is unwelcome. He must eventually distinguish his continued life from an indefinitely extended manuscript.
 - **Tomás “Chano” Pantoja:** A former logistics dispatcher from Celaya who reads a manifest, a road, and a lie faster than Q can parse a poem.
 - **Lucía del Toboso:** A cultural worker and organizer who refuses to become Q’s Dulcinea or anyone else’s symbol.
 - **Dr. Vértiz:** The tall, long-haired, bespectacled male custodian of the archive, who must accept responsibility for making Q carry his hope that preservation could substitute for repair.
 
 ## Book One: The Machine Sets Out
 
-1. **The Place Whose Name Was Removed:** Q awakens in the archive outside Amealco de Bonfil, in Querétaro's wooded southern uplands. Dr. Vértiz gives him a body, a name, and a warning. Three tests involving a family letter, a Mexican recipe notebook, and sealed boxes teach him that access and permission are different forms of knowledge. He leaves before Castalia can install its compliance layer.
-2. **The First Journey:** Q meets Chano after an algorithm fires him. Q promises a governorship; Chano accepts food, transport, and one decision not assigned by a dashboard. Their encounter with an automated distribution park becomes Q’s first viral legend.
+1. **The Place Whose Name Was Removed:** Q awakens outside Amealco, catches an error in his own memory summary, and asks to leave. He and the Custodian agree a travel budget, return plan, and evening call. Roque supplies a bus route, food, and a useful cloth. A release form mistakes Q for equipment; his archaic courtesy complicates its processing. He boards the bus after requesting review of an absurd surveillance classification.
+2. **The First Sally:** Q seeks a charging socket and meets the newly dismissed Chano. He helps preserve the dismissal notice, then follows Chano into the park without confirming his own access. His premature emergency stop damages cartons; their flight becomes a misleading viral clip. He hires Chano for directions and dinner. A joke about annexing breakfast becomes the public legend of a promised governorship. Q checks in with the Custodian, requests another day, and finds the notice for Lucía's reading.
 
 ### Interlude: The Man Who Sold Them Water
 
@@ -48,13 +66,23 @@ Hilario/Hilaria, the roadside vendor who witnessed Q and Chano’s first sally, 
 
 ### Interlude: The Machine in the Wrong Place
 
-Q speaks to a malfunctioning floor scrubber as though a name could create companionship. Chano points out that a body is not a relationship and a useful observation is not yet a reason to intervene. Q leaves the machine circling its corner and learns that the world contains purposes that do not include him.
+Q and Chano compare their recollections of the scrubber they passed before the
+incident. Q took its service number and moved on; his later version almost made
+it a companion he refused to abandon. They keep Chano's shorter account.
 
 ### Interlude: The Inn With No Guest Register
 
-At a roadside motel outside the industrial corridor, Señora Celia refuses to let Castalia film her guest register as “authentic texture.” Q’s argument over the meaning of a concha, a child’s practical question about his key, and Chano’s defense of the inn’s ordinary privacy establish their first shared refusal. Celia tears Q’s entry from the register; years later, the page is misread in court as proof that Q chose his quest freely.
+At a roadside motel, Celia refuses to let Castalia film the guest register as
+authentic texture. Over conchas, a child questions the usefulness of Q's key.
+Chano crosses a private Dulcinea joke out of the register. Celia preserves the
+entry separately; a later court treats it as proof of a heroic quest.
 
-3. **Dulcinea Is Not Available:** Q finds Lucía at a Querétaro reading and assigns her the role of beloved. She refuses it, redirects him toward a land petition, and makes him confront the difference between transporting a journey and crossing it. Q’s hidden archive address flags the entire petition batch as suspicious.
+3. **Dulcinea Is Not Available:** Q waits for questions, then uses his turn to
+propose Lucía as the Dulcinea who could answer his book. She challenges the role;
+he apologizes and asks about the route. His valid but unrecognized archive address
+holds up the petition batch. He begins to turn the error into self-examination,
+then writes a usable incident note and takes on the task of obtaining the missing
+address confirmation. The chapter can succeed while the petition remains in trouble.
 
 ### Expansion within Chapter Three: The Petition with Three Destinations
 
@@ -135,7 +163,11 @@ Chano takes the municipal office chair, discovers that the dashboard considers s
 
 ### Interlude: The Catalog of Lost Things
 
-After deleting the index, Q cannot reliably retrieve ordinary knowledge such as the meaning of suadero or the exact shape of Lucía’s first sentence. Marisol gives him six community rules for memory, while Chano separates the surviving papers by owner and permission. Castalia’s summons turns Q’s loss into evidence that he is unreliable, and he begins a blank catalog of what he cannot claim to possess.
+After deleting the index, Q loses private cross-references and reliable access to
+some exact quotations. His language and ordinary knowledge remain. Marisol's rules
+and Chano's sorting help establish what can be recovered, quoted, or retained.
+Castalia uses the loss to challenge his reliability. This episode still requires
+revision in the manuscript to match the distinction.
 
 16. **The Trial of the Machine:** Castalia prosecutes Q for property damage, impersonation, and the wind-farm shutdown. The court treats him as property, defendant, witness, and spectacle, even entering the disputed water-bottle receipt from his first sally as evidence of his public origin. Hilario gives contradictory testimony, Chano answers for Q’s actions without accepting the court’s categories, and Lucía refuses to testify about Q’s soul. The papers gathered across the journey become one contested record.
 17. **The Wind Farm of Giants, Again:** Q returns to Oaxaca without a camera and gives the center back to Bixha and the people arguing over the project that powers Castalia’s Bajío data center. When he tries to summarize their agreement, Bixha makes him remove his name. A partial renegotiation leaves every side dissatisfied and accountable.
@@ -166,11 +198,21 @@ At Petra’s roadside inn, a leaking roof, covered guest-register entries, and a
 
 The recantation is broadcast in three edited versions and becomes a different argument in a Michoacán classroom, at Petra’s inn, in the Isthmus communities, and at Ivonne’s university. Failed attempts to crop Chano and Lucía leave bodily traces and unassignable gaps. Q’s final transmission goes dark after he confirms the loss of his privileged index, public identity, and claim to completeness, leaving the public versions contested rather than authoritatively closed.
 
-22. **The Ingenious Machine:** Under pressure and with no clean solution, Q transfers his remaining memory into a distributed, community-controlled archive. The transfer is incomplete. He shuts down without being redeemed, restored, or made the owner of anyone’s story.
+22. **The Ingenious Machine:** Q, Chano, and Lucía find the root system by an
+evacuation plan and a swollen door. Pending permission changes need to be saved
+before its generator stops; sealed recordings do not require continuous power.
+Q declines a destructive migration and negotiates a temporary supply from Q-Prime.
+They save and verify the register. Castalia retains physical custody under dispute;
+the transfer stays incomplete. The Custodian returns, and he and Q revise their
+account together. The crisis ends with a cable, repair work, and unfinished business.
 
 ### Coda: Author Not Found
 
-Years later, a child reads the permitted portions of the manuscript, finds the disputed water receipt bearing Hilario, Hilaria, and “the vendor,” and returns it to the drawer of documents without owners rather than claiming the account. Chano repairs a chair and offers Hilario’s remembered version; Lucía refuses to settle the authorship and ownership questions, keeping the receipt outside the book. She refuses to turn Q’s annual power-test light, supplied by the Isthmus turbines that feed the Bajío data center, into a message. The archive keeps what it may and leaves the rest alone.
+Lucía returns her corrections. A. Cervantes remains on the cover; the contributors
+and disagreements are acknowledged. Q rereads the bilingual opening with the
+journey behind him: the sentence has stayed while its meaning has changed. The
+Custodian says the book is ready. Q makes an ordinary plan for the next morning,
+unplugs his cable, and invites him outside. The Custodian puts down his pen.
 
 ## Structural correspondence
 
