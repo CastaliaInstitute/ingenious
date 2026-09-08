@@ -10,7 +10,18 @@ illustrated issues, verify affected print PDFs, and push the revision.
 The latest user clarification governs the ending: “Death just means we finish
 the book.” The source now permits Q to remain alive when the writing stops.
 
-Latest checkpoint: Issue Nine has verified 20-page reading and ten-side A3 proofs,
+Latest checkpoint: six fresh-context calls prompted a scoped Chapter Ten repair.
+Q asks why the adviser's call requires waiting at the café; the companions prepare
+to leave and remain reachable. Salas interrupts that departure. His arrival is
+still authored, not a model-validated inevitability. The existing knee warning,
+successful deposit delivery and living ending remain. Chapter Ten is now 4,422
+words; its internal layout and exact-facing plan are 28 pages, fourteen planned
+plates and seven duplex sheets at Georgia 12.7 points. No new Issue Ten art or
+final illustrated PDF exists. All twenty-two manifests match fresh plans.
+See `CHAPTER_10_FRESH_CONTEXT_REVIEW.md`. Issues 1–9 remain unchanged illustrated
+revision proofs; thirteen issues still need art. No printing or A+ certification.
+
+Previous checkpoint: Issue Nine has verified 20-page reading and ten-side A3 proofs,
 ten unique plates and five duplex sheets. All 3,221 words, all rendered pages
 and every actual imposed text/image slot were checked. Three image edits corrected
 the repair lamp, Mateo's distinct identity and the station door key. The manuscript,

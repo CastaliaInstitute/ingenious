@@ -5964,8 +5964,19 @@ Elena stayed while her adviser arranged a call about the recovery claim.
 Changing the delivery point had not withdrawn that claim or made the
 companions' vehicle unrecognizable. The Castalia van was parked across
 the road. Chano wanted to leave; the adviser asked them to wait for the
-verified notice before deciding where to go. Q called the Custodian while
-Elena ordered something she could eat without putting down her phone.
+verified notice before deciding where to go.
+
+“Can he call us at the room?” Q asked. “What do we need to stay here for?”
+
+Elena put the question to him and held out the phone.
+
+“I haven't confirmed anything requiring you to stay at that café,” he said.
+“Keep this phone available. I'll send the notice when I have it.”
+
+Chano brought out the van keys. “Then let's go.”
+
+Q closed his bag and sent the Custodian the address they were going to.
+Elena asked the counter worker to wrap her food.
 
 A screen above the café counter showed an American humanoid patrol
 machine walking a marked route. Another machine carried trays between
@@ -5976,14 +5987,14 @@ tray and ask it to move because she needed to mop beneath it.
 
 “And only one of those demonstrations shows someone cleaning up afterward.”
 
-They were near the border, not on the other side of it. They had not
-entered the freight terminal when a Mexican officer named Salas came
+They were near the border, not on the other side of it. Before they
+reached the café door, a Mexican officer named Salas came
 into the café with a colleague and asked for Q. The recovery contractor
 had supplied the van's location. Salas displayed a notice with an
 international equipment record attached: Castalia had registered Q
 for a promotional journey he had never accepted.
 
-Elena put down her food. “There is no export delivery. The archive
+Elena set the paper bag down. “There is no export delivery. The archive
 deposit has been received here under its own instructions.”
 
 Salas looked again at the screen. Q's designation appeared beside

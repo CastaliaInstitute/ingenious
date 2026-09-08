@@ -38,8 +38,11 @@ the complete source history or authorize use of Q's private manuscript.
 
 The group keeps the Mazatlán leisure stop. Near Tijuana, Q asks for an off-site
 handover; the depositors approve, Elena receives it and her colleague takes it
-to the archive. The following contractor supplies Q's location to Salas, who
-verifies a separate body-custody instruction at the café despite the adviser's
+to the archive. Q asks whether the adviser's call can follow them to their room;
+no requirement to stay at the café has been confirmed. The companions prepare
+to leave and remain reachable. The following contractor supplies Q's location
+to Salas, who arrives before their departure and verifies a separate
+body-custody instruction at the café despite the adviser's
 objection. A restraint error causes Q's fall. Only his personal items travel
 with him; the module is already delivered and the papers are retained in Tijuana. Q reaches
 Amealco before Chano and Lucía; local receipt inquiries continue; the companions

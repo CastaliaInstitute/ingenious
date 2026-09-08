@@ -1,5 +1,10 @@
 # Chapter Ten: allow the delivery to succeed
 
+Subsequent follow-up: `CHAPTER_10_FRESH_CONTEXT_REVIEW.md` records six actual
+inference calls and the café-departure revision. It supersedes this review's
+earlier waiting transition and production counts, not the successful delivery
+or Pacific stop. The current chapter has 4,422 printable words.
+
 ## Verdict
 
 The strongest passages combine the body's exact discomfort with ordinary
