@@ -69,6 +69,16 @@ the book.” The source now permits Q to remain alive when the writing stops.
   practical help. A teacher needs older rainfall broadcasts, complicating the
   radio station's retention proposal. The route stays in eastern Michoacán's
   oyamel forests; practical work, disagreement and comedy remain local.
+- Chapter 5's later pacing pass distinguishes the tianguis from Lidia's unchanged
+  office dispute. Vero obtains permission and accepts blank fields; rain moves
+  customers indoors while Q carries purchases and holds a tarp pole. Vendors
+  disagree about the bus corner, roof, road and sponsor's optional fields. Music
+  draws Q to the radio station, where he stays for the uncle's song. His evening
+  market story earns a correction from Chano. Model-town preparation now follows
+  the local visits. `CHAPTER_05_PACING_REVIEW.md` records the bounded review and
+  checks: 7,202 printable words, 44 pages, 22 planned plates and eleven A3 duplex
+  sheets at Georgia 12.45/17.6375 pt. This supersedes the earlier Chapter 5 layout,
+  not the already illustrated Issues 1-4. No new Issue 5 art is approved.
 - Chapter 6 distinguishes the mayor's authority from the marketed governorship.
   Q maintains calls, repair needs, paid companionship, and the agreed forest
   inspection. The hose fitting is delivered successfully. His writing project
@@ -287,9 +297,14 @@ Issue 7 remains 44 pages with 22 planned plates and eleven A3 sheets at
 40 and 42 and the center spread have visual review. All 22 issue manifests
 match fresh layout plans. Issue 4 has subsequently been illustrated and
 checked as a revision proof; Issue 7 still has planned art only.
-Next: examine Chapter Five's interlude sequence and the return/hearing repetition
-in Chapters Ten and Sixteen; continue broader scene tests and illustration
-production. The current pacing report is a bounded structural review, not a new
+Chapter Five's subsequent pacing revision is now recorded in
+`CHAPTER_05_PACING_REVIEW.md`: the office scene is protected, the market has a
+different comic action, the radio visit includes pleasure, and departure follows
+the interludes. Its current 44-page layout has 22 planned plates, not finished
+illustrations. All 22 issue manifests match fresh plans after this change.
+Next: examine the return/hearing repetition in Chapters Ten and Sixteen;
+continue broader scene tests and illustration production. The pacing reports
+are bounded structural reviews, not a new
 full reading of both books. Earlier chapter-by-chapter continuation notes below
 are a history of the voice pass, not the latest queue.
 Q requests help from the guard and remains inside the visitor bay. The photographer

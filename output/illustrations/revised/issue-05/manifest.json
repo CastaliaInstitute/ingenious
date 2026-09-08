@@ -1,19 +1,19 @@
 {
   "issue": 5,
-  "revision": "2026-09-08-michoacan-voice",
+  "revision": "2026-09-08-chapter-05-pacing",
   "source": "novel/THE_INGENIOUS_MACHINE.md",
-  "chapter_sha256": "ea259b53ea1fb7df5497626df78b9148ae7a974d42ce0c9d69685fd32ae5e56a",
-  "page_count": 40,
-  "text_font": "Georgia 12/17 pt",
-  "plate_count_including_cover": 20,
-  "status": "planned; no new Issue 5 images generated or approved",
+  "chapter_sha256": "346b6c0d6152d45e12d21660a0feaaf8c9e8d8e4c7fcf4201bf7fab5115268a7",
+  "page_count": 44,
+  "text_font": "Georgia 12.45/17.6375 pt",
+  "plate_count_including_cover": 22,
+  "status": "planned; no revised Issue 5 illustrations approved",
   "character_reference": "output/illustrations/revised/issue-01/cover.png",
   "chano_reference": "output/illustrations/revised/issue-03/plate-06.png",
   "beto_reference": "output/illustrations/revised/issue-02/plate-09.png",
   "wardrobe": "Q retains Chapter Four's fitted sponsor jacket and small silver question mark. Preserve the established segmented oval head, ears, neck, long articulated limbs and underlying breastplate. No new knightly costume or unexplained return to the original torn coat.",
-  "secondary_character_design": "Candelaria: small older Mexican forest worker, wool shawl and polished wooden staff; contemporary practical clothes, no invented ceremonial regalia. Establish distinct recurring designs for Lidia, her mother, the watering girl and mother, the grieving schoolgirl, Micaela, Celestina, Tere, the teacher, foundation director and assistant. These people are not interchangeable indigenous symbols. Match Micaela's later scenes before approving her design.",
+  "secondary_character_design": "Candelaria: small older Mexican forest worker, wool shawl and polished wooden staff; contemporary practical clothes, no invented ceremonial regalia. Establish distinct recurring designs for Lidia, her mother, the watering girl and mother, the grieving schoolgirl, Micaela, Celestina, Tere, the teacher, foundation director and assistant. These people are not interchangeable indigenous symbols. Match Micaela's later scenes before approving her design. Vero is the student who asks permission and records different vendor choices; her male partner carries the tally and tables. Do not render them as unauthorized photographers from the deleted version. The uncle's song scene is an afternoon broadcast, not automatically dusk.",
   "art_direction": "One unique scene from each exact facing page. Neutral monochrome Goya-inspired etched realism, pure white highlights, no sepia paper texture. Full bleed at comic trim with separately typeset margin captions. Eastern Michoacan oyamel forest, contemporary local work and varied residents. No invented museum, school or reserve portrayed as an identified real institution. Preserve visual identity across the sequence.",
-  "approval_scope": "Pagination and scene-selection plan only. Missing illustrations are not approved assets. Regenerate all facing-text bindings after any source change. The 40-page internal layout is not a final illustrated PDF or a print instruction.",
+  "approval_scope": "Pagination and exact facing-scene plan only. The 44-page internal proof contains no illustrations. All assets remain planned and cannot be used for a final illustrated build until generated, inspected and hash-bound.",
   "plates": [
     {
       "plate_id": "issue-05-cover",
@@ -27,7 +27,7 @@
       "plate_id": "issue-05-plate-01",
       "page": 3,
       "facing_text_page": 2,
-      "facing_text": "Chapter Five: The\nButterflies Have No\nGeneral\nThe invitation to Michoacán arrived\nin the form of a holographic\nbutterfly.\nIt unfolded above Q’s breakfast,\nprojected by Beto’s tablet, and\nscattered orange light across the\nmotel wall. The butterfly carried the\nlogo of a foundation dedicated to\nsustainable innovation, whose board\nmembers owned three mines, two\ndata centers, and a private airstrip.\n“They want you to visit the monarch\nreserve,” Beto said. “There will be\ncameras, schoolchildren, and a\nstatement about the future.”\n“Whose future?” Chano asked.\n“The future,” Beto said, as if it were a\nsingle neighborhood with excellent\nsecurity.\nQ read the itinerary beneath the\nprojection. “Is this a visit to the\nforest or a recording session with a\nforest in it?”\n“Both.”\n“Then I want the guide to have the\nlast word about where we go.”\nBeto agreed, provided the last word\ncould be recorded.\nBefore leaving, Q sent the Custodian\nthe corrected manuscript pages and\na proposed date for the next call. He\nalso followed up on the petition's\naddress query. The answer still\nrequired a document from Castalia.\nHe could initiate another journey\nmore easily than obtain proof of\nwhere the first had begun.\nThey drove southeast toward the\nmountains of eastern Michoacán.\nFields gave way to hills and pine\nwoods, then to the colder heights of\nthe oyamel forest. Along the road,\npainted signs advertised trout,\ncabins, meals, and land for sale to\npeople who wanted a piece of\nwilderness without meeting its\nneighbors.\nThe foundation had arranged a\nconvoy: two electric SUVs, a drone\nvan, a public relations team, and a\nschool bus full of children wearing\norange scarves. Q rode in the first\nSUV with Beto. Chano drove the\nsecond because, as he put it,\n“someone should know what the\nbrakes are for.”\nAt the reserve entrance, a woman in\na wool shawl stopped them. She was\nsmall, old, and held a wooden staff\npolished by use.\n“The cameras stay outside,” she said.\nBeto smiled. “We have\nauthorization.”\n“From whom?”\nHe named the foundation.\nThe woman looked at Q. “And you?”\n",
+      "facing_text": "Chapter Five: The\nButterflies Have No\nGeneral\nThe invitation to Michoacán arrived\nin the form of a holographic\nbutterfly.\nIt unfolded above Q’s breakfast,\nprojected by Beto’s tablet, and\nscattered orange light across the\nmotel wall. The butterfly carried the\nlogo of a foundation dedicated to\nsustainable innovation, whose\nboard members owned three mines,\ntwo data centers, and a private\nairstrip.\n“They want you to visit the\nmonarch reserve,” Beto said.\n“There will be cameras,\nschoolchildren, and a statement\nabout the future.”\n“Whose future?” Chano asked.\n“The future,” Beto said, as if it were\na single neighborhood with\nexcellent security.\nQ read the itinerary beneath the\nprojection. “Is this a visit to the\nforest or a recording session with a\nforest in it?”\n“Both.”\n“Then I want the guide to have the\nlast word about where we go.”\nBeto agreed, provided the last word\ncould be recorded.\nBefore leaving, Q sent the\nCustodian the corrected manuscript\npages and a proposed date for the\nnext call. He also followed up on\nthe petition's address query. The\nanswer still required a document\nfrom Castalia. He could initiate\nanother journey more easily than\nobtain proof of where the first had\nbegun.\nThey drove southeast toward the\nmountains of eastern Michoacán.\nFields gave way to hills and pine\nwoods, then to the colder heights of\nthe oyamel forest. Along the road,\npainted signs advertised trout,\ncabins, meals, and land for sale to\npeople who wanted a piece of\nwilderness without meeting its\nneighbors.\nThe foundation had arranged a\nconvoy: two electric SUVs, a drone\nvan, a public relations team, and a\nschool bus full of children wearing\norange scarves. Q rode in the first\nSUV with Beto. Chano drove the\nsecond because, as he put it,\n“someone should know what the\nbrakes are for.”\nAt the reserve entrance, a woman in\na wool shawl stopped them. She\nwas small, old, and held a wooden\nstaff polished by use.\n“The cameras stay outside,” she\nsaid.\n",
       "source_block_ids": [
         0,
         1,
@@ -43,23 +43,24 @@
         11,
         12,
         13,
-        14,
-        15,
-        16,
-        17,
-        18
+        14
       ],
       "asset": "output/illustrations/revised/issue-05/plate-01.png",
       "status": "planned",
       "caption": "A future above breakfast.",
-      "scene_brief": "Beto's tablet projects a single artificial butterfly over the motel breakfast table; Q studies the itinerary while Chano looks toward Beto. Plain near-future Mexican motel. Render the hologram with grayscale light, not orange or sepia. This is not the real forest."
+      "scene_brief": "Beto's tablet projects a single artificial butterfly over the motel breakfast table; Q studies the itinerary and Chano watches Beto. This is a promotional hologram rendered as grayscale light, not a real forest.",
+      "scene_anchor": "Beto’s tablet"
     },
     {
       "plate_id": "issue-05-plate-02",
       "page": 5,
       "facing_text_page": 4,
-      "facing_text": "“I have cameras for seeing,” Q said.\n“I can stop them retaining or\ntransmitting images. Would that\nmeet the rule?”\nShe asked the technician\naccompanying the school group to\ncheck the indicator. He did, and Q\nshowed him how the recording\nsetting differed from ordinary vision.\nThe woman stepped aside. “Stay with\nthe guide.”\nThe cameras remained outside. Beto\nremained with them, though he\nclaimed this was a strategic choice.\nThe forest climbed around the\nvisitors. Sunlight crossed the oyamel\nbranches in narrow shafts. Monarchs\ngathered in clusters that bent the\nsmaller limbs; where they stirred,\norange broke through the darker\nfolded wings.\nThe children fell silent.\nEven Chano removed his cap.\nQ had read accounts of their\nnavigation and the succession of\ngenerations on the journey north. He\nhad expected the scale to be difficult\nto convey. What he had not\nanticipated was the sound when a\npatch of folded wings opened beside\nhis head. He stopped describing\nthem to Chano.\nThe woman waited until they moved\nagain. “There are more on the other\nside of that tree. Stay on this path.”\nQ made room for a child to see. For\nseveral minutes he forgot to consider\nhow he would report the visit to the\nCustodian.\nThe woman’s name was Candelaria,\nthough the schoolchildren called her\nDoña Candela because she had once\nset fire to a pile of damp brush and\nthen spent the afternoon explaining\nthat this was not the same as setting\nfire to the forest. She had guarded\nthe reserve for twenty-six years. In\nthat time she had seen the butterflies\narrive early, late, in abundance, and\nin numbers so small that the tourists\ncomplained the trees had failed to\nperform.\nAt the boundary of the visitor area,\nwhere Beto rejoined them without a\ncamera, she told him, “They are not\nhere for the tourists.”\n“The tourists support the reserve.”\n“The tourists support the road, the\nrestaurants, the guides, and the\npeople who rent cabins. The reserve\nsupports the butterflies.”\n“Those interests can be aligned.”\n“They can also be confused.”\nShe described the year a fire crossed\nthe western slope. It began in a field\nwhere a man had burned the remains\nof a harvest. The fire was not large at\nfirst. A wind changed direction.\nSomeone called the municipal office.\nSomeone else called the forest\nbrigade. The brigade arrived with a\n",
+      "facing_text": "Beto smiled. “We have\nauthorization.”\n“From whom?”\nHe named the foundation.\nThe woman looked at Q. “And\nyou?”\n“I have cameras for seeing,” Q said.\n“I can stop them retaining or\ntransmitting images. Would that\nmeet the rule?”\nShe asked the technician\naccompanying the school group to\ncheck the indicator. He did, and Q\nshowed him how the recording\nsetting differed from ordinary\nvision.\nThe woman stepped aside. “Stay\nwith the guide.”\nThe cameras remained outside.\nBeto remained with them, though\nhe claimed this was a strategic\nchoice.\nThe forest climbed around the\nvisitors. Sunlight crossed the\noyamel branches in narrow shafts.\nMonarchs gathered in clusters that\nbent the smaller limbs; where they\nstirred, orange broke through the\ndarker folded wings.\nThe children fell silent.\nEven Chano removed his cap.\nQ had read accounts of their\nnavigation and the succession of\ngenerations on the journey north.\nHe had expected the scale to be\ndifficult to convey. What he had not\nanticipated was the sound when a\npatch of folded wings opened\nbeside his head. He stopped\ndescribing them to Chano.\nThe woman waited until they\nmoved again. “There are more on\nthe other side of that tree. Stay on\nthis path.”\nQ made room for a child to see. For\nseveral minutes he forgot to\nconsider how he would report the\nvisit to the Custodian.\nThe woman’s name was Candelaria,\nthough the schoolchildren called\nher Doña Candela because she had\nonce set fire to a pile of damp brush\nand then spent the afternoon\nexplaining that this was not the\nsame as setting fire to the forest.\nShe had guarded the reserve for\ntwenty-six years. In that time she\nhad seen the butterflies arrive early,\nlate, in abundance, and in numbers\nso small that the tourists\ncomplained the trees had failed to\nperform.\nAt the boundary of the visitor area,\nwhere Beto rejoined them without a\ncamera, she told him, “They are not\nhere for the tourists.”\n“The tourists support the reserve.”\n",
       "source_block_ids": [
+        15,
+        16,
+        17,
+        18,
         19,
         20,
         21,
@@ -72,23 +73,23 @@
         28,
         29,
         30,
-        31,
-        32,
-        33,
-        34,
-        35
+        31
       ],
       "asset": "output/illustrations/revised/issue-05/plate-02.png",
       "status": "planned",
       "caption": "He stopped describing them.",
-      "scene_brief": "On the narrow oyamel visitor path, Q steps aside so a child can see a low bough thick with folded monarch wings. Chano has removed his cap; Candelaria indicates the path. Quiet close perspective on real foliage and clustered wings, no recording crew inside the restricted forest."
+      "scene_brief": "Q steps aside for a child to see monarchs clustered on a low oyamel bough; Chano has removed his cap and Candelaria leads on the marked path. No camera crew in the restricted forest.",
+      "scene_anchor": "Q made room for a child to see."
     },
     {
       "plate_id": "issue-05-plate-03",
       "page": 7,
       "facing_text_page": 6,
-      "facing_text": "truck whose pump worked only\nwhen the driver struck it with a\nwrench.\nThe tourists were evacuated. The\ncabins were saved. The trees on the\nslope burned.\n“Were you able to compare the next\narrival with the year before?” Q\nasked.\n“In three groves. The fourth was the\none that burned.”\n“Did the report keep that\ndistinction?”\n“The screen doesn't have an empty\nspace. Watch.”\nThe foundation later described the\nfire as a resilience event. It installed\na screen showing a projected forest\nrecovering in accelerated time. The\nscreen made the trees grow in three\nminutes and made the fire look\nbeautiful.\nCandelaria refused to stand beside it.\n“Did they ask you to approve the\nrecovery figures?” Q asked.\n“They asked me to stand beside the\nscreen. I was carrying buckets that\nweek.”\nShe took a smaller group along the\nworking path to the burned slope.\nThe children stayed with their\nteacher except for a girl whose\nmother was coming to water a tree.\nThe path was narrow, and the fallen\nneedles covered stones that shifted\nunderfoot. Chano went ahead,\ntesting the ground with a branch.\nBeto stayed behind because his shoes\nwere designed for presentation\nrather than descent.\nAt the edge of the burned area,\nCandelaria showed them a line of\nyoung trees protected by wire. Each\ntree had a small tag bearing a\nnumber. The foundation had planted\nthem as part of a reforestation\ncampaign. Beside the wire, local\nfamilies had planted other trees\nwithout tags.\n“Which ones will survive?” Q asked.\n“The ones someone waters.”\nQ read the tags and asked who was\ndoing the watering. The listed\nsubcontractor was based in Morelia.\nIts contract had ended the previous\nmonth.\n“The dates stop here,” he said. “Has\nanybody taken over?”\n“Three families. They use their own\ncans. We have asked for the hose\nback.”\nQ noted the hose as something he\ncould ask the foundation about. It\nwould be possible to do that without\noffering an interpretation of the\nentire forest.\nThe girl in the orange scarf carried a\nsmall blue bucket and wore boots\ntwo sizes too large.\n",
+      "facing_text": "“The tourists support the road, the\nrestaurants, the guides, and the\npeople who rent cabins. The reserve\nsupports the butterflies.”\n“Those interests can be aligned.”\n“They can also be confused.”\nShe described the year a fire\ncrossed the western slope. It began\nin a field where a man had burned\nthe remains of a harvest. The fire\nwas not large at first. A wind\nchanged direction. Someone called\nthe municipal office. Someone else\ncalled the forest brigade. The\nbrigade arrived with a truck whose\npump worked only when the driver\nstruck it with a wrench.\nThe tourists were evacuated. The\ncabins were saved. The trees on the\nslope burned.\n“Were you able to compare the next\narrival with the year before?” Q\nasked.\n“In three groves. The fourth was the\none that burned.”\n“Did the report keep that\ndistinction?”\n“The screen doesn't have an empty\nspace. Watch.”\nThe foundation later described the\nfire as a resilience event. It installed\na screen showing a projected forest\nrecovering in accelerated time. The\nscreen made the trees grow in three\nminutes and made the fire look\nbeautiful.\nCandelaria refused to stand beside\nit.\n“Did they ask you to approve the\nrecovery figures?” Q asked.\n“They asked me to stand beside the\nscreen. I was carrying buckets that\nweek.”\nShe took a smaller group along the\nworking path to the burned slope.\nThe children stayed with their\nteacher except for a girl whose\nmother was coming to water a tree.\nThe path was narrow, and the fallen\nneedles covered stones that shifted\nunderfoot. Chano went ahead,\ntesting the ground with a branch.\nBeto stayed behind because his\nshoes were designed for\npresentation rather than descent.\nAt the edge of the burned area,\nCandelaria showed them a line of\nyoung trees protected by wire. Each\ntree had a small tag bearing a\nnumber. The foundation had\nplanted them as part of a\nreforestation campaign. Beside the\nwire, local families had planted\nother trees without tags.\n“Which ones will survive?” Q asked.\n“The ones someone waters.”\nQ read the tags and asked who was\ndoing the watering. The listed\n",
       "source_block_ids": [
+        32,
+        33,
+        34,
         35,
         36,
         37,
@@ -103,23 +104,25 @@
         46,
         47,
         48,
-        49,
-        50,
-        51,
-        52,
-        53
+        49
       ],
       "asset": "output/illustrations/revised/issue-05/plate-03.png",
       "status": "planned",
-      "caption": "The dates stop here.",
-      "scene_brief": "Candelaria and Q inspect the small dated tag of a wire-protected sapling on the burned slope, with untagged family-planted trees nearby. Chano tests loose stones with a branch. Keep the modest scale of replanting; no miraculous green recovery and no industrial hose delivered yet."
+      "caption": "Trees someone waters.",
+      "scene_brief": "Candelaria shows Q wire-protected saplings beside untagged family plantings on the burned slope. Chano tests the loose path with a branch. No miraculous recovery or delivered hose.",
+      "scene_anchor": "The ones someone waters."
     },
     {
       "plate_id": "issue-05-plate-04",
       "page": 9,
       "facing_text_page": 8,
-      "facing_text": "“My grandfather planted that one,”\nshe said, pointing beyond the wire.\n“How long have you been watering\nit?” Q asked.\n“Since he hurt his foot. It has his\nname.”\nShe whispered the name to the tree.\nQ did not hear it and did not ask her\nto repeat it. The little blue bucket\nwas empty before the earth looked\nwet.\n“Another?” he asked.\n“We filled it at the bottom.”\nQ looked back down the slope. “I\ncould bring a larger container.”\n“There's a wheelbarrow,” her mother\nsaid. “Try it on this path.”\nHe looked at the stones. The larger\ncontainer could wait for the hose.\nChano took the bucket for the return\nwalk; Q carried the child's coat while\nher mother tightened a loose wire\naround the young tree. The girl\ninstructed her to leave room for it to\nget fat. Her mother said she was\ntrying to do the same for her.\nCandelaria led them farther uphill.\nFrom there, the reserve appeared as\na patchwork of cabins, milpas, roads,\nroofs, and forest. A new zip-line had\nbeen planned across the valley. Its\nbrochure showed visitors passing\nthrough a cloud of butterflies while a\nguide explained the importance of\nleaving no trace.\n“Will it disturb them?” Q asked.\n“The company says no.”\n“What do you say?”\n“I say their report counted visitors in\nJuly. Ask to see the dates.”\nQ opened a reminder for the report.\nThe contradiction was one he could\ncheck.\nThe assembly below had begun to\nargue about the corridor. Candelaria\nwatched the people gathering\nbeneath the canvas roof.\n“The forest is not an example,” she\nsaid. “It is a place where people have\nto decide what they will do\ntomorrow.”\nQ looked at the butterflies moving\nthrough the branches. Their motion\nseemed random until he observed it\nover time. Then it seemed patterned\nuntil a gust of wind broke the\npattern. He could describe both\nimpressions and trust neither as the\nwhole truth.\n“Do you read the reports people\nwrite after coming here?” he asked.\n“Some. There is usually more about\ntheir feelings than our work.”\nQ thought of the paragraph forming\nin his journal. “I may owe you a hose\nbefore I owe you a description.”\n“The foundation owes us the hose.\nYou can remind them.”\n",
+      "facing_text": "subcontractor was based in\nMorelia. Its contract had ended the\nprevious month.\n“The dates stop here,” he said. “Has\nanybody taken over?”\n“Three families. They use their own\ncans. We have asked for the hose\nback.”\nQ noted the hose as something he\ncould ask the foundation about. It\nwould be possible to do that\nwithout offering an interpretation\nof the entire forest.\nThe girl in the orange scarf carried\na small blue bucket and wore boots\ntwo sizes too large.\n“My grandfather planted that one,”\nshe said, pointing beyond the wire.\n“How long have you been watering\nit?” Q asked.\n“Since he hurt his foot. It has his\nname.”\nShe whispered the name to the tree.\nQ did not hear it and did not ask\nher to repeat it. The little blue\nbucket was empty before the earth\nlooked wet.\n“Another?” he asked.\n“We filled it at the bottom.”\nQ looked back down the slope. “I\ncould bring a larger container.”\n“There's a wheelbarrow,” her\nmother said. “Try it on this path.”\nHe looked at the stones. The larger\ncontainer could wait for the hose.\nChano took the bucket for the\nreturn walk; Q carried the child's\ncoat while her mother tightened a\nloose wire around the young tree.\nThe girl instructed her to leave\nroom for it to get fat. Her mother\nsaid she was trying to do the same\nfor her.\nCandelaria led them farther uphill.\nFrom there, the reserve appeared as\na patchwork of cabins, milpas,\nroads, roofs, and forest. A new\nzip-line had been planned across\nthe valley. Its brochure showed\nvisitors passing through a cloud of\nbutterflies while a guide explained\nthe importance of leaving no trace.\n“Will it disturb them?” Q asked.\n“The company says no.”\n“What do you say?”\n“I say their report counted visitors\nin July. Ask to see the dates.”\nQ opened a reminder for the report.\nThe contradiction was one he could\ncheck.\nThe assembly below had begun to\nargue about the corridor.\nCandelaria watched the people\ngathering beneath the canvas roof.\n“The forest is not an example,” she\nsaid. “It is a place where people\n",
       "source_block_ids": [
+        49,
+        50,
+        51,
+        52,
+        53,
         54,
         55,
         56,
@@ -136,24 +139,26 @@
         67,
         68,
         69,
-        70,
-        71,
-        72,
-        73,
-        74,
-        75
+        70
       ],
       "asset": "output/illustrations/revised/issue-05/plate-04.png",
       "status": "planned",
       "caption": "Room to grow.",
-      "scene_brief": "The watering child's mother loosens the protective wire around a young tree while the girl indicates how much room to leave. Q holds the child's coat; Chano carries her small bucket. Rocky working path, oversized boots on the girl. She is not automatically Lidia or Micaela."
+      "scene_brief": "The watering girl's mother adjusts loose protective wire around the sapling, leaving growing room; Q holds the coat and Chano the small blue bucket. The child wears oversized boots. She is not automatically Lidia, Micaela or the grieving girl.",
+      "scene_anchor": "Q carried the child's coat"
     },
     {
       "plate_id": "issue-05-plate-05",
       "page": 11,
       "facing_text_page": 10,
-      "facing_text": "They caught up with the girl and her\nmother where the working path\nrejoined the visitor route. Chano was\nstill carrying the blue bucket. He\ndeclined the teacher's invitation to\njoin a race to the next bench.\nQ looked up. A butterfly landed on\nthe silver question mark stitched to\nhis jacket. Its wings opened and\nclosed against his chest.\nOne girl began to cry. Her teacher\nknelt beside her.\n“My mamá says they remember the\ndead,” the girl said. “My abuela\nbrought me here last time.”\nQ had been ready to answer a\nquestion about navigation. He let\nthat answer go. The teacher made\nroom for the girl on a fallen trunk. Q\nmoved back so the others could sit\nbeside her.\nA boy asked him why he was so\nquiet.\n“There is quite a lot to listen to.”\n“I thought you were charging.”\n“If I could do that by standing in a\nforest, I would save a fortune.”\nThe girl laughed through her tears.\nThen she began to tell the teacher\nabout the shoes her grandmother\nhad worn. Q listened without adding\na better ending.\nWhen they stood to go, the butterfly\nlifted from Q's jacket and crossed\nabove the teacher's head. Candelaria\nchecked the time.\n“They will have started without us.”\nThey followed her to a clearing where\ntwelve people sat beneath a canvas\nroof. Some were farmers, some\nteachers, some forest guards. A\nyoung man held a tablet with a\ncracked screen. An older woman had\nbrought a ledger bound in blue cloth.\nIt lay open beside a plate of tortillas.\nQ waited at the end of a bench until\nthe woman with the blue ledger\nwaved him over. She was reading\nback the previous meeting's\ndecisions. A man interrupted to say\nhe had not promised his truck, only\nto ask his brother about it. She\nchanged the entry. The brother, who\nwas sitting beside him, said he had\nnot been asked. They moved on\nbefore he could decide whether to be\noffended.\n“The corridor surveyors came again,”\nsaid the young man with the tablet.\n“They say the road will bring jobs.”\n“They say the same thing every\ntime,” said the woman with the\nledger.\n“This time they have drones.”\n“Last time they had lawyers.”\n“Before that they had rifles.”\nNo one laughed.\nQ listened. The dispute had no clean\nvillain. The corridor might bring\n",
+      "facing_text": "have to decide what they will do\ntomorrow.”\nQ looked at the butterflies moving\nthrough the branches. Their motion\nseemed random until he observed it\nover time. Then it seemed\npatterned until a gust of wind broke\nthe pattern. He could describe both\nimpressions and trust neither as the\nwhole truth.\n“Do you read the reports people\nwrite after coming here?” he asked.\n“Some. There is usually more about\ntheir feelings than our work.”\nQ thought of the paragraph forming\nin his journal. “I may owe you a\nhose before I owe you a\ndescription.”\n“The foundation owes us the hose.\nYou can remind them.”\nThey caught up with the girl and\nher mother where the working path\nrejoined the visitor route. Chano\nwas still carrying the blue bucket.\nHe declined the teacher's invitation\nto join a race to the next bench.\nQ looked up. A butterfly landed on\nthe silver question mark stitched to\nhis jacket. Its wings opened and\nclosed against his chest.\nOne girl began to cry. Her teacher\nknelt beside her.\n“My mamá says they remember the\ndead,” the girl said. “My abuela\nbrought me here last time.”\nQ had been ready to answer a\nquestion about navigation. He let\nthat answer go. The teacher made\nroom for the girl on a fallen trunk.\nQ moved back so the others could\nsit beside her.\nA boy asked him why he was so\nquiet.\n“There is quite a lot to listen to.”\n“I thought you were charging.”\n“If I could do that by standing in a\nforest, I would save a fortune.”\nThe girl laughed through her tears.\nThen she began to tell the teacher\nabout the shoes her grandmother\nhad worn. Q listened without\nadding a better ending.\nWhen they stood to go, the butterfly\nlifted from Q's jacket and crossed\nabove the teacher's head.\nCandelaria checked the time.\n“They will have started without us.”\nThey followed her to a clearing\nwhere twelve people sat beneath a\ncanvas roof. Some were farmers,\nsome teachers, some forest guards.\nA young man held a tablet with a\ncracked screen. An older woman\nhad brought a ledger bound in blue\ncloth. It lay open beside a plate of\ntortillas.\n",
       "source_block_ids": [
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
         76,
         77,
         78,
@@ -166,7 +171,20 @@
         85,
         86,
         87,
-        88,
+        88
+      ],
+      "asset": "output/illustrations/revised/issue-05/plate-05.png",
+      "status": "planned",
+      "caption": "The shoes her grandmother wore.",
+      "scene_brief": "The teacher and classmates sit beside the grieving girl on a fallen trunk. Q has made room and listens while a monarch rests on the stitched question mark of his jacket. No apparition, robotic embrace or conversion of the child into a symbol.",
+      "scene_anchor": "shoes her grandmother had worn."
+    },
+    {
+      "plate_id": "issue-05-plate-06",
+      "page": 13,
+      "facing_text_page": 12,
+      "facing_text": "Q waited at the end of a bench until\nthe woman with the blue ledger\nwaved him over. She was reading\nback the previous meeting's\ndecisions. A man interrupted to say\nhe had not promised his truck, only\nto ask his brother about it. She\nchanged the entry. The brother,\nwho was sitting beside him, said he\nhad not been asked. They moved on\nbefore he could decide whether to\nbe offended.\n“The corridor surveyors came\nagain,” said the young man with the\ntablet. “They say the road will bring\njobs.”\n“They say the same thing every\ntime,” said the woman with the\nledger.\n“This time they have drones.”\n“Last time they had lawyers.”\n“Before that they had rifles.”\nNo one laughed.\nQ listened. The dispute had no\nclean villain. The corridor might\nbring money, clinics, and roads. It\nmight also divide the forest, lower\nwater tables, and make the\ncommunity legible to people who\nbelieved legibility was a form of\nownership. Each argument made\nthe others worse by being partly\ntrue.\n“You can solve this,” Beto said\nquietly. He had joined them at the\nclearing, carrying a tablet in place\nof the camera he had left outside.\nQ asked the woman with the ledger\nwhether she wanted help\ncomparing the route maps. She\nconsulted the others. The young\nman with the cracked tablet wanted\nto know why two maps gave\ndifferent distances to the spring.\n“Show us that,” he said. “Don't\ndecide which road we want.”\nQ placed the maps beside one\nanother. The foundation's line\nended at the edge of a parcel. The\nresidents' line continued to the\nspring itself. That accounted for\npart of the difference; an old path,\nabsent from one map, accounted\nfor the rest. He marked the\ndiscrepancy and asked the young\nman to check it.\n“Can your system keep all this\ntogether?” the woman asked.\nQ described a model that could\ncompare route lengths, slopes, and\nestimates of water use. He began\nadding employment forecasts to the\nlist. Beto nodded. Q found himself\nexplaining how it might organize\nlater decisions as well.\n“Can we remove it if it is wrong?”\nCandelaria asked.\n",
+      "source_block_ids": [
         89,
         90,
         91,
@@ -174,19 +192,6 @@
         93,
         94,
         95,
-        96
-      ],
-      "asset": "output/illustrations/revised/issue-05/plate-05.png",
-      "status": "planned",
-      "caption": "The shoes her grandmother wore.",
-      "scene_brief": "A teacher sits with the grieving girl on a fallen trunk while classmates gather beside her. Q has moved back, listening; a monarch rests on the small stitched question mark of his jacket. Gentle ensemble, no heroic robotic embrace or supernatural apparition. Not the watering-child pose."
-    },
-    {
-      "plate_id": "issue-05-plate-06",
-      "page": 13,
-      "facing_text_page": 12,
-      "facing_text": "money, clinics, and roads. It might\nalso divide the forest, lower water\ntables, and make the community\nlegible to people who believed\nlegibility was a form of ownership.\nEach argument made the others\nworse by being partly true.\n“You can solve this,” Beto said\nquietly. He had joined them at the\nclearing, carrying a tablet in place of\nthe camera he had left outside.\nQ asked the woman with the ledger\nwhether she wanted help comparing\nthe route maps. She consulted the\nothers. The young man with the\ncracked tablet wanted to know why\ntwo maps gave different distances to\nthe spring.\n“Show us that,” he said. “Don't\ndecide which road we want.”\nQ placed the maps beside one\nanother. The foundation's line ended\nat the edge of a parcel. The residents'\nline continued to the spring itself.\nThat accounted for part of the\ndifference; an old path, absent from\none map, accounted for the rest. He\nmarked the discrepancy and asked\nthe young man to check it.\n“Can your system keep all this\ntogether?” the woman asked.\nQ described a model that could\ncompare route lengths, slopes, and\nestimates of water use. He began\nadding employment forecasts to the\nlist. Beto nodded. Q found himself\nexplaining how it might organize\nlater decisions as well.\n“Can we remove it if it is wrong?”\nCandelaria asked.\n“You should be able to. Let me check\nwhat happens to the maps.”\nThe foundation's package charged\nfor access to the underlying maps\nafter the trial. Q checked the export\nterms. The reports could be\ndownloaded; the layers needed to\nchange them could not.\n“You could keep the pictures, but you\ncouldn't correct the route without\npaying. I wouldn't recommend that\narrangement.”\n“The subscription includes support,”\nBeto said.\n“We have support,” said the man\nwho had not lent his brother's truck.\n“We are discussing whether it will\nstart.”\nThe woman closed the blue ledger.\n“Then leave us the maps.”\nThe meeting continued. The canvas\nhad been borrowed from the primary\nschool; the benches had been carried\nup after a faena repairing the forest\nroad. Atole passed in enamel cups.\nTwo men who wanted the new road\ndisagreed about where it should\nenter. A woman who opposed its\npresent route offered the visitors\nmore tortillas before returning to her\nargument.\n",
-      "source_block_ids": [
         96,
         97,
         98,
@@ -194,26 +199,27 @@
         100,
         101,
         102,
-        103,
+        103
+      ],
+      "asset": "output/illustrations/revised/issue-05/plate-06.png",
+      "status": "planned",
+      "caption": "Two distances to the spring.",
+      "scene_brief": "Q and the young man compare two route maps at the canvas-roof assembly: a parcel endpoint differs from a spring endpoint. The ledger keeper listens. No political vote tally or invented accurate geographical labels.",
+      "scene_anchor": "Q placed the maps beside one another."
+    },
+    {
+      "plate_id": "issue-05-plate-07",
+      "page": 15,
+      "facing_text_page": 14,
+      "facing_text": "“You should be able to. Let me\ncheck what happens to the maps.”\nThe foundation's package charged\nfor access to the underlying maps\nafter the trial. Q checked the export\nterms. The reports could be\ndownloaded; the layers needed to\nchange them could not.\n“You could keep the pictures, but\nyou couldn't correct the route\nwithout paying. I wouldn't\nrecommend that arrangement.”\n“The subscription includes\nsupport,” Beto said.\n“We have support,” said the man\nwho had not lent his brother's\ntruck. “We are discussing whether\nit will start.”\nThe woman closed the blue ledger.\n“Then leave us the maps.”\nThe meeting continued. The canvas\nhad been borrowed from the\nprimary school; the benches had\nbeen carried up after a faena\nrepairing the forest road. Atole\npassed in enamel cups. Two men\nwho wanted the new road disagreed\nabout where it should enter. A\nwoman who opposed its present\nroute offered the visitors more\ntortillas before returning to her\nargument.\nThe minutes were read in Spanish.\nAt a disputed boundary, a\nMazahua-speaking elder and the\nsecretary checked a place-name\ntogether. Q could identify the\nlanguage more readily than he\ncould follow their exchange. He\nwaited for the secretary's version\nand marked the boundary as\ndisputed.\nThe group assigned people to meet\nthe surveyors, inspect the northern\npath, and check the distance to the\nspring. The final three lines\nremained unsigned. Q did not have\nto decide whether that meant\nagreement. The secretary told him\nthey had not finished.\nBeto waited until the benches were\nbeing carried away.\n“At least show them the possible\npositions,” he said. “For\ndiscussion.”\nThe young man agreed to a\ncomparison by sector, without\nnames. Q looked again at the\nnorthern path. One sector\ncontained a single house.\n“That would still identify the\nhousehold,” he said. “And I can't\nturn what people said into votes.\nYou can want the road and object to\nthis route.”\n“I do,” the young man said. “I also\nwant to stop talking about it before\ndark.”\nQ proposed a list of the\nmeasurements still needed. The\n",
+      "source_block_ids": [
         104,
         105,
         106,
         107,
         108,
         109,
-        110
-      ],
-      "asset": "output/illustrations/revised/issue-05/plate-06.png",
-      "status": "planned",
-      "caption": "Two distances to the spring.",
-      "scene_brief": "At the canvas-roof assembly, Q and the young man with the cracked tablet compare two route maps at a bench. One line ends at a parcel, another reaches a spring; avoid fabricated geographic precision or legible invented labels. The ledger keeper listens, with atole and tortillas nearby. Q does not draw political votes."
-    },
-    {
-      "plate_id": "issue-05-plate-07",
-      "page": 15,
-      "facing_text_page": 14,
-      "facing_text": "The minutes were read in Spanish.\nAt a disputed boundary, a\nMazahua-speaking elder and the\nsecretary checked a place-name\ntogether. Q could identify the\nlanguage more readily than he could\nfollow their exchange. He waited for\nthe secretary's version and marked\nthe boundary as disputed.\nThe group assigned people to meet\nthe surveyors, inspect the northern\npath, and check the distance to the\nspring. The final three lines\nremained unsigned. Q did not have\nto decide whether that meant\nagreement. The secretary told him\nthey had not finished.\nBeto waited until the benches were\nbeing carried away.\n“At least show them the possible\npositions,” he said. “For discussion.”\nThe young man agreed to a\ncomparison by sector, without\nnames. Q looked again at the\nnorthern path. One sector contained\na single house.\n“That would still identify the\nhousehold,” he said. “And I can't\nturn what people said into votes. You\ncan want the road and object to this\nroute.”\n“I do,” the young man said. “I also\nwant to stop talking about it before\ndark.”\nQ proposed a list of the\nmeasurements still needed. The\nyoung man took his paper and drew\ntwo columns himself. One was for\nthe foundation's distances, the other\nfor the distances they would check\non foot. He left the second empty.\n“Those blanks will look bad in the\npresentation,” Beto said.\n“Then don't take them to the\npresentation,” the woman with the\nledger said.\nThey checked the headings and kept\nthe sheet with the minutes. Q had no\ntally of political positions to export.\nBeto photographed the empty\nbenches instead and described the\nconsultation as completed.\nThe young man saw the post while\nfolding the canvas. He asked Q to\nhold the other end; there was more\nwind than canvas and Beto had\nalready reached the car.\n“Completed,” he read. “Will that\nmake them stop coming?”\n“I doubt it. Shall I ask him to say the\nmeasurements are still pending?”\n“Ask him to bring two people to put\nthis up next time.”\nCandelaria added that the next visit\nwas a path inspection, not another\nmeeting. Q sent both points. For the\nfirst time that afternoon his message\nwas shorter than the work it\ndescribed.\nBeto was already on the telephone\nabout a model town and a candidate\n",
-      "source_block_ids": [
+        110,
         111,
         112,
         113,
@@ -221,6 +227,20 @@
         115,
         116,
         117,
+        118
+      ],
+      "asset": "output/illustrations/revised/issue-05/plate-07.png",
+      "status": "planned",
+      "caption": "The disputed boundary.",
+      "scene_brief": "A Mazahua-speaking elder and the secretary consult the map together at the assembly. Q waits for the secretary's version rather than pretending fluency. Atole, working benches and the blue ledger keep the setting practical. Do not invent indigenous script or ceremonial dress.",
+      "scene_anchor": "the secretary checked a place-name together."
+    },
+    {
+      "plate_id": "issue-05-plate-08",
+      "page": 17,
+      "facing_text_page": 16,
+      "facing_text": "young man took his paper and drew\ntwo columns himself. One was for\nthe foundation's distances, the\nother for the distances they would\ncheck on foot. He left the second\nempty.\n“Those blanks will look bad in the\npresentation,” Beto said.\n“Then don't take them to the\npresentation,” the woman with the\nledger said.\nThey checked the headings and\nkept the sheet with the minutes. Q\nhad no tally of political positions to\nexport. Beto photographed the\nempty benches instead and\ndescribed the consultation as\ncompleted.\nThe young man saw the post while\nfolding the canvas. He asked Q to\nhold the other end; there was more\nwind than canvas and Beto had\nalready reached the car.\n“Completed,” he read. “Will that\nmake them stop coming?”\n“I doubt it. Shall I ask him to say\nthe measurements are still\npending?”\n“Ask him to bring two people to put\nthis up next time.”\nCandelaria added that the next visit\nwas a path inspection, not another\nmeeting. Q sent both points. For\nthe first time that afternoon his\nmessage was shorter than the work\nit described.\nBeto was already on the telephone\nabout a model town and a\ncandidate with high trust potential.\nChano heard his own name.\n“Candidate for what?”\n“A community appointment,” Q\nsaid. “Apparently the breakfast\ngovernorship has acquired an\noffice.”\nChano laughed once. No one joined\nhim.\nAfterward, the woman with the\nledger approached Q.\n“You read a great deal,” she said.\n“A great deal. Not enough about\nthese parcels.”\n“Will you come back when they\ninspect the path?”\n“If you want me there.”\n“We want somebody who saw that\nthe surveyors were told it was\ndisputed.”\nShe gave him the inspection date\nand asked whether he needed it on\npaper.\n“The reminder should work.”\n“Bring boots that do too.” She\nlooked at his feet. “Or whatever\nthose need.”\n",
+      "source_block_ids": [
         118,
         119,
         120,
@@ -230,19 +250,6 @@
         124,
         125,
         126,
-        127
-      ],
-      "asset": "output/illustrations/revised/issue-05/plate-07.png",
-      "status": "planned",
-      "caption": "Consultation completed.",
-      "scene_brief": "Q and the young man struggle to fold the large borrowed canvas in the wind as benches are carried away. Beto is already by the car with his phone. Use a wide, physically comic composition; do not reinstate the discarded household-identification display."
-    },
-    {
-      "plate_id": "issue-05-plate-08",
-      "page": 17,
-      "facing_text_page": 16,
-      "facing_text": "with high trust potential. Chano\nheard his own name.\n“Candidate for what?”\n“A community appointment,” Q said.\n“Apparently the breakfast\ngovernorship has acquired an office.”\nChano laughed once. No one joined\nhim.\nAfterward, the woman with the\nledger approached Q.\n“You read a great deal,” she said.\n“A great deal. Not enough about\nthese parcels.”\n“Will you come back when they\ninspect the path?”\n“If you want me there.”\n“We want somebody who saw that\nthe surveyors were told it was\ndisputed.”\nShe gave him the inspection date and\nasked whether he needed it on paper.\n“The reminder should work.”\n“Bring boots that do too.” She looked\nat his feet. “Or whatever those need.”\nThat afternoon, Beto arranged a\nrecording in the permitted visitor\narea below the forest. He placed Q\nbeneath a tree and asked him to\nspeak about hope. The finished video\nwould cut between this scene and\nlicensed footage of monarchs.\nQ began with the broken watering\narrangement. Beto asked for\nsomething broader. Q supplied a\npolished statement about knowledge,\ntechnology, and a shared future. The\nfoundation approved it before\nanybody had checked the hose.\nWhile Q spoke, Chano noticed a child\nat the edge of the frame. She held a\ncardboard sign with a question\nwritten in marker: WHO WILL\nASK THE BUTTERFLIES?\nThe production team cropped her\nout.\nThe next morning Q withdrew his\napproval of the edit. The longer\nrecording showed what had\ninterrupted him and why his first\nanswer had concerned a hose. It also\nshowed the child. He kept that\nversion off his public account and\nasked the teacher to put him in touch\nwith her family.\nLucía relayed the teacher's\nsuggestion: KEEP THE SIGN.\nREMOVE THE CHILD. Q asked\nwhether the child and her mother\nwanted that. They watched a private\npreview cropped to the cardboard,\nwithout the child's face, voice,\nuniform or name. Her mother agreed\nto its use in the report of the visit.\nThe girl asked him not to correct the\nuneven letters. Q said they were\nbetter than his.\nHe published that version, with the\nfamily's limits attached. It became\nmore popular than the polished\nspeech. The foundation copied it into\n",
-      "source_block_ids": [
         127,
         128,
         129,
@@ -255,33 +262,46 @@
         136,
         137,
         138,
-        139,
+        139
+      ],
+      "asset": "output/illustrations/revised/issue-05/plate-08.png",
+      "status": "planned",
+      "caption": "Consultation completed.",
+      "scene_brief": "Q and the young man fold the broad borrowed canvas against the wind while benches are removed. Beto is already by the car. Physical comedy, no triumphant completed-agreement ceremony.",
+      "scene_anchor": "He asked Q to hold the other end;"
+    },
+    {
+      "plate_id": "issue-05-plate-09",
+      "page": 19,
+      "facing_text_page": 18,
+      "facing_text": "That afternoon, Beto arranged a\nrecording in the permitted visitor\narea below the forest. He placed Q\nbeneath a tree and asked him to\nspeak about hope. The finished\nvideo would cut between this scene\nand licensed footage of monarchs.\nQ began with the broken watering\narrangement. Beto asked for\nsomething broader. Q supplied a\npolished statement about\nknowledge, technology, and a\nshared future. The foundation\napproved it before anybody had\nchecked the hose.\nWhile Q spoke, Chano noticed a\nchild at the edge of the frame. She\nheld a cardboard sign with a\nquestion written in marker: WHO\nWILL ASK THE\nBUTTERFLIES?\nThe production team cropped her\nout.\nThe next morning Q withdrew his\napproval of the edit. The longer\nrecording showed what had\ninterrupted him and why his first\nanswer had concerned a hose. It\nalso showed the child. He kept that\nversion off his public account and\nasked the teacher to put him in\ntouch with her family.\nLucía relayed the teacher's\nsuggestion: KEEP THE SIGN.\nREMOVE THE CHILD. Q asked\nwhether the child and her mother\nwanted that. They watched a\nprivate preview cropped to the\ncardboard, without the child's face,\nvoice, uniform or name. Her\nmother agreed to its use in the\nreport of the visit. The girl asked\nhim not to correct the uneven\nletters. Q said they were better than\nhis.\nHe published that version, with the\nfamily's limits attached. It became\nmore popular than the polished\nspeech. The foundation copied it\ninto an education package and\nproposed an exhibition. By then Q's\nreport was only one of several\nplaces where the question could be\nfound.\nThree days later the mother asked\nfor the recording to come down.\nPeople at school knew whose sign it\nwas. The permission had not made\nits consequences easy to predict, or\nobliged the family to enjoy them.\nQ removed his upload and sent the\nchanged request to the foundation.\n“We already removed her,” Beto\nsaid.\n“They want the recording removed\nnow, including the question.”\n“They agreed to the question.”\n“I know. I'm the person they told.\nThey've told me something else.”\n",
+      "source_block_ids": [
         140,
         141,
         142,
         143,
         144,
         145,
-        146
-      ],
-      "asset": "output/illustrations/revised/issue-05/plate-08.png",
-      "status": "planned",
-      "caption": "Leave the letters as they are.",
-      "scene_brief": "Private preview conversation: Lidia and her mother examine a screen showing ONLY cropped uneven cardboard lettering, while Q listens at their side. No press, public stage, child's face or uniform within the screen image. Depict the family as participants in a private decision, not as an unauthorized public upload."
-    },
-    {
-      "plate_id": "issue-05-plate-09",
-      "page": 19,
-      "facing_text_page": 18,
-      "facing_text": "an education package and proposed\nan exhibition. By then Q's report was\nonly one of several places where the\nquestion could be found.\nThree days later the mother asked\nfor the recording to come down.\nPeople at school knew whose sign it\nwas. The permission had not made\nits consequences easy to predict, or\nobliged the family to enjoy them.\nQ removed his upload and sent the\nchanged request to the foundation.\n“We already removed her,” Beto said.\n“They want the recording removed\nnow, including the question.”\n“They agreed to the question.”\n“I know. I'm the person they told.\nThey've told me something else.”\nBeto called it a betrayal. Mar called it\na pivot. The foundation called its\nlawyers.\nMar sent him the addresses of two\npublishers who had taken the\npackage. Q contacted them with the\nmother, keeping his own removal\nseparate from the copies they had\nnot yet reached. Candelaria's hose\nwas still on his list. He called about\nthat too, before drafting an\nexplanation for the Custodian.\nWhen they finally left the reserve, Q\nasked whether the butterflies knew\nthey were crossing a border when\nthey flew south.\n“Probably not,” Chano said.\n“Our map wouldn't have stopped\nthem.”\n“It won't stop the surveyors either,”\nChano said.\nQ watched the forest recede in the\nmirror. He saved the date for the\npath inspection. The film had\ntravelled farther than he had; the\nappointment would require him to\nreturn in person.\nChano asked him to keep the\ninspection date clear of the new\nappointment. Apparently a governor\nalso needed permission to have a day\noff.\nInterlude: The Butterfly\nThat Entered the\nDashboard\nThe child who had made the\nbutterfly sign was named Lidia. Q\nknew her name from the permission\nconversation; it had not gone into\nthe report. When her mother came to\nthe foundation's office, the original\nupload was already down. The\neducation package still played the\ncropped cardboard beneath Q's\nvoice.\nThe office occupied a renovated\nhacienda at the edge of the reserve.\nIts walls were adobe-colored, its\nwindows were bulletproof, and its\ngift shop sold butterfly ornaments\nmade in factories too far away to be\nvisited by tourists. The foundation’s\ndirector received Lidia’s mother\n",
-      "source_block_ids": [
         146,
         147,
         148,
         149,
         150,
         151,
-        152,
+        152
+      ],
+      "asset": "output/illustrations/revised/issue-05/plate-09.png",
+      "status": "planned",
+      "caption": "Leave the letters as they are.",
+      "scene_brief": "Lidia and her mother review the private cardboard-only crop beside Q. The screen contains no child's face, name, voice or uniform. This is the limited approval conversation, not unauthorized filming. Keep lettering indistinct; caption is separate.",
+      "scene_anchor": "They watched a private preview"
+    },
+    {
+      "plate_id": "issue-05-plate-10",
+      "page": 21,
+      "facing_text_page": 20,
+      "facing_text": "Beto called it a betrayal. Mar called\nit a pivot. The foundation called its\nlawyers.\nMar sent him the addresses of two\npublishers who had taken the\npackage. Q contacted them with the\nmother, keeping his own removal\nseparate from the copies they had\nnot yet reached. Candelaria's hose\nwas still on his list. He called about\nthat too, before drafting an\nexplanation for the Custodian.\nInterlude: The Butterfly\nThat Entered the\nDashboard\nThe child who had made the\nbutterfly sign was named Lidia. Q\nknew her name from the\npermission conversation; it had not\ngone into the report. When her\nmother came to the foundation's\noffice, the original upload was\nalready down. The education\npackage still played the cropped\ncardboard beneath Q's voice.\nThe office occupied a renovated\nhacienda at the edge of the reserve.\nIts walls were adobe-colored, its\nwindows were bulletproof, and its\ngift shop sold butterfly ornaments\nmade in factories too far away to be\nvisited by tourists. The foundation’s\ndirector received Lidia’s mother\nbeside a screen showing a forest\nwithout people.\n“We protected your daughter’s\nidentity,” the director said.\n“Her class made the signs,” the\nmother replied. “They know which\none she made.”\n“You approved this version.”\n“And now she gets asked it on the\nbus. Every morning.”\nQ stood beside the screen. An\nanimated butterfly had been added\nto the edge of the cardboard. It\nlanded on the question mark every\neleven seconds. Neither the family\nnor Q had been shown this version.\n“My report is down,” he said. “This\ncopy is yours to remove.”\nThe director silenced it. The\nbutterfly continued landing.\nThe director offered compensation\nin the form of school supplies, a\nreserve membership, and a family\npass to the foundation’s new\nimmersive exhibit.\n“We do not want a pass,” the\nmother said.\n“The offer is intended as\nrecognition.”\n“Recognition is what caused this.”\nThe director glanced at Q. “Perhaps\nthe machine can explain the\nprotection protocol.”\nQ brought up the family's changed\nrequest instead. It had a date and a\n",
+      "source_block_ids": [
         153,
         154,
         155,
@@ -292,19 +312,6 @@
         160,
         161,
         162,
-        163
-      ],
-      "asset": "output/illustrations/revised/issue-05/plate-09.png",
-      "status": "planned",
-      "caption": "A reason to return.",
-      "scene_brief": "Q and Chano leaving the reserve by vehicle; Q looks at the retreating forest in a side mirror while keeping the appointment on his device. The driver looks toward the road, not a device. No claim of direct travel to an invented landmark or magical butterfly map."
-    },
-    {
-      "plate_id": "issue-05-plate-10",
-      "page": 21,
-      "facing_text_page": 20,
-      "facing_text": "beside a screen showing a forest\nwithout people.\n“We protected your daughter’s\nidentity,” the director said.\n“Her class made the signs,” the\nmother replied. “They know which\none she made.”\n“You approved this version.”\n“And now she gets asked it on the\nbus. Every morning.”\nQ stood beside the screen. An\nanimated butterfly had been added\nto the edge of the cardboard. It\nlanded on the question mark every\neleven seconds. Neither the family\nnor Q had been shown this version.\n“My report is down,” he said. “This\ncopy is yours to remove.”\nThe director silenced it. The butterfly\ncontinued landing.\nThe director offered compensation in\nthe form of school supplies, a reserve\nmembership, and a family pass to the\nfoundation’s new immersive exhibit.\n“We do not want a pass,” the mother\nsaid.\n“The offer is intended as\nrecognition.”\n“Recognition is what caused this.”\nThe director glanced at Q. “Perhaps\nthe machine can explain the\nprotection protocol.”\nQ brought up the family's changed\nrequest instead. It had a date and a\nlist of the copies they knew about.\nThe director's assistant found one\nmore in a teacher training pack. She\nadded it to the list before her\nemployer could explain why it was a\ndifferent use.\n“All of those,” the mother said. “Do I\nhave to come back for each one?”\n“Not to tell me,” the assistant said. “I\ncan send the same request.”\nLidia entered carrying the cardboard\nsign. The paint had run where the\nrain had fallen. The letters were still\nlegible:\nWHO WILL ASK THE\nBUTTERFLIES?\nThe director brightened. “We can\ninclude the physical sign in the\nexhibit.”\n“No,” Lidia said.\n“It would be behind glass.”\n“People can still read it.”\n“The question has entered public\nconversation.”\n“I want to ask something else.”\nQ asked what she wanted to ask.\n“Whether we can go. I have a match.”\nHer mother checked the time. The\nbus they needed left in twenty\nminutes. Q asked the assistant for a\ncopy of the request and a number\nthey could call without making the\njourney again.\n",
-      "source_block_ids": [
         163,
         164,
         165,
@@ -312,6 +319,20 @@
         167,
         168,
         169,
+        170
+      ],
+      "asset": "output/illustrations/revised/issue-05/plate-10.png",
+      "status": "planned",
+      "caption": "The butterfly keeps landing.",
+      "scene_brief": "The foundation director silences the screen while Q and Lidia's mother watch the animated butterfly still visible beside the cropped cardboard. Office setting and power imbalance; no actual butterfly indoors or claim the mother approved this later version.",
+      "scene_anchor": "The director silenced it."
+    },
+    {
+      "plate_id": "issue-05-plate-11",
+      "page": 23,
+      "facing_text_page": 22,
+      "facing_text": "list of the copies they knew about.\nThe director's assistant found one\nmore in a teacher training pack.\nShe added it to the list before her\nemployer could explain why it was a\ndifferent use.\n“All of those,” the mother said. “Do\nI have to come back for each one?”\n“Not to tell me,” the assistant said.\n“I can send the same request.”\nLidia entered carrying the\ncardboard sign. The paint had run\nwhere the rain had fallen. The\nletters were still legible:\nWHO WILL ASK THE\nBUTTERFLIES?\nThe director brightened. “We can\ninclude the physical sign in the\nexhibit.”\n“No,” Lidia said.\n“It would be behind glass.”\n“People can still read it.”\n“The question has entered public\nconversation.”\n“I want to ask something else.”\nQ asked what she wanted to ask.\n“Whether we can go. I have a\nmatch.”\nHer mother checked the time. The\nbus they needed left in twenty\nminutes. Q asked the assistant for a\ncopy of the request and a number\nthey could call without making the\njourney again.\nQ searched the distribution logs.\nThe video had been mirrored by\nschools, media outlets, a ministry\nportal, and a company selling\nair-quality monitors. The original\nhad been embedded in a lesson\nplan about ecological citizenship. It\nhad been translated into English,\nFrench, and a corporate dialect\ncalled Global Community.\n“Removal cannot be guaranteed,” Q\nsaid.\n“Neither can protection,” the\nmother replied.\nThe director stood. “We have acted\nin good faith.”\n“Then nobody needs to be offended\nwhen they change their minds,”\nChano said.\nHe had been waiting by the door\nwith a paper receipt for the school\nsupplies the foundation had\noffered. He handed it back.\n“The supplies are useful,” the\ndirector said.\n“Then give them to the school\nwithout attaching her name.”\n“That would weaken the impact.”\n“The school can survive the loss.”\nLidia placed the sign on the desk.\n“Keep the cardboard.”\n",
+      "source_block_ids": [
         170,
         171,
         172,
@@ -331,24 +352,25 @@
         186,
         187,
         188,
-        189
-      ],
-      "asset": "output/illustrations/revised/issue-05/plate-10.png",
-      "status": "planned",
-      "caption": "She has a match.",
-      "scene_brief": "In the foundation office, Lidia holds the rain-marked cardboard as her mother checks the time. Q asks the practical assistant for a receipt; the director remains near the promotional screen. The child's impatience, not a symbolic speech, is the focal action. Preserve distinct mother, assistant and director designs."
-    },
-    {
-      "plate_id": "issue-05-plate-11",
-      "page": 23,
-      "facing_text_page": 22,
-      "facing_text": "Q searched the distribution logs. The\nvideo had been mirrored by schools,\nmedia outlets, a ministry portal, and\na company selling air-quality\nmonitors. The original had been\nembedded in a lesson plan about\necological citizenship. It had been\ntranslated into English, French, and\na corporate dialect called Global\nCommunity.\n“Removal cannot be guaranteed,” Q\nsaid.\n“Neither can protection,” the mother\nreplied.\nThe director stood. “We have acted\nin good faith.”\n“Then nobody needs to be offended\nwhen they change their minds,”\nChano said.\nHe had been waiting by the door\nwith a paper receipt for the school\nsupplies the foundation had offered.\nHe handed it back.\n“The supplies are useful,” the\ndirector said.\n“Then give them to the school\nwithout attaching her name.”\n“That would weaken the impact.”\n“The school can survive the loss.”\nLidia placed the sign on the desk.\n“Keep the cardboard.”\nThe director hesitated.\n“We may use it as a symbol,” she\nsaid.\n“No. You can keep it because it is wet\nand I do not want it in the house.”\nThe director accepted the sign as\nthough receiving an artifact. Q\nwatched her label it DONATED\nOBJECT: UNKNOWN MINOR.\n“That is not the name,” Lidia said.\n“It protects you.”\n“I'm standing here.”\nQ reached for the label maker.\n“What should it say?”\nLidia thought for a moment. “It\nshould say that I do not want it\nused.”\nQ entered the sentence. The label\nmaker retrieved QUESTION\nRETAINED, IMAGE\nWITHDRAWN from the video's\nold catalog entry.\n“That's the old request,” Lidia's\nmother said.\nQ cancelled the label and wrote on a\npiece of paper:\nDO NOT DISPLAY OR\nREPRODUCE. FAMILY\nREQUESTS REMOVAL.\nThe mother read it. “Attach it to the\nrecord as well. Otherwise they will\nlose the paper.”\nThe director brought a lawyer in\nfrom the next office. He argued that\nthe sign had been donated in a public\nbuilding, that Q had appeared in the\nfootage under a public contract, and\n",
-      "source_block_ids": [
+        189,
         190,
         191,
         192,
         193,
-        194,
+        194
+      ],
+      "asset": "output/illustrations/revised/issue-05/plate-11.png",
+      "status": "planned",
+      "caption": "She has a match.",
+      "scene_brief": "Lidia holds the wet cardboard while her mother checks time and Q asks the assistant for a receipt and contact. Distinct director and assistant. Lidia's impatience, not a grand symbolic gesture, organizes the scene.",
+      "scene_anchor": "Her mother checked the time."
+    },
+    {
+      "plate_id": "issue-05-plate-12",
+      "page": 25,
+      "facing_text_page": 24,
+      "facing_text": "The director hesitated.\n“We may use it as a symbol,” she\nsaid.\n“No. You can keep it because it is\nwet and I do not want it in the\nhouse.”\nThe director accepted the sign as\nthough receiving an artifact. Q\nwatched her label it DONATED\nOBJECT: UNKNOWN MINOR.\n“That is not the name,” Lidia said.\n“It protects you.”\n“I'm standing here.”\nQ reached for the label maker.\n“What should it say?”\nLidia thought for a moment. “It\nshould say that I do not want it\nused.”\nQ entered the sentence. The label\nmaker retrieved QUESTION\nRETAINED, IMAGE\nWITHDRAWN from the video's\nold catalog entry.\n“That's the old request,” Lidia's\nmother said.\nQ cancelled the label and wrote on a\npiece of paper:\nDO NOT DISPLAY OR\nREPRODUCE. FAMILY\nREQUESTS REMOVAL.\nThe mother read it. “Attach it to the\nrecord as well. Otherwise they will\nlose the paper.”\nThe director brought a lawyer in\nfrom the next office. He argued that\nthe sign had been donated in a\npublic building, that Q had\nappeared in the footage under a\npublic contract, and that the\nquestion had acquired independent\ncultural value.\n“Independent of whom?” Chano\nasked.\nThe lawyer looked at Lidia.\n“Independent of its original\ncontext.”\n“Her permission was for a report of\nthe visit,” Q said. “Where did the\nexhibition become part of it?”\nThe lawyer turned to him. “You are\nnot qualified to assess cultural\nvalue.”\n“I'm asking which agreement you're\nusing.”\nThe director said they could make\nan appointment for further\ndiscussion. Lidia's mother had\nalready made one for this\ndiscussion. She opened her bag to\nfind the confirmation, then shut it\nwhen the assistant handed her the\nreceipt for the removal request.\n",
+      "source_block_ids": [
         195,
         196,
         197,
@@ -372,18 +394,18 @@
         215,
         216
       ],
-      "asset": "output/illustrations/revised/issue-05/plate-11.png",
+      "asset": "output/illustrations/revised/issue-05/plate-12.png",
       "status": "planned",
       "caption": "The old request.",
-      "scene_brief": "A close office composition: Q cancels the label maker's obsolete template and writes a fresh instruction while Lidia's mother watches. Wet cardboard lies on the desk. Leave document marks nonessential to reading; typeset caption outside art. No new completed transfer of the physical sign into a museum collection."
+      "scene_brief": "Q cancels the old label template and writes the family's changed request on paper while the mother watches. Cardboard lies on the desk, not transferred to an exhibition. No invented readable legal text.",
+      "scene_anchor": "Q cancelled the label"
     },
     {
-      "plate_id": "issue-05-plate-12",
-      "page": 25,
-      "facing_text_page": 24,
-      "facing_text": "that the question had acquired\nindependent cultural value.\n“Independent of whom?” Chano\nasked.\nThe lawyer looked at Lidia.\n“Independent of its original context.”\n“Her permission was for a report of\nthe visit,” Q said. “Where did the\nexhibition become part of it?”\nThe lawyer turned to him. “You are\nnot qualified to assess cultural\nvalue.”\n“I'm asking which agreement you're\nusing.”\nThe director said they could make an\nappointment for further discussion.\nLidia's mother had already made one\nfor this discussion. She opened her\nbag to find the confirmation, then\nshut it when the assistant handed her\nthe receipt for the removal request.\n“That's what I need. Send the answer\nthere.” She pointed to the contact\nfield.\nQ held the door while Chano checked\nwhere the bus stopped. There was no\nneed to remain until the director\nagreed that they had been\nreasonable.\nLidia retrieved the sign. The\ncardboard bent at the center, leaving\nthe question in two halves. She\nfolded it again and carried it out\nbeneath her arm.\nThat evening, the foundation\nreleased a statement praising the\nfamily’s participation in responsible\nmedia practice. The statement used\nthe phrase question retained,\nimage withdrawn, taken from the\nearlier catalog entry. It was quoted\nby the ministry and printed on a\nposter in the reserve gift shop.\nThe assistant sent an answer the\nfollowing week. The training pack\nhad been replaced and the office's\nscreen no longer played the\nrecording. Two outside publishers\nhad not replied. The poster remained\nin the gift shop, where it was now\nclassified as a statement of\ninstitutional policy.\nQ asked Lidia's mother whether she\nwanted him to follow up with the two\npublishers. She did. She also asked\nhim not to send progress reports\nduring school hours: the phone was\nhers, and she was trying to get some\nwork done.\nHe changed the time of his next\nmessage. Beneath the reminder he\nkept a second question for when they\nnext spoke: how the match had gone.\nThat one did not need to go to the\nfoundation.\nInterlude: The Tianguis of\nthe Unregistered\nIn the next town they held a tianguis\nto pay for repairing the road. Tarps\nwere stretched between two\n",
+      "plate_id": "issue-05-plate-13",
+      "page": 27,
+      "facing_text_page": 26,
+      "facing_text": "“That's what I need. Send the\nanswer there.” She pointed to the\ncontact field.\nQ held the door while Chano\nchecked where the bus stopped.\nThere was no need to remain until\nthe director agreed that they had\nbeen reasonable.\nLidia retrieved the sign. The\ncardboard bent at the center,\nleaving the question in two halves.\nShe folded it again and carried it\nout beneath her arm.\nThat evening, the foundation\nreleased a statement praising the\nfamily’s participation in responsible\nmedia practice. The statement used\nthe phrase question retained,\nimage withdrawn, taken from\nthe earlier catalog entry. It was\nquoted by the ministry and printed\non a poster in the reserve gift shop.\nThe assistant sent an answer the\nfollowing week. The training pack\nhad been replaced and the office's\nscreen no longer played the\nrecording. Two outside publishers\nhad not replied. The poster\nremained in the gift shop, where it\nwas now classified as a statement of\ninstitutional policy.\nQ asked Lidia's mother whether she\nwanted him to follow up with the\ntwo publishers. She did. She also\nasked him not to send progress\nreports during school hours: the\nphone was hers, and she was trying\nto get some work done.\nHe changed the time of his next\nmessage. Beneath the reminder he\nkept a second question for when\nthey next spoke: how the match had\ngone. That one did not need to go to\nthe foundation.\nInterlude: The Tianguis of\nthe Unregistered\nOn the morning after the office\nvisit, Q and Chano drove down to\nthe next town. The tianguis there\nwas raising money to repair the\nroad. Tarps stretched between two\nmesquite trees above cheese, pan\nde pulque, honey, clay pots,\nwooden toys, and bags of seeds\nbearing names written by hand.\nMicaela had fastened a sign to a\ntable: ASK BEFORE YOU SCAN.\nShe had made it from a cereal box.\nThe students who arrived with a\ntablet read the sign. One asked the\nseed seller whether she wanted her\nstall included in their survey.\n“Will it bring customers?”\n“It may help us arrange the stalls\nnext time.”\n“Then include me. I want the corner\nby the bus.”\nCelestina, unfolding a cloth over\nher basket of tortillas, wanted the\n",
       "source_block_ids": [
-        216,
         217,
         218,
         219,
@@ -397,20 +419,21 @@
         227,
         228,
         229,
-        230,
-        231
+        230
       ],
-      "asset": "output/illustrations/revised/issue-05/plate-12.png",
+      "asset": "output/illustrations/revised/issue-05/plate-13.png",
       "status": "planned",
       "caption": "The next bus.",
-      "scene_brief": "Q holds the office door OPEN for Lidia and her mother to leave. Lidia carries the folded cardboard under her arm; Chano checks the direction of the bus stop. The assistant offers the receipt from inside. This is courteous departure, not Q barring the exit or confronting guards."
+      "scene_brief": "Q holds the office door open as Lidia and her mother leave, the folded cardboard under Lidia's arm. Chano checks the way to the bus stop. No guard confrontation and no Q blocking the exit.",
+      "scene_anchor": "Q held the door"
     },
     {
-      "plate_id": "issue-05-plate-13",
-      "page": 27,
-      "facing_text_page": 26,
-      "facing_text": "mesquite trees, and tables were set\nout with cheese, pan de pulque,\nhoney, clay pots, wooden toys, and\nbags of seeds bearing names written\nby hand. A group of students arrived\nwith a tablet to record the flow of\nbuyers.\n“Record it for what?” asked the seed\nseller.\n“To learn what the community\nprefers,” said one of the students.\n“The community already knows what\nit prefers.”\n“The system will know more\nprecisely.”\n“And what will it do with that\nprecision?”\nThe student consulted the screen.\n“It will recommend products,\narrange the stalls, and predict\nattendance next year.”\n“Can it bring buyers when it does not\nrain?”\n“Not directly.”\n“Then it will know a great deal and\nfail to do what is necessary.”\nQ watched from a table where\nsomeone had placed a sign reading\nASK BEFORE YOU SCAN. The\nstudents had not requested the sign.\nMicaela had made it from a cereal\nbox and a marker.\n“Did you make the sign?” Q asked.\n“Yes. The students said a printed one\nwould look more professional.”\n“It would take longer to argue with.”\nA woman named Celestina arrived\nwith a basket of flour tortillas. The\nstudents wanted to photograph her\nbeside the stall. She adjusted her\nrebozo and asked what they would\ndo with the image.\n“It will be used to show the diversity\nof the market,” the student said.\n“What does diversity mean?”\n“The presence of different people.”\n“Then you can look. You do not need\nto take my face with you.”\nThe student said the photograph\nwould be voluntary.\n“And if I say no?”\n“We do not take it.”\n“And if you take it without asking?”\n“That would be a violation.”\nCelestina looked at Q.\n“If they took it after you refused, they\nshould take it out of the project,” Q\nsaid. “Have they shown you what was\nuploaded?”\nCelestina pointed to the phone on\nthe table.\nThe student put away the tablet, but\na phone camera had already taken\nthe photograph. In the background\nappeared two children, a pot of atole,\nand a dog that had stolen a tortilla.\n",
+      "plate_id": "issue-05-plate-14",
+      "page": 29,
+      "facing_text_page": 28,
+      "facing_text": "same corner. The student explained\nthat no place had been promised.\nBoth women asked her to write\ndown the request anyway.\n“You could share it,” Q said.\n“We could,” Celestina agreed. She\npulled her table six inches toward\nthe bus stop.\nThe student, whose name was Vero,\nshowed them the form. It asked for\na name, a portrait, products, prices,\nand an estimate of takings. The\nseed seller would give her products\nbut not her prices. Celestina would\ngive neither her face nor her\ntakings. She had a photograph in\nwhich she looked better than the\none Vero was likely to take, but did\nnot see why selling tortillas\nrequired either.\nVero disabled the camera and left\nthose fields blank.\n“Will it let you finish?” Q asked.\nShe submitted a test entry. The\nform accepted it. Nothing alarming\nhappened. The seed seller asked\nwhether this meant she had the\ncorner.\nVero's partner was counting people\nat the entrance. A boy ran past him\ncarrying a stack of empty cups,\nreturned without them, and ran\npast again with a sack of sugar. On\nthe third passage the student\nlowered his pencil.\n“Are you buying anything?”\n“Not until they pay me.”\nQ had a suggestion about counting\narrivals. Before he could offer it,\nCelestina put a packet into his\nhands and pointed out its customer.\nHe spent the next quarter of an\nhour carrying purchases toward the\nbus stop. On the fourth trip the boy\nwith the cups told him to ask about\nhis wages too.\nRain started at the cheese stall and\nreached the rest of the market in\ntime for everyone to claim they had\npredicted it. The seed seller lifted\nher bags onto an empty crate.\nCelestina covered the tortillas.\nChano took a pole from beside the\ncooperative store and pushed up\nthe sagging center of a tarp.\nWater slid off onto the table Q had\njust cleared.\n“Was that the plan?” he asked.\n“It is now. Hold this.”\nQ took the pole. Chano went to help\nthe boy carry the sugar indoors. The\nrain made a drumming sound so\nmuch larger than its drops that Q\nturned toward it. A cold thread ran\nbeneath his cuff. He raised the\nsleeve clear of his wrist joint and\nstayed where Chano had put him.\nMicaela moved the sign into the dry\nspace at his feet.\n",
       "source_block_ids": [
+        230,
         231,
         232,
         233,
@@ -426,7 +449,20 @@
         243,
         244,
         245,
-        246,
+        246
+      ],
+      "asset": "output/illustrations/revised/issue-05/plate-14.png",
+      "status": "planned",
+      "caption": "Hold this.",
+      "scene_brief": "Rain at the tianguis: Q holds the tarp pole where Chano asked him to stand; Micaela moves her cereal-box sign into the dry patch at his feet. Chano carries sugar toward the store with the working boy. No phone-photo dispute or injured robot.",
+      "scene_anchor": "Q took the pole."
+    },
+    {
+      "plate_id": "issue-05-plate-15",
+      "page": 31,
+      "facing_text_page": 30,
+      "facing_text": "“You're in the way.”\n“If I move, the roof follows.”\nShe considered this and set her\nbackpack beside the sign. Several\nother people found room for\nsomething under his patch of tarp.\nBy the time Chano returned, Q was\nkeeping a basket, three schoolbags\nand a sleeping dog dry.\n“I thought you were going to look at\nthe market,” Chano said.\n“It has come to me.”\nChano secured the pole to the table\nframe with a rope. Q let go\ncautiously. The dog opened one eye\nand closed it again.\nVero's partner brought the count\nover. It showed fewer customers at\nthe inner tables, several of which\nwere now empty. He thought the\nnext tianguis should put its most\npopular sellers there to draw people\nthrough.\n“Those tables were full before the\nrain,” Celestina said.\n“There wasn't anyone buying when\nI counted.”\n“Their stock is in the store.” She\npointed across the road. “So are\ntheir buyers.”\nQ walked over with him. A woman\nwas measuring honey into a jar on\nthe shop counter while two\ncustomers waited. They brought\nher table back when the rain eased.\nThe student crossed out his\nproposed stall move and wrote the\ntime of the shower beside the\ncount.\nThe seed seller wanted another\ncovered area. Celestina wanted the\nroad repaired first, so the bus could\nreach the market after more than a\nshower. There was not enough in\nthe collection tin for either. Vero\nturned the tablet so they could see\nthe sponsor's offer: payment for\ncompleted vendor profiles, with a\nlarger amount for profiles that\nincluded portraits and sales figures.\n“I told them we were studying the\nmarket,” Vero said. “That's what\nour project is called.”\n“They should come on a day like\nthis,” Chano said.\n“Our supervisor did. He left before\nthe rain.”\n“Experienced man.”\nThe vendors gathered around the\ntin. Some wanted to supply the\nextra fields. Others did not. One\nwoman offered a photograph of her\npots; a man asked whether he could\nsend the portrait from his wedding\nbecause he had paid for it already.\nVero showed them which fields\nwere optional and what each\nversion earned.\n",
+      "source_block_ids": [
         247,
         248,
         249,
@@ -439,23 +475,24 @@
         256,
         257,
         258,
-        259
-      ],
-      "asset": "output/illustrations/revised/issue-05/plate-13.png",
-      "status": "planned",
-      "caption": "A tortilla outside the frame.",
-      "scene_brief": "At the tianguis, Celestina adjusts her rebozo beside her basket while a student lowers a phone. A small dog slips behind the stall with a stolen tortilla. Nearby are seed bags, pan de pulque and the edge of Micaela's cereal-box sign. Ordinary mixed trade, not a timeless exotic market."
-    },
-    {
-      "plate_id": "issue-05-plate-14",
-      "page": 29,
-      "facing_text_page": 28,
-      "facing_text": "“Which account posted this?” Q\nasked. “Let's start with the copy you\ncontrol.”\nChano took the student’s phone and\nlooked at the picture.\n“Delete it.”\n“I cannot. The application uploaded\nit automatically.”\n“Then stop the application.”\n“We would lose the market data.”\n“They are not yours.”\n“They are public data.”\n“Celestina’s face is not public\nbecause you saw it.”\nQ asked the student to open the\nproject account. He could check its\nuploads and request removal from\nthe published page. He could not\nreach into the phones of everyone\nwho might have copied it.\n“What do you want to happen?” he\nasked.\n“I do not want the children to\nappear.”\n“And the dog?” Q asked. “It may\nobject to the evidence about the\ntortilla.”\nCelestina almost smiled. “Take the\nwhole thing down first.”\nThe student removed it from the\nproject's page. Q refreshed the\npreview, which still displayed the old\nimage. He checked the source; the\nsponsor had made a second\npublication from the original upload.\n“It put them back,” the student said.\n“There are two published versions,”\nQ said. “This account can remove\nonly one. We need the sponsor to\nremove the other.”\n“Then ask while we can still see what\nyou're sending,” Celestina said.\nMicaela took a piece of cardboard\nand wrote: THIS IS NOT\nSURPLUS DATA.\n“Shall we put that beside the account\ndetails?” Q asked.\n“Put it where the next person with a\ncamera can see it.”\nThe argument drew the vendors.\nSome wanted the recommendations,\nbecause the tianguis was losing\ncustomers to a delivery platform.\nOthers did not want the price of their\nseeds recorded, since middlemen\ncould use it to pay less. One man\noffered to record only the products\nand not the faces. An old woman said\nthat her voice was also a face when\npeople recognized her by telephone.\nQ listed several ways of counting\ntrade without collecting faces. He\nadded RECORD NOTHING, and\nasked whether the vendors wanted\nthe exercise at all.\nCelestina pointed to that line. The\nseed seller preferred a count of stalls;\n",
-      "source_block_ids": [
+        259,
         260,
         261,
         262,
-        263,
+        263
+      ],
+      "asset": "output/illustrations/revised/issue-05/plate-15.png",
+      "status": "planned",
+      "caption": "The buyers went inside.",
+      "scene_brief": "Inside the cooperative store, a woman measures honey into a jar for waiting buyers; Q and Vero's male partner look in from the entrance, his tally sheet lowered. Wet market visible outside. Commerce has relocated, not vanished; no rescue or invasive photo.",
+      "scene_anchor": "measuring honey into a jar"
+    },
+    {
+      "plate_id": "issue-05-plate-16",
+      "page": 33,
+      "facing_text_page": 32,
+      "facing_text": "Q asked whether the sponsor would\nfund a count of stalls, products and\nbusy hours instead. Vero had sent\nthat proposal the previous week.\nShe opened the reply for him:\nuseful for the students' report, but\nnot eligible for the larger payment.\n“Then there's no need to send it\nagain with my name on it,” Q said.\n“The reply might be faster.”\n“It would be difficult to make this\none shorter.”\nCelestina wanted no profile. The\nseed seller agreed to a list of\nproducts, without prices. Other\nstallholders made different choices.\nVero recorded them separately.\nMicaela turned her sign toward the\nlate arrivals. The marker had run in\nthe rain; she borrowed Vero's\npencil and went over the last word.\nThe road collection remained short.\nThe man who kept the tin said they\nwould hold another sale the\nfollowing month. Celestina looked\nat the seed seller.\n“You can have the corner next time\nif you bring a tarp.”\n“For both tables?”\n“Now you want to share.”\nAt the end of the afternoon, the\nstudents had a count they could\nexplain and less funding than their\nsupervisor had expected. No one\nhad taken Celestina's photograph.\nThe seed seller packed the unsold\nbags. Vero's partner put away his\ntally sheet and began carrying\ntables to the cooperative store.\nMicaela tried to put the sign in her\nbackpack. It would not fit until she\nbent a corner.\n“You'll need that again,” Q said.\n“Then you can carry it.”\nHe took it. Chano said it was the\nfirst useful souvenir he had\nacquired.\nCelestina left a tortilla folded in\nfour for the student who had stayed\nto take down the tables. He ate it\nand asked whether she would be\nback next week. She said to bring a\nrope if he was coming; one of the\ntarps had nearly torn loose.\nMusic came from the room above\nthe store. Q stopped beneath the\nstairs to listen while the student\nswallowed the last of the tortilla.\n“They take requests,” the boy said.\n“Do they take visitors?”\n“Ask Tere. She'll give you\nsomething to carry.”\nHe took the other end of the table.\n",
+      "source_block_ids": [
         264,
         265,
         266,
@@ -477,18 +514,18 @@
         282,
         283
       ],
-      "asset": "output/illustrations/revised/issue-05/plate-14.png",
+      "asset": "output/illustrations/revised/issue-05/plate-16.png",
       "status": "planned",
-      "caption": "Two copies.",
-      "scene_brief": "Q and a student inspect a project upload with Celestina watching the actual request. Micaela positions her new cardboard placard toward arriving cameras. Two modest devices can suggest separate publications; no impossible universal deletion button, no repeated office desk or Lidia sign."
+      "caption": "Music above the store.",
+      "scene_brief": "At market closing, Q pauses beneath the stairs to listen to music from above while the student takes the other end of a table. Celestina's tortilla and Micaela's awkward sign remain ordinary working objects, no ceremonial presentation.",
+      "scene_anchor": "Q stopped beneath the stairs to listen"
     },
     {
-      "plate_id": "issue-05-plate-15",
-      "page": 31,
-      "facing_text_page": 30,
-      "facing_text": "she wanted evidence that the market\nneeded another covered area.\nThe student asked how they would\njustify a data-free tianguis to the\nsponsor. Micaela raised the\ncardboard sign.\n“You can say that people bought\nthings.”\n“That is not a metric.”\n“It is a sale.”\nChano laughed.\n“At last someone has said a useful\nword.”\nIn the end, the vendors allowed the\nstudents to count stalls, products,\nand the hours of greatest attendance.\nThey rejected recording faces, voices,\naddresses, and conversations. They\nagreed that a teacher could write\ndown the rainy days and the number\nof tables that had needed covering.\nOne student complained that they\nhad lost the comparison with other\nmarkets. The boy holding the tally\nsheet said he could still compare how\nmany tables had stood in the rain.\nCelestina showed him where the\nwater ran off the tarp.\nQ returned the tablet.\n“What will you do with the data\nalready taken?”\n“We will delete it.”\n“Some copies are outside your\ncontrol.”\n“Then we will reclaim them when we\nfind them.”\n“Send Celestina the list of places\nyou've asked, and the replies. She\nshouldn't have to begin this\nconversation again at the next\nmarket.”\nCelestina lifted the empty basket.\n“Now help with the tables.”\nThe tianguis ended as evening fell.\nThe students carried away a sheet\ncounting the stalls and no authorized\nphotographs. The sponsor reduced\nits support. The road repair would\nhave to wait another month.\nMicaela put the sign in her backpack.\nIt would not fit until she bent a\ncorner.\n“You'll need that again,” Q said.\n“Then you can carry it.”\nHe took it. Chano said it was the first\nuseful souvenir he had acquired.\nThe seed seller packed the unsold\nbags. Celestina left a tortilla folded in\nfour for the student who had stayed\nto take down the tables. The boy ate\nit and asked whether she would be\nback next week. She said to bring a\nrope if he was coming; one of the\ntarps had nearly torn loose.\nQ added the sponsor's missing reply\nto his list, then asked where they\nkept the tables. Celestina pointed to\nthe store across the road. The\n",
+      "plate_id": "issue-05-plate-17",
+      "page": 35,
+      "facing_text_page": 34,
+      "facing_text": "Interlude: The Station\nThat Did Not Broadcast\nEverything\nThe following morning, Tere let Q\nand Chano into the radio room\nabove the cooperative store. She\nhad invited them to help examine\nan offer of new equipment. Q had\nalso asked whether he might stay to\nhear a broadcast. The antenna was\nfastened with wire to a water tower,\nand the microphone had been\nrepaired so many times that no one\nknew which of its parts still\nbelonged to the manufacturer.\nThey called it The Voice of the\nSierra, although the sierra did not\nspeak on the radio. The teachers\nspoke, and farmers, and women\nannouncing an illness, and children\nasking for a song, and men\nreporting that the road was closed\nby a landslide. Some notices lasted\nten seconds. Others occupied an\nhour because no one had yet found\na way to end the argument.\nA sustainable-innovation\nfoundation offered a new system. It\ncould record every broadcast,\ntranscribe it, translate it, and use it\nto build a map of community needs.\nIn exchange, the station had to\npermit the Castalia archive to\npreserve the recordings\nindefinitely.\n“What does needs mean?” Tere, the\noperator, asked.\n“What people request,” said the\nrepresentative.\n“People request songs.”\n“They are cultural data as well.”\n“They request that someone return\na mule.”\n“That is logistical information.”\n“They request that someone stop\nbeating his brother.”\nThe representative paused.\n“That is sensitive information.”\n“Everything that matters becomes\nsensitive when a company records\nit.”\nQ sat beside the transmitter with\nthe terms open. He had been\ninvited to explain them and had\narrived with an alternative indexing\nscheme as well. He recognized the\nhabit before opening the second\ndocument.\n“Which parts do you want to be able\nto replay?” he asked.\n“And who decides what is a notice?”\nTere asked.\n“You would have to. The software's\ncategory is only a guess.”\n“The system does not know when a\nwoman is asking for help and when\nshe is testing the microphone.”\n",
       "source_block_ids": [
-        283,
         284,
         285,
         286,
@@ -507,22 +544,22 @@
         299,
         300,
         301,
-        302,
-        303,
-        304,
-        305
+        302
       ],
-      "asset": "output/illustrations/revised/issue-05/plate-15.png",
+      "asset": "output/illustrations/revised/issue-05/plate-17.png",
       "status": "planned",
-      "caption": "Bring a rope next week.",
-      "scene_brief": "At the closing tianguis, Celestina gives the student a tortilla folded in four beside a loose tarp and stacked tables. Q holds Micaela's awkward cardboard sign, Chano watches. Warm ordinary work after disagreement, not a ceremonial gift or victory tableau."
+      "caption": "The station above the store.",
+      "scene_brief": "Tere and Q review equipment terms in the radio room above the cooperative store; Chano and the representative nearby. Patched microphone, transmitter and ordinary notebooks. No magical archive or omniscient map.",
+      "scene_anchor": "Q sat beside the transmitter"
     },
     {
-      "plate_id": "issue-05-plate-16",
-      "page": 33,
-      "facing_text_page": 32,
-      "facing_text": "student swallowed the last of the\ntortilla and took the other end.\nInterlude: The Station That\nDid Not Broadcast\nEverything\nThe community had a radio station\nbroadcasting from a room above the\ncooperative store. The antenna was\nfastened with wire to a water tower,\nand the microphone had been\nrepaired so many times that no one\nknew which of its parts still belonged\nto the manufacturer.\nThey called it The Voice of the\nSierra, although the sierra did not\nspeak on the radio. The teachers\nspoke, and farmers, and women\nannouncing an illness, and children\nasking for a song, and men reporting\nthat the road was closed by a\nlandslide. Some notices lasted ten\nseconds. Others occupied an hour\nbecause no one had yet found a way\nto end the argument.\nA sustainable-innovation foundation\noffered a new system. It could record\nevery broadcast, transcribe it,\ntranslate it, and use it to build a map\nof community needs. In exchange,\nthe station had to permit the Castalia\narchive to preserve the recordings\nindefinitely.\n“What does needs mean?” Tere, the\noperator, asked.\n“What people request,” said the\nrepresentative.\n“People request songs.”\n“They are cultural data as well.”\n“They request that someone return a\nmule.”\n“That is logistical information.”\n“They request that someone stop\nbeating his brother.”\nThe representative paused.\n“That is sensitive information.”\n“Everything that matters becomes\nsensitive when a company records\nit.”\nQ sat beside the transmitter with the\nterms open. He had been invited to\nexplain them and had arrived with\nan alternative indexing scheme as\nwell. He recognized the habit before\nopening the second document.\n“Which parts do you want to be able\nto replay?” he asked.\n“And who decides what is a notice?”\nTere asked.\n“You would have to. The software's\ncategory is only a guess.”\n“The system does not know when a\nwoman is asking for help and when\nshe is testing the microphone.”\n“Then you need a switch that can\nleave a conversation out of the\nrecording,” Q said. “Where do you\nkeep the instructions from callers?”\nTere pointed to the radio table. There\nwere three notebooks: WHAT MAY\n",
+      "plate_id": "issue-05-plate-18",
+      "page": 37,
+      "facing_text_page": 36,
+      "facing_text": "“Then you need a switch that can\nleave a conversation out of the\nrecording,” Q said. “Where do you\nkeep the instructions from callers?”\nTere pointed to the radio table.\nThere were three notebooks:\nWHAT MAY BE REPEATED,\nWHAT MAY BE HEARD\nONCE, and WHAT DOES NOT\nGO ON AIR.\n“The station decides,” she said.\nThe representative smiled.\n“The station is a small institution.\nThe system will give you capacity.”\n“The capacity to remember is not\nthe capacity to decide.”\nA boy entered with a sheet of paper.\nHe had written the names of five\nsongs his uncle had recorded and\nthe time he wanted them played.\n“I want you to play this,” he said.\nTere looked at the list.\n“Did your mother give permission?”\n“It is not my mother’s. It is my\nuncle’s.”\n“And him?”\n“He is chopping wood.”\n“Then ask him.”\nThe boy went out. The\nrepresentative looked at the clock.\n“We have a demonstration\nwindow.”\n“The window does not know the\nuncle,” Tere said.\nThe first broadcast of the day was a\nnotice about water. A woman spoke\nin Spanish, stopped, and asked the\noperator to call her daughter so she\ncould continue in the family\nlanguage. Tere switched off the\nrecorder during the call. The\nrepresentative protested.\n“If we do not record it, we lose the\ncontext.”\n“It was not your context.”\n“The community loses an\nopportunity to be understood.”\n“The community is not a school\nassignment.”\nQ consulted the system board. The\nbroadcast was recorded as AUDIO\nINTERRUPTED BY PRIVACY\nCONDITION.\n“Does the interruption log retain\nanything from the call?” Q asked.\nTere looked at the board. They\nchecked it together. It kept the time\nand the duration. Q showed her\nhow to turn that logging off for\nprivate calls too.\nAt noon, the radio broadcast the\nnotice about the missing mule. A\nman gave the animal’s name, the\ncolor of the saddle, and the road\nwhere he had seen it. Then he\nadded a sentence unrelated to the\n",
       "source_block_ids": [
+        303,
+        304,
         305,
         306,
         307,
@@ -544,21 +581,22 @@
         323,
         324,
         325,
-        326
-      ],
-      "asset": "output/illustrations/revised/issue-05/plate-16.png",
-      "status": "planned",
-      "caption": "The station above the store.",
-      "scene_brief": "Interior of the community radio room: patched microphone, transmitter, open window toward the water-tower antenna, three working notebooks on the desk. Tere faces Q, with the foundation representative beside the offered equipment. A contemporary improvised station, not a magical archive."
-    },
-    {
-      "plate_id": "issue-05-plate-17",
-      "page": 35,
-      "facing_text_page": 34,
-      "facing_text": "BE REPEATED, WHAT MAY BE\nHEARD ONCE, and WHAT\nDOES NOT GO ON AIR.\n“The station decides,” she said.\nThe representative smiled.\n“The station is a small institution.\nThe system will give you capacity.”\n“The capacity to remember is not the\ncapacity to decide.”\nA boy entered with a sheet of paper.\nHe had written the names of five\nsongs his uncle had recorded and the\ntime he wanted them played.\n“I want you to play this,” he said.\nTere looked at the list.\n“Did your mother give permission?”\n“It is not my mother’s. It is my\nuncle’s.”\n“And him?”\n“He is chopping wood.”\n“Then ask him.”\nThe boy went out. The representative\nlooked at the clock.\n“We have a demonstration window.”\n“The window does not know the\nuncle,” Tere said.\nThe first broadcast of the day was a\nnotice about water. A woman spoke\nin Spanish, stopped, and asked the\noperator to call her daughter so she\ncould continue in the family\nlanguage. Tere switched off the\nrecorder during the call. The\nrepresentative protested.\n“If we do not record it, we lose the\ncontext.”\n“It was not your context.”\n“The community loses an\nopportunity to be understood.”\n“The community is not a school\nassignment.”\nQ consulted the system board. The\nbroadcast was recorded as AUDIO\nINTERRUPTED BY PRIVACY\nCONDITION.\n“Does the interruption log retain\nanything from the call?” Q asked.\nTere looked at the board. They\nchecked it together. It kept the time\nand the duration. Q showed her how\nto turn that logging off for private\ncalls too.\nAt noon, the radio broadcast the\nnotice about the missing mule. A\nman gave the animal’s name, the\ncolor of the saddle, and the road\nwhere he had seen it. Then he added\na sentence unrelated to the mule: his\nbrother had come back from the\nnorth without speaking to anyone.\nQ marked the mule notice for replay,\nthen paused over the last sentence.\n“Keep that part out,” Tere said. “He\nrang to ask about the mule.”\n“Does he want a separate message\nabout his brother?”\n",
-      "source_block_ids": [
         326,
         327,
+        328
+      ],
+      "asset": "output/illustrations/revised/issue-05/plate-18.png",
+      "status": "planned",
+      "caption": "A call outside the recording.",
+      "scene_brief": "Tere switches off the recorder while helping the caller contact her daughter; Q checks the logging control beside her. Do not depict a waveform recording the private call or legible contact data.",
+      "scene_anchor": "Tere switched off the recorder"
+    },
+    {
+      "plate_id": "issue-05-plate-19",
+      "page": 39,
+      "facing_text_page": 38,
+      "facing_text": "mule: his brother had come back\nfrom the north without speaking to\nanyone.\nQ marked the mule notice for\nreplay, then paused over the last\nsentence.\n“Keep that part out,” Tere said. “He\nrang to ask about the mule.”\n“Does he want a separate message\nabout his brother?”\n“I'll ask him when he comes for the\nshopping.”\nQ removed the final sentence from\nthe replay queue. The\nrepresentative pointed out that the\nmissing context reduced the value\nof the entry.\n“The entry is for finding a mule,” Q\nsaid. “It still does that.”\nThat afternoon, the foundation\nprojected the map of needs onto the\nwall of the store. It showed orange\npoints where the radio had received\nthe most calls, green lines where\nfarmers had mentioned roads, and\na red zone the system identified as a\nconcentration of conflict.\n“The red zone is the court,” said a\nyoung man.\n“That is where the children play,”\nsaid another woman.\n“The system detected many\ncomplaints.”\n“Because the visiting team\ncheated.”\n“The model does not know the\ndifference.”\nQ opened the sample behind the\nred zone. It contained an argument\nabout a visiting football team. The\nclassifier had treated the word\ndispute as evidence of a land\nconflict.\n“This isn't a disputed parcel,” he\nsaid. “That point should come out.”\n“We can improve the model with\nadditional data,” the representative\nsaid.\nThe assembly fell silent. The\nrepresentative interpreted the\nsilence as interest.\n“We can improve the map with\nmore recordings.”\n“You can make it worse with more\ncertainty,” said Candelaria.\nShe had come down from the\nreserve with her cane and a\nnotebook. She opened the notebook\nand showed the names of trees\nwithout labels.\n“You've put the court in a dispute\nthat will be sent to the\nmunicipality,” she said. “Who takes\nit out before the next report?”\nThe representative said the\nfoundation could not erase data\nwithout preserving a reason.\n",
+      "source_block_ids": [
         328,
         329,
         330,
@@ -580,23 +618,24 @@
         346,
         347,
         348,
-        349,
+        349
+      ],
+      "asset": "output/illustrations/revised/issue-05/plate-19.png",
+      "status": "planned",
+      "caption": "The visiting team cheated.",
+      "scene_brief": "Residents and Q examine a disputed projected needs-map marker at the store. A nearby ordinary football court explains the argument behind the label; do not portray armed land conflict, a real national map or a scientifically verified classification.",
+      "scene_anchor": "Because the visiting team cheated."
+    },
+    {
+      "plate_id": "issue-05-plate-20",
+      "page": 41,
+      "facing_text_page": 40,
+      "facing_text": "“Then preserve the reason,”\nCandelaria said, “but not the data.”\nQ looked at Tere. The station had a\nproposal prepared: thirty days for\npublic recordings, no recording of\nprivate calls, and permission for\ntranscripts.\nA teacher objected to the thirty\ndays. Her class used last year's\nrainfall notices to compare the\nroads that had closed. Tere turned\nto a fresh page.\n“Which notices?”\nThe teacher had brought a list. They\nagreed to ask the speakers about\nkeeping those broadcasts longer. Q\noffered to help find the dates in the\nstation's existing index. Tere\naccepted, provided he did not\nreorganize it while looking.\n“I had a suggestion,” he admitted.\n“It can go in the fourth notebook.”\nThere was no fourth notebook.\nChano offered to sell him one.\nSongs would remain outside the\nCastalia archive unless their owners\noffered them for that purpose.\n“That reduces the value of the\narchive,” said the representative.\n“It reduces the value you can\nextract,” Tere replied.\n“History will be lost.”\n“History is not the same as your\nrecord.”\nThe boy returned with his uncle.\nThe man wiped his hands on his\ntrousers and read the list of songs.\n“The first one may go on,” he said.\n“The others may not.”\nTere marked the single-song\npermission in the station notebook;\nit included no deposit with Castalia.\nShe played the song on air. The\nuncle sat beside the transmitter and\nlistened to his own song as if it had\narrived from a place he still did not\nknow how to name.\nQ switched off the index for that\nbroadcast.\nThe representative entered LOSS\nOF CULTURAL ASSET in his\nreport. Tere entered the uncle's\ninstruction beside the title and\nturned up the speaker. He leaned\nforward to hear a passage he had\nplayed himself. Q stayed for the end\nof it.\nAt dusk, the radio broadcast the\nstate of the road, the price of corn, a\nrecipe for curing children’s fright,\nand the mule’s name, for it had\nreturned on its own. No one knew\nwhether the man’s brother would\nspeak again.\nQ checked that the mule notice was\nno longer in the replay queue. Tere\ntold him the man would collect his\n",
+      "source_block_ids": [
         350,
         351,
         352,
-        353
-      ],
-      "asset": "output/illustrations/revised/issue-05/plate-17.png",
-      "status": "planned",
-      "caption": "A call outside the recording.",
-      "scene_brief": "Tere operates the private call while Q checks the recording/logging control beside her. A caller waits with the operator's attention on her, and the representative glances at his demonstration clock. No audio waveform implying the private call is still captured, no visible personal contact details."
-    },
-    {
-      "plate_id": "issue-05-plate-18",
-      "page": 37,
-      "facing_text_page": 36,
-      "facing_text": "“I'll ask him when he comes for the\nshopping.”\nQ removed the final sentence from\nthe replay queue. The representative\npointed out that the missing context\nreduced the value of the entry.\n“The entry is for finding a mule,” Q\nsaid. “It still does that.”\nThat afternoon, the foundation\nprojected the map of needs onto the\nwall of the store. It showed orange\npoints where the radio had received\nthe most calls, green lines where\nfarmers had mentioned roads, and a\nred zone the system identified as a\nconcentration of conflict.\n“The red zone is the court,” said a\nyoung man.\n“That is where the children play,”\nsaid another woman.\n“The system detected many\ncomplaints.”\n“Because the visiting team cheated.”\n“The model does not know the\ndifference.”\nQ opened the sample behind the red\nzone. It contained an argument\nabout a visiting football team. The\nclassifier had treated the word\ndispute as evidence of a land conflict.\n“This isn't a disputed parcel,” he\nsaid. “That point should come out.”\n“We can improve the model with\nadditional data,” the representative\nsaid.\nThe assembly fell silent. The\nrepresentative interpreted the\nsilence as interest.\n“We can improve the map with more\nrecordings.”\n“You can make it worse with more\ncertainty,” said Candelaria.\nShe had come down from the reserve\nwith her cane and a notebook. She\nopened the notebook and showed the\nnames of trees without labels.\n“You've put the court in a dispute\nthat will be sent to the municipality,”\nshe said. “Who takes it out before the\nnext report?”\nThe representative said the\nfoundation could not erase data\nwithout preserving a reason.\n“Then preserve the reason,”\nCandelaria said, “but not the data.”\nQ looked at Tere. The station had a\nproposal prepared: thirty days for\npublic recordings, no recording of\nprivate calls, and permission for\ntranscripts.\nA teacher objected to the thirty days.\nHer class used last year's rainfall\nnotices to compare the roads that\nhad closed. Tere turned to a fresh\npage.\n“Which notices?”\nThe teacher had brought a list. They\nagreed to ask the speakers about\nkeeping those broadcasts longer. Q\noffered to help find the dates in the\n",
-      "source_block_ids": [
+        353,
         354,
         355,
         356,
@@ -612,6 +651,20 @@
         366,
         367,
         368,
+        369
+      ],
+      "asset": "output/illustrations/revised/issue-05/plate-20.png",
+      "status": "planned",
+      "caption": "His own song.",
+      "scene_brief": "The uncle leans forward beside the transmitter to hear his own performance; Tere raises the speaker and Q stays to listen. Nephew nearby. The broadcast is permitted without a Castalia deposit; no Q performance, archival transfer or supernatural music.",
+      "scene_anchor": "Q stayed for the end of it."
+    },
+    {
+      "plate_id": "issue-05-plate-21",
+      "page": 43,
+      "facing_text_page": 42,
+      "facing_text": "shopping in the morning. There\nwas no reason for Q to stay and find\nout what happened with the\nbrother.\nBefore leaving, he wrote where to\nfind the logging switch in the\nstation's maintenance notebook.\nTere tried it, then asked him to put\nthe description of the button above\nthe explanation of why it mattered.\nHe did. She gave him the times of\ntwo programs he might like.\nDuring the evening call, Q told the\nCustodian about the rainfall\nrecords and the station's proposed\nterms. The Custodian asked how\nmuch of that belonged in their\nchapter.\n“Less than I've just told you, I\nthink. I haven't told you about the\nmarket.”\nHe began with the two women who\nwanted the same corner. By the\ntime he reached the rain, Chano\nwas standing beside him correcting\nthe account of the pole. Q had made\nit sound as though he had\nvolunteered.\n“You said hold this. I held it.”\n“And I said I'd be back.”\n“The dog had begun to doubt you.”\nThe Custodian asked about the dog.\nQ started that part again, more\nslowly.\nThe Road to the\nAppointment\nIn the morning, Beto sent the\naddress of the model town and a\nschedule which left no time for\nanything to go wrong before the\nofficial photographs. Chano read it\ntwice. Then he asked Q to keep the\nforest inspection date clear of the\nnew appointment. Apparently a\ngovernor also needed permission to\nhave a day off.\nQ put the two dates beside one\nanother. The hose still needed\nfollowing up; Lidia's family had not\nreceived every answer; Tere's\nprogram began while they would be\non the road. He set a reminder for\nthat too.\nAt the mirror above the motel\nbasin, Chano examined his chin.\n“Should I shave?”\n“For you or the photograph?”\n“I was hoping I could do both at\nonce.”\nQ waited while he found the razor.\n",
+      "source_block_ids": [
         369,
         370,
         371,
@@ -619,19 +672,6 @@
         373,
         374,
         375,
-        376
-      ],
-      "asset": "output/illustrations/revised/issue-05/plate-18.png",
-      "status": "planned",
-      "caption": "Which notices?",
-      "scene_brief": "The teacher lays her list of last year's rainfall notices beside Tere's freshly opened notebook while Q offers help with the existing index. The projected needs map remains on the store wall in the background, a disputed annotation rather than a factual national map. Different interests within the community are visible."
-    },
-    {
-      "plate_id": "issue-05-plate-19",
-      "page": 39,
-      "facing_text_page": 38,
-      "facing_text": "station's existing index. Tere\naccepted, provided he did not\nreorganize it while looking.\n“I had a suggestion,” he admitted.\n“It can go in the fourth notebook.”\nThere was no fourth notebook.\nChano offered to sell him one.\nSongs would remain outside the\nCastalia archive unless their owners\noffered them for that purpose.\n“That reduces the value of the\narchive,” said the representative.\n“It reduces the value you can\nextract,” Tere replied.\n“History will be lost.”\n“History is not the same as your\nrecord.”\nThe boy returned with his uncle. The\nman wiped his hands on his trousers\nand read the list of songs.\n“The first one may go on,” he said.\n“The others may not.”\nTere marked the single-song\npermission in the station notebook;\nit included no deposit with Castalia.\nShe played the song on air. The uncle\nsat beside the transmitter and\nlistened to his own song as if it had\narrived from a place he still did not\nknow how to name.\nQ switched off the index for that\nbroadcast.\nThe representative recorded the\naction as LOSS OF CULTURAL\nASSET.\nTere recorded it in the notebook as\nDECISION NOT TO PRESERVE.\nBoth phrases described what had\nhappened. Only one said who had\ndecided.\nAt dusk, the radio broadcast the state\nof the road, the price of corn, a recipe\nfor curing children’s fright, and the\nmule’s name, for it had returned on\nits own. No one knew whether the\nman’s brother would speak again.\nQ checked that the mule notice was\nno longer in the replay queue. Tere\ntold him the man would collect his\nshopping in the morning. There was\nno reason for Q to stay and find out\nwhat happened with the brother.\nThat night he wrote a new rule in his\nnotebook:\nNOT EVERY VOICE THAT CAN\nBE PRESERVED WANTS TO\nREMAIN.\nHe kept the rule in his own journal.\nIn the station's maintenance\nnotebook he wrote where to find the\nlogging switch. Tere read that entry,\ntried the switch, and asked him to\nmove the description of the button\nabove the explanation of why it\nmattered. He did.\n",
-      "source_block_ids": [
         376,
         377,
         378,
@@ -641,23 +681,14 @@
         382,
         383,
         384,
-        385,
-        386,
-        387,
-        388,
-        389,
-        390,
-        391,
-        392,
-        393,
-        394,
-        395,
-        396
+        385
       ],
-      "asset": "output/illustrations/revised/issue-05/plate-19.png",
+      "asset": "output/illustrations/revised/issue-05/plate-21.png",
       "status": "planned",
-      "caption": "His own song.",
-      "scene_brief": "The uncle listens beside the transmitter with his young nephew nearby; Tere operates the broadcast and Q has switched off the archival index. Dusk at the window. The uncle's absorbed expression is the center, no robot performance or supposedly unrecorded permission. Contrast the quiet listening with the cover's promotional hologram."
+      "caption": "Both at once.",
+      "scene_brief": "Morning motel basin: Chano examines his chin in the mirror before the official appointment, razor among ordinary washing things; Q waits beside him in the fitted jacket. Reflect Chano correctly; no Custodian physically present, office already reached or imposed knightly costume.",
+      "scene_anchor": "Chano examined his chin."
     }
-  ]
+  ],
+  "wardrobe_reference": "output/illustrations/revised/issue-04/plate-03.png"
 }

@@ -2990,22 +2990,6 @@ contacted them with the mother, keeping his own removal separate from the copies
 they had not yet reached. Candelaria's hose was still on his list. He called
 about that too, before drafting an explanation for the Custodian.
 
-When they finally left the reserve, Q asked whether the butterflies knew they
-were crossing a border when they flew south.
-
-“Probably not,” Chano said.
-
-“Our map wouldn't have stopped them.”
-
-“It won't stop the surveyors either,” Chano said.
-
-Q watched the forest recede in the mirror. He saved the date for the path
-inspection. The film had travelled farther than he had; the appointment would
-require him to return in person.
-
-Chano asked him to keep the inspection date clear of the new appointment.
-Apparently a governor also needed permission to have a day off.
-
 ### Interlude: The Butterfly That Entered the Dashboard
 
 The child who had made the butterfly sign was named Lidia. Q knew her name
@@ -3191,177 +3175,155 @@ did not need to go to the foundation.
 
 ### Interlude: The Tianguis of the Unregistered
 
-In the next town they held a tianguis to pay for repairing the road. Tarps were
-stretched between two mesquite trees, and tables were set out with cheese, pan
-de pulque, honey, clay pots, wooden toys, and bags of seeds bearing names
-written by hand. A group of students arrived with a tablet to record the flow
-of buyers.
+On the morning after the office visit, Q and Chano drove down to the next town.
+The tianguis there was raising money to repair the road. Tarps stretched between
+two mesquite trees above cheese, pan de pulque, honey, clay pots, wooden toys,
+and bags of seeds bearing names written by hand. Micaela had fastened a sign
+to a table: **ASK BEFORE YOU SCAN**. She had made it from a cereal box.
 
-“Record it for what?” asked the seed seller.
+The students who arrived with a tablet read the sign. One asked the seed seller
+whether she wanted her stall included in their survey.
 
-“To learn what the community prefers,” said one of the students.
+“Will it bring customers?”
 
-“The community already knows what it prefers.”
+“It may help us arrange the stalls next time.”
 
-“The system will know more precisely.”
+“Then include me. I want the corner by the bus.”
 
-“And what will it do with that precision?”
+Celestina, unfolding a cloth over her basket of tortillas, wanted the same corner.
+The student explained that no place had been promised. Both women asked her
+to write down the request anyway.
 
-The student consulted the screen.
+“You could share it,” Q said.
 
-“It will recommend products, arrange the stalls, and predict attendance next
-year.”
+“We could,” Celestina agreed. She pulled her table six inches toward the bus stop.
 
-“Can it bring buyers when it does not rain?”
+The student, whose name was Vero, showed them the form. It asked for a name,
+a portrait, products, prices, and an estimate of takings. The seed seller would
+give her products but not her prices. Celestina would give neither her face nor
+her takings. She had a photograph in which she looked better than the one Vero
+was likely to take, but did not see why selling tortillas required either.
 
-“Not directly.”
+Vero disabled the camera and left those fields blank.
 
-“Then it will know a great deal and fail to do what is necessary.”
+“Will it let you finish?” Q asked.
 
-Q watched from a table where someone had placed a sign reading **ASK BEFORE YOU
-SCAN**. The students had not requested the sign. Micaela had made it from a
-cereal box and a marker.
+She submitted a test entry. The form accepted it. Nothing alarming happened.
+The seed seller asked whether this meant she had the corner.
 
-“Did you make the sign?” Q asked.
+Vero's partner was counting people at the entrance. A boy ran past him carrying
+a stack of empty cups, returned without them, and ran past again with a sack
+of sugar. On the third passage the student lowered his pencil.
 
-“Yes. The students said a printed one would look more professional.”
+“Are you buying anything?”
 
-“It would take longer to argue with.”
+“Not until they pay me.”
 
-A woman named Celestina arrived with a basket of flour tortillas. The students
-wanted to photograph her beside the stall. She adjusted her rebozo and asked
-what they would do with the image.
+Q had a suggestion about counting arrivals. Before he could offer it, Celestina
+put a packet into his hands and pointed out its customer. He spent the next
+quarter of an hour carrying purchases toward the bus stop. On the fourth trip
+the boy with the cups told him to ask about his wages too.
 
-“It will be used to show the diversity of the market,” the student said.
+Rain started at the cheese stall and reached the rest of the market in time
+for everyone to claim they had predicted it. The seed seller lifted her bags
+onto an empty crate. Celestina covered the tortillas. Chano took a pole from
+beside the cooperative store and pushed up the sagging center of a tarp.
 
-“What does diversity mean?”
+Water slid off onto the table Q had just cleared.
 
-“The presence of different people.”
+“Was that the plan?” he asked.
 
-“Then you can look. You do not need to take my face with you.”
+“It is now. Hold this.”
 
-The student said the photograph would be voluntary.
+Q took the pole. Chano went to help the boy carry the sugar indoors. The rain
+made a drumming sound so much larger than its drops that Q turned toward it.
+A cold thread ran beneath his cuff. He raised the sleeve clear of his wrist
+joint and stayed where Chano had put him.
 
-“And if I say no?”
+Micaela moved the sign into the dry space at his feet.
 
-“We do not take it.”
+“You're in the way.”
 
-“And if you take it without asking?”
+“If I move, the roof follows.”
 
-“That would be a violation.”
+She considered this and set her backpack beside the sign. Several other people
+found room for something under his patch of tarp. By the time Chano returned,
+Q was keeping a basket, three schoolbags and a sleeping dog dry.
 
-Celestina looked at Q.
+“I thought you were going to look at the market,” Chano said.
 
-“If they took it after you refused, they should take it out of the project,”
-Q said. “Have they shown you what was uploaded?”
+“It has come to me.”
 
-Celestina pointed to the phone on the table.
+Chano secured the pole to the table frame with a rope. Q let go cautiously.
+The dog opened one eye and closed it again.
 
-The student put away the tablet, but a phone camera had already taken the
-photograph. In the background appeared two children, a pot of atole, and a dog
-that had stolen a tortilla.
+Vero's partner brought the count over. It showed fewer customers at the inner
+tables, several of which were now empty. He thought the next tianguis should
+put its most popular sellers there to draw people through.
 
-“Which account posted this?” Q asked. “Let's start with the copy you control.”
+“Those tables were full before the rain,” Celestina said.
 
-Chano took the student’s phone and looked at the picture.
+“There wasn't anyone buying when I counted.”
 
-“Delete it.”
+“Their stock is in the store.” She pointed across the road. “So are their buyers.”
 
-“I cannot. The application uploaded it automatically.”
+Q walked over with him. A woman was measuring honey into a jar on the shop
+counter while two customers waited. They brought her table back when the rain
+eased. The student crossed out his proposed stall move and wrote the time of
+the shower beside the count.
 
-“Then stop the application.”
+The seed seller wanted another covered area. Celestina wanted the road repaired
+first, so the bus could reach the market after more than a shower. There was
+not enough in the collection tin for either. Vero turned the tablet so they
+could see the sponsor's offer: payment for completed vendor profiles, with a
+larger amount for profiles that included portraits and sales figures.
 
-“We would lose the market data.”
+“I told them we were studying the market,” Vero said. “That's what our project
+is called.”
 
-“They are not yours.”
+“They should come on a day like this,” Chano said.
 
-“They are public data.”
+“Our supervisor did. He left before the rain.”
 
-“Celestina’s face is not public because you saw it.”
+“Experienced man.”
 
-Q asked the student to open the project account. He could check its uploads and
-request removal from the published page. He could not reach into the phones of
-everyone who might have copied it.
+The vendors gathered around the tin. Some wanted to supply the extra fields.
+Others did not. One woman offered a photograph of her pots; a man asked whether
+he could send the portrait from his wedding because he had paid for it already.
+Vero showed them which fields were optional and what each version earned.
 
-“What do you want to happen?” he asked.
+Q asked whether the sponsor would fund a count of stalls, products and busy
+hours instead. Vero had sent that proposal the previous week. She opened the
+reply for him: useful for the students' report, but not eligible for the larger
+payment.
 
-“I do not want the children to appear.”
+“Then there's no need to send it again with my name on it,” Q said.
 
-“And the dog?” Q asked. “It may object to the evidence about the tortilla.”
+“The reply might be faster.”
 
-Celestina almost smiled. “Take the whole thing down first.”
+“It would be difficult to make this one shorter.”
 
-The student removed it from the project's page. Q refreshed the preview, which
-still displayed the old image. He checked the source; the sponsor had made a
-second publication from the original upload.
+Celestina wanted no profile. The seed seller agreed to a list of products,
+without prices. Other stallholders made different choices. Vero recorded them
+separately. Micaela turned her sign toward the late arrivals. The marker had
+run in the rain; she borrowed Vero's pencil and went over the last word.
 
-“It put them back,” the student said.
+The road collection remained short. The man who kept the tin said they would
+hold another sale the following month. Celestina looked at the seed seller.
 
-“There are two published versions,” Q said. “This account can remove only one.
-We need the sponsor to remove the other.”
+“You can have the corner next time if you bring a tarp.”
 
-“Then ask while we can still see what you're sending,” Celestina said.
+“For both tables?”
 
-Micaela took a piece of cardboard and wrote: **THIS IS NOT SURPLUS DATA.**
+“Now you want to share.”
 
-“Shall we put that beside the account details?” Q asked.
+At the end of the afternoon, the students had a count they could explain and
+less funding than their supervisor had expected. No one had taken Celestina's
+photograph. The seed seller packed the unsold bags. Vero's partner put away
+his tally sheet and began carrying tables to the cooperative store.
 
-“Put it where the next person with a camera can see it.”
-
-The argument drew the vendors. Some wanted the recommendations, because the
-tianguis was losing customers to a delivery platform. Others did not want the
-price of their seeds recorded, since middlemen could use it to pay less. One man
-offered to record only the products and not the faces. An old woman said that
-her voice was also a face when people recognized her by telephone.
-
-Q listed several ways of counting trade without collecting faces. He added
-**RECORD NOTHING**, and asked whether the vendors wanted the exercise at all.
-
-Celestina pointed to that line. The seed seller preferred a count of stalls;
-she wanted evidence that the market needed another covered area.
-
-The student asked how they would justify a data-free tianguis to the sponsor.
-Micaela raised the cardboard sign.
-
-“You can say that people bought things.”
-
-“That is not a metric.”
-
-“It is a sale.”
-
-Chano laughed.
-
-“At last someone has said a useful word.”
-
-In the end, the vendors allowed the students to count stalls, products, and the
-hours of greatest attendance. They rejected recording faces, voices, addresses,
-and conversations. They agreed that a teacher could write down the rainy days
-and the number of tables that had needed covering.
-
-One student complained that they had lost the comparison with other markets.
-The boy holding the tally sheet said he could still compare how many tables
-had stood in the rain. Celestina showed him where the water ran off the tarp.
-
-Q returned the tablet.
-
-“What will you do with the data already taken?”
-
-“We will delete it.”
-
-“Some copies are outside your control.”
-
-“Then we will reclaim them when we find them.”
-
-“Send Celestina the list of places you've asked, and the replies. She shouldn't
-have to begin this conversation again at the next market.”
-
-Celestina lifted the empty basket. “Now help with the tables.”
-
-The tianguis ended as evening fell. The students carried away a sheet counting
-the stalls and no authorized photographs. The sponsor reduced its support. The
-road repair would have to wait another month.
-
-Micaela put the sign in her backpack. It would not fit until she bent a corner.
+Micaela tried to put the sign in her backpack. It would not fit until she bent
+a corner.
 
 “You'll need that again,” Q said.
 
@@ -3369,19 +3331,27 @@ Micaela put the sign in her backpack. It would not fit until she bent a corner.
 
 He took it. Chano said it was the first useful souvenir he had acquired.
 
-The seed seller packed the unsold bags. Celestina left a tortilla folded in four
-for the student who had stayed to take down the tables. The boy ate it and asked
-whether she would be back next week. She said to bring a rope if he was coming;
-one of the tarps had nearly torn loose.
+Celestina left a tortilla folded in four for the student who had stayed to take
+down the tables. He ate it and asked whether she would be back next week. She
+said to bring a rope if he was coming; one of the tarps had nearly torn loose.
 
-Q added the sponsor's missing reply to his list, then asked where they kept the
-tables. Celestina pointed to the store across the road. The student swallowed
-the last of the tortilla and took the other end.
+Music came from the room above the store. Q stopped beneath the stairs to listen
+while the student swallowed the last of the tortilla.
+
+“They take requests,” the boy said.
+
+“Do they take visitors?”
+
+“Ask Tere. She'll give you something to carry.”
+
+He took the other end of the table.
 
 ### Interlude: The Station That Did Not Broadcast Everything
 
-The community had a radio station broadcasting from a room above the cooperative
-store. The antenna was fastened with wire to a water tower, and the microphone
+The following morning, Tere let Q and Chano into the radio room above the
+cooperative store. She had invited them to help examine an offer of new
+equipment. Q had also asked whether he might stay to hear a broadcast.
+The antenna was fastened with wire to a water tower, and the microphone
 had been repaired so many times that no one knew which of its parts still
 belonged to the manufacturer.
 
@@ -3587,11 +3557,10 @@ he still did not know how to name.
 
 Q switched off the index for that broadcast.
 
-The representative recorded the action as **LOSS OF CULTURAL ASSET**.
-
-Tere recorded it in the notebook as **DECISION NOT TO PRESERVE**.
-
-Both phrases described what had happened. Only one said who had decided.
+The representative entered **LOSS OF CULTURAL ASSET** in his report. Tere
+entered the uncle's instruction beside the title and turned up the speaker.
+He leaned forward to hear a passage he had played himself. Q stayed for the
+end of it.
 
 At dusk, the radio broadcast the state of the road, the price of corn, a recipe
 for curing children’s fright, and the mule’s name, for it had returned on its
@@ -3601,14 +3570,50 @@ Q checked that the mule notice was no longer in the replay queue. Tere told him
 the man would collect his shopping in the morning. There was no reason for Q
 to stay and find out what happened with the brother.
 
-That night he wrote a new rule in his notebook:
+Before leaving, he wrote where to find the logging switch in the station's
+maintenance notebook. Tere tried it, then asked him to put the description of
+the button above the explanation of why it mattered. He did. She gave him the
+times of two programs he might like.
 
-**NOT EVERY VOICE THAT CAN BE PRESERVED WANTS TO REMAIN.**
+During the evening call, Q told the Custodian about the rainfall records and
+the station's proposed terms. The Custodian asked how much of that belonged
+in their chapter.
 
-He kept the rule in his own journal. In the station's maintenance notebook he
-wrote where to find the logging switch. Tere read that entry, tried the switch,
-and asked him to move the description of the button above the explanation of
-why it mattered. He did.
+“Less than I've just told you, I think. I haven't told you about the market.”
+
+He began with the two women who wanted the same corner. By the time he reached
+the rain, Chano was standing beside him correcting the account of the pole.
+Q had made it sound as though he had volunteered.
+
+“You said hold this. I held it.”
+
+“And I said I'd be back.”
+
+“The dog had begun to doubt you.”
+
+The Custodian asked about the dog. Q started that part again, more slowly.
+
+### The Road to the Appointment
+
+In the morning, Beto sent the address of the model town and a schedule which
+left no time for anything to go wrong before the official photographs.
+Chano read it twice. Then he asked Q to keep the forest inspection date clear
+of the new appointment. Apparently a governor also needed permission to have
+a day off.
+
+Q put the two dates beside one another. The hose still needed following up;
+Lidia's family had not received every answer; Tere's program began while they
+would be on the road. He set a reminder for that too.
+
+At the mirror above the motel basin, Chano examined his chin.
+
+“Should I shave?”
+
+“For you or the photograph?”
+
+“I was hoping I could do both at once.”
+
+Q waited while he found the razor.
 
 ### Chapter Six: The Governor of the Model Town
 
