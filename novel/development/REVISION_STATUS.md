@@ -10,7 +10,17 @@ illustrated issues, verify affected print PDFs, and push the revision.
 The latest user clarification governs the ending: “Death just means we finish
 the book.” The source now permits Q to remain alive when the writing stops.
 
-Latest checkpoint: six fresh-context calls prompted a scoped Chapter Ten repair.
+Latest checkpoint: Issue Ten has verified 28-page reading and fourteen-side A3
+revision proofs, fourteen unique plates and seven duplex sheets. All 4,422 words,
+all rendered pages and every actual imposed text/image position were checked.
+Nine image edits corrected character identity, ownership, physical interaction,
+leg support and unsolicited signage. The manuscript, outline and Issues 1–9
+PDFs are unchanged from `804cb726`; the living ending remains. See
+`ISSUE_10_PRODUCTION.md`. Issues 1–10 are current illustrated revision proofs;
+twelve remain. No printing or A+ certification. Native art remains about 150 dpi;
+broader literary review and the active goal remain open.
+
+Previous checkpoint: six fresh-context calls prompted a scoped Chapter Ten repair.
 Q asks why the adviser's call requires waiting at the café; the companions prepare
 to leave and remain reachable. Salas interrupts that departure. His arrival is
 still authored, not a model-validated inevitability. The existing knee warning,

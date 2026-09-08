@@ -161,7 +161,26 @@ Approximately 150-dpi art remains a press-quality limitation. No print job was
 sent. See the [production record](../../novel/development/ISSUE_09_PRODUCTION.md)
 and [art/prompt manifest](../illustrations/revised/issue-09/manifest.json).
 
-The remaining thirteen issues still require their revised illustrated builds.
+## Current Issue 10 revision proof
+
+- [English Issue 10: revised reading PDF](../pdf/ingenious-issue-10-revised-en-bw.pdf)
+- [English Issue 10: revised A3 folding PDF](../pdf/ingenious-issue-10-revised-en-bw-a3.pdf)
+
+28 pages, fourteen unique plates including the cover, and seven A3 duplex sheets.
+All 4,422 words flow through thirteen two-column narrative pages in Georgia
+12.7/17.9917-point type. The Pacific stop, completed deposit delivery, interrupted
+café departure, transport and companions' separate records inquiries have exact
+facing scenes. Q returns alive and keeps writing with the male Custodian.
+All reading pages and A3 sides were visually checked; every imposed position
+also matches its reading page's text and decoded image data. Unpainted text
+backgrounds, lossless grayscale and full-bleed comic trim continue the proof
+specification. Print all fourteen A3 landscape sides at actual size, short-edge
+duplex; folding leaves an A4 carrier around comic trim. Approximately 150-dpi
+native art remains a press-quality limitation. No print job was sent. See the
+[production record](../../novel/development/ISSUE_10_PRODUCTION.md) and
+[art/prompt manifest](../illustrations/revised/issue-10/manifest.json).
+
+The remaining twelve issues still require their revised illustrated builds.
 
 ## Earlier editions
 

@@ -1,25 +1,48 @@
 {
   "issue": 10,
-  "revision": "2026-09-08-cafe-choice",
+  "revision": "2026-09-08-illustrated-border",
   "source": "novel/THE_INGENIOUS_MACHINE.md",
   "chapter_sha256": "38e02d6ccb99c07d0da4088a4f296f6beaf26ae8be60485b3cef275ac03162f6",
   "page_count": 28,
   "text_font": "Georgia 12.7/17.9917 pt",
   "plate_count_including_cover": 14,
-  "status": "planned; no new Issue 10 images generated or approved",
-  "character_reference": "output/illustrations/revised/issue-01/cover.png",
-  "chano_reference": "output/illustrations/revised/issue-03/plate-06.png",
+  "status": "verified illustrated revision proof; not a press master",
+  "character_reference": "output/illustrations/revised/issue-04/plate-03.png",
+  "chano_reference": "output/illustrations/revised/issue-06/plate-01.png",
   "wardrobe": "Approved Q body and fitted sponsor jacket until transport: technician removes the coat and bags it separately. Knee injury occurs on narrative page 10, not in the coastal scenes. Custodian male, tall, about sixty, long gray hair tied back or escaped from tie, glasses, white work shirt. Preserve Chano and Lucía.",
   "art_direction": "Neutral monochrome Goya-inspired etched realism, white highlights without cream or sepia ink wash. Full bleed at trim with separate caption strip. Unique exact-facing scenes. Coastal pleasure and successful delivery are as real as later coercion. Near-future Mexican institutions are fictional; no actual US crossing or live DHS arrest. Q does not carry a weapon or become a martyr.",
-  "approval_scope": "Source-bound planning only: 28-page internal layout proof, 14 planned plates, 14 A3 landscape sides on 7 short-edge duplex sheets. Georgia 12.7/17.9917 pt. Exact facing text and scene anchors refreshed after the explicit cafe departure decision. No new artwork, final illustrated PDF, literary-grade certification or print job. The delivered module and retained original papers do not enter Castalia's transport or Q's hearing folder.",
+  "approval_scope": "All fourteen selected native images, all 28 reading pages and all 14 A3 sides visually checked against the chapter. Nine targeted edits remove extraneous slogans/incorrect institutions, distinguish Salas, clarify Chano's forearm grip, return the photo to its owner and support Q's right foot. Fictional future settings/custody regime; no documentary or current-law claim. Native artwork about 150 dpi at trim; not a press master.",
   "plates": [
     {
       "plate_id": "issue-10-cover",
       "page": 1,
       "asset": "output/illustrations/revised/issue-10/cover.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The Border Written in Air",
-      "scene_brief": "Q sits at a Tijuana service-station café table with a signed receipt and his now-light bag; through the window a Castalia van waits across the road. Contrast a completed task with an unresolved body claim. His hands are free and the module has left with the appointed archive colleague. Leave space above for separately typeset title."
+      "scene_brief": "Q sits at a Tijuana service-station café table with a signed receipt and his now-light bag; through the window a Castalia van waits across the road. Contrast a completed task with an unresolved body claim. His hands are free and the module has left with the appointed archive colleague. Leave space above for separately typeset title.",
+      "asset_sha256": "c2ff2377c8674dd1497afae62be6e1d285212952c8fc016ce2cdc0a72107ba16",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_prompt": "Use case: illustration-story. One unique portrait full-page literary illustration, 2:3 aspect, highest available native detail. Goya-inspired etched realism, fine black crosshatching and selective aquatint, NEUTRAL grayscale, pure WHITE paper highlights, no sepia or cream wash. No border, lettering, speech bubbles or watermark. Near-future Mexico, ordinary inhabited places, not colonial fantasy. Characters behave as fluent adults. Full bleed at sides and bottom; keep essential faces/hands within 5 percent safe trim. Captions will be typeset separately. References are CHARACTER IDENTITY and etching-style guides only, not scenes to reproduce. Q has the exact reference slender robot body, elongated segmented oval head with small eye apertures and mechanical mouth, large circular mechanical ears, narrow exposed neck, question-mark breastplate, long articulated limbs and mechanical hands. NO human skin, helmet, weapon or knight costume. Q wears his fitted SHORT dark sponsor jacket as in the reference; not long coat tails. COVER: Q alone at a Tijuana service-station café table, holding a signed receipt, closed travel bag at his feet now lighter after completed handover. Through café window across road an ordinary plain Castalia contractor van is parked, no legible logo needed. No module, police, restraint, wound or companion on cover. Compose seated Q and table in lower two-thirds, everyday attentive posture not distress. Upper 28 percent quiet pure white wall for separately typeset title. Scenery extends to side and bottom edges.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-03.png"
+      ],
+      "original_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-b7ebdd18-be30-4b80-b0d2-db2d62a7b1ab.png",
+      "selected_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-77f39c6f-f4ab-49ea-b3cf-ab82ecb24ace.png",
+      "corrective_edits": [
+        {
+          "prompt": "Use case: precise-object-edit. Remove ONLY the café chalkboard and its lettering in the upper left, replacing that board area with quiet pure white unmarked plaster continuous with the large white upper wall. The top 25 percent must provide clean white title space across the width; a few fine plant leaves at extreme upper left are allowed outside that space. Keep exact Q robot identity and SHORT jacket, seated pose, receipt, hands, bag, van outside window, all lower composition and neutral black-and-white etched realism unchanged. No new objects, no writing, no slogans, no border.",
+          "target": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-b7ebdd18-be30-4b80-b0d2-db2d62a7b1ab.png",
+          "result": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-77f39c6f-f4ab-49ea-b3cf-ab82ecb24ace.png"
+        }
+      ],
+      "title_lines": [
+        "The Ingenious",
+        "Machine"
+      ],
+      "title_center_x_pt": 275
     },
     {
       "plate_id": "issue-10-plate-01",
@@ -41,10 +64,22 @@
         11
       ],
       "asset": "output/illustrations/revised/issue-10/plate-01.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "A little chile.",
       "scene_brief": "Evening on Mazatlán's malecón: Q orders mango from a contemporary vendor while Chano questions the size of 'a little.' Sea and promenade behind, normal street clothes and fitted jacket. Do not turn the vendor into a sage or a folkloric prop.",
-      "scene_anchor": "vendor shook lime and chile"
+      "scene_anchor": "vendor shook lime and chile",
+      "asset_sha256": "02fc8cfcbeb603e9d190f3f8fe013e2ed07c35dddac66ee2e233c89ea6783f16",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_prompt": "Use case: illustration-story. One unique portrait full-page literary illustration, 2:3 aspect, highest available native detail. Goya-inspired etched realism, fine black crosshatching and selective aquatint, NEUTRAL grayscale, pure WHITE paper highlights, no sepia or cream wash. No border, lettering, speech bubbles or watermark. Near-future Mexico, ordinary inhabited places, not colonial fantasy. Characters behave as fluent adults. Full bleed at sides and bottom; keep essential faces/hands within 5 percent safe trim. Captions will be typeset separately. References are CHARACTER IDENTITY and etching-style guides only, not scenes to reproduce. Q has the exact reference slender robot body, elongated segmented oval head with small eye apertures and mechanical mouth, large circular mechanical ears, narrow exposed neck, question-mark breastplate, long articulated limbs and mechanical hands. NO human skin, helmet, weapon or knight costume. Chano is the reference stocky middle-aged Mexican man with wavy dark hair and thick mustache, rolled-sleeve work shirt and dark trousers. Image1 Q identity and short fitted jacket only, omit woman/studio; image2 Chano identity only. Evening on Mazatlán's sea promenade: a contemporary male fruit vendor in plain T-shirt at a modest cart shakes chile from a small shaker over mango slices in a clear bag. Q points toward that shaker; Chano beside him amused at the generous amount. Q's sponsor jacket sleeves are still clean, no bodily injury. Open Pacific sea and concrete malecón rail behind. Natural street encounter, no sage, sombreros, ruins or ceremonial costume. Three-quarter view of cart and three subjects, vendor actively working, not a posed group.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-03.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-06/plate-01.png"
+      ],
+      "original_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-4dda497c-7292-40d7-96da-a8b75d5096e6.png",
+      "selected_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-4dda497c-7292-40d7-96da-a8b75d5096e6.png"
     },
     {
       "plate_id": "issue-10-plate-02",
@@ -72,10 +107,22 @@
         28
       ],
       "asset": "output/illustrations/revised/issue-10/plate-02.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Before everyone was ready.",
       "scene_brief": "Lucía takes the imperfect coastal photograph while Q is still straightening his jacket and Chano points to the chile streak on the cuff. Living, unposed companions beside the Pacific. This is before the custody injury.",
-      "scene_anchor": "Lucía took the picture"
+      "scene_anchor": "Lucía took the picture",
+      "asset_sha256": "bc51d319673a4f4f257095d3f03a9fe1606709214c212600054192d4939d3518",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_prompt": "Use case: illustration-story. One unique portrait full-page literary illustration, 2:3 aspect, highest available native detail. Goya-inspired etched realism, fine black crosshatching and selective aquatint, NEUTRAL grayscale, pure WHITE paper highlights, no sepia or cream wash. No border, lettering, speech bubbles or watermark. Near-future Mexico, ordinary inhabited places, not colonial fantasy. Characters behave as fluent adults. Full bleed at sides and bottom; keep essential faces/hands within 5 percent safe trim. Captions will be typeset separately. References are CHARACTER IDENTITY and etching-style guides only, not scenes to reproduce. Q has the exact reference slender robot body, elongated segmented oval head with small eye apertures and mechanical mouth, large circular mechanical ears, narrow exposed neck, question-mark breastplate, long articulated limbs and mechanical hands. NO human skin, helmet, weapon or knight costume. Chano is the reference stocky middle-aged Mexican man with wavy dark hair and thick mustache, rolled-sleeve work shirt and dark trousers. Lucía is the reference young adult Mexican woman with shoulder-length wavy dark hair, denim work jacket and dark trousers. Reference1 for Q short fitted sponsor jacket and Chano, reference2 for Lucía only. Mazatlán malecón beside the Pacific after the mango snack, imperfect photograph: show Lucía in foreground three-quarter rear profile, holding phone horizontally taking a picture of Q and Chano. Q straightens his jacket with a mechanical hand while Chano points at a small dark chile streak on Q's cuff. They haven't finished posing. Open sea/concrete promenade, no vendor in frame. No injuries, restraint or symbolism. Warm ordinary humor conveyed by gestures, not comic caricature. Strictly black and white, even food.",
+      "reference_images": [
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-4dda497c-7292-40d7-96da-a8b75d5096e6.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-03/plate-04.png"
+      ],
+      "original_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-86a06316-9f0b-4ec6-9aa5-00688daee062.png",
+      "selected_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-86a06316-9f0b-4ec6-9aa5-00688daee062.png"
     },
     {
       "plate_id": "issue-10-plate-03",
@@ -98,10 +145,28 @@
         40
       ],
       "asset": "output/illustrations/revised/issue-10/plate-03.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The delivery is finished.",
       "scene_brief": "At a service-station café table near Tijuana, Elena inspects the closed pouch and her appointed colleague witnesses the receipt. Q is present with the transport record. The colleague's carrying case is distinct from the large storage case left in Chiapas. This handover succeeds; no police or seizure at this instant.",
-      "scene_anchor": "Her colleague signed as witness"
+      "scene_anchor": "Her colleague signed as witness",
+      "asset_sha256": "c114564c8f2141a7e6320944673c43adc65ca1dad3690ca3016c9fe7dfe1dd60",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_prompt": "Use case: illustration-story. One unique portrait full-page literary illustration, 2:3 aspect, highest available native detail. Goya-inspired etched realism, fine black crosshatching and selective aquatint, NEUTRAL grayscale, pure WHITE paper highlights, no sepia or cream wash. No border, lettering, speech bubbles or watermark. Near-future Mexico, ordinary inhabited places, not colonial fantasy. Characters behave as fluent adults. Full bleed at sides and bottom; keep essential faces/hands within 5 percent safe trim. Captions will be typeset separately. References are CHARACTER IDENTITY and etching-style guides only, not scenes to reproduce. Q has the exact reference slender robot body, elongated segmented oval head with small eye apertures and mechanical mouth, large circular mechanical ears, narrow exposed neck, question-mark breastplate, long articulated limbs and mechanical hands. NO human skin, helmet, weapon or knight costume. Use reference for Q and his fitted SHORT dark jacket only, omit reference woman/studio. Tijuana service-station café, three adults at a modest table: Q matching a small personal screen with a transport receipt; Elena, a Mexican archive worker about forty, angular oval face, straight dark hair tied in a LOW BUN, rectangular glasses, light rolled-sleeve shirt, examines an UNOPENED small sealed padded pouch; her male colleague, short-haired clean-shaven man in plain polo shirt, signs a receipt as witness. Compact carrying case sits OPEN beside his chair ready to receive pouch, not the large black storage case left in Chiapas. Pouch remains sealed no exposed chip or testimony. No police or restraint, no injured Q. Mid-distance triangular composition, all hands clear, a contemporary café and daylight window, no legible invented legal text.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-03.png"
+      ],
+      "original_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-89466d1d-d6d5-45e5-9389-74a41d1ead56.png",
+      "selected_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-7c39d567-281e-42a9-8887-232361f6ce61.png",
+      "corrective_edits": [
+        {
+          "prompt": "Use case: precise-object-edit. Remove ONLY all decorative/advertising lettering on café walls, exterior station fascia and coffee cups, leaving plain chalkboard, plaster, fascia and cups with their existing small floral decoration allowed. No slogans or legible lettering. Preserve exact Q, Elena and male witness identities, clothing, all poses and hands, CLOSED SEALED pouch, witness signing paper, small open carrying case, tablet, café geometry, lighting and monochrome etching unchanged. Keep indistinct document/interface marks, do not expose data from the pouch. No other additions.",
+          "target": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-89466d1d-d6d5-45e5-9389-74a41d1ead56.png",
+          "result": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-7c39d567-281e-42a9-8887-232361f6ce61.png"
+        }
+      ]
     },
     {
       "plate_id": "issue-10-plate-04",
@@ -121,10 +186,30 @@
         50
       ],
       "asset": "output/illustrations/revised/issue-10/plate-04.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "A separate claim.",
       "scene_brief": "Salas checks the notice while Elena puts her adviser on the phone and sets her wrapped-food bag down. The companions had prepared to leave; they are not voluntarily waiting for removal. Lucía's folders and Chano's ledger await individual inventory on the café table. The module has already left with the archive colleague and must not appear among seized items. Mexican-side café, not a US checkpoint.",
-      "scene_anchor": "adviser spoke to Salas by telephone"
+      "scene_anchor": "adviser spoke to Salas by telephone",
+      "asset_sha256": "9e092cce11d3981bf3d275b51d02c25c306a5f60f1d4210eb9670d10b630bc81",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_prompt": "Use case: illustration-story. One unique portrait full-page literary illustration, 2:3 aspect, highest available native detail. Goya-inspired etched realism, fine black crosshatching and selective aquatint, NEUTRAL grayscale, pure WHITE paper highlights, no sepia or cream wash. No border, lettering, speech bubbles or watermark. Near-future Mexico, ordinary inhabited places, not colonial fantasy. Characters behave as fluent adults. Full bleed at sides and bottom; keep essential faces/hands within 5 percent safe trim. Captions will be typeset separately. References are CHARACTER IDENTITY and etching-style guides only, not scenes to reproduce. Q has the exact reference slender robot body, elongated segmented oval head with small eye apertures and mechanical mouth, large circular mechanical ears, narrow exposed neck, question-mark breastplate, long articulated limbs and mechanical hands. NO human skin, helmet, weapon or knight costume. Chano is the reference stocky middle-aged Mexican man with wavy dark hair and thick mustache, rolled-sleeve work shirt and dark trousers. Lucía is the reference young adult Mexican woman with shoulder-length wavy dark hair, denim work jacket and dark trousers. Image1 Q's fitted short jacket, Elena identity and café only; image2 Lucía; image3 Chano. Elena same low dark bun/rectangular glasses/light shirt, is STANDING beside café table, holding out a phone for Mexican officer Salas who listens while consulting an electronic notice in other hand. Salas clean-shaven middle-aged Mexican man close-cropped hair, ordinary dark service uniform, no weapons drawn. Q stands beside Elena with CLOSED light bag ready to depart; Chano holds van keys, Lucía stands with receipt near paper folders and ledger on table. A wrapped-food PAPER BAG is on table. Module and male archive colleague have LEFT; no padded pouch or carrying case. A separate body-custody claim interrupts their departure. Eye-level medium-wide quiet negotiation, no US flags, border gate or sci-fi armor. Do not reproduce wall slogans or legible documents; background signage plain.",
+      "reference_images": [
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-89466d1d-d6d5-45e5-9389-74a41d1ead56.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-03/plate-04.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-06/plate-01.png"
+      ],
+      "original_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-dcd2f5bc-883a-4c7d-9422-015988a810cc.png",
+      "selected_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-4c6cad45-2595-4edc-a1bf-9dda90a41495.png",
+      "corrective_edits": [
+        {
+          "prompt": "Use case: identity-preserve. Change ONLY the seated uniformed officer Salas's face and hair so he is a different man from the earlier archive witness: Salas is about fifty-five, broad round face, wider nose, receding very short salt-and-pepper hair, clean-shaven, calm concentrated expression. Preserve officer's body, uniform, hands, phone/tablet, posture and gaze. Keep exact Q, Elena, Chano, Lucia identities, café, wrapped-food bag, documents, framing and black-and-white etching unchanged. No other changes.",
+          "target": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-dcd2f5bc-883a-4c7d-9422-015988a810cc.png",
+          "result": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-4c6cad45-2595-4edc-a1bf-9dda90a41495.png"
+        }
+      ]
     },
     {
       "plate_id": "issue-10-plate-05",
@@ -148,10 +233,34 @@
         63
       ],
       "asset": "output/illustrations/revised/issue-10/plate-05.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Support the knee first.",
       "scene_brief": "Beside the transport vehicle in the café parking area, Q's knee gives way as restraint engages before support. Chano catches the technician's arm, another officer pulls him back, the colleague is turned toward Salas. Keep the physical sequence legible and non-graphic. No attack by Q, no hidden deposit case.",
-      "scene_anchor": "The transport command arrived first"
+      "scene_anchor": "The transport command arrived first",
+      "asset_sha256": "4015e01fd98c8115da2dfe77731f2f37968fba380276b5996312ae82e2e245b7",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_prompt": "Use case: illustration-story. One unique portrait full-page literary illustration, 2:3 aspect, highest available native detail. Goya-inspired etched realism, fine black crosshatching and selective aquatint, NEUTRAL grayscale, pure WHITE paper highlights, no sepia or cream wash. No border, lettering, speech bubbles or watermark. Near-future Mexico, ordinary inhabited places, not colonial fantasy. Characters behave as fluent adults. Full bleed at sides and bottom; keep essential faces/hands within 5 percent safe trim. Captions will be typeset separately. References are CHARACTER IDENTITY and etching-style guides only, not scenes to reproduce. Q has the exact reference slender robot body, elongated segmented oval head with small eye apertures and mechanical mouth, large circular mechanical ears, narrow exposed neck, question-mark breastplate, long articulated limbs and mechanical hands. NO human skin, helmet, weapon or knight costume. Chano is the reference stocky middle-aged Mexican man with wavy dark hair and thick mustache, rolled-sleeve work shirt and dark trousers. Reference1 for Q UNCOATED body only, reference2 for Chano. One legible NON-GRAPHIC instant in service-station parking area near Tijuana: Q's RIGHT mechanical knee gives way on marked platform beside a padded upright transport seat-frame, his torso tilted against its side rail. No coat on Q. A uniformed male technician at Q's shoulder has connected a small maintenance lead; Chano catches THAT TECHNICIAN'S ARM to stop frame movement, not Q's arm. A second Mexican officer gently pulls Chano back by upper arm. Another staff member near frame turns toward Salas in background instead of supporting knee. Frame OPEN, no glass blocking reaching arms at this stage. Q's mechanical hands lowered powerless, never striking anybody. Show all subjects in medium-wide oblique view, restrained believable action, not battle or crucifixion. Coat lies bagged separately beside vehicle. No blood, weapon, US flag, archive module, trunk or testimonial papers.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-01/cover.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-06/plate-01.png"
+      ],
+      "original_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-8ec91baa-5276-45b7-8f57-e5847bc7600c.png",
+      "selected_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-c0ef99ab-9d69-496a-bfa9-beca4829846c.png",
+      "corrective_edits": [
+        {
+          "prompt": "Use case: precise-object-edit. Clarify ONLY the central hand interaction: Chano (stocky mustached civilian in light rolled-sleeve shirt) catches the DARK-UNIFORMED TECHNICIAN'S FOREARM below the elbow, with his hand visibly separated from the robot's neck and shoulder. Technician's forearm continues upward to a small connected shoulder maintenance lead. Nobody grabs Q's neck. Keep exact people, Q body, collapsed right knee, powerless hands, open transport frame, officer holding Chano back, vehicle, bags, composition and monochrome etching unchanged. No added people, injury or lettering.",
+          "target": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-8ec91baa-5276-45b7-8f57-e5847bc7600c.png",
+          "result": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-9ae25a4c-3efb-4985-8910-19961682edd2.png"
+        },
+        {
+          "prompt": "Use case: precise-object-edit. Remove ONLY real company logos and agency lettering from the service-station canopy, tall fuel sign and staff uniforms. Use plain unbranded surfaces and plain patches. The right-hand colleague must look like an unbranded transport worker, not a fuel-company employee. Keep the Tijuana road-direction sign, ALL faces, revised central forearm grip, Q's falling pose, knees, frame, van, clothes bag and monochrome etching unchanged. No extra words or new symbols.",
+          "target": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-9ae25a4c-3efb-4985-8910-19961682edd2.png",
+          "result": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-c0ef99ab-9d69-496a-bfa9-beca4829846c.png"
+        }
+      ]
     },
     {
       "plate_id": "issue-10-plate-06",
@@ -174,10 +283,23 @@
         75
       ],
       "asset": "output/illustrations/revised/issue-10/plate-06.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Tell me yourself.",
       "scene_brief": "Before departure, Chano leans close to the transport frame's clear panel so Q can speak to him directly. Q is restrained but responsive, with supported knee and shoulder against the rail; he laughs at Chano's reply. Lucía and Elena remain outside the frame with their receipts. Q's coat is bagged separately. Intimate equal conversation, not a martyr tableau; no archive module or invented bodily injury. Do not depict the later Omar pad adjustment assigned beyond this page.",
-      "scene_anchor": "Tell me yourself."
+      "scene_anchor": "Tell me yourself.",
+      "asset_sha256": "be01ee9c7f9eba985b959e7ac55ec451c88bad1b8a85c308724498b4262b0c60",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_prompt": "Use case: illustration-story. One unique portrait full-page literary illustration, 2:3 aspect, highest available native detail. Goya-inspired etched realism, fine black crosshatching and selective aquatint, NEUTRAL grayscale, pure WHITE paper highlights, no sepia or cream wash. No border, lettering, speech bubbles or watermark. Near-future Mexico, ordinary inhabited places, not colonial fantasy. Characters behave as fluent adults. Full bleed at sides and bottom; keep essential faces/hands within 5 percent safe trim. Captions will be typeset separately. References are CHARACTER IDENTITY and etching-style guides only, not scenes to reproduce. Q has the exact reference slender robot body, elongated segmented oval head with small eye apertures and mechanical mouth, large circular mechanical ears, narrow exposed neck, question-mark breastplate, long articulated limbs and mechanical hands. NO human skin, helmet, weapon or knight costume. Chano is the reference stocky middle-aged Mexican man with wavy dark hair and thick mustache, rolled-sleeve work shirt and dark trousers. Lucía is the reference young adult Mexican woman with shoulder-length wavy dark hair, denim work jacket and dark trousers. Image1 Q, Chano and upright padded transport frame identity only, image2 Elena light shirt low bun glasses, image3 Lucía. NEW MOMENT after fall, before departure: Q sits upright in the transport frame with wrists restrained down by his sides and RIGHT knee supported by padding. His shoulder still leans awkwardly against rail. No coat on Q, coat bagged separately nearby. A transparent hinged panel is now closed across the frame. Chano leans close from outside the CLEAR PANEL to hear Q, looking directly at Q's face. Q is responsive and turns mechanical head toward him in amused conversation. Lucía and Elena stand slightly back holding only receipts. Medium close intimate side angle, ordinary equal conversation, not pity or martyr tableau. Nobody touches Q through the glass. No police/technician action, no module, no blood, no new injuries, no pose of crucifixion. White highlights, no real fuel-company logos or lettering.",
+      "reference_images": [
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-8ec91baa-5276-45b7-8f57-e5847bc7600c.png",
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-89466d1d-d6d5-45e5-9389-74a41d1ead56.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-03/plate-04.png"
+      ],
+      "original_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-8452f39b-a0e2-4f24-8cd4-dc03c96d6fd4.png",
+      "selected_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-8452f39b-a0e2-4f24-8cd4-dc03c96d6fd4.png"
     },
     {
       "plate_id": "issue-10-plate-07",
@@ -202,10 +324,21 @@
         90
       ],
       "asset": "output/illustrations/revised/issue-10/plate-07.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Hot enough to have waited for.",
       "scene_brief": "At the transport stop after dusk, Omar returns with his meal and converses with Q in the frame. Q remains restrained but upright enough for conversation; practical padding supports the shoulder and knee. Show the ordinary hot meal and the attendant's separate chair, not a symbolic last supper. Q's coat is bagged separately. No archive deposit, Lucía or Chano in this vehicle.",
-      "scene_anchor": "When Omar returned, Q asked whether they had found him something hot."
+      "scene_anchor": "When Omar returned, Q asked whether they had found him something hot.",
+      "asset_sha256": "926178c7ace1c25b5c064d59ac6621cbc2ecc8204858d878a6e281f0ecca3def",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_prompt": "Use case: illustration-story. One unique portrait full-page literary illustration, 2:3 aspect, highest available native detail. Goya-inspired etched realism, fine black crosshatching and selective aquatint, NEUTRAL grayscale, pure WHITE paper highlights, no sepia or cream wash. No border, lettering, speech bubbles or watermark. Near-future Mexico, ordinary inhabited places, not colonial fantasy. Characters behave as fluent adults. Full bleed at sides and bottom; keep essential faces/hands within 5 percent safe trim. Captions will be typeset separately. References are CHARACTER IDENTITY and etching-style guides only, not scenes to reproduce. Q has the exact reference slender robot body, elongated segmented oval head with small eye apertures and mechanical mouth, large circular mechanical ears, narrow exposed neck, question-mark breastplate, long articulated limbs and mechanical hands. NO human skin, helmet, weapon or knight costume. Reference for Q's UNCOATED body and clear-panel transport frame ONLY; omit ALL reference human characters. Interior cargo area of transport vehicle stopped after dusk, modest warm work light translated into neutral grayscale. Q remains seated with supported knee and wrists restrained inside same upright padded frame; shoulder now comfortably padded. Omar, a DIFFERENT attendant: lean Mexican man about thirty-five, narrow face, close-cropped hair, clean-shaven, plain short-sleeve work shirt, sits on a separate folding stool OUTSIDE the clear frame holding a hot takeaway meal container and spoon. He pauses to answer Q's ordinary question about dinner, slight wry smile, Q's head turned toward him. Food is Omar's, NOT being fed to Q. The coat remains in separate closed sleeve near frame base. Intimate side view includes distinct padding, no Chano, Elena, Lucia, Custodian, archive module or ledger. No restraints on Omar, no rescue or sacramental supper, no public slogans or fuel-company logos.",
+      "reference_images": [
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-8452f39b-a0e2-4f24-8cd4-dc03c96d6fd4.png"
+      ],
+      "original_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-e969073e-5d9e-4524-b6d6-234a94b53d3c.png",
+      "selected_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-e969073e-5d9e-4524-b6d6-234a94b53d3c.png"
     },
     {
       "plate_id": "issue-10-plate-08",
@@ -236,10 +369,28 @@
         111
       ],
       "asset": "output/illustrations/revised/issue-10/plate-08.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Apparently for the afternoon.",
       "scene_brief": "An employee returns the framed grandmother photograph after Chano and the woman identify the tray-label mismatch. Her boy is waking beside her. Two bags belong to different people. A modest useful action, not a rescued national identity.",
-      "scene_anchor": "returned the frame"
+      "scene_anchor": "returned the frame",
+      "asset_sha256": "56883b5426a93c41ea6d3eb47c1cf793e69dbf1b73fb4b701872e0f951a47f66",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_prompt": "Use case: illustration-story. One unique portrait full-page literary illustration, 2:3 aspect, highest available native detail. Goya-inspired etched realism, fine black crosshatching and selective aquatint, NEUTRAL grayscale, pure WHITE paper highlights, no sepia or cream wash. No border, lettering, speech bubbles or watermark. Near-future Mexico, ordinary inhabited places, not colonial fantasy. Characters behave as fluent adults. Full bleed at sides and bottom; keep essential faces/hands within 5 percent safe trim. Captions will be typeset separately. References are CHARACTER IDENTITY and etching-style guides only, not scenes to reproduce. Chano is the reference stocky middle-aged Mexican man with wavy dark hair and thick mustache, rolled-sleeve work shirt and dark trousers. Image reference for Chano only; OMIT robot and reference background. Plain Mexican administrative waiting room near Tijuana, shared chairs/fan/water dispenser. An employee returns a small FRAMED FAMILY PHOTOGRAPH of a grandmother to its owner, a contemporary Mexican woman in casual cardigan with her young boy drowsily waking beside her. Chano seated near her indicates receipt with mismatched tray numbers. One sack of clothes near mother; second unrelated bag by another waiting person's legs near water dispenser. Frame visibly passed hand-to-hand, face in family photo only roughly suggested. Ordinary modest helpful moment; no savior pose, Q, deportation drama, flag or legal labels. Three-quarter composition focused on frame exchange and boy, no captions in art.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-06/plate-01.png"
+      ],
+      "original_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-bb464b85-bd32-49b6-9006-2d87abc8ab06.png",
+      "selected_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-ed1217ef-f558-40d2-9064-81e238302601.png",
+      "corrective_edits": [
+        {
+          "prompt": "Use case: precise-object-edit. Change ONLY who receives the framed photograph: the seated MOTHER in the center must take the frame from the employee with her own visible hand; Chano's hand must no longer hold it. Chano instead indicates the receipt in his other hand or rests free hand on his knee. Keep mother, boy, Chano and employee identities, clothing, seating, frame picture, sack, waiting room, monochrome etching and composition unchanged. This is her photograph being returned to her; Chano helped identify the receipt, not its owner. No added people or objects.",
+          "target": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-bb464b85-bd32-49b6-9006-2d87abc8ab06.png",
+          "result": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-ed1217ef-f558-40d2-9064-81e238302601.png"
+        }
+      ]
     },
     {
       "plate_id": "issue-10-plate-09",
@@ -264,10 +415,23 @@
         126
       ],
       "asset": "output/illustrations/revised/issue-10/plate-09.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Before it cooled.",
       "scene_brief": "Outside after their statements, Chano, Lucía and Elena eat tacos by the road; Lucía finishes a message before picking hers up. Receipts remain distinct from the retained original ledger and folders. Q and the sealed module are absent.",
-      "scene_anchor": "picked it up before it cooled"
+      "scene_anchor": "picked it up before it cooled",
+      "asset_sha256": "4a86ec14aca43e70674ac2db60607e310d7b255c11cacbb57b1e28428c462f2d",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_prompt": "Use case: illustration-story. One unique portrait full-page literary illustration, 2:3 aspect, highest available native detail. Goya-inspired etched realism, fine black crosshatching and selective aquatint, NEUTRAL grayscale, pure WHITE paper highlights, no sepia or cream wash. No border, lettering, speech bubbles or watermark. Near-future Mexico, ordinary inhabited places, not colonial fantasy. Characters behave as fluent adults. Full bleed at sides and bottom; keep essential faces/hands within 5 percent safe trim. Captions will be typeset separately. References are CHARACTER IDENTITY and etching-style guides only, not scenes to reproduce. Chano is the reference stocky middle-aged Mexican man with wavy dark hair and thick mustache, rolled-sleeve work shirt and dark trousers. Lucía is the reference young adult Mexican woman with shoulder-length wavy dark hair, denim work jacket and dark trousers. Image1 Chano, image2 Lucía, image3 Elena light shirt low bun glasses ONLY; OMIT all robots. Later evening outside Tijuana administrative office after statements: Chano, Lucía and Elena eat TACOS at a modest roadside food stand. Chano holds his second taco casually; Lucía finishes a message on her phone while reaching for her taco on a paper plate; Elena holds another taco and a few loose RECEIPTS, not original folders or ledger. Modest counter at road edge, a truck passing softly behind. Quiet hungry pause, individual gazes, no posed group shot. Receipts small ordinary slips. No Q, police, Custodian, sealed pouch, module or large archive case. No legible invented food brand or slogans. Black and white even food.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-06/plate-01.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-03/plate-04.png",
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-89466d1d-d6d5-45e5-9389-74a41d1ead56.png"
+      ],
+      "original_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-d2f799e3-5525-418a-825e-22e55c001275.png",
+      "selected_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-d2f799e3-5525-418a-825e-22e55c001275.png"
     },
     {
       "plate_id": "issue-10-plate-10",
@@ -295,10 +459,29 @@
         144
       ],
       "asset": "output/illustrations/revised/issue-10/plate-10.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The passenger has a vehicle.",
       "scene_brief": "Norma at the public counter with Chano and Lucía, the wall map behind them; a man at the neighboring socket charges his phone. Her corrected records distinguish Q's transport from the successful deposit. No impounded module behind the glass.",
-      "scene_anchor": "The passenger has a vehicle"
+      "scene_anchor": "The passenger has a vehicle",
+      "asset_sha256": "822fc0dbee6c6f4bd35d9d64478a632ac8a14e2c504d5d3c02ef272465711954",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_prompt": "Use case: illustration-story. One unique portrait full-page literary illustration, 2:3 aspect, highest available native detail. Goya-inspired etched realism, fine black crosshatching and selective aquatint, NEUTRAL grayscale, pure WHITE paper highlights, no sepia or cream wash. No border, lettering, speech bubbles or watermark. Near-future Mexico, ordinary inhabited places, not colonial fantasy. Characters behave as fluent adults. Full bleed at sides and bottom; keep essential faces/hands within 5 percent safe trim. Captions will be typeset separately. References are CHARACTER IDENTITY and etching-style guides only, not scenes to reproduce. Chano is the reference stocky middle-aged Mexican man with wavy dark hair and thick mustache, rolled-sleeve work shirt and dark trousers. Lucía is the reference young adult Mexican woman with shoulder-length wavy dark hair, denim work jacket and dark trousers. Use references for Chano and Lucía ONLY, omit robots. Contemporary Mexican public property-record counter near Tijuana. Norma, middle-aged woman with short straight dark bob and a plain cardigan, works behind glass with keyboard, three rubber stamps and coffee cup. Chano places TWO individual receipts side by side, Lucía points to different dates; no legible invented text. At adjacent public socket another man crouches plugging in his PHONE; clear plastic suitcase beside him. Chano shifts feet to allow cable access. Wall map visible as modest schematic, not authoritative geography. Humane lateral composition with record work and ordinary charging sharing frame. No Q, archive module or impounded box.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-06/plate-01.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-03/plate-04.png"
+      ],
+      "original_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-f1ec7a38-ab74-4bad-b697-0dd9322d001c.png",
+      "selected_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-6c30547f-9345-412e-b956-28ba4398f051.png",
+      "corrective_edits": [
+        {
+          "prompt": "Use case: precise-object-edit. Remove ONLY the invented cadastral/property-registration office sign and crest on left wall, the advertising slogan poster on front counter, and tourism poster behind Chano; replace with plain office surfaces. This fictional office handles returns/retained belongings, NOT LAND REGISTRATION. Keep wall MAP, characters Norma/Chano/Lucia/man charging phone, two receipts, three stamps, cup, clear suitcase, glass, poses and all other details unchanged. Do not add new text or symbols. Preserve neutral black-and-white etching.",
+          "target": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-f1ec7a38-ab74-4bad-b697-0dd9322d001c.png",
+          "result": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-6c30547f-9345-412e-b956-28ba4398f051.png"
+        }
+      ]
     },
     {
       "plate_id": "issue-10-plate-11",
@@ -323,10 +506,22 @@
         158
       ],
       "asset": "output/illustrations/revised/issue-10/plate-11.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "That's everything I can give you.",
       "scene_brief": "Warehouse Three in Tijuana: Adrián passes a single custody acknowledgment through the glass slot while Chano waits with an open bag and Lucía stands beside him. A counter, glass, paper and Chano's expectant hand make a restrained composition. He receives the sheet, not the retained ledger. Do not show Q, the Custodian or the sealed module here; do not depict the loading-bay chair scene, which falls on the next text page.",
-      "scene_anchor": "He passed the custody acknowledgment through the slot."
+      "scene_anchor": "He passed the custody acknowledgment through the slot.",
+      "asset_sha256": "c952fd98e3b701319030810a117b14916bd6550c90fe667d4864eeb34a647f7e",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_prompt": "Use case: illustration-story. One unique portrait full-page literary illustration, 2:3 aspect, highest available native detail. Goya-inspired etched realism, fine black crosshatching and selective aquatint, NEUTRAL grayscale, pure WHITE paper highlights, no sepia or cream wash. No border, lettering, speech bubbles or watermark. Near-future Mexico, ordinary inhabited places, not colonial fantasy. Characters behave as fluent adults. Full bleed at sides and bottom; keep essential faces/hands within 5 percent safe trim. Captions will be typeset separately. References are CHARACTER IDENTITY and etching-style guides only, not scenes to reproduce. Chano is the reference stocky middle-aged Mexican man with wavy dark hair and thick mustache, rolled-sleeve work shirt and dark trousers. Lucía is the reference young adult Mexican woman with shoulder-length wavy dark hair, denim work jacket and dark trousers. Use references for Chano and Lucía ONLY, omit robots. Warehouse Three Tijuana public counter. Adrián, clean-shaven thin middle-aged clerk with receding short dark hair, plain shirt, behind glass; his hand passes ONE SINGLE loose acknowledgment sheet through the low slot. Chano's expectant open hand waits on public side, his travel bag OPEN below, its ledger space empty. Lucía beside Chano, thoughtful watching not posing. Emphasize paper traveling through narrow slot, no returned BOOK, no returned folder. Medium close three-quarter view, background storage shelves softly hatched behind glass. No Q, Custodian, module, phonecall or chair delivery. Not historical prison.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-06/plate-01.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-03/plate-04.png"
+      ],
+      "original_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-a0f078c5-0b55-434a-9fbd-0a08aca6ce4a.png",
+      "selected_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-a0f078c5-0b55-434a-9fbd-0a08aca6ce4a.png"
     },
     {
       "plate_id": "issue-10-plate-12",
@@ -350,10 +545,28 @@
         172
       ],
       "asset": "output/illustrations/revised/issue-10/plate-12.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Work in disguise.",
       "scene_brief": "Roque brings atole in a jug while Q sits with the cup within comfortable reach of his injured shoulder. The male Custodian listens and a second chair is being fetched. Familiar kitchen-and-archive setting, not a hospital or deathbed.",
-      "scene_anchor": "atole in a jug"
+      "scene_anchor": "atole in a jug",
+      "asset_sha256": "8b2df029c08419534d82d98515d41af285d767b83eab2f8108d3857aebc79c90",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_prompt": "Use case: illustration-story. One unique portrait full-page literary illustration, 2:3 aspect, highest available native detail. Goya-inspired etched realism, fine black crosshatching and selective aquatint, NEUTRAL grayscale, pure WHITE paper highlights, no sepia or cream wash. No border, lettering, speech bubbles or watermark. Near-future Mexico, ordinary inhabited places, not colonial fantasy. Characters behave as fluent adults. Full bleed at sides and bottom; keep essential faces/hands within 5 percent safe trim. Captions will be typeset separately. References are CHARACTER IDENTITY and etching-style guides only, not scenes to reproduce. Q has the exact reference slender robot body, elongated segmented oval head with small eye apertures and mechanical mouth, large circular mechanical ears, narrow exposed neck, question-mark breastplate, long articulated limbs and mechanical hands. NO human skin, helmet, weapon or knight costume. Reference image for Q's mechanical body and male Custodian ONLY. Q has removed his coat; no cloth jacket or trousers. Castalia archive reception by loading bay in wooded Amealco, ordinary workshop shelves/server racks far back. Q sits on an ordinary chair, RIGHT knee supported on a simple low padded rest, shoulder relaxed near table. Roque, Mexican night guard about fifty with short dark hair, clean-shaven broad face and a plain work shirt, pours ATOLE from a modest ceramic JUG into Q's cup placed within easy hand reach. Male Custodian tall about sixty, long gray hair escaped from low tie, glasses, white rolled-sleeve work shirt, stands beside Q holding his own cup. Only three subjects, no second chair yet, no hospital equipment, restraint frame, halo or deathbed. Natural mild amusement in their conversation, Q alert and not asleep. Bright afternoon white plaster, distinct from nighttime transport.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-01/cover.png"
+      ],
+      "original_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-1e4f1317-5ae8-41e3-a72c-c9017b15eae6.png",
+      "selected_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-c827535f-5dde-4284-8ec6-a7cfa2be48bc.png",
+      "corrective_edits": [
+        {
+          "prompt": "Use case: precise-object-edit. Fix ONLY Q's right lower leg and its support (leg on viewer's LEFT): make his mechanical right foot fully present, resting naturally ON TOP of the low padded footstool, with shin connected correctly to knee. The stool supports the foot and bent knee; no missing foot or limb merging into stool. Keep left leg/foot on ground, seated torso, both mechanical arms and hands, cup, Roque pouring jug, Custodian standing with cup, exact faces, setting and black-and-white etching unchanged. No bandages, new injury, people or text.",
+          "target": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-1e4f1317-5ae8-41e3-a72c-c9017b15eae6.png",
+          "result": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-c827535f-5dde-4284-8ec6-a7cfa2be48bc.png"
+        }
+      ]
     },
     {
       "plate_id": "issue-10-plate-13",
@@ -378,12 +591,61 @@
         186
       ],
       "asset": "output/illustrations/revised/issue-10/plate-13.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Yours is getting cold.",
       "scene_brief": "In Amealco's reception area, seated Q and the tall male Custodian drink their cooling cups of atole while the reception official waits with the tablet. Custodian has long gray hair escaped from its tie, glasses and white work shirt. Q has mechanical hands, no fitted coat while it remains separate, supported injured knee and a cup within comfortable shoulder reach. Two ordinary cups and a shared pause, not a final sacrament or terminal shutdown. No testimony module or retained Tijuana papers. Distinct from Roque pouring the jug on the previous plate.",
-      "scene_anchor": "They drank while the official waited for his supervisor."
+      "scene_anchor": "They drank while the official waited for his supervisor.",
+      "asset_sha256": "9d5a1360e0ed409965684c6ff20302bcb090a983fc50763d88c58ff5135c9c0b",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_prompt": "Use case: illustration-story. One unique portrait full-page literary illustration, 2:3 aspect, highest available native detail. Goya-inspired etched realism, fine black crosshatching and selective aquatint, NEUTRAL grayscale, pure WHITE paper highlights, no sepia or cream wash. No border, lettering, speech bubbles or watermark. Near-future Mexico, ordinary inhabited places, not colonial fantasy. Characters behave as fluent adults. Full bleed at sides and bottom; keep essential faces/hands within 5 percent safe trim. Captions will be typeset separately. References are CHARACTER IDENTITY and etching-style guides only, not scenes to reproduce. Q has the exact reference slender robot body, elongated segmented oval head with small eye apertures and mechanical mouth, large circular mechanical ears, narrow exposed neck, question-mark breastplate, long articulated limbs and mechanical hands. NO human skin, helmet, weapon or knight costume. Reference for exact Q mechanical body and male Custodian only. Quiet daylight Castalia archive reception at Amealco. Q WITHOUT coat seated at ordinary table, RIGHT knee resting on low padded support, both hands free, gently holds a ceramic cup of atole within comfortable shoulder reach. Opposite him on second chair sits the tall male Custodian about sixty, long gray hair escaped from low tie, glasses, white rolled-sleeve shirt, also drinking from a cup. They share an unhurried glance while drinks cool. A reception official in simple contemporary shirt stands somewhat behind, waiting with a tablet; not their server. Three people only. Close horizontal relationship within PORTRAIT full-page composition, cups and mechanical/human hands central; archive shelves/server racks recede into white plaster background. No pouring jug, Roque, hospital bed, transport frame, restraints, wound dressing, coat on Q, archive deposit, retained original Tijuana papers, halos, dramatic sunset or signs of death. Not final scene of book.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-01/cover.png"
+      ],
+      "original_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-d4a64ea6-d096-4ed8-9367-3f497e9306c3.png",
+      "selected_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-67ac4b28-606e-46bc-bdfd-d0d72ab9577e.png",
+      "corrective_edits": [
+        {
+          "prompt": "Use case: precise-object-edit. Two small corrections only: (1) Q's RIGHT foot (viewer LEFT) must rest ON TOP of the low padded stool already behind it, with right shin and knee connected naturally; the stool supports that leg rather than standing unused behind it. Keep his left foot on ground. (2) Remove decorative thematic lettering and institutional branding from wall, nearby book-spine plaque and official's shirt, leaving plain white plaster, blank badge and plain book spine; no invented mottos. Preserve exact Q/Custodian/official faces and identities, hair, glasses, hands, cups, seated positions, table, archive setting, light and neutral monochrome etching. No other changes.",
+          "target": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-d4a64ea6-d096-4ed8-9367-3f497e9306c3.png",
+          "result": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-67ac4b28-606e-46bc-bdfd-d0d72ab9577e.png"
+        }
+      ]
     }
   ],
   "lucia_reference": "output/illustrations/revised/issue-03/plate-04.png",
-  "wardrobe_reference": "output/illustrations/revised/issue-04/plate-03.png"
+  "wardrobe_reference": "output/illustrations/revised/issue-04/plate-03.png",
+  "secondary_character_design": "Elena: angular oval face, low dark bun, rectangular glasses, light shirt; Salas: broader round face, short receding salt-and-pepper hair, dark service uniform, distinct from the archive witness. Omar: lean clean-shaven younger attendant with short hair. Norma: short dark bob, cardigan. Adrián: receding hair, narrow face. Roque: short dark hair, clean-shaven broad face, work shirt.",
+  "proof_outputs": {
+    "reading": {
+      "path": "output/pdf/ingenious-issue-10-revised-en-bw.pdf",
+      "sha256": "2d3f7728a2d36cce5fe698c015751f23373e3df6750d58577167484233a9b6f5"
+    },
+    "a3": {
+      "path": "output/pdf/ingenious-issue-10-revised-en-bw-a3.pdf",
+      "sha256": "99234dbc0273085e2f1807a6f52d663810ccb942308aa161176af6c77cac01be"
+    }
+  },
+  "verification": {
+    "date": "2026-09-08",
+    "baseline_commit": "804cb726",
+    "source_words_in_order": 4422,
+    "reading_pages": 28,
+    "a3_sides": 14,
+    "duplex_sheets": 7,
+    "native_assets_visually_checked": 14,
+    "reading_pages_visually_checked": 28,
+    "a3_sides_visually_checked": 14,
+    "actual_slot_text_and_image_comparison": "passed, including translations and trim clipping",
+    "text_background": "unpainted",
+    "pdf_image_color_space": "DeviceGray",
+    "lossy_image_reencoding": false,
+    "reading_font_subsets_embedded": 5,
+    "source_and_outline_unchanged": true,
+    "prior_issue_pdfs_unchanged": "Issues 1-9",
+    "print_job_sent": false,
+    "literary_grade_certified": false
+  }
 }
