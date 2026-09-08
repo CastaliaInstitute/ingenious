@@ -1,26 +1,44 @@
 {
   "issue": 9,
-  "revision": "2026-09-08-chiapas-voice",
+  "revision": "2026-09-08-illustrated-chiapas",
   "source": "novel/THE_INGENIOUS_MACHINE.md",
   "chapter_sha256": "54e47e7a2484c1c8da9582f367b1f18f9373679cb5d6b3cb22d6b2f76a21d67b",
   "page_count": 20,
   "text_font": "Georgia 12.4/17.566666666666666 pt",
   "plate_count_including_cover": 10,
-  "status": "planned; no new Issue 9 images generated or approved",
-  "character_reference": "output/illustrations/revised/issue-01/cover.png",
-  "chano_reference": "output/illustrations/revised/issue-03/plate-06.png",
+  "status": "verified illustrated revision proof; not a press master",
+  "character_reference": "output/illustrations/revised/issue-06/plate-09.png",
+  "chano_reference": "output/illustrations/revised/issue-06/plate-09.png",
   "wardrobe": "Preserve Q's approved segmented oval head, ears, neck, breastplate and long articulated limbs in his fitted sponsor jacket. No knight costume. Preserve established Chano and Lucía designs. Custodian male, tall, long gray hair tied back, glasses, white work shirt.",
-  "secondary_character_design": "Mateo is a contemporary teacher and archive worker; Yadira a working radio broadcaster; Tomás a technician. Establish distinct ordinary clothing and faces. Do not infer a uniform ethnic costume from the Chiapas setting or use invented Tsotsil script as decoration.",
+  "secondary_character_design": "Mateo: lean clean-shaven teacher, narrow rectangular face, straight short side-parted hair, light rolled-sleeve shirt; not Chano. Yadira: short wavy dark bob, rounded face, dark crew-neck shirt and light cardigan, consistent in plates 3, 5 and 7. Tomás: clean-shaven square-faced technician, dark work shirt, short dark hair. Contemporary ordinary clothing; no uniform ethnic costume or invented Tsotsil script.",
   "art_direction": "Unique exact-facing narrative scene, neutral monochrome Goya-inspired etched realism. White highlights, no sepia or cream-colored ink background. Full bleed at comic trim with separately typeset caption strip. Depict contemporary school and community radio work; avoid exoticized ruins, invented ceremonial dress and omniscient views of sealed testimony.",
-  "approval_scope": "Source-bound planning only. No approved assets or final illustrated Issue 9 PDF. Rebind after source or typography changes. Internal continuous proof is 20 pages, 10 A3 landscape sides / 5 duplex sheets at actual size and short-edge duplex. No printing authorized by this plan.",
+  "approval_scope": "All ten selected native images and all final reading/A3 pages visually checked against the chapter. Three edits correct cordless repair lighting, Mateo's distinct identity and the station door key. Fictional school and radio setting, not a surveyed or documentary depiction. Native artwork about 150 dpi at trim; not a press master.",
   "plates": [
     {
       "plate_id": "issue-09-cover",
       "page": 1,
       "asset": "output/illustrations/revised/issue-09/cover.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The Corpus Has No Tongue",
-      "scene_brief": "Q holds a portable lamp for Tomás at the disconnected station equipment, standing in the dry place directed. The technician works; Q's body is not connected to the station as a power supply. School shelves and ordinary repair tools ground the room. Leave quiet upper space for separately typeset cover lettering."
+      "scene_brief": "Q holds a portable lamp for Tomás at the disconnected station equipment, standing in the dry place directed. The technician works; Q's body is not connected to the station as a power supply. School shelves and ordinary repair tools ground the room. Leave quiet upper space for separately typeset cover lettering.",
+      "asset_sha256": "d51d135b5814623881232e471aa86befdd19b3ee20642fd6bdf0634655e4de1c",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_prompt": "Use case: illustration-story. Create one unique portrait full-page literary illustration, approximately 2:3 aspect, highest available native detail. Goya-inspired etched realism, fine black crosshatching and selective aquatint, NEUTRAL grayscale on pure WHITE paper highlights, no sepia or cream tint, no printed border, no text or speech bubbles or watermark. Contemporary near-future rural Chiapas, Mexico; ordinary inhabited working places, no colonial fantasy, ruins, folkloric costume, weapons or chivalry. Input reference is for CHARACTER IDENTITY and etching style only, not background composition. Q: exact reference slender robot, elongated segmented oval head, large round mechanical ears, narrow neck, question-mark breastplate, long articulated limbs; wears FITTED SHORT dark jacket with small ? on lapel, NOT coat tails. Body language conveys fluent adult intelligence and humor, never infantile bewilderment. Full bleed scenery at sides/bottom; keep essential features away from outer 5 percent for trim. Captions and titles will be typeset separately. COVER: Repair room above a small community radio station. Q holds an ordinary portable work lamp closer for Tomás, a Mexican technician about 40, short close-cropped dark hair, clean shaven, square face, dark rolled-sleeve work shirt. Tomás actively repairs a disconnected radio cable/equipment on a bench; Q stands at the dry side holding the lamp, NOT supplying power from his body. School shelves and modest tools, daylight at one side. Both shown three-quarter body in lower two-thirds. Reserve upper 27 percent as quiet pure-white unmarked plaster wall for title. No dramatic sparking, no neon, no room flooding, no other people.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-06/plate-09.png"
+      ],
+      "original_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-959ae1fa-e182-4da7-8259-d1ff9989c83f.png",
+      "selected_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-cde3bccb-8b51-417c-a66f-d9eedc525d81.png",
+      "corrective_edits": [
+        {
+          "prompt": "Use case: precise-object-edit. Edit ONLY the lamp in this illustration: replace the corded desk-lamp shape that Q holds with a clearly PORTABLE CORDLESS battery work light, aimed down at the technician's disconnected cable connector. Remove its trailing power cord entirely. The radio mains power has failed. No connection at all to Q's body. Keep exact Q/technician faces, their poses, the bench tools, framing, reserved white upper title space and neutral black-and-white etching style unchanged. No additional people, no text, no color.",
+          "target": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-959ae1fa-e182-4da7-8259-d1ff9989c83f.png",
+          "result": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-cde3bccb-8b51-417c-a66f-d9eedc525d81.png"
+        }
+      ]
     },
     {
       "plate_id": "issue-09-plate-01",
@@ -44,10 +62,21 @@
         13
       ],
       "asset": "output/illustrations/revised/issue-09/plate-01.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Like carrying your lunch.",
       "scene_brief": "Q receives a paper flower through the stopped van's window from the school fundraiser. Chano has his own paid-for flower. Contemporary roadside, unforced curiosity; no donation spectacle or generic Indigenous costume.",
-      "scene_anchor": "paper flowers"
+      "scene_anchor": "paper flowers",
+      "asset_sha256": "250b876a2e9716f0f638448c2d6f7d1ac02ded4194d858a74819974da418e471",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_prompt": "Use case: illustration-story. Create one unique portrait full-page literary illustration, approximately 2:3 aspect, highest available native detail. Goya-inspired etched realism, fine black crosshatching and selective aquatint, NEUTRAL grayscale on pure WHITE paper highlights, no sepia or cream tint, no printed border, no text or speech bubbles or watermark. Contemporary near-future rural Chiapas, Mexico; ordinary inhabited working places, no colonial fantasy, ruins, folkloric costume, weapons or chivalry. Input reference is for CHARACTER IDENTITY and etching style only, not background composition. Q: exact reference slender robot, elongated segmented oval head, large round mechanical ears, narrow neck, question-mark breastplate, long articulated limbs; wears FITTED SHORT dark jacket with small ? on lapel, NOT coat tails. Body language conveys fluent adult intelligence and humor, never infantile bewilderment. Full bleed scenery at sides/bottom; keep essential features away from outer 5 percent for trim. Captions and titles will be typeset separately. Roadside school fundraiser: medium view from OUTSIDE open passenger window of a stopped ordinary van. Q seated passenger turns toward a school-age girl outside who hands him a single handmade paper flower through that open window. She smiles naturally while asking about his battery; simple contemporary school cardigan and everyday clothes. Chano, exact stocky mustached wavy-haired man from reference, sits deeper at driver's seat with HIS OWN second paper flower already received. Vehicle parked, friendly unsentimental exchange, rural road and sparse trees. Clear van door frame/window geometry. No heroic charity, no cash shower, no crowd, no municipal palace.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-06/plate-09.png"
+      ],
+      "original_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-ad329eae-7ee1-49a4-9c11-611601c4a6a6.png",
+      "selected_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-ad329eae-7ee1-49a4-9c11-611601c4a6a6.png"
     },
     {
       "plate_id": "issue-09-plate-02",
@@ -72,10 +101,28 @@
         27
       ],
       "asset": "output/illustrations/revised/issue-09/plate-02.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The cupboard leaks.",
       "scene_brief": "Mateo draws the signature page back while Q leaves it in place. Basin beneath the roof stain, kettle just switched off, ordinary school room and cared-for records. Mateo wants storage as well as control; do not pose him as Q's grateful pupil.",
-      "scene_anchor": "cupboard leaks"
+      "scene_anchor": "cupboard leaks",
+      "asset_sha256": "4d1d81ebf62f873f20b0321933c649af6984752bb1288639e40b0b441f22482d",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_prompt": "Use case: illustration-story. Create one unique portrait full-page literary illustration, approximately 2:3 aspect, highest available native detail. Goya-inspired etched realism, fine black crosshatching and selective aquatint, NEUTRAL grayscale on pure WHITE paper highlights, no sepia or cream tint, no printed border, no text or speech bubbles or watermark. Contemporary near-future rural Chiapas, Mexico; ordinary inhabited working places, no colonial fantasy, ruins, folkloric costume, weapons or chivalry. Input reference is for CHARACTER IDENTITY and etching style only, not background composition. Q: exact reference slender robot, elongated segmented oval head, large round mechanical ears, narrow neck, question-mark breastplate, long articulated limbs; wears FITTED SHORT dark jacket with small ? on lapel, NOT coat tails. Body language conveys fluent adult intelligence and humor, never infantile bewilderment. Full bleed scenery at sides/bottom; keep essential features away from outer 5 percent for trim. Captions and titles will be typeset separately. In a modest school archive room Mateo, Mexican teacher about 45, lean rectangular face, straight dark hair with slightly receding temples, clean shaven, light open-neck button shirt with rolled sleeves, draws a signature sheet back to HIS side of a shared desk. Q seated opposite keeps hands back, attentive equal colleague, not teaching or refusing. Papers, switched-off kettle and small radio on table, cupboard protected with a basin below old roof stain. Reserved dry humor in Mateo's expression; storage really matters to him. Side-lit intimate two-person horizontal interaction within portrait composition. No actual readable document words.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-06/plate-09.png"
+      ],
+      "original_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-92e669c0-cb87-4c4e-b6c8-c36c4320a380.png",
+      "selected_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-7121e3f2-d088-4cfb-b352-70b5bc163e13.png",
+      "corrective_edits": [
+        {
+          "target": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-92e669c0-cb87-4c4e-b6c8-c36c4320a380.png",
+          "prompt": "Use case: precise-object-edit. Correct ONLY the HUMAN TEACHER seated on LEFT: he is Mateo, NOT the recurring mustached driver Chano. Give Mateo a DISTINCT lean body, narrow rectangular clean-shaven face with prominent straight nose, slightly receding temples and straight short neatly side-parted hair (NOT wavy curls), no mustache or beard. Keep light rolled-sleeve shirt, hand drawing signature page toward himself, engaged adult expression. Do not change Q at all. Preserve desk, paper arrangement, basin under roof stain, kettle, radio, overall composition, pure neutral black-and-white etched realism. No new people or text.",
+          "result": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-7121e3f2-d088-4cfb-b352-70b5bc163e13.png"
+        }
+      ]
     },
     {
       "plate_id": "issue-09-plate-03",
@@ -99,10 +146,21 @@
         41
       ],
       "asset": "output/illustrations/revised/issue-09/plate-03.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The funder's report.",
       "scene_brief": "Yadira and Q share the laugh about whether everyone followed the station's instruction. Radio equipment and archive shelves provide the working setting. Stay with the present speakers; do not invent a documentary image of the endangered caller.",
-      "scene_anchor": "funder's report"
+      "scene_anchor": "funder's report",
+      "asset_sha256": "e099653383e17050b4b7c31949dfc130bce8d825689b92b19179f86f87ce7375",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_prompt": "Use case: illustration-story. Create one unique portrait full-page literary illustration, approximately 2:3 aspect, highest available native detail. Goya-inspired etched realism, fine black crosshatching and selective aquatint, NEUTRAL grayscale on pure WHITE paper highlights, no sepia or cream tint, no printed border, no text or speech bubbles or watermark. Contemporary near-future rural Chiapas, Mexico; ordinary inhabited working places, no colonial fantasy, ruins, folkloric costume, weapons or chivalry. Input reference is for CHARACTER IDENTITY and etching style only, not background composition. Q: exact reference slender robot, elongated segmented oval head, large round mechanical ears, narrow neck, question-mark breastplate, long articulated limbs; wears FITTED SHORT dark jacket with small ? on lapel, NOT coat tails. Body language conveys fluent adult intelligence and humor, never infantile bewilderment. Full bleed scenery at sides/bottom; keep essential features away from outer 5 percent for trim. Captions and titles will be typeset separately. Inside the working community radio room, Yadira, Mexican broadcaster about 35, distinctive short wavy dark bob tucked behind one ear, rounded face with pronounced cheekbones, wearing a plain dark crew-neck shirt beneath light open cardigan, shares a sudden genuine laugh with Q. They sit at adjacent corners of radio desk with modest mixing console, microphone on stand, neatly kept archive shelves. Q's responsive slight forward head tilt and open relaxed hand convey wit. This is the present conversation about a funder's report, not a flashback or image of an endangered caller. Daylight high contrast, no public audience, no paperwork-focused pose.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-06/plate-09.png"
+      ],
+      "original_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-9bd45335-f88e-4dad-b706-bf6d02da4f3c.png",
+      "selected_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-9bd45335-f88e-4dad-b706-bf6d02da4f3c.png"
     },
     {
       "plate_id": "issue-09-plate-04",
@@ -130,10 +188,22 @@
         59
       ],
       "asset": "output/illustrations/revised/issue-09/plate-04.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "It delayed the shoes.",
       "scene_brief": "Q listens to the Custodian reading their shortened passage on an evening video call. The Custodian is a tall man about sixty, long gray hair tied back, glasses and white work shirt, visible on the screen; Q's attention and amusement drive the image. No omniscient reconstruction of the grandmother's reported conversation.",
-      "scene_anchor": "It delayed the shoes"
+      "scene_anchor": "It delayed the shoes",
+      "asset_sha256": "56c2d7d255cdc22c1569799211c921a89d1d406ea8aefe5a45aa788274684e57",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_prompt": "Use case: illustration-story. Create one unique portrait full-page literary illustration, approximately 2:3 aspect, highest available native detail. Goya-inspired etched realism, fine black crosshatching and selective aquatint, NEUTRAL grayscale on pure WHITE paper highlights, no sepia or cream tint, no printed border, no text or speech bubbles or watermark. Contemporary near-future rural Chiapas, Mexico; ordinary inhabited working places, no colonial fantasy, ruins, folkloric costume, weapons or chivalry. Input reference is for CHARACTER IDENTITY and etching style only, not background composition. Q: exact reference slender robot, elongated segmented oval head, large round mechanical ears, narrow neck, question-mark breastplate, long articulated limbs; wears FITTED SHORT dark jacket with small ? on lapel, NOT coat tails. Body language conveys fluent adult intelligence and humor, never infantile bewilderment. Full bleed scenery at sides/bottom; keep essential features away from outer 5 percent for trim. Captions and titles will be typeset separately. Evening co-writing call at a school archive desk. Q in three-quarter rear/side view listens with amused absorbed attention to an open LAPTOP. On laptop screen, recognizable Custodian from SECOND reference: older tall MALE, long gray hair tied back, glasses, light work shirt; he is reading from their printed draft and smiling at a joke, shown chest-up by video. Q's face profile/circular ear visible, hand relaxed beside notebook. Single real Q; Custodian ONLY on the laptop screen, not physically present. Warm feeling via composition but neutral grayscale only. Ordinary shelf behind, desk lamp. No visual reconstruction of shoe story, no giant projection, no other person.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-06/plate-09.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-01/cover.png"
+      ],
+      "original_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-3b881ebc-a7ce-4840-85e6-b82424c48be4.png",
+      "selected_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-3b881ebc-a7ce-4840-85e6-b82424c48be4.png"
     },
     {
       "plate_id": "issue-09-plate-05",
@@ -153,10 +223,28 @@
         69
       ],
       "asset": "output/illustrations/revised/issue-09/plate-05.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Keep the directions.",
       "scene_brief": "Yadira at the microphone reads the checked bulletin. Q has the timed Spanish draft; local speakers have their version and the aunt has her phone. Make this a jointly operated station, not Q commanding a rescue or supplying its power.",
-      "scene_anchor": "read the approved bulletin"
+      "scene_anchor": "read the approved bulletin",
+      "asset_sha256": "b869868336fbd899d78abb8816b64c824690729a78cfb6b79c6ff798a8022e25",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_prompt": "Use case: illustration-story. Create one unique portrait full-page literary illustration, approximately 2:3 aspect, highest available native detail. Goya-inspired etched realism, fine black crosshatching and selective aquatint, NEUTRAL grayscale on pure WHITE paper highlights, no sepia or cream tint, no printed border, no text or speech bubbles or watermark. Contemporary near-future rural Chiapas, Mexico; ordinary inhabited working places, no colonial fantasy, ruins, folkloric costume, weapons or chivalry. Input reference is for CHARACTER IDENTITY and etching style only, not background composition. Q: exact reference slender robot, elongated segmented oval head, large round mechanical ears, narrow neck, question-mark breastplate, long articulated limbs; wears FITTED SHORT dark jacket with small ? on lapel, NOT coat tails. Body language conveys fluent adult intelligence and humor, never infantile bewilderment. Full bleed scenery at sides/bottom; keep essential features away from outer 5 percent for trim. Captions and titles will be typeset separately. Input image: Q and Yadira identity reference, not a target to duplicate. Community radio emergency bulletin, different wider composition from reference. Yadira (same short wavy bob, face, cardigan) is ACTIVE SPEAKER at microphone, eyes on two checked script pages, serious concentrated not laughing. Q sits off to her side quietly holding the timed Spanish draft and a small timer, no lecturing or command gesture. The child's aunt, a DISTINCT middle-aged woman with dark hair tied in a low bun, plain jacket and phone held to her ear, sits a little farther behind. An elderly clean-shaven man with thin white hair holds the station key and another script. Four characters only, group work with agency. Ordinary modest console and tables, walls simple, no emergency rescue scene, no image of missing child, no actual readable script/Tsotsil lettering. Keep Q and Yadira faces recognizable; hands anatomically clear. No mains wall lamps lit and no cables connecting Q to equipment.",
+      "reference_images": [
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-9bd45335-f88e-4dad-b706-bf6d02da4f3c.png"
+      ],
+      "original_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-01604a7a-fc7a-4375-bcfd-499aebc69452.png",
+      "selected_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-5e45cd43-c201-4688-b304-33840a701663.png",
+      "corrective_edits": [
+        {
+          "target": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-01604a7a-fc7a-4375-bcfd-499aebc69452.png",
+          "prompt": "Use case: precise-object-edit. Correct ONLY the elderly man's hand and object on far LEFT background. He holds the ordinary METAL DOOR KEY to the community radio station, not a telegraph key. Remove the small telegraph apparatus from his table and replace it with one plain brass door key held loosely in his hand beside his script. He is listening, not operating Morse equipment. Keep all four characters' exact faces, clothes and positions, Yadira reading bulletin, Q holding timer/draft, aunt on phone, mixing console, scene composition and neutral black-white etched style unchanged. No new text, people, or equipment.",
+          "result": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-5e45cd43-c201-4688-b304-33840a701663.png"
+        }
+      ]
     },
     {
       "plate_id": "issue-09-plate-06",
@@ -176,10 +264,21 @@
         78
       ],
       "asset": "output/illustrations/revised/issue-09/plate-06.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Lower your voice.",
       "scene_brief": "At the third house, Q leans closer to finish the pump warranty quietly for the woman who handed it to him. His companion holds the remaining notices. The purchaser is inside, not in a different house. Comic private exchange, not an argument about consent.",
-      "scene_anchor": "lower his voice"
+      "scene_anchor": "lower his voice",
+      "asset_sha256": "fe713c7db25b3089e7a06f154fe8cc404c7773551c52da65cc4c76519e5b1fc0",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_prompt": "Use case: illustration-story. Create one unique portrait full-page literary illustration, approximately 2:3 aspect, highest available native detail. Goya-inspired etched realism, fine black crosshatching and selective aquatint, NEUTRAL grayscale on pure WHITE paper highlights, no sepia or cream tint, no printed border, no text or speech bubbles or watermark. Contemporary near-future rural Chiapas, Mexico; ordinary inhabited working places, no colonial fantasy, ruins, folkloric costume, weapons or chivalry. Input reference is for CHARACTER IDENTITY and etching style only, not background composition. Q: exact reference slender robot, elongated segmented oval head, large round mechanical ears, narrow neck, question-mark breastplate, long articulated limbs; wears FITTED SHORT dark jacket with small ? on lapel, NOT coat tails. Body language conveys fluent adult intelligence and humor, never infantile bewilderment. Full bleed scenery at sides/bottom; keep essential features away from outer 5 percent for trim. Captions and titles will be typeset separately. At the sheltered doorstep of a modest contemporary Chiapas house, Q bends his tall neck and leans a little closer to read a pump warranty in a lowered voice for a middle-aged Mexican woman wearing an everyday patterned blouse and plain skirt. She listens with a discreet amused glance toward her OWN open doorway. The man who bought the pump is dimly visible INSIDE that same doorway, not outside or in another building. Q holds a small folded warranty leaflet, hand makes no lecturing gesture. His male walking companion, a young adult in a plain light shirt, stands quietly aside holding remaining meeting notices. Intimate comic conspiracy about small print. No activist rally, no other audience, no robot kneeling or childish surprise, no visible readable text.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-06/plate-09.png"
+      ],
+      "original_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-ca55c5aa-c48a-4241-b8f5-0ee61484874e.png",
+      "selected_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-ca55c5aa-c48a-4241-b8f5-0ee61484874e.png"
     },
     {
       "plate_id": "issue-09-plate-07",
@@ -198,10 +297,21 @@
         87
       ],
       "asset": "output/illustrations/revised/issue-09/plate-07.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Not the report.",
       "scene_brief": "Yadira sits beside Q with her brother's release and the public report on the table, asking for the original recording rather than the award-winning extract. She directs the request. Do not visualize or expose the recording's contents; invented unreadable document detail.",
-      "scene_anchor": "unedited recording"
+      "scene_anchor": "unedited recording",
+      "asset_sha256": "0ba1b2c3ec2bed38be2233439fe39e01564d9f8952b71307b30af417076bd271",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_prompt": "Use case: illustration-story. Create one unique portrait full-page literary illustration, approximately 2:3 aspect, highest available native detail. Goya-inspired etched realism, fine black crosshatching and selective aquatint, NEUTRAL grayscale on pure WHITE paper highlights, no sepia or cream tint, no printed border, no text or speech bubbles or watermark. Contemporary near-future rural Chiapas, Mexico; ordinary inhabited working places, no colonial fantasy, ruins, folkloric costume, weapons or chivalry. Input reference is for CHARACTER IDENTITY and etching style only, not background composition. Q: exact reference slender robot, elongated segmented oval head, large round mechanical ears, narrow neck, question-mark breastplate, long articulated limbs; wears FITTED SHORT dark jacket with small ? on lapel, NOT coat tails. Body language conveys fluent adult intelligence and humor, never infantile bewilderment. Full bleed scenery at sides/bottom; keep essential features away from outer 5 percent for trim. Captions and titles will be typeset separately. Input image: Q and Yadira identity reference, not a target to duplicate. Evening AFTER the bulletin, private document review. Yadira recognizable from reference is SERIOUS and purposeful, sits beside Q at a small plain table separate from radio console. She points to her brother's release beside a public report; Q listens looking at indicated page and drafts reply on tablet set nearby. She is directing her request for the ORIGINAL recording, not the award report. Preserve exact Q/Yadira identities, different framing/viewpoint from reference: elevated three-quarter view shows their faces and both documents, intimate quiet work. No microphone foreground, no audience, no third person, no brother's portrait, no imaginary recording contents, no readable private names or report text. Window dusk neutral monochrome. Only abstract printed page lines, no award trophy.",
+      "reference_images": [
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-9bd45335-f88e-4dad-b706-bf6d02da4f3c.png"
+      ],
+      "original_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-03b38ee9-2e3b-4895-b9fc-0443dc75e5d0.png",
+      "selected_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-03b38ee9-2e3b-4895-b9fc-0443dc75e5d0.png"
     },
     {
       "plate_id": "issue-09-plate-08",
@@ -223,10 +333,22 @@
         99
       ],
       "asset": "output/illustrations/revised/issue-09/plate-08.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Put the sea in the expenses.",
       "scene_brief": "Breakfast route discussion: Chano slides a phone map between the sugar bowl and Q's hand; Lucía is part of the decision. Warm comic three-way exchange before Q accepts the sealed deposit. No actual ocean scene: here the Pacific is a plan, not somewhere they have reached.",
-      "scene_anchor": "Put the sea in the expenses"
+      "scene_anchor": "Put the sea in the expenses",
+      "asset_sha256": "4c73b3d38ba62c46aeca270971147dda0dfebda5da28eed6eb5cf4fff8bad306",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_prompt": "Use case: illustration-story. Create one unique portrait full-page literary illustration, approximately 2:3 aspect, highest available native detail. Goya-inspired etched realism, fine black crosshatching and selective aquatint, NEUTRAL grayscale on pure WHITE paper highlights, no sepia or cream tint, no printed border, no text or speech bubbles or watermark. Contemporary near-future rural Chiapas, Mexico; ordinary inhabited working places, no colonial fantasy, ruins, folkloric costume, weapons or chivalry. Input reference is for CHARACTER IDENTITY and etching style only, not background composition. Q: exact reference slender robot, elongated segmented oval head, large round mechanical ears, narrow neck, question-mark breastplate, long articulated limbs; wears FITTED SHORT dark jacket with small ? on lapel, NOT coat tails. Body language conveys fluent adult intelligence and humor, never infantile bewilderment. Full bleed scenery at sides/bottom; keep essential features away from outer 5 percent for trim. Captions and titles will be typeset separately. Breakfast in a modest roadside comedor. THREE people only at close round table: Chano the stocky mustached man from FIRST reference, Q from first reference in his short fitted jacket, Lucía the young dark-haired woman leaning over the map in SECOND reference now seated as equal participant in field jacket with hair loosely tied. Chano SLIDES a phone displaying a simple abstract road route between a small sugar bowl and Q's resting hand. Lucía smiles at their joke about budgeting the Pacific; a pencil and modest folded account sheet next to her. Everyday plates/cups, open window onto ordinary inland road. They are planning, have NOT reached the sea, so NO ocean, NO beach, NO map on wall, NO Querétaro text or aqueduct, NO copied crowd/background from references. Three distinct adults in lively equal exchange, not Q lecturing.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-06/plate-09.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-03/cover.png"
+      ],
+      "original_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-c9432f1c-96ba-4ca2-8380-3ecedd67e7f3.png",
+      "selected_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-c9432f1c-96ba-4ca2-8380-3ecedd67e7f3.png"
     },
     {
       "plate_id": "issue-09-plate-09",
@@ -250,10 +372,44 @@
         112
       ],
       "asset": "output/illustrations/revised/issue-09/plate-09.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "You can open that.",
       "scene_brief": "Rest break after the checkpoint: Q peels the orange Chano supplied; a little juice reaches the receipt's corner. Tablet, oranges, closed bag with the sealed deposit kept distinct from food. Q understands the joke. No opened data module, weapon or mystical cable.",
-      "scene_anchor": "You can open that"
+      "scene_anchor": "You can open that",
+      "asset_sha256": "b52df48ae5a56abeb9013e254e5608eb18d8f70a7e014af6efda8489d467d985",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_prompt": "Use case: illustration-story. Create one unique portrait full-page literary illustration, approximately 2:3 aspect, highest available native detail. Goya-inspired etched realism, fine black crosshatching and selective aquatint, NEUTRAL grayscale on pure WHITE paper highlights, no sepia or cream tint, no printed border, no text or speech bubbles or watermark. Contemporary near-future rural Chiapas, Mexico; ordinary inhabited working places, no colonial fantasy, ruins, folkloric costume, weapons or chivalry. Input reference is for CHARACTER IDENTITY and etching style only, not background composition. Q: exact reference slender robot, elongated segmented oval head, large round mechanical ears, narrow neck, question-mark breastplate, long articulated limbs; wears FITTED SHORT dark jacket with small ? on lapel, NOT coat tails. Body language conveys fluent adult intelligence and humor, never infantile bewilderment. Full bleed scenery at sides/bottom; keep essential features away from outer 5 percent for trim. Captions and titles will be typeset separately. Roadside rest-break table after a routine checkpoint, parked ordinary van some distance behind. Q PEELS a real orange with articulated fingers, understanding Chano's joke. Chano from reference, stocky mustache/wavy dark hair, sits across with more oranges in paper bag; his thumb rests at a small juice stain on corner of a paper transport receipt. A tablet lies flat near Q. Q's CLOSED travel satchel containing the sealed deposit rests securely on bench, separate from food and receipt. Only these two characters. Close candid perspective with peeling hands/receipt low foreground, faces clearly visible above; quiet amusement. No connected cable, no opened data module, no readable testimony, no weapons. Ordinary trees and roadside, not northern border wall or municipal building.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-06/plate-09.png"
+      ],
+      "original_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-cbdd277c-0692-4296-ad41-ca9b723bfca1.png",
+      "selected_generation": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-cbdd277c-0692-4296-ad41-ca9b723bfca1.png"
     }
-  ]
+  ],
+  "lucia_reference": "output/illustrations/revised/issue-03/cover.png",
+  "custodian_reference": "output/illustrations/revised/issue-01/cover.png",
+  "generation_mode": "built-in",
+  "generation_calls": {
+    "originals": 10,
+    "corrective_edits": 3
+  },
+  "proof_outputs": {
+    "reading": {
+      "path": "output/pdf/ingenious-issue-09-revised-en-bw.pdf",
+      "sha256": "82301e66e807a3d747de65207bc69c683c5140dc0fa36bb906c57348f226c267",
+      "pages": 20
+    },
+    "a3": {
+      "path": "output/pdf/ingenious-issue-09-revised-en-bw-a3.pdf",
+      "sha256": "c60d67bbca61b267ceb8eebf9e35e3be5a9bdfc0456f9becade2b8ee2eaf812f",
+      "sides": 10,
+      "duplex_sheets": 5,
+      "orientation": "landscape",
+      "duplex": "short edge, actual size"
+    },
+    "verification": "All 3221 source words in order; all 20 reading pages and ten A3 sides visually checked; actual text and decoded image data match every imposed slot; trim clipping and translation verified; unpainted text backgrounds; ten lossless DeviceGray images; five embedded reading-font subsets. Manuscript, outline and Issues 1-8 unchanged from 3f0a6eeb. No physical print test."
+  }
 }

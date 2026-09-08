@@ -1,5 +1,11 @@
 # Chapter Nine: make room for the shoes
 
+Production follow-up: the later Issue Nine build retains this revised text and
+replaces the planning placeholders with ten unique approved plates and verified
+reading/A3 proofs. See `ISSUE_09_PRODUCTION.md`. The layout-only findings below
+record the earlier voice pass; its final paragraph is historical, not the current
+artwork queue. No new external faculty or independent simulation ran in production.
+
 ## Verdict
 
 Yadira's radio stories already give the chapter humor, conflicting needs and

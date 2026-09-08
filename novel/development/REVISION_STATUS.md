@@ -10,7 +10,16 @@ illustrated issues, verify affected print PDFs, and push the revision.
 The latest user clarification governs the ending: “Death just means we finish
 the book.” The source now permits Q to remain alive when the writing stops.
 
-Latest checkpoint: Issue Eight has verified 16-page reading and eight-side A3
+Latest checkpoint: Issue Nine has verified 20-page reading and ten-side A3 proofs,
+ten unique plates and five duplex sheets. All 3,221 words, all rendered pages
+and every actual imposed text/image slot were checked. Three image edits corrected
+the repair lamp, Mateo's distinct identity and the station door key. The manuscript,
+outline and Issues 1-8 PDFs are unchanged from `3f0a6eeb`. The living ending remains.
+See `ISSUE_09_PRODUCTION.md`. Issues 1-9 are current illustrated revision proofs;
+thirteen remain. No print job was sent. Native art remains approximately 150 dpi;
+whole-book literary review and the broader goal remain open.
+
+Previous checkpoint: Issue Eight has verified 16-page reading and eight-side A3
 proofs, eight unique plates and four duplex sheets. All 2,671 words, all rendered
 pages and every actual imposed text/image slot were checked. Four image edits
 corrected gate chronology, the woman's direction, the site sketch and Isthmus
@@ -385,8 +394,9 @@ four-call dismissal test; the source is unchanged. The paid-companion audit
 subsequently established the agreement in Chapter Two and rebuilt Issue Two;
 see `PAID_COMPANION_CONTINUITY.md`. Issue Seven's unique plates are now complete.
 Issue Eight now also has eight approved plates and verified reading/A3 proofs.
-Next: continue with Issue Nine's source-bound plates and extend fresh-context
-scene tests without inventing a running budget. Fourteen issues still need
+Issue Nine now has ten approved plates and verified reading/A3 proofs.
+Next: continue with Issue Ten's source-bound plates and extend fresh-context
+scene tests without inventing a running budget. Thirteen issues still need
 revised approved art. The pacing reports
 are bounded structural reviews, not a new
 full reading of both books. Earlier chapter-by-chapter continuation notes below
@@ -654,12 +664,12 @@ illustrated edition as unfinished requirements.
    The old public-example packet at `/tmp/ingenious-fresh-scene-packets.json`
    contains a superseded disclosure event and was not run; replace it before use.
 5. Rebuild the remaining English chapter issues only after text and plate placement
-   are reconciled. The new Issue 1-8 revision proofs represent their current chapters.
+   are reconciled. The new Issue 1-9 revision proofs represent their current chapters.
    English is the current revision source; the Spanish edition remains earlier.
 6. Use the new explicit-manifest builder, not the old modulo-indexed asset maps.
    It maps even narrative pages to the following odd plate pages, rejects stale
    chapter/asset hashes and repeats, and checks rendered text coverage. Extend
-   these checks and unique facing-scene illustrations through the remaining fourteen issues.
+   these checks and unique facing-scene illustrations through the remaining thirteen issues.
 7. Restore the requested print specifications: readable larger text, continuous
    flow, black ink and unpainted text backgrounds for cream stock, captions in a
    margin, full-bleed art, and the 24-page/12-plate/six-sheet Issue 1 proof. Verify

@@ -142,7 +142,26 @@ art remains a press-quality limitation. No print job was sent. See the
 [production record](../../novel/development/ISSUE_08_PRODUCTION.md) and
 [art/prompt manifest](../illustrations/revised/issue-08/manifest.json).
 
-The remaining fourteen issues still require their revised illustrated builds.
+## Current Issue 9 revision proof
+
+- [English Issue 9: revised reading PDF](../pdf/ingenious-issue-09-revised-en-bw.pdf)
+- [English Issue 9: revised A3 folding PDF](../pdf/ingenious-issue-09-revised-en-bw-a3.pdf)
+
+20 pages, ten unique plates including the cover, and five A3 duplex sheets.
+All 3,221 words flow through nine two-column narrative pages in Georgia
+12.4/17.5667-point type without a forced interlude break. The school archive,
+radio work, writing call and chosen northern journey each have distinct facing
+scenes. Mateo is not Chano; the Custodian appears on the call screen; the sealed
+testimony stays unseen. The source is unchanged. All reading pages and A3 sides
+were visually checked, with exact text and decoded-image comparisons in every
+imposed position. Unpainted backgrounds, lossless grayscale and full-bleed comic
+trim continue the proof specification. Print all ten landscape A3 sides at actual
+size, short-edge duplex; folding leaves an A4 carrier around comic trim.
+Approximately 150-dpi art remains a press-quality limitation. No print job was
+sent. See the [production record](../../novel/development/ISSUE_09_PRODUCTION.md)
+and [art/prompt manifest](../illustrations/revised/issue-09/manifest.json).
+
+The remaining thirteen issues still require their revised illustrated builds.
 
 ## Earlier editions
 
