@@ -1,5 +1,9 @@
 # Chapter Twelve: work delivered, company enjoyed
 
+Historical checkpoint. The subsequent encounter revision and illustrated proof
+are recorded in `CHAPTER_12_ENCOUNTER_REVIEW.md` and `ISSUE_12_PRODUCTION.md`.
+The no-art status below describes this earlier pass, not the current edition.
+
 ## Verdict
 
 The chapter had stronger distinctions than encounters. It promised a useful

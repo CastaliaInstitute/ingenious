@@ -10,7 +10,21 @@ illustrated issues, verify affected print PDFs, and push the revision.
 The latest user clarification governs the ending: “Death just means we finish
 the book.” The source now permits Q to remain alive when the writing stops.
 
-Latest checkpoint: Issue Eleven has verified 24-page reading and twelve-side A3
+Latest checkpoint: Issue Twelve has verified 28-page reading and fourteen-side A3
+revision proofs, fourteen unique selected plates and seven duplex sheets. All
+4,112 words flow continuously at Georgia 13/18.4167 points; FAQ questions stay
+with the start of their answers. Q enjoys a voice game with the child actor;
+selected explanatory passages are shorter without resolving pending complaints.
+Nine image edits corrected setting, documentary details and knee-brace continuity.
+All reading/A3 pages and actual imposed text/image slots were checked. Only
+Chapter Twelve and its school outline entry change; other chapters, the living
+ending and Issues 1-11 PDFs are unchanged from `a0565037`. See
+`CHAPTER_12_ENCOUNTER_REVIEW.md` and `ISSUE_12_PRODUCTION.md`. Issues 1-12 are
+current illustrated revision proofs; ten remain. No new faculty/inference calls,
+printing or A+ certification. Native art remains about 150 dpi; broader literary
+review and the revised Spanish edition remain unfinished. The goal stays active.
+
+Previous checkpoint: Issue Eleven has verified 24-page reading and twelve-side A3
 revision proofs: twelve unique plates, six duplex sheets, and all 3,378 words in
 source order. Four fresh-context calls informed clearer payment dialogue and a
 shorter settlement passage; Q listens to the child's story and then initiates the

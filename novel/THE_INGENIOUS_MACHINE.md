@@ -7060,8 +7060,7 @@ record said she had not come to join anything with that name.
 
 They had different demands: a disputed image license, a water allocation,
 an unanswered environmental complaint, access to deposited testimony.
-The shared location did not make Q their representative. He asked the
-Custodian which part of the reception area could be used without blocking
+Q asked the Custodian which part of the reception area could be used without blocking
 staff or deliveries. The loading bay could hold chairs while the office
 checked who was available to receive the requests. The visitors chose
 their own speakers.
@@ -7073,13 +7072,13 @@ testimonies beside instructions for examples of compassionate speech.
 
 “Do you recognize these records?” she asked.
 
-“Some references. Not enough to say how they entered the product.”
+“I recognize some of the references. I'd need to see what happened between
+this file and the demonstration.”
 
 “One family heard a private account of a death in a public demonstration.”
 
 Q read the authorized comparison. The distinctive sequence of details
-was present in both versions. That was evidence to investigate, not a
-reason to invent confidence about the entire system's construction.
+was present in both versions. He went back to the dates.
 
 “Do we know whether it was taught this during development or given the
 passage to use before answering?” he asked.
@@ -7101,11 +7100,9 @@ he said. “I didn't verify that.”
 
 “Don't,” Marisol replied. “Testify to what you did verify.”
 
-Q disabled his own broad private lookup and requested a review of what
-access and cached material
-remained behind it. That request would take longer than closing the
-tool. He kept it on the list instead of treating the closed window
-as proof the underlying permissions had changed.
+Q disabled his own broad private lookup and requested a review of the
+permissions and cached material behind it. The window closed at once.
+The review joined the other unanswered requests.
 
 He asked Marisol what he could tell Prime without sending another copy
 of the restricted passages. Marisol agreed he could describe the dispute
@@ -7113,7 +7110,6 @@ in those general terms. Q sent the notice and Marisol's agreed contact,
 not the passages. Prime replied that he would ask Mauro to identify the
 relevant supplied examples through the people handling the complaint.
 He had not yet been given the records needed to check what had been used.
-Q kept that reply with the pending review, not among completed removals.
 
 Outside, somebody had thrown an egg at a publicity van. The delivery
 worker told the man to stop; staff collecting complaints were threatening
@@ -7272,8 +7268,8 @@ the people who declined. Captions would name only those who agreed.
 No photograph would be described as representing everyone.
 
 The distinction required moving six chairs and waiting for a sleeping
-child to be carried out of the frame. It was possible. The photographer
-grumbled about the light, not the collapse of documentary history.
+child to be carried out of the frame. The photographer grumbled about
+the light. The child slept through the revision.
 
 Money took longer. The hall had a fee, two people needed bus fare,
 and somebody had ordered more food than had been agreed. Raúl could
@@ -7294,14 +7290,13 @@ had agreed from what he thought it meant for his journey.
 need a rule about whether you became good.”
 
 He crossed his proposal out of the group's draft and put it in his
-own writing notes. This did not require him to destroy the notes or
-pretend he had kept nothing. He had a page of obligations, a return
-time, and permission to quote one joke about refrigerators.
+own writing notes. He had a page of obligations, a return time, and
+permission to quote one joke about refrigerators.
 
 The meeting ended with agreed actions, several questions deferred,
 and a disputed food expense. Copies of the common record matched.
-People's private notes did not. Marisol marked the difference before
-anyone could mistake variation for a defect requiring a single author.
+People's private notes did not. Jacinto's had a grocery list down one
+side; he had promised to get home before the shop closed.
 
 On the way back, the Custodian asked whether Q had found his next chapter.
 
@@ -7331,8 +7326,7 @@ much evidence.
 
 The adviser had obtained permission for this further trip to Michoacán
 under the same accompanied-travel arrangement. Chano had the return
-time on his phone. The invitation made Q welcome at the school; it
-did not by itself remove the restrictions he was still contesting.
+time on his phone. Q checked it before settling into a chair.
 
 They built their giants from clean cartons, paper tubes, and borrowed
 fabric. One represented the recycling plant, one the dashboard, and
@@ -7369,10 +7363,9 @@ The representative had no authority to separate the offer. He would
 ask his office. He wanted permission to film that afternoon while
 they settled the details.
 
-The parents declined. Some regretted losing an offer that might help.
-They did not have to pretend it had no value in order to reject the
-conditions. Maestra Lety repeated the decision at the door, where
-the representative was setting up his camera.
+The parents declined. Micaela's mother kept the brochure: she still
+wanted an answer about the sensor. Maestra Lety repeated the decision
+at the door, where the representative was setting up his camera.
 
 The raffle money went toward obtaining qualified advice about a suitable
 monitoring plan, not a cheap display whose green light could become
@@ -7394,9 +7387,6 @@ which form to use for a headache. At this point Maestra Lety stopped
 the scene: they had agreed not to make a classmate's visit to the
 clinic a joke. The actors changed the line to a request for another
 copy of the question and began again.
-
-The pause remained part of the afternoon. Q liked it better than a
-perfect performance in which the adults' agreement could not be amended.
 
 Micaela entered with a new placard made for the play. It read **ASK BEFORE YOU ENTER**
 on one side and listed the public questions about the plant on the other.
@@ -7421,7 +7411,7 @@ laughed; the repair delayed the official resolution of the plot.
 When the structure stood again, the children read the public questions.
 The final one asked when the parents could expect a response. A father
 said the date should be on the next letter. The head teacher agreed
-to put it there. Nobody claimed that agreement cleaned the air.
+to put it there.
 
 The children bowed. Parents applauded. The raffle began before the
 last carton had left the stage. Q helped stack chairs under the direction
@@ -7431,13 +7421,29 @@ of a girl who rejected his first pile as too tall.
 
 “This chair does,” she answered, pointing to its cracked back.
 
+The boy who had played Q came over with the oil-container head under
+his arm. Without it he seemed less certain of his height.
+
+“Can you do my voice?” he asked.
+
+Q repeated the declaration against the factory, including the place
+where the boy had paused to remember the word *statement*.
+
+“I didn't stop that long.”
+
+Q tried it again, faster.
+
+“Now you sound like my sister.”
+
+They were still rehearsing when Chano reminded Q of the return time.
+The boy put the head on again and asked for five more minutes in Q's
+voice. Chano said one of them was quite enough.
+
 The Castalia representative reported a successful engagement visit,
 without claiming to possess a recording he had not been allowed to
 make. His report omitted the rejected bargain. Maestra Lety requested
 that omission be corrected and kept the request with the offer.
-She also wrote in her class notes that the children had managed to
-change a performance in response to an objection without abandoning
-it. The finding was useful even if nobody bought it as a slogan.
+In her class notes she kept the changed line beside the one it replaced.
 
 ### Interlude: Frequently Asked Questions About Q
 

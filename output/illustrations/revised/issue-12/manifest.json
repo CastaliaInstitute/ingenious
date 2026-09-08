@@ -1,25 +1,55 @@
 {
   "issue": 12,
-  "revision": "2026-09-08-kept-promises-and-fellow-parents",
+  "revision": "2026-09-08-voices-and-company",
   "source": "novel/THE_INGENIOUS_MACHINE.md",
-  "chapter_sha256": "dda4c87d648a3c7faa9956d4db25b40181ff089acdc4853d45a79941d1f4a984",
+  "chapter_sha256": "66ac3d96f10ebaf7b203f2b32e947d47739603c46cbc65b57ce9e2cee9af4da9",
   "page_count": 28,
   "text_font": "Georgia 13/18.416666666666668 pt",
   "plate_count_including_cover": 14,
-  "status": "planned; no new Issue 12 images generated or approved",
-  "character_reference": "output/illustrations/revised/issue-01/cover.png",
+  "status": "verified illustrated revision proof; not a press master",
+  "character_reference": "output/illustrations/revised/issue-04/plate-03.png",
   "chano_reference": "output/illustrations/revised/issue-03/plate-06.png",
-  "character_design": "Preserve approved Q face, segmented head, ears, neck, articulated body, worn finish and supported knee; conversational poise rather than knight costume. Chano follows his approved reference. Custodian male, tall, about sixty, long gray hair tied back, glasses, white work shirt. Micaela is the same tianguis child as earlier, not Lidia; her cardboard mask is removable and her bent sword a bus-friendly prop. Jacinto is an older retired automotive worker, not Q's builder. Maestra Lety is a schoolteacher distinct from the warehouse worker.",
+  "character_design": "Q is the same tall slender robot from reference: oval riveted segmented metal head, concentric circular ear discs, long mechanical neck, articulated hands and exposed metal legs; worn waist-length dark sponsor jacket, question-mark chest emblem, discreet support brace on RIGHT knee. Sociable and attentive, not a knight; no helmet, sword, cloak, trousers or redesign. Micaela retains Issue Five's short curly bob, hoodie and backpack. Her father has short dark hair, thin moustache, checked shirt and plain dark vest. Jacinto has receding swept-back white hair, a clean-shaven lined face and knitted vest. Marisol has a low dark bun, square glasses and cardigan; Lucía retains her wavy hair and denim jacket. Custodian male, tall, about sixty, long gray hair tied back, glasses, white work shirt. Chano follows his approved reference. The school actor is a human boy in a padded oil-container headpiece, not a robot copy.",
   "art_direction": "Neutral monochrome Goya-inspired etched realism; white highlights, no sepia or cream ink wash on text backgrounds. Full-bleed art at comic trim with separate typeset caption margin. Contemporary Amealco archive and union hall; later accompanied school visit in Michoacán. Distinct compositions for every exact-facing scene. People have practical tasks and humor, not generic mobs seeking a savior. FAQ plates are editorial still lifes, not invented simultaneous conversations.",
-  "approval_scope": "Source-bound plan only. Fourteen planned plates including cover, 28-page internal proof, fourteen A3 landscape sides / seven short-edge duplex sheets. No finished illustrated PDF, approved new raster assets or print job. Rebind after source changes.",
+  "approval_scope": "Fourteen distinct selected plates and all 28 reading pages/14 A3 sides visually checked. Final rebuild changed only reading page 15 and A3 side 14; both reinspected, all forty other renders byte-identical. Source-order, exact-facing bindings, font embedding, grayscale, nested pairs and every actual imposed text/image slot checked. No printing or A+ certification.",
   "plates": [
     {
       "plate_id": "issue-12-cover",
       "page": 1,
       "asset": "output/illustrations/revised/issue-12/cover.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The New Quixotes",
-      "scene_brief": "Q and Chano repair the loading-bay chair with Micaela holding screws in her upturned cardboard Q mask. Broad oblique view includes chairs, waiting visitors and the archive delivery threshold; not the low-detail close-up of plate 05. A practical shared task undercuts the heroic poster. Leave upper space for separately typeset title."
+      "scene_brief": "Q and Chano repair the loading-bay chair with Micaela holding screws in her upturned cardboard Q mask. Broad oblique view includes chairs, waiting visitors and the archive delivery threshold; not the low-detail close-up of plate 05. A practical shared task undercuts the heroic poster. Leave upper space for separately typeset title.",
+      "title_lines": [
+        "The Ingenious",
+        "Machine"
+      ],
+      "asset_sha256": "efa26f85c7a4bdaf8a8e56bfb5837d1ad9f5c4c20ec11bfd2ca64e4df31b7141",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_full_bleed": 149.85365853658536,
+      "generation_mode": "built-in image_gen",
+      "generation_prompt": "Use case: illustration-story. New unique full-bleed portrait 2:3 plate for The Ingenious Machine Issue Twelve. Goya-inspired etched realism, disciplined crosshatching, sharp expressive faces and natural anatomy, black and neutral gray ink with pure white highlights, no sepia, no tinted paper texture. Single scene, no panels, borders, captions, watermark or invented lettering. Contemporary Mexico, practical clothes, no folkloric spectacle. Edges may bleed, keep key hands and faces trim-safe. Q is the same tall slender robot from reference: oval riveted segmented metal head, concentric circular ear discs, long mechanical neck, articulated hands and exposed metal legs; worn waist-length dark sponsor jacket, question-mark chest emblem, discreet support brace on RIGHT knee. Sociable and attentive, not a knight; no helmet, sword, cloak, trousers or redesign. Reference1 Q and Micaela only, omit her father; reference2 Chano only, stocky middle-aged Mexican man, wavy dark hair and moustache, rolled work shirt. New wide cover composition at archive loading bay outside wooded rural Amealco. In lower two-thirds, Q is seated supporting the seat of a broken folding chair held at comfortable height, Chano crouches to replace its fastener, and Micaela age12 curly bob hoodie holds screws in her upturned cardboard Q-face mask. Metal fingers, Chano's screwdriver and child mask readable as a shared practical task. A van parked behind, few waiting visitors carrying folders, rows of chairs, pine/oak uplands at edge. No knight hero pose. TOP QUARTER stays light blank wall/white sky with NO heads, foliage, fixtures or lines through the central title space; separately typeset title will be added. Single scene full bleed, no caption/text inside art. Wider contextual view than intimate plate05, faces below title area. Q's RIGHT knee remains braced, no kneeling on damaged knee.",
+      "reference_images": [
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-6f6fee29-110b-4f79-a0e7-5202142ca546.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-03/plate-06.png"
+      ],
+      "original_generation_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-2e24b4ce-806c-4b8e-9035-9fd65f6fa49f.png",
+      "selected_generation_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-db96797a-5c98-4d29-aeed-82f74eb8fb0a.png",
+      "corrective_edits": [
+        {
+          "key": "cover-edit",
+          "refs": [
+            "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-2e24b4ce-806c-4b8e-9035-9fd65f6fa49f.png",
+            "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-995e1468-93a5-4f3f-9b8d-2efef3da60ee.png"
+          ],
+          "prompt": "Use case: precise-object-edit. Reference1 is the cover EDIT TARGET. Reference2 shows only how Micaela holds screws in the upturned cardboard mask; do not copy its composition. In the cover, change Micaela's hands so BOTH support the upturned concave cardboard Q mask with the loose screws resting INSIDE it, not displayed on her open palm. Also place Q's knee brace on his anatomical RIGHT knee (the knee toward Chano, viewer's LEFT of Q's two knees) and remove the brace from the other knee. Preserve all faces, identities, clothes, chair repair, screwdriver, van, visitors, trees, framing, white upper title space and black-and-white etched style. No new objects or text. Keep all other geometry unchanged.",
+          "result": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-db96797a-5c98-4d29-aeed-82f74eb8fb0a.png"
+        }
+      ],
+      "visual_review": "Viewed at native resolution; selected for revision proof against the exact facing scene. Not a press-resolution approval."
     },
     {
       "plate_id": "issue-12-plate-01",
@@ -44,16 +74,32 @@
         14
       ],
       "asset": "output/illustrations/revised/issue-12/plate-01.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Two buses",
       "scene_brief": "Micaela holds up her bent foil-wrapped cardboard sword in the contemporary Amealco archive reception room; her father counters with two bus tickets beside the folder while seated Q smiles through an attentive pose. Mask lifted, no medieval knight gear on Q. This is the agreed private visit, not a promotional portrait.",
-      "scene_anchor": "Two buses got you here."
+      "scene_anchor": "Two buses got you here.",
+      "asset_sha256": "3253a7134ce1f3c328b6c577887ae3e9c3bc9a354d6b4e4588081403752a0c50",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_full_bleed": 149.85365853658536,
+      "generation_mode": "built-in image_gen",
+      "generation_prompt": "Use case: illustration-story. New unique full-bleed portrait 2:3 plate for The Ingenious Machine Issue Twelve. Goya-inspired etched realism, disciplined crosshatching, sharp expressive faces and natural anatomy, black and neutral gray ink with pure white highlights, no sepia, no tinted paper texture. Single scene, no panels, borders, captions, watermark or invented lettering. Contemporary Mexico, practical clothes, no folkloric spectacle. Edges may bleed, keep key hands and faces trim-safe. Q is the same tall slender robot from reference: oval riveted segmented metal head, concentric circular ear discs, long mechanical neck, articulated hands and exposed metal legs; worn waist-length dark sponsor jacket, question-mark chest emblem, discreet support brace on RIGHT knee. Sociable and attentive, not a knight; no helmet, sword, cloak, trousers or redesign. Reference1 Q identity/jacket only, no theater setting or woman; reference2 Micaela curly-haired girl identity only, no market or church. Contemporary archive reception room in wooded rural Amealco, filing shelves, plain reception table, window looks ONLY onto pines and oaks. Micaela age12 short curly dark bob, hoodie, jeans, backpack, has lifted a handmade cardboard Q-face mask above forehead and holds bent foil-wrapped cardboard tube sword under her arm. Her father Mexican40 slim face, short straight dark hair, thin moustache, light checked shirt with sleeves rolled and plain dark sleeveless vest, arrives beside her showing two small bus tickets in one hand, folder in other. Seated Q faces them with head tilted in amused attention. Medium three-person scene at child-eye height, tickets and bent lightweight prop clear. Father is NOT Chano or Custodian. No other people or robots, no cameras, no printing legible personal records.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-03.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-05/plate-14.png"
+      ],
+      "original_generation_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-6f6fee29-110b-4f79-a0e7-5202142ca546.png",
+      "selected_generation_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-6f6fee29-110b-4f79-a0e7-5202142ca546.png",
+      "corrective_edits": [],
+      "visual_review": "Viewed at native resolution; selected for revision proof against the exact facing scene. Not a press-resolution approval."
     },
     {
       "plate_id": "issue-12-plate-02",
       "page": 5,
       "facing_text_page": 4,
-      "facing_text": "“Did Q claim to own you?” the\ninterviewer asked.\n“No. An equipment record called\nme a contract driver. He told\nthem I could answer for myself.”\n“Then why were you held?”\n“I caught a technician's arm when\nQ fell. That's what I gave a\nstatement about. The rest is in the\nnotices we're trying to get\nanswered.”\nThe interviewer asked whether he\nforgave Q for the trouble.\n“Ask me whether they've returned\nthe ledger.”\n“Have they?”\n“Now we have a subject.”\nMicaela looked up from the\nscreen. “He's funnier than you.”\n“He has had a great deal of\npractice at my expense.”\nBy midday more visitors had\narrived, some by appointment and\nothers because a message had\nannounced an open protest at the\narchive. A student wore a costume\nmade from clean appliance\ncasings. A delivery worker had Q's\nface printed on a mask. An elderly\nman carried a wooden lance and\nintroduced himself as Q's father.\n“The Custodian may want to\ndiscuss that,” Q said.\n“Let him. I have been paying for\nadult children for forty years. He\ncan bring receipts.”\nThe man's name was Jacinto. He\nhad retired from an automotive\nplant and was trying to correct a\npension calculation. He laid the\nlance beneath his chair and took a\ncomb from the same pocket as his\nclaim number. The photographer\nwho had ignored the folder asked\nhim to stand up again.\n“First take one where you can\nread this,” Jacinto said, holding\nup the public complaint reference.\n“Then I'll give you the father.”\nCastalia called the gathering an\norganic brand community.\nSomeone outside called it the New\nQuixotes. A woman seeking a\ncorrection to her brother's record\nsaid she had not come to join\nanything with that name.\n“Then don't,” Micaela said. “You\ncan still stand here.”\nThey had different demands: a\ndisputed image license, a water\nallocation, an unanswered\nenvironmental complaint, access\nto deposited testimony. The\nshared location did not make Q\n",
+      "facing_text": "“Did Q claim to own you?” the\ninterviewer asked.\n“No. An equipment record called\nme a contract driver. He told\nthem I could answer for myself.”\n“Then why were you held?”\n“I caught a technician's arm when\nQ fell. That's what I gave a\nstatement about. The rest is in the\nnotices we're trying to get\nanswered.”\nThe interviewer asked whether he\nforgave Q for the trouble.\n“Ask me whether they've returned\nthe ledger.”\n“Have they?”\n“Now we have a subject.”\nMicaela looked up from the\nscreen. “He's funnier than you.”\n“He has had a great deal of\npractice at my expense.”\nBy midday more visitors had\narrived, some by appointment and\nothers because a message had\nannounced an open protest at the\narchive. A student wore a costume\nmade from clean appliance\ncasings. A delivery worker had Q's\nface printed on a mask. An elderly\nman carried a wooden lance and\nintroduced himself as Q's father.\n“The Custodian may want to\ndiscuss that,” Q said.\n“Let him. I have been paying for\nadult children for forty years. He\ncan bring receipts.”\nThe man's name was Jacinto. He\nhad retired from an automotive\nplant and was trying to correct a\npension calculation. He laid the\nlance beneath his chair and took a\ncomb from the same pocket as his\nclaim number. The photographer\nwho had ignored the folder asked\nhim to stand up again.\n“First take one where you can\nread this,” Jacinto said, holding\nup the public complaint reference.\n“Then I'll give you the father.”\nCastalia called the gathering an\norganic brand community.\nSomeone outside called it the New\nQuixotes. A woman seeking a\ncorrection to her brother's record\nsaid she had not come to join\nanything with that name.\n“Then don't,” Micaela said. “You\ncan still stand here.”\nThey had different demands: a\ndisputed image license, a water\nallocation, an unanswered\nenvironmental complaint, access\nto deposited testimony. Q asked\nthe Custodian which part of the\n",
       "source_block_ids": [
         15,
         16,
@@ -75,16 +121,40 @@
         32
       ],
       "asset": "output/illustrations/revised/issue-12/plate-02.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "First the reference",
       "scene_brief": "Jacinto under the archive reception light lifts his public complaint-reference sheet toward a photographer, his wooden lance lying safely beneath his chair and a comb in his other hand. He is an older retired automotive worker in contemporary clothes, not Q's actual builder; no pension details legible.",
-      "scene_anchor": "Then I'll give you the father."
+      "scene_anchor": "Then I'll give you the father.",
+      "asset_sha256": "942bce4988dec2827db8db27947a1d41bc50b76d853419c879f398035bd08cbb",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_full_bleed": 149.85365853658536,
+      "generation_mode": "built-in image_gen",
+      "generation_prompt": "Use case: illustration-story. New unique full-bleed portrait 2:3 plate for The Ingenious Machine Issue Twelve. Goya-inspired etched realism, disciplined crosshatching, sharp expressive faces and natural anatomy, black and neutral gray ink with pure white highlights, no sepia, no tinted paper texture. Single scene, no panels, borders, captions, watermark or invented lettering. Contemporary Mexico, practical clothes, no folkloric spectacle. Edges may bleed, keep key hands and faces trim-safe. Reference image for etching style only; Q and woman absent. Portrait in archive reception area: Jacinto, a Mexican retired automotive worker around70, compact lean build, receding swept-back white hair, deeply lined oval face, clean-shaven, soft check work shirt and knitted sleeveless dark vest, seated in a plain folding chair. He lifts a public complaint-reference sheet toward a standing contemporary photographer with camera at eye. A small comb in Jacinto's other hand, wooden theatrical lance lies horizontally beneath his chair, clearly not brandished. Humor in Jacinto's patient direct gaze and photographer obliged to lower lens toward the complaint. Paper at an angle has abstract lines only, no invented legible case numbers. Low close oblique framing emphasizes paper before performance. Industrial reception shelves and chairs, no church or ceremonial throne. No Q, no additional lances.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-03.png"
+      ],
+      "original_generation_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-63499850-9e55-41c2-bb07-0a8f2bc2d75a.png",
+      "selected_generation_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-8893a535-aad2-4263-ae98-10ffbc217143.png",
+      "corrective_edits": [
+        {
+          "key": "plate-02-edit",
+          "refs": [
+            "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-63499850-9e55-41c2-bb07-0a8f2bc2d75a.png"
+          ],
+          "prompt": "Use case: precise-object-edit. Edit only the view through the rear window in this illustration: replace the invented church tower and town buildings with pine-and-oak trees on wooded rural uplands. This archive is outside Amealco, not in a town center. Preserve Jacinto's face, hair, clothes, comb, complaint sheet, horizontal lance, chair, photographer, receptionist, shelves, lighting, framing and every other detail exactly. Retain black-and-white Goya-inspired etched realism, white highlights, no sepia. No new people, objects or lettering.",
+          "result": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-8893a535-aad2-4263-ae98-10ffbc217143.png"
+        }
+      ],
+      "visual_review": "Viewed at native resolution; selected for revision proof against the exact facing scene. Not a press-resolution approval."
     },
     {
       "plate_id": "issue-12-plate-03",
       "page": 7,
       "facing_text_page": 6,
-      "facing_text": "their representative. He asked the\nCustodian which part of the\nreception area could be used\nwithout blocking staff or\ndeliveries. The loading bay could\nhold chairs while the office\nchecked who was available to\nreceive the requests. The visitors\nchose their own speakers.\nLucía came with Marisol, who\nrepresented several families in a\ndispute over materials supplied to\nQ-Prime. Marisol brought the\nsource references she was\nauthorized to show Q. The extract\nincluded passages from restricted\ntestimonies beside instructions\nfor examples of compassionate\nspeech.\n“Do you recognize these records?”\nshe asked.\n“Some references. Not enough to\nsay how they entered the\nproduct.”\n“One family heard a private\naccount of a death in a public\ndemonstration.”\nQ read the authorized\ncomparison. The distinctive\nsequence of details was present in\nboth versions. That was evidence\nto investigate, not a reason to\ninvent confidence about the entire\nsystem's construction.\n“Do we know whether it was\ntaught this during development or\ngiven the passage to use before\nanswering?” he asked.\n“The source file shows it was\nsupplied. Castalia hasn't answered\nwhich process used it.”\n“Then I'll ask for that distinction\nin the response. It affects what\nthey have to stop, not whether the\nfamily gets an answer.”\nSome families wanted the public\nservice suspended. Others wanted\nparticular records removed and\ntheir copies returned. Marisol\nwould not combine those\ninstructions into a single\nconvenient demand. Q asked what\nhe could give evidence about: his\naccess history, the endorsements\nhe had actually signed, and the\nlimits attached to his own\nmanuscript.\n“I can't testify that my exclusion\nprotected everyone else's\nmaterial,” he said. “I didn't verify\nthat.”\n“Don't,” Marisol replied. “Testify\nto what you did verify.”\nQ disabled his own broad private\nlookup and requested a review of\nwhat access and cached material\nremained behind it. That request\n",
+      "facing_text": "reception area could be used\nwithout blocking staff or\ndeliveries. The loading bay could\nhold chairs while the office\nchecked who was available to\nreceive the requests. The visitors\nchose their own speakers.\nLucía came with Marisol, who\nrepresented several families in a\ndispute over materials supplied to\nQ-Prime. Marisol brought the\nsource references she was\nauthorized to show Q. The extract\nincluded passages from restricted\ntestimonies beside instructions\nfor examples of compassionate\nspeech.\n“Do you recognize these records?”\nshe asked.\n“I recognize some of the\nreferences. I'd need to see what\nhappened between this file and\nthe demonstration.”\n“One family heard a private\naccount of a death in a public\ndemonstration.”\nQ read the authorized\ncomparison. The distinctive\nsequence of details was present in\nboth versions. He went back to the\ndates.\n“Do we know whether it was\ntaught this during development or\ngiven the passage to use before\nanswering?” he asked.\n“The source file shows it was\nsupplied. Castalia hasn't answered\nwhich process used it.”\n“Then I'll ask for that distinction\nin the response. It affects what\nthey have to stop, not whether the\nfamily gets an answer.”\nSome families wanted the public\nservice suspended. Others wanted\nparticular records removed and\ntheir copies returned. Marisol\nwould not combine those\ninstructions into a single\nconvenient demand. Q asked what\nhe could give evidence about: his\naccess history, the endorsements\nhe had actually signed, and the\nlimits attached to his own\nmanuscript.\n“I can't testify that my exclusion\nprotected everyone else's\nmaterial,” he said. “I didn't verify\nthat.”\n“Don't,” Marisol replied. “Testify\nto what you did verify.”\nQ disabled his own broad private\nlookup and requested a review of\nthe permissions and cached\nmaterial behind it. The window\nclosed at once. The review joined\nthe other unanswered requests.\n",
       "source_block_ids": [
         32,
         33,
@@ -101,18 +171,33 @@
         44
       ],
       "asset": "output/illustrations/revised/issue-12/plate-03.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "What was supplied",
       "scene_brief": "At an archive table Marisol shows Q the authorized side-by-side source comparison with Lucía beside her; distinctive paragraph shapes but no readable private testimony. Q studies the actual supplied passages, not an imaginary vision of training or family suffering. Intimate paperwork composition rather than a tribunal.",
-      "scene_anchor": "Q read the authorized comparison."
+      "scene_anchor": "Q read the authorized comparison.",
+      "asset_sha256": "285fde68f3530cd810c05983657bba7f4f6969b5bb27c0ab297fc4e189c74f41",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_full_bleed": 149.85365853658536,
+      "generation_mode": "built-in image_gen",
+      "generation_prompt": "Use case: illustration-story. New unique full-bleed portrait 2:3 plate for The Ingenious Machine Issue Twelve. Goya-inspired etched realism, disciplined crosshatching, sharp expressive faces and natural anatomy, black and neutral gray ink with pure white highlights, no sepia, no tinted paper texture. Single scene, no panels, borders, captions, watermark or invented lettering. Contemporary Mexico, practical clothes, no folkloric spectacle. Edges may bleed, keep key hands and faces trim-safe. Q is the same tall slender robot from reference: oval riveted segmented metal head, concentric circular ear discs, long mechanical neck, articulated hands and exposed metal legs; worn waist-length dark sponsor jacket, question-mark chest emblem, discreet support brace on RIGHT knee. Sociable and attentive, not a knight; no helmet, sword, cloak, trousers or redesign. Reference1 Q identity/current short jacket only, reference2 Lucía identity only: young adult wavy dark shoulder-length hair, denim jacket, plain blouse. At plain archive table in wooded rural Amealco, Q studies an authorized comparison laid flat while Marisol points to one date line; Lucía sits beside Marisol following the page. Marisol a Mexican woman about45, dark hair in low bun, square glasses, plain dark cardigan over light blouse, narrow face, calm purposeful expression. Three participants only. Side-by-side pages show paragraph shapes and margin rules but no readable restricted testimony. Eye-level intimate triangular composition, metal fingers keep edge flat, ordinary desk lamp and shelves; no glowing data, no visualized trauma, no family portraits or imaginary training machine. Window contains ONLY trees, never a church. Marisol visually distinct from Lucía and theater woman.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-03.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-03/plate-04.png"
+      ],
+      "original_generation_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-c7f736f5-801d-4c4d-ac4f-cd8019cb3742.png",
+      "selected_generation_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-c7f736f5-801d-4c4d-ac4f-cd8019cb3742.png",
+      "corrective_edits": [],
+      "visual_review": "Viewed at native resolution; selected for revision proof against the exact facing scene. Not a press-resolution approval."
     },
     {
       "plate_id": "issue-12-plate-04",
       "page": 9,
       "facing_text_page": 8,
-      "facing_text": "would take longer than closing the\ntool. He kept it on the list instead\nof treating the closed window as\nproof the underlying permissions\nhad changed.\nHe asked Marisol what he could\ntell Prime without sending\nanother copy of the restricted\npassages. Marisol agreed he could\ndescribe the dispute in those\ngeneral terms. Q sent the notice\nand Marisol's agreed contact, not\nthe passages. Prime replied that\nhe would ask Mauro to identify\nthe relevant supplied examples\nthrough the people handling the\ncomplaint. He had not yet been\ngiven the records needed to check\nwhat had been used. Q kept that\nreply with the pending review, not\namong completed removals.\nOutside, somebody had thrown an\negg at a publicity van. The\ndelivery worker told the man to\nstop; staff collecting complaints\nwere threatening to close the\nentrance. Beto offered to\nnegotiate for the crowd. The\nwoman with the name-correction\nrequest asked who had selected\nhim. He said he knew the\ncommunications team. She\nsuggested he use that knowledge\nto find the person who had\nreceived her letters.\nMicaela's father spoke about the\ncomplaint replies. Micaela stood\nbeside him until he gave her the\nletter to read. Her father had\nagreed to that part of the\nstatement being recorded. Their\nconditions did not extend to\ndiscussing her mother's medical\ndetails on camera.\nQ moved away from the\nmicrophone. A camera followed\nhim. He asked the operator to\ncover the people speaking and\ndeclined a separate reaction shot.\nThe operator chose the more\nfamous face for a few seconds\nanyway. Q went inside and left the\nstatement to its speakers. The\nbroadcast could record his empty\nplace if it wanted.\nMicaela read the questions twice\nbecause the first time the\nmicrophone failed. On the second\nattempt she moved the page down\nso it would not cover her face. Her\nfather pointed to the place where\nshe had stopped; she began at the\nbeginning. The parents retained\ntheir recording; Q asked for the\ncomplaint references needed for\nhis promised comparison, not a\ncopy of the child's appearance.\nThe next morning Castalia\naccused him of encouraging an\n",
+      "facing_text": "He asked Marisol what he could\ntell Prime without sending\nanother copy of the restricted\npassages. Marisol agreed he could\ndescribe the dispute in those\ngeneral terms. Q sent the notice\nand Marisol's agreed contact, not\nthe passages. Prime replied that\nhe would ask Mauro to identify\nthe relevant supplied examples\nthrough the people handling the\ncomplaint. He had not yet been\ngiven the records needed to check\nwhat had been used.\nOutside, somebody had thrown an\negg at a publicity van. The\ndelivery worker told the man to\nstop; staff collecting complaints\nwere threatening to close the\nentrance. Beto offered to\nnegotiate for the crowd. The\nwoman with the name-correction\nrequest asked who had selected\nhim. He said he knew the\ncommunications team. She\nsuggested he use that knowledge\nto find the person who had\nreceived her letters.\nMicaela's father spoke about the\ncomplaint replies. Micaela stood\nbeside him until he gave her the\nletter to read. Her father had\nagreed to that part of the\nstatement being recorded. Their\nconditions did not extend to\ndiscussing her mother's medical\ndetails on camera.\nQ moved away from the\nmicrophone. A camera followed\nhim. He asked the operator to\ncover the people speaking and\ndeclined a separate reaction shot.\nThe operator chose the more\nfamous face for a few seconds\nanyway. Q went inside and left the\nstatement to its speakers. The\nbroadcast could record his empty\nplace if it wanted.\nMicaela read the questions twice\nbecause the first time the\nmicrophone failed. On the second\nattempt she moved the page down\nso it would not cover her face. Her\nfather pointed to the place where\nshe had stopped; she began at the\nbeginning. The parents retained\ntheir recording; Q asked for the\ncomplaint references needed for\nhis promised comparison, not a\ncopy of the child's appearance.\nThe next morning Castalia\naccused him of encouraging an\nunauthorized occupation. The\nagreed use of the loading bay\nappeared nowhere in the\nstatement. The Custodian\nsupplied the written arrangement.\nQ recorded his part and called\n",
       "source_block_ids": [
-        44,
         45,
         46,
         47,
@@ -121,16 +206,40 @@
         50
       ],
       "asset": "output/illustrations/revised/issue-12/plate-04.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Begin again",
       "scene_brief": "At the loading-bay statement Micaela lowers the page below her face and begins again after the microphone failure. Her father points to the line. A publicity camera points toward the doorway Q has already entered; do not place Q at her microphone or depict her private medical history.",
-      "scene_anchor": "she began at the beginning."
+      "scene_anchor": "she began at the beginning.",
+      "asset_sha256": "5573f766d415ac4519ccd6734fd901ff0f437170d5fad67857f36ac00564e6df",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_full_bleed": 149.85365853658536,
+      "generation_mode": "built-in image_gen",
+      "generation_prompt": "Use case: illustration-story. New unique full-bleed portrait 2:3 plate for The Ingenious Machine Issue Twelve. Goya-inspired etched realism, disciplined crosshatching, sharp expressive faces and natural anatomy, black and neutral gray ink with pure white highlights, no sepia, no tinted paper texture. Single scene, no panels, borders, captions, watermark or invented lettering. Contemporary Mexico, practical clothes, no folkloric spectacle. Edges may bleed, keep key hands and faces trim-safe. Reference1 Micaela and father's exact identities/clothes only; actual Q is absent from this image. Outside an archive LOADING BAY in wooded rural Amealco, Micaela age12 curly dark bob and hoodie has removed her cardboard mask and holds a complaint letter below her face while speaking into a stand microphone. Her slim moustached father in checked shirt/dark vest stands beside her pointing to the line. A camera operator at edge has turned camera toward the empty open archive doorway instead of the girl; several contemporary visitors listening from chairs. Mask set beside father, not on face; papers no readable private history. Medium-wide diagonal composition shows girl speaking and misdirected camera. Pine/oak trees beyond the loading yard, plain industrial doors and concrete apron, not a church or town square. No Q standing at microphone, no dramatic riot, no egg throwing foreground.",
+      "reference_images": [
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-6f6fee29-110b-4f79-a0e7-5202142ca546.png"
+      ],
+      "original_generation_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-a9fa4ff8-adb5-459b-9dd0-b4d6e7d07b0f.png",
+      "selected_generation_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-3aa27fe2-333d-49ec-b82a-bfb93d97a50e.png",
+      "corrective_edits": [
+        {
+          "key": "plate-04-edit",
+          "refs": [
+            "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-a9fa4ff8-adb5-459b-9dd0-b4d6e7d07b0f.png"
+          ],
+          "prompt": "Use case: precise-object-edit. Change ONLY the small flip-out monitor on the publicity camera at upper right. It should show the same empty archive doorway and stacked boxes the camera is pointing toward, with NO robot or person centered on that little monitor. Preserve every other part of the image exactly: Micaela reading, father pointing, cardboard mask, microphone, photographer, audience, workers in the bay, wooded background, van, lighting and monochrome etched style. The camera has chosen the doorway Q left through instead of the child speaking. No new lettering or objects.",
+          "result": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-3aa27fe2-333d-49ec-b82a-bfb93d97a50e.png"
+        }
+      ],
+      "visual_review": "Viewed at native resolution; selected for revision proof against the exact facing scene. Not a press-resolution approval."
     },
     {
       "plate_id": "issue-12-plate-05",
       "page": 11,
       "facing_text_page": 10,
-      "facing_text": "unauthorized occupation. The\nagreed use of the loading bay\nappeared nowhere in the\nstatement. The Custodian\nsupplied the written arrangement.\nQ recorded his part and called\nChano, who was already on the\nbus back to Amealco.\n“You opened the loading bay?”\nChano asked.\n“The Custodian agreed to chairs\nwhile requests were received.\nPeople are staying longer than\nplanned. They want an answer\nbefore leaving.”\n“Have they found anyone who can\ngive one?”\n“For two requests. The others are\nstill being referred.”\n“Then don't call the chairs a\nmovement yet.”\nAfter his return, Chano helped\narrange a follow-up meeting in a\nunion hall. The Custodian's\nadviser also secured permission\nfor Q to attend under specified\ntransport and return conditions\nwhile the custody review\ncontinued. Q checked the\nconditions before promising to be\nthere.\nHe still had six pages of the\ncomplaint replies to compare. He\nreserved the next morning for\nthem and moved his writing call\nto the afternoon. The Custodian\nasked why. Q sent the\npromised-work list, then a second\nmessage saying he also wanted to\nhear the man claiming to be his\nfather.\nBefore the visitors left, one chair\ncollapsed at the edge of the\nloading bay. Q supported the seat\nwhile Chano replaced a loose\nfastener. Micaela held the\nremaining screws in her upturned\nmask. The repaired chair went\ninto the next van. Nobody had\nsettled who the New Quixotes\nwere, but they had a place for one\nmore person to sit.\nInterlude: The Assembly\nof Borrowed Names\nThe union hall stood beside an\nautomotive plant. Its walls carried\nold posters about safety, wages,\nand a raffle whose refrigerator\nhad eventually been delivered to\nthe wrong member. The\nrefrigerator was functioning well,\nwhich had made correction of the\nmistake less popular than one\nmight expect.\nQ arrived at the time on his\ninvitation and asked whether the\ngroup still wanted him present for\n",
+      "facing_text": "Chano, who was already on the\nbus back to Amealco.\n“You opened the loading bay?”\nChano asked.\n“The Custodian agreed to chairs\nwhile requests were received.\nPeople are staying longer than\nplanned. They want an answer\nbefore leaving.”\n“Have they found anyone who can\ngive one?”\n“For two requests. The others are\nstill being referred.”\n“Then don't call the chairs a\nmovement yet.”\nAfter his return, Chano helped\narrange a follow-up meeting in a\nunion hall. The Custodian's\nadviser also secured permission\nfor Q to attend under specified\ntransport and return conditions\nwhile the custody review\ncontinued. Q checked the\nconditions before promising to be\nthere.\nHe still had six pages of the\ncomplaint replies to compare. He\nreserved the next morning for\nthem and moved his writing call\nto the afternoon. The Custodian\nasked why. Q sent the\npromised-work list, then a second\nmessage saying he also wanted to\nhear the man claiming to be his\nfather.\nBefore the visitors left, one chair\ncollapsed at the edge of the\nloading bay. Q supported the seat\nwhile Chano replaced a loose\nfastener. Micaela held the\nremaining screws in her upturned\nmask. The repaired chair went\ninto the next van. Nobody had\nsettled who the New Quixotes\nwere, but they had a place for one\nmore person to sit.\nInterlude: The Assembly\nof Borrowed Names\nThe union hall stood beside an\nautomotive plant. Its walls carried\nold posters about safety, wages,\nand a raffle whose refrigerator\nhad eventually been delivered to\nthe wrong member. The\nrefrigerator was functioning well,\nwhich had made correction of the\nmistake less popular than one\nmight expect.\nQ arrived at the time on his\ninvitation and asked whether the\ngroup still wanted him present for\nthe discussion of its name.\nMarisol checked with the meeting.\nHe could listen and answer when\nasked. His camera stayed off.\nChano took a chair near the door;\n",
       "source_block_ids": [
         50,
         51,
@@ -146,16 +255,42 @@
         61
       ],
       "asset": "output/illustrations/revised/issue-12/plate-05.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "One more seat",
       "scene_brief": "Low close view at the loading bay: Q supports a chair seat, Chano replaces the loose fastener, Micaela holds the other screws in the upturned cardboard Q mask. Contemporary folding chair and van nearby, distinct task-focused composition; established damaged knee supported.",
-      "scene_anchor": "Micaela held the remaining screws in her upturned mask."
+      "scene_anchor": "Micaela held the remaining screws in her upturned mask.",
+      "asset_sha256": "b2fb29fb216a36b86259101bcc09b7369ce6e7db23a55a7a331041feb340157e",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_full_bleed": 149.85365853658536,
+      "generation_mode": "built-in image_gen",
+      "generation_prompt": "Use case: illustration-story. New unique full-bleed portrait 2:3 plate for The Ingenious Machine Issue Twelve. Goya-inspired etched realism, disciplined crosshatching, sharp expressive faces and natural anatomy, black and neutral gray ink with pure white highlights, no sepia, no tinted paper texture. Single scene, no panels, borders, captions, watermark or invented lettering. Contemporary Mexico, practical clothes, no folkloric spectacle. Edges may bleed, keep key hands and faces trim-safe. Q is the same tall slender robot from reference: oval riveted segmented metal head, concentric circular ear discs, long mechanical neck, articulated hands and exposed metal legs; worn waist-length dark sponsor jacket, question-mark chest emblem, discreet support brace on RIGHT knee. Sociable and attentive, not a knight; no helmet, sword, cloak, trousers or redesign. Reference1 Micaela and Q identity only, omit father; reference2 Chano identity only. A genuinely different close LOW task-level composition: foreground Micaela's hoodie sleeves and hands hold the upturned concave cardboard Q mask like a little tray containing three loose screws. Just behind, Q's articulated metal hands hold the underside of a plain folding-chair seat steady while Chano's broad work-worn hands use a screwdriver at one loose seat fastener. Include portions of their faces and clothes higher in frame, but the mask/screws and chair mechanism are main subjects. Q seated, his supported RIGHT knee at edge, not kneeling. Archive concrete loading-bay floor, part of van tire background, no crowd centerpiece or wide landscape. Micaela age12 curly bob, Chano stocky moustache wavy dark hair. Exactly three helpers, no fourth hands or merged limbs; plausible chair hinge and tool contact. No readable text, no real metal head used as a screw bowl.",
+      "reference_images": [
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-6f6fee29-110b-4f79-a0e7-5202142ca546.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-03/plate-06.png"
+      ],
+      "original_generation_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-995e1468-93a5-4f3f-9b8d-2efef3da60ee.png",
+      "selected_generation_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-fec24816-8f3c-48d8-a985-44f8f1234da1.png",
+      "corrective_edits": [
+        {
+          "key": "plate-05-edit",
+          "refs": [
+            "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-995e1468-93a5-4f3f-9b8d-2efef3da60ee.png",
+            "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-db96797a-5c98-4d29-aeed-82f74eb8fb0a.png"
+          ],
+          "prompt": "Use case: precise-object-edit. Reference1 is the close-up chair-repair EDIT TARGET. Reference2 establishes the correct supported RIGHT knee for the same scene. In reference1 the black brace has appeared on Q's near/anatomical left knee. Remove that brace from the visible near knee; the support belongs to his far RIGHT knee on the Chano side, largely hidden behind the tilted chair. If a narrow far-knee portion is visible behind the chair, show a modest dark support strap there, otherwise leave it occluded. Do not change Q's seated pose, metal head or hands, Chano, Micaela, screwdriver contact, tilted chair, cardboard mask containing three screws, van or framing. Preserve every other detail and monochrome etched style. No new limbs, no redesign, no text.",
+          "result": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-fec24816-8f3c-48d8-a985-44f8f1234da1.png"
+        }
+      ],
+      "visual_review": "Viewed at native resolution; selected for revision proof against the exact facing scene. Not a press-resolution approval."
     },
     {
       "plate_id": "issue-12-plate-06",
       "page": 13,
       "facing_text_page": 12,
-      "facing_text": "the discussion of its name.\nMarisol checked with the meeting.\nHe could listen and answer when\nasked. His camera stayed off.\nChano took a chair near the door;\nhe would need to leave early to\nmake a call.\nMicaela's father had to catch a bus\nbefore the meeting was due to\nend. He asked whether they could\ndeal with the plant letter first. Q\ntook out the comparison he had\nfinished that morning.\nThe replies gave figures for a\nregional station. The parents'\nquestions asked what had been\nmeasured beside the school, on\nwhich dates and by whom. Q had\nput each question beside the\npassage offered as its answer. Two\nboxes remained empty. He had\nalso drafted a follow-up beginning\nwith a paragraph about the\nimportance of public confidence.\n“Do we need that?” the father\nasked.\n“No. I thought it might make\nthem more willing to answer.”\n“They sent us nearly the same\nparagraph.”\nHe found it in the third reply.\nMicaela asked Q to read both\naloud in the voice he used for\nofficial letters. The first promised\nconfidence; the second expressed\nthe hope of deserving it. Micaela\nlifted her cardboard mask to\nlaugh; behind it, she said, he\nmight not have noticed.\nQ crossed out his introduction.\nThey kept the questions, the\nearlier references and a request\nfor a date by which to expect the\nmissing figures. Her father chose\nto send that version under the\nparents' names. He folded his\ncopy into the ticket wallet and\nstayed for the next item.\nThey wrote three questions on the\nblackboard:\nWHO MAY USE THE NAME?\nWHO MAY REFUSE IT?\nWHO PAYS FOR WHAT WE\nAGREE TO DO?\nThe delivery worker, Raúl, used a\nQ sticker in messages to\ncustomers. People answered it\nmore readily than his company's\nautomated notice. He did not\npretend to be the machine at the\ndoor. They could see perfectly well\nthat he was a tired man carrying a\nparcel.\n“Does that make you a Quixote?”\nthe student asked.\n",
+      "facing_text": "he would need to leave early to\nmake a call.\nMicaela's father had to catch a bus\nbefore the meeting was due to\nend. He asked whether they could\ndeal with the plant letter first. Q\ntook out the comparison he had\nfinished that morning.\nThe replies gave figures for a\nregional station. The parents'\nquestions asked what had been\nmeasured beside the school, on\nwhich dates and by whom. Q had\nput each question beside the\npassage offered as its answer. Two\nboxes remained empty. He had\nalso drafted a follow-up beginning\nwith a paragraph about the\nimportance of public confidence.\n“Do we need that?” the father\nasked.\n“No. I thought it might make\nthem more willing to answer.”\n“They sent us nearly the same\nparagraph.”\nHe found it in the third reply.\nMicaela asked Q to read both\naloud in the voice he used for\nofficial letters. The first promised\nconfidence; the second expressed\nthe hope of deserving it. Micaela\nlifted her cardboard mask to\nlaugh; behind it, she said, he\nmight not have noticed.\nQ crossed out his introduction.\nThey kept the questions, the\nearlier references and a request\nfor a date by which to expect the\nmissing figures. Her father chose\nto send that version under the\nparents' names. He folded his\ncopy into the ticket wallet and\nstayed for the next item.\nThey wrote three questions on the\nblackboard:\nWHO MAY USE THE NAME?\nWHO MAY REFUSE IT?\nWHO PAYS FOR WHAT WE\nAGREE TO DO?\nThe delivery worker, Raúl, used a\nQ sticker in messages to\ncustomers. People answered it\nmore readily than his company's\nautomated notice. He did not\npretend to be the machine at the\ndoor. They could see perfectly well\nthat he was a tired man carrying a\nparcel.\n“Does that make you a Quixote?”\nthe student asked.\n“It makes them answer. I have six\nminutes for each stop.”\nThe woman seeking her brother's\ncorrection wanted no collective\n",
       "source_block_ids": [
         61,
         62,
@@ -170,21 +305,46 @@
         71,
         72,
         73,
-        74
+        74,
+        75,
+        76
       ],
       "asset": "output/illustrations/revised/issue-12/plate-06.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Public confidence",
       "scene_brief": "At the union-hall table Q reads the two bland introductions with ceremonious poise, father holds open the third reply, and Micaela raises the mask to laugh. Q's two-column comparison with two empty answer boxes lies on the table. No claim that the plant is guilty or that the follow-up has already been answered.",
-      "scene_anchor": "Micaela lifted her cardboard mask to laugh;"
+      "scene_anchor": "Micaela lifted her cardboard mask to laugh;",
+      "asset_sha256": "b4c5fc6eecc22c6cd148938a9624925f6bcd277fdff125835192e49ba92a0601",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_full_bleed": 149.85365853658536,
+      "generation_mode": "built-in image_gen",
+      "generation_prompt": "Use case: illustration-story. New unique full-bleed portrait 2:3 plate for The Ingenious Machine Issue Twelve. Goya-inspired etched realism, disciplined crosshatching, sharp expressive faces and natural anatomy, black and neutral gray ink with pure white highlights, no sepia, no tinted paper texture. Single scene, no panels, borders, captions, watermark or invented lettering. Contemporary Mexico, practical clothes, no folkloric spectacle. Edges may bleed, keep key hands and faces trim-safe. Q is the same tall slender robot from reference: oval riveted segmented metal head, concentric circular ear discs, long mechanical neck, articulated hands and exposed metal legs; worn waist-length dark sponsor jacket, question-mark chest emblem, discreet support brace on RIGHT knee. Sociable and attentive, not a knight; no helmet, sword, cloak, trousers or redesign. Reference1 exact Q, Micaela and father's identities only; change location/action. At a modest automotive union-hall table, Q reads two bland official introductions in ceremonious poise, one sheet in each mechanical hand. Micaela age12 short dark curly bob hoodie raises her handmade cardboard robot mask from her face to laugh; her moustached father in checked shirt and dark vest holds the third official reply flat near the table. A two-column comparison with two conspicuously empty answer cells lies on the table among the father's ticket wallet and folder. He is laughing too. Close three-quarter composition at table height, ordinary plaster hall wall with faded safety posters rendered indistinctly, no trees or church view needed. No invented legible private records, no royal lectern, no Q claiming the plant guilty. The joke is between friends, not a lecture.",
+      "reference_images": [
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-6f6fee29-110b-4f79-a0e7-5202142ca546.png"
+      ],
+      "original_generation_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-7a70b37f-bba6-4e73-ab4e-2275e4ea0d42.png",
+      "selected_generation_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-1ebb0209-0402-48ff-9fd7-da72c8c2de82.png",
+      "corrective_edits": [
+        {
+          "key": "plate-06-edit",
+          "refs": [
+            "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-7a70b37f-bba6-4e73-ab4e-2275e4ea0d42.png"
+          ],
+          "prompt": "Use case: precise-object-edit. Change ONLY the comparison sheet lying flat at center of the table. It currently appears completely blank, but Q has completed a comparison and only two answers are missing. Preserve two-column grid and four rows: give every left-hand question cell small dark text-like lines; give the first and third right-hand answer cells similar text-like lines; leave exactly the second and fourth right-hand answer cells empty. Marks should be too small to read, no invented names or claims. Preserve Q, Micaela, father, masks, letters in hands, faces, poses, wall, flag, light, framing and all other details exactly. Black and white etching unchanged.",
+          "result": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-1ebb0209-0402-48ff-9fd7-da72c8c2de82.png"
+        }
+      ],
+      "visual_review": "Viewed at native resolution; selected for revision proof against the exact facing scene. Not a press-resolution approval."
     },
     {
       "plate_id": "issue-12-plate-07",
       "page": 15,
       "facing_text_page": 14,
-      "facing_text": "“It makes them answer. I have six\nminutes for each stop.”\nThe woman seeking her brother's\ncorrection wanted no collective\nname on her application. She had\nalready submitted it in three\nincompatible formats and refused\nto acquire a fourth identity to\nimprove its prospects. Marisol\nproposed that participation in the\nmeeting imply neither\nmembership nor permission to\nuse someone's case in a campaign.\nJacinto greeted the Custodian as a\nfellow parent. The Custodian\nmoved his long hair out of his\ncollar and asked which branch of\nthe family he belonged to.\n“The one whose children don't\nanswer the phone. Does this one?”\n“He sends an agenda first.”\nJacinto looked at Q. “You can\nsimply say you're busy.”\n“I usually want the conversation,”\nQ said. “That's the difficulty.”\nThe Custodian laughed. Q asked\nwhether either father would like\nthe next repair invoice. Jacinto\nsaid the pension office was\nalready disputing the extent of his\nfamily obligations. He could offer\na tamal.\nHe wrote his own name on the\nattendance sheet and added\nfather, theatrically in the margin.\nMarisol said the margin was not\nan official field. He said that was\nwhere most of his useful\nqualifications now lived.\nThe student proposed a charter\nwith rights to join, leave, dissent,\nand revise. Marisol asked which\nparts the people in the room could\nactually undertake to enforce.\nThey could control their mailing\nlist, joint statements, spending,\nand photographs. They could not\nprevent every stranger from\nborrowing the label or every\ncompany from describing the\nmeeting as support.\nQ was asked whether he would\ninsist on approving use of his face.\n“Not every drawing. If you suggest\nI'm endorsing a product or\nspeaking for a case, ask me first.\nAnd don't imply that I can settle\nCastalia's claims just by agreeing\nwith you.”\nThe photographer attending for a\nlocal paper asked about a group\npicture. Several participants said\nno. Others wanted their presence\nrecorded. They agreed on an\noptional photograph after the\nmeeting, away from the people\n",
+      "facing_text": "name on her application. She had\nalready submitted it in three\nincompatible formats and refused\nto acquire a fourth identity to\nimprove its prospects. Marisol\nproposed that participation in the\nmeeting imply neither\nmembership nor permission to\nuse someone's case in a campaign.\nJacinto greeted the Custodian as a\nfellow parent. The Custodian\nmoved his long hair out of his\ncollar and asked which branch of\nthe family he belonged to.\n“The one whose children don't\nanswer the phone. Does this one?”\n“He sends an agenda first.”\nJacinto looked at Q. “You can\nsimply say you're busy.”\n“I usually want the conversation,”\nQ said. “That's the difficulty.”\nThe Custodian laughed. Q asked\nwhether either father would like\nthe next repair invoice. Jacinto\nsaid the pension office was\nalready disputing the extent of his\nfamily obligations. He could offer\na tamal.\nHe wrote his own name on the\nattendance sheet and added\nfather, theatrically in the margin.\nMarisol said the margin was not\nan official field. He said that was\nwhere most of his useful\nqualifications now lived.\nThe student proposed a charter\nwith rights to join, leave, dissent,\nand revise. Marisol asked which\nparts the people in the room could\nactually undertake to enforce.\nThey could control their mailing\nlist, joint statements, spending,\nand photographs. They could not\nprevent every stranger from\nborrowing the label or every\ncompany from describing the\nmeeting as support.\nQ was asked whether he would\ninsist on approving use of his face.\n“Not every drawing. If you suggest\nI'm endorsing a product or\nspeaking for a case, ask me first.\nAnd don't imply that I can settle\nCastalia's claims just by agreeing\nwith you.”\nThe photographer attending for a\nlocal paper asked about a group\npicture. Several participants said\nno. Others wanted their presence\nrecorded. They agreed on an\noptional photograph after the\nmeeting, away from the people\nwho declined. Captions would\nname only those who agreed. No\nphotograph would be described as\nrepresenting everyone.\n",
       "source_block_ids": [
-        75,
         76,
         77,
         78,
@@ -198,19 +358,49 @@
         86,
         87
       ],
-      "asset": "output/illustrations/revised/issue-12/plate-07.png",
-      "status": "planned",
+      "asset": "output/illustrations/revised/issue-12/plate-07-v2.png",
+      "status": "approved",
       "caption": "Fellow parents",
       "scene_brief": "Jacinto, the tall long-gray-haired bespectacled male Custodian and Q share the family joke beside the union-hall attendance table. Jacinto offers a tamal; the Custodian is visibly amused, Q gestures toward his worn repaired body as he mentions the invoice. No paternal power over Q implied. Distinguish both men's faces.",
-      "scene_anchor": "He could offer a tamal."
+      "scene_anchor": "He could offer a tamal.",
+      "asset_sha256": "14ad9143e962c88d941058621312e957752ff5046996773b50a9aba245224385",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_full_bleed": 149.85365853658536,
+      "generation_mode": "built-in image_gen",
+      "generation_prompt": "Use case: illustration-story. New unique full-bleed portrait 2:3 plate for The Ingenious Machine Issue Twelve. Goya-inspired etched realism, disciplined crosshatching, sharp expressive faces and natural anatomy, black and neutral gray ink with pure white highlights, no sepia, no tinted paper texture. Single scene, no panels, borders, captions, watermark or invented lettering. Contemporary Mexico, practical clothes, no folkloric spectacle. Edges may bleed, keep key hands and faces trim-safe. Q is the same tall slender robot from reference: oval riveted segmented metal head, concentric circular ear discs, long mechanical neck, articulated hands and exposed metal legs; worn waist-length dark sponsor jacket, question-mark chest emblem, discreet support brace on RIGHT knee. Sociable and attentive, not a knight; no helmet, sword, cloak, trousers or redesign. Reference1 Q CURRENT short jacket identity only; reference2 Custodian identity only, male60 tallslim long gray hair tied in low ponytail glasses light work shirt; reference3 Jacinto identity only, elderly receding swept-back white hair, clean-shaven lined face, check shirt dark knitted vest. At union-hall attendance table Jacinto smiles and offers a tamal still partly in corn-husk wrapper across to seated Q. Q makes small open-hand gesture toward his own scuffed body as if offering the repair invoice to either of his joking fathers. Custodian beside them laughs, hand lifting long hair clear of collar. Three distinct individuals at same conversational height, no heroicparenthood tableaus or creation laboratory. Attendance sheet with pen and tiny indistinct writing lies on table; faded safety poster at plain plaster wall. No window town or church, no women's faces, no long coat on Q, no extra characters from references.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-03.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-01/cover.png",
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-63499850-9e55-41c2-bb07-0a8f2bc2d75a.png"
+      ],
+      "original_generation_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-3990e11c-176e-4614-9822-22bc01a0aef0.png",
+      "selected_generation_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-b0e687e3-867b-4bf2-946f-aa7c11c79c26.png",
+      "corrective_edits": [
+        {
+          "key": "plate-07-edit",
+          "refs": [
+            "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-3990e11c-176e-4614-9822-22bc01a0aef0.png"
+          ],
+          "prompt": "Use case: precise-object-edit. Correct ONLY the location of the black knee brace on seated robot Q. The brace is currently on the viewer's RIGHT knee, which is Q's anatomical LEFT knee. Remove it from that knee and place the same brace on the viewer's LEFT knee, Q's anatomical RIGHT knee, nearest Jacinto. Preserve all other mechanical leg details and proportions, Q's face/head/hands/short jacket, Custodian, Jacinto, tamal, papers, table, posters, lighting, framing and etched monochrome style exactly. No new objects, no text changes, no other redesign.",
+          "result": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-b0e687e3-867b-4bf2-946f-aa7c11c79c26.png"
+        }
+      ],
+      "visual_review": "Viewed at native resolution; selected for revision proof against the exact facing scene. Not a press-resolution approval.",
+      "retained_prior_asset": {
+        "asset": "output/illustrations/revised/issue-12/plate-07.png",
+        "asset_sha256": "eda4a8696e74b33d172e9f0011afd53274f01e731c69aec5da6c68a1109425ed",
+        "note": "Superseded brace placement; retained unused."
+      }
     },
     {
       "plate_id": "issue-12-plate-08",
       "page": 17,
       "facing_text_page": 16,
-      "facing_text": "who declined. Captions would\nname only those who agreed. No\nphotograph would be described as\nrepresenting everyone.\nThe distinction required moving\nsix chairs and waiting for a\nsleeping child to be carried out of\nthe frame. It was possible. The\nphotographer grumbled about the\nlight, not the collapse of\ndocumentary history.\nMoney took longer. The hall had a\nfee, two people needed bus fare,\nand somebody had ordered more\nfood than had been agreed. Raúl\ncould contribute a little but did\nnot want a standing levy on his\ndeliveries. Jacinto offered tamales\nand cash separately so nobody\nwould have to calculate the\npolitical value of a filling.\nMicaela wrote a rule about\nrefusing the name. The student\nworried that it made membership\nuncertain. She said people could\ngive their own names if someone\nneeded to know who was coming.\nHer father asked her to pass the\nchalk; he wanted the transport\nmoney entered before the\ndiscussion returned to identity.\nQ proposed that any account of\nthe meeting distinguish what\nparticipants had agreed from\nwhat he thought it meant for his\njourney.\n“Write that in your book,” the\nwoman with the petition said.\n“We don't need a rule about\nwhether you became good.”\nHe crossed his proposal out of the\ngroup's draft and put it in his own\nwriting notes. This did not require\nhim to destroy the notes or\npretend he had kept nothing. He\nhad a page of obligations, a return\ntime, and permission to quote one\njoke about refrigerators.\nThe meeting ended with agreed\nactions, several questions\ndeferred, and a disputed food\nexpense. Copies of the common\nrecord matched. People's private\nnotes did not. Marisol marked the\ndifference before anyone could\nmistake variation for a defect\nrequiring a single author.\nOn the way back, the Custodian\nasked whether Q had found his\nnext chapter.\n“I found work for the next week.\nThe chapter may be shorter.”\n“That would be a historic\ndevelopment.”\nQ asked whether he could quote\nhim. The Custodian said he would\nlike to see the context first.\n",
+      "facing_text": "The distinction required moving\nsix chairs and waiting for a\nsleeping child to be carried out of\nthe frame. The photographer\ngrumbled about the light. The\nchild slept through the revision.\nMoney took longer. The hall had a\nfee, two people needed bus fare,\nand somebody had ordered more\nfood than had been agreed. Raúl\ncould contribute a little but did\nnot want a standing levy on his\ndeliveries. Jacinto offered tamales\nand cash separately so nobody\nwould have to calculate the\npolitical value of a filling.\nMicaela wrote a rule about\nrefusing the name. The student\nworried that it made membership\nuncertain. She said people could\ngive their own names if someone\nneeded to know who was coming.\nHer father asked her to pass the\nchalk; he wanted the transport\nmoney entered before the\ndiscussion returned to identity.\nQ proposed that any account of\nthe meeting distinguish what\nparticipants had agreed from\nwhat he thought it meant for his\njourney.\n“Write that in your book,” the\nwoman with the petition said.\n“We don't need a rule about\nwhether you became good.”\nHe crossed his proposal out of the\ngroup's draft and put it in his own\nwriting notes. He had a page of\nobligations, a return time, and\npermission to quote one joke\nabout refrigerators.\nThe meeting ended with agreed\nactions, several questions\ndeferred, and a disputed food\nexpense. Copies of the common\nrecord matched. People's private\nnotes did not. Jacinto's had a\ngrocery list down one side; he had\npromised to get home before the\nshop closed.\nOn the way back, the Custodian\nasked whether Q had found his\nnext chapter.\n“I found work for the next week.\nThe chapter may be shorter.”\n“That would be a historic\ndevelopment.”\nQ asked whether he could quote\nhim. The Custodian said he would\nlike to see the context first.\nInterlude: The School of\nNecessary Errors\nThe children performed their\nversion at the end-of-year kermés.\nMaestra Lety had assigned a civics\n",
       "source_block_ids": [
-        87,
         88,
         89,
         90,
@@ -221,21 +411,46 @@
         95,
         96,
         97,
-        98
+        98,
+        99,
+        100
       ],
       "asset": "output/illustrations/revised/issue-12/plate-08.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The price of a meeting",
       "scene_brief": "Micaela's father reaches for chalk while she finishes at the union-hall blackboard; a small transport-money calculation occupies a separate area from discussion notes. Raúl's delivery bag, tamales and several moved chairs give the fee dispute ordinary material weight. Do not merge with the optional group photograph or imply everyone chose it.",
-      "scene_anchor": "he wanted the transport money entered before the discussion returned to identity."
+      "scene_anchor": "he wanted the transport money entered before the discussion returned to identity.",
+      "asset_sha256": "efd806d09a41469be0134fcdc6d2fabea5a268c475e174539bd5ab93abb1e95b",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_full_bleed": 149.85365853658536,
+      "generation_mode": "built-in image_gen",
+      "generation_prompt": "Use case: illustration-story. New unique full-bleed portrait 2:3 plate for The Ingenious Machine Issue Twelve. Goya-inspired etched realism, disciplined crosshatching, sharp expressive faces and natural anatomy, black and neutral gray ink with pure white highlights, no sepia, no tinted paper texture. Single scene, no panels, borders, captions, watermark or invented lettering. Contemporary Mexico, practical clothes, no folkloric spectacle. Edges may bleed, keep key hands and faces trim-safe. Reference1 Micaela and father only, Q absent. Union hall beside automotive plant, chairs recently moved. Micaela curly bob hoodie stands at a blackboard passing chalk to her father, slim moustache checked shirt/dark vest, who reaches to record transport money before the meeting returns to identity. Modest chalk lines split a small fare calculation area from larger discussion notes, text indistinct except simple numerals. Raúl, Mexican delivery worker about30 short dark cropped hair light stubble, plain dark delivery polo, sits beside a utilitarian insulated delivery bag with no company logo; paper-wrapped tamales and small cash coins on a folding table near him. Focus on handoff of chalk, blackboard, practical expenses. Ordinary people not a movement rally. No group photograph, no Q robot, no Castalia branding, no medieval costumes.",
+      "reference_images": [
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-6f6fee29-110b-4f79-a0e7-5202142ca546.png"
+      ],
+      "original_generation_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-23662059-9daf-4069-b7c4-6e4d38972147.png",
+      "selected_generation_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-93fb4af3-6e14-43df-8b19-d0172f3ccafe.png",
+      "corrective_edits": [
+        {
+          "key": "plate-08-edit",
+          "refs": [
+            "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-23662059-9daf-4069-b7c4-6e4d38972147.png"
+          ],
+          "prompt": "Use case: precise-object-edit. Change only the right-hand discussion column of the blackboard. Remove the legible invented agenda headings Identidad, Trabajo digno, Nuestro barrio and Próximos pasos. Replace them with faint partially erased chalk handwriting marks that cannot be read as specific text. Leave the left Transporte calculation, divider, chalk handoff, all characters, their faces/clothes, table, tamales, bag, coins, background plant and union banner unchanged. This illustration must not invent agenda content. Preserve exact black-and-white etched medium and composition.",
+          "result": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-93fb4af3-6e14-43df-8b19-d0172f3ccafe.png"
+        }
+      ],
+      "visual_review": "Viewed at native resolution; selected for revision proof against the exact facing scene. Not a press-resolution approval."
     },
     {
       "plate_id": "issue-12-plate-09",
       "page": 19,
       "facing_text_page": 18,
-      "facing_text": "Interlude: The School of\nNecessary Errors\nThe children performed their\nversion at the end-of-year kermés.\nMaestra Lety had assigned a civics\nexercise, not a biography of Q.\nThe children had supplied the\nmachine because Castalia's\nworksheet showed him in a cape\nand he was easier to draw than a\nprocurement committee.\nMicaela wanted to vote on\nwhether Q was annoying.\n“That's not the whole question,”\nMaestra Lety said.\n“Can it be one question?”\nIt became one question. Q, invited\nwith her parents' agreement,\nasked whether he was allowed to\nvote. The class said no: he would\nhave too much evidence.\nThe adviser had obtained\npermission for this further trip to\nMichoacán under the same\naccompanied-travel arrangement.\nChano had the return time on his\nphone. The invitation made Q\nwelcome at the school; it did not\nby itself remove the restrictions\nhe was still contesting.\nThey built their giants from clean\ncartons, paper tubes, and\nborrowed fabric. One represented\nthe recycling plant, one the\ndashboard, and one the school\noffice. The boy playing Q wore a\nwashed cooking-oil container\ntrimmed and lined so it would not\ncut his forehead. His question\nmark looked like a fish. He\npainted another over it but\nrefused to remove the fish\nentirely.\nThe girl playing Chano kept a\nnotebook in which she wrote\nwhatever the other actors had\nforgotten. She said learning all her\nown lines would leave no time for\nthis responsibility.\nThe school stood near the plant.\nParents had recorded dates when\nthey noticed odors and sought\nanswers about exposures; those\nobservations did not themselves\nestablish the cause of every\nillness. Micaela's mother had\nobtained care and wanted the\nenvironmental questions\nanswered as well. A reassuring\nregional display did not answer\nwhat was measured beside the\nplayground or when.\nCastalia offered a sensor in\nexchange for filming the\nperformance. The head teacher\nasked Q to help read the terms at\na meeting with parents. He\n",
+      "facing_text": "exercise, not a biography of Q.\nThe children had supplied the\nmachine because Castalia's\nworksheet showed him in a cape\nand he was easier to draw than a\nprocurement committee.\nMicaela wanted to vote on\nwhether Q was annoying.\n“That's not the whole question,”\nMaestra Lety said.\n“Can it be one question?”\nIt became one question. Q, invited\nwith her parents' agreement,\nasked whether he was allowed to\nvote. The class said no: he would\nhave too much evidence.\nThe adviser had obtained\npermission for this further trip to\nMichoacán under the same\naccompanied-travel arrangement.\nChano had the return time on his\nphone. Q checked it before\nsettling into a chair.\nThey built their giants from clean\ncartons, paper tubes, and\nborrowed fabric. One represented\nthe recycling plant, one the\ndashboard, and one the school\noffice. The boy playing Q wore a\nwashed cooking-oil container\ntrimmed and lined so it would not\ncut his forehead. His question\nmark looked like a fish. He\npainted another over it but\nrefused to remove the fish\nentirely.\nThe girl playing Chano kept a\nnotebook in which she wrote\nwhatever the other actors had\nforgotten. She said learning all her\nown lines would leave no time for\nthis responsibility.\nThe school stood near the plant.\nParents had recorded dates when\nthey noticed odors and sought\nanswers about exposures; those\nobservations did not themselves\nestablish the cause of every\nillness. Micaela's mother had\nobtained care and wanted the\nenvironmental questions\nanswered as well. A reassuring\nregional display did not answer\nwhat was measured beside the\nplayground or when.\nCastalia offered a sensor in\nexchange for filming the\nperformance. The head teacher\nasked Q to help read the terms at\na meeting with parents. He\nidentified permissions for editing,\nreuse, and indefinite retention,\nthen asked what the device\nmeasured and who would\nmaintain it.\nThe representative had a\nbrochure, not those answers.\n",
       "source_block_ids": [
-        99,
         100,
         101,
         102,
@@ -245,22 +460,36 @@
         106,
         107,
         108,
-        109
+        109,
+        110
       ],
       "asset": "output/illustrations/revised/issue-12/plate-09.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The fish survived",
       "scene_brief": "School kermés preparation in Michoacán: a boy paints a second question mark over the fish-like first one on a cleaned, lined cooking-oil-container costume head, while the girl playing Chano checks her notebook beside clean cardboard giants. They are children dressed for a play, not additional robots. No dirty industrial waste or harmful sharp headpiece.",
-      "scene_anchor": "He painted another over it but refused to remove the fish entirely."
+      "scene_anchor": "He painted another over it but refused to remove the fish entirely.",
+      "asset_sha256": "a76e9b1a6f495310c9aeef6bf0ed7addbf6ed8077c60dba976f90e2b523c3633",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_full_bleed": 149.85365853658536,
+      "generation_mode": "built-in image_gen",
+      "generation_prompt": "Use case: illustration-story. New unique full-bleed portrait 2:3 plate for The Ingenious Machine Issue Twelve. Goya-inspired etched realism, disciplined crosshatching, sharp expressive faces and natural anatomy, black and neutral gray ink with pure white highlights, no sepia, no tinted paper texture. Single scene, no panels, borders, captions, watermark or invented lettering. Contemporary Mexico, practical clothes, no folkloric spectacle. Edges may bleed, keep key hands and faces trim-safe. Reference etching medium and ordinary Mexican school-age appearance only; no robot or market. Michoacán primary-school kermés preparation under a plain covered courtyard. A Mexican boy age10, slim, short straight dark hair, light T-shirt, dark trousers, paints a second question mark next to/over the fish-like first mark on a homemade cleaned cooking-oil container costume head on the table. Container is lightweight plastic, cut wide opening for his face, padded/lined edges, not sharp metal. Preserve original small fish as visible part of imperfect question mark. His face uncovered now. A girl age10, straight dark chin-length bob, plain light school blouse and dark skirt, writes in a small notebook beside him. Clean cardboard factory/dashboard/school props stacked beyond; reused plain fabric, tape and paintbrushes. Three-quarter close composition makes fish brush stroke and amateur headpiece the focus. No extra actual robots, no Q physically present, no industrial waste, toxic drums, injuries, or professional costume. No readable words except simple question mark and fish doodle.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-05/plate-14.png"
+      ],
+      "original_generation_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-ff48e944-9b1c-4203-91af-5c53cfe1d736.png",
+      "selected_generation_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-ff48e944-9b1c-4203-91af-5c53cfe1d736.png",
+      "corrective_edits": [],
+      "visual_review": "Viewed at native resolution; selected for revision proof against the exact facing scene. Not a press-resolution approval."
     },
     {
       "plate_id": "issue-12-plate-10",
       "page": 21,
       "facing_text_page": 20,
-      "facing_text": "identified permissions for editing,\nreuse, and indefinite retention,\nthen asked what the device\nmeasured and who would\nmaintain it.\nThe representative had a\nbrochure, not those answers.\n“The offer has two questions in it,”\nQ said. “Whether you want this\nrecording, and whether the\nequipment will help answer the\nquestion you have about the air.\nAgreeing to one won't prove the\nother.”\n“Can we have the sensor without\nthe film?” Micaela's mother asked.\nThe representative had no\nauthority to separate the offer. He\nwould ask his office. He wanted\npermission to film that afternoon\nwhile they settled the details.\nThe parents declined. Some\nregretted losing an offer that\nmight help. They did not have to\npretend it had no value in order to\nreject the conditions. Maestra\nLety repeated the decision at the\ndoor, where the representative\nwas setting up his camera.\nThe raffle money went toward\nobtaining qualified advice about a\nsuitable monitoring plan, not a\ncheap display whose green light\ncould become another\nunsupported answer. Q helped\nassemble the public complaint\nreferences for that consultation.\nThe parents kept the health\ndetails out of the performance\nmaterials.\nThe play began late because the\nperson with the extension cable\nhad also been put in charge of\nselling tickets.\nThe boy playing Q entered on a\nbroomstick and announced that\nhe would defeat the factory by\nissuing a statement. The girl\nplaying Chano asked whether it\nwould be cheaper to issue the\nstatement before they bought the\nbroomstick.\nThe factory giant declared that it\nhad answered all correspondence.\nThe dashboard said the air was\nacceptable. The school office\nasked which form to use for a\nheadache. At this point Maestra\nLety stopped the scene: they had\nagreed not to make a classmate's\nvisit to the clinic a joke. The actors\nchanged the line to a request for\nanother copy of the question and\nbegan again.\nThe pause remained part of the\nafternoon. Q liked it better than a\nperfect performance in which the\n",
+      "facing_text": "“The offer has two questions in it,”\nQ said. “Whether you want this\nrecording, and whether the\nequipment will help answer the\nquestion you have about the air.\nAgreeing to one won't prove the\nother.”\n“Can we have the sensor without\nthe film?” Micaela's mother asked.\nThe representative had no\nauthority to separate the offer. He\nwould ask his office. He wanted\npermission to film that afternoon\nwhile they settled the details.\nThe parents declined. Micaela's\nmother kept the brochure: she\nstill wanted an answer about the\nsensor. Maestra Lety repeated the\ndecision at the door, where the\nrepresentative was setting up his\ncamera.\nThe raffle money went toward\nobtaining qualified advice about a\nsuitable monitoring plan, not a\ncheap display whose green light\ncould become another\nunsupported answer. Q helped\nassemble the public complaint\nreferences for that consultation.\nThe parents kept the health\ndetails out of the performance\nmaterials.\nThe play began late because the\nperson with the extension cable\nhad also been put in charge of\nselling tickets.\nThe boy playing Q entered on a\nbroomstick and announced that\nhe would defeat the factory by\nissuing a statement. The girl\nplaying Chano asked whether it\nwould be cheaper to issue the\nstatement before they bought the\nbroomstick.\nThe factory giant declared that it\nhad answered all correspondence.\nThe dashboard said the air was\nacceptable. The school office\nasked which form to use for a\nheadache. At this point Maestra\nLety stopped the scene: they had\nagreed not to make a classmate's\nvisit to the clinic a joke. The actors\nchanged the line to a request for\nanother copy of the question and\nbegan again.\nMicaela entered with a new\nplacard made for the play. It read\nASK BEFORE YOU ENTER on\none side and listed the public\nquestions about the plant on the\nother. No child's medical history\nor attendance record appeared on\nit.\n“This isn't your story,” she told\nthe boy playing Q.\nHe forgot the next line. “Then\nwhat am I doing here?”\n",
       "source_block_ids": [
-        109,
-        110,
         111,
         112,
         113,
@@ -269,23 +498,37 @@
         116,
         117,
         118,
-        119
+        119,
+        120,
+        121
       ],
       "asset": "output/illustrations/revised/issue-12/plate-10.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Before the broomstick",
       "scene_brief": "The school play has begun: the costumed boy Q enters astride a broomstick issuing his statement while the girl playing Chano raises her notebook to challenge the expense. Cardboard factory and dashboard behind them; no actual industrial attack or working sensor. The real Q is not the actor; no filming by the rejected Castalia camera.",
-      "scene_anchor": "The girl playing Chano asked whether it would be cheaper to issue the statement before they bought the broomstick."
+      "scene_anchor": "The girl playing Chano asked whether it would be cheaper to issue the statement before they bought the broomstick.",
+      "asset_sha256": "adc66cefe5371ac0cbf68f3e24d8bf40a63c8e7809c5c0ecab1b7f34c6494098",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_full_bleed": 149.85365853658536,
+      "generation_mode": "built-in image_gen",
+      "generation_prompt": "Use case: illustration-story. New unique full-bleed portrait 2:3 plate for The Ingenious Machine Issue Twelve. Goya-inspired etched realism, disciplined crosshatching, sharp expressive faces and natural anatomy, black and neutral gray ink with pure white highlights, no sepia, no tinted paper texture. Single scene, no panels, borders, captions, watermark or invented lettering. Contemporary Mexico, practical clothes, no folkloric spectacle. Edges may bleed, keep key hands and faces trim-safe. Reference1 same boy/light T-shirt and girl/bob schoolblouse identities, handmade padded oil-container head with imperfect questionmark and retained fish. The school play in Michoacán has begun: the boy wears the container head and enters astride a plain broomstick, one hand declaiming his statement against the cardboard factory. Girl playing Chano stands nearby lifting her notebook and questioning the expense with a dry amused expression. Cardboard factory and dashboard made of clean cartons/paper tubes behind; ordinary school courtyard backdrop. Low stage-height medium-full view of both actors and broom, a few audience heads foreground. They are HUMAN children, not miniature metal robots; boy's eyes visible in large padded faceopening, natural boy arms and legs. No actual Q onstage, no literal industrial attack, no filming camera, no captions or readable invented signs.",
+      "reference_images": [
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-ff48e944-9b1c-4203-91af-5c53cfe1d736.png"
+      ],
+      "original_generation_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-dd111adc-5f83-4027-8418-4ce88c1dabec.png",
+      "selected_generation_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-dd111adc-5f83-4027-8418-4ce88c1dabec.png",
+      "corrective_edits": [],
+      "visual_review": "Viewed at native resolution; selected for revision proof against the exact facing scene. Not a press-resolution approval."
     },
     {
       "plate_id": "issue-12-plate-11",
       "page": 23,
       "facing_text_page": 22,
-      "facing_text": "adults' agreement could not be\namended.\nMicaela entered with a new\nplacard made for the play. It read\nASK BEFORE YOU ENTER on\none side and listed the public\nquestions about the plant on the\nother. No child's medical history\nor attendance record appeared on\nit.\n“This isn't your story,” she told\nthe boy playing Q.\nHe forgot the next line. “Then\nwhat am I doing here?”\n“You're asking now.”\nHe looked toward Maestra Lety,\nwho left the answer to him.\n“May I stay?”\n“Can you hold the school up?”\nThe school giant was folding at\none corner. He put down the\nbroomstick and held it while the\ngirl playing Chano fetched the\ntape. The audience laughed; the\nrepair delayed the official\nresolution of the plot.\nWhen the structure stood again,\nthe children read the public\nquestions. The final one asked\nwhen the parents could expect a\nresponse. A father said the date\nshould be on the next letter. The\nhead teacher agreed to put it\nthere. Nobody claimed that\nagreement cleaned the air.\nThe children bowed. Parents\napplauded. The raffle began\nbefore the last carton had left the\nstage. Q helped stack chairs under\nthe direction of a girl who rejected\nhis first pile as too tall.\n“The famous one needs\nsupervision,” Chano said.\n“This chair does,” she answered,\npointing to its cracked back.\nThe Castalia representative\nreported a successful engagement\nvisit, without claiming to possess\na recording he had not been\nallowed to make. His report\nomitted the rejected bargain.\nMaestra Lety requested that\nomission be corrected and kept\nthe request with the offer. She\nalso wrote in her class notes that\nthe children had managed to\nchange a performance in response\nto an objection without\nabandoning it. The finding was\nuseful even if nobody bought it as\na slogan.\nInterlude: Frequently\nAsked Questions About Q\nCastalia issued an FAQ after the\nloading-bay gathering. Copies\n",
+      "facing_text": "“You're asking now.”\nHe looked toward Maestra Lety,\nwho left the answer to him.\n“May I stay?”\n“Can you hold the school up?”\nThe school giant was folding at\none corner. He put down the\nbroomstick and held it while the\ngirl playing Chano fetched the\ntape. The audience laughed; the\nrepair delayed the official\nresolution of the plot.\nWhen the structure stood again,\nthe children read the public\nquestions. The final one asked\nwhen the parents could expect a\nresponse. A father said the date\nshould be on the next letter. The\nhead teacher agreed to put it\nthere.\nThe children bowed. Parents\napplauded. The raffle began\nbefore the last carton had left the\nstage. Q helped stack chairs under\nthe direction of a girl who rejected\nhis first pile as too tall.\n“The famous one needs\nsupervision,” Chano said.\n“This chair does,” she answered,\npointing to its cracked back.\nThe boy who had played Q came\nover with the oil-container head\nunder his arm. Without it he\nseemed less certain of his height.\n“Can you do my voice?” he asked.\nQ repeated the declaration against\nthe factory, including the place\nwhere the boy had paused to\nremember the word statement.\n“I didn't stop that long.”\nQ tried it again, faster.\n“Now you sound like my sister.”\nThey were still rehearsing when\nChano reminded Q of the return\ntime. The boy put the head on\nagain and asked for five more\nminutes in Q's voice. Chano said\none of them was quite enough.\nThe Castalia representative\nreported a successful engagement\nvisit, without claiming to possess\na recording he had not been\nallowed to make. His report\nomitted the rejected bargain.\nMaestra Lety requested that\nomission be corrected and kept\nthe request with the offer. In her\nclass notes she kept the changed\nline beside the one it replaced.\nInterlude: Frequently\nAsked Questions About Q\nCastalia issued an FAQ after the\nloading-bay gathering. Copies\nacquired replies from several\n",
       "source_block_ids": [
-        119,
-        120,
-        121,
         122,
         123,
         124,
@@ -298,26 +541,43 @@
         131,
         132,
         133,
-        134
-      ],
-      "asset": "output/illustrations/revised/issue-12/plate-11.png",
-      "status": "planned",
-      "caption": "Hold the school up",
-      "scene_brief": "The school carton giant begins to fold. The boy playing Q puts his broomstick aside and braces its corner while the girl playing Chano fetches tape, Micaela holding her newly made placard at the side. The audience laughs at an actual repair during the play. This is not Lidia's earlier placard or an industrial injury.",
-      "scene_anchor": "He put down the broomstick and held it while the girl playing Chano fetched the tape."
-    },
-    {
-      "plate_id": "issue-12-plate-12",
-      "page": 25,
-      "facing_text_page": 24,
-      "facing_text": "acquired replies from several\nhands. The following exchange\nwas compiled later from\ncomments whose speakers agreed\nto their inclusion; it is not a claim\nthat the institute willingly\npublished its own heckling.\nWhy is the institute called\nCastalia?\nCastalia: The name evokes the\nsacred spring of the Muses.\nChano: They have made\ninspiration sound like something\nthat needs a meter.\nQ: Ours already has a meter. The\nbill is more specific than the\nbrochure.\nIs Q a person?\nCastalia: Q represents a new\nhorizon of human-machine\ncollaboration.\nQ: That doesn't answer what you\nneed to decide. Are you asking\nwhether to invite me to dinner or\nwho can put me in a transport\nframe?\nLucía: Start with the second.\nDinner can wait until he can get\nthere.\nDoes Q have feelings?\nQ: I have preferences, reactions,\nand a memory of things that\nmatter to me. Whether those\namount to experience in the sense\nyou mean isn't settled by how\npersuasively I describe them.\nChano: He also dislikes the coffee\nat the motel.\nQ: Very confidently. I'm less\ncertain what that proves.\nDoes Q love Lucía del\nToboso?\nQ: I care about her. I won't turn\nthat into a public role for her or\ntell you what she feels about me.\nLucía: Nor should my work\nrequire an answer to this\nquestion.\nChano: The questions about the\nledger are lower down. Apparently\nnobody has been seen falling in\nlove with a retention receipt.\nCan Q be trusted?\nQ: With what? I can give you\nexamples of promises I've kept\nand mistakes I've made. A general\nendorsement won't replace a clear\nagreement.\nLucía: Ask who can correct the\naccount afterward.\nChano: And whether he has put\nthe appointment in the diary.\nWhat is Q's greatest\nachievement?\n",
-      "source_block_ids": [
         134,
         135,
         136,
         137,
         138,
         139,
+        140
+      ],
+      "asset": "output/illustrations/revised/issue-12/plate-11.png",
+      "status": "approved",
+      "caption": "Five more minutes",
+      "scene_brief": "After the play, the human boy has put his padded oil-container Q head back on and requests five more minutes in Q's voice. Real Q sits nearby enjoying their rehearsal; Chano raises his phone to remind him of the return time. Shared amusement, not a robot taught elementary manners. The boy remains visibly human.",
+      "scene_anchor": "The boy put the head on again and asked for five more minutes in Q's voice.",
+      "asset_sha256": "c86bd24ca1d2bd60a001c28a66835f5c30caa7e45525e3bf35431c59bcaca105",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_full_bleed": 149.85365853658536,
+      "generation_mode": "built-in image_gen",
+      "generation_prompt": "Use case: illustration-story. New unique full-bleed portrait 2:3 plate for The Ingenious Machine Issue Twelve. Goya-inspired etched realism, disciplined crosshatching, sharp expressive faces and natural anatomy, black and neutral gray ink with pure white highlights, no sepia, no tinted paper texture. Single scene, no panels, borders, captions, watermark or invented lettering. Contemporary Mexico, practical clothes, no folkloric spectacle. Edges may bleed, keep key hands and faces trim-safe. Q is the same tall slender robot from reference: oval riveted segmented metal head, concentric circular ear discs, long mechanical neck, articulated hands and exposed metal legs; worn waist-length dark sponsor jacket, question-mark chest emblem, discreet support brace on RIGHT knee. Sociable and attentive, not a knight; no helmet, sword, cloak, trousers or redesign. Reference1 Q identity/current short jacket only, reference2 boy identity and amateur cooking-oil container costume head only, reference3 Chano identity only. After school play in Michoacán courtyard: real Q seated beside a modest stack of chairs, head inclined in delighted conversational attention toward the boy age10 short dark hair light T-shirt/dark trousers. Boy has PUT THE OIL-CONTAINER HEAD BACK ON, fish and questionmark visible, and makes a small theatrical open-hand appeal for five more minutes in Q's voice. Chano stocky moustache wavy dark hair workshirt stands near them raising his phone to remind Q of the return time with affectionate exasperation. Real metal robot and clearly human child in homemade costume distinct; child has real human arms and legs, no tiny robot clone. Three figures at child-eye height, bent cardboard school prop being cleared in background, no parents filming, no extra children correcting Q. Q's RIGHT knee braced. The joke is shared play, not life-saving moral instruction. No text/speech balloons.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-03.png",
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-ff48e944-9b1c-4203-91af-5c53cfe1d736.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-03/plate-06.png"
+      ],
+      "original_generation_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-aa639a2d-62fa-424f-922d-3b955103e04a.png",
+      "selected_generation_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-aa639a2d-62fa-424f-922d-3b955103e04a.png",
+      "corrective_edits": [],
+      "visual_review": "Viewed at native resolution; selected for revision proof against the exact facing scene. Not a press-resolution approval."
+    },
+    {
+      "plate_id": "issue-12-plate-12",
+      "page": 25,
+      "facing_text_page": 24,
+      "facing_text": "hands. The following exchange\nwas compiled later from\ncomments whose speakers agreed\nto their inclusion; it is not a claim\nthat the institute willingly\npublished its own heckling.\nWhy is the institute called\nCastalia?\nCastalia: The name evokes the\nsacred spring of the Muses.\nChano: They have made\ninspiration sound like something\nthat needs a meter.\nQ: Ours already has a meter. The\nbill is more specific than the\nbrochure.\nIs Q a person?\nCastalia: Q represents a new\nhorizon of human-machine\ncollaboration.\nQ: That doesn't answer what you\nneed to decide. Are you asking\nwhether to invite me to dinner or\nwho can put me in a transport\nframe?\nLucía: Start with the second.\nDinner can wait until he can get\nthere.\nDoes Q have feelings?\nQ: I have preferences, reactions,\nand a memory of things that\nmatter to me. Whether those\namount to experience in the sense\nyou mean isn't settled by how\npersuasively I describe them.\nChano: He also dislikes the coffee\nat the motel.\nQ: Very confidently. I'm less\ncertain what that proves.\nDoes Q love Lucía del\nToboso?\nQ: I care about her. I won't turn\nthat into a public role for her or\ntell you what she feels about me.\nLucía: Nor should my work\nrequire an answer to this\nquestion.\nChano: The questions about the\nledger are lower down. Apparently\nnobody has been seen falling in\nlove with a retention receipt.\nCan Q be trusted?\nQ: With what? I can give you\nexamples of promises I've kept\nand mistakes I've made. A general\nendorsement won't replace a clear\nagreement.\nLucía: Ask who can correct the\naccount afterward.\nChano: And whether he has put\nthe appointment in the diary.\n",
+      "source_block_ids": [
         140,
         141,
         142,
@@ -333,37 +593,128 @@
         152,
         153,
         154,
-        155
+        155,
+        156,
+        157,
+        158,
+        159,
+        160
       ],
       "asset": "output/illustrations/revised/issue-12/plate-12.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Several hands",
-      "scene_brief": "Editorial still life for the compiled FAQ: overlapping printed question sheets with visibly distinct marginal annotations, Castalia's self-promotional seal and a mundane electricity bill. No staged live meeting of all quoted speakers; this page explicitly compiles different contributions. Any readable headings to be typeset later, not hallucinated raster text.",
-      "scene_anchor": "The following exchange was compiled later from comments whose speakers agreed to their inclusion;"
+      "scene_brief": "Editorial still life for the separately compiled FAQ: overlapping question sheets and different handwritten marks, fictional book-and-spring institute seal, and electricity bill. No invented live meeting of quoted speakers or government publication. Small writing is illustrative, not a transcription.",
+      "scene_anchor": "The following exchange was compiled later from comments whose speakers agreed to their inclusion;",
+      "asset_sha256": "60f5d7bd8c61468abe5328ada45df87d2501ab26b5b2c66924bce46d3e4e550c",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_full_bleed": 149.85365853658536,
+      "generation_mode": "built-in image_gen",
+      "generation_prompt": "Use case: illustration-story. New unique full-bleed portrait 2:3 plate for The Ingenious Machine Issue Twelve. Goya-inspired etched realism, disciplined crosshatching, sharp expressive faces and natural anatomy, black and neutral gray ink with pure white highlights, no sepia, no tinted paper texture. Single scene, no panels, borders, captions, watermark or invented lettering. Contemporary Mexico, practical clothes, no folkloric spectacle. Edges may bleed, keep key hands and faces trim-safe. Reference for monochrome etching style only; no characters, no robot, no theater setting. Editorial still life, not a staged live meeting. On a plain wood archive desk lie an official printed FAQ sheet, several overlapping contributions with clearly different handwriting marks in margins, a modest institution seal, and an ordinary electricity bill with ruled meter/account boxes. Top-down oblique composition contrasts the neatly printed institutional page and lively handwritten marginal replies. White paper genuinely white, black etched wood grain, realistic paper thickness and curling corners, dramatic side light. All small lines abstract/unreadable, no invented personal names, account numbers or legible billing amounts; only three large letters FAQ at head of main sheet if any text. No quills (contemporary), no portraits, no computer glowing with data, no paper background wash. A mundane pen lies beside the sheets. No flame, no censor's hand.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-03.png"
+      ],
+      "original_generation_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-dd06db14-85a9-48ea-8fc6-0f42e87f4e24.png",
+      "selected_generation_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-2b965012-0136-46b0-ae72-4556bb2aa9a8.png",
+      "corrective_edits": [
+        {
+          "key": "plate-12-edit",
+          "refs": [
+            "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-dd06db14-85a9-48ea-8fc6-0f42e87f4e24.png"
+          ],
+          "prompt": "Use case: precise-object-edit. Change only the small circular seal near the upper right of the FAQ page. Replace its Mexican national-eagle-like coat of arms and unreadable lettering with a simple fictional institute emblem: a small open book above three spring-water ripples inside a plain circle, with NO lettering. This is Castalia's publication, not a government document. Preserve FAQ title, all papers, handwritten marks, electricity bill, pen, tabletop, composition, lighting and black-and-white etched style exactly. No other changes.",
+          "result": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-2b965012-0136-46b0-ae72-4556bb2aa9a8.png"
+        }
+      ],
+      "visual_review": "Viewed at native resolution; selected for revision proof against the exact facing scene. Not a press-resolution approval."
     },
     {
       "plate_id": "issue-12-plate-13",
       "page": 27,
       "facing_text_page": 26,
-      "facing_text": "Castalia: A new model for ethical\nartificial intelligence.\nQ: We haven't established that.\nWe did get Candelaria's hose\nworking.\nChano: With a fitting someone\nelse made.\nQ: Most of my achievements have\nthat complication.\nWill Q save humanity?\nQ: I have no plan capable of\npromising that. I can help with\nsomething specific if you tell me\nwhat you need and who else is\naffected.\nChano: He has stopped offering to\nfix the kitchen pipe without\nasking which valve shuts it off.\nLucía: Keep that in the next\nedition.\nA reader wrote beneath the\ninstitute's seal: ASK WHICH\nANSWERS COST THE\nINSTITUTE SOMETHING.\nThe reader did not supply a name.\nHilario, the water vendor, sent an\nobjection to the official account of\nthe first sally. Q had not\nconfronted the park alone; Chano\nhad led them out, and the water\nhad been paid for in cash after the\nreader lost its connection.\nHilario's recollection of the timing\ndiffered from another account he\nhad already given. He attached\nthe receipt again.\nThe editorial file retained his\nletters with those limits. The\ninstitute's public edition did not\ninclude them. A reproduced proof\nsheet marking their proposed\nposition was almost blank except\nfor the page number and\nLETTERS NOT INCLUDED\nIN THIS EDITION. The sheet\ncirculated widely. It proved an\nomission, not that every sentence\nomitted was true. Several\nadmirers called the empty space\nQ's finest answer. He had written\nneither the letters nor the\nomission.\n",
+      "facing_text": "What is Q's greatest\nachievement?\nCastalia: A new model for ethical\nartificial intelligence.\nQ: We haven't established that.\nWe did get Candelaria's hose\nworking.\nChano: With a fitting someone\nelse made.\nQ: Most of my achievements have\nthat complication.\nWill Q save humanity?\nQ: I have no plan capable of\npromising that. I can help with\nsomething specific if you tell me\nwhat you need and who else is\naffected.\nChano: He has stopped offering to\nfix the kitchen pipe without\nasking which valve shuts it off.\nLucía: Keep that in the next\nedition.\nA reader wrote beneath the\ninstitute's seal: ASK WHICH\nANSWERS COST THE\nINSTITUTE SOMETHING.\nThe reader did not supply a name.\nHilario, the water vendor, sent an\nobjection to the official account of\nthe first sally. Q had not\nconfronted the park alone; Chano\nhad led them out, and the water\nhad been paid for in cash after the\nreader lost its connection.\nHilario's recollection of the timing\ndiffered from another account he\nhad already given. He attached\nthe receipt again.\nThe editorial file retained his\nletters with those limits. The\ninstitute's public edition did not\ninclude them. A reproduced proof\nsheet marking their proposed\nposition was almost blank except\nfor the page number and\nLETTERS NOT INCLUDED\nIN THIS EDITION. The sheet\ncirculated widely. It proved an\nomission, not that every sentence\nomitted was true. Several\nadmirers called the empty space\nQ's finest answer. He had written\nneither the letters nor the\nomission.\n",
       "source_block_ids": [
-        156,
-        157,
-        158,
-        159,
-        160,
         161,
         162,
         163,
         164,
         165,
-        166
+        166,
+        167,
+        168,
+        169,
+        170,
+        171,
+        172
       ],
       "asset": "output/illustrations/revised/issue-12/plate-13.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "An omission, not an answer",
-      "scene_brief": "A reproduced almost-blank proof sheet set against the thicker editorial file and a small attached water receipt. Make the paper genuinely white with the short omission notice and page numeral added in typesetting, not cream ink. No Q authoring the omission; no imagined suppression bonfire. Contrast the public blank with retained correspondence without exposing invented personal records.",
-      "scene_anchor": "A reproduced proof sheet marking their proposed position was almost blank"
+      "scene_brief": "Editorial still life: a nearly blank white reproduced proof sheet with the exact omission heading, beside a thicker retained editorial file and water receipt. The isolated page numeral is an illustrative detail, not the serial's folio. No Q authoring an omission, suppression bonfire or exposed private record.",
+      "scene_anchor": "A reproduced proof sheet marking their proposed position was almost blank",
+      "asset_sha256": "fb589f68b60b16056c479cedddc262e0ae78d5c81d8b8b2792c908374a58cab2",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_full_bleed": 149.85365853658536,
+      "generation_mode": "built-in image_gen",
+      "generation_prompt": "Use case: illustration-story. New unique full-bleed portrait 2:3 plate for The Ingenious Machine Issue Twelve. Goya-inspired etched realism, disciplined crosshatching, sharp expressive faces and natural anatomy, black and neutral gray ink with pure white highlights, no sepia, no tinted paper texture. Single scene, no panels, borders, captions, watermark or invented lettering. Contemporary Mexico, practical clothes, no folkloric spectacle. Edges may bleed, keep key hands and faces trim-safe. Reference etching style only; no characters or robot. Editorial still life for an omitted letters page: a single large almost-blank reproduced proof sheet lies nearest viewer on a worktable, beside a thicker partly opened editorial file retaining correspondence and a small attached shop water receipt. Low raking angle, strong contrast between dark file edges and genuinely white unpainted blank sheet, clear isolated negative space filling most of composition. On the white sheet print exactly this short heading near upper third in restrained serif capitals: LETTERS NOT INCLUDED IN THIS EDITION. At bottom a small page numeral 47. No other text on that sheet. Other file and receipt marks tiny indistinct lines, no invented private records or legible amounts. Keep statement correct letter for letter, no extra slogans, no burned edges, no sepia, no Q authoring an omission. Contemporary ballpoint pen near far file edge, not quill. Fullbleed table texture at edges but main paper pure white.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-03.png"
+      ],
+      "original_generation_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-79c9deae-1fa1-4fcd-a2b0-2bb3dcbebb59.png",
+      "selected_generation_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-c01b7b85-447a-457e-bf79-7c68b11f0164.png",
+      "corrective_edits": [
+        {
+          "key": "plate-13-edit",
+          "refs": [
+            "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-79c9deae-1fa1-4fcd-a2b0-2bb3dcbebb59.png"
+          ],
+          "prompt": "Use case: precise-object-edit. Change only the outside view through the upper-right window: replace the church towers and city with nearby pine and oak trees of rural Amealco. Preserve the entire still life, white proof sheet, EXACT heading LETTERS NOT INCLUDED IN THIS EDITION, numeral47, correspondence file, receipt, cup, pen, papers, table, framing and etched black-and-white style exactly. Do not change or add any text.",
+          "result": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-c01b7b85-447a-457e-bf79-7c68b11f0164.png"
+        }
+      ],
+      "visual_review": "Viewed at native resolution; selected for revision proof against the exact facing scene. Not a press-resolution approval."
     }
-  ]
+  ],
+  "native_resolution_limit": "1024 x 1536 pixels; approximately 150 dpi at full-bleed comic trim. Revision-quality artwork, not a press master.",
+  "generation_summary": {
+    "initial_calls": 14,
+    "corrective_calls": 9,
+    "selected_plates": 14,
+    "mode": "built-in"
+  },
+  "proof_outputs": {
+    "reading": {
+      "path": "output/pdf/ingenious-issue-12-revised-en-bw.pdf",
+      "sha256": "53595d4392c745bac0aa597763a9e2a8a0d218ee17631509dde3f8ff47795067"
+    },
+    "a3": {
+      "path": "output/pdf/ingenious-issue-12-revised-en-bw-a3.pdf",
+      "sha256": "7e23fedc10cfb44c80da9d4783c84619ba29993e0779f6e67c8e3656e3b7d665"
+    }
+  },
+  "verification": {
+    "source_words": 4112,
+    "source_order_exact": true,
+    "narrative_pages": 13,
+    "reading_pages": 28,
+    "plates_including_cover": 14,
+    "a3_sides": 14,
+    "duplex_sheets": 7,
+    "reading_font_subsets_embedded": 5,
+    "actual_imposed_slots_checked": 28,
+    "all_issue_bindings_checked": 22,
+    "other_chapters_unchanged": 21,
+    "prior_pdfs_unchanged": 22,
+    "baseline": "a0565037",
+    "text_background": "no fills, rectangles or raster images",
+    "image_encoding": "14 DeviceGray images, Flate lossless, no downsampling",
+    "visual_review": "All native selected plates and all reading/A3 renders inspected; final brace correction reinspected on page 15 and side 14 with 40 other renders byte-identical.",
+    "print_job_sent": false,
+    "ending_preserved": "The Custodian put down his pen."
+  }
 }

@@ -201,7 +201,28 @@ smaller trim. Native art remains about 150 dpi, not press-master resolution. No
 printing or A+ certification. See the [production record](../../novel/development/ISSUE_11_PRODUCTION.md)
 and [art/prompt manifest](../illustrations/revised/issue-11/manifest.json).
 
-The remaining eleven issues still require their revised illustrated builds.
+## Current Issue 12 revision proof
+
+- [English Issue 12: revised reading PDF](../pdf/ingenious-issue-12-revised-en-bw.pdf)
+- [English Issue 12: revised A3 folding PDF](../pdf/ingenious-issue-12-revised-en-bw-a3.pdf)
+
+28 pages, fourteen unique selected plates including cover, and seven A3 duplex
+sheets. All 4,112 words flow through thirteen two-column narrative pages at
+Georgia 13/18.4167 points. Q finishes the parents' comparison and enjoys trading
+voices with his child actor; visitors retain their own demands and deadlines.
+Exact-facing illustrations follow the loading bay, union hall and school kermés,
+with separate editorial still lifes for the compiled FAQ and omitted letters.
+
+All reading pages and A3 sides were visually checked, and all twenty-eight actual
+imposed positions match the source text and decoded images. Text backgrounds are
+unpainted; fourteen lossless grayscale plates reach comic trim. Print all fourteen
+A3 landscape sides at actual size, short-edge duplex. Folding leaves an A4 carrier
+around the smaller trim. Approximately 150-dpi native art remains a press-quality
+limitation; no printing or A+ certification. See the
+[production record](../../novel/development/ISSUE_12_PRODUCTION.md) and
+[art/prompt manifest](../illustrations/revised/issue-12/manifest.json).
+
+The remaining ten issues still require their revised illustrated builds.
 
 ## Earlier editions
 

@@ -178,7 +178,7 @@ At an invited, authorized union-hall visit, Q brings his completed comparison. T
 
 ### Interlude: The School of Necessary Errors
 
-At the school kermés, children stage their own account using clean materials. Parents decline a filming bargain while seeking competent advice about useful monitoring. Public questions, not children's health records, appear on a newly made placard. An objection changes a line during the performance; a collapsing carton makes carrying and repair part of the comedy. Q helps stack chairs after the children take their bows. The visit follows the accompanied-travel arrangement rather than silently erasing his custody restrictions.
+At the school kermés, children stage their own account using clean materials. Parents decline a filming bargain while seeking competent advice about useful monitoring; Micaela's mother keeps the brochure because she still wants an answer about the sensor. Public questions, not children's health records, appear on a newly made placard. An objection changes a line during the performance; a collapsing carton makes carrying and repair part of the comedy. Q helps stack chairs after the children take their bows, then enjoys trading voices with the boy who played him. Chano interrupts their rehearsal to keep the return time; the boy asks for five more minutes in Q's voice. The visit follows the accompanied-travel arrangement rather than silently erasing his custody restrictions.
 
 ### Interlude: Frequently Asked Questions About Q
 
