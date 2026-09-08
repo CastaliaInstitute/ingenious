@@ -10,16 +10,26 @@ illustrated issues, verify affected print PDFs, and push the revision.
 The latest user clarification governs the ending: “Death just means we finish
 the book.” The source now permits Q to remain alive when the writing stops.
 
-Latest production checkpoint: Issue Five has a verified 44-page illustrated
-reading proof and twenty-two-side A3 proof, with twenty-two unique plates and
-eleven duplex sheets. `ISSUE_05_PRODUCTION.md` records source/asset hashes,
-full-text and visual checks, corrections and the approximately 150-dpi press
-limitation. The manuscript is unchanged from `fe899220`. Issues 1-5 are current
-illustrated revision proofs; seventeen issues still need revised art. No print
-job was sent and the overall revision goal remains active.
+Latest production checkpoint: Issue Six has a verified 20-page illustrated
+reading proof and ten-side A3 proof, with ten unique plates and five duplex
+sheets. `ISSUE_06_PRODUCTION.md` records source/asset hashes, full-text and
+visual checks, the water-stream correction and the approximately 150-dpi press
+limitation. The manuscript and existing Issues 1-5 PDFs are unchanged from
+`0f507260`. Issues 1-6 are current illustrated revision proofs; sixteen issues
+still need revised art. No print job was sent and the overall revision goal
+remains active.
 
 ## Evidence so far
 
+- `CHAPTER_06_FRESH_CONTEXT_REVIEW.md` records four further inference calls
+  around Chano's dismissal. The local model offered repeated literary
+  consolation; the Google model prioritized checking pay. Neither is the
+  writing assistant, and neither establishes an A+ grade. The manuscript's
+  provisional paid-travel offer and Chano's own money check are retained.
+  A scoped funding check identifies financial constraints but no reconciled
+  running balance; no peso amount was invented. Raw test artifacts stay in
+  `/tmp`. Issue Fourteen's planned art now references Issue Six's recurring
+  municipal characters and chair without bringing the remote Q into town.
 - `Q_DESIGN.md` contains the current motivation and simulation design. The prior
   hidden planning block was preserved in `2026-09-07-superseded-planning.md` and
   removed from the manuscript. Its compulsory sacrifice is no longer authoritative.
@@ -312,9 +322,10 @@ job was sent and the overall revision goal remains active.
 ## Required next work
 
 Current checkpoint: the second whole-chapter voice pass is complete through
-Chapter Twenty-Two. Eight fresh-context calls now test two scene variants with
-Qwen3 8B and Gemini 2.5 Flash; `FRESH_CONTEXT_REVIEW_2026_09_08.md` records the
-outputs, author-supplied world updates and limitations. The staff-help alternative
+Chapter Twenty-Two. Twelve fresh-context calls now cover three scene variants
+with Qwen3 8B and Gemini 2.5 Flash; `FRESH_CONTEXT_REVIEW_2026_09_08.md` and
+`CHAPTER_06_FRESH_CONTEXT_REVIEW.md` record the outputs, author-supplied world
+updates and limitations. The staff-help alternative
 now changes Chapter Eight and the dependent Chapter Sixteen testimony; see
 `GATE_SIMULATION_REVISION.md`. The first structural pacing pass now moves
 Chapter Seven's corporate confrontation after its four interludes; see
@@ -337,8 +348,12 @@ The paired Chapters Ten/Sixteen review now reduces repeated explanations and
 consolidates arrival paperwork; see `RETURN_HEARING_PACING_REVIEW.md`. Custody
 outcomes and later chapters remain unchanged. Internal layouts and both facing
 manifests are refreshed; those two chapters have no new illustrated release.
-Next: continue with Issue Six's unique source-bound plates and extend
-fresh-context scene tests. Seventeen issues still need revised approved art. The pacing reports
+Issue Six now also has ten inspected plates, a verified 20-page reading proof
+and ten-side A3 proof. Its existing paid-travel offer survives the bounded
+four-call dismissal test; the source is unchanged. Next: continue with Issue
+Seven's unique source-bound plates, extend fresh-context scene tests and audit
+the paid-companion agreement without inventing a running budget. Sixteen issues
+still need revised approved art. The pacing reports
 are bounded structural reviews, not a new
 full reading of both books. Earlier chapter-by-chapter continuation notes below
 are a history of the voice pass, not the latest queue.
@@ -596,19 +611,20 @@ illustrated edition as unfinished requirements.
    descriptions, Spanish text, PDFs, or illustration maps as current canon.
 4. Extend the scene exercises. A local stateless inference service and the
    configured Google API now provide fresh-context actor responses without creating
-   a Codex task or tool-using subagent. Eight calls completed for two scene variants;
-   see `FRESH_CONTEXT_REVIEW_2026_09_08.md`. The world responses remain author-supplied,
+   a Codex task or tool-using subagent. Twelve calls completed across three scene
+   variants; see `FRESH_CONTEXT_REVIEW_2026_09_08.md` and
+   `CHAPTER_06_FRESH_CONTEXT_REVIEW.md`. The world responses remain author-supplied,
    and these models are not identical to the assistant writing Q. Do not call this
    a blind whole-book validation. Expand the cases using current source context.
    The old public-example packet at `/tmp/ingenious-fresh-scene-packets.json`
    contains a superseded disclosure event and was not run; replace it before use.
 5. Rebuild the remaining English chapter issues only after text and plate placement
-   are reconciled. The new Issue 1-5 revision proofs represent their current chapters.
+   are reconciled. The new Issue 1-6 revision proofs represent their current chapters.
    English is the current revision source; the Spanish edition remains earlier.
 6. Use the new explicit-manifest builder, not the old modulo-indexed asset maps.
    It maps even narrative pages to the following odd plate pages, rejects stale
    chapter/asset hashes and repeats, and checks rendered text coverage. Extend
-   these checks and unique facing-scene illustrations through the remaining seventeen issues.
+   these checks and unique facing-scene illustrations through the remaining sixteen issues.
 7. Restore the requested print specifications: readable larger text, continuous
    flow, black ink and unpainted text backgrounds for cream stock, captions in a
    margin, full-bleed art, and the 24-page/12-plate/six-sheet Issue 1 proof. Verify

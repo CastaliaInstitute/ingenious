@@ -85,7 +85,25 @@ art remains about 150 dpi, not an A+ press master. See the
 [production record](../../novel/development/ISSUE_05_PRODUCTION.md) and
 [art/prompt manifest](../illustrations/revised/issue-05/manifest.json).
 
-The remaining seventeen issues still require their revised illustrated builds.
+## Current Issue 6 revision proof
+
+- [English Issue 6: revised reading PDF](../pdf/ingenious-issue-06-revised-en-bw.pdf)
+- [English Issue 6: revised A3 folding PDF](../pdf/ingenious-issue-06-revised-en-bw-a3.pdf)
+
+20 pages, ten unique plates including the cover, and five A3 duplex sheets.
+All 2,802 words of Chapter Six flow through nine two-column narrative pages
+in Georgia 12.7/17.9917-point type. The illustrations follow Chano's appointment,
+Leticia's working hours, the forest inspection, Maribel's water delivery and
+the disputed reports. The final scene gives paid companionship precedence over
+another moral for the book. Text backgrounds are unpainted; the plates are
+lossless grayscale, full bleed at comic trim, with separate margin captions.
+Print all ten A3 landscape sides at actual size, short-edge duplex. Folding
+leaves an A4 carrier around comic trim. No print job was sent. Native art remains
+about 150 dpi: a verified revision proof, not an A+ press master. See the
+[production record](../../novel/development/ISSUE_06_PRODUCTION.md) and
+[art/prompt manifest](../illustrations/revised/issue-06/manifest.json).
+
+The remaining sixteen issues still require their revised illustrated builds.
 
 ## Earlier editions
 

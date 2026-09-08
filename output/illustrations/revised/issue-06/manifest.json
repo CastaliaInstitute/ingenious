@@ -1,26 +1,40 @@
 {
   "issue": 6,
-  "revision": "2026-09-08-administration-voice",
+  "revision": "2026-09-08-issue-06-illustrated-proof",
   "source": "novel/THE_INGENIOUS_MACHINE.md",
   "chapter_sha256": "fa9380fe45bbcfab82191e13f00b0c58bb8a26bb4c259d4897353d362e4a037f",
   "page_count": 20,
   "text_font": "Georgia 12.7/17.9917 pt",
   "plate_count_including_cover": 10,
-  "status": "planned; no new Issue 6 images generated or approved",
+  "status": "illustrated revision proof; not a press master",
   "character_reference": "output/illustrations/revised/issue-01/cover.png",
   "chano_reference": "output/illustrations/revised/issue-03/plate-06.png",
   "wardrobe": "Preserve Q's established segmented oval head, ears, neck, long articulated limbs and underlying breastplate. He retains the fitted sponsor jacket with a small silver question mark. Chano's badge is an administrative appointment, not military or royal insignia.",
-  "secondary_character_design": "Establish distinct Irma Salcedo, Leticia and Maribel designs for reuse in Chapter Fourteen. Leticia is not Lety from the industrial-park reception. Maribel here is the resident with water jugs, not automatically the later corridor worker sharing her name. Match Candelaria's Issue 5 design before approval. Preserve Chano's established face and age.",
+  "secondary_character_design": "Irma Salcedo: short silver-grey pixie hair, glasses, angular face and pale high-collar blouse. Leticia: high dark bun, strong forearms, work polo, apron and trousers; not the earlier receptionist Lety. Maribel: long dark low ponytail, striped rolled-sleeve shirt and trousers; not automatically the later corridor worker sharing her name. Candelaria matches Issue Five's small older woman, grey low bun, patterned wool shawl and wooden staff. Preserve Chano's stocky build, wavy dark hair and thick mustache. Custodian absent in person.",
   "art_direction": "Unique scene grounded in each exact facing page. Neutral monochrome Goya-inspired etched realism, pure white highlights, no sepia paper texture. Full bleed at comic trim; captions typeset separately. Fictional near-future Mexican municipality and contemporary labor, not historical costumes or an identified real town. Alternate intimate, physical and public scenes rather than repeating Q at dashboards.",
-  "approval_scope": "Pagination and scene planning only. No approved or generated images; do not publish the internal placeholder layout as a finished illustrated issue. Rebind facing text after any source edit.",
+  "approval_scope": "Ten unique scene-correspondent assets individually inspected and hash-bound. All twenty reading-page renders and A3 cover, first reverse and center spread visually reviewed. Independent extraction confirms all 2802 narrative words once in source order, no painted narrative backgrounds, ten lossless DeviceGray plates, five embedded font subsets and all ten A3 page pairs. Approximately 150-dpi native art remains a press-quality limitation. Physical printing and tray order not verified; no print job.",
   "plates": [
     {
       "plate_id": "issue-06-cover",
       "page": 1,
       "asset": "output/illustrations/revised/issue-06/cover.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The Governor of the Model Town",
-      "scene_brief": "Chano seated in the coveted office chair, his hands resting on its arms, against the modest municipal office and its optimistic wall display. Q stands off to one side with the closed writing tablet. Let the cover center the companion's desires, not Q's triumph. Leave quiet upper space for separately typeset title."
+      "scene_brief": "Chano seated in the coveted office chair, his hands resting on its arms, against the modest municipal office and its optimistic wall display. Q stands off to one side with the closed writing tablet. Let the cover center the companion's desires, not Q's triumph. Leave quiet upper space for separately typeset title.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-03.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-03/plate-06.png"
+      ],
+      "generation_prompt": "Use case: illustration-story. Unique full-bleed 2:3 portrait plate for The Ingenious Machine Issue Six. Neutral black-and-white Goya-inspired etched realism, articulated natural faces and hands, controlled crosshatching, white highlights, no sepia/cream paper tint, no border, no titles or captions. Contemporary fictional Mexican municipality, pale concrete and glass public building, practical ordinary clothing. No palace, colonial cathedral, monarchic throne, medals, knight, weapons or Custodian in person. Q reference supplies ONLY his exact segmented oval metal head, circular ear mechanisms, long articulated neck, slim tall mechanical body and fitted waist-length sponsor blazer with small question-mark emblem; do not copy reference woman. Chano reference supplies ONLY stocky middle-aged man with wavy dark hair, thick mustache, work shirt, trousers and boots; no woman/child/bus from reference. Cover: Chano relaxes into a contemporary padded swivel office chair with arms and FIVE casters, hands resting on arms, taking private pleasure in the support for his back. Plain small administrative badge on work shirt, no ornate insignia. Full chair and feet visible in lower two thirds. Q stands off to side farther back holding a CLOSED dark tablet against his side. Simple modest municipal office desk, calendar and small optimistic dashboard on LOWER side wall. Reserve the TOP 24 PERCENT as completely clean WHITE wall/light for separately typeset black title; no heads, beams, screens or dark pattern in that band. Chano's desire for a paid job and chair, not a triumphant machine. No paperwork action copied from interior.",
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-d130f292-8024-49ab-985e-e3229aed33e1.png",
+      "visual_review": "Chano centered in an ordinary padded five-caster office chair; Q aside with closed tablet, original identity and sponsor jacket. Single-line title trial fits reserved white upper field without covering Q. Modest institutional humor, not a throne.",
+      "asset_sha256": "6cad02e6b1ad108ef24cdb2ba2de28170b79df2ddeaf7acd958c598f5d0bc904",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "source_color_mode": "RGB",
+      "effective_full_bleed_dpi": 149.85
     },
     {
       "plate_id": "issue-06-plate-01",
@@ -48,9 +62,24 @@
         17
       ],
       "asset": "output/illustrations/revised/issue-06/plate-01.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The name on the screen.",
-      "scene_brief": "Q and Chano arriving at the municipal entrance beneath a tall personalized welcome display. Chano looks wary rather than honored; Q wears the fitted sponsor jacket from Guanajuato. Contemporary small-town public building, no royal procession or invented real municipality."
+      "scene_brief": "Q and Chano arriving at the municipal entrance beneath a tall personalized welcome display. Chano looks wary rather than honored; Q wears the fitted sponsor jacket from Guanajuato. Contemporary small-town public building, no royal procession or invented real municipality.",
+      "scene_anchor": "Chano’s name appeared first.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-03.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-03/plate-06.png"
+      ],
+      "generation_prompt": "Use case: illustration-story. Unique full-bleed 2:3 portrait plate for The Ingenious Machine Issue Six. Neutral black-and-white Goya-inspired etched realism, articulated natural faces and hands, controlled crosshatching, white highlights, no sepia/cream paper tint, no border, no titles or captions. Contemporary fictional Mexican municipality, pale concrete and glass public building, practical ordinary clothing. No palace, colonial cathedral, monarchic throne, medals, knight, weapons or Custodian in person. Q reference supplies ONLY his exact segmented oval metal head, circular ear mechanisms, long articulated neck, slim tall mechanical body and fitted waist-length sponsor blazer with small question-mark emblem; do not copy reference woman. Chano reference supplies ONLY stocky middle-aged man with wavy dark hair, thick mustache, work shirt, trousers and boots; no woman/child/bus from reference. Q and Chano arrive outside the pale concrete/glass municipal building. Tall vertical public welcome display at the entrance reads ONLY 'TOMÁS PANTOJA' clearly, in simple contemporary screen typography; subordinate UI graphs unlabelled. View obliquely from behind their shoulders, Chano turns partly to Q with wary expression, Q leans a little toward screen, not amazed at ordinary technology. No administrative badge yet. Sunny modern small-town public forecourt, low surrounding concrete/block shops and a road, no colonial cathedral/palms/royal procession. Show actual screen in plausible support, not floating hologram.",
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-a69a8dfb-d879-4807-b03c-cdafbcf78769.png",
+      "visual_review": "Exact TOMÁS PANTOJA screen name; wary Chano, Q leaning toward ordinary screen. No appointment badge yet. Contemporary concrete/glass entrance, not an identified real property.",
+      "asset_sha256": "15f6f13a516d0751377b6c862180d0228296f57aa27394d97d649ca02c5e2aa8",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "source_color_mode": "RGB",
+      "effective_full_bleed_dpi": 149.85
     },
     {
       "plate_id": "issue-06-plate-02",
@@ -90,9 +119,24 @@
         47
       ],
       "asset": "output/illustrations/revised/issue-06/plate-02.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "At least the wall is feeling better.",
-      "scene_brief": "Inside Irma's office, Q asks to compare households with deliveries while Chano studies the highlighted settlement at the edge of a modest town map. Irma is actually sending a request to an analyst. Include her desk calendar and maintenance invoice, not a sterile villain's throne room. Map marks need not be legible or geographically exact."
+      "scene_brief": "Inside Irma's office, Q asks to compare households with deliveries while Chano studies the highlighted settlement at the edge of a modest town map. Irma is actually sending a request to an analyst. Include her desk calendar and maintenance invoice, not a sterile villain's throne room. Map marks need not be legible or geographically exact.",
+      "scene_anchor": "She sent a request to the analyst.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-03.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-03/plate-06.png"
+      ],
+      "generation_prompt": "Use case: illustration-story. Unique full-bleed 2:3 portrait plate for The Ingenious Machine Issue Six. Neutral black-and-white Goya-inspired etched realism, articulated natural faces and hands, controlled crosshatching, white highlights, no sepia/cream paper tint, no border, no titles or captions. Contemporary fictional Mexican municipality, pale concrete and glass public building, practical ordinary clothing. No palace, colonial cathedral, monarchic throne, medals, knight, weapons or Custodian in person. Q reference supplies ONLY his exact segmented oval metal head, circular ear mechanisms, long articulated neck, slim tall mechanical body and fitted waist-length sponsor blazer with small question-mark emblem; do not copy reference woman. Chano reference supplies ONLY stocky middle-aged man with wavy dark hair, thick mustache, work shirt, trousers and boots; no woman/child/bus from reference. Inside mayor Irma Salcedo's office: establish Irma, Mexican woman about fifty, short silver-grey PIXIE haircut, rimless reading glasses, simple high-collared pale blouse and dark trousers, angular expressive face; NOT the dark-bob woman in Q reference. She sits at plain desk using mouse to SEND a request to analyst, monitor angled toward her. Calendar and maintenance invoice visible as paper shapes, no legible text. Chano leans toward a wall map of a fictional small town with one hatched cluster on its edge. Q beside him asks a practical comparison question, one small open-handed gesture. Wall map is schematic streets/homes with a separate small table, no real geographic territory, no invented readable data. Bright pale concrete office, not a villain's control room. Three adults.",
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-6d120c9f-aec8-4a59-bd72-818368bf5695.png",
+      "visual_review": "Distinct short-grey-haired bespectacled Irma at mouse, desk calendar and papers; Chano indicates schematic settlement map; Q asks with open hand. Fictional unverified town map, not a geographic reconstruction.",
+      "asset_sha256": "611c8bf53e71023fd6a26a0bfe0a78502e048ca9873a6645466502865a41b2ef",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "source_color_mode": "RGB",
+      "effective_full_bleed_dpi": 149.85
     },
     {
       "plate_id": "issue-06-plate-03",
@@ -117,9 +161,24 @@
         61
       ],
       "asset": "output/illustrations/revised/issue-06/plate-03.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The chair and his back.",
-      "scene_brief": "Chano reads the appointment terms with one hand resting on the arm of the comfortable chair. Q closes his manuscript window nearby; Irma waits for Chano's decision. Focus on Chano's attraction to the job, without depicting Q signing on his behalf or a literal knighting."
+      "scene_brief": "Chano reads the appointment terms with one hand resting on the arm of the comfortable chair. Q closes his manuscript window nearby; Irma waits for Chano's decision. Focus on Chano's attraction to the job, without depicting Q signing on his behalf or a literal knighting.",
+      "scene_anchor": "Q closed the manuscript window",
+      "reference_images": [
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-6d120c9f-aec8-4a59-bd72-818368bf5695.png",
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-d130f292-8024-49ab-985e-e3229aed33e1.png"
+      ],
+      "generation_prompt": "Use case: illustration-story. Unique full-bleed 2:3 portrait plate for The Ingenious Machine Issue Six. Neutral black-and-white Goya-inspired etched realism, articulated natural faces and hands, controlled crosshatching, white highlights, no sepia/cream paper tint, no border, no titles or captions. Contemporary fictional Mexican municipality, pale concrete and glass public building, practical ordinary clothing. No palace, colonial cathedral, monarchic throne, medals, knight, weapons or Custodian in person. Q reference supplies ONLY his exact segmented oval metal head, circular ear mechanisms, long articulated neck, slim tall mechanical body and fitted waist-length sponsor blazer with small question-mark emblem; do not copy reference woman. Chano reference supplies ONLY stocky middle-aged man with wavy dark hair, thick mustache, work shirt, trousers and boots; no woman/child/bus from reference. Use reference1 for Irma, Q and Chano's identities and reference2 ONLY for the five-caster padded office chair. Irma is same short silver-grey pixie-haired middle-aged woman, rimless glasses, pale high-collar blouse. In her concrete municipal office, Chano sits forward in the modern padded five-caster chair reading his appointment contract held across his knees; one forearm rests on armrest. Q sits on a simpler visitor chair to one side, visibly closing his tablet's manuscript cover; Irma waits attentively beyond the desk. This is Chano's careful decision, not a coronation. Distinct intimate side-on composition from cover: contract and hands central, three faces visible in profiles, shoulder-height viewpoint. Paper nonlegible, no invented written slogans, no giant question-mark signage. Not smiley publicity, no throne. Keep every significant hand safely inside composition.",
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-982245b9-c70a-4fde-be0b-6571480baea5.png",
+      "visual_review": "Chano reads contract in the same padded chair, Q closes tablet from visitor chair, Irma waits. Distinct close composition, no coronation; faces and hands retain identity.",
+      "asset_sha256": "b0457496e10b5a5daf0894b17d10ec37700655a1d72afff89ee90e2d84d8339c",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "source_color_mode": "RGB",
+      "effective_full_bleed_dpi": 149.85
     },
     {
       "plate_id": "issue-06-plate-04",
@@ -143,9 +202,23 @@
         75
       ],
       "asset": "output/illustrations/revised/issue-06/plate-04.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The last cleaning round.",
-      "scene_brief": "Leticia explains the cleaning rota and holds her key ring while Chano listens by the municipal bathroom doors. Her cleaning equipment and ordinary work clothes establish paid labor. Show a conversation about the work needed, not Leticia gratefully accepting an order to work unpaid. Do not add Q to a scene where he is not stated to be present."
+      "scene_brief": "Leticia explains the cleaning rota and holds her key ring while Chano listens by the municipal bathroom doors. Her cleaning equipment and ordinary work clothes establish paid labor. Show a conversation about the work needed, not Leticia gratefully accepting an order to work unpaid. Do not add Q to a scene where he is not stated to be present.",
+      "scene_anchor": "Leticia asked who would pay",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-03/plate-06.png"
+      ],
+      "generation_prompt": "Use case: illustration-story. Unique full-bleed 2:3 portrait plate for The Ingenious Machine Issue Six. Neutral black-and-white Goya-inspired etched realism, articulated natural faces and hands, controlled crosshatching, white highlights, no sepia/cream paper tint, no border, no titles or captions. Contemporary fictional Mexican municipality, pale concrete and glass public building, practical ordinary clothing. No palace, colonial cathedral, monarchic throne, medals, knight, weapons or Custodian in person. Q reference supplies ONLY his exact segmented oval metal head, circular ear mechanisms, long articulated neck, slim tall mechanical body and fitted waist-length sponsor blazer with small question-mark emblem; do not copy reference woman. Chano reference supplies ONLY stocky middle-aged man with wavy dark hair, thick mustache, work shirt, trousers and boots; no woman/child/bus from reference. Leticia and Chano by CLOSED municipal bathroom doors at end of shift. Leticia is a Mexican cleaner about45, strong forearms, dark hair in high practical bun, work polo, plain apron and trousers, no shawl, no ceremonial clothing. She holds her key ring and points to a simple cleaning rota sheet on a clipboard, calmly explaining who will do and be paid for the last cleaning round. Chano same reference identity listens attentively, work shirt with small plain municipal ID badge. Cleaning cart with mop and soap bottles at side. Two adults only, NO Q. Door has simple restroom pictogram, no readable signage or invented working hours. Useful labor negotiation, not grateful servant obeying governor.",
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-e7679a5b-899a-4ad9-a367-4d46950c856b.png",
+      "visual_review": "Leticia's high bun, polo and apron; she indicates rota while holding keys. Chano listens by bathroom doors and cleaning cart. No Q or unpaid extra work visually asserted.",
+      "asset_sha256": "e47d86ff3e9ab689f0319c993e3f068312ade7f8f1820084a5dab9e7e863a1aa",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "source_color_mode": "RGB",
+      "effective_full_bleed_dpi": 149.85
     },
     {
       "plate_id": "issue-06-plate-05",
@@ -171,9 +244,24 @@
         90
       ],
       "asset": "output/illustrations/revised/issue-06/plate-05.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The other end of the tape.",
-      "scene_brief": "On the agreed forest inspection, Q and Candelaria hold opposite ends of a measuring tape at the disputed bend of a rocky oyamel path. His sponsor jacket contrasts with her practical shawl and staff. No victorious boundary settlement, no phantom repaired shoulder assembly, no image of the wrong hose already fixed at this moment."
+      "scene_brief": "On the agreed forest inspection, Q and Candelaria hold opposite ends of a measuring tape at the disputed bend of a rocky oyamel path. His sponsor jacket contrasts with her practical shawl and staff. No victorious boundary settlement, no phantom repaired shoulder assembly, no image of the wrong hose already fixed at this moment.",
+      "scene_anchor": "held the other end herself",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-03.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-05/plate-03.png"
+      ],
+      "generation_prompt": "Use case: illustration-story. Unique full-bleed 2:3 portrait plate for The Ingenious Machine Issue Six. Neutral black-and-white Goya-inspired etched realism, articulated natural faces and hands, controlled crosshatching, white highlights, no sepia/cream paper tint, no border, no titles or captions. Contemporary fictional Mexican municipality, pale concrete and glass public building, practical ordinary clothing. No palace, colonial cathedral, monarchic throne, medals, knight, weapons or Custodian in person. Q reference supplies ONLY his exact segmented oval metal head, circular ear mechanisms, long articulated neck, slim tall mechanical body and fitted waist-length sponsor blazer with small question-mark emblem; do not copy reference woman. Chano reference supplies ONLY stocky middle-aged man with wavy dark hair, thick mustache, work shirt, trousers and boots; no woman/child/bus from reference. Q returns for promised forest path inspection. Reference2 supplies ONLY Candelaria's identity: small old woman, grey low bun, patterned wool shawl, dark skirt, worn shoes and wooden staff. At a rocky bend in a high oyamel path, she and Q hold opposite ends of ONE measuring tape stretched across a section they are checking. Side-on composition, Q bends to read his end, Candelaria holds reel with her free hand and her staff is propped safely near her. Tall living firs and stony trail; no Chano, sapling watering or camera crew. Tape taut and physically connected to their hands, not magical boundary glowing. No hose already repaired, no new shoulder assembly or final boundary resolution. Intimate practical work with room around bodies.",
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-01e77d06-e3c2-428d-8330-500b25aed3a2.png",
+      "visual_review": "Candelaria's established shawl, bun and staff; one continuous measuring tape connects her reel to Q's hand across the rocky fir-forest path. No Chano, camera crew or claim of final boundary resolution.",
+      "asset_sha256": "0ab24e6c54d1554d65ed832d9e08022c13f7c2eb06193145796814cc8515bcc2",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "source_color_mode": "RGB",
+      "effective_full_bleed_dpi": 149.85
     },
     {
       "plate_id": "issue-06-plate-06",
@@ -207,9 +295,29 @@
         114
       ],
       "asset": "output/illustrations/revised/issue-06/plate-06.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The first load.",
-      "scene_brief": "Maribel's two jugs being filled from the distributor's truck at the dry-channel settlement. Q and Chano help with the containers; residents wait nearby. A modest, useful delivery, not the restoration of the whole water network. No stone striking a drone or person; the second stone has been put down."
+      "scene_brief": "Maribel's two jugs being filled from the distributor's truck at the dry-channel settlement. Q and Chano help with the containers; residents wait nearby. A modest, useful delivery, not the restoration of the whole water network. No stone striking a drone or person; the second stone has been put down.",
+      "scene_anchor": "They filled Maribel's jugs",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-03.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-03/plate-06.png"
+      ],
+      "generation_prompt": "Use case: illustration-story. Unique full-bleed 2:3 portrait plate for The Ingenious Machine Issue Six. Neutral black-and-white Goya-inspired etched realism, articulated natural faces and hands, controlled crosshatching, white highlights, no sepia/cream paper tint, no border, no titles or captions. Contemporary fictional Mexican municipality, pale concrete and glass public building, practical ordinary clothing. No palace, colonial cathedral, monarchic throne, medals, knight, weapons or Custodian in person. Q reference supplies ONLY his exact segmented oval metal head, circular ear mechanisms, long articulated neck, slim tall mechanical body and fitted waist-length sponsor blazer with small question-mark emblem; do not copy reference woman. Chano reference supplies ONLY stocky middle-aged man with wavy dark hair, thick mustache, work shirt, trousers and boots; no woman/child/bus from reference. At a modest settlement beside a DRY drainage channel, distributor water truck has arrived. Maribel, woman about40 with long straight dark hair in low ponytail, striped plain cotton shirt and work trousers, steadies one of exactly TWO large domestic water jugs. Chano holds a thick filling hose over its OPEN mouth; visible stream goes into jug. Q carries or steadies the second jug nearby, not pretending to drink. Two waiting residents with buckets in middle distance. Low cinderblock houses, ordinary roadside, scattered plastic bottles, no tropical jungle/cathedral, no masses of destitute people. Practical afternoon delivery, not a whole network restored. No stone, injured drone, protest or armed scene. Preserve distinct Maribel identity for later plate.",
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-dc2dbc36-2d2f-4919-9d38-b69c442dfbbd.png",
+      "visual_review": "Corrected hose stream enters open foreground jug through its neck. Maribel holds it, Chano controls hose and Q supports second jug. Water truck and waiting residents make one successful delivery, not a repaired municipal network.",
+      "asset_sha256": "44c9a5284e8aa9aa03d181a9175f89193568783503603f3eabb9768ffb021448",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "source_color_mode": "RGB",
+      "effective_full_bleed_dpi": 149.85,
+      "edit_prompt": "Edit ONLY the hose nozzle and water stream in this existing black-and-white illustration. Preserve all three main characters, faces, clothing, pose, truck, background, Q robot identity, two transparent water jugs and etched style. Move Chano's hose nozzle a little right so its OPEN TIP ends immediately ABOVE and CENTERED OVER the circular open mouth of the foreground jug held by Maribel. Stream falls vertically down THROUGH THE OPEN NECK INTO THE JUG, not onto its shoulder, outside surface or ground. Stream narrower than mouth. Chano keeps believable hands holding hose; Maribel's hand stays on jug handle/neck clear of stream. No extra hose or bottle, no other changes. Neutral monochrome.",
+      "edit_reference_images": [
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-dc2dbc36-2d2f-4919-9d38-b69c442dfbbd.png"
+      ],
+      "selected_edited_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-1979a03c-af04-4200-a366-5bd837515d94.png"
     },
     {
       "plate_id": "issue-06-plate-07",
@@ -238,9 +346,24 @@
         132
       ],
       "asset": "output/illustrations/revised/issue-06/plate-07.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Two totals.",
-      "scene_brief": "At night Q and Chano compare dated published monthly summaries beside the anonymous handwritten ledger. Chano marks two population totals; a plastic folder and a ceiling leak belong to the cramped apartment. No named ledger donor, invented secret access or visual assertion that every entry is verified. Distinguish this book from the Guanajuato miners' ledger."
+      "scene_brief": "At night Q and Chano compare dated published monthly summaries beside the anonymous handwritten ledger. Chano marks two population totals; a plastic folder and a ceiling leak belong to the cramped apartment. No named ledger donor, invented secret access or visual assertion that every entry is verified. Distinguish this book from the Guanajuato miners' ledger.",
+      "scene_anchor": "Chano drew a line beneath the two totals.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-03.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-03/plate-06.png"
+      ],
+      "generation_prompt": "Use case: illustration-story. Unique full-bleed 2:3 portrait plate for The Ingenious Machine Issue Six. Neutral black-and-white Goya-inspired etched realism, articulated natural faces and hands, controlled crosshatching, white highlights, no sepia/cream paper tint, no border, no titles or captions. Contemporary fictional Mexican municipality, pale concrete and glass public building, practical ordinary clothing. No palace, colonial cathedral, monarchic throne, medals, knight, weapons or Custodian in person. Q reference supplies ONLY his exact segmented oval metal head, circular ear mechanisms, long articulated neck, slim tall mechanical body and fitted waist-length sponsor blazer with small question-mark emblem; do not copy reference woman. Chano reference supplies ONLY stocky middle-aged man with wavy dark hair, thick mustache, work shirt, trousers and boots; no woman/child/bus from reference. Night in Chano's cramped municipal apartment: Q and Chano sit at small table comparing TWO printed monthly summaries beside ONE anonymous handwritten ledger. Chano with pen underlines totals, Q checks the second page, no triumphant unqualified proof. Papers angled away with nonlegible small text, different column lengths enough to suggest discrepancy. A clear plastic document folder open at side, stained ceiling with one small drip into a bucket away from papers, simple desk lamp. No visible ledger donor, no detective weapons, no secret hacking screen. This ledger plain dark cloth bound, not identified miners' ledger. White lit paper and faces, controlled crosshatching shadows, not page-wide gray wash.",
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-26d505af-8cc4-40c4-94b9-0286b942f87a.png",
+      "visual_review": "Chano underlines a printed summary while Q checks another sheet, anonymous plain-cloth ledger and plastic folder on table. Ceiling drip falls toward bucket, not protected papers. No donor or hacking depicted.",
+      "asset_sha256": "21d643f76b09a1e040d90651a416d870430a0cb5c7ab6847e2ef8c4fc6e77d50",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "source_color_mode": "RGB",
+      "effective_full_bleed_dpi": 149.85
     },
     {
       "plate_id": "issue-06-plate-08",
@@ -269,9 +392,24 @@
         151
       ],
       "asset": "output/illustrations/revised/issue-06/plate-08.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Keep the water demand.",
-      "scene_brief": "At the residents' meeting, Q reads requests from his notebook while Maribel specifies what should remain. Chano stands with the ledger; Leticia has her own correction. The recording camera is off and covered, no press spotlight. The residents participate as people with different cases, not a crowd worshipping Q."
+      "scene_brief": "At the residents' meeting, Q reads requests from his notebook while Maribel specifies what should remain. Chano stands with the ledger; Leticia has her own correction. The recording camera is off and covered, no press spotlight. The residents participate as people with different cases, not a crowd worshipping Q.",
+      "scene_anchor": "keep the water demand.",
+      "reference_images": [
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-e7679a5b-899a-4ad9-a367-4d46950c856b.png",
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-dc2dbc36-2d2f-4919-9d38-b69c442dfbbd.png"
+      ],
+      "generation_prompt": "Use case: illustration-story. Unique full-bleed 2:3 portrait plate for The Ingenious Machine Issue Six. Neutral black-and-white Goya-inspired etched realism, articulated natural faces and hands, controlled crosshatching, white highlights, no sepia/cream paper tint, no border, no titles or captions. Contemporary fictional Mexican municipality, pale concrete and glass public building, practical ordinary clothing. No palace, colonial cathedral, monarchic throne, medals, knight, weapons or Custodian in person. Q reference supplies ONLY his exact segmented oval metal head, circular ear mechanisms, long articulated neck, slim tall mechanical body and fitted waist-length sponsor blazer with small question-mark emblem; do not copy reference woman. Chano reference supplies ONLY stocky middle-aged man with wavy dark hair, thick mustache, work shirt, trousers and boots; no woman/child/bus from reference. Illustrate a small residents' meeting at a plain municipal complaints table. Reference1 supplies ONLY Leticia, strong middle-aged woman, high dark bun, polo/apron/trousers, and Chano. Reference2 supplies ONLY Maribel, long dark low ponytail and striped rolled-sleeve shirt/trousers, and Q. Leticia and Maribel MUST be visibly distinct women with their exact reference faces. Maribel in foreground seated speaks firmly while pointing at Q's open paper notebook: she wants her child's private story removed and her water demand kept. Leticia beside her points to another line for corrected closing time. Q sits across table reading back the notebook, one hand open listening. His separate small recording lens on jacket is covered with an opaque clip cap; do not blindfold him or change mechanical face. Chano at end of table with plain cloth ledger and a couple of ordinary adult residents seated behind. No mayor here, no Custodian. Eye-level shared meeting, women foreground, robot not savior. Paper nonlegible scribbles, no speech bubbles, no invented text. White wall/white papers/highlights, careful etched shadows. Distinct from map scene and water delivery, modern concrete interior, no courtroom or church.",
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-c654337f-e6cc-4970-98d4-18c2b21bbbd0.png",
+      "visual_review": "Distinct Maribel and Leticia point to different notebook lines while Q reads back; opaque cap covers separate recording lens without changing his face. Chano and resident listen behind. Meeting centers the women's requests, not Q's authority.",
+      "asset_sha256": "9f51979fc74ae2e89e368e7f52af3a5c816b011df6a4f16b0267b7e6af723bbb",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "source_color_mode": "RGB",
+      "effective_full_bleed_dpi": 149.85
     },
     {
       "plate_id": "issue-06-plate-09",
@@ -298,9 +436,38 @@
         168
       ],
       "asset": "output/illustrations/revised/issue-06/plate-09.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Write that I need another job.",
-      "scene_brief": "Q puts his tablet away beside the road outside the municipal building as Chano considers renewed paid travel. Chano has the ledger securely with him; a bus passes the public display behind them. No office chair taken away, no broken robot, no defeated knight or corpse. Shared departure with material consequences."
+      "scene_brief": "Q puts his tablet away beside the road outside the municipal building as Chano considers renewed paid travel. Chano has the ledger securely with him; a bus passes the public display behind them. No office chair taken away, no broken robot, no defeated knight or corpse. Shared departure with material consequences.",
+      "scene_anchor": "Q put the tablet away.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-03.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-03/plate-06.png"
+      ],
+      "generation_prompt": "Use case: illustration-story. Unique full-bleed 2:3 portrait plate for The Ingenious Machine Issue Six. Neutral black-and-white Goya-inspired etched realism, articulated natural faces and hands, controlled crosshatching, white highlights, no sepia/cream paper tint, no border, no titles or captions. Contemporary fictional Mexican municipality, pale concrete and glass public building, practical ordinary clothing. No palace, colonial cathedral, monarchic throne, medals, knight, weapons or Custodian in person. Q reference supplies ONLY his exact segmented oval metal head, circular ear mechanisms, long articulated neck, slim tall mechanical body and fitted waist-length sponsor blazer with small question-mark emblem; do not copy reference woman. Chano reference supplies ONLY stocky middle-aged man with wavy dark hair, thick mustache, work shirt, trousers and boots; no woman/child/bus from reference. After Chano loses appointment: outside same modern pale-concrete municipal building beside road, Q slides closed tablet into a simple satchel while talking with Chano, eye-level medium-wide scene. Chano same thick mustache, work shirt, keeps a wrapped paper ledger secure beneath shirt/inside soft bag, one hand on it. A mundane bus passes the public welcome display in background, screen seen obliquely no readable text. No chair taken away, no royal costume, no demolished drone, no grieving crowd, no corpse. They negotiate renewed paid travel, tired but neither broken nor magically reconciled. Q's head and waist-length jacket exact, mechanical face not human. Leave lower margin available for caption without cropping significant hands.",
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-7d91a9ae-11a3-4915-a228-3e5fcb944099.png",
+      "visual_review": "Q puts tablet into travel bag while Chano speaks and holds wrapped ledger; ordinary bus passes modern municipal entrance. No chair removed, corpse, knight or forced reconciliatory tableau.",
+      "asset_sha256": "d04c78c6f304150a2b2838b3a12660c6855650716c9da5cf9d22f748a9c237f2",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "source_color_mode": "RGB",
+      "effective_full_bleed_dpi": 149.85
+    }
+  ],
+  "generation_method": "Built-in image tool; ten distinct selected scenes and one targeted water-stream correction. Missing scenes retried after service failures. Original cached PNGs retained; selected assets copied without procedural image editing. PDF-only lossless grayscale prepress.",
+  "proof_outputs": [
+    {
+      "asset": "output/pdf/ingenious-issue-06-revised-en-bw.pdf",
+      "sha256": "3d71ca3fb53f433ac9edee934d440541716f433b9e98f02a6914388811297db9",
+      "pages": 20
+    },
+    {
+      "asset": "output/pdf/ingenious-issue-06-revised-en-bw-a3.pdf",
+      "sha256": "7ff5b962450f43261c4d27a09da7fcb860659031196c1b7305ba371e31ddd57f",
+      "sides": 10,
+      "duplex_sheets": 5
     }
   ]
 }
