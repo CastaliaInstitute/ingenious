@@ -144,6 +144,21 @@ Chapter Seventeen still finds changed visitor arrangements and pending gate work
 
 ## Changes through the ending
 
+Chapter Seventeen's reference check finds a missing drainage condition in one
+circulated version. This is not the missing consultation annex in Castalia's
+procurement reply. Bixha asks for the paragraph and corrected reference to be
+circulated; Q records a request, not completed delivery. His book draft is a
+separate file from the start. The later shared working record and the companions'
+personal reminders remain distinct artifacts.
+
+The later inspection occurs on a revised date while Celina is at work. Her mother
+is present; Celina joins by phone, then forwards the inspection reference to Bixha.
+Neither this nor Teresa's earlier offer to ask establishes paid release, completed
+gate widening or a repaired road. The inspector cannot yet give a repair date.
+Q's revised travel permission and repair allowance remain in effect; he chooses
+an earlier coach and a room rather than treating a sleeper service as equivalent
+rest. Prime's requested clip correction is not established as granted.
+
 | Item or commitment | Final narrated state | Constraint on editions and later revision |
 | --- | --- | --- |
 | Southern itinerary | Approved accompanied visits, revised for the Mayab interview and later Las Pozas detour. Q returns on schedule. | No secret kitchen escape or unrestricted journey after an order of permanent confinement. |

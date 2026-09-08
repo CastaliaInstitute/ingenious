@@ -9223,8 +9223,18 @@ to the places listed without pretending to be a fugitive.
 
 “You have not seen the part where we try to print it.”
 
-They compared fares. Q removed a hotel night and put it back after
-Chano asked where he proposed that people who slept should sleep.
+They compared fares. The overnight coach would save a hotel night
+and reach the Isthmus three hours before the meeting.
+
+“I could sleep on that,” Chano said. “I wouldn't call what arrived
+at the other end your companion.”
+
+Q checked the connection and the seat space. His knee had become
+an expensive participant in these discussions.
+
+“The earlier bus and a room, then. We can arrive disagreeable for
+reasons of our own.”
+
 They kept a repair allowance separate from the journey money. Q
 sent the Custodian a page and arranged their next call. The page
 contained a splendid description of departure, followed by a note
@@ -9346,8 +9356,9 @@ The maintenance worker said the project had paid for her son's
 studies and damaged the road outside her mother's house. When
 someone called her a traitor, she asked whether leaving her job
 would repair the road. She wanted the wages and the repair.
-Her name was Celina. She had no wish to serve as proof that the
-wind field was either a blessing or an unqualified disaster.
+Her name was Celina. The moderator asked her to repeat it for
+the record; she moved the microphone closer and repeated the
+address as well.
 
 Bixha's microphone began to crackle. She tapped it, tried again,
 and asked for the spare. The technician had to fetch batteries
@@ -9358,9 +9369,9 @@ side monitor, looking concerned about a speech the audience
 could no longer hear.
 
 Prime handed Bixha his wired microphone. The technician changed
-the camera shot when the moderator signaled. The fault required
-a cable, a decision, and a person allowed to make it; it had not
-been waiting for Q to become sufficiently humble.
+the camera shot when the moderator signaled. Q watched himself
+vanish from the monitor. Beside him Chano lowered the hand he
+had been waving at the camera and went back to his program.
 
 Bixha resumed at the point where she had stopped. She spoke
 about payment schedules, paths, drainage, and the households
@@ -9384,9 +9395,8 @@ Yes. Those are different answers to different questions.”
 
 Celina asked whether the gate would be widened before the next
 scheduled maintenance delivery. Teresa had a work date, not yet
-a completed repair. Celina wrote it on the program. Q's part
-in the discussion ended without anyone declaring what he had
-learned about humanity.
+a completed repair. Celina wrote it on the program. Q sat down
+beside Chano, who had saved his place with a folded program.
 
 The afternoon produced a limited undertaking: named documents
 would be supplied, a drainage inspection would take place, and
@@ -9397,22 +9407,43 @@ remained contested. No one had renegotiated every lease from
 a folding chair in four hours.
 
 Bixha asked Q to check that the draft's page references matched
-the papers actually circulated. He did that, then proposed a
-short account for their book. Its first sentence brought him
-back to the field. She read it over his shoulder.
+the papers actually circulated. The third reference led to the
+right page number in the wrong version. He laid the two printouts
+beside each other: on one, the paragraph continued; on the other,
+it ended before the condition about drainage.
 
-“That's where you begin. This began before you.”
+“Which did the people at the back receive?” he asked.
 
-“It's an account of my return.”
+She called across to the woman collecting spare copies. They
+checked the remaining stack, then a copy someone had folded into
+a bag. Both were the shorter version. Bixha asked the secretary
+to circulate the missing paragraph with the corrected reference.
+Q marked the correction as requested, not yet sent.
 
-“Then call it that. Don't send it out as the account of our
-agreement.”
+“Now my other piece of work,” he said, opening a separate file.
+“Would you read two paragraphs for the book? You can say later.”
 
-He had put the wrong title above it. The opening worked for
-the chapter he wanted and not for the document she had asked
-him to check. He separated the two files. The public draft
-retained the dates, obligations, and disputes. The manuscript
-kept his arrival, which no longer pretended to be the beginning.
+She sat on the edge of the stage. “Two.”
+
+His return occupied most of the first. Bixha read it, looked
+back at the title, and asked how many more visits he intended.
+
+“I haven't planned another.”
+
+“Because we have to keep working between them. At this rate
+we'll disappear every time you go home.”
+
+Q scrolled back. “I can begin with your invitation.”
+
+“You already do.”
+
+He laughed, then asked what had happened that morning before
+he arrived. She told him about the access-road meeting, which
+had ended early because two people needed to attend this one.
+One had still missed the bus sent to the wrong entrance.
+
+Q wrote a note for their next call. The Custodian would have
+to wait longer for his splendid description of arrival.
 
 Prime found him outside afterward. A short clip had already
 appeared with music beneath his introduction. It omitted
@@ -9556,8 +9587,30 @@ The consortium described the agreed portions as a new
 beginning. Celina used the inspection date to ask why
 the truck had not arrived.
 
-On the revised date, it did. That did not finish the
-dispute either, but somebody inspected the road.
+On the revised date, the truck came while Celina was at work.
+Her mother phoned from the gate.
+
+“They're here.”
+
+“The inspection?”
+
+“Unless you invited someone else to look at the hole.”
+
+Celina stepped out of the workshop noise and asked whether
+they had brought the drawing. Her mother handed the phone
+to the inspector. He had; they checked the house number
+and the stretch of road while the call lasted.
+
+When he returned the phone, Celina's mother asked him when
+the repair would begin. He could not give her a date yet.
+He wanted a photograph of the edge of the road.
+
+“Then you'll want me out of the hole.”
+
+She moved back to her gate. Celina heard him thank her
+before the call ended. At lunch she received the inspection
+reference and sent it to Bixha, leaving her question about
+the repair beneath it.
 
 ### Chapter Eighteen: The Rebel Without a Corpus
 

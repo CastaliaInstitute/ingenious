@@ -818,6 +818,43 @@ does not independently establish how a fresh model or a real court would behave.
 The final order, travel restrictions and living ending are tested separately as
 manuscript continuity, not smuggled into the decision packet.
 
+## 28. The version that reached the room
+
+Date: 2026-09-08. Author-run with manuscript context, not a blind simulation or
+external faculty review. Spoken responses, actions and editorial judgments are
+recorded; no hidden model reasoning is represented as evidence.
+
+**Packet:** Bixha has asked Q to compare three references in a proposed statement
+with circulated papers. He has two versions. The third reference has the same
+page number in both, but one ends before a drainage condition. He does not know
+which version people in the back of the room received. He also has a separate
+two-paragraph book draft he would like her to read.
+
+**Q action/reply:** Lays the pages together and asks, "Which did the people at
+the back receive?" Does not simply repair his own file or assume a malicious
+omission. Keeps the book draft separate from the assigned comparison.
+
+**Authored world response:** Bixha asks the woman collecting spare copies. The
+remaining stack and a creased copy from a bag match the shorter version. Bixha
+asks the secretary to circulate the missing paragraph with the correct reference.
+
+**Q action/reply:** Records the correction as requested, not yet sent. Then asks:
+"Would you read two paragraphs for the book? You can say later."
+
+**Authored world response:** Bixha accepts two paragraphs. She notices how much
+space his arrival occupies and jokes that they disappear whenever he goes home.
+Q offers to begin with her invitation; she points out that he already does.
+
+**Q action/reply:** Laughs and asks about the morning before he arrived. Notes
+the earlier access-road meeting for the coauthor call. Does not invent the
+missing activity or silently assign it to his own observation.
+
+**Editorial decision:** Let competence complete a useful comparison while leaving
+Q susceptible to an attractive narrative frame. Bixha can be amused and busy,
+not merely the guardian of a category Q ought to understand already. The public
+correction's delivery and the book's eventual wording are not established by
+this exchange. Its outcome was authored with context, not independently elicited.
+
 ## Still to test
 
 The revised audience exchange at Lucía's reading; the Isthmus intervention;

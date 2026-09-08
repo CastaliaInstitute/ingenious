@@ -260,8 +260,19 @@ the book.” The source now permits Q to remain alive when the writing stops.
 ## Required next work
 
 Current checkpoint: the second whole-chapter voice pass is complete through
-Chapter Sixteen; continue with Chapter Seventeen. Earlier chapter-by-chapter
+Chapter Seventeen; continue with Chapter Eighteen. Earlier chapter-by-chapter
 continuation notes below are a history of this pass, not the latest queue.
+`CHAPTER_17_VOICE_REVIEW.md` and Exercise 28 replace two forced mistakes with
+a travel tradeoff and a useful check of mismatched handout versions. Q offers
+the book draft separately; Bixha's objection concerns its account of life between
+his visits, not a wrongly titled public record. Celina and her mother enact the
+later inspection while its repair date remains unanswered. Prime retains an
+informed disagreement, not a naive failure that vindicates Q. Issue 17 contains
+2,692 words on 20 pages, ten planned plates and five A3 duplex sheets at
+13.3/18.8417 pt. Exact text, unpainted backgrounds, dimensions, rotation and
+nested pairs pass; pages 12 and 18 and the innermost A3 spread were inspected.
+All artwork remains planned, and Exercise 28 is author-run, not independent
+validation or external faculty review. No print job or A+ certification.
 `CHAPTER_16_VOICE_REVIEW.md` and Exercise 27 correct Lucía's hearing testimony
 against the actual reading, interview and seminar. Q's local exhibit reference
 helps his adviser distinguish events without a new search. Hilario sells water,
