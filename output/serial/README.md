@@ -27,10 +27,12 @@ and [facing-text manifest](../illustrations/revised/issue-01/manifest.json).
 - [English Issue 2: revised reading PDF](../pdf/ingenious-issue-02-revised-en-bw.pdf)
 - [English Issue 2: revised A3 folding PDF](../pdf/ingenious-issue-02-revised-en-bw-a3.pdf)
 
-28 pages, fourteen unique plates including the cover, and seven A3 duplex sheets.
-All 4,400 words flow through thirteen two-column narrative pages in Georgia
-12.4-point type. The roadside dialogue no longer assumes Q has already seen the
-viral video. Chano, Lety, Celia and Hilario receive their own scene-specific art.
+32 pages, sixteen unique plates including the cover, and eight A3 duplex sheets.
+All 4,480 words flow through fifteen two-column narrative pages in Georgia
+13.3-point type. The motel scene now establishes Chano's next-day pay separately
+from meals and fares; later chapters' paid agreement has an explicit beginning.
+Three new plates show the gate, pay agreement and Hilario's original recording.
+The roadside dialogue does not assume Q has already seen the viral video.
 Unpainted text backgrounds, lossless grayscale, centered actual-size A3 landscape
 spreads and short-edge duplex follow the same proof specification. About 150-dpi
 native art remains a press-quality limitation; no print job has been sent. See the

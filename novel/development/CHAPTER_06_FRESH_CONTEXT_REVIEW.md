@@ -85,3 +85,12 @@ Request SHA-256 identifiers:
 - Google continuation: `412c71ce8f6f906646d982de968cf217dbea95384b076c5988fa0edb9cba2992`.
 
 The book's living ending is unaffected: the Custodian puts down his pen.
+
+## Subsequent continuity repair
+
+The source audit prompted by this exercise found that Chapter Two showed a fare
+and meal, but not the daily agreement later recalled in Chapters Six and Sixteen.
+An eighty-word motel exchange now establishes the next-day rate, a card-limit
+check and a shared copy. See `PAID_COMPANION_CONTINUITY.md` and the rebuilt
+`ISSUE_02_PRODUCTION.md`. This was an editorial source finding, not a new model
+test or a retroactive change to the four recorded outputs above.

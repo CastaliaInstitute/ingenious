@@ -909,6 +909,20 @@ finding out whether Chano still wished to travel with him when dinner was paid.
 
 The Custodian agreed. Q entered the new appointment.
 
+Chano put the motel receipt beside him. “And what does tomorrow pay?”
+
+They agreed a day's rate, separate from meals and fares. Q checked the total
+against his card limit and entered the amount beside tomorrow's date.
+
+“That's for the day,” Chano said. “Not for agreeing with you.”
+
+“I may be getting a bargain.”
+
+“Ask me tomorrow.”
+
+Q sent him a copy. They would agree the following day before undertaking it;
+neither had just promised to finance the other's future.
+
 On the motel's noticeboard he found an announcement for a reading in Querétaro.
 Lucía del Toboso would speak about letters and land petitions. He searched the
 public notice, liked a sentence she had written, and began to imagine a

@@ -10,7 +10,18 @@ illustrated issues, verify affected print PDFs, and push the revision.
 The latest user clarification governs the ending: “Death just means we finish
 the book.” The source now permits Q to remain alive when the writing stops.
 
-Latest production checkpoint: Issue Six has a verified 20-page illustrated
+Latest checkpoint: the paid-companion continuity audit added eighty words to
+Chapter Two, establishing the next-day rate separately from meals and fares,
+checking it against Q's card limit, and leaving subsequent days to agreement.
+Chapters Six and Sixteen now refer back to an agreement shown in the novel.
+`PAID_COMPANION_CONTINUITY.md` records the cross-book evidence and limits.
+Issue Two has been rebuilt with larger 13.3-point type, 32 pages, sixteen unique
+plates and eight A3 duplex sheets. Three new plates accompany the reflow; one
+displaced earlier asset is retained unused. All 4,480 words and all 32 rendered
+pages were checked. Other 21 chapters and Issues 1/3/4/5/6 PDFs are unchanged
+from `2e9b26ed`. The ending remains “The Custodian put down his pen.”
+
+Previous production checkpoint: Issue Six has a verified 20-page illustrated
 reading proof and ten-side A3 proof, with ten unique plates and five duplex
 sheets. `ISSUE_06_PRODUCTION.md` records source/asset hashes, full-text and
 visual checks, the water-stream correction and the approximately 150-dpi press

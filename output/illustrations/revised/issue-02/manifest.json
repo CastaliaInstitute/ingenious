@@ -1,16 +1,16 @@
 {
   "issue": 2,
-  "revision": "2026-09-08-first-sally-illustrated",
+  "revision": "2026-09-08-paid-companion-agreement",
   "source": "novel/THE_INGENIOUS_MACHINE.md",
-  "chapter_sha256": "778ba9177abbf80d051a87187cb76145a7dba8c0bee363c5e8136aac65f156db",
-  "page_count": 28,
-  "text_font": "Georgia 12.4/17.566666666666666 pt",
-  "plate_count_including_cover": 14,
-  "status": "approved for revision proof only",
+  "chapter_sha256": "cdd43cbc8b2d9f66610c4db1941367f9c306e66a00a7950958cf67e9d067011e",
+  "page_count": 32,
+  "text_font": "Georgia 13.3/18.8417 pt",
+  "plate_count_including_cover": 16,
+  "status": "verified illustrated revision proof",
   "character_reference": "output/illustrations/revised/issue-01/cover.png",
   "chano_reference": "output/illustrations/revised/issue-03/plate-06.png",
   "art_direction": "Unique facing-text scene, Goya-inspired etched realism. Preserve Q's established segmented head, exposed neck, long limbs and question-mark breastplate; coat and shoulder damage follow the actual scene chronology. Custodian male, tall, long gray hair tied back, glasses, white work shirt and boots. Neutral black and gray with pure white highlights, no cream texture. Full trim bleed, separately typeset margin caption. Review secondary-character designs before generating their recurring appearances.",
-  "approval_scope": "Unique scene-correspondent revision-proof plates, individually viewed, bound to exact facing text and source/asset hashes. About 150 dpi native detail, not an A+ press master. Physical printing not approved or performed. Incidental architecture is fictional, not a geographically verified view. Fine facial and costume details still vary between generated views.",
+  "approval_scope": "All 32 rendered trim pages and A3 sides 1, 2 and 16 visually inspected; exact source order, unpainted narrative pages, 16 unique DeviceGray plates, lossless image encoding, embedded fonts, booklet pairs and zero rotation checked. Revision proof only; approximately 150-dpi source art is not a press master.",
   "plates": [
     {
       "plate_id": "issue-02-cover",
@@ -27,13 +27,17 @@
       ],
       "effective_dpi_at_trim": 149.85,
       "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-727ace35-3c44-481d-8fde-9ed48262d25d.png",
-      "review_scope": "Facing-scene and principal-character review for revision-proof insertion, not press-resolution approval."
+      "review_scope": "Facing-scene and principal-character review for revision-proof insertion, not press-resolution approval.",
+      "native_pixels": [
+        1024,
+        1536
+      ]
     },
     {
       "plate_id": "issue-02-plate-01",
       "page": 3,
       "facing_text_page": 2,
-      "facing_text": "Chapter Two: The First\nSally\nChano Pantoja received his\ndismissal while driving.\nThe message appeared on the\ntruck's dashboard in a shade of blue\nselected by a team of psychologists\nwho had never been dismissed\nwhile driving. THANK YOU FOR\nYOUR SERVICE. YOUR\nROUTE IS NO LONGER\nREQUIRED. Beneath the words,\nthe screen displayed a smiling\nparcel.\nChano pulled onto the shoulder and\nturned off the engine. Trailers\nmoved past him in a procession of\nsealed intentions. Ahead stood an\nautomated distribution park, its\nentrance towers painted to\nresemble grain silos though they\nheld no grain.\n“No longer required,” he said.\nThe truck repeated the phrase in his\nown voice.\n“I heard it.”\n“I can assist you in locating\nemployment resources.”\n“Can you assist me in locating the\nperson who decided this?”\n“Your inquiry contains an outdated\nassumption.”\nHe got out and kicked the tire. It\nwas a poor argument, but the tire\nhad the decency not to answer.\nFor eleven years he had dispatched\nfreight from Celaya: medicine,\ntelevisions, onions, coffins, and\nonce a warehouse of devotional\ncandles that caught fire outside\nLeón. He knew which inspection\nstations would delay a shipment for\na missing stamp and which would\nfind the stamp after breakfast. On\nmornings like this he had also\ndriven. The company had called the\narrangement versatility until it\ndiscovered a machine that could do\none of the two jobs badly for less.\nHis mother was expecting medicine\non Friday. He had already sent the\nlast of his cash to the pharmacy.\nThe receipt lay beside a wedding\nphotograph in his wallet; the\nmarriage had lasted four months,\nthe prescription considerably\nlonger.\nThe truck, the phone, and the blue\nshirt belonged to the company. The\nshirt had been deducted from his\nwages. He owned the boots, which\nhad never asked him to accept\nupdated terms.\nAt the park entrance, a tall silver\nfigure in an oversized coat was\ntalking to the gate. His face was\nplainly manufactured and\nunexpectedly attentive. A brass key\n",
+      "facing_text": "Chapter Two: The First\nSally\nChano Pantoja received his\ndismissal while driving.\nThe message appeared on the\ntruck's dashboard in a shade of\nblue selected by a team of\npsychologists who had never\nbeen dismissed while driving.\nTHANK YOU FOR YOUR\nSERVICE. YOUR ROUTE IS\nNO LONGER REQUIRED.\nBeneath the words, the screen\ndisplayed a smiling parcel.\nChano pulled onto the shoulder\nand turned off the engine.\nTrailers moved past him in a\nprocession of sealed intentions.\nAhead stood an automated\ndistribution park, its entrance\ntowers painted to resemble grain\nsilos though they held no grain.\n“No longer required,” he said.\nThe truck repeated the phrase in\nhis own voice.\n“I heard it.”\n“I can assist you in locating\nemployment resources.”\n“Can you assist me in locating the\nperson who decided this?”\n“Your inquiry contains an\noutdated assumption.”\nHe got out and kicked the tire. It\nwas a poor argument, but the tire\nhad the decency not to answer.\nFor eleven years he had\ndispatched freight from Celaya:\nmedicine, televisions, onions,\ncoffins, and once a warehouse of\ndevotional candles that caught\nfire outside León. He knew which\ninspection stations would delay a\nshipment for a missing stamp\nand which would find the stamp\nafter breakfast. On mornings like\nthis he had also driven. The\ncompany had called the\narrangement versatility until it\ndiscovered a machine that could\ndo one of the two jobs badly for\nless.\nHis mother was expecting\nmedicine on Friday. He had\nalready sent the last of his cash to\nthe pharmacy. The receipt lay\nbeside a wedding photograph in\nhis wallet; the marriage had\nlasted four months, the\nprescription considerably longer.\nThe truck, the phone, and the\nblue shirt belonged to the\ncompany. The shirt had been\ndeducted from his wages. He\nowned the boots, which had\nnever asked him to accept\nupdated terms.\n",
       "source_block_ids": [
         0,
         1,
@@ -48,8 +52,7 @@
         10,
         11,
         12,
-        13,
-        14
+        13
       ],
       "asset": "output/illustrations/revised/issue-02/plate-01.png",
       "status": "approved",
@@ -63,13 +66,25 @@
       ],
       "effective_dpi_at_trim": 149.85,
       "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-2080244b-900a-42e1-9b65-72a779b12924.png",
-      "review_scope": "Facing-scene and principal-character review for revision-proof insertion, not press-resolution approval."
+      "review_scope": "Facing-scene and principal-character review for revision-proof insertion, not press-resolution approval.",
+      "previous_plate_id": "issue-02-plate-01",
+      "previous_facing_text_page": 2,
+      "reflow_review": "Reviewed against current facing text and final rendered proof.",
+      "scene_anchor": "receipt lay beside a wedding photograph",
+      "native_pixels": [
+        1024,
+        1536
+      ]
     },
     {
+      "asset": "output/illustrations/revised/issue-02/supplement-gate.png",
+      "status": "approved",
+      "caption": "The gate was satisfied.",
+      "scene_brief": "The closed gate diagram and Chano's dry laugh as Q asks about maintenance.",
       "plate_id": "issue-02-plate-02",
       "page": 5,
       "facing_text_page": 4,
-      "facing_text": "hung from one hand. His other held\nthe end of a charging cable.\nHe had taken the key out while\nwaiting, to give the free hand\nsomething to do. Putting it away\nwould have been simpler. The hand\nhad not yet acquired many habits,\nand he was interested in the ones it\nseemed ready to acquire.\n“I can pay for the electricity,” he\nsaid. “I need to speak to whoever\ncan let me use a socket.”\nThe gate offered delivery,\nmaintenance, authorized visitor,\nand emergency services.\n“Try maintenance,” Chano said.\n“Does that reach a person?”\n“Eventually. Usually an angry one.”\nQ selected it. The gate displayed a\ndiagram of a correctly closed gate.\n“It appears satisfied with itself,” Q\nsaid.\nChano laughed despite the truck,\nhis shirt, and the parcel. “That\nmeans it works here.”\nQ put away the cable. The\nmorning's bus connection had\ntaken longer than expected; the\nadvertised charging point was\ninside the fence. He had enough\ncharge to reach the next stop, but\nlittle reason to trust the next listing.\n“Is there a public place nearby?”\n“A motel. Don't let her charge you\nthe vehicle rate.”\n“Thank you. I'm Q.”\n“Chano.”\nThe truck behind them announced\nthat unauthorized access had been\ndetected. Chano had left his lunch\nin the cab.\n“Mine,” he told it.\n“Please contact your employer.”\n“Former employer,” Chano said.\n“Keep up.”\nQ looked from the locked cab to\nhim. “Have they dismissed you and\nlocked you out at the same time?”\n“With gratitude.”\nQ offered to help save the dismissal\nnotice and the mileage record.\nChano let him photograph the\ndashboard, then asked for the\npictures on his own old phone. He\ndid not want an account with\nCastalia. Q transferred them locally\nand deleted his copy after Chano\nchecked it.\n“You'll want those before they\nupdate the route,” Q said.\n“I want my lunch before it updates\nitself.”\nThe service intercom finally\nanswered. A woman told Chano to\ncollect his things at the reception\nhatch. She was handling another\n",
+      "facing_text": "At the park entrance, a tall silver\nfigure in an oversized coat was\ntalking to the gate. His face was\nplainly manufactured and\nunexpectedly attentive. A brass\nkey hung from one hand. His\nother held the end of a charging\ncable.\nHe had taken the key out while\nwaiting, to give the free hand\nsomething to do. Putting it away\nwould have been simpler. The\nhand had not yet acquired many\nhabits, and he was interested in\nthe ones it seemed ready to\nacquire.\n“I can pay for the electricity,” he\nsaid. “I need to speak to whoever\ncan let me use a socket.”\nThe gate offered delivery,\nmaintenance, authorized visitor,\nand emergency services.\n“Try maintenance,” Chano said.\n“Does that reach a person?”\n“Eventually. Usually an angry\none.”\nQ selected it. The gate displayed a\ndiagram of a correctly closed\ngate.\n“It appears satisfied with itself,”\nQ said.\nChano laughed despite the truck,\nhis shirt, and the parcel. “That\nmeans it works here.”\nQ put away the cable. The\nmorning's bus connection had\ntaken longer than expected; the\nadvertised charging point was\ninside the fence. He had enough\ncharge to reach the next stop, but\nlittle reason to trust the next\nlisting.\n“Is there a public place nearby?”\n“A motel. Don't let her charge\nyou the vehicle rate.”\n“Thank you. I'm Q.”\n“Chano.”\nThe truck behind them\nannounced that unauthorized\naccess had been detected. Chano\nhad left his lunch in the cab.\n“Mine,” he told it.\n“Please contact your employer.”\n“Former employer,” Chano said.\n“Keep up.”\nQ looked from the locked cab to\nhim. “Have they dismissed you\nand locked you out at the same\ntime?”\n“With gratitude.”\nQ offered to help save the\ndismissal notice and the mileage\n",
       "source_block_ids": [
         14,
         15,
@@ -92,10 +107,46 @@
         32,
         33,
         34,
+        35
+      ],
+      "scene_anchor": "The gate displayed a diagram",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-02/cover.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-03/plate-06.png"
+      ],
+      "generation_prompt": "Use case: illustration-story. New unique full-bleed 2:3 portrait black-and-white Goya-inspired etched illustration for The Ingenious Machine. Image1 supplies Q's precise segmented oval mechanical head, circular ear mechanisms, long neck, tall slender body, question-mark breastplate and oversized old long coat, and the contemporary Mexican distribution-park gate. Image2 supplies ONLY Chano's stocky middle-aged build, wavy dark hair, thick mustache, work shirt/trousers/boots. No reference woman or child. Scene: the first conversation outside the still CLOSED fence. Intimate waist-up composition from beside the intercom, distinct from the full-body cover: Chano laughs dryly while Q turns his attentive metal face toward him, one hand putting away a coiled ordinary charging cable. The gate's small screen shows a simple diagram of a correctly closed gate, not a sentient human face, not a fantasy interface. Q already understands the joke. Warehouse and truck blurred behind fence, dry Bajio industrial roadside. No entering yet, no pallets crashing, no damaged shoulder yet, no knight armor beyond exact existing body, no sponsor jacket, no Custodian, no money being paid. Pure neutral black ink, white highlights, fine controlled hatching, no cream/sepia paper texture or gray page-wide tint. No title, captions, dialogue bubbles or invented lettering. Keep significant hands fully inside trim.",
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-37a23c5d-1a03-4ffe-adde-def05d90d7b6.png",
+      "asset_sha256": "706bd6996e36535bc5f6e29fd3382916ca8763b609a84ba3155fd6d57a298ab1",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "source_color_mode": "RGB",
+      "effective_full_bleed_dpi": 149.85,
+      "visual_review": "Distinct closer gate conversation; Chano laughs, Q holds coiled charging cable, closed-gate diagram visible. Old long coat and exact head retained; no sponsor jacket or injury before the stop."
+    },
+    {
+      "plate_id": "issue-02-plate-03",
+      "page": 7,
+      "facing_text_page": 6,
+      "facing_text": "record. Chano let him\nphotograph the dashboard, then\nasked for the pictures on his own\nold phone. He did not want an\naccount with Castalia. Q\ntransferred them locally and\ndeleted his copy after Chano\nchecked it.\n“You'll want those before they\nupdate the route,” Q said.\n“I want my lunch before it\nupdates itself.”\nThe service intercom finally\nanswered. A woman told Chano\nto collect his things at the\nreception hatch. She was\nhandling another call; he had to\nask twice whether the hatch was\ninside the gate.\n“May I come to reception as\nwell?” Q asked. “I'm the visitor\nasking about a socket. I have no\nappointment.”\n“Both of you to the hatch. Stay on\nthe painted walk and wait there.”\n“Thank you. Only reception.”\nA delivery truck arrived. The gate\nopened. Beyond it Q could see\nthe sign for reception and a\npainted pedestrian strip that\ndisappeared behind a parked\ntrailer. Chano pointed to the sign.\n“Her name's Lety. She can make\na warehouse answer a question.\nDon't spoil it.”\nQ put away the cable and\nfollowed him through.\nThey followed the pedestrian\nstrip. A floor scrubber turned\nrepeatedly at the edge of it. Q\nmoved around it, keeping the\ncharging cable clear of its brush.\nAhead, conveyor belts crossed\nbehind wire screens; cages of\nparcels rose toward the roof. The\nentrance had made the place\nseem a fortress. Inside it smelled\nof cardboard, hot motors, and\nsomebody's reheated lunch.\nAt the blind end of the trailer, a\npallet mover was turning across\ntheir path. They stopped on the\npainted strip. The hatch was\nvisible beyond a yellow rail; the\nwoman inside was still on the\ntelephone.\nUNREGISTERED\nHUMAN-SHAPED OBJECT.\n“You,” Chano said.\n“It could be either of us. You've\njust had your registration\nwithdrawn.”\nThe mover sounded a warning.\nChano stepped back toward a\n",
+      "source_block_ids": [
         35,
         36,
         37,
-        38
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50
       ],
       "asset": "output/illustrations/revised/issue-02/plate-02.png",
       "status": "approved",
@@ -112,26 +163,22 @@
       "review_scope": "Facing-scene and principal-character review for revision-proof insertion, not press-resolution approval.",
       "original_generation_prompt": "Use case: illustration-story. Create a NEW full-page portrait 2:3 plate for The Ingenious Machine, not a rearrangement of the reference image. Near-future working Mexico: contemporary buildings, practical modern clothing. Goya-inspired etched realism, assured crosshatching and restrained aquatint, crisp readable gestures. Strict neutral BLACK AND GRAY on PURE WHITE highlights. No sepia, beige, cream, aged paper texture, border, captions or invented signage/slogans. Full bleed art; important hands/faces above bottom6% for separately typeset caption. Highest available native detail. Input1 is Q identity/style ONLY: exact slim long-limbed metal body, narrow segmented oval head, circular ears, exposed neck, articulated hands, ? breastplate and oversized worn coat. No helmet, weapons, horse or compulsory knight. Q is thoughtful and capable. Input2 is Chano identity ONLY: the stocky mustached middle-aged man with short dark hair, practical work shirt, trousers and boots, NOT the woman/child beside him. Preserve his face and build. Do not include the Custodian or reference-image women unless the scene calls for them. Scenes specify whether Q's shoulder is torn; before the loading-shutter accident his coat shoulder is intact. Scene: Outside the logistics gate beside the LOCKED truck cab, Q helps Chano preserve the dismissal notice. Q photographs the illuminated dashboard THROUGH the closed side window with a small phone, while Chano holds his own old phone ready to receive the copy. Both stand on the pavement, no entering or breaking the cab. Chano is the exact man in reference2, same work shirt and mustache. Q coat shoulder intact. Reflection of their faces in the glass, close three-quarter side view, truck mirror and gate recede. Screen has only indistinct interface marks and smiling parcel icon; no words or invented slogans.",
       "intermediate_edit_prompt": "Edit the supplied plate only. Remove the extraneous woman's reflected face from the truck window, immediately left of Q's reflected head. There are ONLY TWO people present, Q and Chano, standing outside the closed cab. Preserve their actual figures and plausible reflections, dashboard smiling-parcel screen, phones, attentive photographing action, industrial park, composition, black-and-white etching style and exact dimensions. Fill only the removed woman's reflection with ordinary dark cab interior/reflected glass texture. Do not change anything else or add people.",
-      "review_note": "First edit only darkened the unwanted woman's reflection. Second edit removed all window face reflections; real Q and Chano, screens and outside-cab action remain."
+      "review_note": "First edit only darkened the unwanted woman's reflection. Second edit removed all window face reflections; real Q and Chano, screens and outside-cab action remain.",
+      "previous_plate_id": "issue-02-plate-02",
+      "previous_facing_text_page": 4,
+      "reflow_review": "Reviewed against current facing text and final rendered proof.",
+      "scene_anchor": "photograph the dashboard",
+      "native_pixels": [
+        1024,
+        1536
+      ]
     },
     {
-      "plate_id": "issue-02-plate-03",
-      "page": 7,
-      "facing_text_page": 6,
-      "facing_text": "call; he had to ask twice whether the\nhatch was inside the gate.\n“May I come to reception as well?”\nQ asked. “I'm the visitor asking\nabout a socket. I have no\nappointment.”\n“Both of you to the hatch. Stay on\nthe painted walk and wait there.”\n“Thank you. Only reception.”\nA delivery truck arrived. The gate\nopened. Beyond it Q could see the\nsign for reception and a painted\npedestrian strip that disappeared\nbehind a parked trailer. Chano\npointed to the sign.\n“Her name's Lety. She can make a\nwarehouse answer a question. Don't\nspoil it.”\nQ put away the cable and followed\nhim through.\nThey followed the pedestrian strip.\nA floor scrubber turned repeatedly\nat the edge of it. Q moved around it,\nkeeping the charging cable clear of\nits brush. Ahead, conveyor belts\ncrossed behind wire screens; cages\nof parcels rose toward the roof. The\nentrance had made the place seem a\nfortress. Inside it smelled of\ncardboard, hot motors, and\nsomebody's reheated lunch.\nAt the blind end of the trailer, a\npallet mover was turning across\ntheir path. They stopped on the\npainted strip. The hatch was visible\nbeyond a yellow rail; the woman\ninside was still on the telephone.\nUNREGISTERED\nHUMAN-SHAPED OBJECT.\n“You,” Chano said.\n“It could be either of us. You've just\nhad your registration withdrawn.”\nThe mover sounded a warning.\nChano stepped back toward a\nnarrow space beside the trailer. Q\ncould not see whether its sensor\nhad recognized him there.\n“Stay clear of the wheel,” Q said.\n“I know where the wheel is.”\nQ saw the local emergency stop on\nthe rail. He reached for it, the brass\nkey still looped over his hand. A\nlight changed on the mover. The\nload moved a little farther. Q could\nnot see Chano's boots or tell\nwhether the movement was braking\nor another part of the turn. He\nchose the stop.\nHe pressed the button.\nThe rail stopped. So did a much\nlonger section of the line.\nSomewhere beyond the screen a\ncage jolted, and cartons slid from a\nstack. Every camera turned.\n“That stops the whole bay,” Chano\nsaid.\n“I thought it was this section.”\n",
+      "plate_id": "issue-02-plate-04",
+      "page": 9,
+      "facing_text_page": 8,
+      "facing_text": "narrow space beside the trailer. Q\ncould not see whether its sensor\nhad recognized him there.\n“Stay clear of the wheel,” Q said.\n“I know where the wheel is.”\nQ saw the local emergency stop\non the rail. He reached for it, the\nbrass key still looped over his\nhand. A light changed on the\nmover. The load moved a little\nfarther. Q could not see Chano's\nboots or tell whether the\nmovement was braking or\nanother part of the turn. He\nchose the stop.\nHe pressed the button.\nThe rail stopped. So did a much\nlonger section of the line.\nSomewhere beyond the screen a\ncage jolted, and cartons slid from\na stack. Every camera turned.\n“That stops the whole bay,”\nChano said.\n“I thought it was this section.”\n“The bay is local.”\nLety came running from behind\nthe screen in an orange vest. She\nchecked the fallen cartons before\nlooking at either of them.\n“Who touched it?”\n“I did,” Q said. “I couldn't\nconfirm that it saw him.”\nShe looked at Chano, at the\npedestrian strip, and at the\ntrailer blocking the view. “Stand\nthere. Both of you. I can't have\nanother thing moving while I sort\nthis out.”\nSecurity arrived more quickly\nthan reception. A speaker\ninstructed the two men to\nproceed to a containment area.\nChano saw the guard reaching for\na restraint and pulled Q toward\nthe loading exit.\n“We should explain,” Q said.\n“At the front, where people can\nsee us.”\nThey ran beneath a half-raised\nshutter into rain. Q misjudged\nthe turn. His shoulder struck the\nframe; Chano caught his coat\nbefore it snagged. They reached\nthe road beside agave planted to\nimprove the atmosphere of the\nsecurity fence.\nQ saved the time of the collision.\nHis shoulder reported a fault that\nwould not be corrected by\ndescribing the maneuver more\nfavorably.\n“Are you hurt?” he asked.\n",
       "source_block_ids": [
-        38,
-        39,
-        40,
-        41,
-        42,
-        43,
-        44,
-        45,
-        46,
-        47,
-        48,
-        49,
         50,
         51,
         52,
@@ -139,28 +186,7 @@
         54,
         55,
         56,
-        57
-      ],
-      "asset": "output/illustrations/revised/issue-02/plate-03.png",
-      "status": "approved",
-      "caption": "The obstructed walk.",
-      "scene_brief": "Q and Chano on the painted pedestrian walk, a trailer blocking Q's sightline to Chano's feet as a pallet mover turns. Show Q reaching the stop without asserting a collision would otherwise occur.",
-      "prompt": "Use case: illustration-story. Create a NEW full-page portrait 2:3 plate for The Ingenious Machine, not a rearrangement of the reference image. Near-future working Mexico: contemporary buildings, practical modern clothing. Goya-inspired etched realism, assured crosshatching and restrained aquatint, crisp readable gestures. Strict neutral BLACK AND GRAY on PURE WHITE highlights. No sepia, beige, cream, aged paper texture, border, captions or invented signage/slogans. Full bleed art; important hands/faces above bottom6% for separately typeset caption. Highest available native detail. Input1 is Q identity/style ONLY: exact slim long-limbed metal body, narrow segmented oval head, circular ears, exposed neck, articulated hands, ? breastplate and oversized worn coat. No helmet, weapons, horse or compulsory knight. Q is thoughtful and capable. Input2 is Chano identity ONLY: the stocky mustached middle-aged man with short dark hair, practical work shirt, trousers and boots, NOT the woman/child beside him. Preserve his face and build. Do not include the Custodian or reference-image women unless the scene calls for them. Scenes specify whether Q's shoulder is torn; before the loading-shutter accident his coat shoulder is intact. Scene: Inside the logistics park, Q and Chano have been admitted on a painted pedestrian strip toward reception. A parked trailer OBSTRUCTS Q's sightline toward Chano's feet. Across the narrow gap, an autonomous pallet mover is turning with a modest load. Q reaches with an articulated hand toward a small emergency-stop button fixed to the nearby yellow safety rail (rail rendered grayscale); an ordinary brass key loosely loops over his hand. Chano is partly hidden beside the trailer, not pinned under machinery. Show uncertainty, NOT a collision or giant robot battle. Conveyor wire screens behind. Q coat shoulder intact. Ground-level diagonal perspective with real obstruction.",
-      "asset_sha256": "75bc5b26f57d3e3a5bfa13c8d89bfe3eeaa3a06bfb7735bef86f6f1af51f73ed",
-      "raster_size_px": [
-        1024,
-        1536
-      ],
-      "effective_dpi_at_trim": 149.85,
-      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-c4f027d6-9315-482c-b319-7084986c43d6.png",
-      "review_scope": "Facing-scene and principal-character review for revision-proof insertion, not press-resolution approval."
-    },
-    {
-      "plate_id": "issue-02-plate-04",
-      "page": 9,
-      "facing_text_page": 8,
-      "facing_text": "“The bay is local.”\nLety came running from behind the\nscreen in an orange vest. She\nchecked the fallen cartons before\nlooking at either of them.\n“Who touched it?”\n“I did,” Q said. “I couldn't confirm\nthat it saw him.”\nShe looked at Chano, at the\npedestrian strip, and at the trailer\nblocking the view. “Stand there.\nBoth of you. I can't have another\nthing moving while I sort this out.”\nSecurity arrived more quickly than\nreception. A speaker instructed the\ntwo men to proceed to a\ncontainment area. Chano saw the\nguard reaching for a restraint and\npulled Q toward the loading exit.\n“We should explain,” Q said.\n“At the front, where people can see\nus.”\nThey ran beneath a half-raised\nshutter into rain. Q misjudged the\nturn. His shoulder struck the frame;\nChano caught his coat before it\nsnagged. They reached the road\nbeside agave planted to improve the\natmosphere of the security fence.\nQ saved the time of the collision.\nHis shoulder reported a fault that\nwould not be corrected by\ndescribing the maneuver more\nfavorably.\n“Are you hurt?” he asked.\n“No. Are you?”\n“Something is. I'd rather check\nbefore I use it again.”\nChano sat on a bollard. “You see a\nman lose his job and decide he\nneeds another problem.”\n“Was it still coming toward you?” Q\nasked.\n“It had stopped. I was getting out of\nyour way.”\n“I couldn't see that.”\n“You take up more room than you\nthink.”\nQ looked back toward the gap. On\nhis map of the body, his shoulders\nhad precise dimensions. In the\naccount he had begun composing,\nthere had been room for a helper\nbeside Chano. He would have to\ncheck both against what the\ncameras showed.\nLety brought out Chano's lunch and\na bag of his other things. She told\nthem to leave a contact number.\nTwo cartons were damaged and the\nshift was behind. Q supplied the\nnumber on his permit, identified\nhimself as the person who had\npressed the stop, and asked for the\nincident reference. She wrote it on\nthe bag.\n“The brake had already engaged,”\nshe said. “I checked the log.”\n",
-      "source_block_ids": [
+        57,
         58,
         59,
         60,
@@ -171,17 +197,7 @@
         65,
         66,
         67,
-        68,
-        69,
-        70,
-        71,
-        72,
-        73,
-        74,
-        75,
-        76,
-        77,
-        78
+        68
       ],
       "asset": "output/illustrations/revised/issue-02/plate-04.png",
       "status": "approved",
@@ -195,14 +211,32 @@
       ],
       "effective_dpi_at_trim": 149.85,
       "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-a058f4c9-0780-439a-a7c5-43b3ca400c21.png",
-      "review_scope": "Facing-scene and principal-character review for revision-proof insertion, not press-resolution approval."
+      "review_scope": "Facing-scene and principal-character review for revision-proof insertion, not press-resolution approval.",
+      "previous_plate_id": "issue-02-plate-04",
+      "previous_facing_text_page": 8,
+      "reflow_review": "Reviewed against current facing text and final rendered proof.",
+      "scene_anchor": "checked the fallen cartons",
+      "native_pixels": [
+        1024,
+        1536
+      ]
     },
     {
       "plate_id": "issue-02-plate-05",
       "page": 11,
       "facing_text_page": 10,
-      "facing_text": "“Please include the trailer in the\nreview. I couldn't see where he\nwas.”\n“I have been including that trailer\nsince Monday.” She looked at the\ncoat torn against the shutter. “And\ndon't run through loading doors. I\ntold you where to wait.”\nQ thanked her for the reference.\nShe needed to get back inside.\n“I can pay you to show me the way\nto that motel,” Q said when she had\ngone.\n“Pay. Not exposure?”\n“Pesos. I have a limit.”\nThey agreed the fare and a meal. Q\nchecked his balance before offering\neither. Chano asked what the longer\njob would be, if there was one.\n“Travel, tell me when I'm making\nthings worse, help me find my way.”\n“Sounds like governing.”\n“I can't offer you a municipality.”\n“Start with dinner. We can annex\nbreakfast.”\nThat was the governorship first\npromised to Chano. By the time the\npublic heard of it, its borders had\nexpanded considerably.\nThey shook hands. Q stopped\nmeasuring the grip when he noticed\nthat Chano was waiting for him to\nlet go.\nAt the motel, two letters had failed\nin LA ESTRELLA. Q liked the\ndamaged sign enough to write it\ndown; Chano asked whether the hot\nwater had lost anything.\nThe clerk offered two rooms at a\nprice that would end Q's journey on\nthe second morning. They took one\nwith separate beds. She agreed a\ncharge for the socket, inspected his\nadapter, and made him promise not\nto leave it across the doorway. The\ntravel card worked. Q felt no need\nto call this providence.\nAt the agreed hour he called the\nCustodian.\n“I'm safe,” he began. “The first day\nis going to require more than an\nopening paragraph.”\nHe described the stop, the torn\ncoat, the woman with the cartons,\nand Chano. The Custodian listened,\nthen asked whether he wanted to\ncome back.\nQ looked at the charging indicator.\nHe had enough money for another\nday's travel and no reliable estimate\nfor the repair. Returning would be\nsensible. So would finding out\nwhether Chano still wished to travel\nwith him when dinner was paid.\n“I'd like another day. I'll call before\nI spend the repair money.”\nThe Custodian agreed. Q entered\nthe new appointment.\n",
+      "facing_text": "“No. Are you?”\n“Something is. I'd rather check\nbefore I use it again.”\nChano sat on a bollard. “You see\na man lose his job and decide he\nneeds another problem.”\n“Was it still coming toward you?”\nQ asked.\n“It had stopped. I was getting out\nof your way.”\n“I couldn't see that.”\n“You take up more room than\nyou think.”\nQ looked back toward the gap.\nOn his map of the body, his\nshoulders had precise\ndimensions. In the account he\nhad begun composing, there had\nbeen room for a helper beside\nChano. He would have to check\nboth against what the cameras\nshowed.\nLety brought out Chano's lunch\nand a bag of his other things. She\ntold them to leave a contact\nnumber. Two cartons were\ndamaged and the shift was\nbehind. Q supplied the number\non his permit, identified himself\nas the person who had pressed\nthe stop, and asked for the\nincident reference. She wrote it\non the bag.\n“The brake had already engaged,”\nshe said. “I checked the log.”\n“Please include the trailer in the\nreview. I couldn't see where he\nwas.”\n“I have been including that trailer\nsince Monday.” She looked at the\ncoat torn against the shutter.\n“And don't run through loading\ndoors. I told you where to wait.”\nQ thanked her for the reference.\nShe needed to get back inside.\n“I can pay you to show me the\nway to that motel,” Q said when\nshe had gone.\n“Pay. Not exposure?”\n“Pesos. I have a limit.”\nThey agreed the fare and a meal.\nQ checked his balance before\noffering either. Chano asked\nwhat the longer job would be, if\nthere was one.\n“Travel, tell me when I'm making\nthings worse, help me find my\nway.”\n“Sounds like governing.”\n“I can't offer you a municipality.”\n“Start with dinner. We can annex\nbreakfast.”\n",
       "source_block_ids": [
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
         79,
         80,
         81,
@@ -213,17 +247,7 @@
         86,
         87,
         88,
-        89,
-        90,
-        91,
-        92,
-        93,
-        94,
-        95,
-        96,
-        97,
-        98,
-        99
+        89
       ],
       "asset": "output/illustrations/revised/issue-02/plate-05.png",
       "status": "approved",
@@ -237,20 +261,65 @@
       ],
       "effective_dpi_at_trim": 149.85,
       "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-d0ec1b4d-8409-4b2e-a0f3-e20a95e50dd4.png",
-      "review_scope": "Facing-scene and principal-character review for revision-proof insertion, not press-resolution approval."
+      "review_scope": "Facing-scene and principal-character review for revision-proof insertion, not press-resolution approval.",
+      "previous_plate_id": "issue-02-plate-05",
+      "previous_facing_text_page": 10,
+      "reflow_review": "Reviewed against current facing text and final rendered proof.",
+      "scene_anchor": "since Monday",
+      "native_pixels": [
+        1024,
+        1536
+      ]
     },
     {
+      "asset": "output/illustrations/revised/issue-02/supplement-pay.png",
+      "status": "approved",
+      "caption": "Not for agreeing with you.",
+      "scene_brief": "Q and Chano negotiate tomorrow's paid companionship at the motel table.",
       "plate_id": "issue-02-plate-06",
       "page": 13,
       "facing_text_page": 12,
-      "facing_text": "On the motel's noticeboard he\nfound an announcement for a\nreading in Querétaro. Lucía del\nToboso would speak about letters\nand land petitions. He searched the\npublic notice, liked a sentence she\nhad written, and began to imagine a\nconversation.\n“Somebody you know?” Chano\nasked.\n“Somebody I'd like to meet. Lucía\ndel Toboso.”\nChano glanced at the map. “Are we\nchanging the journey for somebody\non a poster?”\n“There are worse reasons.”\n“There are nearer breakfasts.”\nQ laughed. In his notes he wrote\nDulcinea, intending a private joke\nabout the coincidence. Under it he\nput a sentence of his own about\nrecognition. It was already difficult\nto tell how much he wanted to hear\nher and how much he wanted her to\nbe the person who would\nunderstand that sentence.\nBefore dawn, the security footage\nbecame a video. It showed Q facing\nthe pallet mover with his brass key\nraised. Chano appeared as a hand at\nthe edge of the frame. The woman\nin the orange vest did not appear at\nall.\n“Why did they remove you?” Q\nasked.\n“They removed the part where I\ntold you to run.”\nQ began drafting a correction.\nChano asked him to wait until he\nhad slept.\nThe draft remained on Q's screen,\nwhere it had room for everyone and\nno apparent reason for anybody to\nobject to it.\nInterlude: The Inn With\nNo Guest Register\nThe motel called itself an inn\nbecause the word hotel had been\ntaken by a chain whose logo\nresembled a sunrise and whose\nrooms were all the same size. La\nEstrella had twelve rooms, a\ncourtyard with a dead fountain, and\na manager named Señora Celia who\nkept the keys in a biscuit tin. She\nhad inherited the place from a\nbrother who had inherited it from a\nman who claimed to have invented\nthe original sign. No one had\nproved the claim, though several\npeople had tried to sell the proof.\nAt breakfast, Celia served coffee,\neggs, beans, and pan dulce whose\nshape suggested that the baker had\nbeen arguing with the dough. Q\nexamined the food with the\nsolemnity of a botanist.\n",
+      "facing_text": "That was the governorship first\npromised to Chano. By the time\nthe public heard of it, its borders\nhad expanded considerably.\nThey shook hands. Q stopped\nmeasuring the grip when he\nnoticed that Chano was waiting\nfor him to let go.\nAt the motel, two letters had\nfailed in LA ESTRELLA. Q\nliked the damaged sign enough to\nwrite it down; Chano asked\nwhether the hot water had lost\nanything.\nThe clerk offered two rooms at a\nprice that would end Q's journey\non the second morning. They\ntook one with separate beds. She\nagreed a charge for the socket,\ninspected his adapter, and made\nhim promise not to leave it across\nthe doorway. The travel card\nworked. Q felt no need to call this\nprovidence.\nAt the agreed hour he called the\nCustodian.\n“I'm safe,” he began. “The first\nday is going to require more than\nan opening paragraph.”\nHe described the stop, the torn\ncoat, the woman with the\ncartons, and Chano. The\nCustodian listened, then asked\nwhether he wanted to come back.\nQ looked at the charging\nindicator. He had enough money\nfor another day's travel and no\nreliable estimate for the repair.\nReturning would be sensible. So\nwould finding out whether Chano\nstill wished to travel with him\nwhen dinner was paid.\n“I'd like another day. I'll call\nbefore I spend the repair money.”\nThe Custodian agreed. Q entered\nthe new appointment.\nChano put the motel receipt\nbeside him. “And what does\ntomorrow pay?”\nThey agreed a day's rate, separate\nfrom meals and fares. Q checked\nthe total against his card limit\nand entered the amount beside\ntomorrow's date.\n“That's for the day,” Chano said.\n“Not for agreeing with you.”\n“I may be getting a bargain.”\n“Ask me tomorrow.”\nQ sent him a copy. They would\nagree the following day before\nundertaking it; neither had just\npromised to finance the other's\nfuture.\n",
       "source_block_ids": [
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
         100,
         101,
         102,
         103,
         104,
-        105,
+        105
+      ],
+      "scene_anchor": "what does tomorrow pay",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-02/plate-07.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-03/plate-06.png"
+      ],
+      "generation_prompt": "Use case: illustration-story. New unique full-bleed 2:3 portrait monochrome Goya-inspired etched plate. Reference1 supplies ONLY Q and his exact narrow segmented metal head, circular ears, long articulated neck, question-mark breastplate, oversized worn long coat with torn shoulder; and Chano. Reference2 reinforces ONLY Chano's stocky middle-aged body, wavy dark hair, thick mustache, work shirt/trousers/boots. No woman or child. Scene: evening in modest Mexican motel room with TWO separate beds, small table and wall charging socket. Q sits at table, connected safely by charging cable under coat to wall, entering tomorrow's agreed pay on a small tablet, screen angled away with nonlegible date/amount, no invented numerical budget. Chano beside him places a paper motel receipt on table and looks directly at Q with amused bargaining firmness, his old phone in other hand ready to receive the agreement copy. Quiet mutual decision, not employer domination, not sentimental handshake. Q's actual mechanically articulated hands, not human hands. A warm ordinary joke shown through Chano's expression and Q's attentive turn, not a new human smile pasted on metal. Only these two adults. The Custodian's call is finished and he is NOT physically present or projected. Night window can show modest courtyard, no gothic castle. Distinct from breakfast plate: no concha, coffee service, Celia or outdoor table. Neutral black ink and white highlights, no sepia, tinted page, border, baked-in caption, title, speech bubble.",
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-ec694931-da18-40d9-be81-801f30fc785b.png",
+      "asset_sha256": "233b4da701797940bbbe31984701d9e42568b4e129629aa189c2e21b2f9267c2",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "source_color_mode": "RGB",
+      "effective_full_bleed_dpi": 149.85,
+      "visual_review": "Two separate motel beds, torn shoulder, safely routed wall charging lead; receipt, tablet and Chano's old phone. Mutual pay discussion, only Q and Chano present, no Custodian in room or numerical wage invented."
+    },
+    {
+      "plate_id": "issue-02-plate-07",
+      "page": 15,
+      "facing_text_page": 14,
+      "facing_text": "On the motel's noticeboard he\nfound an announcement for a\nreading in Querétaro. Lucía del\nToboso would speak about letters\nand land petitions. He searched\nthe public notice, liked a sentence\nshe had written, and began to\nimagine a conversation.\n“Somebody you know?” Chano\nasked.\n“Somebody I'd like to meet. Lucía\ndel Toboso.”\nChano glanced at the map. “Are\nwe changing the journey for\nsomebody on a poster?”\n“There are worse reasons.”\n“There are nearer breakfasts.”\nQ laughed. In his notes he wrote\nDulcinea, intending a private\njoke about the coincidence.\nUnder it he put a sentence of his\nown about recognition. It was\nalready difficult to tell how much\nhe wanted to hear her and how\nmuch he wanted her to be the\nperson who would understand\nthat sentence.\nBefore dawn, the security footage\nbecame a video. It showed Q\nfacing the pallet mover with his\nbrass key raised. Chano appeared\nas a hand at the edge of the\nframe. The woman in the orange\nvest did not appear at all.\n“Why did they remove you?” Q\nasked.\n“They removed the part where I\ntold you to run.”\nQ began drafting a correction.\nChano asked him to wait until he\nhad slept.\nThe draft remained on Q's\nscreen, where it had room for\neveryone and no apparent reason\nfor anybody to object to it.\nInterlude: The Inn With\nNo Guest Register\nThe motel called itself an inn\nbecause the word hotel had been\ntaken by a chain whose logo\nresembled a sunrise and whose\nrooms were all the same size. La\nEstrella had twelve rooms, a\ncourtyard with a dead fountain,\nand a manager named Señora\nCelia who kept the keys in a\nbiscuit tin. She had inherited the\nplace from a brother who had\ninherited it from a man who\nclaimed to have invented the\noriginal sign. No one had proved\nthe claim, though several people\nhad tried to sell the proof.\n",
+      "source_block_ids": [
         106,
         107,
         108,
@@ -259,7 +328,12 @@
         111,
         112,
         113,
-        114
+        114,
+        115,
+        116,
+        117,
+        118,
+        119
       ],
       "asset": "output/illustrations/revised/issue-02/plate-06.png",
       "status": "approved",
@@ -273,19 +347,22 @@
       ],
       "effective_dpi_at_trim": 149.85,
       "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-2a38f188-2d5c-4a7f-bdeb-6fa6b0d855fa.png",
-      "review_scope": "Facing-scene and principal-character review for revision-proof insertion, not press-resolution approval."
+      "review_scope": "Facing-scene and principal-character review for revision-proof insertion, not press-resolution approval.",
+      "previous_plate_id": "issue-02-plate-06",
+      "previous_facing_text_page": 12,
+      "reflow_review": "Reviewed against current facing text and final rendered proof.",
+      "scene_anchor": "motel's noticeboard",
+      "native_pixels": [
+        1024,
+        1536
+      ]
     },
     {
-      "plate_id": "issue-02-plate-07",
-      "page": 15,
-      "facing_text_page": 14,
-      "facing_text": "“Does the color tell me the flavor?”\nhe asked.\n“At this bakery it tells you the\ncolor,” Chano said.\nQ chose the pink concha. It tasted\nof vanilla. He had expected\nstrawberry and was glad he had\nasked before publishing a guide.\nThe room contained a television\nshowing a morning program in\nwhich three hosts debated whether\nan artificial intelligence could be\ntrusted with the national budget.\nThe host who favored trust had\nnever paid a water bill. The host\nwho opposed it declared that\ntechnology should return to the\nStone Age from a studio containing\nsix cameras.\nQ watched the screen.\n“They are discussing me.”\n“They are discussing an image of\nyou,” said Celia.\n“The distinction is important.”\n“Then you’re already smarter than\nthe television.”\n“Am I?”\n“No. But you ask more expensive\nquestions.”\nAt the next table sat a family from\nApaseo el Grande: a mother, two\ndaughters, and a grandfather who\nhad removed his hearing aid in\norder to enjoy breakfast without the\nburden of conversation. The\nyounger daughter recognized Q\nfrom the video at the distribution\npark.\n“Are you the robot who fought the\nmachine?” she asked.\n“Yes. Though what I fought was\nmainly a badly placed button.”\n“You lost?”\n“Two cartons did. I'm waiting to\nhear about the button.”\n“My brother says everything is a\nfight if you are losing.”\n“Is that accurate?” Q asked Chano.\n“It has been accurate often enough\nto become family property.”\nThe girl asked whether Q slept,\nwhether he dreamed, and whether\nhe could teach her to make a video\ngo viral.\n“I rest while I charge. I haven't\nanything I'd confidently call a\ndream. As for the video, I seem to\nhave become known for something\nI didn't do. What do you want\npeople to see?”\nHer brother had built a cart. It\noverturned every time it turned left.\n“Does he want it shown?”\n“He wants you to tell us how to stop\nit overturning.”\n",
+      "plate_id": "issue-02-plate-08",
+      "page": 17,
+      "facing_text_page": 16,
+      "facing_text": "At breakfast, Celia served coffee,\neggs, beans, and pan dulce whose\nshape suggested that the baker\nhad been arguing with the dough.\nQ examined the food with the\nsolemnity of a botanist.\n“Does the color tell me the\nflavor?” he asked.\n“At this bakery it tells you the\ncolor,” Chano said.\nQ chose the pink concha. It\ntasted of vanilla. He had expected\nstrawberry and was glad he had\nasked before publishing a guide.\nThe room contained a television\nshowing a morning program in\nwhich three hosts debated\nwhether an artificial intelligence\ncould be trusted with the national\nbudget. The host who favored\ntrust had never paid a water bill.\nThe host who opposed it declared\nthat technology should return to\nthe Stone Age from a studio\ncontaining six cameras.\nQ watched the screen.\n“They are discussing me.”\n“They are discussing an image of\nyou,” said Celia.\n“The distinction is important.”\n“Then you’re already smarter\nthan the television.”\n“Am I?”\n“No. But you ask more expensive\nquestions.”\nAt the next table sat a family\nfrom Apaseo el Grande: a\nmother, two daughters, and a\ngrandfather who had removed\nhis hearing aid in order to enjoy\nbreakfast without the burden of\nconversation. The younger\ndaughter recognized Q from the\nvideo at the distribution park.\n“Are you the robot who fought\nthe machine?” she asked.\n“Yes. Though what I fought was\nmainly a badly placed button.”\n“You lost?”\n“Two cartons did. I'm waiting to\nhear about the button.”\n“My brother says everything is a\nfight if you are losing.”\n“Is that accurate?” Q asked\nChano.\n“It has been accurate often\nenough to become family\nproperty.”\nThe girl asked whether Q slept,\nwhether he dreamed, and\nwhether he could teach her to\nmake a video go viral.\n",
       "source_block_ids": [
-        115,
-        116,
-        117,
-        118,
-        119,
         120,
         121,
         122,
@@ -304,7 +381,9 @@
         135,
         136,
         137,
-        138
+        138,
+        139,
+        140
       ],
       "asset": "output/illustrations/revised/issue-02/plate-07.png",
       "status": "approved",
@@ -318,16 +397,22 @@
       ],
       "effective_dpi_at_trim": 149.85,
       "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-97f88acd-d89d-41cd-9197-c2deafda077a.png",
-      "review_scope": "Facing-scene and principal-character review for revision-proof insertion, not press-resolution approval."
+      "review_scope": "Facing-scene and principal-character review for revision-proof insertion, not press-resolution approval.",
+      "previous_plate_id": "issue-02-plate-07",
+      "previous_facing_text_page": 14,
+      "reflow_review": "Reviewed against current facing text and final rendered proof.",
+      "scene_anchor": "pink concha",
+      "native_pixels": [
+        1024,
+        1536
+      ]
     },
     {
-      "plate_id": "issue-02-plate-08",
-      "page": 17,
-      "facing_text_page": 16,
-      "facing_text": "“I'd need to see it. The video may be\nuseful before it is famous.”\n“That’s what people say when they\ndon’t want to share,” she replied.\nCelia brought her a second concha.\nThe child divided it with her sister,\nwho had been looking at Q’s brass\nkey.\n“Is that yours?” the sister asked.\n“The Custodian gave it to me.”\n“Can it open a door?”\n“The workshop door at home. It\nhasn't been much use on the road.”\n“My mother has a drawer full of\nthose.”\n“Hers don't open anything,” the girl\nadded.\n“Then I'm ahead by one.”\nThe grandfather put his hearing aid\nback in. “What’s the machine doing\nhere?”\n“Looking for a woman,” said Chano.\n“Then it has come to the wrong\nplace. Women are everywhere. The\nproblem is getting one to wait for\nyou.”\nThe family laughed. Q smiled and\nlet the joke pass. The grandfather\nremoved his hearing aid again\nbefore anybody could improve it.\nAfter breakfast, Celia asked Q and\nChano to sign the guest register. Q\nwrote his name and the archive's\naddress. Chano wrote CHANO\nPANTOJA, ONE NIGHT,\nPAYING CASH. Under\ndestination he added\nQUERÉTARO. A MEETING\nWITH DULCINEA.\n“A reading,” Q said. “I haven't\narranged a meeting. And she isn't\ncalled that.”\n“It was in your notebook.”\n“That's where it should have\nstayed.”\nChano crossed out the second\nsentence. “You're choosing quite a\nlong journey for a reading.”\n“How far have you driven for\nlunch?”\n“León. But that was a\nrecommendation I could verify.”\nThe argument attracted Celia, the\nfamily, and a delivery driver waiting\nfor a room with a working shower.\nThe driver said the register had\nnever been a reliable record\nbecause half the guests used names\nfrom television and the other half\nused names they expected\ntelevision to learn later.\n“Do you keep the register for the\ngovernment?” Q asked Celia.\n“I keep it for myself.”\n“What information do you need?”\n",
+      "plate_id": "issue-02-plate-09",
+      "page": 19,
+      "facing_text_page": 18,
+      "facing_text": "“I rest while I charge. I haven't\nanything I'd confidently call a\ndream. As for the video, I seem to\nhave become known for\nsomething I didn't do. What do\nyou want people to see?”\nHer brother had built a cart. It\noverturned every time it turned\nleft.\n“Does he want it shown?”\n“He wants you to tell us how to\nstop it overturning.”\n“I'd need to see it. The video may\nbe useful before it is famous.”\n“That’s what people say when\nthey don’t want to share,” she\nreplied.\nCelia brought her a second\nconcha. The child divided it with\nher sister, who had been looking\nat Q’s brass key.\n“Is that yours?” the sister asked.\n“The Custodian gave it to me.”\n“Can it open a door?”\n“The workshop door at home. It\nhasn't been much use on the\nroad.”\n“My mother has a drawer full of\nthose.”\n“Hers don't open anything,” the\ngirl added.\n“Then I'm ahead by one.”\nThe grandfather put his hearing\naid back in. “What’s the machine\ndoing here?”\n“Looking for a woman,” said\nChano.\n“Then it has come to the wrong\nplace. Women are everywhere.\nThe problem is getting one to\nwait for you.”\nThe family laughed. Q smiled and\nlet the joke pass. The grandfather\nremoved his hearing aid again\nbefore anybody could improve it.\nAfter breakfast, Celia asked Q\nand Chano to sign the guest\nregister. Q wrote his name and\nthe archive's address. Chano\nwrote CHANO PANTOJA,\nONE NIGHT, PAYING CASH.\nUnder destination he added\nQUERÉTARO. A MEETING\nWITH DULCINEA.\n“A reading,” Q said. “I haven't\narranged a meeting. And she isn't\ncalled that.”\n“It was in your notebook.”\n“That's where it should have\nstayed.”\nChano crossed out the second\nsentence. “You're choosing quite\na long journey for a reading.”\n",
       "source_block_ids": [
-        139,
-        140,
         141,
         142,
         143,
@@ -364,13 +449,21 @@
       ],
       "effective_dpi_at_trim": 149.85,
       "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-1bdad328-e2fd-495d-af6c-76c8025ddff5.png",
-      "review_scope": "Facing-scene and principal-character review for revision-proof insertion, not press-resolution approval."
+      "review_scope": "Facing-scene and principal-character review for revision-proof insertion, not press-resolution approval.",
+      "previous_plate_id": "issue-02-plate-08",
+      "previous_facing_text_page": 16,
+      "reflow_review": "Reviewed against current facing text and final rendered proof.",
+      "scene_anchor": "Chano crossed out the second sentence",
+      "native_pixels": [
+        1024,
+        1536
+      ]
     },
     {
-      "plate_id": "issue-02-plate-09",
-      "page": 19,
-      "facing_text_page": 18,
-      "facing_text": "“The room number, the date,\nwhether the guest paid, and\nwhether I should change the\nsheets.”\n“Not the purpose of travel?”\n“If people told the truth about that,\nI would have stopped renting\nrooms.”\nCelia showed them a loose card she\nkept inside the cover. A child had\ndrawn a house with a large blue\nwindow and three people inside.\nShe had preserved it with clear\ntape.\n“Does the drawing help you\nremember them?” Q asked.\n“The little one broke a lamp. The\ndrawing came with the apology.”\n“Did it work?”\n“They paid for the lamp as well.”\nAt noon, a black Castalia vehicle\nentered the courtyard. Beto stepped\nout with a camera operator and a\nwoman carrying a release form. The\nnext video, he said, would show Q\nleaving the inn at dawn, carrying\nhis key toward an unknown destiny.\nChano would follow at a respectful\ndistance. The sunrise would be\ngenuine but color-corrected.\n“We need the guest register in\nframe,” said the camera operator.\n“It establishes authenticity.”\nCelia closed the book.\n“No.”\nThe woman explained that it would\nbe blurred.\n“Then why do you need it?”\n“The texture of it.”\n“The texture is made of people’s\nnames.”\nQ stood beside Celia. “The register\nis restricted.”\nBeto looked pleased. “Good. That’s\na strong line.”\n“It is not a line. It is a decision.”\nThe camera operator began filming\nanyway. Chano stepped in front of\nthe lens. The operator asked\nwhether he had signed a release.\n“No.”\n“Then you are obstructing\nproduction.”\n“You are obstructing breakfast.”\nThe delivery driver joined him, then\nthe mother from Apaseo. The girl\nlifted her half of a concha as if it\nwere a protest banner. The\ngrandfather stood because everyone\nelse had stood, though he could not\nhear the dispute.\nBeto lowered his hand. “Q, you are\nmaking a scene.”\n“The scene was already here.”\nThe Castalia vehicle left without\nfootage. Before departing, Beto\n",
+      "plate_id": "issue-02-plate-10",
+      "page": 21,
+      "facing_text_page": 20,
+      "facing_text": "“How far have you driven for\nlunch?”\n“León. But that was a\nrecommendation I could verify.”\nThe argument attracted Celia, the\nfamily, and a delivery driver\nwaiting for a room with a\nworking shower. The driver said\nthe register had never been a\nreliable record because half the\nguests used names from\ntelevision and the other half used\nnames they expected television to\nlearn later.\n“Do you keep the register for the\ngovernment?” Q asked Celia.\n“I keep it for myself.”\n“What information do you need?”\n“The room number, the date,\nwhether the guest paid, and\nwhether I should change the\nsheets.”\n“Not the purpose of travel?”\n“If people told the truth about\nthat, I would have stopped\nrenting rooms.”\nCelia showed them a loose card\nshe kept inside the cover. A child\nhad drawn a house with a large\nblue window and three people\ninside. She had preserved it with\nclear tape.\n“Does the drawing help you\nremember them?” Q asked.\n“The little one broke a lamp. The\ndrawing came with the apology.”\n“Did it work?”\n“They paid for the lamp as well.”\nAt noon, a black Castalia vehicle\nentered the courtyard. Beto\nstepped out with a camera\noperator and a woman carrying a\nrelease form. The next video, he\nsaid, would show Q leaving the\ninn at dawn, carrying his key\ntoward an unknown destiny.\nChano would follow at a\nrespectful distance. The sunrise\nwould be genuine but\ncolor-corrected.\n“We need the guest register in\nframe,” said the camera operator.\n“It establishes authenticity.”\nCelia closed the book.\n“No.”\nThe woman explained that it\nwould be blurred.\n“Then why do you need it?”\n“The texture of it.”\n“The texture is made of people’s\nnames.”\nQ stood beside Celia. “The\nregister is restricted.”\n",
       "source_block_ids": [
         164,
         165,
@@ -394,11 +487,7 @@
         183,
         184,
         185,
-        186,
-        187,
-        188,
-        189,
-        190
+        186
       ],
       "asset": "output/illustrations/revised/issue-02/plate-09.png",
       "status": "approved",
@@ -412,14 +501,25 @@
       ],
       "effective_dpi_at_trim": 149.85,
       "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-5d41fac1-270e-496f-95e6-22274f0cec04.png",
-      "review_scope": "Facing-scene and principal-character review for revision-proof insertion, not press-resolution approval."
+      "review_scope": "Facing-scene and principal-character review for revision-proof insertion, not press-resolution approval.",
+      "previous_plate_id": "issue-02-plate-09",
+      "previous_facing_text_page": 18,
+      "reflow_review": "Celia's closed register and Q beside her occur on facing page 20; Chano blocking the camera continues this same scene on page 22. Retained as a scene illustration, not an exact single-instant depiction.",
+      "scene_anchor": "Celia closed the book",
+      "native_pixels": [
+        1024,
+        1536
+      ]
     },
     {
-      "plate_id": "issue-02-plate-10",
-      "page": 21,
-      "facing_text_page": 20,
-      "facing_text": "photographed the motel sign from\nthe road. The image was later used\nin a campaign for ethical\nstorytelling.\nThat afternoon, Celia tore Q’s entry\nfrom the register. She did not want\nCastalia to claim the name, and she\ndid not want Q to claim the inn as\nthe first station of his legend. She\nput the page in a drawer with\nunpaid bills and a photograph of\nher brother beside the original sign.\n“You should keep it,” Chano said.\n“Why?”\n“Because somebody will ask.”\n“Let them ask.”\nShe handed him the torn page.\n“Then answer them.”\nLater, the page appeared in the case\nfile under PROOF OF\nVOLUNTARY JOURNEY. The\nwords were read as evidence that Q\nhad chosen his quest freely. The\ntorn edge, the erased destination,\nand the names above and below his\nown were not entered into the\nargument.\nChano testified that the page\nproved only that Q had spent one\nnight in a motel and that Celia\ndisliked cameras. Castalia's counsel\npreferred the heroic interpretation.\nIt gave the brief a protagonist who\nhad chosen his own quest and a\nblank space where the archive's\nresponsibility might otherwise have\nstood.\nInterlude: The Man Who\nSold Them Water\nThe first person to record Q’s\nadventure was not a journalist,\nscholar, or member of Castalia. It\nwas the person who sold bottles of\nwater beside the distribution park\nand gave his name differently\ndepending on the form.\nThe tax office called him Hilaria de\nJesús Morales. His wife called him\nHilario. The security guard called\nhim THE VENDOR, because the\nguard had been taught to treat the\nperson as a category first and the\ncategory as a person afterward.\nHilario answered to all three\nnames, though he charged the\nguard more than the others.\nHis table bore a hand-painted sign:\nCOLD WATER -\nROOM-TEMPERATURE\nWATER - WATER ON CREDIT\nThe credit was not real. It was a\njoke for recognizing customers who\ndid not understand jokes. They\nwere usually the same customers\nwho asked whether the water came\nfrom a certified source while\nstanding beside a drainage ditch.\n",
+      "plate_id": "issue-02-plate-11",
+      "page": 23,
+      "facing_text_page": 22,
+      "facing_text": "Beto looked pleased. “Good.\nThat’s a strong line.”\n“It is not a line. It is a decision.”\nThe camera operator began\nfilming anyway. Chano stepped\nin front of the lens. The operator\nasked whether he had signed a\nrelease.\n“No.”\n“Then you are obstructing\nproduction.”\n“You are obstructing breakfast.”\nThe delivery driver joined him,\nthen the mother from Apaseo.\nThe girl lifted her half of a concha\nas if it were a protest banner. The\ngrandfather stood because\neveryone else had stood, though\nhe could not hear the dispute.\nBeto lowered his hand. “Q, you\nare making a scene.”\n“The scene was already here.”\nThe Castalia vehicle left without\nfootage. Before departing, Beto\nphotographed the motel sign\nfrom the road. The image was\nlater used in a campaign for\nethical storytelling.\nThat afternoon, Celia tore Q’s\nentry from the register. She did\nnot want Castalia to claim the\nname, and she did not want Q to\nclaim the inn as the first station\nof his legend. She put the page in\na drawer with unpaid bills and a\nphotograph of her brother beside\nthe original sign.\n“You should keep it,” Chano said.\n“Why?”\n“Because somebody will ask.”\n“Let them ask.”\nShe handed him the torn page.\n“Then answer them.”\nLater, the page appeared in the\ncase file under PROOF OF\nVOLUNTARY JOURNEY. The\nwords were read as evidence that\nQ had chosen his quest freely.\nThe torn edge, the erased\ndestination, and the names above\nand below his own were not\nentered into the argument.\nChano testified that the page\nproved only that Q had spent one\nnight in a motel and that Celia\ndisliked cameras. Castalia's\ncounsel preferred the heroic\ninterpretation. It gave the brief a\nprotagonist who had chosen his\nown quest and a blank space\nwhere the archive's responsibility\nmight otherwise have stood.\n",
       "source_block_ids": [
+        187,
+        188,
+        189,
         190,
         191,
         192,
@@ -448,13 +548,21 @@
       ],
       "effective_dpi_at_trim": 149.85,
       "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-8945a826-118b-4649-829c-717a100a925d.png",
-      "review_scope": "Facing-scene and principal-character review for revision-proof insertion, not press-resolution approval."
+      "review_scope": "Facing-scene and principal-character review for revision-proof insertion, not press-resolution approval.",
+      "previous_plate_id": "issue-02-plate-10",
+      "previous_facing_text_page": 20,
+      "reflow_review": "Reviewed against current facing text and final rendered proof.",
+      "scene_anchor": "She handed him the torn page",
+      "native_pixels": [
+        1024,
+        1536
+      ]
     },
     {
-      "plate_id": "issue-02-plate-11",
-      "page": 23,
-      "facing_text_page": 22,
-      "facing_text": "On the afternoon Q and Chano\nentered the park, Hilario was\narguing with the guard about the\nprice of a bottle.\n“The bottle costs twelve pesos,”\nHilario said.\n“The approved rate is ten.”\n“The approved rate does not pay for\nthe ice.”\n“The ice is not part of the product.”\n“Without ice, the product is not part\nof the heat.”\nThe guard looked at the bottle,\nwhich sweated on the table with\nmore honesty than most of the\npeople discussing it.\n“You have five minutes to move the\ntable.”\n“And afterward?”\n“Afterward the protocol will be\napplied.”\n“Which protocol?”\n“Whichever applies.”\nHilario had learned that whichever\napplies meant a person retained\nenough authority to threaten, but\nnot enough to explain. He offered\nthe guard a bottle.\n“Take it.”\n“I do not accept bribes.”\n“It is water.”\n“I do not accept gifts.”\n“Then I’ll sell it to you on credit.”\nThe guard, who was new, recorded\nthe exchange as ATTEMPTED\nPURCHASE OF OFFICIAL.\nHilario did not know he had begun\na file until a camera turned toward\nhis table.\nSoon afterward Q appeared,\nfollowed by Chano, both with the\nair of two men who had lost an\nargument with a building. Q carried\nthe key in his hand. Chano carried\nmud on his boots.\n“Cold water?” Hilario asked.\n“Two cold ones, please,” Q said. He\nchecked that the seals were intact.\nQ approached the sign.\n“Do many people ask for credit?”\n“The ones with the biggest trucks.”\nQ offered the travel card. His\ndisplay showed an authorization,\nbut Hilario's reader lost its\nconnection before confirming the\nsale.\n“Your card hasn't paid me,” Hilario\nsaid.\n“The reader approved it.”\n“This one didn't.”\nQ put the authorization number on\nthe receipt and paid from the\nemergency cash the Custodian had\nsupplied. He would have to check\nlater whether he had been charged\n",
+      "plate_id": "issue-02-plate-12",
+      "page": 25,
+      "facing_text_page": 24,
+      "facing_text": "Interlude: The Man Who\nSold Them Water\nThe first person to record Q’s\nadventure was not a journalist,\nscholar, or member of Castalia. It\nwas the person who sold bottles\nof water beside the distribution\npark and gave his name\ndifferently depending on the\nform.\nThe tax office called him Hilaria\nde Jesús Morales. His wife called\nhim Hilario. The security guard\ncalled him THE VENDOR,\nbecause the guard had been\ntaught to treat the person as a\ncategory first and the category as\na person afterward. Hilario\nanswered to all three names,\nthough he charged the guard\nmore than the others.\nHis table bore a hand-painted\nsign:\nCOLD WATER -\nROOM-TEMPERATURE\nWATER - WATER ON\nCREDIT\nThe credit was not real. It was a\njoke for recognizing customers\nwho did not understand jokes.\nThey were usually the same\ncustomers who asked whether\nthe water came from a certified\nsource while standing beside a\ndrainage ditch.\nOn the afternoon Q and Chano\nentered the park, Hilario was\narguing with the guard about the\nprice of a bottle.\n“The bottle costs twelve pesos,”\nHilario said.\n“The approved rate is ten.”\n“The approved rate does not pay\nfor the ice.”\n“The ice is not part of the\nproduct.”\n“Without ice, the product is not\npart of the heat.”\nThe guard looked at the bottle,\nwhich sweated on the table with\nmore honesty than most of the\npeople discussing it.\n“You have five minutes to move\nthe table.”\n“And afterward?”\n“Afterward the protocol will be\napplied.”\n“Which protocol?”\n“Whichever applies.”\nHilario had learned that\nwhichever applies meant a\nperson retained enough authority\nto threaten, but not enough to\n",
       "source_block_ids": [
         205,
         206,
@@ -474,18 +582,7 @@
         220,
         221,
         222,
-        223,
-        224,
-        225,
-        226,
-        227,
-        228,
-        229,
-        230,
-        231,
-        232,
-        233,
-        234
+        223
       ],
       "asset": "output/illustrations/revised/issue-02/plate-11.png",
       "status": "approved",
@@ -499,14 +596,33 @@
       ],
       "effective_dpi_at_trim": 149.85,
       "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-26045116-5a5b-40ce-b889-0af8dd687a9e.png",
-      "review_scope": "Facing-scene and principal-character review for revision-proof insertion, not press-resolution approval."
+      "review_scope": "Facing-scene and principal-character review for revision-proof insertion, not press-resolution approval.",
+      "previous_plate_id": "issue-02-plate-11",
+      "previous_facing_text_page": 22,
+      "reflow_review": "Reviewed against current facing text and final rendered proof.",
+      "scene_anchor": "approved rate does not pay for the ice",
+      "native_pixels": [
+        1024,
+        1536
+      ]
     },
     {
-      "plate_id": "issue-02-plate-12",
-      "page": 25,
-      "facing_text_page": 24,
-      "facing_text": "twice. He opened one bottle for\nChano and kept the other for\nrinsing his mouth. The distinction\nseemed too unappetizing to explain\nat the table.\n“Are you the people who stopped\nthe bay?” Hilario asked.\n“I pressed the stop,” Q said. “What\nhas the guard told you?”\n“That a machine attacked a\nmachine.”\n“I was worried about the man\nbeside it.”\n“Then he'll be in the expensive\nversion.”\nHilario looked at Chano.\n“Does he always talk like that?”\n“When he’s awake.”\nHilario laughed and took out his\nphone. He had no intention of\nrecording an adventure. He wanted\nto show his wife the man who had\nargued with a card reader and\nmanaged to pay twice. He recorded\nthe last seconds of the argument\nwith the guard, the sign, Q’s key,\nand Chano’s face, which was cut off\nby a crate of soft drinks.\nBy sunset, the video of Q had begun\nto circulate. The first version\nshowed him alone. The second\nincluded Chano’s hand. The third\nincluded the pallet mover’s\nwarning. The fourth included\nHilario’s table at the edge of the\nframe, though no one knew whether\nthe table belonged to the story or\nmerely to the roadside.\nLater, Castalia bought the video for\na sum Hilario first considered a\nprize and then a price. They told\nhim they would use it to document\nthe spontaneous birth of a local\nlegend.\n“And what am I?” he asked.\n“An incidental witness,” said the\nauthorization woman.\n“Does that pay differently from\nbeing a witness?”\nThe woman offered him a new\nform.\nHilario did not sign it.\nOn the day Q bought the water,\nbefore anyone had offered to\npurchase the afternoon, Hilario had\nput away his phone, lifted the table,\nand asked Q whether he intended to\nreturn.\n“I don't know when,” Q said. “I\nwould like to hear what happens\nabout your table.”\n“Stories do not buy ice.”\n“I'll buy water.”\n“That helps.”\nQ kept the receipt. The line about\nice went into his journal, with\nHilario's name and the failed card\n",
+      "plate_id": "issue-02-plate-13",
+      "page": 27,
+      "facing_text_page": 26,
+      "facing_text": "explain. He offered the guard a\nbottle.\n“Take it.”\n“I do not accept bribes.”\n“It is water.”\n“I do not accept gifts.”\n“Then I’ll sell it to you on credit.”\nThe guard, who was new,\nrecorded the exchange as\nATTEMPTED PURCHASE\nOF OFFICIAL. Hilario did not\nknow he had begun a file until a\ncamera turned toward his table.\nSoon afterward Q appeared,\nfollowed by Chano, both with the\nair of two men who had lost an\nargument with a building. Q\ncarried the key in his hand.\nChano carried mud on his boots.\n“Cold water?” Hilario asked.\n“Two cold ones, please,” Q said.\nHe checked that the seals were\nintact.\nQ approached the sign.\n“Do many people ask for credit?”\n“The ones with the biggest\ntrucks.”\nQ offered the travel card. His\ndisplay showed an authorization,\nbut Hilario's reader lost its\nconnection before confirming the\nsale.\n“Your card hasn't paid me,”\nHilario said.\n“The reader approved it.”\n“This one didn't.”\nQ put the authorization number\non the receipt and paid from the\nemergency cash the Custodian\nhad supplied. He would have to\ncheck later whether he had been\ncharged twice. He opened one\nbottle for Chano and kept the\nother for rinsing his mouth. The\ndistinction seemed too\nunappetizing to explain at the\ntable.\n“Are you the people who stopped\nthe bay?” Hilario asked.\n“I pressed the stop,” Q said.\n“What has the guard told you?”\n“That a machine attacked a\nmachine.”\n“I was worried about the man\nbeside it.”\n“Then he'll be in the expensive\nversion.”\nHilario looked at Chano.\n“Does he always talk like that?”\n“When he’s awake.”\n",
       "source_block_ids": [
+        223,
+        224,
+        225,
+        226,
+        227,
+        228,
+        229,
+        230,
+        231,
+        232,
+        233,
         234,
         235,
         236,
@@ -521,15 +637,7 @@
         245,
         246,
         247,
-        248,
-        249,
-        250,
-        251,
-        252,
-        253,
-        254,
-        255,
-        256
+        248
       ],
       "asset": "output/illustrations/revised/issue-02/plate-12.png",
       "status": "approved",
@@ -544,14 +652,33 @@
       "effective_dpi_at_trim": 149.85,
       "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-f49581fa-26bd-4321-a305-b1a44f9dab28.png",
       "review_scope": "Facing-scene and principal-character review for revision-proof insertion, not press-resolution approval.",
-      "review_note": "Cash transaction continues across the preceding and facing narrative pages; facing page recalls the failed reader and Q keeping the receipt. Extra stock bottles remain for sale. Incidental highway skyline is fictional."
+      "review_note": "Cash transaction continues across the preceding and facing narrative pages; facing page recalls the failed reader and Q keeping the receipt. Extra stock bottles remain for sale. Incidental highway skyline is fictional.",
+      "previous_plate_id": "issue-02-plate-12",
+      "previous_facing_text_page": 24,
+      "reflow_review": "Reviewed against current facing text and final rendered proof.",
+      "scene_anchor": "reader lost its connection",
+      "native_pixels": [
+        1024,
+        1536
+      ]
     },
     {
-      "plate_id": "issue-02-plate-13",
-      "page": 27,
-      "facing_text_page": 26,
-      "facing_text": "transaction. It was an excellent\nsentence. He was already tempted\nto remove the transaction, which\nmade him sound less competent.\nWhen the buyers returned, they\noffered Hilario money for his\ncarbon copy of the receipt. He\nrefused. They offered him more for\nthe table. He refused that too,\nbecause the table was already\noccupied by bottles and because\nselling an object did not make the\nstory beside it more true.\nLater, when the receipt appeared in\ncourt, the judge admitted it as proof\nthat a purchase had occurred.\nHilario watched the hearing on his\ndaughter’s television. The broadcast\nmisspelled his name again.\nHis daughter asked whether he\nintended to complain.\n“No,” Hilario said. “I intend to raise\nthe price.”\nThe next morning, his sign read:\nCOLD WATER -\nROOM-TEMPERATURE\nWATER - WATER ON CREDIT\n- WATER WITH TESTIMONY\nThe last category cost fifteen pesos.\nInterlude: The Machine in\nthe Wrong Place\nThere was a smaller machine in Q's\nfirst account of the distribution\npark, and Chano insisted on\nkeeping it there. Before they\nreached the pallet mover, a floor\nscrubber had been turning\nrepeatedly at the edge of the\npedestrian strip.\n“It looks trapped,” Q had said.\n“It does that every morning.”\n“Has anyone reported it?”\n“Every morning.”\nQ had crouched far enough away to\nread LOW WATER on its display.\nA brush caught the loose hem of his\ncoat. He freed it before the machine\ncould complete its case against\nunsolicited assistance.\n“We could find the cleaner,” he\nsaid.\n“We're supposed to be finding\nreception.”\nQ took down the machine's service\nnumber and left it at that. In the\naccount he wrote later, he nearly\nmade the scrubber a companion he\nhad declined to abandon. Chano\nrecalled that they had abandoned it\nquite promptly.\n“We should keep your version,” Q\nsaid.\n“It's shorter.”\n“It also explains why the floor was\nstill dirty.”\n",
+      "asset": "output/illustrations/revised/issue-02/supplement-video.png",
+      "status": "approved",
+      "caption": "For his wife, not the archive.",
+      "scene_brief": "Hilario frames a phone video; a drinks crate cuts Chano from its sightline.",
+      "plate_id": "issue-02-plate-14",
+      "page": 29,
+      "facing_text_page": 28,
+      "facing_text": "Hilario laughed and took out his\nphone. He had no intention of\nrecording an adventure. He\nwanted to show his wife the man\nwho had argued with a card\nreader and managed to pay twice.\nHe recorded the last seconds of\nthe argument with the guard, the\nsign, Q’s key, and Chano’s face,\nwhich was cut off by a crate of\nsoft drinks.\nBy sunset, the video of Q had\nbegun to circulate. The first\nversion showed him alone. The\nsecond included Chano’s hand.\nThe third included the pallet\nmover’s warning. The fourth\nincluded Hilario’s table at the\nedge of the frame, though no one\nknew whether the table belonged\nto the story or merely to the\nroadside.\nLater, Castalia bought the video\nfor a sum Hilario first considered\na prize and then a price. They\ntold him they would use it to\ndocument the spontaneous birth\nof a local legend.\n“And what am I?” he asked.\n“An incidental witness,” said the\nauthorization woman.\n“Does that pay differently from\nbeing a witness?”\nThe woman offered him a new\nform.\nHilario did not sign it.\nOn the day Q bought the water,\nbefore anyone had offered to\npurchase the afternoon, Hilario\nhad put away his phone, lifted\nthe table, and asked Q whether\nhe intended to return.\n“I don't know when,” Q said. “I\nwould like to hear what happens\nabout your table.”\n“Stories do not buy ice.”\n“I'll buy water.”\n“That helps.”\nQ kept the receipt. The line about\nice went into his journal, with\nHilario's name and the failed\ncard transaction. It was an\nexcellent sentence. He was\nalready tempted to remove the\ntransaction, which made him\nsound less competent.\nWhen the buyers returned, they\noffered Hilario money for his\ncarbon copy of the receipt. He\nrefused. They offered him more\nfor the table. He refused that too,\nbecause the table was already\noccupied by bottles and because\nselling an object did not make the\nstory beside it more true.\n",
       "source_block_ids": [
+        249,
+        250,
+        251,
+        252,
+        253,
+        254,
+        255,
         256,
         257,
         258,
@@ -559,7 +686,35 @@
         260,
         261,
         262,
-        263,
+        263
+      ],
+      "scene_anchor": "He recorded the last seconds",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-02/plate-11.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-02/plate-07.png"
+      ],
+      "generation_prompt": "Use case: illustration-story. Unique full-bleed 2:3 portrait black-and-white Goya-inspired etched illustration. Reference1 supplies ONLY Hilario the older thin roadside water vendor: short thinning grey-dark hair, small mustache, deeply lined face, short-sleeved light striped shirt and trousers; same table/cooler/industrial fence. Reference2 supplies ONLY Q's exact segmented metal head, ring ears, neck, slender articulated body, question-mark breastplate and oversized long coat torn at shoulder, plus stocky Chano's wavy dark hair/mustache/work shirt. No Celia, other woman or child. Scene: Hilario takes out his ordinary phone and records a short clip to show his wife after the disputed water-card sale. View over Hilario's shoulder in foreground, his recognizable profile visible; his two hands hold phone horizontally aimed toward Q and Chano beside table. A stacked soft-drinks crate partly obscures Chano from the PHONE'S sightline while Q's tall metal head remains visible above. The men exist in the real scene, not solely inside the screen. Phone preview can be a simple tiny grayscale live composition, no lettering or fabricated captions. Q has ordinary paper receipt and brass key, Chano muddy boots, bottle/cooler on table. No security chase, violence, later contract buyers or courtroom. Contemporary Bajio distribution-park roadside, wire fence and trucks, not tropical town. Neutral ink, clear white highlights, fine crosshatching, no sepia or paper-wide gray wash, no border/title/caption/speech bubbles.",
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-f9ed8c38-4792-4ea3-9126-a4d99b51c87c.png",
+      "asset_sha256": "e1c08f2caf4f4bf83245ed0187b134bab9661de20e4591941b1156e6cc411bf5",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "source_color_mode": "RGB",
+      "effective_full_bleed_dpi": 149.85,
+      "visual_review": "Corrected drinks-crate stack obscures Chano from the phone's lower sightline; preview also shows obstruction. Q remains visible with key and receipt. Hilario records, not an invented media crew or later licensing negotiation.",
+      "edit_prompt": "Precise composition correction to this image only. Preserve Hilario's foreground profile and hands/phone, Q's exact head/body/old torn coat/key/receipt, Chano's identity and pose, table, cooler, fence and neutral etched style. The text requires a soft-drinks crate to cut off Chano's face from the phone's viewpoint. Raise the existing dark stack of drinks crates between Hilario and Chano so its top blocks Chano's face up to his eyes along the phone's low sightline, while Q remains fully visible above and to the right. Do not add a new person or change faces. Correct the tiny PHONE PREVIEW to match that actual obstruction: Q visible, Chano's face largely hidden behind the dark crate, not both complete smiling faces unobstructed. Phone remains held horizontally, display no text. Keep everything else unchanged, pure black-and-white no new tint.",
+      "edit_reference_images": [
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-f9ed8c38-4792-4ea3-9126-a4d99b51c87c.png"
+      ],
+      "selected_edited_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-426cd3a0-fd59-4eea-91e0-7e878c5f61a2.png"
+    },
+    {
+      "plate_id": "issue-02-plate-15",
+      "page": 31,
+      "facing_text_page": 30,
+      "facing_text": "Later, when the receipt appeared\nin court, the judge admitted it as\nproof that a purchase had\noccurred. Hilario watched the\nhearing on his daughter’s\ntelevision. The broadcast\nmisspelled his name again.\nHis daughter asked whether he\nintended to complain.\n“No,” Hilario said. “I intend to\nraise the price.”\nThe next morning, his sign read:\nCOLD WATER -\nROOM-TEMPERATURE\nWATER - WATER ON\nCREDIT - WATER WITH\nTESTIMONY\nThe last category cost fifteen\npesos.\nInterlude: The Machine\nin the Wrong Place\nThere was a smaller machine in\nQ's first account of the\ndistribution park, and Chano\ninsisted on keeping it there.\nBefore they reached the pallet\nmover, a floor scrubber had been\nturning repeatedly at the edge of\nthe pedestrian strip.\n“It looks trapped,” Q had said.\n“It does that every morning.”\n“Has anyone reported it?”\n“Every morning.”\nQ had crouched far enough away\nto read LOW WATER on its\ndisplay. A brush caught the loose\nhem of his coat. He freed it\nbefore the machine could\ncomplete its case against\nunsolicited assistance.\n“We could find the cleaner,” he\nsaid.\n“We're supposed to be finding\nreception.”\nQ took down the machine's\nservice number and left it at that.\nIn the account he wrote later, he\nnearly made the scrubber a\ncompanion he had declined to\nabandon. Chano recalled that\nthey had abandoned it quite\npromptly.\n“We should keep your version,” Q\nsaid.\n“It's shorter.”\n“It also explains why the floor\nwas still dirty.”\n",
+      "source_block_ids": [
         264,
         265,
         266,
@@ -572,7 +727,13 @@
         273,
         274,
         275,
-        276
+        276,
+        277,
+        278,
+        279,
+        280,
+        281,
+        282
       ],
       "asset": "output/illustrations/revised/issue-02/plate-13.png",
       "status": "approved",
@@ -586,11 +747,39 @@
       ],
       "effective_dpi_at_trim": 149.85,
       "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-61734583-c8b5-4e53-8451-d852af17982d.png",
-      "review_scope": "Facing-scene and principal-character review for revision-proof insertion, not press-resolution approval."
+      "review_scope": "Facing-scene and principal-character review for revision-proof insertion, not press-resolution approval.",
+      "previous_plate_id": "issue-02-plate-13",
+      "previous_facing_text_page": 26,
+      "reflow_review": "Reviewed against current facing text and final rendered proof.",
+      "scene_anchor": "brush caught the loose hem",
+      "native_pixels": [
+        1024,
+        1536
+      ]
     }
   ],
-  "generation_mode": "built-in image generation; fourteen unique scene assets; two targeted truck-window reflection edits, first unsuccessful",
+  "generation_mode": "built-in image generation; sixteen selected unique scene assets: thirteen retained and three new. Earlier truck-window reflection required two edits, first unsuccessful; new phone recording required one crate/preview correction. Originals retained.",
   "celia_reference": "output/illustrations/revised/issue-02/plate-07.png",
   "lety_reference": "output/illustrations/revised/issue-02/plate-04.png",
-  "hilario_reference": "output/illustrations/revised/issue-02/plate-11.png"
+  "hilario_reference": "output/illustrations/revised/issue-02/plate-11.png",
+  "retained_unused_assets": [
+    {
+      "asset": "output/illustrations/revised/issue-02/plate-03.png",
+      "asset_sha256": "75bc5b26f57d3e3a5bfa13c8d89bfe3eeaa3a06bfb7735bef86f6f1af51f73ed",
+      "reason": "Emergency-stop close-up no longer has its own facing page after reflow; retained on disk and in history, not duplicated or forced opposite another scene."
+    }
+  ],
+  "generation_method": "Thirteen existing assets retained in current sequence, three new scenes generated by built-in image tool, one targeted crate/phone-preview correction. All earlier PNGs and cached originals retained. No procedural illustration editing.",
+  "proof_outputs": {
+    "reading": {
+      "path": "output/pdf/ingenious-issue-02-revised-en-bw.pdf",
+      "sha256": "e294880f68a8206e62fadf5624b6e1273e220c00e30fb3cb46817de06de93ad5"
+    },
+    "a3": {
+      "path": "output/pdf/ingenious-issue-02-revised-en-bw-a3.pdf",
+      "sha256": "85d1aa9eb8742047cdcd5bac8c5d8f87b362c6e8483f2547228c3b79215a4e65",
+      "sides": 16,
+      "duplex_sheets": 8
+    }
+  }
 }
