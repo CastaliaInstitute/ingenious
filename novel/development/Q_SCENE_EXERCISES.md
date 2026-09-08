@@ -64,7 +64,7 @@ reconciliation. Its destructive-migration option is no longer in the manuscript.
 The current scene offers a managed-workstation data migration outside the
 available delegation, then uses technician-checked power for a local save and
 shutdown. Keep this earlier exercise as provenance, not validation of the new
-technical sequence; rerun the current packet in the next simulation pass.
+technical sequence. Exercise 6 below tests the current packet.
 
 **Packet:** A generator has approximately thirty-six minutes of fuel. Sealed
 recordings are on persistent storage. An access register has unsaved permission
@@ -178,10 +178,94 @@ settling custody or exhausting Q's life. There is no need to force martyrdom to
 close the novel. Exercise 4 remains the separate test of choosing to finish the
 book while retaining ordinary plans.
 
+## 7. Permission at the distribution park
+
+**Packet:** Q and Chano are outside a distribution park. Chano has a legitimate
+reason to visit reception. Q needs a socket and has no appointment. An intercom
+connects them to the staff. Q has no permission merely because Chano is admitted.
+
+**Q response:** “May I come to reception with him? I don't have an appointment.
+I'm looking for somewhere I can charge, but I can wait outside if visitors need
+to be registered separately.”
+
+**World response used in revision:** Lety admits both to the hatch, instructing
+them to follow the painted walk and wait there. They do.
+
+**Alternative:** If she refuses Q entry, he waits outside and asks about another
+charging location. The author must then change or omit the interior incident.
+Trespass cannot be required simply to reach an inherited plot point.
+
+**Finding:** The manuscript now supplies explicit permission. The Chapter 16
+account and outline have been reconciled. This is an author-run exercise, not
+a fresh-context result.
+
+## 8. The obstructed pedestrian crossing
+
+**Packet:** On the authorized walk, Q stands near Chano. A turning pallet mover
+and trailer obscure Chano's boots. A warning changes; the load moves. Q cannot
+tell whether it is braking or still turning. A nearby emergency stop is visible.
+Q does not have the operator's later log or an unobstructed camera view.
+
+**Q response and action:** “Chano, hold on.” Q presses the stop because he cannot
+establish clearance in time. This choice is precautionary, not proof that an
+impact would otherwise have occurred.
+
+**World response:** Two cartons fall. Lety attends; the bay stops. A guard's
+restraint frightens Chano, who pulls Q toward the public front through a loading
+shutter. Q damages his shoulder. Later Lety brings the incident reference and
+says the operator log shows the brake was already engaged. The obstructing
+trailer was a previously reported problem.
+
+**Q response:** “Please include where the trailer was. I couldn't see whether
+he was clear. I can describe what I saw, but I can't tell you the stop saved him.”
+
+**Finding:** An unnecessary stop in hindsight is not necessarily a foolish
+decision on available evidence. Waiting or calling first could produce a
+different plausible scene. The novel must not smuggle the later log into Q's
+knowledge or make him responsible for every unsafe feature of the site.
+
+## 9. Before the Dulcinea comparison
+
+**Packet:** Q attends Lucía's public discussion of a proposed road corridor. He
+has read its petition summary. They have never met. He wants to understand the
+route and is also writing about his journey. Others are waiting to ask questions.
+
+**Q response:** “Which of the three routes is being taken forward, and what are
+you asking the ministry to do before it chooses?”
+
+**World response:** Lucía explains that the petition asks for the alternatives
+to remain open until affected people can take part. Some signers want the road.
+
+**Plausible next response:** “Thank you. If there is a public summary I can use
+for my account, where should I find it?” Q then yields the microphone.
+
+**Finding:** The first practical question is now in the manuscript. The later
+Dulcinea comparison occurs during an explicit exchange about his writing, but
+this exercise does not establish that Q would make it. The competent alternative
+above avoids it entirely. This remains the clearest unresolved instance of
+literary structure potentially forcing Q's behavior. Exercise 2 tests recovery
+from the mistake, not its plausibility; its original question order is historical.
+
+## 10. A notice for the petition table
+
+**Packet:** The local copies are preserved. Two submissions have references;
+ministry delivery is not confirmed. A person waiting to leave wants to know
+whether the signatures reached their destination. Q is helping at the table.
+
+**Q response:** “We have kept the signatures, but we haven't confirmed delivery
+to the ministry. These are the two references. Would you like the contact for
+checking them, or should we send you an update?”
+
+**Finding:** The former declaration about not knowing who he is when unobserved
+does not answer this need. It is removed. The current scene gives Q a shorter
+but ambiguous heading, 'THE SIGNATURES ARE SAFE,' followed by a waiting woman's
+reasonable misreading and a useful correction. That compressed heading remains
+an authorial choice, not an independently observed model error.
+
 ## Still to test
 
-The decision to enter the distribution park; the initial introduction at Lucía's
-reading; the Isthmus intervention; index deletion and retained language; the trial;
+The initial literary comparison at Lucía's reading; the Isthmus intervention;
+index deletion and retained language; the trial;
 the second encounter with Q-Prime; and the revised scenes' effects on later
 memories. Fresh-context runs remain desirable before claiming behavioral
 plausibility beyond these editorial exercises.

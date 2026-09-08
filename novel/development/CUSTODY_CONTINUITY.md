@@ -50,8 +50,13 @@ again at the start of Book Two.
 | Q's litigation advice | His own adviser distinguishes admissions, disputed claims, and disclosure scope. | Records are preserved pending a defined inspection proposal; the ruling does not authorize indiscriminate copying of all deposits. |
 
 The hearing does not settle humanity, ownership, every damage claim, or the
-archive's governance in one judgment. Q acknowledges his actual premature stop
-at the distribution park. The wind-farm operator's precautionary group stop is
+archive's governance in one judgment. Lety admitted Q and Chano to reception
+along the marked walk; Q did not enter without permission. A trailer obstructed
+his view of Chano and the pallet mover. He pressed the stop; a later operator log
+showed the brake had already engaged. Q acknowledges the two damaged cartons and
+interruption without accepting every claimed loss. The hearing requests the
+entry audio, operator record, and camera sequence, distinguishing what Q could
+know then from what the later record establishes. The wind-farm operator's precautionary group stop is
 distinct from both that incident and the promotional picture of an attack.
 
 ## Changes through the ending

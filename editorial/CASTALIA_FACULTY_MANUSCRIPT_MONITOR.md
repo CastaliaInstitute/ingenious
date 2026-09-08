@@ -10,13 +10,16 @@ The monitor is especially suited to *The Ingenious Machine*, a Mexican
 reimagining of *Don Quixote*. It uses Cervantes as a structural and ethical
 lens, not as a demand for imitation.
 
-For the Spanish master, the prose should draw on seventeenth-century Spanish
-syntax, cadence, and comic narration while remaining legible to a contemporary
-reader. Period turns are instruments of character and misunderstanding, not
-ornamental archaism. Q should mistake idiom, honorifics, metaphor, and
-administrative language for literal instruction; human characters should in
-turn mistake his literal answers for arrogance, prophecy, or legal authority.
-Each misunderstanding must alter an action or relationship and carry a cost.
+The current revision source is the English manuscript; the Spanish edition
+predates it. A subsequent Spanish revision may draw on seventeenth-century syntax,
+cadence, and comic narration while remaining legible to a contemporary reader.
+Q already understands ordinary idiom, metaphor, consent, and conversational
+intent. Period turns are chosen flourishes or habits, not evidence of elementary
+language failure. His errors should arise from incomplete evidence, confidence,
+flattering analogy, bodily inexperience, and competing commitments. Do not force
+a mistake simply because the inherited plot requires one. Other people may
+misinterpret a competent reply, and Q may sometimes help without causing a new
+injury. The user's latest behavioral direction and `novel/Q_DESIGN.md` govern.
 
 ## Faculty posture
 
@@ -65,7 +68,7 @@ An A+ manuscript should be:
 Q's errors should be intelligent, motivated, and costly. A correct observation
 made for the wrong reason is usually more comic than a foolish observation. The
 manuscript should not let Q learn a lesson once and then apply it perfectly.
-In the Spanish master, test whether a seventeenth-century phrase or syntactic
+In the subsequent Spanish revision, test whether a seventeenth-century phrase or syntactic
 turn creates an additional, consequential misunderstanding rather than merely
 making the narrator sound old-fashioned.
 
@@ -95,9 +98,11 @@ The protagonist must lose control of the story in ways that produce new action.
 
 ### The ending
 
-The resolution should be both earned and insufficient. A moral choice must
-have a cost that cannot be converted into redemption, publicity, or a clean
-thesis. Ordinary life should continue around the aftermath.
+The resolution should be both earned and insufficient. Consequences cannot all
+be converted into redemption, publicity, or a clean thesis. Do not invent an
+avoidable catastrophe or martyrdom to manufacture a cost. The latest direction
+is that death means finishing the book: Q may survive and keep ordinary plans
+when the Custodian puts down the pen.
 
 ## Review procedure
 

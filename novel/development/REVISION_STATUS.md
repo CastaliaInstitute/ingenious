@@ -26,14 +26,29 @@ the book.” The source now permits Q to remain alive when the writing stops.
   attractive premature story. The Custodian corrects his own records, shares a
   joke, and repairs Q's coat pocket for the workshop key. Chano's name is aligned
   with Chapter 2. The Isthmus contract is delivered through the grid.
-- Chapter 2 now begins with Q seeking a socket. He saves Chano's dismissal notice,
-  makes an unjustified access assumption, and presses a stop too early. The
-  resulting damage and security incident lead to the viral clip. The governorship
+- Chapter 2 now begins with Q seeking a socket. He saves Chano's dismissal notice
+  and explicitly obtains Lety's permission to enter along the marked walk. A
+  trailer obstructs his view of Chano and the pallet mover; he presses the stop.
+  The later brake log does not retroactively supply an unobstructed view. Two
+  damaged cartons and a separate security incident lead to the viral clip. The governorship
   begins as a joke in a paid companionship agreement. Q calls home and amends his
   plan. The motel, water vendor, and scrubber interludes have continuity repairs.
-- Chapter 3 preserves Lucía's work and central objection. Q apologizes, asks a
-  practical question, and accepts a follow-up task for the petition. He can still
-  confuse a good autobiographical sentence with the requested incident report.
+- Chapter 3 now lets Q ask the practical route question first. His subsequent
+  literary comparison occurs in a discussion of his writing, and he withdraws it
+  when Lucía objects. Its behavioral plausibility remains unvalidated. Lucía's
+  copy-shop errand, the engineer's partial help, conflicting preferences about
+  the road, and a clerk's missed lunch give other people independent activity.
+  The failed upload predates Q's signature. His address causes another review;
+  it does not cause every delay. The identity soliloquy is replaced by an ambiguous
+  public notice, a waiting woman's question, and a practical correction.
+- The motel register's Dulcinea joke is Chano's, copied from Q's notebook and
+  crossed out after Q objects. The key opens the home workshop. The vendor keeps
+  a carbon receipt while Q keeps his own; the later licensing visit is separated
+  from their first encounter. Chapter 16 now requests the entry audio and operator
+  log rather than silently retaining the old unauthorized-entry account.
+- The editorial monitor no longer prescribes elementary literalism or treats the
+  superseded Spanish edition as the current source. This removes a contradictory
+  instruction that had survived the earlier motivation pass.
 - Chapter 4 and both interludes now distinguish Q's negotiated appearance license
   from Castalia's disputed body ownership. The Custodian offers an alternative;
   Q admits wanting travel, repair, and an audience. Estela remains the interviewer.
@@ -141,12 +156,12 @@ the book.” The source now permits Q to remain alive when the writing stops.
   and ends in a verified save and shutdown. The pending migration is a data-
   handling issue, not an inexplicably fatal operation on Q. Ownership,
   maintenance, and the Tijuana paper returns remain open.
-- `Q_SCENE_EXERCISES.md` records six author-run exercises with limited packets,
+- `Q_SCENE_EXERCISES.md` records ten author-run exercises with limited packets,
   alternative responses, consequences, and editorial findings. These are not
   independent blind runs; the limitation is explicit.
 - Current structural check: 22 unique chapter headings, two book divisions,
   one coda, and the pen-down final sentence. The manuscript is approximately
-  73,700 whitespace-delimited words including front matter. Selected checks
+  74,200 whitespace-delimited words including front matter. Selected checks
   confirm the late delivery, travel, and maintenance anchors and reject named
   obsolete events. `git diff --check` passes. These checks do not establish
   whole-book literary quality or validate any PDF or illustration.
@@ -165,6 +180,13 @@ the book.” The source now permits Q to remain alive when the writing stops.
   job has been sent. `ISSUE_01_PRODUCTION.md` records the specification and limits.
   Other English issues, full-book PDFs and the Spanish edition remain superseded;
   the serial indexes now label this explicitly instead of calling them ready.
+- Issues 2 and 3 now have source-bound facing-scene plans and temporary layout
+  proofs, not finished illustrated editions. Issue 2 uses 12.4-point type across
+  28 pages (14 planned plates, seven duplex sheets); Issue 3 uses 12-point type
+  across 20 pages (10 planned plates, five sheets). No source text is dropped to
+  achieve those counts. The enlarged Issue 2 setting avoids a four-line final
+  narrative page. All 22 chapter pagination plans pass rendered text-order checks.
+  The new plans mark every missing plate as planned, never approved.
 
 ## Required next work
 

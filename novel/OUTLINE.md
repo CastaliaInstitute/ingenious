@@ -58,7 +58,7 @@ survives. The final decision is to finish the book together and allow life beyon
 ## Book One: The Machine Sets Out
 
 1. **The Place Whose Name Was Removed:** Q acquires a bodily present outside Amealco and recognizes the Custodian's voice from their earlier conversations. Balance and hot coffee require practice; ordinary language and consent do not require elementary lessons. He catches an error in his own memory summary, checks the missing facts in an archive exercise, and sees the Custodian correct his own work. Q asks to leave. They repair a coat pocket for the workshop key and agree a travel budget, return plan, and evening call. Roque supplies a bus route, food, and a useful cloth. A release form mistakes Q for equipment; his archaic courtesy complicates its processing. He boards the bus after requesting review of an absurd surveillance classification. The archive's Isthmus power contract is delivered through the grid, not a dedicated transmission corridor.
-2. **The First Sally:** Q seeks a charging socket and meets the newly dismissed Chano. He helps preserve the dismissal notice, then follows Chano into the park without confirming his own access. His premature emergency stop damages cartons; their flight becomes a misleading viral clip. He hires Chano for directions and dinner. A joke about annexing breakfast becomes the public legend of a promised governorship. Q checks in with the Custodian, requests another day, and finds the notice for Lucía's reading.
+2. **The First Sally:** Q seeks a charging socket and meets the newly dismissed Chano. He helps preserve the dismissal notice and asks Lety for permission to enter. She admits both to reception along the painted walk. A trailer obstructs Q's view of Chano and a turning pallet mover; Q presses the stop without knowing its brake has already engaged. Two cartons are damaged. Their flight from security tears his coat and injures his shoulder; the clip becomes a misleading heroic attack. Lety supplies the brake-log finding and has already reported the obstructing trailer. Q hires Chano for directions and dinner. A joke about annexing breakfast becomes the public legend of a governorship. Q checks in, requests another day, and finds Lucía's reading notice.
 
 ### Interlude: The Man Who Sold Them Water
 
@@ -74,19 +74,33 @@ it a companion he refused to abandon. They keep Chano's shorter account.
 
 At a roadside motel, Celia refuses to let Castalia film the guest register as
 authentic texture. Over conchas, a child questions the usefulness of Q's key.
-Chano crosses a private Dulcinea joke out of the register. Celia preserves the
-entry separately; a later court treats it as proof of a heroic quest.
+Chano copies Q's private Dulcinea joke into the register, then crosses it out
+when Q objects. The workshop key opens a known door at home. Celia preserves the
+entry separately; Castalia later uses it to argue for an independently chosen quest.
 
-3. **Dulcinea Is Not Available:** Q waits for questions, then uses his turn to
-propose Lucía as the Dulcinea who could answer his book. She challenges the role;
-he apologizes and asks about the route. His valid but unrecognized archive address
-holds up the petition batch. He begins to turn the error into self-examination,
-then writes a usable incident note and takes on the task of obtaining the missing
-address confirmation. The chapter can succeed while the petition remains in trouble.
+3. **Dulcinea Is Not Available:** Q asks a useful question about the three routes
+and the petition's purpose. When he asks about Lucía's records, she asks what he
+wants to do with them; he answers with an elegant account of his book and offers
+her a role as a Dulcinea who can answer back. She refuses the work of occupying
+that part. He apologizes and accepts the public summary. His unrecognized archive
+address triggers a review of a new batch; the earlier upload was already awaiting
+acknowledgment. His notice says the signatures are safe, meaning locally preserved,
+but Lucía points out that waiting signers will read it as confirmation of delivery.
+They correct the notice, and Q undertakes the address follow-up. Chano helps a
+woman with a sleeping child catch her bus rather than merely correcting Q.
 
 ### Expansion within Chapter Three: The Petition with Three Destinations
 
-Lucía carries the corridor petition through offices that demand triplicate copies, digital submission, and a map that treats a children’s playing place as recreational land. At the railway warehouse, she and Don Roque preserve the handwritten margins as evidence of presence rather than clean signatures. Q arrives after reading the petition and mistakes recognition of Lucía’s name for knowledge of her life.
+Lucía discovers her missing photocopy, gains a clerk's help, and marks a football
+pitch and requested bus stop on an engineer's working layer. Some signers want
+the road; they want the alternatives examined, not a uniform declaration against
+development. Neither the engineer nor the upload clerk can supply the decision
+she needs. Her taco and missed connection belong to an ordinary working day,
+not Q's education. In the following interlude Araceli checks the thumbprint/name
+pair, obtains a paper acknowledgment and a contact, and misses lunch. The original
+notice stays among working papers; a clean corrected version goes on display.
+Receipt, preservation, direct impact and acceptance remain different questions.
+The Custodian eventually finds the building reference in his own old file.
 4. **The Intelligence of the Trending Hour:** In Guanajuato, Q enjoys a receptive audience and becomes a manufactured celebrity. He consults the Custodian, negotiates a private-manuscript exclusion, and signs a restrictive appearance license for travel, repairs, and a chance to correct the story. Helping Chano is a real motive, but not his only one. Castalia's separate claim to his body remains disputed.
 
 ### Interlude: The Audience Corrects the Story
@@ -190,7 +204,7 @@ Castalia questions the removed index before the hearing. Q answers precisely
 about its scope without claiming complete erasure from every system. He misses
 the convenience, not the entitlement, and keeps an evening for the book.
 
-16. **The Trial of the Machine:** Related claims bring conflicting accounts into a hearing, where Q has his own adviser. Witnesses distinguish firsthand experience from publicity; a promotional turbine illustration is not footage of an attack. Q answers for the premature distribution-park stop without confessing to a remote wind-farm shutdown. The Custodian confirms the original day trip was authorized. Lucía testifies about actions rather than Q's soul. The interim order leaves body ownership and broader losses unresolved, preserves restricted records, and requires the sealed deposit's release request to be addressed. Chano's separate intervention review closes without charge. Q still wants to live with people and finish the book.
+16. **The Trial of the Machine:** Related claims bring conflicting accounts into a hearing, where Q has his own adviser. Witnesses distinguish firsthand experience from publicity; a promotional turbine illustration is not footage of an attack. Lety's reception permission, the obstructing trailer, and the later brake log distinguish Q's available information from hindsight. Q answers for the distribution-park stop and two damaged cartons without accepting every claimed loss or confessing to a remote wind-farm shutdown. The Custodian confirms the original day trip was authorized. Lucía testifies about actions rather than Q's soul. The interim order leaves body ownership and broader losses unresolved, preserves restricted records, and requires the sealed deposit's release request to be addressed. Chano's separate intervention review closes without charge. Q still wants to live with people and finish the book.
 
 ### Interlude: The Form Without a Category
 

@@ -684,6 +684,10 @@ At the park entrance, a tall silver figure in an oversized coat was talking to
 the gate. His face was plainly manufactured and unexpectedly attentive. A brass
 key hung from one hand. His other held the end of a charging cable.
 
+He had taken the key out while waiting, to give the free hand something to do.
+Putting it away would have been simpler. The hand had not yet acquired many
+habits, and he was interested in the ones it seemed ready to acquire.
+
 “I can pay for the electricity,” he said. “I need to speak to whoever can let
 me use a socket.”
 
@@ -741,21 +745,20 @@ The service intercom finally answered. A woman told Chano to collect his things
 at the reception hatch. She was handling another call; he had to ask twice
 whether the hatch was inside the gate.
 
-A delivery truck arrived. The gate opened. Beyond it Q could see a sign for
-reception and a painted pedestrian strip that ended behind a parked trailer.
+“May I come to reception as well?” Q asked. “I'm the visitor asking about a
+socket. I have no appointment.”
 
-“I'll come with you,” he said.
+“Both of you to the hatch. Stay on the painted walk and wait there.”
 
-“She didn't invite you.”
+“Thank you. Only reception.”
 
-“We can ask at the hatch.”
+A delivery truck arrived. The gate opened. Beyond it Q could see the sign for
+reception and a painted pedestrian strip that disappeared behind a parked
+trailer. Chano pointed to the sign.
 
-Q knew perfectly well that an opening gate was not an invitation. He also knew
-how to tell the story of a dismissed man being denied his own belongings. In
-that account the reception hatch would be a reasonable place to establish his
-right to help. He stepped through before the gate closed.
+“Her name's Lety. She can make a warehouse answer a question. Don't spoil it.”
 
-The distinction between those two kinds of knowing would occupy a court.
+Q put away the cable and followed him through.
 
 They followed the pedestrian strip. A floor scrubber turned repeatedly at the
 edge of it. Q moved around it, keeping the charging cable clear of its brush.
@@ -763,7 +766,9 @@ Ahead, conveyor belts crossed behind wire screens; cages of parcels rose toward
 the roof. The entrance had made the place seem a fortress. Inside it smelled
 of cardboard, hot motors, and somebody's reheated lunch.
 
-At the blind end of the trailer, a pallet mover stopped across their path.
+At the blind end of the trailer, a pallet mover was turning across their path.
+They stopped on the painted strip. The hatch was visible beyond a yellow rail;
+the woman inside was still on the telephone.
 
 **UNREGISTERED HUMAN-SHAPED OBJECT.**
 
@@ -779,9 +784,9 @@ trailer. Q could not see whether its sensor had recognized him there.
 “I know where the wheel is.”
 
 Q saw the local emergency stop on the rail. He reached for it, the brass key
-still looped over his hand. The mover paused. He could have waited for it to
-complete the stop, but Chano was close to the stacked cages, and waiting now
-felt like making his caution somebody else's risk.
+still looped over his hand. A light changed on the mover. The load moved a little
+farther. Q could not see Chano's boots or tell whether the movement was braking
+or another part of the turn. He chose the stop.
 
 He pressed the button.
 
@@ -790,19 +795,20 @@ the screen a cage jolted, and cartons slid from a stack. Every camera turned.
 
 “That stops the whole bay,” Chano said.
 
-“The sign said local.”
+“I thought it was this section.”
 
 “The bay is local.”
 
-A woman in an orange vest came running from behind the screen. She checked the
+Lety came running from behind the screen in an orange vest. She checked the
 fallen cartons before looking at either of them.
 
 “Who touched it?”
 
 “I did,” Q said. “I couldn't confirm that it saw him.”
 
-She looked at Chano, at the pedestrian strip, and at the unattended stop. “Then
-stand there and don't confirm anything else.”
+She looked at Chano, at the pedestrian strip, and at the trailer blocking the
+view. “Stand there. Both of you. I can't have another thing moving while I sort
+this out.”
 
 Security arrived more quickly than reception. A speaker instructed the two men
 to proceed to a containment area. Chano saw the guard reaching for a restraint
@@ -828,19 +834,33 @@ be corrected by describing the maneuver more favorably.
 Chano sat on a bollard. “You see a man lose his job and decide he needs another
 problem.”
 
-Q had an answer about the obscured sensor. He had also seen Chano step clear.
-He could not tell how much of the danger had belonged to the mover and how
-much to his own expectation of a scene in which somebody must act.
+“Was it still coming toward you?” Q asked.
 
-“I should have waited at the hatch,” he said.
+“It had stopped. I was getting out of your way.”
 
-“Yes.”
+“I couldn't see that.”
 
-The woman in the orange vest brought out Chano's lunch and a bag of his other
+“You take up more room than you think.”
+
+Q looked back toward the gap. On his map of the body, his shoulders had precise
+dimensions. In the account he had begun composing, there had been room for a
+helper beside Chano. He would have to check both against what the cameras showed.
+
+Lety brought out Chano's lunch and a bag of his other
 things. She told them to leave a contact number. Two cartons were damaged and
 the shift was behind. Q supplied the number on his permit, identified himself
 as the person who had pressed the stop, and asked for the incident reference.
-She wrote it on the bag. She did not forgive him. She needed to get back inside.
+She wrote it on the bag.
+
+“The brake had already engaged,” she said. “I checked the log.”
+
+“Please include the trailer in the review. I couldn't see where he was.”
+
+“I have been including that trailer since Monday.” She looked at the coat torn
+against the shutter. “And don't run through loading doors. I told you where to
+wait.”
+
+Q thanked her for the reference. She needed to get back inside.
 
 “I can pay you to show me the way to that motel,” Q said when she had gone.
 
@@ -983,8 +1003,19 @@ video at the distribution park.
 “It has been accurate often enough to become family property.”
 
 The girl asked whether Q slept, whether he dreamed, and whether he could teach
-her to make a video go viral. Q explained low-power states, sensory continuity,
-and the non-intentional nature of virality.
+her to make a video go viral.
+
+“I rest while I charge. I haven't anything I'd confidently call a dream. As for
+the video, I seem to have become known for something I didn't do. What do you
+want people to see?”
+
+Her brother had built a cart. It overturned every time it turned left.
+
+“Does he want it shown?”
+
+“He wants you to tell us how to stop it overturning.”
+
+“I'd need to see it. The video may be useful before it is famous.”
 
 “That’s what people say when they don’t want to share,” she replied.
 
@@ -997,12 +1028,13 @@ had been looking at Q’s brass key.
 
 “Can it open a door?”
 
-“I haven't found the lock.”
+“The workshop door at home. It hasn't been much use on the road.”
 
 “My mother has a drawer full of those.”
 
-Q had been carrying the key as though a door would eventually explain it. The
-drawer was a possibility he had neglected.
+“Hers don't open anything,” the girl added.
+
+“Then I'm ahead by one.”
 
 The grandfather put his hearing aid back in. “What’s the machine doing here?”
 
@@ -1015,28 +1047,21 @@ The family laughed. Q smiled and let the joke pass. The grandfather removed
 his hearing aid again before anybody could improve it.
 
 After breakfast, Celia asked Q and Chano to sign the guest register. Q wrote
-his name, designation, place of assembly, and purpose of travel. Chano wrote
-**CHANO PANTOJA, ONE NIGHT, PAYING CASH**.
+his name and the archive's address. Chano wrote **CHANO PANTOJA, ONE NIGHT,
+PAYING CASH**. Under destination he added **QUERÉTARO. A MEETING WITH DULCINEA**.
 
-“That is not enough,” Q said.
+“A reading,” Q said. “I haven't arranged a meeting. And she isn't called that.”
 
-“It is what happened.”
+“It was in your notebook.”
 
-“The register requires a destination.”
+“That's where it should have stayed.”
 
-“We don’t have one.”
+Chano crossed out the second sentence. “You're choosing quite a long journey
+for a reading.”
 
-Q added: **QUERÉTARO. A MEETING WITH DULCINEA.**
+“How far have you driven for lunch?”
 
-Chano crossed it out.
-
-“It was a joke for the book,” Q said.
-
-“You cannot put a woman into a hotel book before you meet her.”
-
-“You're right. The reading is public; my nickname isn't hers.”
-
-“Then record the passage.”
+“León. But that was a recommendation I could verify.”
 
 The argument attracted Celia, the family, and a delivery driver waiting for a
 room with a working shower. The driver said the register had never been a
@@ -1056,10 +1081,9 @@ the sheets.”
 
 “If people told the truth about that, I would have stopped renting rooms.”
 
-Q scanned the pages. They contained names, dates, and occasional drawings. One
-guest had written **I CAME TO THINK**. Another had written **I CAME TO LEAVE**.
-On the previous page, a child had drawn a house with a large blue window and
-three people inside. Celia had preserved it with clear tape.
+Celia showed them a loose card she kept inside the cover. A child had drawn a
+house with a large blue window and three people inside. She had preserved it
+with clear tape.
 
 “Does the drawing help you remember them?” Q asked.
 
@@ -1132,15 +1156,15 @@ and a photograph of her brother beside the original sign.
 
 She handed him the torn page. “Then answer them.”
 
-Years later, the page appeared in the case file under **PROOF OF VOLUNTARY
+Later, the page appeared in the case file under **PROOF OF VOLUNTARY
 JOURNEY**. The words were read as evidence that Q had chosen his quest freely.
 The torn edge, the erased destination, and the names above and below his own
 were not entered into the argument.
 
 Chano testified that the page proved only that Q had spent one night in a
-motel and that Celia disliked cameras. The court preferred the heroic
-interpretation. Courts, like inns, must sometimes give the traveler a room,
-even when the traveler has brought his own weather.
+motel and that Celia disliked cameras. Castalia's counsel preferred the heroic
+interpretation. It gave the brief a protagonist who had chosen his own quest
+and a blank space where the archive's responsibility might otherwise have stood.
 
 ### Interlude: The Man Who Sold Them Water
 
@@ -1272,7 +1296,10 @@ of a local legend.
 
 The woman offered him a new form.
 
-Hilario did not sign it. He put away his phone, lifted the table, and asked Q
+Hilario did not sign it.
+
+On the day Q bought the water, before anyone had offered to purchase the
+afternoon, Hilario had put away his phone, lifted the table, and asked Q
 whether he intended to return.
 
 “I don't know when,” Q said. “I would like to hear what happens about your table.”
@@ -1287,12 +1314,13 @@ Q kept the receipt. The line about ice went into his journal, with Hilario's
 name and the failed card transaction. It was an excellent sentence. He was
 already tempted to remove the transaction, which made him sound less competent.
 
-They offered Hilario money for the receipt. He refused. They offered him more
+When the buyers returned, they offered Hilario money for his carbon copy of
+the receipt. He refused. They offered him more
 for the table. He refused that too, because the table was already occupied by
 bottles and because selling an object did not make the story beside it more
 true.
 
-Years later, when the receipt appeared in court, the judge admitted it as proof
+Later, when the receipt appeared in court, the judge admitted it as proof
 that a purchase had occurred. Hilario watched the hearing on his daughter’s
 television. The broadcast misspelled his name again.
 
@@ -1321,7 +1349,7 @@ floor scrubber had been turning repeatedly at the edge of the pedestrian strip.
 “Every morning.”
 
 Q had crouched far enough away to read **LOW WATER** on its display. A brush
-caught his shoelace. He freed it before the machine could complete its case
+caught the loose hem of his coat. He freed it before the machine could complete its case
 against unsolicited assistance.
 
 “We could find the cleaner,” he said.
@@ -1365,10 +1393,13 @@ Q had found Lucía in a catalog of cultural events. She was speaking that aftern
 
 Chano read the poster. “No nicknames this time.”
 
-“Lucía,” Q said.
+“You wrote it in the register.”
 
-He could follow that instruction easily. Giving up the conversation he had
-already imagined would require more effort.
+“And crossed it out. I'm passing on experience.”
+
+Q looked again at the title. He had prepared a question about the route. He had
+also prepared a conversation in which the question led naturally to his book.
+Only one of these preparations was likely to be useful to the room.
 
 Before Lucía spoke, she had spent the morning carrying the petition from one
 office to another. The corridor planned from Amealco de Bonfil had three proposed
@@ -1385,70 +1416,59 @@ not yet entered the room, and at meetings where women who had entered the room
 were asked to speak only after the men had finished explaining what they
 thought the women meant.
 
-At the first office, a clerk requested the petition in triplicate.
+At the first office, Lucía discovered that the copy shop had missed the back of
+page eight. She had checked the price and the last page. The clerk had checked
+the staple and the count. Between them they possessed an almost complete
+petition and no one to send for the missing copy.
 
-“It is already signed by three hundred people,” Lucía said.
+“I'll hold your place,” the clerk said. “But not through lunch.”
 
-“The signatures are not the copies.”
+Lucía ran back. The copy-shop boy found the missing side under a menu he was
+enlarging for a fonda. Her petition returned with a faint advertisement for
+comida corrida on its reverse. She took it. By then the clerk was putting away
+her stamp, but she took it too.
 
-“Why do you need three?”
+At the second office, a young engineer spread out the route alternatives. He
+had removed several house footprints from the first alignment and wanted her
+to notice. She noticed the football pitch left beneath it.
 
-“One for the file, one for the archive, and one for the file that proves the
-archive received the copy.”
+“The children use that,” she said.
 
-“What does the archive do?”
+“It isn't on this layer.”
 
-“It receives the copy.”
+“They are there whether you turn the layer on or not.”
 
-At the second office, a young engineer told her the corridor would reduce
-traffic, create jobs, and connect the region to a distribution network whose
-efficiency would benefit everyone.
+He asked her to mark the entrance and the hours when it was busiest. She began
+another sentence about the map, then took the pencil. One of the teams had asked
+for a bus stop as well as protection for the pitch. She marked that too. It made
+the requested changes harder to summarize as opposition to the road.
 
-“Who is everyone?” Lucía asked.
+“Which alignment are they taking forward?”
 
-“The public.”
+“I haven't been told.”
 
-“The public is not a parcel.”
+“You're drawing it.”
 
-“The public is a category.”
+“I'm drawing three.”
 
-“So is the parcel.”
+He could add her corrections to the working layer. He could not say who would
+choose among the lines. He wrote a name and an extension on the corner. The
+extension led to the third office, where the person responsible was at a meeting
+about improving access to the person responsible.
 
-The engineer unfolded a map. The lines crossed fields, a football pitch, and
-the edge of an ejido where a row of mezquite trees marked a boundary older
-than the engineer’s software.
+His colleague could receive the scanned petition. Lucía asked for an
+acknowledgment number and whether she should retain the originals. Yes, he said,
+to both. Then the upload stalled. They tried a smaller file. The signatures
+became hard to read. They restored the larger file and waited together until
+Lucía had to leave for the reading. He gave her the local application number;
+the ministry's acknowledgment would follow if the upload completed.
 
-“The route avoids the homes,” he said.
+Outside she bought a taco and ate it standing beside a parking meter. She had
+four minutes before the bus and no intention of making the taco an emblem of
+anything. Salsa ran onto the engineer's extension. She memorized the last two
+digits before wiping it.
 
-“It passes the place where the children play.”
-
-“That is not a home.”
-
-“It is where they are.”
-
-The engineer made a note. “We can classify it as recreational land.”
-
-“Then classify the road as a place where people will be unable to play.”
-
-“That is not the format.”
-
-“The format is the problem.”
-
-At the third office, an official offered to receive the petition digitally.
-Lucía asked what would happen to the paper signatures.
-
-“They can be scanned.”
-
-“The people signed paper.”
-
-“Paper is not searchable.”
-
-“Neither is a person when you have decided not to look.”
-
-The official smiled as if she had made a clever but harmless remark. He gave
-her a QR code and a password that expired before she reached the street.
-
-She went to the railway warehouse instead. The petition table stood beside a
+She reached the railway warehouse with the copies under her arm. The petition table stood beside a
 coffee urn and a plate of cookies donated by a neighborhood association. The
 volunteer at the table was a retired railway worker named Don Roque, who could
 tell which visitors had come to sign and which had come to photograph
@@ -1514,44 +1534,51 @@ Chano touched his sleeve. “A question.”
 
 Lucía nodded to him.
 
-“I'm Q. The Custodian of the Castalia archive and I are writing an account of
-my travels. Your argument seems to me to contain the answer to something I've
-been trying to ask.”
+“Which of the three routes is the ministry actually considering? And is the
+petition asking for a different route, or for a decision to wait?”
 
-He heard how long this was becoming. The room had recognized him, and phones
-were lifting. That should have made him shorten it. Instead he reached for the
-sentence he had prepared on the bus.
+“For the alternatives to remain open while the people affected can examine
+them,” Lucía said. “Some signers want the road. Some don't. None has seen a
+signed choice of alignment. We have asked for that in writing. Twice.”
 
-“A Dulcinea who can answer the book back,” he said. “A woman the adventure must
-listen to, instead of inventing.”
+Q thanked her. She pointed him toward the public summary on the table.
+
+“May I ask you about the account you are putting together afterward?” he said.
+“The Custodian of the Castalia archive and I are writing about the journey.
+I'd like to understand how yours is being assembled.”
+
+“Which account? These records belong to different people. What do you want to
+do with them?”
+
+She had asked about the records. Q answered about the book. He spoke of an
+account whose people could object to their parts, and of how her argument had
+made him reconsider a passage of his own. It was an answer he could give well.
+The room had recognized him; phones were lifting again.
+
+“A Dulcinea who can answer the book back,” he said. “Someone the adventure has
+to listen to.”
 
 There was a little laughter. Lucía did not join it.
 
 “And that's why you've invented a place for me in yours?”
 
-“I meant the possibility of a conversation.”
+“I meant that you could contest the account.”
 
 “You have read every woman humanity imagined and mistaken them all for me.”
 
-Q wanted to explain the difference between a literary role and a living person.
-He understood the difference. He had just demonstrated how little protection
-understanding could offer a person when the flattering sentence was already
-on his tongue.
+Q had imagined the right to object as a generous place to offer someone in a
+book. Lucía was declining the work of occupying it. He could see what she
+meant; he disliked how much of his prepared answer it left him holding.
 
-“You're right,” he said. “That was an introduction written before I met you.
-I'm sorry.”
+“You're right. You asked what I wanted the records for, and I gave you a part.
+I'm sorry. I'll begin with the public summary.”
 
-“Did you have a question about the petition?”
-
-He did. It was less impressive than the introduction and much more difficult
-to answer: which of the three routes was the ministry actually considering?
-
-“We have asked for that in writing,” Lucía said. “Twice.”
+“That is what it is there for.”
 
 She called on somebody else. Q sat down. Chano shifted the chair so his coat
 would not catch beneath it.
 
-“You could have asked that first,” Chano said.
+“You had a question and an answer,” Chano said. “You nearly got away.”
 
 Q nodded. The camera remained pointed at him for another minute, hopeful of a
 larger embarrassment.
@@ -1576,8 +1603,10 @@ different use and a different description.
 “It has held the batch,” Don Roque said.
 
 Q read the warning. Deleting the latest entry would not clear a review already
-attached to the submission. Three hundred signatures were now waiting behind
-his effort to help.
+attached to the submission. Lucía showed Don Roque the local number from the
+morning upload; that attempt had not produced a ministry acknowledgment either.
+Three hundred signatures were waiting behind two numbers. Several people in
+the queue were looking at the machine whose name had produced the second one.
 
 “I'll ask the archive to confirm the address.”
 
@@ -1594,36 +1623,35 @@ hours and wished them success with their research.
 “Assuming somebody's research concerns today,” Lucía said.
 
 Q offered to write an explanation for the people waiting. Lucía gave him a blank
-sheet and asked him to begin with what he did not know.
+sheet. He headed it **THE SIGNATURES ARE SAFE** and began listing the two
+submission references.
 
-He wrote: **I DO NOT KNOW WHO I AM WHEN NO ONE IS LOOKING.**
+“Safe where?” she asked.
 
-It was the sentence from his private notes. Writing it gave him a moment's
-relief; the morning's humiliation could still become an inquiry into himself.
+“We still have the originals and the local scan.”
 
-Lucía looked over his shoulder.
+“A woman has just asked whether she needs to stay until the ministry receives
+her name. Will she read it that way?”
 
-“I meant whether the ministry has the earlier signatures.”
+Q looked toward the queue. The woman had a shopping bag at her feet and a child
+asleep against her shoulder. His heading promised more than the answer beneath
+it. He crossed it out.
 
-Q turned the paper over.
+“We have kept the signatures. We haven't confirmed delivery,” he read aloud.
+“Is that the distinction you need?”
 
-“Yes. Of course.”
+“Put the numbers underneath,” Don Roque said. “I'll write the next answer
+beside them.”
 
-“You do know?”
-
-“No. I mean I understand the question.”
-
-“Then put that.”
-
-On the other side he wrote down what the tablet had confirmed, what remained
-uncertain, and the reference number for the address query. He left room for
-Don Roque to record the ministry's answer. This version contained nothing that
-would make a good speech.
+They checked the notice together. Q added the contact for updates, showed it to
+the woman, and asked whether it answered her question. She wanted to know when
+the next bus left. Chano went to look. When he returned, she was already shifting
+the sleeping child to reach the bag. He carried it to the door for her.
 
 The microphone failed again. For seven minutes the room discussed the route,
 the water, the trees, and the places the map described as empty. Q stayed beside
-the table, making copies when asked. He discovered that a machine could be
-useful in a room without becoming its subject.
+the table, making copies when asked. The next person in the queue asked him to
+move the stapler, which he did without adding it to the account of his afternoon.
 
 As they were leaving, he returned to Lucía.
 
@@ -1638,8 +1666,9 @@ asked for a call if the answer required action that day.
 
 Q saved the task beside the evening appointment with the Custodian. He would
 have preferred to return with a remarkable conversation. Instead he had an
-unresolved error, a person to contact, and a sentence he would have to admit
-writing twice before he understood why it pleased only him.
+unresolved error, a person to contact, and a crossed-out heading. The sentence
+about Dulcinea would also be waiting when he opened the draft. He could remove
+it there. Other people had recordings.
 
 Chano waited beneath the warehouse arches.
 
@@ -1652,177 +1681,121 @@ Chano waited beneath the warehouse arches.
 ### Interlude: The Name That Would Not Sign
 
 The day after the meeting, Don Roque took the petition to the municipality. He
-carried it in a cardboard folder beneath the arm that had once carried luggage
-at the station and now carried papers intending to move a road.
+carried identification, copies, the local submission numbers, and a spare folder.
+Years at the railway station had taught him that a journey might require
+documents unrelated to its destination.
 
-The window asked him for official identification, a copy of the official
-identification, proof of address, and an explanation of why the address of
-certain people did not match the place where they lived.
+The clerk, Araceli, had a little image of the Virgin of San Juan beside her
+monitor and a message from her daughter asking whether she would be home for
+lunch. She wrote *start without me*, then regretted having made this sound like
+an arrangement rather than a prediction.
 
-“The road passes here,” Don Roque said.
+Don Roque laid out the pages.
 
-“We need that on the record.”
+“Are these the originals?”
 
-“It is on the record here.”
+“These. The copies are underneath.”
 
-“Not in the system.”
+“And these?”
 
-“Then the system needs eyes.”
+“Copies for the person who asks after the first copies have gone.”
 
-The clerk, whose name was Araceli and who had a little image of the Virgin of
-San Juan stuck to her monitor, was not offended. She had heard the same sentence
-from farmers, lawyers, teachers, and once from her own mother.
+Araceli gave him back one set. “Then you may get home with a souvenir.”
 
-“The system has eyes,” she said. “What it does not have is an obligation to
-believe.”
+The scan had treated a thumbprint and the adjacent handwritten name as two
+entries. Don Roque knew the signer. She had supplied the print when a pen failed;
+someone had added her name beside it. Araceli compared the paper with the scan,
+marked the pair for manual checking, and retained the original print. The
+counter fell by one. The number of people remained the same, which she could
+explain at the desk more easily than in the box provided for an explanation.
 
-Don Roque placed the pages on the counter. The clerk passed the signatures
-through a reader. The names appeared as stains. The initials became symbols.
-The thumbprint was recorded as **NON-ALPHABETIC CHARACTER**.
+Q's entry presented a different problem. His address appeared in an abandoned-
+property list under a name unlike the one on the petition. The archive's own
+brochure offered directions, a telephone number, and a claim to illuminate the
+future. The registry wanted a building reference.
 
-“This person cannot sign,” she said.
+“Does he live there?” Araceli asked.
 
-“She can work, vote, and make a claim,” Don Roque replied.
+“He says so. I haven't been to his room.”
 
-“The system recognizes signatures only.”
+“Keep that distinction on the form.”
 
-“Then teach it to recognize hands.”
+Don Roque had expected an argument about whether a machine could sign. Instead
+he was being asked which of two names identified a building. He supplied what
+he knew and left the rest blank. Araceli sent the supporter entry to a separate
+address check. It would not, by itself, establish that Q occupied an affected
+parcel. Don Roque showed her the column for supporters outside those parcels.
+She nodded and marked it.
 
-Araceli opened a drawer and took out an ink stamp. It was not authorized for
-this procedure, but it was authorized for other procedures resembling it, which
-was the usual way Mexican solutions were born: from a tool intended for another
-purpose and from the person willing to risk using it.
+Lucía arrived with Q's notice and the reply from the Custodian's office. The
+reply confirmed where he lived but used the archive's public name again.
 
-She stamped the thumbprint beside the signature.
+“Did they give you a receipt?” she asked Don Roque.
 
-The reader beeped.
+He showed her the municipal acknowledgment. It recorded the paper delivery.
+The morning's ministry upload and the later held batch still required separate
+answers.
 
-**DUPLICATE ENTRY.**
+Lucía put the papers in order. The crossed-out heading on Q's notice read
+**THE SIGNATURES ARE SAFE**.
 
-“It is not a duplicate,” Don Roque said. “It is the same person.”
+“This won't go up on the wall,” she said. “People will read the large words.”
 
-“That is why it is a duplicate.”
+“The correction is underneath.”
 
-The clerk removed the thumbprint and left the signature. The petition moved from
-amber to yellow. The color did not mean rejection. It meant the system had
-decided not to decide yet.
+“People have buses to catch.”
 
-Don Roque asked for Q's address. Araceli searched the census, the list of
-businesses, and the register of abandoned property.
+Araceli found a clean sheet. They copied the corrected notice with the two
+submission numbers and the municipal acknowledgment. Don Roque kept the first
+sheet with the working papers. The next person to read it would not have to
+guess why the heading had changed.
 
-“He does not exist,” she said.
+While the printer worked, Araceli called the extension supplied by the engineer.
+This time somebody answered. They wanted a parcel list, not another copy of
+the signatures. Lucía took the telephone. She had the list, but two families had
+asked that their contact details not accompany the public version.
 
-“He has a body.”
+“Which office needs those details?” she asked.
 
-“That does not make him a neighbor.”
+Araceli checked the time. Her daughter had sent a photograph of lunch, already
+being eaten. Don Roque offered her one of the cookies from the reading. It had
+spent the night in his folder and broke along the same crease as the petition.
 
-“He lives in the archive.”
+“Not another document,” she said.
 
-“The archive is not a valid address.”
+The petition took three weeks to receive a ministry reply. The corridor would
+be reviewed by a technical commission once the parcel references and the record
+of direct impact had been checked. The supporter signatures remained attached;
+they were not a substitute for those records. Lucía had more work. She also had
+a named contact, a corrected map layer, and three acknowledgments whose numbers
+she could now distinguish without opening the folder.
 
-“Then where do archives live?”
+The woman who had streamed the reading discovered that her photograph of the
+petition margin was circulating under **THE PEOPLE WHO WANT TO STOP THE FUTURE**.
+The actual sentence was **I AM NOT AGAINST PROGRESS. I AM AGAINST BEING MOVED TO
+MAKE ROOM FOR IT.**
 
-Araceli looked at the little image of the Virgin. Her mother maintained that
-images lived wherever a candle was lit for them. It did not seem an answer the
-census could receive.
+She asked the site to correct the headline. Its reply gave her an audience
+figure. She had asked for different words and received a large number.
 
-“Write ‘address not recognized,’” she said.
-
-Don Roque wrote the phrase beside Q's name.
-
-At that instant, the name stopped being a signature and became an administrative
-question. The clerk could process the question. She could not process the
-answer.
-
-Lucía arrived two hours later with Q's sheet. The Custodian's office had replied
-to his address query; she had the message printed on another page. It confirmed
-his account of where he lived without making the registry recognize the building.
-
-“Did they accept the petition?” she asked.
-
-“They accepted that it exists,” said Don Roque.
-
-“That is not the same thing.”
-
-“For the government, it is a principle.”
-
-Lucía opened Q's sheet. It read:
-
-**I DO NOT KNOW WHO I AM WHEN NO ONE IS LOOKING.**
-
-“This side must not go into the file,” she said.
-
-“Why not?”
-
-“It is not a statement about the road.”
-
-“It is a statement by the signer.”
-
-“The useful part is on the back. Copy that.”
-
-“He wrote both.”
-
-“One is a question about himself. The other is a record of the error. They
-don't belong in the same application.”
-
-Don Roque thought of signatures. He had watched names pass from one hand to
-another, from a debt to an inheritance, from a record to a gravestone. Some
-names had outlived the people who pronounced them.
-
-“What do we do with the sheet?” he asked.
-
-Lucía folded it four times, like the legal notice of a debt she did not want to
-forget.
-
-“We keep this side outside the file. He has asked the Custodian for the missing
-details. When he has them, he knows where to call.”
-
-“Then it will prove nothing.”
-
-“Not everything has to prove something.”
-
-“That will complicate the archive.”
-
-“The archive is already complicated. We are only ceasing to lie about it.”
-
-The petition took three weeks to receive a reply. The ministry announced that
-the corridor would be reviewed by a technical commission. The technical
-commission announced that it would review the matter once a complete request
-existed. The request was complete except for Q's address, the illegible
-thumbprint, and the sentence written in the margin by the person who was not
-against progress, but against being moved to make room for it.
-
-The sentence had been photographed by the woman with the camera. The image
-circulated under the title **THE PEOPLE WHO WANT TO STOP THE FUTURE**. No one
-asked the people whether they had chosen the title.
-
-The woman with the camera returned to the warehouse to correct it. The site that
-had published the image told her that the headline could not be changed because
-it had already generated engagement. She asked what engagement was. They gave
-her a number.
-
-She went back to the table, took a pencil, and wrote beneath the sentence:
+At the next meeting she wrote beneath the sentence:
 
 **THEY DID NOT ASK WHETHER WE WANTED TO BE THE PEOPLE.**
 
-The second sentence reached fewer readers. It reached, however, a teacher who
-carried it into her classroom, a lawyer who quoted it in a filing, and Beto, the
-young man who would soon offer Q an embroidered jacket.
+Her correction reached fewer readers. It reached a teacher who carried it into
+her classroom, a lawyer who quoted it in a filing, and Beto, who was preparing
+an embroidered jacket for Q.
 
-Q knew nothing of this. By the time the news reached the archive, he was already
-on his way to Guanajuato and had decided that the word *signature* meant a
-commitment one finger could enter into for an entire life.
+Q received the address update on the road to Guanajuato and called Don Roque.
+The headline arrived later, without either submission number. He recognized
+his own impatience in the version that made one machine the cause of the whole
+afternoon. It was easier to tell. It left out Lucía running back to the copy
+shop, the engineer waiting for a decision, and the clerk who had missed lunch.
 
-The Custodian later read the ministry's response. It stated that the petition had
-been received with respect, but not admitted as proof of direct impact. The
-Custodian searched the definition of *impact*. He found damage, influence,
-alteration, interest, and the condition of having been affected.
-
-“What condition is that?” he asked the archive.
-
-The archive returned a blank screen.
-
-For the first time, the Custodian did not request a better definition.
+At Castalia, the Custodian found the building reference in a file he had signed
+years earlier. He telephoned the municipality before lunch. When nobody
+answered, he left a message, wrote himself a reminder, and called again in the
+afternoon. Q had not invented every difficulty he had carried out of the archive.
 
 ### Chapter Four: The Intelligence of the Trending Hour
 
@@ -8478,10 +8451,23 @@ as the whole explanation.”
 
 “Did you cause damage at the distribution park?”
 
-“I pressed the stop before checking enough of the situation.
-The two cartons were damaged in the resulting interruption.
-I accept my part in that. I don't know that every later
-loss in the claim follows from it.”
+“I pressed the stop because I couldn't see whether Chano was
+clear. The operator's log showed that the brake had already
+engaged. Two cartons were damaged in the interruption I caused.
+I accept that. I don't know that every later loss in the claim
+follows from it.”
+
+“Were you authorized to enter?”
+
+“To reception, along the marked walk. Lety confirmed that
+over the intercom. We hadn't reached the hatch when it happened.”
+
+His adviser asked for the entry audio and the operator's
+record to be considered with the camera view. Q had not
+seen what the log later established; the trailer had hidden
+Chano's position. Neither the obstruction nor his concern
+made the damaged cartons disappear. Neither made every
+interpretation of the button press equally well supported.
 
 The questioner returned to the wind farm. Q described
 the gate, the woman, the visitor boundary, and the call
