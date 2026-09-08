@@ -102,6 +102,13 @@ the book.” The source now permits Q to remain alive when the writing stops.
   and imperfect crowd awareness can coexist. Publicity supplies the giants.
   The archive's electricity purchase gives Q and the Custodian a real connection
   to the disputed project. Bixha remains responsible for her work, not Q's lesson.
+  The subsequent voice pass separates the permitted passage, visitor bay and
+  internal track; wind masks the first call and the guard takes the gate back
+  after the second. The photographer's route comes from a later staff report,
+  not Q's own view, and the Chapter Sixteen testimony preserves that distinction.
+  Bixha's radio and Chano's humming add a brief ordinary musical exchange.
+  The regional Sandunga reference is sourced; the entrance layout and operating
+  procedure remain explicitly fictional rather than safety guidance.
 - Chapter 9 replaces pretend fluency, universal classification, and miraculous
   decryption with bounded assistance. The archive has keepers and registers;
   the radio group authorizes a bulletin and alternative delivery routes. Q
@@ -266,6 +273,16 @@ sheets. Text/background/imposition checks and selected rendered pages passed;
 all facing-scene anchors were checked. No new art or final Issue 7 PDF is
 approved. Continue with Chapter Eight, and retain the whole-book rhythm and
 language-specificity review as outstanding work.
+
+`CHAPTER_08_VOICE_REVIEW.md` and Exercise 19 record the Isthmus pass. The gate
+layout, wind-masked instruction, guard handover and later staff report now form
+a traceable sequence; the Chapter Sixteen callback matches. The musical pause
+uses a sourced regional reference without quoting lyrics. Issue 8's internal
+proof is 2,666 words, sixteen pages, eight planned plates and four A3 duplex
+sheets, with text/background/imposition checks and selected renders inspected.
+The exact facing scenes remain planned rather than generated art. Continue
+with Chapter Nine. The complete illustrated edition and independent behavioral
+validation remain unfinished.
 
 1. All 22 chapters now have the motivation/continuity pass. Read across chapter
    boundaries and review the whole-book voice before finalizing pagination.

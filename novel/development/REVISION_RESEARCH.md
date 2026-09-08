@@ -65,6 +65,20 @@ theater's programming or the safety of an identified tourist mine.
 
 ## Invented institutional and technical events
 
+Chapter Eight's brief music scene uses *La Sandunga*. El Colegio de México's
+[Diccionario del español de México](https://dem.colmex.mx/ver/sandunga)
+identifies sandunga/zandunga with the Isthmus of Tehuantepec's music, song and
+dance. This supports the regional reference, not a claim that every gathering
+uses it. Bixha's radio, Chano's humming and Q's mistimed entrance are invented;
+no lyrics or a particular commercial recording are reproduced.
+
+The wind-field entrance layout and operator's precautionary stop are also
+invented. The revised sequence distinguishes the permitted passage to the plots,
+the visitor bay and an internal service track. A staff report supplies the
+photographer's route after the event; it is not knowledge Q possessed while
+holding the gate. This is not a description of universal wind-farm procedures
+or a site-safety guide. Only one operating group stops in the story.
+
 Viento Común, its procurement terms, the visitor incident, the kiosk failure,
 the university certificate, and the sealed-deposit arrangements are fictional.
 The revised power relationship is contractual supply through transmission

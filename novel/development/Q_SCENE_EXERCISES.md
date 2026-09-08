@@ -491,6 +491,40 @@ failure. His overlarge offer is enthusiasm, not a refusal to respect the answer.
 The later certificate notice now recalls the actual seminar choice. This is
 author-run scene material with manuscript context, not a blind behavioral test.
 
+## 19. The gate, the wind and the next instruction
+
+**Packet:** Q is holding a swinging pedestrian gate off a woman's sack. He has
+stepped out of the visitor bay. The permitted passage joins the lane to the
+plots; an internal service track branches the other way. People and phones
+are behind him. Wind masks a call from Teresa except for the word "visitors."
+He has not seen where a photographer has gone. The guard is within speaking
+distance. Teresa calls again, clearly telling the visitors to withdraw.
+
+**Q reply/action:** “Hold this, please.” Hands the gate to the guard, guides the
+woman toward the permitted passage and returns to the bay. He does not infer
+permission to remain outside it from having helped her.
+
+**Authored world response:** Teresa sends staff to recover the photographer
+and requests a precautionary stop of one operating group. Q can see some blades
+slow while others continue. The first published caption credits him with
+pacifying giants. He corrects the claim: the operator stopped the group and
+the access dispute remains unsettled.
+
+**Later packet:** Teresa provides a redacted operator extract and identifies
+the photographer's route from the staff report. Q must prepare an account of
+what he did and observed. The new report was not available at the gate.
+
+**Q action:** Marks his own departure on the site plan and labels the separately
+reported route with its source. Records the fragment of the first call he heard,
+not a reconstructed complete instruction. His later trial account retains the
+same distinction.
+
+**Editorial decision:** Make the physical sequence intelligible without turning
+Q into either an omniscient supervisor or an incapable literalist. His delayed
+handover and the photographer's choice remain distinct actions. This author-run
+exercise uses manuscript context and invented operating rules; it is neither
+blind behavioral validation nor a real wind-farm safety procedure.
+
 ## Still to test
 
 The revised audience exchange at Lucía's reading; the Isthmus intervention;

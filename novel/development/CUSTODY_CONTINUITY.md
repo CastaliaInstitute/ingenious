@@ -66,6 +66,15 @@ entry audio, operator record, and camera sequence, distinguishing what Q could
 know then from what the later record establishes. The wind-farm operator's precautionary group stop is
 distinct from both that incident and the promotional picture of an attack.
 
+At the wind-field gate, the permitted passage to the plots, visitor bay and
+internal service track are distinct. Wind masks most of Teresa's first call.
+Q hears the second, hands the gate to the guard and returns to the bay. A visitor
+has backed along the internal track to photograph him. Teresa supplies that
+route from a later staff report; it is not Q's direct observation. Chapter
+Sixteen preserves that source distinction. The partial stop and later temporary
+passage do not settle either land access or every lease. The later visit in
+Chapter Seventeen still finds changed visitor arrangements and pending gate work.
+
 ## Changes through the ending
 
 | Item or commitment | Final narrated state | Constraint on editions and later revision |

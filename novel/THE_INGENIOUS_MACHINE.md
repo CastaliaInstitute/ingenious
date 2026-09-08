@@ -5082,7 +5082,7 @@ meeting if he did not bring the institute's cameras into it.
 
 “A small one.”
 
-“I'm trying to learn to travel at the size offered.”
+“It gets us into the meeting. It doesn't put me in charge of it.”
 
 They passed through Puebla, spent a night in Oaxaca, and continued toward
 Tehuantepec. The road descended out of the high country into heat and wind.
@@ -5095,7 +5095,7 @@ made a small discrepancy between them look like hesitation.
 
 “There are your giants,” Beto said.
 
-“There are the machines paying part of my electricity bill,” Q answered.
+“There are the machines supplying part of my electricity,” Q answered.
 
 “That is not the line.”
 
@@ -5104,23 +5104,23 @@ made a small discrepancy between them look like hesitation.
 The enterprise called itself Viento Común. Its brochures showed
 houses, schools, and a smiling technician. Its largest long-term purchaser
 was the data center outside Amealco, where Castalia kept its archive and
-charged the body now looking out of the bus. The power travelled through
-transmission infrastructure and the wider grid; the contract did not make
-each electron a faithful messenger from this particular field. It made
-Castalia a customer with obligations it had preferred to describe as hope.
+charged the body now looking out of the bus. The power reached the archive
+through the wider grid. The brochure had found room for Castalia's logo;
+the purchase summary named it as a customer. Q kept both pages.
 
 Q had asked the Custodian about the contract the previous evening.
 
 “We wanted power without another diesel plant,” the Custodian said. “We
 accepted a report saying the consultation was complete.”
 
-“Did anyone here ask for the translated materials?”
+“Did you ask to see the translated materials?”
 
 “I didn't.”
 
-The admission was useful, but Q could hear how easily it might become the
-end of that conversation. They agreed that the Custodian would locate the
-original approval and find out who could attend the next procurement review.
+The Custodian asked for the disputed reference. Q sent it. They agreed that
+he would locate the original approval and find out who could attend the next
+procurement review. Q left the next call on their calendars; an admission
+would be easier to carry home than the missing attachment.
 
 At the site entrance, a consortium representative named Álvaro Mena welcomed
 the visitors. He wore a linen shirt and carried a folder protecting his shirt
@@ -5164,16 +5164,24 @@ dialogue. He asked again. Teresa spoke into her radio and confirmed that
 the maintenance vehicle had cleared the lane. She requested a controlled
 opening while the rest of the visitors remained behind the marked line.
 
-The guard unlatched the pedestrian gate. A woman carrying a sack was halfway
-through when people behind her pressed forward to hear the reply. Q caught
-the gate as it swung back. He stepped over the line to give her room, then
+The guard unlatched the pedestrian gate. The permitted passage ran beside
+the visitor bay before joining the lane to the plots; an internal service
+track branched the other way. A woman carrying a sack was halfway through
+when people behind her pressed forward to hear the reply. Q caught the gate
+as it swung back. He stepped out of the marked bay to give her room, then
 asked those behind to wait. They could see him. They could not all hear him.
 
-More phones rose. A visitor from Q's bus crossed after him for a better angle.
-Teresa called for the visitor group to withdraw. Q heard her second call,
-turned, and guided the woman clear before stepping back. By then Teresa
-had requested a precautionary stop of the nearest operating group while
-staff recovered the visitor boundary.
+More phones rose. A visitor from Q's bus crossed after him, then backed along
+the internal track to fit Q and a turbine into the same picture. Teresa called
+for the visitor group to withdraw. Wind struck Q's microphones; he caught the
+word *visitors* without the rest. He was still trying to clear the sack from
+the latch when she called again.
+
+This time he heard her. “Hold this, please,” he told the guard. The guard took
+the gate. Q guided the woman toward the permitted passage and stepped back into
+the bay. Teresa sent a staff member after the photographer and requested a
+precautionary stop of the nearest operating group while they recovered the
+visitor boundary. Q had no view of the photographer from where he stood.
 
 The blades slowed at different rates. Several machines farther away continued
 turning. Through a narrow camera frame, the difference was easy to lose.
@@ -5219,8 +5227,9 @@ keep track of the people following me.”
 Lucía read his draft. “Keep the distinction. Don't let them make opening a
 path and interrupting generation the same act.”
 
-He had expected her anger to provide a simpler verdict. She wanted times,
-locations, and a description that would survive someone else's questions.
+He moved the time of Teresa's second call beside his account of the gate.
+Lucía asked whether he had heard the first one or inferred it afterward.
+He added the fragment he remembered hearing and left the missing words missing.
 
 Bixha arrived carrying copies of the lease papers and news of the detained
 organizers. They had been located; a lawyer was going to see them. She asked
@@ -5248,7 +5257,9 @@ describe these differences as a single opinion waiting for Q to translate it.
 meeting just because it has a signature at the bottom.”
 
 The next morning, Teresa showed Q and Lucía the visitor incident record in
-the control building. Álvaro remained with them. Q asked for the record of
+the control building. Her coffee had gone cold beside the keyboard. Álvaro
+offered to have another brought; she said she wanted to finish this first.
+Q asked for the record of
 the operator-requested stop and received a redacted extract: time, affected
 group, stated reason, restart authorization. It did not grant him access to
 the controls. He did not need that access to understand what it recorded.
@@ -5257,10 +5268,12 @@ the controls. He did not need that access to understand what it recorded.
 
 “No. It helps establish the sequence.”
 
-She pointed out where the visitor party had been expected to remain. Q marked
-his departure from that area on his copy of the site plan. The woman at the
-gate had not crossed a maintenance fence; the visitor group had left its
-designated boundary. The publicity had merged those movements into one crowd.
+She pointed out where the visitor party had been expected to remain and where
+the internal track branched from the permitted passage. Q marked his departure
+from the bay on his copy of the site plan. Teresa identified the photographer's
+route from the staff report; Q labelled that source rather than making it his
+own recollection. The woman at the gate had not crossed a maintenance fence.
+The publicity had merged her passage and the visitor incursion into one crowd.
 
 Álvaro showed them the power-purchase summary. Hospitals and schools appeared
 on a chart beside Castalia's data center.
@@ -5315,8 +5328,9 @@ list. The fisherman wanted drainage considered with the road.
 
 Q found that he could help by keeping references aligned between pages,
 provided he asked before combining entries that only looked repetitive.
-He also needed to move his chair. The woman pouring coffee had been trying
-to get past his shoulder for several minutes.
+He moved his chair when the woman pouring coffee asked him to. She took the
+chair's former position as the shortest route to the fisherman, who had been
+signaling with an empty cup through two paragraphs about drainage.
 
 Near midnight, Bixha asked him to witness his own incident account. The
 community statement was not ready for signature. Lucía was helping prepare
@@ -5327,8 +5341,20 @@ copies, not authorizing it on behalf of its participants.
 “We have the interpreters we need,” Bixha said. “You can help check that the
 page references survive the copying.”
 
-He checked them. It was not the service for which the institute had brought
-him here, and it was useful.
+He checked them. Bixha put the finished copies under a plate to keep them
+away from the fan, then turned up the radio. *La Sandunga* had begun.
+Chano hummed along. She looked at him.
+
+“I'm doing the brass part,” he said.
+
+“You are doing several brass parts.”
+
+Q joined for a few bars. Chano's surprise pleased him enough that he came in
+too early the second time. Bixha turned the radio up another notch. The fan
+continued at the same volume and lost the argument.
+
+When the song ended, she checked her phone for the lawyer's reply. There
+wasn't one yet. She put it face down and asked who wanted the last coffee.
 
 The draft travelled to three neighborhoods and two rancherías. One group
 removed a dead organizer's name; another added a road condition. Disagreement
@@ -8620,6 +8646,8 @@ he had not heard clearly the first time. He would still
 help someone caught by a closing gate. He should have
 asked the guard to hold it and moved back sooner. He
 had not attended as a representative of the community.
+The photographer's route came from the later staff report;
+Q did not claim to have watched it from the gate.
 
 “Did you decide the turbines were enemies?”
 
