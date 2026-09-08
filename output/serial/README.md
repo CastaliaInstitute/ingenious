@@ -22,6 +22,21 @@ plates still need print-resolution and ink-on-stock review. No print job has bee
 sent. See the [production record](../../novel/development/ISSUE_01_PRODUCTION.md)
 and [facing-text manifest](../illustrations/revised/issue-01/manifest.json).
 
+## Current Issue 2 revision proof
+
+- [English Issue 2: revised reading PDF](../pdf/ingenious-issue-02-revised-en-bw.pdf)
+- [English Issue 2: revised A3 folding PDF](../pdf/ingenious-issue-02-revised-en-bw-a3.pdf)
+
+28 pages, fourteen unique plates including the cover, and seven A3 duplex sheets.
+All 4,400 words flow through thirteen two-column narrative pages in Georgia
+12.4-point type. The roadside dialogue no longer assumes Q has already seen the
+viral video. Chano, Lety, Celia and Hilario receive their own scene-specific art.
+Unpainted text backgrounds, lossless grayscale, centered actual-size A3 landscape
+spreads and short-edge duplex follow the same proof specification. About 150-dpi
+native art remains a press-quality limitation; no print job has been sent. See the
+[production record](../../novel/development/ISSUE_02_PRODUCTION.md) and
+[art/prompt manifest](../illustrations/revised/issue-02/manifest.json).
+
 ## Current Issue 3 revision proof
 
 - [English Issue 3: revised reading PDF](../pdf/ingenious-issue-03-revised-en-bw.pdf)
@@ -35,8 +50,7 @@ this is a checked revision proof, not a press master. See the
 [production record](../../novel/development/ISSUE_03_PRODUCTION.md) and
 [art/prompt manifest](../illustrations/revised/issue-03/manifest.json).
 
-Issue 2 remains at the facing-scene planning stage; later issues still require
-their revised illustrated builds.
+The remaining nineteen issues still require their revised illustrated builds.
 
 ## Earlier editions
 

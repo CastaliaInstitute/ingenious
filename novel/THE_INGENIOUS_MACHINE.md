@@ -1257,15 +1257,15 @@ the Custodian had supplied. He would have to check later whether he had been
 charged twice. He opened one bottle for Chano and kept the other for rinsing
 his mouth. The distinction seemed too unappetizing to explain at the table.
 
-“Are you the people from the video?” Hilario asked.
+“Are you the people who stopped the bay?” Hilario asked.
 
-“I pressed the stop,” Q said. “The video leaves out why.”
+“I pressed the stop,” Q said. “What has the guard told you?”
 
-“They always do.”
+“That a machine attacked a machine.”
 
-“You haven't seen this one.”
+“I was worried about the man beside it.”
 
-“I've seen videos.”
+“Then he'll be in the expensive version.”
 
 Hilario looked at Chano.
 

@@ -200,6 +200,16 @@ the book.” The source now permits Q to remain alive when the writing stops.
   and folding pairs pass independent checks. Rendered pages and representative
   A3 spreads have visual review. `ISSUE_03_PRODUCTION.md` records evidence and
   limits. Native art remains about 150 dpi; no A+ print claim or print job.
+- Issue 2 subsequently received fourteen unique plates and complete 28-page
+  reading / fourteen-side A3 revision proofs: 4,400 words in source order,
+  seven duplex sheets, Georgia 12.4/17.5667 text. The production read removed
+  premature knowledge of the viral video from the water-vendor exchange. The
+  manifest now binds the revised chapter and exact facing text to reviewed
+  assets, including a second truck-window edit after the first failed to remove
+  an unwanted reflected face. `ISSUE_02_PRODUCTION.md` records checks and limits.
+  Issues 1 and 3 are unchanged; the remaining nineteen illustrated issues are
+  not complete. Fine generated facial/costume details and native raster detail
+  still prevent an A+ press-master claim.
 
 ## Required next work
 
@@ -272,12 +282,12 @@ the book.” The source now permits Q to remain alive when the writing stops.
    no canonical outcome or required mistake. Run each in a separate fresh context
    if authorized, then let an explicit world response support a second step.
 5. Rebuild the remaining English chapter issues only after text and plate placement
-   are reconciled. The new Issue 1 and Issue 3 revision proofs represent their current chapters.
+   are reconciled. The new Issue 1, 2 and 3 revision proofs represent their current chapters.
    English is the current revision source; the Spanish edition remains earlier.
 6. Use the new explicit-manifest builder, not the old modulo-indexed asset maps.
    It maps even narrative pages to the following odd plate pages, rejects stale
    chapter/asset hashes and repeats, and checks rendered text coverage. Extend
-   these checks and unique facing-scene illustrations beyond Issue 1.
+   these checks and unique facing-scene illustrations through the remaining nineteen issues.
 7. Restore the requested print specifications: readable larger text, continuous
    flow, black ink and unpainted text backgrounds for cream stock, captions in a
    margin, full-bleed art, and the 24-page/12-plate/six-sheet Issue 1 proof. Verify
@@ -299,7 +309,7 @@ AGENTS.md:
 - `/tmp/build_ingenious_issues_v2.py`: revised continuous pagination, explicit
   facing-art manifest validation, and A3 imposition. Issue 1 is fixed at 24 pages
   and 12/17-point body text. Preliminary plans for all 22 chapters pass complete
-  rendered-text coverage; only Issue 1's art and output have been rebuilt.
+  rendered-text coverage; Issues 1, 2 and 3 have rebuilt art and output.
 - `/tmp/qa_ingenious_issue1.py`: independent PDF text, background, image color,
   page size, rotation and booklet-pair checks.
 - `/tmp/build_chapter_issue_set.py`: all 22 English issues, hard-coded image maps,

@@ -78,7 +78,7 @@ lossless grayscale flags are also recorded in `ISSUE_01_PRODUCTION.md`.
 
 ## Remaining scope
 
-Issue 1 remains unchanged. Issue 2 has planned plates, not a completed new
-illustrated PDF. The other chapter issues, full-book PDFs, Spanish revision,
+Issue 1 remains unchanged. Issue 2 now has its own illustrated revision proofs;
+see `ISSUE_02_PRODUCTION.md`. The remaining nineteen chapter issues, full-book PDFs, Spanish revision,
 cross-book voice review and independent scene tests remain unfinished. Finishing
 this issue does not establish completion or an A+ grade for the two-book project.

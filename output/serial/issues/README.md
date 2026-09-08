@@ -4,10 +4,12 @@ This directory contains an earlier English serial deployment. These 22 PDFs
 predate the current motivation, continuity, and ending revision. They are not
 current production-ready files. The revised [Issue 1 reading proof](../../pdf/ingenious-issue-01-revised-en-bw.pdf)
 and [six-sheet A3 proof](../../pdf/ingenious-issue-01-revised-en-bw-a3.pdf) are
-separate outputs. A revised [Issue 3 reading proof](../../pdf/ingenious-issue-03-revised-en-bw.pdf)
+separate outputs. A revised [Issue 2 reading proof](../../pdf/ingenious-issue-02-revised-en-bw.pdf)
+and [seven-sheet A3 proof](../../pdf/ingenious-issue-02-revised-en-bw-a3.pdf), plus
+a revised [Issue 3 reading proof](../../pdf/ingenious-issue-03-revised-en-bw.pdf)
 and [five-sheet A3 proof](../../pdf/ingenious-issue-03-revised-en-bw-a3.pdf) are now
-also available. The old files listed below remain superseded; other issues still
-require their revised illustrated builds.
+also available. The old files listed below remain superseded; the remaining
+nineteen issues still require their revised illustrated builds.
 
 Page size is 6.625 x 10.25 inches. Plate pages use the chapter illustration as
 a full-bleed image with the issue caption in the lower margin. Text pages use

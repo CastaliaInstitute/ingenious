@@ -99,7 +99,7 @@ Three passages or devices to protect:
 After revision, the novel should follow a capable, fallible companion whose
 encounters generate the book without being obliged to provide it with lessons.
 
-## Production boundary
+## Original production boundary (superseded by the update below)
 
 Issue 1's delivered revision proofs are unchanged. Issues 2-3 have temporary
 pagination proofs and source-bound planned manifests, not new finished artwork.
@@ -121,3 +121,21 @@ pen-down ending, the corrected permission/key/brake anchors, and exact current
 facing-text equality for the three manifests. All 22 pagination plans pass the
 builder's source-order comparison. The entire novel has not received a new
 independent behavioral test or literary grade.
+
+## Illustrated-proof update
+
+Issues 1, 2 and 3 now have separate revised reading and A3 folding PDFs in
+`output/pdf/`; the old serial files remain superseded. The current independent
+counts are 3,836 / 4,400 / 3,219 narrative words respectively. Issue 2's vendor
+dialogue now draws on the guard's report rather than a video Q has not yet seen.
+Its fourteen distinct plate assets include the dismissal, the obstructed walk,
+Lety's prior complaint, Celia's register and Hilario's transaction. Issue 3's
+reading scene now allows Q's competent answer to change the intended encounter.
+
+Each of these three manifests is approved only for revision-proof insertion:
+source hashes, exact facing text and asset hashes are checked. The generated
+art's approximately 150-dpi native detail, fine character/costume variation and
+unverified ink-on-stock performance do not support an A+ press claim. The
+per-issue production records distinguish structural checks, rendered review and
+unperformed physical printing. These deliverables do not constitute an
+independent behavioral test, a new whole-book grade or a completed serial.

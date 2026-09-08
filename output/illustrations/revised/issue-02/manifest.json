@@ -1,24 +1,33 @@
 {
   "issue": 2,
-  "revision": "2026-09-08-embodied-voice",
+  "revision": "2026-09-08-first-sally-illustrated",
   "source": "novel/THE_INGENIOUS_MACHINE.md",
-  "chapter_sha256": "4703353d64dab9eb074949cc46edb0e900b93154555af4cab496f76835fb9d22",
+  "chapter_sha256": "778ba9177abbf80d051a87187cb76145a7dba8c0bee363c5e8136aac65f156db",
   "page_count": 28,
   "text_font": "Georgia 12.4/17.566666666666666 pt",
   "plate_count_including_cover": 14,
-  "status": "planned; no new images generated or approved",
+  "status": "approved for revision proof only",
   "character_reference": "output/illustrations/revised/issue-01/cover.png",
   "chano_reference": "output/illustrations/revised/issue-03/plate-06.png",
   "art_direction": "Unique facing-text scene, Goya-inspired etched realism. Preserve Q's established segmented head, exposed neck, long limbs and question-mark breastplate; coat and shoulder damage follow the actual scene chronology. Custodian male, tall, long gray hair tied back, glasses, white work shirt and boots. Neutral black and gray with pure white highlights, no cream texture. Full trim bleed, separately typeset margin caption. Review secondary-character designs before generating their recurring appearances.",
-  "approval_scope": "Pagination and scene-selection plan only. Recheck chapter hash and actual facing text after every source edit. Reject these planned entries in final PDF production until unique assets are generated and individually reviewed.",
+  "approval_scope": "Unique scene-correspondent revision-proof plates, individually viewed, bound to exact facing text and source/asset hashes. About 150 dpi native detail, not an A+ press master. Physical printing not approved or performed. Incidental architecture is fictional, not a geographically verified view. Fine facial and costume details still vary between generated views.",
   "plates": [
     {
       "plate_id": "issue-02-cover",
       "page": 1,
       "asset": "output/illustrations/revised/issue-02/cover.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "A visitor at the gate.",
-      "scene_brief": "Q waits outside a modern Bajío distribution-park gate with his charging cable and the workshop key; Chano approaches. Unarmed, no horse, no compulsory knight."
+      "scene_brief": "Q waits outside a modern Bajío distribution-park gate with his charging cable and the workshop key; Chano approaches. Unarmed, no horse, no compulsory knight.",
+      "prompt": "Use case: illustration-story. Create a NEW full-page portrait 2:3 plate for The Ingenious Machine, not a rearrangement of the reference image. Near-future working Mexico: contemporary buildings, practical modern clothing. Goya-inspired etched realism, assured crosshatching and restrained aquatint, crisp readable gestures. Strict neutral BLACK AND GRAY on PURE WHITE highlights. No sepia, beige, cream, aged paper texture, border, captions or invented signage/slogans. Full bleed art; important hands/faces above bottom6% for separately typeset caption. Highest available native detail. Input1 is Q identity/style ONLY: exact slim long-limbed metal body, narrow segmented oval head, circular ears, exposed neck, articulated hands, ? breastplate and oversized worn coat. No helmet, weapons, horse or compulsory knight. Q is thoughtful and capable. Input2 is Chano identity ONLY: the stocky mustached middle-aged man with short dark hair, practical work shirt, trousers and boots, NOT the woman/child beside him. Preserve his face and build. Do not include the Custodian or reference-image women unless the scene calls for them. Scenes specify whether Q's shoulder is torn; before the loading-shutter accident his coat shoulder is intact. COVER: Outside a modern logistics-park entrance in the Bajío, Q waits at an intercom with a small ordinary brass workshop key looped loosely over one hand and a coiled charging cable in the other. Chano approaches from his parked freight truck, looking toward Q with cautious curiosity. Both characters occupy lower two-thirds, wide pale sky occupies upper quarter with no poles/beams/faces there, reserved for the separately typeset title. Industrial grain-silo-shaped gate towers low on horizon, dry roadside grass, agave beside fence, no colonial skyline or church. Intact coat shoulder. This is a request for access, not forced entry.",
+      "asset_sha256": "620cbccdb9dd9230b8dd6739c4eb936ce22af27191339188094f229a686a4ee8",
+      "raster_size_px": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_trim": 149.85,
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-727ace35-3c44-481d-8fde-9ed48262d25d.png",
+      "review_scope": "Facing-scene and principal-character review for revision-proof insertion, not press-resolution approval."
     },
     {
       "plate_id": "issue-02-plate-01",
@@ -43,9 +52,18 @@
         14
       ],
       "asset": "output/illustrations/revised/issue-02/plate-01.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Updated terms.",
-      "scene_brief": "Chano in his truck cab studies the dismissal notification beside the dashboard's family photograph; the worker and his vehicle, not Q, dominate the image."
+      "scene_brief": "Chano in his truck cab studies the dismissal notification. His wedding photograph and pharmacy receipt are in the open wallet in the foreground, not mounted on the dashboard. Q is absent.",
+      "prompt": "Use case: illustration-story. Create a NEW full-page portrait 2:3 plate for The Ingenious Machine, not a rearrangement of the reference image. Near-future working Mexico: contemporary buildings, practical modern clothing. Goya-inspired etched realism, assured crosshatching and restrained aquatint, crisp readable gestures. Strict neutral BLACK AND GRAY on PURE WHITE highlights. No sepia, beige, cream, aged paper texture, border, captions or invented signage/slogans. Full bleed art; important hands/faces above bottom6% for separately typeset caption. Highest available native detail. Input1 is Q identity/style ONLY: exact slim long-limbed metal body, narrow segmented oval head, circular ears, exposed neck, articulated hands, ? breastplate and oversized worn coat. No helmet, weapons, horse or compulsory knight. Q is thoughtful and capable. Input2 is Chano identity ONLY: the stocky mustached middle-aged man with short dark hair, practical work shirt, trousers and boots, NOT the woman/child beside him. Preserve his face and build. Do not include the Custodian or reference-image women unless the scene calls for them. Scenes specify whether Q's shoulder is torn; before the loading-shutter accident his coat shoulder is intact. Scene: Chano alone in the stopped freight truck cab, turned toward the dashboard notification with a weary, disbelieving half-frown. One hand rests on the steering wheel; an OPEN WALLET on the seat beside him contains a small wedding photograph and pharmacy receipt. Do not put a family photograph on the dashboard. Dashboard screen has indistinct interface lines and a small smiling parcel symbol, no legible text. Highway trailers visible through glass. No Q. Close oblique cab view, a man after losing his job, not screaming.",
+      "asset_sha256": "7dc3a0928b86a2365bdc21d893a601f03b15256b2be05843a574e4a17a4428aa",
+      "raster_size_px": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_trim": 149.85,
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-2080244b-900a-42e1-9b65-72a779b12924.png",
+      "review_scope": "Facing-scene and principal-character review for revision-proof insertion, not press-resolution approval."
     },
     {
       "plate_id": "issue-02-plate-02",
@@ -80,9 +98,21 @@
         38
       ],
       "asset": "output/illustrations/revised/issue-02/plate-02.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "A copy before it disappears.",
-      "scene_brief": "At the gate Q helps Chano preserve the dashboard dismissal notice. Keep them outside; no depiction of forced entry."
+      "scene_brief": "At the gate Q helps Chano preserve the dashboard dismissal notice. Keep them outside; no depiction of forced entry.",
+      "prompt": "Targeted correction to this illustration: REMOVE ALL human and robot FACE REFLECTIONS from the truck window. The whole upper glass area above and around the dashboard should contain ONLY dull dark empty cab interior and a soft reflection of the warehouse wall, no heads, faces, eyes or persons. Keep the real Q and Chano standing OUTSIDE the truck exactly as they are. Preserve the dashboard smiling-parcel display, Q photographing it, both phones, hands, two figures, truck, warehouse and composition. Strict black-and-white etching, same portrait dimensions. No additional edits. In particular the faint woman's face must disappear completely, not just become darker. There must be exactly two visible faces in the entire finished image: the real Q's head and the real Chano's head outside the cab.",
+      "asset_sha256": "5901f9e37cad90d0203f5dffd5591785dab733bb06ceca7dbaeb674b96105a8f",
+      "raster_size_px": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_trim": 149.85,
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-6a1733bb-7ac9-489d-b4f9-8d5af85371ce.png",
+      "review_scope": "Facing-scene and principal-character review for revision-proof insertion, not press-resolution approval.",
+      "original_generation_prompt": "Use case: illustration-story. Create a NEW full-page portrait 2:3 plate for The Ingenious Machine, not a rearrangement of the reference image. Near-future working Mexico: contemporary buildings, practical modern clothing. Goya-inspired etched realism, assured crosshatching and restrained aquatint, crisp readable gestures. Strict neutral BLACK AND GRAY on PURE WHITE highlights. No sepia, beige, cream, aged paper texture, border, captions or invented signage/slogans. Full bleed art; important hands/faces above bottom6% for separately typeset caption. Highest available native detail. Input1 is Q identity/style ONLY: exact slim long-limbed metal body, narrow segmented oval head, circular ears, exposed neck, articulated hands, ? breastplate and oversized worn coat. No helmet, weapons, horse or compulsory knight. Q is thoughtful and capable. Input2 is Chano identity ONLY: the stocky mustached middle-aged man with short dark hair, practical work shirt, trousers and boots, NOT the woman/child beside him. Preserve his face and build. Do not include the Custodian or reference-image women unless the scene calls for them. Scenes specify whether Q's shoulder is torn; before the loading-shutter accident his coat shoulder is intact. Scene: Outside the logistics gate beside the LOCKED truck cab, Q helps Chano preserve the dismissal notice. Q photographs the illuminated dashboard THROUGH the closed side window with a small phone, while Chano holds his own old phone ready to receive the copy. Both stand on the pavement, no entering or breaking the cab. Chano is the exact man in reference2, same work shirt and mustache. Q coat shoulder intact. Reflection of their faces in the glass, close three-quarter side view, truck mirror and gate recede. Screen has only indistinct interface marks and smiling parcel icon; no words or invented slogans.",
+      "intermediate_edit_prompt": "Edit the supplied plate only. Remove the extraneous woman's reflected face from the truck window, immediately left of Q's reflected head. There are ONLY TWO people present, Q and Chano, standing outside the closed cab. Preserve their actual figures and plausible reflections, dashboard smiling-parcel screen, phones, attentive photographing action, industrial park, composition, black-and-white etching style and exact dimensions. Fill only the removed woman's reflection with ordinary dark cab interior/reflected glass texture. Do not change anything else or add people.",
+      "review_note": "First edit only darkened the unwanted woman's reflection. Second edit removed all window face reflections; real Q and Chano, screens and outside-cab action remain."
     },
     {
       "plate_id": "issue-02-plate-03",
@@ -112,9 +142,18 @@
         57
       ],
       "asset": "output/illustrations/revised/issue-02/plate-03.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The obstructed walk.",
-      "scene_brief": "Q and Chano on the painted pedestrian walk, a trailer blocking Q's sightline to Chano's feet as a pallet mover turns. Show Q reaching the stop without asserting a collision would otherwise occur."
+      "scene_brief": "Q and Chano on the painted pedestrian walk, a trailer blocking Q's sightline to Chano's feet as a pallet mover turns. Show Q reaching the stop without asserting a collision would otherwise occur.",
+      "prompt": "Use case: illustration-story. Create a NEW full-page portrait 2:3 plate for The Ingenious Machine, not a rearrangement of the reference image. Near-future working Mexico: contemporary buildings, practical modern clothing. Goya-inspired etched realism, assured crosshatching and restrained aquatint, crisp readable gestures. Strict neutral BLACK AND GRAY on PURE WHITE highlights. No sepia, beige, cream, aged paper texture, border, captions or invented signage/slogans. Full bleed art; important hands/faces above bottom6% for separately typeset caption. Highest available native detail. Input1 is Q identity/style ONLY: exact slim long-limbed metal body, narrow segmented oval head, circular ears, exposed neck, articulated hands, ? breastplate and oversized worn coat. No helmet, weapons, horse or compulsory knight. Q is thoughtful and capable. Input2 is Chano identity ONLY: the stocky mustached middle-aged man with short dark hair, practical work shirt, trousers and boots, NOT the woman/child beside him. Preserve his face and build. Do not include the Custodian or reference-image women unless the scene calls for them. Scenes specify whether Q's shoulder is torn; before the loading-shutter accident his coat shoulder is intact. Scene: Inside the logistics park, Q and Chano have been admitted on a painted pedestrian strip toward reception. A parked trailer OBSTRUCTS Q's sightline toward Chano's feet. Across the narrow gap, an autonomous pallet mover is turning with a modest load. Q reaches with an articulated hand toward a small emergency-stop button fixed to the nearby yellow safety rail (rail rendered grayscale); an ordinary brass key loosely loops over his hand. Chano is partly hidden beside the trailer, not pinned under machinery. Show uncertainty, NOT a collision or giant robot battle. Conveyor wire screens behind. Q coat shoulder intact. Ground-level diagonal perspective with real obstruction.",
+      "asset_sha256": "75bc5b26f57d3e3a5bfa13c8d89bfe3eeaa3a06bfb7735bef86f6f1af51f73ed",
+      "raster_size_px": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_trim": 149.85,
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-c4f027d6-9315-482c-b319-7084986c43d6.png",
+      "review_scope": "Facing-scene and principal-character review for revision-proof insertion, not press-resolution approval."
     },
     {
       "plate_id": "issue-02-plate-04",
@@ -145,9 +184,18 @@
         78
       ],
       "asset": "output/illustrations/revised/issue-02/plate-04.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Two cartons.",
-      "scene_brief": "Lety in her orange safety vest examines the two fallen cartons in the halted bay. Q and Chano wait; no fire, catastrophic wreck, or triumphant rescue."
+      "scene_brief": "Lety in her orange safety vest examines the two fallen cartons in the halted bay. Q and Chano wait; no fire, catastrophic wreck, or triumphant rescue.",
+      "prompt": "Use case: illustration-story. Create a NEW full-page portrait 2:3 plate for The Ingenious Machine, not a rearrangement of the reference image. Near-future working Mexico: contemporary buildings, practical modern clothing. Goya-inspired etched realism, assured crosshatching and restrained aquatint, crisp readable gestures. Strict neutral BLACK AND GRAY on PURE WHITE highlights. No sepia, beige, cream, aged paper texture, border, captions or invented signage/slogans. Full bleed art; important hands/faces above bottom6% for separately typeset caption. Highest available native detail. Input1 is Q identity/style ONLY: exact slim long-limbed metal body, narrow segmented oval head, circular ears, exposed neck, articulated hands, ? breastplate and oversized worn coat. No helmet, weapons, horse or compulsory knight. Q is thoughtful and capable. Input2 is Chano identity ONLY: the stocky mustached middle-aged man with short dark hair, practical work shirt, trousers and boots, NOT the woman/child beside him. Preserve his face and build. Do not include the Custodian or reference-image women unless the scene calls for them. Scenes specify whether Q's shoulder is torn; before the loading-shutter accident his coat shoulder is intact. Scene: Within the halted logistics bay, Lety crouches to examine TWO fallen cardboard cartons, one dented and one opened at the seam. Lety is a Mexican warehouse coordinator about forty-five with a broad serious face, straight dark hair in a low practical ponytail, plain work trousers and an orange reflective safety vest rendered in GRAYSCALE. No helmet, no glasses. Q and Chano stand still several steps away by the painted pedestrian strip, attentive to her instruction; Q shoulder intact at this moment BEFORE running beneath the shutter. The stopped conveyor and wire screens sit behind, trailer partly visible. No flames, smashed robots, riot or heroic pose. Low side view centers her work and cartons, with the men secondary.",
+      "asset_sha256": "539243ad2af0aae705ccfcd7ebfa792adae6299d55dad840b951a07b3e7dad2b",
+      "raster_size_px": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_trim": 149.85,
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-a058f4c9-0780-439a-a7c5-43b3ca400c21.png",
+      "review_scope": "Facing-scene and principal-character review for revision-proof insertion, not press-resolution approval."
     },
     {
       "plate_id": "issue-02-plate-05",
@@ -178,9 +226,18 @@
         99
       ],
       "asset": "output/illustrations/revised/issue-02/plate-05.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Since Monday.",
-      "scene_brief": "Outside the park Lety returns Chano's lunch and bags, with the incident reference written on the bag; Q's coat now has the shutter tear at the shoulder."
+      "scene_brief": "Outside the park Lety returns Chano's lunch and bags, with the incident reference written on the bag; Q's coat now has the shutter tear at the shoulder.",
+      "prompt": "Use case: illustration-story. Create a NEW full-page portrait 2:3 plate for The Ingenious Machine, not a rearrangement of the reference image. Near-future working Mexico: contemporary buildings, practical modern clothing. Goya-inspired etched realism, assured crosshatching and restrained aquatint, crisp readable gestures. Strict neutral BLACK AND GRAY on PURE WHITE highlights. No sepia, beige, cream, aged paper texture, border, captions or invented signage/slogans. Full bleed art; important hands/faces above bottom6% for separately typeset caption. Highest available native detail. Input1 is Q identity/style ONLY: exact slim long-limbed metal body, narrow segmented oval head, circular ears, exposed neck, articulated hands, ? breastplate and oversized worn coat. No helmet, weapons, horse or compulsory knight. Q is thoughtful and capable. Input2 is Chano identity ONLY: the stocky mustached middle-aged man with short dark hair, practical work shirt, trousers and boots, NOT the woman/child beside him. Preserve his face and build. Do not include the Custodian or reference-image women unless the scene calls for them. Scenes specify whether Q's shoulder is torn; before the loading-shutter accident his coat shoulder is intact. Scene: immediately outside the distribution park entrance after the accident. Lety, the working warehouse woman from input 3 (pony tail, serious broad face, safety vest), has just returned Chano's fabric lunch bag and a bag of his belongings; she has written a small incident reference on the paper bag, not readable text. She points back toward an obstructing trailer inside the fence while telling Q that she has reported it since Monday. Q listens attentively, not triumphantly, holding his contact permit; his coat now has one freshly TORN SHOULDER and he protects that arm. Chano stands beside the returned lunch. Wet roadside after rain, concrete bollards and agave at industrial fence, correct contemporary Mexico. Clear three-person practical exchange. Do not depict a rescue or violent guard or Q inside a prohibited zone. Only Q, Chano and Lety foreground; no Celia.",
+      "asset_sha256": "bc73841c40a9a9421b56c44e2a0fbfed21cca531784617062a79d12a98e2a6f2",
+      "raster_size_px": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_trim": 149.85,
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-d0ec1b4d-8409-4b2e-a0f3-e20a95e50dd4.png",
+      "review_scope": "Facing-scene and principal-character review for revision-proof insertion, not press-resolution approval."
     },
     {
       "plate_id": "issue-02-plate-06",
@@ -205,9 +262,18 @@
         114
       ],
       "asset": "output/illustrations/revised/issue-02/plate-06.png",
-      "status": "planned",
-      "caption": "An appointment on the noticeboard.",
-      "scene_brief": "Q at the motel noticeboard reads the public announcement for Lucía's Querétaro event, his private notebook in hand; no imagined beloved or vision of a woman."
+      "status": "approved",
+      "caption": "A reading on the noticeboard.",
+      "scene_brief": "Q at the motel noticeboard reads the public announcement for Lucía's Querétaro event, his private notebook in hand; no imagined beloved or vision of a woman.",
+      "prompt": "Use case: illustration-story. Create a NEW full-page portrait 2:3 plate for The Ingenious Machine, not a rearrangement of the reference image. Near-future working Mexico: contemporary buildings, practical modern clothing. Goya-inspired etched realism, assured crosshatching and restrained aquatint, crisp readable gestures. Strict neutral BLACK AND GRAY on PURE WHITE highlights. No sepia, beige, cream, aged paper texture, border, captions or invented signage/slogans. Full bleed art; important hands/faces above bottom6% for separately typeset caption. Highest available native detail. Input1 is Q identity/style ONLY: exact slim long-limbed metal body, narrow segmented oval head, circular ears, exposed neck, articulated hands, ? breastplate and oversized worn coat. No helmet, weapons, horse or compulsory knight. Q is thoughtful and capable. Input2 is Chano identity ONLY: the stocky mustached middle-aged man with short dark hair, practical work shirt, trousers and boots, NOT the woman/child beside him. Preserve his face and build. Do not include the Custodian or reference-image women unless the scene calls for them. Scenes specify whether Q's shoulder is torn; before the loading-shutter accident his coat shoulder is intact. Scene: Evening at a modest roadside motel courtyard, dry fountain and twelve-room feel. Q alone at a cork noticeboard, examining a public reading announcement with a small notebook open in his other hand. Announcement has indistinct typesetting and no portrait; no readable words needed. He looks interested, considering a next destination, not worshipful or lovestruck. His mechanical head/body and long coat match reference1, but shoulder now has a small tear from the shutter. Modest wall lamp, plaster and worn doors, coiled charging cable secured away from the walkway. No Chano or Custodian, no apparition of a woman, no medieval decor.",
+      "asset_sha256": "b2d7308313bf69dedf62cc952b0e09ead484c8438fd7c46c9b0afdf936475a21",
+      "raster_size_px": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_trim": 149.85,
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-2a38f188-2d5c-4a7f-bdeb-6fa6b0d855fa.png",
+      "review_scope": "Facing-scene and principal-character review for revision-proof insertion, not press-resolution approval."
     },
     {
       "plate_id": "issue-02-plate-07",
@@ -241,9 +307,18 @@
         138
       ],
       "asset": "output/illustrations/revised/issue-02/plate-07.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The pink concha.",
-      "scene_brief": "At breakfast Q chooses a pink concha (render its form in monochrome), with Chano and Celia's coffee service. Bodily appetite and company, not a robot scanning food."
+      "scene_brief": "At breakfast Q chooses a pink concha (render its form in monochrome), with Chano and Celia's coffee service. Bodily appetite and company, not a robot scanning food.",
+      "prompt": "Use case: illustration-story. Create a NEW full-page portrait 2:3 plate for The Ingenious Machine, not a rearrangement of the reference image. Near-future working Mexico: contemporary buildings, practical modern clothing. Goya-inspired etched realism, assured crosshatching and restrained aquatint, crisp readable gestures. Strict neutral BLACK AND GRAY on PURE WHITE highlights. No sepia, beige, cream, aged paper texture, border, captions or invented signage/slogans. Full bleed art; important hands/faces above bottom6% for separately typeset caption. Highest available native detail. Input1 is Q identity/style ONLY: exact slim long-limbed metal body, narrow segmented oval head, circular ears, exposed neck, articulated hands, ? breastplate and oversized worn coat. No helmet, weapons, horse or compulsory knight. Q is thoughtful and capable. Input2 is Chano identity ONLY: the stocky mustached middle-aged man with short dark hair, practical work shirt, trousers and boots, NOT the woman/child beside him. Preserve his face and build. Do not include the Custodian or reference-image women unless the scene calls for them. Scenes specify whether Q's shoulder is torn; before the loading-shutter accident his coat shoulder is intact. Scene: Breakfast in a modest twelve-room roadside motel courtyard with a dry fountain. Q seated at a small table chooses a shell-scored concha from a plate while Chano smiles over coffee. Señora Celia, the manager, stands nearby with a coffee pot: Mexican woman around sixty, rounded face, gray-streaked dark hair pulled into a practical bun, plain cardigan over blouse and a working apron, no glasses. Make her distinct from Lucía and Araceli. Shell bun flavor is uncertain; no scanning rays or childish robot amazement. Q coat shoulder now has a small ragged tear. No Custodian. Intimate eye-level view with hands and bread well above caption area.",
+      "asset_sha256": "24e7adf5ba411ae3e2bdf41ca040d0261c83935c190c483b05db399ac0489e85",
+      "raster_size_px": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_trim": 149.85,
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-97f88acd-d89d-41cd-9197-c2deafda077a.png",
+      "review_scope": "Facing-scene and principal-character review for revision-proof insertion, not press-resolution approval."
     },
     {
       "plate_id": "issue-02-plate-08",
@@ -278,9 +353,18 @@
         163
       ],
       "asset": "output/illustrations/revised/issue-02/plate-08.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The crossed-out destination.",
-      "scene_brief": "Chano writes the Dulcinea joke in the motel register and Q objects; compose around their hands, the register and Q's notebook. Do not show Q inventing a booking with a woman."
+      "scene_brief": "Chano crosses out the Dulcinea sentence he wrote in the guest register; Q objects, holding his private notebook. Celia observes. The line is not a booking made by Q.",
+      "prompt": "Use case: illustration-story. Create a NEW full-page portrait 2:3 plate for The Ingenious Machine, not a rearrangement of the reference image. Near-future working Mexico: contemporary buildings, practical modern clothing. Goya-inspired etched realism, assured crosshatching and restrained aquatint, crisp readable gestures. Strict neutral BLACK AND GRAY on PURE WHITE highlights. No sepia, beige, cream, aged paper texture, border, captions or invented signage/slogans. Full bleed art; important hands/faces above bottom6% for separately typeset caption. Highest available native detail. Input1 is Q identity/style ONLY: exact slim long-limbed metal body, narrow segmented oval head, circular ears, exposed neck, articulated hands, ? breastplate and oversized worn coat. No helmet, weapons, horse or compulsory knight. Q is thoughtful and capable. Input2 is Chano identity ONLY: the stocky mustached middle-aged man with short dark hair, practical work shirt, trousers and boots, NOT the woman/child beside him. Preserve his face and build. Do not include the Custodian or reference-image women unless the scene calls for them. Scenes specify whether Q's shoulder is torn; before the loading-shutter accident his coat shoulder is intact. Scene: At La Estrella motel's reception counter after breakfast, Chano crosses out a line HE has just written in the open guest register; Q watches and makes a small conversational objection, one articulated hand open, his own little notebook held separately. Celia watches from behind the counter. Use image3 ONLY for Celia's identity: the older woman with gray-streaked bun, plain cardigan and apron. Same Chano and Q as reference1/2; Q shoulder now torn. Close view emphasizes two different notebooks and Chano's pen, no legible text, no romantic woman on a screen, no indignation or fight. A biscuit tin holds room keys.",
+      "asset_sha256": "e1512fbfdcc9e0f843166c348e25fbcb3f8a45224a20a1b60522013c25b176f5",
+      "raster_size_px": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_trim": 149.85,
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-1bdad328-e2fd-495d-af6c-76c8025ddff5.png",
+      "review_scope": "Facing-scene and principal-character review for revision-proof insertion, not press-resolution approval."
     },
     {
       "plate_id": "issue-02-plate-09",
@@ -317,9 +401,18 @@
         190
       ],
       "asset": "output/illustrations/revised/issue-02/plate-09.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The closed register.",
-      "scene_brief": "Beto's visiting camera crew faces Q and Celia in the motel courtyard; the guest register remains closed. The camera and conflicting wishes, not a fight, organize the scene."
+      "scene_brief": "Beto's visiting camera crew faces Q and Celia in the motel courtyard; the guest register remains closed. The camera and conflicting wishes, not a fight, organize the scene.",
+      "prompt": "Use case: illustration-story. Create a NEW full-page portrait 2:3 plate for The Ingenious Machine, not a rearrangement of the reference image. Near-future working Mexico: contemporary buildings, practical modern clothing. Goya-inspired etched realism, assured crosshatching and restrained aquatint, crisp readable gestures. Strict neutral BLACK AND GRAY on PURE WHITE highlights. No sepia, beige, cream, aged paper texture, border, captions or invented signage/slogans. Full bleed art; important hands/faces above bottom6% for separately typeset caption. Highest available native detail. Input1 is Q identity/style ONLY: exact slim long-limbed metal body, narrow segmented oval head, circular ears, exposed neck, articulated hands, ? breastplate and oversized worn coat. No helmet, weapons, horse or compulsory knight. Q is thoughtful and capable. Input2 is Chano identity ONLY: the stocky mustached middle-aged man with short dark hair, practical work shirt, trousers and boots, NOT the woman/child beside him. Preserve his face and build. Do not include the Custodian or reference-image women unless the scene calls for them. Scenes specify whether Q's shoulder is torn; before the loading-shutter accident his coat shoulder is intact. Scene: A camera crew has arrived at the modest La Estrella courtyard. Celia firmly holds the CLOSED guest register against her apron and declines to open it. Q stands beside her, calm and supportive, torn shoulder visible. Chano steps in front of the camera lens. Beto, a neatly dressed Mexican publicity producer around thirty-five with short combed dark hair and a light blazer over a dark shirt, stands beside the camera operator; a woman with a release form waits behind. Make Celia exactly the woman in reference3. Dry fountain and motel balconies behind. Wider theatrical composition showing differing intentions, NOT violence, police or a protest riot. No open register, no readable lettering or banners.",
+      "asset_sha256": "afac33b02d39e510bfb639739a18c043b06fe86eabf4b2971aca724413116d3d",
+      "raster_size_px": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_trim": 149.85,
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-5d41fac1-270e-496f-95e6-22274f0cec04.png",
+      "review_scope": "Facing-scene and principal-character review for revision-proof insertion, not press-resolution approval."
     },
     {
       "plate_id": "issue-02-plate-10",
@@ -344,9 +437,18 @@
         204
       ],
       "asset": "output/illustrations/revised/issue-02/plate-10.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Then answer them.",
-      "scene_brief": "Celia hands Chano the torn guest-register page beside the open drawer of bills and a family photograph. Q's erased destination is a mark on the paper, not a readable generated inscription. Do not substitute the child's drawing from the preceding spread."
+      "scene_brief": "Celia hands Chano the torn guest-register page beside the open drawer of bills and a family photograph. Q's erased destination is a mark on the paper, not a readable generated inscription. Do not substitute the child's drawing from the preceding spread.",
+      "prompt": "Use case: illustration-story. Create a NEW full-page portrait 2:3 plate for The Ingenious Machine, not a rearrangement of the reference image. Near-future working Mexico: contemporary buildings, practical modern clothing. Goya-inspired etched realism, assured crosshatching and restrained aquatint, crisp readable gestures. Strict neutral BLACK AND GRAY on PURE WHITE highlights. No sepia, beige, cream, aged paper texture, border, captions or invented signage/slogans. Full bleed art; important hands/faces above bottom6% for separately typeset caption. Highest available native detail. Input1 is Q identity/style ONLY: exact slim long-limbed metal body, narrow segmented oval head, circular ears, exposed neck, articulated hands, ? breastplate and oversized worn coat. No helmet, weapons, horse or compulsory knight. Q is thoughtful and capable. Input2 is Chano identity ONLY: the stocky mustached middle-aged man with short dark hair, practical work shirt, trousers and boots, NOT the woman/child beside him. Preserve his face and build. Do not include the Custodian or reference-image women unless the scene calls for them. Scenes specify whether Q's shoulder is torn; before the loading-shutter accident his coat shoulder is intact. Scene: Later that afternoon at the motel reception desk, Celia hands one TORN PAGE from the guest register to Chano, who accepts it reluctantly. Same older woman from reference3, gray bun, cardigan and apron; same mustached Chano from reference2. Open drawer beside her contains unpaid bills and a modest family photograph of her brother next to an old sign, but no readable words. Guest register rests separately, missing that page. Only these two people, NO Q. Intimate eye-level view with hands and paper high enough to remain clear of bottom caption. This is not the child's drawing and not a payment.",
+      "asset_sha256": "e16a3978ce8bc0cc2594f098b3b5a56f88878a938af5a5b0734ef6d03d787bb5",
+      "raster_size_px": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_trim": 149.85,
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-8945a826-118b-4649-829c-717a100a925d.png",
+      "review_scope": "Facing-scene and principal-character review for revision-proof insertion, not press-resolution approval."
     },
     {
       "plate_id": "issue-02-plate-11",
@@ -386,15 +488,24 @@
         234
       ],
       "asset": "output/illustrations/revised/issue-02/plate-11.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The price of cold water.",
-      "scene_brief": "Hilario negotiates beside bottles and ice at his roadside table with a park guard. Q and Chano are secondary; the vendor has his own business."
+      "scene_brief": "Hilario argues about ice and water prices with the park guard. Neither Q nor Chano is present yet; the vendor has his own business.",
+      "prompt": "Use case: illustration-story. Create a NEW full-page portrait 2:3 plate for The Ingenious Machine, not a rearrangement of the reference image. Near-future working Mexico: contemporary buildings, practical modern clothing. Goya-inspired etched realism, assured crosshatching and restrained aquatint, crisp readable gestures. Strict neutral BLACK AND GRAY on PURE WHITE highlights. No sepia, beige, cream, aged paper texture, border, captions or invented signage/slogans. Full bleed art; important hands/faces above bottom6% for separately typeset caption. Highest available native detail. Input1 is Q identity/style ONLY: exact slim long-limbed metal body, narrow segmented oval head, circular ears, exposed neck, articulated hands, ? breastplate and oversized worn coat. No helmet, weapons, horse or compulsory knight. Q is thoughtful and capable. Input2 is Chano identity ONLY: the stocky mustached middle-aged man with short dark hair, practical work shirt, trousers and boots, NOT the woman/child beside him. Preserve his face and build. Do not include the Custodian or reference-image women unless the scene calls for them. Scenes specify whether Q's shoulder is torn; before the loading-shutter accident his coat shoulder is intact. Scene: A roadside water seller's table OUTSIDE the logistics park. Hilario, Mexican man about sixty, lean sun-lined face, sparse mustache, short salt-and-pepper hair, a plain light short-sleeved shirt and practical trousers, negotiates with a younger security guard in plain dark uniform. A sweating sealed water bottle stands between them beside an open insulated cooler with visible ice and rows of ordinary unlabeled bottles. Hilario points to the ice with patient humor; guard holds a small incident device but no weapon in hand. No Q or Chano: this occurs just before their arrival. Chain-link park fence, drainage ditch and agaves, overcast afternoon, not historic town center. No invented slogans, bottle logos or text.",
+      "asset_sha256": "e516aaef2930fd0182fe8b2fc3c465bf756160f5aaca3b5195969ad3c5fd2fd8",
+      "raster_size_px": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_trim": 149.85,
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-26045116-5a5b-40ce-b889-0af8dd687a9e.png",
+      "review_scope": "Facing-scene and principal-character review for revision-proof insertion, not press-resolution approval."
     },
     {
       "plate_id": "issue-02-plate-12",
       "page": 25,
       "facing_text_page": 24,
-      "facing_text": "twice. He opened one bottle for\nChano and kept the other for\nrinsing his mouth. The distinction\nseemed too unappetizing to explain\nat the table.\n“Are you the people from the\nvideo?” Hilario asked.\n“I pressed the stop,” Q said. “The\nvideo leaves out why.”\n“They always do.”\n“You haven't seen this one.”\n“I've seen videos.”\nHilario looked at Chano.\n“Does he always talk like that?”\n“When he’s awake.”\nHilario laughed and took out his\nphone. He had no intention of\nrecording an adventure. He wanted\nto show his wife the man who had\nargued with a card reader and\nmanaged to pay twice. He recorded\nthe last seconds of the argument\nwith the guard, the sign, Q’s key,\nand Chano’s face, which was cut off\nby a crate of soft drinks.\nBy sunset, the video of Q had begun\nto circulate. The first version\nshowed him alone. The second\nincluded Chano’s hand. The third\nincluded the pallet mover’s\nwarning. The fourth included\nHilario’s table at the edge of the\nframe, though no one knew whether\nthe table belonged to the story or\nmerely to the roadside.\nLater, Castalia bought the video for\na sum Hilario first considered a\nprize and then a price. They told\nhim they would use it to document\nthe spontaneous birth of a local\nlegend.\n“And what am I?” he asked.\n“An incidental witness,” said the\nauthorization woman.\n“Does that pay differently from\nbeing a witness?”\nThe woman offered him a new\nform.\nHilario did not sign it.\nOn the day Q bought the water,\nbefore anyone had offered to\npurchase the afternoon, Hilario had\nput away his phone, lifted the table,\nand asked Q whether he intended to\nreturn.\n“I don't know when,” Q said. “I\nwould like to hear what happens\nabout your table.”\n“Stories do not buy ice.”\n“I'll buy water.”\n“That helps.”\nQ kept the receipt. The line about\nice went into his journal, with\nHilario's name and the failed card\ntransaction. It was an excellent\nsentence. He was already tempted\n",
+      "facing_text": "twice. He opened one bottle for\nChano and kept the other for\nrinsing his mouth. The distinction\nseemed too unappetizing to explain\nat the table.\n“Are you the people who stopped\nthe bay?” Hilario asked.\n“I pressed the stop,” Q said. “What\nhas the guard told you?”\n“That a machine attacked a\nmachine.”\n“I was worried about the man\nbeside it.”\n“Then he'll be in the expensive\nversion.”\nHilario looked at Chano.\n“Does he always talk like that?”\n“When he’s awake.”\nHilario laughed and took out his\nphone. He had no intention of\nrecording an adventure. He wanted\nto show his wife the man who had\nargued with a card reader and\nmanaged to pay twice. He recorded\nthe last seconds of the argument\nwith the guard, the sign, Q’s key,\nand Chano’s face, which was cut off\nby a crate of soft drinks.\nBy sunset, the video of Q had begun\nto circulate. The first version\nshowed him alone. The second\nincluded Chano’s hand. The third\nincluded the pallet mover’s\nwarning. The fourth included\nHilario’s table at the edge of the\nframe, though no one knew whether\nthe table belonged to the story or\nmerely to the roadside.\nLater, Castalia bought the video for\na sum Hilario first considered a\nprize and then a price. They told\nhim they would use it to document\nthe spontaneous birth of a local\nlegend.\n“And what am I?” he asked.\n“An incidental witness,” said the\nauthorization woman.\n“Does that pay differently from\nbeing a witness?”\nThe woman offered him a new\nform.\nHilario did not sign it.\nOn the day Q bought the water,\nbefore anyone had offered to\npurchase the afternoon, Hilario had\nput away his phone, lifted the table,\nand asked Q whether he intended to\nreturn.\n“I don't know when,” Q said. “I\nwould like to hear what happens\nabout your table.”\n“Stories do not buy ice.”\n“I'll buy water.”\n“That helps.”\nQ kept the receipt. The line about\nice went into his journal, with\nHilario's name and the failed card\n",
       "source_block_ids": [
         234,
         235,
@@ -421,15 +532,25 @@
         256
       ],
       "asset": "output/illustrations/revised/issue-02/plate-12.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The failed reader.",
-      "scene_brief": "Q pays Hilario in cash with the failed card reader and receipt on the table; Chano opens a bottle. No implication that the receipt proves the entire adventure."
+      "scene_brief": "Q pays Hilario in cash with the failed card reader and receipt on the table; Chano opens a bottle. No implication that the receipt proves the entire adventure.",
+      "prompt": "Use case: illustration-story. Create a NEW full-page portrait 2:3 plate for The Ingenious Machine, not a rearrangement of the reference image. Near-future working Mexico: contemporary buildings, practical modern clothing. Goya-inspired etched realism, assured crosshatching and restrained aquatint, crisp readable gestures. Strict neutral BLACK AND GRAY on PURE WHITE highlights. No sepia, beige, cream, aged paper texture, border, captions or invented signage/slogans. Full bleed art; important hands/faces above bottom6% for separately typeset caption. Highest available native detail. Input1 is Q identity/style ONLY: exact slim long-limbed metal body, narrow segmented oval head, circular ears, exposed neck, articulated hands, ? breastplate and oversized worn coat. No helmet, weapons, horse or compulsory knight. Q is thoughtful and capable. Input2 is Chano identity ONLY: the stocky mustached middle-aged man with short dark hair, practical work shirt, trousers and boots, NOT the woman/child beside him. Preserve his face and build. Do not include the Custodian or reference-image women unless the scene calls for them. Scenes specify whether Q's shoulder is torn; before the loading-shutter accident his coat shoulder is intact. Scene: Q at Hilario's roadside cold-water table immediately after the distribution park incident. Input 3 establishes Hilario's exact lean lined face, wispy mustache, graying wavy hair and short-sleeved striped shirt, as well as ice chest/table/fence. Q with freshly torn coat shoulder calmly hands Mexican cash to Hilario after an unconnected card reader failed to confirm payment. Hilario accepts payment; on table are reader with simple disconnected indicator, two sealed water bottles, small carbon-copy receipt pad and pen. Q retains the customer's receipt; duplicate stays on pad with vendor. Chano, not the guard, waits beside him with a water bottle and muddy boots. Cash/receipt exchange is legible, hands well formed. The point is practical failed transaction, not an argument or preaching. Pure white paper highlights, no huge printed numerals or invented text. Do not copy the guard from input 3. Only Q, Chano and Hilario foreground.",
+      "asset_sha256": "0f361cee24c27b7ba85dd8a5f80c1d9c13c1ca2300c937add176cd0f50eed46f",
+      "raster_size_px": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_trim": 149.85,
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-f49581fa-26bd-4321-a305-b1a44f9dab28.png",
+      "review_scope": "Facing-scene and principal-character review for revision-proof insertion, not press-resolution approval.",
+      "review_note": "Cash transaction continues across the preceding and facing narrative pages; facing page recalls the failed reader and Q keeping the receipt. Extra stock bottles remain for sale. Incidental highway skyline is fictional."
     },
     {
       "plate_id": "issue-02-plate-13",
       "page": 27,
       "facing_text_page": 26,
-      "facing_text": "to remove the transaction, which\nmade him sound less competent.\nWhen the buyers returned, they\noffered Hilario money for his\ncarbon copy of the receipt. He\nrefused. They offered him more for\nthe table. He refused that too,\nbecause the table was already\noccupied by bottles and because\nselling an object did not make the\nstory beside it more true.\nLater, when the receipt appeared in\ncourt, the judge admitted it as proof\nthat a purchase had occurred.\nHilario watched the hearing on his\ndaughter’s television. The broadcast\nmisspelled his name again.\nHis daughter asked whether he\nintended to complain.\n“No,” Hilario said. “I intend to raise\nthe price.”\nThe next morning, his sign read:\nCOLD WATER -\nROOM-TEMPERATURE\nWATER - WATER ON CREDIT\n- WATER WITH TESTIMONY\nThe last category cost fifteen pesos.\nInterlude: The Machine in\nthe Wrong Place\nThere was a smaller machine in Q's\nfirst account of the distribution\npark, and Chano insisted on\nkeeping it there. Before they\nreached the pallet mover, a floor\nscrubber had been turning\nrepeatedly at the edge of the\npedestrian strip.\n“It looks trapped,” Q had said.\n“It does that every morning.”\n“Has anyone reported it?”\n“Every morning.”\nQ had crouched far enough away to\nread LOW WATER on its display.\nA brush caught the loose hem of his\ncoat. He freed it before the machine\ncould complete its case against\nunsolicited assistance.\n“We could find the cleaner,” he\nsaid.\n“We're supposed to be finding\nreception.”\nQ took down the machine's service\nnumber and left it at that. In the\naccount he wrote later, he nearly\nmade the scrubber a companion he\nhad declined to abandon. Chano\nrecalled that they had abandoned it\nquite promptly.\n“We should keep your version,” Q\nsaid.\n“It's shorter.”\n“It also explains why the floor was\nstill dirty.”\n",
+      "facing_text": "transaction. It was an excellent\nsentence. He was already tempted\nto remove the transaction, which\nmade him sound less competent.\nWhen the buyers returned, they\noffered Hilario money for his\ncarbon copy of the receipt. He\nrefused. They offered him more for\nthe table. He refused that too,\nbecause the table was already\noccupied by bottles and because\nselling an object did not make the\nstory beside it more true.\nLater, when the receipt appeared in\ncourt, the judge admitted it as proof\nthat a purchase had occurred.\nHilario watched the hearing on his\ndaughter’s television. The broadcast\nmisspelled his name again.\nHis daughter asked whether he\nintended to complain.\n“No,” Hilario said. “I intend to raise\nthe price.”\nThe next morning, his sign read:\nCOLD WATER -\nROOM-TEMPERATURE\nWATER - WATER ON CREDIT\n- WATER WITH TESTIMONY\nThe last category cost fifteen pesos.\nInterlude: The Machine in\nthe Wrong Place\nThere was a smaller machine in Q's\nfirst account of the distribution\npark, and Chano insisted on\nkeeping it there. Before they\nreached the pallet mover, a floor\nscrubber had been turning\nrepeatedly at the edge of the\npedestrian strip.\n“It looks trapped,” Q had said.\n“It does that every morning.”\n“Has anyone reported it?”\n“Every morning.”\nQ had crouched far enough away to\nread LOW WATER on its display.\nA brush caught the loose hem of his\ncoat. He freed it before the machine\ncould complete its case against\nunsolicited assistance.\n“We could find the cleaner,” he\nsaid.\n“We're supposed to be finding\nreception.”\nQ took down the machine's service\nnumber and left it at that. In the\naccount he wrote later, he nearly\nmade the scrubber a companion he\nhad declined to abandon. Chano\nrecalled that they had abandoned it\nquite promptly.\n“We should keep your version,” Q\nsaid.\n“It's shorter.”\n“It also explains why the floor was\nstill dirty.”\n",
       "source_block_ids": [
         256,
         257,
@@ -454,9 +575,22 @@
         276
       ],
       "asset": "output/illustrations/revised/issue-02/plate-13.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "An unadopted companion.",
-      "scene_brief": "Flashback: Q crouches beside the floor scrubber at the pedestrian strip, freeing his coat hem from the brush. Chano waits to continue to reception. Shoulder is not yet torn at this earlier moment."
+      "scene_brief": "Flashback: Q crouches beside the floor scrubber at the pedestrian strip, freeing his coat hem from the brush. Chano waits to continue to reception. Shoulder is not yet torn at this earlier moment.",
+      "prompt": "Use case: illustration-story. Create a NEW full-page portrait 2:3 plate for The Ingenious Machine, not a rearrangement of the reference image. Near-future working Mexico: contemporary buildings, practical modern clothing. Goya-inspired etched realism, assured crosshatching and restrained aquatint, crisp readable gestures. Strict neutral BLACK AND GRAY on PURE WHITE highlights. No sepia, beige, cream, aged paper texture, border, captions or invented signage/slogans. Full bleed art; important hands/faces above bottom6% for separately typeset caption. Highest available native detail. Input1 is Q identity/style ONLY: exact slim long-limbed metal body, narrow segmented oval head, circular ears, exposed neck, articulated hands, ? breastplate and oversized worn coat. No helmet, weapons, horse or compulsory knight. Q is thoughtful and capable. Input2 is Chano identity ONLY: the stocky mustached middle-aged man with short dark hair, practical work shirt, trousers and boots, NOT the woman/child beside him. Preserve his face and build. Do not include the Custodian or reference-image women unless the scene calls for them. Scenes specify whether Q's shoulder is torn; before the loading-shutter accident his coat shoulder is intact. Scene: Flashback inside the distribution park BEFORE the pallet incident. Q crouches beside a small practical autonomous floor scrubber at the edge of the painted pedestrian strip, carefully frees the loose HEM of his long coat from one circular brush. His charging cable stays secured and his coat SHOULDER IS INTACT. Chano waits a few steps toward reception, looking back impatiently. No rescuing another humanoid, no robot face on scrubber, no tools dismantling it, no broken machinery. Clear low angle emphasizes mechanical hand, fabric and ordinary cleaning brush. The scrubber has a small unlettered warning display. Modern warehouse, no church or medieval scenery.",
+      "asset_sha256": "e5dce77bf6c7e3e37a3bdec23128cac4db87fa67a765678b8f5ec9a1ea468995",
+      "raster_size_px": [
+        1024,
+        1536
+      ],
+      "effective_dpi_at_trim": 149.85,
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-61734583-c8b5-4e53-8451-d852af17982d.png",
+      "review_scope": "Facing-scene and principal-character review for revision-proof insertion, not press-resolution approval."
     }
-  ]
+  ],
+  "generation_mode": "built-in image generation; fourteen unique scene assets; two targeted truck-window reflection edits, first unsuccessful",
+  "celia_reference": "output/illustrations/revised/issue-02/plate-07.png",
+  "lety_reference": "output/illustrations/revised/issue-02/plate-04.png",
+  "hilario_reference": "output/illustrations/revised/issue-02/plate-11.png"
 }
