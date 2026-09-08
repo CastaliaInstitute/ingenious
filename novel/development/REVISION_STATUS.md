@@ -212,7 +212,7 @@ the book.” The source now permits Q to remain alive when the writing stops.
   independent blind runs; the limitation is explicit.
 - Current structural check: 22 unique chapter headings, two book divisions,
   one coda, and the pen-down final sentence. The manuscript is approximately
-  74,600 whitespace-delimited words including front matter. Selected checks
+  79,200 whitespace-delimited words including front matter at the pacing checkpoint. Selected checks
   confirm the late delivery, travel, and maintenance anchors and reject named
   obsolete events. `git diff --check` passes. These checks do not establish
   whole-book literary quality or validate any PDF or illustration.
@@ -265,9 +265,21 @@ Chapter Twenty-Two. Eight fresh-context calls now test two scene variants with
 Qwen3 8B and Gemini 2.5 Flash; `FRESH_CONTEXT_REVIEW_2026_09_08.md` records the
 outputs, author-supplied world updates and limitations. The staff-help alternative
 now changes Chapter Eight and the dependent Chapter Sixteen testimony; see
-`GATE_SIMULATION_REVISION.md`. Next: whole-book pacing, broader scene tests and
-illustration production. Earlier chapter-by-chapter
-continuation notes below are a history of this pass, not the latest queue.
+`GATE_SIMULATION_REVISION.md`. The first structural pacing pass now moves
+Chapter Seven's corporate confrontation after its four interludes; see
+`PACING_REVIEW_2026_09_08.md`. Its complete city sequence ends with Q and Chano
+choosing a morning departure, while all four interludes remain verbatim. The
+records office precedes the later-in-the-week translation workshop. The outline
+agrees and no longer demands a lesson or failed literary reference at every stop.
+Issue 7 remains 44 pages with 22 planned plates and eleven A3 sheets at
+12.3/17.425 pt. Its 7,139 printable words pass source-order checks; pages 14,
+40 and 42 and the center spread have visual review. All 22 issue manifests
+match fresh layout plans. No new art is generated or approved.
+Next: examine Chapter Five's interlude sequence and the return/hearing repetition
+in Chapters Ten and Sixteen; continue broader scene tests and illustration
+production. The current pacing report is a bounded structural review, not a new
+full reading of both books. Earlier chapter-by-chapter continuation notes below
+are a history of the voice pass, not the latest queue.
 Q requests help from the guard and remains inside the visitor bay. The photographer
 leaves for his own angle, not by following Q; Lucía repeats the masked instruction.
 The incident account, site-plan annotation and two testimony passages agree.

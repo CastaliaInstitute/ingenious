@@ -1,5 +1,10 @@
 # Chapter Seven: a reader on the bus
 
+Historical voice-pass record. The subsequent structural revision in
+`PACING_REVIEW_2026_09_08.md` moves the corporate confrontation after the four
+interludes and puts the records office before the translation workshop. Its
+7,139-word, 44-page layout and rebound plate plans supersede the pagination below.
+
 ## Verdict
 
 The chapter's best opportunity is to let Q discover that a person may want to

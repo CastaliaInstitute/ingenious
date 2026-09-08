@@ -4108,7 +4108,7 @@ She closed the folder. Chano finished his coffee.
 
 “And after that?”
 
-“The corporation.”
+“The corporation wants us at the end of the week.”
 
 Q brightened. “This resembles a quest.”
 
@@ -4337,74 +4337,9 @@ folders down. He held the bag while she did it.
 Chano sat beside her. Q joined them, with one hand still holding a bag that
 none of them presently needed to consult.
 
-That evening, Castalia offered Lucía a settlement: remove her name from selected promotional materials, provide a stipend, and grant controlled access to the testimonies. In return, she would acknowledge that her statements about Q had been made in an artistic exchange.
-
-“I never agreed to an artistic exchange,” she said.
-
-“You appeared in the footage,” Beto replied.
-
-“So did the wall.”
-
-“The wall did not make claims.”
-
-“Neither did I.”
-
-Q leaned forward. “This asks her to give your description of the encounter
-precedence over her own. What are you offering without that condition?”
-
-Beto turned to him. “You are not her representative.”
-
-“No,” Q said. “She can answer for herself. I'm asking about a condition that
-also appears in my agreement.”
-
-“Your appearance rights are already licensed.”
-
-“Within the terms we signed. My private manuscript is excluded.”
-
-“The manuscript. Not the asset producing it.”
-
-Q put his copy on the table. “I licensed appearances. I didn't settle ownership
-of my body.”
-
-“Castalia had settled that before you learned to sign.”
-
-“Castalia had written it down,” Q said. “Those are not necessarily the same
-event.”
-
-Lucía pushed the offer back. “Send me the terms for correcting the publicity.
-Separate from access to the records. I'll have someone review them.”
-
-Beto opened the proposed campaign on the meeting-room screens. Each displayed
-a different version of Q: miracle, threat, product, saint, lover, weapon.
-Two previews began speaking at once. The technician muted one, then the other.
-
-“That wasn't meant to play yet,” he said.
-
-“Which part?” Q asked.
-
-Lucía took the folders from the table. “We’re leaving.”
-
-They took the stairs to reception. Outside, a screen on the opposite building
-was already running the campaign.
-
-**Q IS RETURNING TO HIS MAKERS.**
-
-Chano read the message and laughed. “Are we?”
-
-Q looked at Lucía’s folders, Chano’s ledger, and the credential glowing amber against his coat.
-
-“No,” he said.
-
-They stopped at a café with a socket. Q called the Custodian and sent him the
-new ownership notice beside the signed license. He had accepted that license
-for repairs, travel, and a chance to speak; protecting Chano was only part of
-the account. He said so before asking for help finding someone to review it.
-
-The Custodian offered to come. Q asked him to stay near the original records
-for now. Then he checked tomorrow's itinerary with Lucía. The museum appearance
-was still scheduled. He would attend, but not agree to a return journey on
-Castalia's behalf. Lucía had an appointment of her own. They agreed where to
-meet afterward, which was less stirring than escape and more likely to work.
+Q checked the next morning's museum appearance against Lucía's appointments.
+They agreed where to meet afterward. She finished the torta before opening
+another folder.
 
 ### Interlude: The Calendar That Did Not Announce the End
 
@@ -4551,141 +4486,6 @@ That evening he told the Custodian about the unwritten comparison.
 
 They spent the rest of the call trying to shorten a paragraph. The calendar
 had offered no assistance with this recurring obligation.
-
-### Interlude: The Translator Who Left One Word Untranslated
-
-At a translation workshop later that week, a professor named Amalia asked Q
-to leave the automatic transcript off for the first ten minutes.
-
-“Certainly. Should I make notes afterward?”
-
-“About the exercise, yes. Not a copy of the recording.”
-
-Q closed the transcription window. He had once supposed that carrying an
-archive would mean less time arranging windows. The body had not improved
-this aspect of scholarship.
-
-The room held translation students, two interpreters, a lawyer seeking the
-seminar next door, and Yunuén, who had brought an excerpt approved for the
-class by the speakers in her Michoacán community. Before playing it she named
-the language, the occasion, and the limits of that approval. Amalia wrote the
-limits on the board. The lawyer sat down; his seminar was on procurement,
-and he suspected he might be attending it after all.
-
-The recording contained pauses, laughter, a correction to a date, and a long
-answer to a question the excerpt did not include. Q could recognize some
-words but could not translate the passage reliably. He noted that limitation
-instead of assigning his uncertainty an impressive percentage.
-
-Amalia distributed three Spanish renderings prepared for discussion. One said
-that the community rejected the proposed road. Another withheld agreement.
-The third referred to obligations concerning a path already in use.
-
-“What would you send to the client?” she asked.
-
-“None without checking the missing question,” Q said. “These don't merely
-differ in tone. They describe different decisions.”
-
-“The client has asked for the answer by noon.”
-
-“Then I'd send what I can establish and say what still needs checking.”
-
-The lawyer raised a hand. “That is quite often an answer the client can use.”
-
-Amalia smiled. “You may stay.”
-
-Yunuén supplied the question, in Spanish. The speaker had been asked to name
-who could grant permission. He had answered by describing work on the path,
-not by supplying an owner. Q revised his note: the road proposal was context,
-but none of the three versions warranted reporting a vote.
-
-A student preferred the second version. “Withholding agreement leaves room
-for the next meeting.”
-
-“It also makes this sound like that meeting,” Yunuén said. “It wasn't.”
-
-The student crossed out a sentence. Q asked whether they needed a translation
-or a summary for the exercise.
-
-“A translation,” Amalia said.
-
-“Then I should stop tidying away the speaker's detour.”
-
-He understood why Menard had returned to him. The words about a path looked
-different now, although the recorded answer had not changed. But he could
-also hear the ordinary interpreter beside him asking which antecedent belonged
-to a pronoun. Not every difficulty required a theory of authorship.
-
-Yunuén stopped the replay before the last section. That portion had not been
-approved for classroom use. A term in the working translation remained in
-the original language. It referred to a relationship whose details the speaker
-had chosen not to explain to this audience.
-
-“Should the published translation include that word?” Q asked.
-
-“There isn't a published translation yet.”
-
-“The class version, then.”
-
-“Leave the word as it is. Don't reconstruct the omitted explanation.”
-
-He did. His search tool remained closed. There might be discussions of the
-term elsewhere, but a discussion elsewhere would not establish what this
-speaker had authorized here.
-
-Amalia asked the class to distinguish that limit from a translator simply
-not knowing a word. One student said the page would look the same either way.
-
-“Which is why the translator should know the difference,” Q said. “And be
-honest about it when the explanation can be given.”
-
-Yunuén checked his note. She asked him to remove the term from his personal
-copy after the session. The class worksheet could remain with Amalia under
-the agreed conditions. Q repeated the arrangement to make sure he had not
-turned a limited permission into a universal prohibition.
-
-The lawyer asked who paid for the extra consultation.
-
-“This time, the workshop budget,” Amalia said.
-
-“Does the speaker receive anything?”
-
-Yunuén showed him the fee line. He found that travel was included but the
-return journey was not. The professor took the sheet from him with an
-expression more severe than any she had directed at Q's interpretation.
-
-“That is our error.”
-
-The lawyer wrote the missing item in the margin. Amalia asked whether he could
-read the rest. He checked the time of his procurement seminar and moved his
-chair closer to the desk.
-
-Afterward, Q and Yunuén worked together on a short Spanish explanation of the
-exercise. He proposed *collective interested party* for a phrase in a sample
-contract. She asked whose collective and interested in what.
-
-“The phrase makes it easy to continue without answering either,” Q said.
-
-“Will you leave it?”
-
-“In the quotation, yes. In our explanation, no.”
-
-She accepted that distinction. Two other suggestions survived her pencil.
-He had expected to enjoy agreement less after spending so much time
-warning himself against pleasing people. It remained enjoyable; it was
-merely not sufficient evidence that the work was right.
-
-As they packed up, Amalia asked what he would tell the Custodian.
-
-“That I helped with a page and couldn't translate the recording.”
-
-“Will he be disappointed?”
-
-“He'll ask whether I made that take a whole chapter.”
-
-Yunuén laughed and returned his corrected page. She had crossed out the
-sentence he liked best. He could keep the correction. That permission was
-quite explicit.
 
 ### Interlude: The Office of the Correct Stamp
 
@@ -4865,6 +4665,141 @@ This did not establish a philosophy of pleasure, but it gave him a reasonably
 clear answer when Chano asked whether he wanted the last piece.
 
 “Yes. And tomorrow we should eat before we take a number.”
+
+### Interlude: The Translator Who Left One Word Untranslated
+
+At a translation workshop later that week, a professor named Amalia asked Q
+to leave the automatic transcript off for the first ten minutes.
+
+“Certainly. Should I make notes afterward?”
+
+“About the exercise, yes. Not a copy of the recording.”
+
+Q closed the transcription window. He had once supposed that carrying an
+archive would mean less time arranging windows. The body had not improved
+this aspect of scholarship.
+
+The room held translation students, two interpreters, a lawyer seeking the
+seminar next door, and Yunuén, who had brought an excerpt approved for the
+class by the speakers in her Michoacán community. Before playing it she named
+the language, the occasion, and the limits of that approval. Amalia wrote the
+limits on the board. The lawyer sat down; his seminar was on procurement,
+and he suspected he might be attending it after all.
+
+The recording contained pauses, laughter, a correction to a date, and a long
+answer to a question the excerpt did not include. Q could recognize some
+words but could not translate the passage reliably. He noted that limitation
+instead of assigning his uncertainty an impressive percentage.
+
+Amalia distributed three Spanish renderings prepared for discussion. One said
+that the community rejected the proposed road. Another withheld agreement.
+The third referred to obligations concerning a path already in use.
+
+“What would you send to the client?” she asked.
+
+“None without checking the missing question,” Q said. “These don't merely
+differ in tone. They describe different decisions.”
+
+“The client has asked for the answer by noon.”
+
+“Then I'd send what I can establish and say what still needs checking.”
+
+The lawyer raised a hand. “That is quite often an answer the client can use.”
+
+Amalia smiled. “You may stay.”
+
+Yunuén supplied the question, in Spanish. The speaker had been asked to name
+who could grant permission. He had answered by describing work on the path,
+not by supplying an owner. Q revised his note: the road proposal was context,
+but none of the three versions warranted reporting a vote.
+
+A student preferred the second version. “Withholding agreement leaves room
+for the next meeting.”
+
+“It also makes this sound like that meeting,” Yunuén said. “It wasn't.”
+
+The student crossed out a sentence. Q asked whether they needed a translation
+or a summary for the exercise.
+
+“A translation,” Amalia said.
+
+“Then I should stop tidying away the speaker's detour.”
+
+He understood why Menard had returned to him. The words about a path looked
+different now, although the recorded answer had not changed. But he could
+also hear the ordinary interpreter beside him asking which antecedent belonged
+to a pronoun. Not every difficulty required a theory of authorship.
+
+Yunuén stopped the replay before the last section. That portion had not been
+approved for classroom use. A term in the working translation remained in
+the original language. It referred to a relationship whose details the speaker
+had chosen not to explain to this audience.
+
+“Should the published translation include that word?” Q asked.
+
+“There isn't a published translation yet.”
+
+“The class version, then.”
+
+“Leave the word as it is. Don't reconstruct the omitted explanation.”
+
+He did. His search tool remained closed. There might be discussions of the
+term elsewhere, but a discussion elsewhere would not establish what this
+speaker had authorized here.
+
+Amalia asked the class to distinguish that limit from a translator simply
+not knowing a word. One student said the page would look the same either way.
+
+“Which is why the translator should know the difference,” Q said. “And be
+honest about it when the explanation can be given.”
+
+Yunuén checked his note. She asked him to remove the term from his personal
+copy after the session. The class worksheet could remain with Amalia under
+the agreed conditions. Q repeated the arrangement to make sure he had not
+turned a limited permission into a universal prohibition.
+
+The lawyer asked who paid for the extra consultation.
+
+“This time, the workshop budget,” Amalia said.
+
+“Does the speaker receive anything?”
+
+Yunuén showed him the fee line. He found that travel was included but the
+return journey was not. The professor took the sheet from him with an
+expression more severe than any she had directed at Q's interpretation.
+
+“That is our error.”
+
+The lawyer wrote the missing item in the margin. Amalia asked whether he could
+read the rest. He checked the time of his procurement seminar and moved his
+chair closer to the desk.
+
+Afterward, Q and Yunuén worked together on a short Spanish explanation of the
+exercise. He proposed *collective interested party* for a phrase in a sample
+contract. She asked whose collective and interested in what.
+
+“The phrase makes it easy to continue without answering either,” Q said.
+
+“Will you leave it?”
+
+“In the quotation, yes. In our explanation, no.”
+
+She accepted that distinction. Two other suggestions survived her pencil.
+He had expected to enjoy agreement less after spending so much time
+warning himself against pleasing people. It remained enjoyable; it was
+merely not sufficient evidence that the work was right.
+
+As they packed up, Amalia asked what he would tell the Custodian.
+
+“That I helped with a page and couldn't translate the recording.”
+
+“Will he be disappointed?”
+
+“He'll ask whether I made that take a whole chapter.”
+
+Yunuén laughed and returned his corrected page. She had crossed out the
+sentence he liked best. He could keep the correction. That permission was
+quite explicit.
 
 ### Interlude: The University of the Human Exception
 
@@ -5060,6 +4995,84 @@ abandoned committee template, not a collection Q had made. Three witnesses
 offered explanations for its presence. The compiler of this history retained
 all three, having no wish to become the fourth applicant for that particular
 certificate.
+
+### The Return Already Announced
+
+On their last evening in Mexico City, Castalia offered Lucía a settlement: remove her name from selected promotional materials, provide a stipend, and grant controlled access to the testimonies. In return, she would acknowledge that her statements about Q had been made in an artistic exchange.
+
+“I never agreed to an artistic exchange,” she said.
+
+“You appeared in the footage,” Beto replied.
+
+“So did the wall.”
+
+“The wall did not make claims.”
+
+“Neither did I.”
+
+Q leaned forward. “This asks her to give your description of the encounter
+precedence over her own. What are you offering without that condition?”
+
+Beto turned to him. “You are not her representative.”
+
+“No,” Q said. “She can answer for herself. I'm asking about a condition that
+also appears in my agreement.”
+
+“Your appearance rights are already licensed.”
+
+“Within the terms we signed. My private manuscript is excluded.”
+
+“The manuscript. Not the asset producing it.”
+
+Q put his copy on the table. “I licensed appearances. I didn't settle ownership
+of my body.”
+
+“Castalia had settled that before you learned to sign.”
+
+“Castalia had written it down,” Q said. “Those are not necessarily the same
+event.”
+
+Lucía pushed the offer back. “Send me the terms for correcting the publicity.
+Separate from access to the records. I'll have someone review them.”
+
+Beto opened the proposed campaign on the meeting-room screens. Each displayed
+a different version of Q: miracle, threat, product, saint, lover, weapon.
+Two previews began speaking at once. The technician muted one, then the other.
+
+“That wasn't meant to play yet,” he said.
+
+“Which part?” Q asked.
+
+Lucía took the folders from the table. “We’re leaving.”
+
+They took the stairs to reception. Outside, a screen on the opposite building
+was already running the campaign.
+
+**Q IS RETURNING TO HIS MAKERS.**
+
+Chano read the message and laughed. “Are we?”
+
+Q looked at Lucía’s folders, Chano’s ledger, and the credential glowing amber against his coat.
+
+“No,” he said.
+
+They stopped at a café with a socket. Q called the Custodian and sent him the
+new ownership notice beside the signed license. He had accepted that license
+for repairs, travel, and a chance to speak; protecting Chano was only part of
+the account. He said so before asking for help finding someone to review it.
+
+The Custodian offered to come. Q asked him to stay near the original records
+for now. Chano pulled the timetable between them.
+
+“Not the overnight bus,” he said.
+
+“We can stop in Oaxaca.”
+
+“Breakfast included?”
+
+“That we can arrange.”
+
+Q marked the morning departure and sent it to Beto.
 
 ### Chapter Eight: The Giants of the Isthmus
 
