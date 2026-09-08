@@ -101,6 +101,13 @@ title mask that clipped the antenna. The cover, first reverse, and central A3
 spread received visual review. No physical print test is claimed.
 
 - Reading proof: `output/pdf/ingenious-issue-01-revised-en-bw.pdf`
-  SHA-256: `cec13cd395be958020332c928d0d969ca76850a41ab010de4e6b8b27bcd085d1`.
+  SHA-256: `78bd883e43a118a7dc9574c405cc5574cfdd71e037c3423871ec4122111fe733`.
 - A3 proof: `output/pdf/ingenious-issue-01-revised-en-bw-a3.pdf`
-  SHA-256: `ebad9c964b6cacfcc7ed467b6e69bbc2cc24b0a7a4ce8baa30a351b2facd5de6`.
+  SHA-256: `17dd1f3724045a37658ad0c16c374dea1d2e3fc8708c0d3fe06be66ddd6503c4`.
+
+Final preflight also rejects JPEG re-encoding. Ghostscript's grayscale print
+conversion uses `ColorConversionStrategy=Gray`, disables all image downsampling,
+and sets `AutoFilterGrayImages=false` with `GrayImageFilter=/FlateEncode` (and
+the equivalent color filter settings). This preserves the native generated
+resolution with lossless compression of the grayscale plate data. It does not
+create higher-resolution detail. The original RGB PNG assets remain unchanged.
