@@ -14,13 +14,19 @@ the tested justified columns create conspicuous gaps despite hyphenation. No
 production pagination or facing-text mappings changed. The next continuity pass
 restored Q's mechanical sampling mouth and panel-built jaw, then tested them in
 Chapter Fifteen's corridor call and taquería scenes. Those two new plates have a
-verified A3 selected-spread proof; six plates remain before the complete issue can
-be built. All 22 chapter texts and their page bindings remain unchanged in this
-pass. Issues 15-22 now use the corrected short-jacket and drawn-aquatint briefs.
-Next: complete Issue Fifteen's six remaining plates, rebuild the rejected Issue
-Fourteen set, and audit earlier art while continuing the later issues and broader
-literary review. No print job is authorized by historical proof checks. The full
-goal remains active.
+verified A3 selected-spread proof. The subsequent pass completed all eight Issue
+Fifteen plates and verified its sixteen-page reading PDF and eight-side A3 folding
+PDF (four duplex sheets). All 2,481 words flow continuously at Georgia 12.3/17.425;
+every reading page, A3 side and actual imposed slot was checked. A targeted edit
+corrected the laptop's viewer-facing lid. All fonts are embedded, all eight images
+remain native lossless grayscale, and text backgrounds are unpainted. All 22
+chapter texts and page bindings, 28 previous issue PDFs and the selected-spread
+study are unchanged from `e178b3a3`. See `ISSUE_15_PRODUCTION.md` for the scope and
+remaining literary/art limitations. This is a revision proof, not A+ certification
+or a press master; native art is approximately 144-150 dpi. Issues 15-22 use the
+corrected short-jacket and drawn-aquatint briefs. Next: rebuild the rejected Issue
+Fourteen set, audit earlier art, and continue later issues and broader literary
+review. No print job was sent. The full goal remains active.
 
 ## Active objective
 

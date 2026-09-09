@@ -13,11 +13,19 @@ under review. The same-text typography comparison supports retaining left-aligne
 body columns: the tested justification introduced distracting word spacing.
 No issue pagination changed for this comparison.
 
-Two [Issue Fifteen Goya scene proofs](../pdf/ingenious-issue-15-goya-scene-proofs-a3.pdf)
-now place the corridor call and taquería drawings beside their actual text pages.
-The A3 landscape PDF contains selected spreads only, not the complete issue or a
-folding file. Q's mechanical sampling mouth and short jacket are retained. Six
-plates remain planned; see the [manifest](../illustrations/revised/issue-15/manifest.json).
+Issue Fifteen now has a complete [sixteen-page reading proof](../pdf/ingenious-issue-15-revised-en-bw.pdf)
+and [eight-side A3 folding proof](../pdf/ingenious-issue-15-revised-en-bw-a3.pdf).
+Eight unique Goya-style plates include the cover; all 2,481 words flow through
+seven paired narrative pages. Q's mechanical sampling mouth and short jacket are
+retained. The A3 file is a four-sheet nested booklet, landscape, actual size,
+duplex short edge, all eight sides. Do not apply a second booklet layout in the
+printer dialog. The output tray's stacking order still requires a physical test;
+none was sent. Native images are approximately 144-150 dpi, not press masters.
+See the [manifest and prompts](../illustrations/revised/issue-15/manifest.json) and
+[production review](../../novel/development/ISSUE_15_PRODUCTION.md).
+
+The earlier [two-scene A3 study](../pdf/ingenious-issue-15-goya-scene-proofs-a3.pdf)
+is preserved unchanged for comparison. It is not the complete issue or folding file.
 
 The planned serial has 22 illustrated issues, one chapter and its interludes per
 issue. The English manuscript is the current revision source. Most PDFs in this

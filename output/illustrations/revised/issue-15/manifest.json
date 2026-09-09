@@ -1,26 +1,43 @@
 {
   "issue": 15,
-  "revision": "2026-09-08-the-open-question",
+  "revision": "2026-09-08-goya-complete-plate-set",
   "source": "novel/THE_INGENIOUS_MACHINE.md",
   "chapter_sha256": "32a02ca60bdced6c1631e9f75452d55548a027132c9513df59244cf2e5985ba1",
   "page_count": 16,
   "text_font": "Georgia 12.3/17.425 pt",
   "plate_count_including_cover": 8,
-  "status": "partial illustrated study: two of eight plates reviewed; six remain planned",
-  "character_reference": "output/illustrations/revised/issue-01/cover.png",
+  "status": "verified complete Goya-style illustrated revision proof; not a press master",
+  "character_reference": "output/illustrations/goya-pilot/before-lunch-goya-v4.png",
   "chano_reference": "output/illustrations/revised/issue-03/plate-06.png",
   "prime_design_source": "output/illustrations/revised/issue-11/manifest.json",
-  "character_design": "Q retains approved narrow segmented head, round ear mechanisms, exposed neck, question-mark breastplate, short fitted dark jacket with long sleeves and supported knee. Chano follows approved reference. Inés is the younger keeper, Aurelio the older keeper. Prime is a clean lighter-bodied Q-family peer with undamaged shoulder; Mauro is his technician, not the Custodian. If the Custodian is ever depicted, keep the tall older man, long tied-back gray hair, glasses and white work shirt; this chapter's calls are remote. Q's lower face includes a small mechanical sampling mouth; do not simplify it into a blank mask. Use the corrected Goya pilot for Q-family identity, not photographic surface detail.",
+  "character_design": "Q retains approved narrow segmented head, round ear mechanisms, exposed neck, question-mark breastplate, short fitted dark jacket with long sleeves and supported knee. Chano follows approved reference. Inés is the younger keeper, Aurelio the older keeper. Prime is a clean lighter-bodied Q-family peer with undamaged shoulder; Mauro is his technician, not the Custodian. If the Custodian is ever depicted, keep the tall older man, long tied-back gray hair, glasses and white work shirt; this chapter's calls are remote. Q's lower face includes a small mechanical sampling mouth; do not simplify it into a blank mask. Use the corrected Goya pilot for Q-family identity, not photographic surface detail. Inés: about thirty, short straight dark bob, no glasses, rolled-sleeve utility shirt. Aurelio: older man, short white hair, clean-shaven, light shirt. Marisol: about forty-five, narrow face, low dark bun, square glasses, dark cardigan over light blouse. Mauro: about forty, compact build, short dark curls, close beard, round wire glasses and midtone work shirt; Prime has no jacket or knee brace.",
   "art_direction": "Neutral monochrome Goya-inspired etching and aquatint with economical drawn contours and broad tonal masses, pure white highlights, no sepia or cream ink background. Full bleed at comic trim with separate typeset caption margin. Ordinary Mexico City ministry access review and taquería, not ritual mutilation or a loss of intellect. Seven exact-facing scenes and separate cover. Preserve deposits and closed-record privacy in illustrations; no legible confidential content. Prime's market scene is a narrated earlier visit. Governing reference: novel/development/GOYA_ART_DIRECTION.md. Earlier plates guide identity only; do not imitate their photographic rendering.",
-  "approval_scope": "Two scene studies have source, identity and rendered-spread checks. They are not final press approvals; native resolution remains limited. The complete issue cannot build while six plates are missing. Source mappings and continuous pagination unchanged. No print job.",
+  "approval_scope": "All eight native plates, all sixteen rendered reading pages and all eight rendered A3 sides visually inspected. Exact source text, facing mappings, native lossless grayscale images, embedded fonts and every imposed text/image slot verified. Plate flags apply to this revision proof only. Native art is approximately 144-150 dpi at trim; no press-master or A+ certification and no physical print test.",
   "plates": [
     {
       "plate_id": "issue-15-cover",
       "page": 1,
       "asset": "output/illustrations/revised/issue-15/cover.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The Cave of the Corpus, Reopened",
-      "scene_brief": "Q and Chano arrive at an unremarkable ministry entrance beside a machine selling commemorative booklets. Q has a visitor appointment, not a lance; the open, ordinary doorway defeats the imagined hidden entrance. Bright exterior and practical street detail, no secret temple or abyss. Leave space for separately typeset title; distinct from the interior lamp plate."
+      "scene_brief": "Q and Chano arrive at an unremarkable ministry entrance beside a machine selling commemorative booklets. Q has a visitor appointment, not a lance; the open, ordinary doorway defeats the imagined hidden entrance. Bright exterior and practical street detail, no secret temple or abyss. Leave space for separately typeset title; distinct from the interior lamp plate.",
+      "generation_mode": "built-in reference-based image generation",
+      "generation_prompt": "Use case: illustration-story. A new portrait full-page plate for The Ingenious Machine. Style: Francisco Goya's Los Caprichos ETCHING AND AQUATINT. Image1 controls PRINT LANGUAGE ONLY: thin broken economical etched contours, broad flat granular blacks, sharp white reserves, compressed space, expressive unidealized gesture. Not photorealism with grain, not glossy 3D, not modern thick-outline comics, not uniformly meticulous engraving. Do not copy its owls, bats, sleeper, costume, aged paper, caption or border. Contemporary near-future Mexico, everyday modern clothes/infrastructure. Neutral BLACK/GRAY ink on PURE WHITE reserves; no sepia/cream wash. Edge-to-edge scene at top and sides, no inset picture border; bottom 5% quiet for separately typeset caption. No text or watermarks. Portrait 2:3. Image2 supplies Q/Chano identities only, not a scene to repeat. Q: tall slender robot, narrow panel-built oval head, recessed round eyes, concentric ear discs, long mechanical neck, SMALL MECHANICAL MOUTH with hinged jaw, short fitted dark jacket with LONG sleeves, question-mark breastplate, slim articulated legs with subtle RIGHT-knee support. No human skin, no blank egg mask, no coat tails or knight props. Chano: stocky middle-aged Mexican man, wavy dark hair, thick moustache, rolled-sleeve work shirt. Machinery drawn with selective seams, not microscopic rivets. Book COVER. Q and Chano have arrived at an ordinary ministry entrance in Mexico City for an appointment. A plain open public doorway beside a glass-front vending machine holding slim commemorative BOOKLETS (not drinks or food). Chano matter-of-factly indicates this obvious entrance while Q looks at it, holding a closed draft notebook; gentle joke that the real door is easier than the hidden door Q invented. No other main figures. Contemporary concrete facade and pavement, minimal selected architectural lines, no monumental temple, no knightly discovery, no ruin. Compose figures and doorway mainly in lower TWO THIRDS; upper quarter an uninterrupted WHITE wall/sky reserve for separately typeset book title, no drawn text. Human hand points at door, not the machine. The tall Q head entirely below upper title reserve.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/goya-pilot/references/capricho-43-met.jpg",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/goya-pilot/before-lunch-goya-v4.png"
+      ],
+      "selected_generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-c2eff459-9602-48d7-9762-15d1bbce5fec.png",
+      "asset_sha256": "a7d5e16c00c9f325cf3b8e9001ea5cc72e0fa7766be7147715fb23c910ceb797",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "visual_review": "Ordinary doorway and booklet vending machine; Chano indicates entrance while Q holds closed notebook. Title reserve clear above Q. Contemporary architecture; no secret door or knight props. Narrow mechanical head, mouth, long sleeves and knee support retained. Native image visually inspected; approval limited to illustrated revision proof, not press master.",
+      "title_lines": [
+        "The Ingenious",
+        "Machine"
+      ]
     },
     {
       "plate_id": "issue-15-plate-01",
@@ -42,10 +59,23 @@
         11
       ],
       "asset": "output/illustrations/revised/issue-15/plate-01.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Daylight in either version",
       "scene_brief": "Inés raises a rechargeable lamp inside the ordinary ministry storage corridor; Aurelio holds the service door and Q and Chano look at boxes raised above the damp floor. Shallow drainage channel visible. No cavern monsters, sacrificial altar or burning library; the cave is their manuscript's nickname.",
-      "scene_anchor": "Inés held the lamp higher."
+      "scene_anchor": "Inés held the lamp higher.",
+      "generation_mode": "built-in reference-based image generation",
+      "generation_prompt": "Use case: illustration-story. A new portrait full-page plate for The Ingenious Machine. Style: Francisco Goya's Los Caprichos ETCHING AND AQUATINT. Image1 controls PRINT LANGUAGE ONLY: thin broken economical etched contours, broad flat granular blacks, sharp white reserves, compressed space, expressive unidealized gesture. Not photorealism with grain, not glossy 3D, not modern thick-outline comics, not uniformly meticulous engraving. Do not copy its owls, bats, sleeper, costume, aged paper, caption or border. Contemporary near-future Mexico, everyday modern clothes/infrastructure. Neutral BLACK/GRAY ink on PURE WHITE reserves; no sepia/cream wash. Edge-to-edge scene at top and sides, no inset picture border; bottom 5% quiet for separately typeset caption. No text or watermarks. Portrait 2:3. Image2 supplies Q/Chano identities only, not a scene to repeat. Q: tall slender robot, narrow panel-built oval head, recessed round eyes, concentric ear discs, long mechanical neck, SMALL MECHANICAL MOUTH with hinged jaw, short fitted dark jacket with LONG sleeves, question-mark breastplate, slim articulated legs with subtle RIGHT-knee support. No human skin, no blank egg mask, no coat tails or knight props. Chano: stocky middle-aged Mexican man, wavy dark hair, thick moustache, rolled-sleeve work shirt. Machinery drawn with selective seams, not microscopic rivets. Interior storage corridor scene, four people only. Inés, a younger Mexican woman keeper about30 with short straight dark bob, no glasses, plain rolled-sleeve utility shirt, RAISES a compact modern rechargeable LED work lamp by its top handle so the light reaches shelves of CLOSED plain archival boxes raised above a damp floor. Aurelio, older Mexican male keeper with short white hair, clean-shaven, light work shirt (NOT the tall long-haired Custodian), holds the service door open with keys in his other hand. Q and Chano look into the room, Chano keeping return tickets near a dry shirt pocket. Shallow drainage channel runs toward a small floor drain. One luminous lamp and broad aquatint darkness, not theatrical cavern rays. View across Inés's raised arm toward the other figures and the modest shelf space; gesture not posed lineup. No actual cave, supernatural beings, candle, lantern flame, altar, bonfire, medical machinery or readable private records. Preserve Q's short long-sleeved jacket and small mouth.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/goya-pilot/references/capricho-43-met.jpg",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/goya-pilot/before-lunch-goya-v4.png"
+      ],
+      "selected_generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-c05b3c25-889c-4dff-a8e6-e160524dfd07.png",
+      "asset_sha256": "93fe4384076064a6bbdb6390c845d9a7d53db3b48a2f15f0deeacc2c84ae6846",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "visual_review": "Raised rechargeable work lamp, closed boxes above damp floor, drain channel, Aurelio with keys, Chano holding tickets. Inés establishes bob/no-glasses identity. Four people and Q's mechanical mouth readable; storage room not supernatural cave. Native image visually inspected; approval limited to illustrated revision proof, not press master."
     },
     {
       "plate_id": "issue-15-plate-02",
@@ -66,10 +96,32 @@
         22
       ],
       "asset": "output/illustrations/revised/issue-15/plate-02.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "What remains",
       "scene_brief": "Q sits with Marisol and Inés at the review table checking the inventory and preservation list, his own journal and next appointments represented as separate windows. Chano watches. No private recordings or family portraits appear in the interface; do not suggest the robot's intelligence is being erased.",
-      "scene_anchor": "Q opened the inventory of the affected layer, not the records it pointed to."
+      "scene_anchor": "Q opened the inventory of the affected layer, not the records it pointed to.",
+      "generation_mode": "built-in reference-based image generation",
+      "generation_prompt": "Use case: illustration-story. A new portrait full-page plate for The Ingenious Machine. Style: Francisco Goya's Los Caprichos ETCHING AND AQUATINT. Image1 controls PRINT LANGUAGE ONLY: thin broken economical etched contours, broad flat granular blacks, sharp white reserves, compressed space, expressive unidealized gesture. Not photorealism with grain, not glossy 3D, not modern thick-outline comics, not uniformly meticulous engraving. Do not copy its owls, bats, sleeper, costume, aged paper, caption or border. Contemporary near-future Mexico, everyday modern clothes/infrastructure. Neutral BLACK/GRAY ink on PURE WHITE reserves; no sepia/cream wash. Edge-to-edge scene at top and sides, no inset picture border; bottom 5% quiet for separately typeset caption. No text or watermarks. Portrait 2:3. Image2 supplies Q/Chano identities only, not a scene to repeat. Q: tall slender robot, narrow panel-built oval head, recessed round eyes, concentric ear discs, long mechanical neck, SMALL MECHANICAL MOUTH with hinged jaw, short fitted dark jacket with LONG sleeves, question-mark breastplate, slim articulated legs with subtle RIGHT-knee support. No human skin, no blank egg mask, no coat tails or knight props. Chano: stocky middle-aged Mexican man, wavy dark hair, thick moustache, rolled-sleeve work shirt. Machinery drawn with selective seams, not microscopic rivets. Marisol is a Mexican woman about45, narrow face, dark hair in LOW BUN, SQUARE glasses, plain dark cardigan over a light blouse. Distinct from younger keeper Inés, about30, short straight dark BOB, NO glasses, rolled-sleeve utility shirt; use image3 for Inés identity only, do not repeat her raised-lamp pose. New scene: at a plain ministry review table Q is seated leaning forward to inspect a small upright laptop and a separate paper preservation list. Marisol sits across, pointing to one item on the LIST rather than reaching through the screen. Inés sits at table end with reviewed procedure, Chano watches from behind Q with both hands on chair back. Display angled so Q can actually read it; show a few unlabeled separate window shapes for his journal, draft and next appointments, NO legible content, NO dramatic red error, NO private photos or recordings. We see paper edges, partial screen side view and responsive faces, not a machine operation. Only four figures. Waist-up oblique intimate viewpoint, screen occupies small part of scene. Broad quiet flat gray wall, white sheets, dark cardigan and jacket provide aquatint tonal groups; sharp gestural faces not photographic modeling. No cables into robot, brain surgery, erased head, lost memories or institutional tribunal.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/goya-pilot/references/capricho-43-met.jpg",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/goya-pilot/before-lunch-goya-v4.png",
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-c05b3c25-889c-4dff-a8e6-e160524dfd07.png"
+      ],
+      "selected_generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-f4bd3557-4e63-42b4-bb75-c1c70f8fe1ab.png",
+      "asset_sha256": "2a5641d5dddac6dac44fe7c09ffbce523d6695e3b72ab6b3577d82fb7319c22b",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "visual_review": "Four colleagues check paper preservation list with laptop facing Q. Corrective edit removes impossible viewer-facing screen windows from the lid's back. Marisol bun/square glasses and Inés bob remain distinct. No depicted erasure or legible confidential content. Native image visually inspected; approval limited to illustrated revision proof, not press master.",
+      "corrective_edits": [
+        {
+          "prompt": "Use case: precise-object-edit. Change ONLY the laptop display in this etched/aquatint illustration. Q and the people are BEHIND the laptop, so the visible front-facing rectangular lid surface toward the reader must be the plain opaque BACK of its lid, with NO screen windows or luminous display on that outward surface. Keep its same tilt and position and keyboard base; Q can read the screen on its hidden reverse side. Remove the three interface windows and replace with flat neutral dark gray etched lid, no logo. Preserve all four figures' faces, hairstyles, Q segmented head, small mechanical mouth, concentric ear, long jacket sleeves, Chano chair-holding hand, Marisol's pointing hand/papers, Inés's bob, tabletop and composition exactly. Do not change the style, add people, add text, or make photographic. Neutral black and gray ink on pure white.",
+          "reference_images": [
+            "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-49362bbe-4555-473f-86d0-a6e1d5f80c29.png"
+          ]
+        }
+      ]
     },
     {
       "plate_id": "issue-15-plate-03",
@@ -96,7 +148,7 @@
         38
       ],
       "asset": "output/illustrations/revised/issue-15/plate-03.png",
-      "status": "reviewed-study",
+      "status": "approved",
       "caption": "Still writing",
       "scene_brief": "Q makes the corridor call to the Custodian, relaxed enough for a dry joke but attentive to the coming change. Worn narrow face and articulated hand by a modest phone; background shelves stay closed. The Custodian is remote, not physically at the ministry; no holographic soul, unplugged brain or death symbolism.",
       "scene_anchor": "Q called the Custodian from the corridor before proceeding.",
@@ -120,7 +172,7 @@
         1024,
         1536
       ],
-      "visual_review": "Q's narrow segmented head, circular ear and mechanical mouth remain readable. Phone hand contacts ear; full sleeve restored. Custodian remains remote. Aquatint shadows replace photographic lighting. Exact source page 6 checked at comic trim. Study only."
+      "visual_review": "Q's narrow segmented head, circular ear and mechanical mouth remain readable. Phone hand contacts ear; full sleeve restored. Custodian remains remote. Aquatint shadows replace photographic lighting. Exact source page 6 checked at comic trim. Rechecked with completed eight-image set; approved for revision proof, not press master."
     },
     {
       "plate_id": "issue-15-plate-04",
@@ -144,10 +196,24 @@
         51
       ],
       "asset": "output/illustrations/revised/issue-15/plate-04.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Yesterday's reminder",
       "scene_brief": "Close view of Inés finding two reminders beside the keeper-assignment register while lifting a phone to call the signer. Q listens nearby. Paper shapes unreadable, plain contemporary office detail; no completed renewal stamp since only a call has occurred.",
-      "scene_anchor": "She wrote herself a reminder, then found the one she had written the day before."
+      "scene_anchor": "She wrote herself a reminder, then found the one she had written the day before.",
+      "generation_mode": "built-in reference-based image generation",
+      "generation_prompt": "Use case: illustration-story. A new portrait full-page plate for The Ingenious Machine. Style: Francisco Goya's Los Caprichos ETCHING AND AQUATINT. Image1 controls PRINT LANGUAGE ONLY: thin broken economical etched contours, broad flat granular blacks, sharp white reserves, compressed space, expressive unidealized gesture. Not photorealism with grain, not glossy 3D, not modern thick-outline comics, not uniformly meticulous engraving. Do not copy its owls, bats, sleeper, costume, aged paper, caption or border. Contemporary near-future Mexico, everyday modern clothes/infrastructure. Neutral BLACK/GRAY ink on PURE WHITE reserves; no sepia/cream wash. Edge-to-edge scene at top and sides, no inset picture border; bottom 5% quiet for separately typeset caption. No text or watermarks. Portrait 2:3. Image2 supplies Q/Chano identities only, not a scene to repeat. Q: tall slender robot, narrow panel-built oval head, recessed round eyes, concentric ear discs, long mechanical neck, SMALL MECHANICAL MOUTH with hinged jaw, short fitted dark jacket with LONG sleeves, question-mark breastplate, slim articulated legs with subtle RIGHT-knee support. No human skin, no blank egg mask, no coat tails or knight props. Chano: stocky middle-aged Mexican man, wavy dark hair, thick moustache, rolled-sleeve work shirt. Machinery drawn with selective seams, not microscopic rivets. Marisol is a Mexican woman about45, narrow face, dark hair in LOW BUN, SQUARE glasses, plain dark cardigan over a light blouse. Distinct from younger keeper Inés, about30, short straight dark BOB, NO glasses, rolled-sleeve utility shirt; use image3 for Inés identity only, do not repeat her raised-lamp pose. New close scene, Inés and Q ONLY, not the other people. Inés has just written a reminder, discovered yesterday's reminder beside it, and is lifting a modest mobile phone to her ear to call the person who must renew an assignment. Her amused rueful face in three-quarter view, one hand holding phone at ear, the OTHER hand lightly holding two small overlapping reminder slips beside an open keeper-assignment register on desk. Q listens nearby, upper torso and recognizable head inclined toward her, no phone in HIS hands, no lecture gesture. Both slips visible as distinct pieces of paper, faint illegible marks only. Register with selected ruled shapes. No renewal completed, no stamp, signature ceremony or official seal. Dry shared comedy of ordinary memory, not a fool scolded by a computer. Compressed office space, asymmetric composition focused on Inés's gesture and white papers, sketchy expressive aquatint, not a photo. NO Marisol, Chano, Aurelio or Custodian.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/goya-pilot/references/capricho-43-met.jpg",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/goya-pilot/before-lunch-goya-v4.png",
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-c05b3c25-889c-4dff-a8e6-e160524dfd07.png"
+      ],
+      "selected_generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-43b19891-2662-48d3-9947-89ab332a7285.png",
+      "asset_sha256": "66dad3e4f61d5b52ca0bdd0489a4465d29c509bddb17a1d7aa0b8bcbb5925d47",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "visual_review": "Inés holds two distinct reminder slips and phone at ear; Q listens. Register stays pending, no approval stamp. Mutual dry amusement; no infantilizing robot or scolding pose. Same bob and shirt as lamp scene. Native image visually inspected; approval limited to illustrated revision proof, not press master."
     },
     {
       "plate_id": "issue-15-plate-05",
@@ -171,7 +237,7 @@
         64
       ],
       "asset": "output/illustrations/revised/issue-15/plate-05.png",
-      "status": "reviewed-study",
+      "status": "approved",
       "caption": "Opinions about lunch",
       "scene_brief": "At a taquería near the Mexico City ministry, Q tries a small amount of salsa on suadero while Chano watches and the taquero points with the serving spoon. Their notes stay closed for the next taco. Modern counter and food textures, no knight costume, fuel feeding or patronizing lesson in how to eat.",
       "scene_anchor": "Chano watched as Q tried a small amount.",
@@ -195,7 +261,7 @@
         1068,
         1473
       ],
-      "visual_review": "Q holds a taco near the mechanical sampling mouth; Chano watches, notes stay closed, and a shallow cooking pan replaces the unsolicited al-pastor spit. Separate serving spoon and salsa bowls remain legible. Source page 10 checked at comic trim. No large heat gag or fuel-feed interpretation. Study only."
+      "visual_review": "Q holds a taco near the mechanical sampling mouth; Chano watches, notes stay closed, and a shallow cooking pan replaces the unsolicited al-pastor spit. Separate serving spoon and salsa bowls remain legible. Source page 10 checked at comic trim. No large heat gag or fuel-feed interpretation. Rechecked with completed eight-image set; approved for revision proof, not press master."
     },
     {
       "plate_id": "issue-15-plate-06",
@@ -217,10 +283,24 @@
         76
       ],
       "asset": "output/illustrations/revised/issue-15/plate-06.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The next sheet",
       "scene_brief": "In the reading room Q draws the next authorized summary toward him after Marisol separates two recordings mistakenly grouped together. Distinct sheets and working list, not copies of an entire private archive. No readable family identifiers; Q remains fluent and helpful without his old index.",
-      "scene_anchor": "He pulled the next sheet toward him."
+      "scene_anchor": "He pulled the next sheet toward him.",
+      "generation_mode": "built-in reference-based image generation",
+      "generation_prompt": "Use case: illustration-story. A new portrait full-page plate for The Ingenious Machine. Style: Francisco Goya's Los Caprichos ETCHING AND AQUATINT. Image1 controls PRINT LANGUAGE ONLY: thin broken economical etched contours, broad flat granular blacks, sharp white reserves, compressed space, expressive unidealized gesture. Not photorealism with grain, not glossy 3D, not modern thick-outline comics, not uniformly meticulous engraving. Do not copy its owls, bats, sleeper, costume, aged paper, caption or border. Contemporary near-future Mexico, everyday modern clothes/infrastructure. Neutral BLACK/GRAY ink on PURE WHITE reserves; no sepia/cream wash. Edge-to-edge scene at top and sides, no inset picture border; bottom 5% quiet for separately typeset caption. No text or watermarks. Portrait 2:3. Image2 supplies Q/Chano identities only, not a scene to repeat. Q: tall slender robot, narrow panel-built oval head, recessed round eyes, concentric ear discs, long mechanical neck, SMALL MECHANICAL MOUTH with hinged jaw, short fitted dark jacket with LONG sleeves, question-mark breastplate, slim articulated legs with subtle RIGHT-knee support. No human skin, no blank egg mask, no coat tails or knight props. Chano: stocky middle-aged Mexican man, wavy dark hair, thick moustache, rolled-sleeve work shirt. Machinery drawn with selective seams, not microscopic rivets. Marisol is a Mexican woman about45, narrow face, dark hair in LOW BUN, SQUARE glasses, plain dark cardigan over a light blouse. Distinct from younger keeper Inés, about30, short straight dark BOB, NO glasses, rolled-sleeve utility shirt; use image3 for Inés identity only, do not repeat her raised-lamp pose. New later reading-room scene, Q and Marisol ONLY. Over the diagonal edge of a table, Q's articulated hand actively PULLS THE NEXT SHEET toward him, fingers resting on its corner. Marisol across table uses her pen to correct a working grouping beside TWO SEPARATED authorized summary sheets, looking toward Q with ordinary collegial appreciation. A small stack of remaining permitted papers and a short working list, not mountains of private records. No readable identifiers, family photographs, source recording contents, confidentiality seal or computer display. Q fluent and helpful after access removal, not vacant or rehabilitated child. Q seated, short jacket sleeves at wrists, small mouth and circular ear visible in profile. Marisol's LOW BUN and square glasses consistently distinct from Inés's bob. Composition much tighter on hands/white page shapes and their answering faces than earlier review table. Flat dark background with selective shelf strokes, generous white paper reserves, Goya etching, economical granular aquatint. No phone, Prime, Chano or extra people.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/goya-pilot/references/capricho-43-met.jpg",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/goya-pilot/before-lunch-goya-v4.png",
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-c05b3c25-889c-4dff-a8e6-e160524dfd07.png"
+      ],
+      "selected_generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-9447bc6f-7761-4ea5-ad68-a0b577eddac8.png",
+      "asset_sha256": "fed56cfe52c4b89ff917aaf99bd66927488d21319ac11e0904c0c2a76210f856",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "visual_review": "Q draws next sheet while Marisol marks the working list alongside separated summaries. Hands contact paper, no private recording contents. Marisol's low bun, glasses and cardigan consistent; Q retains mechanical mouth and long sleeves. Native image visually inspected; approval limited to illustrated revision proof, not press master."
     },
     {
       "plate_id": "issue-15-plate-07",
@@ -245,10 +325,23 @@
         91
       ],
       "asset": "output/illustrations/revised/issue-15/plate-07.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "One orange and a bag",
       "scene_brief": "Illustrate Prime's reported market visit, not Q's presence: clean, lighter-bodied Prime carries the purchased bag while technician Mauro peels Prime's single orange. The two have different purchases and reciprocal help, not a foolish robot duped by fruit. Preserve the Q-family face but Prime's cleaner finish and undamaged shoulder. Contemporary Mexican fruit stall; no implication the market scene is happening during the later phone call.",
-      "scene_anchor": "He peeled mine while I carried his."
+      "scene_anchor": "He peeled mine while I carried his.",
+      "generation_mode": "built-in reference-based image generation",
+      "generation_prompt": "Use case: illustration-story. A new portrait full-page plate for The Ingenious Machine. Style: Francisco Goya's Los Caprichos ETCHING AND AQUATINT. Image1 controls PRINT LANGUAGE ONLY: thin broken economical etched contours, broad flat granular blacks, sharp white reserves, compressed space, expressive unidealized gesture. Not photorealism with grain, not glossy 3D, not modern thick-outline comics, not uniformly meticulous engraving. Do not copy its owls, bats, sleeper, costume, aged paper, caption or border. Contemporary near-future Mexico, everyday modern clothes/infrastructure. Neutral BLACK/GRAY ink on PURE WHITE reserves; no sepia/cream wash. Edge-to-edge scene at top and sides, no inset picture border; bottom 5% quiet for separately typeset caption. No text or watermarks. Portrait 2:3. Image2 supplies ONLY the Q-family head anatomy to adapt for PRIME: cleaner light-bodied robot, same narrow segmented oval face, circular ears, long neck, recessed eyes, small mechanical mouth/hinged jaw and question-mark breastplate. Prime has clean smooth light fitted plating, NO jacket, NO knee brace, undamaged shoulder; not an evil double or child. A reported EARLIER market visit: Prime carries a purchased net bag of oranges at his side while walking slowly beside MAURO, who is peeling Prime's SINGLE orange with his two hands, a strip of peel visibly attached. Mauro is Mexican technician about40, compact build, short curly dark hair, small close-trimmed beard, round wire-frame glasses, rolled sleeves on plain midtone work shirt. NOT the Custodian: no long hair, no tall older white-shirt man. Modern Mexican fruit stall as a few crates and dark awning, no other main figures. Distinct purchases and reciprocal assistance; Prime watches Mauro with engaged inclination, adult companions. Q and Chano NOT PRESENT. No phone-call screen, no explanatory inset, no fruit spilling, no cute surprise, no medieval dress. Strong diagonal movement, paper-white orange flesh against dark peels and bag; restrained drawn line, not photo detail.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/goya-pilot/references/capricho-43-met.jpg",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/goya-pilot/before-lunch-goya-v4.png"
+      ],
+      "selected_generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-144f4436-28c5-47a3-9aa1-c93ec462f539.png",
+      "asset_sha256": "d1469064e50399132b1954b0fce6b7a433a756316f87a1236defc365dcecf8b8",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "visual_review": "Prime carries bag while Mauro peels the single orange; clear attached peel. Prime clean/light without jacket or knee brace; Mauro short curly hair, beard, wire glasses. Q absent. Earlier reported visit, not live phone-call scene. Mutual assistance rather than a gullibility gag. Native image visually inspected; approval limited to illustrated revision proof, not press master."
     }
   ],
   "scene_proof": {
@@ -259,5 +352,90 @@
       6,
       10
     ]
+  },
+  "proof_outputs": {
+    "reading": {
+      "path": "output/pdf/ingenious-issue-15-revised-en-bw.pdf",
+      "sha256": "7dc9a94604058f24ea2c256e7b87b8314212acb1632341c23e40372a0a686b60"
+    },
+    "a3": {
+      "path": "output/pdf/ingenious-issue-15-revised-en-bw-a3.pdf",
+      "sha256": "4b2a4c3eb529fd74bf5a70ccb650abee17052e03b05feaf657ac217e04b521cd"
+    }
+  },
+  "verification": {
+    "result": "pass",
+    "baseline_commit": "e178b3a3",
+    "words_in_exact_source_order": 2481,
+    "reading_pages": 16,
+    "a3_sides": 8,
+    "duplex_sheets": 4,
+    "unique_native_plates": 8,
+    "actual_a3_slots_checked": 16,
+    "all_chapters_unchanged": 22,
+    "all_facing_mappings_unchanged": 22,
+    "previous_issue_pdfs_unchanged": 28,
+    "earlier_partial_proof_unchanged": true,
+    "effective_dpi": [
+      149.9,
+      149.9,
+      149.9,
+      149.9,
+      149.9,
+      143.7,
+      149.9,
+      149.9
+    ],
+    "embedded_font_subsets": {
+      "reading": 5,
+      "a3": 6
+    },
+    "text_background": "unpainted",
+    "lossless_DeviceGray_images": 8,
+    "print_job_sent": false,
+    "a_plus_certified": false,
+    "pdf_hashes": {
+      "reading": "7dc9a94604058f24ea2c256e7b87b8314212acb1632341c23e40372a0a686b60",
+      "a3": "4b2a4c3eb529fd74bf5a70ccb650abee17052e03b05feaf657ac217e04b521cd"
+    },
+    "date": "2026-09-08",
+    "native_images_visually_checked": 8,
+    "reading_pages_visually_checked": 16,
+    "a3_sides_visually_checked": 8,
+    "imposition_pairs": [
+      [
+        16,
+        1
+      ],
+      [
+        2,
+        15
+      ],
+      [
+        14,
+        3
+      ],
+      [
+        4,
+        13
+      ],
+      [
+        12,
+        5
+      ],
+      [
+        6,
+        11
+      ],
+      [
+        10,
+        7
+      ],
+      [
+        8,
+        9
+      ]
+    ],
+    "imposition": "A3 landscape, actual size, duplex short edge; nested four-sheet booklet. All source text and native decoded image payloads match their actual imposed slots; trim clipping and zero rotations verified."
   }
 }

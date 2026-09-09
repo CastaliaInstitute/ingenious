@@ -123,3 +123,30 @@ with the short jacket, sampling mouth and drawn Goya direction. All chapter text
 page mappings, source anchors and block IDs remain unchanged from `993d9353`.
 Earlier issue artwork still needs the full style audit; no press approval or
 physical print test has occurred. Native images remain approximately 150 dpi.
+
+### Complete Issue Fifteen revision proof
+
+The next pass completes the six missing scenes: ordinary ministry entrance,
+raised archive lamp, preservation review, duplicated reminder, next permitted
+sheet, and Prime's reported market visit. All eight native drawings and all
+sixteen reading pages/eight A3 sides have been visually inspected. The laptop's
+initial impossible screen orientation was corrected to show the opaque lid back;
+the screen faces Q. Inés's bob/no glasses and Marisol's low bun/square glasses
+remain distinct. Prime has cleaner bare plating and no Q knee support; Mauro
+peels while Prime carries. The Custodian remains remote.
+
+Approval is for this illustrated revision proof, not a claim that technical
+checks establish literary or artistic A+ quality. The new plates use drawn
+contours and aquatint masses rather than the previous photographic surfaces.
+Some faces remain more naturalistic and backgrounds more descriptive than Goya's
+most economical prints. Preserve that distinction in the next full-set art review.
+White reserves vary within the compositions; the PDF does not tint its text pages.
+Native effective resolution is approximately 144-150 dpi at comic trim.
+
+The complete PDFs preserve all 2,481 words, seven facing-text bindings and eight
+distinct native grayscale images. All fonts, including the A3 instruction labels,
+are embedded. All sixteen imposed slots match their source text and image data,
+with centered trim clipping and zero rotations. Source manuscripts, all twenty-two
+issue mappings and earlier PDFs remain unchanged from `e178b3a3`. See
+`ISSUE_15_PRODUCTION.md`. This supersedes the earlier six-missing-plates status,
+not the preserved partial study itself. No physical print test has occurred.
