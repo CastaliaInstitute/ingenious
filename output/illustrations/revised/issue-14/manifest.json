@@ -1,31 +1,44 @@
 {
   "issue": 14,
-  "revision": "2026-09-08-dispatch-and-the-sinking-office",
+  "revision": "2026-09-08-lunch-and-the-sinking-office",
   "source": "novel/THE_INGENIOUS_MACHINE.md",
-  "chapter_sha256": "0bedd50aaac4800704a52747864993d8da0f92a0a932b319bf9918dddaceeaf1",
+  "chapter_sha256": "1ed444c185c744fe978c3e321141f5bbd2069087191ae2d1039c8dc1d37431c0",
   "page_count": 20,
   "text_font": "Georgia 13.3/18.84166666666667 pt",
   "plate_count_including_cover": 10,
-  "status": "planned; no new Issue 14 images generated or approved",
-  "character_reference": "output/illustrations/revised/issue-01/cover.png",
+  "status": "superseded photorealistic studies; not approved final art or a current issue proof",
+  "character_reference": "output/illustrations/revised/issue-04/plate-03.png",
   "chano_reference": "output/illustrations/revised/issue-03/plate-06.png",
-  "lucia_reference": "output/illustrations/revised/issue-03/plate-04.png",
+  "lucia_reference": "output/illustrations/revised/issue-12/plate-03.png",
   "irma_reference": "output/illustrations/revised/issue-06/plate-02.png",
   "leticia_reference": "output/illustrations/revised/issue-06/plate-04.png",
   "maribel_reference": "output/illustrations/revised/issue-06/plate-06.png",
   "office_chair_reference": "output/illustrations/revised/issue-06/plate-03.png",
   "returning_character_continuity": "Use the Issue Six faces: Irma has short silver-grey hair, glasses and a pale blouse; Leticia has a high dark bun and practical polo/apron work clothes; Maribel has a low dark ponytail and striped shirt. These are identities, not mandatory unchanged outfits. The padded five-caster chair may now show the cracked armrest and sagging column required by this chapter. Do not carry Q physically into Santa Rita just because he appears in the reference pictures.",
-  "character_design": "Keep approved Chano, Q and Lucía. Q has the familiar narrow segmented head, ears, long coat, worn finish, damaged shoulder and supported knee; he does not travel with Chano to administer Santa Rita. Irma remains the mayor, Leticia the cleaning organizer; Rosa is the newly named dispatcher, not motel keeper Celia. Nereida is an adult resident with the meter. Contemporary work clothes, not colonial costume.",
-  "art_direction": "Neutral monochrome Goya-inspired etched realism, pure white highlights and no sepia or cream ink field. Full-bleed plates at trim with separate typeset caption margin. Mexican municipal offices, a settlement clinic route and an ordinary bus station; exact-facing scenes, not generic lessons in justice. Q is remote during the route discussion. Children's drawings are drawings; the later repaired chair is not its earlier faulty state.",
-  "approval_scope": "Source-bound plan only. Ten planned plates including cover, 20-page internal proof, ten A3 landscape sides / five short-edge duplex sheets. Georgia 13.3/18.8417 pt keeps the final text page substantial in both columns. No generated or approved Issue 14 assets, finished illustrated PDF or print job.",
+  "character_design": "Keep approved Chano, Q and Lucía. Q has the familiar narrow segmented head, ears, short fitted dark jacket, worn finish, damaged shoulder and supported right knee; he does not travel with Chano to administer Santa Rita. Irma remains the mayor, Leticia the cleaning organizer; Rosa is the newly named dispatcher, not motel keeper Celia. Nereida is an adult resident with the meter. Contemporary work clothes, not colonial costume. Rosa has a dark chin-length bob and a light work shirt; Nereida has a low braid, cardigan and checked blouse. The bus driver is a distinct older short-gray-haired woman without Irma's glasses. Chair inspection and later archive repair are separate times.",
+  "art_direction": "Superseded. The governing direction is novel/development/GOYA_ART_DIRECTION.md: Goya's Los Caprichos, expressive drawn forms, broad aquatint masses and selective etched line, not photographic detail under hatching.",
+  "approval_scope": "User rejected the photographic rendering direction on 2026-09-08. Earlier checks established scene/character/layout continuity, not fidelity to Goya. Preserve these assets and PDFs as studies only; do not print, publish as current, or reuse as style references.",
   "plates": [
     {
       "plate_id": "issue-14-cover",
       "page": 1,
       "asset": "output/illustrations/revised/issue-14/cover.png",
-      "status": "planned",
+      "status": "superseded-study",
       "caption": "The Island of Good Administration",
-      "scene_brief": "Chano alone after closing in Santa Rita's complaint room, sunk in the five-wheel office chair until his eyes are level with stacked requests. Cracked armrest, tired but proprietary expression, no crown or throne. The chair is still municipal property. A broad quiet composition distinct from the later repair inspection and final workshop pleasure; leave space for the typeset cover title."
+      "scene_brief": "Chano alone after closing in Santa Rita's complaint room, sunk in the five-wheel office chair until his eyes are level with stacked requests. Cracked armrest, tired but proprietary expression, no crown or throne. The chair is still municipal property. A broad quiet composition distinct from the later repair inspection and final workshop pleasure; leave space for the typeset cover title.",
+      "asset_sha256": "ba6e9dd91ea0fa1064490b44aa119b6a1dfdeb98cf579720387957b208fefda5",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in reference-based image generation",
+      "generation_prompt": "Create ONE distinct full-page portrait book illustration, 1024x1536 or higher native resolution, neutral black-and-white Goya-inspired etching and aquatint realism with controlled crosshatching, living expressive faces, pure WHITE unprinted highlights. NO sepia, cream tint, all-over gray paper texture, color, border, lettering, caption, watermark or collage. Contemporary near-future Mexico, ordinary present-day clothing and furnishings, not colonial dress. Compose edge-to-edge with important details above bottom 7% reserved for a separate typeset caption. Reference images are identity and visual-style references ONLY, never repeat their scene. Chano is the same stocky middle-aged Mexican man with wavy dark hair, thick moustache, rolled-sleeve dark work shirt and practical trousers as the reference. Natural proportions, intelligent humor, not a buffoon. Reference: Chano is seated LEFT; use that same padded black five-caster office chair with rounded rectangular back and two armrests; add cracked near armrest. New scene: Chano ALONE in Santa Rita's plain municipal complaint room after closing, seated unusually low because its hydraulic column has sunk. His eyes are level with the tall stacks of requests on a desk. He looks tired, quietly proprietary, thoughtful rather than defeated. Broad three-quarter composition, chair and whole five-spoke base visible, desk stacks at eye height. No other people or Q. Leave the TOP 23% predominantly clear white wall, absolutely no heads or dark objects there, for a later black typeset cover title. The rest has expressive evening chiaroscuro. Not a throne, crown or memorial.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-06/plate-03.png"
+      ],
+      "original_generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-c76ec48d-bdd5-44ca-afb9-edd6a47086e6.png",
+      "selected_generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-c76ec48d-bdd5-44ca-afb9-edd6a47086e6.png",
+      "visual_approval": "Withdrawn following user style correction. Scene and identity checks do not establish Goya fidelity."
     },
     {
       "plate_id": "issue-14-plate-01",
@@ -49,10 +62,34 @@
         13
       ],
       "asset": "output/illustrations/revised/issue-14/plate-01.png",
-      "status": "planned",
+      "status": "superseded-study",
       "caption": "They asked for me",
       "scene_brief": "Before departure Chano packs a new notebook and the agreed appointment papers while Q and Lucía hear his decision to go without them. Distinguish the two letters on the table without readable legal details. Q listens rather than staging Chano as his next adventure; no original Tijuana ledger, mayoral throne or imposed knighthood.",
-      "scene_anchor": "Chano took the appointment terms, the copies residents had authorized him to use, and a new notebook."
+      "scene_anchor": "Chano took the appointment terms, the copies residents had authorized him to use, and a new notebook.",
+      "asset_sha256": "118bbcd5f0e6f0fde175cf240dc503fb86ccf0d9ea7ef4234f3f508cfbf1007a",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in reference-based image generation",
+      "generation_prompt": "Create ONE distinct full-page portrait book illustration, 1024x1536 or higher native resolution, neutral black-and-white Goya-inspired etching and aquatint realism with controlled crosshatching, living expressive faces, pure WHITE unprinted highlights. NO sepia, cream tint, all-over gray paper texture, color, border, lettering, caption, watermark or collage. Contemporary near-future Mexico, ordinary present-day clothing and furnishings, not colonial dress. Compose edge-to-edge with important details above bottom 7% reserved for a separate typeset caption. Reference images are identity and visual-style references ONLY, never repeat their scene. Chano is the same stocky middle-aged Mexican man with wavy dark hair, thick moustache, rolled-sleeve dark work shirt and practical trousers as the reference. Natural proportions, intelligent humor, not a buffoon. Q has the exact narrow riveted oval metal head, concentric circular ears, long mechanical neck, slim articulated body, metal hands and short fitted dark jacket of the Q reference. Chest question mark. Repaired shoulder and a subtle support brace on HIS RIGHT knee (viewer LEFT in a frontal view). No long coat, armor, weapon, cape, hat or human face. Reference mapping: first Chano left; second Q right ONLY not the woman; third Lucía is the YOUNG woman CENTER with shoulder-length wavy hair, denim jacket and light patterned blouse, not the older glasses-wearing woman. New scene at Amealco archive before Chano departs alone for Santa Rita. Chano stands at table packing NEW small notebook and appointment papers into practical travel bag. Two different letters on table without readable text. Q and Lucía listen respectfully to his decision to go without them. Chano principal subject foreground left, Q standing right, Lucía seated farther behind table. Ordinary wooded highland archive shelves and pine/oak through window, not a cathedral. No old giant ledger; no knight equipment. Natural friendly exchange, not pupil receiving a lecture.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-03/plate-06.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-03.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-12/plate-03.png"
+      ],
+      "original_generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-c22cc65e-4d48-48e0-ba84-53639eab3355.png",
+      "selected_generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-43286273-9234-440a-8388-865506c4fe22.png",
+      "visual_approval": "Withdrawn following user style correction. Scene and identity checks do not establish Goya fidelity.",
+      "corrective_edits": [
+        {
+          "prompt": "Use case: precise-object-edit. Correct ONLY the outdoor setting through the window: replace the church, tower and built-up hillside with wooded rural pine-and-oak highland landscape, no buildings, no cathedral. This is the rural Amealco archive, not a town-center office. Keep EVERY interior detail, all three character identities, faces, hand poses, bag, letters, notebook, table, shelves, Q's slim body and short fitted jacket, composition and neutral black-and-white etched style unchanged. Add only a subtle mechanically plausible narrow support strap at Q's anatomical RIGHT knee where visible to the left of his other knee (viewer-left leg); do not enlarge or redesign his knee. No other changes or lettering.",
+          "reference_images": [
+            "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-c22cc65e-4d48-48e0-ba84-53639eab3355.png"
+          ],
+          "selected_generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-43286273-9234-440a-8388-865506c4fe22.png"
+        }
+      ]
     },
     {
       "plate_id": "issue-14-plate-02",
@@ -77,10 +114,32 @@
         28
       ],
       "asset": "output/illustrations/revised/issue-14/plate-02.png",
-      "status": "planned",
+      "status": "superseded-study",
       "caption": "On that screen",
       "scene_brief": "Rosa lays the standing tanker schedule beside Chano's incomplete digital roster as he calls the clinic with the revised estimate. Her practical insistence and his recognition of his signed approval are visible in gesture. Contemporary dispatch office, no robot present, no imagined injured patient or empty tanker magically at two sites.",
-      "scene_anchor": "She laid the standing schedule beside it."
+      "scene_anchor": "She laid the standing schedule beside it.",
+      "asset_sha256": "713137e85e9257f506b762723a86c1d5ba8645468224de68dfc7777b8b2a89de",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in reference-based image generation",
+      "generation_prompt": "Create ONE distinct full-page portrait book illustration, 1024x1536 or higher native resolution, neutral black-and-white Goya-inspired etching and aquatint realism with controlled crosshatching, living expressive faces, pure WHITE unprinted highlights. NO sepia, cream tint, all-over gray paper texture, color, border, lettering, caption, watermark or collage. Contemporary near-future Mexico, ordinary present-day clothing and furnishings, not colonial dress. Compose edge-to-edge with important details above bottom 7% reserved for a separate typeset caption. Reference images are identity and visual-style references ONLY, never repeat their scene. Chano is the same stocky middle-aged Mexican man with wavy dark hair, thick moustache, rolled-sleeve dark work shirt and practical trousers as the reference. Natural proportions, intelligent humor, not a buffoon. New scene: municipal dispatch office, Rosa the dispatcher lays a printed standing water-tanker schedule beside Chano's incomplete digital roster. Chano seated at desk calls clinic on phone with revised late-arrival estimate, acknowledging his own error rather than blaming Rosa. Rosa standing left is a distinct middle-aged Mexican woman with straight dark chin-length bob tucked behind one ear, sturdy build, square face, plain light work shirt with rolled cuffs; no glasses. Her practical finger points to the omitted line on the paper. Laptop naturally faces Chano, document marks indistinct not legible identities. No robot, no children, no second Chano, no literal trucks indoors. Medium close three-quarter framing with convincing hand/phone grip, no reference background.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-03/plate-06.png"
+      ],
+      "original_generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-59b3a2e8-59b8-496c-8c33-057dd013dee3.png",
+      "selected_generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-919c23c7-aef9-4e0e-8af1-07434ade34e7.png",
+      "visual_approval": "Withdrawn following user style correction. Scene and identity checks do not establish Goya fidelity.",
+      "corrective_edits": [
+        {
+          "prompt": "Use case: precise-object-edit. Edit this illustration only to REMOVE the unsolicited decorative slogans and legible paperwork: blank the words on the mug, remove the left and right slogan posters (replace with plain white wall / plain binder spines), remove the large multi-line heading above the map (keep abstract fictional map). Turn schedule text into indistinct small handwritten strokes while retaining its rows and tanker pictogram; no new words or numbers. Preserve exact faces, bob-haired Rosa, moustached Chano, hand positions, phone, laptop, schedule placement, portrait composition, black-and-white etched style and pure white highlights. No color/tint, no other changes.",
+          "reference_images": [
+            "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-59b3a2e8-59b8-496c-8c33-057dd013dee3.png"
+          ],
+          "selected_generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-919c23c7-aef9-4e0e-8af1-07434ade34e7.png"
+        }
+      ]
     },
     {
       "plate_id": "issue-14-plate-03",
@@ -99,10 +158,32 @@
         36
       ],
       "asset": "output/illustrations/revised/issue-14/plate-03.png",
-      "status": "planned",
+      "status": "superseded-study",
       "caption": "Heavy proof",
       "scene_brief": "Nereida unwraps the replaced water meter from a dish towel at the complaint-room desk. The clerk gives her an item receipt while Chano compares numbers with the two bills. Physical weight, everyday patience and bureaucratic comedy; no legible invented customer details or assertion that the charge has already been canceled.",
-      "scene_anchor": "Nereida arrived with a water meter wrapped in a dish towel."
+      "scene_anchor": "Nereida arrived with a water meter wrapped in a dish towel.",
+      "asset_sha256": "3990cd733009ac059bbb9a34c35c38b331ad270fd7aaa16782977c5f0c0c8550",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in reference-based image generation",
+      "generation_prompt": "Create ONE distinct full-page portrait book illustration, 1024x1536 or higher native resolution, neutral black-and-white Goya-inspired etching and aquatint realism with controlled crosshatching, living expressive faces, pure WHITE unprinted highlights. NO sepia, cream tint, all-over gray paper texture, color, border, lettering, caption, watermark or collage. Contemporary near-future Mexico, ordinary present-day clothing and furnishings, not colonial dress. Compose edge-to-edge with important details above bottom 7% reserved for a separate typeset caption. Reference images are identity and visual-style references ONLY, never repeat their scene. Chano is the same stocky middle-aged Mexican man with wavy dark hair, thick moustache, rolled-sleeve dark work shirt and practical trousers as the reference. Natural proportions, intelligent humor, not a buffoon. New scene: Nereida, an adult Mexican woman with long dark hair in a single low braid, strong oval face and plain light cardigan over checked blouse, unwraps a heavy used domestic water meter from a striped dish towel on a municipal complaint desk. Meter a squat round dial body with two threaded pipe stubs, real handheld size not a giant machine. A male clerk gives her an item receipt while Chano beside him compares two separate bills. Nereida's weary amusement and the clerk's practical attention tell the joke: they demanded heavy proof. Exactly three adults, medium wide triangle composition, no Q, no children, no illegible giant titles; paperwork small indistinct marks only. Her dispute is pending, not a victory certificate.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-03/plate-06.png"
+      ],
+      "original_generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-af070c45-7e82-4c0d-9c9c-beca36336b32.png",
+      "selected_generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-3f813175-0efd-4c8f-8597-7394e2139098.png",
+      "visual_approval": "Withdrawn following user style correction. Scene and identity checks do not establish Goya fidelity.",
+      "corrective_edits": [
+        {
+          "prompt": "Use case: precise-object-edit. Edit this illustration only to REMOVE the unsolicited office slogan graphics on the upper walls and the large desk sign in lower right. Replace wall posters/graphics with plain light plaster, desk sign with plain desk and paper tray edges in the same perspective. Turn document writing into indistinct small marks, not legible personal information. Preserve exact three foreground identities (braided Nereida left, moustached Chano middle, glasses-wearing clerk right), their actions, the receipt being handed over, two bills, water meter and striped dish towel, all anatomy, composition, etched monochrome style and white highlights. Do not change the window, bodies, faces or meter. No new text/tint.",
+          "reference_images": [
+            "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-af070c45-7e82-4c0d-9c9c-beca36336b32.png"
+          ],
+          "selected_generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-3f813175-0efd-4c8f-8597-7394e2139098.png"
+        }
+      ]
     },
     {
       "plate_id": "issue-14-plate-04",
@@ -121,10 +202,23 @@
         45
       ],
       "asset": "output/illustrations/revised/issue-14/plate-04.png",
-      "status": "planned",
+      "status": "superseded-study",
       "caption": "Put the stops back",
       "scene_brief": "Rosa and the bus driver lean over the revised map beside Chano, who writes the paid additional hours. A phone on the table carries Q's remote advice, but do not depict his body in Santa Rita or invent a video call. The driver indicates a missing pickup loop; the route is a fictional municipal working sketch, not a surveyed map of real roads.",
-      "scene_anchor": "He added the stops as the driver described them."
+      "scene_anchor": "He added the stops as the driver described them.",
+      "asset_sha256": "9360ba44722739b4518ffce2d46c3e80abfafb5e36a3653e7f4a4bc757cf1d80",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in reference-based image generation",
+      "generation_prompt": "Create ONE distinct full-page portrait book illustration, 1024x1536 or higher native resolution, neutral black-and-white Goya-inspired etching and aquatint realism with controlled crosshatching, living expressive faces, pure WHITE unprinted highlights. NO sepia, cream tint, all-over gray paper texture, color, border, lettering, caption, watermark or collage. Contemporary near-future Mexico, ordinary present-day clothing and furnishings, not colonial dress. Compose edge-to-edge with important details above bottom 7% reserved for a separate typeset caption. Reference images are identity and visual-style references ONLY, never repeat their scene. Chano is the same stocky middle-aged Mexican man with wavy dark hair, thick moustache, rolled-sleeve dark work shirt and practical trousers as the reference. Natural proportions, intelligent humor, not a buffoon. Identity reference ONLY: Rosa is bob-haired woman left, Chano moustached man seated. New scene: Rosa, an older Mexican bus driver with cropped gray hair and a plain short-sleeved shirt, and Chano work around a table on an ordinary school-bus route. Driver points to the missing pickup LOOP on a SMALL fictional hand-drawn working sketch, few lines/dots not actual geographic map. Chano writes additional PAID HOURS into notebook before notifying schools. Rosa listens/checks standing schedule. A simple mobile phone face up on table carries Q's AUDIO call, no portrait or video, NO physical robot. Composition above table from an oblique high angle so hands/sketch form center, faces all distinct, only three people. Driver is separate from Chano and not a duplicate moustached curly-haired man. Walls plain white with no posters, no slogans, no other invented lettering; papers only tiny indistinct marks, no readable personal information. Do not repeat tanker-call scene or receiver-to-ear pose.",
+      "reference_images": [
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-59b3a2e8-59b8-496c-8c33-057dd013dee3.png"
+      ],
+      "original_generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-2133a8c7-9af5-4c9d-9a20-bfe55815fd9f.png",
+      "selected_generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-2133a8c7-9af5-4c9d-9a20-bfe55815fd9f.png",
+      "visual_approval": "Withdrawn following user style correction. Scene and identity checks do not establish Goya fidelity."
     },
     {
       "plate_id": "issue-14-plate-05",
@@ -146,10 +240,23 @@
         56
       ],
       "asset": "output/illustrations/revised/issue-14/plate-05.png",
-      "status": "planned",
+      "status": "superseded-study",
       "caption": "A hat for the dashboard",
       "scene_brief": "A child draws a hat on a picture of the dashboard using clean scrap paper while Chano asks whether staff can have one. Bread, stacked requests and Nereida's towel-wrapped meter under a chair give the room ordinary life. No real dashboard wearing a physical hat, identifiable child forms or generic protest crowd.",
-      "scene_anchor": "One gave the dashboard a hat so it would look as if it knew where it was going."
+      "scene_anchor": "One gave the dashboard a hat so it would look as if it knew where it was going.",
+      "asset_sha256": "b7b3c163ef40a20b0d6b1ae8daa6b34a57499111f16f862beb61ab0a95f8d7d1",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in reference-based image generation",
+      "generation_prompt": "Create ONE distinct full-page portrait book illustration, 1024x1536 or higher native resolution, neutral black-and-white Goya-inspired etching and aquatint realism with controlled crosshatching, living expressive faces, pure WHITE unprinted highlights. NO sepia, cream tint, all-over gray paper texture, color, border, lettering, caption, watermark or collage. Contemporary near-future Mexico, ordinary present-day clothing and furnishings, not colonial dress. Compose edge-to-edge with important details above bottom 7% reserved for a separate typeset caption. Reference images are identity and visual-style references ONLY, never repeat their scene. Chano is the same stocky middle-aged Mexican man with wavy dark hair, thick moustache, rolled-sleeve dark work shirt and practical trousers as the reference. Natural proportions, intelligent humor, not a buffoon. Reference identity ONLY: Nereida left braided hair cardigan/check blouse, Chano middle moustache, wrapped meter. New scene in complaint room during working day: a child sits at low table drawing a simple rectangular COMPUTER DASHBOARD with a comically tilted hat ON THE DRAWING, black pencil on clean blank-backed scrap paper. Show the drawing visibly foreground in child's hands so it reads as child's invented hat-picture, not a real hat or actual computer wearing a hat. Chano crouches nearby smiling with amused raised eyebrow as if asking whether staff could have such a hat. Nereida seated farther back takes a piece of bread from plain basket, towel-wrapped water meter safely UNDER HER CHAIR away from papers. Friendly ordinary break, distinct low camera viewpoint, children ordinary current Mexican clothes. No actual hats, no Q, no confidential text on paper, no white speech balloons. No invented posters or unnecessary signs.",
+      "reference_images": [
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-af070c45-7e82-4c0d-9c9c-beca36336b32.png"
+      ],
+      "original_generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-c1f057cb-14aa-44a2-8b20-683eb08a90c0.png",
+      "selected_generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-c1f057cb-14aa-44a2-8b20-683eb08a90c0.png",
+      "visual_approval": "Withdrawn following user style correction. Scene and identity checks do not establish Goya fidelity."
     },
     {
       "plate_id": "issue-14-plate-06",
@@ -172,16 +279,29 @@
         68
       ],
       "asset": "output/illustrations/revised/issue-14/plate-06.png",
-      "status": "planned",
+      "status": "superseded-study",
       "caption": "Your signature",
       "scene_brief": "Outside the meeting room Chano holds the suspension notice opposite Mayor Irma and her cold coffee. Her diary lies open as she checks the funded bus dates. Both are accountable adults under pressure; no evil autonomous computer issuing the notice or erasure of her earlier signed release.",
-      "scene_anchor": "Irma's signature was at the bottom."
+      "scene_anchor": "Irma's signature was at the bottom.",
+      "asset_sha256": "d77480afb994090b1d91acaa103be482d53a354a79f05c76c7125066a4d2eeb2",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in reference-based image generation",
+      "generation_prompt": "Create ONE distinct full-page portrait book illustration, 1024x1536 or higher native resolution, neutral black-and-white Goya-inspired etching and aquatint realism with controlled crosshatching, living expressive faces, pure WHITE unprinted highlights. NO sepia, cream tint, all-over gray paper texture, color, border, lettering, caption, watermark or collage. Contemporary near-future Mexico, ordinary present-day clothing and furnishings, not colonial dress. Compose edge-to-edge with important details above bottom 7% reserved for a separate typeset caption. Reference images are identity and visual-style references ONLY, never repeat their scene. Chano is the same stocky middle-aged Mexican man with wavy dark hair, thick moustache, rolled-sleeve dark work shirt and practical trousers as the reference. Natural proportions, intelligent humor, not a buffoon. Reference Irma is the foreground older woman with short wavy silver hair, reading glasses and pale collarless blouse; preserve her identity. New scene beside closed municipal meeting-room door: Chano holds the suspension notice signed by Irma and the previously authorized specification release. Irma stands facing him, writes last funded date of the interim school bus run into her small diary, a cold coffee cup on narrow ledge at her elbow. Tense adult conversation, her face responsible and constrained not wicked; his face firm not shouting. Exactly two adults, no robot. Door off-axis in background, daylight from corridor, page marks indistinct. Hands physically plausible, pen touches diary. No police spectacle, no machine villain.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-06/plate-02.png"
+      ],
+      "original_generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-d7be49d3-7c04-4840-803c-ab88cbed016c.png",
+      "selected_generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-d7be49d3-7c04-4840-803c-ab88cbed016c.png",
+      "visual_approval": "Withdrawn following user style correction. Scene and identity checks do not establish Goya fidelity."
     },
     {
       "plate_id": "issue-14-plate-07",
       "page": 15,
       "facing_text_page": 14,
-      "facing_text": "He told the residents who was to\nanswer next, where he could still\nbe reached, and what he had not\nmanaged to do.\n“Did anything work?” a journalist\nasked at the gate.\n“The clinic gate is open. The extra\nbus is funded until the review.\nSome bills are being corrected.\nThe reporting dispute is not\nresolved.”\n“Was it a success?”\n“I just gave you more than one\nanswer.”\nQ and Lucía met him at the bus\nstation under Q's\naccompanied-visit arrangement.\nHe handed Lucía the public\nspecification extract and showed\nQ the version of the route plan\nthe dispatcher had confirmed.\n“Your second island,” Q said.\n“It had mainland prices.”\n“Do you want it in the book?”\n“Yes. Include the tanker I sent\nlate.”\nQ wrote that down.\n“And the one that arrived on\ntime,” Chano added.\n“Both.”\n“Don't make the second one the\nlesson I learned from the first.”\n“I won't give the tanker a\ncharacter arc.”\n“Good. It has a route.”\nQ left space between the two\nentries. Chano asked where they\nwere eating. He had spent the\njourney imagining three different\nlunches and wanted to know\nwhich of them could still be\nobtained.\nInterlude: The Chair of\nGovernance\nChano did not take Santa Rita's\noffice chair when he left. This fact\nrequires stating because he spent\nenough time considering it to\nfurnish a less scrupulous\nhistorian with a motive, an\nopportunity, and several\nparagraphs of defense.\nIt had five wheels, a cracked\narmrest, and a hydraulic column\nthat sank when he attempted a\nparticularly authoritative\nposture. The chair had\nintroduced doubt into more\nmeetings than the opposition. He\ngrew fond of it.\nDuring his appointment he\nmoved it to the complaint room\n",
+      "facing_text": "He told the residents who was to\nanswer next, where he could still\nbe reached, and what he had not\nmanaged to do.\n“Did anything work?” a journalist\nasked at the gate.\n“The clinic gate is open. The extra\nbus is funded until the review.\nSome bills are being corrected.\nThe reporting dispute is not\nresolved.”\n“Was it a success?”\n“I just gave you more than one\nanswer.”\nQ and Lucía met him at the bus\nstation under Q's\naccompanied-visit arrangement.\nHe handed Lucía the public\nspecification extract and showed\nQ the version of the route plan\nthe dispatcher had confirmed.\n“Your second island,” Q said.\n“It had mainland prices.”\n“Do you want it in the book?”\n“Yes. Include the tanker I sent\nlate.”\nQ wrote that down.\n“And the one that arrived on\ntime,” Chano added.\n“Both.”\n“Don't make the second one the\nlesson I learned from the first.”\n“I won't give the tanker a\ncharacter arc.”\n“Good. It has a route.”\nQ left space between the two\nentries.\n“Do I have to explain the week\nbefore we eat?” Chano asked.\n“I've imagined three lunches on\nthat bus.”\n“Let's see if they've imagined any\nof them here.” Q closed the\nnotebook.\nBeyond the exit, a woman was\nlifting the lid of a pot. Chano\nwent to ask what she still had.\nLucía tucked the specification\ninto her bag and followed him. Q\ncame with them.\nInterlude: The Chair of\nGovernance\nChano did not take Santa Rita's\noffice chair when he left. This fact\nrequires stating because he spent\nenough time considering it to\nfurnish a less scrupulous\nhistorian with a motive, an\nopportunity, and several\nparagraphs of defense.\n",
       "source_block_ids": [
         68,
         69,
@@ -203,22 +323,45 @@
         85,
         86,
         87,
-        88
+        88,
+        89
       ],
       "asset": "output/illustrations/revised/issue-14/plate-07.png",
-      "status": "planned",
+      "status": "superseded-study",
       "caption": "A route, not an arc",
-      "scene_brief": "At the bus station Chano shows the confirmed route plan to Q while Lucía holds the public specification extract. Q's notebook contains two separated entries; Chano turns toward the food stalls beyond them, hungry after the journey. Keep Q's known face, long coat and supported knee. No original retained ledger or files on display.",
-      "scene_anchor": "Q left space between the two entries."
+      "scene_brief": "At the bus station Q closes his small notebook after agreeing to record both deliveries without a forced character arc. Chano turns toward the food stalls, Lucía puts the public specification away, and Q joins them. A vendor lifts a pot lid; no dishes have been ordered yet. Preserve Q's short fitted jacket and supported right knee. No original retained ledger or private case files.",
+      "scene_anchor": "Q closed the notebook.",
+      "asset_sha256": "4bd45c0d9037a4f9f22eaeeb5ba9d8f1fac801ac4aaf9b2c4fee0ceddca0cb7b",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in reference-based image generation",
+      "generation_prompt": "Create ONE distinct full-page portrait book illustration, 1024x1536 or higher native resolution, neutral black-and-white Goya-inspired etching and aquatint realism with controlled crosshatching, living expressive faces, pure WHITE unprinted highlights. NO sepia, cream tint, all-over gray paper texture, color, border, lettering, caption, watermark or collage. Contemporary near-future Mexico, ordinary present-day clothing and furnishings, not colonial dress. Compose edge-to-edge with important details above bottom 7% reserved for a separate typeset caption. Reference images are identity and visual-style references ONLY, never repeat their scene. Chano is the same stocky middle-aged Mexican man with wavy dark hair, thick moustache, rolled-sleeve dark work shirt and practical trousers as the reference. Natural proportions, intelligent humor, not a buffoon. Q has the exact narrow riveted oval metal head, concentric circular ears, long mechanical neck, slim articulated body, metal hands and short fitted dark jacket of the Q reference. Chest question mark. Repaired shoulder and a subtle support brace on HIS RIGHT knee (viewer LEFT in a frontal view). No long coat, armor, weapon, cape, hat or human face. Reference mapping: first Chano left; second Q right ONLY; third Lucía is young woman CENTER, wavy shoulder-length hair denim jacket light patterned blouse not older woman. New scene: ordinary Mexican bus station exit, Q closes his SMALL NOTEBOOK after promising to include both Chano's late and successful water deliveries. Chano, hungry after bus journey, turns toward modest food stalls beyond exit; Lucía tucks public paperwork into her shoulder bag and follows him. A woman vendor in far middle distance lifts lid of cooking pot. Capture three friends beginning to move toward lunch, no invented dishes served yet. Q's folded notebook in one articulated hand, gaze toward companions, slim legs and RIGHT knee brace correct, short fitted jacket. Bus partly glimpsed outside, station bench and tiled floor, lively white daylight, no triptych, no speech balloons.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-03/plate-06.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-03.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-12/plate-03.png"
+      ],
+      "original_generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-edf3ce3f-ae6f-4817-a68a-8354212c863a.png",
+      "selected_generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-c11dc0ca-84d6-4e0a-b80b-f205439e64d6.png",
+      "visual_approval": "Withdrawn following user style correction. Scene and identity checks do not establish Goya fidelity.",
+      "corrective_edits": [
+        {
+          "prompt": "Use case: precise-object-edit. Preserve this illustration exactly, including the three friends, Q's face/short jacket/knee support, closed notebook, Lucía putting papers away, walking poses, food vendor lifting lid, composition and etched black-and-white style. Make only two removals: remove the small sign 'AUTOBUSES A TODA MÉXICO' under the SALIDA sign, leaving the outdoor view unobstructed; remove the bus company's cursive lettering/logo from the bus, leaving plain neutral bodywork. Keep the correctly spelled SALIDA sign and modest COMIDA CASERA stall signage. Do not add new words, alter any person, change the scene, or add tint.",
+          "reference_images": [
+            "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-edf3ce3f-ae6f-4817-a68a-8354212c863a.png"
+          ],
+          "selected_generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-c11dc0ca-84d6-4e0a-b80b-f205439e64d6.png"
+        }
+      ]
     },
     {
       "plate_id": "issue-14-plate-08",
       "page": 17,
       "facing_text_page": 16,
-      "facing_text": "when somebody needed a seat\nwith arms. Leticia later used it at\nthe reception desk. The inventory\nstill placed it in the officer's\nroom. An automated audit\nreported it missing.\nChano asked the clerk to change\nthe location. The maintenance\nrequest attached to the chair\ncomplicated the transfer: the\ncontractor was expected to\ncollect it from its old room. A\nsecond employee had already\nbeen assigned to investigate why\nit was missing there.\n“Can those two appointments\nmeet each other?” Chano asked.\nThe clerk called the contractor.\nThe older of the two men who\narrived needed to sit while his\ncolleague compared the labels.\nChano offered him the chair. It\nsank with the dignity of an\ninstitution accepting a reduction\nin its budget.\n“Column needs replacing,” the\nolder man said.\n“That is also my assessment of\nthe office,” Chano replied.\nThe replacement part could wait\na week. The contractor could\nleave the chair for seated use\nwith a note about the fault,\nprovided the municipality\naccepted that arrangement. The\nclerk obtained the sign-off and\ncorrected the collection location.\nNobody needed to pretend the\nchair was inaccessible in order to\nprevent its useful presence from\nbecoming a missing asset.\nLeticia wanted it to remain at the\ncomplaint desk after repair.\nChano wanted it back in his\noffice. He could explain both\ndesires in terms of public service.\nThe chair's effect on his own back\nmade the second explanation\nespecially fluent.\nHe called Q during their\nscheduled route discussion and\nasked how to record the move\nwithout claiming authority to\ngive the chair away.\n“You're changing its assigned use\nwithin the municipality?” Q\nasked.\n“If they'll approve it.”\n“Then use that request. Keep the\ninventory number, proposed\nroom, and approver. Don't turn it\ninto a donation.”\n“No shared-use constitution?”\n“Only if the chair disputes the\nroom.”\n",
+      "facing_text": "It had five wheels, a cracked\narmrest, and a hydraulic column\nthat sank when he attempted a\nparticularly authoritative\nposture. The chair had\nintroduced doubt into more\nmeetings than the opposition. He\ngrew fond of it.\nDuring his appointment he\nmoved it to the complaint room\nwhen somebody needed a seat\nwith arms. Leticia later used it at\nthe reception desk. The inventory\nstill placed it in the officer's\nroom. An automated audit\nreported it missing.\nChano asked the clerk to change\nthe location. The maintenance\nrequest attached to the chair\ncomplicated the transfer: the\ncontractor was expected to\ncollect it from its old room. A\nsecond employee had already\nbeen assigned to investigate why\nit was missing there.\n“Can those two appointments\nmeet each other?” Chano asked.\nThe clerk called the contractor.\nThe older of the two men who\narrived needed to sit while his\ncolleague compared the labels.\nChano offered him the chair. It\nsank with the dignity of an\ninstitution accepting a reduction\nin its budget.\n“Column needs replacing,” the\nolder man said.\n“That is also my assessment of\nthe office,” Chano replied.\nThe replacement part could wait\na week. The contractor could\nleave the chair for seated use\nwith a note about the fault,\nprovided the municipality\naccepted that arrangement. The\nclerk obtained the sign-off and\ncorrected the collection location.\nNobody needed to pretend the\nchair was inaccessible in order to\nprevent its useful presence from\nbecoming a missing asset.\nLeticia wanted it to remain at the\ncomplaint desk after repair.\nChano wanted it back in his\noffice. He could explain both\ndesires in terms of public service.\nThe chair's effect on his own back\nmade the second explanation\nespecially fluent.\nHe called Q during their\nscheduled route discussion and\nasked how to record the move\nwithout claiming authority to\ngive the chair away.\n",
       "source_block_ids": [
-        88,
-        89,
         90,
         91,
         92,
@@ -228,22 +371,44 @@
         96,
         97,
         98,
-        99,
-        100,
-        101
+        99
       ],
       "asset": "output/illustrations/revised/issue-14/plate-08.png",
-      "status": "planned",
+      "status": "superseded-study",
       "caption": "The sinking office",
       "scene_brief": "The older contractor sits in the low office chair while his colleague checks the asset label; Chano stands nearby, sharing the institutional-column joke. Cracked armrest and sagging hydraulic support visible, one intact five-wheel base. This is an authorized inspection in the complaint room, not the later repaired-chair scene.",
-      "scene_anchor": "Chano offered him the chair."
+      "scene_anchor": "Chano offered him the chair.",
+      "asset_sha256": "cd0ad8bb08a5d40bcd61badbbce7e2aff621c58b6abfb8273e5bbd908c8086b6",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in reference-based image generation",
+      "generation_prompt": "Create ONE distinct full-page portrait book illustration, 1024x1536 or higher native resolution, neutral black-and-white Goya-inspired etching and aquatint realism with controlled crosshatching, living expressive faces, pure WHITE unprinted highlights. NO sepia, cream tint, all-over gray paper texture, color, border, lettering, caption, watermark or collage. Contemporary near-future Mexico, ordinary present-day clothing and furnishings, not colonial dress. Compose edge-to-edge with important details above bottom 7% reserved for a separate typeset caption. Reference images are identity and visual-style references ONLY, never repeat their scene. Chano is the same stocky middle-aged Mexican man with wavy dark hair, thick moustache, rolled-sleeve dark work shirt and practical trousers as the reference. Natural proportions, intelligent humor, not a buffoon. Use reference chair identity: padded black rounded rectangular back, cracked near armrest, five-caster star base, depressed hydraulic column; not a throne. New daytime scene during Chano's appointment: older gray-haired male repair contractor in light work shirt sits very LOW in faulty office chair, knees raised because it has sunk. His younger clean-shaven colleague crouches to compare small asset sticker on underside of arm support with clipboard. Chano stands beside them sharing understated joke about column needing replacement. Exactly three men; Chano NOT seated. Whole chair base visible plausible five casters and center column, one seated person, broken before repair not newly fixed. White wall/high daylight office, no night window or cover composition, no Q, no extra heads or limbs. Tiny unidentifiable sticker numbers only, no added signage.",
+      "reference_images": [
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-c76ec48d-bdd5-44ca-afb9-edd6a47086e6.png"
+      ],
+      "original_generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-4b061df4-3d99-4150-b56e-fc6cc85bff93.png",
+      "selected_generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-c9655e3e-8c5b-4c65-965b-f17ac32ecef5.png",
+      "visual_approval": "Withdrawn following user style correction. Scene and identity checks do not establish Goya fidelity.",
+      "corrective_edits": [
+        {
+          "prompt": "Use case: precise-object-edit. Fix the chair/contractor posture ONLY. The older seated man's chair has SUNK: make its hydraulic center column fully compressed so seat is low, about 32 cm above floor, while keeping five caster base on floor. BOTH his boot soles must rest naturally flat on the floor in front, knees slightly above hips due to low seat; he must not lift his feet or curl legs in the air. Preserve the chair's padded back, cracked armrest, five-wheel base, same older man's identity and amused expression. Preserve Chano standing left and young colleague crouching right comparing the label, with physically plausible contact and hands. Keep whole composition, bright office, etched monochrome style. Do not create new people or multiple chair bases. Central correction is a genuinely LOW CHAIR and naturally grounded feet, not a man lifting his feet on a high chair.",
+          "reference_images": [
+            "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-4b061df4-3d99-4150-b56e-fc6cc85bff93.png"
+          ],
+          "selected_generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-c9655e3e-8c5b-4c65-965b-f17ac32ecef5.png"
+        }
+      ]
     },
     {
       "plate_id": "issue-14-plate-09",
       "page": 19,
       "facing_text_page": 18,
-      "facing_text": "Chano put the phone on speaker\nwith the others' agreement.\nLeticia said the chair had made\nfewer objections than he had. Q\naccepted that as the end of his\ncontribution and returned to the\nbus timings.\nIrma approved the assignment to\nthe complaint desk before\nsuspending Chano's credentials.\nThat left the chair where people\nhad been using it and deprived\nhim of the pleasure of taking it\naway as an act of defiance. He\nfound this surprisingly difficult\nto celebrate.\nOn his last evening he sat in it\nafter the room emptied. The\nlowered seat put his eyes level\nwith the requests stacked on the\ndesk. He had liked being listened\nto from the higher position. That\nadmission did not make the open\nclinic gate false. It did make it\nharder to write that he had\nwanted nothing for himself.\nHe left the chair's inventory\nnumber with Leticia and\nreturned the office keys. She\nasked whether he wanted a\nphotograph of himself beside it.\nHe said no, then asked her to let\nhim know if the part arrived. She\npromised she would.\nMuch later, the chair reached the\narchive through a documented\nsurplus sale after the complaint\nroom obtained replacements. Its\nremaining good wheel had been\nexchanged with another chair;\nthe invoice described the\nresulting collection as furniture.\nChano bought the part it still\nneeded and repaired it in the\nworkshop.\n“You got the office in the end,”\nLucía said.\n“Only the part that ever\nsupported me.”\nShe sat in it. It held its height.\nChano looked pleased in a way no\naccount of municipal\ndisappointment was entitled to\ncorrect.\n",
+      "facing_text": "“You're changing its assigned use\nwithin the municipality?” Q\nasked.\n“If they'll approve it.”\n“Then use that request. Keep the\ninventory number, proposed\nroom, and approver. Don't turn it\ninto a donation.”\n“No shared-use constitution?”\n“Only if the chair disputes the\nroom.”\nChano put the phone on speaker\nwith the others' agreement.\nLeticia said the chair had made\nfewer objections than he had. Q\naccepted that as the end of his\ncontribution and returned to the\nbus timings.\nIrma approved the assignment to\nthe complaint desk before\nsuspending Chano's credentials.\nThat left the chair where people\nhad been using it and deprived\nhim of the pleasure of taking it\naway as an act of defiance. He\nfound this surprisingly difficult\nto celebrate.\nOn his last evening he sat in it\nafter the room emptied. The\nlowered seat put his eyes level\nwith the requests stacked on the\ndesk. He had liked being listened\nto from the higher position. That\nadmission did not make the open\nclinic gate false. It did make it\nharder to write that he had\nwanted nothing for himself.\nHe left the chair's inventory\nnumber with Leticia and\nreturned the office keys. She\nasked whether he wanted a\nphotograph of himself beside it.\nHe said no, then asked her to let\nhim know if the part arrived. She\npromised she would.\nMuch later, the chair reached the\narchive through a documented\nsurplus sale after the complaint\nroom obtained replacements. Its\nremaining good wheel had been\nexchanged with another chair;\nthe invoice described the\nresulting collection as furniture.\nChano bought the part it still\nneeded and repaired it in the\nworkshop.\n“You got the office in the end,”\nLucía said.\n“Only the part that ever\nsupported me.”\nShe sat in it. It held its height.\nChano looked pleased in a way no\naccount of municipal\ndisappointment was entitled to\ncorrect.\n",
       "source_block_ids": [
+        100,
+        101,
         102,
         103,
         104,
@@ -251,13 +416,60 @@
         106,
         107,
         108,
-        109
+        109,
+        110,
+        111,
+        112
       ],
       "asset": "output/illustrations/revised/issue-14/plate-09.png",
-      "status": "planned",
+      "status": "superseded-study",
       "caption": "The part that supported him",
       "scene_brief": "Much later in the archive workshop, Lucía sits in the repaired office chair and it holds its height. Chano stands beside his tools, openly pleased. Keep the chair's recognizable cracked armrest and repaired/mismatched parts; this follows a surplus sale, not a stolen trophy. Distinct warm composition from the cover and contractor inspection.",
-      "scene_anchor": "She sat in it. It held its height."
+      "scene_anchor": "She sat in it. It held its height.",
+      "asset_sha256": "05724fceb769372f8e8909e206839da77b1aa794aefa72fbf9dbab1d89820c6a",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in reference-based image generation",
+      "generation_prompt": "Create ONE distinct full-page portrait book illustration, 1024x1536 or higher native resolution, neutral black-and-white Goya-inspired etching and aquatint realism with controlled crosshatching, living expressive faces, pure WHITE unprinted highlights. NO sepia, cream tint, all-over gray paper texture, color, border, lettering, caption, watermark or collage. Contemporary near-future Mexico, ordinary present-day clothing and furnishings, not colonial dress. Compose edge-to-edge with important details above bottom 7% reserved for a separate typeset caption. Reference images are identity and visual-style references ONLY, never repeat their scene. Chano is the same stocky middle-aged Mexican man with wavy dark hair, thick moustache, rolled-sleeve dark work shirt and practical trousers as the reference. Natural proportions, intelligent humor, not a buffoon. First reference chair and Chano identity ONLY. Second Lucía is the YOUNG woman CENTER with wavy shoulder-length hair denim jacket/light patterned blouse. Do NOT include Q or older woman. New scene MUCH LATER in wooded Amealco archive WORKSHOP after authorized municipal surplus sale and Chano's repair. Lucía sits in same black padded five-caster chair, now holding a NORMAL raised seat height, feet naturally planted and knees near right angles. Familiar cracked armrest persists, new hydraulic column and a subtly mismatched replaced caster show its repair. Chano stands beside workbench and his tools openly pleased, exchanging a warm joke with Lucía. Two people only. Pine-and-oak foliage through workshop window, shelves of tools, clean white daylight, not Santa Rita office, no cathedral/castle, no night, no throne. Full chair visible lower-middle of portrait, not cropped off; no oversized chair or deformed hands.",
+      "reference_images": [
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-c76ec48d-bdd5-44ca-afb9-edd6a47086e6.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-12/plate-03.png"
+      ],
+      "original_generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-8967a620-f673-426a-b113-d9b9fe99c3f5.png",
+      "selected_generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-8967a620-f673-426a-b113-d9b9fe99c3f5.png",
+      "visual_approval": "Withdrawn following user style correction. Scene and identity checks do not establish Goya fidelity."
     }
-  ]
+  ],
+  "generation_summary": {
+    "mode": "built-in",
+    "initial_calls": 10,
+    "corrective_calls": 5,
+    "native_pixels": [
+      1024,
+      1536
+    ],
+    "effective_dpi_about": 150,
+    "limitations": "Native raster art remains below a typical 300-dpi press target."
+  },
+  "rosa_reference": "output/illustrations/revised/issue-14/plate-02.png",
+  "nereida_reference": "output/illustrations/revised/issue-14/plate-03.png",
+  "proof_outputs": {
+    "reading": {
+      "path": "output/pdf/ingenious-issue-14-revised-en-bw.pdf",
+      "sha256": "f0f36215d914bf83bb06c0922bd4714198d1ad3bfb91bfba4b33930846d2a920",
+      "status": "superseded style/layout study; do not print as final"
+    },
+    "a3": {
+      "path": "output/pdf/ingenious-issue-14-revised-en-bw-a3.pdf",
+      "sha256": "78ff4f7df4a495a998623ffc95cb81a12d12d51e926cd8cda6ba5e05d9960546",
+      "status": "superseded style/layout study; do not print as final"
+    }
+  },
+  "style_correction": {
+    "date": "2026-09-08",
+    "reason": "Photorealistic figures and uniform detailed hatching conflict with requested Goya style.",
+    "replacement_status": "Two-scene style and typography pilot in progress; no issue-wide replacement approved."
+  }
 }

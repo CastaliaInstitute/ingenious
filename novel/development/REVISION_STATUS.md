@@ -1,5 +1,21 @@
 # Motivation revision: working record
 
+## Governing art correction, 2026-09-08
+
+The user rejected the drift into photorealism. Earlier scene/layout approvals do
+not establish the requested Goya style. Issue Fourteen's new art and PDFs are
+superseded studies, not final approved deliverables. Its small lunch revision and
+four fresh-context response records remain useful. Earlier Issues 1-13 now need a
+style audit before final acceptance. See `GOYA_ART_DIRECTION.md` and the saved
+`output/illustrations/goya-pilot/manifest.json`. Two scene studies and a further
+lunch redraw now exist, with prompts, museum references and explicit limitations.
+None is final-approved. The typography comparison favors retaining left alignment:
+the tested justified columns create conspicuous gaps despite hyphenation. No
+production pagination or facing-text mappings changed. Next: resolve Q's drawn
+identity and the overly posed lunch group, then rebuild the replacement plates
+and continue the later chapter issues. No print job is authorized by historical
+proof checks. The full goal remains active.
+
 ## Active objective
 
 Revise both books around Q's choice to explore Mexico and keep writing with the

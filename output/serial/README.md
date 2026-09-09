@@ -1,5 +1,18 @@
 # The Ingenious Machine: Serial Edition
 
+**Art-direction correction, 2026-09-08:** the user rejected photographic realism
+under an etched texture. The issue proofs below retain historical text/layout
+checks, not final Goya-style approval. Issue Fourteen's new files are superseded
+studies. Earlier issue art requires review against the
+[governing Goya direction](../../novel/development/GOYA_ART_DIRECTION.md).
+Do not print or publish these studies as approved final art.
+
+The [Goya pilot and prompt record](../illustrations/goya-pilot/manifest.json)
+preserves two new scene studies and a further lunch redraw. Their style remains
+under review. The same-text typography comparison supports retaining left-aligned
+body columns: the tested justification introduced distracting word spacing.
+No issue pagination changed for this comparison.
+
 The planned serial has 22 illustrated issues, one chapter and its interludes per
 issue. The English manuscript is the current revision source. Most PDFs in this
 directory predate the motivation, continuity, and ending revision and must not

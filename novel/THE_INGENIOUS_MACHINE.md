@@ -8310,9 +8310,16 @@ Q wrote that down.
 
 “Good. It has a route.”
 
-Q left space between the two entries. Chano asked where they were eating.
-He had spent the journey imagining three different lunches and wanted
-to know which of them could still be obtained.
+Q left space between the two entries.
+
+“Do I have to explain the week before we eat?” Chano asked. “I've
+imagined three lunches on that bus.”
+
+“Let's see if they've imagined any of them here.” Q closed the notebook.
+
+Beyond the exit, a woman was lifting the lid of a pot. Chano went to
+ask what she still had. Lucía tucked the specification into her bag
+and followed him. Q came with them.
 
 ### Interlude: The Chair of Governance
 

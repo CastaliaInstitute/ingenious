@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-08",
+  "title": "Goya direction pilot",
+  "generation_mode": "built-in image generation and reference-based edits",
+  "status": "style studies, not production-approved plates",
+  "governing_direction": "novel/development/GOYA_ART_DIRECTION.md",
+  "manuscript": {
+    "path": "novel/THE_INGENIOUS_MACHINE.md",
+    "chapter": 14,
+    "sha256": "1ed444c185c744fe978c3e321141f5bbd2069087191ae2d1039c8dc1d37431c0"
+  },
+  "references": [
+    {
+      "path": "output/illustrations/goya-pilot/references/capricho-42-met.jpg",
+      "artist": "Francisco Goya",
+      "title": "Tu que no puedes",
+      "series": "Los Caprichos, 42",
+      "date": 1799,
+      "institution": "The Metropolitan Museum of Art",
+      "object_id": 370575,
+      "accession": "18.64(42)",
+      "collection_url": "https://www.metmuseum.org/art/collection/search/370575",
+      "download_url": "https://images.metmuseum.org/CRDImages/dp/original/DP816982.jpg",
+      "rights": "Met collection API isPublicDomain: true",
+      "sha256": "90e6e5de55f0c764735ee0546b4c6e1dce3cb662c6d288cb63a143d4fd62461c"
+    },
+    {
+      "path": "output/illustrations/goya-pilot/references/capricho-43-met.jpg",
+      "artist": "Francisco Goya",
+      "title": "El sueño de la razon produce monstruos",
+      "series": "Los Caprichos, 43",
+      "date": 1799,
+      "institution": "The Metropolitan Museum of Art",
+      "object_id": 338473,
+      "accession": "18.64(43)",
+      "collection_url": "https://www.metmuseum.org/art/collection/search/338473",
+      "download_url": "https://images.metmuseum.org/CRDImages/dp/original/DP816992.jpg",
+      "rights": "Met collection API isPublicDomain: true",
+      "sha256": "122aa775d975c4aa8d96e7ecbbfe02626c36c12f42cb4bfafbfc59dbafc52fa8"
+    }
+  ],
+  "assets": [
+    {
+      "key": "sinking-office-goya",
+      "path": "output/illustrations/goya-pilot/sinking-office-goya.png",
+      "sha256": "f9040c0e6ce1310b3367ba159b7bb22b816a9b44440261a44e269e38a4d6fc24",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "original_generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-9aa73b52-5004-4375-975a-459545077d6c.png",
+      "selected_generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-51bca680-7c54-48c4-8f6d-59442fe13abd.png",
+      "status": "pilot, not final-approved",
+      "scene_anchor": "On his last evening he sat in it after the room emptied.",
+      "candidate_binding": "Chapter Fourteen cover study; scene occurs on text page 18, not the contractor scene on text page 16. No issue binding changed.",
+      "generation_prompt": "Use case: illustration-story. Create a NEW portrait illustration for The Ingenious Machine, in the actual graphic language of Francisco Goya's Los Caprichos. The two museum prints are PRIMARY STYLE REFERENCES, not scene content. A handmade etched drawing with broad, granular aquatint masses, abrupt paper-white reserves, irregular searching contours and sparing hatching. Faces and bodies are expressively interpreted, not photographically rendered. Compress and simplify space. Select what to describe: a sleeve may be a single dark shape, a face a few decisive strokes. NO photographic likeness, pores, textile microtexture, polished metal reflection, cinematic lighting, depth-of-field, uniform crosshatching, 3D or engraved-photo filter. Not a slick vector cartoon either. Neutral BLACK ink and gray aquatint on PURE WHITE, not the antique cream of the scans. No scanned paper border, faux aging, sepia, caption, signature, words or numbers. Image reaches all canvas edges with composition continuing into white reserves, no outer frame. Preserve the narrative action, but invent a strong drawn composition instead of simulating a camera. No animals, supernatural creatures or period costume borrowed from Goya. Contemporary Mexico. Native portrait 2048x3072 if supported.\nScene: Santa Rita municipal complaint room after closing. Chano, a stocky middle-aged Mexican man with a thick moustache and a dark tumble of wavy hair, sits alone sunk low in a damaged five-caster office chair. His rolled-sleeve work shirt and trousers are contemporary. His eyes are level with an untidy stack of requests on the desk; one large black desk mass presses against his small seated figure. He grips a cracked armrest with proprietary affection and studies the papers with pride and fatigue, not mindless helplessness. The comic institution is a sagging chair, not a crown. The raised papers and lowered man make the visual argument. Sparse office cues; no busy decor, walls of signs, scenic church or extra people. Make his lopsided face and posture distinctly DRAWN with Goya's economical, slightly ungainly humanity. Do not depict him sleeping or being crushed. Reserve the bottom 6% free of important features for a separately typeset margin caption.",
+      "references": [
+        "/tmp/ingenious-goya-capricho-42-met.jpg",
+        "/tmp/ingenious-goya-capricho-43-met.jpg"
+      ],
+      "corrective_edits": [
+        {
+          "key": "sinking-office-goya-v2",
+          "base": "sinking-office-goya",
+          "refs": [
+            "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-9aa73b52-5004-4375-975a-459545077d6c.png"
+          ],
+          "prompt": "Use case: style-transfer, color/background correction only. Preserve the drawn composition, broad aquatint shadows, scratchy economical contours, Chano's expressive face and low chair, paper stack, hands and all objects exactly. Convert the whole illustration to strictly NEUTRAL BLACK AND GRAY ink, removing all sepia or warm brown. Make the light unprinted paper reserves truly PURE WHITE, especially the bottom margin, shirt highlights and light wall strips. Remove the all-over cream paper stain and fake aged-paper texture; keep grain ONLY where it describes printed aquatint ink. Do not make it photographic, smoother, more detailed, cartoon-like or add text. This remains a new Goya-inspired etching, not a photograph."
+        }
+      ],
+      "review": "Stronger tonal hierarchy and unidealized face; perspective remains more naturalistic than the Caprichos. Neutral white-reserve version selected for comparison, not a claim of full style fidelity."
+    },
+    {
+      "key": "before-lunch-goya",
+      "path": "output/illustrations/goya-pilot/before-lunch-goya.png",
+      "sha256": "e2f6a3a70066f402f5d7732163ccd22c80d8109d3bc21607423583116899f0f1",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "original_generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-26d53b8d-20b3-4d78-8d68-8cbc178494e2.png",
+      "selected_generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-dce7cd2a-4b63-4c91-a8a9-761a80d0d6f7.png",
+      "status": "pilot, not final-approved",
+      "scene_anchor": "Q closed the notebook.",
+      "candidate_binding": "Candidate for issue-14-plate-07, opposite text page 14. No issue binding changed.",
+      "generation_prompt": "Use case: illustration-story. Create a NEW portrait illustration for The Ingenious Machine, in the actual graphic language of Francisco Goya's Los Caprichos. The two museum prints are PRIMARY STYLE REFERENCES, not scene content. A handmade etched drawing with broad, granular aquatint masses, abrupt paper-white reserves, irregular searching contours and sparing hatching. Faces and bodies are expressively interpreted, not photographically rendered. Compress and simplify space. Select what to describe: a sleeve may be a single dark shape, a face a few decisive strokes. NO photographic likeness, pores, textile microtexture, polished metal reflection, cinematic lighting, depth-of-field, uniform crosshatching, 3D or engraved-photo filter. Not a slick vector cartoon either. Neutral BLACK ink and gray aquatint on PURE WHITE, not the antique cream of the scans. No scanned paper border, faux aging, sepia, caption, signature, words or numbers. Image reaches all canvas edges with composition continuing into white reserves, no outer frame. Preserve the narrative action, but invent a strong drawn composition instead of simulating a camera. No animals, supernatural creatures or period costume borrowed from Goya. Contemporary Mexico. Native portrait 2048x3072 if supported.\nScene: Three companions leave an ordinary Mexican bus station for a food stall. Chano is short and stocky, wavy dark hair, thick moustache, rolled-sleeve work shirt, hungry and amused. Lucía is a young adult with shoulder-length wavy dark hair, denim jacket and shoulder bag; she tucks folded public papers away. Q, a tall slender ROBOT, closes his small notebook and comes with them instead of interviewing Chano further. Q's recognizable drawn silhouette: narrow elongated oval segmented head tilted attentively, small dark eyes, concentric circular ear disk, exposed long mechanical neck, question-mark emblem on chest, SHORT fitted dark jacket, slim hinged metal limbs and subtle support on his anatomical RIGHT knee. Simplify all machinery boldly into ink contours, few joints and white shapes; do NOT render every rivet, shiny metal or a realistic mechanical product. His eloquence is in his companionable gesture, not a human mouth smile. Put stout Chano and slender Q in expressive counterpoint, Lucía turning between them. A woman at the distant stall lifts a pot lid; only a few lines indicate the station exit and food counter. No one carries a plate of food yet. No new speech balloons, labels or slogans. No heroic pose, armor, lance, cape or long coat. Figures must look conceived by a satirical draughtsman, never models from a photo. Reserve bottom 6% for later typeset caption.",
+      "references": [
+        "/tmp/ingenious-goya-capricho-42-met.jpg",
+        "/tmp/ingenious-goya-capricho-43-met.jpg"
+      ],
+      "corrective_edits": [
+        {
+          "key": "before-lunch-goya-v2",
+          "base": "before-lunch-goya",
+          "refs": [
+            "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-26d53b8d-20b3-4d78-8d68-8cbc178494e2.png",
+            "/tmp/ingenious-goya-capricho-42-met.jpg"
+          ],
+          "prompt": "Use case: style-transfer with restrained character refinement. Image1 is the target illustration. Image2 is the Goya print-language reference ONLY; do not borrow its donkeys, bent figures, costume, border or paper color. Keep Image1's three friends, their scale/poses, closed notebook, papers going into bag, vendor lifting a pot lid, station and broad white reserves. Keep strong aquatint masses and economical rough contours. Refine Q ONLY enough to preserve his established design: narrow oval head divided by a few irregular metal panel seams and SIX small rivet marks, circular ear, two small recessed dark eyes rather than large cute alien eyes, a narrow elongated jaw. Restore the dark SHORT JACKET'S LONG SLEEVES down to his wrists; torso hem stays above hips, no long coat. His right knee support stays on the same leg. Render these as spare drawn ink shapes, NOT detailed machinery. Let the two human faces have slightly less prettified, more irregular adult Goya linework without changing hair, moustache or expressions. Strict neutral black/gray ink, PURE WHITE unprinted reserves, no antique cream/sepia paper field. No extra props, animals, text or photographic texture."
+        }
+      ],
+      "review": "Correct narrative objects and companionable action; broad print-like fields but polished human faces and simplified egg-like Q mask remain too modern-comic. Retained as a study and the controlled typography comparison image."
+    }
+  ],
+  "additional_studies": [
+    {
+      "path": "output/illustrations/goya-pilot/before-lunch-goya-v3.png",
+      "sha256": "b28bb65add1e979ce9e2fb548dda8f0d0eadb53b9b00a6908bf4dace1991c0ca",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-10ff6e00-261e-4346-b587-2737b43f59e0.png",
+      "key": "before-lunch-goya-v3",
+      "prompt": "Use case: style-transfer. Image 1 is the narrative and character reference to redraw; Image 2 is the controlling style reference, Francisco Goya's Capricho 42. Redraw the whole of Image 1 in the line-and-aquatint language of Image 2. This is a new print, not a filter. Replace thick comic-book outlines, pretty faces, smooth robot armor and crisp architectural rendering with thin broken etched contours, sparse parallel hatching, soft flat aquatint fields, ungainly adult faces and selectively unresolved forms. Keep the reference print's economy and compression. Less surface description, more gesture. No photographic texture and no glossy comics inking. Neutral black/gray ink on PURE WHITE paper, not the antique cream of Image 2; do not borrow its animals, pose, clothing, border or caption.\nRetain the actual scene: in contemporary Mexico, short stocky moustached Chano walks from the bus station toward a food stall, with Lucía putting papers into her shoulder bag and Q holding a CLOSED notebook. No meal served yet. Q is a tall slender robot in a short dark long-sleeved jacket, question-mark chest, circular ear disk, long mechanical neck, narrow SEGMENTED elongated face with small recessed eyes and a few panel seams, not a cute blank egg mask. Mechanical character, not a human face or knight; do not invent a smile. Right-knee support. Chano and Lucía keep their hair, builds and contemporary clothes but are drawn with the asymmetry and unidealized humanity of Goya. Make the three companions an informal moving group, not a fashion trio posing. Distant woman lifts the lid of her cooking pot. No new characters or objects, no additional text. Portrait composition, no printed frame, pure-white bottom reserve for a separate caption.",
+      "refs": [
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-dce7cd2a-4b63-4c91-a8a9-761a80d0d6f7.png",
+        "/tmp/ingenious-goya-capricho-42-met.jpg"
+      ],
+      "status": "not approved",
+      "review": "Softer aquatint fields and less idealized faces improve the drawing. Persistent blank oval Q face, posed group and warm ink/grain still need correction. Not promoted into an issue PDF."
+    }
+  ],
+  "typography": {
+    "decision": "Retain left-aligned body text at current narrow column widths. No production pagination change.",
+    "test": {
+      "words_per_version": 270,
+      "font": "Georgia",
+      "size_pt": 13.3,
+      "leading_pt": 18.8416666667,
+      "column_width_pt": 197,
+      "hyphenator": "Pyphen 0.18.1 en_US, left=3 right=3",
+      "left_max_gap_pt": 3.2170919928,
+      "justified_max_gap_pt": 22.3330640577,
+      "left_median_gap_pt": 3.2101828024,
+      "justified_median_gap_pt": 5.0887340577
+    },
+    "diagnostic_pdf_sha256": "8e25d5175186dcc2e0b23b11bba4797d92cd83dc7fa36ae288ca2d944ee08a2d",
+    "verification": "Both complete A3 rendered pages inspected. Same ordered 270 source words and identical lossless DeviceGray image in each; no painted text rectangle. Justified version rejected on visible spacing. Diagnostic artifacts remain in /tmp, not final deliverables."
+  },
+  "limitations": [
+    "No user style approval or A+ certification.",
+    "1024x1536 native assets are approximately 150 dpi at comic trim, not press-resolution masters.",
+    "Issue Fourteen's earlier ten images and two PDFs remain superseded studies.",
+    "Issues 1-13 still require a complete style audit; Issues 15-22 still need revised illustration production."
+  ]
+}
