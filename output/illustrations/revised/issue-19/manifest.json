@@ -6,22 +6,34 @@
   "page_count": 20,
   "text_font": "Georgia 13.5/19.125 pt",
   "plate_count_including_cover": 10,
-  "status": "Three Goya scene-proof selections; remaining seven plates not selected; complete Issue 19 production gate remains closed",
+  "status": "Complete illustrated Issue 19 revision proofs: twenty reading pages and ten A3 sides verified; not final press/A+ approval",
   "character_reference": "output/illustrations/revised/issue-19/plate-01.png",
   "chano_reference": "output/illustrations/revised/issue-03/plate-06.png",
   "lucia_reference": "output/illustrations/revised/issue-03/plate-04.png",
   "custodian_design_source": "output/illustrations/revised/issue-16/manifest.json",
   "character_design": "Q retains the approved narrow segmented head, round ear mechanisms, exposed neck, question-mark breastplate, short fitted dark jacket with long sleeves and supported knee. Present Custodian is male, tall, about sixty, long gray hair tied back except for the reunion's escaped tie, glasses, white work shirt and boots. The earlier expedition needs the same man younger, darker long hair and glasses, not a different sex or a colonial cleric. Chano and Lucía follow approved references. Evaristo is the fictionalized relative with a closed packet; Q is absent from the old expedition. Q's lower face includes a small mechanical sampling mouth; do not simplify it into a blank mask. Use the corrected Goya pilot for Q-family identity, not photographic surface detail.",
   "art_direction": "Neutral monochrome Goya-inspired etching and aquatint with economical drawn contours and broad tonal masses, white highlights, no cream or sepia background ink. Full-bleed plates at trim with separate typeset caption margin. Nine exact-facing scenes and one distinct cover. Present Amealco has pine/oak uplands and an old data-center yard; earlier expedition uses vans and scanning equipment in an unnamed town. Preserve confidential material and avoid inventing the letters' contents or final fate. Notebook contains contacts and references, not passwords. Governing reference: novel/development/GOYA_ART_DIRECTION.md. Earlier plates guide identity only; do not imitate their photographic rendering.",
-  "approval_scope": "Partial art checkpoint only: three selected scene drawings opposite source pages 2, 6 and 8. Twenty-page chapter plan remains unchanged. Seven plates including cover still need selected art. No complete illustrated Issue 19 PDF, A+ approval or printing.",
+  "approval_scope": "Twenty comic pages with ten plates including cover, ten A3 landscape sides for five nested short-edge duplex sheets. Georgia 13.5/19.125. Approval is for illustrated revision proof, not A+ press master or authorization to print.",
   "plates": [
     {
       "plate_id": "issue-19-cover",
       "page": 1,
       "asset": "output/illustrations/revised/issue-19/cover.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The Custodian's False Explanation",
-      "scene_brief": "Wide view of the Amealco reading room with Q and the tall, long-haired male Custodian at the table, papers and a suitcase beside them. Through the windows, pines and sloping fields border a working data-center service yard with a reversing truck where a prospectus promised a garden. The institution's everyday contradictions remain physical, not spectral. No evil-master pose or farewell deathbed; leave space for the separately typeset title."
+      "scene_brief": "Wide view of the Amealco reading room with Q and the tall, long-haired male Custodian at the table, papers and a suitcase beside them. Through the windows, pines and sloping fields border a working data-center service yard with a reversing truck where a prospectus promised a garden. The institution's everyday contradictions remain physical, not spectral. No evil-master pose or farewell deathbed; leave space for the separately typeset title.",
+      "selected_generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-71801542-3a62-43fb-840f-add48b62874a.png",
+      "asset_sha256": "b1f444c4f77dd6bb40fa3e8b8b82a5ae76e5a30343a5fe937b7964b71ecba91a",
+      "native_pixels": [
+        1075,
+        1463
+      ],
+      "visual_review": "Native drawing and its complete rendered A3 slot inspected; approved for the illustrated revision proof. Facing action, character identity, crop and caption reviewed. Not final press-resolution or artistic A+ certification.",
+      "title_center_x_pt": 280,
+      "title_lines": [
+        "The Ingenious",
+        "Machine"
+      ]
     },
     {
       "caption": "The Third Attempt",
@@ -46,14 +58,14 @@
         11
       ],
       "asset": "output/illustrations/revised/issue-19/plate-01.png",
-      "status": "scene-proof-selected",
+      "status": "approved",
       "selected_generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-dea9f629-67f3-492a-a1ad-51b0195b8678.png",
       "asset_sha256": "d93321306ac7ae28712cac9778f2316a461b74b7a3eba168e05dc814a8100bfb",
       "native_pixels": [
         1075,
         1463
       ],
-      "visual_review": "Native drawing and complete rendered A3 facing spread inspected. Full-bleed trim crop, separate caption, facing action, Q's long sleeves/mouth/right-knee support where shown and the male Custodian checked. Selected for this scene proof, not full-issue or A+ approval."
+      "visual_review": "Native drawing and its complete rendered A3 slot inspected; approved for the illustrated revision proof. Facing action, character identity, crop and caption reviewed. Not final press-resolution or artistic A+ certification."
     },
     {
       "caption": "She Wrote Twice",
@@ -77,7 +89,15 @@
         21
       ],
       "asset": "output/illustrations/revised/issue-19/plate-02.png",
-      "status": "planned"
+      "status": "approved",
+      "selected_generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-3b070a47-f459-4ed1-8f9f-8d2239bcf143.png",
+      "asset_sha256": "bccb484039516d868170fbaecb82762a4d84eebc0c8fbdf594ec8e115f81186d",
+      "native_pixels": [
+        1075,
+        1463
+      ],
+      "visual_review": "Native drawing and its complete rendered A3 slot inspected; approved for the illustrated revision proof. Facing action, character identity, crop and caption reviewed. Not final press-resolution or artistic A+ certification. Right-aligned crop preserves both letter-holding hands; corrected reading page and A3 side re-inspected.",
+      "crop_horizontal_alignment": "right"
     },
     {
       "caption": "The Photograph He Asked For",
@@ -102,14 +122,14 @@
         33
       ],
       "asset": "output/illustrations/revised/issue-19/plate-03.png",
-      "status": "scene-proof-selected",
+      "status": "approved",
       "selected_generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-c680eebb-713d-49e9-885f-321580a8d62f.png",
       "asset_sha256": "75080829178f09c34c36284baddf541f112159ca33e38b39486e8f3499490450",
       "native_pixels": [
         1075,
         1463
       ],
-      "visual_review": "Native drawing and complete rendered A3 facing spread inspected. Full-bleed trim crop, separate caption, facing action, Q's long sleeves/mouth/right-knee support where shown and the male Custodian checked. Selected for this scene proof, not full-issue or A+ approval."
+      "visual_review": "Native drawing and its complete rendered A3 slot inspected; approved for the illustrated revision proof. Facing action, character identity, crop and caption reviewed. Not final press-resolution or artistic A+ certification."
     },
     {
       "caption": "The Packet Not Offered",
@@ -134,14 +154,14 @@
         45
       ],
       "asset": "output/illustrations/revised/issue-19/plate-04.png",
-      "status": "scene-proof-selected",
+      "status": "approved",
       "selected_generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-39376056-a95d-4175-acf2-9bcb0791299c.png",
       "asset_sha256": "2b094b0a694a43c419d590e57f902bc6bbd4df7a0ac5124d89838fade6df029a",
       "native_pixels": [
         1075,
         1463
       ],
-      "visual_review": "Native drawing and complete rendered A3 facing spread inspected. Full-bleed trim crop, separate caption, facing action, Q's long sleeves/mouth/right-knee support where shown and the male Custodian checked. Selected for this scene proof, not full-issue or A+ approval."
+      "visual_review": "Native drawing and its complete rendered A3 slot inspected; approved for the illustrated revision proof. Facing action, character identity, crop and caption reviewed. Not final press-resolution or artistic A+ certification."
     },
     {
       "caption": "Stronger Cord",
@@ -166,7 +186,14 @@
         57
       ],
       "asset": "output/illustrations/revised/issue-19/plate-05.png",
-      "status": "planned"
+      "status": "approved",
+      "selected_generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-98b6cf3d-928b-421c-97ae-cb69b5588485.png",
+      "asset_sha256": "0344340ab51b14a6078c1ca83323caf280064d893d18dd92216c1025a13daa37",
+      "native_pixels": [
+        1076,
+        1462
+      ],
+      "visual_review": "Native drawing and its complete rendered A3 slot inspected; approved for the illustrated revision proof. Facing action, character identity, crop and caption reviewed. Not final press-resolution or artistic A+ certification."
     },
     {
       "caption": "A Warning They Didn't Receive",
@@ -195,7 +222,14 @@
         72
       ],
       "asset": "output/illustrations/revised/issue-19/plate-06.png",
-      "status": "planned"
+      "status": "approved",
+      "selected_generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-bf31039d-36c6-4113-92ab-1048df47f4d0.png",
+      "asset_sha256": "b7f74e79879266c7491d5cf7b7bf4280c4fb7853eca3115030fc1c68394d21ec",
+      "native_pixels": [
+        1075,
+        1463
+      ],
+      "visual_review": "Native drawing and its complete rendered A3 slot inspected; approved for the illustrated revision proof. Facing action, character identity, crop and caption reviewed. Not final press-resolution or artistic A+ certification."
     },
     {
       "caption": "The Idea and the Errand",
@@ -226,7 +260,14 @@
         89
       ],
       "asset": "output/illustrations/revised/issue-19/plate-07.png",
-      "status": "planned"
+      "status": "approved",
+      "selected_generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-0c872680-dab0-4c01-922c-116bc1fed553.png",
+      "asset_sha256": "f870d21e528394e67b9afbdce3092085f88130bfa9c8d4b77c3229d46ce7ef25",
+      "native_pixels": [
+        1075,
+        1463
+      ],
+      "visual_review": "Native drawing and its complete rendered A3 slot inspected; approved for the illustrated revision proof. Facing action, character identity, crop and caption reviewed. Not final press-resolution or artistic A+ certification."
     },
     {
       "caption": "Ask Who Is Going",
@@ -250,7 +291,14 @@
         99
       ],
       "asset": "output/illustrations/revised/issue-19/plate-08.png",
-      "status": "planned"
+      "status": "approved",
+      "selected_generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-188e1a66-39cf-4842-bcfe-20a060476dc9.png",
+      "asset_sha256": "6e06aa6dadb066f7df459fa15bf3549a5a079e7d0e78be1fe7023b530a36e132",
+      "native_pixels": [
+        1075,
+        1463
+      ],
+      "visual_review": "Native drawing and its complete rendered A3 slot inspected; approved for the illustrated revision proof. Facing action, character identity, crop and caption reviewed. Not final press-resolution or artistic A+ certification."
     },
     {
       "caption": "The Coat Before the Door",
@@ -276,7 +324,14 @@
         111
       ],
       "asset": "output/illustrations/revised/issue-19/plate-09.png",
-      "status": "planned"
+      "status": "approved",
+      "selected_generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-dcd623f2-c356-4c32-a30d-41d1d094d946.png",
+      "asset_sha256": "5e89b73c1d07a5f54f061a169bf08841bef6f06603818af1804eced68a5b818f",
+      "native_pixels": [
+        1075,
+        1463
+      ],
+      "visual_review": "Native drawing and its complete rendered A3 slot inspected; approved for the illustrated revision proof. Facing action, character identity, crop and caption reviewed. Not final press-resolution or artistic A+ certification."
     }
   ],
   "revision_review": "novel/development/CHAPTER_19_FRESH_CONTEXT_REVIEW.md",
@@ -322,7 +377,8 @@
         10
       ],
       "scope": "Internal layout only; no generated or approved Issue 19 art."
-    }
+    },
+    "historical_scope": "Source-only checkpoint before Issue 19 illustration production."
   },
   "layout_constraints": {
     "continuous_text": true,
@@ -486,6 +542,114 @@
       ],
       "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-39376056-a95d-4175-acf2-9bcb0791299c.png",
       "decision": "selected for scene proof; not whole-issue final approval"
+    },
+    {
+      "plate_id": "issue-19-cover",
+      "prompt": "Use case: illustration-story. New original Goya Los Caprichos-style etching and aquatint for a Mexican literary serial. Attached drawings are identity and drawing-language references, NOT compositions to repeat. Invent a different scene. Thin nervous contours, angular interpreted faces, expressive hands, compressed shallow space, broad flat darks, sparse selective detail. Not photographic or a finely engraved photograph; no pores, realistic material textures or smooth CGI. Neutral black/gray on CLEAN PURE WHITE PAPER, no cream tint, antique stains, page border or printed caption. Portrait full-bleed image: scene extends to all four image edges; heads and hands clear of crop. Q is the slim robot in reference: narrow segmented oval head, round eyes, concentric ear discs, long articulated neck, SMALL MECHANICAL MOUTH WITH HINGED JAW, question-mark breast, SHORT fitted DARK jacket with FULL LENGTH LONG SLEEVES covering arms to wrists, articulated hands, external RIGHT-knee support when visible. Current Custodian: tall MALE around sixty, long gray ponytail, glasses, short beard and ordinary white work shirt. Modern Mexico, not chivalric or colonial costume. No extra allegorical creatures. \nScene: Wide view of the Amealco reading room with Q and the tall, long-haired male Custodian at the table, papers and a suitcase beside them. Through the windows, pines and sloping fields border a working data-center service yard with a reversing truck where a prospectus promised a garden. The institution's everyday contradictions remain physical, not spectral. No evil-master pose or farewell deathbed; leave space for the separately typeset title.\nWide composition within portrait frame: characters small in lower half; reserve upper 25 percent of canvas as uninterrupted WHITE window sky for separately typeset cover title. Plain service-yard truck seen outside, pines and sloping fields. No title text generated. Keep the table and window the major simple shapes, not an intricate architectural drawing.",
+      "referenced_image_paths": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-19/plate-03.png"
+      ],
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-71801542-3a62-43fb-840f-add48b62874a.png",
+      "decision": "selected for complete revision proof"
+    },
+    {
+      "plate_id": "issue-19-plate-02",
+      "prompt": "Use case: illustration-story. New original Goya Los Caprichos-style etching and aquatint for a Mexican literary serial. Attached drawings are identity and drawing-language references, NOT compositions to repeat. Invent a different scene. Thin nervous contours, angular interpreted faces, expressive hands, compressed shallow space, broad flat darks, sparse selective detail. Not photographic or a finely engraved photograph; no pores, realistic material textures or smooth CGI. Neutral black/gray on CLEAN PURE WHITE PAPER, no cream tint, antique stains, page border or printed caption. Portrait full-bleed image: scene extends to all four image edges; heads and hands clear of crop. Q is the slim robot in reference: narrow segmented oval head, round eyes, concentric ear discs, long articulated neck, SMALL MECHANICAL MOUTH WITH HINGED JAW, question-mark breast, SHORT fitted DARK jacket with FULL LENGTH LONG SLEEVES covering arms to wrists, articulated hands, external RIGHT-knee support when visible. Current Custodian: tall MALE around sixty, long gray ponytail, glasses, short beard and ordinary white work shirt. Modern Mexico, not chivalric or colonial costume. No extra allegorical creatures. \nScene: Present-day Amealco reading-room table: the tall male Custodian finds the teacher's second letter behind the success letter while Q asks whether he has her number. Phone still on table, no call yet on this facing page. Old teacher not physically present, no readable pupil records. Two distinct sheets and old photograph among presentation papers, not a repaired printer.\nThree-quarter side view with two separate letters raised in Custodian's hands, Q leaning slightly toward the second sheet. Phone lies unused on the table. No caller yet. No readable private data, no photograph of recognizable schoolchildren.",
+      "referenced_image_paths": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-19/plate-03.png"
+      ],
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-b3a57cc8-087e-4a14-9c2c-75917f88f93a.png",
+      "decision": "intermediate: targeted correction followed"
+    },
+    {
+      "plate_id": "issue-19-plate-05",
+      "prompt": "Use case: illustration-story. New original Goya Los Caprichos-style etching and aquatint for a Mexican literary serial. Attached drawings are identity and drawing-language references, NOT compositions to repeat. Invent a different scene. Thin nervous contours, angular interpreted faces, expressive hands, compressed shallow space, broad flat darks, sparse selective detail. Not photographic or a finely engraved photograph; no pores, realistic material textures or smooth CGI. Neutral black/gray on CLEAN PURE WHITE PAPER, no cream tint, antique stains, page border or printed caption. Portrait full-bleed image: scene extends to all four image edges; heads and hands clear of crop. Q is the slim robot in reference: narrow segmented oval head, round eyes, concentric ear discs, long articulated neck, SMALL MECHANICAL MOUTH WITH HINGED JAW, question-mark breast, SHORT fitted DARK jacket with FULL LENGTH LONG SLEEVES covering arms to wrists, articulated hands, external RIGHT-knee support when visible. Current Custodian: tall MALE around sixty, long gray ponytail, glasses, short beard and ordinary white work shirt. Modern Mexico, not chivalric or colonial costume. No extra allegorical creatures. \nScene: At sunset after the rain, technicians rehang the banner with stronger cord after the children's football knocked it down. Evaristo leaves carrying the still-closed packet. Church steps and two expedition vans in an unnamed Mexican town, no identifiable claimed real site. Q absent. Do not burn, copy or seize the letters, whose later fate is unknown. Any essential banner sentence must be separately typeset accurately, not generated gibberish.\nThis is the OLD expedition: Q is ABSENT, current elderly Custodian need not appear. Evaristo is the short-haired man from the packet reference, carrying the SAME closed tied packet while walking away. Two workers rehang a fabric banner, seen obliquely from its UNLETTERED REVERSE so there is no visible text to generate. Children and football on church steps in the distance; two ordinary modern vans. No need for intricate backdrop. Not a colonial scene.",
+      "referenced_image_paths": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-19/plate-04.png"
+      ],
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-98b6cf3d-928b-421c-97ae-cb69b5588485.png",
+      "decision": "selected for complete revision proof"
+    },
+    {
+      "plate_id": "issue-19-plate-06",
+      "prompt": "Use case: illustration-story. New original Goya Los Caprichos-style etching and aquatint for a Mexican literary serial. Attached drawings are identity and drawing-language references, NOT compositions to repeat. Invent a different scene. Thin nervous contours, angular interpreted faces, expressive hands, compressed shallow space, broad flat darks, sparse selective detail. Not photographic or a finely engraved photograph; no pores, realistic material textures or smooth CGI. Neutral black/gray on CLEAN PURE WHITE PAPER, no cream tint, antique stains, page border or printed caption. Portrait full-bleed image: scene extends to all four image edges; heads and hands clear of crop. Q is the slim robot in reference: narrow segmented oval head, round eyes, concentric ear discs, long articulated neck, SMALL MECHANICAL MOUTH WITH HINGED JAW, question-mark breast, SHORT fitted DARK jacket with FULL LENGTH LONG SLEEVES covering arms to wrists, articulated hands, external RIGHT-knee support when visible. Current Custodian: tall MALE around sixty, long gray ponytail, glasses, short beard and ordinary white work shirt. Modern Mexico, not chivalric or colonial costume. No extra allegorical creatures. \nScene: Back in present-day Amealco, Q indicates the separate placement of a new qualification beneath the Custodian's account, with a photograph of the original banner beside it. The Custodian moves his annotation; do not alter evidence photograph or insert a qualification into the old banner. Older long gray hair/glasses male Custodian, Q segmented head/mechanical sampling mouth/short dark long sleeves. Caption conveys the distinction, no generated legible prose or historical Q.\nClose oblique view focused on Q's pointing mechanical hand and Custodian's pen placing an annotation BELOW a draft paragraph on another sheet; faces remain partially visible above. A small photograph rests untouched apart from the writing sheet, its contents indistinct; do not have anyone writing ON the photograph. Only suggest marks, no legible prose. Not a new flashback or phone call.\nThe Amealco room is rural, looking onto pines and a PLAIN DATA CENTER building: NO church tower, postcard, tourist poster, town square, palm tree or added wall lettering.",
+      "referenced_image_paths": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-19/plate-03.png"
+      ],
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-526a8bee-4084-41b0-b281-e58b0f809013.png",
+      "decision": "intermediate: targeted correction followed"
+    },
+    {
+      "plate_id": "issue-19-plate-07",
+      "prompt": "Use case: illustration-story. New original Goya Los Caprichos-style etching and aquatint for a Mexican literary serial. Attached drawings are identity and drawing-language references, NOT compositions to repeat. Invent a different scene. Thin nervous contours, angular interpreted faces, expressive hands, compressed shallow space, broad flat darks, sparse selective detail. Not photographic or a finely engraved photograph; no pores, realistic material textures or smooth CGI. Neutral black/gray on CLEAN PURE WHITE PAPER, no cream tint, antique stains, page border or printed caption. Portrait full-bleed image: scene extends to all four image edges; heads and hands clear of crop. Q is the slim robot in reference: narrow segmented oval head, round eyes, concentric ear discs, long articulated neck, SMALL MECHANICAL MOUTH WITH HINGED JAW, question-mark breast, SHORT fitted DARK jacket with FULL LENGTH LONG SLEEVES covering arms to wrists, articulated hands, external RIGHT-knee support when visible. Current Custodian: tall MALE around sixty, long gray ponytail, glasses, short beard and ordinary white work shirt. Modern Mexico, not chivalric or colonial costume. No extra allegorical creatures. \nScene: Q and the present-day Custodian review a crossed-out draft opening together at Amealco. The Custodian's pen has struck through a line but not blacked it out; Q keeps the rejected wording legible in their working copy. Lucía waits with her own systems papers rather than applauding reconciliation. No actual archive exit or younger Custodian; this is coauthors revising an account of the beginning, not assigning Q a secret mission.\nA DIFFERENT WIDER composition: Q and Custodian face one another across the table over a sheet with a THIN SINGLE STRIKE THROUGH one short line, not a black redaction. Lucía waits at the far end attending to her own folder. Lucía is an adult Mexican woman with shoulder-length wavy dark hair and denim jacket over patterned blouse. No smiles of absolution or applauding. No legible text required.\nThe Amealco room is rural, looking onto pines and a PLAIN DATA CENTER building: NO church tower, postcard, tourist poster, town square, palm tree or added wall lettering.",
+      "referenced_image_paths": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-19/plate-03.png"
+      ],
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-0c872680-dab0-4c01-922c-116bc1fed553.png",
+      "decision": "selected for complete revision proof"
+    },
+    {
+      "plate_id": "issue-19-plate-08",
+      "prompt": "Use case: illustration-story. New original Goya Los Caprichos-style etching and aquatint for a Mexican literary serial. Attached drawings are identity and drawing-language references, NOT compositions to repeat. Invent a different scene. Thin nervous contours, angular interpreted faces, expressive hands, compressed shallow space, broad flat darks, sparse selective detail. Not photographic or a finely engraved photograph; no pores, realistic material textures or smooth CGI. Neutral black/gray on CLEAN PURE WHITE PAPER, no cream tint, antique stains, page border or printed caption. Portrait full-bleed image: scene extends to all four image edges; heads and hands clear of crop. Q is the slim robot in reference: narrow segmented oval head, round eyes, concentric ear discs, long articulated neck, SMALL MECHANICAL MOUTH WITH HINGED JAW, question-mark breast, SHORT fitted DARK jacket with FULL LENGTH LONG SLEEVES covering arms to wrists, articulated hands, external RIGHT-knee support when visible. Current Custodian: tall MALE around sixty, long gray ponytail, glasses, short beard and ordinary white work shirt. Modern Mexico, not chivalric or colonial costume. No extra allegorical creatures. \nScene: Q, Lucía and the Custodian call the maintenance coordinator from the reading-room table, using the notebook's named contacts. A reply assigning two departments and the closed notebook beside it convey practical coordination. They are arranging a conditional visit, not already descending into the service room or unlocking every archive. No exposed passwords, magical red-book glow, sealed module or original Tijuana ledger.\nThree people seen from the table's far end, with a speakerphone lying between them; Custodian points to a contact in an open notebook, Q and Lucía listen. Lucía adult Mexican woman shoulder-length wavy dark hair, denim jacket over patterned blouse. NO fourth person in the room. No visible passwords or magically glowing book. Contemporary Amealco window pines. This is arranging access, not doing the maintenance.\nThe Amealco room is rural, looking onto pines and a PLAIN DATA CENTER building: NO church tower, postcard, tourist poster, town square, palm tree or added wall lettering.",
+      "referenced_image_paths": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-19/plate-03.png"
+      ],
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-4afa1161-9053-49f5-8799-c0d44a094d3b.png",
+      "decision": "intermediate: targeted correction followed"
+    },
+    {
+      "plate_id": "issue-19-plate-09",
+      "prompt": "Use case: illustration-story. New original Goya Los Caprichos-style etching and aquatint for a Mexican literary serial. Attached drawings are identity and drawing-language references, NOT compositions to repeat. Invent a different scene. Thin nervous contours, angular interpreted faces, expressive hands, compressed shallow space, broad flat darks, sparse selective detail. Not photographic or a finely engraved photograph; no pores, realistic material textures or smooth CGI. Neutral black/gray on CLEAN PURE WHITE PAPER, no cream tint, antique stains, page border or printed caption. Portrait full-bleed image: scene extends to all four image edges; heads and hands clear of crop. Q is the slim robot in reference: narrow segmented oval head, round eyes, concentric ear discs, long articulated neck, SMALL MECHANICAL MOUTH WITH HINGED JAW, question-mark breast, SHORT fitted DARK jacket with FULL LENGTH LONG SLEEVES covering arms to wrists, articulated hands, external RIGHT-knee support when visible. Current Custodian: tall MALE around sixty, long gray ponytail, glasses, short beard and ordinary white work shirt. Modern Mexico, not chivalric or colonial costume. No extra allegorical creatures. \nScene: At the Mexico City appointment entrance, Q holds the Custodian's coat while he separates his return ticket from the appointment slip. His female lawyer waits. Custodian is the tall older man with long gray hair tied back, glasses and white work shirt, anxious but neither collapsed nor arrested. Q remains in the permitted area; evidence stays under its established arrangements. Do not depict a courtroom verdict or Q carrying restricted exhibits.\nVertical full-figure scene at a plain modern Mexico City office entrance. Q holds Custodian's ordinary coat over ONE forearm while Custodian sorts two small slips; female lawyer with short dark hair in a dark professional jacket waits a little apart with a folder. Keep hands and coat clearly readable and anatomically possible. No courtroom, arrest or deathbed. The coat belongs to Custodian; Q keeps his own SHORT dark long-sleeved jacket and right-knee brace.",
+      "referenced_image_paths": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-19/plate-03.png"
+      ],
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-d4d3e908-6e20-46e5-afb5-9f8c4fd16893.png",
+      "decision": "intermediate: targeted correction followed"
+    },
+    {
+      "plate_id": "issue-19-plate-02",
+      "prompt": "Correct only the setting and incidental document image in this drawing, retaining both figures, exact two-letter action, Q's long sleeves/mechanical mouth, unused phone, and loose etched style. Replace the church tower outside the window with pine trees and a plain low former data-center service building. Remove the tourism poster and its lettering from the wall, leaving plain white wall with minimal shading. Make the small photograph on the table indistinct so it depicts no identifiable landmark or people. This is the wooded rural institute outside Amealco, not the town center. No other changes, no frame, no sepia.",
+      "referenced_image_paths": [
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-b3a57cc8-087e-4a14-9c2c-75917f88f93a.png"
+      ],
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-3b070a47-f459-4ed1-8f9f-8d2239bcf143.png",
+      "decision": "selected for complete revision proof"
+    },
+    {
+      "plate_id": "issue-19-plate-06",
+      "prompt": "Precise object/text correction to this drawn illustration. Change only the small photograph lying untouched beside the draft: replace its detailed vertical decorated flag image with an indistinct distant scene of a plain HORIZONTAL fabric banner strung between supports, no decipherable writing or symbols. Keep it clearly a small separate photograph. Do not change Q pointing BELOW the paragraph, Custodian's pen, papers, faces, full-length sleeves or drawing style. Neutral black/gray ink, clean white reserves, no border, no new content.",
+      "referenced_image_paths": [
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-526a8bee-4084-41b0-b281-e58b0f809013.png"
+      ],
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-bf31039d-36c6-4113-92ab-1048df47f4d0.png",
+      "decision": "selected for complete revision proof"
+    },
+    {
+      "plate_id": "issue-19-plate-08",
+      "prompt": "Precise object/text correction to this drawn illustration. Change only the invented readable writing on the contact notebook and loose paper into indistinct handwritten marks, with NO decipherable department names, status sentences, bullet instructions or phone numbers. Preserve the open contact notebook, pointing finger, speakerphone, three characters and their poses, long sleeves, scene and etched style. Keep this an ordinary conversation, no invented labels. Neutral black/gray ink, clean white reserves, no border, no new content.",
+      "referenced_image_paths": [
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-4afa1161-9053-49f5-8799-c0d44a094d3b.png"
+      ],
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-188e1a66-39cf-4842-bcfe-20a060476dc9.png",
+      "decision": "selected for complete revision proof"
+    },
+    {
+      "plate_id": "issue-19-plate-09",
+      "prompt": "Precise object/text correction to this drawn illustration. Remove the added government name and all generated wall/sign lettering. Leave plain institutional wall and a blank entrance sign. Do not change the three main characters, Custodian sorting two slips, Q carrying the coat over his forearm, long-sleeved short jacket, right-knee support, female lawyer, modern Mexico City location or etching style. Neutral black/gray ink, clean white reserves, no border, no new content.",
+      "referenced_image_paths": [
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-d4d3e908-6e20-46e5-afb5-9f8c4fd16893.png"
+      ],
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-a649236e-4fc3-4732-9950-410ab5a9b7e9.png",
+      "decision": "intermediate: wall labels removed but chest symbol lost"
+    },
+    {
+      "plate_id": "issue-19-plate-09",
+      "prompt": "Restore ONLY Q's identifying dark question-mark symbol '?' on the center of his blank pale metal chest plate. It was erased accidentally. The symbol is part of the robot design, not wall signage. Preserve everything else exactly, including completely BLANK wall and entrance signs, characters, coat, slips, knee brace, long-sleeved short jacket, white reserves and etched drawing style. Do not add any other text or marks.",
+      "referenced_image_paths": [
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-a649236e-4fc3-4732-9950-410ab5a9b7e9.png"
+      ],
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-dcd623f2-c356-4c32-a30d-41d1d094d946.png",
+      "decision": "selected for complete revision proof"
     }
   ],
   "reference_verification": [
@@ -655,9 +819,135 @@
         1075,
         1463
       ]
+    },
+    {
+      "path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-71801542-3a62-43fb-840f-add48b62874a.png",
+      "sha256": "b1f444c4f77dd6bb40fa3e8b8b82a5ae76e5a30343a5fe937b7964b71ecba91a",
+      "bytes": 2916723,
+      "pixels": [
+        1075,
+        1463
+      ]
+    },
+    {
+      "path": "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-19/plate-03.png",
+      "sha256": "75080829178f09c34c36284baddf541f112159ca33e38b39486e8f3499490450",
+      "bytes": 3463517,
+      "pixels": [
+        1075,
+        1463
+      ]
+    },
+    {
+      "path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-b3a57cc8-087e-4a14-9c2c-75917f88f93a.png",
+      "sha256": "70ff4ea604ef9215c25476f6911ff648d8379a389829340fa5d599e5b75c301d",
+      "bytes": 3506052,
+      "pixels": [
+        1075,
+        1463
+      ]
+    },
+    {
+      "path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-98b6cf3d-928b-421c-97ae-cb69b5588485.png",
+      "sha256": "0344340ab51b14a6078c1ca83323caf280064d893d18dd92216c1025a13daa37",
+      "bytes": 3720011,
+      "pixels": [
+        1076,
+        1462
+      ]
+    },
+    {
+      "path": "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-19/plate-04.png",
+      "sha256": "2b094b0a694a43c419d590e57f902bc6bbd4df7a0ac5124d89838fade6df029a",
+      "bytes": 3545283,
+      "pixels": [
+        1075,
+        1463
+      ]
+    },
+    {
+      "path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-526a8bee-4084-41b0-b281-e58b0f809013.png",
+      "sha256": "837845a3b7b3bd8a03fa93f387bb2b982defd3bfd4b3f28324a101701bca8b08",
+      "bytes": 3486751,
+      "pixels": [
+        1075,
+        1463
+      ]
+    },
+    {
+      "path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-0c872680-dab0-4c01-922c-116bc1fed553.png",
+      "sha256": "f870d21e528394e67b9afbdce3092085f88130bfa9c8d4b77c3229d46ce7ef25",
+      "bytes": 3516827,
+      "pixels": [
+        1075,
+        1463
+      ]
+    },
+    {
+      "path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-4afa1161-9053-49f5-8799-c0d44a094d3b.png",
+      "sha256": "91930284ed45f76dc87e4a3939f094449ffa1c2134fd16d5cac3d9aba3d4e5bd",
+      "bytes": 3408421,
+      "pixels": [
+        1075,
+        1463
+      ]
+    },
+    {
+      "path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-d4d3e908-6e20-46e5-afb5-9f8c4fd16893.png",
+      "sha256": "d3837cea44d2cc686ea5f16cab4a6442af8a0fbb3e79893076a92a5aa416c945",
+      "bytes": 3455260,
+      "pixels": [
+        1075,
+        1463
+      ]
+    },
+    {
+      "path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-3b070a47-f459-4ed1-8f9f-8d2239bcf143.png",
+      "sha256": "bccb484039516d868170fbaecb82762a4d84eebc0c8fbdf594ec8e115f81186d",
+      "bytes": 3400823,
+      "pixels": [
+        1075,
+        1463
+      ]
+    },
+    {
+      "path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-bf31039d-36c6-4113-92ab-1048df47f4d0.png",
+      "sha256": "b7f74e79879266c7491d5cf7b7bf4280c4fb7853eca3115030fc1c68394d21ec",
+      "bytes": 3149336,
+      "pixels": [
+        1075,
+        1463
+      ]
+    },
+    {
+      "path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-188e1a66-39cf-4842-bcfe-20a060476dc9.png",
+      "sha256": "6e06aa6dadb066f7df459fa15bf3549a5a079e7d0e78be1fe7023b530a36e132",
+      "bytes": 3113567,
+      "pixels": [
+        1075,
+        1463
+      ]
+    },
+    {
+      "path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-a649236e-4fc3-4732-9950-410ab5a9b7e9.png",
+      "sha256": "f39078de1f473e04093bbfef9ff9c7c26e9a9a2eccc9990a3503d3c62148bd32",
+      "bytes": 3184976,
+      "pixels": [
+        1075,
+        1463
+      ]
+    },
+    {
+      "path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-dcd623f2-c356-4c32-a30d-41d1d094d946.png",
+      "sha256": "5e89b73c1d07a5f54f061a169bf08841bef6f06603818af1804eced68a5b818f",
+      "bytes": 2877511,
+      "pixels": [
+        1075,
+        1463
+      ]
     }
   ],
-  "art_review": "Photographic continuity references perpetuated naturalistic modeling. Selected fresh drawings instead use the actual Goya print plus verbal character specification, followed by sleeve, border and substrate corrections. These are scene-proof selections, not final artistic certification. Compare all three at reading size before extending the set.",
+  "art_review": "Ten scene-specific drawings use the fresh Goya-style studies for continuity. Historical Evaristo scenes exclude Q. Targeted edits remove false location cues and unrequested labels, correct the banner photograph and restore Q's chest symbol after an edit. Background detail and some faces remain more naturalistic than Goya's most economical prints; proof approval is not final artistic certification.",
   "scene_proof": {
     "path": "output/pdf/ingenious-issue-19-goya-scene-proofs-a3.pdf",
     "sha256": "35c810932774b2e51a1fd55e196f9507c51df2e9c6e8df69f8994a8f90a7ce11",
@@ -695,7 +985,69 @@
         "all_three_rendered_spreads": true,
         "print_test": false
       }
+    },
+    "historical_scope": "Preserved three-scene checkpoint from f654ae90, preceding complete illustrated issue."
+  },
+  "revision_art_review": "novel/development/ISSUE_19_PRODUCTION.md",
+  "proof_outputs": {
+    "reading": {
+      "path": "output/pdf/ingenious-issue-19-revised-en-bw.pdf",
+      "sha256": "a2cfc05e32d479b1c97541bfda456b9acae8411ad6d1a35bda473bfe055d1024"
+    },
+    "a3": {
+      "path": "output/pdf/ingenious-issue-19-revised-en-bw-a3.pdf",
+      "sha256": "32ca5dcd8ce236065daa356f35f589f855ff4d0bd74a61b33540c09ad8c9ad4e"
     }
   },
-  "revision_art_review": "novel/development/ISSUE_19_GOYA_SCENE_REVIEW.md"
+  "production_verification": {
+    "result": "pass",
+    "baseline_commit": "f654ae90",
+    "words_in_exact_source_order": 2610,
+    "reference_hashes_checked": 33,
+    "other_21_manifests_byte_unchanged": true,
+    "reading_pages": 20,
+    "a3_sides": 10,
+    "duplex_sheets": 5,
+    "unique_native_plates": 10,
+    "actual_a3_slots_checked": 20,
+    "all_chapters_unchanged": 22,
+    "all_facing_mappings_unchanged": 22,
+    "previous_issue_pdfs_unchanged": 36,
+    "effective_dpi": [
+      142.7,
+      142.7,
+      142.7,
+      142.7,
+      142.7,
+      142.6,
+      142.7,
+      142.7,
+      142.7,
+      142.7
+    ],
+    "embedded_font_subsets": {
+      "reading": 5,
+      "a3": 6
+    },
+    "text_background": "unpainted",
+    "lossless_DeviceGray_images": 10,
+    "print_job_sent": false,
+    "a_plus_certified": false,
+    "pdf_hashes": {
+      "reading": "a2cfc05e32d479b1c97541bfda456b9acae8411ad6d1a35bda473bfe055d1024",
+      "a3": "32ca5dcd8ce236065daa356f35f589f855ff4d0bd74a61b33540c09ad8c9ad4e"
+    },
+    "visual_review": {
+      "native_plates": 10,
+      "a3_sides": 10,
+      "all_twenty_page_contents_on_a3": true,
+      "reading_pages_additionally_inspected": [
+        1,
+        5
+      ],
+      "crop_correction_reinspected": true,
+      "unchanged_other_nine_a3_render_hashes": true
+    },
+    "previous_scene_proof_and_three_selected_pngs_unchanged": true
+  }
 }

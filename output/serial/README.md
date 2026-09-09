@@ -13,21 +13,25 @@ under review. The same-text typography comparison supports retaining left-aligne
 body columns: the tested justification introduced distracting word spacing.
 No issue pagination changed for this comparison.
 
-Issue Nineteen has a [three-spread Goya scene proof](../pdf/ingenious-issue-19-goya-scene-proofs-a3.pdf)
-for source pages 2, 6 and 8, using three selected new drawings. All three spreads
-and exact facing text were checked, with unpainted text backgrounds and native
-lossless grayscale art. This is an A3 art-review file, not a complete issue or
-folding booklet. Seven plates remain unselected; no print job was sent. See the
-[art review](../../novel/development/ISSUE_19_GOYA_SCENE_REVIEW.md).
+Issue Nineteen now has a complete [twenty-page reading proof](../pdf/ingenious-issue-19-revised-en-bw.pdf)
+and [ten-side A3 folding proof](../pdf/ingenious-issue-19-revised-en-bw-a3.pdf).
+Ten unique plates include the cover; all 2,610 words flow continuously at Georgia
+13.5/19.125, left-aligned. Every page's content was visually inspected across all
+ten A3 sides, and all twenty actual imposed text/image positions passed checks.
+The second-letter plate uses a right-aligned crop to retain both hands. Text
+backgrounds are unpainted; plates remain native lossless grayscale.
 
-Chapter Nineteen has a revised 2,610-word source and ten-plate exact-facing
-plan: twenty comic pages at Georgia 13.5/19.125, ten A3 sides for five sheets.
-All source words, nine text pages and twenty imposed positions were checked in
-an internal layout. Its illustration set is incomplete: no final Issue Nineteen
-PDF is being released at this checkpoint. The school call, unchanged banner and
-disputed draft opening now have separate scene briefs. See the
-[revision and simulation review](../../novel/development/CHAPTER_19_FRESH_CONTEXT_REVIEW.md)
-and [current plan](../illustrations/revised/issue-19/manifest.json).
+Five nested duplex sheets: landscape, actual size, short-edge flip, all ten sides,
+no second booklet layout. No print job was sent; Epson output-stack behavior is
+untested. Native art is about 143 dpi, with remaining naturalistic detail requiring
+final style review. Not an A+ press master. See the
+[production review](../../novel/development/ISSUE_19_PRODUCTION.md),
+[full prompts and verification](../illustrations/revised/issue-19/manifest.json)
+and [voice review](../../novel/development/CHAPTER_19_FRESH_CONTEXT_REVIEW.md).
+
+The earlier [three-spread Goya scene proof](../pdf/ingenious-issue-19-goya-scene-proofs-a3.pdf)
+and its three selected drawings are preserved as a development checkpoint,
+not the complete folding file.
 
 Issue Eighteen now has a complete [24-page reading proof](../pdf/ingenious-issue-18-revised-en-bw.pdf)
 and [twelve-side A3 folding proof](../pdf/ingenious-issue-18-revised-en-bw-a3.pdf).

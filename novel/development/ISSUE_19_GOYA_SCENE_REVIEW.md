@@ -1,5 +1,10 @@
 # Issue Nineteen: three Goya scene proofs
 
+Historical checkpoint: the three selected drawings and this study PDF are
+preserved. The subsequent [complete production pass](ISSUE_19_PRODUCTION.md)
+adds the seven remaining plates and verified reading/folding revision proofs.
+The partial-production status below records this earlier stage.
+
 The three selected drawings are a stronger art-direction reference, not a complete
 issue. The reunion faces source page 2; the telephone call faces page 6; Evaristo's
 closed packet faces page 8. Seven plates, including the cover, still need selected

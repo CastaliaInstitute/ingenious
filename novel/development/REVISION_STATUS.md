@@ -1,6 +1,25 @@
 # Motivation revision: working record
 
-## Latest art checkpoint: Issue Nineteen, selected scenes
+## Latest production checkpoint: Issue Nineteen
+
+Issue Nineteen now has ten unique plates, a twenty-page reading proof and ten
+A3 sides for five nested sheets. All 2,610 words flow continuously at Georgia
+13.5/19.125. Seven new scenes and five targeted edits complete the earlier three
+selections. The native images and every page's content across all ten A3 sides
+were visually inspected; the reading cover and corrected second-letter crop
+were also inspected separately. Exact source order, all twenty imposed positions,
+lossless native grayscale, embedded fonts and 33 input/output image hashes pass.
+See `ISSUE_19_PRODUCTION.md` and the complete prompt manifest.
+
+All 22 chapter texts and facing bindings, the outline, other 21 manifests and
+36 earlier issue PDFs remain unchanged from `f654ae90`; the previous scene proof
+and its three selected PNGs are preserved. Native art is about 143 dpi, and some
+backgrounds/faces still need a stricter final Goya pass. Revision proofs only;
+no A+ certification, new faculty review or printing. Issues 20-22 production,
+earlier art correction, whole-book literary work and Spanish synchronization
+remain. The full goal is active.
+
+## Earlier art checkpoint: Issue Nineteen, selected scenes
 
 Three scene drawings and a three-spread A3 art proof are saved: reunion (source
 page 2), school call (6) and Evaristo's closed packet (8). Fresh Goya-reference
