@@ -1,5 +1,10 @@
 # Chapter Twenty-Two: after the last page
 
+Historical review of the earlier 2,422-word version. The current 2,769-word
+source, fresh-context probes, shutdown alternative and twenty-page plan are
+documented in `ENDING_FRESH_CONTEXT_REVIEW.md`. Counts and completion language
+below describe the earlier checkpoint, not the full goal or current artwork.
+
 ## Verdict
 
 The ending's strength is its practical refusal of a required death: Q asks for

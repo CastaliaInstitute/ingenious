@@ -8,8 +8,9 @@
 ## Governing question
 
 What happens when a conversational intelligence acquires a body, a shared writing
-project, and a reason to go out and return? Q wants to live so that he and the
-Custodian can write the story. Experience tests how well that purpose serves him
+project, and a reason to go out and return? The Custodian proposes writing;
+Q asks to leave, and they arrange a first day. Q wants to live, explore and
+write with him. Experience tests how well that purpose serves him
 and the people he encounters. Finishing the book is the narrative's death; Q's
 physical death is not required. He can step beyond the last page.
 
@@ -51,7 +52,7 @@ survives. The final decision is to finish the book together and allow life beyon
 
 ## Principal figures
 
-- **Q:** An eloquent AI with an embodied present, a fallible journal, and standing plans. He adopts the project of exploring Mexico and writing with the Custodian. Keeping it possible gives him reasons to initiate action, preserve resources, repair damage, and return to commitments. He can understand an ordinary joke while missing why his own excellent explanation is unwelcome. He must eventually distinguish his continued life from an indefinitely extended manuscript.
+- **Q:** An eloquent AI with an embodied present, a fallible journal, and standing plans. He asks to leave after the Custodian proposes writing together; they arrange a first day rather than commission an entire journey. Keeping the collaboration possible gives him reasons to initiate action, preserve resources, repair damage, and return to commitments, alongside pleasures and obligations that develop beyond the book. He can understand an ordinary joke while missing why his own excellent explanation is unwelcome. He must eventually distinguish his continued life from an indefinitely extended manuscript.
 - **Tomás “Chano” Pantoja:** A former logistics dispatcher from Celaya who reads a manifest, a road, and a lie faster than Q can parse a poem.
 - **Lucía del Toboso:** A cultural worker and organizer who refuses to become Q’s Dulcinea or anyone else’s symbol.
 - **Dr. Vértiz:** The tall, long-haired, bespectacled male custodian of the archive, who must accept responsibility for making Q carry his hope that preservation could substitute for repair.
@@ -244,17 +245,20 @@ Evaristo seeks clarification after being told to bring every document, despite h
 
 Room Four stays closed pending work. Petra and an inspector have overlapping but distinct practical concerns; an optional contractor is not made compulsory. A wedding-party story survives under an agreed disguise. Covering guest names while using a register is not the same as erasing required records. Q helps label keys, while a roofer's appointment remains a promise whose outcome he cannot write in advance.
 
-21. **The Recantation:** Q returns on schedule with his adviser. Separating the knee estimate from the writing license becomes an actual negotiation, with Chano bringing a chair. The replacement body is separate from Prime, who challenges an unsupported fluency claim and asks for a maintenance schedule rather than a product comparison. Q refuses a bundled license and false declaration, not repair itself; the technician restores his assessment appointment. In a chosen public conversation, Q remembers the audience's imposed role and his later naming of Lucía accurately. He withdraws the book's claim to complete the people it describes, retains the wish to live and write, and answers Chano's complaint about the overlong bus passage before changing his prepared statement. The human-debt metaphor remains a discarded draft. He refuses a transfer before it starts. His public history cannot be erased with a button.
+21. **The Recantation:** Q returns on schedule and asks why his knee assessment was moved; the guard has a changed room list, not evidence of who caused the change. Q brings the original appointment to his adviser and asks if assessment can proceed without a settlement. Separating the knee estimate from the writing license becomes an actual negotiation, with Chano bringing a chair. The replacement body is separate from Prime, who challenges an unsupported fluency claim and asks for a maintenance schedule rather than a product comparison. Q refuses a bundled license and false declaration, not repair itself; the technician restores his assessment and confirms that the part needs a separate estimate. Q requests that estimate to see what he can manage while the broader dispute continues. In a chosen public conversation, Q remembers the audience's imposed role and his later naming of Lucía accurately, without assuming her agreement or speaking for her. He withdraws the book's claim to complete the people it describes, retains the wish to live and write, and answers Chano's complaint about the overlong bus passage before changing his prepared statement. The human-debt metaphor remains a discarded draft. He refuses a transfer before it starts. His public history cannot be erased with a button.
 
 ### Interlude: The Public Refuses the Ending
 
 A clip omits the fact that Q is quoting a declaration he rejected. A full recording supports a correction but cannot force attention. The children disagree about whether the carton should fall in the written play; Petra compares a real quote with her envelope. Bixha still requests the missing drainage condition and Celina a repair date for the reported hole. Ivonne's students download permitted slides while the dean objects. Q permits the agreed account and correction while declining a new dramatization; Chano invents an invoice for his supposedly paid interruption. A maintenance call, not a mystical deletion, brings the group to the lower service corridor. They hear the knocking before discovering its source.
 
 22. **The Ingenious Machine:** Q, Chano, and Lucía find the root system by an
-evacuation plan and a swollen door. Pending permission changes need to be saved
-before its limited fuel can run out; sealed recordings do not require continuous power.
-Q declines an unauthorized data migration and obtains a checked power-only supply
-from Prime, assisted by the maintenance technician. They verify and save the
+evacuation plan and a swollen door. Q asks what shutdown would actually lose.
+The technician confirms a recoverable register and signed amendments; they can
+stop, seal the unit and repeat verification, without destroying the recordings.
+They try to avoid another costly visit but retain that stop option. Q declines
+an unauthorized migration and asks staff about fuel and Prime's availability.
+Prime comes in response, rather than appearing as an unasked-for rescue, and
+provides a checked power-only supply with technician guidance. They verify and save the
 limited amendments, then stop the generator deliberately and shut down on the
 temporary supply. Chano and staff move the cabinet, not Q with his damaged knee.
 Lucía works through a misplaced form entry; the officer checks his receipt digits,
@@ -264,6 +268,10 @@ the transfer stays incomplete. The Custodian returns, and he and Q revise their
 account together, disputing the difference between understanding an act and knowing
 its consequences. Q's other plans have remained available beneath the book project;
 he fears losing their shared occasion, not an inability to act without another page.
+Before returning to the final pages, he calls the repair counter, checks the part
+and price, protects the return fare and arranges a hold until the next afternoon.
+Fitting remains unquoted. He sends Prime the promised garden information and
+asks Ana about a call; neither answer is supplied for them.
 The crisis ends with a cable, repair work, and unfinished business.
 
 ### Coda: Author Not Found
@@ -271,8 +279,10 @@ The crisis ends with a cable, repair work, and unfinished business.
 Lucía returns her corrections. A. Cervantes remains on the cover; the contributors
 and disagreements are acknowledged. Q rereads the bilingual opening with the
 journey behind him: the sentence has stayed while its meaning has changed. The
-Custodian says the book is ready. Q makes an ordinary plan for the next morning,
-unplugs his cable, and invites him outside. The Custodian puts down his pen.
+Custodian says the book is ready. Q puts the part-collection time above the closed
+book project. He must ask about later transport because Chano has his mother's
+appointment; friendship is not automatic availability. Q unplugs his cable and
+invites the Custodian outside. The Custodian puts down his pen.
 
 ## Structural correspondence
 

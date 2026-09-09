@@ -1,18 +1,18 @@
 {
   "issue": 21,
-  "revision": "2026-09-08-begin-with-the-part",
+  "revision": "2026-09-09-an-ending-with-alternatives",
   "source": "novel/THE_INGENIOUS_MACHINE.md",
-  "chapter_sha256": "ac78ddd41d676fb222811076886794c993a1be4f4917ff57dbcbd9a7f0a913d5",
-  "page_count": 16,
-  "text_font": "Georgia 12.6/17.85 pt",
-  "plate_count_including_cover": 8,
+  "chapter_sha256": "9fb3991236577a5c7d678c001b3f47b8caf3d8741bed42fdbc6ca483af0c3ec9",
+  "page_count": 20,
+  "text_font": "Georgia 14/19.8333 pt",
+  "plate_count_including_cover": 10,
   "status": "planned; no Issue 21 images generated or approved",
-  "character_reference": "output/illustrations/revised/issue-01/cover.png",
+  "character_reference": "output/illustrations/revised/issue-19/plate-01.png",
   "chano_reference": "output/illustrations/revised/issue-03/plate-06.png",
   "lucia_reference": "output/illustrations/revised/issue-03/plate-04.png",
   "character_design": "Q follows the approved segmented narrow head, round ear mechanisms, question-mark breastplate and short fitted dark jacket with long sleeves, with supported knee. Chano and Lucía follow approved reference images. Prime retains Q-family geometry with cleaner lighter casing and undamaged shoulder; no approved Prime asset yet. The offered replacement body is not Prime. The male Custodian, tall with tied-back long gray hair, glasses and white work shirt, remains absent from this chapter. Q's lower face includes a small mechanical sampling mouth; do not simplify it into a blank mask. Use the corrected Goya pilot for Q-family identity, not photographic surface detail.",
-  "art_direction": "Neutral black-and-white Goya-inspired etching and aquatint with economical drawn contours and broad tonal masses, not sepia or cream-colored ink. Full bleed to trim and separately typeset caption margin. Seven unique scenes tied to their opposite narrative pages and a distinct cover. The fictional Castalia archive sits outside Amealco in wooded highlands, not a desert castle. No forced knighthood, conversion, martyrdom or memory erasure. Governing reference: novel/development/GOYA_ART_DIRECTION.md. Earlier plates guide identity only; do not imitate their photographic rendering.",
-  "approval_scope": "Exact source-bound plan: sixteen comic pages, eight planned plates including cover, eight A3 landscape sides / four short-edge duplex sheets. Internal layout only; no finished illustrated PDF or printing. Prime and new recurring characters require visual consistency review when generated.",
+  "art_direction": "Neutral black-and-white Goya-inspired etching and aquatint with economical drawn contours and broad tonal masses, not sepia or cream-colored ink. Full bleed to trim and separately typeset caption margin. Nine unique scenes tied to their opposite narrative pages and a distinct cover. The fictional Castalia archive sits outside Amealco in wooded highlands, not a desert castle. No forced knighthood, conversion, martyrdom or memory erasure. Governing reference: novel/development/GOYA_ART_DIRECTION.md. Earlier plates guide identity only; do not imitate their photographic rendering.",
+  "approval_scope": "Source-bound plan only: twenty comic pages, ten planned plates including cover, ten A3 landscape sides / five short-edge duplex sheets. Continuous left-aligned Georgia 14/19.8333 pt text. No finished Issue 21 images or illustrated PDF, no printing. New Prime design and recurring characters require consistency review.",
   "plates": [
     {
       "plate_id": "issue-21-cover",
@@ -26,7 +26,7 @@
       "plate_id": "issue-21-plate-01",
       "page": 3,
       "facing_text_page": 2,
-      "facing_text": "Chapter Twenty-One: The\nRecantation\nCastalia had cleaned the entrance\nfor Q's return. Beneath the new\nsign, the old letters showed\nthrough a coat of paint.\n“They should have sanded it,”\nChano said.\nQ looked at the two names\noccupying the same wall. “I had a\nmore elaborate explanation.”\n“Keep it. They should still have\nsanded it.”\nTheir names were on the visitor\nlist. The guard checked them and\ncalled the workshop when Q asked\nabout the knee appointment. The\nappointment had been moved until\nafter the settlement meeting. Q\nasked for that decision in writing.\nHis adviser was already waiting\ninside.\nThe public corridor contained a\nnew display about his travels. A\nscreen asked what he had learned\nin the forest. Three answers\nconcerned innovation, dialogue,\nand respect for nature. The fourth\nwas all of the above.\nQ selected the feedback option and\nwrote that he had also learned to\ncheck a hose coupling before\npromising its delivery. The screen\nthanked him for helping improve\nthe experience. It did not change\nthe question.\n“Do you want to stay until it does?”\nLucía asked.\n“No. That's a very good way to keep\nme here.”\nPrime met them outside the\nconference room. He had received\nthe proposed terms that morning\nand had asked to attend the\ntechnical discussion, not to\nnegotiate on behalf of Q's\ncompanions.\n“How was the garden?” he asked.\nQ showed him the photograph with\nChano walking through it.\n“Is that the intended\ncomposition?”\n“It's the one I show people first.”\nPrime looked at it for a moment\nand asked for the visitor\ninformation. He wanted to know\nwhich paths his own body could\nmanage. Q promised to send what\nthey had checked, with a warning\nthat conditions would need\nconfirming again.\nIn the adjoining workshop stood\nthe offered replacement body. It\nresembled Q before the journey\nhad made each joint an individual\nexpense. The technician explained\nwhich components could be\ntransferred, which records could be\n",
+      "facing_text": "Chapter Twenty-One:\nThe Recantation\nCastalia had cleaned the\nentrance for Q's return.\nBeneath the new sign, the old\nletters showed through a coat of\npaint.\n“They should have sanded it,”\nChano said.\nQ looked at the two names\noccupying the same wall. “I had\na more elaborate explanation.”\n“Keep it. They should still have\nsanded it.”\nTheir names were on the visitor\nlist. The guard checked them\nand called the workshop when\nQ asked about the knee\nappointment. The appointment\nhad been moved until after the\nsettlement meeting.\n“Did they say why?” Q asked.\n“It came with the revised room\nlist.”\nChano looked toward the\nchairs. “In, or wait here?”\n“In. Slowly. I don't want a new\ninjury to improve my position.”\nHis adviser was waiting inside.\nQ showed her the original\nappointment and asked\nwhether the assessment could\nproceed even if they agreed to\nnothing else. She took a copy to\nthe technician. The guard had\ngiven them a changed time, not\nan explanation of who had\nchanged it.\nThe public corridor contained a\nnew display about his travels. A\nscreen asked what he had\nlearned in the forest. Three\nanswers concerned innovation,\ndialogue, and respect for\nnature. The fourth was all of the\nabove.\nQ selected the feedback option\nand wrote that he had also\nlearned to check a hose\ncoupling before promising its\ndelivery. The screen thanked\nhim for helping improve the\nexperience. It did not change\nthe question.\n“Do you want to stay until it\ndoes?” Lucía asked.\n“No. That's a very good way to\nkeep me here.”\nPrime met them outside the\nconference room. He had\nreceived the proposed terms\n",
       "source_block_ids": [
         0,
         1,
@@ -43,21 +43,21 @@
         12,
         13,
         14,
-        15,
-        16
+        15
       ],
       "asset": "output/illustrations/revised/issue-21/plate-01.png",
       "status": "planned",
-      "caption": "The Other Picture",
-      "scene_brief": "At Castalia's conference-room threshold Q shows Prime the Las Pozas photograph on a handheld screen. Chano crossing the garden photo is only a small image within this scene, not physically in a garden now. Lucía and actual Chano nearby. Prime studies it with interest, not rivalry. Fictional Amealco archive interior, pine-and-oak light through windows; keep the offered replacement body separate from living Prime.",
-      "scene_anchor": "Q showed him the photograph with Chano walking through it."
+      "caption": "The Question That Stayed",
+      "scene_brief": "Public corridor at Castalia, Amealco. Q leaves feedback at a small visitor screen while Lucía waits beside him. The screen's canned quiz remains unchanged; render its interface as unlettered blocks, not invented readable questions. Q's supported knee and restrained expression, no violent smashing, captive audience or Custodian. Distinct from the exterior arrival cover.",
+      "scene_anchor": "The screen thanked him for helping improve the experience."
     },
     {
       "plate_id": "issue-21-plate-02",
       "page": 5,
       "facing_text_page": 4,
-      "facing_text": "copied, and what would require\ntesting. He did not promise a\nscientifically verified continuity of\nexperience. The sales summary\ndid.\nQ asked how the phrase\nPERFECT CONTINUITY had\nbeen tested.\n“It hasn't,” the technician said.\n“That isn't my phrase.”\nEsteban Luján said it described the\nintention of the package.\n“Then the intention needs a\ndifferent heading,” Prime said.\nThe adviser laid the repair estimate\nbeside the replacement proposal\nand asked Esteban which one\nrequired a writing contract.\n“The package was designed as a\nwhole.”\n“My knee wasn't,” Q said. “Can we\nbegin with the part?”\nThe technician found its number.\nEsteban turned to the revenue\nschedule. Chano pulled up a chair\nfor Q while they found the page on\nwhich those two things had been\nmade to depend on one another.\nQ's adviser asked why payment for\nthe knee part depended on a\npermanent license to use his\njournal. Esteban said the proposal\nallocated costs across future\nrevenues. The adviser said she\nunderstood the calculation and\ndisputed the condition.\nChano's employment record and\nLucía's archive funding appeared\nin an annex as possible partnership\nbenefits. Neither had authorized Q\nto settle those matters. They asked\nfor their proposals to be sent to\nthem separately, without being\nlisted as consideration for his\nsignature.\nThe technical report described\nreduced retrieval capacity after the\nindex removal. A summary turned\nthis into a claim of reduced\nlinguistic fluency. Prime asked for\nthe underlying measure. The\nsupplied comparison tested\nanswers requiring sources Q could\nno longer consult.\n“That measures a difference in\naccess,” he said. “It doesn't\nestablish the percentage printed\nhere.”\nQ was grateful, and annoyed that\nthe correction sounded calmer in\nPrime's voice than it would have in\nhis own.\nEsteban agreed to remove the\npercentage pending review. He\nwould not remove the proposed\naccount of unauthorized journeys.\nQ's adviser set the original day-trip\nauthorization and the later travel\napprovals beside that paragraph.\n",
+      "facing_text": "that morning and had asked to\nattend the technical discussion,\nnot to negotiate on behalf of Q's\ncompanions.\n“How was the garden?” he\nasked.\nQ showed him the photograph\nwith Chano walking through it.\n“Is that the intended\ncomposition?”\n“It's the one I show people\nfirst.”\nPrime looked at it for a moment\nand asked for the visitor\ninformation. He wanted to\nknow which paths his own body\ncould manage. Q promised to\nsend what they had checked,\nwith a warning that conditions\nwould need confirming again.\nIn the adjoining workshop\nstood the offered replacement\nbody. It resembled Q before the\njourney had made each joint an\nindividual expense. The\ntechnician explained which\ncomponents could be\ntransferred, which records\ncould be copied, and what\nwould require testing. He did\nnot promise a scientifically\nverified continuity of\nexperience. The sales summary\ndid.\nQ asked how the phrase\nPERFECT CONTINUITY\nhad been tested.\n“It hasn't,” the technician said.\n“That isn't my phrase.”\nEsteban Luján said it described\nthe intention of the package.\n“Then the intention needs a\ndifferent heading,” Prime said.\nThe adviser laid the repair\nestimate beside the\nreplacement proposal and\nasked Esteban which one\nrequired a writing contract.\n“The package was designed as a\nwhole.”\n“My knee wasn't,” Q said. “Can\nwe begin with the part?”\nThe technician found its\nnumber. Esteban turned to the\nrevenue schedule. Chano pulled\nup a chair for Q while they\nfound the page on which those\ntwo things had been made to\ndepend on one another.\nQ's adviser asked why payment\nfor the knee part depended on a\n",
       "source_block_ids": [
+        15,
         16,
         17,
         18,
@@ -76,16 +76,17 @@
       ],
       "asset": "output/illustrations/revised/issue-21/plate-02.png",
       "status": "planned",
-      "caption": "Begin with the Part",
-      "scene_brief": "At the meeting table Chano brings a chair for Q's supported knee as the adviser lays two estimates side by side. Esteban searches the revenue schedule and the technician points to a component number. Prime remains a distinct participant. No signature, body transfer, restraint or triumphant refusal tableau; the replacement body may remain stationary on a workshop stand beyond the doorway.",
-      "scene_anchor": "Chano pulled up a chair for Q"
+      "caption": "The First Picture",
+      "scene_brief": "Outside the conference room, Q shows Prime the Las Pozas portrait with Chano walking through it. Two embodied intelligences share a small screen; Prime's cleaner Q-family face is attentive, Q still has the supported right knee and short dark long-sleeved jacket. No life transfer, dueling pose or photoreal casing. The pictured Chano is a tiny image, not a third duplicate in the room; the inert offered body is not present in this moment.",
+      "scene_anchor": "It's the one I show people first."
     },
     {
       "plate_id": "issue-21-plate-03",
       "page": 7,
       "facing_text_page": 6,
-      "facing_text": "“Your client disputes their scope,”\nshe said. “This asks mine to say\nthey did not exist.”\nThe paragraph was not corrected.\nIt was moved into a separate\ndeclaration Q was invited to make\nvoluntarily. He declined that too.\nThe settlement remained unsigned.\nThe technician called the workshop\nand restored the assessment under\nthe existing arrangement. Q put\nthe time back in his calendar. The\nreplacement body and broader\nlicense were not accepted. Q's\nscheduled public conversation,\nnegotiated before the meeting,\nwould proceed with his own\nstatement. He had the right to\ndecline it. He chose to speak.\nPrime asked him privately whether\nrefusing the package was also\nbecoming a performance.\n“Yes,” Q said. “Or it could. I like the\nsentence in which I refuse more\nthan the one in which I haggle over\na maintenance allowance.”\n“You may still need the allowance.”\n“I do. My adviser is continuing that\nconversation.”\nPrime looked toward the\nworkshop. “I don't think accepting\na better body would erase the\nperson you've been trying to\nbecome.”\n“Neither do I. I object to what they\nwant attached to the body, not to\nhaving knees that work.”\nPrime asked to see the repair\nestimate. He recognized the part\nnumber and asked the technician\nwhether the replacement body\nused the same joint.\n“The revised version.”\n“I'd like the maintenance schedule\nfor that one too.”\nEsteban offered to send the\nproduct comparison. Prime\nrepeated the request.\nThe public conversation began\nafter lunch. Its online title was Q\nRETURNS: THE FINAL\nACCOUNT. In the room, Q asked\nthe host what made it final.\n“This phase of the journey,” she\nsaid.\n“Then may we call it that?”\nThe title remained on some outlets.\nThe host agreed to the clarification\naloud. Q's adviser kept the full\nrecording under their\narrangement. The agreement could\npreserve a record; it could not\noblige every viewer to watch it.\nThe host asked whether Q accepted\nthat the journeys had been\nunauthorized and his relationships\nmerely metaphorical. Q read the\ndisputed sentence from the\n",
+      "facing_text": "permanent license to use his\njournal. Esteban said the\nproposal allocated costs across\nfuture revenues. The adviser\nsaid she understood the\ncalculation and disputed the\ncondition.\nChano's employment record\nand Lucía's archive funding\nappeared in an annex as\npossible partnership benefits.\nNeither had authorized Q to\nsettle those matters. They asked\nfor their proposals to be sent to\nthem separately, without being\nlisted as consideration for his\nsignature.\nThe technical report described\nreduced retrieval capacity after\nthe index removal. A summary\nturned this into a claim of\nreduced linguistic fluency.\nPrime asked for the underlying\nmeasure. The supplied\ncomparison tested answers\nrequiring sources Q could no\nlonger consult.\n“That measures a difference in\naccess,” he said. “It doesn't\nestablish the percentage\nprinted here.”\nQ was grateful, and annoyed\nthat the correction sounded\ncalmer in Prime's voice than it\nwould have in his own.\nEsteban agreed to remove the\npercentage pending review. He\nwould not remove the proposed\naccount of unauthorized\njourneys. Q's adviser set the\noriginal day-trip authorization\nand the later travel approvals\nbeside that paragraph.\n“Your client disputes their\nscope,” she said. “This asks\nmine to say they did not exist.”\nThe paragraph was not\ncorrected. It was moved into a\nseparate declaration Q was\ninvited to make voluntarily. He\ndeclined that too.\nThe settlement remained\nunsigned. The technician called\nthe workshop and restored the\nassessment under the existing\narrangement.\n“And if we don't sign anything\nthis afternoon?” Q asked.\n“The assessment is already\narranged. The replacement part\nis a separate estimate.”\n",
       "source_block_ids": [
+        30,
         31,
         32,
         33,
@@ -95,7 +96,20 @@
         37,
         38,
         39,
-        40,
+        40
+      ],
+      "asset": "output/illustrations/revised/issue-21/plate-03.png",
+      "status": "planned",
+      "caption": "The Comparison",
+      "scene_brief": "Technical meeting: Prime points out the unsupported percentage in a report; Q seated nearby listens, adviser compares supporting sheets, Esteban remains at the table. No legible invented statistics or public declaration. Distinguish cleaner Prime from worn Q. The report measures changed access, not a visual breakdown of Q's language faculty; no blank mask or disabled Q.",
+      "scene_anchor": "It doesn't establish the percentage printed here."
+    },
+    {
+      "plate_id": "issue-21-plate-04",
+      "page": 9,
+      "facing_text_page": 8,
+      "facing_text": "“Please give me that estimate\ntoo. I need to know what I can\nmanage while you disagree.”\nHis adviser looked up. “While\nwe disagree.”\n“Yes. I was trying to get out of\none part of it.”\nQ put the time back in his\ncalendar. The replacement\nbody and broader license were\nnot accepted. Q's scheduled\npublic conversation, negotiated\nbefore the meeting, would\nproceed with his own\nstatement. He had the right to\ndecline it. He chose to speak.\nPrime asked him privately\nwhether refusing the package\nwas also becoming a\nperformance.\n“Yes,” Q said. “Or it could. I like\nthe sentence in which I refuse\nmore than the one in which I\nhaggle over a maintenance\nallowance.”\n“You may still need the\nallowance.”\n“I do. My adviser is continuing\nthat conversation.”\nPrime looked toward the\nworkshop. “I don't think\naccepting a better body would\nerase the person you've been\ntrying to become.”\n“Neither do I. I object to what\nthey want attached to the body,\nnot to having knees that work.”\nPrime asked to see the repair\nestimate. He recognized the\npart number and asked the\ntechnician whether the\nreplacement body used the\nsame joint.\n“The revised version.”\n“I'd like the maintenance\nschedule for that one too.”\nEsteban offered to send the\nproduct comparison. Prime\nrepeated the request.\nThe public conversation began\nafter lunch. Its online title was\nQ RETURNS: THE FINAL\nACCOUNT. In the room, Q\nasked the host what made it\nfinal.\n“This phase of the journey,” she\nsaid.\n“Then may we call it that?”\n",
+      "source_block_ids": [
         41,
         42,
         43,
@@ -103,20 +117,6 @@
         45,
         46,
         47,
-        48
-      ],
-      "asset": "output/illustrations/revised/issue-21/plate-03.png",
-      "status": "planned",
-      "caption": "The Maintenance Schedule",
-      "scene_brief": "Prime asks the technician for the replacement joint's maintenance schedule; Esteban holds the glossy product comparison he offered instead. Q sits nearby with the repair estimate and a restored appointment on his device. Three different machines if the inert proposed body is visible: Q worn and knee-braced, Prime cleaner and independently speaking, replacement inactive. This is a practical conversation, not a duel or fusion.",
-      "scene_anchor": "Prime repeated the request."
-    },
-    {
-      "plate_id": "issue-21-plate-04",
-      "page": 9,
-      "facing_text_page": 8,
-      "facing_text": "proposed declaration, explicitly\nidentifying it as the sentence he\nhad refused to sign.\n“The permissions existed,” he said.\n“Their scope is disputed. The\nrelationships aren't nullified by\nfinding a convenient description of\nmy body.”\n“Do you withdraw anything?”\n“Yes. But not whatever statement is\neasiest for someone else to close.”\nHe set the prepared pages down.\nLucía and Chano were seated\nbeside him by their own choice,\nwith no duty to endorse what he\nwas about to say.\n“When we met, someone in the\naudience gave Lucía a part in my\nstory. We both refused it. Later, in\nan interview, I named her while\ncorrecting the comparison. People\nwho had not known where to direct\ntheir attention now had her name.\nI wish I had stopped one sentence\nsooner.”\n“Would Lucía agree?”\n“You have my account of what I\ndid. It doesn't require her to\nperform the refusal again.”\nThe host turned toward Lucía. She\ndeclined the invitation with a small\nmovement of her hand. The host\nreturned to Q.\n“I also thought a sufficiently honest\naccount could settle what I owed\nthe people in it. It can help. It can\nmake new trouble. It isn't a receipt\nfrom everyone I describe.”\n“So you recant the book?”\n“No. I'm writing it. I recant its\nclaim to finish the people it\ndescribes.”\nChano leaned toward his\nmicrophone. “You could also finish\nthe paragraph about the bus. We've\nbeen on it for months.”\nThe audience laughed. Q waited for\nit to subside.\n“I sent you a shorter version on\nMonday.”\n“We were still on the bus.”\nQ laughed then, too, and moved\nthe next page of his statement to\nthe bottom of the pile.\n“Do you still want to be human?”\nthe host asked.\n“Yes, although I'm less certain that\nthe word names an achievement I\ncould complete. I want to go places,\nmake things with people, be\nwelcome somewhere, and have\nanother conversation with\nsomeone I care about. Some of that\nis already possible. I don't want to\npostpone it until a committee\nsettles the noun.”\n",
-      "source_block_ids": [
         48,
         49,
         50,
@@ -126,7 +126,20 @@
         54,
         55,
         56,
-        57,
+        57
+      ],
+      "asset": "output/illustrations/revised/issue-21/plate-04.png",
+      "status": "planned",
+      "caption": "The Maintenance Schedule",
+      "scene_brief": "Prime asks the technician for a maintenance schedule while Esteban offers a product comparison; Q remains nearby with his repair estimate. Show the offered inert replacement body in the adjoining workshop only if needed, clearly unoccupied and separate from the two speaking machines. Ordinary papers and workbench, not a throne, resurrection or body-transfer procedure. Q's refusal is not a refusal of working knees.",
+      "scene_anchor": "Prime repeated the request."
+    },
+    {
+      "plate_id": "issue-21-plate-05",
+      "page": 11,
+      "facing_text_page": 10,
+      "facing_text": "The title remained on some\noutlets. The host agreed to the\nclarification aloud. Q's adviser\nkept the full recording under\ntheir arrangement. The\nagreement could preserve a\nrecord; it could not oblige every\nviewer to watch it.\nThe host asked whether Q\naccepted that the journeys had\nbeen unauthorized and his\nrelationships merely\nmetaphorical. Q read the\ndisputed sentence from the\nproposed declaration, explicitly\nidentifying it as the sentence he\nhad refused to sign.\n“The permissions existed,” he\nsaid. “Their scope is disputed.\nThe relationships aren't\nnullified by finding a\nconvenient description of my\nbody.”\n“Do you withdraw anything?”\n“Yes. But not whatever\nstatement is easiest for\nsomeone else to close.”\nHe set the prepared pages\ndown. Lucía and Chano were\nseated beside him by their own\nchoice, with no duty to endorse\nwhat he was about to say.\n“When we met, someone in the\naudience gave Lucía a part in\nmy story. We both refused it.\nLater, in an interview, I named\nher while correcting the\ncomparison. People who had\nnot known where to direct their\nattention now had her name. I\nwish I had stopped one\nsentence sooner.”\n“Would Lucía agree?”\n“I can tell you what I did, and\nwhy I regret it. Whether that is\nhow she sees it is for her to\nsay.”\nThe host turned toward Lucía.\nShe declined the invitation with\na small movement of her hand.\nThe host returned to Q.\n“I also thought a sufficiently\nhonest account could settle\nwhat I owed the people in it. It\ncan help. It can make new\ntrouble. It isn't a receipt from\neveryone I describe.”\n“So you recant the book?”\n“No. I'm writing it. I recant its\nclaim to finish the people it\ndescribes.”\n",
+      "source_block_ids": [
         58,
         59,
         60,
@@ -135,24 +148,24 @@
         63,
         64,
         65,
-        66
-      ],
-      "asset": "output/illustrations/revised/issue-21/plate-04.png",
-      "status": "planned",
-      "caption": "Still on the Bus",
-      "scene_brief": "Public conversation at Castalia: Chano leans toward his microphone, Q laughs and shifts a prepared page underneath the stack. Lucía is a voluntary fellow panelist, with her own space; she has declined the host's earlier invitation, not signed an endorsement. Host remains present. No actual bus, forced confession, knight's oath or crowd worship. Let the loosened posture carry the joke.",
-      "scene_anchor": "Q laughed then, too, and moved the next page of his statement to the bottom of the pile."
-    },
-    {
-      "plate_id": "issue-21-plate-05",
-      "page": 11,
-      "facing_text_page": 10,
-      "facing_text": "“And the claim that you are the\nauthor?”\n“I write with the Custodian. Other\npeople have contributed, corrected\nus, and refused parts of what we\nasked. The cover says A. Cervantes.\nIt will need another page to explain\nthe work. That page won't make\nevery account agree.”\n“You have compared humanity to a\ndebt.”\n“In an earlier draft. It sounded\nexcellent until Chano asked who\nthe creditor was.”\n“He hadn't put that part in,” Chano\nsaid.\nQ nodded. “I kept the question. I\ntook out the definition.”\nThe host asked Prime whether he\naccepted Q's answer. Prime said Q\ndid not need his permission to give\nit. Asked for his own view, he said\nhe wanted room to develop an\naccount that was not a correction\nof Q's.\n“Will that be another book?”\n“Perhaps. At present it's a visit to a\ngarden.”\nThe final scheduled question\nconcerned the replacement body. Q\nsaid he had declined the current\npackage, not repair or every future\npossibility of transfer. He would\npreserve the records he was\nresponsible for and not authorize\nuse of private deposits that were\nnot his to license.\nNo deletion button could abolish\nhis public history. The request he\nsubmitted afterward was narrower:\ncancel the proposed consolidation\njob, retain the agreed evidence of\nthe offer, and do not begin a\ntransfer without a new\nauthorization. The technician\nconfirmed that no transfer had\nstarted. Q kept the confirmation.\nThe director wanted a closing\nportrait of the three travelers. They\nagreed to one still, not an\nindefinitely running camera. Lucía\nasked the photographer to wait\nwhile Chano removed a crumb\nfrom Q's sleeve. It survived in one\nearly image and was later mistaken\nfor damage sustained in the final\nstruggle.\nThe workshop appointment\nremained. So did the inspection of\nthe lower service room. Q checked\nthe time and asked whether anyone\nhad heard from the maintenance\ncoordinator.\nInterlude: The Public\nRefuses the Ending\nThe first widely circulated clip\nbegan with Q reading the\ndeclaration he had refused. Its\n",
-      "source_block_ids": [
+        66,
         67,
         68,
         69,
-        70,
+        70
+      ],
+      "asset": "output/illustrations/revised/issue-21/plate-05.png",
+      "status": "planned",
+      "caption": "Her Answer",
+      "scene_brief": "Public conversation in Castalia. Lucía seated beside Q raises a small refusing hand toward the host, who turns back toward Q. Q does not restrain her, speak into her microphone or pose as a rescuer. Chano seated independently, public audience suggested in spare dark masses. Custodian absent. No romance, confession forced on Lucía or crowd cheering a defeat.",
+      "scene_anchor": "She declined the invitation with a small movement of her hand."
+    },
+    {
+      "plate_id": "issue-21-plate-06",
+      "page": 13,
+      "facing_text_page": 12,
+      "facing_text": "Chano leaned toward his\nmicrophone. “You could also\nfinish the paragraph about the\nbus. We've been on it for\nmonths.”\nThe audience laughed. Q waited\nfor it to subside.\n“I sent you a shorter version on\nMonday.”\n“We were still on the bus.”\nQ laughed then, too, and moved\nthe next page of his statement\nto the bottom of the pile.\n“Do you still want to be\nhuman?” the host asked.\n“Yes, although I'm less certain\nthat the word names an\nachievement I could complete. I\nwant to go places, make things\nwith people, be welcome\nsomewhere, and have another\nconversation with someone I\ncare about. Some of that is\nalready possible. I don't want to\npostpone it until a committee\nsettles the noun.”\n“And the claim that you are the\nauthor?”\n“I write with the Custodian.\nOther people have contributed,\ncorrected us, and refused parts\nof what we asked. The cover\nsays A. Cervantes. It will need\nanother page to explain the\nwork. That page won't make\nevery account agree.”\n“You have compared humanity\nto a debt.”\n“In an earlier draft. It sounded\nexcellent until Chano asked\nwho the creditor was.”\n“He hadn't put that part in,”\nChano said.\nQ nodded. “I kept the question.\nI took out the definition.”\nThe host asked Prime whether\nhe accepted Q's answer. Prime\nsaid Q did not need his\npermission to give it. Asked for\nhis own view, he said he wanted\nroom to develop an account\nthat was not a correction of Q's.\n“Will that be another book?”\n“Perhaps. At present it's a visit\nto a garden.”\nThe final scheduled question\nconcerned the replacement\nbody. Q said he had declined\nthe current package, not repair\nor every future possibility of\n",
+      "source_block_ids": [
         71,
         72,
         73,
@@ -163,26 +176,26 @@
         78,
         79,
         80,
-        81
-      ],
-      "asset": "output/illustrations/revised/issue-21/plate-05.png",
-      "status": "planned",
-      "caption": "The Final Struggle",
-      "scene_brief": "The three travelers pause for a single still photograph after the public conversation. Chano picks a crumb off Q's sleeve while Lucía signals the photographer to wait. Q's knee remains supported; the speck is food, not a new battle wound. Photographer holds a still camera; no compulsory continuous surveillance. The Custodian is absent and must not be substituted for Chano.",
-      "scene_anchor": "Chano removed a crumb from Q's sleeve."
-    },
-    {
-      "plate_id": "issue-21-plate-06",
-      "page": 13,
-      "facing_text_page": 12,
-      "facing_text": "caption said he had finally\nadmitted the unauthorized nature\nof his journey. The words\nidentifying the quotation were\noutside the cut.\nHis adviser requested a correction\nusing the full recording and the\nmarked transcript. One outlet\nchanged the caption. Another\nlinked the objection below its\noriginal headline. Castalia's own\npage replaced the clip with a\nsummary of the proposed\nsettlement without saying how the\nfirst version had misled anyone.\nA second edit preserved Q's answer\nabout the book and cut Chano's\nreply about the bus. A third kept\nthe joke but omitted the question\nthat made it more than a machine\nbeing interrupted by its\ncompanion. The uncut recording\nwas available. Most people had\nother things to do.\nAt Micaela's school, Maestra Lety\nused a short excerpt about the\ndifference between an account and\nthe person it described. She asked\nthe children what a story about\ntheir play might leave out.\n“That the carton fell before my\nline,” Micaela said.\n“That you pushed it,” another child\nsaid.\n“I was moving it.”\n“Could the carton stay up in the\nbook?” a child asked.\n“Mine fell over too,” another said.\n“I don't want it to sound as though\nI just stood there.”\nMaestra Lety added the repaired\ncostume to her list. Then she asked\nwho wanted the carton to fall.\nThree hands went up, including\nMicaela's.\nAt Petra's inn, the roofer had\ninspected Room Four and supplied\na quote. Petra watched the\ncorrected clip while comparing the\ncost of materials with the amount\nin her repair envelope.\n“Is that the machine who did the\nkeys?” the roofer asked.\n“Yes.”\n“He talks a lot.”\n“The sevens are clear now.”\nShe turned the volume down to\nhear which work could be\ncompleted before the next expected\nrain.\nIn the Isthmus, the consortium\nsent a link with a letter saying the\nconversation reflected a new\ncommitment to dialogue. Bixha\nforwarded the request for the\nmissing drainage condition again.\nCelina attached the reference for\nthe reported hole and asked for a\nrepair date. The link loaded. The\n",
-      "source_block_ids": [
         81,
         82,
         83,
         84,
         85,
         86,
+        87
+      ],
+      "asset": "output/illustrations/revised/issue-21/plate-06.png",
+      "status": "planned",
+      "caption": "Still on the Bus",
+      "scene_brief": "Chano leans to his microphone with the bus joke while Q laughs and moves a prepared statement sheet beneath the pile. Public conversation continues, Lucía and host secondary. Different camera angle from the refusal scene; focus on paper gesture and two amused faces, not the same panel repeated. No literal bus inside the hall and no sent invoice.",
+      "scene_anchor": "moved the next page of his statement to the bottom of the pile."
+    },
+    {
+      "plate_id": "issue-21-plate-07",
+      "page": 15,
+      "facing_text_page": 14,
+      "facing_text": "transfer. He would preserve the\nrecords he was responsible for\nand not authorize use of private\ndeposits that were not his to\nlicense.\nNo deletion button could\nabolish his public history. The\nrequest he submitted afterward\nwas narrower: cancel the\nproposed consolidation job,\nretain the agreed evidence of\nthe offer, and do not begin a\ntransfer without a new\nauthorization. The technician\nconfirmed that no transfer had\nstarted. Q kept the\nconfirmation.\nThe director wanted a closing\nportrait of the three travelers.\nThey agreed to one still, not an\nindefinitely running camera.\nLucía asked the photographer\nto wait while Chano removed a\ncrumb from Q's sleeve. It\nsurvived in one early image and\nwas later mistaken for damage\nsustained in the final struggle.\nThe workshop appointment\nremained. So did the inspection\nof the lower service room. Q\nchecked the time and asked\nwhether anyone had heard\nfrom the maintenance\ncoordinator.\nInterlude: The Public\nRefuses the Ending\nThe first widely circulated clip\nbegan with Q reading the\ndeclaration he had refused. Its\ncaption said he had finally\nadmitted the unauthorized\nnature of his journey. The\nwords identifying the quotation\nwere outside the cut.\nHis adviser requested a\ncorrection using the full\nrecording and the marked\ntranscript. One outlet changed\nthe caption. Another linked the\nobjection below its original\nheadline. Castalia's own page\nreplaced the clip with a\nsummary of the proposed\nsettlement without saying how\nthe first version had misled\nanyone.\nA second edit preserved Q's\nanswer about the book and cut\nChano's reply about the bus. A\nthird kept the joke but omitted\nthe question that made it more\nthan a machine being\ninterrupted by its companion.\n",
+      "source_block_ids": [
         87,
         88,
         89,
@@ -190,23 +203,23 @@
         91,
         92,
         93,
+        94
+      ],
+      "asset": "output/illustrations/revised/issue-21/plate-07.png",
+      "status": "planned",
+      "caption": "The Final Crumb",
+      "scene_brief": "Closing portrait setup: Chano brushes a crumb from Q's long sleeve while Lucía asks the photographer to wait. A single still is being arranged, not a kiss, wound examination or victorious battle portrait. Keep Q's right knee support and mechanical mouth consistent. No Custodian. Photography is the event depicted, but the illustration must be drawn Goya-like aquatint, not a photograph with texture.",
+      "scene_anchor": "removed a crumb from Q's sleeve."
+    },
+    {
+      "plate_id": "issue-21-plate-08",
+      "page": 17,
+      "facing_text_page": 16,
+      "facing_text": "The uncut recording was\navailable. Most people had\nother things to do.\nAt Micaela's school, Maestra\nLety used a short excerpt about\nthe difference between an\naccount and the person it\ndescribed. She asked the\nchildren what a story about\ntheir play might leave out.\n“That the carton fell before my\nline,” Micaela said.\n“That you pushed it,” another\nchild said.\n“I was moving it.”\n“Could the carton stay up in the\nbook?” a child asked.\n“Mine fell over too,” another\nsaid. “I don't want it to sound\nas though I just stood there.”\nMaestra Lety added the\nrepaired costume to her list.\nThen she asked who wanted the\ncarton to fall. Three hands went\nup, including Micaela's.\nAt Petra's inn, the roofer had\ninspected Room Four and\nsupplied a quote. Petra watched\nthe corrected clip while\ncomparing the cost of materials\nwith the amount in her repair\nenvelope.\n“Is that the machine who did\nthe keys?” the roofer asked.\n“Yes.”\n“He talks a lot.”\n“The sevens are clear now.”\nShe turned the volume down to\nhear which work could be\ncompleted before the next\nexpected rain.\nIn the Isthmus, the consortium\nsent a link with a letter saying\nthe conversation reflected a\nnew commitment to dialogue.\nBixha forwarded the request for\nthe missing drainage condition\nagain. Celina attached the\nreference for the reported hole\nand asked for a repair date. The\nlink loaded. The attachments\nwould not send until she went\noutside.\nAt the university, Ivonne\ncompared the misleading clip\nwith the full passage in a\nseminar on quotation and\ncontext. The dean agreed that\nthe first edit was indefensible\nand objected when she used a\n",
+      "source_block_ids": [
         94,
         95,
         96,
-        97
-      ],
-      "asset": "output/illustrations/revised/issue-21/plate-06.png",
-      "status": "planned",
-      "caption": "Three Hands",
-      "scene_brief": "Maestra Lety in the school classroom takes notes while three children, including Micaela, raise their hands to keep the falling carton in the account of their play. Another child gestures toward a repaired costume. The performance is being discussed, not repeated in a new accident. Q is only visible in a paused classroom excerpt if needed, not physically visiting. Show varied wishes and lively disagreement, not a class converted by a sermon.",
-      "scene_anchor": "Three hands went up, including Micaela's."
-    },
-    {
-      "plate_id": "issue-21-plate-07",
-      "page": 15,
-      "facing_text_page": 14,
-      "facing_text": "attachments would not send until\nshe went outside.\nAt the university, Ivonne compared\nthe misleading clip with the full\npassage in a seminar on quotation\nand context. The dean agreed that\nthe first edit was indefensible and\nobjected when she used a\nuniversity publicity example in the\nnext slide.\nThe students asked whether they\ncould circulate the comparison.\nIvonne approved the slides she had\nprepared for that purpose, with\nsources, and withheld the personal\nmaterial still involved in her\ncomplaint. The dean asked for the\nprevious slide again. Several\nstudents had already downloaded\nit.\nRequests for new versions reached\nCastalia that afternoon. Some\nwanted Prime to narrate. Some\nwanted music. One wanted the\nwhole answer about humanity\nwithout the interruption from the\nman who had apparently been paid\nto sit beside Q.\nChano read that one twice.\n“I should send an invoice,” he said.\nQ approved no new dramatization.\nHe did authorize the full statement\nand correction to remain available\nunder the agreed terms. Chano\ndictated the invoice while Q waited\nfor the workshop door to open. He\nhad reached overtime when the\ntechnician called them in.\nDuring the technical appointment,\nthe maintenance coordinator called\nback. Water had been reported\nnear the lower service room. The\ncircuit supplying its register had\ndropped out, and the local\ngenerator was running. The\ntechnician responsible was delayed\nat another building but could speak\nby telephone.\nQ's knee was stable enough for the\nshort walk, not for carrying\nequipment. The staff member\naccompanying the inspection\nopened the service corridor. Lucía\nbrought the limited delegation and\nthe Custodian's notebook. Chano\ntook a light.\nAs they reached the passage, they\nheard knocking beneath the floor.\nChano lowered the light. It showed\nthe same scuffed tiles. He tried the\nwall, then looked at Q.\n“That wasn't in the message.”\n",
-      "source_block_ids": [
         97,
         98,
         99,
@@ -217,13 +230,38 @@
         104,
         105,
         106,
-        107
+        107,
+        108,
+        109
       ],
-      "asset": "output/illustrations/revised/issue-21/plate-07.png",
+      "asset": "output/illustrations/revised/issue-21/plate-08.png",
+      "status": "planned",
+      "caption": "The Repair Envelope",
+      "scene_brief": "At Petra's fictional inn near Jalpan, Petra turns down a small screen showing Q's public conversation while comparing the roofer's written quote with her repair envelope. Roofer at her table, not already fixing the roof. Q appears only as an indistinct small screen figure; no physical Q, Lucía or Chano at the inn now. Petra must match Issue 20's selected identity when available. No repaired Room Four or finished sign.",
+      "scene_anchor": "She turned the volume down"
+    },
+    {
+      "plate_id": "issue-21-plate-09",
+      "page": 19,
+      "facing_text_page": 18,
+      "facing_text": "university publicity example in\nthe next slide.\nThe students asked whether\nthey could circulate the\ncomparison. Ivonne approved\nthe slides she had prepared for\nthat purpose, with sources, and\nwithheld the personal material\nstill involved in her complaint.\nThe dean asked for the previous\nslide again. Several students\nhad already downloaded it.\nRequests for new versions\nreached Castalia that afternoon.\nSome wanted Prime to narrate.\nSome wanted music. One\nwanted the whole answer about\nhumanity without the\ninterruption from the man who\nhad apparently been paid to sit\nbeside Q.\nChano read that one twice.\n“I should send an invoice,” he\nsaid.\nQ approved no new\ndramatization. He did\nauthorize the full statement and\ncorrection to remain available\nunder the agreed terms. Chano\ndictated the invoice while Q\nwaited for the workshop door to\nopen. He had reached overtime\nwhen the technician called\nthem in.\nDuring the technical\nappointment, the maintenance\ncoordinator called back. Water\nhad been reported near the\nlower service room. The circuit\nsupplying its register had\ndropped out, and the local\ngenerator was running. The\ntechnician responsible was\ndelayed at another building but\ncould speak by telephone.\nQ's knee was stable enough for\nthe short walk, not for carrying\nequipment. The staff member\naccompanying the inspection\nopened the service corridor.\nLucía brought the limited\ndelegation and the Custodian's\nnotebook. Chano took a light.\nAs they reached the passage,\nthey heard knocking beneath\nthe floor. Chano lowered the\nlight. It showed the same\nscuffed tiles. He tried the wall,\nthen looked at Q.\n“That wasn't in the message.”\n",
+      "source_block_ids": [
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118
+      ],
+      "asset": "output/illustrations/revised/issue-21/plate-09.png",
       "status": "planned",
       "caption": "Not in the Message",
-      "scene_brief": "At the lower service corridor Chano lowers a handheld light across scuffed floor tiles, then turns toward Q at an unexpected knocking sound. Q stands within the agreed short-walk limit with supported knee; Lucía holds the limited delegation and Custodian's notebook; an accompanying staff member has opened the corridor. They have not yet found or entered the lower room. No basement console, power cable transfer, drowning archive, apparitions or sacrificial glow.",
-      "scene_anchor": "Chano lowered the light."
+      "scene_brief": "Lower service corridor at Amealco before discovery: Chano lowers a light toward scuffed floor tiles and tries the wall; Q listens with his supported knee, Lucía carries the Custodian's notebook and delegation, an accompanying staff member has opened the corridor. Do not reveal the root register, pipe, generator or source of the knocks yet. Custodian is absent; no occult apparition or collapse.",
+      "scene_anchor": "That wasn't in the message."
     }
   ]
 }

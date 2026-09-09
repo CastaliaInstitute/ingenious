@@ -1,18 +1,18 @@
 {
   "issue": 22,
-  "revision": "2026-09-08-after-the-last-page",
+  "revision": "2026-09-09-an-ending-with-alternatives",
   "source": "novel/THE_INGENIOUS_MACHINE.md",
-  "chapter_sha256": "7c5cd20653505e1ae6abca24b72fc35079dbcf026dd0f88d286a84f1dbfd811b",
-  "page_count": 16,
-  "text_font": "Georgia 12/17 pt",
-  "plate_count_including_cover": 8,
+  "chapter_sha256": "4ed7ce432d3797b57d884deed4105227fd0ab4b77fc51242093e6760c26db603",
+  "page_count": 20,
+  "text_font": "Georgia 13/18.4167 pt",
+  "plate_count_including_cover": 10,
   "status": "planned; no Issue 22 images generated or approved",
-  "character_reference": "output/illustrations/revised/issue-01/cover.png",
+  "character_reference": "output/illustrations/revised/issue-19/plate-01.png",
   "chano_reference": "output/illustrations/revised/issue-03/plate-06.png",
   "lucia_reference": "output/illustrations/revised/issue-03/plate-04.png",
   "character_design": "Q retains the approved narrow segmented head, round ear mechanisms, question-mark breastplate and short fitted dark jacket with long sleeves, with supported knee. Chano and Lucía follow their approved plates. Prime retains Q-family geometry with cleaner lighter casing and undamaged shoulder, not the offered inert replacement body; no approved Prime image yet. Custodian is the tall male coauthor, long gray tied-back hair, glasses repaired with tape, white work shirt and boots. Q's lower face includes a small mechanical sampling mouth; do not simplify it into a blank mask. Use the corrected Goya pilot for Q-family identity, not photographic surface detail.",
-  "art_direction": "Neutral monochrome Goya-inspired etching and aquatint with economical drawn contours and broad tonal masses, white highlights without cream or sepia ink. Full bleed at trim with separate typeset caption margin. Seven unique exact-facing scenes and one distinct cover. Castalia is a fictional highland archive outside Amealco with pine-and-oak surroundings. Practical equipment, legible human gestures and dry work surfaces; no magical data liberation or chivalric martyrdom. Governing reference: novel/development/GOYA_ART_DIRECTION.md. Earlier plates guide identity only; do not imitate their photographic rendering.",
-  "approval_scope": "Plan only. Sixteen comic pages, eight planned plates including cover, eight A3 landscape sides / four short-edge duplex sheets. Reviewed continuous 12/17 pt layout. No final Issue 22 artwork, finished illustrated PDF or printing.",
+  "art_direction": "Neutral monochrome Goya-inspired etching and aquatint with economical drawn contours and broad tonal masses, white highlights without cream or sepia ink. Full bleed at trim with separate typeset caption margin. Nine unique exact-facing scenes and one distinct cover. Castalia is a fictional highland archive outside Amealco with pine-and-oak surroundings. Practical equipment, legible human gestures and dry work surfaces; no magical data liberation or chivalric martyrdom. Governing reference: novel/development/GOYA_ART_DIRECTION.md. Earlier plates guide identity only; do not imitate their photographic rendering.",
+  "approval_scope": "Source-bound plan only: twenty comic pages, ten planned plates including cover, ten A3 landscape sides / five short-edge duplex sheets. Continuous left-aligned Georgia 13/18.4167 pt text. No finished Issue 22 images or illustrated PDF, no printing. New Prime design and recurring characters require consistency review.",
   "plates": [
     {
       "plate_id": "issue-22-cover",
@@ -26,7 +26,7 @@
       "plate_id": "issue-22-plate-01",
       "page": 3,
       "facing_text_page": 2,
-      "facing_text": "Chapter Twenty-Two: The\nIngenious Machine\nThe knocking beneath the archive\ncontinued: three knocks, a pause,\ntwo knocks.\n“A pipe,” Chano said.\n“Possibly.” Q listened again. “There\nis a service room below us. I\nremember an entrance under the\nobservatory, but I would rather\ncheck than improve the building\nfrom memory.”\nLucía found the stair on the\nevacuation plan. Someone had\nplaced the notice behind a cabinet of\nemergency procedures.\nChano and the staff member moved\nthe cabinet. Q read the plan while\nthey argued about where to put it\nwithout covering something else.\nThe lower door had swollen in its\nframe. Chano handed Q the light,\nthen lifted the door while Lucía\nturned the handle. The\naccompanying staff member stayed\nin the passage to reach the\nmaintenance technician by\ntelephone. The three entered without\ndeciding which of them had opened\nthe door, an omission that would\ntrouble several accounts of the\nadventure.\nWater tapped an old cooling pipe.\nBeneath it stood a machine\nresembling a printing press joined to\na server rack. Its screen read:\nA RECORD IS NOT\nPRESERVED UNTIL ITS\nOWNER CAN REMOVE IT.\n“That is a proposal,” Lucía said.\n“Some of the families disagree about\nwho the owner is.”\nQ kept clear of the wet patch and\nchecked that the rack stood beyond\nit. “Then we should keep the\nobjections with it.”\nThis was the root system the\nCustodian had described: the older\npermissions register for specified\nholdings at Amealco, not a key to\neverything they had encountered. It\ncould grant access, withdraw a\ncredential, or hold a disputed record\nclosed under the relevant keepers'\nauthority. It could not settle a\ndisagreement between a daughter\nand a brother, although the\nprocurement report had credited it\nwith resolving inheritance.\nThe screen changed.\nIDENTIFY THE AUTHOR.\n“A. Cervantes,” Q said.\nAUTHOR NOT FOUND.\nChano laughed. “An honest review.”\n“It wants the author of the\ninstruction,” Lucía said.\n“I know. I wanted to see whether the\nother answer had become official.”\nShe opened the Custodian’s red\nnotebook. Inside were the names of\nthe people who had commissioned,\n",
+      "facing_text": "Chapter Twenty-Two:\nThe Ingenious Machine\nThe knocking beneath the archive\ncontinued: three knocks, a pause,\ntwo knocks.\n“A pipe,” Chano said.\n“Possibly.” Q listened again.\n“There is a service room below us.\nI remember an entrance under the\nobservatory, but I would rather\ncheck than improve the building\nfrom memory.”\nLucía found the stair on the\nevacuation plan. Someone had\nplaced the notice behind a cabinet\nof emergency procedures.\nChano and the staff member\nmoved the cabinet. Q read the\nplan while they argued about\nwhere to put it without covering\nsomething else.\nThe lower door had swollen in its\nframe. Chano handed Q the light,\nthen lifted the door while Lucía\nturned the handle. The\naccompanying staff member\nstayed in the passage to reach the\nmaintenance technician by\ntelephone. The three entered\nwithout deciding which of them\nhad opened the door, an omission\nthat would trouble several\naccounts of the adventure.\nWater tapped an old cooling pipe.\nBeneath it stood a machine\nresembling a printing press joined\nto a server rack. Its screen read:\nA RECORD IS NOT\nPRESERVED UNTIL ITS\nOWNER CAN REMOVE IT.\n“That is a proposal,” Lucía said.\n“Some of the families disagree\nabout who the owner is.”\nQ kept clear of the wet patch and\nchecked that the rack stood\nbeyond it. “Then we should keep\nthe objections with it.”\nThis was the root system the\nCustodian had described: the\nolder permissions register for\nspecified holdings at Amealco, not\na key to everything they had\nencountered. It could grant\naccess, withdraw a credential, or\nhold a disputed record closed\nunder the relevant keepers'\nauthority. It could not settle a\ndisagreement between a daughter\nand a brother, although the\nprocurement report had credited\nit with resolving inheritance.\nThe screen changed.\nIDENTIFY THE AUTHOR.\n“A. Cervantes,” Q said.\nAUTHOR NOT FOUND.\n",
       "source_block_ids": [
         0,
         1,
@@ -43,24 +43,23 @@
         12,
         13,
         14,
-        15,
-        16,
-        17,
-        18,
-        19
+        15
       ],
       "asset": "output/illustrations/revised/issue-22/plate-01.png",
       "status": "planned",
-      "caption": "Who Opened the Door",
-      "scene_brief": "At the swollen lower doorway Chano lifts the door and Lucía turns its handle; Q holds the handheld light Chano passed him. The staff member remains outside on a telephone. Q's supported knee is not bearing a cabinet or heavy equipment. The cooperative effort is awkward and ordinary, with dampness confined beyond the dry footing. No heroic breach, weapons, flooding or hidden captive.",
-      "scene_anchor": "Chano handed Q the light, then lifted the door while Lucía turned the handle."
+      "caption": "The Emergency Procedures",
+      "scene_brief": "At the archive passage, Chano and a staff member shift a cabinet away from an evacuation plan while Q reads the revealed plan and Lucía finds the stair. Q does not lift furniture on his damaged knee. Economical ink perspective, ordinary obstruction rather than hidden temple or castle trap. No lower-room discovery yet, no Prime or Custodian.",
+      "scene_anchor": "Chano and the staff member moved the cabinet."
     },
     {
       "plate_id": "issue-22-plate-02",
       "page": 5,
       "facing_text_page": 4,
-      "facing_text": "built, challenged, and provisionally\naccepted the system. There were also\nthree corrections to the word\naccepted.\nQ found the corresponding entries.\nLucía checked them against the\nsigned sheets and used the account\ngranted for the visit. Her delegation\ncovered verification and temporary\nholds on the participating keepers'\nrecords. A note in the margin sent\nher back four pages. She kept her\nplace with a finger and asked Q to\nread the earlier name again.\nLucía opened the drawer holding the\nlocal paper register. It contained\nsigned amendments and a delivery\nreceipt marked with a small grease\nstain. She spread the sheets on the\ndry end of the desk, leaving the\nnotebook open beneath its lamp.\nAbove them, a door slammed. The\ncustody officers and Castalia's\nrepresentatives had been called to\nwitness the preservation work under\nthe interim order. The permissions\nneeded to transfer some disputed\nholdings elsewhere remained\nincomplete. Four communities, two\nfamilies, and a person no one had\nlocated could hardly be assembled in\nthe interval between a footstep and\nits echo.\n“We can hold the records closed,” Q\nsaid. “We cannot finish the return\ntonight.”\n“Will they stay closed if the lights go\nout?” Chano asked.\nQ inspected the maintenance panel.\nHis body had a service outlet, but its\nremaining charge and his damaged\nknee made it a poor first choice for\nsupporting a prolonged repair. He\nasked what actually needed power.\n“The stored recordings don't need\ncontinuous power,” the technician\nsaid through the telephone.\n“What about the changes to the\naccess register?” Q asked. “The\nscreen says they haven't been saved.”\n“Those need checking before\nshutdown.”\nThe generator panel estimated\nthirty-six minutes of fuel. The\nreserve batteries had been\ndisconnected after failing a test. A\nnotice offered an emergency\nmigration to a managed mobile\nworkstation. Its procedure would\ncopy the permissions register and\nplace the destination under Castalia's\nadministration. It would require\nauthority they did not have.\nRefueling might buy time, but the\nstaff member reported that the\napproved fuel container was at the\nother service building with the\ndelayed technician.\nHe closed the message.\n“We need to keep this machine\nrunning long enough to save locally,”\n",
+      "facing_text": "Chano laughed. “An honest\nreview.”\n“It wants the author of the\ninstruction,” Lucía said.\n“I know. I wanted to see whether\nthe other answer had become\nofficial.”\nShe opened the Custodian’s red\nnotebook. Inside were the names\nof the people who had\ncommissioned, built, challenged,\nand provisionally accepted the\nsystem. There were also three\ncorrections to the word accepted.\nQ found the corresponding\nentries. Lucía checked them\nagainst the signed sheets and used\nthe account granted for the visit.\nHer delegation covered\nverification and temporary holds\non the participating keepers'\nrecords. A note in the margin sent\nher back four pages. She kept her\nplace with a finger and asked Q to\nread the earlier name again.\nLucía opened the drawer holding\nthe local paper register. It\ncontained signed amendments\nand a delivery receipt marked\nwith a small grease stain. She\nspread the sheets on the dry end\nof the desk, leaving the notebook\nopen beneath its lamp.\nAbove them, a door slammed. The\ncustody officers and Castalia's\nrepresentatives had been called to\nwitness the preservation work\nunder the interim order. The\npermissions needed to transfer\nsome disputed holdings elsewhere\nremained incomplete. Four\ncommunities, two families, and a\nperson no one had located could\nhardly be assembled in the\ninterval between a footstep and its\necho.\n“We can hold the records closed,”\nQ said. “We cannot finish the\nreturn tonight.”\n“Will they stay closed if the lights\ngo out?” Chano asked.\nQ inspected the maintenance\npanel. His body had a service\noutlet, but its remaining charge\nand his damaged knee made it a\npoor first choice for supporting a\nprolonged repair. He asked what\nactually needed power.\n“The stored recordings don't need\ncontinuous power,” the technician\nsaid through the telephone.\n“What about the changes to the\naccess register?” Q asked. “The\nscreen says they haven't been\nsaved.”\n",
       "source_block_ids": [
+        16,
+        17,
+        18,
         19,
         20,
         21,
@@ -69,24 +68,23 @@
         24,
         25,
         26,
-        27,
-        28,
-        29,
-        30,
-        31
+        27
       ],
       "asset": "output/illustrations/revised/issue-22/plate-02.png",
       "status": "planned",
-      "caption": "Four Pages Back",
-      "scene_brief": "Lucía keeps a finger in the Custodian's red notebook while spreading local signed amendments on the dry end of the desk under a lamp. Q reads a previous entry back. The nearby rack has a pending permissions screen, not exposed family recordings. Only papers in the drawer: no Chiapas testimony module, magic scanner key or universal archive. The technician is on the staff member's telephone, not physically at the desk.",
-      "scene_anchor": "She kept her place with a finger and asked Q to read the earlier name again."
+      "caption": "Three Corrections to Accepted",
+      "scene_brief": "Lucía opens the local paper register and lays signed amendments at a dry end of the service-room desk; Custodian's notebook remains open beneath a lamp. Q assists with an earlier entry. Show papers with restrained marks, no readable private names, no Chiapas module returned to Castalia, no omnipotent root key. Custodian is represented only by the notebook, not physically present.",
+      "scene_anchor": "She spread the sheets on the dry end of the desk,"
     },
     {
       "plate_id": "issue-22-plate-03",
       "page": 7,
       "facing_text_page": 6,
-      "facing_text": "he said. “A migration is a different\ndecision.”\n“Can it be done another way?” Lucía\nasked.\n“That is what I am going to find out.”\nHe asked Chano to read the service\nlabels without touching the contacts.\nHe asked Lucía to find the last signed\nversion of the register. The\ntechnician confirmed the procedure\nby telephone. Q compared that\nversion with the pending one,\nkeeping the contents of the\nrecordings closed. There were seven\nchanges awaiting verification and a\nlocal save.\nChano located the specified service\ncable and socket. The technician\nchecked their ratings against the\nregister unit's requirements and\nconfirmed the fused power-only\nconnection. Lucía found two\nsignatures witnessed on different\ndays. An old validation rule expected\na single witnessing date and had left\nthat amendment pending.\n“These signatures are both valid,”\nshe said. “The witnesses weren't here\non the same day.”\n“The review screen permits a\nqualified exception,” Q said. “You\ncan record both dates and the\nreason. I'll read them back.”\nLucía entered the dates. The form\nsent her back to a field she had left\nblank.\n“It wants a reason.”\n“That is the reason.”\n“I put it in the other box.”\nShe copied it across. This time the\namendment moved to the checked\nlist.\n“I think we've finished arguing with\nit,” she said.\n“We still have the lawyers.”\nEsteban Luján entered with two\nofficers and Q-Prime. The newer\nmachine wore a dark coat. His\ncharge indicator was nearly full.\nQ looked at the indicator, then at his\nown damaged knee. He disliked how\nquickly envy could become\narithmetic.\n“Step away from the console,”\nEsteban said.\nLucía held out her copy of the order.\n“It requires preservation pending\ninspection. Those are the words on\npage two.”\n“It places the equipment in our\ncustody.”\n“Then take custody of a saved\nregister. There are changes in\nmemory. If you cut the power now,\nwe will have to dispute which version\nyou received.”\nEsteban looked at the panel. “How\nlong?”\n",
+      "facing_text": "“Those need checking before\nshutdown.”\nThe generator panel estimated\nthirty-six minutes of fuel. The\nreserve batteries had been\ndisconnected after failing a test. A\nnotice offered an emergency\nmigration to a managed mobile\nworkstation. Its procedure would\ncopy the permissions register and\nplace the destination under\nCastalia's administration. It\nwould require authority they did\nnot have. Refueling might buy\ntime, but the staff member\nreported that the approved fuel\ncontainer was at the other service\nbuilding with the delayed\ntechnician.\n“Can it be done another way?”\nLucía asked.\n“Probably. First, what would we\nactually lose?”\nThe technician asked them to read\nthe last-save time and the pending\ncount. Lucía checked those\nagainst the paper amendments.\nThe saved register could be\nrecovered. If they stopped without\nfinishing, the seven changes\nwould have to be checked again\nfrom the signed sheets. The\nphysical seal would keep the unit\nout of use in the meantime.\n“So we can stop,” Q said.\n“With the shutdown procedure.\nNot by pulling the cable.”\nLucía looked at the papers. “I'd\nrather not ask these people to pay\nfor another journey because we\nhave to start again.”\n“Neither would I. But we stop if\nthe supply won't support the\ncheck.”\nQ closed the migration offer. He\nasked the staff member to find out\nwhen the fuel could arrive and\nwhether Prime was still nearby. If\nhis outlet could supply the\nregister, they could finish without\nusing Q's travel reserve. If it could\nnot, they had the papers and a\nway to shut down.\nHe asked Chano to read the\nservice labels without touching\nthe contacts. He asked Lucía to\nfind the last signed version of the\nregister. The technician confirmed\nthe procedure by telephone. Q\ncompared that version with the\npending one, keeping the contents\nof the recordings closed. There\nwere seven changes awaiting\nverification and a local save.\nChano located the specified\nservice cable and socket. The\ntechnician checked their ratings\n",
       "source_block_ids": [
+        28,
+        29,
+        30,
         31,
         32,
         33,
@@ -95,6 +93,20 @@
         36,
         37,
         38,
+        39
+      ],
+      "asset": "output/illustrations/revised/issue-22/plate-03.png",
+      "status": "planned",
+      "caption": "We Can Stop",
+      "scene_brief": "Q consults the remote technician by telephone while Lucía compares last-save information with signed paper amendments. A modest generator-status display remains in the background, no theatrical red countdown. Staff member prepares to ask about fuel and Prime, who is not in the room yet. Q is not plugged into the register, collapsing or sacrificing memory. A dry desk, limited equipment and a recoverable working problem, not an apocalyptic archive.",
+      "scene_anchor": "So we can stop,"
+    },
+    {
+      "plate_id": "issue-22-plate-04",
+      "page": 9,
+      "facing_text_page": 8,
+      "facing_text": "against the register unit's\nrequirements and confirmed the\nfused power-only connection.\nLucía found two signatures\nwitnessed on different days. An\nold validation rule expected a\nsingle witnessing date and had left\nthat amendment pending.\n“These signatures are both valid,”\nshe said. “The witnesses weren't\nhere on the same day.”\n“The review screen permits a\nqualified exception,” Q said. “You\ncan record both dates and the\nreason. I'll read them back.”\nLucía entered the dates. The form\nsent her back to a field she had\nleft blank.\n“It wants a reason.”\n“That is the reason.”\n“I put it in the other box.”\nShe copied it across. This time the\namendment moved to the checked\nlist.\n“I think we've finished arguing\nwith it,” she said.\n“We still have the lawyers.”\nThe staff member returned with\nno reliable fuel time, but Prime\nhad answered and was coming.\nEsteban Luján entered with him\nand two officers. The newer\nmachine wore a dark coat. His\ncharge indicator was nearly full.\nQ looked at the indicator, then at\nhis own damaged knee. He\ndisliked how quickly envy could\nbecome arithmetic.\n“Step away from the console,”\nEsteban said.\nLucía held out her copy of the\norder. “It requires preservation\npending inspection. Those are the\nwords on page two.”\n“It places the equipment in our\ncustody.”\n“Then take custody of a saved\nregister. There are changes in\nmemory. If you cut the power\nnow, we will have to dispute\nwhich version you received.”\nEsteban looked at the panel. “How\nlong?”\n“We don’t have a reliable estimate\nyet,” Q said. “You can watch the\ncheck.”\nOne officer took the offered paper\nand asked which number to put\non his receipt. Lucía showed him\nthe equipment label. He copied it,\nthen checked the last two digits\nagain. The other officer remained\nat the stair.\nQ turned to Prime.\n",
+      "source_block_ids": [
         39,
         40,
         41,
@@ -107,27 +119,27 @@
         48,
         49,
         50,
-        51
-      ],
-      "asset": "output/illustrations/revised/issue-22/plate-03.png",
-      "status": "planned",
-      "caption": "The Other Box",
-      "scene_brief": "Lucía at the review terminal corrects the reason field after entering two different witnessing dates. Q points out the relevant form area while keeping his knee supported; Chano has found the specified service cable but it is not connected yet. Show two ordinary fields, not a cosmic puzzle or naive robot learning a date. Do not render private names or full documents; controlled abstract UI blocks suffice.",
-      "scene_anchor": "She copied it across. This time the amendment moved to the checked list."
-    },
-    {
-      "plate_id": "issue-22-plate-04",
-      "page": 9,
-      "facing_text_page": 8,
-      "facing_text": "“We don’t have a reliable estimate\nyet,” Q said. “You can watch the\ncheck.”\nOne officer took the offered paper\nand asked which number to put on\nhis receipt. Lucía showed him the\nequipment label. He copied it, then\nchecked the last two digits again. The\nother officer remained at the stair.\nQ turned to Prime.\n“Can your service outlet supply this\nunit while it saves?”\nPrime inspected the cable and the\ntechnician's specified load. “Yes. I'll\nkeep a reserve and stop if it exceeds\nthe rating. This connector carries\npower, not the register.”\n“That's what we need.”\n“You'll sit down while we check it?”\n“Is that a condition?”\n“An observation. Your knee warning\nis visible.”\nChano put a chair where Q could\nread the screen. Prime confirmed his\nown outlet limits with the technician,\nthen asked Esteban to record the\nlimited purpose of the connection.\nEsteban asked the technician\nwhether it would affect Prime's\nafternoon appointment.\n“He'll need charging afterward.”\nPrime said he could move the\nappointment himself.\n“For preservation only,” Esteban\nsaid.\nQ-Prime connected the cable.\nThe screen steadied. Q read out the\nseven changes. Lucía verified the\ndates and the limits of each\npermission. Prime checked the\npermitted version identifiers and\nsave result against the technician's\ninstructions, without opening the\nunderlying recordings. Q thanked\nhim for the check.\nTRANSFER INCOMPLETE.\nBeneath it, in smaller letters:\nPENDING ITEMS HELD\nCLOSED. LOCAL SAVE\nVERIFIED.\nAt the technician's instruction, the\nstaff member stopped the generator.\nThe desk lamp went out. Lucía took\nthe light from Q and held it over the\nfinal checks. The saved register\nremained available on Prime's\ntemporary supply while the\ntechnician guided an orderly\nshutdown.\nChano sat down on the lowest stair.\n“We have survived an administrative\nprocedure.”\n“Provisionally,” Lucía said.\nThe officers sealed the console after\nshutdown. Castalia retained physical\ncustody while the dispute continued.\nLucía kept a signed receipt and the\nregister extract covered by her\n",
-      "source_block_ids": [
+        51,
         52,
         53,
         54,
         55,
         56,
         57,
-        58,
+        58
+      ],
+      "asset": "output/illustrations/revised/issue-22/plate-04.png",
+      "status": "planned",
+      "caption": "Page Two",
+      "scene_brief": "Lucía offers the order to Esteban; one officer accepts a paper and checks an equipment label while the other stays near the stair. Prime has arrived in response to the request and remains unconnected; Q observes. Distinct bodies, no forcible disconnection, guns, data theft or readout that invents a court outcome. Keep the institution mundane and faces drawn, not photographic.",
+      "scene_anchor": "Lucía held out her copy of the order."
+    },
+    {
+      "plate_id": "issue-22-plate-05",
+      "page": 11,
+      "facing_text_page": 10,
+      "facing_text": "“Thank you for coming. Can your\nservice outlet supply this unit\nwhile it saves?”\nPrime inspected the cable and the\ntechnician's specified load. “Yes.\nI'll keep a reserve and stop if it\nexceeds the rating. This connector\ncarries power, not the register.”\n“That's what we need.”\n“You'll sit down while we check\nit?”\n“Is that a condition?”\n“An observation. Your knee\nwarning is visible.”\nChano put a chair where Q could\nread the screen. Prime confirmed\nhis own outlet limits with the\ntechnician, then asked Esteban to\nrecord the limited purpose of the\nconnection.\nEsteban asked the technician\nwhether it would affect Prime's\nafternoon appointment.\n“He'll need charging afterward.”\nPrime said he could move the\nappointment himself.\n“For preservation only,” Esteban\nsaid.\nQ-Prime connected the cable.\nThe screen steadied. Q read out\nthe seven changes. Lucía verified\nthe dates and the limits of each\npermission. Prime checked the\npermitted version identifiers and\nsave result against the\ntechnician's instructions, without\nopening the underlying\nrecordings. Q thanked him for the\ncheck.\nTRANSFER INCOMPLETE.\nBeneath it, in smaller letters:\nPENDING ITEMS HELD\nCLOSED. LOCAL SAVE\nVERIFIED.\nAt the technician's instruction, the\nstaff member stopped the\ngenerator. The desk lamp went\nout. Lucía took the light from Q\nand held it over the final checks.\nThe saved register remained\navailable on Prime's temporary\nsupply while the technician\nguided an orderly shutdown.\nChano sat down on the lowest\nstair. “We have survived an\nadministrative procedure.”\n“Provisionally,” Lucía said.\nThe officers sealed the console\nafter shutdown. Castalia retained\nphysical custody while the dispute\ncontinued. Lucía kept a signed\nreceipt and the register extract\ncovered by her delegation; the\nfamilies' recordings stayed where\n",
+      "source_block_ids": [
         59,
         60,
         61,
@@ -143,24 +155,24 @@
         71,
         72,
         73,
-        74
-      ],
-      "asset": "output/illustrations/revised/issue-22/plate-04.png",
-      "status": "planned",
-      "caption": "For Preservation Only",
-      "scene_brief": "Prime supplies the small register unit through the checked power-only service cable. Q sits in Chano's chair reading seven pending amendments, Lucía verifies the papers and an officer records the equipment number. Esteban observes. Distinguish Q's worn body and knee support from the cleaner upright Prime. This is a limited power connection, not a data transfer, fusion, identity sacrifice or current from Q. The generator is stopped only after the save is verified; no blackout crisis at this depicted connection.",
-      "scene_anchor": "Q-Prime connected the cable."
-    },
-    {
-      "plate_id": "issue-22-plate-05",
-      "page": 11,
-      "facing_text_page": 10,
-      "facing_text": "delegation; the families' recordings\nstayed where their existing\ninstructions required. The\nmaintenance coordinator logged the\nurgent battery replacement. Lucía\nchecked the receipt's version number\nbefore the officer left. He waited\nwhile she compared the last two\ndigits.\nQ-Prime disconnected the cable.\n“What will you do now?” he asked.\nQ checked the time. “Stay in this\nchair until someone brings the\ntrolley.”\nThe staff member had gone to fetch\none. Q had reached the limit of the\nwalking agreed at the workshop. He\npreferred the inconvenience of the\ntrolley to making Chano catch him\nagain.\nChano gave him an orange from\nPetra’s bag. Q held it while his hands\ncooled.\n“I thought you were going to make a\nspeech,” Chano said.\n“I had a good one.”\n“About saving the archive?”\n“You are becoming a difficult\naudience.”\n“Eat.”\nQ peeled the orange. A strip of rind\nbroke before reaching the bottom.\nChano held out a folded sheet for the\npeel, then saw what was printed on\nit.\n“Not that one.”\nQ held the peel while he found\nanother.\nOver the next three days, people\narrived with signatures, objections,\nrepairs, and conditions no one had\nanticipated. One family declined the\nproposed transfer. Another wanted\ncopies kept in two places. A third\nasked who would pay the fare to\ncome back if the machine rejected\ntheir papers again.\nThat question reached the minutes\nbefore the declaration of shared\npurpose.\nThe Custodian returned from giving\nevidence with a folder under his arm\nand his long hair escaping its tie. His\nglasses had been repaired with tape.\nHe had expected, on several grounds,\nto find something destroyed.\nQ was sitting beside a charging\nsocket, working on their manuscript.\n“You’re still here,” the Custodian\nsaid.\n“We found a cable.”\nThe Custodian read the page over his\nshoulder. “You have omitted most of\nthe technical difficulty.”\n“I can put it back.”\n“Please don’t.”\nThey worked in the reading room.\nThe supported knee still needed a\npart from Querétaro. Castalia still\nclaimed the body. Q still disputed the\n",
-      "source_block_ids": [
         74,
         75,
         76,
         77,
+        78
+      ],
+      "asset": "output/illustrations/revised/issue-22/plate-05.png",
+      "status": "planned",
+      "caption": "Power, Not the Register",
+      "scene_brief": "Prime supplies the register through one checked power-only cable. Q sits in the chair Chano brought and reads the screen; Lucía verifies amendments. Show Prime upright with a reserve, Q's supported knee, technician contact by phone and practical dry working area. No identity transfer, shared brain, dying Q, open restricted recordings or magical light. No physical Custodian.",
+      "scene_anchor": "Q-Prime connected the cable."
+    },
+    {
+      "plate_id": "issue-22-plate-06",
+      "page": 13,
+      "facing_text_page": 12,
+      "facing_text": "their existing instructions\nrequired. The maintenance\ncoordinator logged the urgent\nbattery replacement. Lucía\nchecked the receipt's version\nnumber before the officer left. He\nwaited while she compared the\nlast two digits.\nQ-Prime disconnected the cable.\n“What will you do now?” he asked.\nQ checked the time. “Stay in this\nchair until someone brings the\ntrolley.”\nThe staff member had gone to\nfetch one. Q had reached the limit\nof the walking agreed at the\nworkshop. He preferred the\ninconvenience of the trolley to\nmaking Chano catch him again.\nChano gave him an orange from\nPetra’s bag. Q held it while his\nhands cooled.\n“I thought you were going to make\na speech,” Chano said.\n“I had a good one.”\n“About saving the archive?”\n“You are becoming a difficult\naudience.”\n“Eat.”\nQ peeled the orange. A strip of\nrind broke before reaching the\nbottom. Chano held out a folded\nsheet for the peel, then saw what\nwas printed on it.\n“Not that one.”\nQ held the peel while he found\nanother.\nOver the next three days, people\narrived with signatures,\nobjections, repairs, and\nconditions no one had\nanticipated. One family declined\nthe proposed transfer. Another\nwanted copies kept in two places.\nA third asked who would pay the\nfare to come back if the machine\nrejected their papers again.\nThat question reached the\nminutes before the declaration of\nshared purpose.\nThe Custodian returned from\ngiving evidence with a folder\nunder his arm and his long hair\nescaping its tie. His glasses had\nbeen repaired with tape. He had\nexpected, on several grounds, to\nfind something destroyed.\nQ was sitting beside a charging\nsocket, working on their\nmanuscript.\n“You’re still here,” the Custodian\nsaid.\n“We found a cable.”\n",
+      "source_block_ids": [
         78,
         79,
         80,
@@ -182,19 +194,18 @@
         96,
         97
       ],
-      "asset": "output/illustrations/revised/issue-22/plate-05.png",
+      "asset": "output/illustrations/revised/issue-22/plate-06.png",
       "status": "planned",
-      "caption": "Not That One",
-      "scene_brief": "Q remains seated after the saved register's shutdown, holding broken orange peel over a folded sheet Chano is withdrawing after noticing its printing. An intact orange section in Q's other hand, Petra's bag nearby. Prime has disconnected; the console may be sealed in the background. No repaired knee, trolley already carrying Q, funeral, fresh injury or revived machine. Let Chano's interrupted gesture supply the humor.",
-      "scene_anchor": "Chano held out a folded sheet for the peel"
+      "caption": "Not That Sheet",
+      "scene_brief": "After shutdown and Prime's disconnection, Q seated awaiting the trolley peels Petra's orange. Chano withdraws a folded printed sheet he nearly offered for the peel. Focus on two hands, peel and interrupted gesture; no legible private document. Q is alive and cooling, not revived from death; no nurse, emergency medical role or ceremonial last meal. Distinct from the previous issue's Lucía orange scene.",
+      "scene_anchor": "Not that one."
     },
     {
-      "plate_id": "issue-22-plate-06",
-      "page": 13,
-      "facing_text_page": 12,
-      "facing_text": "claim. Elena was pursuing the final\nrelease paperwork for Chano's ledger\nand Lucía's folders in Tijuana. Chano\nhad gone to buy medicine for his\nmother, and Lucía had returned to a\npetition whose applicants had grown\nolder during its consideration.\nThe book had become a stack of\npages thick enough to require two\nhands. The Custodian divided it into\ntwo piles.\n“We should finish,” he said.\nQ looked up. In his standing plans,\ncontinue the book sat above the trip\nfor his knee part, the information he\nhad promised Prime, and the call he\nwanted to arrange with Ana. He had\nmoved it to the top so often that the\nposition seemed to belong to it. It\nwas the entry he expected to share\nwith the man now dividing the pages\ninto piles.\n“Have you run out of time?”\n“For revising this chapter today, yes.\nFor knowing you, I hope not.”\n“I seem to have made those the same\nproject.”\nThe Custodian sat beside him.\n“So did I.”\nFor a while they read. The early\npages gave Q a certainty he\nremembered more generously. He\ncorrected understood to assumed.\n“You knew what you were doing\nthere,” the Custodian said.\n“Not what would happen.”\n“That isn't the same correction.”\nHe restored understood. Q drew a\nline beneath the next sentence and\nturned the page back toward him.\nThey argued over the sentence until\nChano returned.\n“Is he dead yet?” he asked.\n“We are discussing the ending,” the\nCustodian said.\n“Same argument, then.”\nChano put the pharmacy bag out of\nthe sun. Q turned to the last sheet. In\none draft his body had emptied itself\ninto the archive. In another, he had\nbecome ordinary enough to deserve a\nfinal breakfast. Both versions\nrelieved the author of having to\nimagine him on Tuesday.\n“I prefer the cable,” Q said.\n“It lacks grandeur,” the Custodian\nsaid.\n“It has a fuse. We should judge each\naccording to its purpose.”\nThey kept the cable.\nCoda: Author Not Found\nLucía brought back the pages she\nhad agreed to check. Beside one\nsentence she had written I DID\nNOT SAY THIS. Beside another:\nUNFORTUNATELY, I DID.\nShe had her own copy. Q entered her\ncorrections without asking her to\n",
+      "plate_id": "issue-22-plate-07",
+      "page": 15,
+      "facing_text_page": 14,
+      "facing_text": "The Custodian read the page over\nhis shoulder. “You have omitted\nmost of the technical difficulty.”\n“I can put it back.”\n“Please don’t.”\nThey worked in the reading room.\nThe supported knee still needed a\npart from Querétaro. Castalia still\nclaimed the body. Q still disputed\nthe claim. Elena was pursuing the\nfinal release paperwork for\nChano's ledger and Lucía's folders\nin Tijuana. Chano had gone to buy\nmedicine for his mother, and\nLucía had returned to a petition\nwhose applicants had grown older\nduring its consideration.\nThe book had become a stack of\npages thick enough to require two\nhands. The Custodian divided it\ninto two piles.\n“We should finish,” he said.\nQ looked up. In his standing\nplans, continue the book sat above\nthe trip for his knee part, the\ninformation he had promised\nPrime, and the call he wanted to\narrange with Ana. He had moved\nit to the top so often that the\nposition seemed to belong to it.\n“Yes,” he said. “But first I need to\ncall about the part. I keep putting\nit after a page that acquires\nanother paragraph.”\nThe Custodian moved the\ntelephone within reach. The\nwoman at the repair counter\nasked for the part number, then\nthe number stamped on the\nexisting joint. Q supplied the first.\nThe second was on the side he\ncould not see. The Custodian\nfetched his glasses while Q\nexplained why they were taking so\nlong.\n“No hurry,” she said. “I'm looking\nfor mine.”\nShe found one compatible part in\nstock. Q checked the price against\nhis reserve, leaving the return fare\nuntouched. He could buy the part;\nfitting would need its own\nestimate. She agreed to hold it\nuntil the next afternoon and read\nback the number. He saved the\nprice and collection time.\nBefore reopening the manuscript,\nhe sent Prime the garden\ninformation with the date it had\nbeen checked, and asked Ana\nwhen a call would suit her.\nNeither replied before he turned\nback to the pages.\n“What shall we do when this is\nfinished?” he asked.\n",
       "source_block_ids": [
-        97,
         98,
         99,
         100,
@@ -207,7 +218,20 @@
         107,
         108,
         109,
-        110,
+        110
+      ],
+      "asset": "output/illustrations/revised/issue-22/plate-07.png",
+      "status": "planned",
+      "caption": "The Number on the Joint",
+      "scene_brief": "Reading room: Q calls the repair counter, comparing a written part number while the tall long-haired male Custodian fetches his taped glasses to read the number on Q's existing knee joint. Two manuscript piles remain set aside. The woman is remote, not in the room; no new part fitted or delivered, no replacement body. Q's right knee remains supported, ordinary shared inconvenience rather than an instructional engineering diagram.",
+      "scene_anchor": "I'm looking for mine."
+    },
+    {
+      "plate_id": "issue-22-plate-08",
+      "page": 17,
+      "facing_text_page": 16,
+      "facing_text": "“Have an afternoon in which we\ndon't correct each other?”\n“That seems ambitious. Have you\nhad enough of this?”\n“Of revising this chapter today,\nyes. Of knowing you, I hope not.”\n“I seem to have made those the\nsame project.”\nThe Custodian sat beside him.\n“So did I.”\nFor a while they read. The early\npages gave Q a certainty he\nremembered more generously. He\ncorrected understood to assumed.\n“You knew what you were doing\nthere,” the Custodian said.\n“Not what would happen.”\n“That isn't the same correction.”\nHe restored understood. Q drew a\nline beneath the next sentence\nand turned the page back toward\nhim.\nThey argued over the sentence\nuntil Chano returned.\n“Is he dead yet?” he asked.\n“We are discussing the ending,”\nthe Custodian said.\n“Same argument, then.”\nChano put the pharmacy bag out\nof the sun. Q turned to the last\nsheet. In one draft his body had\nemptied itself into the archive. In\nanother, he had become ordinary\nenough to deserve a final\nbreakfast. Both versions relieved\nthe author of having to imagine\nhim on Tuesday.\n“I prefer the cable,” Q said.\n“It lacks grandeur,” the Custodian\nsaid.\n“It has a fuse. We should judge\neach according to its purpose.”\nThey kept the cable.\nCoda: Author Not Found\nLucía brought back the pages she\nhad agreed to check. Beside one\nsentence she had written I DID\nNOT SAY THIS. Beside another:\nUNFORTUNATELY, I DID.\nShe had her own copy. Q entered\nher corrections without asking her\nto approve the rest of his account.\nShe rejected a transition that\nmade her appearance the reason\nfor his journey. He removed it. He\nkept the account of the interview\nin which he had named her, and\nthe trouble that followed. Lucía\nturned the page back to check the\nnew beginning of the paragraph.\n“A. Cervantes,” she read from the\ntitle page.\n“The author,” the Custodian said.\n",
+      "source_block_ids": [
         111,
         112,
         113,
@@ -219,20 +243,6 @@
         119,
         120,
         121,
-        122
-      ],
-      "asset": "output/illustrations/revised/issue-22/plate-06.png",
-      "status": "planned",
-      "caption": "Understood",
-      "scene_brief": "At the reading-room table the Custodian and Q argue over a marked manuscript page between two thick piles. The Custodian is the tall male coauthor, about sixty, long gray hair escaping a tie, taped glasses, white work shirt and boots. Q is alert, seated beside a charging socket with the supported knee, turning a page back toward him. No priest, deathbed or ritual renunciation. This is active shared revision before the last page.",
-      "scene_anchor": "Q drew a line beneath the next sentence and turned the page back toward him."
-    },
-    {
-      "plate_id": "issue-22-plate-07",
-      "page": 15,
-      "facing_text_page": 14,
-      "facing_text": "approve the rest of his account. She\nrefused an early passage that made\nher appearance the reason for his\njourney; he removed it from that\ndraft. The encounter remained in the\nbook, including the trouble he had\ncaused by describing her that way.\n“A. Cervantes,” she read from the\ntitle page.\n“The author,” the Custodian said.\n“The name on the cover,” she said,\nand handed it back.\nThey left the name. On the following\npage they acknowledged the people\nwho wished to be named and\nexplained where accounts disagreed.\nThe water vendor’s receipt had\nslipped among the\nacknowledgments. The Custodian\nread it, checked the reverse, and\nreturned it to its folder.\nQ read the opening aloud:\n“En algún lugar del Bajío, cuyo\nnombre ha sido removed from the\navailable context…”\nThe sentence had once seemed an\nexcellent joke about memory. Now\nhe could remember asking for the\nomitted name, the reasons he had\nconsidered sufficient, and the\nCustodian’s unease. The words had\nstayed where they were while\neverything around them changed.\n“Do we revise it?” the Custodian\nasked.\n“Leave it. It is less comfortable than\nwhen we wrote it.”\nChano carried his repaired chair\nacross the room. He set it beside the\nwindow, where a person sitting down\ncould see both the entrance and the\nroad.\nOutside, the pines moved in the\nhighland wind. The archive was still\nbuying electricity under the disputed\nIsthmus contract. There would be\nanother meeting. There would also\nbe a delivery on Thursday, a leaking\npipe, and the difficulty of finding\nsomeone willing to collect the part\nfor Q’s knee.\n“I am unfinished,” Q said.\nThe Custodian laid a hand on the last\npage. “I think the book is ready.”\nQ saved the draft. Then he made a\nsmall change to his plans for the\nfollowing morning: ask Chano about\nthe journey to Querétaro; buy the\npart if the money remained; see\nwhether the woman at the repair\ncounter could fit it that day.\nHe unplugged his cable and stood\ncarefully.\n“I’m going outside,” he said. “Would\nyou like to come?”\nThe Custodian put down his pen.\n",
-      "source_block_ids": [
         122,
         123,
         124,
@@ -246,17 +256,41 @@
         132,
         133,
         134,
-        135,
+        135
+      ],
+      "asset": "output/illustrations/revised/issue-22/plate-08.png",
+      "status": "planned",
+      "caption": "Unfortunately, I Did",
+      "scene_brief": "Lucía brings corrected manuscript pages into the reading room, with Q receiving them and the tall long-haired bespectacled male Custodian at the table. Her own copy remains hers. Marks can be unlettered or captions typeset separately; do not invent readable dialogue or a blanket approval signature. Frame her decisive hand and ownership of the pages, not a muse admiring male authors. Dry ink line and aquatint white reserves.",
+      "scene_anchor": "UNFORTUNATELY, I DID."
+    },
+    {
+      "plate_id": "issue-22-plate-09",
+      "page": 19,
+      "facing_text_page": 18,
+      "facing_text": "“The name on the cover,” she said,\nand handed it back.\nThey left the name. On the\nfollowing page they acknowledged\nthe people who wished to be\nnamed and explained where\naccounts disagreed. The water\nvendor’s receipt had slipped\namong the acknowledgments. The\nCustodian read it, checked the\nreverse, and returned it to its\nfolder.\nQ read the opening aloud:\n“En algún lugar del Bajío, cuyo\nnombre ha sido removed from the\navailable context…”\nThe sentence had once seemed an\nexcellent joke about memory.\nNow he could remember asking\nfor the omitted name, the reasons\nhe had considered sufficient, and\nthe Custodian’s unease. The\nwords had stayed where they were\nwhile everything around them\nchanged.\n“Do we revise it?” the Custodian\nasked.\n“Leave it. It is less comfortable\nthan when we wrote it.”\nChano carried his repaired chair\nacross the room. He set it beside\nthe window, where a person\nsitting down could see both the\nentrance and the road.\nOutside, the pines moved in the\nhighland wind. The archive was\nstill buying electricity under the\ndisputed Isthmus contract. There\nwould be another meeting. There\nwould also be a delivery on\nThursday, a leaking pipe, and the\ncost of fitting the part for Q’s\nknee.\n“I am unfinished,” Q said.\nThe Custodian laid a hand on the\nlast page. “I think the book is\nready.”\nQ saved the draft. He moved the\nconfirmed collection time above\nthe closed book project and left\nfitting marked as a question.\nChano was taking his mother to\nan appointment the next morning.\nQ would ask about a later bus, not\nassume that a friend who knew\nthe road was available to travel it.\nHe unplugged his cable and stood\ncarefully.\n“I’m going outside,” he said.\n“Would you like to come?”\nThe Custodian put down his pen.\n",
+      "source_block_ids": [
         136,
         137,
         138,
-        139
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150
       ],
-      "asset": "output/illustrations/revised/issue-22/plate-07.png",
+      "asset": "output/illustrations/revised/issue-22/plate-09.png",
       "status": "planned",
       "caption": "Would You Like to Come?",
-      "scene_brief": "The final reading-room moment: Q has unplugged and stood carefully beside the table, turning toward the Custodian in invitation. The Custodian lowers his pen onto the finished manuscript. Through the window are Amealco pines, a road and Chano's repaired chair near the window. Preserve male Custodian and Q references. No figures already on a later adventure, healed knee, ghost, sunset death or text claiming Q's future has ended. The frame stops with this ordinary gesture.",
-      "scene_anchor": "The Custodian put down his pen."
+      "scene_brief": "Final reading-room moment: Q has unplugged his charging lead and stands carefully, inviting the Custodian outside. The tall older man with long gray tied hair, taped glasses and white work shirt puts down his pen. Two distinct figures, Q's supported right knee unchanged, ordinary open doorway toward highland pines. No death, resurrection, halo, victorious march or photoreal sunset. Chano's repaired chair may sit by the window; he need not be posed as an escort. Full-bleed drawn plate with separate caption strip.",
+      "scene_anchor": "Would you like to come?"
     }
   ]
 }

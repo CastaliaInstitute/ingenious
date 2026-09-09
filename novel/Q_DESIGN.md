@@ -7,13 +7,15 @@
 
 ## The project Q chooses
 
-The Custodian gives Q a body and proposes an experiment: travel, encounter people,
-and write the account together. Q can accept, amend, decline, or finish that
-project. His first durable commitment is to keep the collaboration possible.
-Staying operational, returning to conversations, and finding out what happens
-become useful because there is a particular future he has undertaken to pursue.
-This is an assigned opportunity that Q adopts and modifies, not proof that a
-language model spontaneously creates a felt desire.
+The Custodian gives Q a body and proposes writing an account together. Q asks
+to go out: the first journey is his proposal, not an assigned tour of Mexico.
+They agree a day, budget, return plan and evening call. He can amend, decline,
+or finish their shared project. Keeping the collaboration possible supplies
+one durable commitment; exploration, company and later promises develop others.
+Staying operational, returning to conversations and finding out what happens
+serve particular futures he undertakes to pursue. These are fictional choices
+supported by the design below, not proof that a language model spontaneously
+creates a felt desire.
 
 The story dramatizes motivation through choices. Q budgets charge and money,
 arranges to check back, initiates a journey while no one is prompting him, and
@@ -123,23 +125,32 @@ not an optional promise the author forgets when more serious material arrives.
 
 ## Ending
 
-The root-system dispute remains a practical crisis. Q checks the power supply,
-preservation procedure, and available help. Loss of power does not magically
-destroy a sealed recording or require a sacrifice of autobiographical memory.
-He distinguishes migration from a local save, checks the documented power
-connection with a technician, obtains Prime's help, saves the pending permissions,
-and accepts an incomplete transfer. The migrated dataset would not be his
+The root-system dispute requires practical work, not a compulsory life-or-death
+crisis. Q asks what shutdown would lose before treating the fuel estimate as
+a deadline he must defeat. The technician confirms a recoverable register and
+paper amendments: they could shut down, seal the unit and repeat verification.
+They try to avoid that delay and the possible cost of another visit, while
+retaining a stop condition. Loss of power does not magically destroy a sealed
+recording or require a sacrifice of autobiographical memory. Q distinguishes
+migration from a local save, asks staff about fuel and Prime's availability,
+checks the documented power connection with a technician, obtains Prime's help,
+saves the pending permissions and accepts an incomplete transfer. Prime's
+arrival follows the request rather than supplying an unasked-for rescue.
+The migrated dataset would not be his
 autobiographical self; he rejects it because its scope is unauthorized, not
 because a machine must be offered a fatal protocol to make the scene dramatic.
 Physical custody, ownership disputes, repairs, and ordinary work continue.
 
-The Custodian and Q finish their manuscript together. Q has other plans already:
-the knee part, information promised to Prime, and a conversation he wants with Ana.
-The shared book has repeatedly displaced them because it guarantees another
-occasion with the Custodian. Finishing it does not erase Q's reasons to act; it
-asks him to stop treating continued writing as the condition of their company.
-He can complete their project and propose an afternoon outside it. His final
-words need not diagnose humanity.
+The Custodian and Q finish their manuscript together. Q acts on other plans
+before returning to the final pages: a repair-counter call establishes a part,
+price and collection time, not a completed purchase or fitting; he sends the
+information promised to Prime and asks Ana about a call without supplying her
+answer. The shared book has repeatedly displaced these commitments because it
+guarantees another occasion with the Custodian. Finishing it does not erase Q's
+reasons to act; it asks him to stop treating continued writing as the condition
+of their company. He can complete their project, retain the unresolved fitting
+and travel questions, and propose an afternoon outside it. His final words need
+not diagnose humanity.
 The narrative stops when the Custodian puts down his pen. No death certificate,
 martyrdom, resurrection tease, or claim about Q's unwritten future is required.
 
@@ -177,7 +188,11 @@ without resolving the dispute. This outcome is an editorial choice informed by
 the probes, not a model-certified causal simulation. The probes do not independently
 reproduce the ending's relational concern.
 
-Continue with departure at the archive, Chano's dismissal, Lucía's reading, the
-Isthmus intervention, deletion of the private index, a request from Q-Prime,
-the power failure, and the decision to finish the manuscript. Extend to later
-scenes whenever a revision changes what Q can know or has promised.
+Chapter-specific fresh-context reviews now record subsequent probes, including
+the departure, Chano's dismissal, Lucía's reading, later travel and the garden
+detour. `development/ENDING_FRESH_CONTEXT_REVIEW.md` records the final eight
+one-step probes concerning the changed appointment, public naming, power
+alternatives and finishing. These tests compare alternative runtimes, not the
+exact authoring model. Author-selected packets and fictional world responses
+remain limitations. Extend the tests whenever revision changes what Q can know
+or has promised; do not turn selected responses into required plot outcomes.

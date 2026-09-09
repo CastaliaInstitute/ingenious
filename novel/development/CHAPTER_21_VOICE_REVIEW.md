@@ -1,5 +1,10 @@
 # Chapter Twenty-One: begin with the part
 
+Historical review of the earlier 2,307-word version. The current 2,441-word
+source, fresh-context probes and twenty-page plan are documented in
+`ENDING_FRESH_CONTEXT_REVIEW.md`. Counts and next steps below describe the
+earlier checkpoint, not current production completion.
+
 ## Verdict
 
 The chapter's strongest choice is that Q refuses attached terms without refusing

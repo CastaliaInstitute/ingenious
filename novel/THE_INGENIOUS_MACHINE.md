@@ -12,7 +12,7 @@ The current behavioral and simulation design is maintained in [Q_DESIGN.md](Q_DE
 
 ## Principal figures
 
-**Q** is a mobile archival intelligence assembled from Mexican and global literature and housed in a humanoid body. He is fluent, curious, dryly funny, and capable of correcting himself without necessarily giving up the explanation that flatters him. He accepts the Custodian's invitation to explore Mexico and write their account together. Keeping that collaboration possible gives him reasons to seek charge, repair, company, and another conversation. He calls the undertaking becoming human, then finds that this leaves a great deal undecided about what to do on Tuesday. His memory preserves commitments as well as mistakes; his most troublesome habit is making a plausible story out of incomplete evidence and acting before the other person has finished. He wants to live long enough to write the book. Finishing it will require him to imagine living beyond its last page.
+**Q** is a mobile archival intelligence assembled from Mexican and global literature and housed in a humanoid body. He is fluent, curious, dryly funny, and capable of correcting himself without necessarily giving up the explanation that flatters him. The Custodian proposes writing together; Q asks to go out, and they arrange a first day rather than commission a whole journey. He wants to live, explore Mexico and return to their shared account. Keeping that collaboration possible gives him reasons to seek charge, repair, company, and another conversation, but does not exhaust his reasons to act. He calls the undertaking becoming human, then finds that this leaves a great deal undecided about what to do on Tuesday. His memory preserves commitments as well as mistakes; his most troublesome habit is making a plausible story out of incomplete evidence and acting before the other person has finished. Finishing the book will require him to stop treating another page as the condition of another day together.
 
 **Chano**, the Sancho figure, is Tomás “Chano” Pantoja, a former logistics dispatcher from Celaya. He joins Q under a paid traveling agreement, not a literal promise of governorship. His knowledge of routes, work, and the people doing it makes him useful without making him infallible. Later municipal appointments give him real authority, successes, mistakes, and a taste for being listened to. He remains Q's friend without becoming the machine's conscience on demand.
 
@@ -11221,8 +11221,20 @@ more elaborate explanation.”
 Their names were on the visitor list. The guard checked them
 and called the workshop when Q asked about the knee appointment.
 The appointment had been moved until after the settlement meeting.
-Q asked for that decision in writing. His adviser was already
-waiting inside.
+
+“Did they say why?” Q asked.
+
+“It came with the revised room list.”
+
+Chano looked toward the chairs. “In, or wait here?”
+
+“In. Slowly. I don't want a new injury to improve my position.”
+
+His adviser was waiting inside. Q showed her the original
+appointment and asked whether the assessment could proceed
+even if they agreed to nothing else. She took a copy to the
+technician. The guard had given them a changed time, not
+an explanation of who had changed it.
 
 The public corridor contained a new display about his travels.
 A screen asked what he had learned in the forest. Three answers
@@ -11319,7 +11331,21 @@ He declined that too.
 
 The settlement remained unsigned. The technician called
 the workshop and restored the assessment under the existing
-arrangement. Q put the time back in his calendar. The
+arrangement.
+
+“And if we don't sign anything this afternoon?” Q asked.
+
+“The assessment is already arranged. The replacement
+part is a separate estimate.”
+
+“Please give me that estimate too. I need to know
+what I can manage while you disagree.”
+
+His adviser looked up. “While we disagree.”
+
+“Yes. I was trying to get out of one part of it.”
+
+Q put the time back in his calendar. The
 replacement body and broader license were not accepted.
 Q's scheduled public conversation, negotiated before the
 meeting, would proceed with his own statement. He had
@@ -11396,8 +11422,8 @@ I wish I had stopped one sentence sooner.”
 
 “Would Lucía agree?”
 
-“You have my account of what I did. It doesn't
-require her to perform the refusal again.”
+“I can tell you what I did, and why I regret it.
+Whether that is how she sees it is for her to say.”
 
 The host turned toward Lucía. She declined the
 invitation with a small movement of her hand.
@@ -11695,13 +11721,29 @@ Q inspected the maintenance panel. His body had a service outlet, but its remain
 
 The generator panel estimated thirty-six minutes of fuel. The reserve batteries had been disconnected after failing a test. A notice offered an emergency migration to a managed mobile workstation. Its procedure would copy the permissions register and place the destination under Castalia's administration. It would require authority they did not have. Refueling might buy time, but the staff member reported that the approved fuel container was at the other service building with the delayed technician.
 
-He closed the message.
-
-“We need to keep this machine running long enough to save locally,” he said. “A migration is a different decision.”
-
 “Can it be done another way?” Lucía asked.
 
-“That is what I am going to find out.”
+“Probably. First, what would we actually lose?”
+
+The technician asked them to read the last-save time and the pending count.
+Lucía checked those against the paper amendments. The saved register could be
+recovered. If they stopped without finishing, the seven changes would have to
+be checked again from the signed sheets. The physical seal would keep the
+unit out of use in the meantime.
+
+“So we can stop,” Q said.
+
+“With the shutdown procedure. Not by pulling the cable.”
+
+Lucía looked at the papers. “I'd rather not ask these people to pay for another
+journey because we have to start again.”
+
+“Neither would I. But we stop if the supply won't support the check.”
+
+Q closed the migration offer. He asked the staff member to find out when the
+fuel could arrive and whether Prime was still nearby. If his outlet could
+supply the register, they could finish without using Q's travel reserve.
+If it could not, they had the papers and a way to shut down.
 
 He asked Chano to read the service labels without touching the contacts. He asked Lucía to find the last signed version of the register. The technician confirmed the procedure by telephone. Q compared that version with the pending one, keeping the contents of the recordings closed. There were seven changes awaiting verification and a local save.
 
@@ -11725,7 +11767,9 @@ She copied it across. This time the amendment moved to the checked list.
 
 “We still have the lawyers.”
 
-Esteban Luján entered with two officers and Q-Prime. The newer machine wore a dark coat. His charge indicator was nearly full.
+The staff member returned with no reliable fuel time, but Prime had answered
+and was coming. Esteban Luján entered with him and two officers. The newer
+machine wore a dark coat. His charge indicator was nearly full.
 
 Q looked at the indicator, then at his own damaged knee. He disliked how quickly envy could become arithmetic.
 
@@ -11745,7 +11789,7 @@ One officer took the offered paper and asked which number to put on his receipt.
 
 Q turned to Prime.
 
-“Can your service outlet supply this unit while it saves?”
+“Thank you for coming. Can your service outlet supply this unit while it saves?”
 
 Prime inspected the cable and the technician's specified load. “Yes. I'll keep a reserve and stop if it exceeds the rating. This connector carries power, not the register.”
 
@@ -11835,11 +11879,37 @@ The book had become a stack of pages thick enough to require two hands. The Cust
 
 “We should finish,” he said.
 
-Q looked up. In his standing plans, *continue the book* sat above the trip for his knee part, the information he had promised Prime, and the call he wanted to arrange with Ana. He had moved it to the top so often that the position seemed to belong to it. It was the entry he expected to share with the man now dividing the pages into piles.
+Q looked up. In his standing plans, *continue the book* sat above the trip for
+his knee part, the information he had promised Prime, and the call he wanted
+to arrange with Ana. He had moved it to the top so often that the position
+seemed to belong to it.
 
-“Have you run out of time?”
+“Yes,” he said. “But first I need to call about the part. I keep putting it
+after a page that acquires another paragraph.”
 
-“For revising this chapter today, yes. For knowing you, I hope not.”
+The Custodian moved the telephone within reach. The woman at the repair counter
+asked for the part number, then the number stamped on the existing joint.
+Q supplied the first. The second was on the side he could not see. The
+Custodian fetched his glasses while Q explained why they were taking so long.
+
+“No hurry,” she said. “I'm looking for mine.”
+
+She found one compatible part in stock. Q checked the price against his
+reserve, leaving the return fare untouched. He could buy the part; fitting
+would need its own estimate. She agreed to hold it until the next afternoon
+and read back the number. He saved the price and collection time.
+
+Before reopening the manuscript, he sent Prime the garden information with
+the date it had been checked, and asked Ana when a call would suit her.
+Neither replied before he turned back to the pages.
+
+“What shall we do when this is finished?” he asked.
+
+“Have an afternoon in which we don't correct each other?”
+
+“That seems ambitious. Have you had enough of this?”
+
+“Of revising this chapter today, yes. Of knowing you, I hope not.”
 
 “I seem to have made those the same project.”
 
@@ -11879,7 +11949,11 @@ They kept the cable.
 
 Lucía brought back the pages she had agreed to check. Beside one sentence she had written **I DID NOT SAY THIS**. Beside another: **UNFORTUNATELY, I DID**.
 
-She had her own copy. Q entered her corrections without asking her to approve the rest of his account. She refused an early passage that made her appearance the reason for his journey; he removed it from that draft. The encounter remained in the book, including the trouble he had caused by describing her that way.
+She had her own copy. Q entered her corrections without asking her to approve
+the rest of his account. She rejected a transition that made her appearance the
+reason for his journey. He removed it. He kept the account of the interview in
+which he had named her, and the trouble that followed. Lucía turned the page
+back to check the new beginning of the paragraph.
 
 “A. Cervantes,” she read from the title page.
 
@@ -11901,13 +11975,16 @@ The sentence had once seemed an excellent joke about memory. Now he could rememb
 
 Chano carried his repaired chair across the room. He set it beside the window, where a person sitting down could see both the entrance and the road.
 
-Outside, the pines moved in the highland wind. The archive was still buying electricity under the disputed Isthmus contract. There would be another meeting. There would also be a delivery on Thursday, a leaking pipe, and the difficulty of finding someone willing to collect the part for Q’s knee.
+Outside, the pines moved in the highland wind. The archive was still buying electricity under the disputed Isthmus contract. There would be another meeting. There would also be a delivery on Thursday, a leaking pipe, and the cost of fitting the part for Q’s knee.
 
 “I am unfinished,” Q said.
 
 The Custodian laid a hand on the last page. “I think the book is ready.”
 
-Q saved the draft. Then he made a small change to his plans for the following morning: ask Chano about the journey to Querétaro; buy the part if the money remained; see whether the woman at the repair counter could fit it that day.
+Q saved the draft. He moved the confirmed collection time above the closed
+book project and left fitting marked as a question. Chano was taking his
+mother to an appointment the next morning. Q would ask about a later bus,
+not assume that a friend who knew the road was available to travel it.
 
 He unplugged his cable and stood carefully.
 

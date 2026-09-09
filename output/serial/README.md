@@ -13,6 +13,15 @@ under review. The same-text typography comparison supports retaining left-aligne
 body columns: the tested justification introduced distracting word spacing.
 No issue pagination changed for this comparison.
 
+The final two chapters now have revised sources and ten-plate plans apiece.
+Issue 21 has 2,441 words at Georgia 14/19.8333; Issue 22 has 2,769 words at
+13/18.4167. Each fits twenty continuously flowing pages and five nested A3
+sheets. Exact text, all forty imposed positions and embedded fonts pass;
+the artwork is still planned, not a finished illustrated release. See the
+[ending review](../../novel/development/ENDING_FRESH_CONTEXT_REVIEW.md) and
+the scene plans for [Issue 21](../illustrations/revised/issue-21/manifest.json)
+and [Issue 22](../illustrations/revised/issue-22/manifest.json).
+
 Chapter Twenty has a revised 3,096-word source and a twelve-plate plan for
 24 pages at Georgia 14/19.8333, with continuous left-aligned text. Its internal
 six-sheet A3 layout passes source-order, imposition and font checks; the

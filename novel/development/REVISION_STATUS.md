@@ -1,5 +1,32 @@
 # Motivation revision: working record
 
+## Latest voice checkpoint: the final two chapters
+
+Chapters Twenty-One and Twenty-Two now carry the repair question into an explicit
+assessment/estimate exchange, let Q ask what shutdown would actually lose, and
+retain a recoverable stop option while seeking Prime's help. Prime's arrival
+follows a request. Before the final pages Q calls about the knee part, protects
+return fare, arranges a hold, sends Prime the garden information and asks Ana
+about a call. Replies and fitting remain unresolved. The coda distinguishes a
+false draft transition about Lucía from the actual interview in which Q named
+her. Front matter, outline and behavioral design now match Q's request to leave,
+not an assigned journey. See `ENDING_FRESH_CONTEXT_REVIEW.md`.
+
+Eight fresh-context alternative-model probes informed review; they are not
+exact-model simulation or faculty approval. Internal layouts: Issue 21 has
+2,441 words at Georgia 14/19.8333; Issue 22 has 2,769 at 13/18.4167. Each has
+twenty pages, ten planned plates and ten A3 sides / five nested sheets. All
+eighteen text pages and both inner spreads were visually checked. Exact source
+order, forty actual imposed positions, embedded fonts and all 22 actual source
+bindings pass. Other twenty chapters/manifests, outline entries 1-20 and all
+38 prior issue PDFs remain unchanged from `3bea0fac`. The final line remains
+the Custodian putting down his pen, not a required physical death.
+
+Issues 20-22 still need 32 planned Goya plates and finished illustrated PDFs.
+Earlier style correction, whole-book pacing/cultural review, fuller branch tests
+and Spanish synchronization remain. No new art approval, A+ claim or printing.
+The full goal remains active.
+
 ## Latest voice checkpoint: Chapter Twenty
 
 Q now negotiates the Las Pozas detour with companions who have their own plans,
