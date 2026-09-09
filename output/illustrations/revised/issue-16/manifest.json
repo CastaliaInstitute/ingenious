@@ -1,26 +1,45 @@
 {
   "issue": 16,
-  "revision": "2026-09-08-life-beyond-the-account",
+  "revision": "2026-09-08-goya-hearing-plates",
   "source": "novel/THE_INGENIOUS_MACHINE.md",
   "chapter_sha256": "bd53369485c17976d915ad1d3d2f61c19ad59e5e00993341bb930d96675be41c",
   "page_count": 20,
   "text_font": "Georgia 12.4/17.566666666666666 pt",
   "plate_count_including_cover": 10,
-  "status": "revised source and exact-facing illustration plan; no approved art",
-  "character_reference": "output/illustrations/revised/issue-01/cover.png",
+  "status": "complete illustrated revision proof; visual and automated source/image/imposition verification passed",
+  "character_reference": "output/illustrations/revised/issue-15/plate-03.png",
   "chano_reference": "output/illustrations/revised/issue-03/plate-06.png",
   "lucia_reference": "output/illustrations/revised/issue-03/plate-04.png",
   "character_design": "Q retains approved narrow segmented head, round ear mechanisms, exposed neck, question-mark breastplate, short fitted dark jacket with long sleeves and supported knee. Chano and Lucía follow their approved references. Custodian is a tall man about sixty, long tied-back gray hair, glasses, white work shirt and boots: he testifies in person, then speaks by phone after watching the replay. Hilario is the water vendor seen remotely, not retired miner Don Hilario. Q's lower face includes a small mechanical sampling mouth; do not simplify it into a blank mask. Use the corrected Goya pilot for Q-family identity, not photographic surface detail.",
   "art_direction": "Neutral monochrome Goya-inspired etching and aquatint with economical drawn contours and broad tonal masses, pure white highlights, no sepia or cream ink wash. Full bleed at comic trim, separate typeset caption margin. Near-future Mexican hearing in a renovated cinema, not a purportedly documented real courtroom or a medieval inquisition. Nine unique exact-facing scenes plus cover. No readable protected records, no illustration of the invented turbine charge as an actual event, no seizure of the already delivered module. Governing reference: novel/development/GOYA_ART_DIRECTION.md. Earlier plates guide identity only; do not imitate their photographic rendering.",
-  "approval_scope": "Source revised after fresh-context inference and author review. Ten exact-facing scenes remain planned and none may pass the illustrated production gate. Internal layout verification is separate from art approval.",
+  "approval_scope": "Ten native scenes, all twenty reading pages and ten A3 sides visually inspected; automated checks passed for source order, all 22 bindings, native grayscale images, embedded fonts and all twenty imposed slots. Revision-proof approval only, not A+ or press master.",
   "plates": [
     {
       "plate_id": "issue-16-cover",
       "page": 1,
       "asset": "output/illustrations/revised/issue-16/cover.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The Trial of the Machine",
-      "scene_brief": "Wide view from the rear seats of the renovated cinema used for the hearing: Q sits among ordinary tables, advisers, clerks and competing stacks of papers, dwarfed by the old screen and theater architecture. Institutional spectacle without a symbolic execution. No chains, lance, giant attack or readable private exhibit. Leave clear space for separately typeset title; use the wide auditorium composition only on this cover."
+      "scene_brief": "Wide view from the rear seats of the renovated cinema used for the hearing: Q sits among ordinary tables, advisers, clerks and competing stacks of papers, dwarfed by the old screen and theater architecture. Institutional spectacle without a symbolic execution. No chains, lance, giant attack or readable private exhibit. Leave clear space for separately typeset title; use the wide auditorium composition only on this cover.",
+      "asset_sha256": "2449e8b280d3d8e96d331c401605740c50c65054b578051d9e6be568ba0853f0",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in image_gen",
+      "generation_prompt": "Use case: illustration-story. Create a NEW portrait full-page plate for The Ingenious Machine. Near-future contemporary Mexico City. Drawing in Francisco Goya's Los Caprichos ETCHING AND AQUATINT idiom: thin economical broken etched contours, broad flat granular dark masses, bold PURE WHITE reserves, compressed space, expressive unidealized gestures. Do not render a photograph with a scratch filter. Reduce incidental detail and modeling; no photographic faces, 3D metal highlights, cinematic depth, vector cartoon outlines or uniform hatching. Neutral black and gray on pure white; NO sepia, cream ink, aged paper, borders or caption band. Compose edge-to-edge 2:3 portrait, keep important faces/hands above bottom5%; captions will be typeset separately. No text, logos, watermarks, invented captions, animals or surreal symbolism. All clothes contemporary, not eighteenth-century costumes. Reference1 is Goya STYLE ONLY: do not copy sleeper, owls, caption, paper or frame. Other references are explicitly IDENTITY ONLY; do not copy their compositions or photo-like surface detail. Q is a slim adult articulated robot: SAME narrow segmented oval metal head, recessed round eyes, concentric circular ears, long mechanical neck, small mechanical sampling mouth and hinged lower plate, question-mark breastplate. Short fitted dark jacket with LONG sleeves, exposed metal legs, support around anatomical RIGHT knee. Humanly attentive posture, never blank egg mask, bulky android, childlike toy or knight. Q's own adviser is a woman about50 with SHORT silver-brown hair and rectangular glasses, simple dark blazer and light blouse, not long-haired institute counsel or Marisol. Scene: hearing in a modest renovated old cinema, low former stage, plain rectangular hearing tables, old blank projection screen, curtains and a few rear seats. Wide composition viewed from rear seats, Q and his adviser at ordinary table seen in three-quarter profile, clerks and other counsel at separate tables with paperwork. People dwarfed by empty screen and architecture, institutional comedy without execution imagery. Sparse crowd not medieval tribunal, no cages/chains/weapons, no giant image. Reserve entire upper quarter as CLEAN WHITE blank screen/wall space for later title. Wide auditorium view belongs only to this cover; fewer decisive contours, dominant dark seats and bright papers.",
+      "generation_references": [
+        "output/illustrations/goya-pilot/references/capricho-43-met.jpg",
+        "output/illustrations/revised/issue-15/plate-03.png"
+      ],
+      "generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-61ff994f-f46d-480b-b87b-70421aec6e8d.png",
+      "review_note": "Wide converted-cinema hearing; Q and short-haired adviser among ordinary tables. Blank screen supports title. No symbolic execution.",
+      "approval_scope": "visually reviewed in native image, reading page and A3 side; revision proof only",
+      "title_lines": [
+        "The Ingenious",
+        "Machine"
+      ],
+      "title_center_x_pt": 280
     },
     {
       "plate_id": "issue-16-plate-01",
@@ -39,10 +58,24 @@
         8
       ],
       "asset": "output/illustrations/revised/issue-16/plate-01.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "A Place at the Table",
       "scene_brief": "Before testimony, Q sits beside his female adviser in the renovated cinema, cautiously resting his supported knee and foot on a low projection-booth stool. The clerk moves a cable away from the aisle. Low eye-level framing emphasizes practical accommodation and the distance to the hearing table, not a chained robot or a ritual trial. No turbine attack or invented court costume.",
-      "scene_anchor": "The clerk moved the cable instead."
+      "scene_anchor": "The clerk moved the cable instead.",
+      "asset_sha256": "bfeedd5be3fc2d62dfd2485af3b3ce537edf2052fbb71f76243b7789877c89ef",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in image_gen",
+      "generation_prompt": "Use case: illustration-story. Create a NEW portrait full-page plate for The Ingenious Machine. Near-future contemporary Mexico City. Drawing in Francisco Goya's Los Caprichos ETCHING AND AQUATINT idiom: thin economical broken etched contours, broad flat granular dark masses, bold PURE WHITE reserves, compressed space, expressive unidealized gestures. Do not render a photograph with a scratch filter. Reduce incidental detail and modeling; no photographic faces, 3D metal highlights, cinematic depth, vector cartoon outlines or uniform hatching. Neutral black and gray on pure white; NO sepia, cream ink, aged paper, borders or caption band. Compose edge-to-edge 2:3 portrait, keep important faces/hands above bottom5%; captions will be typeset separately. No text, logos, watermarks, invented captions, animals or surreal symbolism. All clothes contemporary, not eighteenth-century costumes. Reference1 is Goya STYLE ONLY: do not copy sleeper, owls, caption, paper or frame. Other references are explicitly IDENTITY ONLY; do not copy their compositions or photo-like surface detail. Q is a slim adult articulated robot: SAME narrow segmented oval metal head, recessed round eyes, concentric circular ears, long mechanical neck, small mechanical sampling mouth and hinged lower plate, question-mark breastplate. Short fitted dark jacket with LONG sleeves, exposed metal legs, support around anatomical RIGHT knee. Humanly attentive posture, never blank egg mask, bulky android, childlike toy or knight. Q's own adviser is a woman about50 with SHORT silver-brown hair and rectangular glasses, simple dark blazer and light blouse, not long-haired institute counsel or Marisol. Scene: before hearing, low eye-level view of Q seated at plain table beside adviser in same modest converted cinema. His anatomical RIGHT foot rests horizontally on a low wooden stool brought from projection booth, supporting his braced right knee; other foot on floor. A male clerk in ordinary shirt crouches to move a loose cable out of aisle, NOT fastening anything to Q. Adviser reviews pages, Q looks toward clerk in acknowledgement. Exactly three people; simple old theater curtain behind, part of table and chair legs. Focus bodily accommodation, no machinery restraints or chains.",
+      "generation_references": [
+        "output/illustrations/goya-pilot/references/capricho-43-met.jpg",
+        "output/illustrations/revised/issue-15/plate-03.png"
+      ],
+      "generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-a4356f0e-9146-4e83-bcb7-e6a7a11b3d96.png",
+      "review_note": "Q's braced right foot rests on low stool; clerk moves loose cable, not a restraint. Adviser matches short-haired glasses design.",
+      "approval_scope": "visually reviewed in native image, reading page and A3 side; revision proof only"
     },
     {
       "plate_id": "issue-16-plate-02",
@@ -76,10 +109,33 @@
         31
       ],
       "asset": "output/illustrations/revised/issue-16/plate-02.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Cold Water, Live Evidence",
       "scene_brief": "View from the hearing room toward the video display: water vendor Hilario at his roadside stock of bottles, making change for a customer's hand entering the picture. The tub of cold bottles is under his table. Counsel pauses in the foreground. Hilario is remote, not physically at the hearing; do not confuse him with retired miner Don Hilario or place Q at the stall.",
-      "scene_anchor": "Hilario found the change and asked someone out of view to watch the table."
+      "scene_anchor": "Hilario found the change and asked someone out of view to watch the table.",
+      "asset_sha256": "7ab8a40091498092b17a4cadb7ed29657853d27fae1b8911c305b80af2435ad4",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in image_gen",
+      "generation_prompt": "Use case: illustration-story. Create a NEW portrait full-page plate for The Ingenious Machine. Near-future contemporary Mexico City. Drawing in Francisco Goya's Los Caprichos ETCHING AND AQUATINT idiom: thin economical broken etched contours, broad flat granular dark masses, bold PURE WHITE reserves, compressed space, expressive unidealized gestures. Do not render a photograph with a scratch filter. Reduce incidental detail and modeling; no photographic faces, 3D metal highlights, cinematic depth, vector cartoon outlines or uniform hatching. Neutral black and gray on pure white; NO sepia, cream ink, aged paper, borders or caption band. Compose edge-to-edge 2:3 portrait, keep important faces/hands above bottom5%; captions will be typeset separately. No text, logos, watermarks, invented captions, animals or surreal symbolism. All clothes contemporary, not eighteenth-century costumes. Reference1 is Goya STYLE ONLY: do not copy sleeper, owls, caption, paper or frame. Other references are explicitly IDENTITY ONLY; do not copy their compositions or photo-like surface detail. Image2 is ONLY identity of lean older water vendor at left, Hilario: sparse mustache, short graying hair, lined narrow face, light striped short-sleeved shirt. Ignore its robot, other man and photographic texture. New scene: large video display in converted cinema courtroom, a dark sliver of counsel's profile and suspended pen in foreground. ALL of Hilario, his stock of water bottles and roadside table exist INSIDE the clearly bounded screen, not physically in hearing room. Screen shows vendor making change into customer's hand entering from screen edge; a tub of cold bottles UNDER stall table, stock behind, plain cap on corner. No robot on screen or stall. Medium composition dominated by screen within frame, stylize video with SAME economical Goya drawing, no photorealistic inset. A real customer interrupts testimony; no readable captions.",
+      "generation_references": [
+        "output/illustrations/goya-pilot/references/capricho-43-met.jpg",
+        "output/illustrations/revised/issue-02/plate-12.png"
+      ],
+      "generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-921bc48e-80eb-4a0a-9eb2-0a4a70f88880.png",
+      "review_note": "Remote Hilario makes change on bounded projection screen; targeted edit places cold-water tub under table. Counsel remains in hearing foreground.",
+      "approval_scope": "visually reviewed in native image, reading page and A3 side; revision proof only",
+      "edit_history": [
+        {
+          "prompt": "Use case: precise-object-edit. Image1 is edit target. Correct ONLY the cold-water container within the projected video: move the open insulated tub with cold bottles DOWN UNDER Hilario's roadside table, clearly below tabletop between legs, still visible from the video viewpoint. Remove its previous tabletop placement; leave rows of stock bottles and cap on table. Keep Hilario lean older water vendor, hand making change, customer arm, screen edges, hearing-room counsel silhouette and pen, cinema furnishings and all other content identical. Preserve Goya drawn etching/aquatint, thin contours and broad grain masses, not photorealism. Neutral black-gray with paper-white highlights, no lettering or border. Do not move vendor physically into hearing room.",
+          "references": [
+            "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-3bc004f6-c7dd-4e8e-a212-c6b8ee1295b6.png"
+          ],
+          "reason": "Cold tub was incorrectly above table."
+        }
+      ]
     },
     {
       "plate_id": "issue-16-plate-03",
@@ -108,10 +164,25 @@
         50
       ],
       "asset": "output/illustrations/revised/issue-16/plate-03.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The Third Answer",
       "scene_brief": "During the hearing recess Chano offers Q a paper cup beside an ordinary water dispenser. Two companions, slight smile and unceremonious posture, no consoling embrace or heroic benediction. Keep the short fitted dark jacket, mechanical hand and practical knee support. Chano has copies and a folder, not the original Tijuana ledger.",
-      "scene_anchor": "Chano held out a paper cup."
+      "scene_anchor": "Chano held out a paper cup.",
+      "asset_sha256": "dd467ae6bca43336d834b0b5d0316e85d42e96551f4eb2fa89b14e2c3f83f590",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in image_gen",
+      "generation_prompt": "Use case: illustration-story. Create a NEW portrait full-page plate for The Ingenious Machine. Near-future contemporary Mexico City. Drawing in Francisco Goya's Los Caprichos ETCHING AND AQUATINT idiom: thin economical broken etched contours, broad flat granular dark masses, bold PURE WHITE reserves, compressed space, expressive unidealized gestures. Do not render a photograph with a scratch filter. Reduce incidental detail and modeling; no photographic faces, 3D metal highlights, cinematic depth, vector cartoon outlines or uniform hatching. Neutral black and gray on pure white; NO sepia, cream ink, aged paper, borders or caption band. Compose edge-to-edge 2:3 portrait, keep important faces/hands above bottom5%; captions will be typeset separately. No text, logos, watermarks, invented captions, animals or surreal symbolism. All clothes contemporary, not eighteenth-century costumes. Reference1 is Goya STYLE ONLY: do not copy sleeper, owls, caption, paper or frame. Other references are explicitly IDENTITY ONLY; do not copy their compositions or photo-like surface detail. Q is a slim adult articulated robot: SAME narrow segmented oval metal head, recessed round eyes, concentric circular ears, long mechanical neck, small mechanical sampling mouth and hinged lower plate, question-mark breastplate. Short fitted dark jacket with LONG sleeves, exposed metal legs, support around anatomical RIGHT knee. Humanly attentive posture, never blank egg mask, bulky android, childlike toy or knight. Image2 identities ONLY: Chano is stocky middle-aged Mexican man with wavy dark hair, thick mustache, plain rolled-sleeve work shirt. No Lucía in this scene. Image3 Q face. Scene: hallway recess outside converted cinema hearing, ordinary water dispenser with large water bottle atop. Chano holds out a small paper cup to Q, who reaches to accept it while looking at Chano. Warm small smile, unceremonious adult friendship, not blessing or instruction. Three-quarter standing pair, Q right-knee support visible, short long-sleeved jacket. Chano has only a thin copies folder tucked under opposite arm, NOT bound original ledger or box. Sparse hallway, no audience, strong white reserve between hands, compressed shapes, not posed commemorative portrait.",
+      "generation_references": [
+        "output/illustrations/goya-pilot/references/capricho-43-met.jpg",
+        "output/illustrations/goya-pilot/before-lunch-goya-v4.png",
+        "output/illustrations/revised/issue-15/plate-03.png"
+      ],
+      "generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-fd25a8c4-dff5-45c1-af91-303966dcf62a.png",
+      "review_note": "Chano offers paper cup to Q beside dispenser; warm adult exchange, thin folder only. Q's sampling mouth and jacket retained.",
+      "approval_scope": "visually reviewed in native image, reading page and A3 side; revision proof only"
     },
     {
       "plate_id": "issue-16-plate-04",
@@ -138,10 +209,24 @@
         66
       ],
       "asset": "output/illustrations/revised/issue-16/plate-04.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The Original Permission",
       "scene_brief": "Tall male Custodian gives evidence in person, long gray hair tied back and glasses halfway down his nose, reading his original day-trip authorization. White work shirt, ordinary table and papers, restrained theater fixtures behind him. Q can be seen seated with his adviser in the side distance. Do not make the Custodian female, bald, a robed judge or a remote video witness; the document is permission to leave, not a transfer of ownership.",
-      "scene_anchor": "His long hair was tied back; his glasses rested halfway down his nose"
+      "scene_anchor": "His long hair was tied back; his glasses rested halfway down his nose",
+      "asset_sha256": "197946e9b505b3b82c10a36c5c820052664aa4c3b7b9791d8e19332fa4610b73",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in image_gen",
+      "generation_prompt": "Use case: illustration-story. Create a NEW portrait full-page plate for The Ingenious Machine. Near-future contemporary Mexico City. Drawing in Francisco Goya's Los Caprichos ETCHING AND AQUATINT idiom: thin economical broken etched contours, broad flat granular dark masses, bold PURE WHITE reserves, compressed space, expressive unidealized gestures. Do not render a photograph with a scratch filter. Reduce incidental detail and modeling; no photographic faces, 3D metal highlights, cinematic depth, vector cartoon outlines or uniform hatching. Neutral black and gray on pure white; NO sepia, cream ink, aged paper, borders or caption band. Compose edge-to-edge 2:3 portrait, keep important faces/hands above bottom5%; captions will be typeset separately. No text, logos, watermarks, invented captions, animals or surreal symbolism. All clothes contemporary, not eighteenth-century costumes. Reference1 is Goya STYLE ONLY: do not copy sleeper, owls, caption, paper or frame. Other references are explicitly IDENTITY ONLY; do not copy their compositions or photo-like surface detail. Reference2 supplies ONLY the Custodian identity, the long-haired man at right: tall man about60, long gray hair tied back, rectangular glasses, lined face with short gray beard, white work shirt. Ignore reference robot, archive and photographic rendering. Scene: Custodian testifies IN PERSON at an ordinary table in the renovated cinema hearing, half-length three-quarter view. Glasses halfway down nose as he reads a loose original day-trip authorization held with both hands. Plain papers, theater curtain in broad dark aquatint behind. No other character needed. His document is permission to leave, not sale or ownership transfer. Restrained absorbed expression, drawn face rather than portrait photograph. No court robe, no judge's dais, no remote screen, no readable writing.",
+      "generation_references": [
+        "output/illustrations/goya-pilot/references/capricho-43-met.jpg",
+        "output/illustrations/revised/issue-01/cover.png"
+      ],
+      "generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-42e9b339-018d-47ad-bf29-11fb12ffa86f.png",
+      "review_note": "Male long-haired bespectacled Custodian reads permission in person. Glasses lowered, loose document, no ownership transfer.",
+      "approval_scope": "visually reviewed in native image, reading page and A3 side; revision proof only"
     },
     {
       "plate_id": "issue-16-plate-05",
@@ -167,10 +252,25 @@
         81
       ],
       "asset": "output/illustrations/revised/issue-16/plate-05.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The Example on the Screen",
       "scene_brief": "During Lucía's evidence, Q places the permitted seminar exhibit reference beside his female adviser's hand. Lucía remains at the witness table in the middle distance; the clerk prepares the already permitted clip. Composition uses hands and sight lines rather than a collage of earlier adventures. The projected material is Q's own prose, not Lucía's private inquiry, a family photograph or the restricted lease. No readable confidential documents.",
-      "scene_anchor": "Q put the seminar's exhibit reference beside his adviser's hand."
+      "scene_anchor": "Q put the seminar's exhibit reference beside his adviser's hand.",
+      "asset_sha256": "3e1717602047cf311c82c325d1b10fc8fddf0b265a8ea03d212e58c015dd1241",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in image_gen",
+      "generation_prompt": "Use case: illustration-story. Create a NEW portrait full-page plate for The Ingenious Machine. Near-future contemporary Mexico City. Drawing in Francisco Goya's Los Caprichos ETCHING AND AQUATINT idiom: thin economical broken etched contours, broad flat granular dark masses, bold PURE WHITE reserves, compressed space, expressive unidealized gestures. Do not render a photograph with a scratch filter. Reduce incidental detail and modeling; no photographic faces, 3D metal highlights, cinematic depth, vector cartoon outlines or uniform hatching. Neutral black and gray on pure white; NO sepia, cream ink, aged paper, borders or caption band. Compose edge-to-edge 2:3 portrait, keep important faces/hands above bottom5%; captions will be typeset separately. No text, logos, watermarks, invented captions, animals or surreal symbolism. All clothes contemporary, not eighteenth-century costumes. Reference1 is Goya STYLE ONLY: do not copy sleeper, owls, caption, paper or frame. Other references are explicitly IDENTITY ONLY; do not copy their compositions or photo-like surface detail. Q is a slim adult articulated robot: SAME narrow segmented oval metal head, recessed round eyes, concentric circular ears, long mechanical neck, small mechanical sampling mouth and hinged lower plate, question-mark breastplate. Short fitted dark jacket with LONG sleeves, exposed metal legs, support around anatomical RIGHT knee. Humanly attentive posture, never blank egg mask, bulky android, childlike toy or knight. Q's own adviser is a woman about50 with SHORT silver-brown hair and rectangular glasses, simple dark blazer and light blouse, not long-haired institute counsel or Marisol. Image2 same Q, adviser and cinema furnishings ONLY, not repeated pose. Image3 supplies ONLY Lucía identity: young adult woman shoulder-length wavy dark hair, denim jacket, shoulder bag, NOT adviser. New close oblique composition across Q's hearing table: Q slides one exhibit reference sheet beside adviser's resting hand. The adviser looks toward clerk who prepares laptop playback. Lucía sits alone at separate witness table in middle distance facing questioner. Projector screen shows a few indistinct lines of Q's OWN prose, no photos or legible private records. Clear gesture and sightline, only Q/adviser/Lucía/clerk, no collage or literal earlier university scene.",
+      "generation_references": [
+        "output/illustrations/goya-pilot/references/capricho-43-met.jpg",
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-a4356f0e-9146-4e83-bcb7-e6a7a11b3d96.png",
+        "output/illustrations/goya-pilot/before-lunch-goya-v4.png"
+      ],
+      "generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-585f7ce2-5e5b-42f7-bb92-2dc8888d600d.png",
+      "review_note": "Q slides exhibit sheet toward adviser; Lucía distinct at witness table, clerk prepares permitted prose clip. No private inquiry exposed.",
+      "approval_scope": "visually reviewed in native image, reading page and A3 side; revision proof only"
     },
     {
       "plate_id": "issue-16-plate-06",
@@ -198,10 +298,25 @@
         99
       ],
       "asset": "output/illustrations/revised/issue-16/plate-06.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The View and the Record",
       "scene_brief": "Q gives evidence about the distribution-park stop while his adviser requests entry audio and the operator's record alongside the camera view. Frame from the side with Q, permitted papers within reach, and a screen whose industrial camera still includes an obstructing trailer. Do not depict the later brake log as something Q saw in the original incident or show a heroic charge. Distinct from the seminar exhibit hand gesture.",
-      "scene_anchor": "His adviser asked for the entry audio and the operator's record to be considered with the camera view."
+      "scene_anchor": "His adviser asked for the entry audio and the operator's record to be considered with the camera view.",
+      "asset_sha256": "a978a62961f327308077577f779437f232ef63b4804c5d8683b83bbcf2c1a222",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in image_gen",
+      "generation_prompt": "Use case: illustration-story. Create a NEW portrait full-page plate for The Ingenious Machine. Near-future contemporary Mexico City. Drawing in Francisco Goya's Los Caprichos ETCHING AND AQUATINT idiom: thin economical broken etched contours, broad flat granular dark masses, bold PURE WHITE reserves, compressed space, expressive unidealized gestures. Do not render a photograph with a scratch filter. Reduce incidental detail and modeling; no photographic faces, 3D metal highlights, cinematic depth, vector cartoon outlines or uniform hatching. Neutral black and gray on pure white; NO sepia, cream ink, aged paper, borders or caption band. Compose edge-to-edge 2:3 portrait, keep important faces/hands above bottom5%; captions will be typeset separately. No text, logos, watermarks, invented captions, animals or surreal symbolism. All clothes contemporary, not eighteenth-century costumes. Reference1 is Goya STYLE ONLY: do not copy sleeper, owls, caption, paper or frame. Other references are explicitly IDENTITY ONLY; do not copy their compositions or photo-like surface detail. Q is a slim adult articulated robot: SAME narrow segmented oval metal head, recessed round eyes, concentric circular ears, long mechanical neck, small mechanical sampling mouth and hinged lower plate, question-mark breastplate. Short fitted dark jacket with LONG sleeves, exposed metal legs, support around anatomical RIGHT knee. Humanly attentive posture, never blank egg mask, bulky android, childlike toy or knight. Q's own adviser is a woman about50 with SHORT silver-brown hair and rectangular glasses, simple dark blazer and light blouse, not long-haired institute counsel or Marisol. Reference2 adviser and cinema continuity only. New SIDE VIEW of Q testifying seated at hearing table, right-knee supported out of frame if necessary, hands resting by permitted papers. Adviser asks for additional record, holding a small audio document and gesturing toward screen. Screen behind them clearly shows an INDUSTRIAL SECURITY CAMERA STILL: an ordinary box trailer blocks view of the loading area, no visible Chano, no attack, no diagram of secret brake data. This is present-day testimony about an earlier incident, not Q physically at distribution park. Three-quarter side composition emphasizing Q looking at obstructed view; plain theater curtains, few angular silhouettes, ample white papers and face. No readable text.",
+      "generation_references": [
+        "output/illustrations/goya-pilot/references/capricho-43-met.jpg",
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-a4356f0e-9146-4e83-bcb7-e6a7a11b3d96.png",
+        "output/illustrations/revised/issue-15/plate-03.png"
+      ],
+      "generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-b1691fb1-52d5-4dae-a810-495bc4fdf414.png",
+      "review_note": "Adviser requests record beside seated Q; screen shows obstructing trailer, not physical charge. Phone-sized playback aid is illustrative, not a new network search.",
+      "approval_scope": "visually reviewed in native image, reading page and A3 side; revision proof only"
     },
     {
       "plate_id": "issue-16-plate-07",
@@ -226,10 +341,25 @@
         114
       ],
       "asset": "output/illustrations/revised/issue-16/plate-07.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "What He Still Wants",
       "scene_brief": "Closer, quiet portrait at the hearing: Q has looked at his notes and left them on the table while answering what he still wants. Face attentive to a person beyond frame; relaxed open mechanical hands, short fitted dark jacket and unaltered head construction. No human soul escaping the body, no erasure of his mind, no broken corpse or triumphant declaration of universal legal personhood. His desire to live and write is an answer, not a coronation. This page permits finishing the book at the archive; the exchange continues on the next text page with Q's wish to go out without bringing back a chapter. Depict the attentive reply on this facing page, not a later departure. Avoid a compulsory endless-writing mission.",
-      "scene_anchor": "Q looked at the permitted notes, then left them where they were."
+      "scene_anchor": "Q looked at the permitted notes, then left them where they were.",
+      "asset_sha256": "c738ee901adee43f8f9fa862bb69b538004e1b255cbce1586ee92862c16e78a9",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in image_gen",
+      "generation_prompt": "Use case: illustration-story. Create a NEW portrait full-page plate for The Ingenious Machine. Near-future contemporary Mexico City. Drawing in Francisco Goya's Los Caprichos ETCHING AND AQUATINT idiom: thin economical broken etched contours, broad flat granular dark masses, bold PURE WHITE reserves, compressed space, expressive unidealized gestures. Do not render a photograph with a scratch filter. Reduce incidental detail and modeling; no photographic faces, 3D metal highlights, cinematic depth, vector cartoon outlines or uniform hatching. Neutral black and gray on pure white; NO sepia, cream ink, aged paper, borders or caption band. Compose edge-to-edge 2:3 portrait, keep important faces/hands above bottom5%; captions will be typeset separately. No text, logos, watermarks, invented captions, animals or surreal symbolism. All clothes contemporary, not eighteenth-century costumes. Reference1 is Goya STYLE ONLY: do not copy sleeper, owls, caption, paper or frame. Other references are explicitly IDENTITY ONLY; do not copy their compositions or photo-like surface detail. Q is a slim adult articulated robot: SAME narrow segmented oval metal head, recessed round eyes, concentric circular ears, long mechanical neck, small mechanical sampling mouth and hinged lower plate, question-mark breastplate. Short fitted dark jacket with LONG sleeves, exposed metal legs, support around anatomical RIGHT knee. Humanly attentive posture, never blank egg mask, bulky android, childlike toy or knight. Image2 Q face only, Image3 courtroom furnishings only, no copied telephone hand gesture. New intimate waist-up hearing portrait: Q has glanced at permitted notes then LEFT THEM ON TABLE. Both mechanical hands relaxed near papers, not gripping or pointing, face raised toward questioner beyond frame, subtle attentive mouth opening as he answers what life he still wants. Clear white face and hand reserves against simplified dark jacket and flat aquatint curtain. A private, humane reply in public, no grand orator gesture, halo, corpse, emancipation ceremony or departure. No other people needed. Use actual hand-drawn etched economy, no photographic shiny metal.",
+      "generation_references": [
+        "output/illustrations/goya-pilot/references/capricho-43-met.jpg",
+        "output/illustrations/revised/issue-15/plate-03.png",
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-a4356f0e-9146-4e83-bcb7-e6a7a11b3d96.png"
+      ],
+      "generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-03258f83-c640-4809-bc7a-b7c8aaf65444.png",
+      "review_note": "Attentive Q answers beyond frame, notes left on table; no compulsory death, triumphant verdict or departure.",
+      "approval_scope": "visually reviewed in native image, reading page and A3 side; revision proof only"
     },
     {
       "plate_id": "issue-16-plate-08",
@@ -251,10 +381,34 @@
         126
       ],
       "asset": "output/illustrations/revised/issue-16/plate-08.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Another Appointment",
       "scene_brief": "After the following day's interim order, Lucía hands Q a folder for authorized copies. His schedule lies inside, with a next preparation meeting and postponed writing session; Chano keeps two notices nearby rather than tearing one up. The Custodian is not beside them in this scene: the subsequent call concerns his viewing a replay. Do not put the sealed module or original Tijuana ledger in this folder; do not depict release from all restrictions. Typeset any essential folder label separately.",
-      "scene_anchor": "Lucía handed him a folder for the copies he could take."
+      "scene_anchor": "Lucía handed him a folder for the copies he could take.",
+      "asset_sha256": "29dd793e28d42d49061cf1a3ac29b532740e9060847a87f83bff11731b0f2885",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in image_gen",
+      "generation_prompt": "Use case: illustration-story. Create a NEW portrait full-page plate for The Ingenious Machine. Near-future contemporary Mexico City. Drawing in Francisco Goya's Los Caprichos ETCHING AND AQUATINT idiom: thin economical broken etched contours, broad flat granular dark masses, bold PURE WHITE reserves, compressed space, expressive unidealized gestures. Do not render a photograph with a scratch filter. Reduce incidental detail and modeling; no photographic faces, 3D metal highlights, cinematic depth, vector cartoon outlines or uniform hatching. Neutral black and gray on pure white; NO sepia, cream ink, aged paper, borders or caption band. Compose edge-to-edge 2:3 portrait, keep important faces/hands above bottom5%; captions will be typeset separately. No text, logos, watermarks, invented captions, animals or surreal symbolism. All clothes contemporary, not eighteenth-century costumes. Reference1 is Goya STYLE ONLY: do not copy sleeper, owls, caption, paper or frame. Other references are explicitly IDENTITY ONLY; do not copy their compositions or photo-like surface detail. Q is a slim adult articulated robot: SAME narrow segmented oval metal head, recessed round eyes, concentric circular ears, long mechanical neck, small mechanical sampling mouth and hinged lower plate, question-mark breastplate. Short fitted dark jacket with LONG sleeves, exposed metal legs, support around anatomical RIGHT knee. Humanly attentive posture, never blank egg mask, bulky android, childlike toy or knight. Image2 supplies ONLY same Chano (stocky wavy dark hair mustache rolled workshirt) and Lucía (young adult shoulder-length wavy dark hair denim jacket shoulderbag), image3 Q face. Scene after next day's interim order, plain converted-cinema foyer. Lucía hands Q a thin open folder of authorized copies, Q accepts with one mechanical hand. Schedule partly visible inside, indistinct marks only. Chano nearby reads TWO loose notices and keeps both. Custodian NOT PRESENT, Q will call him remotely later. No original ledger or sealed module, no release celebration, no tearing papers, no waving farewell. Medium close triangular composition organized around folder handoff, right knee may be out of frame, short jacket long sleeves. No lettering on tab; exact label appears in facing prose. Pure white papers, no agedwash, expressive etched gestures.",
+      "generation_references": [
+        "output/illustrations/goya-pilot/references/capricho-43-met.jpg",
+        "output/illustrations/goya-pilot/before-lunch-goya-v4.png",
+        "output/illustrations/revised/issue-15/plate-03.png"
+      ],
+      "generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-140786ca-82e6-4ba7-9bff-ef6930d88341.png",
+      "review_note": "Lucía hands over flexible folder with separate sheets after targeted correction of book-like object. Chano keeps two notices; Custodian absent.",
+      "approval_scope": "visually reviewed in native image, reading page and A3 side; revision proof only",
+      "edit_history": [
+        {
+          "prompt": "Use case: precise-object-edit. Image1 edit target. Correct ONLY object Lucía is handing Q: it must be a THIN OPEN MANILA DOCUMENT FOLDER with flexible pale cardstock covers, small tab, several separate loose sheets of paper tucked inside; NOT a bound hardback book, no thick spine or bound page block. Schedule inside has only indistinct lines. Preserve exact handoff gesture, Q fingers correctly gripping folder edge, all people/identities/clothes/positions, Chano's two separate notices, setting, Goya etched/aquatint drawing. Neutral black and gray on pure white, no sepia wash, readable text or new props. No original ledger or sealed module.",
+          "references": [
+            "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-ad6bac22-3bc3-4537-813f-9642ed05f313.png"
+          ],
+          "reason": "Folder initially resembled a bound book."
+        }
+      ]
     },
     {
       "plate_id": "issue-16-plate-09",
@@ -282,10 +436,23 @@
         144
       ],
       "asset": "output/illustrations/revised/issue-16/plate-09.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The Shadow of a Napkin",
       "scene_brief": "Tribunal back office: the secretary moves his tamal sandwich away from a copier while the assistant points toward the lunch. A fresh output sheet bears the faint shadow of a napkin, not legible evidence. Mundane office light and delicately comic hand positions; no magical talking copier and no new judgment printed by accident. Q need not appear in a scene he does not witness. Distinct from the courtroom and water-dispenser plates.",
-      "scene_anchor": "The machine had already produced one sheet containing the shadow of a napkin."
+      "scene_anchor": "The machine had already produced one sheet containing the shadow of a napkin.",
+      "asset_sha256": "ee060a7eb44eb576ac52f0dae375f121ab2db47d5bbb5a42b45b7b3be48bd7f4",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in image_gen",
+      "generation_prompt": "Use case: illustration-story. Create a NEW portrait full-page plate for The Ingenious Machine. Near-future contemporary Mexico City. Drawing in Francisco Goya's Los Caprichos ETCHING AND AQUATINT idiom: thin economical broken etched contours, broad flat granular dark masses, bold PURE WHITE reserves, compressed space, expressive unidealized gestures. Do not render a photograph with a scratch filter. Reduce incidental detail and modeling; no photographic faces, 3D metal highlights, cinematic depth, vector cartoon outlines or uniform hatching. Neutral black and gray on pure white; NO sepia, cream ink, aged paper, borders or caption band. Compose edge-to-edge 2:3 portrait, keep important faces/hands above bottom5%; captions will be typeset separately. No text, logos, watermarks, invented captions, animals or surreal symbolism. All clothes contemporary, not eighteenth-century costumes. Reference1 is Goya STYLE ONLY: do not copy sleeper, owls, caption, paper or frame. Other references are explicitly IDENTITY ONLY; do not copy their compositions or photo-like surface detail. Scene: modest tribunal back office at lunch. Male secretary in contemporary light shirt moves his tamal sandwich in a bolillo roll AWAY from office copier using one hand; assistant in ordinary office clothes points at lunch with dry amusement. A napkin had partly overlapped copier glass, copier now has a fresh output sheet in tray showing ONLY a pale napkin-shaped shadow, not text. Keep physical layout coherent: sandwich beside but not inside machine, sheet in output tray, fingers hold sandwich wrapper. Two ordinary workers, exactly two people, no Q. Strong diagonal from assistant gesture to secretary's sandwich; plain desk, copier block and few papers, quiet social comedy. No talking machine, not magical lunch, no symbolic verdict, no bureaucratic monsters.",
+      "generation_references": [
+        "output/illustrations/goya-pilot/references/capricho-43-met.jpg"
+      ],
+      "generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-7fd6fc92-7ed8-44ae-9975-ba27278eb686.png",
+      "review_note": "Secretary moves tamal sandwich away from copier; assistant points, output sheet has napkin-shaped shadow. No Q or invented judgment.",
+      "approval_scope": "visually reviewed in native image, reading page and A3 side; revision proof only"
     }
   ],
   "layout_constraints": {
@@ -309,5 +476,55 @@
     "font_pt": 12.4,
     "leading_pt": 17.566666666666666,
     "manual_page_breaks": false
+  },
+  "style_reference": "output/illustrations/goya-pilot/references/capricho-43-met.jpg",
+  "style_limitations": "Figures use drawn contours and broad aquatint masses; some faces/backgrounds remain more naturalistic and detailed than Goya's most economical prints. Native RGB has residual warmth despite the requested palette; proof export removes chroma, not tonal texture. Native resolution about 150 dpi, not press master.",
+  "proof_outputs": {
+    "reading": {
+      "path": "output/pdf/ingenious-issue-16-revised-en-bw.pdf",
+      "sha256": "85aaa77a896f0e22f3d5386e9f8efc3f2b2dcc5ad9b2a83ebade52e174adaa2f"
+    },
+    "a3": {
+      "path": "output/pdf/ingenious-issue-16-revised-en-bw-a3.pdf",
+      "sha256": "92fb7b4c5136c0145dbdf6a79ac42dc72dc0a6ae4fbdabd1998637aa08ee59a8"
+    }
+  },
+  "verification": {
+    "result": "pass",
+    "baseline_commit": "da046439",
+    "words_in_exact_source_order": 3051,
+    "reading_pages": 20,
+    "a3_sides": 10,
+    "duplex_sheets": 5,
+    "unique_native_plates": 10,
+    "actual_a3_slots_checked": 20,
+    "all_chapters_unchanged": 22,
+    "all_facing_mappings_unchanged": 22,
+    "previous_issue_pdfs_unchanged": 30,
+    "effective_dpi": [
+      149.9,
+      149.9,
+      149.9,
+      149.9,
+      149.9,
+      149.9,
+      149.9,
+      149.9,
+      149.9,
+      149.9
+    ],
+    "embedded_font_subsets": {
+      "reading": 5,
+      "a3": 6
+    },
+    "text_background": "unpainted",
+    "lossless_DeviceGray_images": 10,
+    "short_exchange_groups_kept_in_column": 3,
+    "print_job_sent": false,
+    "a_plus_certified": false,
+    "pdf_hashes": {
+      "reading": "85aaa77a896f0e22f3d5386e9f8efc3f2b2dcc5ad9b2a83ebade52e174adaa2f",
+      "a3": "92fb7b4c5136c0145dbdf6a79ac42dc72dc0a6ae4fbdabd1998637aa08ee59a8"
+    }
   }
 }
