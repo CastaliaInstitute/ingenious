@@ -9701,8 +9701,8 @@ Q sent the request to the Custodian and asked Ana whether she had
 time to discuss it. She had time for that and a particular Spanish
 reply she wanted him to read, not a general inspection of her archive.
 
-After the Isthmus meetings, they continued into Chiapas. Marisol
-joined them for the office visit. She had other work there, and a
+After the Isthmus meetings, Q, Chano, and Lucía continued into Chiapas.
+Marisol joined them for the office visit. She had other work there, and a
 return ticket she was not offering to the needs of Q's manuscript.
 Their hired driver stopped before dusk when rain reduced the
 road ahead to the color of the windshield. The inn cost more
@@ -9752,8 +9752,8 @@ its keepers. Q put his copy of the confirmation away.
 
 “Anything else you need?” Ana asked.
 
-“Confirmation that this copy arrived under the agreed
-seal. We have that.”
+“For the delivery, no. You've saved me a return journey
+to ask whether I'd finished the first.”
 
 “You don't want a photograph?”
 
@@ -9809,6 +9809,25 @@ Q read the letter without the first sentence. “It gets
 there sooner.”
 
 “So might they.”
+
+Ana brought Mateo's message back to the top of the pile.
+
+“Have you a training date for him?”
+
+“Not yet. Does the person taking over need the whole
+session, or help with the handover?”
+
+“The handover. The keeper who's leaving can still help,
+but now she works afternoons.”
+
+“Then we should put that in. I've asked for a repeat
+performance when you need a change of cast.”
+
+“Without an audience.”
+
+They shortened the request. Q added the available hours,
+sent it to the Custodian, and put it before the manuscript
+on the evening call's list.
 
 Rain began again before they could leave. A local driver
 reported a fallen tree on the road they needed. Their
@@ -9868,8 +9887,8 @@ One wanted it excluded because his uncle supported the
 club he had insulted. The disagreement made Q's notes
 more complicated and the evening less solemn.
 
-He called the Custodian from a dry corner under the
-eave. Rain had entered the outer collar of his coat;
+He called the Custodian from the guest room.
+Rain had entered the outer collar of his jacket;
 he had checked the body seal and moved indoors before
 it became a repair.
 
@@ -9882,12 +9901,27 @@ it became a repair.
 “There's a student who may sue us on behalf of his
 uncle's football club.”
 
+Before opening the manuscript, Q asked about the revised
+training request. The Custodian had received it and would
+ask the trainer about the morning hours. Q sent Ana that
+answer, keeping the date marked unconfirmed.
+
 They worked on a paragraph about the first bus journey.
-The Custodian wanted Q to have been afraid. Q remembered
-curiosity and a disproportionate concern about money.
-They left the fear out. The page lost a familiar emotion
-and acquired the fare, which both agreed he had actually
-worried about.
+The Custodian had put fear into the first sentence.
+
+“Of what?” Q asked.
+
+“Leaving everything you knew.”
+
+“I was glad to get out. Most of my worry was whether
+I could afford to get back.”
+
+“There is fear in that.”
+
+“Possibly. Put in what I kept counting. Let them argue
+about the name.”
+
+They restored the fare to the paragraph.
 
 Later, a student named Darío sat beside him while the
 others argued over where to put the wet shoes.

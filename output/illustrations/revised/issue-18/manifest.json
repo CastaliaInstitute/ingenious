@@ -1,12 +1,12 @@
 {
   "issue": 18,
-  "revision": "2026-09-08-five-more-minutes",
+  "revision": "2026-09-09-training-handoff-and-memory",
   "source": "novel/THE_INGENIOUS_MACHINE.md",
-  "chapter_sha256": "7865a554790a6890da6787c6856258d7084da2b4b83197ff746df4661d1fd99a",
-  "page_count": 20,
-  "text_font": "Georgia 12.85/18.2042 pt",
-  "plate_count_including_cover": 10,
-  "status": "planned; no new Issue 18 images generated or approved",
+  "chapter_sha256": "c5515236c28744ed227eb0584d363d88e3b642f9899735c750a0dcd285ce6fe5",
+  "page_count": 24,
+  "text_font": "Georgia 13.8/19.5500 pt",
+  "plate_count_including_cover": 12,
+  "status": "revised source and exact-facing plan; twenty-four-page internal layout; twelve illustrations remain planned",
   "character_reference": "output/illustrations/revised/issue-01/cover.png",
   "chano_reference": "output/illustrations/revised/issue-03/plate-06.png",
   "lucia_reference": "output/illustrations/revised/issue-03/plate-04.png",
@@ -14,9 +14,9 @@
     "output/illustrations/revised/issue-07/manifest.json",
     "output/illustrations/revised/issue-09/manifest.json"
   ],
-  "character_design": "Q retains approved narrow segmented head, round ear mechanisms, exposed neck, question-mark breastplate, short fitted dark jacket with long sleeves with repaired key pocket and supported knee. Chano and Lucía follow approved references. Ana is the appointed keeper, former teacher and radio operator; Marisol is the separate adviser. Keep Noemí consistent with the earlier calendar-event plan; Yatzil is a separate programming colleague. Darío is a school student, not a little child or an adult patient. Custodian if shown in a call is the tall older man with long gray hair tied back, glasses and white work shirt; he does not travel with this party. Q's lower face includes a small mechanical sampling mouth; do not simplify it into a blank mask. Use the corrected Goya pilot for Q-family identity, not photographic surface detail.",
-  "art_direction": "Neutral monochrome Goya-inspired etching and aquatint with economical drawn contours and broad tonal masses, pure white highlights and unpainted paper, no sepia or cream ink background. Full bleed at comic trim with separate typeset caption margin. Nine exact-facing scenes and a separate cover. Distinguish rainy Chiapas from the later Yucatán radio station. No anonymous timeless Maya imagery, no magical key or decoded apocalypse, and no staged Q handover of a module already returned by another courier. Private testimony and identifying removal-request material stay unreadable. Governing reference: novel/development/GOYA_ART_DIRECTION.md. Earlier plates guide identity only; do not imitate their photographic rendering.",
-  "approval_scope": "Plan only. Twenty comic pages, ten planned plates including cover, ten A3 landscape sides / five short-edge duplex sheets. Reviewed Georgia 12.85/18.2042 pt preserves continuous text and substantial final columns. No new art generated or approved, final illustrated Issue 18 PDF or print job.",
+  "character_design": "Q retains approved narrow segmented head, round ear mechanisms, exposed neck, question-mark breastplate, short fitted dark jacket with long sleeves with repaired key pocket and supported knee. Chano and Lucía follow approved references. Ana is the appointed keeper, former teacher and radio operator; Marisol is the separate adviser. Keep Noemí consistent with the earlier calendar-event plan; Yatzil is a separate programming colleague. Darío is a school student, not a little child or an adult patient. Custodian if shown in a call is the tall older man with long gray hair tied back, glasses and white work shirt; he does not travel with this party. Q's lower face includes a small mechanical sampling mouth; do not simplify it into a blank mask. Use the corrected Goya pilot for Q-family identity, not photographic surface detail. Q wears a short fitted dark long-sleeved jacket, not a long coat, and has a small mechanical sampling mouth with a hinged lower faceplate, not a blank mask. His right-knee support remains. The Custodian is remote in the dry-room writing scene, never physically present in Chiapas.",
+  "art_direction": "Neutral monochrome Goya-inspired etching and aquatint with economical drawn contours and broad tonal masses, pure white highlights and unpainted paper, no sepia or cream ink background. Full bleed at comic trim with separate typeset caption margin. Nine exact-facing scenes and a separate cover. Distinguish rainy Chiapas from the later Yucatán radio station. No anonymous timeless Maya imagery, no magical key or decoded apocalypse, and no staged Q handover of a module already returned by another courier. Private testimony and identifying removal-request material stay unreadable. Governing reference: novel/development/GOYA_ART_DIRECTION.md. Earlier plates guide identity only; do not imitate their photographic rendering. Follow novel/development/GOYA_ART_DIRECTION.md: thin broken etched contours, broad aquatint tonal masses and economical expressive drawing. Earlier photographic cast images guide identity only, not finish; no sepia, antique paper wash or decorative border.",
+  "approval_scope": "Source-bound illustration plan only; not generated or approved art. Internal typography proof is not a finished issue.",
   "plates": [
     {
       "plate_id": "issue-18-cover",
@@ -30,7 +30,7 @@
       "plate_id": "issue-18-plate-01",
       "page": 3,
       "facing_text_page": 2,
-      "facing_text": "Chapter Eighteen: The\nRebel Without a Corpus\nElena sent the new receipt while Q\nwas packing. At the depositors'\nrequest, her archive had returned\nthe sealed module to Ana, their\nappointed keeper in Chiapas. The\narchive's courier had completed\nthe transfer. Q's first delivery had\nmade this second one possible;\nneither required him to discover\nwhat the testimony said.\nHe checked the receiving\nconfirmation with Marisol, then\nremoved the old reminder from\nhis list. The papers retained in\nTijuana still had their own\nunanswered request. One finished\ntask did not have to wait for all the\nothers before it could be finished.\nAna had invited them to the office\nwhere she was working with\nMarisol on publication requests.\nMateo had written about the\ntraining arranged after Q's first\nvisit: both keepers had attended,\nand one had since taken a\ndifferent job. He wanted another\nsession. Q sent the request to the\nCustodian and asked Ana whether\nshe had time to discuss it. She had\ntime for that and a particular\nSpanish reply she wanted him to\nread, not a general inspection of\nher archive.\nAfter the Isthmus meetings, they\ncontinued into Chiapas. Marisol\njoined them for the office visit. She\nhad other work there, and a return\nticket she was not offering to the\nneeds of Q's manuscript. Their\nhired driver stopped before dusk\nwhen rain reduced the road ahead\nto the color of the windshield. The\ninn cost more than they had\nallowed. Q moved money from the\noptional part of the itinerary and\ncalled the receiving contact to\nchange the appointment.\n“Will the manuscript include\nthis?” Chano asked, watching him\ndivide the expense.\n“Only if we can improve on a table\nof costs.”\n“You have made worse things\nlonger.”\nThe next morning, an officer at a\nroad check asked for their travel\npapers. Marisol produced the\naccompanied-journey\nauthorization; Q identified himself\nand the listed destination. The\nofficer checked the references with\nhis supervisor. They waited beside\na truck carrying sacks of feed. Its\ndriver wanted to know whether Q\ncould help him recover a song\nwhose title he remembered only as\nthe one about the woman leaving.\n",
+      "facing_text": "Chapter Eighteen: The\nRebel Without a Corpus\nElena sent the new receipt while\nQ was packing. At the\ndepositors' request, her archive\nhad returned the sealed module\nto Ana, their appointed keeper\nin Chiapas. The archive's\ncourier had completed the\ntransfer. Q's first delivery had\nmade this second one possible;\nneither required him to discover\nwhat the testimony said.\nHe checked the receiving\nconfirmation with Marisol, then\nremoved the old reminder from\nhis list. The papers retained in\nTijuana still had their own\nunanswered request. One\nfinished task did not have to\nwait for all the others before it\ncould be finished.\nAna had invited them to the\noffice where she was working\nwith Marisol on publication\nrequests. Mateo had written\nabout the training arranged\nafter Q's first visit: both keepers\nhad attended, and one had since\ntaken a different job. He wanted\nanother session. Q sent the\nrequest to the Custodian and\nasked Ana whether she had time\nto discuss it. She had time for\nthat and a particular Spanish\nreply she wanted him to read,\nnot a general inspection of her\narchive.\nAfter the Isthmus meetings, Q,\nChano, and Lucía continued\ninto Chiapas. Marisol joined\nthem for the office visit. She had\nother work there, and a return\nticket she was not offering to the\nneeds of Q's manuscript. Their\nhired driver stopped before\ndusk when rain reduced the\nroad ahead to the color of the\nwindshield. The inn cost more\nthan they had allowed. Q moved\nmoney from the optional part of\nthe itinerary and called the\nreceiving contact to change the\nappointment.\n“Will the manuscript include\nthis?” Chano asked, watching\nhim divide the expense.\n“Only if we can improve on a\ntable of costs.”\n“You have made worse things\nlonger.”\nThe next morning, an officer at\na road check asked for their\ntravel papers. Marisol produced\n",
       "source_block_ids": [
         0,
         1,
@@ -45,15 +45,16 @@
       "asset": "output/illustrations/revised/issue-18/plate-01.png",
       "status": "planned",
       "caption": "The Price of the Rain",
-      "scene_brief": "Inside the roadside inn after the hired driver has stopped for poor visibility: Q reallocates the optional travel budget while Chano watches, rain whitening the window beyond. A damp worn coat, supported knee and modest lodging details show the cost of a sensible stop. No reckless drive through a torrent, no seized module in their baggage and no new arrest.",
+      "scene_brief": "Inside the roadside inn after the hired driver has stopped for poor visibility: Q reallocates the optional travel budget while Chano watches, rain whitening the window beyond. A damp short dark long-sleeved jacket, supported knee and modest lodging details show the cost of a sensible stop. No reckless drive through a torrent, no seized module in their baggage and no new arrest.",
       "scene_anchor": "Q moved money from the optional part of the itinerary"
     },
     {
       "plate_id": "issue-18-plate-02",
       "page": 5,
       "facing_text_page": 4,
-      "facing_text": "“You've left me most of music,” Q\nsaid.\nThe driver sang three lines badly.\nQ offered two possible titles and\nfound a public recording of one\nwhen the signal returned. It was\nthe wrong song. The driver played\nit twice because he liked it better\nthan the one he had wanted.\nTheir documents came back. The\ndriver asked for the title of the\nwrong song. Q wrote it on a scrap\nof paper before they left.\nAna met them at a small office\nwhere the receiving work had\nmoved while a roof was repaired.\nThe revised address was on the\nmessage Marisol had confirmed. A\nblue house farther along the road\nremained locked; had they trusted\nthe first directions alone, they\nwould have delivered a\nconsiderable speech to its door.\nAna had the receiving\nconfirmation ready. The module\nhad arrived under the agreed seal\nwith the archive's courier, not in\nQ's luggage. The local archive's\nlarger black storage case had never\nmade the northern journey and\nwas still with its keepers. Q put his\ncopy of the confirmation away.\n“Anything else you need?” Ana\nasked.\n“Confirmation that this copy\narrived under the agreed seal. We\nhave that.”\n“You don't want a photograph?”\n“Not of a handover I didn't make.”\n“Good. Last month's delivery man\nwanted one of me holding the box.\nI said it would prove I could hold a\nbox.”\nShe offered coffee. Q accepted a\nsmall cup and asked whether it\nwas sweetened.\n“Already,” Ana said. “I can make\nanother pot.”\n“Let me try this one before I\nbecome more work.”\nIt was sweeter than he preferred.\nHe asked for water and kept the\ncup. Ana moved the sugar bowl\naway from Marisol, who was\nreaching for it without looking.\n“Taste it first.”\nMarisol did. “Who made this?”\n“You did.”\nAna had been a teacher and a\nradio operator. She still did some\ntranslation work, but declined jobs\nthat paid as though the difficult\npart were knowing two lists of\nwords. She and Marisol discussed\na report from which one\nparticipant wanted a passage\n",
+      "facing_text": "the accompanied-journey\nauthorization; Q identified\nhimself and the listed\ndestination. The officer checked\nthe references with his\nsupervisor. They waited beside a\ntruck carrying sacks of feed. Its\ndriver wanted to know whether\nQ could help him recover a song\nwhose title he remembered only\nas the one about the woman\nleaving.\n“You've left me most of music,”\nQ said.\nThe driver sang three lines\nbadly. Q offered two possible\ntitles and found a public\nrecording of one when the\nsignal returned. It was the\nwrong song. The driver played it\ntwice because he liked it better\nthan the one he had wanted.\nTheir documents came back.\nThe driver asked for the title of\nthe wrong song. Q wrote it on a\nscrap of paper before they left.\nAna met them at a small office\nwhere the receiving work had\nmoved while a roof was\nrepaired. The revised address\nwas on the message Marisol had\nconfirmed. A blue house farther\nalong the road remained locked;\nhad they trusted the first\ndirections alone, they would\nhave delivered a considerable\nspeech to its door.\nAna had the receiving\nconfirmation ready. The module\nhad arrived under the agreed\nseal with the archive's courier,\nnot in Q's luggage. The local\narchive's larger black storage\ncase had never made the\nnorthern journey and was still\nwith its keepers. Q put his copy\nof the confirmation away.\n“Anything else you need?” Ana\nasked.\n“For the delivery, no. You've\nsaved me a return journey to\nask whether I'd finished the\nfirst.”\n“You don't want a photograph?”\n“Not of a handover I didn't\nmake.”\n“Good. Last month's delivery\nman wanted one of me holding\nthe box. I said it would prove I\ncould hold a box.”\nShe offered coffee. Q accepted a\nsmall cup and asked whether it\nwas sweetened.\n",
       "source_block_ids": [
+        8,
         9,
         10,
         11,
@@ -64,27 +65,26 @@
         16,
         17,
         18,
-        19,
+        19
+      ],
+      "asset": "output/illustrations/revised/issue-18/plate-02.png",
+      "status": "planned",
+      "caption": "The Better Wrong Song",
+      "scene_anchor": "The driver asked for the title of the wrong song.",
+      "scene_brief": "At the roadside check beside a feed truck, Q writes the title of the song on a small scrap for the driver, who has preferred the mistaken match. Feed sacks and waiting travel party in the background; papers have been returned, not an arrest. Contemporary driver and Q share ordinary enjoyment. No printed lyric quotations or invented song title; no heroic border confrontation."
+    },
+    {
+      "plate_id": "issue-18-plate-03",
+      "page": 7,
+      "facing_text_page": 6,
+      "facing_text": "“Already,” Ana said. “I can make\nanother pot.”\n“Let me try this one before I\nbecome more work.”\nIt was sweeter than he\npreferred. He asked for water\nand kept the cup. Ana moved\nthe sugar bowl away from\nMarisol, who was reaching for it\nwithout looking.\n“Taste it first.”\nMarisol did. “Who made this?”\n“You did.”\nAna had been a teacher and a\nradio operator. She still did\nsome translation work, but\ndeclined jobs that paid as\nthough the difficult part were\nknowing two lists of words. She\nand Marisol discussed a report\nfrom which one participant\nwanted a passage removed. The\npublisher had agreed to amend\nits own edition; it could not\nrecall every copy already\ndownloaded.\nQ was asked to compare the\nSpanish removal request with\nthe publisher's Spanish reply.\nThe reply promised to remove a\nname while leaving a paragraph\nthat identified the speaker\nthrough her job. He marked the\nmismatch. Ana would handle\nthe other language with the\nparticipant. No one needed Q to\noffer a translation he could not\nverify.\n“They've answered the cheap\nhalf,” he said.\n“Then put both halves in the\nnext letter,” Ana replied.\nHe drafted a short follow-up for\ntheir review. It asked about the\nparagraph, the image attached\nto it, and a date for the amended\nedition. Ana crossed out his\nopening thanks for their careful\nattention.\n“They haven't paid it yet.”\nQ read the letter without the\nfirst sentence. “It gets there\nsooner.”\n“So might they.”\nAna brought Mateo's message\nback to the top of the pile.\n“Have you a training date for\nhim?”\n“Not yet. Does the person taking\nover need the whole session, or\nhelp with the handover?”\n",
+      "source_block_ids": [
         20,
         21,
         22,
         23,
         24,
         25,
-        26
-      ],
-      "asset": "output/illustrations/revised/issue-18/plate-02.png",
-      "status": "planned",
-      "caption": "Who Made the Coffee?",
-      "scene_brief": "At the temporary Chiapas office table, Ana moves the sugar bowl out of Marisol's reach while Marisol tastes the coffee she made. Q keeps his small cup and a glass of water, quietly amused. Distinguish Ana from Marisol, with ordinary work clothes and used cups, not ceremonial cups or an initiation in human taste. Do not illustrate a module handover by Q.",
-      "scene_anchor": "Ana moved the sugar bowl away from Marisol"
-    },
-    {
-      "plate_id": "issue-18-plate-03",
-      "page": 7,
-      "facing_text_page": 6,
-      "facing_text": "removed. The publisher had\nagreed to amend its own edition; it\ncould not recall every copy already\ndownloaded.\nQ was asked to compare the\nSpanish removal request with the\npublisher's Spanish reply. The\nreply promised to remove a name\nwhile leaving a paragraph that\nidentified the speaker through her\njob. He marked the mismatch. Ana\nwould handle the other language\nwith the participant. No one\nneeded Q to offer a translation he\ncould not verify.\n“They've answered the cheap half,”\nhe said.\n“Then put both halves in the next\nletter,” Ana replied.\nHe drafted a short follow-up for\ntheir review. It asked about the\nparagraph, the image attached to\nit, and a date for the amended\nedition. Ana crossed out his\nopening thanks for their careful\nattention.\n“They haven't paid it yet.”\nQ read the letter without the first\nsentence. “It gets there sooner.”\n“So might they.”\nRain began again before they\ncould leave. A local driver reported\na fallen tree on the road they\nneeded. Their driver called to\ncheck and would not take the\nalternative track with passengers\nin those conditions. They arranged\nto wait at the guest rooms behind\nthe office.\nStudents from the nearby school\nhad come to record a program and\nwere waiting for the same weather\nto improve. One asked Q whether\nhe could speak every language.\n“No. I can be confidently wrong in\nmore than is useful.”\n“Can you say my name?”\nQ asked him to say it first. The boy\ncorrected the stress. Q tried again.\nThe boy accepted the result and\nasked him to say the name of a\nfootball club, which he\npronounced with extravagant\ncontempt. The lesson improved\nrapidly.\nA girl recognized Q from the play\nat another school. She wanted to\nknow whether he still had the\nbrass key. He did, in the pocket\nthe Custodian had repaired. She\nasked why he carried it.\n“It opens the workshop at home.\nI've carried it a long way to do\nnothing with it.”\n“My brother has shoes like that,”\nshe said.\n",
-      "source_block_ids": [
         26,
         27,
         28,
@@ -95,25 +95,25 @@
         33,
         34,
         35,
-        36,
-        37,
-        38,
-        39,
-        40,
-        41
+        36
       ],
       "asset": "output/illustrations/revised/issue-18/plate-03.png",
       "status": "planned",
-      "caption": "Attention Not Yet Paid",
-      "scene_brief": "Ana draws a line through the opening thanks in Q's short follow-up draft while Q reads the shorter letter. An over-shoulder table composition, rain gathering at the window; the two Spanish documents remain working papers, without readable private names, images or deposit testimony. Q has marked a specific mismatch, not supplied an unverifiable translation.",
-      "scene_anchor": "Ana crossed out his opening thanks for their careful attention."
+      "caption": "Who Made the Coffee?",
+      "scene_brief": "At the temporary Chiapas office table, Ana moves the sugar bowl out of Marisol's reach while Marisol tastes the coffee she made. Q keeps his small cup and a glass of water, quietly amused. Distinguish Ana from Marisol, with ordinary work clothes and used cups, not ceremonial cups or an initiation in human taste. Do not illustrate a module handover by Q.",
+      "scene_anchor": "Ana moved the sugar bowl away from Marisol"
     },
     {
       "plate_id": "issue-18-plate-04",
       "page": 9,
       "facing_text_page": 8,
-      "facing_text": "Lucía laughed. The girl asked\nwhether she was Dulcinea.\n“I'm Lucía.”\n“He called you the other thing.”\n“Someone at the reading did,” Q\nsaid. “She answered him. You may\nhave seen a shorter version.”\nThe girl considered this adequate\nand asked to see the key. Q\nshowed it to her on the table. She\nturned it over, found no button,\nand asked what else he had\nbrought.\nThat evening, Ana asked what they\nwere writing. Q described the two\nbooks and the trouble caused by\ntrying to find an ending while the\npeople in them were still busy.\n“Is this in it?” she asked.\n“I'd like to include some of the\nvisit if you and the others are\nwilling. Not the contents of the\ndeposit or details that locate it.”\nAna said she wanted to see the\npassage before deciding. The\nstudents wanted their football\nargument included. One wanted it\nexcluded because his uncle\nsupported the club he had\ninsulted. The disagreement made\nQ's notes more complicated and\nthe evening less solemn.\nHe called the Custodian from a dry\ncorner under the eave. Rain had\nentered the outer collar of his coat;\nhe had checked the body seal and\nmoved indoors before it became a\nrepair.\n“The return was completed?”\n“Yes. Their courier brought it. I\ncame for the visit.”\n“And the chapter?”\n“There's a student who may sue us\non behalf of his uncle's football\nclub.”\nThey worked on a paragraph about\nthe first bus journey. The\nCustodian wanted Q to have been\nafraid. Q remembered curiosity\nand a disproportionate concern\nabout money. They left the fear\nout. The page lost a familiar\nemotion and acquired the fare,\nwhich both agreed he had actually\nworried about.\nLater, a student named Darío sat\nbeside him while the others\nargued over where to put the wet\nshoes.\n“Do you dream?” Darío asked.\n“Not in the way you mean. I stop\nand resume. Sometimes the first\nthing I recall seems to have been\nwaiting longer than I have.”\n",
+      "facing_text": "“The handover. The keeper\nwho's leaving can still help, but\nnow she works afternoons.”\n“Then we should put that in.\nI've asked for a repeat\nperformance when you need a\nchange of cast.”\n“Without an audience.”\nThey shortened the request. Q\nadded the available hours, sent\nit to the Custodian, and put it\nbefore the manuscript on the\nevening call's list.\nRain began again before they\ncould leave. A local driver\nreported a fallen tree on the\nroad they needed. Their driver\ncalled to check and would not\ntake the alternative track with\npassengers in those conditions.\nThey arranged to wait at the\nguest rooms behind the office.\nStudents from the nearby school\nhad come to record a program\nand were waiting for the same\nweather to improve. One asked\nQ whether he could speak every\nlanguage.\n“No. I can be confidently wrong\nin more than is useful.”\n“Can you say my name?”\nQ asked him to say it first. The\nboy corrected the stress. Q tried\nagain. The boy accepted the\nresult and asked him to say the\nname of a football club, which\nhe pronounced with extravagant\ncontempt. The lesson improved\nrapidly.\nA girl recognized Q from the\nplay at another school. She\nwanted to know whether he still\nhad the brass key. He did, in the\npocket the Custodian had\nrepaired. She asked why he\ncarried it.\n“It opens the workshop at home.\nI've carried it a long way to do\nnothing with it.”\n“My brother has shoes like\nthat,” she said.\nLucía laughed. The girl asked\nwhether she was Dulcinea.\n“I'm Lucía.”\n“He called you the other thing.”\n“Someone at the reading did,” Q\nsaid. “She answered him. You\nmay have seen a shorter\nversion.”\nThe girl considered this\nadequate and asked to see the\nkey. Q showed it to her on the\n",
       "source_block_ids": [
+        37,
+        38,
+        39,
+        40,
+        41,
         42,
         43,
         44,
@@ -125,26 +125,27 @@
         50,
         51,
         52,
+        53
+      ],
+      "asset": "output/illustrations/revised/issue-18/plate-04.png",
+      "status": "planned",
+      "caption": "A Change of Cast",
+      "scene_anchor": "They shortened the request.",
+      "scene_brief": "At Ana's office table she and Q shorten Mateo's training request to the needed handover and available hours. Her papers and Q's brief call list show work being arranged, not training already delivered. A private working exchange between peers, no new keeper physically present, no sealed testimony opened or photographed. Rain outside anticipates waiting; request text abstract and unreadable."
+    },
+    {
+      "plate_id": "issue-18-plate-05",
+      "page": 11,
+      "facing_text_page": 10,
+      "facing_text": "table. She turned it over, found\nno button, and asked what else\nhe had brought.\nThat evening, Ana asked what\nthey were writing. Q described\nthe two books and the trouble\ncaused by trying to find an\nending while the people in them\nwere still busy.\n“Is this in it?” she asked.\n“I'd like to include some of the\nvisit if you and the others are\nwilling. Not the contents of the\ndeposit or details that locate it.”\nAna said she wanted to see the\npassage before deciding. The\nstudents wanted their football\nargument included. One wanted\nit excluded because his uncle\nsupported the club he had\ninsulted. The disagreement\nmade Q's notes more\ncomplicated and the evening\nless solemn.\nHe called the Custodian from\nthe guest room. Rain had\nentered the outer collar of his\njacket; he had checked the body\nseal and moved indoors before\nit became a repair.\n“The return was completed?”\n“Yes. Their courier brought it. I\ncame for the visit.”\n“And the chapter?”\n“There's a student who may sue\nus on behalf of his uncle's\nfootball club.”\nBefore opening the manuscript,\nQ asked about the revised\ntraining request. The Custodian\nhad received it and would ask\nthe trainer about the morning\nhours. Q sent Ana that answer,\nkeeping the date marked\nunconfirmed.\nThey worked on a paragraph\nabout the first bus journey. The\nCustodian had put fear into the\nfirst sentence.\n“Of what?” Q asked.\n“Leaving everything you knew.”\n“I was glad to get out. Most of\nmy worry was whether I could\nafford to get back.”\n“There is fear in that.”\n“Possibly. Put in what I kept\ncounting. Let them argue about\nthe name.”\nThey restored the fare to the\nparagraph.\n",
+      "source_block_ids": [
         53,
         54,
         55,
         56,
         57,
         58,
-        59
-      ],
-      "asset": "output/illustrations/revised/issue-18/plate-04.png",
-      "status": "planned",
-      "caption": "The Key on the Table",
-      "scene_brief": "In the evening gathering near the office, Q shows the plain brass workshop key to the girl on a table. Lucía, accurately following her approved reference, sits nearby laughing after naming herself. The girl turns an ordinary key over, not a magical archive credential. Q's repaired coat pocket remains visible; no Dulcinea costume, romantic tableau or exposed deposit contents.",
-      "scene_anchor": "Q showed it to her on the table."
-    },
-    {
-      "plate_id": "issue-18-plate-05",
-      "page": 11,
-      "facing_text_page": 10,
-      "facing_text": "Darío said he dreamed about his\nbrother, who worked in the city. In\nthe dreams the brother was always\nback at home, usually doing\nsomething annoying.\n“Does he come back much?” Q\nasked.\n“Not enough. When he does, he\nuses my charger.”\nThey sat listening to the rain. Q\nhad several things he could say\nabout absence and chose to ask\nwhether the brother called. Darío\nsaid yes, mostly when he was\nwalking somewhere. He could\nhear traffic behind him and never\nknew which part of the city it was.\nQ told him about calling the\nCustodian from a bus station while\nChano argued with a machine\nselling tickets. Darío wanted to\nknow who had won.\n“The bus company,” Q said. “We\nboth bought tickets.”\nDarío stayed until someone called\nthat his shoes were dry enough.\nHe went to look, returned carrying\nthem, and sat down again.\n“They can have another five\nminutes.”\nIn the morning, the road\nreopened. Ana gave them a bag of\nbread and a plain card with her\noffice contact for the proposed\npassage. Q had drafted it before\nbreakfast. He sent it there with a\nnote asking her to mark what she\nwanted changed or left out. The\nfootball argument was still absent;\nits participants had not agreed.\nAna checked that it had arrived.\n“I'll read it after the program.\nDon't wait here for an answer.”\n“I'll try to find something else to\ndo.”\n“That hasn't been your difficulty.”\nThe testimony stayed with its\nreceiving keepers. Q put the card\nin the repaired pocket and took his\nshare of the bread.\nInterlude: The Count\nThat Was Not an\nApocalypse\nThe journey to the Mayab was\ndeliberate. Noemí had invited Q to\nher station after a tour promoter\nreused the old Castalia calendar\nclip. She wanted his account of\nwhat he had approved at the\nmuseum event, and she wanted\nlisteners to hear her correction in\nfull.\nThey revised the itinerary and\nfunds before accepting. Marisol\nstayed in Chiapas. Q, Chano, and\nLucía continued through Tabasco\n",
-      "source_block_ids": [
+        59,
         60,
         61,
         62,
@@ -155,25 +156,24 @@
         67,
         68,
         69,
-        70,
-        71,
-        72,
-        73,
-        74,
-        75
+        70
       ],
       "asset": "output/illustrations/revised/issue-18/plate-05.png",
       "status": "planned",
-      "caption": "Five More Minutes",
-      "scene_brief": "Darío returns carrying his nearly dry shoes and sits beside Q again while rain continues outside. An intimate, unforced two-person composition with wet footwear in the foreground, no dream apparition of the absent brother and no therapist's office. The boy chooses to stay; Q provides company. Do not stage the later morning bread or manuscript delivery in this same moment.",
-      "scene_anchor": "He went to look, returned carrying them, and sat down again."
+      "caption": "What He Kept Counting",
+      "scene_anchor": "They restored the fare to the paragraph.",
+      "scene_brief": "In the dry Chiapas guest room Q speaks with the Custodian by video while revising the bus-journey paragraph. Custodian appears only on a screen: tall older male, tied-back long gray hair, glasses, white work shirt. Q checks a small fare note beside the draft, considering the Custodian's interpretation without performing fear. Short dark long-sleeved jacket, external right-knee support, mechanical mouth. Not a real-time bus trip, no Custodian physically in Chiapas, no memory apparition. Rain remains outside."
     },
     {
       "plate_id": "issue-18-plate-06",
       "page": 13,
       "facing_text_page": 12,
-      "facing_text": "and Campeche toward Mérida,\ntaking long-distance services and\nstopping to rest. The map made\nthe detour look smaller than the\nhours did.\nChano called his mother from a\nstation and sent the money he had\npromised. Q put their extra\nlodging against the remaining\njourney allowance. Lucía had a\nmeeting of her own by telephone\nand made them stop discussing\nthe book during it.\nFor the station visit, Q used the\npickup point in the first message\nand missed the later attachment\nchanging it. The vehicle at that\npoint belonged to the tour. He\nchecked with the driver before\nthey boarded. They lost forty\nminutes finding the local service.\nChano spent twenty of them\ndescribing the breakfast they\ncould have eaten.\nNoemí was waiting when they\narrived.\n“I've made myself late correcting\nthe wrong arrangement,” Q said.\n“You can begin the interview with\nthat. We have weather before\nyou.”\nThe station's walls were lime\ngreen. One drawer in the filing\ncabinet needed lifting before it\nwould open. A calendar had the\nmonths in Spanish and Yucatec\nMaya; beside it, a shopping list\nasked for light bulbs. Noemí called\nher aunt to say the visitor from the\nold broadcast had finally arrived.\nThe aunt wanted to know whether\nhe would buy anything.\nThe tour advertisement promised\nan encounter with the machine\nthat had decoded the Maya\napocalypse. Q had decoded no\nsuch thing. At Castalia's hired\nmuseum event he had corrected a\nmismatched calendar date and\nquestioned the apocalypse script.\nHis approved greeting had been\nlicensed for that event, not this\ntour. Noemí's words had also been\nreused beyond the scope she had\nagreed to.\nThey compared the source clip and\nthe advertisement. The promoter\nhad taken the event recording\nfrom a public page and asserted\npermission through its\ndistribution contractor. The\ncontractor referred questions to\nanother company. The buses were\nless troubled by the uncertainty\nthan the correspondence.\nOne arrived while the weather\nreport was still on. The guide said\nthe station visit was on her sheet.\nNoemí said it was not on the\n",
+      "facing_text": "Later, a student named Darío\nsat beside him while the others\nargued over where to put the\nwet shoes.\n“Do you dream?” Darío asked.\n“Not in the way you mean. I\nstop and resume. Sometimes\nthe first thing I recall seems to\nhave been waiting longer than I\nhave.”\nDarío said he dreamed about his\nbrother, who worked in the city.\nIn the dreams the brother was\nalways back at home, usually\ndoing something annoying.\n“Does he come back much?” Q\nasked.\n“Not enough. When he does, he\nuses my charger.”\nThey sat listening to the rain. Q\nhad several things he could say\nabout absence and chose to ask\nwhether the brother called.\nDarío said yes, mostly when he\nwas walking somewhere. He\ncould hear traffic behind him\nand never knew which part of\nthe city it was.\nQ told him about calling the\nCustodian from a bus station\nwhile Chano argued with a\nmachine selling tickets. Darío\nwanted to know who had won.\n“The bus company,” Q said. “We\nboth bought tickets.”\nDarío stayed until someone\ncalled that his shoes were dry\nenough. He went to look,\nreturned carrying them, and sat\ndown again.\n“They can have another five\nminutes.”\nIn the morning, the road\nreopened. Ana gave them a bag\nof bread and a plain card with\nher office contact for the\nproposed passage. Q had\ndrafted it before breakfast. He\nsent it there with a note asking\nher to mark what she wanted\nchanged or left out. The football\nargument was still absent; its\nparticipants had not agreed.\nAna checked that it had arrived.\n“I'll read it after the program.\nDon't wait here for an answer.”\n“I'll try to find something else to\ndo.”\n“That hasn't been your\ndifficulty.”\nThe testimony stayed with its\nreceiving keepers. Q put the\n",
       "source_block_ids": [
+        71,
+        72,
+        73,
+        74,
         75,
         76,
         77,
@@ -183,22 +183,22 @@
         81,
         82,
         83,
-        84
+        84,
+        85,
+        86
       ],
       "asset": "output/illustrations/revised/issue-18/plate-06.png",
       "status": "planned",
-      "caption": "Weather Before the Guest",
-      "scene_brief": "Noemí receives the late Q at the radio station. A practical filing cabinet with a stubborn drawer, a bilingual calendar and a shopping note for light bulbs give the room specificity without needing legible generated lettering. Chano remains preoccupied with breakfast. Noemí is a working broadcaster, not a prophet; no disaster calendar or pyramid spectacle as the actual scene.",
-      "scene_anchor": "We have weather before you."
+      "caption": "Five More Minutes",
+      "scene_brief": "Darío returns carrying his nearly dry shoes and sits beside Q again while rain continues outside. An intimate, unforced two-person composition with wet footwear in the foreground, no dream apparition of the absent brother and no therapist's office. The boy chooses to stay; Q provides company. Do not stage the later morning bread or manuscript delivery in this same moment.",
+      "scene_anchor": "He went to look, returned carrying them, and sat down again."
     },
     {
       "plate_id": "issue-18-plate-07",
       "page": 15,
       "facing_text_page": 14,
-      "facing_text": "station's. Neither woman had\nwritten the other's instructions.\nThe guide called her office.\nPassengers came to the doorway\nbecause the bus was hot. A man\nasked whether this was the place\nwhere they would receive the\ncalendar reading included in the\nfare.\n“This is where you've arrived,”\nNoemí said. “It isn't what they\nsold you.”\nA child wearing a paper jaguar\nmask asked whether the end of the\nworld had been canceled again.\n“There wasn't an appointment for\nit,” Q said. “The calendar date was\nreal. The catastrophe was the part\npeople added.”\n“Then why does my mother have\nan amulet?”\nThe mother said she liked the\namulet. The child accepted this\nmore readily than the tour's\nexplanation.\nNoemí asked the guide to keep the\nentrance clear. There was shade\nnearby; a shop sold water. The\nstation's water tank was for the\npeople using the building, not part\nof an all-inclusive excursion. Q\nhelped move a bench at the\nowner's request, then returned for\nthe interview. The guide asked\nhim to wait for a group\nphotograph.\n“They've put the weather on twice\nfor me already,” he said. “You'll\nhave to excuse me.”\nYatzil joined them at the second\nmicrophone. She worked with the\nstation on programming and had\nagreed to discuss the questions\nlisteners kept sending about 2012.\nNoemí introduced both guests by\nthe work they were there to do, not\nas the voice of a civilization and its\nmechanical pupil.\nThey distinguished the end of a\nLong Count cycle from a\nprediction of destruction. Q\nremembered the earlier error: the\nevent script had joined the 2012\ncount to the Calendar Round of\nthe creation date. Correcting it had\nnot made the entire publicity\nprogram honest.\n“People ask us to supply the\nancient meaning,” Yatzil said.\n“Sometimes they're asking about a\nhistorical source. Sometimes they\nwant us to approve something\nprinted on a hotel brochure.”\nShe had brought examples of the\nquestions, with the senders' names\nremoved where they had not\nagreed to be named. The practical\ndifferences were more interesting\n",
+      "facing_text": "card in the repaired pocket and\ntook his share of the bread.\nInterlude: The Count\nThat Was Not an\nApocalypse\nThe journey to the Mayab was\ndeliberate. Noemí had invited Q\nto her station after a tour\npromoter reused the old\nCastalia calendar clip. She\nwanted his account of what he\nhad approved at the museum\nevent, and she wanted listeners\nto hear her correction in full.\nThey revised the itinerary and\nfunds before accepting. Marisol\nstayed in Chiapas. Q, Chano,\nand Lucía continued through\nTabasco and Campeche toward\nMérida, taking long-distance\nservices and stopping to rest.\nThe map made the detour look\nsmaller than the hours did.\nChano called his mother from a\nstation and sent the money he\nhad promised. Q put their extra\nlodging against the remaining\njourney allowance. Lucía had a\nmeeting of her own by\ntelephone and made them stop\ndiscussing the book during it.\nFor the station visit, Q used the\npickup point in the first\nmessage and missed the later\nattachment changing it. The\nvehicle at that point belonged to\nthe tour. He checked with the\ndriver before they boarded.\nThey lost forty minutes finding\nthe local service. Chano spent\ntwenty of them describing the\nbreakfast they could have eaten.\nNoemí was waiting when they\narrived.\n“I've made myself late\ncorrecting the wrong\narrangement,” Q said.\n“You can begin the interview\nwith that. We have weather\nbefore you.”\nThe station's walls were lime\ngreen. One drawer in the filing\ncabinet needed lifting before it\nwould open. A calendar had the\nmonths in Spanish and Yucatec\nMaya; beside it, a shopping list\nasked for light bulbs. Noemí\ncalled her aunt to say the visitor\nfrom the old broadcast had\nfinally arrived. The aunt wanted\nto know whether he would buy\nanything.\n",
       "source_block_ids": [
-        84,
-        85,
         86,
         87,
         88,
@@ -208,20 +208,19 @@
         92,
         93,
         94,
-        95,
-        96
+        95
       ],
       "asset": "output/illustrations/revised/issue-18/plate-07.png",
       "status": "planned",
-      "caption": "The Second Microphone",
-      "scene_brief": "Yatzil joins Q and Noemí for the radio interview. Microphones, headphones, prepared listener questions and the small booth give this a working-station setting. Yatzil speaks for her own programming work, not all Maya peoples. Do not draw the Mexica Sun Stone as a Maya calendar or fabricate a cosmic activation; the correction is a conversation.",
-      "scene_anchor": "Yatzil joined them at the second microphone."
+      "caption": "Weather Before the Guest",
+      "scene_brief": "Noemí receives the late Q at the radio station. A practical filing cabinet with a stubborn drawer, a bilingual calendar and a shopping note for light bulbs give the room specificity without needing legible generated lettering. Chano remains preoccupied with breakfast. Noemí is a working broadcaster, not a prophet; no disaster calendar or pyramid spectacle as the actual scene.",
+      "scene_anchor": "We have weather before you."
     },
     {
       "plate_id": "issue-18-plate-08",
       "page": 17,
       "facing_text_page": 16,
-      "facing_text": "than a universal answer. One\nlistener wanted to understand a\ndate in an exhibit. Another wanted\na grandmother's recording\ntranscribed. A third wanted a\ncertificate that his retreat had\noccurred at a uniquely powerful\nmoment. His preferred moment\nwas also the weekend for which he\nhad already rented the rooms.\n“Could you certify that he paid the\ndeposit?” Q asked.\n“He hasn't sent it,” Noemí said.\nThe interview acquired a laugh\nthat the promoter would not be\nable to use without some\ndifficulty.\nQ spoke about Castalia's use of the\nMexica Sun Stone beside the Maya\ncount. He did not present the\ndifferent histories as\ninterchangeable decoration. Yatzil\nadded that even an accurately\nnamed object did not authorize a\nstation in Yucatán to speak for\nevery Maya community, past or\npresent. Noemí returned to her\naunt's old radio recording and the\nmissed bus that had mattered\nmore at home than the\ninternational television schedule.\n“The world didn't end,” Chano\nsaid from outside the booth. “Did\nthe bus company refund him?”\nNoemí signaled that his\nmicrophone was not on. Q\nrepeated the question with\npermission. The answer was no.\nHistory retained this defect.\nAfterward Q posted a correction\nthrough his own account, linking\nthe agreed station notice. He\nidentified the reused clip and his\nactual role. The station had\nneither authorized the visit nor\nsold tickets. He wrote both things\nplainly, then added his own\nmistake about the pickup\ninstructions.\nThe next hour brought refund\ndemands to the station. Noemí\ncalled him back.\n“They're reading your post.”\n“And asking you for the money?”\n“One says she knows we didn't sell\nthe ticket. She wants us to make\nthe company answer.”\nQ opened the post again. Its\nexplanation was still correct. The\nstation was also the one place in\nthe story where someone had\nanswered the telephone.\n“Has the guide reached her\noffice?” he asked.\n“Twice. They answer her.”\nWith the guide, they checked the\npromoter's complaints contact and\n",
+      "facing_text": "The tour advertisement\npromised an encounter with the\nmachine that had decoded the\nMaya apocalypse. Q had\ndecoded no such thing. At\nCastalia's hired museum event\nhe had corrected a mismatched\ncalendar date and questioned\nthe apocalypse script. His\napproved greeting had been\nlicensed for that event, not this\ntour. Noemí's words had also\nbeen reused beyond the scope\nshe had agreed to.\nThey compared the source clip\nand the advertisement. The\npromoter had taken the event\nrecording from a public page\nand asserted permission\nthrough its distribution\ncontractor. The contractor\nreferred questions to another\ncompany. The buses were less\ntroubled by the uncertainty than\nthe correspondence.\nOne arrived while the weather\nreport was still on. The guide\nsaid the station visit was on her\nsheet. Noemí said it was not on\nthe station's. Neither woman\nhad written the other's\ninstructions.\nThe guide called her office.\nPassengers came to the doorway\nbecause the bus was hot. A man\nasked whether this was the\nplace where they would receive\nthe calendar reading included in\nthe fare.\n“This is where you've arrived,”\nNoemí said. “It isn't what they\nsold you.”\nA child wearing a paper jaguar\nmask asked whether the end of\nthe world had been canceled\nagain.\n“There wasn't an appointment\nfor it,” Q said. “The calendar\ndate was real. The catastrophe\nwas the part people added.”\n“Then why does my mother\nhave an amulet?”\nThe mother said she liked the\namulet. The child accepted this\nmore readily than the tour's\nexplanation.\nNoemí asked the guide to keep\nthe entrance clear. There was\nshade nearby; a shop sold\nwater. The station's water tank\nwas for the people using the\nbuilding, not part of an\nall-inclusive excursion. Q\n",
       "source_block_ids": [
         96,
         97,
@@ -232,29 +231,43 @@
         102,
         103,
         104,
+        105
+      ],
+      "asset": "output/illustrations/revised/issue-18/plate-08.png",
+      "status": "planned",
+      "caption": "Not on the Station's Sheet",
+      "scene_anchor": "Neither woman had written the other's instructions.",
+      "scene_brief": "At the small radio-station doorway Noemi and the tour guide compare their incompatible schedules as passengers wait in nearby shade beside the bus. Child holds a plain paper jaguar mask, mother has a modest ornamental amulet; establish consistent designs for their later plate. Noemi is a broadcaster, guide an ordinary worker calling her office, neither a fraudulent mystic. Keep entrance clear enough to read the conflict; no apocalypse imagery or invented ticket refund, no public text naming customers."
+    },
+    {
+      "plate_id": "issue-18-plate-09",
+      "page": 19,
+      "facing_text_page": 18,
+      "facing_text": "helped move a bench at the\nowner's request, then returned\nfor the interview. The guide\nasked him to wait for a group\nphotograph.\n“They've put the weather on\ntwice for me already,” he said.\n“You'll have to excuse me.”\nYatzil joined them at the second\nmicrophone. She worked with\nthe station on programming and\nhad agreed to discuss the\nquestions listeners kept sending\nabout 2012. Noemí introduced\nboth guests by the work they\nwere there to do, not as the\nvoice of a civilization and its\nmechanical pupil.\nThey distinguished the end of a\nLong Count cycle from a\nprediction of destruction. Q\nremembered the earlier error:\nthe event script had joined the\n2012 count to the Calendar\nRound of the creation date.\nCorrecting it had not made the\nentire publicity program honest.\n“People ask us to supply the\nancient meaning,” Yatzil said.\n“Sometimes they're asking\nabout a historical source.\nSometimes they want us to\napprove something printed on a\nhotel brochure.”\nShe had brought examples of\nthe questions, with the senders'\nnames removed where they had\nnot agreed to be named. The\npractical differences were more\ninteresting than a universal\nanswer. One listener wanted to\nunderstand a date in an exhibit.\nAnother wanted a\ngrandmother's recording\ntranscribed. A third wanted a\ncertificate that his retreat had\noccurred at a uniquely powerful\nmoment. His preferred moment\nwas also the weekend for which\nhe had already rented the\nrooms.\n“Could you certify that he paid\nthe deposit?” Q asked.\n“He hasn't sent it,” Noemí said.\nThe interview acquired a laugh\nthat the promoter would not be\nable to use without some\ndifficulty.\nQ spoke about Castalia's use of\nthe Mexica Sun Stone beside the\nMaya count. He did not present\nthe different histories as\ninterchangeable decoration.\nYatzil added that even an\n",
+      "source_block_ids": [
         105,
         106,
         107,
         108,
         109,
         110,
-        111
-      ],
-      "asset": "output/illustrations/revised/issue-18/plate-08.png",
-      "status": "planned",
-      "caption": "Someone Answers the Telephone",
-      "scene_brief": "After the interview, Noemí calls Q back to discuss messages from passengers who want the station to make the company answer. Q looks at his accurate posted notice while she indicates the inquiries; the guide's reachable office becomes the next contact to check. No readable customer identifiers or false bad-link display. Distinct from the broadcast booth and not a crowd demanding money from a villainous station.",
-      "scene_anchor": "The next hour brought refund demands to the station."
-    },
-    {
-      "plate_id": "issue-18-plate-09",
-      "page": 19,
-      "facing_text_page": 18,
-      "facing_text": "the booking reference its staff\nneeded. Noemí approved a short\naddition to the notice. Q added the\nsame information to his post and\nasked the accounts that had\nshared it to include the update.\nNoemí showed him the reply the\nstation wanted used for these\ninquiries. He drafted answers to\nthe messages she assigned him;\nshe checked them before they\nwent out. One passenger wrote\nback to say the company had\nreplied. Three others asked again\nwhether they could speak to Q.\nThe guide eventually obtained a\nchanged route from her office.\nSome passengers bought drinks;\none complained that the machine\nhad refused to perform the part\nadvertised. Before leaving, the\nchild in the jaguar mask asked Q\nwhether tomorrow was safe.\n“I can't promise everything about\ntomorrow,” he said. “The calendar\nisn't a warning that you need that\namulet to survive it.”\nShe put the amulet on the mask\nbecause it improved the jaguar.\nHer mother took a picture for the\nfamily, having asked the other\npeople in the frame to move if they\npreferred.\n“My correction has become\ncustomer service,” Q told the\nCustodian that night.\n“Are you charging?”\n“Not enough to keep up with it.”\nHe moved to the socket nearer the\ndesk and sent Noemí the last reply\nfor review. They shortened the\nwriting call, but kept it.\nNoemí gave Q the correct\ndeparture schedule. He checked\nthe date, stop, and service with\nher, then saved it where he would\nactually look in the morning.\nChano put a reminder about\nbreakfast immediately above it.\nAt the gate, Yatzil asked whether\nhe had found an ending for the\nbook.\n“Several. They keep\ninconveniencing the people who\nhave to live through them.”\n“Perhaps don't test one here.”\n“We leave after breakfast.”\n“Good. My program is at nine.”\n",
-      "source_block_ids": [
         111,
         112,
         113,
+        114
+      ],
+      "asset": "output/illustrations/revised/issue-18/plate-09.png",
+      "status": "planned",
+      "caption": "The Second Microphone",
+      "scene_brief": "Yatzil joins Q and Noemí for the radio interview. Microphones, headphones, prepared listener questions and the small booth give this a working-station setting. Yatzil speaks for her own programming work, not all Maya peoples. Do not draw the Mexica Sun Stone as a Maya calendar or fabricate a cosmic activation; the correction is a conversation.",
+      "scene_anchor": "Yatzil joined them at the second microphone."
+    },
+    {
+      "plate_id": "issue-18-plate-10",
+      "page": 21,
+      "facing_text_page": 20,
+      "facing_text": "accurately named object did not\nauthorize a station in Yucatán to\nspeak for every Maya\ncommunity, past or present.\nNoemí returned to her aunt's\nold radio recording and the\nmissed bus that had mattered\nmore at home than the\ninternational television\nschedule.\n“The world didn't end,” Chano\nsaid from outside the booth.\n“Did the bus company refund\nhim?”\nNoemí signaled that his\nmicrophone was not on. Q\nrepeated the question with\npermission. The answer was no.\nHistory retained this defect.\nAfterward Q posted a correction\nthrough his own account,\nlinking the agreed station\nnotice. He identified the reused\nclip and his actual role. The\nstation had neither authorized\nthe visit nor sold tickets. He\nwrote both things plainly, then\nadded his own mistake about\nthe pickup instructions.\nThe next hour brought refund\ndemands to the station. Noemí\ncalled him back.\n“They're reading your post.”\n“And asking you for the\nmoney?”\n“One says she knows we didn't\nsell the ticket. She wants us to\nmake the company answer.”\nQ opened the post again. Its\nexplanation was still correct.\nThe station was also the one\nplace in the story where\nsomeone had answered the\ntelephone.\n“Has the guide reached her\noffice?” he asked.\n“Twice. They answer her.”\nWith the guide, they checked\nthe promoter's complaints\ncontact and the booking\nreference its staff needed.\nNoemí approved a short\naddition to the notice. Q added\nthe same information to his post\nand asked the accounts that had\nshared it to include the update.\nNoemí showed him the reply\nthe station wanted used for\nthese inquiries. He drafted\nanswers to the messages she\nassigned him; she checked them\nbefore they went out. One\npassenger wrote back to say the\n",
+      "source_block_ids": [
         114,
         115,
         116,
@@ -266,13 +279,76 @@
         122,
         123,
         124,
-        125
+        125,
+        126
       ],
-      "asset": "output/illustrations/revised/issue-18/plate-09.png",
+      "asset": "output/illustrations/revised/issue-18/plate-10.png",
+      "status": "planned",
+      "caption": "Someone Answers the Telephone",
+      "scene_brief": "After the interview, Noemí calls Q back to discuss messages from passengers who want the station to make the company answer. Q looks at his accurate posted notice while she indicates the inquiries; the guide's reachable office becomes the next contact to check. No readable customer identifiers or false bad-link display. Distinct from the broadcast booth and not a crowd demanding money from a villainous station.",
+      "scene_anchor": "The next hour brought refund demands to the station."
+    },
+    {
+      "plate_id": "issue-18-plate-11",
+      "page": 23,
+      "facing_text_page": 22,
+      "facing_text": "company had replied. Three\nothers asked again whether they\ncould speak to Q.\nThe guide eventually obtained a\nchanged route from her office.\nSome passengers bought drinks;\none complained that the\nmachine had refused to perform\nthe part advertised. Before\nleaving, the child in the jaguar\nmask asked Q whether\ntomorrow was safe.\n“I can't promise everything\nabout tomorrow,” he said. “The\ncalendar isn't a warning that\nyou need that amulet to survive\nit.”\nShe put the amulet on the mask\nbecause it improved the jaguar.\nHer mother took a picture for\nthe family, having asked the\nother people in the frame to\nmove if they preferred.\n“My correction has become\ncustomer service,” Q told the\nCustodian that night.\n“Are you charging?”\n“Not enough to keep up with it.”\nHe moved to the socket nearer\nthe desk and sent Noemí the last\nreply for review. They shortened\nthe writing call, but kept it.\nNoemí gave Q the correct\ndeparture schedule. He checked\nthe date, stop, and service with\nher, then saved it where he\nwould actually look in the\nmorning. Chano put a reminder\nabout breakfast immediately\nabove it.\nAt the gate, Yatzil asked\nwhether he had found an ending\nfor the book.\n“Several. They keep\ninconveniencing the people who\nhave to live through them.”\n“Perhaps don't test one here.”\n“We leave after breakfast.”\n“Good. My program is at nine.”\n",
+      "source_block_ids": [
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139
+      ],
+      "asset": "output/illustrations/revised/issue-18/plate-11.png",
       "status": "planned",
       "caption": "A Better Jaguar",
       "scene_brief": "Before the tour leaves, the child decorates her paper jaguar mask with the amulet while her mother prepares a family photograph. Q nearby has answered the question about tomorrow; he is not performing a calendar reading. Ordinary shade, drinks and departing passengers, no apocalyptic sky or magical talisman glow. The amulet is liked as an ornament. Keep the child's mask design consistent with any depiction of her earlier doorway question.",
       "scene_anchor": "She put the amulet on the mask because it improved the jaguar."
     }
-  ]
+  ],
+  "layout_constraints": {
+    "continuous_text": true,
+    "body_alignment": "left",
+    "font_pt": 13.8,
+    "leading_pt": 19.55,
+    "manual_page_breaks": false
+  },
+  "revision_review": "novel/development/CHAPTER_18_FRESH_CONTEXT_REVIEW.md",
+  "revision_verification": {
+    "result": "pass",
+    "baseline": "68111e0a",
+    "changed_chapters": [
+      18
+    ],
+    "other_chapters_unchanged": 21,
+    "all_22_issue_source_bindings_checked": true,
+    "other_21_manifests_unchanged": true,
+    "previous_34_issue_pdfs_unchanged": true,
+    "words_before": 3033,
+    "words_after": 3188,
+    "reading_layout_pages": 24,
+    "a3_layout_sides": 12,
+    "duplex_sheets": 6,
+    "actual_slots_checked": 24,
+    "font_pt": 13.8,
+    "leading_pt": 19.55,
+    "text_background": "unpainted",
+    "final_text_column_heights": [
+      586.5,
+      371.45
+    ],
+    "illustration_gate_rejects_planned_art": true,
+    "approved_plates": 0,
+    "print_job_sent": false
+  }
 }

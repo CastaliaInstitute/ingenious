@@ -13,6 +13,13 @@ under review. The same-text typography comparison supports retaining left-aligne
 body columns: the tested justification introduced distracting word spacing.
 No issue pagination changed for this comparison.
 
+Chapter Eighteen's latest source revision now plans twenty-four comic pages,
+twelve unique plates and six duplex A3 sheets at Georgia 13.8/19.55. The internal
+layout preserves all 3,188 words in continuous left-aligned columns. All twelve
+plates remain ungenerated; this is not a finished illustrated issue. See its
+[updated facing-text plan](../illustrations/revised/issue-18/manifest.json) and
+[voice and simulation review](../../novel/development/CHAPTER_18_FRESH_CONTEXT_REVIEW.md).
+
 Issue Seventeen now has a complete [twenty-page reading proof](../pdf/ingenious-issue-17-revised-en-bw.pdf)
 and [ten-side A3 folding proof](../pdf/ingenious-issue-17-revised-en-bw-a3.pdf).
 Ten unique plates include the cover; all 2,728 words flow at Georgia

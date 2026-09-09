@@ -1,5 +1,9 @@
 # Chapter Eighteen: five more minutes
 
+Historical checkpoint. The later `CHAPTER_18_FRESH_CONTEXT_REVIEW.md` supersedes
+this file's source count, twenty-page layout and nine-facing-plate plan. Its
+preserved wrong-song, company and accurate-notice findings still apply.
+
 ## Verdict
 
 The chapter's wrong song, football argument and unhurried conversation with Darío

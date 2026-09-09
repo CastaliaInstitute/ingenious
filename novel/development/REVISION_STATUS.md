@@ -1,5 +1,25 @@
 # Motivation revision: working record
 
+## Latest voice checkpoint: Chapter Eighteen
+
+Ana and Q now turn Mateo's repeated training request into a specific handover
+request, constrained by the departing keeper's work hours. Q raises it before
+the evening writing and returns the Custodian's still-unconfirmed answer.
+The first-bus paragraph becomes an actual disagreement: the Custodian calls it
+fear; Q recalls wanting to leave and counting return money, allowing competing
+interpretations without inventing a remembered terror. Lucía's arrival and Q's
+dry-room call location are clarified. Six fresh-context alternative-model probes
+informed review, not faculty approval. See `CHAPTER_18_FRESH_CONTEXT_REVIEW.md`.
+
+Only Chapter Eighteen and its outline entry change from `68111e0a`. All 3,188
+words fit twenty-four comic pages at Georgia 13.8/19.55, with twelve planned
+plates and six A3 duplex sheets. All eleven text pages and the inner A3 spread
+were visually checked; exact source order, all 24 imposed text positions and
+all 22 source bindings pass. Other chapters/manifests and 34 earlier issue PDFs
+are unchanged. No art or finished illustrated Issue Eighteen proof is claimed.
+Next is its complete Goya plate set and PDF verification, alongside the earlier
+art correction and whole-book work. No printing or A+ certification. Goal active.
+
 ## Latest production checkpoint: Issue Seventeen
 
 Issue Seventeen now has ten unique scene-bound plates, twenty reading pages and
