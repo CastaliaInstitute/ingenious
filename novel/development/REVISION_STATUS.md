@@ -11,10 +11,16 @@ style audit before final acceptance. See `GOYA_ART_DIRECTION.md` and the saved
 lunch redraw now exist, with prompts, museum references and explicit limitations.
 None is final-approved. The typography comparison favors retaining left alignment:
 the tested justified columns create conspicuous gaps despite hyphenation. No
-production pagination or facing-text mappings changed. Next: resolve Q's drawn
-identity and the overly posed lunch group, then rebuild the replacement plates
-and continue the later chapter issues. No print job is authorized by historical
-proof checks. The full goal remains active.
+production pagination or facing-text mappings changed. The next continuity pass
+restored Q's mechanical sampling mouth and panel-built jaw, then tested them in
+Chapter Fifteen's corridor call and taquería scenes. Those two new plates have a
+verified A3 selected-spread proof; six plates remain before the complete issue can
+be built. All 22 chapter texts and their page bindings remain unchanged in this
+pass. Issues 15-22 now use the corrected short-jacket and drawn-aquatint briefs.
+Next: complete Issue Fifteen's six remaining plates, rebuild the rejected Issue
+Fourteen set, and audit earlier art while continuing the later issues and broader
+literary review. No print job is authorized by historical proof checks. The full
+goal remains active.
 
 ## Active objective
 

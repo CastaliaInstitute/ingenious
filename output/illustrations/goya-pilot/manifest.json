@@ -120,6 +120,23 @@
       ],
       "status": "not approved",
       "review": "Softer aquatint fields and less idealized faces improve the drawing. Persistent blank oval Q face, posed group and warm ink/grain still need correction. Not promoted into an issue PDF."
+    },
+    {
+      "path": "output/illustrations/goya-pilot/before-lunch-goya-v4.png",
+      "sha256": "c1cc0aa0f70138f25080f291aa533a69543f34dae5319e5f37c247581b2a441e",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "key": "before-lunch-goya-v4",
+      "generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-cb954862-613a-4e1e-bb70-1709eafba142.png",
+      "prompt": "Use case: identity-preserve. Image 1 is the edit target: keep this exact lunch scene and its hand-drawn Goya-like aquatint language. Image 2 is ONLY the robot's HEAD STRUCTURE reference; do not copy its photographic finish, detail density, scene or other person. Change Q's head in Image1 from the blank egg mask into the narrow panel-built mechanical head recognizable in Image2: defined brow and recessed lens eyes, angular cheek plates, long tapering jaw, concentric circular ear, a few panel seams and rivets. IMPORTANT: include a small horizontal mechanical mouth opening in the lower face, edged by two hinged metal plates. He has a mouth that samples food in the manuscript. This is not a human smile or fleshy lips, and not a skull with teeth. Keep his attentive downward head tilt toward Lucía. Draw these head features economically with thin broken etched lines and a few black shadow shapes, not photorealistic metal. Preserve ALL the other figures, hair, clothing, gestures, closed notebook, papers, bag, vendor, bus station, Q's slim body, short jacket with long sleeves, question mark, and knee support exactly. Also neutralize warm brown into BLACK/GRAY ink and keep all unprinted white reserves pure white. No all-over antique paper texture or sepia. No new text, frame or objects. Portrait single illustration.",
+      "refs": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/goya-pilot/before-lunch-goya-v3.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-04/plate-03.png"
+      ],
+      "status": "selected identity reference for further drawn studies, not a final press plate",
+      "review": "Restores panel-built tapered lower face and a small mechanical mouth without reverting the entire scene to photography. Matches the sampling-mouth explanation in Chapter One. Retains circular ear, short jacket and question mark. Further scene use verified in Issue Fifteen plates 03 and 05. Whole-issue style review and press resolution remain open."
     }
   ],
   "typography": {
@@ -144,5 +161,11 @@
     "1024x1536 native assets are approximately 150 dpi at comic trim, not press-resolution masters.",
     "Issue Fourteen's earlier ten images and two PDFs remain superseded studies.",
     "Issues 1-13 still require a complete style audit; Issues 15-22 still need revised illustration production."
-  ]
+  ],
+  "body_continuity": {
+    "source": "novel/THE_INGENIOUS_MACHINE.md",
+    "chapter": 1,
+    "anchor": "The mouth can sample it. It goes into a receptacle. Empty and rinse it.",
+    "rule": "Preserve a mechanical sampling mouth in Q's drawn face. Food tasting is established; it does not charge him or imply a digestive body."
+  }
 }

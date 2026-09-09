@@ -13,6 +13,12 @@ under review. The same-text typography comparison supports retaining left-aligne
 body columns: the tested justification introduced distracting word spacing.
 No issue pagination changed for this comparison.
 
+Two [Issue Fifteen Goya scene proofs](../pdf/ingenious-issue-15-goya-scene-proofs-a3.pdf)
+now place the corridor call and taquería drawings beside their actual text pages.
+The A3 landscape PDF contains selected spreads only, not the complete issue or a
+folding file. Q's mechanical sampling mouth and short jacket are retained. Six
+plates remain planned; see the [manifest](../illustrations/revised/issue-15/manifest.json).
+
 The planned serial has 22 illustrated issues, one chapter and its interludes per
 issue. The English manuscript is the current revision source. Most PDFs in this
 directory predate the motivation, continuity, and ending revision and must not

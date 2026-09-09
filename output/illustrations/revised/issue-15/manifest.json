@@ -6,13 +6,13 @@
   "page_count": 16,
   "text_font": "Georgia 12.3/17.425 pt",
   "plate_count_including_cover": 8,
-  "status": "planned; no new Issue 15 images generated or approved",
+  "status": "partial illustrated study: two of eight plates reviewed; six remain planned",
   "character_reference": "output/illustrations/revised/issue-01/cover.png",
   "chano_reference": "output/illustrations/revised/issue-03/plate-06.png",
   "prime_design_source": "output/illustrations/revised/issue-11/manifest.json",
-  "character_design": "Q retains approved narrow segmented head, round ear mechanisms, exposed neck, question-mark breastplate, long worn coat and supported knee. Chano follows approved reference. Inés is the younger keeper, Aurelio the older keeper. Prime is a clean lighter-bodied Q-family peer with undamaged shoulder; Mauro is his technician, not the Custodian. If the Custodian is ever depicted, keep the tall older man, long tied-back gray hair, glasses and white work shirt; this chapter's calls are remote.",
-  "art_direction": "Neutral monochrome Goya-inspired etched realism, pure white highlights, no sepia or cream ink background. Full bleed at comic trim with separate typeset caption margin. Ordinary Mexico City ministry access review and taquería, not ritual mutilation or a loss of intellect. Seven exact-facing scenes and separate cover. Preserve deposits and closed-record privacy in illustrations; no legible confidential content. Prime's market scene is a narrated earlier visit.",
-  "approval_scope": "Source-bound plan only. Eight planned plates including cover; 16-page internal trim proof, eight A3 landscape sides / four short-edge duplex sheets. Reviewed 12.3/17.425-point type fills both final narrative columns. No new images generated or approved, final illustrated PDF or print job.",
+  "character_design": "Q retains approved narrow segmented head, round ear mechanisms, exposed neck, question-mark breastplate, short fitted dark jacket with long sleeves and supported knee. Chano follows approved reference. Inés is the younger keeper, Aurelio the older keeper. Prime is a clean lighter-bodied Q-family peer with undamaged shoulder; Mauro is his technician, not the Custodian. If the Custodian is ever depicted, keep the tall older man, long tied-back gray hair, glasses and white work shirt; this chapter's calls are remote. Q's lower face includes a small mechanical sampling mouth; do not simplify it into a blank mask. Use the corrected Goya pilot for Q-family identity, not photographic surface detail.",
+  "art_direction": "Neutral monochrome Goya-inspired etching and aquatint with economical drawn contours and broad tonal masses, pure white highlights, no sepia or cream ink background. Full bleed at comic trim with separate typeset caption margin. Ordinary Mexico City ministry access review and taquería, not ritual mutilation or a loss of intellect. Seven exact-facing scenes and separate cover. Preserve deposits and closed-record privacy in illustrations; no legible confidential content. Prime's market scene is a narrated earlier visit. Governing reference: novel/development/GOYA_ART_DIRECTION.md. Earlier plates guide identity only; do not imitate their photographic rendering.",
+  "approval_scope": "Two scene studies have source, identity and rendered-spread checks. They are not final press approvals; native resolution remains limited. The complete issue cannot build while six plates are missing. Source mappings and continuous pagination unchanged. No print job.",
   "plates": [
     {
       "plate_id": "issue-15-cover",
@@ -96,10 +96,31 @@
         38
       ],
       "asset": "output/illustrations/revised/issue-15/plate-03.png",
-      "status": "planned",
+      "status": "reviewed-study",
       "caption": "Still writing",
       "scene_brief": "Q makes the corridor call to the Custodian, relaxed enough for a dry joke but attentive to the coming change. Worn narrow face and articulated hand by a modest phone; background shelves stay closed. The Custodian is remote, not physically at the ministry; no holographic soul, unplugged brain or death symbolism.",
-      "scene_anchor": "Q called the Custodian from the corridor before proceeding."
+      "scene_anchor": "Q called the Custodian from the corridor before proceeding.",
+      "generation_mode": "built-in reference-based image generation and corrective edit",
+      "generation_prompt": "Use case: illustration-story. A NEW portrait plate for The Ingenious Machine in Francisco Goya's Los Caprichos etching-and-aquatint style. Image1 is the controlling PRINT-LANGUAGE reference only: thin searching etched contour, sparing parallel hatch, broad flat granular aquatint, compressed space, expressive unidealized human gesture, white reserved shapes. Do not copy its animals, sleeper, costume, border, words or antique paper color. Image2 is Q and Chano IDENTITY only, never repeat its scene. Q is the tall slender mechanical figure with narrow panel-built face, recessed circular eyes, concentric ear, long neck, small hinged mechanical mouth, short fitted dark jacket with long sleeves, question-mark chest, slim limbs and right-knee support. Chano is the stocky moustached wavy-haired man. Render machinery as a few drawn seams/shadows, no photographic metal, no pores or fabric microtexture. Not a modern comic-book ink drawing, no heavy uniform outlines, no photorealism, no 3D, no cinematic lens. Neutral black/gray on PURE WHITE unprinted reserves. No sepia or simulated aged-paper stain. No text, frame or caption; leave bottom 6% free for separate typesetting. Contemporary Mexico, not colonial costume.\nScene: Q alone in a dim ordinary ministry storage corridor, on a phone call to his coauthor the Custodian. Waist-up composition with Q slightly off center, leaning a forearm against a plain sill, phone held naturally to one circular ear, the mechanical mouth visibly mid-conversation. Head angled sideways, thoughtful and quietly amused rather than mournful. Few closed shelves in shadow, plain doorframe, white reflected light at the end of the passage. An intimate drawn study of a speaking machine, not a heroic poster. The Custodian is REMOTE: do not draw him standing there, don't put another face on the phone or create a ghost. No operating table, cables into Q's brain, deletion spectacle, weapons or books burning. His intelligence and memories remain intact.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/goya-pilot/references/capricho-43-met.jpg",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/goya-pilot/before-lunch-goya-v4.png"
+      ],
+      "corrective_edits": [
+        {
+          "prompt": "Use case: precise-object-edit. Preserve this whole Goya-style etched/aquatint portrait of Q on the phone: same segmented mechanical face, mouth slit, eyes, circular ears, tilted head, hands/phone, pose, jacket hem, question mark, shelves and corridor. Correct only the raised phone arm's jacket sleeve: extend the dark sleeve over the currently bare forearm all the way to the wrist, with plausible bent-elbow folds. Keep his mechanical HAND visible. Both sleeves must be long. Extend the existing dark corridor drawing to the top and two side canvas edges so there is NO inset white frame or border; preserve the bottom white caption reserve. Make ink neutral BLACK/GRAY rather than brown and unprinted areas pure WHITE. Do not add text, change his face, smooth the etching, add photographic detail or create another figure.",
+          "reference_images": [
+            "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-abd604da-933e-4d04-8156-12250fcd7e17.png"
+          ]
+        }
+      ],
+      "selected_generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-6045b969-b479-4592-9371-bbf9e1f0ad52.png",
+      "asset_sha256": "3d9ebd3b8cb17446f217a086b4454e684869734ac6bb6dc29742e857e036ec51",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "visual_review": "Q's narrow segmented head, circular ear and mechanical mouth remain readable. Phone hand contacts ear; full sleeve restored. Custodian remains remote. Aquatint shadows replace photographic lighting. Exact source page 6 checked at comic trim. Study only."
     },
     {
       "plate_id": "issue-15-plate-04",
@@ -150,10 +171,31 @@
         64
       ],
       "asset": "output/illustrations/revised/issue-15/plate-05.png",
-      "status": "planned",
+      "status": "reviewed-study",
       "caption": "Opinions about lunch",
       "scene_brief": "At a taquería near the Mexico City ministry, Q tries a small amount of salsa on suadero while Chano watches and the taquero points with the serving spoon. Their notes stay closed for the next taco. Modern counter and food textures, no knight costume, fuel feeding or patronizing lesson in how to eat.",
-      "scene_anchor": "Chano watched as Q tried a small amount."
+      "scene_anchor": "Chano watched as Q tried a small amount.",
+      "generation_mode": "built-in reference-based image generation and corrective edit",
+      "generation_prompt": "Use case: illustration-story. A NEW portrait plate for The Ingenious Machine in Francisco Goya's Los Caprichos etching-and-aquatint style. Image1 is the controlling PRINT-LANGUAGE reference only: thin searching etched contour, sparing parallel hatch, broad flat granular aquatint, compressed space, expressive unidealized human gesture, white reserved shapes. Do not copy its animals, sleeper, costume, border, words or antique paper color. Image2 is Q and Chano IDENTITY only, never repeat its scene. Q is the tall slender mechanical figure with narrow panel-built face, recessed circular eyes, concentric ear, long neck, small hinged mechanical mouth, short fitted dark jacket with long sleeves, question-mark chest, slim limbs and right-knee support. Chano is the stocky moustached wavy-haired man. Render machinery as a few drawn seams/shadows, no photographic metal, no pores or fabric microtexture. Not a modern comic-book ink drawing, no heavy uniform outlines, no photorealism, no 3D, no cinematic lens. Neutral black/gray on PURE WHITE unprinted reserves. No sepia or simulated aged-paper stain. No text, frame or caption; leave bottom 6% free for separate typesetting. Contemporary Mexico, not colonial costume.\nScene: a modest Mexico City taquería after a ministry appointment. Q and Chano sit naturally at a small counter, seen in close three-quarter side view, figures cropped around the knees rather than a full-body parade. Q carefully tastes a LITTLE salsa on a small suadero taco, holding the taco near his visible mechanical mouth, without a comic explosion of heat. Chano watches with dry amusement and rests an elbow on the counter. Behind the counter the taquero points out the hot salsa with the spoon still in its bowl. A closed small notebook rests away from food. Modest tortilla stack, salsa bowls and a meat cooking pan, selected shapes not an inventory. Exactly these three figures. The visual joke is the ordinary lunch shared by these mismatched friends. Q is competent at eating; Chano isn't teaching an infant. No feeding tube, electricity from food, knightly props or hovering objects.",
+      "reference_images": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/goya-pilot/references/capricho-43-met.jpg",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/goya-pilot/before-lunch-goya-v4.png"
+      ],
+      "corrective_edits": [
+        {
+          "prompt": "Use case: precise-object-edit. Keep this Goya-style taquería illustration and the three people's identities, poses, Q's segmented face/circular ear/sampling mouth, taco in his hand, closed notebook, counter and tonal composition. Correct the restaurant equipment ONLY: remove the tall vertical layered al-pastor spit behind the taquero. Replace it with a plain dark wall and an ordinary shallow suadero cooking pan at counter height; no vertical meat stack. The cook points with the spoon IN the salsa bowl, so lower its tip into the nearest bowl rather than showing a hovering filled spoon. Keep Q's visible near knee supported with a subtle dark strap. Extend the existing scene to top and side canvas edges, eliminating the narrow artificial white picture border; bottom white reserve remains for separately typeset caption. Strict BLACK/GRAY ink on pure WHITE, remove brown tint but preserve aquatint grain within shadows. Do not add details, people, words, food reactions or photorealism.",
+          "reference_images": [
+            "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-56130c2c-89b1-49c3-abfc-a46e664708f0.png"
+          ]
+        }
+      ],
+      "selected_generated_path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-dff89211-d3bf-49dd-bfef-7aba9b1ad08d.png",
+      "asset_sha256": "d20dc8f77625aeaa11eb412b7c4d36b0fbe5811905b8f6505e58da3986015775",
+      "native_pixels": [
+        1068,
+        1473
+      ],
+      "visual_review": "Q holds a taco near the mechanical sampling mouth; Chano watches, notes stay closed, and a shallow cooking pan replaces the unsolicited al-pastor spit. Separate serving spoon and salsa bowls remain legible. Source page 10 checked at comic trim. No large heat gag or fuel-feed interpretation. Study only."
     },
     {
       "plate_id": "issue-15-plate-06",
@@ -208,5 +250,14 @@
       "scene_brief": "Illustrate Prime's reported market visit, not Q's presence: clean, lighter-bodied Prime carries the purchased bag while technician Mauro peels Prime's single orange. The two have different purchases and reciprocal help, not a foolish robot duped by fruit. Preserve the Q-family face but Prime's cleaner finish and undamaged shoulder. Contemporary Mexican fruit stall; no implication the market scene is happening during the later phone call.",
       "scene_anchor": "He peeled mine while I carried his."
     }
-  ]
+  ],
+  "scene_proof": {
+    "path": "output/pdf/ingenious-issue-15-goya-scene-proofs-a3.pdf",
+    "sha256": "3b869a4419aad71e8b72872f593bd1e6e07c121f90c5f9ff72e33b31cbcd6357",
+    "status": "two selected A3 landscape spreads; not a complete issue or folding file",
+    "source_text_pages": [
+      6,
+      10
+    ]
+  }
 }

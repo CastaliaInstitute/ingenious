@@ -24,6 +24,13 @@ The right-knee support remains where visible. Exact rivet counts, photographic
 faces, skin pores, fabric weave and lens-like depth are not continuity requirements.
 The Custodian remains male, tall, long-haired and bespectacled.
 
+Q's lower face must include the mechanical sampling mouth established in Chapter
+One. A small opening and hinged lower plate are enough; a blank egg mask is not.
+Tasting food does not charge him or imply a digestive system. The fourth lunch
+study restores this feature and the panel-built jaw, using the older Q plate for
+structure only. Use it as an identity reference, not as a mandate to reproduce
+every rivet or its original walking pose.
+
 Ink is neutral black/gray on white; cream comes from stock. The antique paper tone,
 plate border and handwritten captions in museum scans are not to be copied into
 new assets. Illustrations still reach comic trim and use separately typeset captions.
@@ -93,3 +100,26 @@ that manifest. The other twenty-one chapters, living final sentence, all twenty-
 existing facing-text bindings and twenty-six earlier issue PDFs remain unchanged
 relative to `9d8fe618`. These checks establish preservation and mapping integrity,
 not an artistic grade or whole-book literary approval.
+
+### Two-scene continuity test
+
+The corrected face now appears in two distinct Chapter Fifteen compositions:
+the private corridor call and lunch at a taquería. Both use actual facing passages,
+not generic robot portraits. A targeted edit restored the call portrait's long
+sleeve; another removed an unsolicited al-pastor spit from the suadero scene.
+The meal stays an ordinary exchange, without a heat catastrophe or infantile
+instruction. The Custodian is not physically present in the ministry.
+
+The two-spread A3 scene proof uses existing source pages 6 and 10, Georgia
+12.3/17.425, and lossless grayscale art. Both complete spreads were rendered and
+inspected. Text extraction verifies all 340 and 385 words respectively, and the
+unconverted PDF's image data exactly matches the selected PNGs. The final PDF
+retains native dimensions, grayscale and embedded fonts, with unpainted text
+backgrounds. It is a selected-spread review file, not the sixteen-page issue or
+a booklet imposition. Six of Issue Fifteen's eight plates remain ungenerated.
+
+Issues 15-22 now replace the obsolete long-coat and etched-realism brief language
+with the short jacket, sampling mouth and drawn Goya direction. All chapter text,
+page mappings, source anchors and block IDs remain unchanged from `993d9353`.
+Earlier issue artwork still needs the full style audit; no press approval or
+physical print test has occurred. Native images remain approximately 150 dpi.

@@ -1,5 +1,11 @@
 # Chapter Fifteen: the question can remain open
 
+Production update, 2026-09-08: two Goya-style scene studies now exist for the
+corridor call and taquería, with a checked two-spread A3 review PDF. Six plates
+remain planned. The source and its existing pagination are unchanged. The
+historical "no art" statement below describes the earlier voice-review pass;
+see `GOYA_ART_DIRECTION.md` and the current Issue Fifteen manifest for status.
+
 ## Verdict
 
 The chapter correctly separates Q's language and personal memory from a revoked
