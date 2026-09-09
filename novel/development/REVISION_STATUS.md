@@ -1,5 +1,27 @@
 # Motivation revision: working record
 
+## Latest voice checkpoint: Chapter Nineteen
+
+The forgotten school letter now produces a call: the retired teacher says parents
+paid for the replacement and reminds the Custodian that he requested a photograph.
+Q protects time for follow-up by moving their writing session. The original banner
+stays unchanged while its later qualification moves below the historical account.
+Q challenges a draft opening that assigns him the Custodian's errand; they retain
+the crossed-out words as a record of their near-misrepresentation. The funded
+Mayab return is explicit. See `CHAPTER_19_FRESH_CONTEXT_REVIEW.md` for the six
+alternative-model probes, rejected responses and remaining literary limitations.
+
+Only Chapter Nineteen and its outline entry change from `128bc326`. All 2,610
+words fit twenty comic pages at Georgia 13.5/19.125, without manual breaks.
+All nine text pages and the inner A3 spread were visually checked; exact source
+order, twenty actual imposed positions and all 22 source bindings pass. Other
+21 chapters/manifests and 36 prior issue PDFs remain unchanged. Ten exact-facing
+plates are still planned; five-sheet internal layout is not a finished illustrated
+issue. No print job, new faculty approval or A+ certification. Issue 19 art,
+Issues 20-22, earlier Goya correction, broader literary work and Spanish remain.
+The full goal is active. Production remains left-aligned pending a satisfactory
+justification proof.
+
 ## Latest production checkpoint: Issue Eighteen
 
 Issue Eighteen now has twelve unique scene-bound illustrations, 24 reading pages

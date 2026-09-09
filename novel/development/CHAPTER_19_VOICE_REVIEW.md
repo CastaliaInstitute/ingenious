@@ -1,5 +1,11 @@
 # Chapter Nineteen: the second letter
 
+Historical checkpoint: the 2,222-word, eight-plate plan below is superseded by
+[the fresh-context revision](CHAPTER_19_FRESH_CONTEXT_REVIEW.md): 2,610 words,
+twenty pages and ten planned plates. The school call now takes place, and the
+banner qualification and disputed origin sentence become actions in the draft.
+This earlier review is retained as a record, not the current production status.
+
 ## Verdict
 
 The unchanged banner sentence and Q's final request for a personal call make the

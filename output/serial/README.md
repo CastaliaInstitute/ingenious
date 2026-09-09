@@ -13,6 +13,15 @@ under review. The same-text typography comparison supports retaining left-aligne
 body columns: the tested justification introduced distracting word spacing.
 No issue pagination changed for this comparison.
 
+Chapter Nineteen now has a revised 2,610-word source and ten-plate exact-facing
+plan: twenty comic pages at Georgia 13.5/19.125, ten A3 sides for five sheets.
+All source words, nine text pages and twenty imposed positions were checked in
+an internal layout. Its illustrations are still planned: no final Issue Nineteen
+PDF is being released at this checkpoint. The school call, unchanged banner and
+disputed draft opening now have separate scene briefs. See the
+[revision and simulation review](../../novel/development/CHAPTER_19_FRESH_CONTEXT_REVIEW.md)
+and [current plan](../illustrations/revised/issue-19/manifest.json).
+
 Issue Eighteen now has a complete [24-page reading proof](../pdf/ingenious-issue-18-revised-en-bw.pdf)
 and [twelve-side A3 folding proof](../pdf/ingenious-issue-18-revised-en-bw-a3.pdf).
 Twelve unique plates include the cover; all 3,188 words flow continuously in

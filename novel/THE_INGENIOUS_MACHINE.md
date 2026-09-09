@@ -10211,6 +10211,12 @@ who have to live through them.”
 “Good. My program is at nine.”
 ### Chapter Nineteen: The Custodian’s False Explanation
 
+The return from the Mayab took most of the journey allowance
+they had kept for it. Q confirmed the Amealco arrival before
+accepting any of the invitations that followed the broadcast.
+Chano declined one on his own behalf. It offered exposure
+and required him to pay for the bus.
+
 The Custodian met them at Amealco with a suitcase, a visitor's badge,
 and a list of rooms he could no longer enter without somebody else.
 His long hair had escaped its tie. His glasses were on top of his
@@ -10285,11 +10291,44 @@ He checked the attached correspondence. His reply promised
 to ask the technical team. There was no later answer in
 the file he had brought.
 
-“We should find out,” Q said.
+“Do you still have her number?” Q asked.
 
-“I'll ask the school, not just our office.” He wrote the
-question in the notebook. “I put the first letter in every
-presentation. I'd forgotten she wrote twice.”
+“I put the first letter in every presentation. I'd forgotten
+she wrote twice.”
+
+He found the number on the second letter. Before calling,
+he began to explain what had happened to his authority
+over the technical team.
+
+“You can ask how she is without procurement approval.”
+
+“You make me sound impossible.”
+
+“At present you're explaining why you haven't made a call.”
+
+The teacher answered. She had retired. When he asked about
+the printer, she said the parents had bought another one
+the following year. She did not know whether that one
+still worked; he should ask the school secretary. She
+gave him the office number and asked him to read it back.
+
+He apologized for not following up.
+
+“You did follow up. You asked for a photograph.”
+
+The Custodian stopped turning the pages. He remembered
+the photograph. It was in the presentation too.
+
+She had to go. Her daughter was waiting downstairs, and
+if he wanted a longer conversation he could call at six.
+He thanked her and let her go.
+
+Q moved their writing appointment half an hour later,
+after checking with him. The Custodian entered six o'clock,
+then sent the secretary a short inquiry about the present
+equipment. He did not offer to send a printer. Beside the
+account of Castalia's successful recovery, he wrote that
+the parents had paid for the replacement.
 
 Maintenance became a continuing expense. Sponsors wanted
 searchable material, then comparisons, then products that
@@ -10411,7 +10450,21 @@ had encouraged people to trust.
 
 “No. That's what troubles me about it.”
 
-The Custodian put it with the records he would submit.
+The Custodian tried adding a qualification in the margin:
+no originals, but copies might travel.
+
+“Is that what the banner said?” Q asked.
+
+“It's what it should have said.”
+
+“Then put that after it. Otherwise we give the people
+in the photograph a warning they didn't receive.”
+
+The Custodian moved the addition below the account.
+For a moment the corrected sentence had looked like
+something he remembered saying.
+
+The photograph went with the records he would submit.
 He had once wanted Q to supply an intelligence capable
 of making the archive answerable. Castalia wanted a
 useful voice for its collections. These purposes had
@@ -10431,13 +10484,26 @@ the institution.”
 
 “I know what we agreed.”
 
-“I need to know you haven't changed it afterward.”
+Q drew a sheet from their draft toward him. Its opening
+read: **I sent him into the world to discover what our
+books had failed to teach us.**
 
-The Custodian closed the file. “I haven't. I let you
-leave because you asked, because we had made a plan,
+“Then why does this give you the idea and me the errand?”
+
+The Custodian read it. “I did open the door.”
+
+“Keep that. I asked you to.”
+
+The Custodian closed the file. “I let you leave
+because you asked, because we had made a plan,
 and because I thought you should have the chance.
 The larger hope was mine. I shouldn't make it your
 hidden instruction.”
+
+He crossed out the opening. Q asked him to leave the
+crossed-out words legible in their working copy.
+They would need to remember what they had almost
+agreed to call the beginning.
 
 Q had prepared a more accusing reply. The answer
 did not remove the accusation, but it made that
@@ -10463,7 +10529,7 @@ He was very good company.”
 
 “I was hoping we could work on that scene without it.”
 
-The Custodian put the session back on his calendar.
+The Custodian kept the later time.
 
 Lucía asked to return to the systems list before
 the two authors made their difficulty the entire
