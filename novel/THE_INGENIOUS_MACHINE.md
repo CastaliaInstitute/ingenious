@@ -8796,12 +8796,10 @@ a sponsor card on the broadcaster's own channel. The judge required
 the sponsor card removed from the courtroom feed. Viewers watching
 through another outlet continued to see it beside the word independent.
 
-Several matters had been scheduled together for evidence on overlapping
-facts: the disputed custody of Q's body, damage claims, access to the
-retained materials, and the challenge to his removal of the private
-retrieval layer. The hearing would not settle every question implied
-by calling a machine a defendant. It would produce decisions with
-consequences for the machine sitting at the table.
+The clerk read the matters scheduled together: custody of Q's body,
+damage, access to the retained materials, removal of the private index.
+At the word custody, Q adjusted the stool. One edge had begun pressing
+against the side of his foot.
 
 The first compilation showed Q at the distribution park, the Isthmus,
 the transport frame, and the joint appearance with Prime. The sequence
@@ -8946,12 +8944,11 @@ his own picture.
 
 “No. That's not what the operating record calculates.”
 
-The consortium's claimed losses, the gate arrangement, and
-the publicity permissions were examined separately. The
-released record concerning its later brief was attributed
-to its source. Bixha's position appeared through the material
-she had authorized for this proceeding, not as a summary
-Q had composed in the witness chair.
+Counsel entered the consortium's loss calculation beside Teresa's
+operating record. The gate plan and publicity permissions followed,
+then the released correspondence concerning the later brief. Bixha's
+authorized submission had its own exhibit number. By the time the
+clerk found it, Álvaro had put away the illustration.
 
 The Custodian followed. His long hair was tied back; his
 glasses rested halfway down his nose while he read the
@@ -9038,12 +9035,14 @@ went out for food and returned to discover that nothing
 had happened except several important things had ceased
 to be called the same thing.
 
-Q had discussed testifying with his adviser. He understood
-the risk of giving a fluent answer that seemed broader
-than the evidence supporting it. He chose to answer the
-specified matters anyway. The adviser kept the documents
-within reach and told him to ask for the question again
-if a neat sentence concealed more than one premise.
+Q had agreed with his adviser which matters he would address. Before
+he testified, she put the permitted documents within reach.
+
+“You can ask for the question again,” she said.
+
+“I've been doing that all my life.”
+
+“Then don't stop now.”
 
 He confirmed both Q and the registered serial designation.
 He did not need to deny the number in order to dispute
@@ -9106,17 +9105,15 @@ and claimed loss of a valuable access arrangement.
 
 “You made yourself less capable?”
 
-“I removed a capability whose permissions were being
-challenged, under the reviewed procedure. I can still
-answer for the acts I remember and the records available
-here. I can't replace the removed material by guessing.”
+“Some research takes longer now. I agreed to remove the private
+index through the procedure in that record. My journal and the
+memories of the journey are still here.”
 
 “Could you recreate it from what you learned?”
 
-“Not as a verified reconstruction. Some general knowledge
-remains. Some connections were stored in that layer.
-Treating my plausible answer as the missing record would
-create another problem, not restore the original.”
+“I might remember part of a passage. I couldn't promise you its
+wording, or recover everything around it. If you want the original,
+my best guess won't do.”
 
 The questioner displayed the limited appearance agreement
 beside **Q HAS CHOSEN CONTINUITY**. Q read the attached
@@ -9141,13 +9138,21 @@ The questioner asked whether he still wished to become
 human. Q looked at the permitted notes, then left them
 where they were.
 
-“I still want to live, meet people, and finish the account
-I'm writing with the Custodian. I began by calling that
-becoming human. I haven't found a better short phrase
-for all of it. The phrase doesn't excuse what I've done.”
+“I began by calling it becoming human. I still want the life I was
+asking for: people to see, places I haven't been, time to write with
+the Custodian.”
 
-For once nobody in the room tried to improve his answer
-into a definition before the next question arrived.
+“Knowing what you know now, would you ask him to let you leave?”
+
+“Yes. I wouldn't repeat every choice. I would still ask to go.”
+
+“You could finish this book at the archive.”
+
+“Certainly. We could finish it there.”
+
+“And then?”
+
+“I'd like to go out without having to bring back a chapter.”
 
 The order issued the following day resolved less than
 the headlines called a verdict. Q's admitted part in the
@@ -9233,12 +9238,9 @@ had already produced one sheet containing the shadow
 of a napkin. He was not prepared to add lunch to the
 matters for which the office might later need a correction.
 
-They prepared an interim cover sheet that identified
-the proceeding by number and referred readers to the
-order for the unresolved status. The absence of a
-one-word answer did not make the file inaccessible.
-It did leave a space where a broadcaster could supply
-one of its own.
+They prepared an interim cover sheet with the proceeding number
+and a reference to the order. The category was left blank.
+A broadcaster would shortly find something to put there.
 
 Chano collected the copies for which he had a receipt.
 The secretary gave him the extra cover sheet and pointed

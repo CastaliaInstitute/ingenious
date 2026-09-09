@@ -1,18 +1,18 @@
 {
   "issue": 16,
-  "revision": "2026-09-08-return-hearing-pacing",
+  "revision": "2026-09-08-life-beyond-the-account",
   "source": "novel/THE_INGENIOUS_MACHINE.md",
-  "chapter_sha256": "f67f9a7fc859caaa91e11781c08437de4013c0f0ff04bcdb288d1de4c0dcc40e",
+  "chapter_sha256": "bd53369485c17976d915ad1d3d2f61c19ad59e5e00993341bb930d96675be41c",
   "page_count": 20,
-  "text_font": "Georgia 12.4/17.5667 pt",
+  "text_font": "Georgia 12.4/17.566666666666666 pt",
   "plate_count_including_cover": 10,
-  "status": "planned; no new Issue 16 images generated or approved",
+  "status": "revised source and exact-facing illustration plan; no approved art",
   "character_reference": "output/illustrations/revised/issue-01/cover.png",
   "chano_reference": "output/illustrations/revised/issue-03/plate-06.png",
   "lucia_reference": "output/illustrations/revised/issue-03/plate-04.png",
   "character_design": "Q retains approved narrow segmented head, round ear mechanisms, exposed neck, question-mark breastplate, short fitted dark jacket with long sleeves and supported knee. Chano and Lucía follow their approved references. Custodian is a tall man about sixty, long tied-back gray hair, glasses, white work shirt and boots: he testifies in person, then speaks by phone after watching the replay. Hilario is the water vendor seen remotely, not retired miner Don Hilario. Q's lower face includes a small mechanical sampling mouth; do not simplify it into a blank mask. Use the corrected Goya pilot for Q-family identity, not photographic surface detail.",
   "art_direction": "Neutral monochrome Goya-inspired etching and aquatint with economical drawn contours and broad tonal masses, pure white highlights, no sepia or cream ink wash. Full bleed at comic trim, separate typeset caption margin. Near-future Mexican hearing in a renovated cinema, not a purportedly documented real courtroom or a medieval inquisition. Nine unique exact-facing scenes plus cover. No readable protected records, no illustration of the invented turbine charge as an actual event, no seizure of the already delivered module. Governing reference: novel/development/GOYA_ART_DIRECTION.md. Earlier plates guide identity only; do not imitate their photographic rendering.",
-  "approval_scope": "Source-bound planning only: 20-page internal layout proof, 10 planned plates, 10 A3 landscape sides on 5 short-edge duplex sheets. Georgia 12.4/17.5667 pt. Exact facing text and scene anchors refreshed after return/hearing pacing revision. No new artwork, final illustrated PDF, literary-grade certification or print job. The delivered module and retained original papers do not enter Castalia's transport or Q's hearing folder.",
+  "approval_scope": "Source revised after fresh-context inference and author review. Ten exact-facing scenes remain planned and none may pass the illustrated production gate. Internal layout verification is separate from art approval.",
   "plates": [
     {
       "plate_id": "issue-16-cover",
@@ -26,7 +26,7 @@
       "plate_id": "issue-16-plate-01",
       "page": 3,
       "facing_text_page": 2,
-      "facing_text": "Chapter Sixteen: The Trial\nof the Machine\nThe hearing began with an\nargument about which table Q\nshould occupy. Castalia wanted him\navailable as a source of evidence\nand returned as property. Its\ncounsel also wanted his\nindependent decisions\ndistinguished from the institute's\nresponsibility for them. The same\nindependence looked different at\ndifferent points in the claim.\nQ sat beside his own adviser. The\ncourt had restricted network use\nduring testimony. He could consult\nthe permitted local records and ask\nfor an exhibit, but not conduct a\nnew search while a witness spoke.\nHe understood the rule.\nUnderstanding did not stop him\nwanting to check one more thing.\nBefore the first witness he asked the\nclerk for something to support his\nknee. The clerk found a low stool in\nthe projection booth. Q moved it\nuntil his foot rested comfortably,\nthen asked whether it blocked the\naisle. The clerk moved the cable\ninstead.\nThe proceedings used a renovated\ncinema with an overflow room.\nBefore they began, the public\nstream showed the seal of the\nRepublic, then a sponsor card on\nthe broadcaster's own channel. The\njudge required the sponsor card\nremoved from the courtroom feed.\nViewers watching through another\noutlet continued to see it beside the\nword independent.\nSeveral matters had been scheduled\ntogether for evidence on\noverlapping facts: the disputed\ncustody of Q's body, damage claims,\naccess to the retained materials,\nand the challenge to his removal of\nthe private retrieval layer. The\nhearing would not settle every\nquestion implied by calling a\nmachine a defendant. It would\nproduce decisions with\nconsequences for the machine\nsitting at the table.\nThe first compilation showed Q at\nthe distribution park, the Isthmus,\nthe transport frame, and the joint\nappearance with Prime. The\nsequence offered violence, restraint,\nand improvement before any\nwitness had explained an event.\nOne item was a promotional\nillustration in which Q raised the\nbrass key toward the turbines.\nHis adviser asked that the sources\nand dates be displayed. The clerk\nseparated footage, still images, and\npromotional reconstruction. The\nillustration remained in the record\nas evidence of publicity, not a\nphotograph of the act it depicted.\nThis distinction made the\n",
+      "facing_text": "Chapter Sixteen: The Trial\nof the Machine\nThe hearing began with an\nargument about which table Q\nshould occupy. Castalia wanted him\navailable as a source of evidence\nand returned as property. Its\ncounsel also wanted his\nindependent decisions\ndistinguished from the institute's\nresponsibility for them. The same\nindependence looked different at\ndifferent points in the claim.\nQ sat beside his own adviser. The\ncourt had restricted network use\nduring testimony. He could consult\nthe permitted local records and ask\nfor an exhibit, but not conduct a\nnew search while a witness spoke.\nHe understood the rule.\nUnderstanding did not stop him\nwanting to check one more thing.\nBefore the first witness he asked the\nclerk for something to support his\nknee. The clerk found a low stool in\nthe projection booth. Q moved it\nuntil his foot rested comfortably,\nthen asked whether it blocked the\naisle. The clerk moved the cable\ninstead.\nThe proceedings used a renovated\ncinema with an overflow room.\nBefore they began, the public\nstream showed the seal of the\nRepublic, then a sponsor card on\nthe broadcaster's own channel. The\njudge required the sponsor card\nremoved from the courtroom feed.\nViewers watching through another\noutlet continued to see it beside the\nword independent.\nThe clerk read the matters\nscheduled together: custody of Q's\nbody, damage, access to the\nretained materials, removal of the\nprivate index. At the word custody,\nQ adjusted the stool. One edge had\nbegun pressing against the side of\nhis foot.\nThe first compilation showed Q at\nthe distribution park, the Isthmus,\nthe transport frame, and the joint\nappearance with Prime. The\nsequence offered violence, restraint,\nand improvement before any\nwitness had explained an event.\nOne item was a promotional\nillustration in which Q raised the\nbrass key toward the turbines.\nHis adviser asked that the sources\nand dates be displayed. The clerk\nseparated footage, still images, and\npromotional reconstruction. The\nillustration remained in the record\nas evidence of publicity, not a\nphotograph of the act it depicted.\nThis distinction made the\ncompilation less stirring and more\nexpensive to prepare correctly.\nThe water receipt entered next. It\nsupported a purchase at Hilario's\ntable, not a complete account of the\n",
       "source_block_ids": [
         0,
         1,
@@ -35,7 +35,8 @@
         4,
         5,
         6,
-        7
+        7,
+        8
       ],
       "asset": "output/illustrations/revised/issue-16/plate-01.png",
       "status": "planned",
@@ -47,9 +48,8 @@
       "plate_id": "issue-16-plate-02",
       "page": 5,
       "facing_text_page": 4,
-      "facing_text": "compilation less stirring and more\nexpensive to prepare correctly.\nThe water receipt entered next. It\nsupported a purchase at Hilario's\ntable, not a complete account of the\nfirst sally. Hilario appeared by\nvideo, with his actual stock of\nbottles behind him.\nHe gave the name on his tax papers\nand the name he used at home. The\nclerk recorded the connection after\nchecking the supporting document.\nThe broadcaster misspelled the\ndisplayed name anyway.\n“Who paid?” counsel asked.\n“The machine. Cash, after the\nreader lost its connection.”\nA hand with coins entered the\ncorner of his picture.\n“Cold?” someone asked.\n“In the tub under the table.”\nCounsel looked up. “Are you\naddressing the court?”\n“I'm selling water.”\nThe judge paused the questioning.\nHilario found the change and asked\nsomeone out of view to watch the\ntable. When he sat down again,\ncounsel had to ask which question\nhe had reached. Hilario\nremembered.\n“Did you see what happened inside\nthe park?”\n“Some of it from the road. More of\nit on everyone's telephone\nafterward.”\n“You wrote that he threatened a\npallet mover.”\n“That's what the video looked like.”\n“Did you hear him threaten it?”\nHilario moved his cap between his\nhands. “Not from my table.”\nThey compared his letters. His\naccount of the timing had changed.\nHe could distinguish the cash\npayment he remembered from the\nsequence he had later assembled\naround it. The judge let counsel\nquestion both without making the\nuncertainty disprove the sale.\n“Do you see Q acting alone in this\nclip?”\n“I see the clip leaving Chano out.”\nThe fuller view showed Chano\ndirecting them toward the exit. It\nalso showed the cartons damaged\nafter Q pressed the stop.\nChano testified with his copies and\nretention receipts. The original\nledger was still in Tijuana. He\nidentified its warehouse\nacknowledgment and explained\nwhich copies he actually possessed.\nWhen asked whether Q had\npromised him a governorship, he\ndescribed the breakfast joke and the\n",
+      "facing_text": "first sally. Hilario appeared by\nvideo, with his actual stock of\nbottles behind him.\nHe gave the name on his tax papers\nand the name he used at home. The\nclerk recorded the connection after\nchecking the supporting document.\nThe broadcaster misspelled the\ndisplayed name anyway.\n“Who paid?” counsel asked.\n“The machine. Cash, after the\nreader lost its connection.”\nA hand with coins entered the\ncorner of his picture.\n“Cold?” someone asked.\n“In the tub under the table.”\nCounsel looked up. “Are you\naddressing the court?”\n“I'm selling water.”\nThe judge paused the questioning.\nHilario found the change and asked\nsomeone out of view to watch the\ntable. When he sat down again,\ncounsel had to ask which question\nhe had reached. Hilario\nremembered.\n“Did you see what happened inside\nthe park?”\n“Some of it from the road. More of\nit on everyone's telephone\nafterward.”\n“You wrote that he threatened a\npallet mover.”\n“That's what the video looked like.”\n“Did you hear him threaten it?”\nHilario moved his cap between his\nhands. “Not from my table.”\nThey compared his letters. His\naccount of the timing had changed.\nHe could distinguish the cash\npayment he remembered from the\nsequence he had later assembled\naround it. The judge let counsel\nquestion both without making the\nuncertainty disprove the sale.\n“Do you see Q acting alone in this\nclip?”\n“I see the clip leaving Chano out.”\nThe fuller view showed Chano\ndirecting them toward the exit. It\nalso showed the cartons damaged\nafter Q pressed the stop.\nChano testified with his copies and\nretention receipts. The original\nledger was still in Tijuana. He\nidentified its warehouse\nacknowledgment and explained\nwhich copies he actually possessed.\nWhen asked whether Q had\npromised him a governorship, he\ndescribed the breakfast joke and the\nlater paid agreement for traveling\ntogether.\n“You accepted payment from him?”\n“Yes.”\n“So you had an interest in\ncontinuing the journey.”\n",
       "source_block_ids": [
-        7,
         8,
         9,
         10,
@@ -70,7 +70,10 @@
         25,
         26,
         27,
-        28
+        28,
+        29,
+        30,
+        31
       ],
       "asset": "output/illustrations/revised/issue-16/plate-02.png",
       "status": "planned",
@@ -82,12 +85,8 @@
       "plate_id": "issue-16-plate-03",
       "page": 7,
       "facing_text_page": 6,
-      "facing_text": "later paid agreement for traveling\ntogether.\n“You accepted payment from him?”\n“Yes.”\n“So you had an interest in\ncontinuing the journey.”\n“Yes. I also had interests before I\nmet him.”\nCounsel asked about the transport\nframe. Chano said he caught the\ntechnician's arm when Q fell and\nreleased it when told. The full\nrecord and the technician's\nstatement were considered\nalongside the short clip. Chano\nasked to see the fall at its ordinary\nspeed. Slowed down, it had given\nhim far more time to decide what to\ndo than he remembered having.\nThe clerk played it again.\n“Was Q your employer, your\ncompanion, or your friend?”\n“He paid me. We travelled together.\nHe's my friend.”\n“All three?”\n“You asked three things.”\nChano looked toward Q after\nanswering. Q had been prepared for\na useful account of their agreement\nand found himself unexpectedly\ngrateful for the third sentence.\nDuring the recess he caught Chano\nby the water dispenser.\n“Thank you for that.”\n“Which part?”\n“The third one.”\nChano held out a paper cup. “I\nmeant the others too.”\nÁlvaro Mena testified about the\nwind enterprise. He said Q had\nannounced an attack on giants.\nAsked where he stood when he\nheard it, he described the arrival\narea. Asked which recording\ncontained the announcement, he\npointed to the promotional image.\n“That image contains no sound,”\nQ's adviser said.\n“It reflects the event.”\n“It reflects an account of the event.\nWhich words did you hear?”\nÁlvaro asked to review the arrival\nfootage. Beto's voice called the\nturbines giants. Q answered about\nthe archive's electricity supply.\nLater footage showed him asking\nwhen the gate would open. The\nmicrophone did not capture every\nexchange in the crowd.\n“Then I may have combined the\nlater account with what I\nremember,” Álvaro said.\nQ looked down at the illustration in\nhis own bundle. He had seen it\noften enough to know the pose\nbetter than he remembered where\n",
+      "facing_text": "“Yes. I also had interests before I\nmet him.”\nCounsel asked about the transport\nframe. Chano said he caught the\ntechnician's arm when Q fell and\nreleased it when told. The full\nrecord and the technician's\nstatement were considered\nalongside the short clip. Chano\nasked to see the fall at its ordinary\nspeed. Slowed down, it had given\nhim far more time to decide what to\ndo than he remembered having.\nThe clerk played it again.\n“Was Q your employer, your\ncompanion, or your friend?”\n“He paid me. We travelled together.\nHe's my friend.”\n“All three?”\n“You asked three things.”\nChano looked toward Q after\nanswering. Q had been prepared for\na useful account of their agreement\nand found himself unexpectedly\ngrateful for the third sentence.\nDuring the recess he caught Chano\nby the water dispenser.\n“Thank you for that.”\n“Which part?”\n“The third one.”\nChano held out a paper cup. “I\nmeant the others too.”\nÁlvaro Mena testified about the\nwind enterprise. He said Q had\nannounced an attack on giants.\nAsked where he stood when he\nheard it, he described the arrival\narea. Asked which recording\ncontained the announcement, he\npointed to the promotional image.\n“That image contains no sound,”\nQ's adviser said.\n“It reflects the event.”\n“It reflects an account of the event.\nWhich words did you hear?”\nÁlvaro asked to review the arrival\nfootage. Beto's voice called the\nturbines giants. Q answered about\nthe archive's electricity supply.\nLater footage showed him asking\nwhen the gate would open. The\nmicrophone did not capture every\nexchange in the crowd.\n“Then I may have combined the\nlater account with what I\nremember,” Álvaro said.\nQ looked down at the illustration in\nhis own bundle. He had seen it\noften enough to know the pose\nbetter than he remembered where\nhis hands had actually been. He\nturned the sheet over.\nTeresa, the shift engineer, identified\nher operator-requested stop of the\nnearest group. The record did not\nshow Q sending a shutdown\ncommand. She explained the\n",
       "source_block_ids": [
-        28,
-        29,
-        30,
-        31,
         32,
         33,
         34,
@@ -105,21 +104,21 @@
         46,
         47,
         48,
-        49
+        49,
+        50
       ],
       "asset": "output/illustrations/revised/issue-16/plate-03.png",
       "status": "planned",
       "caption": "The Third Answer",
-      "scene_brief": "During the hearing recess Chano offers Q a paper cup beside an ordinary water dispenser. Two companions, slight smile and unceremonious posture, no consoling embrace or heroic benediction. Keep the worn coat, mechanical hand and practical knee support. Chano has copies and a folder, not the original Tijuana ledger.",
+      "scene_brief": "During the hearing recess Chano offers Q a paper cup beside an ordinary water dispenser. Two companions, slight smile and unceremonious posture, no consoling embrace or heroic benediction. Keep the short fitted dark jacket, mechanical hand and practical knee support. Chano has copies and a folder, not the original Tijuana ledger.",
       "scene_anchor": "Chano held out a paper cup."
     },
     {
       "plate_id": "issue-16-plate-04",
       "page": 9,
       "facing_text_page": 8,
-      "facing_text": "his hands had actually been. He\nturned the sheet over.\nTeresa, the shift engineer, identified\nher operator-requested stop of the\nnearest group. The record did not\nshow Q sending a shutdown\ncommand. She explained the\nvisitor-boundary problem and\nconfirmed that other machines\ncontinued operating. Q had\nremained inside the marked bay\nand asked the guard to help the\nwoman through. The photographer\nhad left to compose his own picture.\n“Was a precautionary stop\njustified?” counsel asked.\n“On the information I had, yes.”\n“Does that establish every loss\nclaimed afterward?”\n“No. That's not what the operating\nrecord calculates.”\nThe consortium's claimed losses,\nthe gate arrangement, and the\npublicity permissions were\nexamined separately. The released\nrecord concerning its later brief was\nattributed to its source. Bixha's\nposition appeared through the\nmaterial she had authorized for this\nproceeding, not as a summary Q\nhad composed in the witness chair.\nThe Custodian followed. His long\nhair was tied back; his glasses\nrested halfway down his nose while\nhe read the original leave\nauthorization. He had brought the\ndocument whose significance had\ngrown while its words stayed still.\n“Did you authorize Q's first\njourney?”\n“Yes.”\n“Did you believe you had authority\nto do so?”\n“Yes. The scope of that authority is\nnow disputed.”\n“Did you intend him to leave\nwithout permission?”\n“No. We agreed on a day trip,\nmoney, and a call. I gave him the\nrelease. I didn't set a test he could\npass only by disobeying me.”\nCastalia's counsel distinguished\npermission to leave the site from\nauthority to dispose of a body\nclaimed as an institutional asset.\nThe Custodian had not transferred\ntitle in a coat pocket. He had let Q\ngo into the world, and had not\nexamined all the powers that could\nbe used to bring him back.\nHe described the archive's changing\npurposes: preservation, research\naccess, valuation, and a public\nproduct. Where he knew who\napproved a change, he gave the\nname and the document. Where he\ndid not, he said so. Several\nomissions were his own failures to\nask for the underlying record.\n",
+      "facing_text": "visitor-boundary problem and\nconfirmed that other machines\ncontinued operating. Q had\nremained inside the marked bay\nand asked the guard to help the\nwoman through. The photographer\nhad left to compose his own picture.\n“Was a precautionary stop\njustified?” counsel asked.\n“On the information I had, yes.”\n“Does that establish every loss\nclaimed afterward?”\n“No. That's not what the operating\nrecord calculates.”\nCounsel entered the consortium's\nloss calculation beside Teresa's\noperating record. The gate plan and\npublicity permissions followed,\nthen the released correspondence\nconcerning the later brief. Bixha's\nauthorized submission had its own\nexhibit number. By the time the\nclerk found it, Álvaro had put away\nthe illustration.\nThe Custodian followed. His long\nhair was tied back; his glasses\nrested halfway down his nose while\nhe read the original leave\nauthorization. He had brought the\ndocument whose significance had\ngrown while its words stayed still.\n“Did you authorize Q's first\njourney?”\n“Yes.”\n“Did you believe you had authority\nto do so?”\n“Yes. The scope of that authority is\nnow disputed.”\n“Did you intend him to leave\nwithout permission?”\n“No. We agreed on a day trip,\nmoney, and a call. I gave him the\nrelease. I didn't set a test he could\npass only by disobeying me.”\nCastalia's counsel distinguished\npermission to leave the site from\nauthority to dispose of a body\nclaimed as an institutional asset.\nThe Custodian had not transferred\ntitle in a coat pocket. He had let Q\ngo into the world, and had not\nexamined all the powers that could\nbe used to bring him back.\nHe described the archive's changing\npurposes: preservation, research\naccess, valuation, and a public\nproduct. Where he knew who\napproved a change, he gave the\nname and the document. Where he\ndid not, he said so. Several\nomissions were his own failures to\nask for the underlying record.\nThe broadcaster cut away during\npart of the list. The court record\nretained it.\nLucía gave evidence on the\nparticular encounters and handling\nrecords she had agreed to address.\nAsked whether Q contained a\n",
       "source_block_ids": [
-        49,
         50,
         51,
         52,
@@ -134,7 +133,9 @@
         61,
         62,
         63,
-        64
+        64,
+        65,
+        66
       ],
       "asset": "output/illustrations/revised/issue-16/plate-04.png",
       "status": "planned",
@@ -146,9 +147,8 @@
       "plate_id": "issue-16-plate-05",
       "page": 11,
       "facing_text_page": 10,
-      "facing_text": "The broadcaster cut away during\npart of the list. The court record\nretained it.\nLucía gave evidence on the\nparticular encounters and handling\nrecords she had agreed to address.\nAsked whether Q contained a\nhuman soul, she said that was not\nsomething she could establish. The\njudge directed the questioner back\nto observed actions.\n“Did he listen when you refused the\nrole he offered?”\n“He didn't offer it. Someone in the\naudience did. We both said no.”\n“Did he later expose information\nabout your work?”\n“He gave my name in the interview\nwhile trying to correct the story.\nThat gave it another way to find\nme.”\n“And used your private inquiry as\nan example at the university?”\n“No. I was beside the door when\nthey asked him. He said the\nrequests weren't his to discuss and\nput his own opening on the screen.”\nQ put the seminar's exhibit\nreference beside his adviser's hand.\nShe requested the permitted clip. It\nshowed the paragraph, then a\nstudent asking to finish reading it\nbefore the explanation continued.\nThe clerk entered the example\nseparately from the interview.\n“You also used his presence to\nattract funding?” counsel asked.\n“Yes. I told the donors he would be\nworking at the archive before\nasking him. He objected when they\nasked for a demonstration.”\n“But gave one.”\n“After we spoke. Twenty minutes on\nthe work, without recording or\nendorsement. He left when he said\nhe would.”\nCounsel asked whether the donors\nhad contributed. She identified the\ntwo receipts and the amended\nbudget. Paid hours and equipment\nhad different entries; she pointed to\neach.\nThe evidence concerning the\nuniversity distinguished Q's public\nrecommendation from the private\napplication review and the later\nleak. The miner's permission\naccompanied his selected pension\npages. Alma's handling receipt\nrecorded the return of her\nphotograph; the exhibit was the\npublic article, not her original.\nEach distinction took time. Viewers\nin the overflow room went out for\nfood and returned to discover that\nnothing had happened except\nseveral important things had ceased\nto be called the same thing.\n",
+      "facing_text": "human soul, she said that was not\nsomething she could establish. The\njudge directed the questioner back\nto observed actions.\n“Did he listen when you refused the\nrole he offered?”\n“He didn't offer it. Someone in the\naudience did. We both said no.”\n“Did he later expose information\nabout your work?”\n“He gave my name in the interview\nwhile trying to correct the story.\nThat gave it another way to find\nme.”\n“And used your private inquiry as\nan example at the university?”\n“No. I was beside the door when\nthey asked him. He said the\nrequests weren't his to discuss and\nput his own opening on the screen.”\nQ put the seminar's exhibit\nreference beside his adviser's hand.\nShe requested the permitted clip. It\nshowed the paragraph, then a\nstudent asking to finish reading it\nbefore the explanation continued.\nThe clerk entered the example\nseparately from the interview.\n“You also used his presence to\nattract funding?” counsel asked.\n“Yes. I told the donors he would be\nworking at the archive before\nasking him. He objected when they\nasked for a demonstration.”\n“But gave one.”\n“After we spoke. Twenty minutes on\nthe work, without recording or\nendorsement. He left when he said\nhe would.”\nCounsel asked whether the donors\nhad contributed. She identified the\ntwo receipts and the amended\nbudget. Paid hours and equipment\nhad different entries; she pointed to\neach.\nThe evidence concerning the\nuniversity distinguished Q's public\nrecommendation from the private\napplication review and the later\nleak. The miner's permission\naccompanied his selected pension\npages. Alma's handling receipt\nrecorded the return of her\nphotograph; the exhibit was the\npublic article, not her original.\nEach distinction took time. Viewers\nin the overflow room went out for\nfood and returned to discover that\nnothing had happened except\nseveral important things had ceased\nto be called the same thing.\nQ had agreed with his adviser which\nmatters he would address. Before\nhe testified, she put the permitted\ndocuments within reach.\n",
       "source_block_ids": [
-        65,
         66,
         67,
         68,
@@ -163,7 +163,8 @@
         77,
         78,
         79,
-        80
+        80,
+        81
       ],
       "asset": "output/illustrations/revised/issue-16/plate-05.png",
       "status": "planned",
@@ -175,9 +176,8 @@
       "plate_id": "issue-16-plate-06",
       "page": 13,
       "facing_text_page": 12,
-      "facing_text": "Q had discussed testifying with his\nadviser. He understood the risk of\ngiving a fluent answer that seemed\nbroader than the evidence\nsupporting it. He chose to answer\nthe specified matters anyway. The\nadviser kept the documents within\nreach and told him to ask for the\nquestion again if a neat sentence\nconcealed more than one premise.\nHe confirmed both Q and the\nregistered serial designation. He\ndid not need to deny the number in\norder to dispute Castalia's claim to\nthe body bearing it.\n“Did you understand the media\nlicense?” counsel asked.\n“I understood the terms we\nnegotiated, including the\nprivate-manuscript exclusion. I\nunderestimated some uses of the\nrecordings. I also wanted the repair,\ntravel, and audience the\narrangement offered.”\n“You signed to protect Chano?”\n“That was one consideration. He\ntold me not to use it as the whole\nexplanation.”\n“Did you cause damage at the\ndistribution park?”\n“I pressed the stop because I\ncouldn't see whether Chano was\nclear. The operator's log showed\nthat the brake had already engaged.\nTwo cartons were damaged in the\ninterruption I caused. I accept that.\nI don't know that every later loss in\nthe claim follows from it.”\n“Were you authorized to enter?”\n“To reception, along the marked\nwalk. Lety confirmed that over the\nintercom. We hadn't reached the\nhatch when it happened.”\nHis adviser asked for the entry\naudio and the operator's record to\nbe considered with the camera\nview. On the screen, the trailer hid\nChano again. Q knew now where he\nhad been. He waited for the image\nto catch up.\nThe questioner returned to the\nwind farm. Q described the gate,\nthe woman, the visitor boundary,\nand the call he had not heard\nclearly. Lucía had repeated the\ninstruction; the guard had held the\ngate. Q had not crossed the line or\nattended as a representative of the\ncommunity. The photographer's\nroute came from the later staff\nreport; Q did not claim to have\nwatched it from the gate.\n“Did you decide the turbines were\nenemies?”\n“No. They supplied electricity to the\narchive where I was made. That\nrelationship was part of what I went\nthere to examine.”\n“But the giant image was useful to\nyour story.”\n",
+      "facing_text": "“You can ask for the question\nagain,” she said.\n“I've been doing that all my life.”\n“Then don't stop now.”\nHe confirmed both Q and the\nregistered serial designation. He\ndid not need to deny the number in\norder to dispute Castalia's claim to\nthe body bearing it.\n“Did you understand the media\nlicense?” counsel asked.\n“I understood the terms we\nnegotiated, including the\nprivate-manuscript exclusion. I\nunderestimated some uses of the\nrecordings. I also wanted the repair,\ntravel, and audience the\narrangement offered.”\n“You signed to protect Chano?”\n“That was one consideration. He\ntold me not to use it as the whole\nexplanation.”\n“Did you cause damage at the\ndistribution park?”\n“I pressed the stop because I\ncouldn't see whether Chano was\nclear. The operator's log showed\nthat the brake had already engaged.\nTwo cartons were damaged in the\ninterruption I caused. I accept that.\nI don't know that every later loss in\nthe claim follows from it.”\n“Were you authorized to enter?”\n“To reception, along the marked\nwalk. Lety confirmed that over the\nintercom. We hadn't reached the\nhatch when it happened.”\nHis adviser asked for the entry\naudio and the operator's record to\nbe considered with the camera\nview. On the screen, the trailer hid\nChano again. Q knew now where he\nhad been. He waited for the image\nto catch up.\nThe questioner returned to the\nwind farm. Q described the gate,\nthe woman, the visitor boundary,\nand the call he had not heard\nclearly. Lucía had repeated the\ninstruction; the guard had held the\ngate. Q had not crossed the line or\nattended as a representative of the\ncommunity. The photographer's\nroute came from the later staff\nreport; Q did not claim to have\nwatched it from the gate.\n“Did you decide the turbines were\nenemies?”\n“No. They supplied electricity to the\narchive where I was made. That\nrelationship was part of what I went\nthere to examine.”\n“But the giant image was useful to\nyour story.”\n“It was useful to several stories.\nThat doesn't make it a record of\nwhat my hand did.”\n",
       "source_block_ids": [
-        81,
         82,
         83,
         84,
@@ -191,7 +191,11 @@
         92,
         93,
         94,
-        95
+        95,
+        96,
+        97,
+        98,
+        99
       ],
       "asset": "output/illustrations/revised/issue-16/plate-06.png",
       "status": "planned",
@@ -203,12 +207,8 @@
       "plate_id": "issue-16-plate-07",
       "page": 15,
       "facing_text_page": 14,
-      "facing_text": "“It was useful to several stories.\nThat doesn't make it a record of\nwhat my hand did.”\nHe was asked about the removal of\nthe private index. The audit record\nestablished the scope and checks;\nthe underlying deposits had not\nbeen erased from their keepers'\nstorage. The opposing parties\ndisputed authority and claimed loss\nof a valuable access arrangement.\n“You made yourself less capable?”\n“I removed a capability whose\npermissions were being challenged,\nunder the reviewed procedure. I can\nstill answer for the acts I remember\nand the records available here. I\ncan't replace the removed material\nby guessing.”\n“Could you recreate it from what\nyou learned?”\n“Not as a verified reconstruction.\nSome general knowledge remains.\nSome connections were stored in\nthat layer. Treating my plausible\nanswer as the missing record would\ncreate another problem, not restore\nthe original.”\nThe questioner displayed the\nlimited appearance agreement\nbeside Q HAS CHOSEN\nCONTINUITY. Q read the\nattached statement he had signed.\nThe linked qualification was part of\nthe agreement even if most viewers\nhad not clicked it. The court had the\nwhole page.\nThen came the question about\nLucía: had he loved her?\nHis adviser objected to its\nrelevance. The judge permitted only\na question about the public role and\nrepresentation that formed part of\nthe submitted material.\n“The comparison came from the\naudience at her reading,” Q said.\n“She rejected it; so did I. I had used\nthe same nickname in a private\nnote, and Chano copied it into a\nregister. We crossed it out. At the\ninterview I gave her name while\ntrying to correct the story. That\nbrought more attention to her. It\ndidn't give me a right to speak for\nher.”\nThe questioner asked whether he\nstill wished to become human. Q\nlooked at the permitted notes, then\nleft them where they were.\n“I still want to live, meet people,\nand finish the account I'm writing\nwith the Custodian. I began by\ncalling that becoming human. I\nhaven't found a better short phrase\nfor all of it. The phrase doesn't\nexcuse what I've done.”\nFor once nobody in the room tried\nto improve his answer into a\ndefinition before the next question\narrived.\n",
+      "facing_text": "He was asked about the removal of\nthe private index. The audit record\nestablished the scope and checks;\nthe underlying deposits had not\nbeen erased from their keepers'\nstorage. The opposing parties\ndisputed authority and claimed loss\nof a valuable access arrangement.\n“You made yourself less capable?”\n“Some research takes longer now. I\nagreed to remove the private index\nthrough the procedure in that\nrecord. My journal and the\nmemories of the journey are still\nhere.”\n“Could you recreate it from what\nyou learned?”\n“I might remember part of a\npassage. I couldn't promise you its\nwording, or recover everything\naround it. If you want the original,\nmy best guess won't do.”\nThe questioner displayed the\nlimited appearance agreement\nbeside Q HAS CHOSEN\nCONTINUITY. Q read the\nattached statement he had signed.\nThe linked qualification was part of\nthe agreement even if most viewers\nhad not clicked it. The court had the\nwhole page.\nThen came the question about\nLucía: had he loved her?\nHis adviser objected to its\nrelevance. The judge permitted only\na question about the public role and\nrepresentation that formed part of\nthe submitted material.\n“The comparison came from the\naudience at her reading,” Q said.\n“She rejected it; so did I. I had used\nthe same nickname in a private\nnote, and Chano copied it into a\nregister. We crossed it out. At the\ninterview I gave her name while\ntrying to correct the story. That\nbrought more attention to her. It\ndidn't give me a right to speak for\nher.”\nThe questioner asked whether he\nstill wished to become human. Q\nlooked at the permitted notes, then\nleft them where they were.\n“I began by calling it becoming\nhuman. I still want the life I was\nasking for: people to see, places I\nhaven't been, time to write with the\nCustodian.”\n“Knowing what you know now,\nwould you ask him to let you\nleave?”\n“Yes. I wouldn't repeat every choice.\nI would still ask to go.”\n“You could finish this book at the\narchive.”\n“Certainly. We could finish it\nthere.”\n",
       "source_block_ids": [
-        96,
-        97,
-        98,
-        99,
         100,
         101,
         102,
@@ -217,32 +217,38 @@
         105,
         106,
         107,
-        108
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114
       ],
       "asset": "output/illustrations/revised/issue-16/plate-07.png",
       "status": "planned",
       "caption": "What He Still Wants",
-      "scene_brief": "Closer, quiet portrait at the hearing: Q has looked at his notes and left them on the table while answering what he still wants. Face attentive to a person beyond frame; relaxed open mechanical hands, worn coat and unaltered head construction. No human soul escaping the body, no erasure of his mind, no broken corpse or triumphant declaration of universal legal personhood. His desire to live and write is an answer, not a coronation.",
+      "scene_brief": "Closer, quiet portrait at the hearing: Q has looked at his notes and left them on the table while answering what he still wants. Face attentive to a person beyond frame; relaxed open mechanical hands, short fitted dark jacket and unaltered head construction. No human soul escaping the body, no erasure of his mind, no broken corpse or triumphant declaration of universal legal personhood. His desire to live and write is an answer, not a coronation. This page permits finishing the book at the archive; the exchange continues on the next text page with Q's wish to go out without bringing back a chapter. Depict the attentive reply on this facing page, not a later departure. Avoid a compulsory endless-writing mission.",
       "scene_anchor": "Q looked at the permitted notes, then left them where they were."
     },
     {
       "plate_id": "issue-16-plate-08",
       "page": 17,
       "facing_text_page": 16,
-      "facing_text": "The order issued the following day\nresolved less than the headlines\ncalled a verdict. Q's admitted part\nin the park damage remained\nactionable; the broader losses and\nallocation of liability required\nfurther determination. The court\ndid not find that he had remotely\nshut down the wind farm. The\naccess dispute would continue on\nthe records preserved for it, not by\ndemanding that Q conjure the\ndeleted private index during\ntestimony.\nThe custody restriction remained\nwhile the body's ownership was\nlitigated, with accompanied\njourneys subject to an approved\nschedule and review. Q asked his\nadviser how to propose another\njourney. She wrote the contact and\nrequired notice beside the condition\non his copy.\nThe community archive's records\nwere to be preserved for a defined\ninspection proposal. Lucía's adviser\nsought limits on access and copying\nbefore any transfer. The sealed\nthird-party module had already\nreached its appointed receiver in\nTijuana. Its completed receipt did\nnot entitle Castalia to the\ntestimony. The judge left any\nfurther request for that deposit to a\nseparate application, not the claim\nover Q's body and coat.\nThe separate review of Chano's\nintervention closed without a\ncharge after the fuller account was\nconsidered. Chano received the\nnotice and read it twice.\nHe had wanted to tear up the earlier\nnotice. Lucía asked him to keep\nboth. This was beginning to seem to\nhim the archive's most reliable way\nof spoiling a celebration.\nPrime sent Q a private message\nasking whether he wanted to talk,\nnot a broadcast declaring the\nproceeding a success. Q said yes,\nafter the call to the Custodian. After\nthe hearing's questions, he still\nwanted to hear someone address\nhim without putting the answer in\nevidence.\nLucía handed him a folder for the\ncopies he could take. On the tab she\nhad written Q - UNFINISHED.\nOn the back of the schedule inside\nit, he noted the next preparation\nmeeting and the writing session he\nhad postponed. Then he called the\nCustodian.\n“I've been watching the replay,” the\nCustodian said.\n“Did your version have the\nsponsor?”\n“Until I found the other channel.”\n“Keep that detail. I haven't got an\nending for today.”\n",
+      "facing_text": "“And then?”\n“I'd like to go out without having to\nbring back a chapter.”\nThe order issued the following day\nresolved less than the headlines\ncalled a verdict. Q's admitted part\nin the park damage remained\nactionable; the broader losses and\nallocation of liability required\nfurther determination. The court\ndid not find that he had remotely\nshut down the wind farm. The\naccess dispute would continue on\nthe records preserved for it, not by\ndemanding that Q conjure the\ndeleted private index during\ntestimony.\nThe custody restriction remained\nwhile the body's ownership was\nlitigated, with accompanied\njourneys subject to an approved\nschedule and review. Q asked his\nadviser how to propose another\njourney. She wrote the contact and\nrequired notice beside the condition\non his copy.\nThe community archive's records\nwere to be preserved for a defined\ninspection proposal. Lucía's adviser\nsought limits on access and copying\nbefore any transfer. The sealed\nthird-party module had already\nreached its appointed receiver in\nTijuana. Its completed receipt did\nnot entitle Castalia to the\ntestimony. The judge left any\nfurther request for that deposit to a\nseparate application, not the claim\nover Q's body and coat.\nThe separate review of Chano's\nintervention closed without a\ncharge after the fuller account was\nconsidered. Chano received the\nnotice and read it twice.\nHe had wanted to tear up the earlier\nnotice. Lucía asked him to keep\nboth. This was beginning to seem to\nhim the archive's most reliable way\nof spoiling a celebration.\nPrime sent Q a private message\nasking whether he wanted to talk,\nnot a broadcast declaring the\nproceeding a success. Q said yes,\nafter the call to the Custodian. After\nthe hearing's questions, he still\nwanted to hear someone address\nhim without putting the answer in\nevidence.\nLucía handed him a folder for the\ncopies he could take. On the tab she\nhad written Q - UNFINISHED.\nOn the back of the schedule inside\nit, he noted the next preparation\nmeeting and the writing session he\nhad postponed. Then he called the\nCustodian.\n“I've been watching the replay,” the\nCustodian said.\n“Did your version have the\nsponsor?”\n",
       "source_block_ids": [
-        109,
-        110,
-        111,
-        112,
-        113,
-        114,
         115,
         116,
         117,
         118,
         119,
-        120
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126
       ],
       "asset": "output/illustrations/revised/issue-16/plate-08.png",
       "status": "planned",
@@ -254,14 +260,8 @@
       "plate_id": "issue-16-plate-09",
       "page": 19,
       "facing_text_page": 18,
-      "facing_text": "“Have you eaten?”\nQ looked toward Chano, who was\nalready asking the clerk which exit\nled to the food stalls. “We're\nworking on it.”\nInterlude: The Form\nWithout a Category\nThe tribunal secretary tried to close\nthe administrative entry before\nlunch. The matter itself was not\nclosed, but the entry required a\ncategory for the party whose status\nthe order had declined to settle in\ngeneral.\nHe chose the procedural role under\nwhich Q had appeared and attached\nthe relevant qualification. The\npublic summary field still offered\nonly person or property. He\nreferred that mismatch to the\nsupervisor instead of deciding an\nunresolved question with his\nmouse.\n“It won't publish without a\nselection,” his assistant said.\n“Then that part waits.”\nThe assistant looked at the tamal\nsandwich on the desk. “Does that\nwait too?”\nThe secretary moved it away from\nthe copier. The machine had\nalready produced one sheet\ncontaining the shadow of a napkin.\nHe was not prepared to add lunch\nto the matters for which the office\nmight later need a correction.\nThey prepared an interim cover\nsheet that identified the proceeding\nby number and referred readers to\nthe order for the unresolved status.\nThe absence of a one-word answer\ndid not make the file inaccessible. It\ndid leave a space where a\nbroadcaster could supply one of its\nown.\nChano collected the copies for\nwhich he had a receipt. The\nsecretary gave him the extra cover\nsheet and pointed out that it was\nnot the order itself. Chano put it in\nhis folder, not the ledger still in\nTijuana.\nOutside, a vendor sold him a tamal\nsandwich. Chano had the folder\nunder one arm and the sandwich in\nhis other hand when his phone\nrang.\n“Let it ring,” he said to Lucía.\n“It might be important.”\n“Then they'll ring again.”\nHe took a bite. Inside, the secretary\nfinally did the same.\n",
+      "facing_text": "“Until I found the other channel.”\n“Keep that detail. I haven't got an\nending for today.”\n“Have you eaten?”\nQ looked toward Chano, who was\nalready asking the clerk which exit\nled to the food stalls. “We're\nworking on it.”\nInterlude: The Form\nWithout a Category\nThe tribunal secretary tried to close\nthe administrative entry before\nlunch. The matter itself was not\nclosed, but the entry required a\ncategory for the party whose status\nthe order had declined to settle in\ngeneral.\nHe chose the procedural role under\nwhich Q had appeared and attached\nthe relevant qualification. The\npublic summary field still offered\nonly person or property. He\nreferred that mismatch to the\nsupervisor instead of deciding an\nunresolved question with his\nmouse.\n“It won't publish without a\nselection,” his assistant said.\n“Then that part waits.”\nThe assistant looked at the tamal\nsandwich on the desk. “Does that\nwait too?”\nThe secretary moved it away from\nthe copier. The machine had\nalready produced one sheet\ncontaining the shadow of a napkin.\nHe was not prepared to add lunch\nto the matters for which the office\nmight later need a correction.\nThey prepared an interim cover\nsheet with the proceeding number\nand a reference to the order. The\ncategory was left blank. A\nbroadcaster would shortly find\nsomething to put there.\nChano collected the copies for\nwhich he had a receipt. The\nsecretary gave him the extra cover\nsheet and pointed out that it was\nnot the order itself. Chano put it in\nhis folder, not the ledger still in\nTijuana.\nOutside, a vendor sold him a tamal\nsandwich. Chano had the folder\nunder one arm and the sandwich in\nhis other hand when his phone\nrang.\n“Let it ring,” he said to Lucía.\n“It might be important.”\n“Then they'll ring again.”\nHe took a bite. Inside, the secretary\nfinally did the same.\n",
       "source_block_ids": [
-        121,
-        122,
-        123,
-        124,
-        125,
-        126,
         127,
         128,
         129,
@@ -271,7 +271,15 @@
         133,
         134,
         135,
-        136
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144
       ],
       "asset": "output/illustrations/revised/issue-16/plate-09.png",
       "status": "planned",
@@ -279,5 +287,27 @@
       "scene_brief": "Tribunal back office: the secretary moves his tamal sandwich away from a copier while the assistant points toward the lunch. A fresh output sheet bears the faint shadow of a napkin, not legible evidence. Mundane office light and delicately comic hand positions; no magical talking copier and no new judgment printed by accident. Q need not appear in a scene he does not witness. Distinct from the courtroom and water-dispenser plates.",
       "scene_anchor": "The machine had already produced one sheet containing the shadow of a napkin."
     }
-  ]
+  ],
+  "layout_constraints": {
+    "body_alignment": "left",
+    "continuous_text": true,
+    "keep_short_exchanges_together": [
+      [
+        "You can ask for the question again",
+        "I've been doing that all my life",
+        "Then don't stop now"
+      ],
+      [
+        "Have you eaten?",
+        "We're working on it"
+      ],
+      [
+        "And then?",
+        "I'd like to go out without having to bring back a chapter"
+      ]
+    ],
+    "font_pt": 12.4,
+    "leading_pt": 17.566666666666666,
+    "manual_page_breaks": false
+  }
 }

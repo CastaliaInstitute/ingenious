@@ -1,5 +1,25 @@
 # Motivation revision: working record
 
+## Latest voice checkpoint: Chapter Sixteen
+
+The hearing now lets Q acknowledge that the book could finish at the archive
+while he still wants to go out without bringing back a chapter. Ten inference
+calls, including two three-step hearing sequences, informed this authored
+revision; one output was truncated and two omitted action fields. They are not
+faculty approvals or independent validation of an embodied intelligence. The
+friendship recess remains unchanged because neither alternative improved it.
+See `CHAPTER_16_FRESH_CONTEXT_REVIEW.md` for the evidence and rejected responses.
+
+Only Chapter Sixteen and its outline entry changed from `fd41fced`. Its 3,051
+words have a verified twenty-page internal layout, ten planned plates and five
+duplex A3 sheets at Georgia 12.4/17.5667. All nine text pages were visually
+checked, all twenty imposed text slots verified, and three brief exchanges kept
+together without manual page breaks. All 22 issue bindings match their sources;
+the other 21 chapters/manifests and 30 earlier issue PDFs remain unchanged.
+No Issue Sixteen plates or illustrated PDF are approved yet. Next: draw and
+verify its ten exact-facing Goya-style plates, while retaining the earlier
+art-correction and whole-book review work below. The full goal remains active.
+
 ## Governing art correction, 2026-09-08
 
 The user rejected the drift into photorealism. Earlier scene/layout approvals do

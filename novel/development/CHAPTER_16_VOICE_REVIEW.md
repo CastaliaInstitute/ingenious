@@ -1,5 +1,11 @@
 # Chapter Sixteen: evidence and the third answer
 
+Current update: `CHAPTER_16_FRESH_CONTEXT_REVIEW.md` records the subsequent
+fresh-context probes, the life-beyond-the-book exchange, and the revised
+3,051-word, twenty-page layout. This earlier review is historical; its word count
+and font specification do not describe the current plan. No Issue Sixteen art
+has been approved.
+
 ## Verdict
 
 The hearing now recalls the current novel rather than putting discarded scenes
