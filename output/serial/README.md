@@ -13,6 +13,18 @@ under review. The same-text typography comparison supports retaining left-aligne
 body columns: the tested justification introduced distracting word spacing.
 No issue pagination changed for this comparison.
 
+Issue Seventeen now has a complete [twenty-page reading proof](../pdf/ingenious-issue-17-revised-en-bw.pdf)
+and [ten-side A3 folding proof](../pdf/ingenious-issue-17-revised-en-bw-a3.pdf).
+Ten unique plates include the cover; all 2,728 words flow at Georgia
+13.25/18.770833 with left-aligned columns and no manual page breaks. Every reading
+page and A3 side was visually reviewed; exact source order and all twenty imposed
+positions passed checks. Five nested duplex sheets: A3 landscape, actual size,
+short-edge flip, all ten sides, no second booklet layout. No print job was sent.
+Native art is about 150 dpi; remaining naturalistic detail prevents calling this
+final Goya approval or an A+ press master. See the
+[full prompts and verification](../illustrations/revised/issue-17/manifest.json)
+and [production review](../../novel/development/ISSUE_17_PRODUCTION.md).
+
 Issue Sixteen now has a complete [twenty-page reading proof](../pdf/ingenious-issue-16-revised-en-bw.pdf)
 and [ten-side A3 folding proof](../pdf/ingenious-issue-16-revised-en-bw-a3.pdf).
 Ten unique Goya-style plates include the cover; all 3,051 words flow through nine

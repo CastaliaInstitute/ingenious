@@ -1,27 +1,57 @@
 {
   "issue": 17,
-  "revision": "2026-09-08-boundary-and-protagonist",
+  "revision": "2026-09-08-goya-illustrated-proof",
   "source": "novel/THE_INGENIOUS_MACHINE.md",
   "chapter_sha256": "82616c32e9fd93141dcc175f1fc43f39154a548de1c4650746e493a446e5dde8",
   "page_count": 20,
   "text_font": "Georgia 13.25/18.7708 pt",
   "plate_count_including_cover": 10,
-  "status": "revised source and exact-facing illustration plan; internal text layout checked; ten plates remain unapproved",
-  "character_reference": "output/illustrations/revised/issue-01/cover.png",
-  "chano_reference": "output/illustrations/revised/issue-03/plate-06.png",
+  "status": "complete illustrated revision proof; all native images, twenty reading pages and ten A3 sides visually reviewed",
+  "character_reference": "output/illustrations/revised/issue-16/plate-03.png",
+  "chano_reference": "output/illustrations/revised/issue-16/plate-03.png",
   "prime_design_source": "output/illustrations/revised/issue-11/manifest.json",
   "bixha_design_source": "output/illustrations/revised/issue-08/manifest.json",
-  "character_design": "Q keeps the approved narrow segmented head, ear mechanisms, exposed neck, question-mark breastplate, short fitted dark jacket with long sleeves and supported knee. Chano follows his approved reference. Prime is a clean lighter-bodied Q-family peer with undamaged shoulder, not a naive substitute. Bixha remains the same organizer as the first Isthmus encounter. Celina is the maintenance worker, with an adult son studying and a mother living beside the damaged road. Her mother is a separate older woman. Custodian, if pictured on calls, is the tall older man with tied-back long gray hair, glasses and white work shirt, never a second in-person attendee. Q's lower face includes a small mechanical sampling mouth; do not simplify it into a blank mask. Use the corrected Goya pilot for Q-family identity, not photographic surface detail.",
+  "character_design": "Q keeps the approved narrow segmented head, ear mechanisms, exposed neck, question-mark breastplate, short fitted dark jacket with long sleeves and supported knee. Chano follows his approved reference. Prime is a clean lighter-bodied Q-family peer with undamaged shoulder, not a naive substitute. Bixha remains the same organizer as the first Isthmus encounter. Celina is the maintenance worker, with an adult son studying and a mother living beside the damaged road. Her mother is a separate older woman. Custodian, if pictured on calls, is the tall older man with tied-back long gray hair, glasses and white work shirt, never a second in-person attendee. Q's lower face includes a small mechanical sampling mouth; do not simplify it into a blank mask. Use the corrected Goya pilot for Q-family identity, not photographic surface detail. Prime wears a short pale long-sleeved jacket during this issue, unlike Q's dark jacket. Teacher: short curly hair, rectangular glasses, light cardigan. Celina: dark ponytail, plain dark workshirt; distinct from Teresa's cropped hair and reflective coveralls. Q's seated conversation retains an external right-knee brace.",
   "art_direction": "Neutral monochrome Goya-inspired etching and aquatint with economical drawn contours and broad tonal masses; white highlights, no sepia or cream background ink. Full bleed at trim, separate typeset caption margin. Contemporary near-future Isthmus labor, roads and ordinary rooms, not medieval chivalry or anonymous cultural scenery. Nine unique exact-facing scenes plus cover. Maintain role and face consistency when the planned references are generated. No private records reproduced legibly. Governing reference: novel/development/GOYA_ART_DIRECTION.md. Earlier plates guide identity only; do not imitate their photographic rendering.",
-  "approval_scope": "Revised source-bound plan, 2728 words on twenty comic pages at Georgia 13.25/18.7708; ten planned plates. Internal layout verification is not art approval.",
+  "approval_scope": "Native images, all twenty reading pages and ten A3 sides visually reviewed for scene, cast, continuous flow, cover/captions and fold layout. Revision proof only; not final artistic approval, A+ certification or press master.",
   "plates": [
     {
       "plate_id": "issue-17-cover",
       "page": 1,
       "asset": "output/illustrations/revised/issue-17/cover.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The Wind Farm of Giants, Again",
-      "scene_brief": "View outward from the working meeting room: tables, papers and mixed participants in the foreground, turbines continuing to turn beyond the opening. Q and Prime appear as two among the room's people, not dueling giants. Frame the relationship between energy infrastructure and ordinary unresolved work without a direct wire to a distant archive. Do not depict the disputed new access strip as a completed road or the whole project as settled. Leave room for separately typeset title."
+      "scene_brief": "View outward from the working meeting room: tables, papers and mixed participants in the foreground, turbines continuing to turn beyond the opening. Q and Prime appear as two among the room's people, not dueling giants. Frame the relationship between energy infrastructure and ordinary unresolved work without a direct wire to a distant archive. Do not depict the disputed new access strip as a completed road or the whole project as settled. Leave room for separately typeset title.",
+      "asset_sha256": "519d32735a057977269ae3254e5df9ea6444061df6f36a13a0dfd303d9e0b6ad",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in image_gen; no CLI/API fallback",
+      "generation_prompt": "Use case: illustration-story. Create one full-page portrait comic plate for The Ingenious Machine, contemporary near-future Mexico. Style: Goya's Los Caprichos ETCHING AND AQUATINT, hand-drawn thin broken contours, abbreviated expressive faces, broad flat granular black shadow masses, strong untouched WHITE reserves and compressed space. Image 1 is the actual Goya STYLE reference only: do not copy its sleeper, monsters, lettering, frame or aged paper. Remaining images are CHARACTER IDENTITY references only, never photographic finish or existing poses. Avoid photographic realism, cinematic depth, glossy 3D metal, blanket crosshatching, uniform vector outlines, sepia, cream ink, paper-aging, borders, captions, speech bubbles, watermark. Neutral black and gray ink on pure white. Contemporary clothing; no knights, weapons or supernatural allegory. Portrait 2:3 full-bleed composition; important hands and faces clear of bottom 5% for separately typeset caption. Draw the scene newly, not a texture filter on a photograph.\nCreate COVER, not another pin scene. View outward from working Isthmus meeting room: participants and tables with loose papers foreground, an open broad doorway beyond reveals a few contemporary wind turbines on flat low plain, still operating. Q dark short long-sleeved jacket and Prime pale short long-sleeved jacket are TWO ordinary participants among the humans at tables, not giant heroes. Bixha low dark bun and cotton blouse one of the humans consulting papers. Lower two-thirds carries the scene, asymmetric table shapes, broad aquatint dark doorway sides and shadows, white papers. UPPER QUARTER must remain genuinely pure WHITE, clear unobstructed title-safe wall/sky across full width, no beam, dark line or head there; title will be typeset separately. No printed title/lettering. Turbines are electricity infrastructure, not monsters, no wire directly to faraway archive, no completed new access road, no victory signing. Full bleed lower scene without borders. Q: slim adult-sized embodied intelligence, narrow segmented oval mechanical head, recessed round eyes, concentric circular ear mechanisms, long mechanical neck, small sampling-mouth opening and hinged lower plate (not a blank mask or human lips), question-mark breastplate, short fitted DARK jacket with LONG sleeves, scuffed articulated body and support on his RIGHT knee. Fluent attentive adult gestures, not a naive child.",
+      "generation_references": [
+        "output/illustrations/goya-pilot/references/capricho-43-met.jpg",
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-378a2e03-1a63-420e-80b5-9d59bcdc67e0.png",
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-9eeb1207-76c6-49d8-9d6b-5c515ad568dd.png"
+      ],
+      "generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-b19dda8c-32ea-4439-8f44-3730d952ae14.png",
+      "selected_generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-c65ef9df-dcc2-4ca6-b965-b48ba521dfe9.png",
+      "review_note": "Q foreground and pale-jacketed Prime at rear table among participants; working turbines beyond doorway. Clear title reserve. Prime restored by edit.",
+      "approval_scope": "visually reviewed native image, reading page and A3 side; revision proof only, not final artistic approval",
+      "edits": [
+        {
+          "reason": "Restore the second robot peer required by the cover concept.",
+          "prompt": "Use case: precise-object-edit. Image1 COVER edit target. Image2 reference ONLY for PRIME, the PALE-jacketed robot on LEFT. In image1 replace just the bearded bespectacled man at the SMALL BACKGROUND table, behind Bixha near doorway, with PRIME: clean lighter segmented narrow oval robot head, concentric circular ears, small mechanical mouth, short PALE jacket LONG sleeves. Keep his small scale seated in conversation, not a foreground hero. Foreground Q in dark jacket, Bixha, Chano and other people stay exactly as drawn. Preserve turbines beyond doorway, white upper quarter completely free of title, scene composition, expressive Goya etching/aquatint. No other changes, no new symbols/text, no border.",
+          "references": [
+            "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-b19dda8c-32ea-4439-8f44-3730d952ae14.png",
+            "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-378a2e03-1a63-420e-80b5-9d59bcdc67e0.png"
+          ],
+          "generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-c65ef9df-dcc2-4ca6-b965-b48ba521dfe9.png"
+        }
+      ],
+      "title_lines": [
+        "The Ingenious Machine"
+      ]
     },
     {
       "plate_id": "issue-17-plate-01",
@@ -43,10 +73,26 @@
         11
       ],
       "asset": "output/illustrations/revised/issue-17/plate-01.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The Cost of Arriving",
       "scene_brief": "Q and Chano compare coach departures and a lodging option at a small table, Q's supported knee angled carefully beneath it. The ordinary travel budget and separate repair allowance are visible as unlettered sheets. Both are amused by the choice to arrive rested rather than save a hotel night. No sleeping-human lesson, no clandestine departure, no sealed module or original ledger.",
-      "scene_anchor": "Q checked the connection and the seat space."
+      "scene_anchor": "Q checked the connection and the seat space.",
+      "asset_sha256": "8289011aa97fe16a625884a23158f6e1b11893d2e54d99fdf33cbf360a9438c1",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in image_gen; no CLI/API fallback",
+      "generation_prompt": "Use case: illustration-story. Create one full-page portrait comic plate for The Ingenious Machine, contemporary near-future Mexico. Style: Goya's Los Caprichos ETCHING AND AQUATINT, hand-drawn thin broken contours, abbreviated expressive faces, broad flat granular black shadow masses, strong untouched WHITE reserves and compressed space. Image 1 is the actual Goya STYLE reference only: do not copy its sleeper, monsters, lettering, frame or aged paper. Remaining images are CHARACTER IDENTITY references only, never photographic finish or existing poses. Avoid photographic realism, cinematic depth, glossy 3D metal, blanket crosshatching, uniform vector outlines, sepia, cream ink, paper-aging, borders, captions, speech bubbles, watermark. Neutral black and gray ink on pure white. Contemporary clothing; no knights, weapons or supernatural allegory. Portrait 2:3 full-bleed composition; important hands and faces clear of bottom 5% for separately typeset caption. Draw the scene newly, not a texture filter on a photograph.\nScene: Q and Chano seated at a modest table before their bus journey, comparing fare/departure information and the price of a room. Chano is the stocky middle-aged Mexican man in reference2, wavy dark hair and thick moustache, plain rolled-sleeve shirt. He leans back with a dry amused expression while Q points at the choice on a timetable; their joke concerns arriving disagreeable for reasons of their own. Q leaves leg room for his braced RIGHT knee visible beside table, not doubled around both knees. Two distinct modest sets of budget notes for journey and repairs, one small travel bag. No luxurious hotel, no huge ledger, no literal sleeping lesson, no readable private data. Table seen obliquely with natural complementary poses; broad dark beneath tabletop contrasts a white wall. Q: slim adult-sized embodied intelligence, narrow segmented oval mechanical head, recessed round eyes, concentric circular ear mechanisms, long mechanical neck, small sampling-mouth opening and hinged lower plate (not a blank mask or human lips), question-mark breastplate, short fitted DARK jacket with LONG sleeves, scuffed articulated body and support on his RIGHT knee. Fluent attentive adult gestures, not a naive child.",
+      "generation_references": [
+        "output/illustrations/goya-pilot/references/capricho-43-met.jpg",
+        "output/illustrations/revised/issue-16/plate-03.png"
+      ],
+      "generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-61d40257-529c-493e-b23f-9aa6db9df07d.png",
+      "selected_generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-61d40257-529c-493e-b23f-9aa6db9df07d.png",
+      "review_note": "Travel and repair money kept in separate small stacks; Chano's relaxed pose contrasts Q checking timetable. Q's other knee is occluded by table; visible joint must not be mistaken for a cured right knee.",
+      "approval_scope": "visually reviewed native image, reading page and A3 side; revision proof only, not final artistic approval",
+      "edits": []
     },
     {
       "plate_id": "issue-17-plate-02",
@@ -76,10 +122,45 @@
         31
       ],
       "asset": "output/illustrations/revised/issue-17/plate-02.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The Other Entrance",
       "scene_brief": "Teresa meets Q and Chano at reception and points toward the designated visitor route; the old narrow pedestrian gate is behind temporary mesh awaiting work. Clear safe visitor space distinct from vehicle access. Q walks the marked route with supported knee, no charge, no blade struck, no invented whole-farm shutdown. This is the new visit, not a replay of the earlier gate crowd.",
-      "scene_anchor": "The old pedestrian gate stood behind temporary mesh, awaiting work."
+      "scene_anchor": "The old pedestrian gate stood behind temporary mesh, awaiting work.",
+      "asset_sha256": "ed4689f1696e3727c8d61cb6edbc2cf4b2a85b6c5201ebfd9f05f2f563aaebcc",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in image_gen; no CLI/API fallback",
+      "generation_prompt": "Use case: illustration-story. Create one full-page portrait comic plate for The Ingenious Machine, contemporary near-future Mexico. Style: Goya's Los Caprichos ETCHING AND AQUATINT, hand-drawn thin broken contours, abbreviated expressive faces, broad flat granular black shadow masses, strong untouched WHITE reserves and compressed space. Image 1 is the actual Goya STYLE reference only: do not copy its sleeper, monsters, lettering, frame or aged paper. Remaining images are CHARACTER IDENTITY references only, never photographic finish or existing poses. Avoid photographic realism, cinematic depth, glossy 3D metal, blanket crosshatching, uniform vector outlines, sepia, cream ink, paper-aging, borders, captions, speech bubbles, watermark. Neutral black and gray ink on pure white. Contemporary clothing; no knights, weapons or supernatural allegory. Portrait 2:3 full-bleed composition; important hands and faces clear of bottom 5% for separately typeset caption. Draw the scene newly, not a texture filter on a photograph.\nScene: near the wind-farm reception on the Isthmus, Teresa directs Q and Chano along the designated visitor path. In reference3 use ONLY Teresa at far right for identity: woman about30, short cropped dark hair, dark work coveralls with reflective bands and radio. Do NOT copy that image's photographic style or gate confrontation. Here she gestures calmly toward reception; the OLD pedestrian gate behind temporary mesh awaits work. Separate visitor route and vehicle access legible through simple barrier layout. Q and Chano remain on the designated visitor side and follow directions; no charge, no broken barrier, no fighting. Distant few turbines on low flat Isthmus plain, not desert mesas. Chano stocky moustached wavy-haired man of reference2. Q: slim adult-sized embodied intelligence, narrow segmented oval mechanical head, recessed round eyes, concentric circular ear mechanisms, long mechanical neck, small sampling-mouth opening and hinged lower plate (not a blank mask or human lips), question-mark breastplate, short fitted DARK jacket with LONG sleeves, scuffed articulated body and support on his RIGHT knee. Fluent attentive adult gestures, not a naive child.",
+      "generation_references": [
+        "output/illustrations/goya-pilot/references/capricho-43-met.jpg",
+        "output/illustrations/revised/issue-16/plate-03.png",
+        "output/illustrations/revised/issue-08/plate-02.png"
+      ],
+      "generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-5cc05625-c310-4678-a2d1-b8092363f1b9.png",
+      "selected_generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-35ae4f1c-5b2c-499f-be4c-721b74a3781a.png",
+      "review_note": "Teresa directs visitors on designated route; separate vehicle area and gate mesh. Redraw removes invented park lettering and makes faces more economical; second edit removes antique substrate/border.",
+      "approval_scope": "visually reviewed native image, reading page and A3 side; revision proof only, not final artistic approval",
+      "edits": [
+        {
+          "reason": "Remove invented signage and reduce photographic human finish.",
+          "prompt": "Use case: style-transfer. Image1 is the edit target, Image2 is Goya aquatint STYLE reference. Redraw this SAME entrance scene with much more economical Goya Los Caprichos linework: abbreviated angular human faces, thin interrupted contours, broad flat black and gray aquatint masses, radically less surface detail, untouched pure WHITE highlights. Keep all three character identities, clothing, Q's small mechanical mouth, dark LONG sleeve short jacket and right knee support, calm walking gestures and distinct routes. Remove ALL lettering from building and signs; keep only simple pedestrian/turbine/vehicle pictograms and arrows where needed. Keep temporary mesh and turbines, no extra people or props. No sepia, no gray paper wash, no photography, no cinematic shading, no uniformly meticulous crosshatching. Same portrait frame and placement.",
+          "references": [
+            "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-5cc05625-c310-4678-a2d1-b8092363f1b9.png",
+            "output/illustrations/goya-pilot/references/capricho-43-met.jpg"
+          ],
+          "generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-0d9284ed-efd4-4ac3-9a17-a2448ad6e721.png"
+        },
+        {
+          "reason": "Remove added antique paper tint and border; retain corrected drawing.",
+          "prompt": "Use case: precise-object-edit. Image1 is the edit target. Preserve the actual scene, figures, poses, thin etched outlines and broad aquatint shadows. Change ONLY the background substrate and framing: remove the aged cream/beige paper wash and plate-border lines completely. Paper reserves and highlights must be pure WHITE (#FFFFFF), with neutral black and gray drawing, no warm tint, stains or paper aging. Extend actual scene artwork to the canvas edges as needed so there is NO decorative border or inset frame. Do not brighten real shadows into blank space. Keep full portrait composition, faces and hand actions unchanged. Retain Q's little mechanical mouth line and panel jaw; no blank mask. No captions or lettering.",
+          "references": [
+            "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-0d9284ed-efd4-4ac3-9a17-a2448ad6e721.png"
+          ],
+          "generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-35ae4f1c-5b2c-499f-be4c-721b74a3781a.png"
+        }
+      ]
     },
     {
       "plate_id": "issue-17-plate-03",
@@ -104,10 +185,36 @@
         45
       ],
       "asset": "output/illustrations/revised/issue-17/plate-03.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The Emblem's Achievement",
       "scene_brief": "Near the stage, Prime removes a small brass key pinned to his coat and shows Q the clasp while a production assistant consults her notes. Close informal composition emphasizing the tiny puncture and the two fluent peers' shared joke. Prime's clean lighter body and undamaged shoulder distinguish him from Q; the pin is not Q's workshop key or a weapon.",
-      "scene_anchor": "Prime took it off."
+      "scene_anchor": "Prime took it off.",
+      "asset_sha256": "ffdcf3db255655f64a637d94fae09d84f0c396624250536d6d6c29df756f328b",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in image_gen; no CLI/API fallback",
+      "generation_prompt": "Use case: illustration-story. Create one full-page portrait comic plate for The Ingenious Machine, contemporary near-future Mexico. Style: Goya's Los Caprichos ETCHING AND AQUATINT, hand-drawn thin broken contours, abbreviated expressive faces, broad flat granular black shadow masses, strong untouched WHITE reserves and compressed space. Image 1 is the actual Goya STYLE reference only: do not copy its sleeper, monsters, lettering, frame or aged paper. Remaining images are CHARACTER IDENTITY references only, never photographic finish or existing poses. Avoid photographic realism, cinematic depth, glossy 3D metal, blanket crosshatching, uniform vector outlines, sepia, cream ink, paper-aging, borders, captions, speech bubbles, watermark. Neutral black and gray ink on pure white. Contemporary clothing; no knights, weapons or supernatural allegory. Portrait 2:3 full-bleed composition; important hands and faces clear of bottom 5% for separately typeset caption. Draw the scene newly, not a texture filter on a photograph.\nScene: intimate oblique composition beside a low stage at a contemporary Isthmus public meeting, TWO fluent robot peers share a dry joke over a tiny key-shaped lapel pin. Prime, the clean lighter Q-family robot of reference3, now wears a SHORT PALE light jacket with LONG sleeves, undamaged shoulder, no knee support. Prime has just removed the tiny brass key lapel pin and holds it between two fingers to show Q its clasp. It made a small pinprick in his pale lapel; do not enlarge pin into a real door key or weapon. Q in DARK short jacket looks at the tiny object. At side a woman production assistant writes in her notes, misunderstanding the joke as a request for a larger pin. Background chairs and stage pared to aquatint shapes. NOT heroic confrontation; no decorative necklaces; no giant punctuation. Both same narrow segmented face family with mechanical mouth. Q: slim adult-sized embodied intelligence, narrow segmented oval mechanical head, recessed round eyes, concentric circular ear mechanisms, long mechanical neck, small sampling-mouth opening and hinged lower plate (not a blank mask or human lips), question-mark breastplate, short fitted DARK jacket with LONG sleeves, scuffed articulated body and support on his RIGHT knee. Fluent attentive adult gestures, not a naive child.",
+      "generation_references": [
+        "output/illustrations/goya-pilot/references/capricho-43-met.jpg",
+        "output/illustrations/revised/issue-16/plate-03.png",
+        "output/illustrations/revised/issue-15/plate-07.png"
+      ],
+      "generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-c1184f1d-68ca-4a42-a59f-a69c9393e70a.png",
+      "selected_generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-378a2e03-1a63-420e-80b5-9d59bcdc67e0.png",
+      "review_note": "Prime's pale coat and tiny removed pin distinguish him from Q. Targeted edit restores Q's raised long sleeve. Assistant's key sketch conveys misunderstanding without a weapon.",
+      "approval_scope": "visually reviewed native image, reading page and A3 side; revision proof only, not final artistic approval",
+      "edits": [
+        {
+          "reason": "Restore Q's long jacket sleeve.",
+          "prompt": "Use case: precise-object-edit. Image1 is edit target. Change ONLY Q's raised dark jacket sleeve: the robot on the RIGHT must wear a full-length dark sleeve down to the wrist on the raised arm, covering its currently exposed metal forearm. Keep the mechanical hand near the chin uncovered. Preserve exactly both narrow segmented mechanical heads and small sampling mouths, Prime's pale jacket and tiny removed lapel pin, assistant's gesture, composition, other clothing, aquatint drawing and white ground. No new objects or text.",
+          "references": [
+            "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-c1184f1d-68ca-4a42-a59f-a69c9393e70a.png"
+          ],
+          "generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-378a2e03-1a63-420e-80b5-9d59bcdc67e0.png"
+        }
+      ]
     },
     {
       "plate_id": "issue-17-plate-04",
@@ -126,10 +233,38 @@
         53
       ],
       "asset": "output/illustrations/revised/issue-17/plate-04.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "A Working Microphone",
       "scene_brief": "Prime passes Bixha his wired microphone after hers fails. Show the cable, technician and side camera rather than a symbolic rescue; Q and Chano remain seated off to one side, Chano lowering his waved hand. Bixha resumes her own address with interpreters present. Do not give Q a speech on her behalf or render her as an anonymous ancestral emblem.",
-      "scene_anchor": "Prime handed Bixha his wired microphone."
+      "scene_anchor": "Prime handed Bixha his wired microphone.",
+      "asset_sha256": "de6f2b8fe951bf474e8eb1464500a6750bcd717dbb936170b6d7bf77a5158035",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in image_gen; no CLI/API fallback",
+      "generation_prompt": "Use case: illustration-story. Create one full-page portrait comic plate for The Ingenious Machine, contemporary near-future Mexico. Style: Goya's Los Caprichos ETCHING AND AQUATINT, hand-drawn thin broken contours, abbreviated expressive faces, broad flat granular black shadow masses, strong untouched WHITE reserves and compressed space. Image 1 is the actual Goya STYLE reference only: do not copy its sleeper, monsters, lettering, frame or aged paper. Remaining images are CHARACTER IDENTITY references only, never photographic finish or existing poses. Avoid photographic realism, cinematic depth, glossy 3D metal, blanket crosshatching, uniform vector outlines, sepia, cream ink, paper-aging, borders, captions, speech bubbles, watermark. Neutral black and gray ink on pure white. Contemporary clothing; no knights, weapons or supernatural allegory. Portrait 2:3 full-bleed composition; important hands and faces clear of bottom 5% for separately typeset caption. Draw the scene newly, not a texture filter on a photograph.\nScene: low stage at Isthmus public meeting. PRIME (clean lighter Q-family robot in PALE short long-sleeved jacket, robot at LEFT of ref2) hands a WIRED microphone to BIXHA (sturdy middle-aged woman with low dark bun, short-sleeve cotton blouse, central woman of ref3). Bixha takes it to resume HER address, upright alert and capable. Cable visibly trails from microphone toward audio technician; a side camera points toward HER, not Q. Q and Chano sit small at frame side, Chano's formerly raised hand lowering toward his program. An interpreter waits with papers. No savior tableau: a practical transfer between colleagues, not gift ceremony. Keep Bixha's face abbreviated etched contours, not photo smooth skin. Broad aquatint stage shadows, spotlight-free white wall, compressed asymmetric composition. No readable captions/signs. Q: slim adult-sized embodied intelligence, narrow segmented oval mechanical head, recessed round eyes, concentric circular ear mechanisms, long mechanical neck, small sampling-mouth opening and hinged lower plate (not a blank mask or human lips), question-mark breastplate, short fitted DARK jacket with LONG sleeves, scuffed articulated body and support on his RIGHT knee. Fluent attentive adult gestures, not a naive child.",
+      "generation_references": [
+        "output/illustrations/goya-pilot/references/capricho-43-met.jpg",
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-378a2e03-1a63-420e-80b5-9d59bcdc67e0.png",
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-9eeb1207-76c6-49d8-9d6b-5c515ad568dd.png",
+        "output/illustrations/revised/issue-16/plate-03.png"
+      ],
+      "generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-ccb7c3f9-76d7-436c-bf9d-3ae664fb50dc.png",
+      "selected_generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-8504d0ba-4698-4900-925d-5798947ed97d.png",
+      "review_note": "Pale-jacketed Prime passes wired microphone to Bixha; cable and camera visible, dark-jacketed Q seated beside Chano. Edit corrects donor identity.",
+      "approval_scope": "visually reviewed native image, reading page and A3 side; revision proof only, not final artistic approval",
+      "edits": [
+        {
+          "reason": "Identify the microphone donor as pale-jacketed Prime, not Q.",
+          "prompt": "Use case: precise-object-edit. Image1 edit target; image2 reference for PRIME identity ONLY (robot on LEFT wearing PALE jacket). In image1 change the robot handing Bixha the wired microphone into PRIME: clean lighter Q-family articulated body, SHORT PALE WHITE jacket with LONG sleeves, undamaged shoulder, NO knee brace. Match Prime from image2. Preserve microphone transfer, cable, Bixha speaking, audience, interpreter, camera and Chano. Q is a different robot: add him seated quietly beside Chano at far right, only head/upper body visible, DARK jacket and same mechanical head family; he is NOT speaking or holding microphone. Both mechanical mouths retained. Keep Goya aquatint, no photographic rendering, no new signs/lettering. Preserve everything else.",
+          "references": [
+            "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-ccb7c3f9-76d7-436c-bf9d-3ae664fb50dc.png",
+            "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-378a2e03-1a63-420e-80b5-9d59bcdc67e0.png"
+          ],
+          "generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-8504d0ba-4698-4900-925d-5798947ed97d.png"
+        }
+      ]
     },
     {
       "plate_id": "issue-17-plate-05",
@@ -150,10 +285,27 @@
         63
       ],
       "asset": "output/illustrations/revised/issue-17/plate-05.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The Missing Paragraph",
       "scene_brief": "Q lays two printouts beside each other; the same page position has different amounts of text. Bixha and the woman collecting spare copies compare them with a creased handout taken from a bag. This is a useful version check, not a magical discovery of Castalia's still-missing consultation annex. No readable private contract details or triumphant signature ceremony.",
-      "scene_anchor": "He laid the two printouts beside each other"
+      "scene_anchor": "He laid the two printouts beside each other",
+      "asset_sha256": "053be58a1436dfc0a0ca3c646c5cfcb0e54c51469be77404a1c00be470f9fbbe",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in image_gen; no CLI/API fallback",
+      "generation_prompt": "Use case: illustration-story. Create one full-page portrait comic plate for The Ingenious Machine, contemporary near-future Mexico. Style: Goya's Los Caprichos ETCHING AND AQUATINT, hand-drawn thin broken contours, abbreviated expressive faces, broad flat granular black shadow masses, strong untouched WHITE reserves and compressed space. Image 1 is the actual Goya STYLE reference only: do not copy its sleeper, monsters, lettering, frame or aged paper. Remaining images are CHARACTER IDENTITY references only, never photographic finish or existing poses. Avoid photographic realism, cinematic depth, glossy 3D metal, blanket crosshatching, uniform vector outlines, sepia, cream ink, paper-aging, borders, captions, speech bubbles, watermark. Neutral black and gray ink on pure white. Contemporary clothing; no knights, weapons or supernatural allegory. Portrait 2:3 full-bleed composition; important hands and faces clear of bottom 5% for separately typeset caption. Draw the scene newly, not a texture filter on a photograph.\nScene: at a table after the Isthmus meeting Q places TWO printouts side by side. One paragraph is visibly longer than the equivalent paragraph on the other page, drawn as short unreadable lines NOT actual text. Bixha, the middle-aged sturdy woman with low dark bun in reference3 who holds megaphone (do NOT copy megaphone here), plain short-sleeve blouse and dark trousers, leans to compare the pages. Another adult woman collecting spare copies takes a creased handout from a practical tote bag for comparison. Hands and two versions are focal, heads upperhalf; economical faces as drawn Goya characters NOT photo portraits. Modest folding chairs, exhausted meeting hall. Useful collaboration not triumph; this is a missing paragraph NOT the still-missing archive annex. No signatures, no readable private records, no legalistic text. Q: slim adult-sized embodied intelligence, narrow segmented oval mechanical head, recessed round eyes, concentric circular ear mechanisms, long mechanical neck, small sampling-mouth opening and hinged lower plate (not a blank mask or human lips), question-mark breastplate, short fitted DARK jacket with LONG sleeves, scuffed articulated body and support on his RIGHT knee. Fluent attentive adult gestures, not a naive child.",
+      "generation_references": [
+        "output/illustrations/goya-pilot/references/capricho-43-met.jpg",
+        "output/illustrations/revised/issue-16/plate-03.png",
+        "output/illustrations/revised/issue-08/plate-02.png"
+      ],
+      "generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-9eeb1207-76c6-49d8-9d6b-5c515ad568dd.png",
+      "selected_generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-9eeb1207-76c6-49d8-9d6b-5c515ad568dd.png",
+      "review_note": "Bixha and copy collector compare Q's different-length paragraphs. This is a circulated-version check, not discovery of the still-missing consultation annex.",
+      "approval_scope": "visually reviewed native image, reading page and A3 side; revision proof only, not final artistic approval",
+      "edits": []
     },
     {
       "plate_id": "issue-17-plate-06",
@@ -181,10 +333,43 @@
         81
       ],
       "asset": "output/illustrations/revised/issue-17/plate-06.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Between His Visits",
       "scene_brief": "Bixha remains seated on the emptied stage after reading Q's two-paragraph book draft; Q scrolls back to her invitation and notices how much more space his arrival takes. They share a joke about sending for the protagonist. He asks whether she has time for a question about that morning. Papers and quiet stage chairs, not a public-record mix-up or elementary permission lesson. Q's segmented mechanical mouth is visible; no human smile painted on metal. No Custodian physically present.",
-      "scene_anchor": "Q scrolled back to her invitation."
+      "scene_anchor": "Q scrolled back to her invitation.",
+      "asset_sha256": "36711e0b7e80d66ea1a806b49d1a3d63843bd40ddb30405fa0855641f43dc472",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in image_gen; no CLI/API fallback",
+      "generation_prompt": "Use case: illustration-story. Create one full-page portrait comic plate for The Ingenious Machine, contemporary near-future Mexico. Style: Goya's Los Caprichos ETCHING AND AQUATINT, hand-drawn thin broken contours, abbreviated expressive faces, broad flat granular black shadow masses, strong untouched WHITE reserves and compressed space. Image 1 is the actual Goya STYLE reference only: do not copy its sleeper, monsters, lettering, frame or aged paper. Remaining images are CHARACTER IDENTITY references only, never photographic finish or existing poses. Avoid photographic realism, cinematic depth, glossy 3D metal, blanket crosshatching, uniform vector outlines, sepia, cream ink, paper-aging, borders, captions, speech bubbles, watermark. Neutral black and gray ink on pure white. Contemporary clothing; no knights, weapons or supernatural allegory. Portrait 2:3 full-bleed composition; important hands and faces clear of bottom 5% for separately typeset caption. Draw the scene newly, not a texture filter on a photograph.\nScene: Bixha (same central woman in ref2, sturdy45, dark low bun, plain cotton short sleeve blouse and dark trousers) sits at edge of mostly emptied stage, ankles casual, a few quiet chairs behind. Q stands comfortably beside stage holding a tablet and scrolling back through his two-paragraph book draft, looking up at Bixha with amused attentiveness. Bixha gives him a dry half-smile: she points out people keep living between his visits, and he recognizes that he made her send for the protagonist. Warm shared joke between capable adults, not teacher scolding child. Tablet has just abstract short lines, no literal writing. No Custodian, no Prime, no crowd, no ceremonial documents. Faces, gestures and white page/tablet accents do the work; sparse irregular etched lines not skin pores, dark stage edge a broad aquatint plane. Q: slim adult-sized embodied intelligence, narrow segmented oval mechanical head, recessed round eyes, concentric circular ear mechanisms, long mechanical neck, small sampling-mouth opening and hinged lower plate (not a blank mask or human lips), question-mark breastplate, short fitted DARK jacket with LONG sleeves, scuffed articulated body and support on his RIGHT knee. Fluent attentive adult gestures, not a naive child.",
+      "generation_references": [
+        "output/illustrations/goya-pilot/references/capricho-43-met.jpg",
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-9eeb1207-76c6-49d8-9d6b-5c515ad568dd.png"
+      ],
+      "generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-6e950597-5073-4669-81c6-ada1e77d5381.png",
+      "selected_generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-d809a331-2f9d-4862-abde-69888b7e2cd6.png",
+      "review_note": "Bixha stays on stage edge; Q now sits alongside in chair with explicit external right-knee brace. Kneeling study rejected. Quiet exchange accompanies protagonist joke, not submission.",
+      "approval_scope": "visually reviewed native image, reading page and A3 side; revision proof only, not final artistic approval",
+      "edits": [
+        {
+          "reason": "Replace kneeling pose with seated peer conversation and protect Q's knee.",
+          "prompt": "Use case: precise-object-edit. Image1 edit target. Correct ONLY Q's posture: instead of kneeling on the floor, seat Q comfortably on an ordinary folding chair next to Bixha at the stage edge, at roughly her eye level, both feet resting on floor, right knee supported and not bent sharply or bearing kneeling weight. His tablet rests lightly in his hand/lap. Keep their relaxed conversation, Bixha sitting on stage and dry amused expression, SAME segmented Q head with small mechanical mouth, short dark jacket LONG sleeves, scene, background, light/dark Goya etching/aquatint and white paper. No kneeling, bowing, supplication, chivalry, teacher-child pose, new characters, lettering or border.",
+          "references": [
+            "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-6e950597-5073-4669-81c6-ada1e77d5381.png"
+          ],
+          "generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-a43f1761-8a00-4a87-9954-6f540d0e8ce4.png"
+        },
+        {
+          "reason": "Make the established external right-knee support visible in the seated pose.",
+          "prompt": "Use case: precise-object-edit. Image1 edit target. Add ONLY the established practical external knee support to Q's anatomical RIGHT knee, which is the knee on the VIEWER'S LEFT in this seated image. Two narrow dark straps, one just above and one just below that joint, joined by a small external supporting side rail. It is a repair support distinct from the circular mechanical knee itself. Leave the other leg unbraced. Preserve BOTH feet on floor, comfortable seated chair pose, same robot head and mechanical mouth, long dark sleeves, tablet, Bixha and her gesture, stage, shadows and Goya etched/aquatint style. No other changes, no lettering, no border, no cream paper wash.",
+          "references": [
+            "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-a43f1761-8a00-4a87-9954-6f540d0e8ce4.png"
+          ],
+          "generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-d809a331-2f9d-4862-abde-69888b7e2cd6.png"
+        }
+      ]
     },
     {
       "plate_id": "issue-17-plate-07",
@@ -209,10 +394,27 @@
         95
       ],
       "asset": "output/illustrations/revised/issue-17/plate-07.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Before the Meeting Begins",
       "scene_brief": "In the schoolroom the teacher sets oranges on the table as the lawyer asks whether proceedings have begun. Fan, ordinary classroom calendar and papers; participants gather without identical attitudes or ceremonial staging. Q with his marked comparison is one participant, not head of the assembly. Fruit and hands provide the foreground; do not reuse the earlier Prime market composition.",
-      "scene_anchor": "The teacher hosting them put oranges on the table."
+      "scene_anchor": "The teacher hosting them put oranges on the table.",
+      "asset_sha256": "6a580a2e271a06ddba51b4e70b6cdd7104872ac78133d75c10181dd79a160221",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in image_gen; no CLI/API fallback",
+      "generation_prompt": "Use case: illustration-story. Create one full-page portrait comic plate for The Ingenious Machine, contemporary near-future Mexico. Style: Goya's Los Caprichos ETCHING AND AQUATINT, hand-drawn thin broken contours, abbreviated expressive faces, broad flat granular black shadow masses, strong untouched WHITE reserves and compressed space. Image 1 is the actual Goya STYLE reference only: do not copy its sleeper, monsters, lettering, frame or aged paper. Remaining images are CHARACTER IDENTITY references only, never photographic finish or existing poses. Avoid photographic realism, cinematic depth, glossy 3D metal, blanket crosshatching, uniform vector outlines, sepia, cream ink, paper-aging, borders, captions, speech bubbles, watermark. Neutral black and gray ink on pure white. Contemporary clothing; no knights, weapons or supernatural allegory. Portrait 2:3 full-bleed composition; important hands and faces clear of bottom 5% for separately typeset caption. Draw the scene newly, not a texture filter on a photograph.\nScene: meeting in an ordinary contemporary Isthmus schoolroom. Teacher, woman50 with short curly dark hair, rectangular glasses and plain light cardigan, places a shallow bowl of oranges onto table close foreground, while a middle-aged lawyer in ordinary open-collar shirt asks whether meeting has begun. Dry humor of her offering fruit before deciding. Teacher not solemn, amused skeptical face drawn economically, not photo-real. Around table Bixha (sturdy woman45 low dark bun plain short sleeve blouse, identity woman holding megaphone in reference3 BUT NO megaphone here), Celina (maintenance worker woman40, dark ponytail, plain dark work shirt/trousers, NOT reflective coveralls), and Q seated among others holding marked comparison pages. Q is not chairing or centerhero. Teacher/Celina distinct. Fan high on wall, plain classroom calendar with abstract squares, no readable notices. White reserves around foreground hands and oranges, broad dark behind people, no omnipresent texture. Q: slim adult-sized embodied intelligence, narrow segmented oval mechanical head, recessed round eyes, concentric circular ear mechanisms, long mechanical neck, small sampling-mouth opening and hinged lower plate (not a blank mask or human lips), question-mark breastplate, short fitted DARK jacket with LONG sleeves, scuffed articulated body and support on his RIGHT knee. Fluent attentive adult gestures, not a naive child.",
+      "generation_references": [
+        "output/illustrations/goya-pilot/references/capricho-43-met.jpg",
+        "output/illustrations/revised/issue-16/plate-03.png",
+        "output/illustrations/revised/issue-08/plate-02.png"
+      ],
+      "generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-83330243-8d06-4364-965f-5fcde2e4a57a.png",
+      "selected_generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-83330243-8d06-4364-965f-5fcde2e4a57a.png",
+      "review_note": "Teacher offers oranges; lawyer gestures, Bixha and ponytailed Celina distinct. Q holds comparison as participant, not chair. Bodies/hands and fruit remain clear.",
+      "approval_scope": "visually reviewed native image, reading page and A3 side; revision proof only, not final artistic approval",
+      "edits": []
     },
     {
       "plate_id": "issue-17-plate-08",
@@ -232,10 +434,27 @@
         104
       ],
       "asset": "output/illustrations/revised/issue-17/plate-08.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Short Chalk, Long Meeting",
       "scene_brief": "Chano writes two possible inspection times on the schoolroom blackboard with a shortening stub of chalk, his line sloping downward. Celina looks toward the times while Teresa joins by phone and the teacher jokes with Chano. No certified paid release, no restored governorship or complete agreement. Distinct from the table-and-oranges plate.",
-      "scene_anchor": "Chano wrote the possibilities on the blackboard."
+      "scene_anchor": "Chano wrote the possibilities on the blackboard.",
+      "asset_sha256": "fe2b511a06d11689fb9b3c1223ddace7311c70e6cb0d94305f43f7e42cce9f20",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in image_gen; no CLI/API fallback",
+      "generation_prompt": "Use case: illustration-story. Create one full-page portrait comic plate for The Ingenious Machine, contemporary near-future Mexico. Style: Goya's Los Caprichos ETCHING AND AQUATINT, hand-drawn thin broken contours, abbreviated expressive faces, broad flat granular black shadow masses, strong untouched WHITE reserves and compressed space. Image 1 is the actual Goya STYLE reference only: do not copy its sleeper, monsters, lettering, frame or aged paper. Remaining images are CHARACTER IDENTITY references only, never photographic finish or existing poses. Avoid photographic realism, cinematic depth, glossy 3D metal, blanket crosshatching, uniform vector outlines, sepia, cream ink, paper-aging, borders, captions, speech bubbles, watermark. Neutral black and gray ink on pure white. Contemporary clothing; no knights, weapons or supernatural allegory. Portrait 2:3 full-bleed composition; important hands and faces clear of bottom 5% for separately typeset caption. Draw the scene newly, not a texture filter on a photograph.\nScene: same schoolroom as ref2 but NEW viewpoint toward blackboard. CHANO (stocky middle-aged moustached wavy dark hair man in ref3, plain rolled sleeve workshirt) writes two short rows of possible inspection appointment times with a tiny STUB of CHALK held close to board; writing slopes downward. Marks suggest two rows without readable exact dates. Teacher (ref2 foreground LEFT, short curly hair, rectangularglasses, light cardigan) beside him smiles at his complaint that governing a town did not get him longer chalk. CELINA (ref2 seated far RIGHT, woman40 dark ponytail, plain dark workshirt) looks toward board, NOT Bixha in patterned blouse. On small table a phone on speaker represents Teresa's REMOTE contribution; Teresa is NOT physically present and don't draw face on screen. A few orange peels and papers show meeting continuing. Do not add Q merely for continuity; he can be outside frame. Chano doesn't regain governorship, no paid leave granted. Economy of Goya: faces drawn with few expressive strokes; blackboard flat granular black against pure white chalk and shirt. No photographic finish.",
+      "generation_references": [
+        "output/illustrations/goya-pilot/references/capricho-43-met.jpg",
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-83330243-8d06-4364-965f-5fcde2e4a57a.png",
+        "output/illustrations/revised/issue-16/plate-03.png"
+      ],
+      "generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-8522a6e3-54a5-4913-bf1c-21738b2ae959.png",
+      "selected_generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-8522a6e3-54a5-4913-bf1c-21738b2ae959.png",
+      "review_note": "Chano's short chalk and two approximate appointment rows; teacher repeats established face/cardigan, Celina listens, Teresa remains speakerphone-only. No paid release or completed settlement asserted.",
+      "approval_scope": "visually reviewed native image, reading page and A3 side; revision proof only, not final artistic approval",
+      "edits": []
     },
     {
       "plate_id": "issue-17-plate-09",
@@ -259,10 +478,43 @@
         118
       ],
       "asset": "output/illustrations/revised/issue-17/plate-09.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The Truck Comes",
       "scene_brief": "At Celina's mother's house, the mother steps back toward her gate so the inspector can photograph the damaged roadside. His inspection truck and drawing are nearby; ordinary working daylight in the Isthmus. Celina remains at her job and has participated by telephone, not present in the scene. No Q, no completed resurfacing, no photograph of a political victory. The inspection happens while the repair date remains unanswered.",
-      "scene_anchor": "She moved back to her gate."
+      "scene_anchor": "She moved back to her gate.",
+      "asset_sha256": "a71d17ccb4c306ad54b8e706bf3f44cb75d493d4505c2ded3bb8f500e5d4d1f5",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in image_gen; no CLI/API fallback",
+      "generation_prompt": "Use case: illustration-story. Create one full-page portrait comic plate for The Ingenious Machine, contemporary near-future Mexico. Style: Goya's Los Caprichos ETCHING AND AQUATINT, hand-drawn thin broken contours, abbreviated expressive faces, broad flat granular black shadow masses, strong untouched WHITE reserves and compressed space. Image 1 is the actual Goya STYLE reference only: do not copy its sleeper, monsters, lettering, frame or aged paper. Remaining images are CHARACTER IDENTITY references only, never photographic finish or existing poses. Avoid photographic realism, cinematic depth, glossy 3D metal, blanket crosshatching, uniform vector outlines, sepia, cream ink, paper-aging, borders, captions, speech bubbles, watermark. Neutral black and gray ink on pure white. Contemporary clothing; no knights, weapons or supernatural allegory. Portrait 2:3 full-bleed composition; important hands and faces clear of bottom 5% for separately typeset caption. Draw the scene newly, not a texture filter on a photograph.\nScene: an ordinary contemporary Isthmus roadside inspection, low flat landscape. Celina's mother, an older Mexican woman with gray hair tied back and a plain everyday blouse/skirt, steps BACK from the damaged roadside to her modest house gate, holding her phone after a call. A practical inspector in work shirt trousers and ordinary safety vest leans to take a photograph of the broken drainage edge using his phone. An inspection pickup truck and a folded engineering drawing resting on its open tailgate are nearby. The road is still damaged: inspection has happened but repair date unanswered. Convey the dry humor of making room for a photograph of a hole, not a victory or disaster spectacle. Two humans only, NO Q, NO Celina physically present, no crowd, no machinery repairing road, no signed agreement. Foreground broken roadside contour, mother at gate, inspector angled toward damage; broad dark gate and light ground, sharply drawn unidealized faces, not a photographic documentary.",
+      "generation_references": [
+        "output/illustrations/goya-pilot/references/capricho-43-met.jpg"
+      ],
+      "generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-fcdd238e-f0e0-47fb-8a2e-d72f8e15581f.png",
+      "selected_generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-7a83e640-993e-482c-94ff-7b166d2184f2.png",
+      "review_note": "Older mother at gate with phone, inspector photographs damaged drainage edge beside pickup and drawing. Neither Celina nor Q present. Still no repair date. Two edits simplify photo finish and remove antique border/wash.",
+      "approval_scope": "visually reviewed native image, reading page and A3 side; revision proof only, not final artistic approval",
+      "edits": [
+        {
+          "reason": "Replace photographic texture with drawn Goya aquatint.",
+          "prompt": "Use case: style-transfer. Image1 edit target; image2 actual Goya style reference. Redraw the same roadside inspection as a genuinely HAND-DRAWN Goya Los Caprichos etching and aquatint, not a photo filtered into dots. Keep composition, older mother at gate with phone, inspector bending to photograph damaged road, pickup with drawing, no other people. Radically SIMPLIFY road and foliage into broad light and dark tonal planes. Use sparse broken thin lines; angular expressively drawn faces and hands, not realistic skin. Goya's compressed space and broad BLACK aquatint silhouette on mother/gate and inspector trousers. Paper reserves pure WHITE, neutralgray, no cream or sepia. No monsters or period costume. Keep still-damaged road and absence of repair machinery. Same portrait frame, no lettering/border/watermark.",
+          "references": [
+            "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-fcdd238e-f0e0-47fb-8a2e-d72f8e15581f.png",
+            "output/illustrations/goya-pilot/references/capricho-43-met.jpg"
+          ],
+          "generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-dae04a49-acea-40f2-a5da-9aeb0a88a4d5.png"
+        },
+        {
+          "reason": "Remove added antique paper tint and border; retain corrected drawing.",
+          "prompt": "Use case: precise-object-edit. Image1 is the edit target. Preserve the actual scene, figures, poses, thin etched outlines and broad aquatint shadows. Change ONLY the background substrate and framing: remove the aged cream/beige paper wash and plate-border lines completely. Paper reserves and highlights must be pure WHITE (#FFFFFF), with neutral black and gray drawing, no warm tint, stains or paper aging. Extend actual scene artwork to the canvas edges as needed so there is NO decorative border or inset frame. Do not brighten real shadows into blank space. Keep full portrait composition, faces and hand actions unchanged.  No captions or lettering.",
+          "references": [
+            "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-dae04a49-acea-40f2-a5da-9aeb0a88a4d5.png"
+          ],
+          "generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-7a83e640-993e-482c-94ff-7b166d2184f2.png"
+        }
+      ]
     }
   ],
   "layout_constraints": {
@@ -299,5 +551,129 @@
     "illustration_gate_rejects_planned_art": true,
     "approved_plates": 0,
     "print_job_sent": false
-  }
+  },
+  "style_reference": "output/illustrations/goya-pilot/references/capricho-43-met.jpg",
+  "style_limitations": "More drawn tonal hierarchy than the rejected photographic studies, especially in the entrance and road redraws; some faces, architecture and metal retain more naturalistic modeling and surface detail than Goya's economical originals. Native RGB assets may retain warmth; PDF conversion will remove chroma, not erase legitimate scene tones. Native 1024x1536 art is about 150 dpi at trim. Whole-set final style and print review remain.",
+  "generation_mode": "built-in image_gen; no CLI/API fallback",
+  "reference_hashes": [
+    {
+      "path": "output/illustrations/goya-pilot/references/capricho-43-met.jpg",
+      "sha256": "122aa775d975c4aa8d96e7ecbbfe02626c36c12f42cb4bfafbfc59dbafc52fa8"
+    },
+    {
+      "path": "output/illustrations/revised/issue-16/plate-03.png",
+      "sha256": "dd467ae6bca43336d834b0b5d0316e85d42e96551f4eb2fa89b14e2c3f83f590"
+    },
+    {
+      "path": "output/illustrations/revised/issue-08/plate-02.png",
+      "sha256": "76608462516f3c40703726528f144fd492a45052ea4577c3b1e7dfbe36c43851"
+    },
+    {
+      "path": "output/illustrations/revised/issue-15/plate-07.png",
+      "sha256": "d1469064e50399132b1954b0fce6b7a433a756316f87a1236defc365dcecf8b8"
+    },
+    {
+      "path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-378a2e03-1a63-420e-80b5-9d59bcdc67e0.png",
+      "sha256": "ffdcf3db255655f64a637d94fae09d84f0c396624250536d6d6c29df756f328b"
+    },
+    {
+      "path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-9eeb1207-76c6-49d8-9d6b-5c515ad568dd.png",
+      "sha256": "053be58a1436dfc0a0ca3c646c5cfcb0e54c51469be77404a1c00be470f9fbbe"
+    },
+    {
+      "path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-83330243-8d06-4364-965f-5fcde2e4a57a.png",
+      "sha256": "6a580a2e271a06ddba51b4e70b6cdd7104872ac78133d75c10181dd79a160221"
+    },
+    {
+      "path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-5cc05625-c310-4678-a2d1-b8092363f1b9.png",
+      "sha256": "9d2de70dd67644da9f97e635d42047a2802d6c3a988407c1b9573989b92b7d75"
+    },
+    {
+      "path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-c1184f1d-68ca-4a42-a59f-a69c9393e70a.png",
+      "sha256": "d65718dec8de0a2b3d2f7fa2050379f2267698122ec45af81a7a4b80419dc996"
+    },
+    {
+      "path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-fcdd238e-f0e0-47fb-8a2e-d72f8e15581f.png",
+      "sha256": "2a8a5924050e8ff5e35bcf047e69c8223d54c27a16ffb90a14b0235127cdb086"
+    },
+    {
+      "path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-0d9284ed-efd4-4ac3-9a17-a2448ad6e721.png",
+      "sha256": "995886e55f4d13ee989f0420838f2fc1f2cdbf0ec5ca0a750634653713f6284c"
+    },
+    {
+      "path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-dae04a49-acea-40f2-a5da-9aeb0a88a4d5.png",
+      "sha256": "96c27aa94522b411a42388d74885101f13e93f6839d37233429a8318afe57c4e"
+    },
+    {
+      "path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-6e950597-5073-4669-81c6-ada1e77d5381.png",
+      "sha256": "41985c05464e0074dbcba381a7c6ece94216ff15f5135b5e52fdac63ae9da0f8"
+    },
+    {
+      "path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-ccb7c3f9-76d7-436c-bf9d-3ae664fb50dc.png",
+      "sha256": "039ee3f2b3aa23aa666619cdb7712b6bc2173ec8064e6995b6a71d5d5ac6221f"
+    },
+    {
+      "path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-b19dda8c-32ea-4439-8f44-3730d952ae14.png",
+      "sha256": "fc272a62ddb25636fb95a82142b6e3031e59c4298bb5fd1cf3a4abaa4f98ffba"
+    },
+    {
+      "path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-a43f1761-8a00-4a87-9954-6f540d0e8ce4.png",
+      "sha256": "c9a4d1e65ff161a2eafbbb885310c76bd203d5375ab8b2ab16125f3f3e4f18c0"
+    }
+  ],
+  "proof_outputs": {
+    "reading": {
+      "path": "output/pdf/ingenious-issue-17-revised-en-bw.pdf",
+      "sha256": "9f46e40fe3ecb29d243dddfa62c92019c7df3d5ca37b88a186c068a80b270786"
+    },
+    "a3": {
+      "path": "output/pdf/ingenious-issue-17-revised-en-bw-a3.pdf",
+      "sha256": "cf4657a7ee7b50a37f1fbeb75568f96bc845b4d1f4606740fac0a3a3557f68dc"
+    }
+  },
+  "verification": {
+    "result": "pass",
+    "baseline_commit": "ea4387eb",
+    "words_in_exact_source_order": 2728,
+    "reading_pages": 20,
+    "a3_sides": 10,
+    "duplex_sheets": 5,
+    "unique_native_plates": 10,
+    "actual_a3_slots_checked": 20,
+    "all_chapters_unchanged": 22,
+    "all_facing_mappings_unchanged": 22,
+    "previous_issue_pdfs_unchanged": 32,
+    "effective_dpi": [
+      149.9,
+      149.9,
+      149.9,
+      149.9,
+      149.9,
+      149.9,
+      149.9,
+      149.9,
+      149.9,
+      149.9
+    ],
+    "embedded_font_subsets": {
+      "reading": 5,
+      "a3": 6
+    },
+    "text_background": "unpainted",
+    "lossless_DeviceGray_images": 10,
+    "print_job_sent": false,
+    "a_plus_certified": false,
+    "pdf_hashes": {
+      "reading": "9f46e40fe3ecb29d243dddfa62c92019c7df3d5ca37b88a186c068a80b270786",
+      "a3": "cf4657a7ee7b50a37f1fbeb75568f96bc845b4d1f4606740fac0a3a3557f68dc"
+    },
+    "visual_review": {
+      "native_images": 10,
+      "reading_pages": 20,
+      "a3_sides": 10
+    },
+    "outline_unchanged": true,
+    "review_record": "novel/development/ISSUE_17_PRODUCTION.md"
+  },
+  "revision_verification_scope": "Historical text-revision checkpoint from 7e930667; its planned-art status is superseded by the production verification below."
 }

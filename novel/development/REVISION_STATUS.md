@@ -1,5 +1,23 @@
 # Motivation revision: working record
 
+## Latest production checkpoint: Issue Seventeen
+
+Issue Seventeen now has ten unique scene-bound plates, twenty reading pages and
+ten A3 sides for five nested duplex sheets. All 2,728 words flow continuously at
+Georgia 13.25/18.770833. The selected images, every reading page and every A3 side
+were visually reviewed; exact source order, twenty actual imposed positions,
+embedded fonts and native lossless grayscale passed verification. Nine targeted
+image edits corrected style/substrate, Q's sleeve and knee-supported seated pose,
+and Prime's distinct identity. See `ISSUE_17_PRODUCTION.md` and its full manifest.
+
+All 22 chapter texts and facing mappings, the outline and 32 earlier issue PDFs
+remain unchanged from `ea4387eb`. Left-aligned columns remain after the saved
+justification comparison. Native art is about 150 dpi and some faces/surfaces
+still need a stricter final Goya-style pass; these are revision proofs, not
+press masters or A+ certification. No new inference/faculty review or printing
+occurred. Issue Fourteen replacement, earlier style audit, Issues 18-22 production,
+broader literary revision and Spanish synchronization remain. The goal is active.
+
 ## Latest voice checkpoint: Chapter Seventeen
 
 The return meeting no longer implies that Q crossed the visitor boundary:
