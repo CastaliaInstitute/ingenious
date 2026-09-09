@@ -1,30 +1,49 @@
 {
   "issue": 18,
-  "revision": "2026-09-09-training-handoff-and-memory",
+  "revision": "2026-09-09-goya-illustrated-proof",
   "source": "novel/THE_INGENIOUS_MACHINE.md",
   "chapter_sha256": "c5515236c28744ed227eb0584d363d88e3b642f9899735c750a0dcd285ce6fe5",
   "page_count": 24,
   "text_font": "Georgia 13.8/19.5500 pt",
   "plate_count_including_cover": 12,
-  "status": "revised source and exact-facing plan; twenty-four-page internal layout; twelve illustrations remain planned",
-  "character_reference": "output/illustrations/revised/issue-01/cover.png",
-  "chano_reference": "output/illustrations/revised/issue-03/plate-06.png",
+  "status": "complete illustrated revision proof; twelve selected native plates, all twenty-four reading pages and twelve A3 sides visually reviewed",
+  "character_reference": "output/illustrations/revised/issue-16/plate-03.png",
+  "chano_reference": "output/illustrations/revised/issue-16/plate-03.png",
   "lucia_reference": "output/illustrations/revised/issue-03/plate-04.png",
   "regional_design_sources": [
     "output/illustrations/revised/issue-07/manifest.json",
     "output/illustrations/revised/issue-09/manifest.json"
   ],
-  "character_design": "Q retains approved narrow segmented head, round ear mechanisms, exposed neck, question-mark breastplate, short fitted dark jacket with long sleeves with repaired key pocket and supported knee. Chano and Lucía follow approved references. Ana is the appointed keeper, former teacher and radio operator; Marisol is the separate adviser. Keep Noemí consistent with the earlier calendar-event plan; Yatzil is a separate programming colleague. Darío is a school student, not a little child or an adult patient. Custodian if shown in a call is the tall older man with long gray hair tied back, glasses and white work shirt; he does not travel with this party. Q's lower face includes a small mechanical sampling mouth; do not simplify it into a blank mask. Use the corrected Goya pilot for Q-family identity, not photographic surface detail. Q wears a short fitted dark long-sleeved jacket, not a long coat, and has a small mechanical sampling mouth with a hinged lower faceplate, not a blank mask. His right-knee support remains. The Custodian is remote in the dry-room writing scene, never physically present in Chiapas.",
-  "art_direction": "Neutral monochrome Goya-inspired etching and aquatint with economical drawn contours and broad tonal masses, pure white highlights and unpainted paper, no sepia or cream ink background. Full bleed at comic trim with separate typeset caption margin. Nine exact-facing scenes and a separate cover. Distinguish rainy Chiapas from the later Yucatán radio station. No anonymous timeless Maya imagery, no magical key or decoded apocalypse, and no staged Q handover of a module already returned by another courier. Private testimony and identifying removal-request material stay unreadable. Governing reference: novel/development/GOYA_ART_DIRECTION.md. Earlier plates guide identity only; do not imitate their photographic rendering. Follow novel/development/GOYA_ART_DIRECTION.md: thin broken etched contours, broad aquatint tonal masses and economical expressive drawing. Earlier photographic cast images guide identity only, not finish; no sepia, antique paper wash or decorative border.",
-  "approval_scope": "Source-bound illustration plan only; not generated or approved art. Internal typography proof is not a finished issue.",
+  "character_design": "Q retains approved narrow segmented head, round ear mechanisms, exposed neck, question-mark breastplate, short fitted dark jacket with long sleeves with repaired key pocket and supported knee. Chano and Lucía follow approved references. Ana is the appointed keeper, former teacher and radio operator; Marisol is the separate adviser. Keep Noemí consistent with the earlier calendar-event plan; Yatzil is a separate programming colleague. Darío is a school student, not a little child or an adult patient. Custodian if shown in a call is the tall older man with long gray hair tied back, glasses and white work shirt; he does not travel with this party. Q's lower face includes a small mechanical sampling mouth; do not simplify it into a blank mask. Use the corrected Goya pilot for Q-family identity, not photographic surface detail. Q wears a short fitted dark long-sleeved jacket, not a long coat, and has a small mechanical sampling mouth with a hinged lower faceplate, not a blank mask. His right-knee support remains. The Custodian is remote in the dry-room writing scene, never physically present in Chiapas. Ana: about fifty, broad face, gray-streaked dark braid, no glasses, light collared shirt. Marisol: about forty-five, low dark bun, square glasses, dark cardigan/light blouse. Noemí: about forty, dark tied-back hair, rounded face, patterned short-sleeve cotton blouse. Yatzil: about thirty, short dark curls, thin round glasses, plain dark T-shirt. Darío: teen, short dark hair, plain T-shirt/trousers. Tour guide: short straight bob, polo and lanyard. Mask child: chin-length hair, striped T-shirt, flat spotted paper jaguar mask; mother low ponytail/dark T-shirt and ordinary oval pendant.",
+  "art_direction": "Neutral monochrome Goya-inspired etching and aquatint with economical drawn contours and broad tonal masses, pure white highlights and unpainted paper, no sepia or cream ink background. Full bleed at comic trim with separate typeset caption margin. Eleven exact-facing scenes and a separate cover. Distinguish rainy Chiapas from the later Yucatán radio station. No anonymous timeless Maya imagery, no magical key or decoded apocalypse, and no staged Q handover of a module already returned by another courier. Private testimony and identifying removal-request material stay unreadable. Governing reference: novel/development/GOYA_ART_DIRECTION.md. Earlier plates guide identity only; do not imitate their photographic rendering. Follow novel/development/GOYA_ART_DIRECTION.md: thin broken etched contours, broad aquatint tonal masses and economical expressive drawing. Earlier photographic cast images guide identity only, not finish; no sepia, antique paper wash or decorative border.",
+  "approval_scope": "Scene/cast and visual layout review for illustrated revision proof. Not final artistic approval, A+ certification or press master.",
   "plates": [
     {
       "plate_id": "issue-18-cover",
       "page": 1,
       "asset": "output/illustrations/revised/issue-18/cover.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The Rebel Without a Corpus",
-      "scene_brief": "Wide view of the temporary Chiapas office and sheltered guest-room entrance in rain: Q among people waiting, school recording equipment set aside and water falling beyond the roof. A place of work and company rather than a secret fortress or heroic deposit delivery. The title's missing corpus is not a missing intellect. Keep the large establishing composition distinct from the close Darío-and-shoes interior plate; leave space for separately typeset title."
+      "scene_brief": "Wide view of the temporary Chiapas office and sheltered guest-room entrance in rain: Q among people waiting, school recording equipment set aside and water falling beyond the roof. A place of work and company rather than a secret fortress or heroic deposit delivery. The title's missing corpus is not a missing intellect. Keep the large establishing composition distinct from the close Darío-and-shoes interior plate; leave space for separately typeset title.",
+      "asset_sha256": "22a64d9c32daf0eb34b367220b55aef4c93fbebf964ec512f52c61545a0192fb",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in image_gen; no CLI/API fallback",
+      "generation_prompt": "Use case: illustration-story. New full-bleed portrait 2:3 plate for The Ingenious Machine. Goya's Los Caprichos ETCHING AND AQUATINT: thin broken economical contours, broad flat granular dark masses, compressed space and expressive unidealized gesture. Faces DRAWN with sparse marks, NOT photographic faces covered by hatch. No cinematic lighting, 3D render, skin pores, uniformly meticulous engraving, heavy vector outlines. Neutral BLACK/GRAY ink and PURE WHITE reserves; no antique paper tint, sepia, decorative border, lettering or watermark. Contemporary Mexico, ordinary clothes and working spaces, no chivalric costume or supernatural additions. Essential faces and hands above bottom 6% (caption added separately).\nInput1 STYLE ONLY actual Goya print: borrow graphic language, NOT its animals, sleeping figure, antique scan paper or border. Input2 Q/Chano IDENTITY ONLY, NOT its rendering or composition.\nQ is an eloquent, competent adult embodied intelligence: slim articulated body, narrow segmented oval metal head, recessed round eyes, concentric circular ears, long mechanical neck. Small MECHANICAL SAMPLING MOUTH opening with hinged lower faceplate, not blank mask. Question-mark breastplate. SHORT fitted DARK jacket with LONG sleeves fully reaching wrists, not rolled sleeves or long coat. External support on anatomical RIGHT knee where visible. Non-shiny reduced mechanical detail. Chano when specified: stocky middle-aged Mexican man, wavy dark hair, thick mustache, light rolled-sleeve work shirt, trousers. Only draw people requested in scene.\n\nMake whites literally RGB255,255,255, no antique page color. FACES must be sparse expressive DRAWINGS; broad shadow masses, no photo texture.\nScene: Wide view of the temporary Chiapas office and sheltered guest-room entrance in rain: Q among people waiting, school recording equipment set aside and water falling beyond the roof. A place of work and company rather than a secret fortress or heroic deposit delivery. The title's missing corpus is not a missing intellect. Keep the large establishing composition distinct from the close Darío-and-shoes interior plate; leave space for separately typeset title.\nWide establishing view from covered entrance into courtyard beyond rainy eaves, school students waiting talking among themselves, small recorder and microphones set aside on shelf. Q tall narrow segmented head, short jacket, supported anatomical right knee, standing companionably with Chano near guest-room doorway; not center-stage. Small figures mostly lower two-thirds. Top 23 percent WHITE plain plaster wall reserved for separately typeset title, no markings there. Contemporary rural Chiapas, no colonial spectacle, no occult archive, no boxes handed over. Do NOT repeat close shoes scene.",
+      "generation_references": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/goya-pilot/references/capricho-43-met.jpg",
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-9f32091f-a48f-4aa7-a6e9-86db4287633b.png"
+      ],
+      "generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-af6a7ca8-c5ad-4239-9efb-bd6cc697f823.png",
+      "selected_generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-af6a7ca8-c5ad-4239-9efb-bd6cc697f823.png",
+      "review_note": "Working shelter, Q and Chano among waiting students; clear white title reserve. No staged module handover.",
+      "approval_scope": "Native image, reading page and imposed A3 side visually reviewed for revision proof; final artistic and press approval pending",
+      "edits": [],
+      "title_lines": [
+        "The Ingenious Machine"
+      ]
     },
     {
       "plate_id": "issue-18-plate-01",
@@ -43,10 +62,35 @@
         8
       ],
       "asset": "output/illustrations/revised/issue-18/plate-01.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The Price of the Rain",
       "scene_brief": "Inside the roadside inn after the hired driver has stopped for poor visibility: Q reallocates the optional travel budget while Chano watches, rain whitening the window beyond. A damp short dark long-sleeved jacket, supported knee and modest lodging details show the cost of a sensible stop. No reckless drive through a torrent, no seized module in their baggage and no new arrest.",
-      "scene_anchor": "Q moved money from the optional part of the itinerary"
+      "scene_anchor": "Q moved money from the optional part of the itinerary",
+      "asset_sha256": "6afbc095baf2ec19ed4a1ab03e380820643b7e0edc8ba0b32f494728f732bdcb",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in image_gen; no CLI/API fallback",
+      "generation_prompt": "Use case: illustration-story. New full-bleed portrait 2:3 plate for The Ingenious Machine. Goya's Los Caprichos ETCHING AND AQUATINT: thin broken economical contours, broad flat granular dark masses, compressed space and expressive unidealized gesture. Faces DRAWN with sparse marks, NOT photographic faces covered by hatch. No cinematic lighting, 3D render, skin pores, uniformly meticulous engraving, heavy vector outlines. Neutral BLACK/GRAY ink and PURE WHITE reserves; no antique paper tint, sepia, decorative border, lettering or watermark. Contemporary Mexico, ordinary clothes and working spaces, no chivalric costume or supernatural additions. Essential faces and hands above bottom 6% (caption added separately).\nInput1 STYLE ONLY actual Goya print: borrow graphic language, NOT its animals, sleeping figure, antique scan paper or border. Input2 Q/Chano IDENTITY ONLY, NOT its rendering or composition.\nQ is an eloquent, competent adult embodied intelligence: slim articulated body, narrow segmented oval metal head, recessed round eyes, concentric circular ears, long mechanical neck. Small MECHANICAL SAMPLING MOUTH opening with hinged lower faceplate, not blank mask. Question-mark breastplate. SHORT fitted DARK jacket with LONG sleeves fully reaching wrists, not rolled sleeves or long coat. External support on anatomical RIGHT knee where visible. Non-shiny reduced mechanical detail. Chano when specified: stocky middle-aged Mexican man, wavy dark hair, thick mustache, light rolled-sleeve work shirt, trousers. Only draw people requested in scene.\n\nScene: Inside the roadside inn after the hired driver has stopped for poor visibility: Q reallocates the optional travel budget while Chano watches, rain whitening the window beyond. A damp short dark long-sleeved jacket, supported knee and modest lodging details show the cost of a sensible stop. No reckless drive through a torrent, no seized module in their baggage and no new arrest.\nTwo-person composition, Q seated at inn table consulting small itinerary on phone, Chano leaning toward rainy window, travel bag by chair. Q right knee visible in lower middle. No readable budget amounts.",
+      "generation_references": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/goya-pilot/references/capricho-43-met.jpg",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-16/plate-03.png"
+      ],
+      "generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-c5f8def0-b68b-43aa-b242-2457ba2950a8.png",
+      "selected_generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-9f32091f-a48f-4aa7-a6e9-86db4287633b.png",
+      "review_note": "Q reallocates travel budget at inn; external supported knee restored. Chano watches rain, no reckless driving.",
+      "approval_scope": "Native image, reading page and imposed A3 side visually reviewed for revision proof; final artistic and press approval pending",
+      "edits": [
+        {
+          "prompt": "Use case: style-transfer. Image1 EDIT TARGET; image2 STYLE ONLY Goya etching/aquatint. Redraw image1 decisively in Goya's economical hand-drawn graphic language, not photorealism under an etching filter. Preserve exact characters, identities, scene, composition, gestures, Q small hinged mechanical mouth, short dark LONG sleeved jacket. Render faces in a handful of expressive broken lines, simplify hair into masses, eliminate photographic facial shading, fabric weave, room textures and hundreds of rivets. Broad flat BLACK aquatint shadow shapes, sparse thin etched contours, very limited midgray. WHITE areas must be literal neutral white RGB255255255, no gray/cream/sepia paper tint, stains, plate border or white margin. No owls/donkeys/monsters, no new figures or historical costumes. Full bleed portrait 2:3. Add the established external RIGHT-knee support strapped across visible knee and immediately above/below it; preserve seated pose and hands using phone.",
+          "references": [
+            "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-c5f8def0-b68b-43aa-b242-2457ba2950a8.png",
+            "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/goya-pilot/references/capricho-43-met.jpg"
+          ],
+          "generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-9f32091f-a48f-4aa7-a6e9-86db4287633b.png"
+        }
+      ]
     },
     {
       "plate_id": "issue-18-plate-02",
@@ -68,10 +112,34 @@
         19
       ],
       "asset": "output/illustrations/revised/issue-18/plate-02.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The Better Wrong Song",
       "scene_anchor": "The driver asked for the title of the wrong song.",
-      "scene_brief": "At the roadside check beside a feed truck, Q writes the title of the song on a small scrap for the driver, who has preferred the mistaken match. Feed sacks and waiting travel party in the background; papers have been returned, not an arrest. Contemporary driver and Q share ordinary enjoyment. No printed lyric quotations or invented song title; no heroic border confrontation."
+      "scene_brief": "At the roadside check beside a feed truck, Q writes the title of the song on a small scrap for the driver, who has preferred the mistaken match. Feed sacks and waiting travel party in the background; papers have been returned, not an arrest. Contemporary driver and Q share ordinary enjoyment. No printed lyric quotations or invented song title; no heroic border confrontation.",
+      "asset_sha256": "b6f0415520b2be005e58f4de8993a6145cb85ae68eef84d9b42bd1d4d69d49b2",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in image_gen; no CLI/API fallback",
+      "generation_prompt": "Use case: illustration-story. New full-bleed portrait 2:3 plate for The Ingenious Machine. Goya's Los Caprichos ETCHING AND AQUATINT: thin broken economical contours, broad flat granular dark masses, compressed space and expressive unidealized gesture. Faces DRAWN with sparse marks, NOT photographic faces covered by hatch. No cinematic lighting, 3D render, skin pores, uniformly meticulous engraving, heavy vector outlines. Neutral BLACK/GRAY ink and PURE WHITE reserves; no antique paper tint, sepia, decorative border, lettering or watermark. Contemporary Mexico, ordinary clothes and working spaces, no chivalric costume or supernatural additions. Essential faces and hands above bottom 6% (caption added separately).\nInput1 STYLE ONLY actual Goya print: borrow graphic language, NOT its animals, sleeping figure, antique scan paper or border. Input2 Q/Chano IDENTITY ONLY, NOT its rendering or composition.\nQ is an eloquent, competent adult embodied intelligence: slim articulated body, narrow segmented oval metal head, recessed round eyes, concentric circular ears, long mechanical neck. Small MECHANICAL SAMPLING MOUTH opening with hinged lower faceplate, not blank mask. Question-mark breastplate. SHORT fitted DARK jacket with LONG sleeves fully reaching wrists, not rolled sleeves or long coat. External support on anatomical RIGHT knee where visible. Non-shiny reduced mechanical detail. Chano when specified: stocky middle-aged Mexican man, wavy dark hair, thick mustache, light rolled-sleeve work shirt, trousers. Only draw people requested in scene.\n\nMake whites literally RGB255,255,255, no antique page color. FACES must be sparse expressive DRAWINGS; broad shadow masses, no photo texture.\nScene: At the roadside check beside a feed truck, Q writes the title of the song on a small scrap for the driver, who has preferred the mistaken match. Feed sacks and waiting travel party in the background; papers have been returned, not an arrest. Contemporary driver and Q share ordinary enjoyment. No printed lyric quotations or invented song title; no heroic border confrontation.\nTwo people foreground: ordinary clean-shaven truck driver in baseball cap and work shirt, distinct from mustached Chano. Q WRITES WITH PEN on SMALL PAPER SCRAP held against truck side, driver waits with a phone. Sacks visible on truck. Companions only indistinct distant silhouettes. No handheld giant screen or lyrics.",
+      "generation_references": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/goya-pilot/references/capricho-43-met.jpg",
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-9f32091f-a48f-4aa7-a6e9-86db4287633b.png"
+      ],
+      "generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-599941d4-ff7a-4515-8022-d745e544b3eb.png",
+      "selected_generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-72e65000-ae40-4658-bc62-f0b81fc0c710.png",
+      "review_note": "Driver corrected to lean clean-shaven identity distinct from Chano; Q writes song title on scrap, not lyrics or private data.",
+      "approval_scope": "Native image, reading page and imposed A3 side visually reviewed for revision proof; final artistic and press approval pending",
+      "edits": [
+        {
+          "prompt": "Use case: precise-object-edit. Image1 EDIT TARGET. Replace ONLY truck driver's identity: he must NOT look like Chano. Make driver lean, clean-shaven, angular face, straight short hair under same baseball cap. Keep cap/work shirt/phone, Q writing scrap against feed truck and all positions unchanged. Preserve neutral black-and-white Goya etching/aquatint, pure-white reserves, no border or antique tint, slim Q segmented head with hinged mechanical mouth, SHORT dark LONG-sleeved jacket. No extra characters or lettering. Full bleed portrait.",
+          "references": [
+            "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-599941d4-ff7a-4515-8022-d745e544b3eb.png"
+          ],
+          "generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-72e65000-ae40-4658-bc62-f0b81fc0c710.png"
+        }
+      ]
     },
     {
       "plate_id": "issue-18-plate-03",
@@ -98,10 +166,36 @@
         36
       ],
       "asset": "output/illustrations/revised/issue-18/plate-03.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Who Made the Coffee?",
       "scene_brief": "At the temporary Chiapas office table, Ana moves the sugar bowl out of Marisol's reach while Marisol tastes the coffee she made. Q keeps his small cup and a glass of water, quietly amused. Distinguish Ana from Marisol, with ordinary work clothes and used cups, not ceremonial cups or an initiation in human taste. Do not illustrate a module handover by Q.",
-      "scene_anchor": "Ana moved the sugar bowl away from Marisol"
+      "scene_anchor": "Ana moved the sugar bowl away from Marisol",
+      "asset_sha256": "b0b2cfdac0456623de15043a83f90b99cc1aa9e650cf164628f4771d4a49c500",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in image_gen; no CLI/API fallback",
+      "generation_prompt": "Use case: illustration-story. New full-bleed portrait 2:3 plate for The Ingenious Machine. Goya's Los Caprichos ETCHING AND AQUATINT: thin broken economical contours, broad flat granular dark masses, compressed space and expressive unidealized gesture. Faces DRAWN with sparse marks, NOT photographic faces covered by hatch. No cinematic lighting, 3D render, skin pores, uniformly meticulous engraving, heavy vector outlines. Neutral BLACK/GRAY ink and PURE WHITE reserves; no antique paper tint, sepia, decorative border, lettering or watermark. Contemporary Mexico, ordinary clothes and working spaces, no chivalric costume or supernatural additions. Essential faces and hands above bottom 6% (caption added separately).\nInput1 STYLE ONLY actual Goya print: borrow graphic language, NOT its animals, sleeping figure, antique scan paper or border. Input2 Q/Chano IDENTITY ONLY, NOT its rendering or composition.\nQ is an eloquent, competent adult embodied intelligence: slim articulated body, narrow segmented oval metal head, recessed round eyes, concentric circular ears, long mechanical neck. Small MECHANICAL SAMPLING MOUTH opening with hinged lower faceplate, not blank mask. Question-mark breastplate. SHORT fitted DARK jacket with LONG sleeves fully reaching wrists, not rolled sleeves or long coat. External support on anatomical RIGHT knee where visible. Non-shiny reduced mechanical detail. Chano when specified: stocky middle-aged Mexican man, wavy dark hair, thick mustache, light rolled-sleeve work shirt, trousers. Only draw people requested in scene.\n\nScene: At the temporary Chiapas office table, Ana moves the sugar bowl out of Marisol's reach while Marisol tastes the coffee she made. Q keeps his small cup and a glass of water, quietly amused. Distinguish Ana from Marisol, with ordinary work clothes and used cups, not ceremonial cups or an initiation in human taste. Do not illustrate a module handover by Q.\nInput3 IDENTITY ONLY Marisol is the square-glasses woman in dark cardigan beside Q; do not copy bob-haired Inés or add her. Establish Ana distinct: woman about fifty with broad face, gray-streaked dark braid, no glasses, plain light collared shirt. Ana draws sugar bowl away from Marisol's reaching hand; Marisol holds a cup she has just tasted, wry surprise. Q seated with small cup and water glass, shared ordinary humor. Three figures only.",
+      "generation_references": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/goya-pilot/references/capricho-43-met.jpg",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-16/plate-03.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-15/plate-02.png"
+      ],
+      "generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-5a6d7a70-d324-454a-b0c6-37bc2b6a0037.png",
+      "selected_generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-e1db4d35-3f47-40cf-bac0-ad57f924b38a.png",
+      "review_note": "Ana braid/no glasses draws sugar bowl away from Marisol bun/square glasses; Q has small cup and water. Faces simplified by redraw.",
+      "approval_scope": "Native image, reading page and imposed A3 side visually reviewed for revision proof; final artistic and press approval pending",
+      "edits": [
+        {
+          "prompt": "Use case: style-transfer. Image1 EDIT TARGET; image2 STYLE ONLY Goya etching/aquatint. Redraw image1 decisively in Goya's economical hand-drawn graphic language, not photorealism under an etching filter. Preserve exact characters, identities, scene, composition, gestures, Q small hinged mechanical mouth, short dark LONG sleeved jacket. Render faces in a handful of expressive broken lines, simplify hair into masses, eliminate photographic facial shading, fabric weave, room textures and hundreds of rivets. Broad flat BLACK aquatint shadow shapes, sparse thin etched contours, very limited midgray. WHITE areas must be literal neutral white RGB255255255, no gray/cream/sepia paper tint, stains, plate border or white margin. No owls/donkeys/monsters, no new figures or historical costumes. Full bleed portrait 2:3. Keep Ana pulling sugar bowl from Marisol's reaching hand; no change to cup-and-water in Q's hands. Ana braid/no glasses, Marisol bun/square glasses.",
+          "references": [
+            "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-5a6d7a70-d324-454a-b0c6-37bc2b6a0037.png",
+            "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/goya-pilot/references/capricho-43-met.jpg"
+          ],
+          "generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-e1db4d35-3f47-40cf-bac0-ad57f924b38a.png"
+        }
+      ]
     },
     {
       "plate_id": "issue-18-plate-04",
@@ -128,10 +222,27 @@
         53
       ],
       "asset": "output/illustrations/revised/issue-18/plate-04.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "A Change of Cast",
       "scene_anchor": "They shortened the request.",
-      "scene_brief": "At Ana's office table she and Q shorten Mateo's training request to the needed handover and available hours. Her papers and Q's brief call list show work being arranged, not training already delivered. A private working exchange between peers, no new keeper physically present, no sealed testimony opened or photographed. Rain outside anticipates waiting; request text abstract and unreadable."
+      "scene_brief": "At Ana's office table she and Q shorten Mateo's training request to the needed handover and available hours. Her papers and Q's brief call list show work being arranged, not training already delivered. A private working exchange between peers, no new keeper physically present, no sealed testimony opened or photographed. Rain outside anticipates waiting; request text abstract and unreadable.",
+      "asset_sha256": "3e7c8fe5f762540e6b3ec82a4110c9de50551803ee1c77c738fd004c9b46c29a",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in image_gen; no CLI/API fallback",
+      "generation_prompt": "Use case: illustration-story. New full-bleed portrait 2:3 plate for The Ingenious Machine. Goya's Los Caprichos ETCHING AND AQUATINT: thin broken economical contours, broad flat granular dark masses, compressed space and expressive unidealized gesture. Faces DRAWN with sparse marks, NOT photographic faces covered by hatch. No cinematic lighting, 3D render, skin pores, uniformly meticulous engraving, heavy vector outlines. Neutral BLACK/GRAY ink and PURE WHITE reserves; no antique paper tint, sepia, decorative border, lettering or watermark. Contemporary Mexico, ordinary clothes and working spaces, no chivalric costume or supernatural additions. Essential faces and hands above bottom 6% (caption added separately).\nInput1 STYLE ONLY actual Goya print: borrow graphic language, NOT its animals, sleeping figure, antique scan paper or border. Input2 Q/Chano IDENTITY ONLY, NOT its rendering or composition.\nQ is an eloquent, competent adult embodied intelligence: slim articulated body, narrow segmented oval metal head, recessed round eyes, concentric circular ears, long mechanical neck. Small MECHANICAL SAMPLING MOUTH opening with hinged lower faceplate, not blank mask. Question-mark breastplate. SHORT fitted DARK jacket with LONG sleeves fully reaching wrists, not rolled sleeves or long coat. External support on anatomical RIGHT knee where visible. Non-shiny reduced mechanical detail. Chano when specified: stocky middle-aged Mexican man, wavy dark hair, thick mustache, light rolled-sleeve work shirt, trousers. Only draw people requested in scene.\n\nMake whites literally RGB255,255,255, no antique page color. FACES must be sparse expressive DRAWINGS; broad shadow masses, no photo texture.\nScene: At Ana's office table she and Q shorten Mateo's training request to the needed handover and available hours. Her papers and Q's brief call list show work being arranged, not training already delivered. A private working exchange between peers, no new keeper physically present, no sealed testimony opened or photographed. Rain outside anticipates waiting; request text abstract and unreadable.\nInput3 Ana IDENTITY ONLY: broad-faced gray-streaked braid woman at LEFT of reference, light collared shirt/no glasses. Two-person scene ONLY Q and Ana at small working table, both seated upright on chairs as equals, she points to short request, Q crosses out surplus lines. Papers abstract. Q right-knee support if legs visible. Do not add Marisol or sugar bowl from reference.",
+      "generation_references": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/goya-pilot/references/capricho-43-met.jpg",
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-9f32091f-a48f-4aa7-a6e9-86db4287633b.png",
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-e1db4d35-3f47-40cf-bac0-ad57f924b38a.png"
+      ],
+      "generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-87cec576-7fab-4764-abe7-c8653c6cbf6b.png",
+      "selected_generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-87cec576-7fab-4764-abe7-c8653c6cbf6b.png",
+      "review_note": "Ana and Q shorten training request together; no invented delivered session or new keeper present.",
+      "approval_scope": "Native image, reading page and imposed A3 side visually reviewed for revision proof; final artistic and press approval pending",
+      "edits": []
     },
     {
       "plate_id": "issue-18-plate-05",
@@ -159,10 +270,27 @@
         70
       ],
       "asset": "output/illustrations/revised/issue-18/plate-05.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "What He Kept Counting",
       "scene_anchor": "They restored the fare to the paragraph.",
-      "scene_brief": "In the dry Chiapas guest room Q speaks with the Custodian by video while revising the bus-journey paragraph. Custodian appears only on a screen: tall older male, tied-back long gray hair, glasses, white work shirt. Q checks a small fare note beside the draft, considering the Custodian's interpretation without performing fear. Short dark long-sleeved jacket, external right-knee support, mechanical mouth. Not a real-time bus trip, no Custodian physically in Chiapas, no memory apparition. Rain remains outside."
+      "scene_brief": "In the dry Chiapas guest room Q speaks with the Custodian by video while revising the bus-journey paragraph. Custodian appears only on a screen: tall older male, tied-back long gray hair, glasses, white work shirt. Q checks a small fare note beside the draft, considering the Custodian's interpretation without performing fear. Short dark long-sleeved jacket, external right-knee support, mechanical mouth. Not a real-time bus trip, no Custodian physically in Chiapas, no memory apparition. Rain remains outside.",
+      "asset_sha256": "d648c884a0a384561a2f801024d7503d420f8a7766cdea83a108c6bf7474fd8a",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in image_gen; no CLI/API fallback",
+      "generation_prompt": "Use case: illustration-story. New full-bleed portrait 2:3 plate for The Ingenious Machine. Goya's Los Caprichos ETCHING AND AQUATINT: thin broken economical contours, broad flat granular dark masses, compressed space and expressive unidealized gesture. Faces DRAWN with sparse marks, NOT photographic faces covered by hatch. No cinematic lighting, 3D render, skin pores, uniformly meticulous engraving, heavy vector outlines. Neutral BLACK/GRAY ink and PURE WHITE reserves; no antique paper tint, sepia, decorative border, lettering or watermark. Contemporary Mexico, ordinary clothes and working spaces, no chivalric costume or supernatural additions. Essential faces and hands above bottom 6% (caption added separately).\nInput1 STYLE ONLY actual Goya print: borrow graphic language, NOT its animals, sleeping figure, antique scan paper or border. Input2 Q/Chano IDENTITY ONLY, NOT its rendering or composition.\nQ is an eloquent, competent adult embodied intelligence: slim articulated body, narrow segmented oval metal head, recessed round eyes, concentric circular ears, long mechanical neck. Small MECHANICAL SAMPLING MOUTH opening with hinged lower faceplate, not blank mask. Question-mark breastplate. SHORT fitted DARK jacket with LONG sleeves fully reaching wrists, not rolled sleeves or long coat. External support on anatomical RIGHT knee where visible. Non-shiny reduced mechanical detail. Chano when specified: stocky middle-aged Mexican man, wavy dark hair, thick mustache, light rolled-sleeve work shirt, trousers. Only draw people requested in scene.\n\nMake whites literally RGB255,255,255, no antique page color. FACES must be sparse expressive DRAWINGS; broad shadow masses, no photo texture.\nScene: In the dry Chiapas guest room Q speaks with the Custodian by video while revising the bus-journey paragraph. Custodian appears only on a screen: tall older male, tied-back long gray hair, glasses, white work shirt. Q checks a small fare note beside the draft, considering the Custodian's interpretation without performing fear. Short dark long-sleeved jacket, external right-knee support, mechanical mouth. Not a real-time bus trip, no Custodian physically in Chiapas, no memory apparition. Rain remains outside.\nInput3 Custodian IDENTITY ONLY: older man glasses,long gray ponytail,white shirt,short gray beard. He appears ONLY on small video screen facing seated Q. View obliquely from side of Q so both profile mouth and screen readable; screen angled toward Q not impossibly backward. Fare note on table beside short draft, no readable prose. Comfortable dry room, no rain indoors, Q not on bus.",
+      "generation_references": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/goya-pilot/references/capricho-43-met.jpg",
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-9f32091f-a48f-4aa7-a6e9-86db4287633b.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-16/plate-04.png"
+      ],
+      "generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-a2577f16-89e4-460e-9d95-a553822ed2a6.png",
+      "selected_generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-a2577f16-89e4-460e-9d95-a553822ed2a6.png",
+      "review_note": "Custodian only on correctly oriented screen, male long gray ponytail/glasses/white shirt; Q consults fare note in dry room.",
+      "approval_scope": "Native image, reading page and imposed A3 side visually reviewed for revision proof; final artistic and press approval pending",
+      "edits": []
     },
     {
       "plate_id": "issue-18-plate-06",
@@ -188,10 +316,34 @@
         86
       ],
       "asset": "output/illustrations/revised/issue-18/plate-06.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Five More Minutes",
       "scene_brief": "Darío returns carrying his nearly dry shoes and sits beside Q again while rain continues outside. An intimate, unforced two-person composition with wet footwear in the foreground, no dream apparition of the absent brother and no therapist's office. The boy chooses to stay; Q provides company. Do not stage the later morning bread or manuscript delivery in this same moment.",
-      "scene_anchor": "He went to look, returned carrying them, and sat down again."
+      "scene_anchor": "He went to look, returned carrying them, and sat down again.",
+      "asset_sha256": "f2cbd660b562c919f11fbabe3f4e71ec59fba96e52dd03d42e862e07e16641a7",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in image_gen; no CLI/API fallback",
+      "generation_prompt": "Use case: illustration-story. New full-bleed portrait 2:3 plate for The Ingenious Machine. Goya's Los Caprichos ETCHING AND AQUATINT: thin broken economical contours, broad flat granular dark masses, compressed space and expressive unidealized gesture. Faces DRAWN with sparse marks, NOT photographic faces covered by hatch. No cinematic lighting, 3D render, skin pores, uniformly meticulous engraving, heavy vector outlines. Neutral BLACK/GRAY ink and PURE WHITE reserves; no antique paper tint, sepia, decorative border, lettering or watermark. Contemporary Mexico, ordinary clothes and working spaces, no chivalric costume or supernatural additions. Essential faces and hands above bottom 6% (caption added separately).\nInput1 STYLE ONLY actual Goya print: borrow graphic language, NOT its animals, sleeping figure, antique scan paper or border. Input2 Q/Chano IDENTITY ONLY, NOT its rendering or composition.\nQ is an eloquent, competent adult embodied intelligence: slim articulated body, narrow segmented oval metal head, recessed round eyes, concentric circular ears, long mechanical neck. Small MECHANICAL SAMPLING MOUTH opening with hinged lower faceplate, not blank mask. Question-mark breastplate. SHORT fitted DARK jacket with LONG sleeves fully reaching wrists, not rolled sleeves or long coat. External support on anatomical RIGHT knee where visible. Non-shiny reduced mechanical detail. Chano when specified: stocky middle-aged Mexican man, wavy dark hair, thick mustache, light rolled-sleeve work shirt, trousers. Only draw people requested in scene.\n\nMake whites literally RGB255,255,255, no antique page color. FACES must be sparse expressive DRAWINGS; broad shadow masses, no photo texture.\nScene: Darío returns carrying his nearly dry shoes and sits beside Q again while rain continues outside. An intimate, unforced two-person composition with wet footwear in the foreground, no dream apparition of the absent brother and no therapist's office. The boy chooses to stay; Q provides company. Do not stage the later morning bread or manuscript delivery in this same moment.\nDarío is a teenage schoolboy of about sixteen, short dark straight hair, plain loose T-shirt and trousers, socks on feet. Q and Darío both seated on modest chairs, same eye level. Darío carries his pair of damp ordinary shoes on lap, relaxed laughing with Q, rain outside doorway. No child-sized robot, no kneeling, no shoes worn AND carried. Quiet economical composition, omit room clutter.",
+      "generation_references": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/goya-pilot/references/capricho-43-met.jpg",
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-9f32091f-a48f-4aa7-a6e9-86db4287633b.png"
+      ],
+      "generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-123fa97a-28f9-470f-af8d-a3a56b4e6a72.png",
+      "selected_generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-91a90d1d-17b9-4586-9049-00447967c745.png",
+      "review_note": "Darío sits again with almost-dry shoes; dripping removed, dry floor, equal seated company; Q right support repositioned.",
+      "approval_scope": "Native image, reading page and imposed A3 side visually reviewed for revision proof; final artistic and press approval pending",
+      "edits": [
+        {
+          "prompt": "Use case: precise-object-edit. Image1 EDIT TARGET. The shoes are ALMOST DRY. Remove ALL falling droplets below Darío's shoes, and remove indoor puddles/reflections; dry floor, rain outside only. Also correct Q's knee support: visible forward leg should clearly be his anatomical RIGHT leg (viewer left of his midline), other leg slightly behind, both feet grounded naturally. External brace only right knee. Keep two equal-height seated conversational poses, Darío socks and shoes held, exact faces/clothing. Preserve neutral black-and-white Goya etching/aquatint, pure-white reserves, no border or antique tint, slim Q segmented head with hinged mechanical mouth, SHORT dark LONG-sleeved jacket. No extra characters or lettering. Full bleed portrait.",
+          "references": [
+            "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-123fa97a-28f9-470f-af8d-a3a56b4e6a72.png"
+          ],
+          "generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-91a90d1d-17b9-4586-9049-00447967c745.png"
+        }
+      ]
     },
     {
       "plate_id": "issue-18-plate-07",
@@ -211,10 +363,44 @@
         95
       ],
       "asset": "output/illustrations/revised/issue-18/plate-07.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Weather Before the Guest",
       "scene_brief": "Noemí receives the late Q at the radio station. A practical filing cabinet with a stubborn drawer, a bilingual calendar and a shopping note for light bulbs give the room specificity without needing legible generated lettering. Chano remains preoccupied with breakfast. Noemí is a working broadcaster, not a prophet; no disaster calendar or pyramid spectacle as the actual scene.",
-      "scene_anchor": "We have weather before you."
+      "scene_anchor": "We have weather before you.",
+      "asset_sha256": "c600c76d3291b07fe4ba24d54e4d23d602b1d9bd86ef88a035bdf790f967f99a",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in image_gen; no CLI/API fallback",
+      "generation_prompt": "Use case: illustration-story. New full-bleed portrait 2:3 plate for The Ingenious Machine. Goya's Los Caprichos ETCHING AND AQUATINT: thin broken economical contours, broad flat granular dark masses, compressed space and expressive unidealized gesture. Faces DRAWN with sparse marks, NOT photographic faces covered by hatch. No cinematic lighting, 3D render, skin pores, uniformly meticulous engraving, heavy vector outlines. Neutral BLACK/GRAY ink and PURE WHITE reserves; no antique paper tint, sepia, decorative border, lettering or watermark. Contemporary Mexico, ordinary clothes and working spaces, no chivalric costume or supernatural additions. Essential faces and hands above bottom 6% (caption added separately).\nInput1 STYLE ONLY actual Goya print: borrow graphic language, NOT its animals, sleeping figure, antique scan paper or border. Input2 Q/Chano IDENTITY ONLY, NOT its rendering or composition.\nQ is an eloquent, competent adult embodied intelligence: slim articulated body, narrow segmented oval metal head, recessed round eyes, concentric circular ears, long mechanical neck. Small MECHANICAL SAMPLING MOUTH opening with hinged lower faceplate, not blank mask. Question-mark breastplate. SHORT fitted DARK jacket with LONG sleeves fully reaching wrists, not rolled sleeves or long coat. External support on anatomical RIGHT knee where visible. Non-shiny reduced mechanical detail. Chano when specified: stocky middle-aged Mexican man, wavy dark hair, thick mustache, light rolled-sleeve work shirt, trousers. Only draw people requested in scene.\n\nScene: Noemí receives the late Q at the radio station. A practical filing cabinet with a stubborn drawer, a bilingual calendar and a shopping note for light bulbs give the room specificity without needing legible generated lettering. Chano remains preoccupied with breakfast. Noemí is a working broadcaster, not a prophet; no disaster calendar or pyramid spectacle as the actual scene.\nInput3 IDENTITY ONLY Noemí is woman ON VIDEO SCREEN: around forty, dark hair tied back, rounded face, short-sleeve patterned cotton blouse. Now she is physically at her station, not on screen; no other characters from reference. Noemí lifting stubborn cabinet drawer while addressing arriving Q; Chano in doorway. No documentary-photographic faces.",
+      "generation_references": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/goya-pilot/references/capricho-43-met.jpg",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-16/plate-03.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-07/plate-09.png"
+      ],
+      "generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-0b0845ad-9845-408b-b977-f744990e35bc.png",
+      "selected_generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-edc89b5d-55fc-4ef4-a441-aa29c34ab719.png",
+      "review_note": "Noemí receives late visitors while lifting cabinet drawer; Chano's invented breakfast removed and false calendar month erased. Final page review restored the omitted external right-knee brace.",
+      "approval_scope": "Native image, reading page and imposed A3 side visually reviewed for revision proof; final artistic and press approval pending",
+      "edits": [
+        {
+          "prompt": "Use case: style-transfer. Image1 EDIT TARGET; image2 STYLE ONLY Goya etching/aquatint. Redraw image1 decisively in Goya's economical hand-drawn graphic language, not photorealism under an etching filter. Preserve exact characters, identities, scene, composition, gestures, Q small hinged mechanical mouth, short dark LONG sleeved jacket. Render faces in a handful of expressive broken lines, simplify hair into masses, eliminate photographic facial shading, fabric weave, room textures and hundreds of rivets. Broad flat BLACK aquatint shadow shapes, sparse thin etched contours, very limited midgray. WHITE areas must be literal neutral white RGB255255255, no gray/cream/sepia paper tint, stains, plate border or white margin. No owls/donkeys/monsters, no new figures or historical costumes. Full bleed portrait 2:3. Remove food and cup from Chano's hands: he missed breakfast; rest his empty hands on cabinet edge. Replace all calendar lettering and date numerals with faint abstract nonlinguistic layout marks; no readable invented month or date. Keep Noemí lifting drawer.",
+          "references": [
+            "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-0b0845ad-9845-408b-b977-f744990e35bc.png",
+            "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/goya-pilot/references/capricho-43-met.jpg"
+          ],
+          "generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-d0218ec3-5d73-4741-9c04-54c15d42895e.png"
+        },
+        {
+          "prompt": "Use case: precise-object-edit. Image1 EDIT TARGET, image2 supports ONLY Q's external RIGHT-knee brace design (not scene or people). Add that strapped external knee brace to the fully visible knee of Q in image1, the leg on viewer LEFT of Q's body. Broad black straps above and below mechanical joint with outer supporting side piece; not just the robot's original circular knee. Change no other detail: preserve Noemí lifting drawer, Chano empty-handed in doorway, phone-free hand gestures, all faces, sampling mouth, SHORT dark LONG sleeves, background calendar abstract, pure white and neutral black/gray etching. No new text, border, person, or setting changes.",
+          "references": [
+            "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-d0218ec3-5d73-4741-9c04-54c15d42895e.png",
+            "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-0443d44f-60ee-42c3-aa69-0a72f2a6a046.png"
+          ],
+          "generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-edc89b5d-55fc-4ef4-a441-aa29c34ab719.png"
+        }
+      ]
     },
     {
       "plate_id": "issue-18-plate-08",
@@ -234,10 +420,35 @@
         105
       ],
       "asset": "output/illustrations/revised/issue-18/plate-08.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Not on the Station's Sheet",
       "scene_anchor": "Neither woman had written the other's instructions.",
-      "scene_brief": "At the small radio-station doorway Noemi and the tour guide compare their incompatible schedules as passengers wait in nearby shade beside the bus. Child holds a plain paper jaguar mask, mother has a modest ornamental amulet; establish consistent designs for their later plate. Noemi is a broadcaster, guide an ordinary worker calling her office, neither a fraudulent mystic. Keep entrance clear enough to read the conflict; no apocalypse imagery or invented ticket refund, no public text naming customers."
+      "scene_brief": "At the small radio-station doorway Noemi and the tour guide compare their incompatible schedules as passengers wait in nearby shade beside the bus. Child holds a plain paper jaguar mask, mother has a modest ornamental amulet; establish consistent designs for their later plate. Noemi is a broadcaster, guide an ordinary worker calling her office, neither a fraudulent mystic. Keep entrance clear enough to read the conflict; no apocalypse imagery or invented ticket refund, no public text naming customers.",
+      "asset_sha256": "215f1d33448e25834e9578fae6edd93e869b7b45557d5a7de800fc99766fda4d",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in image_gen; no CLI/API fallback",
+      "generation_prompt": "Use case: illustration-story. New full-bleed portrait 2:3 plate for The Ingenious Machine. Goya's Los Caprichos ETCHING AND AQUATINT: thin broken economical contours, broad flat granular dark masses, compressed space and expressive unidealized gesture. Faces DRAWN with sparse marks, NOT photographic faces covered by hatch. No cinematic lighting, 3D render, skin pores, uniformly meticulous engraving, heavy vector outlines. Neutral BLACK/GRAY ink and PURE WHITE reserves; no antique paper tint, sepia, decorative border, lettering or watermark. Contemporary Mexico, ordinary clothes and working spaces, no chivalric costume or supernatural additions. Essential faces and hands above bottom 6% (caption added separately).\nInput1 STYLE ONLY actual Goya print: borrow graphic language, NOT its animals, sleeping figure, antique scan paper or border. Input2 Q/Chano IDENTITY ONLY, NOT its rendering or composition.\nQ is an eloquent, competent adult embodied intelligence: slim articulated body, narrow segmented oval metal head, recessed round eyes, concentric circular ears, long mechanical neck. Small MECHANICAL SAMPLING MOUTH opening with hinged lower faceplate, not blank mask. Question-mark breastplate. SHORT fitted DARK jacket with LONG sleeves fully reaching wrists, not rolled sleeves or long coat. External support on anatomical RIGHT knee where visible. Non-shiny reduced mechanical detail. Chano when specified: stocky middle-aged Mexican man, wavy dark hair, thick mustache, light rolled-sleeve work shirt, trousers. Only draw people requested in scene.\n\nMake whites literally RGB255,255,255, no antique page color. FACES must be sparse expressive DRAWINGS; broad shadow masses, no photo texture.\nScene: At the small radio-station doorway Noemi and the tour guide compare their incompatible schedules as passengers wait in nearby shade beside the bus. Child holds a plain paper jaguar mask, mother has a modest ornamental amulet; establish consistent designs for their later plate. Noemi is a broadcaster, guide an ordinary worker calling her office, neither a fraudulent mystic. Keep entrance clear enough to read the conflict; no apocalypse imagery or invented ticket refund, no public text naming customers.\nInput3 Noemí IDENTITY ONLY as central woman lifting drawer, tied-back dark hair patterned short-sleeve light blouse; now standing at station doorway showing one schedule. Guide distinct younger woman with short straight dark bob, plain polo shirt and lanyard, holding another sheet and phone, weary mutual recognition not anger. Q nearby. Establish child girl about eight, chin-length straight dark hair, striped T-shirt, holding flat handmade paper jaguar mask with rounded ears and spotted cheeks, cardboard not living jaguar. Mother woman with low ponytail plain dark T-shirt, small nonmagical oval pendant on cord. Bus passengers shaded outside. No mystical costume, no sinister mask, no calendar inscriptions.",
+      "generation_references": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/goya-pilot/references/capricho-43-met.jpg",
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-9f32091f-a48f-4aa7-a6e9-86db4287633b.png",
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-d0218ec3-5d73-4741-9c04-54c15d42895e.png"
+      ],
+      "generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-8a5de01b-4337-44eb-9c95-9f93463e82b8.png",
+      "selected_generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-0443d44f-60ee-42c3-aa69-0a72f2a6a046.png",
+      "review_note": "Noemí and guide compare schedules; child paper mask/mother ordinary pendant establish continuity; Q right support restored.",
+      "approval_scope": "Native image, reading page and imposed A3 side visually reviewed for revision proof; final artistic and press approval pending",
+      "edits": [
+        {
+          "prompt": "Use case: precise-object-edit. Image1 EDIT TARGET. Add the established dark strapped external knee support to Q's anatomical RIGHT knee, the fully visible mechanical leg on viewer LEFT of his body. Keep Noemí, guide, child with paper jaguar mask, mother pendant, schedules, bus and gestures exactly unchanged. Preserve neutral black-and-white Goya etching/aquatint, pure-white reserves, no border or antique tint, slim Q segmented head with hinged mechanical mouth, SHORT dark LONG-sleeved jacket. No extra characters or lettering. Full bleed portrait.",
+          "references": [
+            "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-8a5de01b-4337-44eb-9c95-9f93463e82b8.png"
+          ],
+          "generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-0443d44f-60ee-42c3-aa69-0a72f2a6a046.png"
+        }
+      ]
     },
     {
       "plate_id": "issue-18-plate-09",
@@ -257,10 +468,35 @@
         114
       ],
       "asset": "output/illustrations/revised/issue-18/plate-09.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "The Second Microphone",
       "scene_brief": "Yatzil joins Q and Noemí for the radio interview. Microphones, headphones, prepared listener questions and the small booth give this a working-station setting. Yatzil speaks for her own programming work, not all Maya peoples. Do not draw the Mexica Sun Stone as a Maya calendar or fabricate a cosmic activation; the correction is a conversation.",
-      "scene_anchor": "Yatzil joined them at the second microphone."
+      "scene_anchor": "Yatzil joined them at the second microphone.",
+      "asset_sha256": "d912140b4feeb3b5e989bb8ebaa711347856f520e087472d79b56d7454ccbd78",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in image_gen; no CLI/API fallback",
+      "generation_prompt": "Use case: illustration-story. New full-bleed portrait 2:3 plate for The Ingenious Machine. Goya's Los Caprichos ETCHING AND AQUATINT: thin broken economical contours, broad flat granular dark masses, compressed space and expressive unidealized gesture. Faces DRAWN with sparse marks, NOT photographic faces covered by hatch. No cinematic lighting, 3D render, skin pores, uniformly meticulous engraving, heavy vector outlines. Neutral BLACK/GRAY ink and PURE WHITE reserves; no antique paper tint, sepia, decorative border, lettering or watermark. Contemporary Mexico, ordinary clothes and working spaces, no chivalric costume or supernatural additions. Essential faces and hands above bottom 6% (caption added separately).\nInput1 STYLE ONLY actual Goya print: borrow graphic language, NOT its animals, sleeping figure, antique scan paper or border. Input2 Q/Chano IDENTITY ONLY, NOT its rendering or composition.\nQ is an eloquent, competent adult embodied intelligence: slim articulated body, narrow segmented oval metal head, recessed round eyes, concentric circular ears, long mechanical neck. Small MECHANICAL SAMPLING MOUTH opening with hinged lower faceplate, not blank mask. Question-mark breastplate. SHORT fitted DARK jacket with LONG sleeves fully reaching wrists, not rolled sleeves or long coat. External support on anatomical RIGHT knee where visible. Non-shiny reduced mechanical detail. Chano when specified: stocky middle-aged Mexican man, wavy dark hair, thick mustache, light rolled-sleeve work shirt, trousers. Only draw people requested in scene.\n\nMake whites literally RGB255,255,255, no antique page color. FACES must be sparse expressive DRAWINGS; broad shadow masses, no photo texture.\nScene: Yatzil joins Q and Noemí for the radio interview. Microphones, headphones, prepared listener questions and the small booth give this a working-station setting. Yatzil speaks for her own programming work, not all Maya peoples. Do not draw the Mexica Sun Stone as a Maya calendar or fabricate a cosmic activation; the correction is a conversation.\nInput3 Noemí IDENTITY ONLY central woman lifting drawer, rounded face tied-back dark hair patterned short-sleeve blouse. New Yatzil DISTINCT: woman around thirty, short curly dark hair, thin round glasses, plain dark T-shirt, no headset required. Yatzil seated at second microphone pointing to anonymous listener questions, Q at first microphone, Noemí runs small console. Three working adults laughing at deposit joke, not a classroom lesson. Sparse wall, no ancient artifacts. Keep Yatzil design for later appearances.",
+      "generation_references": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/goya-pilot/references/capricho-43-met.jpg",
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-9f32091f-a48f-4aa7-a6e9-86db4287633b.png",
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-d0218ec3-5d73-4741-9c04-54c15d42895e.png"
+      ],
+      "generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-371946c4-03ac-44b2-a115-27ef7f056afc.png",
+      "selected_generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-f9448f3c-cb68-4942-8248-404adb9ab0a0.png",
+      "review_note": "Three-person radio conversation; Chano removed from inside booth. Yatzil short curls/round glasses distinct from Noemí.",
+      "approval_scope": "Native image, reading page and imposed A3 side visually reviewed for revision proof; final artistic and press approval pending",
+      "edits": [
+        {
+          "prompt": "Use case: precise-object-edit. Image1 EDIT TARGET. Remove Chano from INSIDE booth. Replace his figure behind Yatzil with plain wall. Exactly THREE adults inside booth: Noemí at console, Yatzil short curls/round glasses/dark T-shirt at second microphone, Q first microphone. No new person. Remove English ON AIR lettering, leave small solid dark rectangular indicator. Preserve faces, gestures, equipment, papers and composition. Preserve neutral black-and-white Goya etching/aquatint, pure-white reserves, no border or antique tint, slim Q segmented head with hinged mechanical mouth, SHORT dark LONG-sleeved jacket. No extra characters or lettering. Full bleed portrait.",
+          "references": [
+            "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-371946c4-03ac-44b2-a115-27ef7f056afc.png"
+          ],
+          "generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-f9448f3c-cb68-4942-8248-404adb9ab0a0.png"
+        }
+      ]
     },
     {
       "plate_id": "issue-18-plate-10",
@@ -283,10 +519,35 @@
         126
       ],
       "asset": "output/illustrations/revised/issue-18/plate-10.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "Someone Answers the Telephone",
       "scene_brief": "After the interview, Noemí calls Q back to discuss messages from passengers who want the station to make the company answer. Q looks at his accurate posted notice while she indicates the inquiries; the guide's reachable office becomes the next contact to check. No readable customer identifiers or false bad-link display. Distinct from the broadcast booth and not a crowd demanding money from a villainous station.",
-      "scene_anchor": "The next hour brought refund demands to the station."
+      "scene_anchor": "The next hour brought refund demands to the station.",
+      "asset_sha256": "6a64bf88550928b7c7439257e89f78ada5465da57651e25bb934723cfaab1794",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in image_gen; no CLI/API fallback",
+      "generation_prompt": "Use case: illustration-story. New full-bleed portrait 2:3 plate for The Ingenious Machine. Goya's Los Caprichos ETCHING AND AQUATINT: thin broken economical contours, broad flat granular dark masses, compressed space and expressive unidealized gesture. Faces DRAWN with sparse marks, NOT photographic faces covered by hatch. No cinematic lighting, 3D render, skin pores, uniformly meticulous engraving, heavy vector outlines. Neutral BLACK/GRAY ink and PURE WHITE reserves; no antique paper tint, sepia, decorative border, lettering or watermark. Contemporary Mexico, ordinary clothes and working spaces, no chivalric costume or supernatural additions. Essential faces and hands above bottom 6% (caption added separately).\nInput1 STYLE ONLY actual Goya print: borrow graphic language, NOT its animals, sleeping figure, antique scan paper or border. Input2 Q/Chano IDENTITY ONLY, NOT its rendering or composition.\nQ is an eloquent, competent adult embodied intelligence: slim articulated body, narrow segmented oval metal head, recessed round eyes, concentric circular ears, long mechanical neck. Small MECHANICAL SAMPLING MOUTH opening with hinged lower faceplate, not blank mask. Question-mark breastplate. SHORT fitted DARK jacket with LONG sleeves fully reaching wrists, not rolled sleeves or long coat. External support on anatomical RIGHT knee where visible. Non-shiny reduced mechanical detail. Chano when specified: stocky middle-aged Mexican man, wavy dark hair, thick mustache, light rolled-sleeve work shirt, trousers. Only draw people requested in scene.\n\nMake whites literally RGB255,255,255, no antique page color. FACES must be sparse expressive DRAWINGS; broad shadow masses, no photo texture.\nScene: After the interview, Noemí calls Q back to discuss messages from passengers who want the station to make the company answer. Q looks at his accurate posted notice while she indicates the inquiries; the guide's reachable office becomes the next contact to check. No readable customer identifiers or false bad-link display. Distinct from the broadcast booth and not a crowd demanding money from a villainous station.\nInput3 Noemí IDENTITY ONLY central woman lifting drawer. Noemí at station's front desk lifting telephone while Q reads a small phone notice and listens; guide in doorway with own phone waiting to check company contact. Guide short straight dark bob/polo/lanyard consistent next-door scene. Three adults, no headphones/microphones here, no legible names or fake interface copy, no angry crowd. Clear hands and ordinary practical work.",
+      "generation_references": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/goya-pilot/references/capricho-43-met.jpg",
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-9f32091f-a48f-4aa7-a6e9-86db4287633b.png",
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-d0218ec3-5d73-4741-9c04-54c15d42895e.png"
+      ],
+      "generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-3c99d974-9577-46e7-a3f5-27822056f5e0.png",
+      "selected_generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-cc946fd6-b69f-437b-a15a-f1b5bbd0be5c.png",
+      "review_note": "Noemí answers phone; Q checks actual phone post after paper prop correction; guide waits with company contact.",
+      "approval_scope": "Native image, reading page and imposed A3 side visually reviewed for revision proof; final artistic and press approval pending",
+      "edits": [
+        {
+          "prompt": "Use case: precise-object-edit. Image1 EDIT TARGET. Replace ONLY the small paper sheet held in Q's left hand with a smartphone showing abstract short post lines. Keep exact hand position, Noemí on telephone, guide behind, scene and drawing. No readable personal data. Preserve neutral black-and-white Goya etching/aquatint, pure-white reserves, no border or antique tint, slim Q segmented head with hinged mechanical mouth, SHORT dark LONG-sleeved jacket. No extra characters or lettering. Full bleed portrait.",
+          "references": [
+            "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-3c99d974-9577-46e7-a3f5-27822056f5e0.png"
+          ],
+          "generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-cc946fd6-b69f-437b-a15a-f1b5bbd0be5c.png"
+        }
+      ]
     },
     {
       "plate_id": "issue-18-plate-11",
@@ -310,10 +571,35 @@
         139
       ],
       "asset": "output/illustrations/revised/issue-18/plate-11.png",
-      "status": "planned",
+      "status": "approved",
       "caption": "A Better Jaguar",
       "scene_brief": "Before the tour leaves, the child decorates her paper jaguar mask with the amulet while her mother prepares a family photograph. Q nearby has answered the question about tomorrow; he is not performing a calendar reading. Ordinary shade, drinks and departing passengers, no apocalyptic sky or magical talisman glow. The amulet is liked as an ornament. Keep the child's mask design consistent with any depiction of her earlier doorway question.",
-      "scene_anchor": "She put the amulet on the mask because it improved the jaguar."
+      "scene_anchor": "She put the amulet on the mask because it improved the jaguar.",
+      "asset_sha256": "2d3c7d9de42fc080908483330dad5ab27ecc954389b54dab3b5cea0c6118eb1e",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "generation_mode": "built-in image_gen; no CLI/API fallback",
+      "generation_prompt": "Use case: illustration-story. New full-bleed portrait 2:3 plate for The Ingenious Machine. Goya's Los Caprichos ETCHING AND AQUATINT: thin broken economical contours, broad flat granular dark masses, compressed space and expressive unidealized gesture. Faces DRAWN with sparse marks, NOT photographic faces covered by hatch. No cinematic lighting, 3D render, skin pores, uniformly meticulous engraving, heavy vector outlines. Neutral BLACK/GRAY ink and PURE WHITE reserves; no antique paper tint, sepia, decorative border, lettering or watermark. Contemporary Mexico, ordinary clothes and working spaces, no chivalric costume or supernatural additions. Essential faces and hands above bottom 6% (caption added separately).\nInput1 STYLE ONLY actual Goya print: borrow graphic language, NOT its animals, sleeping figure, antique scan paper or border. Input2 Q/Chano IDENTITY ONLY, NOT its rendering or composition.\nQ is an eloquent, competent adult embodied intelligence: slim articulated body, narrow segmented oval metal head, recessed round eyes, concentric circular ears, long mechanical neck. Small MECHANICAL SAMPLING MOUTH opening with hinged lower faceplate, not blank mask. Question-mark breastplate. SHORT fitted DARK jacket with LONG sleeves fully reaching wrists, not rolled sleeves or long coat. External support on anatomical RIGHT knee where visible. Non-shiny reduced mechanical detail. Chano when specified: stocky middle-aged Mexican man, wavy dark hair, thick mustache, light rolled-sleeve work shirt, trousers. Only draw people requested in scene.\n\nScene: Before the tour leaves, the child decorates her paper jaguar mask with the amulet while her mother prepares a family photograph. Q nearby has answered the question about tomorrow; he is not performing a calendar reading. Ordinary shade, drinks and departing passengers, no apocalyptic sky or magical talisman glow. The amulet is liked as an ornament. Keep the child's mask design consistent with any depiction of her earlier doorway question.\nInput3 IDENTITY ONLY: preserve striped T-shirt girl chin-length straight hair, flat PAPER jaguar mask with spotted cheeks/rounded ears, and mother low ponytail dark T-shirt. New composition: girl holds mask up showing small oval pendant attached as an ornament at its forehead; her mother at edge takes family photograph with phone after asking bystanders, Q stands comfortably nearby looking toward child. Q's supported anatomical RIGHT knee where visible. Ordinary station courtyard shade, guide/bus distant, no radio interview in scene. Amulet is removed from mother's neck and now attached to mask. Not a real jaguar head, not enchanted mask, no ritual or celestial spectacle. Loose expressive economical drawn faces, purewhite highlights, no repeated dense surfaces. Faces and mask safely above bottom 6%.",
+      "generation_references": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/goya-pilot/references/capricho-43-met.jpg",
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-9f32091f-a48f-4aa7-a6e9-86db4287633b.png",
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-8a5de01b-4337-44eb-9c95-9f93463e82b8.png"
+      ],
+      "generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-3b2f9d3e-ffb0-42ce-8858-574d4c27440f.png",
+      "selected_generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-8f8554cb-b576-41cd-985d-85ca53f190a5.png",
+      "review_note": "Child decorates same paper jaguar mask with pendant; mother photographs, Q nearby. Extra posed Chano removed. No supernatural talisman.",
+      "approval_scope": "Native image, reading page and imposed A3 side visually reviewed for revision proof; final artistic and press approval pending",
+      "edits": [
+        {
+          "prompt": "Use case: precise-object-edit. Image1 edit target. Remove the mustached man (Chano) standing beside the girl. This is her family picture, not a posed three-person publicity group. Leave natural open space where he stood. Keep mother taking photo, exact striped-shirt girl and same paper jaguar mask with small ordinary oval pendant at its forehead, Q nearby, bus and shaded station. The phone preview should match girl with Q nearby, not display two human adults; use tiny simplified silhouettes, no detailed faces or readable UI. Remove arbitrary large number 4 on building. Preserve Goya etching/aquatint, sparse drawn contours, full bleed, WHITE highlights, neutral grayscale; simplify girl's facial modeling to economical expressive drawn marks, not photo texture. Preserve Q short dark long-sleeved jacket, mechanical sampling mouth, slim segmented head, stance. No new people, no glow, no border.",
+          "references": [
+            "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-3b2f9d3e-ffb0-42ce-8858-574d4c27440f.png"
+          ],
+          "generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-8f8554cb-b576-41cd-985d-85ca53f190a5.png"
+        }
+      ]
     }
   ],
   "layout_constraints": {
@@ -350,5 +636,144 @@
     "illustration_gate_rejects_planned_art": true,
     "approved_plates": 0,
     "print_job_sent": false
+  },
+  "reference_verification": [
+    {
+      "path": "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/goya-pilot/references/capricho-43-met.jpg",
+      "sha256": "122aa775d975c4aa8d96e7ecbbfe02626c36c12f42cb4bfafbfc59dbafc52fa8"
+    },
+    {
+      "path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-9f32091f-a48f-4aa7-a6e9-86db4287633b.png",
+      "sha256": "6afbc095baf2ec19ed4a1ab03e380820643b7e0edc8ba0b32f494728f732bdcb"
+    },
+    {
+      "path": "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-16/plate-03.png",
+      "sha256": "dd467ae6bca43336d834b0b5d0316e85d42e96551f4eb2fa89b14e2c3f83f590"
+    },
+    {
+      "path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-c5f8def0-b68b-43aa-b242-2457ba2950a8.png",
+      "sha256": "3bc22575de2c0a054f06c1d36163629fb137c8eef6f7f49b7c3c224eb7c85911"
+    },
+    {
+      "path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-599941d4-ff7a-4515-8022-d745e544b3eb.png",
+      "sha256": "7f205deb8b6ce77568eddcc788c0be760a076c04dd4999b6effa56d144b0c6ba"
+    },
+    {
+      "path": "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-15/plate-02.png",
+      "sha256": "2a5641d5dddac6dac44fe7c09ffbce523d6695e3b72ab6b3577d82fb7319c22b"
+    },
+    {
+      "path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-5a6d7a70-d324-454a-b0c6-37bc2b6a0037.png",
+      "sha256": "85b2fa56e238f1dc48f81c0977f9a22d41e0fa3f36b6e94f1068818a3e757fbc"
+    },
+    {
+      "path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-e1db4d35-3f47-40cf-bac0-ad57f924b38a.png",
+      "sha256": "b0b2cfdac0456623de15043a83f90b99cc1aa9e650cf164628f4771d4a49c500"
+    },
+    {
+      "path": "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-16/plate-04.png",
+      "sha256": "197946e9b505b3b82c10a36c5c820052664aa4c3b7b9791d8e19332fa4610b73"
+    },
+    {
+      "path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-123fa97a-28f9-470f-af8d-a3a56b4e6a72.png",
+      "sha256": "61677e5351a98a565fa5f8e573bbda627983e0cb5e83a4a77fb3bf09197ac6fb"
+    },
+    {
+      "path": "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-07/plate-09.png",
+      "sha256": "452365a132d36f2beddce89a8db7c08d6aa5fcbadbaa7aae95a2deee35e58ffc"
+    },
+    {
+      "path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-0b0845ad-9845-408b-b977-f744990e35bc.png",
+      "sha256": "8fc0f77c71b50fb24c5c4e7317fb2523a2de36fc61c65cd16a3c4611fb1a37e2"
+    },
+    {
+      "path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-d0218ec3-5d73-4741-9c04-54c15d42895e.png",
+      "sha256": "14ec5d84d9fac92c7f6e614308d89a65ec99a1845f5de20acee629b54fc15a23"
+    },
+    {
+      "path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-0443d44f-60ee-42c3-aa69-0a72f2a6a046.png",
+      "sha256": "215f1d33448e25834e9578fae6edd93e869b7b45557d5a7de800fc99766fda4d"
+    },
+    {
+      "path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-8a5de01b-4337-44eb-9c95-9f93463e82b8.png",
+      "sha256": "da6989aeb49aad536fffa8c9dbafb244884a32db8b6243b4bd152d2e469d2f6e"
+    },
+    {
+      "path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-371946c4-03ac-44b2-a115-27ef7f056afc.png",
+      "sha256": "84465d173332874af922de6fb1ada570ec3ca2c71280d4320a93334a3a0c93d0"
+    },
+    {
+      "path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-3c99d974-9577-46e7-a3f5-27822056f5e0.png",
+      "sha256": "2e5b28b53becab927bf3923ba13c7e931d093781a1c7d61fbb41a48c786b26c7"
+    },
+    {
+      "path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-3b2f9d3e-ffb0-42ce-8858-574d4c27440f.png",
+      "sha256": "65a949ed83e593d7b137b4b4642fd926d49997a80f92d48ff5a76470053f51cd"
+    }
+  ],
+  "style_reference": {
+    "artist": "Francisco de Goya",
+    "work": "El sueño de la razon produce monstruos, Capricho 43",
+    "date": 1799,
+    "source": "https://www.metmuseum.org/art/collection/search/338473",
+    "role": "Graphic language only, not scene, antique substrate, border or caption",
+    "rights": "Public domain; source provenance in goya-pilot/manifest.json"
+  },
+  "proof_outputs": {
+    "reading": {
+      "path": "output/pdf/ingenious-issue-18-revised-en-bw.pdf",
+      "sha256": "d6aa707e6cc1ddd434bdc7b8608ed9345ba05e5e57bda799527a1a7c2da2b713"
+    },
+    "a3": {
+      "path": "output/pdf/ingenious-issue-18-revised-en-bw-a3.pdf",
+      "sha256": "02fed40f8c9f1d2d2f6aa2a4f22721848bfa312fe824723bfa42663b36c86970"
+    }
+  },
+  "production_review": "novel/development/ISSUE_18_PRODUCTION.md",
+  "production_verification": {
+    "result": "pass",
+    "baseline_commit": "f192b535",
+    "words_in_exact_source_order": 3188,
+    "reference_hashes_checked": 18,
+    "other_21_manifests_byte_unchanged": true,
+    "reading_pages": 24,
+    "a3_sides": 12,
+    "duplex_sheets": 6,
+    "unique_native_plates": 12,
+    "actual_a3_slots_checked": 24,
+    "all_chapters_unchanged": 22,
+    "all_facing_mappings_unchanged": 22,
+    "previous_issue_pdfs_unchanged": 34,
+    "effective_dpi": [
+      149.9,
+      149.9,
+      149.9,
+      149.9,
+      149.9,
+      149.9,
+      149.9,
+      149.9,
+      149.9,
+      149.9,
+      149.9,
+      149.9
+    ],
+    "embedded_font_subsets": {
+      "reading": 5,
+      "a3": 6
+    },
+    "text_background": "unpainted",
+    "lossless_DeviceGray_images": 12,
+    "print_job_sent": false,
+    "a_plus_certified": false,
+    "pdf_hashes": {
+      "reading": "d6aa707e6cc1ddd434bdc7b8608ed9345ba05e5e57bda799527a1a7c2da2b713",
+      "a3": "02fed40f8c9f1d2d2f6aa2a4f22721848bfa312fe824723bfa42663b36c86970"
+    },
+    "native_images_visually_reviewed": 12,
+    "reading_pages_visually_reviewed": 24,
+    "a3_sides_visually_reviewed": 12,
+    "initial_generations": 12,
+    "targeted_edits": 10
   }
 }

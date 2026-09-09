@@ -13,11 +13,18 @@ under review. The same-text typography comparison supports retaining left-aligne
 body columns: the tested justification introduced distracting word spacing.
 No issue pagination changed for this comparison.
 
-Chapter Eighteen's latest source revision now plans twenty-four comic pages,
-twelve unique plates and six duplex A3 sheets at Georgia 13.8/19.55. The internal
-layout preserves all 3,188 words in continuous left-aligned columns. All twelve
-plates remain ungenerated; this is not a finished illustrated issue. See its
-[updated facing-text plan](../illustrations/revised/issue-18/manifest.json) and
+Issue Eighteen now has a complete [24-page reading proof](../pdf/ingenious-issue-18-revised-en-bw.pdf)
+and [twelve-side A3 folding proof](../pdf/ingenious-issue-18-revised-en-bw-a3.pdf).
+Twelve unique plates include the cover; all 3,188 words flow continuously in
+left-aligned Georgia 13.8/19.55 columns. Every reading page and A3 side was visually
+reviewed, and all 24 imposed positions passed content and clipping checks.
+Six nested duplex sheets: landscape, actual size, short-edge flip, all twelve
+sides, no second booklet layout. Text backgrounds are unpainted and plates use
+lossless grayscale. No print job was sent; the Epson's physical stacking is untested.
+Native art remains about 150 dpi, with some naturalistic detail still requiring
+final Goya-style review. Not an A+ press master. See the
+[full prompts and verification](../illustrations/revised/issue-18/manifest.json),
+[production review](../../novel/development/ISSUE_18_PRODUCTION.md) and
 [voice and simulation review](../../novel/development/CHAPTER_18_FRESH_CONTEXT_REVIEW.md).
 
 Issue Seventeen now has a complete [twenty-page reading proof](../pdf/ingenious-issue-17-revised-en-bw.pdf)

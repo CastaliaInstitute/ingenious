@@ -1,5 +1,23 @@
 # Motivation revision: working record
 
+## Latest production checkpoint: Issue Eighteen
+
+Issue Eighteen now has twelve unique scene-bound illustrations, 24 reading pages
+and twelve A3 sides for six nested duplex sheets. All 3,188 words flow at Georgia
+13.8/19.55 without manual page breaks. All native plates, reading pages and A3
+sides were visually inspected; source order, all 24 actual imposed positions,
+native lossless grayscale, embedded fonts and eighteen reference hashes passed.
+Ten image edits addressed photographic drift, invented props, character placement
+and Q's supported knee. See `ISSUE_18_PRODUCTION.md` and the full prompt manifest.
+
+All chapter texts, facing mappings, the outline, other 21 manifests and 34 prior
+issue PDFs remain unchanged from `f192b535`. The typography question was qualified
+against the saved spacing test; production remains left-aligned. Native art is
+about 150 dpi, and some naturalistic modeling still needs a stricter Goya pass.
+Revision proofs only: no A+ certification, new faculty review or printing.
+Issue Fourteen replacement, earlier style audit, Issues 19-22 production, broader
+literary review and Spanish synchronization remain. The goal is active.
+
 ## Latest voice checkpoint: Chapter Eighteen
 
 Ana and Q now turn Mateo's repeated training request into a specific handover
@@ -16,9 +34,9 @@ words fit twenty-four comic pages at Georgia 13.8/19.55, with twelve planned
 plates and six A3 duplex sheets. All eleven text pages and the inner A3 spread
 were visually checked; exact source order, all 24 imposed text positions and
 all 22 source bindings pass. Other chapters/manifests and 34 earlier issue PDFs
-are unchanged. No art or finished illustrated Issue Eighteen proof is claimed.
-Next is its complete Goya plate set and PDF verification, alongside the earlier
-art correction and whole-book work. No printing or A+ certification. Goal active.
+are unchanged. This source checkpoint preceded the completed illustration
+production recorded above. Its internal layout was not itself a finished issue.
+No printing or A+ certification. Goal active.
 
 ## Latest production checkpoint: Issue Seventeen
 
