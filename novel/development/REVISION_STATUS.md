@@ -1,5 +1,22 @@
 # Motivation revision: working record
 
+## Latest art checkpoint: Issue Nineteen, selected scenes
+
+Three scene drawings and a three-spread A3 art proof are saved: reunion (source
+page 2), school call (6) and Evaristo's closed packet (8). Fresh Goya-reference
+drawings replaced naturalistic initial attempts; edits corrected Q's sleeves,
+framing, white reserves and incidental geography. All three native selections and
+rendered spreads were inspected. Exact facing text, native lossless grayscale,
+embedded fonts and nineteen input/output hashes pass. See
+`ISSUE_19_GOYA_SCENE_REVIEW.md` and the full prompt manifest.
+
+All manuscript/outline text, 22 actual source bindings and facing mappings and
+36 earlier PDFs remain unchanged from `5ad0cee3`. Seven plates remain unselected;
+the complete issue gate stays closed. This is not a folding file or an A+ press
+master, and no printing occurred. Native resolution is about 143 dpi. The packet
+drawing is stylistically strongest; present-day background detail still needs
+restraint. Complete Issue 19 production and the broader goal remain unfinished.
+
 ## Latest voice checkpoint: Chapter Nineteen
 
 The forgotten school letter now produces a call: the retired teacher says parents

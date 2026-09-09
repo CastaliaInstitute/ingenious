@@ -13,10 +13,17 @@ under review. The same-text typography comparison supports retaining left-aligne
 body columns: the tested justification introduced distracting word spacing.
 No issue pagination changed for this comparison.
 
-Chapter Nineteen now has a revised 2,610-word source and ten-plate exact-facing
+Issue Nineteen has a [three-spread Goya scene proof](../pdf/ingenious-issue-19-goya-scene-proofs-a3.pdf)
+for source pages 2, 6 and 8, using three selected new drawings. All three spreads
+and exact facing text were checked, with unpainted text backgrounds and native
+lossless grayscale art. This is an A3 art-review file, not a complete issue or
+folding booklet. Seven plates remain unselected; no print job was sent. See the
+[art review](../../novel/development/ISSUE_19_GOYA_SCENE_REVIEW.md).
+
+Chapter Nineteen has a revised 2,610-word source and ten-plate exact-facing
 plan: twenty comic pages at Georgia 13.5/19.125, ten A3 sides for five sheets.
 All source words, nine text pages and twenty imposed positions were checked in
-an internal layout. Its illustrations are still planned: no final Issue Nineteen
+an internal layout. Its illustration set is incomplete: no final Issue Nineteen
 PDF is being released at this checkpoint. The school call, unchanged banner and
 disputed draft opening now have separate scene briefs. See the
 [revision and simulation review](../../novel/development/CHAPTER_19_FRESH_CONTEXT_REVIEW.md)

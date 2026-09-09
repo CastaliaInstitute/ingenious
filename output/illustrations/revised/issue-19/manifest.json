@@ -6,14 +6,14 @@
   "page_count": 20,
   "text_font": "Georgia 13.5/19.125 pt",
   "plate_count_including_cover": 10,
-  "status": "revised source and ten-plate exact-facing plan; twenty-page internal layout, all illustrations remain planned",
-  "character_reference": "output/illustrations/revised/issue-01/cover.png",
+  "status": "Three Goya scene-proof selections; remaining seven plates not selected; complete Issue 19 production gate remains closed",
+  "character_reference": "output/illustrations/revised/issue-19/plate-01.png",
   "chano_reference": "output/illustrations/revised/issue-03/plate-06.png",
   "lucia_reference": "output/illustrations/revised/issue-03/plate-04.png",
   "custodian_design_source": "output/illustrations/revised/issue-16/manifest.json",
   "character_design": "Q retains the approved narrow segmented head, round ear mechanisms, exposed neck, question-mark breastplate, short fitted dark jacket with long sleeves and supported knee. Present Custodian is male, tall, about sixty, long gray hair tied back except for the reunion's escaped tie, glasses, white work shirt and boots. The earlier expedition needs the same man younger, darker long hair and glasses, not a different sex or a colonial cleric. Chano and Lucía follow approved references. Evaristo is the fictionalized relative with a closed packet; Q is absent from the old expedition. Q's lower face includes a small mechanical sampling mouth; do not simplify it into a blank mask. Use the corrected Goya pilot for Q-family identity, not photographic surface detail.",
   "art_direction": "Neutral monochrome Goya-inspired etching and aquatint with economical drawn contours and broad tonal masses, white highlights, no cream or sepia background ink. Full-bleed plates at trim with separate typeset caption margin. Nine exact-facing scenes and one distinct cover. Present Amealco has pine/oak uplands and an old data-center yard; earlier expedition uses vans and scanning equipment in an unnamed town. Preserve confidential material and avoid inventing the letters' contents or final fate. Notebook contains contacts and references, not passwords. Governing reference: novel/development/GOYA_ART_DIRECTION.md. Earlier plates guide identity only; do not imitate their photographic rendering.",
-  "approval_scope": "Source-bound plan only: twenty comic pages, ten planned plates including cover, ten A3 landscape sides / five short-edge duplex sheets. Georgia 13.5/19.125 pt with substantial final columns. No Issue 19 images generated or approved; no final illustrated PDF or print job.",
+  "approval_scope": "Partial art checkpoint only: three selected scene drawings opposite source pages 2, 6 and 8. Twenty-page chapter plan remains unchanged. Seven plates including cover still need selected art. No complete illustrated Issue 19 PDF, A+ approval or printing.",
   "plates": [
     {
       "plate_id": "issue-19-cover",
@@ -46,7 +46,14 @@
         11
       ],
       "asset": "output/illustrations/revised/issue-19/plate-01.png",
-      "status": "planned"
+      "status": "scene-proof-selected",
+      "selected_generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-dea9f629-67f3-492a-a1ad-51b0195b8678.png",
+      "asset_sha256": "d93321306ac7ae28712cac9778f2316a461b74b7a3eba168e05dc814a8100bfb",
+      "native_pixels": [
+        1075,
+        1463
+      ],
+      "visual_review": "Native drawing and complete rendered A3 facing spread inspected. Full-bleed trim crop, separate caption, facing action, Q's long sleeves/mouth/right-knee support where shown and the male Custodian checked. Selected for this scene proof, not full-issue or A+ approval."
     },
     {
       "caption": "She Wrote Twice",
@@ -95,7 +102,14 @@
         33
       ],
       "asset": "output/illustrations/revised/issue-19/plate-03.png",
-      "status": "planned"
+      "status": "scene-proof-selected",
+      "selected_generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-c680eebb-713d-49e9-885f-321580a8d62f.png",
+      "asset_sha256": "75080829178f09c34c36284baddf541f112159ca33e38b39486e8f3499490450",
+      "native_pixels": [
+        1075,
+        1463
+      ],
+      "visual_review": "Native drawing and complete rendered A3 facing spread inspected. Full-bleed trim crop, separate caption, facing action, Q's long sleeves/mouth/right-knee support where shown and the male Custodian checked. Selected for this scene proof, not full-issue or A+ approval."
     },
     {
       "caption": "The Packet Not Offered",
@@ -120,7 +134,14 @@
         45
       ],
       "asset": "output/illustrations/revised/issue-19/plate-04.png",
-      "status": "planned"
+      "status": "scene-proof-selected",
+      "selected_generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-39376056-a95d-4175-acf2-9bcb0791299c.png",
+      "asset_sha256": "2b094b0a694a43c419d590e57f902bc6bbd4df7a0ac5124d89838fade6df029a",
+      "native_pixels": [
+        1075,
+        1463
+      ],
+      "visual_review": "Native drawing and complete rendered A3 facing spread inspected. Full-bleed trim crop, separate caption, facing action, Q's long sleeves/mouth/right-knee support where shown and the male Custodian checked. Selected for this scene proof, not full-issue or A+ approval."
     },
     {
       "caption": "Stronger Cord",
@@ -309,5 +330,372 @@
     "font_pt": 13.5,
     "leading_pt": 19.125,
     "manual_page_breaks": false
-  }
+  },
+  "generation_mode": "Built-in image_gen; separate calls per image and targeted edit. No CLI fallback.",
+  "generation_attempts": [
+    {
+      "plate_id": "issue-19-cover",
+      "prompt": "Use case: illustration-story. Create ONE new portrait full-bleed Goya-inspired etching/aquatint narrative illustration. Input images are CHARACTER and clean white/black ink references ONLY, NOT scenes to copy. Sparse expressive hand-drawn contours and broad flat aquatint tones; no photographic faces, no skin pores, no lens realism, no glossy CGI, no finely engraved detail covering every surface. White reserves must be UNIFORM PURE WHITE RGB255,255,255, neutral black/gray ink, absolutely NO cream, ivory, sepia, stained paper or texture over white. Contemporary Mexican clothes and infrastructure. Q retains the two images' slim narrow segmented oval robot head, round eyes, concentric circular ears, long mechanical neck, small mechanical mouth and hinged jaw, question-mark chest, SHORT fitted dark jacket with LONG sleeves; external RIGHT-knee brace when visible. Present Custodian is a tall male about sixty with long tied-back gray hair, glasses and short beard, plain white work shirt. In the historical expedition ONLY, show him younger with long DARK hair and glasses. Preserve the text's specific action, not generic posed portrait. No text, caption, frame, page mockup or supernatural Goya animals. Art goes to all four edges, keep heads/hands crop safe.\nScene: Wide view of the Amealco reading room with Q and the tall, long-haired male Custodian at the table, papers and a suitcase beside them. Through the windows, pines and sloping fields border a working data-center service yard with a reversing truck where a prospectus promised a garden. The institution's everyday contradictions remain physical, not spectral. No evil-master pose or farewell deathbed; leave space for the separately typeset title.\nLocation: Amealco rural wooded institute, pine and oak silhouettes, plain former data-center building/service yard. No palm tree, picturesque city rooftops or prominent church tower.\n\n\n",
+      "referenced_image_paths": [
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-01f3f196-24ca-4138-8693-594023e01f2d.png",
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-5fa1d602-5287-49cb-8b62-f27d42b7323b.png"
+      ],
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-564b15e0-254d-4114-a10f-b4a4a6173fcd.png",
+      "decision": "not selected: naturalistic engraved rendering"
+    },
+    {
+      "plate_id": "issue-19-plate-01",
+      "prompt": "Use case: illustration-story. New single portrait illustration for The Ingenious Machine by A. Cervantes. Full-bleed art only, no typography, no caption, no border, no mockup. Reference 1 controls STYLE ONLY: Goya's Los Caprichos, economical wiry etched contour, broad flat granular aquatint masses, stark paper-white reserves, expressive slightly distorted drawn faces and hands, compressed space, selective detail. Absolutely not a photo with engraving filter, no smooth sculpted 3D shading, no pores, no intricate texture on every surface. References 2 and 3 control CHARACTER IDENTITY ONLY, not naturalistic rendering or their specific scenes. Neutral black and gray ink with pure white exposed paper; no ivory substrate, sepia, distressed page, halos or parchment. Contemporary Mexican setting, not colonial costume. Q: slim segmented narrow oval robot head, round eyes and concentric circular ears, long articulated neck, SMALL OPEN MECHANICAL SAMPLING MOUTH AND HINGED LOWER JAW, question-mark chest, short fitted dark jacket with LONG sleeves, articulated hands, external RIGHT-knee support when visible. Custodian: MALE, tall, about sixty, long gray hair tied back, glasses, short gray beard, ordinary white work shirt. No knight, no halo or creatures from Goya. The humor and emotion come from ordinary gestures. Keep crop-safe heads and hands while tones extend to all edges. \nSpecific scene: At Amealco, the tall older male Custodian looks into his suitcase while his glasses rest on top of his head and his long gray hair escapes its tie. Q stands nearby enjoying the reunion, short fitted dark long-sleeved jacket and supported knee unchanged. Visitor badge and ordinary luggage, not prison shackles. Warm restrained comedy; keep glasses only in the on-head position, not simultaneously on his face.\nSingle image depicting only this event. Caption will be typeset separately outside the art: The Third Attempt. Do not print those words.",
+      "referenced_image_paths": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/goya-pilot/references/capricho-43-met.jpg",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-18/plate-05.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-16/plate-04.png"
+      ],
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-68ec908c-c8c6-4a5f-8825-1d3ddcf5b6c0.png",
+      "decision": "not selected: naturalistic engraved rendering"
+    },
+    {
+      "plate_id": "issue-19-plate-02",
+      "prompt": "Use case: illustration-story. Create ONE new portrait full-bleed Goya-inspired etching/aquatint narrative illustration. Input images are CHARACTER and clean white/black ink references ONLY, NOT scenes to copy. Sparse expressive hand-drawn contours and broad flat aquatint tones; no photographic faces, no skin pores, no lens realism, no glossy CGI, no finely engraved detail covering every surface. White reserves must be UNIFORM PURE WHITE RGB255,255,255, neutral black/gray ink, absolutely NO cream, ivory, sepia, stained paper or texture over white. Contemporary Mexican clothes and infrastructure. Q retains the two images' slim narrow segmented oval robot head, round eyes, concentric circular ears, long mechanical neck, small mechanical mouth and hinged jaw, question-mark chest, SHORT fitted dark jacket with LONG sleeves; external RIGHT-knee brace when visible. Present Custodian is a tall male about sixty with long tied-back gray hair, glasses and short beard, plain white work shirt. In the historical expedition ONLY, show him younger with long DARK hair and glasses. Preserve the text's specific action, not generic posed portrait. No text, caption, frame, page mockup or supernatural Goya animals. Art goes to all four edges, keep heads/hands crop safe.\nScene: Present-day Amealco reading-room table: the tall male Custodian finds the teacher's second letter behind the success letter while Q asks whether he has her number. Phone still on table, no call yet on this facing page. Old teacher not physically present, no readable pupil records. Two distinct sheets and old photograph among presentation papers, not a repaired printer.\nLocation: Amealco rural wooded institute, pine and oak silhouettes, plain former data-center building/service yard. No palm tree, picturesque city rooftops or prominent church tower.\n\n\n",
+      "referenced_image_paths": [
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-01f3f196-24ca-4138-8693-594023e01f2d.png",
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-5fa1d602-5287-49cb-8b62-f27d42b7323b.png"
+      ],
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-89bd5714-9f22-4657-92c0-a1df0545e78a.png",
+      "decision": "not selected: naturalistic engraved rendering"
+    },
+    {
+      "plate_id": "issue-19-plate-03",
+      "prompt": "Use case: illustration-story. New single portrait illustration for The Ingenious Machine by A. Cervantes. Full-bleed art only, no typography, no caption, no border, no mockup. Reference 1 controls STYLE ONLY: Goya's Los Caprichos, economical wiry etched contour, broad flat granular aquatint masses, stark paper-white reserves, expressive slightly distorted drawn faces and hands, compressed space, selective detail. Absolutely not a photo with engraving filter, no smooth sculpted 3D shading, no pores, no intricate texture on every surface. References 2 and 3 control CHARACTER IDENTITY ONLY, not naturalistic rendering or their specific scenes. Neutral black and gray ink with pure white exposed paper; no ivory substrate, sepia, distressed page, halos or parchment. Contemporary Mexican setting, not colonial costume. Q: slim segmented narrow oval robot head, round eyes and concentric circular ears, long articulated neck, SMALL OPEN MECHANICAL SAMPLING MOUTH AND HINGED LOWER JAW, question-mark chest, short fitted dark jacket with LONG sleeves, articulated hands, external RIGHT-knee support when visible. Custodian: MALE, tall, about sixty, long gray hair tied back, glasses, short gray beard, ordinary white work shirt. No knight, no halo or creatures from Goya. The humor and emotion come from ordinary gestures. Keep crop-safe heads and hands while tones extend to all edges. \nSpecific scene: The present-day older male Custodian pauses turning pages while speaking to the retired teacher by telephone; Q sits nearby and their schedule lies on the table. A small face-down or indistinct school photograph is among the earlier presentation papers. Teacher remains off-scene: no invented classroom portrait or completed new printer delivery. Focus on interrupted gesture, not guilt allegory. Private number and school records unreadable.\nSingle image depicting only this event. Caption will be typeset separately outside the art: The Photograph He Asked For. Do not print those words.",
+      "referenced_image_paths": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/goya-pilot/references/capricho-43-met.jpg",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-18/plate-05.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-16/plate-04.png"
+      ],
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-1d9f996c-88e2-45a9-8230-5b4a77e115d2.png",
+      "decision": "not selected: naturalistic engraved rendering"
+    },
+    {
+      "plate_id": "issue-19-plate-04",
+      "prompt": "Use case: illustration-story. Create ONE new portrait full-bleed Goya-inspired etching/aquatint narrative illustration. Input images are CHARACTER and clean white/black ink references ONLY, NOT scenes to copy. Sparse expressive hand-drawn contours and broad flat aquatint tones; no photographic faces, no skin pores, no lens realism, no glossy CGI, no finely engraved detail covering every surface. White reserves must be UNIFORM PURE WHITE RGB255,255,255, neutral black/gray ink, absolutely NO cream, ivory, sepia, stained paper or texture over white. Contemporary Mexican clothes and infrastructure. Q retains the two images' slim narrow segmented oval robot head, round eyes, concentric circular ears, long mechanical neck, small mechanical mouth and hinged jaw, question-mark chest, SHORT fitted dark jacket with LONG sleeves; external RIGHT-knee brace when visible. Present Custodian is a tall male about sixty with long tied-back gray hair, glasses and short beard, plain white work shirt. In the historical expedition ONLY, show him younger with long DARK hair and glasses. Preserve the text's specific action, not generic posed portrait. No text, caption, frame, page mockup or supernatural Goya animals. Art goes to all four edges, keep heads/hands crop safe.\nScene: Earlier scanning expedition: Evaristo keeps his hand on the closed packet while the younger male Custodian explains that it need not be offered for copying. A practical scanning desk and the edge of a van or equipment case locate the period as the institute's earlier work, not colonial Mexico. Custodian is recognizable but younger, long darker hair and glasses. Q has not arrived or witnessed this memory. No open letters or invented sister portrait.\n\nEvaristo: middle-aged ordinary Mexican man with short dark hair, plain light shirt and dark trousers; his palm rests on a closed tied paper packet. The younger Custodian sits opposite without reaching for it. No Q anywhere in this historical scene.\n\n",
+      "referenced_image_paths": [
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-01f3f196-24ca-4138-8693-594023e01f2d.png",
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-5fa1d602-5287-49cb-8b62-f27d42b7323b.png"
+      ],
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-af003766-7543-4083-be27-00110b8980af.png",
+      "decision": "not selected: naturalistic engraved rendering"
+    },
+    {
+      "plate_id": "issue-19-plate-01",
+      "prompt": "Use case: style-transfer. Image 1 is the edit target. Image 2 is Goya graphic-language reference only. Redraw image 1 as an actual economical Goya aquatint, NOT the existing realistic illustration with texture applied. Preserve the exact two characters and their current action, face/head identity, clothes, small mechanical mouth, glasses ONLY on top of Custodian's head and open suitcase; Q's externally braced right knee. Replace realistic face modeling and dense incidental detail with sparse, searching hand-etched outlines, expressive angular shapes, broad flat black aquatint shadows, much larger PURE WHITE paper reserves (#FFFFFF) on faces, shirt and open background. Reduce incidental descriptive strokes by at least two thirds. No simulated paper texture in white areas, no warm wash, no uniformly engraved surface, no smooth gradients. Correct the incidental location to Amealco institute's rural pine-and-oak uplands: remove palm trees, church towers and old town rooftop view; use simple silhouettes of pine trees and a plain working data-center service building beyond. This is rural contemporary Mexico, not a tourist postcard. Keep vertical full-bleed composition, no decorative border, no text, no additional people or props.",
+      "referenced_image_paths": [
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-68ec908c-c8c6-4a5f-8825-1d3ddcf5b6c0.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/goya-pilot/references/capricho-43-met.jpg"
+      ],
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-c31bd01e-7c37-41fd-a810-8f8d0d7cc357.png",
+      "decision": "not selected: corrected setting but old rendering persists"
+    },
+    {
+      "plate_id": "issue-19-plate-03",
+      "prompt": "Use case: style-transfer. Image 1 is the edit target. Image 2 is Goya graphic-language reference only. Redraw image 1 as an actual economical Goya aquatint, NOT the existing realistic illustration with texture applied. Preserve the exact two characters and their current action, face/head identity, clothes, small mechanical mouth, Custodian's phone at his ear, hand pausing with page, glasses, Q listening. Replace realistic face modeling and dense incidental detail with sparse, searching hand-etched outlines, expressive angular shapes, broad flat black aquatint shadows, much larger PURE WHITE paper reserves (#FFFFFF) on faces, shirt and open background. Reduce incidental descriptive strokes by at least two thirds. No simulated paper texture in white areas, no warm wash, no uniformly engraved surface, no smooth gradients. Correct the incidental location to Amealco institute's rural pine-and-oak uplands: remove palm trees, church towers and old town rooftop view; use simple silhouettes of pine trees and a plain working data-center service building beyond. This is rural contemporary Mexico, not a tourist postcard. Keep vertical full-bleed composition, no decorative border, no text, no additional people or props.",
+      "referenced_image_paths": [
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-1d9f996c-88e2-45a9-8230-5b4a77e115d2.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/goya-pilot/references/capricho-43-met.jpg"
+      ],
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-c57c5f7a-47ae-4fbc-9824-277f3ed9edc3.png",
+      "decision": "not selected: corrected setting but old rendering persists"
+    },
+    {
+      "plate_id": "issue-19-plate-01",
+      "prompt": "Precise color/background edit of this drawing. Preserve every shape, contour, character, pose, object and crop. Remove the simulated aged cream paper and fine stains from all exposed paper-white reserves: these regions must become uniform pure white RGB 255,255,255. Neutralize remaining ink to black and neutral gray (equal R,G,B). Keep broad aquatint shadows and etched lines; do not wash out shadows or redraw faces. No beige, yellow, off-white, ivory, parchment, sepia or paper-grain overlay. This is ink on clean modern white paper, not a scan of an antique page. No border or text.",
+      "referenced_image_paths": [
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-c31bd01e-7c37-41fd-a810-8f8d0d7cc357.png"
+      ],
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-01f3f196-24ca-4138-8693-594023e01f2d.png",
+      "decision": "not selected: clean white, useful comparison, insufficient style correction"
+    },
+    {
+      "plate_id": "issue-19-plate-03",
+      "prompt": "Precise color/background edit of this drawing. Preserve every shape, contour, character, pose, object and crop. Remove the simulated aged cream paper and fine stains from all exposed paper-white reserves: these regions must become uniform pure white RGB 255,255,255. Neutralize remaining ink to black and neutral gray (equal R,G,B). Keep broad aquatint shadows and etched lines; do not wash out shadows or redraw faces. No beige, yellow, off-white, ivory, parchment, sepia or paper-grain overlay. This is ink on clean modern white paper, not a scan of an antique page. No border or text.",
+      "referenced_image_paths": [
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-c57c5f7a-47ae-4fbc-9824-277f3ed9edc3.png"
+      ],
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-5fa1d602-5287-49cb-8b62-f27d42b7323b.png",
+      "decision": "not selected: clean white, useful comparison, insufficient style correction"
+    },
+    {
+      "plate_id": "issue-19-plate-04",
+      "prompt": "Redraw the scene in Image 1 completely in the visual grammar of Francisco Goya's Los Caprichos. Image 2 is the governing style reference. Do NOT trace or filter Image 1. Its role is ONLY narrative arrangement and identities. The result must look like a loose original 1799 etched-and-aquatinted invention of a modern encounter: searching thin scratched contours; irregular angular hands; faces described in just a few emphatic lines, cheeks left blank; compressed, flattened perspective; broad velvety flat aquatint masses; deliberately omitted incidental details. Not an accomplished photorealistic book engraving. No realistic muscles, skin shading, pores, woodgrain, fabric weave, 3D rivets or optically precise scenery. Entire background collapses to a tent diagonal, a blank flat van silhouette and an indistinct landscape horizon. Not a detailed building, church or picturesque village. Preserve two adult men: at left Evaristo with short dark hair, his hand resting on a CLOSED flat packet tied in string; at right the younger male Custodian, long tied-back dark hair, glasses, plain white shirt, palm raised without reaching for the packet. No robot and no extra people. WHITE paper, neutral BLACK and GRAY ink, no simulated yellowed paper, no caption, no border. Let at least one third of the image be completely unmarked white. Portrait full-bleed composition. Aim for economy and uneasy human gesture, not prettiness or photographic fidelity.",
+      "referenced_image_paths": [
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-af003766-7543-4083-be27-00110b8980af.png",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/goya-pilot/references/capricho-43-met.jpg"
+      ],
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-8b5a9e0b-0fa7-425a-bf5b-ce553f3e34a8.png",
+      "decision": "not selected: reduced scenery but traced figure modeling persists"
+    },
+    {
+      "plate_id": "issue-19-plate-04",
+      "prompt": "An original Goya Los Caprichos etching and aquatint: two men arguing gently over a closed tied packet on a table beneath a tent at a modern Mexican scanning expedition. Left: short-haired Evaristo keeps his palm on the packet. Right: the younger Custodian, a tall man with long dark ponytail, glasses and beard, holds up one open hand, declining to take it. A modern van is only a dark rectangular silhouette behind him. Invent the drawing freely: thin nervous contours, elongated figures, expressive awkward hands, angular faces with very few marks, compressed shallow stage, black aquatint voids and blank white reserves. The attached original print supplies the drawing language only; no owl, bat, sleeping figure or lettering. Not photographic realism or fine engraving. Black ink on pure modern white, full-bleed vertical art, no aged paper or decorative border. No robot, no extra people, no open letters. The composition is about who does not take the packet.",
+      "referenced_image_paths": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/goya-pilot/references/capricho-43-met.jpg"
+      ],
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-8dbecb2c-4fb3-4b6b-b0da-e6d052e88258.png",
+      "decision": "intermediate: stronger interpretive drawing, needs edge/white correction"
+    },
+    {
+      "plate_id": "issue-19-plate-01",
+      "prompt": "An original drawing in the manner of Goya's Los Caprichos, etched line and aquatint, contemporary Mexican fiction. Attached museum print is STYLE ONLY; invent a new scene. Thin nervous contours, elongated figures, expressive hands and angular faces, shallow compressed space, broad black masses, intentionally sparse detail. Not photography, realism, fine engraving or 3D rendering. Modern plain clothes and infrastructure, no colonial costumes, no supernatural animals. Full-bleed portrait, pure modern WHITE paper with black/neutral gray ink, no aged substrate, captions, text or frame.\nQ is a slim robot with a NARROW segmented OVAL head, two round inset dark eyes, concentric round ear discs, long jointed neck, SMALL MECHANICAL MOUTH opening with hinged lower jaw, a question-mark breastplate, short fitted DARK LONG-SLEEVED jacket ending at hips, articulated limbs. External support straps around his RIGHT knee when visible. He is alert and socially engaged, not a child or knight. The Custodian is a TALL MALE about sixty, long gray ponytail, glasses, short beard, loose plain white work shirt.\n\nScene: At Amealco, the tall older male Custodian looks into his suitcase while his glasses rest on top of his head and his long gray hair escapes its tie. Q stands nearby enjoying the reunion, short fitted dark long-sleeved jacket and supported knee unchanged. Visitor badge and ordinary luggage, not prison shackles. Warm restrained comedy; keep glasses only in the on-head position, not simultaneously on his face.\nAmealco location: plain former data-center building and pine silhouettes. No church or palm trees. Preserve clean white reserves; avoid pores, woodgrain and photographic likeness.",
+      "referenced_image_paths": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/goya-pilot/references/capricho-43-met.jpg"
+      ],
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-97407e92-f066-4d3e-8fbc-36c262390bdd.png",
+      "decision": "intermediate: stronger drawn style, rolled sleeves and border need correction"
+    },
+    {
+      "plate_id": "issue-19-plate-03",
+      "prompt": "An original drawing in the manner of Goya's Los Caprichos, etched line and aquatint, contemporary Mexican fiction. Attached museum print is STYLE ONLY; invent a new scene. Thin nervous contours, elongated figures, expressive hands and angular faces, shallow compressed space, broad black masses, intentionally sparse detail. Not photography, realism, fine engraving or 3D rendering. Modern plain clothes and infrastructure, no colonial costumes, no supernatural animals. Full-bleed portrait, pure modern WHITE paper with black/neutral gray ink, no aged substrate, captions, text or frame.\nQ is a slim robot with a NARROW segmented OVAL head, two round inset dark eyes, concentric round ear discs, long jointed neck, SMALL MECHANICAL MOUTH opening with hinged lower jaw, a question-mark breastplate, short fitted DARK LONG-SLEEVED jacket ending at hips, articulated limbs. External support straps around his RIGHT knee when visible. He is alert and socially engaged, not a child or knight. The Custodian is a TALL MALE about sixty, long gray ponytail, glasses, short beard, loose plain white work shirt.\n\nScene: The present-day older male Custodian pauses turning pages while speaking to the retired teacher by telephone; Q sits nearby and their schedule lies on the table. A small face-down or indistinct school photograph is among the earlier presentation papers. Teacher remains off-scene: no invented classroom portrait or completed new printer delivery. Focus on interrupted gesture, not guilt allegory. Private number and school records unreadable.\nAmealco location: plain former data-center building and pine silhouettes. No church or palm trees. Preserve clean white reserves; avoid pores, woodgrain and photographic likeness.",
+      "referenced_image_paths": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/goya-pilot/references/capricho-43-met.jpg"
+      ],
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-ac1ee5bc-a864-4d9d-9f31-a84ecf821c5a.png",
+      "decision": "intermediate: stronger drawn style, rolled sleeves and border need correction"
+    },
+    {
+      "plate_id": "issue-19-plate-01",
+      "prompt": "Edit this Goya-style DRAWING without changing its distinctive loose line, angular faces, proportions, poses or broad aquatint tones. Q's jacket must have full-length DARK SLEEVES that cover both forearms down to the mechanical wrists; leave only the hands bare. Keep his narrow segmented head, small hinged mouth, circular ears, question-mark chest and right-knee support.  Remove all outer white framing/margins by extending the existing drawn scene to the four image edges; do not cut off heads or hands. Keep substantial white reserves INSIDE the drawing. Neutral black/gray ink and uniform clean PURE WHITE paper reserves, no ivory or antique page texture. Remove the Amealco lettering and visitor-tag lettering; keep the blank sign area and tag. Custodian glasses remain only on top of his head. No added text, caption or frame. Do not make the drawing photorealistic or smooth.",
+      "referenced_image_paths": [
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-97407e92-f066-4d3e-8fbc-36c262390bdd.png"
+      ],
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-dea9f629-67f3-492a-a1ad-51b0195b8678.png",
+      "decision": "selected for scene proof; not whole-issue final approval"
+    },
+    {
+      "plate_id": "issue-19-plate-03",
+      "prompt": "Edit this Goya-style DRAWING without changing its distinctive loose line, angular faces, proportions, poses or broad aquatint tones. Q's jacket must have full-length DARK SLEEVES that cover both forearms down to the mechanical wrists; leave only the hands bare. Keep his narrow segmented head, small hinged mouth, circular ears, question-mark chest and right-knee support.  Remove all outer white framing/margins by extending the existing drawn scene to the four image edges; do not cut off heads or hands. Keep substantial white reserves INSIDE the drawing. Neutral black/gray ink and uniform clean PURE WHITE paper reserves, no ivory or antique page texture.  No added text, caption or frame. Do not make the drawing photorealistic or smooth.",
+      "referenced_image_paths": [
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-ac1ee5bc-a864-4d9d-9f31-a84ecf821c5a.png"
+      ],
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-c680eebb-713d-49e9-885f-321580a8d62f.png",
+      "decision": "selected for scene proof; not whole-issue final approval"
+    },
+    {
+      "plate_id": "issue-19-plate-04",
+      "prompt": "Edit this Goya-style DRAWING without changing its distinctive loose line, angular faces, proportions, poses or broad aquatint tones. Keep Evaristo's hand on the unopened packet and the younger male Custodian's raised palm, long dark hair and glasses. Remove all outer white framing/margins by extending the existing drawn scene to the four image edges; do not cut off heads or hands. Keep substantial white reserves INSIDE the drawing. Neutral black/gray ink and uniform clean PURE WHITE paper reserves, no ivory or antique page texture.  No added text, caption or frame. Do not make the drawing photorealistic or smooth.",
+      "referenced_image_paths": [
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-8dbecb2c-4fb3-4b6b-b0da-e6d052e88258.png"
+      ],
+      "generated_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-39376056-a95d-4175-acf2-9bcb0791299c.png",
+      "decision": "selected for scene proof; not whole-issue final approval"
+    }
+  ],
+  "reference_verification": [
+    {
+      "path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-564b15e0-254d-4114-a10f-b4a4a6173fcd.png",
+      "sha256": "d84f0ba1090639e9fdca7a68e90db6496e5c5937d0cb24d25a1d68d1cbd48d72",
+      "bytes": 3588924,
+      "pixels": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-01f3f196-24ca-4138-8693-594023e01f2d.png",
+      "sha256": "2ee0c20167e3aa97adca78fc4bcceefc27a2c892cc0a33380515f75671d33e04",
+      "bytes": 3207974,
+      "pixels": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-5fa1d602-5287-49cb-8b62-f27d42b7323b.png",
+      "sha256": "45171bda4a7aaa0d373a6684f89a88e0e64e5fc721e06e6cf4407329f8ce24ca",
+      "bytes": 3094946,
+      "pixels": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-68ec908c-c8c6-4a5f-8825-1d3ddcf5b6c0.png",
+      "sha256": "0a221e677e29aea92a830110e2bc55b9572e688696b0e85e9ffd7f8de8ec76e3",
+      "bytes": 4062980,
+      "pixels": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "path": "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/goya-pilot/references/capricho-43-met.jpg",
+      "sha256": "122aa775d975c4aa8d96e7ecbbfe02626c36c12f42cb4bfafbfc59dbafc52fa8",
+      "bytes": 1961705
+    },
+    {
+      "path": "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-18/plate-05.png",
+      "sha256": "d648c884a0a384561a2f801024d7503d420f8a7766cdea83a108c6bf7474fd8a",
+      "bytes": 3882596,
+      "pixels": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "path": "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-16/plate-04.png",
+      "sha256": "197946e9b505b3b82c10a36c5c820052664aa4c3b7b9791d8e19332fa4610b73",
+      "bytes": 3762507,
+      "pixels": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-89bd5714-9f22-4657-92c0-a1df0545e78a.png",
+      "sha256": "e72d9a2a3c0b503ee4f9d985dafb92dfb98ada71defb07f278397b91d568f771",
+      "bytes": 3484795,
+      "pixels": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-1d9f996c-88e2-45a9-8230-5b4a77e115d2.png",
+      "sha256": "e04e6383c2026f5b8cd8c028a79fc76003c5783c0deeb21178356a9e163074ec",
+      "bytes": 4014073,
+      "pixels": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-af003766-7543-4083-be27-00110b8980af.png",
+      "sha256": "08b530eb0d36a7c416d8e51b830d60e5deeb655e63938a4aa39a17f1ce79b984",
+      "bytes": 3592960,
+      "pixels": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-c31bd01e-7c37-41fd-a810-8f8d0d7cc357.png",
+      "sha256": "f8e7f0d3442ef8c25b4797dd0491f3bfb50364ce6e04eb8c4978f3a10c071377",
+      "bytes": 3525759,
+      "pixels": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-c57c5f7a-47ae-4fbc-9824-277f3ed9edc3.png",
+      "sha256": "99bd80fd0889dc18ca2306d33b7961ca33e31f81296ef5e6991773a4e99ba670",
+      "bytes": 3483179,
+      "pixels": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-8b5a9e0b-0fa7-425a-bf5b-ce553f3e34a8.png",
+      "sha256": "4b95980a058e2d8531b34459948d9ea5eeb9e76088254f1fc8b5b94be153b20b",
+      "bytes": 3128114,
+      "pixels": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-8dbecb2c-4fb3-4b6b-b0da-e6d052e88258.png",
+      "sha256": "b6069c60ee9857d680f9ff5d084907d835addd109905f569c5d9b088572dff2f",
+      "bytes": 3581276,
+      "pixels": [
+        1075,
+        1464
+      ]
+    },
+    {
+      "path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-97407e92-f066-4d3e-8fbc-36c262390bdd.png",
+      "sha256": "49086c858bf762c7038a232f86aea9f43b980141870abfb7d9a104098a4a02e3",
+      "bytes": 3305854,
+      "pixels": [
+        1075,
+        1464
+      ]
+    },
+    {
+      "path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-ac1ee5bc-a864-4d9d-9f31-a84ecf821c5a.png",
+      "sha256": "4334d29022ef127f21040a84b73ddae00c7a7f6dab1e97f709bf8b9713b0464e",
+      "bytes": 3289375,
+      "pixels": [
+        1075,
+        1464
+      ]
+    },
+    {
+      "path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-dea9f629-67f3-492a-a1ad-51b0195b8678.png",
+      "sha256": "d93321306ac7ae28712cac9778f2316a461b74b7a3eba168e05dc814a8100bfb",
+      "bytes": 3476926,
+      "pixels": [
+        1075,
+        1463
+      ]
+    },
+    {
+      "path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-c680eebb-713d-49e9-885f-321580a8d62f.png",
+      "sha256": "75080829178f09c34c36284baddf541f112159ca33e38b39486e8f3499490450",
+      "bytes": 3463517,
+      "pixels": [
+        1075,
+        1463
+      ]
+    },
+    {
+      "path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-39376056-a95d-4175-acf2-9bcb0791299c.png",
+      "sha256": "2b094b0a694a43c419d590e57f902bc6bbd4df7a0ac5124d89838fade6df029a",
+      "bytes": 3545283,
+      "pixels": [
+        1075,
+        1463
+      ]
+    }
+  ],
+  "art_review": "Photographic continuity references perpetuated naturalistic modeling. Selected fresh drawings instead use the actual Goya print plus verbal character specification, followed by sleeve, border and substrate corrections. These are scene-proof selections, not final artistic certification. Compare all three at reading size before extending the set.",
+  "scene_proof": {
+    "path": "output/pdf/ingenious-issue-19-goya-scene-proofs-a3.pdf",
+    "sha256": "35c810932774b2e51a1fd55e196f9507c51df2e9c6e8df69f8994a8f90a7ce11",
+    "scope": "Three selected A3 spreads, source pages 2-3, 6-7, 8-9. Not a complete issue or folding file.",
+    "verification": {
+      "result": "pass",
+      "baseline": "5ad0cee3",
+      "selected_spreads": 3,
+      "source_pages": [
+        2,
+        6,
+        8
+      ],
+      "words_by_spread": [
+        287,
+        290,
+        299
+      ],
+      "all_22_sources_and_mappings_unchanged": true,
+      "previous_36_pdfs_unchanged": true,
+      "reference_hashes_checked": 19,
+      "embedded_font_subsets": 5,
+      "lossless_native_grayscale_images": 3,
+      "effective_dpi": [
+        142.7,
+        142.7,
+        142.7
+      ],
+      "text_background": "unpainted",
+      "complete_issue_gate_rejects_partial_art": true,
+      "print_job_sent": false,
+      "sha256": "35c810932774b2e51a1fd55e196f9507c51df2e9c6e8df69f8994a8f90a7ce11",
+      "visual_review": {
+        "all_three_native_selections": true,
+        "all_three_rendered_spreads": true,
+        "print_test": false
+      }
+    }
+  },
+  "revision_art_review": "novel/development/ISSUE_19_GOYA_SCENE_REVIEW.md"
 }
