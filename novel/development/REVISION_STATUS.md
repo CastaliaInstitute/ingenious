@@ -1,5 +1,31 @@
 # Motivation revision: working record
 
+## Latest voice checkpoint: Chapter Twenty
+
+Q now negotiates the Las Pozas detour with companions who have their own plans,
+protects the return fare and asks to go now even though the Custodian cannot.
+He saves personally captioned portraits, admits wanting Castalia's offer, compares
+its unauthorized-travel claim with his first permission, and asks whether repair
+can survive disagreement over publication. His own garden draft loses a falsely
+graceful acceptance of the missed view. A bounded battery check lets him join
+the inn's company without forgetting the next journey. Three travel days and
+the unresolved repair question carry into the return meeting.
+
+Six fresh-context alternative-model probes informed revision, not exact-model
+validation or faculty approval. See `CHAPTER_20_FRESH_CONTEXT_REVIEW.md`.
+Only Chapter Twenty and its outline entry change from `38e02c37`: 3,096 words,
+24 comic pages at Georgia 14/19.8333, twelve planned plates including cover,
+twelve A3 sides / six nested sheets. All eleven text pages and the inner spread
+were visually inspected; exact text, all 24 actual imposed positions, embedded
+fonts and all 22 source/facing bindings pass. Other 21 chapters/manifests,
+front matter and 38 prior issue PDFs remain unchanged. Internal layout only:
+no Issue 20 art approved, finished illustrated PDF, printing or A+ claim.
+
+Issue 20 art, Chapters 21-22 fresh review/production, earlier Goya correction,
+whole-book pacing/canon and Spanish synchronization remain. The front matter's
+invitation language still needs reconciliation with Q's request to leave.
+Production remains left-aligned. The full goal is active.
+
 ## Latest production checkpoint: Issue Nineteen
 
 Issue Nineteen now has ten unique plates, a twenty-page reading proof and ten

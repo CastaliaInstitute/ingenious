@@ -13,6 +13,13 @@ under review. The same-text typography comparison supports retaining left-aligne
 body columns: the tested justification introduced distracting word spacing.
 No issue pagination changed for this comparison.
 
+Chapter Twenty has a revised 3,096-word source and a twelve-plate plan for
+24 pages at Georgia 14/19.8333, with continuous left-aligned text. Its internal
+six-sheet A3 layout passes source-order, imposition and font checks; the
+illustrations are still planned, so it is not yet a finished illustrated issue.
+See the [voice and layout review](../../novel/development/CHAPTER_20_FRESH_CONTEXT_REVIEW.md)
+and [facing-scene plan](../illustrations/revised/issue-20/manifest.json).
+
 Issue Nineteen now has a complete [twenty-page reading proof](../pdf/ingenious-issue-19-revised-en-bw.pdf)
 and [ten-side A3 folding proof](../pdf/ingenious-issue-19-revised-en-bw-a3.pdf).
 Ten unique plates include the cover; all 2,610 words flow continuously at Georgia

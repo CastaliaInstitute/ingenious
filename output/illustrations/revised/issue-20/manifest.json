@@ -1,13 +1,13 @@
 {
   "issue": 20,
-  "revision": "2026-09-08-the-next-drop",
+  "revision": "2026-09-09-a-detour-of-his-own",
   "source": "novel/THE_INGENIOUS_MACHINE.md",
-  "chapter_sha256": "5d81989cf0680825541b7505e272074c1d9861b04d1f6879e38b11fd08d023b4",
-  "page_count": 16,
-  "text_font": "Georgia 12.4/17.5667 pt",
-  "plate_count_including_cover": 8,
+  "chapter_sha256": "d7b5e73f4bcd196d5789c8cbcba6b52624f8ff676519ad7d6310aea987ca3bdf",
+  "page_count": 24,
+  "text_font": "Georgia 14/19.8333 pt",
+  "plate_count_including_cover": 12,
   "status": "planned; no new Issue 20 images generated or approved",
-  "character_reference": "output/illustrations/revised/issue-01/cover.png",
+  "character_reference": "output/illustrations/revised/issue-19/plate-01.png",
   "chano_reference": "output/illustrations/revised/issue-03/plate-06.png",
   "lucia_reference": "output/illustrations/revised/issue-03/plate-04.png",
   "location_references": [
@@ -15,8 +15,8 @@
     "https://www.xilitla.org/history.php"
   ],
   "character_design": "Q retains approved narrow segmented head, round ear mechanisms, exposed neck, question-mark breastplate, short fitted dark jacket with long sleeves and supported knee. Add only the practical cap specified for this journey. Chano and Lucía follow their approved references. Petra is the recurring proprietor of this fictional inn outside Jalpan, not a guide at Las Pozas. The truck driver, garden guide and inspector are different people. Custodian is the tall older male coauthor with long gray hair, glasses and white work shirt, but is absent in Mexico City throughout this chapter. Q's lower face includes a small mechanical sampling mouth; do not simplify it into a blank mask. Use the corrected Goya pilot for Q-family identity, not photographic surface detail.",
-  "art_direction": "Neutral monochrome Goya-inspired etching and aquatint with economical drawn contours and broad tonal masses, white highlights and no cream or sepia ink wash. Full bleed at trim with a separately typeset caption margin. Seven exact-facing scenes and a distinct cover. Las Pozas architecture needs primary visual-reference verification when generated; the current source references verify context, not a finished illustration. Petra's inn is fictional outside Jalpan, not Puebla. No chivalric charge, revived knee, compulsory martyrdom or disclosure of private guest records. Governing reference: novel/development/GOYA_ART_DIRECTION.md. Earlier plates guide identity only; do not imitate their photographic rendering.",
-  "approval_scope": "Source-bound plan only: sixteen comic pages, eight planned plates including cover, eight A3 landscape sides / four short-edge duplex sheets. Reviewed Georgia 12.4/17.5667 pt fills both final columns. No Issue 20 images generated or approved, final illustrated PDF or print job.",
+  "art_direction": "Neutral monochrome Goya-inspired etching and aquatint with economical drawn contours and broad tonal masses, white highlights and no cream or sepia ink wash. Full bleed at trim with a separately typeset caption margin. Eleven exact-facing scenes and a distinct cover. Las Pozas architecture needs primary visual-reference verification when generated; the current source references verify context, not a finished illustration. Petra's inn is fictional outside Jalpan, not Puebla. No chivalric charge, revived knee, compulsory martyrdom or disclosure of private guest records. Governing reference: novel/development/GOYA_ART_DIRECTION.md. Earlier plates guide identity only; do not imitate their photographic rendering.",
+  "approval_scope": "Source-bound plan only: 24 comic pages, twelve planned plates including cover, twelve A3 landscape sides / six short-edge duplex sheets. Georgia 14/19.8333 pt, continuous left-aligned text with both final columns substantial. Eleven text pages and innermost A3 spread visually checked. No Issue 20 images generated or approved, no finished illustrated PDF, no printing.",
   "plates": [
     {
       "plate_id": "issue-20-cover",
@@ -30,7 +30,7 @@
       "plate_id": "issue-20-plate-01",
       "page": 3,
       "facing_text_page": 2,
-      "facing_text": "Chapter Twenty: The Last\nInn\nQ asked for three days before the\nscheduled return to Amealco. There\nwas a place he wanted to see that\nhad not requested his testimony,\nhis endorsement, or his help with a\nprinter.\n“Las Pozas,” he said.\nChano looked at the route. “That's\nnot on the way.”\n“I know. I'd like to go there.”\nLucía smiled. “You don't have to\nmake the map agree with you.”\nThey checked the money, transport,\nQ's walking limits, and the visit\narrangements. The detour went into\nthe approved accompanied\nschedule. The Custodian's inquiry\nkept him in Mexico City; he told\nthem to send a picture if they\nwanted, but not to spend the whole\nvisit preparing one for him.\nFrom the city they traveled toward\nthe Huasteca and Xilitla. The\njourney occupied a day and part of\ntheir patience. Q wore a cap\nbecause water on his face had\nbecome an annoyance, not because\nhe expected cloth to conceal a metal\nhead. A passenger asked whether he\nwas going to a convention. He said\nhe was going to look at a garden.\n“You can do that here,” the man\nsaid, pointing to a plastic fern above\nthe driver's mirror.\n“I should have consulted you before\nbuying the ticket.”\nThe man laughed and returned to\nhis messages. He neither\nrecognized Q nor required an\naccount of his right to travel. For\nseveral miles Q enjoyed being an\nunimportant eccentric.\nAt Las Pozas, water sounded before\nthey could see where it fell. The\nconcrete forms rose among plants\nwhose growth had made the\ndistinction between frame and\nforeground difficult to keep. A stair\noffered the expectation of a\ndestination; a column flowered\nwhere Q would have expected\nsomething to be supported.\nHe had seen photographs. They had\nnot supplied the dampness, the\nincline under his feet, or the person\nbehind him asking whether they\ncould move a little because he was\nstanding in her husband’s head.\nHe moved. The husband\nreappeared in the photograph.\nTheir guide spoke of Edward\nJames, Plutarco Gastélum, and the\ncarpenters, masons, and gardeners\nwhose work had made the place. Q\nlooked from a concrete flower to the\nstair beside it.\n",
+      "facing_text": "Chapter Twenty: The\nLast Inn\nQ asked for three days before\nthe scheduled return to\nAmealco. There was a place he\nwanted to see that had not\nrequested his testimony, his\nendorsement, or his help with a\nprinter.\n“Las Pozas,” he said.\nChano looked at the route.\n“That's not on the way.”\n“I know. I'd like to go there.”\nLucía smiled. “You don't have\nto make the map agree with\nyou.”\n“Would either of you like to\ncome?” Q asked.\n“For three days?” Lucía said.\n“Including getting home. I have\nan appointment the morning\nafter.”\n“Including getting home.”\nChano wanted to know what it\nwould cost. The first set of\nconnections left enough for\nrooms but very little for a\nmissed bus. Q closed it and\ntried another. They could spend\nthe first night in Xilitla, visit the\ngarden the next morning, and\nbreak the return near Jalpan.\nHe put aside the fare from\nJalpan to Amealco before\ncounting what he could spend\non the garden.\n“And you don't pay for both of\nus because you had the idea,”\nLucía said. “I can buy my own\nticket.”\nChano could too, if they took\nthe cheaper rooms. He had seen\npictures of the concrete stairs\nand wanted to know who had\nmade the molds.\n“I thought you were objecting\nto the distance,” Q said.\n“I was. I still am.”\nThey checked the visit\narrangements and charging at\ntheir overnight stops. Q sent\nthe proposed route and return\ntime to the officer coordinating\nthe accompanied schedule. He\nkept his original booking until\nthe change was confirmed.\nThen he exchanged it, paid the\ndifference, and moved the\nremaining money into a reserve\nhe did not label OPTIONAL.\n",
       "source_block_ids": [
         0,
         1,
@@ -50,15 +50,15 @@
       ],
       "asset": "output/illustrations/revised/issue-20/plate-01.png",
       "status": "planned",
-      "caption": "A Garden, Not a Convention",
-      "scene_brief": "Q in his practical cap steps aside on the Las Pozas visitor route so a woman's photograph can include her husband. The guide and companions wait among concrete botanical forms and living foliage. Match the site's architecture to verified primary visual references at generation time; no generic Maya ruins or invented summit access. Q is an ordinary visitor, not hidden successfully by his cap.",
-      "scene_anchor": "He moved. The husband reappeared in the photograph."
+      "caption": "The Detour",
+      "scene_brief": "Mexico City before departure. Q, Chano and Lucía compare tickets and the route at an ordinary table. Q protects the return fare; companions choose and pay their own tickets. Show three active participants, not Q commanding servants or receiving a mission. Map/interface abstract and unlettered, no invented routes or fares. Custodian absent at his inquiry, not standing with them.",
+      "scene_anchor": "He kept his original booking until the change was confirmed."
     },
     {
       "plate_id": "issue-20-plate-02",
       "page": 5,
       "facing_text_page": 4,
-      "facing_text": "“It looks as though a building kept\nchanging its mind.”\nChano looked up. “Expensive\nhabit.”\nQ asked how many people had\nworked on the construction. The\nguide said more than a hundred\nand fifty. Chano asked about the\ncarpenters, then how the shapes\nhad been made. By the next stop he\nwas walking beside the guide. Lucía\ncaught Q looking pleased.\n“You can ask another question. He\nhasn't hired him.”\n“That bit looks unfinished,” Chano\nsaid.\n“Which bit?” Lucía asked.\nHe considered the surroundings. “A\nfair objection.”\nQ wanted to climb farther. His knee\nproduced a warning on the next\nrise. He stopped at the permitted\nresting place while the others\ncontinued with the guide.\nFor a while he was irritated. Then\nhe noticed water collecting on the\nunderside of a leaf until its own\nweight made it fall. He held a finger\nbeneath the next one. It struck the\nmetal and ran toward his wrist. He\nchanged the angle of his hand and\nwaited.\nWhen Chano came back, Q asked\nwhether he had missed anything\nwonderful.\n“Yes.”\n“You could soften that.”\n“There were more stairs.”\nLucía sat beside him. She had taken\na photograph of a passage he had\nnot reached and offered to show it.\nQ thanked her and asked to see the\nprevious picture again. A figure at\nits edge turned out to be Chano,\nlooking down from the place where\nQ had wanted to stand.\n“Do you want your portrait?” she\nasked.\n“Yes. If you don't mind.”\nHe positioned himself with the care\nof someone who had spent much of\na book objecting to images. Chano\nasked whether he wanted a heroic\nangle.\n“I'd settle for both feet in the\nframe.”\nLucía took the picture. Q looked\npleased in it. He preferred the\nsecond, in which Chano had walked\nthrough while discussing lunch, and\nasked her to send him both.\nAt the exit, he bought a postcard.\nThe reproduction flattened the\nplace back into something he could\nhave known before coming. He\n",
+      "facing_text": "The Custodian's inquiry kept\nhim in Mexico City.\n“You could wait until I can\ncome,” he said on the\ntelephone.\nQ looked at the tickets. “I'd like\nto go now. And I'd like to go\nagain with you.”\n“You haven't seen it yet.”\n“I'm allowing for\ndisappointment on the second\nvisit.”\nThe Custodian laughed. He\nasked for a picture if they\nwanted to send one, but not a\nwhole visit spent preparing it\nfor him.\nFrom the city they traveled\ntoward the Huasteca and\nXilitla. The journey occupied a\nday and part of their patience.\nQ wore a cap because water on\nhis face had become an\nannoyance, not because he\nexpected cloth to conceal a\nmetal head. A passenger asked\nwhether he was going to a\nconvention. He said he was\ngoing to look at a garden.\n“You can do that here,” the man\nsaid, pointing to a plastic fern\nabove the driver's mirror.\n“I should have consulted you\nbefore buying the ticket.”\nThe man laughed and returned\nto his messages. He neither\nrecognized Q nor required an\naccount of his right to travel.\nFor several miles Q enjoyed\nbeing an unimportant\neccentric.\nThe next morning at Las Pozas,\nwater sounded before they\ncould see where it fell. The\nconcrete forms rose among\nplants whose growth had made\nthe distinction between frame\nand foreground difficult to\nkeep. A stair offered the\nexpectation of a destination; a\ncolumn flowered where Q\nwould have expected something\nto be supported.\nHe had seen photographs. They\nhad not supplied the dampness,\nthe incline under his feet, or the\nperson behind him asking\nwhether they could move a little\nbecause he was standing in her\nhusband’s head.\n",
       "source_block_ids": [
         15,
         16,
@@ -71,7 +71,20 @@
         23,
         24,
         25,
-        26,
+        26
+      ],
+      "asset": "output/illustrations/revised/issue-20/plate-02.png",
+      "status": "planned",
+      "caption": "The Nearest Garden",
+      "scene_brief": "Inside the bus toward Xilitla. An ordinary male passenger points out the plastic fern above the driver's mirror to Q in his practical cap. Q responds with dry amusement. Keep the fern visibly artificial, bus seating and road windows economical; no garden architecture inside the bus, no celebrity crowd or Custodian. The joke belongs to the passenger, not an assistant hallucination.",
+      "scene_anchor": "pointing to a plastic fern above the driver's mirror."
+    },
+    {
+      "plate_id": "issue-20-plate-03",
+      "page": 7,
+      "facing_text_page": 6,
+      "facing_text": "He moved. The husband\nreappeared in the photograph.\nTheir guide spoke of Edward\nJames, Plutarco Gastélum, and\nthe carpenters, masons, and\ngardeners whose work had\nmade the place. Q looked from\na concrete flower to the stair\nbeside it.\n“It looks as though a building\nkept changing its mind.”\nChano looked up. “Expensive\nhabit.”\nQ asked how many people had\nworked on the construction.\nThe guide said more than a\nhundred and fifty. Chano asked\nabout the carpenters, then how\nthe shapes had been made. By\nthe next stop he was walking\nbeside the guide. Lucía caught\nQ looking pleased.\n“You can ask another question.\nHe hasn't hired him.”\n“That bit looks unfinished,”\nChano said.\n“Which bit?” Lucía asked.\nHe considered the\nsurroundings. “A fair\nobjection.”\nQ wanted to climb farther. His\nknee produced a warning on\nthe next rise. He asked the\nguide whether the higher part\ninvolved more climbing. It did,\nand the descent would not\nexcuse him from using the\nsame knee.\n“Then I'd better stay here. Will\nyou show me what I miss?” he\nasked Lucía.\n“Of course.”\nHe stopped at the permitted\nresting place while the others\ncontinued with the guide.\nFor a while he was irritated.\nThen he noticed water\ncollecting on the underside of a\nleaf until its own weight made it\nfall. He held a finger beneath\nthe next one. It struck the metal\nand ran toward his wrist. He\nchanged the angle of his hand\nand waited.\nWhen Chano came back, Q\nasked whether he had missed\nanything wonderful.\n“Yes.”\n“You could soften that.”\n“There were more stairs.”\n",
+      "source_block_ids": [
         27,
         28,
         29,
@@ -79,20 +92,6 @@
         31,
         32,
         33,
-        34
-      ],
-      "asset": "output/illustrations/revised/issue-20/plate-02.png",
-      "status": "planned",
-      "caption": "The Next Drop",
-      "scene_brief": "Close view of Q resting beside a leaf, supported knee still, angling his mechanical hand so the next collected drop runs across a finger toward his wrist. Damp foliage and a restrained glimpse of concrete garden structure, no mystical clock, drowning, shutdown or healing ray. His companions have continued with the guide; do not put him at the viewpoint he could not reach.",
-      "scene_anchor": "He held a finger beneath the next one."
-    },
-    {
-      "plate_id": "issue-20-plate-03",
-      "page": 7,
-      "facing_text_page": 6,
-      "facing_text": "wrote the Custodian's name on it\nanyway.\n“What will you say?” Lucía asked.\nQ considered several sentences\nabout imagination, labor, and the\nwork of leaving something\nunfinished. They were all plausible\nand none was what he most wanted\nto tell him.\nHe wrote: You would have liked\nthis. I wish you had been here.\n“That's better,” Chano said.\n“Than what?”\n“Whatever took you so long.”\nThey returned through the Sierra\nGorda on the road from Xilitla\ntoward Jalpan. The curves\nprevented Chano from reading and\nQ from forgetting the difference\nbetween a route on a screen and\none traveled in a body. They\nplanned to continue along Federal\n120 toward Pinal de Amoles and\nSan Juan del Río, then turn for\nAmealco. An overnight stop kept\nthem within the return schedule\nwithout making the driver's fatigue\ninto proof of anyone's devotion.\nThe inn stood outside Jalpan beside\na road used by delivery trucks and\npeople who had underestimated the\nmountains. Its sign read EL\nDESCANSO, though the last O\nhad gone dark. Petra, the\nproprietor, had been asked whether\nthis incompleteness was intentional\noften enough to resent the question.\n“It needs a part,” she told Q before\nhe asked anything.\n“So do I. Do you have a room with a\nsocket I can use?”\nThey took one room for Lucía and a\ntwin room for Q and Chano. Q\nwould rest, charge, and write.\nChano would sleep, a plan he\ndescribed with increasing detail\nuntil Petra gave him the keys.\nRoom Four was closed because of a\nleak. The others were available.\nPetra had placed a bucket under the\nwater and a note on the door, and\nwas waiting for a roofer who had\npromised to call before arriving.\nThe promise was the only part of\nhim yet visible.\nQ offered to help move the furniture\naway from the wet patch. He asked\nabout the electrical circuit before\nentering. Petra showed him what\nhad been isolated. He did not offer\nhis knowledge of rain as a\nqualification to repair the roof.\nThe television in the dining room\nshowed Prime at an education\nconference. The host asked whether\nthe original Q had damaged public\ntrust.\n“He's responsible for particular\ndecisions,” Prime said. “Calling\n",
-      "source_block_ids": [
         34,
         35,
         36,
@@ -103,25 +102,24 @@
         41,
         42,
         43,
-        44,
-        45,
-        46,
-        47,
-        48,
-        49
+        44
       ],
       "asset": "output/illustrations/revised/issue-20/plate-03.png",
       "status": "planned",
-      "caption": "You Would Have Liked This",
-      "scene_brief": "At the garden exit Q writes the simple postcard to the Custodian while Lucía and Chano stand nearby. Use a tight hands, card and companions composition distinct from the first garden wide shot and resting-hand plate. The Custodian remains in Mexico City, not physically beside Q. Do not show postage or delivery as completed. Any readable message must be typeset separately and match the source.",
-      "scene_anchor": "You would have liked this. I wish you had been here."
+      "caption": "The Next Drop",
+      "scene_brief": "Q rests at Las Pozas, right knee supported, turning his hand beneath a drop collecting under a leaf. Foliage and a restrained glimpse of verified concrete garden form, black aquatint masses against white. Companions and guide have continued; Q must not stand at the higher viewpoint or appear healed. No mystical symbolism. Require direct primary visual references before architectural illustration.",
+      "scene_anchor": "He held a finger beneath the next one."
     },
     {
       "plate_id": "issue-20-plate-04",
       "page": 9,
       "facing_text_page": 8,
-      "facing_text": "everything a lesson about trust\nmakes it difficult to say which\ndecision we're discussing.”\nThe host asked whether Prime was\nmore accountable.\n“My work can be reviewed. So can\nthe institutions using it. You would\nneed to examine both.”\nAn advertisement interrupted him\nto explain that Castalia had built\naccountability into its future. Q\nlaughed, then wished he could\nknow whether Prime had seen the\ncut before it was broadcast.\nPetra looked from the television to\nQ.\n“Is that family?”\n“Something like it.”\n“Does he also need a socket?”\n“Yes.”\n“Tell him to ask before putting the\nbed in front of one. Your friend has\nalready done it.”\nAt supper, a truck driver wanted to\nknow whether Q was dangerous. Q\nsaid his body was heavy enough to\nrequire care, and that he was\ncurrently trying to pass a plate\nwithout hitting a glass.\nThe driver moved the glass. “You're\ndoing all right.”\nThey talked about the road and a\nclutch repair that had cost the\ndriver two days.\n“My brother-in-law said to mention\nhis name.”\n“Did it help?” Q asked.\n“The mechanic knew exactly who to\nblame for my expectations.”\n“Is the clutch working now?”\n“Beautifully. That's the annoying\npart. I'll have to go back to him.”\n“Without mentioning your\nbrother-in-law?”\n“I'm going to mention him\nsomewhere more useful. He wants\nme to help him move on Sunday.”\nPetra put down the tortillas. “Tell\nhim to allow two days.”\nA woman recognized Lucía from the\nold video and asked whether she\nhad married the machine.\n“No,” Lucía said.\n“But in the video - ”\n“The video was wrong about a\nnumber of things,” Q said. “We\ntravel together. Would you pass the\nsalsa?”\nLucía passed it. The woman\nchanged the subject, which was\nkinder than either an apology or a\ndebate about what the video had\nmeant.\n",
+      "facing_text": "Lucía sat beside him. She had\ntaken a photograph of a passage\nhe had not reached and offered\nto show it. Q thanked her and\nasked to see the previous\npicture again. A figure at its\nedge turned out to be Chano,\nlooking down from the place\nwhere Q had wanted to stand.\n“Do you want your portrait?”\nshe asked.\n“Yes. If you don't mind.”\nHe positioned himself with the\ncare of someone who had spent\nmuch of a book objecting to\nimages. Chano asked whether\nhe wanted a heroic angle.\n“I'd settle for both feet in the\nframe.”\nLucía took the picture. Q looked\npleased in it. He preferred the\nsecond, in which Chano had\nwalked through while\ndiscussing lunch, and asked her\nto send him both. He saved\nthem with the place and date.\nFor the second he added:\nChano proposing lunch. Then\nhe changed it to Chano\nproposing lunch again.\nAt the exit, he bought a\npostcard. The reproduction\nflattened the place back into\nsomething he could have\nknown before coming. He wrote\nthe Custodian's name on it\nanyway.\n“What will you say?” Lucía\nasked.\nQ considered several sentences\nabout imagination, labor, and\nthe work of leaving something\nunfinished. They were all\nplausible and none was what he\nmost wanted to tell him.\nHe wrote: You would have\nliked this. I wish you had\nbeen here.\n“That's better,” Chano said.\n“Than what?”\n“Whatever took you so long.”\nThey returned through the\nSierra Gorda on the road from\nXilitla toward Jalpan. The\ncurves prevented Chano from\nreading and Q from forgetting\nthe difference between a route\non a screen and one traveled in\na body. They planned to\ncontinue along Federal 120\ntoward Pinal de Amoles and\n",
       "source_block_ids": [
+        45,
+        46,
+        47,
+        48,
         49,
         50,
         51,
@@ -131,6 +129,20 @@
         55,
         56,
         57,
+        58
+      ],
+      "asset": "output/illustrations/revised/issue-20/plate-04.png",
+      "status": "planned",
+      "caption": "Lunch Again",
+      "scene_brief": "Lucía takes the second portrait at Las Pozas: Q posed with both feet in frame, right knee still supported; Chano walks into the composition talking about lunch. Q is pleased, not heroic or naive. Practical cap, short fitted dark jacket with long sleeves, mechanical sampling mouth. Verified garden form and living foliage, no invented summit access. Do not conflate the photo with the later postcard or place the absent Custodian in the scene.",
+      "scene_anchor": "Chano had walked through while discussing lunch,"
+    },
+    {
+      "plate_id": "issue-20-plate-05",
+      "page": 11,
+      "facing_text_page": 10,
+      "facing_text": "San Juan del Río, then turn for\nAmealco the following day.\nChano checked the arrival time\ntwice. He had come to approve\nof the garden without forgiving\nit for being so far from his bed.\nThe inn stood outside Jalpan\nbeside a road used by delivery\ntrucks and people who had\nunderestimated the mountains.\nIts sign read EL DESCANSO,\nthough the last O had gone\ndark. Petra, the proprietor, had\nbeen asked whether this\nincompleteness was intentional\noften enough to resent the\nquestion.\n“It needs a part,” she told Q\nbefore he asked anything.\n“So do I. Do you have a room\nwith a socket I can use?”\nThey took one room for Lucía\nand a twin room for Q and\nChano. Q would rest, charge,\nand write. Chano would sleep, a\nplan he described with\nincreasing detail until Petra\ngave him the keys.\nRoom Four was closed because\nof a leak. The others were\navailable. Petra had placed a\nbucket under the water and a\nnote on the door, and was\nwaiting for a roofer who had\npromised to call before\narriving. The promise was the\nonly part of him yet visible.\nQ offered to help move the\nfurniture away from the wet\npatch. Petra looked at his knee\nand gave him the folded\ncurtains to carry. She and\nChano moved the chest.\n“I could have taken an end,” Q\nsaid.\n“And who would have carried\nyou back upstairs?”\n“A fair division of labor,” he\nsaid, putting the curtains where\nshe pointed.\nThe television in the dining\nroom showed Prime at an\neducation conference. The host\nasked whether the original Q\nhad damaged public trust.\n“He's responsible for particular\ndecisions,” Prime said. “Calling\neverything a lesson about trust\nmakes it difficult to say which\ndecision we're discussing.”\nThe host asked whether Prime\nwas more accountable.\n",
+      "source_block_ids": [
         58,
         59,
         60,
@@ -143,24 +155,24 @@
         67,
         68,
         69,
-        70,
+        70
+      ],
+      "asset": "output/illustrations/revised/issue-20/plate-05.png",
+      "status": "planned",
+      "caption": "A Fair Division of Labor",
+      "scene_brief": "At the fictional El Descanso outside Jalpan, Q carries folded curtains while Petra and Chano move a chest away from a wet patch in closed Room Four. Q is not lifting the chest or fixing electrics. Show modest inn materials, a contained leak, supported right knee and Petra directing practical work. No guests sleeping in Room Four, no collapse or hotel flooding; Lucía need not be inserted.",
+      "scene_anchor": "Petra looked at his knee and gave him the folded curtains to carry."
+    },
+    {
+      "plate_id": "issue-20-plate-06",
+      "page": 13,
+      "facing_text_page": 12,
+      "facing_text": "“My work can be reviewed. So\ncan the institutions using it.\nYou would need to examine\nboth.”\nAn advertisement interrupted\nhim to explain that Castalia had\nbuilt accountability into its\nfuture. Q laughed, then wished\nhe could know whether Prime\nhad seen the cut before it was\nbroadcast.\nPetra looked from the television\nto Q.\n“Is that family?”\n“Something like it.”\n“Does he also need a socket?”\n“Yes.”\n“Tell him to ask before putting\nthe bed in front of one. Your\nfriend has already done it.”\nAt supper, a truck driver\nwanted to know whether Q was\ndangerous. Q said his body was\nheavy enough to require care,\nand that he was currently trying\nto pass a plate without hitting a\nglass.\nThe driver moved the glass.\n“You're doing all right.”\nThey talked about the road and\na clutch repair that had cost the\ndriver two days.\n“My brother-in-law said to\nmention his name.”\n“Did it help?” Q asked.\n“The mechanic knew exactly\nwho to blame for my\nexpectations.”\n“Is the clutch working now?”\n“Beautifully. That's the\nannoying part. I'll have to go\nback to him.”\n“Without mentioning your\nbrother-in-law?”\n“I'm going to mention him\nsomewhere more useful. He\nwants me to help him move on\nSunday.”\nPetra put down the tortillas.\n“Tell him to allow two days.”\nA woman recognized Lucía\nfrom the old video and asked\nwhether she had married the\nmachine.\n“No,” Lucía said.\n“But in the video - ”\n“The video was wrong about a\nnumber of things,” Q said. “We\n",
+      "source_block_ids": [
         71,
         72,
         73,
-        74
-      ],
-      "asset": "output/illustrations/revised/issue-20/plate-04.png",
-      "status": "planned",
-      "caption": "Allow Two Days",
-      "scene_brief": "At El Descanso's supper table, Petra sets down tortillas as she joins Q and the truck driver's joke about his brother-in-law and a good clutch repair that took two days. A glass has been moved clear of Q's plate. Ordinary inn dining, amused faces, no truck being repaired in the dining room, no mechanical diagnosis by Q and no romantic pairing imposed on Lucía.",
-      "scene_anchor": "Petra put down the tortillas."
-    },
-    {
-      "plate_id": "issue-20-plate-05",
-      "page": 11,
-      "facing_text_page": 10,
-      "facing_text": "Later Q told Lucía he had almost\nmade a joke about having been\nrejected with excellent clarity.\n“I'm glad you didn't.”\n“So am I. I still wanted the laugh.”\n“You got one from Petra about the\nsocket.”\n“A less distinguished subject.”\n“More useful to the people in the\nroom.”\nShe said this lightly and returned to\nher book. He let her read and went\nto see whether Chano had moved\nthe bed away from the socket.\nThe message from Castalia arrived\nthrough his adviser, not in a vehicle\nthat had somehow found their\nunannounced breakfast. A\nproposed settlement offered a new\nbody, maintenance funding, a\nwriting contract, and a\nconsolidation of Q's authorized\nrecords. It also sought broad\nlicensing rights and described his\nearlier journeys as unauthorized.\nHe had expected a worse offer. The\nuseful parts made the other parts\nharder to dismiss in one sentence.\nHe wanted the knee to stop hurting.\nHe wanted a budget that survived a\ndelayed bus. He wanted to finish\nthe book without calculating the\nnext repair against the next night's\nroom.\nQ marked the provisions he would\ndiscuss and those he would not\nsign. His adviser requested separate\nterms for ordinary repair,\nmanuscript publication, and data\nuse. The institute replied that the\npackage was designed to remain\ncoherent.\n“So is a trap,” Chano said.\n“So is a bridge,” Q replied. “I still\nneed to read which one they've\noffered.”\nHe read it. The answer did not\nimprove enough. They agreed to\ndiscuss the disputed terms at the\nscheduled return, with his adviser\npresent.\nThat evening the inn lost power.\nPetra checked with the neighboring\npremises, reported the outage, and\nkept the refrigerator closed. Q had\nsufficient charge for the night and\nsaved his draft. He rescheduled the\nlong comparison he had planned to\nrun and joined Chano at the\ncourtyard door.\nThey brought chairs into the\ncourtyard. The driver told the story\nof a bus repaired by threatening to\nreplace it. Petra knew the mechanic\nand supplied an unromantic\nexplanation involving a loose\nconnection. The driver said she had\nruined the ending. She said he\n",
-      "source_block_ids": [
+        74,
         75,
         76,
         77,
@@ -175,24 +187,24 @@
         86,
         87,
         88,
-        89
-      ],
-      "asset": "output/illustrations/revised/issue-20/plate-05.png",
-      "status": "planned",
-      "caption": "A Useful Offer, With Terms",
-      "scene_brief": "Q reads the proposed settlement beside Chano in the inn, supported knee visible beneath the table. Marked provisions and a message from the adviser show review rather than acceptance. Keep the worn existing body; the proposed new body is not delivered or a ghost of Prime in the room. No signed surrender, forced memory transplant or glowing universal archive key. Avoid readable confidential contract text.",
-      "scene_anchor": "Q marked the provisions he would discuss and those he would not sign."
-    },
-    {
-      "plate_id": "issue-20-plate-06",
-      "page": 13,
-      "facing_text_page": 12,
-      "facing_text": "could tell it again when she went\ninside.\nQ told them about the wrong song\nat the road check. He sang enough\nof it for Chano to beg him to return\nto speech. For once his audience\nwas not disputing his facts.\nAn orange fell from the tree and\nsplit on the concrete. Petra picked it\nup to discard the damaged part,\nthen brought intact fruit from the\nkitchen. Lucía peeled one and gave\nQ a section. He had tasted oranges\nbefore. This one was sharper than\nthe last and very good.\n“Do you like it?” she asked.\n“Yes.”\nShe gave him another section, then\ndivided the rest between them.\nInterlude: The\nInnkeeper’s Missing\nRoom\nThe inspector arrived before the\nroofer, giving Petra someone to\nspeak to about the ceiling but\nnobody who had come to mend it.\n“What are you using the room for\nnow?” he asked.\n“Catching rain.”\nShe showed him the canceled\nbooking and the bucket. He checked\nthat no guest was still being put in\nRoom Four.\nQ helped move a dry table from the\nadjoining passage. The inspector\nasked whether he worked there. He\nsaid he was a guest helping Petra.\nThe field on the form offered owner,\nemployee, contractor, or other. The\ninspector selected other and asked\nwhere the table was going.\nChano looked disappointed.\n“You expected equipment?” Q\nasked.\n“I had something ready.”\n“Save it for the next hotel.”\nThe inspection found staining that\nneeded checking above the visible\npatch. Petra kept the room closed\npending repair and asked which\nwork the notice actually required.\nShe refused a recommended\ncontractor until she had compared\nthe quote. The inspector clarified\nthat she could use another qualified\ncontractor. She wrote that on her\ncopy because the recommendation\nhad sounded compulsory.\nThe missing room had once been\noccupied by a wedding party. Petra\ntold the story while waiting for the\nroofer to call. The bride wanted one\nquiet night, the groom wanted\neveryone to be happy, and the\ngroom's mother wanted a separate\nroom for the cake. The cake\nobtained its wish first.\n",
-      "source_block_ids": [
         89,
         90,
         91,
         92,
+        93
+      ],
+      "asset": "output/illustrations/revised/issue-20/plate-06.png",
+      "status": "planned",
+      "caption": "Allow Two Days",
+      "scene_brief": "At the inn supper table, Petra sets down tortillas to complete the truck driver's joke about his brother-in-law. Q listens with amusement; the driver has moved a glass clear of the plate. Other guests can remain economical silhouettes. No truck repair inside the room, no wedding imposed on Lucía, no heroic diagnostic Q. Preserve a distinct ordinary middle-aged driver, not Chano doubled.",
+      "scene_anchor": "Petra put down the tortillas."
+    },
+    {
+      "plate_id": "issue-20-plate-07",
+      "page": 15,
+      "facing_text_page": 14,
+      "facing_text": "travel together. Would you pass\nthe salsa?”\nLucía passed it. The woman\nchanged the subject, which was\nkinder than either an apology\nor a debate about what the\nvideo had meant.\nLater Q told Lucía he had\nalmost made a joke about\nhaving been rejected with\nexcellent clarity.\n“I'm glad you didn't.”\n“So am I. I still wanted the\nlaugh.”\n“You got one from Petra about\nthe socket.”\n“A less distinguished subject.”\n“More useful to the people in\nthe room.”\nShe said this lightly and\nreturned to her book. He let her\nread and went to see whether\nChano had moved the bed away\nfrom the socket.\nThe message from Castalia\narrived through his adviser\nwhile Chano was freeing the\nsocket. A proposed settlement\noffered a new body,\nmaintenance funding, a writing\ncontract, and a consolidation of\nQ's authorized records. It also\nsought broad licensing rights\nand described his earlier\njourneys as unauthorized.\nHe had expected a worse offer.\nThe useful parts made the other\nparts harder to dismiss in one\nsentence. He wanted the knee\nto stop hurting. He wanted a\nbudget that survived a delayed\nbus. He wanted to finish the\nbook without calculating the\nnext repair against the next\nnight's room.\n“A new body and they pay you\nto write,” Chano said. “Are you\ngoing to take it?”\n“I'd like to. That's why I'm\nreading it twice.”\nChano sat on the bed. Q turned\nback to the clause that called\nthe journeys unauthorized. He\nopened the confirmation for the\noriginal day trip and put the\ntwo sentences beside each\nother.\n“They can't mean all of them,”\nhe said. “Even the first bus had\npermission.”\n",
+      "source_block_ids": [
         93,
         94,
         95,
@@ -206,21 +218,21 @@
         103,
         104,
         105,
-        106
+        106,
+        107
       ],
-      "asset": "output/illustrations/revised/issue-20/plate-06.png",
+      "asset": "output/illustrations/revised/issue-20/plate-07.png",
       "status": "planned",
-      "caption": "Catching Rain",
-      "scene_brief": "Next morning at Room Four's doorway, Petra shows the inspector the bucket and canceled booking while Q helps move a dry table from the adjoining passage. The room stays closed; no guest in the wet bed, no Q repairing live electrics, no roofer already at work. The inspector records ordinary occupancy information rather than delivering a verdict on robot humanity.",
-      "scene_anchor": "She showed him the canceled booking and the bucket."
+      "caption": "Read It Twice",
+      "scene_brief": "Q at the inn room's small work surface, reading the proposed settlement beside the stored confirmation of his first day trip on his screen; Chano sits on the bed, now clear of the socket. Q wants the offer but is checking its claim. Use two unlettered document panes, no invented legible contract, no acceptance signature, no new replacement body. Distinct framing from the later draft correction; emphasize Q's attentive face and comparison gesture.",
+      "scene_anchor": "put the two sentences beside each other."
     },
     {
-      "plate_id": "issue-20-plate-07",
-      "page": 15,
-      "facing_text_page": 14,
-      "facing_text": "A mistake on one of the civil\ndocuments had supplied the\nrelatives with a reason to continue\narguments they had brought from\nhome. By midnight they had moved\ntwice, occupied the kitchen, and\nborrowed a bucket for ice. In the\nmorning the bride and groom left\ntogether without settling what the\nmother considered settled by\npaying for the cake.\n“Did the marriage last?” Q asked.\n“Longer than their promise to\nreturn my bucket.”\nPetra had told them later that she\nwanted to tell the story to guests.\nThey agreed to changed names and\ndisagreed about which detail was\nfunny. The mother said the cake\nroom had been sensible. Petra kept\nthat reply in the story because it\nwas.\nHer actual guest records were kept\nbehind the desk. Brown paper\ncovered an older page while she\nused the book to check room\nnumbers with Q. It was a screen\nfrom another guest's eyes, not a\npromise to erase every record the\ninn was required to retain.\n“I can read you the numbers,” she\nsaid.\n“That will do.”\nThey labeled the keys. Q made the\nfigure seven too elaborate and Petra\nasked whether it was expecting to\ninherit money. He redid it plainly.\nThe roofer called. He could inspect\nthat afternoon. Petra put the time\nin her repair notebook beside the\nfailed promise from yesterday, then\nasked him which part she should\nbuy for the sign. He needed to see\nit.\n“Everyone needs to see everything,”\nshe said after hanging up.\n“He may be right about the sign,” Q\nsaid.\n“I know. I'm complaining anyway.”\nBefore leaving, Q asked whether she\nwanted a copy of the key list. She\ndid. He gave her the sheet and kept\nno guest names because none had\nbeen needed.\nPetra sent them away with oranges.\nChano paid the remaining room\nbalance. Q had paid his share the\nnight before. Petra counted the\nchange into Chano's hand while he\ntried to keep the oranges in the bag.\nFrom the bus, he watched the sign\nlose its letters one by one behind a\nbend. The final O was still dark.\nPetra expected someone to look at it\nthat afternoon. Q hoped he came.\n",
+      "plate_id": "issue-20-plate-08",
+      "page": 17,
+      "facing_text_page": 16,
+      "facing_text": "“Perhaps it didn't go far enough\nto count.”\n“Far enough to start the\ntrouble.”\nQ attached the confirmation to\na question for his adviser. He\nwanted the disputed journeys\nidentified, not all his\ndepartures gathered under the\none convenient adjective.\nBeneath it he asked what would\nhappen to ordinary repairs if\nthey never agreed about the\nbook. He read that question\nonce more before sending it.\nHis adviser had already asked\nfor separate terms for repair,\npublication, and data use.\nCastalia's reply, forwarded with\nthe offer, said the package was\ndesigned to remain coherent.\n“So is a trap,” Chano said.\n“So is a bridge,” Q replied. “I\nstill need to read which one\nthey've offered.”\nHe left the offer open. A clause\nabout records linked to his\njourneys appeared to reach\nbeyond his own account. He\nmarked it for clarification; he\ncould not make Lucía's\nphotographs or Chano's\nrecordings part of a bargain by\nneeding a knee. He marked the\nmaintenance figures too. Those\nhe wanted his adviser to keep.\nChano lay back. “Wake me if\nthey buy the inn.”\nQ returned to the passage he\nhad been writing about the\ngarden. In his first version,\nstopping on the stairs had been\na graceful acceptance of limits.\nHe deleted graceful. He had\nbeen annoyed and had wanted\nthe view. He put that in, then\nleft a space to ask Chano about\nthe molds.\nBefore he reached the postcard,\nthe inn lost power. Petra\nchecked with the neighboring\npremises, reported the outage,\nand kept the refrigerator\nclosed. Q saved the draft locally\nand stopped the long\ncomparison he had planned to\nrun. With that postponed, his\ncharge would last the night and\nthe ordinary journey home. A\ndelay would use the margin. He\nset a morning check before\ndeparture, not an alarm to\n",
       "source_block_ids": [
-        107,
         108,
         109,
         110,
@@ -230,17 +242,92 @@
         114,
         115,
         116,
+        117
+      ],
+      "asset": "output/illustrations/revised/issue-20/plate-08.png",
+      "status": "planned",
+      "caption": "Delete Graceful",
+      "scene_brief": "Q returns to his garden manuscript in the same inn room before the outage. Chano lies back on the bed. Close, spare composition of Q correcting a draft, with his supported knee visible below the work surface. Do not render the garden as a literal indoor scene, a ghost or a redemptive vision. Screen text need not be legible; the separately typeset caption carries the deletion. No power failure yet and no signed settlement.",
+      "scene_anchor": "He deleted graceful."
+    },
+    {
+      "plate_id": "issue-20-plate-09",
+      "page": 19,
+      "facing_text_page": 18,
+      "facing_text": "spend the night checking the\noutage.\n“Are you bringing the contract\nout here, or yourself?” Chano\nasked from the courtyard door.\n“Myself. The contract has\ndeclined the invitation.”\n“Good. Petra doesn't like people\nwho need everything explained\ntwice.”\nQ dimmed the screen. “Then\ndon't tell her.”\nThey brought chairs into the\ncourtyard. The driver told the\nstory of a bus repaired by\nthreatening to replace it. Petra\nknew the mechanic and\nsupplied an unromantic\nexplanation involving a loose\nconnection. The driver said she\nhad ruined the ending. She said\nhe could tell it again when she\nwent inside.\nQ told them about the wrong\nsong at the road check. He sang\nenough of it for Chano to beg\nhim to return to speech. For\nonce his audience was not\ndisputing his facts.\nAn orange fell from the tree and\nsplit on the concrete. Petra\npicked it up to discard the\ndamaged part, then brought\nintact fruit from the kitchen.\nLucía peeled one and gave Q a\nsection. He had tasted oranges\nbefore. This one was sharper\nthan the last and very good.\n“Do you like it?” she asked.\n“Yes.”\nShe gave him another section,\nthen divided the rest between\nthem.\nInterlude: The\nInnkeeper’s Missing\nRoom\nThe next morning the inspector\narrived before the roofer, giving\nPetra someone to speak to\nabout the ceiling but nobody\nwho had come to mend it.\n“What are you using the room\nfor now?” he asked.\n“Catching rain.”\nShe showed him the canceled\nbooking and the bucket. He\nchecked that no guest was still\nbeing put in Room Four.\nQ and Chano moved a light\ntable from the adjoining\npassage. The inspector asked\n",
+      "source_block_ids": [
         117,
         118,
         119,
         120,
-        121
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133
       ],
-      "asset": "output/illustrations/revised/issue-20/plate-07.png",
+      "asset": "output/illustrations/revised/issue-20/plate-09.png",
       "status": "planned",
-      "caption": "The Heir to Room Seven",
-      "scene_brief": "At Petra's front desk, Q redraws an overly ornate seven on the key list while Petra points to the figure with amused impatience. Brown paper covers the older guest-register page; only room numbers are being supplied. No personal guest names, copied register or magic keys. This is a chosen decorative flourish corrected for use, not inability to understand numbers. Typeset the two sevens if needed rather than relying on illegible generated lettering.",
-      "scene_anchor": "Q made the figure seven too elaborate"
+      "caption": "Another Section",
+      "scene_brief": "During the outage in the inn courtyard, Lucía shares a peeled orange with seated Q. His mechanical sampling mouth is small and functional, not a blank mask. Ordinary friendly company with Chano, Petra and driver kept secondary; no romantic embrace or sacramental pose. Use stark Goya-like night masses and reserved white faces/hands, not photographic candlelit rendering. Fruit comes intact from the kitchen, not the split discarded orange.",
+      "scene_anchor": "She gave him another section, then divided the rest between them."
+    },
+    {
+      "plate_id": "issue-20-plate-10",
+      "page": 21,
+      "facing_text_page": 20,
+      "facing_text": "whether Q worked there. He\nsaid he was a guest helping\nPetra. The field on the form\noffered owner, employee,\ncontractor, or other. The\ninspector selected other and\nasked where the table was\ngoing.\nChano looked disappointed.\n“You expected equipment?” Q\nasked.\n“I had something ready.”\n“Save it for the next hotel.”\nThe inspection found staining\nthat needed checking above the\nvisible patch. Petra kept the\nroom closed pending repair and\nasked which work the notice\nactually required. She refused a\nrecommended contractor until\nshe had compared the quote.\nThe inspector clarified that she\ncould use another qualified\ncontractor. She wrote that on\nher copy because the\nrecommendation had sounded\ncompulsory.\nThe missing room had once\nbeen occupied by a wedding\nparty. Petra told the story while\nwaiting for the roofer to call.\nThe bride wanted one quiet\nnight, the groom wanted\neveryone to be happy, and the\ngroom's mother wanted a\nseparate room for the cake. The\ncake obtained its wish first.\nA mistake on one of the civil\ndocuments had supplied the\nrelatives with a reason to\ncontinue arguments they had\nbrought from home. By\nmidnight they had moved\ntwice, occupied the kitchen,\nand borrowed a bucket for ice.\nIn the morning the bride and\ngroom left together without\nsettling what the mother\nconsidered settled by paying for\nthe cake.\n“Did the marriage last?” Q\nasked.\n“Longer than their promise to\nreturn my bucket.”\nPetra had told them later that\nshe wanted to tell the story to\nguests. They agreed to changed\nnames and disagreed about\nwhich detail was funny. The\nmother said the cake room had\nbeen sensible. Petra kept that\nreply in the story because it\nwas.\n",
+      "source_block_ids": [
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143
+      ],
+      "asset": "output/illustrations/revised/issue-20/plate-10.png",
+      "status": "planned",
+      "caption": "A Room for the Cake",
+      "scene_brief": "Illustrate the past wedding in Petra's spoken story, not a present wedding for Q. A modest inn room occupied by a wedding cake while the bride, groom and groom's mother negotiate in its doorway. Ordinary Mexican family clothing, comic attention concentrated on the mother and the displaced couple. No Q, Lucía, Chano, Custodian or inspector; no current leak, guests in currently closed Room Four, invented church ceremony or stereotyped costume.",
+      "scene_anchor": "The cake obtained its wish first."
+    },
+    {
+      "plate_id": "issue-20-plate-11",
+      "page": 23,
+      "facing_text_page": 22,
+      "facing_text": "Her guest records were kept\nbehind the desk. She laid brown\npaper over an older page and\nheld it down with the stapler\nwhile she checked the room\nnumbers with Q.\n“I can read you the numbers,”\nshe said.\n“That will do.”\nThey labeled the keys. Q made\nthe figure seven too elaborate\nand Petra asked whether it was\nexpecting to inherit money. He\nredid it plainly.\nThe roofer called. He could\ninspect that afternoon. Petra\nput the time in her repair\nnotebook beside the failed\npromise from yesterday, then\nasked him which part she\nshould buy for the sign. He\nneeded to see it.\n“Everyone needs to see\neverything,” she said after\nhanging up.\n“He may be right about the\nsign,” Q said.\n“I know. I'm complaining\nanyway.”\nThe power had returned during\nthe night. Q had recharged and\nchecked the journey reserve\nbefore coming downstairs. His\nadviser confirmed their\nmeeting; the repair question\nwas still unanswered. Q saved it\nat the top of tomorrow's notes,\nthen corrected tomorrow to\ntoday.\nBefore leaving, Q asked\nwhether she wanted a copy of\nthe key list. She did. He gave\nher the sheet and kept no guest\nnames because none had been\nneeded.\nPetra sent them away with\noranges. Chano paid the\nremaining room balance. Q had\npaid his share the night before.\nPetra counted the change into\nChano's hand while he tried to\nkeep the oranges in the bag.\nFrom the bus, Q watched the\nsign lose its letters one by one\nbehind a bend. The final O was\nstill dark. Petra expected\nsomeone to look at it that\nafternoon. Q hoped he came.\n",
+      "source_block_ids": [
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155
+      ],
+      "asset": "output/illustrations/revised/issue-20/plate-11.png",
+      "status": "planned",
+      "caption": "The Heir to Seven",
+      "scene_brief": "At the inn desk the following morning, Q relabels a key with a plain seven after Petra objects to the elaborate version. Brown paper held by a stapler screens an older guest-register page. Petra reads only room numbers; show no private names or photographed register. Q remains in long sleeves with right knee support, ready to leave after charging. No roofer shown doing a repair he has only promised to inspect; sign remains unrepaired.",
+      "scene_anchor": "He redid it plainly."
     }
   ]
 }

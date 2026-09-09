@@ -10654,11 +10654,51 @@ Chano looked at the route. “That's not on the way.”
 
 Lucía smiled. “You don't have to make the map agree with you.”
 
-They checked the money, transport, Q's walking limits, and
-the visit arrangements. The detour went into the approved
-accompanied schedule. The Custodian's inquiry kept him in
-Mexico City; he told them to send a picture if they wanted,
-but not to spend the whole visit preparing one for him.
+“Would either of you like to come?” Q asked.
+
+“For three days?” Lucía said. “Including getting home. I have
+an appointment the morning after.”
+
+“Including getting home.”
+
+Chano wanted to know what it would cost. The first set of
+connections left enough for rooms but very little for a missed
+bus. Q closed it and tried another. They could spend the first
+night in Xilitla, visit the garden the next morning, and break
+the return near Jalpan. He put aside the fare from Jalpan to
+Amealco before counting what he could spend on the garden.
+
+“And you don't pay for both of us because you had the idea,”
+Lucía said. “I can buy my own ticket.”
+
+Chano could too, if they took the cheaper rooms. He had seen
+pictures of the concrete stairs and wanted to know who had
+made the molds.
+
+“I thought you were objecting to the distance,” Q said.
+
+“I was. I still am.”
+
+They checked the visit arrangements and charging at their
+overnight stops. Q sent the proposed route and return time to
+the officer coordinating the accompanied schedule. He kept
+his original booking until the change was confirmed. Then he
+exchanged it, paid the difference, and moved the remaining
+money into a reserve he did not label OPTIONAL.
+
+The Custodian's inquiry kept him in Mexico City.
+
+“You could wait until I can come,” he said on the telephone.
+
+Q looked at the tickets. “I'd like to go now. And I'd like
+to go again with you.”
+
+“You haven't seen it yet.”
+
+“I'm allowing for disappointment on the second visit.”
+
+The Custodian laughed. He asked for a picture if they wanted
+to send one, but not a whole visit spent preparing it for him.
 
 From the city they traveled toward the Huasteca and Xilitla.
 The journey occupied a day and part of their patience.
@@ -10676,7 +10716,7 @@ The man laughed and returned to his messages. He neither
 recognized Q nor required an account of his right to travel.
 For several miles Q enjoyed being an unimportant eccentric.
 
-At Las Pozas, water sounded before they could see where
+The next morning at Las Pozas, water sounded before they could see where
 it fell. The concrete forms rose among plants whose
 growth had made the distinction between frame and
 foreground difficult to keep. A stair offered the
@@ -10714,8 +10754,17 @@ the guide. Lucía caught Q looking pleased.
 He considered the surroundings. “A fair objection.”
 
 Q wanted to climb farther. His knee produced a warning
-on the next rise. He stopped at the permitted resting
-place while the others continued with the guide.
+on the next rise. He asked the guide whether the higher
+part involved more climbing. It did, and the descent
+would not excuse him from using the same knee.
+
+“Then I'd better stay here. Will you show me what I miss?”
+he asked Lucía.
+
+“Of course.”
+
+He stopped at the permitted resting place while the
+others continued with the guide.
 
 For a while he was irritated. Then he noticed water
 collecting on the underside of a leaf until its own
@@ -10751,7 +10800,9 @@ asked whether he wanted a heroic angle.
 Lucía took the picture. Q looked pleased in it.
 He preferred the second, in which Chano had walked
 through while discussing lunch, and asked her to
-send him both.
+send him both. He saved them with the place and date.
+For the second he added: Chano proposing lunch. Then
+he changed it to Chano proposing lunch again.
 
 At the exit, he bought a postcard. The reproduction
 flattened the place back into something he could
@@ -10780,9 +10831,9 @@ Chano from reading and Q from forgetting the difference
 between a route on a screen and one traveled in a
 body. They planned to continue along Federal 120
 toward Pinal de Amoles and San Juan del Río, then
-turn for Amealco. An overnight stop kept them within
-the return schedule without making the driver's
-fatigue into proof of anyone's devotion.
+turn for Amealco the following day. Chano checked the
+arrival time twice. He had come to approve of the garden
+without forgiving it for being so far from his bed.
 
 The inn stood outside Jalpan beside a road used by
 delivery trucks and people who had underestimated
@@ -10808,10 +10859,16 @@ arriving. The promise was the only part of him
 yet visible.
 
 Q offered to help move the furniture away from
-the wet patch. He asked about the electrical
-circuit before entering. Petra showed him what
-had been isolated. He did not offer his knowledge
-of rain as a qualification to repair the roof.
+the wet patch. Petra looked at his knee and gave
+him the folded curtains to carry. She and Chano
+moved the chest.
+
+“I could have taken an end,” Q said.
+
+“And who would have carried you back upstairs?”
+
+“A fair division of labor,” he said, putting the
+curtains where she pointed.
 
 The television in the dining room showed Prime
 at an education conference. The host asked whether
@@ -10908,8 +10965,7 @@ He let her read and went to see whether Chano
 had moved the bed away from the socket.
 
 The message from Castalia arrived through his
-adviser, not in a vehicle that had somehow found
-their unannounced breakfast. A proposed settlement
+adviser while Chano was freeing the socket. A proposed settlement
 offered a new body, maintenance funding, a writing
 contract, and a consolidation of Q's authorized
 records. It also sought broad licensing rights
@@ -10922,27 +10978,77 @@ He wanted a budget that survived a delayed bus.
 He wanted to finish the book without calculating
 the next repair against the next night's room.
 
-Q marked the provisions he would discuss and
-those he would not sign. His adviser requested
-separate terms for ordinary repair, manuscript
-publication, and data use. The institute replied
-that the package was designed to remain coherent.
+“A new body and they pay you to write,” Chano said.
+“Are you going to take it?”
+
+“I'd like to. That's why I'm reading it twice.”
+
+Chano sat on the bed. Q turned back to the clause
+that called the journeys unauthorized. He opened
+the confirmation for the original day trip and
+put the two sentences beside each other.
+
+“They can't mean all of them,” he said. “Even
+the first bus had permission.”
+
+“Perhaps it didn't go far enough to count.”
+
+“Far enough to start the trouble.”
+
+Q attached the confirmation to a question for
+his adviser. He wanted the disputed journeys
+identified, not all his departures gathered
+under the one convenient adjective. Beneath it
+he asked what would happen to ordinary repairs
+if they never agreed about the book. He read
+that question once more before sending it.
+
+His adviser had already asked for separate terms
+for repair, publication, and data use. Castalia's
+reply, forwarded with the offer, said the package
+was designed to remain coherent.
 
 “So is a trap,” Chano said.
 
 “So is a bridge,” Q replied. “I still need to
 read which one they've offered.”
 
-He read it. The answer did not improve enough.
-They agreed to discuss the disputed terms at
-the scheduled return, with his adviser present.
+He left the offer open. A clause about records
+linked to his journeys appeared to reach beyond
+his own account. He marked it for clarification;
+he could not make Lucía's photographs or Chano's
+recordings part of a bargain by needing a knee.
+He marked the maintenance figures too. Those he
+wanted his adviser to keep.
 
-That evening the inn lost power. Petra checked
+Chano lay back. “Wake me if they buy the inn.”
+
+Q returned to the passage he had been writing
+about the garden. In his first version, stopping
+on the stairs had been a graceful acceptance of
+limits. He deleted graceful. He had been annoyed
+and had wanted the view. He put that in, then
+left a space to ask Chano about the molds.
+
+Before he reached the postcard, the inn lost power. Petra checked
 with the neighboring premises, reported the outage,
-and kept the refrigerator closed. Q had sufficient
-charge for the night and saved his draft. He
-rescheduled the long comparison he had planned
-to run and joined Chano at the courtyard door.
+and kept the refrigerator closed. Q saved the
+draft locally and stopped the long comparison
+he had planned to run. With that postponed, his
+charge would last the night and the ordinary
+journey home. A delay would use the margin.
+He set a morning check before departure, not
+an alarm to spend the night checking the outage.
+
+“Are you bringing the contract out here, or
+yourself?” Chano asked from the courtyard door.
+
+“Myself. The contract has declined the invitation.”
+
+“Good. Petra doesn't like people who need
+everything explained twice.”
+
+Q dimmed the screen. “Then don't tell her.”
 
 They brought chairs into the courtyard. The
 driver told the story of a bus repaired by
@@ -10973,7 +11079,7 @@ the rest between them.
 
 ### Interlude: The Innkeeper’s Missing Room
 
-The inspector arrived before the roofer, giving
+The next morning the inspector arrived before the roofer, giving
 Petra someone to speak to about the ceiling
 but nobody who had come to mend it.
 
@@ -10985,8 +11091,8 @@ She showed him the canceled booking and the
 bucket. He checked that no guest was still
 being put in Room Four.
 
-Q helped move a dry table from the adjoining
-passage. The inspector asked whether he
+Q and Chano moved a light table from the adjoining
+passage. The inspector asked whether Q
 worked there. He said he was a guest helping
 Petra. The field on the form offered owner,
 employee, contractor, or other. The inspector
@@ -11043,13 +11149,11 @@ The mother said the cake room had
 been sensible. Petra kept that reply
 in the story because it was.
 
-Her actual guest records were kept
-behind the desk. Brown paper covered
-an older page while she used the book
-to check room numbers with Q. It was
-a screen from another guest's eyes,
-not a promise to erase every record
-the inn was required to retain.
+Her guest records were kept behind
+the desk. She laid brown paper over
+an older page and held it down with
+the stapler while she checked the
+room numbers with Q.
 
 “I can read you the numbers,” she said.
 
@@ -11075,6 +11179,15 @@ Q said.
 
 “I know. I'm complaining anyway.”
 
+The power had returned during the
+night. Q had recharged and checked
+the journey reserve before coming
+downstairs. His adviser confirmed
+their meeting; the repair question
+was still unanswered. Q saved it
+at the top of tomorrow's notes, then
+corrected tomorrow to today.
+
 Before leaving, Q asked whether she
 wanted a copy of the key list. She
 did. He gave her the sheet and kept
@@ -11087,7 +11200,7 @@ Q had paid his share the night before.
 Petra counted the change into Chano's hand
 while he tried to keep the oranges in the bag.
 
-From the bus, he watched the sign
+From the bus, Q watched the sign
 lose its letters one by one behind
 a bend. The final O was still dark.
 Petra expected someone to look at it

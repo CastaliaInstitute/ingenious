@@ -1,5 +1,10 @@
 # Chapter Twenty: the next drop
 
+Historical review of the earlier 2,444-word version. The current source,
+fresh-context probes and 24-page illustration plan are documented in
+`CHAPTER_20_FRESH_CONTEXT_REVIEW.md`. The production counts and next-step
+recommendation below describe the earlier checkpoint, not current completion.
+
 ## Verdict
 
 Las Pozas gives Q something he wants without demanding a service in return, and
