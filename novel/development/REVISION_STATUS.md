@@ -1,5 +1,21 @@
 # Motivation revision: working record
 
+## Latest art checkpoint: four Issue Twenty scenes
+
+Four Goya-style drawings now face pages 6, 12, 20 and 22 in a verified four-spread
+A3 scene proof. The garden drop, supper joke, remembered wedding and key labels
+are distinct scenes with no absent Custodian inserted. Full prompts and palette
+corrections are recorded in the Issue Twenty manifest. See
+`ISSUE_20_SCENE_PROOFS.md` for visual limitations and verification evidence.
+
+All 1,077 selected words, four native grayscale PDF images, embedded fonts and
+unpainted text backgrounds pass. All 22 source/facing mappings, other manifests,
+manuscript/outline and 38 prior issue PDFs are unchanged from `293ee18d`.
+This is not the complete issue or a folding file. Eight Issue Twenty plates and
+twenty Issue 21-22 plates remain planned. Earlier art correction, whole-book
+review and Spanish synchronization also remain. No A+ claim or printing.
+Left alignment is retained following the earlier measured justification pilot.
+
 ## Latest voice checkpoint: the final two chapters
 
 Chapters Twenty-One and Twenty-Two now carry the repair question into an explicit

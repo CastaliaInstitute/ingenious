@@ -6,7 +6,7 @@
   "page_count": 24,
   "text_font": "Georgia 14/19.8333 pt",
   "plate_count_including_cover": 12,
-  "status": "planned; no new Issue 20 images generated or approved",
+  "status": "Four scene-proof selections; eight plates including cover remain planned; no complete illustrated Issue 20 PDF",
   "character_reference": "output/illustrations/revised/issue-19/plate-01.png",
   "chano_reference": "output/illustrations/revised/issue-03/plate-06.png",
   "lucia_reference": "output/illustrations/revised/issue-03/plate-04.png",
@@ -16,7 +16,7 @@
   ],
   "character_design": "Q retains approved narrow segmented head, round ear mechanisms, exposed neck, question-mark breastplate, short fitted dark jacket with long sleeves and supported knee. Add only the practical cap specified for this journey. Chano and Lucía follow their approved references. Petra is the recurring proprietor of this fictional inn outside Jalpan, not a guide at Las Pozas. The truck driver, garden guide and inspector are different people. Custodian is the tall older male coauthor with long gray hair, glasses and white work shirt, but is absent in Mexico City throughout this chapter. Q's lower face includes a small mechanical sampling mouth; do not simplify it into a blank mask. Use the corrected Goya pilot for Q-family identity, not photographic surface detail.",
   "art_direction": "Neutral monochrome Goya-inspired etching and aquatint with economical drawn contours and broad tonal masses, white highlights and no cream or sepia ink wash. Full bleed at trim with a separately typeset caption margin. Eleven exact-facing scenes and a distinct cover. Las Pozas architecture needs primary visual-reference verification when generated; the current source references verify context, not a finished illustration. Petra's inn is fictional outside Jalpan, not Puebla. No chivalric charge, revived knee, compulsory martyrdom or disclosure of private guest records. Governing reference: novel/development/GOYA_ART_DIRECTION.md. Earlier plates guide identity only; do not imitate their photographic rendering.",
-  "approval_scope": "Source-bound plan only: 24 comic pages, twelve planned plates including cover, twelve A3 landscape sides / six short-edge duplex sheets. Georgia 14/19.8333 pt, continuous left-aligned text with both final columns substantial. Eleven text pages and innermost A3 spread visually checked. No Issue 20 images generated or approved, no finished illustrated PDF, no printing.",
+  "approval_scope": "Four native drawings and four exact-facing A3 landscape scene spreads visually checked. Partial scene proof only; not a complete issue, folding file, press master or A+ approval. Production text remains left-aligned. Native files have residual RGB channel differences; PDF image streams are converted to DeviceGray without downsampling and text backgrounds remain unpainted.",
   "plates": [
     {
       "plate_id": "issue-20-cover",
@@ -105,10 +105,22 @@
         44
       ],
       "asset": "output/illustrations/revised/issue-20/plate-03.png",
-      "status": "planned",
+      "status": "scene-proof-selected",
       "caption": "The Next Drop",
       "scene_brief": "Q rests at Las Pozas, right knee supported, turning his hand beneath a drop collecting under a leaf. Foliage and a restrained glimpse of verified concrete garden form, black aquatint masses against white. Companions and guide have continued; Q must not stand at the higher viewpoint or appear healed. No mystical symbolism. Require direct primary visual references before architectural illustration.",
-      "scene_anchor": "He held a finger beneath the next one."
+      "scene_anchor": "He held a finger beneath the next one.",
+      "selected_generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-70ade821-f3c8-4d75-b890-de99c6ee177b.png",
+      "asset_sha256": "b96b1bb08e2c5ebf91726d3795bd2d314604417695dfa9d7ab4d26d315c1e5f8",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "visual_review": "Q rests alone beneath the leaf at Las Pozas, practical cap and supported knee retained. The hand/drop action and concrete gothic forms match the facing scene; architecture is an interpreted illustration, not a measured reconstruction. Warm pilot replaced by neutral palette edit. Facial smile is somewhat more graphic-cartoon than Goya and remains a full-set review concern. Native drawing and complete rendered A3 spread inspected; important gesture and separately typeset caption survive trim.",
+      "palette_check": {
+        "max_channel_difference": 20,
+        "pure_white_pixel_fraction": 0.0186,
+        "note": "Measured native file, not a promise that shaded areas are unprinted."
+      }
     },
     {
       "plate_id": "issue-20-plate-04",
@@ -194,10 +206,23 @@
         93
       ],
       "asset": "output/illustrations/revised/issue-20/plate-06.png",
-      "status": "planned",
+      "status": "scene-proof-selected",
       "caption": "Allow Two Days",
       "scene_brief": "At the inn supper table, Petra sets down tortillas to complete the truck driver's joke about his brother-in-law. Q listens with amusement; the driver has moved a glass clear of the plate. Other guests can remain economical silhouettes. No truck repair inside the room, no wedding imposed on Lucía, no heroic diagnostic Q. Preserve a distinct ordinary middle-aged driver, not Chano doubled.",
-      "scene_anchor": "Petra put down the tortillas."
+      "scene_anchor": "Petra put down the tortillas.",
+      "selected_generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-8b0b4c2d-3adc-452b-8bfc-c719a13ff42c.png",
+      "asset_sha256": "5cbeb3ae7a8f5eb0b1844e58a1e19a3bc33201b59177f6ae0fdf8d8b86d10da0",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "visual_review": "Petra delivers the supper joke with tortillas between Q and a distinct lean, receding-haired clean-shaven driver. No Chano/Custodian substitution. The passing-plate action has concluded by this moment. Right-aligned trim preserves driver; surplus tableware and descriptive hatching remain economy-of-design review concerns. Native drawing and complete rendered A3 spread inspected; important gesture and separately typeset caption survive trim.",
+      "palette_check": {
+        "max_channel_difference": 24,
+        "pure_white_pixel_fraction": 0.00446,
+        "note": "Measured native file, not a promise that shaded areas are unprinted."
+      },
+      "crop_horizontal_alignment": "right"
     },
     {
       "plate_id": "issue-20-plate-07",
@@ -299,10 +324,22 @@
         143
       ],
       "asset": "output/illustrations/revised/issue-20/plate-10.png",
-      "status": "planned",
+      "status": "scene-proof-selected",
       "caption": "A Room for the Cake",
       "scene_brief": "Illustrate the past wedding in Petra's spoken story, not a present wedding for Q. A modest inn room occupied by a wedding cake while the bride, groom and groom's mother negotiate in its doorway. Ordinary Mexican family clothing, comic attention concentrated on the mother and the displaced couple. No Q, Lucía, Chano, Custodian or inspector; no current leak, guests in currently closed Room Four, invented church ceremony or stereotyped costume.",
-      "scene_anchor": "The cake obtained its wish first."
+      "scene_anchor": "The cake obtained its wish first.",
+      "selected_generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-85ffc7ca-a97a-4e16-b7c0-34847e6f85bd.png",
+      "asset_sha256": "eaf4a0a840f430bcb2698080f6d6c18bb410793eaeab7be1c508a15ec6f483d5",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "visual_review": "Remembered wedding party only: mother guards cake room, bride and groom negotiate at threshold. Q and present-day inn party absent. Neutral edit replaces warm first generation; body gestures carry comedy without a supernatural or ethnic caricature. Native drawing and complete rendered A3 spread inspected; important gesture and separately typeset caption survive trim.",
+      "palette_check": {
+        "max_channel_difference": 20,
+        "pure_white_pixel_fraction": 0.02079,
+        "note": "Measured native file, not a promise that shaded areas are unprinted."
+      }
     },
     {
       "plate_id": "issue-20-plate-11",
@@ -324,10 +361,154 @@
         155
       ],
       "asset": "output/illustrations/revised/issue-20/plate-11.png",
-      "status": "planned",
+      "status": "scene-proof-selected",
       "caption": "The Heir to Seven",
       "scene_brief": "At the inn desk the following morning, Q relabels a key with a plain seven after Petra objects to the elaborate version. Brown paper held by a stapler screens an older guest-register page. Petra reads only room numbers; show no private names or photographed register. Q remains in long sleeves with right knee support, ready to leave after charging. No roofer shown doing a repair he has only promised to inspect; sign remains unrepaired.",
-      "scene_anchor": "He redid it plainly."
+      "scene_anchor": "He redid it plainly.",
+      "selected_generation_source": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-9f27e0a3-312f-41b7-a337-fdbb8a37f6e9.png",
+      "asset_sha256": "e3aba141cc0f8437a6b7e7fcdd0c25b10a600b626004e14c745cc3c29b77bd9a",
+      "native_pixels": [
+        1024,
+        1536
+      ],
+      "visual_review": "Q writes a plain seven beside Petra, whose skeptical gesture drives the joke. Stapler holds paper over the older register, no private guest names visible. Corrected neutral palette; consistent short jacket, ear mechanisms, small sampling mouth and Petra bun/apron. Added counter bell is incidental inn furniture, not a plot event. Native drawing and complete rendered A3 spread inspected; important gesture and separately typeset caption survive trim.",
+      "palette_check": {
+        "max_channel_difference": 21,
+        "pure_white_pixel_fraction": 0.00699,
+        "note": "Measured native file, not a promise that shaded areas are unprinted."
+      }
     }
-  ]
+  ],
+  "generation_attempts": [
+    {
+      "plate": 3,
+      "mode": "built-in image_gen",
+      "prompt": "Use case: illustration-story. Create ONE full-page original illustration for The Ingenious Machine, a novel set in near-future Mexico. It must look DRAWN by Goya in the graphic language of Los Caprichos: economical etched contours, compressed shallow space, bold irregular aquatint darks, expressive interpreted faces and hands, large clean paper-white reserves. NOT a photograph converted to engraving; NOT photographic skin, chrome, fabric weave or detailed scenery; NOT a uniform hatch filter or modern vector cartoon. Neutral black/gray ink on PURE WHITE, no antique cream tint, no border, no captions, no watermark. Portrait 2:3, highest supported resolution; full-bleed drawing reaching the canvas edges, critical faces/hands within central 80% width and above bottom 5% for later trim/caption. Contemporary ordinary clothing, no knights, owls, donkeys, devils or symbolism added. Q identity: slim robot, narrow segmented oval head, round ear mechanisms, black inset eyes, small mechanical mouth with hinged lower jaw, exposed neck, '?' chest plate, SHORT dark fitted jacket with LONG sleeves; visible articulated legs with support on anatomical RIGHT knee. Q is socially fluent, interested and self-possessed, not an infant robot. Input 1 is the governing Goya print reference ONLY for drawn language, never its people, animals, caption or aged paper. Input 2 is Q identity ONLY, ignore its human man and its photographic-looking surface detail; simplify Q's geometry into the print language. Input 3 is an architectural-reference photograph from the official Las Pozas site, for the recognizable concrete gothic arches and botanical forms ONLY, never its photographic rendering. Scene: At Las Pozas, Q in a plain practical cap rests on a low stone seat, his supported right knee still. He angles a metal index finger beneath ONE droplet forming under a broad leaf. The drop runs toward his wrist. Make the poised hand, leaf and his quiet attentive face the composition's focus; a few fragmented concrete gothic arches almost dissolve into a broad foliage shadow behind. His companions have gone on with the guide and are NOT present. He is not at the higher viewpoint, not healed, not drowning. No extra machines or lettering except the established small '?' on his chest. Loose white ground and broad dark leaf silhouette, very selective detail.",
+      "referenced_image_paths": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/goya-pilot/references/capricho-43-met.jpg",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-19/plate-01.png",
+        "/tmp/ingenious-laspozas-refs/ventanas-goticas.jpg"
+      ],
+      "output": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-dcd2b388-8e38-4c2d-a801-ae370aec3573.png",
+      "output_sha256": "98e560adcfeef4c7ad259fb2c77faf87c4ef8b92d1598be5bf0143e682bf059c",
+      "selected": false
+    },
+    {
+      "plate": 11,
+      "mode": "built-in image_gen",
+      "prompt": "Use case: illustration-story. Create ONE full-page original illustration for The Ingenious Machine, a novel set in near-future Mexico. It must look DRAWN by Goya in the graphic language of Los Caprichos: economical etched contours, compressed shallow space, bold irregular aquatint darks, expressive interpreted faces and hands, large clean paper-white reserves. NOT a photograph converted to engraving; NOT photographic skin, chrome, fabric weave or detailed scenery; NOT a uniform hatch filter or modern vector cartoon. Neutral black/gray ink on PURE WHITE, no antique cream tint, no border, no captions, no watermark. Portrait 2:3, highest supported resolution; full-bleed drawing reaching the canvas edges, critical faces/hands within central 80% width and above bottom 5% for later trim/caption. Contemporary ordinary clothing, no knights, owls, donkeys, devils or symbolism added. Q identity: slim robot, narrow segmented oval head, round ear mechanisms, black inset eyes, small mechanical mouth with hinged lower jaw, exposed neck, '?' chest plate, SHORT dark fitted jacket with LONG sleeves; visible articulated legs with support on anatomical RIGHT knee. Q is socially fluent, interested and self-possessed, not an infant robot. Input 1 is the governing Goya print reference ONLY for drawn language, never its people, animals, caption or aged paper. Input 2 is Q identity ONLY, ignore its human man and its photographic-looking surface detail; simplify Q's geometry into the print language. Scene: At the desk of the modest fictional El Descanso inn outside Jalpan, Q (no cap indoors) sits comfortably rewriting a room-key label as a plain '7', with several ordinary keys on the counter. Beside him Petra, the middle-aged innkeeper, sturdy build, dark hair streaked gray tied in a simple bun, broad practical hands, plain work blouse and apron, gives the elaborate first attempt an amused skeptical glance. She has no glasses and is not a glamorous model. Brown paper held down by a stapler covers an older guest-register page; no guest names or readable records. The comic relationship is between her economical practical gesture and Q's careful calligraphic hand. Establish Petra as a distinctive recurring character. Two figures, desk, keys and one restrained inn doorway: eliminate incidental background description. Show the number 7 only where needed, no words, no pretend script. Neither figure resembles the male Custodian in Input 2. Two strong shadow masses and bright reserved paper around their hands.",
+      "referenced_image_paths": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/goya-pilot/references/capricho-43-met.jpg",
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-19/plate-01.png"
+      ],
+      "output": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-61e76b36-b341-4506-8e1a-2448fac390fa.png",
+      "output_sha256": "ff1d4f55d913281c9010550f68ce9030ae673d8f94798d20a94e458e61ced301",
+      "selected": false
+    },
+    {
+      "plate": 3,
+      "mode": "built-in image_gen",
+      "prompt": "Use case: style-transfer. Edit target: the supplied drawing. Change ONLY the ink/paper palette: eliminate every warm brown/sepia hue, use strictly NEUTRAL black and gray (equal RGB channels), and make the unmarked paper reserves pure white #FFFFFF, without a cream wash or antique paper staining. Preserve the exact composition, Goya etched contours and aquatint shadow structure, figures, faces, mechanical mouths, clothing, hands, architecture, props and existing lettering. Do not redraw the people into photographic realism. No new objects, border, captions or text. Retain full portrait canvas and resolution.",
+      "referenced_image_paths": [
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-dcd2b388-8e38-4c2d-a801-ae370aec3573.png"
+      ],
+      "output": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-70ade821-f3c8-4d75-b890-de99c6ee177b.png",
+      "output_sha256": "b96b1bb08e2c5ebf91726d3795bd2d314604417695dfa9d7ab4d26d315c1e5f8",
+      "selected": true
+    },
+    {
+      "plate": 11,
+      "mode": "built-in image_gen",
+      "prompt": "Use case: style-transfer. Edit target: the supplied drawing. Change ONLY the ink/paper palette: eliminate every warm brown/sepia hue, use strictly NEUTRAL black and gray (equal RGB channels), and make the unmarked paper reserves pure white #FFFFFF, without a cream wash or antique paper staining. Preserve the exact composition, Goya etched contours and aquatint shadow structure, figures, faces, mechanical mouths, clothing, hands, architecture, props and existing lettering. Do not redraw the people into photographic realism. No new objects, border, captions or text. Retain full portrait canvas and resolution.",
+      "referenced_image_paths": [
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-61e76b36-b341-4506-8e1a-2448fac390fa.png"
+      ],
+      "output": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-9f27e0a3-312f-41b7-a337-fdbb8a37f6e9.png",
+      "output_sha256": "e3aba141cc0f8437a6b7e7fcdd0c25b10a600b626004e14c745cc3c29b77bd9a",
+      "selected": true
+    },
+    {
+      "plate": 10,
+      "mode": "built-in image_gen",
+      "prompt": "Use case: illustration-story. Original full-page illustration for The Ingenious Machine, near-future Mexico. Image 1 is Goya's Los Caprichos ONLY for economical etched line, broad aquatint darks, compressed space, expressive interpreted human gesture. Do not reproduce its animals, person, lettering, border or antique paper. Neutral black/gray ink with PURE WHITE #FFFFFF paper reserves; no cream, brown, photographic rendering, pores, detailed fabric weave or uniform hatch filter. Portrait 2:3; full-bleed art with key figures inset from trim and bottom 5% kept free of essential details for a separate typeset caption. Scene: a remembered wedding party in the modest fictional El Descanso inn outside Jalpan. The groom's mother has obtained an entire room for the wedding cake: show a cake on a small table occupying the room, and a bride, groom and his mother negotiating at the doorway. The mother, in a plain contemporary best blouse and skirt, stands protectively at the threshold with practical conviction; the bride in a simple contemporary white wedding dress wants quiet, the groom in an ordinary rumpled suit tries to placate both. The cake is ordinary celebratory size, NOT a giant fantasy cake. Wry family comedy through displaced bodies and gestures, no caricature of ethnicity. Only these three humans. Q, Petra, Chano, Lucia, Custodian and inspector ABSENT; no robots, current leak, flooded room, church, colonial costume, sombrero, supernatural allegory or text. Prefer three interpreted faces in broad light reserves and a broad dark doorway, with minimal incidental scenery.",
+      "referenced_image_paths": [
+        "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/goya-pilot/references/capricho-43-met.jpg"
+      ],
+      "output": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-50b1e4d1-d6e0-4ce6-a3b3-63af6dd664af.png",
+      "output_sha256": "98e628bbc1dc04ab5a13e303be3d848433471ad6ced656042df0e30d9db8cda8",
+      "selected": false
+    },
+    {
+      "plate": "10final",
+      "mode": "built-in image_gen",
+      "prompt": "Use case: style-transfer. Edit target: the supplied drawing. Change ONLY the ink/paper palette: eliminate every warm brown/sepia hue, use strictly NEUTRAL black and gray (equal RGB channels), and make the unmarked paper reserves pure white #FFFFFF, without a cream wash or antique paper staining. Preserve the exact composition, Goya etched contours and aquatint shadow structure, figures, faces, mechanical mouths, clothing, hands, architecture, props and existing lettering. Do not redraw the people into photographic realism. No new objects, border, captions or text. Retain full portrait canvas and resolution.",
+      "referenced_image_paths": [
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-50b1e4d1-d6e0-4ce6-a3b3-63af6dd664af.png"
+      ],
+      "output": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-85ffc7ca-a97a-4e16-b7c0-34847e6f85bd.png",
+      "output_sha256": "eaf4a0a840f430bcb2698080f6d6c18bb410793eaeab7be1c508a15ec6f483d5",
+      "selected": true
+    },
+    {
+      "plate": 6,
+      "mode": "built-in image_gen",
+      "prompt": "Use case: illustration-story. Create one original Goya-style etched/aquatint drawing for The Ingenious Machine. Input 1 supplies only Q and Petra identity, their clothing, interpreted faces, drawn line and broad shadows: NOT its desk, keys, stapler or pose. Portrait 2:3, full-bleed at trim, essential hands and faces inside central 80% width and clear of bottom 5% for a separate caption. STRICT NEUTRAL BLACK/GRAY INK, equal RGB channels, large PURE WHITE #FFFFFF paper reserves, NO cream/sepia tint, no photo-real surfaces or engraved photo filter. Scene: supper in the modest fictional El Descanso inn outside Jalpan. Petra stands setting a plate of tortillas on the table between Q and an ordinary middle-aged truck driver. She has just delivered the best line of their joke, and her small amused practical gesture draws their attention. Q sits in his short dark long-sleeved jacket, oval segmented head, round ears, '?' chest and small functional mechanical mouth. The driver is distinct: lean weathered face, receding short hair, clean-shaven, plain polo shirt, NOT the stocky moustached Chano. He has moved his water glass away from the plate Q is passing; keep both hands physically plausible, ordinary food and tableware. Exactly three people, no Custodian, Lucia, Chano, engine, guest book, wedding cake or added television scene. One broad dark wall/doorway, light faces and hands, sparse background. Expressive drawn family-inn comedy, not posed portrait or heroic robot lesson.",
+      "referenced_image_paths": [
+        "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-9f27e0a3-312f-41b7-a337-fdbb8a37f6e9.png"
+      ],
+      "output": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-8b0b4c2d-3adc-452b-8bfc-c719a13ff42c.png",
+      "output_sha256": "5cbeb3ae7a8f5eb0b1844e58a1e19a3bc33201b59177f6ae0fdf8d8b86d10da0",
+      "selected": true
+    }
+  ],
+  "reference_verification": [
+    {
+      "path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-50b1e4d1-d6e0-4ce6-a3b3-63af6dd664af.png",
+      "sha256": "98e628bbc1dc04ab5a13e303be3d848433471ad6ced656042df0e30d9db8cda8"
+    },
+    {
+      "path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-61e76b36-b341-4506-8e1a-2448fac390fa.png",
+      "sha256": "ff1d4f55d913281c9010550f68ce9030ae673d8f94798d20a94e458e61ced301"
+    },
+    {
+      "path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-9f27e0a3-312f-41b7-a337-fdbb8a37f6e9.png",
+      "sha256": "e3aba141cc0f8437a6b7e7fcdd0c25b10a600b626004e14c745cc3c29b77bd9a"
+    },
+    {
+      "path": "/Users/danielmcshan/.codex/generated_images/01a07243-6175-7e73-ba59-aec06a4eead2/exec-dcd2b388-8e38-4c2d-a801-ae370aec3573.png",
+      "sha256": "98e560adcfeef4c7ad259fb2c77faf87c4ef8b92d1598be5bf0143e682bf059c"
+    },
+    {
+      "path": "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/goya-pilot/references/capricho-43-met.jpg",
+      "sha256": "122aa775d975c4aa8d96e7ecbbfe02626c36c12f42cb4bfafbfc59dbafc52fa8"
+    },
+    {
+      "path": "/Users/danielmcshan/Documents/Codex/2026-09-05/pull-the-ingenious-repo-for-castalia/output/illustrations/revised/issue-19/plate-01.png",
+      "sha256": "d93321306ac7ae28712cac9778f2316a461b74b7a3eba168e05dc814a8100bfb"
+    },
+    {
+      "path": "/tmp/ingenious-laspozas-refs/ventanas-goticas.jpg",
+      "sha256": "3c1482b39140fe60531af171cb6c69074fe706a9a328aea50454661116f87aed"
+    }
+  ],
+  "architecture_provenance": {
+    "context": [
+      "https://laspozasxilitla.org.mx/el-jadin-surrealista/",
+      "https://laspozasxilitla.org.mx/dentro-del-jardin/"
+    ],
+    "image": "https://laspozasxilitla.org.mx/wp-content/uploads/2022/03/24.Ventanas-go%CC%81ticas-Jaula-de-Loros-1.jpg",
+    "local_reference": "/tmp/ingenious-laspozas-refs/ventanas-goticas.jpg",
+    "scope": "Official garden photograph inspected for concrete gothic shapes, not copied as photographic surface or claimed as public domain. Research photograph is not republished in repository; final plate is a generated fictional scene."
+  },
+  "scene_proof": {
+    "path": "output/pdf/ingenious-issue-20-goya-scene-proof-a3.pdf",
+    "sha256": "3c12d251dbbb00690bd8fc297e59ff17350d0470a455e8b9a86e23cfd846bbaf",
+    "source_text_pages": [
+      6,
+      12,
+      20,
+      22
+    ],
+    "scope": "Four selected spreads, not the complete 24-page issue or a booklet imposition."
+  }
 }
