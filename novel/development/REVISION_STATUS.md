@@ -1,5 +1,26 @@
 # Motivation revision: working record
 
+## Latest voice checkpoint: Chapter Seventeen
+
+The return meeting no longer implies that Q crossed the visitor boundary:
+Chapters Eight and Sixteen establish that he stayed in the bay. His denial
+leaves Castalia's electricity purchase and missing consultation annex open;
+Bixha keeps the latter on the agenda. The book-draft exchange now lets Q notice
+the attention devoted to his entrance and share a protagonist joke with Bixha,
+instead of forgetting that her invitation already begins the draft. Prime's
+stronger existing disagreement remains unchanged after six alternative-model
+probes. They are not faculty approval or independent embodiment validation.
+
+Only Chapter Seventeen and its outline entry change from `7e930667`. All 2,728
+words fit twenty comic pages at Georgia 13.25/18.7708. All nine text pages and the
+innermost A3 spread were visually checked; all twenty imposed text positions and
+all 22 source bindings passed. The other 21 chapters/manifests and 32 earlier
+issue PDFs remain unchanged. Ten exact-facing illustrations are still planned,
+with the draft conversation re-anchored on its actual facing page. See
+`CHAPTER_17_FRESH_CONTEXT_REVIEW.md`. Next: its complete Goya art and PDF proofs,
+alongside the earlier correction and broader literary work. The full goal remains
+active; no printing or A+ certification occurred.
+
 ## Latest production checkpoint: Issue Sixteen
 
 Issue Sixteen now has ten unique Goya-style revision plates, a complete twenty-page

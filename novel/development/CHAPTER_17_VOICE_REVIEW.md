@@ -1,5 +1,10 @@
 # Chapter Seventeen: between his visits
 
+Historical checkpoint. See `CHAPTER_17_FRESH_CONTEXT_REVIEW.md` for the later
+boundary correction, revised draft conversation, six inference probes and
+2,728-word layout at Georgia 13.25/18.7708. The 2,692-word count below describes
+this earlier pass. No Issue Seventeen art is approved yet.
+
 ## Verdict
 
 The return's strongest feature is Q and Prime's informed disagreement: neither

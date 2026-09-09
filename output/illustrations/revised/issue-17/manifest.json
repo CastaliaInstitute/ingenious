@@ -1,19 +1,19 @@
 {
   "issue": 17,
-  "revision": "2026-09-08-between-his-visits",
+  "revision": "2026-09-08-boundary-and-protagonist",
   "source": "novel/THE_INGENIOUS_MACHINE.md",
-  "chapter_sha256": "050d762ca4f27df88e9d6a5a51089d1599a71114dffaec0c34aef9c2a45123ff",
+  "chapter_sha256": "82616c32e9fd93141dcc175f1fc43f39154a548de1c4650746e493a446e5dde8",
   "page_count": 20,
-  "text_font": "Georgia 13.3/18.8417 pt",
+  "text_font": "Georgia 13.25/18.7708 pt",
   "plate_count_including_cover": 10,
-  "status": "planned; no new Issue 17 images generated or approved",
+  "status": "revised source and exact-facing illustration plan; internal text layout checked; ten plates remain unapproved",
   "character_reference": "output/illustrations/revised/issue-01/cover.png",
   "chano_reference": "output/illustrations/revised/issue-03/plate-06.png",
   "prime_design_source": "output/illustrations/revised/issue-11/manifest.json",
   "bixha_design_source": "output/illustrations/revised/issue-08/manifest.json",
   "character_design": "Q keeps the approved narrow segmented head, ear mechanisms, exposed neck, question-mark breastplate, short fitted dark jacket with long sleeves and supported knee. Chano follows his approved reference. Prime is a clean lighter-bodied Q-family peer with undamaged shoulder, not a naive substitute. Bixha remains the same organizer as the first Isthmus encounter. Celina is the maintenance worker, with an adult son studying and a mother living beside the damaged road. Her mother is a separate older woman. Custodian, if pictured on calls, is the tall older man with tied-back long gray hair, glasses and white work shirt, never a second in-person attendee. Q's lower face includes a small mechanical sampling mouth; do not simplify it into a blank mask. Use the corrected Goya pilot for Q-family identity, not photographic surface detail.",
   "art_direction": "Neutral monochrome Goya-inspired etching and aquatint with economical drawn contours and broad tonal masses; white highlights, no sepia or cream background ink. Full bleed at trim, separate typeset caption margin. Contemporary near-future Isthmus labor, roads and ordinary rooms, not medieval chivalry or anonymous cultural scenery. Nine unique exact-facing scenes plus cover. Maintain role and face consistency when the planned references are generated. No private records reproduced legibly. Governing reference: novel/development/GOYA_ART_DIRECTION.md. Earlier plates guide identity only; do not imitate their photographic rendering.",
-  "approval_scope": "Source-bound plan only. Twenty comic pages, ten planned plates including cover, ten A3 landscape sides / five short-edge duplex sheets. Reviewed 13.3/18.8417 pt fills both final text columns. No Issue 17 art generated or approved; no finished illustrated PDF or print job.",
+  "approval_scope": "Revised source-bound plan, 2728 words on twenty comic pages at Georgia 13.25/18.7708; ten planned plates. Internal layout verification is not art approval.",
   "plates": [
     {
       "plate_id": "issue-17-cover",
@@ -27,7 +27,7 @@
       "plate_id": "issue-17-plate-01",
       "page": 3,
       "facing_text_page": 2,
-      "facing_text": "Chapter Seventeen: The\nWind Farm of Giants,\nAgain\nThe second invitation from the\nIsthmus came from Bixha, who\nwanted Q to check three\nreferences in a statement and did\nnot need him to discover the\nwind. She also wanted the\narchive's answer about its\nelectricity contract. The\nCustodian had supplied some\npapers since the hearing; the\nmissing annex remained missing.\nQ called her before proposing the\njourney. She had time on\nThursday, provided the meeting\nabout the access road ended\nwhen it was supposed to end,\nwhich she advised him not to\nregard as a promise.\nHis adviser added the visit to a\nproposed accompanied itinerary.\nMarisol's archive work and Ana's\ninvitation would take them into\nChiapas afterward. A separate\nrequest from Noemí would take\nQ farther east if the time and\nmoney allowed. The return date,\ncompanions, check-ins, and\npermitted work went into the\nrevised travel authorization. The\ndocument did not decide who\nowned his body. It did decide\nthat he could take it to the places\nlisted without pretending to be a\nfugitive.\n“This is becoming an expensive\nbook,” Chano said.\n“You have not seen the part\nwhere we try to print it.”\nThey compared fares. The\novernight coach would save a\nhotel night and reach the\nIsthmus three hours before the\nmeeting.\n“I could sleep on that,” Chano\nsaid. “I wouldn't call what arrived\nat the other end your\ncompanion.”\nQ checked the connection and\nthe seat space. His knee had\nbecome an expensive participant\nin these discussions.\n“The earlier bus and a room,\nthen. We can arrive disagreeable\nfor reasons of our own.”\nThey kept a repair allowance\nseparate from the journey\nmoney. Q sent the Custodian a\npage and arranged their next call.\nThe page contained a splendid\ndescription of departure,\nfollowed by a note that the bus\nhad not yet arrived.\n",
+      "facing_text": "Chapter Seventeen: The\nWind Farm of Giants,\nAgain\nThe second invitation from the\nIsthmus came from Bixha, who\nwanted Q to check three\nreferences in a statement and did\nnot need him to discover the\nwind. She also wanted the\narchive's answer about its\nelectricity contract. The\nCustodian had supplied some\npapers since the hearing; the\nmissing annex remained missing.\nQ called her before proposing the\njourney. She had time on\nThursday, provided the meeting\nabout the access road ended\nwhen it was supposed to end,\nwhich she advised him not to\nregard as a promise.\nHis adviser added the visit to a\nproposed accompanied itinerary.\nMarisol's archive work and Ana's\ninvitation would take them into\nChiapas afterward. A separate\nrequest from Noemí would take\nQ farther east if the time and\nmoney allowed. The return date,\ncompanions, check-ins, and\npermitted work went into the\nrevised travel authorization. The\ndocument did not decide who\nowned his body. It did decide that\nhe could take it to the places\nlisted without pretending to be a\nfugitive.\n“This is becoming an expensive\nbook,” Chano said.\n“You have not seen the part\nwhere we try to print it.”\nThey compared fares. The\novernight coach would save a\nhotel night and reach the Isthmus\nthree hours before the meeting.\n“I could sleep on that,” Chano\nsaid. “I wouldn't call what arrived\nat the other end your\ncompanion.”\nQ checked the connection and the\nseat space. His knee had become\nan expensive participant in these\ndiscussions.\n“The earlier bus and a room,\nthen. We can arrive disagreeable\nfor reasons of our own.”\nThey kept a repair allowance\nseparate from the journey money.\nQ sent the Custodian a page and\narranged their next call. The page\ncontained a splendid description\nof departure, followed by a note\nthat the bus had not yet arrived.\nPrime called the next morning.\nHe was already near the wind\nfield.\n",
       "source_block_ids": [
         0,
         1,
@@ -39,7 +39,8 @@
         7,
         8,
         9,
-        10
+        10,
+        11
       ],
       "asset": "output/illustrations/revised/issue-17/plate-01.png",
       "status": "planned",
@@ -51,9 +52,8 @@
       "plate_id": "issue-17-plate-02",
       "page": 5,
       "facing_text_page": 4,
-      "facing_text": "Prime called the next morning.\nHe was already near the wind\nfield.\n“They've asked me to introduce\nthe meeting,” he said.\n“What have they told you the\nmeeting is?”\nPrime sent the public program.\nIts title announced a partnership\nthat Bixha's message described as\na disputed proposal.\n“I asked them to change that,”\nPrime said. “They changed the\nbody text. The title went to print\nyesterday.”\nQ read the revised paragraph. It\nwas better. He wished it were\nworse; that would have made his\nanswer easier.\n“Your introduction may still be\nused to endorse the title.”\n“It may. If I refuse, Álvaro\nintroduces it. I've negotiated an\nunedited question period and a\ncopy of my full remarks.”\n“They gave me a copy too.”\n“I know. I read what you sent.\nI'm not assuming that a\nrecording controls the uses made\nof it.”\nNeither spoke for a moment. Q\nhad intended to save Prime from\nhis own mistake and discovered\nthat Prime had understood the\nmistake well enough to choose a\nneighboring risk.\n“I think the whole arrangement\nfavors them,” Q said.\n“So do I. I don't think that\ndecides every action available\ninside it.”\n“Nor do I. It makes me less\ncheerful about your\nintroduction.”\n“I haven't written a cheerful one.”\nThe call ended amicably, which\nleft the disagreement available to\ntrouble both of them.\nAt the wind field, the visitor\nentrance had been moved. The\nold pedestrian gate stood behind\ntemporary mesh, awaiting work.\nQ recognized the narrow place\nwhere he had helped the woman\nthrough and stayed on the\ndesignated path. Teresa met\nthem at reception.\n“You're early,” she said.\n“I've been practicing.”\nShe showed him where visitors\ncould wait without blocking a\nvehicle. This time the space was\n",
+      "facing_text": "“They've asked me to introduce\nthe meeting,” he said.\n“What have they told you the\nmeeting is?”\nPrime sent the public program.\nIts title announced a partnership\nthat Bixha's message described as\na disputed proposal.\n“I asked them to change that,”\nPrime said. “They changed the\nbody text. The title went to print\nyesterday.”\nQ read the revised paragraph. It\nwas better. He wished it were\nworse; that would have made his\nanswer easier.\n“Your introduction may still be\nused to endorse the title.”\n“It may. If I refuse, Álvaro\nintroduces it. I've negotiated an\nunedited question period and a\ncopy of my full remarks.”\n“They gave me a copy too.”\n“I know. I read what you sent. I'm\nnot assuming that a recording\ncontrols the uses made of it.”\nNeither spoke for a moment. Q\nhad intended to save Prime from\nhis own mistake and discovered\nthat Prime had understood the\nmistake well enough to choose a\nneighboring risk.\n“I think the whole arrangement\nfavors them,” Q said.\n“So do I. I don't think that\ndecides every action available\ninside it.”\n“Nor do I. It makes me less\ncheerful about your\nintroduction.”\n“I haven't written a cheerful one.”\nThe call ended amicably, which\nleft the disagreement available to\ntrouble both of them.\nAt the wind field, the visitor\nentrance had been moved. The\nold pedestrian gate stood behind\ntemporary mesh, awaiting work.\nQ recognized the narrow place\nwhere he had helped the woman\nthrough and stayed on the\ndesignated path. Teresa met\nthem at reception.\n“You're early,” she said.\n“I've been practicing.”\nShe showed him where visitors\ncould wait without blocking a\nvehicle. This time the space was\nmarked on the plan supplied with\nthe invitation. Someone had\nchanged more than a sign.\nBixha arrived carrying a bag of\npapers and half a breakfast. She\ngave Chano directions to a stall\n",
       "source_block_ids": [
-        11,
         12,
         13,
         14,
@@ -72,7 +72,8 @@
         27,
         28,
         29,
-        30
+        30,
+        31
       ],
       "asset": "output/illustrations/revised/issue-17/plate-02.png",
       "status": "planned",
@@ -84,9 +85,8 @@
       "plate_id": "issue-17-plate-03",
       "page": 7,
       "facing_text_page": 6,
-      "facing_text": "marked on the plan supplied with\nthe invitation. Someone had\nchanged more than a sign.\nBixha arrived carrying a bag of\npapers and half a breakfast. She\ngave Chano directions to a stall\nbecause he had looked at the\nbreakfast with an interest she\npreferred not to reward.\nQ handed over the Custodian's\nreply. The purchase agreement\nconfirmed Castalia's place among\nthe power customers. The reply\ndid not supply the disputed\nconsultation annex.\n“Will he say that publicly?” she\nasked.\n“Yes. In his own statement. I've\nbrought the version he\napproved.”\nShe read it, marked a date to\ncheck, and put it beside her own\npapers. There was no ceremonial\nacceptance. She needed to eat\nbefore the room filled.\nPrime stood near the stage with a\nproduction assistant. A small\nbrass key had been pinned to his\ncoat. He showed Q the clasp.\n“It makes a hole.”\n“That is its most defensible\nachievement so far.”\nPrime took it off. The assistant\nasked whether he wanted the\nlarger emblem instead. He said\nno, and she wrote that down as if\nthe refusal concerned size.\nThe public dialogue began late\nbecause the bus bringing several\nparticipants had been sent to the\ncontractor entrance. The\nmoderator proposed keeping the\noriginal finishing time.\n“Then the people who arrived\nearly get their full meeting,” said\nthe maintenance worker sitting\nbeside Bixha.\nThe moderator looked at the\nproduction schedule. Prime\noffered to shorten his\nintroduction. The worker asked\nhim why the delayed passengers\nshould have to depend on his\ngenerosity.\n“They shouldn't,” he said. “I'm\noffering the time I control. The\nschedule still needs changing.”\nThe moderator added half an\nhour. It was not enough, but it\nwas more than had been on offer\nbefore anyone objected.\nÁlvaro spoke of investment and\nthe future. The government\nrepresentative spoke of\nconsultation. Prime said the\n",
+      "facing_text": "because he had looked at the\nbreakfast with an interest she\npreferred not to reward.\nQ handed over the Custodian's\nreply. The purchase agreement\nconfirmed Castalia's place among\nthe power customers. The reply\ndid not supply the disputed\nconsultation annex.\n“Will he say that publicly?” she\nasked.\n“Yes. In his own statement. I've\nbrought the version he\napproved.”\nShe read it, marked a date to\ncheck, and put it beside her own\npapers. There was no ceremonial\nacceptance. She needed to eat\nbefore the room filled.\nPrime stood near the stage with a\nproduction assistant. A small\nbrass key had been pinned to his\ncoat. He showed Q the clasp.\n“It makes a hole.”\n“That is its most defensible\nachievement so far.”\nPrime took it off. The assistant\nasked whether he wanted the\nlarger emblem instead. He said\nno, and she wrote that down as if\nthe refusal concerned size.\nThe public dialogue began late\nbecause the bus bringing several\nparticipants had been sent to the\ncontractor entrance. The\nmoderator proposed keeping the\noriginal finishing time.\n“Then the people who arrived\nearly get their full meeting,” said\nthe maintenance worker sitting\nbeside Bixha.\nThe moderator looked at the\nproduction schedule. Prime\noffered to shorten his\nintroduction. The worker asked\nhim why the delayed passengers\nshould have to depend on his\ngenerosity.\n“They shouldn't,” he said. “I'm\noffering the time I control. The\nschedule still needs changing.”\nThe moderator added half an\nhour. It was not enough, but it\nwas more than had been on offer\nbefore anyone objected.\nÁlvaro spoke of investment and\nthe future. The government\nrepresentative spoke of\nconsultation. Prime said the\nparticipants had not yet agreed\non the terms displayed in the title\nbehind him. The screen operator\nremoved the title. For several\n",
       "source_block_ids": [
-        30,
         31,
         32,
         33,
@@ -113,7 +113,7 @@
       "plate_id": "issue-17-plate-04",
       "page": 9,
       "facing_text_page": 8,
-      "facing_text": "participants had not yet agreed\non the terms displayed in the title\nbehind him. The screen operator\nremoved the title. For several\nseconds, Prime stood beneath\nPLEASE WAIT.\nChano leaned toward Q. “His\nbest heading.”\nThe first landholder described a\nlease he had signed and a\npayment whose deductions he\ncould not reconcile. A neighbor\ninterrupted to say that he should\nnever have signed. The man\nanswered that the neighbor had\nalso signed, and for less. Their\ndisagreement was older than the\nmicrophones.\nThe maintenance worker said the\nproject had paid for her son's\nstudies and damaged the road\noutside her mother's house.\nWhen someone called her a\ntraitor, she asked whether\nleaving her job would repair the\nroad. She wanted the wages and\nthe repair. Her name was Celina.\nThe moderator asked her to\nrepeat it for the record; she\nmoved the microphone closer\nand repeated the address as well.\nBixha's microphone began to\ncrackle. She tapped it, tried\nagain, and asked for the spare.\nThe technician had to fetch\nbatteries from the room where\nspare equipment was kept under\nlock.\nThe cameras turned toward Q.\nHe could see his own face on the\nside monitor, looking concerned\nabout a speech the audience\ncould no longer hear.\nPrime handed Bixha his wired\nmicrophone. The technician\nchanged the camera shot when\nthe moderator signaled. Q\nwatched himself vanish from the\nmonitor. Beside him Chano\nlowered the hand he had been\nwaving at the camera and went\nback to his program.\nBixha resumed at the point\nwhere she had stopped. She\nspoke about payment schedules,\npaths, drainage, and the\nhouseholds affected by a contract\nsigned with someone else. Part of\nher address was in Isthmus\nZapotec. The interpreters present\nhandled the passages they had\nagreed to translate. Q followed\nthe Spanish and the supplied\npapers. He did not manufacture a\ncomprehension of what he could\nnot follow merely because he\nunderstood why it mattered.\n",
+      "facing_text": "seconds, Prime stood beneath\nPLEASE WAIT.\nChano leaned toward Q. “His best\nheading.”\nThe first landholder described a\nlease he had signed and a\npayment whose deductions he\ncould not reconcile. A neighbor\ninterrupted to say that he should\nnever have signed. The man\nanswered that the neighbor had\nalso signed, and for less. Their\ndisagreement was older than the\nmicrophones.\nThe maintenance worker said the\nproject had paid for her son's\nstudies and damaged the road\noutside her mother's house.\nWhen someone called her a\ntraitor, she asked whether leaving\nher job would repair the road.\nShe wanted the wages and the\nrepair. Her name was Celina. The\nmoderator asked her to repeat it\nfor the record; she moved the\nmicrophone closer and repeated\nthe address as well.\nBixha's microphone began to\ncrackle. She tapped it, tried\nagain, and asked for the spare.\nThe technician had to fetch\nbatteries from the room where\nspare equipment was kept under\nlock.\nThe cameras turned toward Q.\nHe could see his own face on the\nside monitor, looking concerned\nabout a speech the audience\ncould no longer hear.\nPrime handed Bixha his wired\nmicrophone. The technician\nchanged the camera shot when\nthe moderator signaled. Q\nwatched himself vanish from the\nmonitor. Beside him Chano\nlowered the hand he had been\nwaving at the camera and went\nback to his program.\nBixha resumed at the point where\nshe had stopped. She spoke about\npayment schedules, paths,\ndrainage, and the households\naffected by a contract signed with\nsomeone else. Part of her address\nwas in Isthmus Zapotec. The\ninterpreters present handled the\npassages they had agreed to\ntranslate. Q followed the Spanish\nand the supplied papers. He did\nnot manufacture a\ncomprehension of what he could\nnot follow merely because he\nunderstood why it mattered.\nAsked about Castalia's\nprocurement reply, he read the\n",
       "source_block_ids": [
         45,
         46,
@@ -122,7 +122,8 @@
         49,
         50,
         51,
-        52
+        52,
+        53
       ],
       "asset": "output/illustrations/revised/issue-17/plate-04.png",
       "status": "planned",
@@ -134,7 +135,7 @@
       "plate_id": "issue-17-plate-05",
       "page": 11,
       "facing_text_page": 10,
-      "facing_text": "Asked about Castalia's\nprocurement reply, he read the\nrelevant part and identified its\nmissing annex. He also corrected\na question about his supposed\nattack. The operator had stopped\nthe nearest group as a precaution\nafter visitors crossed the line; he\nhad not struck or remotely\ncommanded a turbine.\n“Then you deny responsibility?”\nÁlvaro asked.\n“For crossing the line? No. For\nthe event in your illustration?\nYes. Those are different answers\nto different questions.”\nCelina asked whether the gate\nwould be widened before the next\nscheduled maintenance delivery.\nTeresa had a work date, not yet a\ncompleted repair. Celina wrote it\non the program. Q sat down\nbeside Chano, who had saved his\nplace with a folded program.\nThe afternoon produced a limited\nundertaking: named documents\nwould be supplied, a drainage\ninspection would take place, and\nwork on the disputed new access\nstrip would pause while the\nparties reviewed its boundary.\nThe existing turbines would\ncontinue operating. The\nproposed power to reject further\nwork remained contested. No one\nhad renegotiated every lease\nfrom a folding chair in four\nhours.\nBixha asked Q to check that the\ndraft's page references matched\nthe papers actually circulated.\nThe third reference led to the\nright page number in the wrong\nversion. He laid the two printouts\nbeside each other: on one, the\nparagraph continued; on the\nother, it ended before the\ncondition about drainage.\n“Which did the people at the back\nreceive?” he asked.\nShe called across to the woman\ncollecting spare copies. They\nchecked the remaining stack,\nthen a copy someone had folded\ninto a bag. Both were the shorter\nversion. Bixha asked the\nsecretary to circulate the missing\nparagraph with the corrected\nreference. Q marked the\ncorrection as requested, not yet\nsent.\n“Now my other piece of work,” he\nsaid, opening a separate file.\n“Would you read two paragraphs\nfor the book? You can say later.”\n",
+      "facing_text": "relevant part and identified its\nmissing annex. He also corrected\na question about his supposed\nattack. The operator had stopped\nthe nearest group as a precaution\nafter visitors crossed the line; he\nhad not struck or remotely\ncommanded a turbine.\n“Then you deny responsibility?”\nÁlvaro asked.\n“I stayed in the visitor bay. Teresa\nordered the stop. Castalia's\npurchase is another question.\nThat's why I brought its reply.”\n“And why we're still asking for\nthe annex,” Bixha said.\nCelina asked whether the gate\nwould be widened before the next\nscheduled maintenance delivery.\nTeresa had a work date, not yet a\ncompleted repair. Celina wrote it\non the program. Q sat down\nbeside Chano, who had saved his\nplace with a folded program.\nThe afternoon produced a limited\nundertaking: named documents\nwould be supplied, a drainage\ninspection would take place, and\nwork on the disputed new access\nstrip would pause while the\nparties reviewed its boundary.\nThe existing turbines would\ncontinue operating. The\nproposed power to reject further\nwork remained contested. No one\nhad renegotiated every lease from\na folding chair in four hours.\nBixha asked Q to check that the\ndraft's page references matched\nthe papers actually circulated.\nThe third reference led to the\nright page number in the wrong\nversion. He laid the two printouts\nbeside each other: on one, the\nparagraph continued; on the\nother, it ended before the\ncondition about drainage.\n“Which did the people at the back\nreceive?” he asked.\nShe called across to the woman\ncollecting spare copies. They\nchecked the remaining stack,\nthen a copy someone had folded\ninto a bag. Both were the shorter\nversion. Bixha asked the\nsecretary to circulate the missing\nparagraph with the corrected\nreference. Q marked the\ncorrection as requested, not yet\nsent.\n“Now my other piece of work,” he\nsaid, opening a separate file.\n“Would you read two paragraphs\nfor the book? You can say later.”\nShe sat on the edge of the stage.\n“Two.”\n",
       "source_block_ids": [
         53,
         54,
@@ -144,7 +145,9 @@
         58,
         59,
         60,
-        61
+        61,
+        62,
+        63
       ],
       "asset": "output/illustrations/revised/issue-17/plate-05.png",
       "status": "planned",
@@ -156,10 +159,8 @@
       "plate_id": "issue-17-plate-06",
       "page": 13,
       "facing_text_page": 12,
-      "facing_text": "She sat on the edge of the stage.\n“Two.”\nHis return occupied most of the\nfirst. Bixha read it, looked back at\nthe title, and asked how many\nmore visits he intended.\n“I haven't planned another.”\n“Because we have to keep\nworking between them. At this\nrate we'll disappear every time\nyou go home.”\nQ scrolled back. “I can begin with\nyour invitation.”\n“You already do.”\nHe laughed, then asked what had\nhappened that morning before he\narrived. She told him about the\naccess-road meeting, which had\nended early because two people\nneeded to attend this one. One\nhad still missed the bus sent to\nthe wrong entrance.\nQ wrote a note for their next call.\nThe Custodian would have to\nwait longer for his splendid\ndescription of arrival.\nPrime found him outside\nafterward. A short clip had\nalready appeared with music\nbeneath his introduction. It\nomitted his objection to the title\nand kept the phrase the\nparticipants.\n“I'm requesting the correction,”\nPrime said.\nQ watched the clip. “Do you still\nthink it was worth speaking?”\n“I haven't decided. The question\nperiod happened. The clip also\nhappened. I don't want to count\nonly the outcome that supports\nwhat I decided this morning.”\n“I was hoping you'd say I had\nwarned you.”\n“You had. Does that finish the\ndiscussion?”\n“Unfortunately not.”\nPrime asked whether Q would\nsend him the page-reference\ncheck. Q sent the public version.\nIn return Prime supplied the full\nrecord of his remarks, with\npermission to cite the disputed\npassage. They were becoming\nuseful to one another in a way\nthat did not depend on\nagreement.\nThat evening Q called the\nCustodian. Through the open\nwindow he could hear wind,\ntraffic, and Chano negotiating\nlaundry.\n",
+      "facing_text": "His return occupied most of the\nfirst. Bixha read it, looked back at\nthe title, and asked how many\nmore visits he intended.\n“I haven't planned another.”\n“Because we have to keep\nworking between them. At this\nrate we'll disappear every time\nyou go home.”\nQ scrolled back to her invitation.\nIt still occupied a single sentence;\nhis arrival had needed most of a\nparagraph.\n“I've made you send for the\nprotagonist.”\n“Apparently we couldn't get\nanyone else.”\nHe laughed. “Have you time for\none question about this morning,\nbefore our bus arrived?”\nShe told him about the\naccess-road meeting, which had\nended early because two people\nneeded to attend this one. One\nhad still missed the bus sent to\nthe wrong entrance.\nQ wrote a note for their next call.\nThe Custodian would have to wait\nlonger for his splendid\ndescription of arrival.\nPrime found him outside\nafterward. A short clip had\nalready appeared with music\nbeneath his introduction. It\nomitted his objection to the title\nand kept the phrase the\nparticipants.\n“I'm requesting the correction,”\nPrime said.\nQ watched the clip. “Do you still\nthink it was worth speaking?”\n“I haven't decided. The question\nperiod happened. The clip also\nhappened. I don't want to count\nonly the outcome that supports\nwhat I decided this morning.”\n“I was hoping you'd say I had\nwarned you.”\n“You had. Does that finish the\ndiscussion?”\n“Unfortunately not.”\nPrime asked whether Q would\nsend him the page-reference\ncheck. Q sent the public version.\nIn return Prime supplied the full\nrecord of his remarks, with\npermission to cite the disputed\npassage. They were becoming\nuseful to one another in a way\nthat did not depend on\nagreement.\nThat evening Q called the\nCustodian. Through the open\nwindow he could hear wind,\n",
       "source_block_ids": [
-        62,
-        63,
         64,
         65,
         66,
@@ -174,22 +175,23 @@
         75,
         76,
         77,
-        78
+        78,
+        79,
+        80,
+        81
       ],
       "asset": "output/illustrations/revised/issue-17/plate-06.png",
       "status": "planned",
       "caption": "Between His Visits",
-      "scene_brief": "Bixha sits on the edge of the emptied stage reading Q's separate two-paragraph book draft. Q listens with a rueful smile and returns to his notes as she describes a morning he did not witness. Stage chairs and an abandoned program suggest work before and after his arrival. This is not the public agreement file and not a conflict over elementary permission. No absent Custodian physically in the room.",
-      "scene_anchor": "She sat on the edge of the stage."
+      "scene_brief": "Bixha remains seated on the emptied stage after reading Q's two-paragraph book draft; Q scrolls back to her invitation and notices how much more space his arrival takes. They share a joke about sending for the protagonist. He asks whether she has time for a question about that morning. Papers and quiet stage chairs, not a public-record mix-up or elementary permission lesson. Q's segmented mechanical mouth is visible; no human smile painted on metal. No Custodian physically present.",
+      "scene_anchor": "Q scrolled back to her invitation."
     },
     {
       "plate_id": "issue-17-plate-07",
       "page": 15,
       "facing_text_page": 14,
-      "facing_text": "“The giants?” the Custodian\nasked.\n“Still supplying your archive.”\n“And your chapter?”\n“It has acquired a second\nmachine who won't take my\nadvice.”\nThe Custodian removed his\nglasses and laughed. Q had seen\nthat expression before, but only\nnow suspected that part of its\npleasure was revenge.\nInterlude: The Meeting\nThat Refused Minutes\nThe next meeting took place in a\nschoolroom. Its purpose was to\nsettle the record of the first,\nwhich did not prevent several\npeople from attempting to settle\nthe entire project.\nA fan moved warm air above a\ncalendar and a notice about\nbatteries. The teacher hosting\nthem put oranges on the table.\nThe lawyer asked whether the\nmeeting had officially begun. She\nsaid he could eat one before\ndeciding.\nQ had been asked to compare the\ntwo circulated drafts. He brought\na marked copy, not a declaration\nof neutrality. The differences\nincluded a changed date, an\nomitted condition, and the\nreplacement of participants\npresent with the community.\n“I didn't authorize that last\nchange,” Bixha said.\nThe consortium's representative\nsaid it was shorter.\n“So is yes,” Celina said. “You\ncan't use it for everything.”\nThe teacher read the attendance\nlist. Some people had come for\nthemselves; some carried a\nmandate from a group; others\nhad left before the final\ndiscussion. They could record\nthose facts without making\neveryone who lived nearby a\nsignatory. The people not present\nwould receive the proposal\nthrough their own arrangements\nbefore anyone claimed their\nacceptance.\nTranslation took longer. The\ninterpreters wanted enough time\nto read back the technical terms\nand the obligations attached to\nthem. A landholder wanted his\nnephew to check the explanation.\nThe lawyer said the nephew had\nnot been appointed. The\nlandholder said neither had his\nsuspicion.\n",
+      "facing_text": "traffic, and Chano negotiating\nlaundry.\n“The giants?” the Custodian\nasked.\n“Still supplying your archive.”\n“And your chapter?”\n“It has acquired a second\nmachine who won't take my\nadvice.”\nThe Custodian removed his\nglasses and laughed. Q had seen\nthat expression before, but only\nnow suspected that part of its\npleasure was revenge.\nInterlude: The Meeting\nThat Refused Minutes\nThe next meeting took place in a\nschoolroom. Its purpose was to\nsettle the record of the first,\nwhich did not prevent several\npeople from attempting to settle\nthe entire project.\nA fan moved warm air above a\ncalendar and a notice about\nbatteries. The teacher hosting\nthem put oranges on the table.\nThe lawyer asked whether the\nmeeting had officially begun. She\nsaid he could eat one before\ndeciding.\nQ had been asked to compare the\ntwo circulated drafts. He brought\na marked copy, not a declaration\nof neutrality. The differences\nincluded a changed date, an\nomitted condition, and the\nreplacement of participants\npresent with the community.\n“I didn't authorize that last\nchange,” Bixha said.\nThe consortium's representative\nsaid it was shorter.\n“So is yes,” Celina said. “You can't\nuse it for everything.”\nThe teacher read the attendance\nlist. Some people had come for\nthemselves; some carried a\nmandate from a group; others\nhad left before the final\ndiscussion. They could record\nthose facts without making\neveryone who lived nearby a\nsignatory. The people not present\nwould receive the proposal\nthrough their own arrangements\nbefore anyone claimed their\nacceptance.\nTranslation took longer. The\ninterpreters wanted enough time\nto read back the technical terms\nand the obligations attached to\nthem. A landholder wanted his\nnephew to check the explanation.\n",
       "source_block_ids": [
-        79,
-        80,
         81,
         82,
         83,
@@ -201,7 +203,10 @@
         89,
         90,
         91,
-        92
+        92,
+        93,
+        94,
+        95
       ],
       "asset": "output/illustrations/revised/issue-17/plate-07.png",
       "status": "planned",
@@ -213,10 +218,8 @@
       "plate_id": "issue-17-plate-08",
       "page": 17,
       "facing_text_page": 16,
-      "facing_text": "Q found the clause references in\nthe Spanish version and put them\nbeside the disputed passages for\nthe interpreters. He could help\nthem find the same location in a\nlong file; he could not decide the\nwording in their place.\nThe access-strip suspension\nproved harder. The contractor's\ndraft said operations. The\nundertaking concerned work on\none strip, not existing generation.\nBixha wanted the scope made\nexact because a broader promise\nthat would never be honored was\nless useful than the narrow one\nthey could point to on Friday.\nAnother organizer objected that\nnarrowing it let the consortium\nescape. They argued. Q did not\nsettle the argument by finding a\nmore dignified word for strip.\nAt lunch, Celina asked why\ninspection appointments were\nalways made during her shift.\nThe proposed committee\ncontained workers in principle\nand excluded them by the hour\non the invitation. Teresa, joining\nby telephone, offered two\npossible times and undertook to\nask about paid release. She could\nnot promise the pay herself.\nChano wrote the possibilities on\nthe blackboard. His handwriting\nsloped downward as the chalk\nshortened.\n“You governed a town,” the\nteacher said.\n“They didn't give me longer chalk\nthere either.”\nThe oranges disappeared. So did\nthe possibility of finishing before\nthe teacher's evening class. They\nhad agreed on the narrow\nsuspension, dates for supplying\npapers, and who would circulate\nthe next draft. Inspection\nauthority, some translation\nquestions, and compensation\nremained open.\nThe teacher proposed a record\nthat marked each status. The\nlawyer accepted it after adding\nthat the compensation discussion\ncontained no admission about a\ndisputed sum. Celina insisted\nthat this qualification not erase\nthe separate acknowledgment of\nroad damage. They found words\nthat preserved both.\nSeveral participants also wanted\ncomments they had made during\nthe exploratory discussion left\nout of the public summary. The\nagreed obligations still needed a\n",
+      "facing_text": "The lawyer said the nephew had\nnot been appointed. The\nlandholder said neither had his\nsuspicion.\nQ found the clause references in\nthe Spanish version and put them\nbeside the disputed passages for\nthe interpreters. He could help\nthem find the same location in a\nlong file; he could not decide the\nwording in their place.\nThe access-strip suspension\nproved harder. The contractor's\ndraft said operations. The\nundertaking concerned work on\none strip, not existing generation.\nBixha wanted the scope made\nexact because a broader promise\nthat would never be honored was\nless useful than the narrow one\nthey could point to on Friday.\nAnother organizer objected that\nnarrowing it let the consortium\nescape. They argued. Q did not\nsettle the argument by finding a\nmore dignified word for strip.\nAt lunch, Celina asked why\ninspection appointments were\nalways made during her shift.\nThe proposed committee\ncontained workers in principle\nand excluded them by the hour\non the invitation. Teresa, joining\nby telephone, offered two\npossible times and undertook to\nask about paid release. She could\nnot promise the pay herself.\nChano wrote the possibilities on\nthe blackboard. His handwriting\nsloped downward as the chalk\nshortened.\n“You governed a town,” the\nteacher said.\n“They didn't give me longer chalk\nthere either.”\nThe oranges disappeared. So did\nthe possibility of finishing before\nthe teacher's evening class. They\nhad agreed on the narrow\nsuspension, dates for supplying\npapers, and who would circulate\nthe next draft. Inspection\nauthority, some translation\nquestions, and compensation\nremained open.\nThe teacher proposed a record\nthat marked each status. The\nlawyer accepted it after adding\nthat the compensation discussion\ncontained no admission about a\ndisputed sum. Celina insisted\nthat this qualification not erase\nthe separate acknowledgment of\nroad damage. They found words\nthat preserved both.\n",
       "source_block_ids": [
-        93,
-        94,
         95,
         96,
         97,
@@ -224,7 +227,9 @@
         99,
         100,
         101,
-        102
+        102,
+        103,
+        104
       ],
       "asset": "output/illustrations/revised/issue-17/plate-08.png",
       "status": "planned",
@@ -236,11 +241,8 @@
       "plate_id": "issue-17-plate-09",
       "page": 19,
       "facing_text_page": 18,
-      "facing_text": "record. They checked those\nseparately rather than turning\nprivacy into an excuse to forget\nwho had promised an inspection.\nThe final working file was copied\nintact to the designated keepers.\nChano took the dates he needed\nin his own notebook. Celina\nrecorded a voice reminder for\nherself. These were different\npersonal aids; no one pretended\nthey were identical certified\nminutes.\n“We haven't finished,” Q said on\nthe call that night.\n“Have you done anything?” the\nCustodian asked.\n“Yes. That's the difficult part of\nthe sentence.”\nIt survived into the published\naccount. Castalia later quoted the\nfirst half as evidence of wasted\neffort. The consortium described\nthe agreed portions as a new\nbeginning. Celina used the\ninspection date to ask why the\ntruck had not arrived.\nOn the revised date, the truck\ncame while Celina was at work.\nHer mother phoned from the\ngate.\n“They're here.”\n“The inspection?”\n“Unless you invited someone else\nto look at the hole.”\nCelina stepped out of the\nworkshop noise and asked\nwhether they had brought the\ndrawing. Her mother handed the\nphone to the inspector. He had;\nthey checked the house number\nand the stretch of road while the\ncall lasted.\nWhen he returned the phone,\nCelina's mother asked him when\nthe repair would begin. He could\nnot give her a date yet. He\nwanted a photograph of the edge\nof the road.\n“Then you'll want me out of the\nhole.”\nShe moved back to her gate.\nCelina heard him thank her\nbefore the call ended. At lunch\nshe received the inspection\nreference and sent it to Bixha,\nleaving her question about the\nrepair beneath it.\n",
+      "facing_text": "Several participants also wanted\ncomments they had made during\nthe exploratory discussion left\nout of the public summary. The\nagreed obligations still needed a\nrecord. They checked those\nseparately rather than turning\nprivacy into an excuse to forget\nwho had promised an inspection.\nThe final working file was copied\nintact to the designated keepers.\nChano took the dates he needed\nin his own notebook. Celina\nrecorded a voice reminder for\nherself. These were different\npersonal aids; no one pretended\nthey were identical certified\nminutes.\n“We haven't finished,” Q said on\nthe call that night.\n“Have you done anything?” the\nCustodian asked.\n“Yes. That's the difficult part of\nthe sentence.”\nIt survived into the published\naccount. Castalia later quoted the\nfirst half as evidence of wasted\neffort. The consortium described\nthe agreed portions as a new\nbeginning. Celina used the\ninspection date to ask why the\ntruck had not arrived.\nOn the revised date, the truck\ncame while Celina was at work.\nHer mother phoned from the\ngate.\n“They're here.”\n“The inspection?”\n“Unless you invited someone else\nto look at the hole.”\nCelina stepped out of the\nworkshop noise and asked\nwhether they had brought the\ndrawing. Her mother handed the\nphone to the inspector. He had;\nthey checked the house number\nand the stretch of road while the\ncall lasted.\nWhen he returned the phone,\nCelina's mother asked him when\nthe repair would begin. He could\nnot give her a date yet. He\nwanted a photograph of the edge\nof the road.\n“Then you'll want me out of the\nhole.”\nShe moved back to her gate.\nCelina heard him thank her\nbefore the call ended. At lunch\nshe received the inspection\nreference and sent it to Bixha,\nleaving her question about the\nrepair beneath it.\n",
       "source_block_ids": [
-        102,
-        103,
-        104,
         105,
         106,
         107,
@@ -251,7 +253,10 @@
         112,
         113,
         114,
-        115
+        115,
+        116,
+        117,
+        118
       ],
       "asset": "output/illustrations/revised/issue-17/plate-09.png",
       "status": "planned",
@@ -259,5 +264,40 @@
       "scene_brief": "At Celina's mother's house, the mother steps back toward her gate so the inspector can photograph the damaged roadside. His inspection truck and drawing are nearby; ordinary working daylight in the Isthmus. Celina remains at her job and has participated by telephone, not present in the scene. No Q, no completed resurfacing, no photograph of a political victory. The inspection happens while the repair date remains unanswered.",
       "scene_anchor": "She moved back to her gate."
     }
-  ]
+  ],
+  "layout_constraints": {
+    "continuous_text": true,
+    "body_alignment": "left",
+    "font_pt": 13.25,
+    "leading_pt": 18.770833333333332,
+    "manual_page_breaks": false
+  },
+  "revision_review": "novel/development/CHAPTER_17_FRESH_CONTEXT_REVIEW.md",
+  "revision_verification": {
+    "result": "pass",
+    "baseline": "7e930667",
+    "changed_chapters": [
+      17
+    ],
+    "other_chapters_unchanged": 21,
+    "all_22_issue_source_bindings_checked": true,
+    "other_21_manifests_unchanged": true,
+    "previous_32_issue_pdfs_unchanged": true,
+    "words_before": 2692,
+    "words_after": 2728,
+    "reading_layout_pages": 20,
+    "a3_layout_sides": 10,
+    "duplex_sheets": 5,
+    "actual_slots_checked": 20,
+    "font_pt": 13.25,
+    "leading_pt": 18.770833333333332,
+    "text_background": "unpainted",
+    "final_text_column_heights": [
+      600.67,
+      581.9
+    ],
+    "illustration_gate_rejects_planned_art": true,
+    "approved_plates": 0,
+    "print_job_sent": false
+  }
 }

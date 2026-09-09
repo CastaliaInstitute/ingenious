@@ -9451,8 +9451,10 @@ line; he had not struck or remotely commanded a turbine.
 
 “Then you deny responsibility?” Álvaro asked.
 
-“For crossing the line? No. For the event in your illustration?
-Yes. Those are different answers to different questions.”
+“I stayed in the visitor bay. Teresa ordered the stop. Castalia's
+purchase is another question. That's why I brought its reply.”
+
+“And why we're still asking for the annex,” Bixha said.
 
 Celina asked whether the gate would be widened before the next
 scheduled maintenance delivery. Teresa had a work date, not yet
@@ -9494,12 +9496,17 @@ back at the title, and asked how many more visits he intended.
 “Because we have to keep working between them. At this rate
 we'll disappear every time you go home.”
 
-Q scrolled back. “I can begin with your invitation.”
+Q scrolled back to her invitation. It still occupied a single
+sentence; his arrival had needed most of a paragraph.
 
-“You already do.”
+“I've made you send for the protagonist.”
 
-He laughed, then asked what had happened that morning before
-he arrived. She told him about the access-road meeting, which
+“Apparently we couldn't get anyone else.”
+
+He laughed. “Have you time for one question about this morning,
+before our bus arrived?”
+
+She told him about the access-road meeting, which
 had ended early because two people needed to attend this one.
 One had still missed the bus sent to the wrong entrance.
 
